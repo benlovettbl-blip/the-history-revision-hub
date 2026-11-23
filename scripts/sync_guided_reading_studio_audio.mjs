@@ -30,6 +30,13 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, '..');
 
 export const KS2_KS3_GUIDED_READING_UNITS = [
+  'ks2_stone_to_iron_age',
+  'ks2_ancient_egypt',
+  'ks2_ancient_greece',
+  'ks2_romans',
+  'ks2_anglo_saxons_vikings',
+  'ks2_early_islamic_baghdad',
+  'ks2_maya_civilisation',
   'ks2_ww2',
   'medieval_england',
   'monarchy_religion_power',
@@ -74,6 +81,8 @@ export function cleanReadingExtractForTts(rawHtml) {
   let pre = String(rawHtml || '')
     // Turn paragraph breaks into natural breath pauses for acoustic alignment
     .replace(/(?:<br\s*\/?>\s*){2,}|\n\n+/gi, ' <short pause> ')
+    // Preserve gentle poetic cadence on single verse line breaks without punctuation
+    .replace(/([A-Za-z0-9"”'])\s*<br\s*\/?>/gi, '$1, ')
     .replace(/<br\s*\/?>/gi, ' ')
     .replace(/<[^>]+>/g, ' ')
     .replace(/&amp;/gi, ' and ')
@@ -118,18 +127,18 @@ export function cleanReadingExtractForTts(rawHtml) {
  */
 export function resolveGuidedReadingCast(unitId, idx, gr) {
   const authorAndTitle = `${gr.author || ''} ${gr.book_title || ''}`;
-  const isKs2 = unitId === 'ks2_ww2';
+  const isKs2 = unitId.startsWith('ks2_');
   const isShoah = unitId === 'the_shoah';
 
   // Explicit female historical speakers / authors
   const femaleMatch =
-    /Marta Appel|Vita Sackville-West|Queen Elizabeth I|Emmeline Pankhurst|Lucy S\.\s*Dawidowicz|Sophie Scholl|Vera Löwyová/i.test(
+    /Marta Appel|Vita Sackville-West|Queen Elizabeth I|Emmeline Pankhurst|Lucy S\.\s*Dawidowicz|Sophie Scholl|Vera Löwyová|Hatshepsut|Cleopatra|Boudicca|Claudia Severa|Aethelflaed|Mariam al-Asturlabi|Lady Six Sky|Aphra Behn|Phillis Wheatley|Queen Nanny|Rani Lakshmibai|Vera Brittain|Jayaben Desai/i.test(
       authorAndTitle,
     );
 
   // Explicit male historical speakers / chroniclers / statesmen
   const maleMatch =
-    /Neville Chamberlain|Nicholas Winton|Edward R\.\s*Murrow|Alan Turing|Winston Churchill|William of Poitiers|Orderic Vitalis|Edward Grim|Roger of Wendover|Thomas Walsingham|Robert Aske|Francis Bacon|Charles I|John Locke|Frontinus|Edward III|Samuel Pepys|Michael Faraday|John Snow|Roy Porter|Thomas Roe|Robert Clive|Olaudah Equiano|Bryan Edwards|George Robert Twelves Hewes|Boston King|Daniel Defoe|Robert Blincoe|Edwin Chadwick|Firoz Shah|Samuel Bamford|Adam Smith|William Bentinck|E\.\s*D\.\s*Morel|John Clapham|Joseph Banks|Arthur Phillip|David Collins|Henry Reynolds|Raffaello Carboni|Victor Klemperer|Emanuel Ringelblum|Hermann Friedrich Graebe|Mordechai Anielewicz|Richard Dimbleby|Primo Levi|William Beveridge|Sam King|Paul Stephenson|Roy Hackett|Bertrand Russell|George F\.\s*Kennan|Harry S\.\s*Truman|Ernst Reuter|Robert F\.\s*Kennedy|Dwight D\.\s*Eisenhower|Mikhail Gorbachev|John Lewis Gaddis/i.test(
+    /Neville Chamberlain|Nicholas Winton|Edward R\.\s*Murrow|Alan Turing|Winston Churchill|William of Poitiers|Orderic Vitalis|Edward Grim|Roger of Wendover|Thomas Walsingham|John Ball|Geoffrey Chaucer|Robert Aske|Francis Bacon|Charles I|Philip Henry|John Locke|Frontinus|Edward III|Samuel Pepys|Michael Faraday|John Snow|Roy Porter|Thomas Roe|Robert Clive|Olaudah Equiano|Bryan Edwards|George Robert Twelves Hewes|Boston King|Daniel Defoe|Charles Dickens|William Blake|Robert Blincoe|Edwin Chadwick|Firoz Shah|Samuel Bamford|Adam Smith|William Bentinck|Rudyard Kipling|Henry Labouchère|E\.\s*D\.\s*Morel|John Clapham|Joseph Banks|Arthur Phillip|David Collins|Henry Reynolds|Banjo Paterson|Raffaello Carboni|Wilfred Owen|Siegfried Sassoon|Victor Klemperer|Emanuel Ringelblum|Hermann Friedrich Graebe|Mordechai Anielewicz|Richard Dimbleby|Primo Levi|William Beveridge|Lord Kitchener|Sam King|Paul Stephenson|Roy Hackett|Bertrand Russell|George F\.\s*Kennan|Harry S\.\s*Truman|Ernst Reuter|Robert F\.\s*Kennedy|Dwight D\.\s*Eisenhower|Mikhail Gorbachev|John Lewis Gaddis|Herodotus|Homer|Socrates|Pliny|Julius Caesar|Bede|Alcuin|Ibn Fadlan|Al-Khwarizmi/i.test(
       authorAndTitle,
     );
 
@@ -143,14 +152,26 @@ export function resolveGuidedReadingCast(unitId, idx, gr) {
   let style = HOUSE_VOICES[voiceKey]?.style || 'warm, clear, unhurried British documentary historian';
   let badge = `${voiceLabelBase} · Archival Reading`;
 
+  const mode = gr.literary_mode || gr.provenance_tier || '';
+
   if (isKs2) {
     style =
-      'warm, gentle, crystal-clear British history storyteller reading at an unhurried, reassuring pace for 10-year-old pupils';
-    badge = `${voiceLabelBase} · KS2 Read-Aloud`;
+      mode === 'verbatim_literature'
+        ? 'warm, expressive, crystal-clear British storyteller reading classic myth and poetry at an unhurried, vivid pace for 10-year-old pupils'
+        : 'warm, gentle, crystal-clear British history storyteller reading an engaging true story at an unhurried, reassuring pace for 10-year-old pupils';
+    badge = `${voiceLabelBase} · KS2 Storyteller`;
   } else if (isShoah) {
     style =
       'deeply respectful, solemn, quiet, unhurried British documentary historian reading Holocaust archival testimony with dignity and restraint';
     badge = `${voiceLabelBase} · Shoah Archive`;
+  } else if (mode === 'storied_micro_history') {
+    style =
+      'warm, witty, engaging British narrative historian telling a vivid true historical story with natural conversational pacing and clear diction';
+    badge = `${voiceLabelBase} · Storied History`;
+  } else if (mode === 'verbatim_literature' || gr.source_type === 'classic_literature' || gr.source_type === 'period_poetry') {
+    style =
+      'expressive, resonant British literary narrator reading classic period literature and verse with natural cadence, poise, and clarity';
+    badge = `${voiceLabelBase} · Classic Literature`;
   } else if (gr.source_type === 'historiographical_debate' || gr.source_type === 'historical_scholarship') {
     style =
       'articulate, engaging British documentary historian clearly contrasting historical arguments at a measured classroom pace';
@@ -323,14 +344,38 @@ async function runReadingBatchChunk(apiKey, voiceId, jobs, displayLabel) {
 
 function writeUnitMirrors(unitId, unitData) {
   const jsonStr = JSON.stringify(unitData, null, 2) + '\n';
-  const jsStr = `export default ${JSON.stringify(unitData, null, 2)};\n`;
+  const unitJsPath = path.join(ROOT, 'units', unitId, 'data.js');
+  const existingJs = fs.existsSync(unitJsPath) ? fs.readFileSync(unitJsPath, 'utf8') : '';
+
+  let prefix = 'export default ';
+  let suffix = ';\n';
+  if (/^\s*window\.UNIT_DATA\s*=\s*/.test(existingJs)) {
+    prefix = 'window.UNIT_DATA = ';
+    suffix = /export\s+default\s+window\.UNIT_DATA\s*;?\s*$/.test(existingJs)
+      ? ';\nexport default window.UNIT_DATA;\n'
+      : ';\n';
+  } else {
+    const cm = existingJs.match(/^\s*const\s+([A-Za-z0-9_]+)\s*=\s*/);
+    if (cm) {
+      prefix = `const ${cm[1]} = `;
+      suffix = `;\nexport default ${cm[1]};\n`;
+    }
+  }
+  const jsStr = `${prefix}${JSON.stringify(unitData, null, 2)}${suffix}`;
 
   const targets = [
     [path.join(ROOT, 'data', `${unitId}.json`), jsonStr],
     [path.join(ROOT, 'public', 'data', `${unitId}.json`), jsonStr],
-    [path.join(ROOT, 'units', unitId, 'data.js'), jsStr],
-    [path.join(ROOT, 'public', 'units', unitId, 'data.js'), jsStr],
+    [unitJsPath, jsStr],
   ];
+  const pubUnitDir = path.join(ROOT, 'public', 'units', unitId);
+  if (fs.existsSync(pubUnitDir)) {
+    targets.push([path.join(pubUnitDir, 'data.js'), jsStr]);
+  }
+  const lcJsonPath = path.join(ROOT, 'data', 'literary_companions', `${unitId}.json`);
+  if (fs.existsSync(lcJsonPath) && Array.isArray(unitData.guided_reading)) {
+    targets.push([lcJsonPath, JSON.stringify(unitData.guided_reading, null, 2) + '\n']);
+  }
 
   let anyChanged = false;
   for (const [p, content] of targets) {
@@ -544,7 +589,7 @@ async function main() {
   }
 
   await syncGuidedReadingUnits(targets, { forceAudio, skipTts, skipDbBuild: false });
-  console.log('\n🎉 All 13/13 KS2 & KS3 Guided Reading Studio Audio clips & timings.json synchronized!');
+  console.log('\n🎉 All 20/20 KS2 & KS3 Literary Companion Studio Audio clips & timings.json synchronized!');
 }
 
 if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {

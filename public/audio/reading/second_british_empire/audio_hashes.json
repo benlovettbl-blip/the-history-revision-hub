@@ -2,44 +2,44 @@
   "unitId": "second_british_empire",
   "clips": {
     "r0": {
-      "hash": "3db00cf2ebb2bc11ffc04410",
-      "bytes": 352460,
+      "hash": "7d7bbb08b6fc4f44b3927b38",
+      "bytes": 374828,
       "voiceKey": "male_historian",
-      "badge": "Studio Male Historian · Archival Reading",
-      "words": 186,
-      "updatedAt": "2026-11-20T20:56:13.333Z"
+      "badge": "Studio Male Historian · Storied History",
+      "words": 203,
+      "updatedAt": "2026-11-23T18:38:07.090Z"
     },
     "r1": {
-      "hash": "edea46de499bda9131f6867a",
-      "bytes": 262700,
+      "hash": "b39174bf81f94d3b8bbb4c72",
+      "bytes": 346700,
       "voiceKey": "male_historian",
       "badge": "Studio Male Historian · Archival Reading",
-      "words": 157,
-      "updatedAt": "2026-11-20T16:32:39.666Z"
+      "words": 208,
+      "updatedAt": "2026-11-23T18:38:07.804Z"
     },
     "r4": {
-      "hash": "a5644253873aa45bbddcb70e",
-      "bytes": 270092,
+      "hash": "ae0d03b69e29837acd6650d8",
+      "bytes": 355532,
       "voiceKey": "male_historian",
-      "badge": "Studio Male Historian · Scholarship",
-      "words": 134,
-      "updatedAt": "2026-11-20T16:32:44.297Z"
+      "badge": "Studio Male Historian · Storied History",
+      "words": 212,
+      "updatedAt": "2026-11-23T18:38:04.644Z"
     },
     "r2": {
-      "hash": "a747bc5ebe1840f2c7f98959",
-      "bytes": 295532,
+      "hash": "40e5ea66f22f0c39f771bb4e",
+      "bytes": 376652,
       "voiceKey": "male_historian",
       "badge": "Studio Male Historian · Archival Reading",
-      "words": 155,
-      "updatedAt": "2026-11-20T16:32:45.996Z"
+      "words": 217,
+      "updatedAt": "2026-11-23T18:37:58.991Z"
     },
     "r3": {
-      "hash": "d00cc1e6ac23bd775cdf47ec",
-      "bytes": 309260,
+      "hash": "a351595c1a130ab6b9c54bcb",
+      "bytes": 405068,
       "voiceKey": "male_historian",
-      "badge": "Studio Male Historian · Archival Reading",
-      "words": 177,
-      "updatedAt": "2026-11-20T16:32:46.714Z"
+      "badge": "Studio Male Historian · Classic Literature",
+      "words": 209,
+      "updatedAt": "2026-11-23T18:37:59.752Z"
     }
   }
 }

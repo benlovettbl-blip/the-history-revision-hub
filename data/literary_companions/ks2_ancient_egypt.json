@@ -1,0 +1,578 @@
+[
+  {
+    "lesson_index": 0,
+    "lesson_id": "lesson_1",
+    "lesson_label": "Enquiry 1",
+    "short_tab_title": "Hymn to the River Nile",
+    "literary_mode": "verbatim_literature",
+    "provenance_tier": "verbatim_literature",
+    "source_type": "verse",
+    "source_type_label": "Ancient Egyptian Hymn",
+    "book_title": "Hymn to the Nile (Praise to Hapi)",
+    "author": "Middle Kingdom Egyptian Scribe Tradition (c. 2100 BC)",
+    "provenance_note": "Public-domain English verse rendering of the Middle Kingdom Egyptian 'Hymn to Hapi' (the spirit of the annual Nile flood), preserved on apprentice scribes' papyrus rolls including Papyrus Sallier II in the British Museum.",
+    "author_context": "Without rain in the scorching Sahara Desert, all of Ancient Egypt depended on one giant river bursting its banks every July. Read this 4,000-year-old hymn aloud to hear how villagers celebrated the rising water.",
+    "cover_image": "/units/ks2_ancient_egypt/assets/ipuy_shaduf_garden_painting.jpg",
+    "cover_caption": "Painted tomb wall from Thebes showing a barefoot Egyptian gardener pulling a wooden shaduf rope beside lush pomegranate trees and his little dog.",
+    "studio_audio": "/audio/reading/ks2_ancient_egypt/r0.mp3",
+    "studio_voice_label": "Studio Female Historian · KS2 Storyteller",
+    "vocabVault": [
+      {
+        "term": "Inundation",
+        "pronunciation": "in-un-DAY-shun",
+        "def": "The life-giving summer flood when the River Nile burst its banks and spread rich black mud over the fields."
+      },
+      {
+        "term": "Kemet",
+        "pronunciation": "KEM-et",
+        "def": "Ancient Egypt's name for itself, meaning 'Black Land', after the dark fertile river silt left behind by floods."
+      },
+      {
+        "term": "Papyrus",
+        "pronunciation": "puh-PY-rus",
+        "def": "Tall marsh reeds growing along the Nile that Egyptians pressed into smooth writing sheets and plaited into sandals."
+      },
+      {
+        "term": "Silt",
+        "pronunciation": "SILT",
+        "def": "Fine, nutrient-rich dark river mud carried downstream by floodwater to help wheat and barley grow."
+      }
+    ],
+    "extract": "Every summer across dry Egypt, families watched the southern sky and waited eagerly for the river to rise. Four thousand years ago, Egyptian pupils copied a joyful song onto papyrus rolls to thank the annual Nile inundation.\n\n<div class=\"reading-stanza\">Hail to you, O Nile, rising out of the earth,<br>Coming in peace to keep all Egypt alive!<br>You water the green orchards created by Ra,<br>And give cool drink to every thirsty flock.<br>When your flood delays, every breath grows weak,<br>And rich and poor cry out together in fear!</div>\n\n<div class=\"reading-stanza\">Yet when you rise, the Black Land shouts for joy,<br>Every belly is glad and every back shakes with laughter!<br>You bring sweet bread and fill the storehouses wide,<br>Remembering the poor family waiting at the gate.<br>Sweet harps ring out to praise your dark mud,<br>And children clap their hands along the river bank!</div>\n\nWithout that yearly gift of black silt, golden wheat could never sprout beside scorching desert sand.",
+    "parent_discussion": [
+      {
+        "question": "According to the first stanza of the hymn, what happened across Egypt whenever the summer Nile flood was late or weak?",
+        "answer": "Orchards and flocks went thirsty, harvests shrank, and both rich nobles and poor villagers cried out together in fear of hunger."
+      },
+      {
+        "question": "Why does the poet say 'every belly is glad and every back shakes with laughter' as soon as the floodwaters rise?",
+        "answer": "Rising waters left behind damp black Kemet mud, guaranteeing full grain storehouses, fresh bread, and relief for every family."
+      },
+      {
+        "question": "Why did Greek visitors later call all of Ancient Egypt 'the gift of the Nile'?",
+        "answer": "Without the Nile's fresh water, black farming silt, and boat highway, the Sahara's dry Red Land desert would have covered Egypt completely."
+      }
+    ],
+    "story_check": [
+      {
+        "question": "What happened when the Nile flood rose on time in the second stanza?",
+        "options": [
+          "Families fled permanently into the dry mountains",
+          "The Black Land shouted for joy and storehouses filled with food",
+          "Farmers stopped planting wheat and barley altogether",
+          "Priests banned harp music beside the river"
+        ],
+        "correctIndex": 1,
+        "feedback": "Spot on! The hymn celebrates how the rising flood brought dark mud, full storehouses, harp music, and laughter across Kemet."
+      },
+      {
+        "question": "Who suffered if the Nile inundation failed to arrive?",
+        "options": [
+          "Only foreign sea merchants",
+          "Only camel drivers in the eastern hills",
+          "Both rich people and poor families alike",
+          "Nobody, because heavy rain fell every week in Egypt"
+        ],
+        "correctIndex": 2,
+        "feedback": "Correct! Very little rain fell in Egypt, so everyone from palace nobles to village farmers relied on the Nile flood."
+      },
+      {
+        "question": "What left the soil along the Nile banks dark and fertile each autumn?",
+        "options": [
+          "Black volcanic ash blown from Italy",
+          "Crushed charcoal spread by soldiers",
+          "Rich black silt carried north by summer floodwaters",
+          "Salty seawater washing inland from the north"
+        ],
+        "correctIndex": 2,
+        "feedback": "Exactly right! Summer rains far to the south washed rich dark silt downstream onto Egypt's fields."
+      }
+    ],
+    "monday_cold_call": {
+      "question": "In the Ancient Egyptian 'Hymn to the Nile', why did children clap and adults laugh when dark muddy floodwater covered their fields?",
+      "answer": "Because the sinking flood left behind rich black silt (Kemet) needed to grow wheat and barley for bread across the desert kingdom."
+    },
+    "hinge_question": "Why did Ancient Egyptians sing hymns of praise to a flooding river when floods in many other countries are feared as disasters?",
+    "audio_file": "/audio/reading/ks2_ancient_egypt/r0.mp3"
+  },
+  {
+    "lesson_index": 1,
+    "lesson_id": "lesson_2",
+    "lesson_label": "Enquiry 2",
+    "short_tab_title": "Bread for Pyramid Crews",
+    "literary_mode": "storied_micro_history",
+    "provenance_tier": "storied_micro_history",
+    "source_type": "micro_history",
+    "source_type_label": "True Archaeological Story",
+    "book_title": "Garlic, Bread and Wet Sand at Giza",
+    "author": "The History Revision Hub Narrative Archive",
+    "provenance_note": "Original historical micro-story grounded in the 2013 Wadi al-Jarf papyrus logbooks of Inspector Merer (c. 2560 BC) and Dr Mark Lehner's archaeological excavations of the Heit el-Ghurab pyramid-builders' village at Giza.",
+    "author_context": "For centuries, people guessed that whipped slaves built the Great Pyramid of Giza. Then archaeologists dug up the builders' real town and even found Boat Inspector Merer's 4,500-year-old papyrus diary!",
+    "cover_image": "/units/ks2_ancient_egypt/assets/deir_el_medina_workers_village.jpg",
+    "cover_caption": "Sunlit stone house walls and neat narrow streets inside an Ancient Egyptian royal tomb-builders' village nestled below desert cliffs.",
+    "studio_audio": "/audio/reading/ks2_ancient_egypt/r1.mp3",
+    "studio_voice_label": "Studio Female Historian · KS2 Storyteller",
+    "vocabVault": [
+      {
+        "term": "Giza",
+        "pronunciation": "GEE-zuh",
+        "def": "The rocky desert plateau near modern Cairo where Pharaoh Khufu raised the 146-metre Great Pyramid."
+      },
+      {
+        "term": "Tura Limestone",
+        "pronunciation": "TOO-ruh LYM-stohn",
+        "def": "Fine, gleaming white stone quarried across the Nile and floated by barge to case the outside of Khufu's pyramid."
+      },
+      {
+        "term": "Sledge",
+        "pronunciation": "SLEJ",
+        "def": "A heavy wooden frame on smooth runners pulled with ropes over wet desert sand to move two-tonne stone blocks."
+      },
+      {
+        "term": "Archaeology",
+        "pronunciation": "ar-kee-OL-uh-jee",
+        "def": "Studying human history by digging up and examining buildings, bones, tools, and food remains left underground."
+      }
+    ],
+    "extract": "Dawn broke pink over Giza around 2560 BC. Warm woodsmoke drifted from rows of dome-shaped mud ovens. Inside the walled builders' village, bakers tipped hot loaves of fresh bread out of clay moulds. Nobody stood cracking whips over starving slaves here.\n\nDown at the canal harbour, Boat Inspector Merer opened his papyrus logbook and dipped his reed pen in ink. His forty-man crew had just floated shining white limestone blocks across the flooded Nile from Tura quarry. Proud teams painted bold gang names onto blocks, calling themselves <em>\"Friends of Khufu\"</em> and <em>\"Drunkards of Menkaure\"</em>.\n\nOut on the ramp, a young worker sloshed river water onto the sand ahead of a wooden sledge. Wet sand halved rubbing friction! Haulers pulled the two-tonne stone steadily skyward. At sunset, tired crews shared roasted Nile fish, beef, sweet onions, and crisp garlic. Four thousand years later, ash-filled bakeries and healed bones proved well-fed Egyptian teams built the Great Pyramid.",
+    "parent_discussion": [
+      {
+        "question": "What clever trick did Giza workers use to stop heavy wooden sledges from digging into dry desert sand?",
+        "answer": "A worker poured river water onto the sand right in front of the sledge runners, halving friction so blocks slid smoothly."
+      },
+      {
+        "question": "What do team names like 'Friends of Khufu' tell us about how the pyramid builders felt about their work?",
+        "answer": "They worked in proud, competitive crews who took pride in serving their god-king Pharaoh rather than being miserable captives."
+      },
+      {
+        "question": "How did archaeology beside the Giza pyramids overturn the old Hollywood myth about enslaved pyramid builders?",
+        "answer": "Diggers uncovered neat workers' dormitories, giant bread bakeries, cattle and fish bones, and skeletons with broken bones carefully treated by doctors."
+      }
+    ],
+    "story_check": [
+      {
+        "question": "Who was Merer in the 4,500-year-old papyrus logbook discovered by archaeologists?",
+        "options": [
+          "A Roman general attacking Alexandria",
+          "An Egyptian boat inspector shipping white Tura limestone to Giza",
+          "A Greek poet writing stories about monsters",
+          "A tomb robber hiding gold inside a cave"
+        ],
+        "correctIndex": 1,
+        "feedback": "Spot on! Inspector Merer's real papyrus diary recorded his boat crew hauling fine white Tura limestone blocks to Khufu's Great Pyramid."
+      },
+      {
+        "question": "Why did a worker pour water onto the sand in front of each wooden sledge?",
+        "options": [
+          "To grow wheat right on top of the pyramid ramp",
+          "To wash away painted hieroglyphs on the stones",
+          "To dampen the sand and halve friction under the heavy runners",
+          "To cool down bronze chariot wheels"
+        ],
+        "correctIndex": 2,
+        "feedback": "Exactly right! Dampening dry sand bound the grains together and cut sliding friction in half."
+      },
+      {
+        "question": "Which clues dug up in the Giza builders' village proved workers were cared for?",
+        "options": [
+          "Iron railway tracks and steam cranes",
+          "Bread bakeries, fish and cattle bones, and skeletons with healed fractures",
+          "Stacks of printed paper banknotes",
+          "Marble theatres seating ten thousand people"
+        ],
+        "correctIndex": 1,
+        "feedback": "Well remembered! Rich food rations and medical care proved Giza's builders were valued skilled workers."
+      }
+    ],
+    "monday_cold_call": {
+      "question": "Name two real archaeological clues from Giza that prove paid, well-fed Egyptian teams—not whipped slaves—built the Great Pyramid.",
+      "answer": "Giant village bread bakeries with fish and cattle rations, healed bones treated by doctors, and Inspector Merer's limestone boat logbook."
+    },
+    "hinge_question": "Why is a rubbish heap of ancient fish bones and bakery ash outside Giza just as exciting to a historian as a golden crown?",
+    "audio_file": "/audio/reading/ks2_ancient_egypt/r1.mp3"
+  },
+  {
+    "lesson_index": 2,
+    "lesson_id": "lesson_3",
+    "lesson_label": "Enquiry 3",
+    "short_tab_title": "Satire of the Trades",
+    "literary_mode": "verbatim_literature",
+    "provenance_tier": "verbatim_literature",
+    "source_type": "verse",
+    "source_type_label": "Ancient Scribe School Poem",
+    "book_title": "The Instruction of Dua-Kheti (The Satire of the Trades)",
+    "author": "Dua-Kheti (Middle Kingdom Egypt, c. 1900 BC)",
+    "provenance_note": "Public-domain English verse adaptation of 'The Instruction of Dua-Kheti' (popularly called 'The Satire of the Trades'), Egypt's most copied Middle and New Kingdom school text, preserved on Papyrus Sallier II and hundreds of limestone ostraca.",
+    "author_context": "Almost four thousand years ago, an Egyptian father named Dua-Kheti sailed south up the Nile to drop his young son Pepi at scribe school. Listen to the funny warnings he gave Pepi to make him practise his 700 hieroglyphs!",
+    "cover_image": "/units/ks2_ancient_egypt/assets/edwin_smith_papyrus_scroll.jpg",
+    "cover_caption": "Pressed golden-brown Egyptian papyrus scroll covered in crisp columns of black and red ink written with a reed brush.",
+    "studio_audio": "/audio/reading/ks2_ancient_egypt/r2.mp3",
+    "studio_voice_label": "Studio Female Historian · KS2 Storyteller",
+    "vocabVault": [
+      {
+        "term": "Scribe",
+        "pronunciation": "SKRYB",
+        "def": "A respected Ancient Egyptian official trained for years to read and write hieroglyphs, count taxes, and keep royal records."
+      },
+      {
+        "term": "Hieroglyphs",
+        "pronunciation": "HY-ruh-glifs",
+        "def": "Ancient Egypt's sacred writing system combining over 700 picture signs and sound symbols."
+      },
+      {
+        "term": "Satire",
+        "pronunciation": "SAT-yr",
+        "def": "Clever, funny writing that exaggerates everyday problems to make readers laugh and think."
+      },
+      {
+        "term": "Ostraca",
+        "pronunciation": "OS-truh-kuh",
+        "def": "Broken pottery shards or flat limestone flakes used like cheap scrap notebooks by trainee scribes."
+      }
+    ],
+    "extract": "Nearly four thousand years ago, an Egyptian father named Dua-Kheti sailed south up the Nile with his young son Pepi. Pepi was starting at the royal school for scribes, so his father recited a witty poem to stop him daydreaming.\n\n<div class=\"reading-stanza\">Set your whole heart on books, my son,<br>For nothing beats learning how to write!<br>I have watched the smith beside his roaring furnace,<br>With fingers wrinkled like rough crocodile skin.<br>The reed-cutter toils until his bare arms ache,<br>While hungry mosquitoes bite his face at dusk!</div>\n\n<div class=\"reading-stanza\">The potter kneels smeared in wet river clay,<br>Dirtier than pigs snuffling round the yard.<br>The cobbler chews tough leather strips all day,<br>And the washerman scrubs beside lurking crocodiles!<br>Look round: no job on Earth escapes a boss,<br>Except the scribe—for he gives out the orders!</div>\n\nTrainee scribes laughed at Kheti's jokes for centuries, copying his verses onto pottery scraps until their reed brushes flew neatly across papyrus.",
+    "parent_discussion": [
+      {
+        "question": "Which unpleasant dangers or discomforts does Dua-Kheti describe for the smith, the reed-cutter, and the washerman?",
+        "answer": "The smith gets fingers rough as crocodile skin by his hot furnace, mosquitoes bite the reed-cutter, and crocodiles lurk near the washerman."
+      },
+      {
+        "question": "Do you think Dua-Kheti was being completely fair to Egypt's skilled potters and cobblers, or exaggerating on purpose?",
+        "answer": "He was exaggerating playfully! As a proud scribe himself, Kheti made manual trades sound terrible so young pupils would study hard."
+      },
+      {
+        "question": "Why did learning over 700 hieroglyphs give an Ancient Egyptian scribe such a comfortable, powerful life?",
+        "answer": "Very few people could read or write, so pharaohs, temples, and generals needed scribes to measure grain harvests, record taxes, and write laws."
+      }
+    ],
+    "story_check": [
+      {
+        "question": "Where was Dua-Kheti taking his young son Pepi as they sailed up the River Nile?",
+        "options": [
+          "To fight chariots in Syria",
+          "To enrol him at the royal school for scribes",
+          "To hunt hippos in the northern delta",
+          "To quarry granite stones at Aswan"
+        ],
+        "correctIndex": 1,
+        "feedback": "Spot on! Kheti was taking Pepi to scribe school and wanted him to work hard at his lessons."
+      },
+      {
+        "question": "What does Kheti compare the metalworker's heat-wrinkled fingers to?",
+        "options": [
+          "Smooth Nile lotus petals",
+          "Rough crocodile skin",
+          "Soft white linen cloth",
+          "Polished gold rings"
+        ],
+        "correctIndex": 1,
+        "feedback": "Haha, yes! That famous line—'fingers like crocodile skin'—made Egyptian schoolboys grin for nearly a thousand years."
+      },
+      {
+        "question": "According to the final line of Kheti's poem, what made a scribe's job different from every other trade?",
+        "options": [
+          "Scribes never had to learn how to count",
+          "Scribes worked outdoors in muddy fields",
+          "Every other job had a boss, whereas the scribe gave the orders",
+          "Scribes wore heavy bronze armour all summer"
+        ],
+        "correctIndex": 2,
+        "feedback": "Exactly right! Scribes ran storehouses, courts, and tax offices rather than hauling heavy loads in the sun."
+      }
+    ],
+    "monday_cold_call": {
+      "question": "In the Ancient Egyptian poem 'The Satire of the Trades', how did father Dua-Kheti persuade his son Pepi to work hard at scribe school?",
+      "answer": "He joked about the aching backs, mosquitoes, mud, and crocodiles faced in manual trades, reminding Pepi that scribes were the bosses."
+    },
+    "hinge_question": "Can historians trust 'The Satire of the Trades' to tell the whole truth about Egyptian craftworkers, once we spot who wrote it and why?",
+    "audio_file": "/audio/reading/ks2_ancient_egypt/r2.mp3"
+  },
+  {
+    "lesson_index": 3,
+    "lesson_id": "lesson_4",
+    "lesson_label": "Enquiry 4",
+    "short_tab_title": "Weighing the Heart",
+    "literary_mode": "storied_micro_history",
+    "provenance_tier": "storied_micro_history",
+    "source_type": "micro_history",
+    "source_type_label": "True Historical Story",
+    "book_title": "One Feather Against a Lifetime: Scribe Ani's Book of the Dead",
+    "author": "The History Revision Hub Narrative Archive",
+    "provenance_note": "Original historical narrative grounded in the real 19th-Dynasty 'Papyrus of Ani' (c. 1250 BC, Thebes; British Museum EA10470), including the authentic Egyptian heart-scarab plea from Spell 30B.",
+    "author_context": "Around 1250 BC in Thebes, a real royal scribe named Ani paid master artists to paint a twenty-four-metre papyrus scroll for his tomb. Step inside the scene painted on that scroll as Ani faces the golden scales!",
+    "cover_image": "/units/ks2_ancient_egypt/assets/anubis_jackal_shrine_statue.jpg",
+    "cover_caption": "Ancient Egyptian bronze statuette decorated with gold leaf, showing jackal-headed god Anubis standing before a kneeling worshipper.",
+    "studio_audio": "/audio/reading/ks2_ancient_egypt/r3.mp3",
+    "studio_voice_label": "Studio Female Historian · KS2 Storyteller",
+    "vocabVault": [
+      {
+        "term": "Anubis",
+        "pronunciation": "uh-NYOO-bis",
+        "def": "The jackal-headed Egyptian god of embalming and tombs who checked the golden scales in the underworld."
+      },
+      {
+        "term": "Ma'at",
+        "pronunciation": "mah-AHT",
+        "def": "The Egyptian goddess of truth, fairness, and cosmic balance, represented by a single light ostrich feather."
+      },
+      {
+        "term": "Ammit",
+        "pronunciation": "AM-it",
+        "def": "The fearsome underworld monster—part crocodile, lion, and hippopotamus—waiting to gobble up heavy, selfish hearts."
+      },
+      {
+        "term": "Field of Reeds",
+        "pronunciation": "FEELD ov REEDZ",
+        "def": "Ancient Egypt's sunny afterlife paradise of green canals and rich harvests ruled by green-skinned Osiris."
+      }
+    ],
+    "extract": "Around 1250 BC in Thebes, artists painted a long papyrus scroll in blue, red, and gold for a real scribe named Ani. Rolled inside Ani's tomb, this <em>Book of the Dead</em> showed the toughest afterlife test in the Hall of Two Truths.\n\nIn the scene, Ani bows in clean white linen beside his wife Tutu while forty-two gods watch from above. Kneeling before tall golden scales, jackal-headed Anubis steadies the brass pointer. On one pan sits Ani's heart. Priests left it inside his mummy chest because Egyptians believed the heart kept every good and bad memory. On the other pan rests one light white feather from Ma'at, goddess of truth.\n\nRight below crouches Ammit the Devourer, snapping crocodile jaws on a lion-and-hippo body! Holding his breath, Ani whispers his plea. <em>\"O my heart, do not stand as a witness against me!\"</em> Ibis-headed Thoth marks his tablet. The pans stay level, and Osiris welcomes kind Ani into the sunny Field of Reeds.",
+    "parent_discussion": [
+      {
+        "question": "Why did Egyptian embalmers leave the heart inside a mummy's chest when they placed other organs into Canopic jars?",
+        "answer": "Egyptians believed the heart held a person's thoughts, memories, and deeds, so Anubis needed to weigh it in the afterlife."
+      },
+      {
+        "question": "Why was an ostrich feather the perfect symbol to place on the opposite pan of the scales?",
+        "answer": "A single feather is almost weightless, showing that a person's heart had to be completely free of heavy lies, cruelty, and greed."
+      },
+      {
+        "question": "What does the Weighing of the Heart ceremony prove about how Ancient Egyptians thought people should treat others during life?",
+        "answer": "Even rich scribes or rulers could not buy their way past Ma'at's feather—kindness, honesty, and fairness mattered above wealth."
+      }
+    ],
+    "story_check": [
+      {
+        "question": "Who checked the pointer on the golden scales during Scribe Ani's judgement?",
+        "options": [
+          "Jackal-headed god Anubis",
+          "Greek god Poseidon",
+          "King Narmer of Upper Egypt",
+          "Scribe Dua-Kheti"
+        ],
+        "correctIndex": 0,
+        "feedback": "Spot on! Jackal-headed Anubis knelt right beside the balance beam while ibis-headed Thoth recorded the result."
+      },
+      {
+        "question": "Which three fierce animals combined to form Ammit the Devourer waiting beneath the scales?",
+        "options": [
+          "Eagle, cobra, and bull",
+          "Crocodile, lion, and hippopotamus",
+          "Wolf, scorpion, and vulture",
+          "Shark, leopard, and camel"
+        ],
+        "correctIndex": 1,
+        "feedback": "Exactly right! Crocodile, lion, and hippo were the three deadliest animals known along Egypt's Nile valley."
+      },
+      {
+        "question": "What happened when Ani's heart balanced lightly with Ma'at's feather of truth?",
+        "options": [
+          "Ammit swallowed his heart at once",
+          "He was sent back to scribe school",
+          "Osiris welcomed him into the peaceful Field of Reeds",
+          "His tomb was opened to desert sandstorms"
+        ],
+        "correctIndex": 2,
+        "feedback": "Well done! A light, truthful heart earned eternal life in Osiris's green Field of Reeds."
+      }
+    ],
+    "monday_cold_call": {
+      "question": "On Scribe Ani's 'Book of the Dead' scroll, what was weighed against his heart, and what happened if a heart was heavy with cruel deeds?",
+      "answer": "Ma'at's feather of truth was weighed against the heart; if heavy with bad deeds, Ammit (crocodile, lion, and hippo) gobbled it up."
+    },
+    "hinge_question": "Why did Egyptians tuck a stone scarab charm whispering 'Do not stand as a witness against me!' right over a mummy's heart?",
+    "audio_file": "/audio/reading/ks2_ancient_egypt/r3.mp3"
+  },
+  {
+    "lesson_index": 4,
+    "lesson_id": "lesson_5",
+    "lesson_label": "Enquiry 5",
+    "short_tab_title": "Hatshepsut's Bold Boast",
+    "literary_mode": "intimate_eyewitness",
+    "provenance_tier": "adapted_primary",
+    "source_type": "eyewitness",
+    "source_type_label": "Royal Obelisk Inscription",
+    "book_title": "Pharaoh Hatshepsut's Karnak Obelisk & Punt Inscriptions",
+    "author": "Pharaoh Hatshepsut (Carved at Thebes, c. 1460 BC)",
+    "provenance_note": "Age-calibrated primary translation adapted directly from Pharaoh Hatshepsut's first-person hieroglyphic inscriptions on her red-granite Karnak obelisk base and the Punt Colonnade at Deir el-Bahari (trans. James Henry Breasted, 1906, Public Domain).",
+    "author_context": "Around 1479 BC, royal woman Hatshepsut crowned herself full Pharaoh of Egypt, complete with the striped royal headcloth and ceremonial false beard! Read the proud message she carved into stone for people living thousands of years after her.",
+    "cover_image": "/units/ks2_ancient_egypt/assets/hatshepsut_temple_deir_el_bahari.jpg",
+    "cover_caption": "View looking down from the desert cliffs at Deir el-Bahari onto the sweeping stone ramps and pillared terraces of Pharaoh Hatshepsut's temple.",
+    "studio_audio": "/audio/reading/ks2_ancient_egypt/r4.mp3",
+    "studio_voice_label": "Studio Female Historian · KS2 Storyteller",
+    "vocabVault": [
+      {
+        "term": "Hatshepsut",
+        "pronunciation": "hat-SHEP-soot",
+        "def": "One of Ancient Egypt's most successful female pharaohs, famous for peaceful sea trade and grand stone temples."
+      },
+      {
+        "term": "Obelisk",
+        "pronunciation": "OB-uh-lisk",
+        "def": "A tall, four-sided stone pillar tapering to a pointed pyramid tip, carved from a single block of red granite."
+      },
+      {
+        "term": "Land of Punt",
+        "pronunciation": "LAND ov PUNT",
+        "def": "A distant trading land south along the Red Sea coast, rich in gold, ebony wood, and sweet frankincense trees."
+      },
+      {
+        "term": "Deir el-Bahari",
+        "pronunciation": "dair el-bah-HAH-ree",
+        "def": "Hatshepsut's breathtaking terraced cliff temple near Thebes where carvers pictured her ships sailing to Punt."
+      }
+    ],
+    "extract": "Around 1460 BC, female Pharaoh Hatshepsut had stonemasons carve her own proud words onto tall granite obelisks at Karnak. More carvings lined her bright cliff temple at Deir el-Bahari. Speaking across the ages, she addressed everyone who would ever stand below her stones.\n\n<em>\"Listen closely, all you people yet unborn who shall see this monument in future years! Do not say, 'I do not know why this was made.' Truly, I sat quiet inside my palace and remembered great Amun who shaped me. My heart led me to raise two tall red granite obelisks from Aswan. Their gleaming gold tips shine across both banks of the Nile!\"</em>\n\n<em>\"I also sent five great wooden ships south down the Red Sea to the Land of Punt. No ruler before me brought back living frankincense trees with baskets of earth round their roots! Now sweet smoke fills Karnak's halls, and my name shall live forever in stone.\"</em>",
+    "parent_discussion": [
+      {
+        "question": "Who was Pharaoh Hatshepsut speaking to when she carved 'all you people and folk yet unborn' onto her Karnak obelisk?",
+        "answer": "She was speaking directly to future generations—including us reading her words more than 3,400 years later!"
+      },
+      {
+        "question": "Why was bringing back living frankincense trees with soil around their roots even cleverer than buying sacks of dried resin?",
+        "answer": "Planting living trees outside Egypt's temples meant priests could harvest their own sweet incense every year instead of paying foreign traders."
+      },
+      {
+        "question": "How did Hatshepsut prove her power differently from warrior pharaohs who boasted mainly about battlefield battles?",
+        "answer": "She proved her strength through peaceful Red Sea trade expeditions, quarry engineering, golden obelisks, and her terraced temple at Deir el-Bahari."
+      }
+    ],
+    "story_check": [
+      {
+        "question": "What shone on the pointed tops of Hatshepsut's red granite obelisks at Karnak?",
+        "options": [
+          "Painted wooden flags",
+          "Gleaming gold caps catching sunlight across both banks of the Nile",
+          "Iron beacons burning coal",
+          "Blue glass hippo statues"
+        ],
+        "correctIndex": 1,
+        "feedback": "Spot on! Shining precious metal caps caught the morning sun first so worshippers miles away saw Amun's temple gleam."
+      },
+      {
+        "question": "How many ships did Hatshepsut send south down the Red Sea to the Land of Punt?",
+        "options": [
+          "One tiny reed canoe",
+          "Five great wooden sailing ships",
+          "Two hundred bronze triremes",
+          "Fifty camel caravans"
+        ],
+        "correctIndex": 1,
+        "feedback": "Correct! Five large sailing ships carried Egyptian gifts south and returned laden with Punt's treasures."
+      },
+      {
+        "question": "What rare living cargo did Hatshepsut's sailors carry home in baskets of earth?",
+        "options": [
+          "Living frankincense trees for temple gardens",
+          "Snowy pine trees from Greece",
+          "Mesoamerican cacao bushes",
+          "Prickly desert cacti"
+        ],
+        "correctIndex": 0,
+        "feedback": "Exactly right! Her Deir el-Bahari wall carvings proudly show sailors carrying living frankincense trees slung on poles."
+      }
+    ],
+    "monday_cold_call": {
+      "question": "What two achievements did female Pharaoh Hatshepsut boast about to 'folk yet unborn' on her Theban temple walls and obelisks?",
+      "answer": "Raising gold-capped red granite obelisks at Karnak and sailing five ships to Punt to bring back living frankincense trees."
+    },
+    "hinge_question": "Why did female Pharaoh Hatshepsut ask sculptors to carve her wearing the traditional striped headcloth and false beard of a king?",
+    "audio_file": "/audio/reading/ks2_ancient_egypt/r4.mp3"
+  },
+  {
+    "lesson_index": 5,
+    "lesson_id": "lesson_6",
+    "lesson_label": "Enquiry 6",
+    "short_tab_title": "Candlelight in Tomb KV62",
+    "literary_mode": "storied_micro_history",
+    "provenance_tier": "storied_micro_history",
+    "source_type": "micro_history",
+    "source_type_label": "True Discovery Story",
+    "book_title": "Sixteen Buried Steps: Uncovering Tutankhamun's Tomb",
+    "author": "The History Revision Hub Narrative Archive",
+    "provenance_note": "Original historical micro-story grounded in Howard Carter's November 1922 excavation journal in the Griffith Institute (Oxford) and documented accounts of Egyptian water-boy Hussein Abdel Rassoul uncovering the top step of KV62.",
+    "author_context": "For years, experts insisted nothing remained left to find in Egypt's Valley of the Kings. Discover how a young Egyptian water-boy's digging stick in November 1922 led to the most dazzling archaeological moment in history!",
+    "cover_image": "/units/ks2_ancient_egypt/assets/tutankhamun_golden_throne.jpg",
+    "cover_caption": "Gilded backrest of Tutankhamun's throne from tomb KV62, showing Queen Ankhesenamun touching the young pharaoh's shoulder beneath golden sunbeams.",
+    "studio_audio": "/audio/reading/ks2_ancient_egypt/r5.mp3",
+    "studio_voice_label": "Studio Female Historian · KS2 Storyteller",
+    "vocabVault": [
+      {
+        "term": "Tutankhamun",
+        "pronunciation": "too-tahn-KAH-moon",
+        "def": "The New Kingdom boy-pharaoh crowned aged nine around 1332 BC whose hidden cliff tomb escaped ancient grave robbers."
+      },
+      {
+        "term": "Valley of the Kings",
+        "pronunciation": "VAL-ee ov thuh KINGZ",
+        "def": "A hot, secret desert canyon opposite Thebes where New Kingdom pharaohs cut deep rock tombs underground."
+      },
+      {
+        "term": "Excavation",
+        "pronunciation": "eks-kuh-VAY-shun",
+        "def": "Carefully digging, brushing, photographing, and recording buried historical objects without damaging clues."
+      },
+      {
+        "term": "Sarcophagus",
+        "pronunciation": "sar-KOF-uh-gus",
+        "def": "A heavy carved stone coffin holding royal nested coffins and Tutankhamun's eleven-kilogram solid gold mask."
+      }
+    ],
+    "extract": "On 4 November 1922, fierce sun baked the rocky floor in Egypt's Valley of the Kings. Near old stone huts, young water-boy Hussein Abdel Rassoul scooped away loose sand for heavy clay water jars. Suddenly, his stick struck flat, cut rock!\n\nEgyptian diggers brushed away gravel and found sixteen steep stone steps going down into the cliff. At the foot stood a plastered door stamped with royal jackal seals three thousand years old! British archaeologist Howard Carter wired his backer, Lord Carnarvon, to sail out from England at once.\n\nOn 26 November, Carter chipped a small hole in the inner door and held a lit candle inside. Warm ancient air rushed out and made the tiny flame dance wildly. Slowly, gold couches, statues, chariots, and a shining throne glinted through the gloom! Behind him, Carnarvon whispered tensely. <em>\"Can you see anything?\"</em> Carter breathed back in awe. <em>\"Yes, wonderful things!\"</em>",
+    "parent_discussion": [
+      {
+        "question": "How did young Hussein Abdel Rassoul accidentally spot the very first step of tomb KV62 on 4 November 1922?",
+        "answer": "He was scooping hollows into loose desert gravel so heavy round-bottomed clay water jars could stand upright for the digging team."
+      },
+      {
+        "question": "Why did Howard Carter stop digging immediately and wait three weeks instead of smashing straight through the sealed doorway?",
+        "answer": "Real archaeologists protect every clue carefully—waiting allowed Lord Carnarvon and photographer-conservators to record all 5,000 treasures properly."
+      },
+      {
+        "question": "Why had giant tombs of mighty warrior pharaohs been emptied long ago while young Tutankhamun's tiny tomb survived untouched?",
+        "answer": "Later tomb-builders piled limestone chippings and workmen's huts right on top of KV62's steps, hiding the entrance from ancient thieves."
+      }
+    ],
+    "story_check": [
+      {
+        "question": "Who uncovered the very first buried stone step of Tutankhamun's tomb in November 1922?",
+        "options": [
+          "French scholar Jean-François Champollion",
+          "Young Egyptian water-boy Hussein Abdel Rassoul",
+          "Greek general Alexander the Great",
+          "Queen Cleopatra VII"
+        ],
+        "correctIndex": 1,
+        "feedback": "Spot on! Hussein Abdel Rassoul hit the top cut limestone step while clearing sand for the team's clay water jars."
+      },
+      {
+        "question": "Why did the candle flame flicker wildly when Howard Carter poked it through the small hole in the door?",
+        "options": [
+          "A desert thunderstorm was blowing snow inside",
+          "Warm three-thousand-year-old air rushed out through the opening",
+          "River Nile water was flooding the steps",
+          "Bats knocked the candle out of his hand"
+        ],
+        "correctIndex": 1,
+        "feedback": "Exactly right! Escaping air from the sealed chamber made the flame dance before the gold glinted in the light."
+      },
+      {
+        "question": "What famous words did Howard Carter reply when Lord Carnarvon asked, 'Can you see anything?'",
+        "options": [
+          "'Only empty dust and broken pots!'",
+          "'Yes, wonderful things!'",
+          "'Quick, fetch the dynamite!'",
+          "'Somebody already took the throne!'"
+        ],
+        "correctIndex": 1,
+        "feedback": "Iconic! Over 5,000 treasures lay packed inside KV62, taking Carter and his team ten years to catalogue."
+      }
+    ],
+    "monday_cold_call": {
+      "question": "How did Hussein Abdel Rassoul find the top step of KV62 in 1922, and what did Howard Carter whisper when he peered inside by candlelight?",
+      "answer": "Hussein struck the stone step while digging holes for water jars, and Carter whispered, 'Yes, wonderful things!' as gold gleamed inside."
+    },
+    "hinge_question": "If Tutankhamun died aged just nineteen as a minor ruler, why is he more famous today than pharaohs who ruled Egypt for sixty years?",
+    "audio_file": "/audio/reading/ks2_ancient_egypt/r5.mp3"
+  }
+]

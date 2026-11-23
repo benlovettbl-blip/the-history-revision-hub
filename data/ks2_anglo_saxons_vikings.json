@@ -5089,5 +5089,583 @@
       ],
       "key_distinction": "Famous legend remembers Cnut sitting by the incoming tide — not because he foolishly thought he could stop the waves, but to teach flattering courtiers that even a mighty king obeys God's power!"
     }
+  ],
+  "guided_reading": [
+    {
+      "lesson_index": 0,
+      "lesson_id": "lesson_1",
+      "lesson_label": "Enquiry 1",
+      "short_tab_title": "Bede's Winter Sparrow",
+      "literary_mode": "verbatim_literature",
+      "provenance_tier": "verbatim_literature",
+      "source_type": "chronicle_literature",
+      "source_type_label": "Anglo-Saxon Literary Classic",
+      "book_title": "History of the English Church and People (Book II, Ch. 13, AD 731)",
+      "author": "Venerable Bede (Public Domain translation by A. M. Sellar, 1907)",
+      "provenance_note": "From Venerable Bede, Ecclesiastical History of the English Nation II.13 (AD 731), translated by A. M. Sellar (London: George Bell, 1907 — Public Domain), lightly trimmed for KS2 oral reading.",
+      "author_context": "Writing at Jarrow Monastery in AD 731, the monk Bede preserved the most famous picture in early English literature: a tiny sparrow flying through a warm, firelit Anglo-Saxon mead hall.",
+      "cover_image": "/units/ks2_anglo_saxons_vikings/assets/west_stow_saxon_hall.jpg",
+      "cover_caption": "Reconstructed rectangular Anglo-Saxon timber hall with steep thatched roof at West Stow in Suffolk, built over 5th-century post-holes.",
+      "vocabVault": [
+        {
+          "term": "Mead Hall",
+          "pronunciation": "MEED HAWL",
+          "def": "A grand rectangular timber hall with a roaring central fire where a warrior king feasted with his followers."
+        },
+        {
+          "term": "Cyning",
+          "pronunciation": "KOO-ning",
+          "def": "The Old English word for an Anglo-Saxon king who protected his people and shared gold rings."
+        },
+        {
+          "term": "Venerable Bede",
+          "pronunciation": "VEN-er-uh-bul BEED",
+          "def": "The wise Northumbrian monk at Jarrow called the 'Father of English History' for his AD 731 book."
+        },
+        {
+          "term": "Tempest",
+          "pronunciation": "TEM-pest",
+          "def": "A wild, howling storm of freezing wind, rain, and swirling winter snow."
+        }
+      ],
+      "extract": "One winter night in Northumbria, King Edwin met his wise nobles inside a smoky timber mead hall. Together they talked about human life and new teachings. Up stood an old warrior who shared a picture everyone knew by heart.\n\nPicture this, O King, as you sit at supper with your captains in winter! A bright fire blazes on the central hearth, warming the wooden hall from end to end. Outside the thick doors, icy tempests of rain and snow howl across the dark land.\n\nAll at once, one tiny sparrow darts quickly in through one open door! Straight across the warm firelight it flutters, then slips out through the far door. While it stays indoors, no winter frost can touch its small wings.\n\nYet that bright flash of warmth passes in the blink of an eye! Out from winter into winter the little bird vanishes back into the dark. Our short life on earth shines just like that, so wise teachings are well worth following!",
+      "parent_discussion": [
+        {
+          "question": "What sensory details inside an Anglo-Saxon timber mead hall make the room feel cosy compared to the night outside?",
+          "answer": "A bright fire blazes on the central hearth warming the timber hall while the king dines with his captains, safe from howling rain and snow."
+        },
+        {
+          "question": "Why did King Edwin's wise noble compare a person's life to a tiny sparrow flying through two doors of a hall?",
+          "answer": "Just like the sparrow enjoys a brief warm moment by the fire between dark winter storms, human life is short and precious."
+        },
+        {
+          "question": "Why was the timber mead hall the beating heart of every early Anglo-Saxon kingdom?",
+          "answer": "Inside the mead hall, a cyning shared food, honey mead, and gold rings to bind loyal warriors together and held council on big decisions."
+        }
+      ],
+      "story_check": [
+        {
+          "question": "Who wrote down the famous story of the winter sparrow in AD 731 at Jarrow Monastery?",
+          "options": [
+            "Julius Caesar",
+            "Venerable Bede",
+            "Seneca the Younger",
+            "Duke William of Normandy"
+          ],
+          "correctIndex": 1,
+          "feedback": "Spot on! Venerable Bede recorded the parable of the sparrow in his AD 731 History of the English Church and People."
+        },
+        {
+          "question": "Which small bird flew out of the snowstorm through the warm timber mead hall?",
+          "options": [
+            "A tiny sparrow",
+            "A golden eagle",
+            "A sea raven",
+            "A white swan"
+          ],
+          "correctIndex": 0,
+          "feedback": "Correct! The sparrow fluttered through one door into the firelight and straight out the opposite door."
+        },
+        {
+          "question": "Where was the roaring fire placed inside an Anglo-Saxon king's timber mead hall?",
+          "options": [
+            "Underneath brick hypocaust pillars",
+            "On top of the thatched roof",
+            "On a central hearth in the middle of the hall",
+            "Outside in a stone bathhouse"
+          ],
+          "correctIndex": 2,
+          "feedback": "Exactly right! Just like Bede wrote, a bright fire blazed on the central hearth to warm the whole timber hall."
+        }
+      ],
+      "monday_cold_call": {
+        "question": "In Bede's AD 731 story, what flew through King Edwin's warm winter mead hall, and what was the warrior comparing it to?",
+        "answer": "A tiny sparrow flew out of a winter snowstorm through the firelit mead hall and back into the dark, which the noble compared to a human life."
+      },
+      "hinge_question": "Why do you think Anglo-Saxon kings built grand timber mead halls beside rivers rather than moving into cold, roofless Roman stone ruins?",
+      "studio_audio": "/audio/reading/ks2_anglo_saxons_vikings/r0.mp3",
+      "studio_voice_label": "Studio Male Historian · KS2 Storyteller",
+      "audio_file": "/audio/reading/ks2_anglo_saxons_vikings/r0.mp3"
+    },
+    {
+      "lesson_index": 1,
+      "lesson_id": "lesson_2",
+      "lesson_label": "Enquiry 2",
+      "short_tab_title": "Beowulf & Sutton Hoo",
+      "literary_mode": "verbatim_literature",
+      "provenance_tier": "verbatim_literature",
+      "source_type": "epic_poetry",
+      "source_type_label": "Old English Epic Verse",
+      "book_title": "Beowulf — The Royal Ship-Burial & Boar-Crested Helmets",
+      "author": "Anonymous Anglo-Saxon Poet (trans. Francis B. Gummere, 1909 — Public Domain)",
+      "provenance_note": "Public-domain verse lines from Beowulf (lines 32–42, 303–306), translated in alliterative metre by Francis B. Gummere (1909), paired with the 1939 Sutton Hoo Mound 1 excavation.",
+      "author_context": "For centuries, historians thought the glittering ship-burials in the Old English poem Beowulf were pure legend—until Basil Brown dug Mound 1 at Sutton Hoo in 1939!",
+      "cover_image": "/units/ks2_anglo_saxons_vikings/assets/sutton_hoo_helmet_closeup.jpg",
+      "cover_caption": "Reconstruction of the iron-and-gilt-bronze Sutton Hoo helmet from Mound 1 in Suffolk, inlaid with red garnets and stamped warrior panels.",
+      "vocabVault": [
+        {
+          "term": "Sutton Hoo",
+          "pronunciation": "SUT-un HOO",
+          "def": "The Suffolk burial mounds where diggers in 1939 uncovered a 27-metre Anglo-Saxon royal ship burial."
+        },
+        {
+          "term": "Beowulf",
+          "pronunciation": "BAY-oh-wulf",
+          "def": "The oldest surviving epic poem in Old English, chanted aloud in mead halls to the music of a harp."
+        },
+        {
+          "term": "King Raedwald",
+          "pronunciation": "KING RED-wawld",
+          "def": "The powerful 7th-century ruler of East Anglia most likely honoured inside Mound 1 at Sutton Hoo."
+        },
+        {
+          "term": "Garnets",
+          "pronunciation": "GAR-nets",
+          "def": "Glowing dark-red gemstones traded all the way from India and Sri Lanka to decorate Sutton Hoo gold."
+        }
+      ],
+      "extract": "Long before books were printed, Anglo-Saxon poets strummed wooden lyres in firelit halls and chanted the epic poem Beowulf. Listen to how the poet described burying a mighty king inside a treasure-packed ship:\n\n<div class=\"reading-stanza\">There at the harbour stood the ring-prowed ship,<br>Icy and eager to sail, a royal vessel!<br>They laid their beloved lord deep in its bosom,<br>The famous giver of gold rings beside the mast.<br>From distant lands came heaps of shining treasure;<br>Never heard I of a ship more richly loaded<br>With battle-weapons, mail-coats, and gleaming swords!</div>\n\nElsewhere in the poem, warriors marched wearing helmets just like the one later dug up in Suffolk:\n\n<div class=\"reading-stanza\">Boar-figures shone above their cheek-guards,<br>Adorned with bright gold, gleaming and fire-hardened,<br>Standing fierce guard over those brave warriors' lives!</div>\n\nIn summer 1939 at Sutton Hoo, Edith Pretty and Basil Brown brushed away Suffolk sand. Beneath Mound 1 lay iron ship rivets, red Indian garnets, and King Raedwald's gleaming helmet, proving the poet described real life!",
+      "parent_discussion": [
+        {
+          "question": "Which treasures placed beside the mast in the poem Beowulf match real objects found in Mound 1 at Sutton Hoo?",
+          "answer": "Battle-weapons, mail-coats, gleaming swords, gold treasures from distant lands (like Indian garnets and Byzantine spoons), and gilded helmets with boar figures!"
+        },
+        {
+          "question": "Notice the rhythm and repeated starting sounds in lines like 'laid their beloved lord'. Why were Old English poems written like that?",
+          "answer": "Strong beats and matching starting letters (alliteration) helped bards remember thousands of lines by heart while chanting to a harp."
+        },
+        {
+          "question": "Why did Edith Pretty and Basil Brown's 1939 dig at Sutton Hoo completely transform how historians viewed the 'Dark Ages'?",
+          "answer": "Finding dazzling goldwork, red Sri Lankan garnets, and a 27-metre ship proved Anglo-Saxon kingdoms were artistic, wealthy, and connected across continents."
+        }
+      ],
+      "story_check": [
+        {
+          "question": "What is the name of the famous Old English epic poem that describes a royal ship burial packed with weapons and gold?",
+          "options": [
+            "Beowulf",
+            "The Gallic War",
+            "The Vindolanda Tablet",
+            "Domesday Book"
+          ],
+          "correctIndex": 0,
+          "feedback": "Spot on! Beowulf opens with a royal ship burial loaded with weapons and distant treasures—just like Sutton Hoo."
+        },
+        {
+          "question": "Who teamed up in Suffolk in 1939 to excavate the ghost ship inside Mound 1 at Sutton Hoo?",
+          "options": [
+            "Peter Whatling and Eric Lawes",
+            "Edith Pretty and archaeologist Basil Brown",
+            "King Alfred and Bishop Asser",
+            "Claudia Severa and Lepidina"
+          ],
+          "correctIndex": 1,
+          "feedback": "Correct! Landowner Edith Pretty asked local archaeologist Basil Brown to dig Mound 1, revealing iron rivets from a 27-metre ship."
+        },
+        {
+          "question": "Where had the glowing red garnet gemstones on Sutton Hoo's sword fittings and helmet eyebrows travelled from?",
+          "options": [
+            "Orkney and Shetland",
+            "Cornwall and Wales",
+            "India and Sri Lanka",
+            "Iceland and Greenland"
+          ],
+          "correctIndex": 2,
+          "feedback": "Exactly right! Scientific tests proved those glowing red garnets came thousands of miles from India and Sri Lanka."
+        }
+      ],
+      "monday_cold_call": {
+        "question": "How did the 1939 Sutton Hoo ship burial prove that scenes in the Old English poem Beowulf were based on real customs?",
+        "answer": "Sutton Hoo's 27-metre ship, distant treasures, swords, and gilded boar-crested helmet matched the royal ship burial and helmets described in Beowulf."
+      },
+      "hinge_question": "Why would a 7th-century king like Raedwald be buried with BOTH pagan war gear and Christian silver spoons inside the same ship?",
+      "studio_audio": "/audio/reading/ks2_anglo_saxons_vikings/r1.mp3",
+      "studio_voice_label": "Studio Male Historian · KS2 Storyteller",
+      "audio_file": "/audio/reading/ks2_anglo_saxons_vikings/r1.mp3"
+    },
+    {
+      "lesson_index": 2,
+      "lesson_id": "lesson_3",
+      "lesson_label": "Enquiry 3",
+      "short_tab_title": "Shock at Lindisfarne",
+      "literary_mode": "intimate_eyewitness",
+      "provenance_tier": "adapted_primary",
+      "source_type": "eyewitness_letter",
+      "source_type_label": "AD 793 Shocked Letter",
+      "book_title": "Letters on the Viking Raid at Lindisfarne & Anglo-Saxon Chronicle (AD 793)",
+      "author": "Alcuin of York & Chronicler (translated from Latin & Old English)",
+      "provenance_note": "Adapted for KS2 oral reading from Alcuin of York, Epistola 16 to King Ethelred of Northumbria (summer AD 793) and the Anglo-Saxon Chronicle entry for AD 793 (Public Domain).",
+      "author_context": "On 8 June AD 793, shallow-draught Viking longships stormed Holy Island at Lindisfarne—prompting Northumbrian scholar Alcuin to write one of history's most shocked letters!",
+      "cover_image": "/images/upgraded/ks2-ancient/asv_l3_src1_lindisfarne_raider_stone.jpg",
+      "cover_caption": "Carved sandstone grave marker from Lindisfarne Priory showing seven armed Viking raiders marching with raised battle-axes and swords.",
+      "vocabVault": [
+        {
+          "term": "Lindisfarne",
+          "pronunciation": "LIN-dis-farn",
+          "def": "Holy Island off the Northumberland coast, where Viking longships launched their famous AD 793 raid."
+        },
+        {
+          "term": "Alcuin",
+          "pronunciation": "AL-kwin",
+          "def": "A famous Northumbrian scholar and teacher who wrote horrified letters when news of Lindisfarne arrived."
+        },
+        {
+          "term": "Draught",
+          "pronunciation": "DRAFT",
+          "def": "How shallowly a ship's hull sits in water—letting Viking longships glide straight onto sandy beaches."
+        },
+        {
+          "term": "Monastery",
+          "pronunciation": "MON-uh-stree",
+          "def": "A peaceful Christian community where monks prayed, painted vellum Gospels, and guarded silver treasures."
+        }
+      ],
+      "extract": "In the year AD 793, frightening signs shook the people of Northumbria! Monks wrote of wild whirlwinds, bright lightning, and fiery dragons flashing across the sky. Soon after, on 8 June, sleek Viking longships glided onto Holy Island at Lindisfarne!\n\nWhen news of the raid crossed the sea, scholar Alcuin grabbed his quill pen in horror. With a heavy heart, he wrote a warning letter to Northumbria's King Ethelred.\n\nFor nearly three hundred and fifty years, our people have lived in this lovely land! Never before has such terror struck Britain from a pagan seafaring folk. Nobody ever dreamed that raiders could sail straight across the open North Sea!\n\nLook at Saint Cuthbert's church, stained with priests' blood and stripped of silver treasures! Britain's holiest island has fallen prey to fierce raiders. Guard your coasts well, O King, for everyone fears this storm is only the beginning!",
+      "parent_discussion": [
+        {
+          "question": "Why did Alcuin say nobody in Britain had ever thought a raid like 8 June AD 793 was even possible?",
+          "answer": "For centuries people thought the stormy open North Sea acted like a wall—not realising clinker-built Viking longships could cross open ocean and beach straight onto islands."
+        },
+        {
+          "question": "Why were isolated island monasteries like Lindisfarne 'soft targets' for early Viking summer raiders?",
+          "answer": "Coastal monasteries sat right beside the sea, held silver chalices and jewel-covered Gospel books, and were lived in by unarmed monks."
+        },
+        {
+          "question": "Alcuin feared in AD 793 that this raid was 'only the beginning'. How did events in AD 865 prove him right?",
+          "answer": "Summer raids grew larger until the Great Heathen Army landed in AD 865 to stay all winter, conquering York (Jorvik), East Anglia, and Mercia!"
+        }
+      ],
+      "story_check": [
+        {
+          "question": "On what exact date did Viking longships launch their shocking raid on Holy Island at Lindisfarne?",
+          "options": [
+            "55 BC",
+            "AD 410",
+            "8 June AD 793",
+            "14 October 1066"
+          ],
+          "correctIndex": 2,
+          "feedback": "Spot on! 8 June AD 793 at Lindisfarne marks the dramatic opening of the Viking Age in Britain."
+        },
+        {
+          "question": "Which Northumbrian scholar wrote a heartbroken letter crying 'Never before has such terror appeared in Britain'?",
+          "options": [
+            "Alcuin of York",
+            "Julius Caesar",
+            "Basil Brown",
+            "Harald Hardrada"
+          ],
+          "correctIndex": 0,
+          "feedback": "Correct! Alcuin of York wept over St Cuthbert's church at Lindisfarne and warned King Ethelred that worse raids might follow."
+        },
+        {
+          "question": "What clever ship-building feature let Viking longships land directly on Lindisfarne's beach and row up shallow rivers?",
+          "options": [
+            "Heavy iron steam engines",
+            "A flat, flexible clinker-built oak hull with only a 1-metre shallow draught",
+            "Three towering brick chimneys",
+            "Solid stone anchors permanently fixed to the keel"
+          ],
+          "correctIndex": 1,
+          "feedback": "Exactly right! Overlapping oak planks gave longships a light, shallow draught of around one metre—no harbour needed!"
+        }
+      ],
+      "monday_cold_call": {
+        "question": "Where did Vikings strike on 8 June AD 793, and why did scholar Alcuin say everyone in Britain was so shocked?",
+        "answer": "Vikings raided the monastery on Holy Island at Lindisfarne, and Alcuin wrote that nobody had ever believed raiders could strike straight across the open North Sea."
+      },
+      "hinge_question": "Since monks wrote all the chronicles in AD 793 while Vikings wrote none, do we hear both sides of the story equally?",
+      "studio_audio": "/audio/reading/ks2_anglo_saxons_vikings/r2.mp3",
+      "studio_voice_label": "Studio Male Historian · KS2 Storyteller",
+      "audio_file": "/audio/reading/ks2_anglo_saxons_vikings/r2.mp3"
+    },
+    {
+      "lesson_index": 3,
+      "lesson_id": "lesson_4",
+      "lesson_label": "Enquiry 4",
+      "short_tab_title": "Alfred in the Marshes",
+      "literary_mode": "storied_micro_history",
+      "provenance_tier": "storied_micro_history",
+      "source_type": "micro_history",
+      "source_type_label": "True Historical Story",
+      "book_title": "Mist Over Athelney: How Alfred Saved Wessex (AD 878)",
+      "author": "The History Revision Hub (from Bishop Asser & the Anglo-Saxon Chronicle)",
+      "provenance_note": "Original true historical story grounded in Bishop Asser's Life of King Alfred (AD 893), the Anglo-Saxon Chronicle (AD 878–896), and the Ashmolean Museum's Alfred Jewel.",
+      "author_context": "By winter AD 878, Viking armies had conquered every Anglo-Saxon kingdom except Wessex—forcing young King Alfred to hide inside freezing Somerset marshes and plan a comeback!",
+      "cover_image": "/units/ks2_anglo_saxons_vikings/assets/alfred_jewel_ashmolean.jpg",
+      "cover_caption": "Historical engraving of the gold-and-crystal Alfred Jewel found near Athelney in Somerset, inscribed 'AELFRED MEC HEHT GEWYRCAN' ('Alfred ordered me to be made').",
+      "vocabVault": [
+        {
+          "term": "Athelney",
+          "pronunciation": "ATH-el-nee",
+          "def": "The remote island hidden deep inside misty Somerset marshes where King Alfred sheltered in early AD 878."
+        },
+        {
+          "term": "Guthrum",
+          "pronunciation": "GOOTH-rum",
+          "def": "The Viking warlord defeated by Alfred at Edington who accepted Christian baptism and ruled the Danelaw."
+        },
+        {
+          "term": "Burhs",
+          "pronunciation": "BUR-uz",
+          "def": "Thirty-three fortified walled towns built across Wessex by King Alfred so no village lay far from safety."
+        },
+        {
+          "term": "Danelaw",
+          "pronunciation": "DAYN-law",
+          "def": "Northern and eastern England where Viking laws and settlers ruled east of Roman Watling Street."
+        }
+      ],
+      "extract": "Right after Christmas in January AD 878, Viking leader Guthrum struck Chippenham by surprise! Every other Saxon kingdom had fallen, and now Wessex stood close to ruin. Young King Alfred fled into freezing Somerset marshes with a small loyal band.\n\nDeep among tall reeds on tiny Athelney island, Alfred built a hidden fort and planned ahead. Brave riders slipped out through thick mist to call loyal farmers across three counties.\n\nIn May AD 878, Alfred rode to Egbert's Stone, where thousands of Wessex men cheered him! Locking round shields tightly at the Battle of Edington, Alfred's army smashed Guthrum's host. Surrounded in camp, Guthrum agreed to Christian baptism and a peace border for the Danelaw.\n\nNever again would Wessex be caught off guard! Alfred ringed his land with thirty-three walled burhs and built fast sixty-oar warships. Loving wisdom too, he turned Latin books into Old English and sent bishops crystal pointers marked with his own royal name!",
+      "parent_discussion": [
+        {
+          "question": "Why was hiding on Athelney inside the Somerset marshes such a smart survival move by King Alfred in January AD 878?",
+          "answer": "Guthrum's large Viking army could not march horses or heavy carts through deep marshes and mist, giving Alfred safe time to rally Wessex farmers."
+        },
+        {
+          "question": "How did Alfred's network of thirty-three fortified burhs make sure no Viking surprise attack like Chippenham could ever succeed again?",
+          "answer": "Every Wessex village lay within twenty miles (one day's walk) of a guarded earth-and-timber walled burh where families and cattle could shelter."
+        },
+        {
+          "question": "Why is Alfred the ONLY ruler in British history given the title 'the Great'—was it just because he won battles?",
+          "answer": "No—besides saving Wessex at Edington and building burhs and warships, he made peace with Guthrum, opened schools, and translated books into Old English."
+        }
+      ],
+      "story_check": [
+        {
+          "question": "Where did King Alfred hide during winter AD 878 after Guthrum's surprise attack on Chippenham?",
+          "options": [
+            "On Athelney inside the misty Somerset marshes",
+            "Inside Maiden Castle hillfort",
+            "On Holy Island at Lindisfarne",
+            "Across the Channel in Rome"
+          ],
+          "correctIndex": 0,
+          "feedback": "Spot on! Hidden among marshes and reeds at Athelney in Somerset, Alfred planned his spring comeback."
+        },
+        {
+          "question": "At which decisive battle in May AD 878 did Alfred's shield wall defeat Viking leader Guthrum?",
+          "options": [
+            "The Battle of Watling Street",
+            "The Battle of Edington",
+            "The Battle of Stamford Bridge",
+            "The Battle of Hastings"
+          ],
+          "correctIndex": 1,
+          "feedback": "Correct! Victory at the Battle of Edington saved Wessex and led to Guthrum's baptism and the Danelaw treaty."
+        },
+        {
+          "question": "What did King Alfred build thirty-three of across Wessex so no village lay more than twenty miles from safety?",
+          "options": [
+            "Stone aqueducts",
+            "Step pyramids",
+            "Fortified walled towns called burhs",
+            "Bronze lighthouses"
+          ],
+          "correctIndex": 2,
+          "feedback": "Exactly right! Walled burhs like Wareham and Wallingford protected Wessex families and grew into busy market towns."
+        }
+      ],
+      "monday_cold_call": {
+        "question": "How did King Alfred save Wessex in AD 878, and what two smart defences did he build afterwards?",
+        "answer": "After regrouping in the Athelney marshes, Alfred defeated Guthrum at Edington in AD 878, then built 33 fortified walled burhs and 60-oar coastal warships."
+      },
+      "hinge_question": "Which did more to earn Alfred his title 'the Great': his sword at Edington, his walled burhs, or his Old English books and schools?",
+      "studio_audio": "/audio/reading/ks2_anglo_saxons_vikings/r3.mp3",
+      "studio_voice_label": "Studio Male Historian · KS2 Storyteller",
+      "audio_file": "/audio/reading/ks2_anglo_saxons_vikings/r3.mp3"
+    },
+    {
+      "lesson_index": 4,
+      "lesson_id": "lesson_5",
+      "lesson_label": "Enquiry 5",
+      "short_tab_title": "Ibn Fadlan Meets Vikings",
+      "literary_mode": "intimate_eyewitness",
+      "provenance_tier": "adapted_primary",
+      "source_type": "eyewitness_account",
+      "source_type_label": "Arab Diplomat's Journal",
+      "book_title": "Risala — Eyewitness Journey from Baghdad to the Northern Rivers (AD 922)",
+      "author": "Ahmad ibn Fadlan (adapted for KS2 from AD 922 Arabic travel journal)",
+      "provenance_note": "Adapted into age-appropriate KS2 oral sentences from Ahmad ibn Fadlan's Risala (AD 921–922 diplomatic account for the Caliph of Baghdad), paired with Coppergate silver dirhams.",
+      "author_context": "How did Arabic silver coins from sunny Baghdad end up buried under rainy Coppergate in Viking York? In AD 922, Arab diplomat Ahmad ibn Fadlan met Viking river-traders face to face!",
+      "cover_image": "/units/ks2_anglo_saxons_vikings/assets/viking_islamic_dirham_coins.jpg",
+      "cover_caption": "An Islamic silver dirham coin stamped in Arabic script, traded by Viking river-merchants and buried in hoards across northern England.",
+      "vocabVault": [
+        {
+          "term": "Ibn Fadlan",
+          "pronunciation": "IB-un fad-LAHN",
+          "def": "An observant diplomat sent north from Baghdad in AD 921–922 who wrote a famous eyewitness description of Viking traders."
+        },
+        {
+          "term": "Dirham",
+          "pronunciation": "DEER-ham",
+          "def": "A pure silver coin minted in Islamic cities like Baghdad and Samarkand, prized by Viking merchants."
+        },
+        {
+          "term": "Jorvik",
+          "pronunciation": "YOR-vik",
+          "def": "The bustling Viking trading city of York, where wet peat beneath Coppergate saved 40,000 everyday finds."
+        },
+        {
+          "term": "Amber",
+          "pronunciation": "AM-ber",
+          "def": "Glowing golden fossilised tree resin from the Baltic Sea, carved into beads and rings in Jorvik workshops."
+        }
+      ],
+      "extract": "In May AD 922, diplomat Ahmad ibn Fadlan rode far north from sunny Baghdad. Beside a wide river, he watched tall wooden ships pull onto the muddy bank. Stepping ashore came Viking traders called the Rus, and Ibn Fadlan stared in awe!\n\nI have watched these Rus pitch camp on their trading trips, he wrote in his book! Never have I met taller or stronger people, for they stand like date-palm trees!\n\nEvery man carries a sharp axe, a broad patterned sword, and a belt knife at all times. Around their necks shine strings of green glass beads prized above almost everything. Rich traders gladly pay one silver dirham coin for each bead to gift their wives!\n\nOnce their boats tie up, merchants lay out bread, meat, and onions. Eagerly they hope for rich buyers bringing bags of pure Arabic silver dirhams for warm northern furs! Many of those gleaming Baghdad coins travelled all the way back to busy workshops in Jorvik.",
+      "parent_discussion": [
+        {
+          "question": "Which striking physical details stood out to Arab diplomat Ahmad ibn Fadlan the moment he saw Viking merchants?",
+          "answer": "He marvelled that they stood 'as tall as date-palm trees', never put down their axe, patterned sword, and knife, and wore prized glass bead necklaces."
+        },
+        {
+          "question": "What goods did Viking river-merchants swap with buyers from Baghdad and Samarkand?",
+          "answer": "Vikings traded warm northern furs (and walrus ivory or amber) in exchange for bags of pure Islamic silver dirham coins and prized beads."
+        },
+        {
+          "question": "How do Ibn Fadlan's AD 922 journal and the 40,000 Coppergate finds in York change the stereotype that Vikings were ONLY violent raiders?",
+          "answer": "Both sources prove Vikings were also long-distance international merchants, skilled comb- and shoe-makers, and navigators linking York to Baghdad and Byzantium."
+        }
+      ],
+      "story_check": [
+        {
+          "question": "From which great Islamic capital city had diplomat Ahmad ibn Fadlan travelled before meeting Viking river-traders in AD 922?",
+          "options": [
+            "Rome",
+            "Baghdad",
+            "Canterbury",
+            "Winchester"
+          ],
+          "correctIndex": 1,
+          "feedback": "Spot on! Sent north by the Caliph of Baghdad, Ibn Fadlan left us a vivid eyewitness picture of Viking river-merchants."
+        },
+        {
+          "question": "What trees from his homeland did Ibn Fadlan compare the tall Viking traders to?",
+          "options": [
+            "Weeping willows",
+            "Twisted thorn bushes",
+            "Date-palm trees",
+            "Apple trees"
+          ],
+          "correctIndex": 2,
+          "feedback": "Correct! 'They stand as tall as date-palm trees,' marvelled Ibn Fadlan in his AD 922 journal."
+        },
+        {
+          "question": "Why have archaeologists dug up thousands of Arabic silver dirham coins in Viking hoards and under Coppergate in Jorvik (York)?",
+          "options": [
+            "Caliphs invaded Yorkshire in elephants",
+            "Viking merchants sailed eastern rivers trading furs for Islamic silver dirhams and brought them home to Britain",
+            "Romans minted Arabic coins on Hadrian's Wall",
+            "Stone Age hunters dropped them on Doggerland"
+          ],
+          "correctIndex": 1,
+          "feedback": "Exactly right! Viking river-traders connected northern England all the way to the Silk Roads and Islamic mints."
+        }
+      ],
+      "monday_cold_call": {
+        "question": "Who met Viking river-merchants in AD 922, and how did Islamic silver dirhams reach Viking Jorvik (York)?",
+        "answer": "Arab diplomat Ahmad ibn Fadlan from Baghdad met them, recording how Vikings traded northern furs along eastern rivers for silver dirham coins that travelled back to Jorvik."
+      },
+      "hinge_question": "What surprises you more about Viking Jorvik: silk from Byzantium, a cowrie shell from the Red Sea, or silver coins from Baghdad?",
+      "studio_audio": "/audio/reading/ks2_anglo_saxons_vikings/r4.mp3",
+      "studio_voice_label": "Studio Male Historian · KS2 Storyteller",
+      "audio_file": "/audio/reading/ks2_anglo_saxons_vikings/r4.mp3"
+    },
+    {
+      "lesson_index": 5,
+      "lesson_id": "lesson_6",
+      "lesson_label": "Enquiry 6",
+      "short_tab_title": "The Battle of Maldon",
+      "literary_mode": "verbatim_literature",
+      "provenance_tier": "verbatim_literature",
+      "source_type": "epic_poetry",
+      "source_type_label": "Old English Heroic Poem",
+      "book_title": "The Battle of Maldon (Old English Poem, AD 991)",
+      "author": "Anonymous Old English Poet (Public Domain verse translation)",
+      "provenance_note": "Public-domain verse lines from the late-10th-century Old English poem The Battle of Maldon (lines 45–48, 312–319, trans. R. K. Gordon, 1926), bridging to Stamford Bridge and Hastings (1066).",
+      "author_context": "After Aethelflaed and King Athelstan united one Kingdom of England, fresh Viking fleets demanded Danegeld silver in AD 991—inspiring Old English poetry's bravest shield-wall speech!",
+      "cover_image": "/units/ks2_anglo_saxons_vikings/assets/hastings_1066_shield_wall.jpg",
+      "cover_caption": "Historical re-enactment of a tightly locked early medieval shield wall with iron helmets, mail coats, spears, and battle banners.",
+      "vocabVault": [
+        {
+          "term": "King Athelstan",
+          "pronunciation": "KING ATH-el-stan",
+          "def": "King Alfred's grandson who captured York in AD 927 to become the first true King of All England."
+        },
+        {
+          "term": "Danegeld",
+          "pronunciation": "DAYN-geld",
+          "def": "Huge payments of silver ('Dane-gold') paid from AD 991 to persuade raiding Danish fleets to sail away."
+        },
+        {
+          "term": "Shield Wall",
+          "pronunciation": "SHEELD WAWL",
+          "def": "A tight battle line where warriors locked round wooden shields edge to edge to block enemy spears."
+        },
+        {
+          "term": "Tribute",
+          "pronunciation": "TRIB-yoot",
+          "def": "Treasure or silver demanded by an invading army as the price for peace."
+        }
+      ],
+      "extract": "By AD 927, bold Aethelflaed and King Athelstan had united one Kingdom of England. Yet in August AD 991, ninety-three Viking ships anchored off Maldon in Essex demanding bags of Danegeld silver!\n\nTall Saxon leader Byrhtnoth raised his round shield on the shore. Fiercely he shouted back words made famous in the Old English poem The Battle of Maldon:\n\n<div class=\"reading-stanza\">Hear you, sea-rover, what this folk replies?<br>Spear-points alone will we pay you for tribute,<br>Sharp-edged darts and tried ancient swords,<br>War-gear that brings you small profit in battle!</div>\n\nWhen Byrhtnoth fell fighting, old warrior Byrhtwold lifted his ash spear and spoke famous brave lines:\n\n<div class=\"reading-stanza\">Mind must be firmer, heart must be bolder,<br>Courage the greater as our strength grows less!<br>Here lies our lord cut down in the dust.<br>Here will I stand fast right beside my friend!</div>\n\nIn 1066, King Harold's tired shield wall showed that same brave spirit. His men beat Harald Hardrada at Stamford Bridge before falling to Duke William at Hastings!",
+      "parent_discussion": [
+        {
+          "question": "Instead of handing over silver Danegeld coins, what 'tribute' did Byrhtnoth promise the Viking messenger across the river?",
+          "answer": "He answered fiercely that his people would pay only with sharp spear-points and ancient swords!"
+        },
+        {
+          "question": "Read Byrhtwold's famous chant ('Mind must be firmer, heart must be bolder...') out loud together. Why did those words inspire warriors when a battle went badly?",
+          "answer": "They reminded tired warriors never to run away, urging their minds and courage to grow stronger even as their physical strength grew weaker."
+        },
+        {
+          "question": "Why was King Harold Godwinson's Saxon shield wall so exhausted by the time it faced Duke William at Hastings on 14 October 1066?",
+          "answer": "Harold had just marched 185 miles north to defeat Viking King Harald Hardrada at Stamford Bridge on 25 September, then marched 250 miles straight back south!"
+        }
+      ],
+      "story_check": [
+        {
+          "question": "What do historians call the huge silver payments demanded by Danish fleets from AD 991 onwards?",
+          "options": [
+            "Danegeld ('Dane-gold')",
+            "Dirhams",
+            "Garum",
+            "Vellum"
+          ],
+          "correctIndex": 0,
+          "feedback": "Spot on! King Aethelred paid huge sums of silver Danegeld, though raiders kept coming back until King Cnut took the crown in AD 1016."
+        },
+        {
+          "question": "Complete old warrior Byrhtwold's famous Old English battle line: 'Mind must be firmer, heart must be bolder, courage the greater as...'",
+          "options": [
+            "...winter snow melts away!'",
+            "...ships sail home to Norway!'",
+            "...our strength grows less!'",
+            "...gold coins fill our chests!'"
+          ],
+          "correctIndex": 2,
+          "feedback": "Correct! 'Courage the greater as our strength grows less!' became the most famous expression of Anglo-Saxon loyalty."
+        },
+        {
+          "question": "Which two dramatic battles in September and October 1066 ended both the Viking Age and Anglo-Saxon rule in England?",
+          "options": [
+            "Medway and Watling Street",
+            "Edington and Brunanburh",
+            "Lindisfarne and Repton",
+            "Stamford Bridge (25 September 1066) and Hastings (14 October 1066)"
+          ],
+          "correctIndex": 3,
+          "feedback": "Exactly right! Harold crushed Harald Hardrada at Stamford Bridge, then fell nineteen days later against Duke William at Hastings."
+        }
+      ],
+      "monday_cold_call": {
+        "question": "In The Battle of Maldon, what did Byrhtnoth refuse to pay the Vikings, and what two 1066 battles ended Anglo-Saxon rule?",
+        "answer": "Byrhtnoth refused to pay silver tribute (Danegeld), promising spear-points instead, and in 1066 Stamford Bridge and the Battle of Hastings ended the Viking and Anglo-Saxon eras."
+      },
+      "hinge_question": "If Duke William's ships had landed three weeks later—or if Harald Hardrada had never invaded the north—would England still be Anglo-Saxon today?",
+      "studio_audio": "/audio/reading/ks2_anglo_saxons_vikings/r5.mp3",
+      "studio_voice_label": "Studio Male Historian · KS2 Storyteller",
+      "audio_file": "/audio/reading/ks2_anglo_saxons_vikings/r5.mp3"
+    }
   ]
 }

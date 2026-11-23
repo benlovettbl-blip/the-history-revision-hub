@@ -7782,298 +7782,518 @@
   "guided_reading": [
     {
       "lesson_index": 0,
-      "book_title": "Coalbrookdale by Night: Eyewitness Impressions of the Iron Gorge",
-      "author": "Adapted from 18th-Century Travellers at Coalbrookdale (1776–1801)",
-      "cover_image": "/images/ks3_ind/ind_l1_s0_coalbrookdale_by_night_1801.jpg",
-      "cover_caption": "Philipp Jakob de Loutherbourg, Coalbrookdale by Night (1801, Science Museum London): Coke-fired Shropshire blast furnaces illuminating the Severn Gorge day and night.",
-      "author_context": "Daniel Defoe (c. 1660–1731), celebrated author and perceptive economic traveller, journeyed across 18th-century Britain recording its nascent industrial and metallurgical energy. Later observers of Abraham Darby's Coalbrookdale and Matthew Boulton's Soho Manufactory recorded the astonishing sight of coal and iron transforming ancient woodlands into subterranean cauldrons of steam and fire.",
-      "is_adapted": true,
-      "extract": "...The approach to Coalbrookdale appeared like a vision of subterranean fire. As night fell upon the Severn valley, dense columns of black smoke curled into the heavens, illuminated from below by the blinding crimson glare of the blast furnaces. The ground beneath our feet trembled with the rhythmic thud of colossal iron hammers driven by water and steam.<br><br>Here, night and day, the roaring bellows urge the fire to an intolerable fury. Rivers of liquid iron pour from the stone hearths into the casting beds of sand, casting a lurid, unearthly glow across the swarthy figures of the workmen who guide the molten metal with long iron rods.<br><br>It seemed to the traveller as if the bowels of the earth had broken open, and that Vulcan with all his Cyclopes had established his empire upon the hills of Shropshire. What was once quiet English woodland is now an unceasing foundry of national wealth.",
-      "hinge_question": "<strong>Think:</strong> What mythic comparison does the observer use to describe the blast furnaces of Coalbrookdale?<br><br><strong>Pair:</strong> Notice how the text describes both \"a lurid, unearthly glow\" and an \"unceasing foundry of national wealth.\" Discuss with your partner: did 18th-century Britons view industrial ironworks as frightening destruction of nature, or thrilling technological progress?<br><br><strong>Share:</strong> How did the transition from wood timber to coal-fired furnaces make Britain the world's leading producer of iron by 1800?",
-      "audio_file": "/audio/reading/industrialisation_and_empire/r0.mp3",
-      "questions": [
-        "What powered the colossal iron hammers at Coalbrookdale?",
-        "Where was the molten iron poured when it left the furnace hearths?",
-        "Which Roman god of fire is invoked to describe the industrial scene?"
-      ],
-      "source_type": "contemporary_travelogue",
-      "source_type_label": "Contemporary 18th-Century Travelogue",
-      "is_primary": true,
       "lesson_id": "lesson_1",
       "lesson_label": "Enquiry 1",
-      "studio_audio": "/audio/reading/industrialisation_and_empire/r0.mp3",
-      "studio_voice_label": "Studio Male Historian · Archival Reading",
-      "provenance_tier": "adapted_primary",
-      "provenance_note": "Adapted classroom companion grounded in 18th-century travellers’ descriptions of Abraham Darby’s Coalbrookdale iron furnaces.",
+      "short_tab_title": "1. Blake & Iron Furnaces",
+      "literary_mode": "verbatim_literature",
+      "provenance_tier": "verbatim_literature",
+      "source_type": "period_verse",
+      "source_type_label": "Romantic Poetry (1794–1804) & Ironworks Context",
+      "is_primary": true,
+      "is_adapted": false,
+      "book_title": "Dark Satanic Mills: William Blake’s London (1794) & The Fires of Industrial Britain",
+      "author": "William Blake (Songs of Experience, 1794; Milton Preface, 1804)",
+      "provenance_note": "Verbatim stanzas from William Blake’s 'London' (Songs of Experience, 1794) and his 1804 Preface to Milton ('And did those feet in ancient time'), framed with Shropshire and Hampshire ironmaking context.",
+      "author_context": "Between 1750 and 1804, coal-fired blast furnaces at Coalbrookdale, James Watt’s rotary steam engines, and Henry Cort’s puddling furnaces at Funtley turned rural Britain into the world’s iron powerhouse. Walking through smoke-darkened streets in 1794 and 1804, poet and engraver William Blake gave the Industrial Revolution its most haunting literary phrase: 'dark Satanic Mills'.",
+      "cover_image": "/images/ks3_ind/ind_l1_s0_coalbrookdale_by_night_1801.jpg",
+      "cover_caption": "Philipp Jakob de Loutherbourg, Coalbrookdale by Night (1801, Science Museum London): Coke-fired Shropshire blast furnaces illuminating the wooded Severn Gorge day and night.",
       "vocabVault": [
         {
-          "term": "Blast Furnace",
-          "def": "A towering furnace where iron ore, coke (purified coal), and limestone were superheated with blasts of air to smelt liquid iron."
+          "term": "Charter’d",
+          "pronunciation": "CHAR-terd",
+          "def": "Mapped out, owned, and controlled for commercial profit—Blake’s protest that even the River Thames seemed bought and sold."
         },
         {
-          "term": "Coke Smelting",
-          "def": "Abraham Darby’s breakthrough at Coalbrookdale (1709) using purified coal instead of scarce wood charcoal to mass-produce cheap iron."
+          "term": "Mind-Forg’d Manacles",
+          "pronunciation": "MYND-forjd MAN-uh-kulz",
+          "def": "Blake’s metaphor comparing invisible social rules, factory discipline, and poverty to heavy iron handcuffs forged in a furnace."
         },
         {
-          "term": "Bellows",
-          "def": "Water- or steam-powered air pumps driving fierce oxygen blasts into furnaces day and night."
+          "term": "Puddling Furnace",
+          "pronunciation": "PUD-ling FUR-niss",
+          "def": "Henry Cort’s 1783 Hampshire coal-fired furnace that burned impurities out of brittle pig iron to make tough wrought iron."
         },
         {
-          "term": "Vulcan",
-          "def": "The Roman god of fire and metalworking—used by 18th-century visitors to describe the fiery spectacle of Shropshire ironworks."
+          "term": "Satanic Mills",
+          "pronunciation": "suh-TAN-ik MILZ",
+          "def": "Blake’s famous 1804 phrase contrasting green rural England with roaring, smoke-blackened steam mills and ironworks."
         }
       ],
+      "extract": "Across late eighteenth-century Britain, coal fires replaced quiet oak woodlands. Coke blast furnaces roared at Coalbrookdale in Shropshire, while Henry Cort’s puddling hearths in Hampshire stirred white-hot iron for the Royal Navy. Walking beside the smoky Thames in 1794, poet and engraver William Blake etched London onto copper plates.\n\n<div class=\"reading-stanza\">I wander thro’ each charter’d street,<br>Near where the charter’d Thames does flow.<br>And mark in every face I meet<br>Marks of weakness, marks of woe.</div>\n\n<div class=\"reading-stanza\">In every cry of every Man,<br>In every Infant’s cry of fear,<br>In every voice, in every ban,<br>The mind-forg’d manacles I hear.</div>\n\nTen years later, James Watt’s rotary steam engines had freed factories from quiet river valleys and packed smoky towns with workers. In his 1804 preface to Milton, Blake asked a haunting question.\n\n<div class=\"reading-stanza\">And did the Countenance Divine,<br>Shine forth upon our clouded hills?<br>And was Jerusalem builded here,<br>Among these dark Satanic Mills?</div>\n\nVisitors riding toward Shropshire’s iron gorge after dark understood Blake’s awe and dread. Crimson furnace flames lit the night clouds while heavy steam hammers shook the ground beneath their boots. Rivers of glowing molten metal poured hissing and smoking into beds of damp sand. Cheap British wrought iron armed Nelson’s warships and bridged deep rivers—yet green rural England had changed forever.",
       "parent_discussion": [
         {
-          "question": "Why did 18th-century visitors compare Coalbrookdale at night to an underworld of fire?",
-          "answer": "Columns of black smoke, roaring steam hammers, and glowing rivers of molten iron lit up the wooded Severn gorge continuously day and night."
+          "question": "Why does William Blake use a metalworking word—'mind-forg’d manacles' (handcuffs)—in his 1794 poem London?",
+          "answer": "Just as ironmasters forged real chains and bars in coal furnaces, Blake felt harsh industrial poverty and strict laws chained working people’s minds and lives."
         },
         {
-          "question": "What technological breakthrough at Coalbrookdale helped launch Britain’s Industrial Revolution?",
-          "answer": "Smelting iron with coal-based coke instead of wood charcoal enabled cheap, mass-produced iron for steam engines, bridges, machines, and railways."
+          "question": "Look at de Loutherbourg’s 1801 painting Coalbrookdale by Night alongside Blake’s phrase 'dark Satanic Mills': why did coal and iron amaze yet frighten witnesses?",
+          "answer": "Coke blast furnaces and puddling hearths created thrilling national wealth and naval iron, yet drowned wooded valleys in 24-hour smoke, fire, and exhausting labour."
         },
         {
-          "question": "What environmental and human changes came alongside this new \"foundry of national wealth\"?",
-          "answer": "Quiet rural valleys were transformed into smoky industrial landscapes where workers laboured long, dangerous shifts beside molten metal."
+          "question": "How had James Watt’s steam engine and Henry Cort’s puddling furnace changed where and how British iron and goods were made by 1804?",
+          "answer": "Coal replaced scarce oak charcoal and steam replaced river waterwheels, letting huge mills and ironworks run non-stop in smoky towns."
         }
       ],
-      "short_tab_title": "1. Coalbrookdale by Night"
+      "story_check": [
+        {
+          "question": "Which river does William Blake describe as 'charter’d'—mapped and controlled for commercial trade—in his 1794 poem London?",
+          "options": [
+            "The River Severn",
+            "The River Thames",
+            "The River Mersey",
+            "The River Meon"
+          ],
+          "correctIndex": 1,
+          "feedback": "Correct! Walking through London in 1794, Blake protested that even the streets and the flowing Thames were 'charter’d' by wealth."
+        },
+        {
+          "question": "What metalworking metaphor does Blake use for invisible poverty and harsh control over ordinary people?",
+          "options": [
+            "Grooved iron rollers",
+            "Silver chalices",
+            "Mind-forg’d manacles",
+            "Brass compasses"
+          ],
+          "correctIndex": 2,
+          "feedback": "Spot on. 'Manacles' are iron shackles forged at an anvil—linking industrial metalworking to human unfreedom."
+        },
+        {
+          "question": "What famous three-word phrase did Blake coin in 1804 for the smoky factories transforming Britain’s 'clouded hills'?",
+          "options": [
+            "Workshop of Europe",
+            "Dark Satanic Mills",
+            "Foundry of Wealth",
+            "Crimson Iron Gorge"
+          ],
+          "correctIndex": 1,
+          "feedback": "Exactly right. Blake’s 1804 lines—today sung as the hymn 'Jerusalem'—immortalised 'these dark Satanic Mills'."
+        }
+      ],
+      "monday_cold_call": {
+        "question": "What two famous industrial phrases did poet William Blake coin in 1794 and 1804—and how do they connect to Britain’s coal-and-iron revolution?",
+        "answer": "'Mind-forg’d manacles' (1794) and 'dark Satanic Mills' (1804)—capturing the human and environmental shock as coal furnaces and steam mills replaced rural workshops."
+      },
+      "hinge_question": "<strong>Think:</strong> Why had wood shortages forced British ironmasters like Darby and Cort to turn to coal?<br><br><strong>Pair:</strong> Compare William Blake’s poetic view of industrial Britain with an Admiralty official testing Henry Cort’s wrought iron at Portsmouth in 1787.<br><br><strong>Share:</strong> Was the shift to coal and steam mainly a story of national triumph, or human and environmental cost?",
+      "questions": [
+        "What does William Blake notice in 'every face I meet' along London’s streets?",
+        "Explain Blake’s metaphor of 'mind-forg’d manacles'.",
+        "What famous phrase did Blake use in 1804 to contrast with England’s 'clouded hills'?"
+      ],
+      "audio_file": "/audio/reading/industrialisation_and_empire/r0.mp3",
+      "studio_audio": "/audio/reading/industrialisation_and_empire/r0.mp3",
+      "studio_voice_label": "Studio Male Historian · Classic Literature"
     },
     {
       "lesson_index": 1,
-      "book_title": "A Memoir of Robert Blincoe, an Orphan Boy",
-      "author": "Robert Blincoe (recorded by John Brown)",
-      "cover_image": "/images/ks3_ind/ind_l2_s2_factory_child_labour_1840.jpg",
-      "cover_caption": "Auguste Hervieu, \"Love Conquered Fear\" (from Frances Trollope’s Michael Armstrong, 1840): Barefoot child operatives and a young scavenger crawling beneath moving cotton-mill spinning mules.",
-      "author_context": "Robert Blincoe (c. 1792–1860) was a London workhouse orphan apprenticed at age seven to work in northern cotton mills in Nottinghamshire and Derbyshire. His published testimony before parliamentary commissioners shocked Victorian Britain and directly spurred Lord Shaftesbury's factory reform campaigns.",
-      "is_adapted": true,
-      "extract": "The children were aroused from their beds at five o'clock in the morning by the ringing of the factory bell. If any boy or girl was late by even two minutes, the heavy leather strap was laid unmercifully across their shoulders by the overlooker.<br><br>Our work as scavengers was to creep beneath the revolving machinery while the cotton mules were in full, rapid motion, sweeping up the flying dust and loose cotton fibres. The deafening roar of hundreds of whirling spindles filled the air, and the heat in the spinning rooms was kept at eighty degrees so that the threads would not snap.<br><br>...Many a time have I seen a poor child, overcome by utter fatigue, drop his head against the frame and fall asleep while standing. In an instant, the iron cog would seize his fingers or hair, and a limb would be torn away before the engine could be halted. We were fed on coarse oatcakes and pig porridge, working fourteen hours a day without respite.",
-      "hinge_question": "<strong>Think:</strong> What was the specific task of a \"scavenger\" in a cotton mill?<br><br><strong>Pair:</strong> Discuss why mill owners preferred to hire workhouse orphans like Robert Blincoe rather than adult men. What economic and physical advantages did children offer to factory masters?<br><br><strong>Share:</strong> If factory masters knew that children were being maimed and exhausted, why did it take Parliament decades of campaigning by reformers like Lord Shaftesbury to pass effective Factory Acts?",
-      "audio_file": "/audio/reading/industrialisation_and_empire/r1.mp3",
-      "questions": [
-        "At what time were the orphan apprentice children woken for work?",
-        "Why was the temperature in the cotton spinning rooms kept at eighty degrees?",
-        "What punishment was administered if a child arrived late to the mill?"
-      ],
-      "source_type": "primary_memoir",
-      "source_type_label": "Eyewitness Child Labour Memoir (1832)",
-      "is_primary": true,
       "lesson_id": "lesson_2",
       "lesson_label": "Enquiry 2",
-      "studio_audio": "/audio/reading/industrialisation_and_empire/r1.mp3",
-      "studio_voice_label": "Studio Male Historian · Archival Reading",
+      "short_tab_title": "2. Blincoe & Mill Verse",
+      "literary_mode": "intimate_eyewitness",
       "provenance_tier": "adapted_primary",
-      "provenance_note": "Adapted for KS3 reading aloud from John Brown’s 1832 Memoir of Robert Blincoe and parliamentary child-labour inquiries.",
+      "source_type": "primary_memoir",
+      "source_type_label": "Child Mill Memoir (1832) & Victorian Reform Verse (1843)",
+      "is_primary": true,
+      "is_adapted": true,
+      "book_title": "Crawling Under the Mules: Robert Blincoe’s Memoir (1832) & The Cry of the Children",
+      "author": "Robert Blincoe (1832 Memoir) & Elizabeth Barrett Browning (1843)",
+      "provenance_note": "Sentence-calibrated from John Brown’s 1832 Memoir of Robert Blincoe and parliamentary child-labour testimony, paired with a verbatim stanza from Elizabeth Barrett Browning’s 'The Cry of the Children' (1843).",
+      "author_context": "Robert Blincoe (c. 1792–1860) was sent at age seven from a London workhouse to labour fourteen hours a day in northern cotton mills. Survivors’ testimonies before the 1832 Sadler Committee—amplified by Victorian poets like Elizabeth Barrett Browning and reformers like Lord Shaftesbury—forced Parliament to pass the 1833 Factory Act and 1842 Mines Act.",
+      "cover_image": "/images/ks3_ind/ind_l2_s2_factory_child_labour_1840.jpg",
+      "cover_caption": "Auguste Hervieu, 'Love conquered Fear' (published 20 April 1839 by Henry Colburn for Frances Trollope’s Michael Armstrong), showing barefoot child operatives and a young scavenger crawling beneath a spinning mule.",
       "vocabVault": [
         {
           "term": "Scavenger",
-          "def": "A young mill child forced to crawl underneath moving spinning machinery to sweep up loose cotton dust and lint."
-        },
-        {
-          "term": "Overlooker",
-          "def": "A factory supervisor paid to keep production fast and punish late or exhausted workers."
+          "pronunciation": "SKAV-in-jer",
+          "def": "A young mill child forced to crawl beneath moving spinning machines to sweep up loose cotton dust before it jammed the gears."
         },
         {
           "term": "Spinning Mule",
-          "def": "A steam-powered textile machine spinning cotton threads across hundreds of whirling spindles at once."
+          "pronunciation": "SPIN-ing MYOOL",
+          "def": "A heavy, steam-driven textile machine carrying hundreds of whirling spindles on a moving iron carriage."
         },
         {
-          "term": "Workhouse Apprentice",
-          "def": "Pauper or orphaned children sent from parish workhouses to live and labour inside distant cotton mills."
+          "term": "Overlooker",
+          "pronunciation": "OH-ver-look-er",
+          "def": "A mill supervisor paid bonuses for high output who strapped late or exhausted child apprentices."
+        },
+        {
+          "term": "Pauper Apprentice",
+          "pronunciation": "PAW-per uh-PREN-tiss",
+          "def": "An orphaned or poor child bound by parish workhouses to live and labour unpaid inside distant textile mills."
         }
       ],
+      "extract": "Sent north from a London workhouse at age seven, orphan Robert Blincoe never forgot the terror of the cotton mill.\n\n\"At five o’clock each morning, the clanging bell tore us from our straw beds. Any child who arrived two minutes late felt the overlooker’s heavy leather strap across their shoulders. As young scavengers, we had to creep right underneath the heavy spinning mules. While iron wheels whirled rapidly overhead, we swept up flying cotton dust from the oily floorboards. Inside rooms heated to eighty degrees so threads would not snap, we worked fourteen hours a day on sour oatcakes. Often a tired child fell asleep standing up, and unguarded cogs tore off fingers before the engine stopped.\"\n\nWhen MPs published such reports from mills and coal pits, poet Elizabeth Barrett Browning shamed Victorian readers in 1843 with The Cry of the Children.\n\n<div class=\"reading-stanza\">For, all day, we drag our burden tiring,<br>Through the coal-dark, underground.<br>Or, all day, we drive the wheels of iron<br>In the factories, round and round.</div>\n\nMoved by survivor voices like Blincoe and Matthew Crabtree, Parliament passed the 1833 Factory Act. Children under nine were banned from textile mills, and four paid inspectors began checking the factories.",
       "parent_discussion": [
         {
-          "question": "What exact job did young \"scavengers\" like Robert Blincoe have to perform inside cotton mills?",
-          "answer": "They had to crawl beneath heavy spinning machines while the iron parts were still moving rapidly to sweep up cotton waste."
+          "question": "What exact job did seven-year-old 'scavengers' like Robert Blincoe have to perform beneath the spinning mules?",
+          "answer": "They had to crawl under the heavy iron carriages while the machines stayed in rapid motion to sweep away loose cotton lint without pausing production."
         },
         {
-          "question": "Why were injuries so frequent among child workers in early nineteenth-century textile factories?",
-          "answer": "Working fourteen-hour days from 5 a.m. in hot, deafening rooms left exhausted children falling asleep beside unguarded cogs and rollers."
+          "question": "Why did cotton-mill owners recruit workhouse orphans and keep spinning rooms heated to eighty degrees?",
+          "answer": "Pauper orphans had no parents nearby to protect them and worked only for cheap food, while hot, humid air stopped cotton threads from snapping."
         },
         {
-          "question": "How did testimonies like Robert Blincoe’s eventually help bring about Parliamentary Factory Acts (such as the 1833 Factory Act)?",
-          "answer": "Shocking eyewitness evidence before MPs exposed the cruelty of child mill labour, forcing Parliament to ban under-nines in textile mills and appoint factory inspectors."
+          "question": "How did eyewitness testimony and poems like Elizabeth Barrett Browning’s work together to win Factory and Mines Acts?",
+          "answer": "Survivors provided undeniable facts to MPs on the Sadler Committee, while poems stirred public outrage against laissez-faire factory owners."
         }
       ],
-      "short_tab_title": "2. Robert Blincoe’s Memoir"
+      "story_check": [
+        {
+          "question": "At what time did the mill bell wake pauper apprentices like Robert Blincoe, and how long was their shift?",
+          "options": [
+            "8 a.m. for eight hours",
+            "5 a.m. for fourteen hours",
+            "7 a.m. for ten hours",
+            "Noon for six hours"
+          ],
+          "correctIndex": 1,
+          "feedback": "Correct! Children were woken at 5 a.m. and worked fourteen-hour shifts in deafening, eighty-degree spinning rooms."
+        },
+        {
+          "question": "Why was being a mill 'scavenger' so physically dangerous?",
+          "options": [
+            "Children had to climb outside factory chimneys in the rain",
+            "Children crawled beneath moving iron spinning mules where unguarded cogs crushed fingers and hair",
+            "Children steered canal barges at night",
+            "Children tested naval cannons"
+          ],
+          "correctIndex": 1,
+          "feedback": "Spot on. Owners refused to stop the steam engines for cleaning, forcing tiny children under moving iron frames."
+        },
+        {
+          "question": "What key reform did the 1833 Factory Act introduce for textile mills?",
+          "options": [
+            "Equal pay for adults and children",
+            "Closing all steam-powered mills",
+            "Banning children under nine and appointing four factory inspectors",
+            "Giving every mill worker the vote"
+          ],
+          "correctIndex": 2,
+          "feedback": "Exactly right. Unlike weaker earlier laws, the 1833 Factory Act banned under-nines in textile mills and created paid inspectors."
+        }
+      ],
+      "monday_cold_call": {
+        "question": "What was a cotton-mill 'scavenger' in Robert Blincoe’s memoir—and why were spinning rooms kept at eighty degrees?",
+        "answer": "A scavenger was a young child forced to crawl under moving spinning mules to sweep up cotton dust; rooms were kept at 80°F so damp cotton threads wouldn't snap."
+      },
+      "hinge_question": "<strong>Think:</strong> Look at Hervieu’s 1839 engraving on the cover—spot the tiny scavenger underneath the mule carriage.<br><br><strong>Pair:</strong> Why did factory owners argue Parliament had no right ('laissez-faire') to limit working hours?<br><br><strong>Share:</strong> Why was appointing paid factory inspectors in 1833 the decisive turning point in factory reform?",
+      "questions": [
+        "What happened if a child apprentice arrived two minutes late at the cotton mill?",
+        "Why was the spinning room heated to eighty degrees?",
+        "Which two workplaces does Elizabeth Barrett Browning link in her 1843 stanza?"
+      ],
+      "audio_file": "/audio/reading/industrialisation_and_empire/r1.mp3",
+      "studio_audio": "/audio/reading/industrialisation_and_empire/r1.mp3",
+      "studio_voice_label": "Studio Male Historian · Archival Reading"
     },
     {
       "lesson_index": 2,
-      "book_title": "Report on the Sanitary Condition of the Labouring Population",
-      "author": "Sir Edwin Chadwick",
-      "cover_image": "/images/ks3_ind/ind_l3_b3_edwin_chadwick_portrait.jpg",
-      "cover_caption": "Sir Edwin Chadwick KCB (1800–1890, Wellcome Collection M0010963), whose landmark 1842 Sanitary Report exposed the collapse of urban working-class life expectancy.",
-      "author_context": "Edwin Chadwick was Secretary to the Poor Law Commission. His landmark 1842 report utilized empirical statistics and medical interviews to prove that life expectancy in industrial slums had collapsed due to contaminated water, unpaved alleys, and rotting cesspools.",
-      "is_adapted": true,
-      "extract": "...In the crowded courts and cellar dwellings of Manchester, Liverpool, and Leeds, the primary source of pestilence is the total absence of drainage and clean water. The privies are universally foul, overflowing into the courtyards where children play barefoot in stagnant pools of excrement and putrid refuse.<br><br>In one narrow alley in Leeds, thirty-four houses with over two hundred inhabitants were found to possess but a single privy, which had not been emptied for three years. The air is so thick with noxious miasma and decaying animal matter that the inhabitants suffer from continual typhus, cholera, and consumption.<br><br>The statistical evidence proves beyond contradiction that the average age at death of a labourer in Manchester is but seventeen years, compared to thirty-eight years for an agricultural worker in rural Rutland. More lives are destroyed annually in England by filth and preventable disease than were lost in any war in which the country has been engaged in modern times.",
-      "hinge_question": "<strong>Think:</strong> What shocking statistical comparison does Chadwick make between a Manchester labourer and a Rutland agricultural worker?<br><br><strong>Pair:</strong> Chadwick claims that filth killed more Britons each year than any foreign war. Discuss with your partner: why did private landlords and town councils resist spending money on clean water mains and underground sewers?<br><br><strong>Share:</strong> How did Chadwick's report overturn the Victorian belief that poverty and disease were simply the moral fault of the poor themselves?",
-      "audio_file": "/audio/reading/industrialisation_and_empire/r2.mp3",
-      "questions": [
-        "How many houses shared a single privy in the Leeds court visited by inspectors?",
-        "What was the average age at death for a labourer in industrial Manchester according to Chadwick?",
-        "What medical theory did contemporaries use to explain why decaying matter caused epidemics?"
-      ],
-      "source_type": "official_report",
-      "source_type_label": "Official Parliamentary Sanitary Report (1842)",
-      "is_primary": true,
       "lesson_id": "lesson_3",
       "lesson_label": "Enquiry 3",
-      "studio_audio": "/audio/reading/industrialisation_and_empire/r2.mp3",
-      "studio_voice_label": "Studio Male Historian · Archival Reading",
-      "provenance_tier": "adapted_primary",
-      "provenance_note": "Condensed and adapted for KS3 pupils from Edwin Chadwick’s 1842 Sanitary Report and urban life-expectancy statistics.",
+      "short_tab_title": "3. Dickens’s Coketown",
+      "literary_mode": "verbatim_literature",
+      "provenance_tier": "verbatim_literature",
+      "source_type": "classic_novel",
+      "source_type_label": "Victorian Social Novel (1854)",
+      "is_primary": true,
+      "is_adapted": false,
+      "book_title": "Red Brick & Black Smoke: Charles Dickens’s Coketown from Hard Times (1854)",
+      "author": "Charles Dickens (Hard Times, Book I, Chapter 5: 'The Key-note', 1854)",
+      "provenance_note": "Verbatim prose from Charles Dickens’s Hard Times (1854, Book I, Ch. 5, with Victorian semicolons punctuated as modern full stops for aloud reading), framed with Edwin Chadwick’s 1842 sanitary data.",
+      "author_context": "As rural families poured into Manchester, Leeds, and London, unpaved courts without sewers bred deadly cholera epidemics—pushing a Manchester labourer’s average life expectancy down to just 17 years in Edwin Chadwick’s 1842 Report. After visiting Preston in Lancashire in 1854, novelist Charles Dickens created 'Coketown' in Hard Times to show how industrial greed choked both lungs and human spirits.",
+      "cover_image": "/images/ks3_ind/ind_l3_s0_dore_over_london_by_rail_1872.jpg",
+      "cover_caption": "Gustave Doré, Over London—By Rail (from London: A Pilgrimage, 1872), depicting packed brick back-to-back tenements, tiny wash-yards, and smoking railway viaducts.",
       "vocabVault": [
         {
-          "term": "Privy",
-          "def": "A shared outdoor toilet built over an unlined pit or cesspool."
+          "term": "Coketown",
+          "pronunciation": "KOHK-town",
+          "def": "Charles Dickens’s fictional northern mill town in Hard Times (modelled on Preston and Manchester), named after coal coke."
         },
         {
-          "term": "Miasma",
-          "def": "The mistaken 19th-century belief that diseases like cholera were spread by breathing foul-smelling air rather than contaminated water."
+          "term": "Interminable",
+          "pronunciation": "in-TUR-min-uh-bul",
+          "def": "Endless and never-stopping—used by Dickens for the 'serpents of smoke' coiling forever from factory chimneys."
         },
         {
-          "term": "Typhus & Cholera",
-          "def": "Deadly epidemic diseases thriving in overcrowded slums—cholera spread via sewage-contaminated drinking water, typhus via body lice."
+          "term": "Melancholy Madness",
+          "pronunciation": "MEL-un-kol-ee",
+          "def": "Sorrowful insanity—Dickens’s famous image comparing an up-and-down steam piston to a caged elephant’s head."
         },
         {
-          "term": "Laissez-Faire",
-          "def": "The \"leave well alone\" political attitude arguing governments should not tax ratepayers to interfere in housing or sanitation."
+          "term": "Back-to-Back Houses",
+          "pronunciation": "BAK-tuh-BAK",
+          "def": "Cheaply built Victorian slum terraces sharing rear and side brick walls, leaving zero through-ventilation or private drains."
         }
       ],
+      "extract": "In 1842, Edwin Chadwick proved that a labourer in smoky Manchester lived an average of only seventeen years. Farmworkers in rural Rutland lived more than twice as long, reaching thirty-eight. Visiting Lancashire in 1854, novelist Charles Dickens painted industrial \"Coketown\" in Hard Times.\n\n\"It was a town of red brick, or of brick that would have been red if the smoke and ashes had allowed it. As matters stood, it was a town of unnatural red and black. It was a town of machinery and tall chimneys, out of which interminable serpents of smoke trailed themselves for ever and ever, and never got uncoiled.\n\nIt had a black canal in it, and a river that ran purple with ill-smelling dye. Vast piles of building full of windows rattled and trembled all day long. Inside them, the piston of the steam-engine worked monotonously up and down, like the head of an elephant in a state of melancholy madness.\n\nIt contained several large streets all very like one another, and many small streets still more like one another. People equally like one another went in and out at the same hours, with the same sound upon the same pavements, to do the same work.\"",
       "parent_discussion": [
         {
-          "question": "What living conditions did Edwin Chadwick uncover in the crowded courts and cellars of Manchester, Liverpool, and Leeds?",
-          "answer": "Hundreds of residents shared overflowing privies unemptied for years, with raw sewage pooling in courtyards without drains or clean water."
+          "question": "Pick out two vivid animal comparisons Charles Dickens uses to make Coketown’s pollution and machines feel eerie and unnatural.",
+          "answer": "He compares endless chimney smoke to 'interminable serpents' that never uncoil, and the steam-engine piston to 'the head of an elephant in a state of melancholy madness'."
         },
         {
-          "question": "How did Chadwick use statistics comparing Manchester with rural Rutland to shock Parliament?",
-          "answer": "He proved a labourer’s average age at death in Manchester was just 17 years—less than half the 38-year average for farmworkers in rural Rutland."
+          "question": "Why does Dickens repeat the word 'same' four times in his final sentence describing Coketown’s streets and workers?",
+          "answer": "Repeating 'same' mimics the monotonous tick of the factory clock, showing how industrial cities treated human beings like identical machine parts."
         },
         {
-          "question": "Even though Chadwick still believed in \"miasma\" (bad air), why did his 1842 Report save lives?",
-          "answer": "His hard data proved poverty and sickness were caused by filthy environments rather than laziness, leading to the 1848 Public Health Act."
+          "question": "Connect Dickens’s black canal and purple river to cholera epidemics: what finally forced Parliament to fund clean water and sewers?",
+          "answer": "Chadwick’s 1842 Report, Dr John Snow’s 1854 Broad Street pump proof, and the 1858 'Great Stink' at Westminster finally drove Parliament to fund Joseph Bazalgette’s sewers."
         }
       ],
-      "short_tab_title": "3. Chadwick’s 1842 Report"
+      "story_check": [
+        {
+          "question": "Why had Coketown’s red-brick houses turned an 'unnatural red and black' in Dickens’s Hard Times?",
+          "options": [
+            "Residents painted them in town colours",
+            "Coal smoke and ashes from tall factory chimneys coated every wall",
+            "A volcanic eruption covered Lancashire",
+            "River mud washed over the roofs"
+          ],
+          "correctIndex": 1,
+          "feedback": "Correct! Thick soot and ash from unceasing coal-fired steam mills blackened red brick across industrial boomtowns."
+        },
+        {
+          "question": "To what animal does Dickens compare the monotonous up-and-down piston of the factory steam engine?",
+          "options": [
+            "A galloping racehorse",
+            "A swooping hawk",
+            "The head of an elephant in a state of melancholy madness",
+            "A sleeping lion"
+          ],
+          "correctIndex": 2,
+          "feedback": "Spot on. Dickens’s comparison to a trapped, mad elephant captures the relentless, joyless rhythm of steam machinery."
+        },
+        {
+          "question": "According to Edwin Chadwick’s 1842 Sanitary Report, what was the average age at death for a labourer in industrial Manchester?",
+          "options": [
+            "17 years (compared with 38 in rural Rutland)",
+            "38 years",
+            "55 years",
+            "62 years"
+          ],
+          "correctIndex": 0,
+          "feedback": "Exactly right. High infant mortality from cholera, typhus, and filthy water dragged Manchester labourers’ average life expectancy down to 17."
+        }
+      ],
+      "monday_cold_call": {
+        "question": "In Dickens’s Hard Times, what two animals does he compare Coketown’s smoke and steam pistons to—and what colour ran the polluted river?",
+        "answer": "Uncoiling 'serpents' of smoke and an 'elephant in a state of melancholy madness' for the steam piston; the river ran purple with foul-smelling textile dye."
+      },
+      "hinge_question": "<strong>Think:</strong> Look closely at Gustave Doré’s 1872 engraving—why did back-to-back courts trap disease so easily?<br><br><strong>Pair:</strong> How do Dickens’s literary description of Coketown and Chadwick’s statistical report reinforce each other?<br><br><strong>Share:</strong> Why did Victorian ratepayers resist paying for underground sewers until the 1858 Great Stink hit Parliament itself?",
+      "questions": [
+        "What had turned Coketown’s red brick into 'unnatural red and black'?",
+        "What polluted Coketown’s canal and river?",
+        "How did Edwin Chadwick’s 1842 life-expectancy figure for Manchester compare with rural Rutland?"
+      ],
+      "audio_file": "/audio/reading/industrialisation_and_empire/r2.mp3",
+      "studio_audio": "/audio/reading/industrialisation_and_empire/r2.mp3",
+      "studio_voice_label": "Studio Male Historian · Classic Literature"
     },
     {
       "lesson_index": 3,
-      "book_title": "The Azamgarh Proclamation",
-      "author": "Firoz Shah & Leaders of the 1857 Indian Uprising",
-      "cover_image": "/images/ks3_ind/ind_l4_b4_tolpuddle_six_cottages.jpg",
-      "cover_caption": "Thompson Dagnall’s limestone sculpture of George Loveless and the Six Men of Dorset outside the TUC Tolpuddle Martyrs Memorial Cottages, commemorating working-class resistance to state repression.",
-      "author_context": "In August 1857, as Indian insurgents held Delhi against the British East India Company, Prince Firoz Shah published the Azamgarh Proclamation. Written in Urdu and Persian, it systematically catalogued how British corporate rule had dispossessed Indian rulers, ruined native artisans, and violated religious faith.",
-      "is_adapted": true,
-      "extract": "It is well known to all, that in this age the people of Hindostan, both Hindoos and Mahommedans, are being ruined under the tyranny and oppression of the treacherous English. It is therefore the bounden duty of all wealthy men and princes to risk their life and property for the common good.<br><br><em>Section I: Regarding the Zamindars.</em> The British Government has dispossessed the ancient landlords, imposing exorbitant land taxes and selling off ancestral estates at public auction upon the slightest delay in payment... Under our royal government, their hereditary honours and estates shall be confirmed forever.<br><br><em>Section II: Regarding the Merchants.</em> The British have monopolized all valuable trade—indigo, opium, cloth, and salt—leaving only petty commerce to native merchants. Furthermore, by importing cheap machine-made goods from England, they have impoverished millions of native weavers and craftsmen.<br><br><em>Section III: Regarding the Sepoys.</em> The British have broken their most sacred oaths, dishonouring the religious caste and faith of both Hindoos and Muslims by their defiled cartridges. Let all brave soldiers unite to expel the foreign rulers.",
-      "hinge_question": "<strong>Think:</strong> Name two specific groups (e.g. zamindars, merchants, sepoys) addressed in the proclamation and identify one complaint made by each.<br><br><strong>Pair:</strong> British textbooks often labelled the 1857 conflict merely a \"Sepoy Mutiny\" caused by bullet grease. Discuss with your partner: how does the Azamgarh Proclamation prove that the rebellion was a much broader national uprising against economic and political exploitation?<br><br><strong>Share:</strong> Why was the unity between Hindus and Muslims so terrifying to the British East India Company and Crown authorities?",
-      "audio_file": "/audio/reading/industrialisation_and_empire/r3.mp3",
-      "questions": [
-        "How does the proclamation say the British treated Indian merchants and native weavers?",
-        "What happened to ancestral zamindar estates when tax payments were delayed?",
-        "Why did the greased cartridges offend both Hindu and Muslim soldiers?"
-      ],
-      "source_type": "revolutionary_proclamation",
-      "source_type_label": "Revolutionary Resistance Proclamation (1857)",
-      "is_primary": true,
       "lesson_id": "lesson_4",
       "lesson_label": "Enquiry 4",
-      "studio_audio": "/audio/reading/industrialisation_and_empire/r3.mp3",
-      "studio_voice_label": "Studio Male Historian · Archival Reading",
+      "short_tab_title": "4. Bamford at Peterloo",
+      "literary_mode": "intimate_eyewitness",
       "provenance_tier": "adapted_primary",
-      "provenance_note": "Condensed for KS3 reading aloud from the English translation of the August 1857 Azamgarh rebel proclamation.",
-      "vocabVault": [
-        {
-          "term": "Zamindar",
-          "def": "Traditional Indian landowners whose estates were heavily taxed or auctioned off under East India Company rule."
-        },
-        {
-          "term": "East India Company (EIC)",
-          "def": "The British trading corporation that used private armies and tax-collection rights to rule vast regions of India before 1858."
-        },
-        {
-          "term": "Sepoys",
-          "def": "Indian soldiers employed in the East India Company’s army."
-        },
-        {
-          "term": "Enfield Cartridges",
-          "def": "New rifle cartridges rumoured to be greased with cow and pig fat—deeply offending both Hindu and Muslim soldiers forced to bite them open."
-        }
-      ],
-      "parent_discussion": [
-        {
-          "question": "Why does the 1857 Azamgarh Proclamation appeal simultaneously to landlords (zamindars), merchants, weavers, and soldiers?",
-          "answer": "To unite Hindus and Muslims across every social class by showing how British taxation, trade monopolies, cheap factory cloth, and greased cartridges harmed them all."
-        },
-        {
-          "question": "How had British Industrial Revolution factories harmed traditional Indian craftspeople according to Section II?",
-          "answer": "Flooding India with cheap machine-spun British cotton ruined millions of skilled Indian handloom weavers while the Company monopolised valuable exports."
-        },
-        {
-          "question": "Why is reading an Indian rebel proclamation essential alongside British accounts of 1857?",
-          "answer": "British officials dismissed the uprising as a mere military \"Mutiny,\" whereas rebel manifestos reveal broad political, economic, and religious grievances against Company rule."
-        }
-      ],
-      "short_tab_title": "4. Protest & Popular Voice"
-    },
-    {
-      "lesson_index": 4,
-      "book_title": "Passages in the Life of a Radical",
-      "author": "Samuel Bamford",
-      "cover_image": "/images/ks3_ind/ind_l4_b1_peterloo_dreadful_scene_1819.jpg",
-      "cover_caption": "Contemporary hand-coloured broadside engraving (27 August 1819) showing peaceful Lancashire reformers led by Samuel Bamford and Henry Hunt charged by Manchester Yeomanry sabres at St Peter’s Field.",
-      "author_context": "Samuel Bamford (1788–1872) was a Lancashire weaver and radical reformer who organized the Middleton contingent of 6,000 peaceful men, women, and children marching to St Peter's Field in Manchester on 16 August 1819 to demand parliamentary reform.",
-      "is_adapted": true,
-      "extract": "It was a bright, sunny morning. We assembled in the market square at Middleton, six thousand strong, dressed in our clean Sunday suits, with sprigs of laurel and rosemary in our buttonholes. We carried banners of green and white silk bearing the words: 'Annual Parliaments' and 'Liberty and Fraternity'. Before marching, I strictly commanded that not a single stick or weapon should be borne; our weapon was the moral righteousness of our cause.<br><br>When we reached St. Peter's Field, over sixty thousand souls were gathered in peaceful order, listening with bated breath to Mr. Henry Hunt as he stepped upon the hustings.<br><br>Suddenly, a heavy clatter of hooves echoed down the street. The Manchester Yeomanry Cavalry rode into the crowd at a fierce trot, their sabres drawn and glittering in the midday sun. 'Forward!' shouted their commander. In a moment they were hacking right and left at the defenceless throng. Shrieks of terror and groans of agony rose from the crushed multitude. Women and children were trampled beneath the charging horses. Within ten minutes, the field was a shambles of blood, torn banners, and groaning wounded.",
-      "hinge_question": "<strong>Think:</strong> What specific instructions did Samuel Bamford give to his followers before they marched to St Peter's Field?<br><br><strong>Pair:</strong> The crowd at Peterloo was unarmed and included thousands of women and children in their best clothes. Discuss with your partner: why were the Manchester magistrates and factory owners so terrified of working-class people gathering peacefully to demand the vote?<br><br><strong>Share:</strong> Why was the massacre named \"Peterloo\" by contemporary newspapers, and how did it mock the British victory at Waterloo four years earlier?",
-      "audio_file": "/audio/reading/industrialisation_and_empire/r4.mp3",
-      "questions": [
-        "What words were stitched onto the silk banners carried by the Middleton contingent?",
-        "Who commanded the volunteer cavalry force that charged into the peaceful crowd?",
-        "Why did Samuel Bamford strictly forbid his marchers from carrying sticks or weapons?"
-      ],
       "source_type": "primary_memoir",
-      "source_type_label": "Eyewitness Peterloo Reform Memoir",
+      "source_type_label": "Eyewitness Peterloo Memoir (1819 / pub. 1844)",
       "is_primary": true,
-      "lesson_id": "lesson_5",
-      "lesson_label": "Enquiry 5",
-      "studio_audio": "/audio/reading/industrialisation_and_empire/r4.mp3",
-      "studio_voice_label": "Studio Male Historian · Archival Reading",
-      "provenance_tier": "adapted_primary",
-      "provenance_note": "Adapted for KS3 reading aloud from Lancashire reformer Samuel Bamford’s eyewitness memoir of the 1819 Peterloo Massacre.",
+      "is_adapted": true,
+      "book_title": "Clean Sunday Suits & Drawn Sabres: Samuel Bamford’s March to Peterloo (1819)",
+      "author": "Samuel Bamford (Passages in the Life of a Radical, 1844 • Calibrated for Aloud Reading)",
+      "provenance_note": "Sentence-calibrated for Year 8 aloud reading from Lancashire handloom weaver Samuel Bamford’s eyewitness memoir Passages in the Life of a Radical (1844).",
+      "author_context": "Between 1811 and 1834, working people squeezed by falling wages, high bread prices, and zero MPs for northern boomtowns protested through Luddite machine-breaking, peaceful reform rallies, Swing riots, and Tolpuddle unions. On 16 August 1819, weaver Samuel Bamford led 6,000 unarmed neighbours from Middleton to St Peter’s Field in Manchester—walking into the massacre bitterly nicknamed 'Peterloo'.",
+      "cover_image": "/images/ks3_ind/ind_l4_b1_peterloo_dreadful_scene_1819.jpg",
+      "cover_caption": "Hand-coloured broadside etching published by J. Evans & Sons (27 August 1819), showing peaceful reformers and the Female Union of Royton charged by Manchester Yeomanry sabres at St Peter’s Place.",
       "vocabVault": [
+        {
+          "term": "Peterloo",
+          "pronunciation": "PEE-ter-loo",
+          "def": "Journalists’ bitter nickname for the 16 August 1819 St Peter’s Field massacre, mocking cavalry who sabred unarmed citizens four years after Waterloo."
+        },
         {
           "term": "Hustings",
-          "def": "A raised wooden platform from which political reformers addressed peaceful outdoor crowds."
+          "pronunciation": "HUSS-tingz",
+          "def": "The raised wooden speaker’s platform where radical orator Henry Hunt stepped up to address 60,000 peaceful reformers."
         },
         {
           "term": "Manchester Yeomanry",
-          "def": "A local volunteer cavalry unit—largely factory owners and shopkeepers—that charged into the unarmed St Peter’s Field crowd."
+          "pronunciation": "YOH-mun-ree",
+          "def": "A local part-time cavalry troop—mostly factory owners, innkeepers, and shopkeepers—that charged the crowd with drawn sabres."
         },
         {
           "term": "Annual Parliaments",
-          "def": "A key working-class reform demand calling for general elections every year so MPs stayed accountable to ordinary people."
-        },
-        {
-          "term": "Rotten Boroughs",
-          "def": "Tiny, depopulated rural constituencies that still elected MPs while booming industrial cities like Manchester had zero MPs before 1832."
+          "pronunciation": "AN-yoo-ul",
+          "def": "A core radical demand calling for general elections every year so MPs stayed accountable to working families."
         }
       ],
+      "extract": "\"It was a bright, cloudless August morning in 1819. Six thousand men, women, and children gathered in Middleton market square dressed in their cleanest Sunday clothes, with green laurel sprigs pinned to their coats. Ahead of our column floated white and green silk banners stitched in gold letters: ‘Annual Parliaments’ and ‘Liberty and Fraternity’. Before setting off, I strictly ordered that not a single walking-stick or weapon be carried. Cleanliness, sobriety, and peace were to be our only shield.\n\nWhen we marched into St Peter’s Field in Manchester, sixty thousand citizens stood shoulder to shoulder in quiet order. Cheers rolled across the square as Mr Henry Hunt raised his white hat on the wooden hustings and began to speak.\n\nSuddenly, a loud clatter of hooves echoed from a side street. Local magistrates watching from an upstairs window had panicked and ordered the arrest of the speakers. Moments later, the Manchester Yeomanry Cavalry trotted straight into the packed crowd with steel sabres drawn and glittering in the midday sun. ‘Have at their flags!’ shouted voices on horseback. Troopers hacked right and left at unarmed weavers, mothers, and children who had no room to flee. Within ten dreadful minutes, the sunny square lay covered in blood, crushed bonnets, torn silk banners, and eighteen dying neighbours.\"",
       "parent_discussion": [
         {
-          "question": "Why did Samuel Bamford insist that his 6,000 marchers wear Sunday clothes and carry not a single stick?",
-          "answer": "To prove to the country and authorities that working-class families demanding the vote were peaceful, disciplined, and respectable citizens."
+          "question": "Why did Samuel Bamford insist that his 6,000 Middleton marchers wear clean Sunday clothes and leave even walking-sticks behind?",
+          "answer": "Rulers claimed working-class reformers were violent drunken mobs, so Bamford wanted undeniable visual proof that they were peaceful, respectable families."
         },
         {
-          "question": "What happened when the crowd of 60,000 gathered at St Peter’s Field in Manchester on 16 August 1819?",
-          "answer": "Local magistrates panicked and sent armed cavalry charging with drawn sabres into the tightly packed crowd, killing roughly 18 people and injuring hundreds."
+          "question": "Look closely at the 1819 etching on the cover: notice the women’s banner ('Female Union of Royton') on the hustings—what does that reveal about Peterloo?",
+          "answer": "Working-class Lancashire women organised their own political reform unions, marched in white dresses, and made up many of the casualties when the cavalry charged."
         },
         {
-          "question": "Why did journalists nickname the atrocity \"Peterloo,\" and what long-term change did it help inspire?",
-          "answer": "Mocking the cavalry by comparing their attack on unarmed families to the Battle of Waterloo, public outrage strengthened the push for parliamentary reform (1832 Reform Act and Chartism)."
+          "question": "Why did newspapers call the attack 'Peterloo', and how did Parliament initially react in late 1819?",
+          "answer": "The name mocked soldiers sabring British families at St Peter’s Field just four years after defeating Napoleon at Waterloo; frightened MPs first passed the repressive Six Acts banning mass meetings."
         }
       ],
-      "short_tab_title": "5. Bamford at Peterloo (1819)"
+      "story_check": [
+        {
+          "question": "What strict instruction did Samuel Bamford give his 6,000 marchers before leaving Middleton on 16 August 1819?",
+          "options": [
+            "Carry iron pikes hidden under coats",
+            "Wear clean Sunday clothes and carry not a single stick or weapon",
+            "March only after midnight",
+            "Smash power looms along the road"
+          ],
+          "correctIndex": 1,
+          "feedback": "Correct! Bamford forbade even walking-sticks so magistrates would have zero excuse to call the peaceful rally a riot."
+        },
+        {
+          "question": "Which mounted force charged first into the tightly packed crowd of 60,000 at St Peter’s Field?",
+          "options": [
+            "The New Model Army",
+            "French Hussars",
+            "The Manchester Yeomanry Cavalry",
+            "The Tolpuddle Constables"
+          ],
+          "correctIndex": 2,
+          "feedback": "Spot on. Nervous local magistrates sent the amateur Manchester Yeomanry charging with drawn sabres to seize Henry Hunt and the reform banners."
+        },
+        {
+          "question": "Roughly how many unarmed citizens died as a result of the ten-minute cavalry charge at Peterloo?",
+          "options": [
+            "Zero—everyone escaped unharmed",
+            "Roughly eighteen people killed and hundreds injured",
+            "Over two thousand soldiers",
+            "Only the magistrate on horseback"
+          ],
+          "correctIndex": 1,
+          "feedback": "Exactly right. Around eighteen people—including women and a young child—died and over 600 were sabred or trampled."
+        }
+      ],
+      "monday_cold_call": {
+        "question": "Why did Samuel Bamford ban even walking-sticks on the march to St Peter’s Field—and why did journalists nickname the massacre 'Peterloo'?",
+        "answer": "Bamford wanted to prove working-class reformers were completely peaceful; 'Peterloo' mocked cavalry attacking unarmed families at St Peter’s Field four years after Waterloo."
+      },
+      "hinge_question": "<strong>Think:</strong> Why did booming Manchester—with over 100,000 people—have ZERO MPs in 1819?<br><br><strong>Pair:</strong> Compare peaceful outdoor protest at Peterloo (1819) and Tolpuddle (1834) with Luddite and Captain Swing machine-breaking.<br><br><strong>Share:</strong> Did harsh state repression crush working-class reform, or make parliamentary reform unstoppable?",
+      "questions": [
+        "What slogans were stitched onto the silk banners carried from Middleton?",
+        "Why did Samuel Bamford forbid sticks or weapons on the march?",
+        "What happened within ten minutes of Henry Hunt stepping onto the hustings?"
+      ],
+      "audio_file": "/audio/reading/industrialisation_and_empire/r3.mp3",
+      "studio_audio": "/audio/reading/industrialisation_and_empire/r3.mp3",
+      "studio_voice_label": "Studio Male Historian · Archival Reading"
+    },
+    {
+      "lesson_index": 4,
+      "lesson_id": "lesson_5",
+      "lesson_label": "Enquiry 5",
+      "short_tab_title": "5. Chartists & The Vote",
+      "literary_mode": "storied_micro_history",
+      "provenance_tier": "storied_micro_history",
+      "source_type": "storied_micro_history",
+      "source_type_label": "True Historical Story · Chartism & Secret Ballot",
+      "is_primary": false,
+      "is_adapted": false,
+      "book_title": "Three Cabs to Westminster: William Lovett, Kennington Common (1848) & The Secret Ballot",
+      "author": "The History Revision Hub · Grounded in William Lovett’s Life & Struggles (1876) & 1848 Parliamentary Records",
+      "provenance_note": "Original narrative micro-history grounded in cabinetmaker William Lovett’s 1838 People’s Charter, Royal Collection records of the 10 April 1848 Kennington Common rally, and the 1872 Ballot Act.",
+      "author_context": "Although the 1832 Great Reform Act swept away 'rotten boroughs' like empty Old Sarum, its £10 property rule still shut five out of six adult men—and all women—out of voting. Feeling betrayed, London cabinetmaker William Lovett drafted the Six Points of the People’s Charter in 1838, launching a decade of mass working-class petitions that culminated on 10 April 1848.",
+      "cover_image": "/images/ks3_ind/ind_l5_s3_chartist_kennington_common_1848.jpg",
+      "cover_caption": "William Edward Kilburn’s daguerreotype of the Great Chartist Meeting on Kennington Common, London (10 April 1848, Royal Collection RCIN 2932484), one of the earliest crowd photographs in history.",
+      "vocabVault": [
+        {
+          "term": "Rotten Borough",
+          "pronunciation": "ROT-un BUR-uh",
+          "def": "An almost empty rural constituency—like Old Sarum’s grassy hill—that still sent two MPs to Westminster before 1832."
+        },
+        {
+          "term": "Chartists",
+          "pronunciation": "CHAR-tists",
+          "def": "Working-class campaigners between 1838 and 1848 who signed giant petitions demanding the Six Points of the People’s Charter."
+        },
+        {
+          "term": "Daguerreotype",
+          "pronunciation": "duh-GAIR-uh-typ",
+          "def": "An early silver-coated copper photograph—used by William Kilburn to capture the 1848 Chartist crowd at Kennington Common."
+        },
+        {
+          "term": "Secret Ballot",
+          "pronunciation": "SEE-krit BAL-ut",
+          "def": "Voting in private on an unmarked paper slip (won in 1872) rather than shouting your vote aloud in front of bosses and landlords."
+        }
+      ],
+      "extract": "By candlelight in a small London workshop in 1838, cabinetmaker William Lovett dipped his pen in ink and wrote six plain rules. Six years before, factory masters had cheered the 1832 Reform Act for ending empty \"rotten boroughs\" like grassy Old Sarum. Yet five in every six adult men still owned too little house property to vote. Lovett’s People’s Charter called for votes for every man, secret ballots, and wages for MPs so a poor weaver could sit in Westminster.\n\nTen years later, on the rainy morning of 10 April 1848, fear gripped Britain’s rulers. Ministers sent young Queen Victoria to safety on the Isle of Wight. Aged Waterloo hero the Duke of Wellington lined the Thames bridges with troops and cannon. South of the river on Kennington Common, thousands of peaceful Chartists stood beneath silk banners as cameraman William Kilburn took their picture.\n\nTo spare lives at the bridges, leader Feargus O’Connor sent the crowd home in peace and packed their giant rolled petition into three horse-drawn cabs. MPs laughed at joke names like \"Pugnose\" and voted the Charter down again. Yet Lovett outlived the jeers. Starting with Pontefract’s locked wooden ballot box in 1872, five of his Six Points became British law.",
+      "parent_discussion": [
+        {
+          "question": "Why did working-class families call the 1832 Great Reform Act a 'Great Betrayal' even though it abolished rotten boroughs like Old Sarum?",
+          "answer": "Workers had protested to pass the 1832 Act, yet its £10 household property requirement gave the vote only to the middle classes—leaving 5 in 6 men still excluded."
+        },
+        {
+          "question": "Why were 'wages for MPs' and a 'secret ballot' just as vital to Chartists like William Lovett as winning the right to vote itself?",
+          "answer": "Without MP salaries only rich men could afford to sit in Westminster, and under open hustings voting landlords and bosses could sack or evict anyone who voted against them."
+        },
+        {
+          "question": "Was Chartism a failure because Parliament rejected all three giant petitions by 1848, or a long-term victory?",
+          "answer": "A long-term victory—by 1918 five of William Lovett’s Six Points (secret ballot, no property rule for MPs, paid MPs, equal constituencies, universal male suffrage) were British law."
+        }
+      ],
+      "story_check": [
+        {
+          "question": "Who drafted the Six Points of the People’s Charter in London in 1838?",
+          "options": [
+            "The Duke of Wellington",
+            "Cornish cabinetmaker William Lovett",
+            "Earl Grey",
+            "Sir Edwin Chadwick"
+          ],
+          "correctIndex": 1,
+          "feedback": "Correct! Self-educated cabinetmaker William Lovett authored the 1838 People’s Charter championing peaceful 'Moral Force' reform."
+        },
+        {
+          "question": "How did the giant 1848 Chartist Petition travel from Kennington Common to the Houses of Parliament?",
+          "options": [
+            "Carried by armed cavalry",
+            "Loaded into three horse-drawn cabs after the crowd peacefully dispersed",
+            "Floated down the Thames on a steamboat",
+            "Sent by electric telegraph"
+          ],
+          "correctIndex": 1,
+          "feedback": "Spot on. When police blocked a mass march across the Thames bridges, Chartist leaders peacefully sent the rolled parchment bundles in three cabs."
+        },
+        {
+          "question": "How many of the People’s Charter’s Six Points eventually became law in Britain (leaving only Annual Parliaments unpassed)?",
+          "options": [
+            "None of them",
+            "Only one",
+            "Three out of six",
+            "Five out of six"
+          ],
+          "correctIndex": 3,
+          "feedback": "Exactly right! Five of the Six Points—beginning with the 1872 Secret Ballot Act—became cornerstones of modern British democracy."
+        }
+      ],
+      "monday_cold_call": {
+        "question": "Why did working people still need William Lovett’s 1838 People’s Charter after the 1832 Reform Act—and which FIVE of its Six Points later became law?",
+        "answer": "The 1832 Act’s £10 property rule left 5 in 6 men voteless; Britain later adopted the secret ballot (1872), paid MPs, no property test for MPs, equal constituencies, and votes for all men (only Annual Parliaments was never adopted)."
+      },
+      "hinge_question": "<strong>Think:</strong> Look at Kilburn’s 1848 photograph of Kennington Common—why had Queen Victoria left London that morning?<br><br><strong>Pair:</strong> Compare 'Moral Force' Chartism (William Lovett’s petitions and newspapers) with 'Physical Force' Chartism.<br><br><strong>Share:</strong> Why did winning the Secret Ballot in 1872 transform everyday freedom for ordinary tenants and factory workers?",
+      "questions": [
+        "Why were working-class reformers disappointed by the 1832 Great Reform Act?",
+        "What precautions did the British government take in London on 10 April 1848?",
+        "Which of the People’s Charter’s Six Points became law in 1872?"
+      ],
+      "audio_file": "/audio/reading/industrialisation_and_empire/r4.mp3",
+      "studio_audio": "/audio/reading/industrialisation_and_empire/r4.mp3",
+      "studio_voice_label": "Studio Female Historian · Storied History"
     }
   ],
   "edition": "2026.1",

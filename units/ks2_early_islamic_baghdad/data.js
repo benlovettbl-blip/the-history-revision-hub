@@ -5088,6 +5088,584 @@ window.UNIT_DATA = {
       ],
       "key_distinction": "Translated into Latin in Spain, al-Razi’s and al-Zahrawi’s illustrated books trained European doctors and surgeons for more than five hundred years!"
     }
+  ],
+  "guided_reading": [
+    {
+      "lesson_index": 0,
+      "lesson_id": "lesson_1",
+      "lesson_label": "Enquiry 1",
+      "short_tab_title": "Circle of Flaming Seeds",
+      "literary_mode": "storied_micro_history",
+      "provenance_tier": "storied_micro_history",
+      "source_type": "micro_history",
+      "source_type_label": "True Historical Story",
+      "book_title": "A Circle of Fire: Caliph al-Mansur Plans Baghdad",
+      "author": "The History Revision Hub Narrative Archive",
+      "provenance_note": "Original historical micro-story grounded in 10th- and 11th-century Arabic chronicles by al-Tabari ('History of the Prophets and Kings') and al-Khatib al-Baghdadi ('History of Baghdad'), recording Caliph al-Mansur's AD 762 flaming cottonseed plan.",
+      "author_context": "How do you preview a giant circular capital city two kilometres wide before laying a single mud brick? Read aloud to see the dazzling night-time trick Caliph al-Mansur used beside the River Tigris in AD 762!",
+      "cover_image": "/units/ks2_early_islamic_baghdad/assets/bab_al_wastani_medieval_baghdad_gate.jpg",
+      "cover_caption": "Bab al-Wastani in Baghdad, Iraq—the surviving medieval Abbasid baked-brick arched gateway and defensive moat tower.",
+      "studio_audio": "/audio/reading/ks2_early_islamic_baghdad/r0.mp3",
+      "studio_voice_label": "Studio Female Historian · KS2 Storyteller",
+      "vocabVault": [
+        {
+          "term": "Caliph",
+          "pronunciation": "KAY-lif",
+          "def": "The supreme religious and political ruler leading the vast Islamic Empire after the time of the Prophet Muhammad."
+        },
+        {
+          "term": "Al-Mansur",
+          "pronunciation": "al-man-SOOR",
+          "def": "The visionary Abbasid Caliph who chose the River Tigris crossroads in AD 762 to build Baghdad's Round City."
+        },
+        {
+          "term": "Madinat al-Salam",
+          "pronunciation": "mah-DEE-nat al-sah-LAHM",
+          "def": "Caliph al-Mansur's official Arabic name for Baghdad, meaning 'City of Peace'."
+        },
+        {
+          "term": "Quffa",
+          "pronunciation": "KOOF-uh",
+          "def": "A traditional round Iraqi river boat woven from reeds and waterproofed with sticky tar to carry goods on the Tigris."
+        }
+      ],
+      "extract": "Warm breezes rippled across the River Tigris in summer AD 762 as Caliph al-Mansur stood on a green plain. Round woven <em>quffa</em> boats bobbed along deep canals linking the Tigris and Euphrates. <em>\"Here is the finest crossroads on Earth!\"</em> the Caliph smiled. Ships from China and India could meet Silk Road camel trains right at his gates.\n\nInstead of tangled lanes, al-Mansur planned a giant round city two kilometres wide. Builders pegged cords into the soil and poured white ash lines for double brick walls and four gates. Still, how could the Caliph see the whole huge circle at once?\n\nAt dusk, workers laid trails of fluffy cottonseeds soaked in lamp oil along every ash line. Torches touched the trail—whoosh! Two bright rings of golden fire blazed out across the dark plain! Standing right in the middle, proud al-Mansur ordered 100,000 builders to raise <em>Madinat al-Salam</em>, his City of Peace.",
+      "parent_discussion": [
+        {
+          "question": "Why did Caliph al-Mansur ask his workmen to lay oil-soaked cottonseeds along the ash lines at night?",
+          "answer": "Setting the cottonseed trails alight let him stand in the middle and see the exact full-size glowing outline of his circular walls and gates!"
+        },
+        {
+          "question": "What made that green bend on the River Tigris such a clever spot for a world capital?",
+          "answer": "Deep canals linked the Tigris and Euphrates for fertile farming and river boats, right where Silk Road caravan trails met ocean routes."
+        },
+        {
+          "question": "How would a traveller arriving from a muddy Anglo-Saxon timber village around AD 900 have felt entering million-strong Baghdad?",
+          "answer": "Completely amazed—English towns held 5,000–10,000 people in smoky timber huts, whereas Baghdad had paved streets, brick arches, libraries, and canals!"
+        }
+      ],
+      "story_check": [
+        {
+          "question": "In what year did Caliph al-Mansur trace and begin building the Round City of Baghdad?",
+          "options": [
+            "500 BC",
+            "AD 43",
+            "AD 762",
+            "AD 1258"
+          ],
+          "correctIndex": 2,
+          "feedback": "Spot on! In AD 762, Caliph al-Mansur gathered 100,000 bricklayers and diggers beside the River Tigris."
+        },
+        {
+          "question": "What lit up the dark Iraqi plain so al-Mansur could preview his Round City walls?",
+          "options": [
+            "Electric floodlights on tall steel poles",
+            "Lines of oil-soaked cottonseeds set ablaze along the wall markings",
+            "Fireworks imported by Viking longships",
+            "Mirrors bouncing moonlight off snow"
+          ],
+          "correctIndex": 1,
+          "feedback": "Exactly right! Burning cottonseed lines traced the exact two-kilometre circle in glowing fire."
+        },
+        {
+          "question": "What did Baghdad's official Arabic title 'Madinat al-Salam' mean?",
+          "options": [
+            "Fortress of Snow",
+            "City of Peace",
+            "Island of Olives",
+            "Valley of Kings"
+          ],
+          "correctIndex": 1,
+          "feedback": "Well remembered! Al-Mansur named his circular capital Madinat al-Salam—the City of Peace."
+        }
+      ],
+      "monday_cold_call": {
+        "question": "How did Caliph al-Mansur preview the full two-kilometre outline of Baghdad's Round City at night in AD 762 before laying bricks?",
+        "answer": "Workers poured oil-soaked cottonseeds along the circular ash markings and lit them so the walls glowed in rings of fire."
+      },
+      "hinge_question": "Why did building Baghdad in a circle with the Mosque and Palace right at the hub send such a clear message of order and power?",
+      "audio_file": "/audio/reading/ks2_early_islamic_baghdad/r0.mp3"
+    },
+    {
+      "lesson_index": 1,
+      "lesson_id": "lesson_2",
+      "lesson_label": "Enquiry 2",
+      "short_tab_title": "Street of 100 Bookshops",
+      "literary_mode": "intimate_eyewitness",
+      "provenance_tier": "adapted_primary",
+      "source_type": "eyewitness",
+      "source_type_label": "9th-Century Eyewitness Geography",
+      "book_title": "Kitab al-Buldan (The Book of Countries: Inside Baghdad)",
+      "author": "Ahmad al-Ya'qubi (Abbasid Geographer, c. AD 891)",
+      "provenance_note": "Age-calibrated primary adaptation of 9th-century Baghdad scholar Ahmad al-Ya'qubi's eyewitness description of Baghdad and its Suq al-Warraqin ('Paper and Booksellers' Market') in 'Kitab al-Buldan' (c. AD 891, Public Domain).",
+      "author_context": "Born in Baghdad, 9th-century traveller Ahmad al-Ya'qubi walked through his home city's markets taking vivid notes. Listen to his eyewitness wonder at a city buzzing with cheap rag paper and over a hundred bookshops!",
+      "cover_image": "/units/ks2_early_islamic_baghdad/assets/yahya_al_wasiti_baghdad_library.jpg",
+      "cover_caption": "An AD 1237 Baghdad painting by artist Yahya al-Wasiti showing eager scholars reading and debating beneath cubbyholes of stacked paper books.",
+      "studio_audio": "/audio/reading/ks2_early_islamic_baghdad/r1.mp3",
+      "studio_voice_label": "Studio Female Historian · KS2 Storyteller",
+      "vocabVault": [
+        {
+          "term": "Bayt al-Hikma",
+          "pronunciation": "bayt al-HIK-mah",
+          "def": "Baghdad's famous 'House of Wisdom' library and research centre where scholars translated and tested world science."
+        },
+        {
+          "term": "Parchment",
+          "pronunciation": "PARCH-munt",
+          "def": "Expensive writing sheets scraped from animal skins in medieval Europe before cheap Chinese-style rag paper spread."
+        },
+        {
+          "term": "Hunayn ibn Ishaq",
+          "pronunciation": "hoo-NAYN ib-in is-HAHK",
+          "def": "Baghdad's brilliant Christian doctor and translator who turned Greek medical manuscripts into clear Arabic."
+        },
+        {
+          "term": "Patron",
+          "pronunciation": "PAY-trun",
+          "def": "A generous ruler or wealthy citizen—like Caliph al-Ma'mun or Fatima al-Fihri—who funds libraries, colleges, or wells."
+        }
+      ],
+      "extract": "Around AD 891, Baghdad writer Ahmad al-Ya'qubi walked past splashing watermills and shaded arches to describe his home city.\n\n<em>\"I start my book with Baghdad because it stands at the heart of the world! No other city from East to West can match it. Cool river breezes blow in summer, and green gardens ring every street. Wooden boats glide up the Tigris bringing silks and spices from India, China, and Africa.\"</em>\n\n<em>\"Walk down the Street of the Booksellers, and you will count over one hundred busy bookshops side by side! Watermills beat old linen and cotton rags into smooth white paper far cheaper than animal skin. Inside the shops, scribes copy poems and star maps. Nearby, Muslim, Christian, and Jewish thinkers meet to test books translated from Greek, Persian, and Sanskrit!\"</em>\n\nWhile Europe chained rare calfskin books to desks, Baghdad's cheap paper put bright ideas into thousands of eager hands.",
+      "parent_discussion": [
+        {
+          "question": "How many bookshops did eyewitness geographer al-Ya'qubi count along just one market street in 9th-century Baghdad?",
+          "answer": "More than one hundred bookshops stood side by side along the Street of the Paper-Makers and Booksellers!"
+        },
+        {
+          "question": "Why did making paper from old cotton and linen rags spread learning so much faster than scraping calfskin parchment?",
+          "answer": "Rag paper was light, smooth, and cheap to make in watermills, so scribes could copy hundreds of affordable books quickly."
+        },
+        {
+          "question": "What does Muslim, Christian, and Jewish translators working together in the House of Wisdom show about Golden Age Baghdad?",
+          "answer": "Caliphs welcomed talented thinkers of different faiths and languages because testing every nation's best ideas grew human knowledge."
+        }
+      ],
+      "story_check": [
+        {
+          "question": "Who wrote the eyewitness 'Book of Countries' describing Baghdad's hundred bookshops around AD 891?",
+          "options": [
+            "Greek historian Herodotus",
+            "Abbasid geographer Ahmad al-Ya'qubi",
+            "Mongol general Hulagu Khan",
+            "Anglo-Saxon King Offa"
+          ],
+          "correctIndex": 1,
+          "feedback": "Spot on! Al-Ya'qubi grew up in Baghdad and recorded its markets, canals, and bookshops first-hand."
+        },
+        {
+          "question": "Through which Silk Road city did Chinese paper-making skills reach Baghdad's watermills?",
+          "options": [
+            "Samarkand in Central Asia",
+            "Winchester in Britain",
+            "Sparta in Greece",
+            "Tikal in Guatemala"
+          ],
+          "correctIndex": 0,
+          "feedback": "Correct! Via Samarkand, craftworkers learned to pulp cotton and linen rags into smooth, strong paper."
+        },
+        {
+          "question": "Which three faith communities worked side by side translating ancient scrolls in Baghdad?",
+          "options": [
+            "Only Viking, Roman, and Mayan priests",
+            "Muslim, Christian, and Jewish scholars",
+            "Only palace soldiers and tax collectors",
+            "Spartan kings and Egyptian pharaohs"
+          ],
+          "correctIndex": 1,
+          "feedback": "Exactly right! Scholars like Christian physician Hunayn ibn Ishaq worked alongside Muslim and Jewish colleagues."
+        }
+      ],
+      "monday_cold_call": {
+        "question": "According to 9th-century eyewitness al-Ya'qubi, what cheap material powered Baghdad's 100+ bookshops while Europe still used animal skins?",
+        "answer": "Smooth rag paper beaten from old cotton and linen rags in Baghdad's watermills."
+      },
+      "hinge_question": "Would the House of Wisdom's discoveries have spread across three continents if Baghdad had never learned how to make cheap paper?",
+      "audio_file": "/audio/reading/ks2_early_islamic_baghdad/r1.mp3"
+    },
+    {
+      "lesson_index": 2,
+      "lesson_id": "lesson_3",
+      "lesson_label": "Enquiry 3",
+      "short_tab_title": "Zero & The Elephant Clock",
+      "literary_mode": "storied_micro_history",
+      "provenance_tier": "storied_micro_history",
+      "source_type": "micro_history",
+      "source_type_label": "True Science & Invention Story",
+      "book_title": "Clever Zero, Clean Wards & The Mechanical Elephant Clock",
+      "author": "The History Revision Hub Narrative Archive",
+      "provenance_note": "Original historical micro-story grounded in Muhammad al-Khwarizmi's math treatises (c. AD 820), al-Razi's Baghdad hospital records (c. AD 900), and Ismail al-Jazari's illustrated 'Book of Knowledge of Ingenious Mechanical Devices' (AD 1206).",
+      "author_context": "Try multiplying Roman numerals like MMDCCXLVIII in your head—no wonder sums took hours! Discover how scholars in the Islamic world gave us 0–9 numbers, free hospitals, and a robot elephant clock!",
+      "cover_image": "/units/ks2_early_islamic_baghdad/assets/al_jazari_elephant_water_clock.jpg",
+      "cover_caption": "Illuminated Arabic manuscript page from engineer al-Jazari's AD 1206 book showing his colourful mechanical Elephant Water Clock.",
+      "studio_audio": "/audio/reading/ks2_early_islamic_baghdad/r2.mp3",
+      "studio_voice_label": "Studio Female Historian · KS2 Storyteller",
+      "vocabVault": [
+        {
+          "term": "Al-Khwarizmi",
+          "pronunciation": "al-kwah-RIZ-mee",
+          "def": "Baghdad's star mathematician whose books gave us 0–9 place-value numbers, 'algebra' (al-Jabr), and 'algorithm'."
+        },
+        {
+          "term": "Sifr",
+          "pronunciation": "SIF-er",
+          "def": "The Arabic word for empty or 'zero'—the clever placeholder digit that makes large sums quick and accurate."
+        },
+        {
+          "term": "Bimaristan",
+          "pronunciation": "bee-MAH-rih-stahn",
+          "def": "A clean, free Islamic teaching hospital with separate wards, fountains, pharmacies, and trained nurses."
+        },
+        {
+          "term": "Al-Jazari",
+          "pronunciation": "al-jah-ZAH-ree",
+          "def": "The brilliant 12th–13th century Islamic engineer who designed automatic water clocks and mechanical machines."
+        }
+      ],
+      "extract": "In Baghdad's House of Wisdom around AD 820, scholar al-Khwarizmi wrote ten neat signs on white paper. He used digits `1` to `9` plus a small circle called <em>sifr</em>—our word <strong>zero</strong>! With zero holding empty places, traders solved big sums fast while Europe used slow Roman letters. Better still, his book <em>al-Jabr</em> gave us <strong>algebra</strong>, and his name gave us <strong>algorithm</strong>!\n\nAcross town, doctor al-Razi welcomed rich nobles and poor guests alike into Baghdad's free <em>bimaristan</em> hospital. Cool fountains splashed in clean wards while nurses served fresh food. Leaving patients even got clean clothes and coins so they could rest at home!\n\nLater in AD 1206, builder al-Jazari unveiled his tall <strong>Elephant Water Clock</strong>. Inside the brass elephant floated a copper bowl with a tiny hole. Every half hour, the full bowl sank and pulled hidden cords! A bird whistled, a dragon dropped a ball, and cymbals clashed—blending ideas from India, China, Greece, and Islam.",
+      "parent_discussion": [
+        {
+          "question": "Which three everyday modern English words come directly from Muhammad al-Khwarizmi's name, his book 'al-Jabr', and Arabic 'sifr'?",
+          "answer": "Algorithm (from al-Khwarizmi), algebra (from al-Jabr), and zero / cipher (from sifr)!"
+        },
+        {
+          "question": "How did Baghdad's 'bimaristan' hospitals care for poor patients even on the day they went home?",
+          "answer": "Treatment was completely free, and recovering poor patients were given clean clothes and pocket money to rest safely at home."
+        },
+        {
+          "question": "Why did engineer al-Jazari combine an Indian elephant, Chinese dragons, a Greek water mechanism, and an Arab rider on one clock?",
+          "answer": "He proudly showed that Golden Age science grew strongest by welcoming and blending clever ideas from civilisations across the world."
+        }
+      ],
+      "story_check": [
+        {
+          "question": "What did the Arabic word 'sifr' introduce to mathematics in Baghdad?",
+          "options": [
+            "Roman numeral X",
+            "Place-value zero",
+            "Papyrus reed brushes",
+            "Bronze warship rams"
+          ],
+          "correctIndex": 1,
+          "feedback": "Spot on! Sifr gave us zero, unlocking quick place-value arithmetic with digits 0 to 9."
+        },
+        {
+          "question": "What hidden mechanism inside al-Jazari's Elephant Clock triggered the whistling bird and clashing cymbals every half hour?",
+          "options": [
+            "A petrol engine under the floor",
+            "A perforated copper bowl slowly filling and sinking in water",
+            "A hamster running inside a wooden wheel",
+            "Lightning striking a brass rod"
+          ],
+          "correctIndex": 1,
+          "feedback": "Exactly right! Water trickled steadily through a tiny hole until the bowl sank every thirty minutes and pulled the cords."
+        },
+        {
+          "question": "Who had to pay fees for medical care inside an Islamic 'bimaristan' hospital?",
+          "options": [
+            "Every patient had to pay in gold dinars",
+            "Nobody—wards and medicines were free for both rich and poor",
+            "Only foreign Silk Road merchants",
+            "Only children under ten"
+          ],
+          "correctIndex": 1,
+          "feedback": "Well remembered! Charitable funding kept bimaristan wards, doctors, and pharmacies free for everyone."
+        }
+      ],
+      "monday_cold_call": {
+        "question": "Explain how hidden water power worked inside al-Jazari's Elephant Clock, and name two words al-Khwarizmi gave modern maths and computing.",
+        "answer": "A perforated copper bowl sank in water every 30 minutes to pull ropes and cymbals; al-Khwarizmi gave us 'algebra' and 'algorithm'."
+      },
+      "hinge_question": "Why did testing ideas with real experiments—like al-Razi's clean-air meat test or Ibn al-Haytham's dark room—matter more than simply copying ancient books?",
+      "audio_file": "/audio/reading/ks2_early_islamic_baghdad/r2.mp3"
+    },
+    {
+      "lesson_index": 3,
+      "lesson_id": "lesson_4",
+      "lesson_label": "Enquiry 4",
+      "short_tab_title": "Sinbad Sails From Baghdad",
+      "literary_mode": "verbatim_literature",
+      "provenance_tier": "verbatim_literature",
+      "source_type": "literature",
+      "source_type_label": "Classic Arabic Folk Tale",
+      "book_title": "One Thousand and One Nights (Sinbad Sets Sail From Baghdad)",
+      "author": "Traditional Abbasid Storytellers (Alf Layla wa-Layla, Public Domain)",
+      "provenance_note": "Public-domain English adaptation of the opening frame and embarkation from 'The First Voyage of Sinbad the Sailor' in 'One Thousand and One Nights' (ed. Andrew Lang, 1898, Public Domain), set in Caliph Harun al-Rashid's Baghdad.",
+      "author_context": "Set during the reign of Caliph Harun al-Rashid, the tales of Sinbad the Sailor turned real Indian Ocean dhow voyages from Baghdad and Basra into unforgettable bedtime adventures!",
+      "cover_image": "/units/ks2_early_islamic_baghdad/assets/wasiti_indian_ocean_dhow_ship.jpg",
+      "cover_caption": "An AD 1237 Baghdad painting by Yahya al-Wasiti showing sailors steering a stitched wooden Arab dhow ship above ocean fish.",
+      "studio_audio": "/audio/reading/ks2_early_islamic_baghdad/r3.mp3",
+      "studio_voice_label": "Studio Female Historian · KS2 Storyteller",
+      "vocabVault": [
+        {
+          "term": "Dhow",
+          "pronunciation": "DOW",
+          "def": "A sleek Arab ocean trading ship built from wooden planks stitched tightly together with strong coconut-fibre rope."
+        },
+        {
+          "term": "Basra",
+          "pronunciation": "BAZ-ruh",
+          "def": "Iraq's bustling southern gateway port where river boats from Baghdad met tall dhow ships bound for the Indian Ocean."
+        },
+        {
+          "term": "Bazaar",
+          "pronunciation": "buh-ZAR",
+          "def": "A shaded market street (or souk) fragrant with eastern spices, fine silks, carpets, and cut glass."
+        },
+        {
+          "term": "Dirham",
+          "pronunciation": "DEER-ham",
+          "def": "A trusted pure silver Abbasid coin stamped with Arabic writing—traded as far away as Viking York!"
+        }
+      ],
+      "extract": "During Caliph Harun al-Rashid's reign, a tired porter named Hindbad set his heavy load outside a cool Baghdad house. Smelling sweet rosewater inside, he sighed at his hard life. Kindly, rich Sinbad the Sailor called him indoors, piled his plate with spiced food, and told his sea tale.\n\n<em>\"Friend, I never won these silks while resting on soft cushions! As a young man, I walked into Baghdad's shaded bazaars. There I spent my last silver dirhams on bales of cloth, cut glass, and sweet dates. With brave traders, I sailed down the fast River Tigris to the port of Basra.\"</em>\n\n<em>\"At Basra we climbed aboard a tall wooden dhow stitched tight with strong coconut rope! Raising our triangle sail to the wind, we steered at night with a brass star astrolabe. Across the wide Indian Ocean, we swapped Baghdad's goods at distant islands for cloves, cinnamon, and bright gems!\"</em>",
+      "parent_discussion": [
+        {
+          "question": "Which real river and real harbour city did Sinbad travel through to reach the open ocean from Baghdad?",
+          "answer": "He floated south down the River Tigris to the bustling sea port of Basra at the head of the Persian Gulf."
+        },
+        {
+          "question": "Even though Sinbad later met giant birds and sea monsters in his stories, which details in this opening are 100% real history?",
+          "answer": "Baghdad's covered bazaars, rosewater courtyards, silver dirhams, coconut-stitched wooden dhows, brass astrolabes, and Indian Ocean spice trade!"
+        },
+        {
+          "question": "How do Viking silver dirham hoards dug up near York prove that Baghdad's merchants really did connect distant corners of the world?",
+          "answer": "Pure Abbasid silver coins travelled thousands of miles north up Russian rivers to Scandinavia and Viking Britain!"
+        }
+      ],
+      "story_check": [
+        {
+          "question": "How were the wooden hull planks of a real Arab 'dhow' ship fastened together?",
+          "options": [
+            "Welded with electric steel",
+            "Stitched tightly together with strong coconut-fibre rope",
+            "Glued with frozen honey",
+            "Bolted with Roman concrete"
+          ],
+          "correctIndex": 1,
+          "feedback": "Spot on! Flexible coconut-rope stitching let wooden dhow hulls ride ocean swells and coral reefs safely."
+        },
+        {
+          "question": "What instrument helped dhow captains steer safely at night under the stars?",
+          "options": [
+            "A brass astrolabe",
+            "A marble jury machine",
+            "A wooden shaduf lever",
+            "A stone metate trough"
+          ],
+          "correctIndex": 0,
+          "feedback": "Exactly right! Measuring star heights with an engraved brass astrolabe showed sailors their latitude and time."
+        },
+        {
+          "question": "Who did wealthy Sinbad invite into his rosewater courtyard to hear his sea stories?",
+          "options": [
+            "A tired Baghdad street-porter named Hindbad",
+            "Spartan King Leonidas",
+            "Pharaoh Khufu of Giza",
+            "Macedonian horse Bucephalus"
+          ],
+          "correctIndex": 0,
+          "feedback": "Well remembered! Sinbad shared a feast with Hindbad to show the hard voyages behind his merchant wealth."
+        }
+      ],
+      "monday_cold_call": {
+        "question": "Name three real historical trade clues hidden inside 'Sinbad the Sailor' as he sets out from Caliph Harun al-Rashid's Baghdad.",
+        "answer": "Sailing down the Tigris to Basra, boarding a coconut-rope stitched wooden dhow, steering by astrolabe, and trading cloth for eastern spices."
+      },
+      "hinge_question": "Why did merchants travelling long Silk Road trails prefer carrying a signed paper 'sakk' (cheque) instead of heavy sacks of coins?",
+      "audio_file": "/audio/reading/ks2_early_islamic_baghdad/r3.mp3"
+    },
+    {
+      "lesson_index": 4,
+      "lesson_id": "lesson_5",
+      "lesson_label": "Enquiry 5",
+      "short_tab_title": "Baghdad Shatranj Riddle",
+      "literary_mode": "verbatim_literature",
+      "provenance_tier": "verbatim_literature",
+      "source_type": "verse",
+      "source_type_label": "Medieval Arabic Chess Verse",
+      "book_title": "The Silent Courtyard Battle: An Abbasid Shatranj Poem",
+      "author": "Abbasid Baghdad Court Poetry Tradition (c. AD 900)",
+      "provenance_note": "Public-domain English verse rendering from classical Abbasid Arabic poems and riddles on 'Shatranj' (chess), celebrated at the Baghdad courts of Harun al-Rashid, al-Ma'mun, and grandmaster Abu Bakr al-Suli (trans. H. J. R. Murray, 'A History of Chess', 1913, Public Domain).",
+      "author_context": "When evening breezes blew down Baghdad's windcatcher towers into orange-scented courtyards, friends unrolled a cloth board for 'shatranj'—the game that gave us chess! Can you picture every piece in this medieval Arabic riddle-poem?",
+      "cover_image": "/units/ks2_early_islamic_baghdad/assets/medieval_islamic_ceramic_chess_set.jpg",
+      "cover_caption": "Complete thirty-two-piece medieval Islamic shatranj chess set glazed in turquoise and brown geometric shapes without human faces.",
+      "studio_audio": "/audio/reading/ks2_early_islamic_baghdad/r4.mp3",
+      "studio_voice_label": "Studio Female Historian · KS2 Storyteller",
+      "vocabVault": [
+        {
+          "term": "Shatranj",
+          "pronunciation": "shat-RANJ",
+          "def": "The strategic sixty-four-square board game brought from India and Persia to Baghdad that grew into modern chess."
+        },
+        {
+          "term": "Badgir",
+          "pronunciation": "bad-GEER",
+          "def": "A tall rooftop windcatcher tower that scooped cool breezes down into Baghdad courtyard homes during hot summers."
+        },
+        {
+          "term": "Geometric",
+          "pronunciation": "jee-uh-MET-rik",
+          "def": "Art built from repeating symmetrical stars, polygons, and lines drawn carefully with a ruler and compasses."
+        },
+        {
+          "term": "Shah Mat",
+          "pronunciation": "SHAH MAHT",
+          "def": "The winning cry in Persian and Arabic shatranj meaning 'the King is helpless'—giving English our word 'checkmate'!"
+        }
+      ],
+      "extract": "As hot Iraqi afternoons cooled beneath tall <em>badgir</em> windcatcher towers, Baghdad families sat beside courtyard fountains sipping sweet lemon and rosewater drinks. Between plates of spiced almonds, two players spread a sixty-four-square leather mat and set out smooth turquoise and brown <em>shatranj</em> pieces. Poets loved chanting riddles about this bloodless game of wits:\n\n<div class=\"reading-stanza\">Two silent armies face each other on a square-cut plain,<br>Where neither drum beats loud nor drop of blood is ever spilled!<br>Swift horses leap across the lines while war-elephants advance,<br>And loyal viziers guard their Shah behind a footmen's wall.</div>\n\n<div class=\"reading-stanza\">No human faces mark their clay, just curves of turquoise glaze,<br>Yet sharper than a steel-tipped spear is every silent move!<br>One careless step—a trap springs shut around the cornered king,<br>And laughter rings across the tiles at <em>\"Shah mat!\"</em> in the shade!</div>\n\nCenturies later, travellers carried <em>shatranj</em> into Spain and Britain, turning <em>Shah mat</em> into <strong>checkmate</strong>!",
+      "parent_discussion": [
+        {
+          "question": "Why were the thirty-two ceramic shatranj pieces shaped into smooth geometric curves instead of carved little human statues?",
+          "answer": "Traditional Islamic art avoided lifelike human or animal statues so people honoured God alone, inspiring geometric shapes and calligraphy."
+        },
+        {
+          "question": "Why does the poet say 'sharper than a steel-tipped spear is every silent move'?",
+          "answer": "Winning at shatranj depended on clever planning, patience, and foresight rather than physical strength."
+        },
+        {
+          "question": "Which everyday details in this courtyard scene show how comfortable daily life was inside AD 900 Baghdad?",
+          "answer": "Natural air-conditioning from badgir windcatchers, splashing courtyard fountains, citrus drinks, rosewater, almonds, and glazed tilework!"
+        }
+      ],
+      "story_check": [
+        {
+          "question": "What English chess word comes straight from the shatranj cry 'Shah mat'?",
+          "options": [
+            "Algorithm",
+            "Checkmate",
+            "Cheque",
+            "Sofa"
+          ],
+          "correctIndex": 1,
+          "feedback": "Spot on! 'Shah mat' ('the King is trapped/helpless') travelled into European languages as 'checkmate'!"
+        },
+        {
+          "question": "How did tall 'badgir' towers keep Baghdad homes cool without electricity?",
+          "options": [
+            "By dumping snow down the chimney every hour",
+            "By catching upper breezes and funnelling cool air down into shaded rooms",
+            "By spraying salty seawater onto the roof",
+            "By spinning giant bronze propellers"
+          ],
+          "correctIndex": 1,
+          "feedback": "Exactly right! Windcatchers scooped cool air indoors while pushing warm rising air out."
+        },
+        {
+          "question": "Why did Baghdad potters shape shatranj pieces as smooth domes and horns rather than human figures?",
+          "options": [
+            "They did not own any carving tools",
+            "Islamic artistic tradition favoured clean geometric forms over lifelike statues",
+            "Players played blindfolded in pitch-dark caves",
+            "Round pieces rolled off the board faster"
+          ],
+          "correctIndex": 1,
+          "feedback": "Well remembered! Geometric symmetry, arabesque leaf patterns, and calligraphy shone across Islamic art."
+        }
+      ],
+      "monday_cold_call": {
+        "question": "Where did our word 'checkmate' come from, and why were medieval Islamic 'shatranj' pieces shaped geometrically?",
+        "answer": "From 'Shah mat' in shatranj; pieces used smooth geometric shapes because Islamic art avoided lifelike human or animal statues."
+      },
+      "hinge_question": "What can a simple board game, a lemon orchard, and a windcatcher tower tell us about a civilisation that battle dates leave out?",
+      "audio_file": "/audio/reading/ks2_early_islamic_baghdad/r4.mp3"
+    },
+    {
+      "lesson_index": 5,
+      "lesson_id": "lesson_6",
+      "lesson_label": "Enquiry 6",
+      "short_tab_title": "Saving Books Before 1258",
+      "literary_mode": "storied_micro_history",
+      "provenance_tier": "storied_micro_history",
+      "source_type": "micro_history",
+      "source_type_label": "True Historical Rescue Story",
+      "book_title": "Mules Loaded With Star Charts: How Golden Age Ideas Survived 1258",
+      "author": "The History Revision Hub Narrative Archive",
+      "provenance_note": "Original historical micro-story grounded in documented accounts of the February 1258 Mongol siege of Baghdad, astronomer Nasir al-Din al-Tusi's rescue of manuscripts for the Maragha Observatory, and the Toledo School of Translators in Spain.",
+      "author_context": "When Mongol boulders smashed Baghdad's brick walls in February 1258, flames ruined the House of Wisdom. Read aloud to discover how brave scholars and distant libraries saved Golden Age science for our world today!",
+      "cover_image": "/units/ks2_early_islamic_baghdad/assets/hulagu_mongol_siege_baghdad_1258.jpg",
+      "cover_caption": "A 14th-century Persian manuscript painting showing Hulagu Khan's Mongol horsemen and wooden siege frames surrounding brick-walled Baghdad in AD 1258.",
+      "studio_audio": "/audio/reading/ks2_early_islamic_baghdad/r5.mp3",
+      "studio_voice_label": "Studio Female Historian · KS2 Storyteller",
+      "vocabVault": [
+        {
+          "term": "Hulagu Khan",
+          "pronunciation": "hoo-LAH-goo KAHN",
+          "def": "The Mongol commander whose vast army surrounded and captured Abbasid Baghdad in January–February AD 1258."
+        },
+        {
+          "term": "Trebuchet",
+          "pronunciation": "TREB-yoo-shet",
+          "def": "A giant wooden counterweight siege machine used to hurl heavy stones against fortress walls."
+        },
+        {
+          "term": "Al-Andalus",
+          "pronunciation": "al-AN-duh-loos",
+          "def": "Islamic Spain, where cities like Córdoba and Granada preserved hundreds of thousands of Arabic books."
+        },
+        {
+          "term": "Toledo",
+          "pronunciation": "tuh-LAY-doh",
+          "def": "The Spanish city where Muslim, Jewish, and Christian translators turned Arabic science and maths books into Latin."
+        }
+      ],
+      "extract": "In January 1258, the ground by the River Tigris shook under thousands of Mongol horses. Hulagu Khan's men built tall wooden <em>trebuchets</em> to fling big rocks at Baghdad's brick walls. When the city fell in February, dark smoke rose over broken palaces and the House of Wisdom.\n\nYet five hundred years of bright science did not burn away! Brave star-watcher al-Tusi begged to save boxes of rare scrolls. He packed 400,000 books onto strong mules bound for his new star tower in the north! Better still, cheap rag paper meant spare copies sat safe in Cairo, Damascus, and <em>Al-Andalus</em> in Spain.\n\nFar west in Spanish Toledo, Muslim, Jewish, and Christian thinkers worked side by side. By warm candlelight, they turned al-Khwarizmi's <em>0–9</em> sums and Ibn al-Haytham's light tests into Latin! Every time you write zero or snap a photo today, Baghdad's bright torch shines on.",
+      "parent_discussion": [
+        {
+          "question": "How did astronomer Nasir al-Din al-Tusi save hundreds of thousands of manuscripts from destruction in 1258?",
+          "answer": "He persuaded Hulagu Khan to let him pack roughly 400,000 rescued scrolls onto mules for his new star observatory at Maragha."
+        },
+        {
+          "question": "Why did Baghdad's earlier paper-making revolution turn out to be a lifesaver when the House of Wisdom burned?",
+          "answer": "Because scribes had already copied books onto cheap paper and sent duplicates to libraries in Cairo, Damascus, Samarkand, and Córdoba!"
+        },
+        {
+          "question": "Spot three things in your own house or school today that carry on the legacy of Early Islamic Baghdad.",
+          "answer": "Writing digits 0–9 and algebra, phone camera lenses and algorithms, clean hospital pharmacies, chess, and words like sugar, lemon, orange, and sofa!"
+        }
+      ],
+      "story_check": [
+        {
+          "question": "Whose Mongol army besieged and captured Abbasid Baghdad in February AD 1258?",
+          "options": [
+            "Hulagu Khan",
+            "King Xerxes of Persia",
+            "Alexander the Great",
+            "Pharaoh Ramesses II"
+          ],
+          "correctIndex": 0,
+          "feedback": "Spot on! Hulagu Khan's army breached Baghdad's brick walls with wooden trebuchets in February 1258."
+        },
+        {
+          "question": "Why didn't Golden Age science vanish forever when Baghdad's House of Wisdom was ruined?",
+          "options": [
+            "Monkeys hid the scrolls at the bottom of the ocean",
+            "Astronomer al-Tusi rescued crates of books, and paper copies survived in Cairo, Damascus, and Spain",
+            "People had already printed everything onto plastic discs",
+            "Vikings buried every Arabic maths book in York"
+          ],
+          "correctIndex": 1,
+          "feedback": "Exactly right! Multiple paper libraries across three continents meant no single siege could erase the knowledge."
+        },
+        {
+          "question": "In which Spanish city did Muslim, Jewish, and Christian scholars translate Arabic science into Latin for Europe?",
+          "options": [
+            "Toledo",
+            "Ithaca",
+            "Palenque",
+            "Saqqara"
+          ],
+          "correctIndex": 0,
+          "feedback": "Well remembered! Toledo's translators carried al-Khwarizmi, Ibn Sina, and Ibn al-Haytham into European universities."
+        }
+      ],
+      "monday_cold_call": {
+        "question": "Give two reasons why Early Islamic Golden Age science survived even after Hulagu Khan's Mongols destroyed Baghdad's House of Wisdom in 1258.",
+        "answer": "Nasir al-Din al-Tusi rescued crates of scrolls to Maragha, and paper copies already lived in Cairo, Córdoba, and Toledo, where translators turned them into Latin."
+      },
+      "hinge_question": "Why is spreading copies of books to many cities safer for human knowledge than locking one single copy inside the strongest fortress?",
+      "audio_file": "/audio/reading/ks2_early_islamic_baghdad/r5.mp3"
+    }
   ]
 };
 export default window.UNIT_DATA;

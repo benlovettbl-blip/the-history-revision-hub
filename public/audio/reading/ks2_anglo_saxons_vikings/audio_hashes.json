@@ -1,0 +1,53 @@
+{
+  "unitId": "ks2_anglo_saxons_vikings",
+  "clips": {
+    "r2": {
+      "hash": "9b9c6ffc8c3230cc0471ae50",
+      "bytes": 283340,
+      "voiceKey": "male_historian",
+      "badge": "Studio Male Historian · KS2 Storyteller",
+      "words": 149,
+      "updatedAt": "2026-11-23T18:33:39.238Z"
+    },
+    "r3": {
+      "hash": "1e0257ee0941cfa1dcccfd38",
+      "bytes": 323468,
+      "voiceKey": "male_historian",
+      "badge": "Studio Male Historian · KS2 Storyteller",
+      "words": 157,
+      "updatedAt": "2026-11-23T18:33:39.922Z"
+    },
+    "r4": {
+      "hash": "c8db4b1c48dcb7726f87d46f",
+      "bytes": 303692,
+      "voiceKey": "male_historian",
+      "badge": "Studio Male Historian · KS2 Storyteller",
+      "words": 162,
+      "updatedAt": "2026-11-23T18:33:41.878Z"
+    },
+    "r5": {
+      "hash": "a5ab674b25801240f82f8c43",
+      "bytes": 328748,
+      "voiceKey": "male_historian",
+      "badge": "Studio Male Historian · KS2 Storyteller",
+      "words": 165,
+      "updatedAt": "2026-11-23T18:33:42.537Z"
+    },
+    "r0": {
+      "hash": "5dad79244251491b89caa1e6",
+      "bytes": 301580,
+      "voiceKey": "male_historian",
+      "badge": "Studio Male Historian · KS2 Storyteller",
+      "words": 165,
+      "updatedAt": "2026-11-23T18:33:50.903Z"
+    },
+    "r1": {
+      "hash": "d500558b5d5d4fe45568063c",
+      "bytes": 314540,
+      "voiceKey": "male_historian",
+      "badge": "Studio Male Historian · KS2 Storyteller",
+      "words": 163,
+      "updatedAt": "2026-11-23T18:33:51.693Z"
+    }
+  }
+}

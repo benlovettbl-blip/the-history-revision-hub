@@ -374,7 +374,7 @@ export default {
   "lessons": [
     {
       "id": "lesson_1",
-      "title": "1066 & The Battle of Hastings: Why did William win?",
+      "title": "1066 & The Battle of Hastings",
       "enquiry": "Why did William of Normandy win the Battle of Hastings in 1066?",
       "subtitle": "From the Succession Crisis of Edward the Confessor to the Shield Wall at Senlac Hill",
       "skill": "Causation & Battlefield Tactics",
@@ -2194,12 +2194,14 @@ export default {
       },
       "vocab_cloze_text": "When Edward the Confessor died childless in January 1066, a fierce [Succession] crisis erupted despite the [Witan] electing Harold Godwinson as king. After marching north to defeat Harald Hardrada, Harold’s exhausted peasant [Fyrd] and axe-wielding [Housecarl] bodyguards formed a tight shield wall at Hastings on 14 October. Duke William finally broke their line using the clever [Feigned Retreat] trick.",
       "banner_image": "/images/upgraded/ks3-early/med_l1_banner_bayeux_scene50.jpg",
-      "hero_image": "/images/upgraded/ks3-early/med_l1_banner_bayeux_scene50.jpg"
+      "hero_image": "/images/upgraded/ks3-early/med_l1_banner_bayeux_scene50.jpg",
+      "enquiry_question": "Why did William of Normandy win the Battle of Hastings in 1066?",
+      "enquiryQuestion": "Why did William of Normandy win the Battle of Hastings in 1066?"
     },
     {
       "id": "lesson_2",
-      "title": "Castles, Terror & Domesday: How did the Normans subjugate England?",
-      "enquiry": "How did a minority Norman elite of fewer than 10,000 soldiers control two million hostile Anglo-Saxons?",
+      "title": "Castles, Terror & The Domesday Book (1066–1086)",
+      "enquiry": "How did fewer than 10,000 Normans control two million Anglo-Saxons?",
       "subtitle": "Earthworks, Extermination, and Fiscal Surveillance",
       "skill": "Historical Analysis: Control & Subjugation",
       "card_image": "/images/ks3_med7/med7_l2_card_cliffords_tower_york_motte.jpg",
@@ -3947,12 +3949,14 @@ export default {
       },
       "vocab_cloze_text": "After Hastings, William enforced Norman [Subjugation] across England by building hundreds of timber [Motte-and-Bailey] forts, each guarded by a loyal Norman [Castellan]. When northern rebels rose up in 1069, William ordered the ruthless [Harrying] of the North, burning crops and villages across Yorkshire. Finally, in 1086, royal commissioners compiled the [Domesday Book] to tax the realm and record Norman landownership.",
       "banner_image": "/images/upgraded/ks3-early/med_l2_banner_white_tower_thames.jpg",
-      "hero_image": "/images/upgraded/ks3-early/med_l2_banner_white_tower_thames.jpg"
+      "hero_image": "/images/upgraded/ks3-early/med_l2_banner_white_tower_thames.jpg",
+      "enquiry_question": "How did fewer than 10,000 Normans control two million Anglo-Saxons?",
+      "enquiryQuestion": "How did fewer than 10,000 Normans control two million Anglo-Saxons?"
     },
     {
       "id": "lesson_3",
-      "title": "Crown vs Church: Why did Henry II clash with Thomas Becket?",
-      "enquiry": "Why did the conflict between King Henry II and Archbishop Thomas Becket erupt into murder in Canterbury Cathedral?",
+      "title": "Crown vs Church: Henry II & Thomas Becket (1154–1174)",
+      "enquiry": "Why did the quarrel between Henry II and Becket end in murder?",
       "subtitle": "Criminous Clerks, Royal Sovereignty, and the Martyrdom of 1170",
       "skill": "Historical Significance & Church-State Conflict",
       "card_image": "/images/ks3_med7/med7_l3_card_canterbury_cathedral_towers.jpg",
@@ -5538,12 +5542,14 @@ export default {
       },
       "vocab_cloze_text": "King Henry II appointed his friend Thomas Becket as Archbishop expecting help in curbing separate [Canon Law] courts. Instead, Becket defended [Benefit of Clergy], which allowed any [Criminous Clerk] accused of serious crime to escape royal hanging. Their bitter clash over the 1164 [Constitutions of Clarendon] ended in December 1170 with Becket’s [Martyrdom] inside Canterbury Cathedral, forcing Henry into barefoot penance.",
       "banner_image": "/images/upgraded/ks3-early/med_l3_banner_canterbury_cathedral.jpg",
-      "hero_image": "/images/upgraded/ks3-early/med_l3_banner_canterbury_cathedral.jpg"
+      "hero_image": "/images/upgraded/ks3-early/med_l3_banner_canterbury_cathedral.jpg",
+      "enquiry_question": "Why did the quarrel between Henry II and Becket end in murder?",
+      "enquiryQuestion": "Why did the quarrel between Henry II and Becket end in murder?"
     },
     {
       "id": "lesson_4",
-      "title": "Magna Carta (1215) & Medieval Kingship: Liberty or Barons’ Power Grab?",
-      "enquiry": "Was Magna Carta a revolutionary victory for human freedom or a selfish act of baronial extortion?",
+      "title": "King John & Magna Carta (1199–1225)",
+      "enquiry": "Was Magna Carta a victory for liberty or a barons’ power grab?",
       "subtitle": "Scutage, Royal Autocracy, and the Meadow of Runnymede",
       "skill": "Historical Interpretation: Liberty vs Self-Interest",
       "card_image": "/images/ks3_med7/med7_l4_card_runnymede_magna_carta_monument.jpg",
@@ -7125,12 +7131,14 @@ export default {
       },
       "vocab_cloze_text": "After losing Normandy in 1204, King John angered English barons by demanding heavy [Scutage] taxes, while his quarrel with the Pope placed England under a six-year [Interdict]. Defeat at Bouvines in 1214 forced John to Runnymede in June 1215 to seal [Magna Carta]. Clause 39 laid early foundations for [Habeas Corpus] and established the [Rule of Law] over the monarch himself.",
       "banner_image": "/images/upgraded/ks3-early/med_l4_banner_runnymede_magna_carta_island.jpg",
-      "hero_image": "/images/upgraded/ks3-early/med_l4_banner_runnymede_magna_carta_island.jpg"
+      "hero_image": "/images/upgraded/ks3-early/med_l4_banner_runnymede_magna_carta_island.jpg",
+      "enquiry_question": "Was Magna Carta a victory for liberty or a barons’ power grab?",
+      "enquiryQuestion": "Was Magna Carta a victory for liberty or a barons’ power grab?"
     },
     {
       "id": "lesson_5",
-      "title": "The Black Death (1348) & The Peasants’ Revolt (1381): How did plague and rebellion shatter feudalism?",
-      "enquiry": "How did the demographic shock of the Black Death lead to the peasant uprising of 1381?",
+      "title": "The Black Death & The Peasants’ Revolt (1348–1381)",
+      "enquiry": "How did the Black Death spark the Peasants’ Revolt of 1381?",
       "subtitle": "Yersinia Pestis, The Statute of Labourers, and the Storming of London",
       "skill": "Causal Links & Socio-Economic Change",
       "card_image": "/images/ks3_med7/med7_l5_card_luttrell_psalter_manor_mill.jpg",
@@ -8865,7 +8873,9 @@ export default {
       },
       "vocab_cloze_text": "England’s [Demography] changed dramatically after the Black Death of 1348–49 killed over a third of the population and created acute labour shortages. Angry lords passed the 1351 [Statute of Labourers] to freeze wages and preserve [Serfdom]. When King Richard II’s government collected three unfair [Poll Tax] levies by 1381, Wat Tyler and John Ball led a dramatic peasant [Insurrection] into London.",
       "banner_image": "/images/upgraded/ks3-early/med_l5_banner_danse_macabre.jpg",
-      "hero_image": "/images/upgraded/ks3-early/med_l5_banner_danse_macabre.jpg"
+      "hero_image": "/images/upgraded/ks3-early/med_l5_banner_danse_macabre.jpg",
+      "enquiry_question": "How did the Black Death spark the Peasants’ Revolt of 1381?",
+      "enquiryQuestion": "How did the Black Death spark the Peasants’ Revolt of 1381?"
     }
   ],
   "edition": "3-Layer Pedagogical Architecture Gold Standard (2026)",
@@ -9059,296 +9069,516 @@ export default {
       "lesson_index": 0,
       "lesson_id": "lesson_1",
       "lesson_label": "Enquiry 1",
-      "book_title": "Gesta Guillelmi (The Deeds of William): Senlac Hill & the Feigned Retreat",
-      "author": "William of Poitiers (c. 1071 • Norman Court Chronicle)",
+      "short_tab_title": "1. William’s Helmet (1066)",
+      "literary_mode": "storied_micro_history",
+      "provenance_tier": "storied_micro_history",
+      "source_type": "storied_micro_history",
+      "source_type_label": "True Historical Story (14 October 1066)",
+      "is_primary": false,
+      "is_adapted": false,
+      "book_title": "Lifting the Iron Helmet: Duke William & the Feigned Retreat at Hastings",
+      "author": "The History Revision Hub (Grounded in the Bayeux Tapestry & William of Poitiers)",
+      "provenance_note": "True historical micro-story reconstructed from Scenes 52–55 of the Bayeux Tapestry and Norman chaplain William of Poitiers’s c. 1071 chronicle.",
+      "author_context": "On Saturday 14 October 1066, King Harold Godwinson’s tired Anglo-Saxon army locked shields atop steep Senlac Hill near Hastings. For hours Duke William’s Norman charges bounced off the English shield-wall—until a moment of battlefield panic inspired a deadly cavalry trap.",
       "cover_image": "/images/ks3_med7/med7_l1_b3_bayeux_norman_cavalry_shield_wall.jpg",
-      "cover_caption": "Bayeux Tapestry Scene 52 (c. 1070s, Musée de la Tapisserie de Bayeux): Mail-clad Norman cavalry knights charge uphill against King Harold’s interlocking Anglo-Saxon shield wall at Hastings.",
-      "author_context": "William of Poitiers (c. 1020–1090) was a Norman chaplain who had trained as a knight before entering the Church and serving Duke William of Normandy. Writing around five years after 1066, his Latin chronicle Gesta Guillelmi flatters his Norman patron, yet provides our most detailed military account of how Norman cavalry broke the English shield-wall on 14 October 1066.",
-      "source_type": "primary_chronicle",
-      "source_type_label": "Contemporary Norman Chronicle (c. 1071)",
-      "is_primary": true,
-      "is_adapted": true,
-      "extract": "\"The English stood massed tightly upon the crest of the hill, holding the high ground in so dense a wedge that the dead could scarcely fall where they stood. Hurling javelins and wielding terrible two-handed battleaxes that clove through shields and coats of mail alike, King Harold’s warriors drove back our foot-soldiers and Bretons upon the left wing.\n\nWhen false cries arose among the ranks that Duke William himself had fallen, flight began to spread across the valley. Seeing the peril, the Duke spurred his charger across the path of the retreating knights, pushed back his iron helmet so that every man might behold his bare face, and cried aloud: 'Look at me well! I live, and by God’s grace I shall conquer! What madness drives you to flee when victory lies before you?'\n\nPerceiving thereafter that the tightly locked English shield-wall could not be shattered by headlong assault uphill, the Normans twice turned their horses in deliberate, feigned flight. Drawn down from their ridge in eager pursuit of what seemed a beaten enemy, thousands of the English broke formation on the lower slope—whereupon our horsemen wheeled swiftly round, surrounded the scattered pursuers, and cut them down.\"",
+      "cover_caption": "Bayeux Tapestry Scene 52 (c. 1070s): Mail-clad Norman cavalry knights charge uphill against King Harold’s locked Anglo-Saxon shield-wall wielding a two-handed battleaxe.",
       "vocabVault": [
         {
           "term": "Shield-Wall",
-          "def": "A tightly locked defensive formation in which Anglo-Saxon huscarls and fyrdmen overlapped shields on high ground."
+          "pronunciation": "SHEELD-wawl",
+          "def": "A tightly locked defensive line where Anglo-Saxon warriors overlapped wooden shields along the top of a ridge."
         },
         {
           "term": "Huscarls",
-          "def": "Elite, salaried professional bodyguards of the Anglo-Saxon king who fought with heavy mail and two-handed Danish axes."
+          "pronunciation": "HUS-karlz",
+          "def": "Elite, heavily armoured bodyguards of the Anglo-Saxon king armed with fearsome two-handed Danish battleaxes."
         },
         {
           "term": "Feigned Retreat",
-          "def": "A disciplined cavalry tactic of pretending to flee in panic in order to lure defenders out of a strong defensive position."
+          "pronunciation": "FAYND rih-TREET",
+          "def": "A clever cavalry trick of pretending to flee in panic to tempt defenders out of a strong hilltop line."
         },
         {
-          "term": "Patronage",
-          "def": "Support and reward given by a powerful ruler to a writer or churchman, often shaping how chronicles praise that ruler."
+          "term": "Senlac Hill",
+          "pronunciation": "SEN-lak HIL",
+          "def": "The steep ridge north of Hastings where King Harold’s English army stood firm on 14 October 1066."
         }
       ],
+      "extract": "By mid-morning on Saturday 14 October 1066, Duke William’s invasion of England hung by a thread. High atop steep Senlac Hill stood King Harold’s warriors, tired from their long march south from Stamford Bridge yet locked tightly behind a wall of wooden shields. Every time Norman horsemen charged up the muddy slope, English huscarls swung heavy two-handed axes that cleaved straight through mail coats and shields.\n\nSuddenly, panic rippled along the left wing of William’s army. Foot-soldiers stumbled backward down the slope, and a terrifying shout echoed across the valley: \"The Duke is dead!\"\n\nSpurring his warhorse directly across the path of his fleeing knights, William pushed back his iron helmet so every soldier could see his bare, furious face. \"Look at me well!\" he roared, according to his chaplain William of Poitiers. \"I live, and by God’s grace I shall conquer!\"\n\nThat real panic gave William a cunning idea. Twice that afternoon, Norman knights charged uphill and then deliberately pretended to flee. Tempted by victory, hundreds of English fighters broke ranks to chase them downhill—where Norman cavalry wheeled sharply round, surrounded the scattered pursuers, and shattered Harold’s shield-wall before dusk.",
       "parent_discussion": [
         {
-          "question": "Why was it almost impossible for Duke William’s soldiers to break the English army during the morning of 14 October 1066?",
-          "answer": "Harold’s army held the steep top of Senlac Hill in a tightly locked shield-wall, where Norman horses struggled uphill against two-handed battleaxes."
+          "question": "Why couldn’t Duke William’s cavalry break King Harold’s army during the morning fighting at Hastings?",
+          "answer": "Harold held the steep top of Senlac Hill in a locked shield-wall, where Norman horses struggled uphill against two-handed huscarl axes."
         },
         {
-          "question": "How did Duke William stop his army panicking when a rumour spread that he had been killed, and how did the feigned retreat work?",
-          "answer": "He lifted his helmet to show his face alive, then used pretended retreats to trick English fighters into chasing downhill and breaking their shield-wall."
+          "question": "How did Duke William stop his own soldiers running away, and how did that moment inspire the \"feigned retreat\"?",
+          "answer": "He pushed back his helmet to show his face alive; seeing English fighters chase his retreating wing gave him the idea to fake two cavalry retreats."
         },
         {
-          "question": "Knowing that William of Poitiers was Duke William’s own chaplain, why should historians read his praise of Norman cleverness carefully?",
-          "answer": "As a Norman court chronicler writing for the Conqueror, he exaggerates William’s genius while downplaying how exhausted Harold’s troops already were after marching south from Stamford Bridge."
+          "question": "Why do historians compare William of Poitiers’s chronicle with Scene 55 of the Bayeux Tapestry when checking this story?",
+          "answer": "Both independent Norman sources show William tipping back his helmet to rally his men, corroborating that the panic really happened."
         }
       ],
-      "hinge_question": "<strong>Think:</strong> What weapon did the English huscarls use that terrified William’s knights?<br><br><strong>Pair:</strong> Compare this chronicle with Scene 55 of the Bayeux Tapestry—how do both sources corroborate William lifting his helmet?<br><br><strong>Share:</strong> Was Hastings won more by Norman tactics or English exhaustion after Stamford Bridge?",
+      "story_check": [
+        {
+          "question": "Which fearsome weapon swung by Harold’s elite huscarls terrified Norman horsemen?",
+          "options": [
+            "Crossbows",
+            "Two-handed Danish battleaxes",
+            "Gunpowder cannons",
+            "Curved Roman short-swords"
+          ],
+          "correctIndex": 1,
+          "feedback": "Anglo-Saxon huscarls swung long two-handed battleaxes capable of splitting shields and chainmail."
+        },
+        {
+          "question": "What did Duke William do when a rumour spread across the battlefield that he had been killed?",
+          "options": [
+            "Sailed back to Normandy",
+            "Pushed back his iron helmet so his troops could see his bare face alive",
+            "Hid inside Hastings Castle",
+            "Sent a peace letter to King Harold"
+          ],
+          "correctIndex": 1,
+          "feedback": "William rode across his retreating men’s path, lifted his helmet, and shouted, \"Look at me well! I live!\""
+        },
+        {
+          "question": "How did the Norman \"feigned retreat\" break the English advantage on Senlac Hill?",
+          "options": [
+            "Normans dug a tunnel beneath the hill",
+            "Pretending to flee tricked English fighters into chasing downhill and leaving gaps in the shield-wall",
+            "Normans waited until winter snow arrived",
+            "English soldiers ran out of water at noon"
+          ],
+          "correctIndex": 1,
+          "feedback": "Luring defenders down onto flat ground broke the tight shield-wall so Norman cavalry could wheel round and cut them down."
+        }
+      ],
+      "monday_cold_call": {
+        "question": "Why did Duke William push back his helmet at Hastings, and how did his \"feigned retreat\" work?",
+        "answer": "To prove he was still alive and stop panic; pretending to flee lured English troops downhill out of their hilltop shield-wall."
+      },
+      "hinge_question": "<strong>Think:</strong> What weapon did the English huscarls use on Senlac Hill?<br><br><strong>Pair:</strong> Why was breaking formation to chase retreating Normans a fatal mistake for Harold’s men?<br><br><strong>Share:</strong> Was Hastings won more by Norman tactics or English exhaustion after Stamford Bridge?",
       "questions": [
-        "Why could the English soldiers on the hilltop \"scarcely fall where they stood\"?",
-        "What did Duke William do with his helmet to prove to his retreating troops that he was still alive?",
-        "How did the Norman \"feigned flight\" trick the English defenders into losing their advantage?"
+        "Why was King Harold’s hilltop shield-wall so hard to break on the morning of 14 October 1066?",
+        "What did Duke William do with his helmet to rally his panicking soldiers?",
+        "How did the Norman feigned retreat trick English defenders?"
       ],
       "audio_file": "/audio/reading/medieval_england/r0.mp3",
       "studio_audio": "/audio/reading/medieval_england/r0.mp3",
-      "studio_voice_label": "Studio Male Historian · Primary Chronicle",
-      "provenance_tier": "adapted_primary",
-      "provenance_note": "Translated from Latin and condensed for KS3 reading aloud from William of Poitiers’s c. 1071 Norman chronicle.",
-      "short_tab_title": "1. Poitiers: Senlac Hill (1066)"
+      "studio_voice_label": "Studio Male Historian · Storied History"
     },
     {
       "lesson_index": 1,
       "lesson_id": "lesson_2",
       "lesson_label": "Enquiry 2",
-      "book_title": "Historia Ecclesiastica: Orderic Vitalis on Castles & the Harrying of the North",
-      "author": "Orderic Vitalis (Book IV, c. 1125 • Monastery of Saint-Évroul)",
-      "cover_image": "/images/ks3_med7/med7_l2_b0_bayeux_hastings_motte_scene45.jpg",
-      "cover_caption": "Bayeux Tapestry Scene 45 (c. 1070s, Musée de la Tapisserie de Bayeux): Norman overseers force English labourers to dig the steep earthen motte and palisade of Hastings Castle.",
-      "author_context": "Orderic Vitalis (1075–c. 1142) was born in Shropshire to a Norman father and an English mother before becoming a Benedictine monk in Normandy. Because of his mixed Anglo-Norman heritage, Orderic wrote with rare moral honesty—praising King William’s strength while fiercely condemning the merciless starvation inflicted on Yorkshire during the Harrying of the North (1069–1070).",
-      "source_type": "primary_chronicle",
-      "source_type_label": "Anglo-Norman Monastic Chronicle (c. 1125)",
-      "is_primary": true,
-      "is_adapted": true,
-      "extract": "\"Throughout the conquered shires the King planted royal castles—earthworks crowned with timber palisades that the English had scarcely known before, which prevented the people of the land from rising cleanly against his garrisons. Yet when the men of Northumbria joined Danish raiders at York in 1069, King William’s wrath knew no restraint.\n\nNowhere else had William shown such cruelty. Yielding to his anger, he spared neither the weak nor the innocent, commanding that all crops, herds of cattle, ploughs, and stores of grain between York and Durham be burned to ashes so that rebels might find no winter sustenance.\n\nFrom that deliberate ruin so dreadful a famine swept across northern England that defenceless men, women, and children perished of hunger upon the frozen roads—more than one hundred thousand Christian souls, as men reckoned. Though I have often praised King William’s vigour and order, I dare not excuse so brutal a slaughter; for surely Almighty God, the righteous Judge, will weigh the cries of the starving alongside the deeds of princes.\"",
+      "short_tab_title": "2. Not One Ox Left Out!",
+      "literary_mode": "storied_micro_history",
+      "provenance_tier": "storied_micro_history",
+      "source_type": "storied_micro_history",
+      "source_type_label": "True Historical Story (1085–1086)",
+      "is_primary": false,
+      "is_adapted": false,
+      "book_title": "\"Not One Ox, Nor One Pig Left Out!\": King William’s Great Domesday Survey",
+      "author": "The History Revision Hub (Grounded in the Anglo-Saxon Chronicle 1085 & Domesday Book)",
+      "provenance_note": "True historical micro-story combining the 1085 Peterborough Anglo-Saxon Chronicle entry with the 1086 Domesday Book returns.",
+      "author_context": "After crushing rebellions with timber castles and the brutal Harrying of the North (1069–1070), King William spent Christmas 1085 at Gloucester ordering a giant survey of England. Within months, royal commissioners counted every manor, watermill, plough, and pig across the realm.",
+      "cover_image": "/images/ks3_med7/med7_l2_b3_domesday_chest_national_archives.jpg",
+      "cover_caption": "Historic engraving of the iron-bound medieval oak Domesday Chest with triple locks (The National Archives), built to guard the parchment volumes of Domesday Book.",
       "vocabVault": [
         {
-          "term": "Motte-and-Bailey",
-          "def": "A Norman fortress combining a raised earthen mound (motte) topped by a wooden keep with a fenced courtyard (bailey) below."
+          "term": "Domesday Book",
+          "pronunciation": "DOOMZ-day BOOK",
+          "def": "King William’s great 1086 land and tax survey of England, named after God’s final Day of Judgment."
+        },
+        {
+          "term": "Commissioners",
+          "pronunciation": "kuh-MISH-uhn-erz",
+          "def": "Senior Norman bishops and barons sent out across England’s shires in 1086 to question witnesses under oath."
         },
         {
           "term": "Harrying",
-          "def": "Systematic scorched-earth devastation—burning crops, livestock, and villages to starve a region into submission."
+          "pronunciation": "HAR-ee-ing",
+          "def": "King William’s scorched-earth burning of Yorkshire crops, barns, and cattle in 1069–1070 to starve northern rebels."
         },
         {
-          "term": "Garrison",
-          "def": "A body of armed knights and soldiers stationed inside a castle to control the surrounding countryside."
-        },
-        {
-          "term": "Subjugation",
-          "def": "Bringing a conquered population completely under royal obedience through force, law, and taxation."
+          "term": "Vasta (Wasteland)",
+          "pronunciation": "VAS-tuh",
+          "def": "The chilling Latin word written across northern Domesday pages where ruined villages still lay empty sixteen years after 1070."
         }
       ],
+      "extract": "Twenty years after winning Hastings, King William wanted to know what his conquered kingdom was worth. He also wanted to know how much tax he could squeeze from it. At Gloucester during Christmas 1085, the King sent royal officials riding into every shire across England.\n\nIn each county town, Norman lords sat beside scribes armed with goose-quill pens and sheepskin parchment. Standing nervously before them were the sheriff, the village priest, the reeve, and six English peasants from every village. Swearing an oath on holy relics, they had to answer strict questions. Who held this land in 1066, and which Norman holds it now? How many ploughs, fishponds, and watermills stand here?\n\nAn angry English monk writing the <em>Anglo-Saxon Chronicle</em> gasped at William’s thoroughness. \"Not one ox, nor one cow, nor one pig was left out!\" he complained.\n\nAcross Yorkshire, William had burned crops and barns during the brutal Harrying of the North sixteen years earlier. Beside village after village, scribes wrote one grim Latin word—<em>vasta</em>, meaning \"wasteland.\" English folk called the finished volumes <em>Domesday Book</em>. Like God’s Judgment Day, nobody could argue against it.",
       "parent_discussion": [
         {
-          "question": "Why were Norman motte-and-bailey castles such a shock and threat to Anglo-Saxon communities?",
-          "answer": "England had very few private castles before 1066; towering earthen mottes and mounted garrisons allowed small numbers of Normans to dominate whole shires."
+          "question": "How did King William’s commissioners make sure local lords and villagers couldn’t lie or hide farm animals in 1086?",
+          "answer": "They questioned the sheriff, the village priest, the reeve, and six peasants from every village in public court under a sacred religious oath."
         },
         {
-          "question": "Why did King William burn ploughs, barns, and cattle across Yorkshire in the winter of 1069–1070 rather than simply fighting rebel soldiers?",
-          "answer": "By destroying food supplies and tools (\"scorched earth\"), he ensured no northern rebellion or Danish army could feed itself—causing catastrophic famine for civilians."
+          "question": "Why did the English monk writing the Anglo-Saxon Chronicle call it \"shameful\" that William counted every ox, cow, and pig?",
+          "answer": "Conquered English people felt humiliated that a foreign king recorded every farm animal down to the last pig so he could tax them heavily."
         },
         {
-          "question": "Why does Orderic Vitalis’s mixed English and Norman background make his verdict on William so valuable to historians?",
-          "answer": "Even though he lived in a Norman monastery and admired William’s order, his English roots made him refuse to whitewash the starvation of innocent northern families."
+          "question": "What does the Latin word vasta (\"wasteland\") across northern Domesday pages prove about the winter of 1069–1070?",
+          "answer": "It proves William’s scorched-earth Harrying of the North was so destructive that hundreds of Yorkshire villages still lay ruined and empty in 1086."
         }
       ],
-      "hinge_question": "<strong>Think:</strong> What triggered William’s fury in northern England in 1069?<br><br><strong>Pair:</strong> Note Orderic’s figure of \"100,000\" dead—why did medieval chroniclers use huge round numbers, and how does the 1086 Domesday Book (\"wasteland\" / vasta) prove the devastation really happened?<br><br><strong>Share:</strong> Which did more to secure Norman control permanently: castles, terror, or Domesday taxation?",
+      "story_check": [
+        {
+          "question": "Why did King William order the Domesday Survey at Christmas 1085?",
+          "options": [
+            "To give land back to Anglo-Saxon earls",
+            "To discover who held all land and wealth in England and how much tax and knight-service he could demand",
+            "To count how many churches Thomas Becket owned",
+            "To prepare ships to invade Spain"
+          ],
+          "correctIndex": 1,
+          "feedback": "Domesday Book gave William total control over feudal landholding, taxes, and military service across England."
+        },
+        {
+          "question": "According to the Anglo-Saxon Chronicle, what farm animals did William’s commissioners refuse to leave out?",
+          "options": [
+            "Falcons and hunting dogs",
+            "Not one ox, nor one cow, nor one pig",
+            "Warhorses and camels",
+            "Cathedral pigeons"
+          ],
+          "correctIndex": 1,
+          "feedback": "The chronicler complained bitterly that \"not one ox, nor one cow, nor one pig was left out\" of the King’s writ."
+        },
+        {
+          "question": "Why did English villagers nickname the survey \"Domesday Book\"?",
+          "options": [
+            "It was written inside Dover Castle’s dome",
+            "Its decisions were as final and inescapable as God’s Day of Judgment",
+            "It predicted the end of the world in 1100",
+            "It was written by a monk named Dominic"
+          ],
+          "correctIndex": 1,
+          "feedback": "\"Domesday\" meant Judgment Day—once your manor’s value was written inside the book, there was no appeal!"
+        }
+      ],
+      "monday_cold_call": {
+        "question": "Quote what the Anglo-Saxon Chronicle said King William’s 1086 survey refused to leave out, and explain what vasta meant in Yorkshire.",
+        "answer": "\"Not one ox, nor one cow, nor one pig\" was left out; vasta meant \"wasteland\"—villages still ruined from the Harrying of the North."
+      },
+      "hinge_question": "<strong>Think:</strong> Who had to stand up in court to answer the Domesday commissioners’ questions?<br><br><strong>Pair:</strong> How does Domesday Book prove both William’s administrative genius AND his terrible cruelty in Yorkshire?<br><br><strong>Share:</strong> Which did more to lock down Norman control permanently: castles, terror, or Domesday Book?",
       "questions": [
-        "What new type of fortification did King William build across the English shires?",
-        "What items did William order his troops to burn between York and Durham in 1069–1070?",
-        "Why does Orderic Vitalis say he \"dare not excuse\" William’s actions in the North?"
+        "Where and when did King William order the Domesday Survey?",
+        "Which farm animals did the Anglo-Saxon Chronicle complain were counted?",
+        "What did the Latin word vasta record across northern England in 1086?"
       ],
       "audio_file": "/audio/reading/medieval_england/r1.mp3",
       "studio_audio": "/audio/reading/medieval_england/r1.mp3",
-      "studio_voice_label": "Studio Male Historian · Primary Chronicle",
-      "provenance_tier": "adapted_primary",
-      "provenance_note": "Translated from Latin and condensed for KS3 pupils from Orderic Vitalis’s c. 1125 monastic chronicle.",
-      "short_tab_title": "2. Vitalis: Norman Terror (1069)"
+      "studio_voice_label": "Studio Female Historian · Storied History"
     },
     {
       "lesson_index": 2,
       "lesson_id": "lesson_3",
       "lesson_label": "Enquiry 3",
-      "book_title": "Vita Sancti Thomae: Eyewitness Account of the Murder in the Cathedral",
-      "author": "Edward Grim (c. 1172 • British Library Cotton MS Claudius B II)",
-      "cover_image": "/images/ks3_med7/med7_l3_s4_becket_murder_harley_5102.jpg",
-      "cover_caption": "British Library Harley MS 5102, f. 32 (c. 1220): Eyewitness clerk Edward Grim holds the cross at the altar as four Norman knights murder Archbishop Thomas Becket in Canterbury Cathedral on 29 December 1170.",
-      "author_context": "Edward Grim was a clerk from Cambridge visiting Archbishop Thomas Becket at Canterbury on the evening of 29 December 1170. When four household knights of King Henry II—Reginald FitzUrse, Hugh de Morville, William de Tracy, and Richard le Breton—stormed into the cathedral, Grim stood beside Becket and had his own arm nearly severed by the first sword blow before writing this famous eyewitness biography.",
+      "short_tab_title": "3. Grim at Canterbury (1170)",
+      "literary_mode": "intimate_eyewitness",
+      "provenance_tier": "adapted_primary",
       "source_type": "primary_chronicle",
-      "source_type_label": "Eyewitness Cathedral Testimony (c. 1172)",
+      "source_type_label": "Wounded Eyewitness Testimony (c. 1172)",
       "is_primary": true,
       "is_adapted": true,
-      "extract": "\"As twilight fell on the twenty-ninth of December, the monks hurried Archbishop Thomas toward the cathedral vespers, begging him to bolt the heavy oak doors behind them. Turning calmly upon the steps, Thomas forbade them: 'It is not right to turn the fortress of prayer, the Church of Christ, into a military camp. Even if it stands unlocked, it is able to shield its own; we shall triumph over our foes by suffering rather than by fighting.'\n\nMoments later the four mailed knights burst in with drawn swords and axes, shouting aloud: 'Where is Thomas Becket, traitor to the King and the realm?' Receiving no answer, they cried again, 'Where is the Archbishop?' At once Thomas stepped down from the pillar into plain view and answered clearly: 'Here I am—no traitor to the King, but a priest of God. What do you seek?'\n\nWhen they demanded that he lift the excommunication placed upon the King’s bishops, Thomas refused unless they submitted to the authority of the Church. Though I threw my own arm forward to turn aside the first descending blade—whereby my arm was grievously cut—the Archbishop bowed his head in prayer, commending his cause to God and St Denis, and fell beneath their swords upon the stone pavement.\"",
+      "book_title": "Vita Sancti Thomae: Edward Grim’s Wounded Arm in Canterbury Cathedral",
+      "author": "Edward Grim (c. 1172 • British Library Cotton MS Claudius B II)",
+      "provenance_note": "Translated from Latin and adapted into clear Year 7 oral sentences from eyewitness clerk Edward Grim’s c. 1172 biography of Becket.",
+      "author_context": "Edward Grim was a visiting clerk from Cambridge standing right beside Archbishop Thomas Becket in Canterbury Cathedral on the evening of 29 December 1170. When four household knights of King Henry II burst in with swords, Grim threw up his own arm to shield Becket from the first blow.",
+      "cover_image": "/images/ks3_med7/med7_l3_s4_becket_murder_harley_5102.jpg",
+      "cover_caption": "British Library Harley MS 5102, f. 32 (c. 1220): Clerk Edward Grim holds the cross behind the altar as four armoured knights strike kneeling Archbishop Thomas Becket.",
       "vocabVault": [
         {
-          "term": "Archbishop of Canterbury",
-          "def": "The most senior churchman in England, responsible for leading the English Church under the Pope in Rome."
+          "term": "Archbishop",
+          "pronunciation": "arch-BISH-uhp",
+          "def": "The Archbishop of Canterbury—the highest church leader in England, answering spiritually to the Pope in Rome."
         },
         {
           "term": "Excommunication",
-          "def": "Officially expelling a person from the Catholic Church and its sacraments—a terrifying spiritual punishment in medieval Europe."
+          "pronunciation": "eks-kuh-myoo-nih-KAY-shun",
+          "def": "Officially cutting someone off from the Catholic Church and its sacraments—a terrifying spiritual punishment."
+        },
+        {
+          "term": "Sanctuary",
+          "pronunciation": "SANK-choo-er-ee",
+          "def": "Sacred church ground where medieval law forbade bloodshed or violent arrest."
         },
         {
           "term": "Martyr",
-          "def": "A person killed because they refuse to surrender their religious faith or principles."
-        },
-        {
-          "term": "Penance",
-          "def": "A public act of sorrow and punishment carried out to seek God’s forgiveness for a grave sin."
+          "pronunciation": "MAR-ter",
+          "def": "Someone killed because they refuse to give up their religious faith or principles."
         }
       ],
+      "extract": "\"Twilight was falling on 29 December 1170 when frightened monks hurried Archbishop Thomas Becket into Canterbury Cathedral for evening prayers. Begging him to bolt the heavy oak doors against King Henry II’s men, they tried to slide the iron bars shut. Thomas stopped them calmly upon the steps: 'It is not right to turn the house of prayer into a military fortress. Even unlocked, God’s Church can shield its own.'\"\n\n\"Moments later, four mailed knights burst through the cloister door brandishing drawn swords and axes. 'Where is Thomas Becket, traitor to the King and realm?' they shouted into the dim candlelight. Stepping out beside a stone pillar, Thomas answered clearly: 'Here I am—no traitor to the King, but a priest of God. What do you seek?'\"\n\n\"The knights demanded that he lift the Church ban placed upon the King’s bishops, yet Thomas stood firm. When they tried to drag him outside, I wrapped my arms tight around him. As the first knight swung his blade down toward the Archbishop’s head, I threw my own arm forward to block the blow. Steel sliced deep into my arm, and Thomas bowed his head in prayer as their swords struck the stone floor.\"",
       "parent_discussion": [
         {
-          "question": "Why did Archbishop Thomas Becket refuse to let the terrified monks lock the doors of Canterbury Cathedral?",
-          "answer": "He insisted a church is a house of prayer, not a castle, believing sacred sanctuary should never be barred to anyone."
+          "question": "Why did Archbishop Thomas Becket forbid the terrified monks to bolt the oak doors of Canterbury Cathedral?",
+          "answer": "He insisted a church is a house of prayer, not a castle fortress, believing sacred sanctuary should remain open."
         },
         {
-          "question": "What was the core argument between King Henry II and Becket that led the four knights to confront him?",
-          "answer": "Who held supreme authority over Church courts and bishops in England—the Crown (Constitutions of Clarendon) or the Church and Pope."
+          "question": "What fierce argument between King Henry II and his former friend Becket led up to this violent clash?",
+          "answer": "They clashed over whether the King’s royal courts or the Church and Pope held supreme power over priests and bishops in England."
         },
         {
-          "question": "How did murdering Becket inside Canterbury Cathedral completely backfire on King Henry II?",
-          "answer": "Christendom was horrified; Becket was swiftly declared a saint and martyr, forcing Henry II to walk barefoot through Canterbury to be whipped in penance in 1174 and compromise on Church courts."
+          "question": "Why did killing Becket on sacred cathedral stones turn into a disaster for King Henry II?",
+          "answer": "Europe was outraged; Pope Alexander III swiftly made Becket a saint, and Henry II had to walk barefoot through Canterbury to be whipped in penance in 1174."
         }
       ],
-      "hinge_question": "<strong>Think:</strong> Why is Edward Grim such an extraordinary eyewitness source for 29 December 1170?<br><br><strong>Pair:</strong> At the same time, Grim wrote to celebrate Becket as a saint—which details in his account emphasize Becket’s saintly bravery?<br><br><strong>Share:</strong> Who won the struggle between Crown and Church after 1170: Henry II or Becket?",
+      "story_check": [
+        {
+          "question": "What happened to eyewitness clerk Edward Grim during the attack in Canterbury Cathedral?",
+          "options": [
+            "He fled onto the cathedral roof",
+            "His arm was deeply cut when he threw it forward to block the first sword blow",
+            "He locked the four knights inside the crypt",
+            "He rode to London to warn King Henry II"
+          ],
+          "correctIndex": 1,
+          "feedback": "Grim stood bravely beside Becket and nearly had his arm severed trying to turn aside the first descending sword stroke."
+        },
+        {
+          "question": "What had the four knights demanded Thomas Becket do immediately before attacking him?",
+          "options": [
+            "Hand over the Domesday Chest",
+            "Lift the excommunication ban he had placed on the King’s bishops",
+            "Pay scutage shield-money",
+            "Crown Prince John as king"
+          ],
+          "correctIndex": 1,
+          "feedback": "Becket had excommunicated the bishops who crowned Henry II’s son without Canterbury’s permission, and he refused to back down."
+        },
+        {
+          "question": "How did King Henry II publicly show sorrow for Becket’s murder in 1174?",
+          "options": [
+            "He pulled down Canterbury Cathedral",
+            "He walked barefoot through Canterbury and let monks whip his back in penance",
+            "He gave Normandy to France",
+            "He abolished royal courts forever"
+          ],
+          "correctIndex": 1,
+          "feedback": "To win back the Church’s support, Henry II walked barefoot to Becket’s tomb and accepted public penance."
+        }
+      ],
+      "monday_cold_call": {
+        "question": "Why is Edward Grim such a vivid eyewitness for 29 December 1170, and why did Becket’s murder backfire on Henry II?",
+        "answer": "Grim stood beside Becket and had his own arm cut blocking the first sword blow; outraged Christendom revered Saint Thomas, forcing Henry II into barefoot penance."
+      },
+      "hinge_question": "<strong>Think:</strong> Why did Becket refuse to lock the cathedral doors?<br><br><strong>Pair:</strong> Look at the c. 1220 manuscript painting on the cover: spot Edward Grim holding the cross while the sword strikes.<br><br><strong>Share:</strong> Who won the struggle between Crown and Church after 1170: Henry II or Becket?",
       "questions": [
         "Why did Thomas Becket order the monks not to bolt the cathedral doors?",
-        "What accusation did the four knights shout when they entered Canterbury Cathedral?",
-        "How was eyewitness author Edward Grim injured during the attack?"
+        "What accusation did the four knights shout when they burst in?",
+        "How was eyewitness Edward Grim wounded during the attack?"
       ],
       "audio_file": "/audio/reading/medieval_england/r2.mp3",
       "studio_audio": "/audio/reading/medieval_england/r2.mp3",
-      "studio_voice_label": "Studio Male Historian · Primary Chronicle",
-      "provenance_tier": "adapted_primary",
-      "provenance_note": "Translated from Latin and abridged for KS3 reading aloud from eyewitness Edward Grim’s c. 1172 account at Canterbury.",
-      "short_tab_title": "3. Grim: Becket’s Murder (1170)"
+      "studio_voice_label": "Studio Male Historian · Primary Chronicle"
     },
     {
       "lesson_index": 3,
       "lesson_id": "lesson_4",
       "lesson_label": "Enquiry 4",
-      "book_title": "Flores Historiarum & Magna Carta: Confrontation at Runnymede (June 1215)",
-      "author": "Roger of Wendover (St Albans Chronicle, c. 1235) & Magna Carta Clauses 12, 39 & 61",
+      "short_tab_title": "4. John at Runnymede (1215)",
+      "literary_mode": "storied_micro_history",
+      "provenance_tier": "storied_micro_history",
+      "source_type": "storied_micro_history",
+      "source_type_label": "True Historical Story (15 June 1215)",
+      "is_primary": false,
+      "is_adapted": false,
+      "book_title": "Cornered in the Water-Meadow: King John & Magna Carta at Runnymede",
+      "author": "The History Revision Hub (Grounded in Roger of Wendover & Magna Carta 1215)",
+      "provenance_note": "True historical micro-story combining St Albans chronicler Roger of Wendover’s account with Clause 39 of the 1215 Great Charter.",
+      "author_context": "After losing Normandy to France, quarrelling with the Pope, and demanding heavy scutage taxes eleven times, King John lost London to rebel barons in May 1215. Cornered beside the Thames at Runnymede on 15 June 1215, John had to authorize the Great Seal on Magna Carta.",
       "cover_image": "/images/ks3_med7/med7_l4_b3_king_john_magna_carta_runnymede_1215.jpg",
-      "cover_caption": "James William Edmund Doyle, John Signs the Great Charter (1864): King John confronted by armed rebel barons and Archbishop Stephen Langton in the meadow of Runnymede on 15 June 1215.",
-      "author_context": "Roger of Wendover (died 1236) was the chronicler of St Albans Abbey, a great monastery just north of London through which royal officials and rebel barons constantly passed. Paired here with the translated Latin text of the Great Charter sealed at Runnymede on 15 June 1215, his account captures how military defeat in France and crushing scutage taxes forced King John to accept the rule of law.",
-      "source_type": "primary_decree",
-      "source_type_label": "Royal Charter & St Albans Chronicle (1215)",
-      "is_primary": true,
-      "is_adapted": true,
-      "extract": "Roger of Wendover records how England’s barons renounced their fealty in the spring of 1215 after years of arbitrary fines, lost wars in Normandy, and heavy scutage taxes: \"Gathering an army styling itself the Army of God and Holy Church, the barons marched upon London, whose citizens opened the city gates to them. Seeing himself deserted by almost all his knights save a handful of foreign mercenaries, King John met the barons in the water-meadow called Runnymede, between Windsor and Staines, on the fifteenth day of June.\"\n\nThere the King’s Great Seal was pressed into wax beneath the clauses of Magna Carta:\n\"Clause 12: No scutage or aid shall be imposed in our kingdom unless by the common counsel of our kingdom...\"\n\"Clause 39: No free man shall be seized or imprisoned, or stripped of his rights or possessions, or outlawed or exiled, nor will we proceed with force against him, except by the lawful judgment of his equals or by the law of the land.\"\n\"Clause 40: To no one will we sell, to no one deny or delay right or justice.\"\n\"Clause 61: The barons shall choose any twenty-five barons of the kingdom to observe, hold, and cause to be observed the peace and liberties which we have granted.\"",
+      "cover_caption": "James William Edmund Doyle, John Signs the Great Charter (1864): Armed rebel barons and Archbishop Stephen Langton confront King John inside a pavilion at Runnymede (note: medieval charters were sealed in wax rather than signed with a pen).",
       "vocabVault": [
         {
+          "term": "Runnymede",
+          "pronunciation": "RUN-ee-meed",
+          "def": "The boggy water-meadow beside the River Thames near Windsor where King John agreed to Magna Carta in June 1215."
+        },
+        {
           "term": "Scutage",
-          "def": "\"Shield money\"—a feudal tax demanded by King John instead of military service, which he levied eleven times to fund failed wars."
+          "pronunciation": "SKOO-tij",
+          "def": "\"Shield money\"—a heavy feudal tax King John demanded eleven times to pay for failed foreign wars."
+        },
+        {
+          "term": "Magna Carta",
+          "pronunciation": "MAG-nuh KAR-tuh",
+          "def": "Latin for \"The Great Charter\" (1215), placing the English king beneath the rule of law."
         },
         {
           "term": "Free Man",
-          "def": "In 1215, landowners, knights, barons, and townsmen who were not unfree peasant villeins tied to a lord’s manor."
-        },
-        {
-          "term": "Rule of Law",
-          "def": "The constitutional principle that even the monarch must obey the law rather than ruling by personal whim."
-        },
-        {
-          "term": "Runnymede",
-          "def": "The water-meadow beside the River Thames near Windsor where King John agreed to Magna Carta on 15 June 1215."
+          "pronunciation": "FREE MAN",
+          "def": "In 1215, barons, knights, and free townsmen—leaving out the unfree peasant villeins who farmed most manors."
         }
       ],
+      "extract": "On the morning of 15 June 1215, bright silk tents fluttered across the wet meadow of Runnymede beside the River Thames. Inside the royal tent sat King John, hiding his anger behind a tight smile. For once in his reign, the King of England was trapped.\n\nOver sixteen bitter years, John had lost Normandy to France and quarrelled with the Pope. Worse still, he starved noble hostages in dungeons and demanded \"scutage\" shield-taxes eleven times. That May, rebel lords calling themselves the \"Army of God\" marched straight into London after citizens threw open the city gates. Deserted by nearly all his knights, John had to bargain.\n\nWatched by Archbishop Stephen Langton and ranks of mailed barons, royal clerks pressed the heavy Great Seal into beeswax. Those sixty-three Latin rules became known as <em>Magna Carta</em>. Clause 39 laid down a famous promise. \"No free man shall be seized or imprisoned, or stripped of his rights, except by the lawful judgment of his equals or by the law of the land.\"\n\nIn 1215, that promise left out unfree peasant serfs, and John soon asked the Pope to cancel the charter. Even so, for the first time in writing, England’s king stood beneath the law.",
       "parent_discussion": [
         {
-          "question": "Why had England’s barons grown furious enough with King John to capture London in 1215?",
-          "answer": "John had lost Normandy to France, demanded repeated scutage taxes, seized barons’ castles and hostages without trial, and quarrelled with the Pope."
+          "question": "Which dramatic event in May 1215 finally forced King John to meet the rebel barons at Runnymede?",
+          "answer": "Londoners threw open the city gates to the rebel \"Army of God,\" leaving John isolated without money or English knights."
         },
         {
-          "question": "Why did Clauses 39 and 40 not immediately give rights to everyone living in England in 1215?",
-          "answer": "Clause 39 applied only to \"free men\" (barons, knights, and freemen), leaving out the majority of English peasants who were unfree villeins."
+          "question": "Look closely at the 1864 Victorian picture on the cover: what historical mistake did the Victorian artist make in showing King John with a quill pen?",
+          "answer": "King John did not sign Magna Carta with a pen—royal clerks authenticated medieval charters by pressing the heavy metal Great Seal into beeswax!"
         },
         {
-          "question": "Even if the barons in 1215 mainly wanted to protect their own wealth (plus Clause 61’s committee of 25 barons), why did Magna Carta become world-famous?",
-          "answer": "It established in writing that the king is beneath the law, cannot imprison people without fair trial, and cannot tax the realm without common consent."
+          "question": "Why wasn’t Magna Carta full democracy in 1215, and why did it still become world-famous?",
+          "answer": "Clause 39 only protected \"free men\" (ignoring unfree serfs), yet it proved in writing that no ruler is above the law or fair trial."
         }
       ],
-      "hinge_question": "<strong>Think:</strong> Which event forced King John to negotiate at Runnymede in June 1215?<br><br><strong>Pair:</strong> Look closely at Clause 39 and Clause 61: which clause lasted for 800 years, and which clause caused civil war within months?<br><br><strong>Share:</strong> Was Magna Carta a timeless charter of human liberty or a feudal barons’ power grab?",
+      "story_check": [
+        {
+          "question": "Which city threw open its gates to the rebel barons in May 1215, trapping King John?",
+          "options": [
+            "York",
+            "London",
+            "Winchester",
+            "Canterbury"
+          ],
+          "correctIndex": 1,
+          "feedback": "Capturing London cut King John off from his main treasury and forced him to negotiate at nearby Runnymede."
+        },
+        {
+          "question": "How was Magna Carta made official at Runnymede in June 1215?",
+          "options": [
+            "Every peasant in England voted on it",
+            "Royal clerks pressed the King’s Great Seal into beeswax",
+            "King John carved his initials into stone",
+            "The Pope read it aloud in Rome"
+          ],
+          "correctIndex": 1,
+          "feedback": "Medieval charters were sealed with the royal Great Seal in wax, not signed with ink signatures."
+        },
+        {
+          "question": "Who was left OUT of Clause 39’s famous promise of fair trial in 1215?",
+          "options": [
+            "Wealthy Norman barons",
+            "Unfree peasant villeins (serfs) tied to a lord’s manor",
+            "London merchants",
+            "English knights"
+          ],
+          "correctIndex": 1,
+          "feedback": "Clause 39 applied specifically to \"free men,\" excluding the majority of English villagers who were unfree villeins."
+        }
+      ],
+      "monday_cold_call": {
+        "question": "What did Clause 39 of Magna Carta (1215) promise, and which large group in medieval England did \"free man\" leave out?",
+        "answer": "No free man could be imprisoned or stripped of rights without lawful trial by his equals; it left out unfree peasant villeins (serfs)."
+      },
+      "hinge_question": "<strong>Think:</strong> Why had England’s barons rebelled against King John by 1215?<br><br><strong>Pair:</strong> Spot the Victorian artist’s mistake in the cover picture—did John sign with a pen or seal with wax?<br><br><strong>Share:</strong> Was Magna Carta a selfish barons’ deal or the birth of British liberty?",
       "questions": [
-        "Which city opened its gates to the rebel barons, leaving King John isolated in 1215?",
-        "According to Clause 39, who was protected against imprisonment without lawful judgment?",
-        "How many barons did Clause 61 appoint to watch over King John and enforce the charter?"
+        "What forced King John to negotiate in the meadow of Runnymede in June 1215?",
+        "What famous right did Clause 39 guarantee to \"free men\"?",
+        "Who was excluded from the words \"free man\" in 1215?"
       ],
       "audio_file": "/audio/reading/medieval_england/r3.mp3",
       "studio_audio": "/audio/reading/medieval_england/r3.mp3",
-      "studio_voice_label": "Studio Male Historian · Archival Reading",
-      "provenance_tier": "adapted_primary",
-      "provenance_note": "Combines translated clauses of Magna Carta (1215) with Roger of Wendover’s St Albans chronicle account.",
-      "short_tab_title": "4. Wendover: Runnymede (1215)"
+      "studio_voice_label": "Studio Male Historian · Storied History"
     },
     {
       "lesson_index": 4,
       "lesson_id": "lesson_5",
       "lesson_label": "Enquiry 5",
-      "book_title": "Historia Anglicana: John Ball’s Blackheath Sermon & the 1381 Rising",
-      "author": "Thomas Walsingham (St Albans Abbey Chronicle, c. 1381–1394)",
-      "cover_image": "/images/medieval_england/source_c_john_ball_preaching.jpg",
-      "cover_caption": "Jean Froissart, Chroniques (c. 1470–1475, British Library Royal MS 18 E I, f. 165v): Radical priest John Ball ('Jehan Balle') preaching equality to Wat Tyler ('Waultre le Tieulier') and the rebel host at Blackheath in June 1381.",
-      "author_context": "After the Black Death (1348–1349) killed between a third and half of England’s population, surviving peasants realised their labour was scarce—yet lords enforced the 1351 Statute of Labourers to freeze wages and imposed three flat-rate Poll Taxes between 1377 and 1381. Monastic chronicler Thomas Walsingham of St Albans disliked the rebels intensely, yet preserved the revolutionary words preached by radical priest John Ball at Blackheath on 12 June 1381.",
-      "source_type": "primary_chronicle",
-      "source_type_label": "Contemporary Monastic Chronicle (c. 1381–1394)",
+      "short_tab_title": "5. When Adam Delved (1381)",
+      "literary_mode": "verbatim_literature",
+      "provenance_tier": "verbatim_literature",
+      "source_type": "literary_verse",
+      "source_type_label": "14th-Century Verse & Rebel Couplet (1381–1387)",
       "is_primary": true,
-      "is_adapted": true,
-      "extract": "\"After the Commons of Kent and Essex had broken open Maidstone gaol and freed the priest John Ball, a vast multitude of country folk gathered upon Blackheath overlooking London. Taking for his text the rhyme that had passed secretly from village to village, John Ball preached thus to the throng:\n\n'When Adam delved [dug] and Eve span [spun wool], who was then the gentleman? From the beginning all human beings were created equal by nature; bondage and serfdom were brought in not by God’s will, but by the unjust oppression of wicked men! Now is the hour given to you by God, if you have the courage, to cast off the heavy yoke of villeinage that you have borne so long, and win the liberty you have always desired.'\n\nStirred by his words and enraged by the collectors of the third Poll Tax, the rebels marched under Wat Tyler across London Bridge, burned the legal manor rolls that recorded their unfree birth, and demanded of fourteen-year-old King Richard II at Mile End that no man in England should henceforth be a serf.\"",
+      "is_adapted": false,
+      "book_title": "\"When Adam Delved and Eve Span\": Chaucer’s Ploughman & John Ball’s Rebel Verse",
+      "author": "John Ball (1381 Blackheath Couplet) & Geoffrey Chaucer (The Canterbury Tales, c. 1387)",
+      "provenance_note": "Pairs Geoffrey Chaucer’s 14th-century verse portrait of the English Ploughman (modernised spelling) with radical priest John Ball’s famous 1381 rebel couplet.",
+      "author_context": "After the 1348 Black Death halved England’s workforce, lords froze wages by law and demanded three flat-rate Poll Taxes between 1377 and 1381. While poet Geoffrey Chaucer praised hard-working ploughmen, radical priest John Ball turned a two-line rhyme into dynamite during the June 1381 Peasants’ Revolt!",
+      "cover_image": "/images/medieval_england/source_c_john_ball_preaching.jpg",
+      "cover_caption": "Jean Froissart, Chroniques (c. 1470s, British Library Royal MS 18 E I): Priest John Ball ('Jehan Balle') on horseback preaches to Wat Tyler ('Waultre le Tieulier') and armed rebels in June 1381.",
       "vocabVault": [
         {
-          "term": "Villeinage (Serfdom)",
-          "def": "Unfree feudal status tying peasants to their lord’s manor, requiring unpaid week-work and fines for permission to marry or move."
+          "term": "Swinker",
+          "pronunciation": "SWINK-er",
+          "def": "Chaucer’s Middle English word for an honest, hard-working farm labourer."
+        },
+        {
+          "term": "Delved",
+          "pronunciation": "DELVD",
+          "def": "Dug and turned the soil with a spade—just as biblical Adam farmed the earth."
+        },
+        {
+          "term": "Villeinage",
+          "pronunciation": "VIL-uh-nij",
+          "def": "Unfree serfdom tying peasant families to a lord’s manor for unpaid labour and fines."
         },
         {
           "term": "Poll Tax",
-          "def": "The hated flat-rate \"head tax\" of 1381 in which a poor farm labourer had to pay the exact same twelve pence (three groats) as a wealthy lord."
-        },
-        {
-          "term": "Manor Rolls",
-          "def": "Written parchment court records held by lords that proved which families owed unfree feudal labour."
-        },
-        {
-          "term": "Feudalism",
-          "def": "The medieval hierarchy exchanging land for loyalty, knight-service, and peasant labour."
+          "pronunciation": "POHL TAKS",
+          "def": "The hated 1381 \"head tax\" forcing a poor villager to pay the exact same twelve pence as a rich duke."
         }
       ],
+      "extract": "After the Black Death wiped out nearly half of England’s people, surviving villagers knew their farm work was scarce and valuable. Yet Parliament froze wages by law and demanded three unfair Poll Taxes, charging poor labourers the exact same twelve pence as wealthy lords!\n\nIn fourteenth-century poetry, Geoffrey Chaucer honoured the quiet dignity of ordinary country workers in <em>The Canterbury Tales</em>.\n\n<div class=\"reading-stanza\">\"With him there was a Ploughman, was his brother,<br>That had hauled of dung full many a cartload.<br>A true swinker and a good was he,<br>Living in peace and perfect charity.\"</div>\n\nBy June 1381, however, patience snapped across Essex and Kent. After rebels broke open Maidstone prison to free radical priest John Ball, thousands gathered on Blackheath hill overlooking London. Before the roaring crowd, Ball cried out the two-line rebel rhyme that echoed from village to village.\n\n<div class=\"reading-stanza\">\"When Adam delved and Eve span,<br>Who was then the gentleman?\"</div>\n\nIn Eden, Ball preached, God made no lords and no serfs! Led by Wat Tyler, the rebels crossed London Bridge, burned the manor rolls recording their serfdom, and demanded freedom from fourteen-year-old King Richard II.",
       "parent_discussion": [
         {
-          "question": "What did John Ball mean by his famous question, \"When Adam delved and Eve span, who was then the gentleman?\"",
-          "answer": "In the biblical Garden of Eden there were no lords or serfs—so class inequality and serfdom were invented by human greed, not ordained by God."
+          "question": "How does Geoffrey Chaucer’s short verse describe the medieval English Ploughman?",
+          "answer": "Even though he hauled heavy cartloads of manure in the fields, Chaucer praises him as an honest hard worker (\"true swinker\") living in peace and Christian kindness."
         },
         {
-          "question": "How were the Black Death of 1348 and the Peasants’ Revolt of 1381 directly connected?",
-          "answer": "The plague created a severe shortage of workers; when Parliament blocked rising wages (1351 Statute of Labourers) and added unfair Poll Taxes, emboldened peasants rebelled."
+          "question": "What clever argument did John Ball pack into his two-line rhyme, \"When Adam delved and Eve span, Who was then the gentleman?\"?",
+          "answer": "When Adam dug and Eve spun wool at Creation, no nobles existed—proving serfdom and class inequality were invented by greedy men, not God."
         },
         {
-          "question": "Why did the rebels in 1381 deliberately target and burn parchment manor rolls rather than looting randomly?",
-          "answer": "Burning the written legal records of villeinage showed they had clear political goals: erasing proof of unfree serfdom so they could rent land freely for cash wages."
+          "question": "Why did the 1381 rebels carefully target and burn parchment manor rolls instead of looting at random?",
+          "answer": "Manor rolls held the legal proof of which families were unfree villeins; burning them erased serfdom on paper so peasants could demand free wages."
         }
       ],
-      "hinge_question": "<strong>Think:</strong> Why was the 1381 Poll Tax considered far more unfair than normal taxes?<br><br><strong>Pair:</strong> Thomas Walsingham was a wealthy abbey chronicler whose own monastery owned serfs—how might that bias his attitude toward Wat Tyler and John Ball?<br><br><strong>Share:</strong> Even though Wat Tyler and John Ball were killed in 1381, why had serfdom largely disappeared across England within seventy years?",
+      "story_check": [
+        {
+          "question": "What does Chaucer’s Middle English word \"swinker\" mean in his verse about the Ploughman?",
+          "options": [
+            "A royal tax collector",
+            "A hard-working labourer",
+            "A castle knight",
+            "A wealthy wool merchant"
+          ],
+          "correctIndex": 1,
+          "feedback": "From Middle English swinken (to toil), a \"true swinker\" meant an honest, hard-working farm labourer."
+        },
+        {
+          "question": "Why was the 1381 Poll Tax hated far more fiercely than earlier medieval taxes?",
+          "options": [
+            "Only priests had to pay it",
+            "Every adult had to pay the exact same flat rate of twelve pence, rich or poor",
+            "It taxed French wine imports",
+            "It paid for aqueducts in London"
+          ],
+          "correctIndex": 1,
+          "feedback": "Charging a poor farm worker the exact same twelve pence (three groats) as a rich lord felt deeply unjust."
+        },
+        {
+          "question": "Which legal documents did Wat Tyler’s rebels deliberately burn during the June 1381 rising?",
+          "options": [
+            "Copies of Magna Carta",
+            "Parchment manor rolls that recorded which families were unfree serfs",
+            "Chaucer’s poetry books",
+            "Canterbury Priory’s water maps"
+          ],
+          "correctIndex": 1,
+          "feedback": "Rebels burned manor court rolls to destroy the written legal proof of villeinage (serfdom)."
+        }
+      ],
+      "monday_cold_call": {
+        "question": "Recite John Ball’s famous 1381 couplet—\"When Adam delved and Eve span...\"—and explain what it meant!",
+        "answer": "\"...Who was then the gentleman?\" It argued all humans were created equal by God, so serfdom was a human injustice."
+      },
+      "hinge_question": "<strong>Think:</strong> How did the 1348 Black Death help cause the 1381 Peasants’ Revolt?<br><br><strong>Pair:</strong> Look at the Froissart manuscript painting on the cover: locate 'Jehan Balle' and 'Waultre le Tieulier' (Wat Tyler).<br><br><strong>Share:</strong> Even though Wat Tyler and John Ball were executed in 1381, why had serfdom vanished across most of England within seventy years?",
       "questions": [
-        "Which prison did the Kent rebels break open to free the priest John Ball?",
-        "Quote the famous opening rhyme of John Ball’s sermon at Blackheath.",
-        "Which specific documents did the rebels burn to destroy proof of their unfree status?"
+        "What does Chaucer call his hard-working Ploughman in The Canterbury Tales?",
+        "Quote John Ball’s famous two-line rhyme preached at Blackheath in June 1381.",
+        "Why did the rebels burn manor court rolls during the Peasants’ Revolt?"
       ],
       "audio_file": "/audio/reading/medieval_england/r4.mp3",
       "studio_audio": "/audio/reading/medieval_england/r4.mp3",
-      "studio_voice_label": "Studio Male Historian · Primary Chronicle",
-      "provenance_tier": "adapted_primary",
-      "provenance_note": "Translated and condensed for KS3 reading aloud from Thomas Walsingham’s chronicle of the 1381 Peasants’ Revolt.",
-      "short_tab_title": "5. John Ball: Blackheath (1381)"
+      "studio_voice_label": "Studio Male Historian · Classic Literature"
     }
   ]
 };

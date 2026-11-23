@@ -1,0 +1,53 @@
+{
+  "unitId": "ks2_maya_civilisation",
+  "clips": {
+    "r0": {
+      "hash": "e99b0fd82bae5aebe3dbdcf5",
+      "bytes": 312428,
+      "voiceKey": "male_historian",
+      "badge": "Studio Male Historian · KS2 Storyteller",
+      "words": 154,
+      "updatedAt": "2026-11-23T18:33:44.237Z"
+    },
+    "r1": {
+      "hash": "43cb20e2d408c38985c2bc00",
+      "bytes": 338060,
+      "voiceKey": "male_historian",
+      "badge": "Studio Male Historian · KS2 Storyteller",
+      "words": 161,
+      "updatedAt": "2026-11-23T18:33:44.934Z"
+    },
+    "r4": {
+      "hash": "dd6010ca850079da2ba5ebd3",
+      "bytes": 322028,
+      "voiceKey": "male_historian",
+      "badge": "Studio Male Historian · KS2 Storyteller",
+      "words": 155,
+      "updatedAt": "2026-11-23T18:33:46.792Z"
+    },
+    "r5": {
+      "hash": "8cde2279619f44b9de083acb",
+      "bytes": 324428,
+      "voiceKey": "male_historian",
+      "badge": "Studio Male Historian · KS2 Storyteller",
+      "words": 151,
+      "updatedAt": "2026-11-23T18:33:47.467Z"
+    },
+    "r2": {
+      "hash": "139adeb01284d27e1a64948a",
+      "bytes": 332972,
+      "voiceKey": "male_historian",
+      "badge": "Studio Male Historian · KS2 Storyteller",
+      "words": 151,
+      "updatedAt": "2026-11-23T18:33:53.258Z"
+    },
+    "r3": {
+      "hash": "4d7ae118a7dabe3c280c17b7",
+      "bytes": 278252,
+      "voiceKey": "male_historian",
+      "badge": "Studio Male Historian · KS2 Storyteller",
+      "words": 153,
+      "updatedAt": "2026-11-23T18:33:53.894Z"
+    }
+  }
+}

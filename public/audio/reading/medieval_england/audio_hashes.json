@@ -2,44 +2,44 @@
   "unitId": "medieval_england",
   "clips": {
     "r1": {
-      "hash": "ccc34731847940810192262e",
-      "bytes": 313772,
-      "voiceKey": "male_historian",
-      "badge": "Studio Male Historian · Primary Chronicle",
-      "words": 172,
-      "updatedAt": "2026-11-20T16:28:44.905Z"
+      "hash": "31eee42c4beefef9345c7d5a",
+      "bytes": 329708,
+      "voiceKey": "female_historian",
+      "badge": "Studio Female Historian · Storied History",
+      "words": 186,
+      "updatedAt": "2026-11-23T18:46:16.615Z"
     },
     "r2": {
-      "hash": "0fa9f35887ce227da1be1475",
-      "bytes": 336908,
+      "hash": "e9f8c78b7d72a6291feec2f0",
+      "bytes": 322412,
       "voiceKey": "male_historian",
       "badge": "Studio Male Historian · Primary Chronicle",
-      "words": 212,
-      "updatedAt": "2026-11-20T16:28:45.627Z"
+      "words": 203,
+      "updatedAt": "2026-11-23T18:35:11.273Z"
     },
     "r0": {
-      "hash": "6f79d47ffc06c672d6051faa",
-      "bytes": 308588,
+      "hash": "51a049127d00af4f2b19382e",
+      "bytes": 322412,
       "voiceKey": "male_historian",
-      "badge": "Studio Male Historian · Primary Chronicle",
-      "words": 198,
-      "updatedAt": "2026-11-20T16:28:52.013Z"
+      "badge": "Studio Male Historian · Storied History",
+      "words": 194,
+      "updatedAt": "2026-11-23T18:35:08.363Z"
     },
     "r3": {
-      "hash": "3bbde87a0721be0556859bff",
-      "bytes": 379532,
+      "hash": "0006afa69c5d5ecdde89838d",
+      "bytes": 336908,
       "voiceKey": "male_historian",
-      "badge": "Studio Male Historian · Archival Reading",
-      "words": 212,
-      "updatedAt": "2026-11-20T16:28:53.061Z"
+      "badge": "Studio Male Historian · Storied History",
+      "words": 204,
+      "updatedAt": "2026-11-23T18:35:12.044Z"
     },
     "r4": {
-      "hash": "5dbb3c5d457babc56b9318d4",
-      "bytes": 291308,
+      "hash": "6ccc8e3f8a121687544d71bc",
+      "bytes": 351788,
       "voiceKey": "male_historian",
-      "badge": "Studio Male Historian · Primary Chronicle",
-      "words": 182,
-      "updatedAt": "2026-11-20T16:28:53.708Z"
+      "badge": "Studio Male Historian · Classic Literature",
+      "words": 185,
+      "updatedAt": "2026-11-23T18:35:16.289Z"
     }
   }
 }

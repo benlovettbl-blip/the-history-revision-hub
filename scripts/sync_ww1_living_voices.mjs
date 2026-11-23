@@ -54,6 +54,8 @@ export function extractReadingBodyHtml(rawExtract) {
 
 export function cleanTextForSpeech(rawHtml) {
   const pre = String(rawHtml || '')
+    .replace(/(?:<br\s*\/?>\s*){2,}|\n\n+/gi, ' <short pause> ')
+    .replace(/([A-Za-z0-9"”'])\s*<br\s*\/?>/gi, '$1, ')
     .replace(/<br\s*\/?>/gi, ' ')
     .replace(/<[^>]+>/g, ' ')
     .replace(/&amp;/gi, ' and ')
@@ -98,38 +100,38 @@ const GUIDED_READING_CAST = {
     badge: 'Edwardian Yachtsman · Erskine Childers',
   },
   'great_war:3': {
-    voiceKey: 'female_historian',
-    style: 'crisp, gripping narrative historian building the diplomatic tension of August 1914',
-    badge: 'Studio Historian · Barbara W. Tuchman',
+    voiceKey: 'male_historian',
+    style: 'gripping, vivid British narrative historian recounting the fateful wrong turn in Sarajevo on 28 June 1914',
+    badge: 'Studio Historian · Sarajevo Micro-Story',
   },
   'great_war:4': {
-    voiceKey: 'ww1_german_voice',
-    style: 'quiet, haunted young German soldier reflecting with sorrow on lost youth in the trenches',
-    badge: 'Paul Bäumer · Young German Soldier',
+    voiceKey: 'ww1_british_officer',
+    style: 'expressive, poignant British war-poetry narrator contrasting Rupert Brooke with Siegfried Sassoon',
+    badge: 'War Poets · Brooke vs Sassoon',
   },
   'great_war:5': {
-    voiceKey: 'male_historian',
-    style: 'authoritative, balanced British documentary historian weighing Fritz Fischer against Christopher Clark on July 1914',
-    badge: 'Studio Historian · Fischer vs Clark Debate',
+    voiceKey: 'female_historian',
+    style: 'observant, moving British documentary narrator reading August 1914 mobilisation eyewitness diaries',
+    badge: 'Eyewitness · August 1914 Mobilisation',
   },
   'great_war_part2:0': {
     voiceKey: 'ww1_british_officer',
-    style: 'weary, understated young British infantry officer contrasting peaceful England with the trenches',
-    badge: 'Lt. Siegfried Sassoon · Infantry Officer',
+    style: 'haunted, resonant young British infantry officer reciting Wilfred Owen’s Dulce et Decorum Est with quiet intensity',
+    badge: 'Lt. Wilfred Owen · War Poetry',
   },
   'great_war_part2:1': {
-    voiceKey: 'ww1_german_voice',
-    style: 'taut, steel-nerved German frontline officer describing intense artillery bombardment',
-    badge: 'Lt. Ernst Jünger · German Frontline',
+    voiceKey: 'male_historian',
+    style: 'vivid, measured British narrative historian tracing the Somme whistles of July 1916 to combined-arms victory at Amiens',
+    badge: 'Studio Historian · Somme to Amiens',
   },
   'great_war_part2:2': {
     voiceKey: 'ww1_indian_sepoy',
-    style: 'warm, dignified Indian Army Subadar reading heartfelt wartime letters home from Brighton and Flanders',
-    badge: 'Garhwali Subadar · Indian Army Letters',
+    style: 'warm, dignified Indian Army Havildar reading heartfelt wartime letters home from Brighton and Flanders',
+    badge: 'Havildar Abdul Rahman · Indian Army Letters',
   },
   'great_war_part2:3': {
     voiceKey: 'ww1_british_woman',
-    style: 'earnest, compassionate young English VAD nurse recalling hospital wards in London and Étaples',
+    style: 'earnest, compassionate young English VAD nurse recalling hospital wards in Étaples alongside Home Front munitions workers',
     badge: 'Vera Brittain · Wartime VAD Nurse',
   },
   'great_war_part2:4': {

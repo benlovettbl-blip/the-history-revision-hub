@@ -5217,5 +5217,583 @@ window.UNIT_DATA = {
         "Provides vivid archaeological proof—alongside North African Aurelian Moors at Burgh-by-Sands—that Roman Britain connected people across Europe, North Africa, and the Middle East."
       ]
     }
+  ],
+  "guided_reading": [
+    {
+      "lesson_index": 0,
+      "lesson_id": "lesson_1",
+      "lesson_label": "Enquiry 1",
+      "short_tab_title": "High on Maiden Castle",
+      "literary_mode": "storied_micro_history",
+      "provenance_tier": "storied_micro_history",
+      "source_type": "micro_history",
+      "source_type_label": "True Archaeological Story",
+      "book_title": "Ramparts of Chalk and Gold: Inside Maiden Castle Hillfort",
+      "author": "The History Revision Hub (from Mortimer Wheeler's Dorset Excavations)",
+      "provenance_note": "Original true micro-history grounded in Sir Mortimer Wheeler's 1934–1937 excavations at Maiden Castle, Dorset, experimental roundhouses at Butser Ancient Farm, and British Museum torc hoards.",
+      "author_context": "Before Roman legions conquered Britain, Iron Age Celtic tribes built Europe's largest earth hillforts, engineered snug chimney-free roundhouses, and twisted pure gold into gleaming torcs.",
+      "cover_image": "/images/upgraded/ks2-ancient/romans_l1_src0_maiden_castle_ramparts.jpg",
+      "cover_caption": "The giant grass-covered chalk ramparts and deep defensive ditch of Maiden Castle Iron Age hillfort in Dorset.",
+      "vocabVault": [
+        {
+          "term": "Hillfort",
+          "pronunciation": "HIL-fort",
+          "def": "A hilltop settlement ringed by steep earth banks, deep ditches, and wooden fences to guard families and grain."
+        },
+        {
+          "term": "Ramparts",
+          "pronunciation": "RAM-parts",
+          "def": "Steep defensive walls of heaped chalk and earth surrounding an Iron Age hillfort like giant waves."
+        },
+        {
+          "term": "Wattle and Daub",
+          "pronunciation": "WOT-ul and DAWB",
+          "def": "Woven hazel sticks plastered with sticky clay, mud, and straw to build warm roundhouse walls."
+        },
+        {
+          "term": "Torc",
+          "pronunciation": "TORK",
+          "def": "A heavy, twisted neck ring of gold or bronze worn by proud Celtic leaders and warriors."
+        }
+      ],
+      "extract": "Long before Roman boots marched into Dorset, Celtic builders crowned a high ridge with Maiden Castle hillfort. Digging with antler picks and iron shovels, workers heaped up triple chalk ramparts higher than houses!\n\nWinding gates forced any raider to twist and turn below tall wooden watchtowers. High on the banks, guards kept piles of smooth beach pebbles ready for leather slings.\n\nInside those steep walls stood hundreds of roundhouses with clay wattle-and-daub walls and cone straw roofs. Clever builders left no chimney hole, since wind would blow red sparks into dry thatch! Instead, gentle smoke drifted up to cure meat in the rafters and chase bugs away. Down by the fire, children spun heavy quern stones to grind wheat into flour.\n\nCeltic Britons were proud craftworkers, never rough cavemen. Smiths twisted pure gold wires into heavy neck torcs and set red glass into bronze shields. Meanwhile, wooden ships carried Cornish tin and wheat across the Channel, tempting greedy eyes in Rome!",
+      "parent_discussion": [
+        {
+          "question": "How did Maiden Castle's maze-like gateways and pebble piles protect families living inside the hillfort?",
+          "answer": "Raiders had to twist slowly through steep earth banks while defenders high above hurled smooth beach pebbles from leather slings."
+        },
+        {
+          "question": "Why was leaving NO chimney hole in a thatched roundhouse roof actually a clever piece of Iron Age engineering?",
+          "answer": "A chimney hole would pull wind through and blow sparks into dry straw, whereas gentle smoke drifting through thatch cured meat and kept insects out."
+        },
+        {
+          "question": "How did busy Celtic trade across the English Channel accidentally tempt Rome to invade Britain?",
+          "answer": "Ships carrying Cornish tin, wheat, hides, and gold coins proved to Roman leaders just how rich island Britain really was."
+        }
+      ],
+      "story_check": [
+        {
+          "question": "Where in Britain can you still walk along the giant triple chalk ramparts of Maiden Castle hillfort?",
+          "options": [
+            "Dorset in southern England",
+            "Orkney in northern Scotland",
+            "Anglesey in north Wales",
+            "Wallsend on the River Tyne"
+          ],
+          "correctIndex": 0,
+          "feedback": "Spot on! Maiden Castle in Dorset remains one of the largest Iron Age hillforts anywhere in Europe."
+        },
+        {
+          "question": "Why did Iron Age builders deliberately leave no chimney hole at the top of a thatched roundhouse?",
+          "options": [
+            "They never lit fires indoors",
+            "A chimney wind-draught would blow sparks into the dry thatch, whereas slow smoke cured meat and chased bugs",
+            "Roman tax collectors counted chimneys",
+            "Rain never fell in Iron Age Britain"
+          ],
+          "correctIndex": 1,
+          "feedback": "Correct! Experimental roundhouses prove that leaving no chimney stopped roof fires while smoking meat in the rafters."
+        },
+        {
+          "question": "What precious metal neck ring did Celtic smiths twist from gold ropes for tribal leaders?",
+          "options": [
+            "A strigil",
+            "A pilum",
+            "A torc",
+            "A groma"
+          ],
+          "correctIndex": 2,
+          "feedback": "Exactly right! Wealthy Celtic rulers wore heavy twisted gold neck rings called torcs, such as the Snettisham Great Torc."
+        }
+      ],
+      "monday_cold_call": {
+        "question": "Why did an Iron Age thatched roundhouse have no chimney hole, and how was Maiden Castle defended?",
+        "answer": "Leaving no chimney stopped wind blowing sparks into dry straw while smoke cured meat, and Maiden Castle used steep chalk ramparts, maze gates, and slingshot pebbles."
+      },
+      "hinge_question": "When Roman writers called Celtic Britons 'uncivilised barbarians', what physical clues prove Rome was exaggerating?",
+      "studio_audio": "/audio/reading/ks2_romans/r0.mp3",
+      "studio_voice_label": "Studio Female Historian · KS2 Storyteller",
+      "audio_file": "/audio/reading/ks2_romans/r0.mp3"
+    },
+    {
+      "lesson_index": 1,
+      "lesson_id": "lesson_2",
+      "lesson_label": "Enquiry 2",
+      "short_tab_title": "Claudius's War Elephants",
+      "literary_mode": "storied_micro_history",
+      "provenance_tier": "storied_micro_history",
+      "source_type": "micro_history",
+      "source_type_label": "True Historical Story",
+      "book_title": "Hobnailed Boots and War Elephants at Camulodunum (AD 43)",
+      "author": "The History Revision Hub (from Cassius Dio Book LX & Suetonius)",
+      "provenance_note": "Original true historical story grounded in Roman historian Cassius Dio's Roman History (LX.19–22), Suetonius's Life of Claudius, and Claudius's Arch in Rome.",
+      "author_context": "Mocked by proud senators in Rome, Emperor Claudius gambled everything in AD 43 on conquering island Britain with 40,000 legionaries and a secret weapon.",
+      "cover_image": "/units/ks2_romans/assets/emperor_claudius_bust.jpg",
+      "cover_caption": "Roman marble portrait bust of Emperor Claudius, who ordered the AD 43 invasion of Britain and rode triumphantly into Colchester.",
+      "vocabVault": [
+        {
+          "term": "Emperor Claudius",
+          "pronunciation": "EM-per-er KLAW-dee-us",
+          "def": "The Roman ruler who launched the AD 43 invasion of Britain to win military glory and rich mines."
+        },
+        {
+          "term": "Testudo",
+          "pronunciation": "tes-TOO-doh",
+          "def": "The Roman 'tortoise' formation where legionaries locked curved shields overhead and in front against arrows."
+        },
+        {
+          "term": "Caratacus",
+          "pronunciation": "ka-RAT-uh-kus",
+          "def": "The brave British tribal prince who fought the invading Roman legions at the River Medway in AD 43."
+        },
+        {
+          "term": "Camulodunum",
+          "pronunciation": "kam-yoo-loh-DOO-num",
+          "def": "The powerful British capital at modern Colchester where Claudius accepted eleven kings' surrender."
+        }
+      ],
+      "extract": "In marble halls in Rome, proud men whispered nastily behind Emperor Claudius's back. Claudius walked with a limp, stammered when nervous, and had never led an army in war!\n\nOne bold prize could prove every critic wrong. Claudius planned to conquer rich Britain, where even great Julius Caesar had turned back! In AD 43, General Plautius sailed over with four legions of forty thousand troops.\n\nLanding at Richborough in Kent, soldiers marched twenty miles a day in nailed sandals. At the River Medway, brave prince Caratacus fought back for two fierce days. Still, calm Roman troops locked curved shields into tortoise walls and pushed on to the Thames.\n\nThere the army waited until Claudius sailed in from Italy with a huge shock. Towering grey war elephants marched ashore, scaring Celtic chariot horses with loud trumpet blasts! After just sixteen days in Britain, Claudius rode proudly into Camulodunum, modern Colchester, as eleven kings bowed to Rome.",
+      "parent_discussion": [
+        {
+          "question": "Why was Emperor Claudius so eager to win a famous battlefield victory in AD 43?",
+          "answer": "Proud Roman senators doubted him because he limped, stammered, and had never led an army, plus Britain had rich mines and wheat farms."
+        },
+        {
+          "question": "Why did General Aulus Plautius deliberately pause near the River Thames instead of capturing Camulodunum straight away?",
+          "answer": "He waited so Emperor Claudius could sail over in person with war elephants and claim the final glorious victory himself!"
+        },
+        {
+          "question": "Why were full-time Roman legionaries able to defeat brave Celtic warriors at the River Medway?",
+          "answer": "Legionaries trained every day as one disciplined team in iron strip armour, locking shields into tortoise formations rather than fighting as separate warbands."
+        }
+      ],
+      "story_check": [
+        {
+          "question": "In what year did Emperor Claudius launch the successful Roman invasion of Britain?",
+          "options": [
+            "55 BC",
+            "AD 43",
+            "AD 122",
+            "AD 410"
+          ],
+          "correctIndex": 1,
+          "feedback": "Spot on! Nearly a century after Julius Caesar's brief landings, Claudius invaded to stay in AD 43."
+        },
+        {
+          "question": "What astonishing animals did Claudius bring across to Britain that terrified Celtic chariot horses?",
+          "options": [
+            "Arabian camels",
+            "Woolly mammoths",
+            "War elephants",
+            "Spotted leopards"
+          ],
+          "correctIndex": 2,
+          "feedback": "Correct! Roman historian Cassius Dio recorded that Claudius brought war elephants across for the march on Camulodunum."
+        },
+        {
+          "question": "Which modern English town stands on the site of Camulodunum, where eleven kings surrendered to Claudius?",
+          "options": [
+            "Colchester",
+            "Manchester",
+            "Bath",
+            "York"
+          ],
+          "correctIndex": 0,
+          "feedback": "Exactly right! Camulodunum is modern Colchester in Essex, Britain's oldest recorded town."
+        }
+      ],
+      "monday_cold_call": {
+        "question": "Why did Emperor Claudius invade Britain in AD 43, and what surprise animals marched with him into Camulodunum?",
+        "answer": "Claudius needed military glory to prove himself to doubting Roman senators (and wanted Britain's metals and taxes), marching into Camulodunum with towering war elephants."
+      },
+      "hinge_question": "Who truly won Britain for Rome in AD 43—General Plautius and his 40,000 marching soldiers, or Emperor Claudius during his sixteen-day visit?",
+      "studio_audio": "/audio/reading/ks2_romans/r1.mp3",
+      "studio_voice_label": "Studio Female Historian · KS2 Storyteller",
+      "audio_file": "/audio/reading/ks2_romans/r1.mp3"
+    },
+    {
+      "lesson_index": 2,
+      "lesson_id": "lesson_3",
+      "lesson_label": "Enquiry 3",
+      "short_tab_title": "Portrait of Boudicca",
+      "literary_mode": "intimate_eyewitness",
+      "provenance_tier": "adapted_primary",
+      "source_type": "eyewitness_account",
+      "source_type_label": "Roman Historical Portrait",
+      "book_title": "Roman History (Book LXII) & Annals (Book XIV) on AD 60–61",
+      "author": "Cassius Dio & Tacitus (adapted for KS2 from Public Domain translations)",
+      "provenance_note": "Adapted for KS2 oral reading from Cassius Dio, Roman History LXII.2 (trans. Earnest Cary, 1925 — Public Domain) and Tacitus, Annals XIV.35 (trans. Church & Brodribb, 1876 — Public Domain).",
+      "author_context": "Because the Iceni tribe left no written books, everything we know about how Queen Boudicca looked and spoke comes from Roman historians Tacitus and Cassius Dio.",
+      "cover_image": "/units/ks2_romans/assets/boudicca_chariot_westminster.jpg",
+      "cover_caption": "Bronze statue at Westminster Bridge in London showing Queen Boudicca riding in her war chariot beside her two daughters with spear raised.",
+      "vocabVault": [
+        {
+          "term": "Boudicca",
+          "pronunciation": "BOO-dik-uh",
+          "def": "The fearless Queen of the Iceni tribe who led a massive rebellion against Roman rule in AD 60–61."
+        },
+        {
+          "term": "Iceni",
+          "pronunciation": "eye-SEE-nee",
+          "def": "The proud British Celtic tribe of East Anglia ruled by King Prasutagus and Queen Boudicca."
+        },
+        {
+          "term": "Tawny",
+          "pronunciation": "TAW-nee",
+          "def": "A warm golden-brown or fiery orange-red colour—how Cassius Dio described Boudicca's long hair."
+        },
+        {
+          "term": "Londinium",
+          "pronunciation": "lun-DIN-ee-um",
+          "def": "The busy Roman trading port that grew into modern London, burned to red clay by Boudicca's army."
+        }
+      ],
+      "extract": "Queen Boudicca of the Iceni stood tall and fierce before her gathered warriors! Her bright eyes flashed with anger, and her bold voice rang across the plain. Thick tawny-red hair fell right down to her hips.\n\nAround her neck shone a heavy twisted torc of pure gold. Over a bright checked tunic, she pinned a thick woollen cloak with a bronze brooch. Gripping a tall spear in her fist, she filled every onlooker with awe.\n\nRiding in a wooden war chariot beside her two daughters, Boudicca called each tribe to arms! My husband King Prasutagus stayed a true friend to Rome, she cried aloud. Dying, he left half his wealth to Emperor Nero so our home would stay safe.\n\nInstead, greedy Roman men stole Iceni land, demanded cruel taxes, beat me with whips, and hurt my daughters! Today I fight not for gold, she shouted, but as an angry woman avenging lost freedom! Let us win together, or die free rather than live as Roman slaves!",
+      "parent_discussion": [
+        {
+          "question": "Which vivid details in Cassius Dio's portrait make Queen Boudicca look unforgettable on the battlefield?",
+          "answer": "Her tall build, flashing eyes, harsh bold voice, tawny-red hair reaching her hips, heavy gold torc necklace, chequered tunic, and raised spear."
+        },
+        {
+          "question": "What broken Roman promises drove Boudicca and neighbouring tribes to burn Colchester, Londinium, and Verulamium?",
+          "answer": "After King Prasutagus died leaving half his wealth to Rome, greedy officials seized Iceni lands, demanded loans back, flogged Boudicca, and mistreated her daughters."
+        },
+        {
+          "question": "Why is it surprising that Roman historians wrote such a brave, powerful speech for Rome's fiercest British enemy?",
+          "answer": "Tacitus and Dio admitted Roman officials in Britain had behaved greedily, and showing Boudicca's courage made Rome's narrow victory at Watling Street seem even more dramatic."
+        }
+      ],
+      "story_check": [
+        {
+          "question": "Which British tribe in East Anglia did King Prasutagus and Queen Boudicca rule?",
+          "options": [
+            "The Iceni",
+            "The Brigantes",
+            "The Picts",
+            "The Angles"
+          ],
+          "correctIndex": 0,
+          "feedback": "Correct! Prasutagus and Boudicca ruled the Iceni tribe in East Anglia (modern Norfolk)."
+        },
+        {
+          "question": "How did Roman historian Cassius Dio describe Queen Boudicca's hair and jewellery?",
+          "options": [
+            "Short black hair and a silver Roman helmet",
+            "Bright tawny-red hair down to her hips and a heavy twisted gold necklace",
+            "Braided blonde hair under a horned bronze crown",
+            "White hair hidden beneath a silk veil"
+          ],
+          "correctIndex": 1,
+          "feedback": "Spot on! Dio described a great mass of tawny hair reaching her hips and a heavy gold torc around her neck."
+        },
+        {
+          "question": "Which three Roman towns did Boudicca's rebel army burn to a red clay layer before the Battle of Watling Street?",
+          "options": [
+            "Bath, York, and Chester",
+            "Dover, Richborough, and Pevensey",
+            "Housesteads, Vindolanda, and Arbeia",
+            "Camulodunum (Colchester), Londinium (London), and Verulamium (St Albans)"
+          ],
+          "correctIndex": 3,
+          "feedback": "Exactly right! Archaeologists digging beneath Colchester, London, and St Albans still hit that scorched AD 60–61 red clay layer today."
+        }
+      ],
+      "monday_cold_call": {
+        "question": "Why did Queen Boudicca rebel in AD 60, and which Roman writers described her appearance and speech?",
+        "answer": "Roman officials broke King Prasutagus's will by seizing Iceni lands, flogging Boudicca, and mistreating her daughters; Roman historians Tacitus and Cassius Dio recorded her story."
+      },
+      "hinge_question": "Even though Boudicca lost the final Battle of Watling Street in AD 61, why do people still remember her nearly two thousand years later?",
+      "studio_audio": "/audio/reading/ks2_romans/r2.mp3",
+      "studio_voice_label": "Studio Female Historian · KS2 Storyteller",
+      "audio_file": "/audio/reading/ks2_romans/r2.mp3"
+    },
+    {
+      "lesson_index": 3,
+      "lesson_id": "lesson_4",
+      "lesson_label": "Enquiry 4",
+      "short_tab_title": "Vindolanda Birthday Post",
+      "literary_mode": "intimate_eyewitness",
+      "provenance_tier": "adapted_primary",
+      "source_type": "eyewitness_letter",
+      "source_type_label": "Eyewitness Wooden Tablet",
+      "book_title": "Vindolanda Wooden Ink Tablets 291 & 346 (c. AD 100)",
+      "author": "Claudia Severa & a Frontier Friend (translated from Latin, British Museum)",
+      "provenance_note": "Translated into clear KS2 English from Vindolanda Tablet 291 (Claudia Severa to Sulpicia Lepidina, British Museum P&EE 1986,1001.64) and Tablet 346 (Roman Inscriptions of Britain).",
+      "author_context": "Just south of Hadrian's Wall at Vindolanda Fort, wet oxygen-free mud preserved hundreds of wafer-thin wooden ink postcards—including the oldest surviving Latin handwriting by a woman!",
+      "cover_image": "/units/ks2_romans/assets/vindolanda_birthday_tablet_291.jpg",
+      "cover_caption": "Vindolanda Tablet 291: thin wooden ink leaves written around AD 100 inviting Sulpicia Lepidina to Claudia Severa's birthday party.",
+      "vocabVault": [
+        {
+          "term": "Vindolanda",
+          "pronunciation": "vin-doh-LAN-duh",
+          "def": "A Roman frontier fort in Northumberland where wet mud preserved hundreds of thin wooden ink letters."
+        },
+        {
+          "term": "Claudia Severa",
+          "pronunciation": "KLAW-dee-uh seh-VAIR-uh",
+          "def": "A Roman commander's wife whose birthday note holds the oldest known Latin handwriting by a woman."
+        },
+        {
+          "term": "Sulpicia Lepidina",
+          "pronunciation": "sul-PIK-ee-uh lep-ih-DEE-nuh",
+          "def": "Claudia Severa's close friend and wife of the fort commander Flavius Cerialis at Vindolanda."
+        },
+        {
+          "term": "Frontier",
+          "pronunciation": "frun-TEER",
+          "def": "The guarded northern border zone of Roman Britain where Hadrian's Wall was built in AD 122."
+        }
+      ],
+      "extract": "Claudia Severa sends warm greetings to her dearest friend Lepidina! On 11 September, sister, for my birthday party, I warmly invite you to visit our fort. You will make my day truly happy by arriving safely!\n\nGive kind greetings to your husband Cerialis. My husband Aelius and my little son send him their best wishes too.\n\nAt the bottom corner, Claudia took the reed pen into her own hand! There she wrote the oldest Latin words by a woman ever found. I shall expect you, sister! Farewell, my dearest soul, as I hope to prosper, and hail!\n\nIn wet mud nearby at Vindolanda lay a second wooden postcard for a chilly border guard. I have sent you warm woollen socks from Sattua! Inside your parcel are two pairs of strong sandals and two pairs of underpants. Greet your friends Elpis and Tetricus, with whom I pray you live happily!",
+      "parent_discussion": [
+        {
+          "question": "Why did Claudia Severa take the reed pen into her own hand at the bottom of her wooden birthday invitation?",
+          "answer": "A scribe neatly wrote the main message, then Claudia added a warm personal goodbye ('Farewell, my dearest soul!') in her own handwriting."
+        },
+        {
+          "question": "What does the second Vindolanda postcard tell us about what Roman soldiers from sunny lands struggled with in northern Britain?",
+          "answer": "Soldiers froze in Northumberland's cold wind and rain, needing care parcels of woollen socks, extra sandals, and warm underpants!"
+        },
+        {
+          "question": "How do the Vindolanda tablets change our picture of Roman forts along the northern frontier?",
+          "answer": "Forts were not lonely camps of silent soldiers—officers' wives, young children, and friends celebrated birthdays and sent parcels just like families today."
+        }
+      ],
+      "story_check": [
+        {
+          "question": "Why did wafer-thin wooden postcards survive at Vindolanda for nearly two thousand years without rotting?",
+          "options": [
+            "They were carved into solid granite blocks",
+            "Wet, oxygen-free mud sealed them away from air and rot",
+            "They were locked inside golden chests in Rome",
+            "Desert sand dried them out"
+          ],
+          "correctIndex": 1,
+          "feedback": "Spot on! Just like Must Farm and Coppergate, wet oxygen-free soil at Vindolanda stopped thin wood and carbon ink from rotting."
+        },
+        {
+          "question": "What special record does the final greeting on Claudia Severa's 11 September birthday tablet hold?",
+          "options": [
+            "The oldest surviving handwriting in Latin by a woman",
+            "The longest poem ever written in Rome",
+            "Emperor Hadrian's building bill for the Wall",
+            "Boudicca's battle orders"
+          ],
+          "correctIndex": 0,
+          "feedback": "Correct! Claudia's warm sign-off ('Farewell, my dearest soul!') is the earliest known example of writing in Latin by a woman."
+        },
+        {
+          "question": "What cosy items were posted inside a care parcel to a shivering Vindolanda soldier?",
+          "options": [
+            "Silk robes and peacocks",
+            "Gold torcs and bronze shields",
+            "Woollen socks, two pairs of sandals, and two pairs of underpants",
+            "Ice-skates and woollen sails"
+          ],
+          "correctIndex": 2,
+          "feedback": "Exactly right! Northern British weather made woollen socks and spare underpants prized gifts on the frontier."
+        }
+      ],
+      "monday_cold_call": {
+        "question": "Who wrote the famous 11 September birthday invitation found at Vindolanda, and what chilly-weather clothes were posted to a soldier nearby?",
+        "answer": "Claudia Severa wrote the birthday invitation to Sulpicia Lepidina, and another tablet listed woollen socks, two pairs of sandals, and two pairs of underpants."
+      },
+      "hinge_question": "Why do ordinary personal notes about birthdays and warm socks make ancient people feel so real to us today?",
+      "studio_audio": "/audio/reading/ks2_romans/r3.mp3",
+      "studio_voice_label": "Studio Female Historian · KS2 Storyteller",
+      "audio_file": "/audio/reading/ks2_romans/r3.mp3"
+    },
+    {
+      "lesson_index": 4,
+      "lesson_id": "lesson_5",
+      "lesson_label": "Enquiry 5",
+      "short_tab_title": "Living Above the Baths!",
+      "literary_mode": "intimate_eyewitness",
+      "provenance_tier": "adapted_primary",
+      "source_type": "eyewitness_letter",
+      "source_type_label": "Eyewitness Roman Letter",
+      "book_title": "Moral Letters to Lucilius — Letter 56: On Quiet and Study (c. AD 64)",
+      "author": "Seneca the Younger (adapted for KS2 from R. M. Gummere's 1917 translation)",
+      "provenance_note": "Adapted into lively KS2 oral sentences from Roman philosopher Lucius Annaeus Seneca, Epistulae Morales ad Lucilium LVI.1–2 (c. AD 64), trans. Richard M. Gummere (1917 — Public Domain).",
+      "author_context": "Roman towns like Aquae Sulis (Bath) built grand steaming bathhouses where people exercised, gossiped, and washed—as poor philosopher Seneca discovered when he rented rooms right upstairs!",
+      "cover_image": "/units/ks2_romans/assets/great_bath_aquae_sulis.jpg",
+      "cover_caption": "The steaming green thermal pool of the Roman Great Bath at Aquae Sulis (Bath, Somerset), ringed by stone columns and walkways.",
+      "vocabVault": [
+        {
+          "term": "Aquae Sulis",
+          "pronunciation": "AK-wee SOO-lis",
+          "def": "The famous Roman spa town at modern Bath in Somerset, built around natural hot mineral springs."
+        },
+        {
+          "term": "Strigil",
+          "pronunciation": "STRIJ-il",
+          "def": "A curved bronze scraper used by Roman bathers to scrape olive oil, sweat, and dirt off their skin."
+        },
+        {
+          "term": "Hypocaust",
+          "pronunciation": "HY-poh-kawst",
+          "def": "Clever Roman underfloor heating where hot furnace air flowed beneath floors raised on brick pillars."
+        },
+        {
+          "term": "Seneca",
+          "pronunciation": "SEN-ih-kuh",
+          "def": "A famous Roman writer and thinker who wrote a funny letter complaining about noisy public baths."
+        }
+      ],
+      "extract": "Pity me, my dear friend! My rented rooms sit right above a noisy Roman bathhouse! Just picture every loud racket that can make a quiet writer hate his own ears.\n\nDown in the yard, strong men swing heavy lead weights and groan with effort. Every time they let out a breath, they hiss and wheeze! Next comes a loud slap as a helper rubs olive oil onto bare shoulders. Then he scrapes sweat and dirt off the skin with a curved bronze strigil.\n\nWorst of all, a ball-player runs in and yells his score at top volume! Soon a noisy quarrel starts, and guards catch a thief stealing a bather's warm cloak. Nearby, a man who loves his own voice sings loudly against the wet stone walls!\n\nWatch out too for swimmers who leap into the hot pool with a giant splash! Above all that din, snack-sellers shout out hot sausages, sweet honey cakes, and steaming pies!",
+      "parent_discussion": [
+        {
+          "question": "List four noisy people or jobs Seneca could hear from the Roman bathhouse underneath his floorboards!",
+          "answer": "Groaning weightlifters, slapping oil-rubbers, a shouting ball-player, a caught cloak-thief, booming bath-singers, splashing jumpers, and yelling sausage- and cake-sellers!"
+        },
+        {
+          "question": "How did Romans clean their skin at the baths before modern bars of scented soap were common?",
+          "answer": "They sweated in warm steam rooms heated by underfloor hypocausts, rubbed olive oil onto their skin, and scraped oil and dirt off with a curved bronze strigil."
+        },
+        {
+          "question": "What does Seneca's funny complaint prove about why townsfolk in Roman Britain visited bathhouses like Aquae Sulis every day?",
+          "answer": "A Roman bathhouse was far more than a bathroom—it was a lively leisure centre for sport, hot snacks, gossip, music, and meeting friends."
+        }
+      ],
+      "story_check": [
+        {
+          "question": "Why couldn't Roman writer Seneca study in peace inside his rented rooms?",
+          "options": [
+            "Chariots raced through his bedroom",
+            "His rooms sat directly above a noisy public Roman bathhouse",
+            "Emperor Claudius kept elephants next door",
+            "Blacksmiths hammered iron swords on his roof"
+          ],
+          "correctIndex": 1,
+          "feedback": "Spot on! Seneca lived directly above a bustling public bathhouse and heard every splash, groan, and sausage-seller below."
+        },
+        {
+          "question": "How did Romans wash sweat and dirt off their skin at the public baths?",
+          "options": [
+            "By rubbing on olive oil and scraping it off with a curved bronze strigil",
+            "By scrubbing with dry chalk powder",
+            "By standing outside in freezing snow",
+            "By brushing with red-deer antlers"
+          ],
+          "correctIndex": 0,
+          "feedback": "Correct! Bathers rubbed olive oil onto warm skin and scraped away oil and grime using a curved metal strigil."
+        },
+        {
+          "question": "What tasty treats were snack-sellers shouting out around the steaming bath pools?",
+          "options": [
+            "Crisps and chocolate bars",
+            "Raw wheat and acorns",
+            "Hot sausages, sweet cakes, and steaming pies",
+            "Frozen ice lollies"
+          ],
+          "correctIndex": 2,
+          "feedback": "Exactly right! Hungry bathers bought hot sausages, sweet cakes, and pies right beside the pools."
+        }
+      ],
+      "monday_cold_call": {
+        "question": "In Seneca's letter, what three activities besides washing happened inside a busy Roman bathhouse, and what tool scraped off olive oil?",
+        "answer": "People lifted weights, played ball games, sang, and bought hot sausages and cakes—and bathers scraped olive oil off with a curved bronze strigil."
+      },
+      "hinge_question": "Did everybody in Roman Britain enjoy steaming bathhouses like Aquae Sulis—or how did nine out of ten country farmers still live?",
+      "studio_audio": "/audio/reading/ks2_romans/r4.mp3",
+      "studio_voice_label": "Studio Female Historian · KS2 Storyteller",
+      "audio_file": "/audio/reading/ks2_romans/r4.mp3"
+    },
+    {
+      "lesson_index": 5,
+      "lesson_id": "lesson_6",
+      "lesson_label": "Enquiry 6",
+      "short_tab_title": "Secret of the Hoxne Hoard",
+      "literary_mode": "storied_micro_history",
+      "provenance_tier": "storied_micro_history",
+      "source_type": "micro_history",
+      "source_type_label": "True Archaeological Story",
+      "book_title": "The Chest in the Field: Burying the Hoxne Hoard (c. AD 410 & 1992)",
+      "author": "The History Revision Hub (from British Museum Hoxne Hoard Records)",
+      "provenance_note": "Original true micro-history grounded in the November 1992 discovery of the Hoxne Hoard in Suffolk by Peter Whatling and Eric Lawes and British Museum excavation reports (Catherine Johns, 2010).",
+      "author_context": "When Roman legions marched away by AD 410, anxious families buried chests of silver underground—leaving one lost hammer in 1992 to uncover Britain's greatest Roman treasure.",
+      "cover_image": "/units/ks2_romans/assets/hoxne_hoard_empress_pepper_pot.jpg",
+      "cover_caption": "The gilded silver 'Empress' pepper pot from the Hoxne Hoard in Suffolk, buried inside an oak chest around AD 407–410.",
+      "vocabVault": [
+        {
+          "term": "Emperor Honorius",
+          "pronunciation": "EM-per-er hoh-NOR-ee-us",
+          "def": "The Western Roman Emperor who wrote in AD 410 warning British towns they must defend themselves."
+        },
+        {
+          "term": "Hoxne Hoard",
+          "pronunciation": "HOKS-un HORD",
+          "def": "Britain's largest Roman gold and silver treasure chest, buried in Suffolk around AD 410 and found in 1992."
+        },
+        {
+          "term": "Visigoths",
+          "pronunciation": "VIZ-ih-goths",
+          "def": "Fierce invading armies who attacked Italy itself, forcing Rome to recall legions from Britain."
+        },
+        {
+          "term": "Legacy",
+          "pronunciation": "LEG-uh-see",
+          "def": "Lasting gifts left behind by the past—like straight roads, '-chester' towns, Latin letters, and our calendar."
+        }
+      ],
+      "extract": "Around AD 410, nearly four hundred years of Roman rule in Britain came to an end. Fierce armies attacked Italy, so Roman soldiers sailed away across the sea. Emperor Honorius wrote warning British towns that they must now guard themselves!\n\nWithout troops watching the shore, Picts and Saxon raiders struck closer every summer. At Hoxne in Suffolk, one rich family decided to hide their best silver underground.\n\nWith great care, they lined a locked oak chest with small boxes and soft cloth. Inside went nearly fifteen thousand gold and silver coins, plus seventy-eight named silver spoons! Beside gold bracelets sat a gleaming silver pepper pot shaped like a noble Roman lady. The family buried that chest deep in the earth, yet nobody ever returned.\n\nOver fifteen hundred years passed by. In 1992, farmer Peter Whatling lost his hammer in a muddy Suffolk field! His friend Eric Lawes used a metal detector, heard a loud beep, and called diggers in to lift Britain's greatest Roman treasure!",
+      "parent_discussion": [
+        {
+          "question": "Why did wealthy families in eastern Britain bury chests like the Hoxne Hoard around AD 407–410?",
+          "answer": "Roman legions had left to defend Italy and Emperor Honorius warned Britain to defend itself, leaving estates afraid of coastal raiders."
+        },
+        {
+          "question": "How do archaeologists know the Hoxne family packed their oak chest calmly rather than tossing silver into a hole in panic?",
+          "answer": "Coins, bracelets, spoons, and the silver lady pepper pot were neatly stacked inside smaller wooden boxes padded with cloth and straw—because Eric Lawes called archaeologists immediately instead of digging roughly!"
+        },
+        {
+          "question": "Even though bathhouses crumbled after AD 410, what Roman legacies do we still use in Britain every single day?",
+          "answer": "London (Londinium), straight roads, '-chester' fort towns, our ABC Latin alphabet, Roman numerals on clocks, and months like July and August."
+        }
+      ],
+      "story_check": [
+        {
+          "question": "In what year did Emperor Honorius warn British towns that Rome could send no more soldiers to protect them?",
+          "options": [
+            "AD 43",
+            "AD 61",
+            "AD 122",
+            "AD 410"
+          ],
+          "correctIndex": 3,
+          "feedback": "Spot on! AD 410 marks the end of Roman military rule in Britain."
+        },
+        {
+          "question": "What ordinary farm tool was Eric Lawes actually looking for with his metal detector at Hoxne in 1992?",
+          "options": [
+            "A lost hammer belonging to farmer Peter Whatling",
+            "A tractor wheel",
+            "A golden crown",
+            "An Iron Age plough"
+          ],
+          "correctIndex": 0,
+          "feedback": "Correct! Searching for a lost farm hammer led straight to nearly 15,000 Roman gold and silver coins—and they found the hammer too, now in the British Museum!"
+        },
+        {
+          "question": "What famous spice container lay packed inside the Hoxne Hoard oak chest alongside 78 silver spoons?",
+          "options": [
+            "A wooden porridge bowl",
+            "A gilded silver pepper pot shaped like a noble Roman lady",
+            "A glass claw beaker",
+            "A stamped Bell Beaker pot"
+          ],
+          "correctIndex": 1,
+          "feedback": "Exactly right! Black pepper travelled all the way from India across Roman trade routes to fill that silver pepper pot."
+        }
+      ],
+      "monday_cold_call": {
+        "question": "Why was the Hoxne Hoard buried around AD 410, and how was it accidentally rediscovered in Suffolk in 1992?",
+        "answer": "A wealthy family hid their silver coins, spoons, and lady pepper pot from raiders after Roman legions left in AD 410, and Eric Lawes found it in 1992 while searching for a lost farm hammer."
+      },
+      "hinge_question": "Why did Eric Lawes do a huge favour for history by stopping digging and calling archaeologists as soon as he spotted silver?",
+      "studio_audio": "/audio/reading/ks2_romans/r5.mp3",
+      "studio_voice_label": "Studio Female Historian · KS2 Storyteller",
+      "audio_file": "/audio/reading/ks2_romans/r5.mp3"
+    }
   ]
 };

@@ -1,0 +1,620 @@
+[
+  {
+    "lesson_index": 0,
+    "lesson_id": "lesson_1",
+    "lesson_label": "Enquiry 1",
+    "short_tab_title": "1. Frontinus: Roman Aqueducts",
+    "literary_mode": "intimate_eyewitness",
+    "provenance_tier": "adapted_primary",
+    "source_type": "primary_testimony",
+    "source_type_label": "Roman Water Commissioner’s Account (c. AD 97)",
+    "is_primary": true,
+    "is_adapted": true,
+    "book_title": "De Aquaeductu Urbis Romae (Inspecting the Aqueducts of Rome)",
+    "author": "Sextus Julius Frontinus (c. AD 97 • Roman Water Commissioner)",
+    "provenance_note": "Translated from Latin and adapted into crisp Year 7 oral sentences from Roman Water Commissioner Frontinus’s c. AD 97 account.",
+    "author_context": "Sextus Julius Frontinus (c. AD 40–103) governed Roman Britain before Emperor Nerva appointed him Water Commissioner of Rome in AD 97. Walking every mile of stone channels, settling tanks, and pipes himself, Frontinus recorded with pride how Roman engineering kept cities clean.",
+    "cover_image": "/images/ks3_was/was_l1_b1_pont_du_gard_aqueduct.jpg",
+    "cover_caption": "The Pont du Gard in southern Gaul (1st century AD): Three-tiered Roman limestone aqueduct bridge built to carry spring water across the Gardon valley by gravity.",
+    "vocabVault": [
+      {
+        "term": "Aqueduct",
+        "pronunciation": "AK-wuh-dukt",
+        "def": "A gravity-fed Roman stone channel—carried through rock tunnels and across arched bridges—bringing fresh spring water to towns."
+      },
+      {
+        "term": "Settling Tank",
+        "pronunciation": "SET-ling TANK",
+        "def": "A deep stone basin along an aqueduct where mud, sand, and pebbles sank before clean water entered city pipes."
+      },
+      {
+        "term": "Cloaca Maxima",
+        "pronunciation": "kloh-AH-kuh MAK-sih-muh",
+        "def": "Rome’s huge stone-vaulted main sewer that flushed bath waste and street dirt out into the River Tiber."
+      },
+      {
+        "term": "Miasma",
+        "pronunciation": "my-AZ-muh",
+        "def": "The ancient and medieval belief that disease was spread by breathing foul-smelling \"bad air\" from swamps and rot."
+      }
+    ],
+    "extract": "\"For more than four hundred years after Rome was founded, our citizens drank muddy water drawn from the River Tiber or local wells. Today, nine great stone aqueducts carry pure mountain spring water into our city. Driven solely by gentle gravity, the water flows through rock tunnels and across high arched bridges day and night.\"\n\n\"As Water Commissioner of Rome, I have walked and inspected every mile of these channels myself. Near the city walls, each aqueduct passes through deep stone settling tanks. There, pebbles and river mud sink to the bottom so the water enters our pipes clear and sweet.\"\n\n\"Inside Rome, public fountains supply rich senators and poor street-sellers alike. Great bathhouses steam with hot water, while army forts enjoy clean drinking supplies. Even the overflow water from the fountains is never wasted. Day and night, it rushes beneath the streets through the great Cloaca Maxima sewer, scouring away the filth and bad smells that once bred sickness.\"\n\n\"Look at all these practical structures serving millions of lives. Go ahead and compare them, if you dare, with the idle Pyramids of Egypt!\"",
+    "parent_discussion": [
+      {
+        "question": "Why does Frontinus boast that Rome’s stone aqueducts are far greater than the famous Pyramids of Egypt?",
+        "answer": "Pyramids were giant tombs for dead kings, whereas aqueducts served living people every day—bringing clean drinking water, filling baths, and flushing sewers."
+      },
+      {
+        "question": "Even though Romans knew nothing about microscopic germs, how did fearing \"bad air\" (miasma) make their cities healthier?",
+        "answer": "Wanting to banish foul smells led Roman engineers to pipe pure mountain water IN and flush waste OUT through stone drains."
+      },
+      {
+        "question": "What hidden health dangers still lurked inside Roman bathhouses and communal latrines?",
+        "answer": "Romans piped water through poisonous lead pipes, shared unchlorinated bathwater with sick bathers, and passed around shared latrine sponge-sticks."
+      }
+    ],
+    "story_check": [
+      {
+        "question": "What force moved water along Roman aqueducts from mountain springs into cities?",
+        "options": [
+          "Coal-fired steam pumps",
+          "Gentle downward gravity along carefully angled stone channels",
+          "Teams of horses pulling buckets",
+          "Windmills on the city walls"
+        ],
+        "correctIndex": 1,
+        "feedback": "Roman engineers angled aqueducts with millimetre precision so gravity carried water steadily downhill."
+      },
+      {
+        "question": "What happened inside the stone settling tanks built just outside Rome’s walls?",
+        "options": [
+          "Water was boiled over wood fires",
+          "Pebbles and river silt sank to the bottom so water flowed clear",
+          "Soldiers swam in the tanks",
+          "Tax collectors weighed water barrels"
+        ],
+        "correctIndex": 1,
+        "feedback": "Slowing the flow in deep stone basins let grit and mud sink before clean water entered town pipes."
+      },
+      {
+        "question": "How did Romans use the spare overflow water from their public street fountains?",
+        "options": [
+          "They bottled it for sale in Egypt",
+          "It continuously flushed street drains and the Cloaca Maxima sewer",
+          "They poured it into dry desert valleys",
+          "They locked it inside iron chests"
+        ],
+        "correctIndex": 1,
+        "feedback": "Surplus fountain water ran nonstop beneath the streets, washing waste out through stone sewers."
+      }
+    ],
+    "monday_cold_call": {
+      "question": "Why did Roman Water Commissioner Frontinus claim Rome’s aqueducts beat the Egyptian Pyramids, and what did settling tanks do?",
+      "answer": "Aqueducts kept millions healthy by piping fresh spring water and flushing sewers; settling tanks let mud and grit sink before water entered town pipes."
+    },
+    "hinge_question": "<strong>Think:</strong> How did settling tanks improve the water entering a Roman town?<br><br><strong>Pair:</strong> What happened to the overflow water after it passed through public fountains?<br><br><strong>Share:</strong> Why did Roman water infrastructure collapse in Britain once Roman taxes and army engineers left?",
+    "questions": [
+      "Where had Romans obtained their water during the first four hundred years of the city?",
+      "What was the purpose of the stone settling tanks near the city walls?",
+      "Which ancient monuments does Frontinus call \"idle\" compared with Rome’s aqueducts?"
+    ],
+    "audio_file": "/audio/reading/water_and_sanitation/r0.mp3",
+    "studio_audio": "/audio/reading/water_and_sanitation/r0.mp3",
+    "studio_voice_label": "Studio Male Historian · Archival Reading"
+  },
+  {
+    "lesson_index": 1,
+    "lesson_id": "lesson_2",
+    "lesson_label": "Enquiry 2",
+    "short_tab_title": "2. Gong-Fermors & Filth",
+    "literary_mode": "storied_micro_history",
+    "provenance_tier": "storied_micro_history",
+    "source_type": "storied_micro_history",
+    "source_type_label": "True Historical Story (Medieval London, 1349)",
+    "is_primary": false,
+    "is_adapted": false,
+    "book_title": "Lanterns at Midnight: Medieval Gong-Fermors & King Edward III’s Fury",
+    "author": "The History Revision Hub (Grounded in Corporation of London Letter-Books)",
+    "provenance_note": "True historical micro-story reconstructed from medieval London sanitary rolls, gong-fermor guild records, and King Edward III’s 1349 writ to the Mayor.",
+    "author_context": "While wealthy medieval monasteries like Canterbury Priory enjoyed clean piped spring water behind high stone walls, crowded medieval towns relied on shallow wells and backyard cesspits. When the Black Death struck in 1349, King Edward III raged at the state of London’s streets.",
+    "cover_image": "/images/canterbury_waterworks_plan_1165.jpg",
+    "cover_caption": "Illuminated parchment plan of the piped waterworks and fishpond of Christ Church Priory, Canterbury, from the Eadwine Psalter (c. 1165, Trinity College Cambridge).",
+    "vocabVault": [
+      {
+        "term": "Gong-Fermor",
+        "pronunciation": "GONG-fer-mer",
+        "def": "A medieval night-worker paid high wages to dig out deep backyard cesspits after dark and cart the waste away."
+      },
+      {
+        "term": "Shambles",
+        "pronunciation": "SHAM-buhlz",
+        "def": "Medieval open-air street butcheries where animals were slaughtered and meat was sold from wooden stalls."
+      },
+      {
+        "term": "Cesspit",
+        "pronunciation": "SESS-pit",
+        "def": "An underground pit beneath a privy where waste collected, often leaking through soil into nearby drinking wells."
+      },
+      {
+        "term": "Rakers",
+        "pronunciation": "RAY-kerz",
+        "def": "Town street-cleaners hired by medieval councils to shovel dung and rubbish onto carts."
+      }
+    ],
+    "extract": "Behind the quiet stone walls of Canterbury Priory, medieval monks washed their hands at gleaming taps fed by clean spring pipes. Step outside into the narrow lanes of fourteenth-century London, however, and your boots sank into ankle-deep muck.\n\nNearly fifty thousand people lived packed above workshops with no Roman sewers to flush waste away. Householders tipped chamber-pots into open street gutters. At the Shambles meat market, butchers tossed animal guts onto rotting heaps. Beneath crowded backyards, leaky cesspits seeped slowly through damp soil into neighbours’ drinking wells.\n\nOnly after the nine o'clock curfew bell rang did the \"gong-fermors\" start work. Holding lanterns and wooden buckets, these tough night-men climbed down into foul cesspits. All night long, they hauled dripping carts outside the city walls.\n\nWhen the Black Death hit London in 1349, King Edward III rode past heaps of street dung and lost his temper. Royal doctors warned him that foul \"bad air\" bred plague. The angry King sent a strict order to the Mayor of London. \"Have all filth carted away without delay, upon pain of heavy fine!\" he wrote. Town rakers shovelled hard, yet rat fleas kept spreading death unseen.",
+    "parent_discussion": [
+      {
+        "question": "Who were the \"gong-fermors,\" and why were they only allowed to work after the nine o'clock curfew bell?",
+        "answer": "They were well-paid night-workers who emptied deep backyard cesspits by bucket and cart after dark so citizens did not have to endure the smell by day."
+      },
+      {
+        "question": "Does King Edward III’s furious 1349 order show that medieval people loved dirt, or that town councils lacked Roman infrastructure?",
+        "answer": "It proves medieval kings and councils hated filth, passed fines, and hired rakers—but without Roman taxes or underground sewers, growing towns overwhelmed hand-carts."
+      },
+      {
+        "question": "Look at the c. 1165 Canterbury Priory map: why were monasteries so much cleaner than medieval London’s streets?",
+        "answer": "Monasteries had wealth, strict daily rules, literacy, and isolated land upstream, whereas crowded towns packed animals, workshops, cesspits, and wells together."
+      }
+    ],
+    "story_check": [
+      {
+        "question": "What job did medieval \"gong-fermors\" carry out after the nine o'clock curfew bell?",
+        "options": [
+          "Ringing cathedral bells for morning prayer",
+          "Emptying backyard cesspits with buckets and carts in the dark",
+          "Testing river water with white cards",
+          "Building stone aqueduct arches"
+        ],
+        "correctIndex": 1,
+        "feedback": "Gong-fermors worked strictly at night, earning high pay for the foul task of digging out backyard cesspits."
+      },
+      {
+        "question": "Why did backyard cesspits make medieval town wells so dangerous to drink from?",
+        "options": [
+          "Gong-fermors locked the wells at night",
+          "Human waste leaked through porous soil straight into nearby shallow drinking wells",
+          "Monks diverted all river water into priories",
+          "Wells froze solid every summer"
+        ],
+        "correctIndex": 1,
+        "feedback": "Unlined or cracked cesspits let waste seep underground into neighbouring shallow drinking wells."
+      },
+      {
+        "question": "Why did King Edward III demand that the Mayor clean London’s streets during the 1349 Black Death?",
+        "options": [
+          "He knew microscopic fleas lived on black rats",
+          "His doctors believed breathing foul \"bad air\" (miasma) from street filth caused plague",
+          "He was preparing for the Great Exhibition",
+          "He wanted to build underground brick railways"
+        ],
+        "correctIndex": 1,
+        "feedback": "Medieval physicians blamed miasma (venomous bad air), so Edward III hoped clearing smelly waste would halt the pestilence."
+      }
+    ],
+    "monday_cold_call": {
+      "question": "Who were medieval \"gong-fermors,\" and why didn’t King Edward III’s 1349 street-cleaning order stop the Black Death?",
+      "answer": "Night-workers who emptied cesspits after curfew; sweeping away bad smells (miasma) couldn’t stop plague spread by fleas on rats."
+    },
+    "hinge_question": "<strong>Think:</strong> What was the difference between daytime \"rakers\" and night-time \"gong-fermors\"?<br><br><strong>Pair:</strong> Why didn’t sweeping away bad smells stop the Black Death in 1349?<br><br><strong>Share:</strong> Was medieval public health a story of laziness, or weak town infrastructure without Roman engineering?",
+    "questions": [
+      "Why were medieval monasteries like Canterbury Priory cleaner than town streets?",
+      "When did gong-fermors carry out their work, and what did they clear?",
+      "Why did King Edward III order London’s Mayor to clear street filth in 1349?"
+    ],
+    "audio_file": "/audio/reading/water_and_sanitation/r1.mp3",
+    "studio_audio": "/audio/reading/water_and_sanitation/r1.mp3",
+    "studio_voice_label": "Studio Male Historian · Storied History"
+  },
+  {
+    "lesson_index": 2,
+    "lesson_id": "lesson_3",
+    "lesson_label": "Enquiry 3",
+    "short_tab_title": "3. Pepys’s Plague Diary",
+    "literary_mode": "intimate_eyewitness",
+    "provenance_tier": "adapted_primary",
+    "source_type": "primary_diary",
+    "source_type_label": "Eyewitness 17th-Century Diary (1665)",
+    "is_primary": true,
+    "is_adapted": true,
+    "book_title": "Red Crosses on Drury Lane: The Diary of Samuel Pepys in 1665",
+    "author": "Samuel Pepys (June–September 1665 • Magdalene College, Cambridge)",
+    "provenance_note": "Lightly adapted into smooth Year 7 oral sentences from Samuel Pepys’s secret shorthand diary entries of June–September 1665.",
+    "author_context": "By 1665, London’s population had swollen to nearly half a million people crammed into overhanging timber alleys without sewers. Navy official Samuel Pepys stayed working in London throughout the scorching summer of 1665 as the Great Plague killed almost 100,000 Londoners.",
+    "cover_image": "/images/ks3_was/was_l3_b3_samuel_pepys_hayls_1666.jpg",
+    "cover_caption": "John Hayls, Portrait of Samuel Pepys (1666, National Portrait Gallery): Navy administrator whose shorthand diary recorded London’s 1665 Great Plague.",
+    "vocabVault": [
+      {
+        "term": "Quarantine",
+        "pronunciation": "KWOR-uhn-teen",
+        "def": "The strict 1665 Plague Order locking an infected household inside for forty days behind a painted red cross."
+      },
+      {
+        "term": "Bills of Mortality",
+        "pronunciation": "BILZ uv mor-TAL-ih-tee",
+        "def": "Weekly printed parish lists recording how many Londoners had died of plague and other illnesses."
+      },
+      {
+        "term": "Watchman",
+        "pronunciation": "WOCH-muhn",
+        "def": "A guard posted outside a red-cross plague house day and night to stop anyone escaping."
+      },
+      {
+        "term": "Tenements",
+        "pronunciation": "TEN-uh-muhnts",
+        "def": "Crowded multi-storey wooden houses divided up among poor city families."
+      }
+    ],
+    "extract": "\"7 June 1665: Today, much against my will, I walked down Drury Lane in fierce summer heat. On two or three doors I saw a bright red cross painted a foot high, with the words: 'Lord have mercy upon us.' Parish watchmen stood outside to keep the sick families locked indoors for forty days.\"\n\n\"It was the very first plague door I had ever seen, and my stomach turned with dread. Fearing I had breathed poisoned air, I hurried into a shop to buy strong roll-tobacco. Smelling and chewing the bitter leaf calmed my fear.\"\n\n\"16 August 1665: Lord! How sad a sight it is to see London’s streets almost empty. Two shops out of every three stand boarded up. Passers-by cross the street in terror whenever they spot a shut door.\"\n\n\"3 September 1665: Grass now grows between the stones in the royal courts at Whitehall. Nightly dead-carts rumble toward deep plague pits, and the weekly Bill of Mortality has passed six thousand dead. Coal fires burn at street corners for three days and nights to cleanse the air, yet still the plague rages through poor parishes.\"",
+    "parent_discussion": [
+      {
+        "question": "What warning was painted onto infected doors in Drury Lane, and why did Samuel Pepys immediately chew strong tobacco?",
+        "answer": "A foot-high red cross and \"Lord have mercy upon us\" marked quarantined houses; Pepys smelled and chewed tobacco hoping to block out \"bad air\" (miasma)."
+      },
+      {
+        "question": "Comparing 1665 with 1349, what had improved in city organisation, and what medical belief had NOT changed at all?",
+        "answer": "Government organisation was much stricter—40-day quarantine, watchmen, and printed Bills of Mortality—yet doctors still blamed miasma and lit street coal fires."
+      },
+      {
+        "question": "Why did the 1665 plague kill far more people in crowded poor parishes outside the city walls than among wealthy nobles?",
+        "answer": "King Charles II and rich courtiers fled to clean country estates, while poor families stayed trapped in rat-infested timber tenements."
+      }
+    ],
+    "story_check": [
+      {
+        "question": "Under the 1665 Plague Orders, what happened when someone caught the plague inside a London house?",
+        "options": [
+          "They were sent by boat to France",
+          "A red cross was painted on the door and the whole family was locked in for 40 days",
+          "Free clean water was piped into their kitchen",
+          "Doctors injected them with antibiotics"
+        ],
+        "correctIndex": 1,
+        "feedback": "\"Shutting up\" locked the victim and their entire household behind a red-cross door guarded by a watchman for 40 days."
+      },
+      {
+        "question": "Why did Pepys buy roll-tobacco to smell and chew right after walking down Drury Lane?",
+        "options": [
+          "He was celebrating a naval victory",
+          "He hoped strong tobacco fumes would protect him from breathing \"bad air\"",
+          "Tobacco was rationed by coupons",
+          "Doctors knew tobacco killed fleas"
+        ],
+        "correctIndex": 1,
+        "feedback": "Seventeenth-century Londoners believed smelly herbs, nosegays, or strong tobacco drove off plague-carrying miasma."
+      },
+      {
+        "question": "Why did the Lord Mayor order coal fires burned at street corners for three days and nights in September 1665?",
+        "options": [
+          "To light dark streets for carriages",
+          "To purify what people thought was poisoned plague air",
+          "To melt lead water pipes",
+          "To cook bread for watchmen"
+        ],
+        "correctIndex": 1,
+        "feedback": "Still guided by miasma theory, city leaders burned giant coal fires hoping smoke and heat would cleanse corrupted air."
+      }
+    ],
+    "monday_cold_call": {
+      "question": "What two miasma-based protections appear in Samuel Pepys’s 1665 plague diary?",
+      "answer": "Pepys smelling and chewing strong roll-tobacco on Drury Lane, and the Lord Mayor burning street-corner coal fires to cleanse the air."
+    },
+    "hinge_question": "<strong>Think:</strong> How long were families locked inside a red-cross house in 1665?<br><br><strong>Pair:</strong> Why did locking healthy relatives inside a rat-infested house alongside a plague victim often sentence the whole family to death?<br><br><strong>Share:</strong> How did the Great Fire of London the very next year (1666) change the city?",
+    "questions": [
+      "What symbol and words were painted on infected doors in Drury Lane in June 1665?",
+      "Why did Pepys buy roll-tobacco after walking past those houses?",
+      "Why did the Lord Mayor order coal fires burned at street corners?"
+    ],
+    "audio_file": "/audio/reading/water_and_sanitation/r2.mp3",
+    "studio_audio": "/audio/reading/water_and_sanitation/r2.mp3",
+    "studio_voice_label": "Studio Male Historian · Archival Reading"
+  },
+  {
+    "lesson_index": 3,
+    "lesson_id": "lesson_4",
+    "lesson_label": "Enquiry 4",
+    "short_tab_title": "4. Father Thames & Faraday",
+    "literary_mode": "verbatim_literature",
+    "provenance_tier": "verbatim_literature",
+    "source_type": "literary_verse",
+    "source_type_label": "Punch Satirical Verse & Faraday’s Test (1848–1858)",
+    "is_primary": true,
+    "is_adapted": false,
+    "book_title": "\"Filthy River, Filthy River\": Punch Magazine, Faraday’s Card & The Great Stink",
+    "author": "Punch Magazine (\"Father Thames\" Verse) & Michael Faraday (The Times, 1855)",
+    "provenance_note": "Pairs verbatim public-domain satirical stanzas from Punch magazine with scientist Michael Faraday’s 7 July 1855 white-card test on the River Thames.",
+    "author_context": "As Victorian factories packed 2.5 million people into London and new flushing toilets emptied straight into old storm drains, the River Thames became a giant open sewer—while water companies still pumped drinking water out of it! Punch magazine and scientist Michael Faraday shamed Parliament as the crisis boiled toward the \"Great Stink\" of 1858.",
+    "cover_image": "/images/ks3_was/was_l4_s3_father_thames_punch_1858.jpg",
+    "cover_caption": "John Leech, \"Father Thames Introducing His Offspring [Diphtheria, Scrofula, and Cholera] to the Fair City of London\" (Punch, 3 July 1858) during the Great Stink.",
+    "vocabVault": [
+      {
+        "term": "Laissez-Faire",
+        "pronunciation": "less-ay-FAIR",
+        "def": "\"Leave alone\"—the early Victorian belief that government should keep taxes low and not interfere in town health."
+      },
+      {
+        "term": "Abominations",
+        "pronunciation": "uh-bom-ih-NAY-shunz",
+        "def": "Disgusting, foul waste and pollution dumped into the river."
+      },
+      {
+        "term": "Cesspool",
+        "pronunciation": "SESS-pool",
+        "def": "A stagnant pit of raw liquid sewage; Punch mocked the entire River Thames as one giant cesspool."
+      },
+      {
+        "term": "Opaque",
+        "pronunciation": "oh-PAYK",
+        "def": "Cloudy and impossible to see through because of thick brown sewage sediment."
+      }
+    ],
+    "extract": "By the 1850s, new flushing toilets in London homes were pouring raw waste straight into old drains and out into the River Thames. Worse still, private water companies pumped drinking water from that very same river! <em>Punch</em> magazine mocked \"Father Thames\" in sharp verse.\n\n<div class=\"reading-stanza\">\"Filthy river, filthy river,<br>Foul from London to the Nore,<br>What art thou but one vast gutter,<br>One tremendous common shore?\"</div>\n\n<div class=\"reading-stanza\">\"All her foul abominations,<br>Into thee the City throws.<br>Thou, vile cesspool, art the liquor,<br>Whence is made the beer we drink!\"</div>\n\nOn 7 July 1855, scientist Michael Faraday rode a Thames steamboat between London Bridge and Hungerford Bridge. Tearing up white cards, he dropped pieces into the pale brown water at every pier. Before each white card sank even one inch below the surface, thick sewage hid it completely from sight! Faraday wrote to <em>The Times</em> warning that a hot summer would bring a dreadful lesson. Three summers later, the scorching heatwave of July 1858 baked the river mud right beside Westminster. Even lime-soaked curtains could not block \"The Great Stink,\" forcing gasping MPs to fund new sewers in eighteen days.",
+    "parent_discussion": [
+      {
+        "question": "Why does the Punch poem call the River Thames \"one vast gutter\" and \"vile cesspool\"?",
+        "answer": "London dumped all its raw toilet and slaughterhouse waste into the tidal Thames while still drawing water for drinking and brewing from it."
+      },
+      {
+        "question": "Describe the simple visual experiment Professor Michael Faraday carried out from a Thames steamboat in July 1855.",
+        "answer": "He dropped torn white cards into the river at each pier; the sewage-choked water was so opaque the white cards vanished less than one inch down."
+      },
+      {
+        "question": "Look at John Leech’s 1858 Punch cartoon on the cover: which three deadly \"offspring\" is Father Thames introducing to London?",
+        "answer": "Diphtheria, Scrofula, and Cholera—warning MPs that river pollution bred killer urban diseases."
+      }
+    ],
+    "story_check": [
+      {
+        "question": "Why had the invention of flushing water-closets actually made the River Thames MORE polluted by the 1850s?",
+        "options": [
+          "Toilets used salty seawater",
+          "New flushing toilets flushed waste out of house cesspits straight into old river drains",
+          "Gong-fermors went on strike",
+          "Steamships dumped coal ash at Westminster"
+        ],
+        "correctIndex": 1,
+        "feedback": "Connecting flushing water-closets to old rainwater street drains flushed millions of gallons of raw sewage straight into the Thames."
+      },
+      {
+        "question": "How deep did Michael Faraday’s white card pieces sink in the Thames before disappearing completely from view?",
+        "options": [
+          "Less than one inch below the surface",
+          "Six feet down",
+          "Twenty feet to the riverbed",
+          "They floated cleanly to the sea"
+        ],
+        "correctIndex": 0,
+        "feedback": "Even in bright July sunshine, thick sewage hid Faraday’s white cards before they sank a single inch!"
+      },
+      {
+        "question": "Which scorching summer crisis finally forced MPs at Westminster to fund London’s new sewers in 1858?",
+        "options": [
+          "The Great Plague",
+          "The Great Frost",
+          "The Great Stink",
+          "The Broad Street Riot"
+        ],
+        "correctIndex": 2,
+        "feedback": "The July 1858 heatwave baked sewage on the Thames foreshore right outside Parliament during \"The Great Stink.\""
+      }
+    ],
+    "monday_cold_call": {
+      "question": "How did Michael Faraday test the Thames in July 1855, and what happened to his white cards?",
+      "answer": "He dropped torn white cards from a steamboat at each pier, and thick brown sewage hid them less than one inch below the surface."
+    },
+    "hinge_question": "<strong>Think:</strong> Why had flushing water-closets made the Thames worse in the 1840s and 1850s?<br><br><strong>Pair:</strong> Look closely at the 1858 Punch cartoon: which three diseases stand beside Father Thames?<br><br><strong>Share:</strong> Why did laissez-faire MPs ignore poor slums for years until the smell hit Westminster itself?",
+    "questions": [
+      "What does the Punch poem say is thrown into the Thames and brewed from its water?",
+      "How deep did Michael Faraday’s white cards sink before vanishing from sight?",
+      "What happened three summers after Faraday’s warning in July 1858?"
+    ],
+    "audio_file": "/audio/reading/water_and_sanitation/r3.mp3",
+    "studio_audio": "/audio/reading/water_and_sanitation/r3.mp3",
+    "studio_voice_label": "Studio Male Historian · Classic Literature"
+  },
+  {
+    "lesson_index": 4,
+    "lesson_id": "lesson_5",
+    "lesson_label": "Enquiry 5",
+    "short_tab_title": "5. Dr Snow & Broad Street",
+    "literary_mode": "storied_micro_history",
+    "provenance_tier": "storied_micro_history",
+    "source_type": "storied_micro_history",
+    "source_type_label": "True Historical Detective Story (Soho, 1854)",
+    "is_primary": false,
+    "is_adapted": false,
+    "book_title": "Beer, Nappies & the Pump Handle: Dr John Snow’s Soho Investigation",
+    "author": "The History Revision Hub (Grounded in John Snow’s 1855 Report & Rev. Whitehead’s Inquiry)",
+    "provenance_note": "True medical detective story reconstructed from Dr John Snow’s On the Mode of Communication of Cholera (1855) and Reverend Henry Whitehead’s parish investigation.",
+    "author_context": "When a sudden cholera outbreak killed more than 500 neighbours around Broad Street in Soho in ten days (August–September 1854), top Victorian doctors blamed foul-smelling air (\"miasma\"). Local physician Dr John Snow knocked on doors, mapped every death, and proved cholera lurked in contaminated drinking water.",
+    "cover_image": "/images/ks3_was/was_l5_b1_john_snow_portrait_1856.jpg",
+    "cover_caption": "Studio portrait photograph of London physician Dr John Snow (1856), who traced the 1854 Soho cholera epidemic to the contaminated Broad Street water pump.",
+    "vocabVault": [
+      {
+        "term": "Epidemiology",
+        "pronunciation": "ep-ih-dee-mee-OL-uh-jee",
+        "def": "The scientific detective work of mapping where and how diseases spread across a community."
+      },
+      {
+        "term": "Cholera",
+        "pronunciation": "KOL-uh-ruh",
+        "def": "A deadly water-borne bacterial infection causing rapid dehydration, spread by sewage in drinking water."
+      },
+      {
+        "term": "Outlier",
+        "pronunciation": "OWT-ly-er",
+        "def": "An unusual clue that breaks the normal pattern—like brewery workers surviving right beside the deadly pump."
+      },
+      {
+        "term": "Water-Borne",
+        "pronunciation": "WAW-ter-born",
+        "def": "Spread by swallowing contaminated water rather than breathing foul-smelling air."
+      }
+    ],
+    "extract": "At the end of August 1854, terror gripped the crowded Soho lanes around Broad Street in London. Within ten days, over five hundred neighbours died agonising deaths from cholera. Yellow warning flags flapped in the breeze while terrified families piled furniture onto handcarts to flee. Almost every top doctor in Britain blamed \"miasma\"—bad air rising from street drains.\n\nQuiet local doctor John Snow doubted that theory. Convinced that victims swallowed cholera in dirty water, Snow walked Soho’s cobbles with a notebook in hand. Drawing a black bar for every death on a street map, he uncovered a deadly bullseye clustering tightly around the Broad Street water pump.\n\nTwo striking outliers clinched Snow’s detective case. Right next to the pump stood the Lion Brewery, yet zero of its seventy workers had died. Why? They drank a daily allowance of brewery beer and never touched pump water! Nearby, a workhouse holding over five hundred inmates had its own private well and lost barely five residents. Digging later revealed a cracked brick cesspit at 40 Broad Street, where Frances Lewis had rinsed her sick baby’s nappies just three feet from the well! On 8 September, parish officials removed the pump handle.",
+    "parent_discussion": [
+      {
+        "question": "If foul air (\"miasma\") drifting across Soho had really caused cholera, what SHOULD have happened to the 70 workers at the Lion Brewery?",
+        "answer": "They breathed the exact same Soho air all day right beside Broad Street, so many should have died—yet zero died because they drank beer instead of pump water!"
+      },
+      {
+        "question": "How had cholera bacteria originally entered the Broad Street drinking well?",
+        "answer": "At 40 Broad Street, Frances Lewis rinsed the nappies of her sick baby into a cracked brick cesspit just three feet away from the underground well."
+      },
+      {
+        "question": "Even after parish officials took the handle off the Broad Street pump on 8 September 1854, why did the government’s Medical Board STILL reject Snow’s idea?",
+        "answer": "Pasteur’s Germ Theory (1861) and Koch’s microscope proof (1883) did not exist yet, so Snow could prove WHERE cholera spread statistically, but could not show the germ."
+      }
+    ],
+    "story_check": [
+      {
+        "question": "Roughly how many Soho residents died within ten days around Broad Street in late August 1854?",
+        "options": [
+          "Around 25 people",
+          "Over 500 people",
+          "50,000 people",
+          "Zero people"
+        ],
+        "correctIndex": 1,
+        "feedback": "More than 500 fatal attacks of cholera struck within 250 yards of the Broad Street junction in just ten days."
+      },
+      {
+        "question": "Why did none of the 70 men working at the Lion Brewery on Broad Street die of cholera?",
+        "options": [
+          "They wore rubber masks at work",
+          "They drank free brewery beer and never drank water from the Broad Street pump",
+          "They lived in Brighton and commuted by train",
+          "They burned coal fires outside the brewery door"
+        ],
+        "correctIndex": 1,
+        "feedback": "Brewery workers received a daily malt-liquor ration and never touched the contaminated street-pump water."
+      },
+      {
+        "question": "What was discovered underground just three feet away from the Broad Street pump well?",
+        "options": [
+          "An ancient Roman mosaic",
+          "A cracked cesspit beneath 40 Broad Street leaking contaminated baby-wash water",
+          "A broken gas main",
+          "Joseph Bazalgette’s brick sewer"
+        ],
+        "correctIndex": 1,
+        "feedback": "Reverend Henry Whitehead helped uncover the leaking cesspit at 40 Broad Street just three feet from the drinking well."
+      }
+    ],
+    "monday_cold_call": {
+      "question": "How did the 70 workers at Soho’s Lion Brewery prove Dr John Snow right and miasma theory wrong in 1854?",
+      "answer": "They breathed the exact same Broad Street air all day yet zero died, because they drank brewery beer instead of sewage-tainted pump water."
+    },
+    "hinge_question": "<strong>Think:</strong> How did Snow’s spot map pinpoint the Broad Street pump?<br><br><strong>Pair:</strong> Explain how BOTH the Lion Brewery AND the Poland Street Workhouse acted as natural \"control groups.\"<br><br><strong>Share:</strong> Why did doctors still doubt Snow until Louis Pasteur published Germ Theory seven years later in 1861?",
+    "questions": [
+      "Roughly how many people died around Broad Street in ten days in 1854?",
+      "Why did none of the seventy Lion Brewery workers catch cholera?",
+      "What had leaked from 40 Broad Street into the drinking well just three feet away?"
+    ],
+    "audio_file": "/audio/reading/water_and_sanitation/r4.mp3",
+    "studio_audio": "/audio/reading/water_and_sanitation/r4.mp3",
+    "studio_voice_label": "Studio Male Historian · Storied History"
+  },
+  {
+    "lesson_index": 5,
+    "lesson_id": "lesson_6",
+    "lesson_label": "Enquiry 6",
+    "short_tab_title": "6. Bazalgette’s Brick Sewers",
+    "literary_mode": "storied_micro_history",
+    "provenance_tier": "storied_micro_history",
+    "source_type": "storied_micro_history",
+    "source_type_label": "True Historical Story (1858–1875)",
+    "is_primary": false,
+    "is_adapted": false,
+    "book_title": "318 Million Bricks: Joseph Bazalgette & the Triumph Over Urban Disease",
+    "author": "The History Revision Hub (Grounded in Metropolitan Board of Works Archives)",
+    "provenance_note": "True historical story tracing Sir Joseph Bazalgette’s 1858–1875 London sewer construction, Germ Theory, and the compulsory 1875 Public Health Act.",
+    "author_context": "Provoked by the Great Stink of July 1858, Parliament hired Chief Engineer Joseph Bazalgette (1819–1891) to build 82 miles of giant brick intercepting sewers beneath London. Combined with Pasteur and Koch’s Germ Theory and the 1867 working-class vote, engineering and law finally conquered British cholera.",
+    "cover_image": "/images/ks3_was/was_l4_b4_joseph_bazalgette_portrait.jpg",
+    "cover_caption": "Portrait of Sir Joseph Bazalgette (1819–1891, Lock & Whitfield woodburytype), Chief Engineer whose 82-mile brick sewer network transformed London’s health.",
+    "vocabVault": [
+      {
+        "term": "Bazalgette",
+        "pronunciation": "baz-uhl-JET",
+        "def": "Sir Joseph Bazalgette, the tireless Victorian civil engineer who built London’s 82 miles of brick intercepting sewers."
+      },
+      {
+        "term": "Intercepting Sewers",
+        "pronunciation": "in-ter-SEP-ting SOO-erz",
+        "def": "Giant underground brick tunnels running east across London to catch waste before it reached the River Thames."
+      },
+      {
+        "term": "Portland Cement",
+        "pronunciation": "PORT-luhnd suh-MENT",
+        "def": "Super-strong, water-resistant cement tested batch by batch by Bazalgette so his brick tunnels never crumbled."
+      },
+      {
+        "term": "Compulsory",
+        "pronunciation": "kuhm-PUL-suh-ree",
+        "def": "Required by law for every town council—unlike the weak voluntary 1848 Public Health Act."
+      }
+    ],
+    "extract": "Inside Parliament in July 1858, heavy curtains soaked in lime could no longer block the stench rising off the baking River Thames. Gasping MPs passed a three-million-pound law in just eighteen days. They handed this huge task to Chief Engineer Joseph Bazalgette.\n\nTireless and bold, Bazalgette checked thousands of plans himself and tested every batch of strong Portland cement. Beneath London’s busy streets, teams of diggers built eighty-two miles of giant brick main sewers. Over a thousand miles of smaller street drains fed into them. Built with 318 million bricks, the tunnels caught London’s waste before it reached the river. Huge steam engines at Crossness—and coastal pumps like Eastney in Portsmouth—sent waste far out on the falling tide.\n\nMPs had built Bazalgette’s sewers to stop \"bad smells.\" Yet wherever the brick tunnels opened, water-borne cholera vanished! Soon lab science proved why. Louis Pasteur published Germ Theory in 1861, and Robert Koch found the cholera germ in 1883. Once town workers won the vote in 1867, Parliament passed the 1875 Public Health Act. Clean water and closed sewers became the law for every British town.",
+    "parent_discussion": [
+      {
+        "question": "Why does Bazalgette’s sewer network show that people can sometimes solve a crisis for the WRONG scientific reason?",
+        "answer": "MPs funded the £3 million sewers in 1858 to stop foul miasma smells at Westminster, yet physically separating sewage from drinking water ended cholera anyway!"
+      },
+      {
+        "question": "Why did Bazalgette insist on using 318 million bricks bonded with tested Portland cement and extra-wide oval tunnels?",
+        "answer": "Waterproof Portland cement stopped underground leaks, and building generously sized tunnels meant London’s Victorian sewers still work beneath the city today."
+      },
+      {
+        "question": "Why did it take science, engineering, AND working-class men winning the vote in 1867 to pass the compulsory 1875 Public Health Act?",
+        "answer": "Pasteur and Koch proved germs caused disease, Bazalgette proved sewers worked, and new working-class voters forced politicians to make clean water compulsory."
+      }
+    ],
+    "story_check": [
+      {
+        "question": "How many miles of giant main \"intercepting sewers\" did Joseph Bazalgette build beneath London?",
+        "options": [
+          "5 miles",
+          "82 miles (plus over 1,000 miles of street sewers)",
+          "500 miles across Scotland",
+          "12 miles of wooden pipes"
+        ],
+        "correctIndex": 1,
+        "feedback": "Bazalgette built 82 miles of giant brick intercepting tunnels connected to more than 1,100 miles of street drains."
+      },
+      {
+        "question": "Which two scientists proved Germ Theory (1861) and identified the specific cholera bacterium (1883)?",
+        "options": [
+          "Frontinus and Samuel Pepys",
+          "Louis Pasteur and Robert Koch",
+          "Michael Faraday and Benjamin Disraeli",
+          "Edwin Chadwick and King Edward III"
+        ],
+        "correctIndex": 1,
+        "feedback": "Louis Pasteur proved Germ Theory in 1861, and German scientist Robert Koch isolated the comma-shaped cholera germ in 1883."
+      },
+      {
+        "question": "What made the 1875 Public Health Act far more effective than the earlier 1848 Act?",
+        "options": [
+          "It banned flushing toilets",
+          "It was compulsory, forcing every council in Britain to provide clean water and closed sewers",
+          "It ordered street coal fires in every town",
+          "It applied only to Westminster Palace"
+        ],
+        "correctIndex": 1,
+        "feedback": "Unlike the weak voluntary 1848 law, the 1875 Public Health Act forced every town council to provide clean water and sewers."
+      }
+    ],
+    "monday_cold_call": {
+      "question": "How many bricks went into Joseph Bazalgette’s 82 miles of intercepting sewers, and which 1875 law made clean water compulsory nationwide?",
+      "answer": "318 million bricks bonded with Portland cement; Disraeli’s compulsory 1875 Public Health Act made clean water and sewers law across Britain."
+    },
+    "hinge_question": "<strong>Think:</strong> Name one breakthrough each in Science, Engineering, and Government between 1854 and 1883.<br><br><strong>Pair:</strong> Why did MPs build Bazalgette’s sewers for the wrong medical reason yet get the right result?<br><br><strong>Share:</strong> Which mattered most in conquering urban cholera: Snow, Bazalgette, Pasteur, or the 1875 Public Health Act?",
+    "questions": [
+      "How many miles of main brick intercepting sewers did Joseph Bazalgette build?",
+      "Which two scientists proved Germ Theory (1861) and found the cholera germ (1883)?",
+      "Why was the 1875 Public Health Act a turning point for every British town?"
+    ],
+    "audio_file": "/audio/reading/water_and_sanitation/r5.mp3",
+    "studio_audio": "/audio/reading/water_and_sanitation/r5.mp3",
+    "studio_voice_label": "Studio Male Historian · Storied History"
+  }
+]

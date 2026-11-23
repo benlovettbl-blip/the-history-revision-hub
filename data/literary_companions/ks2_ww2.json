@@ -1,0 +1,1135 @@
+[
+  {
+    "lesson_index": 0,
+    "lesson_id": "lesson_1",
+    "lesson_label": "Enquiry 1",
+    "short_tab_title": "1. Outbreak of War (1939)",
+    "literary_mode": "intimate_eyewitness",
+    "provenance_tier": "adapted_primary",
+    "source_type": "primary_speech",
+    "source_type_label": "Wartime Radio Broadcast (3 September 1939)",
+    "is_primary": true,
+    "is_adapted": true,
+    "book_title": "Prime Minister Neville Chamberlain’s Radio Broadcast to the Nation",
+    "author": "Neville Chamberlain (3 September 1939 • BBC Home Service)",
+    "provenance_note": "Lightly adapted for KS2 oral reading from Prime Minister Neville Chamberlain’s live radio broadcast of 3 September 1939.",
+    "author_context": "At 11:15 a.m. on Sunday 3 September 1939, British Prime Minister Neville Chamberlain spoke live from 10 Downing Street over the BBC wireless. German troops had invaded Poland two days earlier, and Adolf Hitler had ignored Britain’s final 11:00 a.m. deadline to withdraw.",
+    "cover_image": "/units/ks2_ww2/assets/neville_chamberlain_1939.jpg",
+    "cover_caption": "Formal studio portrait of Prime Minister Neville Chamberlain, who broadcast Britain’s declaration of war from 10 Downing Street on 3 September 1939.",
+    "vocabVault": [
+      {
+        "term": "Ambassador",
+        "pronunciation": "am-BASS-uh-der",
+        "def": "A senior diplomat sent to represent their country’s government in a foreign capital city."
+      },
+      {
+        "term": "Wireless",
+        "pronunciation": "WIRE-less",
+        "def": "The 1930s and 1940s British word for a family radio set."
+      },
+      {
+        "term": "Settlement",
+        "pronunciation": "SET-uhl-muhnt",
+        "def": "A peaceful agreement reached through talks rather than fighting."
+      },
+      {
+        "term": "Injustice",
+        "pronunciation": "in-JUS-tiss",
+        "def": "Unfair treatment that breaks people’s rights and freedom."
+      }
+    ],
+    "extract": "At 11:15 on Sunday morning, 3 September 1939, families across Britain gathered silently around their wooden wireless sets. Prime Minister Neville Chamberlain spoke live from London.\n\n\"I am speaking to you from the Cabinet Room at 10 Downing Street. This morning our Ambassador in Berlin handed the German leaders a final warning. Unless they promised by eleven o'clock to pull their troops out of Poland, war would begin. No such promise has come, and this country is now at war with Germany.\"\n\n\"You can imagine what a bitter blow it is to me that my long struggle for peace has failed. Up to the very last, a peaceful settlement with Poland was possible. Hitler would not have it.\"\n\n\"Now may God bless you all. It is evil things that we shall be fighting against: brute force, broken promises, injustice, and cruelty. Against them, I am sure that the right will win through.\" Minutes later, air-raid sirens wailed across London.",
+    "parent_discussion": [
+      {
+        "question": "What deadline had Britain given the German government on the morning of 3 September 1939, and why did war begin?",
+        "answer": "Britain demanded a promise by 11:00 a.m. that German troops would withdraw from Poland; when Hitler gave no reply, Britain and Germany were at war."
+      },
+      {
+        "question": "Why does Neville Chamberlain describe the outbreak of war as a \"bitter blow\" to him personally?",
+        "answer": "He had tried for months to keep peace in Europe through talks and felt deep sorrow that Hitler had broken his promises and invaded Poland."
+      },
+      {
+        "question": "Which \"evil things\" does Chamberlain tell families listening around their wireless sets that Britain is fighting against?",
+        "answer": "He names brute force, broken promises, injustice, and cruelty."
+      }
+    ],
+    "story_check": [
+      {
+        "question": "Which country had German troops invaded two days before Chamberlain’s broadcast?",
+        "options": [
+          "France",
+          "Poland",
+          "Norway",
+          "Belgium"
+        ],
+        "correctIndex": 1,
+        "feedback": "German troops invaded Poland on 1 September 1939, triggering Britain’s final warning."
+      },
+      {
+        "question": "From which London building did Neville Chamberlain speak to the nation?",
+        "options": [
+          "Buckingham Palace",
+          "St Paul’s Cathedral",
+          "10 Downing Street",
+          "Liverpool Street Station"
+        ],
+        "correctIndex": 2,
+        "feedback": "Chamberlain broadcast live from the Cabinet Room at 10 Downing Street at 11:15 a.m."
+      },
+      {
+        "question": "What happened across London just minutes after Chamberlain finished speaking?",
+        "options": [
+          "Streetlights were switched on",
+          "Air-raid sirens wailed",
+          "Victory bells rang out",
+          "Rationing ended"
+        ],
+        "correctIndex": 1,
+        "feedback": "The first air-raid sirens sounded across London minutes after war was declared."
+      }
+    ],
+    "monday_cold_call": {
+      "question": "What 11:00 a.m. demand did Adolf Hitler ignore on 3 September 1939, causing Neville Chamberlain to declare war?",
+      "answer": "Britain’s final warning demanding that Germany promise to pull its troops out of Poland."
+    },
+    "hinge_question": "<strong>Think:</strong> Why did Britain declare war on 3 September 1939?<br><br><strong>Pair:</strong> How do you think children and parents sitting around their living-room wireless felt when Chamberlain finished speaking?<br><br><strong>Share:</strong> Why did families immediately check their gas masks and blackout curtains after this broadcast?",
+    "questions": [
+      "From which room in London was Neville Chamberlain speaking on 3 September 1939?",
+      "Which country had German troops invaded, triggering Britain’s 11 o’clock deadline?",
+      "List three of the \"evil things\" Chamberlain says Britain is fighting against."
+    ],
+    "audio_file": "/audio/reading/ks2_ww2/r0.mp3",
+    "studio_audio": "/audio/reading/ks2_ww2/r0.mp3",
+    "studio_voice_label": "Studio Male Historian · KS2 Storyteller"
+  },
+  {
+    "lesson_index": 1,
+    "lesson_id": "lesson_2",
+    "lesson_label": "Enquiry 2",
+    "short_tab_title": "2. Pied Piper Evacuation",
+    "literary_mode": "storied_micro_history",
+    "provenance_tier": "storied_micro_history",
+    "source_type": "storied_micro_history",
+    "source_type_label": "True Historical Story (1–3 September 1939)",
+    "is_primary": false,
+    "is_adapted": false,
+    "book_title": "Cardboard Labels & Gas-Mask Boxes: The Morning of Operation Pied Piper",
+    "author": "The History Revision Hub (Grounded in IWM & Ministry of Health 1939 Records)",
+    "provenance_note": "True historical micro-story reconstructed from September 1939 railway dispatches, Ministry of Health packing lists, and Imperial War Museum evacuee records.",
+    "author_context": "Two days before war was declared, Britain launched Operation Pied Piper (1–3 September 1939). In just three days, 1.5 million schoolchildren, mothers with infants, and teachers boarded special trains out of big industrial cities toward safer country villages in Devon, Wales, and Sussex.",
+    "cover_image": "/units/ks2_ww2/assets/evacuees_railway_1939.jpg",
+    "cover_caption": "A London police sergeant bends down to check the tie-on luggage label on a toddler’s coat beside a train carriage during the September 1939 evacuation (Imperial War Museum).",
+    "vocabVault": [
+      {
+        "term": "Evacuee",
+        "pronunciation": "ee-VAK-yoo-ee",
+        "def": "A child or adult moved from a dangerous city to a safer country village during wartime."
+      },
+      {
+        "term": "Pied Piper",
+        "pronunciation": "PIDE PIE-per",
+        "def": "The secret government codename for moving 1.5 million people out of British cities in September 1939."
+      },
+      {
+        "term": "Lapel",
+        "pronunciation": "luh-PEL",
+        "def": "The folded front flap on a coat collar where each child’s cardboard name tag was tied."
+      },
+      {
+        "term": "Billeting Officer",
+        "pronunciation": "BIL-it-ing OFF-ih-ser",
+        "def": "A local volunteer who met trains at the village hall and matched evacuees with country host homes."
+      }
+    ],
+    "extract": "Dawn broke early on Friday 1 September 1939. Two days before Britain was even at war, Operation Pied Piper had begun. Across London, Manchester, and Glasgow, over a million children walked in crocodile lines toward smoky railway stations.\n\nEvery child wore a tough cardboard label tied to their coat lapel. It showed their full name, home street, and school. Over each shoulder bounced a square brown box holding a rubber gas mask. Inside one small bag sat spare socks, pyjamas, a toothbrush, an apple, and sandwiches. \"Pack nothing that melts easily,\" official leaflets warned parents.\n\nOn crowded platforms, mothers hugged their children tight as steam whistles shrieked. Hours later, the trains hissed to a stop in quiet country towns across Devon, Wales, and Sussex. Tired city children blinked at green hedges and cows they had never seen before. Inside village halls, Billeting Officers called out names, matching young evacuees with strangers’ homes.",
+    "parent_discussion": [
+      {
+        "question": "Why did Operation Pied Piper start on 1 September 1939, two days before Britain officially declared war?",
+        "answer": "The government feared enemy bombers might attack big cities right away, so moving 1.5 million people early kept railway lines clear and saved lives."
+      },
+      {
+        "question": "Which two items worn on every child’s coat or shoulder showed how carefully the trip was planned?",
+        "answer": "A tough tie-on cardboard label showing their name and school, and a square cardboard box holding their rubber gas mask."
+      },
+      {
+        "question": "Why did arriving at a country village hall feel like both an adventure and a worry for city children?",
+        "answer": "Many saw green fields and farm cows for the first time, yet they missed their parents and waited nervously to see who would take them home."
+      }
+    ],
+    "story_check": [
+      {
+        "question": "What was the government’s codename for the September 1939 evacuation of children?",
+        "options": [
+          "Operation Dynamo",
+          "Operation Pied Piper",
+          "Operation Overlord",
+          "Dig for Victory"
+        ],
+        "correctIndex": 1,
+        "feedback": "Operation Pied Piper moved 1.5 million people to safer country areas between 1 and 3 September 1939."
+      },
+      {
+        "question": "What hung in a square brown cardboard box over every evacuee’s shoulder?",
+        "options": [
+          "A wireless radio",
+          "A rubber gas mask",
+          "A pair of Wellington boots",
+          "A school textbook"
+        ],
+        "correctIndex": 1,
+        "feedback": "Every child had to carry their rubber gas mask in its cardboard box in case of poison-gas air raids."
+      },
+      {
+        "question": "Who met the evacuees at country village halls to match them with local host families?",
+        "options": [
+          "Air Raid Wardens",
+          "Billeting Officers",
+          "Factory managers",
+          "Codebreakers"
+        ],
+        "correctIndex": 1,
+        "feedback": "Billeting Officers matched arriving city children with country householders who had spare rooms."
+      }
+    ],
+    "monday_cold_call": {
+      "question": "Name two things every evacuee had to wear or carry over their shoulder during Operation Pied Piper in September 1939.",
+      "answer": "A tie-on cardboard name label on their coat lapel and a rubber gas mask inside its cardboard shoulder box."
+    },
+    "hinge_question": "<strong>Think:</strong> What details were written on every evacuee’s tie-on coat label?<br><br><strong>Pair:</strong> Why were parents warned not to pack foods that melted easily on the train?<br><br><strong>Share:</strong> Why did different evacuees have very different memories of country life?",
+    "questions": [
+      "What codename was given to the September 1939 evacuation?",
+      "What did every child carry inside the square brown box slung over their shoulder?",
+      "Who met the trains at country village halls to place children in homes?"
+    ],
+    "audio_file": "/audio/reading/ks2_ww2/r1.mp3",
+    "studio_audio": "/audio/reading/ks2_ww2/r1.mp3",
+    "studio_voice_label": "Studio Female Historian · KS2 Storyteller"
+  },
+  {
+    "lesson_index": 2,
+    "lesson_id": "lesson_3",
+    "lesson_label": "Enquiry 3",
+    "short_tab_title": "3. Marta Appel’s Memoir",
+    "literary_mode": "intimate_eyewitness",
+    "provenance_tier": "adapted_primary",
+    "source_type": "primary_memoir",
+    "source_type_label": "Refugee Eyewitness Memoir (Written 1940)",
+    "is_primary": true,
+    "is_adapted": true,
+    "book_title": "Marta Appel’s Eyewitness Memoir of Jewish Family Life in Germany (1933–1938)",
+    "author": "Marta Appel (1940 • Leo Baeck Institute Archive)",
+    "provenance_note": "Age-adapted for KS2 oral reading from Marta Appel’s 1940 refugee memoir held in the Leo Baeck Institute archive.",
+    "author_context": "Marta Appel lived with her husband and daughters in the German town of Dortmund. After escaping to safety before war broke out, she wrote down her memories in 1940 so people everywhere would understand how unfair Nazi rules step by step shut Jewish families out of everyday German life.",
+    "cover_image": "/units/ks2_ww2/assets/kracowski_family_bialystok_1935.jpg",
+    "cover_caption": "A pre-war European Jewish extended family portrait in a garden in 1935, showing grandparents, parents, teenagers, and young children seated together.",
+    "vocabVault": [
+      {
+        "term": "Boycott",
+        "pronunciation": "BOY-kot",
+        "def": "Refusing to buy goods from or enter shops owned by a targeted group of people."
+      },
+      {
+        "term": "Persecution",
+        "pronunciation": "per-sih-KYOO-shun",
+        "def": "Cruel and unfair treatment of people because of their religion or background."
+      },
+      {
+        "term": "Synagogue",
+        "pronunciation": "SIN-uh-gog",
+        "def": "A Jewish house of prayer, study, and community gathering."
+      },
+      {
+        "term": "Kristallnacht",
+        "pronunciation": "kris-TAHL-nakht",
+        "def": "The \"Night of Broken Glass\" in November 1938, when Nazi gangs attacked synagogues and Jewish shops."
+      }
+    ],
+    "extract": "\"Before 1933, the German town of Dortmund had been our happy home for many years. Neighbours smiled and greeted us warmly in the street. Our daughters loved their local school, and we felt proud of our town. Then, after the Nazi Party took power, invisible walls rose between us and people we had known all our lives.\"\n\n\"On 1 April 1933, men in uniforms stood outside Jewish shops holding angry signs. They warned shoppers not to go inside. Soon unfair new rules reached right into school classrooms. My daughters came home quiet and hurt because old friends had been told not to sit beside them.\"\n\n\"Park benches were painted with signs banning Jewish families from sitting down. One by one, swimming baths, libraries, and sports clubs locked us out. In November 1938, Nazi gangs smashed synagogues and shop windows during the Night of Broken Glass. Step by step, cruel laws made loyal families feel like strangers at home.\"",
+    "parent_discussion": [
+      {
+        "question": "How does Marta Appel describe her family’s everyday life in Dortmund before 1933?",
+        "answer": "They lived happily alongside friendly neighbours, their daughters loved school, and they felt completely part of their German hometown."
+      },
+      {
+        "question": "What does Marta Appel mean when she writes that \"invisible walls rose\" between neighbours after 1933?",
+        "answer": "Unfair Nazi rules and fear pushed neighbours and schoolfriends apart, shutting Jewish children and adults out of shops, parks, and friendships."
+      },
+      {
+        "question": "Why is it important to learn about ordinary Jewish family life before studying the Second World War?",
+        "answer": "It reminds us that Jewish people were ordinary schoolchildren, shopkeepers, and neighbours whose rights and homes were unfairly taken away."
+      }
+    ],
+    "story_check": [
+      {
+        "question": "In which German town did Marta Appel and her daughters live before escaping?",
+        "options": [
+          "Munich",
+          "Dortmund",
+          "Hamburg",
+          "Cologne"
+        ],
+        "correctIndex": 1,
+        "feedback": "Marta Appel lived with her husband and daughters in Dortmund."
+      },
+      {
+        "question": "What happened outside Jewish-owned shops on 1 April 1933?",
+        "options": [
+          "Free bread was handed out",
+          "Uniformed men held signs warning shoppers not to enter",
+          "Ration coupons were collected",
+          "Evacuee trains arrived"
+        ],
+        "correctIndex": 1,
+        "feedback": "Nazi men stood outside Jewish shops on 1 April 1933 ordering a boycott so customers stayed away."
+      },
+      {
+        "question": "Which public places shut their doors to Jewish families during the 1930s?",
+        "options": [
+          "Railway stations only",
+          "Swimming baths, libraries, and sports clubs",
+          "Coal mines and shipyards",
+          "Airfields and docks"
+        ],
+        "correctIndex": 1,
+        "feedback": "Jewish families were banned from park benches, swimming baths, libraries, and sports clubs."
+      }
+    ],
+    "monday_cold_call": {
+      "question": "What does Marta Appel mean by the \"invisible walls\" that rose in Dortmund after 1933?",
+      "answer": "Cruel Nazi rules and boycotts that separated Jewish families and schoolchildren from their former neighbours, parks, and friends."
+    },
+    "hinge_question": "<strong>Think:</strong> What happened outside Jewish shops on 1 April 1933?<br><br><strong>Pair:</strong> How did unfair rules change daily life for Jewish children at school and in public parks?<br><br><strong>Share:</strong> Why did thousands of parents desperately search for safe countries for their children after November 1938?",
+    "questions": [
+      "In which German city did Marta Appel and her family live before escaping?",
+      "What happened outside Jewish-owned shops on 1 April 1933?",
+      "Name three public places from which Jewish families were barred during the 1930s."
+    ],
+    "audio_file": "/audio/reading/ks2_ww2/r2.mp3",
+    "studio_audio": "/audio/reading/ks2_ww2/r2.mp3",
+    "studio_voice_label": "Studio Female Historian · KS2 Storyteller"
+  },
+  {
+    "lesson_index": 3,
+    "lesson_id": "lesson_4",
+    "lesson_label": "Enquiry 4",
+    "short_tab_title": "4. Vera & Kindertransport",
+    "literary_mode": "intimate_eyewitness",
+    "provenance_tier": "adapted_primary",
+    "source_type": "primary_testimony",
+    "source_type_label": "Parliamentary Speech & Kindertransport Record (1938–1939)",
+    "is_primary": true,
+    "is_adapted": true,
+    "book_title": "A Lifeline to Britain: The Kindertransport & Vera Löwyová’s Farewell in Prague",
+    "author": "Sir Samuel Hoare (Hansard, 21 Nov 1938) & Vera Gissing Testimony",
+    "provenance_note": "Combines Home Secretary Sir Samuel Hoare’s 21 November 1938 speech to Parliament with the documented Kindertransport journey of ten-year-old Vera Löwyová.",
+    "author_context": "Eleven days after Kristallnacht in November 1938, the British Parliament agreed to speed up entry for endangered children under seventeen. Known as the Kindertransport, this rescue saved nearly 10,000 mostly Jewish children—including ten-year-old Vera Löwyová and her sister Eva from Czechoslovakia.",
+    "cover_image": "/units/ks2_ww2/assets/kindertransport_harwich_dec1938.jpg",
+    "cover_caption": "Young Jewish refugee girls wearing numbered Kindertransport identity tags carry rolled blankets past a British police constable upon arriving at Harwich in December 1938.",
+    "vocabVault": [
+      {
+        "term": "Kindertransport",
+        "pronunciation": "KIN-der-trans-port",
+        "def": "The 1938–1939 rescue mission (\"Children’s Transport\") that brought nearly 10,000 endangered children to Britain."
+      },
+      {
+        "term": "Refugee",
+        "pronunciation": "ref-yoo-JEE",
+        "def": "Someone forced to leave their home country to escape danger, war, or persecution."
+      },
+      {
+        "term": "Guarantee",
+        "pronunciation": "gar-uhn-TEE",
+        "def": "The £50 promise raised by charities or sponsors to care for each refugee child in Britain."
+      },
+      {
+        "term": "Unaccompanied",
+        "pronunciation": "un-uh-KUM-puh-need",
+        "def": "Travelling without parents or adult family members."
+      }
+    ],
+    "extract": "Eleven days after the Night of Broken Glass in November 1938, MPs met in London. Home Secretary Sir Samuel Hoare spoke up for children in danger across Europe. \"Charities are ready to bring these children over here,\" he told the House. \"We shall find many homes ready to welcome them. I shall put nothing in their way.\"\n\nBritain dropped slow border checks for children under seventeen travelling alone. Kind sponsors promised fifty pounds to care for each child. Soon Kindertransport trains steamed toward Dutch ferries bound for Harwich in Essex. Nearly ten thousand children reached safety in Britain.\n\nIn Prague in summer 1939, ten-year-old Vera Löwyová packed one small bag. She tucked in warm clothes, family photos, and her diary. At Wilson Station, her parents blessed her through the train window. Grown-ups could not board those rescue trains. That brave goodbye saved Vera and her sister Eva, though their parents never escaped.",
+    "parent_discussion": [
+      {
+        "question": "What rule did the British Parliament relax in November 1938 so children could escape faster?",
+        "answer": "Britain waived slow individual travel visas for unaccompanied children under seventeen whenever charities or sponsors guaranteed £50 and a foster home."
+      },
+      {
+        "question": "Why did saying goodbye at Prague’s Wilson Station take extraordinary love and courage from Vera’s parents?",
+        "answer": "Parents were barred from boarding the Kindertransport trains, so they sent Vera and Eva to safety in a new country while staying behind in danger."
+      },
+      {
+        "question": "How was Vera’s train journey similar to—and very different from—British evacuees in Operation Pied Piper?",
+        "answer": "Both wore numbered tags and rode trains to foster homes, but Kindertransport children entered a foreign language while their parents remained trapped under Nazi rule."
+      }
+    ],
+    "story_check": [
+      {
+        "question": "Roughly how many children were rescued by the Kindertransport before war began?",
+        "options": [
+          "Around 500",
+          "Nearly 10,000",
+          "Over 500,000",
+          "1.5 million"
+        ],
+        "correctIndex": 1,
+        "feedback": "Nearly 10,000 mostly Jewish children under seventeen reached safety in Britain on the Kindertransport."
+      },
+      {
+        "question": "How much money had to be guaranteed for each child brought to Britain?",
+        "options": [
+          "Five shillings",
+          "Ten pounds",
+          "Fifty pounds",
+          "One thousand pounds"
+        ],
+        "correctIndex": 2,
+        "feedback": "Charities or kind British sponsors had to guarantee £50 to cover each child’s care."
+      },
+      {
+        "question": "Why did Vera Löwyová’s parents stay on the platform at Prague’s Wilson Station?",
+        "options": [
+          "They missed the train",
+          "Adults were not allowed to board Kindertransport rescue trains",
+          "They lived in Harwich already",
+          "The train was only for soldiers"
+        ],
+        "correctIndex": 1,
+        "feedback": "The British permit applied only to unaccompanied children under seventeen, so parents had to stay behind."
+      }
+    ],
+    "monday_cold_call": {
+      "question": "How many children were rescued by the Kindertransport, and why couldn’t their parents travel with them?",
+      "answer": "Nearly 10,000 children were rescued; Britain’s fast-track entry scheme only allowed unaccompanied children under seventeen."
+    },
+    "hinge_question": "<strong>Think:</strong> How many children were rescued by the Kindertransport between December 1938 and September 1939?<br><br><strong>Pair:</strong> Look at the Harwich arrival photo: what are the girls wearing around their necks, and why?<br><br><strong>Share:</strong> Why did Vera keep her childhood Czech diary for the rest of her life?",
+    "questions": [
+      "In what month and year did Parliament debate admitting unaccompanied child refugees?",
+      "What sum of money had to be guaranteed for each child brought to Britain?",
+      "From which railway station in Prague did ten-year-old Vera Löwyová depart?"
+    ],
+    "audio_file": "/audio/reading/ks2_ww2/r3.mp3",
+    "studio_audio": "/audio/reading/ks2_ww2/r3.mp3",
+    "studio_voice_label": "Studio Female Historian · KS2 Storyteller"
+  },
+  {
+    "lesson_index": 4,
+    "lesson_id": "lesson_5",
+    "lesson_label": "Enquiry 5",
+    "short_tab_title": "5. Winton’s 669 Children",
+    "literary_mode": "intimate_eyewitness",
+    "provenance_tier": "adapted_primary",
+    "source_type": "primary_testimony",
+    "source_type_label": "Rescue Letters & Scrapbook Record (1939)",
+    "is_primary": true,
+    "is_adapted": true,
+    "book_title": "Nicholas Winton’s Appeals from Prague & the Attic Scrapbook (1939)",
+    "author": "Nicholas Winton & Prague Rescue Volunteers (1939)",
+    "provenance_note": "Adapted for KS2 oral reading from Nicholas Winton’s 1939 appeal letters and Prague rescue scrapbook records.",
+    "author_context": "In December 1938, 29-year-old Londoner Nicholas Winton cancelled a skiing holiday in Switzerland after his friend Martin Blake asked him to help in Prague. Working alongside brave volunteers Doreen Warriner and Trevor Chadwick, Winton organised eight rescue trains from Czechoslovakia to London before war sealed the borders.",
+    "cover_image": "/units/ks2_ww2/assets/nicholas_winton_memorial_prague_station.jpg",
+    "cover_caption": "Flor Kent’s bronze statue on Platform 1 of Prague Main Station honouring Sir Nicholas Winton alongside two young children and a suitcase.",
+    "vocabVault": [
+      {
+        "term": "Humanitarian",
+        "pronunciation": "hyoo-man-ih-TAIR-ee-uhn",
+        "def": "Someone who steps forward unselfishly to save lives and help people in danger."
+      },
+      {
+        "term": "Foster Family",
+        "pronunciation": "FOSS-ter FAM-ih-lee",
+        "def": "A family who opens their home to care for a child separated from their own parents."
+      },
+      {
+        "term": "Volunteer",
+        "pronunciation": "vol-uhn-TEER",
+        "def": "Someone who chooses freely to help others without being ordered or paid."
+      },
+      {
+        "term": "Bystander",
+        "pronunciation": "BY-stan-der",
+        "def": "Someone who sees danger or unfairness happening but does nothing to help."
+      }
+    ],
+    "extract": "In December 1938, young London worker Nicholas Winton cancelled his ski trip to Switzerland. Instead, his friend Martin Blake asked him to visit snowy camps in Prague. Hundreds of worried parents begged Winton to save their children.\n\nSitting at a hotel dining table in Prague, Winton wrote urgent letters back to Britain. \"Hundreds of mothers and fathers queue in the snow to list their children’s names,\" he wrote. \"No group is running a Czech children’s transport yet, so we must build it ourselves. All a child needs for safety is one kind home and fifty pounds.\"\n\nIn Prague, Doreen Warriner sorted travel passes while teacher Trevor Chadwick guided children onto trains. Between March and August 1939, eight trains brought 669 children safely to London. Sadly, war stopped a ninth train on 1 September 1939. For almost fifty years, Winton kept his rescue scrapbook hidden quietly in his attic.",
+    "parent_discussion": [
+      {
+        "question": "Why did Nicholas Winton cancel his skiing trip in December 1938, and who worked beside him in Prague?",
+        "answer": "His friend Martin Blake asked him to witness the refugee crisis in Prague, where Winton teamed up with Doreen Warriner and Trevor Chadwick."
+      },
+      {
+        "question": "Why was the ninth rescue train on 1 September 1939 never able to leave Prague?",
+        "answer": "German troops invaded Poland that morning, starting the Second World War and immediately closing all borders."
+      },
+      {
+        "question": "What does keeping his scrapbook quiet in the attic for nearly fifty years show about Nicholas Winton?",
+        "answer": "He rescued children out of kindness rather than seeking fame, believing ordinary people should act whenever lives can be saved."
+      }
+    ],
+    "story_check": [
+      {
+        "question": "How many children reached London safely on the eight trains organised by Winton and his team?",
+        "options": [
+          "120 children",
+          "669 children",
+          "2,500 children",
+          "10,000 children"
+        ],
+        "correctIndex": 1,
+        "feedback": "Eight rescue trains from Prague carried 669 children safely to London Liverpool Street between March and August 1939."
+      },
+      {
+        "question": "Which two volunteers worked on the ground in Prague getting permits and putting children onto trains?",
+        "options": [
+          "Alan Turing and Joan Clarke",
+          "Doreen Warriner and Trevor Chadwick",
+          "Neville Chamberlain and Lord Woolton",
+          "Edward Murrow and Herbert Mason"
+        ],
+        "correctIndex": 1,
+        "feedback": "Doreen Warriner negotiated travel papers while schoolteacher Trevor Chadwick escorted children onto the Prague trains."
+      },
+      {
+        "question": "Where did Nicholas Winton keep his scrapbook of rescued children’s names for nearly fifty years?",
+        "options": [
+          "On display in Parliament",
+          "Tucked quietly in his attic",
+          "Locked in a bank vault in Switzerland",
+          "At Prague railway station"
+        ],
+        "correctIndex": 1,
+        "feedback": "Winton kept the scrapbook quietly in his attic at home until his wife Grete found it in 1988."
+      }
+    ],
+    "monday_cold_call": {
+      "question": "How many children escaped from Prague on the eight trains organised by Nicholas Winton, Doreen Warriner, and Trevor Chadwick?",
+      "answer": "669 children reached safety in Britain before war closed the borders on 1 September 1939."
+    },
+    "hinge_question": "<strong>Think:</strong> How many children escaped from Prague on the eight trains organised by Winton’s team?<br><br><strong>Pair:</strong> Why was rescue work always a team effort involving Czech parents, Prague volunteers, and British foster homes?<br><br><strong>Share:</strong> What is the difference between a bystander and an upstander?",
+    "questions": [
+      "Where did Nicholas Winton set up his first makeshift office in Prague in December 1938?",
+      "Name two other British volunteers who worked on the ground in Prague alongside Winton.",
+      "How many children reached Britain safely on the eight Prague trains in 1939?"
+    ],
+    "audio_file": "/audio/reading/ks2_ww2/r4.mp3",
+    "studio_audio": "/audio/reading/ks2_ww2/r4.mp3",
+    "studio_voice_label": "Studio Male Historian · KS2 Storyteller"
+  },
+  {
+    "lesson_index": 5,
+    "lesson_id": "lesson_6",
+    "lesson_label": "Enquiry 6",
+    "short_tab_title": "6. Murrow on the Blitz",
+    "literary_mode": "intimate_eyewitness",
+    "provenance_tier": "adapted_primary",
+    "source_type": "primary_testimony",
+    "source_type_label": "Live Rooftop Radio Broadcast (September 1940)",
+    "is_primary": true,
+    "is_adapted": true,
+    "book_title": "\"This Is London\": Rooftop Radio Dispatches from the Blitz",
+    "author": "Edward R. Murrow (September 1940 • CBS Radio London)",
+    "provenance_note": "Adapted for KS2 oral reading from American broadcaster Edward R. Murrow’s live September 1940 London dispatches.",
+    "author_context": "During the Blitz (September 1940 – May 1941), American reporter Edward R. Murrow stood on London rooftops in a tin helmet holding a live microphone. Listeners across the world heard anti-aircraft guns booming behind his famous opening words: \"This is London.\"",
+    "cover_image": "/units/ks2_ww2/assets/st_pauls_survives_blitz_1940.jpg",
+    "cover_caption": "Herbert Mason’s famous photograph of St Paul’s Cathedral dome rising unbroken through thick smoke during the London Blitz on 29 December 1940.",
+    "vocabVault": [
+      {
+        "term": "The Blitz",
+        "pronunciation": "BLITS",
+        "def": "From the German word for \"lightning\": the heavy night bombing of British cities from September 1940 to May 1941."
+      },
+      {
+        "term": "Blackout",
+        "pronunciation": "BLAK-owt",
+        "def": "The strict wartime law ordering every window, streetlamp, and headlamp to be covered after dark."
+      },
+      {
+        "term": "Anderson Shelter",
+        "pronunciation": "AN-der-suhn SHEL-ter",
+        "def": "A curved steel shelter half-buried in a back garden and covered with soil to protect families from bomb blasts."
+      },
+      {
+        "term": "ARP Warden",
+        "pronunciation": "AY-AR-PEE WOR-duhn",
+        "def": "An Air Raid Precautions volunteer in a steel helmet who checked blackout curtains and guided neighbours to shelters."
+      }
+    ],
+    "extract": "\"This is London. Tonight there is only the steady hum of bombers high above the clouds. Searchlights sweep the dark sky, and big guns bark sharply in the parks. Down in the blacked-out streets, not a strip of light shows behind heavy curtains. If anyone strikes a match outdoors, the Air Raid Warden calls out at once, 'Put that light out!'\"\n\n\"Earlier tonight I walked down into a deep Tube station and past garden Anderson shelters covered with soil. Whole families were settling down for sleep with blankets, flasks of hot tea, and knitting. Nobody pushed or panicked on the dark steps. Tired neighbours simply helped each other carry tin hats and sleepy children underground.\"\n\n\"When dawn comes after an all-night raid, shopkeepers sweep broken glass off the pavement. Over empty window frames, they hang cheerful signs saying, 'More Open Than Usual.' Brick buildings shatter every night across London, yet the quiet courage of ordinary people refuses to crack.\"",
+    "parent_discussion": [
+      {
+        "question": "Why was even a tiny strip of light around a window curtain or match dangerous during the Blitz?",
+        "answer": "Enemy bomber crews flying overhead in the dark used lit windows, streetlights, and rivers to spot city targets below."
+      },
+      {
+        "question": "Where did Edward R. Murrow see London families sheltering at night, and what did they carry down with them?",
+        "answer": "In deep Underground Tube stations and earth-covered garden Anderson shelters, carrying blankets, flasks of hot tea, and knitting."
+      },
+      {
+        "question": "What did shopkeepers mean by hanging signs saying \"More Open Than Usual\" after a night bombing raid?",
+        "answer": "Even though bomb blasts had blown out their glass shopfronts, they used humour and grit to show they were still open for business."
+      }
+    ],
+    "story_check": [
+      {
+        "question": "Who patrolled dark streets shouting \"Put that light out!\" if any chink of light showed?",
+        "options": [
+          "Billeting Officers",
+          "ARP Wardens",
+          "Merchant sailors",
+          "Land Girls"
+        ],
+        "correctIndex": 1,
+        "feedback": "ARP (Air Raid Precautions) Wardens patrolled streets in steel helmets to enforce the nightly blackout."
+      },
+      {
+        "question": "Why were garden Anderson shelters half-buried and covered on top with thick soil?",
+        "options": [
+          "To keep milk cold in summer",
+          "To absorb shockwaves and flying shrapnel from nearby bomb blasts",
+          "To hide secret radio transmitters",
+          "To store coal for trains"
+        ],
+        "correctIndex": 1,
+        "feedback": "Curved corrugated steel covered in earth absorbed blast waves and flying debris remarkably well."
+      },
+      {
+        "question": "What humorous sign did London shopkeepers hang over smashed window frames after raids?",
+        "options": [
+          "Closed Until Peace",
+          "Dig for Victory",
+          "More Open Than Usual",
+          "Action This Day"
+        ],
+        "correctIndex": 2,
+        "feedback": "Shopkeepers joked they were \"More Open Than Usual\" because their glass windows had been blown clean out!"
+      }
+    ],
+    "monday_cold_call": {
+      "question": "Name the two places Edward R. Murrow saw London families sleeping during Blitz air raids, and explain why windows had to be blacked out.",
+      "answer": "Underground Tube stations and garden Anderson shelters; blackout curtains hid cities from night bombers overhead."
+    },
+    "hinge_question": "<strong>Think:</strong> Which British cities besides London were heavily bombed during the Blitz (think of ports and factories)?<br><br><strong>Pair:</strong> Compare sleeping in a damp garden Anderson shelter with sleeping on a crowded Tube platform.<br><br><strong>Share:</strong> Did German bombing succeed in breaking British morale?",
+    "questions": [
+      "Who patrolled dark streets to make sure no light escaped from windows?",
+      "Name the two types of shelters Edward R. Murrow visited in this broadcast.",
+      "What sign did shopkeepers hang outside shops with shattered windows?"
+    ],
+    "audio_file": "/audio/reading/ks2_ww2/r5.mp3",
+    "studio_audio": "/audio/reading/ks2_ww2/r5.mp3",
+    "studio_voice_label": "Studio Male Historian · KS2 Storyteller"
+  },
+  {
+    "lesson_index": 6,
+    "lesson_id": "lesson_7",
+    "lesson_label": "Enquiry 7",
+    "short_tab_title": "7. Song of Potato Pete",
+    "literary_mode": "verbatim_literature",
+    "provenance_tier": "verbatim_literature",
+    "source_type": "literary_verse",
+    "source_type_label": "Wartime Kitchen Front Song & Rhyme (1941)",
+    "is_primary": true,
+    "is_adapted": false,
+    "book_title": "\"The Song of Potato Pete\": Rationing & Dig for Victory on the Kitchen Front",
+    "author": "Ministry of Food \"Kitchen Front\" Rhyme (1941 • Crown Copyright Expired)",
+    "provenance_note": "Features the authentic 1941 Ministry of Food \"Song of Potato Pete\" rhyme (Crown Copyright expired) alongside KS2 rationing context.",
+    "author_context": "Before 1939, ships brought more than two-thirds of Britain’s food across the seas. When German U-boat submarines attacked Atlantic supply ships, Minister of Food Lord Woolton introduced Ration Books in January 1940 and created cheerful characters like Doctor Carrot and Potato Pete to get children eating home-grown vegetables!",
+    "cover_image": "/units/ks2_ww2/assets/housewife_ration_book_grocer_1941.jpg",
+    "cover_caption": "A wartime shopper and grocer examine boxes of pancake mix (\"No Eggs Required\") and Bird’s Egg Substitute Powder beside counter scales in 1941.",
+    "vocabVault": [
+      {
+        "term": "Rationing",
+        "pronunciation": "RASH-uhn-ing",
+        "def": "Using coupon books so rich and poor families received the exact same fair weekly share of scarce food."
+      },
+      {
+        "term": "U-Boat",
+        "pronunciation": "YOO-boht",
+        "def": "A German submarine that hunted cargo ships carrying food and fuel across the Atlantic Ocean."
+      },
+      {
+        "term": "Coupons",
+        "pronunciation": "KOO-ponz",
+        "def": "Paper stamps inside a Ration Book that a grocer snipped or marked before selling sugar, butter, or meat."
+      },
+      {
+        "term": "Allotment",
+        "pronunciation": "uh-LOT-muhnt",
+        "def": "A patch of garden, park, or school field dug up to grow vegetables for \"Dig for Victory.\""
+      }
+    ],
+    "extract": "During the Second World War, German U-boats hunted cargo ships crossing the Atlantic Ocean. To share scarce food fairly, every person in Britain got a Ration Book of coupons. Rich dukes and poor dockworkers got the exact same weekly share of bacon, butter, sugar, tea, and cheese.\n\nHome-grown vegetables needed no ships and no coupons at all! On morning BBC wireless shows, a cartoon mascot named Potato Pete sang to children. Alongside his friend Doctor Carrot, he taught families this cheerful 1941 rhyme.\n\n<div class=\"reading-stanza\">\"Potatoes new, potatoes old.<br>Potato (in a salad) cold.<br>Potatoes baked or mashed or fried.<br>Potatoes whole, potato pied.<br>Enjoy them all, including chips,<br>Remembering spuds don't come in ships!\"</div>\n\nAcross Britain, families dug up flowerbeds, parks, and school fields to \"Dig for Victory.\" Bakers mixed mashed potato into pastry to save wheat flour. Grocers sold dried egg powder when fresh eggs ran short, and young children got free milk and orange juice.",
+    "parent_discussion": [
+      {
+        "question": "Look at the last line of Potato Pete’s rhyme: what did \"Remembering spuds don't come in ships!\" mean?",
+        "answer": "Potatoes grew right in British soil, so eating them instead of imported wheat saved dangerous Atlantic voyages for brave sailors."
+      },
+      {
+        "question": "How did Ration Books make sure wealthy families could not buy up all the butter, bacon, and sugar?",
+        "answer": "Money alone could not buy rationed food; shoppers had to hand over fixed weekly coupons, giving a duke and a dockworker the exact same share."
+      },
+      {
+        "question": "Why did many poorer British children actually grow taller and healthier during wartime rationing than in the 1930s?",
+        "answer": "Fair shares, fresh garden vegetables, wholemeal bread, and free priority milk and orange juice improved children’s diets across Britain."
+      }
+    ],
+    "story_check": [
+      {
+        "question": "Why did Potato Pete’s song tell children to eat more British \"spuds\"?",
+        "options": [
+          "Potatoes came from America by submarine",
+          "Spuds grew at home and didn’t need dangerous Atlantic ships",
+          "Potatoes cost ten coupons per pound",
+          "Children were banned from eating carrots"
+        ],
+        "correctIndex": 1,
+        "feedback": "Home-grown potatoes needed no cargo ships, freeing space on Atlantic convoys and sparing sailors from U-boats."
+      },
+      {
+        "question": "Which of these foods could families grow at home WITHOUT needing ration coupons?",
+        "options": [
+          "Sugar and tea",
+          "Potatoes and carrots",
+          "Imported bananas",
+          "Bacon and butter"
+        ],
+        "correctIndex": 1,
+        "feedback": "Home-grown vegetables like potatoes, carrots, and cabbages were never rationed."
+      },
+      {
+        "question": "Look at the 1941 grocer’s shop photo: what clever substitute did cooks use when fresh eggs were scarce?",
+        "options": [
+          "Egg Substitute Powder and dried egg",
+          "Melted chocolate bars",
+          "White chalk dust",
+          "Imported oranges"
+        ],
+        "correctIndex": 0,
+        "feedback": "Wartime cooks baked cakes and pancakes using dried egg or Bird’s Egg Substitute Powder!"
+      }
+    ],
+    "monday_cold_call": {
+      "question": "Finish Potato Pete’s 1941 rhyme—\"Enjoy them all, including chips, remembering...\"—and explain why!",
+      "answer": "\"...spuds don’t come in ships!\" Because British-grown potatoes didn’t risk German U-boat attacks in the Atlantic."
+    },
+    "hinge_question": "<strong>Think:</strong> Name four foods that required coupons from a Ration Book.<br><br><strong>Pair:</strong> Why were vegetables like carrots and potatoes NOT rationed?<br><br><strong>Share:</strong> How did digging up school playing fields for allotments help Merchant Navy sailors at sea?",
+    "questions": [
+      "What danger faced cargo ships bringing food across the Atlantic Ocean?",
+      "Why did Potato Pete’s rhyme remind families that \"spuds don't come in ships\"?",
+      "What extra healthy drinks were given to young children under rationing?"
+    ],
+    "audio_file": "/audio/reading/ks2_ww2/r6.mp3",
+    "studio_audio": "/audio/reading/ks2_ww2/r6.mp3",
+    "studio_voice_label": "Studio Female Historian · KS2 Storyteller"
+  },
+  {
+    "lesson_index": 7,
+    "lesson_id": "lesson_8",
+    "lesson_label": "Enquiry 8",
+    "short_tab_title": "8. Land Girls & ATA Pilots",
+    "literary_mode": "storied_micro_history",
+    "provenance_tier": "storied_micro_history",
+    "source_type": "storied_micro_history",
+    "source_type_label": "True Historical Story (1941–1944)",
+    "is_primary": false,
+    "is_adapted": false,
+    "book_title": "Tractors at Dawn & Solo Spitfires: British Women in Wartime Service",
+    "author": "The History Revision Hub (Grounded in IWM & Women’s Land Army Records)",
+    "provenance_note": "True historical micro-story drawn from Women’s Land Army archives, factory records, and Air Transport Auxiliary pilot Maureen Dunlop’s wartime service.",
+    "author_context": "In December 1941, Britain became the first country in history to conscript unmarried women aged 20 to 30 into war work. Over seven million British women powered farms, munitions factories, radar stations, and the Air Transport Auxiliary.",
+    "cover_image": "/units/ks2_ww2/assets/land_girl_tractor_ww2.jpg",
+    "cover_caption": "Original wartime colour photograph of a Women’s Land Army (\"Land Girl\") worker in her green jumper, beret, and breeches seated on a farm tractor.",
+    "vocabVault": [
+      {
+        "term": "Conscription",
+        "pronunciation": "kuhn-SKRIP-shun",
+        "def": "A wartime law calling citizens of certain ages into the armed forces or vital war jobs."
+      },
+      {
+        "term": "Munitions",
+        "pronunciation": "myoo-NISH-uhnz",
+        "def": "Shells, bullets, bombs, and military equipment built inside war factories."
+      },
+      {
+        "term": "Land Girls",
+        "pronunciation": "LAND GURLZ",
+        "def": "Over 80,000 members of the Women’s Land Army who ran British farms to feed the nation."
+      },
+      {
+        "term": "Auxiliary",
+        "pronunciation": "awg-ZIL-yuh-ree",
+        "def": "Trained support branches—such as the ATA ferry pilots—working alongside the armed forces."
+      }
+    ],
+    "extract": "Before dawn on icy mornings in 1942, city shop girls pulled on green jumpers and muddy boots. Over eighty thousand young women had joined the Women’s Land Army. Millions of men were away fighting overseas. In December 1941, a new law called single women aged twenty to thirty into war work.\n\nOut in heavy clay fields, \"Land Girls\" cranked farm tractors into life. They milked cows by lantern light and chopped wood for coal mines. Every autumn, they brought in the wheat harvest so Britain would not starve.\n\nInside noisy war workshops, women in yellow headscarves packed shells and built Spitfire wings. Even bolder were women pilots like Maureen Dunlop in the Air Transport Auxiliary. Climbing alone into new Spitfires and big bombers without radios, they flew planes straight to RAF bases. They flew through thick fog using only paper maps. Across farms, workshops, and skies, seven million women kept Britain strong.",
+    "parent_discussion": [
+      {
+        "question": "Why did Britain pass a law in December 1941 calling unmarried women aged 20 to 30 into war work?",
+        "answer": "Millions of men were away serving in the armed forces, so women were urgently needed to grow food, build planes and shells, and run defence services."
+      },
+      {
+        "question": "What tough outdoor jobs did former city workers master in the Women’s Land Army?",
+        "answer": "Driving heavy tractors through clay fields, milking cows before dawn, felling timber, and bringing in the harvest."
+      },
+      {
+        "question": "How did women like pilot Maureen Dunlop and factory engineers change people’s old-fashioned ideas about women’s skills?",
+        "answer": "Flying Spitfires solo, operating heavy machinery, and running farms proved women could excel in tough jobs once reserved only for men."
+      }
+    ],
+    "story_check": [
+      {
+        "question": "Roughly how many women worked on British farms in the Women’s Land Army?",
+        "options": [
+          "Over 80,000",
+          "About 500",
+          "2,000",
+          "Ten million"
+        ],
+        "correctIndex": 0,
+        "feedback": "More than 80,000 \"Land Girls\" worked on British farms growing food and felling timber during WWII."
+      },
+      {
+        "question": "What remarkable job did Maureen Dunlop and female pilots in the Air Transport Auxiliary do?",
+        "options": [
+          "Drove London Underground trains",
+          "Flew brand-new Spitfires and bombers solo from factories to RAF bases",
+          "Captained Atlantic warships",
+          "Designed Ration Books"
+        ],
+        "correctIndex": 1,
+        "feedback": "ATA female pilots ferried new and repaired Spitfires and bombers from factory runways to RAF stations without radios!"
+      },
+      {
+        "question": "In total, roughly how many British women carried out war work across farms, factories, and services?",
+        "options": [
+          "One hundred thousand",
+          "Half a million",
+          "Seven million",
+          "Twenty million"
+        ],
+        "correctIndex": 2,
+        "feedback": "Over seven million British women worked across war industries, farms, and auxiliary services."
+      }
+    ],
+    "monday_cold_call": {
+      "question": "Name three vital wartime jobs carried out by British women after December 1941.",
+      "answer": "Farming in the Women’s Land Army (\"Land Girls\"), making shells and aircraft in munitions factories, and ferrying warplanes in the ATA."
+    },
+    "hinge_question": "<strong>Think:</strong> What choices of war work were given to women conscripted in December 1941?<br><br><strong>Pair:</strong> Which wartime job—Land Girl, munitions worker, or ATA Spitfire ferry pilot—do you think was hardest, and why?<br><br><strong>Share:</strong> How did women’s farm and factory work connect directly to winning the war?",
+    "questions": [
+      "In what month and year did Britain conscript unmarried women aged 20 to 30?",
+      "Roughly how many women served as \"Land Girls\" in the Women’s Land Army?",
+      "What job did female pilots in the Air Transport Auxiliary perform?"
+    ],
+    "audio_file": "/audio/reading/ks2_ww2/r7.mp3",
+    "studio_audio": "/audio/reading/ks2_ww2/r7.mp3",
+    "studio_voice_label": "Studio Female Historian · KS2 Storyteller"
+  },
+  {
+    "lesson_index": 8,
+    "lesson_id": "lesson_9",
+    "lesson_label": "Enquiry 9",
+    "short_tab_title": "9. Turing & Hut 8 Bombe",
+    "literary_mode": "storied_micro_history",
+    "provenance_tier": "storied_micro_history",
+    "source_type": "storied_micro_history",
+    "source_type_label": "True Historical Story (October 1941)",
+    "is_primary": false,
+    "is_adapted": false,
+    "book_title": "Midnight in Hut 8: Alan Turing, the Wrens & the Ticking Bombe",
+    "author": "The History Revision Hub (Grounded in TNA HW 1/109 & Bletchley Park Archives)",
+    "provenance_note": "True historical micro-story combining Bletchley Park Hut 8 records with Alan Turing’s declassified 21 October 1941 letter to Winston Churchill.",
+    "author_context": "At Bletchley Park in Buckinghamshire (codenamed \"Station X\"), nearly 10,000 staff—around three-quarters of them women—worked in wooden huts cracking secret German codes. Everyone signed the Official Secrets Act and kept silent for thirty years after 1945.",
+    "cover_image": "/units/ks2_ww2/assets/alan_turing_portrait.jpg",
+    "cover_caption": "Portrait photograph of mathematician Alan Turing (1912–1954), who led Hut 8 at Bletchley Park in breaking the German Navy’s Enigma code.",
+    "vocabVault": [
+      {
+        "term": "Enigma",
+        "pronunciation": "uh-NIG-muh",
+        "def": "The German code machine that used spinning lettered wheels and plugs to scramble secret radio messages."
+      },
+      {
+        "term": "Bombe",
+        "pronunciation": "BOM",
+        "def": "The ticking machine designed by Alan Turing and Gordon Welchman to hunt down daily Enigma settings."
+      },
+      {
+        "term": "Cipher",
+        "pronunciation": "SY-fer",
+        "def": "A secret method for turning readable words into scrambled code."
+      },
+      {
+        "term": "Wrens",
+        "pronunciation": "RENZ",
+        "def": "Members of the Women’s Royal Naval Service who operated Bletchley Park’s codebreaking machines."
+      }
+    ],
+    "extract": "Every night at the stroke of midnight, a race against time began inside wooden Hut 8 at Bletchley Park. Out at sea, German operators clicked their Enigma machines onto brand-new secret settings. Unless Britain’s codebreakers cracked the new cipher quickly, U-boats would ambush Allied food ships unseen.\n\nInside Hut 8, mathematician Alan Turing and fellow codebreaker Joan Clarke searched German weather reports for tiny clues. Next door, young women of the Royal Naval Service—known as \"Wrens\"—wired up dozens of spinning drums on giant Bombe machines. Tick-tick-tick went the brass wheels, testing thousands of scrambled letter patterns every minute.\n\nIn October 1941, a shortage of typists slowed Hut 8 down. Refusing to give up, Turing wrote straight to Prime Minister Winston Churchill: \"All night our work was held up for lack of staff.\" Churchill stamped a red label onto Turing’s letter: \"ACTION THIS DAY! Make sure they have all they want!\" Kept top secret for thirty years, Bletchley’s teamwork saved countless lives.",
+    "parent_discussion": [
+      {
+        "question": "Why did Alan Turing, Joan Clarke, and the Wrens have to start cracking Enigma all over again every midnight?",
+        "answer": "German radio operators switched their Enigma wheels and plugs to brand-new daily secret settings at midnight sharp."
+      },
+      {
+        "question": "What happened when Alan Turing broke normal rules and wrote directly to Prime Minister Winston Churchill in October 1941?",
+        "answer": "Churchill stamped \"ACTION THIS DAY!\" in red on the letter and ordered officials to give Bletchley Park everything it needed immediately."
+      },
+      {
+        "question": "Why couldn’t the women and men of Bletchley Park tell even their own mums and dads what they did until the 1970s?",
+        "answer": "Every worker signed the Official Secrets Act and faithfully kept their promise for thirty years to protect national security."
+      }
+    ],
+    "story_check": [
+      {
+        "question": "What was the job of the ticking Bombe machine designed by Alan Turing and Gordon Welchman?",
+        "options": [
+          "Dropping bombs on airfields",
+          "Testing thousands of letter patterns to find daily Enigma settings",
+          "Printing Ration Books",
+          "Sending BBC news broadcasts"
+        ],
+        "correctIndex": 1,
+        "feedback": "The Bombe spun dozens of wired drums to rapidly rule out wrong Enigma settings and find the day’s key."
+      },
+      {
+        "question": "Roughly what fraction of the 10,000 staff working at Bletchley Park were women?",
+        "options": [
+          "None at all",
+          "About one-tenth",
+          "Around three-quarters",
+          "Every single worker"
+        ],
+        "correctIndex": 2,
+        "feedback": "Around three-quarters of Bletchley Park’s workforce were women, including Wrens and codebreakers like Joan Clarke."
+      },
+      {
+        "question": "What urgent red-label order did Winston Churchill put on Alan Turing’s October 1941 letter?",
+        "options": [
+          "DIG FOR VICTORY!",
+          "PUT THAT LIGHT OUT!",
+          "ACTION THIS DAY!",
+          "KEEP CALM!"
+        ],
+        "correctIndex": 2,
+        "feedback": "Churchill’s famous \"ACTION THIS DAY!\" red sticker ordered top-priority staff and machines for Bletchley Park."
+      }
+    ],
+    "monday_cold_call": {
+      "question": "Why did Hut 8’s codebreakers race the clock every midnight, and what did Churchill stamp on Alan Turing’s 1941 letter?",
+      "answer": "Germans changed Enigma settings every midnight; Churchill stamped \"ACTION THIS DAY!\" to give Bletchley top priority."
+    },
+    "hinge_question": "<strong>Think:</strong> Roughly what fraction of the 10,000 staff at Bletchley Park were women?<br><br><strong>Pair:</strong> How did breaking naval Enigma messages in Hut 8 protect Britain’s food ships?<br><br><strong>Share:</strong> Why can brains and teamwork be just as decisive in war as tanks and battleships?",
+    "questions": [
+      "What happened to German Enigma settings every night at midnight?",
+      "Who wired and tended the ticking Bombe machines alongside Hut 8?",
+      "What words did Winston Churchill stamp on Alan Turing’s October 1941 letter?"
+    ],
+    "audio_file": "/audio/reading/ks2_ww2/r8.mp3",
+    "studio_audio": "/audio/reading/ks2_ww2/r8.mp3",
+    "studio_voice_label": "Studio Male Historian · KS2 Storyteller"
+  },
+  {
+    "lesson_index": 9,
+    "lesson_id": "lesson_10",
+    "lesson_label": "Enquiry 10",
+    "short_tab_title": "10. Churchill on VE Day",
+    "literary_mode": "intimate_eyewitness",
+    "provenance_tier": "adapted_primary",
+    "source_type": "primary_speech",
+    "source_type_label": "VE Day Victory Speeches (8 May 1945)",
+    "is_primary": true,
+    "is_adapted": true,
+    "book_title": "\"This Is Your Victory!\": Winston Churchill’s VE Day Speeches",
+    "author": "Winston Churchill (8 May 1945 • BBC Broadcast & Whitehall Balcony)",
+    "provenance_note": "Lightly adapted for KS2 oral reading from Winston Churchill’s live radio broadcast and Whitehall balcony speech on 8 May 1945.",
+    "author_context": "At 3:00 p.m. on Tuesday 8 May 1945—Victory in Europe (VE) Day—Prime Minister Winston Churchill announced over the BBC that Nazi Germany had surrendered. Moments later he stepped onto a Whitehall balcony above vast cheering crowds.",
+    "cover_image": "/units/ks2_ww2/assets/churchill_ve_day_whitehall_1945.jpg",
+    "cover_caption": "Prime Minister Winston Churchill raises his right hand in the V-for-Victory sign from a Whitehall balcony above cheering crowds on VE Day, 8 May 1945.",
+    "vocabVault": [
+      {
+        "term": "VE Day",
+        "pronunciation": "VEE-EE DAY",
+        "def": "Victory in Europe Day (8 May 1945), celebrating the formal surrender of Nazi Germany."
+      },
+      {
+        "term": "Unconditional",
+        "pronunciation": "un-kuhn-DISH-uhn-uhl",
+        "def": "Complete surrender with no special deals or conditions attached."
+      },
+      {
+        "term": "Bunting",
+        "pronunciation": "BUN-ting",
+        "def": "Strings of colourful triangular flags hung across streets for VE Day parties."
+      },
+      {
+        "term": "Resolve",
+        "pronunciation": "rih-ZOLV",
+        "def": "Firm determination not to give in during hard and dangerous years."
+      }
+    ],
+    "extract": "At three o'clock on Tuesday 8 May 1945, huge cheering crowds packed Whitehall in London beneath red, white, and blue bunting. Over BBC loudspeakers, Prime Minister Winston Churchill announced Victory in Europe Day.\n\n\"Yesterday morning at General Eisenhower’s headquarters, German leaders signed an unconditional surrender of all land, sea, and air forces. Fighting in Europe ends officially at one minute after midnight tonight. Today will be celebrated as Victory in Europe Day.\"\n\n\"We may allow ourselves a brief time for rejoicing, yet hard tasks still lie ahead. Japan remains undefeated in the Far East, and at home we have bombed cities to rebuild and families to reunite.\"\n\nStepping out onto a high stone balcony above the roaring crowd, Churchill raised two fingers in his famous V-for-Victory sign: \"God bless you all! This is your victory! In all our long history we have never seen a greater day than this. Everyone, man or woman, has done their best.\"",
+    "parent_discussion": [
+      {
+        "question": "When the crowd cheered Churchill on the Whitehall balcony, why did he tell them, \"This is your victory!\"?",
+        "answer": "Victory belonged to the whole nation—soldiers, sailors, aircrew, factory women, Land Girls, codebreakers, and families enduring rationing and air raids."
+      },
+      {
+        "question": "Why was VE Day on 8 May 1945 joyful and sad at the same time for many British families?",
+        "answer": "People danced at street parties because bombing in Europe was over, yet many mourned fallen loved ones and troops were still fighting Japan."
+      },
+      {
+        "question": "How did pulling together through wartime hardships inspire Britain to build a fairer country after 1945?",
+        "answer": "Having shared shelters, evacuation, and equal rations, Britons voted to rebuild bombed towns and create the free National Health Service in 1948."
+      }
+    ],
+    "story_check": [
+      {
+        "question": "On what exact date was Victory in Europe (VE) Day celebrated?",
+        "options": [
+          "3 September 1939",
+          "6 June 1944",
+          "8 May 1945",
+          "15 August 1945"
+        ],
+        "correctIndex": 2,
+        "feedback": "Victory in Europe (VE) Day was celebrated on Tuesday 8 May 1945."
+      },
+      {
+        "question": "Why wasn’t the entire Second World War completely over on VE Day?",
+        "options": [
+          "Fighting in France was still going on",
+          "Japan had not yet surrendered in the Far East",
+          "German U-boats refused to stop",
+          "Italy had just entered the war"
+        ],
+        "correctIndex": 1,
+        "feedback": "War in the Far East against Japan continued for three more months until VJ Day in August 1945."
+      },
+      {
+        "question": "What four-word tribute did Churchill shout to the ordinary citizens packed along Whitehall?",
+        "options": [
+          "\"Dig for victory now!\"",
+          "\"This is your victory!\"",
+          "\"Put that light out!\"",
+          "\"Action this very day!\""
+        ],
+        "correctIndex": 1,
+        "feedback": "Churchill told the cheering crowd, \"This is your victory!\" because every citizen had played a part."
+      }
+    ],
+    "monday_cold_call": {
+      "question": "What happened on 8 May 1945, and why did Churchill tell the Whitehall crowd \"This is your victory\"?",
+      "answer": "Nazi Germany surrendered unconditionally (VE Day), and Churchill thanked ordinary citizens on the Home Front as well as the armed forces."
+    },
+    "hinge_question": "<strong>Think:</strong> Why wasn’t the entire Second World War completely over on 8 May 1945?<br><br><strong>Pair:</strong> What did Churchill mean when he told ordinary men and women in Whitehall, \"This is your victory\"?<br><br><strong>Share:</strong> Why do communities across Britain still gather at war memorials each November?",
+    "questions": [
+      "On what exact date was Victory in Europe (VE) Day celebrated?",
+      "Which country was still fighting the Allies in the Far East in May 1945?",
+      "What famous four-word tribute did Churchill pay to the crowd in Whitehall?"
+    ],
+    "audio_file": "/audio/reading/ks2_ww2/r9.mp3",
+    "studio_audio": "/audio/reading/ks2_ww2/r9.mp3",
+    "studio_voice_label": "Studio Male Historian · KS2 Storyteller"
+  },
+  {
+    "lesson_index": 10,
+    "lesson_id": "lesson_11",
+    "lesson_label": "Enquiry 11",
+    "short_tab_title": "11. Windermere Children",
+    "literary_mode": "storied_micro_history",
+    "provenance_tier": "storied_micro_history",
+    "source_type": "storied_micro_history",
+    "source_type_label": "True Historical Story (August 1945)",
+    "is_primary": false,
+    "is_adapted": false,
+    "book_title": "Baskets of White Bread: The 300 Windermere Children Arrive in Cumbria",
+    "author": "The History Revision Hub (Grounded in ’45 Aid Society & LDHP Testimonies)",
+    "provenance_note": "True historical micro-story grounded in the documented testimonies of Ben Helfgott, Arek Hersh, and the Lake District Holocaust Project.",
+    "author_context": "In August 1945, Royal Air Force Stirling bombers flew 300 orphaned Jewish child Holocaust survivors from Prague to Carlisle. Welcomed at the peaceful Calgarth Estate beside Lake Windermere in Cumbria, these young survivors healed, learned English, and formed a lifelong family known as \"The Boys\" (including girls too).",
+    "cover_image": "/units/ks2_ww2/assets/windermere_children_airlift_prague_1945.jpg",
+    "cover_caption": "Young Holocaust survivors with string-tied and chalk-numbered suitcases (\"W 169\") check in with uniformed officials upon arriving at Carlisle RAF airfield from Prague in August 1945.",
+    "vocabVault": [
+      {
+        "term": "Liberation",
+        "pronunciation": "lib-uh-RAY-shun",
+        "def": "Being set free from Nazi camps and tyranny by Allied soldiers in 1945."
+      },
+      {
+        "term": "Calgarth Estate",
+        "pronunciation": "KAL-garth ess-TAYT",
+        "def": "The peaceful housing estate beside Lake Windermere where 300 child survivors recovered in 1945."
+      },
+      {
+        "term": "Sanctuary",
+        "pronunciation": "SANK-choo-er-ee",
+        "def": "A safe, welcoming place of peace and protection after terrible danger."
+      },
+      {
+        "term": "Testimony",
+        "pronunciation": "TESS-tih-muh-nee",
+        "def": "A survivor’s true, first-hand account of historical events they lived through."
+      }
+    ],
+    "extract": "On 14 August 1945, ten heavy Royal Air Force Stirling bombers roared down onto Carlisle airfield in northern England. Built for wartime bombing, these aircraft were flying a mission of mercy from Prague instead. Out stepped three hundred orphaned Jewish children and teenagers who had survived Nazi camps.\n\nCarrying small chalk-numbered suitcases, the youngsters rode coaches into the green hills beside Lake Windermere. At Calgarth Estate, fifteen-year-old Ben Helfgott and young Arek Hersh stared in wonder at their rooms. Crisp white sheets lay folded on every bed. Even more amazing were the dining tables, piled high with baskets of fresh white bread. After years of starvation, some boys hid spare slices under their pillows until they saw the bread never ran out.\n\nThere were no guards and no barbed wire. Guided gently by teacher Oscar Friedmann and artist Marie Paneth, the children painted, swam in the lake, and learned English. Calling themselves \"The Boys,\" they formed a lifelong family—and Ben Helfgott later captained Britain’s Olympic weightlifting team!",
+    "parent_discussion": [
+      {
+        "question": "Why was seeing RAF Stirling bombers land at Carlisle on 14 August 1945 so special?",
+        "answer": "Warplanes built for bombing were transformed into aircraft of mercy, flying 300 orphaned child survivors from Prague to safety."
+      },
+      {
+        "question": "Why did simple things at Calgarth Estate—like clean sheets and baskets of bread—astound the children?",
+        "answer": "After years of camp starvation and cruelty, endless fresh bread and unlocked doors proved they were truly safe and cared for."
+      },
+      {
+        "question": "How did carers Oscar Friedmann and Marie Paneth help the Windermere children rebuild their lives?",
+        "answer": "Through patience, art, football, swimming in Lake Windermere, and English lessons, helping young survivors regain trust and hope."
+      }
+    ],
+    "story_check": [
+      {
+        "question": "How did the 300 child survivors travel from Prague to Carlisle in August 1945?",
+        "options": [
+          "By Channel ferry to Dover",
+          "Airlifted aboard ten RAF Stirling bomber aircraft",
+          "By submarine across the North Sea",
+          "On steam trains through France"
+        ],
+        "correctIndex": 1,
+        "feedback": "Ten Royal Air Force Short Stirling bombers flew the 300 children on a mercy airlift from Prague to Carlisle."
+      },
+      {
+        "question": "Why did some newly arrived boys tuck slices of white bread under their pillows on the first night?",
+        "options": [
+          "For a midnight picnic game",
+          "Years of camp starvation made them fear food might run out again",
+          "To feed ducks on Lake Windermere",
+          "Because bread was rationed to one slice a week"
+        ],
+        "correctIndex": 1,
+        "feedback": "Carers deliberately kept dining baskets full of bread until the children trusted they would never starve again."
+      },
+      {
+        "question": "What sporting honour did fifteen-year-old Windermere survivor Ben Helfgott later achieve?",
+        "options": [
+          "Winning the FA Cup Final",
+          "Captaining Great Britain’s Olympic weightlifting team",
+          "Swimming the English Channel",
+          "Winning Wimbledon"
+        ],
+        "correctIndex": 1,
+        "feedback": "Ben Helfgott went on to captain Britain’s Olympic weightlifting team in 1956 and 1960!"
+      }
+    ],
+    "monday_cold_call": {
+      "question": "How did 300 child Holocaust survivors reach Cumbria in August 1945, and why were baskets of bread left piled on their tables?",
+      "answer": "RAF Stirling bombers flew them from Prague to Carlisle; plentiful bread reassured starving camp survivors they would never go hungry again."
+    },
+    "hinge_question": "<strong>Think:</strong> How were wartime RAF bombers used for a mission of mercy in August 1945?<br><br><strong>Pair:</strong> Compare the 1938–1939 Kindertransport with the August 1945 Windermere airlift.<br><br><strong>Share:</strong> What does Ben Helfgott’s life teach us about kindness and welcoming refugees?",
+    "questions": [
+      "Which RAF aircraft flew the 300 child survivors from Prague to Carlisle in August 1945?",
+      "What was the name of the estate beside Lake Windermere where they stayed?",
+      "Which Olympic team did Windermere survivor Ben Helfgott later captain?"
+    ],
+    "audio_file": "/audio/reading/ks2_ww2/r10.mp3",
+    "studio_audio": "/audio/reading/ks2_ww2/r10.mp3",
+    "studio_voice_label": "Studio Female Historian · KS2 Storyteller"
+  }
+]

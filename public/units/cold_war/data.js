@@ -309,8 +309,8 @@ export default {
   "lessons": [
     {
       "id": "lesson_1",
-      "title": "Ideological Clash: Why could Capitalism and Communism never peacefully coexist?",
-      "enquiryQuestion": "Why did irreconcilable economic and political philosophies make conflict between the USA and USSR inevitable after 1945?",
+      "title": "Ideological Clash: Capitalism vs Communism (1945)",
+      "enquiryQuestion": "Why did rival ideas turn the USA and USSR into enemies after 1945?",
       "card_image": "/images/gcse_cold_war/tehran_conference_1943.jpg",
       "card_position": "center 25%",
       "prologue": "In 1945, the defeat of Nazi Germany left two superpowers dominating the globe: capitalist America and communist Russia. Washington championed democracy, free markets, and individual liberty; Moscow demanded classless socialism and state control. Why was genuine, lasting peace between these two irreconcilable political ideologies impossible from the very beginning?",
@@ -1949,12 +1949,14 @@ export default {
       },
       "banner_image": "/images/upgraded/ks3-modern/cw_l1_banner_elbe_day_torgau_1945.jpg",
       "hero_image": "/images/upgraded/ks3-modern/cw_l1_banner_elbe_day_torgau_1945.jpg",
-      "banner_position": "center 30%"
+      "banner_position": "center 30%",
+      "enquiry": "Why did rival ideas turn the USA and USSR into enemies after 1945?",
+      "enquiry_question": "Why did rival ideas turn the USA and USSR into enemies after 1945?"
     },
     {
       "id": "lesson_2",
-      "title": "Yalta to Potsdam (1945): How did wartime allies become bitter rivals?",
-      "enquiryQuestion": "Why did the collaborative diplomacy of Yalta collapse into open suspicion and division at Potsdam within five months?",
+      "title": "From Yalta to Potsdam: End of the Grand Alliance (1945)",
+      "enquiryQuestion": "Why did wartime allies turn into bitter rivals between Yalta and Potsdam?",
       "card_image": "/images/gcse_cold_war/kt1/cw_l1_banner_cecilienhof_potsdam.jpg",
       "card_position": "center 30%",
       "prologue": "In early 1945, Churchill, Roosevelt, and Stalin met at Yalta, smiling for cameras as they carved up postwar Europe. But by the Potsdam conference in July, mistrust was toxic. With the American atomic bomb revealed and Soviet armies occupying Poland, the Grand Alliance fractured. How did wartime allies become bitter rivals?",
@@ -3615,12 +3617,14 @@ export default {
       },
       "banner_image": "/images/upgraded/ks3-modern/cw_l2_banner_potsdam_round_table_1945.jpg",
       "hero_image": "/images/upgraded/ks3-modern/cw_l2_banner_potsdam_round_table_1945.jpg",
-      "banner_position": "center 30%"
+      "banner_position": "center 30%",
+      "enquiry": "Why did wartime allies turn into bitter rivals between Yalta and Potsdam?",
+      "enquiry_question": "Why did wartime allies turn into bitter rivals between Yalta and Potsdam?"
     },
     {
       "id": "lesson_3",
-      "title": "The Iron Curtain & The Berlin Blockade (1948–1949): The first flashpoint.",
-      "enquiryQuestion": "How did Western containment and Stalin's land blockade of Berlin in 1948 cement the permanent division of Europe into armed blocs?",
+      "title": "The Iron Curtain & The Berlin Blockade (1946–1949)",
+      "enquiryQuestion": "How did containment and the Berlin Blockade divide Europe into rival blocs?",
       "card_image": "/images/ks3_cold_war/cw_l3_b4_eisenhower_shape_nato_nara.jpg",
       "card_position": "center center",
       "prologue": "In 1946, Churchill warned that an 'Iron Curtain' had descended across Europe. In 1948, Stalin severed all road and rail access to West Berlin, attempting to starve the Allied enclave into submission. Western pilots responded with the heroic Berlin Airlift. How did divided Berlin become the Cold War’s dangerous frontline?",
@@ -5334,12 +5338,14 @@ export default {
       },
       "banner_image": "/images/upgraded/ks3-modern/cw_l3_banner_berlin_airlift_tempelhof_1948.jpg",
       "hero_image": "/images/upgraded/ks3-modern/cw_l3_banner_berlin_airlift_tempelhof_1948.jpg",
-      "banner_position": "center 35%"
+      "banner_position": "center 35%",
+      "enquiry": "How did containment and the Berlin Blockade divide Europe into rival blocs?",
+      "enquiry_question": "How did containment and the Berlin Blockade divide Europe into rival blocs?"
     },
     {
       "id": "lesson_4",
-      "title": "Nuclear Brinkmanship: The Cuban Missile Crisis (1962).",
-      "enquiryQuestion": "How close did the world come to nuclear armageddon during the thirteen days of October 1962, and why did the crisis compel de-escalation?",
+      "title": "Nuclear Brinkmanship: The Cuban Missile Crisis (1962)",
+      "enquiryQuestion": "How close did Cuba bring nuclear war in 1962—and how was it avoided?",
       "card_image": "/images/gcse_cold_war/kt2/cw_l6_banner_us_navy_quarantine_1962.jpg",
       "card_position": "center center",
       "prologue": "In October 1962, American spy planes photographed Soviet nuclear missile sites under construction in Cuba, just ninety miles from Florida. For thirteen terrifying days, President Kennedy and Premier Khrushchev stood on the brink of global nuclear war. How close did humanity come to thermonuclear destruction during the Cuban Missile Crisis?",
@@ -7152,12 +7158,14 @@ export default {
       },
       "banner_image": "/images/upgraded/ks3-modern/cw_l4_banner_excomm_meeting_october_1962.jpg",
       "hero_image": "/images/upgraded/ks3-modern/cw_l4_banner_excomm_meeting_october_1962.jpg",
-      "banner_position": "center 35%"
+      "banner_position": "center 35%",
+      "enquiry": "How close did Cuba bring nuclear war in 1962—and how was it avoided?",
+      "enquiry_question": "How close did Cuba bring nuclear war in 1962—and how was it avoided?"
     },
     {
       "id": "lesson_5",
-      "title": "Proxy Wars: Why did the superpowers fight in Asia (Korea & Vietnam)?",
-      "enquiryQuestion": "Why did superpower nuclear stalemate in Europe displace catastrophic ideological warfare into Asia, and why did conventional military might fail?",
+      "title": "Cold War Proxy Wars in Asia: Korea & Vietnam (1950–1975)",
+      "enquiryQuestion": "Why did the Cold War turn into deadly wars in Korea and Vietnam?",
       "card_image": "/images/usa/kt3/usa_l11_b3_ranch_hand_c123_agent_orange_run.jpg",
       "card_position": "center center",
       "prologue": "Because direct war between nuclear-armed superpowers meant mutually assured destruction, the Cold War was fought through bloody proxy wars in Asia. From the frozen trenches of Korea to the dense jungles of Vietnam, millions of soldiers and civilians died in ideological conflicts. Why did the superpowers fight through Asian battlegrounds?",
@@ -8862,12 +8870,14 @@ export default {
       },
       "banner_image": "/images/upgraded/ks3-modern/cw_l5_banner_vietnam_uh1c_lai_khe_1967.jpg",
       "hero_image": "/images/upgraded/ks3-modern/cw_l5_banner_vietnam_uh1c_lai_khe_1967.jpg",
-      "banner_position": "center 42%"
+      "banner_position": "center 42%",
+      "enquiry": "Why did the Cold War turn into deadly wars in Korea and Vietnam?",
+      "enquiry_question": "Why did the Cold War turn into deadly wars in Korea and Vietnam?"
     },
     {
       "id": "lesson_6",
-      "title": "Fall of the Berlin Wall (1989) and the collapse of the Soviet Union (1991).",
-      "enquiryQuestion": "Why did the internal economic decay of the Soviet bloc and Gorbachev’s radical reforms culminate in the sudden collapse of European communism?",
+      "title": "Fall of the Berlin Wall & Collapse of the USSR (1989–1991)",
+      "enquiryQuestion": "Why did Soviet rule in Eastern Europe—and the USSR itself—collapse by 1991?",
       "card_image": "/images/gcse_cold_war/kt3/cw_l12_banner_brandenburg_gate_wall_1989.jpg",
       "card_position": "center 25%",
       "prologue": "By the 1980s, Soviet economic stagnation and citizen unrest undermined the Eastern Bloc. Soviet leader Mikhail Gorbachev introduced reforms of openness and restructuring, but in November 1989, ecstatic crowds dismantled the Berlin Wall. Within two years, the Soviet Union collapsed. Why did the mighty Soviet empire fall so rapidly?",
@@ -10510,12 +10520,14 @@ export default {
       },
       "banner_image": "/images/upgraded/ks3-modern/cw_l6_banner_berlin_wall_potsdamer_platz_1989.jpg",
       "hero_image": "/images/upgraded/ks3-modern/cw_l6_banner_berlin_wall_potsdamer_platz_1989.jpg",
-      "banner_position": "center 38%"
+      "banner_position": "center 38%",
+      "enquiry": "Why did Soviet rule in Eastern Europe—and the USSR itself—collapse by 1991?",
+      "enquiry_question": "Why did Soviet rule in Eastern Europe—and the USSR itself—collapse by 1991?"
     },
     {
       "id": "lesson_7",
-      "title": "Assessment: Was the Cold War ever truly 'cold'?",
-      "enquiryQuestion": "To what extent is the label 'Cold War' an inaccurate Eurocentric concept that obscures the devastating human toll of global proxy conflict?",
+      "title": "Synoptic Assessment: Reassessing the ‘Cold’ War (1945–1991)",
+      "enquiryQuestion": "Why do historians argue the ‘Cold War’ was never truly cold outside Europe?",
       "card_image": "/images/gcse_cold_war/kt3/cw_l9_b2_apollo_soyuz_docked_1975.jpg",
       "card_position": "center 40%",
       "prologue": "Between 1945 and 1991, the Cold War shaped global politics, espionage, nuclear weapons, and space exploration. While the superpowers never launched atomic missiles directly at each other, millions died in proxy conflicts and lived under authoritarian terror. Was the Cold War ever truly 'cold', or a global conflict in disguise?",
@@ -12161,7 +12173,9 @@ export default {
       },
       "banner_image": "/images/upgraded/ks3-modern/cw_l7_banner_crossroads_baker_1946.jpg",
       "hero_image": "/images/upgraded/ks3-modern/cw_l7_banner_crossroads_baker_1946.jpg",
-      "banner_position": "center 45%"
+      "banner_position": "center 45%",
+      "enquiry": "Why do historians argue the ‘Cold War’ was never truly cold outside Europe?",
+      "enquiry_question": "Why do historians argue the ‘Cold War’ was never truly cold outside Europe?"
     }
   ],
   "homepage_background": "/images/cold_war_cover.jpg",
@@ -12176,414 +12190,732 @@ export default {
       "lesson_index": 0,
       "lesson_id": "lesson_1",
       "lesson_label": "Enquiry 1",
-      "book_title": "The \"Long Telegram\" from Moscow vs Ambassador Novikov’s Washington Telegram (1946)",
-      "author": "George F. Kennan (22 Feb 1946) & Nikolai Novikov (27 Sept 1946 • Cold War Archives)",
-      "cover_image": "/images/cold_war/reichstag_soviet_flag_1945.jpg",
-      "cover_caption": "Yevgeny Khaldei’s iconic photograph of Red Army soldiers raising the Soviet flag above the ruined Reichstag in Berlin in May 1945 at the end of the war in Europe.",
-      "author_context": "Once their common enemy—Nazi Germany—lay defeated in May 1945, the wartime \"Grand Alliance\" between capitalist, multi-party America and communist, one-party Soviet Russia swiftly unravelled. Reading US diplomat George Kennan’s 8,000-word \"Long Telegram\" from Moscow alongside Soviet Ambassador Nikolai Novikov’s secret telegram from Washington in 1946 lets historians step inside the mutual fear and ideological suspicion of both capitals.",
-      "source_type": "primary_decree",
-      "source_type_label": "Dual Secret Diplomatic Telegrams (1946)",
+      "short_tab_title": "1. Kennan & Fulton (1946)",
+      "literary_mode": "intimate_eyewitness",
+      "provenance_tier": "adapted_primary",
+      "source_type": "primary_diary",
+      "source_type_label": "Moscow Dispatch & Fulton Speech (Feb–March 1946)",
       "is_primary": true,
-      "is_adapted": false,
-      "extract": "From American diplomat George F. Kennan’s confidential \"Long Telegram\" cabled from the US Embassy in Moscow to Washington (22 February 1946): \"At the bottom of the Kremlin’s neurotic view of world affairs is traditional and instinctive Russian sense of insecurity... Soviet leaders are committed fanatically to the belief that with the United States there can be no permanent modus vivendi [peaceful coexistence], that it is desirable and necessary that the internal harmony of our society be disrupted, our traditional way of life be destroyed, and the international authority of our state be broken, if Soviet power is to be secure. Yet Soviet power, unlike that of Hitlerite Germany, is neither schematic nor adventuristic: impervious to the logic of reason, it is highly sensitive to the logic of force, and can easily withdraw—and usually does—when strong resistance is encountered at any point.\"\n\nSeven months later, Soviet Ambassador Nikolai Novikov cabled Foreign Minister Molotov from Washington (27 September 1946): \"The foreign policy of the United States, which reflects the imperialist tendencies of American monopolistic capital, is characterized in the postwar period by a striving for world supremacy... Having emerged from the war untouched by invasion and holding a monopoly on the atomic bomb, the United States is ringing the Soviet Union with overseas air and naval bases in preparation for a future war against the USSR.\"",
+      "is_adapted": true,
+      "book_title": "Snow in Moscow, Thunder in Missouri: George Kennan & Winston Churchill (1946)",
+      "author": "George F. Kennan (Moscow, 22 Feb 1946) & Winston Churchill (Fulton, 5 March 1946)",
+      "provenance_note": "Calibrated for oral reading from US diplomat George Kennan’s February 1946 Moscow 'Long Telegram' memoirs and Winston Churchill’s March 1946 Fulton speech.",
+      "author_context": "Once Nazi Germany surrendered in May 1945, the wartime alliance between capitalist, democratic America and communist, one-party Soviet Russia swiftly froze. Inside the snowbound US Embassy in Moscow in February 1946, sick in bed with fever and sinus pain, diplomat George Kennan dictated an urgent 8,000-word warning—just eleven days before Winston Churchill stood in Fulton, Missouri, and gave the dividing line its immortal name.",
+      "cover_image": "/images/cold_war/reichstag_soviet_flag_1945.jpg",
+      "cover_caption": "Yevgeny Khaldei’s iconic photograph of Red Army soldiers raising the Soviet hammer-and-sickle flag above the ruined Reichstag in Berlin in May 1945.",
       "vocabVault": [
         {
           "term": "Capitalism vs Communism",
-          "def": "The ideological divide between Western multi-party democracy + private free-market ownership (USA/UK) and Soviet one-party rule + state-owned planned economy (USSR)."
+          "pronunciation": "KAP-ih-tul-iz-um / KOM-yoo-niz-um",
+          "def": "Rival worldviews: Western multi-party democracy and private free markets (USA/UK) versus Soviet one-party rule and state-owned industry (USSR)."
         },
         {
-          "term": "Long Telegram (Feb 1946)",
-          "def": "US diplomat George Kennan’s 8,000-word Moscow dispatch inspiring America’s Cold War policy of \"Containment\" (firmly blocking further Soviet expansion)."
+          "term": "George F. Kennan (Long Telegram)",
+          "pronunciation": "KEN-un",
+          "def": "US diplomat in Moscow whose February 1946 cable inspired America’s Cold War strategy of 'Containment'—blocking Soviet expansion without starting World War III."
         },
         {
-          "term": "Novikov Telegram (Sept 1946)",
-          "def": "Soviet Ambassador Nikolai Novikov’s mirror-image warning accusing post-war America of seeking global capitalist domination with atomic weapons."
+          "term": "Iron Curtain",
+          "pronunciation": "EYE-urn KUR-tin",
+          "def": "Winston Churchill’s 5 March 1946 metaphor for the guarded political and ideological border splitting Soviet-controlled Eastern Europe from the West."
         },
         {
-          "term": "Security Dilemma",
-          "def": "When defensive steps taken by one superpower (e.g. Stalin’s buffer zone or US airbases/atomic bombs) look aggressive to the rival, triggering an endless spiral of mistrust."
+          "term": "Nikolai Novikov",
+          "pronunciation": "NOH-vee-kof",
+          "def": "Soviet Ambassador in Washington whose September 1946 telegram accused America of using overseas bases and atomic bombs to seek world dominance."
+        },
+        {
+          "term": "Stettin to Trieste",
+          "pronunciation": "shteh-TEEN / tree-EST",
+          "def": "The Baltic port in Poland and the Adriatic port in Italy marking the northern and southern ends of Churchill’s 'Iron Curtain'."
         }
       ],
+      "extract": "On 22 February 1946, snow piled high against the windows of the American Embassy in Moscow. Propped on pillows with a fever, diplomat George Kennan dictated an urgent eight-thousand-word cable to Washington. Why was Joseph Stalin refusing to cooperate now that Hitler was dead? Kennan warned that deep Russian fear of invasion had fused with communist ideology. \"At the bottom of the Kremlin’s neurotic view of world affairs is a traditional Russian sense of insecurity. Soviet leaders believe there can be no lasting peace with the United States.\"\n\nYet Kennan added one crucial insight that shaped forty years of history. Stalin was not reckless like Hitler. Soviet power was deaf to polite words, Kennan wrote, yet \"highly sensitive to the logic of force.\" Whenever Moscow met firm, calm resistance, it backed down. America did not need to fight a third world war. It simply had to contain Soviet expansion.\n\nEleven days later in Fulton, Missouri, former British Prime Minister Winston Churchill gave that divide its famous name. \"From Stettin in the Baltic to Trieste in the Adriatic, an iron curtain has descended across the Continent. Behind that line lie all the capitals of Central and Eastern Europe—Warsaw, Berlin, Prague, Vienna, Budapest, Bucharest, and Sofia.\" That autumn in Washington, Soviet Ambassador Nikolai Novikov cabled back Moscow's mirror-image fear. Untouched by invasion and holding the atomic bomb, he warned, America was ringing Russia with airbases.",
       "parent_discussion": [
         {
-          "question": "Compare Kennan’s telegram from Moscow with Novikov’s telegram from Washington: what does each diplomat accuse the other superpower of plotting?",
-          "answer": "Kennan warns the USSR wants to destroy Western capitalism and expand wherever unopposed; Novikov warns the USA is using economic wealth, global bases, and its atomic monopoly to seek \"world supremacy.\""
+          "question": "Why did Russia’s Second World War experience look utterly different from America’s in 1946?",
+          "answer": "The USSR had suffered roughly 27 million deaths after being invaded twice across Poland in thirty years, so Stalin demanded loyal communist 'buffer states'—which the West saw as brutal dictatorship crushing free elections."
         },
         {
-          "question": "Why did Russia’s experience in the Second World War (over 27 million Soviet dead after being invaded twice through Poland in 30 years) look so different from America’s?",
-          "answer": "Stalin insisted on loyal communist \"buffer states\" across Eastern Europe so Germany could never invade again—whereas Washington and London saw that buffer zone as brutal dictatorship crushing free elections."
+          "question": "How did George Kennan’s distinction between Stalin and Hitler give birth to America’s policy of 'Containment'?",
+          "answer": "Because Kennan argued Stalin would not gamble everything on suicidal war and would pull back when met with firm strength, Washington chose economic aid and alliances rather than invading Soviet territory."
         },
         {
-          "question": "How did Kennan’s crucial observation that Stalin was \"unlike Hitler\" and would back down \"when strong resistance is encountered\" give birth to US Containment policy?",
-          "answer": "Instead of invading the USSR directly, America resolved to contain communism firmly inside its existing borders through economic aid and alliances."
+          "question": "Compare Kennan and Churchill in 1946 with Soviet Ambassador Novikov’s reply: what is a 'security dilemma'?",
+          "answer": "Each superpower viewed its own actions (Stalin’s Eastern European buffer zone; America’s overseas bases and atomic monopoly) as purely defensive, while seeing the rival’s steps as proof of a plot to conquer the world."
         }
       ],
-      "hinge_question": "<strong>Think:</strong> Why had the USA, Britain, and the USSR cooperated between 1941 and May 1945 despite hating each other’s political systems?<br><br><strong>Pair:</strong> Look at both 1946 telegrams side by side: was the Cold War started by Soviet aggression, American atomic power, or mutual fear?<br><br><strong>Share:</strong> Why was it called a \"Cold\" War between Washington and Moscow?",
+      "story_check": [
+        {
+          "question": "Where was diplomat George Kennan when he dictated his famous 'Long Telegram' on 22 February 1946?",
+          "options": [
+            "Sick in bed inside the snowbound US Embassy in Moscow",
+            "On a warship in the Pacific Ocean",
+            "Inside the British Parliament in London",
+            "At a press conference in West Berlin"
+          ],
+          "correctIndex": 0,
+          "feedback": "Kennan dictated his 8,000-word cable from his sickbed inside the US Embassy in Moscow, explaining Soviet insecurity and proposing firm containment."
+        },
+        {
+          "question": "According to George Kennan, how would Soviet leaders react when confronted with calm, firm Western resistance?",
+          "options": [
+            "They would immediately launch an invasion of France",
+            "They would hold multi-party elections in Moscow",
+            "Unlike Hitler, they were sensitive to the logic of force and would back down",
+            "They would hand Poland back to Britain"
+          ],
+          "correctIndex": 2,
+          "feedback": "Kennan observed that Soviet leaders avoided reckless military gambles and pulled back whenever they met firm resistance."
+        },
+        {
+          "question": "Which phrase did Winston Churchill make famous in Fulton, Missouri, eleven days after Kennan’s cable?",
+          "options": [
+            "The Falling Domino",
+            "An Iron Curtain from Stettin in the Baltic to Trieste in the Adriatic",
+            "Peace for Our Time",
+            "The Sinatra Doctrine"
+          ],
+          "correctIndex": 1,
+          "feedback": "On 5 March 1946 at Fulton, Missouri, Churchill warned that 'an iron curtain has descended across the Continent' from Stettin to Trieste."
+        }
+      ],
+      "monday_cold_call": {
+        "question": "What crucial difference did George Kennan spot between Stalin and Hitler in February 1946, and what US strategy did it inspire?",
+        "answer": "Kennan argued Stalin was not reckless like Hitler and would back down when met with firm resistance—inspiring America’s strategy of Containment."
+      },
+      "hinge_question": "<strong>Think:</strong> Why had the USA, Britain, and the USSR cooperated between 1941 and May 1945 despite hating each other’s political systems?<br><br><strong>Pair:</strong> Look at Kennan, Churchill, and Novikov side by side: was the Cold War started by Soviet aggression, American atomic power, or mutual fear?<br><br><strong>Share:</strong> Why was it called a \"Cold\" War between Washington and Moscow?",
       "questions": [
         "According to George Kennan, what lay at the bottom of the Kremlin’s view of world affairs?",
         "How did Kennan say Soviet leaders differed from Hitler when confronted with firm resistance?",
-        "What specific military and economic advantages did Ambassador Novikov say the USA held in September 1946?"
+        "Which two port cities marked the ends of Winston Churchill’s 'Iron Curtain' in March 1946?"
       ],
       "audio_file": "/audio/reading/cold_war/r0.mp3",
       "studio_audio": "/audio/reading/cold_war/r0.mp3",
-      "studio_voice_label": "Studio Male Historian · Archival Reading",
-      "provenance_tier": "verbatim_primary",
-      "provenance_note": "Pairs verbatim extracts from US diplomat George Kennan’s Feb 1946 \"Long Telegram\" and Soviet Ambassador Novikov’s Sept 1946 reply.",
-      "short_tab_title": "1. Kennan vs Novikov (1946)"
+      "studio_voice_label": "Studio Male Historian · Archival Reading"
     },
     {
       "lesson_index": 1,
       "lesson_id": "lesson_2",
       "lesson_label": "Enquiry 2",
-      "book_title": "President Harry S. Truman’s Potsdam Diary & Atomic Letters Home (July 1945)",
-      "author": "Harry S. Truman (Potsdam Diary & Letters to Bess Truman, 16–25 July 1945 • Truman Library)",
-      "cover_image": "/images/cold_war/potsdam_conference_1945.jpg",
-      "cover_caption": "British Prime Minister Clement Attlee, US President Harry S. Truman, and Soviet Premier Joseph Stalin seated at Cecilienhof Palace during the Potsdam Conference (July–August 1945).",
-      "author_context": "Between the Yalta Conference (February 1945) and the Potsdam Conference outside ruined Berlin (July–August 1945), everything changed: Nazi Germany surrendered, Red Army troops occupied Poland and Eastern Europe, Franklin D. Roosevelt died (succeeded by blunt Vice President Harry S. Truman), Clement Attlee replaced Churchill midway through the talks, and on 16 July 1945 American scientists secretly detonated the world’s first atomic bomb at Alamogordo, New Mexico.",
+      "short_tab_title": "2. Truman’s Potsdam Diary",
+      "literary_mode": "intimate_eyewitness",
+      "provenance_tier": "verbatim_primary",
       "source_type": "primary_diary",
       "source_type_label": "Presidential Summit Diary (July 1945)",
       "is_primary": true,
-      "is_adapted": false,
-      "extract": "\"Potsdam, 17 July 1945: Just spent two hours with Stalin. He walked in at noon, looked me straight in the eye, and spoke directly... Most of our sharp differences already lie over Poland and German reparations: at Yalta Stalin promised free and unfettered elections across liberated Europe, yet in Warsaw his secret police have already installed a pro-Moscow regime while demanding twenty billion dollars in German machinery.\n\n18 July 1945: Secretary of War Stimson handed me the full cipher cable from New Mexico: 'Operated on this morning. Diagnosis not yet complete, but results seem satisfactory and already exceed expectations.' Thirteen pounds of explosive caused the steel tower to evaporate completely and threw a fireball brighter than the midday sun forty thousand feet into the sky. Believe Japs will fold up before Russia comes in!\n\n25 July 1945: Yesterday evening after our plenary session I walked casually around the table to Stalin and mentioned to him that we had a new weapon of unusual destructive force. The Russian Premier showed no special interest. All he said was that he was glad to hear it and hoped we would make 'good use of it against the Japanese.'\" [Unknown to Truman, Stalin’s atomic spy Klaus Fuchs inside Los Alamos had already briefed Moscow—and that very night Stalin ordered Lavrentiy Beria to accelerate the Soviet atomic bomb project at all costs!]",
+      "is_adapted": true,
+      "book_title": "President Harry S. Truman’s Private Potsdam Diary: The Atomic Secret & Stalin’s Nod (July 1945)",
+      "author": "Harry S. Truman (Potsdam Diary, 17–25 July 1945 • Harry S. Truman Library)",
+      "provenance_note": "Authentic July 1945 Potsdam diary entries written by US President Harry S. Truman, framed with declassified Soviet intelligence context.",
+      "author_context": "Between the Yalta summit (February 1945) and the Potsdam summit outside ruined Berlin (July–August 1945), everything changed. Nazi Germany lay defeated, Red Army troops occupied Poland, Franklin Roosevelt died, and blunt Vice President Harry S. Truman took office. Then, on 16 July 1945—the day before Potsdam opened—American scientists secretly detonated the world’s first atomic bomb in the New Mexico desert.",
+      "cover_image": "/images/cold_war/potsdam_conference_1945.jpg",
+      "cover_caption": "British Prime Minister Clement Attlee, US President Harry S. Truman, and Soviet Premier Joseph Stalin seated in wicker armchairs at Cecilienhof Palace during the Potsdam Conference (July–August 1945).",
       "vocabVault": [
         {
-          "term": "Yalta Conference (Feb 1945)",
-          "def": "The wartime Black Sea summit (Roosevelt, Churchill, Stalin) agreeing to divide Germany/Berlin into 4 zones, found the United Nations, and hold free elections in Eastern Europe."
-        },
-        {
-          "term": "Potsdam Conference (July–Aug 1945)",
-          "def": "The tense post-VE Day summit (Truman, Churchill/Attlee, Stalin) deadlocked over Polish democracy, heavy Soviet reparations, and overshadowed by the US Trinity atomic test."
+          "term": "Yalta vs Potsdam (1945)",
+          "pronunciation": "YAWL-tuh / POTS-dam",
+          "def": "The February 1945 wartime summit promising free Polish elections versus the tense July 1945 post-VE Day summit overshadowed by the atomic bomb."
         },
         {
           "term": "Trinity Test (16 July 1945)",
-          "def": "The world’s first successful atomic bomb detonation in the New Mexico desert, giving Truman atomic leverage during Potsdam before Hiroshima (6 Aug) and Nagasaki (9 Aug)."
+          "pronunciation": "TRIN-ih-tee",
+          "def": "Code name for the world’s first atomic bomb explosion at Alamogordo, New Mexico, reported secretly to Truman during Potsdam."
         },
         {
-          "term": "Reparations",
-          "def": "Compensation in factory machinery, coal, and money demanded by the devastated Soviet Union from defeated Germany."
+          "term": "Klaus Fuchs",
+          "pronunciation": "KLOWS FOOKS",
+          "def": "German-born physicist inside the Manhattan Project who secretly passed atomic bomb blueprints to Stalin’s intelligence service."
+        },
+        {
+          "term": "Lavrentiy Beria",
+          "pronunciation": "lah-VREN-tee BAIR-ee-uh",
+          "def": "Feared chief of Stalin’s secret police (NKVD), placed in command of the crash Soviet nuclear weapons programme in 1945."
         }
       ],
+      "extract": "Inside Cecilienhof Palace at Potsdam in July 1945, new American President Harry S. Truman scribbled candid notes in his private diary.\n\n\"17 July 1945. Just spent two hours with Stalin. He walked in at noon, looked me straight in the eye, and spoke directly. Most of our sharp clashes already lie over Poland and German reparations. At Yalta, Stalin promised free elections across liberated Europe, yet in Warsaw his secret police have already set up a pro-Moscow regime.\n\n18 July 1945. Secretary of War Stimson handed me the coded cable from New Mexico. 'Operated on this morning. Results seem satisfactory and already exceed expectations.' Thirteen pounds of explosive turned a steel tower into gas and threw a fireball brighter than the midday sun forty thousand feet up. Believe Japs will fold up before Russia comes in!\n\n25 July 1945. We have discovered the most terrible bomb in the history of the world. Yesterday evening after our session I walked casually over to Stalin and mentioned that we had a new weapon of unusual destructive force. The Russian Premier showed no special interest. All he said was that he was glad to hear it and hoped we would make 'good use of it against the Japanese.'\"\n\nTruman thought Stalin had not grasped the hint. In fact, Soviet spy Klaus Fuchs inside Los Alamos had already briefed Moscow. Leaving the palace with stone-faced calm, Stalin ordered secret-police chief Lavrentiy Beria to build a Soviet atomic bomb at top speed.",
       "parent_discussion": [
         {
-          "question": "What three big changes happened in the five months between Yalta (February 1945) and Potsdam (July 1945) that turned wartime allies into open rivals?",
-          "answer": "(1) Hitler was defeated so the glue holding the alliance vanished; (2) anti-communist Harry Truman replaced Roosevelt while Stalin broke Yalta’s Polish election pledge; and (3) America tested the atomic bomb."
+          "question": "What three shifts between Yalta (February 1945) and Potsdam (July 1945) turned wartime allies into suspicious rivals?",
+          "answer": "(1) Hitler’s defeat removed their common enemy; (2) anti-communist Harry Truman replaced Roosevelt while Stalin broke his Yalta pledge of free Polish elections; and (3) America secretly tested the atomic bomb."
         },
         {
-          "question": "Why did Joseph Stalin look completely calm and unsurprised on 24 July 1945 when President Truman hinted at America’s \"new weapon of unusual destructive force\"?",
-          "answer": "Soviet NKVD spies—including physicist Klaus Fuchs inside the Manhattan Project—had already told Stalin all about the American atomic bomb; behind his calm poker face, Stalin ordered his own crash nuclear programme that very night!"
+          "question": "Why did Joseph Stalin barely blink on 24 July 1945 when Truman casually mentioned America’s 'new weapon of unusual destructive force'?",
+          "answer": "Soviet spies like physicist Klaus Fuchs inside Los Alamos had already kept Stalin informed; Stalin hid his alarm behind a calm nod and ordered Beria that same evening to accelerate the Soviet bomb."
         },
         {
-          "question": "How did dropping atomic bombs on Hiroshima (6 August) and Nagasaki (9 August 1945) end WWII while simultaneously accelerating the Cold War nuclear arms race?",
-          "answer": "It forced Japan’s rapid surrender without needing massive Soviet help in Japan, while convincing Stalin he had to test his own Soviet atomic bomb (achieved in August 1949)."
+          "question": "Read Truman’s private diary line 'Believe Japs will fold up before Russia comes in!'—what does that reveal about his hope in July 1945?",
+          "answer": "Truman hoped the atomic bomb (dropped on Hiroshima on 6 August and Nagasaki on 9 August) would end the Pacific war swiftly without having to share occupation zones in Japan with Stalin’s Red Army."
         }
       ],
+      "story_check": [
+        {
+          "question": "What coded medical message arrived on Truman’s desk at Potsdam on 18 July 1945?",
+          "options": [
+            "News that Winston Churchill had caught pneumonia",
+            "Word from New Mexico ('Operated on this morning') that the world’s first atomic bomb test had succeeded",
+            "Confirmation that Japan had surrendered unconditionally",
+            "Warning of a Soviet blockade around West Berlin"
+          ],
+          "correctIndex": 1,
+          "feedback": "The coded 'baby/operation' cable reported the Trinity atomic test in New Mexico, where a steel tower was vaporised in a blinding fireball."
+        },
+        {
+          "question": "How did Joseph Stalin react in person when Truman told him America possessed 'a new weapon of unusual destructive force'?",
+          "options": [
+            "He stormed out of Cecilienhof Palace in anger",
+            "He offered to withdraw Red Army troops from Poland immediately",
+            "He admitted openly that Soviet spies were inside Los Alamos",
+            "He showed no special interest, calmly nodded, and hoped America would use it against Japan"
+          ],
+          "correctIndex": 3,
+          "feedback": "Stalin kept a cool poker face, nodded quietly, and that very night ordered Lavrentiy Beria to speed up the Soviet atomic bomb project."
+        },
+        {
+          "question": "Why was Stalin not surprised by Truman’s hint at Potsdam?",
+          "options": [
+            "Physicist Klaus Fuchs and NKVD spies inside the Manhattan Project had already informed Moscow",
+            "American newspapers had printed the blueprints in June 1945",
+            "Soviet scientists had already tested their own bomb in 1944",
+            "Clement Attlee had warned him the week before"
+          ],
+          "correctIndex": 0,
+          "feedback": "Espionage inside the Manhattan Project—especially by physicist Klaus Fuchs—meant Stalin already knew what Truman was hiding."
+        }
+      ],
+      "monday_cold_call": {
+        "question": "Why did Stalin nod so calmly when Truman mentioned a 'new weapon of unusual destructive force' at Potsdam, and what did Stalin order that very night?",
+        "answer": "Soviet spy Klaus Fuchs had already briefed Moscow about the atomic bomb, so Stalin hid his concern and immediately ordered Beria to fast-track the Soviet nuclear programme (tested in 1949)."
+      },
       "hinge_question": "<strong>Think:</strong> Which promise made at Yalta in February 1945 had Stalin already broken in Poland by July 1945?<br><br><strong>Pair:</strong> Read Truman’s diary line \"Believe Japs will fold up before Russia comes in!\"—what does that reveal about Truman’s diplomatic calculations at Potsdam?<br><br><strong>Share:</strong> Why did Germany and Berlin—sitting deep inside the Soviet zone—get split into four occupation zones?",
       "questions": [
         "Which two issues did Truman note were already dividing the allies on 17 July 1945?",
-        "What coded medical message arrived from New Mexico on 18 July 1945, and what did it really mean?",
-        "Why did Stalin show \"no special interest\" when Truman told him about the new weapon on 24 July?"
+        "What coded message arrived from New Mexico on 18 July 1945, and what did it really mean?",
+        "Why did Stalin show 'no special interest' when Truman told him about the new weapon on 24 July?"
       ],
       "audio_file": "/audio/reading/cold_war/r1.mp3",
       "studio_audio": "/audio/reading/cold_war/r1.mp3",
-      "studio_voice_label": "Studio Male Historian · Archival Reading",
-      "provenance_tier": "verbatim_primary",
-      "provenance_note": "Original July 1945 Potsdam diary entries and private letters home written by US President Harry S. Truman.",
-      "short_tab_title": "2. Truman’s Potsdam Diary"
+      "studio_voice_label": "Studio Male Historian · Archival Reading"
     },
     {
       "lesson_index": 2,
       "lesson_id": "lesson_3",
       "lesson_label": "Enquiry 3",
-      "book_title": "Churchill’s \"Iron Curtain\" Speech (1946) & Mayor Ernst Reuter in Blockaded Berlin (1948)",
-      "author": "Winston Churchill (Fulton, 5 March 1946) & Mayor Ernst Reuter (Reichstag Ruins, 9 Sept 1948)",
-      "cover_image": "/images/ks3_cold_war/cw_gr2_c54_candy_drop_berlin_1949.jpg",
-      "cover_caption": "USAF Douglas C-54 Skymaster transport plane (\"Operation Little Vittles\", USAAF 67935 A.C.) dropping miniature handkerchief candy parachutes over West Berlin rooftops during the 1948–49 Berlin Airlift.",
-      "author_context": "Between 1946 and 1949, Europe hardened into two rival military and economic blocs: Churchill named the \"Iron Curtain\" (1946), Washington answered with the Truman Doctrine and $13 billion Marshall Plan (1947–48), and on 24 June 1948—after the Western Allies introduced the new Deutschmark currency—Stalin cut every road, rail, and canal link into West Berlin to starve 2.2 million citizens into submission. Speaking before 300,000 Berliners outside the ruined Reichstag, Mayor Ernst Reuter appealed to the world as Allied planes landed every ninety seconds.",
-      "source_type": "primary_speech",
-      "source_type_label": "Cold War Speeches: Fulton (1946) & Berlin (1948)",
-      "is_primary": true,
+      "short_tab_title": "3. Uncle Wiggly Wings",
+      "literary_mode": "storied_micro_history",
+      "provenance_tier": "storied_micro_history",
+      "source_type": "micro_history",
+      "source_type_label": "True Historical Micro-Story (Berlin, 1948–1949)",
+      "is_primary": false,
       "is_adapted": false,
-      "extract": "From former Prime Minister Winston Churchill’s \"Sinews of Peace\" address at Westminster College, Fulton, Missouri, with President Truman seated beside him on stage (5 March 1946): \"From Stettin in the Baltic to Trieste in the Adriatic, an iron curtain has descended across the Continent. Behind that line lie all the capitals of the ancient states of Central and Eastern Europe—Warsaw, Berlin, Prague, Vienna, Budapest, Belgrade, Bucharest, and Sofia; all these famous cities and the populations around them lie in what I must call the Soviet sphere, and all are subject, in one form or another, not only to Soviet influence but to a very high and, in some cases, increasing measure of control from Moscow.\"\n\nTwo and a half years later, with Stalin’s troops blocking every road, train, barge, and power line into West Berlin, Mayor Ernst Reuter cried out to 300,000 freezing, hungry citizens gathered before the bombed Reichstag on 9 September 1948: \"Today is a day on which the muffled voice of Berlin breaks out violently before the whole world! Peoples of the world—peoples in America, in England, in France, in Italy—look upon this city, and recognize that you must not and cannot abandon this city and this people! There is only one possibility for all of us: to stand together jointly until this fight has been won!\"",
+      "book_title": "\"Uncle Wiggly Wings\": Gail Halvorsen, Chocolate Parachutes & Blockaded Berlin (1948)",
+      "author": "The History Revision Hub (True Historical Story • Grounded in Gail Halvorsen & Ernst Reuter Records)",
+      "provenance_note": "Original true micro-history grounded in US Air Force pilot Lt Gail S. Halvorsen’s Berlin Airlift memoirs and Mayor Ernst Reuter’s 9 September 1948 Reichstag speech.",
+      "author_context": "On 24 June 1948, after the Western Allies introduced the new Deutschmark currency, Joseph Stalin cut every road, rail line, canal, and power cable into West Berlin to starve 2.2 million citizens into surrender. Refusing either to abandon Berlin or start World War III with tanks, British RAF and American aircrews launched an unprecedented round-the-clock Airlift—where one pilot’s two sticks of chewing gum changed how the world saw Berlin.",
+      "cover_image": "/images/ks3_cold_war/cw_gr2_c54_candy_drop_berlin_1949.jpg",
+      "cover_caption": "US Air Force Douglas C-54 Skymaster transport plane (USAAF 67935 A.C., 'Operation Little Vittles') dropping miniature handkerchief candy parachutes over West Berlin rooftops during the 1948–49 Berlin Airlift.",
       "vocabVault": [
         {
-          "term": "Iron Curtain",
-          "def": "Winston Churchill’s famous March 1946 metaphor for the political, military, and ideological frontier dividing Soviet-controlled Eastern Europe from the democratic West."
+          "term": "Gail Halvorsen ('Uncle Wiggly Wings')",
+          "pronunciation": "HAL-vor-sen",
+          "def": "US Air Force C-54 pilot whose handkerchief-parachute candy drops ('Operation Little Vittles') delivered 23 tons of sweets to West Berlin children."
         },
         {
-          "term": "Truman Doctrine & Marshall Plan (1947)",
-          "def": "President Truman’s pledge to contain communism globally, backed by Secretary of State George Marshall’s $13 billion European Recovery Program (\"dollar imperialism\" in Stalin’s eyes)."
+          "term": "Berlin Blockade & Airlift (1948–49)",
+          "pronunciation": "ber-LIN BLOCK-ayd",
+          "def": "Stalin’s 318-day land siege of West Berlin, defeated peacefully by 277,000 US and British RAF flights carrying 2.3 million tons of coal and food."
         },
         {
-          "term": "Berlin Blockade & Airlift (June 1948 – May 1949)",
-          "def": "Stalin’s 318-day land/canal siege of West Berlin, defeated peacefully by 277,000 US and British flights delivering 2.3 million tons of coal, flour, and medicine."
+          "term": "Ernst Reuter",
+          "pronunciation": "AIRNST ROY-ter",
+          "def": "Defiant Mayor of West Berlin who rallied 300,000 citizens outside the ruined Reichstag in September 1948, urging the democratic world not to abandon them."
         },
         {
           "term": "NATO (April 1949)",
-          "def": "The North Atlantic Treaty Organization military alliance founded in direct response to the Berlin Blockade (countered in 1955 by the Soviet Warsaw Pact)."
+          "pronunciation": "NAY-toh",
+          "def": "The North Atlantic Treaty Organization—twelve Western democracies pledging collective military defence in direct response to the Berlin Blockade."
         }
       ],
+      "extract": "In July 1948, twenty-seven-year-old American pilot Lieutenant Gail Halvorsen walked across the tarmac of Tempelhof Airport in blockaded West Berlin. Just three years earlier, Allied bombers had pounded these streets to rubble. Now Joseph Stalin had locked every road, railway, and canal around the city, gambling that hunger and winter darkness would force two million West Berliners to kneel.\n\nThirty thin children stood gripping the barbed-wire airport fence, watching British RAF Dakotas and American C-54 Skymasters thunder down every ninety seconds with coal and flour. Not one child begged. Reaching into his flight jacket, Halvorsen found just two sticks of Wrigley’s gum. He snapped them into four tiny strips and passed them through the wire. Children who missed out simply sniffed the silver wrappers in silence.\n\nMoved to the core, the young pilot made a bold promise. Tomorrow, as his four-engined plane roared low over the rooftops to land, he would rock his wings left and right so they knew it was him. Then he would drop chocolate bars tied to pocket handkerchiefs! Back in barracks, his crew knotted string to cloth squares. Soon sacks of letters addressed to 'Onkel Wackelflügel'—Uncle Wiggly Wings—flooded the base, and aircrews floated twenty-three tons of sweets over Berlin.\n\nDown below the flight path on 9 September 1948, Mayor Ernst Reuter stood before 300,000 freezing Berliners beside the bombed Reichstag. His voice echoed across the ruins. \"Peoples of the world, look upon this city, and recognise that you must not and cannot abandon this city and this people!\" In May 1949, Stalin admitted defeat and reopened the roads without a single shot being fired.",
       "parent_discussion": [
         {
-          "question": "Why did Stalin blockade West Berlin on 24 June 1948, and why was West Berlin such an awkward vulnerability for BOTH superpowers?",
-          "answer": "West Berlin sat 100 miles deep inside Soviet-occupied East Germany; when the West united its zones and introduced the strong new Deutschmark currency, Stalin tried to force the Western Allies out of Berlin completely."
+          "question": "Why did British and American leaders supply West Berlin by air rather than sending an armed tank convoy down the motorway?",
+          "answer": "Ramming tanks through Soviet roadblocks risked firing the first shots of World War III; unarmed food and coal planes put the burden on Stalin, who dared not shoot them down."
         },
         {
-          "question": "Why did President Truman and Foreign Secretary Ernest Bevin choose an Airlift (\"Operation Vittles\" / \"Plainfare\") rather than driving an armed tank convoy down the motorway into Berlin?",
-          "answer": "Ramming an armed tank column through Red Army roadblocks would have meant firing the first shots of World War III; supplying Berlin from the air forced Stalin either to shoot down unarmed food planes or eventually back down!"
+          "question": "How did Gail Halvorsen’s tiny handkerchief parachutes and Ernst Reuter’s speech transform how Western voters viewed Germans just three years after WWII?",
+          "answer": "Instead of seeing Berliners as former Nazi enemies, British and American families saw brave, hungry civilians and children standing up to dictatorship—cementing support for the new NATO alliance in April 1949."
         },
         {
-          "question": "What were the two permanent results when Stalin admitted defeat and lifted the Berlin Blockade in May 1949?",
-          "answer": "Germany formally split into capitalist West Germany (FRG) and communist East Germany (GDR), and twelve Western nations signed the NATO military alliance in April 1949."
+          "question": "What happened to divided Germany once Stalin lifted the Berlin Blockade in May 1949?",
+          "answer": "Germany formally split into two separate states—capitalist West Germany (FRG) and communist East Germany (GDR)—freezing Europe’s Cold War border for forty years."
         }
       ],
-      "hinge_question": "<strong>Think:</strong> Which Baltic and Adriatic port cities did Churchill name as the northern and southern ends of the \"Iron Curtain\"?<br><br><strong>Pair:</strong> Look at the Tempelhof photo on the cover: how did American pilot Lt Gail Halvorsen (\"the Candy Bomber\") turn former wartime enemies in Berlin into allies?<br><br><strong>Share:</strong> Why was the 1948–49 Berlin Airlift a textbook victory for George Kennan’s policy of Containment?",
+      "story_check": [
+        {
+          "question": "What moved pilot Gail Halvorsen at the Tempelhof fence to promise a secret candy drop?",
+          "options": [
+            "Orders from President Truman’s press office in Washington",
+            "Thirty hungry Berlin children did not beg, sharing four tiny strips of gum and sniffing the foil wrappers",
+            "A competition between RAF and US squadrons to test cargo parachutes",
+            "Mayor Ernst Reuter asked him in person at the Reichstag"
+          ],
+          "correctIndex": 1,
+          "feedback": "Halvorsen was deeply moved when none of the thirty children begged and those without gum quietly smelled the empty foil wrappers."
+        },
+        {
+          "question": "How did West Berlin children recognise Gail Halvorsen’s C-54 transport plane among hundreds of daily flights?",
+          "options": [
+            "He rocked ('wiggled') his wings as he flew low toward the runway",
+            "Its nose cone was painted bright yellow",
+            "He trailed red smoke canisters behind the tail",
+            "He flew only at midnight with searchlights on"
+          ],
+          "correctIndex": 0,
+          "feedback": "Halvorsen rocked his C-54’s wings on final approach, earning the beloved German nickname 'Onkel Wackelflügel' ('Uncle Wiggly Wings')."
+        },
+        {
+          "question": "How did the 318-day Berlin Blockade end in May 1949?",
+          "options": [
+            "Allied tanks smashed through Soviet checkpoints on the Autobahn",
+            "West Berlin voted to join East Germany",
+            "After 277,000 US and British flights kept the city alive through winter, Stalin lifted the blockade peacefully",
+            "The United Nations moved West Berlin’s population to Frankfurt"
+          ],
+          "correctIndex": 2,
+          "feedback": "British RAF and American aircrews delivered 2.3 million tons of coal and food, proving the siege had failed and forcing Stalin to reopen land links."
+        }
+      ],
+      "monday_cold_call": {
+        "question": "Why was the 1948–1949 Berlin Airlift—symbolised by 'Uncle Wiggly Wings' and 277,000 coal and food flights—a textbook triumph for Containment?",
+        "answer": "It saved 2.2 million West Berliners from Stalin’s siege without firing a single shot, led directly to NATO (April 1949), and forced Moscow to back down peacefully."
+      },
+      "hinge_question": "<strong>Think:</strong> Why did West Berlin sit 100 miles deep inside the Soviet zone of Germany?<br><br><strong>Pair:</strong> Look at the C-54 photo on the cover: how did 'Uncle Wiggly Wings' help turn former wartime enemies in Berlin into allies?<br><br><strong>Share:</strong> Why was the 1948–49 Berlin Airlift a textbook victory for George Kennan’s policy of Containment?",
       "questions": [
-        "Which two cities marked the northern and southern ends of Churchill’s \"Iron Curtain\" in March 1946?",
-        "What appeal did Mayor Ernst Reuter make to the peoples of America, England, France, and Italy on 9 September 1948?",
-        "How did the Western Allies keep 2.2 million West Berliners alive without firing a shot?"
+        "What made pilot Gail Halvorsen promise to drop chocolate bars on handkerchief parachutes?",
+        "What appeal did Mayor Ernst Reuter make before 300,000 citizens outside the ruined Reichstag in September 1948?",
+        "How did British and American aircrews defeat Stalin’s 318-day blockade without firing a shot?"
       ],
       "audio_file": "/audio/reading/cold_war/r2.mp3",
       "studio_audio": "/audio/reading/cold_war/r2.mp3",
-      "studio_voice_label": "Studio Male Historian · Historic Speech",
-      "provenance_tier": "verbatim_primary",
-      "provenance_note": "Pairs verbatim extracts from Winston Churchill’s 1946 \"Iron Curtain\" speech and West Berlin Mayor Ernst Reuter’s 1948 blockade appeal.",
-      "short_tab_title": "3. Fulton & Berlin Airlift"
+      "studio_voice_label": "Studio Male Historian · Storied History"
     },
     {
       "lesson_index": 3,
       "lesson_id": "lesson_4",
       "lesson_label": "Enquiry 4",
-      "book_title": "Thirteen Days: Inside JFK’s ExComm & Vasili Arkhipov Aboard Submarine B-59 (Oct 1962)",
-      "author": "Robert F. Kennedy (\"Thirteen Days\", 1969) & Soviet Submarine B-59 Declassified Log (Oct 1962)",
-      "cover_image": "/images/cold_war/jfk_excomm_cabinet_room_1962.jpg",
-      "cover_caption": "President John F. Kennedy (left) confers with Defense Secretary Robert McNamara inside the White House Cabinet Room during the October 1962 Cuban Missile Crisis.",
-      "author_context": "For thirteen terrifying days in October 1962—after an American U-2 spy plane photographed Soviet medium-range ballistic missile sites under construction in Fidel Castro’s Cuba, just 90 miles off Florida—humanity stood closer to thermonuclear extinction than at any other moment in history. Combining Attorney General Robert F. Kennedy’s memoir Thirteen Days with the declassified 27 October 1962 crisis aboard Soviet submarine B-59 reveals both Oval Office statecraft and how close miscalculation came.",
-      "source_type": "primary_memoir",
-      "source_type_label": "ExComm Memoir & Declassified Naval Record (Oct 1962)",
-      "is_primary": true,
-      "is_adapted": true,
-      "extract": "From Attorney General Robert F. Kennedy’s eyewitness account of the secret White House Executive Committee (ExComm) deliberations in Thirteen Days (published 1969): \"On Tuesday morning, 16 October 1962, the President called me to the White House and showed me the U-2 photographs of San Cristóbal. The Joint Chiefs of Staff pressed unanimously for an immediate surgical air strike followed by invasion of Cuba; yet the President remembered Barbara Tuchman’s book The Guns of August on how 1914 leaders stumbled blindly over an abyss. Instead of bombing immediately, we chose a naval 'quarantine' around Cuba to give Premier Khrushchev room to step back without humiliation.\n\nOn 'Black Saturday,' 27 October, an American U-2 piloted by Major Rudolf Anderson was shot down by a surface-to-air missile over Cuba while two contradictory letters arrived from Moscow—the first emotional and offering a deal if America pledged never to invade Cuba, the second harsher and demanding removal of US Jupiter missiles in Turkey. Following counsel to reply publicly to Khrushchev’s first letter while promising privately through Soviet Ambassador Dobrynin to dismantle the outdated Turkish missiles within months, we waited through the longest night of our lives to learn whether Sunday dawn would bring peace or nuclear war.\"\n\nDeclassified decades later, humanity learned how razor-thin that margin was on 27 October: deep beneath the Sargasso Sea, US Navy destroyers dropped practice depth charges to signal Soviet submarine B-59 to surface. With batteries dying, temperatures exceeding 50°C, radio contact lost, and carrying a 10-kiloton nuclear torpedo, exhausted Captain Valentin Savitsky shouted that war had already begun overhead and ordered the nuclear torpedo armed—stopped only because rules on that boat required three senior officers’ unanimous consent, and Second-in-Command Vasili Arkhipov calmly refused to authorise the launch.",
+      "short_tab_title": "4. Sub B-59 & Arkhipov",
+      "literary_mode": "storied_micro_history",
+      "provenance_tier": "storied_micro_history",
+      "source_type": "micro_history",
+      "source_type_label": "True Declassified Naval Story (27 October 1962)",
+      "is_primary": false,
+      "is_adapted": false,
+      "book_title": "\"One Man Said No\": Vasili Arkhipov Inside Soviet Submarine B-59 (27 October 1962)",
+      "author": "The History Revision Hub (True Historical Story • Declassified B-59 Logs & ExComm Records)",
+      "provenance_note": "Original true micro-history reconstructed from declassified Soviet Submarine B-59 officer testimonies (Vadim Orlov, 2002 Havana Conference) and White House ExComm records.",
+      "author_context": "In October 1962, after American U-2 spy planes photographed Soviet nuclear missile sites in Fidel Castro’s Cuba just ninety miles off Florida, President John F. Kennedy threw a naval 'quarantine' around the island. For decades, even Kennedy’s advisers did not know how close humanity actually came to nuclear war beneath the waves on 'Black Saturday,' 27 October 1962.",
+      "cover_image": "/images/cold_war/soviet_b59_submarine_1962.jpg",
+      "cover_caption": "US Navy photograph of Soviet Foxtrot-class submarine B-59 forced to the surface in the Sargasso Sea beneath a US Navy helicopter during the Cuban Missile Crisis (October 1962).",
       "vocabVault": [
         {
-          "term": "Brinkmanship",
-          "def": "Pushing a dangerous superpower confrontation to the very edge (\"brink\") of nuclear war to force the rival leader to back down."
+          "term": "Vasili Arkhipov",
+          "pronunciation": "vah-SEE-lee ar-KHEE-pof",
+          "def": "36-year-old Soviet naval officer (Flotilla Chief of Staff aboard B-59) whose refusal to authorise a nuclear torpedo on 27 October 1962 prevented World War III."
         },
         {
-          "term": "Naval Quarantine (Oct 1962)",
-          "def": "JFK’s careful legal term for the US Navy blockade stopping Soviet missile ships reaching Cuba (avoiding the word \"blockade,\" which is technically an act of war)."
+          "term": "Nikita Khrushchev",
+          "pronunciation": "nih-KEE-tuh khrush-CHOV",
+          "def": "Soviet leader (1953–1964) who secretly shipped nuclear missiles to Cuba in 1962 to protect Fidel Castro and counter US missiles in Turkey."
+        },
+        {
+          "term": "Brinkmanship & Quarantine",
+          "pronunciation": "BRINK-mun-ship",
+          "def": "Pushing a crisis to the edge of nuclear war while using a careful naval 'quarantine' (rather than an act-of-war 'blockade') to leave room for diplomacy."
         },
         {
           "term": "Mutually Assured Destruction (MAD)",
-          "def": "The nuclear balance of terror in which any first strike by the USA or USSR guaranteed the total annihilation of both nations."
-        },
-        {
-          "term": "Moscow–Washington Hotline (1963)",
-          "def": "The direct teletype communication link (paired with the 1963 Partial Test Ban Treaty) set up after Cuba so leaders never again had to wait hours for slow cables during a crisis."
+          "pronunciation": "MYOO-choo-uh-lee",
+          "def": "The terrifying nuclear balance in which a nuclear strike by either superpower guaranteed the complete destruction of both nations."
         }
       ],
+      "extract": "Deep beneath the Atlantic waves near Cuba on Saturday 27 October 1962, the air inside Soviet submarine B-59 was turning foul. Up in Washington and Moscow, Kennedy and Khrushchev were trading urgent letters over Soviet missile sites ninety miles off Florida. Down inside the dark steel boat, however, radio contact with Moscow had been dead for days.\n\nOverhead, eleven American warships hunted the hidden submarine. To signal the Russian crew to come up, US ships dropped small practice depth charges. Inside B-59, each blast sounded like a giant hammer smashing the hull. The cooling fans had failed, cabin heat climbed past fifty degrees, batteries were dying, and sailors fainted on the deck plates.\n\nUnknown to the Americans above, B-59 carried a ten-kiloton nuclear torpedo—nearly as strong as the Hiroshima bomb. Exhausted and sure that World War III had started overhead, Captain Valentin Savitsky lost his temper. \"We are going to blast them now! We will die, but we will sink them all—we will not shame our Navy!\" The political officer agreed.\n\nOn almost any other boat, the Captain’s order was enough. Yet thirty-six-year-old Second Captain Vasili Arkhipov happened to be aboard, so all three senior officers had to agree together. Staying calm in the stifling heat, Arkhipov gripped Savitsky’s arm. Those blasts were warning signals, he argued, not direct hits—and he firmly refused permission to fire.\n\nB-59 rose safely into bright sunlight. That night, Kennedy promised never to invade Cuba while secretly agreeing to pull US missiles out of Turkey. Soon after, both shaken rivals wired a direct Moscow–Washington Hotline.",
       "parent_discussion": [
         {
-          "question": "Why had Soviet leader Nikita Khrushchev secretly placed nuclear missiles on Cuba in 1962 in the first place?",
-          "answer": "To protect communist ally Fidel Castro after the failed 1961 CIA-backed Bay of Pigs invasion, AND to counter the nuclear imbalance caused by American Jupiter missiles stationed right on the USSR’s border in Turkey."
+          "question": "Why didn’t even President Kennedy or his ExComm advisers know in October 1962 how close the naval quarantine had pushed the world to nuclear war?",
+          "answer": "Washington assumed Soviet diesel submarines carried only conventional torpedoes; only when Soviet records were declassified decades later did the world learn B-59 carried a 10-kiloton nuclear weapon."
         },
         {
-          "question": "How did John and Robert Kennedy’s \"two-track\" diplomatic reply on Black Saturday (27 October 1962) let BOTH leaders claim success without triggering war?",
-          "answer": "Publicly JFK pledged not to invade Cuba if Soviet missiles were withdrawn under UN check; secretly RFK promised Ambassador Dobrynin that US Jupiter missiles in Turkey would be quietly removed a few months later."
+          "question": "How did John and Robert Kennedy’s 'two-track' diplomatic deal on that same night (27 October 1962) allow both superpowers to step back without humiliation?",
+          "answer": "Publicly JFK promised never to invade Cuba if Khrushchev withdrew the missiles; privately Robert Kennedy assured the Soviet ambassador that American Jupiter missiles in Turkey would be quietly dismantled months later."
         },
         {
-          "question": "Why did National Security Archive director Thomas Blanton later say of Soviet officer Vasili Arkhipov: \"A guy called Vasili Arkhipov saved the world\"?",
-          "answer": "Cut off underwater aboard submarine B-59 under practice depth charges on 27 October, Arkhipov was the sole one of three senior officers who refused to fire a 10-kiloton nuclear torpedo at the US Navy fleet."
+          "question": "What two urgent safety steps did Washington and Moscow take in 1963 after staring into the abyss in Cuba?",
+          "answer": "They installed the direct Moscow–Washington Hotline teletype link to prevent slow communication delays and signed the 1963 Partial Test Ban Treaty halting atmospheric nuclear tests."
         }
       ],
-      "hinge_question": "<strong>Think:</strong> Why did JFK call his naval ring around Cuba a \"quarantine\" rather than a \"blockade\"?<br><br><strong>Pair:</strong> Who actually \"won\" the Cuban Missile Crisis—Kennedy (who looked strongest publicly), Khrushchev (who saved Castro and got US missiles out of Turkey, though he was ousted in 1964), or both?<br><br><strong>Share:</strong> What two safety agreements did Washington and Moscow sign in 1963 after staring into the nuclear abyss?",
+      "story_check": [
+        {
+          "question": "Why did Captain Valentin Savitsky believe World War III had already begun on 27 October 1962?",
+          "options": [
+            "He received a coded launch order directly from Nikita Khrushchev",
+            "Cut off from radio contact in 50°C heat, his crew heard US Navy practice depth charges exploding outside the hull",
+            "He watched Havana burning through his periscope",
+            "Fidel Castro boarded the submarine in port"
+          ],
+          "correctIndex": 1,
+          "feedback": "With batteries dying, 50°C cabin heat, and zero radio contact with Moscow, US Navy signalling charges felt like a wartime attack."
+        },
+        {
+          "question": "Why was Second Captain Vasili Arkhipov able to stop the launch of B-59’s 10-kiloton nuclear torpedo?",
+          "options": [
+            "He locked the torpedo room from the outside",
+            "He secretly radioed President Kennedy in the White House",
+            "The nuclear torpedo had been left behind in Russia",
+            "As Flotilla Chief of Staff aboard that boat, naval rules required all three senior officers' consent, and he said no"
+          ],
+          "correctIndex": 3,
+          "feedback": "Because Arkhipov was Flotilla Chief of Staff, firing the nuclear torpedo required unanimous agreement of three officers—and Arkhipov stood firm and calmed Savitsky down."
+        },
+        {
+          "question": "What secret promise accompanied Kennedy’s public pledge not to invade Cuba to resolve the crisis?",
+          "options": [
+            "Quietly removing American Jupiter nuclear missiles stationed in Turkey within a few months",
+            "Handing West Berlin over to East Germany",
+            "Sharing Apollo space rocket engines with Moscow",
+            "Withdrawing US troops from South Korea"
+          ],
+          "correctIndex": 0,
+          "feedback": "Robert Kennedy privately assured Soviet Ambassador Dobrynin that outdated US Jupiter missiles on the USSR’s border in Turkey would be dismantled."
+        }
+      ],
+      "monday_cold_call": {
+        "question": "How did Soviet officer Vasili Arkhipov save the world on 27 October 1962, and what does Submarine B-59 prove about 'nuclear deterrence'?",
+        "answer": "Cut off underwater under depth charges in 50°C heat, Arkhipov alone refused unanimous consent to fire a 10-kiloton nuclear torpedo—proving humanity survived 1962 through individual calm and luck, not just tidy deterrence theory."
+      },
+      "hinge_question": "<strong>Think:</strong> Why did JFK call his naval ring around Cuba a \"quarantine\" rather than a \"blockade\"?<br><br><strong>Pair:</strong> Who actually \"won\" the Cuban Missile Crisis—Kennedy (who looked strongest publicly), Khrushchev (who saved Castro and got US missiles out of Turkey), or both?<br><br><strong>Share:</strong> What two safety agreements did Washington and Moscow sign in 1963 after staring into the nuclear abyss?",
       "questions": [
-        "Why did President Kennedy reject his generals’ demand for an immediate bombing strike and invasion of Cuba?",
-        "What private promise accompanied Kennedy’s public pledge not to invade Cuba on 27 October 1962?",
-        "How did Soviet naval officer Vasili Arkhipov prevent nuclear war underwater on \"Black Saturday\"?"
+        "What conditions inside Soviet submarine B-59 nearly triggered a nuclear launch on 27 October 1962?",
+        "How did Vasili Arkhipov stop Captain Savitsky from firing the 10-kiloton nuclear torpedo?",
+        "What public pledge and private promise ended the Cuban Missile Crisis?"
       ],
       "audio_file": "/audio/reading/cold_war/r3.mp3",
       "studio_audio": "/audio/reading/cold_war/r3.mp3",
-      "studio_voice_label": "Studio Male Historian · Archival Reading",
-      "provenance_tier": "adapted_primary",
-      "provenance_note": "Combines Robert F. Kennedy’s ExComm memoir account of October 1962 with declassified records of Soviet submarine B-59.",
-      "short_tab_title": "4. ExComm & Sub B-59 (1962)"
+      "studio_voice_label": "Studio Male Historian · Storied History"
     },
     {
       "lesson_index": 4,
       "lesson_id": "lesson_5",
       "lesson_label": "Enquiry 5",
-      "book_title": "President Eisenhower’s \"Falling Domino\" Press Conference (1954) & Westad’s \"Global Cold War\"",
-      "author": "Dwight D. Eisenhower (7 April 1954) & Odd Arne Westad (\"The Global Cold War\", 2005)",
-      "cover_image": "/images/cold_war/korean_war_inchon_landing_1950.jpg",
-      "cover_caption": "US Marines carrying scaling ladders ride a landing craft toward the seawall during the amphibious landing at Inchon in the Korean War (15 September 1950).",
-      "author_context": "While nuclear deterrence froze borders across divided Europe without a single shot between NATO and Warsaw Pact armies, the Cold War turned scorchingly hot across Asia, Africa, and Latin America. On 7 April 1954—between the Korean War (1950–1953, ~3 million dead) and America’s escalating war in Vietnam (1955–1975)—President Dwight D. Eisenhower coined the \"Domino Theory\" at a White House press conference, later critically re-evaluated in historian Odd Arne Westad’s landmark book The Global Cold War (2005).",
-      "source_type": "primary_speech",
-      "source_type_label": "Presidential Press Transcript (1954) & Scholarship",
+      "short_tab_title": "5. Dominoes & Proxy Voices",
+      "literary_mode": "intimate_eyewitness",
+      "provenance_tier": "adapted_primary",
+      "source_type": "primary_diary",
+      "source_type_label": "Presidential Briefing (1954) & Wartime Vietnamese Diary (1969)",
       "is_primary": true,
-      "is_adapted": false,
-      "extract": "At a White House news conference on 7 April 1954, a reporter asked President Dwight D. Eisenhower to explain the strategic importance of Indochina (Vietnam, Laos, and Cambodia) to the \"Free World\":\n\"Finally, you have broader considerations that might follow what you would call the 'falling domino' principle. You have a row of dominoes set up, you knock over the first one, and what will happen to the last one is the certainty that it will go over very quickly. So you could have a beginning of a disintegration that would have the most profound influences.\n\nWhen we come to the possible sequence of events, the loss of Indochina, of Burma, of Thailand, of the Peninsula, and Indonesia following—now you begin to talk about areas that not only multiply the disadvantages you would suffer through loss of materials, sources of tin and tungsten and rubber, but now you are talking really about millions and millions and millions of people.\"\n\nExamining Korea and Vietnam in The Global Cold War (2005), historian Odd Arne Westad explains why the Domino Theory led superpowers into tragic quagmires: Washington treated anti-colonial nationalist movements—like Ho Chi Minh’s Viet Minh fighting French rule—purely as Moscow or Beijing chess pieces, pouring over 500,000 US troops, napalm, and B-52 bombers into South Vietnam, while the USSR and China supplied weapons and advisers. Across Korea, Vietnam, Cambodia, Angola, and Afghanistan, millions of civilians paid in blood for a conflict Europeans called \"cold.\"",
+      "is_adapted": true,
+      "book_title": "\"A Row of Dominoes\" vs The Burning Forest: Eisenhower (1954) & Dr Đặng Thùy Trâm (1969)",
+      "author": "President Dwight D. Eisenhower (7 April 1954) & Dr Đặng Thùy Trâm (Quảng Ngãi Diary, 1969)",
+      "provenance_note": "Contrasts President Eisenhower’s verbatim April 1954 'falling domino' briefing with translated field-hospital diary notes of Vietnamese doctor Đặng Thùy Trâm.",
+      "author_context": "While nuclear weapons froze the border across Europe, the Cold War turned scorchingly hot in proxy wars across Korea (1950–1953, three million dead), Vietnam (1955–1975), and later Soviet-occupied Afghanistan (1979–1989). Reading President Dwight D. Eisenhower’s neat 1954 'Domino Theory' alongside the real wartime pocket diary of twenty-seven-year-old Vietnamese field doctor Đặng Thùy Trâm reveals the gulf between superpower strategy rooms and human lives on the ground.",
+      "cover_image": "/images/cold_war/korean_war_inchon_landing_1950.jpg",
+      "cover_caption": "US Marines carrying scaling ladders ride an assault landing craft toward the seawall during the amphibious landing at Inchon in the Korean War (15 September 1950).",
       "vocabVault": [
         {
           "term": "Proxy War",
-          "def": "A regional war in which nuclear superpowers avoid fighting each other face-to-face, instead arming, funding, or intervening alongside rival local sides (e.g. Korea, Vietnam, Soviet-Afghan War)."
+          "pronunciation": "PROK-see WAR",
+          "def": "A regional war where nuclear superpowers avoid fighting each other face-to-face, instead arming, funding, or sending troops into local conflicts (Korea, Vietnam, Afghanistan)."
         },
         {
           "term": "Domino Theory (April 1954)",
-          "def": "President Eisenhower’s belief that if one Asian nation (such as Vietnam) became communist, neighbouring countries would topple to communism one after another."
+          "pronunciation": "DOM-ih-noh",
+          "def": "President Eisenhower’s belief that if Vietnam became communist, neighbouring Asian states would topple one after another."
+        },
+        {
+          "term": "Ho Chi Minh & Anti-Colonialism",
+          "pronunciation": "HOH CHEE MIN",
+          "def": "Vietnamese nationalist and communist leader whose fighters sought independence after decades of French colonial rule and Japanese occupation."
+        },
+        {
+          "term": "Đặng Thùy Trâm",
+          "pronunciation": "DAHNG TWEE CHUM",
+          "def": "27-year-old Hanoi surgeon whose captured 1968–1970 field-hospital diary recorded the human cost of the Vietnam War before her death in 1970."
         },
         {
           "term": "38th Parallel (Korea)",
-          "def": "The latitude line dividing communist North Korea (backed by USSR & China) from capitalist South Korea (backed by US/UN troops); after 3 years of war (1950–1953), the armistice border ended almost exactly where it started."
-        },
-        {
-          "term": "Asymmetric / Guerrilla Warfare",
-          "def": "How Viet Cong fighters and North Vietnamese forces neutralised immense US firepower using jungle ambush, tunnel networks, Ho Chi Minh Trail supply routes, and peasant support."
+          "pronunciation": "THUR-tee-aytth",
+          "def": "The border line dividing communist North Korea (backed by China/USSR) from capitalist South Korea (backed by US/UN forces) in 1950 and 1953."
         }
       ],
+      "extract": "In a calm White House press room on 7 April 1954, President Dwight D. Eisenhower used a game-table image to explain why Washington feared losing Indochina. \"You have a row of dominoes set up. You knock over the first one, and what will happen to the last one is the certainty that it will go over very quickly.\" If Vietnam turned communist, Eisenhower warned, Burma, Thailand, Malaya, and Indonesia would topple next. The West would lose tin, tungsten, rubber, and millions of people.\n\nThat tidy metaphor pulled half a million American troops, B-52 bombers, and napalm into South Vietnam, while Moscow and Beijing shipped rifles south. Yet on the ground, Vietnamese villagers were not wooden dominoes. Most fought for independence after generations of French colonial rule.\n\nInside a bamboo clinic in Quảng Ngãi province in June 1969, twenty-seven-year-old Vietnamese surgeon Dr Đặng Thùy Trâm wrote by oil lamp as bombs shook the earth. \"Outside, jet planes scream overhead and napalm turns the green hillside into black ash. Today I held the hand of a twenty-year-old boy dying on our wooden table while his mother wept. Why must a wealthy nation cross an ocean to burn our small villages? We want neither foreign masters nor endless war—only peace under one sky.\"\n\nDespite immense firepower, Saigon fell in April 1975. Four years later, Moscow marched into its own ten-year proxy quagmire in Afghanistan.",
       "parent_discussion": [
         {
-          "question": "Explain President Eisenhower’s \"row of dominoes\" image in plain English: why did it drag five successive US presidents deeper and deeper into Vietnam?",
-          "answer": "US leaders feared that letting Vietnam unite under communist leader Ho Chi Minh would cause Laos, Cambodia, Thailand, Malaysia, and Indonesia to fall next, destroying US credibility."
+          "question": "Why did President Eisenhower’s 'falling domino' image pull five American presidents deeper and deeper into Vietnam?",
+          "answer": "Each president feared that letting Vietnam unite under communist leader Ho Chi Minh would make all of Southeast Asia topple to communism and make American alliances look weak."
         },
         {
-          "question": "What crucial local reality in Vietnam did the Domino Theory completely misunderstand, according to historian Odd Arne Westad?",
-          "answer": "Most Vietnamese fighters were driven above all by nationalism and anti-colonialism—wanting independence after decades of French colonial rule and Japanese occupation—not blind obedience to Moscow or China (in fact, communist Vietnam and China fought a border war in 1979!)."
+          "question": "How does Dr Đặng Thùy Trâm’s jungle clinic diary expose what Washington’s Domino Theory misunderstood about Vietnam?",
+          "answer": "Washington treated Vietnamese fighters as mere puppets of Moscow or China, overlooking that millions were driven above all by anti-colonial nationalism to govern their own country."
         },
         {
-          "question": "Compare the outcomes of the Korean War (1950–1953) and the Vietnam War (ended 1973/1975) for US Containment policy!",
-          "answer": "In Korea, US/UN intervention contained communism north of the 38th Parallel (leaving Korea divided to this day); in Vietnam, despite superior technology and 58,000+ US dead (plus ~2–3 million Vietnamese dead), Saigon fell in April 1975 and Containment failed."
+          "question": "Compare Korea (1950–1953), Vietnam (1955–1975), and the Soviet invasion of Afghanistan (1979–1989): how were superpowers defeated in guerrilla wars?",
+          "answer": "In Korea, US/UN troops held the 38th Parallel stalemate; in both Vietnam (for the USA) and Afghanistan (for the USSR), local guerrilla fighters with foreign weapons outlasted superpower technology and drained public support at home."
         }
       ],
+      "story_check": [
+        {
+          "question": "What metaphor did President Eisenhower coin on 7 April 1954 to explain why America had to intervene in Indochina?",
+          "options": [
+            "The Iron Curtain",
+            "The Long Peace",
+            "A row of falling dominoes",
+            "Operation Little Vittles"
+          ],
+          "correctIndex": 2,
+          "feedback": "Eisenhower compared Southeast Asian nations to 'a row of dominoes,' warning that knocking over the first would make all its neighbours fall."
+        },
+        {
+          "question": "Who was Dr Đặng Thùy Trâm, and what perspective does her 1969 diary add to Cold War history?",
+          "options": [
+            "A 27-year-old Vietnamese field doctor recording the human toll of bombing and local desire for independence",
+            "A diplomat at the Geneva Summit",
+            "A South Korean commander at Inchon in 1950",
+            "A Soviet pilot flying over Kabul"
+          ],
+          "correctIndex": 0,
+          "feedback": "Dr Đặng Thùy Trâm treated wounded patients in Quảng Ngãi province, showing that Vietnamese people saw the struggle as a fight for home and independence, not a superpower chess game."
+        },
+        {
+          "question": "Which country became the Soviet Union’s own costly ten-year guerrilla war between 1979 and 1989?",
+          "options": [
+            "Thailand",
+            "Afghanistan",
+            "Indonesia",
+            "South Korea"
+          ],
+          "correctIndex": 1,
+          "feedback": "Just four years after Saigon fell in 1975, Soviet troops invaded Afghanistan in December 1979, draining Soviet lives and money for a decade."
+        }
+      ],
+      "monday_cold_call": {
+        "question": "What blind spot lay inside Eisenhower’s 1954 'Domino Theory' when applied to Vietnam?",
+        "answer": "It treated Vietnamese fighters as mere Moscow/Beijing dominoes rather than anti-colonial nationalists fighting for independence after French rule—pulling the USA into an unwinnable guerrilla war."
+      },
       "hinge_question": "<strong>Think:</strong> Which two wars in East and Southeast Asia cost millions of lives during the Cold War?<br><br><strong>Pair:</strong> Why couldn’t the world’s wealthiest military superpower defeat the Viet Cong and North Vietnamese Army?<br><br><strong>Share:</strong> In what year did the Soviet Union walk into its own \"Vietnam-style\" quagmire in Afghanistan (1979–1989)?",
       "questions": [
         "Which metaphor did President Eisenhower coin on 7 April 1954 to justify intervening in Indochina?",
-        "Which raw materials and neighbouring Asian countries did Eisenhower fear losing if Indochina fell?",
-        "According to historian Odd Arne Westad, what local motivation did Washington overlook by viewing Ho Chi Minh only through a Cold War lens?"
+        "What raw materials and Asian countries did Eisenhower fear losing if Indochina fell?",
+        "How does Dr Đặng Thùy Trâm’s diary challenge the idea that Vietnamese fighters were merely Moscow’s pawns?"
       ],
       "audio_file": "/audio/reading/cold_war/r4.mp3",
       "studio_audio": "/audio/reading/cold_war/r4.mp3",
-      "studio_voice_label": "Studio Male Historian · Historic Speech",
-      "provenance_tier": "verbatim_primary",
-      "provenance_note": "Combines President Eisenhower’s verbatim 7 April 1954 \"falling domino\" press transcript with context on Cold War proxy conflicts.",
-      "short_tab_title": "5. Falling Dominoes & Asia"
+      "studio_voice_label": "Studio Male Historian · Archival Reading"
     },
     {
       "lesson_index": 5,
       "lesson_id": "lesson_6",
       "lesson_label": "Enquiry 6",
-      "book_title": "9 November 1989 at the Berlin Wall & Mikhail Gorbachev’s Kremlin Farewell (25 Dec 1991)",
-      "author": "Günter Schabowski (9 Nov 1989 Press Briefing) & Mikhail Gorbachev (25 Dec 1991 Broadcast)",
-      "cover_image": "/images/gcse_cold_war/kt3/cw_l12_banner_brandenburg_gate_wall_1989.jpg",
-      "cover_caption": "East and West Germans gather at a newly lifted concrete segment of the Berlin Wall beside the illuminated Brandenburg Gate in December 1989 (SSgt. F. Lee Corkran, U.S. Air Force / NARA DF-ST-90-07307).",
-      "author_context": "When reformist Mikhail Gorbachev became Soviet General Secretary in March 1985, the USSR was bankrupting itself spending roughly a quarter of its economic output on nuclear weapons and the war in Afghanistan while ordinary citizens queued for bread and shoes. Introducing Glasnost (\"openness\"), Perestroika (\"economic restructuring\"), and abandoning the Brezhnev Doctrine (\"the Sinatra Doctrine\" — letting Eastern Europeans choose their own way), Gorbachev unleashed peaceful 1989 revolutions from Poland to Berlin—culminating in his dignified televised resignation on Christmas Night 1991 as the hammer-and-sickle flag was lowered over the Kremlin.",
-      "source_type": "primary_speech",
-      "source_type_label": "Berlin Press Transcript (1989) & Kremlin Resignation (1991)",
-      "is_primary": true,
+      "short_tab_title": "6. Night the Wall Opened",
+      "literary_mode": "storied_micro_history",
+      "provenance_tier": "storied_micro_history",
+      "source_type": "micro_history",
+      "source_type_label": "True Historical Micro-Story (East Berlin, 9 November 1989)",
+      "is_primary": false,
       "is_adapted": false,
-      "extract": "At 6:53 p.m. on Thursday 9 November 1989, exhausted East German spokesman Günter Schabowski shuffled his notes at a live televised press conference in East Berlin and announced that citizens could apply for travel visas abroad. When Italian journalist Riccardo Ehrmann asked, \"When does that take effect?\", Schabowski squinted at the sheet and stammered: \"According to my information... immediately, without delay!\" Within hours tens of thousands of East Berliners surged peacefully to Bornholmer Straße and Checkpoint Charlie; with Moscow refusing to send tanks, bewildered border guards raised the barriers at 11:30 p.m., and Berliners danced atop the Wall with hammers and chisels.\n\nTwo years later, at 7:00 p.m. on 25 December 1991, Mikhail Gorbachev addressed the world from the Kremlin as the Soviet Union dissolved into fifteen independent republics:\n\"Dear compatriots, fellow citizens: due to the situation which has evolved as a result of the formation of the Commonwealth of Independent States, I hereby discontinue my activities at the post of President of the Union of Soviet Socialist Republics.\n\nFate so ruled that when I found myself at the helm of this state it already was clear that something was wrong in this vast country. We had plenty of everything—land, oil and gas, other natural resources, and intellect and talent too—yet we were living much worse than people in the industrialized countries were living... The totalitarian system which deprived the country of an opportunity to become successful and prosperous long ago has been eliminated. The Cold War has ended; the arms race and the insane militarization of our country have been halted.\"",
+      "book_title": "\"Immediately, Without Delay!\": Günter Schabowski, Harald Jäger & 9 November 1989",
+      "author": "The History Revision Hub (True Historical Story • Schabowski Transcript & Bornholmer Straße Records)",
+      "provenance_note": "Original true micro-history grounded in the verbatim 9 November 1989 East Berlin press broadcast, Lt-Col Harald Jäger’s Bornholmer Straße testimony, and Gorbachev’s 1991 resignation.",
+      "author_context": "Built in August 1961 to stop East Germans fleeing west, the 96-mile concrete Berlin Wall stood for twenty-eight years as the ultimate symbol of Cold War division. By autumn 1989, Soviet reformer Mikhail Gorbachev had introduced Glasnost ('openness') and vowed never again to send Red Army tanks to crush Eastern European protesters—setting the stage for history’s most famous fumbled press conference.",
+      "cover_image": "/images/gcse_cold_war/kt3/cw_l12_banner_brandenburg_gate_wall_1989.jpg",
+      "cover_caption": "East and West Germans gather beside a crane lifting a concrete segment of the Berlin Wall in front of the illuminated Brandenburg Gate in December 1989 (USAF / NARA DF-ST-90-07307).",
       "vocabVault": [
         {
-          "term": "Glasnost & Perestroika (1985–91)",
-          "def": "Mikhail Gorbachev’s twin reforms: Glasnost (\"openness\" — ending censorship and allowing free speech/criticism) and Perestroika (\"restructuring\" — introducing limited market incentives into the stagnant Soviet economy)."
+          "term": "Günter Schabowski",
+          "pronunciation": "GOON-ter shah-BOV-skee",
+          "def": "Tired East German Politburo spokesman whose unscripted live-TV answer ('Immediately, without delay!') accidentally brought crowds surging to the Berlin Wall on 9 November 1989."
+        },
+        {
+          "term": "Harald Jäger (Bornholmer Straße)",
+          "pronunciation": "YAY-ger / BORN-hol-mer SHTRAH-seh",
+          "def": "East German border commander at Bornholmer Straße crossing who defied standing orders and raised the barrier peacefully at 11:30 p.m. on 9 November 1989."
+        },
+        {
+          "term": "Mikhail Gorbachev",
+          "pronunciation": "mee-KHAIL gor-bah-CHOV",
+          "def": "Final Soviet leader (1985–1991) whose reforms—Glasnost ('openness'), Perestroika ('restructuring'), and refusing to use tanks—ended the Cold War peacefully."
         },
         {
           "term": "Sinatra Doctrine (1989)",
-          "def": "Soviet spokesman Gennady Gerasimov’s nickname (after Frank Sinatra’s song \"My Way\") for Gorbachev’s decision NOT to send Red Army tanks to crush pro-democracy protests in Poland, Hungary, Czechoslovakia, or East Germany."
-        },
-        {
-          "term": "Berlin Wall (1961–1989)",
-          "def": "The 96-mile concrete barrier, guard towers, and \"death strip\" built around West Berlin in August 1961 to stop skilled East Germans fleeing west—breached peacefully on 9 November 1989."
-        },
-        {
-          "term": "Dissolution of the USSR (25 Dec 1991)",
-          "def": "The peaceful breakup of the Soviet Union into 15 independent states (Russia, Ukraine, Baltic republics, etc.), formally ending the 46-year Cold War."
+          "pronunciation": "sih-NAH-truh",
+          "def": "Moscow’s 1989 pledge (nicknamed after Frank Sinatra’s song 'My Way') allowing Eastern European nations to choose democracy without Soviet military invasion."
         }
       ],
+      "extract": "At 6:53 p.m. on Thursday 9 November 1989, East German spokesman Günter Schabowski sat sweating under hot television lights in East Berlin. For nearly an hour he had droned through dull party announcements. He had missed an earlier meeting and carried a folded draft note about travel visas that he had barely skimmed.\n\nNear the end, Italian reporter Riccardo Ehrmann asked about new travel rules. Reading aloud from the unfamiliar sheet, Schabowski announced that East German citizens could apply to cross every border into the West. Journalists leaned forward in disbelief. \"When does that take effect?\" shouted a reporter. Schabowski pushed up his glasses, shuffled his papers in confusion, missed the next morning’s embargo date, and stammered live into millions of living rooms. \"According to my information... immediately, without delay!\"\n\nWithin minutes, East Berliners pulled coats over their pyjamas and walked through freezing mist toward the concrete Wall. At the Bornholmer Straße bridge, twenty thousand citizens pressed against the iron gate chanting, \"Open the gate!\" Inside the guard post, Lieutenant-Colonel Harald Jäger frantically telephoned his Stasi bosses for orders. Terrified of taking blame—and knowing Mikhail Gorbachev in Moscow had ordered 380,000 Soviet troops to stay locked in their barracks—his superiors barked insults and hung up.\n\nLeft completely alone with armed guards facing twenty thousand peaceful neighbours, Jäger refused to shed blood. At 11:30 p.m. he drew a breath and ordered, \"Open the barrier!\" Strangers wept, hugged, and chipped concrete with hammers. Two years later, on Christmas Night 1991, Gorbachev resigned peacefully and the Soviet flag came down over the Kremlin.",
       "parent_discussion": [
         {
-          "question": "How did an accidental one-sentence answer at a live East Berlin press conference on the evening of 9 November 1989 bring down the Berlin Wall that very night?",
-          "answer": "Spokesman Günter Schabowski hadn’t read the embargo timestamp on the travel note and blurted out \"immediately, without delay\" on live TV, sending tens of thousands of Berliners straight to the border crossings."
+          "question": "Why did Günter Schabowski’s four accidental words ('immediately, without delay') bring down a concrete wall guarded by watchtowers in under five hours?",
+          "answer": "Because live television broadcast his mistake straight into East and West Berlin homes at dinner time, sending tens of thousands of citizens to the crossings before regime leaders could correct it."
         },
         {
-          "question": "When East Germans had protested in 1953, Hungarians in 1956, and Czechs in 1968, Soviet tanks had crushed them—why didn’t the Berlin Wall’s fall in 1989 turn into a bloodbath?",
-          "answer": "Mikhail Gorbachev deliberately abandoned the Brezhnev Doctrine, ordering the 380,000 Soviet troops stationed in East Germany to stay inside their barracks and let Eastern Europeans choose democratically."
+          "question": "Soviet tanks had crushed uprisings in Hungary (1956) and Czechoslovakia (1968)—why didn’t Bornholmer Straße turn into a massacre in November 1989?",
+          "answer": "Mikhail Gorbachev had scrapped the Brezhnev Doctrine in favour of the 'Sinatra Doctrine,' ordering Soviet divisions in East Germany to stay in their barracks, while border officer Harald Jäger chose humanity over shooting."
         },
         {
-          "question": "Read Gorbachev’s remarkably honest Kremlin farewell on Christmas Day 1991: did American military pressure (Reagan’s arms spending) end the Cold War, or internal Soviet economic failure and Gorbachev’s moral choices?",
-          "answer": "Both interacted: US defence spending (\"Star Wars\"/SDI) strained Moscow further, yet Gorbachev himself points to the Soviet command economy’s chronic stagnation, \"insane militarization,\" and his own refusal to rule through terror."
+          "question": "Who deserves the greatest credit for ending the Cold War peacefully between 1989 and December 1991?",
+          "answer": "Historians weigh three interacting forces: ordinary Eastern European citizens (from Poland’s Solidarity union to Berlin marchers), Soviet economic exhaustion accelerated by US arms pressure, and Gorbachev’s moral refusal to rule by terror."
         }
       ],
-      "hinge_question": "<strong>Think:</strong> Why had East Germany built the Berlin Wall in August 1961, and on what exact date did it open in 1989?<br><br><strong>Pair:</strong> Explain how Glasnost (free speech) accidentally sped up the breakup of the Soviet Union once people in the Baltic states, Ukraine, and Eastern Europe were free to protest.<br><br><strong>Share:</strong> Who deserves more credit for ending the Cold War peacefully: Ronald Reagan, Mikhail Gorbachev, or ordinary Eastern European protesters (like Poland’s Solidarity)?",
+      "story_check": [
+        {
+          "question": "Why did East German spokesman Günter Schabowski say the new travel rules began 'immediately, without delay' on 9 November 1989?",
+          "options": [
+            "Mikhail Gorbachev telephoned him during the broadcast",
+            "West German chancellor Helmut Kohl paid him to say it",
+            "The Berlin Wall had already been demolished that morning",
+            "He had missed the earlier briefing, hadn’t read the next-day embargo note properly, and fumbled his papers on live TV"
+          ],
+          "correctIndex": 3,
+          "feedback": "Schabowski had not attended the drafting meeting and overlooked the embargo until the next morning, blurting out 'immediately, without delay' on live television."
+        },
+        {
+          "question": "Who gave the order at 11:30 p.m. to lift the Bornholmer Straße border barrier rather than fire on the crowd of 20,000 East Berliners?",
+          "options": [
+            "US President George H. W. Bush",
+            "Border commander Lieutenant-Colonel Harald Jäger",
+            "Italian journalist Riccardo Ehrmann",
+            "East German party boss Erich Honecker"
+          ],
+          "correctIndex": 1,
+          "feedback": "Abandoned by dithering superiors on the phone, Lt-Col Harald Jäger refused to risk bloodshed and ordered 'Open the barrier!' at 11:30 p.m."
+        },
+        {
+          "question": "On what date did Mikhail Gorbachev resign and the Soviet Union dissolve into fifteen independent states?",
+          "options": [
+            "9 November 1989",
+            "4 July 1990",
+            "25 December 1991 (Christmas Day)",
+            "1 May 1995"
+          ],
+          "correctIndex": 2,
+          "feedback": "On Christmas Night, 25 December 1991, Gorbachev delivered his televised farewell from the Kremlin and the Soviet Union peacefully dissolved."
+        }
+      ],
+      "monday_cold_call": {
+        "question": "How did both an accidental blunder (Schabowski) and a deliberate choice in Moscow (Gorbachev) combine to open the Berlin Wall peacefully on 9 November 1989?",
+        "answer": "Schabowski’s live-TV slip ('immediately, without delay') sent 20,000 Berliners to Bornholmer Straße, while Gorbachev’s refusal to send Soviet tanks left Harald Jäger free to lift the barrier peacefully."
+      },
+      "hinge_question": "<strong>Think:</strong> Why had East Germany built the Berlin Wall in August 1961, and on what exact date did it open in 1989?<br><br><strong>Pair:</strong> Explain how Glasnost (free speech) accidentally sped up the breakup of the Soviet Union once people in the Baltic states, Ukraine, and Eastern Europe were free to protest.<br><br><strong>Share:</strong> Who deserves more credit for ending the Cold War peacefully: Ronald Reagan, Mikhail Gorbachev, or ordinary Eastern European protesters?",
       "questions": [
-        "What four words did East German spokesman Günter Schabowski say on live TV when asked when travel rules took effect on 9 November 1989?",
-        "Why did Mikhail Gorbachev say in his December 1991 resignation speech that Soviet citizens lived \"much worse\" despite rich natural resources?",
-        "What happened to the Soviet Union immediately after Gorbachev’s broadcast on 25 December 1991?"
+        "What four words did East German spokesman Günter Schabowski blurt out on live TV on 9 November 1989?",
+        "Why did Lieutenant-Colonel Harald Jäger open the barrier at Bornholmer Straße at 11:30 p.m.?",
+        "What happened to the Soviet Union on 25 December 1991?"
       ],
       "audio_file": "/audio/reading/cold_war/r5.mp3",
       "studio_audio": "/audio/reading/cold_war/r5.mp3",
-      "studio_voice_label": "Studio Male Historian · Historic Speech",
-      "provenance_tier": "verbatim_primary",
-      "provenance_note": "Combines East German spokesman Günter Schabowski’s 9 Nov 1989 press exchange with Mikhail Gorbachev’s 25 Dec 1991 resignation broadcast.",
-      "short_tab_title": "6. Berlin 1989 & USSR 1991"
+      "studio_voice_label": "Studio Male Historian · Storied History"
     },
     {
       "lesson_index": 6,
       "lesson_id": "lesson_7",
       "lesson_label": "Enquiry 7",
-      "book_title": "Historiographical Debate: Gaddis’s \"Long Peace\" vs Westad’s \"Global Catastrophe\"",
-      "author": "John Lewis Gaddis (1986/2005) vs Odd Arne Westad (2005 • Cold War Historiography)",
-      "cover_image": "/images/cold_war/sputnik_1_satellite_1957.jpg",
-      "cover_caption": "Museum replica of Sputnik 1 (launched by the USSR on 4 October 1957), the world’s first artificial satellite, symbolising how Cold War rivalry extended from proxy battlefields into outer space.",
-      "author_context": "In your final Year 9 enquiry—\"Was the Cold War ever truly 'cold'?\"—historians themselves reach strikingly different verdicts depending on WHERE on the world map they stand! Reading Yale historian John Lewis Gaddis alongside Norwegian global historian Odd Arne Westad prepares scholars to weigh competing historical interpretations using precise evidence from Europe, Cuba, Space, and Asia.",
+      "short_tab_title": "7. Gaddis vs Westad Debate",
+      "literary_mode": "scholarly_summary",
+      "provenance_tier": "scholarly_summary",
       "source_type": "historiographical_debate",
       "source_type_label": "Competing Historical Interpretations",
       "is_primary": false,
       "is_adapted": true,
-      "extract": "Interpretation 1 — The European & Nuclear Perspective (\"The Long Peace\" • John Lewis Gaddis): Looking across the first half of the twentieth century, Europe tore itself apart twice inside thirty-one years—claiming roughly twenty million lives in the First World War (1914–1918) and over fifty million worldwide in the Second World War (1939–1945). Yet between 1945 and 1991, despite possessing tens of thousands of thermonuclear warheads, rival alliances (NATO and the Warsaw Pact), and flashpoints from the Berlin Blockade (1948) to Checkpoint Charlie (1961) and Cuba (1962), not a single American and Soviet army division ever fought a direct war in Europe, nor was a single nuclear weapon detonated in anger after Nagasaki. Paradoxically, the terrifying logic of Mutually Assured Destruction (MAD), satellite reconnaissance after Sputnik (1957), and post-1962 diplomacy kept the superpower struggle \"cold\" and produced the longest unbroken stretch of great-power peace in modern European history.\n\nInterpretation 2 — The Global South Perspective (\"Scorching Hot Proxy Catastrophe\" • Odd Arne Westad): Calling the years 1945–1991 a \"Cold War\" or a \"Long Peace\" reflects a narrow Eurocentric blind spot. Because nuclear deterrence made direct war along the Iron Curtain suicidal, Washington and Moscow exported their ideological rivalry into newly decolonising nations across Asia, Africa, and Latin America. In the Korean War (1950–1953, ~3 million dead), the Vietnam and Indochina Wars (1955–1975, ~2–3 million dead), the Soviet-Afghan War (1979–1989, ~1–1.5 million dead), and CIA/KGB-backed civil wars and coups from Guatemala and Chile to Angola and Ethiopia, between fourteen and twenty million human beings died—overwhelmingly civilians. For a villager in the Mekong Delta or a family near Kabul, the Cold War was never cold for a single day.",
+      "book_title": "Was the Cold War Ever Truly 'Cold'? Gaddis’s \"Long Peace\" vs Westad’s \"Global Cold War\"",
+      "author": "John Lewis Gaddis (\"The Long Peace\", 1986) vs Odd Arne Westad (\"The Global Cold War\", 2005)",
+      "provenance_note": "Age-calibrated Year 9 historiographical synthesis contrasting Yale historian John Lewis Gaddis and Norwegian global historian Odd Arne Westad.",
+      "author_context": "In your final Year 9 synoptic enquiry—'Was the Cold War ever truly cold?'—leading historians reach strikingly different verdicts depending on where on the world map they stand. Reading American historian John Lewis Gaddis alongside Norwegian global historian Odd Arne Westad shows how two scholars can use accurate evidence to build rival interpretations.",
+      "cover_image": "/images/cold_war/sputnik_1_satellite_1957.jpg",
+      "cover_caption": "Museum replica of Sputnik 1 (launched by the USSR on 4 October 1957), the world’s first artificial satellite, symbolising how Cold War rivalry stretched from proxy battlefields into outer space.",
       "vocabVault": [
         {
-          "term": "The \"Long Peace\"",
-          "def": "Historian John Lewis Gaddis’s argument that nuclear deterrence and bipolar stability prevented World War III between the great powers from 1945 to 1991."
+          "term": "The 'Long Peace' (John Lewis Gaddis)",
+          "pronunciation": "GAD-iss",
+          "def": "Gaddis’s argument that nuclear weapons and rival alliances prevented a third direct great-power war in Europe between 1945 and 1991."
+        },
+        {
+          "term": "Global Cold War (Odd Arne Westad)",
+          "pronunciation": "ODD AR-neh VES-tahd",
+          "def": "Westad’s counter-argument that superpower meddling turned Asia, Africa, and Latin America into scorching battlefields killing up to twenty million people."
         },
         {
           "term": "Eurocentrism",
-          "def": "Judging world history mainly from a European or North American viewpoint while overlooking the experiences of people in Asia, Africa, and Latin America."
+          "pronunciation": "yoor-oh-SEN-triz-um",
+          "def": "Judging world history mainly through European or North American eyes while overlooking lived reality in Asia, Africa, and Latin America."
         },
         {
-          "term": "Space Race (1957–1969)",
-          "def": "Technological superpower competition sparked by Soviet Sputnik 1 (1957) and Yuri Gagarin (1961), culminating in America’s Apollo 11 Moon landing (July 1969)—built on the exact same ICBM rocket technology as nuclear warheads."
-        },
-        {
-          "term": "Historiography",
-          "def": "The study of how and why different historians reach contrasting interpretations of the same past events."
+          "term": "Sputnik & Space Race (1957–1969)",
+          "pronunciation": "SPOOT-nik",
+          "def": "Superpower contest from the USSR’s Sputnik 1 satellite (1957) to America’s Apollo 11 Moon landing (1969), driven by the same rocket technology as nuclear missiles."
         }
       ],
+      "extract": "The Traditional View is called 'The Long Peace,' argued by historian John Lewis Gaddis. Look first at Europe in the early twentieth century. Twice inside thirty-one years, great powers tore the continent apart. Twenty million people died in the First World War, and over fifty million died worldwide in the Second. Yet between 1945 and 1991, something remarkable happened. Washington and Moscow built thousands of nuclear warheads, raced rockets from Sputnik to the Moon, and glared across Berlin and Cuba. Even so, American and Soviet armies never fought a single direct battle against each other. Not one nuclear bomb was dropped in anger after 1945. For Gaddis, fear of mutual destruction kept the superpower struggle 'cold' and gave Europe forty-six years of great-power peace.\n\nThe Modern View is 'The Global Cold War,' argued by historian Odd Arne Westad. Now step away from Berlin and stand in a Korean village, a Vietnamese rice field, or a valley near Kabul. Westad argues that calling 1945 to 1991 a 'Long Peace' is a narrow European blind spot. Direct war in Europe meant nuclear suicide. Instead, Washington and Moscow pushed their rivalry into newly independent nations across Asia, Africa, and Latin America. Across Korea, Vietnam, Cambodia, Angola, Chile, and Afghanistan, between fourteen and twenty million people died. Outside Europe, the Cold War was never cold for a single day.",
       "parent_discussion": [
         {
-          "question": "Why can BOTH John Lewis Gaddis AND Odd Arne Westad use completely accurate historical facts while reaching opposite verdicts on whether the Cold War was \"cold\"?",
-          "answer": "Because they apply different geographical lenses: in Europe and between Washington and Moscow directly, nuclear deterrence kept the conflict cold; across Korea, Vietnam, and Afghanistan, superpower proxy interventions made it lethally hot."
+          "question": "How can both John Lewis Gaddis and Odd Arne Westad use accurate facts yet reach opposite conclusions on whether the Cold War was 'cold'?",
+          "answer": "They stand in different places on the world map: between Washington, Moscow, and divided Europe, nuclear deterrence prevented World War III; across Asia, Africa, and Latin America, superpower proxy interventions cost millions of lives."
         },
         {
-          "question": "Even inside Europe and the Atlantic, was Gaddis’s \"Long Peace\" completely peaceful or safe?",
-          "answer": "No—Soviet tanks crushed protesters in Budapest (1956) and Prague (1968), East German border guards shot citizens at the Berlin Wall, and in October 1962 humanity escaped nuclear war in Cuba partly thanks to luck (Vasili Arkhipov)."
+          "question": "Even inside Europe and the Atlantic, what evidence challenges Gaddis’s 'Long Peace' as a safe or peaceful system?",
+          "answer": "Soviet tanks crushed civilians in Budapest (1956) and Prague (1968), East Germans were shot at the Berlin Wall, and in October 1962 Submarine B-59 proved nuclear survival hung by a single officer’s vote."
         },
         {
-          "question": "How would a top-band Greater Depth (GD) historian conclude an essay answering \"Was the Cold War ever truly 'cold'?\"",
-          "answer": "By arguing that the Cold War was only \"cold\" at its nuclear centre (Washington–Moscow–Berlin), precisely BECAUSE both superpowers displaced violent fighting onto proxy battlegrounds across the Global South."
+          "question": "How can a sharp Year 9 historian link BOTH interpretations together in one strong final verdict?",
+          "answer": "By arguing that the Cold War stayed 'cold' at its nuclear centre (Europe/USA/USSR) precisely BECAUSE both superpowers displaced their violence outward onto proxy battlefields across the Global South."
         }
       ],
-      "hinge_question": "<strong>Think:</strong> State John Lewis Gaddis’s main argument in one sentence, then state Odd Arne Westad’s main argument in one sentence.<br><br><strong>Pair:</strong> Which three Asian conflicts provide Westad’s strongest evidence against calling 1945–1991 a \"Long Peace\"?<br><br><strong>Share:</strong> How does linking the two views (\"cold in Europe BECAUSE it was exported as hot proxy war to Asia/Africa\") create a Greater Depth historical verdict?",
+      "story_check": [
+        {
+          "question": "Why does historian John Lewis Gaddis describe the Cold War era (1945–1991) as 'The Long Peace'?",
+          "options": [
+            "Because nuclear deterrence prevented direct war between US and Soviet armies after two catastrophic world wars",
+            "Because every nation on earth abolished its army in 1946",
+            "Because the Space Race ended superpower rivalry in 1957",
+            "Because no wars occurred anywhere in Asia or Africa"
+          ],
+          "correctIndex": 0,
+          "feedback": "Gaddis points out that after two world wars inside 31 years, nuclear deterrence prevented a direct US–Soviet war in Europe for 46 years."
+        },
+        {
+          "question": "Why does historian Odd Arne Westad challenge the phrase 'Cold War' as Eurocentric?",
+          "options": [
+            "Because American and Soviet soldiers fought tank battles in Paris",
+            "Because Sputnik 1 carried nuclear weapons in orbit",
+            "Because superpower proxy wars across Asia, Africa, and Latin America killed between 14 and 20 million people",
+            "Because Europe had warmer winters in the 1970s"
+          ],
+          "correctIndex": 2,
+          "feedback": "Westad shows that for families in Korea, Vietnam, Angola, or Afghanistan, superpower interventions made the era scorchingly deadly."
+        },
+        {
+          "question": "Why did Soviet launch of Sputnik 1 on 4 October 1957 alarm Washington far beyond pure science?",
+          "options": [
+            "Sputnik photographed submarines underwater",
+            "Any rocket powerful enough to put a satellite into space could also carry a nuclear warhead across continents (an ICBM)",
+            "It blocked BBC and American radio signals worldwide",
+            "It landed cosmonauts on the Moon in 1957"
+          ],
+          "correctIndex": 1,
+          "feedback": "Sputnik proved the USSR possessed intercontinental rocket power capable of delivering nuclear warheads across oceans."
+        }
+      ],
+      "monday_cold_call": {
+        "question": "Contrast John Lewis Gaddis’s 'Long Peace' with Odd Arne Westad’s 'Global Cold War' in two crisp sentences.",
+        "answer": "Gaddis argues nuclear deterrence kept Europe free of direct great-power war for 46 years; Westad counters that this 'peace' was Eurocentric because superpower proxy wars killed 14–20 million people across Asia, Africa, and Latin America."
+      },
+      "hinge_question": "<strong>Think:</strong> Why can two brilliant historians look at 1945–1991 and reach opposite verdicts?<br><br><strong>Pair:</strong> Even in Europe and Cuba, did nuclear weapons guarantee peace—or did we get lucky aboard Submarine B-59?<br><br><strong>Share:</strong> State your own final Year 9 verdict: was the Cold War ever truly 'cold'?",
       "questions": [
-        "Why does historian John Lewis Gaddis describe the Cold War era (1945–1991) as \"The Long Peace\"?",
-        "Roughly how many people died across Korea, Vietnam, Afghanistan, and other Global South proxy conflicts according to Westad’s perspective?",
-        "Why did nuclear deterrence in Europe actually increase superpower intervention in Asia, Africa, and Latin America?"
+        "What evidence supports John Lewis Gaddis’s description of 1945–1991 as 'The Long Peace'?",
+        "Why does Odd Arne Westad argue that calling the era 'cold' reflects a Eurocentric blind spot?",
+        "Roughly how many people died in Cold War proxy conflicts across Asia, Africa, and Latin America?"
       ],
       "audio_file": "/audio/reading/cold_war/r6.mp3",
       "studio_audio": "/audio/reading/cold_war/r6.mp3",
-      "studio_voice_label": "Studio Male Historian · Scholarship",
-      "provenance_tier": "scholarly_summary",
-      "provenance_note": "Classroom synthesis contrasting historians John Lewis Gaddis (\"The Long Peace\") and Odd Arne Westad (\"The Global Cold War\").",
-      "short_tab_title": "7. Debate: Gaddis vs Westad"
+      "studio_voice_label": "Studio Male Historian · Scholarship"
     }
   ],
   "is_ks3": true

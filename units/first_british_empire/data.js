@@ -10158,296 +10158,516 @@ export default {
       "lesson_index": 0,
       "lesson_id": "lesson_1",
       "lesson_label": "Enquiry 1",
-      "book_title": "Sir Thomas Roe’s Embassy Journal at the Mughal Court & Clive’s Diwani Letter (1616–1765)",
-      "author": "Sir Thomas Roe (1616, BL Add MS 6115) & Robert Clive to EIC Directors (30 Sept 1765)",
-      "cover_image": "/images/upgraded/ks3-early/fbe_l1_b1_sir_thomas_roe_mierevelt.jpg",
-      "cover_caption": "Portrait of Sir Thomas Roe (after Michiel Jansz. van Mierevelt, c. 1640, National Portrait Gallery, NPG 1354), English ambassador sent by King James I to the Mughal court of Emperor Jahangir.",
-      "author_context": "When English merchants first arrived in South Asia after 1600, Mughal India produced roughly a quarter of the entire world’s manufactured goods. Comparing Ambassador Sir Thomas Roe’s humble petitioning at Emperor Jahangir’s court in 1616 with Robert Clive’s triumphant 1765 dispatch to London after Plassey and the Treaty of Allahabad reveals how a trading company turned itself into a territorial tax-collecting empire.",
-      "source_type": "primary_testimony",
-      "source_type_label": "Diplomatic Journal (1616) & EIC Dispatch (1765)",
-      "is_primary": true,
+      "short_tab_title": "1. Roe & Clive in India",
+      "literary_mode": "storied_micro_history",
+      "provenance_tier": "storied_micro_history",
+      "source_type": "storied_micro_history",
+      "source_type_label": "True Historical Story · Mughal Court to Plassey",
+      "is_primary": false,
       "is_adapted": false,
-      "extract": "From Sir Thomas Roe’s Journal and Letter to the East India Company from the Court of Emperor Jahangir at Ajmer (1616): \"Let this be received as a rule: that if you will profit, seek it at sea, and in quiet trade; for without controversy it is an error to affect garrisons and land wars in India. The Great Mogul commands revenues and horsemen beyond any prince of Christendom; our humble factories at Surat exist solely by his imperial firman [decree] and pleasure.\"\n\nOne hundred and forty-nine years later, after Mughal imperial power fragmented and East India Company sepoy armies seized Bengal at Plassey (1757) and Buxar (1764), Robert Clive wrote to the Court of Directors in London on 30 September 1765 announcing the Treaty of Allahabad: \"We have at last arrived at that critical period which I have long foreseen... By the Emperor Shah Alam’s grant of the Diwani, your Company are now become the sovereigns of a rich and potent kingdom. All the revenues of Bengal, Bihar, and Orissa—amounting after tribute to above two millions sterling clear per annum—will henceforth pass into your treasury, paying for our armies and our China and Indian cargoes without sending an ounce of silver from England.\"",
+      "book_title": "The Velvet Coach & The Red Silk Tent: Sir Thomas Roe (1616) and Clive’s Diwani (1765)",
+      "author": "The History Revision Hub · Grounded in Sir Thomas Roe’s Journal (BL Add MS 6115) & Clive’s 1765 Dispatches",
+      "provenance_note": "Original narrative micro-history grounded in Ambassador Sir Thomas Roe’s 1616 Ajmer court journal and Robert Clive’s August–September 1765 Allahabad Treaty records.",
+      "author_context": "When English ships first reached India after 1600, the Mughal Empire produced roughly a quarter of the world’s goods and dwarfed Stuart England in wealth. Tracing the arc from Sir Thomas Roe’s humble gift at Emperor Jahangir’s court in 1616 to Robert Clive’s seizure of Bengal’s taxes in 1765 reveals how a London trading company turned itself into a territorial empire.",
+      "cover_image": "/images/upgraded/ks3-early/fbe_l1_b1_sir_thomas_roe_mierevelt.jpg",
+      "cover_caption": "Portrait of Sir Thomas Roe (after Michiel Jansz. van Mierevelt, c. 1640, National Portrait Gallery NPG 1354), English ambassador sent by King James I to the Mughal court of Emperor Jahangir.",
       "vocabVault": [
         {
-          "term": "Firman",
-          "def": "An official imperial decree issued by the Mughal Emperor granting trading privileges or customs exemptions."
+          "term": "Emperor Jahangir",
+          "pronunciation": "juh-HAHN-geer",
+          "def": "Fourth Mughal Emperor (r. 1605–1627), whose dazzling court at Ajmer received English ambassador Sir Thomas Roe."
         },
         {
-          "term": "Joint-Stock Company",
-          "def": "A corporate business—like the East India Company (chartered 1600)—funded by shareholders who shared trading profits."
+          "term": "Firman",
+          "pronunciation": "fur-MAHN",
+          "def": "An official Mughal imperial decree granting foreign merchants permission to trade at coastal ports like Surat."
         },
         {
           "term": "Sepoys",
-          "def": "Indian infantry soldiers recruited, drilled, and paid by the East India Company with European muskets and artillery."
+          "pronunciation": "SEE-poyz",
+          "def": "Indian infantry soldiers recruited, drilled, and paid by the British East India Company."
         },
         {
-          "term": "Diwani (1765)",
-          "def": "The Treaty of Allahabad’s transfer of the right to collect land taxes across Bengal, Bihar, and Orissa (~20 million people) to the East India Company."
+          "term": "Diwani",
+          "pronunciation": "dee-WAH-nee",
+          "def": "The 1765 right to collect all land taxes across Bengal, Bihar, and Orissa—turning the East India Company into Bengal’s ruler."
         }
       ],
+      "extract": "In January 1616, English ambassador Sir Thomas Roe bowed low inside the marble palace of Mughal Emperor Jahangir at Ajmer. Mughal India then produced nearly a quarter of the world’s textiles and riches. Jahangir sat glittering in ropes of pearls and rubies larger than walnuts. Hoping to impress the Emperor, Roe presented a wooden English coach lined with crimson velvet.\n\nJahangir smiled politely, rode once around the palace courtyard by torchlight, and handed the coach to his royal craftsmen. Within weeks, Indian builders produced a finer copy upholstered in gleaming silver brocade. Humbled by Mughal wealth and horsemen, Roe warned the East India Company in London: \"If you will profit, seek it at sea, and in quiet trade.\" English merchants survived solely by the Emperor’s firman—his written permission.\n\nOne hundred and forty-nine years later, that world had turned upside down. As Mughal authority fractured after 1707, the Company drilled private armies of Indian sepoys armed with flintlock muskets. After bribing rival general Mir Jafar to win the Battle of Plassey in 1757, Robert Clive met young Emperor Shah Alam II inside a red silk tent at Allahabad in August 1765. Perched atop a covered dining table as a makeshift throne, Clive took the Diwani—the legal right to collect taxes from twenty million people in Bengal. Without shipping an ounce of English silver, humble spice traders had become corporate kings.",
       "parent_discussion": [
         {
-          "question": "In 1616, why did Ambassador Sir Thomas Roe warn the East India Company NEVER to fight land wars or build fortresses in India?",
-          "answer": "Under Emperor Jahangir, the Mughal Empire was vastly wealthier and militarily stronger than Stuart England; English merchants survived only as polite petitioners."
+          "question": "What happened when Ambassador Sir Thomas Roe tried to impress Emperor Jahangir with a velvet English coach in 1616?",
+          "answer": "Mughal craftsmen dismantled and copied its design, quickly building a superior coach lined with silver brocade—showing India’s manufacturing skill."
         },
         {
-          "question": "What had changed by 1765 that allowed Robert Clive to boast that a London business company had become \"the sovereigns of a rich and potent kingdom\"?",
-          "answer": "As central Mughal power weakened, the Company built private sepoy armies, bribed rival commanders like Mir Jafar at Plassey (1757), and seized Bengal’s tax system (the Diwani)."
+          "question": "Why did Roe warn the East India Company in 1616 to stick to 'quiet trade' at sea rather than fighting wars on Indian soil?",
+          "answer": "Under Jahangir, the Mughal Empire was vastly richer and militarily stronger than Stuart England, so armed force would have ended in disaster."
         },
         {
-          "question": "Look closely at Clive’s final sentence: how did capturing Bengal’s taxes transform how the Company bought Indian textiles and Chinese tea?",
-          "answer": "Instead of shipping British silver to Asia to pay Indian weavers, the Company used Indian peasants’ own taxes to buy Indian goods for free—draining Bengal’s wealth and triggering the 1770 famine."
+          "question": "How did winning the Bengal Diwani in 1765 allow the East India Company to buy Indian cloth and Chinese tea without paying British silver?",
+          "answer": "The Company collected £2 million+ each year in taxes from Bengali farmers and used Indian taxpayers’ own money to buy Asian exports for London."
         }
       ],
-      "hinge_question": "<strong>Think:</strong> Compare Roe’s tone in 1616 with Clive’s tone in 1765—how many years separate the two extracts?<br><br><strong>Pair:</strong> Why was winning the Diwani tax right in 1765 even more lucrative for the Company than looting a palace treasury once?<br><br><strong>Share:</strong> Was the British conquest of Bengal planned from 1600, or opportunistic corporate imperialism?",
+      "story_check": [
+        {
+          "question": "How did Emperor Jahangir’s court craftsmen respond to Sir Thomas Roe’s gift of an English velvet coach in 1616?",
+          "options": [
+            "They burned it outside the palace gates",
+            "They built an even finer copy lined in silver brocade within weeks",
+            "They traded it to Portuguese sailors",
+            "They could not figure out how its wheels turned"
+          ],
+          "correctIndex": 1,
+          "feedback": "Correct! Mughal artisans swiftly built a superior silver-brocade coach, reminding Roe how advanced Indian craftsmanship was."
+        },
+        {
+          "question": "What advice did Sir Thomas Roe send back to the East India Company in 1616?",
+          "options": [
+            "March immediately on Delhi with cannons",
+            "Abandon Asia and sail only to Virginia",
+            "Seek profit at sea and in quiet trade rather than land wars",
+            "Refuse to bow to the Mughal Emperor"
+          ],
+          "correctIndex": 2,
+          "feedback": "Spot on. Seeing the vast power of Emperor Jahangir’s court, Roe warned against building forts or fighting land wars."
+        },
+        {
+          "question": "What massive power passed to Robert Clive and the East India Company inside the tent at Allahabad in August 1765?",
+          "options": [
+            "The Diwani—collecting land taxes from 20 million people in Bengal",
+            "Ownership of the port of Liverpool",
+            "A monopoly on North American fur trading",
+            "Command of the French navy"
+          ],
+          "correctIndex": 0,
+          "feedback": "Exactly right. Winning the Diwani turned a London joint-stock business into the tax-collecting ruler of Bengal, Bihar, and Orissa."
+        }
+      ],
+      "monday_cold_call": {
+        "question": "Contrast 1616 with 1765: what happened to Sir Thomas Roe’s velvet coach at Ajmer, and what did Robert Clive win inside his tent at Allahabad?",
+        "answer": "In 1616 Emperor Jahangir’s craftsmen outdid Roe’s coach in silver brocade while England begged to trade; in 1765 Clive seized the Bengal Diwani to tax 20 million Indians."
+      },
+      "hinge_question": "<strong>Think:</strong> Why did Sir Thomas Roe need an imperial firman just to trade at Surat in 1616?<br><br><strong>Pair:</strong> Trace what changed between 1707 and 1765 to let a London company seize Bengal.<br><br><strong>Share:</strong> Why was collecting annual land taxes (the Diwani) far more profitable—and devastating for Bengal—than looting a treasury once?",
       "questions": [
-        "Where did Sir Thomas Roe tell the East India Company to seek its profit in 1616?",
-        "Which three provinces’ tax revenues passed to the East India Company under the 1765 Diwani?",
-        "Why did the Company no longer need to ship silver from England to buy Indian goods after 1765?"
+        "What gift did Sir Thomas Roe present to Emperor Jahangir at Ajmer in 1616?",
+        "What rule did Roe give the East India Company about seeking profit in India?",
+        "How did the 1765 Diwani change how the Company paid for Indian and Chinese goods?"
       ],
       "audio_file": "/audio/reading/first_british_empire/r0.mp3",
       "studio_audio": "/audio/reading/first_british_empire/r0.mp3",
-      "studio_voice_label": "Studio Male Historian · Archival Reading",
-      "provenance_tier": "verbatim_primary",
-      "provenance_note": "Original extracts from Ambassador Sir Thomas Roe’s 1616 Mughal court journal and Robert Clive’s 1765 Diwani letter, linked by brief context.",
-      "short_tab_title": "1. Roe & Clive: Mughal Bengal"
+      "studio_voice_label": "Studio Male Historian · Storied History"
     },
     {
       "lesson_index": 1,
       "lesson_id": "lesson_2",
       "lesson_label": "Enquiry 2",
-      "book_title": "The Interesting Narrative of the Life of Olaudah Equiano: The Middle Passage (1789)",
-      "author": "Olaudah Equiano (Chapter II, London, 1789 • British Library 615.d.11)",
-      "cover_image": "/images/brookes_slave_ship.jpg",
-      "cover_caption": "Abolitionist stowage diagram of the Liverpool slave ship Brookes under the Regulated Slave Trade Act of 1788, illustrating 454 enslaved men, women, and children packed below decks.",
-      "author_context": "Olaudah Equiano (c. 1745–1797), known for much of his life as Gustavus Vassa, survived enslavement, purchased his own freedom in 1766 for forty pounds, and became a leading voice of the \"Sons of Africa\" abolitionist movement in London. Published in 1789 just as Parliament debated the slave trade, his bestselling autobiography shattered pro-slavery lies by placing eyewitness testimony of the Middle Passage directly into British readers’ hands.",
+      "short_tab_title": "2. Equiano’s Voyage (1789)",
+      "literary_mode": "intimate_eyewitness",
+      "provenance_tier": "adapted_primary",
       "source_type": "primary_memoir",
-      "source_type_label": "Published Abolitionist Autobiography (1789)",
+      "source_type_label": "Eyewitness Abolitionist Memoir (1789)",
       "is_primary": true,
-      "is_adapted": false,
-      "extract": "\"The first object which saluted my eyes when I arrived on the coast was the sea, and a slave ship, which was then riding at anchor, and waiting for its cargo. These filled me with astonishment, which was soon converted into terror when I was carried on board. I was immediately handled and tossed up to see if I were sound by some of the crew; and I was now persuaded that I had gotten into a world of bad spirits, and that they were going to kill me.\n\nSoon after this the blacks who brought me on board went off, and left me abandoned to despair. I was soon put down under the decks, and there I received such a salutation in my nostrils as I had never experienced in my life: so that, with the loathsomeness of the stench, and crying together, I became so sick and low that I was not able to eat, nor had I the least desire to taste anything.\n\nThe closeness of the place, and the heat of the climate, added to the number in the ship, which was so crowded that each had scarcely room to turn himself, almost suffocated us. This produced copious perspirations, so that the air soon became unfit for respiration, from a variety of loathsome smells, and brought on a sickness among the slaves, of which many died—thus falling victims to the improvident avarice, as I may call it, of their purchasers. The shrieks of the women, and the groans of the dying, rendered the whole a scene of horror almost inconceivable.\"",
+      "is_adapted": true,
+      "book_title": "The Interesting Narrative of the Life of Olaudah Equiano: Below Decks (1789)",
+      "author": "Olaudah Equiano (Chapter II, London, 1789 • Calibrated for Aloud Reading)",
+      "provenance_note": "Sentence-calibrated for Year 8 aloud reading from Chapter II of Olaudah Equiano’s 1789 London autobiography (BL 615.d.11), preserving Equiano’s first-person voice and vocabulary.",
+      "author_context": "Olaudah Equiano (c. 1745–1797)—known for much of his life as Gustavus Vassa—survived enslavement, bought his own freedom for forty pounds in 1766, and helped lead the 'Sons of Africa' abolitionist campaign in London. Published in 1789 just as MPs debated the slave trade, his bestselling memoir shattered pro-slavery myths with unforgettable eyewitness truth.",
+      "cover_image": "/images/brookes_slave_ship.jpg",
+      "cover_caption": "Abolitionist stowage diagram of the Liverpool slave ship Brookes under the Regulated Slave Trade Act of 1788, showing 454 enslaved men, women, and boys packed into decks barely 2 feet 7 inches high.",
       "vocabVault": [
         {
+          "term": "Olaudah Equiano",
+          "pronunciation": "oh-LOW-duh ek-wee-AH-noh",
+          "def": "Formerly enslaved writer and London abolitionist whose 1789 autobiography exposed the horrors of the Middle Passage."
+        },
+        {
           "term": "Middle Passage",
-          "def": "The brutal six-to-twelve-week transatlantic sea voyage carrying enslaved Africans in chains from West Africa to the Americas."
+          "pronunciation": "MID-ul PASS-ij",
+          "def": "The brutal six-to-twelve-week Atlantic voyage carrying enslaved Africans in chains to plantations in the Americas."
         },
         {
           "term": "Chattel Slavery",
-          "def": "A legal system treating enslaved human beings and their children as permanent private property (\"cargo\") to be bought and sold."
+          "pronunciation": "CHAT-ul SLAY-vuh-ree",
+          "def": "A legal system treating human beings and their children as permanent private property ('cargo') to be bought and sold."
         },
         {
           "term": "Avarice",
-          "def": "Extreme greed for financial profit—used by Equiano to expose slave traders’ motives."
-        },
-        {
-          "term": "Abolitionism",
-          "def": "The organised campaign by formerly enslaved writers, Black Britons, Quakers, and reformers to outlaw the slave trade and slavery."
+          "pronunciation": "AV-uh-riss",
+          "def": "Extreme greed for money—the moral crime Equiano blamed for slave traders cramming captives below decks to die."
         }
       ],
+      "extract": "\"The first object that met my eyes when I reached the coast was the sea, and a slave ship riding at anchor. Sight of that vessel filled me with astonishment, which quickly turned to terror when I was carried on board. Rough sailors immediately handled and tossed me up to check whether I was sound and strong. Looking around at their strange faces and a boiling copper pot on deck, I felt sure I had entered a world of bad spirits who meant to kill me.\n\nSoon I was forced down beneath the wooden decks. There a dreadful stench struck my nostrils such as I had never known in my life. Overcome by the foul air and the weeping all around me, I grew so sick and low that I could not swallow a bite of food. Two crewmen tied my hands and flogged me severely because I refused to eat.\n\nDown in the hold, the fierce tropical heat and the crushing crowd nearly suffocated us. Chained captives had scarcely room to turn, and heavy sweat poured from every body until the air became unfit to breathe. Deadly sickness soon swept through the ship, killing many poor souls who fell victim to the short-sighted greed—the avarice—of their purchasers. The shrieks of the women and the groans of the dying made the whole hold a scene of horror almost beyond belief.\"",
       "parent_discussion": [
         {
-          "question": "Why was Olaudah Equiano’s 1789 book far more powerful in changing British public opinion than dry parliamentary statistics alone?",
-          "answer": "Slave-ship owners claimed Africans were well treated on board; Equiano’s eloquent, first-hand account proved both the human agony below decks and the full intellectual equality of Black authors."
+          "question": "Why was Olaudah Equiano’s first-hand 1789 memoir so devastating to British merchants who defended the slave trade in Parliament?",
+          "answer": "Slave traders claimed captives were well cared for on ships; Equiano’s eloquent eyewitness book proved both the agony below decks and the humanity and brilliance of Black writers."
         },
         {
-          "question": "Look at Equiano’s phrase \"falling victims to the improvident avarice [short-sighted greed] of their purchasers\": how does the Brookes ship diagram on the cover back up his words?",
-          "answer": "Merchants packed hundreds of people into spaces barely 2 feet 7 inches high to maximise profits, breeding suffocation and deadly epidemics."
+          "question": "Look at Equiano’s word 'avarice' (extreme greed): how does the 1788 Brookes ship diagram on the cover confirm his accusation?",
+          "answer": "Merchants packed 454 people—and earlier over 600—into shelves just 2 feet 7 inches high to squeeze extra profit from every voyage, breeding suffocation and disease."
         },
         {
-          "question": "Which British ports grew wealthy building slave ships and trading slave-grown sugar, cotton, and tobacco between 1660 and 1807?",
-          "answer": "Liverpool, Bristol, and London financed thousands of triangular-trade voyages."
+          "question": "Why did sailors flog young Equiano when grief and sickness stopped him from eating?",
+          "answer": "Under chattel slavery, captains treated enslaved people as financial 'cargo' whose survival until auction in the Caribbean determined the crew’s profits."
         }
       ],
-      "hinge_question": "<strong>Think:</strong> What happened to Equiano the moment he was carried onto the deck of the slave ship?<br><br><strong>Pair:</strong> Cross-reference Equiano’s written description of conditions \"under the decks\" with the 1788 Brookes plan—how do text and diagram confirm one another?<br><br><strong>Share:</strong> Why did Equiano address his book directly to the Members of both Houses of Parliament in 1789?",
+      "story_check": [
+        {
+          "question": "What did the slave-ship crew immediately do when young Olaudah Equiano was carried onto the deck?",
+          "options": [
+            "Handed him pen and paper",
+            "Handled and tossed him to test whether his body was strong",
+            "Allowed him to stay on the upper deck for the voyage",
+            "Taught him to steer the ship’s wheel"
+          ],
+          "correctIndex": 1,
+          "feedback": "Correct! Sailors inspected and tossed captives like marketplace goods before forcing them below decks."
+        },
+        {
+          "question": "Why did the air below decks become 'unfit to breathe' during the Atlantic crossing?",
+          "options": [
+            "Cold Arctic snow blocked the hatches",
+            "Coal smoke leaked from a steam engine",
+            "Crushing overcrowding, tropical heat, sweat, and filth suffocated chained captives",
+            "The ship carried barrels of gunpowder"
+          ],
+          "correctIndex": 2,
+          "feedback": "Spot on. Packing hundreds of chained people into low, unventilated timber holds bred suffocating heat and deadly epidemics."
+        },
+        {
+          "question": "What moral flaw in the slave traders ('purchasers') did Equiano blame for so many deaths on board?",
+          "options": [
+            "Avarice—short-sighted greed for profit",
+            "Poor map-reading skills",
+            "Fear of Spanish pirates",
+            "Ignorance of tropical weather"
+          ],
+          "correctIndex": 0,
+          "feedback": "Exactly right. Equiano named 'avarice'—ruthless greed—as the cause of cramming human beings into deadly holds."
+        }
+      ],
+      "monday_cold_call": {
+        "question": "What word meaning 'extreme greed' did Olaudah Equiano use to explain why slave ships were packed so tightly—and how does the Brookes diagram back him up?",
+        "answer": "Equiano blamed the traders’ 'avarice'; the 1788 Brookes diagram proved 454 people were crammed onto shelves barely 2 feet 7 inches high."
+      },
+      "hinge_question": "<strong>Think:</strong> How did Olaudah Equiano gain his freedom in 1766, and what London group did he help lead?<br><br><strong>Pair:</strong> Cross-reference Equiano’s memories of the hold with the 1788 Brookes stowage plan—how did word and image work together in 1789?<br><br><strong>Share:</strong> Why was Black abolitionist leadership essential alongside Parliamentary campaigners in ending the British slave trade?",
       "questions": [
-        "What did the ship’s crew immediately do to Equiano when he was carried on board?",
-        "Why did the air below deck quickly become \"unfit for respiration\"?",
-        "What moral flaw in the slave traders (\"purchasers\") does Equiano blame for the deaths on board?"
+        "What did the sailors do to Equiano as soon as he was carried aboard the slave ship?",
+        "Why was Equiano flogged below decks when he grew too sick to eat?",
+        "What does Equiano mean by blaming the 'avarice' of the purchasers?"
       ],
       "audio_file": "/audio/reading/first_british_empire/r1.mp3",
       "studio_audio": "/audio/reading/first_british_empire/r1.mp3",
-      "studio_voice_label": "Studio Male Historian · Archival Reading",
-      "provenance_tier": "verbatim_primary",
-      "provenance_note": "Original published text from Chapter II of Olaudah Equiano’s 1789 autobiography describing the Middle Passage.",
-      "short_tab_title": "2. Equiano: Middle Passage (1789)"
+      "studio_voice_label": "Studio Male Historian · Archival Reading"
     },
     {
       "lesson_index": 2,
       "lesson_id": "lesson_3",
       "lesson_label": "Enquiry 3",
-      "book_title": "The Jamaican Maroon Peace Treaty (1739) & Bryan Edwards on Maroon Guerrilla Warfare",
-      "author": "Treaty of Cudjoe’s Town (1 March 1739 • CO 137/23) & Bryan Edwards (1796)",
-      "cover_image": "/images/ks3_fbe/fbe_gr2_jamaica_map_seller_1672.jpg",
-      "cover_caption": "John Seller’s hand-coloured map of Jamaica (Novissima et Accuratissima Insulae Jamaicae Descriptio, c. 1672–1675, Royal Museums Greenwich F8080), showing the rugged Blue Mountains and interior parishes where Maroon communities defied British armies.",
-      "author_context": "Far from accepting plantation slavery passively, thousands of self-liberated Africans in Jamaica escaped into the limestone ravines of the Cockpit Country and the Blue Mountains. Led by brilliant tacticians Queen Nanny of the Windward Maroons and Captain Cudjoe of the Leeward Maroons, they defeated British redcoat regiments so decisively in the First Maroon War (1728–1739) that Colonial Governor Edward Trelawny had to sue for peace.",
-      "source_type": "primary_decree",
-      "source_type_label": "Colonial Peace Treaty (1739) & Contemporary History",
-      "is_primary": true,
+      "short_tab_title": "3. Queen Nanny & Maroons",
+      "literary_mode": "storied_micro_history",
+      "provenance_tier": "storied_micro_history",
+      "source_type": "storied_micro_history",
+      "source_type_label": "True Historical Story · Maroon Resistance",
+      "is_primary": false,
       "is_adapted": false,
-      "extract": "From planter-historian Bryan Edwards’s contemporary account of Maroon mountain tactics in The Proceedings of the Governor and Assembly of Jamaica (1796): \"In the inaccessible fastnesses of the Cockpit Country—deep limestone glens flanked by precipices and tangled forest—European regular troops marched in scarlet coats only to be struck down by an unseen enemy. Communicating across miles of mountain peaks by the blast of the abeng [cow-horn trumpet] and camouflaged from head to foot in wild foliage, the Maroons ambushed British columns, cut off their baggage trains, and vanished before a single volley could be returned.\"\n\nForced to negotiate, Governor Edward Trelawny signed the Articles of Pacification with Captain Cudjoe on 1 March 1739 (followed by a treaty with the Windward Maroons in 1740):\n\"Article I: That all hostilities shall cease on both sides for ever.\nArticle II: That the said Captain Cudjoe, the rest of his Captains, Adherents, and Men, shall be for ever hereafter in a perfect state of freedom and liberty.\nArticle III: That they shall enjoy and possess, for themselves and their posterity for ever, all the lands situate and lying between Trelawny Town and the Cockpits, to the amount of fifteen hundred acres...\"\nYet a painful colonial compromise followed in Article IX, requiring the Maroons to return future runaways from the sugar estates in exchange for crown recognition of their own freedom.",
+      "book_title": "Sound of the Abeng: Queen Nanny, Mountain Camouflage & The 1739 Maroon Peace Treaty",
+      "author": "The History Revision Hub · Grounded in Colonial Office CO 137/23 & Bryan Edwards (1796)",
+      "provenance_note": "Original narrative micro-history grounded in the 1739–1740 Jamaican Maroon Peace Treaties (TNA CO 137/23), Bryan Edwards’s 1796 military account, and Windward Maroon heritage records.",
+      "author_context": "Enslaved Africans in Jamaica never accepted sugar-plantation bondage passively. Escaping into the razor-sharp limestone Cockpits and mist-covered Blue Mountains, Windward leader Queen Nanny and Leeward commander Captain Cudjoe waged such brilliant guerrilla warfare between 1728 and 1739 that the British Empire had to beg for peace.",
+      "cover_image": "/images/ks3_fbe/fbe_gr2_jamaica_map_seller_1672.jpg",
+      "cover_caption": "John Seller’s hand-coloured map of Jamaica (Novissima et Accuratissima Insulae Jamaicae Descriptio, c. 1672–1675, Royal Museums Greenwich F8080), showing the Blue Mountains and interior parishes where Maroon communities defied British armies.",
       "vocabVault": [
         {
           "term": "Maroons",
-          "def": "Communities of self-liberated Africans and their descendants who escaped Caribbean plantations and defended free mountain towns."
+          "pronunciation": "muh-ROONZ",
+          "def": "Self-liberated Africans and their descendants who escaped Caribbean plantations and defended free mountain towns."
         },
         {
           "term": "Abeng",
-          "def": "A curved cow-horn instrument blown by Jamaican Maroon lookouts to send coded messages across mountain valleys."
+          "pronunciation": "ah-BENG",
+          "def": "A curved cow-horn trumpet blown by Jamaican Maroon lookouts to send coded warnings across miles of mountain valleys."
         },
         {
           "term": "Guerrilla Warfare",
-          "def": "Hit-and-run ambush tactics using local terrain, speed, and camouflage to defeat a larger, heavily armed regular army."
+          "pronunciation": "guh-RIL-uh",
+          "def": "Fast hit-and-run ambushes using steep terrain, stealth, and leaf camouflage to defeat a larger regular army."
         },
         {
-          "term": "Cockpit Country",
-          "def": "The steep, jagged limestone mountain region of western Jamaica where Captain Cudjoe’s Leeward Maroons built unconquerable strongholds."
+          "term": "Queen Nanny",
+          "pronunciation": "NAN-ee",
+          "def": "Asante-born military strategist and spiritual leader of the Windward Maroons in Jamaica’s Blue Mountains."
         }
       ],
+      "extract": "High in the mist-wrapped Blue Mountains of eastern Jamaica, British redcoats marched single-file along a narrow stone ledge. Sweat soaked their heavy red wool coats and clanking musket belts. Suddenly, a low, haunting note echoed from peak to peak. Far above them, a Maroon scout blew the curved cow-horn called the abeng to warn of the marching column.\n\nBefore the soldiers spotted a single face, the green forest wall seemed to move. Dressed from head to foot in tied branches and wild leaves, Windward Maroon fighters struck fast and vanished into deep limestone gullies. Their leader was Queen Nanny, a bold Asante-born leader who built Nanny Town high above sheer cliffs. There free families grew yams, plantains, and pumpkins far beyond any planter’s whip. In western Jamaica’s jagged Cockpit Country, Captain Cudjoe’s fighters broke British supply lines the same way.\n\nBy March 1739, eleven years of hard mountain fighting had exhausted the British garrison. Nearly a century before Britain ended slavery in 1833, Governor Edward Trelawny sent officers into the hills to beg for peace. Signed treaties recognised Maroon freedom forever and granted fifteen hundred acres of free land. Yet peace carried a bitter price. To keep their hard-won liberty, Maroon chiefs had to promise to hand back future runaways from lowland sugar estates.",
       "parent_discussion": [
         {
-          "question": "Why were regular British soldiers in bright red uniforms repeatedly defeated by the Jamaican Maroons in the 1730s?",
-          "answer": "The Maroons knew every ravine of the Cockpit Country and Blue Mountains, used leaf camouflage, signalled across valleys with the abeng horn, and ambushed slow British columns."
+          "question": "Why were regular British soldiers in scarlet uniforms repeatedly outfought in Jamaica’s Blue Mountains and Cockpit Country?",
+          "answer": "Heavy red wool uniforms made easy targets on narrow trails, while Maroon fighters knew every cliff, used head-to-foot leaf camouflage, and sent coded abeng horn alerts."
         },
         {
-          "question": "Why were Articles II and III of the 1739 Treaty such a historic victory nearly a century before Britain abolished slavery in 1833?",
-          "answer": "Almost a hundred years before emancipation, the mighty British Empire was forced in writing to recognise formerly enslaved Black leaders as free citizens owning 1,500 acres of land."
+          "question": "Why was the 1739–1740 Peace Treaty such an extraordinary milestone in the history of the First British Empire?",
+          "answer": "Ninety-four years before Parliament ended slavery in 1833, self-liberated Africans militarily forced the British Crown to recognize their permanent freedom and land."
         },
         {
-          "question": "Why do historians describe Article IX of the 1739 Treaty as a \"tragic compromise\"?",
-          "answer": "To secure peace and permanent legal freedom for their own mountain towns, Maroon leaders had to agree not to shelter newly escaped runaways from lowland sugar plantations."
+          "question": "Why do historians call the treaty’s runaway clause a painful colonial compromise?",
+          "answer": "To protect their free mountain towns from endless British invasion, Maroon leaders were pressured into agreeing not to shelter newly escaped plantation captives."
         }
       ],
-      "hinge_question": "<strong>Think:</strong> What instrument did Maroon scouts use to communicate across mountain ridges?<br><br><strong>Pair:</strong> Compare what the Maroons GAINED in Articles II–III with what the British planters DEMANDED in Article IX.<br><br><strong>Share:</strong> How do Queen Nanny and Captain Cudjoe challenge the old myth that freedom was simply \"gifted\" from London?",
+      "story_check": [
+        {
+          "question": "What instrument did Maroon lookouts blow to send coded military signals across Jamaica’s mountain valleys?",
+          "options": [
+            "A brass naval bugle",
+            "The abeng—a curved cow-horn",
+            "An iron church bell",
+            "A bamboo flute"
+          ],
+          "correctIndex": 1,
+          "feedback": "Correct! By varying thumb pressure on the abeng cow-horn, Maroon scouts sent precise coded messages across miles of peaks."
+        },
+        {
+          "question": "Which brilliant strategist led the Windward Maroons from their cliffside stronghold in the Blue Mountains?",
+          "options": [
+            "Phillis Wheatley",
+            "Governor Edward Trelawny",
+            "Queen Nanny",
+            "Violet King"
+          ],
+          "correctIndex": 2,
+          "feedback": "Spot on. Queen Nanny led Windward Maroon defence and community survival in the Blue Mountains—today she is a National Hero of Jamaica."
+        },
+        {
+          "question": "What was the outcome of the First Maroon War in 1739–1740?",
+          "options": [
+            "Britain abandoned Jamaica completely",
+            "Britain was forced to sign treaties guaranteeing Maroon freedom and land, alongside a harsh runaway-return clause",
+            "Sugar plantations were outlawed across the Caribbean",
+            "The Maroons sailed to Nova Scotia"
+          ],
+          "correctIndex": 1,
+          "feedback": "Exactly right. Unable to defeat Maroon guerrilla tactics, Governor Trelawny signed treaties recognizing Maroon freedom and 1,500+ acres of land."
+        }
+      ],
+      "monday_cold_call": {
+        "question": "How did Queen Nanny’s Windward Maroons use the abeng and jungle terrain to defeat British redcoats—and what difficult compromise sat inside the 1739 treaty?",
+        "answer": "Lookouts blew coded warnings on the abeng horn while leaf-camouflaged fighters ambushed redcoats in steep ravines; the 1739 treaty secured Maroon freedom and land, but required returning future plantation runaways."
+      },
+      "hinge_question": "<strong>Think:</strong> Look at Seller’s 1672 map of Jamaica—how did the island’s mountain spine aid Maroon survival?<br><br><strong>Pair:</strong> Weigh what the Maroons WON in 1739 against what Governor Trelawny demanded in return.<br><br><strong>Share:</strong> How does Queen Nanny’s victory challenge the old myth that freedom was simply 'gifted' from Westminster?",
       "questions": [
-        "How did Maroon fighters disguise themselves and send signals across Jamaica’s mountains?",
-        "How many acres of land did Article III guarantee to Captain Cudjoe and his people?",
-        "What difficult condition did the British colonial government insert into Article IX of the 1739 treaty?"
+        "What was the abeng, and how did Maroon scouts use it?",
+        "How did Maroon fighters use Jamaica’s terrain and foliage against British soldiers?",
+        "What did the Maroons gain—and what compromise did Britain demand—in the 1739 treaty?"
       ],
       "audio_file": "/audio/reading/first_british_empire/r2.mp3",
       "studio_audio": "/audio/reading/first_british_empire/r2.mp3",
-      "studio_voice_label": "Studio Male Historian · Archival Reading",
-      "provenance_tier": "verbatim_primary",
-      "provenance_note": "Original articles from the 1739 Jamaican Maroon Treaty paired with Bryan Edwards’s 1796 account and brief classroom context.",
-      "short_tab_title": "3. Maroon Peace Treaty (1739)"
+      "studio_voice_label": "Studio Female Historian · Storied History"
     },
     {
       "lesson_index": 3,
       "lesson_id": "lesson_4",
       "lesson_label": "Enquiry 4",
-      "book_title": "Declarations of the Stamp Act Congress (1765) & Eyewitness to the Boston Tea Party (1773)",
-      "author": "Stamp Act Congress (19 Oct 1765) & George Robert Twelves Hewes (1773 Eyewitness)",
-      "cover_image": "/images/stamp_act_skull_1765.jpg",
-      "cover_caption": "William Bradford’s Pennsylvania Journal woodcut (31 October 1765), printing a skull and crossbones (\"This is the Place to affix the STAMP\") in protest against the British Stamp Act.",
-      "author_context": "Victory in the Seven Years’ War (1756–1763) doubled Britain’s national debt to over £130 million. When Parliament taxed colonial newspapers and legal documents (1765 Stamp Act) and later granted the struggling East India Company a tea monopoly (1773 Tea Act), American colonists answered with constitutional protest and direct action—remembered vividly by Boston shoemaker George Robert Twelves Hewes.",
-      "source_type": "primary_testimony",
-      "source_type_label": "Colonial Congress Resolution (1765) & Boston Eyewitness",
+      "short_tab_title": "4. Wheatley & Boston Tea",
+      "literary_mode": "verbatim_literature",
+      "provenance_tier": "verbatim_literature",
+      "source_type": "period_verse",
+      "source_type_label": "Colonial Verse (1772) & Tea Party Eyewitness (1773)",
       "is_primary": true,
       "is_adapted": false,
-      "extract": "From the Declaration of Rights and Grievances adopted by delegates of nine colonies at the Stamp Act Congress in New York (19 October 1765): \"It is inseparably essential to the freedom of a people, and the undoubted right of Englishmen, that no taxes be imposed on them, but with their own consent, given personally, or by their representatives. That the people of these colonies are not, and from their local circumstances cannot be, represented in the House of Commons in Great Britain; that the only representatives of the people of these colonies are persons chosen therein by themselves.\"\n\nEight years later, on the freezing night of 16 December 1773, Boston shoemaker George Robert Twelves Hewes joined the \"Sons of Liberty\" boarding three East India Company ships moored at Griffin’s Wharf: \"It was now evening, and I immediately dressed myself in the costume of an Indian, equipped with a small hatchet, and smeared my face and hands with coal dust in the shop of a blacksmith. When we arrived at the wharf, we were ordered by our commander to board the ships quietly and bring up all the chests of tea upon deck.\n\nIn about three hours from the time we went on board, we had broken and thrown overboard every tea chest to be found in the three ships—three hundred and forty-two chests in all—while strictly forbidding any man to steal a single ounce of tea or damage the ships’ rigging.\"",
+      "book_title": "Tyranny & Tea Chests: Phillis Wheatley’s Verse (1772) and George Hewes at Boston Harbour",
+      "author": "Phillis Wheatley (Poems, 1773) & Shoemaker George Robert Twelves Hewes (1773 Eyewitness)",
+      "provenance_note": "Verbatim lines from Phillis Wheatley’s October 1772 poem 'To the Right Honourable William, Earl of Dartmouth' (published London, 1773) paired with Boston shoemaker George Hewes’s eyewitness account of 16 December 1773.",
+      "author_context": "After the Seven Years’ War doubled Britain’s debt, Westminster taxed American newspapers (1765 Stamp Act) and granted the East India Company a colonial tea monopoly (1773). In rebellious Boston, enslaved poet Phillis Wheatley exposed the sharp irony of slaveholding colonists crying 'Tyranny!'—months before shoemaker George Hewes helped dump 342 tea chests into the harbour.",
+      "cover_image": "/images/stamp_act_skull_1765.jpg",
+      "cover_caption": "William Bradford’s Pennsylvania Journal woodcut (31 October 1765), printing a skull and crossbones ('This is the Place to affix the STAMP') in protest against the British Stamp Act.",
       "vocabVault": [
         {
-          "term": "No Taxation Without Representation",
-          "def": "The colonial constitutional argument—rooted in Magna Carta and the 1689 Bill of Rights—that Westminster could not tax Americans who elected zero MPs."
+          "term": "Phillis Wheatley",
+          "pronunciation": "FIL-iss WEET-lee",
+          "def": "Enslaved African-born Boston teenager who in 1773 became the first African American author to publish a book of poetry."
         },
         {
-          "term": "Stamp Act (1765)",
-          "def": "Britain’s direct tax requiring paid revenue stamps on every colonial newspaper, legal contract, licence, and pack of playing cards."
+          "term": "Tyrannic Sway",
+          "pronunciation": "tih-RAN-ik SWAY",
+          "def": "Cruel, unchecked rule without consent—linked by Wheatley to her own kidnapping from West Africa."
         },
         {
           "term": "Sons of Liberty",
-          "def": "Secret colonial protest networks of artisans, merchants, and dockworkers who organised boycotts and the 1773 Boston Tea Party."
+          "pronunciation": "SUNZ uv LIB-er-tee",
+          "def": "Colonial protest networks of artisans, dockworkers, and merchants who organised boycotts and the 1773 Boston Tea Party."
         },
         {
-          "term": "Coercive (\"Intolerable\") Acts (1774)",
-          "def": "Parliament’s harsh punishment after the Boston Tea Party—closing Boston Port and imposing military rule in Massachusetts."
+          "term": "Monopoly",
+          "pronunciation": "muh-NOP-uh-lee",
+          "def": "Exclusive control of a trade—Parliament’s 1773 Tea Act let the East India Company undercut local colonial merchants."
         }
       ],
+      "extract": "In Boston in October 1772, white colonists cried out that London taxes without elected MPs turned freeborn Britons into \"slaves.\" Watching from a Boston house where she herself was legally enslaved, nineteen-year-old poet Phillis Wheatley wrote to King George III’s minister, the Earl of Dartmouth.\n\n<div class=\"reading-stanza\">Should you, my lord, while you peruse my song,<br>Wonder from whence my love of Freedom sprung?<br>I, young in life, by seeming cruel fate<br>Was snatch’d from Afric’s fancy’d happy seat.<br>What pangs excruciating must molest,<br>What sorrows labour in my parent’s breast?<br>And can I then but pray<br>Others may never feel tyrannic sway?</div>\n\nFourteen months later, on the freezing night of 16 December 1773, Boston’s tax anger boiled over at Griffin’s Wharf. Poor shoemaker George Hewes slipped into a blacksmith’s shop, rubbed black coal dust over his face and hands, and gripped a small hatchet. Dressed as Mohawk warriors, he and the Sons of Liberty boarded three East India Company ships in dead silence. In three hours, they chopped open three hundred and forty-two chests of Company tea and heaved them into the harbour. Salt water turned brown with floating leaves from Bengal and China. Not one man was allowed to pocket a single ounce for himself.",
       "parent_discussion": [
         {
-          "question": "Notice how the 1765 Stamp Act Congress describes taxation by consent as \"the undoubted right of Englishmen\": where had the colonists learned that idea?",
-          "answer": "Directly from British history itself—Magna Carta (1215) and the English Bill of Rights (1689), which forbade taxing subjects without Parliament’s consent!"
+          "question": "How did nineteen-year-old Phillis Wheatley explain where her deep 'love of Freedom' came from in her 1772 poem?",
+          "answer": "Unlike white colonists protesting paper and tea taxes, she had literally been kidnapped as a child from West Africa, tearing her from her heartbroken parents."
         },
         {
-          "question": "Why did the Boston Tea Party protesters strictly forbid stealing tea for themselves or damaging any other part of the ships?",
-          "answer": "They wanted to prove to the world that the destruction of 342 East India Company tea chests was a disciplined political protest against unfair taxation, not a greedy riot."
+          "question": "Why did George Hewes and the Sons of Liberty smear coal dust on their faces yet forbid anyone from stealing a single ounce of tea?",
+          "answer": "Disguises hid their identities from British arrest, while strict discipline proved they were staging a principled tax protest—not a greedy dockside robbery."
         },
         {
-          "question": "Look at how global the First British Empire had become by 1773: which company owned the tea dumped into Boston Harbor?",
-          "answer": "The British East India Company—connecting Mughal Bengal, London Parliament, and rebellious Boston in a single global web!"
+          "question": "Notice which company owned the 342 tea chests floating in Boston Harbour: how does that link Enquiry 1 (Bengal) to Enquiry 4 (America)?",
+          "answer": "It was the British East India Company—Parliament passed the 1773 Tea Act to bail out the very same Company that had conquered Mughal Bengal!"
         }
       ],
-      "hinge_question": "<strong>Think:</strong> Why had Britain started taxing the Thirteen Colonies after 1763 in the first place?<br><br><strong>Pair:</strong> Why did George III and Parliament think taxing colonists to pay for their own defence was fair, while colonists called it tyranny?<br><br><strong>Share:</strong> How did Parliament’s furious reaction in 1774 turn a tax dispute into a war for independence?",
+      "story_check": [
+        {
+          "question": "Why did Phillis Wheatley say she understood 'tyrannic sway' better than anyone in Boston?",
+          "options": [
+            "She had paid heavy Stamp Act taxes on newspapers",
+            "She had been kidnapped as a child from West Africa into slavery",
+            "She owned a Boston tea warehouse",
+            "She served in the Royal Navy"
+          ],
+          "correctIndex": 1,
+          "feedback": "Correct! Snatched from West Africa as a young girl, Wheatley reminded British and colonial leaders alike what real loss of freedom meant."
+        },
+        {
+          "question": "How did shoemaker George Hewes disguise himself before boarding the tea ships on 16 December 1773?",
+          "options": [
+            "In a British redcoat uniform",
+            "In a judge’s white wig",
+            "In Mohawk dress with coal dust smeared on his face and hands",
+            "In a sailor’s tarpaulin coat"
+          ],
+          "correctIndex": 2,
+          "feedback": "Spot on. Hewes stopped at a blacksmith’s shop to darken his face with coal dust and carried a small hatchet to split the wooden chests."
+        },
+        {
+          "question": "How many chests of East India Company tea were thrown into Boston Harbour during the three-hour raid?",
+          "options": [
+            "42 chests",
+            "130 chests",
+            "342 chests",
+            "1,500 chests"
+          ],
+          "correctIndex": 2,
+          "feedback": "Exactly right. Protesters emptied 342 chests—worth roughly £10,000 at the time—into the harbour without damaging the ships."
+        }
+      ],
+      "monday_cold_call": {
+        "question": "How did enslaved poet Phillis Wheatley gently expose colonial hypocrisy in 1772—and why did George Hewes’s boarding party ban stealing any tea in 1773?",
+        "answer": "Wheatley showed her love of freedom came from actually being kidnapped from Africa into slavery; Hewes’s Sons of Liberty banned theft to prove the Tea Party was a political protest, not looting."
+      },
+      "hinge_question": "<strong>Think:</strong> Why had Parliament taxed the Thirteen Colonies after 1763 in the first place?<br><br><strong>Pair:</strong> Compare Phillis Wheatley’s view of 'Freedom' in 1772 with the Sons of Liberty’s slogan 'No taxation without representation'.<br><br><strong>Share:</strong> How did Parliament’s furious 1774 punishment of Boston turn a tax protest into the American Revolution?",
       "questions": [
-        "Why did the 1765 Stamp Act Congress say colonists could not be taxed by the House of Commons in London?",
-        "How many chests of East India Company tea were thrown into Boston Harbor on 16 December 1773?",
-        "What strict rule did the boarding parties enforce regarding stealing tea or damaging the ships?"
+        "Where did Phillis Wheatley say her 'love of Freedom' came from?",
+        "How did George Hewes disguise himself on the night of 16 December 1773?",
+        "How many East India Company tea chests were dumped into Boston Harbour?"
       ],
       "audio_file": "/audio/reading/first_british_empire/r3.mp3",
       "studio_audio": "/audio/reading/first_british_empire/r3.mp3",
-      "studio_voice_label": "Studio Male Historian · Archival Reading",
-      "provenance_tier": "verbatim_primary",
-      "provenance_note": "Original 1765 Stamp Act Congress resolutions paired with shoemaker George Hewes’s eyewitness account of the 1773 Boston Tea Party.",
-      "short_tab_title": "4. Stamp Act & Boston Tea (1773)"
+      "studio_voice_label": "Studio Female Historian · Classic Literature"
     },
     {
       "lesson_index": 4,
       "lesson_id": "lesson_5",
       "lesson_label": "Enquiry 5",
-      "book_title": "Memoirs of the Life of Boston King: A Black Loyalist in the American Revolution (1798)",
-      "author": "Boston King (published in The Methodist Magazine, London, March–June 1798)",
-      "cover_image": "/images/surrender_of_cornwallis_1781.jpg",
-      "cover_caption": "John Trumbull, Surrender of Lord Cornwallis (1820, US Capitol Rotunda), depicting the October 1781 British defeat at Yorktown that decided American independence.",
-      "author_context": "While Thomas Jefferson’s 1776 Declaration of Independence proclaimed that \"all men are created equal,\" Jefferson himself enslaved over six hundred people. Tens of thousands of enslaved African Americans judged that liberty lay instead with British Emancipation proclamations (Lord Dunmore 1775; Philipsburg 1779). Carpenter and preacher Boston King (c. 1760–1802) escaped a South Carolina plantation to British lines, was registered in the 1783 Book of Negroes in New York, and published his gripping memoir in London in 1798.",
+      "short_tab_title": "5. Boston King’s Escape",
+      "literary_mode": "intimate_eyewitness",
+      "provenance_tier": "adapted_primary",
       "source_type": "primary_memoir",
       "source_type_label": "Black Loyalist Autobiography (1798)",
       "is_primary": true,
       "is_adapted": true,
-      "extract": "\"When the British troops took Charleston in South Carolina in 1780, word spread swiftly among the plantations that freedom was promised to all enslaved persons who reached the King’s lines. Resolving to risk death rather than remain in bondage, I borrowed a horse by night, slipped past the American patrols, and reached the British camp—where I was received as a free man, though smallpox soon swept fearfully through our tents.\n\nYet when peace was signed between Britain and the United States in 1783, unspeakable terror seized every Black Loyalist in New York. Rumours ran along the streets that all former slaves were to be delivered back to their old American masters, many of whom had already arrived in the city seizing people off the pavements! For days we could neither eat nor sleep for dread of returning to chains.\n\nMercifully, the British Commander-in-Chief, Sir Guy Carleton, stood firm by the Crown’s promise of freedom to all who had crossed into British lines for at least a year. My wife Violet and I had our names, ages, and former masters recorded in the great inspection ledger [the Book of Negroes], received our signed certificates of freedom, and set sail aboard HMS L’Abondance for Nova Scotia—and years later onward across the Atlantic to Freetown in Sierra Leone.\"",
+      "book_title": "Memoirs of the Life of Boston King: From Charleston Bondage to the Book of Negroes",
+      "author": "Boston King (The Methodist Magazine, London, 1798 • Calibrated for Aloud Reading)",
+      "provenance_note": "Sentence-calibrated for Year 8 aloud reading from carpenter and preacher Boston King’s 1798 London memoir (The Methodist Magazine, March–June 1798).",
+      "author_context": "While Thomas Jefferson’s 1776 Declaration of Independence proclaimed that 'all men are created equal', Jefferson himself enslaved over six hundred people. Judging that real freedom lay behind British lines under Lord Dunmore’s 1775 and Clinton’s 1779 proclamations, over 20,000 Black Loyalists—including South Carolina carpenter Boston King and his wife Violet—risked their lives to escape.",
+      "cover_image": "/images/surrender_of_cornwallis_1781.jpg",
+      "cover_caption": "John Trumbull, Surrender of Lord Cornwallis (1820, US Capitol Rotunda), depicting the October 1781 British defeat at Yorktown that decided American independence.",
       "vocabVault": [
         {
           "term": "Black Loyalists",
-          "def": "Roughly 20,000+ enslaved African Americans who escaped Rebel masters during the American Revolution to claim freedom behind British lines."
+          "pronunciation": "BLAK LOY-uh-lists",
+          "def": "Over 20,000 enslaved African Americans who escaped Patriot masters during the American Revolution to claim freedom with British forces."
         },
         {
-          "term": "Dunmore’s Proclamation (1775)",
-          "def": "Virginia Royal Governor Lord Dunmore’s offer of freedom to enslaved people owned by Rebels if they joined British forces."
+          "term": "Dunmore’s Proclamation",
+          "pronunciation": "DUN-morz",
+          "def": "The 1775 British offer promising immediate freedom to enslaved people owned by American Rebels if they crossed into British lines."
         },
         {
-          "term": "Book of Negroes (1783)",
-          "def": "The official British military register recording 3,000 Black Loyalists evacuated as free people from New York to Nova Scotia, London, and the Caribbean."
+          "term": "Book of Negroes",
+          "pronunciation": "BOOK uv NEE-grohz",
+          "def": "The official 1783 British military ledger registering 3,000 Black Loyalists evacuated as free people from New York to Nova Scotia."
         },
         {
-          "term": "Paradox of Liberty",
-          "def": "The stark contradiction of Patriot leaders demanding freedom from British \"slavery\" while continuing to hold 500,000 Africans in chattel bondage."
+          "term": "Nova Scotia",
+          "pronunciation": "NOH-vuh SKOH-shuh",
+          "def": "The cold Atlantic province in Canada where Boston and Violet King settled as free citizens before later sailing to Sierra Leone."
         }
       ],
+      "extract": "\"In 1780, British troops captured Charleston in South Carolina. Word ran fast across the plantations that freedom awaited all enslaved people who reached the King’s camp. Choosing to risk death rather than stay in chains, I borrowed a horse at midnight and rode past the Rebel patrols. British soldiers welcomed me as a free man, though deadly smallpox soon swept through our tents.\n\nYet when peace was signed with the United States in 1783, dreadful terror gripped every Black Loyalist in New York. Rumours ran down the alleys that all former slaves would be handed back to their old American masters! Worse still, angry Southern planters walked right into New York seizing men and women off the pavements. For days my wife Violet and I could neither eat nor sleep for fear of returning to chains.\n\nMercifully, British General Sir Guy Carleton kept the Crown’s promise to everyone who had served a full year. Clerks wrote our names, ages, and scars into a great ledger called the Book of Negroes. Holding our signed certificates of freedom, Violet and I boarded the ship L’Abondance and sailed free to Nova Scotia. Years later, we crossed the Atlantic once more to help build a free Black settlement in Sierra Leone.\"",
       "parent_discussion": [
         {
-          "question": "Why did enslaved people like Boston King and his wife Violet side with the British King rather than the American Patriots fighting for \"liberty\"?",
-          "answer": "American Patriot planters intended to keep slavery intact, whereas British commanders offered signed freedom certificates to enslaved people escaping Rebel estates."
+          "question": "Why did enslaved people like Boston and Violet King side with the British King rather than the American Patriots fighting for 'independence'?",
+          "answer": "Patriot leaders like Washington and Jefferson kept slavery legal in the new United States, whereas British commanders offered freedom certificates to runaways from Rebel estates."
         },
         {
-          "question": "Why was peace in 1783 a moment of terror rather than celebration for Black Loyalists waiting in New York?",
-          "answer": "George Washington and American slaveholders demanded their escaped human \"property\" back; only British General Sir Guy Carleton’s refusal and the Book of Negroes saved 3,000 evacuees."
+          "question": "Why was the 1783 peace treaty a moment of terror rather than celebration for Black Loyalists waiting in New York?",
+          "answer": "American slaveholders entered New York demanding their escaped human 'property' back; only General Carleton’s refusal and the Book of Negroes protected 3,000 evacuees."
         },
         {
-          "question": "Did Britain offer Dunmore’s Proclamation out of pure anti-slavery idealism, or military strategy?",
-          "answer": "Military strategy—Britain only freed enslaved people belonging to Rebel Patriots (while keeping slavery fully legal in loyal Jamaica and Barbados until 1833!)."
+          "question": "Did Britain issue Dunmore’s Proclamation out of pure anti-slavery principle, or wartime calculation?",
+          "answer": "Wartime calculation—Britain freed enslaved people escaping Rebel Patriots to cripple the colonial economy, while keeping slavery fully legal in loyal Jamaica until 1833."
         }
       ],
-      "hinge_question": "<strong>Think:</strong> What deadly disease struck Boston King soon after he reached the British camp?<br><br><strong>Pair:</strong> Compare Thomas Jefferson’s words in 1776 (\"all men are created equal\") with Boston King’s real-life choices in 1780–1783.<br><br><strong>Share:</strong> How did losing the Thirteen Colonies in 1783 push Britain eastward toward India and Australia?",
+      "story_check": [
+        {
+          "question": "How did Boston King escape his South Carolina plantation to reach British lines at Charleston in 1780?",
+          "options": [
+            "He swam out to a French warship",
+            "He borrowed a horse at midnight and slipped past American patrols",
+            "His master paid for his train ticket",
+            "He hid inside a tea chest from Boston"
+          ],
+          "correctIndex": 1,
+          "feedback": "Correct! Risking execution if caught, Boston King rode past Rebel patrols by night to claim British protection."
+        },
+        {
+          "question": "Why couldn’t Boston and Violet King eat or sleep in New York when peace was announced in 1783?",
+          "options": [
+            "The city had run out of drinking water",
+            "They feared being handed back to American slaveholders who were seizing people off the streets",
+            "Spanish warships were bombarding the harbour",
+            "Smallpox had closed the port"
+          ],
+          "correctIndex": 1,
+          "feedback": "Spot on. American slaveholders arrived in New York demanding the return of escaped Black Loyalists under the peace terms."
+        },
+        {
+          "question": "What famous 1783 British ledger recorded 3,000 Black Loyalists with signed freedom certificates before they sailed for Nova Scotia?",
+          "options": [
+            "The Valor Ecclesiasticus",
+            "The Domesday Book",
+            "The Book of Negroes",
+            "The Bengal Diwani"
+          ],
+          "correctIndex": 2,
+          "feedback": "Exactly right. General Sir Guy Carleton’s clerks registered 3,000 men, women, and children—including Boston and Violet King—in the Book of Negroes."
+        }
+      ],
+      "monday_cold_call": {
+        "question": "Why did Boston King fight on the British side rather than for Thomas Jefferson’s Patriots—and what document saved him and Violet in New York in 1783?",
+        "answer": "Britain promised freedom to enslaved people escaping Rebel masters while Jefferson kept slavery; in 1783 being registered in the Book of Negroes with freedom certificates saved them from re-enslavement."
+      },
+      "hinge_question": "<strong>Think:</strong> Why do historians call 1776 a 'Paradox of Liberty' when comparing Jefferson’s Declaration with Boston King’s life?<br><br><strong>Pair:</strong> Compare British slave policy in Rebel Virginia (1775) with British slave policy in loyal Jamaica.<br><br><strong>Share:</strong> How did losing the Thirteen Colonies in 1783 shift Britain’s imperial focus eastward toward India and Australia?",
       "questions": [
-        "In which state and year did Boston King escape to the British army’s lines?",
-        "Why were Black Loyalists in New York terrified when peace was signed in 1783?",
-        "What official ledger recorded Boston and Violet King’s names before they sailed to Nova Scotia?"
+        "How did Boston King reach British army lines in South Carolina in 1780?",
+        "Why were Black Loyalists terrified in New York when peace arrived in 1783?",
+        "How did Sir Guy Carleton and the Book of Negroes protect Boston and Violet King?"
       ],
       "audio_file": "/audio/reading/first_british_empire/r4.mp3",
       "studio_audio": "/audio/reading/first_british_empire/r4.mp3",
-      "studio_voice_label": "Studio Male Historian · Archival Reading",
-      "provenance_tier": "adapted_primary",
-      "provenance_note": "Condensed from Black Loyalist Boston King’s 1798 autobiography published in The Methodist Magazine, London.",
-      "short_tab_title": "5. Boston King: Black Loyalist"
+      "studio_voice_label": "Studio Male Historian · Archival Reading"
     }
   ]
 };

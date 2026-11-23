@@ -5090,6 +5090,584 @@ window.UNIT_DATA = {
       ],
       "key_distinction": "Every woven huipil, spoken Mayan greeting, and thriving maize milpa proves Maya culture is a living story, not a vanished past!"
     }
+  ],
+  "guided_reading": [
+    {
+      "lesson_index": 0,
+      "lesson_id": "lesson_1",
+      "lesson_label": "Enquiry 1",
+      "short_tab_title": "Cenotes & Three Sisters",
+      "literary_mode": "storied_micro_history",
+      "provenance_tier": "storied_micro_history",
+      "source_type": "micro_history",
+      "source_type_label": "True Historical Story",
+      "book_title": "Cool Sinkholes and Three Sisters: Farming the Maya Rainforest",
+      "author": "The History Revision Hub Narrative Archive",
+      "provenance_note": "Original historical micro-story grounded in Mesoamerican agronomy and archaeological surveys of Yucatán limestone cenotes, Tikal's plastered reservoirs, and Classic Maya 'Three Sisters' (milpa) companion farming.",
+      "author_context": "How could millions of Classic Maya people thrive in cities where porous limestone left zero surface rivers—and without a single iron plough, ox, or wheeled cart? Read aloud to discover their water and farming secrets!",
+      "cover_image": "/units/ks2_maya_civilisation/assets/sacred_cenote_limestone_sinkhole.jpg",
+      "cover_caption": "Deep natural limestone cenote sinkhole in northern Yucatán ringed by green rainforest trees above calm freshwater.",
+      "studio_audio": "/audio/reading/ks2_maya_civilisation/r0.mp3",
+      "studio_voice_label": "Studio Male Historian · KS2 Storyteller",
+      "vocabVault": [
+        {
+          "term": "Mesoamerica",
+          "pronunciation": "mez-oh-uh-MER-ih-kuh",
+          "def": "The region stretching across southern Mexico, Guatemala, Belize, Honduras, and El Salvador where Maya cities thrived."
+        },
+        {
+          "term": "Cenote",
+          "pronunciation": "seh-NOH-tay",
+          "def": "A deep natural sinkhole where porous limestone collapsed to reveal cool underground freshwater all year round."
+        },
+        {
+          "term": "Three Sisters",
+          "pronunciation": "THREE SIS-terz",
+          "def": "Clever companion farming planting maize, climbing beans, and wide-leaved squash together in the same earth mound."
+        },
+        {
+          "term": "Chultun",
+          "pronunciation": "chool-TOON",
+          "def": "A bottle-shaped underground cistern cut into limestone and lined with waterproof plaster to store monsoon rain."
+        }
+      ],
+      "extract": "Morning mist drifted through green Yucatán trees around AD 700 as bright quetzal birds called high above. Under the forest lay a puzzle. Porous white limestone soaked up rain like a dry sponge, leaving almost no rivers! Yet right nearby stood white Maya pyramids and busy markets.\n\nDown a rocky path, families carried clay jars to the rim of a deep cliff pool called a <em>cenote</em>. Where old cave roofs had fallen in, cool fresh water shone deep below all year round! South at Tikal, builders coated wide plazas and underground <em>chultuns</em> with smooth plaster to catch monsoon rain.\n\nIn sunny clearings, farmers worked without iron ploughs or oxen. Poking holes with wooden sticks, they planted the <strong>Three Sisters</strong> together in one earth mound! Tall maize stalks held up climbing bean vines. Bean roots fed the soil, while wide squash leaves shaded damp ground—feeding stone cities while Anglo-Saxon Britain farmed round wooden halls!",
+      "parent_discussion": [
+        {
+          "question": "Why couldn't northern Yucatán families simply scoop water from rivers like people along Egypt's Nile or Baghdad's Tigris?",
+          "answer": "Yucatán sat on porous limestone rock that soaked rainwater straight underground, leaving almost no surface rivers."
+        },
+        {
+          "question": "Explain how each of the 'Three Sisters' crops—maize, beans, and squash—helped the other two grow stronger.",
+          "answer": "Maize stalks gave poles for beans to climb, bean roots added richness back into the soil, and broad squash leaves shaded damp earth and blocked weeds!"
+        },
+        {
+          "question": "Why does comparing Tikal or Uxmal with AD 900 Anglo-Saxon Britain challenge old assumptions about technology?",
+          "answer": "Even without iron ploughs, horses, or wheels, Maya engineers and farmers supported towering stone cities and star observatories!"
+        }
+      ],
+      "story_check": [
+        {
+          "question": "What was a Yucatán 'cenote'?",
+          "options": [
+            "A bronze helmet worn by Greek soldiers",
+            "A deep natural limestone sinkhole filled with cool underground freshwater",
+            "A stitched wooden sailing boat",
+            "A folded bark-paper calendar book"
+          ],
+          "correctIndex": 1,
+          "feedback": "Spot on! Cenotes gave northern Maya towns reliable drinking water all year round."
+        },
+        {
+          "question": "Which three crops made up the clever Maya 'Three Sisters' planting team?",
+          "options": [
+            "Wheat, barley, and flax",
+            "Olives, grapes, and figs",
+            "Maize, climbing beans, and broad-leaved squash",
+            "Lemons, oranges, and spinach"
+          ],
+          "correctIndex": 2,
+          "feedback": "Exactly right! Planted together in one mound, maize, beans, and squash protected the soil and fed thousands."
+        },
+        {
+          "question": "How did families at southern cities like Tikal store water for dry months?",
+          "options": [
+            "In plastered stone reservoirs and underground chultun cisterns",
+            "Inside giant iron water towers",
+            "By melting snow off Mount Olympus",
+            "By pumping water with steam engines"
+          ],
+          "correctIndex": 0,
+          "feedback": "Well remembered! Waterproof lime plaster turned Tikal's plazas and reservoirs into giant rain catchers."
+        }
+      ],
+      "monday_cold_call": {
+        "question": "How did Maya families get year-round water on dry Yucatán limestone, and how did the 'Three Sisters' crops help one another?",
+        "answer": "They drew groundwater from limestone cenotes; maize supported climbing beans, beans enriched the soil, and squash shaded the damp earth."
+      },
+      "hinge_question": "Why was running out of monsoon rain far more dangerous for reservoir-fed southern Tikal than for cenote-fed northern Yucatán?",
+      "audio_file": "/audio/reading/ks2_maya_civilisation/r0.mp3"
+    },
+    {
+      "lesson_index": 1,
+      "lesson_id": "lesson_2",
+      "lesson_label": "Enquiry 2",
+      "short_tab_title": "King Pakal's Jade Mask",
+      "literary_mode": "storied_micro_history",
+      "provenance_tier": "storied_micro_history",
+      "source_type": "micro_history",
+      "source_type_label": "True Archaeological Story",
+      "book_title": "Forty-Five Hidden Steps: Finding King Pakal's Jade Mask",
+      "author": "The History Revision Hub Narrative Archive",
+      "provenance_note": "Original historical micro-story grounded in archaeologist Alberto Ruz Lhuillier's 1949–1952 excavation reports from the Temple of the Inscriptions at Palenque, Chiapas, Mexico.",
+      "author_context": "Until 1952, experts insisted Maya pyramids were only solid stone bases for high temples—never royal tombs like Egypt's pyramids! Read aloud to join Alberto Ruz Lhuillier as he lifts a mysterious stone floor slab at Palenque!",
+      "cover_image": "/units/ks2_maya_civilisation/assets/king_pakal_jade_funerary_mask.jpg",
+      "cover_caption": "Life-sized green jade mosaic funerary mask, beaded jade collars, and shell-and-obsidian eyes from King Pakal's tomb at Palenque.",
+      "studio_audio": "/audio/reading/ks2_maya_civilisation/r1.mp3",
+      "studio_voice_label": "Studio Male Historian · KS2 Storyteller",
+      "vocabVault": [
+        {
+          "term": "Ajaw",
+          "pronunciation": "ah-HOW",
+          "def": "The sacred Maya title meaning 'lord' or ruler—each independent Maya city-state obeyed its own K'uhul Ajaw."
+        },
+        {
+          "term": "Pakal the Great",
+          "pronunciation": "pah-KAHL",
+          "def": "Palenque's famous ruler K'inich Janaab' Pakal, crowned aged twelve in AD 615, who reigned for sixty-eight peaceful years."
+        },
+        {
+          "term": "Palenque",
+          "pronunciation": "pah-LENG-kay",
+          "def": "A jewel-like Classic Maya city-state in southern Mexico famed for white stucco palaces and carved inscriptions."
+        },
+        {
+          "term": "Jade",
+          "pronunciation": "JAYD",
+          "def": "Tough, luminous green stone prized by the Maya even higher than gold because its colour matched sprouting maize and life."
+        }
+      ],
+      "extract": "High atop Palenque's stepped Temple of the Inscriptions in 1949, digger Alberto Ruz Lhuillier knelt in the shade. Every textbook claimed Maya pyramids were solid stone mounds, unlike Egypt's hollow tombs. Why, then, did one wide floor slab have two neat rows of round stone plugs?\n\nLifting the heavy slab with ropes, Ruz gasped aloud! Below lay a narrow stone stairway packed tight with wet rocks and clay. For four hot summers, Mexican workers cleared bucket after bucket down forty-five steep steps inside the pyramid.\n\nAt last, on 15 June 1952, workers pried open a stone door at the very bottom. Shining his torch inside, Ruz stepped into a cool vault sealed since AD 683! Under a five-tonne carved stone lid rested Palenque's great <em>Ajaw</em>, King Pakal. Over his face shone a life-sized green jade mosaic mask, gazing out through white shell and black glass eyes. After twelve centuries in the dark, Pakal's secret tomb amazed the whole world!",
+      "parent_discussion": [
+        {
+          "question": "What tiny clue on the top temple floor made Alberto Ruz Lhuillier suspect something lay hidden inside Palenque's pyramid?",
+          "answer": "One large stone floor slab had two neat rows of removable stone plugs sealing finger-holes used to lower it into place!"
+        },
+        {
+          "question": "Why did Maya rulers like King Pakal prize glowing green jade even more than shiny yellow gold?",
+          "answer": "Vibrant green jade matched young maize shoots, rainforest leaves, and fresh water—symbolising breath, life, and rebirth."
+        },
+        {
+          "question": "Why did clearing just forty-five stairs take Ruz and his team four whole summers of hard work?",
+          "answer": "Maya builders had packed the entire hidden staircase tightly with heavy stones and wet lime mortar to stop tomb robbers entering."
+        }
+      ],
+      "story_check": [
+        {
+          "question": "How old was K'inich Janaab' Pakal when his mother helped crown him ruler of Palenque in AD 615?",
+          "options": [
+            "Twelve years old",
+            "Forty-five years old",
+            "Seventy years old",
+            "Five years old"
+          ],
+          "correctIndex": 0,
+          "feedback": "Spot on! Crowned aged twelve, Pakal the Great ruled Palenque for sixty-eight remarkable years until AD 683."
+        },
+        {
+          "question": "What did Alberto Ruz Lhuillier's 1952 discovery prove for the first time?",
+          "options": [
+            "That Maya builders used iron steam cranes",
+            "That some Classic Maya step-pyramids also held deep royal tombs inside",
+            "That Egyptians had sailed across the Atlantic to build Palenque",
+            "That Palenque had no written hieroglyphs"
+          ],
+          "correctIndex": 1,
+          "feedback": "Exactly right! Finding Pakal's vault overturned the old textbook claim that American pyramids were never tombs."
+        },
+        {
+          "question": "What materials formed the lifelike eyes of King Pakal's green jade mosaic mask?",
+          "options": [
+            "Blue glass and copper wire",
+            "White shell and shiny black volcanic obsidian",
+            "Painted fig-tree bark",
+            "Gold coins from Rome"
+          ],
+          "correctIndex": 1,
+          "feedback": "Well remembered! White shell whites and dark volcanic obsidian pupils gave the jade mask a startlingly lifelike gaze."
+        }
+      ],
+      "monday_cold_call": {
+        "question": "What clue led Alberto Ruz Lhuillier down 45 hidden stairs at Palenque in 1949–1952, and what shone over King Pakal's face inside?",
+        "answer": "Stone plugs in a temple floor slab hid the rubble-packed stairs, leading to King Pakal's AD 683 tomb and his green jade mosaic mask."
+      },
+      "hinge_question": "What did burying one ruler beneath a massive carved pyramid in Palenque show citizens about the sacred role of a Maya 'Ajaw'?",
+      "audio_file": "/audio/reading/ks2_maya_civilisation/r1.mp3"
+    },
+    {
+      "lesson_index": 2,
+      "lesson_id": "lesson_3",
+      "lesson_label": "Enquiry 3",
+      "short_tab_title": "Cracking Maya Glyphs",
+      "literary_mode": "storied_micro_history",
+      "provenance_tier": "storied_micro_history",
+      "source_type": "micro_history",
+      "source_type_label": "True Codebreaking Story",
+      "book_title": "The Turkey and the Dog: How Yuri Knorozov Cracked Maya Glyphs",
+      "author": "The History Revision Hub Narrative Archive",
+      "provenance_note": "Original historical micro-story grounded in linguist Yuri Knorozov's landmark 1952 decipherment paper ('Ancient Writing of Central America') using the folding Dresden Codex and Diego de Landa's 16th-century sign list.",
+      "author_context": "For centuries after Spanish friars burned Maya bark books, nobody could read the mysterious carved faces covering Maya stone monuments—until a young linguist in a snowy Russian room spotted a wild turkey in 1952!",
+      "cover_image": "/units/ks2_maya_civilisation/assets/dresden_codex_bark_paper_numbers.jpg",
+      "cover_caption": "Original painted fig-bark page from the Maya Dresden Codex showing red and black shell-dot-bar numbers beside painted figures.",
+      "studio_audio": "/audio/reading/ks2_maya_civilisation/r2.mp3",
+      "studio_voice_label": "Studio Male Historian · KS2 Storyteller",
+      "vocabVault": [
+        {
+          "term": "Glyphs",
+          "pronunciation": "GLIFS",
+          "def": "Over 800 carved or painted Maya hieroglyphic signs combining whole-word pictures with spoken syllable sounds."
+        },
+        {
+          "term": "Codices",
+          "pronunciation": "KOH-dih-seez",
+          "def": "Accordion-folded Maya books made from beaten fig-tree bark coated in smooth white lime plaster (singular: codex)."
+        },
+        {
+          "term": "Dresden Codex",
+          "pronunciation": "DREZ-dun KOH-deks",
+          "def": "The most famous of the four surviving ancient Maya bark-paper books, packed with base-20 zero shells and Venus tables."
+        },
+        {
+          "term": "Stelae",
+          "pronunciation": "STEE-lee",
+          "def": "Tall upright limestone pillars carved by Maya scribes with royal portraits, calendar dates, and hieroglyphic histories."
+        }
+      ],
+      "extract": "Snow piled high outside a tiny study in Russia in 1952, far from any jungle temple. At his desk—with his pet cat Asya curled close—young scholar Yuri Knorozov studied pages of the Maya <em>Dresden Codex</em>.\n\nFor years, experts could read Maya dot-and-bar numbers, yet every king's name stayed silent. Famous teachers claimed Maya glyphs were only picture signs, never spoken sounds! Knorozov refused to give up. <em>\"Whatever one human mind has written,\"</em> he said, <em>\"another human mind can read!\"</em>\n\nOpening a 1566 notebook by Spanish Bishop de Landa, Knorozov tested if Maya signs stood for short sounds like <em>ku</em> and <em>tzu</em>. Above a picture of a wild turkey in the bark book, he read two glyphs aloud: <em>ku-tzu</em>! That spelled <em>kutz</em>, the Mayan word for turkey! Next to a dog, <em>tzu-lu</em> spelled <em>tzul</em>, Mayan for dog! At last, silent stone <em>stelae</em> spoke of real Maya kings and queens again.",
+      "parent_discussion": [
+        {
+          "question": "Which two painted animals in the 'Dresden Codex' helped Yuri Knorozov prove his syllable breakthrough in 1952?",
+          "answer": "A wild turkey (spelled ku-tzu = 'kutz' in Mayan) and a dog (spelled tzu-lu = 'tzul' in Mayan)!"
+        },
+        {
+          "question": "What inspiring motto kept Yuri Knorozov trying even when famous experts told him Maya glyphs could never be sounded out?",
+          "answer": "He said: 'Whatever one human mind has written, another human mind can read!'"
+        },
+        {
+          "question": "How did cracking Maya glyphs change what historians used to think about Classic Maya rulers?",
+          "answer": "Before reading the stelae, scholars thought Maya cities only worshipped stars peacefully; glyphs revealed real royal names, alliances, queens, and wars!"
+        }
+      ],
+      "story_check": [
+        {
+          "question": "What were ancient Maya 'codices' like the Dresden Codex made from?",
+          "options": [
+            "Pressed Nile papyrus reeds",
+            "Strips of beaten fig-tree bark coated in white lime plaster and folded like an accordion",
+            "Thin sheets of hammered copper",
+            "Scraped European calfskin parchment"
+          ],
+          "correctIndex": 1,
+          "feedback": "Spot on! Maya scribes painted glyphs and shell-dot-bar numbers onto lime-coated fig-bark pages with turkey-quill brushes."
+        },
+        {
+          "question": "What did Yuri Knorozov prove about how the 800+ Maya glyphs actually worked?",
+          "options": [
+            "They were random decorations with no meaning",
+            "They combined whole-word signs with spoken Mayan syllable signs like 'ku' and 'tzu'",
+            "They were written in Ancient Greek capital letters",
+            "They only counted cacao beans and never spelled words"
+          ],
+          "correctIndex": 1,
+          "feedback": "Exactly right! Mixing word signs and syllable signs let Maya scribes write down any spoken Mayan sentence."
+        },
+        {
+          "question": "Which three symbols did Maya mathematicians combine on bark pages to write base-20 numbers?",
+          "options": [
+            "Roman letters I, V, and X",
+            "A shell for zero, a dot for one, and a bar for five",
+            "A star, a moon, and an owl",
+            "Hieroglyphic frogs and lotus flowers"
+          ],
+          "correctIndex": 1,
+          "feedback": "Well remembered! Maya scholars invented place-value zero independently using a neat carved shell sign."
+        }
+      ],
+      "monday_cold_call": {
+        "question": "How did linguist Yuri Knorozov use the painted turkey and dog in the 'Dresden Codex' to crack Maya hieroglyphs in 1952?",
+        "answer": "He sounded out syllable glyphs reading 'kutz' (Mayan for turkey) and 'tzul' (dog), proving Maya writing recorded spoken syllables."
+      },
+      "hinge_question": "Why was living Mayan speech spoken by millions of families today essential for finishing the job Yuri Knorozov started?",
+      "audio_file": "/audio/reading/ks2_maya_civilisation/r2.mp3"
+    },
+    {
+      "lesson_index": 3,
+      "lesson_id": "lesson_4",
+      "lesson_label": "Enquiry 4",
+      "short_tab_title": "Twins Play Pok-ta-Pok",
+      "literary_mode": "verbatim_literature",
+      "provenance_tier": "verbatim_literature",
+      "source_type": "myth",
+      "source_type_label": "Sacred K'iche' Maya Myth",
+      "book_title": "The Popol Vuh (The Hero Twins on Xibalba's Ballcourt)",
+      "author": "Sacred K'iche' Maya Book of Counsel (The Popol Vuh, Public Domain)",
+      "provenance_note": "Public-domain English adaptation of the Hero Twins ballgame cycle from Part II of the K'iche' Maya 'Popol Vuh' (preserved in highland Guatemala and translated into English by Lewis Spence, 1908, Public Domain).",
+      "author_context": "Every Classic Maya city echoed with the heavy thud of rubber balls on limestone 'Pok-ta-Pok' courts! Read this thrilling myth from the sacred Maya 'Popol Vuh' to meet the clever Hero Twins who challenged the Lords of the Underworld!",
+      "cover_image": "/units/ks2_maya_civilisation/assets/chichen_itza_stone_ballcourt_ring.jpg",
+      "cover_caption": "A 1924 Carnegie Institution photograph showing a worker leaning inside Chichén Itzá's carved feathered-serpent stone ballcourt ring.",
+      "studio_audio": "/audio/reading/ks2_maya_civilisation/r3.mp3",
+      "studio_voice_label": "Studio Male Historian · KS2 Storyteller",
+      "vocabVault": [
+        {
+          "term": "Popol Vuh",
+          "pronunciation": "poh-POHL VOO",
+          "def": "The sacred K'iche' Maya 'Book of the Community' preserving ancient Maya creation myths and Hero Twins adventures."
+        },
+        {
+          "term": "Pok-ta-Pok",
+          "pronunciation": "pok-tah-POK",
+          "def": "The fast, sacred Maya ballgame where players bounced a heavy solid rubber ball off padded hips without using hands or feet."
+        },
+        {
+          "term": "Xibalba",
+          "pronunciation": "shee-bal-BAH",
+          "def": "The dark, watery Maya underworld ('Place of Fright') entered through deep caves and limestone cenotes."
+        },
+        {
+          "term": "Hip Yoke",
+          "pronunciation": "HIP YOHK",
+          "def": "Thick wood-and-leather protective padding strapped tightly around a Maya ballplayer's waist to strike four-kilogram rubber balls."
+        }
+      ],
+      "extract": "Thud—<em>pok-ta-pok</em>! Up in the warm sun, twin brothers Hunahpu and Xbalanque strapped thick pads round their waists. Together they bounced a heavy black rubber ball across their stone court. Deep down in dark <strong>Xibalba</strong>, the grumpy Lords of Death hated that cheerful noise! <em>\"Bring those loud boys down to our cave court,\"</em> they snarled, <em>\"and let us crush them!\"</em>\n\nBravely, the <strong>Hero Twins</strong> climbed down steep cave steps past dark rushing rivers. First, Xibalba's sly lords threw out a rubber ball hiding a sharp flint knife! Spotting the blade mid-air, Hunahpu called out, <em>\"Do you want cheats or a fair match?\"</em> Shamed, the lords fetched a real rubber ball.\n\nWithout touching it with hands or feet, the twins slammed booming hip shots off the walls! Night after night they beat rooms of ice, jaguars, and bats. Winning the final match, they saved the <strong>Maize God</strong> and rose as the Sun and Moon!",
+      "parent_discussion": [
+        {
+          "question": "What sneaky trap did the Lords of Xibalba hide inside the very first ball they threw onto the underworld court?",
+          "answer": "They hid a sharp chipped blade inside the rubber ball hoping to injure the Hero Twins on the very first bounce!"
+        },
+        {
+          "question": "Why did real Maya athletes have to wear heavy wood-and-leather 'hip yokes' during Pok-ta-Pok matches?",
+          "answer": "Rules forbade using hands or feet, and a solid rubber ball weighing up to four kilograms could bruise or break unpadded ribs!"
+        },
+        {
+          "question": "How does the Hero Twins story explain why Pok-ta-Pok was a sacred religious ceremony rather than just an afternoon sport?",
+          "answer": "Every match re-enacted the battle between life and underworld Xibalba—helping the sun rise, rain fall, and sacred maize sprout!"
+        }
+      ],
+      "story_check": [
+        {
+          "question": "What were the names of the two clever Hero Twins in the 'Popol Vuh'?",
+          "options": [
+            "Romulus and Remus",
+            "Hunahpu and Xbalanque",
+            "Apollo and Artemis",
+            "Khufu and Khafre"
+          ],
+          "correctIndex": 1,
+          "feedback": "Spot on! Twin brothers Hunahpu and Xbalanque outwitted the Lords of Xibalba with teamwork and sharp wits."
+        },
+        {
+          "question": "Which body part did Pok-ta-Pok players mainly use to bounce the heavy rubber ball towards high stone rings?",
+          "options": [
+            "Bare hands and fingers",
+            "Kicking feet in leather boots",
+            "Padded hips (without using hands or feet)",
+            "Wooden cricket bats"
+          ],
+          "correctIndex": 2,
+          "feedback": "Exactly right! Touching the ball with hands or feet broke strict rules, so players dived to strike it with padded hips."
+        },
+        {
+          "question": "What did the victorious Hero Twins rise into the sky to become at the end of their adventure?",
+          "options": [
+            "The Sun and the Moon",
+            "Two snowy mountains in Greece",
+            "Two river islands in Baghdad",
+            "Two bronze constellations"
+          ],
+          "correctIndex": 0,
+          "feedback": "Well remembered! After helping the Maize God rise, Hunahpu and Xbalanque ascended as the Sun and Moon."
+        }
+      ],
+      "monday_cold_call": {
+        "question": "In the Maya 'Popol Vuh', who did the Hero Twins defeat at 'Pok-ta-Pok', and what strict rule made real Maya ballplayers wear hip yokes?",
+        "answer": "They beat the Lords of Xibalba; players wore thick hip yokes because rules banned hands and feet when striking the heavy 4kg rubber ball."
+      },
+      "hinge_question": "Why did Classic Maya architects build stone Pok-ta-Pok ballcourts right beside their grandest royal pyramids?",
+      "audio_file": "/audio/reading/ks2_maya_civilisation/r3.mp3"
+    },
+    {
+      "lesson_index": 4,
+      "lesson_id": "lesson_5",
+      "lesson_label": "Enquiry 5",
+      "short_tab_title": "Humans Made From Maize",
+      "literary_mode": "verbatim_literature",
+      "provenance_tier": "verbatim_literature",
+      "source_type": "verse",
+      "source_type_label": "Sacred Maya Creation Myth",
+      "book_title": "The Popol Vuh (Kneading Humans From Yellow and White Maize)",
+      "author": "Sacred K'iche' Maya Creation Book (The Popol Vuh, Public Domain)",
+      "provenance_note": "Public-domain poetic adaptation of the Four Creations in Part I & Part III of the K'iche' Maya 'Popol Vuh' (trans. Lewis Spence, 1908, Public Domain), preserved at Chichicastenango in highland Guatemala.",
+      "author_context": "Before dawn in every Maya home, cooks ground lime-soaked corn on volcanic stone 'metates'. Read this poetic creation myth from the 'Popol Vuh' to understand why the Maya believed human beings were literally made of maize!",
+      "cover_image": "/units/ks2_maya_civilisation/assets/colourful_mesoamerican_maize_cobs.jpg",
+      "cover_caption": "Dried Mesoamerican maize cobs gleaming in yellow, white, deep purple, and red—honoured by the Maya as sacred life-giving grain.",
+      "studio_audio": "/audio/reading/ks2_maya_civilisation/r4.mp3",
+      "studio_voice_label": "Studio Male Historian · KS2 Storyteller",
+      "vocabVault": [
+        {
+          "term": "Maize",
+          "pronunciation": "MAYZ",
+          "def": "Sacred Mesoamerican corn—soaked in limewater and ground into tortillas and tamales as the Maya staple food."
+        },
+        {
+          "term": "Metate",
+          "pronunciation": "meh-TAH-tay",
+          "def": "A curved volcanic stone grinding trough used every morning to crush soaked maize kernels into smooth dough."
+        },
+        {
+          "term": "Kukulkan",
+          "pronunciation": "koo-kool-KAHN",
+          "def": "The Maya Feathered Serpent god whose sunlit shadow glides down Chichén Itzá's 365-step pyramid at each equinox."
+        },
+        {
+          "term": "Chaac",
+          "pronunciation": "CHAHK",
+          "def": "The long-nosed Maya god of thunder and life-giving rain who watered young maize shoots each spring."
+        }
+      ],
+      "extract": "Before the first dawn warmed the hills, the Maya Creator Gods wanted living people on Earth. They hoped people would speak, remember, and thank the sky and land. Yet their first two tries went funny and wrong!\n\n<div class=\"reading-stanza\">First they shaped a figure out of soft wet mud,<br>Yet it sagged without strength and melted in rain!<br>Next they carved stiff people out of dry forest wood,<br>Who walked and talked loud, yet owned empty hearts,<br>Forgetting to thank the kind makers who carved them!</div>\n\n<div class=\"reading-stanza\">Then mountain beasts brought ripe ears of corn—<br>Golden-yellow maize cobs and shining white grain!<br>Wise Grandmother ground them nine times on her stone,<br>Mixing smooth maize dough with clear mountain water<br>To form muscle, warm strength, and four grateful folks!</div>\n\nThose first maize people thanked the dawn and rain god <strong>Chaac</strong>. Even today, Chichén Itzá's 365-step pyramid marks every corn season! Every warm maize tortilla still honours that ancient story.",
+      "parent_discussion": [
+        {
+          "question": "What went wrong with the gods' first mud people and second wooden people before they tried maize dough?",
+          "answer": "The wet mud people sagged and melted in rain, while the dry wooden people had empty hearts and forgot to thank their makers!"
+        },
+        {
+          "question": "Why did the Maya imagine their wise creator grandmother grinding yellow and white maize on a stone, just like a village cook?",
+          "answer": "Maize tortillas and tamales gave families nearly all their daily strength, so corn literally became human muscle and life!"
+        },
+        {
+          "question": "How did Chichén Itzá's 'El Castillo' pyramid connect sacred maize farming with clever maths and astronomy?",
+          "answer": "Four staircases of 91 steps plus the top platform equalled 365 days, and Kukulkan's equinox serpent shadow marked spring planting and autumn harvest!"
+        }
+      ],
+      "story_check": [
+        {
+          "question": "Why were the Creator Gods unhappy with the second race of people carved out of wood?",
+          "options": [
+            "They melted instantly in summer rain",
+            "They had empty hearts and forgot to thank their makers",
+            "They refused to build pyramids",
+            "They sailed away to Ancient Greece"
+          ],
+          "correctIndex": 1,
+          "feedback": "Spot on! Even though wooden people could walk and talk, they lacked warm, grateful hearts."
+        },
+        {
+          "question": "Which sacred ingredient finally created strong, thoughtful, grateful human beings in the 'Popol Vuh'?",
+          "options": [
+            "River Nile black silt",
+            "Ground yellow and white maize dough",
+            "Melted green jade pebbles",
+            "Roasted cacao shells"
+          ],
+          "correctIndex": 1,
+          "feedback": "Exactly right! Yellow and white maize ground nine times formed human flesh and strength."
+        },
+        {
+          "question": "How many total steps (four staircases of 91 plus the top platform) did architects build into El Castillo at Chichén Itzá?",
+          "options": [
+            "100 steps",
+            "260 steps",
+            "365 steps—matching the solar year",
+            "1,000 steps"
+          ],
+          "correctIndex": 2,
+          "feedback": "Brilliant maths! 91 × 4 + 1 = 365, turning the whole limestone pyramid into a giant solar farming calendar."
+        }
+      ],
+      "monday_cold_call": {
+        "question": "In the Maya 'Popol Vuh', why did mud and wooden humans fail, and what sacred crop finally formed grateful human beings?",
+        "answer": "Mud humans melted in rain and wooden humans forgot to thank the gods, so the creators ground yellow and white maize dough to form true humans."
+      },
+      "hinge_question": "Why did priests watch the sunlit serpent shadow glide down Chichén Itzá's 365-step pyramid so closely every March and September?",
+      "audio_file": "/audio/reading/ks2_maya_civilisation/r4.mp3"
+    },
+    {
+      "lesson_index": 5,
+      "lesson_id": "lesson_6",
+      "lesson_label": "Enquiry 6",
+      "short_tab_title": "Seven Million Living Maya",
+      "literary_mode": "storied_micro_history",
+      "provenance_tier": "storied_micro_history",
+      "source_type": "micro_history",
+      "source_type_label": "True Living History Story",
+      "book_title": "Rainbow Threads and Spoken Glyphs: Seven Million Maya Today",
+      "author": "The History Revision Hub Narrative Archive",
+      "provenance_note": "Original historical narrative grounded in paleoclimate drought research on the AD 800–950 Southern Lowland transition, Postclassic Yucatán/Tulum archaeology, and contemporary Maya linguistic and backstrap-weaving heritage across Guatemala, Mexico, and Belize.",
+      "author_context": "Old adventure films loved claiming the Maya 'mysteriously vanished' into thin air! Read aloud to bust that myth wide open and meet the seven million Maya weavers, farmers, and scholars thriving today!",
+      "cover_image": "/units/ks2_maya_civilisation/assets/guatemala_maya_backstrap_loom_weaver.jpg",
+      "cover_caption": "A contemporary Maya weaver kneeling on a woven mat in highland Guatemala, crafting geometric cloth on a portable backstrap loom.",
+      "studio_audio": "/audio/reading/ks2_maya_civilisation/r5.mp3",
+      "studio_voice_label": "Studio Male Historian · KS2 Storyteller",
+      "vocabVault": [
+        {
+          "term": "Multi-causal",
+          "pronunciation": "mul-tee-KAW-zul",
+          "def": "Explaining a big historical change through several linked causes working together—like drought, deforestation, and warfare."
+        },
+        {
+          "term": "Deforestation",
+          "pronunciation": "dee-for-uh-STAY-shun",
+          "def": "Cutting down vast stretches of forest timber (such as wood burned to make lime plaster), letting hillside soil wash away."
+        },
+        {
+          "term": "Tulum",
+          "pronunciation": "too-LOOM",
+          "def": "A walled Postclassic Maya harbour city perched on Caribbean cliffs that bustled with sea canoes centuries after AD 900."
+        },
+        {
+          "term": "Huipil",
+          "pronunciation": "wee-PEEL",
+          "def": "A vibrant hand-woven Maya blouse stitched with ancient diamond patterns showing the universe, maize, and home village."
+        }
+      ],
+      "extract": "Between AD 800 and 950, carvers stopped cutting royal dates at southern cities like Tikal and Palenque. Long droughts dried up stone water tanks, while tree-cutting for lime plaster let hill soil wash away. Rival wars also blocked trade trails. Packing their grinding stones, families left southern kings behind—yet the Maya <strong>never</strong> vanished!\n\nThousands moved north to Yucatán towns with deep <em>cenote</em> wells, like Chichén Itzá. Others built walled <strong>Tulum</strong> on sea cliffs, where big canoes traded salt, cotton, and honey for centuries! In the 1500s, Spanish soldiers arrived with steel swords and burned bark books. Even so, island Maya towns stayed free until 1697, and elders saved the <em>Popol Vuh</em>.\n\nVisit Guatemala, Mexico, or Belize today, and you will meet over <strong>seven million</strong> proud Maya people! Families speak thirty Mayan tongues and weave bright <em>huipil</em> blouses on tree-tied looms, while Maya scholars read ancient stone glyphs aloud once more.",
+      "parent_discussion": [
+        {
+          "question": "Which three linked problems pushed Maya families to leave southern cities like Tikal between AD 800 and 950?",
+          "answer": "Severe multi-year drought drying up stone reservoirs, deforestation washing soil away, and fierce royal warfare blocking trade."
+        },
+        {
+          "question": "Where did Maya city life boom for centuries after AD 900, proving the Maya never disappeared?",
+          "answer": "Northern Yucatán cities with deep cenotes (like Chichén Itzá and Uxmal) and bustling Caribbean sea-ports like cliffside Tulum!"
+        },
+        {
+          "question": "How do seven million living Maya people keep 2,000-year-old traditions alive in the modern world?",
+          "answer": "By speaking over thirty Mayan languages, farming sacred maize, weaving geometric huipil blouses on backstrap looms, and reading ancient glyphs!"
+        }
+      ],
+      "story_check": [
+        {
+          "question": "Why do historians call the AD 900 shift away from southern Maya cities 'multi-causal'?",
+          "options": [
+            "Because one giant volcano buried every Maya city in a single afternoon",
+            "Because drought, deforestation, and royal warfare worked together rather than one single cause",
+            "Because Roman legions conquered Tikal in AD 900",
+            "Because snow covered Mesoamerica all year"
+          ],
+          "correctIndex": 1,
+          "feedback": "Spot on! Snail shells in lake mud, eroded hillsides, and carved war stelae prove several causes combined."
+        },
+        {
+          "question": "Which cliffside Maya port on the Caribbean coast welcomed trading canoes centuries after AD 900?",
+          "options": [
+            "Tulum",
+            "Basra",
+            "Alexandria",
+            "Corinth"
+          ],
+          "correctIndex": 0,
+          "feedback": "Exactly right! Walled Tulum thrived as a busy Postclassic sea-trade hub right up to the 1500s."
+        },
+        {
+          "question": "Roughly how many Maya people live, farm, weave, and speak Mayan languages across Mexico and Central America today?",
+          "options": [
+            "Zero—everyone vanished in AD 900",
+            "About two hundred people",
+            "Over seven million people",
+            "Only twelve museum guards"
+          ],
+          "correctIndex": 2,
+          "feedback": "Yes! Over seven million living Maya proudly carry their languages, textiles, and heritage forward today."
+        }
+      ],
+      "monday_cold_call": {
+        "question": "Why is it completely false to say the Maya 'vanished' in AD 900? Give one historical clue after AD 900 and one clue from today.",
+        "answer": "After southern droughts, northern cities like Chichén Itzá and coastal Tulum thrived for centuries, and over seven million Maya speak Mayan languages today."
+      },
+      "hinge_question": "Why did early explorers seeing vine-covered ruins at Tikal jump to the wrong conclusion that an entire people had disappeared?",
+      "audio_file": "/audio/reading/ks2_maya_civilisation/r5.mp3"
+    }
   ]
 };
 export default window.UNIT_DATA;

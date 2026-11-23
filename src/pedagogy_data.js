@@ -852,7 +852,51 @@ export const PEDAGOGY_RESEARCH_BANK = [
       {
         title: 'EEF: Special Educational Needs in Mainstream Schools Guidance Report',
         url: 'https://educationendowmentfoundation.org.uk/education-evidence/guidance-reports/send',
-        displayText: 'educationendowmentfoundation.org.uk/education-evidence/guidance-reports/send',
+        displayText: 'educationendowmentfoundation.org.uk/education-evidence/send',
+      },
+    ],
+  },
+  {
+    id: 'oral_fluency_hinterland_literary_companions',
+    author: 'Timothy Rasinski, Christine Counsell & Alex Quigley',
+    affiliation: 'Kent State University / Teaching History / EEF Literacy',
+    category: 'Oral Reading Fluency & Hinterland',
+    categoryBadge: 'badge-rose',
+    title:
+      'KS2 & KS3 Literary Companions: Oral Reading Prosody, Storied Hinterland & Family Oracy',
+    subtitle:
+      'Bridging the Decoding-to-Comprehension Gap Through 3-Voice Read-Aloud Homework and SEND Visual Ergonomics',
+    overview:
+      'Many pupils in Years 5 to 9 decode individual words accurately yet comprehend historical prose poorly because disfluent, monotonous reading consumes working memory. Grounded in Timothy Rasinski’s prosody research, Christine Counsell’s concept of narrative "hinterland", and the EEF Improving Literacy guidance, every KS2 and KS3 enquiry pairs classroom instruction with a 5-minute Home Literary Companion combining pre-taught vocabulary (with phonetic pronunciation guides), Studio Cast British audio modelling, and a 3-Voice literary rotation across true historical micro-stories, public-domain classic literature/verse, and intimate eyewitness letters.',
+    analysisHeading: 'Why Bureaucratic Extracts & Uncalibrated Homework Stall Weak Readers',
+    analysisText:
+      'Setting dense 40-word statutory clauses or uncontextualised textbook pages for home reading intimidates non-specialist parents and causes low-reading-age pupils to stumble aloud. Conversely, invented classroom fiction risks planting anachronisms and factual misconceptions in long-term memory.',
+    evidenceHeading: 'Research Base on Prosodic Modelling, Line Measure & Narrative Hinterland',
+    evidenceText:
+      'Rasinski (2012) demonstrates that assisted repeated and modelled oral reading ("ear-and-eye reading") significantly accelerates reading fluency and comprehension. Counsell (2018) establishes that rich, concrete narrative hinterland—sensory period worlds, authentic ballads, and human micro-stories—anchors core substantive knowledge in schema. Typographic and SEND evidence (British Dyslexia Association, 2021) further confirms that constraining body serif/sans-serif prose to ~60–66 characters per line with optional warm-cream visual-stress tints reduces saccadic regression.',
+    applicationHeading: 'Departmental & Platform Implementation (119/119 KS2 & KS3 Enquiries)',
+    implementation: [
+      '3-Voice Literary Rotation: Every KS2 and KS3 unit balances true historical micro-stories (Robert Lacey narrative craft), canonical public-domain literature/poetry/myth, and intimate eyewitness diaries or letters—zero invented fiction and zero dry legal statutes.',
+      'Strict Cohort Sentence-Length Ceilings: Automated validation (npm run audit:literary) caps average oral sentence length progressively across KS2 (<= 15.8w), Year 7 (<= 18.2w), Year 8 (<= 19.8w), and Year 9 (<= 21.8w).',
+      'SEND Visual Comfort & Phonetic Pre-Teaching: Step 1 pre-teaches 4–5 key words with phonetic pronunciation pills, paired with a persistent Cream/Sage tint, Clean Sans font toggle, and 64ch Lora measure.',
+      'Zero-Marking Accountability: Combines a 3-question pupil Story Check with a 15-second Staff Monday Cold-Call prompt and 1-sheet @media print offline fallback.',
+    ],
+    protocolHeading: 'Practical Classroom Protocol for History Teachers',
+    teacherProtocols: [
+      '1. Share in One Click: Use the Literary Companion Share Modal to copy the ready-written parent/pupil homework post straight into Satchel One, Google Classroom, or Microsoft Teams.',
+      '2. Offline Inclusion: Click "Print 1-Sheet Homework Page" solely for pupils without home internet access; collect parent initials at the bottom of the sheet.',
+      '3. 15-Second Monday Cold-Call: Open the Staff Monday Cold-Call prompt at the start of the next lesson to check whole-class engagement orally with zero marking.',
+    ],
+    citations: [
+      'Counsell, C. (2018). "Taking curriculum seriously", Impact: Journal of the Chartered College of Teaching, Issue 4.',
+      'Education Endowment Foundation (EEF) (2021). Improving Literacy in Key Stage 2 & Improving Literacy in Secondary Schools.',
+      'Rasinski, T. V. (2012). "Why reading fluency should be hot!", The Reading Teacher, 65(8), pp. 516–522.',
+    ],
+    links: [
+      {
+        title: 'EEF: Improving Literacy in Secondary Schools Guidance Report',
+        url: 'https://educationendowmentfoundation.org.uk/education-evidence/guidance-reports/literacy-ks3-ks4',
+        displayText: 'educationendowmentfoundation.org.uk/education-evidence/guidance-reports/literacy-ks3-ks4',
       },
     ],
   },

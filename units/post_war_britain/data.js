@@ -9324,296 +9324,521 @@ export default {
       "lesson_index": 0,
       "lesson_id": "lesson_1",
       "lesson_label": "Enquiry 1",
-      "book_title": "\"Freedom or Death\": Emmeline Pankhurst’s Speech at Hartford (13 November 1913)",
-      "author": "Emmeline Pankhurst (13 November 1913 • Verbatim Transcript, Hartford, Connecticut)",
-      "cover_image": "/images/post_war_britain/pwb_l1_cameo_emmeline_pankhurst_1913.jpg",
-      "cover_caption": "Formal portrait of WSPU founder Emmeline Pankhurst photographed in November 1913 during the US speaking tour on which she delivered her famous 'Freedom or Death' speech in Hartford, Connecticut (Library of Congress).",
-      "author_context": "For nearly fifty years, Millicent Garrett Fawcett’s National Union of Women’s Suffrage Societies (NUWSS, the \"Suffragists\") campaigned peacefully through petitions and lobbying, only to watch MPs repeatedly \"talk out\" women’s suffrage bills. Founding the Women’s Social and Political Union (WSPU, the \"Suffragettes\") in Manchester in 1903 under the motto \"Deeds, Not Words,\" Emmeline Pankhurst delivered her electrifying \"Freedom or Death\" defence of militancy while on speaking release from prison under the 1913 \"Cat and Mouse\" Act.",
+      "short_tab_title": "1. Pankhurst (1913)",
+      "literary_mode": "intimate_eyewitness",
+      "provenance_tier": "adapted_primary",
       "source_type": "primary_speech",
-      "source_type_label": "WSPU Suffragette Oration (13 November 1913)",
+      "source_type_label": "WSPU Oration & Holloway Prison Record (1913)",
       "is_primary": true,
-      "is_adapted": false,
-      "extract": "\"I do not come here as an advocate, because whatever position the suffrage movement may occupy in the United States of America, in England it has passed beyond the realm of advocacy and it has entered into the sphere of practical politics. It has become the subject of revolution and civil war, and so tonight I am not here to advocate woman suffrage; I am here as a soldier who has temporarily left the field of battle in order to explain—it seems strange it should have to be explained—what civil war is like when civil war is waged by women.\n\nSuppose the men of Hartford had a grievance, and they laid that grievance before their legislature, and the legislature obstinately refused to listen to them, or to remove their grievance, what would be the proper and the constitutional course for these men of Hartford to take? Well, it is perfectly obvious at the next general election the men of Hartford would turn out that legislature and elect a new one. But let the men of Hartford imagine that they were not in the position of being voters at all! What would the men do then? You chose between freedom or death in 1776.\n\nWe women, in trying to make our case clear, always have to make as part of our argument and urge upon men in our audience the fact—a very simple fact—that women are human beings. You have two babies very hungry and wanting to be fed. One baby is a patient baby, and waits indefinitely until its mother is ready to feed it. The other baby is an impatient baby and cries lustily, screams and kicks and makes everybody unpleasant until it is fed. Well, we know perfectly well which baby is attended to first. That is the whole history of politics.\"",
+      "is_adapted": true,
+      "book_title": "\"Freedom or Death\": Emmeline Pankhurst’s Speech & Holloway Prison Courage (1913)",
+      "author": "Emmeline Pankhurst (Hartford Speech, 13 Nov 1913 • WSPU Prison Records)",
+      "provenance_note": "Adapted for oral reading from Emmeline Pankhurst’s 13 November 1913 Hartford 'Freedom or Death' speech with authenticated WSPU Holloway Prison details.",
+      "author_context": "For nearly fifty years, Millicent Fawcett’s peaceful Suffragists (NUWSS) presented polite petitions that male MPs repeatedly ignored. Founding the militant Suffragettes (WSPU) in Manchester in 1903 under the motto 'Deeds, Not Words,' Emmeline Pankhurst endured hunger strikes in Holloway Prison—where Suffragettes smuggled tiny pencils and tissue-paper notes inside hollowed shoe heels—before delivering her famous 'Freedom or Death' speech while on temporary prison release under the 1913 'Cat and Mouse' Act.",
+      "cover_image": "/images/post_war_britain/pwb_l1_cameo_emmeline_pankhurst_1913.jpg",
+      "cover_caption": "Formal studio portrait of WSPU founder Emmeline Pankhurst photographed in November 1913 during the US speaking tour on which she delivered her 'Freedom or Death' address in Hartford, Connecticut (Library of Congress).",
       "vocabVault": [
         {
-          "term": "Suffragists (NUWSS)",
-          "def": "Constitutional, peaceful campaigners led by Millicent Fawcett (over 500 branches by 1914) using petitions, marches, and parliamentary alliances."
+          "term": "Emmeline Pankhurst (WSPU)",
+          "pronunciation": "EM-uh-leen PANK-hurst",
+          "def": "Founder of the militant Women’s Social and Political Union ('Suffragettes') in 1903 under the slogan 'Deeds, Not Words'."
         },
         {
-          "term": "Suffragettes (WSPU)",
-          "def": "Militant campaigners founded by Emmeline Pankhurst in 1903 (\"Deeds, Not Words\") using window-smashing, hunger strikes, and civil disobedience."
+          "term": "Millicent Fawcett (NUWSS)",
+          "pronunciation": "MIL-ih-sent FAW-sit",
+          "def": "Leader of the peaceful, constitutional 'Suffragists', building over 500 branches nationwide through marches, petitions, and lobbying MPs."
         },
         {
           "term": "Cat and Mouse Act (1913)",
-          "def": "The Prisoners (Temporary Discharge for Ill-Health) Act releasing weakened hunger-striking Suffragettes until they recovered enough strength to be re-arrested."
+          "pronunciation": "KAT und MOWS",
+          "def": "Government law releasing weak hunger-striking Suffragettes from prison until they regained enough strength for police to re-arrest them."
         },
         {
           "term": "Representation of the People Act (1918)",
-          "def": "The wartime reform enfranchising all men aged 21+ and 8.4 million women aged 30+ who met property qualifications (equalised at age 21 in 1928)."
+          "pronunciation": "en-FRAN-chize-ment",
+          "def": "Wartime reform granting votes to all men aged 21+ and 8.4 million women aged 30+ who met property rules (equalised at age 21 in 1928)."
         }
       ],
+      "extract": "Inside Holloway Prison in London, Suffragette prisoners hid stubby pencils inside the hollowed wooden heels of their boots to scribble secret diaries on rough brown prison paper. Weakened by hunger strikes under the 1913 'Cat and Mouse' Act, fifty-five-year-old Emmeline Pankhurst stepped onto a stage in Hartford, Connecticut, on 13 November 1913. She spoke like a front-line commander.\n\n\"Tonight I am not here to advocate woman suffrage. I am here as a soldier who has stepped briefly off the field of battle. Strange as it seems, I have come to explain what civil war looks like when it is waged by women.\n\nSuppose the men of Hartford had a grievance, and they laid that grievance before their parliament, and parliament stubbornly refused to listen. What would be the proper, peaceful course for the men of Hartford to take? At the very next election, the men of Hartford would vote that parliament out! But let the men imagine that they had no votes at all. What would men do then? You chose between freedom or death in 1776.\n\nYou have two hungry babies wanting to be fed. One baby is patient and waits quietly until its mother is ready. The other baby is impatient. It cries lustily, screams, kicks, and makes everybody uncomfortable until it is fed. Well, we know perfectly well which baby is attended to first. That is the whole history of politics.\"",
       "parent_discussion": [
         {
-          "question": "How does Emmeline Pankhurst use the clever metaphor of the \"two hungry babies\" to explain why the WSPU abandoned patient waiting in 1903?",
-          "answer": "Polite, patient petitions by Suffragists had been ignored by male MPs for forty years; Pankhurst argued politicians only act when loud disruption makes ignoring injustice impossible."
+          "question": "How does Emmeline Pankhurst’s 'two hungry babies' story explain why the WSPU turned to window-smashing and civil disobedience in 1903?",
+          "answer": "Peaceful Suffragist petitions had been politely ignored by male MPs for forty years; Pankhurst argued politicians only act when loud disruption makes injustice impossible to ignore."
         },
         {
-          "question": "Why did WSPU militancy both help AND hurt the Votes for Women cause before August 1914?",
-          "answer": "It kept women’s votes on the front page of every newspaper, yet arson and window-smashing gave Prime Minister Asquith an excuse to claim giving in to lawbreakers would reward violence."
+          "question": "Why do historians debate whether Suffragette militancy helped or delayed Votes for Women before August 1914?",
+          "answer": "Militancy kept women’s votes on every front page, yet arson attacks alienated moderate MPs and gave Prime Minister Asquith an excuse to refuse 'surrendering to lawbreakers'."
         },
         {
-          "question": "When war broke out in August 1914, how did BOTH Pankhurst’s WSPU and Fawcett’s NUWSS help unlock the 1918 Representation of the People Act?",
-          "answer": "Suspending militancy while 1.6 million women stepped into munitions factories (\"Canary Girls\"), farms, and transport allowed MPs to save face and reward women’s vital war work alongside decades of NUWSS groundwork."
+          "question": "How did the First World War (1914–1918) combine with both Fawcett’s NUWSS and Pankhurst’s WSPU to win the 1918 Act?",
+          "answer": "Stopping militancy while 1.6 million women worked in munitions shells factories ('Canary Girls'), farms, and hospitals gave MPs a face-saving reason to enfranchise women aged 30+ in 1918."
         }
       ],
+      "story_check": [
+        {
+          "question": "How did Emmeline Pankhurst describe herself at the start of her November 1913 speech in Hartford?",
+          "options": [
+            "As a soldier who had temporarily left the field of battle",
+            "As a diplomat representing Prime Minister Asquith",
+            "As a peaceful petitioner waiting quietly for Parliament",
+            "As a munitions factory supervisor"
+          ],
+          "correctIndex": 0,
+          "feedback": "Released temporarily from prison hunger strikes under the 'Cat and Mouse' Act, Pankhurst called herself 'a soldier who has temporarily left the field of battle.'"
+        },
+        {
+          "question": "Why did Pankhurst argue British women could not simply copy the 'constitutional' method used by male voters?",
+          "options": [
+            "Women were banned from writing letters to newspapers",
+            "Without the vote, women had no ballot box power to vote out MPs who ignored them",
+            "General elections were held only once every twenty years",
+            "Only householders in Scotland could sign petitions"
+          ],
+          "correctIndex": 1,
+          "feedback": "Men could vote out a stubborn government at the next election, whereas voteless women had zero electoral leverage over MPs."
+        },
+        {
+          "question": "Which women gained the vote first under the 1918 Representation of the People Act, and when did women aged 21–29 win equal voting rights?",
+          "options": [
+            "All women aged 18+ in 1918",
+            "Only unmarried munitions workers in 1918, equalised in 1945",
+            "8.4 million women aged 30+ (meeting property rules) in 1918, followed by equal votes at age 21 in 1928",
+            "Only WSPU members in 1914"
+          ],
+          "correctIndex": 2,
+          "feedback": "The 1918 Act enfranchised 8.4 million women aged 30 and over; young working women aged 21–29 had to wait until the 1928 Equal Franchise Act."
+        }
+      ],
+      "monday_cold_call": {
+        "question": "Explain Emmeline Pankhurst’s 1913 'two hungry babies' argument in one sentence—and name one counter-argument Millicent Fawcett’s Suffragists raised against militancy.",
+        "answer": "Pankhurst argued politicians feed the screaming baby while ignoring patient petitions, whereas Fawcett warned violent arson alienated sympathetic MPs needed to pass a bill in Parliament."
+      },
       "hinge_question": "<strong>Think:</strong> Why couldn’t British women simply \"vote out\" a government that ignored their petitions in 1913?<br><br><strong>Pair:</strong> Weigh Pankhurst’s \"impatient baby\" argument against Millicent Fawcett’s warning that arson alienated swing MPs—who had the stronger strategy?<br><br><strong>Share:</strong> Who still DID NOT get the vote in 1918 (until the Equal Franchise Act of 1928)?",
       "questions": [
-        "How does Emmeline Pankhurst describe herself in the opening paragraph (\"not as an advocate, but...\")?",
-        "Why could men in Hartford or Britain overturn an unfair government peacefully at an election while women could not?",
-        "Explain Pankhurst’s \"two hungry babies\" analogy in your own words."
+        "How does Emmeline Pankhurst describe herself in the opening lines of her Hartford speech?",
+        "Why could men overturn an unresponsive government peacefully at an election while women could not?",
+        "Explain Pankhurst’s 'two hungry babies' analogy in your own words."
       ],
       "audio_file": "/audio/reading/post_war_britain/r0.mp3",
       "studio_audio": "/audio/reading/post_war_britain/r0.mp3",
-      "studio_voice_label": "Studio Female Historian · Historic Speech",
-      "provenance_tier": "verbatim_primary",
-      "provenance_note": "Verbatim transcript of suffragette leader Emmeline Pankhurst’s \"Freedom or Death\" speech delivered in Hartford on 13 November 1913.",
-      "short_tab_title": "1. Pankhurst: Freedom or Death"
+      "studio_voice_label": "Studio Female Historian · Historic Speech"
     },
     {
       "lesson_index": 1,
       "lesson_id": "lesson_2",
       "lesson_label": "Enquiry 2",
-      "book_title": "The Beveridge Report (Cmd. 6404): Slaying the \"Five Giant Evils\" (November 1942)",
-      "author": "Sir William Beveridge (Social Insurance and Allied Services, HMSO, Dec 1942)",
-      "cover_image": "/images/post_war_britain/william_beveridge_portrait.jpg",
-      "cover_caption": "Sir William Beveridge photographed beneath a framed cartoon celebrating the December 1942 Beveridge Report (Cmd. 6404) that laid the blueprint for Britain’s post-war Welfare State (Imperial War Museums D 17565).",
-      "author_context": "In the darkest middle years of the Second World War, economist Sir William Beveridge published what looked like a dry government report on social insurance (December 1942). To Whitehall’s astonishment, 635,000 copies sold out as soldiers in North Africa and bomb-weary families queued outside bookshops! Naming \"Five Giant Evils\" blocking human flourishing, Beveridge’s report powered Clement Attlee’s 1945 Labour landslide and Aneurin Bevan’s creation of the National Health Service on 5 July 1948.",
-      "source_type": "primary_decree",
-      "source_type_label": "Landmark Wartime Parliamentary Report (Cmd. 6404)",
-      "is_primary": true,
+      "short_tab_title": "2. Sylvia Diggory & NHS",
+      "literary_mode": "storied_micro_history",
+      "provenance_tier": "storied_micro_history",
+      "source_type": "micro_history",
+      "source_type_label": "True Historical Micro-Story (5 July 1948)",
+      "is_primary": false,
       "is_adapted": false,
-      "extract": "\"Three guiding principles may be laid down at the outset:\nFirst, any proposals for the future, while they should use to the full the experience gathered in the past, should not be restricted by consideration of sectional interests established in the obtaining of that experience. Now, when the war is abolishing landmarks of every kind, is the opportunity for using experience in a clear field. A revolutionary moment in the world’s history is a time for revolutions, not for patching.\n\nSecond, the organisation of social insurance should be treated as one part only of a comprehensive policy of social progress. Social insurance fully developed may provide income security; it is an attack upon Want. But Want is one only of five giants on the road of reconstruction and in some ways the easiest to attack. The others are Disease, Ignorance, Squalor, and Idleness.\n\nThird, social security must be achieved by co-operation between the State and the individual. The State should offer security for service and contribution... Restoration of a sick person to health is a duty of the State and the sick person, prior to any other consideration, through a comprehensive National Health Service available to every citizen without a financial barrier at the hour of need.\"",
+      "book_title": "\"No Bill by the Bed\": Thirteen-Year-Old Sylvia Diggory & Aneurin Bevan Launch the NHS (5 July 1948)",
+      "author": "The History Revision Hub (True Historical Story • Park Hospital Davyhulme & NHS Archive Records)",
+      "provenance_note": "Original true micro-history grounded in Sylvia Diggory’s recorded memories of 5 July 1948 at Park Hospital, Davyhulme, and Aneurin Bevan’s launch of the National Health Service.",
+      "author_context": "Before 5 July 1948, falling seriously ill could bankrupt a British working-class family: insured fathers saw a panel doctor, while mothers and children often paid cash fees they could scarcely afford or went without care. Inspired by Sir William Beveridge’s 1942 report against the 'Five Giant Evils' (Want, Disease, Ignorance, Squalor, Idleness), Clement Attlee’s Labour government and former Welsh coalminer Aneurin Bevan launched the world’s first universal National Health Service free at the point of need.",
+      "cover_image": "/images/bevan_first_day_nhs_1948.jpg",
+      "cover_caption": "Health Minister Aneurin Bevan speaks beside the hospital bed of 13-year-old Sylvia Diggory—the first official NHS patient—alongside two smiling nurses at Park Hospital, Davyhulme, Manchester on 5 July 1948.",
       "vocabVault": [
         {
-          "term": "Five Giant Evils",
-          "def": "Sir William Beveridge’s famous 1942 names for Britain’s five social crises: Want (poverty), Disease (illness), Ignorance (lack of education), Squalor (slum housing), and Idleness (mass unemployment)."
+          "term": "Aneurin ('Nye') Bevan",
+          "pronunciation": "ah-NYE-rin BEV-un",
+          "def": "Former Welsh coalminer and Labour Minister of Health who steered the National Health Service to launch on 5 July 1948."
         },
         {
-          "term": "Welfare State",
-          "def": "The post-1945 \"cradle-to-grave\" system funded through National Insurance and taxation guaranteeing healthcare, pensions, family allowances, secondary schooling, and housing."
+          "term": "Sylvia Diggory (Davyhulme)",
+          "pronunciation": "DAY-vee-hyoom",
+          "def": "Thirteen-year-old schoolgirl treated for acute kidney/liver illness at Park Hospital, Davyhulme, who greeted Bevan as the symbolic first NHS patient."
         },
         {
-          "term": "National Health Service (5 July 1948)",
-          "def": "Launched by Health Minister Aneurin Bevan at Park Hospital, Manchester, providing doctors, hospitals, glasses, and dental care free at the point of use."
+          "term": "Five Giant Evils (Beveridge, 1942)",
+          "pronunciation": "BEV-er-ij",
+          "def": "Economist Sir William Beveridge’s names for Britain’s five social crises: Want, Disease, Ignorance, Squalor, and Idleness."
         },
         {
-          "term": "Means Test",
-          "def": "The humiliating 1930s Great Depression inspection forcing unemployed families to sell furniture and heirlooms before receiving poor relief—swept away by universal National Insurance."
+          "term": "Free at the Point of Use",
+          "pronunciation": "YOO-nih-vur-sul",
+          "def": "The founding NHS rule that medical care is funded together through taxes and National Insurance, so no patient faces a fee when sick."
         }
       ],
+      "extract": "As church clocks struck midnight entering Monday 5 July 1948, something vanished from every hospital ward across Britain. The doctor’s bill book was gone forever. Until that Sunday night, working-class mothers in Manchester or Glasgow dreaded calling a doctor for a sick child. Every home visit cost precious shillings needed for coal and bread. Millions of older people squinted through cheap glasses chosen by guesswork off market stalls.\n\nThat bright Monday morning at Park Hospital in Davyhulme, near Manchester, thirteen-year-old Sylvia Diggory lay against crisp white pillows. She was fighting a dangerous liver and kidney infection. Footsteps echoed down the polished ward floor. Looking up, Sylvia saw a broad-shouldered Welshman with silver-streaked hair stop beside her bed. It was Health Minister Aneurin Bevan, a former coalminer’s son from South Wales.\n\nSmiling beside two ward nurses, Bevan shook thirteen-year-old Sylvia’s hand as the first patient of the brand-new National Health Service. He asked gently if she felt comfortable, and told reporters outside that lifting money fear from every sickbed made Britain a fairer land.\n\nGuided by Sir William Beveridge’s wartime plan to defeat the Five Giant Evils—Want, Disease, Ignorance, Squalor, and Idleness—Clement Attlee’s government had kept its word. Within weeks, millions of citizens rushed to test eyes and mend teeth without paying a single penny at the door.",
       "parent_discussion": [
         {
-          "question": "What did Sir William Beveridge mean by his famous sentence: \"A revolutionary moment in the world’s history is a time for revolutions, not for patching\"?",
-          "answer": "Total war had already upended old class barriers through evacuation, rationing, and shared bombing; Britain should build a bold universal system rather than tinkering with hated 1930s poor laws."
+          "question": "Why had sickness hit working-class mothers and children like Sylvia Diggory hardest before 5 July 1948?",
+          "answer": "Before 1948, the 1911 National Insurance scheme covered mainly wage-earning men, meaning wives and children often had to pay doctors' bills out of pocket, rely on charity wards, or endure untreated pain."
         },
         {
-          "question": "Match each of Beveridge’s \"Five Giants\" (Want, Disease, Ignorance, Squalor, Idleness) to the actual reform Britain built between 1944 and 1948!",
-          "answer": "Want -> National Insurance & Family Allowances (1945–46); Disease -> NHS (1948); Ignorance -> Butler Education Act free secondary schooling (1944); Squalor -> over 1 million council homes & New Towns; Idleness -> full employment."
+          "question": "Why was there an astonishing rush for spectacles, false teeth, and hearing aids in the very first months of the NHS?",
+          "answer": "Critics claimed people were greedy for 'freebies', yet historians show it was decades of pent-up medical need among poorer citizens who had never been able to afford an optician or dentist."
         },
         {
-          "question": "Why did war hero Winston Churchill lose the July 1945 General Election by a landslide to Clement Attlee’s Labour Party just two months after VE Day?",
-          "answer": "Voters admired Churchill as a wartime leader, yet remembered 1930s unemployment and trusted Attlee and Bevan far more to turn the Beveridge Report into reality."
+          "question": "Match Beveridge’s 'Five Giant Evils' (Want, Disease, Ignorance, Squalor, Idleness) to the wider post-1945 Welfare State!",
+          "answer": "Want -> National Insurance & Family Allowances; Disease -> the NHS; Ignorance -> free secondary schools (1944 Butler Act); Squalor -> over a million council homes; Idleness -> full employment."
         }
       ],
-      "hinge_question": "<strong>Think:</strong> List all five of Beveridge’s \"Giant Evils\" from memory.<br><br><strong>Pair:</strong> Why had many doctors in the British Medical Association initially opposed Aneurin Bevan’s NHS before 5 July 1948—and why did millions rush for spectacles and dental care in its very first weeks?<br><br><strong>Share:</strong> How did Operation Pied Piper and the Blitz make wealthier Britons finally see urban poverty first-hand?",
+      "story_check": [
+        {
+          "question": "Who shook Health Minister Aneurin Bevan’s hand at Park Hospital, Davyhulme on 5 July 1948 as the first symbolic NHS patient?",
+          "options": [
+            "Sir William Beveridge",
+            "Thirteen-year-old schoolgirl Sylvia Diggory",
+            "Prime Minister Clement Attlee’s daughter",
+            "The Mayor of Manchester"
+          ],
+          "correctIndex": 1,
+          "feedback": "Thirteen-year-old Sylvia Diggory, recovering from a serious liver and kidney illness at Park Hospital, greeted Aneurin Bevan on the morning of 5 July 1948."
+        },
+        {
+          "question": "What does 'free at the point of use' actually mean for how the NHS is funded?",
+          "options": [
+            "Doctors and nurses work as unpaid volunteers",
+            "Only patients under fourteen receive free medicine",
+            "Hospitals raise all their money from street raffles",
+            "Care is paid for collectively through general taxes and National Insurance, so nobody pays a bill at the bedside"
+          ],
+          "correctIndex": 3,
+          "feedback": "Funded through shared taxation and National Insurance contributions, the NHS removed financial barriers at the moment a citizen falls ill."
+        },
+        {
+          "question": "Which 1942 wartime bestseller named the 'Five Giant Evils' (Want, Disease, Ignorance, Squalor, Idleness) that inspired the Welfare State?",
+          "options": [
+            "The Beveridge Report by Sir William Beveridge",
+            "The Strath Report",
+            "Protect and Survive",
+            "The Representation of the People Act"
+          ],
+          "correctIndex": 0,
+          "feedback": "Published in December 1942, Sir William Beveridge’s report sold 635,000 copies and laid the blueprint for post-war reconstruction."
+        }
+      ],
+      "monday_cold_call": {
+        "question": "What changed overnight on 5 July 1948 for families like 13-year-old Sylvia Diggory’s—and which 'Giant Evil' from the 1942 Beveridge Report was Aneurin Bevan tackling?",
+        "answer": "Doctors, hospitals, glasses, and dental care became free at the point of use (funded by taxes/National Insurance), directly attacking Beveridge’s Giant Evil of 'Disease'."
+      },
+      "hinge_question": "<strong>Think:</strong> List all five of Beveridge’s \"Giant Evils\" from memory.<br><br><strong>Pair:</strong> Look at the Park Hospital photo of Aneurin Bevan and 13-year-old Sylvia Diggory: why had mothers and children suffered most before 5 July 1948?<br><br><strong>Share:</strong> How did wartime evacuation and the Blitz convince wealthier Britons to back a universal Welfare State?",
       "questions": [
-        "Quote Beveridge’s famous line explaining why 1942 was not a time for mere \"patching.\"",
-        "Name all five \"Giants on the road of reconstruction\" identified in the Beveridge Report.",
-        "What core principle did Beveridge set out for a future National Health Service regarding money \"at the hour of need\"?"
+        "Who was Sylvia Diggory, and what happened at Park Hospital on 5 July 1948?",
+        "Name all five 'Giant Evils' identified in the 1942 Beveridge Report.",
+        "Why did millions of Britons rush for spectacles and dental treatment in the first months of the NHS?"
       ],
       "audio_file": "/audio/reading/post_war_britain/r1.mp3",
       "studio_audio": "/audio/reading/post_war_britain/r1.mp3",
-      "studio_voice_label": "Studio Male Historian · Archival Reading",
-      "provenance_tier": "verbatim_primary",
-      "provenance_note": "Original wording from Sir William Beveridge’s December 1942 parliamentary report (Cmd. 6404) identifying the \"Five Giant Evils\".",
-      "short_tab_title": "2. Beveridge: Five Giants (1942)"
+      "studio_voice_label": "Studio Female Historian · Storied History"
     },
     {
       "lesson_index": 2,
       "lesson_id": "lesson_3",
       "lesson_label": "Enquiry 3",
-      "book_title": "Step Ashore at Tilbury: Sam King MBE’s Windrush Testimony & \"Black and British\"",
-      "author": "Sam King MBE (IWM Oral History 1998) & David Olusoga (\"Black and British\", 2016)",
-      "cover_image": "/images/empire_windrush_1948.jpg",
-      "cover_caption": "Archival photograph of the converted troopship HMT Empire Windrush, which docked at Tilbury, Essex on 22 June 1948 carrying Jamaican RAF veteran Sam King MBE and hundreds of Commonwealth citizens.",
-      "author_context": "Over 10,000 Caribbean men and women volunteered to serve Britain during the Second World War—among them Jamaican Royal Air Force engineer Sam King (1926–2016). Facing severe post-war labour shortages on British railways, buses, and in the brand-new NHS, and holding full citizenship of the \"United Kingdom and Colonies\" under the 1948 British Nationality Act, Sam King sailed back aboard HMT Empire Windrush in June 1948—later becoming the first Black Mayor of Southwark and co-founding the Windrush Foundation.",
+      "short_tab_title": "3. Kitchener & Sam King",
+      "literary_mode": "verbatim_literature",
+      "provenance_tier": "adapted_primary",
       "source_type": "primary_testimony",
-      "source_type_label": "RAF Veteran & Windrush Oral History + Scholarship",
+      "source_type_label": "1948 Tilbury Newsreel Calypso & RAF Veteran Memoir",
       "is_primary": true,
       "is_adapted": true,
-      "extract": "From the recorded oral history of Jamaican RAF veteran Sam King MBE on returning to Britain aboard HMT Empire Windrush (docked at Tilbury, 22 June 1948): \"During the war in 1944 I had answered the poster in Kingston saying 'The Mother Country Needs You' and served as an aircraft engineer in the Royal Air Force in Britain. When I went back to Jamaica after peace came, hurricanes had wrecked the crops and there were scarce jobs, whereas we knew bombed-out Britain needed hands to run the trains, rebuild houses, and staff the new hospitals.\n\nSo I paid my twenty-eight pounds ten shillings fare on the Empire Windrush. We were not foreigners arriving uninvited—our passports said 'British Subject: Citizen of the United Kingdom and Colonies,' and we had learned British history and sung the same hymns at school.\n\nYet the hardest shock after Tilbury was not the cold grey drizzle, but the handwritten signs hanging in front-room windows across London and Birmingham: 'Room to Let: No Irish, No Blacks, No Dogs.' Rejected by private landlords and barred from certain pubs despite having worn the King’s uniform, Caribbean families pooled their weekly wages in 'pardner' savings clubs to buy houses of their own, staffed the wards of Aneurin Bevan’s brand-new NHS, kept London Transport running, and built vibrant cultural institutions—from Sam King’s West Indian Gazette networks to Claudia Jones’s Caribbean Carnival after the 1958 Notting Hill attacks.\"",
+      "book_title": "\"London Is the Place for Me\": Lord Kitchener on the Windrush Gangplank & Sam King MBE (22 June 1948)",
+      "author": "Lord Kitchener (Aldwyn Roberts, Pathé Newsreel, 22 June 1948) & Sam King MBE (IWM Oral History)",
+      "provenance_note": "Pairs Trinidadian calypsonian Lord Kitchener’s historic 22 June 1948 Tilbury Docks newsreel refrain with Jamaican RAF veteran Sam King MBE’s Windrush oral history.",
+      "author_context": "On 22 June 1948—just thirteen days before the NHS opened—the troopship HMT Empire Windrush docked at Tilbury in Essex carrying hundreds of Caribbean citizens answering bombed-out Britain’s acute labour shortage. Under the 1948 British Nationality Act, every passenger held full legal British citizenship. On the deck stood twenty-six-year-old Trinidadian calypso poet Aldwyn Roberts ('Lord Kitchener') and Jamaican Royal Air Force wartime veteran Sam King.",
+      "cover_image": "/images/empire_windrush_1948.jpg",
+      "cover_caption": "Archival photograph of the white-painted troopship HMT Empire Windrush, which docked at Tilbury Docks, Essex on 22 June 1948 carrying Lord Kitchener, RAF veteran Sam King MBE, and hundreds of Commonwealth citizens.",
       "vocabVault": [
         {
+          "term": "Calypso (Lord Kitchener)",
+          "pronunciation": "kuh-LIP-soh",
+          "def": "Witty, rhythmic Trinidadian sung poetry blending West African griot storytelling with topical news—sung live at Tilbury Docks by Aldwyn Roberts ('Lord Kitchener')."
+        },
+        {
+          "term": "HMT Empire Windrush (22 June 1948)",
+          "pronunciation": "EM-pyre WIND-rush",
+          "def": "Former German liner turned British troopship bringing Caribbean Commonwealth citizens to help rebuild post-war transport, housing, and hospitals."
+        },
+        {
           "term": "British Nationality Act (1948)",
-          "def": "The Act confirming that all 800 million people across Britain and the Empire/Commonwealth held equal legal status as \"Citizens of the United Kingdom and Colonies\" with the right to live and work in Britain."
+          "pronunciation": "KOM-un-weltth",
+          "def": "Law confirming that all 800 million people across Britain and its Empire/Commonwealth held equal status as 'Citizens of the United Kingdom and Colonies'."
         },
         {
-          "term": "Windrush Generation (1948–1971)",
-          "def": "Caribbean Commonwealth citizens who answered post-war Britain’s labour shortage to rebuild transport, industry, and the NHS—named after HMT Empire Windrush (June 1948)."
-        },
-        {
-          "term": "The \"Colour Bar\"",
-          "def": "Informal—yet completely legal before 1965/1968—racial discrimination barring Black and Asian Britons from private housing, pubs, jobs, and promotions."
-        },
-        {
-          "term": "Pardner Hand",
-          "def": "A traditional Caribbean cooperative community savings system allowing Windrush families refused bank mortgages to pool money in turn to buy homes."
+          "term": "Pardner Savings Club",
+          "pronunciation": "PARD-ner",
+          "def": "Traditional Caribbean cooperative savings pool allowing Windrush families refused bank loans to combine weekly wages and buy homes of their own."
         }
       ],
+      "extract": "As morning mist lifted off the Thames at Tilbury Docks on 22 June 1948, Pathé newsreel cameras rolled beside the gangplank of HMT Empire Windrush. Smiling beneath a sharp felt hat, twenty-six-year-old Trinidadian poet Aldwyn Roberts—known as 'Lord Kitchener'—stepped up to the microphone. Right there on deck, he sang the joyous calypso he had written at sea.\n\n<div class=\"reading-stanza\">\"London is the place for me,<br>London this lovely city,<br>You can go to France or America, India, Asia or Australia,<br>But you must come back to London city!\"</div>\n\nStanding nearby in a neat suit was Jamaican Royal Air Force engineer Sam King, returning to the country he had already defended against Hitler. \"In 1944 I answered the poster in Kingston saying 'The Mother Country Needs You' and served in the RAF. After peace came, bombed-out Britain needed hands to run the trains, rebuild houses, and staff the new hospitals. We were not strangers arriving uninvited—our passports said 'Citizen of the United Kingdom and Colonies.'\"\n\nYet optimism soon met a cold shock. Across London and Birmingham hung handwritten window cards that broke no British law in 1948. \"Room to Let: No Irish, No Blacks, No Dogs.\" Shut out by landlords and banks, Windrush pioneers pooled weekly wages in 'pardner' clubs to buy houses and staffed Bevan’s brand-new NHS wards. After the 1958 Notting Hill attacks, Trinidadian editor Claudia Jones launched the joyful Caribbean Carnival.",
       "parent_discussion": [
         {
-          "question": "Why does Sam King emphasise that Windrush passengers in June 1948 were NOT \"foreigners\" or illegal migrants, and why had many already lived in Britain earlier in the 1940s?",
-          "answer": "Hundreds aboard Windrush (like Sam King himself) were returning WWII RAF/armed forces veterans, and under the 1948 British Nationality Act every passenger held full legal British citizenship."
+          "question": "Contrast the hopeful joy of Lord Kitchener’s gangplank calypso on 22 June 1948 with the handwritten window signs passengers encountered days later!",
+          "answer": "Kitchener and RAF veterans like Sam King arrived proud of their shared British citizenship and eager to rebuild the 'Mother Country', making the legal housing and pub 'colour bar' ('No Irish, No Blacks, No Dogs') a bitter shock."
         },
         {
-          "question": "Why was there NO law stopping a London landlord in 1948 or 1958 from hanging a sign reading \"No Irish, No Blacks, No Dogs\"?",
-          "answer": "Britain had zero anti-discrimination laws until the Race Relations Acts of 1965 and 1968, leaving housing and jobs exposed to an unregulated \"colour bar\"."
+          "question": "Why were Sam King and his fellow Windrush passengers legally NOT 'immigrants from a foreign country' in June 1948?",
+          "answer": "Under the 1948 British Nationality Act, everyone born in Jamaica, Trinidad, Barbados, or London held the exact same legal status—'Citizen of the United Kingdom and Colonies'—and many had already served in Britain’s wartime RAF."
         },
         {
-          "question": "How did the Windrush Generation respond creatively and resiliently to both the housing colour bar and the 1958 Notting Hill racist riots?",
-          "answer": "Families formed cooperative \"pardner\" savings clubs to buy their own homes, while Trinidad-born journalist Claudia Jones founded The West Indian Gazette and launched the indoor 1959 St Pancras Caribbean Carnival (ancestor of Notting Hill Carnival) to celebrate Caribbean culture."
+          "question": "How did Caribbean pioneers turn exclusion in housing and the 1958 Notting Hill racist riots into lasting British institutions?",
+          "answer": "They used cooperative 'pardner' savings clubs to buy family homes, staffed the new NHS and London Transport, and Claudia Jones founded The West Indian Gazette and the 1959 Caribbean Carnival to celebrate Black British culture."
         }
       ],
-      "hinge_question": "<strong>Think:</strong> How much did a ticket aboard HMT Empire Windrush cost in 1948, and which vital British services recruited Caribbean workers?<br><br><strong>Pair:</strong> Explain how Aneurin Bevan’s 1948 NHS and the 1948 Windrush Generation depended directly on one another.<br><br><strong>Share:</strong> Why did Claudia Jones choose music, dance, and journalism (\"a people’s art is the genesis of their freedom\") after the murder of Kelso Cochrane in 1959?",
+      "story_check": [
+        {
+          "question": "Who sang 'London Is the Place for Me' live into a Pathé newsreel microphone at Tilbury Docks on 22 June 1948?",
+          "options": [
+            "Jamaican RAF engineer Sam King",
+            "Trinidadian calypsonian Lord Kitchener (Aldwyn Roberts)",
+            "Health Minister Aneurin Bevan",
+            "Journalist Claudia Jones"
+          ],
+          "correctIndex": 1,
+          "feedback": "Twenty-six-year-old Trinidadian calypso singer Aldwyn Roberts ('Lord Kitchener') sang his newly written song impromptu on deck for Pathé cameras."
+        },
+        {
+          "question": "Why had Jamaican passenger Sam King already lived in Britain before sailing on HMT Empire Windrush in 1948?",
+          "options": [
+            "He had volunteered in 1944 to serve as an engineer in Britain’s Royal Air Force during WWII",
+            "He had studied medicine in Edinburgh in the 1930s",
+            "He had played professional cricket in Yorkshire",
+            "He worked as a ship captain on the Thames"
+          ],
+          "correctIndex": 0,
+          "feedback": "Like thousands of Caribbean volunteers, Sam King served in the RAF during WWII before returning in 1948—later becoming the first Black Mayor of Southwark."
+        },
+        {
+          "question": "How did Windrush families buy homes when British banks refused mortgages and landlords operated a 'colour bar'?",
+          "options": [
+            "Special post-war government housing grants",
+            "Borrowing from American trade unions",
+            "Pooling weekly wages together in traditional Caribbean 'pardner' savings clubs",
+            "Renting rooms inside redundant RAF airbases permanently"
+          ],
+          "correctIndex": 2,
+          "feedback": "Trusted community 'pardner' clubs allowed families to pool savings week by week so each member in turn had a deposit to buy a house."
+        }
+      ],
+      "monday_cold_call": {
+        "question": "Why did both Lord Kitchener’s Tilbury song and Sam King’s passport prove Windrush pioneers arrived as British citizens—and how did 'pardner' clubs beat the housing colour bar?",
+        "answer": "Under the 1948 British Nationality Act they held full UK & Colonies citizenship (many were returning WWII RAF veterans), and when landlords barred them, families pooled wages in cooperative 'pardner' clubs to buy homes."
+      },
+      "hinge_question": "<strong>Think:</strong> Why did HMT Empire Windrush (22 June 1948) and the NHS (5 July 1948) need each other within the very same fortnight?<br><br><strong>Pair:</strong> Why was it completely legal in 1948 for a landlord to put up a sign saying \"No Irish, No Blacks, No Dogs\"?<br><br><strong>Share:</strong> Why did Claudia Jones launch an indoor Caribbean Carnival in 1959 (\"a people’s art is the genesis of their freedom\")?",
       "questions": [
-        "In which branch of the British armed forces had Sam King served during the Second World War?",
-        "What exact legal citizenship status was printed inside Windrush passengers’ passports in 1948?",
-        "How did \"pardner\" savings clubs help Caribbean families overcome discrimination by landlords and banks?"
+        "What song did Lord Kitchener sing live for newsreel cameras at Tilbury Docks on 22 June 1948?",
+        "What wartime service had Sam King given Britain, and what citizenship was printed in his passport?",
+        "How did 'pardner' clubs and Claudia Jones’s Carnival answer discrimination in 1950s Britain?"
       ],
       "audio_file": "/audio/reading/post_war_britain/r2.mp3",
       "studio_audio": "/audio/reading/post_war_britain/r2.mp3",
-      "studio_voice_label": "Studio Male Historian · Archival Reading",
-      "provenance_tier": "adapted_primary",
-      "provenance_note": "Combines recorded oral history of Jamaican RAF veteran Sam King MBE aboard HMT Empire Windrush (1948) with post-war historical context.",
-      "short_tab_title": "3. Sam King: Empire Windrush"
+      "studio_voice_label": "Studio Male Historian · Classic Literature"
     },
     {
       "lesson_index": 3,
       "lesson_id": "lesson_4",
       "lesson_label": "Enquiry 4",
-      "book_title": "Voices of the 1963 Bristol Bus Boycott: Roy Hackett, Guy Bailey & Paul Stephenson",
-      "author": "West Indian Development Council Oral Testimonies (April–August 1963 • Bristol Archives)",
+      "short_tab_title": "4. Bristol Bus Boycott",
+      "literary_mode": "storied_micro_history",
+      "provenance_tier": "storied_micro_history",
+      "source_type": "micro_history",
+      "source_type_label": "True Civil Rights Micro-Story (Bristol, 1963–1968)",
+      "is_primary": false,
+      "is_adapted": false,
+      "book_title": "\"Your Two O’Clock Appointment Is Coloured\": Guy Bailey, Paul Stephenson & Bristol (1963)",
+      "author": "The History Revision Hub (True Historical Story • Grounded in Guy Bailey, Roy Hackett & Paul Stephenson Testimonies)",
+      "provenance_note": "Original true micro-history grounded in the recorded testimonies of Guy Bailey, Roy Hackett, and Paul Stephenson (1963 Bristol Bus Boycott & 1964 Bay Horse pub protest).",
+      "author_context": "In 1963, over 3,000 Black Britons lived in Bristol, yet the state-owned Bristol Omnibus Company enforced a rigid 'colour bar' refusing to hire a single Black or Asian driver or conductor despite desperate staff shortages. Organised by Roy Hackett, Owen Henry, Audley Evans, Prince Brown, spokesperson Paul Stephenson, and eighteen-year-old applicant Guy Bailey, a peaceful sixty-day boycott reshaped British law.",
       "cover_image": "/images/bristol_bus_boycott_mural.jpg",
-      "cover_caption": "'Equality 63' commemorative mural in Bristol honouring the 1963 Bristol Bus Boycott, featuring portraits and words of Paul Stephenson, Roy Hackett, Guy Bailey, Tony Benn, and Bristol’s first Sikh conductor Raghbir Singh.",
-      "author_context": "In 1963, over 3,000 Black residents lived in Bristol—a city whose eighteenth-century wealth had been built heavily on the transatlantic slave trade—yet the state-owned Bristol Omnibus Company enforced a rigid \"colour bar\" refusing to employ a single Black or Asian driver or conductor, despite severe staff shortages! Organised by Roy Hackett, Owen Henry, Audley Evans, Prince Brown, spokesperson Paul Stephenson, and young job applicant Guy Bailey, a sixty-day peaceful boycott transformed British civil rights law.",
-      "source_type": "primary_testimony",
-      "source_type_label": "Civil Rights Campaign Testimonies (April–August 1963)",
-      "is_primary": true,
-      "is_adapted": true,
-      "extract": "In April 1963, twenty-six-year-old Youth Officer Paul Stephenson tested the Bristol Omnibus Company’s secret hiring ban by telephoning to arrange a bus conductor interview for qualified eighteen-year-old Jamaican-born boys’ brigade warehouseman Guy Bailey—without mentioning Bailey’s race. Guy Bailey recalled walking into the company office: \"The receptionist looked up, saw my Black face, and called through to the manager: 'Your two o’clock appointment is here—and he’s coloured.' Within sixty seconds the manager told me there were no vacancies after all, even though their own adverts in the Bristol Evening Post begged for bus crews every night!\"\n\nInspired by Rosa Parks and the 1955–1956 Montgomery Bus Boycott in Alabama, Roy Hackett and the West Indian Development Council called a press conference on 29 April 1963 announcing that no Black Bristolian—and no fair-minded white supporter—would ride a Bristol bus until the colour bar ended. Bristol University students marched through the city centre, Labour MP Tony Benn declared he would walk or cycle rather than board a segregated company’s bus, and West Indian cricket legend Sir Learie Constantine publicly condemned the company.\n\nAfter sixty days of lost fares and national shame, General Manager Ian Patey capitulated on 28 August 1963—the exact same day Dr Martin Luther King Jr delivered his 'I Have a Dream' speech in Washington! Weeks later, Sikh graduate Raghbir Singh and Jamaican Norman Samuels boarded Bristol’s buses as the city’s first non-white conductors, paving the road directly to Harold Wilson’s Race Relations Acts of 1965 and 1968.",
+      "cover_caption": "'Equality 63' commemorative mural in Bristol honouring the 1963 Bristol Bus Boycott, featuring portraits and words of Paul Stephenson, Roy Hackett, Guy Bailey, MP Tony Benn, and Bristol’s first Sikh conductor Raghbir Singh.",
       "vocabVault": [
         {
-          "term": "Bristol Bus Boycott (Apr–Aug 1963)",
-          "def": "The 60-day peaceful consumer boycott organised by the West Indian Development Council and Paul Stephenson forcing the Bristol Omnibus Company to scrap its racial hiring ban."
+          "term": "Paul Stephenson & Guy Bailey",
+          "pronunciation": "STEE-ven-sun / GAI BAY-lee",
+          "def": "26-year-old youth worker and 18-year-old applicant whose clever phone-interview test exposed the Bristol Omnibus Company’s racial hiring ban in April 1963."
         },
         {
-          "term": "Direct Non-Violent Action",
-          "def": "Peaceful collective protest—such as boycotts, marches, and test-case applications—exposing injustice without violence."
+          "term": "Raghbir Singh",
+          "pronunciation": "RAHG-beer SING",
+          "def": "Sikh university graduate hired on 17 September 1963 (alongside Jamaican Norman Samuels) as Bristol’s first non-white bus conductor after the boycott won."
         },
         {
-          "term": "Race Relations Act (1965)",
-          "def": "Britain’s first law banning racial discrimination in \"places of public resort\" (hotels, pubs, restaurants, transport) and outlawing incitement to racial hatred."
+          "term": "Race Relations Acts (1965 & 1968)",
+          "pronunciation": "lej-is-LAY-shun",
+          "def": "Landmark UK laws banning racial discrimination first in public places like pubs and buses (1965), and then in jobs and housing (1968)."
         },
         {
-          "term": "Race Relations Act (1968)",
-          "def": "The vital expansion outlawing racial discrimination in employment (hiring) and housing—closing the loophole exposed in Bristol."
+          "term": "Jayaben Desai (Grunwick, 1976–78)",
+          "pronunciation": "JAH-yuh-ben deh-SAI",
+          "def": "East African Asian factory worker ('lions in saris') who led a famous two-year strike for workplace dignity and union rights in North London."
         }
       ],
+      "extract": "Every evening in spring 1963, the Bristol Evening Post printed urgent adverts begging for bus drivers and conductors. Yet whenever a Black citizen applied, clerks claimed every post had just been filled. Twenty-six-year-old youth worker Paul Stephenson decided to set a trap.\n\nPhoning the Bristol Omnibus Company in his crisp London-Essex voice, Stephenson booked an interview for bright eighteen-year-old Boys’ Brigade warehouseman Guy Bailey. He never mentioned that Bailey was born in Jamaica. When Guy arrived in his best pressed suit, the clerk froze and called through the open door. \"Your two o’clock appointment is here—and he’s coloured.\" Within sixty seconds, the manager told Guy every job was gone.\n\nCaught red-handed, boss Ian Patey admitted the company barred Black crews. Inspired by Rosa Parks in Montgomery, Roy Hackett and Paul Stephenson called a citywide boycott on 29 April 1963. Not one Black Bristolian rode a bus. Students marched through town, MP Tony Benn cycled in support, and cricketer Sir Learie Constantine shamed the company on television.\n\nOn 28 August 1963—the exact afternoon Dr Martin Luther King Jr spoke in Washington—the company gave in! Weeks later, Sikh graduate Raghbir Singh clipped his first bus tickets. The next year, when Bristol’s Bay Horse pub refused to serve Stephenson half a pint because of his skin, his sit-in made headlines again. Together, those protests drove Britain’s 1965 and 1968 Race Relations Acts and inspired Jayaben Desai’s Grunwick strikers.",
       "parent_discussion": [
         {
-          "question": "How did Paul Stephenson and eighteen-year-old Guy Bailey cleverly prove beyond a shadow of a doubt that the Bristol Omnibus Company was rejecting people solely because of skin colour?",
-          "answer": "Stephenson booked an interview by phone using Guy Bailey’s qualifications; the company eagerly offered the slot until Bailey arrived in person and saw the manager cancel it the instant he saw Bailey was Black."
+          "question": "Why was Paul Stephenson and Guy Bailey’s telephone-interview test such a brilliant piece of non-violent campaigning?",
+          "answer": "By securing an eager interview offer on paper qualifications alone and watching it vanish the instant the manager saw Bailey’s skin colour, they stripped away every polite excuse and proved racial discrimination beyond doubt."
         },
         {
-          "question": "What allies joined Bristol’s Caribbean community to turn a local dispute into front-page national news?",
-          "answer": "Bristol University students, Bristol MP Tony Benn (and Labour leader Harold Wilson), Trinidadian cricketer and High Commissioner Sir Learie Constantine, and church groups."
+          "question": "Why did Britain need BOTH the 1965 Race Relations Act AND the 1968 Race Relations Act?",
+          "answer": "The 1965 Act outlawed colour bars in public places like the Bay Horse pub, hotels, and transport, while the 1968 Act finally made racial discrimination illegal in employment (hiring) and housing."
         },
         {
-          "question": "Notice the extraordinary coincidence of the date the Bristol Omnibus Company surrendered—28 August 1963—and trace what British laws followed in 1965 and 1968!",
-          "answer": "Victory came on the very day of Dr King’s March on Washington, directly inspiring Prime Minister Harold Wilson to pass Britain’s first Race Relations Acts in 1965 (public places) and 1968 (jobs and housing)."
+          "question": "Look at the 'Equality 63' mural on the cover: what historic coincidence happened on 28 August 1963, the day the Bristol Omnibus Company surrendered?",
+          "answer": "It was the exact same day Dr Martin Luther King Jr delivered his 'I Have a Dream' speech in Washington—linking Bristol’s grassroots boycott to the global civil rights movement."
         }
       ],
-      "hinge_question": "<strong>Think:</strong> Why was the Bristol Omnibus Company’s excuse (\"there are no vacancies\") immediately exposed as false?<br><br><strong>Pair:</strong> Look at the Bristol mural on the cover: spot the name of Bristol’s first non-white bus conductor hired on 17 September 1963.<br><br><strong>Share:</strong> Why should British schoolchildren study Bristol 1963 alongside Montgomery 1955?",
+      "story_check": [
+        {
+          "question": "How did Paul Stephenson prove beyond doubt that the Bristol Omnibus Company operated a racial hiring ban in April 1963?",
+          "options": [
+            "He secretly recorded a boardroom meeting",
+            "He asked Parliament for secret transport records",
+            "He drove a bus through Bristol city centre himself",
+            "He booked an interview by phone for qualified 18-year-old Guy Bailey, which was cancelled the moment staff saw Bailey was Black"
+          ],
+          "correctIndex": 3,
+          "feedback": "Booked over the phone without mentioning race, eighteen-year-old Guy Bailey was turned away within sixty seconds of arriving in person."
+        },
+        {
+          "question": "What happened when Paul Stephenson walked into Bristol’s Bay Horse pub in 1964 and ordered half a pint?",
+          "options": [
+            "He celebrated signing the 1968 Race Relations Act",
+            "Refused service because of his skin colour, he staged a peaceful one-man sit-in that exposed pub colour bars nationwide",
+            "He met Dr Martin Luther King Jr in Bristol",
+            "The Bristol Omnibus Company offered him a manager’s job"
+          ],
+          "correctIndex": 1,
+          "feedback": "Arrested after refusing to leave the Bay Horse pub when barred for his race, Stephenson was cleared in court and helped spur the 1965 Race Relations Act."
+        },
+        {
+          "question": "Who became Bristol’s very first non-white bus conductor in September 1963 after the boycott succeeded?",
+          "options": [
+            "Sikh graduate Raghbir Singh (soon joined by Jamaican Norman Samuels and Pakistani crews)",
+            "Tony Benn",
+            "Sir Learie Constantine",
+            "Ian Patey"
+          ],
+          "correctIndex": 0,
+          "feedback": "As recorded on the Bristol mural, Raghbir Singh boarded a Bristol bus on 17 September 1963 as the city’s first non-white conductor."
+        }
+      ],
+      "monday_cold_call": {
+        "question": "How did Paul Stephenson’s two peaceful tests—Guy Bailey’s 1963 bus interview and the 1964 Bay Horse pub sit-in—help create Britain’s 1965 and 1968 Race Relations Acts?",
+        "answer": "Exposing the Bristol bus hiring colour bar (1963) and pub service colour bar (1964) shamed Britain on national news, driving Harold Wilson’s government to ban discrimination in public places (1965) and in jobs and housing (1968)."
+      },
+      "hinge_question": "<strong>Think:</strong> Why was the Bristol Omnibus Company’s excuse (\"there are no vacancies\") immediately exposed as false?<br><br><strong>Pair:</strong> Look at the Bristol mural on the cover: spot the name of Bristol’s first non-white bus conductor hired on 17 September 1963.<br><br><strong>Share:</strong> Why should British schoolchildren study Bristol 1963 and Grunwick 1976 alongside Montgomery 1955?",
       "questions": [
-        "How did Paul Stephenson prove that the Bristol Omnibus Company operated a secret racial hiring ban?",
-        "Name three allies or groups who publicly backed the West Indian Development Council’s 60-day boycott.",
-        "On what historic date did the bus company end its colour bar, and which two UK laws followed in 1965 and 1968?"
+        "How did Paul Stephenson and 18-year-old Guy Bailey prove the bus company operated a racial ban?",
+        "What happened on 28 August 1963 in both Bristol and Washington, D.C.?",
+        "Which two UK laws followed in 1965 and 1968?"
       ],
       "audio_file": "/audio/reading/post_war_britain/r3.mp3",
       "studio_audio": "/audio/reading/post_war_britain/r3.mp3",
-      "studio_voice_label": "Studio Male Historian · Archival Reading",
-      "provenance_tier": "adapted_primary",
-      "provenance_note": "Grounded in 1963 oral testimonies of Guy Bailey, Roy Hackett, and Paul Stephenson from the Bristol Bus Boycott campaign.",
-      "short_tab_title": "4. Bristol Bus Boycott (1963)"
+      "studio_voice_label": "Studio Male Historian · Storied History"
     },
     {
       "lesson_index": 4,
       "lesson_id": "lesson_5",
       "lesson_label": "Enquiry 5",
-      "book_title": "The Strath Report (1955), Bertrand Russell’s CND Launch (1958) & Greenham Common",
-      "author": "Cabinet Strath Report (CAB 134/940, 1955) & Bertrand Russell (Central Hall Westminster, 17 Feb 1958)",
-      "cover_image": "/images/post_war_britain/aldermaston_cnd_demo.jpg",
-      "cover_caption": "Campaign for Nuclear Disarmament (CND) marchers carrying Torbay and Weston-super-Mare peace banners bearing Gerald Holtom’s 1958 nuclear disarmament symbol.",
-      "author_context": "After Britain tested its first atomic bomb in 1952 and first hydrogen bomb in 1957, a top-secret Whitehall civil-defence committee chaired by William Strath calculated what just ten Soviet H-bombs would do to a densely populated island. While Whitehall kept the Strath Report secret and issued DIY \"Protect and Survive\" leaflets, philosopher Bertrand Russell, Canon John Collins, and designer Gerald Holtom launched the Campaign for Nuclear Disarmament (CND) in February 1958—inspiring the Easter Aldermaston marches and the 1981–2000 Greenham Common Women’s Peace Camp.",
+      "short_tab_title": "5. Russell & Aldermaston",
+      "literary_mode": "intimate_eyewitness",
+      "provenance_tier": "adapted_primary",
       "source_type": "primary_speech",
-      "source_type_label": "Declassified Cabinet Report (1955) & CND Founding Address (1958)",
+      "source_type_label": "CND Founding Speech & First Aldermaston March (1958)",
       "is_primary": true,
-      "is_adapted": false,
-      "extract": "From the secret UK Cabinet Strath Committee Report on the Hydrogen Bomb (CAB 134/940, March 1955 — withheld from the British public for nearly fifty years): \"Ten hydrogen bombs delivered on the main urban centres of the United Kingdom would result in roughly twelve million dead and four million seriously injured... Radioactive fall-out carried across the countryside by prevailing winds would render vast tracts uninhabitable, contaminate food and water supplies, and collapse central administration, sanitation, and medical care beyond any previous experience of war.\"\n\nThree years later, on 17 February 1958, five thousand citizens packed Central Hall Westminster and overflow halls to hear eighty-five-year-old philosopher Bertrand Russell and Canon John Collins launch the Campaign for Nuclear Disarmament (CND): \"We are gathered tonight not for any party advantage, nor on behalf of Moscow or Washington, but on behalf of the continued existence of the human species. A single miscalculation on a radar screen, a single panic among statesmen armed with thermonuclear weapons, can extinguish in a single afternoon all the art, science, cities, and children that centuries of civilisation have built.\n\nIf Britain—the third thermonuclear power on earth—has the moral courage to renounce these weapons of mass extermination and lead the non-nuclear nations of the world, our voice will carry weight where mere imitation of the superpowers carries none.\"",
+      "is_adapted": true,
+      "book_title": "\"Four Abreast in the Rain\": Bertrand Russell’s Warning & The Road to Aldermaston (1958)",
+      "author": "Bertrand Russell (Central Hall Westminster, 17 Feb 1958) & Easter 1958 Aldermaston Accounts",
+      "provenance_note": "Pairs philosopher Bertrand Russell’s February 1958 CND founding speech with eyewitness details of the Easter 1958 Aldermaston march and the declassified 1955 Strath Report.",
+      "author_context": "After Britain tested its first hydrogen bomb in 1957, a secret Cabinet study (the 1955 Strath Report) privately admitted just ten Soviet H-bombs would kill twelve million Britons and collapse medical care completely. While Whitehall hid that report for nearly fifty years, eighty-five-year-old philosopher Bertrand Russell, Canon John Collins, and artist Gerald Holtom launched the Campaign for Nuclear Disarmament (CND) in February 1958—sending thousands marching through Easter rain to Aldermaston.",
+      "cover_image": "/images/post_war_britain/aldermaston_cnd_demo.jpg",
+      "cover_caption": "Campaign for Nuclear Disarmament (CND) marchers walking along a country road with pushchairs and banners from Weston-super-Mare and Torbay bearing Gerald Holtom’s 1958 nuclear disarmament symbol.",
       "vocabVault": [
         {
-          "term": "Thermonuclear (Hydrogen) Bomb",
-          "def": "A fusion weapon up to a thousand times more destructive than the 1945 Hiroshima atomic bomb, spreading lethal radioactive fallout hundreds of miles."
+          "term": "Aldermaston",
+          "pronunciation": "AWL-der-mah-stun",
+          "def": "Site of Britain’s Atomic Weapons Research Establishment in Berkshire, target of CND’s famous four-day 52-mile Easter marches from 1958 onward."
         },
         {
-          "term": "CND (Campaign for Nuclear Disarmament)",
-          "def": "Founded in February 1958, organising the annual Aldermaston Easter marches and popularising Gerald Holtom’s global peace symbol (semaphore N + D)."
+          "term": "Bertrand Russell (CND)",
+          "pronunciation": "BUR-trund RUS-ul",
+          "def": "Nobel Prize-winning British philosopher and mathematician who co-founded the Campaign for Nuclear Disarmament at age eighty-five in February 1958."
         },
         {
-          "term": "Protect and Survive (1980)",
-          "def": "The Home Office public leaflet advising families to whitewash windows and shelter under kitchen tables/doors during nuclear war—mocked in E. P. Thompson’s \"Protest and Survive\" and BBC drama Threads (1984)."
+          "term": "Gerald Holtom’s Peace Symbol",
+          "pronunciation": "HOL-tum",
+          "def": "Designed in February 1958 for the first Aldermaston march by combining naval flag-semaphore letters 'N' and 'D' (Nuclear Disarmament) inside a circle."
         },
         {
-          "term": "Greenham Common Women’s Peace Camp",
-          "def": "Established by Welsh marchers (\"Women for Life on Earth\") in September 1981 outside RAF Greenham Common in Berkshire to protest 96 US nuclear cruise missiles; 30,000 women linked hands around the 9-mile fence in December 1982."
+          "term": "Strath Report vs Protect and Survive",
+          "pronunciation": "STRATH",
+          "def": "The secret 1955 Whitehall report admitting 10 H-bombs would kill 12 million Britons, contrasted with 1980 public leaflets advising families to hide under kitchen doors."
+        },
+        {
+          "term": "Greenham Common (1981–2000)",
+          "pronunciation": "GREE-num KOM-un",
+          "def": "Women’s peace camp outside RAF Greenham Common where 30,000 women linked hands around the nine-mile base fence in December 1982 against US cruise missiles."
         }
       ],
+      "extract": "Inside locked Whitehall safes lay the secret 1955 Strath Report. It warned ministers that just ten hydrogen bombs on British cities would leave twelve million people dead and poison the island. Yet in public, leaflets told families to paint windows white and hide under kitchen doors.\n\nOn 17 February 1958, five thousand citizens packed Central Hall Westminster to launch the Campaign for Nuclear Disarmament. Stepping up with shock-white hair, eighty-five-year-old thinker Bertrand Russell spoke with quiet fire. \"We are gathered tonight not for any party advantage, nor on behalf of Moscow or Washington. We meet for the continued survival of the human race. One mistake on a radar screen, or one panic among armed leaders, could end everything in a single afternoon. All the art, science, cities, and children that centuries have built would vanish.\"\n\nSeven weeks later, on Good Friday 1958, artist Gerald Holtom handed out black-and-white signs bearing a brand-new badge. Inside a circle stood the naval flag letters for 'N' and 'D'—Nuclear Disarmament. Walking four abreast from Trafalgar Square, marchers set off along fifty-two miles of road toward the bomb plant at Aldermaston. Students, vicars, jazz bands, and parents pushing prams trudged through freezing April rain, sleet, and blisters. Britain kept its bomb, yet that rainy Berkshire march shaped peaceful protest right down to the 30,000 women linking hands around Greenham Common in 1982.",
       "parent_discussion": [
         {
-          "question": "Why did the British government keep the 1955 Strath Report top-secret until 2002 while publishing \"Protect and Survive\" instructions to hide under doors and tables?",
-          "answer": "The Strath Report privately admitted just ten H-bombs would kill 12 million Britons and collapse society, meaning there was no realistic civil defence—a truth officials feared would spark panic or boost unilateral disarmament."
+          "question": "Why did British governments keep the 1955 Strath Report locked away until 2002 while printing 1980 'Protect and Survive' leaflets about hiding under doors?",
+          "answer": "Because the Strath Report admitted civil defence against hydrogen bombs was impossible; ministers feared telling the public twelve million would die would cause panic and boost support for CND."
         },
         {
-          "question": "How did artist Gerald Holtom design the world-famous peace symbol carried on the CND banners on the cover in Easter 1958?",
-          "answer": "He combined the naval flag-semaphore letters for \"N\" (two arms angled down) and \"D\" (one arm straight up and down) inside a circle representing the Earth: Nuclear Disarmament."
+          "question": "Look at the CND banners on the cover photograph: how did designer Gerald Holtom create the world’s most recognisable peace symbol in 1958?",
+          "answer": "He combined the two naval semaphore flag signals for 'N' (two arms angled down) and 'D' (one arm straight up and down) inside a circle representing the Earth—and deliberately never copyrighted it so anyone could use it."
         },
         {
-          "question": "What were the two rival arguments that divided British voters and families throughout the Cold War?",
-          "answer": "Unilateralists (CND / Greenham women) argued nuclear weapons were immoral and made Britain a prime Soviet target; multilateralists/deterrence supporters argued NATO nuclear weapons prevented World War III through Mutually Assured Destruction (MAD)."
+          "question": "Weigh the two honest arguments that divided British families from Aldermaston (1958) to Greenham Common (1982): unilateral disarmament vs nuclear deterrence!",
+          "answer": "CND and Greenham protesters argued nuclear weapons were immoral and made densely populated Britain a prime target; supporters of NATO deterrence argued nuclear weapons prevented Soviet attack through Mutually Assured Destruction."
         }
       ],
+      "story_check": [
+        {
+          "question": "What did the secret 1955 Cabinet Strath Report privately calculate just ten hydrogen bombs would do to Britain?",
+          "options": [
+            "Cause minor damage only around coastal ports",
+            "Kill roughly twelve million people, injure four million, and collapse sanitation and medical care",
+            "Be easily survived by whitewashing windows and hiding under tables",
+            "Be intercepted completely by Royal Air Force fighters"
+          ],
+          "correctIndex": 1,
+          "feedback": "Withheld from the public until 2002, the Strath Report estimated 12 million dead, 4 million seriously injured, and total collapse of medical and water systems."
+        },
+        {
+          "question": "What destination lay at the end of CND’s famous 52-mile four-day march in freezing Easter rain in April 1958?",
+          "options": [
+            "Portsmouth Naval Dockyard",
+            "Houses of Parliament from Edinburgh",
+            "The Atomic Weapons Research Establishment at Aldermaston in Berkshire",
+            "Tilbury Docks in Essex"
+          ],
+          "correctIndex": 2,
+          "feedback": "On Easter weekend 1958, thousands walked four abreast through rain and sleet from Trafalgar Square to the nuclear weapons research site at Aldermaston."
+        },
+        {
+          "question": "What two letters are hidden inside Gerald Holtom’s 1958 peace symbol?",
+          "options": [
+            "Semaphore flag letters N and D for Nuclear Disarmament",
+            "C and W for Cold War",
+            "B and R for Bertrand Russell",
+            "G and C for Greenham Common"
+          ],
+          "correctIndex": 0,
+          "feedback": "Gerald Holtom combined the semaphore letters N (angled downward lines) and D (vertical line) inside an Earth circle for the first Aldermaston march."
+        }
+      ],
+      "monday_cold_call": {
+        "question": "Why did Bertrand Russell launch CND in February 1958, and how did the secret 1955 Strath Report privately back up his fear?",
+        "answer": "Russell warned a single radar miscalculation with H-bombs could extinguish civilisation in an afternoon—and the secret Strath Report privately admitted just ten H-bombs would kill 12 million Britons with no real defence."
+      },
       "hinge_question": "<strong>Think:</strong> What two semaphore letters are hidden inside the CND peace symbol?<br><br><strong>Pair:</strong> Compare the secret 1955 Strath Report with the public 1980 \"Protect and Survive\" booklet—why did historian E. P. Thompson call official civil defence an illusion?<br><br><strong>Share:</strong> Did nuclear deterrence keep peace in Europe, or did Britain survive the Cold War partly by luck?",
       "questions": [
-        "According to the secret 1955 Strath Report, how many casualties would just ten hydrogen bombs inflict on Britain?",
-        "Where and when did Bertrand Russell and Canon John Collins launch the Campaign for Nuclear Disarmament?",
-        "What human error did Bertrand Russell warn could extinguish civilisation \"in a single afternoon\"?"
+        "What did the secret 1955 Strath Report conclude ten hydrogen bombs would do to Britain?",
+        "What human error did Bertrand Russell warn in February 1958 could extinguish civilisation 'in a single afternoon'?",
+        "Where did CND marchers walk four abreast through rain at Easter 1958, and what symbol did they carry?"
       ],
       "audio_file": "/audio/reading/post_war_britain/r4.mp3",
       "studio_audio": "/audio/reading/post_war_britain/r4.mp3",
-      "studio_voice_label": "Studio Male Historian · Historic Speech",
-      "provenance_tier": "verbatim_primary",
-      "provenance_note": "Pairs declassified wording from the secret 1955 Cabinet Strath Report on H-bombs with Bertrand Russell’s 1958 CND founding speech.",
-      "short_tab_title": "5. Russell & CND Launch (1958)"
+      "studio_voice_label": "Studio Male Historian · Historic Speech"
     }
   ],
   "is_ks3": true

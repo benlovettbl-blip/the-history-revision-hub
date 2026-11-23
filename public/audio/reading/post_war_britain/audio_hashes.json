@@ -2,44 +2,44 @@
   "unitId": "post_war_britain",
   "clips": {
     "r3": {
-      "hash": "91e00c47e0a1901011aa6b40",
-      "bytes": 414092,
+      "hash": "bb72f86d2791adef4da29c58",
+      "bytes": 393932,
       "voiceKey": "male_historian",
-      "badge": "Studio Male Historian · Archival Reading",
-      "words": 257,
-      "updatedAt": "2026-11-20T16:36:13.469Z"
+      "badge": "Studio Male Historian · Storied History",
+      "words": 242,
+      "updatedAt": "2026-11-23T18:40:49.620Z"
     },
     "r4": {
-      "hash": "7b1f52d9616871d031bb9026",
-      "bytes": 411500,
+      "hash": "9161c3325fa4da7643f0c113",
+      "bytes": 426092,
       "voiceKey": "male_historian",
       "badge": "Studio Male Historian · Historic Speech",
-      "words": 223,
-      "updatedAt": "2026-11-20T16:36:14.407Z"
+      "words": 230,
+      "updatedAt": "2026-11-23T18:40:50.436Z"
     },
     "r1": {
-      "hash": "3846059bfcda1ab4cdc5ebd5",
-      "bytes": 340748,
-      "voiceKey": "male_historian",
-      "badge": "Studio Male Historian · Archival Reading",
-      "words": 207,
-      "updatedAt": "2026-11-20T16:36:16.281Z"
+      "hash": "d1bbdae75e34633ce04b042d",
+      "bytes": 391820,
+      "voiceKey": "female_historian",
+      "badge": "Studio Female Historian · Storied History",
+      "words": 221,
+      "updatedAt": "2026-11-23T18:46:19.227Z"
     },
     "r2": {
-      "hash": "b38ecd4fdd77fde6dcb565c8",
-      "bytes": 386540,
+      "hash": "2281cbe8ecd56277144f195c",
+      "bytes": 405740,
       "voiceKey": "male_historian",
-      "badge": "Studio Male Historian · Archival Reading",
-      "words": 245,
-      "updatedAt": "2026-11-20T16:36:17.063Z"
+      "badge": "Studio Male Historian · Classic Literature",
+      "words": 242,
+      "updatedAt": "2026-11-23T18:40:42.059Z"
     },
     "r0": {
-      "hash": "f27cdaf57cbbac33a1f97881",
-      "bytes": 456908,
+      "hash": "93df5940e2726826330a980d",
+      "bytes": 382700,
       "voiceKey": "female_historian",
       "badge": "Studio Female Historian · Historic Speech",
-      "words": 308,
-      "updatedAt": "2026-11-20T16:38:30.468Z"
+      "words": 236,
+      "updatedAt": "2026-11-23T18:46:18.413Z"
     }
   }
 }

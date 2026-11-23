@@ -10033,357 +10033,621 @@
   "guided_reading": [
     {
       "lesson_index": 0,
-      "book_title": "The Sleepwalkers: How Europe Went to War in 1914",
-      "author": "Christopher Clark",
-      "cover_image": "/images/great_war/gw1_gr0_nine_sovereigns_windsor_1910.jpg",
-      "author_context": "Christopher Clark is an acclaimed Australian historian. In 'The Sleepwalkers' (2012), he argues that the outbreak of World War I was not a premeditated crime by one single nation, but a tragic, complex failure of diplomacy where European leaders 'sleepwalked' into disaster without fully understanding the consequences.",
-      "extract": "The protagonists of 1914 were sleepwalkers, watchful but unseeing, haunted by dreams, yet blind to the reality of the horror they were about to bring into the world. For decades, the narrative of the Great War's outbreak has often focused on a single villain, usually pointing the finger of blame squarely at the German Empire. However, to truly understand the catastrophe, one must look at the entire continent of Europe—a continent caught in a rigid and paranoid web of its own making.\n\nIn the years leading up to 1914, Europe was dominated by a complex system of alliances. Originally designed as defensive measures to ensure peace through mutual protection, these agreements slowly morphed into dangerous tripwires. The Triple Entente, linking Britain, France, and Russia, stood in tense opposition to the Triple Alliance of Germany, Austria-Hungary, and Italy. Instead of feeling secure, the great powers felt entirely encircled and deeply suspicious of one another. The Franco-Prussian War of 1870 had left a bitter legacy; France was obsessed with regaining the lost territories of Alsace and Lorraine, while a newly unified Germany was determined to assert its dominance on the world stage.\n\nAmidst this atmosphere of mutual distrust, the military establishments across Europe grew vastly in size and influence. An unprecedented arms race took hold, most notably the fierce naval rivalry between Britain and Germany. Every nation began drafting intricate, inflexible mobilization plans. The most famous of these, the German Schlieffen Plan, dictated that in the event of war with Russia, Germany must rapidly strike and defeat France first to avoid a two-front war. Such plans meant that once the order to mobilize was given, the military timetables would take control, leaving politicians and diplomats entirely powerless to stop the descent into violence.\n\nThe spark that ignited this powder keg occurred in the volatile Balkan peninsula. The Austro-Hungarian Empire, a sprawling and multi-ethnic state, was terrified by the rise of Serbian nationalism on its southern border. When Archduke Franz Ferdinand was assassinated in Sarajevo on June 28, 1914, by a Bosnian Serb nationalist, the authorities in Vienna saw a perfect pretext to crush Serbia once and for all. They were emboldened by the infamous 'Blank Cheque' from their ally Germany, which promised unconditional support.\n\nYet, even after the assassination, a general European war was not inevitable. The ensuing July Crisis was a masterclass in diplomatic blundering, miscalculation, and brinkmanship. Leaders sent ambiguous messages, ambassadors failed to communicate their governments' true intentions, and monarchs desperately exchanged telegrams trying to preserve the peace while simultaneously signing mobilization orders. They were all playing a high-stakes game of bluff, assuming the other side would eventually back down.\n\nWhen Russia chose to mobilize its massive army in defense of its Slavic ally, Serbia, the fatal clockwork mechanism of the alliance system was triggered. Germany, bound by the rigid logic of the Schlieffen Plan, declared war on Russia and immediately invaded neutral Belgium to strike at France. This violation of Belgian neutrality finally brought the British Empire into the fray. \n\nIn the end, the outbreak of the First World War was not a premeditated crime planned in a single capital, but a tragic, collective failure. The statesmen of Europe were men who prided themselves on their rationality and diplomatic skill. Yet, gripped by fear, bound by rigid alliances, and overwhelmed by the speed of events, they sleepwalked past every opportunity to halt the crisis. They plunged their nations into a conflict of unprecedented scale and industrial slaughter, a war that would sweep away empires, redraw the map of the world, and cast a long, dark shadow over the rest of the twentieth century.",
-      "audio_file": "/audio/reading/great_war/r0.mp3",
-      "questions": [
-        "What metaphor does the author use in the opening paragraph to describe the European leaders of 1914?",
-        "According to the text, why did defensive alliances like the Triple Entente and Triple Alliance actually make the great powers feel less secure?",
-        "How did the existence of inflexible military strategies, such as the Schlieffen Plan, affect the power of politicians and diplomats during the July Crisis?"
-      ],
-      "hinge_question": "If the European leaders were truly just 'sleepwalkers' who didn't want war, does that mean they are innocent of causing it? Why or why not?",
-      "is_adapted": true,
-      "source_type": "historical_scholarship",
-      "source_type_label": "Modern Historical Scholarship",
-      "is_primary": false,
-      "studio_audio": "/audio/reading/great_war/r0.mp3",
-      "studio_voice_label": "Studio Historian · Christopher Clark",
       "lesson_id": "lesson_1",
       "lesson_label": "Enquiry 1",
+      "short_tab_title": "1. Clark: Sleepwalkers",
+      "literary_mode": "storied_micro_history",
       "provenance_tier": "scholarly_summary",
-      "provenance_note": "Opens with Christopher Clark’s famous \"sleepwalkers\" sentence, followed by a KS3 classroom summary of his 2012 book’s argument.",
+      "source_type": "historical_scholarship",
+      "source_type_label": "Historiographical Hook & Micro-History",
+      "is_primary": false,
+      "is_adapted": true,
+      "book_title": "The Sleepwalkers: From Versailles (1871) to Windsor Castle (1910)",
+      "author": "After Sir Christopher Clark (\"The Sleepwalkers\", 2012)",
+      "provenance_note": "Opens with Christopher Clark’s famous 2012 \"sleepwalkers\" sentence, tracing Europe’s fault lines from Bismarck’s 1871 Hall of Mirrors coronation to 1914.",
+      "author_context": "In The Sleepwalkers (2012), historian Sir Christopher Clark argued that World War I was not plotted by one lone villain. Instead, fearful monarchs, generals, and diplomats across six capitals walked step by step into a catastrophe none of them truly foresaw.",
+      "cover_image": "/images/great_war/gw1_gr0_nine_sovereigns_windsor_1910.jpg",
+      "cover_caption": "Nine European kings and emperors photographed together in ceremonial uniforms at Windsor Castle on 20 May 1910—four years before war tore their continent apart.",
       "vocabVault": [
         {
           "term": "Sleepwalkers",
-          "def": "Historian Christopher Clark’s metaphor for European leaders in 1914 who walked step-by-step into catastrophe without foreseeing the total war ahead."
+          "pronunciation": "SLEEP-waw-kurz",
+          "def": "Christopher Clark’s metaphor for Europe’s 1914 leaders—watchful and calculating, yet blind to the industrial slaughter their choices would unleash."
         },
         {
-          "term": "Triple Entente & Triple Alliance",
-          "def": "The two rival European alliance blocs before 1914 (Britain, France, and Russia versus Germany, Austria-Hungary, and Italy)."
+          "term": "Otto von Bismarck",
+          "pronunciation": "OT-oh fon BIZ-mark",
+          "def": "Prussian Minister-President and first German Chancellor who unified Germany through \"blood and iron\" between 1864 and 1871."
         },
         {
-          "term": "Blank Cheque",
-          "def": "Germany’s unconditional promise on 5 July 1914 to back Austria-Hungary against Serbia, even if Russia intervened."
+          "term": "Alsace-Lorraine",
+          "pronunciation": "al-SAS loh-RAYN",
+          "def": "Iron-rich eastern French border provinces seized by Germany in 1871, fuelling forty-three years of French bitterness."
         },
         {
-          "term": "Mobilisation",
-          "def": "Calling up millions of reserve soldiers and seizing national railways according to strict military timetables—a step treated as an act of war."
+          "term": "Revanche",
+          "pronunciation": "ruh-VAHNSH",
+          "def": "French for \"revenge\"—the national campaign taught in French schools to recover Alsace-Lorraine from Germany."
         }
       ],
+      "extract": "\"The protagonists of 1914 were sleepwalkers, watchful but unseeing, haunted by dreams, yet blind to the reality of the horror they were about to bring into the world.\"\n\nLook closely at the nine royal cousins posing in gold braid at Windsor Castle in May 1910. Gathered for King Edward VII’s funeral, Britain’s new King George V sits just in front of his cousin, Kaiser Wilhelm II of Germany. Within four summers, their empires would be slaughtering one another across mud and barbed wire.\n\nThe fault line beneath their polished boots had cracked open forty years earlier. On 18 January 1871, after Prussian steel cannon crushed France at Sedan, Chancellor Otto von Bismarck staged a calculated humiliation. Inside the glittering Hall of Mirrors at Versailles—the proudest palace of French kings—German princes crowned Wilhelm I as Emperor of a mighty, unified Germany.\n\nWorse still for peace, Berlin seized the iron-rich border provinces of Alsace and Lorraine. Across France, maps in every village classroom draped those lost lands in black mourning cloth under the cry of revanche. Bismarck spent nineteen years weaving careful treaties with Russia to keep angry France isolated. Once Kaiser Wilhelm II dismissed Bismarck in 1890 and dropped the Russian treaty, however, France allied with Russia—trapping Europe between two armed camps waiting for a spark.",
       "parent_discussion": [
         {
-          "question": "Why does historian Christopher Clark call Europe’s leaders in 1914 \"sleepwalkers\" rather than blaming just one villain?",
-          "answer": "He argues that leaders across several capitals were watchful yet blind to the disaster ahead—making risky bluffs and alliance decisions without realising they were triggering a world war."
+          "question": "What does historian Christopher Clark mean by calling Europe’s 1914 leaders \"sleepwalkers\"?",
+          "answer": "They were wide awake and making bold diplomatic gambles, yet completely blind to the four-year industrial catastrophe their decisions would trigger."
         },
         {
-          "question": "How did defensive alliances and rigid railway plans like the Schlieffen Plan take control away from diplomats?",
-          "answer": "Instead of keeping the peace, alliances acted like tripwires: once Russia mobilised to back Serbia, Germany’s military timetable demanded an immediate strike through Belgium into France."
+          "question": "Why did crowning the German Emperor inside Versailles and seizing Alsace-Lorraine poison European peace after 1871?",
+          "answer": "Humiliating France inside its own royal palace and taking Alsace-Lorraine guaranteed permanent French desire for revenge (revanche)."
         },
         {
-          "question": "What spark in June 1914 set this chain reaction in motion, and why did it spread so fast?",
-          "answer": "The assassination of Archduke Franz Ferdinand in Sarajevo prompted Austria-Hungary—backed by Germany’s \"Blank Cheque\"—to try to crush Serbia, pulling in Russia, Germany, France, and Britain."
+          "question": "Why was Kaiser Wilhelm II’s decision to drop Bismarck’s treaty with Russia in 1890 such a fateful blunder?",
+          "answer": "It drove Tsarist Russia straight into an 1894 military alliance with France, surrounding Germany on both its eastern and western borders."
         }
       ],
-      "short_tab_title": "Clark: The Sleepwalkers (1914)",
-      "cover_caption": "The Nine Sovereigns at Windsor Castle (20 May 1910, photographed by W. & D. Downey): Standing left to right: Haakon VII of Norway, Ferdinand of Bulgaria, Manuel II of Portugal, Kaiser Wilhelm II of Germany, George I of Greece, and Albert I of Belgium; seated: Alfonso XIII of Spain, George V of Great Britain, and Frederick VIII of Denmark."
+      "story_check": [
+        {
+          "question": "Where did Otto von Bismarck stage the coronation of Kaiser Wilhelm I on 18 January 1871?",
+          "options": [
+            "Windsor Castle near London",
+            "The Hall of Mirrors inside France’s Palace of Versailles",
+            "Sarajevo Town Hall",
+            "The Reichstag in Berlin"
+          ],
+          "correctIndex": 1,
+          "feedback": "Crowning the German Kaiser inside Versailles’ Hall of Mirrors inflicted lasting national humiliation on defeated France."
+        },
+        {
+          "question": "Which mineral-rich French border provinces were annexed by Germany in 1871?",
+          "options": [
+            "Bosnia and Herzegovina",
+            "Schleswig and Holstein",
+            "Alsace and Lorraine",
+            "Flanders and Picardy"
+          ],
+          "correctIndex": 2,
+          "feedback": "Losing Alsace-Lorraine fuelled decades of French revanche (desire for recovery and revenge)."
+        },
+        {
+          "question": "What happened soon after Kaiser Wilhelm II dismissed Bismarck in 1890 and let the Russian treaty lapse?",
+          "options": [
+            "France gave up its claim to Alsace-Lorraine",
+            "France and Russia signed a rival military alliance encircling Germany",
+            "Britain dismantled the Royal Navy",
+            "Austria-Hungary joined the Triple Entente"
+          ],
+          "correctIndex": 1,
+          "feedback": "Once Wilhelm II abandoned Russia, France seized the chance to ally with Russia in 1894, creating Bismarck’s two-front nightmare."
+        }
+      ],
+      "monday_cold_call": {
+        "question": "Explain Christopher Clark’s \"sleepwalkers\" metaphor and connect it to what changed in Europe after 1871.",
+        "answer": "After German unification and seizing Alsace-Lorraine split Europe into rival alliances, leaders in 1914 made fearful bluffs without seeing the total war ahead."
+      },
+      "hinge_question": "<strong>Think:</strong> Why were Alsace-Lorraine maps draped in black in French classrooms after 1871?<br><br><strong>Pair:</strong> If Europe’s leaders were \"sleepwalkers\" who misjudged the crisis, does that excuse their responsibility?<br><br><strong>Share:</strong> Why did German unification in 1871 unsettle both France in the west and Russia in the east?",
+      "questions": [
+        "What metaphor does Christopher Clark use for Europe’s leaders in 1914?",
+        "How did the 1871 Versailles ceremony and loss of Alsace-Lorraine affect France?",
+        "What mistake did Kaiser Wilhelm II make after dismissing Bismarck in 1890?"
+      ],
+      "audio_file": "/audio/reading/great_war/r0.mp3",
+      "studio_audio": "/audio/reading/great_war/r0.mp3",
+      "studio_voice_label": "Studio Historian · Christopher Clark"
     },
     {
       "lesson_index": 1,
-      "book_title": "Heart of Darkness",
-      "author": "Joseph Conrad",
-      "cover_image": "/images/great_war/gw1_gr1_joseph_conrad_1904_beresford.jpg",
-      "author_context": "Joseph Conrad was a Polish-British author who worked as a sailor for many years. His 1899 novella 'Heart of Darkness' was based on his own horrifying experiences captaining a steamboat on the Congo River. It is a searing critique of the brutality, greed, and moral corruption of European imperialism in Africa.",
-      "extract": "The conquest of the earth, which mostly means the taking it away from those who have a different complexion or slightly flatter noses than ourselves, is not a pretty thing when you look into it too much. What redeems it is the idea only. An idea at the back of it; not a sentimental pretence but an idea; and an unselfish belief in the idea—something you can set up, and bow down before, and offer a sacrifice to...\n\nI left in a French steamer, and she called in every blamed port they have out there, for, as far as I could see, the sole purpose of landing soldiers and custom-house officers. I watched the coast. Watching a coast as it slips by the ship is like thinking about an enigma. There it is before you—smiling, frowning, inviting, grand, mean, insipid, or savage, and always mute with an air of whispering, 'Come and find out.' This one was almost featureless, as if still in the making, with an aspect of monotonous grimness. The edge of a colossal jungle, so dark-green as to be almost black, fringed with white surf, ran straight, like a ruled line, far, far away along a blue sea whose glitter was blurred by a creeping mist. The sun was fierce, the land seemed to glisten and drip with steam.\n\nNow and then a boat from the shore gave one a momentary contact with reality. It was paddled by black fellows. You could see from afar the white of their eyeballs glistening. They shouted, sang; their bodies streamed with perspiration; they had faces like grotesque masks—these chaps; but they had bone, muscle, a wild vitality, an intense energy of movement, that was as natural and true as the surf along their coast. They wanted no excuse for being there. They were a great comfort to look at. \n\nFor a time I would feel I belonged still to a world of straightforward facts; but the feeling would not last long. Something would turn up to scare it away. Once, I remember, we came upon a man-of-war anchored off the coast. There wasn't even a shed there, and she was shelling the bush. It appears the French had one of their wars going on thereabouts. Her ensign dropped limp like a rag; the muzzles of the long six-inch guns stuck out all over the low hull; the greasy, slimy swell swung her up lazily and let her down, swaying her thin masts. In the empty immensity of earth, sky, and water, there she was, incomprehensible, firing into a continent. Pop, would go one of the six-inch guns; a small flame would dart and vanish, a little white smoke would disappear, a tiny projectile would give a feeble screech—and nothing happened. Nothing could happen. There was a touch of insanity in the proceeding, a sense of lugubrious drollery in the sight; and it was not dissipated by somebody on board assuring me earnestly there was a camp of natives—he called them enemies!—hidden out of sight somewhere.\n\nWe gave her her letters (I heard the men in that lonely ship were dying of fever at the rate of three a day) and went on. We called at some more places with farcical names, where the merry dance of death and trade goes on in a still and earthy atmosphere as of an overheated catacomb; all along the formless coast bordered by dangerous surf, as if Nature herself had tried to ward off intruders; in and out of rivers, streams of death in life, whose banks were rotting into mud, whose waters, thickened into slime, invaded the contorted mangroves, that seemed to writhe at us in the extremity of an impotent despair.",
-      "audio_file": "/audio/reading/great_war/r1.mp3",
-      "questions": [
-        "According to Conrad, what does the 'conquest of the earth' really involve?",
-        "How does the author describe the true motivations of the imperialists?",
-        "Why do you think this text was considered highly controversial when it was published in 1899?"
-      ],
-      "is_adapted": false,
-      "hinge_question": "How does Conrad use the image of the French warship 'firing into a continent' to expose the absurdity and violence of the 'civilizing mission' in Africa?",
-      "source_type": "classic_literature",
-      "source_type_label": "Classic Imperial Literature",
-      "is_primary": false,
-      "studio_audio": "/audio/reading/great_war/r1.mp3",
-      "studio_voice_label": "Edwardian Narrator · Joseph Conrad",
       "lesson_id": "lesson_2",
       "lesson_label": "Enquiry 2",
+      "short_tab_title": "2. Conrad: Heart of Darkness",
+      "literary_mode": "verbatim_literature",
       "provenance_tier": "verbatim_literature",
-      "provenance_note": "Original public-domain passage from Joseph Conrad’s 1899 novella Heart of Darkness critiquing European imperialism in Africa.",
+      "source_type": "classic_literature",
+      "source_type_label": "Classic Imperial Literature (1899)",
+      "is_primary": true,
+      "is_adapted": false,
+      "book_title": "Heart of Darkness: \"Firing into a Continent\" (1899)",
+      "author": "Joseph Conrad (1899)",
+      "provenance_note": "Verbatim public-domain excerpt from Part I of Joseph Conrad’s 1899 novella Heart of Darkness, drawing on his 1890 Congo voyage.",
+      "author_context": "Polish-British sailor and novelist Joseph Conrad captained a river steamer in King Leopold II’s Congo in 1890. His 1899 novella Heart of Darkness stripped away polite European speeches to expose the greed, fever, and absurd violence of the Scramble for Africa.",
+      "cover_image": "/images/great_war/gw1_gr1_joseph_conrad_1904_beresford.jpg",
+      "cover_caption": "Portrait photograph of Polish-British author and former Congo River steamboat captain Joseph Conrad, taken by George Charles Beresford in 1904.",
       "vocabVault": [
         {
           "term": "Imperialism",
-          "def": "When a powerful state conquers and rules overseas territories to seize land, raw materials, and prestige."
+          "pronunciation": "im-PEER-ee-ul-iz-um",
+          "def": "Conquering and ruling overseas lands for raw materials, strategic ports, and national prestige."
         },
         {
           "term": "Man-of-War",
-          "def": "A heavily armed naval warship built to project imperial military power along foreign coastlines."
-        },
-        {
-          "term": "Enigma",
-          "def": "Something mysterious or difficult to understand."
+          "pronunciation": "MAN-uv-WOR",
+          "def": "A heavily armed European warship used to bombard coastal targets and enforce colonial claims."
         },
         {
           "term": "Lugubrious",
-          "def": "Mournful, gloomy, and dismal—used by Conrad to mock the absurd cruelty of a European warship firing blindly into the African forest."
+          "pronunciation": "loo-GOO-bree-us",
+          "def": "Dismal and mournful—used by Conrad to capture the grim absurdity of shelling empty jungle."
+        },
+        {
+          "term": "Weltpolitik",
+          "pronunciation": "VELT-poh-lih-teek",
+          "def": "Kaiser Wilhelm II’s aggressive \"World Policy\" demanding overseas colonies and \"a place in the sun\" for Germany."
         }
       ],
+      "extract": "In 1899, former Congo steamboat captain Joseph Conrad exposed the greed and violence behind Europe’s race for African colonies.\n\n\"The conquest of the earth, which mostly means the taking it away from those who have a different complexion ... is not a pretty thing when you look into it too much. What redeems it is the idea only.\n\n\"I left in a French steamer, and she called in every blamed port they have out there, for, as far as I could see, the sole purpose of landing soldiers and custom-house officers. Once, I remember, we came upon a man-of-war anchored off the coast. There wasn’t even a shed there, and she was shelling the bush. It appears the French had one of their wars going on thereabouts.\n\n\"Her ensign dropped limp like a rag; the muzzles of the long six-inch guns stuck out all over the low hull. In the empty immensity of earth, sky, and water, there she was, incomprehensible, firing into a continent. Pop, would go one of the six-inch guns; a small flame would dart and vanish, a little white smoke would disappear, a tiny projectile would give a feeble screech—and nothing happened. Nothing could happen.\n\n\"There was a touch of insanity in the proceeding, a sense of lugubrious drollery in the sight. Somebody on board assured me earnestly there was a camp of natives—he called them enemies!—hidden out of sight somewhere. We gave her her letters (I heard the men in that lonely ship were dying of fever at the rate of three a day) and went on.\"",
       "parent_discussion": [
         {
-          "question": "In his opening lines, how does Joseph Conrad challenge the claim that European empires were noble \"civilising missions\"?",
-          "answer": "He bluntly describes conquest as taking land away from people with a different appearance, calling it \"not a pretty thing when you look into it too much.\""
+          "question": "How does Conrad’s opening sentence strip away European propaganda about \"civilising\" overseas empires?",
+          "answer": "He bluntly defines imperial conquest as taking land away from people of a different skin colour—calling it \"not a pretty thing when you look into it too much.\""
         },
         {
-          "question": "What is the French warship (\"man-of-war\") doing off the African coast, and why does the narrator call it \"a touch of insanity\"?",
-          "answer": "It is anchored offshore firing six-inch shells blindly into empty jungle at unseen \"enemies\" while its own crew die of fever—accomplishing nothing except senseless destruction."
+          "question": "Why does the narrator see \"a touch of insanity\" in the French warship anchored off the African coast?",
+          "answer": "The warship is firing six-inch shells blindly into empty jungle at unseen \"enemies\" while three sailors a day die of fever aboard."
         },
         {
-          "question": "Why is a novel written in 1899 by a former Congo River steamboat captain useful evidence for studying pre-1914 European empires?",
-          "answer": "Conrad witnessed brutal European resource extraction in the Congo firsthand, revealing the violence and racial arrogance hidden behind imperial propaganda."
+          "question": "How did fierce imperial competition in Africa—like the 1905 and 1911 Moroccan Crises—increase tension inside Europe before 1914?",
+          "answer": "When Kaiser Wilhelm II challenged French control in Morocco at Tangier and Agadir, Britain and France drew closer together in military talks against Germany."
         }
       ],
-      "short_tab_title": "Conrad: Heart of Darkness (1899)",
-      "cover_caption": "Portrait photograph of Polish-British author and former Congo River steamboat captain Joseph Conrad (1857–1924), photographed by George Charles Beresford in 1904."
+      "story_check": [
+        {
+          "question": "What real-life experience inspired Joseph Conrad’s 1899 novella Heart of Darkness?",
+          "options": [
+            "Serving as German ambassador in Morocco",
+            "Captaining a steamboat on the Congo River in 1890",
+            "DesigningHMS Dreadnought in Portsmouth",
+            "Fighting at the Battle of Sedan in 1870"
+          ],
+          "correctIndex": 1,
+          "feedback": "Conrad witnessed brutal European colonial extraction firsthand while commanding a Congo River steamer in 1890."
+        },
+        {
+          "question": "What two groups is the French steamer dropping off at every African coastal port?",
+          "options": [
+            "Doctors and schoolteachers",
+            "Soldiers and custom-house tax officers",
+            " botanists and astronomers",
+            "Railway engineers and miners"
+          ],
+          "correctIndex": 1,
+          "feedback": "Conrad notes bitterly that the steamer landed only soldiers (for force) and custom-house officers (for tax extraction)."
+        },
+        {
+          "question": "What is happening to the crew aboard the French warship shelling the jungle?",
+          "options": [
+            "They are celebrating a treaty victory",
+            "They are dying of tropical fever at the rate of three a day",
+            "They are sailing back to Marseille with gold",
+            "They are repairing telegraph cables"
+          ],
+          "correctIndex": 1,
+          "feedback": "While firing uselessly into the trees, the warship’s own crew are dying of fever at three men a day."
+        }
+      ],
+      "monday_cold_call": {
+        "question": "What image does Joseph Conrad use in Heart of Darkness (1899) to mock European military imperialism in Africa?",
+        "answer": "A French warship anchored off an empty jungle coast firing six-inch shells blindly \"into a continent\" at unseen \"enemies\" while its crew die of fever."
+      },
+      "hinge_question": "<strong>Think:</strong> Why does Conrad point out that the steamer landed only \"soldiers and custom-house officers\"?<br><br><strong>Pair:</strong> How does the warship \"firing into a continent\" expose the reality behind European imperial prestige?<br><br><strong>Share:</strong> How did Kaiser Wilhelm II’s gunboat SMS Panther at Agadir in 1911 backfire on Germany?",
+      "questions": [
+        "How does Conrad define \"the conquest of the earth\" in his opening line?",
+        "What is the French man-of-war doing off the African coast?",
+        "Why does the narrator call the shelling \"a touch of insanity\"?"
+      ],
+      "audio_file": "/audio/reading/great_war/r1.mp3",
+      "studio_audio": "/audio/reading/great_war/r1.mp3",
+      "studio_voice_label": "Edwardian Narrator · Joseph Conrad"
     },
     {
       "lesson_index": 2,
-      "book_title": "The Riddle of the Sands",
-      "author": "Erskine Childers",
-      "cover_image": "/images/great_war/gw1_gr2_riddle_of_the_sands_1903_chart.jpg",
-      "author_context": "Erskine Childers was a British author and sailor. Published in 1903, 'The Riddle of the Sands' is considered the first modern spy novel. It fueled British paranoia about a surprise German naval invasion, perfectly capturing the intense public anxiety surrounding the Anglo-German naval arms race.",
-      "extract": "It was a glorious, breezy morning, and the waters of the Frisian coast danced and sparkled in the brilliant sunshine. We had brought the 'Dulcibella' through the tricky channels behind the islands, navigating the intricate maze of sandbanks that guarded the German shore. To the casual observer, we were merely a pair of eccentric English yachtsmen indulging in a late summer cruise among the desolate, mud-strewn estuaries of the North Sea. But beneath the facade of our holiday, a dark and terrifying suspicion had taken root in our minds—a suspicion that had driven us into these treacherous, shifting waters.\n\nAs we dropped anchor in a narrow, desolate gut behind the island of Memmert, Davies stood by the mast, sweeping the horizon with his binoculars. The coastline here was a bleak, monotonous stretch of flat sand and grey water, seemingly devoid of human life. Yet, it was precisely this desolate emptiness that made it so perfect for a secret of such colossal magnitude. For weeks, we had been piecing together a puzzle made of innocuous clues: a tugboat operating where it had no business being, a mysterious salvage operation that recovered nothing, and the relentless, almost obsessive secrecy of a certain Herr Dollmann, an Englishman turned traitor in the service of the Kaiser.\n\n'Look there,' Davies said quietly, handing me the glasses and pointing towards the mainland. 'Just past the spit of sand. Do you see it?'\n\nI squinted through the lenses. At first, there was nothing but the grey blur of the tidal flats. Then, as my eyes adjusted, I saw them. Not fishing boats, not merchantmen, but long, low shapes moving with mechanical precision through a dredged channel that did not exist on any of our Admiralty charts. They were lighters—massive, flat-bottomed barges designed for carrying troops and heavy equipment. There were dozens of them, moored in a hidden basin, sheltered from the open sea and completely invisible from the standard shipping lanes.\n\nThe blood ran cold in my veins as the pieces of the terrible puzzle finally snapped into place. This was no innocent coastal defense project. The German Empire, cramped within its landlocked borders and burning with imperial ambition, was not merely building a High Seas Fleet to challenge our dreadnoughts in open battle. They were preparing something far more insidious, something that struck directly at the heart of our island security.\n\nBehind the barrier of these Frisian islands, protected by the shifting sands and the treacherous tides, a vast, secret invasion force was being assembled. These hidden channels, newly deepened by relentless dredging, were designed to allow a flotilla of troop-carrying barges to slip out into the North Sea under the cover of darkness or a thick sea fog. They would bypass the mighty guns of the Royal Navy and strike a sudden, paralyzing blow on the unprotected eastern shores of England. \n\nWe were sitting in the very nerve center of a meticulously organized naval conspiracy. The Kaiser's Germany was preparing to leap the moat. We alone held the secret, and our tiny, fragile yacht was the only thing standing between the oblivious British public and a sudden, catastrophic war. The riddle of the sands had been solved, but the true terror of what it meant for the future of our nation was only just beginning.",
-      "audio_file": "/audio/reading/great_war/r2.mp3",
-      "questions": [
-        "What secret threat did the narrator believe they had discovered?",
-        "According to the extract, why was the German Empire building its fleet?",
-        "How would reading a popular thriller like this have affected the British public's attitude toward Germany?"
-      ],
-      "is_adapted": true,
-      "hinge_question": "If 'The Riddle of the Sands' was a fictional novel, why do you think it caused such real-world panic and paranoia among the British public regarding the German Navy?",
-      "source_type": "classic_literature",
-      "source_type_label": "Edwardian Invasion Literature (1903)",
-      "is_primary": false,
-      "studio_audio": "/audio/reading/great_war/r2.mp3",
-      "studio_voice_label": "Edwardian Yachtsman · Erskine Childers",
       "lesson_id": "lesson_3",
       "lesson_label": "Enquiry 3",
-      "provenance_tier": "scholarly_summary",
-      "provenance_note": "Adapted KS3 narrative retelling of Erskine Childers’s 1903 invasion thriller The Riddle of the Sands, illustrating Anglo-German naval rivalry.",
+      "short_tab_title": "3. Childers: Frisian Fog",
+      "literary_mode": "verbatim_literature",
+      "provenance_tier": "verbatim_literature",
+      "source_type": "classic_literature",
+      "source_type_label": "Edwardian Spy & Invasion Novel (1903)",
+      "is_primary": true,
+      "is_adapted": false,
+      "book_title": "The Riddle of the Sands: In the Fog of the Frisian Channels (1903)",
+      "author": "Erskine Childers (1903)",
+      "provenance_note": "Authentic public-domain excerpts from Erskine Childers’s 1903 spy thriller The Riddle of the Sands (Chapters XXI–XXII & Epilogue).",
+      "author_context": "British yachtsman Erskine Childers sailed the muddy North Sea flats of northern Germany himself before publishing The Riddle of the Sands in 1903. His bestselling thriller captured British dread over Admiral Tirpitz’s expanding German Navy—even prompting the Admiralty to build new North Sea bases.",
+      "cover_image": "/images/great_war/gw1_gr2_riddle_of_the_sands_1903_chart.jpg",
+      "cover_caption": "Original 1903 folding naval chart from the first edition of Erskine Childers’s The Riddle of the Sands, mapping the German East Frisian sandbanks opposite eastern England.",
       "vocabVault": [
         {
-          "term": "Flotilla",
-          "def": "A fleet of smaller naval vessels or troop-carrying barges operating together."
+          "term": "Frisian Islands",
+          "pronunciation": "FREE-zhun EYE-lundz",
+          "def": "The chain of low sandbank islands and tidal channels along Germany’s North Sea coast."
         },
         {
-          "term": "Lighters",
-          "def": "Large, flat-bottomed barges designed to carry soldiers and heavy equipment across shallow coastal waters."
+          "term": "Seagoing Lighters",
+          "pronunciation": "SEE-goh-ing LYE-turz",
+          "def": "Huge flat-bottomed barges capable of carrying hundreds of troops across shallow coastal waters."
         },
         {
-          "term": "Dreadnought",
-          "def": "A revolutionary, heavily armed British battleship class launched in 1906 that sparked an intense naval arms race with Germany."
+          "term": "Binnacle Lamp",
+          "pronunciation": "BIN-uh-kul lamp",
+          "def": "A hooded ship’s light illuminating the steering compass at night without giving away the yacht’s position."
         },
         {
-          "term": "Invasion Literature",
-          "def": "Popular Edwardian spy and war novels warning that rival powers—especially Imperial Germany—were secretly planning to invade Britain."
+          "term": "HMS Dreadnought",
+          "pronunciation": "aych-em-ess DRED-nawt",
+          "def": "Britain’s revolutionary 1906 all-big-gun turbine battleship that escalated the Anglo-German naval arms race."
         }
       ],
+      "extract": "In Erskine Childers’s bestselling 1903 thriller The Riddle of the Sands, young British yachtsmen Davies and Carruthers grope through thick North Sea fog behind the German island of Memmert to spy on secret coastal channels.\n\n\"’We must cross the See Gat and strike that boomed channel, the Memmert Balje. Strike it, freeze on to it—can’t cut off an inch—and pass that watershed before it’s too late. It’s an infernally bad one, I can see. Not even a dinghy will cross it for an hour each side of low water.’\n\n\"’What about getting back?’\n\n\"’We shall have a rising tide, anyway. If the fog lasts—can you manage in a fog and dark?’\n\n\"’The dark makes it no more difficult, if we’ve a light to see the compass and chart by. You trim the binnacle lamp—no, the riding-light. Now give me the scissors, and don’t speak a word for ten minutes. Meanwhile, think it out, and load the dinghy—by Jove! though, don’t make a sound.’\"\n\nStowing away in the mist, Carruthers uncovers the Kaiser’s secret invasion rehearsal—explained in the novel’s closing memorandum.\n\n\"[The plan is] to despatch an army of infantry ... in big seagoing lighters, towed by powerful, shallow-draught tugs, under escort of a squadron of warships. Multitudes of seagoing lighters, carrying full loads of soldiers, not half loads of coals, should issue simultaneously from seven shallow outlets. Under escort of the Imperial Navy, they would traverse the North Sea and throw themselves bodily upon English shores.\"",
       "parent_discussion": [
         {
-          "question": "What secret discovery do the two British yachtsmen make among the German sandbanks in this story?",
-          "answer": "They spot hidden, newly dredged channels packed with flat-bottomed troop barges (\"lighters\") assembled for a surprise sea invasion of eastern England."
+          "question": "How does Childers build tension as Davies and Carruthers prepare their dinghy behind the German sandbanks?",
+          "answer": "They must navigate treacherous tidal flats in thick fog and darkness by a hooded lamp without making a single sound."
         },
         {
-          "question": "Even though The Riddle of the Sands (1903) is a spy novel rather than a real battle report, what real historical fear does it reveal?",
-          "answer": "It captures intense British anxiety over Kaiser Wilhelm II’s expanding German Navy—a fear so strong that the Royal Navy actually built new North Sea bases soon after the book appeared."
+          "question": "What secret threat hidden behind the Frisian islands do the two British yachtsmen uncover?",
+          "answer": "Seven fleets of flat-bottomed troop barges (\"lighters\") towed by shallow tugs, rehearsing to cross the North Sea and invade eastern England."
         },
         {
-          "question": "How could popular invasion stories and newspaper scares make war between Britain and Germany more likely by 1914?",
-          "answer": "They fuelled public suspicion and pressure on politicians to build ever more warships, deepening mutual distrust between the two countries."
+          "question": "Why is a fictional 1903 spy thriller valuable historical evidence for studying the Anglo-German naval arms race?",
+          "answer": "It reveals deep British public and Admiralty anxiety over Kaiser Wilhelm II’s Navy Laws—fuelling public demand for ”We want eight and we won’t wait!” Dreadnoughts."
         }
       ],
-      "short_tab_title": "Childers: Riddle of the Sands",
-      "cover_caption": "Original 1903 naval folding chart (\"General Map to illustrate the cruise of the Dulcibella, and matters relating thereto\") from the first edition of Erskine Childers’s spy novel The Riddle of the Sands, mapping the German East Frisian Islands across the North Sea."
+      "story_check": [
+        {
+          "question": "Under what weather conditions do Davies and Carruthers slip across the Memmert channel to spy?",
+          "options": [
+            "Blazing midsummer sunshine",
+            "Thick North Sea fog and gathering darkness",
+            "A Caribbean hurricane",
+            "Mediterranean calm"
+          ],
+          "correctIndex": 1,
+          "feedback": "Davies asks whether Carruthers can steer by compass light through thick coastal fog and darkness without making a sound."
+        },
+        {
+          "question": "What were the \"seagoing lighters\" secretly rehearsing to carry across the North Sea?",
+          "options": [
+            "Full loads of German invasion soldiers instead of coal",
+            "Australian Merino wool bales",
+            "Timber for Portsmouth Dockyard",
+            "Grain from Tsarist Russia"
+          ],
+          "correctIndex": 0,
+          "feedback": "The secret plan packed flat-bottomed lighters with infantry troops towed by tugs from seven shallow German outlets."
+        },
+        {
+          "question": "How did the British Admiralty react in real life after The Riddle of the Sands became a sensation in 1903?",
+          "options": [
+            "It scrapped its battleships",
+            "It shifted naval focus to the North Sea, built new Scottish naval bases, and launched HMS Dreadnought in 1906",
+            "It signed a naval alliance with Berlin",
+            "It closed the English Channel"
+          ],
+          "correctIndex": 1,
+          "feedback": "Growing fear of Admiral Tirpitz’s High Seas Fleet led Britain to establish North Sea bases like Rosyth and launch HMS Dreadnought (1906)."
+        }
+      ],
+      "monday_cold_call": {
+        "question": "How did Erskine Childers’s 1903 spy novel The Riddle of the Sands both reflect and intensify Anglo-German naval rivalry?",
+        "answer": "Its plot about hidden German troop barges in the Frisian fog mirrored British fear of Germany’s Navy Laws and whipped up public support for building Dreadnoughts."
+      },
+      "hinge_question": "<strong>Think:</strong> Why couldn’t big Royal Navy battleships easily enter the shallow Frisian sandbanks?<br><br><strong>Pair:</strong> Why did Germany’s naval build-up frighten island Britain far more than Germany’s large army did?<br><br><strong>Share:</strong> How can popular novels and newspaper scares help push rival nations closer to real war?",
+      "questions": [
+        "What navigation challenge do Davies and Carruthers face off Memmert?",
+        "What secret plan involving \"seagoing lighters\" does Carruthers uncover?",
+        "Why did Anglo-German naval rivalry alarm British voters so deeply?"
+      ],
+      "audio_file": "/audio/reading/great_war/r2.mp3",
+      "studio_audio": "/audio/reading/great_war/r2.mp3",
+      "studio_voice_label": "Edwardian Yachtsman · Erskine Childers"
     },
     {
       "lesson_index": 3,
-      "book_title": "The Guns of August",
-      "author": "Barbara W. Tuchman",
-      "cover_image": "/images/great_war/gw1_gr3_dicke_bertha_howitzer_august_1914.jpg",
-      "author_context": "Barbara W. Tuchman was an American historian who won the Pulitzer Prize for 'The Guns of August' (1962). The book masterfully details the political calculations, military plans, and sheer arrogance of the Great Powers in the fateful month of August 1914 as the alliance system dragged them all into war.",
-      "extract": "The nations of Europe in the summer of 1914 were bound together by a series of treaties that were ostensibly designed for mutual defense. The theory behind these grand alliances was deterrence: if every major power was allied with another, the cost of aggression would be too high, and peace would be preserved. However, in reality, these treaties functioned not as safety nets, but as highly sensitive tripwires. The continent had become a rigid, inflexible machine, where a single spark could ignite the entire mechanism and drag millions into an unavoidable conflict. \n\nWhen the Archduke Franz Ferdinand was assassinated in the dusty streets of Sarajevo, the first of these tripwires was snapped. Austria-Hungary, determined to crush the irritating threat of Serbian nationalism, looked to its powerful ally, Germany, for support. The German Kaiser issued the infamous 'blank cheque,' a promise of unconditional backing that emboldened the Austrians to issue an ultimatum they knew Serbia could never fully accept. The localized crisis in the Balkans immediately began to pull the great powers into its gravitational vortex. \n\nRussia, presenting itself as the traditional protector of the Slavic people, felt compelled to stand by Serbia. But Russia’s vast size was its greatest weakness; its army was massive but agonizingly slow to gather. To have any hope of fighting effectively, the Russian Tsar had to order mobilization immediately, long before diplomacy had run its course. Once the Tsar gave the order, the fatal clockwork of the alliance system took over. \n\nMobilization in 1914 was not merely the calling up of reserves; it was an irrevocable step toward war. It meant the requisitioning of thousands of trains, the locking down of national borders, and the execution of highly detailed, down-to-the-minute railway timetables. For Germany, Russian mobilization triggered a terrifying strategic nightmare. Wedged between a hostile Russia to the east and a vengeful France to the west, the German military had devised the Schlieffen Plan. This plan dictated that Germany must immediately attack and defeat France in a lightning campaign of six weeks before the lumbering Russian army could reach the German borders. \n\nTherefore, when Russia mobilized, Germany could not wait. The German high command, terrified of fighting a two-front war, informed the civilian government that military necessity must now dictate political action. They declared war on Russia, but, bound by the rigid logic of the Schlieffen Plan, their armies immediately marched in the opposite direction—invading neutral Belgium to strike at France. \n\nThis violation of Belgian neutrality was the final tripwire. It outraged British public opinion and compelled the British Empire, tied to France and Russia by the Triple Entente, to declare war on Germany. In a matter of days, the entire continent had been plunged into disaster. The diplomats and politicians, who had spent the month of July sending frantic telegrams and attempting to bluff their way to victory, suddenly found themselves entirely powerless. The moment the mobilization orders were signed, control was handed over to the generals and their railway timetables. The statesmen of Europe had built a machine of alliances they believed would keep the peace, but once the gears started turning, it proved to be a machine of industrial slaughter that none of them could stop.",
-      "audio_file": "/audio/reading/great_war/r3.mp3",
-      "questions": [
-        "Why does the author describe the defensive alliances as 'tripwires'?",
-        "What metaphor is used to describe the outbreak of the war?",
-        "According to the text, why were the diplomats unable to stop the war once it started?"
-      ],
-      "is_adapted": true,
-      "hinge_question": "How did the sheer speed and rigid timing of military mobilization plans like the Schlieffen Plan make a diplomatic solution almost impossible during the July Crisis?",
-      "source_type": "historical_scholarship",
-      "source_type_label": "Classic Historical Scholarship",
-      "is_primary": false,
-      "studio_audio": "/audio/reading/great_war/r3.mp3",
-      "studio_voice_label": "Studio Historian · Barbara W. Tuchman",
       "lesson_id": "lesson_4",
       "lesson_label": "Enquiry 4",
-      "provenance_tier": "scholarly_summary",
-      "provenance_note": "Classroom summary of historian Barbara W. Tuchman’s argument in The Guns of August (1962) on alliances and railway timetables.",
+      "short_tab_title": "4. Wrong Turn in Sarajevo",
+      "literary_mode": "storied_micro_history",
+      "provenance_tier": "storied_micro_history",
+      "source_type": "micro_history",
+      "source_type_label": "True Historical Story (28 June 1914)",
+      "is_primary": false,
+      "is_adapted": false,
+      "book_title": "Outside Schiller’s Delicatessen: Chauffeur Lojka’s Wrong Turn in Sarajevo (28 June 1914)",
+      "author": "The History Revision Hub · Historical Story (28 June 1914)",
+      "provenance_note": "Original true micro-history reconstructing the verified minute-by-minute events of 28 June 1914 in Sarajevo from Austro-Hungarian trial and police records.",
+      "author_context": "By 1914, south-eastern Europe was nicknamed the \"Balkan Powder Keg\" as Slavic nationalism clashed with Austria-Hungary. On 28 June 1914 in Sarajevo, a failed bomb attack, a botched route change, and one wrong turn placed history’s deadliest spark at a teenager’s feet.",
+      "cover_image": "/images/great_war/gw1_l5_b0_franz_ferdinand_sarajevo_car_1914.jpg",
+      "cover_caption": "W. Tausch’s photograph taken in Sarajevo on the morning of 28 June 1914 showing Archduke Franz Ferdinand and Duchess Sophie stepping into their open Gräf & Stift car minutes before the shooting.",
       "vocabVault": [
         {
-          "term": "Deterrence",
-          "def": "The theory that building strong alliances and armies will scare rivals away from attacking—though in 1914 it failed disastrously."
+          "term": "Sarajevo",
+          "pronunciation": "sar-uh-YAY-voh",
+          "def": "Capital city of Bosnia-Herzegovina (annexed by Austria-Hungary in 1908), visited by Franz Ferdinand on 28 June 1914."
         },
         {
-          "term": "Ultimatum",
-          "def": "A final set of harsh demands backed by the threat of immediate war if not accepted."
+          "term": "Leopold Lojka",
+          "pronunciation": "LAY-oh-pold LOY-kuh",
+          "def": "The Czech chauffeur driving Archduke Franz Ferdinand’s car who was never clearly told that the return route had changed."
         },
         {
-          "term": "Schlieffen Plan",
-          "def": "Germany’s pre-war military plan to avoid fighting on two fronts by knocking out France quickly through neutral Belgium before turning east against Russia."
+          "term": "Gavrilo Princip",
+          "pronunciation": "gav-REE-loh PRIN-tsip",
+          "def": "Nineteen-year-old Bosnian Serb nationalist armed by Belgrade’s Black Hand society who assassinated the Archduke."
         },
         {
-          "term": "Belgian Neutrality",
-          "def": "Belgium’s internationally guaranteed status as a non-fighting country (protected by an 1839 treaty), whose violation brought Britain into the war."
+          "term": "Oskar Potiorek",
+          "pronunciation": "OS-kar pot-ee-OR-ek",
+          "def": "Austro-Hungarian military governor of Bosnia who shouted to halt the car right beside Princip."
         }
       ],
+      "extract": "On the bright Sunday morning of 28 June 1914, six teenage Bosnian Serb conspirators armed by Belgrade’s secret \"Black Hand\" society waited along the riverfront Appel Quay in Sarajevo. At 10:10 a.m., Nedeljko Čabrinović hurled a hand bomb toward Archduke Franz Ferdinand’s open green-and-black touring car. The bomb bounced off the folded canvas hood and exploded beneath the car behind, injuring twenty people.\n\nShaken yet unhurt, the Austro-Hungarian heir insisted on driving to Sarajevo Hospital after a tense reception at Town Hall to visit his wounded officers. To keep the royal couple safe, officials hastily decided to speed straight along the wide riverside quay, avoiding the crowded city centre. Nobody, however, clearly explained that change of plan to Czech chauffeur Leopold Lojka.\n\nAt 10:45 a.m., reaching the Latin Bridge, Lojka dutifully followed the original morning schedule and swung right into narrow Franz Josef Street—just past Moritz Schiller’s corner delicatessen.\n\n\"What is this? This is the wrong way!\" shouted Governor Oskar Potiorek from inside the car. \"Drive straight down the Appel Quay!\"\n\nLojka pressed the brake pedal hard to wrestle the heavy Gräf & Stift car into reverse gear. Five feet away on the pavement stood nineteen-year-old assassin Gavrilo Princip, bewildered to see his lost target roll to a dead stop right beside him. Princip stepped to the running board and fired two Browning pistol shots—killing Sophie and Franz Ferdinand, and snapping the alliance tripwires of Europe.",
       "parent_discussion": [
         {
-          "question": "Why did alliances meant to act as \"safety nets\" behave more like \"tripwires\" in July 1914?",
-          "answer": "Because every great power was bound to support its allies, a local Balkan clash between Austria-Hungary and Serbia rapidly dragged Russia, Germany, France, and Britain into war."
+          "question": "What tiny chain of human mistakes placed Archduke Franz Ferdinand stationary five feet in front of Gavrilo Princip?",
+          "answer": "Officials changed the route after the 10:10 a.m. bomb attack without briefing chauffeur Leopold Lojka, who turned at the Latin Bridge and stalled outside Schiller’s shop when ordered to reverse."
         },
         {
-          "question": "Why did Russia’s huge geography force the Tsar to order mobilisation early, and how did Germany react?",
-          "answer": "Russia’s army took weeks to gather across vast distances, yet the moment Russia mobilised, Germany felt forced to launch the Schlieffen Plan before Russia grew ready."
+          "question": "If Leopold Lojka had driven straight past the Latin Bridge on 28 June 1914, would Europe definitely have stayed at peace forever?",
+          "answer": "Not necessarily—fierce Balkan nationalism, rival alliances, naval dread, and rigid railway war plans had already packed Europe with gunpowder waiting for a crisis."
         },
         {
-          "question": "Why did Germany’s march into Belgium prove to be the final trigger for Britain declaring war?",
-          "answer": "Belgium was a neutral country whose safety Britain had promised to uphold, so invading Belgium outraged British opinion and united Parliament for war."
+          "question": "How did two pistol shots in Bosnia drag Russia, Germany, France, and Britain into war within five weeks?",
+          "answer": "Backed by Germany’s \"Blank Cheque,\" Austria-Hungary attacked Serbia, prompting Russia to mobilise, which triggered Germany’s Schlieffen Plan invasion of Belgium and France."
         }
       ],
-      "short_tab_title": "Tuchman: The Guns of August",
-      "cover_caption": "German artillery crew manning a giant Krupp 42 cm \"Big Bertha\" (Dicke Bertha) siege howitzer before the Belgian fortress of Liège in August 1914—the literal \"Guns of August\" chronicled by Barbara W. Tuchman."
+      "story_check": [
+        {
+          "question": "What happened at 10:10 a.m. in Sarajevo before Franz Ferdinand reached Town Hall?",
+          "options": [
+            "Gavrilo Princip shot the car’s tyres",
+            "A conspirator’s bomb bounced off the Archduke’s car hood and exploded under the vehicle behind",
+            "Serbian cavalry blocked the Latin Bridge",
+            "Heavy rain cancelled the parade"
+          ],
+          "correctIndex": 1,
+          "feedback": "Čabrinović’s bomb bounced off the folded hood and wounded bystanders behind, prompting the Archduke’s fatal hospital visit."
+        },
+        {
+          "question": "Why did chauffeur Leopold Lojka turn right off the Appel Quay beside the Latin Bridge at 10:45 a.m.?",
+          "options": [
+            "He was secretly working for the Black Hand",
+            "No one had briefed him that the original city-centre route had been cancelled",
+            "The riverside bridge had collapsed",
+            "He stopped to buy food at Schiller’s shop"
+          ],
+          "correctIndex": 1,
+          "feedback": "Officials forgot to inform Lojka of the emergency route change, so he followed the original turn onto Franz Josef Street."
+        },
+        {
+          "question": "Where was nineteen-year-old Gavrilo Princip standing when Governor Potiorek yelled at Lojka to stop and reverse?",
+          "options": [
+            "Inside Sarajevo Town Hall",
+            "Five feet away on the pavement outside Moritz Schiller’s delicatessen",
+            "At Belgrade railway station",
+            "On the roof of Sarajevo Hospital"
+          ],
+          "correctIndex": 1,
+          "feedback": "Princip happened to be standing outside Schiller’s corner delicatessen right where Lojka braked to reverse."
+        }
+      ],
+      "monday_cold_call": {
+        "question": "How did chauffeur Leopold Lojka’s wrong turn outside Schiller’s delicatessen turn a failed plot into a world crisis?",
+        "answer": "Never told of the changed route, Lojka turned onto Franz Josef Street and braked to reverse five feet from Gavrilo Princip, whose two shots triggered the July Crisis."
+      },
+      "hinge_question": "<strong>Think:</strong> Distinguish the \"spark\" (28 June 1914) from the \"powder keg\" underneath it.<br><br><strong>Pair:</strong> Why did Austria-Hungary wait until receiving Germany’s 5 July \"Blank Cheque\" before confronting Serbia?<br><br><strong>Share:</strong> Can a single chance moment change world history if long-term causes are already primed?",
+      "questions": [
+        "Why did Franz Ferdinand insist on getting back into his open car after leaving Sarajevo Town Hall?",
+        "What mistake brought the royal car to a halt outside Moritz Schiller’s delicatessen?",
+        "Who fired the two fatal shots, and which secret group had armed him?"
+      ],
+      "audio_file": "/audio/reading/great_war/r3.mp3",
+      "studio_audio": "/audio/reading/great_war/r3.mp3",
+      "studio_voice_label": "Studio Historian · Sarajevo Micro-Story"
     },
     {
       "lesson_index": 4,
-      "book_title": "All Quiet on the Western Front",
-      "author": "Erich Maria Remarque",
-      "cover_image": "/images/great_war/gw1_gr4_german_assault_soldier_western_front_nara.jpg",
-      "author_context": "Erich Maria Remarque was a German veteran of World War I. His 1929 novel 'All Quiet on the Western Front' became a defining anti-war masterpiece, detailing the extreme physical and mental trauma of the trenches, and the profound disillusionment of a generation. It was so powerful that it was later banned and burned by the Nazi regime.",
-      "extract": "We were eighteen years old, and we had only just begun to love life and the world; and we had to shoot it to pieces. Before the war, our lives were filled with the ordinary concerns of youth—school, parents, hobbies, and the vague, distant promises of the future. But all of that was swept away in a sudden, overwhelming tide of national fervor. The older generation, the men who sat comfortably in their armchairs and read the newspapers, told us it was our glorious duty to defend the Fatherland. They spoke of the Fatherland as if it were a beautiful, fragile thing that required our immediate sacrifice, and we, in our naive enthusiasm, believed them.\n\nThe most persuasive of these voices belonged to our schoolmaster, Kantorek. He was a small, stern man who used to glare at us through his spectacles, pacing in front of the chalkboard. During drill-time, Kantorek gave us long, impassioned lectures about the honor of wearing the uniform and the sacred duty of the German soldier. He spoke of heroism and glory with such conviction that the whole of our class went, under his shepherding, straight to the District Commandant and volunteered. I can see him now, his voice trembling with emotion as he asked, 'Won't you join up, Comrades?' \n\nWe were all at once terribly earnest. We marched out of the school gates feeling like men, ready to shoulder the destiny of the empire. No one had the vaguest idea what we were actually in for. The word 'war' was an abstract concept to us, a glorious adventure gleaned from history books and patriotic poetry. We pictured cavalry charges, gleaming medals, and a swift, victorious return home before the leaves fell from the trees. Kantorek called us the 'Iron Youth,' a phrase that made us stand a little taller and puff out our chests, completely unaware of the grim irony it would soon hold. \n\nIt was only when we reached the training camps, and later the muddy, rat-infested trenches of the Western Front, that the glittering facade of duty and glory was violently stripped away. The first bombardment showed us our mistake, and under it the world as they had taught it to us broke in pieces. We realized that the authority of our teachers and parents, the people who were supposed to guide us into the world, was a lie. They had sent us out into a storm of steel with high-sounding words, but they had no conception of the reality of modern, industrial slaughter. \n\nOut here in the mud, nobody cared about the 'Fatherland' or the grand political arguments of the Kaiser. We fought simply to survive, driven by instinct and a desperate loyalty to the men standing next to us in the trench. We had become a wasteland. The older men might have wives, children, and occupations to return to, a solid foundation built before the war. But for us, the young men of eighteen, the war was our only education. We were a generation of men who, even though they may have escaped shells, were destroyed by the war.",
-      "audio_file": "/audio/reading/great_war/r4.mp3",
-      "questions": [
-        "Who was Kantorek, and what did he persuade the entire class to do?",
-        "How did the adults, like teachers, use the idea of 'duty' or 'comradeship' to pressure young men?",
-        "How does this extract help explain the incredible surge of Nationalism and volunteering at the outbreak of the war?"
-      ],
-      "is_adapted": true,
-      "hinge_question": "Why does the narrator argue that the older generation and teachers like Kantorek betrayed the 'Iron Youth' of Germany?",
-      "source_type": "classic_literature",
-      "source_type_label": "Classic Anti-War Literature (Adapted)",
-      "is_primary": false,
-      "studio_audio": "/audio/reading/great_war/r4.mp3",
-      "studio_voice_label": "Paul Bäumer · Young German Soldier",
       "lesson_id": "lesson_5",
       "lesson_label": "Enquiry 5",
-      "provenance_tier": "scholarly_summary",
-      "provenance_note": "Classroom literary companion introducing the themes of Erich Maria Remarque’s 1929 anti-war novel All Quiet on the Western Front.",
+      "short_tab_title": "5. Brooke vs Sassoon",
+      "literary_mode": "verbatim_literature",
+      "provenance_tier": "verbatim_literature",
+      "source_type": "classic_verse",
+      "source_type_label": "1914 Patriotic Sonnet vs 1918 Trench Verse",
+      "is_primary": true,
+      "is_adapted": false,
+      "book_title": "1914 Illusion vs Trench Reality: \"The Soldier\" (1914) & \"Suicide in the Trenches\" (1918)",
+      "author": "Rupert Brooke (1914) & Siegfried Sassoon (1918)",
+      "provenance_note": "Verbatim public-domain lines from Rupert Brooke’s 1914 sonnet \"The Soldier\" contrasted with Siegfried Sassoon’s complete 1918 poem \"Suicide in the Trenches.\"",
+      "author_context": "When war broke out in August 1914, young poet Rupert Brooke captured idealistic patriotic pride before dying of blood poisoning en route to Gallipoli in 1915. After enduring Somme and Arras mud as a decorated infantry officer, Siegfried Sassoon answered home-front cheering with blistering anger in 1918.",
+      "cover_image": "/images/great_war/gw1_gr4_german_assault_soldier_western_front_nara.jpg",
+      "cover_caption": "Young frontline infantrymen in steel helmets carrying slung rifles, grenade bags, and water canteens on the mud of the Western Front (National Archives).",
       "vocabVault": [
         {
-          "term": "Fatherland",
-          "def": "A patriotic term for one’s native country (used especially in Germany) invoked by politicians and teachers to urge young men to enlist."
+          "term": "Rupert Brooke",
+          "pronunciation": "ROO-purt BROOK",
+          "def": "Idealistic English poet whose late-1914 war sonnets celebrated noble sacrifice before he saw trench combat."
         },
         {
-          "term": "Iron Youth",
-          "def": "Schoolmaster Kantorek’s proud patriotic nickname for his teenage pupils—which turned bitterly ironic amid industrial trench slaughter."
+          "term": "Siegfried Sassoon",
+          "pronunciation": "SEEG-freed suh-SOON",
+          "def": "Decorated Royal Welch Fusiliers officer whose fierce 1917–1918 poems exposed trench horror and civilian complacency."
         },
         {
-          "term": "Bombardment",
-          "def": "A continuous, heavy attack using explosive artillery shells against enemy trenches."
+          "term": "Crumps",
+          "pronunciation": "KRUMPS",
+          "def": "Soldiers’ trench slang for heavy high-explosive German shells, named after the deep thudding sound of their blast."
         },
         {
           "term": "Disillusionment",
-          "def": "The painful loss of early patriotic illusions once soldiers experienced the reality of mud, shells, and mass casualties."
+          "pronunciation": "dis-ih-LOO-zhun-munt",
+          "def": "The bitter collapse of 1914 romantic ideals once soldiers faced industrial artillery, mud, lice, and trauma."
         }
       ],
+      "extract": "When Europe marched to war in late 1914, twenty-seven-year-old volunteer Rupert Brooke welcomed combat as a joyful moral cleansing and peaceful sacrifice. Three winters later, decorated frontline officer Siegfried Sassoon answered cheering crowds at home with the grim truth of the trenches.\n\n<div class=\"reading-stanza\"><em>Rupert Brooke, \"The Soldier\" (1914):</em><br>If I should die, think only this of me:<br>That there’s some corner of a foreign field<br>That is for ever England. There shall be<br>In that rich earth a richer dust concealed.<br>Her sights and sounds; dreams happy as her day;<br>And laughter, learnt of friends; and gentleness,<br>In hearts at peace, under an English heaven.</div>\n\n<div class=\"reading-stanza\"><em>Siegfried Sassoon, \"Suicide in the Trenches\" (1918):</em><br>I knew a simple soldier boy<br>Who grinned at life in empty joy,<br>Slept soundly through the lonesome dark,<br>And whistled early with the lark.</div>\n\n<div class=\"reading-stanza\">In winter trenches, cowed and glum,<br>With crumps and lice and lack of rum,<br>He put a bullet through his brain.<br>No one spoke of him again.</div>\n\n<div class=\"reading-stanza\">You smug-faced crowds with kindling eye<br>Who cheer when soldier lads march by,<br>Sneak home and pray you’ll never know<br>The hell where youth and laughter go.</div>\n\nRead aloud side by side, these famous verses trace the arc of a whole European generation. Patriotic dreams of August 1914 dissolved in winter mud, lice, and industrial artillery.",
       "parent_discussion": [
         {
-          "question": "How did schoolmaster Kantorek persuade his eighteen-year-old pupils to volunteer for the army?",
-          "answer": "He lectured them passionately about honour, glory, and patriotic duty to the Fatherland until the entire class marched down together to enlist."
+          "question": "Compare the final line of Brooke’s sonnet with the final line of Sassoon’s poem: how do both poets use the word \"laughter\" in opposite ways?",
+          "answer": "Brooke imagines peaceful \"laughter, learnt of friends ... under an English heaven,\" whereas Sassoon shows trenches as \"The hell where youth and laughter go.\""
         },
         {
-          "question": "How did the teenagers’ expectations of war compare with what they actually met on the Western Front?",
-          "answer": "They pictured brief, heroic adventures and gleaming medals, only to face rat-infested mud, relentless shellfire, and industrial slaughter."
+          "question": "Why did Rupert Brooke and Siegfried Sassoon write so differently about the exact same war?",
+          "answer": "Brooke wrote in late 1914 before seeing industrial trench combat, while Sassoon spent years enduring shellfire (\"crumps\"), lice, winter mud, and losing young soldiers."
         },
         {
-          "question": "What does the closing line mean by saying this young generation was \"destroyed by the war\" even if they survived the shells?",
-          "answer": "Having gone straight from schoolrooms into trauma and losing trust in the elders who sent them, survivors carried deep emotional scars into civilian life."
+          "question": "Who is Sassoon pointing his finger at in the final stanza (\"You smug-faced crowds\"), and why is he so angry with them?",
+          "answer": "Civilians cheering marching recruits from safe pavements without grasping—or wanting to hear—the mental and physical torment breaking teenagers at the front."
         }
       ],
-      "short_tab_title": "Remarque: All Quiet (1929)",
-      "cover_caption": "Young German infantrymen on the Western Front wearing steel Stahlhelm helmets, grenade bags, canteens, and rifles (German Official WWI Photograph Bufa 3782, U.S. National Archives 17390780)."
+      "story_check": [
+        {
+          "question": "How does Rupert Brooke’s 1914 sonnet \"The Soldier\" portray a British soldier’s death abroad?",
+          "options": [
+            "As senseless industrial slaughter in winter mud",
+            "As noble, gentle peace turning foreign soil \"for ever England\"",
+            "As a betrayal by politicians in Berlin",
+            "As a mutiny against army generals"
+          ],
+          "correctIndex": 1,
+          "feedback": "Written in 1914 before Brooke saw trench combat, \"The Soldier\" romanticises death as peaceful patriotic sacrifice."
+        },
+        {
+          "question": "In Sassoon’s second stanza, what drives the cheerful young soldier boy to end his life?",
+          "options": [
+            "Losing a cricket match at home",
+            "Winter trenches, exploding shells (\"crumps\"), lice, and exhaustion",
+            "A dispute over naval budgets",
+            "Reading German newspapers"
+          ],
+          "correctIndex": 1,
+          "feedback": "Sassoon names the grinding daily misery of winter mud, \"crumps\" (heavy shells), lice, and silent trauma."
+        },
+        {
+          "question": "Whom does Sassoon directly attack in the closing stanza of \"Suicide in the Trenches\"?",
+          "options": [
+            "His fellow soldiers in the dugout",
+            "\"Smug-faced crowds\" at home who cheer marching lads without knowing trench hell",
+            "Army doctors and nurses",
+            "French farmers"
+          ],
+          "correctIndex": 1,
+          "feedback": "Sassoon turns furiously on cheering home-front crowds blind to the psychological destruction of young recruits."
+        }
+      ],
+      "monday_cold_call": {
+        "question": "Contrast Rupert Brooke’s \"under an English heaven\" (1914) with Siegfried Sassoon’s \"The hell where youth and laughter go\" (1918).",
+        "answer": "Brooke voiced 1914 patriotic idealism before combat, while Sassoon exposed how industrial shellfire, winter mud, and trauma destroyed young volunteers—and shamed cheering crowds at home."
+      },
+      "hinge_question": "<strong>Think:</strong> What does \"crumps\" mean in Sassoon’s second stanza?<br><br><strong>Pair:</strong> Notice Sassoon’s icy line \"No one spoke of him again\"—why did official wartime culture silence mental breakdown?<br><br><strong>Share:</strong> How does pairing 1914 verse with 1918 verse show what industrial total war did to European society?",
+      "questions": [
+        "What image of death in war does Rupert Brooke paint in 1914?",
+        "What happens to the \"simple soldier boy\" in Sassoon’s 1918 poem?",
+        "Why does Sassoon tell the cheering crowds to \"Sneak home and pray\"?"
+      ],
+      "audio_file": "/audio/reading/great_war/r4.mp3",
+      "studio_audio": "/audio/reading/great_war/r4.mp3",
+      "studio_voice_label": "War Poets · Brooke vs Sassoon"
     },
     {
       "lesson_index": 5,
       "lesson_id": "lesson_6",
       "lesson_label": "Enquiry 6",
-      "book_title": "Fischer’s \"Griff nach der Weltmacht\" (1961) vs Clark’s \"Sleepwalkers\" (2012)",
-      "author": "Fritz Fischer (1961) vs Christopher Clark (2012 • Great War Historiography)",
-      "cover_image": "/images/great_war/gw1_gr5_wilhelm_moltke_general_staff.jpg",
-      "cover_caption": "Kaiser Wilhelm II and Chief of the German General Staff Count Helmuth von Moltke the Younger seated together in spiked helmets—key figures at the heart of the historiographical debate between Fritz Fischer (1961) and Sir Christopher Clark (2012).",
-      "author_context": "For over a century since Article 231 of the 1919 Treaty of Versailles, historians have fiercely debated who bore primary responsibility for the outbreak of war in August 1914. Comparing German historian Fritz Fischer’s explosive archival thesis (1961) with Sir Christopher Clark’s modern multi-polar view (2012) equips Year 9 historians to construct a Greater Depth historiographical verdict.",
-      "source_type": "historiographical_debate",
-      "source_type_label": "Competing Historical Interpretations",
-      "is_primary": false,
+      "short_tab_title": "6. August 1914 Trains",
+      "literary_mode": "intimate_eyewitness",
+      "provenance_tier": "adapted_primary",
+      "source_type": "primary_diary",
+      "source_type_label": "August 1914 Mobilisation Eyewitness Diary",
+      "is_primary": true,
       "is_adapted": true,
-      "extract": "The Deliberate Aggression View (Fritz Fischer, Germany’s Aims in the First World War, 1961): Working inside imperial German cabinet and military archives, Hamburg historian Fritz Fischer shocked post-war Germany by arguing that Berlin did not stumble accidentally into war in July 1914—it actively willed a continental war to achieve European hegemony (Weltpolitik). By issuing the unconditional 'Blank Cheque' to Austria-Hungary on 5 July, pressing Vienna to crush Serbia quickly before peace talks could convene, and drafting Chancellor Bethmann Hollweg’s 'September Programme' of sweeping annexations before the Battle of the Marne had even ended, Kaiser Wilhelm II’s generals—terrified that Russia’s vast railway modernisation would make Russia unbeatable by 1917—deliberately seized the Sarajevo crisis as their last favourable window to strike.\n\nThe Shared Systemic Tragedy View (Christopher Clark, The Sleepwalkers, 2012): Focusing blame on Berlin alone, counters historian Christopher Clark, turns a complex six-power crisis into a courtroom morality play. Serbian military intelligence chief 'Apis' armed the Sarajevo assassins; Vienna recklessly sought to destroy Serbia; St Petersburg ordered general Russian mobilisation on 30 July knowing it would trigger German war plans; Paris encouraged Russian firmness to recover Alsace-Lorraine; and London left its intentions dangerously ambiguous until Belgium was invaded. Every European capital pursued narrow national prestige inside a rigid web of alliances and mobilisation timetables—sleepwalking collectively into catastrophe.",
+      "book_title": "An English Wife in Berlin: Watching the Mobilisation Trains Roll Out (August 1914)",
+      "author": "Princess Evelyn Blücher & Sir Edward Grey (August 1914)",
+      "provenance_note": "Combines verbatim and lightly smoothed August 1914 railway diary observations from Evelyn, Princess Blücher (An English Wife in Berlin, 1920) with Sir Edward Grey’s 3 August 1914 dusk remark.",
+      "author_context": "Englishwoman Evelyn Stapleton-Bretherton was married to German nobleman Count Gebhard Blücher. Forced to leave London as Britain and Germany went to war on 4 August 1914, she rode east across the frontier while non-stop troop trains carried singing recruits toward Belgium—capturing the exact moment railway timetables locked Europe into war.",
+      "cover_image": "/images/great_war/gw1_l5_b3_mobilisation_trains_august_1914.jpg",
+      "cover_caption": "August 1914 mobilisation train packed with waving reservists leaning from carriage windows while a woman raises her arm in farewell on the station platform.",
       "vocabVault": [
         {
-          "term": "Fischer Thesis (1961)",
-          "def": "German historian Fritz Fischer’s argument that Imperial Germany deliberately provoked continental war in July 1914 to break encirclement and dominate Europe."
+          "term": "Mobilisation",
+          "pronunciation": "moh-bil-eye-ZAY-shun",
+          "def": "Calling up millions of reserve troops and seizing national railways on strict minute-by-minute war timetables."
         },
         {
-          "term": "Blank Cheque (5 July 1914)",
-          "def": "Kaiser Wilhelm II and Bethmann Hollweg’s unconditional pledge backing Austria-Hungary even if attacking Serbia dragged Russia into war."
+          "term": "Schlieffen Plan",
+          "pronunciation": "SHLEE-fun plan",
+          "def": "Germany’s rigid war timetable ordering an immediate sweep through neutral Belgium to defeat France before Russia finished mobilising."
         },
         {
-          "term": "July Crisis (28 June – 4 Aug 1914)",
-          "def": "The 37-day diplomatic chain reaction from Franz Ferdinand’s assassination in Sarajevo to Britain’s declaration of war following Germany’s invasion of neutral Belgium."
+          "term": "Evelyn Blücher",
+          "pronunciation": "EV-uh-lin BLOO-kur",
+          "def": "English-born aristocrat married to a German prince whose wartime Berlin diary recorded August 1914 from both sides."
         },
         {
-          "term": "Multi-Causal Verdict",
-          "def": "Weighing long-term structural causes (Militarism, Alliances, Imperialism, Nationalism) alongside short-term July 1914 agency and miscalculation."
+          "term": "Fischer vs Clark",
+          "pronunciation": "FISH-ur vur-sus KLARK",
+          "def": "The classic historical debate between Fritz Fischer (German aggression) and Christopher Clark (shared six-power miscalculation)."
         }
       ],
+      "extract": "At dusk on 3 August 1914 in London, British Foreign Secretary Sir Edward Grey watched streetlamps flicker on outside Whitehall. \"The lamps are going out all over Europe,\" he told a friend quietly. \"We shall not see them lit again in our life-time.\"\n\nHours later, Englishwoman Evelyn Blücher boarded a special diplomatic train leaving Britain for Berlin with her German husband. Once Russia had mobilised on 30 July and Germany had launched the Schlieffen Plan into neutral Belgium, generals’ railway timetables seized total control from civilian diplomats. Crossing the frontier into Germany on 5–6 August, Evelyn recorded an unforgettable scene in her diary.\n\n\"Passing us in an almost continuous stream on the other track were the trains full of troops—shouting, laughing, singing, and waving their hands, with intense excitement on their faces. Every carriage was chalked with slogans and decked with oak leaves and summer flowers handed up by village girls along the line.\n\n\"At every station, brass bands thundered patriotic hymns. The young soldiers leaned from the windows crying that they would be home from Paris before the autumn leaves fell. Yet behind the cheering platforms, I saw older women and mothers standing pale as stone. Clutching wet handkerchiefs, they watched iron wheels roll their sons toward Belgium—each nation convinced that it alone fought in self-defence.\"",
       "parent_discussion": [
         {
-          "question": "What crucial archival evidence did German historian Fritz Fischer uncover in 1961 to argue that Germany’s generals wanted war in 1914 rather than fearing it?",
-          "answer": "German generals feared Russia’s military/railway expansion would make Russia too strong by 1917, so they gave Vienna the \"Blank Cheque\" on 5 July to force a showdown while Germany still held the edge."
+          "question": "What two contrasting emotions did Evelyn Blücher spot on German railway platforms in the first week of August 1914?",
+          "answer": "Young soldiers singing and waving flower-decked rifles expecting to return \"before the leaves fell,\" beside silent, pale mothers weeping as trains rolled west."
         },
         {
-          "question": "How does Christopher Clark challenge Fischer by pointing to decisions made in Belgrade, Vienna, St Petersburg, and Paris during July 1914?",
-          "answer": "Clark shows every Great Power took aggressive gambles—Serbian intelligence armed Princip, Austria issued a crushing ultimatum, and Russia mobilised first on 30 July knowing mobilisation meant war."
+          "question": "Why did military mobilisation timetables make it almost impossible for politicians to stop the crisis at the start of August 1914?",
+          "answer": "Thousands of trains ran to strict minute-by-minute schedules; halting Germany’s westward Schlieffen Plan once Russia mobilised would have thrown its whole army into chaos."
         },
         {
-          "question": "Which interpretation do you find more persuasive for your Enquiry 6 assessment essay—or how can you combine them into a nuanced verdict?",
-          "answer": "A top-level verdict argues that while alliances, naval rivalry, and Balkan nationalism stacked the gunpowder across all capitals (Clark), Berlin’s Blank Cheque and rigid Schlieffen Plan turned a Balkan crisis into a Western European war (Fischer)."
+          "question": "Look at Evelyn’s closing line—\"each nation utterly convinced that it alone was fighting in self-defence\": does that support Fritz Fischer or Christopher Clark?",
+          "answer": "It echoes Clark’s \"sleepwalkers\" view of mutual fear across Europe, though historians following Fritz Fischer point out it was German troop trains invading neutral Belgium."
         }
       ],
-      "hinge_question": "<strong>Think:</strong> Why did German generals fear waiting until 1917 to confront Russia?<br><br><strong>Pair:</strong> Put Fritz Fischer and Christopher Clark in debate: which single decision in July 1914 was the true point of no return?<br><br><strong>Share:</strong> How can you use both \"The Traditional Blame View (Fischer)\" and \"The Modern Shared-Failure View (Clark)\" in your final assessment conclusion?",
+      "story_check": [
+        {
+          "question": "Who warned on 3 August 1914 that \"The lamps are going out all over Europe\"?",
+          "options": [
+            "Kaiser Wilhelm II",
+            "British Foreign Secretary Sir Edward Grey",
+            "Gavrilo Princip",
+            "Otto von Bismarck"
+          ],
+          "correctIndex": 1,
+          "feedback": "Sir Edward Grey made that famous prophecy at dusk in Whitehall on the eve of Britain declaring war on 4 August 1914."
+        },
+        {
+          "question": "Why had Evelyn Blücher’s train journey given her a rare view of August 1914?",
+          "options": [
+            "She was driving a locomotive in Russia",
+            "She was an Englishwoman married to a German nobleman travelling from London to Berlin as war began",
+            "She was an American reporter in Sarajevo",
+            "She commanded a hospital ward in Paris"
+          ],
+          "correctIndex": 1,
+          "feedback": "Caught between her English homeland and German marriage, Evelyn Blücher witnessed August 1914 mobilisation in both countries."
+        },
+        {
+          "question": "Where were the flower-decked German troop trains rolling when they passed Evelyn’s carriage?",
+          "options": [
+            "South toward Italy",
+            "Westward into neutral Belgium and France under the Schlieffen Plan",
+            "North to Norway",
+            "Overseas to Morocco"
+          ],
+          "correctIndex": 1,
+          "feedback": "Following the rigid Schlieffen Plan timetable, German trains rushed armies west through neutral Belgium—bringing Britain into the war."
+        }
+      ],
+      "monday_cold_call": {
+        "question": "Why did August 1914 railway timetables snatch the final decision for peace away from Europe’s diplomats?",
+        "answer": "Once Russia ordered general mobilisation, Germany’s rigid Schlieffen Plan railway schedule demanded an immediate strike through neutral Belgium into France—triggering British entry."
+      },
+      "hinge_question": "<strong>Think:</strong> When did young 1914 recruits expect to be back home?<br><br><strong>Pair:</strong> Weigh Fritz Fischer (1961) against Christopher Clark (2012): did Berlin deliberately will war, or did all six Great Powers sleepwalk together?<br><br><strong>Share:</strong> Which single July–August 1914 decision will you judge most decisive in your Enquiry 6 essay?",
       "questions": [
-        "Why did German military leaders believe 1914 was their last favourable window to fight Russia, according to Fritz Fischer?",
-        "Name three non-German capitals whose risky decisions in July 1914 Christopher Clark highlights.",
-        "Which German war plan turned an Eastern European dispute over Serbia into an invasion of Belgium and France?"
+        "What did Sir Edward Grey predict on the evening of 3 August 1914?",
+        "Contrast how the young soldiers on the trains behaved with the mothers standing behind the platforms.",
+        "How did Germany’s invasion of neutral Belgium trigger Britain’s entry on 4 August 1914?"
       ],
       "audio_file": "/audio/reading/great_war/r5.mp3",
       "studio_audio": "/audio/reading/great_war/r5.mp3",
-      "studio_voice_label": "Studio Historian · Fischer vs Clark Debate",
-      "provenance_tier": "scholarly_summary",
-      "provenance_note": "Classroom synthesis contrasting German historian Fritz Fischer (1961) with Christopher Clark (2012) on the outbreak of war in 1914.",
-      "short_tab_title": "Debate: Fischer vs Clark"
+      "studio_voice_label": "Eyewitness · August 1914 Mobilisation"
     }
   ],
   "assessments": [

@@ -6749,298 +6749,518 @@
   "guided_reading": [
     {
       "lesson_index": 0,
-      "book_title": "The Wealth of Nations: Mercantilism & The Navigation Acts",
-      "author": "Adam Smith (1776)",
-      "cover_image": "/images/ks3_sbe/sbe_l1_s1_hms_warrior_portsmouth.jpg",
-      "cover_caption": "HMS Warrior (launched 1860) berthed at Portsmouth Historic Dockyard—industrial ironclad emblem of the maritime trade supremacy analysed in Lesson 1.",
-      "author_context": "Scottish moral philosopher Adam Smith criticized mercantilism, arguing that monopolies and colonial restrictions harmed both colonies and the mother country.",
-      "is_adapted": true,
-      "extract": "\"The monopoly of the colony trade, like all other mean and malignant expedients of the mercantile system, depresses the industry of all other countries, but chiefly that of the colonies, without in the least increasing, but on the contrary diminishing, that of the country in whose favour it is established... High tariffs and trade restrictions are an encouragement to bad management.\"\n\nWriting in 1776—the very year thirteen American colonies broke away from British rule—Scottish economist Adam Smith attacked the century-old system of Mercantilism and the Navigation Acts. Under mercantilist rules, colonies were forbidden to trade freely with foreign ships or manufacture goods that competed with British workshops; instead, every cargo of sugar, tobacco, timber, or cotton had to pass through British ports aboard Royal Navy-protected merchant fleets. Smith argued that forcing trade through state monopolies enriched well-connected London merchants while punishing colonial producers and British shoppers alike. Over the next seventy years, as steam-powered factories made Britain the \"Workshop of the World,\" Parliament gradually dismantled protective tariffs—ushering in a Victorian Second British Empire built on naval supremacy and \"Free Trade\" backed by gunboats.",
-      "hinge_question": "<strong>Think:</strong> What does Adam Smith claim is the real effect of colonial trade monopolies?<br><br><strong>Pair:</strong> Why did the British state maintain mercantilist trade policies despite Smith’s warnings?<br><br><strong>Share:</strong> How did maritime naval supremacy at Portsmouth enforce this commercial monopoly?",
-      "audio_file": "/audio/reading/second_british_empire/r0.mp3",
-      "questions": [
-        "What term does Smith use to describe colonial trade monopolies?",
-        "Who does Smith argue is most harmed by mercantilist trade restrictions?",
-        "Why did British merchants favour trade monopolies despite economic criticisms?"
-      ],
-      "source_type": "economic_treatise",
-      "source_type_label": "Foundational Economic Treatise (1776)",
-      "is_primary": true,
       "lesson_id": "lesson_1",
       "lesson_label": "Enquiry 1",
-      "studio_audio": "/audio/reading/second_british_empire/r0.mp3",
-      "studio_voice_label": "Studio Male Historian · Archival Reading",
-      "provenance_tier": "adapted_primary",
-      "provenance_note": "Combines Adam Smith’s verbatim 1776 critique of colonial trade monopolies with KS3 historical explanation of mercantilism.",
+      "short_tab_title": "1. Iron, Steam & Suez",
+      "literary_mode": "storied_micro_history",
+      "provenance_tier": "storied_micro_history",
+      "source_type": "micro_history",
+      "source_type_label": "True Historical Story (1776–1884)",
+      "is_primary": false,
+      "is_adapted": false,
+      "book_title": "From Wooden Walls to Suez: How Iron, Steam and Maps Built an Empire",
+      "author": "The History Revision Hub · Historical Story (1776–1884)",
+      "provenance_note": "Original true historical narrative tracing Britain’s shift from closed mercantilism to Portsmouth industrial sea power, the Suez Canal purchase, and the 1884 Berlin map-room.",
+      "author_context": "Between 1776 and 1884, Britain transformed how it ruled the seas. Instead of relying solely on old shipping bans, Victorian governments paired factory-made goods with steam ironclads from Portsmouth Dockyard and strategic waterways like the Suez Canal.",
+      "cover_image": "/images/ks3_sbe/sbe_l1_s1_hms_warrior_portsmouth.jpg",
+      "cover_caption": "HMS Warrior (launched 1860) berthed at Portsmouth Historic Dockyard, showing her black wrought-iron hull, three masts, and twin steam funnels.",
       "vocabVault": [
         {
           "term": "Mercantilism",
-          "def": "The 17th–18th century economic policy treating world wealth as fixed, forcing colonies to trade exclusively with the mother country."
+          "pronunciation": "MUR-kun-til-iz-um",
+          "def": "The older imperial trade system forcing colonies to ship raw goods only to the mother country on British vessels."
         },
         {
-          "term": "Navigation Acts",
-          "def": "British laws requiring colonial goods to be carried solely in British ships through British ports, enriching London, Bristol, and Portsmouth."
+          "term": "HMS Warrior",
+          "pronunciation": "aych-em-ess WOR-ee-ur",
+          "def": "Britain’s revolutionary 1860 steam-and-iron warship whose 4.5-inch armour made wooden battleships outdated overnight."
         },
         {
-          "term": "Monopoly",
-          "def": "Exclusive control over a trade or commodity (such as the East India Company’s charter), shutting out rival merchants."
+          "term": "Suez Canal",
+          "pronunciation": "SOO-ez kuh-NAL",
+          "def": "The artificial sea waterway across Egypt opened in 1869, cutting thousands of miles off the steamship voyage to India."
         },
         {
-          "term": "Tariffs",
-          "def": "Taxes placed on imported goods to block foreign competition or raise state revenue."
+          "term": "Berlin Conference",
+          "pronunciation": "bur-LIN KON-fur-uns",
+          "def": "The 1884–1885 diplomatic summit where fourteen Western powers drew colonial borders across Africa without African leaders."
         }
       ],
+      "extract": "Inside Portsmouth Royal Dockyard in 1805, forty-four steam machines clattered day and night. Engineer Marc Brunel’s block mills carved 130,000 wooden pulley blocks each year for Lord Nelson’s fleet. Factory precision on land now powered mastery across every ocean.\n\nBack in 1776, Scottish thinker Adam Smith had called closed trade rules \"mean and malignant.\" For centuries, Navigation Acts had banned foreign ships from British colonies. Once steam mills made Britain the Workshop of the World, London backed \"Free Trade\" with iron warships instead. HMS Warrior slid down the slipway in 1860 clad in thick wrought-iron plates and rifled guns. Overnight, every wooden sailing warship on earth was left behind.\n\nSteamships soon shrank the globe even more. After the Suez Canal opened across Egypt in 1869, Prime Minister Benjamin Disraeli borrowed four million pounds in 1875 to buy Egypt’s canal shares. That bold purchase gave British warships and cargo steamers the fastest sea shortcut to India.\n\nIn November 1884, European statesmen met in Berlin beneath a fifteen-foot map of Africa. Not one African ruler was invited into the room. Men in dark coats drew straight lines across rivers and kingdoms, turning sea trade into a ruthless race to carve up a continent.",
       "parent_discussion": [
         {
-          "question": "How does Adam Smith describe colonial trade monopolies in his 1776 quote, and who does he say they hurt?",
-          "answer": "He calls them \"mean and malignant,\" arguing they hold back colonial economies while encouraging waste and bad management in Britain itself."
+          "question": "Why could nineteenth-century industrial Britain afford to drop old mercantilist tariffs and champion \"Free Trade\"?",
+          "answer": "Because British steam factories produced cheaper cloth and iron than any rival, while Royal Navy ironclads like HMS Warrior policed global sea lanes."
         },
         {
-          "question": "Why did British governments and merchants defend the Navigation Acts for so long despite Smith’s criticism?",
-          "answer": "They guaranteed captive colonial markets, steady customs taxes, and a vast merchant shipping fleet supported by the Royal Navy."
+          "question": "Why did Prime Minister Benjamin Disraeli borrow £4 million in 1875 to buy shares in the Suez Canal?",
+          "answer": "The Suez Canal cut thousands of miles off the voyage around Africa, giving British merchant ships and warships a rapid highway to India."
         },
         {
-          "question": "Why could nineteenth-century industrial Britain afford to switch from Mercantilism to \"Free Trade\"?",
-          "answer": "Once British steam factories produced cheaper textiles and iron than any rival on earth, Britain no longer needed protective tariffs to dominate global markets."
+          "question": "What does the 1884 Berlin wall-map scene reveal about how late-Victorian empires viewed African peoples?",
+          "answer": "European statesmen treated an entire inhabited continent as empty paper to divide among themselves, ignoring African rulers, languages, and borders."
         }
       ],
-      "short_tab_title": "1. Smith: Mercantilism (1776)"
+      "story_check": [
+        {
+          "question": "What did Marc Brunel’s steam-powered machines mass-produce at Portsmouth Dockyard in 1805?",
+          "options": [
+            "130,000 wooden pulley blocks a year for Royal Navy ships",
+            "Enfield paper cartridges for the Bengal Army",
+            "Locomotive rails for the Suez Canal",
+            "Cotton cloth for Lancashire mills"
+          ],
+          "correctIndex": 0,
+          "feedback": "Marc Brunel’s Portsmouth block mills mass-produced 130,000 pulley blocks annually to keep Royal Navy fleets at sea."
+        },
+        {
+          "question": "Why was the 1860 launch of HMS Warrior such a turning point at sea?",
+          "options": [
+            "It was the first wooden sailing ship to reach Australia",
+            "Its steam engines, iron armour, and rifled guns made wooden warships outdated",
+            "It carried diplomats to sign the Treaty of Paris",
+            "It abolished customs duties across British ports"
+          ],
+          "correctIndex": 1,
+          "feedback": "HMS Warrior combined steam propulsion, wrought-iron armour, and rifled guns, rendering wooden battleships obsolete."
+        },
+        {
+          "question": "Who was missing when fourteen Western powers carved up a giant wall map of Africa in Berlin in 1884?",
+          "options": [
+            "British diplomats",
+            "German officials",
+            "Every single African ruler and representative",
+            "Steamship company owners"
+          ],
+          "correctIndex": 2,
+          "feedback": "Not a single African leader was invited to the 1884–1885 Berlin Conference."
+        }
+      ],
+      "monday_cold_call": {
+        "question": "How did HMS Warrior and the Suez Canal work together to protect Britain’s Second Empire?",
+        "answer": "Steam ironclads like HMS Warrior gave Britain unmatched naval firepower, while the Suez Canal provided a fast sea shortcut to rush warships and trade to India."
+      },
+      "hinge_question": "<strong>Think:</strong> What phrase did Adam Smith use in 1776 to criticise closed colonial monopolies?<br><br><strong>Pair:</strong> How did Portsmouth Dockyard’s machines and HMS Warrior make \"Free Trade\" safe for British merchants?<br><br><strong>Share:</strong> Why did buying Suez Canal shares in 1875 pull Britain deeper into ruling African territory?",
+      "questions": [
+        "What phrase did Adam Smith use to criticise colonial monopolies in 1776?",
+        "Why did HMS Warrior make wooden warships outdated in 1860?",
+        "Why was the Suez Canal so important to the British Empire after 1869?"
+      ],
+      "audio_file": "/audio/reading/second_british_empire/r0.mp3",
+      "studio_audio": "/audio/reading/second_british_empire/r0.mp3",
+      "studio_voice_label": "Studio Male Historian · Storied History"
     },
     {
       "lesson_index": 1,
-      "book_title": "The Bengal Diwani & The Bleaching Plains of India (1765–1834)",
-      "author": "Robert Clive & Governor-General Lord William Bentinck",
-      "cover_image": "/images/ks3_sbe/sbe_l2_s0_shah_alam_clive_diwani_1765.jpg",
-      "cover_caption": "Benjamin West, Shah ’Alam Conveying the Grant of the Diwani to Lord Clive (August 1765, British Library Foster 29), marking the East India Company’s seizure of Bengal’s tax revenues.",
-      "author_context": "Primary archival records documenting the fiscal extraction of Bengal and the economic destruction of India's handloom weaving industry under British colonial rule.",
-      "is_adapted": true,
-      "extract": "<em>Robert Clive to the Court of Directors (1765):</em><br>\"The acquisition of the Diwani of Bengal, Bihar, and Orissa places in your hands the richest province of the empire. The revenues alone will amount to two hundred and fifty lakhs of rupees. After defraying all military and civil expenses, there will remain an immense clear surplus of clear treasure. We shall no longer need to send out silver from England to purchase our goods, for the revenues of Bengal will abundantly purchase all our investments.\"<br><br><em>Governor-General Lord William Bentinck (1834):</em><br>\"The misery hardly finds a parallel in the history of commerce. The bones of the cotton-weavers are bleaching the plains of India. The cotton-weaving of India, which for centuries clothed the world, has been utterly broken by the steam looms of Great Britain. Dacca, once the Manchester of India, has shrunk to a shadow of its former grandeur, its population starved into the jungle by our one-way tariffs.\"",
-      "hinge_question": "<strong>Think:</strong> How did the 1765 Diwani eliminate Britain's need to export silver to India, and what metaphor did Bentinck use to describe the ruined weavers?<br><br><strong>Pair:</strong> Compare Clive's triumphant financial calculation in 1765 with Bentinck's tragic reflection in 1834. Discuss: was the de-industrialisation of India an accidental side effect of steam power, or the deliberate consequence of colonial fiscal policy?<br><br><strong>Share:</strong> Why did the destruction of handloom weaving leave the Indian peasantry so vulnerable to future agricultural famines?",
-      "audio_file": "/audio/reading/second_british_empire/r1.mp3",
-      "questions": [
-        "What financial benefit did Robert Clive claim the 1765 Diwani brought to the East India Company?",
-        "What phrase did Lord William Bentinck use to describe the fate of India's cotton-weavers in 1834?",
-        "Which historic Bengali textile city shrank dramatically as its weaving industry collapsed?"
-      ],
-      "source_type": "official_dispatch",
-      "source_type_label": "Official Colonial Dispatches (1765–1834)",
-      "is_primary": true,
       "lesson_id": "lesson_2",
       "lesson_label": "Enquiry 2",
-      "studio_audio": "/audio/reading/second_british_empire/r1.mp3",
-      "studio_voice_label": "Studio Male Historian · Archival Reading",
+      "short_tab_title": "2. Bengal Diwani & Weavers",
+      "literary_mode": "intimate_eyewitness",
       "provenance_tier": "adapted_primary",
-      "provenance_note": "Condensed primary extracts from Robert Clive (1765) and Governor-General Bentinck (1834) on Bengal revenue and Indian weavers.",
+      "source_type": "official_dispatch",
+      "source_type_label": "Eyewitness Colonial Dispatches (1765–1834)",
+      "is_primary": true,
+      "is_adapted": true,
+      "book_title": "The Bengal Diwani & The Bleaching Plains of India (1765–1834)",
+      "author": "Robert Clive (1765) & Lord William Bentinck (1834)",
+      "provenance_note": "Adapted primary dispatches from Robert Clive (1765) and Governor-General Lord William Bentinck (1834) calibrated for Year 8 aloud reading.",
+      "author_context": "These two British primary records sit seventy years apart. Together they show how seizing Bengal’s land taxes enriched the East India Company while ruining India’s world-famous handloom weavers.",
+      "cover_image": "/images/ks3_sbe/sbe_l2_s0_shah_alam_clive_diwani_1765.jpg",
+      "cover_caption": "Benjamin West, Shah ’Alam Conveying the Grant of the Diwani to Lord Clive (c. 1818, British Library), depicting Mughal Emperor Shah Alam II handing the 1765 Bengal tax scroll to Robert Clive.",
       "vocabVault": [
         {
           "term": "Diwani",
-          "def": "The official right granted in 1765 allowing the British East India Company to collect land taxes from millions of people across Bengal, Bihar, and Orissa."
+          "pronunciation": "dih-WAH-nee",
+          "def": "The 1765 grant allowing the British East India Company to collect land taxes across Bengal, Bihar, and Orissa."
         },
         {
           "term": "Lakhs of Rupees",
-          "def": "Traditional South Asian units of one hundred thousand rupees—measuring the huge tax surplus extracted from Bengal."
+          "pronunciation": "LAHKS uv roo-PEEZ",
+          "def": "South Asian units of one hundred thousand rupees measuring the huge tax surplus taken from Bengal."
         },
         {
-          "term": "De-industrialisation",
-          "def": "The collapse of India’s world-famous handloom cotton industry when British rulers taxed Indian exports while flooding India with cheap Lancashire factory cloth."
+          "term": "Dacca Muslin",
+          "pronunciation": "DAK-uh MUZ-lin",
+          "def": "Delicate, world-famous cotton cloth hand-woven in Bengal for centuries before British factory imports crushed the trade."
         },
         {
           "term": "One-Way Tariffs",
-          "def": "Unfair trade duties that taxed Indian cloth entering Britain heavily while letting British machine-made cloth enter India nearly tax-free."
+          "pronunciation": "WUN-way TAR-ifs",
+          "def": "Unfair taxes blocking Indian cloth from Britain while letting cheap Lancashire factory cotton flood into India."
         }
       ],
+      "extract": "In August 1765, inside a silk tent at Allahabad, Mughal Emperor Shah Alam II handed a rolled parchment to Robert Clive. That single scroll granted the East India Company the Diwani—the legal right to collect taxes from twenty million people in Bengal.\n\n\"The acquisition of the Diwani places in your hands the richest province of the empire,\" Clive wrote proudly to London. \"The revenues alone will reach two hundred and fifty lakhs of rupees. After paying all military and civil costs, a vast clear treasure will remain. We shall no longer need to send silver from England, for Bengal’s own taxes will buy all our cargoes.\"\n\nFor Bengali artisan families, Company control proved ruinous. For centuries, skilled handloom weavers in Dacca had spun cotton muslin so fine that buyers called it \"woven air.\" Now Parliament placed steep taxes on Indian cloth entering Britain, while cheap cloth from Lancashire steam mills poured into India almost tax-free.\n\nBy 1834, even British Governor-General Lord William Bentinck was horrified by the result. \"The misery hardly finds a parallel in the history of trade,\" he reported. \"The bones of the cotton-weavers are bleaching the plains of India. Dacca, once the Manchester of India, has shrunk to a shadow of its former glory.\"",
       "parent_discussion": [
         {
-          "question": "Why was winning the Bengal \"Diwani\" (tax-collecting right) in 1765 such a turning point for the East India Company?",
-          "answer": "Instead of shipping silver from Britain to buy Indian goods, the Company used Indian taxpayers’ own money to fund its army and buy cargoes for London."
+          "question": "Why was winning the Bengal \"Diwani\" in 1765 such a financial jackpot for the East India Company?",
+          "answer": "Instead of shipping British silver to buy Indian goods, the Company used Indian taxpayers’ own money to pay its troops and buy exports for London."
         },
         {
-          "question": "What shocking image did British Governor-General Lord William Bentinck use in 1834 to describe the plight of Indian weavers?",
-          "answer": "He wrote that \"the bones of the cotton-weavers are bleaching the plains of India\" as ancient weaving cities like Dacca shrank into poverty."
+          "question": "What haunting sentence did Governor-General Bentinck write in 1834 to describe ruined Indian weavers?",
+          "answer": "He wrote that \"the bones of the cotton-weavers are bleaching the plains of India\" as historic weaving cities like Dacca collapsed into poverty."
         },
         {
-          "question": "How were Lancashire’s booming cotton mills directly linked to the decline of Indian handloom weaving?",
-          "answer": "Britain used colonial control and one-way tariffs to turn India from the world’s leading cloth exporter into a buyer of British factory textiles and supplier of raw cotton."
+          "question": "Was the collapse of Bengali handloom weaving caused only by faster British steam machines, or also by unfair rules?",
+          "answer": "Both—Lancashire steam looms wove cheap cloth rapidly, and British colonial rule enforced one-way tariffs that shut Indian weavers out of fair competition."
         }
       ],
-      "short_tab_title": "2. Bengal Diwani & Weavers"
+      "story_check": [
+        {
+          "question": "What power did the 1765 Diwani grant give to the British East India Company?",
+          "options": [
+            "Permission to dig the Suez Canal",
+            "The right to collect land taxes across Bengal, Bihar, and Orissa",
+            "Control over Portsmouth Royal Dockyard",
+            "A monopoly over Australian Merino wool"
+          ],
+          "correctIndex": 1,
+          "feedback": "The 1765 Diwani gave the East India Company tax-collecting power over millions of people in Bengal, Bihar, and Orissa."
+        },
+        {
+          "question": "What nickname did buyers give to the ultra-fine cotton muslin woven by hand in Dacca?",
+          "options": [
+            "Iron thread",
+            "Woven air",
+            "White gold",
+            "King’s cloth"
+          ],
+          "correctIndex": 1,
+          "feedback": "Traditional hand-spun Dacca muslin was so light and delicate that admirers called it \"woven air.\""
+        },
+        {
+          "question": "Who wrote in 1834 that \"the bones of the cotton-weavers are bleaching the plains of India\"?",
+          "options": [
+            "Adam Smith",
+            "Rani Lakshmibai",
+            "Governor-General Lord William Bentinck",
+            "Rudyard Kipling"
+          ],
+          "correctIndex": 2,
+          "feedback": "British Governor-General Lord William Bentinck recorded that stark admission in an official 1834 report."
+        }
+      ],
+      "monday_cold_call": {
+        "question": "How did the 1765 Diwani and British tariffs work together to ruin Bengal’s cotton weavers?",
+        "answer": "Company officials used Bengal’s own taxes to dominate local trade, then taxed Indian cloth exports heavily while flooding India with cheap Lancashire factory cotton."
+      },
+      "hinge_question": "<strong>Think:</strong> Why did Clive boast that Britain no longer needed to ship silver to India after 1765?<br><br><strong>Pair:</strong> Compare Clive’s 1765 celebration with Bentinck’s 1834 report—who paid the human price for Company profits?<br><br><strong>Share:</strong> Why did losing weaving income leave Indian families far more vulnerable when droughts struck?",
+      "questions": [
+        "What financial benefit did Robert Clive say the 1765 Diwani gave the East India Company?",
+        "What happened to the famous weaving city of Dacca by 1834?",
+        "How did one-way tariffs hurt Indian handloom weavers?"
+      ],
+      "audio_file": "/audio/reading/second_british_empire/r1.mp3",
+      "studio_audio": "/audio/reading/second_british_empire/r1.mp3",
+      "studio_voice_label": "Studio Male Historian · Archival Reading"
     },
     {
       "lesson_index": 2,
-      "book_title": "The Azamgarh Proclamation (1857) & The Queen's Proclamation (1858)",
-      "author": "Rebel Leaders of the 1857 Uprising & Queen Victoria",
-      "cover_image": "/images/ks3_sbe/sbe_l3_cameo_rani_lakshmibai_equestrian.jpg",
-      "cover_caption": "Contemporary Indian equestrian gouache painting of Rani Lakshmibai of Jhansi (c. 1860), heroic commander of the 1857–1858 Indian Rebellion.",
-      "author_context": "Contrasting primary manifestos: the revolutionary proclamation of the 1857 insurgent leadership calling for the overthrow of British tyranny, versus Queen Victoria’s royal declaration establishing the British Raj.",
-      "is_adapted": true,
-      "extract": "<em>The Azamgarh Proclamation (August 1857):</em><br>\"It is well known to all that in this age the people of Hindostan, both Hindoos and Mohammedans, are being ruined under the tyranny and the oppression of the treacherous English. They have dispossessed the ancient zamindars, heavily taxed the peasantry, ruined our native weavers with cheap English cloth, and subverted our sacred religions with greased cartridges. We urge all chiefs, sepoys, and artisans to unite under our imperial standard to purge our land of foreign rule!\"<br><br><em>Queen Victoria's Royal Proclamation (1 November 1858):</em><br>\"We hereby announce that all treaties made with native princes by the East India Company are accepted and confirmed. We disclaim alike the right and the desire to impose our religious convictions on any of our subjects. The government of our territories in India is hereby assumed directly by the Crown, and all our subjects shall enjoy equal and impartial protection of the law.\"",
-      "hinge_question": "<strong>Think:</strong> What four grievances did the Azamgarh Proclamation identify, and what two promises did Queen Victoria make to pacify India?<br><br><strong>Pair:</strong> Compare the fiery anti-colonial rhetoric of the 1857 rebels with the diplomatic assurances of Queen Victoria's proclamation. Discuss: did the creation of the British Raj genuinely address the grievances that provoked the rebellion?<br><br><strong>Share:</strong> Why was Rani Lakshmibai of Jhansi remembered as a heroic freedom fighter in India while initially demonized in Victorian British newspapers?",
-      "audio_file": "/audio/reading/second_british_empire/r2.mp3",
-      "questions": [
-        "What religious grievance contributed directly to the outbreak of the 1857 rebellion?",
-        "What major change in the government of India did Queen Victoria's 1858 proclamation enact?",
-        "Who was the widowed queen of Jhansi celebrated for leading the defense of her fortress?"
-      ],
-      "source_type": "state_proclamation",
-      "source_type_label": "Imperial Proclamation & Rebel Manifesto",
-      "is_primary": true,
       "lesson_id": "lesson_3",
       "lesson_label": "Enquiry 3",
-      "studio_audio": "/audio/reading/second_british_empire/r2.mp3",
-      "studio_voice_label": "Studio Male Historian · Archival Reading",
+      "short_tab_title": "3. 1857 Rebel & Crown Voices",
+      "literary_mode": "intimate_eyewitness",
       "provenance_tier": "adapted_primary",
-      "provenance_note": "Side-by-side condensed extracts contrasting the 1857 Azamgarh rebel manifesto with Queen Victoria’s 1858 Proclamation.",
+      "source_type": "state_proclamation",
+      "source_type_label": "Rebel Manifesto & Royal Proclamation (1857–1858)",
+      "is_primary": true,
+      "is_adapted": true,
+      "book_title": "The Azamgarh Proclamation (1857) & Queen Victoria’s Proclamation (1858)",
+      "author": "1857 Rebel Leaders & Queen Victoria",
+      "provenance_note": "Side-by-side adapted extracts contrasting the August 1857 Azamgarh rebel manifesto with Queen Victoria’s November 1858 Royal Proclamation.",
+      "author_context": "During the 1857 Indian Uprising, rebel leaders issued the Azamgarh Proclamation urging Hindus and Muslims to unite against British rule. After crushing the revolt, Queen Victoria abolished the East India Company and promised religious non-interference under the British Raj.",
+      "cover_image": "/images/ks3_sbe/sbe_l3_cameo_rani_lakshmibai_equestrian.jpg",
+      "cover_caption": "Contemporary Indian gouache painting of Rani Lakshmibai of Jhansi (c. 1860) mounted in battle dress on a rearing white horse with spear, sword, and musket.",
       "vocabVault": [
         {
-          "term": "1857 Uprising",
-          "def": "The major rebellion across northern and central India against East India Company rule—called the \"First War of Independence\" by Indian nationalists."
+          "term": "Sepoys",
+          "pronunciation": "SEE-poyz",
+          "def": "Indian infantry soldiers serving in the East India Company’s armies."
         },
         {
-          "term": "Zamindars",
-          "def": "Hereditary Indian landholders dispossessed by heavy Company land taxes."
+          "term": "Azamgarh",
+          "pronunciation": "AH-zum-gar",
+          "def": "The northern Indian town where rebel leaders issued their famous August 1857 manifesto calling all classes to unite."
+        },
+        {
+          "term": "Rani Lakshmibai",
+          "pronunciation": "RAH-nee LUK-shmee-bye",
+          "def": "Queen of Jhansi whose kingdom was seized by Lord Dalhousie and who died fighting British forces in June 1858."
         },
         {
           "term": "British Raj",
-          "def": "Direct British Crown rule over India from 1858 to 1947 after Parliament abolished the East India Company."
-        },
-        {
-          "term": "Religious Non-Interference",
-          "def": "Queen Victoria’s November 1858 promise not to impose Christianity on Hindu, Muslim, or Sikh subjects in order to prevent further rebellion."
+          "pronunciation": "BRIT-ish RAHJ",
+          "def": "Direct rule over India by the British Crown from 1858 to 1947 after Parliament dissolved the East India Company."
         }
       ],
+      "extract": "In May 1857, anger exploded across northern India. Indian soldiers—known as sepoys—had been ordered to bite open paper rifle cartridges greased with animal fat. Both Hindu and Muslim troops feared a plot to defile their faiths. Soon soldiers, farmers, and dispossessed rulers like Rani Lakshmibai of Jhansi rose up together against Company rule.\n\nIn August 1857, rebel leaders issued the fiery Azamgarh Proclamation.\n\n\"It is well known that the people of Hindostan, both Hindus and Muslims, are being ruined under the tyranny of the treacherous English! They have seized the lands of our ancient landlords and crushed peasants with heavy taxes. They have ruined our native weavers with cheap English cloth and insulted our sacred religions. Unite beneath our royal standard to drive foreign rule from our land!\"\n\nBritish armies crushed the rebellion with ruthless force. Jhansi burned, and Rani Lakshmibai died fighting on horseback in June 1858. Yet London knew terror alone could never hold 250 million people. Abolishing the East India Company, Queen Victoria issued her Royal Proclamation on 1 November 1858.\n\n\"The government of India is hereby taken directly by the Crown. All treaties made with native princes will be honoured. We firmly reject both the right and the desire to force our religious beliefs upon any of our subjects.\"",
       "parent_discussion": [
         {
-          "question": "What four main grievances against British rule does the August 1857 Azamgarh Proclamation list?",
-          "answer": "Seizing landlords’ estates, overtaxing peasants, ruining local weavers with cheap British cloth, and offending Hindu and Muslim faiths with greased cartridges."
+          "question": "Why does the August 1857 Azamgarh Proclamation prove the uprising was about much more than rifle cartridges alone?",
+          "answer": "Alongside religious insults, it lists decades of anger over seized estates, heavy peasant taxes, and weavers ruined by cheap British cloth."
         },
         {
-          "question": "How did Queen Victoria’s November 1858 Proclamation change how India was governed?",
-          "answer": "The Crown abolished the East India Company, took direct rule (the Raj), confirmed princes’ treaties, and promised not to interfere with Indian religions."
+          "question": "Why did the Azamgarh manifesto deliberately address \"both Hindus and Muslims\" together?",
+          "answer": "Rebel leaders knew they could only defeat British Company armies if Hindu and Muslim soldiers, princes, and artisans stood united."
         },
         {
-          "question": "Why did Queen Victoria promise \"equal and impartial protection of the law\" right after crushing the rebellion?",
-          "answer": "Britain realised brute force alone could not hold 250 million people—winning the loyalty of Indian princes and soldiers was essential to stabilise the Raj."
+          "question": "How did Queen Victoria try to prevent another rebellion in her November 1858 Proclamation?",
+          "answer": "She abolished the hated East India Company, promised Indian princes their remaining lands were safe, and pledged never to interfere with Indian religions."
         }
       ],
-      "short_tab_title": "3. 1857 Rebel & Crown Voices"
+      "story_check": [
+        {
+          "question": "Which four groups or grievances are named in the August 1857 Azamgarh Proclamation?",
+          "options": [
+            "Shipbuilders, coal miners, railway clerks, and sailors",
+            "Dispossessed landlords, heavily taxed peasants, ruined weavers, and insulted faiths",
+            "Australian squatters, gold miners, drovers, and convicts",
+            "German diplomats, Belgian traders, and French bankers"
+          ],
+          "correctIndex": 1,
+          "feedback": "The Azamgarh Proclamation united landlords, taxed peasants, ruined weavers, and sepoys angry over religious interference."
+        },
+        {
+          "question": "Who led the defence of Jhansi on horseback before dying in battle in June 1858?",
+          "options": [
+            "Rani Lakshmibai",
+            "Truganini",
+            "Dadabhai Naoroji",
+            "Lord Dalhousie"
+          ],
+          "correctIndex": 0,
+          "feedback": "Rani Lakshmibai of Jhansi became one of the most celebrated commanders of the 1857–1858 Uprising."
+        },
+        {
+          "question": "What major change took place on 1 November 1858 under Queen Victoria’s Proclamation?",
+          "options": [
+            "India gained full independence",
+            "The East India Company gained new tax powers",
+            "The Crown abolished the Company and began direct rule (the British Raj)",
+            "All Indian princes were stripped of their treaties"
+          ],
+          "correctIndex": 2,
+          "feedback": "Parliament dissolved the East India Company and transferred India to direct Crown rule—the British Raj."
+        }
+      ],
+      "monday_cold_call": {
+        "question": "Give two reasons beyond greased cartridges why Indians rebelled in 1857, and one promise Queen Victoria made in 1858.",
+        "answer": "Rebels fought against seized lands, heavy peasant taxes, and ruined weaving trades; in 1858 Queen Victoria abolished the Company and promised religious non-interference."
+      },
+      "hinge_question": "<strong>Think:</strong> List three economic or religious grievances named in the Azamgarh Proclamation.<br><br><strong>Pair:</strong> Did Queen Victoria’s 1858 Proclamation give Indians real freedom, or simply a smarter way of keeping British control?<br><br><strong>Share:</strong> Why was Rani Lakshmibai remembered as a national heroine across India?",
+      "questions": [
+        "What religious spark helped trigger the May 1857 uprising?",
+        "What economic grievances did the Azamgarh Proclamation highlight?",
+        "What promises did Queen Victoria make on 1 November 1858?"
+      ],
+      "audio_file": "/audio/reading/second_british_empire/r2.mp3",
+      "studio_audio": "/audio/reading/second_british_empire/r2.mp3",
+      "studio_voice_label": "Studio Male Historian · Archival Reading"
     },
     {
       "lesson_index": 3,
-      "book_title": "The Black Man's Burden (1920) vs The White Man's Burden (1899)",
-      "author": "E. D. Morel & Rudyard Kipling",
-      "cover_image": "/images/ks3_sbe/sbe_l4_s0_berlin_conference_roessler_1884.jpg",
-      "cover_caption": "Adalbert von Rößler’s 1884 engraving of the Berlin West Africa Conference, where fourteen Western powers partitioned Africa beneath a wall map without African representation.",
-      "author_context": "A side-by-side reading contrasting Rudyard Kipling’s moral civilising mission with E. D. Morel’s archival exposure of corporate resource plunder.",
-      "is_adapted": true,
-      "extract": "<em>Rudyard Kipling (1899):</em><br>\"Take up the White Man's burden—<br>Send forth the best ye breed—<br>Go bind your sons to exile<br>To serve your captives' need;<br>To wait in heavy harness,<br>On fluttered folk and wild—<br>Your new-caught, sullen peoples,<br>Half-devil and half-child.<br>Take up the White Man's burden—<br>The savage wars of peace—<br>Fill full the mouth of Famine<br>And bid the sickness cease...\"<br><br><em>E. D. Morel (1920):</em><br>\"It is the Africans who carry the true burden. What has modern European imperialism brought to their ancestral lands? It was not the desire to 'fill the mouth of famine' that drove British and European syndicates into Africa, but the insatiable lust for rubber, ivory, palm oil, and gold.<br><br>Under the mask of a 'civilising mission', the capitalist powers have dispossessed ancient peoples of their soil, forced them into slave-like labour through military terror, and disrupted tribal systems that had endured for a thousand years. The European trader returns home laden with fortune and honours; the African remains stripped of his freedom, his heritage, and his land.\"",
-      "hinge_question": "<strong>Think:</strong> What phrase does Kipling use to describe colonized peoples, and what phrase does Morel use to describe the true motive of European powers?<br><br><strong>Pair:</strong> Compare Kipling's view of empire as a selfless moral sacrifice (\"bind your sons to exile... to serve your captives' need\") with Morel's view of empire as armed commercial theft (\"insatiable lust for rubber, ivory, and gold\"). Discuss: which interpretation best explains Britain's 19th-century imperial expansion?<br><br><strong>Share:</strong> How does the debate between Kipling and Morel mirror the wider historical debate between \"Optimist\" and \"Pessimist\" historians of the Industrial Revolution?",
-      "audio_file": "/audio/reading/second_british_empire/r3.mp3",
-      "questions": [
-        "How does Rudyard Kipling characterize non-European colonized peoples in his 1899 poem?",
-        "According to E.D. Morel, what was the real motive that drove European syndicates into Africa?",
-        "What term describes the patronizing attitude that treated colonized adults as \"half-children\"?"
-      ],
-      "source_type": "polemical_treatise",
-      "source_type_label": "Imperial Verse & Anti-Imperial Exposé",
-      "is_primary": true,
       "lesson_id": "lesson_4",
       "lesson_label": "Enquiry 4",
-      "studio_audio": "/audio/reading/second_british_empire/r3.mp3",
-      "studio_voice_label": "Studio Male Historian · Archival Reading",
-      "provenance_tier": "adapted_primary",
-      "provenance_note": "Pairs Rudyard Kipling’s 1899 imperial verse with an adapted summary of E. D. Morel’s 1920 critique of colonial exploitation.",
+      "short_tab_title": "4. Kipling vs Labouchère",
+      "literary_mode": "verbatim_literature",
+      "provenance_tier": "verbatim_literature",
+      "source_type": "classic_verse",
+      "source_type_label": "1899 Imperial Verse & Satirical Riposte",
+      "is_primary": true,
+      "is_adapted": false,
+      "book_title": "\"The White Man’s Burden\" Answered by \"The Brown Man’s Burden\" (February 1899)",
+      "author": "Rudyard Kipling & Henry Labouchère (February 1899)",
+      "provenance_note": "Verbatim public-domain stanzas from Rudyard Kipling’s February 1899 poem paired directly with Henry Labouchère’s satirical reply in Truth magazine the same month.",
+      "author_context": "In February 1899, poet Rudyard Kipling framed imperial conquest as a noble, thankless duty. Within days, Radical MP and journalist Henry Labouchère published a biting parody in London’s Truth magazine, exposing how \"civilising\" slogans masked machine-gun violence and greed.",
+      "cover_image": "/images/ks3_sbe/sbe_l4_s0_berlin_conference_roessler_1884.jpg",
+      "cover_caption": "Adalbert von Rößler’s 1884 engraving of Chancellor Bismarck and Western diplomats seated around the Berlin Conference table beneath a huge wall map of Africa.",
       "vocabVault": [
         {
           "term": "Paternalism",
-          "def": "The patronising imperial belief that colonised peoples were like children needing European rule and discipline."
+          "pronunciation": "puh-TUR-nul-iz-um",
+          "def": "The patronising imperial claim that colonised adults were like children needing European rule."
         },
         {
-          "term": "Civilising Mission",
-          "def": "The moral excuse used by European empires claiming conquest brought Christianity, railways, medicine, and order."
+          "term": "Henry Labouchère",
+          "pronunciation": "lah-boo-SHAIR",
+          "def": "British MP and editor of Truth magazine who mocked Kipling’s poem in February 1899."
         },
         {
-          "term": "Capitalist Syndicate",
-          "def": "Chartered business companies formed to extract African rubber, gold, diamonds, and palm oil for European profit."
+          "term": "Philanthropy",
+          "pronunciation": "fih-LAN-thruh-pee",
+          "def": "Generous concern for human welfare—used sarcastically by Labouchère to mock fake imperial excuses."
         },
         {
-          "term": "Scramble for Africa",
-          "def": "The rapid partition of over 90% of Africa by rival European powers between the 1880s and 1914."
+          "term": "Maxim Gun",
+          "pronunciation": "MAK-sim gun",
+          "def": "The world’s first portable machine gun (firing 600 rounds a minute), used ruthlessly during the Scramble for Africa."
         }
       ],
+      "extract": "In February 1899, Rudyard Kipling urged Western empires to rule overseas peoples as a stern moral duty. Days later, British MP Henry Labouchère answered Kipling stanza for stanza in London’s Truth magazine.\n\n<div class=\"reading-stanza\"><em>Rudyard Kipling, \"The White Man’s Burden\" (1899):</em><br>Take up the White Man’s burden—<br>Send forth the best ye breed—<br>Go bind your sons to exile<br>To serve your captives’ need;<br>To wait in heavy harness,<br>On fluttered folk and wild—<br>Your new-caught, sullen peoples,<br>Half-devil and half-child.</div>\n\n<div class=\"reading-stanza\">Take up the White Man’s burden—<br>The savage wars of peace—<br>Fill full the mouth of Famine<br>And bid the sickness cease.</div>\n\n<div class=\"reading-stanza\"><em>Henry Labouchère, \"The Brown Man’s Burden\" (1899):</em><br>Pile on the brown man’s burden,<br>Compel him to be free;<br>Let all your manifestoes<br>Reek with philanthropy.<br>And if with heathen folly<br>He dares your will dispute,<br>Then, in the name of freedom,<br>Don’t hesitate to shoot.</div>\n\n<div class=\"reading-stanza\">Pile on the brown man’s burden;<br>And, if ye rouse his hate,<br>Meet his old-fashioned reasons<br>With Maxims up to date.<br>With shells and dumdum bullets<br>A hundred times make plain<br>The brown man’s loss must ever<br>Imply the white man’s gain.</div>\n\nTogether, these rival 1899 poems show that while imperial writers preached duty, critics at home already exposed Maxim-gun conquest and greed.",
       "parent_discussion": [
         {
-          "question": "How did Rudyard Kipling’s 1899 poem portray imperial rule, and why is his language deeply offensive?",
-          "answer": "He portrayed empire as a noble, selfless duty (\"White Man’s Burden\") while demeaning colonised peoples with racist stereotypes as \"sullen\" and childlike."
+          "question": "How does Rudyard Kipling try to make imperial conquest sound noble, and why is his wording deeply offensive?",
+          "answer": "He portrays colonisers as selfless servants ending famine and sickness, while insulting colonised peoples as \"sullen\" and \"half-devil and half-child.\""
         },
         {
-          "question": "How did campaigner E. D. Morel turn Kipling’s title upside down in The Black Man’s Burden (1920)?",
-          "answer": "Morel argued Africans carried the real burden—losing their land, freedom, and lives so European companies could extract rubber, gold, and palm oil."
+          "question": "How does Henry Labouchère flip Kipling’s opening line (\"Take up\" vs \"Pile on\") to expose the truth of empire?",
+          "answer": "Labouchère shows empires did not carry a burden for others—they piled taxes, machine-gun terror, and loss of land onto colonised peoples for European profit."
         },
         {
-          "question": "Why does pairing Kipling (1899) with Morel (1920) help historians understand how empire was debated at the time?",
-          "answer": "It shows both how imperial propaganda justified conquest to voters at home and that anti-imperial critics already exposed its brutality using hard evidence."
+          "question": "What real weapon does Labouchère name in \"Meet his old-fashioned reasons / With Maxims up to date\"?",
+          "answer": "Hiram Maxim’s rapid-fire machine gun, used by British forces at battles like Omdurman (1898) to mow down African spears and old rifles."
         }
       ],
-      "short_tab_title": "4. Morel vs Kipling (1899–1920)"
+      "story_check": [
+        {
+          "question": "How soon after Kipling’s \"The White Man’s Burden\" did Henry Labouchère publish \"The Brown Man’s Burden\"?",
+          "options": [
+            "Fifty years later in 1949",
+            "Within days, in February 1899",
+            "Before the Battle of Trafalgar in 1805",
+            "During the 1857 Indian Uprising"
+          ],
+          "correctIndex": 1,
+          "feedback": "Both poems appeared in February 1899, proving anti-imperialists challenged Kipling’s propaganda immediately."
+        },
+        {
+          "question": "What does Labouchère say imperial powers actually do if a colonised person \"dares your will dispute\"?",
+          "options": [
+            "Invite them to vote in Berlin",
+            "Offer fair market prices for land",
+            "\"In the name of freedom, / Don’t hesitate to shoot\"",
+            "Sign an equal alliance treaty"
+          ],
+          "correctIndex": 2,
+          "feedback": "Labouchère’s satire exposes the hypocrisy of preaching freedom while shooting anyone who resisted colonial rule."
+        },
+        {
+          "question": "What are the \"Maxims up to date\" mentioned in Labouchère’s final stanza?",
+          "options": [
+            "Latin proverbs in schoolbooks",
+            "Rapid-fire Maxim machine guns",
+            "Steam-powered cotton looms",
+            "Telegraph cables under the sea"
+          ],
+          "correctIndex": 1,
+          "feedback": "Labouchère puns on \"maxims\" (wise sayings) and Hiram Maxim’s deadly automatic machine gun."
+        }
+      ],
+      "monday_cold_call": {
+        "question": "How did Henry Labouchère use the word \"Maxims\" in 1899 to mock Kipling’s \"civilising mission\"?",
+        "answer": "He punned on moral \"maxims\" and the Maxim machine gun, showing European empires answered African arguments for freedom with industrial gunfire and profit-seeking."
+      },
+      "hinge_question": "<strong>Think:</strong> Spot the two verbs: why does Kipling say \"Take up\" while Labouchère says \"Pile on\"?<br><br><strong>Pair:</strong> Explain Labouchère’s double meaning in \"Meet his old-fashioned reasons / With Maxims up to date.\"<br><br><strong>Share:</strong> Why is it vital for historians to know that Britons like Labouchère condemned imperial racism in 1899 itself?",
+      "questions": [
+        "How did Rudyard Kipling describe colonised peoples in February 1899?",
+        "What weapon did Henry Labouchère highlight in his reply poem?",
+        "According to Labouchère’s closing lines, who really gained and who lost from empire?"
+      ],
+      "audio_file": "/audio/reading/second_british_empire/r3.mp3",
+      "studio_audio": "/audio/reading/second_british_empire/r3.mp3",
+      "studio_voice_label": "Studio Male Historian · Classic Literature"
     },
     {
       "lesson_index": 4,
-      "book_title": "The Industrial Revolution and Global Empire: The Final Verdict",
-      "author": "Sir John Clapham vs E. P. Thompson",
-      "cover_image": "/images/ks3_sbe/sbe_l5_s2_punch_capital_and_labour_1843.jpg",
-      "cover_caption": "'Capital and Labour' (Punch, July 1843), contrasting aristocratic luxury at the top of Victorian Britain with exhausted industrial workers below.",
-      "author_context": "The classic historical debate between \"Optimist\" economic historians who emphasize long-term wealth, technology, and railways, versus \"Pessimist\" social historians who emphasize human exploitation, inequality, and colonial dispossession.",
-      "is_adapted": true,
-      "extract": "The Great Exhibition of 1851 at the Crystal Palace celebrated Britain as the undisputed Workshop of the World. Six million visitors marvelled at hydraulic presses, electric telegraphs, and Indian diamonds. Yet in the shadows of this imperial triumph lay two starkly contrasting balance sheets.<br><br>To the Optimists, the 19th-century transformation was a triumphant march of progress: real wages eventually rose, railways united continents, cholera was conquered by clean sewers, and parliamentary democracy expanded from rotten boroughs to mass secret ballots.<br><br>To the Pessimists and anti-colonial scholars, that glittering wealth came at an intolerable moral price: three generations of British factory children worked to exhaustion in unventilated mills, unsewered industrial cellars killed labourers before the age of twenty, and across India and Africa, ancient cultures and artisanal industries were dismantled to feed European industrial syndicates.",
-      "hinge_question": "<strong>Think:</strong> Identify two key arguments made by the Optimist school and two made by the Pessimist school.<br><br><strong>Pair:</strong> Can an historian reach a single verdict on the British Empire, or was it simultaneously an era of extraordinary technological progress and catastrophic human exploitation?<br><br><strong>Share:</strong> How does understanding both perspectives make you a more rigorous disciplinary historian?",
-      "audio_file": "/audio/reading/second_british_empire/r4.mp3",
-      "questions": [
-        "How many visitors attended the 1851 Great Exhibition at the Crystal Palace?",
-        "What positive achievements do Optimist historians point to?",
-        "What human costs do Pessimist and anti-colonial historians highlight?"
-      ],
-      "source_type": "historiographical_debate",
-      "source_type_label": "Historiographical Academic Debate",
-      "is_primary": false,
       "lesson_id": "lesson_5",
       "lesson_label": "Enquiry 5",
-      "studio_audio": "/audio/reading/second_british_empire/r4.mp3",
-      "studio_voice_label": "Studio Male Historian · Scholarship",
-      "provenance_tier": "scholarly_summary",
-      "provenance_note": "Classroom synthesis contrasting \"Optimist\" and \"Pessimist\" historians on the social and imperial cost of British industrialisation.",
+      "short_tab_title": "5. Morel & Naoroji’s Ledgers",
+      "literary_mode": "storied_micro_history",
+      "provenance_tier": "storied_micro_history",
+      "source_type": "micro_history",
+      "source_type_label": "True Historical Story (1851–1904)",
+      "is_primary": false,
+      "is_adapted": false,
+      "book_title": "Rifles on the Return Tide: How Shipping Clerks & Tax Ledgers Judged Empire",
+      "author": "The History Revision Hub · Historical Story (1851–1904)",
+      "provenance_note": "Original true historical story following E. D. Morel on Antwerp docks and Dadabhai Naoroji in Westminster as they tested imperial claims of progress.",
+      "author_context": "At the 1851 Great Exhibition, Victorian Britain celebrated railways, telegraphs, and global wealth. Yet two tireless investigators—shipping clerk E. D. Morel and Indian economist MP Dadabhai Naoroji—used Europe’s own trade ledgers to expose the human cost beneath imperial glitter.",
+      "cover_image": "/images/ks3_sbe/sbe_ki8_ed_morel_portrait.jpg",
+      "cover_caption": "Investigative journalist E. D. Morel seated at his desk beside overflowing wicker baskets of shipping evidence in front of \"Philips’ New Map of Africa.\"",
       "vocabVault": [
         {
-          "term": "Great Exhibition (1851)",
-          "def": "The Crystal Palace showcase in London celebrating Britain’s industrial inventions and imperial reach before six million visitors."
+          "term": "E. D. Morel",
+          "pronunciation": "mor-EL",
+          "def": "Liverpool shipping clerk whose dockside checks exposed forced-labour rubber terror in King Leopold II’s Congo."
         },
         {
-          "term": "Workshop of the World",
-          "def": "Mid-Victorian Britain’s nickname when it produced roughly half the world’s factory iron, coal, and cotton cloth."
+          "term": "Cargo Manifest",
+          "pronunciation": "KAR-goh MAN-ih-fest",
+          "def": "An official port list recording every crate and ton of goods loaded onto or off a merchant ship."
         },
         {
-          "term": "Optimist Historians",
-          "def": "Economic historians (like Sir John Clapham) emphasising long-term rises in wages, railways, sanitation, and eventual democracy."
+          "term": "Dadabhai Naoroji",
+          "pronunciation": "DAH-dah-bye now-ROH-jee",
+          "def": "Indian scholar and Britain’s first Asian MP (1892), who proved colonial rule drained millions of pounds from India."
         },
         {
-          "term": "Pessimist Historians",
-          "def": "Social and anti-colonial historians (like E. P. Thompson) emphasising child labour, slum mortality, and colonial exploitation."
+          "term": "Drain of Wealth",
+          "pronunciation": "DRAYN uv WELTH",
+          "def": "Naoroji’s economic proof that Indian peasant taxes flowed out to London for salaries, pensions, and wars without return."
         }
       ],
+      "extract": "On a misty morning in the late 1890s, twenty-four-year-old British shipping clerk Edmund Dene Morel stood on the cobblestones of Antwerp docks. His task for a Liverpool steamship firm looked dull: checking cargo lists for vessels trading with King Leopold II’s Congo Free State.\n\nWeek after week, Morel watched steamers arrive from central Africa crammed with valuable wild rubber and elephant ivory. Then he read the return cargo sheets, and his blood ran cold. No cotton cloth, tools, or coins were sailing back to pay African workers. Instead, ships left Antwerp carrying crates of rifles, ammunition, and iron chains. \"I had stumbled upon a secret society of murderers,\" Morel recalled. Those shipping numbers proved that rubber was being forced from Congolese villagers at gunpoint—sparking Europe’s first mass human-rights campaign.\n\nAcross the North Sea in London, Indian economist Dadabhai Naoroji was reading official British tax books just as closely. Back in 1851, six million visitors to London’s glass Crystal Palace had cheered railways, telegraphs, and steamships as proof that empire helped the world.\n\nElected to Parliament in 1892, Naoroji showed the hidden side of the ledger. Every year, millions of pounds in Indian peasant taxes flowed out to Britain as a silent \"Drain of Wealth,\" leaving families defenceless when terrible famines struck.",
       "parent_discussion": [
         {
-          "question": "What achievements do \"Optimist\" historians highlight when judging nineteenth-century British industrialisation?",
-          "answer": "Rising long-term living standards, railways, clean sewers conquering cholera, and expanding voting rights."
+          "question": "What clue in the Antwerp shipping lists made young clerk E. D. Morel realise slavery was operating in the Congo?",
+          "answer": "Ships arrived full of rich rubber and ivory, yet sailed back to Africa carrying zero trade goods for payment—only rifles, bullets, and chains."
         },
         {
-          "question": "What human costs do \"Pessimist\" and anti-colonial historians place on the other side of the balance sheet?",
-          "answer": "Generations of exhausted child mill workers, deadly industrial slums, and the dismantling of Indian and African economies for imperial profit."
+          "question": "How did Dadabhai Naoroji use Britain’s own official government numbers to challenge the British Raj?",
+          "answer": "He calculated the \"Drain of Wealth,\" proving millions in Indian taxes left for London pensions and wars each year while Indian peasants starved in famines."
         },
         {
-          "question": "Why can two skilled historians study the exact same Victorian century and reach such different verdicts?",
-          "answer": "Because they weigh different evidence—national economic averages and long-term progress versus lived working-class and colonised suffering."
+          "question": "Why do historians reach such different verdicts when weighing the 1851 Crystal Palace achievements against Morel’s and Naoroji’s evidence?",
+          "answer": "Railways, telegraphs, and industrial inventions transformed global links, yet much of that wealth rested on forced labour, unfair taxes, and colonial extraction."
         }
       ],
-      "short_tab_title": "5. Empire & Industry Verdict"
+      "story_check": [
+        {
+          "question": "What were the ships leaving Antwerp carrying back to the Congo when E. D. Morel checked their cargo manifests?",
+          "options": [
+            "Lancashire cotton cloth and farm ploughs",
+            "Crates of rifles, ammunition, and iron chains",
+            "Gold sovereigns to pay rubber harvesters",
+            "Medical supplies and grain"
+          ],
+          "correctIndex": 1,
+          "feedback": "Morel saw ships returning to the Congo with rifles, bullets, and chains instead of trade goods—proving rubber was taken by force."
+        },
+        {
+          "question": "What milestone did Dadabhai Naoroji achieve at Westminster in 1892?",
+          "options": [
+            "He opened the Great Exhibition at the Crystal Palace",
+            "He became the first Asian Member of the British Parliament",
+            "He designed HMS Warrior’s iron armour",
+            "He chaired the Berlin Conference"
+          ],
+          "correctIndex": 1,
+          "feedback": "Elected MP for Finsbury Central in 1892, Dadabhai Naoroji became Britain’s first Asian MP."
+        },
+        {
+          "question": "What did Naoroji call the yearly outflow of Indian taxes to pay British salaries, pensions, and wars?",
+          "options": [
+            "The Two-Power Standard",
+            "The Navigation Loop",
+            "The Drain of Wealth",
+            "The Doctrine of Lapse"
+          ],
+          "correctIndex": 2,
+          "feedback": "Naoroji named this systematic extraction the \"Drain of Wealth\" in Poverty and Un-British Rule in India."
+        }
+      ],
+      "monday_cold_call": {
+        "question": "How did E. D. Morel on Antwerp docks prove that Congo rubber was being gathered through terror without even visiting Africa?",
+        "answer": "He noticed ships arrived packed with rubber and ivory but sailed back carrying zero payment goods—only crates of rifles, bullets, and chains."
+      },
+      "hinge_question": "<strong>Think:</strong> Why did zero cloth or coins on outbound Antwerp ships prove forced labour?<br><br><strong>Pair:</strong> Compare the Crystal Palace view of empire with Dadabhai Naoroji’s \"Drain of Wealth\"—can both contain real facts?<br><br><strong>Share:</strong> How do historians build a balanced verdict without excusing colonial exploitation?",
+      "questions": [
+        "What did E. D. Morel spot on the cargo lists of ships leaving Antwerp for the Congo?",
+        "Who was Dadabhai Naoroji, and what did his \"Drain of Wealth\" theory prove?",
+        "What technological achievements did visitors celebrate at the 1851 Crystal Palace?"
+      ],
+      "audio_file": "/audio/reading/second_british_empire/r4.mp3",
+      "studio_audio": "/audio/reading/second_british_empire/r4.mp3",
+      "studio_voice_label": "Studio Male Historian · Storied History"
     }
   ],
   "edition": "2026.1",

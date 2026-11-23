@@ -1,0 +1,53 @@
+{
+  "unitId": "ks2_romans",
+  "clips": {
+    "r4": {
+      "hash": "3e0283090cd9c18c58462b5a",
+      "bytes": 271148,
+      "voiceKey": "female_historian",
+      "badge": "Studio Female Historian · KS2 Storyteller",
+      "words": 157,
+      "updatedAt": "2026-11-23T18:42:03.119Z"
+    },
+    "r5": {
+      "hash": "25d63b19f2e95767f291e26e",
+      "bytes": 342188,
+      "voiceKey": "female_historian",
+      "badge": "Studio Female Historian · KS2 Storyteller",
+      "words": 165,
+      "updatedAt": "2026-11-23T18:42:03.826Z"
+    },
+    "r2": {
+      "hash": "aaff244a0085e693a94f134d",
+      "bytes": 331340,
+      "voiceKey": "female_historian",
+      "badge": "Studio Female Historian · KS2 Storyteller",
+      "words": 166,
+      "updatedAt": "2026-11-23T18:42:38.823Z"
+    },
+    "r3": {
+      "hash": "23c28664d4f14e2bedd745bc",
+      "bytes": 265772,
+      "voiceKey": "female_historian",
+      "badge": "Studio Female Historian · KS2 Storyteller",
+      "words": 151,
+      "updatedAt": "2026-11-23T18:42:39.434Z"
+    },
+    "r0": {
+      "hash": "4585bb80c4a69f7519aba211",
+      "bytes": 316652,
+      "voiceKey": "female_historian",
+      "badge": "Studio Female Historian · KS2 Storyteller",
+      "words": 161,
+      "updatedAt": "2026-11-23T18:42:43.472Z"
+    },
+    "r1": {
+      "hash": "e80a9be744ad601a025328bb",
+      "bytes": 308780,
+      "voiceKey": "female_historian",
+      "badge": "Studio Female Historian · KS2 Storyteller",
+      "words": 155,
+      "updatedAt": "2026-11-23T18:42:44.166Z"
+    }
+  }
+}

@@ -36,6 +36,7 @@ Before executing any specialized publishing or generation workflow, read the mat
 - **KS3 Unit Orchestration & Stage Sync:** `.agents/skills/ks3-publishing-engine/SKILL.md`
 - **KS3 & GCSE Pupil Workbooks + Edexcel Tariffs:** `.agents/skills/pupil-workbook-engine/SKILL.md`
 - **Master Knowledge Retrieval Companions ("Quiz Packs"):** `.agents/skills/retrieval-companion-engine/SKILL.md`
+- **KS2 & KS3 Literary Companions (3-Voice Read-Aloud Studio):** `.agents/skills/literary-companion-engine/SKILL.md`
 - **Quiz & Vocab Injection:** `.agents/skills/auto-quiz-generator/SKILL.md` & `.agents/skills/auto-vocab-generator/SKILL.md`
 - **Pre-Production Security, Bundle & Asset Hygiene:** `.agents/skills/production-release-gate/SKILL.md`
 
@@ -87,3 +88,7 @@ Before executing any specialized publishing or generation workflow, read the mat
    - Print SVGs must include static overrides (`svg g { opacity: 1 !important; }`) so headless Chromium never renders blank animated frames.
 3. **Automated Layout & Page-Budget Engine:**
    - Every PDF compiler must run `scripts/auto_calibrate_engine.cjs` in Puppeteer before `scripts/audit_page_budget.cjs` / `scripts/check_overflows.cjs` (`0px` overflow, `>= 95%` optimal space utilization) rather than manually hacking prose strings.
+4. **Digital Screen Ergonomics, Mobile Measure & Parallel `/swarm` Hygiene:**
+   - **Above-the-Fold Discipline:** Never stack duplicate back buttons or multi-card *"How This Works"* intros above active learning workspaces; use 1-line `<details>` disclosures and dock interactive toolbars/audio (`position: sticky`) directly to the content they control.
+   - **Mobile (`390px`) Line Measure & Safe Areas:** Flatten nested card padding on `<= 768px` so body prose maintains `7–10` words/line (`hyphens: none`), clear fixed bottom nav bars (`padding-bottom >= 96px`), use FA6 Free icons only, and never render unparsed `*...*` markdown in HTML views.
+   - **Parallel `/swarm` Safety:** Isolate multi-unit content authoring in `data/<feature>/<unit_id>.json` sidecars synced via wrapper-preserving scripts (`window.UNIT_DATA` vs `export default`) and refresh `audio_hashes.json` on pure HTML-tag normalizations to preserve `$0.00` TTS parity.

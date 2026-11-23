@@ -3079,8 +3079,8 @@ export default {
       ],
       "prefix": "KT1",
       "title": "KT 1.3: The Berlin Crisis (1948–49), NATO, Arms Race & Warsaw Pact",
-      "enquiry": "How did the 1948–49 Berlin Crisis transform political rivalry into permanent German division and rival military alliances?",
-      "enquiryQuestion": "How did the 1948–49 Berlin Crisis transform political rivalry into permanent German division and rival military alliances?",
+      "enquiry": "How did the 1948–49 Berlin Crisis divide Germany and create rival military alliances?",
+      "enquiryQuestion": "How did the 1948–49 Berlin Crisis divide Germany and create rival military alliances?",
       "specification_anchor": "Key topic 1.2 & 1.3: Berlin division into zones; the Berlin Crisis (blockade and airlift) of 1948–49 and its impact; formation of FRG and GDR; formation of NATO (1949), the arms race, and the Warsaw Pact (1955).",
       "card_image": "/images/upgraded/gcse-cw-cme/cw_l3_berlin_airlift_tempelhof_runway_1948.jpg",
       "card_position": "center center",
@@ -4397,8 +4397,8 @@ export default {
       ],
       "prefix": "KT1",
       "title": "KT 1.4: The Hungarian Uprising & International Reaction, 1956",
-      "enquiry": "Why did Khrushchev crush the 1956 Hungarian Uprising with tanks — and why did the West not intervene militarily?",
-      "enquiryQuestion": "Why did Khrushchev crush the 1956 Hungarian Uprising with tanks — and why did the West not intervene militarily?",
+      "enquiry": "Why did Khrushchev crush the 1956 Hungarian Uprising—and why didn’t the West help?",
+      "enquiryQuestion": "Why did Khrushchev crush the 1956 Hungarian Uprising—and why didn’t the West help?",
       "specification_anchor": "Key topic 1.3: Events in 1956 leading to the Hungarian Uprising, and Khrushchev’s response; the international reaction to the Soviet invasion of Hungary.",
       "card_image": "/images/upgraded/gcse-cw-cme/cw_l4_budapest_kossuth_square_1956.jpg",
       "card_position": "center center",
@@ -5647,8 +5647,8 @@ export default {
       ],
       "prefix": "KT2",
       "title": "KT 2.1: The Berlin Crisis, Summit Meetings & Construction of the Berlin Wall, 1958–63",
-      "enquiry": "Why did Khrushchev replace his 1958 Berlin Ultimatum with a concrete wall in August 1961 — and how did it reshape superpower relations?",
-      "enquiryQuestion": "Why did Khrushchev replace his 1958 Berlin Ultimatum with a concrete wall in August 1961 — and how did it reshape superpower relations?",
+      "enquiry": "Why did the Berlin Crisis end in a concrete wall in August 1961?",
+      "enquiryQuestion": "Why did the Berlin Crisis end in a concrete wall in August 1961?",
       "specification_anchor": "Key topic 2.1: The refugee problem in Berlin, Khrushchev’s Berlin Ultimatum (1958), and the summit meetings of 1959–61; the construction of the Berlin Wall (1961); impact of the construction of the Berlin Wall on US–Soviet relations; Kennedy’s visit to West Berlin in 1963.",
       "card_image": "/images/upgraded/gcse-cw-cme/cw_l5_kennedy_khrushchev_vienna_1961.jpg",
       "card_position": "center center",
@@ -7016,8 +7016,8 @@ export default {
       ],
       "prefix": "KT2",
       "title": "KT 2.2: The Cuban Revolution, Bay of Pigs & The Thirteen Days, 1959–62",
-      "enquiry": "How did Cuba bring the USA and USSR to the brink of nuclear war in October 1962 — and why did the crisis usher in superpower arms control?",
-      "enquiryQuestion": "How did Cuba bring the USA and USSR to the brink of nuclear war in October 1962 — and why did the crisis usher in superpower arms control?",
+      "enquiry": "How did Cuba push the superpowers to the nuclear brink—and then toward safer rules?",
+      "enquiryQuestion": "How did Cuba push the superpowers to the nuclear brink—and then toward safer rules?",
       "specification_anchor": "Key topic 2.2: Soviet relations with Cuba, the Cuban Revolution and refusal of Fidel Castro to conform to US influence; the significance of the Bay of Pigs incident; the events of the Cuban Missile Crisis; the consequences of the Cuban Missile Crisis, including the \"hotline\", Limited Test Ban Treaty (1963), Outer Space Treaty (1967), and Nuclear Non-Proliferation Treaty (1968).",
       "card_image": "/images/upgraded/gcse-cw-cme/cw_l6_excomm_cabinet_room_oct_1962.jpg",
       "card_position": "center center",
@@ -8389,8 +8389,8 @@ export default {
       ],
       "prefix": "KT2",
       "title": "KT 2.3: Opposition in Czechoslovakia & Dubček’s Prague Spring, 1968",
-      "enquiry": "Why did Alexander Dubček’s \"Socialism with a human face\" alarm Leonid Brezhnev and Warsaw Pact hardliners in 1968?",
-      "enquiryQuestion": "Why did Alexander Dubček’s \"Socialism with a human face\" alarm Leonid Brezhnev and Warsaw Pact hardliners in 1968?",
+      "enquiry": "Why did Dubček’s 1968 ‘Prague Spring’ reforms alarm Moscow so deeply?",
+      "enquiryQuestion": "Why did Dubček’s 1968 ‘Prague Spring’ reforms alarm Moscow so deeply?",
       "specification_anchor": "Key topic 2.3: Opposition in Czechoslovakia to Soviet control; Antonín Novotný’s unpopularity and economic decline; Alexander Dubček and the Prague Spring reforms (\"Socialism with a human face\", April 1968); Warsaw Pact loyalty vs Soviet fears.",
       "card_image": "/images/upgraded/gcse-cw-cme/cw_l7_prague_spring_rip_assembly_1968.jpg",
       "card_position": "center top",
@@ -9800,8 +9800,8 @@ export default {
       ],
       "prefix": "KT2",
       "title": "KT 2.4: The Soviet Invasion of Czechoslovakia, Brezhnev Doctrine & International Reaction, 1968–70",
-      "enquiry": "Why did the August 1968 invasion of Czechoslovakia tighten Moscow’s grip on Eastern Europe yet fracture the wider Communist world without triggering US military action?",
-      "enquiryQuestion": "Why did the August 1968 invasion of Czechoslovakia tighten Moscow’s grip on Eastern Europe yet fracture the wider Communist world without triggering US military action?",
+      "enquiry": "How did the 1968 invasion of Czechoslovakia tighten Soviet control yet split Communism?",
+      "enquiryQuestion": "How did the 1968 invasion of Czechoslovakia tighten Soviet control yet split Communism?",
       "specification_anchor": "Key topic 2.4: The Soviet invasion of Czechoslovakia (August 1968) and passive resistance; Gustáv Husák and \"normalisation\"; the Brezhnev Doctrine; impact on US–Soviet relations and the international Communist movement (Yugoslavia, Romania, China, Eurocommunism).",
       "card_image": "/images/upgraded/gcse-cw-cme/cw_l8_prague_warsaw_pact_invasion_aug_1968.jpg",
       "card_position": "center center",
@@ -15340,8 +15340,8 @@ export default {
       ],
       "prefix": "KT3",
       "title": "KT 3.4: The Collapse of Eastern Europe, Fall of the Berlin Wall & End of the USSR, 1989–91",
-      "enquiry": "Why did abandoning the Brezhnev Doctrine topple the Berlin Wall in 1989 and bring about the collapse of the Soviet Union itself by December 1991?",
-      "enquiryQuestion": "Why did abandoning the Brezhnev Doctrine topple the Berlin Wall in 1989 and bring about the collapse of the Soviet Union itself by December 1991?",
+      "enquiry": "Why did Soviet control in Eastern Europe—and the USSR itself—collapse between 1989 and 1991?",
+      "enquiryQuestion": "Why did Soviet control in Eastern Europe—and the USSR itself—collapse between 1989 and 1991?",
       "specification_anchor": "Key topic 3.3: The impact of Gorbachev’s ‘New Thinking’ on Eastern Europe; the loosening of the Soviet grip; the significance of the fall of the Berlin Wall (November 1989); the collapse of the Soviet Union (1990–91) and the end of the Warsaw Pact (1991).",
       "card_image": "/images/upgraded/gcse-cw-cme/cw_l12_berlin_wall_mauerfall_nov_1989.jpg",
       "card_position": "center center",
@@ -16718,161 +16718,6 @@ export default {
         }
       ],
       "extra_videos": []
-    }
-  ],
-  "guided_reading": [
-    {
-      "lesson_index": 1,
-      "lesson_id": "lesson_2",
-      "lesson_label": "KT 1.2",
-      "book_title": "Winston Churchill’s \"Sinews of Peace\" (Iron Curtain) Address at Fulton, Missouri (5 March 1946)",
-      "author": "Winston S. Churchill (Westminster College, Fulton, Missouri • 5 March 1946)",
-      "cover_image": "/images/cold_war/illingworth_iron_curtain_1946.jpg",
-      "cover_caption": "Leslie Illingworth’s famous cartoon \"No Peping!\" in the Daily Mail (6 March 1946), published the morning after Churchill’s Fulton speech.",
-      "author_context": "Speaking as former British Prime Minister with US President Harry S. Truman seated beside him on the platform in Missouri, Winston Churchill warned the Western democracies that wartime ally Joseph Stalin had sealed Eastern Europe behind a police-state barrier. Stalin angrily denounced the speech in Pravda as imperialist \"warmongering\" akin to Hitler.",
-      "source_type": "primary_speech",
-      "source_type_label": "Public Cold War Address (March 1946)",
-      "is_primary": true,
-      "is_adapted": false,
-      "extract": "\"From Stettin in the Baltic to Trieste in the Adriatic, an iron curtain has descended across the Continent. Behind that line lie all the capitals of the ancient states of Central and Eastern Europe. Warsaw, Berlin, Prague, Vienna, Budapest, Belgrade, Bucharest and Sofia; all these famous cities and the populations around them lie in what I must call the Soviet sphere, and all are subject, in one form or another, not only to Soviet influence but to a very high and, in some cases, increasing measure of control from Moscow.\n\nThe Communist parties, which were very small in all these Eastern States of Europe, have been raised to pre-eminence and power far beyond their numbers and are seeking everywhere to obtain totalitarian control. Police governments are prevailing in nearly every case, and so far, except in Czechoslovakia, there is no true democracy.\n\nI do not believe that Soviet Russia desires war. What they desire is the fruits of war and the indefinite expansion of their power and doctrines.\"",
-      "vocabVault": [
-        {
-          "term": "Iron Curtain",
-          "def": "Churchill’s famous metaphor for the political, ideological, and physical border dividing democratic Western Europe from Communist Eastern Europe after 1945."
-        },
-        {
-          "term": "Soviet Sphere",
-          "def": "The buffer zone of Eastern European satellite states liberated by the Red Army in 1944–45 and brought under one-party Communist control loyal to Moscow."
-        },
-        {
-          "term": "Totalitarian Control",
-          "def": "A system of government in which a single ruling party eliminates opposition parties, free newspapers, and independent courts, enforced by secret police."
-        }
-      ],
-      "parent_discussion": [
-        {
-          "question": "Why did President Truman’s silent presence on the stage beside Churchill in Fulton matter so much to Moscow?",
-          "answer": "Although Churchill was out of office, travelling on Truman’s presidential train and receiving Truman’s applause signalled to Stalin that Washington shared Churchill’s tough assessment of Soviet expansion."
-        },
-        {
-          "question": "Notice Churchill’s 1946 exception (\"except in Czechoslovakia, there is no true democracy\")—what happened there just two years later?",
-          "answer": "In February 1948, Czechoslovak Communists backed by Moscow staged a coup in Prague and Foreign Minister Jan Masaryk died, completing Stalin’s satellite buffer and spurring the US Congress to pass Marshall Aid."
-        },
-        {
-          "question": "Did Churchill claim Stalin wanted a third world war in 1946?",
-          "answer": "No—echoing George Kennan’s Long Telegram two weeks earlier, Churchill argued Moscow did not want hot war, but sought \"the fruits of war\" and steady political expansion wherever the West showed weakness."
-        }
-      ],
-      "hinge_question": "<strong>Think:</strong> Which two European port cities marked the northern and southern ends of Churchill’s \"Iron Curtain\"?<br><br><strong>Pair:</strong> How did Stalin view the exact same Eastern European states—as tyrannical conquest, or as a defensive buffer after losing 27 million Soviet citizens in WWII?<br><br><strong>Share:</strong> Why did this March 1946 speech accelerate the shift from the wartime Grand Alliance to Containment?",
-      "questions": [
-        "Which two cities did Churchill name at either end of the \"iron curtain\"?",
-        "How did small Communist parties gain power across Eastern Europe according to Churchill?",
-        "What did Churchill argue Soviet Russia desired instead of open war?"
-      ],
-      "provenance_tier": "verbatim_primary",
-      "provenance_note": "Verbatim extract from Winston S. Churchill, \"The Sinews of Peace\", Westminster College, Fulton, Missouri, 5 March 1946."
-    },
-    {
-      "lesson_index": 5,
-      "lesson_id": "lesson_6",
-      "lesson_label": "KT 2.2",
-      "book_title": "President John F. Kennedy’s Televised Address on the Cuban Missile Crisis (22 October 1962)",
-      "author": "President John F. Kennedy (Oval Office, The White House • 22 October 1962)",
-      "cover_image": "/images/cold_war/u2_cuba_missile_site_1962.jpg",
-      "cover_caption": "Declassified USAF U-2 reconnaissance photograph of Soviet medium-range ballistic missile launch pads under construction at San Cristóbal, Cuba (14 October 1962).",
-      "author_context": "Eight days after a US U-2 spy plane photographed Soviet nuclear missile sites in Cuba—90 miles off Florida—President Kennedy rejected air-force pressure for an immediate bombing strike and went live on television before 100 million Americans to announce a \"strict quarantine\" naval blockade.",
-      "source_type": "primary_speech",
-      "source_type_label": "Televised Crisis Broadcast (October 1962)",
-      "is_primary": true,
-      "is_adapted": false,
-      "extract": "\"Good evening, my fellow citizens: This Government, as promised, has maintained the closest surveillance of the Soviet military build-up on the island of Cuba. Within the past week, unmistakable evidence has established the fact that a series of offensive missile sites is now in preparation on that imprisoned island. The purpose of these bases can be none other than to provide a nuclear strike capability against the Western Hemisphere.\n\nActing, therefore, in the defense of our own security and of the entire Western Hemisphere, I have directed that the following initial steps be taken immediately: First, to halt this offensive build-up, a strict quarantine on all offensive military equipment under shipment to Cuba is being initiated. All ships of any kind bound for Cuba from whatever nation or port will, if found to contain cargoes of offensive weapons, be turned back.\n\nThird: It shall be the policy of this nation to regard any nuclear missile launched from Cuba against any nation in the Western Hemisphere as an attack by the Soviet Union on the United States, requiring a full retaliatory response upon the Soviet Union.\"",
-      "vocabVault": [
-        {
-          "term": "Quarantine",
-          "def": "Kennedy’s deliberate legal term for the 500-mile US naval blockade around Cuba—chosen because a formal \"blockade\" is legally an act of war."
-        },
-        {
-          "term": "ExComm",
-          "def": "The Executive Committee of the National Security Council—Kennedy’s secret crisis team of advisers who debated air strikes, invasion, or blockade during the Thirteen Days."
-        },
-        {
-          "term": "Retaliatory Response",
-          "def": "Mutually Assured Destruction (MAD) deterrence: warning Khrushchev that any missile fired from Cuba would trigger a full US nuclear strike directly on the USSR."
-        }
-      ],
-      "parent_discussion": [
-        {
-          "question": "Why did Kennedy carefully call the naval ring around Cuba a \"quarantine\" rather than a \"blockade\"?",
-          "answer": "Under international law a blockade is an act of war; calling it a defensive \"quarantine\" gave Khrushchev diplomatic room to turn Soviet ships around on 24 October without losing face or automatically triggering war."
-        },
-        {
-          "question": "Why had Khrushchev secretly placed medium-range missiles in Cuba in the first place?",
-          "answer": "To deter a second US invasion of Castro’s Cuba after the 1961 Bay of Pigs fiasco AND to close the nuclear missile gap—countering US Jupiter missiles stationed right on the Soviet border in Turkey."
-        },
-        {
-          "question": "Why did coming so close to nuclear war in October 1962 actually lead to safer superpower rules in 1963?",
-          "answer": "Horrified by how close miscalculation came to nuclear annihilation, Washington and Moscow installed the direct Moscow–Washington Hotline (June 1963) and signed the Limited Test Ban Treaty (August 1963)."
-        }
-      ],
-      "hinge_question": "<strong>Think:</strong> What secret concession did Robert Kennedy privately offer Soviet Ambassador Dobrynin alongside Khrushchev’s public withdrawal from Cuba?<br><br><strong>Pair:</strong> Why did removing US Jupiter missiles from Turkey have to be kept secret from NATO allies in 1962?<br><br><strong>Share:</strong> Who emerged stronger politically from the Thirteen Days—Kennedy (praised at home) or Khrushchev (ousted in 1964)?",
-      "questions": [
-        "What \"unmistakable evidence\" had the US government discovered in Cuba in October 1962?",
-        "What order did Kennedy give regarding ships carrying offensive military equipment toward Cuba?",
-        "How did Kennedy warn the United States would respond if any nuclear missile were launched from Cuba?"
-      ],
-      "provenance_tier": "verbatim_primary",
-      "provenance_note": "Verbatim extract from President John F. Kennedy’s Radio and Television Report to the American People on the Soviet Arms Buildup in Cuba, 22 October 1962."
-    },
-    {
-      "lesson_index": 11,
-      "lesson_id": "lesson_12",
-      "lesson_label": "KT 3.4",
-      "book_title": "Mikhail Gorbachev’s Farewell Resignation Address from the Kremlin (25 December 1991)",
-      "author": "President Mikhail S. Gorbachev (Televised Kremlin Broadcast, Moscow • 25 December 1991)",
-      "cover_image": "/images/cold_war/mikhail_gorbachev_kremlin_1991.jpg",
-      "cover_caption": "Soviet President Mikhail Gorbachev at the Kremlin in 1991 during the final months of the Soviet Union.",
-      "author_context": "After Gorbachev’s \"Sinatra Doctrine\" allowed Eastern Europe to break free peacefully in 1989 and hardline Communists failed in their August 1991 coup, Russian President Boris Yeltsin and the leaders of Ukraine and Belarus dissolved the USSR into the Commonwealth of Independent States (CIS). On Christmas night 1991, Gorbachev went on television to resign—minutes before the red Soviet hammer-and-sickle flag was lowered over the Kremlin forever.",
-      "source_type": "primary_speech",
-      "source_type_label": "Televised Kremlin Resignation (25 December 1991)",
-      "is_primary": true,
-      "is_adapted": false,
-      "extract": "\"Dear compatriots, fellow citizens: Due to the situation which has evolved as a result of the formation of the Commonwealth of Independent States, I hereby discontinue my activities at the post of President of the Union of Soviet Socialist Republics.\n\nFate so ruled that when I found myself at the helm of this state it already was clear that something was wrong in this country. We had a lot of everything—land, oil and gas, other natural resources—and there was intellect and talent in abundance. However, we were living much worse than people in the industrialised countries were living and we were increasingly lagging behind them. The reason was obvious even then. This country was suffocating in the shackles of the bureaucratic command system. Doomed to cater to ideology, and suffer and carry the onerous burden of the arms race, it found itself at the breaking point.\n\nThe Cold War has ended. The arms race has stopped, as has the insane militarisation of the country, which had crippled our economy, public attitudes and morals. The threat of nuclear war has been removed.\"",
-      "vocabVault": [
-        {
-          "term": "Perestroika & Glasnost",
-          "def": "Gorbachev’s twin reforms from 1985: \"restructuring\" the stagnant Soviet command economy and \"openness\" allowing free criticism, which inadvertently unleashed nationalist secession across the 15 Soviet republics."
-        },
-        {
-          "term": "Sinatra Doctrine (1989)",
-          "def": "Moscow’s abandonment of the 1968 Brezhnev Doctrine—allowing Eastern European nations to choose their own political path (\"do it their way\") without fear of Soviet tank intervention."
-        },
-        {
-          "term": "Commonwealth of Independent States (CIS)",
-          "def": "The loose association formed in December 1991 by Russia (Boris Yeltsin), Ukraine, and Belarus that legally dissolved the Soviet Union and left Gorbachev a president without a country."
-        }
-      ],
-      "parent_discussion": [
-        {
-          "question": "In his own words on Christmas Day 1991, what two internal weaknesses did Gorbachev blame for bringing the Soviet Union to \"the breaking point\"?",
-          "answer": "The suffocating \"bureaucratic command system\" (planned economy lagging behind the West) and the \"onerous burden of the arms race\" (competing with US military and SDI spending)."
-        },
-        {
-          "question": "Did Gorbachev intend to destroy the Soviet Union when he launched Perestroika and Glasnost in 1985?",
-          "answer": "No—Gorbachev was a committed Communist trying to save and modernise socialism, but ending censorship (Glasnost) and abandoning force (the Sinatra Doctrine) unleashed democratic and nationalist revolutions he could no longer control."
-        },
-        {
-          "question": "Why is Gorbachev’s peaceful resignation in December 1991 considered one of the most consequential moments of the 20th century?",
-          "answer": "A nuclear-armed superpower possessing tens of thousands of warheads dissolved without a superpower war, permanently ending the 46-year Cold War division of Europe."
-        }
-      ],
-      "hinge_question": "<strong>Think:</strong> Which failed event in August 1991 destroyed Gorbachev’s remaining authority and turned Boris Yeltsin into Russia’s dominant leader?<br><br><strong>Pair:</strong> Compare Gorbachev’s choices in 1989–91 with Khrushchev in 1956 and Brezhnev in 1968—what did Gorbachev refuse to use?<br><br><strong>Share:</strong> Was the end of the Cold War driven mainly by Ronald Reagan’s SDI pressure or by Mikhail Gorbachev’s \"New Thinking\" and internal Soviet exhaustion?",
-      "questions": [
-        "Why did Gorbachev state the Soviet Union was living worse than Western industrialised nations despite rich oil, gas, and land?",
-        "What burden did Gorbachev say had pushed the Soviet economy to \"the breaking point\"?",
-        "Which three achievements in international security did Gorbachev claim in his final paragraph?"
-      ],
-      "provenance_tier": "verbatim_primary",
-      "provenance_note": "Verbatim English translation of President Mikhail Gorbachev’s televised farewell address from the Kremlin, Moscow, 25 December 1991."
     }
   ]
 };

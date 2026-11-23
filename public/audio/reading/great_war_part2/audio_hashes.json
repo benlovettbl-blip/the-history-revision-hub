@@ -2,39 +2,39 @@
   "unitId": "great_war_part2",
   "clips": {
     "r4": {
-      "hash": "7538f663e3b42ee1ac6904c7c898078b5850ee4b8a82f70b080ea3e594210b53",
-      "bytes": 451340,
+      "hash": "073ca62b62576b601309fbe0b221cfd1931e11de5aa0f570e4fe4136a6a0eff1",
+      "bytes": 382892,
       "voiceKey": "male_historian",
       "badge": "J. M. Keynes · Versailles Delegate",
-      "updatedAt": "2026-11-19T22:41:18.446Z"
+      "updatedAt": "2026-11-23T18:28:44.584Z"
     },
     "r0": {
-      "hash": "9bb987eb5aa91599d666a6c68dc79c00989c36d6df894d4810f24183150957a3",
-      "bytes": 421388,
+      "hash": "fa4fd9bd670d479493fd453d5cd197795ad4f29644a78c16cfe0510249b9f8bf",
+      "bytes": 424460,
       "voiceKey": "ww1_british_officer",
-      "badge": "Lt. Siegfried Sassoon · Infantry Officer",
-      "updatedAt": "2026-11-19T22:41:20.057Z"
+      "badge": "Lt. Wilfred Owen · War Poetry",
+      "updatedAt": "2026-11-23T18:28:48.359Z"
     },
     "r1": {
-      "hash": "4d4ab2b698d1a4f4aae1e2ee1dc41755b04c19be9f3b5ddb0332683af7140856",
-      "bytes": 434636,
-      "voiceKey": "ww1_german_voice",
-      "badge": "Lt. Ernst Jünger · German Frontline",
-      "updatedAt": "2026-11-19T22:41:21.601Z"
+      "hash": "245c9753cf8618cd68529cf4b399406511cce1c75a94676dc3e5e1182bf9d728",
+      "bytes": 425900,
+      "voiceKey": "male_historian",
+      "badge": "Studio Historian · Somme to Amiens",
+      "updatedAt": "2026-11-23T18:28:51.730Z"
     },
     "r2": {
-      "hash": "7de7dbf65bb5640d0fee322ae9ce00e02d87e9658058e429fb8ff37c22476f92",
-      "bytes": 290828,
+      "hash": "117ae349b4030c860cb76ce150e37a68f869662a4ad74cbf784a91a18c7de007",
+      "bytes": 396428,
       "voiceKey": "ww1_indian_sepoy",
-      "badge": "Garhwali Subadar · Indian Army Letters",
-      "updatedAt": "2026-11-19T22:43:20.946Z"
+      "badge": "Havildar Abdul Rahman · Indian Army Letters",
+      "updatedAt": "2026-11-23T18:28:43.395Z"
     },
     "r3": {
-      "hash": "65b8f91c125cafdd2de5ac30f49bc52b85b30aa96583579e3f219f70892ffa53",
-      "bytes": 335852,
+      "hash": "e2e00f30ee1f3eacea749d2fbc63b0e5bedfff4ad496c4468d3ea075cd0474f1",
+      "bytes": 428300,
       "voiceKey": "ww1_british_woman",
       "badge": "Vera Brittain · Wartime VAD Nurse",
-      "updatedAt": "2026-11-19T22:43:22.038Z"
+      "updatedAt": "2026-11-23T18:28:01.045Z"
     }
   }
 }

@@ -2,44 +2,44 @@
   "unitId": "australia",
   "clips": {
     "r0": {
-      "hash": "7ba5da2f20699fde3b69c7b6",
-      "bytes": 342092,
+      "hash": "6efa255fd4584b5c96f6b3f9",
+      "bytes": 346220,
       "voiceKey": "male_historian",
       "badge": "Studio Male Historian · Archival Reading",
-      "words": 224,
-      "updatedAt": "2026-11-20T16:32:45.174Z"
+      "words": 218,
+      "updatedAt": "2026-11-23T18:38:05.383Z"
     },
     "r3": {
-      "hash": "f2935a8de39364e641454e0b",
-      "bytes": 457100,
-      "voiceKey": "male_historian",
-      "badge": "Studio Male Historian · Scholarship",
-      "words": 228,
-      "updatedAt": "2026-11-20T16:34:12.352Z"
+      "hash": "6f4b34016cbc2662f1172010",
+      "bytes": 411980,
+      "voiceKey": "female_historian",
+      "badge": "Studio Female Historian · Classic Literature",
+      "words": 212,
+      "updatedAt": "2026-11-23T18:46:14.357Z"
     },
     "r4": {
-      "hash": "ae25764adcb772e731a4c3f6",
-      "bytes": 364460,
+      "hash": "3581bace2d2fa4f450a4c79d",
+      "bytes": 357740,
       "voiceKey": "male_historian",
       "badge": "Studio Male Historian · Archival Reading",
-      "words": 231,
-      "updatedAt": "2026-11-20T16:34:13.200Z"
+      "words": 227,
+      "updatedAt": "2026-11-23T18:38:37.487Z"
     },
     "r1": {
-      "hash": "8101f63777e90671686bb776",
-      "bytes": 335468,
-      "voiceKey": "male_historian",
-      "badge": "Studio Male Historian · Archival Reading",
-      "words": 205,
-      "updatedAt": "2026-11-20T16:34:19.535Z"
+      "hash": "1b55d811625b67f7eb01ba91",
+      "bytes": 363308,
+      "voiceKey": "female_historian",
+      "badge": "Studio Female Historian · Storied History",
+      "words": 208,
+      "updatedAt": "2026-11-23T18:46:12.712Z"
     },
     "r2": {
-      "hash": "caea4ee9fecf2e3d7d57e366",
-      "bytes": 344492,
-      "voiceKey": "male_historian",
-      "badge": "Studio Male Historian · Primary Chronicle",
-      "words": 204,
-      "updatedAt": "2026-11-20T16:34:20.330Z"
+      "hash": "6af3d98b69a39f9af87f8f5a",
+      "bytes": 373580,
+      "voiceKey": "female_historian",
+      "badge": "Studio Female Historian · Storied History",
+      "words": 212,
+      "updatedAt": "2026-11-23T18:46:13.519Z"
     }
   }
 }

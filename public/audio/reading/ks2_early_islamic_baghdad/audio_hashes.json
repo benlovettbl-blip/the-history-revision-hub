@@ -1,0 +1,53 @@
+{
+  "unitId": "ks2_early_islamic_baghdad",
+  "clips": {
+    "r4": {
+      "hash": "8cc75238ace8cede292763be",
+      "bytes": 342860,
+      "voiceKey": "female_historian",
+      "badge": "Studio Female Historian · KS2 Storyteller",
+      "words": 152,
+      "updatedAt": "2026-11-23T18:44:03.482Z"
+    },
+    "r5": {
+      "hash": "c6290616384c0962239ae921",
+      "bytes": 302060,
+      "voiceKey": "female_historian",
+      "badge": "Studio Female Historian · KS2 Storyteller",
+      "words": 147,
+      "updatedAt": "2026-11-23T18:44:04.205Z"
+    },
+    "r2": {
+      "hash": "05d0a52bd84e3fda80e22667",
+      "bytes": 329900,
+      "voiceKey": "female_historian",
+      "badge": "Studio Female Historian · KS2 Storyteller",
+      "words": 157,
+      "updatedAt": "2026-11-23T18:44:39.512Z"
+    },
+    "r3": {
+      "hash": "e0f8ec74b158fb02503b9057",
+      "bytes": 293900,
+      "voiceKey": "female_historian",
+      "badge": "Studio Female Historian · KS2 Storyteller",
+      "words": 149,
+      "updatedAt": "2026-11-23T18:44:40.135Z"
+    },
+    "r0": {
+      "hash": "e3bc9eaad285032915a54c6f",
+      "bytes": 325292,
+      "voiceKey": "female_historian",
+      "badge": "Studio Female Historian · KS2 Storyteller",
+      "words": 151,
+      "updatedAt": "2026-11-23T18:44:50.455Z"
+    },
+    "r1": {
+      "hash": "83e32d98f96805fa73dd547b",
+      "bytes": 322028,
+      "voiceKey": "female_historian",
+      "badge": "Studio Female Historian · KS2 Storyteller",
+      "words": 150,
+      "updatedAt": "2026-11-23T18:44:51.140Z"
+    }
+  }
+}

@@ -1,0 +1,578 @@
+[
+  {
+    "lesson_index": 0,
+    "lesson_id": "lesson_1",
+    "lesson_label": "Enquiry 1",
+    "short_tab_title": "Homer's Wine-Dark Sea",
+    "literary_mode": "verbatim_literature",
+    "provenance_tier": "verbatim_literature",
+    "source_type": "verse",
+    "source_type_label": "Ancient Greek Epic Verse",
+    "book_title": "The Odyssey (Sailing the Wine-Dark Aegean)",
+    "author": "Homer (Ancient Greek Epic Tradition, c. 750 BC)",
+    "provenance_note": "Public-domain English verse rendering of Homer's seafaring formulaic lines from Books 2 and 9 of 'The Odyssey' (c. 750 BC), preserving Homer's classic epithets 'rosy-fingered Dawn' and 'wine-dark sea'.",
+    "author_context": "Even when steep mountains split Ancient Greece into rival city-states, every Hellene loved chanting blind Homer's sea adventures! Read these rhythmic lines aloud to feel the splash of pine oars across the island-dotted Aegean Sea.",
+    "cover_image": "/units/ks2_ancient_greece/assets/attic_red_figure_kylix_cup.jpg",
+    "cover_caption": "Painted Athenian red-figure clay drinking cup (kylix, c. 480 BC), made in Athens and carried overseas aboard wooden Greek trading ships.",
+    "studio_audio": "/audio/reading/ks2_ancient_greece/r0.mp3",
+    "studio_voice_label": "Studio Male Historian · KS2 Storyteller",
+    "vocabVault": [
+      {
+        "term": "Aegean Sea",
+        "pronunciation": "ee-JEE-un SEE",
+        "def": "The island-filled sea between mainland Greece and modern Turkey that served as Greece's busy water highway."
+      },
+      {
+        "term": "Polis",
+        "pronunciation": "POH-liss",
+        "def": "An independent Greek city-state—such as Athens, Sparta, or Corinth—that guarded its own laws and coins."
+      },
+      {
+        "term": "Hellenes",
+        "pronunciation": "HEL-eenz",
+        "def": "The shared family name proud Greeks used for themselves across every mainland valley and Aegean island."
+      },
+      {
+        "term": "Bard",
+        "pronunciation": "BARD",
+        "def": "A skilled travelling poet-singer who chanted long epic tales like Homer's Odyssey from memory to lyre music."
+      }
+    ],
+    "extract": "Nearly three thousand years ago, travelling poets called bards stood in torchlit Greek halls and chanted adventure tales from memory. Across mountain valleys and scattered islands, every Hellene family knew Homer's <em>Odyssey</em>—the ten-year voyage of clever Odysseus sailing home to rocky Ithaca.\n\n<div class=\"reading-stanza\">As soon as early, rosy-fingered Dawn lit up the sky,<br>Odysseus called his eager shipmates down along the shore.<br>They climbed aboard the hollow ship and sat upon the benches,<br>Then struck the grey salt water all together with their oars!</div>\n\n<div class=\"reading-stanza\">Athena sent a singing breeze that raced behind the stern,<br>Rippling across the wine-dark sea and foaming round the prow.<br>They raised the tall pine mast on high and spread the shining sail,<br>As rocky islands slipped behind and dolphins leaped ahead!</div>\n\nWhenever Greek merchants loaded golden olive oil and painted clay cups onto wooden ships, Homer's sea-songs echoed across the waves. Even rival city-states felt like one Hellene family whenever a bard began to sing!",
+    "parent_discussion": [
+      {
+        "question": "Which two famous picture-phrases (epithets) does Homer use to describe sunrise and the deep Aegean water?",
+        "answer": "He calls sunrise 'rosy-fingered Dawn' and describes the deep rolling water at dusk or dawn as 'the wine-dark sea'."
+      },
+      {
+        "question": "How did Odysseus's crew move their wooden ship forward first, and what changed once goddess Athena sent a breeze?",
+        "answer": "First they pulled pine oars together from wooden benches; once the wind blew, they raised the pine mast and spread a white sail."
+      },
+      {
+        "question": "Why did sea voyages and shared poems like Homer's 'Odyssey' matter so much in a land divided by steep mountains?",
+        "answer": "Overland mountain tracks were slow, so sailing linked distant harbours while Homer's Greek poems united rival poleis as one Hellene culture."
+      }
+    ],
+    "story_check": [
+      {
+        "question": "Where was King Odysseus trying to sail home to in Homer's epic poem 'The Odyssey'?",
+        "options": [
+          "The island kingdom of rocky Ithaca",
+          "The desert cliffs of Thebes in Egypt",
+          "Mud-brick Babylon on the Euphrates",
+          "Snowy northern Scandinavia"
+        ],
+        "correctIndex": 0,
+        "feedback": "Spot on! Odysseus spent ten adventurous years crossing Mediterranean waves back to his island home of Ithaca."
+      },
+      {
+        "question": "What poetic phrase did Homer famously use for the colour of the Aegean waves?",
+        "options": [
+          "The emerald meadow sea",
+          "The wine-dark sea",
+          "The chalk-white puddle",
+          "The muddy brown canal"
+        ],
+        "correctIndex": 1,
+        "feedback": "Correct! 'The wine-dark sea' is one of the most famous phrases in all world literature."
+      },
+      {
+        "question": "Why did real Greek sailors constantly cross the sea like Odysseus's crew?",
+        "options": [
+          "Because Greece had flat plains with no harbours",
+          "To swap olive oil and painted pottery overseas for vital wheat grain",
+          "To escape freezing year-round Arctic ice",
+          "To hunt mammoths on floating icebergs"
+        ],
+        "correctIndex": 1,
+        "feedback": "Exactly right! Thin mountain soil grew hardy olives and grapes, which sailors traded abroad for grain."
+      }
+    ],
+    "monday_cold_call": {
+      "question": "Quote one famous Homeric description from 'The Odyssey' and explain how shared epic poems helped unite rival Greek city-states.",
+      "answer": "Phrases like 'wine-dark sea' or 'rosy-fingered Dawn' were sung across Greece in one Greek language, uniting rival poleis as Hellenes."
+    },
+    "hinge_question": "Why was it far quicker for an Ancient Greek merchant to sail across open sea than to travel thirty miles overland?",
+    "audio_file": "/audio/reading/ks2_ancient_greece/r0.mp3"
+  },
+  {
+    "lesson_index": 1,
+    "lesson_id": "lesson_2",
+    "lesson_label": "Enquiry 2",
+    "short_tab_title": "Athens vs Warrior Sparta",
+    "literary_mode": "intimate_eyewitness",
+    "provenance_tier": "adapted_primary",
+    "source_type": "eyewitness",
+    "source_type_label": "Recorded Eyewitness Speech",
+    "book_title": "History of the Peloponnesian War (Pericles's Speech to Athens)",
+    "author": "Pericles, recorded by Eyewitness Thucydides (431 BC)",
+    "provenance_note": "Age-calibrated primary adaptation of Pericles's Funeral Oration of 431 BC, recorded first-hand by Athenian historian Thucydides in 'History of the Peloponnesian War', Book 2, Chapters 37–39 (trans. Richard Crawley, 1874, Public Domain).",
+    "author_context": "In 431 BC, Athenian general Pericles stood on a high platform before thousands of families while historian Thucydides listened in the crowd. Hear how proudly Pericles compared open, voting Athens with tough warrior Sparta!",
+    "cover_image": "/units/ks2_ancient_greece/assets/pericles_helmeted_marble_bust.jpg",
+    "cover_caption": "Carved white marble bust of Athenian leader Pericles wearing a soldier's helmet tilted back, inscribed in Greek letters with his name.",
+    "studio_audio": "/audio/reading/ks2_ancient_greece/r1.mp3",
+    "studio_voice_label": "Studio Male Historian · KS2 Storyteller",
+    "vocabVault": [
+      {
+        "term": "Demokratia",
+        "pronunciation": "dem-oh-KRAH-tee-uh",
+        "def": "Athens's invention of 'people-power', where adult male citizens debated openly and raised hands to vote on every law."
+      },
+      {
+        "term": "Agoge",
+        "pronunciation": "uh-GOH-gay",
+        "def": "Sparta's tough army barracks training system that Spartan boys entered barefoot at just seven years old."
+      },
+      {
+        "term": "Pnyx",
+        "pronunciation": "puh-NIKS",
+        "def": "The rocky hillside in Athens where thousands of male citizens met outdoors every few days to debate and vote."
+      },
+      {
+        "term": "Thucydides",
+        "pronunciation": "thoo-SID-ih-deez",
+        "def": "The sharp-eyed Athenian general and historian who listened to speeches in person and wrote careful eyewitness history."
+      }
+    ],
+    "extract": "In the winter of 431 BC, thousands of families gathered outside the walls of Athens. Eyewitness writer Thucydides stood in the crowd and took careful notes. Climbing onto a high wooden stage, general Pericles explained why Athens looked so different from rival Sparta.\n\n<em>\"Our city is called a democracy because power rests in the hands of the many, not a tiny few! Every citizen stands equal before our laws. Even a poor man can serve Athens if he brings wise ideas. We never copy harsh rules or chase curious guests out of our busy market.\"</em>\n\n<em>\"Look at how differently we raise our boys! In Sparta, boys march into tough barracks life from early childhood just to make them brave. Here in Athens, boys enjoy books, music, and open talk. Yet when danger strikes, free men stand just as bravely beside their friends!\"</em>\n\nAcross Greece, listeners still argued fiercely. Did open Athens or tough Sparta raise stronger citizens?",
+    "parent_discussion": [
+      {
+        "question": "Why did Pericles say Athens deserved the name 'democracy' (demokratia)?",
+        "answer": "Because voting power belonged to the many adult male citizens rather than to a king or a tiny group of rich nobles."
+      },
+      {
+        "question": "How did Pericles contrast childhood for boys in Sparta with childhood for boys in Athens?",
+        "answer": "Spartan boys endured harsh, painful barracks training from age seven, whereas Athenian boys enjoyed books, music, poetry, and open debate."
+      },
+      {
+        "question": "What might a proud Spartan girl or woman have answered back if she had heard Pericles boasting about Athenian freedom?",
+        "answer": "She could point out that Athenian women were shut out of voting and school, whereas Spartan girls trained outdoors and women owned land!"
+      }
+    ],
+    "story_check": [
+      {
+        "question": "Who stood in the Athenian crowd in 431 BC and wrote down Pericles's famous speech?",
+        "options": [
+          "Eyewitness Athenian historian Thucydides",
+          "Egyptian Boat Inspector Merer",
+          "Persian King Darius I",
+          "Roman Emperor Claudius"
+        ],
+        "correctIndex": 0,
+        "feedback": "Spot on! Thucydides lived in Athens during the war and recorded Pericles's speech for future readers."
+      },
+      {
+        "question": "At what age did Spartan boys leave home to enter the strict 'agoge' barracks?",
+        "options": [
+          "Three years old",
+          "Seven years old",
+          "Sixteen years old",
+          "Twenty-five years old"
+        ],
+        "correctIndex": 1,
+        "feedback": "Correct! At just seven years old, Spartan boys left home to train barefoot and sleep on woven river reeds."
+      },
+      {
+        "question": "Even though Pericles praised Athenian democracy, who was left out of voting on the Pnyx hill?",
+        "options": [
+          "Poor male potters born in Athens",
+          "Athenian sailors who rowed warships",
+          "Women, enslaved people, and foreign-born metics",
+          "Older men with grey beards"
+        ],
+        "correctIndex": 2,
+        "feedback": "Exactly right! Only adult male Athenian citizens could vote—shutting out women, enslaved people, and foreigners."
+      }
+    ],
+    "monday_cold_call": {
+      "question": "In Pericles's 431 BC speech recorded by Thucydides, what contrast did he draw between growing up in Athens and growing up in Sparta?",
+      "answer": "Spartan boys faced tough barracks discipline from early childhood, while Athenians valued open debate, music, and voting by the many."
+    },
+    "hinge_question": "Was Pericles telling the whole story when he boasted that Athens placed power 'in the hands of the many'?",
+    "audio_file": "/audio/reading/ks2_ancient_greece/r1.mp3"
+  },
+  {
+    "lesson_index": 2,
+    "lesson_id": "lesson_3",
+    "lesson_label": "Enquiry 3",
+    "short_tab_title": "Athena's Sacred Olive Tree",
+    "literary_mode": "verbatim_literature",
+    "provenance_tier": "verbatim_literature",
+    "source_type": "myth",
+    "source_type_label": "Classic Ancient Greek Myth",
+    "book_title": "The Contest for Athens: Athena and Poseidon",
+    "author": "Traditional Ancient Greek Myth (Acropolis & Parthenon Pediment Tradition)",
+    "provenance_note": "Public-domain verse and story retelling of the canonical Ancient Greek foundation myth preserved by Apollodorus (Bibliotheca 3.14.1) and sculpted in marble on the west pediment of the Parthenon in Athens.",
+    "author_context": "Sculptors carved this famous contest high onto the marble Parthenon temple in Athens! Read aloud to discover how wise Athena beat sea-god Poseidon—and why Olympic champions prized humble olive leaves above gold.",
+    "cover_image": "/units/ks2_ancient_greece/assets/parthenon_doric_marble_columns.jpg",
+    "cover_caption": "Fluted marble Doric columns of the Parthenon glowing in golden evening sunlight atop the rocky Acropolis of Athens.",
+    "studio_audio": "/audio/reading/ks2_ancient_greece/r2.mp3",
+    "studio_voice_label": "Studio Male Historian · KS2 Storyteller",
+    "vocabVault": [
+      {
+        "term": "Mount Olympus",
+        "pronunciation": "MOWNT oh-LIM-pus",
+        "def": "Greece's tallest snow-capped mountain, believed to be the cloud-ringed palace of the twelve Olympian gods."
+      },
+      {
+        "term": "Parthenon",
+        "pronunciation": "PAR-thuh-non",
+        "def": "The gleaming marble Doric temple built atop Athens's Acropolis to honour patron goddess Athena."
+      },
+      {
+        "term": "Trident",
+        "pronunciation": "TRY-dunt",
+        "def": "Sea-god Poseidon's mighty three-pronged bronze spear used to stir storms and crack solid rock."
+      },
+      {
+        "term": "Kotinos",
+        "pronunciation": "KOT-ih-nos",
+        "def": "The sacred crown woven from wild olive branches placed on victorious athletes' heads at the Ancient Olympics."
+      }
+    ],
+    "extract": "High on the windy limestone rock of the Acropolis, Greek storytellers pointed to a gnarled olive tree and told how Athens won its name. Two mighty Olympians both wanted to guard the young city: sea-god Poseidon and grey-eyed wisdom goddess Athena. Zeus sat in judgement and promised the city to whichever god offered mortals the wiser gift.\n\n<div class=\"reading-stanza\">Poseidon strode across the rock and swung his bronze-tipped trident,<br>Splitting the stone until a spring leaped high into the sun!<br>The crowd cheered loud, then spat in shock to taste the salty water,<br>For bitter sea-spray could not feed a farmer's dry hillside.</div>\n\n<div class=\"reading-stanza\">Then wise Athena knelt in peace and touched the dusty summit,<br>And up there sprang a silver-leafed and fruit-filled olive tree!<br>Its wood gave warmth, its fruit gave food, its golden oil lit lamps,<br>So joyful citizens named Athens after their clever guide!</div>\n\nEven at Zeus's Olympic Games from 776 BC, champions wore simple <em>kotinos</em> crowns woven from sacred olive leaves.",
+    "parent_discussion": [
+      {
+        "question": "Why were the citizens disappointed right after Poseidon struck the Acropolis rock with his bronze trident?",
+        "answer": "Although the leaping fountain looked dramatic at first, the spring gushed salty seawater that nobody could drink or use on crops."
+      },
+      {
+        "question": "Name three practical everyday uses listed in the second stanza that made Athena's olive tree such a clever gift.",
+        "answer": "Olive wood warmed homes, ripe olives fed families, and pressed golden olive oil lit clay lamps (and paid for imported grain!)."
+      },
+      {
+        "question": "What does crowning Olympic winners with wild olive leaves instead of heavy gold tell us about Ancient Greek beliefs?",
+        "answer": "Greeks prized honour, glory for their polis, and sacred gifts from the gods far higher than cash prizes."
+      }
+    ],
+    "story_check": [
+      {
+        "question": "Which two Olympian gods competed to become patron guardian of Athens?",
+        "options": [
+          "Apollo and Artemis",
+          "Poseidon and Athena",
+          "Hermes and Ares",
+          "Osiris and Isis"
+        ],
+        "correctIndex": 1,
+        "feedback": "Spot on! Sea-god Poseidon and wisdom goddess Athena competed before Zeus and the citizens on the Acropolis."
+      },
+      {
+        "question": "What sprang from the dusty limestone rock when Athena knelt and touched it?",
+        "options": [
+          "A fierce bronze warhorse",
+          "A river of melted silver",
+          "The first fruitful, silver-leafed olive tree",
+          "A tall cedar ship with oars"
+        ],
+        "correctIndex": 2,
+        "feedback": "Exactly right! Hardy olive trees thrived on Greece's dry rocky hills and powered Athenian sea trade."
+      },
+      {
+        "question": "What prize did victorious sprinters and wrestlers receive at Olympia from 776 BC?",
+        "options": [
+          "A solid gold medal on a silk ribbon",
+          "A kotinos wreath woven from sacred wild olive leaves",
+          "A bag of Egyptian papyrus scrolls",
+          "Poseidon's bronze trident"
+        ],
+        "correctIndex": 1,
+        "feedback": "Well remembered! Winning a sacred wild-olive kotinos wreath brought lasting fame to an athlete's home city-state."
+      }
+    ],
+    "monday_cold_call": {
+      "question": "In the Greek myth carved on the Parthenon, why did Athena's gift win the contest for Athens against Poseidon's fountain?",
+      "answer": "Poseidon's fountain gushed undrinkable saltwater, whereas Athena's olive tree gave wood, food, lamp oil, and trade wealth."
+    },
+    "hinge_question": "How does the myth of Athena's olive tree explain real-world geography and farming on Greece's rocky hillsides?",
+    "audio_file": "/audio/reading/ks2_ancient_greece/r2.mp3"
+  },
+  {
+    "lesson_index": 3,
+    "lesson_id": "lesson_4",
+    "lesson_label": "Enquiry 4",
+    "short_tab_title": "Spartans at Thermopylae",
+    "literary_mode": "intimate_eyewitness",
+    "provenance_tier": "adapted_primary",
+    "source_type": "eyewitness",
+    "source_type_label": "Ancient Greek History Chronicle",
+    "book_title": "The Histories (The Persian Scout at Thermopylae)",
+    "author": "Herodotus of Halicarnassus (c. 440 BC)",
+    "provenance_note": "Age-calibrated primary adaptation of Herodotus, 'The Histories', Book 7, Chapters 208–209 (c. 440 BC; trans. George Rawlinson, 1858, Public Domain), preserving the famous Persian scout scene before the Battle of Thermopylae in 480 BC.",
+    "author_context": "Called the 'Father of History', Greek traveller Herodotus interviewed veterans across Greece and Persia so brave deeds would never fade. Listen to the astonishing sight King Xerxes's scout saw at the narrow pass of Thermopylae in 480 BC!",
+    "cover_image": "/units/ks2_ancient_greece/assets/spartan_warrior_leonidas_statue.jpg",
+    "cover_caption": "Carved white marble torso and tall crested helmet of an Ancient Greek warrior dug up in Sparta and popularly linked to King Leonidas.",
+    "studio_audio": "/audio/reading/ks2_ancient_greece/r3.mp3",
+    "studio_voice_label": "Studio Male Historian · KS2 Storyteller",
+    "vocabVault": [
+      {
+        "term": "Thermopylae",
+        "pronunciation": "ther-MOP-ih-lee",
+        "def": "A narrow Greek coastal pass between steep cliffs and the sea where King Leonidas blocked Persia's army in 480 BC."
+      },
+      {
+        "term": "Hoplites",
+        "pronunciation": "HOP-lyts",
+        "def": "Heavily armoured Greek foot soldiers who locked round bronze shields and long spears together in a tight phalanx wall."
+      },
+      {
+        "term": "Herodotus",
+        "pronunciation": "huh-ROD-uh-tus",
+        "def": "The 5th-century BC Greek writer remembered as the 'Father of History' for investigating the Persian Wars."
+      },
+      {
+        "term": "Leonidas",
+        "pronunciation": "lee-ON-ih-dus",
+        "def": "The brave Spartan king who held the pass of Thermopylae for three days with 300 Spartans and Greek allies."
+      }
+    ],
+    "extract": "In summer 480 BC, Persian King Xerxes marched a huge army south towards the narrow pass of Thermopylae. Greek writer Herodotus spoke to war veterans and told what happened next. Xerxes sent a lone horseman ahead to spy on King Leonidas's small camp.\n\n<em>\"Riding near the stone wall across the pass, the Persian scout stared in shock. Only three hundred Spartans stood on guard in front of the wall that morning. Instead of shaking at Persia's giant army, some Spartans were exercising in the sun. Others sat calmly combing and braiding their long hair!\"</em>\n\n<em>\"When the scout rode back, King Xerxes laughed aloud and called those Greeks fools. Yet an exiled Spartan in his camp spoke quietly. 'O King, Spartans always comb their hair neatly before risking their lives in fight. Beat these brave men, and no army left in Greece will dare lift a spear against you!'\"</em>",
+    "parent_discussion": [
+      {
+        "question": "What two unexpected things were the three hundred Spartans doing outside the wall when the Persian scout rode up?",
+        "answer": "Some were calmly exercising in the sun, while others sat combing and braiding their long hair."
+      },
+      {
+        "question": "Why did King Xerxes laugh at first, and how did the exiled Spartan explain the real meaning of the combed hair?",
+        "answer": "Xerxes thought they were vain or foolish, but combing their hair meant the Spartans had calmly prepared to fight to the death."
+      },
+      {
+        "question": "Why was the narrow mountain-and-sea geography of Thermopylae (and later the Strait of Salamis) so helpful to outnumbered Greeks?",
+        "answer": "Steep cliffs and narrow channels stopped Persia's huge numbers from surrounding the tight Greek shield-wall or agile triremes."
+      }
+    ],
+    "story_check": [
+      {
+        "question": "Why did King Xerxes send a lone horseman riding towards Thermopylae before attacking?",
+        "options": [
+          "To sell Persian carpets in the Athenian Agora",
+          "To spy on how many Greeks guarded the pass and what they were doing",
+          "To invite King Leonidas to the Olympic Games",
+          "To search for lost Egyptian papyrus scrolls"
+        ],
+        "correctIndex": 1,
+        "feedback": "Spot on! Xerxes wanted his scout to count the defenders blocking the narrow pass between cliff and sea."
+      },
+      {
+        "question": "According to Herodotus, what did combing their long hair mean for Spartan warriors?",
+        "options": [
+          "They were getting ready to sail home immediately",
+          "They were dressing up for a comedy play",
+          "They were calmly preparing to risk their lives in battle",
+          "They were surrendering their bronze shields"
+        ],
+        "correctIndex": 2,
+        "feedback": "Exactly right! Years of strict agoge discipline taught Spartans to stay calm right before their toughest test."
+      },
+      {
+        "question": "How did King Xerxes finally get soldiers behind Leonidas's defenders after three days at Thermopylae?",
+        "options": [
+          "By flying giant kites over the cliffs",
+          "A local traitor showed Persian troops a hidden mountain path",
+          "By digging a tunnel underneath the Aegean Sea",
+          "By waiting until winter snow froze the waves"
+        ],
+        "correctIndex": 1,
+        "feedback": "Well remembered! Even after Thermopylae fell, Leonidas's stand bought precious time before Athens's triremes won at Salamis."
+      }
+    ],
+    "monday_cold_call": {
+      "question": "In Herodotus's account of Thermopylae (480 BC), what were the 300 Spartans doing when Persia's scout spied on them, and why?",
+      "answer": "They were exercising and combing their long hair, because Spartan custom was to groom calmly before risking their lives in battle."
+    },
+    "hinge_question": "How did three days of delay at Thermopylae help Admiral Themistocles and Greece win the war at sea soon afterwards?",
+    "audio_file": "/audio/reading/ks2_ancient_greece/r3.mp3"
+  },
+  {
+    "lesson_index": 4,
+    "lesson_id": "lesson_5",
+    "lesson_label": "Enquiry 5",
+    "short_tab_title": "Barefoot Socrates Speaks",
+    "literary_mode": "intimate_eyewitness",
+    "provenance_tier": "adapted_primary",
+    "source_type": "eyewitness",
+    "source_type_label": "Courtroom Eyewitness Record",
+    "book_title": "The Apology of Socrates (The Buzzing Horsefly of Athens)",
+    "author": "Plato (Eyewitness at the Trial of Socrates, 399 BC)",
+    "provenance_note": "Age-calibrated primary adaptation of Plato's 'Apology' (29d–31a & 38a, 399 BC; trans. Benjamin Jowett, 1871, Public Domain), written by Socrates's student Plato, who personally attended the trial in Athens.",
+    "author_context": "Athenians loved debating fairness in stone theatres like Epidaurus and down in the sunny Agora. In 399 BC, young student Plato sat in court and wrote down how barefoot philosopher Socrates bravely defended asking awkward questions!",
+    "cover_image": "/units/ks2_ancient_greece/assets/socrates_marble_portrait_louvre.jpg",
+    "cover_caption": "Carved white marble portrait head of Athenian philosopher Socrates with his curly beard and calm, questioning expression.",
+    "studio_audio": "/audio/reading/ks2_ancient_greece/r4.mp3",
+    "studio_voice_label": "Studio Male Historian · KS2 Storyteller",
+    "vocabVault": [
+      {
+        "term": "Philosopher",
+        "pronunciation": "fih-LOS-uh-fer",
+        "def": "From Greek words meaning 'lover of wisdom'—a thinker who asks deep questions about truth, fairness, and nature."
+      },
+      {
+        "term": "Socrates",
+        "pronunciation": "SOK-ruh-teez",
+        "def": "The barefoot Athenian philosopher who questioned powerful citizens in the Agora instead of writing books."
+      },
+      {
+        "term": "Plato",
+        "pronunciation": "PLAY-toh",
+        "def": "Socrates's devoted student who recorded his teacher's conversations and opened the Academy school in Athens."
+      },
+      {
+        "term": "Jury",
+        "pronunciation": "JOOR-ee",
+        "def": "Five hundred ordinary Athenian citizens chosen by the marble kleroterion machine to hear speeches and vote in court."
+      }
+    ],
+    "extract": "Whether watching masked actors on stone theatre steps or chatting in the sunny Agora, Athenians loved bold debates. Nobody asked sharper questions than seventy-year-old Socrates. He walked barefoot in an old wool cloak and never charged a coin. In 399 BC, young Plato sat in court and wrote down Socrates's calm words before five hundred jurors.\n\n<em>\"Men of Athens, suppose you offer to set me free today on one strict rule. You ask me to stop asking questions and hunting for truth. Friends, I cannot stay quiet! While I still breathe, I will nudge everyone in the market to care less about gold and more about goodness.\"</em>\n\n<em>\"Great Athens is like a proud warhorse grown sleepy because of its size. I am simply the stubborn little horsefly sent to buzz round your ears and wake you up! An unexamined life is barely worth living.\"</em> Brave to the end, Socrates kept questioning right until sunset.",
+    "parent_discussion": [
+      {
+        "question": "What funny, vivid creature did seventy-year-old Socrates compare himself to in front of the five hundred jurors?",
+        "answer": "He compared Athens to a proud, sleepy warhorse and himself to a stubborn buzzing horsefly sent to wake citizens up!"
+      },
+      {
+        "question": "Why did Socrates's constant questions in the Agora annoy some rich and powerful leaders in Athens?",
+        "answer": "His calm questions exposed when boastful leaders did not really understand justice or truth as well as they claimed."
+      },
+      {
+        "question": "How did Socrates's habit of testing beliefs inspire later Greek thinkers like Plato, Aristotle, and doctor Hippocrates?",
+        "answer": "Instead of accepting old myths blindly, Greek scholars and doctors began testing ideas, observing nature, and checking real symptoms."
+      }
+    ],
+    "story_check": [
+      {
+        "question": "Where did barefoot Socrates spend his days questioning citizens in Athens?",
+        "options": [
+          "Hidden inside a locked royal palace",
+          "Outdoors in the busy Agora marketplace",
+          "High atop snowy Mount Olympus",
+          "Aboard a Persian warship"
+        ],
+        "correctIndex": 1,
+        "feedback": "Spot on! Socrates never charged fees or hid indoors—he talked openly with potters, generals, and youths in the Agora."
+      },
+      {
+        "question": "Why do we still know what Socrates said at his trial in 399 BC if he never wrote a book himself?",
+        "options": [
+          "His student Plato sat in the courtroom and wrote his words down",
+          "Someone recorded his voice on a wax music cylinder",
+          "Pharaoh Hatshepsut carved his speech at Karnak",
+          "It was printed in an Athenian newspaper"
+        ],
+        "correctIndex": 0,
+        "feedback": "Exactly right! Plato was twenty-eight years old at the trial and preserved Socrates's dialogues for the world."
+      },
+      {
+        "question": "What did Socrates mean by comparing himself to a buzzing horsefly?",
+        "options": [
+          "He wanted to bite horses in the Olympic chariot race",
+          "His sharp questions kept waking citizens up to think about truth and fairness",
+          "He studied insects at Aristotle's Lyceum",
+          "He wore a winged theatre costume every Tuesday"
+        ],
+        "correctIndex": 1,
+        "feedback": "Brilliant! Socrates believed questioning our own habits makes both people and cities wiser."
+      }
+    ],
+    "monday_cold_call": {
+      "question": "At his 399 BC trial recorded by Plato, why did barefoot Socrates compare Athens to a sleepy horse and himself to a horsefly?",
+      "answer": "Because his constant questions in the Agora woke comfortable citizens up to test their beliefs and care about truth over wealth."
+    },
+    "hinge_question": "Why did a democratic city proud of free speech vote to condemn an unarmed seventy-year-old philosopher just for asking questions?",
+    "audio_file": "/audio/reading/ks2_ancient_greece/r4.mp3"
+  },
+  {
+    "lesson_index": 5,
+    "lesson_id": "lesson_6",
+    "lesson_label": "Enquiry 6",
+    "short_tab_title": "Taming Wild Bucephalus",
+    "literary_mode": "storied_micro_history",
+    "provenance_tier": "storied_micro_history",
+    "source_type": "micro_history",
+    "source_type_label": "True Historical Story",
+    "book_title": "Turn Him Into the Sun: Young Alexander and Bucephalus",
+    "author": "The History Revision Hub Narrative Archive",
+    "provenance_note": "Original historical micro-story grounded in Plutarch's 'Life of Alexander', Chapter 6 (1st century AD, Public Domain), preserving the documented boyhood episode at King Philip II's court in Macedon.",
+    "author_context": "Before young Prince Alexander of Macedon studied with Aristotle or marched as far as Egypt and India, everyone at his father's court laughed at a wager he made over an 'untameable' black horse!",
+    "cover_image": "/units/ks2_ancient_greece/assets/alexander_mosaic_bucephalus.jpg",
+    "cover_caption": "Ancient Roman floor mosaic from Pompeii showing bareheaded young Alexander the Great riding his dark warhorse Bucephalus into battle.",
+    "studio_audio": "/audio/reading/ks2_ancient_greece/r5.mp3",
+    "studio_voice_label": "Studio Male Historian · KS2 Storyteller",
+    "vocabVault": [
+      {
+        "term": "Macedon",
+        "pronunciation": "MASS-ih-don",
+        "def": "The rugged northern Greek kingdom ruled by King Philip II and his famous son Alexander the Great."
+      },
+      {
+        "term": "Bucephalus",
+        "pronunciation": "byoo-SEF-uh-lus",
+        "def": "Alexander's beloved black warhorse—his Greek name meant 'Ox-Head' after a broad white mark on his brow."
+      },
+      {
+        "term": "Hellenistic",
+        "pronunciation": "hel-uh-NIS-tik",
+        "def": "The lively shared culture created when Alexander's conquests blended Greek language and learning with Egyptian and Persian ideas."
+      },
+      {
+        "term": "Legacy",
+        "pronunciation": "LEG-uh-see",
+        "def": "Lasting ideas, words, buildings, and traditions handed down from an ancient civilisation to our world today."
+      }
+    ],
+    "extract": "Dust swirled across a royal field in Macedon as a tall black stallion reared and snorted wildly. Named Bucephalus—meaning <em>\"Ox-Head\"</em> for a white star on his brow—the horse cost a small fortune! Yet whenever King Philip's strongest grooms stepped close, Bucephalus kicked out with flashing hooves.\n\nAnnoyed, King Philip waved the horse away, until young Prince Alexander spoke up boldly. <em>\"What a fine horse they are losing, just because nobody has the skill or heart to handle him!\"</em> Laughing nobles dared the boy to try. While grown men stared at the hooves, sharp-eyed Alexander spotted one quiet clue on the grass.\n\nRunning forward, Alexander took the bridle and turned Bucephalus straight into the bright sun. At once, the shaking horse grew calm! His own dark shadow darting ahead on the grass had scared him. Alexander leaped onto his back and rode across the plain on the loyal steed who would carry him to India.",
+    "parent_discussion": [
+      {
+        "question": "What tiny detail on the sunny grass did young Alexander notice that all of King Philip's experienced grooms had missed?",
+        "answer": "He noticed Bucephalus was shying and rearing whenever he saw his own dark shadow moving on the ground in front of him."
+      },
+      {
+        "question": "How did turning Bucephalus straight towards the sun solve the problem without using a whip or force?",
+        "answer": "Facing the bright sun threw the horse's shadow safely behind him where it could no longer startle him."
+      },
+      {
+        "question": "Why does this boyhood story match the way Aristotle trained Alexander to observe the world?",
+        "answer": "Aristotle taught his pupil to look closely at real evidence and think calmly instead of relying on brute strength alone."
+      }
+    ],
+    "story_check": [
+      {
+        "question": "What did the Greek name 'Bucephalus' literally mean?",
+        "options": [
+          "Thunderbolt Runner",
+          "Ox-Head",
+          "Silver Owl",
+          "Sea Dolphin"
+        ],
+        "correctIndex": 1,
+        "feedback": "Spot on! Bucephalus meant 'Ox-Head', named after a broad mark shaped like an ox's head on his coat."
+      },
+      {
+        "question": "Why had Bucephalus been rearing and kicking at King Philip's grooms?",
+        "options": [
+          "A sharp stone was stuck inside his iron horseshoe",
+          "He was startled by his own moving shadow on the grass",
+          "Lions were hiding in the nearby olive trees",
+          "Thunder was rumbling over Mount Olympus"
+        ],
+        "correctIndex": 1,
+        "feedback": "Exactly right! Young Alexander watched carefully and realised the horse feared his own darting shadow."
+      },
+      {
+        "question": "How far east did Alexander later ride Bucephalus after uniting Greece?",
+        "options": [
+          "Only ten miles outside Macedon",
+          "Across Egypt and Persia all the way to north-west India",
+          "Across the Atlantic Ocean to Mesoamerica",
+          "North into Viking Scandinavia"
+        ],
+        "correctIndex": 1,
+        "feedback": "Well remembered! Alexander founded cities named Alexandria across Egypt and Asia, spreading Greek learning far and wide."
+      }
+    ],
+    "monday_cold_call": {
+      "question": "How did young Prince Alexander tame the wild stallion Bucephalus when every adult groom in Macedon had failed?",
+      "answer": "He spotted that Bucephalus feared his own moving shadow, so he gently turned the horse's head straight into the sun."
+    },
+    "hinge_question": "How did Alexander's eleven-year march east help Greek words, geometry, and theatre survive long after Macedon's empire broke apart?",
+    "audio_file": "/audio/reading/ks2_ancient_greece/r5.mp3"
+  }
+]

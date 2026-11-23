@@ -2,60 +2,60 @@
   "unitId": "the_shoah",
   "clips": {
     "r6": {
-      "hash": "cf0de4460856efbe9264cc20",
-      "bytes": 410252,
+      "hash": "7664b50dac835022ebb4c8aa",
+      "bytes": 451820,
       "voiceKey": "male_historian",
       "badge": "Studio Male Historian · Shoah Archive",
-      "words": 226,
-      "updatedAt": "2026-11-20T16:34:15.415Z"
+      "words": 252,
+      "updatedAt": "2026-11-23T18:40:44.865Z"
     },
     "r1": {
-      "hash": "ad171eabefbc24b3d5c3af7f",
-      "bytes": 391820,
+      "hash": "fc0c5c70967b4993aeb809f1",
+      "bytes": 438092,
       "voiceKey": "male_historian",
       "badge": "Studio Male Historian · Shoah Archive",
-      "words": 208,
-      "updatedAt": "2026-11-20T16:34:22.802Z"
+      "words": 243,
+      "updatedAt": "2026-11-23T18:38:38.296Z"
     },
     "r2": {
-      "hash": "96673ee4c881344a9367d93f",
-      "bytes": 406028,
+      "hash": "5e1d600e25147ab8132744e1",
+      "bytes": 454700,
+      "voiceKey": "male_historian",
+      "badge": "Studio Male Historian · Shoah Archive",
+      "words": 248,
+      "updatedAt": "2026-11-23T18:38:42.792Z"
+    },
+    "r3": {
+      "hash": "bada7cbd75f8b4bfafdf2b1d",
+      "bytes": 434252,
       "voiceKey": "male_historian",
       "badge": "Studio Male Historian · Shoah Archive",
       "words": 231,
-      "updatedAt": "2026-11-20T16:34:23.702Z"
-    },
-    "r3": {
-      "hash": "dff6ac3548d30dfabb92795f",
-      "bytes": 489548,
-      "voiceKey": "male_historian",
-      "badge": "Studio Male Historian · Shoah Archive",
-      "words": 267,
-      "updatedAt": "2026-11-20T16:34:24.831Z"
+      "updatedAt": "2026-11-23T18:38:43.558Z"
     },
     "r4": {
-      "hash": "a4b31e68f2db7b96075033f0",
-      "bytes": 420908,
+      "hash": "597d4a3a7dd0a6e314aa074d",
+      "bytes": 433388,
       "voiceKey": "male_historian",
       "badge": "Studio Male Historian · Shoah Archive",
-      "words": 217,
-      "updatedAt": "2026-11-20T16:34:25.667Z"
+      "words": 230,
+      "updatedAt": "2026-11-23T18:40:44.011Z"
     },
     "r5": {
-      "hash": "0680bcecb22711eb071611df",
-      "bytes": 504332,
+      "hash": "a6493f1e0ab5b359ced249cc",
+      "bytes": 509228,
       "voiceKey": "female_historian",
       "badge": "Studio Female Historian · Shoah Archive",
-      "words": 250,
-      "updatedAt": "2026-11-20T16:38:29.499Z"
+      "words": 247,
+      "updatedAt": "2026-11-23T18:46:29.262Z"
     },
     "r0": {
-      "hash": "54dea62392688dfeab11b632",
-      "bytes": 527852,
+      "hash": "06d85611495ddbbf3376f823",
+      "bytes": 464300,
       "voiceKey": "female_historian",
       "badge": "Studio Female Historian · Shoah Archive",
-      "words": 239,
-      "updatedAt": "2026-11-20T16:38:32.643Z"
+      "words": 223,
+      "updatedAt": "2026-11-23T18:46:28.302Z"
     }
   }
 }

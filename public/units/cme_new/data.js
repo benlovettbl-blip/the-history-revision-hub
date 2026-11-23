@@ -449,7 +449,7 @@ const cme_new = {
           "explanation": "Arab insurgents repeatedly blew up the Iraq Petroleum Company (IPC) pipeline carrying vital crude oil to Haifa."
         }
       ],
-      "title": "KT 1.0: Broken Promises & Imperial Borders: Why Was Conflict in the Middle East Inevitable?",
+      "title": "KT 1.0: Imperial Promises & The British Mandate, 1915–1939",
       "sources": [
         {
           "id": "cme_l1_source_a",
@@ -1025,107 +1025,7 @@ const cme_new = {
           "content": "<span class=\"para-ref\">[5.1]</span> In 1936, rising anger erupted into the **Great Arab Revolt**, a widespread rebellion against British rule and Jewish immigration. Directed by the Arab Higher Committee under the Grand Mufti of Jerusalem, **Haj Amin al-Husseini**, Arabs held general strikes, attacked British military patrols, and repeatedly sabotaged the strategic **IPC oil pipeline** running to Haifa port. Britain responded with martial law, deploying 20,000 soldiers and executing rebel leaders.\n\n<span class=\"para-ref\">[5.2]</span> Facing imminent war against Nazi Germany, Britain needed to secure Arab oil and maintain peace across the Middle East. In May 1939, the British government published the 1939 White Paper, which strictly limited Jewish immigration to 75,000 over five years and promised independent statehood within ten years. Zionists were deeply angered, viewing the restrictions as a fatal betrayal of European Jews facing Nazi persecution."
         }
       ],
-      "extended": {
-        "title": "Map Task 1: The Geopolitical Landscape of the Middle East",
-        "instructions": "Using the blank outline map provided in your workbook (and the reference map in your textbook), accurately locate and label the 9 key nation-states, 8 capital cities, and 8 critical maritime waterways/chokepoints that shaped 20th-century Middle Eastern history.",
-        "paragraphs": [
-          "Understanding the physical and political geography of the Middle East is the indispensable foundation for understanding its modern conflicts. The borders of the modern Middle East were largely carved out by British and French imperial diplomats following the collapse of the Ottoman Empire after World War One.",
-          "Control over vital maritime chokepoints—such as the Suez Canal, the Straits of Tiran, and the Persian Gulf—alongside access to scarce freshwater sources like the River Jordan, repeatedly triggered diplomatic showdowns and full-scale wars between 1948 and 1973."
-        ],
-        "question": "Complete the geopolitical map of the Middle East by checking off each feature as you label it:\n- 🌍 Major Countries: Egypt, Israel, Jordan, Syria, Lebanon, Iraq, Iran, Saudi Arabia, Turkey\n- 🏛️ Capital Cities: Cairo, Jerusalem, Tel Aviv, Amman, Damascus, Beirut, Baghdad, Riyadh\n- 🌊 Waterways & Chokepoints: Suez Canal, Straits of Tiran, Gulf of Aqaba, Gulf of Suez, Red Sea, River Jordan, Mediterranean Sea, Persian Gulf\n- ⛰️ Key Peninsula: Sinai Peninsula",
-        "checklist": {
-          "countries": [
-            "Egypt",
-            "Israel",
-            "Jordan",
-            "Syria",
-            "Lebanon",
-            "Iraq",
-            "Iran",
-            "Saudi Arabia",
-            "Turkey"
-          ],
-          "capitals": [
-            "Cairo",
-            "Jerusalem",
-            "Tel Aviv",
-            "Amman",
-            "Damascus",
-            "Beirut",
-            "Baghdad",
-            "Riyadh"
-          ],
-          "waterways": [
-            "Suez Canal",
-            "Straits of Tiran",
-            "Gulf of Aqaba",
-            "Gulf of Suez",
-            "Red Sea",
-            "River Jordan",
-            "Mediterranean Sea",
-            "Persian Gulf"
-          ],
-          "terrain": [
-            "Sinai Peninsula"
-          ]
-        },
-        "hints": [
-          "Locate the two long bodies of water: the Red Sea to the south-west and the Persian Gulf to the east.",
-          "Remember that the Sinai Peninsula forms the land bridge connecting Africa to Asia.",
-          "The Straits of Tiran are the narrow bottleneck at the southern entrance to the Gulf of Aqaba."
-        ],
-        "source_a": {
-          "title": "Middle East Outline Map (Blank)",
-          "provenance": "Student Copy for Pupil Workbook",
-          "content": "/images/middle_east_map.png"
-        },
-        "answer_image": "/images/middle_east_map_answers.png",
-        "model_answer": "Fully labeled reference map of the Middle East displaying all 9 sovereign states, 8 national capitals, and 8 critical strategic waterways and maritime chokepoints."
-      },
       "hide_phase_titles": true,
-      "secondary_map": {
-        "title": "Map Task 2: Israel & The Contested Territories (Post-1967)",
-        "instructions": "Using the regional outline map of Israel and its immediate frontiers, complete the following geographical and historical tasks to examine the territorial transformations of the 1948 and 1967 wars.",
-        "question": "On your zoomed map of Israel and its immediate frontiers, complete the following:\n1. Label Israel and its 4 immediate neighbouring sovereign states: Lebanon (North), Syria (Northeast), Jordan (East), Egypt (Southwest / Sinai).\n2. Label the 5 strategic water bodies: Mediterranean Sea, Sea of Galilee, River Jordan, Dead Sea, Gulf of Aqaba.\n3. Mark the holy city of Jerusalem with a star (★) on the 1949 Green Line.\n4. Shade and clearly label the territories occupied by Israel during the June 1967 Six-Day War:\n   - The West Bank (captured from Jordan)\n   - The Gaza Strip (captured from Egypt)\n   - The Golan Heights (captured from Syria)\n   - The Sinai Peninsula (captured from Egypt)",
-        "checklist": {
-          "neighbours": [
-            "Lebanon (North)",
-            "Syria (Northeast)",
-            "Jordan (East)",
-            "Egypt (Sinai Peninsula, Southwest)"
-          ],
-          "waterways": [
-            "Mediterranean Sea",
-            "Sea of Galilee",
-            "River Jordan",
-            "Dead Sea",
-            "Gulf of Aqaba"
-          ],
-          "occupied_territories": [
-            "West Bank (captured from Jordan — shade ///)",
-            "Gaza Strip (captured from Egypt — shade ///)",
-            "Golan Heights (captured from Syria — shade ///)",
-            "Sinai Peninsula (vast desert buffer captured from Egypt)"
-          ],
-          "landmarks": [
-            "Jerusalem ★ (Marked on the 1949 Green Line)"
-          ]
-        },
-        "hints": [
-          "The West Bank lies directly west of the River Jordan and Dead Sea, bordering Jordan to the east.",
-          "The Gaza Strip is the small coastal rectangle along the Mediterranean coastline bordering Egypt.",
-          "The Golan Heights is the elevated volcanic plateau directly northeast of the Sea of Galilee bordering Syria.",
-          "Sinai is the large triangular desert peninsula west of the Negev Desert and Gulf of Aqaba."
-        ],
-        "source_a": {
-          "title": "Israel and Frontiers Outline Map (Blank)",
-          "provenance": "Student Copy for Pupil Workbook",
-          "content": "/images/israel_zoomed_map.png"
-        },
-        "answer_image": "/images/israel_zoomed_map_answers.png",
-        "macro_map": "/images/palestine_1967_six_day_war_map.png",
-        "historical_notes": "During the Six-Day War (5–10 June 1967), Israel pre-emptively attacked Egyptian, Syrian, and Jordanian air and ground forces, capturing the Sinai Peninsula, the Gaza Strip, the West Bank, East Jerusalem, and the Golan Heights. This quadrupled the territory under Israeli military control and brought over one million Palestinian Arabs under military occupation."
-      },
       "pair_share": {
         "after_stage": 3,
         "prompt": "Britain has now made three wartime promises. Can it keep McMahon, Sykes-Picot and Balfour all at once?",
@@ -1161,24 +1061,24 @@ const cme_new = {
         ],
         "timer_seconds": 90
       },
-      "consolidation": "Why is the geography of the Middle East so geopolitically important?",
+      "consolidation": "Exit Ticket — Evaluative Ranking Ladder: Rank Britain’s three Mandate crises—Wartime Promises (1915–17), Rising Immigration in the 1930s, or the 1939 White Paper—from 1 (Most Destabilising) to 3, and justify your #1 choice.",
       "exit_ticket": {
         "type": "ranking_ladder",
         "type_label": "Exit Ticket · Evaluative Ranking Ladder",
-        "title": "Exit Ticket: The Geopolitical Priority Verdict",
-        "prompt": "Which foundational factor studied today created the greatest long-term obstacle to peace in the Middle East? Rank them from 1 (Most Destabilising) to 3 (Least Destabilising) and justify your #1 rank:",
+        "title": "Exit Ticket: The Mandate Turning Point Verdict",
+        "prompt": "Which British policy studied today did the most to make conflict in Palestine inevitable? Rank them from 1 (Most Destabilising) to 3 (Least Destabilising) and justify your #1 rank:",
         "options": [
-          "Factor A: Contradictory Imperial Pledges (McMahon-Hussein Correspondence vs Balfour Declaration vs Sykes-Picot).",
-          "Factor B: Artificial Borders & Mandates (European straight-line borders dividing historic ethnic and religious communities).",
-          "Factor C: Strategic Chokepoints & Topography (vulnerability around the Straits of Tiran, Golan Heights, and Suez Canal)."
+          "Factor A: Contradictory Wartime Pledges (McMahon-Hussein Correspondence, Sykes-Picot Agreement, and the 1917 Balfour Declaration).",
+          "Factor B: Mandate Rule & Rising 1930s Immigration (Growing Jewish migration fleeing Nazi persecution in Europe).",
+          "Factor C: The Arab Revolt & 1939 White Paper (Capping Jewish immigration at 75,000 just as the Second World War began)."
         ],
-        "guidance": "State your #1 factor and write 2-3 structured sentences using precise historical vocabulary (e.g., mandate, sovereignty, buffer zone, casus belli) to justify your choice."
+        "guidance": "State your #1 factor and write 2–3 clear sentences using precise historical evidence from 1915–1939 to justify your choice."
       },
       "learning_objectives": [
-        "Understand how the collapse of the Ottoman Empire after WW1 and the secret Sykes-Picot Agreement (1916) created artificial borders and European mandates in the Middle East.",
+        "Understand how the collapse of the Ottoman Empire after WW1 and the secret Sykes-Picot Agreement (1916) created European mandates in the Middle East.",
         "Examine conflicting British wartime promises: the McMahon-Hussein Correspondence (1915) versus the Balfour Declaration (1917).",
-        "Define and contrast the core historical ideologies of Zionism and Arab Nationalism.",
-        "Identify the strategic geography of the region, including vital maritime chokepoints (Suez Canal, Straits of Tiran) and contested territories (West Bank, Gaza Strip, Golan Heights, Sinai Peninsula)."
+        "Define and contrast the core historical ideologies of Zionism and Arab Nationalism under the British Mandate.",
+        "Explain how rising Jewish immigration in the 1930s triggered the Arab Revolt (1936–39) and the 1939 White Paper."
       ],
       "vocab": [
         {
@@ -1310,8 +1210,8 @@ const cme_new = {
           "definition": "A narrow, strategic maritime passage (like the Suez Canal or Straits of Tiran) whose closure can cripple trade and cause war."
         }
       ],
-      "enquiry": "Water, Faith, and Imperial Rulers: How did physical geography and artificial borders make conflict in the Middle East inevitable?",
-      "hook_text": "The Middle East is the ultimate geopolitical crossroads of the earth—the physical land bridge connecting Europe, Asia, and Africa, the guardian of vital maritime chokepoints, and the birthplace of three world religions. To understand the bloody wars between Arabs and Israelis from 1945 to 1995, one must first understand its geography: how European diplomats drew straight ruler lines across deserts, why fresh water from the River Jordan is a matter of national survival, and why controlling the high ground of the Golan Heights or the narrow waters of the Straits of Tiran dictated the difference between victory and annihilation.",
+      "enquiry": "How did conflicting British promises make war in Palestine inevitable?",
+      "hook_text": "During the First World War, Britain made three contradictory deals over the future of Ottoman lands: promising Arab independence to Sharif Hussein, secretly carving up the region with France under Sykes-Picot, and pledging support for a Jewish national home in the 1917 Balfour Declaration. Over the next twenty years of British Mandate rule, rising Jewish immigration from Nazi Europe and Arab demands for independence turned Palestine into a powder keg.",
       "primary_source": {
         "title": "Source A: The Sykes-Picot Agreement Partition Map (8 May 1916)",
         "src": "/images/cme_sykes_picot_1916_map.jpg",
@@ -1637,7 +1537,7 @@ const cme_new = {
         "significance": "As Israel's paramount founding father, Ben-Gurion declared independence in defiance of international hesitation and coordinated invasions by five Arab armies, securing the state's survival through the 1948–49 War.",
         "origins": "Born Dawid Grün in Płońsk (Russian Poland), where Tsarist antisemitism convinced him Jews needed sovereign statehood, he emigrated to Ottoman Palestine in 1906 as a farm labourer and built Labour Zionism’s trade-union and defence institutions."
       },
-      "title": "KT 1.1: The End of the British Mandate and the Creation of Israel, 1945–1949",
+      "title": "KT 1.1: The End of the British Mandate, 1945–1947",
       "video": [
         {
           "type": "youtube",
@@ -2792,7 +2692,7 @@ const cme_new = {
         }
       ],
       "draw_tasks": [],
-      "enquiry": "Why did the British Mandate collapse and how was the State of Israel created amidst war?",
+      "enquiry": "Why did Britain hand Palestine back to the UN in 1947?",
       "exam_practice": {
         "type": "consequence_and_extended",
         "title": "Edexcel GCSE (9–1) Paper 2 Exam Practice (Workbook KT1.1 • pp. 2–3)",
@@ -3271,29 +3171,6 @@ const cme_new = {
           "desc": "David Ben-Gurion proclaims the State of Israel; the May 1948 invasion by five Arab League armies begins the next morning."
         }
       ],
-      "secondary_map": {
-        "title": "Map Task: 1947 UN Partition Plan vs. 1949 Armistice Green Line",
-        "instructions": "Examine the 1947 UN Partition Plan reference map on the left. On the 1949 Armistice outline map on the right, use green ink to trace the armistice borders and shade the newly expanded territory of the State of Israel.",
-        "reference_map": "/images/palestine_1947_map.png",
-        "reference_label": "Reference: 1947 UN Partition Plan (Res. 181)",
-        "source_a": "/images/palestine_1949_map.png",
-        "task_label": "Pupil Shading Task: 1949 Armistice Green Line",
-        "checklist": {
-          "armistice_borders": [
-            "Trace the 1949 Green Line in green ink separating Israel from the West Bank & Gaza",
-            "Mark the divided city of Jerusalem with a star (★) across the Green Line"
-          ],
-          "territorial_shading": [
-            "Shade Israeli territory (expanded from 55% allocated by UN to 79% secured in war)",
-            "Label the West Bank & East Jerusalem (annexed by King Abdullah of Transjordan)",
-            "Label the Gaza Strip (administered under Egyptian military governance)"
-          ],
-          "demographic_outcomes": [
-            "Record in legend: Jewish state allocation: 1947 UN Plan (55%) ➔ 1949 Armistice (79%)",
-            "Record in legend: Displaced Palestinians: 700,000+ Arab refugees (The Nakba)"
-          ]
-        }
-      },
       "card_image": "/images/upgraded/gcse-cw-cme/cme_l1_british_soldiers_jerusalem_bus_1947.jpg",
       "card_position": "center 20%",
       "workbook_stages": [
@@ -3604,7 +3481,7 @@ const cme_new = {
         "significance": "Abdullah was the Arab ruler who gained most territory from the 1948 war, but other Arab states and many Palestinians suspected him of putting Jordan's ambitions first. He was assassinated by a Palestinian gunman at the al-Aqsa Mosque in Jerusalem in July 1951; his teenage grandson Hussein, who later became king, was with him.",
         "origins": "Second son of Sharif Hussein of Mecca and a field commander in the 1916–18 Arab Revolt against Ottoman rule, Abdullah was installed by Britain as Emir of Transjordan in 1921 while nursing lifelong ambitions to rule a wider Hashemite kingdom including Jerusalem."
       },
-      "title": "KT 1.2: The Creation of Israel, the 1948–49 War & The Palestinian Refugee Crisis",
+      "title": "KT 1.2: The Creation of Israel & The 1948–49 War",
       "learning_objective": "To explain the declaration of the State of Israel, the outbreak and outcome of the 1948–49 War, and its consequences for Palestinians, Israelis, and regional borders.",
       "vocab": [
         {
@@ -4392,7 +4269,7 @@ const cme_new = {
           "Analyze Israel’s relations with Egypt in the aftermath of the war."
         ]
       },
-      "enquiry": "How was the State of Israel established and defended during the 1948–49 War, and what were its lasting consequences?",
+      "enquiry": "How did Israel survive the 1948–49 War, and at what human cost?",
       "exam_practice": {
         "type": "consequence_and_extended",
         "title": "Edexcel GCSE (9–1) Paper 2 Exam Practice (Workbook KT1.2 • pp. 4–5)",
@@ -5484,7 +5361,7 @@ const cme_new = {
         "lesson_1_4"
       ],
       "specification_anchor": "The birth of the state of Israel and the 1948–49 War: the Suez Crisis (1956); the rise of Gamal Abdel Nasser, nationalisation of the Suez Canal, secret Anglo-French-Israeli collusion, military operation, superpower intervention, and consequences.",
-      "title": "KT 1.3: Increased Tension, Nasser, and the Suez Crisis, 1955–1963",
+      "title": "KT 1.3: Nasser and the Suez Crisis, 1955–1957",
       "lesson_reflection": {
         "prompt": "You have reached the end of this Key Topic booklet! Before you finish, please turn to the back page of your printed workbook and complete the End of Unit Reflection & Pupil Voice page.",
         "instructions": [
@@ -6491,7 +6368,7 @@ const cme_new = {
           "Evaluate the events and significance of the Suez Crisis (1956), including the formation of the United Arab Republic (UAR) in 1958."
         ]
       },
-      "enquiry": "Why did the nationalisation of the Suez Canal trigger a global crisis in 1956?",
+      "enquiry": "Why did the Suez Crisis happen, and who really won?",
       "exam_practice": {
         "type": "consequence_and_extended",
         "title": "Edexcel GCSE (9–1) Paper 2 Exam Practice (Workbook KT1.3 • pp. 8–9)",
@@ -7406,7 +7283,7 @@ const cme_new = {
         "significance": "As the charismatic leader of Pan-Arab nationalism, Nasser faced intense domestic and regional pressure after the Samu and Golan clashes. His brinkmanship and closure of the Straits of Tiran directly triggered the pre-emptive Israeli air offensive.",
         "origins": "The son of an Alexandria postal worker who grew up protesting against British domination of Egypt, Nasser served—and was besieged—as an Egyptian army officer in the 1948 Palestine War, an humiliation that drove him to lead the 1952 Free Officers coup."
       },
-      "title": "KT 2.1 Enquiry: How Did Water, Border Raids, and Rhetoric Make a Second Arab-Israeli War Inevitable? (1964–1967)",
+      "title": "KT 2.1: Rising Tensions: Water & Border Raids, 1964–1967",
       "learning_objective": "Explain why tensions between Israel, Syria, and Jordan escalated into military conflict between 1964 and 1967.",
       "learning_objectives": [
         "Explain the significance of the 1964 Cairo Conference and the creation of the PLO and Fatah.",
@@ -8979,7 +8856,8 @@ const cme_new = {
         "position": "center 64%"
       },
       "banner_image": "/images/cme_new/kt2/cme_l4_banner_galilee_golan_gamla.jpg",
-      "hero_image": "/images/cme_new/kt2/cme_l4_banner_galilee_golan_gamla.jpg"
+      "hero_image": "/images/cme_new/kt2/cme_l4_banner_galilee_golan_gamla.jpg",
+      "enquiry": "Why did border tensions spiral towards another war by 1967?"
     },
     {
       "id": "lesson_5",
@@ -9006,7 +8884,7 @@ const cme_new = {
         "significance": "Dayan became the global symbol of Israeli military dominance and deterrence. His aggressive operational tempo secured total victory across three fronts within 132 hours, fundamentally transforming Middle Eastern borders.",
         "origins": "Born in 1915 on Degania Alef, the first kibbutz in Palestine, Dayan trained in British night squads during the 1936–39 Arab Revolt, lost his left eye fighting Vichy French forces in 1941, and forged an aggressive doctrine of pre-emption and deterrence as IDF Chief of Staff."
       },
-      "title": "KT 2.2 Enquiry: Why Was the Six-Day War Decided in Three Hours, and Did Nasser Intend to Fight? (May–June 1967)",
+      "title": "KT 2.2: The Six-Day War, May–June 1967",
       "learning_objective": "Explain how the crisis of May 1967 triggered the Six Day War and analyse why Israel achieved rapid victory across three fronts.",
       "learning_objectives": [
         "Explain how Soviet false reports, Nasser's troop deployments, and the closure of the Straits of Tiran triggered the crisis of May 1967.",
@@ -10647,7 +10525,8 @@ const cme_new = {
         "position": "center 48%"
       },
       "banner_image": "/images/cme_new/kt2/cme_l5_banner_sinai_mountains_aqaba.jpg",
-      "hero_image": "/images/cme_new/kt2/cme_l5_banner_sinai_mountains_aqaba.jpg"
+      "hero_image": "/images/cme_new/kt2/cme_l5_banner_sinai_mountains_aqaba.jpg",
+      "enquiry": "How did the May 1967 crisis end in a six-day Israeli victory?"
     },
     {
       "id": "lesson_6",
@@ -10674,7 +10553,7 @@ const cme_new = {
         "significance": "Known as the 'Iron Lady' of Israeli politics, Meir maintained uncompromising diplomatic resolve following the 1967 war, adhering strictly to 'secure borders' and refusing unilateral territorial concessions without mutual recognition.",
         "origins": "Born in Kyiv in the Russian Empire—where early memories of antisemitic pogroms shaped her outlook—she grew up in Milwaukee as a schoolteacher before emigrating to a kibbutz in Mandatory Palestine in 1921 and rising through Labour Zionist diplomacy."
       },
-      "title": "KT 2.3 Enquiry: \"Land for Peace\" or Permanent Stalemate: How Did the 1967 Conquered Territories Transform the Conflict?",
+      "title": "KT 2.3: Occupied Territories & UN Resolution 242",
       "learning_objective": "Explain the impact of the Occupied Territories, the Khartoum \"Three Noes\", and the diplomatic formula of UN Resolution 242.",
       "learning_objectives": [
         "Describe the geographical extent of the Occupied Territories and the impact on Palestinian refugees.",
@@ -12326,7 +12205,8 @@ const cme_new = {
         "position": "center 52%"
       },
       "banner_image": "/images/cme_new/kt2/cme_l6_banner_east_jerusalem_temple_mount.jpg",
-      "hero_image": "/images/cme_new/kt2/cme_l6_banner_east_jerusalem_temple_mount.jpg"
+      "hero_image": "/images/cme_new/kt2/cme_l6_banner_east_jerusalem_temple_mount.jpg",
+      "enquiry": "Why did Israel’s 1967 victory make lasting peace even harder?"
     },
     {
       "id": "lesson_7",
@@ -12353,7 +12233,7 @@ const cme_new = {
         "significance": "Arafat transformed the Palestinian cause from a passive refugee dilemma into an autonomous political and paramilitary movement, demonstrating that Palestinians would fight independently rather than wait for Arab armies.",
         "origins": "Born in Cairo in 1929 to a Palestinian family with roots in Jerusalem and Gaza, Arafat smuggled weapons for Palestinian fighters in 1948, studied civil engineering, and co-founded Fatah among Palestinian exiles in Kuwait (1959), convinced Arab governments would never liberate Palestine on Palestinians’ behalf."
       },
-      "title": "KT 2.4: The Rise of Palestinian Resistance: The PLO, Black September & Munich (1968–1972)",
+      "title": "KT 2.4: The PLO, Black September & Munich, 1968–1972",
       "learning_objective": "Explain why Palestinian resistance groups turned to armed struggle and international terrorism between 1968 and 1972.",
       "learning_objectives": [
         "Explain why the Battle of Karameh (1968) led to Yasser Arafat and Fatah taking leadership of the PLO.",
@@ -13902,7 +13782,8 @@ const cme_new = {
         "position": "center 28%"
       },
       "banner_image": "/images/cme_new/kt2/cme_l7_banner_munich_olympiapark_canopy.jpg",
-      "hero_image": "/images/cme_new/kt2/cme_l7_banner_munich_olympiapark_canopy.jpg"
+      "hero_image": "/images/cme_new/kt2/cme_l7_banner_munich_olympiapark_canopy.jpg",
+      "enquiry": "Why did Palestinian groups turn to international violence, and did it work?"
     },
     {
       "id": "lesson_8",
@@ -13929,7 +13810,7 @@ const cme_new = {
         "significance": "Sadat used limited military warfare not to destroy Israel, but to break the diplomatic stalemate, force superpower intervention, and regain Arab honor, paving the way for eventual peace negotiations.",
         "origins": "Born in a poor Nile Delta village in 1918 and jailed twice by the British during the Second World War for anti-colonial plotting, Sadat joined Nasser’s 1952 Free Officers revolution before concluding as President that Egypt’s economic survival required breaking the military stalemate and winning US backing."
       },
-      "title": "KT 2.5: The War of Attrition & The Yom Kippur War (1969–1973)",
+      "title": "KT 2.5: The War of Attrition & Yom Kippur War, 1969–1973",
       "learning_objective": "Explain why the Yom Kippur War of October 1973 broke the diplomatic deadlock and opened the path to peace.",
       "learning_objectives": [
         "Explain the causes and nature of the War of Attrition (1969–70) and Anwar Sadat's strategic objectives.",
@@ -15486,7 +15367,8 @@ const cme_new = {
         "position": "center 54%"
       },
       "banner_image": "/images/upgraded/gcse-cw-cme/cme_l8_yom_kippur_suez_pontoon_bridge_1973.jpg",
-      "hero_image": "/images/upgraded/gcse-cw-cme/cme_l8_yom_kippur_suez_pontoon_bridge_1973.jpg"
+      "hero_image": "/images/upgraded/gcse-cw-cme/cme_l8_yom_kippur_suez_pontoon_bridge_1973.jpg",
+      "enquiry": "How did war and oil in 1973 finally break the diplomatic deadlock?"
     },
     {
       "id": "lesson_9",
@@ -15517,7 +15399,7 @@ const cme_new = {
         "significance": "Begin embodied a striking historical paradox: the former underground Irgun commander once hunted by Britain proved that a nationalist right-wing leader could trade all of Sinai for Israel’s first peace treaty with an Arab neighbour—yet simultaneously entrenched Israeli settlement rule in the West Bank and launched the polarising 1982 Lebanon War.",
         "origins": "Born in Brest-Litovsk (Poland), Begin was imprisoned in a Soviet gulag (1940–41) and lost his parents and brother in the Holocaust before reaching Palestine in 1942. Shaped by Revisionist Zionism, he viewed Jewish military strength and Jewish claims to biblical Judea and Samaria (the West Bank) as non-negotiable."
       },
-      "title": "KT 3.1: Diplomatic Negotiations: From Shuttle Diplomacy to Camp David, 1974–1979",
+      "title": "KT 3.1: Shuttle Diplomacy to Camp David, 1974–1981",
       "quiz": [
         {
           "stage": 1,
@@ -16553,7 +16435,7 @@ const cme_new = {
           "Evaluate Sadat’s visit to Israel (1977), Begin’s visit to Egypt (1977), US President Carter and Camp David (1978) and the Treaty of Washington (1979)."
         ]
       },
-      "enquiry": "How did historic enemies Egypt and Israel finally achieve a lasting peace treaty?",
+      "enquiry": "How did Egypt and Israel make peace—and why did it cost Sadat his life?",
       "exam_practice": {
         "type": "consequence_and_extended",
         "title": "Edexcel GCSE (9–1) Paper 2 Exam Practice (Workbook KT3.1 • pp. 2–3)",
@@ -16718,7 +16600,7 @@ const cme_new = {
         ],
         "timer_seconds": 90
       },
-      "consolidation": "Exit Ticket — Spot the Imposter: Identify the false statement regarding the Sabra and Shatila massacres (Statement B) and write the 1-sentence historical correction.",
+      "consolidation": "Exit Ticket — Spot the Imposter: Identify the false statement regarding Camp David and the 1979 Egypt-Israel Peace Treaty (Statement B) and write the 1-sentence historical correction.",
       "exam_clinic": [
         {
           "question": "Explain the significance of the oil crisis for American foreign policy in the Middle East after 1973.",
@@ -16985,13 +16867,13 @@ const cme_new = {
         "type": "spot_imposter",
         "type_label": "Exit Ticket · Two Truths & One Fallacy",
         "title": "Exit Ticket: Spot the Historical Imposter",
-        "prompt": "Identify the IMPOSTER among these three statements regarding the 1982 Lebanon War:",
+        "prompt": "Identify the IMPOSTER among these three statements regarding the Egyptian-Israeli peace process (1974–1981):",
         "options": [
-          "Statement A: Israeli Defense Minister Ariel Sharon sent troops far beyond the declared 40-kilometer buffer zone to lay siege to Beirut and expel Yasser Arafat’s PLO leadership to Tunisia.",
-          "Statement B: The Sabra and Shatila massacres were carried out directly by Israeli soldiers following an explicit order from Prime Minister Menachem Begin.",
-          "Statement C: The official Israeli Kahan Commission found Ariel Sharon bore \"personal responsibility\" for failing to prevent the massacre, forcing his resignation as Defense Minister."
+          "Statement A: Anwar Sadat broke a thirty-year Arab taboo in November 1977 by flying directly to Jerusalem to address the Israeli Knesset.",
+          "Statement B: Under the 1978 Camp David Accords, Menachem Begin agreed to establish a fully independent Palestinian state in the West Bank and Gaza.",
+          "Statement C: Furious at Egypt’s separate peace with Israel in 1979, the Arab League expelled Egypt and Islamist extremists assassinated Sadat in October 1981."
         ],
-        "guidance": "Task: Identify the false statement (Statement B: the massacre was committed by Christian Phalangist militiamen, though Israeli forces encircled the camps) and write the correction."
+        "guidance": "Task: Identify the false statement (Statement B: Camp David returned the Sinai Peninsula to Egypt, but offered Palestinians only vague talks on limited \"autonomy\", not an independent state) and write the correction."
       },
       "timeline_anchor": [
         {
@@ -17015,25 +16897,6 @@ const cme_new = {
           "desc": "Egypt and Israel sign a formal peace treaty on the White House lawn; in October 1981, Sadat assassinated by Islamic extremists in Cairo."
         }
       ],
-      "secondary_map": {
-        "title": "Map Task: The Sinai Demilitarisation & Handback (1979–1982)",
-        "instructions": "Using the map of the Sinai Peninsula, identify the phased withdrawal lines and demilitarised security zones established under the 1979 Egyptian-Israeli Peace Treaty.",
-        "source_a": "/images/cme_sinai_peninsula_map.jpg",
-        "max_height": "470px",
-        "checklist": {
-          "withdrawal_zones": [
-            "El Arish–Ras Mohammad Line: First interim Israeli withdrawal line completed by Jan 1980",
-            "International Border Line: Full Israeli evacuation of Yamit settlement and Sinai by April 1982"
-          ],
-          "demilitarization_terms": [
-            "Zone A (Egypt): Maximum 1 armed mechanized infantry division (22,000 troops) east of Suez",
-            "Zone B (Egypt): 4 border security battalions with light weapons only",
-            "Zone C (Egypt/UN): Multinational Force & Observers (MFO) peacekeeper zone along the border",
-            "Zone D (Israel): Maximum 4 Israeli infantry battalions along the international border",
-            "Strategic Chokepoint: Guarantees of unhindered Israeli shipping through the Straits of Tiran"
-          ]
-        }
-      },
       "video": [
         {
           "type": "youtube",
@@ -17411,7 +17274,7 @@ const cme_new = {
         "significance": "Known as 'The Bulldozer', Sharon sought to militarily eliminate Palestinian nationalism in Lebanon, but the resulting bloodshed and moral outcry sparked massive anti-war protests in Israel and deeply polarized public opinion.",
         "origins": "Born in 1928 on a farming moshav in Mandatory Palestine to immigrant parents from Belarus, Sharon joined the Haganah at fourteen, commanded IDF Unit 101 cross-border reprisal raids in the 1950s, and made his name with bold armoured offensives in 1956, 1967, and 1973."
       },
-      "title": "KT 3.2: The Palestinian Issue: Lebanon, Sabra & Shatila, and the First Intifada, 1974–1993",
+      "title": "KT 3.2: Lebanon, Sabra & Shatila, and the First Intifada, 1974–1993",
       "quiz": [
         {
           "stage": 1,
@@ -18563,7 +18426,7 @@ const cme_new = {
           "Evaluate the situation in the Israeli occupied territories and the First Palestinian Intifada (1987–93)."
         ]
       },
-      "enquiry": "How did the First Intifada fundamentally alter the nature of the Palestinian struggle?",
+      "enquiry": "How did the Palestinian struggle shift from war in Lebanon to uprising at home?",
       "exam_practice": {
         "type": "consequence_and_extended",
         "title": "Edexcel GCSE (9–1) Paper 2 Exam Practice (Workbook KT3.2 • pp. 4–5)",
@@ -19455,7 +19318,7 @@ const cme_new = {
         "significance": "A decorated warrior and former Chief of Staff who had enforced the 'Iron Fist' during the First Intifada, Rabin came to believe military force alone could not solve the conflict. His courageous pursuit of peace ended tragically when an extremist Israeli assassin shot him in November 1995.",
         "origins": "Born in Jerusalem in 1922—Israel’s first native-born (Sabra) Prime Minister—Rabin fought in the elite Palmach in 1948, commanded the IDF in the June 1967 victory, and enforced the \"Iron Fist\" during the First Intifada before concluding that permanent occupation threatened Israel’s future."
       },
-      "title": "KT 3.3: Attempts at a Solution: From the Oslo Accords to Oslo II, 1988–1995",
+      "title": "KT 3.3: From the Oslo Accords to Oslo II, 1988–1995",
       "lesson_reflection": {
         "prompt": "You have reached the end of this Key Topic booklet! Before you finish, please turn to the back page of your printed workbook and complete the End of Unit Reflection & Pupil Voice page.",
         "instructions": [
@@ -20282,7 +20145,7 @@ const cme_new = {
           "Evaluate Arafat, Rabin and the Oslo Accords (1993); the setting up of the Palestinian National Authority; the Israel-Jordan peace treaty (1994); and Oslo II (1995)."
         ]
       },
-      "enquiry": "Why did the Oslo Accords bring historic hope for peace, yet fail to resolve the conflict?",
+      "enquiry": "Why did the Oslo Accords bring hope for peace, yet fail to end the conflict?",
       "exam_practice": {
         "type": "consequence_and_extended",
         "title": "Edexcel GCSE (9–1) Paper 2 Exam Practice (Workbook KT3.3 • pp. 8–9)",
@@ -20976,25 +20839,6 @@ const cme_new = {
           "desc": "The West Bank is partitioned into Areas A, B, and C under Oslo II; on 4 November 1995, Prime Minister Yitzhak Rabin was assassinated in Tel Aviv."
         }
       ],
-      "secondary_map": {
-        "title": "Map Task: The Oslo II West Bank Administrative Matrix (1995)",
-        "instructions": "Study the fragmented territorial matrix created under the September 1995 Oslo II (Taba) Interim Agreement. Match the literal colours on the map (Green, Dark Coral/Red, Light Pink, and Blue) — noting how Oslo II began in September 1995 at ~3% Area A / ~24% Area B / ~73% Area C before late-1990s redeployments expanded Palestinian zones to 18% / 22% / 60% — and analyse why this archipelago of enclaves strained the peace process.",
-        "source_a": "/images/cme_oslo_areas_map.png",
-        "max_height": "470px",
-        "checklist": {
-          "oslo_zones": [
-            "Area A (Green — ~3% in Sept 1995, expanding to 18% via late-1990s redeployments): Full Palestinian civil administration and internal police security across major Palestinian cities (Jenin, Tubas, Tulkarm, Qalqilya, Nablus, Salfit, Ramallah, Jericho, Bethlehem, and most of Hebron)",
-            "Area B (Dark Coral / Red — ~24% in Sept 1995, adjusting to 22% after redeployments): Palestinian civil administration with overriding Israeli/joint military security control across 450+ rural Palestinian towns and villages surrounding Area A",
-            "Area C (Light Pink — ~73% in Sept 1995, 60% after late-1990s redeployments): Full Israeli civil and military security control covering all Israeli settlements, military zones, bypass-road corridors, and the strategic Jordan Valley",
-            "Jerusalem (Blue): Municipal East Jerusalem zone excluded from interim Palestinian National Authority jurisdiction and deferred to permanent Final Status talks"
-          ],
-          "fragmentation_impact": [
-            "Observe how continuous Light Pink Area C surrounds and separates the Green (Area A) and Dark Coral/Red (Area B) Palestinian zones across the West Bank",
-            "Identify the fragmentation of Palestinian Areas A and B into over 165 disconnected cantons (\"islands\") separated by Israeli-controlled Area C corridors and checkpoints",
-            "Note the Blue Jerusalem zone extending between Ramallah in the north and Bethlehem in the south, cutting East Jerusalem off from the West Bank hinterland"
-          ]
-        }
-      },
       "video": [
         {
           "type": "youtube",
@@ -23902,171 +23746,6 @@ const cme_new = {
   "edition": "2026.1",
   "keyStage": "GCSE",
   "key_stage": "GCSE",
-  "year_group": "GCSE (9–1)",
-  "guided_reading": [
-    {
-      "lesson_index": 0,
-      "lesson_id": "lesson_0",
-      "lesson_label": "KT 1.0: Broken Promises (1915–39)",
-      "short_tab_title": "McMahon & Balfour",
-      "book_title": "Two Contradictory Wartime Pledges: The McMahon Letter (24 October 1915) & The Balfour Declaration (2 November 1917)",
-      "author": "Sir Henry McMahon (Cairo • 24 October 1915) & Arthur James Balfour (Foreign Office • 2 November 1917)",
-      "cover_image": "/images/cme_balfour_declaration_1917.jpg",
-      "cover_caption": "Foreign Secretary Arthur James Balfour’s signed typescript letter to Lord Walter Rothschild (2 November 1917), preserved at the British Library, London.",
-      "author_context": "Fighting the Ottoman Empire during the First World War, Britain desperately needed both an Arab military revolt to protect the Suez Canal and international Jewish support in Russia and the United States. Within twenty-five months, British officials sent two historic letters—first from High Commissioner Sir Henry McMahon in Cairo to Sharif Hussein of Mecca (October 1915), and second from Foreign Secretary Arthur Balfour to Zionist leader Lord Rothschild (November 1917)—while secretly signing the 1916 Sykes-Picot partition with France.",
-      "source_type": "primary_correspondence",
-      "source_type_label": "Official Diplomatic Letters (1915 & 1917)",
-      "is_primary": true,
-      "is_adapted": false,
-      "provenance_tier": "verbatim_primary",
-      "provenance_note": "Verbatim primary texts from Sir Henry McMahon’s Second Note to Sharif Hussein of Mecca (24 October 1915, UK Parliamentary Command Paper Cmd. 5957) and Foreign Secretary Arthur James Balfour’s letter to Lord Rothschild (2 November 1917, British Library Add MS 41178).",
-      "extract": "<strong>Document I — Sir Henry McMahon, British High Commissioner in Cairo, to Sharif Hussein of Mecca (24 October 1915):</strong>\n\n\"I have realized, however, from your last letter that you regard this question as one of vital and urgent importance. I have, therefore, lost no time in informing the Government of Great Britain of the contents of your letter, and it is with great pleasure that I communicate to you on their behalf the following statement, which I am confident you will receive with satisfaction.\n\nThe districts of Mersina and Alexandretta and portions of Syria lying to the West of the districts of Damascus, Hama, Homs and Aleppo cannot be said to be purely Arab, and should be excluded from the proposed limits and boundaries.\n\nWith the above modification, and without prejudice to our existing treaties with Arab chiefs, we accept those limits and boundaries; and, in regard to those portions of the territories therein in which Great Britain is free to act without detriment to the interests of her Ally, France, I am empowered in the name of the Government of Great Britain to give the following assurances and make the following reply to your letter:—\n\nSubject to the above modifications, Great Britain is prepared to recognize and support the independence of the Arabs in all the regions within the limits demanded by the Sherif of Mecca.\"\n\n<strong>Document II — Foreign Secretary Arthur James Balfour to Lord Walter Rothschild (Foreign Office, London, 2 November 1917):</strong>\n\n\"Dear Lord Rothschild,\n\nI have much pleasure in conveying to you, on behalf of His Majesty’s Government, the following declaration of sympathy with Jewish Zionist aspirations which has been submitted to, and approved by, the Cabinet:—\n\n‘His Majesty’s Government view with favour the establishment in Palestine of a national home for the Jewish people, and will use their best endeavours to facilitate the achievement of this object, it being clearly understood that nothing shall be done which may prejudice the civil and religious rights of existing non-Jewish communities in Palestine, or the rights and political status enjoyed by Jews in any other country.’\n\nI should be grateful if you would bring this declaration to the knowledge of the Zionist Federation.\n\nYours sincerely, Arthur James Balfour.\"",
-      "vocabVault": [
-        {
-          "term": "Sharif of Mecca",
-          "def": "Sharif Hussein ibn Ali, Hashemite guardian of Islam’s holy cities of Mecca and Medina, whom Britain courted in 1915 to lead the Arab Revolt against Ottoman Turkish rule."
-        },
-        {
-          "term": "Zionist Federation",
-          "def": "The representative organisation of the Zionist movement in Britain campaigning for international recognition of a Jewish homeland in ancestral Palestine."
-        },
-        {
-          "term": "National Home",
-          "def": "Balfour’s deliberately ambiguous diplomatic phrase promising British support for a Jewish homeland in Palestine without stating outright whether it would become a sovereign Jewish state."
-        },
-        {
-          "term": "Existing Non-Jewish Communities",
-          "def": "Balfour’s phrase referring to Palestine’s indigenous Arab Muslim and Christian population—who constituted more than 90% of Palestine’s inhabitants in November 1917."
-        }
-      ],
-      "parent_discussion": [
-        {
-          "question": "Why did McMahon’s phrase excluding land \"to the West of the districts of Damascus, Hama, Homs and Aleppo\" cause such a bitter row over Palestine?",
-          "answer": "McMahon never named Palestine directly. Geographically, Palestine lies south-west of Damascus rather than due west, so Sharif Hussein and Palestinian Arabs believed Palestine was promised Arab independence—whereas Britain later claimed it had been excluded."
-        },
-        {
-          "question": "Notice how the 67-word Balfour Declaration refers to Palestine’s 90%+ Arab majority (\"existing non-Jewish communities\")—what crucial right did it leave out?",
-          "answer": "It promised not to harm their \"civil and religious rights,\" yet completely omitted their political and national rights to self-determination and majority rule."
-        },
-        {
-          "question": "Why did Britain make two contradictory promises—plus the secret 1916 Sykes-Picot deal with France—between 1915 and 1917?",
-          "answer": "Locked in a desperate world war, Britain prioritised short-term wartime survival: winning an Arab revolt to shield the Suez Canal, keeping ally France satisfied, and courting Jewish opinion in Russia and the USA."
-        }
-      ],
-      "hinge_question": "<strong>Think:</strong> Does McMahon’s October 1915 letter ever mention the word \"Palestine\" explicitly?<br><br><strong>Pair:</strong> Compare McMahon’s pledge to \"recognize and support the independence of the Arabs\" with Balfour’s pledge to facilitate \"a national home for the Jewish people\"—why did both Arabs and Zionists later accuse Britain of betrayal?<br><br><strong>Share:</strong> How did writing the Balfour Declaration directly into the 1922 League of Nations Mandate make conflict in Mandatory Palestine almost impossible for Britain to resolve?",
-      "questions": [
-        "Which regions did Sir Henry McMahon exclude from Britain’s October 1915 pledge of Arab independence?",
-        "What did Arthur Balfour declare His Majesty’s Government viewed \"with favour\" on 2 November 1917?",
-        "Which rights did the Balfour Declaration promise to safeguard for \"existing non-Jewish communities in Palestine\"—and which rights did it omit?"
-      ]
-    },
-    {
-      "lesson_index": 6,
-      "lesson_id": "lesson_6",
-      "lesson_label": "KT 2.3: Conquered Territories & UN Res 242 (1967)",
-      "short_tab_title": "Khartoum & UN Res 242",
-      "book_title": "The Diplomatic Stalemate of 1967: The Khartoum Summit Resolution (1 September 1967) & UN Security Council Resolution 242 (22 November 1967)",
-      "author": "Arab League Heads of State (Khartoum • 1 Sept 1967) & UN Security Council / Lord Caradon (New York • 22 Nov 1967)",
-      "cover_image": "/images/cme_plate_abba_eban_diplomacy_1967.jpg",
-      "cover_caption": "Israeli Foreign Minister Abba Eban seated at the United Nations Security Council during the 1967 diplomatic debates that produced Resolution 242.",
-      "author_context": "Israel’s six-day victory in June 1967 left Sinai, Gaza, the West Bank, East Jerusalem, and the Golan Heights under Israeli control. Meeting in Khartoum, Sudan, on 1 September 1967, eight Arab heads of state paired oil-funded reconstruction and international diplomacy with three famous red lines ('the Three Noes'). Eleven weeks later, on 22 November 1967, British Ambassador Lord Caradon secured unanimous superpower and regional passage for UN Security Council Resolution 242—only by crafting deliberate verbal ambiguity that each side interpreted differently.",
-      "source_type": "primary_treaty",
-      "source_type_label": "Summit Declaration & UN Security Council Resolution (1967)",
-      "is_primary": true,
-      "is_adapted": false,
-      "provenance_tier": "verbatim_primary",
-      "provenance_note": "Verbatim primary texts of Paragraph 3 of the Arab League Summit Resolution adopted at Khartoum (1 September 1967) and United Nations Security Council Resolution 242 (S/RES/242, adopted unanimously at the 1382nd meeting on 22 November 1967).",
-      "extract": "<strong>Document I — Khartoum Arab League Summit Resolution, Paragraph 3 (1 September 1967):</strong>\n\n\"3. The Arab Heads of State have agreed to unite their political efforts at the international and diplomatic level to eliminate the effects of the aggression and to ensure the withdrawal of the aggressive Israeli forces from the Arab lands which have been occupied since the aggression of June 5. This will be done within the framework of the main principles by which the Arab States abide, namely, no peace with Israel, no recognition of Israel, no negotiations with it, and insistence on the rights of the Palestinian people in their own country.\"\n\n<strong>Document II — United Nations Security Council Resolution 242 (22 November 1967):</strong>\n\n\"The Security Council,\nExpressing its continuing concern with the grave situation in the Middle East,\nEmphasizing the inadmissibility of the acquisition of territory by war and the need to work for a just and lasting peace in which every State in the area can live in security, ...\n\n1. Affirms that the fulfilment of Charter principles requires the establishment of a just and lasting peace in the Middle East which should include the application of both the following principles:\n(i) Withdrawal of Israeli armed forces from territories occupied in the recent conflict;\n(ii) Termination of all claims or states of belligerency and respect for and acknowledgement of the sovereignty, territorial integrity and political independence of every State in the area and their right to live in peace within secure and recognized boundaries free from threats or acts of force;\n\n2. Affirms further the necessity\n(a) For guaranteeing freedom of navigation through international waterways in the area;\n(b) For achieving a just settlement of the refugee problem;\n(c) For guaranteeing the territorial inviolability and political independence of every State in the area, through measures including the establishment of demilitarized zones;\"",
-      "vocabVault": [
-        {
-          "term": "The \"Three Noes\" (Khartoum, 1967)",
-          "def": "The Arab League pledge at Khartoum (1 September 1967) permitting international diplomatic action to recover lands lost in June 1967, but forbidding direct peace treaties, recognition, or negotiations with Israel."
-        },
-        {
-          "term": "Inadmissibility of Acquisition by War",
-          "def": "The foundational UN Charter principle in the preamble of Resolution 242 stating that states may not permanently annex foreign territory conquered by military force."
-        },
-        {
-          "term": "Constructive Ambiguity (\"From Territories\")",
-          "def": "Lord Caradon’s deliberate omission of the word \"the\" before \"territories occupied\" in the English text of Clause 1(i), allowing Israel to argue for partial withdrawal to defensible borders while Arab states cited the French text (\"des territoires\") to demand 100% withdrawal."
-        },
-        {
-          "term": "State of Belligerency",
-          "def": "An active legal condition of war, blockade, or hostility; Clause 1(ii) required Arab states to end belligerency and recognise Israel’s sovereignty within \"secure and recognized boundaries\"."
-        }
-      ],
-      "parent_discussion": [
-        {
-          "question": "Look closely at the first sentence of the Khartoum Resolution alongside the famous \"Three Noes\": how was Nasser trying to balance Arab moderates and hardliners in September 1967?",
-          "answer": "The opening sentence endorsed \"political efforts at the international and diplomatic level\" (backed by Gulf oil monarchies rather than immediate renewed war), while the \"Three Noes\" satisfied Arab public anger by ruling out direct talks or recognition of Israel."
-        },
-        {
-          "question": "How did missing out the single word \"the\" in Clause 1(i) of UN Resolution 242 get everybody in the Security Council to vote Yes—yet paralyse peace talks afterward?",
-          "answer": "Saying \"withdrawal ... from territories occupied\" rather than \"from all the territories occupied\" let Israel argue it could keep strategic buffers toward \"secure boundaries\", while Egypt, Jordan, and the USSR insisted the preamble required total withdrawal from every territory seized in June 1967."
-        },
-        {
-          "question": "Why did Yasser Arafat and the PLO angrily reject UN Resolution 242 in 1967 even after Egypt and Jordan accepted it?",
-          "answer": "Clause 2(b) referred only to \"achieving a just settlement of the refugee problem\" and never mentioned Palestinians by name or recognised any right to an independent Palestinian state."
-        }
-      ],
-      "hinge_question": "<strong>Think:</strong> Compare Khartoum’s insistence on \"the rights of the Palestinian people in their own country\" with Clause 2(b) of UN Resolution 242 (\"a just settlement of the refugee problem\")—whose national voice disappeared at the UN?<br><br><strong>Pair:</strong> Did omitting the word \"the\" in Clause 1(i) save diplomacy in November 1967 or guarantee another war by 1973?<br><br><strong>Share:</strong> Which did more to freeze \"Land for Peace\" after 1967: Khartoum’s \"Three Noes\", Resolution 242’s ambiguity, or Israeli settlements and fortifications in the occupied territories?",
-      "questions": [
-        "What two methods did the Arab Heads of State endorse in the opening sentence of Paragraph 3 at Khartoum—and what three actions toward Israel did they explicitly forbid?",
-        "Which two reciprocal principles did Clause 1(i) and Clause 1(ii) of UN Resolution 242 link together to create the \"Land for Peace\" formula?",
-        "Why did the English wording of Clause 1(i) (\"from territories occupied\") and Clause 2(b) (\"the refugee problem\") provoke rival interpretations among Israel, Arab states, and the PLO?"
-      ]
-    },
-    {
-      "lesson_index": 11,
-      "lesson_id": "lesson_11",
-      "lesson_label": "KT 3.3: The Oslo Accords & Rabin's Assassination (1993–95)",
-      "book_title": "The Rabin–Arafat Mutual Recognition Letters (9 Sept 1993) & Rabin’s White House Address (13 Sept 1993)",
-      "author": "PLO Chairman Yasser Arafat & Israeli Prime Minister Yitzhak Rabin (9 & 13 September 1993)",
-      "cover_image": "/images/cme_oslo_handshake_1993.jpg",
-      "cover_caption": "Israeli Prime Minister Yitzhak Rabin and PLO Chairman Yasser Arafat shake hands before US President Bill Clinton on the White House South Lawn, 13 September 1993.",
-      "author_context": "Following secret Norwegian-mediated talks near Oslo in early 1993, PLO Chairman Yasser Arafat and Israeli Prime Minister Yitzhak Rabin—the former IDF Chief of Staff in the 1967 Six-Day War—exchanged formal letters of mutual recognition on 9 September 1993. Four days later, on 13 September 1993, Rabin addressed 3,000 guests on the White House South Lawn at the signing of the Oslo I Declaration of Principles.",
-      "source_type": "primary_speech",
-      "source_type_label": "Mutual Recognition Letters & White House Address (Sept 1993)",
-      "is_primary": true,
-      "is_adapted": false,
-      "extract": "I. Chairman Yasser Arafat to Prime Minister Yitzhak Rabin (9 September 1993):\n\"Mr. Prime Minister, The signing of the Declaration of Principles marks a new era in the history of the Middle East. In firm conviction thereof, I would like to confirm the following PLO commitments: The PLO recognizes the right of the State of Israel to exist in peace and security. The PLO accepts United Nations Security Council Resolutions 242 and 338. ... Accordingly, the PLO renounces the use of terrorism and other acts of violence and will assume responsibility over all PLO elements and personnel in order to assure their compliance, prevent violations and discipline violators.\"\n\nII. Prime Minister Yitzhak Rabin to Chairman Yasser Arafat (9 September 1993):\n\"Mr. Chairman, In response to your letter of September 9, 1993, I wish to confirm to you that, in light of the PLO commitments included in your letter, the Government of Israel has decided to recognize the PLO as the representative of the Palestinian people and commence negotiations with the PLO within the Middle East peace process.\"\n\nIII. Prime Minister Yitzhak Rabin, White House South Lawn Address (13 September 1993):\n\"We, the soldiers who have returned from battle stained with blood, we who have seen our relatives and friends killed before our eyes, we who have attended their funerals and cannot look into the eyes of their parents, we who have come from a land where parents bury their children, we who have fought against you, the Palestinians—we say to you today in a loud and a clear voice: Enough of blood and tears. Enough!\"",
-      "vocabVault": [
-        {
-          "term": "Mutual Recognition (9 September 1993)",
-          "def": "The historic pre-Oslo exchange of official letters in which the PLO recognised Israel’s right to exist in peace and security and renounced terrorism, while Israel recognised the PLO as the representative of the Palestinian people."
-        },
-        {
-          "term": "Declaration of Principles (Oslo I, 13 September 1993)",
-          "def": "The five-year interim framework establishing the Palestinian National Authority (PNA) starting in Gaza and Jericho while deferring Jerusalem, refugees, settlements, and permanent borders to Final Status talks."
-        },
-        {
-          "term": "UN Resolutions 242 & 338",
-          "def": "The 1967 and 1973 UN Security Council \"Land for Peace\" resolutions accepted by Arafat as the legal basis for peaceful two-state negotiations with Israel."
-        }
-      ],
-      "parent_discussion": [
-        {
-          "question": "What concrete commitments did Yasser Arafat make in his 9 September 1993 letter before Israel agreed to recognise the PLO?",
-          "answer": "Arafat formally recognised Israel’s right to exist in peace and security, accepted UN Security Council Resolutions 242 and 338, renounced terrorism and violence, and declared PLO Covenant clauses denying Israel’s existence inoperative."
-        },
-        {
-          "question": "Why did Yitzhak Rabin’s identity as a veteran Israeli soldier and 1967 IDF Chief of Staff make his \"Enough of blood and tears\" speech so persuasive to many Israelis?",
-          "answer": "Because Rabin had led Israel’s armed forces in 1967 and enforced tough security measures in the First Intifada, moderates trusted that his turn toward territorial compromise came from hard-headed military realism rather than weakness."
-        },
-        {
-          "question": "What crucial Final Status issues were left out of these September 1993 texts—and how did extremists on both sides react between 1994 and November 1995?",
-          "answer": "Oslo postponed East Jerusalem, Palestinian refugees, Israeli settlements, and final borders for five years; meanwhile, Baruch Goldstein’s 1994 Hebron massacre, Hamas suicide bus bombings, and Yigal Amir’s assassination of Rabin on 4 November 1995 derailed trust."
-        }
-      ],
-      "hinge_question": "<strong>Think:</strong> Compare the length and wording of Arafat’s 9 September 1993 letter with Rabin’s two-sentence reply—what did Israel recognise, and what word (\"statehood\") did Rabin avoid?<br><br><strong>Pair:</strong> Why did Rabin invoke \"soldiers who have returned from battle stained with blood\" on the White House lawn?<br><br><strong>Share:</strong> Was Oslo I a genuine historic breakthrough toward peace, or was postponing settlements, refugees, and Jerusalem for five years a fatal flaw?",
-      "questions": [
-        "Which three specific diplomatic and security pledges did Arafat confirm in his 9 September 1993 letter to Rabin?",
-        "In Rabin’s 9 September 1993 reply, what exact status did the Government of Israel grant the PLO—and did Israel recognise an independent Palestinian state?",
-        "How did Rabin use the shared grief of bereaved Israeli and Palestinian families on 13 September 1993 to justify making peace with a lifelong enemy?"
-      ],
-      "provenance_tier": "verbatim_primary",
-      "provenance_note": "Verbatim official English texts of the Israel–PLO Letters of Mutual Recognition (9 September 1993, Israel Ministry of Foreign Affairs / UN Peacemaker) and Prime Minister Yitzhak Rabin’s address at the Oslo I signing ceremony on the White House South Lawn (13 September 1993)."
-    }
-  ]
+  "year_group": "GCSE (9–1)"
 };
 export default cme_new;

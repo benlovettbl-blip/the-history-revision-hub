@@ -1290,7 +1290,8 @@ export default {
       "banner_image": "/images/upgraded/ks3-empire-gw/gw2_l1_banner_lincolnshire_recruits_1914_q53285.jpg",
       "hero_image": "/images/upgraded/ks3-empire-gw/gw2_l1_banner_lincolnshire_recruits_1914_q53285.jpg",
       "banner_position": "center 56%",
-      "card_image": "/images/great_war_part2/gw2_l1_b0_kitchener_wants_you_leete_1914.jpg"
+      "card_image": "/images/great_war_part2/gw2_l1_b0_kitchener_wants_you_leete_1914.jpg",
+      "enquiryQuestion": "Why were young British men so desperate to volunteer for the slaughter of 1914?"
     },
     {
       "id": "lesson_2_trenches_haig",
@@ -2550,8 +2551,8 @@ export default {
         }
       ],
       "subtitle": "Industrialized Attrition, The Somme Bloodbath, and the \"Lions Led by Donkeys\" Debate",
-      "enquiry": "Did British generals make the horror of trench warfare worse, or was Haig trapped in an industrial learning curve?",
-      "enquiry_question": "Did British generals make the horror of trench warfare worse, or was Haig trapped in an industrial learning curve?",
+      "enquiry": "Why was the Somme so costly—and does General Haig deserve the blame?",
+      "enquiry_question": "Why was the Somme so costly—and does General Haig deserve the blame?",
       "banner": {
         "image": "/images/upgraded/ks3-empire-gw/gw2_l2_banner_somme_advance_ginchy_1916_q1302.jpg",
         "alt": "British infantrymen crouched in a shell-torn earth trench in the foreground while a line of supporting troops advances across open Somme ground beside a white artillery shell burst at Ginchy on 9 September 1916",
@@ -2808,7 +2809,8 @@ export default {
       "banner_image": "/images/upgraded/ks3-empire-gw/gw2_l2_banner_somme_advance_ginchy_1916_q1302.jpg",
       "hero_image": "/images/upgraded/ks3-empire-gw/gw2_l2_banner_somme_advance_ginchy_1916_q1302.jpg",
       "banner_position": "center 42%",
-      "card_image": "/images/great_war_part2/gw2_l2_cameo_douglas_haig_portrait.jpg"
+      "card_image": "/images/great_war_part2/gw2_l2_cameo_douglas_haig_portrait.jpg",
+      "enquiryQuestion": "Why was the Somme so costly—and does General Haig deserve the blame?"
     },
     {
       "id": "lesson_3_empire_troops",
@@ -4221,7 +4223,8 @@ export default {
       "banner_image": "/images/upgraded/ks3-empire-gw/gw2_l3_banner_anzac_cove_gallipoli_1915.jpg",
       "hero_image": "/images/upgraded/ks3-empire-gw/gw2_l3_banner_anzac_cove_gallipoli_1915.jpg",
       "banner_position": "center 50%",
-      "card_image": "/images/great_war_part2/gw2_l3_b1_indian_mg_crew_flanders_1914.jpg"
+      "card_image": "/images/great_war_part2/gw2_l3_b1_indian_mg_crew_flanders_1914.jpg",
+      "enquiryQuestion": "Why were over four million colonial and dominion troops erased from popular memory?"
     },
     {
       "id": "lesson_4_home_front_dora",
@@ -5237,8 +5240,8 @@ export default {
         }
       ],
       "subtitle": "The Defence of the Realm Act (DORA), Conscientious Objectors, and the Canary Girls",
-      "enquiry": "How far did the First World War transform the British state and daily life on the Home Front?",
-      "enquiry_question": "How far did the First World War transform the British state and daily life on the Home Front?",
+      "enquiry": "How far did the First World War transform life on Britain’s Home Front?",
+      "enquiry_question": "How far did the First World War transform life on Britain’s Home Front?",
       "banner": {
         "image": "/images/upgraded/ks3-empire-gw/gw2_l4_banner_chilwell_canary_girls_1917_q30018.jpg",
         "alt": "Rows of thousands of heavy steel high-explosive artillery shells standing upright inside the vast iron-trussed shell warehouse at National Shell Filling Factory No. 6, Chilwell, tended by female munition workers in July 1917",
@@ -5585,7 +5588,8 @@ export default {
       "banner_image": "/images/upgraded/ks3-empire-gw/gw2_l4_banner_chilwell_canary_girls_1917_q30018.jpg",
       "hero_image": "/images/upgraded/ks3-empire-gw/gw2_l4_banner_chilwell_canary_girls_1917_q30018.jpg",
       "banner_position": "center 42%",
-      "card_image": "/images/great_war_part2/gw2_l4_b3_forbes_the_munition_girls_1918.jpg"
+      "card_image": "/images/great_war_part2/gw2_l4_b3_forbes_the_munition_girls_1918.jpg",
+      "enquiryQuestion": "How far did the First World War transform life on Britain’s Home Front?"
     },
     {
       "id": "lesson_5_versailles",
@@ -6996,304 +7000,525 @@ export default {
       "banner_image": "/images/upgraded/ks3-empire-gw/gw2_l5_banner_versailles_signing_hall_of_mirrors_1919.jpg",
       "hero_image": "/images/upgraded/ks3-empire-gw/gw2_l5_banner_versailles_signing_hall_of_mirrors_1919.jpg",
       "banner_position": "center 55%",
-      "card_image": "/images/great_war_part2/gw2_l5_b0_compiegne_armistice_carriage_1918.jpg"
+      "card_image": "/images/great_war_part2/gw2_l5_b0_compiegne_armistice_carriage_1918.jpg",
+      "enquiryQuestion": "Did the Treaty of Versailles solve the problems of 1914, or create the nightmares of 1939?"
     }
   ],
   "guided_reading": [
     {
       "lesson_index": 0,
-      "book_title": "Memoirs of an Infantry Officer",
-      "author": "Siegfried Sassoon",
-      "cover_image": "/images/great_war_part2/gw2_gr0_siegfried_sassoon_philpot_1917.jpg",
-      "cover_caption": "Captain Siegfried Sassoon MC (1886–1967), Royal Welch Fusiliers, painted in 1917 by Glyn Warren Philpot (Fitzwilliam Museum, Cambridge).",
-      "author_context": "Siegfried Sassoon was an English poet and officer in the Royal Welch Fusiliers who was awarded the Military Cross for extraordinary bravery. In his celebrated wartime memoirs, he records the naive, sporting enthusiasm with which young British men volunteered in August 1914 and the sudden, chilling encounter with the realities of the casualty lists.",
-      "is_adapted": true,
-      "extract": "I was sitting in the pavilion at the village cricket ground on an idyllic August afternoon when the extraordinary news arrived... To me, as an irresponsible young gentleman with nothing better to do than hunt foxes and score occasional runs, the sudden prospect of European war seemed like a grand adventure, a chivalric crusade that had arrived just in time to rescue our generation from the dull routine of modern peacetime.<br><br>Everyone around me was swept along by the same strange fever. In the market towns and city recruiting stations, young clerks, schoolboys, shop assistants, and farm labourers queued for hours in the stifling August heat. Brass bands marched through the high streets playing patriotic anthems, church bells rang, and proud mothers pinned ribbons to their sons' lapels. We were assured by politicians and newspapers that the conflict would be settled within six months, that the Kaiser would be humbled, and that we should all return home before Christmas crowned with laurels of victory.<br><br>...It was only later, when the transport trains rolled into midnight stations and the first battalion casualty lists appeared in the Times, that the terrible silence descended. The names of boys I had played cricket against at school and shared benches with at university were printed row upon row in tiny black letters, grouped under the brutal heading: ’Killed in Action.’ The heroic romance had vanished in an instant; the chivalric tournament was an illusion. We were not entering an adventure—we were being fed into an unrelenting industrial factory of death.",
-      "hinge_question": "<strong>Think:</strong> What metaphor does Sassoon use at the end of the extract to describe what the war truly became?<br><br><strong>Pair:</strong> Contrast Sassoon’s initial feelings at the cricket ground in August 1914 with his reaction to the first casualty lists. Why did the British government find it so easy to recruit over a million volunteers before conscription was introduced?<br><br><strong>Share:</strong> If so many volunteers believed the war would be a \"grand adventure\" that would be \"home by Christmas\", who bore the moral responsibility for misleading an entire generation?",
-      "audio_file": "/audio/reading/great_war_part2/r0.mp3",
-      "questions": [
-        "What was the author doing when the news of war arrived in August 1914?",
-        "What phrase does Sassoon use to describe the popular expectation of when the war would end?",
-        "How did Sassoon’s attitude change once he saw the battalion casualty lists in The Times?"
-      ],
-      "source_type": "primary_memoir",
-      "source_type_label": "Eyewitness Frontline Memoir",
-      "is_primary": true,
-      "studio_audio": "/audio/reading/great_war_part2/r0.mp3",
-      "studio_voice_label": "Lt. Siegfried Sassoon · Infantry Officer",
       "lesson_id": "lesson_1_enlistment",
       "lesson_label": "Enquiry 1",
-      "provenance_tier": "adapted_primary",
-      "provenance_note": "Adapted first-person classroom companion inspired by Siegfried Sassoon’s wartime memoirs, illustrating 1914 war fever and disillusionment.",
+      "short_tab_title": "1. Owen: Dulce et Decorum",
+      "literary_mode": "verbatim_literature",
+      "provenance_tier": "verbatim_literature",
+      "source_type": "classic_verse",
+      "source_type_label": "Frontline Anti-War Poem (1917 / 1920)",
+      "is_primary": true,
+      "is_adapted": false,
+      "book_title": "\"Dulce et Decorum Est\": Answering the Recruitment Lie (1917)",
+      "author": "Wilfred Owen (written October 1917 · pub. 1920)",
+      "provenance_note": "Verbatim public-domain stanzas from Lieutenant Wilfred Owen’s October 1917 poem \"Dulce et Decorum Est\" (originally drafted as an answer to recruitment poet Jessie Pope).",
+      "author_context": "Second Lieutenant Wilfred Owen served in the Manchester Regiment and won the Military Cross before being killed just one week before the Armistice in November 1918. Outraged by civilian poet Jessie Pope’s jaunty verses urging teenagers to enlist, Owen wrote \"Dulce et Decorum Est\" in 1917 to shatter \"the old Lie.\"",
+      "cover_image": "/images/sargent_gassed_1919.jpg",
+      "cover_caption": "John Singer Sargent’s monumental 1919 painting Gassed (Imperial War Museums), depicting blinded British soldiers resting hands on one another’s shoulders along wooden duckboards.",
       "vocabVault": [
         {
-          "term": "Chivalry",
-          "def": "The medieval knightly code of honour and fair combat—which many 1914 volunteers naively imagined modern war would resemble."
+          "term": "Dulce et decorum est",
+          "pronunciation": "DOOL-chay et day-KOR-um est",
+          "def": "Latin line from Roman poet Horace—\"It is sweet and honourable to die for one’s country\"—branded \"the old Lie\" by Owen."
         },
         {
-          "term": "Laurels",
-          "def": "A classical symbol of victory and triumphant homecoming."
+          "term": "Blood-shod",
+          "pronunciation": "BLUD-shod",
+          "def": "Owen’s vivid compound word for exhausted soldiers limping barefoot with boots lost and feet wrapped in blood."
         },
         {
-          "term": "Battalion",
-          "def": "An infantry unit of roughly 800–1,000 soldiers, often recruited locally from the same town, workplace, or school."
+          "term": "Floundering",
+          "pronunciation": "FLOWN-dur-ing",
+          "def": "Thrashing and stumbling helplessly—describing a soldier choking inside green chlorine/phosgene gas without his mask."
         },
         {
-          "term": "Casualty Lists",
-          "def": "Daily newspaper columns in The Times and local papers printing the names of soldiers killed, wounded, or missing."
+          "term": "Ardent",
+          "pronunciation": "AR-dunt",
+          "def": "Burning with eager enthusiasm—describing naive teenage volunteers hungry \"for some desperate glory\" in 1914."
         }
       ],
+      "extract": "In 1914 and 1915, civilian writers like Jessie Pope urged teenagers to rush to the colours as if modern war were a lively rugby match. Haunted by watching a gas-poisoned soldier flung into a jolting wagon in France, frontline officer Wilfred Owen wrote this blistering reply in October 1917.\n\n<div class=\"reading-stanza\">Bent double, like old beggars under sacks,<br>Knock-kneed, coughing like hags, we cursed through sludge,<br>Till on the haunting flares we turned our backs,<br>And towards our distant rest began to trudge.<br>Men marched asleep. Many had lost their boots,<br>But limped on, blood-shod. All went lame; all blind;<br>Drunk with fatigue; deaf even to the hoots<br>Of gas-shells dropping softly behind.</div>\n\n<div class=\"reading-stanza\">Gas! GAS! Quick, boys!—An ecstasy of fumbling,<br>Fitting the clumsy helmets just in time,<br>But someone still was yelling out and stumbling<br>And flound’ring like a man in fire or lime.<br>Dim through the misty panes and thick green light,<br>As under a green sea, I saw him drowning.</div>\n\n<div class=\"reading-stanza\">In all my dreams before my helpless sight,<br>He plunges at me, guttering, choking, drowning.</div>\n\n<div class=\"reading-stanza\">My friend, you would not tell with such high zest<br>To children ardent for some desperate glory,<br>The old Lie: <em>Dulce et decorum est</em><br><em>Pro patria mori.</em></div>\n\nKilled in action just one week before the November 1918 Armistice, Owen left behind an unforgettable warning against romanticising industrial slaughter.",
       "parent_discussion": [
         {
-          "question": "Why did so many young British volunteers rush to enlist in August 1914?",
-          "answer": "Swept up by patriotic bands, peer pressure, and promises that the war would be a grand adventure \"over by Christmas,\" few imagined industrial trench warfare."
+          "question": "Look at Owen’s opening two lines: how does he smash the recruitment poster image of tall, athletic young heroes?",
+          "answer": "Instead of upright sporting heroes, teenage soldiers are \"bent double, like old beggars under sacks,\" knock-kneed, coughing, and limping \"blood-shod\" through mud."
         },
         {
-          "question": "What changed the narrator’s attitude from sporting excitement to grief and shock?",
-          "answer": "Seeing long columns of former schoolmates’ and friends’ names printed day after day under \"Killed in Action\" in newspaper casualty lists."
+          "question": "How does the rhythm of the poem suddenly change at \"Gas! GAS! Quick, boys!\"?",
+          "answer": "The slow, exhausted trudge explodes into frantic panic as men fumble with gas helmets while one comrade drowns in green poison gas."
         },
         {
-          "question": "Why is this passage labelled an \"Adapted Companion\" rather than a word-for-word diary entry?",
-          "answer": "It synthesises themes from Siegfried Sassoon’s wartime memoirs and 1914 recruitment records into a classroom reading so pupils can grasp the shift from enthusiasm to disillusionment."
+          "question": "Why did Owen originally dedicate his draft to civilian poet Jessie Pope (\"My friend\") and call the Latin motto \"the old Lie\"?",
+          "answer": "Pope treated war like a cheerful rugby game to shame boys into enlisting; Owen insisted anyone who saw a man choke on gas would never lie to \"children\" about glorious death."
         }
       ],
-      "short_tab_title": "1. Sassoon: Infantry Memoirs"
+      "story_check": [
+        {
+          "question": "How does Wilfred Owen describe the exhausted soldiers trudging away from the flares in Stanza 1?",
+          "options": [
+            "Marching briskly behind brass bands",
+            "\"Bent double, like old beggars under sacks\" and limping \"blood-shod\"",
+            "Riding fresh cavalry horses",
+            "Playing football in No Man’s Land"
+          ],
+          "correctIndex": 1,
+          "feedback": "Owen strips away heroic myths by comparing young frontline soldiers to exhausted \"old beggars\" marching asleep."
+        },
+        {
+          "question": "Through what object is Owen peering when he writes \"Dim through the misty panes and thick green light\"?",
+          "options": [
+            "A stained-glass church window",
+            "The celluloid eyepieces of his gas helmet",
+            "A submarine periscope",
+            "A railway carriage window"
+          ],
+          "correctIndex": 1,
+          "feedback": "Soldiers looked out through the misted eyepieces (\"panes\") of their gas masks into green poison gas."
+        },
+        {
+          "question": "What does the Latin phrase \"Dulce et decorum est pro patria mori\"—which Owen calls \"the old Lie\"—mean?",
+          "options": [
+            "Victory belongs to the strongest fleet",
+            "It is sweet and honourable to die for one’s country",
+            "All soldiers will be home by Christmas",
+            "Treaties are mere scraps of paper"
+          ],
+          "correctIndex": 1,
+          "feedback": "Owen attacks the ancient patriotic slogan claiming it is sweet and fitting to die for one’s homeland."
+        }
+      ],
+      "monday_cold_call": {
+        "question": "Why did Wilfred Owen call \"Dulce et decorum est pro patria mori\" \"the old Lie\" in direct reply to recruitment propaganda?",
+        "answer": "Recruitment posters and Jessie Pope promised teenage volunteers sporting glory, whereas Owen witnessed young men marching \"blood-shod\" and choking to death in poison gas."
+      },
+      "hinge_question": "<strong>Think:</strong> Why does Owen call the recruits \"children\" in the second-to-last line?<br><br><strong>Pair:</strong> Compare Jessie Pope’s \"Who’s for the Game?\" with Owen’s gas attack—why were both poems written during the same war?<br><br><strong>Share:</strong> Did men enlist in 1914 only because of \"the old Lie,\" or also out of moral outrage over Belgium, Pals pride, and regular wages?",
+      "questions": [
+        "What two similes does Owen use in lines 1–2 to describe exhausted soldiers?",
+        "What happens to the soldier who fails to fit his gas helmet in time?",
+        "Whom is Owen addressing as \"My friend\" in the final stanza?"
+      ],
+      "audio_file": "/audio/reading/great_war_part2/r0.mp3",
+      "studio_audio": "/audio/reading/great_war_part2/r0.mp3",
+      "studio_voice_label": "Lt. Wilfred Owen · War Poetry"
     },
     {
       "lesson_index": 1,
-      "book_title": "Storm of Steel",
-      "author": "Ernst Jünger",
-      "cover_image": "/images/great_war_part2/gw2_gr1_german_trench_western_front.jpg",
-      "cover_caption": "German infantrymen wearing spiked Pickelhaube helmets keeping watch and resting along a snow-covered frontline trench on the Western Front.",
-      "author_context": "Ernst Jünger was a German frontline officer wounded fourteen times who fought continuously on the Western Front from 1914 to 1918. His 1920 memoir Storm of Steel (In Stahlgewittern) provides an astonishing, unromanticized German eyewitness account of technological industrial bombardment in the trenches.",
-      "is_adapted": true,
-      "extract": "The earth shook, the sky was a raging cauldron of black smoke and blinding fire, and the deafening roar of the heavy artillery stunned our senses until conscious thought itself became impossible. We huddled packed together in deep subterranean dugouts carved thirty feet into the damp chalk, listening with racing hearts to the relentless pounding of the high-explosive shells detonating overhead. Every direct hit sent shockwaves rippling through the rock, extinguishing our candles and showering our steel helmets in suffocating chalk dust.<br><br>When the bombardment finally lifted, we scrambled up the shattered steps into the daylight. The trench was no longer a trench; it had been violently obliterated into a chaotic lunar wilderness of craters filled with foul stagnant water, tangled coils of severed barbed wire, and unburied corpses. Machine guns from the opposing ridges swept the ruined parapet with rapid metallic chatter, spraying deadly streams of lead that cut down any soldier who dared raise his head even an inch above the rim.<br><br>...In this monstrous landscape of pulverized chalk and iron, individual human courage counted for almost nothing against the mechanical supremacy of modern industrial war. The machine gunner did not need personal bravery or martial skill; he merely depressed the cold firing button to mow down an entire advancing company in minutes. It was no longer a contest of man against man, but the brutal annihilation of fragile human flesh by unfeeling machinery.",
-      "hinge_question": "<strong>Think:</strong> What does Jünger mean when he writes that the conflict was \"not man against man, but flesh against iron\"?<br><br><strong>Pair:</strong> Jünger was a German officer, yet his description of frontline trenches mirrors British soldiers’ diaries almost word-for-word. Discuss with your partner: how did modern industrial weaponry erase national differences between soldiers enduring the trenches?<br><br><strong>Share:</strong> If modern military technology created a total defensive stalemate, was the slaughter of the Western Front the fault of general incompetence, or the inevitable result of machine-age weapons?",
-      "audio_file": "/audio/reading/great_war_part2/r1.mp3",
-      "questions": [
-        "Where did the soldiers shelter during the heavy artillery bombardment?",
-        "Why does Jünger say that individual human courage counted for almost nothing on the Western Front?",
-        "How does Jünger describe the transformation of the trench landscape after bombardment?"
-      ],
-      "source_type": "primary_memoir",
-      "source_type_label": "Eyewitness Combat Memoir",
-      "is_primary": true,
-      "studio_audio": "/audio/reading/great_war_part2/r1.mp3",
-      "studio_voice_label": "Lt. Ernst Jünger · German Frontline",
       "lesson_id": "lesson_2_trenches_haig",
       "lesson_label": "Enquiry 2",
-      "provenance_tier": "adapted_primary",
-      "provenance_note": "Adapted classroom companion inspired by Ernst Jünger’s 1920 trench memoir Storm of Steel, illustrating industrial artillery warfare.",
+      "short_tab_title": "2. Somme to Amiens",
+      "literary_mode": "storied_micro_history",
+      "provenance_tier": "storied_micro_history",
+      "source_type": "micro_history",
+      "source_type_label": "True Historical Story (1916–1918)",
+      "is_primary": false,
+      "is_adapted": false,
+      "book_title": "7:30 a.m. on 1 July 1916: From Somme Disaster to the Creeping Barrage at Amiens",
+      "author": "The History Revision Hub · Historical Story (1916–1918)",
+      "provenance_note": "Original true historical story tracing the British Army’s tactical arc from 1 July 1916 on the Somme to combined-arms victory at Amiens on 8 August 1918.",
+      "author_context": "Few debates divide Great War historians more fiercely than General Sir Douglas Haig and the Somme. Following the war from the whistles of 1 July 1916 to the dawn breakthrough at Amiens in August 1918 shows both catastrophic human loss and rapid industrial learning.",
+      "cover_image": "/images/upgraded/ks3-empire-gw/gw2_l2_banner_somme_advance_ginchy_1916_q1302.jpg",
+      "cover_caption": "British infantry advancing in an extended line across shell-cratered Somme ground toward drifting artillery smoke in September 1916 (Imperial War Museums Q 1302).",
       "vocabVault": [
         {
-          "term": "Dugout",
-          "def": "An underground shelter carved deep into the earth or chalk beneath a trench to protect soldiers from artillery shells."
+          "term": "No Man’s Land",
+          "pronunciation": "noh manz land",
+          "def": "The cratered, wire-tangled strip of ground between opposing British and German frontline trenches."
         },
         {
-          "term": "Parapet",
-          "def": "The sandbagged front wall of a trench facing enemy lines."
+          "term": "Chalk Dugouts",
+          "pronunciation": "CHAWK DUG-owts",
+          "def": "Deep German shelters carved thirty feet into Somme chalk, shielding machine-gun crews during British shelling."
         },
         {
-          "term": "Traverse",
-          "def": "A right-angled bend built into a trench so a shell burst or gunfire could not sweep straight down the whole line."
+          "term": "Creeping Barrage",
+          "pronunciation": "KREE-ping buh-RAZH",
+          "def": "A timed curtain of artillery shells moving forward just ahead of advancing infantry to keep enemy gunners pinned down."
         },
         {
-          "term": "Industrial War",
-          "def": "Warfare dominated by mass-produced heavy artillery, machine guns, and chemical shells rather than individual hand-to-hand skill."
+          "term": "Combined Arms",
+          "pronunciation": "kum-BYND armz",
+          "def": "Coordinating artillery, tanks, aircraft, and small infantry squads together—mastered at Amiens in August 1918."
         }
       ],
+      "extract": "At 7:28 a.m. on 1 July 1916, giant underground mines erupted beneath the white chalk ridges of the Somme. Two minutes later, officers’ brass whistles shrilled along eighteen miles of British trenches. Carrying heavy sixty-pound packs, volunteer Pals Battalions—clerks, dockworkers, and neighbours from Portsmouth, Leeds, and Accrington—climbed their ladders into bright summer sunshine. In the 8th East Surreys, twenty-one-year-old Captain Billie Nevill even kicked leather footballs into No Man’s Land to steady his nervous men.\n\nGeneral Sir Douglas Haig had trusted a seven-day, 1.5-million-shell bombardment to smash the German defences. Yet nearly a third of the shells were duds, and light shrapnel failed to slice thick German barbed wire. Thirty feet underground in reinforced chalk dugouts, German soldiers waited out the thunder. The instant British guns lifted at 7:30 a.m., German crews hauled heavy MG08 machine guns into daylight and swept every gap in the wire. By nightfall, 57,470 British troops were casualties—including 19,240 killed—making 1 July 1916 the bloodiest day in British military history.\n\nYet the Western Front was not frozen in stupidity forever. Over the next two years, British and Dominion armies overhauled every tactic. At 4:20 a.m. on 8 August 1918 outside Amiens, no week-long bombardment warned the enemy. Instead, sound-ranging pinpointed German batteries, aircraft buzzed overhead, hundreds of tanks crushed the wire, and infantry advanced yards behind a timed \"creeping barrage\"—shattering German lines at last.",
       "parent_discussion": [
         {
-          "question": "Why did soldiers shelter thirty feet underground in chalk dugouts before an attack began?",
-          "answer": "Days of heavy high-explosive artillery bombardment obliterated surface trenches into craters, making deep dugouts the only protection from shockwaves and shrapnel."
+          "question": "Why did the massive seven-day British artillery bombardment fail to protect the Pals Battalions on 1 July 1916?",
+          "answer": "Shrapnel shells failed to cut thick barbed wire, many factory shells were duds, and deep chalk dugouts protected German machine gunners until the barrage stopped."
         },
         {
-          "question": "What happened as soon as the artillery barrage lifted and soldiers climbed back into daylight?",
-          "answer": "Enemy machine gunners swept the ruined parapet with rapid fire, cutting down advancing troops trapped among craters and barbed wire."
+          "question": "Why did casualties on 1 July 1916 hit northern and southern towns with Pals Battalions so cruelly?",
+          "answer": "Because friends, brothers, and neighbours from the same street or workplace served in the same battalion, whole communities received hundreds of death telegrams in one week."
         },
         {
-          "question": "Why does the passage argue that \"individual human courage counted for almost nothing\" on the Western Front?",
-          "answer": "Because mechanical weapons like artillery and machine guns could wipe out whole companies in minutes regardless of how brave the soldiers were."
+          "question": "How did the Battle of Amiens (8 August 1918) challenge the old \"Lions led by Donkeys\" myth that generals never learned?",
+          "answer": "By 1918, Haig’s commanders combined surprise, sound-ranging artillery, creeping barrages, aircraft, and tanks to break trench stalemate."
         }
       ],
-      "short_tab_title": "2. Jünger: Storm of Steel"
+      "story_check": [
+        {
+          "question": "How many British casualties—and how many deaths—were suffered on 1 July 1916 alone, the first day of the Somme?",
+          "options": [
+            "5,000 casualties and 800 killed",
+            "57,470 casualties, including 19,240 killed",
+            "120,000 killed in ten minutes",
+            "Fewer than 1,000 casualties"
+          ],
+          "correctIndex": 1,
+          "feedback": "The British Army suffered 57,470 casualties (19,240 killed) on 1 July 1916—the heaviest single-day loss in its history."
+        },
+        {
+          "question": "How did German machine-gunners survive the week-long 1.5-million-shell British bombardment before 7:30 a.m.?",
+          "options": [
+            "They retreated twenty miles east to Belgium",
+            "They sheltered inside thirty-foot-deep reinforced chalk dugouts",
+            "They hid inside Mark V tanks",
+            "British guns ran out of shells on day one"
+          ],
+          "correctIndex": 1,
+          "feedback": "Deep underground dugouts carved into Somme chalk shielded German crews until the British barrage lifted."
+        },
+        {
+          "question": "What new combined-arms tactics broke the German trench lines at Amiens on 8 August 1918?",
+          "options": [
+            "Cavalry charges with lances alone",
+            "Surprise sound-ranged artillery, a timed creeping barrage, tanks, and aircraft",
+            "A fourteen-day warning bombardment",
+            "Naval battleships sailing up the Somme"
+          ],
+          "correctIndex": 1,
+          "feedback": "At Amiens in August 1918, surprise artillery, creeping barrages, tanks, and aircraft worked together to achieve a decisive breakthrough."
+        }
+      ],
+      "monday_cold_call": {
+        "question": "Give two reasons why 1 July 1916 on the Somme failed so bloodily, and two changes that made Amiens succeed in August 1918.",
+        "answer": "On 1 July 1916, dud/shrapnel shells left wire uncut and German crews safe in deep chalk dugouts; at Amiens in 1918, surprise sound-ranged guns, a creeping barrage, tanks, and aircraft broke through."
+      },
+      "hinge_question": "<strong>Think:</strong> Why did stopping the barrage at 7:30 a.m. give German gunners the decisive seconds they needed?<br><br><strong>Pair:</strong> Weigh \"Butcher of the Somme\" against \"Architect of 1918 Victory\"—which judgement of Douglas Haig fits the evidence better?<br><br><strong>Share:</strong> Why did Captain Billie Nevill kick footballs into No Man’s Land, and what happened to him that morning?",
+      "questions": [
+        "What went wrong with the seven-day British artillery bombardment before 1 July 1916?",
+        "How many British soldiers were killed or wounded on the first day of the Somme?",
+        "How did tactics at Amiens on 8 August 1918 differ from 1 July 1916?"
+      ],
+      "audio_file": "/audio/reading/great_war_part2/r1.mp3",
+      "studio_audio": "/audio/reading/great_war_part2/r1.mp3",
+      "studio_voice_label": "Studio Historian · Somme to Amiens"
     },
     {
       "lesson_index": 2,
-      "book_title": "Indian Voices of the Great War: Soldiers’ Letters (1914–1918)",
-      "author": "David Omissi (ed.) & Sepoys of the Indian Army",
-      "cover_image": "/images/great_war_part2/gw2_gr2_garhwal_riflemen_france_1915.jpg",
-      "cover_caption": "Four riflemen of the 39th Garhwal Rifles (Indian Expeditionary Force) kneeling with Lee-Enfield rifles on the Estaires–La Bassée Road, France, 1915 (photographed by H. D. Girdwood, British Library).",
-      "author_context": "Over 1.3 million Indian soldiers served in the British Armed Forces during the First World War. Censors carefully examined all outgoing mail to British India. Historian David Omissi compiled these extraordinary, translated primary letters, revealing how Indian sepoys viewed the Western Front, their pride, and the racial restrictions placed upon them.",
-      "is_adapted": true,
-      "extract": "<em>(Letter from a Garhwali Subadar, Kitchener Indian Hospital, Brighton, to his brother in India, 1915):</em><br>’Do not think that this is a war. It is not war; it is the destruction of the world. Just as a fire burns dry wood, so the cannon balls and bombs consume men. The bullets fly thicker than drops of rain in the monsoon. Those who survive can only do so by the mercy of God.<br><br>We arrived here in the cold mud when the British lines were on the verge of breaking. Our soldiers stood firm in the water up to their chests. Yet in this country, the care taken of the wounded in hospitals is beyond description. The King-Emperor himself visited our beds and spoke kindly to us.<br><br>...And yet, though we fight alongside the white soldiers, our officers are not permitted to command European troops, and we are guarded behind iron gates when we recover. We shed our blood on the same earth, but we return home to an India that is still not free.’",
-      "hinge_question": "<strong>Think:</strong> What metaphor does the Indian officer use to describe the intensity of the cannon fire and bullets?<br><br><strong>Pair:</strong> The writer notes both that the King-Emperor visited his hospital bed and that Indian soldiers were kept behind locked gates and barred from commanding European troops. Discuss the contradiction between imperial praise and imperial inequality.<br><br><strong>Share:</strong> 130,000 Indian troops served in Flanders, yet their contributions were largely omitted from British popular memory for nearly a century. Why do you think Empire contributions were marginalized after 1918?",
-      "audio_file": "/audio/reading/great_war_part2/r2.mp3",
-      "questions": [
-        "What monsoon metaphor does the soldier use to describe the bullet fire on the Western Front?",
-        "According to the letter, what critical action did Indian troops perform upon arriving in France in 1914?",
-        "What racial restriction does the soldier highlight regarding Indian officers commanding European soldiers?"
-      ],
-      "source_type": "primary_correspondence",
-      "source_type_label": "Eyewitness Wartime Correspondence",
-      "is_primary": true,
-      "studio_audio": "/audio/reading/great_war_part2/r2.mp3",
-      "studio_voice_label": "Garhwali Subadar · Indian Army Letters",
       "lesson_id": "lesson_3_empire_troops",
       "lesson_label": "Enquiry 3",
+      "short_tab_title": "3. Brighton Sepoy Letters",
+      "literary_mode": "intimate_eyewitness",
       "provenance_tier": "adapted_primary",
-      "provenance_note": "Adapted from censored 1915 letters sent by wounded Indian soldiers in Brighton and Flanders (British Library India Office Records).",
+      "source_type": "primary_correspondence",
+      "source_type_label": "Censored Indian Soldiers’ Letters (1915)",
+      "is_primary": true,
+      "is_adapted": true,
+      "book_title": "Letters from Flanders & Brighton’s Royal Pavilion Hospital (1915)",
+      "author": "Havildar Abdul Rahman & Wounded Sepoys (India Office Censor Files, 1915)",
+      "provenance_note": "Authentic translated 1915 extracts from Havildar Abdul Rahman (59th Scinde Rifles) and wounded Indian soldiers treated at Brighton’s Royal Pavilion Hospital (British Library India Office Records).",
+      "author_context": "Over 1.3 million Indian soldiers served in the First World War, rushing into Flanders trenches in autumn 1914 when Britain’s small regular army was near collapse. Because British military censors translated outgoing mail, hundreds of extraordinary letters from France and Brighton’s Royal Pavilion Hospital survive today.",
+      "cover_image": "/images/great_war_part2/gw2_gr2_garhwal_riflemen_france_1915.jpg",
+      "cover_caption": "Four riflemen of the 39th Garhwal Rifles (Indian Expeditionary Force) kneeling with Lee-Enfield rifles in France, 1915 (British Library).",
       "vocabVault": [
         {
           "term": "Sepoy",
-          "def": "An Indian infantry soldier serving in the British Indian Army (over 1.3 million Indians served during WWI)."
+          "pronunciation": "SEE-poy",
+          "def": "An Indian infantry private serving in the British Indian Army."
         },
         {
-          "term": "Subadar",
-          "def": "A senior Indian officer rank in the British Indian Army."
+          "term": "Havildar",
+          "pronunciation": "HAV-il-dar",
+          "def": "An Indian non-commissioned officer rank equivalent to a Sergeant."
         },
         {
-          "term": "King-Emperor",
-          "def": "King George V’s dual imperial title as monarch of Britain and Emperor of British-ruled India."
+          "term": "Royal Pavilion",
+          "pronunciation": "ROY-ul puh-VIL-yun",
+          "def": "The domed former royal palace in Brighton converted in 1914–1915 into a military hospital for wounded Indian soldiers."
         },
         {
           "term": "Military Censor",
-          "def": "Army officials who read and translated soldiers’ outgoing letters to stop military secrets or morale-damaging news reaching home."
+          "pronunciation": "MIL-ih-tuh-ree SEN-sur",
+          "def": "Army officials who opened, translated, and copied soldiers’ letters to check morale and block military secrets."
         }
       ],
+      "extract": "In autumn 1914, Indian regiments held flooded Flanders trenches before Kitchener’s volunteers were ready. Writing from France in May 1915, Punjabi sergeant Havildar Abdul Rahman of the 59th Rifles begged his family in India to stay away. British censors promptly seized his letter.\n\n\"For God’s sake don’t come, don’t come, don’t come to this war in Europe! Tell my brother Muhammad Yakub Khan for God’s sake not to enlist. Cannons, machine guns, rifles, and bombs are going day and night, just like the rains in the monsoon season. Those who have escaped so far are like the few grains left uncooked in a pot. In my company only ten men remain.\"\n\nThousands of wounded sepoys were carried across the Channel to Brighton, where the domed Royal Pavilion became an Indian military hospital with separate Hindu and Muslim kitchens. In 1915, a wounded Garhwali officer wrote home with both gratitude and sharp awareness of imperial inequality.\n\n\"Do not think this is war; it is the destruction of the world. Yet in this hospital at Brighton, the care given to the wounded is beyond praise. The King-Emperor himself visited our beds and spoke kindly to us. Even so, we recover behind high iron gates under guard. Our Indian officers may never command white soldiers, and when our wounds heal we return to an India that is still not free.\"",
       "parent_discussion": [
         {
-          "question": "How does the wounded Indian officer in Brighton hospital describe the fighting in Europe to his brother?",
-          "answer": "He writes that it is \"not war\" but \"the destruction of the world,\" comparing artillery shells to fire consuming dry wood and bullets to monsoon rain."
+          "question": "What two vivid everyday comparisons does Havildar Abdul Rahman use to describe industrial trench warfare to his family in Punjab?",
+          "answer": "He compares nonstop shells and bullets to \"the rains in the monsoon season\" and survivors to \"the few grains left uncooked in a pot.\""
         },
         {
-          "question": "What contrast does the letter draw between medical care in Brighton and racial inequality within the Empire?",
-          "answer": "While praising hospital care and King George V’s visit, it notes that Indian patients were kept behind guarded gates, barred from commanding white troops, and returned to an unfree India."
+          "question": "Why did British authorities set up separate Hindu and Muslim kitchens and arrange King George V’s visit at Brighton’s Royal Pavilion Hospital?",
+          "answer": "Remembering the 1857 Rebellion, officials wanted wounded sepoys to write positive letters home so millions more Indians would stay loyal to the Raj."
         },
         {
-          "question": "Why have so many Indian soldiers’ letters from 1915 survived in the British Library today?",
-          "answer": "Because British military censors translated and copied thousands of letters from Urdu, Hindi, Punjabi, and Garhwali to monitor troop morale."
+          "question": "What painful contradiction did Indian soldiers experience between fighting in Flanders and their status in the British Empire?",
+          "answer": "They bled alongside British soldiers to defend European freedom, yet were locked behind guarded hospital gates, barred from commanding white troops, and denied self-rule in India."
         }
       ],
-      "short_tab_title": "3. Indian Soldiers’ Letters"
+      "story_check": [
+        {
+          "question": "What urgent advice did Havildar Abdul Rahman send to his brother Muhammad Yakub Khan in May 1915?",
+          "options": [
+            "To join the cavalry immediately for good pay",
+            "\"For God’s sake don’t come ... don’t enlist\" because only ten men remained in his company",
+            "To visit London’s Crystal Palace",
+            "To study medicine in Brighton"
+          ],
+          "correctIndex": 1,
+          "feedback": "Shocked by relentless industrial attrition, Abdul Rahman begged his brother not to enlist—so the censor held back his letter."
+        },
+        {
+          "question": "Which famous building on England’s south coast was turned into a military hospital for wounded Indian soldiers in 1914–1915?",
+          "options": [
+            "Portsmouth Block Mills",
+            "Brighton’s Royal Pavilion",
+            "Windsor Castle",
+            "Westminster Abbey"
+          ],
+          "correctIndex": 1,
+          "feedback": "Over 4,000 wounded Indian troops were treated inside Brighton’s Royal Pavilion and nearby hospital buildings."
+        },
+        {
+          "question": "Why do historians have English translations of thousands of Indian soldiers’ letters from 1914–1918 today?",
+          "options": [
+            "Soldiers wrote all their family letters in English",
+            "British military censors translated and copied outgoing letters from Urdu, Punjabi, Hindi, and Garhwali",
+            "German officers published them after the war",
+            "Newspapers interviewed every sepoy"
+          ],
+          "correctIndex": 1,
+          "feedback": "Censors translated and filed excerpts to monitor Indian troop morale, unintentionally preserving priceless soldiers’ voices."
+        }
+      ],
+      "monday_cold_call": {
+        "question": "What contradiction did wounded Indian soldiers highlight from Brighton’s Royal Pavilion Hospital in 1915?",
+        "answer": "Although praised by the King-Emperor and well nursed, they were kept behind guarded gates, barred from commanding white troops, and returned to an India denied freedom."
+      },
+      "hinge_question": "<strong>Think:</strong> Why did the military censor stop Havildar Abdul Rahman’s letter from reaching Punjab?<br><br><strong>Pair:</strong> Compare how Indian sepoys, British West Indies Regiment troops, and Walter Tull were treated during the war.<br><br><strong>Share:</strong> How did fighting for Britain between 1914 and 1918 strengthen demands for independence across India afterward?",
+      "questions": [
+        "What monsoon comparison did Havildar Abdul Rahman use in May 1915?",
+        "How were wounded Indian soldiers cared for—and restricted—in Brighton?",
+        "Why did Indian soldiers’ wartime service fuel calls for Indian self-government after 1918?"
+      ],
+      "audio_file": "/audio/reading/great_war_part2/r2.mp3",
+      "studio_audio": "/audio/reading/great_war_part2/r2.mp3",
+      "studio_voice_label": "Havildar Abdul Rahman · Indian Army Letters"
     },
     {
       "lesson_index": 3,
-      "book_title": "Testament of Youth & Voices of the Wartime Home Front",
-      "author": "Adapted from Vera Brittain (1933) & Munitions Oral Records",
-      "cover_image": "/images/great_war_part2/gw2_gr3_british_nurses_ward_france_nls.jpg",
-      "cover_caption": "Military nurses tending wounded British soldiers inside a tiered ambulance-train ward in France during the First World War (Haig Collection, National Library of Scotland).",
-      "author_context": "Vera Brittain abandoned her studies at Oxford University in 1915 to volunteer as a nurse (VAD) treating wounded soldiers in London, Malta, and France. Having lost her fiancé, brother, and closest friends, her 1933 memoir Testament of Youth became the definitive account of women’s wartime service and the grief of the \"Lost Generation\".",
-      "is_adapted": true,
-      "extract": "The hospital wards in London and Etaples were an endless river of suffering. Day and night, ambulance convoys brought us young men with shattered limbs, gangrenous wounds, and eyes blinded by mustard gas. We were middle-class daughters who had never before seen a naked man or cleaned a wound, yet within weeks we were bandaging stumps and holding the hands of dying eighteen-year-olds.<br><br>Across Britain, women stepped into every sphere of life previously barred to them. In Portsmouth Dockyard and the armaments works at Priddy’s Hard, women filled high-explosive TNT shells until their skin turned bright canary yellow and their teeth rotted from toxic dust. They drove buses, operated railway signals, and harvested the grain to keep Britain from starving under the German U-boat blockade.<br><br>...We were told that our sacrifice had earned us our citizenship. Yet when the Armistice bells finally chimed in November 1918, the victory felt hollow. We were a generation of surplus women whose brothers, fiancés, and husbands lay buried beneath French mud. And within months, the men returning from France demanded their jobs back, and thousands of women were dismissed from the factories without a second thought.",
-      "hinge_question": "<strong>Think:</strong> Why were British female munitions factory workers nicknamed \"Canary Girls\"?<br><br><strong>Pair:</strong> Vera Brittain describes both the immense expansion of women’s work during the war and the sudden dismissal of female workers in 1919. Discuss: did the First World War represent permanent liberation for women, or merely temporary emergency exploitation?<br><br><strong>Share:</strong> Look at the 1918 Representation of the People Act, which granted the vote only to women over 30 who owned property. Why did Parliament exclude the young working-class women under 30 who had risked their lives in the munitions factories?",
-      "audio_file": "/audio/reading/great_war_part2/r3.mp3",
-      "questions": [
-        "What types of chemical injuries did Vera Brittain treat in the military hospital wards?",
-        "Why did women working in the munitions factories at Priddy’s Hard have skin that turned bright yellow?",
-        "What happened to female factory workers once the war ended in 1918–1919?"
-      ],
-      "source_type": "primary_memoir",
-      "source_type_label": "Eyewitness VAD Nursing Memoir",
-      "is_primary": true,
-      "studio_audio": "/audio/reading/great_war_part2/r3.mp3",
-      "studio_voice_label": "Vera Brittain · Wartime VAD Nurse",
       "lesson_id": "lesson_4_home_front_dora",
       "lesson_label": "Enquiry 4",
+      "short_tab_title": "4. Brittain: VAD Diary",
+      "literary_mode": "intimate_eyewitness",
       "provenance_tier": "adapted_primary",
-      "provenance_note": "Adapted classroom companion inspired by VAD nurse Vera Brittain’s Testament of Youth and wartime women’s factory records.",
+      "source_type": "primary_memoir",
+      "source_type_label": "Eyewitness VAD Nursing Diary & Home Front",
+      "is_primary": true,
+      "is_adapted": true,
+      "book_title": "Chronicle of Youth: VAD Wards & Canary Girls in Total War (1915–1918)",
+      "author": "Vera Brittain (Wartime Diary & Memoir, 1915–1918)",
+      "provenance_note": "Adapted classroom companion grounded in VAD nurse Vera Brittain’s 1915–1918 wartime diary (Chronicle of Youth / Testament of Youth) and Ministry of Munitions records.",
+      "author_context": "Twenty-one-year-old Vera Brittain left Oxford University in 1915 to nurse shattered soldiers as a Voluntary Aid Detachment (VAD) volunteer in London, Malta, and Étaples in France. Losing her fiancé Roland, her brother Edward, and two closest friends, she recorded how total war transformed women’s lives.",
+      "cover_image": "/images/great_war_part2/gw2_gr3_british_nurses_ward_france_nls.jpg",
+      "cover_caption": "Military nurses tending wounded British soldiers inside a tiered ambulance-train ward in France during the First World War (National Library of Scotland).",
       "vocabVault": [
         {
-          "term": "VAD (Voluntary Aid Detachment)",
-          "def": "Civilian volunteer nurses—like Vera Brittain—who cared for wounded soldiers in wartime military hospitals."
+          "term": "VAD Nurse",
+          "pronunciation": "vee-ay-DEE nurs",
+          "def": "A civilian Voluntary Aid Detachment volunteer—like Vera Brittain—who nursed wounded troops in wartime hospitals."
         },
         {
-          "term": "Mustard Gas",
-          "def": "A chemical weapon introduced in 1917 that caused severe blistering burns to skin, eyes, and lungs."
+          "term": "Étaples",
+          "pronunciation": "ay-TAHPL",
+          "def": "The huge British military base and hospital camp on the French coast where Vera Brittain nursed gas casualties in 1917–1918."
         },
         {
           "term": "Canary Girls",
-          "def": "Female munitions workers whose skin and hair turned bright yellow from handling toxic TNT explosive powder."
+          "pronunciation": "kuh-NAIR-ee gurlz",
+          "def": "Nearly one million female munitions workers whose skin and hair turned bright yellow from toxic TNT explosive powder."
         },
         {
-          "term": "Armistice",
-          "def": "The ceasefire agreement signed at 11 a.m. on 11 November 1918 that ended fighting on the Western Front."
+          "term": "DORA (1914)",
+          "pronunciation": "DOR-uh",
+          "def": "The Defence of the Realm Act giving the wartime government sweeping control over factories, newspapers, and food rationing."
         }
       ],
+      "extract": "Leaving her quiet Oxford college in 1915, volunteer nurse Vera Brittain stepped straight into the surgical wards of London and Étaples in France.\n\n\"Day and night, ambulance trains unloaded an endless river of broken youth. Stretcher-bearers carried in eighteen-year-old boys with shattered legs, infected shrapnel wounds, and eyes bandaged blind from mustard gas. Their scorched lungs fought for every breath. Most of us were sheltered daughters who had never cleaned a wound before. Within a month, our hands were chapped raw with antiseptic as we dressed amputations and wrote last letters for dying boys.\n\n\"Back home across Britain, total war under the Defence of the Realm Act pulled nearly a million women into munitions factories. Inside shell-filling sheds from Chilwell to Portsmouth’s Priddy’s Hard, young working-class ’Canary Girls’ packed yellow TNT powder into high-explosive shells. Toxic dust dyed their skin bright canary yellow and rotted their teeth, while a single spark could blow a shed apart. Women drove city trams, worked railway signals, and ploughed fields to defeat the German U-boat blockade.\n\n\"When the Armistice bells finally rang out on 11 November 1918, I stood in a silent street unable to cheer. My fiancé and my brother both lay under wooden crosses abroad. Within months, thousands of factory women were dismissed so returning men could reclaim their jobs.\"",
       "parent_discussion": [
         {
-          "question": "How did the First World War transform the daily work of millions of British women on the Home Front and abroad?",
-          "answer": "Women nursed severely wounded soldiers as VADs, filled high-explosive shells in munitions factories, drove buses, worked railways, and farmed food."
+          "question": "How did wartime VAD nursing change sheltered young women like Vera Brittain within weeks?",
+          "answer": "They went from chaperoned Edwardian homes to scrubbing operating theatres, dressing amputations, and tending teenagers blinded and choked by mustard gas."
         },
         {
-          "question": "What severe health dangers did \"Canary Girls\" face inside wartime shell-filling factories?",
-          "answer": "Handling toxic TNT explosive dust turned their skin yellow, damaged their teeth and livers, and carried the constant risk of factory explosions."
+          "question": "Why were female shell-filling workers nicknamed \"Canary Girls,\" and what risks did they face?",
+          "answer": "Toxic TNT explosive dust dyed their skin and hair bright yellow, poisoned their livers, and carried deadly explosion risks—like the 1918 Chilwell blast."
         },
         {
-          "question": "Why did the end of the war in November 1918 bring mixed emotions for many wartime women?",
-          "answer": "Alongside grief for dead brothers and fiancés, hundreds of thousands of women were dismissed from wartime jobs so returning soldiers could reclaim them (even as women over 30 won the vote in 1918)."
+          "question": "Did 1918 bring full equality for the young women who had kept Britain’s war factories running?",
+          "answer": "Only partly—women aged 30+ who met property rules won the vote in February 1918, while most young working-class \"Canary Girls\" under 30 were denied the vote until 1928 and lost their wartime jobs."
         }
       ],
-      "short_tab_title": "4. Brittain: Testament of Youth"
+      "story_check": [
+        {
+          "question": "What did Vera Brittain give up in 1915 to volunteer as a wartime VAD nurse?",
+          "options": [
+            "A job driving London buses",
+            "Her university studies at Oxford",
+            "A seat in Parliament",
+            "A farm in Yorkshire"
+          ],
+          "correctIndex": 1,
+          "feedback": "Vera Brittain left Somerville College, Oxford in 1915 to nurse wounded troops in London, Malta, and France."
+        },
+        {
+          "question": "Why did female munitions workers’ skin turn bright yellow inside wartime shell factories?",
+          "options": [
+            "From wearing yellow safety uniforms",
+            "From handling toxic TNT explosive powder",
+            "From coal dust in steamships",
+            "From mustard rationing"
+          ],
+          "correctIndex": 1,
+          "feedback": "Handling toxic TNT powder dyed workers’ skin and hair yellow, earning them the nickname \"Canary Girls.\""
+        },
+        {
+          "question": "What happened to hundreds of thousands of female factory workers in 1919 right after the Armistice?",
+          "options": [
+            "Their wages were doubled permanently",
+            "Every woman aged 18 won the parliamentary vote immediately",
+            "They were dismissed from industrial jobs so returning male soldiers could take them back",
+            "They were sent to Paris as diplomats"
+          ],
+          "correctIndex": 2,
+          "feedback": "Under the 1919 Restoration of Pre-War Practices Act, women were pushed out of skilled wartime jobs—and women under 30 waited until 1928 for the vote."
+        }
+      ],
+      "monday_cold_call": {
+        "question": "Why was the February 1918 voting reform bitter-sweet for young working-class \"Canary Girls\"?",
+        "answer": "Parliament gave the vote only to women aged 30 and over (with property qualifications), shutting out the young women in their twenties who had risked TNT poisoning and explosions."
+      },
+      "hinge_question": "<strong>Think:</strong> Name two ways DORA and total war reshaped everyday civilian life in Britain.<br><br><strong>Pair:</strong> Did World War I permanently liberate British women, or only borrow their labour for an emergency?<br><br><strong>Share:</strong> Why couldn’t Vera Brittain celebrate when church bells rang on 11 November 1918?",
+      "questions": [
+        "What kinds of battlefield wounds did Vera Brittain treat at Étaples?",
+        "What dangers did \"Canary Girls\" face in shell-filling factories?",
+        "What happened to most female munitions workers once peace returned in 1919?"
+      ],
+      "audio_file": "/audio/reading/great_war_part2/r3.mp3",
+      "studio_audio": "/audio/reading/great_war_part2/r3.mp3",
+      "studio_voice_label": "Vera Brittain · Wartime VAD Nurse"
     },
     {
       "lesson_index": 4,
-      "book_title": "The Economic Consequences of the Peace",
-      "author": "John Maynard Keynes",
-      "cover_image": "/images/great_war_part2/gw2_l5_s2_big_four_paris_1919.jpg",
-      "cover_caption": "The Council of Four at the Paris Peace Conference, 27 May 1919: David Lloyd George, Vittorio Orlando, Georges Clemenceau, and Woodrow Wilson (U.S. Signal Corps 111-SC-45625).",
-      "author_context": "John Maynard Keynes was a brilliant British Treasury economist who attended the 1919 Paris Peace Conference as an official delegate. Disgusted by the vindictive terms imposed on Germany, he resigned in protest and published The Economic Consequences of the Peace (1919), warning that crushing the German economy would lead to economic catastrophe and future war.",
-      "is_adapted": true,
-      "extract": "The Council of Four assembled in the glittering Hall of Mirrors at Versailles, surrounded by gold and glass, but they were blind to the economic realities of the desperate continent they presumed to govern. Georges Clemenceau sat with his gloved hands folded across his chest, burning with an unrelenting desire to crush Germany permanently so that France might never again be invaded. Lloyd George pursued the fleeting demands of British electoral politics, promising angry voters that he would ’squeeze the German lemon until the pips squeak’. And President Woodrow Wilson, armed with noble principles of self-determination, proved tragically incapable of mastering the practical European negotiations.<br><br>Together, they drafted an ultimatum that treated Germany as a moral outlaw, compelling her delegates to sign Article 231—the War Guilt clause—under the imminent threat of renewed Allied invasion and starvation naval blockade. They demanded astronomical reparations running into billions of pounds, stripped the defeated nation of her merchant fleet, coalfields, and iron ore, yet demanded that she somehow generate vast surpluses of gold to pay her victors.<br><br>...I believe that the campaign for securing out of Germany the general costs of the war was one of the most serious acts of political unwisdom for which European statesmen have ever been responsible. If we aim deliberately at the impoverishment of Central Europe, vengeance, I dare predict, will not limp. By reducing seventy million people to perpetual poverty and humiliation, we are sowing dragon’s teeth across the soil of Europe. Nothing can then delay that final civil war between the despairing forces of Reaction and Revolution, before which the horrors of the late German war will pale into insignificance.",
-      "hinge_question": "<strong>Think:</strong> What warning does Keynes issue in the final sentence about what will happen if Germany is deliberately impoverished?<br><br><strong>Pair:</strong> Contrast Clemenceau’s desire to permanently weaken Germany against Keynes’s warning that an economically ruined Germany would threaten the stability of all of Europe. Which leader had the more realistic long-term vision?<br><br><strong>Share:</strong> In light of the rise of fascism in the 1930s, was Keynes’s prophecy completely accurate, or did the Treaty of Versailles fail because Britain and France refused to enforce its terms when Hitler began rearming?",
-      "audio_file": "/audio/reading/great_war_part2/r4.mp3",
-      "questions": [
-        "Why did John Maynard Keynes resign from the British Treasury delegation at Versailles?",
-        "According to Keynes, what contradiction existed between stripping Germany of coal and iron while demanding billions in reparations?",
-        "What dark prediction did Keynes make about the long-term consequence of impoverishing Central Europe?"
-      ],
-      "source_type": "contemporary_treatise",
-      "source_type_label": "Contemporary Diplomatic Critique (1919)",
-      "is_primary": true,
-      "studio_audio": "/audio/reading/great_war_part2/r4.mp3",
-      "studio_voice_label": "J. M. Keynes · Versailles Delegate",
       "lesson_id": "lesson_5_versailles",
       "lesson_label": "Enquiry 5",
+      "short_tab_title": "5. Keynes Walks Out (1919)",
+      "literary_mode": "intimate_eyewitness",
       "provenance_tier": "adapted_primary",
-      "provenance_note": "Combines adapted summary of the 1919 Paris Peace Conference with John Maynard Keynes’s famous warning from The Economic Consequences of the Peace.",
+      "source_type": "contemporary_treatise",
+      "source_type_label": "Eyewitness Versailles Critique (1919)",
+      "is_primary": true,
+      "is_adapted": true,
+      "book_title": "Walking Out of Versailles: John Maynard Keynes’s Warning on the Peace (1919)",
+      "author": "John Maynard Keynes (\"The Economic Consequences of the Peace\", 1919)",
+      "provenance_note": "Combines lightly calibrated eyewitness portraits and verbatim warning sentences from British Treasury delegate John Maynard Keynes’s 1919 book The Economic Consequences of the Peace.",
+      "author_context": "Thirty-six-year-old British Treasury economist John Maynard Keynes sat inside the 1919 Paris Peace Conference watching Allied leaders draft the Treaty of Versailles. Appalled by terms he believed would ruin Europe’s economy, Keynes resigned in June 1919 and published a prophetic bestseller before the year ended.",
+      "cover_image": "/images/great_war_part2/gw2_l5_s2_big_four_paris_1919.jpg",
+      "cover_caption": "The \"Big Four\" outside their Paris residence on 27 May 1919: David Lloyd George, Vittorio Orlando, Georges Clemenceau, and Woodrow Wilson (U.S. Signal Corps).",
       "vocabVault": [
         {
-          "term": "Council of Four",
-          "def": "The leaders of Britain (Lloyd George), France (Clemenceau), the USA (Wilson), and Italy (Orlando) who shaped the 1919 Versailles settlement."
+          "term": "Georges Clemenceau",
+          "pronunciation": "ZHORZH klem-ahn-SOH",
+          "def": "Fierce French Prime Minister (\"The Tiger\") determined to weaken Germany permanently so France could never be invaded again."
         },
         {
-          "term": "Article 231 (War Guilt Clause)",
-          "def": "The Versailles clause forcing Germany to accept legal responsibility for causing all Allied war losses and damage."
+          "term": "Article 231",
+          "pronunciation": "AR-tik-ul too-three-WUN",
+          "def": "The Versailles \"War Guilt Clause\" forcing Germany to accept legal blame for all Allied war losses and damage."
         },
         {
           "term": "Reparations",
-          "def": "Huge financial payments (£6.6 billion set in 1921) demanded from Germany to compensate Allied civilian damage."
+          "pronunciation": "rep-uh-RAY-shunz",
+          "def": "Heavy financial compensation (£6.6 billion set in 1921) demanded from defeated Germany to pay for war destruction."
         },
         {
-          "term": "Self-Determination",
-          "def": "President Woodrow Wilson’s principle that nations should govern themselves rather than be ruled by foreign empires."
+          "term": "Carthaginian Peace",
+          "pronunciation": "kar-thuh-JIN-ee-un pees",
+          "def": "Keynes’s warning phrase for a crushing peace treaty designed to ruin a defeated rival rather than rebuild stability."
         }
       ],
+      "extract": "Inside Paris in the spring of 1919, British Treasury adviser John Maynard Keynes watched the \"Big Three\" argue over a ruined continent. French leader Georges Clemenceau sat in grey suede gloves with one fixed goal. He wanted Germany crippled forever so French towns could never be invaded again. British Prime Minister David Lloyd George feared angry voters at home who cried to \"squeeze the German lemon until the pips squeak.\" Meanwhile, American President Woodrow Wilson preached noble Fourteen Points yet gave ground clause by clause behind closed doors.\n\nIn June 1919, appalled by the final treaty, Keynes quit the British team and walked out of Paris. Before the year ended, he published this stark warning.\n\n\"Germany was forced to sign Article 231—accepting sole guilt for the war—under the threat of invasion and a starvation sea blockade. At the same time, the treaty stripped Germany of her merchant ships, overseas trade, iron ore, and rich coalfields. Yet the victors still demanded billions of pounds in gold that a broken country now had no way to earn.\n\n\"Demanding the full cost of the war from Germany was one of the gravest acts of folly in modern history. If we aim on purpose to beggar Central Europe, vengeance, I dare predict, will not limp. Nothing will then hold back a final struggle of despair and hate, beside which even the horrors of the late war will fade.\"",
       "parent_discussion": [
         {
-          "question": "Why did Clemenceau, Lloyd George, and Woodrow Wilson clash over what kind of peace treaty to sign at Versailles in 1919?",
-          "answer": "Clemenceau wanted Germany permanently weakened to protect France, Lloyd George faced British voters demanding harsh punishment, while Wilson pushed idealistic principles."
+          "question": "Why did Clemenceau, Lloyd George, and Woodrow Wilson pull in three different directions at Paris in 1919?",
+          "answer": "Twice invaded since 1870, France wanted iron security; Lloyd George wanted trade recovery yet faced angry British voters; Wilson wanted a League of Nations and self-determination."
         },
         {
-          "question": "Why did British economist John Maynard Keynes resign from the peace conference in protest?",
-          "answer": "He argued it was economically impossible and morally reckless to strip Germany of coalfields, ships, and trade while demanding massive gold reparations."
+          "question": "What economic contradiction drove John Maynard Keynes to resign and walk out of the Paris Peace Conference?",
+          "answer": "The Allies took away Germany’s coal, iron ore, colonies, and merchant ships while demanding £6.6 billion in reparations that a crippled economy could scarcely pay."
         },
         {
-          "question": "What did Keynes predict when he warned that \"vengeance, I dare predict, will not limp\"?",
-          "answer": "He foresaw that pushing millions of Germans into poverty and humiliation would breed bitter extremism and a devastating future war within a generation."
+          "question": "Was Keynes right in 1919 when he warned \"vengeance, I dare predict, will not limp,\" or do modern historians defend parts of Versailles?",
+          "answer": "Bitter resentment over Article 231 and economic crisis helped fuel Hitler’s rise within twenty years—though some historians argue Versailles was actually milder than Germany’s harsh 1918 Brest-Litovsk treaty on Russia."
         }
       ],
-      "short_tab_title": "5. Keynes: Economic Peace"
+      "story_check": [
+        {
+          "question": "Which Allied leader sat in grey gloves determined to weaken Germany permanently after two invasions of France?",
+          "options": [
+            "Woodrow Wilson",
+            "Georges Clemenceau",
+            "John Maynard Keynes",
+            "Vittorio Orlando"
+          ],
+          "correctIndex": 1,
+          "feedback": "French Prime Minister Georges Clemenceau had lived through both the 1870 and 1914 German invasions of France."
+        },
+        {
+          "question": "Why did John Maynard Keynes call the reparations demands economically impossible?",
+          "options": [
+            "Germany had no banks or paper money",
+            "The treaty stripped Germany of coal, iron, and ships while demanding billions in gold payments",
+            "France refused to accept any payments",
+            "America paid Germany’s bill immediately"
+          ],
+          "correctIndex": 1,
+          "feedback": "Keynes argued you could not cripple Germany’s industrial resources and trade while expecting vast annual surpluses."
+        },
+        {
+          "question": "What did Keynes prophesy in 1919 if the Allies deliberately impoverished Central Europe?",
+          "options": [
+            "A century of unbroken European peace",
+            "\"Vengeance, I dare predict, will not limp\"—leading to an even worse future war",
+            "Immediate German membership in the British Empire",
+            "The abolition of taxes across Europe"
+          ],
+          "correctIndex": 1,
+          "feedback": "Just twenty years after Keynes’s 1919 warning, Europe plunged into the Second World War in 1939."
+        }
+      ],
+      "monday_cold_call": {
+        "question": "Explain why John Maynard Keynes walked out of the 1919 Paris Peace Conference and quote his warning about \"vengeance.\"",
+        "answer": "He resigned because stripping Germany of coal, iron, and ships while demanding massive reparations would ruin Europe, warning: \"vengeance, I dare predict, will not limp.\""
+      },
+      "hinge_question": "<strong>Think:</strong> What did Article 231 force Germany’s new democratic republic to sign?<br><br><strong>Pair:</strong> Put yourself in Clemenceau’s shoes in devastated northern France: was Keynes being too sympathetic to Germany?<br><br><strong>Share:</strong> Did the Treaty of Versailles make a Second World War inevitable, or only create grievances that later crises ignited?",
+      "questions": [
+        "How did Clemenceau’s goals at Paris differ from Woodrow Wilson’s?",
+        "Why did Keynes resign from the British Treasury delegation in June 1919?",
+        "What did Keynes predict would happen if Central Europe was reduced to poverty?"
+      ],
+      "audio_file": "/audio/reading/great_war_part2/r4.mp3",
+      "studio_audio": "/audio/reading/great_war_part2/r4.mp3",
+      "studio_voice_label": "J. M. Keynes · Versailles Delegate"
     }
   ],
   "edition": "2026.1",
@@ -7503,4 +7728,4 @@ export default {
     }
   ],
   "is_ks3": true
-}
+};

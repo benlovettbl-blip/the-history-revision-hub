@@ -9007,296 +9007,516 @@ export default {
       "lesson_index": 0,
       "lesson_id": "lesson_1",
       "lesson_label": "Enquiry 1",
-      "book_title": "Letters on the Dissolution of the Monasteries & Robert Aske’s Pilgrimage Oath (1536)",
-      "author": "Royal Commissioners & Robert Aske (1536 • The National Archives SP 1)",
+      "short_tab_title": "1. Tyndale & Aske (1536)",
+      "literary_mode": "storied_micro_history",
+      "provenance_tier": "storied_micro_history",
+      "source_type": "storied_micro_history",
+      "source_type_label": "True Historical Story · Tudor Reformation",
+      "is_primary": false,
+      "is_adapted": false,
+      "book_title": "Smuggled Bibles & Stripped Abbeys: Tyndale, Cromwell, and the Pilgrimage of Grace",
+      "author": "The History Revision Hub · Grounded in Tudor State Papers & Foxe’s Acts (1526–1536)",
+      "provenance_note": "Original narrative micro-history grounded in William Tyndale’s 1526 Antwerp printing records, Tudor State Papers (TNA SP 1), and Robert Aske’s 1536 Pilgrimage of Grace testimony.",
+      "author_context": "Between 1526 and 1540, England’s religious world was turned upside down. Exiled scholar William Tyndale smuggled forbidden English New Testaments across the Channel, King Henry VIII broke with Rome to secure his divorce and royal supremacy, and Chief Minister Thomas Cromwell dissolved over 800 monasteries—sparking Yorkshire lawyer Robert Aske’s 30,000-strong Pilgrimage of Grace.",
       "cover_image": "/images/thomas_cromwell.jpg",
-      "cover_caption": "Hans Holbein the Younger, Portrait of Thomas Cromwell (1532–1533, The Frick Collection 1915.1.79), King Henry VIII's Chief Minister who masterminded the Dissolution of the Monasteries.",
-      "author_context": "After breaking with Rome under the 1534 Act of Supremacy, King Henry VIII and his Chief Minister Thomas Cromwell compiled the Valor Ecclesiasticus tax survey (1535) and sent royal commissioners to inspect and close over 800 monasteries across England, Wales, and Ireland. In October 1536, Yorkshire lawyer Robert Aske led 30,000 northern rebels in the \"Pilgrimage of Grace\" to defend their parish faith and local abbeys.",
-      "source_type": "primary_decree",
-      "source_type_label": "Tudor State Papers & Rebel Proclamation (1536)",
-      "is_primary": true,
-      "is_adapted": true,
-      "extract": "From the Report of Cromwell’s Royal Commissioners on suppressing northern religious houses (1536): \"According to the King’s Highness’s commission, we have taken the surrender of the lesser abbeys, stripped the lead from the roofs for the royal treasury, weighed the silver chalices and jeweled shrines, and discharged the monks. Their lands and annual rents shall henceforth augment the revenues of the Crown.\"\n\nFrom Robert Aske’s Proclamation and Testimony on why Yorkshire rose in the Pilgrimage of Grace (October 1536): \"In the northern parts the abbeys gave great alms to poor men, sheltered travellers across the wild moors where no inns stand, lent seed-corn to tenants in hard seasons, and maintained sea-walls, bridges, and highways. Now the ornaments of God’s churches are carted away, their stone walls pulled down, and poor folk left without succour at the abbey gate.\n\nTherefore we take our Pilgrim’s Oath beneath the Banner of the Five Wounds of Christ—not as traitors against our Sovereign Lord the King, but to petition His Grace to expel base-born evil counsellors such as Cromwell and restore the ancient liberties of Holy Church.\"",
+      "cover_caption": "Hans Holbein the Younger, Portrait of Thomas Cromwell (1532–1533, The Frick Collection 1915.1.79), King Henry VIII’s Chief Minister who masterminded the Dissolution of the Monasteries.",
       "vocabVault": [
         {
-          "term": "Dissolution of the Monasteries",
-          "def": "Henry VIII and Thomas Cromwell’s closure and seizure of more than 800 monasteries, priories, and convents between 1536 and 1540."
+          "term": "William Tyndale",
+          "pronunciation": "TIN-dayl",
+          "def": "Protestant scholar who translated the New Testament into everyday English in 1526 and smuggled printed copies into England."
         },
         {
-          "term": "Alms",
-          "def": "Charitable food, money, and shelter given to the poor and sick—a major community role of medieval monasteries."
+          "term": "Act of Supremacy",
+          "pronunciation": "soo-PREM-uh-see",
+          "def": "Parliament’s 1534 law declaring King Henry VIII—rather than the Pope in Rome—Supreme Head of the Church of England."
+        },
+        {
+          "term": "Dissolution",
+          "pronunciation": "diss-uh-LOO-shun",
+          "def": "Henry VIII and Thomas Cromwell’s closure and stripping of over 800 monasteries, priories, and convents between 1536 and 1540."
         },
         {
           "term": "Pilgrimage of Grace",
-          "def": "The massive 1536 northern Tudor uprising of around 30,000 people led by Robert Aske against monastery closures and religious change."
-        },
-        {
-          "term": "Royal Supremacy",
-          "def": "Henry VIII’s 1534 legal claim to be Supreme Head of the Church of England in place of the Pope."
+          "pronunciation": "PIL-grim-ij",
+          "def": "The October 1536 northern uprising of 30,000 people led by Robert Aske to defend parish faith and local abbeys."
         }
       ],
+      "extract": "In 1526, London dockworkers rolled heavy bales of Flemish cloth off merchant ships beside the Thames. Deep inside the wool lay contraband more dangerous than gunpowder. Exiled scholar William Tyndale had translated the New Testament into clear, everyday English. He vowed that a boy driving a plough would soon know more Scripture than the Pope himself. Bishops bought up and burned his smuggled books outside St Paul’s Cathedral, yet Antwerp’s printing presses only worked faster.\n\nEight years later, King Henry VIII broke with Rome for reasons of his own. Desperate for a male heir with Anne Boleyn, Henry had Parliament name him Supreme Head of the Church of England in 1534. His ruthless minister, Thomas Cromwell, sent royal agents riding across the realm to close over eight hundred monasteries. Workmen pried grey lead from abbey roofs, melted silver chalices, and sold ancient estates to enrich the Crown.\n\nAcross the wild moors of Yorkshire, anger boiled over in October 1536. Northern abbeys had fed hungry families, sheltered travellers in winter storms, and lent seed-corn to poor tenants. One-eyed lawyer Robert Aske led thirty thousand northern rebels into York beneath the crimson Banner of the Five Wounds of Christ. Calling their march the Pilgrimage of Grace, they swore loyalty to Henry while begging him to expel Cromwell. Henry promised pardon until the crowds went home—then hanged Robert Aske in iron chains from York’s high tower.",
       "parent_discussion": [
         {
-          "question": "Looking at the Royal Commissioners’ report, was Henry VIII closing monasteries only for religious reform, or also for wealth?",
-          "answer": "Stripping roof lead, melting silver shrines, and seizing monastic rents doubled royal income and paid for coastal forts and wars."
+          "question": "How did William Tyndale manage to get forbidden English New Testaments past Tudor port inspectors in 1526?",
+          "answer": "Merchants hid the small printed books deep inside heavy bales of Flemish cloth shipped across the Channel into London."
         },
         {
-          "question": "Why did ordinary northern families in Yorkshire care so deeply when their local abbeys were shut down?",
-          "answer": "Beyond religion, monasteries provided charity (alms) for the poor, safe lodging for travellers, loans for farmers, and upkeep of roads and bridges."
+          "question": "Why did closing local monasteries hit ordinary families in Yorkshire far harder than courtiers in London?",
+          "answer": "Northern abbeys were vital community lifelines that gave charity to the poor, sheltered moorland travellers, and lent seed-corn in bad harvests."
         },
         {
-          "question": "Why did Robert Aske carefully blame \"evil counsellors such as Cromwell\" rather than attacking Henry VIII directly?",
-          "answer": "Openly rebelling against an anointed Tudor monarch was high treason, so Tudor rebels traditionally claimed to be loyal subjects rescuing the King from bad advisers."
+          "question": "Compare William Tyndale’s motives in 1526 with Henry VIII and Thomas Cromwell’s motives in 1534–1536: were they seeking the same Reformation?",
+          "answer": "Tyndale risked death so ordinary people could read the Bible in English, whereas Henry wanted a royal divorce, dynastic power, and monastic wealth."
         }
       ],
-      "hinge_question": "<strong>Think:</strong> What happened to the roof lead, silver plate, and lands of England’s 800 monasteries?<br><br><strong>Pair:</strong> Compare the motives of Cromwell’s commissioners with Robert Aske’s defence of northern abbeys.<br><br><strong>Share:</strong> Was Henry VIII’s Reformation driven mainly by religion, dynastic marriage, or money?",
+      "story_check": [
+        {
+          "question": "Where were William Tyndale’s smuggled English New Testaments hidden when they arrived on ships in London?",
+          "options": [
+            "Inside wooden wine barrels from Bordeaux",
+            "Inside heavy bales of Flemish cloth",
+            "Underneath royal carriages from Dover",
+            "Inside sacks of Cornish tin"
+          ],
+          "correctIndex": 1,
+          "feedback": "Correct! Protestant merchants tucked Tyndale’s pocket-sized Antwerp printings deep inside bales of Flemish cloth."
+        },
+        {
+          "question": "Which Chief Minister organised the inspection and stripping of England’s eight hundred monasteries for Henry VIII?",
+          "options": [
+            "Robert Aske",
+            "William Tyndale",
+            "Thomas Cromwell",
+            "Sir Francis Bacon"
+          ],
+          "correctIndex": 2,
+          "feedback": "Spot on. Thomas Cromwell masterminded the royal surveys and closure of the monasteries between 1536 and 1540."
+        },
+        {
+          "question": "How did King Henry VIII respond after promising a royal pardon to scatter the 30,000 Pilgrimage of Grace marchers?",
+          "options": [
+            "He reopened every Yorkshire abbey",
+            "He made Robert Aske Archbishop of York",
+            "He broke his promise and hanged Robert Aske in chains at York",
+            "He fled to France for safety"
+          ],
+          "correctIndex": 2,
+          "feedback": "Exactly right. Once the northern rebels dispersed peacefully, Henry arrested their leaders and executed Robert Aske in chains at York."
+        }
+      ],
+      "monday_cold_call": {
+        "question": "In our home reading, how did William Tyndale smuggle English Bibles into London—and why did Robert Aske march on York ten years later?",
+        "answer": "Tyndale hid English New Testaments inside bales of Flemish cloth; Aske led 30,000 northern rebels in the Pilgrimage of Grace to protest Cromwell closing their local monasteries."
+      },
+      "hinge_question": "<strong>Think:</strong> What happened to the roof lead, silver plate, and lands of England’s 800 monasteries?<br><br><strong>Pair:</strong> Compare William Tyndale’s religious goal with Henry VIII and Cromwell’s political and financial goals.<br><br><strong>Share:</strong> Was Henry VIII’s Break with Rome driven mainly by faith, dynastic marriage, or money?",
       "questions": [
-        "Which Chief Minister organised the inspection and closure of England’s monasteries?",
-        "List three practical services Robert Aske says northern abbeys provided to local communities.",
-        "What banner did the rebels carry during the October 1536 Pilgrimage of Grace?"
+        "How were William Tyndale’s English Bibles smuggled into London in 1526?",
+        "Which Chief Minister organised the closure of England’s monasteries?",
+        "Why did 30,000 northerners join Robert Aske’s Pilgrimage of Grace in October 1536?"
       ],
       "audio_file": "/audio/reading/monarchy_religion_power/r0.mp3",
       "studio_audio": "/audio/reading/monarchy_religion_power/r0.mp3",
-      "studio_voice_label": "Studio Male Historian · Archival Reading",
-      "provenance_tier": "adapted_primary",
-      "provenance_note": "Condensed and modernised in spelling from 1536 Tudor State Papers (TNA SP 1) and Robert Aske’s Pilgrimage of Grace oath.",
-      "short_tab_title": "1. Dissolution & Pilgrimage (1536)"
+      "studio_voice_label": "Studio Male Historian · Storied History"
     },
     {
       "lesson_index": 1,
       "lesson_id": "lesson_2",
       "lesson_label": "Enquiry 2",
-      "book_title": "The Elizabethan Religious Settlement (1559) & \"Windows into Men’s Souls\"",
-      "author": "Act of Uniformity (1559) & Sir Francis Bacon (\"Observations\", 1592)",
+      "short_tab_title": "2. Elizabeth’s Middle Way",
+      "literary_mode": "storied_micro_history",
+      "provenance_tier": "storied_micro_history",
+      "source_type": "storied_micro_history",
+      "source_type_label": "True Historical Story · Elizabethan Settlement",
+      "is_primary": false,
+      "is_adapted": false,
+      "book_title": "Windows into Men’s Souls: Elizabeth I’s Middle Way & Hidden Priest-Holes",
+      "author": "The History Revision Hub · Grounded in Francis Bacon (1592) & John Gerard’s Autobiography",
+      "provenance_note": "Original narrative micro-history grounded in the 1559 Acts of Supremacy and Uniformity, Sir Francis Bacon’s 1592 commentary, and Jesuit accounts of carpenter Nicholas Owen.",
+      "author_context": "Inheriting a bitterly divided kingdom in November 1558 after Mary I’s Catholic burnings, twenty-five-year-old Elizabeth I crafted a Protestant 'Middle Way' (Via Media) demanding outward Sunday attendance rather than inquisitions. Yet after Pope Pius V excommunicated her in 1570, England’s religious truce gave way to Puritan criticism and secret Catholic priest-holes.",
       "cover_image": "/images/elizabeth_procession_1601.jpg",
-      "cover_caption": "Attributed to Robert Peake the Elder, Procession Picture of Queen Elizabeth I (c. 1600–1601, Sherborne Castle), depicting the Protestant monarch carried in state surrounded by Garter knights and courtiers.",
-      "author_context": "When twenty-five-year-old Elizabeth I inherited the throne in November 1558 after the turbulent reigns of Edward VI (strictly Protestant) and Mary I (strictly Catholic), Europe was tearing itself apart in wars of religion. Through her 1559 Acts of Supremacy and Uniformity, Elizabeth crafted a pragmatic \"Middle Way\" (Via Media), later famously summarised by statesman Sir Francis Bacon.",
-      "source_type": "primary_decree",
-      "source_type_label": "Parliamentary Statute (1559) & Contemporary Commentary",
-      "is_primary": true,
-      "is_adapted": true,
-      "extract": "From Queen Elizabeth I’s Act of Uniformity (1559): \"Every person inhabiting within this realm, having no lawful or reasonable excuse to be absent, shall diligently and faithfully resort to their parish church upon every Sunday and other holy days, and then and there abide orderly and soberly during the time of Common Prayer in English... upon pain of punishment by the censures of the Church, and also upon pain that every person so offending shall forfeit for every such offence twelve pence, to be levied by the churchwardens for the use of the poor of the same parish.\"\n\nFrom Sir Francis Bacon’s contemporary reflection on Queen Elizabeth’s statecraft (1592): \"Her Majesty, not liking to make windows into men’s hearts and secret thoughts—except the abundance of them did overflow into overt and express acts of sedition or treasonous disobedience against the State—tempered the severity of the laws, requiring outward conformity in the parish church while sparing tender consciences from the fires that had burned in the reign before.\"",
+      "cover_caption": "Attributed to Robert Peake the Elder, Procession Picture of Queen Elizabeth I (c. 1600–1601, Sherborne Castle), depicting the Protestant monarch carried beneath a canopy of state surrounded by Garter knights and courtiers.",
       "vocabVault": [
         {
-          "term": "Via Media (Middle Way)",
-          "def": "Elizabeth I’s 1559 religious compromise blending Protestant English services with traditional church ornaments and bishops."
+          "term": "Via Media",
+          "pronunciation": "VEE-uh MEE-dee-uh",
+          "def": "Latin for 'Middle Way'—Elizabeth I’s 1559 compromise blending Protestant English prayer with traditional robes and bishops."
         },
         {
           "term": "Recusant",
-          "def": "A Catholic who refused to attend Protestant Church of England Sunday services and paid fines instead."
+          "pronunciation": "REK-yoo-zunt",
+          "def": "An English Catholic who refused to attend Protestant Church of England Sunday services and paid fines instead."
         },
         {
-          "term": "Outward Conformity",
-          "def": "Obeying the law in public by attending Sunday church, without the government interrogating private beliefs."
+          "term": "Excommunication",
+          "pronunciation": "eks-kuh-myoo-nih-KAY-shun",
+          "def": "Pope Pius V’s 1570 decree casting Elizabeth I out of the Catholic Church and urging Catholics to overthrow her."
         },
         {
-          "term": "Supreme Governor",
-          "def": "The careful title Elizabeth I chose in 1559 (instead of Henry VIII’s \"Supreme Head\") to reduce offence to Catholics and Puritans."
+          "term": "Priest-Hole",
+          "pronunciation": "PREEST-hohl",
+          "def": "A tiny secret hiding chamber built inside Catholic manor walls and chimneys to conceal outlawed priests from royal searchers."
         }
       ],
+      "extract": "When twenty-five-year-old Elizabeth rode through cheering London streets in November 1558, bitter memories of fire still hung over Smithfield. Her half-sister Mary had burned over two hundred and eighty Protestants at the stake. Across the Channel, Europe was tearing itself apart in wars of religion. Elizabeth chose a clever third path.\n\nUnder her 1559 Religious Settlement, every parish switched to an English Prayer Book, yet churches kept stained glass, bishops, and traditional robes. Instead of calling herself Supreme Head like her father, she took the calmer title Supreme Governor. Statesman Sir Francis Bacon later praised her for not liking to \"make windows into men’s hearts and secret thoughts.\" Parishioners who skipped Sunday service paid a twelve-pence fine to help the poor, while private beliefs went unpunished.\n\nThat calm truce cracked in 1570 when Pope Pius V excommunicated Elizabeth and urged loyal Catholics to depose her. Strict Puritans complained loudly that her church still looked half-Catholic, while secret Jesuit priests slipped ashore in disguise. Inside quiet country manors, a small, quiet carpenter named Nicholas Owen worked alone by candlelight with muffled tools. Behind false chimneys and oak stairs, he carved cramped \"priest-holes\" barely wide enough for a man to lie flat. While royal searchers hammered floorboards overhead, hidden priests held their breath in the dark—caught between private conscience and state treason.",
       "parent_discussion": [
         {
-          "question": "What was the fine in 1559 for missing Sunday service at your parish church without a good excuse, and where did the money go?",
-          "answer": "Twelve pence (one shilling—several days’ wages for a labourer!), collected by churchwardens to support the poor of the parish."
+          "question": "What did Sir Francis Bacon mean when he wrote that Elizabeth I did not want to \"make windows into men’s hearts and secret thoughts\"?",
+          "answer": "Unlike Mary I who burned people for private beliefs, Elizabeth asked for outward public loyalty on Sunday while leaving private thoughts alone unless someone plotted treason."
         },
         {
-          "question": "What did Sir Francis Bacon mean by saying Elizabeth did not want to \"make windows into men’s hearts and secret thoughts\"?",
-          "answer": "Unlike Mary I who burned heretics for private beliefs, Elizabeth cared mainly about outward loyalty and peace, leaving private thoughts alone unless someone plotted treason."
+          "question": "How did Elizabeth’s 1559 'Middle Way' try to calm both Protestants and traditional Catholics at the same time?",
+          "answer": "It gave Protestants an English Bible and English Prayer Book, while reassuring traditionalists with bishops, church ornaments, and the title 'Supreme Governor'."
         },
         {
-          "question": "Why did Elizabeth’s tolerant Middle Way grow much harsher toward Catholics after 1570?",
-          "answer": "In 1570 Pope Pius V excommunicated Elizabeth (Regnans in Excelsis) and urged Catholics to overthrow her, sparking plots around Mary, Queen of Scots, and Spain."
+          "question": "Why did carpenter Nicholas Owen have to carve secret priest-holes inside Catholic manor houses after 1570?",
+          "answer": "After the Pope excommunicated Elizabeth and called for her overthrow in 1570, Catholic priests arriving from Europe were hunted as suspected traitors."
         }
       ],
-      "hinge_question": "<strong>Think:</strong> In what language were Church of England services held under the 1559 Settlement?<br><br><strong>Pair:</strong> Why did Elizabeth choose the title \"Supreme Governor\" rather than \"Supreme Head\"?<br><br><strong>Share:</strong> Did Elizabeth’s Middle Way satisfy everyone, or was it a clever political truce that kept England out of civil war?",
+      "story_check": [
+        {
+          "question": "How much was the fine under Elizabeth’s 1559 Settlement for missing Sunday service without a good excuse?",
+          "options": [
+            "One gold sovereign",
+            "Twelve pence, given to the parish poor",
+            "Ten years in the Tower of London",
+            "Half a farmer’s harvest"
+          ],
+          "correctIndex": 1,
+          "feedback": "Correct! Absent parishioners ('recusants') paid twelve pence—one shilling—collected for the poor of the parish."
+        },
+        {
+          "question": "What event in 1570 shattered Elizabeth’s early religious truce and turned secret Catholic missions into treason suspects?",
+          "options": [
+            "The Great Fire of London",
+            "Henry VIII’s marriage to Anne Boleyn",
+            "Pope Pius V excommunicating Elizabeth and urging her overthrow",
+            "The signing of the Bill of Rights"
+          ],
+          "correctIndex": 2,
+          "feedback": "Spot on. The 1570 Papal Bull declared Elizabeth a heretic and released Catholics from loyalty to her Crown."
+        },
+        {
+          "question": "Who worked secretly by night carving hidden priest-holes behind chimneys and staircases in Catholic manor houses?",
+          "options": [
+            "Nicholas Owen",
+            "Sir Francis Bacon",
+            "Thomas Cromwell",
+            "Dr Leonel Sharp"
+          ],
+          "correctIndex": 0,
+          "feedback": "Exactly right. Master carpenter Nicholas Owen built dozens of ingenious hiding places that saved priests from royal search parties."
+        }
+      ],
+      "monday_cold_call": {
+        "question": "What famous metaphor did Sir Francis Bacon use for Elizabeth I’s policy toward private religious beliefs—and why did priest-holes appear after 1570?",
+        "answer": "Bacon said she refused to 'make windows into men’s hearts and secret thoughts'; priest-holes appeared after the Pope excommunicated her in 1570 and priests were hunted for treason."
+      },
+      "hinge_question": "<strong>Think:</strong> Why did Elizabeth I choose the title \"Supreme Governor\" rather than \"Supreme Head\" in 1559?<br><br><strong>Pair:</strong> Explain why strict Puritans AND devout Catholics both criticised Elizabeth’s Middle Way for opposite reasons.<br><br><strong>Share:</strong> Did Elizabeth’s Settlement truly unite England, or simply prevent a religious civil war?",
       "questions": [
-        "How much did an absent parishioner have to pay under the 1559 Act of Uniformity?",
-        "Who collected those fines, and whom was the money used to help?",
-        "Quote the famous metaphor Sir Francis Bacon used to describe Elizabeth’s attitude toward private religious belief."
+        "What title did Elizabeth I choose in 1559 instead of 'Supreme Head'?",
+        "Quote Sir Francis Bacon’s famous phrase describing Elizabeth’s attitude toward private thoughts.",
+        "Why did Nicholas Owen build secret hiding places inside Catholic manor houses after 1570?"
       ],
       "audio_file": "/audio/reading/monarchy_religion_power/r1.mp3",
       "studio_audio": "/audio/reading/monarchy_religion_power/r1.mp3",
-      "studio_voice_label": "Studio Male Historian · Archival Reading",
-      "provenance_tier": "adapted_primary",
-      "provenance_note": "Combines modernised wording from the 1559 Act of Uniformity with Sir Francis Bacon’s 1592 commentary on Elizabeth I.",
-      "short_tab_title": "2. 1559 Settlement & Conformity"
+      "studio_voice_label": "Studio Male Historian · Storied History"
     },
     {
       "lesson_index": 2,
       "lesson_id": "lesson_3",
       "lesson_label": "Enquiry 3",
-      "book_title": "Queen Elizabeth I’s Speech to the Troops at Tilbury Camp (9 August 1588)",
-      "author": "Queen Elizabeth I (preserved by Dr Leonel Sharp • British Library Harley MS 6798)",
-      "cover_image": "/images/ark_royal.jpg",
-      "cover_caption": "Sixteenth-century woodcut engraving of the 38-gun English flagship Ark Royal (British Museum 1864,0611.187), commanded by Lord High Admiral Howard of Effingham against the Spanish Armada in 1588.",
-      "author_context": "In August 1588, even after English fireships scattered King Philip II’s 130-ship Spanish Armada off Calais and Gravelines, England feared that the Duke of Parma’s veteran Spanish army in Flanders might still land along the Thames estuary. Riding on a white horse in a polished breastplate at Tilbury Camp in Essex on 9 August 1588, Elizabeth I delivered one of the most famous speeches in English history, recorded by chaplain Dr Leonel Sharp.",
+      "short_tab_title": "3. Tilbury Camp (1588)",
+      "literary_mode": "intimate_eyewitness",
+      "provenance_tier": "verbatim_primary",
       "source_type": "primary_speech",
-      "source_type_label": "Royal Battlefield Oration (9 August 1588)",
+      "source_type_label": "Royal Battlefield Speech (1588) & Elizabethan Verse",
       "is_primary": true,
       "is_adapted": false,
-      "extract": "\"My loving people, we have been persuaded by some that are careful of our safety, to take heed how we commit ourselves to armed multitudes, for fear of treachery; but I assure you I do not desire to live to distrust my faithful and loving people. Let tyrants fear! I have always so behaved myself that, under God, I have placed my chiefest strength and safeguard in the loyal hearts and good-will of my subjects.\n\nAnd therefore I am come amongst you, as you see, at this time, not for my recreation and disport, but being resolved, in the midst and heat of the battle, to live and die amongst you all; to lay down for my God, and for my kingdom, and for my people, my honour and my blood, even in the dust.\n\nI know I have the body but of a weak and feeble woman; but I have the heart and stomach of a king, and of a king of England too, and think foul scorn that Parma or Spain, or any prince of Europe, should dare to invade the borders of my realm; to which, rather than any dishonour shall grow by me, I myself will take up arms, I myself will be your general, judge, and rewarder of every one of your virtues in the field.\"",
+      "book_title": "Heart and Stomach of a King: Elizabeth I at Tilbury (1588) & Shakespeare’s Sceptred Isle",
+      "author": "Queen Elizabeth I (BL Harley MS 6798, 1588) & William Shakespeare (Richard II, 1595)",
+      "provenance_note": "Verbatim core sentences from Queen Elizabeth I’s 1588 Tilbury speech (preserved by chaplain Dr Leonel Sharp, BL Harley MS 6798, with modern sentence stops for oral reading) paired with Shakespeare’s Richard II (Act II, Scene 1, 1595).",
+      "author_context": "On 9 August 1588, hours after English fireships scattered Philip II’s Spanish Armada off Calais, England still feared that the Duke of Parma’s Spanish army in Flanders might land along the Thames. Riding a white horse in a silver breastplate at Tilbury Camp in Essex, Elizabeth I rallied her troops—inspiring an island pride echoed seven years later on Shakespeare’s stage.",
+      "cover_image": "/images/ark_royal.jpg",
+      "cover_caption": "Sixteenth-century woodcut engraving of the 38-gun English flagship Ark Royal (British Museum 1864,0611.187), commanded by Lord High Admiral Howard of Effingham against the Spanish Armada in 1588.",
       "vocabVault": [
         {
           "term": "Armada",
-          "def": "The great fleet of 130 Spanish warships sent by King Philip II in 1588 to escort an invasion army from Flanders to England."
+          "pronunciation": "ar-MAH-duh",
+          "def": "King Philip II’s fleet of 130 Spanish warships sent in 1588 to escort an invasion army from Flanders to England."
         },
         {
           "term": "Fireships",
-          "def": "Eight old ships packed with pitch, gunpowder, and tar set ablaze at midnight off Calais to break the Spanish crescent formation."
+          "pronunciation": "FYR-ships",
+          "def": "Eight old vessels packed with pitch and gunpowder set ablaze at midnight off Calais to break Spain’s crescent formation."
         },
         {
-          "term": "Duke of Parma",
-          "def": "Commander of the powerful Spanish army waiting in the Spanish Netherlands (Flanders) to cross the Channel."
+          "term": "Tilbury Camp",
+          "pronunciation": "TIL-buh-ree",
+          "def": "The Essex fort beside the River Thames estuary where English soldiers mustered to block a Spanish landing on London."
         },
         {
-          "term": "Rhetoric",
-          "def": "The art of persuasive public speaking used by leaders to inspire loyalty and courage."
+          "term": "Sceptred Isle",
+          "pronunciation": "SEP-terd YL",
+          "def": "Shakespeare’s poetic image of Britain as an island fortress guarded by royal authority and the surrounding sea."
         }
       ],
+      "extract": "On 9 August 1588, England still braced for invasion. Midnight fireships had scattered Spain’s Armada off Calais, yet the Duke of Parma’s veteran army waited just across the Channel. Ignoring nervous bodyguards, Queen Elizabeth rode a white warhorse into Tilbury Camp wearing a polished silver breastplate over white velvet. Chaplain Dr Leonel Sharp copied down her words to read aloud down the ranks:\n\n\"My loving people, some have warned us not to trust ourselves to armed multitudes for fear of treachery. Yet I assure you, I do not desire to live to distrust my faithful and loving people. Let tyrants fear! Under God, I have placed my chiefest strength and safeguard in the loyal hearts of my subjects. I am come amongst you not for my sport, being resolved in the heat of battle to live and die amongst you all.\"\n\n\"I know I have the body of a weak and feeble woman. Yet I have the heart and stomach of a king, and of a king of England too! I think foul scorn that Parma or Spain should dare to invade the borders of my realm.\"\n\nSeven years after Atlantic gales wrecked Spain’s fleeing galleons, William Shakespeare captured that defiant post-Armada pride in Richard II:\n\n<div class=\"reading-stanza\">This royal throne of kings, this sceptred isle,<br>This fortress built by Nature for herself.<br>Against infection and the hand of war,<br>This precious stone set in the silver sea!</div>",
       "parent_discussion": [
         {
-          "question": "Why had Elizabeth’s cautious advisers warned her against riding out into the middle of thousands of armed soldiers at Tilbury?",
-          "answer": "They feared an assassin or Catholic sympathiser in the crowd might try to kill the unmarried Protestant Queen."
+          "question": "Why had cautious courtiers warned Elizabeth I NOT to ride out among thousands of armed soldiers at Tilbury?",
+          "answer": "They feared a hidden assassin or Catholic plotter in the crowd might shoot or stab the unmarried Protestant Queen."
         },
         {
-          "question": "How does Elizabeth turn sixteenth-century prejudices about female rulers upside down in her most famous sentence?",
-          "answer": "She acknowledges male expectations (\"the body of a weak and feeble woman\") only to declare she possesses \"the heart and stomach of a king, and of a king of England too.\""
+          "question": "How does Elizabeth flip sixteenth-century prejudices about female rulers on their head in her most famous line?",
+          "answer": "She admits male expectations ('the body of a weak and feeble woman') only to declare she has 'the heart and stomach of a king, and of a king of England too!'"
         },
         {
-          "question": "Was the Spanish Armada defeated mainly by speeches and storms (\"God blew\"), or by English naval design and tactics?",
-          "answer": "While Tilbury boosted morale and Atlantic gales wrecked fleeing ships, nimble race-built galleons like Ark Royal, long-range culverin guns, and Calais fireships broke the Spanish plan first."
+          "question": "Look at Shakespeare’s lines calling England a 'fortress built by Nature' in a 'silver sea': how did geography and weather help defeat the Armada?",
+          "answer": "After English fireships and broadsides broke Spain’s formation at Gravelines, fierce North Sea and Atlantic storms drove wrecked galleons onto Scottish and Irish rocks."
         }
       ],
-      "hinge_question": "<strong>Think:</strong> Where in England is Tilbury, and why were English troops camped there in August 1588?<br><br><strong>Pair:</strong> Pick out two phrases Elizabeth uses to contrast herself with foreign \"tyrants.\"<br><br><strong>Share:</strong> How did defeating the Armada shape Tudor Protestant propaganda?",
+      "story_check": [
+        {
+          "question": "What did Queen Elizabeth wear over her white velvet gown when she rode into Tilbury Camp on 9 August 1588?",
+          "options": [
+            "A purple coronation cloak",
+            "A polished silver breastplate",
+            "A Spanish steel helmet",
+            "A black mourning veil"
+          ],
+          "correctIndex": 1,
+          "feedback": "Correct! Wearing a gleaming silver cavalry breastplate visually reinforced her pledge to stand with her soldiers in battle."
+        },
+        {
+          "question": "Where did Elizabeth tell her troops she placed her 'chiefest strength and safeguard'?",
+          "options": [
+            "In foreign mercenaries",
+            "In stone castle walls",
+            "In the loyal hearts of her subjects",
+            "In Spanish gold treasure"
+          ],
+          "correctIndex": 2,
+          "feedback": "Spot on. Contrasting herself with fearful 'tyrants', Elizabeth praised the loyal hearts of her people."
+        },
+        {
+          "question": "Which playwright wrote the famous 1595 lines praising England as 'this sceptred isle' set in a 'silver sea'?",
+          "options": [
+            "Andrew Marvell",
+            "Sir Francis Bacon",
+            "Dr Leonel Sharp",
+            "William Shakespeare"
+          ],
+          "correctIndex": 3,
+          "feedback": "Exactly right. John of Gaunt’s speech in Shakespeare’s Richard II (1595) echoed England’s post-Armada island confidence."
+        }
+      ],
+      "monday_cold_call": {
+        "question": "Complete Elizabeth I’s famous Tilbury contrast: 'I know I have the body of a weak and feeble woman...'—and why were troops still camped in Essex on 9 August 1588?",
+        "answer": "'...yet I have the heart and stomach of a king, and of a king of England too!' Troops guarded the Thames estuary in case the Duke of Parma’s army still crossed from Flanders."
+      },
+      "hinge_question": "<strong>Think:</strong> Why were English soldiers camped at Tilbury on the Thames estuary even after the Calais fireship attack?<br><br><strong>Pair:</strong> Compare Elizabeth’s battlefield leadership image with Shakespeare’s 'fortress built by Nature'—how did both fuel Tudor propaganda?<br><br><strong>Share:</strong> Was Spain’s Armada defeated mainly by English ships and guns, Spanish planning flaws, or Atlantic storms?",
       "questions": [
-        "Where does Elizabeth say she places her \"chiefest strength and safeguard\"?",
-        "Quote the famous line in which Elizabeth contrasts her physical body with her royal courage.",
-        "Which foreign commander and country does Elizabeth name with \"foul scorn\"?"
+        "Where did Elizabeth say she placed her 'chiefest strength and safeguard'?",
+        "Quote the line in which Elizabeth contrasts her physical body with her royal courage.",
+        "What poetic metaphor does Shakespeare use for Britain surrounded by the sea?"
       ],
       "audio_file": "/audio/reading/monarchy_religion_power/r2.mp3",
       "studio_audio": "/audio/reading/monarchy_religion_power/r2.mp3",
-      "studio_voice_label": "Studio Female Historian · Historic Speech",
-      "provenance_tier": "verbatim_primary",
-      "provenance_note": "Original text of Queen Elizabeth I’s 1588 Tilbury speech as preserved by chaplain Dr Leonel Sharp (BL Harley MS 6798).",
-      "short_tab_title": "3. Elizabeth I: Tilbury Speech (1588)"
+      "studio_voice_label": "Studio Female Historian · Historic Speech"
     },
     {
       "lesson_index": 3,
       "lesson_id": "lesson_4",
       "lesson_label": "Enquiry 4",
-      "book_title": "The Trial & Scaffold Speech of King Charles I (January 1649)",
-      "author": "Westminster Hall High Court Record & King Charles I (20–30 January 1649)",
+      "short_tab_title": "4. Whitehall Groan (1649)",
+      "literary_mode": "intimate_eyewitness",
+      "provenance_tier": "adapted_primary",
+      "source_type": "primary_diary",
+      "source_type_label": "Eyewitness Whitehall Diary & Scaffold Record (1649)",
+      "is_primary": true,
+      "is_adapted": true,
+      "book_title": "Two Shirts Against the Frost: Philip Henry’s Eyewitness Diary of the King’s Execution (1649)",
+      "author": "Thomas Herbert & Schoolboy Philip Henry (Eyewitness Accounts, 30 January 1649)",
+      "provenance_note": "Grounded in royal attendant Sir Thomas Herbert’s Memoirs and 17-year-old Westminster schoolboy Philip Henry’s eyewitness diary of 30 January 1649, calibrated for aloud reading.",
+      "author_context": "After seven years of Civil War between Royalist Cavaliers and Oliver Cromwell’s New Model Army, Parliament tried and condemned King Charles I for treason against his own people. On the freezing afternoon of 30 January 1649, seventeen-year-old Westminster schoolboy Philip Henry stood in the Whitehall crowd below the scaffold and recorded a sound he never forgot.",
       "cover_image": "/images/ks3_mrp/mrp_ki8_charles_i_garter_robes_vandyck.jpg",
       "cover_caption": "After Sir Anthony van Dyck, Portrait of King Charles I in Garter Robes (after 1636 original), standing beside the imperial crown in ermine-lined velvet robes embodying Stuart Divine Right monarchy.",
-      "author_context": "After seven years of bitter Civil War between Royalists (\"Cavaliers\") and Parliamentarians (\"Roundheads\") and Oliver Cromwell’s New Model Army, Parliament put an anointed monarch on public trial for treason in Westminster Hall in January 1649. This verbatim clash between Lord President John Bradshaw and King Charles I crystallised two irreconcilable visions of power: Divine Right monarchy versus accountability to the people.",
-      "source_type": "primary_speech",
-      "source_type_label": "State Trial Transcript (January 1649)",
-      "is_primary": true,
-      "is_adapted": false,
-      "extract": "In Westminster Hall on 20 January 1649, King Charles I refused even to remove his hat or enter a plea before the sixty-eight Parliamentary Commissioners: \"I would know by what power I am called hither... Remember, I am your King, your lawful King, and what sins you bring upon your heads, and the judgment of God upon this land. Think well upon it, before you go further from one sin to a greater. A King cannot be tried by any superior jurisdiction on earth!\"\n\nLord President John Bradshaw replied sternly on behalf of the Commons of England: \"Sir, you have held yourself accountable to none save God alone; yet there is a contract and a bargain made between the King and his people, and your oath is taken for the performance of it. The bond is reciprocal: as you are their liege lord, so are you bound to govern according to the laws of the land, and not otherwise!\"\n\nTen days later, standing on the frost-covered scaffold outside the Banqueting House in Whitehall on 30 January 1649, Charles I addressed his final words before the axe fell: \"For the people, truly I desire their liberty and freedom as much as anybody whomsoever; but I must tell you that their liberty and freedom consists in having of government, not for having a share in government: a subject and a sovereign are clean different things.\"",
       "vocabVault": [
         {
-          "term": "Divine Right of Kings",
-          "def": "The Stuart belief that monarchs were appointed directly by God and could not be judged or removed by any earthly Parliament."
+          "term": "Divine Right",
+          "pronunciation": "dih-VYN RYT",
+          "def": "King Charles I’s belief that monarchs were chosen directly by God and could never be judged by an earthly Parliament."
         },
         {
           "term": "Regicide",
-          "def": "The deliberate trial and execution (killing) of a reigning monarch."
+          "pronunciation": "REJ-ih-syd",
+          "def": "The formal trial and execution of a reigning monarch—carried out publicly at Whitehall on 30 January 1649."
         },
         {
-          "term": "Commonwealth",
-          "def": "The republican government without a king or House of Lords established in England after Charles I’s execution in 1649."
+          "term": "Imputation",
+          "pronunciation": "im-pyoo-TAY-shun",
+          "def": "An accusation or blame—Charles wore two shirts so nobody could accuse him of trembling in fear."
         },
         {
-          "term": "Sovereign",
-          "def": "A supreme ruler—such as a king or queen—contrasted by Charles I with ordinary \"subjects\"."
+          "term": "Banqueting House",
+          "pronunciation": "BANG-kwit-ing",
+          "def": "The grand royal hall in Whitehall Palace outside whose upper windows King Charles I’s scaffold was built."
         }
       ],
+      "extract": "Dawn broke bitterly cold over London on 30 January 1649. Thick sheets of ice locked the River Thames from bank to bank. Inside St James’s Palace, condemned King Charles I dressed carefully for his final walk across the park. Turning to his attendant Thomas Herbert, he asked for a second linen shirt. \"The season is so sharp,\" Charles explained calmly, \"that it might make me shake. I would have no imputation of fear, for death is not terrible to me.\"\n\nAt two o’clock, Charles stepped through a tall window of the Banqueting House onto a black-draped scaffold in Whitehall. Tight ranks of Parliamentary cavalry blocked the street below, so only officials near the block heard his parting claim: \"A subject and a sovereign are clean different things.\"\n\nDown in the packed, freezing street stood seventeen-year-old Westminster schoolboy Philip Henry. Years later, what he saw and heard next still haunted his diary:\n\n\"With a very heavy heart I stood in the street below the scaffold. The King knelt down and laid his neck upon the low wooden block. When he stretched out his hands as his signal, the masked executioner severed his head at one blow. At the instant the blow fell, there rose such a dismal, universal groan among the thousands of people within sight as I never heard before. Truly, I desire I may never hear the like groan again. Immediately, troops of horse marched from Charing Cross to scatter the stunned crowd.\"",
       "parent_discussion": [
         {
-          "question": "Why did King Charles I refuse to take off his hat or plead \"guilty\" or \"not guilty\" in Westminster Hall?",
-          "answer": "Entering a plea would recognise Parliament’s court as legal; Charles believed by Divine Right that no earthly court had authority to judge an anointed king."
+          "question": "Why did King Charles I insist on wearing two shirts on the frosty morning of 30 January 1649?",
+          "answer": "The winter air was freezing, and he did not want spectators to mistake physical shivering from the cold for cowardice on the scaffold."
         },
         {
-          "question": "How did Judge John Bradshaw argue that a king CAN commit treason against his own country?",
-          "answer": "Bradshaw argued kingship is a two-way contract: the people owe loyalty only so long as the king governs within the laws of England rather than waging war on his subjects."
+          "question": "Notice how the Whitehall crowd reacted in schoolboy Philip Henry’s diary: did Londoners cheer when the axe fell?",
+          "answer": "No—instead of cheering, thousands let out a deep, 'dismal, universal groan' of shock at seeing an anointed king beheaded in public."
         },
         {
-          "question": "What did Charles I mean on the scaffold by saying \"a subject and a sovereign are clean different things\"?",
-          "answer": "Right up to his death, he believed ordinary people had a right to fair laws, but zero right to vote on or share political power."
+          "question": "What did Charles I mean right before his death by saying 'a subject and a sovereign are clean different things'?",
+          "answer": "To his last breath, he rejected democracy—arguing ordinary subjects deserved fair laws, but zero share in governing the kingdom."
         }
       ],
-      "hinge_question": "<strong>Think:</strong> Why had Charles I clashed so bitterly with Parliament between 1629 (Ship Money / Eleven Years’ Tyranny) and 1642?<br><br><strong>Pair:</strong> Whose argument in Westminster Hall sounds more convincing to a modern citizen—and whose would have shocked most 17th-century Europeans?<br><br><strong>Share:</strong> Why did England bring back the monarchy in 1660, yet permanently limit royal power in the 1689 Bill of Rights?",
+      "story_check": [
+        {
+          "question": "Why did Charles I ask Thomas Herbert for a second shirt before walking to Whitehall?",
+          "options": [
+            "To hide a secret letter to France",
+            "So he would not shiver in the frost and look afraid",
+            "To cushion his shoulders against armour",
+            "Because his royal robes had been stolen"
+          ],
+          "correctIndex": 1,
+          "feedback": "Correct! With the Thames frozen solid, Charles wore two shirts so nobody would mistake shivering from cold for fear of death."
+        },
+        {
+          "question": "Who recorded the famous 'dismal, universal groan' of the Whitehall crowd in his diary?",
+          "options": [
+            "Oliver Cromwell",
+            "Seventeen-year-old schoolboy Philip Henry",
+            "King Philip II",
+            "Judge John Bradshaw"
+          ],
+          "correctIndex": 1,
+          "feedback": "Spot on. Seventeen-year-old Westminster pupil Philip Henry stood in the street below the Banqueting House and wrote down the crowd’s groan."
+        },
+        {
+          "question": "Outside which Whitehall building was King Charles I executed on 30 January 1649?",
+          "options": [
+            "St Paul’s Cathedral",
+            "The Tower of London",
+            "The Banqueting House",
+            "Hampton Court Palace"
+          ],
+          "correctIndex": 2,
+          "feedback": "Exactly right. Charles stepped directly from an upper window of the Banqueting House onto the black-draped scaffold."
+        }
+      ],
+      "monday_cold_call": {
+        "question": "Why did King Charles I wear two shirts on 30 January 1649—and how did schoolboy Philip Henry describe the sound of the Whitehall crowd when the axe fell?",
+        "answer": "Charles wore two shirts so shivering in the January frost wouldn't look like fear; Philip Henry heard a 'dismal, universal groan' rise from thousands of onlookers."
+      },
+      "hinge_question": "<strong>Think:</strong> Why had Parliamentary cavalry surrounded the scaffold so the street crowd could not hear Charles I speak?<br><br><strong>Pair:</strong> Why could people oppose Charles I’s Eleven Years’ Tyranny and Ship Money, yet still groan in horror at regicide?<br><br><strong>Share:</strong> How did executing an anointed king forever change how future British monarchs dared to treat Parliament?",
       "questions": [
-        "Where in London was King Charles I put on trial in January 1649?",
-        "What \"reciprocal\" agreement did Lord President Bradshaw say existed between a king and his people?",
-        "On what date was Charles I executed outside the Banqueting House in Whitehall?"
+        "Why did Charles I ask for two shirts on the morning of his execution?",
+        "What did Charles say was the difference between a 'subject' and a 'sovereign'?",
+        "How did eyewitness Philip Henry describe the crowd’s reaction when the axe fell?"
       ],
       "audio_file": "/audio/reading/monarchy_religion_power/r3.mp3",
       "studio_audio": "/audio/reading/monarchy_religion_power/r3.mp3",
-      "studio_voice_label": "Studio Male Historian · Historic Speech",
-      "provenance_tier": "verbatim_primary",
-      "provenance_note": "Original exchanges from the January 1649 Westminster Hall trial record and King Charles I’s scaffold speech, framed with brief context.",
-      "short_tab_title": "4. Charles I: Trial & Scaffold (1649)"
+      "studio_voice_label": "Studio Male Historian · Archival Reading"
     },
     {
       "lesson_index": 4,
       "lesson_id": "lesson_5",
       "lesson_label": "Enquiry 5",
-      "book_title": "Two Treatises of Government & The Bill of Rights (1689)",
-      "author": "John Locke (1689) & Parliamentary Bill of Rights (1 Will. & Mar. Sess. 2 c. 2)",
-      "cover_image": "/images/william_mary_declaration_of_rights_1689.jpg",
-      "cover_caption": "Historical painting depicting the Clerk of the Parliaments reading the Declaration of Rights before William III and Mary II in the Banqueting House, Whitehall on 13 February 1689.",
-      "author_context": "After Catholic King James II tried to suspend Parliament’s laws and rule without consent, Parliament invited Protestant William of Orange and Mary Stuart to take the throne in the \"Glorious Revolution\" of 1688–1689—strictly on condition that they accepted the Bill of Rights. English philosopher John Locke published Two Treatises of Government in 1689 to explain why legitimate government rests on the consent of the governed.",
-      "source_type": "primary_decree",
-      "source_type_label": "Constitutional Statute & Enlightenment Treatise (1689)",
+      "short_tab_title": "5. Crown to Commons (1689)",
+      "literary_mode": "verbatim_literature",
+      "provenance_tier": "verbatim_literature",
+      "source_type": "period_verse",
+      "source_type_label": "17th-Century Political Verse (1650) & 1689 Context",
       "is_primary": true,
       "is_adapted": false,
-      "extract": "From the Parliamentary Bill of Rights (December 1689), ending absolute monarchy in Britain: \"The Lords Spiritual and Temporal and Commons, assembled at Westminster, declare:\n1. That the pretended power of suspending of laws or the execution of laws by regal authority without consent of Parliament is illegal.\n4. That levying money for or to the use of the Crown by pretence of prerogative, without grant of Parliament, is illegal.\n6. That the raising or keeping a standing army within the kingdom in time of peace, unless it be with consent of Parliament, is against law.\n9. That the freedom of speech and debates or proceedings in Parliament ought not to be impeached or questioned in any court or place out of Parliament.\"\n\nFrom John Locke’s Second Treatise of Government (1689): \"Men being by nature all free, equal, and independent, no one can be subjected to the political power of another without his own consent. Whenever the legislators or prince endeavour to take away and destroy the property and liberties of the people, or to reduce them to slavery under arbitrary power, they put themselves into a state of war with the people, who are thereupon absolved from any further obedience.\"",
+      "book_title": "Ancient Rights in Vain: Andrew Marvell’s Horatian Ode (1650) & The Revolution of 1689",
+      "author": "Andrew Marvell (An Horatian Ode upon Cromwell’s Return from Ireland, 1650)",
+      "provenance_note": "Verbatim stanzas from Andrew Marvell’s An Horatian Ode (1650, lines 37–40 and 57–64), framed with historical context on the Levellers, coffeehouse debate, and the 1689 Bill of Rights.",
+      "author_context": "Across the turbulent seventeenth century, poets, radical soldiers, and London coffeehouse readers wrestled with one big question: does supreme power belong to an untouchable monarch or to Parliament and the people? Poet and future Hull MP Andrew Marvell captured the shattering of Stuart Divine Right in his famous 1650 Horatian Ode—foreshadowing the constitutional settlement of 1689.",
+      "cover_image": "/images/william_mary_declaration_of_rights_1689.jpg",
+      "cover_caption": "Historical painting showing the Clerk of the Parliaments reading the Declaration of Rights before William III and Mary II in the Banqueting House, Whitehall, on 13 February 1689.",
       "vocabVault": [
         {
+          "term": "Horatian Ode",
+          "pronunciation": "huh-RAY-shun OHD",
+          "def": "A balanced, reflective poem modelled on the Roman poet Horace—used by Andrew Marvell in 1650 to weigh royal right against Parliamentary power."
+        },
+        {
+          "term": "Levellers",
+          "pronunciation": "LEV-uh-lerz",
+          "def": "Radical Civil War soldiers and citizens who argued that political power came from ordinary people rather than kings or lords."
+        },
+        {
+          "term": "Vindicate",
+          "pronunciation": "VIN-dih-kayt",
+          "def": "To defend, prove right, or rescue—Marvell notes that no divine thunderbolt rescued Charles’s 'helpless right' on the scaffold."
+        },
+        {
           "term": "Constitutional Monarchy",
-          "def": "A system in which a king or queen reigns as head of state, but real law-making and taxing power belongs to an elected Parliament."
-        },
-        {
-          "term": "Prerogative",
-          "def": "Personal royal powers once used by Tudor and Stuart monarchs to bypass Parliament."
-        },
-        {
-          "term": "Standing Army",
-          "def": "A permanent full-time professional army kept during peacetime, which Parliament forbade without its approval."
-        },
-        {
-          "term": "Consent of the Governed",
-          "def": "John Locke’s principle that rulers only hold rightful authority if the people agree to how they are governed."
+          "pronunciation": "kon-stih-TOO-shun-ul",
+          "def": "The system sealed by the 1689 Bill of Rights in which monarchs reign only under laws and taxes approved by Parliament."
         }
       ],
+      "extract": "In summer 1650, England stood without a king. Radical soldiers called Levellers debated voting rights in army camps. Meanwhile, poet Andrew Marvell marvelled at how ancient royal claims had crumbled before Parliament’s New Model Army.\n\n<div class=\"reading-stanza\">Though Justice against Fate complain,<br>And plead the ancient rights in vain;<br>But those do hold or break,<br>As men are strong or weak.</div>\n\nUnlike fierce propagandists, Marvell also painted a quiet, dignified portrait of Charles I testing the blade before bowing to Parliament’s verdict.\n\n<div class=\"reading-stanza\">He nothing common did or mean<br>Upon that memorable scene,<br>But with his keener eye<br>The axe’s edge did try.<br>Nor call’d the gods with vulgar spite<br>To vindicate his helpless right,<br>But bow’d his comely head<br>Down, as upon a bed.</div>\n\nAlthough the Crown returned in 1660, no Stuart king could safely ignore Westminster again. Coffeehouses buzzed with pamphlets warning against unchecked royal rule. When Catholic King James II suspended laws without consent, MPs invited William of Orange and Mary Stuart to take the throne in 1688. Inside Whitehall’s Banqueting House on 13 February 1689, William and Mary accepted the Bill of Rights. Never again could a monarch tax Britons, suspend laws, or keep a peacetime army without Parliament.",
       "parent_discussion": [
         {
-          "question": "Look across the whole Tudor and Stuart story (1517–1689): who held supreme power under Henry VIII in 1534 compared with William and Mary in 1689?",
-          "answer": "In 1534 the Crown dominated both Church and Parliament; by 1689 Parliament had won supreme authority over laws, taxes, the army, and even who wore the crown."
+          "question": "Why does Andrew Marvell call King Charles I’s Divine Right a 'helpless right' in the second stanza?",
+          "answer": "Charles claimed God alone guarded kings, yet on the Whitehall scaffold no miracle stopped Parliament’s executioner."
         },
         {
-          "question": "Which specific abuses of King Charles I and King James II were banned forever by Clauses 1, 4, 6, and 9 of the 1689 Bill of Rights?",
-          "answer": "Ignoring Parliament’s laws, collecting unapproved taxes (like Ship Money), keeping a peacetime army to intimidate citizens, and arresting MPs for speaking freely in Parliament."
+          "question": "What makes Marvell’s 1650 poem so unusual and fair-minded during a bitter civil conflict?",
+          "answer": "Even while writing about Oliver Cromwell’s triumph, Marvell honestly admired King Charles’s calm courage ('nothing common did or mean') facing the axe."
         },
         {
-          "question": "How did John Locke’s 1689 ideas later influence revolutions far beyond Britain?",
-          "answer": "His argument that people are \"free, equal, and independent\" and may replace rulers who abuse power directly inspired the 1776 American Declaration of Independence and modern democracies."
+          "question": "Look across our whole unit from 1534 to 1689: how had the balance of power between Crown and Parliament completely reversed?",
+          "answer": "In 1534 Henry VIII dominated both Church and Parliament; by 1689 Parliament chose the monarchs and locked royal power inside the Bill of Rights."
         }
       ],
-      "hinge_question": "<strong>Think:</strong> Why was 1688–1689 called the \"Glorious\" or \"Bloodless\" Revolution in England?<br><br><strong>Pair:</strong> Match Clauses 1, 4, 6, and 9 of the Bill of Rights to earlier Stuart clashes you studied in Enquiry 4.<br><br><strong>Share:</strong> By 1689, who had won the 170-year struggle between Crown, Church, and Parliament?",
+      "story_check": [
+        {
+          "question": "In Andrew Marvell’s 1650 poem, what happens when monarchs 'plead the ancient rights in vain'?",
+          "options": [
+            "Foreign kings immediately rescue them",
+            "Those rights hold or break depending on real political strength",
+            "Parliament abolishes all taxes forever",
+            "The Pope crowns a new ruler"
+          ],
+          "correctIndex": 1,
+          "feedback": "Correct! Marvell saw that ancient claims of Divine Right collapsed once a ruler lost the consent and strength of the nation."
+        },
+        {
+          "question": "Which radical Civil War group argued that ordinary men—not just wealthy landowners or kings—deserved a voice in choosing MPs?",
+          "options": [
+            "The Cavaliers",
+            "The Royal Commissioners",
+            "The Levellers",
+            "The Spanish Armada"
+          ],
+          "correctIndex": 2,
+          "feedback": "Spot on. The Levellers pushed early democratic ideas of popular sovereignty during the 1640s debates."
+        },
+        {
+          "question": "What condition did William III and Mary II have to accept in February 1689 to wear the crown?",
+          "options": [
+            "Restoring the monasteries",
+            "Ruling without a Parliament for eleven years",
+            "Accepting Parliament’s Declaration and Bill of Rights",
+            "Moving the capital from London to York"
+          ],
+          "correctIndex": 2,
+          "feedback": "Exactly right. Accepting the 1689 Bill of Rights ended absolute monarchy in Britain and made Parliament supreme."
+        }
+      ],
+      "monday_cold_call": {
+        "question": "In Marvell’s Horatian Ode, why does he call Charles I’s claim a 'helpless right'—and what three royal abuses did the 1689 Bill of Rights ban without Parliament’s consent?",
+        "answer": "Divine Right could not save Charles from Parliament’s axe; in 1689 the Bill of Rights banned suspending laws, levying unapproved taxes, and keeping a peacetime standing army."
+      },
+      "hinge_question": "<strong>Think:</strong> Notice where William and Mary heard the Declaration of Rights in 1689—what had happened outside that exact same Whitehall building in 1649?<br><br><strong>Pair:</strong> Compare Henry VIII’s power in 1534 with William and Mary’s power under the 1689 Bill of Rights.<br><br><strong>Share:</strong> Which turning point mattered more in shifting power to Parliament: 1649 (Regicide) or 1689 (Bill of Rights)?",
       "questions": [
-        "According to the 1689 Bill of Rights, whose consent is required to levy taxes or keep a peacetime standing army?",
-        "Where does Clause 9 guarantee complete freedom of speech and debate?",
-        "According to John Locke, what makes political power over free people legitimate?"
+        "What phrase does Andrew Marvell use for Charles I’s royal claim when no divine power rescued him?",
+        "Who were the Levellers, and what did they argue for?",
+        "List three powers the 1689 Bill of Rights forbade monarchs to use without Parliament’s consent."
       ],
       "audio_file": "/audio/reading/monarchy_religion_power/r4.mp3",
       "studio_audio": "/audio/reading/monarchy_religion_power/r4.mp3",
-      "studio_voice_label": "Studio Male Historian · Archival Reading",
-      "provenance_tier": "verbatim_primary",
-      "provenance_note": "Original clauses from the 1689 Parliamentary Bill of Rights paired with John Locke’s Two Treatises of Government (1689).",
-      "short_tab_title": "5. Locke & Bill of Rights (1689)"
+      "studio_voice_label": "Studio Male Historian · Classic Literature"
     }
   ]
 };

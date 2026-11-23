@@ -127,6 +127,13 @@ export const UNIT_VOICE_ASSIGNMENTS = {
   great_war_part2: 'male_historian',
   the_shoah: 'female_historian',
   post_war_britain: 'female_historian',
+  ks2_stone_to_iron_age: 'male_historian',
+  ks2_ancient_egypt: 'female_historian',
+  ks2_ancient_greece: 'male_historian',
+  ks2_romans: 'female_historian',
+  ks2_anglo_saxons_vikings: 'male_historian',
+  ks2_early_islamic_baghdad: 'female_historian',
+  ks2_maya_civilisation: 'male_historian',
   ks2_ww2: 'female_historian',
 };
 

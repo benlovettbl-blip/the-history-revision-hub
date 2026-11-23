@@ -2,52 +2,52 @@
   "unitId": "water_and_sanitation",
   "clips": {
     "r2": {
-      "hash": "ba6d9022505d99faf27d997a",
-      "bytes": 322412,
+      "hash": "d2cc1ca6d0d3255c9abfe3dd",
+      "bytes": 328652,
       "voiceKey": "male_historian",
       "badge": "Studio Male Historian · Archival Reading",
-      "words": 216,
-      "updatedAt": "2026-11-20T16:30:39.255Z"
+      "words": 194,
+      "updatedAt": "2026-11-23T18:36:34.205Z"
     },
     "r3": {
-      "hash": "a3d2e597d1c5718de4438061",
-      "bytes": 326348,
+      "hash": "76511cfb03124f574accc092",
+      "bytes": 346412,
       "voiceKey": "male_historian",
-      "badge": "Studio Male Historian · Archival Reading",
-      "words": 226,
-      "updatedAt": "2026-11-20T16:30:39.987Z"
+      "badge": "Studio Male Historian · Classic Literature",
+      "words": 189,
+      "updatedAt": "2026-11-23T18:36:35.410Z"
     },
     "r0": {
-      "hash": "6b2b2ada2304be3ee860c8b5",
-      "bytes": 273356,
+      "hash": "57eb47fcbb8c5fa606778546",
+      "bytes": 334412,
       "voiceKey": "male_historian",
       "badge": "Studio Male Historian · Archival Reading",
-      "words": 157,
-      "updatedAt": "2026-11-20T16:30:58.855Z"
+      "words": 184,
+      "updatedAt": "2026-11-23T18:36:26.729Z"
     },
     "r1": {
-      "hash": "585e1a4e1ec686d082174448",
-      "bytes": 242348,
+      "hash": "f4d548d10e5d172b4551d3b4",
+      "bytes": 336332,
       "voiceKey": "male_historian",
-      "badge": "Studio Male Historian · Archival Reading",
-      "words": 151,
-      "updatedAt": "2026-11-20T16:30:59.580Z"
+      "badge": "Studio Male Historian · Storied History",
+      "words": 192,
+      "updatedAt": "2026-11-23T18:36:33.502Z"
     },
     "r4": {
-      "hash": "2f41313b000b6568a37c064d",
-      "bytes": 341612,
+      "hash": "b6787d14b00940e4b0fc1f8c",
+      "bytes": 324332,
       "voiceKey": "male_historian",
-      "badge": "Studio Male Historian · Archival Reading",
-      "words": 244,
-      "updatedAt": "2026-11-20T16:31:06.072Z"
+      "badge": "Studio Male Historian · Storied History",
+      "words": 201,
+      "updatedAt": "2026-11-23T18:36:36.091Z"
     },
     "r5": {
-      "hash": "73c32a49bd7a4fa906f141ad",
-      "bytes": 417260,
+      "hash": "bc821da155362d83dbb45dbe",
+      "bytes": 337772,
       "voiceKey": "male_historian",
-      "badge": "Studio Male Historian · Scholarship",
-      "words": 222,
-      "updatedAt": "2026-11-20T16:31:06.932Z"
+      "badge": "Studio Male Historian · Storied History",
+      "words": 186,
+      "updatedAt": "2026-11-23T18:36:38.504Z"
     }
   }
 }

@@ -62,6 +62,8 @@
     "textbook:watch": "node scripts/watch_textbooks.cjs",
     "test:textbooks": "node scripts/test_all_textbooks.cjs",
     "audit:companions": "node scripts/audit_all_retrieval_companions.cjs",
+    "audit:literary": "node scripts/audit_literary_companions.cjs",
+    "sync:literary": "node scripts/sync_literary_companion.cjs",
     "audit:sources": "node scripts/audit_layer3_sources.cjs",
     "manifest:reprint": "node scripts/prepare_vacation_reprint_manifest.cjs",
     "audit:textbook-budget": "node scripts/audit_narrative_budget.cjs",

@@ -1,0 +1,53 @@
+{
+  "unitId": "ks2_ancient_greece",
+  "clips": {
+    "r0": {
+      "hash": "7e4f292f1f9bd578c724a1b9",
+      "bytes": 297836,
+      "voiceKey": "male_historian",
+      "badge": "Studio Male Historian · KS2 Storyteller",
+      "words": 160,
+      "updatedAt": "2026-11-23T18:31:23.432Z"
+    },
+    "r1": {
+      "hash": "8501d98a9dd64a9117900325",
+      "bytes": 312908,
+      "voiceKey": "male_historian",
+      "badge": "Studio Male Historian · KS2 Storyteller",
+      "words": 157,
+      "updatedAt": "2026-11-23T18:31:24.083Z"
+    },
+    "r4": {
+      "hash": "d1c98d216360c70a3a982a5f",
+      "bytes": 289580,
+      "voiceKey": "male_historian",
+      "badge": "Studio Male Historian · KS2 Storyteller",
+      "words": 154,
+      "updatedAt": "2026-11-23T18:31:28.967Z"
+    },
+    "r5": {
+      "hash": "d913346eca4b040209752d26",
+      "bytes": 293612,
+      "voiceKey": "male_historian",
+      "badge": "Studio Male Historian · KS2 Storyteller",
+      "words": 156,
+      "updatedAt": "2026-11-23T18:31:29.566Z"
+    },
+    "r2": {
+      "hash": "591e09edc1c076acd593c9e4",
+      "bytes": 303308,
+      "voiceKey": "male_historian",
+      "badge": "Studio Male Historian · KS2 Storyteller",
+      "words": 162,
+      "updatedAt": "2026-11-23T18:31:30.293Z"
+    },
+    "r3": {
+      "hash": "a573b6a63b20a4379e54b8e1",
+      "bytes": 277868,
+      "voiceKey": "male_historian",
+      "badge": "Studio Male Historian · KS2 Storyteller",
+      "words": 148,
+      "updatedAt": "2026-11-23T18:31:30.895Z"
+    }
+  }
+}

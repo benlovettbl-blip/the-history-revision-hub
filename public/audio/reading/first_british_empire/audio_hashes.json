@@ -2,44 +2,44 @@
   "unitId": "first_british_empire",
   "clips": {
     "r2": {
-      "hash": "56bf857c3d85e3b6b6f0346f",
-      "bytes": 392780,
-      "voiceKey": "male_historian",
-      "badge": "Studio Male Historian · Archival Reading",
-      "words": 230,
-      "updatedAt": "2026-11-20T16:30:50.372Z"
+      "hash": "6beaaa8fa8053b196b7061d6",
+      "bytes": 369932,
+      "voiceKey": "female_historian",
+      "badge": "Studio Female Historian · Storied History",
+      "words": 214,
+      "updatedAt": "2026-11-23T18:46:26.024Z"
     },
     "r3": {
-      "hash": "ff93908755c10e804e8f3ef6",
-      "bytes": 355052,
-      "voiceKey": "male_historian",
-      "badge": "Studio Male Historian · Archival Reading",
-      "words": 247,
-      "updatedAt": "2026-11-20T16:30:51.168Z"
+      "hash": "f61eee61ca825ecca7f03c4a",
+      "bytes": 368492,
+      "voiceKey": "female_historian",
+      "badge": "Studio Female Historian · Classic Literature",
+      "words": 207,
+      "updatedAt": "2026-11-23T18:46:26.789Z"
     },
     "r0": {
-      "hash": "f9d5bf6769f480b1186afdd3",
-      "bytes": 343628,
+      "hash": "7632a8f40c1e93548f44864f",
+      "bytes": 409580,
+      "voiceKey": "male_historian",
+      "badge": "Studio Male Historian · Storied History",
+      "words": 231,
+      "updatedAt": "2026-11-23T18:36:39.282Z"
+    },
+    "r1": {
+      "hash": "133a2093f4af64f14b60feb1",
+      "bytes": 336236,
+      "voiceKey": "male_historian",
+      "badge": "Studio Male Historian · Archival Reading",
+      "words": 232,
+      "updatedAt": "2026-11-23T18:36:28.322Z"
+    },
+    "r4": {
+      "hash": "1125a0884640411555e49131",
+      "bytes": 338348,
       "voiceKey": "male_historian",
       "badge": "Studio Male Historian · Archival Reading",
       "words": 207,
-      "updatedAt": "2026-11-20T16:30:56.730Z"
-    },
-    "r1": {
-      "hash": "42c41d0831015d2c70cd8843",
-      "bytes": 368588,
-      "voiceKey": "male_historian",
-      "badge": "Studio Male Historian · Archival Reading",
-      "words": 265,
-      "updatedAt": "2026-11-20T16:30:57.563Z"
-    },
-    "r4": {
-      "hash": "31cff5fc475811d01ff89f24",
-      "bytes": 334892,
-      "voiceKey": "male_historian",
-      "badge": "Studio Male Historian · Archival Reading",
-      "words": 219,
-      "updatedAt": "2026-11-20T16:32:42.906Z"
+      "updatedAt": "2026-11-23T18:36:29.014Z"
     }
   }
 }

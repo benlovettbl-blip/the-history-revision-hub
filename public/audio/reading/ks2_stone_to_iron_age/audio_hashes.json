@@ -1,0 +1,53 @@
+{
+  "unitId": "ks2_stone_to_iron_age",
+  "clips": {
+    "r2": {
+      "hash": "2d2df395a039718d48d599f7",
+      "bytes": 304268,
+      "voiceKey": "male_historian",
+      "badge": "Studio Male Historian · KS2 Storyteller",
+      "words": 150,
+      "updatedAt": "2026-11-23T18:31:25.332Z"
+    },
+    "r3": {
+      "hash": "261c148e548b653852a1ae79",
+      "bytes": 308108,
+      "voiceKey": "male_historian",
+      "badge": "Studio Male Historian · KS2 Storyteller",
+      "words": 156,
+      "updatedAt": "2026-11-23T18:31:25.999Z"
+    },
+    "r4": {
+      "hash": "c3976b7adac008a28558d5c1",
+      "bytes": 300908,
+      "voiceKey": "male_historian",
+      "badge": "Studio Male Historian · KS2 Storyteller",
+      "words": 154,
+      "updatedAt": "2026-11-23T18:31:27.043Z"
+    },
+    "r5": {
+      "hash": "afff8172d17995bf9e18bb5d",
+      "bytes": 282380,
+      "voiceKey": "male_historian",
+      "badge": "Studio Male Historian · KS2 Storyteller",
+      "words": 163,
+      "updatedAt": "2026-11-23T18:31:27.684Z"
+    },
+    "r0": {
+      "hash": "1cde52ed4abbee62a7615126",
+      "bytes": 356108,
+      "voiceKey": "male_historian",
+      "badge": "Studio Male Historian · KS2 Storyteller",
+      "words": 168,
+      "updatedAt": "2026-11-23T18:31:32.178Z"
+    },
+    "r1": {
+      "hash": "fc5a5e83a0464a2c84709dff",
+      "bytes": 307532,
+      "voiceKey": "male_historian",
+      "badge": "Studio Male Historian · KS2 Storyteller",
+      "words": 150,
+      "updatedAt": "2026-11-23T18:31:32.839Z"
+    }
+  }
+}

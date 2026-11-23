@@ -2526,9 +2526,14 @@ img::after {
   .header-accessibility-bar {
     display: flex !important;
     align-items: center !important;
-    gap: 5px !important;
+    gap: 4px !important;
     margin: 0 !important;
     flex-shrink: 0 !important;
+  }
+
+  .header-accessibility-bar .header-tool-btn,
+  .header-accessibility-bar button {
+    padding: 5px 7px !important;
   }
 
   /* Mobile Ergonomics for Launchpad, Accordions, Portals, and Quizzing */
@@ -10119,10 +10124,32 @@ details.spotlight-drawer[open] summary i.fa-chevron-down {
   }
 }
 
+@media (max-width: 425px) {
+  .app-header .back-btn {
+    padding: 4px 7px !important;
+    font-size: 0.72rem !important;
+  }
+  .app-header .header-search-bar {
+    width: 31px !important;
+    min-width: 31px !important;
+    height: 31px !important;
+    margin: 0 1px !important;
+  }
+  .app-header .header-accessibility-bar {
+    gap: 3px !important;
+  }
+  .app-header .header-accessibility-bar .header-tool-btn,
+  .app-header .header-accessibility-bar button {
+    padding: 4px 5px !important;
+    min-width: 28px !important;
+  }
+}
+
 /* Laptop, Tablet & Mobile Responsiveness for Header Search & Breadcrumbs */
-@media (max-width: 1440px) {
+@media (max-width: 1540px) {
   .header-search-bar {
-    max-width: 150px;
+    min-width: 112px;
+    max-width: 155px;
     padding: 5px 10px;
   }
 

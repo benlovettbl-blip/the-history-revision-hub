@@ -2,44 +2,44 @@
   "unitId": "monarchy_religion_power",
   "clips": {
     "r0": {
-      "hash": "ac0e92634e1154950d414d68",
-      "bytes": 311372,
+      "hash": "133b5aa32fe1932860fd1c15",
+      "bytes": 397580,
       "voiceKey": "male_historian",
-      "badge": "Studio Male Historian · Archival Reading",
-      "words": 183,
-      "updatedAt": "2026-11-20T16:28:33.848Z"
+      "badge": "Studio Male Historian · Storied History",
+      "words": 234,
+      "updatedAt": "2026-11-23T18:35:17.077Z"
     },
     "r1": {
-      "hash": "6e2973d10c1a9cd5ea6bdbf3",
-      "bytes": 293228,
+      "hash": "c1c482c6afc5615595b474ac",
+      "bytes": 387020,
       "voiceKey": "male_historian",
-      "badge": "Studio Male Historian · Archival Reading",
-      "words": 169,
-      "updatedAt": "2026-11-20T16:28:34.472Z"
+      "badge": "Studio Male Historian · Storied History",
+      "words": 221,
+      "updatedAt": "2026-11-23T18:35:49.705Z"
     },
     "r3": {
-      "hash": "29c2ed4936bf99d0369976c5",
-      "bytes": 381740,
-      "voiceKey": "male_historian",
-      "badge": "Studio Male Historian · Historic Speech",
-      "words": 237,
-      "updatedAt": "2026-11-20T16:30:41.080Z"
-    },
-    "r4": {
-      "hash": "d2ed25f7c8ca19352b6d04d5",
-      "bytes": 348140,
+      "hash": "f9c308528f071e20fcd6d1e0",
+      "bytes": 379340,
       "voiceKey": "male_historian",
       "badge": "Studio Male Historian · Archival Reading",
-      "words": 200,
-      "updatedAt": "2026-11-20T16:30:41.821Z"
+      "words": 246,
+      "updatedAt": "2026-11-23T18:35:50.471Z"
+    },
+    "r4": {
+      "hash": "8341454f528dcee851da411c",
+      "bytes": 370508,
+      "voiceKey": "male_historian",
+      "badge": "Studio Male Historian · Classic Literature",
+      "words": 202,
+      "updatedAt": "2026-11-23T18:36:25.934Z"
     },
     "r2": {
-      "hash": "be060970f9854a8b8398e255",
-      "bytes": 335372,
+      "hash": "df029e6daf7ab92ceb1296e3",
+      "bytes": 405740,
       "voiceKey": "female_historian",
       "badge": "Studio Female Historian · Historic Speech",
-      "words": 221,
-      "updatedAt": "2026-11-20T16:38:31.401Z"
+      "words": 238,
+      "updatedAt": "2026-11-23T18:46:17.451Z"
     }
   }
 }
