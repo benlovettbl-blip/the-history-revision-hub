@@ -1732,9 +1732,8 @@ body.simplified-mode .level4-narrative-container {
   margin-right: 4px;
 }
 
-/* Active states for laptop/teacher modes */
-body.laptop-mode-active .header-actions .btn:nth-child(4),
-body.teacher-mode-active .header-actions .btn:nth-child(5) {
+/* Active state for laptop mode */
+body.laptop-mode-active .header-actions .btn:nth-child(4) {
   background: rgba(255, 255, 255, 0.25) !important;
   color: #fff !important;
   border-color: #fff !important;
@@ -2900,7 +2899,7 @@ img::after {
 }
 
 .lesson-hero-inner,
-.lesson-hero > div:last-child {
+.lesson-hero > div:last-child:not(.lesson-hero-cameo) {
   padding: 1rem 32px;
   box-sizing: border-box;
 }
@@ -5211,7 +5210,7 @@ body.sen-mode .read-aloud-playback-bar .read-aloud-btn.reading-paused {
   font-size: 1.15rem;
 }
 
-.teacher-mode-active .teacher-note {
+.staff-mode-active .teacher-note {
   display: block;
   animation: fadeIn 0.3s ease;
 }
@@ -5221,8 +5220,7 @@ body.sen-mode .read-aloud-playback-bar .read-aloud-btn.reading-paused {
   display: none;
 }
 
-body.teacher-mode-active .teacher-only-guidance-drawer,
-body.teacher-mode-active .teacher-only-source-crib {
+body.staff-mode-active .teacher-only-guidance-drawer {
   display: block;
   animation: fadeIn 0.25s ease;
 }
@@ -7421,41 +7419,6 @@ body.whiteboard-mode-active .btn-whiteboard-toggle,
   border: 1.5px solid #38bdf8 !important;
   font-weight: 800 !important;
   box-shadow: 0 0 12px rgba(2, 132, 199, 0.4) !important;
-}
-
-.btn-teacher-mode-toggle {
-  background: #ffffff;
-  color: #1e3a8a;
-  border: 1.5px solid #cbd5e1;
-  font-weight: 700;
-  padding: 6px 12px;
-  font-size: 0.88rem;
-  border-radius: 6px;
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  cursor: pointer;
-  transition: all 0.15s ease;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
-}
-
-.btn-teacher-mode-toggle:hover {
-  background: #f8fafc;
-  border-color: #facc15;
-}
-
-body.teacher-mode-active .btn-teacher-mode-toggle,
-.btn-teacher-mode-toggle.active {
-  background: #1b365d !important;
-  color: #ffffff !important;
-  border: 1.5px solid #facc15 !important;
-  font-weight: 800 !important;
-  box-shadow: 0 0 12px rgba(250, 204, 21, 0.35) !important;
-}
-
-body.teacher-mode-active .btn-teacher-mode-toggle i,
-.btn-teacher-mode-toggle.active i {
-  color: #facc15 !important;
 }
 
 /* Flexi Timer Preset Pills */
@@ -15780,34 +15743,73 @@ body.lesson-full-width .btn-fullwidth-toggle,
   padding-right: 176px !important;
 }
 
+.lesson-hero .lesson-hero-cameo,
 .lesson-hero-cameo {
   position: absolute;
   right: 16px;
   top: 50%;
   transform: translateY(-50%);
-  height: calc(100% - 20px);
-  max-height: 184px;
-  max-width: 150px;
-  z-index: 6;
-  padding: 4px;
+  width: auto;
+  height: auto;
+  z-index: 8;
+  padding: 3px !important;
   border-radius: 9px;
-  background: rgba(15, 23, 42, 0.72);
-  border: 1.5px solid rgba(251, 191, 36, 0.55);
+  background: rgba(251, 191, 36, 0.16);
+  border: 2px solid rgba(251, 191, 36, 0.72);
   box-shadow: 0 8px 22px rgba(0, 0, 0, 0.55);
-  backdrop-filter: blur(6px);
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  pointer-events: none;
+  cursor: zoom-in;
+  pointer-events: auto;
+  transition: transform 0.18s ease, border-color 0.18s ease, box-shadow 0.16s ease;
+}
+
+.lesson-hero-cameo:hover {
+  transform: translateY(-50%) scale(1.035);
+  border-color: #fde047;
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.68), 0 0 0 2px rgba(250, 204, 21, 0.32);
 }
 
 .lesson-hero-cameo img {
-  height: 100%;
+  height: auto;
   width: auto;
+  max-height: 158px;
   max-width: 140px;
-  object-fit: contain;
   border-radius: 6px;
   display: block;
+  cursor: zoom-in;
+}
+
+.lesson-hero-cameo[data-cameo-clue]::after {
+  content: attr(data-cameo-clue);
+  position: absolute;
+  right: calc(100% + 10px);
+  top: 50%;
+  transform: translateY(-50%) translateX(4px);
+  width: max-content;
+  max-width: min(310px, 52vw);
+  background: rgba(15, 23, 42, 0.95);
+  color: #f8fafc;
+  border: 1px solid rgba(251, 191, 36, 0.65);
+  border-radius: 7px;
+  padding: 6px 10px;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 1.35;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.16s ease, transform 0.16s ease, visibility 0.16s ease;
+  z-index: 20;
+}
+
+.lesson-hero-cameo[data-cameo-clue]:hover::after {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(-50%) translateX(0);
 }
 
 @media (max-width: 740px) {

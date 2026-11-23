@@ -2,7 +2,7 @@
  * KS2 Junior School Teacher Planning Hub & Worksheet Companion Data for:
  * Anglo-Saxons & Vikings: Struggle for the Kingdom of England (AD 410–1066) [ks2_anglo_saxons_vikings]
  *
- * Calibrated for Years 4–5 (Bridge/Upper KS2) with Universal Dual-Scaffolding for Years 3–6.
+ * Calibrated for Key Stage 2 Primary History with Universal Single-Tier Historian Scaffolding.
  * Strict Institutional Neutrality under 'The History Revision Hub'.
  */
 
@@ -81,7 +81,7 @@ export const KS2_SAXONS_TEACHER_GUIDANCE = {
     timeline: [
       { time: '00–10 mins', phase: 'Do Now Bridge', activity: '5-question spaced retrieval bridging directly from Roman Britain (AD 410 withdrawal, Honorius, -chester towns, BC/AD timeline).' },
       { time: '10–25 mins', phase: 'Push vs Pull Migration', activity: 'Read Acts 1–2 aloud; locate Jutland, Angeln, and Saxony on the North Sea map and inspect the Nydam oak boat and West Stow hall.' },
-      { time: '25–45 mins', phase: 'Seven Kingdoms & Worksheet', activity: 'Read Act 3 on the Heptarchy, -ham/-ton place-names, and pagan weekday gods; complete Dual-Scaffolded Worksheet Tasks 1–5.' },
+      { time: '25–45 mins', phase: 'Seven Kingdoms & Worksheet', activity: 'Read Act 3 on the Heptarchy, -ham/-ton place-names, and pagan weekday gods; complete Enquiry Worksheet Tasks 1–5.' },
       { time: '45–60 mins', phase: 'Hinge Check & Plenary', activity: 'Test understanding of push vs pull factors, then run the 5-question Consolidate Quiz on the interactive whiteboard.' },
     ],
     subjectPrimer: `Following the departure of Roman legions around AD 407–410, stone towns gradually shrank and Germanic-speaking peoples from across the North Sea—Angles (from Angeln in southern Jutland), Saxons (from northern Germany), and Jutes (from northern Jutland), alongside Frisians—began crossing in clinker-built rowing ships. Historians distinguish "push" factors (rising sea levels salting low-lying coastal farmland in northern Europe) from "pull" factors (fertile cleared farmland in eastern Britain, plus British leaders like Vortigern initially hiring warriors as mercenaries against Pictish raids). Rather than building stone villas, settlers built rectangular timber halls and sunken-featured weaving huts (seen at West Stow in Suffolk), forming seven rival kingdoms—Northumbria, Mercia, East Anglia, Essex, Kent, Sussex, and Wessex—and giving us "Angle-land" (England), village endings (-ham, -ton, -ford, -bury), and Tuesday–Friday named after Tiw, Woden, Thunor, and Frige.`,

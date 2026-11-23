@@ -4,8 +4,8 @@
  * THE HISTORY REVISION HUB — COMPLETE PRINT REPROGRAPHICS COMPILER FOR KS2 ANGLO-SAXONS & VIKINGS
  * Dynamically compiles 100% synchronized HTML & PDF print editions from canonical data/ks2_anglo_saxons_vikings.json:
  *   1. 12-Page Master Classroom Textbook (Single Wide-Margin Column, 3 Folded A3 Sheets)
- *   2. 6 × 2-Page A4 Dual-Scaffolded Enquiry Worksheets (L01–L06)
- *   3. 16-Page Master Pupil Workbook (4 Folded A3 Sheets, Primary Ruled Lines + Scholar Stretch)
+ *   2. 6 × 2-Page A4 Primary Enquiry Worksheets (L01–L06)
+ *   3. 16-Page Master Pupil Workbook (4 Folded A3 Sheets, Primary Ruled Lines + Universal Historian Scaffolding)
  *   4. 4-Page Knowledge Retrieval Companion (24 Questions + Marking Bank, 1 Folded A3 Sheet)
  *   5. 6-Page Walk-In Primary Teacher Guide & Scheme of Work (A4 Staff Pack)
  *   6. Commercial Provenance & Source Bibliography PDF
@@ -275,7 +275,7 @@ function buildTextbookHtml(unitData) {
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;800;900&family=Inter:wght@400;500;600;700;800&family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,700;0,800;1,400&display=swap" rel="stylesheet">
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
-    @page { size: A4 portrait; margin: 0; }
+    @page { size: 210mm 297mm; margin: 0; }
     body { background: #cbd5e1; font-family: 'Inter', sans-serif; color: #0f172a; display: flex; flex-direction: column; align-items: center; }
     .screen-toolbar {
       width: 100%; background: #0f172a; color: #fff; padding: 9px 20px; display: flex; justify-content: space-between; align-items: center;
@@ -529,14 +529,12 @@ function renderTwoPageMissionHtml(lesson, idx, pageNumStart, totalPages, pageCla
 
   const task1 = (lesson.tasks && lesson.tasks[0]) || {};
   const task2 = (lesson.tasks && lesson.tasks[1]) || {};
-  const task4 = (lesson.tasks && lesson.tasks[3]) || {};
+  const task3 = (lesson.tasks || []).find((t) => t.type === 'big_question') || (lesson.tasks && lesson.tasks[2]) || {};
   const chronoItems = CHRONO_TASKS[idx] || [];
   const heads = THINKING_HEADS[idx];
-  const scholarHint =
-    (task4.hints || []).find((h) => /scholar/i.test(h)) ||
-    (task4.hints && task4.hints[2]) ||
-    'Explain which piece of primary archaeological evidence best proves your argument.';
-  const wordBank = (task4.word_bank || task4.key_terms || []).slice(0, 4).join('  •  ');
+  const task1Wb = (task1.word_bank || task1.key_terms || []).slice(0, 4).join('  •  ');
+  const task2Wb = (task2.word_bank || task2.key_terms || []).slice(0, 4).join('  •  ');
+  const wordBank = (task3.word_bank || task3.key_terms || []).slice(0, 4).join('  •  ');
   const cleanCaption = srcA.title || 'Source A';
   const captionHasDate = /\([^)]*\d/.test(cleanCaption);
   const srcDateSuffix = !captionHasDate && srcA.date ? ` (${escapeHtml(srcA.date)})` : '';
@@ -548,7 +546,7 @@ function renderTwoPageMissionHtml(lesson, idx, pageNumStart, totalPages, pageCla
   <div class="${pageClass}">
     <div class="ws-hdr">
       <div>
-        <div class="ws-kicker">KS2 ANGLO-SAXONS &amp; VIKINGS • MISSION ${String(idx + 1).padStart(2, '0')} OF 06 • KEY STAGE 2 DUAL-SCAFFOLD</div>
+        <div class="ws-kicker">KS2 ANGLO-SAXONS &amp; VIKINGS • MISSION ${String(idx + 1).padStart(2, '0')} OF 06 • KEY STAGE 2 PRIMARY HISTORY</div>
         <h1>${escapeHtml(lesson.title)}</h1>
         <div class="ws-eq">Big Question: ${escapeHtml(lesson.enquiryQuestion)}</div>
       </div>
@@ -572,10 +570,10 @@ function renderTwoPageMissionHtml(lesson, idx, pageNumStart, totalPages, pageCla
           ${srcClueNote ? `<div class="src-clue-note">${escapeHtml(srcClueNote)}</div>` : ''}
         </div>
         <div class="src-q-col">
-          <p class="q-item"><strong>1a.</strong> ${escapeHtml(srcA.question || task1.question || 'What historical clues can you spot in Source A?')}</p>
-          <div class="starter-hint">Starter: <em>"${escapeHtml(srcStarter)}"</em></div>
+          <p class="q-item"><strong>1a.</strong> ${escapeHtml(task1.question || srcA.question || 'What historical clues can you spot in Source A?')}</p>
+          <div class="starter-hint"><strong>Starter:</strong> <em>"${escapeHtml(task1.starter || srcStarter)}"</em>${task1Wb ? `<br><strong>Word Bank:</strong> ${escapeHtml(task1Wb)}` : ''}</div>
           <div class="lines-stack">
-            ${renderLines(6)}
+            ${renderLines(5)}
           </div>
         </div>
       </div>
@@ -616,9 +614,9 @@ function renderTwoPageMissionHtml(lesson, idx, pageNumStart, totalPages, pageCla
     <div class="task-box flex-grow-card">
       <div class="task-title"><span class="t-badge green">TASK 3</span> Historical Investigation • Cause &amp; Consequence</div>
       <p class="q-item">${escapeHtml(task2.question || 'Explain why this historical event happened and how it affected Britain.')}</p>
-      <div class="starter-hint">Foundation Starter: <em>"${escapeHtml(task2.starter || 'This happened because...')}"</em></div>
+      <div class="starter-hint"><strong>Starter:</strong> <em>"${escapeHtml(task2.starter || 'This happened because...')}"</em>${task2Wb ? ` &bull; <strong>Word Bank:</strong> ${escapeHtml(task2Wb)}` : ''}</div>
       <div class="lines-stack">
-        ${renderLines(5)}
+        ${renderLines(4)}
       </div>
     </div>
 
@@ -639,13 +637,13 @@ function renderTwoPageMissionHtml(lesson, idx, pageNumStart, totalPages, pageCla
       </div>
     </div>
 
-    <!-- TASK 5: MISSION CHALLENGE (DUAL-SCAFFOLDED FOR LKS2 & UKS2) -->
+    <!-- TASK 5: MISSION CHALLENGE (UNIVERSAL HISTORIAN SCAFFOLD) -->
     <div class="task-box challenge flex-grow-card-lg">
       <div class="task-title"><span class="t-badge purple">TASK 5</span> Mission Challenge • Answer Today's Big Enquiry Question</div>
       <p class="q-item"><strong>${escapeHtml(lesson.enquiryQuestion)}</strong></p>
-      <div class="dual-scaffold-bar">
-        <div><strong>🟢 Foundation Clues:</strong> Start with <em>"${escapeHtml(task4.starter || 'The evidence shows that...')}"</em> &bull; <strong>Word Bank:</strong> ${escapeHtml(wordBank)}</div>
-        <div style="margin-top:0.8mm; color:#5b21b6;"><strong>🟣 ${escapeHtml(scholarHint)}</strong></div>
+      <div class="scaffold-bar">
+        <div><strong>Starter:</strong> <em>"${escapeHtml(task3.starter || 'Historical evidence shows that...')}"</em></div>
+        <div style="margin-top:0.6mm;"><strong>Historian Word Bank:</strong> ${escapeHtml(wordBank)}</div>
       </div>
       <div class="lines-stack">
         ${renderLines(7)}
@@ -661,7 +659,7 @@ function renderTwoPageMissionHtml(lesson, idx, pageNumStart, totalPages, pageCla
 
 const SHARED_WORKSHEET_CSS = `
   * { box-sizing: border-box; margin: 0; padding: 0; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
-  @page { size: A4 portrait; margin: 0; }
+  @page { size: 210mm 297mm; margin: 0; }
   body { background: #cbd5e1; font-family: 'Inter', sans-serif; color: #0f172a; display: flex; flex-direction: column; align-items: center; }
   .screen-toolbar {
     width: 100%; background: #0f172a; color: #fff; padding: 9px 20px; display: flex; justify-content: space-between; align-items: center;
@@ -680,6 +678,7 @@ const SHARED_WORKSHEET_CSS = `
     body { background: #fff; }
     .screen-toolbar { display: none !important; }
     .worksheet-page, .wb-page { margin: 0; box-shadow: none !important; }
+    .worksheet-page:last-of-type, .wb-page:last-of-type { page-break-after: avoid !important; break-after: avoid !important; }
   }
   .ws-hdr {
     display: flex; justify-content: space-between; align-items: stretch; gap: 4mm; flex-shrink: 0;
@@ -723,7 +722,7 @@ const SHARED_WORKSHEET_CSS = `
   .lines-stack { display: flex; flex-direction: column; flex: 1; justify-content: space-evenly; min-height: 0; }
   .q-item { font-size: 8.1pt; line-height: 1.3; color: #0f172a; margin-bottom: 1mm; flex-shrink: 0; }
   .starter-hint { font-size: 7.3pt; line-height: 1.28; color: #475569; background: #f8fafc; border-left: 3px solid #94a3b8; padding: 1mm 2mm; margin-bottom: 1mm; flex-shrink: 0; }
-  .dual-scaffold-bar { font-size: 7.2pt; line-height: 1.28; background: #f5f3ff; border: 1px solid #ddd6fe; border-radius: 4px; padding: 1.4mm 2.2mm; margin-bottom: 1mm; flex-shrink: 0; }
+  .scaffold-bar { font-size: 7.2pt; line-height: 1.28; background: #f5f3ff; border: 1px solid #ddd6fe; border-radius: 4px; padding: 1.4mm 2.2mm; margin-bottom: 1mm; flex-shrink: 0; }
   .ruled-line { height: 7.8mm; border-bottom: 1.2px dashed #94a3b8; width: 100%; }
   .lines-stack .ruled-line { flex: 1; height: auto; min-height: 6.8mm; max-height: 8.8mm; }
   .chrono-grid { display: flex; flex-direction: column; gap: 1.5mm; }
@@ -791,7 +790,7 @@ function buildMasterWorkbookHtml(unitData) {
   <!-- PAGE 1: WORKBOOK FRONT COVER -->
   <div class="wb-page">
     <div style="background:linear-gradient(135deg,#022c22 0%,#065f46 100%); color:#fff; padding:5mm 6mm; border-radius:8px; text-align:center; border:2px solid #f59e0b;">
-      <div style="font-size:7.5pt; font-weight:800; color:#fde68a; text-transform:uppercase; letter-spacing:0.1em;">The History Revision Hub • Key Stage 2 Pupil Enquiry Workbook</div>
+      <div style="font-size:7.5pt; font-weight:800; color:#fde68a; text-transform:uppercase; letter-spacing:0.1em;">The History Revision Hub • <span data-department-name="The History Department"><span class="school-brand-target">The History Department</span></span> • KS2 Pupil Workbook</div>
       <h1 style="font-family:'Cinzel',serif; font-size:18.5pt; font-weight:900; margin:2mm 0;">ANGLO-SAXONS &amp; VIKINGS</h1>
       <div style="font-family:'Lora',serif; font-style:italic; font-size:9.8pt; color:#d1fae5;">“How did Anglo-Saxon kingdoms and Viking invaders struggle and unite to create England?”</div>
     </div>
@@ -818,21 +817,15 @@ function buildMasterWorkbookHtml(unitData) {
     </div>
   </div>
 
-  <!-- PAGE 2: DUAL-SCAFFOLD GUIDE & REFERENCE MAP -->
+  <!-- PAGE 2: HISTORIAN GUIDE & REFERENCE MAP -->
   <div class="wb-page">
     <div class="ws-subhdr">
-      <span>HOW TO USE YOUR DUAL-SCAFFOLDED WORKBOOK &amp; REFERENCE MAP</span>
+      <span>HOW TO WORK LIKE A HISTORIAN &amp; UNIT REFERENCE MAP</span>
       <span>KEY STAGE 2</span>
     </div>
-    <div style="display:grid; grid-template-columns:1fr 1fr; gap:3.5mm; margin:2mm 0;">
-      <div style="background:#f0fdf4; border:1.2px solid #86efac; border-radius:6px; padding:3mm;">
-        <div style="font-size:8.2pt; font-weight:800; color:#166534; margin-bottom:1mm;">🟢 Foundation Clues</div>
-        <p style="font-size:7.6pt; line-height:1.35; color:#1e293b;">Use the <strong>Syllable Key Words</strong> at the top of each mission, borrow the <em>Sentence Starters</em>, and tick off words from the <strong>Word Bank</strong> as you write!</p>
-      </div>
-      <div style="background:#f5f3ff; border:1.2px solid #c4b5fd; border-radius:6px; padding:3mm;">
-        <div style="font-size:8.2pt; font-weight:800; color:#5b21b6; margin-bottom:1mm;">🟣 Scholar Challenge</div>
-        <p style="font-size:7.6pt; line-height:1.35; color:#1e293b;">Ready to stretch your historical thinking? Tackle the purple <strong>Scholar Challenge</strong> in Task 5 by weighing archaeological clues against monk chronicles!</p>
-      </div>
+    <div style="background:#f8fafc; border:1.2px solid #cbd5e1; border-left:4px solid #1e3a8a; border-radius:6px; padding:2.8mm 3.5mm; margin:2mm 0;">
+      <div style="font-size:8.2pt; font-weight:800; color:#0f172a; margin-bottom:1mm;">How to Work Like a Key Stage 2 Historian</div>
+      <p style="font-size:7.6pt; line-height:1.36; color:#1e293b;"><strong>1. Say Key Words Aloud:</strong> Use the phonetic syllable guide at the top of each mission. &nbsp;&bull;&nbsp; <strong>2. Inspect the Clue:</strong> Look closely at every primary source detail before writing. &nbsp;&bull;&nbsp; <strong>3. Build Strong Sentences:</strong> Use the <em>Sentence Starter</em> and tick off words from the <strong>Historian Word Bank</strong>!</p>
     </div>
     <div style="flex:1; display:flex; align-items:center; justify-content:center; border:1.2px solid #cbd5e1; border-radius:6px; padding:2mm; background:#f8fafc;">
       <img src="${mapImg}" alt="Map of Anglo-Saxon Kingdoms and the Danelaw" style="max-height:192mm; max-width:100%; object-fit:contain;" />
@@ -866,7 +859,7 @@ function buildMasterWorkbookHtml(unitData) {
       <div>
         <div class="task-title"><span class="t-badge purple">FINALE B</span> Your Final Verdict • Answering the Whole-Unit Big Question</div>
         <p class="q-item"><strong>“How did Anglo-Saxon kingdoms and Viking invaders struggle and unite to create the Kingdom of England between AD 410 and 1066?”</strong></p>
-        <div class="dual-scaffold-bar">Write your best paragraph bringing together clues from <strong>Sutton Hoo</strong>, <strong>Lindisfarne (AD 793)</strong>, <strong>King Alfred &amp; the Danelaw</strong>, <strong>Jorvik traders</strong>, <strong>Aethelflaed &amp; Athelstan</strong>, and <strong>1066</strong>!</div>
+        <div class="scaffold-bar">Write your best paragraph bringing together clues from <strong>Sutton Hoo</strong>, <strong>Lindisfarne (AD 793)</strong>, <strong>King Alfred &amp; the Danelaw</strong>, <strong>Jorvik traders</strong>, <strong>Aethelflaed &amp; Athelstan</strong>, and <strong>1066</strong>!</div>
       </div>
       <div>
         ${renderLines(8)}
@@ -971,7 +964,7 @@ function buildRetrievalCompanionHtml(unitData) {
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;800&family=Inter:wght@400;600;700;800&family=Lora:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
-    @page { size: A4 portrait; margin: 0; }
+    @page { size: 210mm 297mm; margin: 0; }
     body { background: #cbd5e1; font-family: 'Inter', sans-serif; color: #0f172a; display: flex; flex-direction: column; align-items: center; }
     .screen-toolbar { width: 100%; background: #0f172a; color: #fff; padding: 9px 20px; display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #10b981; position: sticky; top: 0; z-index: 50; }
     .screen-toolbar a, .screen-toolbar button { background: #065f46; color: #fff; border: 1px solid #34d399; padding: 5px 12px; border-radius: 5px; font-size: 8.5pt; font-weight: 700; text-decoration: none; cursor: pointer; margin-left: 6px; }
@@ -1125,7 +1118,7 @@ function buildSchemeOfWorkHtml(unitData) {
                 </div>
               </div>
               <div style="background:#f8fafc; border-top:1px dashed #cbd5e1; padding-top:1.5mm; font-size:7.3pt; color:#0f172a;">
-                <strong>Model Big Question Answer (WAGOLL):</strong> <em>“${escapeHtml((l.tasks && l.tasks[3] && l.tasks[3].model_answer) || '')}”</em>
+                <strong>Model Big Question Answer (WAGOLL):</strong> <em>“${escapeHtml((((l.tasks || []).find((t) => t.type === 'big_question') || (l.tasks && l.tasks[2]) || {}).model_answer || ''))}”</em>
               </div>
             </div>`;
           })
@@ -1146,12 +1139,12 @@ function buildSchemeOfWorkHtml(unitData) {
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;800;900&family=Inter:wght@400;600;700;800&family=Lora:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
-    @page { size: A4 portrait; margin: 0; }
+    @page { size: 210mm 297mm; margin: 0; }
     body { background: #cbd5e1; font-family: 'Inter', sans-serif; color: #0f172a; display: flex; flex-direction: column; align-items: center; }
     .screen-toolbar { width: 100%; background: #0f172a; color: #fff; padding: 9px 20px; display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #10b981; position: sticky; top: 0; z-index: 50; }
     .screen-toolbar a, .screen-toolbar button { background: #065f46; color: #fff; border: 1px solid #34d399; padding: 5px 12px; border-radius: 5px; font-size: 8.5pt; font-weight: 700; text-decoration: none; cursor: pointer; margin-left: 6px; }
     .sow-page { width: 210mm; height: 297mm; max-height: 297mm; background: #fff; margin: 8mm auto; padding: 10mm 12mm; display: flex; flex-direction: column; justify-content: space-between; overflow: hidden; page-break-after: always; break-after: page; box-shadow: 0 8px 24px rgba(15,23,42,0.15); }
-    @media print { body { background: #fff; } .screen-toolbar { display: none !important; } .sow-page { margin: 0; box-shadow: none !important; } }
+    @media print { body { background: #fff; } .screen-toolbar { display: none !important; } .sow-page { margin: 0; box-shadow: none !important; } .sow-page:last-of-type { page-break-after: avoid !important; break-after: avoid !important; } }
     .sow-head { display: flex; justify-content: space-between; border-bottom: 1.5px solid #065f46; padding-bottom: 1.8mm; margin-bottom: 2.5mm; font-size: 7.5pt; font-weight: 800; color: #065f46; text-transform: uppercase; }
     .sow-foot { display: flex; justify-content: space-between; border-top: 1px solid #cbd5e1; padding-top: 1.8mm; margin-top: 2.5mm; font-size: 7.5pt; color: #64748b; font-weight: 600; }
     .sow-pill { background: #065f46; color: #fff; padding: 1.5px 8px; border-radius: 3px; font-weight: 800; }
@@ -1185,10 +1178,10 @@ function buildSchemeOfWorkHtml(unitData) {
     </div>
 
     <div class="panel" style="border-left-color:#15803d; background:#f0fdf4;">
-      <h3>2. Universal Dual-Scaffolding Across Year Groups (Years 3, 4, 5 &amp; 6)</h3>
+      <h3>2. Universal Single-Tier Historian Scaffolding Across Key Stage 2</h3>
       <ul>
-        <li><strong>Teaching in Year 3 or Year 4 (Lower KS2):</strong> Point pupils to the <strong>Phonetic Syllable Pills</strong> (e.g. <em>Hep-tar-chy</em>, <em>Dan-e-law</em>), green <strong>Foundation Sentence Starters</strong>, and <strong>Word Banks</strong> on every worksheet and workbook page.</li>
-        <li><strong>Teaching in Year 5 or Year 6 (Upper KS2 / Greater Depth):</strong> Challenge pupils with the purple <strong>Scholar Challenge</strong> prompts weighing monk chronicle bias against Sutton Hoo and Coppergate archaeology.</li>
+        <li><strong>Phonetic Vocabulary &amp; Clear Primary Prose:</strong> Every enquiry opens with phonetic <strong>Syllable Key Words</strong> so every pupil can pronounce and use specialist historical terms confidently.</li>
+        <li><strong>One Universal Scaffold for All Pupils:</strong> Every extended writing task provides <strong>1 universal Sentence Starter</strong> and <strong>1 Historian Word Bank</strong>, paired with an aspirational <strong>Model Historian Answer (WAGOLL)</strong> for whole-class feedback.</li>
       </ul>
     </div>
 
@@ -1358,7 +1351,7 @@ async function auditAndPrintPdf(browser, htmlContent, htmlPaths, pdfPaths, pageS
       }));
     }, pageSelector);
 
-    const bad = overflows.filter((o) => o.diff > 2);
+    const bad = overflows.filter((o) => o.diff > 0);
     if (bad.length > 0) {
       console.error(`❌ Overflow detected on ${path.basename(pdfPaths[0])}:`, bad);
       throw new Error(`Page overflow on ${path.basename(pdfPaths[0])}`);
@@ -1368,6 +1361,7 @@ async function auditAndPrintPdf(browser, htmlContent, htmlPaths, pdfPaths, pageS
 
   const pdfBuf = await page.pdf({
     format: 'A4',
+    landscape: false,
     printBackground: true,
     margin: { top: '0mm', bottom: '0mm', left: '0mm', right: '0mm' },
   });
@@ -1380,78 +1374,76 @@ async function auditAndPrintPdf(browser, htmlContent, htmlPaths, pdfPaths, pageS
 async function main() {
   const unitData = JSON.parse(fs.readFileSync(DATA_PATH, 'utf8'));
   const rightsDb = JSON.parse(fs.readFileSync(RIGHTS_DB_PATH, 'utf8'));
-  const browser = await puppeteer.launch({ headless: 'new', args: ['--no-sandbox'] });
+  const CHROME_EXEC_PATH = process.env.PUPPETEER_EXECUTABLE_PATH || [
+  'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe',
+  'C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe',
+  'C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe',
+].find((p) => fs.existsSync(p));
+  const browser = await puppeteer.launch({ headless: 'new', ...(CHROME_EXEC_PATH ? { executablePath: CHROME_EXEC_PATH } : {}), args: ['--no-sandbox'] });
 
+  const buildAll = process.argv.includes('--all');
   try {
-    console.log('🖨️  1/6 Compiling 12-Page Classroom Textbook...');
-    await auditAndPrintPdf(
-      browser,
-      buildTextbookHtml(unitData),
-      [path.join(PUB_UNIT_DIR, 'textbook.html'), path.join(SRC_UNIT_DIR, 'textbook.html')],
-      [path.join(PUB_PDF_DIR, 'ks2_anglo_saxons_vikings_textbook.pdf'), path.join(PUB_SAXONS_PDF_DIR, 'ks2_anglo_saxons_vikings_textbook.pdf')],
-      '.tb-page'
-    );
+    if (buildAll) {
+      console.log('🖨️  1/6 Compiling 12-Page Classroom Textbook...');
+      await auditAndPrintPdf(
+        browser,
+        buildTextbookHtml(unitData),
+        [path.join(PUB_UNIT_DIR, 'textbook.html')],
+        [path.join(PUB_PDF_DIR, 'ks2_anglo_saxons_vikings_textbook.pdf'), path.join(PUB_SAXONS_PDF_DIR, 'ks2_anglo_saxons_vikings_textbook.pdf')],
+        '.tb-page'
+      );
+    }
 
-    console.log('🖨️  2/6 Compiling 6 × 2-Page Dual-Scaffolded Enquiry Worksheets...');
+    console.log('🖨️  Compiling 6 × 2-Page Primary Enquiry Worksheets (ks2_anglo_saxons_vikings)...');
     for (let i = 0; i < unitData.lessons.length; i++) {
       const slug = WORKSHEET_SLUGS[i];
       await auditAndPrintPdf(
         browser,
         buildSingleWorksheetHtml(unitData.lessons[i], i),
-        [path.join(PUB_WS_DIR, `${slug}.html`), path.join(SRC_WS_DIR, `${slug}.html`)],
+        [path.join(PUB_WS_DIR, `${slug}.html`)],
         [path.join(PUB_SAXONS_PDF_DIR, `${slug}.pdf`)],
         '.worksheet-page'
       );
     }
 
-    console.log('🖨️  3/6 Compiling 16-Page Master Pupil Workbook...');
+    console.log('🖨️  Compiling 16-Page Master Pupil Workbook (ks2_anglo_saxons_vikings)...');
     await auditAndPrintPdf(
       browser,
       buildMasterWorkbookHtml(unitData),
-      [path.join(PUB_UNIT_DIR, 'pupil_workbook.html'), path.join(SRC_UNIT_DIR, 'pupil_workbook.html')],
+      [path.join(PUB_UNIT_DIR, 'pupil_workbook.html')],
       [path.join(PUB_PDF_DIR, 'ks2_anglo_saxons_vikings_pupil_workbook.pdf'), path.join(PUB_SAXONS_PDF_DIR, 'ks2_anglo_saxons_vikings_pupil_workbook.pdf')],
       '.wb-page'
     );
 
-    console.log('🖨️  4/6 Compiling 4-Page Retrieval Companion...');
-    const rcHtml = buildRetrievalCompanionHtml(unitData);
-    await auditAndPrintPdf(
-      browser,
-      rcHtml,
-      [
-        path.join(PUB_UNIT_DIR, 'quiz_pack.html'),
-        path.join(SRC_UNIT_DIR, 'quiz_pack.html'),
-        path.join(PUB_UNIT_DIR, 'retrieval_companion.html'),
-        path.join(SRC_UNIT_DIR, 'retrieval_companion.html'),
-      ],
-      [path.join(PUB_PDF_DIR, 'ks2_anglo_saxons_vikings_retrieval_companion.pdf'), path.join(PUB_SAXONS_PDF_DIR, 'ks2_anglo_saxons_vikings_quiz_pack.pdf')],
-      '.rc-page'
-    );
+    if (buildAll) {
+      console.log('🖨️  4/6 Compiling 4-Page Retrieval Companion...');
+      await auditAndPrintPdf(
+        browser,
+        buildRetrievalCompanionHtml(unitData),
+        [path.join(PUB_UNIT_DIR, 'quiz_pack.html')],
+        [path.join(PUB_PDF_DIR, 'ks2_anglo_saxons_vikings_retrieval_companion.pdf'), path.join(PUB_SAXONS_PDF_DIR, 'ks2_anglo_saxons_vikings_quiz_pack.pdf')],
+        '.rc-page'
+      );
+    }
 
-    console.log('🖨️  5/6 Compiling 6-Page Walk-In Primary Teacher Guide & SOW...');
+    console.log('🖨️  Compiling 6-Page Walk-In Primary Teacher Guide & SOW (ks2_anglo_saxons_vikings)...');
     await auditAndPrintPdf(
       browser,
       buildSchemeOfWorkHtml(unitData),
-      [path.join(PUB_UNIT_DIR, 'ks2_anglo_saxons_vikings_scheme_of_work.html'), path.join(SRC_UNIT_DIR, 'ks2_anglo_saxons_vikings_scheme_of_work.html')],
+      [path.join(PUB_UNIT_DIR, 'ks2_anglo_saxons_vikings_scheme_of_work.html')],
       [path.join(PUB_PDF_DIR, 'ks2_anglo_saxons_vikings_scheme_of_work.pdf'), path.join(PUB_SAXONS_PDF_DIR, 'ks2_anglo_saxons_vikings_scheme_of_work.pdf')],
       '.sow-page'
     );
 
-    console.log('🖨️  6/6 Compiling Commercial Provenance & Source Bibliography PDF...');
-    const bibPage = await browser.newPage();
-    await bibPage.setContent(buildBibliographyHtml(rightsDb.units.ks2_anglo_saxons_vikings), { waitUntil: 'networkidle0' });
-    const bibBuf = await bibPage.pdf({ format: 'A4', printBackground: true });
-    fs.writeFileSync(path.join(PUB_SAXONS_PDF_DIR, 'ks2_anglo_saxons_vikings_source_bibliography.pdf'), bibBuf);
-    await bibPage.close();
-    console.log('   ✅ Rendered ks2_anglo_saxons_vikings_source_bibliography.pdf');
-
-    // Mirror timeline_slider files to units/ks2_anglo_saxons_vikings/ as well
-    for (const f of ['timeline_slider.html', 'timeline_slider_app.js']) {
-      const src = path.join(PUB_UNIT_DIR, f);
-      if (fs.existsSync(src)) fs.copyFileSync(src, path.join(SRC_UNIT_DIR, f));
+    if (buildAll) {
+      const bibPage = await browser.newPage();
+      await bibPage.setContent(buildBibliographyHtml(rightsDb.units.ks2_anglo_saxons_vikings), { waitUntil: 'networkidle0' });
+      const bibBuf = await bibPage.pdf({ format: 'A4', landscape: false, printBackground: true });
+      fs.writeFileSync(path.join(PUB_SAXONS_PDF_DIR, 'ks2_anglo_saxons_vikings_source_bibliography.pdf'), bibBuf);
+      await bibPage.close();
     }
 
-    console.log('🎉 ALL KS2 ANGLO-SAXONS & VIKINGS PRINT & DIGITAL ARTIFACTS COMPILED WITH 0px OVERFLOW!');
+    console.log('🎉 ks2_anglo_saxons_vikings WORKBOOK, WORKSHEETS & SOW COMPILED WITH 0px OVERFLOW!');
   } finally {
     await browser.close();
   }

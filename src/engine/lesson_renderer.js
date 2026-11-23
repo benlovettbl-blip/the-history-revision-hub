@@ -21,6 +21,7 @@ import {
   getNonDuplicateExtraMockQuestions,
   getCanonicalGcsePaperCode,
   getRecommendedExamMins,
+  renderInlineTaskTimerBarHTML,
 } from './lesson_exam_practice_panel.js';
 import { getLessonMockQuestions } from './mock_exam_bank_data.js';
 import { buildComprehensiveVocabDict, highlightGlossaryInProse } from './disciplinary_glossary.js';
@@ -375,97 +376,54 @@ export function renderLesson(lesson) {
     );
   };
 
-  const renderSourceEnquiryBox = ({ srcObj, promptText, contextVal = '', renderedBullets = '' }) => {
+  const extractCrispModelAnswer = (srcObj, contextVal = '') => {
+    if (!srcObj) return '';
+    if (typeof srcObj.model_answer === 'string' && srcObj.model_answer.trim()) {
+      return srcObj.model_answer.trim();
+    }
+    if (Array.isArray(srcObj.model_answer) && srcObj.model_answer.length > 0) {
+      return srcObj.model_answer.slice(0, 2).join(' ').trim();
+    }
+    const uObj = srcObj.utility_enquiry || srcObj.utilityEnquiry;
+    if (uObj) {
+      if (typeof uObj.answer === 'string' && uObj.answer.trim()) return uObj.answer.trim();
+      const pts = uObj.bullet_points || uObj.key_points || uObj.model_answers || uObj.answers;
+      if (Array.isArray(pts) && pts.length > 0) {
+        const firstTwo = pts
+          .slice(0, 2)
+          .map((p) => (typeof p === 'string' ? p : p?.text || p?.content || p?.answer || ''))
+          .map((s) => String(s).trim())
+          .filter(Boolean);
+        if (firstTwo.length > 0) return firstTwo.join(' ');
+      }
+      const inf = uObj.content_inferences || uObj.inferences || uObj.content || '';
+      if (inf) return String(inf).trim();
+    }
+    if (Array.isArray(srcObj.discussion_ideas) && srcObj.discussion_ideas.length > 0) {
+      return String(srcObj.discussion_ideas[0] || '').trim();
+    }
+    if (typeof srcObj.answer === 'string' && srcObj.answer.trim()) {
+      return srcObj.answer.trim();
+    }
+    return String(contextVal || '').trim();
+  };
+
+  const renderSourceEnquiryBox = ({ srcObj, promptText, contextVal = '' }) => {
+    if (!promptText || !String(promptText).trim()) return '';
     const enqIdx = sourceEnquiryCounter++;
     const dynamicBadge = resolveSourceEnquiryBadge(srcObj, promptText);
     const modeCfg = resolveSourceEnquiryMode(srcObj, promptText);
     const fmt = (txt) =>
       typeof window !== 'undefined' && window.formatBold ? window.formatBold(txt) : txt;
 
-    let answerContentHtml = '';
-    if (renderedBullets) {
-      answerContentHtml = `
+    const crispAnswer = extractCrispModelAnswer(srcObj, contextVal);
+    const answerBodyHtml = crispAnswer
+      ? `
         <div style="background: ${modeCfg.softBg}; border-left: 3.5px solid ${modeCfg.accent}; padding: 9px 13px; border-radius: 0 4px 4px 0;">
-          <strong class="source-enquiry-reveal-heading" style="color: ${modeCfg.headingColor}; display: block; margin-bottom: 5px; font-size: 0.80rem; text-transform: uppercase; letter-spacing: 0.5px;"><i class="fa-solid ${modeCfg.iconClass}" style="color: ${modeCfg.accent}; margin-right: 6px;"></i>${modeCfg.heading}</strong>
-          <ul style="margin: 0; padding-left: 18px;">
-            ${renderedBullets}
-          </ul>
+          <div style="font-size: 0.91rem; color: #1e293b; line-height: 1.55;">${fmt(crispAnswer)}</div>
         </div>
-      `;
-    } else if (srcObj && srcObj.model_answer) {
-      answerContentHtml = `
-        <div style="background: ${modeCfg.softBg}; border-left: 3.5px solid ${modeCfg.accent}; padding: 9px 13px; border-radius: 0 4px 4px 0;">
-          <strong class="source-enquiry-reveal-heading" style="color: ${modeCfg.headingColor}; display: block; margin-bottom: 4px; font-size: 0.80rem; text-transform: uppercase; letter-spacing: 0.5px;"><i class="fa-solid ${modeCfg.iconClass}" style="color: ${modeCfg.accent}; margin-right: 6px;"></i>${modeCfg.heading}</strong>
-          <div style="font-size: 0.90rem; color: #1e293b; line-height: 1.55;">${fmt(srcObj.model_answer)}</div>
-        </div>
-      `;
-    } else if (
-      srcObj &&
-      Array.isArray(srcObj.discussion_ideas) &&
-      srcObj.discussion_ideas.length > 0
-    ) {
-      answerContentHtml = `
-        <div style="background: ${modeCfg.softBg}; border-left: 3.5px solid ${modeCfg.accent}; padding: 9px 13px; border-radius: 0 4px 4px 0;">
-          <strong class="source-enquiry-reveal-heading" style="color: ${modeCfg.headingColor}; display: block; margin-bottom: 4px; font-size: 0.80rem; text-transform: uppercase; letter-spacing: 0.5px;"><i class="fa-solid ${modeCfg.iconClass}" style="color: ${modeCfg.accent}; margin-right: 6px;"></i>${modeCfg.heading}</strong>
-          <ul style="margin: 0; padding-left: 18px; font-size: 0.88rem; color: #1e293b; line-height: 1.5;">
-            ${srcObj.discussion_ideas.map((d) => `<li style="margin-bottom: 5px;">${fmt(d)}</li>`).join('')}
-          </ul>
-        </div>
-      `;
-    }
-
-    const fallbackContextHtml =
-      !answerContentHtml && contextVal
-        ? `
-          <div style="background: #f8fafc; border-left: 3.5px solid #64748b; padding: 9px 13px; border-radius: 0 4px 4px 0;">
-            <strong style="color: #334155; display: block; margin-bottom: 4px; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.5px;">Historical Context &amp; Guidance:</strong>
-            <div style="font-size: 0.88rem; color: #334155; line-height: 1.52;">${fmt(contextVal)}</div>
-          </div>
-        `
-        : '';
-
-    const teacherSourceCribHtml = (() => {
-      if (!srcObj) return '';
-      const tnSc = lesson?.teacher_notes?.source_context;
-      const sLtr = String(
-        srcObj.letter ||
-          ((srcObj.title || '').match(/(?:Source|Map|Diagram)\s+([A-E])\b/i) || [])[1] ||
-          '',
-      ).toUpperCase();
-      let tnLookup = '';
-      if (tnSc && typeof tnSc === 'object') {
-        tnLookup =
-          (srcObj.id && tnSc[srcObj.id]) ||
-          (sLtr && tnSc[`Source ${sLtr}`]) ||
-          (sLtr && tnSc[sLtr]) ||
-          (sLtr && tnSc[`source_${sLtr.toLowerCase()}`]) ||
-          '';
-      }
-      let rawCtx = String(contextVal || srcObj.source_context || srcObj.context || tnLookup || '').trim();
-      let rawHinge = String(srcObj.hinge_question || '').trim();
-      if (/\*{0,2}(?:Hinge Question|Discussion Prompt|Discussion Question):\*{0,2}/i.test(rawCtx)) {
-        const parts = rawCtx.split(/\*{0,2}(?:Hinge Question|Discussion Prompt|Discussion Question):\*{0,2}/i);
-        rawCtx = (parts[0] || '').trim();
-        if (!rawHinge && parts[1]) rawHinge = parts[1].trim();
-      } else if (!rawHinge && tnLookup && /\*{0,2}Hinge Question:\*{0,2}/i.test(tnLookup)) {
-        const parts = String(tnLookup).split(/\*{0,2}Hinge Question:\*{0,2}/i);
-        if (parts[1]) rawHinge = parts[1].trim();
-      }
-      if (rawHinge && promptText && rawHinge.toLowerCase() === String(promptText).trim().toLowerCase()) {
-        rawHinge = '';
-      }
-      const showCtx = Boolean(answerContentHtml && rawCtx);
-      if (!showCtx && !rawHinge) return '';
-      return `
-        <div class="teacher-only-source-crib no-print" style="margin-top: 8px; padding: 9px 13px; background: #fffbeb; border: 1px solid #fde68a; border-left: 3.5px solid #d97706; border-radius: 0 5px 5px 0;">
-          <div style="font-size: 0.72rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.45px; color: #92400e; margin-bottom: 4px; display: flex; align-items: center; gap: 5px;">
-            <i class="fa-solid fa-user-tie" style="color: #d97706;"></i> Teacher Source Crib${rawHinge ? ' &amp; Hinge Question' : ''}
-          </div>
-          ${showCtx ? `<div style="font-size: 0.85rem; color: #334155; line-height: 1.48; margin-bottom: ${rawHinge ? '6px' : '0'};">${fmt(rawCtx)}</div>` : ''}
-          ${rawHinge ? `<div style="font-size: 0.86rem; color: #78350f; font-weight: 700; line-height: 1.42;"><span style="text-transform: uppercase; font-size: 0.72rem; letter-spacing: 0.35px; color: #b45309; margin-right: 4px;">Hinge Question:</span>${fmt(rawHinge)}</div>` : ''}
-        </div>
-      `;
-    })();
+      `
+      : '';
 
     return `
       <details id="source-enquiry-det-${enqIdx}" class="source-enquiry-reveal ${modeCfg.detailsClass}" data-enquiry-idx="${enqIdx}" data-enquiry-mode="${modeCfg.mode}" ontoggle="if(window.syncSourceAnswerToggle){window.syncSourceAnswerToggle(${enqIdx}, this.open);}">
@@ -474,17 +432,17 @@ export function renderLesson(lesson) {
             <span class="source-enquiry-mode-badge" style="font-size: 0.66rem; font-weight: 800; text-transform: uppercase; color: ${modeCfg.badgeText}; background: ${modeCfg.badgeBg}; border: 1px solid ${modeCfg.badgeBorder}; padding: 2px 7px; border-radius: 10px; letter-spacing: 0.45px; flex-shrink: 0; white-space: nowrap;">${dynamicBadge}</span>
             <div class="source-enquiry-prompt" style="font-family: 'Playfair Display', Georgia, serif; font-size: 0.94rem; color: ${modeCfg.promptColor}; font-weight: 700; line-height: 1.38; flex: 1 1 240px; min-width: 0; white-space: normal; word-break: normal; overflow-wrap: break-word;">${fmt(promptText)}</div>
           </div>
-          <span id="ans-btn-${enqIdx}" class="reveal-answer-pill" role="button" aria-expanded="false" data-enquiry-idx="${enqIdx}" data-enquiry-mode="${modeCfg.mode}" data-closed-label="${modeCfg.closedLabel}" data-open-label="${modeCfg.openLabel}" style="flex-shrink: 0;">
+          <span id="ans-btn-${enqIdx}" class="reveal-answer-pill" role="button" aria-expanded="false" data-enquiry-idx="${enqIdx}" data-enquiry-mode="${modeCfg.mode}" data-closed-label="Reveal Answer" data-open-label="Hide Answer" style="flex-shrink: 0;">
             <i class="fa-solid ${modeCfg.iconClass}" style="color: ${modeCfg.accent};"></i>
-            <span class="reveal-text-closed">${modeCfg.closedLabel}</span>
-            <span class="reveal-text-open">${modeCfg.openLabel}</span>
+            <span class="reveal-text-closed">Reveal Answer</span>
+            <span class="reveal-text-open">Hide Answer</span>
           </span>
         </summary>
-        <div class="source-enquiry-answer-body" style="padding: 10px 14px; background: #ffffff; border-top: 1.5px solid ${modeCfg.border};">
-          ${fallbackContextHtml}
-          ${answerContentHtml}
-          ${teacherSourceCribHtml}
-        </div>
+        ${
+          answerBodyHtml
+            ? `<div class="source-enquiry-answer-body" style="padding: 10px 14px; background: #ffffff; border-top: 1.5px solid ${modeCfg.border};">${answerBodyHtml}</div>`
+            : ''
+        }
       </details>
     `;
   };
@@ -726,8 +684,7 @@ export function renderLesson(lesson) {
         (gr) => gr.lesson_index === currentIndex || (lesson && gr.lesson_id === lesson.id),
       );
 
-  const isTeacherActive =
-    typeof document !== 'undefined' && document.body.classList.contains('teacher-mode-active');
+  const isTeacherActive = isStaffModeActive();
   const isWbActive =
     typeof document !== 'undefined' && document.body.classList.contains('whiteboard-mode-active');
   const hasActiveTool = isTeacherActive || isWbActive;
@@ -799,7 +756,6 @@ export function renderLesson(lesson) {
                       isStaffModeActive()
                         ? `
                     <button type="button" class="btn btn-ks2-teacher-launcher" onclick="window.openKs2TeacherGuidanceModal('${lesson.id}', ${currentIndex})" style="padding: 6px 12px; font-size: 0.88rem; background: #fdf2f8; color: #9d174d; border: 1.5px solid #fbcfe8; font-weight: 700; border-radius: 6px; box-shadow: 0 1px 3px rgba(157, 23, 77, 0.1); display: inline-flex; align-items: center; gap: 6px; cursor: pointer;" title="Staff Only: Walk-In Primary Teacher Guidance & Model Answers"><i class="fa-solid fa-chalkboard-user" style="color: #be185d;"></i> <span>Teacher Guidance</span></button>
-                    <button type="button" class="btn btn-ks2-teacher-mode btn-teacher-mode-toggle ${typeof document !== 'undefined' && document.body.classList.contains('teacher-mode-active') ? 'active' : ''}" onclick="window.toggleTeacherMode()" style="padding: 6px 12px; font-size: 0.88rem; background: #f5f3ff; color: #5b21b6; border: 1.5px solid #ddd6fe; font-weight: 700; border-radius: 6px; box-shadow: 0 1px 3px rgba(91, 33, 182, 0.1); display: inline-flex; align-items: center; gap: 6px; cursor: pointer;" title="Staff Only: Reveal all Do Now, Source, Writing & Quiz answers on this page"><i class="fa-solid ${typeof document !== 'undefined' && document.body.classList.contains('teacher-mode-active') ? 'fa-eye-slash' : 'fa-eye'}" style="color: #7c3aed;"></i> <span class="teacher-btn-label">${typeof document !== 'undefined' && document.body.classList.contains('teacher-mode-active') ? 'Teacher Mode: Answers ON' : 'Teacher Mode: Reveal Answers'}</span></button>
                     `
                         : ''
                     }
@@ -817,7 +773,7 @@ export function renderLesson(lesson) {
         : ''
       }
               <button type="button" class="btn btn-lesson-arcade-launcher" onclick="window.launchUnitArcade && window.launchUnitArcade('${unitId}', ${currentIndex}, 'lobby')" style="padding: 6px 12px; font-size: 0.86rem; background: #0f172a; color: #38bdf8; border: 1.5px solid #334155; font-weight: 700; border-radius: 6px; display: inline-flex; align-items: center; gap: 6px; cursor: pointer;" title="Launch the 7-Game Revision Arcade for this lesson"><i class="fa-solid fa-gamepad" style="color: #38bdf8;"></i> <span>Arcade</span></button>
-              <button type="button" class="btn teacher-only-plenary-btn" onclick="window.openTeacherPlenaryProjector && window.openTeacherPlenaryProjector('${lesson.id}')" style="display: ${typeof document !== 'undefined' && document.body.classList.contains('teacher-mode-active') ? 'inline-flex' : 'none'}; padding: 6px 12px; font-size: 0.86rem; background: #ea580c; color: #ffffff; border: 1.5px solid #f97316; font-weight: 800; border-radius: 6px; align-items: center; gap: 6px; cursor: pointer;" title="Open Full-Screen Smartboard Plenary Projector (Hot Seat Taboo, 60s Standoff, Four Corners)"><i class="fa-solid fa-tv"></i> <span>Plenary Projector</span></button>
+              <button type="button" class="btn teacher-only-plenary-btn" onclick="window.openTeacherPlenaryProjector && window.openTeacherPlenaryProjector('${lesson.id}')" style="display: ${isStaffModeActive() ? 'inline-flex' : 'none'}; padding: 6px 12px; font-size: 0.86rem; background: #ea580c; color: #ffffff; border: 1.5px solid #f97316; font-weight: 800; border-radius: 6px; align-items: center; gap: 6px; cursor: pointer;" title="Open Full-Screen Smartboard Plenary Projector (Hot Seat Taboo, 60s Standoff, Four Corners)"><i class="fa-solid fa-tv"></i> <span>Plenary Projector</span></button>
 
             `
     }
@@ -912,19 +868,15 @@ export function renderLesson(lesson) {
     const specPaperBadge =
       unitId === 'edexcel_medicine'
         ? 'Edexcel Paper 1'
-        : unitId === 'cme_new'
+        : unitId === 'cme_new' || unitId === 'gcse_cold_war' || unitId === 'eee'
           ? 'Edexcel Paper 2'
-          : unitId === 'eee'
-            ? 'Edexcel Paper 2'
-            : unitId === 'weimar_nazi_germany'
-                ? 'Edexcel Paper 3'
-                : unitId === 'usa'
-                  ? 'Edexcel Paper 3'
-                  : isKs3
-                    ? 'Key Stage 3'
-                    : isKs2
-                      ? 'Key Stage 2'
-                      : 'Edexcel GCSE';
+          : unitId === 'weimar_nazi_germany' || unitId === 'usa'
+            ? 'Edexcel Paper 3'
+            : isKs3
+              ? 'Key Stage 3'
+              : isKs2
+                ? 'Key Stage 2'
+                : 'Edexcel GCSE';
 
     const safeSpec = encodeURIComponent(lesson.specification_anchor);
     const safeTitle = encodeURIComponent(cleanLessonHeading);
@@ -933,7 +885,7 @@ export function renderLesson(lesson) {
       <button type="button"
         class="spec-anchor-btn"
         onclick="window.showLessonSpecModal('${safeSpec}', '${specPaperBadge}', '${safeTitle}')"
-        style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(148, 163, 184, 0.45); color: #93c5fd; padding: 4px 12px; border-radius: 6px; font-family: 'Inter', sans-serif; font-size: 0.74rem; font-weight: 700; letter-spacing: 0.4px; display: inline-flex; align-items: center; gap: 6px; backdrop-filter: blur(6px); cursor: pointer; transition: all 0.2s;"
+        style="pointer-events: auto; background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(148, 163, 184, 0.45); color: #93c5fd; padding: 4px 12px; border-radius: 6px; font-family: 'Inter', sans-serif; font-size: 0.74rem; font-weight: 700; letter-spacing: 0.4px; display: inline-flex; align-items: center; gap: 6px; backdrop-filter: blur(6px); cursor: pointer; transition: all 0.2s;"
         onmouseover="this.style.background='rgba(30, 41, 59, 0.9)'; this.style.borderColor='#60a5fa'; this.style.color='#bfdbfe';"
         onmouseout="this.style.background='rgba(15, 23, 42, 0.75)'; this.style.borderColor='rgba(148, 163, 184, 0.45)'; this.style.color='#93c5fd';"
         title="Click to view official syllabus specification anchor">
@@ -959,27 +911,28 @@ export function renderLesson(lesson) {
     ? `position: relative; width: 100%; margin-left: 0; margin-top: 0.25rem; height: ${heroBannerHeight}; background: #0f172a url('${resolvedHeroImage}') ${bannerPosition}/cover no-repeat; margin-bottom: 0.6rem; border-radius: 12px; overflow: hidden; border: 1px solid rgba(15,23,42,0.12); box-shadow: 0 6px 18px rgba(15,23,42,0.12);`
     : `position: relative; width: 100%; margin-left: 0; margin-right: 0; margin-top: 0.25rem; height: ${heroBannerHeight}; background: #0f172a url('${resolvedHeroImage}') ${bannerPosition}/cover no-repeat; margin-bottom: 0.5rem; border-radius: 10px; overflow: hidden; border: 1px solid rgba(15,23,42,0.14); box-shadow: 0 4px 16px rgba(0,0,0,0.08);`;
   const heroOverlayStyle = isKs2
-    ? `position: absolute; inset: 0; background: linear-gradient(90deg, rgba(15,23,42,0.86) 0%, rgba(15,23,42,0.46) 54%, rgba(15,23,42,0.08) 100%), linear-gradient(to top, rgba(15,23,42,0.82) 0%, rgba(15,23,42,0.16) 52%, rgba(15,23,42,0.02) 100%);`
-    : `position: absolute; inset: 0; background: linear-gradient(90deg, rgba(15,23,42,0.88) 0%, rgba(15,23,42,0.48) 54%, rgba(15,23,42,0.08) 100%), linear-gradient(to top, rgba(15,23,42,0.84) 0%, rgba(15,23,42,0.18) 52%, rgba(15,23,42,0.02) 100%);`;
-  const heroContentPadding = isKs2 ? '0.9rem 1.75rem' : '0.72rem 1.5rem';
+    ? `position: absolute; inset: 0; background: linear-gradient(90deg, rgba(15,23,42,0.86) 0%, rgba(15,23,42,0.46) 54%, rgba(15,23,42,0.08) 100%), linear-gradient(to top, rgba(15,23,42,0.78) 0%, rgba(15,23,42,0.18) 55%, rgba(15,23,42,0.04) 100%);`
+    : `position: absolute; inset: 0; background: linear-gradient(90deg, rgba(15,23,42,0.88) 0%, rgba(15,23,42,0.48) 54%, rgba(15,23,42,0.08) 100%), linear-gradient(to top, rgba(15,23,42,0.80) 0%, rgba(15,23,42,0.20) 55%, rgba(15,23,42,0.04) 100%);`;
+  const heroContentPadding = isKs2 ? '1rem 1.75rem' : '0.9rem 1.5rem';
 
+  const safeCameoAlt = String((iconicVisuals && iconicVisuals.cameoAlt) || cleanLessonHeading).replace(/"/g, '&quot;');
   const heroCameoHtml = hasHeroCameo
     ? `
-      <div class="lesson-hero-cameo" title="${String(iconicVisuals.cameoAlt || cleanLessonHeading).replace(/"/g, '&quot;')}">
-        <img src="${cameoImageUrl}" alt="${String(iconicVisuals.cameoAlt || cleanLessonHeading).replace(/"/g, '&quot;')}" decoding="async" />
+      <div class="lesson-hero-cameo" data-action="open-modal" data-src="${cameoImageUrl}" data-cameo-clue="${safeCameoAlt}" title="${safeCameoAlt} (Click to zoom)" role="button" tabindex="0">
+        <img src="${cameoImageUrl}" alt="${safeCameoAlt}" data-action="open-modal" data-src="${cameoImageUrl}" decoding="async" />
       </div>
     `
     : '';
 
   html += `
-      <div class="lesson-hero${heroExtraClass}${hasHeroCameo ? ' has-hero-cameo' : ''}" style="${heroContainerStyle}">
+      <div class="lesson-hero${heroExtraClass}${isKs2 ? ' ks2-hero' : ''}${hasHeroCameo ? ' has-hero-cameo' : ''}" style="${heroContainerStyle}">
         <div style="${heroOverlayStyle}"></div>
-        <div class="lesson-hero-content" style="position: absolute; bottom: 0; left: 0; width: 100%; padding: ${heroContentPadding}; box-sizing: border-box;">
-          <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px; margin-bottom: 1px;">
+        <div class="lesson-hero-content" style="position: absolute; inset: 0; z-index: 4; display: flex; flex-direction: column; justify-content: center; gap: 3px; width: 100%; padding: ${heroContentPadding}; box-sizing: border-box; pointer-events: none;">
+          <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px; margin-bottom: 2px;">
             <span style="color: #e2e8f0; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; font-size: 0.76rem; text-shadow: 0 1px 3px rgba(0,0,0,0.8);">${heroEyebrow}</span>
             ${specPillHtml}
           </div>
-          <h2 style="font-family: 'Playfair Display', serif; color: white; font-size: 1.55rem; margin: 0.15rem 0 0 0; line-height: 1.18; text-shadow: 0 2px 8px rgba(0,0,0,0.75);">${cleanLessonHeading}</h2>
+          <h2 style="font-family: 'Playfair Display', serif; color: white; font-size: 1.55rem; margin: 0.1rem 0 0 0; line-height: 1.2; text-shadow: 0 2px 8px rgba(0,0,0,0.75);">${cleanLessonHeading}</h2>
           ${enquirySubtitle}
         </div>
         ${heroCameoHtml}
@@ -1034,11 +987,11 @@ export function renderLesson(lesson) {
 
     const hasDeliveryCards = Boolean(dp && (dp.lesson_1 || dp.lesson_2));
     html += `
-      <details class="teacher-only-guidance-drawer no-print" style="margin: 0 0 10px 0; border: 1.5px solid #f59e0b; border-radius: 8px; background: #fffbeb; overflow: hidden; box-shadow: 0 2px 6px rgba(217, 119, 6, 0.08);">
+      <details class="teacher-only-guidance-drawer no-print" style="display: ${isStaffModeActive() ? 'block' : 'none'}; margin: 0 0 10px 0; border: 1.5px solid #f59e0b; border-radius: 8px; background: #fffbeb; overflow: hidden; box-shadow: 0 2px 6px rgba(217, 119, 6, 0.08);">
         <summary style="padding: 7px 14px; cursor: pointer; display: flex; align-items: center; justify-content: space-between; gap: 10px; list-style: none; user-select: none; background: linear-gradient(90deg, #fef3c7 0%, #fffbeb 100%);">
           <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
             <span style="background: #1b365d; color: #facc15; font-size: 0.7rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px; padding: 2px 8px; border-radius: 4px; display: inline-flex; align-items: center; gap: 5px;">
-              <i class="fa-solid fa-user-tie"></i> Teacher Mode
+              <i class="fa-solid fa-user-tie"></i> Staff Briefing
             </span>
             <span style="font-size: 0.86rem; font-weight: 800; color: #78350f;">
               Lesson Briefing${hasDeliveryCards ? ' &amp; 2-Lesson Delivery Plan' : ''}
@@ -1221,76 +1174,39 @@ export function renderLesson(lesson) {
               </div>
             </summary>
             <div class="eee-source-content" style="padding: 10px 14px; background: #ffffff; border-top: 1px solid #e2e8f0;">
-              ${sourceImgUrl
-            ? (() => {
-              const disc = getArchivalSourceDiscussionComponents(
-                hingeText,
-                source,
-                isKs2,
-                '10px',
-              );
-              return `
-                <div class="archival-source-split-layout">
-                  <div class="archival-source-media-col${isKs2 ? ' ks2-source-media-col' : ''}">
-                    <div style="position: relative; width: 100%; display: flex; justify-content: center;">
-                      <img src="${sourceImgUrl}" alt="${displayTitle}" data-action="open-modal" data-src="${sourceImgUrl}" style="cursor: zoom-in; width: auto; max-width: 100%; max-height: ${isKs2 ? '380px' : '350px'}; object-fit: contain; display: block; border-radius: 6px;">
-                    </div>
-                    ${sourceSpotlightBtn}
-                    ${!isKs2 && citationText
-                  ? `<div class="archival-media-provenance" style="margin-top: 10px; border-top: 1px solid rgba(255,255,255,0.14); padding-top: 8px; font-size: 0.74rem; line-height: 1.35; color: #94a3b8; text-align: left;">
-                            <strong style="color: #cbd5e1;">Provenance:</strong> ${citationText}
-                          </div>`
-                  : ''
-                }
-                  </div>
-                  <div class="archival-source-details-col" style="display: flex; flex-direction: column; justify-content: flex-start; gap: 10px;">
-                    <div>
-                      ${(() => {
-                        const cap = source.caption || (source.title ? source.title.replace(/^Source\s+[A-Z0-9]+[:\s-]*/i, '').trim() : '') || source.attribution || '';
-                        return cap ? `<div style="font-size: 0.95rem; color: #475569; margin-bottom: 12px; font-style: italic; line-height: 1.5;">${cap}</div>` : '';
-                      })()}
-                      ${sourceText
-                  ? renderArchivalSourceBody(sourceText, source, { maxHeight: '250px', fontSize: '0.95rem', lineHeight: '1.6', padding: '10px 14px', marginBottom: '12px', accentColor: '#1e3a8a' })
-                  : ''
-                }
-                      ${contextText
+              ${(() => {
+                const provStr = String(citationText || contextText || displayTitle || '').trim();
+                const shortProv = (provStr.match(/[^.!?]+[.!?]+(?:\s+[^.!?]+[.!?]+)?/) || [provStr])[0].trim();
+                return shortProv
+                  ? `<div class="source-top-provenance-strip" style="background: #f8fafc; border: 1px solid #e2e8f0; border-left: 3.5px solid #1e40af; border-radius: 5px; padding: 7px 12px; margin-bottom: 10px; font-size: 0.86rem; color: #334155; line-height: 1.45;"><strong style="color: #0f172a;">${sLetter ? `Source ${sLetter}: ` : 'Provenance: '}</strong>${typeof window !== 'undefined' && window.formatBold ? window.formatBold(shortProv) : shortProv}</div>`
+                  : '';
+              })()}
+              ${
+                sourceImgUrl
                   ? `
-                        <div style="background: #f8fafc; border-left: 4px solid #64748b; padding: 12px 16px; border-radius: 0 4px 4px 0; margin-bottom: 12px; color: #334155; font-size: 0.98rem; line-height: 1.6;">
-                          <strong>${isKs2 ? 'What this tells us:' : 'Historical Context:'}</strong> ${typeof window !== 'undefined' && window.formatBold ? window.formatBold(contextText) : contextText}
-                        </div>
-                      `
-                  : ''
-                }
-                      ${disc.promptHtml}
-                    </div>
-                    ${sourceEnquiryHtml
-                  ? `<div class="archival-source-inline-enquiry" style="width: 100%; margin-top: 6px;">${sourceEnquiryHtml}</div>`
-                  : ''
-                }
+                <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 7px; padding: 10px; text-align: center;">
+                  <div style="position: relative; width: 100%; display: flex; justify-content: center;">
+                    <img src="${sourceImgUrl}" alt="${displayTitle}" data-action="open-modal" data-src="${sourceImgUrl}" class="archival-image" style="cursor: zoom-in; width: auto; max-width: 100%; max-height: ${isKs2 ? '360px' : '350px'}; object-fit: contain; display: block; border-radius: 6px;">
                   </div>
+                  ${sourceSpotlightBtn ? `<div style="display: flex; justify-content: center; margin-top: 8px;">${sourceSpotlightBtn}</div>` : ''}
                 </div>
-                ${disc.panelHtml}
-              `;
-            })()
-            : `
-                <div>
-                  ${sourceText
-              ? renderArchivalSourceBody(sourceText, source, { maxHeight: '350px', marginBottom: '4px', accentColor: '#1e3a8a' })
-              : ''
-            }
-                  ${!isKs2 && citationText && citationText.trim().toLowerCase() !== displayTitle.trim().toLowerCase()
-              ? `<div class="archival-citation-footer" style="font-size: 0.76rem; color: #64748b; font-style: italic; text-align: right; margin-top: 3px; margin-bottom: 6px; padding-top: 0; line-height: 1.35;">
-                          &mdash; <span style="font-style: normal; font-weight: 600; color: #475569;">Provenance:</span> ${citationText}
-                        </div>`
-              : ''
-            }
-                  ${!sourceEnquiryHtml
-              ? renderArchivalSourceDiscussionBox(hingeText, source, isKs2, '8px')
-              : `<div class="archival-source-fullwidth-enquiry" style="width: 100%; margin-top: 6px;">${sourceEnquiryHtml}</div>`
-            }
-                </div>
+                ${
+                  sourceText
+                    ? `<div style="margin-top: 8px;">${renderArchivalSourceBody(sourceText, source, { maxHeight: '240px', fontSize: '0.94rem', lineHeight: '1.6', padding: '10px 14px', marginBottom: '4px', accentColor: '#1e3a8a' })}</div>`
+                    : ''
+                }
               `
-          }
+                  : sourceText
+                    ? renderArchivalSourceBody(sourceText, source, { maxHeight: '350px', marginBottom: '4px', accentColor: '#1e3a8a' })
+                    : ''
+              }
+              ${
+                sourceEnquiryHtml
+                  ? `<div class="archival-source-fullwidth-enquiry" style="width: 100%; margin-top: 10px;">${sourceEnquiryHtml}</div>`
+                  : hingeText
+                    ? `<div class="archival-source-fullwidth-enquiry" style="width: 100%; margin-top: 10px;">${renderSourceEnquiryBox({ srcObj: source, promptText: hingeText, contextVal: contextText })}</div>`
+                    : ''
+              }
             </div>
           </details>
         `;
@@ -1785,7 +1701,7 @@ export function renderLesson(lesson) {
         <div class="vocab-panel-content">
             <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; padding-bottom: 8px; border-bottom: 1px solid #e2e8f0; flex-wrap: wrap; gap: 8px;">
               <span style="font-weight: 800; font-size: 0.95rem; color: #b45309; display: flex; align-items: center; gap: 8px;">
-                <i class="fa-solid fa-spell-check" style="color: #b45309;"></i> Key Vocabulary Mastery &bull; Match &amp; Cognitive Drill
+                <i class="fa-solid fa-spell-check" style="color: #b45309;"></i> Key Vocabulary Mastery &bull; Tap-to-Match
               </span>
             </div>
             <div style="padding: 4px 0;">
@@ -1828,241 +1744,6 @@ export function renderLesson(lesson) {
               <div id="unlock-success" style="display: none; margin-top: 20px; padding: 15px; background: #ecfdf5; border: 2px solid #10b981; border-radius: 8px; color: #047857; font-weight: bold; text-align: center; font-size: 1.2rem;">
                 <i class="fa-solid fa-star"></i> Vocabulary Mastered!
               </div>
-    `;
-
-    // Rotating cognitive vocabulary challenge widget
-    let currentLessonIdx = typeof currentIndex === 'number' && currentIndex >= 0 ? currentIndex : 0;
-    if (currentLessonIdx === 0 && activeUnit && Array.isArray(activeUnit.lessons)) {
-      const foundIdx = activeUnit.lessons.findIndex((l) =>
-        l.id && lesson.id ? l.id === lesson.id : l.title === lesson.title,
-      );
-      if (foundIdx >= 0) currentLessonIdx = foundIdx;
-    }
-    const currentUnitId =
-      (appStore && appStore.state && appStore.state.currentUnitId) || window.currentUnitId || '';
-    const pageAnchor = getWorkbookPageAnchor(currentUnitId, lesson, currentLessonIdx);
-    const vocabStyle = currentLessonIdx % 4;
-    const vocabTermsList = lesson.vocab.map((v) => (v.term || '').trim()).filter(Boolean);
-
-    const wbAnchorBadge = pageAnchor
-      ? `<span class="wb-page-pill" style="font-size: 0.8rem; font-weight: 700; color: #0369a1; background: #e0f2fe; border: 1px solid #bae6fd; padding: 3px 8px; border-radius: 6px; display: inline-flex; align-items: center; gap: 5px;" title="Corresponding page in printed pupil workbook"><i class="fa-solid fa-book-open"></i> ${pageAnchor.booklet && pageAnchor.booklet !== 'Workbook' ? pageAnchor.label : 'Workbook ' + pageAnchor.label}</span>`
-      : '';
-
-    const wbDrillBtnHtml = `
-      <div style="display: flex; align-items: center; gap: 8px;">
-        ${wbAnchorBadge}
-        <button type="button" class="btn btn-secondary" data-action="open-vocab-whiteboard" style="font-size: 0.82rem; padding: 4px 10px; background: #eff6ff; color: #1e40af; border: 1.5px solid #bfdbfe; border-radius: 6px; cursor: pointer; font-weight: 600; display: inline-flex; align-items: center; gap: 5px; transition: all 0.15s ease;" title="Project this vocabulary challenge on the classroom smartboard">
-          <i class="fa-solid fa-chalkboard-user"></i> Starter Drill
-        </button>
-      </div>
-    `;
-
-    if (vocabStyle === 0) {
-      // Style 0: The Odd One Out
-      const oddExemplars = getOddOneOutExemplars(lesson, vocabTermsList, isKs2);
-      const oddBtnShowLbl = isKs2 ? 'Show Partner Clues' : 'Show Model Debates';
-      const oddBtnHideLbl = isKs2 ? 'Hide Partner Clues' : 'Hide Model Debates';
-      const oddBoxHeading = isKs2
-        ? 'Partner Discussion Ideas (Real Objects, People &amp; Big Ideas):'
-        : 'High-Tariff Discussion Exemplars:';
-      const oddBoxPill = isKs2 ? 'Partner Talk Guide' : 'Teacher Debrief Guide';
-      htmlVocabInner += `
-        <div id="vocab-cognitive-challenge" style="margin-top: 25px; padding-top: 20px; border-top: 1px dashed #cbd5e1;">
-          <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px; flex-wrap: wrap; gap: 8px;">
-            <div style="display: flex; align-items: center; gap: 8px;">
-              <span style="font-weight: 700; color: #1e3a8a; font-size: 1.05rem;">
-                <i class="fa-solid fa-shapes" style="color: #3b82f6; margin-right: 6px;"></i> Vocabulary Challenge: The Odd One Out
-              </span>
-              <span style="font-size: 0.8rem; background: #e0f2fe; color: #0369a1; padding: 2px 8px; border-radius: 12px; font-weight: 600;">${isKs2 ? 'Grouping Historical Clues' : 'Conceptual Categorisation'}</span>
-            </div>
-            ${wbDrillBtnHtml}
-          </div>
-          <p style="color: #475569; font-size: 0.95rem; margin-bottom: 12px; line-height: 1.5;">
-            Click <strong>ONE</strong> term that does not belong with the others.<br>
-            <strong>Explain your reasoning:</strong> What historical connection links the other terms, and why is your chosen term different?
-          </p>
-          <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 15px;">
-            ${vocabTermsList
-          .map(
-            (t) =>
-              `<button type="button" class="btn btn-secondary odd-term-btn" onclick="document.querySelectorAll('.odd-term-btn').forEach(b=>{b.style.borderColor='#cbd5e1'; b.style.backgroundColor='#ffffff';}); this.style.borderColor='#2563eb'; this.style.backgroundColor='#eff6ff'; document.getElementById('odd-choice').value='${t.replace(/'/g, "\\'")}'; document.getElementById('odd-reasoning-box').style.display='block';" style="padding: 6px 14px; font-size: 0.9rem; border-radius: 20px; border: 2px solid #cbd5e1; font-weight: 600; cursor: pointer; transition: all 0.2s; background: #ffffff; color: #1e293b;">${t}</button>`,
-          )
-          .join('')}
-          </div>
-          <input type="hidden" id="odd-choice" value="">
-          <div id="odd-reasoning-box" style="display: none; margin-top: 10px;">
-            <textarea placeholder="Explain your historical reasoning: Why is your chosen word the 'Odd One Out' compared to the others?" style="width: 100%; min-height: 70px; padding: 10px; border-radius: 6px; border: 1.5px solid #94a3b8; font-family: inherit; font-size: 0.95rem; box-sizing: border-box;"></textarea>
-            <div style="margin-top: 8px; display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
-              <button type="button" class="btn btn-primary" onclick="this.parentElement.nextElementSibling.style.display='block'; this.style.display='none';" style="font-size: 0.9rem; padding: 6px 14px; background: #1e40af; color: white; border: none; border-radius: 6px; cursor: pointer;">
-                <i class="fa-solid fa-check"></i> Submit Justification
-              </button>
-              <button type="button" class="btn btn-secondary" onclick="const box = document.getElementById('odd-model-box'); const isVis = box.style.display === 'block'; box.style.display = isVis ? 'none' : 'block'; this.innerHTML = isVis ? '<i class=\\'fa-solid fa-eye\\'></i> ${oddBtnShowLbl}' : '<i class=\\'fa-solid fa-eye-slash\\'></i> ${oddBtnHideLbl}';" style="font-size: 0.9rem; padding: 6px 14px; background: #ffffff; color: #92400e; border: 1.5px solid #fde68a; border-radius: 6px; cursor: pointer; font-weight: 600; transition: all 0.2s;">
-                <i class="fa-solid fa-eye"></i> ${oddBtnShowLbl}
-              </button>
-            </div>
-            <div style="display: none; margin-top: 10px; padding: 12px; background: #f0fdf4; border: 1.5px solid #86efac; border-radius: 6px; color: #166534; font-size: 0.95rem;">
-              <strong>Historical Reflection:</strong> Compare your chosen word and reasoning with a partner! Can they challenge your historical link or offer an alternative Odd One Out?
-            </div>
-            <div id="odd-model-box" style="display: none; margin-top: 10px; padding: 14px 16px; background: #fefce8; border: 1.5px solid #facc15; border-radius: 8px; color: #713f12; font-size: 0.95rem; line-height: 1.6; box-shadow: 0 2px 8px rgba(234, 179, 8, 0.15);">
-              <div style="font-weight: 700; margin-bottom: 8px; display: flex; align-items: center; justify-content: space-between; color: #854d0e;">
-                <span><i class="fa-solid fa-star" style="color: #eab308;"></i> ${oddBoxHeading}</span>
-                <span style="font-size: 0.75rem; background: #fef08a; padding: 2px 8px; border-radius: 10px; text-transform: uppercase;">${oddBoxPill}</span>
-              </div>
-              <div style="display: flex; flex-direction: column; gap: 8px;">
-                ${oddExemplars
-          .map(
-            (ex, idx) => `
-                  <div style="background: #ffffff; border: 1px solid #fde047; border-radius: 6px; padding: 10px 14px;">
-                    <div style="font-size: 0.8rem; font-weight: 800; color: #b45309; text-transform: uppercase;">
-                      ${isKs2 ? `Idea ${idx + 1}` : `Option ${String.fromCharCode(65 + idx)}`}: ${ex.title || 'Historical Link'}
-                    </div>
-                    <div style="font-size: 0.92rem; color: #1e293b; margin: 3px 0;">
-                      <strong>${isKs2 ? 'Words:' : 'Trio:'}</strong> ${Array.isArray(ex.trio) ? ex.trio.join(', ') : ex.trio} · <strong>Odd One Out:</strong> <span style="color: #b91c1c; font-weight: 700; background: #fee2e2; padding: 1px 6px; border-radius: 4px;">${ex.odd}</span>
-                    </div>
-                    <div style="font-size: 0.88rem; color: #334155;">
-                      <strong>Why:</strong> ${ex.reason}
-                    </div>
-                  </div>
-                `,
-          )
-          .join('')}
-              </div>
-            </div>
-          </div>
-        </div>
-      `;
-    } else if (vocabStyle === 1) {
-      // Style 1: The Golden Sentence (Connect Two)
-      const goldenExemplar = getGoldenSentenceExemplar(lesson, vocabTermsList);
-      htmlVocabInner += `
-        <div id="vocab-cognitive-challenge" style="margin-top: 25px; padding-top: 20px; border-top: 1px dashed #cbd5e1;">
-          <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px; flex-wrap: wrap; gap: 8px;">
-            <div style="display: flex; align-items: center; gap: 8px;">
-              <span style="font-weight: 700; color: #1e3a8a; font-size: 1.05rem;">
-                <i class="fa-solid fa-pen-fancy" style="color: #3b82f6; margin-right: 6px;"></i> Vocabulary Challenge: The Golden Sentence
-              </span>
-              <span style="font-size: 0.8rem; background: #fef3c7; color: #92400e; padding: 2px 8px; border-radius: 12px; font-weight: 600;">${isKs2 ? 'Connecting Clues' : 'Syntactic Precision'}</span>
-            </div>
-            ${wbDrillBtnHtml}
-          </div>
-          <p style="color: #475569; font-size: 0.95rem; margin-bottom: 12px;">
-            Choose <strong>TWO</strong> terms from the word bank below. Write <strong>ONE</strong> ${isKs2 ? 'clear historical sentence connecting them using a joining word (<strong>because</strong>, <strong>although</strong>, or <strong>so that</strong>):' : 'single, grammatically sophisticated historical sentence connecting them using a causal conjunction (<strong>because</strong>, <strong>although</strong>, or <strong>consequently</strong>):'}
-          </p>
-          <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; background: #f8fafc; padding: 10px; border-radius: 6px; border: 1px solid #e2e8f0;">
-            ${vocabTermsList
-          .map(
-            (t) =>
-              `<span style="background: #ffffff; border: 1px solid #cbd5e1; padding: 4px 10px; border-radius: 12px; font-size: 0.85rem; font-weight: 600; color: #1e293b;">${t}</span>`,
-          )
-          .join('')}
-          </div>
-          <textarea id="golden-sentence-input" placeholder="${isKs2 ? 'Write your Golden Sentence here using because, although, or so that...' : 'Write your Golden Sentence here using because, although, or consequently...'}" style="width: 100%; min-height: 70px; padding: 10px; border-radius: 6px; border: 1.5px solid #94a3b8; font-family: inherit; font-size: 0.95rem; box-sizing: border-box;"></textarea>
-          <div style="margin-top: 8px; display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
-            <button type="button" class="btn btn-primary" onclick="const val = (document.getElementById('golden-sentence-input').value || '').toLowerCase(); const feedback = document.getElementById('golden-feedback'); feedback.style.display='block'; if (val.includes('because') || val.includes('although') || val.includes('consequently') || val.includes('so that')) { feedback.style.background='#f0fdf4'; feedback.style.borderColor='#86efac'; feedback.style.color='#166534'; feedback.innerHTML='<strong>Great Historian Sentence!</strong> You connected two key ideas clearly using a strong joining word.'; } else { feedback.style.background='#fffbeb'; feedback.style.borderColor='#fde68a'; feedback.style.color='#92400e'; feedback.innerHTML='<strong>Tip:</strong> Include one of the joining words — <em>because</em>, <em>although</em>, or <em>${isKs2 ? 'so that' : 'consequently'}</em> — to show how your two words link together.'; }" style="font-size: 0.9rem; padding: 6px 14px; background: #1e40af; color: white; border: none; border-radius: 6px; cursor: pointer;">
-              <i class="fa-solid fa-sparkles"></i> Check Sentence
-            </button>
-            <button type="button" class="btn btn-secondary" onclick="const box = document.getElementById('golden-model-box'); const isVis = box.style.display === 'block'; box.style.display = isVis ? 'none' : 'block'; this.innerHTML = isVis ? '<i class=\\'fa-solid fa-eye\\'></i> Show Model Sentence' : '<i class=\\'fa-solid fa-eye-slash\\'></i> Hide Model Sentence';" style="font-size: 0.9rem; padding: 6px 14px; background: #ffffff; color: #92400e; border: 1.5px solid #fde68a; border-radius: 6px; cursor: pointer; font-weight: 600; transition: all 0.2s;">
-              <i class="fa-solid fa-eye"></i> Show Model Sentence
-            </button>
-          </div>
-          <div id="golden-feedback" style="display: none; margin-top: 10px; padding: 12px; border: 1.5px solid #cbd5e1; border-radius: 6px; font-size: 0.95rem;"></div>
-          <div id="golden-model-box" style="display: none; margin-top: 10px; padding: 14px 16px; background: #fefce8; border: 1.5px solid #facc15; border-radius: 6px; color: #713f12; font-size: 0.95rem; line-height: 1.6; box-shadow: 0 2px 6px rgba(234, 179, 8, 0.15);">
-            <div style="font-weight: 700; margin-bottom: 4px; display: flex; align-items: gap: 6px; color: #854d0e;">
-              <i class="fa-solid fa-star" style="color: #eab308;"></i> Model Golden Sentence:
-            </div>
-            <div style="font-style: italic; font-family: 'Playfair Display', Georgia, serif; font-size: 1.05rem; color: #1e293b;">
-              "${goldenExemplar}"
-            </div>
-            <div style="margin-top: 6px; font-size: 0.82rem; color: #a16207;">
-              <strong>Teacher Note:</strong> ${isKs2 ? 'Shows pupils how to join two historical key terms in one clear sentence.' : 'Demonstrates syntactic embedding of two curriculum terms connected by a causal conjunction.'}
-            </div>
-          </div>
-        </div>
-      `;
-    } else if (vocabStyle === 2) {
-      // Style 2: Conceptual Binary Sort
-      const sortCat1Title = isKs2 ? 'War, Rules &amp; Leaders' : 'Power, Governance & Warfare';
-      const sortCat2Title = isKs2 ? 'Everyday Life &amp; Safety' : 'Economy, Trade & Society';
-      htmlVocabInner += `
-        <div id="vocab-cognitive-challenge" style="margin-top: 25px; padding-top: 20px; border-top: 1px dashed #cbd5e1;">
-          <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px; flex-wrap: wrap; gap: 8px;">
-            <div style="display: flex; align-items: center; gap: 8px;">
-              <span style="font-weight: 700; color: #1e3a8a; font-size: 1.05rem;">
-                <i class="fa-solid fa-layer-group" style="color: #3b82f6; margin-right: 6px;"></i> Vocabulary Challenge: ${isKs2 ? 'Sort the Key Words' : 'Conceptual Classification'}
-              </span>
-              <span style="font-size: 0.8rem; background: #dcfce7; color: #166534; padding: 2px 8px; border-radius: 12px; font-weight: 600;">${isKs2 ? 'Two-Group Sort' : 'Conceptual Sorting'}</span>
-            </div>
-            ${wbDrillBtnHtml}
-          </div>
-          <p style="color: #475569; font-size: 0.95rem; margin-bottom: 12px;">
-            Click on each term below to sort it into <strong>${sortCat1Title}</strong> or <strong>${sortCat2Title}</strong>:
-          </p>
-          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 10px;">
-            <div id="sort-cat-power" style="background: #eff6ff; border: 1.5px solid #bfdbfe; border-radius: 8px; padding: 12px; min-height: 120px;">
-              <div style="font-weight: bold; color: #1e3a8a; font-size: 0.95rem; border-bottom: 1.5px solid #bfdbfe; padding-bottom: 6px; margin-bottom: 10px; text-align: center;">
-                ${sortCat1Title}
-              </div>
-              <div class="sort-bucket-items" style="display: flex; flex-direction: column; gap: 6px;"></div>
-            </div>
-            <div id="sort-cat-economy" style="background: #f0fdf4; border: 1.5px solid #bbf7d0; border-radius: 8px; padding: 12px; min-height: 120px;">
-              <div style="font-weight: bold; color: #166534; font-size: 0.95rem; border-bottom: 1.5px solid #bbf7d0; padding-bottom: 6px; margin-bottom: 10px; text-align: center;">
-                ${sortCat2Title}
-              </div>
-              <div class="sort-bucket-items" style="display: flex; flex-direction: column; gap: 6px;"></div>
-            </div>
-          </div>
-          <div id="sort-token-container" style="margin-top: 12px; display: flex; flex-wrap: wrap; gap: 8px;">
-            ${vocabTermsList
-          .map(
-            (t) =>
-              `<button type="button" class="btn btn-secondary sort-token-btn" onclick="const b1 = document.querySelector('#sort-cat-power .sort-bucket-items'); const b2 = document.querySelector('#sort-cat-economy .sort-bucket-items'); const root = document.getElementById('sort-token-container'); if(this.dataset.assigned === 'power'){ this.dataset.assigned='economy'; b2.appendChild(this); this.style.background='#dcfce7'; this.style.borderColor='#86efac'; } else if(this.dataset.assigned === 'economy'){ this.dataset.assigned='unassigned'; root.appendChild(this); this.style.background='#ffffff'; this.style.borderColor='#94a3b8'; } else { this.dataset.assigned='power'; b1.appendChild(this); this.style.background='#dbeafe'; this.style.borderColor='#93c5fd'; }" data-assigned="unassigned" style="padding: 5px 12px; font-size: 0.85rem; border-radius: 12px; border: 1.5px solid #94a3b8; background: #ffffff; color: #1e293b; cursor: pointer; font-weight: 600; transition: all 0.2s;">${t} &rarr;</button>`,
-          )
-          .join('')}
-          </div>
-          <p style="font-size: 0.8rem; color: #64748b; margin-top: 8px; font-style: italic;">Click a word button to move it between Group 1 (blue), Group 2 (green), and unassigned.</p>
-        </div>
-      `;
-    } else if (vocabStyle === 3) {
-      // Style 3: Spot the Deliberate Historical Error!
-      const errorStatement = lesson.vocab_deliberate_error
-        ? lesson.vocab_deliberate_error
-        : isKs2
-          ? `A visitor claimed that ${vocabTermsList[0] || 'this key idea'} and ${vocabTermsList[1] || 'this wartime event'} made no difference at all to children and families during World War II.`
-          : `A modern historical commentator claimed that ${vocabTermsList[0] || 'the main concept'} and ${vocabTermsList[1] || 'the event'} were completely trivial, playing no role in shaping the political outcome of this era.`;
-
-      htmlVocabInner += `
-        <div id="vocab-cognitive-challenge" style="margin-top: 25px; padding-top: 20px; border-top: 1px dashed #cbd5e1;">
-          <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px; flex-wrap: wrap; gap: 8px;">
-            <div style="display: flex; align-items: center; gap: 8px;">
-              <span style="font-weight: 700; color: #1e3a8a; font-size: 1.05rem;">
-                <i class="fa-solid fa-triangle-exclamation" style="color: #ef4444; margin-right: 6px;"></i> Vocabulary Challenge: Spot the Deliberate Error!
-              </span>
-              <span style="font-size: 0.8rem; background: #fee2e2; color: #991b1b; padding: 2px 8px; border-radius: 12px; font-weight: 600;">Critical Reading</span>
-            </div>
-            ${wbDrillBtnHtml}
-          </div>
-          <p style="color: #475569; font-size: 0.95rem; margin-bottom: 12px;">
-            The statement below contains a <strong>deliberate historical misconception</strong>. Identify the false claim and write the accurate historical correction below:
-          </p>
-          <div style="border-left: 4px solid #ef4444; background: #fef2f2; padding: 12px 16px; border-radius: 0 8px 8px 0; margin-bottom: 12px; font-size: 0.95rem; line-height: 1.6; color: #7f1d1d; font-style: italic;">
-            "${errorStatement}"
-          </div>
-          <textarea id="deliberate-correction-input" placeholder="Explain the historical misconception and provide the accurate historical reality using evidence from the lesson..." style="width: 100%; min-height: 70px; padding: 10px; border-radius: 6px; border: 1.5px solid #94a3b8; font-family: inherit; font-size: 0.95rem; box-sizing: border-box;"></textarea>
-          <div style="margin-top: 8px;">
-            <button type="button" class="btn btn-primary" onclick="document.getElementById('error-correction-feedback').style.display='block'; this.style.display='none';" style="font-size: 0.9rem; padding: 6px 14px; background: #dc2626; color: white; border: none; border-radius: 6px; cursor: pointer;">
-              <i class="fa-solid fa-eye"></i> Reveal Historical Truth & Reflection
-            </button>
-          </div>
-          <div id="error-correction-feedback" style="display: none; margin-top: 10px; padding: 12px; background: #f0fdf4; border: 1.5px solid #86efac; border-radius: 6px; color: #166534; font-size: 0.95rem; line-height: 1.5;">
-            <strong>Historical Analysis:</strong> Historians must constantly interrogate statements for bias, oversimplification, and factual inaccuracies. Review your correction to ensure you contrasted the false claim with specific historical evidence from the lesson!
-          </div>
-        </div>
-      `;
-    }
-
-    // Note: Lesson Summary Cloze is now rendered uniformly at the end of every lesson inside lesson_consolidate_station.js
-
-    htmlVocabInner += `
             </div>
           </div>
       `;
@@ -3806,8 +3487,6 @@ export function renderLesson(lesson) {
                         ${connectives.map((c) => `<span style="background: #ffffff; border: 1px solid #fde68a; color: #b45309; padding: 2px 7px; border-radius: 10px; font-size: 0.78rem; font-weight: 600;">${c}</span>`).join('')}
                       </div>
 
-                      <textarea class="interactive-textarea" style="width: 100%; box-sizing: border-box; min-height: 80px; padding: 8px; border: 1px solid #fde68a; border-radius: 5px; font-size: 0.9rem; font-family: inherit; resize: vertical;" placeholder="${isKs3 ? 'Combine the evidence and counter-evidence above to write your complex, balanced analytical paragraph...' : isKs2 ? 'Write your historian answer using the evidence above...' : 'Combine the evidence and counter-evidence above to write your complex, balanced GCSE exam paragraph...'}"></textarea>
-
                       ${modelAnswer
                     ? `
                         <details style="margin-top: 8px;">
@@ -4317,167 +3996,90 @@ export function renderLesson(lesson) {
           }
         }
 
-        // Pre-build utility enquiry / guidance card if present
-        const utilityCardHtml = (() => {
-          const utilityObj = rawSource.utility_enquiry || rawSource.utilityEnquiry;
-          if (
-            utilityObj &&
-            (utilityObj.is_exam_rubric === true ||
-              (!rawSource.model_answer && (utilityObj.bullet_points || utilityObj.key_points)))
-          ) {
-            const uPrompt =
-              utilityObj.question ||
-              utilityObj.prompt ||
-              utilityObj.enquiry ||
-              rawSource.question ||
-              '';
+        const displayTitleForStrip = rawSource.title
+          ? rawSource.title.replace(/^(?:Source|Map|Diagram)\s+[A-Z0-9]+[:\s-]*/i, '').trim()
+          : rawSource.caption || 'Archival Primary Record';
 
-            // Check if explicit exam rubric is requested (e.g. designated mock exam units)
-            const isExamRubric = utilityObj.is_exam_rubric === true;
+        // Build clean 1–2 sentence Edexcel-style Top Provenance & Context Strip (zero repeated titles or spoilers)
+        const buildTopProvenanceStripHtml = () => {
+          const provRaw = String(
+            rawSource.provenance || rawSource.citation || rawSource.attribution || '',
+          ).trim();
+          const ctxRaw = String(
+            cleanContextVal || rawSource.intro || rawSource.caption || '',
+          )
+            .replace(/\s+/g, ' ')
+            .trim();
 
-            if (isExamRubric) {
-              const uInferences =
-                utilityObj.content_inferences || utilityObj.inferences || utilityObj.content || '';
-              const uProv = utilityObj.provenance_evaluation || utilityObj.provenance || '';
-              const uContext =
-                utilityObj.context_limitations ||
-                utilityObj.limitations ||
-                utilityObj.context ||
-                '';
+          const takeTwoSentences = (s) => {
+            if (!s) return '';
+            const m = s.match(/[^.!?]+[.!?]+(?:\s+[^.!?]+[.!?]+)?/);
+            return (m ? m[0] : s).trim();
+          };
 
-              const isMedicineWesternFront =
-                (unitId === 'edexcel_medicine' || window.currentUnitId === 'edexcel_medicine') &&
-                (lesson.historic_environment || (lesson.title && lesson.title.includes('KT5')));
-              const isPaper3 =
-                unitId === 'weimar_nazi_germany' ||
-                window.currentUnitId === 'weimar_nazi_germany' ||
-                unitId === 'usa' ||
-                window.currentUnitId === 'usa';
-              const isPaper2 =
-                unitId === 'cme_new' ||
-                window.currentUnitId === 'cme_new' ||
-                unitId === 'eee' ||
-                window.currentUnitId === 'eee';
-              const examBadgeTitle =
-                utilityObj.exam_label ||
-                (isMedicineWesternFront
-                  ? 'Edexcel Paper 1 &bull; Q2(a) Source Utility Enquiry [8 Marks]'
-                  : isPaper3
-                    ? 'Edexcel Paper 3 &bull; Q3(a) Source Utility Enquiry [8 Marks]'
-                    : isPaper2
-                      ? 'Edexcel Paper 2 &bull; Primary Disciplinary Evidence Enquiry'
-                      : isKs3
-                        ? 'KS3 Primary Source Enquiry'
-                        : isKs2
-                          ? 'Key Stage 2 Historian Enquiry'
-                          : 'GCSE Source Utility Enquiry [8 Marks]');
+          const norm = (s) =>
+            String(s || '')
+              .toLowerCase()
+              .replace(/[^a-z0-9]+/g, ' ')
+              .trim();
+          const titleNorm = norm(displayTitleForStrip);
+          const provNorm = norm(provRaw);
+          const ctxTwo = takeTwoSentences(ctxRaw);
+          const ctxNorm = norm(ctxTwo);
 
-              return `
-                <details class="source-enquiry-reveal mode-exam edexcel-paper3-utility-card">
-                  <summary class="source-enquiry-single-row-summary" style="padding: 8px 12px; cursor: pointer; display: flex; flex-direction: row; align-items: center; justify-content: space-between; gap: 10px; list-style: none; user-select: none; background: #f0fdf4; transition: background 0.15s ease; box-sizing: border-box; width: 100%;">
-                    <div class="source-enquiry-left-wrap" style="display: flex; align-items: center; gap: 9px; flex: 1 1 auto; min-width: 0; flex-wrap: wrap;">
-                      <span style="font-size: 0.66rem; font-weight: 800; text-transform: uppercase; color: #166534; background: #dcfce7; border: 1px solid #bbf7d0; padding: 2px 7px; border-radius: 10px; letter-spacing: 0.45px; flex-shrink: 0; white-space: nowrap;">${examBadgeTitle}</span>
-                      <div class="source-enquiry-prompt" style="font-family: 'Playfair Display', Georgia, serif; font-size: 0.94rem; color: #14532d; font-weight: 700; line-height: 1.38; flex: 1 1 240px; min-width: 0; white-space: normal; word-break: normal; overflow-wrap: break-word;">${typeof window !== 'undefined' && window.formatBold ? window.formatBold(uPrompt) : uPrompt}</div>
-                    </div>
-                    <span class="reveal-answer-pill" style="flex-shrink: 0;">
-                      <i class="fa-solid fa-lightbulb" style="color: #16a34a;"></i>
-                      <span class="reveal-text-closed">Reveal Exam Guidance</span>
-                      <span class="reveal-text-open">Hide Exam Guidance</span>
-                      <span class="reveal-arrow">&#9660;</span>
-                    </span>
-                  </summary>
-                  <div class="source-enquiry-answer-body" style="padding: 12px 16px; background: #ffffff; border-top: 1.5px solid #86efac;">
-                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 10px; margin-top: 4px;">
-                      ${uInferences ? `<div style="background: #f8fafc; border: 1px solid #bbf7d0; border-radius: 5px; padding: 10px 12px;"><div style="font-size: 0.72rem; font-weight: 800; text-transform: uppercase; color: #166534; margin-bottom: 5px;"><i class="fa-solid fa-magnifying-glass" style="color: #16a34a;"></i> 1. Content &amp; Inferences</div><div style="font-size: 0.86rem; color: #1e293b; line-height: 1.5;">${typeof window !== 'undefined' && window.formatBold ? window.formatBold(uInferences) : uInferences}</div></div>` : ''}
-                      ${uProv ? `<div style="background: #f8fafc; border: 1px solid #bbf7d0; border-radius: 5px; padding: 10px 12px;"><div style="font-size: 0.72rem; font-weight: 800; text-transform: uppercase; color: #166534; margin-bottom: 5px;"><i class="fa-solid fa-stamp" style="color: #16a34a;"></i> 2. Provenance (NOP)</div><div style="font-size: 0.86rem; color: #1e293b; line-height: 1.5;">${typeof window !== 'undefined' && window.formatBold ? window.formatBold(uProv) : uProv}</div></div>` : ''}
-                      ${uContext ? `<div style="background: #f8fafc; border: 1px solid #bbf7d0; border-radius: 5px; padding: 10px 12px;"><div style="font-size: 0.72rem; font-weight: 800; text-transform: uppercase; color: #166534; margin-bottom: 5px;"><i class="fa-solid fa-book-bookmark" style="color: #16a34a;"></i> 3. Context &amp; Limitations</div><div style="font-size: 0.86rem; color: #1e293b; line-height: 1.5;">${typeof window !== 'undefined' && window.formatBold ? window.formatBold(uContext) : uContext}</div></div>` : ''}
-                    </div>
-                  </div>
-                </details>
-              `;
+          let combined = '';
+          if (provRaw && provNorm !== titleNorm) {
+            combined = provRaw.replace(/[.]+$/, '') + '.';
+            if (
+              ctxTwo &&
+              ctxNorm !== titleNorm &&
+              ctxNorm !== provNorm &&
+              !ctxNorm.includes(provNorm) &&
+              !provNorm.includes(ctxNorm)
+            ) {
+              const firstCtxSentence = (ctxTwo.match(/[^.!?]+[.!?]+/) || [ctxTwo])[0].trim();
+              if (combined.length + firstCtxSentence.length <= 280) {
+                combined = `${combined} ${firstCtxSentence}`;
+              }
             }
-
-            // DEFAULT CHILD-FRIENDLY MODEL: 2 to 3 direct bullet points
-            let points =
-              utilityObj.bullet_points ||
-              utilityObj.key_points ||
-              utilityObj.model_answers ||
-              utilityObj.answers;
-            if (!points || !Array.isArray(points) || points.length === 0) {
-              const uInferences =
-                utilityObj.content_inferences || utilityObj.inferences || utilityObj.content || '';
-              const uProv = utilityObj.provenance_evaluation || utilityObj.provenance || '';
-              const uContext =
-                utilityObj.context_limitations ||
-                utilityObj.limitations ||
-                utilityObj.context ||
-                '';
-              points = [];
-              if (uInferences) points.push({ label: 'What the Source Shows', text: uInferences });
-              if (uProv) points.push({ label: 'Historical Meaning', text: uProv });
-              if (uContext && !uContext.toLowerCase().includes('does not show'))
-                points.push({ label: 'Deeper Context', text: uContext });
-            }
-
-            const renderedBullets = points
-              .map((pt) => {
-                let lbl = '';
-                let txt = '';
-                if (typeof pt === 'string') {
-                  txt = pt;
-                } else if (pt && typeof pt === 'object') {
-                  if (pt.label) {
-                    const cleanLabel = (pt.label || '').toLowerCase();
-                    if (
-                      ![
-                        'what the source shows',
-                        'historical context',
-                        'key takeaway',
-                        'takeaway',
-                        'point 1',
-                        'point 2',
-                        'point 3',
-                      ].includes(cleanLabel)
-                    ) {
-                      lbl = `<strong style="color: #166534;">${pt.label}:</strong> `;
-                    }
-                  }
-                  txt = pt.text || pt.content || pt.answer || '';
-                }
-                const formattedTxt =
-                  typeof window !== 'undefined' && window.formatBold ? window.formatBold(txt) : txt;
-                return `<li style="margin-bottom: 8px; line-height: 1.55; color: #1e293b; font-size: 0.88rem;">${lbl}${formattedTxt}</li>`;
-              })
-              .join('');
-
-            return renderSourceEnquiryBox({
-              srcObj: rawSource,
-              promptText: uPrompt,
-              contextVal: cleanContextVal,
-              renderedBullets,
-            });
-          } else if (
-            rawSource.question ||
-            rawSource.enquiry_question ||
-            rawSource.how_useful_question
-          ) {
-            const qPrompt =
-              rawSource.question || rawSource.enquiry_question || rawSource.how_useful_question;
-            return renderSourceEnquiryBox({
-              srcObj: rawSource,
-              promptText: qPrompt,
-              contextVal: cleanContextVal,
-            });
+          } else if (ctxTwo && ctxNorm !== titleNorm) {
+            combined = ctxTwo;
+          } else if (provRaw) {
+            combined = provRaw;
+          } else if (displayTitleForStrip) {
+            combined = displayTitleForStrip;
           }
-          return '';
-        })();
 
-        const hasUtilityCard = Boolean(utilityCardHtml);
+          if (!combined) return '';
+          const fmtProv =
+            typeof window !== 'undefined' && window.formatBold
+              ? window.formatBold(combined)
+              : combined;
+          return `
+            <div class="source-top-provenance-strip" style="background: #f8fafc; border: 1px solid #e2e8f0; border-left: 3.5px solid #1e40af; border-radius: 5px; padding: 7px 12px; margin-bottom: 10px; font-size: 0.86rem; color: #334155; line-height: 1.45;">
+              <strong style="color: #0f172a;">${bLetter ? `Source ${bLetter}: ` : 'Provenance: '}</strong>${fmtProv}
+            </div>
+          `;
+        };
 
-        const orientingIntro =
-          rawSource.intro ||
-          rawSource.caption ||
+        // Single Enquiry Question + Reveal Answer (1 natural 1–2 sentence answer across all 26 units)
+        const utilityObj = rawSource.utility_enquiry || rawSource.utilityEnquiry;
+        const resolvedSingleQuestion =
+          rawSource.question ||
+          rawSource.enquiry_question ||
+          rawSource.how_useful_question ||
+          (utilityObj && (utilityObj.question || utilityObj.prompt || utilityObj.enquiry)) ||
+          rawSource.hinge_question ||
+          rawSource.source_question ||
           '';
+
+        const singleEnquiryHtml = resolvedSingleQuestion
+          ? `<div class="archival-source-fullwidth-enquiry" style="width: 100%; margin-top: 10px;">${renderSourceEnquiryBox({
+              srcObj: rawSource,
+              promptText: resolvedSingleQuestion,
+              contextVal: cleanContextVal,
+            })}</div>`
+          : '';
 
         const ppObj =
           rawSource &&
@@ -4566,166 +4168,118 @@ export function renderLesson(lesson) {
                 <div class="perspective-shared-img-wrap">
                   <img src="${rawSourceImgUrl}" alt="${escAttrSafe(rawSource.image_alt || sourceTitle || 'Historical Source')}" class="archival-image perspective-shared-img" data-action="open-modal" data-src="${rawSourceImgUrl}" />
                 </div>
-                ${
-                  rawSource.caption || rawSource.citation || rawSource.provenance
-                    ? `
-                  <div class="perspective-shared-caption-wrap">
-                    ${rawSource.caption ? `<div class="perspective-shared-caption">${escHtmlSafe(rawSource.caption)}</div>` : ''}
-                    ${
-                      rawSource.citation || rawSource.provenance
-                        ? `<div class="perspective-shared-provenance"><strong>Provenance:</strong> ${escHtmlSafe(rawSource.citation || rawSource.provenance)}</div>`
-                        : ''
-                    }
-                  </div>
-                `
-                    : ''
-                }
               </div>
             `
             : '';
 
-          const sharedEnquiryHtml = utilityCardHtml
-            ? `<div class="archival-source-fullwidth-enquiry perspective-shared-enquiry">${utilityCardHtml}</div>`
-            : renderArchivalSourceDiscussionBox(
-                rawSource.hinge_question || rawSource.question || rawSource.source_question,
-                rawSource,
-                isKs2,
-                '10px',
-              );
+          const topFramingHtml = ppObj.framing_note
+            ? `
+              <div class="source-top-provenance-strip" style="background: #f8fafc; border: 1px solid #e2e8f0; border-left: 3.5px solid #1e40af; border-radius: 5px; padding: 7px 12px; margin-bottom: 10px; font-size: 0.86rem; color: #334155; line-height: 1.45;">
+                <strong style="color: #0f172a;">${bLetter ? `Source ${bLetter}: ` : 'Historical Framing: '}</strong>${typeof formatBold === 'function' ? formatBold(escHtmlSafe(ppObj.framing_note)) : escHtmlSafe(ppObj.framing_note)}
+              </div>
+            `
+            : buildTopProvenanceStripHtml();
 
           sourceBodyHtml = `
             <div class="perspective-pair-container">
+              ${topFramingHtml}
               ${sharedMediaHtml}
-              ${
-                ppObj.framing_note
-                  ? `
-                <div class="perspective-pair-framing">
-                  <span class="perspective-framing-label">Historical Framing</span>
-                  <p class="perspective-framing-text">${typeof formatBold === 'function' ? formatBold(escHtmlSafe(ppObj.framing_note)) : escHtmlSafe(ppObj.framing_note)}</p>
-                </div>
-              `
-                  : ''
-              }
               <div class="perspective-pair-grid">
                 ${renderPerspectiveSideCard(ppObj.side_a, 'side-a')}
                 ${renderPerspectiveSideCard(ppObj.side_b, 'side-b')}
               </div>
-              ${sharedEnquiryHtml}
+              ${singleEnquiryHtml}
             </div>
           `;
         } else if (isWrittenSource) {
-          const provenanceText = (rawSource.citation || rawSource.provenance || '').trim();
-          const summaryNorm = (rawSource.title || '')
-            .replace(/^(?:Source|Map|Diagram)\s+[A-Z0-9]+[:\s-]*/i, '')
-            .trim()
-            .toLowerCase();
-          const provenanceHtml =
-            !isKs2 && provenanceText && provenanceText.toLowerCase() !== summaryNorm
-              ? `<div class="archival-citation-footer" style="font-size: 0.76rem; color: #64748b; font-style: italic; text-align: right; margin-top: 3px; margin-bottom: 5px; padding-top: 0; line-height: 1.35;">
-                  &mdash; <span style="font-style: normal; font-weight: 600; color: #475569;">Provenance:</span> ${provenanceText}
-                </div>`
-              : '';
-
           sourceBodyHtml = `
-            ${sourceText
-              ? renderArchivalSourceBody(sourceText, rawSource, { maxHeight: '350px', marginBottom: '4px', accentColor: '#1e3a8a' })
-              : ''
+            ${buildTopProvenanceStripHtml()}
+            ${
+              sourceText
+                ? renderArchivalSourceBody(sourceText, rawSource, {
+                    maxHeight: '350px',
+                    marginBottom: '4px',
+                    accentColor: '#1e3a8a',
+                  })
+                : ''
             }
-            ${provenanceHtml}
-            ${utilityCardHtml ? `<div class="archival-source-fullwidth-enquiry" style="width: 100%; margin-top: 6px;">${utilityCardHtml}</div>` : renderArchivalSourceDiscussionBox(rawSource.hinge_question || rawSource.question || rawSource.source_question, rawSource, isKs2, '6px')}
+            ${singleEnquiryHtml}
           `;
         } else {
           const rawSourceImgUrl = getAssetUrl(rawImgSrc);
           const isExamSrcArtwork = isPaintingSource(rawSource, sourceTitle);
           const examSpotlightBtn = isExamSrcArtwork
             ? `
-                <button class="btn-source-spotlight-launch btn-art-spotlight-launch" data-action="open-masterpiece" data-src="${rawSourceImgUrl}" data-title="${sourceTitle || 'Historical Artwork'}" data-caption="${rawSource.caption || ''}" title="Launch Art Spotlight">
-                  <i class="fa-solid fa-palette" style="color: #fbbf24;"></i>
-                  <span>Art Spotlight</span>
-                </button>
+                <div style="display: flex; justify-content: center; margin-top: 8px;">
+                  <button class="btn-source-spotlight-launch btn-art-spotlight-launch" data-action="open-masterpiece" data-src="${rawSourceImgUrl}" data-title="${sourceTitle || 'Historical Artwork'}" data-caption="${rawSource.caption || ''}" title="Launch Art Spotlight">
+                    <i class="fa-solid fa-palette" style="color: #fbbf24;"></i>
+                    <span>Art Spotlight</span>
+                  </button>
+                </div>
             `
             : '';
 
-          const primaryProvenanceHtml =
-            !isKs2 && (rawSource.citation || rawSource.provenance)
-              ? `<div class="archival-media-provenance" style="margin-top: 10px; border-top: 1px solid rgba(255,255,255,0.14); padding-top: 8px; font-size: 0.74rem; line-height: 1.35; color: #94a3b8; text-align: left;">
-                  <strong style="color: #cbd5e1;">Provenance:</strong> ${rawSource.citation || rawSource.provenance}
-                </div>`
-              : '';
-
-          let mediaColHtml = '';
+          let mediaCleanHtml = '';
           if (Array.isArray(rawSource.plates) && rawSource.plates.length > 0) {
-            mediaColHtml = `
-              <div class="archival-source-media-col dual-plates-col${isKs2 ? ' ks2-source-media-col' : ''}" style="flex: 0 0 380px; max-width: 440px; display: flex; flex-direction: column; gap: 14px;">
+            mediaCleanHtml = `
+              <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; margin-bottom: 6px;">
                 ${rawSource.plates
-                .map((plate, pIdx) => {
-                  const plateImgUrl = getAssetUrl(plate.image || plate.src);
-                  return `
-                    <div class="archival-plate-card" style="background: #ffffff; border: 1px solid #cbd5e1; border-radius: 6px; padding: 10px; box-shadow: 0 1px 2px rgba(0,0,0,0.03);">
-                      <div style="font-size: 0.65rem; font-weight: 800; color: #1e40af; letter-spacing: 0.5px; margin-bottom: 6px; text-transform: uppercase;">
-                        ${plate.label || `PLATE ${pIdx + 1}`}
+                  .map((plate, pIdx) => {
+                    const plateImgUrl = getAssetUrl(plate.image || plate.src);
+                    return `
+                      <div class="archival-plate-card" style="background: #f8fafc; border: 1px solid #cbd5e1; border-radius: 6px; padding: 10px; text-align: center;">
+                        <div style="font-size: 0.65rem; font-weight: 800; color: #1e40af; letter-spacing: 0.5px; margin-bottom: 6px; text-transform: uppercase;">
+                          ${plate.label || `PLATE ${pIdx + 1}`}
+                        </div>
+                        <div style="display: flex; justify-content: center;">
+                          <img src="${plateImgUrl}" alt="${plate.title || `Plate ${pIdx + 1}`}" data-action="open-modal" data-src="${plateImgUrl}" style="cursor: zoom-in; width: auto; max-width: 100%; max-height: 240px; object-fit: contain; display: block; border-radius: 4px;">
+                        </div>
                       </div>
-                      <div style="position: relative; width: 100%; display: flex; justify-content: center; background: #f8fafc; border-radius: 4px; overflow: hidden;">
-                        <img src="${plateImgUrl}" alt="${plate.title || `Plate ${pIdx + 1}`}" data-action="open-modal" data-src="${plateImgUrl}" style="cursor: zoom-in; width: auto; max-width: 100%; max-height: 200px; object-fit: contain; display: block; border-radius: 4px;">
-                      </div>
-                      ${plate.caption ? `<div style="font-size: 0.78rem; color: #475569; margin-top: 6px; line-height: 1.35; font-style: italic;">${plate.caption}</div>` : ''}
-                    </div>
-                  `;
-                })
-                .join('')}
-                ${primaryProvenanceHtml}
+                    `;
+                  })
+                  .join('')}
               </div>
             `;
           } else {
-            mediaColHtml = `
-              <div class="archival-source-media-col${isKs2 ? ' ks2-source-media-col' : ''}">
+            mediaCleanHtml = `
+              <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 7px; padding: 10px; text-align: center;">
                 <div style="position: relative; width: 100%; display: flex; justify-content: center;">
-                  <img src="${rawSourceImgUrl}" alt="${sourceTitle || 'Source'}" data-action="open-modal" data-src="${rawSourceImgUrl}" ${rawSource.default_zoom || rawSource.defaultZoom || (rawSourceImgUrl && rawSourceImgUrl.includes('vesalius_fabrica_frontispiece')) ? `data-default-zoom="${rawSource.default_zoom || rawSource.defaultZoom || '2x'}"` : ''} style="cursor: zoom-in; width: auto; max-width: 100%; max-height: ${isKs2 ? '380px' : '350px'}; object-fit: contain; display: block; border-radius: 6px;">
+                  <img src="${rawSourceImgUrl}" alt="${sourceTitle || 'Source'}" data-action="open-modal" data-src="${rawSourceImgUrl}" ${rawSource.default_zoom || rawSource.defaultZoom || (rawSourceImgUrl && rawSourceImgUrl.includes('vesalius_fabrica_frontispiece')) ? `data-default-zoom="${rawSource.default_zoom || rawSource.defaultZoom || '2x'}"` : ''} class="archival-image" style="cursor: zoom-in; width: auto; max-width: 100%; max-height: ${isKs2 ? '360px' : '350px'}; object-fit: contain; display: block; border-radius: 6px;">
                 </div>
                 ${examSpotlightBtn}
-                ${primaryProvenanceHtml}
-
               </div>
             `;
           }
 
-          const primaryDisc = getArchivalSourceDiscussionComponents(
-            rawSource.hinge_question || rawSource.question || rawSource.source_question,
-            rawSource,
-            isKs2,
-            '10px',
-          );
-
-          const inlineEnquiryHtml = utilityCardHtml
-            ? `<div class="archival-source-inline-enquiry" style="width: 100%; margin-top: 6px;">${utilityCardHtml}</div>`
-            : !hasUtilityCard && (primaryDisc.promptHtml || primaryDisc.panelHtml)
-              ? `<div class="archival-source-inline-enquiry" style="width: 100%; margin-top: 6px;">${primaryDisc.promptHtml || ''}${primaryDisc.panelHtml || ''}</div>`
-              : '';
+          const isMedPaper1ProvClue =
+            (unitId === 'edexcel_medicine' || window.currentUnitId === 'edexcel_medicine') &&
+            Boolean(rawSource.provenance_clue);
 
           sourceBodyHtml = `
-            <div class="archival-source-split-layout" style="margin-bottom: 0;">
-              ${mediaColHtml}
-              <div class="archival-source-details-col" style="display: flex; flex-direction: column; justify-content: flex-start; gap: 8px;">
-                ${(() => {
-                  const cap = rawSource.caption || (rawSource.title ? rawSource.title.replace(/^Source\s+[A-Z0-9]+[:\s-]*/i, '').trim() : '') || rawSource.attribution || '';
-                  return cap ? `<div style="font-size: 0.95rem; color: #475569; margin-bottom: 2px; font-style: italic; line-height: 1.5;">${cap}</div>` : '';
-                })()}
-                ${sourceText
-              ? renderArchivalSourceBody(sourceText, rawSource, { maxHeight: '250px', fontSize: '0.95rem', lineHeight: '1.6', padding: '10px 14px', marginBottom: '4px', accentColor: '#1e3a8a' })
-              : ''
+            ${buildTopProvenanceStripHtml()}
+            ${mediaCleanHtml}
+            ${
+              sourceText
+                ? `<div style="margin-top: 8px;">${renderArchivalSourceBody(sourceText, rawSource, {
+                    maxHeight: '240px',
+                    fontSize: '0.94rem',
+                    lineHeight: '1.6',
+                    padding: '10px 14px',
+                    marginBottom: '4px',
+                    accentColor: '#1e3a8a',
+                  })}</div>`
+                : ''
             }
-                ${rawSource.provenance_clue
-              ? `
-                  <div style="background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 6px; padding: 10px 14px; margin-bottom: 4px;">
-                    <strong style="color: #166534; display: block; margin-bottom: 2px;"><span class="archival-meta-tag accent-emerald" style="margin-right: 6px;">PROVENANCE CLUE</span></strong>
-                    <span style="color: #15803d; font-size: 0.90rem;">${typeof window !== 'undefined' && window.formatBold ? window.formatBold(rawSource.provenance_clue) : rawSource.provenance_clue}</span>
-                  </div>
-                `
-              : ''
-            }
-                ${inlineEnquiryHtml}
+            ${
+              isMedPaper1ProvClue
+                ? `
+              <div style="background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 6px; padding: 8px 12px; margin-top: 8px; font-size: 0.86rem; color: #15803d;">
+                <strong style="color: #166534;">Provenance Clue:</strong> ${typeof window !== 'undefined' && window.formatBold ? window.formatBold(rawSource.provenance_clue) : rawSource.provenance_clue}
               </div>
-            </div>
+            `
+                : ''
+            }
+            ${singleEnquiryHtml}
           `;
         }
 
@@ -4875,10 +4429,7 @@ export function renderLesson(lesson) {
             .map((s) => renderSingleArchivalSource(s))
             .join('');
           blockSourceHtml += `
-            <div class="further-primary-sources-section" style="margin-top: 16px; padding-top: 12px; border-top: 1.5px dashed #cbd5e1;">
-              <div style="font-size: 0.78rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.05em; color: #1e40af; margin-bottom: 8px; display: flex; align-items: center; gap: 6px;">
-                <i class="fa-solid fa-folder-open"></i> Further Primary Sources (${remainingLessonSources.length})
-              </div>
+            <div class="further-primary-sources-section" style="margin-top: 6px; display: flex; flex-direction: column; gap: 5px;">
               ${extraSourcesHtml}
             </div>
           `;
@@ -4942,6 +4493,7 @@ export function renderLesson(lesson) {
       const matchingLetter = ['A', 'B', 'C', 'D', 'E'][index];
       const isFiveBlockUnit = [
         'cme_new',
+        'gcse_cold_war',
         'usa',
         'weimar_nazi_germany',
         'eee',
@@ -5358,7 +4910,7 @@ export function renderLesson(lesson) {
                      ${Array.from({ length: task.rows })
                 .map(
                   () =>
-                    `<tr>${task.columns.map(() => `<td style="border:1px solid #cbd5e1; padding:10px;"><textarea style="width:100%; min-height:60px; border:none; resize:vertical; outline:none;" placeholder="Type here..."></textarea></td>`).join('')}</tr>`,
+                    `<tr>${task.columns.map(() => `<td style="border:1px solid #cbd5e1; padding:14px; height: 42px; color:#94a3b8; font-size:0.82rem; font-style:italic;">[Complete in workbook]</td>`).join('')}</tr>`,
                 )
                 .join('')}
                    </tbody>
@@ -5411,8 +4963,8 @@ export function renderLesson(lesson) {
                             <span style="background: #0f172a; color: #ffffff; font-weight: 800; font-size: 0.85rem; width: 24px; height: 24px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;">${num}</span>
                             <strong style="color: #1e293b; font-size: 0.95rem;">${ann.label || ann.target || 'Feature ' + num}</strong>
                           </div>
-                          <p style="font-size: 0.88rem; color: #475569; margin: 0 0 10px 0; line-height: 1.4;">${ann.prompt || ann.question || 'Identify and explain significance:'}</p>
-                          <textarea style="width: 100%; box-sizing: border-box; min-height: 55px; padding: 8px; border: 1px solid #cbd5e1; border-radius: 6px; font-size: 0.9rem; font-family: inherit; resize: vertical;" placeholder="${ann.starter || 'Type your notes / label here...'}"></textarea>
+                          <p style="font-size: 0.88rem; color: #475569; margin: 0; line-height: 1.4;">${ann.prompt || ann.question || 'Identify and explain significance:'}</p>
+                          ${ann.starter ? `<div style="font-size: 0.82rem; color: #0369a1; font-style: italic; margin-top: 6px;">Starter: &ldquo;${ann.starter}&rdquo;</div>` : ''}
                           ${ann.model
                         ? `
                             <details style="margin-top: 8px;">
@@ -5460,7 +5012,7 @@ export function renderLesson(lesson) {
                           ${step.desc ? `<p style="margin: 0 0 8px 0; font-size: 0.92rem; color: #475569; line-height: 1.4;">${step.desc}</p>` : ''}
                           ${step.blank
                         ? `
-                            <textarea style="width: 100%; box-sizing: border-box; min-height: 50px; padding: 8px; border: 1.5px dashed #0284c7; border-radius: 6px; font-size: 0.9rem; font-family: inherit; resize: vertical; background: #f8fafc;" placeholder="${step.prompt || 'Explain the causal link connecting this step...'}"></textarea>
+                            <div style="padding: 8px 10px; border: 1.5px dashed #0284c7; border-radius: 6px; font-size: 0.88rem; color: #0369a1; font-style: italic; background: #f8fafc;">${step.prompt || 'Explain the causal link connecting this step in your workbook.'}</div>
                           `
                         : ''
                       }
@@ -5499,9 +5051,8 @@ export function renderLesson(lesson) {
                 </div>
                 ${task.justification_prompt
                 ? `
-                  <div style="margin-bottom: 10px;">
-                    <label style="display: block; font-size: 0.9rem; font-weight: 700; color: #78350f; margin-bottom: 6px;">Why is this phrase decisive? ${task.justification_prompt}</label>
-                    <textarea style="width: 100%; box-sizing: border-box; min-height: 60px; padding: 8px; border: 1px solid #fed7aa; border-radius: 6px; font-size: 0.9rem; font-family: inherit; resize: vertical;" placeholder="${task.starter || 'Type your justification here...'}"></textarea>
+                  <div style="margin-bottom: 10px; font-size: 0.9rem; font-weight: 700; color: #78350f;">
+                    Why is this phrase decisive? ${task.justification_prompt}
                   </div>
                 `
                 : ''
@@ -5624,17 +5175,15 @@ export function renderLesson(lesson) {
                   </h5>
                   <p style="font-size: 0.92rem; color: #78350f; font-weight: 600; margin: 0 0 10px 0;">${synthesisPrompt}</p>
                   
-                  <details class="support-connectives-drawer no-print" style="margin-bottom: 12px; background: #ffffff; border: 1px solid #fde68a; border-radius: 6px; padding: 6px 12px;" closed>
+                  <details class="support-connectives-drawer no-print" style="margin-bottom: 10px; background: #ffffff; border: 1px solid #fde68a; border-radius: 6px; padding: 6px 12px;" closed>
                     <summary style="cursor: pointer; font-size: 0.8rem; font-weight: 700; color: #92400e; display: flex; align-items: center; justify-content: space-between; user-select: none;">
                       <span><i class="fa-solid fa-lightbulb"></i> Analytical Connectives (Click to Expand)</span>
                       <span style="font-size: 0.72rem; color: #b45309;"><i class="fa-solid fa-chevron-down"></i> Expand</span>
                     </summary>
                     <div style="display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px;">
-                      ${connectives.map((c) => `<button type="button" class="connective-chip" data-connective="${c.replace(/"/g, '&quot;')}" style="background: #fffbeb; border: 1px solid #fde68a; color: #b45309; padding: 3px 10px; border-radius: 12px; font-size: 0.8rem; font-weight: 600; cursor: pointer; transition: all 0.15s ease;" title="Click to insert at cursor">${c}</button>`).join('')}
+                      ${connectives.map((c) => `<span class="wb-interactive-chip" data-action="toggle-wb-chip" role="button" tabindex="0" style="background: #fffbeb; border: 1px solid #fde68a; color: #b45309; padding: 3px 10px; border-radius: 12px; font-size: 0.8rem; font-weight: 600;">${c}</span>`).join('')}
                     </div>
                   </details>
-
-                  <textarea class="interactive-textarea" style="width: 100%; box-sizing: border-box; min-height: 90px; padding: 10px; border: 1px solid #fde68a; border-radius: 6px; font-size: 0.92rem; font-family: inherit; resize: vertical;" placeholder="${isKs3 ? 'Combine the evidence and counter-evidence above to write your complex, balanced analytical paragraph...' : isKs2 ? 'Write your historian answer using the evidence above...' : 'Combine the evidence and counter-evidence above to write your complex, balanced GCSE exam paragraph...'}"></textarea>
 
                   ${modelAnswer
                 ? `
@@ -5673,9 +5222,8 @@ export function renderLesson(lesson) {
                     <span>0%</span><span>25%</span><span id="${specId}-val" style="font-weight: bold; color: #7c3aed;">50%</span><span>75%</span><span>100%</span>
                   </div>
                 </div>
-                <div style="margin-bottom: 10px;">
-                  <label style="display: block; font-size: 0.9rem; font-weight: 700; color: #5b21b6; margin-bottom: 6px;">Justify your placement along this spectrum:</label>
-                  <textarea style="width: 100%; box-sizing: border-box; min-height: 55px; padding: 8px; border: 1px solid #ddd6fe; border-radius: 6px; font-size: 0.9rem; font-family: inherit; resize: vertical;" placeholder="${task.starter || 'I have placed this at... because...'}"></textarea>
+                <div style="margin-bottom: 6px; font-size: 0.9rem; font-weight: 700; color: #5b21b6;">
+                  Justify your placement along this spectrum${task.starter ? `: <span style="font-weight:500;font-style:italic;">&ldquo;${task.starter}&rdquo;</span>` : '.'}
                 </div>
               </div>
             `;
@@ -5711,9 +5259,8 @@ export function renderLesson(lesson) {
               }
                 ${task.risk_prompt
                 ? `
-                  <div style="margin-bottom: 10px;">
-                    <label style="display: block; font-size: 0.9rem; font-weight: 700; color: #9a3412; margin-bottom: 6px;">Calculated Risk: ${task.risk_prompt}</label>
-                    <textarea style="width: 100%; box-sizing: border-box; min-height: 50px; padding: 8px; border: 1px solid #fed7aa; border-radius: 6px; font-size: 0.9rem; font-family: inherit; resize: vertical;" placeholder="${task.starter || 'The primary risk of this decision was...'}"></textarea>
+                  <div style="margin-bottom: 10px; font-size: 0.9rem; font-weight: 700; color: #9a3412;">
+                    Calculated Risk: ${task.risk_prompt}
                   </div>
                 `
                 : ''
@@ -5787,9 +5334,8 @@ export function renderLesson(lesson) {
                 `
                 : ''
               }
-                <div style="margin-top: 10px;">
-                  <label style="display: block; font-size: 0.9rem; font-weight: 700; color: #065f46; margin-bottom: 6px;">Evaluative Justification: ${task.justification_prompt || 'Explain why your #1 factor outweighs the others:'}</label>
-                  <textarea style="width: 100%; box-sizing: border-box; min-height: 55px; padding: 8px; border: 1px solid #a7f3d0; border-radius: 6px; font-size: 0.9rem; font-family: inherit; resize: vertical;" placeholder="${task.starter || 'Factor A was the decisive catalyst because...'}"></textarea>
+                <div style="margin-top: 8px; font-size: 0.9rem; font-weight: 700; color: #065f46;">
+                  Evaluative Justification: ${task.justification_prompt || 'Explain why your #1 factor outweighs the others in your workbook.'}
                 </div>
               </div>
             `;
@@ -5977,11 +5523,6 @@ export function renderLesson(lesson) {
                 `
                 : ''
               }
-
-                <div style="margin-bottom: 14px;">
-                  <label style="display: block; font-size: 0.88rem; font-weight: 700; color: #0f172a; margin-bottom: 6px;">Pupil Extended Writing Area:</label>
-                  <textarea style="width: 100%; box-sizing: border-box; min-height: 130px; padding: 10px 12px; border: 1.5px solid #cbd5e1; border-radius: 8px; font-size: 0.95rem; line-height: 1.6; font-family: inherit; resize: vertical;" placeholder="Compose your 3-paragraph historical evaluation here using the structure strip and connectives..."></textarea>
-                </div>
 
                 <div>
                   <button class="btn btn-pedagogy btn-pedagogy-sm btn-pedagogy-reveal" data-action="toggle-element" data-target-id="${ansId}"><i class="fa-solid fa-eye"></i> Reveal Master Model Answer</button>
@@ -6225,7 +5766,7 @@ export function renderLesson(lesson) {
                 </div>
                 <div style="min-width: 0;">
                   <div style="font-family: 'Playfair Display', Georgia, serif; font-size: 1.05rem; font-weight: 800; color: #0f172a; line-height: 1.2;">${stationTitle}</div>
-                  <div style="font-size: 0.73rem; color: #64748b; font-weight: 600;">${isKs2 ? 'Click any Historian Challenge below to open your writing space, clues &amp; helpful sentence starters' : 'Select any workbook task strip below to open writing space &amp; scaffolding'}</div>
+                  <div style="font-size: 0.73rem; color: #64748b; font-weight: 600;">${isKs2 ? 'Select any Historian Challenge below to view word banks, starters, timers &amp; model answers' : 'Select any workbook task strip below to view scaffolding, timers &amp; model answers'}</div>
                 </div>
               </div>
               <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap; flex-shrink: 0;">
@@ -6346,16 +5887,50 @@ export function renderLesson(lesson) {
                 ? 'Combine the evidence and counter-evidence above to write your complex, balanced analytical paragraph...'
                 : 'Combine the evidence and counter-evidence above to write your complex, balanced GCSE exam paragraph...';
 
+            const tsaUid = `tsa_${String(lesson.id || currentIndex).replace(/[^a-zA-Z0-9_-]/g, '_')}_${tIdx}`;
+            const tsaMins = 12;
+            registerUnifiedExamQuestion(tsaUid, {
+              id: tsaUid,
+              qCode: `Task ${tIdx + 1}`,
+              type: 'Two-Sided Evaluation',
+              marks: 12,
+              marksDisplay: isLocalKs2 ? 'Historian Investigation' : 'Two-Sided Evaluation',
+              targetMins: tsaMins,
+              inWorkbook: true,
+              mockTitle: 'In Printed Workbook',
+              questionText: synthesisPrompt,
+              stimulus: [advTitle, limTitle].filter(Boolean),
+              sourceExtract: '',
+              projectorFooter: isLocalKs2
+                ? 'Key Stage 2 History &bull; Historian Writing Challenge &bull; The History Revision Hub'
+                : 'Key Stage 3 History &bull; Evaluative Writing &bull; The History Revision Hub',
+            });
+
+            const hasDistinctTsaSubPrompt =
+              Boolean(task.synthesis_prompt) &&
+              Boolean(task.question || task.stem || task.text) &&
+              cleanStemForStripSummary(task.synthesis_prompt) !==
+                cleanStemForStripSummary(task.question || task.stem || task.text);
+
             htmlTasks += `
               <div class="task-box two-sided-argument-interactive" style="margin-bottom: 4px; background: #ffffff; padding: 4px 0 0 0;">
-                <div style="display: flex; justify-content: flex-end; align-items: center; margin-bottom: 10px; flex-wrap: wrap; gap: 8px;">
-                  <button type="button" class="btn-reveal-all-t3 no-print" onclick="window.toggleTask3Mask && window.toggleTask3Mask(this)" style="background: #ecfdf5; border: 1.5px solid #6ee7b7; color: #065f46; font-size: 0.78rem; font-weight: 700; padding: 4px 10px; border-radius: 4px; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; transition: all 0.2s ease;">
-                    <i class="fa-solid fa-chalkboard-user"></i> <span>Teacher Whiteboard Key</span>
-                  </button>
+                <div style="display: flex; justify-content: ${hasDistinctTsaSubPrompt ? 'space-between' : 'flex-end'}; align-items: center; margin-bottom: 10px; flex-wrap: wrap; gap: 8px;">
+                  ${hasDistinctTsaSubPrompt ? `<div style="font-size: 0.94rem; font-weight: 700; color: #0f172a; line-height: 1.45; flex: 1 1 260px;">${synthesisPrompt}</div>` : ''}
+                  <div class="no-print" style="display: flex; align-items: center; gap: 7px; flex-wrap: wrap;">
+                    <button type="button" class="btn-reveal-all-t3" onclick="window.toggleTask3Mask && window.toggleTask3Mask(this)" style="background: #ecfdf5; border: 1.5px solid #6ee7b7; color: #065f46; font-size: 0.78rem; font-weight: 700; padding: 5px 10px; border-radius: 6px; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; transition: all 0.2s ease;">
+                      <i class="fa-solid fa-chalkboard-user"></i> <span>Teacher Whiteboard Key</span>
+                    </button>
+                    <button type="button" onclick="window.toggleExamCardTimer('${tsaUid}', ${tsaMins})" style="background: #eff6ff; color: #1d4ed8; border: 1.5px solid #bfdbfe; padding: 5px 10px; border-radius: 7px; font-weight: 700; font-size: 0.8rem; cursor: pointer; display: inline-flex; align-items: center; gap: 5px;">
+                      <i class="fa-regular fa-clock" style="color: #2563eb;"></i> Timer (${tsaMins}m)
+                    </button>
+                    <button type="button" onclick="window.openExamCardProjector('${tsaUid}')" style="background: #f8fafc; color: #0f172a; border: 1.5px solid #cbd5e1; padding: 5px 10px; border-radius: 7px; font-weight: 700; font-size: 0.8rem; cursor: pointer; display: inline-flex; align-items: center; gap: 5px;">
+                      <i class="fa-solid fa-expand" style="color: #475569;"></i> Projector
+                    </button>
+                  </div>
                 </div>
                 ${task.instruction ? `<p style="font-size: 0.92rem; color: #475569; font-style: italic; margin-top: 0; margin-bottom: 12px;">${task.instruction}</p>` : ''}
                 
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; margin-bottom: 16px;">
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; margin-bottom: 14px;">
                   <!-- Side 1: Advancement / Progress -->
                   <div style="background: #f0fdf4; border: 1.5px solid #86efac; border-radius: 8px; padding: 14px;">
                     <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #86efac; padding-bottom: 6px; margin-bottom: 10px;">
@@ -6445,29 +6020,24 @@ export function renderLesson(lesson) {
                   </div>
                 </div>
 
-                <!-- Synthesis: Paragraph Builder -->
-                <div style="background: #fffbeb; border: 1.5px solid #fcd34d; border-radius: 8px; padding: 14px;">
-                  <h5 style="margin: 0 0 8px 0; color: #92400e; font-size: 1rem; display: flex; align-items: center; gap: 6px;">
-                    ${synthesisTitle}
-                  </h5>
-                  <p style="font-size: 0.92rem; color: #78350f; font-weight: 600; margin: 0 0 10px 0;">${synthesisPrompt}</p>
-                  
-                  <details class="support-connectives-drawer no-print" style="margin-bottom: 12px; background: #ffffff; border: 1px solid #fde68a; border-radius: 6px; padding: 6px 12px;" closed>
+                ${renderInlineTaskTimerBarHTML(tsaUid, tsaMins)}
+
+                <!-- Synthesis: Starters & Model -->
+                <div style="background: #fffbeb; border: 1.5px solid #fcd34d; border-radius: 8px; padding: 12px 14px; margin-top: 10px;">
+                  <details class="support-connectives-drawer no-print" style="background: #ffffff; border: 1px solid #fde68a; border-radius: 6px; padding: 6px 12px;" closed>
                     <summary style="cursor: pointer; font-size: 0.8rem; font-weight: 700; color: #92400e; display: flex; align-items: center; justify-content: space-between; user-select: none;">
-                      <span><i class="fa-solid fa-lightbulb"></i> Analytical Connectives (Click to Expand)</span>
+                      <span><i class="fa-solid fa-lightbulb"></i> Analytical Connectives (Tap to Expand)</span>
                       <span style="font-size: 0.72rem; color: #b45309;"><i class="fa-solid fa-chevron-down"></i> Expand</span>
                     </summary>
                     <div style="display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px;">
-                      ${connectives.map((c) => `<button type="button" class="connective-chip" data-connective="${c.replace(/"/g, '&quot;')}" style="background: #fffbeb; border: 1px solid #fde68a; color: #b45309; padding: 3px 10px; border-radius: 12px; font-size: 0.8rem; font-weight: 600; cursor: pointer; transition: all 0.15s ease;" title="Click to insert at cursor">${c}</button>`).join('')}
+                      ${connectives.map((c) => `<span class="wb-interactive-chip" data-action="toggle-wb-chip" role="button" tabindex="0" style="background: #fffbeb; border: 1px solid #fde68a; color: #b45309; padding: 3px 10px; border-radius: 12px; font-size: 0.8rem; font-weight: 600;">${c}</span>`).join('')}
                     </div>
                   </details>
 
-                  <textarea class="interactive-textarea" style="width: 100%; box-sizing: border-box; min-height: 90px; padding: 10px; border: 1px solid #fde68a; border-radius: 6px; font-size: 0.92rem; font-family: inherit; resize: vertical;" placeholder="${placeholderText}"></textarea>
-
                   ${modelAnswer
                 ? `
-                    <details class="model-paragraph-reveal" style="margin-top: 12px; border: 1px dashed #d97706; border-radius: 6px; padding: 8px 12px; background: #fffbeb;">
-                      <summary style="cursor: pointer; color: #b45309; font-weight: 700; font-size: 0.88rem; outline: none; display: flex; align-items: center; gap: 6px;"><i class="fa-solid fa-eye"></i> ${isLocalKs2 ? '[ Show Model Historian Answer ]' : isLocalKs3 ? '[ Show Model Analytical Response ]' : '[ Show Examiner-Grade Model Paragraph ]'}</summary>
+                    <details class="model-paragraph-reveal" style="margin-top: 10px; border: 1px dashed #d97706; border-radius: 6px; padding: 8px 12px; background: #fffbeb;">
+                      <summary style="cursor: pointer; color: #b45309; font-weight: 700; font-size: 0.88rem; outline: none; display: flex; align-items: center; gap: 6px;"><i class="fa-solid fa-eye"></i> ${isLocalKs2 ? 'Reveal Model Historian Answer' : isLocalKs3 ? 'Reveal Model Analytical Response' : 'Reveal Examiner-Grade Model Paragraph'}</summary>
                       <div class="scaffold-box model-box" style="margin-top: 10px; padding: 12px 15px; background: #ffffff; border-left: 3px solid #f59e0b; border-radius: 4px; font-size: 0.92rem; color: #78350f; line-height: 1.6; border: 1px solid #fde68a;">
                         ${modelAnswer}
                       </div>
@@ -6498,22 +6068,43 @@ export function renderLesson(lesson) {
               starter: 'A second key feature was... For example, this meant that...',
               model: '',
             };
+            const tfUid = `tf_${String(lesson.id || currentIndex).replace(/[^a-zA-Z0-9_-]/g, '_')}_${tIdx}`;
+            const tfMins = 5;
+            const tfStem = task.question || task.text || taskTitle;
+            const tfWords = Array.isArray(task?.word_bank) && task.word_bank.length > 0
+              ? task.word_bank
+              : Array.isArray(lesson?.vocab)
+                ? lesson.vocab.map((v) => (typeof v === 'object' ? v.term : v)).filter(Boolean)
+                : [];
+            registerUnifiedExamQuestion(tfUid, {
+              id: tfUid,
+              qCode: `Task ${tIdx + 1}`,
+              type: 'Two Key Features',
+              marks: 4,
+              marksDisplay: 'Two Key Features',
+              targetMins: tfMins,
+              inWorkbook: true,
+              mockTitle: 'In Printed Workbook',
+              questionText: tfStem,
+              stimulus: [f1.prompt, f2.prompt].filter(Boolean),
+              sourceExtract: '',
+              projectorFooter: 'Key Stage 3 History &bull; Two Key Features &bull; The History Revision Hub',
+            });
 
             htmlTasks += `
               <div class="task-box two-features-task-card" style="margin-bottom: 4px; background: #ffffff;">
                 <!-- Feature 1 -->
-                <div style="background: #f8fafc; border: 1.5px solid #cbd5e1; border-radius: 8px; padding: 14px; margin-bottom: 14px;">
+                <div style="background: #f8fafc; border: 1.5px solid #cbd5e1; border-radius: 8px; padding: 12px 14px; margin-bottom: 12px;">
                   <div style="font-weight: 800; color: #0369a1; font-size: 0.92rem; margin-bottom: 6px; display: flex; align-items: center; gap: 6px;">
                     <span style="background: #0284c7; color: #fff; width: 20px; height: 20px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 0.75rem;">1</span>
                     ${f1.prompt || 'Feature 1: Identify one key feature and provide supporting historical detail.'}
                   </div>
-                  ${f1.starter ? `<div style="font-size: 0.82rem; color: #64748b; font-style: italic; margin-bottom: 6px;"><strong>Starter:</strong> &ldquo;${f1.starter}&rdquo;</div>` : ''}
-                  <textarea class="interactive-textarea student-answer-input" style="width: 100%; box-sizing: border-box; min-height: 75px; padding: 10px; border: 1px solid #cbd5e1; border-radius: 6px; font-size: 0.92rem; line-height: 1.5;" placeholder="${f1.starter || 'One key feature was... Specifically, this involved...'}"></textarea>
+                  ${f1.starter ? `<div style="font-size: 0.84rem; color: #475569; font-style: italic;"><strong>Starter:</strong> &ldquo;${f1.starter}&rdquo;</div>` : ''}
                   ${f1.model
                 ? `
                     <details class="two-features-model" style="margin-top: 8px;">
-                      <summary style="cursor: pointer; color: #0369a1; font-weight: 700; font-size: 0.82rem;"><i class="fa-solid fa-eye"></i> [ Reveal Feature 1 Model ]</summary>
-                      <div style="margin-top: 6px; padding: 10px; background: #ffffff; border-left: 3px solid #0284c7; border-radius: 4px; font-size: 0.88rem; color: #1e293b; line-height: 1.5;">${formatBold ? formatBold(f1.model) : f1.model}</div>
+                      <summary style="cursor: pointer; color: #0369a1; font-weight: 700; font-size: 0.82rem;"><i class="fa-solid fa-eye"></i> Reveal Feature 1 Model</summary>
+                      <div class="model-box" style="margin-top: 6px; padding: 10px; background: #ffffff; border-left: 3px solid #0284c7; border-radius: 4px; font-size: 0.88rem; color: #1e293b; line-height: 1.5;">${formatBold ? formatBold(f1.model) : f1.model}</div>
                     </details>
                   `
                 : ''
@@ -6521,23 +6112,38 @@ export function renderLesson(lesson) {
                 </div>
 
                 <!-- Feature 2 -->
-                <div style="background: #f8fafc; border: 1.5px solid #cbd5e1; border-radius: 8px; padding: 14px;">
+                <div style="background: #f8fafc; border: 1.5px solid #cbd5e1; border-radius: 8px; padding: 12px 14px; margin-bottom: 10px;">
                   <div style="font-weight: 800; color: #0369a1; font-size: 0.92rem; margin-bottom: 6px; display: flex; align-items: center; gap: 6px;">
                     <span style="background: #0284c7; color: #fff; width: 20px; height: 20px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 0.75rem;">2</span>
                     ${f2.prompt || 'Feature 2: Identify a second key feature and provide supporting historical detail.'}
                   </div>
-                  ${f2.starter ? `<div style="font-size: 0.82rem; color: #64748b; font-style: italic; margin-bottom: 6px;"><strong>Starter:</strong> &ldquo;${f2.starter}&rdquo;</div>` : ''}
-                  <textarea class="interactive-textarea student-answer-input" style="width: 100%; box-sizing: border-box; min-height: 75px; padding: 10px; border: 1px solid #cbd5e1; border-radius: 6px; font-size: 0.92rem; line-height: 1.5;" placeholder="${f2.starter || 'A second key feature was... For example, this meant that...'}"></textarea>
+                  ${f2.starter ? `<div style="font-size: 0.84rem; color: #475569; font-style: italic;"><strong>Starter:</strong> &ldquo;${f2.starter}&rdquo;</div>` : ''}
                   ${f2.model
                 ? `
                     <details class="two-features-model" style="margin-top: 8px;">
-                      <summary style="cursor: pointer; color: #0369a1; font-weight: 700; font-size: 0.82rem;"><i class="fa-solid fa-eye"></i> [ Reveal Feature 2 Model ]</summary>
-                      <div style="margin-top: 6px; padding: 10px; background: #ffffff; border-left: 3px solid #0284c7; border-radius: 4px; font-size: 0.88rem; color: #1e293b; line-height: 1.5;">${formatBold ? formatBold(f2.model) : f2.model}</div>
+                      <summary style="cursor: pointer; color: #0369a1; font-weight: 700; font-size: 0.82rem;"><i class="fa-solid fa-eye"></i> Reveal Feature 2 Model</summary>
+                      <div class="model-box" style="margin-top: 6px; padding: 10px; background: #ffffff; border-left: 3px solid #0284c7; border-radius: 4px; font-size: 0.88rem; color: #1e293b; line-height: 1.5;">${formatBold ? formatBold(f2.model) : f2.model}</div>
                     </details>
                   `
                 : ''
               }
                 </div>
+
+                <div class="wb-unified-control-bar no-print" style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px;">
+                  <div>
+                    ${tfWords.length > 0 ? `<button type="button" class="btn btn-pedagogy btn-pedagogy-sm" data-action="toggle-element" data-target-id="tf-wb-${tfUid}" style="background: #f0fdfa; color: #0f766e; border: 1px solid #99f6e4; font-weight: 700; display: inline-flex; align-items: center; gap: 6px;"><i class="fa-solid fa-tags" style="color: #0d9488;"></i> Word Bank <i class="fa-solid fa-chevron-down wb-dd-chevron" style="font-size: 0.68rem; opacity: 0.75;"></i></button>` : ''}
+                  </div>
+                  <div style="display: flex; align-items: center; gap: 7px; margin-left: auto;">
+                    <button type="button" onclick="window.toggleExamCardTimer('${tfUid}', ${tfMins})" style="background: #eff6ff; color: #1d4ed8; border: 1.5px solid #bfdbfe; padding: 5px 10px; border-radius: 7px; font-weight: 700; font-size: 0.8rem; cursor: pointer; display: inline-flex; align-items: center; gap: 5px;">
+                      <i class="fa-regular fa-clock" style="color: #2563eb;"></i> Timer (${tfMins}m)
+                    </button>
+                    <button type="button" onclick="window.openExamCardProjector('${tfUid}')" style="background: #f8fafc; color: #0f172a; border: 1.5px solid #cbd5e1; padding: 5px 10px; border-radius: 7px; font-weight: 700; font-size: 0.8rem; cursor: pointer; display: inline-flex; align-items: center; gap: 5px;">
+                      <i class="fa-solid fa-expand" style="color: #475569;"></i> Projector
+                    </button>
+                  </div>
+                </div>
+                ${tfWords.length > 0 ? `<div id="tf-wb-${tfUid}" class="scaffold-box" style="display: none; background: #f8fafc; border: 1.5px solid #99f6e4; border-radius: 8px; padding: 11px 14px; margin-top: 8px;"><div style="display: flex; flex-wrap: wrap; gap: 6px; align-items: center;">${tfWords.map((w) => `<span class="wb-interactive-chip" data-action="toggle-wb-chip" role="button" tabindex="0" style="background: #f0fdfa; border: 1px solid #99f6e4; color: #115e59; font-size: 0.79rem; font-weight: 700; padding: 2.5px 9px; border-radius: 12px;">${w}</span>`).join('')}</div></div>` : ''}
+                ${renderInlineTaskTimerBarHTML(tfUid, tfMins)}
               </div>
             `;
             return;
@@ -6678,21 +6284,21 @@ export function renderLesson(lesson) {
               const narrativeColors = [
                 {
                   letter: '1',
-                  label: 'Beginning (1819)',
+                  label: 'Beginning (Trigger)',
                   bg: '#eff6ff',
                   border: '#93c5fd',
                   text: '#1e40af',
                 },
                 {
                   letter: '2',
-                  label: 'Middle (1830)',
+                  label: 'Middle (Development)',
                   bg: '#fffbeb',
                   border: '#fcd34d',
                   text: '#b45309',
                 },
                 {
                   letter: '3',
-                  label: 'End (1834)',
+                  label: 'End (Outcome)',
                   bg: '#f0fdf4',
                   border: '#86efac',
                   text: '#166534',
@@ -6797,21 +6403,50 @@ export function renderLesson(lesson) {
               `;
             }
 
-            // 4. Analytical Connectives Bank (Click to Insert)
+            // 4. Analytical Connectives Bank (Tap to Cross Off)
             if (essayConnectives.length > 0) {
               scaffoldingItemsHtml += `
                 <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 6px; padding: 10px 14px;">
                   <div style="font-size: 0.78rem; font-weight: 700; color: #0369a1; text-transform: uppercase; margin-bottom: 8px; display: flex; align-items: center; gap: 6px;">
-                    <i class="fa-solid fa-arrow-right-arrow-left"></i> ${isKs2 ? 'Helpful Sentence Starters (Click to Insert):' : task.type === 'narrative_account' ? 'Chronological &amp; Causal Connectives (Click to Insert):' : 'Analytical Connectives (Click to Insert):'}
+                    <i class="fa-solid fa-arrow-right-arrow-left"></i> ${isKs2 ? 'Helpful Sentence Starters:' : task.type === 'narrative_account' ? 'Chronological &amp; Causal Connectives:' : 'Analytical Connectives:'}
                   </div>
                   <div style="display: flex; flex-wrap: wrap; gap: 6px;">
-                    ${essayConnectives.map((c) => `<button type="button" class="connective-chip" data-connective="${c.replace(/"/g, '&quot;')}" style="background: #ffffff; border: 1px solid #bfdbfe; color: #1e40af; padding: 3px 10px; border-radius: 12px; font-size: 0.8rem; font-weight: 600; cursor: pointer; transition: all 0.15s ease;" title="Click to insert at cursor">${c}</button>`).join('')}
+                    ${essayConnectives.map((c) => `<span class="wb-interactive-chip" data-action="toggle-wb-chip" role="button" tabindex="0" title="Tap to cross off once used" style="background: #ffffff; border: 1px solid #bfdbfe; color: #1e40af; padding: 3px 10px; border-radius: 12px; font-size: 0.8rem; font-weight: 600;">${c}</span>`).join('')}
                   </div>
                 </div>
               `;
             }
 
             const ks3TaskUid = `ks3_ext_${String(lesson.id || currentIndex).replace(/[^a-zA-Z0-9_-]/g, '_')}_${tIdx}`;
+            const rawTaskHdr = String(task.tariff || task.title || task.topic || '');
+            const parsedTaskMinsMatch = rawTaskHdr.match(/(\d+)\s*mins?/i);
+            const ks3TaskTargetMins = parsedTaskMinsMatch
+              ? Math.max(1, parseInt(parsedTaskMinsMatch[1], 10))
+              : isKs2
+                ? 6
+                : task.type === 'narrative_account' || task.type === 'narrative_account_8m'
+                  ? 12
+                  : /consequence|short|1\s*paragraph/i.test(rawTaskHdr)
+                    ? 5
+                    : 12;
+
+            registerUnifiedExamQuestion(ks3TaskUid, {
+              id: ks3TaskUid,
+              qCode: isKs2 ? `Mission ${tIdx + 1}` : `Task ${tIdx + 1}`,
+              type: taskTitle,
+              marks: 8,
+              marksDisplay: isKs2 ? 'Historian Challenge' : badgeText.replace(/&bull;/g, '•'),
+              targetMins: ks3TaskTargetMins,
+              inWorkbook: true,
+              mockTitle: isKs2 ? 'In Pupil Workbook' : 'In Printed Workbook',
+              questionText: questionPrompt || taskTitle,
+              stimulus: stimulusList || [],
+              sourceExtract: '',
+              projectorFooter: isKs2
+                ? 'Key Stage 2 History &bull; Historian Writing Challenge &bull; The History Revision Hub'
+                : 'Key Stage 3 History &bull; Enquiry Writing &bull; The History Revision Hub',
+            });
+
             const wbTitleLabel = isKs2
               ? 'Historian Word Bank'
               : isLocalKs3
@@ -6821,10 +6456,7 @@ export function renderLesson(lesson) {
               wordBank.length > 0
                 ? `<button type="button" class="btn btn-pedagogy btn-pedagogy-sm" data-action="toggle-element" data-target-id="ks3-wb-${ks3TaskUid}" style="background: #f0fdfa; color: #0f766e; border: 1px solid #99f6e4; font-weight: 700; display: inline-flex; align-items: center; gap: 6px;"><i class="fa-solid fa-tags" style="color: #0d9488;"></i> Word Bank <i class="fa-solid fa-chevron-down wb-dd-chevron" style="font-size: 0.68rem; opacity: 0.75;"></i></button>`
                 : '';
-            const ks3ScafBtnLabel =
-              structureStrip.length > 0 || Boolean(peelHtml)
-                ? 'Sentence Starters &amp; Structure'
-                : 'Sentence Starters';
+            const ks3ScafBtnLabel = isKs2 ? 'Starter &amp; Clues' : 'Starters &amp; Plan';
             const ks3ScafBtnHtml = scaffoldingItemsHtml
               ? `<button type="button" class="btn btn-pedagogy btn-pedagogy-sm" data-action="toggle-element" data-target-id="ks3-scaf-${ks3TaskUid}" style="background: #f1f5f9; color: #1e3a8a; border: 1px solid #cbd5e1; font-weight: 600; display: inline-flex; align-items: center; gap: 6px;"><i class="fa-solid fa-wand-magic-sparkles" style="color: #2563eb;"></i> ${ks3ScafBtnLabel} <i class="fa-solid fa-chevron-down wb-dd-chevron" style="font-size: 0.68rem; opacity: 0.75;"></i></button>`
               : '';
@@ -6850,15 +6482,20 @@ export function renderLesson(lesson) {
                 </div>`
               : '';
 
-            const ks3ModelBtnLabel = isKs2
-              ? 'Reveal Model Historian Answer'
-              : isLocalKs3
-                ? 'Reveal Model Response'
-                : 'Reveal Examiner Model Response';
+            const ks3ModelBtnLabel = 'Reveal Answer';
 
             const ks3ModelBtnHtml = modelAnswer
-              ? `<button type="button" class="btn btn-pedagogy btn-pedagogy-sm btn-pedagogy-model" data-action="toggle-element" data-target-id="ks3-model-${ks3TaskUid}" title="${ks3ModelBtnLabel}" style="background: #f0fdf4; color: #166534; border: 1px solid #86efac; font-weight: 700; display: inline-flex; align-items: center; gap: 6px;"><i class="fa-solid fa-eye" style="color: #16a34a;"></i> ${ks3ModelBtnLabel}</button>`
+              ? `<button type="button" class="btn btn-pedagogy btn-pedagogy-sm btn-pedagogy-model" data-action="toggle-element" data-target-id="ks3-model-${ks3TaskUid}" title="Reveal Model Answer" style="background: #f0fdf4; color: #166534; border: 1.5px solid #86efac; font-weight: 700; display: inline-flex; align-items: center; gap: 6px;"><i class="fa-solid fa-eye" style="color: #16a34a;"></i> ${ks3ModelBtnLabel}</button>`
               : '';
+
+            const ks3TimerProjBtnsHtml = `
+              <button type="button" onclick="window.toggleExamCardTimer('${ks3TaskUid}', ${ks3TaskTargetMins})" style="background: #eff6ff; color: #1d4ed8; border: 1.5px solid #bfdbfe; padding: 5px 10px; border-radius: 7px; font-weight: 700; font-size: 0.8rem; cursor: pointer; display: inline-flex; align-items: center; gap: 5px;">
+                <i class="fa-regular fa-clock" style="color: #2563eb;"></i> Timer (${ks3TaskTargetMins}m)
+              </button>
+              <button type="button" onclick="window.openExamCardProjector('${ks3TaskUid}')" style="background: #f8fafc; color: #0f172a; border: 1.5px solid #cbd5e1; padding: 5px 10px; border-radius: 7px; font-weight: 700; font-size: 0.8rem; cursor: pointer; display: inline-flex; align-items: center; gap: 5px;">
+                <i class="fa-solid fa-expand" style="color: #475569;"></i> Projector
+              </button>
+            `;
 
             const ks3ModelDrawerHtml = modelAnswer
               ? `<div id="ks3-model-${ks3TaskUid}" class="scaffold-box model-box" style="display: none; margin-top: 8px; padding: 14px 16px; background: #f8fafc; border-left: 4px solid #0284c7; border-radius: 6px; font-size: 0.95rem; color: #1e293b; line-height: 1.65; border: 1px solid #e2e8f0; font-family: 'Georgia', serif;">
@@ -6877,52 +6514,25 @@ export function renderLesson(lesson) {
                 </div>`
               : '';
 
-            const ks3WritingStudioBtnHtml = isKs2
-              ? ''
-              : `<button type="button" class="btn-open-writing-studio no-print" onclick="event.stopPropagation(); if(window.openLessonInfographicModalToPart){window.openLessonInfographicModalToPart(3, '${lesson.id || currentIndex}', '${unitId}');}else if(window.openWritingStudioFromTask){window.openWritingStudioFromTask();}else if(window.openLessonInfographicModal){window.openLessonInfographicModal('${lesson.id || currentIndex}', '${unitId}');}" style="background: linear-gradient(135deg, #0284c7, #2563eb); color: #ffffff; border: none; font-size: 0.78rem; font-weight: 700; padding: 6px 12px; border-radius: 6px; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; box-shadow: 0 2px 5px rgba(2, 132, 199, 0.22); transition: transform 0.15s ease;" title="Open Writing Studio and Clue Ladder for right page task"><i class="fa-solid fa-pen-nib"></i> Writing Studio &amp; Clue Ladder</button>`;
-
-            const customPlaceholder = isKs2
-              ? 'Write your historian answer using the clues and key words above...'
-              : task.type === 'narrative_account'
-                ? 'Write your 3-paragraph narrative account following the chronological sequence (Beginning: Peterloo ➔ Middle: Swing Riots ➔ End: Tolpuddle)...'
-                : 'Compose your analytical argument here. Open Word Bank or Sentence Starters above if needed...';
-
-            const ks2FullPromptHtml =
-              isKs2 && questionPrompt
-                ? `<div class="ks2-writing-prompt-box" style="background: #f0f9ff; border: 1.5px solid #bae6fd; border-left: 4px solid #0284c7; border-radius: 8px; padding: 12px 14px; margin: 0 0 12px 0;">
-                    <div style="font-size: 0.74rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.05em; color: #0369a1; margin-bottom: 4px; display: flex; align-items: center; gap: 6px;">
-                      <i class="fa-solid fa-compass-drafting"></i> ${taskTitle}
-                    </div>
-                    <div style="font-size: 0.96rem; color: #0f172a; font-weight: 600; line-height: 1.55;">
-                      ${formatBold ? formatBold(questionPrompt) : questionPrompt}
-                    </div>
-                  </div>`
-                : '';
-
             htmlTasks += `
-              <div class="task-box extended-writing-task-card" style="margin-bottom: 4px; background: #ffffff;">
-                ${ks2FullPromptHtml}
+              <div class="task-box extended-writing-task-card" style="margin-bottom: 2px; background: #ffffff;">
                 ${stimulusHtml}
 
-                <div class="peel-scaffolding-drawer no-print" style="margin-bottom: 6px;">
+                <div class="peel-scaffolding-drawer no-print">
                   <div class="wb-unified-control-bar" style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px; padding-top: 2px;">
-                    <div style="display: flex; align-items: center; flex-wrap: wrap; gap: 8px;">
+                    <div style="display: flex; align-items: center; flex-wrap: wrap; gap: 7px;">
                       ${ks3WbBtnHtml}
                       ${ks3ScafBtnHtml}
                     </div>
-                    <div style="display: flex; align-items: center; flex-wrap: wrap; gap: 8px; margin-left: auto;">
+                    <div style="display: flex; align-items: center; flex-wrap: wrap; gap: 7px; margin-left: auto;">
                       ${ks3ModelBtnHtml}
-                      ${ks3WritingStudioBtnHtml}
+                      ${ks3TimerProjBtnsHtml}
                     </div>
                   </div>
                   ${ks3WbDrawerHtml}
                   ${ks3ScafDrawerHtml}
+                  ${renderInlineTaskTimerBarHTML(ks3TaskUid, ks3TaskTargetMins)}
                   ${ks3ModelDrawerHtml}
-                </div>
-
-                <div class="laptop-only-response-box" style="background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 8px; padding: 12px 14px; margin-top: 10px;">
-                  <label style="display: block; font-size: 0.82rem; font-weight: 700; color: #1e293b; margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.5px;">${isKs2 ? 'Your Historian Response:' : task.type === 'narrative_account' ? 'Student Response &bull; Chronological 3-Paragraph Narrative Account (Beginning, Middle, End):' : 'Student Response &bull; Structured Historical Argument:'}</label>
-                  <textarea class="interactive-textarea student-answer-input" style="width: 100%; box-sizing: border-box; min-height: 130px; padding: 10px 12px; border: 1.5px solid #cbd5e1; border-radius: 8px; font-size: 0.95rem; line-height: 1.6; font-family: inherit; resize: vertical; margin-bottom: 0;" placeholder="${customPlaceholder}" oninput="window.updateProgress()"></textarea>
                 </div>
               </div>
             `;
@@ -6936,28 +6546,47 @@ export function renderLesson(lesson) {
           if (clueParaMatch) {
             clueBtn = `<button class="btn btn-pedagogy btn-pedagogy-sm btn-pedagogy-clue" title="Find Evidence" data-action="scroll-to-para" data-target="para-${clueParaMatch[2]}"><i class="fa-solid fa-magnifying-glass"></i> Find Evidence</button>`;
           }
-          const hasPedagogyBtns = Boolean(
-            clueBtn || task.starter || task.clue || task.model || task.model_answer || task.answer,
-          );
+          const fallbackUid = `fb_task_${String(lesson.id || currentIndex).replace(/[^a-zA-Z0-9_-]/g, '_')}_${tIdx}`;
+          const fallbackMins = 5;
+          registerUnifiedExamQuestion(fallbackUid, {
+            id: fallbackUid,
+            qCode: `Task ${tIdx + 1}`,
+            type: 'Enquiry Question',
+            marks: 4,
+            marksDisplay: 'Workbook Task',
+            targetMins: fallbackMins,
+            inWorkbook: true,
+            mockTitle: 'In Printed Workbook',
+            questionText: cleaned || `Task ${tIdx + 1}`,
+            stimulus: [],
+            sourceExtract: '',
+            projectorFooter: isKs2
+              ? 'Key Stage 2 History &bull; Historian Task &bull; The History Revision Hub'
+              : 'Key Stage 3 History &bull; Workbook Task &bull; The History Revision Hub',
+          });
 
           htmlTasks += `
             <div class="do-now-card" style="background: #ffffff; border: none; padding: 0; margin: 0;">
-              <textarea class="student-answer-input" placeholder="Write your response here..." oninput="window.updateProgress()"></textarea>
-              ${
-                hasPedagogyBtns
-                  ? `
-                <div style="display: flex; align-items: center; flex-wrap: wrap; gap: 6px; margin-top: 8px;">
+              <div class="wb-unified-control-bar no-print" style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 6px;">
+                <div style="display: flex; align-items: center; flex-wrap: wrap; gap: 6px;">
                   ${clueBtn}
                   ${task.starter ? `<button class="btn btn-pedagogy btn-pedagogy-sm btn-pedagogy-starter" title="Sentence Starter" data-action="toggle-element" data-target-id="starter-${tIdx}"><i class="fa-solid fa-pen"></i> Sentence Starter</button>` : ''}
                   ${task.clue ? `<button class="btn btn-pedagogy btn-pedagogy-sm btn-pedagogy-clue" title="Clue" data-action="toggle-element" data-target-id="clue-${tIdx}"><i class="fa-solid fa-lightbulb"></i> Clue</button>` : ''}
-                  ${task.model || task.model_answer || task.answer ? `<button class="btn btn-pedagogy btn-pedagogy-sm btn-pedagogy-model" title="Reveal Model Answer" data-action="toggle-element" data-target-id="model-${tIdx}"><i class="fa-solid fa-eye"></i> Reveal Model Answer</button>` : ''}
                 </div>
-              `
-                  : ''
-              }
-              ${task.starter ? `<div id="starter-${tIdx}" class="scaffold-box starter-box" style="display:none;"><strong>Sentence Starter:</strong> ${task.starter}</div>` : ''}
-              ${task.clue ? `<div id="clue-${tIdx}" class="scaffold-box clue-box" style="display:none;"><strong>Clue Hint:</strong> ${task.clue}</div>` : ''}
-              ${task.model || task.model_answer || task.answer ? `<div id="model-${tIdx}" class="scaffold-box model-box" style="display:none;">${formatBold(task.model || task.model_answer || task.answer)}</div>` : ''}
+                <div style="display: flex; align-items: center; flex-wrap: wrap; gap: 6px; margin-left: auto;">
+                  ${task.model || task.model_answer || task.answer ? `<button class="btn btn-pedagogy btn-pedagogy-sm btn-pedagogy-model" title="Reveal Answer" data-action="toggle-element" data-target-id="model-${tIdx}"><i class="fa-solid fa-eye"></i> Reveal Answer</button>` : ''}
+                  <button type="button" onclick="window.toggleExamCardTimer('${fallbackUid}', ${fallbackMins})" style="background: #eff6ff; color: #1d4ed8; border: 1.5px solid #bfdbfe; padding: 5px 10px; border-radius: 7px; font-weight: 700; font-size: 0.8rem; cursor: pointer; display: inline-flex; align-items: center; gap: 5px;">
+                    <i class="fa-regular fa-clock" style="color: #2563eb;"></i> Timer (${fallbackMins}m)
+                  </button>
+                  <button type="button" onclick="window.openExamCardProjector('${fallbackUid}')" style="background: #f8fafc; color: #0f172a; border: 1.5px solid #cbd5e1; padding: 5px 10px; border-radius: 7px; font-weight: 700; font-size: 0.8rem; cursor: pointer; display: inline-flex; align-items: center; gap: 5px;">
+                    <i class="fa-solid fa-expand" style="color: #475569;"></i> Projector
+                  </button>
+                </div>
+              </div>
+              ${task.starter ? `<div id="starter-${tIdx}" class="scaffold-box starter-box" style="display:none; margin-top: 8px;"><strong>Sentence Starter:</strong> ${task.starter}</div>` : ''}
+              ${task.clue ? `<div id="clue-${tIdx}" class="scaffold-box clue-box" style="display:none; margin-top: 8px;"><strong>Clue Hint:</strong> ${task.clue}</div>` : ''}
+              ${renderInlineTaskTimerBarHTML(fallbackUid, fallbackMins)}
+              ${task.model || task.model_answer || task.answer ? `<div id="model-${tIdx}" class="scaffold-box model-box" style="display:none; margin-top: 8px;">${formatBold(task.model || task.model_answer || task.answer)}</div>` : ''}
             </div>
           `;
           })();
@@ -7008,7 +6637,14 @@ export function renderLesson(lesson) {
               ? `Workbook • p. ${wbPageNum}`
               : 'Workbook';
           const stemPreview = cleanStemForStripSummary(
-            task.question || task.stem || task.text || task.title || task.topic || `Workbook Activity ${tIdx + 1}`,
+            task.question ||
+              task.stem ||
+              task.text ||
+              task.prompt ||
+              task.synthesis_prompt ||
+              task.title ||
+              task.topic ||
+              `Workbook Activity ${tIdx + 1}`,
           );
 
           htmlTasks += `
@@ -7024,7 +6660,7 @@ export function renderLesson(lesson) {
                 <div class="wb-strip-right">
                   ${minsPillHtml}
                   <span class="wb-strip-toggle-txt">
-                    <span class="wb-lbl-closed">Answer</span><span class="wb-lbl-open">Close</span>
+                    <span class="wb-lbl-closed">Open</span><span class="wb-lbl-open">Close</span>
                     <i class="fa-solid fa-chevron-down wb-strip-caret"></i>
                   </span>
                 </div>
@@ -7203,7 +6839,116 @@ export function renderLesson(lesson) {
         )
       : [];
 
-  if ((lesson.exam_practice || preFetchedExtraMocks.length > 0) && (!isKs3 || !hasRenderableTasks)) {
+  // Build unified Workbook Map Task strips (e.g. cme_new L1 Map Tasks 1 & 2, and L2/L10/L12 secondary_map strips)
+  const unifiedMapStripItems = [];
+  if (!isKs3 && !isKs2) {
+    if (lesson.extended && lesson.extended.question && /map\s*task/i.test(lesson.extended.title || '')) {
+      const ext = lesson.extended;
+      let sourceHtml = '';
+      if (ext.source_a || ext.source_b) {
+        sourceHtml = `<div style="display: flex; flex-wrap: wrap; gap: 20px; margin: 12px 0;">`;
+        [
+          ['Source A', ext.source_a],
+          ['Source B', ext.source_b],
+        ].forEach(([lbl, sObj]) => {
+          if (!sObj) return;
+          const prov = typeof sObj === 'string' ? '' : sObj.provenance;
+          const content = typeof sObj === 'string' ? sObj : sObj.content;
+          const isImg =
+            typeof content === 'string' && /\.(?:png|jpe?g|webp|svg)$/i.test(content.trim());
+          const rendered = isImg
+            ? `<div style="text-align: center;"><img src="${getAssetUrl(content)}" style="max-width: 100%; max-height: 460px; object-fit: contain; border-radius: 6px; border: 1.5px solid #cbd5e1; cursor: zoom-in;" data-action="open-modal" data-src="${getAssetUrl(content)}" alt="${lbl}"></div>`
+            : String(content || '').replace(/\n/g, '<br>');
+          sourceHtml += `<div style="flex: 1 1 250px;"><strong style="color:#1e3a8a;display:block;margin-bottom:6px;">${lbl}</strong>${prov ? `<div style="color:#475569;margin-bottom:10px;font-style:italic;font-size:0.9rem;">${prov}</div>` : ''}<div style="border:1.5px solid #cbd5e1;border-radius:10px;padding:16px;background:#ffffff;">${rendered}</div></div>`;
+        });
+        sourceHtml += `</div>`;
+      }
+      const extUid = `ext_map_${String(lesson.id || currentIndex).replace(/[^a-zA-Z0-9_-]/g, '_')}`;
+      const hasExtWb = Array.isArray(ext.word_bank) && ext.word_bank.length > 0;
+      const hasExtHints = Array.isArray(ext.hints) && ext.hints.length > 0;
+      unifiedMapStripItems.push({
+        tariffTag: 'Map Task 1',
+        stemPreview: cleanStemForStripSummary(ext.title || ext.question || 'Map Task 1'),
+        bodyHtml: `
+          <div class="do-now-card" style="background: #ffffff; border: 1px solid #e2e8f0; margin-bottom: 0;">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 10px; flex-wrap: wrap; margin-bottom: 10px;">
+              <div style="font-weight: 700; font-size: 1.02rem; color: #0f172a; flex: 1 1 260px;">
+                ${formatBold(ext.question)}
+              </div>
+              <div style="display: inline-flex; flex-wrap: wrap; gap: 6px;">
+                ${ext.answer_image ? `<button type="button" class="btn btn-pedagogy btn-pedagogy-sm btn-pedagogy-model" data-action="toggle-element" data-target-id="extended-map-answer-${lesson.id}"><i class="fa-solid fa-map-location-dot"></i> Reveal Reference Map</button>` : ''}
+                <button type="button" class="btn btn-pedagogy btn-pedagogy-sm" style="background: #0284c7; color: #ffffff; border: 1px solid #0369a1;" data-action="toggle-element" data-target-id="extended-map-interactive-${lesson.id}"><i class="fa-solid fa-earth-americas"></i> Interactive Classroom Map</button>
+              </div>
+            </div>
+            ${sourceHtml}
+            ${hasExtWb || hasExtHints ? `
+              <div class="no-print" style="margin: 8px 0;">
+                <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+                  ${hasExtWb ? `<button type="button" class="btn btn-pedagogy btn-pedagogy-sm" data-action="toggle-element" data-target-id="ext-wb-${extUid}" style="background:#f0fdfa;color:#0f766e;border:1px solid #99f6e4;font-weight:700;"><i class="fa-solid fa-tags"></i> Word Bank</button>` : ''}
+                  ${hasExtHints ? `<button type="button" class="btn btn-pedagogy btn-pedagogy-sm" data-action="toggle-element" data-target-id="ext-hints-${extUid}" style="background:#f1f5f9;color:#1e3a8a;border:1px solid #cbd5e1;font-weight:600;"><i class="fa-solid fa-lightbulb"></i> Map Checklist</button>` : ''}
+                </div>
+                ${hasExtWb ? `<div id="ext-wb-${extUid}" class="scaffold-box" style="display:none;background:#f8fafc;border:1.5px solid #99f6e4;border-radius:8px;padding:10px 14px;margin-top:8px;"><div style="display:flex;flex-wrap:wrap;gap:6px;">${ext.word_bank.map((w) => `<span class="wb-interactive-chip" data-action="toggle-wb-chip" role="button" tabindex="0" style="background:#f0fdfa;border:1px solid #99f6e4;color:#115e59;font-size:0.8rem;font-weight:700;padding:2px 9px;border-radius:12px;">${w}</span>`).join('')}</div></div>` : ''}
+                ${hasExtHints ? `<div id="ext-hints-${extUid}" class="scaffold-box" style="display:none;background:#fffbeb;border:1px solid #fde68a;border-radius:8px;padding:10px 14px;margin-top:8px;"><ul style="margin:0;padding-left:20px;color:#92400e;font-size:0.88rem;line-height:1.5;">${ext.hints.map((h) => `<li>${formatBold(h)}</li>`).join('')}</ul></div>` : ''}
+              </div>
+            ` : ''}
+            ${ext.answer_image ? `
+              <div id="extended-map-answer-${lesson.id}" class="scaffold-box model-box" style="display:none; margin-top: 12px; border: 2px solid #16a34a; border-radius: 8px; padding: 14px; background: #f0fdf4;">
+                <strong style="color: #166534; font-size: 0.96rem; display: block; margin-bottom: 8px;"><i class="fa-solid fa-circle-check"></i> Reference Map:</strong>
+                <div style="text-align: center;"><img src="${getAssetUrl(ext.answer_image)}" data-action="open-modal" data-src="${getAssetUrl(ext.answer_image)}" style="max-width: 100%; max-height: 500px; object-fit: contain; border-radius: 6px; border: 1px solid #86efac; cursor: zoom-in;" /></div>
+              </div>
+            ` : ''}
+            <div id="extended-map-interactive-${lesson.id}" style="display:none; margin-top: 12px; border: 2px solid #0284c7; border-radius: 8px; padding: 14px; background: #f0f9ff;">
+              <div style="width: 100%; height: 400px; border-radius: 6px; overflow: hidden; border: 1.5px solid #0284c7;">
+                <iframe width="100%" height="100%" frameborder="0" scrolling="no" src="https://www.openstreetmap.org/export/embed.html?bbox=25.0%2C20.0%2C55.0%2C38.0&amp;layer=mapnik&amp;marker=31.5%2C35.0" style="border: 0;"></iframe>
+              </div>
+            </div>
+          </div>
+        `,
+      });
+    }
+
+    if (lesson.secondary_map) {
+      const sm = lesson.secondary_map;
+      const smContent = sm.source_a
+        ? typeof sm.source_a === 'string'
+          ? sm.source_a
+          : sm.source_a.content
+        : '';
+      const smHints =
+        sm.hints && sm.hints.length > 0
+          ? `<div style="margin-top: 12px; padding: 10px 14px; background: #fffbeb; border: 1px solid #fde68a; border-radius: 6px;"><strong style="color: #d97706;">Hints:</strong><ul style="margin: 5px 0 0 0; padding-left: 20px; color: #92400e; font-size: 0.9rem;">${sm.hints.map((h) => `<li>${formatBold(h)}</li>`).join('')}</ul></div>`
+          : '';
+      unifiedMapStripItems.push({
+        tariffTag: unifiedMapStripItems.length > 0 ? 'Map Task 2' : 'Map Task',
+        stemPreview: cleanStemForStripSummary(sm.title || sm.instructions || sm.question || 'Map Task'),
+        bodyHtml: `
+          <div class="do-now-card" style="background: #ffffff; border: 1px solid #e2e8f0; margin-bottom: 0;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; flex-wrap: wrap; gap: 8px;">
+              <div style="font-weight: 700; font-size: 1.04rem; color: #1e3a8a;">${sm.title || 'Workbook Map Task'}</div>
+              ${sm.answer_image ? `<button type="button" class="btn btn-pedagogy btn-pedagogy-sm btn-pedagogy-model" data-action="toggle-element" data-target-id="secondary-map-answer-${lesson.id}"><i class="fa-solid fa-map-location-dot"></i> Reveal Reference Map</button>` : ''}
+            </div>
+            <p style="font-size: 0.95rem; color: #334155; line-height: 1.5; margin-bottom: 12px;">${formatBold(sm.instructions || sm.question || '')}</p>
+            ${smContent ? `<div style="text-align: center; margin: 12px 0; border: 1.5px solid #cbd5e1; border-radius: 8px; padding: 12px; background: #f8fafc;"><img src="${getAssetUrl(smContent)}" data-action="open-modal" data-src="${getAssetUrl(smContent)}" style="max-width: 100%; max-height: 480px; object-fit: contain; border-radius: 4px; cursor: zoom-in;" alt="${sm.title || 'Map Task'}"></div>` : ''}
+            ${smHints}
+            ${sm.answer_image ? `
+              <div id="secondary-map-answer-${lesson.id}" class="scaffold-box model-box" style="display:none; margin-top: 14px; border: 2px solid #16a34a; border-radius: 8px; padding: 14px; background: #f0fdf4;">
+                <strong style="color: #166534; font-size: 0.98rem; display: block; margin-bottom: 8px;"><i class="fa-solid fa-circle-check"></i> Reference Map${sm.macro_map ? 's' : ''}</strong>
+                <div style="display: flex; flex-wrap: wrap; gap: 14px; justify-content: center;">
+                  <div style="flex: 1 1 280px; text-align: center;">
+                    <img src="${getAssetUrl(sm.answer_image)}" data-action="open-modal" data-src="${getAssetUrl(sm.answer_image)}" style="max-width: 100%; max-height: 460px; object-fit: contain; border-radius: 6px; border: 1px solid #bbf7d0; cursor: zoom-in;" alt="Reference Map">
+                  </div>
+                  ${sm.macro_map ? `<div style="flex: 1 1 280px; text-align: center;"><img src="${getAssetUrl(sm.macro_map)}" data-action="open-modal" data-src="${getAssetUrl(sm.macro_map)}" style="max-width: 100%; max-height: 460px; object-fit: contain; border-radius: 6px; border: 1px solid #bbf7d0; cursor: zoom-in;" alt="Regional Reference Map"></div>` : ''}
+                </div>
+                ${sm.historical_notes ? `<div style="margin-top: 10px; padding: 10px; background: #ffffff; border: 1px solid #86efac; border-radius: 6px; font-size: 0.9rem; color: #14532d; line-height: 1.45;"><strong>Historical Context:</strong> ${sm.historical_notes}</div>` : ''}
+              </div>
+            ` : ''}
+          </div>
+        `,
+      });
+    }
+  }
+
+  if ((lesson.exam_practice || preFetchedExtraMocks.length > 0 || unifiedMapStripItems.length > 0) && (!isKs3 || !hasRenderableTasks)) {
     let epQuestions = [];
     let epStimulus = [];
     if (Array.isArray(lesson.exam_practice)) {
@@ -7234,7 +6979,7 @@ export function renderLesson(lesson) {
       pdfUrl: mq.pdfUrl || '',
     }));
 
-    if (epQuestions.length > 0 || normalizedExtraMocks.length > 0) {
+    if (epQuestions.length > 0 || normalizedExtraMocks.length > 0 || unifiedMapStripItems.length > 0) {
       const isKs3Unit = isKs3;
 
       const practiceHeading = isKs3Unit
@@ -8367,6 +8112,7 @@ export function renderLesson(lesson) {
           'eee',
           'edexcel_medicine',
           'cme_new',
+          'gcse_cold_war',
           'weimar_nazi_germany',
           'usa',
         ].includes(unitId);
@@ -9328,27 +9074,7 @@ export function renderLesson(lesson) {
         const stemPreview = cleanStemForStripSummary(q.question);
         const hasAnyModel = Boolean(modelAns || q.model_tiers);
 
-        const timerBarHtml = isGCSE
-          ? `
-            <div id="exam-timer-bar-${qUid}" style="display: none; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; background: #0f172a; color: #ffffff; padding: 10px 16px; border-radius: 8px; margin-top: 12px;">
-              <div style="display: flex; align-items: center; gap: 10px;">
-                <i class="fa-solid fa-stopwatch" style="color: #38bdf8; font-size: 1.05rem;"></i>
-                <span style="font-size: 0.84rem; font-weight: 600; color: #cbd5e1;">Timed Exam Mode:</span>
-                <span id="exam-timer-display-${qUid}" style="font-family: 'Courier New', monospace; font-size: 1.2rem; font-weight: 800; color: #38bdf8; letter-spacing: 0.05em;">
-                  ${String(targetMins).padStart(2, '0')}:00
-                </span>
-              </div>
-              <div style="display: flex; align-items: center; gap: 6px;">
-                <button type="button" id="exam-timer-toggle-btn-${qUid}" onclick="window.toggleExamCardTimer('${qUid}', ${targetMins})" style="background: #2563eb; color: #ffffff; border: none; padding: 5px 12px; border-radius: 6px; font-weight: 700; font-size: 0.78rem; cursor: pointer;">
-                  Pause
-                </button>
-                <button type="button" onclick="window.resetExamCardTimer('${qUid}', ${targetMins})" style="background: #334155; color: #e2e8f0; border: none; padding: 5px 10px; border-radius: 6px; font-weight: 600; font-size: 0.78rem; cursor: pointer;">
-                  Reset
-                </button>
-              </div>
-            </div>
-          `
-          : '';
+        const timerBarHtml = isGCSE ? renderInlineTaskTimerBarHTML(qUid, targetMins) : '';
 
         const mockPdfLinkHtml =
           q._isExtraMock && q.pdfUrl && String(q.pdfUrl).includes('/mocks/')
@@ -9471,9 +9197,10 @@ export function renderLesson(lesson) {
         });
       });
 
+      const totalGreenInWb = greenQuestionEntries.length + unifiedMapStripItems.length;
       const countPillsHtml = [
-        greenQuestionEntries.length > 0
-          ? `<span class="wb-origin-pill wb-origin-green"><i class="fa-solid fa-book-open"></i> ${greenQuestionEntries.length} in Workbook</span>`
+        totalGreenInWb > 0
+          ? `<span class="wb-origin-pill wb-origin-green"><i class="fa-solid fa-book-open"></i> ${totalGreenInWb} in Workbook</span>`
           : '',
         blueQuestionEntries.length > 0
           ? `<span class="wb-origin-pill wb-origin-blue"><i class="fa-solid fa-layer-group"></i> ${blueQuestionEntries.length} Extra Practice</span>`
@@ -9486,6 +9213,31 @@ export function renderLesson(lesson) {
         '__WB_COUNT_PILLS_PLACEHOLDER__',
         countPillsHtml,
       );
+
+      unifiedMapStripItems.forEach((st) => {
+        htmlExamPractice += `
+          <details class="wb-question-strip wb-thin-strip wb-strip-green">
+            <summary>
+              <div class="wb-strip-left">
+                <span class="wb-origin-pill wb-origin-green" title="In Printed Workbook">
+                  <i class="fa-solid fa-book-open"></i> Workbook
+                </span>
+                <span class="wb-tariff-pill">${st.tariffTag}</span>
+                <span class="wb-stem-preview wb-strip-stem">${st.stemPreview}</span>
+              </div>
+              <div class="wb-strip-right">
+                <span class="wb-strip-toggle-txt">
+                  <span class="wb-lbl-closed">Open</span><span class="wb-lbl-open">Close</span>
+                  <i class="fa-solid fa-chevron-down wb-strip-caret"></i>
+                </span>
+              </div>
+            </summary>
+            <div class="wb-strip-body">
+              ${st.bodyHtml}
+            </div>
+          </details>
+        `;
+      });
 
       greenQuestionEntries.forEach(({ q, qIdx, meta }) => {
         htmlExamPractice += renderQuestion(q, qIdx, meta);
@@ -9719,15 +9471,22 @@ export function renderLesson(lesson) {
   );
   const shouldRenderGcseTask = !!(lesson.gcse_task && !hasExamPractice);
 
+  const hasUnrenderedExtendedQuestion = Boolean(
+    !isKs3 &&
+      lesson.extended &&
+      lesson.extended.question &&
+      !/map\s*task/i.test(lesson.extended.title || ''),
+  );
+
   if (
     shouldRenderGcseTask ||
-    (!isKs3 && lesson.extended && lesson.extended.question) ||
+    hasUnrenderedExtendedQuestion ||
     extractedExamTasks.length > 0
   ) {
     const gcseStripItems = [];
     let gcseHtml = '';
 
-    if (lesson.extended && lesson.extended.question) {
+    if (hasUnrenderedExtendedQuestion) {
       let hintsHtml = '';
       if (lesson.extended.hints && lesson.extended.hints.length > 0) {
         hintsHtml = `<div style="margin-top: 15px; padding: 10px; background: #fffbeb; border: 1px solid #fde68a; border-radius: 6px;"><strong style="color: #d97706;">Hints &amp; Structure Guide:</strong><ul style="margin: 5px 0 0 0; padding-left: 20px; color: #92400e;">${lesson.extended.hints.map((h) => `<li>${formatBold(h)}</li>`).join('')}</ul></div>`;
@@ -9949,75 +9708,7 @@ export function renderLesson(lesson) {
       });
     }
 
-    if (lesson.secondary_map) {
-      const sm = lesson.secondary_map;
-      let smContent = sm.source_a
-        ? typeof sm.source_a === 'string'
-          ? sm.source_a
-          : sm.source_a.content
-        : '';
-      let smHints = '';
-      if (sm.hints && sm.hints.length > 0) {
-        smHints = `<div style="margin-top: 15px; padding: 10px; background: #fffbeb; border: 1px solid #fde68a; border-radius: 6px;"><strong style="color: #d97706;">Hints:</strong><ul style="margin: 5px 0 0 0; padding-left: 20px; color: #92400e;">${sm.hints.map((h) => `<li>${formatBold(h)}</li>`).join('')}</ul></div>`;
-      }
-      gcseStripItems.push({
-        tariffTag: 'Map Task 2',
-        stemPreview: cleanStemForStripSummary(sm.title || sm.instructions || sm.question || 'Map Task 2'),
-        bodyHtml: `
-        <div class="do-now-card" style="background: #ffffff; border: 1px solid #e2e8f0; margin-bottom: 0;">
-          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; flex-wrap: wrap; gap: 8px;">
-            <div style="font-weight: 700; font-size: 1.08rem; color: #1e3a8a;">
-              ${sm.title}
-            </div>
-            ${sm.answer_image ? `<button class="btn btn-pedagogy btn-pedagogy-sm btn-pedagogy-model" data-action="toggle-element" data-target-id="secondary-map-answer-${lesson.id}"><i class="fa-solid fa-map-location-dot"></i> Reveal Reference Map</button>` : ''}
-          </div>
-          <p style="font-size: 0.95rem; color: #334155; line-height: 1.5; margin-bottom: 15px;">${formatBold(sm.instructions || sm.question)}</p>
-          ${smContent
-          ? `
-            <div style="text-align: center; margin: 15px 0; border: 1.5px solid #cbd5e1; border-radius: 8px; padding: 15px; background: #f8fafc;">
-              <img src="${getAssetUrl(smContent)}" style="max-width: 100%; max-height: 500px; object-fit: contain; border-radius: 4px;" alt="${sm.title}">
-            </div>
-          `
-          : ''
-        }
-          ${smHints}
-          ${sm.answer_image
-          ? `
-            <div id="secondary-map-answer-${lesson.id}" class="scaffold-box model-box" style="display:none; margin-top: 15px; border: 2px solid #16a34a; border-radius: 8px; padding: 15px; background: #f0fdf4;">
-              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
-                <strong style="color: #166534; font-size: 1rem;"><i class="fa-solid fa-circle-check"></i> Model Answer & Reference Maps</strong>
-              </div>
-              <div style="display: flex; flex-wrap: wrap; gap: 15px; justify-content: center; margin-top: 10px;">
-                <div style="flex: 1 1 300px; text-align: center;">
-                  <div style="font-size: 0.85rem; font-weight: 700; color: #166534; margin-bottom: 6px;">Israel & Occupied Territories Reference</div>
-                  <img src="${getAssetUrl(sm.answer_image)}" style="max-width: 100%; max-height: 480px; object-fit: contain; border-radius: 6px; border: 1px solid #bbf7d0;" alt="Reference Map">
-                </div>
-                ${sm.macro_map
-            ? `
-                  <div style="flex: 1 1 300px; text-align: center;">
-                    <div style="font-size: 0.85rem; font-weight: 700; color: #166534; margin-bottom: 6px;">1967 Six-Day War Territorial Shift</div>
-                    <img src="${getAssetUrl(sm.macro_map)}" style="max-width: 100%; max-height: 480px; object-fit: contain; border-radius: 6px; border: 1px solid #bbf7d0;" alt="Six-Day War Macro Map">
-                  </div>
-                `
-            : ''
-          }
-              </div>
-              ${sm.historical_notes
-            ? `
-                <div style="margin-top: 12px; padding: 10px; background: #ffffff; border: 1px solid #86efac; border-radius: 6px; font-size: 0.9rem; color: #14532d; line-height: 1.45;">
-                  <strong>Historical Context:</strong> ${sm.historical_notes}
-                </div>
-              `
-            : ''
-          }
-            </div>
-          `
-          : ''
-        }
-        </div>
-      `,
-      });
-    }
+    // Note: lesson.secondary_map is now rendered inside the single unified Workbook & Exam Practice station above.
 
     if (shouldRenderGcseTask) {
       if (lesson.gcse_task.tasks) {
@@ -10648,10 +10339,6 @@ export function renderLesson(lesson) {
 
   window.vocabMatchesFound = 0;
   if (window.resetVocabSelection) window.resetVocabSelection();
-  if (typeof document !== 'undefined' && document.body.classList.contains('teacher-mode-active')) {
-    if (typeof window.syncTeacherButtons === 'function') window.syncTeacherButtons(true);
-    if (typeof window.applyTeacherModeToLessonDOM === 'function') window.applyTeacherModeToLessonDOM(true);
-  }
   setTimeout(() => {
     if (window.mermaid) {
       try {

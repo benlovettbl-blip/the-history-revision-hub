@@ -120,8 +120,8 @@ window.UNIT_DATA = {
               },
               {
                 "time": "22–42m",
-                "label": "Dual-Scaffolded Historian Tasks",
-                "instruction": "Complete Tasks 1–4 using Foundation Clues and word banks, stretching confident primary pupils with Scholar Challenge prompts."
+                "label": "Historian Writing & Companion Booklet",
+                "instruction": "Complete Historian Writing Tasks 1–3 using the universal Sentence Starter, Historian Word Bank, and primary source clues."
               },
               {
                 "time": "42–50m",
@@ -236,36 +236,11 @@ window.UNIT_DATA = {
               "caption": "A sun-baked river-clay tablet from Ancient Sumer between the Tigris and Euphrates rivers, pressed with wedge-shaped grain records.",
               "author": "Sumerian Temple Scribe (Mesopotamia)",
               "date": "c. 3000 BC",
-              "context": "Around the same era as early Egypt, river farmers in Ancient Sumer pressed reed styluses into soft Tigris and Euphrates river mud to count barley harvests. **Hinge Question:** Why did all four earliest civilisations grow beside giant rivers that provided both water and soft mud?",
-              "source_context": "Around the same era as early Egypt, river farmers in Ancient Sumer pressed reed styluses into soft Tigris and Euphrates river mud to count barley harvests. **Hinge Question:** Why did all four earliest civilisations grow beside giant rivers that provided both water and soft mud?",
-              "hinge_question": "Why did all four earliest civilisations grow beside giant rivers that provided both water and soft mud?",
+              "context": "Around the same era as early Egypt, river farmers in Ancient Sumer pressed reed styluses into soft Tigris and Euphrates river mud to count barley harvests.",
+              "source_context": "Around the same era as early Egypt, river farmers in Ancient Sumer pressed reed styluses into soft Tigris and Euphrates river mud to count barley harvests.",
               "question_badge": "SUMERIAN CLAY TABLET",
               "question": "Inspect Source A. How did great rivers help early cities in Sumer and Egypt grow?",
               "model_answer": "Great rivers like the Tigris, Euphrates, and Nile gave early cities fresh drinking water, rich mud for bumper grain harvests, clay for bricks and tablets, and easy boat travel.",
-              "provenance_clues": {
-                "author": "Pressed into wet river clay by an early Sumerian temple record-keeper in Mesopotamia.",
-                "audience": "City officials counting stored barley rations and livestock beside the Tigris and Euphrates.",
-                "motive": "To keep accurate food records once fertile river farming created bustling walled cities.",
-                "hinge_question": "Why did all four earliest civilisations grow beside giant rivers that provided both water and soft mud?"
-              },
-              "teacher_notes": {
-                "hinge_question": "Why did all four earliest civilisations grow beside giant rivers that provided both water and soft mud?",
-                "source_context": "Around the same era as early Egypt, river farmers in Ancient Sumer pressed reed styluses into soft Tigris and Euphrates river mud to count barley harvests. **Hinge Question:** Why did all four earliest civilisations grow beside giant rivers that provided both water and soft mud?",
-                "provenance_breakdown": {
-                  "author": "Pressed into wet river clay by an early Sumerian temple record-keeper in Mesopotamia.",
-                  "audience": "City officials counting stored barley rations and livestock beside the Tigris and Euphrates.",
-                  "motive": "To keep accurate food records once fertile river farming created bustling walled cities."
-                }
-              },
-              "utility_enquiry": {
-                "question_badge": "SUMERIAN CLAY TABLET",
-                "model_answer": "Great rivers like the Tigris, Euphrates, and Nile gave early cities fresh drinking water, rich mud for bumper grain harvests, clay for bricks and tablets, and easy boat travel.",
-                "provenance_clues": {
-                  "author": "Pressed into wet river clay by an early Sumerian temple record-keeper in Mesopotamia.",
-                  "audience": "City officials counting stored barley rations and livestock beside the Tigris and Euphrates.",
-                  "motive": "To keep accurate food records once fertile river farming created bustling walled cities."
-                }
-              },
               "provenance": "Early dynastic Sumerian clay cuneiform accounting tablet from southern Mesopotamia (c. 3000 BC, museum collection)."
             },
             {
@@ -279,36 +254,11 @@ window.UNIT_DATA = {
               "caption": "Painted tomb wall scene showing a bare-chested Egyptian gardener pulling down a wooden shaduf rope to lift cool Nile canal water onto trees and crops.",
               "author": "Egyptian Tomb Painter for Sculptor Ipuy",
               "date": "New Kingdom painting showing timeless Nile irrigation",
-              "context": "When Nile floodwaters sank back into the river channel, farmers swung a counter-weighted wooden pole called a shaduf to hoist buckets of water onto higher banks. **Hinge Question:** How did the heavy mud weight on the back end of a shaduf save an Egyptian farmer’s strength?",
-              "source_context": "When Nile floodwaters sank back into the river channel, farmers swung a counter-weighted wooden pole called a shaduf to hoist buckets of water onto higher banks. **Hinge Question:** How did the heavy mud weight on the back end of a shaduf save an Egyptian farmer’s strength?",
-              "hinge_question": "How did the heavy mud weight on the back end of a shaduf save an Egyptian farmer’s strength?",
+              "context": "Painted on the wall of the Tomb of Ipuy at Deir el-Medina near Luxor, this New Kingdom scene shows an Egyptian gardener working beside a Nile canal during the dry season.",
+              "source_context": "Painted on the wall of the Tomb of Ipuy at Deir el-Medina near Luxor, this New Kingdom scene shows an Egyptian gardener working beside a Nile canal during the dry season.",
               "question_badge": "SHADUF WATER LEVER",
               "question": "Look closely at the wooden pole in Source B. How did this shaduf water dry fields?",
               "model_answer": "The farmer pulled the rope to dip a bucket into the Nile canal, and the heavy mud counterweight on the back swung the full bucket effortlessly up into field ditches.",
-              "provenance_clues": {
-                "author": "Painted on plaster by a skilled tomb artist at Deir el-Medina on the west bank of the Nile.",
-                "audience": "Tomb spirit of Ipuy and Egyptian gods blessing green gardens in the afterlife.",
-                "motive": "To celebrate fertile Nile gardens watered daily by clever wooden shaduf levers.",
-                "hinge_question": "How did the heavy mud weight on the back end of a shaduf save an Egyptian farmer’s strength?"
-              },
-              "teacher_notes": {
-                "hinge_question": "How did the heavy mud weight on the back end of a shaduf save an Egyptian farmer’s strength?",
-                "source_context": "When Nile floodwaters sank back into the river channel, farmers swung a counter-weighted wooden pole called a shaduf to hoist buckets of water onto higher banks. **Hinge Question:** How did the heavy mud weight on the back end of a shaduf save an Egyptian farmer’s strength?",
-                "provenance_breakdown": {
-                  "author": "Painted on plaster by a skilled tomb artist at Deir el-Medina on the west bank of the Nile.",
-                  "audience": "Tomb spirit of Ipuy and Egyptian gods blessing green gardens in the afterlife.",
-                  "motive": "To celebrate fertile Nile gardens watered daily by clever wooden shaduf levers."
-                }
-              },
-              "utility_enquiry": {
-                "question_badge": "SHADUF WATER LEVER",
-                "model_answer": "The farmer pulled the rope to dip a bucket into the Nile canal, and the heavy mud counterweight on the back swung the full bucket effortlessly up into field ditches.",
-                "provenance_clues": {
-                  "author": "Painted on plaster by a skilled tomb artist at Deir el-Medina on the west bank of the Nile.",
-                  "audience": "Tomb spirit of Ipuy and Egyptian gods blessing green gardens in the afterlife.",
-                  "motive": "To celebrate fertile Nile gardens watered daily by clever wooden shaduf levers."
-                }
-              },
               "provenance": "Wall painting of a shaduf irrigating a riverside garden, Tomb of Ipuy (TT217), Deir el-Medina, Luxor."
             }
           ]
@@ -335,36 +285,11 @@ window.UNIT_DATA = {
               "caption": "Shield-shaped green siltstone ceremonial palette carved on one side with King Narmer in the White Crown of Upper Egypt and on the other in the Red Crown of Lower Egypt.",
               "author": "Royal Egyptian Court Sculptor at Hierakonpolis",
               "date": "c. 3100 BC",
-              "context": "Discovered at a temple in southern Egypt, the carved Narmer Palette is one of history’s earliest royal monuments, celebrating King Narmer joining Upper and Lower Egypt. **Hinge Question:** Why did the sculptor carve King Narmer much taller than every other soldier and servant on the stone?",
-              "source_context": "Discovered at a temple in southern Egypt, the carved Narmer Palette is one of history’s earliest royal monuments, celebrating King Narmer joining Upper and Lower Egypt. **Hinge Question:** Why did the sculptor carve King Narmer much taller than every other soldier and servant on the stone?",
-              "hinge_question": "Why did the sculptor carve King Narmer much taller than every other soldier and servant on the stone?",
+              "context": "Discovered at a temple in southern Egypt, the carved Narmer Palette is one of history’s earliest royal monuments, celebrating King Narmer joining Upper and Lower Egypt.",
+              "source_context": "Discovered at a temple in southern Egypt, the carved Narmer Palette is one of history’s earliest royal monuments, celebrating King Narmer joining Upper and Lower Egypt.",
               "question_badge": "THE NARMER PALETTE",
               "question": "Examine King Narmer in Source C. How does this carving show he united two lands?",
               "model_answer": "Source C carves King Narmer towering above everyone else and wearing the crowns of both southern Upper Egypt and northern Lower Egypt, proving he united them around 3100 BC.",
-              "provenance_clues": {
-                "author": "Carved in fine river siltstone by a royal sculptor serving King Narmer around 3100 BC.",
-                "audience": "Egyptian gods and temple priests at Hierakonpolis witnessing royal power.",
-                "motive": "To honour King Narmer’s victory uniting Upper and Lower Egypt under one ruler.",
-                "hinge_question": "Why did the sculptor carve King Narmer much taller than every other soldier and servant on the stone?"
-              },
-              "teacher_notes": {
-                "hinge_question": "Why did the sculptor carve King Narmer much taller than every other soldier and servant on the stone?",
-                "source_context": "Discovered at a temple in southern Egypt, the carved Narmer Palette is one of history’s earliest royal monuments, celebrating King Narmer joining Upper and Lower Egypt. **Hinge Question:** Why did the sculptor carve King Narmer much taller than every other soldier and servant on the stone?",
-                "provenance_breakdown": {
-                  "author": "Carved in fine river siltstone by a royal sculptor serving King Narmer around 3100 BC.",
-                  "audience": "Egyptian gods and temple priests at Hierakonpolis witnessing royal power.",
-                  "motive": "To honour King Narmer’s victory uniting Upper and Lower Egypt under one ruler."
-                }
-              },
-              "utility_enquiry": {
-                "question_badge": "THE NARMER PALETTE",
-                "model_answer": "Source C carves King Narmer towering above everyone else and wearing the crowns of both southern Upper Egypt and northern Lower Egypt, proving he united them around 3100 BC.",
-                "provenance_clues": {
-                  "author": "Carved in fine river siltstone by a royal sculptor serving King Narmer around 3100 BC.",
-                  "audience": "Egyptian gods and temple priests at Hierakonpolis witnessing royal power.",
-                  "motive": "To honour King Narmer’s victory uniting Upper and Lower Egypt under one ruler."
-                }
-              },
               "provenance": "Ceremonial carved green siltstone Narmer Palette from Hierakonpolis (c. 3100 BC, Egyptian Museum, Cairo)."
             },
             {
@@ -378,36 +303,11 @@ window.UNIT_DATA = {
               "caption": "Carved and painted wooden model boat showing Egyptian crewmen rowing along the River Nile — ancient Egypt’s busy liquid highway.",
               "author": "Ancient Egyptian Tomb Workshop Woodcarver",
               "date": "c. 2000 BC (reflecting Nile travel since c. 3500 BC)",
-              "context": "Because the River Nile flows northwards towards the Mediterranean Sea while steady winds blow southwards, boats could drift north with the current and sail south! **Hinge Question:** Why was sailing a wooden boat along the River Nile far easier than dragging carts across hot desert sand?",
-              "source_context": "Because the River Nile flows northwards towards the Mediterranean Sea while steady winds blow southwards, boats could drift north with the current and sail south! **Hinge Question:** Why was sailing a wooden boat along the River Nile far easier than dragging carts across hot desert sand?",
-              "hinge_question": "Why was sailing a wooden boat along the River Nile far easier than dragging carts across hot desert sand?",
+              "context": "Placed inside a Middle Kingdom Egyptian tomb around 2000 BC, this painted wooden model shows a crew of oarsmen steering a river vessel along the Nile.",
+              "source_context": "Placed inside a Middle Kingdom Egyptian tomb around 2000 BC, this painted wooden model shows a crew of oarsmen steering a river vessel along the Nile.",
               "question_badge": "NILE WOODEN BOAT",
               "question": "Study the oarsmen in Source D. Why was the River Nile Egypt’s main highway?",
               "model_answer": "Dragging heavy goods across soft desert sand was exhausting, whereas boats glided north on the Nile current and raised sails to catch winds blowing south between towns.",
-              "provenance_clues": {
-                "author": "Carved and painted in cedar and sycamore wood by an Egyptian funerary craftworker.",
-                "audience": "Placed inside a noble tomb to carry the owner along heavenly Nile waterways.",
-                "motive": "To provide swift river transport just like real wooden trading boats on the Nile.",
-                "hinge_question": "Why was sailing a wooden boat along the River Nile far easier than dragging carts across hot desert sand?"
-              },
-              "teacher_notes": {
-                "hinge_question": "Why was sailing a wooden boat along the River Nile far easier than dragging carts across hot desert sand?",
-                "source_context": "Because the River Nile flows northwards towards the Mediterranean Sea while steady winds blow southwards, boats could drift north with the current and sail south! **Hinge Question:** Why was sailing a wooden boat along the River Nile far easier than dragging carts across hot desert sand?",
-                "provenance_breakdown": {
-                  "author": "Carved and painted in cedar and sycamore wood by an Egyptian funerary craftworker.",
-                  "audience": "Placed inside a noble tomb to carry the owner along heavenly Nile waterways.",
-                  "motive": "To provide swift river transport just like real wooden trading boats on the Nile."
-                }
-              },
-              "utility_enquiry": {
-                "question_badge": "NILE WOODEN BOAT",
-                "model_answer": "Dragging heavy goods across soft desert sand was exhausting, whereas boats glided north on the Nile current and raised sails to catch winds blowing south between towns.",
-                "provenance_clues": {
-                  "author": "Carved and painted in cedar and sycamore wood by an Egyptian funerary craftworker.",
-                  "audience": "Placed inside a noble tomb to carry the owner along heavenly Nile waterways.",
-                  "motive": "To provide swift river transport just like real wooden trading boats on the Nile."
-                }
-              },
               "provenance": "Painted wooden tomb model of a Nile river boat with seated oarsmen (Middle Kingdom, museum collection)."
             }
           ]
@@ -425,36 +325,11 @@ window.UNIT_DATA = {
           "caption": "A sun-baked river-clay tablet from Ancient Sumer between the Tigris and Euphrates rivers, pressed with wedge-shaped grain records.",
           "author": "Sumerian Temple Scribe (Mesopotamia)",
           "date": "c. 3000 BC",
-          "context": "Around the same era as early Egypt, river farmers in Ancient Sumer pressed reed styluses into soft Tigris and Euphrates river mud to count barley harvests. **Hinge Question:** Why did all four earliest civilisations grow beside giant rivers that provided both water and soft mud?",
-          "source_context": "Around the same era as early Egypt, river farmers in Ancient Sumer pressed reed styluses into soft Tigris and Euphrates river mud to count barley harvests. **Hinge Question:** Why did all four earliest civilisations grow beside giant rivers that provided both water and soft mud?",
-          "hinge_question": "Why did all four earliest civilisations grow beside giant rivers that provided both water and soft mud?",
+          "context": "Around the same era as early Egypt, river farmers in Ancient Sumer pressed reed styluses into soft Tigris and Euphrates river mud to count barley harvests.",
+          "source_context": "Around the same era as early Egypt, river farmers in Ancient Sumer pressed reed styluses into soft Tigris and Euphrates river mud to count barley harvests.",
           "question_badge": "SUMERIAN CLAY TABLET",
           "question": "Inspect Source A. How did great rivers help early cities in Sumer and Egypt grow?",
           "model_answer": "Great rivers like the Tigris, Euphrates, and Nile gave early cities fresh drinking water, rich mud for bumper grain harvests, clay for bricks and tablets, and easy boat travel.",
-          "provenance_clues": {
-            "author": "Pressed into wet river clay by an early Sumerian temple record-keeper in Mesopotamia.",
-            "audience": "City officials counting stored barley rations and livestock beside the Tigris and Euphrates.",
-            "motive": "To keep accurate food records once fertile river farming created bustling walled cities.",
-            "hinge_question": "Why did all four earliest civilisations grow beside giant rivers that provided both water and soft mud?"
-          },
-          "teacher_notes": {
-            "hinge_question": "Why did all four earliest civilisations grow beside giant rivers that provided both water and soft mud?",
-            "source_context": "Around the same era as early Egypt, river farmers in Ancient Sumer pressed reed styluses into soft Tigris and Euphrates river mud to count barley harvests. **Hinge Question:** Why did all four earliest civilisations grow beside giant rivers that provided both water and soft mud?",
-            "provenance_breakdown": {
-              "author": "Pressed into wet river clay by an early Sumerian temple record-keeper in Mesopotamia.",
-              "audience": "City officials counting stored barley rations and livestock beside the Tigris and Euphrates.",
-              "motive": "To keep accurate food records once fertile river farming created bustling walled cities."
-            }
-          },
-          "utility_enquiry": {
-            "question_badge": "SUMERIAN CLAY TABLET",
-            "model_answer": "Great rivers like the Tigris, Euphrates, and Nile gave early cities fresh drinking water, rich mud for bumper grain harvests, clay for bricks and tablets, and easy boat travel.",
-            "provenance_clues": {
-              "author": "Pressed into wet river clay by an early Sumerian temple record-keeper in Mesopotamia.",
-              "audience": "City officials counting stored barley rations and livestock beside the Tigris and Euphrates.",
-              "motive": "To keep accurate food records once fertile river farming created bustling walled cities."
-            }
-          },
           "provenance": "Early dynastic Sumerian clay cuneiform accounting tablet from southern Mesopotamia (c. 3000 BC, museum collection)."
         },
         {
@@ -468,36 +343,11 @@ window.UNIT_DATA = {
           "caption": "Painted tomb wall scene showing a bare-chested Egyptian gardener pulling down a wooden shaduf rope to lift cool Nile canal water onto trees and crops.",
           "author": "Egyptian Tomb Painter for Sculptor Ipuy",
           "date": "New Kingdom painting showing timeless Nile irrigation",
-          "context": "When Nile floodwaters sank back into the river channel, farmers swung a counter-weighted wooden pole called a shaduf to hoist buckets of water onto higher banks. **Hinge Question:** How did the heavy mud weight on the back end of a shaduf save an Egyptian farmer’s strength?",
-          "source_context": "When Nile floodwaters sank back into the river channel, farmers swung a counter-weighted wooden pole called a shaduf to hoist buckets of water onto higher banks. **Hinge Question:** How did the heavy mud weight on the back end of a shaduf save an Egyptian farmer’s strength?",
-          "hinge_question": "How did the heavy mud weight on the back end of a shaduf save an Egyptian farmer’s strength?",
+          "context": "Painted on the wall of the Tomb of Ipuy at Deir el-Medina near Luxor, this New Kingdom scene shows an Egyptian gardener working beside a Nile canal during the dry season.",
+          "source_context": "Painted on the wall of the Tomb of Ipuy at Deir el-Medina near Luxor, this New Kingdom scene shows an Egyptian gardener working beside a Nile canal during the dry season.",
           "question_badge": "SHADUF WATER LEVER",
           "question": "Look closely at the wooden pole in Source B. How did this shaduf water dry fields?",
           "model_answer": "The farmer pulled the rope to dip a bucket into the Nile canal, and the heavy mud counterweight on the back swung the full bucket effortlessly up into field ditches.",
-          "provenance_clues": {
-            "author": "Painted on plaster by a skilled tomb artist at Deir el-Medina on the west bank of the Nile.",
-            "audience": "Tomb spirit of Ipuy and Egyptian gods blessing green gardens in the afterlife.",
-            "motive": "To celebrate fertile Nile gardens watered daily by clever wooden shaduf levers.",
-            "hinge_question": "How did the heavy mud weight on the back end of a shaduf save an Egyptian farmer’s strength?"
-          },
-          "teacher_notes": {
-            "hinge_question": "How did the heavy mud weight on the back end of a shaduf save an Egyptian farmer’s strength?",
-            "source_context": "When Nile floodwaters sank back into the river channel, farmers swung a counter-weighted wooden pole called a shaduf to hoist buckets of water onto higher banks. **Hinge Question:** How did the heavy mud weight on the back end of a shaduf save an Egyptian farmer’s strength?",
-            "provenance_breakdown": {
-              "author": "Painted on plaster by a skilled tomb artist at Deir el-Medina on the west bank of the Nile.",
-              "audience": "Tomb spirit of Ipuy and Egyptian gods blessing green gardens in the afterlife.",
-              "motive": "To celebrate fertile Nile gardens watered daily by clever wooden shaduf levers."
-            }
-          },
-          "utility_enquiry": {
-            "question_badge": "SHADUF WATER LEVER",
-            "model_answer": "The farmer pulled the rope to dip a bucket into the Nile canal, and the heavy mud counterweight on the back swung the full bucket effortlessly up into field ditches.",
-            "provenance_clues": {
-              "author": "Painted on plaster by a skilled tomb artist at Deir el-Medina on the west bank of the Nile.",
-              "audience": "Tomb spirit of Ipuy and Egyptian gods blessing green gardens in the afterlife.",
-              "motive": "To celebrate fertile Nile gardens watered daily by clever wooden shaduf levers."
-            }
-          },
           "provenance": "Wall painting of a shaduf irrigating a riverside garden, Tomb of Ipuy (TT217), Deir el-Medina, Luxor."
         },
         {
@@ -511,36 +361,11 @@ window.UNIT_DATA = {
           "caption": "Shield-shaped green siltstone ceremonial palette carved on one side with King Narmer in the White Crown of Upper Egypt and on the other in the Red Crown of Lower Egypt.",
           "author": "Royal Egyptian Court Sculptor at Hierakonpolis",
           "date": "c. 3100 BC",
-          "context": "Discovered at a temple in southern Egypt, the carved Narmer Palette is one of history’s earliest royal monuments, celebrating King Narmer joining Upper and Lower Egypt. **Hinge Question:** Why did the sculptor carve King Narmer much taller than every other soldier and servant on the stone?",
-          "source_context": "Discovered at a temple in southern Egypt, the carved Narmer Palette is one of history’s earliest royal monuments, celebrating King Narmer joining Upper and Lower Egypt. **Hinge Question:** Why did the sculptor carve King Narmer much taller than every other soldier and servant on the stone?",
-          "hinge_question": "Why did the sculptor carve King Narmer much taller than every other soldier and servant on the stone?",
+          "context": "Discovered at a temple in southern Egypt, the carved Narmer Palette is one of history’s earliest royal monuments, celebrating King Narmer joining Upper and Lower Egypt.",
+          "source_context": "Discovered at a temple in southern Egypt, the carved Narmer Palette is one of history’s earliest royal monuments, celebrating King Narmer joining Upper and Lower Egypt.",
           "question_badge": "THE NARMER PALETTE",
           "question": "Examine King Narmer in Source C. How does this carving show he united two lands?",
           "model_answer": "Source C carves King Narmer towering above everyone else and wearing the crowns of both southern Upper Egypt and northern Lower Egypt, proving he united them around 3100 BC.",
-          "provenance_clues": {
-            "author": "Carved in fine river siltstone by a royal sculptor serving King Narmer around 3100 BC.",
-            "audience": "Egyptian gods and temple priests at Hierakonpolis witnessing royal power.",
-            "motive": "To honour King Narmer’s victory uniting Upper and Lower Egypt under one ruler.",
-            "hinge_question": "Why did the sculptor carve King Narmer much taller than every other soldier and servant on the stone?"
-          },
-          "teacher_notes": {
-            "hinge_question": "Why did the sculptor carve King Narmer much taller than every other soldier and servant on the stone?",
-            "source_context": "Discovered at a temple in southern Egypt, the carved Narmer Palette is one of history’s earliest royal monuments, celebrating King Narmer joining Upper and Lower Egypt. **Hinge Question:** Why did the sculptor carve King Narmer much taller than every other soldier and servant on the stone?",
-            "provenance_breakdown": {
-              "author": "Carved in fine river siltstone by a royal sculptor serving King Narmer around 3100 BC.",
-              "audience": "Egyptian gods and temple priests at Hierakonpolis witnessing royal power.",
-              "motive": "To honour King Narmer’s victory uniting Upper and Lower Egypt under one ruler."
-            }
-          },
-          "utility_enquiry": {
-            "question_badge": "THE NARMER PALETTE",
-            "model_answer": "Source C carves King Narmer towering above everyone else and wearing the crowns of both southern Upper Egypt and northern Lower Egypt, proving he united them around 3100 BC.",
-            "provenance_clues": {
-              "author": "Carved in fine river siltstone by a royal sculptor serving King Narmer around 3100 BC.",
-              "audience": "Egyptian gods and temple priests at Hierakonpolis witnessing royal power.",
-              "motive": "To honour King Narmer’s victory uniting Upper and Lower Egypt under one ruler."
-            }
-          },
           "provenance": "Ceremonial carved green siltstone Narmer Palette from Hierakonpolis (c. 3100 BC, Egyptian Museum, Cairo)."
         },
         {
@@ -554,36 +379,11 @@ window.UNIT_DATA = {
           "caption": "Carved and painted wooden model boat showing Egyptian crewmen rowing along the River Nile — ancient Egypt’s busy liquid highway.",
           "author": "Ancient Egyptian Tomb Workshop Woodcarver",
           "date": "c. 2000 BC (reflecting Nile travel since c. 3500 BC)",
-          "context": "Because the River Nile flows northwards towards the Mediterranean Sea while steady winds blow southwards, boats could drift north with the current and sail south! **Hinge Question:** Why was sailing a wooden boat along the River Nile far easier than dragging carts across hot desert sand?",
-          "source_context": "Because the River Nile flows northwards towards the Mediterranean Sea while steady winds blow southwards, boats could drift north with the current and sail south! **Hinge Question:** Why was sailing a wooden boat along the River Nile far easier than dragging carts across hot desert sand?",
-          "hinge_question": "Why was sailing a wooden boat along the River Nile far easier than dragging carts across hot desert sand?",
+          "context": "Placed inside a Middle Kingdom Egyptian tomb around 2000 BC, this painted wooden model shows a crew of oarsmen steering a river vessel along the Nile.",
+          "source_context": "Placed inside a Middle Kingdom Egyptian tomb around 2000 BC, this painted wooden model shows a crew of oarsmen steering a river vessel along the Nile.",
           "question_badge": "NILE WOODEN BOAT",
           "question": "Study the oarsmen in Source D. Why was the River Nile Egypt’s main highway?",
           "model_answer": "Dragging heavy goods across soft desert sand was exhausting, whereas boats glided north on the Nile current and raised sails to catch winds blowing south between towns.",
-          "provenance_clues": {
-            "author": "Carved and painted in cedar and sycamore wood by an Egyptian funerary craftworker.",
-            "audience": "Placed inside a noble tomb to carry the owner along heavenly Nile waterways.",
-            "motive": "To provide swift river transport just like real wooden trading boats on the Nile.",
-            "hinge_question": "Why was sailing a wooden boat along the River Nile far easier than dragging carts across hot desert sand?"
-          },
-          "teacher_notes": {
-            "hinge_question": "Why was sailing a wooden boat along the River Nile far easier than dragging carts across hot desert sand?",
-            "source_context": "Because the River Nile flows northwards towards the Mediterranean Sea while steady winds blow southwards, boats could drift north with the current and sail south! **Hinge Question:** Why was sailing a wooden boat along the River Nile far easier than dragging carts across hot desert sand?",
-            "provenance_breakdown": {
-              "author": "Carved and painted in cedar and sycamore wood by an Egyptian funerary craftworker.",
-              "audience": "Placed inside a noble tomb to carry the owner along heavenly Nile waterways.",
-              "motive": "To provide swift river transport just like real wooden trading boats on the Nile."
-            }
-          },
-          "utility_enquiry": {
-            "question_badge": "NILE WOODEN BOAT",
-            "model_answer": "Dragging heavy goods across soft desert sand was exhausting, whereas boats glided north on the Nile current and raised sails to catch winds blowing south between towns.",
-            "provenance_clues": {
-              "author": "Carved and painted in cedar and sycamore wood by an Egyptian funerary craftworker.",
-              "audience": "Placed inside a noble tomb to carry the owner along heavenly Nile waterways.",
-              "motive": "To provide swift river transport just like real wooden trading boats on the Nile."
-            }
-          },
           "provenance": "Painted wooden tomb model of a Nile river boat with seated oarsmen (Middle Kingdom, museum collection)."
         }
       ],
@@ -732,38 +532,38 @@ window.UNIT_DATA = {
       ],
       "tasks": [
         {
-          "id": "task_1",
+          "id": "ks2_ancient_egypt_l1_t1",
           "task_num": 1,
           "type": "source_clues",
+          "title": "1. Primary Evidence Detective",
           "topic": "1. Primary Evidence Detective",
-          "tag": "Source Clues",
-          "question": "Examine Sources B, C, and D. What clues do they reveal about Nile farming, travel, and kingship?",
-          "starter": "Looking closely at Sources B, C, and D, historians can learn vivid clues about early Egypt because...",
+          "question": "Inspect Source A. How did great rivers help early cities in Sumer and Egypt grow?",
+          "starter": "Looking closely at Source A, great rivers like the Tigris, Euphrates, and Nile helped early cities grow by...",
           "word_bank": [
-            "shaduf",
-            "Narmer Palette",
-            "Double Crown",
-            "wooden boats"
+            "River Nile",
+            "fertile mud",
+            "clay bricks",
+            "boat travel"
+          ],
+          "key_terms": [
+            "River Nile",
+            "fertile mud",
+            "clay bricks",
+            "boat travel"
           ],
           "hints": [
-            "Foundation Clues: Describe how the gardener in Source B swings a wooden shaduf lever to lift cool Nile water onto crops.",
-            "Foundation Clues: Explain what the wooden boat model (Source D) and carved Narmer Palette (Source C) show about travel and uniting Egypt.",
-            "Scholar Challenge: Explain why Source C carves King Narmer larger than everyone else and shows the crowns of both Upper and Lower Egypt!"
+            "List the everyday survival gifts rivers gave early cities in dry deserts.",
+            "Connect rich flood mud to bumper wheat and barley harvests, and river clay to bricks and tablets.",
+            "Mention how wide rivers worked as smooth water highways for trading boats."
           ],
-          "model_answer": "Looking closely at Sources B, C, and D, historians can learn vivid clues about early Egypt because Source B shows a gardener swinging a counter-weighted wooden shaduf to hoist Nile canal water onto thirsty crops. Source D’s painted wooden boat model proves Egyptians rowed and sailed along the Nile rather than dragging heavy loads across hot desert sand. Finally, Source C’s carved Narmer Palette shows King Narmer towering over his enemies while uniting Upper and Lower Egypt around 3100 BC under the Double Crown!",
-          "key_terms": [
-            "shaduf",
-            "Narmer Palette",
-            "Double Crown",
-            "wooden boats"
-          ]
+          "model_answer": "Looking closely at Source A, great rivers like the Tigris, Euphrates, and Nile helped early cities grow by supplying fresh drinking water and rich flood mud for bumper grain harvests. Riverbanks also gave soft clay for building bricks and writing tablets like Source A, while boats carried goods easily between towns."
         },
         {
-          "id": "task_2",
+          "id": "ks2_ancient_egypt_l1_t2",
           "task_num": 2,
           "type": "historical_explanation",
-          "topic": "2. Historical Explanation",
-          "tag": "Geographical Significance",
+          "title": "2. Historical Investigation",
+          "topic": "2. Historical Investigation",
           "question": "Name the four earliest river civilisations and explain why Egypt needed the Nile’s Black Land.",
           "starter": "Around 3500 BC, the world’s four earliest river civilisations grew beside giant rivers, including...",
           "word_bank": [
@@ -772,53 +572,26 @@ window.UNIT_DATA = {
             "Kemet",
             "Deshret"
           ],
-          "hints": [
-            "Foundation Clues: Name all four river cradles: Ancient Sumer, the Indus Valley, the Shang Dynasty, and Ancient Egypt.",
-            "Foundation Clues: Explain how the summer inundation spread rich black Kemet silt right next to hot red Deshret desert.",
-            "Scholar Challenge: Mention at least three useful plants (wheat, barley, flax, or papyrus) that grew in Kemet mud!"
-          ],
-          "model_answer": "Around 3500 BC, the world’s four earliest river civilisations grew beside giant rivers: Ancient Sumer on the Tigris and Euphrates, the Indus Valley, China’s Shang Dynasty on the Yellow River, and Ancient Egypt on the Nile. Almost no rain fell on Egypt’s scorching Deshret (Red Land) desert. Instead, every summer the Nile inundation flooded the valley and left fertile black mud called Kemet (Black Land), where farmers grew wheat, barley, flax for linen, and tall papyrus reeds!",
           "key_terms": [
             "Ancient Sumer",
             "inundation",
             "Kemet",
             "Deshret"
-          ]
-        },
-        {
-          "id": "task_3",
-          "task_num": 3,
-          "type": "living_history",
-          "topic": "3. Living History: Step Into Their Shoes",
-          "tag": "Personal Experiences",
-          "question": "Imagine you are an Egyptian farmer working beside the River Nile after the summer flood. Describe your day!",
-          "starter": "Stepping barefoot onto the cool black Kemet mud beside the sparkling Nile at sunrise, I...",
-          "word_bank": [
-            "Kemet",
-            "shaduf",
-            "flax",
-            "papyrus"
           ],
           "hints": [
-            "Foundation Clues: Describe feeling damp black Kemet mud underfoot while red Deshret desert cliffs shimmer in the heat nearby.",
-            "Foundation Clues: Describe swinging your wooden shaduf bucket to water wheat and flax, and watching wooden boats glide past.",
-            "Scholar Challenge: Explain how wooden trading boats drift north on the current yet sail south when the breeze fills their sails!"
+            "Name all four river cradles: Ancient Sumer, the Indus Valley, the Shang Dynasty, and Ancient Egypt.",
+            "Explain how the summer inundation spread rich black Kemet silt right next to hot red Deshret desert.",
+            "Mention at least three useful plants (wheat, barley, flax, or papyrus) that grew in Kemet mud!"
           ],
-          "model_answer": "Stepping barefoot onto the cool black Kemet mud beside the sparkling Nile at sunrise, I look past our green fields to the dry red cliffs of Deshret shimmering in the heat. All morning I pull down my wooden shaduf rope, letting its mud counterweight swing buckets of river water into ditches feeding our wheat and blue-flowered flax. Down by the tall papyrus reeds, wooden trading boats drift north on the current while others raise square sails to catch the breeze south!",
-          "key_terms": [
-            "Kemet",
-            "shaduf",
-            "flax",
-            "papyrus"
-          ]
+          "model_answer": "Around 3500 BC, the world’s four earliest river civilisations grew beside giant rivers: Ancient Sumer on the Tigris and Euphrates, the Indus Valley, China’s Shang Dynasty on the Yellow River, and Ancient Egypt on the Nile. Almost no rain fell on Egypt’s scorching Deshret (Red Land) desert. Instead, every summer the Nile inundation flooded the valley and left fertile black mud called Kemet (Black Land), where farmers grew wheat, barley, flax for linen, and tall papyrus reeds!"
         },
         {
-          "id": "task_4",
-          "task_num": 4,
+          "id": "ks2_ancient_egypt_l1_t3",
+          "task_num": 3,
           "type": "big_question",
-          "topic": "4. Mission Challenge • The Big Question",
-          "tag": "Historian Challenge",
-          "question": "Big Question: Why did an ancient historian call Egypt \"the Gift of the Nile\"?",
+          "title": "3. Mission Challenge • The Big Question",
+          "topic": "3. Mission Challenge • The Big Question",
+          "question": "Big Question: Where did the earliest river civilisations grow, and why did Ancient Egypt flourish beside the River Nile?",
           "starter": "Calling Ancient Egypt \"the Gift of the Nile\" makes complete historical sense because...",
           "word_bank": [
             "inundation",
@@ -826,18 +599,18 @@ window.UNIT_DATA = {
             "shaduf",
             "King Narmer"
           ],
-          "hints": [
-            "Foundation Clues: Explain how the annual inundation created fertile Kemet soil for bread, linen, and papyrus in a dry desert.",
-            "Foundation Clues: Describe how farmers watered gardens with shadufs and connected towns using wooden Nile river boats.",
-            "Scholar Challenge: Finish by explaining how the River Nile linked Upper Egypt and Lower Egypt so King Narmer could unite one kingdom around 3100 BC!"
-          ],
-          "model_answer": "Calling Ancient Egypt \"the Gift of the Nile\" makes complete historical sense because without the river Egypt would have been empty Sahara desert! Each summer, the inundation left rich black Kemet silt where villagers swung shadufs to grow wheat, barley, flax, and papyrus reeds. Just as importantly, the Nile acted as a liquid highway for wooden boats travelling north with the current and south with the wind, allowing King Narmer to unite Upper and Lower Egypt around 3100 BC under the Double Crown.",
           "key_terms": [
             "inundation",
             "Kemet",
             "shaduf",
             "King Narmer"
-          ]
+          ],
+          "hints": [
+            "Explain how the annual inundation created fertile Kemet soil for bread, linen, and papyrus in a dry desert.",
+            "Describe how farmers watered gardens with shadufs and connected towns using wooden Nile river boats.",
+            "Finish by explaining how the River Nile linked Upper Egypt and Lower Egypt so King Narmer could unite one kingdom around 3100 BC!"
+          ],
+          "model_answer": "Calling Ancient Egypt \"the Gift of the Nile\" makes complete historical sense because without the river Egypt would have been empty Sahara desert! Each summer, the inundation left rich black Kemet silt where villagers swung shadufs to grow wheat, barley, flax, and papyrus reeds. Just as importantly, the Nile acted as a liquid highway for wooden boats travelling north with the current and south with the wind, allowing King Narmer to unite Upper and Lower Egypt around 3100 BC under the Double Crown."
         }
       ],
       "quiz": [
@@ -1017,8 +790,8 @@ window.UNIT_DATA = {
               },
               {
                 "time": "22–42m",
-                "label": "Dual-Scaffolded Historian Tasks",
-                "instruction": "Complete Tasks 1–4 using Foundation Clues and word banks, stretching confident primary pupils with Scholar Challenge prompts."
+                "label": "Historian Writing & Companion Booklet",
+                "instruction": "Complete Historian Writing Tasks 1–3 using the universal Sentence Starter, Historian Word Bank, and primary source clues."
               },
               {
                 "time": "42–50m",
@@ -1139,36 +912,11 @@ window.UNIT_DATA = {
               "caption": "Close-up photograph showing the massive cut yellow-brown limestone blocks stacked in towering courses on Khufu’s Great Pyramid — next to tiny modern visitors for scale!",
               "author": "Old Kingdom Royal Quarrymen & Masons of Pharaoh Khufu",
               "date": "c. 2560 BC",
-              "context": "Pharaoh Khufu’s Great Pyramid contained roughly 2.3 million limestone blocks weighing around 2.5 tonnes each, originally wrapped in dazzling smooth white Tura limestone. **Hinge Question:** Look at the people standing beside the stones in Source A — why couldn’t workers simply carry these blocks on their shoulders?",
-              "source_context": "Pharaoh Khufu’s Great Pyramid contained roughly 2.3 million limestone blocks weighing around 2.5 tonnes each, originally wrapped in dazzling smooth white Tura limestone. **Hinge Question:** Look at the people standing beside the stones in Source A — why couldn’t workers simply carry these blocks on their shoulders?",
-              "hinge_question": "Look at the people standing beside the stones in Source A — why couldn’t workers simply carry these blocks on their shoulders?",
+              "context": "Pharaoh Khufu’s Great Pyramid contained roughly 2.3 million limestone blocks weighing around 2.5 tonnes each, originally wrapped in dazzling smooth white Tura limestone.",
+              "source_context": "Pharaoh Khufu’s Great Pyramid contained roughly 2.3 million limestone blocks weighing around 2.5 tonnes each, originally wrapped in dazzling smooth white Tura limestone.",
               "question_badge": "GREAT PYRAMID BLOCKS",
               "question": "Compare the visitors and blocks in Source A. What makes building this pyramid astonishing?",
               "model_answer": "Each chest-high limestone block weighed around 2.5 tonnes, yet builders cut, floated, and stacked 2.3 million stones 146 metres high without iron tools, cranes, or wheeled trucks!",
-              "provenance_clues": {
-                "author": "Cut and fitted by organised royal work-gangs serving Pharaoh Khufu during the Old Kingdom.",
-                "audience": "Egyptian gods in the sky and everyone gazing up across the Nile valley towards Giza.",
-                "motive": "To build an indestructible stone mountain protecting Khufu’s royal tomb for eternity.",
-                "hinge_question": "Look at the people standing beside the stones in Source A — why couldn’t workers simply carry these blocks on their shoulders?"
-              },
-              "teacher_notes": {
-                "hinge_question": "Look at the people standing beside the stones in Source A — why couldn’t workers simply carry these blocks on their shoulders?",
-                "source_context": "Pharaoh Khufu’s Great Pyramid contained roughly 2.3 million limestone blocks weighing around 2.5 tonnes each, originally wrapped in dazzling smooth white Tura limestone. **Hinge Question:** Look at the people standing beside the stones in Source A — why couldn’t workers simply carry these blocks on their shoulders?",
-                "provenance_breakdown": {
-                  "author": "Cut and fitted by organised royal work-gangs serving Pharaoh Khufu during the Old Kingdom.",
-                  "audience": "Egyptian gods in the sky and everyone gazing up across the Nile valley towards Giza.",
-                  "motive": "To build an indestructible stone mountain protecting Khufu’s royal tomb for eternity."
-                }
-              },
-              "utility_enquiry": {
-                "question_badge": "GREAT PYRAMID BLOCKS",
-                "model_answer": "Each chest-high limestone block weighed around 2.5 tonnes, yet builders cut, floated, and stacked 2.3 million stones 146 metres high without iron tools, cranes, or wheeled trucks!",
-                "provenance_clues": {
-                  "author": "Cut and fitted by organised royal work-gangs serving Pharaoh Khufu during the Old Kingdom.",
-                  "audience": "Egyptian gods in the sky and everyone gazing up across the Nile valley towards Giza.",
-                  "motive": "To build an indestructible stone mountain protecting Khufu’s royal tomb for eternity."
-                }
-              },
               "provenance": "Close-up view of the stepped core nummulitic limestone masonry courses of the Great Pyramid of Khufu, Giza Plateau (c. 2560 BC)."
             },
             {
@@ -1182,36 +930,11 @@ window.UNIT_DATA = {
               "caption": "A heavy Ancient Egyptian cast metal stone-working chisel hammered with wooden mallets to dress soft white limestone blocks.",
               "author": "Ancient Egyptian Royal Metalworker & Stonemason",
               "date": "Old to Middle Kingdom stone-dressing tool",
-              "context": "Old Kingdom quarrymen had no hard steel saws, so they pounded copper and bronze chisels with wooden mallets and soaked dry wooden wedges to split limestone neatly. **Hinge Question:** Why did toolsmiths have to keep heating and hammering copper chisels sharp again every single day at the quarry?",
-              "source_context": "Old Kingdom quarrymen had no hard steel saws, so they pounded copper and bronze chisels with wooden mallets and soaked dry wooden wedges to split limestone neatly. **Hinge Question:** Why did toolsmiths have to keep heating and hammering copper chisels sharp again every single day at the quarry?",
-              "hinge_question": "Why did toolsmiths have to keep heating and hammering copper chisels sharp again every single day at the quarry?",
+              "context": "Preserved from an Old Kingdom quarry site in Egypt, this cast copper-alloy stonemason's tool dates from an era centuries before iron or steel saws existed.",
+              "source_context": "Preserved from an Old Kingdom quarry site in Egypt, this cast copper-alloy stonemason's tool dates from an era centuries before iron or steel saws existed.",
               "question_badge": "STONEMASON’S CHISEL",
               "question": "Inspect Source B. How did masons shape millions of limestone blocks using simple tools?",
               "model_answer": "Masons struck copper chisels like Source B with wooden mallets to dress limestone smoothly, while quarry teams hammered dry wooden wedges into cracks and soaked them until rocks split.",
-              "provenance_clues": {
-                "author": "Cast in a charcoal furnace by an Egyptian coppersmith supplying royal quarry crews.",
-                "audience": "Skilled stonemasons dressing white Tura casing blocks and tomb walls.",
-                "motive": "To carve crisp flat stone faces that slotted tightly together without mortar gaps.",
-                "hinge_question": "Why did toolsmiths have to keep heating and hammering copper chisels sharp again every single day at the quarry?"
-              },
-              "teacher_notes": {
-                "hinge_question": "Why did toolsmiths have to keep heating and hammering copper chisels sharp again every single day at the quarry?",
-                "source_context": "Old Kingdom quarrymen had no hard steel saws, so they pounded copper and bronze chisels with wooden mallets and soaked dry wooden wedges to split limestone neatly. **Hinge Question:** Why did toolsmiths have to keep heating and hammering copper chisels sharp again every single day at the quarry?",
-                "provenance_breakdown": {
-                  "author": "Cast in a charcoal furnace by an Egyptian coppersmith supplying royal quarry crews.",
-                  "audience": "Skilled stonemasons dressing white Tura casing blocks and tomb walls.",
-                  "motive": "To carve crisp flat stone faces that slotted tightly together without mortar gaps."
-                }
-              },
-              "utility_enquiry": {
-                "question_badge": "STONEMASON’S CHISEL",
-                "model_answer": "Masons struck copper chisels like Source B with wooden mallets to dress limestone smoothly, while quarry teams hammered dry wooden wedges into cracks and soaked them until rocks split.",
-                "provenance_clues": {
-                  "author": "Cast in a charcoal furnace by an Egyptian coppersmith supplying royal quarry crews.",
-                  "audience": "Skilled stonemasons dressing white Tura casing blocks and tomb walls.",
-                  "motive": "To carve crisp flat stone faces that slotted tightly together without mortar gaps."
-                }
-              },
               "provenance": "Ancient Egyptian cast copper-alloy stonemason’s chisel (archaeological museum collection)."
             }
           ]
@@ -1238,36 +961,11 @@ window.UNIT_DATA = {
               "caption": "Polished dark diorite statue from Khafre’s Giza valley temple showing Pharaoh Khafre enthroned with the sky-god falcon Horus wrapping wings around his royal headcloth.",
               "author": "Royal Old Kingdom Temple Sculptor at Giza",
               "date": "c. 2520 BC",
-              "context": "Carved from ultra-hard dark diorite stone, this statue shows Khufu’s son Pharaoh Khafre sitting calmly while the sacred falcon god Horus shelters the back of his head. **Hinge Question:** What message did placing the falcon god Horus right behind Khafre’s head send to ordinary Egyptians?",
-              "source_context": "Carved from ultra-hard dark diorite stone, this statue shows Khufu’s son Pharaoh Khafre sitting calmly while the sacred falcon god Horus shelters the back of his head. **Hinge Question:** What message did placing the falcon god Horus right behind Khafre’s head send to ordinary Egyptians?",
-              "hinge_question": "What message did placing the falcon god Horus right behind Khafre’s head send to ordinary Egyptians?",
+              "context": "Carved from ultra-hard dark diorite stone, this statue shows Khufu’s son Pharaoh Khafre sitting calmly while the sacred falcon god Horus shelters the back of his head.",
+              "source_context": "Carved from ultra-hard dark diorite stone, this statue shows Khufu’s son Pharaoh Khafre sitting calmly while the sacred falcon god Horus shelters the back of his head.",
               "question_badge": "STATUE OF KHAFRE",
               "question": "Spot the falcon behind Khafre’s head in Source C. Why did Egyptians obey Pharaohs?",
               "model_answer": "The falcon god Horus wrapping wings around Khafre’s head showed that Old Kingdom Egyptians revered their Pharaoh as a living god chosen to keep order and bring good floods.",
-              "provenance_clues": {
-                "author": "Carved and polished with hard pounding stones by a master royal sculptor at Giza.",
-                "audience": "Temple priests making daily offerings and the eternal spirit of Pharaoh Khafre.",
-                "motive": "To display Pharaoh Khafre’s divine power as living Horus on earth forever.",
-                "hinge_question": "What message did placing the falcon god Horus right behind Khafre’s head send to ordinary Egyptians?"
-              },
-              "teacher_notes": {
-                "hinge_question": "What message did placing the falcon god Horus right behind Khafre’s head send to ordinary Egyptians?",
-                "source_context": "Carved from ultra-hard dark diorite stone, this statue shows Khufu’s son Pharaoh Khafre sitting calmly while the sacred falcon god Horus shelters the back of his head. **Hinge Question:** What message did placing the falcon god Horus right behind Khafre’s head send to ordinary Egyptians?",
-                "provenance_breakdown": {
-                  "author": "Carved and polished with hard pounding stones by a master royal sculptor at Giza.",
-                  "audience": "Temple priests making daily offerings and the eternal spirit of Pharaoh Khafre.",
-                  "motive": "To display Pharaoh Khafre’s divine power as living Horus on earth forever."
-                }
-              },
-              "utility_enquiry": {
-                "question_badge": "STATUE OF KHAFRE",
-                "model_answer": "The falcon god Horus wrapping wings around Khafre’s head showed that Old Kingdom Egyptians revered their Pharaoh as a living god chosen to keep order and bring good floods.",
-                "provenance_clues": {
-                  "author": "Carved and polished with hard pounding stones by a master royal sculptor at Giza.",
-                  "audience": "Temple priests making daily offerings and the eternal spirit of Pharaoh Khafre.",
-                  "motive": "To display Pharaoh Khafre’s divine power as living Horus on earth forever."
-                }
-              },
               "provenance": "Diorite statue of Pharaoh Khafre with the Horus falcon, from the Valley Temple of Khafre at Giza (c. 2520 BC, Egyptian Museum, Cairo)."
             },
             {
@@ -1281,36 +979,11 @@ window.UNIT_DATA = {
               "caption": "1839 painting by Scottish artist David Roberts showing desert windblown sand burying the Great Sphinx up to its shoulders in front of Giza’s pyramids.",
               "author": "David Roberts (Scottish Traveller & Painter)",
               "date": "Painted AD 1839 (depicting c. 2520 BC monuments)",
-              "context": "Carved directly from a giant limestone ridge for Pharaoh Khafre around 2520 BC, the Great Sphinx has a lion’s strong body and a pharaoh’s head — though desert winds buried its paws for centuries! **Hinge Question:** Why did a Pharaoh choose to combine a lion’s body with a royal human head to guard the Giza tombs?",
-              "source_context": "Carved directly from a giant limestone ridge for Pharaoh Khafre around 2520 BC, the Great Sphinx has a lion’s strong body and a pharaoh’s head — though desert winds buried its paws for centuries! **Hinge Question:** Why did a Pharaoh choose to combine a lion’s body with a royal human head to guard the Giza tombs?",
-              "hinge_question": "Why did a Pharaoh choose to combine a lion’s body with a royal human head to guard the Giza tombs?",
+              "context": "Carved directly from a giant limestone ridge for Pharaoh Khafre around 2520 BC, the Great Sphinx has a lion’s strong body and a pharaoh’s head — though desert winds buried its paws for centuries!",
+              "source_context": "Carved directly from a giant limestone ridge for Pharaoh Khafre around 2520 BC, the Great Sphinx has a lion’s strong body and a pharaoh’s head — though desert winds buried its paws for centuries!",
               "question_badge": "THE GREAT SPHINX",
               "question": "Look at Source D. What two creatures form the Sphinx, and what happened over time?",
               "model_answer": "The Great Sphinx combines a mighty lion’s body with Pharaoh Khafre’s royal head to guard Giza, and Source D shows how desert winds buried its body deep in sand before modern digs.",
-              "provenance_clues": {
-                "author": "Sketched on the spot at Giza in 1839 by Scottish artist David Roberts.",
-                "audience": "Nineteenth-century viewers fascinated by Ancient Egypt’s giant desert monuments.",
-                "motive": "To record the dramatic scale of Khafre’s Great Sphinx and Giza pyramids.",
-                "hinge_question": "Why did a Pharaoh choose to combine a lion’s body with a royal human head to guard the Giza tombs?"
-              },
-              "teacher_notes": {
-                "hinge_question": "Why did a Pharaoh choose to combine a lion’s body with a royal human head to guard the Giza tombs?",
-                "source_context": "Carved directly from a giant limestone ridge for Pharaoh Khafre around 2520 BC, the Great Sphinx has a lion’s strong body and a pharaoh’s head — though desert winds buried its paws for centuries! **Hinge Question:** Why did a Pharaoh choose to combine a lion’s body with a royal human head to guard the Giza tombs?",
-                "provenance_breakdown": {
-                  "author": "Sketched on the spot at Giza in 1839 by Scottish artist David Roberts.",
-                  "audience": "Nineteenth-century viewers fascinated by Ancient Egypt’s giant desert monuments.",
-                  "motive": "To record the dramatic scale of Khafre’s Great Sphinx and Giza pyramids."
-                }
-              },
-              "utility_enquiry": {
-                "question_badge": "THE GREAT SPHINX",
-                "model_answer": "The Great Sphinx combines a mighty lion’s body with Pharaoh Khafre’s royal head to guard Giza, and Source D shows how desert winds buried its body deep in sand before modern digs.",
-                "provenance_clues": {
-                  "author": "Sketched on the spot at Giza in 1839 by Scottish artist David Roberts.",
-                  "audience": "Nineteenth-century viewers fascinated by Ancient Egypt’s giant desert monuments.",
-                  "motive": "To record the dramatic scale of Khafre’s Great Sphinx and Giza pyramids."
-                }
-              },
               "provenance": "Hand-coloured lithograph \"Approach of the Simoom — Desert of Gizeh\" showing the Great Sphinx and Pyramids, by David Roberts (1839)."
             }
           ]
@@ -1328,36 +1001,11 @@ window.UNIT_DATA = {
           "caption": "Close-up photograph showing the massive cut yellow-brown limestone blocks stacked in towering courses on Khufu’s Great Pyramid — next to tiny modern visitors for scale!",
           "author": "Old Kingdom Royal Quarrymen & Masons of Pharaoh Khufu",
           "date": "c. 2560 BC",
-          "context": "Pharaoh Khufu’s Great Pyramid contained roughly 2.3 million limestone blocks weighing around 2.5 tonnes each, originally wrapped in dazzling smooth white Tura limestone. **Hinge Question:** Look at the people standing beside the stones in Source A — why couldn’t workers simply carry these blocks on their shoulders?",
-          "source_context": "Pharaoh Khufu’s Great Pyramid contained roughly 2.3 million limestone blocks weighing around 2.5 tonnes each, originally wrapped in dazzling smooth white Tura limestone. **Hinge Question:** Look at the people standing beside the stones in Source A — why couldn’t workers simply carry these blocks on their shoulders?",
-          "hinge_question": "Look at the people standing beside the stones in Source A — why couldn’t workers simply carry these blocks on their shoulders?",
+          "context": "Pharaoh Khufu’s Great Pyramid contained roughly 2.3 million limestone blocks weighing around 2.5 tonnes each, originally wrapped in dazzling smooth white Tura limestone.",
+          "source_context": "Pharaoh Khufu’s Great Pyramid contained roughly 2.3 million limestone blocks weighing around 2.5 tonnes each, originally wrapped in dazzling smooth white Tura limestone.",
           "question_badge": "GREAT PYRAMID BLOCKS",
           "question": "Compare the visitors and blocks in Source A. What makes building this pyramid astonishing?",
           "model_answer": "Each chest-high limestone block weighed around 2.5 tonnes, yet builders cut, floated, and stacked 2.3 million stones 146 metres high without iron tools, cranes, or wheeled trucks!",
-          "provenance_clues": {
-            "author": "Cut and fitted by organised royal work-gangs serving Pharaoh Khufu during the Old Kingdom.",
-            "audience": "Egyptian gods in the sky and everyone gazing up across the Nile valley towards Giza.",
-            "motive": "To build an indestructible stone mountain protecting Khufu’s royal tomb for eternity.",
-            "hinge_question": "Look at the people standing beside the stones in Source A — why couldn’t workers simply carry these blocks on their shoulders?"
-          },
-          "teacher_notes": {
-            "hinge_question": "Look at the people standing beside the stones in Source A — why couldn’t workers simply carry these blocks on their shoulders?",
-            "source_context": "Pharaoh Khufu’s Great Pyramid contained roughly 2.3 million limestone blocks weighing around 2.5 tonnes each, originally wrapped in dazzling smooth white Tura limestone. **Hinge Question:** Look at the people standing beside the stones in Source A — why couldn’t workers simply carry these blocks on their shoulders?",
-            "provenance_breakdown": {
-              "author": "Cut and fitted by organised royal work-gangs serving Pharaoh Khufu during the Old Kingdom.",
-              "audience": "Egyptian gods in the sky and everyone gazing up across the Nile valley towards Giza.",
-              "motive": "To build an indestructible stone mountain protecting Khufu’s royal tomb for eternity."
-            }
-          },
-          "utility_enquiry": {
-            "question_badge": "GREAT PYRAMID BLOCKS",
-            "model_answer": "Each chest-high limestone block weighed around 2.5 tonnes, yet builders cut, floated, and stacked 2.3 million stones 146 metres high without iron tools, cranes, or wheeled trucks!",
-            "provenance_clues": {
-              "author": "Cut and fitted by organised royal work-gangs serving Pharaoh Khufu during the Old Kingdom.",
-              "audience": "Egyptian gods in the sky and everyone gazing up across the Nile valley towards Giza.",
-              "motive": "To build an indestructible stone mountain protecting Khufu’s royal tomb for eternity."
-            }
-          },
           "provenance": "Close-up view of the stepped core nummulitic limestone masonry courses of the Great Pyramid of Khufu, Giza Plateau (c. 2560 BC)."
         },
         {
@@ -1371,36 +1019,11 @@ window.UNIT_DATA = {
           "caption": "A heavy Ancient Egyptian cast metal stone-working chisel hammered with wooden mallets to dress soft white limestone blocks.",
           "author": "Ancient Egyptian Royal Metalworker & Stonemason",
           "date": "Old to Middle Kingdom stone-dressing tool",
-          "context": "Old Kingdom quarrymen had no hard steel saws, so they pounded copper and bronze chisels with wooden mallets and soaked dry wooden wedges to split limestone neatly. **Hinge Question:** Why did toolsmiths have to keep heating and hammering copper chisels sharp again every single day at the quarry?",
-          "source_context": "Old Kingdom quarrymen had no hard steel saws, so they pounded copper and bronze chisels with wooden mallets and soaked dry wooden wedges to split limestone neatly. **Hinge Question:** Why did toolsmiths have to keep heating and hammering copper chisels sharp again every single day at the quarry?",
-          "hinge_question": "Why did toolsmiths have to keep heating and hammering copper chisels sharp again every single day at the quarry?",
+          "context": "Preserved from an Old Kingdom quarry site in Egypt, this cast copper-alloy stonemason's tool dates from an era centuries before iron or steel saws existed.",
+          "source_context": "Preserved from an Old Kingdom quarry site in Egypt, this cast copper-alloy stonemason's tool dates from an era centuries before iron or steel saws existed.",
           "question_badge": "STONEMASON’S CHISEL",
           "question": "Inspect Source B. How did masons shape millions of limestone blocks using simple tools?",
           "model_answer": "Masons struck copper chisels like Source B with wooden mallets to dress limestone smoothly, while quarry teams hammered dry wooden wedges into cracks and soaked them until rocks split.",
-          "provenance_clues": {
-            "author": "Cast in a charcoal furnace by an Egyptian coppersmith supplying royal quarry crews.",
-            "audience": "Skilled stonemasons dressing white Tura casing blocks and tomb walls.",
-            "motive": "To carve crisp flat stone faces that slotted tightly together without mortar gaps.",
-            "hinge_question": "Why did toolsmiths have to keep heating and hammering copper chisels sharp again every single day at the quarry?"
-          },
-          "teacher_notes": {
-            "hinge_question": "Why did toolsmiths have to keep heating and hammering copper chisels sharp again every single day at the quarry?",
-            "source_context": "Old Kingdom quarrymen had no hard steel saws, so they pounded copper and bronze chisels with wooden mallets and soaked dry wooden wedges to split limestone neatly. **Hinge Question:** Why did toolsmiths have to keep heating and hammering copper chisels sharp again every single day at the quarry?",
-            "provenance_breakdown": {
-              "author": "Cast in a charcoal furnace by an Egyptian coppersmith supplying royal quarry crews.",
-              "audience": "Skilled stonemasons dressing white Tura casing blocks and tomb walls.",
-              "motive": "To carve crisp flat stone faces that slotted tightly together without mortar gaps."
-            }
-          },
-          "utility_enquiry": {
-            "question_badge": "STONEMASON’S CHISEL",
-            "model_answer": "Masons struck copper chisels like Source B with wooden mallets to dress limestone smoothly, while quarry teams hammered dry wooden wedges into cracks and soaked them until rocks split.",
-            "provenance_clues": {
-              "author": "Cast in a charcoal furnace by an Egyptian coppersmith supplying royal quarry crews.",
-              "audience": "Skilled stonemasons dressing white Tura casing blocks and tomb walls.",
-              "motive": "To carve crisp flat stone faces that slotted tightly together without mortar gaps."
-            }
-          },
           "provenance": "Ancient Egyptian cast copper-alloy stonemason’s chisel (archaeological museum collection)."
         },
         {
@@ -1414,36 +1037,11 @@ window.UNIT_DATA = {
           "caption": "Polished dark diorite statue from Khafre’s Giza valley temple showing Pharaoh Khafre enthroned with the sky-god falcon Horus wrapping wings around his royal headcloth.",
           "author": "Royal Old Kingdom Temple Sculptor at Giza",
           "date": "c. 2520 BC",
-          "context": "Carved from ultra-hard dark diorite stone, this statue shows Khufu’s son Pharaoh Khafre sitting calmly while the sacred falcon god Horus shelters the back of his head. **Hinge Question:** What message did placing the falcon god Horus right behind Khafre’s head send to ordinary Egyptians?",
-          "source_context": "Carved from ultra-hard dark diorite stone, this statue shows Khufu’s son Pharaoh Khafre sitting calmly while the sacred falcon god Horus shelters the back of his head. **Hinge Question:** What message did placing the falcon god Horus right behind Khafre’s head send to ordinary Egyptians?",
-          "hinge_question": "What message did placing the falcon god Horus right behind Khafre’s head send to ordinary Egyptians?",
+          "context": "Carved from ultra-hard dark diorite stone, this statue shows Khufu’s son Pharaoh Khafre sitting calmly while the sacred falcon god Horus shelters the back of his head.",
+          "source_context": "Carved from ultra-hard dark diorite stone, this statue shows Khufu’s son Pharaoh Khafre sitting calmly while the sacred falcon god Horus shelters the back of his head.",
           "question_badge": "STATUE OF KHAFRE",
           "question": "Spot the falcon behind Khafre’s head in Source C. Why did Egyptians obey Pharaohs?",
           "model_answer": "The falcon god Horus wrapping wings around Khafre’s head showed that Old Kingdom Egyptians revered their Pharaoh as a living god chosen to keep order and bring good floods.",
-          "provenance_clues": {
-            "author": "Carved and polished with hard pounding stones by a master royal sculptor at Giza.",
-            "audience": "Temple priests making daily offerings and the eternal spirit of Pharaoh Khafre.",
-            "motive": "To display Pharaoh Khafre’s divine power as living Horus on earth forever.",
-            "hinge_question": "What message did placing the falcon god Horus right behind Khafre’s head send to ordinary Egyptians?"
-          },
-          "teacher_notes": {
-            "hinge_question": "What message did placing the falcon god Horus right behind Khafre’s head send to ordinary Egyptians?",
-            "source_context": "Carved from ultra-hard dark diorite stone, this statue shows Khufu’s son Pharaoh Khafre sitting calmly while the sacred falcon god Horus shelters the back of his head. **Hinge Question:** What message did placing the falcon god Horus right behind Khafre’s head send to ordinary Egyptians?",
-            "provenance_breakdown": {
-              "author": "Carved and polished with hard pounding stones by a master royal sculptor at Giza.",
-              "audience": "Temple priests making daily offerings and the eternal spirit of Pharaoh Khafre.",
-              "motive": "To display Pharaoh Khafre’s divine power as living Horus on earth forever."
-            }
-          },
-          "utility_enquiry": {
-            "question_badge": "STATUE OF KHAFRE",
-            "model_answer": "The falcon god Horus wrapping wings around Khafre’s head showed that Old Kingdom Egyptians revered their Pharaoh as a living god chosen to keep order and bring good floods.",
-            "provenance_clues": {
-              "author": "Carved and polished with hard pounding stones by a master royal sculptor at Giza.",
-              "audience": "Temple priests making daily offerings and the eternal spirit of Pharaoh Khafre.",
-              "motive": "To display Pharaoh Khafre’s divine power as living Horus on earth forever."
-            }
-          },
           "provenance": "Diorite statue of Pharaoh Khafre with the Horus falcon, from the Valley Temple of Khafre at Giza (c. 2520 BC, Egyptian Museum, Cairo)."
         },
         {
@@ -1457,36 +1055,11 @@ window.UNIT_DATA = {
           "caption": "1839 painting by Scottish artist David Roberts showing desert windblown sand burying the Great Sphinx up to its shoulders in front of Giza’s pyramids.",
           "author": "David Roberts (Scottish Traveller & Painter)",
           "date": "Painted AD 1839 (depicting c. 2520 BC monuments)",
-          "context": "Carved directly from a giant limestone ridge for Pharaoh Khafre around 2520 BC, the Great Sphinx has a lion’s strong body and a pharaoh’s head — though desert winds buried its paws for centuries! **Hinge Question:** Why did a Pharaoh choose to combine a lion’s body with a royal human head to guard the Giza tombs?",
-          "source_context": "Carved directly from a giant limestone ridge for Pharaoh Khafre around 2520 BC, the Great Sphinx has a lion’s strong body and a pharaoh’s head — though desert winds buried its paws for centuries! **Hinge Question:** Why did a Pharaoh choose to combine a lion’s body with a royal human head to guard the Giza tombs?",
-          "hinge_question": "Why did a Pharaoh choose to combine a lion’s body with a royal human head to guard the Giza tombs?",
+          "context": "Carved directly from a giant limestone ridge for Pharaoh Khafre around 2520 BC, the Great Sphinx has a lion’s strong body and a pharaoh’s head — though desert winds buried its paws for centuries!",
+          "source_context": "Carved directly from a giant limestone ridge for Pharaoh Khafre around 2520 BC, the Great Sphinx has a lion’s strong body and a pharaoh’s head — though desert winds buried its paws for centuries!",
           "question_badge": "THE GREAT SPHINX",
           "question": "Look at Source D. What two creatures form the Sphinx, and what happened over time?",
           "model_answer": "The Great Sphinx combines a mighty lion’s body with Pharaoh Khafre’s royal head to guard Giza, and Source D shows how desert winds buried its body deep in sand before modern digs.",
-          "provenance_clues": {
-            "author": "Sketched on the spot at Giza in 1839 by Scottish artist David Roberts.",
-            "audience": "Nineteenth-century viewers fascinated by Ancient Egypt’s giant desert monuments.",
-            "motive": "To record the dramatic scale of Khafre’s Great Sphinx and Giza pyramids.",
-            "hinge_question": "Why did a Pharaoh choose to combine a lion’s body with a royal human head to guard the Giza tombs?"
-          },
-          "teacher_notes": {
-            "hinge_question": "Why did a Pharaoh choose to combine a lion’s body with a royal human head to guard the Giza tombs?",
-            "source_context": "Carved directly from a giant limestone ridge for Pharaoh Khafre around 2520 BC, the Great Sphinx has a lion’s strong body and a pharaoh’s head — though desert winds buried its paws for centuries! **Hinge Question:** Why did a Pharaoh choose to combine a lion’s body with a royal human head to guard the Giza tombs?",
-            "provenance_breakdown": {
-              "author": "Sketched on the spot at Giza in 1839 by Scottish artist David Roberts.",
-              "audience": "Nineteenth-century viewers fascinated by Ancient Egypt’s giant desert monuments.",
-              "motive": "To record the dramatic scale of Khafre’s Great Sphinx and Giza pyramids."
-            }
-          },
-          "utility_enquiry": {
-            "question_badge": "THE GREAT SPHINX",
-            "model_answer": "The Great Sphinx combines a mighty lion’s body with Pharaoh Khafre’s royal head to guard Giza, and Source D shows how desert winds buried its body deep in sand before modern digs.",
-            "provenance_clues": {
-              "author": "Sketched on the spot at Giza in 1839 by Scottish artist David Roberts.",
-              "audience": "Nineteenth-century viewers fascinated by Ancient Egypt’s giant desert monuments.",
-              "motive": "To record the dramatic scale of Khafre’s Great Sphinx and Giza pyramids."
-            }
-          },
           "provenance": "Hand-coloured lithograph \"Approach of the Simoom — Desert of Gizeh\" showing the Great Sphinx and Pyramids, by David Roberts (1839)."
         }
       ],
@@ -1635,38 +1208,38 @@ window.UNIT_DATA = {
       ],
       "tasks": [
         {
-          "id": "task_1",
+          "id": "ks2_ancient_egypt_l2_t1",
           "task_num": 1,
           "type": "source_clues",
+          "title": "1. Primary Evidence Detective",
           "topic": "1. Primary Evidence Detective",
-          "tag": "Source Clues",
-          "question": "Examine Sources A, B, and C. What do they reveal about Pharaohs and pyramid stonework?",
-          "starter": "Inspecting Sources A, B, and C side by side, historians can explain why and how pyramids rose because...",
+          "question": "Compare the visitors and blocks in Source A. What makes building this pyramid astonishing?",
+          "starter": "Looking closely at Source A, the giant stepped limestone blocks of Khufu’s Great Pyramid are astonishing because...",
           "word_bank": [
-            "Horus",
-            "Pharaoh Khafre",
-            "limestone",
-            "copper chisels"
+            "2.3 million blocks",
+            "2.5 tonnes",
+            "146 metres",
+            "no cranes or wheels"
+          ],
+          "key_terms": [
+            "2.3 million blocks",
+            "2.5 tonnes",
+            "146 metres",
+            "no cranes or wheels"
           ],
           "hints": [
-            "Foundation Clues: Explain what the Horus falcon behind Pharaoh Khafre’s head (Source C) shows about Pharaohs as living gods.",
-            "Foundation Clues: Describe the giant limestone blocks in Source A and how masons dressed them with chisels like Source B.",
-            "Scholar Challenge: Mention how many blocks formed Khufu’s Great Pyramid (2.3 million) and how tall it stood (146 metres)!"
+            "Compare the tiny human visitors at the bottom with each chest-high limestone block.",
+            "Include key numbers: roughly 2.3 million blocks weighing 2.5 tonnes each, stacked 146 metres high!",
+            "Explain why achieving this without iron tools, cranes, or wheeled trucks amazes engineers."
           ],
-          "model_answer": "Inspecting Sources A, B, and C side by side, historians can explain why and how pyramids rose because Source C shows the falcon god Horus sheltering Pharaoh Khafre’s head, proving Egyptians revered their Pharaoh as a living god. Source A reveals the giant chest-high limestone blocks stacked 146 metres high across 2.3 million stones in Khufu’s Great Pyramid, while Source B shows the simple metal chisels masons tapped with wooden mallets to shape stone neatly without iron saws!",
-          "key_terms": [
-            "Horus",
-            "Pharaoh Khafre",
-            "limestone",
-            "copper chisels"
-          ]
+          "model_answer": "Looking closely at Source A, the giant stepped limestone blocks of Khufu’s Great Pyramid are astonishing because each chest-high stone weighed around 2.5 tonnes! Without iron tools, pulleys, or wheeled trucks, skilled Egyptian crews cut, floated, and dragged 2.3 million blocks up wet-sand ramps to stand 146 metres tall."
         },
         {
-          "id": "task_2",
+          "id": "ks2_ancient_egypt_l2_t2",
           "task_num": 2,
           "type": "historical_explanation",
-          "topic": "2. Historical Explanation",
-          "tag": "Historical Evidence",
+          "title": "2. Historical Investigation",
+          "topic": "2. Historical Investigation",
           "question": "Why did people once think slaves built the pyramids, and how did archaeologists prove that wrong?",
           "starter": "For hundreds of years, stories and films claimed whipped slaves built Giza’s pyramids, yet archaeology proves...",
           "word_bank": [
@@ -1675,53 +1248,26 @@ window.UNIT_DATA = {
             "fish rations",
             "doctors"
           ],
-          "hints": [
-            "Foundation Clues: Describe what archaeologists excavated right beside the tombs: neat walled builders’ villages and huge bread bakeries.",
-            "Foundation Clues: Mention the roasted cattle bones and salted fish rations that fed thousands of paid craftworkers and farmers.",
-            "Scholar Challenge: Explain what healed broken bones on builders’ skeletons prove about royal medical care on site!"
-          ],
-          "model_answer": "For hundreds of years, stories and films claimed whipped slaves built Giza’s pyramids, yet archaeology proves paid skilled workers and off-season Egyptian farmers built them instead! Digging near the pyramids, archaeologists uncovered neat walled builders’ villages filled with giant bread bakeries, prime cattle bones, and salted fish rations. Even better, skeletons from the workers’ cemetery showed broken bones carefully set and healed by royal doctors — care never given to mistreated slaves!",
           "key_terms": [
             "builders’ villages",
             "bakeries",
             "fish rations",
             "doctors"
-          ]
-        },
-        {
-          "id": "task_3",
-          "task_num": 3,
-          "type": "living_history",
-          "topic": "3. Living History: Step Into Their Shoes",
-          "tag": "Personal Experiences",
-          "question": "Imagine you are a seasonal farmer hauling limestone blocks for Pharaoh Khufu at Giza. Describe your day!",
-          "starter": "As the flooded Nile laps Giza’s harbour, my work-crew cheers and grabs the thick sledge ropes...",
-          "word_bank": [
-            "Tura limestone",
-            "barges",
-            "sledges",
-            "bakeries"
           ],
           "hints": [
-            "Foundation Clues: Describe unloading gleaming white Tura limestone blocks floated across the flooded Nile on wooden barges.",
-            "Foundation Clues: Explain why a teammate pours jars of water onto the sand right ahead of your wooden sledge.",
-            "Scholar Challenge: Describe heading back to the walled builders’ village at sunset to eat warm bread from the bakeries and salted fish rations!"
+            "Describe what archaeologists excavated right beside the tombs: neat walled builders’ villages and huge bread bakeries.",
+            "Mention the roasted cattle bones and salted fish rations that fed thousands of paid craftworkers and farmers.",
+            "Explain what healed broken bones on builders’ skeletons prove about royal medical care on site!"
           ],
-          "model_answer": "As the flooded Nile laps Giza’s harbour, my work-crew cheers and grabs the thick sledge ropes to unload gleaming white Tura limestone from a wooden barge! While our fields lie underwater during the summer inundation, we work proudly for Pharaoh Khufu. Our water-carrier pours jars of Nile water onto the sand right ahead of our wooden sledges so the two-tonne block slides smoothly up the ramp, before we feast on warm bread from the village bakeries and salted fish rations!",
-          "key_terms": [
-            "Tura limestone",
-            "barges",
-            "sledges",
-            "bakeries"
-          ]
+          "model_answer": "For hundreds of years, stories and films claimed whipped slaves built Giza’s pyramids, yet archaeology proves paid skilled workers and off-season Egyptian farmers built them instead! Digging near the pyramids, archaeologists uncovered neat walled builders’ villages filled with giant bread bakeries, prime cattle bones, and salted fish rations. Even better, skeletons from the workers’ cemetery showed broken bones carefully set and healed by royal doctors — care never given to mistreated slaves!"
         },
         {
-          "id": "task_4",
-          "task_num": 4,
+          "id": "ks2_ancient_egypt_l2_t3",
+          "task_num": 3,
           "type": "big_question",
-          "topic": "4. Mission Challenge • The Big Question",
-          "tag": "Historian Challenge",
-          "question": "Big Question: How did Old Kingdom Egyptians manage to build giant pyramids and the Great Sphinx?",
+          "title": "3. Mission Challenge • The Big Question",
+          "topic": "3. Mission Challenge • The Big Question",
+          "question": "Big Question: Why and how did Old Kingdom Egyptians build giant stone pyramids and the Great Sphinx at Giza?",
           "starter": "Old Kingdom Egyptians built giant stone tombs and the Great Sphinx through clever ideas and teamwork...",
           "word_bank": [
             "Imhotep",
@@ -1729,18 +1275,18 @@ window.UNIT_DATA = {
             "sledges",
             "Great Sphinx"
           ],
-          "hints": [
-            "Foundation Clues: Trace the story from Imhotep’s Step Pyramid at Saqqara (c. 2670 BC) to Khufu’s 146m Great Pyramid at Giza.",
-            "Foundation Clues: Explain how quarrymen used copper chisels, Nile flood barges, and wooden sledges pulled over wet sand.",
-            "Scholar Challenge: Finish with paid builders’ villages and Pharaoh Khafre carving a limestone ridge into the lion-bodied Great Sphinx!"
-          ],
-          "model_answer": "Old Kingdom Egyptians built giant stone tombs and the Great Sphinx through clever ideas and teamwork. After architect Imhotep stacked six tiers for Djoser’s Step Pyramid at Saqqara around 2670 BC, Pharaoh Khufu raised the 146-metre Great Pyramid at Giza from 2.3 million limestone blocks. Masons shaped rocks with copper chisels, floated white Tura limestone on Nile barges during the summer flood, and pulled wooden sledges over wet sand up ramps — all powered by well-fed paid workers who also carved Khafre’s Great Sphinx!",
           "key_terms": [
             "Imhotep",
             "Great Pyramid",
             "sledges",
             "Great Sphinx"
-          ]
+          ],
+          "hints": [
+            "Trace the story from Imhotep’s Step Pyramid at Saqqara (c. 2670 BC) to Khufu’s 146m Great Pyramid at Giza.",
+            "Explain how quarrymen used copper chisels, Nile flood barges, and wooden sledges pulled over wet sand.",
+            "Finish with paid builders’ villages and Pharaoh Khafre carving a limestone ridge into the lion-bodied Great Sphinx!"
+          ],
+          "model_answer": "Old Kingdom Egyptians built giant stone tombs and the Great Sphinx through clever ideas and teamwork. After architect Imhotep stacked six tiers for Djoser’s Step Pyramid at Saqqara around 2670 BC, Pharaoh Khufu raised the 146-metre Great Pyramid at Giza from 2.3 million limestone blocks. Masons shaped rocks with copper chisels, floated white Tura limestone on Nile barges during the summer flood, and pulled wooden sledges over wet sand up ramps — all powered by well-fed paid workers who also carved Khafre’s Great Sphinx!"
         }
       ],
       "quiz": [
@@ -1919,8 +1465,8 @@ window.UNIT_DATA = {
               },
               {
                 "time": "22–42m",
-                "label": "Dual-Scaffolded Historian Tasks",
-                "instruction": "Complete Tasks 1–4 using Foundation Clues and word banks, stretching confident primary pupils with Scholar Challenge prompts."
+                "label": "Historian Writing & Companion Booklet",
+                "instruction": "Complete Historian Writing Tasks 1–3 using the universal Sentence Starter, Historian Word Bank, and primary source clues."
               },
               {
                 "time": "42–50m",
@@ -2041,36 +1587,11 @@ window.UNIT_DATA = {
               "caption": "Broken slab of dark granodiorite stone carved with the exact same royal decree three times: sacred hieroglyphs at the top, everyday Demotic in the middle, and Ancient Greek at the bottom.",
               "author": "Egyptian Temple Priests of Memphis (for King Ptolemy V)",
               "date": "196 BC (unearthed at Rashid/Rosetta in AD 1799)",
-              "context": "For over 1,400 years nobody on Earth could read Egyptian hieroglyphs — until French soldiers dug up the Rosetta Stone in 1799 and Jean-François Champollion cracked it in 1822! **Hinge Question:** Why was having Ancient Greek carved at the bottom of the Rosetta Stone the vital clue that unlocked hieroglyphs?",
-              "source_context": "For over 1,400 years nobody on Earth could read Egyptian hieroglyphs — until French soldiers dug up the Rosetta Stone in 1799 and Jean-François Champollion cracked it in 1822! **Hinge Question:** Why was having Ancient Greek carved at the bottom of the Rosetta Stone the vital clue that unlocked hieroglyphs?",
-              "hinge_question": "Why was having Ancient Greek carved at the bottom of the Rosetta Stone the vital clue that unlocked hieroglyphs?",
+              "context": "For over 1,400 years nobody on Earth could read Egyptian hieroglyphs — until French soldiers dug up the Rosetta Stone in 1799 and Jean-François Champollion cracked it in 1822!",
+              "source_context": "For over 1,400 years nobody on Earth could read Egyptian hieroglyphs — until French soldiers dug up the Rosetta Stone in 1799 and Jean-François Champollion cracked it in 1822!",
               "question_badge": "THE ROSETTA STONE",
               "question": "Look at the three bands on Source A. How did Champollion crack hieroglyphs in 1822?",
               "model_answer": "Because scholars could already read the Ancient Greek band at the bottom, Jean-François Champollion matched Greek royal names like Ptolemy and Cleopatra to oval cartouches in the hieroglyphs!",
-              "provenance_clues": {
-                "author": "Carved in 196 BC by Egyptian priests honouring young ruler Ptolemy V.",
-                "audience": "Temple priests reading hieroglyphs, Egyptian scribes reading Demotic, and Greek-speaking officials.",
-                "motive": "To publish one royal decree in three scripts so every official in Egypt could read it.",
-                "hinge_question": "Why was having Ancient Greek carved at the bottom of the Rosetta Stone the vital clue that unlocked hieroglyphs?"
-              },
-              "teacher_notes": {
-                "hinge_question": "Why was having Ancient Greek carved at the bottom of the Rosetta Stone the vital clue that unlocked hieroglyphs?",
-                "source_context": "For over 1,400 years nobody on Earth could read Egyptian hieroglyphs — until French soldiers dug up the Rosetta Stone in 1799 and Jean-François Champollion cracked it in 1822! **Hinge Question:** Why was having Ancient Greek carved at the bottom of the Rosetta Stone the vital clue that unlocked hieroglyphs?",
-                "provenance_breakdown": {
-                  "author": "Carved in 196 BC by Egyptian priests honouring young ruler Ptolemy V.",
-                  "audience": "Temple priests reading hieroglyphs, Egyptian scribes reading Demotic, and Greek-speaking officials.",
-                  "motive": "To publish one royal decree in three scripts so every official in Egypt could read it."
-                }
-              },
-              "utility_enquiry": {
-                "question_badge": "THE ROSETTA STONE",
-                "model_answer": "Because scholars could already read the Ancient Greek band at the bottom, Jean-François Champollion matched Greek royal names like Ptolemy and Cleopatra to oval cartouches in the hieroglyphs!",
-                "provenance_clues": {
-                  "author": "Carved in 196 BC by Egyptian priests honouring young ruler Ptolemy V.",
-                  "audience": "Temple priests reading hieroglyphs, Egyptian scribes reading Demotic, and Greek-speaking officials.",
-                  "motive": "To publish one royal decree in three scripts so every official in Egypt could read it."
-                }
-              },
               "provenance": "The Rosetta Stone, dark granodiorite stele inscribed in hieroglyphic, Demotic, and Ancient Greek scripts (196 BC, British Museum, London)."
             },
             {
@@ -2084,36 +1605,11 @@ window.UNIT_DATA = {
               "caption": "Pressed golden-brown papyrus scroll covered in neat rows of Egyptian ink writing — using red ink for headings and black carbon ink for instructions.",
               "author": "Trained Egyptian Medical Scribe",
               "date": "c. 1600 BC (copying even older Old Kingdom notes)",
-              "context": "Scribes sliced sticky pith from Nile papyrus reeds, criss-crossed strips, and hammered them flat into smooth scrolls, then wrote with chewed rush brushes dipped in soot and red ochre ink. **Hinge Question:** Why did scribes paint important new headings in bright red ink while writing main sentences in black ink?",
-              "source_context": "Scribes sliced sticky pith from Nile papyrus reeds, criss-crossed strips, and hammered them flat into smooth scrolls, then wrote with chewed rush brushes dipped in soot and red ochre ink. **Hinge Question:** Why did scribes paint important new headings in bright red ink while writing main sentences in black ink?",
-              "hinge_question": "Why did scribes paint important new headings in bright red ink while writing main sentences in black ink?",
+              "context": "Scribes sliced sticky pith from Nile papyrus reeds, criss-crossed strips, and hammered them flat into smooth scrolls, then wrote with chewed rush brushes dipped in soot and red ochre ink.",
+              "source_context": "Scribes sliced sticky pith from Nile papyrus reeds, criss-crossed strips, and hammered them flat into smooth scrolls, then wrote with chewed rush brushes dipped in soot and red ochre ink.",
               "question_badge": "INK PAPYRUS SCROLL",
               "question": "Study the neat red and black ink on Source B. Why were scribes respected?",
               "model_answer": "Few Egyptians could read or write 700+ signs, so trained scribes wrote vital medical guides, tax lists, and royal letters on papyrus scrolls using red headings and black text.",
-              "provenance_clues": {
-                "author": "Handwritten with a chewed reed brush by a highly trained Egyptian medical scribe.",
-                "audience": "Egyptian doctors treating broken bones and wounds along the Nile.",
-                "motive": "To record careful step-by-step medical checks and treatments on light, roll-up papyrus.",
-                "hinge_question": "Why did scribes paint important new headings in bright red ink while writing main sentences in black ink?"
-              },
-              "teacher_notes": {
-                "hinge_question": "Why did scribes paint important new headings in bright red ink while writing main sentences in black ink?",
-                "source_context": "Scribes sliced sticky pith from Nile papyrus reeds, criss-crossed strips, and hammered them flat into smooth scrolls, then wrote with chewed rush brushes dipped in soot and red ochre ink. **Hinge Question:** Why did scribes paint important new headings in bright red ink while writing main sentences in black ink?",
-                "provenance_breakdown": {
-                  "author": "Handwritten with a chewed reed brush by a highly trained Egyptian medical scribe.",
-                  "audience": "Egyptian doctors treating broken bones and wounds along the Nile.",
-                  "motive": "To record careful step-by-step medical checks and treatments on light, roll-up papyrus."
-                }
-              },
-              "utility_enquiry": {
-                "question_badge": "INK PAPYRUS SCROLL",
-                "model_answer": "Few Egyptians could read or write 700+ signs, so trained scribes wrote vital medical guides, tax lists, and royal letters on papyrus scrolls using red headings and black text.",
-                "provenance_clues": {
-                  "author": "Handwritten with a chewed reed brush by a highly trained Egyptian medical scribe.",
-                  "audience": "Egyptian doctors treating broken bones and wounds along the Nile.",
-                  "motive": "To record careful step-by-step medical checks and treatments on light, roll-up papyrus."
-                }
-              },
               "provenance": "Columns of black and red ink script on the Edwin Smith surgical papyrus scroll (c. 1600 BC, New York Academy of Medicine)."
             }
           ]
@@ -2140,36 +1636,11 @@ window.UNIT_DATA = {
               "caption": "Source C: Turquoise Glazed Faience Thirty-Square Senet Game Board & Playing Pieces of Pharaoh Amenhotep III (c. 1390 BC, Brooklyn Museum).",
               "author": "Egyptian Royal Workshop Glaze Craftworker",
               "date": "c. 1390 BC (New Kingdom)",
-              "context": "Rich and poor Egyptians alike loved playing Senet (\"the game of passing\"): two players tossed flat throwing sticks like dice to race counters across thirty squares while blocking rivals! **Hinge Question:** How do historians know ordinary farmers played Senet too if fancy glazed boards like Source C came from wealthy tombs?",
-              "source_context": "Rich and poor Egyptians alike loved playing Senet (\"the game of passing\"): two players tossed flat throwing sticks like dice to race counters across thirty squares while blocking rivals! **Hinge Question:** How do historians know ordinary farmers played Senet too if fancy glazed boards like Source C came from wealthy tombs?",
-              "hinge_question": "How do historians know ordinary farmers played Senet too if fancy glazed boards like Source C came from wealthy tombs?",
+              "context": "Rich and poor Egyptians alike loved playing Senet (\"the game of passing\"): two players tossed flat throwing sticks like dice to race counters across thirty squares while blocking rivals!",
+              "source_context": "Rich and poor Egyptians alike loved playing Senet (\"the game of passing\"): two players tossed flat throwing sticks like dice to race counters across thirty squares while blocking rivals!",
               "question_badge": "SENET BOARD GAME",
               "question": "Count the squares on Source C. What does Senet show about everyday Egyptian fun?",
               "model_answer": "Source C’s thirty-square Senet board shows Egyptians loved board games after work — rich families owned glazed boxes while farmers scratched thirty Senet squares straight into stone steps or mud!",
-              "provenance_clues": {
-                "author": "Moulded and glazed in bright blue faience by a skilled New Kingdom craftworker.",
-                "audience": "Pairs of players enjoying evening games on cool rooftops — and tomb owners in the afterlife.",
-                "motive": "To provide entertaining thirty-square board races with throwing sticks and counters.",
-                "hinge_question": "How do historians know ordinary farmers played Senet too if fancy glazed boards like Source C came from wealthy tombs?"
-              },
-              "teacher_notes": {
-                "hinge_question": "How do historians know ordinary farmers played Senet too if fancy glazed boards like Source C came from wealthy tombs?",
-                "source_context": "Rich and poor Egyptians alike loved playing Senet (\"the game of passing\"): two players tossed flat throwing sticks like dice to race counters across thirty squares while blocking rivals! **Hinge Question:** How do historians know ordinary farmers played Senet too if fancy glazed boards like Source C came from wealthy tombs?",
-                "provenance_breakdown": {
-                  "author": "Moulded and glazed in bright blue faience by a skilled New Kingdom craftworker.",
-                  "audience": "Pairs of players enjoying evening games on cool rooftops — and tomb owners in the afterlife.",
-                  "motive": "To provide entertaining thirty-square board races with throwing sticks and counters."
-                }
-              },
-              "utility_enquiry": {
-                "question_badge": "SENET BOARD GAME",
-                "model_answer": "Source C’s thirty-square Senet board shows Egyptians loved board games after work — rich families owned glazed boxes while farmers scratched thirty Senet squares straight into stone steps or mud!",
-                "provenance_clues": {
-                  "author": "Moulded and glazed in bright blue faience by a skilled New Kingdom craftworker.",
-                  "audience": "Pairs of players enjoying evening games on cool rooftops — and tomb owners in the afterlife.",
-                  "motive": "To provide entertaining thirty-square board races with throwing sticks and counters."
-                }
-              },
               "provenance": "Blue glazed composition (faience) 30-square Senet game board with drawer and playing pieces (New Kingdom, Brooklyn Museum)."
             },
             {
@@ -2183,36 +1654,11 @@ window.UNIT_DATA = {
               "caption": "Light, airy sandals neatly plaited from dried Nile papyrus stalks and palm leaves with toe and ankle straps, preserved by dry desert sand.",
               "author": "Ancient Egyptian Village Sandal-Weaver",
               "date": "New Kingdom (c. 1500–1200 BC)",
-              "context": "Most villagers walked barefoot indoors and in muddy fields, slipping on light woven reed and palm-leaf sandals paired with white linen tunics when stepping onto baking desert paths. **Hinge Question:** Why were white linen clothes and woven reed sandals much smarter for Egypt’s climate than thick woollen coats and leather boots?",
-              "source_context": "Most villagers walked barefoot indoors and in muddy fields, slipping on light woven reed and palm-leaf sandals paired with white linen tunics when stepping onto baking desert paths. **Hinge Question:** Why were white linen clothes and woven reed sandals much smarter for Egypt’s climate than thick woollen coats and leather boots?",
-              "hinge_question": "Why were white linen clothes and woven reed sandals much smarter for Egypt’s climate than thick woollen coats and leather boots?",
+              "context": "Most villagers walked barefoot indoors and in muddy fields, slipping on light woven reed and palm-leaf sandals paired with white linen tunics when stepping onto baking desert paths.",
+              "source_context": "Most villagers walked barefoot indoors and in muddy fields, slipping on light woven reed and palm-leaf sandals paired with white linen tunics when stepping onto baking desert paths.",
               "question_badge": "WOVEN REED SANDALS",
               "question": "Inspect the plant fibres in Source D. Why did Egyptians wear linen and reed sandals?",
               "model_answer": "Egypt’s sun baked stone and sand fiercely, so light sandals woven from Nile papyrus and palm leaves protected soles while airy white linen reflected scorching heat.",
-              "provenance_clues": {
-                "author": "Plaited by hand by an Egyptian sandal-maker using dried Nile papyrus and palm leaves.",
-                "audience": "Everyday Egyptian wearers walking across hot courtyards and dusty village lanes.",
-                "motive": "To protect bare feet from hot stones using cheap, plentiful riverside plants.",
-                "hinge_question": "Why were white linen clothes and woven reed sandals much smarter for Egypt’s climate than thick woollen coats and leather boots?"
-              },
-              "teacher_notes": {
-                "hinge_question": "Why were white linen clothes and woven reed sandals much smarter for Egypt’s climate than thick woollen coats and leather boots?",
-                "source_context": "Most villagers walked barefoot indoors and in muddy fields, slipping on light woven reed and palm-leaf sandals paired with white linen tunics when stepping onto baking desert paths. **Hinge Question:** Why were white linen clothes and woven reed sandals much smarter for Egypt’s climate than thick woollen coats and leather boots?",
-                "provenance_breakdown": {
-                  "author": "Plaited by hand by an Egyptian sandal-maker using dried Nile papyrus and palm leaves.",
-                  "audience": "Everyday Egyptian wearers walking across hot courtyards and dusty village lanes.",
-                  "motive": "To protect bare feet from hot stones using cheap, plentiful riverside plants."
-                }
-              },
-              "utility_enquiry": {
-                "question_badge": "WOVEN REED SANDALS",
-                "model_answer": "Egypt’s sun baked stone and sand fiercely, so light sandals woven from Nile papyrus and palm leaves protected soles while airy white linen reflected scorching heat.",
-                "provenance_clues": {
-                  "author": "Plaited by hand by an Egyptian sandal-maker using dried Nile papyrus and palm leaves.",
-                  "audience": "Everyday Egyptian wearers walking across hot courtyards and dusty village lanes.",
-                  "motive": "To protect bare feet from hot stones using cheap, plentiful riverside plants."
-                }
-              },
               "provenance": "Pair of woven papyrus-stalk and palm-leaf sandals from Ancient Egypt (preserved in dry desert conditions, museum collection)."
             }
           ]
@@ -2230,36 +1676,11 @@ window.UNIT_DATA = {
           "caption": "Broken slab of dark granodiorite stone carved with the exact same royal decree three times: sacred hieroglyphs at the top, everyday Demotic in the middle, and Ancient Greek at the bottom.",
           "author": "Egyptian Temple Priests of Memphis (for King Ptolemy V)",
           "date": "196 BC (unearthed at Rashid/Rosetta in AD 1799)",
-          "context": "For over 1,400 years nobody on Earth could read Egyptian hieroglyphs — until French soldiers dug up the Rosetta Stone in 1799 and Jean-François Champollion cracked it in 1822! **Hinge Question:** Why was having Ancient Greek carved at the bottom of the Rosetta Stone the vital clue that unlocked hieroglyphs?",
-          "source_context": "For over 1,400 years nobody on Earth could read Egyptian hieroglyphs — until French soldiers dug up the Rosetta Stone in 1799 and Jean-François Champollion cracked it in 1822! **Hinge Question:** Why was having Ancient Greek carved at the bottom of the Rosetta Stone the vital clue that unlocked hieroglyphs?",
-          "hinge_question": "Why was having Ancient Greek carved at the bottom of the Rosetta Stone the vital clue that unlocked hieroglyphs?",
+          "context": "For over 1,400 years nobody on Earth could read Egyptian hieroglyphs — until French soldiers dug up the Rosetta Stone in 1799 and Jean-François Champollion cracked it in 1822!",
+          "source_context": "For over 1,400 years nobody on Earth could read Egyptian hieroglyphs — until French soldiers dug up the Rosetta Stone in 1799 and Jean-François Champollion cracked it in 1822!",
           "question_badge": "THE ROSETTA STONE",
           "question": "Look at the three bands on Source A. How did Champollion crack hieroglyphs in 1822?",
           "model_answer": "Because scholars could already read the Ancient Greek band at the bottom, Jean-François Champollion matched Greek royal names like Ptolemy and Cleopatra to oval cartouches in the hieroglyphs!",
-          "provenance_clues": {
-            "author": "Carved in 196 BC by Egyptian priests honouring young ruler Ptolemy V.",
-            "audience": "Temple priests reading hieroglyphs, Egyptian scribes reading Demotic, and Greek-speaking officials.",
-            "motive": "To publish one royal decree in three scripts so every official in Egypt could read it.",
-            "hinge_question": "Why was having Ancient Greek carved at the bottom of the Rosetta Stone the vital clue that unlocked hieroglyphs?"
-          },
-          "teacher_notes": {
-            "hinge_question": "Why was having Ancient Greek carved at the bottom of the Rosetta Stone the vital clue that unlocked hieroglyphs?",
-            "source_context": "For over 1,400 years nobody on Earth could read Egyptian hieroglyphs — until French soldiers dug up the Rosetta Stone in 1799 and Jean-François Champollion cracked it in 1822! **Hinge Question:** Why was having Ancient Greek carved at the bottom of the Rosetta Stone the vital clue that unlocked hieroglyphs?",
-            "provenance_breakdown": {
-              "author": "Carved in 196 BC by Egyptian priests honouring young ruler Ptolemy V.",
-              "audience": "Temple priests reading hieroglyphs, Egyptian scribes reading Demotic, and Greek-speaking officials.",
-              "motive": "To publish one royal decree in three scripts so every official in Egypt could read it."
-            }
-          },
-          "utility_enquiry": {
-            "question_badge": "THE ROSETTA STONE",
-            "model_answer": "Because scholars could already read the Ancient Greek band at the bottom, Jean-François Champollion matched Greek royal names like Ptolemy and Cleopatra to oval cartouches in the hieroglyphs!",
-            "provenance_clues": {
-              "author": "Carved in 196 BC by Egyptian priests honouring young ruler Ptolemy V.",
-              "audience": "Temple priests reading hieroglyphs, Egyptian scribes reading Demotic, and Greek-speaking officials.",
-              "motive": "To publish one royal decree in three scripts so every official in Egypt could read it."
-            }
-          },
           "provenance": "The Rosetta Stone, dark granodiorite stele inscribed in hieroglyphic, Demotic, and Ancient Greek scripts (196 BC, British Museum, London)."
         },
         {
@@ -2273,36 +1694,11 @@ window.UNIT_DATA = {
           "caption": "Pressed golden-brown papyrus scroll covered in neat rows of Egyptian ink writing — using red ink for headings and black carbon ink for instructions.",
           "author": "Trained Egyptian Medical Scribe",
           "date": "c. 1600 BC (copying even older Old Kingdom notes)",
-          "context": "Scribes sliced sticky pith from Nile papyrus reeds, criss-crossed strips, and hammered them flat into smooth scrolls, then wrote with chewed rush brushes dipped in soot and red ochre ink. **Hinge Question:** Why did scribes paint important new headings in bright red ink while writing main sentences in black ink?",
-          "source_context": "Scribes sliced sticky pith from Nile papyrus reeds, criss-crossed strips, and hammered them flat into smooth scrolls, then wrote with chewed rush brushes dipped in soot and red ochre ink. **Hinge Question:** Why did scribes paint important new headings in bright red ink while writing main sentences in black ink?",
-          "hinge_question": "Why did scribes paint important new headings in bright red ink while writing main sentences in black ink?",
+          "context": "Scribes sliced sticky pith from Nile papyrus reeds, criss-crossed strips, and hammered them flat into smooth scrolls, then wrote with chewed rush brushes dipped in soot and red ochre ink.",
+          "source_context": "Scribes sliced sticky pith from Nile papyrus reeds, criss-crossed strips, and hammered them flat into smooth scrolls, then wrote with chewed rush brushes dipped in soot and red ochre ink.",
           "question_badge": "INK PAPYRUS SCROLL",
           "question": "Study the neat red and black ink on Source B. Why were scribes respected?",
           "model_answer": "Few Egyptians could read or write 700+ signs, so trained scribes wrote vital medical guides, tax lists, and royal letters on papyrus scrolls using red headings and black text.",
-          "provenance_clues": {
-            "author": "Handwritten with a chewed reed brush by a highly trained Egyptian medical scribe.",
-            "audience": "Egyptian doctors treating broken bones and wounds along the Nile.",
-            "motive": "To record careful step-by-step medical checks and treatments on light, roll-up papyrus.",
-            "hinge_question": "Why did scribes paint important new headings in bright red ink while writing main sentences in black ink?"
-          },
-          "teacher_notes": {
-            "hinge_question": "Why did scribes paint important new headings in bright red ink while writing main sentences in black ink?",
-            "source_context": "Scribes sliced sticky pith from Nile papyrus reeds, criss-crossed strips, and hammered them flat into smooth scrolls, then wrote with chewed rush brushes dipped in soot and red ochre ink. **Hinge Question:** Why did scribes paint important new headings in bright red ink while writing main sentences in black ink?",
-            "provenance_breakdown": {
-              "author": "Handwritten with a chewed reed brush by a highly trained Egyptian medical scribe.",
-              "audience": "Egyptian doctors treating broken bones and wounds along the Nile.",
-              "motive": "To record careful step-by-step medical checks and treatments on light, roll-up papyrus."
-            }
-          },
-          "utility_enquiry": {
-            "question_badge": "INK PAPYRUS SCROLL",
-            "model_answer": "Few Egyptians could read or write 700+ signs, so trained scribes wrote vital medical guides, tax lists, and royal letters on papyrus scrolls using red headings and black text.",
-            "provenance_clues": {
-              "author": "Handwritten with a chewed reed brush by a highly trained Egyptian medical scribe.",
-              "audience": "Egyptian doctors treating broken bones and wounds along the Nile.",
-              "motive": "To record careful step-by-step medical checks and treatments on light, roll-up papyrus."
-            }
-          },
           "provenance": "Columns of black and red ink script on the Edwin Smith surgical papyrus scroll (c. 1600 BC, New York Academy of Medicine)."
         },
         {
@@ -2316,36 +1712,11 @@ window.UNIT_DATA = {
           "caption": "Source C: Turquoise Glazed Faience Thirty-Square Senet Game Board & Playing Pieces of Pharaoh Amenhotep III (c. 1390 BC, Brooklyn Museum).",
           "author": "Egyptian Royal Workshop Glaze Craftworker",
           "date": "c. 1390 BC (New Kingdom)",
-          "context": "Rich and poor Egyptians alike loved playing Senet (\"the game of passing\"): two players tossed flat throwing sticks like dice to race counters across thirty squares while blocking rivals! **Hinge Question:** How do historians know ordinary farmers played Senet too if fancy glazed boards like Source C came from wealthy tombs?",
-          "source_context": "Rich and poor Egyptians alike loved playing Senet (\"the game of passing\"): two players tossed flat throwing sticks like dice to race counters across thirty squares while blocking rivals! **Hinge Question:** How do historians know ordinary farmers played Senet too if fancy glazed boards like Source C came from wealthy tombs?",
-          "hinge_question": "How do historians know ordinary farmers played Senet too if fancy glazed boards like Source C came from wealthy tombs?",
+          "context": "Rich and poor Egyptians alike loved playing Senet (\"the game of passing\"): two players tossed flat throwing sticks like dice to race counters across thirty squares while blocking rivals!",
+          "source_context": "Rich and poor Egyptians alike loved playing Senet (\"the game of passing\"): two players tossed flat throwing sticks like dice to race counters across thirty squares while blocking rivals!",
           "question_badge": "SENET BOARD GAME",
           "question": "Count the squares on Source C. What does Senet show about everyday Egyptian fun?",
           "model_answer": "Source C’s thirty-square Senet board shows Egyptians loved board games after work — rich families owned glazed boxes while farmers scratched thirty Senet squares straight into stone steps or mud!",
-          "provenance_clues": {
-            "author": "Moulded and glazed in bright blue faience by a skilled New Kingdom craftworker.",
-            "audience": "Pairs of players enjoying evening games on cool rooftops — and tomb owners in the afterlife.",
-            "motive": "To provide entertaining thirty-square board races with throwing sticks and counters.",
-            "hinge_question": "How do historians know ordinary farmers played Senet too if fancy glazed boards like Source C came from wealthy tombs?"
-          },
-          "teacher_notes": {
-            "hinge_question": "How do historians know ordinary farmers played Senet too if fancy glazed boards like Source C came from wealthy tombs?",
-            "source_context": "Rich and poor Egyptians alike loved playing Senet (\"the game of passing\"): two players tossed flat throwing sticks like dice to race counters across thirty squares while blocking rivals! **Hinge Question:** How do historians know ordinary farmers played Senet too if fancy glazed boards like Source C came from wealthy tombs?",
-            "provenance_breakdown": {
-              "author": "Moulded and glazed in bright blue faience by a skilled New Kingdom craftworker.",
-              "audience": "Pairs of players enjoying evening games on cool rooftops — and tomb owners in the afterlife.",
-              "motive": "To provide entertaining thirty-square board races with throwing sticks and counters."
-            }
-          },
-          "utility_enquiry": {
-            "question_badge": "SENET BOARD GAME",
-            "model_answer": "Source C’s thirty-square Senet board shows Egyptians loved board games after work — rich families owned glazed boxes while farmers scratched thirty Senet squares straight into stone steps or mud!",
-            "provenance_clues": {
-              "author": "Moulded and glazed in bright blue faience by a skilled New Kingdom craftworker.",
-              "audience": "Pairs of players enjoying evening games on cool rooftops — and tomb owners in the afterlife.",
-              "motive": "To provide entertaining thirty-square board races with throwing sticks and counters."
-            }
-          },
           "provenance": "Blue glazed composition (faience) 30-square Senet game board with drawer and playing pieces (New Kingdom, Brooklyn Museum)."
         },
         {
@@ -2359,36 +1730,11 @@ window.UNIT_DATA = {
           "caption": "Light, airy sandals neatly plaited from dried Nile papyrus stalks and palm leaves with toe and ankle straps, preserved by dry desert sand.",
           "author": "Ancient Egyptian Village Sandal-Weaver",
           "date": "New Kingdom (c. 1500–1200 BC)",
-          "context": "Most villagers walked barefoot indoors and in muddy fields, slipping on light woven reed and palm-leaf sandals paired with white linen tunics when stepping onto baking desert paths. **Hinge Question:** Why were white linen clothes and woven reed sandals much smarter for Egypt’s climate than thick woollen coats and leather boots?",
-          "source_context": "Most villagers walked barefoot indoors and in muddy fields, slipping on light woven reed and palm-leaf sandals paired with white linen tunics when stepping onto baking desert paths. **Hinge Question:** Why were white linen clothes and woven reed sandals much smarter for Egypt’s climate than thick woollen coats and leather boots?",
-          "hinge_question": "Why were white linen clothes and woven reed sandals much smarter for Egypt’s climate than thick woollen coats and leather boots?",
+          "context": "Most villagers walked barefoot indoors and in muddy fields, slipping on light woven reed and palm-leaf sandals paired with white linen tunics when stepping onto baking desert paths.",
+          "source_context": "Most villagers walked barefoot indoors and in muddy fields, slipping on light woven reed and palm-leaf sandals paired with white linen tunics when stepping onto baking desert paths.",
           "question_badge": "WOVEN REED SANDALS",
           "question": "Inspect the plant fibres in Source D. Why did Egyptians wear linen and reed sandals?",
           "model_answer": "Egypt’s sun baked stone and sand fiercely, so light sandals woven from Nile papyrus and palm leaves protected soles while airy white linen reflected scorching heat.",
-          "provenance_clues": {
-            "author": "Plaited by hand by an Egyptian sandal-maker using dried Nile papyrus and palm leaves.",
-            "audience": "Everyday Egyptian wearers walking across hot courtyards and dusty village lanes.",
-            "motive": "To protect bare feet from hot stones using cheap, plentiful riverside plants.",
-            "hinge_question": "Why were white linen clothes and woven reed sandals much smarter for Egypt’s climate than thick woollen coats and leather boots?"
-          },
-          "teacher_notes": {
-            "hinge_question": "Why were white linen clothes and woven reed sandals much smarter for Egypt’s climate than thick woollen coats and leather boots?",
-            "source_context": "Most villagers walked barefoot indoors and in muddy fields, slipping on light woven reed and palm-leaf sandals paired with white linen tunics when stepping onto baking desert paths. **Hinge Question:** Why were white linen clothes and woven reed sandals much smarter for Egypt’s climate than thick woollen coats and leather boots?",
-            "provenance_breakdown": {
-              "author": "Plaited by hand by an Egyptian sandal-maker using dried Nile papyrus and palm leaves.",
-              "audience": "Everyday Egyptian wearers walking across hot courtyards and dusty village lanes.",
-              "motive": "To protect bare feet from hot stones using cheap, plentiful riverside plants."
-            }
-          },
-          "utility_enquiry": {
-            "question_badge": "WOVEN REED SANDALS",
-            "model_answer": "Egypt’s sun baked stone and sand fiercely, so light sandals woven from Nile papyrus and palm leaves protected soles while airy white linen reflected scorching heat.",
-            "provenance_clues": {
-              "author": "Plaited by hand by an Egyptian sandal-maker using dried Nile papyrus and palm leaves.",
-              "audience": "Everyday Egyptian wearers walking across hot courtyards and dusty village lanes.",
-              "motive": "To protect bare feet from hot stones using cheap, plentiful riverside plants."
-            }
-          },
           "provenance": "Pair of woven papyrus-stalk and palm-leaf sandals from Ancient Egypt (preserved in dry desert conditions, museum collection)."
         }
       ],
@@ -2537,38 +1883,38 @@ window.UNIT_DATA = {
       ],
       "tasks": [
         {
-          "id": "task_1",
+          "id": "ks2_ancient_egypt_l3_t1",
           "task_num": 1,
           "type": "source_clues",
+          "title": "1. Primary Evidence Detective",
           "topic": "1. Primary Evidence Detective",
-          "tag": "Source Clues",
-          "question": "Examine Sources B, C, and D. What clues do they give about Egyptian scribes and family life?",
-          "starter": "Studying Sources B, C, and D together brings everyday Ancient Egyptian life vividly to life because...",
+          "question": "Look at the three bands on Source A. How did Champollion crack hieroglyphs in 1822?",
+          "starter": "Looking closely at Source A, the three different scripts carved onto the Rosetta Stone allowed Champollion to...",
           "word_bank": [
-            "papyrus",
-            "scribes",
-            "Senet",
-            "reed sandals"
+            "Rosetta Stone",
+            "three scripts",
+            "Ancient Greek",
+            "cartouches"
+          ],
+          "key_terms": [
+            "Rosetta Stone",
+            "three scripts",
+            "Ancient Greek",
+            "cartouches"
           ],
           "hints": [
-            "Foundation Clues: Describe how trained scribes wrote medical guides in red and black ink on pressed papyrus scrolls (Source B).",
-            "Foundation Clues: Explain what the 30-square Senet game board (Source C) and woven reed sandals (Source D) show about leisure and heat.",
-            "Scholar Challenge: Explain how dry Nile plants (papyrus and palm leaves) helped both wealthy scribes and ordinary sandal-wearers!"
+            "Identify the three bands of writing carved onto the stone in 196 BC (Hieroglyphs, Demotic, Ancient Greek).",
+            "Explain which of those three languages scholars in 1822 could already read fluently.",
+            "Show how Jean-François Champollion matched Greek royal names like Ptolemy and Cleopatra to oval cartouches."
           ],
-          "model_answer": "Studying Sources B, C, and D together brings everyday Ancient Egyptian life vividly to life because Source B shows how trained scribes dipped chewed reed brushes in red and black ink to write medical guides on pressed papyrus scrolls. Source C’s thirty-square Senet board proves families loved tossing sticks to race counters in the evenings, while Source D’s light reed sandals woven from papyrus and palm leaves protected feet from scorching desert ground!",
-          "key_terms": [
-            "papyrus",
-            "scribes",
-            "Senet",
-            "reed sandals"
-          ]
+          "model_answer": "Looking closely at Source A, the three different scripts carved onto the Rosetta Stone allowed Champollion to crack Egyptian hieroglyphs in 1822 because scholars could already read the Ancient Greek band at the bottom. Matching Greek royal names like Ptolemy and Cleopatra to oval hieroglyphic cartouches unlocked Egypt’s written voice!"
         },
         {
-          "id": "task_2",
+          "id": "ks2_ancient_egypt_l3_t2",
           "task_num": 2,
           "type": "historical_explanation",
-          "topic": "2. Historical Explanation",
-          "tag": "Primary Sources",
+          "title": "2. Historical Investigation",
+          "topic": "2. Historical Investigation",
           "question": "Explain what the Rosetta Stone is and how Jean-François Champollion cracked hieroglyphs in 1822.",
           "starter": "For centuries nobody could read Egyptian hieroglyphs, until the Rosetta Stone changed everything because...",
           "word_bank": [
@@ -2577,53 +1923,26 @@ window.UNIT_DATA = {
             "Ancient Greek",
             "cartouches"
           ],
-          "hints": [
-            "Foundation Clues: Explain that the Rosetta Stone was carved in 196 BC in three matching scripts and dug up by soldiers in 1799.",
-            "Foundation Clues: Mention that scholars could already read the bottom band written in Ancient Greek.",
-            "Scholar Challenge: Explain how Jean-François Champollion matched Greek royal names to oval hieroglyphic cartouches in 1822!"
-          ],
-          "model_answer": "For centuries nobody could read Egyptian hieroglyphs, until the Rosetta Stone changed everything because priests in 196 BC had carved the exact same royal decree three times: in hieroglyphs, everyday Demotic, and Ancient Greek! After soldiers unearthed the broken stone in 1799, scholars translated the Ancient Greek section at the bottom. In 1822, French scholar Jean-François Champollion matched Greek royal names to the oval cartouches in the hieroglyphs and unlocked over 700 signs!",
           "key_terms": [
             "196 BC",
             "1799",
             "Ancient Greek",
             "cartouches"
-          ]
-        },
-        {
-          "id": "task_3",
-          "task_num": 3,
-          "type": "living_history",
-          "topic": "3. Living History: Step Into Their Shoes",
-          "tag": "Personal Experiences",
-          "question": "Imagine you are a young Egyptian pupil walking home from scribe school at dusk. Describe your evening!",
-          "starter": "Wiping black soot ink from my fingers after a strict day at scribe school, I walk home in my woven reed sandals...",
-          "word_bank": [
-            "hieroglyphs",
-            "mud-brick",
-            "white linen",
-            "Senet"
           ],
           "hints": [
-            "Foundation Clues: Describe practising 700+ hieroglyphs with a chewed reed brush on pottery scraps and smooth papyrus scrolls.",
-            "Foundation Clues: Describe reaching your whitewashed mud-brick house wearing cool white linen and smelling flatbread baking.",
-            "Scholar Challenge: Climb the stairs onto your flat roof at nightfall to play thirty-square Senet in the cool Nile breeze!"
+            "Explain that the Rosetta Stone was carved in 196 BC in three matching scripts and dug up by soldiers in 1799.",
+            "Mention that scholars could already read the bottom band written in Ancient Greek.",
+            "Explain how Jean-François Champollion matched Greek royal names to oval hieroglyphic cartouches in 1822!"
           ],
-          "model_answer": "Wiping black soot ink from my fingers after a strict day at scribe school, I walk home in my woven reed sandals and airy white linen tunic. All afternoon I practised painting tricky hieroglyphs with a chewed reed brush so one day I can serve the vizier! Reaching our whitewashed mud-brick house, I eat warm flatbread and sweet figs before climbing onto our flat roof to race my sister across our thirty-square Senet board in the cool night breeze.",
-          "key_terms": [
-            "hieroglyphs",
-            "mud-brick",
-            "white linen",
-            "Senet"
-          ]
+          "model_answer": "For centuries nobody could read Egyptian hieroglyphs, until the Rosetta Stone changed everything because priests in 196 BC had carved the exact same royal decree three times: in hieroglyphs, everyday Demotic, and Ancient Greek! After soldiers unearthed the broken stone in 1799, scholars translated the Ancient Greek section at the bottom. In 1822, French scholar Jean-François Champollion matched Greek royal names to the oval cartouches in the hieroglyphs and unlocked over 700 signs!"
         },
         {
-          "id": "task_4",
-          "task_num": 4,
+          "id": "ks2_ancient_egypt_l3_t3",
+          "task_num": 3,
           "type": "big_question",
-          "topic": "4. Mission Challenge • The Big Question",
-          "tag": "Historian Challenge",
-          "question": "Big Question: How did everyday life compare for rich officials and ordinary farmers on Egypt’s social pyramid?",
+          "title": "3. Mission Challenge • The Big Question",
+          "topic": "3. Mission Challenge • The Big Question",
+          "question": "Big Question: How did everyday life differ across Egypt’s social pyramid, and how did historians finally crack hieroglyphs?",
           "starter": "Across Egypt’s social pyramid, rich officials and peasant farmers lived very different working lives, yet shared clever desert habits...",
           "word_bank": [
             "viziers",
@@ -2631,18 +1950,18 @@ window.UNIT_DATA = {
             "peasant farmers",
             "flat roofs"
           ],
-          "hints": [
-            "Foundation Clues: Contrast the top layers (Pharaoh, viziers, priests, and scribes who learned 700+ hieroglyphs) with craftworkers and peasant farmers.",
-            "Foundation Clues: Explain how peasant farmers grew the grain taxes while most children never attended scribe school.",
-            "Scholar Challenge: Show what rich and poor Egyptians shared too — white linen, woven reed sandals, flat-roofed mud-brick shade, and Senet!"
-          ],
-          "model_answer": "Across Egypt’s social pyramid, rich officials and peasant farmers lived very different working lives, yet shared clever desert habits. Near the top beneath the Pharaoh, viziers, priests, and trained scribes studied over 700 hieroglyphs on papyrus scrolls to run taxes and temples, while skilled craftworkers glazed treasures and millions of peasant farmers toiled in muddy fields without learning to read. Even so, families rich and poor wore cool white linen and reed sandals, sheltered in whitewashed mud-brick rooms, slept on flat roofs, and loved playing Senet!",
           "key_terms": [
             "viziers",
             "scribes",
             "peasant farmers",
             "flat roofs"
-          ]
+          ],
+          "hints": [
+            "Contrast the top layers (Pharaoh, viziers, priests, and scribes who learned 700+ hieroglyphs) with craftworkers and peasant farmers.",
+            "Explain how peasant farmers grew the grain taxes while most children never attended scribe school.",
+            "Show what rich and poor Egyptians shared too — white linen, woven reed sandals, flat-roofed mud-brick shade, and Senet!"
+          ],
+          "model_answer": "Across Egypt’s social pyramid, rich officials and peasant farmers lived very different working lives, yet shared clever desert habits. Near the top beneath the Pharaoh, viziers, priests, and trained scribes studied over 700 hieroglyphs on papyrus scrolls to run taxes and temples, while skilled craftworkers glazed treasures and millions of peasant farmers toiled in muddy fields without learning to read. Even so, families rich and poor wore cool white linen and reed sandals, sheltered in whitewashed mud-brick rooms, slept on flat roofs, and loved playing Senet!"
         }
       ],
       "quiz": [
@@ -2822,8 +2141,8 @@ window.UNIT_DATA = {
               },
               {
                 "time": "22–42m",
-                "label": "Dual-Scaffolded Historian Tasks",
-                "instruction": "Complete Tasks 1–4 using Foundation Clues and word banks, stretching confident primary pupils with Scholar Challenge prompts."
+                "label": "Historian Writing & Companion Booklet",
+                "instruction": "Complete Historian Writing Tasks 1–3 using the universal Sentence Starter, Historian Word Bank, and primary source clues."
               },
               {
                 "time": "42–50m",
@@ -2944,36 +2263,11 @@ window.UNIT_DATA = {
               "caption": "A sleek black jackal statue of Anubis with gilded ears and collar, resting alertly atop a gilded wooden tomb shrine to guard sacred treasures.",
               "author": "Royal Tomb Sculptors of Thebes",
               "date": "c. 1330 BC (New Kingdom)",
-              "context": "Wild desert jackals prowled around sandy graves at night, so Egyptians pictured Anubis as a black jackal with golden ears who protected the dead and guided embalmers. **Hinge Question:** Why did Ancient Egyptians choose a watchful desert jackal to represent Anubis, their god of mummification and tomb protection?",
-              "source_context": "Wild desert jackals prowled around sandy graves at night, so Egyptians pictured Anubis as a black jackal with golden ears who protected the dead and guided embalmers. **Hinge Question:** Why did Ancient Egyptians choose a watchful desert jackal to represent Anubis, their god of mummification and tomb protection?",
-              "hinge_question": "Why did Ancient Egyptians choose a watchful desert jackal to represent Anubis, their god of mummification and tomb protection?",
+              "context": "Wild desert jackals prowled around sandy graves at night, so Egyptians pictured Anubis as a black jackal with golden ears who protected the dead and guided embalmers.",
+              "source_context": "Wild desert jackals prowled around sandy graves at night, so Egyptians pictured Anubis as a black jackal with golden ears who protected the dead and guided embalmers.",
               "question_badge": "ANUBIS GUARDIAN SHRINE",
               "question": "Look closely at Source A. Why was jackal-shaped Anubis placed inside royal tombs?",
               "model_answer": "Egyptians saw sharp-eared jackals prowling desert cemeteries, so they honoured Anubis as a fierce tomb guardian who watched over mummification and kept grave robbers away.",
-              "provenance_clues": {
-                "author": "Carved, painted black, and gilded with gold leaf by skilled royal workshop sculptors.",
-                "audience": "Afterlife spirits, tomb priests sealing the burial chamber, and the gods themselves.",
-                "motive": "To place a watchful divine protector right in front of the pharaoh’s sacred burial treasures.",
-                "hinge_question": "Why did Ancient Egyptians choose a watchful desert jackal to represent Anubis, their god of mummification and tomb protection?"
-              },
-              "teacher_notes": {
-                "hinge_question": "Why did Ancient Egyptians choose a watchful desert jackal to represent Anubis, their god of mummification and tomb protection?",
-                "source_context": "Wild desert jackals prowled around sandy graves at night, so Egyptians pictured Anubis as a black jackal with golden ears who protected the dead and guided embalmers. **Hinge Question:** Why did Ancient Egyptians choose a watchful desert jackal to represent Anubis, their god of mummification and tomb protection?",
-                "provenance_breakdown": {
-                  "author": "Carved, painted black, and gilded with gold leaf by skilled royal workshop sculptors.",
-                  "audience": "Afterlife spirits, tomb priests sealing the burial chamber, and the gods themselves.",
-                  "motive": "To place a watchful divine protector right in front of the pharaoh’s sacred burial treasures."
-                }
-              },
-              "utility_enquiry": {
-                "question_badge": "ANUBIS GUARDIAN SHRINE",
-                "model_answer": "Egyptians saw sharp-eared jackals prowling desert cemeteries, so they honoured Anubis as a fierce tomb guardian who watched over mummification and kept grave robbers away.",
-                "provenance_clues": {
-                  "author": "Carved, painted black, and gilded with gold leaf by skilled royal workshop sculptors.",
-                  "audience": "Afterlife spirits, tomb priests sealing the burial chamber, and the gods themselves.",
-                  "motive": "To place a watchful divine protector right in front of the pharaoh’s sacred burial treasures."
-                }
-              },
               "provenance": "Painted and gilded wooden jackal statue of Anubis mounted on a portable shrine pole tomb chest (New Kingdom, Egypt)."
             },
             {
@@ -2987,36 +2281,11 @@ window.UNIT_DATA = {
               "caption": "Four smooth limestone Canopic jars topped with carved stoppers showing the four sons of Horus — human, baboon, jackal, and falcon heads.",
               "author": "Egyptian Stone-Vessel Craftworker & Embalmers",
               "date": "c. 1400–1000 BC",
-              "context": "During 70-day mummification, priests dried the liver, lungs, stomach, and intestines in natron salt and sealed them inside four Canopic jars guarded by Horus’s sons — while leaving the heart inside the chest! **Hinge Question:** Why did Egyptian embalmers store four organs inside Canopic jars, yet carefully leave the heart inside the mummy?",
-              "source_context": "During 70-day mummification, priests dried the liver, lungs, stomach, and intestines in natron salt and sealed them inside four Canopic jars guarded by Horus’s sons — while leaving the heart inside the chest! **Hinge Question:** Why did Egyptian embalmers store four organs inside Canopic jars, yet carefully leave the heart inside the mummy?",
-              "hinge_question": "Why did Egyptian embalmers store four organs inside Canopic jars, yet carefully leave the heart inside the mummy?",
+              "context": "Carved from pale Egyptian limestone with four different guardian heads on the lids, sets of Canopic jars like these stood beside the coffin inside Egyptian tombs.",
+              "source_context": "Carved from pale Egyptian limestone with four different guardian heads on the lids, sets of Canopic jars like these stood beside the coffin inside Egyptian tombs.",
               "question_badge": "FOUR CANOPIC JARS",
               "question": "Examine the four carved lids on Source B. What went inside, and which organ stayed out?",
               "model_answer": "Embalmers tucked the dried liver, lungs, stomach, and intestines safely inside Source B’s four jars, but left the heart inside the body so Anubis could weigh it in the afterlife.",
-              "provenance_clues": {
-                "author": "Hollowed from pale limestone by a stone-carver and filled by temple embalming priests.",
-                "audience": "The four protective sons of Horus and the dead person’s spirit in the tomb.",
-                "motive": "To preserve vital internal organs safely forever without letting moisture rot the mummy.",
-                "hinge_question": "Why did Egyptian embalmers store four organs inside Canopic jars, yet carefully leave the heart inside the mummy?"
-              },
-              "teacher_notes": {
-                "hinge_question": "Why did Egyptian embalmers store four organs inside Canopic jars, yet carefully leave the heart inside the mummy?",
-                "source_context": "During 70-day mummification, priests dried the liver, lungs, stomach, and intestines in natron salt and sealed them inside four Canopic jars guarded by Horus’s sons — while leaving the heart inside the chest! **Hinge Question:** Why did Egyptian embalmers store four organs inside Canopic jars, yet carefully leave the heart inside the mummy?",
-                "provenance_breakdown": {
-                  "author": "Hollowed from pale limestone by a stone-carver and filled by temple embalming priests.",
-                  "audience": "The four protective sons of Horus and the dead person’s spirit in the tomb.",
-                  "motive": "To preserve vital internal organs safely forever without letting moisture rot the mummy."
-                }
-              },
-              "utility_enquiry": {
-                "question_badge": "FOUR CANOPIC JARS",
-                "model_answer": "Embalmers tucked the dried liver, lungs, stomach, and intestines safely inside Source B’s four jars, but left the heart inside the body so Anubis could weigh it in the afterlife.",
-                "provenance_clues": {
-                  "author": "Hollowed from pale limestone by a stone-carver and filled by temple embalming priests.",
-                  "audience": "The four protective sons of Horus and the dead person’s spirit in the tomb.",
-                  "motive": "To preserve vital internal organs safely forever without letting moisture rot the mummy."
-                }
-              },
               "provenance": "Set of four carved limestone Canopic jars with stoppers depicting Imsety, Hapy, Duamutef, and Qebehsenuef (Ancient Egypt)."
             }
           ]
@@ -3043,36 +2312,11 @@ window.UNIT_DATA = {
               "caption": "A finely carved Egyptian scarab beetle amulet tucked into linen mummy wrappings directly over the chest to protect the owner’s heart during judgement.",
               "author": "Egyptian Amulet Jeweller & Scribe",
               "date": "c. 1500–1000 BC",
-              "context": "Priests wrapped lucky charms into mummy bandages, placing a special scarab beetle amulet over the chest inscribed with a Book of the Dead spell begging the heart not to betray its owner on the scales! **Hinge Question:** Why did Egyptians tuck a scarab amulet right over the mummy’s chest before the Weighing of the Heart?",
-              "source_context": "Priests wrapped lucky charms into mummy bandages, placing a special scarab beetle amulet over the chest inscribed with a Book of the Dead spell begging the heart not to betray its owner on the scales! **Hinge Question:** Why did Egyptians tuck a scarab amulet right over the mummy’s chest before the Weighing of the Heart?",
-              "hinge_question": "Why did Egyptians tuck a scarab amulet right over the mummy’s chest before the Weighing of the Heart?",
+              "context": "Priests wrapped lucky charms into mummy bandages, placing a special scarab beetle amulet over the chest inscribed with a Book of the Dead spell begging the heart not to betray its owner on the scales!",
+              "source_context": "Priests wrapped lucky charms into mummy bandages, placing a special scarab beetle amulet over the chest inscribed with a Book of the Dead spell begging the heart not to betray its owner on the scales!",
               "question_badge": "HEART SCARAB AMULET",
               "question": "Why did priests wrap Source C over a mummy’s chest during the 70-day ceremony?",
               "model_answer": "Egyptians linked the dung-rolling scarab beetle with rebirth like the rising sun, and placed Source C over the chest so its spell kept the heart calm and light on Anubis’s scales.",
-              "provenance_clues": {
-                "author": "Carved and polished by a temple jeweller and blessed by funerary priests.",
-                "audience": "Anubis, Osiris, and the wearer’s own heart inside the Hall of Two Truths.",
-                "motive": "To shield the dead person’s heart during judgement so monster Ammit could not devour it.",
-                "hinge_question": "Why did Egyptians tuck a scarab amulet right over the mummy’s chest before the Weighing of the Heart?"
-              },
-              "teacher_notes": {
-                "hinge_question": "Why did Egyptians tuck a scarab amulet right over the mummy’s chest before the Weighing of the Heart?",
-                "source_context": "Priests wrapped lucky charms into mummy bandages, placing a special scarab beetle amulet over the chest inscribed with a Book of the Dead spell begging the heart not to betray its owner on the scales! **Hinge Question:** Why did Egyptians tuck a scarab amulet right over the mummy’s chest before the Weighing of the Heart?",
-                "provenance_breakdown": {
-                  "author": "Carved and polished by a temple jeweller and blessed by funerary priests.",
-                  "audience": "Anubis, Osiris, and the wearer’s own heart inside the Hall of Two Truths.",
-                  "motive": "To shield the dead person’s heart during judgement so monster Ammit could not devour it."
-                }
-              },
-              "utility_enquiry": {
-                "question_badge": "HEART SCARAB AMULET",
-                "model_answer": "Egyptians linked the dung-rolling scarab beetle with rebirth like the rising sun, and placed Source C over the chest so its spell kept the heart calm and light on Anubis’s scales.",
-                "provenance_clues": {
-                  "author": "Carved and polished by a temple jeweller and blessed by funerary priests.",
-                  "audience": "Anubis, Osiris, and the wearer’s own heart inside the Hall of Two Truths.",
-                  "motive": "To shield the dead person’s heart during judgement so monster Ammit could not devour it."
-                }
-              },
               "provenance": "Carved Egyptian heart scarab amulet designed for placement within linen mummy wrappings (New Kingdom)."
             },
             {
@@ -3086,36 +2330,11 @@ window.UNIT_DATA = {
               "caption": "Miniature bright-blue glazed faience shabti figures painted with black hieroglyphs and holding tiny farming hoes ready to work in the Field of Reeds.",
               "author": "Egyptian Faience Kiln Makers",
               "date": "c. 1100 BC",
-              "context": "Even wealthy Egyptians expected Osiris to call everyone to plough, sow wheat, and dig canals in the Field of Reeds — so tombs held dozens or even hundreds of shabti figures to answer \"Here I am!\" in their owner’s place. **Hinge Question:** What do painted farming hoes on shabti figures prove about how Egyptians imagined paradise in the Field of Reeds?",
-              "source_context": "Even wealthy Egyptians expected Osiris to call everyone to plough, sow wheat, and dig canals in the Field of Reeds — so tombs held dozens or even hundreds of shabti figures to answer \"Here I am!\" in their owner’s place. **Hinge Question:** What do painted farming hoes on shabti figures prove about how Egyptians imagined paradise in the Field of Reeds?",
-              "hinge_question": "What do painted farming hoes on shabti figures prove about how Egyptians imagined paradise in the Field of Reeds?",
+              "context": "Moulded from bright blue glazed faience and inscribed with hieroglyphs down the front, hundreds of small shabti figures were packed inside wealthy Egyptian tombs.",
+              "source_context": "Moulded from bright blue glazed faience and inscribed with hieroglyphs down the front, hundreds of small shabti figures were packed inside wealthy Egyptian tombs.",
               "question_badge": "BLUE SHABTI SERVANTS",
               "question": "Inspect the tiny tools painted on Source D. What job were shabtis meant to do?",
               "model_answer": "Shabti figurines held tiny hoes and seed baskets so they could magically wake up in the afterlife, shout \"Here I am!\", and do tough farm work in Osiris’s Field of Reeds.",
-              "provenance_clues": {
-                "author": "Moulded from crushed quartz paste and fired bright turquoise-blue in a kiln.",
-                "audience": "The tomb owner’s spirit and Osiris’s afterlife work-overseers.",
-                "motive": "To spare the tomb owner back-breaking digging and harvesting in the next world.",
-                "hinge_question": "What do painted farming hoes on shabti figures prove about how Egyptians imagined paradise in the Field of Reeds?"
-              },
-              "teacher_notes": {
-                "hinge_question": "What do painted farming hoes on shabti figures prove about how Egyptians imagined paradise in the Field of Reeds?",
-                "source_context": "Even wealthy Egyptians expected Osiris to call everyone to plough, sow wheat, and dig canals in the Field of Reeds — so tombs held dozens or even hundreds of shabti figures to answer \"Here I am!\" in their owner’s place. **Hinge Question:** What do painted farming hoes on shabti figures prove about how Egyptians imagined paradise in the Field of Reeds?",
-                "provenance_breakdown": {
-                  "author": "Moulded from crushed quartz paste and fired bright turquoise-blue in a kiln.",
-                  "audience": "The tomb owner’s spirit and Osiris’s afterlife work-overseers.",
-                  "motive": "To spare the tomb owner back-breaking digging and harvesting in the next world."
-                }
-              },
-              "utility_enquiry": {
-                "question_badge": "BLUE SHABTI SERVANTS",
-                "model_answer": "Shabti figurines held tiny hoes and seed baskets so they could magically wake up in the afterlife, shout \"Here I am!\", and do tough farm work in Osiris’s Field of Reeds.",
-                "provenance_clues": {
-                  "author": "Moulded from crushed quartz paste and fired bright turquoise-blue in a kiln.",
-                  "audience": "The tomb owner’s spirit and Osiris’s afterlife work-overseers.",
-                  "motive": "To spare the tomb owner back-breaking digging and harvesting in the next world."
-                }
-              },
               "provenance": "Blue glazed faience shabti funerary servant figurines inscribed with hieroglyphic spells (New Kingdom / Third Intermediate Period)."
             }
           ]
@@ -3133,36 +2352,11 @@ window.UNIT_DATA = {
           "caption": "A sleek black jackal statue of Anubis with gilded ears and collar, resting alertly atop a gilded wooden tomb shrine to guard sacred treasures.",
           "author": "Royal Tomb Sculptors of Thebes",
           "date": "c. 1330 BC (New Kingdom)",
-          "context": "Wild desert jackals prowled around sandy graves at night, so Egyptians pictured Anubis as a black jackal with golden ears who protected the dead and guided embalmers. **Hinge Question:** Why did Ancient Egyptians choose a watchful desert jackal to represent Anubis, their god of mummification and tomb protection?",
-          "source_context": "Wild desert jackals prowled around sandy graves at night, so Egyptians pictured Anubis as a black jackal with golden ears who protected the dead and guided embalmers. **Hinge Question:** Why did Ancient Egyptians choose a watchful desert jackal to represent Anubis, their god of mummification and tomb protection?",
-          "hinge_question": "Why did Ancient Egyptians choose a watchful desert jackal to represent Anubis, their god of mummification and tomb protection?",
+          "context": "Wild desert jackals prowled around sandy graves at night, so Egyptians pictured Anubis as a black jackal with golden ears who protected the dead and guided embalmers.",
+          "source_context": "Wild desert jackals prowled around sandy graves at night, so Egyptians pictured Anubis as a black jackal with golden ears who protected the dead and guided embalmers.",
           "question_badge": "ANUBIS GUARDIAN SHRINE",
           "question": "Look closely at Source A. Why was jackal-shaped Anubis placed inside royal tombs?",
           "model_answer": "Egyptians saw sharp-eared jackals prowling desert cemeteries, so they honoured Anubis as a fierce tomb guardian who watched over mummification and kept grave robbers away.",
-          "provenance_clues": {
-            "author": "Carved, painted black, and gilded with gold leaf by skilled royal workshop sculptors.",
-            "audience": "Afterlife spirits, tomb priests sealing the burial chamber, and the gods themselves.",
-            "motive": "To place a watchful divine protector right in front of the pharaoh’s sacred burial treasures.",
-            "hinge_question": "Why did Ancient Egyptians choose a watchful desert jackal to represent Anubis, their god of mummification and tomb protection?"
-          },
-          "teacher_notes": {
-            "hinge_question": "Why did Ancient Egyptians choose a watchful desert jackal to represent Anubis, their god of mummification and tomb protection?",
-            "source_context": "Wild desert jackals prowled around sandy graves at night, so Egyptians pictured Anubis as a black jackal with golden ears who protected the dead and guided embalmers. **Hinge Question:** Why did Ancient Egyptians choose a watchful desert jackal to represent Anubis, their god of mummification and tomb protection?",
-            "provenance_breakdown": {
-              "author": "Carved, painted black, and gilded with gold leaf by skilled royal workshop sculptors.",
-              "audience": "Afterlife spirits, tomb priests sealing the burial chamber, and the gods themselves.",
-              "motive": "To place a watchful divine protector right in front of the pharaoh’s sacred burial treasures."
-            }
-          },
-          "utility_enquiry": {
-            "question_badge": "ANUBIS GUARDIAN SHRINE",
-            "model_answer": "Egyptians saw sharp-eared jackals prowling desert cemeteries, so they honoured Anubis as a fierce tomb guardian who watched over mummification and kept grave robbers away.",
-            "provenance_clues": {
-              "author": "Carved, painted black, and gilded with gold leaf by skilled royal workshop sculptors.",
-              "audience": "Afterlife spirits, tomb priests sealing the burial chamber, and the gods themselves.",
-              "motive": "To place a watchful divine protector right in front of the pharaoh’s sacred burial treasures."
-            }
-          },
           "provenance": "Painted and gilded wooden jackal statue of Anubis mounted on a portable shrine pole tomb chest (New Kingdom, Egypt)."
         },
         {
@@ -3176,36 +2370,11 @@ window.UNIT_DATA = {
           "caption": "Four smooth limestone Canopic jars topped with carved stoppers showing the four sons of Horus — human, baboon, jackal, and falcon heads.",
           "author": "Egyptian Stone-Vessel Craftworker & Embalmers",
           "date": "c. 1400–1000 BC",
-          "context": "During 70-day mummification, priests dried the liver, lungs, stomach, and intestines in natron salt and sealed them inside four Canopic jars guarded by Horus’s sons — while leaving the heart inside the chest! **Hinge Question:** Why did Egyptian embalmers store four organs inside Canopic jars, yet carefully leave the heart inside the mummy?",
-          "source_context": "During 70-day mummification, priests dried the liver, lungs, stomach, and intestines in natron salt and sealed them inside four Canopic jars guarded by Horus’s sons — while leaving the heart inside the chest! **Hinge Question:** Why did Egyptian embalmers store four organs inside Canopic jars, yet carefully leave the heart inside the mummy?",
-          "hinge_question": "Why did Egyptian embalmers store four organs inside Canopic jars, yet carefully leave the heart inside the mummy?",
+          "context": "Carved from pale Egyptian limestone with four different guardian heads on the lids, sets of Canopic jars like these stood beside the coffin inside Egyptian tombs.",
+          "source_context": "Carved from pale Egyptian limestone with four different guardian heads on the lids, sets of Canopic jars like these stood beside the coffin inside Egyptian tombs.",
           "question_badge": "FOUR CANOPIC JARS",
           "question": "Examine the four carved lids on Source B. What went inside, and which organ stayed out?",
           "model_answer": "Embalmers tucked the dried liver, lungs, stomach, and intestines safely inside Source B’s four jars, but left the heart inside the body so Anubis could weigh it in the afterlife.",
-          "provenance_clues": {
-            "author": "Hollowed from pale limestone by a stone-carver and filled by temple embalming priests.",
-            "audience": "The four protective sons of Horus and the dead person’s spirit in the tomb.",
-            "motive": "To preserve vital internal organs safely forever without letting moisture rot the mummy.",
-            "hinge_question": "Why did Egyptian embalmers store four organs inside Canopic jars, yet carefully leave the heart inside the mummy?"
-          },
-          "teacher_notes": {
-            "hinge_question": "Why did Egyptian embalmers store four organs inside Canopic jars, yet carefully leave the heart inside the mummy?",
-            "source_context": "During 70-day mummification, priests dried the liver, lungs, stomach, and intestines in natron salt and sealed them inside four Canopic jars guarded by Horus’s sons — while leaving the heart inside the chest! **Hinge Question:** Why did Egyptian embalmers store four organs inside Canopic jars, yet carefully leave the heart inside the mummy?",
-            "provenance_breakdown": {
-              "author": "Hollowed from pale limestone by a stone-carver and filled by temple embalming priests.",
-              "audience": "The four protective sons of Horus and the dead person’s spirit in the tomb.",
-              "motive": "To preserve vital internal organs safely forever without letting moisture rot the mummy."
-            }
-          },
-          "utility_enquiry": {
-            "question_badge": "FOUR CANOPIC JARS",
-            "model_answer": "Embalmers tucked the dried liver, lungs, stomach, and intestines safely inside Source B’s four jars, but left the heart inside the body so Anubis could weigh it in the afterlife.",
-            "provenance_clues": {
-              "author": "Hollowed from pale limestone by a stone-carver and filled by temple embalming priests.",
-              "audience": "The four protective sons of Horus and the dead person’s spirit in the tomb.",
-              "motive": "To preserve vital internal organs safely forever without letting moisture rot the mummy."
-            }
-          },
           "provenance": "Set of four carved limestone Canopic jars with stoppers depicting Imsety, Hapy, Duamutef, and Qebehsenuef (Ancient Egypt)."
         },
         {
@@ -3219,36 +2388,11 @@ window.UNIT_DATA = {
           "caption": "A finely carved Egyptian scarab beetle amulet tucked into linen mummy wrappings directly over the chest to protect the owner’s heart during judgement.",
           "author": "Egyptian Amulet Jeweller & Scribe",
           "date": "c. 1500–1000 BC",
-          "context": "Priests wrapped lucky charms into mummy bandages, placing a special scarab beetle amulet over the chest inscribed with a Book of the Dead spell begging the heart not to betray its owner on the scales! **Hinge Question:** Why did Egyptians tuck a scarab amulet right over the mummy’s chest before the Weighing of the Heart?",
-          "source_context": "Priests wrapped lucky charms into mummy bandages, placing a special scarab beetle amulet over the chest inscribed with a Book of the Dead spell begging the heart not to betray its owner on the scales! **Hinge Question:** Why did Egyptians tuck a scarab amulet right over the mummy’s chest before the Weighing of the Heart?",
-          "hinge_question": "Why did Egyptians tuck a scarab amulet right over the mummy’s chest before the Weighing of the Heart?",
+          "context": "Priests wrapped lucky charms into mummy bandages, placing a special scarab beetle amulet over the chest inscribed with a Book of the Dead spell begging the heart not to betray its owner on the scales!",
+          "source_context": "Priests wrapped lucky charms into mummy bandages, placing a special scarab beetle amulet over the chest inscribed with a Book of the Dead spell begging the heart not to betray its owner on the scales!",
           "question_badge": "HEART SCARAB AMULET",
           "question": "Why did priests wrap Source C over a mummy’s chest during the 70-day ceremony?",
           "model_answer": "Egyptians linked the dung-rolling scarab beetle with rebirth like the rising sun, and placed Source C over the chest so its spell kept the heart calm and light on Anubis’s scales.",
-          "provenance_clues": {
-            "author": "Carved and polished by a temple jeweller and blessed by funerary priests.",
-            "audience": "Anubis, Osiris, and the wearer’s own heart inside the Hall of Two Truths.",
-            "motive": "To shield the dead person’s heart during judgement so monster Ammit could not devour it.",
-            "hinge_question": "Why did Egyptians tuck a scarab amulet right over the mummy’s chest before the Weighing of the Heart?"
-          },
-          "teacher_notes": {
-            "hinge_question": "Why did Egyptians tuck a scarab amulet right over the mummy’s chest before the Weighing of the Heart?",
-            "source_context": "Priests wrapped lucky charms into mummy bandages, placing a special scarab beetle amulet over the chest inscribed with a Book of the Dead spell begging the heart not to betray its owner on the scales! **Hinge Question:** Why did Egyptians tuck a scarab amulet right over the mummy’s chest before the Weighing of the Heart?",
-            "provenance_breakdown": {
-              "author": "Carved and polished by a temple jeweller and blessed by funerary priests.",
-              "audience": "Anubis, Osiris, and the wearer’s own heart inside the Hall of Two Truths.",
-              "motive": "To shield the dead person’s heart during judgement so monster Ammit could not devour it."
-            }
-          },
-          "utility_enquiry": {
-            "question_badge": "HEART SCARAB AMULET",
-            "model_answer": "Egyptians linked the dung-rolling scarab beetle with rebirth like the rising sun, and placed Source C over the chest so its spell kept the heart calm and light on Anubis’s scales.",
-            "provenance_clues": {
-              "author": "Carved and polished by a temple jeweller and blessed by funerary priests.",
-              "audience": "Anubis, Osiris, and the wearer’s own heart inside the Hall of Two Truths.",
-              "motive": "To shield the dead person’s heart during judgement so monster Ammit could not devour it."
-            }
-          },
           "provenance": "Carved Egyptian heart scarab amulet designed for placement within linen mummy wrappings (New Kingdom)."
         },
         {
@@ -3262,36 +2406,11 @@ window.UNIT_DATA = {
           "caption": "Miniature bright-blue glazed faience shabti figures painted with black hieroglyphs and holding tiny farming hoes ready to work in the Field of Reeds.",
           "author": "Egyptian Faience Kiln Makers",
           "date": "c. 1100 BC",
-          "context": "Even wealthy Egyptians expected Osiris to call everyone to plough, sow wheat, and dig canals in the Field of Reeds — so tombs held dozens or even hundreds of shabti figures to answer \"Here I am!\" in their owner’s place. **Hinge Question:** What do painted farming hoes on shabti figures prove about how Egyptians imagined paradise in the Field of Reeds?",
-          "source_context": "Even wealthy Egyptians expected Osiris to call everyone to plough, sow wheat, and dig canals in the Field of Reeds — so tombs held dozens or even hundreds of shabti figures to answer \"Here I am!\" in their owner’s place. **Hinge Question:** What do painted farming hoes on shabti figures prove about how Egyptians imagined paradise in the Field of Reeds?",
-          "hinge_question": "What do painted farming hoes on shabti figures prove about how Egyptians imagined paradise in the Field of Reeds?",
+          "context": "Moulded from bright blue glazed faience and inscribed with hieroglyphs down the front, hundreds of small shabti figures were packed inside wealthy Egyptian tombs.",
+          "source_context": "Moulded from bright blue glazed faience and inscribed with hieroglyphs down the front, hundreds of small shabti figures were packed inside wealthy Egyptian tombs.",
           "question_badge": "BLUE SHABTI SERVANTS",
           "question": "Inspect the tiny tools painted on Source D. What job were shabtis meant to do?",
           "model_answer": "Shabti figurines held tiny hoes and seed baskets so they could magically wake up in the afterlife, shout \"Here I am!\", and do tough farm work in Osiris’s Field of Reeds.",
-          "provenance_clues": {
-            "author": "Moulded from crushed quartz paste and fired bright turquoise-blue in a kiln.",
-            "audience": "The tomb owner’s spirit and Osiris’s afterlife work-overseers.",
-            "motive": "To spare the tomb owner back-breaking digging and harvesting in the next world.",
-            "hinge_question": "What do painted farming hoes on shabti figures prove about how Egyptians imagined paradise in the Field of Reeds?"
-          },
-          "teacher_notes": {
-            "hinge_question": "What do painted farming hoes on shabti figures prove about how Egyptians imagined paradise in the Field of Reeds?",
-            "source_context": "Even wealthy Egyptians expected Osiris to call everyone to plough, sow wheat, and dig canals in the Field of Reeds — so tombs held dozens or even hundreds of shabti figures to answer \"Here I am!\" in their owner’s place. **Hinge Question:** What do painted farming hoes on shabti figures prove about how Egyptians imagined paradise in the Field of Reeds?",
-            "provenance_breakdown": {
-              "author": "Moulded from crushed quartz paste and fired bright turquoise-blue in a kiln.",
-              "audience": "The tomb owner’s spirit and Osiris’s afterlife work-overseers.",
-              "motive": "To spare the tomb owner back-breaking digging and harvesting in the next world."
-            }
-          },
-          "utility_enquiry": {
-            "question_badge": "BLUE SHABTI SERVANTS",
-            "model_answer": "Shabti figurines held tiny hoes and seed baskets so they could magically wake up in the afterlife, shout \"Here I am!\", and do tough farm work in Osiris’s Field of Reeds.",
-            "provenance_clues": {
-              "author": "Moulded from crushed quartz paste and fired bright turquoise-blue in a kiln.",
-              "audience": "The tomb owner’s spirit and Osiris’s afterlife work-overseers.",
-              "motive": "To spare the tomb owner back-breaking digging and harvesting in the next world."
-            }
-          },
           "provenance": "Blue glazed faience shabti funerary servant figurines inscribed with hieroglyphic spells (New Kingdom / Third Intermediate Period)."
         }
       ],
@@ -3440,38 +2559,38 @@ window.UNIT_DATA = {
       ],
       "tasks": [
         {
-          "id": "task_1",
+          "id": "ks2_ancient_egypt_l4_t1",
           "task_num": 1,
           "type": "source_clues",
+          "title": "1. Primary Evidence Detective",
           "topic": "1. Primary Evidence Detective",
-          "tag": "Source Clues",
-          "question": "Examine Sources B, C, and D. How did each tomb object help an Egyptian reach the afterlife?",
-          "starter": "Looking closely at Sources B, C, and D, each tomb object played a special part after death because...",
+          "question": "Look closely at Source A. Why was jackal-shaped Anubis placed inside royal tombs?",
+          "starter": "Looking closely at Source A, the black-and-gold jackal shrine of Anubis was placed inside royal tombs because...",
           "word_bank": [
-            "Canopic jars",
-            "heart scarab",
-            "shabti",
-            "Field of Reeds"
+            "Anubis",
+            "desert jackal",
+            "mummification",
+            "tomb guardian"
+          ],
+          "key_terms": [
+            "Anubis",
+            "desert jackal",
+            "mummification",
+            "tomb guardian"
           ],
           "hints": [
-            "Foundation Clues: Explain which four organs went inside Source B's Canopic jars and why the heart stayed inside the body.",
-            "Foundation Clues: Describe how the heart scarab amulet (Source C) and blue shabti figures (Source D) helped.",
-            "Scholar Challenge: Explain what tiny farming hoes on Source D prove about how Egyptians pictured daily life in the Field of Reeds!"
+            "Notice the alert black jackal body and tall golden ears resting atop the portable tomb chest.",
+            "Explain why Egyptians linked wild desert jackals prowling cemeteries with guarding the dead.",
+            "Describe Anubis’s sacred jobs watching over mummification and keeping grave robbers away."
           ],
-          "model_answer": "Looking closely at Sources B, C, and D, each tomb object played a special part after death because Source B's four limestone Canopic jars safely held the dried lungs, stomach, liver, and intestines while leaving the heart inside for judgement. Source C's heart scarab amulet sat over the chest with a protective spell so the heart stayed light on Anubis's scales. Finally, Source D's blue shabti figures carried tiny hoes, proving Egyptians imagined the Field of Reeds as fertile farmland where magical servants ploughed and harvested for them!",
-          "key_terms": [
-            "Canopic jars",
-            "heart scarab",
-            "shabti",
-            "Field of Reeds"
-          ]
+          "model_answer": "Looking closely at Source A, the black-and-gold jackal shrine of Anubis was placed inside royal tombs because Egyptians saw sharp-eared jackals prowling desert graves and honoured Anubis as protector of the dead. Inside the tomb, Anubis guarded mummified rulers against robbers and guided souls to the Weighing of the Heart."
         },
         {
-          "id": "task_2",
+          "id": "ks2_ancient_egypt_l4_t2",
           "task_num": 2,
           "type": "historical_explanation",
-          "topic": "2. Historical Explanation",
-          "tag": "Cause & Effect",
+          "title": "2. Historical Investigation",
+          "topic": "2. Historical Investigation",
           "question": "Explain why priests spent seventy days making mummies and how natron salt worked.",
           "starter": "Ancient Egyptian priests spent seventy careful days making mummies because they believed...",
           "word_bank": [
@@ -3480,53 +2599,26 @@ window.UNIT_DATA = {
             "natron",
             "linen bandages"
           ],
-          "hints": [
-            "Foundation Clues: Explain why the twin spirit parts (the ka and ba) needed a body that had not rotted away.",
-            "Foundation Clues: Describe packing dry natron desert salt for forty days before rubbing sweet oils and wrapping linen bandages.",
-            "Scholar Challenge: Contrast wet rotting bodies with dry natron-cured mummies to explain why mummies survive 3,000 years later!"
-          ],
-          "model_answer": "Ancient Egyptian priests spent seventy careful days making mummies because they believed every person's ka and ba spirits needed a recognisable body in the tomb to live forever. Without help, moisture makes dead bodies rot quickly. Therefore, embalmers removed four soft organs, packed dry natron desert salt over the body for forty days to soak up every drop of water, rubbed sweet oils into the skin, and wrapped tight linen bandages with lucky charms so the mummy lasted for thousands of years!",
           "key_terms": [
             "ka and ba",
             "seventy days",
             "natron",
             "linen bandages"
-          ]
-        },
-        {
-          "id": "task_3",
-          "task_num": 3,
-          "type": "living_history",
-          "topic": "3. Living History: Step Into Their Shoes",
-          "tag": "Personal Experiences",
-          "question": "Imagine standing inside the Hall of Two Truths watching Anubis weigh your heart. Describe the scene!",
-          "starter": "Stepping nervously into the torchlit Hall of Two Truths beside jackal-headed Anubis, I see...",
-          "word_bank": [
-            "Anubis",
-            "feather of truth",
-            "Thoth",
-            "Ammit"
           ],
           "hints": [
-            "Foundation Clues: Describe Anubis placing your heart on golden scales opposite Ma'at's light feather of truth.",
-            "Foundation Clues: Describe ibis-headed Thoth holding his reed pen and monster Ammit snapping her crocodile jaws.",
-            "Scholar Challenge: Explain why sharing bread and speaking honestly on earth makes the scales balance so Osiris welcomes you!"
+            "Explain why the twin spirit parts (the ka and ba) needed a body that had not rotted away.",
+            "Describe packing dry natron desert salt for forty days before rubbing sweet oils and wrapping linen bandages.",
+            "Contrast wet rotting bodies with dry natron-cured mummies to explain why mummies survive 3,000 years later!"
           ],
-          "model_answer": "Stepping nervously into the torchlit Hall of Two Truths beside jackal-headed Anubis, I see gleaming golden scales in front of underworld lord Osiris. Anubis places my heart on one dish opposite Ma'at's delicate feather of truth while ibis-headed Thoth poises his reed pen. Right below the scales crouches terrifying Ammit — part crocodile, lion, and hippo — ready to gobble up cruel hearts! Thankfully, because I spoke truthfully and helped neighbours along the Nile, the beam balances level and Osiris waves me into the sunny Field of Reeds!",
-          "key_terms": [
-            "Anubis",
-            "feather of truth",
-            "Thoth",
-            "Ammit"
-          ]
+          "model_answer": "Ancient Egyptian priests spent seventy careful days making mummies because they believed every person's ka and ba spirits needed a recognisable body in the tomb to live forever. Without help, moisture makes dead bodies rot quickly. Therefore, embalmers removed four soft organs, packed dry natron desert salt over the body for forty days to soak up every drop of water, rubbed sweet oils into the skin, and wrapped tight linen bandages with lucky charms so the mummy lasted for thousands of years!"
         },
         {
-          "id": "task_4",
-          "task_num": 4,
+          "id": "ks2_ancient_egypt_l4_t3",
+          "task_num": 3,
           "type": "big_question",
-          "topic": "4. Mission Challenge • The Big Question",
-          "tag": "Historian Challenge",
-          "question": "Big Question: What do mummies and Weighing the Heart reveal about what mattered most to Egyptians?",
+          "title": "3. Mission Challenge • The Big Question",
+          "topic": "3. Mission Challenge • The Big Question",
+          "question": "Big Question: What did Ancient Egyptians believe happened after death, and why did they make mummies?",
           "starter": "Mummification and the Weighing of the Heart reveal a huge amount about Egyptian values because...",
           "word_bank": [
             "polytheistic",
@@ -3534,18 +2626,18 @@ window.UNIT_DATA = {
             "Ma'at",
             "Field of Reeds"
           ],
-          "hints": [
-            "Foundation Clues: Explain how polytheistic gods (Ra, Osiris, Isis, Anubis) and 70-day mummification show deep love of life.",
-            "Foundation Clues: Explain how Weighing the Heart against Ma'at's feather rewarded honesty and kindness over wealth.",
-            "Scholar Challenge: Point out why even a rich pharaoh's heart had to pass Ma'at's feather test just like a humble farmer's!"
-          ],
-          "model_answer": "Mummification and the Weighing of the Heart reveal a huge amount about Egyptian values because they show Egyptians loved Nile life so dearly they wanted it to carry on forever in the sunny Field of Reeds. Spending seventy days drying bodies in natron, carving Canopic jars, and moulding shabti servants proves how deeply families cared for loved ones. Most importantly, balancing every heart — whether pharaoh or farmer — against Ma'at's feather of truth proves Egyptians prized honesty, fairness, and kindness above gold!",
           "key_terms": [
             "polytheistic",
             "mummification",
             "Ma'at",
             "Field of Reeds"
-          ]
+          ],
+          "hints": [
+            "Explain how polytheistic gods (Ra, Osiris, Isis, Anubis) and 70-day mummification show deep love of life.",
+            "Explain how Weighing the Heart against Ma'at's feather rewarded honesty and kindness over wealth.",
+            "Point out why even a rich pharaoh's heart had to pass Ma'at's feather test just like a humble farmer's!"
+          ],
+          "model_answer": "Mummification and the Weighing of the Heart reveal a huge amount about Egyptian values because they show Egyptians loved Nile life so dearly they wanted it to carry on forever in the sunny Field of Reeds. Spending seventy days drying bodies in natron, carving Canopic jars, and moulding shabti servants proves how deeply families cared for loved ones. Most importantly, balancing every heart — whether pharaoh or farmer — against Ma'at's feather of truth proves Egyptians prized honesty, fairness, and kindness above gold!"
         }
       ],
       "quiz": [
@@ -3725,8 +2817,8 @@ window.UNIT_DATA = {
               },
               {
                 "time": "22–42m",
-                "label": "Dual-Scaffolded Historian Tasks",
-                "instruction": "Complete Tasks 1–4 using Foundation Clues and word banks, stretching confident primary pupils with Scholar Challenge prompts."
+                "label": "Historian Writing & Companion Booklet",
+                "instruction": "Complete Historian Writing Tasks 1–3 using the universal Sentence Starter, Historian Word Bank, and primary source clues."
               },
               {
                 "time": "42–50m",
@@ -3847,36 +2939,11 @@ window.UNIT_DATA = {
               "caption": "A powerful granite sphinx from Deir el-Bahari showing female Pharaoh Hatshepsut with a muscular lion’s body, royal mane, and traditional kingly false beard.",
               "author": "Royal Sculptors at Deir el-Bahari, Thebes",
               "date": "c. 1479–1458 BC",
-              "context": "Egyptians were used to male kings, so when Hatshepsut ruled as full pharaoh she commissioned granite statues showing herself with a lion’s strength, striped nemes headcloth, and strapped-on royal false beard! **Hinge Question:** Why did female Pharaoh Hatshepsut ask sculptors to carve her wearing the traditional royal false beard and lion body?",
-              "source_context": "Egyptians were used to male kings, so when Hatshepsut ruled as full pharaoh she commissioned granite statues showing herself with a lion’s strength, striped nemes headcloth, and strapped-on royal false beard! **Hinge Question:** Why did female Pharaoh Hatshepsut ask sculptors to carve her wearing the traditional royal false beard and lion body?",
-              "hinge_question": "Why did female Pharaoh Hatshepsut ask sculptors to carve her wearing the traditional royal false beard and lion body?",
+              "context": "Carved from polished red Aswan granite around 1470 BC, this giant sphinx statue stood along the processional way of Female Pharaoh Hatshepsut's temple at Deir el-Bahari.",
+              "source_context": "Carved from polished red Aswan granite around 1470 BC, this giant sphinx statue stood along the processional way of Female Pharaoh Hatshepsut's temple at Deir el-Bahari.",
               "question_badge": "HATSHEPSUT SPHINX",
               "question": "Look closely at Hatshepsut’s chin and body in Source A. Why was she carved like this?",
               "model_answer": "Hatshepsut asked sculptors to carve her with a mighty lion’s body and ceremonial false beard to prove she held every bit as much royal authority as any male pharaoh.",
-              "provenance_clues": {
-                "author": "Carved from hard pink-red Aswan granite by royal New Kingdom stone sculptors.",
-                "audience": "Priests, officials, and visitors walking up the terraces of her temple at Deir el-Bahari.",
-                "motive": "To celebrate Hatshepsut as a true, divinely chosen pharaoh protecting Egypt with lion-like power.",
-                "hinge_question": "Why did female Pharaoh Hatshepsut ask sculptors to carve her wearing the traditional royal false beard and lion body?"
-              },
-              "teacher_notes": {
-                "hinge_question": "Why did female Pharaoh Hatshepsut ask sculptors to carve her wearing the traditional royal false beard and lion body?",
-                "source_context": "Egyptians were used to male kings, so when Hatshepsut ruled as full pharaoh she commissioned granite statues showing herself with a lion’s strength, striped nemes headcloth, and strapped-on royal false beard! **Hinge Question:** Why did female Pharaoh Hatshepsut ask sculptors to carve her wearing the traditional royal false beard and lion body?",
-                "provenance_breakdown": {
-                  "author": "Carved from hard pink-red Aswan granite by royal New Kingdom stone sculptors.",
-                  "audience": "Priests, officials, and visitors walking up the terraces of her temple at Deir el-Bahari.",
-                  "motive": "To celebrate Hatshepsut as a true, divinely chosen pharaoh protecting Egypt with lion-like power."
-                }
-              },
-              "utility_enquiry": {
-                "question_badge": "HATSHEPSUT SPHINX",
-                "model_answer": "Hatshepsut asked sculptors to carve her with a mighty lion’s body and ceremonial false beard to prove she held every bit as much royal authority as any male pharaoh.",
-                "provenance_clues": {
-                  "author": "Carved from hard pink-red Aswan granite by royal New Kingdom stone sculptors.",
-                  "audience": "Priests, officials, and visitors walking up the terraces of her temple at Deir el-Bahari.",
-                  "motive": "To celebrate Hatshepsut as a true, divinely chosen pharaoh protecting Egypt with lion-like power."
-                }
-              },
               "provenance": "Carved red granite sphinx of Pharaoh Hatshepsut from Deir el-Bahari, Thebes (c. 1479–1458 BC, Metropolitan Museum of Art)."
             },
             {
@@ -3890,36 +2957,11 @@ window.UNIT_DATA = {
               "caption": "Master sculptor Thutmose’s life-like painted limestone portrait bust of Queen Nefertiti wearing her tall flat-topped blue royal crown and jewelled collar.",
               "author": "Royal Court Sculptor Thutmose at Amarna",
               "date": "c. 1345 BC",
-              "context": "Discovered inside royal sculptor Thutmose’s workshop in the desert city of Amarna, this vivid painted limestone bust served as the master model for portraits of Queen Nefertiti alongside Pharaoh Akhenaten. **Hinge Question:** What does Queen Nefertiti’s unique tall blue crown and lifelike portrait suggest about her importance at Amarna?",
-              "source_context": "Discovered inside royal sculptor Thutmose’s workshop in the desert city of Amarna, this vivid painted limestone bust served as the master model for portraits of Queen Nefertiti alongside Pharaoh Akhenaten. **Hinge Question:** What does Queen Nefertiti’s unique tall blue crown and lifelike portrait suggest about her importance at Amarna?",
-              "hinge_question": "What does Queen Nefertiti’s unique tall blue crown and lifelike portrait suggest about her importance at Amarna?",
+              "context": "Discovered inside royal sculptor Thutmose’s workshop in the desert city of Amarna, this vivid painted limestone bust served as the master model for portraits of Queen Nefertiti alongside Pharaoh Akhenaten.",
+              "source_context": "Discovered inside royal sculptor Thutmose’s workshop in the desert city of Amarna, this vivid painted limestone bust served as the master model for portraits of Queen Nefertiti alongside Pharaoh Akhenaten.",
               "question_badge": "NEFERTITI ROYAL BUST",
               "question": "Inspect Queen Nefertiti’s tall crown and collar in Source B. What shows her high status?",
               "model_answer": "Nefertiti wears a unique tall royal blue crown with a golden cobra headband and rich jewelled collar, showing she ruled beside Akhenaten as one of Egypt’s most powerful queens.",
-              "provenance_clues": {
-                "author": "Carved in limestone and layered with painted gypsum plaster by court sculptor Thutmose.",
-                "audience": "Apprentice sculptors and royal patrons inside the palace city of Amarna.",
-                "motive": "To provide a lifelike royal master portrait celebrating Queen Nefertiti’s authority and grace.",
-                "hinge_question": "What does Queen Nefertiti’s unique tall blue crown and lifelike portrait suggest about her importance at Amarna?"
-              },
-              "teacher_notes": {
-                "hinge_question": "What does Queen Nefertiti’s unique tall blue crown and lifelike portrait suggest about her importance at Amarna?",
-                "source_context": "Discovered inside royal sculptor Thutmose’s workshop in the desert city of Amarna, this vivid painted limestone bust served as the master model for portraits of Queen Nefertiti alongside Pharaoh Akhenaten. **Hinge Question:** What does Queen Nefertiti’s unique tall blue crown and lifelike portrait suggest about her importance at Amarna?",
-                "provenance_breakdown": {
-                  "author": "Carved in limestone and layered with painted gypsum plaster by court sculptor Thutmose.",
-                  "audience": "Apprentice sculptors and royal patrons inside the palace city of Amarna.",
-                  "motive": "To provide a lifelike royal master portrait celebrating Queen Nefertiti’s authority and grace."
-                }
-              },
-              "utility_enquiry": {
-                "question_badge": "NEFERTITI ROYAL BUST",
-                "model_answer": "Nefertiti wears a unique tall royal blue crown with a golden cobra headband and rich jewelled collar, showing she ruled beside Akhenaten as one of Egypt’s most powerful queens.",
-                "provenance_clues": {
-                  "author": "Carved in limestone and layered with painted gypsum plaster by court sculptor Thutmose.",
-                  "audience": "Apprentice sculptors and royal patrons inside the palace city of Amarna.",
-                  "motive": "To provide a lifelike royal master portrait celebrating Queen Nefertiti’s authority and grace."
-                }
-              },
               "provenance": "Painted limestone and stucco bust of Queen Nefertiti from the workshop of Thutmose at Tell el-Amarna (c. 1345 BC)."
             }
           ]
@@ -3946,36 +2988,11 @@ window.UNIT_DATA = {
               "caption": "A giant ten-metre carved limestone colossus of Pharaoh Ramesses II (\"Ramesses the Great\") wearing the royal headcloth, cobra crown, and false beard at Memphis.",
               "author": "Royal Monumental Sculptors of Ramesses II",
               "date": "c. 1279–1213 BC",
-              "context": "During his 66-year reign, Ramesses II raised more giant statues and temple gateways than any other pharaoh — including this towering limestone colossus at Memphis and four 20-metre cliff statues at Abu Simbel! **Hinge Question:** Why did Ramesses II build towering stone statues of himself at Memphis, Karnak, and southern border cliffs like Abu Simbel?",
-              "source_context": "During his 66-year reign, Ramesses II raised more giant statues and temple gateways than any other pharaoh — including this towering limestone colossus at Memphis and four 20-metre cliff statues at Abu Simbel! **Hinge Question:** Why did Ramesses II build towering stone statues of himself at Memphis, Karnak, and southern border cliffs like Abu Simbel?",
-              "hinge_question": "Why did Ramesses II build towering stone statues of himself at Memphis, Karnak, and southern border cliffs like Abu Simbel?",
+              "context": "During his 66-year reign, Ramesses II raised more giant statues and temple gateways than any other pharaoh — including this towering limestone colossus at Memphis and four 20-metre cliff statues at Abu Simbel!",
+              "source_context": "During his 66-year reign, Ramesses II raised more giant statues and temple gateways than any other pharaoh — including this towering limestone colossus at Memphis and four 20-metre cliff statues at Abu Simbel!",
               "question_badge": "RAMESSES II COLOSSUS",
               "question": "Examine giant Source C. Why did Ramesses II place towering statues of himself across Egypt?",
               "model_answer": "Ramesses II raised giant statues at Memphis, Karnak, and Abu Simbel to awe ordinary citizens and warn rival neighbours that Egypt’s pharaoh was rich, strong, and favoured by the gods.",
-              "provenance_clues": {
-                "author": "Quarried and carved from a single huge block of fine limestone by royal masons.",
-                "audience": "Worshippers, foreign ambassadors, and traders visiting the Ptah temple at Memphis.",
-                "motive": "To project permanent royal power and ensure Ramesses the Great’s name was remembered forever.",
-                "hinge_question": "Why did Ramesses II build towering stone statues of himself at Memphis, Karnak, and southern border cliffs like Abu Simbel?"
-              },
-              "teacher_notes": {
-                "hinge_question": "Why did Ramesses II build towering stone statues of himself at Memphis, Karnak, and southern border cliffs like Abu Simbel?",
-                "source_context": "During his 66-year reign, Ramesses II raised more giant statues and temple gateways than any other pharaoh — including this towering limestone colossus at Memphis and four 20-metre cliff statues at Abu Simbel! **Hinge Question:** Why did Ramesses II build towering stone statues of himself at Memphis, Karnak, and southern border cliffs like Abu Simbel?",
-                "provenance_breakdown": {
-                  "author": "Quarried and carved from a single huge block of fine limestone by royal masons.",
-                  "audience": "Worshippers, foreign ambassadors, and traders visiting the Ptah temple at Memphis.",
-                  "motive": "To project permanent royal power and ensure Ramesses the Great’s name was remembered forever."
-                }
-              },
-              "utility_enquiry": {
-                "question_badge": "RAMESSES II COLOSSUS",
-                "model_answer": "Ramesses II raised giant statues at Memphis, Karnak, and Abu Simbel to awe ordinary citizens and warn rival neighbours that Egypt’s pharaoh was rich, strong, and favoured by the gods.",
-                "provenance_clues": {
-                  "author": "Quarried and carved from a single huge block of fine limestone by royal masons.",
-                  "audience": "Worshippers, foreign ambassadors, and traders visiting the Ptah temple at Memphis.",
-                  "motive": "To project permanent royal power and ensure Ramesses the Great’s name was remembered forever."
-                }
-              },
               "provenance": "Colossal limestone statue of Pharaoh Ramesses II from the Great Temple of Ptah at Mit Rahina / Memphis (19th Dynasty)."
             },
             {
@@ -3989,36 +3006,11 @@ window.UNIT_DATA = {
               "caption": "The Hittite royal archive clay tablet recording the peace treaty agreed between Pharaoh Ramesses II of Egypt and King Hattusili III around 1259 BC.",
               "author": "Royal Scribes of Egypt & the Hittite Empire",
               "date": "c. 1259 BC",
-              "context": "Fifteen years after their fierce chariot clash at Kadesh, Pharaoh Ramesses II and Hittite King Hattusili III exchanged silver and clay copies of the world’s oldest surviving written peace treaty — promising never to invade each other again! **Hinge Question:** Why do historians consider Source D just as impressive an achievement for Ramesses II as his giant war carvings?",
-              "source_context": "Fifteen years after their fierce chariot clash at Kadesh, Pharaoh Ramesses II and Hittite King Hattusili III exchanged silver and clay copies of the world’s oldest surviving written peace treaty — promising never to invade each other again! **Hinge Question:** Why do historians consider Source D just as impressive an achievement for Ramesses II as his giant war carvings?",
-              "hinge_question": "Why do historians consider Source D just as impressive an achievement for Ramesses II as his giant war carvings?",
+              "context": "Excavated at the ancient Hittite capital of Hattusa in modern Turkey, this baked clay tablet records the c. 1259 BC agreement between Pharaoh Ramesses II and King Hattusili III.",
+              "source_context": "Excavated at the ancient Hittite capital of Hattusa in modern Turkey, this baked clay tablet records the c. 1259 BC agreement between Pharaoh Ramesses II and King Hattusili III.",
               "question_badge": "KADESH PEACE TREATY",
               "question": "What makes Source D (from around 1259 BC) famous across world history today?",
               "model_answer": "Source D is the world’s oldest surviving written peace treaty, proving Egypt and the Hittites ended years of chariot warfare through peaceful promises, mutual help, and diplomacy.",
-              "provenance_clues": {
-                "author": "Pressed into clay in wedge-shaped cuneiform script by royal diplomatic scribes.",
-                "audience": "Pharaoh Ramesses II, Hittite King Hattusili III, and temple archives in both empires.",
-                "motive": "To end exhausting border wars after Kadesh and bind both empires in lasting peace.",
-                "hinge_question": "Why do historians consider Source D just as impressive an achievement for Ramesses II as his giant war carvings?"
-              },
-              "teacher_notes": {
-                "hinge_question": "Why do historians consider Source D just as impressive an achievement for Ramesses II as his giant war carvings?",
-                "source_context": "Fifteen years after their fierce chariot clash at Kadesh, Pharaoh Ramesses II and Hittite King Hattusili III exchanged silver and clay copies of the world’s oldest surviving written peace treaty — promising never to invade each other again! **Hinge Question:** Why do historians consider Source D just as impressive an achievement for Ramesses II as his giant war carvings?",
-                "provenance_breakdown": {
-                  "author": "Pressed into clay in wedge-shaped cuneiform script by royal diplomatic scribes.",
-                  "audience": "Pharaoh Ramesses II, Hittite King Hattusili III, and temple archives in both empires.",
-                  "motive": "To end exhausting border wars after Kadesh and bind both empires in lasting peace."
-                }
-              },
-              "utility_enquiry": {
-                "question_badge": "KADESH PEACE TREATY",
-                "model_answer": "Source D is the world’s oldest surviving written peace treaty, proving Egypt and the Hittites ended years of chariot warfare through peaceful promises, mutual help, and diplomacy.",
-                "provenance_clues": {
-                  "author": "Pressed into clay in wedge-shaped cuneiform script by royal diplomatic scribes.",
-                  "audience": "Pharaoh Ramesses II, Hittite King Hattusili III, and temple archives in both empires.",
-                  "motive": "To end exhausting border wars after Kadesh and bind both empires in lasting peace."
-                }
-              },
               "provenance": "Clay cuneiform tablet of the Egyptian–Hittite Kadesh Peace Treaty excavated at Hattusa / Boğazköy (c. 1259 BC, Istanbul Archaeology Museums)."
             }
           ]
@@ -4036,36 +3028,11 @@ window.UNIT_DATA = {
           "caption": "A powerful granite sphinx from Deir el-Bahari showing female Pharaoh Hatshepsut with a muscular lion’s body, royal mane, and traditional kingly false beard.",
           "author": "Royal Sculptors at Deir el-Bahari, Thebes",
           "date": "c. 1479–1458 BC",
-          "context": "Egyptians were used to male kings, so when Hatshepsut ruled as full pharaoh she commissioned granite statues showing herself with a lion’s strength, striped nemes headcloth, and strapped-on royal false beard! **Hinge Question:** Why did female Pharaoh Hatshepsut ask sculptors to carve her wearing the traditional royal false beard and lion body?",
-          "source_context": "Egyptians were used to male kings, so when Hatshepsut ruled as full pharaoh she commissioned granite statues showing herself with a lion’s strength, striped nemes headcloth, and strapped-on royal false beard! **Hinge Question:** Why did female Pharaoh Hatshepsut ask sculptors to carve her wearing the traditional royal false beard and lion body?",
-          "hinge_question": "Why did female Pharaoh Hatshepsut ask sculptors to carve her wearing the traditional royal false beard and lion body?",
+          "context": "Carved from polished red Aswan granite around 1470 BC, this giant sphinx statue stood along the processional way of Female Pharaoh Hatshepsut's temple at Deir el-Bahari.",
+          "source_context": "Carved from polished red Aswan granite around 1470 BC, this giant sphinx statue stood along the processional way of Female Pharaoh Hatshepsut's temple at Deir el-Bahari.",
           "question_badge": "HATSHEPSUT SPHINX",
           "question": "Look closely at Hatshepsut’s chin and body in Source A. Why was she carved like this?",
           "model_answer": "Hatshepsut asked sculptors to carve her with a mighty lion’s body and ceremonial false beard to prove she held every bit as much royal authority as any male pharaoh.",
-          "provenance_clues": {
-            "author": "Carved from hard pink-red Aswan granite by royal New Kingdom stone sculptors.",
-            "audience": "Priests, officials, and visitors walking up the terraces of her temple at Deir el-Bahari.",
-            "motive": "To celebrate Hatshepsut as a true, divinely chosen pharaoh protecting Egypt with lion-like power.",
-            "hinge_question": "Why did female Pharaoh Hatshepsut ask sculptors to carve her wearing the traditional royal false beard and lion body?"
-          },
-          "teacher_notes": {
-            "hinge_question": "Why did female Pharaoh Hatshepsut ask sculptors to carve her wearing the traditional royal false beard and lion body?",
-            "source_context": "Egyptians were used to male kings, so when Hatshepsut ruled as full pharaoh she commissioned granite statues showing herself with a lion’s strength, striped nemes headcloth, and strapped-on royal false beard! **Hinge Question:** Why did female Pharaoh Hatshepsut ask sculptors to carve her wearing the traditional royal false beard and lion body?",
-            "provenance_breakdown": {
-              "author": "Carved from hard pink-red Aswan granite by royal New Kingdom stone sculptors.",
-              "audience": "Priests, officials, and visitors walking up the terraces of her temple at Deir el-Bahari.",
-              "motive": "To celebrate Hatshepsut as a true, divinely chosen pharaoh protecting Egypt with lion-like power."
-            }
-          },
-          "utility_enquiry": {
-            "question_badge": "HATSHEPSUT SPHINX",
-            "model_answer": "Hatshepsut asked sculptors to carve her with a mighty lion’s body and ceremonial false beard to prove she held every bit as much royal authority as any male pharaoh.",
-            "provenance_clues": {
-              "author": "Carved from hard pink-red Aswan granite by royal New Kingdom stone sculptors.",
-              "audience": "Priests, officials, and visitors walking up the terraces of her temple at Deir el-Bahari.",
-              "motive": "To celebrate Hatshepsut as a true, divinely chosen pharaoh protecting Egypt with lion-like power."
-            }
-          },
           "provenance": "Carved red granite sphinx of Pharaoh Hatshepsut from Deir el-Bahari, Thebes (c. 1479–1458 BC, Metropolitan Museum of Art)."
         },
         {
@@ -4079,36 +3046,11 @@ window.UNIT_DATA = {
           "caption": "Master sculptor Thutmose’s life-like painted limestone portrait bust of Queen Nefertiti wearing her tall flat-topped blue royal crown and jewelled collar.",
           "author": "Royal Court Sculptor Thutmose at Amarna",
           "date": "c. 1345 BC",
-          "context": "Discovered inside royal sculptor Thutmose’s workshop in the desert city of Amarna, this vivid painted limestone bust served as the master model for portraits of Queen Nefertiti alongside Pharaoh Akhenaten. **Hinge Question:** What does Queen Nefertiti’s unique tall blue crown and lifelike portrait suggest about her importance at Amarna?",
-          "source_context": "Discovered inside royal sculptor Thutmose’s workshop in the desert city of Amarna, this vivid painted limestone bust served as the master model for portraits of Queen Nefertiti alongside Pharaoh Akhenaten. **Hinge Question:** What does Queen Nefertiti’s unique tall blue crown and lifelike portrait suggest about her importance at Amarna?",
-          "hinge_question": "What does Queen Nefertiti’s unique tall blue crown and lifelike portrait suggest about her importance at Amarna?",
+          "context": "Discovered inside royal sculptor Thutmose’s workshop in the desert city of Amarna, this vivid painted limestone bust served as the master model for portraits of Queen Nefertiti alongside Pharaoh Akhenaten.",
+          "source_context": "Discovered inside royal sculptor Thutmose’s workshop in the desert city of Amarna, this vivid painted limestone bust served as the master model for portraits of Queen Nefertiti alongside Pharaoh Akhenaten.",
           "question_badge": "NEFERTITI ROYAL BUST",
           "question": "Inspect Queen Nefertiti’s tall crown and collar in Source B. What shows her high status?",
           "model_answer": "Nefertiti wears a unique tall royal blue crown with a golden cobra headband and rich jewelled collar, showing she ruled beside Akhenaten as one of Egypt’s most powerful queens.",
-          "provenance_clues": {
-            "author": "Carved in limestone and layered with painted gypsum plaster by court sculptor Thutmose.",
-            "audience": "Apprentice sculptors and royal patrons inside the palace city of Amarna.",
-            "motive": "To provide a lifelike royal master portrait celebrating Queen Nefertiti’s authority and grace.",
-            "hinge_question": "What does Queen Nefertiti’s unique tall blue crown and lifelike portrait suggest about her importance at Amarna?"
-          },
-          "teacher_notes": {
-            "hinge_question": "What does Queen Nefertiti’s unique tall blue crown and lifelike portrait suggest about her importance at Amarna?",
-            "source_context": "Discovered inside royal sculptor Thutmose’s workshop in the desert city of Amarna, this vivid painted limestone bust served as the master model for portraits of Queen Nefertiti alongside Pharaoh Akhenaten. **Hinge Question:** What does Queen Nefertiti’s unique tall blue crown and lifelike portrait suggest about her importance at Amarna?",
-            "provenance_breakdown": {
-              "author": "Carved in limestone and layered with painted gypsum plaster by court sculptor Thutmose.",
-              "audience": "Apprentice sculptors and royal patrons inside the palace city of Amarna.",
-              "motive": "To provide a lifelike royal master portrait celebrating Queen Nefertiti’s authority and grace."
-            }
-          },
-          "utility_enquiry": {
-            "question_badge": "NEFERTITI ROYAL BUST",
-            "model_answer": "Nefertiti wears a unique tall royal blue crown with a golden cobra headband and rich jewelled collar, showing she ruled beside Akhenaten as one of Egypt’s most powerful queens.",
-            "provenance_clues": {
-              "author": "Carved in limestone and layered with painted gypsum plaster by court sculptor Thutmose.",
-              "audience": "Apprentice sculptors and royal patrons inside the palace city of Amarna.",
-              "motive": "To provide a lifelike royal master portrait celebrating Queen Nefertiti’s authority and grace."
-            }
-          },
           "provenance": "Painted limestone and stucco bust of Queen Nefertiti from the workshop of Thutmose at Tell el-Amarna (c. 1345 BC)."
         },
         {
@@ -4122,36 +3064,11 @@ window.UNIT_DATA = {
           "caption": "A giant ten-metre carved limestone colossus of Pharaoh Ramesses II (\"Ramesses the Great\") wearing the royal headcloth, cobra crown, and false beard at Memphis.",
           "author": "Royal Monumental Sculptors of Ramesses II",
           "date": "c. 1279–1213 BC",
-          "context": "During his 66-year reign, Ramesses II raised more giant statues and temple gateways than any other pharaoh — including this towering limestone colossus at Memphis and four 20-metre cliff statues at Abu Simbel! **Hinge Question:** Why did Ramesses II build towering stone statues of himself at Memphis, Karnak, and southern border cliffs like Abu Simbel?",
-          "source_context": "During his 66-year reign, Ramesses II raised more giant statues and temple gateways than any other pharaoh — including this towering limestone colossus at Memphis and four 20-metre cliff statues at Abu Simbel! **Hinge Question:** Why did Ramesses II build towering stone statues of himself at Memphis, Karnak, and southern border cliffs like Abu Simbel?",
-          "hinge_question": "Why did Ramesses II build towering stone statues of himself at Memphis, Karnak, and southern border cliffs like Abu Simbel?",
+          "context": "During his 66-year reign, Ramesses II raised more giant statues and temple gateways than any other pharaoh — including this towering limestone colossus at Memphis and four 20-metre cliff statues at Abu Simbel!",
+          "source_context": "During his 66-year reign, Ramesses II raised more giant statues and temple gateways than any other pharaoh — including this towering limestone colossus at Memphis and four 20-metre cliff statues at Abu Simbel!",
           "question_badge": "RAMESSES II COLOSSUS",
           "question": "Examine giant Source C. Why did Ramesses II place towering statues of himself across Egypt?",
           "model_answer": "Ramesses II raised giant statues at Memphis, Karnak, and Abu Simbel to awe ordinary citizens and warn rival neighbours that Egypt’s pharaoh was rich, strong, and favoured by the gods.",
-          "provenance_clues": {
-            "author": "Quarried and carved from a single huge block of fine limestone by royal masons.",
-            "audience": "Worshippers, foreign ambassadors, and traders visiting the Ptah temple at Memphis.",
-            "motive": "To project permanent royal power and ensure Ramesses the Great’s name was remembered forever.",
-            "hinge_question": "Why did Ramesses II build towering stone statues of himself at Memphis, Karnak, and southern border cliffs like Abu Simbel?"
-          },
-          "teacher_notes": {
-            "hinge_question": "Why did Ramesses II build towering stone statues of himself at Memphis, Karnak, and southern border cliffs like Abu Simbel?",
-            "source_context": "During his 66-year reign, Ramesses II raised more giant statues and temple gateways than any other pharaoh — including this towering limestone colossus at Memphis and four 20-metre cliff statues at Abu Simbel! **Hinge Question:** Why did Ramesses II build towering stone statues of himself at Memphis, Karnak, and southern border cliffs like Abu Simbel?",
-            "provenance_breakdown": {
-              "author": "Quarried and carved from a single huge block of fine limestone by royal masons.",
-              "audience": "Worshippers, foreign ambassadors, and traders visiting the Ptah temple at Memphis.",
-              "motive": "To project permanent royal power and ensure Ramesses the Great’s name was remembered forever."
-            }
-          },
-          "utility_enquiry": {
-            "question_badge": "RAMESSES II COLOSSUS",
-            "model_answer": "Ramesses II raised giant statues at Memphis, Karnak, and Abu Simbel to awe ordinary citizens and warn rival neighbours that Egypt’s pharaoh was rich, strong, and favoured by the gods.",
-            "provenance_clues": {
-              "author": "Quarried and carved from a single huge block of fine limestone by royal masons.",
-              "audience": "Worshippers, foreign ambassadors, and traders visiting the Ptah temple at Memphis.",
-              "motive": "To project permanent royal power and ensure Ramesses the Great’s name was remembered forever."
-            }
-          },
           "provenance": "Colossal limestone statue of Pharaoh Ramesses II from the Great Temple of Ptah at Mit Rahina / Memphis (19th Dynasty)."
         },
         {
@@ -4165,36 +3082,11 @@ window.UNIT_DATA = {
           "caption": "The Hittite royal archive clay tablet recording the peace treaty agreed between Pharaoh Ramesses II of Egypt and King Hattusili III around 1259 BC.",
           "author": "Royal Scribes of Egypt & the Hittite Empire",
           "date": "c. 1259 BC",
-          "context": "Fifteen years after their fierce chariot clash at Kadesh, Pharaoh Ramesses II and Hittite King Hattusili III exchanged silver and clay copies of the world’s oldest surviving written peace treaty — promising never to invade each other again! **Hinge Question:** Why do historians consider Source D just as impressive an achievement for Ramesses II as his giant war carvings?",
-          "source_context": "Fifteen years after their fierce chariot clash at Kadesh, Pharaoh Ramesses II and Hittite King Hattusili III exchanged silver and clay copies of the world’s oldest surviving written peace treaty — promising never to invade each other again! **Hinge Question:** Why do historians consider Source D just as impressive an achievement for Ramesses II as his giant war carvings?",
-          "hinge_question": "Why do historians consider Source D just as impressive an achievement for Ramesses II as his giant war carvings?",
+          "context": "Excavated at the ancient Hittite capital of Hattusa in modern Turkey, this baked clay tablet records the c. 1259 BC agreement between Pharaoh Ramesses II and King Hattusili III.",
+          "source_context": "Excavated at the ancient Hittite capital of Hattusa in modern Turkey, this baked clay tablet records the c. 1259 BC agreement between Pharaoh Ramesses II and King Hattusili III.",
           "question_badge": "KADESH PEACE TREATY",
           "question": "What makes Source D (from around 1259 BC) famous across world history today?",
           "model_answer": "Source D is the world’s oldest surviving written peace treaty, proving Egypt and the Hittites ended years of chariot warfare through peaceful promises, mutual help, and diplomacy.",
-          "provenance_clues": {
-            "author": "Pressed into clay in wedge-shaped cuneiform script by royal diplomatic scribes.",
-            "audience": "Pharaoh Ramesses II, Hittite King Hattusili III, and temple archives in both empires.",
-            "motive": "To end exhausting border wars after Kadesh and bind both empires in lasting peace.",
-            "hinge_question": "Why do historians consider Source D just as impressive an achievement for Ramesses II as his giant war carvings?"
-          },
-          "teacher_notes": {
-            "hinge_question": "Why do historians consider Source D just as impressive an achievement for Ramesses II as his giant war carvings?",
-            "source_context": "Fifteen years after their fierce chariot clash at Kadesh, Pharaoh Ramesses II and Hittite King Hattusili III exchanged silver and clay copies of the world’s oldest surviving written peace treaty — promising never to invade each other again! **Hinge Question:** Why do historians consider Source D just as impressive an achievement for Ramesses II as his giant war carvings?",
-            "provenance_breakdown": {
-              "author": "Pressed into clay in wedge-shaped cuneiform script by royal diplomatic scribes.",
-              "audience": "Pharaoh Ramesses II, Hittite King Hattusili III, and temple archives in both empires.",
-              "motive": "To end exhausting border wars after Kadesh and bind both empires in lasting peace."
-            }
-          },
-          "utility_enquiry": {
-            "question_badge": "KADESH PEACE TREATY",
-            "model_answer": "Source D is the world’s oldest surviving written peace treaty, proving Egypt and the Hittites ended years of chariot warfare through peaceful promises, mutual help, and diplomacy.",
-            "provenance_clues": {
-              "author": "Pressed into clay in wedge-shaped cuneiform script by royal diplomatic scribes.",
-              "audience": "Pharaoh Ramesses II, Hittite King Hattusili III, and temple archives in both empires.",
-              "motive": "To end exhausting border wars after Kadesh and bind both empires in lasting peace."
-            }
-          },
           "provenance": "Clay cuneiform tablet of the Egyptian–Hittite Kadesh Peace Treaty excavated at Hattusa / Boğazköy (c. 1259 BC, Istanbul Archaeology Museums)."
         }
       ],
@@ -4343,38 +3235,38 @@ window.UNIT_DATA = {
       ],
       "tasks": [
         {
-          "id": "task_1",
+          "id": "ks2_ancient_egypt_l5_t1",
           "task_num": 1,
           "type": "source_clues",
+          "title": "1. Primary Evidence Detective",
           "topic": "1. Primary Evidence Detective",
-          "tag": "Source Clues",
-          "question": "Compare Sources A, B, and C. How did Egyptian sculptors show royal power in stone?",
-          "starter": "Comparing Sources A, B, and C, New Kingdom sculptors used clever symbols to show royal power because...",
+          "question": "Look closely at Hatshepsut’s chin and body in Source A. Why was she carved like this?",
+          "starter": "Looking closely at Source A, carving female Pharaoh Hatshepsut as a royal granite sphinx with a beard shows...",
           "word_bank": [
+            "Pharaoh Hatshepsut",
+            "lion sphinx",
             "false beard",
-            "sphinx",
-            "Nefertiti",
-            "colossus"
+            "royal authority"
+          ],
+          "key_terms": [
+            "Pharaoh Hatshepsut",
+            "lion sphinx",
+            "false beard",
+            "royal authority"
           ],
           "hints": [
-            "Foundation Clues: Describe how Source A shows female Pharaoh Hatshepsut with a lion's body and royal false beard.",
-            "Foundation Clues: Explain what Nefertiti's tall blue crown (Source B) and Ramesses II's giant size (Source C) show.",
-            "Scholar Challenge: Explain why Hatshepsut chose traditional male kingly symbols in Source A even though she was a woman!"
+            "Spot the two traditional symbols of kingship combined on Source A (lion body and strapped-on beard).",
+            "Explain that Egyptians were used to male kings wearing the nemes headdress and royal beard.",
+            "Show why Female Pharaoh Hatshepsut used these symbols to prove her full royal authority."
           ],
-          "model_answer": "Comparing Sources A, B, and C, New Kingdom sculptors used clever symbols to show royal power because Source A carves female Pharaoh Hatshepsut with a fierce lion's sphinx body, striped headcloth, and royal false beard to prove she ruled with full kingly authority. Source B shows Queen Nefertiti wearing a unique tall blue crown with a golden cobra, proving her immense status at Amarna. Meanwhile, Source C's ten-metre limestone colossus of Ramesses II used sheer giant scale to awe everyone who visited Memphis!",
-          "key_terms": [
-            "false beard",
-            "sphinx",
-            "Nefertiti",
-            "colossus"
-          ]
+          "model_answer": "Looking closely at Source A, carving female Pharaoh Hatshepsut as a royal granite sphinx with a beard shows she ruled as full king rather than merely a queen consort. Combining a mighty lion’s body with the traditional pharaoh’s beard proved she held the exact same divine authority as any male ruler."
         },
         {
-          "id": "task_2",
+          "id": "ks2_ancient_egypt_l5_t2",
           "task_num": 2,
           "type": "historical_explanation",
-          "topic": "2. Historical Explanation",
-          "tag": "Cause & Effect",
+          "title": "2. Historical Investigation",
+          "topic": "2. Historical Investigation",
           "question": "Explain why Ramesses II and the Hittites signed the Kadesh Peace Treaty around 1259 BC.",
           "starter": "Around 1259 BC, Pharaoh Ramesses II and the Hittite king decided to sign a peace treaty because...",
           "word_bank": [
@@ -4383,53 +3275,26 @@ window.UNIT_DATA = {
             "1259 BC",
             "peace treaty"
           ],
-          "hints": [
-            "Foundation Clues: Describe the huge 1274 BC chariot clash at Kadesh where neither army won outright.",
-            "Foundation Clues: Explain how years of costly border fighting led both kings to exchange clay and silver treaty copies.",
-            "Scholar Challenge: Use Source D to explain why historians call this c. 1259 BC agreement a milestone in world history!"
-          ],
-          "model_answer": "Around 1259 BC, Pharaoh Ramesses II and the Hittite king decided to sign a peace treaty because their massive chariot clash at Kadesh in 1274 BC ended without an outright winner, and fifteen more years of border wars drained soldiers and gold from both empires. By exchanging official copies on silver and clay tablets like Source D, both rulers promised never to invade each other again and to help if enemies attacked — creating the world's oldest surviving written peace treaty!",
           "key_terms": [
             "Kadesh",
             "chariots",
             "1259 BC",
             "peace treaty"
-          ]
-        },
-        {
-          "id": "task_3",
-          "task_num": 3,
-          "type": "living_history",
-          "topic": "3. Living History: Step Into Their Shoes",
-          "tag": "Personal Experiences",
-          "question": "Imagine sailing home to Thebes on Hatshepsut's Punt expedition. Describe unloading your ship's cargo!",
-          "starter": "Lowering our wooden gangplank onto the busy river dock at Thebes after sailing from Punt, I carefully carry...",
-          "word_bank": [
-            "Hatshepsut",
-            "Land of Punt",
-            "frankincense",
-            "Deir el-Bahari"
           ],
           "hints": [
-            "Foundation Clues: Describe carrying baskets holding living frankincense trees, shining gold, and dark ebony wood.",
-            "Foundation Clues: Describe crowds cheering Pharaoh Hatshepsut as trees are planted outside Deir el-Bahari.",
-            "Scholar Challenge: Explain why bringing back living incense trees pleased the gods at Karnak without losing soldiers in war!"
+            "Describe the huge 1274 BC chariot clash at Kadesh where neither army won outright.",
+            "Explain how years of costly border fighting led both kings to exchange clay and silver treaty copies.",
+            "Use Source D to explain why historians call this c. 1259 BC agreement a milestone in world history!"
           ],
-          "model_answer": "Lowering our wooden gangplank onto the busy river dock at Thebes after sailing from the Land of Punt, I carefully carry a woven basket holding the roots of a living frankincense tree! Around me, fellow sailors unload gleaming gold rings, dark ebony timber, and sweet resin while crowds cheer Pharaoh Hatshepsut. Planting living frankincense trees outside her terraced cliff temple at Deir el-Bahari gives Karnak's temples sweet incense forever — winning riches through peaceful trade rather than bloodshed!",
-          "key_terms": [
-            "Hatshepsut",
-            "Land of Punt",
-            "frankincense",
-            "Deir el-Bahari"
-          ]
+          "model_answer": "Around 1259 BC, Pharaoh Ramesses II and the Hittite king decided to sign a peace treaty because their massive chariot clash at Kadesh in 1274 BC ended without an outright winner, and fifteen more years of border wars drained soldiers and gold from both empires. By exchanging official copies on silver and clay tablets like Source D, both rulers promised never to invade each other again and to help if enemies attacked — creating the world's oldest surviving written peace treaty!"
         },
         {
-          "id": "task_4",
-          "task_num": 4,
+          "id": "ks2_ancient_egypt_l5_t3",
+          "task_num": 3,
           "type": "big_question",
-          "topic": "4. Mission Challenge • The Big Question",
-          "tag": "Historian Challenge",
-          "question": "Big Question: Who deserves the title of mightiest New Kingdom ruler — Hatshepsut or Ramesses II?",
+          "title": "3. Mission Challenge • The Big Question",
+          "topic": "3. Mission Challenge • The Big Question",
+          "question": "Big Question: What made Hatshepsut, Nefertiti, and Ramesses II three of Ancient Egypt's most remarkable New Kingdom rulers?",
           "starter": "Both Pharaoh Hatshepsut and Pharaoh Ramesses II achieved remarkable things during the New Kingdom, however...",
           "word_bank": [
             "Hatshepsut",
@@ -4437,18 +3302,18 @@ window.UNIT_DATA = {
             "Ramesses II",
             "Abu Simbel"
           ],
-          "hints": [
-            "Foundation Clues: Give Hatshepsut's achievements first (ruling as female pharaoh, Punt frankincense trade, and Deir el-Bahari).",
-            "Foundation Clues: Give Ramesses II's achievements next (66-year reign, Kadesh chariots, c. 1259 BC peace treaty, and Abu Simbel).",
-            "Scholar Challenge: Reach your own clear historian's judgement explaining whether peaceful trade or 66 years of diplomacy and giant temples impressed you more!"
-          ],
-          "model_answer": "Both Pharaoh Hatshepsut and Pharaoh Ramesses II achieved remarkable things during the New Kingdom, however each showed greatness in different ways. Hatshepsut proved a woman could govern Egypt peacefully as full pharaoh, sending Red Sea ships to Punt for frankincense trees and building graceful Deir el-Bahari. Meanwhile, Ramesses II ruled for sixty-six years, carved four twenty-metre statues into the cliffs at Abu Simbel, and wisely signed the world's oldest surviving peace treaty after Kadesh around 1259 BC — making both unforgettable leaders!",
           "key_terms": [
             "Hatshepsut",
             "Deir el-Bahari",
             "Ramesses II",
             "Abu Simbel"
-          ]
+          ],
+          "hints": [
+            "Give Hatshepsut's achievements first (ruling as female pharaoh, Punt frankincense trade, and Deir el-Bahari).",
+            "Give Ramesses II's achievements next (66-year reign, Kadesh chariots, c. 1259 BC peace treaty, and Abu Simbel).",
+            "Reach your own clear historian's judgement explaining whether peaceful trade or 66 years of diplomacy and giant temples impressed you more!"
+          ],
+          "model_answer": "Both Pharaoh Hatshepsut and Pharaoh Ramesses II achieved remarkable things during the New Kingdom, however each showed greatness in different ways. Hatshepsut proved a woman could govern Egypt peacefully as full pharaoh, sending Red Sea ships to Punt for frankincense trees and building graceful Deir el-Bahari. Meanwhile, Ramesses II ruled for sixty-six years, carved four twenty-metre statues into the cliffs at Abu Simbel, and wisely signed the world's oldest surviving peace treaty after Kadesh around 1259 BC — making both unforgettable leaders!"
         }
       ],
       "quiz": [
@@ -4627,8 +3492,8 @@ window.UNIT_DATA = {
               },
               {
                 "time": "22–42m",
-                "label": "Dual-Scaffolded Historian Tasks",
-                "instruction": "Complete Tasks 1–4 using Foundation Clues and word banks, stretching confident primary pupils with Scholar Challenge prompts."
+                "label": "Historian Writing & Companion Booklet",
+                "instruction": "Complete Historian Writing Tasks 1–3 using the universal Sentence Starter, Historian Word Bank, and primary source clues."
               },
               {
                 "time": "42–50m",
@@ -4749,36 +3614,11 @@ window.UNIT_DATA = {
               "caption": "Expedition photographer Harry Burton’s 1923 photograph showing Howard Carter kneeling carefully before the opened gilded shrine doors inside tomb KV62.",
               "author": "Harry Burton (Expedition Photographer in Tomb KV62)",
               "date": "AD 1923 (following the November 1922 discovery)",
-              "context": "After Howard Carter and Egyptian excavators uncovered KV62’s buried steps in November 1922, Carter insisted on photographing and numbering every single treasure in place rather than grabbing gold hastily like early treasure-hunters. **Hinge Question:** Why did Howard Carter’s team spend ten slow years photographing and numbering over 5,000 objects instead of rushing them out?",
-              "source_context": "After Howard Carter and Egyptian excavators uncovered KV62’s buried steps in November 1922, Carter insisted on photographing and numbering every single treasure in place rather than grabbing gold hastily like early treasure-hunters. **Hinge Question:** Why did Howard Carter’s team spend ten slow years photographing and numbering over 5,000 objects instead of rushing them out?",
-              "hinge_question": "Why did Howard Carter’s team spend ten slow years photographing and numbering over 5,000 objects instead of rushing them out?",
+              "context": "After Howard Carter and Egyptian excavators uncovered KV62’s buried steps in November 1922, Carter insisted on photographing and numbering every single treasure in place rather than grabbing gold hastily like early treasure-hunters.",
+              "source_context": "After Howard Carter and Egyptian excavators uncovered KV62’s buried steps in November 1922, Carter insisted on photographing and numbering every single treasure in place rather than grabbing gold hastily like early treasure-hunters.",
               "question_badge": "CARTER AT KV62 SHRINE",
               "question": "Look at Howard Carter working in Source A. Why did recording KV62 take ten patient years?",
               "model_answer": "Over 5,000 fragile 3,200-year-old treasures were packed tightly inside KV62, so Carter’s team photographed, numbered, and strengthened every object before moving it.",
-              "provenance_clues": {
-                "author": "Photographed underground under electric lamps by expedition photographer Harry Burton.",
-                "audience": "Museum scientists, historians, and excited newspaper readers around the world in the 1920s.",
-                "motive": "To create an exact scientific record of how Tutankhamun’s nested shrines and grave goods lay.",
-                "hinge_question": "Why did Howard Carter’s team spend ten slow years photographing and numbering over 5,000 objects instead of rushing them out?"
-              },
-              "teacher_notes": {
-                "hinge_question": "Why did Howard Carter’s team spend ten slow years photographing and numbering over 5,000 objects instead of rushing them out?",
-                "source_context": "After Howard Carter and Egyptian excavators uncovered KV62’s buried steps in November 1922, Carter insisted on photographing and numbering every single treasure in place rather than grabbing gold hastily like early treasure-hunters. **Hinge Question:** Why did Howard Carter’s team spend ten slow years photographing and numbering over 5,000 objects instead of rushing them out?",
-                "provenance_breakdown": {
-                  "author": "Photographed underground under electric lamps by expedition photographer Harry Burton.",
-                  "audience": "Museum scientists, historians, and excited newspaper readers around the world in the 1920s.",
-                  "motive": "To create an exact scientific record of how Tutankhamun’s nested shrines and grave goods lay."
-                }
-              },
-              "utility_enquiry": {
-                "question_badge": "CARTER AT KV62 SHRINE",
-                "model_answer": "Over 5,000 fragile 3,200-year-old treasures were packed tightly inside KV62, so Carter’s team photographed, numbered, and strengthened every object before moving it.",
-                "provenance_clues": {
-                  "author": "Photographed underground under electric lamps by expedition photographer Harry Burton.",
-                  "audience": "Museum scientists, historians, and excited newspaper readers around the world in the 1920s.",
-                  "motive": "To create an exact scientific record of how Tutankhamun’s nested shrines and grave goods lay."
-                }
-              },
               "provenance": "Archival glass-plate expedition photograph by Harry Burton inside tomb KV62, Valley of the Kings (1923)."
             },
             {
@@ -4792,36 +3632,11 @@ window.UNIT_DATA = {
               "caption": "Tutankhamun’s dazzling wooden throne covered in sheet gold, silver, coloured glass, and semi-precious stones, guarded by winged cobras and carved lion heads.",
               "author": "Royal Palace Goldsmiths of Tutankhamun",
               "date": "c. 1332–1323 BC",
-              "context": "Found gleaming beneath ritual couches inside KV62, Tutankhamun’s golden throne shows a tender backrest scene of his young queen rubbing scented ointment onto the boy-king’s shoulder beneath sunbeams! **Hinge Question:** Why had giant pharaohs like Ramesses II lost all their gold to ancient robbers, whereas young Tutankhamun’s golden throne survived?",
-              "source_context": "Found gleaming beneath ritual couches inside KV62, Tutankhamun’s golden throne shows a tender backrest scene of his young queen rubbing scented ointment onto the boy-king’s shoulder beneath sunbeams! **Hinge Question:** Why had giant pharaohs like Ramesses II lost all their gold to ancient robbers, whereas young Tutankhamun’s golden throne survived?",
-              "hinge_question": "Why had giant pharaohs like Ramesses II lost all their gold to ancient robbers, whereas young Tutankhamun’s golden throne survived?",
+              "context": "Found gleaming beneath ritual couches inside KV62, Tutankhamun’s golden throne shows a tender backrest scene of his young queen rubbing scented ointment onto the boy-king’s shoulder beneath sunbeams!",
+              "source_context": "Found gleaming beneath ritual couches inside KV62, Tutankhamun’s golden throne shows a tender backrest scene of his young queen rubbing scented ointment onto the boy-king’s shoulder beneath sunbeams!",
               "question_badge": "TUTANKHAMUN GOLDEN THRONE",
               "question": "Why did dazzling treasures like Source B survive untouched inside Tutankhamun’s small tomb?",
               "model_answer": "Because Tutankhamun died suddenly aged nineteen, he was buried in a small rock tomb whose steps were soon covered by limestone rubble from later digging, hiding it from robbers.",
-              "provenance_clues": {
-                "author": "Carved from wood, overlaid with beaten gold leaf, and inlaid with coloured glass by royal craftspeople.",
-                "audience": "Royal courtiers during Tutankhamun’s short life, and the gods in his afterlife.",
-                "motive": "To seat the young pharaoh in golden splendour both in his palace and in eternity.",
-                "hinge_question": "Why had giant pharaohs like Ramesses II lost all their gold to ancient robbers, whereas young Tutankhamun’s golden throne survived?"
-              },
-              "teacher_notes": {
-                "hinge_question": "Why had giant pharaohs like Ramesses II lost all their gold to ancient robbers, whereas young Tutankhamun’s golden throne survived?",
-                "source_context": "Found gleaming beneath ritual couches inside KV62, Tutankhamun’s golden throne shows a tender backrest scene of his young queen rubbing scented ointment onto the boy-king’s shoulder beneath sunbeams! **Hinge Question:** Why had giant pharaohs like Ramesses II lost all their gold to ancient robbers, whereas young Tutankhamun’s golden throne survived?",
-                "provenance_breakdown": {
-                  "author": "Carved from wood, overlaid with beaten gold leaf, and inlaid with coloured glass by royal craftspeople.",
-                  "audience": "Royal courtiers during Tutankhamun’s short life, and the gods in his afterlife.",
-                  "motive": "To seat the young pharaoh in golden splendour both in his palace and in eternity."
-                }
-              },
-              "utility_enquiry": {
-                "question_badge": "TUTANKHAMUN GOLDEN THRONE",
-                "model_answer": "Because Tutankhamun died suddenly aged nineteen, he was buried in a small rock tomb whose steps were soon covered by limestone rubble from later digging, hiding it from robbers.",
-                "provenance_clues": {
-                  "author": "Carved from wood, overlaid with beaten gold leaf, and inlaid with coloured glass by royal craftspeople.",
-                  "audience": "Royal courtiers during Tutankhamun’s short life, and the gods in his afterlife.",
-                  "motive": "To seat the young pharaoh in golden splendour both in his palace and in eternity."
-                }
-              },
               "provenance": "Gilded and inlaid wooden throne of Pharaoh Tutankhamun from tomb KV62, Valley of the Kings (c. 1332–1323 BC, Cairo)."
             }
           ]
@@ -4848,36 +3663,11 @@ window.UNIT_DATA = {
               "caption": "A finely carved marble portrait bust of Queen Cleopatra VII wearing her braided \"melon\" hairstyle and the broad cloth royal diadem ribbon of Hellenistic monarchs.",
               "author": "Classical Portrait Sculptor (c. 40–30 BC)",
               "date": "c. 40–30 BC",
-              "context": "Descended from Alexander the Great’s Macedonian Greek general Ptolemy, Queen Cleopatra VII wore Greek royal diadems like Source C in Alexandria yet also spoke fluent Egyptian and honoured Isis and Horus along the Nile! **Hinge Question:** How did speaking Egyptian as well as Greek and seven other languages help Cleopatra VII govern Egypt so skilfully?",
-              "source_context": "Descended from Alexander the Great’s Macedonian Greek general Ptolemy, Queen Cleopatra VII wore Greek royal diadems like Source C in Alexandria yet also spoke fluent Egyptian and honoured Isis and Horus along the Nile! **Hinge Question:** How did speaking Egyptian as well as Greek and seven other languages help Cleopatra VII govern Egypt so skilfully?",
-              "hinge_question": "How did speaking Egyptian as well as Greek and seven other languages help Cleopatra VII govern Egypt so skilfully?",
+              "context": "Descended from Alexander the Great’s Macedonian Greek general Ptolemy, Queen Cleopatra VII wore Greek royal diadems like Source C in Alexandria yet also spoke fluent Egyptian and honoured Isis and Horus along the Nile!",
+              "source_context": "Descended from Alexander the Great’s Macedonian Greek general Ptolemy, Queen Cleopatra VII wore Greek royal diadems like Source C in Alexandria yet also spoke fluent Egyptian and honoured Isis and Horus along the Nile!",
               "question_badge": "CLEOPATRA MARBLE BUST",
               "question": "Notice the royal headband on Source C. How did Cleopatra blend Greek and Egyptian worlds?",
               "model_answer": "Cleopatra wore the Greek royal headband of her Ptolemaic family from Alexandria, yet became the first ruler in her dynasty for centuries to learn fluent Egyptian and honour Nile temples.",
-              "provenance_clues": {
-                "author": "Sculpted in fine white marble during Cleopatra VII’s lifetime around 40–30 BC.",
-                "audience": "Royal supporters and ambassadors across the Mediterranean world.",
-                "motive": "To present Cleopatra VII as a dignified, educated, and legitimate Hellenistic queen.",
-                "hinge_question": "How did speaking Egyptian as well as Greek and seven other languages help Cleopatra VII govern Egypt so skilfully?"
-              },
-              "teacher_notes": {
-                "hinge_question": "How did speaking Egyptian as well as Greek and seven other languages help Cleopatra VII govern Egypt so skilfully?",
-                "source_context": "Descended from Alexander the Great’s Macedonian Greek general Ptolemy, Queen Cleopatra VII wore Greek royal diadems like Source C in Alexandria yet also spoke fluent Egyptian and honoured Isis and Horus along the Nile! **Hinge Question:** How did speaking Egyptian as well as Greek and seven other languages help Cleopatra VII govern Egypt so skilfully?",
-                "provenance_breakdown": {
-                  "author": "Sculpted in fine white marble during Cleopatra VII’s lifetime around 40–30 BC.",
-                  "audience": "Royal supporters and ambassadors across the Mediterranean world.",
-                  "motive": "To present Cleopatra VII as a dignified, educated, and legitimate Hellenistic queen."
-                }
-              },
-              "utility_enquiry": {
-                "question_badge": "CLEOPATRA MARBLE BUST",
-                "model_answer": "Cleopatra wore the Greek royal headband of her Ptolemaic family from Alexandria, yet became the first ruler in her dynasty for centuries to learn fluent Egyptian and honour Nile temples.",
-                "provenance_clues": {
-                  "author": "Sculpted in fine white marble during Cleopatra VII’s lifetime around 40–30 BC.",
-                  "audience": "Royal supporters and ambassadors across the Mediterranean world.",
-                  "motive": "To present Cleopatra VII as a dignified, educated, and legitimate Hellenistic queen."
-                }
-              },
               "provenance": "Marble portrait bust of Queen Cleopatra VII wearing a royal diadem (c. 40–30 BC, Altes Museum, Berlin)."
             },
             {
@@ -4891,36 +3681,11 @@ window.UNIT_DATA = {
               "caption": "An ancient silver tetradrachm coin struck with Queen Cleopatra VII’s profile, royal diadem, and Greek lettering naming her queen.",
               "author": "Royal Mint Official under Queen Cleopatra VII",
               "date": "c. 37–32 BC",
-              "context": "Hostile Roman writers later spread unfair stories painting Cleopatra VII merely as a vain charmer, whereas her own stamped silver coins (Source D) show a shrewd, determined monarch commanding fleets, grain stores, and treasuries! **Hinge Question:** Why is a coin minted by Cleopatra VII herself (Source D) fairer evidence of how she ruled than stories written by her Roman enemies?",
-              "source_context": "Hostile Roman writers later spread unfair stories painting Cleopatra VII merely as a vain charmer, whereas her own stamped silver coins (Source D) show a shrewd, determined monarch commanding fleets, grain stores, and treasuries! **Hinge Question:** Why is a coin minted by Cleopatra VII herself (Source D) fairer evidence of how she ruled than stories written by her Roman enemies?",
-              "hinge_question": "Why is a coin minted by Cleopatra VII herself (Source D) fairer evidence of how she ruled than stories written by her Roman enemies?",
+              "context": "Hostile Roman writers later spread unfair stories painting Cleopatra VII merely as a vain charmer, whereas her own stamped silver coins (Source D) show a shrewd, determined monarch commanding fleets, grain stores, and treasuries!",
+              "source_context": "Hostile Roman writers later spread unfair stories painting Cleopatra VII merely as a vain charmer, whereas her own stamped silver coins (Source D) show a shrewd, determined monarch commanding fleets, grain stores, and treasuries!",
               "question_badge": "CLEOPATRA SILVER COIN",
               "question": "Why do historians compare Cleopatra’s own coin (Source D) against later Roman stories?",
               "model_answer": "Roman writers conquered Cleopatra in 30 BC and exaggerated stories to praise Rome, whereas Source D shows how Cleopatra chose to present herself — as a strong, capable ruling monarch.",
-              "provenance_clues": {
-                "author": "Struck from engraved metal dies at a royal mint under Cleopatra VII’s authority.",
-                "audience": "Soldiers, merchants, and sailors using silver money across Egypt and the eastern Mediterranean.",
-                "motive": "To pay troops, boost trade, and broadcast Cleopatra VII’s royal authority on every coin.",
-                "hinge_question": "Why is a coin minted by Cleopatra VII herself (Source D) fairer evidence of how she ruled than stories written by her Roman enemies?"
-              },
-              "teacher_notes": {
-                "hinge_question": "Why is a coin minted by Cleopatra VII herself (Source D) fairer evidence of how she ruled than stories written by her Roman enemies?",
-                "source_context": "Hostile Roman writers later spread unfair stories painting Cleopatra VII merely as a vain charmer, whereas her own stamped silver coins (Source D) show a shrewd, determined monarch commanding fleets, grain stores, and treasuries! **Hinge Question:** Why is a coin minted by Cleopatra VII herself (Source D) fairer evidence of how she ruled than stories written by her Roman enemies?",
-                "provenance_breakdown": {
-                  "author": "Struck from engraved metal dies at a royal mint under Cleopatra VII’s authority.",
-                  "audience": "Soldiers, merchants, and sailors using silver money across Egypt and the eastern Mediterranean.",
-                  "motive": "To pay troops, boost trade, and broadcast Cleopatra VII’s royal authority on every coin."
-                }
-              },
-              "utility_enquiry": {
-                "question_badge": "CLEOPATRA SILVER COIN",
-                "model_answer": "Roman writers conquered Cleopatra in 30 BC and exaggerated stories to praise Rome, whereas Source D shows how Cleopatra chose to present herself — as a strong, capable ruling monarch.",
-                "provenance_clues": {
-                  "author": "Struck from engraved metal dies at a royal mint under Cleopatra VII’s authority.",
-                  "audience": "Soldiers, merchants, and sailors using silver money across Egypt and the eastern Mediterranean.",
-                  "motive": "To pay troops, boost trade, and broadcast Cleopatra VII’s royal authority on every coin."
-                }
-              },
               "provenance": "Silver tetradrachm coin bearing the diademed portrait and Greek inscription of Queen Cleopatra VII (c. 37–32 BC)."
             }
           ]
@@ -4938,36 +3703,11 @@ window.UNIT_DATA = {
           "caption": "Expedition photographer Harry Burton’s 1923 photograph showing Howard Carter kneeling carefully before the opened gilded shrine doors inside tomb KV62.",
           "author": "Harry Burton (Expedition Photographer in Tomb KV62)",
           "date": "AD 1923 (following the November 1922 discovery)",
-          "context": "After Howard Carter and Egyptian excavators uncovered KV62’s buried steps in November 1922, Carter insisted on photographing and numbering every single treasure in place rather than grabbing gold hastily like early treasure-hunters. **Hinge Question:** Why did Howard Carter’s team spend ten slow years photographing and numbering over 5,000 objects instead of rushing them out?",
-          "source_context": "After Howard Carter and Egyptian excavators uncovered KV62’s buried steps in November 1922, Carter insisted on photographing and numbering every single treasure in place rather than grabbing gold hastily like early treasure-hunters. **Hinge Question:** Why did Howard Carter’s team spend ten slow years photographing and numbering over 5,000 objects instead of rushing them out?",
-          "hinge_question": "Why did Howard Carter’s team spend ten slow years photographing and numbering over 5,000 objects instead of rushing them out?",
+          "context": "After Howard Carter and Egyptian excavators uncovered KV62’s buried steps in November 1922, Carter insisted on photographing and numbering every single treasure in place rather than grabbing gold hastily like early treasure-hunters.",
+          "source_context": "After Howard Carter and Egyptian excavators uncovered KV62’s buried steps in November 1922, Carter insisted on photographing and numbering every single treasure in place rather than grabbing gold hastily like early treasure-hunters.",
           "question_badge": "CARTER AT KV62 SHRINE",
           "question": "Look at Howard Carter working in Source A. Why did recording KV62 take ten patient years?",
           "model_answer": "Over 5,000 fragile 3,200-year-old treasures were packed tightly inside KV62, so Carter’s team photographed, numbered, and strengthened every object before moving it.",
-          "provenance_clues": {
-            "author": "Photographed underground under electric lamps by expedition photographer Harry Burton.",
-            "audience": "Museum scientists, historians, and excited newspaper readers around the world in the 1920s.",
-            "motive": "To create an exact scientific record of how Tutankhamun’s nested shrines and grave goods lay.",
-            "hinge_question": "Why did Howard Carter’s team spend ten slow years photographing and numbering over 5,000 objects instead of rushing them out?"
-          },
-          "teacher_notes": {
-            "hinge_question": "Why did Howard Carter’s team spend ten slow years photographing and numbering over 5,000 objects instead of rushing them out?",
-            "source_context": "After Howard Carter and Egyptian excavators uncovered KV62’s buried steps in November 1922, Carter insisted on photographing and numbering every single treasure in place rather than grabbing gold hastily like early treasure-hunters. **Hinge Question:** Why did Howard Carter’s team spend ten slow years photographing and numbering over 5,000 objects instead of rushing them out?",
-            "provenance_breakdown": {
-              "author": "Photographed underground under electric lamps by expedition photographer Harry Burton.",
-              "audience": "Museum scientists, historians, and excited newspaper readers around the world in the 1920s.",
-              "motive": "To create an exact scientific record of how Tutankhamun’s nested shrines and grave goods lay."
-            }
-          },
-          "utility_enquiry": {
-            "question_badge": "CARTER AT KV62 SHRINE",
-            "model_answer": "Over 5,000 fragile 3,200-year-old treasures were packed tightly inside KV62, so Carter’s team photographed, numbered, and strengthened every object before moving it.",
-            "provenance_clues": {
-              "author": "Photographed underground under electric lamps by expedition photographer Harry Burton.",
-              "audience": "Museum scientists, historians, and excited newspaper readers around the world in the 1920s.",
-              "motive": "To create an exact scientific record of how Tutankhamun’s nested shrines and grave goods lay."
-            }
-          },
           "provenance": "Archival glass-plate expedition photograph by Harry Burton inside tomb KV62, Valley of the Kings (1923)."
         },
         {
@@ -4981,36 +3721,11 @@ window.UNIT_DATA = {
           "caption": "Tutankhamun’s dazzling wooden throne covered in sheet gold, silver, coloured glass, and semi-precious stones, guarded by winged cobras and carved lion heads.",
           "author": "Royal Palace Goldsmiths of Tutankhamun",
           "date": "c. 1332–1323 BC",
-          "context": "Found gleaming beneath ritual couches inside KV62, Tutankhamun’s golden throne shows a tender backrest scene of his young queen rubbing scented ointment onto the boy-king’s shoulder beneath sunbeams! **Hinge Question:** Why had giant pharaohs like Ramesses II lost all their gold to ancient robbers, whereas young Tutankhamun’s golden throne survived?",
-          "source_context": "Found gleaming beneath ritual couches inside KV62, Tutankhamun’s golden throne shows a tender backrest scene of his young queen rubbing scented ointment onto the boy-king’s shoulder beneath sunbeams! **Hinge Question:** Why had giant pharaohs like Ramesses II lost all their gold to ancient robbers, whereas young Tutankhamun’s golden throne survived?",
-          "hinge_question": "Why had giant pharaohs like Ramesses II lost all their gold to ancient robbers, whereas young Tutankhamun’s golden throne survived?",
+          "context": "Found gleaming beneath ritual couches inside KV62, Tutankhamun’s golden throne shows a tender backrest scene of his young queen rubbing scented ointment onto the boy-king’s shoulder beneath sunbeams!",
+          "source_context": "Found gleaming beneath ritual couches inside KV62, Tutankhamun’s golden throne shows a tender backrest scene of his young queen rubbing scented ointment onto the boy-king’s shoulder beneath sunbeams!",
           "question_badge": "TUTANKHAMUN GOLDEN THRONE",
           "question": "Why did dazzling treasures like Source B survive untouched inside Tutankhamun’s small tomb?",
           "model_answer": "Because Tutankhamun died suddenly aged nineteen, he was buried in a small rock tomb whose steps were soon covered by limestone rubble from later digging, hiding it from robbers.",
-          "provenance_clues": {
-            "author": "Carved from wood, overlaid with beaten gold leaf, and inlaid with coloured glass by royal craftspeople.",
-            "audience": "Royal courtiers during Tutankhamun’s short life, and the gods in his afterlife.",
-            "motive": "To seat the young pharaoh in golden splendour both in his palace and in eternity.",
-            "hinge_question": "Why had giant pharaohs like Ramesses II lost all their gold to ancient robbers, whereas young Tutankhamun’s golden throne survived?"
-          },
-          "teacher_notes": {
-            "hinge_question": "Why had giant pharaohs like Ramesses II lost all their gold to ancient robbers, whereas young Tutankhamun’s golden throne survived?",
-            "source_context": "Found gleaming beneath ritual couches inside KV62, Tutankhamun’s golden throne shows a tender backrest scene of his young queen rubbing scented ointment onto the boy-king’s shoulder beneath sunbeams! **Hinge Question:** Why had giant pharaohs like Ramesses II lost all their gold to ancient robbers, whereas young Tutankhamun’s golden throne survived?",
-            "provenance_breakdown": {
-              "author": "Carved from wood, overlaid with beaten gold leaf, and inlaid with coloured glass by royal craftspeople.",
-              "audience": "Royal courtiers during Tutankhamun’s short life, and the gods in his afterlife.",
-              "motive": "To seat the young pharaoh in golden splendour both in his palace and in eternity."
-            }
-          },
-          "utility_enquiry": {
-            "question_badge": "TUTANKHAMUN GOLDEN THRONE",
-            "model_answer": "Because Tutankhamun died suddenly aged nineteen, he was buried in a small rock tomb whose steps were soon covered by limestone rubble from later digging, hiding it from robbers.",
-            "provenance_clues": {
-              "author": "Carved from wood, overlaid with beaten gold leaf, and inlaid with coloured glass by royal craftspeople.",
-              "audience": "Royal courtiers during Tutankhamun’s short life, and the gods in his afterlife.",
-              "motive": "To seat the young pharaoh in golden splendour both in his palace and in eternity."
-            }
-          },
           "provenance": "Gilded and inlaid wooden throne of Pharaoh Tutankhamun from tomb KV62, Valley of the Kings (c. 1332–1323 BC, Cairo)."
         },
         {
@@ -5024,36 +3739,11 @@ window.UNIT_DATA = {
           "caption": "A finely carved marble portrait bust of Queen Cleopatra VII wearing her braided \"melon\" hairstyle and the broad cloth royal diadem ribbon of Hellenistic monarchs.",
           "author": "Classical Portrait Sculptor (c. 40–30 BC)",
           "date": "c. 40–30 BC",
-          "context": "Descended from Alexander the Great’s Macedonian Greek general Ptolemy, Queen Cleopatra VII wore Greek royal diadems like Source C in Alexandria yet also spoke fluent Egyptian and honoured Isis and Horus along the Nile! **Hinge Question:** How did speaking Egyptian as well as Greek and seven other languages help Cleopatra VII govern Egypt so skilfully?",
-          "source_context": "Descended from Alexander the Great’s Macedonian Greek general Ptolemy, Queen Cleopatra VII wore Greek royal diadems like Source C in Alexandria yet also spoke fluent Egyptian and honoured Isis and Horus along the Nile! **Hinge Question:** How did speaking Egyptian as well as Greek and seven other languages help Cleopatra VII govern Egypt so skilfully?",
-          "hinge_question": "How did speaking Egyptian as well as Greek and seven other languages help Cleopatra VII govern Egypt so skilfully?",
+          "context": "Descended from Alexander the Great’s Macedonian Greek general Ptolemy, Queen Cleopatra VII wore Greek royal diadems like Source C in Alexandria yet also spoke fluent Egyptian and honoured Isis and Horus along the Nile!",
+          "source_context": "Descended from Alexander the Great’s Macedonian Greek general Ptolemy, Queen Cleopatra VII wore Greek royal diadems like Source C in Alexandria yet also spoke fluent Egyptian and honoured Isis and Horus along the Nile!",
           "question_badge": "CLEOPATRA MARBLE BUST",
           "question": "Notice the royal headband on Source C. How did Cleopatra blend Greek and Egyptian worlds?",
           "model_answer": "Cleopatra wore the Greek royal headband of her Ptolemaic family from Alexandria, yet became the first ruler in her dynasty for centuries to learn fluent Egyptian and honour Nile temples.",
-          "provenance_clues": {
-            "author": "Sculpted in fine white marble during Cleopatra VII’s lifetime around 40–30 BC.",
-            "audience": "Royal supporters and ambassadors across the Mediterranean world.",
-            "motive": "To present Cleopatra VII as a dignified, educated, and legitimate Hellenistic queen.",
-            "hinge_question": "How did speaking Egyptian as well as Greek and seven other languages help Cleopatra VII govern Egypt so skilfully?"
-          },
-          "teacher_notes": {
-            "hinge_question": "How did speaking Egyptian as well as Greek and seven other languages help Cleopatra VII govern Egypt so skilfully?",
-            "source_context": "Descended from Alexander the Great’s Macedonian Greek general Ptolemy, Queen Cleopatra VII wore Greek royal diadems like Source C in Alexandria yet also spoke fluent Egyptian and honoured Isis and Horus along the Nile! **Hinge Question:** How did speaking Egyptian as well as Greek and seven other languages help Cleopatra VII govern Egypt so skilfully?",
-            "provenance_breakdown": {
-              "author": "Sculpted in fine white marble during Cleopatra VII’s lifetime around 40–30 BC.",
-              "audience": "Royal supporters and ambassadors across the Mediterranean world.",
-              "motive": "To present Cleopatra VII as a dignified, educated, and legitimate Hellenistic queen."
-            }
-          },
-          "utility_enquiry": {
-            "question_badge": "CLEOPATRA MARBLE BUST",
-            "model_answer": "Cleopatra wore the Greek royal headband of her Ptolemaic family from Alexandria, yet became the first ruler in her dynasty for centuries to learn fluent Egyptian and honour Nile temples.",
-            "provenance_clues": {
-              "author": "Sculpted in fine white marble during Cleopatra VII’s lifetime around 40–30 BC.",
-              "audience": "Royal supporters and ambassadors across the Mediterranean world.",
-              "motive": "To present Cleopatra VII as a dignified, educated, and legitimate Hellenistic queen."
-            }
-          },
           "provenance": "Marble portrait bust of Queen Cleopatra VII wearing a royal diadem (c. 40–30 BC, Altes Museum, Berlin)."
         },
         {
@@ -5067,36 +3757,11 @@ window.UNIT_DATA = {
           "caption": "An ancient silver tetradrachm coin struck with Queen Cleopatra VII’s profile, royal diadem, and Greek lettering naming her queen.",
           "author": "Royal Mint Official under Queen Cleopatra VII",
           "date": "c. 37–32 BC",
-          "context": "Hostile Roman writers later spread unfair stories painting Cleopatra VII merely as a vain charmer, whereas her own stamped silver coins (Source D) show a shrewd, determined monarch commanding fleets, grain stores, and treasuries! **Hinge Question:** Why is a coin minted by Cleopatra VII herself (Source D) fairer evidence of how she ruled than stories written by her Roman enemies?",
-          "source_context": "Hostile Roman writers later spread unfair stories painting Cleopatra VII merely as a vain charmer, whereas her own stamped silver coins (Source D) show a shrewd, determined monarch commanding fleets, grain stores, and treasuries! **Hinge Question:** Why is a coin minted by Cleopatra VII herself (Source D) fairer evidence of how she ruled than stories written by her Roman enemies?",
-          "hinge_question": "Why is a coin minted by Cleopatra VII herself (Source D) fairer evidence of how she ruled than stories written by her Roman enemies?",
+          "context": "Hostile Roman writers later spread unfair stories painting Cleopatra VII merely as a vain charmer, whereas her own stamped silver coins (Source D) show a shrewd, determined monarch commanding fleets, grain stores, and treasuries!",
+          "source_context": "Hostile Roman writers later spread unfair stories painting Cleopatra VII merely as a vain charmer, whereas her own stamped silver coins (Source D) show a shrewd, determined monarch commanding fleets, grain stores, and treasuries!",
           "question_badge": "CLEOPATRA SILVER COIN",
           "question": "Why do historians compare Cleopatra’s own coin (Source D) against later Roman stories?",
           "model_answer": "Roman writers conquered Cleopatra in 30 BC and exaggerated stories to praise Rome, whereas Source D shows how Cleopatra chose to present herself — as a strong, capable ruling monarch.",
-          "provenance_clues": {
-            "author": "Struck from engraved metal dies at a royal mint under Cleopatra VII’s authority.",
-            "audience": "Soldiers, merchants, and sailors using silver money across Egypt and the eastern Mediterranean.",
-            "motive": "To pay troops, boost trade, and broadcast Cleopatra VII’s royal authority on every coin.",
-            "hinge_question": "Why is a coin minted by Cleopatra VII herself (Source D) fairer evidence of how she ruled than stories written by her Roman enemies?"
-          },
-          "teacher_notes": {
-            "hinge_question": "Why is a coin minted by Cleopatra VII herself (Source D) fairer evidence of how she ruled than stories written by her Roman enemies?",
-            "source_context": "Hostile Roman writers later spread unfair stories painting Cleopatra VII merely as a vain charmer, whereas her own stamped silver coins (Source D) show a shrewd, determined monarch commanding fleets, grain stores, and treasuries! **Hinge Question:** Why is a coin minted by Cleopatra VII herself (Source D) fairer evidence of how she ruled than stories written by her Roman enemies?",
-            "provenance_breakdown": {
-              "author": "Struck from engraved metal dies at a royal mint under Cleopatra VII’s authority.",
-              "audience": "Soldiers, merchants, and sailors using silver money across Egypt and the eastern Mediterranean.",
-              "motive": "To pay troops, boost trade, and broadcast Cleopatra VII’s royal authority on every coin."
-            }
-          },
-          "utility_enquiry": {
-            "question_badge": "CLEOPATRA SILVER COIN",
-            "model_answer": "Roman writers conquered Cleopatra in 30 BC and exaggerated stories to praise Rome, whereas Source D shows how Cleopatra chose to present herself — as a strong, capable ruling monarch.",
-            "provenance_clues": {
-              "author": "Struck from engraved metal dies at a royal mint under Cleopatra VII’s authority.",
-              "audience": "Soldiers, merchants, and sailors using silver money across Egypt and the eastern Mediterranean.",
-              "motive": "To pay troops, boost trade, and broadcast Cleopatra VII’s royal authority on every coin."
-            }
-          },
           "provenance": "Silver tetradrachm coin bearing the diademed portrait and Greek inscription of Queen Cleopatra VII (c. 37–32 BC)."
         }
       ],
@@ -5245,38 +3910,38 @@ window.UNIT_DATA = {
       ],
       "tasks": [
         {
-          "id": "task_1",
+          "id": "ks2_ancient_egypt_l6_t1",
           "task_num": 1,
           "type": "source_clues",
+          "title": "1. Primary Evidence Detective",
           "topic": "1. Primary Evidence Detective",
-          "tag": "Source Clues",
-          "question": "Examine Sources A and B. Why was tomb KV62 such an extraordinary archaeological discovery?",
-          "starter": "Sources A and B prove the 1922 discovery of KV62 was extraordinary for historians because...",
+          "question": "Look at Howard Carter working in Source A. Why did recording KV62 take ten patient years?",
+          "starter": "Looking closely at Source A, Howard Carter and his team spent ten patient years cataloguing KV62 because...",
           "word_bank": [
             "Howard Carter",
+            "5,000 treasures",
             "KV62",
-            "golden throne",
-            "sarcophagus"
+            "photographed and numbered"
           ],
-          "hints": [
-            "Foundation Clues: Explain why almost every other tomb in the Valley of the Kings had been robbed thousands of years ago.",
-            "Foundation Clues: Describe Source A's golden shrine and Source B's inlaid golden throne among over 5,000 treasures.",
-            "Scholar Challenge: Explain why Carter's ten-year photographic record (Source A) mattered far more to history than simply grabbing gold!"
-          ],
-          "model_answer": "Sources A and B prove the 1922 discovery of KV62 was extraordinary for historians because thieves had emptied almost every other pharaoh's tomb in the Valley of the Kings, whereas limestone rubble hid Tutankhamun's small tomb untouched! Inside, Howard Carter and Egyptian excavators found over 5,000 items, from nested gilded shrines (Source A) and the 11kg gold mask inside his sarcophagus to his inlaid golden throne (Source B). Photographing every item carefully over ten years preserved priceless clues about royal life in 1323 BC!",
           "key_terms": [
             "Howard Carter",
+            "5,000 treasures",
             "KV62",
-            "golden throne",
-            "sarcophagus"
-          ]
+            "photographed and numbered"
+          ],
+          "hints": [
+            "Observe how tightly packed and delicate the 3,200-year-old gilded shrine is inside tomb KV62.",
+            "Contrast careful modern archaeology with hasty treasure-hunting that would snap fragile wood and linen.",
+            "Explain how Carter’s team photographed, numbered, and conserved over 5,000 objects before moving them."
+          ],
+          "model_answer": "Looking closely at Source A, Howard Carter and his team spent ten patient years cataloguing KV62 because over 5,000 fragile 3,200-year-old treasures were packed inside Tutankhamun’s small rock tomb. Photographing, drawing, numbering, and strengthening every gilded item in place ensured zero historical clues were destroyed."
         },
         {
-          "id": "task_2",
+          "id": "ks2_ancient_egypt_l6_t2",
           "task_num": 2,
           "type": "historical_explanation",
-          "topic": "2. Historical Explanation",
-          "tag": "Cause & Effect",
+          "title": "2. Historical Investigation",
+          "topic": "2. Historical Investigation",
           "question": "Explain who Queen Cleopatra VII was and how Egypt became part of Rome in 30 BC.",
           "starter": "Queen Cleopatra VII was no ordinary ruler during Ancient Egypt's final decades because...",
           "word_bank": [
@@ -5285,53 +3950,26 @@ window.UNIT_DATA = {
             "Cleopatra VII",
             "30 BC"
           ],
-          "hints": [
-            "Foundation Clues: Explain how Alexander the Great (332 BC) and General Ptolemy started the Greek-speaking Ptolemaic dynasty at Alexandria.",
-            "Foundation Clues: Describe Cleopatra VII speaking Egyptian plus eight other languages before Roman armies defeated her in 30 BC.",
-            "Scholar Challenge: Use Sources C and D to explain why Cleopatra's own coins give fairer clues than stories by Roman rivals!"
-          ],
-          "model_answer": "Queen Cleopatra VII was no ordinary ruler during Ancient Egypt's final decades because, although her Ptolemaic family descended from Alexander the Great's Greek general and ruled from seaside Alexandria, she became the first in her dynasty to learn fluent Egyptian alongside eight other languages! Her marble portrait (Source C) and stamped silver coins (Source D) show an educated, commanding queen rather than unfair Roman rumours. Yet Rome's mighty fleet defeated hers in 30 BC, ending 3,000 years of pharaohs as Egypt became a Roman province.",
           "key_terms": [
             "Alexandria",
             "Ptolemaic",
             "Cleopatra VII",
             "30 BC"
-          ]
-        },
-        {
-          "id": "task_3",
-          "task_num": 3,
-          "type": "living_history",
-          "topic": "3. Living History: Step Into Their Shoes",
-          "tag": "Personal Experiences",
-          "question": "Imagine working alongside Hussein Abdel Rassoul and Howard Carter in November 1922. Describe opening KV62!",
-          "starter": "Brushing hot desert grit off the rock floor in the Valley of the Kings in November 1922, my heart races when...",
-          "word_bank": [
-            "Hussein Abdel Rassoul",
-            "sixteen steps",
-            "wonderful things",
-            "death mask"
           ],
           "hints": [
-            "Foundation Clues: Describe Hussein Abdel Rassoul spotting the first carved stone step and digging down sixteen buried steps.",
-            "Foundation Clues: Describe intact royal seals on the plastered door and flickering candlelight glinting off gold inside.",
-            "Scholar Challenge: Capture the patience needed afterward as your team gently brushes and numbers 5,000 fragile treasures!"
+            "Explain how Alexander the Great (332 BC) and General Ptolemy started the Greek-speaking Ptolemaic dynasty at Alexandria.",
+            "Describe Cleopatra VII speaking Egyptian plus eight other languages before Roman armies defeated her in 30 BC.",
+            "Use Sources C and D to explain why Cleopatra's own coins give fairer clues than stories by Roman rivals!"
           ],
-          "model_answer": "Brushing hot desert grit off the rock floor in the Valley of the Kings in November 1922, my heart races when young water-boy Hussein Abdel Rassoul uncovers a neat step carved straight into limestone! Together our Egyptian crew clears sixteen buried steps down to a plastered doorway still stamped with unbroken royal seals. When Howard Carter holds a trembling candle to a tiny hole, gold glints everywhere and he whispers that he sees \"wonderful things!\" — starting ten careful years recording chariots, thrones, and Tutankhamun's 11kg gold death mask!",
-          "key_terms": [
-            "Hussein Abdel Rassoul",
-            "sixteen steps",
-            "wonderful things",
-            "death mask"
-          ]
+          "model_answer": "Queen Cleopatra VII was no ordinary ruler during Ancient Egypt's final decades because, although her Ptolemaic family descended from Alexander the Great's Greek general and ruled from seaside Alexandria, she became the first in her dynasty to learn fluent Egyptian alongside eight other languages! Her marble portrait (Source C) and stamped silver coins (Source D) show an educated, commanding queen rather than unfair Roman rumours. Yet Rome's mighty fleet defeated hers in 30 BC, ending 3,000 years of pharaohs as Egypt became a Roman province."
         },
         {
-          "id": "task_4",
-          "task_num": 4,
+          "id": "ks2_ancient_egypt_l6_t3",
+          "task_num": 3,
           "type": "big_question",
-          "topic": "4. Mission Challenge • The Big Question",
-          "tag": "Historian Challenge",
-          "question": "Big Question: Looking across 3,000 years of Ancient Egypt, what were its greatest achievements?",
+          "title": "3. Mission Challenge • The Big Question",
+          "topic": "3. Mission Challenge • The Big Question",
+          "question": "Big Question: Why did Tutankhamun's hidden tomb survive until 1922, and how did Cleopatra VII's reign end pharaonic Egypt?",
           "starter": "Across more than three thousand years beside the River Nile, Ancient Egypt achieved astonishing wonders...",
           "word_bank": [
             "River Nile",
@@ -5339,18 +3977,18 @@ window.UNIT_DATA = {
             "hieroglyphs",
             "Tutankhamun"
           ],
-          "hints": [
-            "Foundation Clues: Mention Nile farming (Kemet/shaduf), Old Kingdom stone pyramids, papyrus scrolls, and hieroglyphs.",
-            "Foundation Clues: Include mummification, Hatshepsut's trade, Ramesses II's peace treaty, Tutankhamun's gold, and Cleopatra VII.",
-            "Scholar Challenge: Remind readers how huge Egyptian history was — Cleopatra lived closer in time to us today than to Khufu's Great Pyramid!"
-          ],
-          "model_answer": "Across more than three thousand years beside the River Nile, Ancient Egypt achieved astonishing wonders! Farmers turned flooded Kemet silt into rich harvests using shadufs, while Imhotep and Khufu engineered towering limestone pyramids so old that Queen Cleopatra VII lived closer in time to us today than to Giza's builders! Scribes recorded maths and medicine in hieroglyphs on papyrus, Hatshepsut traded peacefully with Punt, Ramesses II signed the oldest surviving peace treaty, and Tutankhamun's 5,000 KV62 treasures still dazzle the world!",
           "key_terms": [
             "River Nile",
             "pyramids",
             "hieroglyphs",
             "Tutankhamun"
-          ]
+          ],
+          "hints": [
+            "Mention Nile farming (Kemet/shaduf), Old Kingdom stone pyramids, papyrus scrolls, and hieroglyphs.",
+            "Include mummification, Hatshepsut's trade, Ramesses II's peace treaty, Tutankhamun's gold, and Cleopatra VII.",
+            "Remind readers how huge Egyptian history was — Cleopatra lived closer in time to us today than to Khufu's Great Pyramid!"
+          ],
+          "model_answer": "Across more than three thousand years beside the River Nile, Ancient Egypt achieved astonishing wonders! Farmers turned flooded Kemet silt into rich harvests using shadufs, while Imhotep and Khufu engineered towering limestone pyramids so old that Queen Cleopatra VII lived closer in time to us today than to Giza's builders! Scribes recorded maths and medicine in hieroglyphs on papyrus, Hatshepsut traded peacefully with Punt, Ramesses II signed the oldest surviving peace treaty, and Tutankhamun's 5,000 KV62 treasures still dazzle the world!"
         }
       ],
       "quiz": [

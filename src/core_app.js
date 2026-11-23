@@ -534,7 +534,7 @@ export function initializeApp(unitData) {
       gap: 8px;
       font-size: 1.15rem;
     }
-    .teacher-mode-active .teacher-note {
+    .staff-mode-active .teacher-note {
       display: block;
       animation: fadeIn 0.3s ease;
     }
@@ -712,20 +712,6 @@ export function initializeApp(unitData) {
         btnLaptop.style.color = isActive ? '#ffffff' : '';
       });
       headerActions.appendChild(btnLaptop);
-
-      const btnTeacher = document.createElement('button');
-      btnTeacher.className = 'btn btn-secondary';
-      btnTeacher.innerHTML = '<i class="fa-solid fa-user-tie"></i> Teacher Mode';
-      btnTeacher.addEventListener('click', () => {
-        document.body.classList.toggle('teacher-mode-active');
-        const isActive = document.body.classList.contains('teacher-mode-active');
-        btnTeacher.innerHTML = isActive
-          ? '<i class="fa-solid fa-user-tie"></i> Teacher Mode: ON'
-          : '<i class="fa-solid fa-user-tie"></i> Teacher Mode';
-        btnTeacher.style.background = isActive ? '#1e293b' : '';
-        btnTeacher.style.color = isActive ? '#ffffff' : '';
-      });
-      headerActions.appendChild(btnTeacher);
 
       const btnCurriculum = document.createElement('button');
       btnCurriculum.className = 'btn btn-secondary';

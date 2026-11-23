@@ -28,7 +28,7 @@
     }
 
     @page {
-      size: A4 portrait;
+      size: 210mm 297mm;
       margin: 0;
     }
 
@@ -113,6 +113,10 @@
       .worksheet-page {
         margin: 0;
         box-shadow: none !important;
+      }
+      .worksheet-page:last-of-type {
+        page-break-after: avoid !important;
+        break-after: avoid !important;
       }
     }
 
@@ -649,6 +653,8 @@
       min-height: 0;
     }
 
+    .wb-scaffold-strip { font-size: 6.9pt; line-height: 1.2; color: #334155; background: #fffbeb; border: 1px solid #fde68a; border-radius: 3px; padding: 0.6mm 1.5mm; margin-bottom: 0.4mm; flex-shrink: 0; }
+
     .synthesis-header {
       font-family: 'Lora', Georgia, serif;
       font-size: 8.2pt;
@@ -1097,8 +1103,8 @@
         </div>
         <div class="synthesis-container">
           <p class="synthesis-header">Postcard Home: Write a short postcard to Mum and Dad describing your train ride, brown luggage label, and new countryside billet.</p>
+          <div class="wb-scaffold-strip"><strong>Starter:</strong> <em>"Dear Mum and Dad, I arrived safely in the countryside after a long steam train ride with my school class..."</em> &bull; <strong>Word Bank:</strong> steam train  •  luggage label  •  Billeting Officer  •  host family</div>
           <div class="ruled-lines-box">
-            <div class="ruled-line"></div>
             <div class="ruled-line"></div>
             <div class="ruled-line"></div>
             <div class="ruled-line"></div>

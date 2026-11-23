@@ -1,7 +1,7 @@
 /**
  * KS2 Junior School Teacher Planning Hub & Worksheet Companion Data for:
  * The Ancient Maya — Rainforest Cities, Calendar Maths, Cacao & Pok-ta-Pok (c. 2000 BC–AD 1500) [ks2_maya_civilisation]
- * 100% Year-Neutral Key Stage 2 Primary Calibration with Universal Dual-Scaffolding.
+ * 100% Year-Neutral Key Stage 2 Primary Calibration with Universal Single-Tier Historian Scaffolding.
  */
 
 export const KS2_MAYA_WORKSHEETS_MAP = {

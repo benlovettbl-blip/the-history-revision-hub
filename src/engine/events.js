@@ -1226,10 +1226,6 @@ export function initEventDelegation() {
         if (window.openTimelineLesson) window.openTimelineLesson(target.dataset.id);
         break;
 
-      case 'toggle-teacher-mode':
-        if (window.toggleTeacherMode) window.toggleTeacherMode();
-        break;
-
       // Final default fallback
       default:
         console.warn('Unhandled data-action:', action);

@@ -2,7 +2,7 @@
  * KS2 Junior School Teacher Planning Hub & Worksheet Companion Data for:
  * The Romans in Britain: Invasion, Resistance & Legacy (55 BC–AD 410) [ks2_romans]
  *
- * Calibrated for Years 3–4 (Lower/Bridge KS2) with Universal Dual-Scaffolding for Year 5.
+ * Calibrated for Key Stage 2 Primary History with Universal Single-Tier Historian Scaffolding.
  * Strict Institutional Neutrality under 'The History Revision Hub'.
  */
 
@@ -16,7 +16,7 @@ export const KS2_ROMANS_WORKSHEETS_MAP = {
       'Who were the Iron Age Celts, and how did they live before the Roman legions arrived?',
     html: '/units/ks2_romans/worksheets/lesson_01_celtic_britain_worksheet.html',
     pdf: '/pdfs/ks2_romans/lesson_01_celtic_britain_worksheet.pdf',
-    desc: `2-page A4 enquiry worksheet with Battersea Shield & roundhouse detective clues, Iron Age chronology, dual-scaffolded sentence builders, and Celtic vs Roman viewpoints.`,
+    desc: `2-page A4 enquiry worksheet with Battersea Shield & roundhouse detective clues, Iron Age chronology, structured sentence builders, and Celtic vs Roman viewpoints.`,
   },
   lesson_2: {
     num: 2,
@@ -93,9 +93,9 @@ export const KS2_ROMANS_TEACHER_GUIDANCE = {
       },
       {
         time: '25–45 mins',
-        phase: 'Act 3 & Dual-Scaffolded Worksheet',
+        phase: 'Act 3 & Enquiry Worksheet',
         activity:
-          'Read Act 3 on gold torcs, Druids, and sea trade; complete Tasks 1–5 using Foundation Word Banks or Scholar Challenge prompts.',
+          'Read Act 3 on gold torcs, Druids, and sea trade; complete Tasks 1–5 using the universal Sentence Starter and Historian Word Bank.',
       },
       {
         time: '45–60 mins',
@@ -118,7 +118,7 @@ export const KS2_ROMANS_TEACHER_GUIDANCE = {
       },
     ],
     answers: {
-      task1: `The Battersea Shield is made of shining sheet bronze decorated with swirling symmetrical curves and 27 settings of bright red glass (enamel). Because the bronze is thin, archaeologists deduce it was a precious ceremonial gift offered to spirits in the River Thames rather than battered in battle.`,
+      task1: `Source A shows giant, steep chalk ramparts and deep ditches ringing Maiden Castle hillfort: attackers had to scramble up exhausting slopes while Celtic defenders stood high behind wooden palisades.`,
       task2: `Correct order: 1) c. 450 BC — Giant earth ramparts built at Maiden Castle Hillfort; 2) c. 100 BC — Master goldsmiths twist the Snettisham Great Torc; 3) 55 BC & 54 BC — Julius Caesar sails across the Channel twice but returns to Gaul; 4) AD 43 — Emperor Claudius launches Rome's full invasion.`,
       task3: `Roundhouse walls were woven from flexible hazel sticks (wattle) and smeared with wet clay, mud, straw, and animal dung (daub) that dried hard against wind and rain. Inside, a central hearth fire cooked bread and stews in iron cauldrons.`,
       task4: `Celtic Craftworker: "Our twisted gold torcs, warm roundhouses, and rich wheat harvests prove we are skilled artists and farmers." vs. Roman Writer: "They have rich tin and brave chariot fighters, yet they build no stone cities or written books."`,
@@ -144,7 +144,7 @@ export const KS2_ROMANS_TEACHER_GUIDANCE = {
         time: '25–45 mins',
         phase: 'Richborough to Colchester & Worksheet',
         activity:
-          'Read Act 3 on AD 43 Richborough, Caratacus, and Claudius\'s elephants at Camulodunum; complete dual-scaffolded Tasks 1–5.',
+          'Read Act 3 on AD 43 Richborough, Caratacus, and Claudius\'s elephants at Camulodunum; complete Enquiry Worksheet Tasks 1–5.',
       },
       {
         time: '45–60 mins',
@@ -167,7 +167,7 @@ export const KS2_ROMANS_TEACHER_GUIDANCE = {
       },
     ],
     answers: {
-      task1: `In the Testudo ("tortoise") formation, front-rank legionaries held rectangular curved scutum shields overlapping like a wall while soldiers behind raised shields flat above their heads, forming an armoured shell that deflected spears, stones, and arrows.`,
+      task1: `Source A's marble bust presents Emperor Claudius wearing an oak-leaf crown like a calm, mighty hero—overcoming Roman senators' doubts about his limp, stammer, and lack of battle experience after he conquered Britain in AD 43.`,
       task2: `Correct order: 1) AD 41 — Claudius becomes Emperor in Rome; 2) Spring AD 43 — 40,000 Roman troops land at Richborough in Kent; 3) Summer AD 43 — Romans win the two-day Battle of the River Medway; 4) Late Summer AD 43 — Claudius arrives with war elephants to enter Camulodunum (Colchester).`,
       task3: `Claudius invaded for two connected reasons: personally, he needed a famous military victory so Roman senators would respect him; economically, Rome wanted Britain's silver, tin, lead, iron, wheat harvests, and regular tax money.`,
       task4: `Roman Legionary: "Our iron strip armour, short gladius swords, and daily training mean we fight together like one machine." vs. Follower of Caratacus: "Even against 40,000 soldiers, we will use rivers, woods, and ambushes to defend our island's freedom."`,
@@ -191,7 +191,7 @@ export const KS2_ROMANS_TEACHER_GUIDANCE = {
       },
       {
         time: '25–45 mins',
-        phase: 'Watling Street & Dual-Scaffolded Tasks',
+        phase: 'Watling Street & Historian Tasks',
         activity:
           'Read Act 3 on the narrow wooded valley battle and examine Tacitus\'s account alongside archaeological red clay clues.',
       },
@@ -265,7 +265,7 @@ export const KS2_ROMANS_TEACHER_GUIDANCE = {
       },
     ],
     answers: {
-      task1: `Claudia Severa warmly invites her "dearest sister" Sulpicia Lepidina to visit for her birthday celebration on 11 September, showing that officers' wives and children lived family lives at frontier forts—not only lonely soldiers!`,
+      task1: `Source A shows thick stone walls at Milecastle 39 built right along steep rocky crags—giving Roman sentries clear views for miles north while forcing travellers and traders through guarded tax gates.`,
       task2: `Correct order: 1) c. AD 100 — Wooden ink letters (birthday invite & woollen socks list) written at Vindolanda; 2) AD 122 — Emperor Hadrian visits Britain and orders the 73-mile stone wall; 3) AD 160+ — Diverse garrisons and traders like Barates, Regina, and Victor live at Arbeia; 4) AD 253+ — Unit of Aurelian Moors from North Africa recorded guarding Burgh-by-Sands.`,
       task3: `Hadrian's Wall had guarded Milecastle gates every Roman mile, 16 large stone forts like Housesteads, observation turrets, and a deep V-shaped ditch so soldiers could both stop sudden raids and charge taxes on goods crossing the border.`,
       task4: `Frontier Soldier at Housesteads: "Guarding the windy crags in winter is freezing—thank goodness for stone barracks, flushing latrines, and parcels of thick woollen socks!" vs. Local Northern Farmer: "Rome's stone wall cut across our hillside pastures, and now guards charge us tax at the Milecastle gate."`,
@@ -291,7 +291,7 @@ export const KS2_ROMANS_TEACHER_GUIDANCE = {
         time: '25–45 mins',
         phase: 'Mosaics vs Roundhouses & Worksheet',
         activity:
-          'Read Act 3 comparing Fishbourne villa mosaics with countryside roundhouse farmers; complete dual-scaffolded Tasks 1–5.',
+          'Read Act 3 comparing Fishbourne villa mosaics with countryside roundhouse farmers; complete Enquiry Worksheet Tasks 1–5.',
       },
       {
         time: '45–60 mins',
@@ -314,7 +314,7 @@ export const KS2_ROMANS_TEACHER_GUIDANCE = {
       },
     ],
     answers: {
-      task1: `At Chedworth, rows of stacked clay brick pillars (pilae) held up the floor so roaring hot air and smoke from an outside furnace could flow underneath the stone slabs and up hollow wall tiles—warming the room without indoor smoke!`,
+      task1: `Source A shows tightly fitted stone blocks laid in a straight, gently curved (cambered) surface with side drainage ditches so rainwater ran straight off and armies and carts never sank in mud.`,
       task2: `Correct order: 1) Surveyors sight a dead-straight line using a groma; 2) Soldiers dig drainage ditches and pack layers of large stones, gravel, and cambered top slabs; 3) Aqueducts pipe fresh spring water into town fountains and bathhouses; 4) Wealthy elites lay thousands of tiny tesserae cubes into villa mosaics.`,
       task3: `Roman roads sloped gently downwards from the middle to side ditches (a camber) so heavy British rainwater ran straight off instead of turning the road into deep mud.`,
       task4: `Wealthy Villa Owner: "Hypocaust central heating, dolphin mosaics, olive oil, and trips to the steam baths have made life luxurious!" vs. Countryside Farmer: "Out on our farm we still sleep in a thatched roundhouse and work twice as hard to pay Roman grain taxes."`,
@@ -363,7 +363,7 @@ export const KS2_ROMANS_TEACHER_GUIDANCE = {
       },
     ],
     answers: {
-      task1: `The Hoxne "Empress" Pepper Pot is crafted from gleaming gilded silver and held expensive black pepper imported thousands of miles from India via Roman trade routes. Burying it carefully alongside thousands of coins after AD 407 shows wealthy families feared raiders as Roman army protection ended.`,
+      task1: `Source A pairs Emperor Honorius's gold coin with Zosimus's AD 410 account explaining that enemy armies like the Visigoths were attacking Italy itself, leaving no spare legions to defend Britain.`,
       task2: `Correct order: 1) AD 43 — Emperor Claudius invades Britain; 2) AD 60–61 — Queen Boudicca's rebellion; 3) AD 122 — Emperor Hadrian begins the 73-mile Wall; 4) AD 410 — Emperor Honorius tells British towns to defend themselves.`,
       task3: `Town names ending in -chester, -caster, or -cester (such as Manchester, Lancaster, Colchester, Chester, and Cirencester) come from the Latin word castra, meaning a Roman army camp or fort!`,
       task4: `Historian A (End of Roman Life): "After AD 410 coins stopped, roofs collapsed on hypocaust bathhouses, and frightened families buried silver hoards." vs. Historian B (Living Legacy): "London, straight highways, the Latin alphabet, Roman numerals, and July and August still shape Britain every single day."`,

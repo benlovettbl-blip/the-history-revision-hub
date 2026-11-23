@@ -1844,12 +1844,9 @@ export function initGcseDoNowEngine(currentLesson, activeUnit, db, isKs3 = null,
         });
       }
 
-      // Reset Reveal All button state (unless Teacher Mode is currently active)
-      const isTeacherModeActive = document.body.classList.contains('teacher-mode-active');
+      // Reset Reveal All button state
       const revealAllBtn = document.querySelector('[data-action="toggle-all-answers"]');
-      if (isTeacherModeActive && typeof window.applyTeacherModeToLessonDOM === 'function') {
-        window.applyTeacherModeToLessonDOM(true);
-      } else if (revealAllBtn) {
+      if (revealAllBtn) {
         revealAllBtn.innerHTML = '<i class="fa-solid fa-eye" style="color: #0284c7; font-size: 0.72rem;"></i> <span>Reveal All Answers</span>';
       }
     }

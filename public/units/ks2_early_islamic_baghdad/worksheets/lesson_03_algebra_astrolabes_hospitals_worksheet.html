@@ -6,7 +6,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;800&family=Inter:wght@400;600;700;800&family=Lora:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
   <style>
   * { box-sizing: border-box; margin: 0; padding: 0; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
-  @page { size: A4 portrait; margin: 0; }
+  @page { size: 210mm 297mm; margin: 0; }
   body { background: #cbd5e1; font-family: 'Inter', sans-serif; color: #0f172a; display: flex; flex-direction: column; align-items: center; }
   .screen-toolbar {
     width: 100%; background: #0f172a; color: #fff; padding: 9px 20px; display: flex; justify-content: space-between; align-items: center;
@@ -25,6 +25,7 @@
     body { background: #fff; }
     .screen-toolbar { display: none !important; }
     .worksheet-page, .wb-page { margin: 0; box-shadow: none !important; }
+    .worksheet-page:last-of-type, .wb-page:last-of-type { page-break-after: avoid !important; break-after: avoid !important; }
   }
   .ws-hdr {
     display: flex; justify-content: space-between; align-items: stretch; gap: 3.5mm; flex-shrink: 0;
@@ -68,7 +69,7 @@
   .lines-stack { display: flex; flex-direction: column; flex: 1; justify-content: space-evenly; min-height: 0; }
   .q-item { font-size: 7.9pt; line-height: 1.28; color: #0f172a; margin-bottom: 0.9mm; flex-shrink: 0; }
   .starter-hint { font-size: 7.1pt; line-height: 1.25; color: #475569; background: #f8fafc; border-left: 3px solid #94a3b8; padding: 0.9mm 1.8mm; margin-bottom: 0.9mm; flex-shrink: 0; }
-  .dual-scaffold-bar { font-size: 7pt; line-height: 1.25; background: #f5f3ff; border: 1px solid #ddd6fe; border-radius: 4px; padding: 1.2mm 2mm; margin-bottom: 0.9mm; flex-shrink: 0; }
+  .scaffold-bar { font-size: 7pt; line-height: 1.25; background: #f5f3ff; border: 1px solid #ddd6fe; border-radius: 4px; padding: 1.2mm 2mm; margin-bottom: 0.9mm; flex-shrink: 0; }
   .ruled-line { height: 7.2mm; border-bottom: 1.2px dashed #94a3b8; width: 100%; }
   .lines-stack .ruled-line { flex: 1; height: auto; min-height: 6.2mm; max-height: 8.8mm; }
   .chrono-grid { display: flex; flex-direction: column; gap: 1.3mm; }
@@ -96,7 +97,7 @@
   <div class="worksheet-page">
     <div class="ws-hdr">
       <div>
-        <div class="ws-kicker">KS2 EARLY ISLAMIC BAGHDAD • MISSION 03 OF 06 • KEY STAGE 2 DUAL-SCAFFOLD</div>
+        <div class="ws-kicker">KS2 EARLY ISLAMIC BAGHDAD • MISSION 03 OF 06 • KEY STAGE 2 PRIMARY HISTORY</div>
         <h1>Enquiry 3: Zero, Algebra, Astrolabes &amp; Free Hospitals — What Did Golden Age Scientists Discover? (c. AD 820–1050)</h1>
         <div class="ws-eq">Big Question: How did Golden Age mathematicians, astronomers, engineers, and doctors change world science forever?</div>
       </div>
@@ -121,10 +122,9 @@
         </div>
         <div class="src-q-col">
           <p class="q-item"><strong>1a.</strong> Which two everyday maths and computing words come directly from Source A’s author?</p>
-          <div class="starter-hint">Starter: <em>"Looking closely at Source A, the two everyday maths and computing words from Al-Khwarizmi and his book al-Jabr are..."</em></div>
+          <div class="starter-hint"><strong>Starter:</strong> <em>"Looking closely at Source A, the two everyday maths and computing words from al-Khwarizmi and his book al-Jabr are..."</em><br><strong>Word Bank:</strong> al-Khwarizmi  •  Kitab al-Jabr  •  algebra  •  algorithm</div>
           <div class="lines-stack">
             <div class="ruled-line"></div>
-          <div class="ruled-line"></div>
           <div class="ruled-line"></div>
           <div class="ruled-line"></div>
           <div class="ruled-line"></div>
@@ -178,10 +178,9 @@
     <div class="task-box flex-grow-card">
       <div class="task-title"><span class="t-badge green">TASK 3</span> Historical Investigation • Cause, Consequence &amp; Significance</div>
       <p class="q-item">Explain how Ibn al-Haytham and doctor al-Razi used clever experiments instead of guesswork.</p>
-      <div class="starter-hint">Foundation Starter: <em>"Both Ibn al-Haytham and Baghdad doctor al-Razi proved the power of real scientific testing because..."</em></div>
+      <div class="starter-hint"><strong>Starter:</strong> <em>"Both Ibn al-Haytham and Baghdad doctor al-Razi proved the power of real scientific testing because..."</em> &bull; <strong>Word Bank:</strong> Ibn al-Haytham  •  camera obscura  •  al-Razi  •  measles and smallpox</div>
       <div class="lines-stack">
         <div class="ruled-line"></div>
-          <div class="ruled-line"></div>
           <div class="ruled-line"></div>
           <div class="ruled-line"></div>
           <div class="ruled-line"></div>
@@ -211,13 +210,13 @@
       </div>
     </div>
 
-    <!-- TASK 5: MISSION CHALLENGE (YEAR-NEUTRAL DUAL-SCAFFOLD) -->
+    <!-- TASK 5: MISSION CHALLENGE (UNIVERSAL HISTORIAN SCAFFOLD) -->
     <div class="task-box challenge flex-grow-card-lg">
       <div class="task-title"><span class="t-badge purple">TASK 5</span> Mission Challenge • Answer Today's Big Enquiry Question</div>
       <p class="q-item"><strong>How did Golden Age mathematicians, astronomers, engineers, and doctors change world science forever?</strong></p>
-      <div class="dual-scaffold-bar">
-        <div><strong>🟢 Foundation Clues:</strong> Start with <em>"Although maths, optics, and medicine all transformed human life, I think the biggest Golden Age breakthrough was..."</em> &bull; <strong>Word Bank:</strong> al-Khwarizmi  •  Ibn al-Haytham  •  bimaristan  •  al-Zahrawi</div>
-        <div style="margin-top:0.6mm; color:#5b21b6;"><strong>🟣 Scholar Challenge: Reach a clear judgement explaining how your chosen breakthrough connects to the other two in modern life!</strong></div>
+      <div class="scaffold-bar">
+        <div><strong>Starter:</strong> <em>"Although maths, optics, and medicine all transformed human life, I think the biggest Golden Age breakthrough was..."</em></div>
+        <div style="margin-top:0.6mm;"><strong>Historian Word Bank:</strong> al-Khwarizmi  •  Ibn al-Haytham  •  bimaristan  •  al-Zahrawi</div>
       </div>
       <div class="lines-stack">
         <div class="ruled-line"></div>

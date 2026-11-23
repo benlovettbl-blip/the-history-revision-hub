@@ -1,7 +1,7 @@
 /**
  * KS2 Junior School Teacher Planning Hub & Worksheet Companion Data for:
  * Ancient Egypt — The River Nile, Pyramids, Pharaohs & The Afterlife (c. 3100–30 BC) [ks2_ancient_egypt]
- * 100% Year-Neutral Key Stage 2 Primary Calibration with Universal Dual-Scaffolding.
+ * 100% Year-Neutral Key Stage 2 Primary Calibration with Universal Single-Tier Historian Scaffolding.
  */
 
 export const KS2_EGYPT_WORKSHEETS_MAP = {

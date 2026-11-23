@@ -972,12 +972,12 @@ export function renderInteractiveQuiz() {
             <i class="fa-solid fa-graduation-cap" style="color: #fde047;"></i> ${data.title || 'Curriculum Revision'}
           </div>
           <h1 style="font-family: 'Montserrat', sans-serif; font-size: 2.1rem; font-weight: 800; color: #ffffff; margin: 0 0 8px 0; letter-spacing: -0.5px;">
-            ${isKs2Quiz ? 'WWII Flashcards &amp; Unit Quiz Challenge' : 'Self-Quiz &amp; Knowledge Check'}
+            ${isKs2Quiz ? 'Interactive Flashcards &amp; Unit Quiz Challenge' : 'Self-Quiz &amp; Knowledge Check'}
           </h1>
           <p style="color: #cbd5e1; font-size: 0.95rem; margin: 0 auto; max-width: 640px; line-height: 1.5; font-weight: 400;">
             ${
               isKs2Quiz
-                ? 'Practise key Second World War words with interactive 3D flip cards, or test your historical detective skills in a 10-minute unit knowledge challenge!'
+                ? 'Practise key historical vocabulary with interactive 3D flip cards, or test your historical detective skills in a 10-minute unit knowledge challenge!'
                 : 'Master core factual recall and key vocabulary through interactive 3D flashcards, or benchmark your exam readiness with a timed diagnostic knowledge check.'
             }
           </p>

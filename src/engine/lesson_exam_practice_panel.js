@@ -363,21 +363,76 @@ export function initLessonExamPractice(unitId, lesson) {
     }
   };
 
-  // Toggle countdown timer on any unified GCSE question strip
+  // Render unified adjustable inline countdown timer bar (KS2, KS3 & GCSE)
+  // Exported below via renderInlineTaskTimerBarHTML as well.
+
+  function updateInlineTimerDisplayFromState(qId) {
+    const tState = window.examQuestionTimers && window.examQuestionTimers[qId];
+    const display = document.getElementById(`exam-timer-display-${qId}`);
+    if (!tState || !display) return;
+    const rem = Math.max(0, tState.remainingSeconds || 0);
+    const mins = Math.floor(rem / 60);
+    const secs = rem % 60;
+    display.textContent = `${String(mins).padStart(2, '0')}:${String(secs).padStart(2, '0')}`;
+    if (rem > 0) {
+      display.style.color = '#38bdf8';
+    }
+  }
+
+  function startInlineTimerTick(qId) {
+    const tState = window.examQuestionTimers && window.examQuestionTimers[qId];
+    if (!tState) return;
+    if (tState.intervalId) clearInterval(tState.intervalId);
+    tState.isRunning = true;
+    const toggleBtn = document.getElementById(`exam-timer-toggle-btn-${qId}`);
+    if (toggleBtn) toggleBtn.textContent = 'Pause';
+
+    tState.intervalId = setInterval(() => {
+      const liveDisplay = document.getElementById(`exam-timer-display-${qId}`);
+      const liveToggle = document.getElementById(`exam-timer-toggle-btn-${qId}`);
+      if (!liveDisplay) {
+        clearInterval(tState.intervalId);
+        tState.intervalId = null;
+        tState.isRunning = false;
+        return;
+      }
+      if (tState.remainingSeconds <= 0) {
+        clearInterval(tState.intervalId);
+        tState.intervalId = null;
+        tState.isRunning = false;
+        liveDisplay.textContent = '00:00';
+        liveDisplay.style.color = '#ef4444';
+        if (liveToggle) liveToggle.textContent = 'Finished';
+        playTimerChime();
+        return;
+      }
+
+      tState.remainingSeconds--;
+      const mins = Math.floor(tState.remainingSeconds / 60);
+      const secs = tState.remainingSeconds % 60;
+      liveDisplay.textContent = `${String(mins).padStart(2, '0')}:${String(secs).padStart(2, '0')}`;
+    }, 1000);
+  }
+
+  // Toggle countdown timer on any unified question/task strip (KS2, KS3 & GCSE)
   window.toggleExamCardTimer = function (qId, targetMins) {
-    const minsNum = parseInt(targetMins, 10) || 5;
+    const customInput = document.getElementById(`exam-timer-custom-${qId}`);
+    const parsedCustom = customInput ? parseInt(customInput.value, 10) : NaN;
+    const minsNum = (!isNaN(parsedCustom) && parsedCustom > 0 ? parsedCustom : parseInt(targetMins, 10)) || 5;
     const bar = document.getElementById(`exam-timer-bar-${qId}`);
     const display = document.getElementById(`exam-timer-display-${qId}`);
     const toggleBtn = document.getElementById(`exam-timer-toggle-btn-${qId}`);
     if (!bar || !display) return;
 
-    if (bar.style.display === 'none' || window.getComputedStyle(bar).display === 'none') {
+    const wasHidden = bar.style.display === 'none' || window.getComputedStyle(bar).display === 'none';
+    if (wasHidden) {
       bar.style.display = 'flex';
     }
 
     let tState = window.examQuestionTimers[qId];
     if (!tState) {
       tState = {
+        defaultMins: minsNum,
         remainingSeconds: minsNum * 60,
         intervalId: null,
         isRunning: false,
@@ -392,49 +447,73 @@ export function initLessonExamPractice(unitId, lesson) {
       if (toggleBtn) toggleBtn.textContent = 'Resume';
     } else {
       if (tState.remainingSeconds <= 0) {
-        tState.remainingSeconds = minsNum * 60;
-        display.textContent = `${String(minsNum).padStart(2, '0')}:00`;
-        display.style.color = '#38bdf8';
+        tState.remainingSeconds = (tState.defaultMins || minsNum) * 60;
+        updateInlineTimerDisplayFromState(qId);
       }
-      tState.isRunning = true;
-      if (toggleBtn) toggleBtn.textContent = 'Pause';
+      startInlineTimerTick(qId);
+    }
+  };
 
-      tState.intervalId = setInterval(() => {
-        const liveDisplay = document.getElementById(`exam-timer-display-${qId}`);
-        const liveToggle = document.getElementById(`exam-timer-toggle-btn-${qId}`);
-        if (!liveDisplay) {
-          clearInterval(tState.intervalId);
-          tState.intervalId = null;
-          tState.isRunning = false;
-          return;
-        }
-        if (tState.remainingSeconds <= 0) {
-          clearInterval(tState.intervalId);
-          tState.intervalId = null;
-          tState.isRunning = false;
-          liveDisplay.textContent = '00:00';
-          liveDisplay.style.color = '#ef4444';
-          if (liveToggle) liveToggle.textContent = 'Finished';
-          playTimerChime();
-          return;
-        }
+  // Adjust inline timer by deltaSeconds (-60, +60, +300)
+  window.adjustExamCardTimer = function (qId, deltaSeconds, fallbackMins) {
+    const minsNum = parseInt(fallbackMins, 10) || 5;
+    let tState = window.examQuestionTimers[qId];
+    if (!tState) {
+      tState = {
+        defaultMins: minsNum,
+        remainingSeconds: minsNum * 60,
+        intervalId: null,
+        isRunning: false,
+      };
+      window.examQuestionTimers[qId] = tState;
+    }
+    const nextSecs = Math.max(30, Math.min(5400, (tState.remainingSeconds || 0) + (parseInt(deltaSeconds, 10) || 0)));
+    tState.remainingSeconds = nextSecs;
+    tState.defaultMins = Math.max(1, Math.round(nextSecs / 60));
+    const customInput = document.getElementById(`exam-timer-custom-${qId}`);
+    if (customInput) customInput.value = String(tState.defaultMins);
+    const toggleBtn = document.getElementById(`exam-timer-toggle-btn-${qId}`);
+    if (toggleBtn && !tState.isRunning && toggleBtn.textContent === 'Finished') {
+      toggleBtn.textContent = 'Start';
+    }
+    updateInlineTimerDisplayFromState(qId);
+  };
 
-        tState.remainingSeconds--;
-        const mins = Math.floor(tState.remainingSeconds / 60);
-        const secs = tState.remainingSeconds % 60;
-        liveDisplay.textContent = `${String(mins).padStart(2, '0')}:${String(secs).padStart(2, '0')}`;
-      }, 1000);
+  // Set custom minutes on inline timer
+  window.setExamCardCustomMins = function (qId, rawVal) {
+    const mins = Math.max(1, Math.min(90, parseInt(rawVal, 10) || 5));
+    const customInput = document.getElementById(`exam-timer-custom-${qId}`);
+    if (customInput) customInput.value = String(mins);
+    let tState = window.examQuestionTimers[qId];
+    const wasRunning = Boolean(tState && tState.isRunning);
+    if (tState && tState.intervalId) clearInterval(tState.intervalId);
+    tState = {
+      defaultMins: mins,
+      remainingSeconds: mins * 60,
+      intervalId: null,
+      isRunning: false,
+    };
+    window.examQuestionTimers[qId] = tState;
+    updateInlineTimerDisplayFromState(qId);
+    const toggleBtn = document.getElementById(`exam-timer-toggle-btn-${qId}`);
+    if (wasRunning) {
+      startInlineTimerTick(qId);
+    } else if (toggleBtn) {
+      toggleBtn.textContent = 'Start';
     }
   };
 
   // Reset timer
   window.resetExamCardTimer = function (qId, targetMins) {
-    const minsNum = parseInt(targetMins, 10) || 5;
+    const customInput = document.getElementById(`exam-timer-custom-${qId}`);
+    const parsedCustom = customInput ? parseInt(customInput.value, 10) : NaN;
+    const minsNum = (!isNaN(parsedCustom) && parsedCustom > 0 ? parsedCustom : parseInt(targetMins, 10)) || 5;
     const tState = window.examQuestionTimers[qId];
     if (tState && tState.intervalId) {
       clearInterval(tState.intervalId);
     }
     window.examQuestionTimers[qId] = {
+      defaultMins: minsNum,
       remainingSeconds: minsNum * 60,
       intervalId: null,
       isRunning: false,
@@ -700,25 +779,33 @@ export function initLessonExamPractice(unitId, lesson) {
         <div style="position: sticky; top: 0; z-index: 20; background: #ffffff; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; border-bottom: 2px solid #e2e8f0; padding: 14px 0 12px 0; margin-bottom: 14px;">
           <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
             <span style="background: #0f172a; color: #ffffff; font-size: 0.9rem; font-weight: 800; padding: 5px 12px; border-radius: 7px; letter-spacing: 0.04em; text-transform: uppercase;">
-              ${q.qCode ? `Question ${q.qCode}` : 'Exam Question'}
+              ${q.qCode ? (String(q.qCode).startsWith('Task') || String(q.qCode).startsWith('Mission') ? q.qCode : `Question ${q.qCode}`) : q.stageLabel || 'Enquiry Task'}
             </span>
+            ${marksBadgeText ? `
             <span style="background: #f1f5f9; color: #0f172a; border: 1.5px solid #cbd5e1; font-size: 0.9rem; font-weight: 700; padding: 4px 12px; border-radius: 7px;">
               ${marksBadgeText}
-            </span>
+            </span>` : ''}
             ${originPill}
           </div>
 
           <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
-            <!-- Docked Smartboard Countdown Timer (Always on Screen) -->
-            <div id="projector-top-timer-pill" style="display: inline-flex; align-items: center; gap: 10px; background: #0f172a; color: #ffffff; padding: 5px 12px; border-radius: 9px; box-shadow: 0 2px 8px rgba(15,23,42,0.14);">
-              <i class="fa-solid fa-stopwatch" style="color: #38bdf8; font-size: 1rem;"></i>
-              <span id="projector-timer-top-display" style="font-family: 'Courier New', monospace; font-size: 1.35rem; font-weight: 900; color: #38bdf8; letter-spacing: 0.04em; min-width: 64px; text-align: center;">
+            <!-- Docked Smartboard Countdown Timer (Adjustable: -1m / +1m / +5m + Custom Mins) -->
+            <div id="projector-top-timer-pill" style="display: inline-flex; align-items: center; gap: 6px; flex-wrap: wrap; background: #0f172a; color: #ffffff; padding: 5px 11px; border-radius: 9px; box-shadow: 0 2px 8px rgba(15,23,42,0.14);">
+              <i class="fa-solid fa-stopwatch" style="color: #38bdf8; font-size: 0.95rem;"></i>
+              <span id="projector-timer-top-display" style="font-family: 'Courier New', monospace; font-size: 1.32rem; font-weight: 900; color: #38bdf8; letter-spacing: 0.04em; min-width: 62px; text-align: center;">
                 ${String(targetMins).padStart(2, '0')}:00
               </span>
-              <button type="button" id="projector-timer-top-btn" onclick="window.toggleProjectorTimer(${targetMins})" style="background: #2563eb; color: #ffffff; border: none; padding: 5px 12px; border-radius: 6px; font-weight: 700; font-size: 0.84rem; cursor: pointer;">
-                Start (${targetMins}m)
+              <button type="button" onclick="window.adjustProjectorTimer(-60)" title="Subtract 1 minute" style="background: #1e293b; color: #cbd5e1; border: 1px solid #475569; padding: 4px 7px; border-radius: 5px; font-weight: 700; font-size: 0.76rem; cursor: pointer;">-1m</button>
+              <button type="button" onclick="window.adjustProjectorTimer(60)" title="Add 1 minute" style="background: #1e293b; color: #cbd5e1; border: 1px solid #475569; padding: 4px 7px; border-radius: 5px; font-weight: 700; font-size: 0.76rem; cursor: pointer;">+1m</button>
+              <button type="button" onclick="window.adjustProjectorTimer(300)" title="Add 5 minutes" style="background: #1e293b; color: #cbd5e1; border: 1px solid #475569; padding: 4px 7px; border-radius: 5px; font-weight: 700; font-size: 0.76rem; cursor: pointer;">+5m</button>
+              <label style="display: inline-flex; align-items: center; gap: 3px; background: #1e293b; border: 1px solid #475569; border-radius: 5px; padding: 2px 6px; font-size: 0.74rem; color: #94a3b8;" title="Type custom minutes and press Enter">
+                <input type="number" id="projector-timer-custom-mins" min="1" max="90" value="${targetMins}" onchange="window.setProjectorCustomMins(this.value)" onkeydown="if(event.key==='Enter'){window.setProjectorCustomMins(this.value);this.blur();}" style="width: 34px; background: transparent; border: none; color: #f8fafc; font-weight: 800; font-size: 0.78rem; text-align: center; outline: none; font-family: inherit;" />
+                <span>m</span>
+              </label>
+              <button type="button" id="projector-timer-top-btn" onclick="window.toggleProjectorTimer()" style="background: #2563eb; color: #ffffff; border: none; padding: 5px 12px; border-radius: 6px; font-weight: 700; font-size: 0.84rem; cursor: pointer;">
+                Start
               </button>
-              <button type="button" onclick="window.resetProjectorTimer(${targetMins})" style="background: #334155; color: #e2e8f0; border: none; padding: 5px 10px; border-radius: 6px; font-weight: 600; font-size: 0.82rem; cursor: pointer;">
+              <button type="button" onclick="window.resetProjectorTimer()" style="background: #334155; color: #e2e8f0; border: none; padding: 5px 10px; border-radius: 6px; font-weight: 600; font-size: 0.82rem; cursor: pointer;">
                 Reset
               </button>
             </div>
@@ -744,13 +831,14 @@ export function initLessonExamPractice(unitId, lesson) {
 
       <!-- Footer Note -->
       <div style="text-align: center; color: #94a3b8; font-size: 0.8rem; padding-top: 12px; margin-top: 14px; border-top: 1px solid #e2e8f0;">
-        Pearson Edexcel GCSE History &bull; ${paperCode} &bull; The History Revision Hub
+        ${q.projectorFooter || `Pearson Edexcel GCSE History &bull; ${paperCode} &bull; The History Revision Hub`}
       </div>
     `;
 
     document.body.appendChild(modal);
 
-    let projRemaining = targetMins * 60;
+    let projDefaultMins = targetMins;
+    let projRemaining = projDefaultMins * 60;
     let projInterval = null;
     let projRunning = false;
 
@@ -771,6 +859,32 @@ export function initLessonExamPractice(unitId, lesson) {
       if (bTop && topBtnLabel) bTop.textContent = topBtnLabel;
     };
 
+    const startProjectorTick = () => {
+      if (projInterval) clearInterval(projInterval);
+      projRunning = true;
+      syncProjectorDisplays(
+        document.getElementById('projector-timer-top-display')?.textContent || '',
+        null,
+        'Pause',
+        'Pause',
+      );
+      projInterval = setInterval(() => {
+        if (projRemaining <= 0) {
+          clearInterval(projInterval);
+          projInterval = null;
+          projRunning = false;
+          syncProjectorDisplays('00:00', '#ef4444', 'Finished', 'Finished');
+          playTimerChime();
+          return;
+        }
+        projRemaining--;
+        const m = Math.floor(projRemaining / 60);
+        const s = projRemaining % 60;
+        const formatted = `${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`;
+        syncProjectorDisplays(formatted, null, null, null);
+      }, 1000);
+    };
+
     const escHandler = (e) => {
       if (e.key === 'Escape') {
         window.closeExamCardProjector();
@@ -786,6 +900,35 @@ export function initLessonExamPractice(unitId, lesson) {
       btn.textContent = hidden ? 'Show Sources B & C ▾' : 'Hide Sources B & C ▴';
     };
 
+    window.adjustProjectorTimer = function (deltaSecs) {
+      projRemaining = Math.max(30, Math.min(5400, projRemaining + (parseInt(deltaSecs, 10) || 0)));
+      projDefaultMins = Math.max(1, Math.round(projRemaining / 60));
+      const inp = document.getElementById('projector-timer-custom-mins');
+      if (inp) inp.value = String(projDefaultMins);
+      const m = Math.floor(projRemaining / 60);
+      const s = projRemaining % 60;
+      syncProjectorDisplays(
+        `${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`,
+        '#38bdf8',
+        projRunning ? 'Pause' : 'Start',
+        projRunning ? 'Pause' : 'Start',
+      );
+    };
+
+    window.setProjectorCustomMins = function (rawVal) {
+      const mins = Math.max(1, Math.min(90, parseInt(rawVal, 10) || projDefaultMins || 5));
+      projDefaultMins = mins;
+      projRemaining = mins * 60;
+      const inp = document.getElementById('projector-timer-custom-mins');
+      if (inp) inp.value = String(mins);
+      const wasRunning = projRunning;
+      if (projInterval) clearInterval(projInterval);
+      projInterval = null;
+      projRunning = false;
+      syncProjectorDisplays(`${String(mins).padStart(2, '0')}:00`, '#38bdf8', 'Start', 'Start');
+      if (wasRunning) startProjectorTick();
+    };
+
     window.toggleProjectorTimer = function () {
       const pTop = document.getElementById('projector-timer-top-display');
       if (!pTop) return;
@@ -797,44 +940,25 @@ export function initLessonExamPractice(unitId, lesson) {
         syncProjectorDisplays(pTop.textContent, null, 'Resume', 'Resume');
       } else {
         if (projRemaining <= 0) {
-          projRemaining = targetMins * 60;
-          const resetStr = `${String(targetMins).padStart(2, '0')}:00`;
+          projRemaining = projDefaultMins * 60;
+          const resetStr = `${String(projDefaultMins).padStart(2, '0')}:00`;
           syncProjectorDisplays(resetStr, '#38bdf8', null, null);
         }
-        projRunning = true;
-        syncProjectorDisplays(
-          document.getElementById('projector-timer-top-display')?.textContent || '',
-          null,
-          'Pause',
-          'Pause',
-        );
-
-        projInterval = setInterval(() => {
-          if (projRemaining <= 0) {
-            clearInterval(projInterval);
-            projInterval = null;
-            projRunning = false;
-            syncProjectorDisplays('00:00', '#ef4444', 'Finished', 'Finished');
-            playTimerChime();
-            return;
-          }
-          projRemaining--;
-          const m = Math.floor(projRemaining / 60);
-          const s = projRemaining % 60;
-          const formatted = `${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`;
-          syncProjectorDisplays(formatted, null, null, null);
-        }, 1000);
+        startProjectorTick();
       }
     };
 
     window.resetProjectorTimer = function (minsArg) {
-      const mReset = parseInt(minsArg, 10) || targetMins;
+      const inp = document.getElementById('projector-timer-custom-mins');
+      const parsedInp = inp ? parseInt(inp.value, 10) : NaN;
+      const mReset = parseInt(minsArg, 10) || (!isNaN(parsedInp) && parsedInp > 0 ? parsedInp : projDefaultMins);
+      projDefaultMins = mReset;
       if (projInterval) clearInterval(projInterval);
       projInterval = null;
       projRunning = false;
       projRemaining = mReset * 60;
       const resetStr = `${String(mReset).padStart(2, '0')}:00`;
-      syncProjectorDisplays(resetStr, '#38bdf8', 'Start Timer', `Start (${mReset}m)`);
+      syncProjectorDisplays(resetStr, '#38bdf8', 'Start', 'Start');
     };
 
     modal._cleanupInterval = () => {
@@ -850,4 +974,34 @@ export function initLessonExamPractice(unitId, lesson) {
       modal.remove();
     }
   };
+}
+
+export function renderInlineTaskTimerBarHTML(qUid, targetMins = 5) {
+  const mins = Math.max(1, parseInt(targetMins, 10) || 5);
+  return `
+    <div id="exam-timer-bar-${qUid}" class="no-print" style="display: none; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px; background: #0f172a; color: #ffffff; padding: 9px 14px; border-radius: 8px; margin-top: 10px;">
+      <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+        <i class="fa-solid fa-stopwatch" style="color: #38bdf8; font-size: 1rem;"></i>
+        <span style="font-size: 0.82rem; font-weight: 600; color: #cbd5e1;">Timed Mode:</span>
+        <span id="exam-timer-display-${qUid}" style="font-family: 'Courier New', monospace; font-size: 1.18rem; font-weight: 800; color: #38bdf8; letter-spacing: 0.05em; min-width: 56px;">
+          ${String(mins).padStart(2, '0')}:00
+        </span>
+      </div>
+      <div style="display: flex; align-items: center; gap: 5px; flex-wrap: wrap;">
+        <button type="button" onclick="window.adjustExamCardTimer('${qUid}', -60, ${mins})" title="Subtract 1 minute" style="background: #1e293b; color: #cbd5e1; border: 1px solid #475569; padding: 4px 8px; border-radius: 5px; font-weight: 700; font-size: 0.75rem; cursor: pointer;">-1m</button>
+        <button type="button" onclick="window.adjustExamCardTimer('${qUid}', 60, ${mins})" title="Add 1 minute" style="background: #1e293b; color: #cbd5e1; border: 1px solid #475569; padding: 4px 8px; border-radius: 5px; font-weight: 700; font-size: 0.75rem; cursor: pointer;">+1m</button>
+        <button type="button" onclick="window.adjustExamCardTimer('${qUid}', 300, ${mins})" title="Add 5 minutes" style="background: #1e293b; color: #cbd5e1; border: 1px solid #475569; padding: 4px 8px; border-radius: 5px; font-weight: 700; font-size: 0.75rem; cursor: pointer;">+5m</button>
+        <label style="display: inline-flex; align-items: center; gap: 3px; background: #1e293b; border: 1px solid #475569; border-radius: 5px; padding: 2px 6px; font-size: 0.73rem; color: #94a3b8;" title="Type custom minutes and press Enter">
+          <input type="number" id="exam-timer-custom-${qUid}" min="1" max="90" value="${mins}" onchange="window.setExamCardCustomMins('${qUid}', this.value)" onkeydown="if(event.key==='Enter'){window.setExamCardCustomMins('${qUid}', this.value);this.blur();}" style="width: 32px; background: transparent; border: none; color: #f8fafc; font-weight: 800; font-size: 0.76rem; text-align: center; outline: none; font-family: inherit;" />
+          <span>m</span>
+        </label>
+        <button type="button" id="exam-timer-toggle-btn-${qUid}" onclick="window.toggleExamCardTimer('${qUid}', ${mins})" style="background: #2563eb; color: #ffffff; border: none; padding: 5px 12px; border-radius: 6px; font-weight: 700; font-size: 0.78rem; cursor: pointer;">
+          Pause
+        </button>
+        <button type="button" onclick="window.resetExamCardTimer('${qUid}', ${mins})" style="background: #334155; color: #e2e8f0; border: none; padding: 5px 10px; border-radius: 6px; font-weight: 600; font-size: 0.78rem; cursor: pointer;">
+          Reset
+        </button>
+      </div>
+    </div>
+  `;
 }

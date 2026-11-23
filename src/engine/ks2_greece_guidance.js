@@ -1,7 +1,7 @@
 /**
  * KS2 Junior School Teacher Planning Hub & Worksheet Companion Data for:
  * Ancient Greece — City-States, Democracy, Myths & Lasting Legacy (c. 800–146 BC) [ks2_ancient_greece]
- * 100% Year-Neutral Key Stage 2 Primary Calibration with Universal Dual-Scaffolding.
+ * 100% Year-Neutral Key Stage 2 Primary Calibration with Universal Single-Tier Historian Scaffolding.
  */
 
 export const KS2_GREECE_WORKSHEETS_MAP = {

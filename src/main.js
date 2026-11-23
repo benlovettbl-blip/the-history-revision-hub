@@ -84,6 +84,20 @@ export function syncStaffUiState() {
     typeof sessionStorage !== 'undefined' &&
     sessionStorage.getItem('hh_preview_as_pupil') === 'true';
 
+  if (typeof document !== 'undefined' && document.body) {
+    document.body.classList.remove('teacher-mode-active');
+    document.body.classList.toggle('staff-mode-active', Boolean(active));
+    document.querySelectorAll('.teacher-only-plenary-btn').forEach((btn) => {
+      btn.style.display = active ? 'inline-flex' : 'none';
+    });
+    document.querySelectorAll('.teacher-only-guidance-drawer').forEach((det) => {
+      det.style.display = active ? 'block' : 'none';
+    });
+  }
+  try {
+    localStorage.removeItem('teacherMode');
+  } catch (e) {}
+
   const staffSection = document.getElementById('sidebar-staff-section');
   if (staffSection) staffSection.style.display = active ? 'flex' : 'none';
 

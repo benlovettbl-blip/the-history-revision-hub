@@ -995,23 +995,19 @@ export default {
         {
           "letter": "A",
           "title": "Source A (Archival Cartography): Walter Crane, Imperial Federation Map of the World (1886)",
-          "context": "Walter Crane's magnificent 1886 map celebrated Queen Victoria's global empire. Britain sits at the meridian center, connected by steamship lanes to colonies across five continents. **Hinge Question:** Why did Victorian cartographers place Britain at the physical center of world maps, and how did this shape British imperial identity?",
-          "hinge_question": "Why did Victorian cartographers place Britain at the physical center of world maps, and how did this shape British imperial identity?",
+          "context": "Walter Crane's magnificent 1886 map celebrated Queen Victoria's global empire. Britain sits at the meridian center, connected by steamship lanes to colonies across five continents.",
           "image": "/images/ks3_sbe/sbe_l1_s0_imperial_federation_map_1886.jpg",
           "caption": "Source A: Walter Crane, Imperial Federation Map of the World Showing the Extent of the British Empire in 1886 (Supplement to The Graphic, 24 July 1886, statistical data by Capt. J. C. R. Colomb MP), placing Britain at the centre of global steamship lanes.",
-          "discussion_ideas": [
-            "Visual Projection of Imperial Centrality and Global Dominance: Placing Greenwich at the prime meridian and centring the British Isles on world maps visually framed the British Empire as the axis around which the entire globe turned, surrounded by territories shaded in patriotic imperial pink ('the empire on which the sun never sets'), inculcating generations of British schoolchildren with a sense of innate racial and cultural supremacy.",
-            "An Allegory of Maritime Commerce and Civilizing Duty: The elaborate borders designed by Walter Crane feature Britannia ruling the waves alongside allegorical figures of indigenous peoples, Australian settlers, and Indian subjects bearing exotic raw commodities, framing the empire not as violent conquest, but as a harmonious, mutually beneficial global federation of commerce and Christian civilization."
-          ],
           "id": "sbe_l1_src_a",
           "question": "What does this world map suggest about how Victorians felt about Britain's place in the world?",
           "question_badge": "Source Inference",
           "question_type": "Source Inference",
           "model_answer": "By placing Britain right in the center of the world and coloring its colonies bright pink, the map suggests Victorians believed Britain was the natural ruler and leader of the entire globe.",
           "citation": "Walter Crane • Published in The Graphic, 1886 / British Library.",
-          "source_context": "Walter Crane's magnificent 1886 map celebrated Queen Victoria's global empire. Britain sits at the meridian center, connected by steamship lanes to colonies across five continents. **Hinge Question:** Why did Victorian cartographers place Britain at the physical center of world maps, and how did this shape British imperial identity?",
+          "source_context": "Walter Crane's magnificent 1886 map celebrated Queen Victoria's global empire. Britain sits at the meridian center, connected by steamship lanes to colonies across five continents.",
           "teacher_notes": {
-            "source_context": "Walter Crane's magnificent 1886 map celebrated Queen Victoria's global empire. Britain sits at the meridian center, connected by steamship lanes to colonies across five continents. **Hinge Question:** Why did Victorian cartographers place Britain at the physical center of world maps, and how did this shape British imperial identity?"
+            "source_context": "Walter Crane's magnificent 1886 map celebrated Queen Victoria's global empire. Britain sits at the meridian center, connected by steamship lanes to colonies across five continents. **Hinge Question:** Why did Victorian cartographers place Britain at the physical center of world maps, and how did this shape British imperial identity?",
+            "hinge_question": "Why did Victorian cartographers place Britain at the physical center of world maps, and how did this shape British imperial identity?"
           },
           "type": "visual",
           "src": "/images/ks3_sbe/sbe_l1_s0_imperial_federation_map_1886.jpg",
@@ -1020,22 +1016,19 @@ export default {
         {
           "letter": "B",
           "title": "Source B (Visual Record): HMS Warrior at Portsmouth Royal Dockyard (1860)",
-          "context": "Launched in 1860 to counter French naval expansion, HMS Warrior was the ultimate weapon of Victorian industrial supremacy. Featuring a 4.5-inch wrought iron armor belt and steam engines, Warrior made all wooden warships obsolete overnight. **Hinge Question:** How did industrial iron and steam technology convert the Royal Navy from an armed sailing fleet into an invincible instrument of global coercion?",
-          "hinge_question": "How did industrial iron and steam technology convert the Royal Navy from an armed sailing fleet into an invincible instrument of global coercion?",
+          "context": "Launched in 1860 to counter French naval expansion, HMS Warrior was the ultimate weapon of Victorian industrial supremacy. Featuring a 4.5-inch wrought iron armor belt and steam engines, Warrior made all wooden warships obsolete overnight.",
           "image": "/images/ks3_sbe/sbe_l1_s1_hms_warrior_portsmouth.jpg",
           "caption": "Source B: HMS Warrior (launched 1860), Britain’s revolutionary iron-hulled, steam-powered armoured frigate permanently berthed at Portsmouth Historic Dockyard.",
-          "discussion_ideas": [
-            "Launched in 1860 at Blackwall and fitted at Portsmouth Dockyard, HMS Warrior represented an epochal revolution in naval warfare: the world's first iron-hulled, armor-plated, steam-powered warship. She rendered every wooden battleship on earth instantly obsolete. With 4.5 inches of wrought-iron armor backed by 18 inches of teak, steam engines delivering 14 knots of speed regardless of wind direction, and revolutionary rifled breech-loading Armstrong guns, Warrior was completely impregnable to conventional cannon fire. This unmatched technological superiority allowed Britain to enforce 'Gunboat Diplomacy' across the globe: a single British ironclad steam warship could sail up non-European rivers (such as the Yangtze or Niger) and bombard recalcitrant coastal cities with impunity, coercing foreign rulers into signing unequal trade treaties without requiring costly ground armies."
-          ],
           "id": "sbe_l1_src_b",
           "question": "How did iron-hulled steam warships like HMS Warrior help Britain control its global empire?",
           "question_badge": "Technology & Power",
           "question_type": "Technology & Power",
           "model_answer": "Its thick iron armour and powerful steam engine allowed it to crush enemy wooden fleets and travel anywhere in the world regardless of the wind, making British naval power unbeatable.",
           "citation": "Portsmouth Royal Naval Dockyard / National Museum of the Royal Navy.",
-          "source_context": "Launched in 1860 to counter French naval expansion, HMS Warrior was the ultimate weapon of Victorian industrial supremacy. Featuring a 4.5-inch wrought iron armor belt and steam engines, Warrior made all wooden warships obsolete overnight. **Hinge Question:** How did industrial iron and steam technology convert the Royal Navy from an armed sailing fleet into an invincible instrument of global coercion?",
+          "source_context": "Launched in 1860 to counter French naval expansion, HMS Warrior was the ultimate weapon of Victorian industrial supremacy. Featuring a 4.5-inch wrought iron armor belt and steam engines, Warrior made all wooden warships obsolete overnight.",
           "teacher_notes": {
-            "source_context": "Launched in 1860 to counter French naval expansion, HMS Warrior was the ultimate weapon of Victorian industrial supremacy. Featuring a 4.5-inch wrought iron armor belt and steam engines, Warrior made all wooden warships obsolete overnight. **Hinge Question:** How did industrial iron and steam technology convert the Royal Navy from an armed sailing fleet into an invincible instrument of global coercion?"
+            "source_context": "Launched in 1860 to counter French naval expansion, HMS Warrior was the ultimate weapon of Victorian industrial supremacy. Featuring a 4.5-inch wrought iron armor belt and steam engines, Warrior made all wooden warships obsolete overnight. **Hinge Question:** How did industrial iron and steam technology convert the Royal Navy from an armed sailing fleet into an invincible instrument of global coercion?",
+            "hinge_question": "How did industrial iron and steam technology convert the Royal Navy from an armed sailing fleet into an invincible instrument of global coercion?"
           },
           "type": "visual",
           "src": "/images/ks3_sbe/sbe_l1_s1_hms_warrior_portsmouth.jpg",
@@ -1044,80 +1037,68 @@ export default {
         {
           "letter": "C",
           "title": "Source C (Parliamentary Statute): The Navigation Act (1660)",
-          "context": "Robert Clive's private letter to the East India Company directors following the acquisition of the Diwani in 1765. This marked the transformation of a trading corporation into a sovereign colonial ruler extracting millions in taxation. **Hinge Question:** How does Clive's letter demonstrate that British imperialism in India was driven primarily by corporate financial plunder?",
-          "hinge_question": "How did forcing colonies to use only British ships help fund the growth of the Royal Navy?",
+          "context": "Robert Clive's private letter to the East India Company directors following the acquisition of the Diwani in 1765. This marked the transformation of a trading corporation into a sovereign colonial ruler extracting millions in taxation.",
           "text": "For the increase of shipping and encouragement of the navigation of this nation... no goods or commodities whatsoever shall be imported into or exported out of any lands, islands, plantations, or territories to His Majesty belonging in Asia, Africa, or America, in any other ship or vessel whatsoever, but in such ships or vessels as do truly and without fraud belong only to the people of England... and whereof the master and three-fourths of the mariners at least are English.",
           "caption": "Statutory text of the Navigation Act compelling all colonial raw materials to travel in English-owned, English-crewed merchant vessels.",
-          "discussion_ideas": [
-            "Clive's letter to the East India Company Directors lays bare the mercenary corporate motives underpinning British expansion in India. Following the Battle of Buxar in 1765, Clive secured the Diwani of Bengal—the sole legal right to collect land revenues and customs taxes from over twenty million Indian subjects. Rather than expressing concern for good governance or the welfare of the Indian population, Clive explicitly calculates the astronomical annual surplus revenue (amounting to over £2 million clear profit) that could be channeled directly into the Company's coffers in London. Clive treats an ancient, populous civilization as a commercial balance sheet, demonstrating that the East India Company operated not as a benevolent state, but as an armed corporate monopoly driven by shareholder dividends, private fortunes, and systematic financial extraction."
-          ],
           "id": "sbe_l1_src_c",
           "question": "Why did Parliament pass the Navigation Acts to restrict how colonial goods could be transported?",
           "question_badge": "Author’s Purpose",
           "question_type": "Author’s Purpose",
           "model_answer": "Parliament passed the Navigation Acts to lock out rival Dutch and French shipping, ensuring raw materials like sugar and cotton flowed exclusively through British ports to enrich domestic shipbuilders, merchants, and Crown customs revenues.",
           "citation": "Statutes of the Realm, Parliamentary Archives, Westminster.",
-          "source_context": "Enacted in 1660 and reinforced throughout the eighteenth century, the Navigation Acts formed the legal backbone of British mercantilism by banning foreign ships from colonial trade. **Hinge Question:** How did forcing colonies to use only British ships help fund the growth of the Royal Navy?",
+          "source_context": "Enacted in 1660 and reinforced throughout the eighteenth century, the Navigation Acts formed the legal backbone of British mercantilism by banning foreign ships from colonial trade.",
           "teacher_notes": {
-            "source_context": "Robert Clive's private letter to the East India Company directors following the acquisition of the Diwani in 1765. This marked the transformation of a trading corporation into a sovereign colonial ruler extracting millions in taxation. **Hinge Question:** How does Clive's letter demonstrate that British imperialism in India was driven primarily by corporate financial plunder?"
+            "source_context": "Robert Clive's private letter to the East India Company directors following the acquisition of the Diwani in 1765. This marked the transformation of a trading corporation into a sovereign colonial ruler extracting millions in taxation. **Hinge Question:** How does Clive's letter demonstrate that British imperialism in India was driven primarily by corporate financial plunder?",
+            "hinge_question": "How did forcing colonies to use only British ships help fund the growth of the Royal Navy?"
           },
           "type": "written",
           "provenance": "Statutes of the Realm, 12 Cha. II c. 18 (Parliament of England, 1660; enforced across the Atlantic Empire until 1849).",
           "content": "For the increase of shipping and encouragement of the navigation of this nation... no goods or commodities whatsoever shall be imported into or exported out of any lands, islands, plantations, or territories to His Majesty belonging in Asia, Africa, or America, in any other ship or vessel whatsoever, but in such ships or vessels as do truly and without fraud belong only to the people of England... and whereof the master and three-fourths of the mariners at least are English.",
-          "badge": "Author’s Purpose",
-          "enquiry_question": "Why did Parliament pass the Navigation Acts to restrict how colonial goods could be transported?"
+          "badge": "Author’s Purpose"
         },
         {
           "letter": "D",
           "title": "Source D (Official Naval Dispatch): Vice-Admiral Cuthbert Collingwood’s Trafalgar Dispatch (22 October 1805)",
-          "context": "Robert Clive's private letter to the East India Company directors following the acquisition of the Diwani in 1765. This marked the transformation of a trading corporation into a sovereign colonial ruler extracting millions in taxation. **Hinge Question:** How does Clive's letter demonstrate that British imperialism in India was driven primarily by corporate financial plunder?",
-          "hinge_question": "Why did smashing both the French and Spanish fleets in a single battle usher in a century of \"Pax Britannica\"?",
+          "context": "Robert Clive's private letter to the East India Company directors following the acquisition of the Diwani in 1765. This marked the transformation of a trading corporation into a sovereign colonial ruler extracting millions in taxation.",
           "text": "The ever-to-be-lamented death of Vice-Admiral Lord Viscount Nelson, who, in the late conflict with the enemy, fell in the hour of victory, leaves to me the duty of informing my Lords Commissioners of the Admiralty, that on the nineteenth instant the combined fleets of France and Spain put to sea from Cadiz... On Monday the twenty-first instant, off Cape Trafalgar, the Commander-in-Chief made the signal to bear up in two columns, breaking the enemy’s line with irresistible fury; nineteen ships of the line struck their colours to His Majesty’s fleet.",
           "caption": "Official Admiralty battle report written the day after Trafalgar recording Nelson’s two-column breakthrough against the combined Franco-Spanish fleet.",
-          "discussion_ideas": [
-            "Clive's letter to the East India Company Directors lays bare the mercenary corporate motives underpinning British expansion in India. Following the Battle of Buxar in 1765, Clive secured the Diwani of Bengal—the sole legal right to collect land revenues and customs taxes from over twenty million Indian subjects. Rather than expressing concern for good governance or the welfare of the Indian population, Clive explicitly calculates the astronomical annual surplus revenue (amounting to over £2 million clear profit) that could be channeled directly into the Company's coffers in London. Clive treats an ancient, populous civilization as a commercial balance sheet, demonstrating that the East India Company operated not as a benevolent state, but as an armed corporate monopoly driven by shareholder dividends, private fortunes, and systematic financial extraction."
-          ],
           "id": "sbe_l1_src_d",
           "question": "What can you infer from Source D about why the Battle of Trafalgar was a decisive turning point for British sea power?",
           "question_badge": "Source Inference",
           "question_type": "Source Inference",
           "model_answer": "Source D shows that Nelson’s aggressive two-column tactic shattered the combined fleets of Britain’s two main naval rivals—capturing nineteen warships in a single afternoon—leaving the Royal Navy unchallenged across global sea lanes for the next century.",
           "citation": "The National Archives, Kew (ADM 1/509) / The London Gazette.",
-          "source_context": "Written the morning after Nelson’s death off Cape Trafalgar, Vice-Admiral Collingwood’s dispatch announced the destruction of Napoleon’s combined invasion fleet. **Hinge Question:** Why did smashing both the French and Spanish fleets in a single battle usher in a century of \"Pax Britannica\"?",
+          "source_context": "Written the morning after Nelson’s death off Cape Trafalgar, Vice-Admiral Collingwood’s dispatch announced the destruction of Napoleon’s combined invasion fleet.",
           "teacher_notes": {
-            "source_context": "Robert Clive's private letter to the East India Company directors following the acquisition of the Diwani in 1765. This marked the transformation of a trading corporation into a sovereign colonial ruler extracting millions in taxation. **Hinge Question:** How does Clive's letter demonstrate that British imperialism in India was driven primarily by corporate financial plunder?"
+            "source_context": "Robert Clive's private letter to the East India Company directors following the acquisition of the Diwani in 1765. This marked the transformation of a trading corporation into a sovereign colonial ruler extracting millions in taxation. **Hinge Question:** How does Clive's letter demonstrate that British imperialism in India was driven primarily by corporate financial plunder?",
+            "hinge_question": "Why did smashing both the French and Spanish fleets in a single battle usher in a century of \"Pax Britannica\"?"
           },
           "type": "written",
           "provenance": "Vice-Admiral Cuthbert Collingwood aboard HMS Euryalus off Cape Trafalgar, Official Dispatch to the Admiralty, published in The London Gazette Extraordinary (6 November 1805).",
           "content": "The ever-to-be-lamented death of Vice-Admiral Lord Viscount Nelson, who, in the late conflict with the enemy, fell in the hour of victory, leaves to me the duty of informing my Lords Commissioners of the Admiralty, that on the nineteenth instant the combined fleets of France and Spain put to sea from Cadiz... On Monday the twenty-first instant, off Cape Trafalgar, the Commander-in-Chief made the signal to bear up in two columns, breaking the enemy’s line with irresistible fury; nineteen ships of the line struck their colours to His Majesty’s fleet.",
-          "badge": "Source Inference",
-          "enquiry_question": "What can you infer from Source D about why the Battle of Trafalgar was a decisive turning point for British sea power?"
+          "badge": "Source Inference"
         },
         {
           "letter": "E",
           "title": "Source E (Parliamentary Debate): Lord George Hamilton Introducing the Naval Defence Act (7 March 1889)",
-          "context": "Robert Clive's private letter to the East India Company directors following the acquisition of the Diwani in 1765. This marked the transformation of a trading corporation into a sovereign colonial ruler extracting millions in taxation. **Hinge Question:** How does Clive's letter demonstrate that British imperialism in India was driven primarily by corporate financial plunder?",
-          "hinge_question": "Why did the rise of industrial rivals like France, Russia, and Germany force Britain to pass the 1889 Naval Defence Act?",
+          "context": "Robert Clive's private letter to the East India Company directors following the acquisition of the Diwani in 1765. This marked the transformation of a trading corporation into a sovereign colonial ruler extracting millions in taxation.",
           "text": "Our supremacy upon the sea is not a matter of national vanity; it is the absolute condition of our national existence and the sole bond that holds our scattered Empire together. The leading idea of Her Majesty’s Government is that our naval establishment should be maintained upon such a scale that it shall be at least equal to the naval strength of any two other foreign countries combined, and for this purpose we ask Parliament to sanction the immediate construction of seventy vessels at an expenditure of £21,500,000.",
           "caption": "First Lord of the Admiralty Lord George Hamilton justifying the £21.5 million Naval Defence Act and the Two-Power Standard before MPs in 1889.",
-          "discussion_ideas": [
-            "Clive's letter to the East India Company Directors lays bare the mercenary corporate motives underpinning British expansion in India. Following the Battle of Buxar in 1765, Clive secured the Diwani of Bengal—the sole legal right to collect land revenues and customs taxes from over twenty million Indian subjects. Rather than expressing concern for good governance or the welfare of the Indian population, Clive explicitly calculates the astronomical annual surplus revenue (amounting to over £2 million clear profit) that could be channeled directly into the Company's coffers in London. Clive treats an ancient, populous civilization as a commercial balance sheet, demonstrating that the East India Company operated not as a benevolent state, but as an armed corporate monopoly driven by shareholder dividends, private fortunes, and systematic financial extraction."
-          ],
           "id": "sbe_l1_src_e",
           "question": "How did the British government justify spending £21.5 million on new warships in Source E?",
           "question_badge": "Reliability & Provenance",
           "question_type": "Reliability & Provenance",
           "model_answer": "Hamilton framed naval dominance not as luxury or pride, but as an existential necessity to protect food imports and maritime links across a global empire—persuading MPs to fund seventy warships so Britain could outmatch any two rival powers.",
           "citation": "UK Parliamentary Archives, Hansard (7 March 1889).",
-          "source_context": "In March 1889, First Lord of the Admiralty Lord George Hamilton asked Parliament for £21.5 million to build 70 warships, enshrining the Two-Power Standard in law. **Hinge Question:** Why did the rise of industrial rivals like France, Russia, and Germany force Britain to pass the 1889 Naval Defence Act?",
+          "source_context": "In March 1889, First Lord of the Admiralty Lord George Hamilton asked Parliament for £21.5 million to build 70 warships, enshrining the Two-Power Standard in law.",
           "teacher_notes": {
-            "source_context": "Robert Clive's private letter to the East India Company directors following the acquisition of the Diwani in 1765. This marked the transformation of a trading corporation into a sovereign colonial ruler extracting millions in taxation. **Hinge Question:** How does Clive's letter demonstrate that British imperialism in India was driven primarily by corporate financial plunder?"
+            "source_context": "Robert Clive's private letter to the East India Company directors following the acquisition of the Diwani in 1765. This marked the transformation of a trading corporation into a sovereign colonial ruler extracting millions in taxation. **Hinge Question:** How does Clive's letter demonstrate that British imperialism in India was driven primarily by corporate financial plunder?",
+            "hinge_question": "Why did the rise of industrial rivals like France, Russia, and Germany force Britain to pass the 1889 Naval Defence Act?"
           },
           "type": "written",
           "provenance": "Lord George Hamilton, First Lord of the Admiralty, Speech to the House of Commons on the Naval Defence Bill, Hansard Parliamentary Debates, 3rd Series, Vol. 333 (7 March 1889).",
           "content": "Our supremacy upon the sea is not a matter of national vanity; it is the absolute condition of our national existence and the sole bond that holds our scattered Empire together. The leading idea of Her Majesty’s Government is that our naval establishment should be maintained upon such a scale that it shall be at least equal to the naval strength of any two other foreign countries combined, and for this purpose we ask Parliament to sanction the immediate construction of seventy vessels at an expenditure of £21,500,000.",
-          "badge": "Reliability & Provenance",
-          "enquiry_question": "How did the British government justify spending £21.5 million on new warships in Source E?"
+          "badge": "Reliability & Provenance"
         }
       ],
       "tasks": [
@@ -2261,15 +2242,16 @@ export default {
           "caption": "Source A: Benjamin West, Shah ’Alam Conveying the Grant of the Diwani to Lord Clive, August 1765 (c. 1818, British Library Foster 29), transferring tax-collection rights across Bengal, Bihar, and Orissa to the East India Company.",
           "text": "The painting depicts Emperor Shah Alam II seated on an imperial dais inside an ornate tent at Allahabad, handing a royal scroll (the Diwani) to Robert Clive. British officers surround Clive in formal uniforms, while Indian courtiers bow in submission.",
           "provenance": "Commissioned by Robert Clive's son and painted by Anglo-American historical artist Benjamin West in 1795.",
-          "analysis": "Illustrates the symbolic transfer of fiscal sovereignty over Bengal from the Mughal crown to the East India Company, masking armed coercion beneath diplomatic ceremony.",
           "question": "How does Benjamin West portray the relationship between Robert Clive and Emperor Shah Alam II in this official portrait?",
           "letter": "A",
           "model_answer": "Benjamin West portrays the 1765 transfer of tax-collecting power as a calm, respectful ceremony beneath an imperial canopy, disguising the reality that Mughal Emperor Shah Alam II had been defeated at the Battle of Buxar and forced to hand Bengal's revenues to a private armed company.",
           "context": "Commissioned decades later in 1795, Benjamin West's oil painting depicts Mughal Emperor Shah Alam II at Allahabad in August 1765 handing Robert Clive the Diwani—the legal right to collect land taxes from roughly twenty million people across Bengal, Bihar, and Orissa.",
-          "hinge_question": "Why did East India Company patrons commission a grand ceremonial painting of the 1765 Diwani rather than showing the battlefield violence at Plassey and Buxar that forced the Emperor to sign it?",
-          "source_context": "Commissioned decades later in 1795, Benjamin West's oil painting depicts Mughal Emperor Shah Alam II at Allahabad in August 1765 handing Robert Clive the Diwani—the legal right to collect land taxes from roughly twenty million people across Bengal, Bihar, and Orissa. **Hinge Question:** Why did East India Company patrons commission a grand ceremonial painting of the 1765 Diwani rather than showing the battlefield violence at Plassey and Buxar that forced the Emperor to sign it?",
+          "source_context": "Commissioned decades later in 1795, Benjamin West's oil painting depicts Mughal Emperor Shah Alam II at Allahabad in August 1765 handing Robert Clive the Diwani—the legal right to collect land taxes from roughly twenty million people across Bengal, Bihar, and Orissa.",
           "src": "/images/ks3_sbe/sbe_l2_s0_shah_alam_clive_diwani_1765.jpg",
-          "image_alt": "Benjamin West’s oil painting showing Mughal Emperor Shah Alam II seated beneath a gilded canopy handing the rolled 1765 Diwani scroll to red-coated Robert Clive surrounded by Mughal courtiers, elephants, and British officers"
+          "image_alt": "Benjamin West’s oil painting showing Mughal Emperor Shah Alam II seated beneath a gilded canopy handing the rolled 1765 Diwani scroll to red-coated Robert Clive surrounded by Mughal courtiers, elephants, and British officers",
+          "teacher_notes": {
+            "hinge_question": "Why did East India Company patrons commission a grand ceremonial painting of the 1765 Diwani rather than showing the battlefield violence at Plassey and Buxar that forced the Emperor to sign it?"
+          }
         },
         {
           "id": "sbe_l2_src_b",
@@ -2282,15 +2264,16 @@ export default {
           "caption": "September 1862 lithograph published with the Bolton Chronicle showing W. Calder Marshall's public-subscription monument to Samuel Crompton (1753–1827), inventor of the 1779 spinning mule.",
           "text": "Presented with the Bolton Chronicle on 27 September 1862 ('Samuel Crompton, Inventor of the Spinning Mule — Erected by Public Subscription Sept 24th 1862'), this lithograph celebrates Bolton's civic monument to Crompton, whose 1779 spinning mule enabled Lancashire mill workers to spin fine, strong cotton thread in vast factory quantities.",
           "provenance": "Invented in Bolton, Lancashire, in 1779; rapidly adopted by steam-powered cotton mills across Manchester.",
-          "analysis": "Demonstrates how British mechanical technology caught up with and ultimately surpassed the speed and volume of traditional Indian domestic hand-spinning.",
           "question": "Why did Victorian Lancashire towns erect heroic public monuments to Samuel Crompton in 1862, and what side of Britain's cotton empire does a civic statue leave out?",
           "letter": "B",
           "model_answer": "Bolton citizens erected a grand monument to Samuel Crompton because his 1779 spinning mule made Lancashire wealthy by mass-producing fine cotton yarn, yet civic celebrations left out how cheap British factory cloth and unfair tariffs simultaneously ruined skilled handloom weavers in Bengal.",
           "context": "Unveiled in Bolton in September 1862 by public subscription and sculpted by W. Calder Marshall RA, this monument honoured Samuel Crompton (with his ancestral home Hall i' th' Wood carved on the plinth) for inventing the 1779 spinning mule that powered Lancashire's cotton boom.",
-          "hinge_question": "How could the exact same invention be celebrated on a bronze pedestal in Lancashire as heroic progress while being experienced in Dhaka as economic ruin?",
-          "source_context": "Unveiled in Bolton in September 1862 by public subscription and sculpted by W. Calder Marshall RA, this monument honoured Samuel Crompton (with his ancestral home Hall i' th' Wood carved on the plinth) for inventing the 1779 spinning mule that powered Lancashire's cotton boom. **Hinge Question:** How could the exact same invention be celebrated on a bronze pedestal in Lancashire as heroic progress while being experienced in Dhaka as economic ruin?",
+          "source_context": "Unveiled in Bolton in September 1862 by public subscription and sculpted by W. Calder Marshall RA, this monument honoured Samuel Crompton (with his ancestral home Hall i' th' Wood carved on the plinth) for inventing the 1779 spinning mule that powered Lancashire's cotton boom.",
           "src": "/images/spinning_mule.jpg",
-          "image_alt": "September 1862 Bolton Chronicle lithograph showing W. Calder Marshall’s seated bronze statue of spinning-mule inventor Samuel Crompton atop a stepped stone pedestal"
+          "image_alt": "September 1862 Bolton Chronicle lithograph showing W. Calder Marshall’s seated bronze statue of spinning-mule inventor Samuel Crompton atop a stepped stone pedestal",
+          "teacher_notes": {
+            "hinge_question": "How could the exact same invention be celebrated on a bronze pedestal in Lancashire as heroic progress while being experienced in Dhaka as economic ruin?"
+          }
         },
         {
           "id": "sbe_l2_src_c",
@@ -2301,13 +2284,14 @@ export default {
           "type": "written",
           "text": "\"An Act to preserve and encourage the woollen and silk manufactures of this kingdom... Be it enacted, that from and after the twenty-fifth day of December 1722, it shall not be lawful for any person whatsoever to use or wear in Great Britain, in any garment or apparel whatsoever, any printed, painted, stained, or dyed calico... upon penalty of forfeiting to the informer the sum of five pounds.\"",
           "provenance": "Enacted by the British Parliament in 1721 following violent riots by Spitalfields silk and woollen weavers against Indian imports.",
-          "analysis": "Proves that Britain initially relied upon aggressive protectionist tariffs and legal bans rather than free market competition to shelter its domestic textile industry from superior Indian cloth.",
           "question": "Why did the British Parliament pass strict laws forbidding the wearing of Indian calico in 1721?",
           "letter": "C",
           "model_answer": "Parliament passed the 1721 Calico Act to shield British wool and silk makers from superior, popular Indian cottons, proving that Britain relied on strict legal protectionism at home long before preaching 'free trade' to India.",
           "context": "Passed under fierce lobbying from English woollen and silk weavers, the 1721 Calico Act outlawed wearing or selling printed Indian cotton cloth in Britain, imposing heavy £5 fines on wearers and £20 fines on merchants to shut Indian textiles out of the British market.",
-          "hinge_question": "Why is the 1721 Calico Act crucial evidence against the claim that Lancashire cotton triumphed over Indian textiles purely through fair free-market competition?",
-          "source_context": "Passed under fierce lobbying from English woollen and silk weavers, the 1721 Calico Act outlawed wearing or selling printed Indian cotton cloth in Britain, imposing heavy £5 fines on wearers and £20 fines on merchants to shut Indian textiles out of the British market. **Hinge Question:** Why is the 1721 Calico Act crucial evidence against the claim that Lancashire cotton triumphed over Indian textiles purely through fair free-market competition?"
+          "source_context": "Passed under fierce lobbying from English woollen and silk weavers, the 1721 Calico Act outlawed wearing or selling printed Indian cotton cloth in Britain, imposing heavy £5 fines on wearers and £20 fines on merchants to shut Indian textiles out of the British market.",
+          "teacher_notes": {
+            "hinge_question": "Why is the 1721 Calico Act crucial evidence against the claim that Lancashire cotton triumphed over Indian textiles purely through fair free-market competition?"
+          }
         },
         {
           "id": "sbe_l2_src_d",
@@ -2318,13 +2302,14 @@ export default {
           "type": "written",
           "text": "\"The peculiar species of manufacture called Dhaka muslins has ceased altogether. The commercial residency has been abolished, and the once flourishing town of Dhaka is now reduced from a population of 150,000 to barely 30,000. The jungle is encroaching upon the city... British machine-made cotton goods have completely supplanted the native manufacture across the country.\"",
           "provenance": "Testimony delivered before the House of Commons Select Committee on the Affairs of the East India Company, London, 1840.",
-          "analysis": "Eyewitness statistical evidence demonstrating the rapid demographic and industrial collapse of India's ancient weaving metropolis under colonial free-trade tariff policy.",
           "question": "What evidence does Charles Trevelyan provide to demonstrate the devastation of the Bengali textile trade by 1840?",
           "letter": "D",
           "model_answer": "Sir Charles Trevelyan shows Bengal's textile collapse by testifying that world-famous Dhaka muslin manufacture had stopped completely and that Dhaka's population had plunged from 150,000 residents down to barely 30,000 or 40,000.",
           "context": "Giving sworn evidence before a British Parliamentary Select Committee in 1840, colonial administrator Sir Charles Trevelyan documented how high British import tariffs (70–80% on Indian cloth vs 2–3.5% on British factory cotton entering India) emptied historic weaving cities like Dhaka.",
-          "hinge_question": "What does the collapse of Dhaka's population from 150,000 to 30,000 reveal about how colonial trade rules reshaped Indian cities as well as British industrial towns?",
-          "source_context": "Giving sworn evidence before a British Parliamentary Select Committee in 1840, colonial administrator Sir Charles Trevelyan documented how high British import tariffs (70–80% on Indian cloth vs 2–3.5% on British factory cotton entering India) emptied historic weaving cities like Dhaka. **Hinge Question:** What does the collapse of Dhaka's population from 150,000 to 30,000 reveal about how colonial trade rules reshaped Indian cities as well as British industrial towns?"
+          "source_context": "Giving sworn evidence before a British Parliamentary Select Committee in 1840, colonial administrator Sir Charles Trevelyan documented how high British import tariffs (70–80% on Indian cloth vs 2–3.5% on British factory cotton entering India) emptied historic weaving cities like Dhaka.",
+          "teacher_notes": {
+            "hinge_question": "What does the collapse of Dhaka's population from 150,000 to 30,000 reveal about how colonial trade rules reshaped Indian cities as well as British industrial towns?"
+          }
         },
         {
           "id": "sbe_l2_src_e",
@@ -2336,13 +2321,14 @@ export default {
           "caption": "A late 19th-century study of an Indian handloom weaver, capturing the surviving domestic craft after decades of colonial economic displacement.",
           "text": "\"The misery hardly finds a parallel in the history of commerce. The bones of the cotton-weavers are bleaching the plains of India. The cotton-weaving of India, which for centuries clothed the world, has been utterly broken by the steam looms of Great Britain.\"",
           "provenance": "Official administrative minute submitted to the Board of Directors of the East India Company, Calcutta, 1834.",
-          "analysis": "A striking admission from the supreme British authority in India acknowledging that British industrial policy directly produced the mass impoverishment and starvation of Indian artisans.",
           "question": "How does Governor-General Bentinck describe the human consequences of British industrial competition on Indian cotton weavers?",
           "letter": "E",
           "model_answer": "Governor-General Bentinck describes the human cost in stark, haunting language, warning that Indian weavers faced misery without parallel in commercial history and that 'the bones of the cotton-weavers are bleaching the plains of India'.",
           "context": "Attributed to Governor-General Lord William Bentinck's 1834 administrative minute, this famous warning came from the very top of British rule in India—making it especially striking evidence because a colonial governor had no motive to exaggerate British-caused suffering.",
-          "hinge_question": "Why does this bleak verdict carry particular weight coming from Britain's own Governor-General of India rather than from an opponent of British rule?",
-          "source_context": "Attributed to Governor-General Lord William Bentinck's 1834 administrative minute, this famous warning came from the very top of British rule in India—making it especially striking evidence because a colonial governor had no motive to exaggerate British-caused suffering. **Hinge Question:** Why does this bleak verdict carry particular weight coming from Britain's own Governor-General of India rather than from an opponent of British rule?"
+          "source_context": "Attributed to Governor-General Lord William Bentinck's 1834 administrative minute, this famous warning came from the very top of British rule in India—making it especially striking evidence because a colonial governor had no motive to exaggerate British-caused suffering.",
+          "teacher_notes": {
+            "hinge_question": "Why does this bleak verdict carry particular weight coming from Britain's own Governor-General of India rather than from an opponent of British rule?"
+          }
         }
       ],
       "tasks": [
@@ -3634,13 +3620,14 @@ export default {
           "caption": "Sepoy infantrymen of the Bengal Native Army; simmering grievances over religious contamination, overseas deployment, and the annexation of Awadh sparked revolt.",
           "text": "\"A report has spread throughout all regiments that the paper cartridges issued with the new Enfield rifles are greased with the fat of cows and pigs. To bite the cartridge is to lose our caste and destroy our religion. We believe this is a deliberate design of the British government to make Christians of us all by forcibly violating our holy faiths.\"",
           "provenance": "Recorded during the court of inquiry at Barrackpore cantonment, Bengal, March 1857, following the refusal of sepoys to handle the new ammunition.",
-          "analysis": "Highlights how religious and cultural anxiety served as the immediate detonator for a rebellion rooted in deep distrust of British colonial intentions.",
           "question": "Why did the grease used on Enfield rifle cartridges provoke such intense alarm among Hindu and Muslim sepoys?",
           "letter": "A",
           "model_answer": "Greased Enfield rifle cartridges alarmed both Hindu and Muslim sepoys because soldiers had to bite open paper cartridges rumoured to be tallowed with cow fat (sacred to Hindus) and pig fat (forbidden to Muslims), convincing troops the Company was plotting to break their caste and faith.",
-          "context": "Recorded during the March 1857 unrest at Barrackpore before the May outbreak at Meerut, this testimony shows how the new Pattern 1853 Enfield rifle acted as the final spark atop deeper anger over poor pay, the 1856 General Service Enlistment Act, and the annexation of Awadh.",
-          "hinge_question": "Why do historians view the greased Enfield cartridges as the short-term trigger of 1857 rather than its sole underlying cause?",
-          "source_context": "Recorded during the March 1857 unrest at Barrackpore before the May outbreak at Meerut, this testimony shows how the new Pattern 1853 Enfield rifle acted as the final spark atop deeper anger over poor pay, the 1856 General Service Enlistment Act, and the annexation of Awadh. **Hinge Question:** Why do historians view the greased Enfield cartridges as the short-term trigger of 1857 rather than its sole underlying cause?"
+          "context": "Recorded during the spring of 1857 among Bengal Army regiments stationed at Barrackpore and Meerut, shortly after East India Company arsenals introduced the new rifled Pattern 1853 Enfield musket to Indian sepoy infantrymen.",
+          "source_context": "Recorded during the spring of 1857 among Bengal Army regiments stationed at Barrackpore and Meerut, shortly after East India Company arsenals introduced the new rifled Pattern 1853 Enfield musket to Indian sepoy infantrymen.",
+          "teacher_notes": {
+            "hinge_question": "Why do historians view the greased Enfield cartridges as the short-term trigger of 1857 rather than its sole underlying cause?"
+          }
         },
         {
           "id": "sbe_l3_src_b",
@@ -3653,15 +3640,16 @@ export default {
           "caption": "Nineteenth-century Indian portrait of Rani Lakshmibai of Jhansi armed with an upright talwar sword and four-bossed dhal shield; British commander Sir Hugh Rose called her 'the bravest and best military leader of the rebels'.",
           "text": "This nineteenth-century Indian portrait shows Rani Lakshmibai of Jhansi in royal attire, holding a raised curved talwar sword in her right hand and a round four-bossed shield (dhal) in her left as a symbol of sovereign defiance after the East India Company annexed Jhansi under the Doctrine of Lapse.",
           "provenance": "Preserved in the Central Museum, Gwalior; contemporary portrait celebrating the legendary leader of the Central Indian rebellion.",
-          "analysis": "Captures the heroic memory of Lakshmibai as an iconic leader of armed anti-colonial resistance who refused to surrender her state to British annexation.",
           "question": "How does this portrait portray Rani Lakshmibai's leadership and defiance during the siege of Jhansi?",
           "letter": "B",
           "model_answer": "The portrait presents Rani Lakshmibai as a composed, regal warrior-queen bearing a raised sword and battle shield, celebrating her refusal to surrender Jhansi after Lord Dalhousie annexed her kingdom under the Doctrine of Lapse.",
           "context": "After Maharaja Gangadhar Rao died in 1853, Governor-General Lord Dalhousie used the Doctrine of Lapse to reject Jhansi's adopted heir Damodar Rao and annex the state. In 1857–58, Rani Lakshmibai led Jhansi's defence and died fighting British forces at Gwalior in June 1858.",
-          "hinge_question": "How did Lord Dalhousie's Doctrine of Lapse turn previously allied Indian princely rulers like Rani Lakshmibai into determined military leaders of the 1857 uprising?",
-          "source_context": "After Maharaja Gangadhar Rao died in 1853, Governor-General Lord Dalhousie used the Doctrine of Lapse to reject Jhansi's adopted heir Damodar Rao and annex the state. In 1857–58, Rani Lakshmibai led Jhansi's defence and died fighting British forces at Gwalior in June 1858. **Hinge Question:** How did Lord Dalhousie's Doctrine of Lapse turn previously allied Indian princely rulers like Rani Lakshmibai into determined military leaders of the 1857 uprising?",
+          "source_context": "After Maharaja Gangadhar Rao died in 1853, Governor-General Lord Dalhousie used the Doctrine of Lapse to reject Jhansi's adopted heir Damodar Rao and annex the state. In 1857–58, Rani Lakshmibai led Jhansi's defence and died fighting British forces at Gwalior in June 1858.",
           "src": "/images/upgraded/ks3-empire-gw/sbe_l3_srcb_rani_lakshmibai_sword_shield.jpg",
-          "image_alt": "Nineteenth-century Indian half-length portrait of Rani Lakshmibai of Jhansi holding an upright talwar sword in her right hand and a round four-bossed dhal shield in her left"
+          "image_alt": "Nineteenth-century Indian half-length portrait of Rani Lakshmibai of Jhansi holding an upright talwar sword in her right hand and a round four-bossed dhal shield in her left",
+          "teacher_notes": {
+            "hinge_question": "How did Lord Dalhousie's Doctrine of Lapse turn previously allied Indian princely rulers like Rani Lakshmibai into determined military leaders of the 1857 uprising?"
+          }
         },
         {
           "id": "sbe_l3_src_c",
@@ -3672,13 +3660,14 @@ export default {
           "type": "written",
           "text": "\"It is well known to all that in this age the people of Hindostan, both Hindoos and Mohammedans, are being ruined under the tyranny and the oppression of the infidel and treacherous English... The British Government has dispossessed the ancient landlords, ruined our artisans by importing cheap foreign cloth, and excluded native gentlemen from all honourable posts in the civil and military service. Rise together to re-establish our ancient honour!\"",
           "provenance": "Published in the Delhi Urdu Akhbar in August 1857 on behalf of the insurgent leadership seeking to unite all social classes against British rule.",
-          "analysis": "Reveals that the 1857 rebellion was not merely a military mutiny, but a coordinated political movement drawing together displaced princes, ruined artisans, and religious leaders.",
           "question": "What distinct grievances does the Azamgarh Proclamation list to persuade different sections of Indian society to join the rebellion?",
           "letter": "C",
           "model_answer": "The Azamgarh Proclamation unites Hindus and Muslims by appealing specifically to dispossessed landowners (zamindars) crushed by heavy Company land taxes, Indian merchants shut out of trade, ruined artisans, and sepoys facing religious disrespect.",
           "context": "Issued in August 1857 in the name of Mughal Emperor Bahadur Shah Zafar’s court, the Azamgarh Manifesto deliberately reached beyond army barracks—calling on Hindu and Muslim landowners, merchants, civil servants, and weavers to overthrow East India Company rule together.",
-          "hinge_question": "How does the Azamgarh Proclamation challenge the Victorian British label that 1857 was merely a narrow military 'Sepoy Mutiny'?",
-          "source_context": "Issued in August 1857 in the name of Mughal Emperor Bahadur Shah Zafar’s court, the Azamgarh Manifesto deliberately reached beyond army barracks—calling on Hindu and Muslim landowners, merchants, civil servants, and weavers to overthrow East India Company rule together. **Hinge Question:** How does the Azamgarh Proclamation challenge the Victorian British label that 1857 was merely a narrow military 'Sepoy Mutiny'?"
+          "source_context": "Issued in August 1857 in the name of Mughal Emperor Bahadur Shah Zafar’s court, the Azamgarh Manifesto deliberately reached beyond army barracks—calling on Hindu and Muslim landowners, merchants, civil servants, and weavers to overthrow East India Company rule together.",
+          "teacher_notes": {
+            "hinge_question": "How does the Azamgarh Proclamation challenge the Victorian British label that 1857 was merely a narrow military 'Sepoy Mutiny'?"
+          }
         },
         {
           "id": "sbe_l3_src_d",
@@ -3691,15 +3680,16 @@ export default {
           "caption": "Reference Map: 'Northern India: The Mutiny 1857–9' (Cambridge Modern History Atlas, Map 123, Cambridge University Press), underlining principal centres of rebellion across the Gangetic plain alongside the Grand Trunk Road and 1857–58 railway lines.",
           "text": "This campaign map of Northern India (1857–59) underlines the main rebellion strongholds clustered along the Ganges-Jumna heartland and central India—including Meerut, Delhi, Agra, Lucknow, Cawnpore (Kanpur), and Jhansi—connected by the Grand Trunk Road and early British railway sections.",
           "provenance": "Illustrated London News, contemporary war correspondent dispatch, autumn 1857.",
-          "analysis": "Illustrates the ferocious, total-war nature of the 1857 conflict, which pitted trained British and Commonwealth forces against equally trained regular sepoy regiments.",
           "question": "What does this campaign map reveal about the geographic concentration of the 1857 uprising and how transport routes shaped British military reconquest?",
           "letter": "D",
           "model_answer": "The map shows that the 1857 uprising was heavily concentrated across the northern Gangetic plain and Awadh—from Meerut and Delhi through Lucknow, Kanpur, and Jhansi—while southern and coastal presidencies stayed largely outside the revolt, allowing Britain to rush reinforcements up the Grand Trunk Road and early railways.",
           "context": "Published by Cambridge University Press ('Northern India: The Mutiny 1857–9'), this cartographic record highlights both the fierce regional scale of the revolt across Hindustani northern India and the strategic role of telegraph lines, the Grand Trunk Road, and newly opened rail links in British counter-offensives.",
-          "hinge_question": "Why was the geographic concentration of the uprising in northern India—while Bengal ports, Madras, Bombay, and the Punjab did not join—so decisive for Britain's ability to recapture Delhi and Lucknow?",
-          "source_context": "Published by Cambridge University Press ('Northern India: The Mutiny 1857–9'), this cartographic record highlights both the fierce regional scale of the revolt across Hindustani northern India and the strategic role of telegraph lines, the Grand Trunk Road, and newly opened rail links in British counter-offensives. **Hinge Question:** Why was the geographic concentration of the uprising in northern India—while Bengal ports, Madras, Bombay, and the Punjab did not join—so decisive for Britain's ability to recapture Delhi and Lucknow?",
+          "source_context": "Published by Cambridge University Press ('Northern India: The Mutiny 1857–9'), this cartographic record highlights both the fierce regional scale of the revolt across Hindustani northern India and the strategic role of telegraph lines, the Grand Trunk Road, and newly opened rail links in British counter-offensives.",
           "src": "/images/ks3_sbe/sbe_l3_s3_indian_rebellion_1857_map.jpg",
-          "image_alt": "Cambridge Modern History Atlas Map 123 titled NORTHERN INDIA — THE MUTINY 1857–9 underlining rebellion centres including Meerut, Delhi, Lucknow, Cawnpore, Jhansi, and Gwalior along the Grand Trunk Road and early railway lines"
+          "image_alt": "Cambridge Modern History Atlas Map 123 titled NORTHERN INDIA — THE MUTINY 1857–9 underlining rebellion centres including Meerut, Delhi, Lucknow, Cawnpore, Jhansi, and Gwalior along the Grand Trunk Road and early railway lines",
+          "teacher_notes": {
+            "hinge_question": "Why was the geographic concentration of the uprising in northern India—while Bengal ports, Madras, Bombay, and the Punjab did not join—so decisive for Britain's ability to recapture Delhi and Lucknow?"
+          }
         },
         {
           "id": "sbe_l3_src_e",
@@ -3711,13 +3701,14 @@ export default {
           "caption": "Queen Victoria, proclaimed Empress of India (Kaisar-i-Hind) in 1876 following the 1858 liquidation of the East India Company and the direct assumption of Crown rule.",
           "text": "\"We hereby announce to the native princes of India, that all treaties and engagements made with them by the Honourable East India Company are by us accepted, and will be scrupulously maintained... We disclaim alike the right and the desire to impose our convictions on any of our subjects. We strictly charge all those who may be in authority under us, that they abstain from all interference with the religious beliefs or worship of our subjects.\"",
           "provenance": "Read publicly by Viceroy Lord Canning in Allahabad on 1 November 1858, inaugurating direct Crown rule over India.",
-          "analysis": "Demonstrates how the British state sought to pacify Indian hostility by promising religious toleration, respecting princely boundaries, and terminating the aggressive Doctrine of Lapse.",
           "question": "How did Queen Victoria’s 1858 proclamation attempt to reassure Indian princes and religious communities following the suppression of the rebellion?",
           "letter": "E",
           "model_answer": "Queen Victoria’s November 1858 proclamation sought to calm Indian anger by abolishing East India Company rule, promising to honour all existing treaties with Indian princes without further territorial annexations, and pledging strict non-interference in Hindu and Muslim religious beliefs.",
           "context": "Following the Government of India Act (August 1858), which liquidated East India Company rule and transferred sovereignty directly to the British Crown (the British Raj), Queen Victoria's proclamation was read aloud at Allahabad on 1 November 1858 to win back princely loyalty.",
-          "hinge_question": "Did the 1858 creation of the British Raj genuinely empower ordinary Indians, or did it simply replace unstable Company greed with more cautious direct imperial rule?",
-          "source_context": "Following the Government of India Act (August 1858), which liquidated East India Company rule and transferred sovereignty directly to the British Crown (the British Raj), Queen Victoria's proclamation was read aloud at Allahabad on 1 November 1858 to win back princely loyalty. **Hinge Question:** Did the 1858 creation of the British Raj genuinely empower ordinary Indians, or did it simply replace unstable Company greed with more cautious direct imperial rule?"
+          "source_context": "Following the Government of India Act (August 1858), which liquidated East India Company rule and transferred sovereignty directly to the British Crown (the British Raj), Queen Victoria's proclamation was read aloud at Allahabad on 1 November 1858 to win back princely loyalty.",
+          "teacher_notes": {
+            "hinge_question": "Did the 1858 creation of the British Raj genuinely empower ordinary Indians, or did it simply replace unstable Company greed with more cautious direct imperial rule?"
+          }
         }
       ],
       "tasks": [
@@ -4893,22 +4884,19 @@ export default {
         {
           "letter": "A",
           "title": "Source A (Historical Painting): Adalbert von Rößler: The Berlin Conference (1884)",
-          "context": "Contemporary engraving by Adalbert von Rößler depicting German Chancellor Otto von Bismarck presiding over the opening of the Berlin Conference in November 1884. Bismarck addresses ambassadors from fourteen European powers in front of a giant wall map of Africa. Not a single African representative was invited. **Hinge Question:** How does Source A illustrate that the partition of Africa was an act of European diplomatic power that completely excluded African voices?",
-          "hinge_question": "How does Source A illustrate that the partition of Africa was an act of European diplomatic power that completely excluded African voices?",
+          "context": "Contemporary 1884–1885 German illustration by Adalbert von Rößler showing Imperial Chancellor Otto von Bismarck inside the Radziwill Palace in Berlin addressing plenipotentiaries from fourteen Western powers gathered before a wall map of Central Africa.",
           "image": "/images/ks3_sbe/sbe_l4_s0_berlin_conference_roessler_1884.jpg",
           "caption": "Source A: Adalbert von Rößler, The Berlin Conference (Über Land und Meer / Die Gartenlaube, 1884), showing Chancellor Otto von Bismarck and Western ambassadors partitioning Africa beneath a giant wall map.",
-          "discussion_ideas": [
-            "Von Rößler’s painting depicts the 1884–1885 Berlin Conference as a civilized gathering of powdered European statesmen, diplomats, and Chancellors (chaired by Otto von Bismarck) seated comfortably in an ornate salon around a massive wall map of Africa. The illustration graphically captures imperial hubris: European powers partitioned an entire continent of over 30 million square kilometers, slicing across thousands of historic ethnic homelands, kingdoms, and language groups with arbitrary ruler-drawn straight lines. Most chillingly, not a single African leader, king, or representative was invited to attend or consult on the division of their own continent, illustrating that European imperial diplomacy viewed Africa not as human societies with sovereign rights, but as a vast, unoccupied board of raw materials, rubber, and minerals to be carved up to prevent European wars."
-          ],
           "id": "sbe_l4_src_a",
           "question": "What is the most shocking fact about who is present in this picture of the Berlin Conference, and who was left out?",
           "question_badge": "Author’s Purpose & Exclusion",
           "question_type": "Author’s Purpose & Exclusion",
           "model_answer": "The painting shows European diplomats carving up Africa around a giant map, while not a single African leader or representative was invited to have a say about their own continent.",
           "citation": "Adalbert von Rößler (1884) • Bundesarchiv, Koblenz.",
-          "source_context": "Contemporary engraving by Adalbert von Rößler depicting German Chancellor Otto von Bismarck presiding over the opening of the Berlin Conference in November 1884. Bismarck addresses ambassadors from fourteen European powers in front of a giant wall map of Africa. Not a single African representative was invited. **Hinge Question:** How does Source A illustrate that the partition of Africa was an act of European diplomatic power that completely excluded African voices?",
+          "source_context": "Contemporary 1884–1885 German illustration by Adalbert von Rößler showing Imperial Chancellor Otto von Bismarck inside the Radziwill Palace in Berlin addressing plenipotentiaries from fourteen Western powers gathered before a wall map of Central Africa.",
           "teacher_notes": {
-            "source_context": "Contemporary engraving by Adalbert von Rößler depicting German Chancellor Otto von Bismarck presiding over the opening of the Berlin Conference in November 1884. Bismarck addresses ambassadors from fourteen European powers in front of a giant wall map of Africa. Not a single African representative was invited. **Hinge Question:** How does Source A illustrate that the partition of Africa was an act of European diplomatic power that completely excluded African voices?"
+            "source_context": "Contemporary engraving by Adalbert von Rößler depicting German Chancellor Otto von Bismarck presiding over the opening of the Berlin Conference in November 1884. Bismarck addresses ambassadors from fourteen European powers in front of a giant wall map of Africa. Not a single African representative was invited. **Hinge Question:** How does Source A illustrate that the partition of Africa was an act of European diplomatic power that completely excluded African voices?",
+            "hinge_question": "How does Source A illustrate that the partition of Africa was an act of European diplomatic power that completely excluded African voices?"
           },
           "type": "visual",
           "src": "/images/ks3_sbe/sbe_l4_s0_berlin_conference_roessler_1884.jpg",
@@ -4917,23 +4905,19 @@ export default {
         {
           "letter": "B",
           "title": "Source B (Material Warfare): The Maxim Machine Gun (1884)",
-          "context": "The world’s first fully automatic recoil-operated machine gun, invented by Hiram Maxim in 1884, firing 600 rounds per minute. British colonial forces deployed Maxim guns across Africa, including General Kitchener’s army at Omdurman in 1898. **Hinge Question:** Why did Victorian imperialists celebrate the Maxim gun as a \"humanitarian\" weapon of rapid pacification, while African historians view it as an instrument of mechanized slaughter?",
-          "hinge_question": "Why did Victorian imperialists celebrate the Maxim gun as a \"humanitarian\" weapon of rapid pacification, while African historians view it as an instrument of mechanized slaughter?",
+          "context": "The world’s first fully automatic recoil-operated machine gun, invented by Hiram Maxim in 1884, firing 600 rounds per minute. British colonial forces deployed Maxim guns across Africa, including General Kitchener’s army at Omdurman in 1898.",
           "image": "/images/ks3_sbe/sbe_l4_s1_maxim_machine_gun_1895.jpg",
           "caption": "Source B: Inventor Hiram S. Maxim seated at his wheeled, belt-fed automatic Maxim machine gun ('770 Shots a Minute', Cassier’s Magazine, April 1895)—the decisive battlefield weapon of European colonial conquest in Africa.",
-          "discussion_ideas": [
-            "The Imperial Delusion of 'Humanitarian' Pacification: Victorian commanders and military apologists claimed the Maxim gun—capable of firing 600 rounds per minute—was humane because its terrifying, instantaneous firepower would quickly shatter enemy morale in a single engagement, ending rebellions with minimal British casualties and avoiding prolonged, bloody guerilla counter-insurgencies.",
-            "Mechanized Slaughter and Imperial Subjugation: For African armies (such as the Matabele in 1893 or the Mahdists at Omdurman in 1898), the Maxim gun was an instrument of industrial mass murder that neutralized human courage, tactical skill, and numerical superiority; at Omdurman, Kitchener's Maxim guns slaughtered over 10,000 Sudanese warriors in hours while suffering only 48 British deaths, proving that imperial conquest was achieved not through moral or cultural superiority, but through ruthless industrial weapons technology (as immortalized in Hilaire Belloc's couplet: 'Whatever happens, we have got / The Maxim Gun, and they have not')."
-          ],
           "id": "sbe_l4_src_b",
           "question": "How did automatic machine guns like the Maxim gun change the way Europeans conquered African kingdoms?",
           "question_badge": "Technology & Conquest",
           "question_type": "Technology & Conquest",
           "model_answer": "It gave tiny European armies terrifying firepower that could fire 600 rounds a minute, slaughtering thousands of bravely charging African warriors armed only with spears and old muskets.",
           "citation": "Imperial War Museums / Royal Armouries, Leeds.",
-          "source_context": "The world’s first fully automatic recoil-operated machine gun, invented by Hiram Maxim in 1884, firing 600 rounds per minute. British colonial forces deployed Maxim guns across Africa, including General Kitchener’s army at Omdurman in 1898. **Hinge Question:** Why did Victorian imperialists celebrate the Maxim gun as a \"humanitarian\" weapon of rapid pacification, while African historians view it as an instrument of mechanized slaughter?",
+          "source_context": "The world’s first fully automatic recoil-operated machine gun, invented by Hiram Maxim in 1884, firing 600 rounds per minute. British colonial forces deployed Maxim guns across Africa, including General Kitchener’s army at Omdurman in 1898.",
           "teacher_notes": {
-            "source_context": "The world’s first fully automatic recoil-operated machine gun, invented by Hiram Maxim in 1884, firing 600 rounds per minute. British colonial forces deployed Maxim guns across Africa, including General Kitchener’s army at Omdurman in 1898. **Hinge Question:** Why did Victorian imperialists celebrate the Maxim gun as a \"humanitarian\" weapon of rapid pacification, while African historians view it as an instrument of mechanized slaughter?"
+            "source_context": "The world’s first fully automatic recoil-operated machine gun, invented by Hiram Maxim in 1884, firing 600 rounds per minute. British colonial forces deployed Maxim guns across Africa, including General Kitchener’s army at Omdurman in 1898. **Hinge Question:** Why did Victorian imperialists celebrate the Maxim gun as a \"humanitarian\" weapon of rapid pacification, while African historians view it as an instrument of mechanized slaughter?",
+            "hinge_question": "Why did Victorian imperialists celebrate the Maxim gun as a \"humanitarian\" weapon of rapid pacification, while African historians view it as an instrument of mechanized slaughter?"
           },
           "type": "visual",
           "src": "/images/ks3_sbe/sbe_l4_s1_maxim_machine_gun_1895.jpg",
@@ -4942,22 +4926,19 @@ export default {
         {
           "letter": "C",
           "title": "Source C (Imperial Poetry): Rudyard Kipling, The White Man’s Burden (1899)",
-          "context": "Poem published in 1899 urging imperial powers to colonize and rule foreign societies as a moral obligation. **Hinge Question:** What phrase reveals Kipling’s paternalistic belief that colonized peoples were incapable of governing themselves?",
-          "hinge_question": "What phrase reveals Kipling’s paternalistic belief that colonized peoples were incapable of governing themselves?",
+          "context": "Poem published in 1899 urging imperial powers to colonize and rule foreign societies as a moral obligation.",
           "text": "“Take up the White Man’s burden—\nSend forth the best ye breed—\nGo bind your sons to exile\nTo serve your captives’ need;\n\nTo wait in heavy harness,\nOn fluttered folk and wild—\nYour new-caught, sullen peoples,\nHalf-devil and half-child.”",
           "caption": "Source C: Excerpt from Rudyard Kipling’s famous poem, published in McClure’s Magazine in February 1899.",
-          "discussion_ideas": [
-            "In 'The White Man's Burden', Rudyard Kipling infamously describes colonized non-European populations as 'half devil and half child'. This racially paternalistic phrase encapsulates the core ideological justification of late Victorian imperialism: framing non-white peoples as moral savages ('half devil') who required stern Christian discipline, and intellectual infants ('half child') who lacked the capacity for self-governance, scientific reason, or democracy. By presenting empire not as a brutal system of capitalist land-theft and resource exploitation, but as a thankless, heroic moral sacrifice ('the burden') borne by noble white men bringing roads, ports, and justice to ungrateful 'sullen peoples', Kipling provided high-minded moral cover for the violent subjugation of millions."
-          ],
           "id": "sbe_l4_src_c",
           "question": "How did Kipling use racist ideas to justify conquering foreign lands?",
           "question_badge": "Propaganda & Ideology",
           "question_type": "Propaganda & Ideology",
           "model_answer": "Kipling claimed that Europeans had a noble moral duty to govern non-white peoples, insultingly describing colonized people as child-like and uncivilized to disguise ruthless imperial robbery.",
           "citation": "Rudyard Kipling • McClure's Magazine, February 1899.",
-          "source_context": "Poem published in 1899 urging imperial powers to colonize and rule foreign societies as a moral obligation. **Hinge Question:** What phrase reveals Kipling’s paternalistic belief that colonized peoples were incapable of governing themselves?",
+          "source_context": "Poem published in 1899 urging imperial powers to colonize and rule foreign societies as a moral obligation.",
           "teacher_notes": {
-            "source_context": "Poem published in 1899 urging imperial powers to colonize and rule foreign societies as a moral obligation. **Hinge Question:** What phrase reveals Kipling’s paternalistic belief that colonized peoples were incapable of governing themselves?"
+            "source_context": "Poem published in 1899 urging imperial powers to colonize and rule foreign societies as a moral obligation. **Hinge Question:** What phrase reveals Kipling’s paternalistic belief that colonized peoples were incapable of governing themselves?",
+            "hinge_question": "What phrase reveals Kipling’s paternalistic belief that colonized peoples were incapable of governing themselves?"
           },
           "type": "written",
           "src": "",
@@ -4966,23 +4947,19 @@ export default {
         {
           "letter": "D",
           "title": "Source D (Anti-Imperial Treatise): E. D. Morel, The Black Man’s Burden (1920)",
-          "context": "British journalist E. D. Morel founded the Congo Reform Association to expose the atrocities committed by European concession companies in Africa. **Hinge Question:** According to Morel, what was the real motivation that drove European syndicates into the African interior?",
-          "hinge_question": "According to Morel, what was the real motivation that drove European syndicates into the African interior?",
+          "context": "British journalist E. D. Morel founded the Congo Reform Association to expose the atrocities committed by European concession companies in Africa.",
           "text": "“It is the Africans who carry the true burden. What has modern European imperialism brought to their ancestral lands? It was not the desire to 'fill the mouth of famine' that drove European syndicates into Africa, but the insatiable lust for rubber, ivory, palm oil, and gold. Under the mask of a 'civilising mission', the capitalist powers have dispossessed ancient peoples of their soil, forced them into slave-like labour through military terror, and disrupted tribal systems that had endured for a thousand years.”",
           "caption": "Source D: Excerpt from E. D. Morel’s landmark book challenging the moral justifications of European imperialism in Africa.",
-          "discussion_ideas": [
-            "Unvarnished Capitalist Greed and Resource Plunder: In direct response to Kipling's imperial myth-making, Morel exposed that European powers did not enter Africa out of philanthropic Christian duty, but out of ruthless corporate hunger for cheap raw materials—rubber, palm oil, ivory, copper, and cotton—to fuel booming European factories and line the pockets of metropolitan shareholders.",
-            "The Physical Destruction of Indigenous Societies: Morel emphasized that modern industrial exploitation was far more deadly to the African than ancient chattel slavery: by confiscating land, imposing forced rubber quotas under penalty of mutilation and murder (as in Leopold II's Congo Free State), and destroying traditional agricultural food systems, European syndicates tore apart African family life and inflicted demographic catastrophe."
-          ],
           "id": "sbe_l4_src_d",
           "question": "How does Morel's text directly challenge Kipling's poem about the purpose of empire?",
           "question_badge": "Corroboration & Counter-Narrative",
           "question_type": "Corroboration & Counter-Narrative",
           "model_answer": "Morel exposes the truth that Europeans invaded Africa for rubber, gold, and forced labor, proving that colonization brought misery and mass slaughter rather than civilization.",
           "citation": "E. D. Morel • National Labour Press, Manchester, 1920 / British Library.",
-          "source_context": "British journalist E. D. Morel founded the Congo Reform Association to expose the atrocities committed by European concession companies in Africa. **Hinge Question:** According to Morel, what was the real motivation that drove European syndicates into the African interior?",
+          "source_context": "British journalist E. D. Morel founded the Congo Reform Association to expose the atrocities committed by European concession companies in Africa.",
           "teacher_notes": {
-            "source_context": "British journalist E. D. Morel founded the Congo Reform Association to expose the atrocities committed by European concession companies in Africa. **Hinge Question:** According to Morel, what was the real motivation that drove European syndicates into the African interior?"
+            "source_context": "British journalist E. D. Morel founded the Congo Reform Association to expose the atrocities committed by European concession companies in Africa. **Hinge Question:** According to Morel, what was the real motivation that drove European syndicates into the African interior?",
+            "hinge_question": "According to Morel, what was the real motivation that drove European syndicates into the African interior?"
           },
           "type": "written",
           "src": "",
@@ -4991,23 +4968,19 @@ export default {
         {
           "letter": "E",
           "title": "Source E (Diplomatic Protest): King Lobengula of Matabeleland, Letter of Protest to Queen Victoria (November 1888)",
-          "context": "In 1888, agents representing diamond magnate Cecil Rhodes secured the \"Rudd Concession\" from King Lobengula of the Ndebele (Matabele) nation in southern Africa. While Lobengula believed he had merely granted limited digging rights to a few miners, Rhodes used the English text to claim all mineral rights across Zimbabwe and secure a royal charter for the British South Africa Company. Upon discovering the deception, Lobengula dispatched an urgent diplomatic petition directly to Queen Victoria. **Hinge Question:** Why did Cecil Rhodes and European imperialists rely on deceptive legal contracts alongside Maxim guns to seize African territories?",
-          "hinge_question": "Why did Cecil Rhodes and European imperialists rely on deceptive legal contracts alongside Maxim guns to seize African territories?",
+          "context": "In 1888, agents representing diamond magnate Cecil Rhodes secured the \"Rudd Concession\" from King Lobengula of the Ndebele (Matabele) nation in southern Africa. While Lobengula believed he had merely granted limited digging rights to a few miners, Rhodes used the English text to claim all mineral rights across Zimbabwe and secure a royal charter for the British South Africa Company. Upon discovering the deception, Lobengula dispatched an urgent diplomatic petition directly to Queen Victoria.",
           "text": "“Some time ago a party of men came into my country, the principal one appearing to be a man called Rudd. They asked me for a place to dig for gold, and said they would give me certain things for the right to do so. I told them to bring what they could give and I would show them what to do. A document was written and presented to me for signature. I asked what it contained, and was told that in it were my words and the words of those men. I put my hand to it. Some months afterwards, I heard from other sources that I had given by that document the right to all the minerals of my country... I now write to you that you may know that I have been deceived. Did you ever see a chameleon catch a fly? The chameleon gets behind the fly and remains motionless for some time, then he advances very slowly and gently, one step at a time. At last, when well within reach, he darts his tongue and the fly disappears. England is the chameleon and my country is that fly.”",
           "caption": "Source E: Diplomatic letter sent by King Lobengula of the Matabele nation to Queen Victoria in November 1888, protesting the fraudulent Rudd Concession orchestrated by Cecil Rhodes.",
-          "discussion_ideas": [
-            "The Fraud of Imperial Concessions: King Lobengula's letter exposes the legal deceit at the heart of the Scramble for Africa: colonial chartered companies had interpreters deliberately mistranslate terms, securing signatures from African rulers that ceded total sovereignty and mineral rights under the false pretense of granting minor prospecting permits.",
-            "African Diplomatic Agency and the Chameleon Metaphor: Lobengula's evocative comparison of Britain to a stalking chameleon capturing a helpless fly shows acute political awareness of imperial expansion tactics: advancing step by step through trade, missionaries, and treaties before deploying military force (the British South Africa Company's Maxim guns) to annihilate African independence."
-          ],
           "id": "sbe_l4_src_e",
           "question": "How does King Lobengula use the metaphor of the chameleon and the fly to explain how British imperialists took over his country?",
           "question_badge": "Author’s Purpose & Deception",
           "question_type": "Author’s Purpose & Deception",
           "model_answer": "Lobengula compares Britain to a patient chameleon that moves quietly and deceptively towards its target before suddenly striking to swallow the fly whole, showing how imperialists used false treaties to conquer his land.",
           "citation": "Letter dictated by King Lobengula of the Matabele to Queen Victoria, Bulawayo, November 1888 / National Archives of Zimbabwe.",
-          "source_context": "In 1888, agents representing diamond magnate Cecil Rhodes secured the \"Rudd Concession\" from King Lobengula of the Ndebele (Matabele) nation in southern Africa. While Lobengula believed he had merely granted limited digging rights to a few miners, Rhodes used the English text to claim all mineral rights across Zimbabwe and secure a royal charter for the British South Africa Company. Upon discovering the deception, Lobengula dispatched an urgent diplomatic petition directly to Queen Victoria. **Hinge Question:** Why did Cecil Rhodes and European imperialists rely on deceptive legal contracts alongside Maxim guns to seize African territories?",
+          "source_context": "In 1888, agents representing diamond magnate Cecil Rhodes secured the \"Rudd Concession\" from King Lobengula of the Ndebele (Matabele) nation in southern Africa. While Lobengula believed he had merely granted limited digging rights to a few miners, Rhodes used the English text to claim all mineral rights across Zimbabwe and secure a royal charter for the British South Africa Company. Upon discovering the deception, Lobengula dispatched an urgent diplomatic petition directly to Queen Victoria.",
           "teacher_notes": {
-            "source_context": "In 1888, agents representing diamond magnate Cecil Rhodes secured the \"Rudd Concession\" from King Lobengula of the Ndebele (Matabele) nation in southern Africa. While Lobengula believed he had merely granted limited digging rights to a few miners, Rhodes used the English text to claim all mineral rights across Zimbabwe and secure a royal charter for the British South Africa Company. Upon discovering the deception, Lobengula dispatched an urgent diplomatic petition directly to Queen Victoria. **Hinge Question:** Why did Cecil Rhodes and European imperialists rely on deceptive legal contracts alongside Maxim guns to seize African territories?"
+            "source_context": "In 1888, agents representing diamond magnate Cecil Rhodes secured the \"Rudd Concession\" from King Lobengula of the Ndebele (Matabele) nation in southern Africa. While Lobengula believed he had merely granted limited digging rights to a few miners, Rhodes used the English text to claim all mineral rights across Zimbabwe and secure a royal charter for the British South Africa Company. Upon discovering the deception, Lobengula dispatched an urgent diplomatic petition directly to Queen Victoria. **Hinge Question:** Why did Cecil Rhodes and European imperialists rely on deceptive legal contracts alongside Maxim guns to seize African territories?",
+            "hinge_question": "Why did Cecil Rhodes and European imperialists rely on deceptive legal contracts alongside Maxim guns to seize African territories?"
           },
           "type": "written",
           "src": "",
@@ -6154,23 +6127,19 @@ export default {
         {
           "letter": "A",
           "title": "Source A (Statistical Data): Historical Data on Real Wages & Consumption in Britain (1815–1880)",
-          "context": "Economic data frequently cited by Optimist historians like Sir John Clapham and T.S. Ashton to demonstrate that the second half of the 19th century witnessed a substantial rise in working-class material living standards. **Hinge Question:** Why do statistical increases in sugar and tea consumption not necessarily prove that workers were happier or healthier?",
-          "hinge_question": "Why do statistical increases in sugar and tea consumption not necessarily prove that workers were happier or healthier?",
+          "context": "Economic data frequently cited by Optimist historians like Sir John Clapham and T.S. Ashton to demonstrate that the second half of the 19th century witnessed a substantial rise in working-class material living standards.",
           "text": "“Index of Real Wages in Great Britain (1850 = 100):\n• 1815: 78.4\n• 1830: 84.1\n• 1850: 100.0\n• 1870: 124.6\n• 1880: 142.8\nBetween 1840 and 1880, per capita consumption of tea rose from 1.2 lbs to 4.5 lbs; sugar consumption rose from 15 lbs to 54 lbs; and railway passenger journeys exploded from 24 million to over 600 million.”",
           "caption": "Source A: Quantitative economic statistics compiled from historical indices of average British real wages and per-capita food consumption.",
-          "discussion_ideas": [
-            "Stimulants to Mask Malnutrition and Exhaustion: Economic historians point out that the dramatic rise in working-class consumption of sweet tea and sugar was not a sign of luxurious diet, but an emergency caloric survival strategy: hot, cheap sugary tea provided a quick, artificial burst of energy to sustain exhausted factory workers through 14-hour shifts when fresh meat, milk, and vegetables were unaffordable in overcrowded cities.",
-            "The 'Quality of Life' vs 'Standard of Living' Paradox: While statistical real wages showed gradual increases by the late nineteenth century, aggregate consumption tables completely ignore the devastating non-material costs of industrial urbanization: toxic air pollution, cramped back-to-back housing, rampant typhus, high infant mortality rates (where 50% of working-class children died before age five), and the loss of green countryside and community independence."
-          ],
           "id": "sbe_l5_src_a",
           "question": "Why do statistics showing workers buying more tea and sugar not prove that ordinary British people were thriving?",
           "question_badge": "Source Utility",
           "question_type": "Source Utility",
           "model_answer": "While cheap imperial sugar gave factory workers quick energy, the numbers hide the terrible pollution, dangerous twelve-hour shifts, and filthy slum housing workers suffered in daily life.",
           "citation": "British Board of Trade & Historical Statistics of the United Kingdom / Office for National Statistics Archive.",
-          "source_context": "Economic data frequently cited by Optimist historians like Sir John Clapham and T.S. Ashton to demonstrate that the second half of the 19th century witnessed a substantial rise in working-class material living standards. **Hinge Question:** Why do statistical increases in sugar and tea consumption not necessarily prove that workers were happier or healthier?",
+          "source_context": "Economic data frequently cited by Optimist historians like Sir John Clapham and T.S. Ashton to demonstrate that the second half of the 19th century witnessed a substantial rise in working-class material living standards.",
           "teacher_notes": {
-            "source_context": "Economic data frequently cited by Optimist historians like Sir John Clapham and T.S. Ashton to demonstrate that the second half of the 19th century witnessed a substantial rise in working-class material living standards. **Hinge Question:** Why do statistical increases in sugar and tea consumption not necessarily prove that workers were happier or healthier?"
+            "source_context": "Economic data frequently cited by Optimist historians like Sir John Clapham and T.S. Ashton to demonstrate that the second half of the 19th century witnessed a substantial rise in working-class material living standards. **Hinge Question:** Why do statistical increases in sugar and tea consumption not necessarily prove that workers were happier or healthier?",
+            "hinge_question": "Why do statistical increases in sugar and tea consumption not necessarily prove that workers were happier or healthier?"
           },
           "type": "written",
           "src": "",
@@ -6179,22 +6148,19 @@ export default {
         {
           "letter": "B",
           "title": "Source B (Social Investigation): Friedrich Engels, The Condition of the Working Class in England (1845)",
-          "context": "Friedrich Engels spent two years investigating Manchester textile factories for his family firm, documenting the human alienation and bodily destruction of the proletariat. **Hinge Question:** How does Engels' critique challenge the cold economic statistics presented by Optimist historians?",
-          "hinge_question": "How does Engels' critique challenge the cold economic statistics presented by Optimist historians?",
+          "context": "Friedrich Engels spent two years investigating Manchester textile factories for his family firm, documenting the human alienation and bodily destruction of the proletariat.",
           "text": "“The social war, the war of each against all, is here openly declared. People regard each other only as useful objects; each exploits the other, and the end of it is that the stronger treads the weaker under foot. And the vast majority, the poor, are left to endure the unmerciful misery of the slums, their life expectancy shortened by toxic dust, unventilated garrets, and relentless machine toil, solely to pile up gold for the capitalist.”",
           "caption": "Source B: Friedrich Engels, eyewitness study of working-class conditions in industrial Manchester, published in 1845.",
-          "discussion_ideas": [
-            "Friedrich Engels' investigation of industrial Manchester in 1845 savagely dismantles the statistical optimism of classical economists by exposing the physical horror of lived working-class reality. Engels observed that raw wage data hid the horrifying human price paid to generate Britain's imperial wealth: factory workers lived packed in damp, unpaved cellars overflowing with human excrement, breathing soot-choked air that rotted their lungs with tuberculosis. Engels coined the phrase 'social murder' to describe how the British industrial bourgeoisie knowingly placed millions of proletarians in living and working conditions so lethal that thousands perished from preventable disease and factory machinery accidents every year, proving that Victorian capitalism was built upon the ruthless physical destruction of the human body."
-          ],
           "id": "sbe_l5_src_b",
           "question": "How does Engels’ eyewitness description challenge the idea that the British Empire made everyone in Britain rich?",
           "question_badge": "Cross-Referencing & Witness",
           "question_type": "Cross-Referencing & Witness",
           "model_answer": "Engels witnessed children and families trapped in disease-ridden slums with no clean water, proving that imperial profits enriched factory owners while leaving workers in squalor.",
           "citation": "Friedrich Engels • Published Leipzig, 1845; translated London, 1887 / British Library.",
-          "source_context": "Friedrich Engels spent two years investigating Manchester textile factories for his family firm, documenting the human alienation and bodily destruction of the proletariat. **Hinge Question:** How does Engels' critique challenge the cold economic statistics presented by Optimist historians?",
+          "source_context": "Friedrich Engels spent two years investigating Manchester textile factories for his family firm, documenting the human alienation and bodily destruction of the proletariat.",
           "teacher_notes": {
-            "source_context": "Friedrich Engels spent two years investigating Manchester textile factories for his family firm, documenting the human alienation and bodily destruction of the proletariat. **Hinge Question:** How does Engels' critique challenge the cold economic statistics presented by Optimist historians?"
+            "source_context": "Friedrich Engels spent two years investigating Manchester textile factories for his family firm, documenting the human alienation and bodily destruction of the proletariat. **Hinge Question:** How does Engels' critique challenge the cold economic statistics presented by Optimist historians?",
+            "hinge_question": "How does Engels' critique challenge the cold economic statistics presented by Optimist historians?"
           },
           "type": "written",
           "src": "",
@@ -6203,22 +6169,19 @@ export default {
         {
           "letter": "C",
           "title": "Source C (Political Cartoon): Capital and Labour; or, The Two Faces of Victorian Britain (Punch, 1843)",
-          "context": "John Leech's celebrated 1843 engraving visually divided Victorian society into two distinct worlds: the gilded, lavish salon of the capitalist bourgeoisie above, and the dark, subterranean pit of working-class toil below. **Hinge Question:** How does Leech use visual contrast in Source C to challenge the Victorian narrative of universal industrial progress?",
-          "hinge_question": "How does Leech use visual contrast in Source C to challenge the Victorian narrative of universal industrial progress?",
+          "context": "John Leech's celebrated 1843 engraving visually divided Victorian society into two distinct worlds: the gilded, lavish salon of the capitalist bourgeoisie above, and the dark, subterranean pit of working-class toil below.",
           "image": "/images/ks3_sbe/sbe_l5_s2_punch_capital_and_labour_1843.jpg",
           "caption": "Source C: 'Capital and Labour' (Punch, Vol. V, July 1843, signed 'Shallabala' / R. J. Hamerton), exposing the stark vertical class divide between luxurious Victorian wealth above ground and exhausted mine labourers below.",
-          "discussion_ideas": [
-            "John Leech's celebrated Punch cartoon 'Capital and Labour' uses brutal visual antithesis to demolish the triumphant Victorian narrative that industrialization was lifting all boats. Leech splits the page into two morally conflicting worlds: the upper panel shows 'Capital'—a luxurious, sunlit drawing room where a corpulent mine-owner sits surrounded by velvet cushions, fine wines, and obedient servants, enjoying idle aristocratic decadence. The lower panel plunges into the subterranean gloom of 'Labour'—a dank, rat-infested coal mine where barefoot children and skeletal women crawl on hands and knees dragging heavy coal carts in iron chains. By juxtaposing lavish capitalist leisure with dehumanizing industrial slavery, Leech visually forces comfortable readers to confront the fundamental moral truth of the Victorian economy: that the dazzling wealth and imperial power of modern Britain was bought through the direct physical torment and subjugation of the working class."
-          ],
           "id": "sbe_l5_src_c",
           "question": "How does the cartoonist use visual contrast to show who truly benefited from Britain's wealth?",
           "question_badge": "Symbolism & Social Satire",
           "question_type": "Symbolism & Social Satire",
           "model_answer": "The cartoon splits the page in half, showing wealthy factory owners lounging in luxury on the left while starving, ragged miners and child workers sweat in the dark on the right.",
           "citation": "John Leech • Punch, or the London Charivari, Volume 5, 1843 / British Library.",
-          "source_context": "John Leech's celebrated 1843 engraving visually divided Victorian society into two distinct worlds: the gilded, lavish salon of the capitalist bourgeoisie above, and the dark, subterranean pit of working-class toil below. **Hinge Question:** How does Leech use visual contrast in Source C to challenge the Victorian narrative of universal industrial progress?",
+          "source_context": "John Leech's celebrated 1843 engraving visually divided Victorian society into two distinct worlds: the gilded, lavish salon of the capitalist bourgeoisie above, and the dark, subterranean pit of working-class toil below.",
           "teacher_notes": {
-            "source_context": "John Leech's celebrated 1843 engraving visually divided Victorian society into two distinct worlds: the gilded, lavish salon of the capitalist bourgeoisie above, and the dark, subterranean pit of working-class toil below. **Hinge Question:** How does Leech use visual contrast in Source C to challenge the Victorian narrative of universal industrial progress?"
+            "source_context": "John Leech's celebrated 1843 engraving visually divided Victorian society into two distinct worlds: the gilded, lavish salon of the capitalist bourgeoisie above, and the dark, subterranean pit of working-class toil below. **Hinge Question:** How does Leech use visual contrast in Source C to challenge the Victorian narrative of universal industrial progress?",
+            "hinge_question": "How does Leech use visual contrast in Source C to challenge the Victorian narrative of universal industrial progress?"
           },
           "type": "visual",
           "src": "/images/ks3_sbe/sbe_l5_s2_punch_capital_and_labour_1843.jpg",
@@ -6227,23 +6190,19 @@ export default {
         {
           "letter": "D",
           "title": "Source D (Economic Critique): Dadabhai Naoroji, Poverty and Un-British Rule in India (1901)",
-          "context": "Dadabhai Naoroji's pioneering 'Drain Theory' provided the scientific economic critique that underpinned the Indian National Congress, proving that British prosperity was subsidized by colonial impoverishment. **Hinge Question:** What evidence does Source D provide that Victorian British wealth was directly dependent upon the systematic underdevelopment of India?",
-          "hinge_question": "What evidence does Source D provide that Victorian British wealth was directly dependent upon the systematic underdevelopment of India?",
+          "context": "Dadabhai Naoroji's pioneering 'Drain Theory' provided the scientific economic critique that underpinned the Indian National Congress, proving that British prosperity was subsidized by colonial impoverishment.",
           "text": "“The British rule in India is an exhausting, bleeding process. The European civil and military services extract vast fortunes from Indian taxation and remit them directly to England, while British industrial tariffs prevent the development of our own indigenous industries. Between thirty and forty million pounds sterling are drained from India every year without any economic return. This continuous drain of wealth is the true, fundamental cause of the recurring famines that kill millions.”",
           "caption": "Source D: Dadabhai Naoroji, the first Indian MP elected to the British House of Commons, detailing the economic \"Drain of Wealth\".",
-          "discussion_ideas": [
-            "The Devastating 'Drain of Wealth': Naoroji—the first Indian elected to the British Parliament—statistically proved that Britain extracted over £30–40 million every year out of India through the 'Home Charges' (paying British civil service pensions, interest on guaranteed railway investments, and military expeditions overseas) without returning any economic equivalent to India, bleeding the subcontinent of vital capital that could have funded Indian industry and agriculture.",
-            "Engineered Famines and Artificial Impoverishment: Naoroji demonstrated that the horrific late Victorian famines (which killed an estimated 10 to 20 million Indians between 1876 and 1900) were not inevitable natural disasters caused by monsoon failure, but artificial economic catastrophes engineered by British free-market policies, which forced impoverished peasants to export millions of tons of wheat and rice to London even as local populations starved to death."
-          ],
           "id": "sbe_l5_src_d",
           "question": "What was Naoroji's 'Drain of Wealth' theory, and how did it criticize British rule?",
           "question_badge": "Author’s Purpose & Economics",
           "question_type": "Author’s Purpose & Economics",
           "model_answer": "Naoroji proved that Britain took millions of pounds in taxes from impoverished Indian peasants each year to pay for British pensions and armies, leaving India starved of money to feed its own people.",
           "citation": "Dadabhai Naoroji • Swan Sonnenschein & Co., London, 1901 / London School of Economics Library.",
-          "source_context": "Dadabhai Naoroji's pioneering 'Drain Theory' provided the scientific economic critique that underpinned the Indian National Congress, proving that British prosperity was subsidized by colonial impoverishment. **Hinge Question:** What evidence does Source D provide that Victorian British wealth was directly dependent upon the systematic underdevelopment of India?",
+          "source_context": "Dadabhai Naoroji's pioneering 'Drain Theory' provided the scientific economic critique that underpinned the Indian National Congress, proving that British prosperity was subsidized by colonial impoverishment.",
           "teacher_notes": {
-            "source_context": "Dadabhai Naoroji's pioneering 'Drain Theory' provided the scientific economic critique that underpinned the Indian National Congress, proving that British prosperity was subsidized by colonial impoverishment. **Hinge Question:** What evidence does Source D provide that Victorian British wealth was directly dependent upon the systematic underdevelopment of India?"
+            "source_context": "Dadabhai Naoroji's pioneering 'Drain Theory' provided the scientific economic critique that underpinned the Indian National Congress, proving that British prosperity was subsidized by colonial impoverishment. **Hinge Question:** What evidence does Source D provide that Victorian British wealth was directly dependent upon the systematic underdevelopment of India?",
+            "hinge_question": "What evidence does Source D provide that Victorian British wealth was directly dependent upon the systematic underdevelopment of India?"
           },
           "type": "written",
           "src": "",
@@ -6252,23 +6211,19 @@ export default {
         {
           "letter": "E",
           "title": "Source E (Imperial Speech): Lord Curzon, Speech on the Moral Purpose of the British Empire (1901)",
-          "context": "Lord Curzon served as Viceroy of India from 1899 to 1905, presiding over the British Raj at its zenith. Curzon firmly believed in the \"civilising mission\", arguing that British imperial governance was a selfless moral duty that brought peace, impartial courts of law, irrigation canals, and modern railway infrastructure to millions of subjects. **Hinge Question:** Why did Victorian imperial administrators like Curzon view British rule as a \"providential instrument for good\", while Indian nationalists viewed it as systematic economic exploitation?",
-          "hinge_question": "Why did Victorian imperial administrators like Curzon view British rule as a \"providential instrument for good\", while Indian nationalists viewed it as systematic economic exploitation?",
+          "context": "Lord Curzon served as Viceroy of India from 1899 to 1905, presiding over the British Raj at its zenith. Curzon firmly believed in the \"civilising mission\", arguing that British imperial governance was a selfless moral duty that brought peace, impartial courts of law, irrigation canals, and modern railway infrastructure to millions of subjects.",
           "text": "“To me the British Empire is not merely a geographic expansion or a commercial venture; it is under Providence the greatest instrument for good that the world has ever seen. We have stepped in to preserve peace where there was perpetual bloodshed, to substitute the impartial reign of law for the caprice of tyrants, to administer justice without fear or favour, and to construct railways, irrigation canals, and telegraphs that shield millions from famine. The British Empire has justified its existence by bringing order, commerce, and Christian civilization to every corner of the globe.”",
           "caption": "Source E: Address delivered by Lord Curzon, Viceroy of India, defending the moral justification and civilizing infrastructure of the British Empire, November 1901.",
-          "discussion_ideas": [
-            "The Imperialist \"Optimist\" Self-Justification: Curzon articulates the high-Victorian paternalist belief that British rule was a moral blessing: substituting uniform British law for local despotism, eliminating inter-tribal warfare, and building the technological sinews of modern life (canals, railways, and telegraphs).",
-            "Conflict with Nationalist Drain Theory: Curzon's claim that railways and canals shielded Indians from famine stood in stark contrast to the analysis of Dadabhai Naoroji and Romesh Chunder Dutt, who proved that British railways were built with guaranteed British investor profits and accelerated famine by rushing grain out of starving rural districts to export markets in Britain."
-          ],
           "id": "sbe_l5_src_e",
           "question": "How does Lord Curzon justify British control over India and other colonies in this speech?",
           "question_badge": "Imperial Ideology & Bias",
           "question_type": "Imperial Ideology & Bias",
           "model_answer": "Curzon argues that the British Empire was a moral force for good that replaced warfare and tyranny with peace, fair laws, railways, and irrigation to help colonized peoples.",
           "citation": "Lord Curzon of Kedleston, Address at the Byculla Club, Bombay, November 1901 / Speeches by Lord Curzon of Kedleston, Vol. II.",
-          "source_context": "Lord Curzon served as Viceroy of India from 1899 to 1905, presiding over the British Raj at its zenith. Curzon firmly believed in the \"civilising mission\", arguing that British imperial governance was a selfless moral duty that brought peace, impartial courts of law, irrigation canals, and modern railway infrastructure to millions of subjects. **Hinge Question:** Why did Victorian imperial administrators like Curzon view British rule as a \"providential instrument for good\", while Indian nationalists viewed it as systematic economic exploitation?",
+          "source_context": "Lord Curzon served as Viceroy of India from 1899 to 1905, presiding over the British Raj at its zenith. Curzon firmly believed in the \"civilising mission\", arguing that British imperial governance was a selfless moral duty that brought peace, impartial courts of law, irrigation canals, and modern railway infrastructure to millions of subjects.",
           "teacher_notes": {
-            "source_context": "Lord Curzon served as Viceroy of India from 1899 to 1905, presiding over the British Raj at its zenith. Curzon firmly believed in the \"civilising mission\", arguing that British imperial governance was a selfless moral duty that brought peace, impartial courts of law, irrigation canals, and modern railway infrastructure to millions of subjects. **Hinge Question:** Why did Victorian imperial administrators like Curzon view British rule as a \"providential instrument for good\", while Indian nationalists viewed it as systematic economic exploitation?"
+            "source_context": "Lord Curzon served as Viceroy of India from 1899 to 1905, presiding over the British Raj at its zenith. Curzon firmly believed in the \"civilising mission\", arguing that British imperial governance was a selfless moral duty that brought peace, impartial courts of law, irrigation canals, and modern railway infrastructure to millions of subjects. **Hinge Question:** Why did Victorian imperial administrators like Curzon view British rule as a \"providential instrument for good\", while Indian nationalists viewed it as systematic economic exploitation?",
+            "hinge_question": "Why did Victorian imperial administrators like Curzon view British rule as a \"providential instrument for good\", while Indian nationalists viewed it as systematic economic exploitation?"
           },
           "type": "written",
           "src": "",

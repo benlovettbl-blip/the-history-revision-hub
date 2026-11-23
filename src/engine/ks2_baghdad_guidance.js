@@ -1,7 +1,7 @@
 /**
  * KS2 Junior School Teacher Planning Hub & Worksheet Companion Data for:
  * Early Islamic Civilisation — Round City of Baghdad, Silk Roads & House of Wisdom (c. AD 750–1258) [ks2_early_islamic_baghdad]
- * 100% Year-Neutral Key Stage 2 Primary Calibration with Universal Dual-Scaffolding.
+ * 100% Year-Neutral Key Stage 2 Primary Calibration with Universal Single-Tier Historian Scaffolding.
  */
 
 export const KS2_BAGHDAD_WORKSHEETS_MAP = {

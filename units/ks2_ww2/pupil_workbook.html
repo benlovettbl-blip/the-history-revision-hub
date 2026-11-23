@@ -27,7 +27,7 @@
     }
 
     @page {
-      size: A4 portrait;
+      size: 210mm 297mm;
       margin: 0;
     }
 
@@ -105,6 +105,7 @@
       body { background: #ffffff; }
       .screen-toolbar { display: none !important; }
       .wb-page { margin: 0; box-shadow: none !important; }
+      .wb-page:last-of-type { page-break-after: avoid !important; break-after: avoid !important; }
     }
 
     .wb-header {
@@ -719,6 +720,8 @@
       min-height: 0;
     }
 
+    .wb-scaffold-strip { font-size: 7pt; line-height: 1.22; color: #334155; background: #fffbeb; border: 1px solid #fde68a; border-radius: 3px; padding: 0.7mm 1.6mm; margin-bottom: 0.5mm; flex-shrink: 0; }
+
     .synthesis-header {
       font-family: 'Lora', Georgia, serif;
       font-size: 8pt;
@@ -877,7 +880,7 @@
     </div>
 
     <div class="wb-footer">
-      <span>The History Revision Hub • Primary History Curriculum Series</span>
+      <span>The History Revision Hub • <span data-department-name="The History Department"><span class="school-brand-target">The History Department</span></span></span>
       <span class="wb-page-pill">Page 1 of 28</span>
     </div>
   </div>
@@ -1246,8 +1249,8 @@
       </div>
       <div class="synthesis-container">
         <p class="synthesis-header">Enquiry Answer: Why did ordinary British families carry cardboard boxes and tape their windows in September 1939?</p>
+        <div class="wb-scaffold-strip"><strong>Starter:</strong> <em>"In September 1939, ordinary British families carried cardboard boxes and taped their windows because..."</em> &bull; <strong>Word Bank:</strong> 38 million gas masks  •  Blackout curtains  •  criss-cross tape  •  Home Front</div>
         <div class="ruled-lines-box">
-          <div class="ruled-line"></div>
           <div class="ruled-line"></div>
           <div class="ruled-line"></div>
           <div class="ruled-line"></div>
@@ -1498,8 +1501,8 @@
       </div>
       <div class="synthesis-container">
         <p class="synthesis-header">Postcard Home: Write a short postcard to Mum and Dad describing your train ride, brown luggage label, and new countryside billet.</p>
+        <div class="wb-scaffold-strip"><strong>Starter:</strong> <em>"Dear Mum and Dad, I arrived safely in the countryside after a long steam train ride with my school class..."</em> &bull; <strong>Word Bank:</strong> steam train  •  luggage label  •  Billeting Officer  •  host family</div>
         <div class="ruled-lines-box">
-          <div class="ruled-line"></div>
           <div class="ruled-line"></div>
           <div class="ruled-line"></div>
           <div class="ruled-line"></div>
@@ -1750,8 +1753,8 @@
       </div>
       <div class="synthesis-container">
         <p class="synthesis-header">Enquiry Answer: Why is it important to learn about Jewish children’s everyday lives before 1933, and how were their rights taken away by 1938?</p>
+        <div class="wb-scaffold-strip"><strong>Starter:</strong> <em>"Learning about Jewish children’s everyday lives before 1933 is important because..."</em> &bull; <strong>Word Bank:</strong> Berlin and Vienna  •  exclusion signs  •  Nuremberg Laws  •  Kristallnacht</div>
         <div class="ruled-lines-box">
-          <div class="ruled-line"></div>
           <div class="ruled-line"></div>
           <div class="ruled-line"></div>
           <div class="ruled-line"></div>
@@ -2003,8 +2006,8 @@
       </div>
       <div class="synthesis-container">
         <p class="synthesis-header">Enquiry Answer: Why did the Kindertransport of 1938–1939 bring both safety and heartbreak for refugee children and their families?</p>
+        <div class="wb-scaffold-strip"><strong>Starter:</strong> <em>"The Kindertransport of 1938–1939 brought both life-saving safety and deep heartbreak because..."</em> &bull; <strong>Word Bank:</strong> 10,000 children  •  £50 guarantee  •  Vera Schaufeld  •  Liverpool Street</div>
         <div class="ruled-lines-box">
-          <div class="ruled-line"></div>
           <div class="ruled-line"></div>
           <div class="ruled-line"></div>
           <div class="ruled-line"></div>
@@ -2256,8 +2259,8 @@
       </div>
       <div class="synthesis-container">
         <p class="synthesis-header">Enquiry Answer: How did ordinary volunteers like Nicholas Winton and Trevor Chadwick rescue 669 children from Prague before war broke out?</p>
+        <div class="wb-scaffold-strip"><strong>Starter:</strong> <em>"Ordinary volunteers like Nicholas Winton and Trevor Chadwick rescued 669 children from Prague because they chose to be upstanders..."</em> &bull; <strong>Word Bank:</strong> Hotel Alcron  •  £50 guarantees  •  Trevor Chadwick  •  eight trains</div>
         <div class="ruled-lines-box">
-          <div class="ruled-line"></div>
           <div class="ruled-line"></div>
           <div class="ruled-line"></div>
           <div class="ruled-line"></div>
@@ -2507,8 +2510,8 @@
       </div>
       <div class="synthesis-container">
         <p class="synthesis-header">Enquiry Answer: How did ordinary families and emergency workers protect communities during the Blitz of 1940–1941?</p>
+        <div class="wb-scaffold-strip"><strong>Starter:</strong> <em>"During the Blitz of 1940–1941, ordinary British families and emergency volunteers protected their communities through..."</em> &bull; <strong>Word Bank:</strong> wailing siren  •  Anderson and Morrison shelters  •  ARP wardens  •  Auxiliary Firefighters</div>
         <div class="ruled-lines-box">
-          <div class="ruled-line"></div>
           <div class="ruled-line"></div>
           <div class="ruled-line"></div>
           <div class="ruled-line"></div>
@@ -2761,8 +2764,8 @@
       </div>
       <div class="synthesis-container">
         <p class="synthesis-header">Enquiry Answer: Why did the British government ration food from January 1940 and ask families to "Dig for Victory"?</p>
+        <div class="wb-scaffold-strip"><strong>Starter:</strong> <em>"The British government rationed food from January 1940 and asked families to &quot;Dig for Victory&quot; because..."</em> &bull; <strong>Word Bank:</strong> Atlantic convoys  •  U-boats  •  ration book  •  Dig for Victory</div>
         <div class="ruled-lines-box">
-          <div class="ruled-line"></div>
           <div class="ruled-line"></div>
           <div class="ruled-line"></div>
           <div class="ruled-line"></div>
@@ -3014,8 +3017,8 @@
       </div>
       <div class="synthesis-container">
         <p class="synthesis-header">Enquiry Answer: How did women on farms, in forests, and in factories keep Britain fighting during the Second World War?</p>
+        <div class="wb-scaffold-strip"><strong>Starter:</strong> <em>"Women kept Britain fighting during the Second World War by stepping into skilled, essential jobs across..."</em> &bull; <strong>Word Bank:</strong> 1941 National Service Act  •  Land Girls  •  Canary Girls  •  radar and Spitfires</div>
         <div class="ruled-lines-box">
-          <div class="ruled-line"></div>
           <div class="ruled-line"></div>
           <div class="ruled-line"></div>
           <div class="ruled-line"></div>
@@ -3266,8 +3269,8 @@
       </div>
       <div class="synthesis-container">
         <p class="synthesis-header">Enquiry Answer: How did secret codebreakers working at Bletchley Park help shorten the Second World War?</p>
+        <div class="wb-scaffold-strip"><strong>Starter:</strong> <em>"Secret codebreakers at Bletchley Park helped shorten the Second World War and save countless lives by..."</em> &bull; <strong>Word Bank:</strong> Enigma cipher  •  Alan Turing’s Bombe  •  Wrens  •  Atlantic convoys</div>
         <div class="ruled-lines-box">
-          <div class="ruled-line"></div>
           <div class="ruled-line"></div>
           <div class="ruled-line"></div>
           <div class="ruled-line"></div>
@@ -3519,8 +3522,8 @@
       </div>
       <div class="synthesis-container">
         <p class="synthesis-header">Enquiry Answer: Why was VE Day on 8 May 1945 a day of both joyful street parties and quiet sadness for British families?</p>
+        <div class="wb-scaffold-strip"><strong>Starter:</strong> <em>"VE Day on 8 May 1945 was a day of both joyful celebration and quiet sadness across Britain because..."</em> &bull; <strong>Word Bank:</strong> Winston Churchill  •  street parties  •  450,000 fallen  •  VJ Day</div>
         <div class="ruled-lines-box">
-          <div class="ruled-line"></div>
           <div class="ruled-line"></div>
           <div class="ruled-line"></div>
           <div class="ruled-line"></div>
@@ -3769,8 +3772,8 @@
       </div>
       <div class="synthesis-container">
         <p class="synthesis-header">Enquiry Answer: How did 300 child survivors begin to rebuild their lives by Lake Windermere in August 1945?</p>
+        <div class="wb-scaffold-strip"><strong>Starter:</strong> <em>"In August 1945, 300 orphaned child survivors began to rebuild their lives by Lake Windermere through..."</em> &bull; <strong>Word Bank:</strong> 10 RAF Stirling bombers  •  Calgarth Estate  •  Marie Paneth  •  ’45 Aid Society</div>
         <div class="ruled-lines-box">
-          <div class="ruled-line"></div>
           <div class="ruled-line"></div>
           <div class="ruled-line"></div>
           <div class="ruled-line"></div>

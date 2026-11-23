@@ -89,7 +89,7 @@ function getActiveKs2UnitConfig(explicitUnitId) {
       fullWorkbookPdf: '/pdfs/ks2_stone_to_iron_age_pupil_workbook.pdf',
       sowUrl: '/units/ks2_stone_to_iron_age/ks2_stone_to_iron_age_scheme_of_work.html',
       sowLabel: '6-Lesson Scheme of Work',
-      wagollAgeLabel: 'Key Stage 2 Dual-Scaffolded Model Answer',
+      wagollAgeLabel: 'Key Stage 2 Aspirational Model Answer',
       skillsPeriod: 'c. 800,000 BC–AD 43',
     };
   }
@@ -104,7 +104,7 @@ function getActiveKs2UnitConfig(explicitUnitId) {
       fullWorkbookPdf: '/pdfs/ks2_romans_pupil_workbook.pdf',
       sowUrl: '/units/ks2_romans/ks2_romans_scheme_of_work.html',
       sowLabel: '6-Lesson Scheme of Work',
-      wagollAgeLabel: 'Key Stage 2 Dual-Scaffolded Model Answer',
+      wagollAgeLabel: 'Key Stage 2 Aspirational Model Answer',
       skillsPeriod: '55 BC–AD 410',
     };
   }
@@ -119,7 +119,7 @@ function getActiveKs2UnitConfig(explicitUnitId) {
       fullWorkbookPdf: '/pdfs/ks2_anglo_saxons_vikings_pupil_workbook.pdf',
       sowUrl: '/units/ks2_anglo_saxons_vikings/ks2_anglo_saxons_vikings_scheme_of_work.html',
       sowLabel: '6-Lesson Scheme of Work',
-      wagollAgeLabel: 'Key Stage 2 Dual-Scaffolded Model Answer',
+      wagollAgeLabel: 'Key Stage 2 Aspirational Model Answer',
       skillsPeriod: 'AD 410–1066',
     };
   }
@@ -134,7 +134,7 @@ function getActiveKs2UnitConfig(explicitUnitId) {
       fullWorkbookPdf: '/pdfs/ks2_ancient_egypt_pupil_workbook.pdf',
       sowUrl: '/units/ks2_ancient_egypt/ks2_ancient_egypt_scheme_of_work.html',
       sowLabel: '6-Lesson Scheme of Work',
-      wagollAgeLabel: 'Key Stage 2 Dual-Scaffolded Model Answer',
+      wagollAgeLabel: 'Key Stage 2 Aspirational Model Answer',
       skillsPeriod: 'c. 3100–30 BC',
     };
   }
@@ -149,7 +149,7 @@ function getActiveKs2UnitConfig(explicitUnitId) {
       fullWorkbookPdf: '/pdfs/ks2_ancient_greece_pupil_workbook.pdf',
       sowUrl: '/units/ks2_ancient_greece/ks2_ancient_greece_scheme_of_work.html',
       sowLabel: '6-Lesson Scheme of Work',
-      wagollAgeLabel: 'Key Stage 2 Dual-Scaffolded Model Answer',
+      wagollAgeLabel: 'Key Stage 2 Aspirational Model Answer',
       skillsPeriod: 'c. 800–146 BC',
     };
   }
@@ -164,7 +164,7 @@ function getActiveKs2UnitConfig(explicitUnitId) {
       fullWorkbookPdf: '/pdfs/ks2_early_islamic_baghdad_pupil_workbook.pdf',
       sowUrl: '/units/ks2_early_islamic_baghdad/ks2_early_islamic_baghdad_scheme_of_work.html',
       sowLabel: '6-Lesson Scheme of Work',
-      wagollAgeLabel: 'Key Stage 2 Dual-Scaffolded Model Answer',
+      wagollAgeLabel: 'Key Stage 2 Aspirational Model Answer',
       skillsPeriod: 'c. AD 750–1258',
     };
   }
@@ -179,7 +179,7 @@ function getActiveKs2UnitConfig(explicitUnitId) {
       fullWorkbookPdf: '/pdfs/ks2_maya_civilisation_pupil_workbook.pdf',
       sowUrl: '/units/ks2_maya_civilisation/ks2_maya_civilisation_scheme_of_work.html',
       sowLabel: '6-Lesson Scheme of Work',
-      wagollAgeLabel: 'Key Stage 2 Dual-Scaffolded Model Answer',
+      wagollAgeLabel: 'Key Stage 2 Aspirational Model Answer',
       skillsPeriod: 'c. 2000 BC–AD 1500',
     };
   }
@@ -193,7 +193,7 @@ function getActiveKs2UnitConfig(explicitUnitId) {
     fullWorkbookPdf: '/pdfs/ks2_ww2_pupil_workbook.pdf',
     sowUrl: '/units/ks2_ww2/ks2_ww2_scheme_of_work.html',
     sowLabel: '11-Lesson Scheme of Work',
-    wagollAgeLabel: 'Key Stage 2 Model Answer',
+    wagollAgeLabel: 'Key Stage 2 Aspirational Model Answer',
     skillsPeriod: '1933–1945',
   };
 }

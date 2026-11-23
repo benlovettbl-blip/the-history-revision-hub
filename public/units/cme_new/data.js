@@ -463,13 +463,11 @@ const cme_new = {
           "desc": "McMahon's key letter of October 1915 setting out which lands Britain would support for Arab independence.",
           "provenance": "Letter from Sir Henry McMahon, British High Commissioner in Egypt, to Sharif Hussein of Mecca, 24 October 1915 (English typescript copy, UK government record; public domain, via Wikimedia Commons).",
           "citation": "UK Government record (McMahon–Hussein Correspondence, 1915–16).",
-          "hinge_question": "Did McMahon's wording promise Palestine to the Arabs, or did it leave Britain room to keep it?",
-          "source_context": "In 1915 Britain needed Arab help against the Ottoman Empire, which threatened the Suez Canal. McMahon promised support for Arab independence in return for a revolt, but excluded areas 'to the West of' four Syrian districts. The letter never names Palestine, so Arabs believed it was included while Britain later argued it was excluded. **Hinge Question:** Did McMahon's wording promise Palestine to the Arabs, or did it leave Britain room to keep it?",
-          "context": "In 1915 Britain needed Arab help against the Ottoman Empire. McMahon promised support for Arab independence but excluded some areas in vague terms.",
+          "source_context": "During the First World War, Britain sought Arab allies against the Ottoman Empire, which threatened the Suez Canal. Between July 1915 and March 1916, Sir Henry McMahon, British High Commissioner in Cairo, exchanged ten letters with Sharif Hussein of Mecca discussing post-war Arab rule.",
+          "context": "During the First World War, Britain sought Arab allies against the Ottoman Empire, which threatened the Suez Canal. Between July 1915 and March 1916, Sir Henry McMahon, British High Commissioner in Cairo, exchanged ten letters with Sharif Hussein of Mecca discussing post-war Arab rule.",
           "question_badge": "Perspective & Motive",
           "question_type": "Perspective & Motive",
-          "enquiry_question": "McMahon excluded land 'to the West of the districts of Damascus'. Why did this vague phrase cause a bitter row over Palestine?",
-          "model_answer": "Britain needed an Arab revolt quickly, so McMahon kept the borders vague instead of saying exactly what was excluded. Arab leaders read the letter as including Palestine in the promised Arab state, while Britain later argued Palestine lay 'west of Damascus' and was excluded. The vagueness let both sides feel the other was in the wrong.",
+          "model_answer": "Britain needed an Arab revolt quickly, so McMahon kept the borders vague instead of saying exactly what was excluded. Arab leaders read the letter as including Palestine in the promised Arab state, while Britain later argued Palestine lay 'west of Damascus' and was excluded; the vagueness let both sides feel the other was in the wrong.",
           "provenance_clues": {
             "author": "Sir Henry McMahon, British High Commissioner in Egypt, on behalf of the British government.",
             "audience": "Sharif Hussein of Mecca, leader of the planned Arab Revolt.",
@@ -477,10 +475,12 @@ const cme_new = {
             "hinge_question": "Did McMahon's wording promise Palestine to the Arabs, or did it leave Britain room to keep it?"
           },
           "teacher_notes": {
-            "source_context": "In 1915 Britain needed Arab help against the Ottoman Empire, which threatened the Suez Canal. McMahon promised support for Arab independence in return for a revolt, but excluded areas 'to the West of' four Syrian districts. The letter never names Palestine, so Arabs believed it was included while Britain later argued it was excluded. **Hinge Question:** Did McMahon's wording promise Palestine to the Arabs, or did it leave Britain room to keep it?"
+            "source_context": "In 1915 Britain needed Arab help against the Ottoman Empire, which threatened the Suez Canal. McMahon promised support for Arab independence in return for a revolt, but excluded areas 'to the West of' four Syrian districts. The letter never names Palestine, so Arabs believed it was included while Britain later argued it was excluded. **Hinge Question:** Did McMahon's wording promise Palestine to the Arabs, or did it leave Britain room to keep it?",
+            "hinge_question": "Did McMahon's wording promise Palestine to the Arabs, or did it leave Britain room to keep it?"
           },
           "text": "The districts of MERSINA and ALEXANDRETTA and portions of SYRIA lying to the West of the districts of DAMASCUS, HAMA, HOMS and ALEPPO cannot be said to be purely Arab, and should be excluded from the proposed limits and Boundaries. … Subject to the above modifications, Great Britain is prepared to recognize and support the Independance of the Arabs within the territories included in the limits and boundaries proposed by the Sherif of Mecca.",
-          "text_type": "verbatim"
+          "text_type": "verbatim",
+          "question": "McMahon excluded land 'to the West of the districts of Damascus'. Why did this vague phrase cause a bitter row over Palestine?"
         },
         {
           "id": "cme_l1_source_b",
@@ -494,12 +494,10 @@ const cme_new = {
           "desc": "Secret British-French map dividing the Ottoman Middle East into zones of control, May 1916.",
           "provenance": "Map signed by Sir Mark Sykes and François Georges-Picot, May 1916 (The National Archives, Kew).",
           "citation": "The National Archives, Kew, UK.",
-          "hinge_question": "Why did the exposure of Sykes-Picot in 1917 make Arab leaders distrust British promises?",
-          "source_context": "While McMahon was promising Arab independence, Britain and France secretly agreed how to divide the Ottoman Middle East. France would control Syria and Lebanon, Britain Mesopotamia (Iraq) and Transjordan, with Palestine under international administration. When the Russian revolutionaries published the deal in late 1917, Arab leaders saw it as a betrayal. **Hinge Question:** Why did the exposure of Sykes-Picot in 1917 make Arab leaders distrust British promises?",
-          "context": "While promising Arab independence, Britain secretly agreed with France how to divide the Ottoman Middle East between them.",
+          "source_context": "In May 1916, while the First World War raged across the Middle East, British diplomat Sir Mark Sykes and French diplomat François Georges-Picot drew up a confidential Anglo-French map dividing Ottoman Arab provinces into post-war spheres; Bolshevik revolutionaries published the secret text in November 1917.",
+          "context": "In May 1916, while the First World War raged across the Middle East, British diplomat Sir Mark Sykes and French diplomat François Georges-Picot drew up a confidential Anglo-French map dividing Ottoman Arab provinces into post-war spheres; Bolshevik revolutionaries published the secret text in November 1917.",
           "question_badge": "Perspective & Motive",
           "question_type": "Perspective & Motive",
-          "enquiry_question": "The map uses straight lines and coloured zones across Arab lands. What does this show about British and French aims in 1916?",
           "model_answer": "The straight lines show Britain and France dividing the region to suit their own interests in oil, trade routes and security, not according to where Arab communities lived. It also shows the deal clashed with the promise of Arab independence, which is why Arab leaders felt betrayed when it was exposed in 1917.",
           "provenance_clues": {
             "author": "British and French diplomats Sir Mark Sykes and François Georges-Picot.",
@@ -508,8 +506,10 @@ const cme_new = {
             "hinge_question": "Why did the exposure of Sykes-Picot in 1917 make Arab leaders distrust British promises?"
           },
           "teacher_notes": {
-            "source_context": "While McMahon was promising Arab independence, Britain and France secretly agreed how to divide the Ottoman Middle East. France would control Syria and Lebanon, Britain Mesopotamia (Iraq) and Transjordan, with Palestine under international administration. When the Russian revolutionaries published the deal in late 1917, Arab leaders saw it as a betrayal. **Hinge Question:** Why did the exposure of Sykes-Picot in 1917 make Arab leaders distrust British promises?"
-          }
+            "source_context": "While McMahon was promising Arab independence, Britain and France secretly agreed how to divide the Ottoman Middle East. France would control Syria and Lebanon, Britain Mesopotamia (Iraq) and Transjordan, with Palestine under international administration. When the Russian revolutionaries published the deal in late 1917, Arab leaders saw it as a betrayal. **Hinge Question:** Why did the exposure of Sykes-Picot in 1917 make Arab leaders distrust British promises?",
+            "hinge_question": "Why did the exposure of Sykes-Picot in 1917 make Arab leaders distrust British promises?"
+          },
+          "question": "The map uses straight lines and coloured zones across Arab lands. What does this show about British and French aims in 1916?"
         },
         {
           "id": "cme_l1_source_c",
@@ -523,12 +523,10 @@ const cme_new = {
           "desc": "The original Balfour Declaration letter of 2 November 1917.",
           "provenance": "Letter from Arthur James Balfour, Foreign Secretary, to Lord Rothschild, 2 November 1917 (British Library, London).",
           "citation": "British Library, London.",
-          "hinge_question": "Why did promising 'a national home for the Jewish people' in an Arab-majority land create a lasting conflict?",
-          "source_context": "By late 1917 Britain was under great strain in the war and hoped to win Jewish support in the USA and Russia. Lloyd George's government backed the Zionist aim of a Jewish homeland in Palestine. Yet Arabs made up over 90% of Palestine's population, and the letter describes them only as 'existing non-Jewish communities'. **Hinge Question:** Why did promising 'a national home for the Jewish people' in an Arab-majority land create a lasting conflict?",
-          "context": "In 1917 Britain wanted Jewish support for the war effort and publicly backed a Jewish 'national home' in Palestine.",
+          "source_context": "On 2 November 1917, at a critical stage of the First World War, British Foreign Secretary Arthur Balfour sent this official cabinet letter to Baron Walter Rothschild for transmission to the Zionist Federation of Great Britain and Ireland.",
+          "context": "On 2 November 1917, at a critical stage of the First World War, British Foreign Secretary Arthur Balfour sent this official cabinet letter to Baron Walter Rothschild for transmission to the Zionist Federation of Great Britain and Ireland.",
           "question_badge": "Turning Point Insight",
           "question_type": "Turning Point Insight",
-          "enquiry_question": "The letter calls Palestine's Arab majority 'existing non-Jewish communities'. What does this wording reveal about Britain's priorities in 1917?",
           "model_answer": "More than 90% of Palestine's people were Arab, yet the letter does not name them and protects only their 'civil and religious rights', not their political rights. This shows Britain's priority in 1917 was winning Jewish support for the war, and it set up a clash between two national claims to the same land.",
           "provenance_clues": {
             "author": "Arthur Balfour, British Foreign Secretary, on behalf of the War Cabinet.",
@@ -537,10 +535,12 @@ const cme_new = {
             "hinge_question": "Why did promising 'a national home for the Jewish people' in an Arab-majority land create a lasting conflict?"
           },
           "teacher_notes": {
-            "source_context": "By late 1917 Britain was under great strain in the war and hoped to win Jewish support in the USA and Russia. Lloyd George's government backed the Zionist aim of a Jewish homeland in Palestine. Yet Arabs made up over 90% of Palestine's population, and the letter describes them only as 'existing non-Jewish communities'. **Hinge Question:** Why did promising 'a national home for the Jewish people' in an Arab-majority land create a lasting conflict?"
+            "source_context": "By late 1917 Britain was under great strain in the war and hoped to win Jewish support in the USA and Russia. Lloyd George's government backed the Zionist aim of a Jewish homeland in Palestine. Yet Arabs made up over 90% of Palestine's population, and the letter describes them only as 'existing non-Jewish communities'. **Hinge Question:** Why did promising 'a national home for the Jewish people' in an Arab-majority land create a lasting conflict?",
+            "hinge_question": "Why did promising 'a national home for the Jewish people' in an Arab-majority land create a lasting conflict?"
           },
           "text": "His Majesty's Government view with favour the establishment in Palestine of a national home for the Jewish people, and will use their best endeavours to facilitate the achievement of this object, it being clearly understood that nothing shall be done which may prejudice the civil and religious rights of existing non-Jewish communities in Palestine, or the rights and political status enjoyed by Jews in any other country.",
-          "text_type": "verbatim"
+          "text_type": "verbatim",
+          "question": "The letter calls Palestine's Arab majority 'existing non-Jewish communities'. What does this wording reveal about Britain's priorities in 1917?"
         },
         {
           "id": "cme_l1_source_d",
@@ -554,12 +554,10 @@ const cme_new = {
           "desc": "Photograph of Allenby entering Jerusalem on foot after its capture from the Ottomans, December 1917.",
           "provenance": "Contemporary photograph, Jaffa Gate, Jerusalem, 11 December 1917 (public domain).",
           "citation": "Public domain photograph, 1917.",
-          "hinge_question": "How did capturing Jerusalem in 1917 lead to Britain governing Palestine under a League of Nations Mandate?",
-          "source_context": "Allenby's army captured Jerusalem from the Ottomans in December 1917, and he chose to walk into the holy city rather than ride. In 1922 the League of Nations gave Britain the Mandate for Palestine, which included the Balfour pledge to help Jewish immigration. As immigration and land purchases grew, Arab–Jewish tension led to riots in the 1920s. **Hinge Question:** How did capturing Jerusalem in 1917 lead to Britain governing Palestine under a League of Nations Mandate?",
-          "context": "Allenby's army captured Jerusalem in December 1917. In 1922 the League of Nations made Britain's control official as the Mandate for Palestine.",
+          "source_context": "In December 1917, British Imperial forces commanded by General Edmund Allenby captured Jerusalem after four centuries of Ottoman rule, entering through the Jaffa Gate; five years later, the League of Nations confirmed British administration over Mandatory Palestine.",
+          "context": "In December 1917, British Imperial forces commanded by General Edmund Allenby captured Jerusalem after four centuries of Ottoman rule, entering through the Jaffa Gate; five years later, the League of Nations confirmed British administration over Mandatory Palestine.",
           "question_badge": "Perspective & Motive",
           "question_type": "Perspective & Motive",
-          "enquiry_question": "Allenby entered Jerusalem on foot, not on horseback. What does this suggest about how Britain wanted its rule seen?",
           "model_answer": "Walking in showed respect for a city holy to Muslims, Christians and Jews, presenting Britain as a careful protector rather than a conqueror. But British control, made official by the League of Nations Mandate in 1922, also bound Britain to the Balfour pledge, so its rule soon had to manage rising Arab–Jewish tension over immigration and land.",
           "provenance_clues": {
             "author": "Photographer recording the official British entry into Jerusalem.",
@@ -568,8 +566,10 @@ const cme_new = {
             "hinge_question": "How did capturing Jerusalem in 1917 lead to Britain governing Palestine under a League of Nations Mandate?"
           },
           "teacher_notes": {
-            "source_context": "Allenby's army captured Jerusalem from the Ottomans in December 1917, and he chose to walk into the holy city rather than ride. In 1922 the League of Nations gave Britain the Mandate for Palestine, which included the Balfour pledge to help Jewish immigration. As immigration and land purchases grew, Arab–Jewish tension led to riots in the 1920s. **Hinge Question:** How did capturing Jerusalem in 1917 lead to Britain governing Palestine under a League of Nations Mandate?"
-          }
+            "source_context": "Allenby's army captured Jerusalem from the Ottomans in December 1917, and he chose to walk into the holy city rather than ride. In 1922 the League of Nations gave Britain the Mandate for Palestine, which included the Balfour pledge to help Jewish immigration. As immigration and land purchases grew, Arab–Jewish tension led to riots in the 1920s. **Hinge Question:** How did capturing Jerusalem in 1917 lead to Britain governing Palestine under a League of Nations Mandate?",
+            "hinge_question": "How did capturing Jerusalem in 1917 lead to Britain governing Palestine under a League of Nations Mandate?"
+          },
+          "question": "Allenby entered Jerusalem on foot, not on horseback. What does this suggest about how Britain wanted its rule seen?"
         },
         {
           "id": "cme_l1_source_e",
@@ -583,13 +583,11 @@ const cme_new = {
           "desc": "Paired summaries of Arab and Jewish leaders' responses to the 1939 White Paper, with a photograph of a Jewish protest march.",
           "provenance": "Photograph: Matson Photo Service, Jerusalem, 18 May 1939 (Library of Congress, matpc.18338; public domain). Extracts: summaries of each organisation's stated position, May 1939.",
           "citation": "Library of Congress, G. Eric and Edith Matson Photograph Collection.",
-          "hinge_question": "Why did a policy designed to calm both communities end up angering both?",
-          "source_context": "After crushing the 1936–39 Arab Revolt, and with war against Germany coming, Britain needed Arab goodwill and oil. The May 1939 White Paper limited Jewish immigration to 75,000 over five years, restricted land sales and promised independence within ten years. Both national movements rejected it. **Hinge Question:** Why did a policy designed to calm both communities end up angering both?",
+          "source_context": "After crushing the 1936–39 Arab Revolt, and with war against Germany coming, Britain needed Arab goodwill and oil. The May 1939 White Paper limited Jewish immigration to 75,000 over five years, restricted land sales and promised independence within ten years. Both national movements rejected it.",
           "context": "After the 1936–39 Arab Revolt, Britain's White Paper limited Jewish immigration and promised an independent, Arab-majority Palestine within ten years.",
           "question_badge": "Competing Perspectives",
           "question_type": "Competing Perspectives",
-          "enquiry_question": "Both groups rejected the same White Paper in May 1939. Why did each side see it as a betrayal?",
-          "model_answer": "The Arab Higher Committee felt betrayed because independence was delayed and conditional, and Jewish immigration would continue for five more years. The Jewish Agency felt betrayed because the limits closed Palestine just as Jews needed refuge from Nazi persecution, abandoning the Balfour promise. A compromise designed to calm both sides satisfied neither.",
+          "model_answer": "The Arab Higher Committee felt betrayed because independence was delayed and conditional, and Jewish immigration would continue for five more years. The Jewish Agency felt betrayed because the limits closed Palestine just as Jews needed refuge from Nazi persecution, abandoning the Balfour promise; A compromise designed to calm both sides satisfied neither.",
           "provenance_clues": {
             "author": "The Arab Higher Committee and the Executive of the Jewish Agency for Palestine.",
             "audience": "The British government, their own communities and world opinion.",
@@ -597,7 +595,8 @@ const cme_new = {
             "hinge_question": "Why did a policy designed to calm both communities end up angering both?"
           },
           "teacher_notes": {
-            "source_context": "After crushing the 1936–39 Arab Revolt, and with war against Germany coming, Britain needed Arab goodwill and oil. The May 1939 White Paper limited Jewish immigration to 75,000 over five years, restricted land sales and promised independence within ten years. Both national movements rejected it. **Hinge Question:** Why did a policy designed to calm both communities end up angering both?"
+            "source_context": "After crushing the 1936–39 Arab Revolt, and with war against Germany coming, Britain needed Arab goodwill and oil. The May 1939 White Paper limited Jewish immigration to 75,000 over five years, restricted land sales and promised independence within ten years. Both national movements rejected it. **Hinge Question:** Why did a policy designed to calm both communities end up angering both?",
+            "hinge_question": "Why did a policy designed to calm both communities end up angering both?"
           },
           "perspective_pair": {
             "framing_note": "Britain's 1939 White Paper was meant to calm Palestine, yet both national movements rejected it — for opposite reasons.",
@@ -619,7 +618,8 @@ const cme_new = {
               "provenance": "Summary of the statement issued by the Executive of the Jewish Agency for Palestine, Jerusalem, 17 May 1939.",
               "image": "/images/cme_white_paper_protest_jerusalem_1939.jpg"
             }
-          }
+          },
+          "question": "Both groups rejected the same White Paper in May 1939. Why did each side see it as a betrayal?"
         }
       ],
       "do_now": {
@@ -787,13 +787,11 @@ const cme_new = {
               "desc": "McMahon's key letter of October 1915 setting out which lands Britain would support for Arab independence.",
               "provenance": "Letter from Sir Henry McMahon, British High Commissioner in Egypt, to Sharif Hussein of Mecca, 24 October 1915 (English typescript copy, UK government record; public domain, via Wikimedia Commons).",
               "citation": "UK Government record (McMahon–Hussein Correspondence, 1915–16).",
-              "hinge_question": "Did McMahon's wording promise Palestine to the Arabs, or did it leave Britain room to keep it?",
-              "source_context": "In 1915 Britain needed Arab help against the Ottoman Empire, which threatened the Suez Canal. McMahon promised support for Arab independence in return for a revolt, but excluded areas 'to the West of' four Syrian districts. The letter never names Palestine, so Arabs believed it was included while Britain later argued it was excluded. **Hinge Question:** Did McMahon's wording promise Palestine to the Arabs, or did it leave Britain room to keep it?",
-              "context": "In 1915 Britain needed Arab help against the Ottoman Empire. McMahon promised support for Arab independence but excluded some areas in vague terms.",
+              "source_context": "During the First World War, Britain sought Arab allies against the Ottoman Empire, which threatened the Suez Canal. Between July 1915 and March 1916, Sir Henry McMahon, British High Commissioner in Cairo, exchanged ten letters with Sharif Hussein of Mecca discussing post-war Arab rule.",
+              "context": "During the First World War, Britain sought Arab allies against the Ottoman Empire, which threatened the Suez Canal. Between July 1915 and March 1916, Sir Henry McMahon, British High Commissioner in Cairo, exchanged ten letters with Sharif Hussein of Mecca discussing post-war Arab rule.",
               "question_badge": "Perspective & Motive",
               "question_type": "Perspective & Motive",
-              "enquiry_question": "McMahon excluded land 'to the West of the districts of Damascus'. Why did this vague phrase cause a bitter row over Palestine?",
-              "model_answer": "Britain needed an Arab revolt quickly, so McMahon kept the borders vague instead of saying exactly what was excluded. Arab leaders read the letter as including Palestine in the promised Arab state, while Britain later argued Palestine lay 'west of Damascus' and was excluded. The vagueness let both sides feel the other was in the wrong.",
+              "model_answer": "Britain needed an Arab revolt quickly, so McMahon kept the borders vague instead of saying exactly what was excluded. Arab leaders read the letter as including Palestine in the promised Arab state, while Britain later argued Palestine lay 'west of Damascus' and was excluded; the vagueness let both sides feel the other was in the wrong.",
               "provenance_clues": {
                 "author": "Sir Henry McMahon, British High Commissioner in Egypt, on behalf of the British government.",
                 "audience": "Sharif Hussein of Mecca, leader of the planned Arab Revolt.",
@@ -801,10 +799,12 @@ const cme_new = {
                 "hinge_question": "Did McMahon's wording promise Palestine to the Arabs, or did it leave Britain room to keep it?"
               },
               "teacher_notes": {
-                "source_context": "In 1915 Britain needed Arab help against the Ottoman Empire, which threatened the Suez Canal. McMahon promised support for Arab independence in return for a revolt, but excluded areas 'to the West of' four Syrian districts. The letter never names Palestine, so Arabs believed it was included while Britain later argued it was excluded. **Hinge Question:** Did McMahon's wording promise Palestine to the Arabs, or did it leave Britain room to keep it?"
+                "source_context": "In 1915 Britain needed Arab help against the Ottoman Empire, which threatened the Suez Canal. McMahon promised support for Arab independence in return for a revolt, but excluded areas 'to the West of' four Syrian districts. The letter never names Palestine, so Arabs believed it was included while Britain later argued it was excluded. **Hinge Question:** Did McMahon's wording promise Palestine to the Arabs, or did it leave Britain room to keep it?",
+                "hinge_question": "Did McMahon's wording promise Palestine to the Arabs, or did it leave Britain room to keep it?"
               },
               "text": "The districts of MERSINA and ALEXANDRETTA and portions of SYRIA lying to the West of the districts of DAMASCUS, HAMA, HOMS and ALEPPO cannot be said to be purely Arab, and should be excluded from the proposed limits and Boundaries. … Subject to the above modifications, Great Britain is prepared to recognize and support the Independance of the Arabs within the territories included in the limits and boundaries proposed by the Sherif of Mecca.",
-              "text_type": "verbatim"
+              "text_type": "verbatim",
+              "question": "McMahon excluded land 'to the West of the districts of Damascus'. Why did this vague phrase cause a bitter row over Palestine?"
             }
           ],
           "image": "/images/cme_arab_revolt_fighters_hejaz_1916.jpg",
@@ -836,12 +836,10 @@ const cme_new = {
               "desc": "Secret British-French map dividing the Ottoman Middle East into zones of control, May 1916.",
               "provenance": "Map signed by Sir Mark Sykes and François Georges-Picot, May 1916 (The National Archives, Kew).",
               "citation": "The National Archives, Kew, UK.",
-              "hinge_question": "Why did the exposure of Sykes-Picot in 1917 make Arab leaders distrust British promises?",
-              "source_context": "While McMahon was promising Arab independence, Britain and France secretly agreed how to divide the Ottoman Middle East. France would control Syria and Lebanon, Britain Mesopotamia (Iraq) and Transjordan, with Palestine under international administration. When the Russian revolutionaries published the deal in late 1917, Arab leaders saw it as a betrayal. **Hinge Question:** Why did the exposure of Sykes-Picot in 1917 make Arab leaders distrust British promises?",
-              "context": "While promising Arab independence, Britain secretly agreed with France how to divide the Ottoman Middle East between them.",
+              "source_context": "In May 1916, while the First World War raged across the Middle East, British diplomat Sir Mark Sykes and French diplomat François Georges-Picot drew up a confidential Anglo-French map dividing Ottoman Arab provinces into post-war spheres; Bolshevik revolutionaries published the secret text in November 1917.",
+              "context": "In May 1916, while the First World War raged across the Middle East, British diplomat Sir Mark Sykes and French diplomat François Georges-Picot drew up a confidential Anglo-French map dividing Ottoman Arab provinces into post-war spheres; Bolshevik revolutionaries published the secret text in November 1917.",
               "question_badge": "Perspective & Motive",
               "question_type": "Perspective & Motive",
-              "enquiry_question": "The map uses straight lines and coloured zones across Arab lands. What does this show about British and French aims in 1916?",
               "model_answer": "The straight lines show Britain and France dividing the region to suit their own interests in oil, trade routes and security, not according to where Arab communities lived. It also shows the deal clashed with the promise of Arab independence, which is why Arab leaders felt betrayed when it was exposed in 1917.",
               "provenance_clues": {
                 "author": "British and French diplomats Sir Mark Sykes and François Georges-Picot.",
@@ -850,8 +848,10 @@ const cme_new = {
                 "hinge_question": "Why did the exposure of Sykes-Picot in 1917 make Arab leaders distrust British promises?"
               },
               "teacher_notes": {
-                "source_context": "While McMahon was promising Arab independence, Britain and France secretly agreed how to divide the Ottoman Middle East. France would control Syria and Lebanon, Britain Mesopotamia (Iraq) and Transjordan, with Palestine under international administration. When the Russian revolutionaries published the deal in late 1917, Arab leaders saw it as a betrayal. **Hinge Question:** Why did the exposure of Sykes-Picot in 1917 make Arab leaders distrust British promises?"
-              }
+                "source_context": "While McMahon was promising Arab independence, Britain and France secretly agreed how to divide the Ottoman Middle East. France would control Syria and Lebanon, Britain Mesopotamia (Iraq) and Transjordan, with Palestine under international administration. When the Russian revolutionaries published the deal in late 1917, Arab leaders saw it as a betrayal. **Hinge Question:** Why did the exposure of Sykes-Picot in 1917 make Arab leaders distrust British promises?",
+                "hinge_question": "Why did the exposure of Sykes-Picot in 1917 make Arab leaders distrust British promises?"
+              },
+              "question": "The map uses straight lines and coloured zones across Arab lands. What does this show about British and French aims in 1916?"
             }
           ],
           "image": "/images/cme_middle_east_mandates_1921_map.jpg",
@@ -883,12 +883,10 @@ const cme_new = {
               "desc": "The original Balfour Declaration letter of 2 November 1917.",
               "provenance": "Letter from Arthur James Balfour, Foreign Secretary, to Lord Rothschild, 2 November 1917 (British Library, London).",
               "citation": "British Library, London.",
-              "hinge_question": "Why did promising 'a national home for the Jewish people' in an Arab-majority land create a lasting conflict?",
-              "source_context": "By late 1917 Britain was under great strain in the war and hoped to win Jewish support in the USA and Russia. Lloyd George's government backed the Zionist aim of a Jewish homeland in Palestine. Yet Arabs made up over 90% of Palestine's population, and the letter describes them only as 'existing non-Jewish communities'. **Hinge Question:** Why did promising 'a national home for the Jewish people' in an Arab-majority land create a lasting conflict?",
-              "context": "In 1917 Britain wanted Jewish support for the war effort and publicly backed a Jewish 'national home' in Palestine.",
+              "source_context": "On 2 November 1917, at a critical stage of the First World War, British Foreign Secretary Arthur Balfour sent this official cabinet letter to Baron Walter Rothschild for transmission to the Zionist Federation of Great Britain and Ireland.",
+              "context": "On 2 November 1917, at a critical stage of the First World War, British Foreign Secretary Arthur Balfour sent this official cabinet letter to Baron Walter Rothschild for transmission to the Zionist Federation of Great Britain and Ireland.",
               "question_badge": "Turning Point Insight",
               "question_type": "Turning Point Insight",
-              "enquiry_question": "The letter calls Palestine's Arab majority 'existing non-Jewish communities'. What does this wording reveal about Britain's priorities in 1917?",
               "model_answer": "More than 90% of Palestine's people were Arab, yet the letter does not name them and protects only their 'civil and religious rights', not their political rights. This shows Britain's priority in 1917 was winning Jewish support for the war, and it set up a clash between two national claims to the same land.",
               "provenance_clues": {
                 "author": "Arthur Balfour, British Foreign Secretary, on behalf of the War Cabinet.",
@@ -897,10 +895,12 @@ const cme_new = {
                 "hinge_question": "Why did promising 'a national home for the Jewish people' in an Arab-majority land create a lasting conflict?"
               },
               "teacher_notes": {
-                "source_context": "By late 1917 Britain was under great strain in the war and hoped to win Jewish support in the USA and Russia. Lloyd George's government backed the Zionist aim of a Jewish homeland in Palestine. Yet Arabs made up over 90% of Palestine's population, and the letter describes them only as 'existing non-Jewish communities'. **Hinge Question:** Why did promising 'a national home for the Jewish people' in an Arab-majority land create a lasting conflict?"
+                "source_context": "By late 1917 Britain was under great strain in the war and hoped to win Jewish support in the USA and Russia. Lloyd George's government backed the Zionist aim of a Jewish homeland in Palestine. Yet Arabs made up over 90% of Palestine's population, and the letter describes them only as 'existing non-Jewish communities'. **Hinge Question:** Why did promising 'a national home for the Jewish people' in an Arab-majority land create a lasting conflict?",
+                "hinge_question": "Why did promising 'a national home for the Jewish people' in an Arab-majority land create a lasting conflict?"
               },
               "text": "His Majesty's Government view with favour the establishment in Palestine of a national home for the Jewish people, and will use their best endeavours to facilitate the achievement of this object, it being clearly understood that nothing shall be done which may prejudice the civil and religious rights of existing non-Jewish communities in Palestine, or the rights and political status enjoyed by Jews in any other country.",
-              "text_type": "verbatim"
+              "text_type": "verbatim",
+              "question": "The letter calls Palestine's Arab majority 'existing non-Jewish communities'. What does this wording reveal about Britain's priorities in 1917?"
             }
           ],
           "image": "/images/cme_plate_weizmann_faisal_1918.jpg",
@@ -932,12 +932,10 @@ const cme_new = {
               "desc": "Photograph of Allenby entering Jerusalem on foot after its capture from the Ottomans, December 1917.",
               "provenance": "Contemporary photograph, Jaffa Gate, Jerusalem, 11 December 1917 (public domain).",
               "citation": "Public domain photograph, 1917.",
-              "hinge_question": "How did capturing Jerusalem in 1917 lead to Britain governing Palestine under a League of Nations Mandate?",
-              "source_context": "Allenby's army captured Jerusalem from the Ottomans in December 1917, and he chose to walk into the holy city rather than ride. In 1922 the League of Nations gave Britain the Mandate for Palestine, which included the Balfour pledge to help Jewish immigration. As immigration and land purchases grew, Arab–Jewish tension led to riots in the 1920s. **Hinge Question:** How did capturing Jerusalem in 1917 lead to Britain governing Palestine under a League of Nations Mandate?",
-              "context": "Allenby's army captured Jerusalem in December 1917. In 1922 the League of Nations made Britain's control official as the Mandate for Palestine.",
+              "source_context": "In December 1917, British Imperial forces commanded by General Edmund Allenby captured Jerusalem after four centuries of Ottoman rule, entering through the Jaffa Gate; five years later, the League of Nations confirmed British administration over Mandatory Palestine.",
+              "context": "In December 1917, British Imperial forces commanded by General Edmund Allenby captured Jerusalem after four centuries of Ottoman rule, entering through the Jaffa Gate; five years later, the League of Nations confirmed British administration over Mandatory Palestine.",
               "question_badge": "Perspective & Motive",
               "question_type": "Perspective & Motive",
-              "enquiry_question": "Allenby entered Jerusalem on foot, not on horseback. What does this suggest about how Britain wanted its rule seen?",
               "model_answer": "Walking in showed respect for a city holy to Muslims, Christians and Jews, presenting Britain as a careful protector rather than a conqueror. But British control, made official by the League of Nations Mandate in 1922, also bound Britain to the Balfour pledge, so its rule soon had to manage rising Arab–Jewish tension over immigration and land.",
               "provenance_clues": {
                 "author": "Photographer recording the official British entry into Jerusalem.",
@@ -946,8 +944,10 @@ const cme_new = {
                 "hinge_question": "How did capturing Jerusalem in 1917 lead to Britain governing Palestine under a League of Nations Mandate?"
               },
               "teacher_notes": {
-                "source_context": "Allenby's army captured Jerusalem from the Ottomans in December 1917, and he chose to walk into the holy city rather than ride. In 1922 the League of Nations gave Britain the Mandate for Palestine, which included the Balfour pledge to help Jewish immigration. As immigration and land purchases grew, Arab–Jewish tension led to riots in the 1920s. **Hinge Question:** How did capturing Jerusalem in 1917 lead to Britain governing Palestine under a League of Nations Mandate?"
-              }
+                "source_context": "Allenby's army captured Jerusalem from the Ottomans in December 1917, and he chose to walk into the holy city rather than ride. In 1922 the League of Nations gave Britain the Mandate for Palestine, which included the Balfour pledge to help Jewish immigration. As immigration and land purchases grew, Arab–Jewish tension led to riots in the 1920s. **Hinge Question:** How did capturing Jerusalem in 1917 lead to Britain governing Palestine under a League of Nations Mandate?",
+                "hinge_question": "How did capturing Jerusalem in 1917 lead to Britain governing Palestine under a League of Nations Mandate?"
+              },
+              "question": "Allenby entered Jerusalem on foot, not on horseback. What does this suggest about how Britain wanted its rule seen?"
             }
           ],
           "image": "/images/cme_gcse_map_1922_british_mandate.svg",
@@ -979,13 +979,11 @@ const cme_new = {
               "desc": "Paired summaries of Arab and Jewish leaders' responses to the 1939 White Paper, with a photograph of a Jewish protest march.",
               "provenance": "Photograph: Matson Photo Service, Jerusalem, 18 May 1939 (Library of Congress, matpc.18338; public domain). Extracts: summaries of each organisation's stated position, May 1939.",
               "citation": "Library of Congress, G. Eric and Edith Matson Photograph Collection.",
-              "hinge_question": "Why did a policy designed to calm both communities end up angering both?",
-              "source_context": "After crushing the 1936–39 Arab Revolt, and with war against Germany coming, Britain needed Arab goodwill and oil. The May 1939 White Paper limited Jewish immigration to 75,000 over five years, restricted land sales and promised independence within ten years. Both national movements rejected it. **Hinge Question:** Why did a policy designed to calm both communities end up angering both?",
+              "source_context": "After crushing the 1936–39 Arab Revolt, and with war against Germany coming, Britain needed Arab goodwill and oil. The May 1939 White Paper limited Jewish immigration to 75,000 over five years, restricted land sales and promised independence within ten years. Both national movements rejected it.",
               "context": "After the 1936–39 Arab Revolt, Britain's White Paper limited Jewish immigration and promised an independent, Arab-majority Palestine within ten years.",
               "question_badge": "Competing Perspectives",
               "question_type": "Competing Perspectives",
-              "enquiry_question": "Both groups rejected the same White Paper in May 1939. Why did each side see it as a betrayal?",
-              "model_answer": "The Arab Higher Committee felt betrayed because independence was delayed and conditional, and Jewish immigration would continue for five more years. The Jewish Agency felt betrayed because the limits closed Palestine just as Jews needed refuge from Nazi persecution, abandoning the Balfour promise. A compromise designed to calm both sides satisfied neither.",
+              "model_answer": "The Arab Higher Committee felt betrayed because independence was delayed and conditional, and Jewish immigration would continue for five more years. The Jewish Agency felt betrayed because the limits closed Palestine just as Jews needed refuge from Nazi persecution, abandoning the Balfour promise; A compromise designed to calm both sides satisfied neither.",
               "provenance_clues": {
                 "author": "The Arab Higher Committee and the Executive of the Jewish Agency for Palestine.",
                 "audience": "The British government, their own communities and world opinion.",
@@ -993,7 +991,8 @@ const cme_new = {
                 "hinge_question": "Why did a policy designed to calm both communities end up angering both?"
               },
               "teacher_notes": {
-                "source_context": "After crushing the 1936–39 Arab Revolt, and with war against Germany coming, Britain needed Arab goodwill and oil. The May 1939 White Paper limited Jewish immigration to 75,000 over five years, restricted land sales and promised independence within ten years. Both national movements rejected it. **Hinge Question:** Why did a policy designed to calm both communities end up angering both?"
+                "source_context": "After crushing the 1936–39 Arab Revolt, and with war against Germany coming, Britain needed Arab goodwill and oil. The May 1939 White Paper limited Jewish immigration to 75,000 over five years, restricted land sales and promised independence within ten years. Both national movements rejected it. **Hinge Question:** Why did a policy designed to calm both communities end up angering both?",
+                "hinge_question": "Why did a policy designed to calm both communities end up angering both?"
               },
               "perspective_pair": {
                 "framing_note": "Britain's 1939 White Paper was meant to calm Palestine, yet both national movements rejected it — for opposite reasons.",
@@ -1015,7 +1014,8 @@ const cme_new = {
                   "provenance": "Summary of the statement issued by the Executive of the Jewish Agency for Palestine, Jerusalem, 17 May 1939.",
                   "image": "/images/cme_white_paper_protest_jerusalem_1939.jpg"
                 }
-              }
+              },
+              "question": "Both groups rejected the same White Paper in May 1939. Why did each side see it as a betrayal?"
             }
           ],
           "image": "/images/cme_plate_arab_revolt_rebels_1938.jpg",
@@ -1704,13 +1704,11 @@ const cme_new = {
           "desc": "British Army photograph of Holocaust survivors in the Bergen-Belsen camp hospital, 1945.",
           "provenance": "British Army Film and Photographic Unit, Bergen-Belsen, 1945 (Imperial War Museums; Crown copyright expired).",
           "citation": "Imperial War Museums, London.",
-          "hinge_question": "Why did Britain keep the 1,500-a-month limit despite the survivors' plight?",
-          "source_context": "After 1945 about 250,000 Jewish Holocaust survivors were stranded in displaced persons (DP) camps in Europe, and many refused to return to communities where their families had been murdered. Backed by the Jewish Agency, US President Truman urged Britain to admit 100,000 Jews to Palestine at once. Britain kept the 1939 limit of 1,500 a month, fearing an Arab uprising. **Hinge Question:** Why did Britain keep the 1,500-a-month limit despite the survivors' plight?",
+          "source_context": "After 1945 about 250,000 Jewish Holocaust survivors were stranded in displaced persons (DP) camps in Europe, and many refused to return to communities where their families had been murdered. Backed by the Jewish Agency, US President Truman urged Britain to admit 100,000 Jews to Palestine at once. Britain kept the 1939 limit of 1,500 a month, fearing an Arab uprising.",
           "context": "After 1945 about 250,000 Jewish survivors were stranded in displaced persons camps in Europe, and many wanted to go to Palestine.",
           "question_badge": "Human Impact",
           "question_type": "Human Impact",
-          "enquiry_question": "This woman and child survived Bergen-Belsen. Why did survivors like them put Britain under pressure over Palestine in 1945?",
-          "model_answer": "Many survivors had no homes or families to return to and wanted to start again in Palestine. Images like this built huge sympathy, especially in the USA, so Truman pressed Britain to admit 100,000 Jews. Britain, worried about Arab opposition and its oil and bases, kept the 1,500-a-month limit, which made its policy look heartless.",
+          "model_answer": "Many survivors had no homes or families to return to and wanted to start again in Palestine. Images like this built huge sympathy, especially in the USA, so Truman pressed Britain to admit 100,000 Jews; Britain, worried about Arab opposition and its oil and bases, kept the 1,500-a-month limit, which made its policy look heartless.",
           "provenance_clues": {
             "author": "British Army Film and Photographic Unit photographer.",
             "audience": "The British government and public, and later the world.",
@@ -1718,8 +1716,10 @@ const cme_new = {
             "hinge_question": "Why did Britain keep the 1,500-a-month limit despite the survivors' plight?"
           },
           "teacher_notes": {
-            "source_context": "After 1945 about 250,000 Jewish Holocaust survivors were stranded in displaced persons (DP) camps in Europe, and many refused to return to communities where their families had been murdered. Backed by the Jewish Agency, US President Truman urged Britain to admit 100,000 Jews to Palestine at once. Britain kept the 1939 limit of 1,500 a month, fearing an Arab uprising. **Hinge Question:** Why did Britain keep the 1,500-a-month limit despite the survivors' plight?"
-          }
+            "source_context": "After 1945 about 250,000 Jewish Holocaust survivors were stranded in displaced persons (DP) camps in Europe, and many refused to return to communities where their families had been murdered. Backed by the Jewish Agency, US President Truman urged Britain to admit 100,000 Jews to Palestine at once. Britain kept the 1939 limit of 1,500 a month, fearing an Arab uprising. **Hinge Question:** Why did Britain keep the 1,500-a-month limit despite the survivors' plight?",
+            "hinge_question": "Why did Britain keep the 1,500-a-month limit despite the survivors' plight?"
+          },
+          "question": "This woman and child survived Bergen-Belsen. Why did survivors like them put Britain under pressure over Palestine in 1945?"
         },
         {
           "id": "cme_l2_source_b",
@@ -1733,13 +1733,11 @@ const cme_new = {
           "desc": "Photograph of Jewish leaders detained by the British at Latrun, 1946, with paired summaries of the two sides' justifications.",
           "provenance": "Photograph, Latrun detention camp, 1946 (public domain; published in a photographic history of Israel, via Wikimedia Commons). Extracts: summaries of each side's stated position.",
           "citation": "Public domain photograph, 1946.",
-          "hinge_question": "Why did British arrests in 1946 increase rather than reduce Jewish resistance?",
-          "source_context": "In October 1945 the Haganah, Irgun and Lehi formed the United Resistance Movement and sabotaged railways, bridges and radar stations used against immigrant ships. On 29 June 1946 Britain launched Operation Agatha, occupying the Jewish Agency's offices and detaining about 2,700 people. The arrests deepened Jewish hostility to British rule. **Hinge Question:** Why did British arrests in 1946 increase rather than reduce Jewish resistance?",
+          "source_context": "In October 1945 the Haganah, Irgun and Lehi formed the United Resistance Movement and sabotaged railways, bridges and radar stations used against immigrant ships. On 29 June 1946 Britain launched Operation Agatha, occupying the Jewish Agency's offices and detaining about 2,700 people. The arrests deepened Jewish hostility to British rule.",
           "context": "In 1945–46 Jewish underground groups joined forces to attack British rule; Britain hit back with mass arrests.",
           "question_badge": "Competing Perspectives",
           "question_type": "Competing Perspectives",
-          "enquiry_question": "The photo shows Jewish leaders held behind wire at Latrun in 1946. Why did each side believe force was justified?",
-          "model_answer": "The underground groups believed Britain had broken its promises by keeping immigration limits while survivors waited, so sabotage was the only way to force change. Britain believed it had to restore order and protect its rule, so it arrested leaders in Operation Agatha. The arrests did not end the campaign; they hardened Jewish opposition to British rule.",
+          "model_answer": "The underground groups believed Britain had broken its promises by keeping immigration limits while survivors waited, so sabotage was the only way to force change. Britain believed it had to restore order and protect its rule, so it arrested leaders in Operation Agatha; the arrests did not end the campaign; they hardened Jewish opposition to British rule.",
           "provenance_clues": {
             "author": "Unknown photographer; extracts summarise the United Resistance Movement and the British Mandate government.",
             "audience": "The Jewish community in Palestine, the British public and world opinion.",
@@ -1747,7 +1745,8 @@ const cme_new = {
             "hinge_question": "Why did British arrests in 1946 increase rather than reduce Jewish resistance?"
           },
           "teacher_notes": {
-            "source_context": "In October 1945 the Haganah, Irgun and Lehi formed the United Resistance Movement and sabotaged railways, bridges and radar stations used against immigrant ships. On 29 June 1946 Britain launched Operation Agatha, occupying the Jewish Agency's offices and detaining about 2,700 people. The arrests deepened Jewish hostility to British rule. **Hinge Question:** Why did British arrests in 1946 increase rather than reduce Jewish resistance?"
+            "source_context": "In October 1945 the Haganah, Irgun and Lehi formed the United Resistance Movement and sabotaged railways, bridges and radar stations used against immigrant ships. On 29 June 1946 Britain launched Operation Agatha, occupying the Jewish Agency's offices and detaining about 2,700 people. The arrests deepened Jewish hostility to British rule. **Hinge Question:** Why did British arrests in 1946 increase rather than reduce Jewish resistance?",
+            "hinge_question": "Why did British arrests in 1946 increase rather than reduce Jewish resistance?"
           },
           "perspective_pair": {
             "framing_note": "The insurgency and Britain's response show how each side justified using force in 1945–46.",
@@ -1767,7 +1766,8 @@ const cme_new = {
               "text_type": "summary",
               "provenance": "Summary of the British authorities' stated justification for Operation Agatha, 29 June 1946."
             }
-          }
+          },
+          "question": "The photo shows Jewish leaders held behind wire at Latrun in 1946. Why did each side believe force was justified?"
         },
         {
           "id": "cme_l2_source_c",
@@ -1781,12 +1781,10 @@ const cme_new = {
           "desc": "Photograph of the King David Hotel ruins after the Irgun bombing, July 1946.",
           "provenance": "Photograph taken in Jerusalem after the bombing, 22 July 1946 (public domain).",
           "citation": "Public domain photograph, 1946.",
-          "hinge_question": "How did the King David Hotel bombing increase pressure on Britain to leave Palestine?",
-          "source_context": "On 22 July 1946 the Irgun smuggled explosives in milk churns into the King David Hotel, the centre of British government in Palestine. The blast killed 91 people, including British officials, Arab civil servants and Jewish staff. The Haganah left the United Resistance Movement after the attack, but the Irgun and Lehi carried on. **Hinge Question:** How did the King David Hotel bombing increase pressure on Britain to leave Palestine?",
+          "source_context": "On 22 July 1946 the Irgun smuggled explosives in milk churns into the King David Hotel, the centre of British government in Palestine. The blast killed 91 people, including British officials, Arab civil servants and Jewish staff. The Haganah left the United Resistance Movement after the attack, but the Irgun and Lehi carried on.",
           "context": "The Irgun bombed the British headquarters in the King David Hotel, killing 91 people.",
           "question_badge": "Human Impact",
           "question_type": "Human Impact",
-          "enquiry_question": "A whole wing of the hotel has collapsed. Why did this attack change British and Jewish attitudes in 1946?",
           "model_answer": "The bombing destroyed the heart of British government in Palestine and killed 91 people of all communities, shocking the British public and showing the rising cost of staying. Mainstream Jewish leaders were also shocked by the civilian deaths, so the Haganah left the United Resistance Movement, splitting the Jewish underground.",
           "provenance_clues": {
             "author": "Photographer in Jerusalem recording the aftermath.",
@@ -1795,8 +1793,10 @@ const cme_new = {
             "hinge_question": "How did the King David Hotel bombing increase pressure on Britain to leave Palestine?"
           },
           "teacher_notes": {
-            "source_context": "On 22 July 1946 the Irgun smuggled explosives in milk churns into the King David Hotel, the centre of British government in Palestine. The blast killed 91 people, including British officials, Arab civil servants and Jewish staff. The Haganah left the United Resistance Movement after the attack, but the Irgun and Lehi carried on. **Hinge Question:** How did the King David Hotel bombing increase pressure on Britain to leave Palestine?"
-          }
+            "source_context": "On 22 July 1946 the Irgun smuggled explosives in milk churns into the King David Hotel, the centre of British government in Palestine. The blast killed 91 people, including British officials, Arab civil servants and Jewish staff. The Haganah left the United Resistance Movement after the attack, but the Irgun and Lehi carried on. **Hinge Question:** How did the King David Hotel bombing increase pressure on Britain to leave Palestine?",
+            "hinge_question": "How did the King David Hotel bombing increase pressure on Britain to leave Palestine?"
+          },
+          "question": "A whole wing of the hotel has collapsed. Why did this attack change British and Jewish attitudes in 1946?"
         },
         {
           "id": "cme_l2_source_d",
@@ -1810,13 +1810,11 @@ const cme_new = {
           "desc": "Photograph of the two British sergeants hanged by the Irgun near Netanya, July 1947.",
           "provenance": "Photograph taken near Netanya when the bodies were found, 31 July 1947; published in the British press (public domain).",
           "citation": "Public domain photograph, 1947.",
-          "hinge_question": "Why did the Sergeants Affair turn British public opinion decisively against staying in Palestine?",
-          "source_context": "After Britain sentenced three Irgun fighters to death, the Irgun kidnapped Sergeants Clifford Martin and Mervyn Paice. When the executions went ahead in July 1947, the Irgun hanged both men and booby-trapped their bodies. The killings caused outrage and anti-Jewish riots in British cities, and calls to bring the troops home grew louder. **Hinge Question:** Why did the Sergeants Affair turn British public opinion decisively against staying in Palestine?",
+          "source_context": "After Britain sentenced three Irgun fighters to death, the Irgun kidnapped Sergeants Clifford Martin and Mervyn Paice. When the executions went ahead in July 1947, the Irgun hanged both men and booby-trapped their bodies. The killings caused outrage and anti-Jewish riots in British cities, and calls to bring the troops home grew louder.",
           "context": "In July 1947 the Irgun hanged two British sergeants in revenge for the execution of three Irgun fighters.",
           "question_badge": "Turning Point Insight",
           "question_type": "Turning Point Insight",
-          "enquiry_question": "Pictures of the two hanged sergeants appeared in British newspapers. Why did this event make many Britons want to leave Palestine?",
-          "model_answer": "The killing of two young sergeants in revenge for executions horrified the British public and led to anti-Jewish riots in Liverpool, Manchester and London. Newspapers and MPs asked why British soldiers should keep dying in someone else's conflict. With Britain nearly bankrupt after the war, it strengthened the case for ending the Mandate.",
+          "model_answer": "The killing of two young sergeants in revenge for executions horrified the British public and led to anti-Jewish riots in Liverpool, Manchester and London. Newspapers and MPs asked why British soldiers should keep dying in someone else's conflict; with Britain nearly bankrupt after the war, it strengthened the case for ending the Mandate.",
           "provenance_clues": {
             "author": "Photographer present when the bodies were found.",
             "audience": "The British public, through national newspapers.",
@@ -1824,8 +1822,10 @@ const cme_new = {
             "hinge_question": "Why did the Sergeants Affair turn British public opinion decisively against staying in Palestine?"
           },
           "teacher_notes": {
-            "source_context": "After Britain sentenced three Irgun fighters to death, the Irgun kidnapped Sergeants Clifford Martin and Mervyn Paice. When the executions went ahead in July 1947, the Irgun hanged both men and booby-trapped their bodies. The killings caused outrage and anti-Jewish riots in British cities, and calls to bring the troops home grew louder. **Hinge Question:** Why did the Sergeants Affair turn British public opinion decisively against staying in Palestine?"
-          }
+            "source_context": "After Britain sentenced three Irgun fighters to death, the Irgun kidnapped Sergeants Clifford Martin and Mervyn Paice. When the executions went ahead in July 1947, the Irgun hanged both men and booby-trapped their bodies. The killings caused outrage and anti-Jewish riots in British cities, and calls to bring the troops home grew louder. **Hinge Question:** Why did the Sergeants Affair turn British public opinion decisively against staying in Palestine?",
+            "hinge_question": "Why did the Sergeants Affair turn British public opinion decisively against staying in Palestine?"
+          },
+          "question": "Pictures of the two hanged sergeants appeared in British newspapers. Why did this event make many Britons want to leave Palestine?"
         },
         {
           "id": "cme_l2_source_e",
@@ -1839,13 +1839,11 @@ const cme_new = {
           "desc": "Photograph of the Exodus 1947 at Haifa, with paired summaries of Jewish and Arab responses to the UN partition vote.",
           "provenance": "Photograph, Haifa harbour, July 1947 (United States Holocaust Memorial Museum collection). Extracts: summaries of each organisation's stated position, November 1947.",
           "citation": "United States Holocaust Memorial Museum.",
-          "hinge_question": "Why did the UN vote of 29 November 1947 lead immediately to civil war in Palestine?",
-          "source_context": "Britain's decision to send the Exodus passengers back to Germany caused international outrage. Britain had already handed the Palestine problem to the UN, whose committee (UNSCOP) recommended partition. On 29 November 1947 the UN General Assembly passed Resolution 181, dividing Palestine into a Jewish state, an Arab state and an international zone around Jerusalem. **Hinge Question:** Why did the UN vote of 29 November 1947 lead immediately to civil war in Palestine?",
+          "source_context": "Britain's decision to send the Exodus passengers back to Germany caused international outrage. Britain had already handed the Palestine problem to the UN, whose committee (UNSCOP) recommended partition. On 29 November 1947 the UN General Assembly passed Resolution 181, dividing Palestine into a Jewish state, an Arab state and an international zone around Jerusalem.",
           "context": "The Exodus affair in July 1947 won sympathy for a Jewish state. In November 1947 the UN voted to partition Palestine.",
           "question_badge": "Competing Perspectives",
           "question_type": "Competing Perspectives",
-          "enquiry_question": "The UN gave about 55% of Palestine to a Jewish state. Why did Jewish and Arab leaders react so differently?",
-          "model_answer": "Jewish Agency leaders accepted Resolution 181 reluctantly — even though Jerusalem was placed under international control, much of their ~55–56% share of Mandate Palestine was Negev desert, and Revisionists like the Irgun rejected partition — because it offered internationally recognised statehood able to admit Holocaust survivors like those on the Exodus. By contrast, the Arab Higher Committee rejected giving over half the land to roughly one-third of the population, noting that Palestinian Arabs formed the two-thirds majority and lived across and owned much of the land inside the proposed Jewish state. With Britain refusing to enforce a plan rejected by Arab leaders, inter-communal fighting broke out within days and escalated into civil war.",
+          "model_answer": "Jewish Agency leaders accepted Resolution 181 reluctantly — even though Jerusalem was placed under international control, much of their ~55–56% share of Mandate Palestine was Negev desert, and Revisionists like the Irgun rejected partition — because it offered internationally recognised statehood able to admit Holocaust survivors like those on the Exodus. By contrast, the Arab Higher Committee rejected giving over half the land to roughly one-third of the population, noting that Palestinian Arabs formed the two-thirds majority and lived across and owned much of the land inside the proposed Jewish state; with Britain refusing to enforce a plan rejected by Arab leaders, inter-communal fighting broke out within days and escalated into civil war.",
           "provenance_clues": {
             "author": "Photographer at Haifa; extracts summarise the Jewish Agency and the Arab Higher Committee.",
             "audience": "World opinion, the United Nations and each community in Palestine.",
@@ -1853,7 +1851,8 @@ const cme_new = {
             "hinge_question": "Why did the UN vote of 29 November 1947 lead immediately to civil war in Palestine?"
           },
           "teacher_notes": {
-            "source_context": "Britain's decision to send the Exodus passengers back to Germany caused international outrage. Britain had already handed the Palestine problem to the UN, whose committee (UNSCOP) recommended partition. On 29 November 1947 the UN General Assembly passed Resolution 181, dividing Palestine into a Jewish state, an Arab state and an international zone around Jerusalem. **Hinge Question:** Why did the UN vote of 29 November 1947 lead immediately to civil war in Palestine?"
+            "source_context": "Britain's decision to send the Exodus passengers back to Germany caused international outrage. Britain had already handed the Palestine problem to the UN, whose committee (UNSCOP) recommended partition. On 29 November 1947 the UN General Assembly passed Resolution 181, dividing Palestine into a Jewish state, an Arab state and an international zone around Jerusalem. **Hinge Question:** Why did the UN vote of 29 November 1947 lead immediately to civil war in Palestine?",
+            "hinge_question": "Why did the UN vote of 29 November 1947 lead immediately to civil war in Palestine?"
           },
           "perspective_pair": {
             "framing_note": "The Exodus affair helped win sympathy for a Jewish state; four months later the UN vote produced opposite reactions.",
@@ -1873,7 +1872,8 @@ const cme_new = {
               "text_type": "summary",
               "provenance": "Summary of the Arab Higher Committee's stated position at the UN and in Palestine, autumn 1947."
             }
-          }
+          },
+          "question": "The UN gave about 55% of Palestine to a Jewish state. Why did Jewish and Arab leaders react so differently?"
         }
       ],
       "vocab": [
@@ -2180,13 +2180,11 @@ const cme_new = {
               "desc": "British Army photograph of Holocaust survivors in the Bergen-Belsen camp hospital, 1945.",
               "provenance": "British Army Film and Photographic Unit, Bergen-Belsen, 1945 (Imperial War Museums; Crown copyright expired).",
               "citation": "Imperial War Museums, London.",
-              "hinge_question": "Why did Britain keep the 1,500-a-month limit despite the survivors' plight?",
-              "source_context": "After 1945 about 250,000 Jewish Holocaust survivors were stranded in displaced persons (DP) camps in Europe, and many refused to return to communities where their families had been murdered. Backed by the Jewish Agency, US President Truman urged Britain to admit 100,000 Jews to Palestine at once. Britain kept the 1939 limit of 1,500 a month, fearing an Arab uprising. **Hinge Question:** Why did Britain keep the 1,500-a-month limit despite the survivors' plight?",
+              "source_context": "After 1945 about 250,000 Jewish Holocaust survivors were stranded in displaced persons (DP) camps in Europe, and many refused to return to communities where their families had been murdered. Backed by the Jewish Agency, US President Truman urged Britain to admit 100,000 Jews to Palestine at once. Britain kept the 1939 limit of 1,500 a month, fearing an Arab uprising.",
               "context": "After 1945 about 250,000 Jewish survivors were stranded in displaced persons camps in Europe, and many wanted to go to Palestine.",
               "question_badge": "Human Impact",
               "question_type": "Human Impact",
-              "enquiry_question": "This woman and child survived Bergen-Belsen. Why did survivors like them put Britain under pressure over Palestine in 1945?",
-              "model_answer": "Many survivors had no homes or families to return to and wanted to start again in Palestine. Images like this built huge sympathy, especially in the USA, so Truman pressed Britain to admit 100,000 Jews. Britain, worried about Arab opposition and its oil and bases, kept the 1,500-a-month limit, which made its policy look heartless.",
+              "model_answer": "Many survivors had no homes or families to return to and wanted to start again in Palestine. Images like this built huge sympathy, especially in the USA, so Truman pressed Britain to admit 100,000 Jews; Britain, worried about Arab opposition and its oil and bases, kept the 1,500-a-month limit, which made its policy look heartless.",
               "provenance_clues": {
                 "author": "British Army Film and Photographic Unit photographer.",
                 "audience": "The British government and public, and later the world.",
@@ -2194,8 +2192,10 @@ const cme_new = {
                 "hinge_question": "Why did Britain keep the 1,500-a-month limit despite the survivors' plight?"
               },
               "teacher_notes": {
-                "source_context": "After 1945 about 250,000 Jewish Holocaust survivors were stranded in displaced persons (DP) camps in Europe, and many refused to return to communities where their families had been murdered. Backed by the Jewish Agency, US President Truman urged Britain to admit 100,000 Jews to Palestine at once. Britain kept the 1939 limit of 1,500 a month, fearing an Arab uprising. **Hinge Question:** Why did Britain keep the 1,500-a-month limit despite the survivors' plight?"
-              }
+                "source_context": "After 1945 about 250,000 Jewish Holocaust survivors were stranded in displaced persons (DP) camps in Europe, and many refused to return to communities where their families had been murdered. Backed by the Jewish Agency, US President Truman urged Britain to admit 100,000 Jews to Palestine at once. Britain kept the 1939 limit of 1,500 a month, fearing an Arab uprising. **Hinge Question:** Why did Britain keep the 1,500-a-month limit despite the survivors' plight?",
+                "hinge_question": "Why did Britain keep the 1,500-a-month limit despite the survivors' plight?"
+              },
+              "question": "This woman and child survived Bergen-Belsen. Why did survivors like them put Britain under pressure over Palestine in 1945?"
             }
           ],
           "stage_hook_map": {
@@ -2305,13 +2305,11 @@ const cme_new = {
               "desc": "Photograph of Jewish leaders detained by the British at Latrun, 1946, with paired summaries of the two sides' justifications.",
               "provenance": "Photograph, Latrun detention camp, 1946 (public domain; published in a photographic history of Israel, via Wikimedia Commons). Extracts: summaries of each side's stated position.",
               "citation": "Public domain photograph, 1946.",
-              "hinge_question": "Why did British arrests in 1946 increase rather than reduce Jewish resistance?",
-              "source_context": "In October 1945 the Haganah, Irgun and Lehi formed the United Resistance Movement and sabotaged railways, bridges and radar stations used against immigrant ships. On 29 June 1946 Britain launched Operation Agatha, occupying the Jewish Agency's offices and detaining about 2,700 people. The arrests deepened Jewish hostility to British rule. **Hinge Question:** Why did British arrests in 1946 increase rather than reduce Jewish resistance?",
+              "source_context": "In October 1945 the Haganah, Irgun and Lehi formed the United Resistance Movement and sabotaged railways, bridges and radar stations used against immigrant ships. On 29 June 1946 Britain launched Operation Agatha, occupying the Jewish Agency's offices and detaining about 2,700 people. The arrests deepened Jewish hostility to British rule.",
               "context": "In 1945–46 Jewish underground groups joined forces to attack British rule; Britain hit back with mass arrests.",
               "question_badge": "Competing Perspectives",
               "question_type": "Competing Perspectives",
-              "enquiry_question": "The photo shows Jewish leaders held behind wire at Latrun in 1946. Why did each side believe force was justified?",
-              "model_answer": "The underground groups believed Britain had broken its promises by keeping immigration limits while survivors waited, so sabotage was the only way to force change. Britain believed it had to restore order and protect its rule, so it arrested leaders in Operation Agatha. The arrests did not end the campaign; they hardened Jewish opposition to British rule.",
+              "model_answer": "The underground groups believed Britain had broken its promises by keeping immigration limits while survivors waited, so sabotage was the only way to force change. Britain believed it had to restore order and protect its rule, so it arrested leaders in Operation Agatha; the arrests did not end the campaign; they hardened Jewish opposition to British rule.",
               "provenance_clues": {
                 "author": "Unknown photographer; extracts summarise the United Resistance Movement and the British Mandate government.",
                 "audience": "The Jewish community in Palestine, the British public and world opinion.",
@@ -2319,7 +2317,8 @@ const cme_new = {
                 "hinge_question": "Why did British arrests in 1946 increase rather than reduce Jewish resistance?"
               },
               "teacher_notes": {
-                "source_context": "In October 1945 the Haganah, Irgun and Lehi formed the United Resistance Movement and sabotaged railways, bridges and radar stations used against immigrant ships. On 29 June 1946 Britain launched Operation Agatha, occupying the Jewish Agency's offices and detaining about 2,700 people. The arrests deepened Jewish hostility to British rule. **Hinge Question:** Why did British arrests in 1946 increase rather than reduce Jewish resistance?"
+                "source_context": "In October 1945 the Haganah, Irgun and Lehi formed the United Resistance Movement and sabotaged railways, bridges and radar stations used against immigrant ships. On 29 June 1946 Britain launched Operation Agatha, occupying the Jewish Agency's offices and detaining about 2,700 people. The arrests deepened Jewish hostility to British rule. **Hinge Question:** Why did British arrests in 1946 increase rather than reduce Jewish resistance?",
+                "hinge_question": "Why did British arrests in 1946 increase rather than reduce Jewish resistance?"
               },
               "perspective_pair": {
                 "framing_note": "The insurgency and Britain's response show how each side justified using force in 1945–46.",
@@ -2339,7 +2338,8 @@ const cme_new = {
                   "text_type": "summary",
                   "provenance": "Summary of the British authorities' stated justification for Operation Agatha, 29 June 1946."
                 }
-              }
+              },
+              "question": "The photo shows Jewish leaders held behind wire at Latrun in 1946. Why did each side believe force was justified?"
             }
           ],
           "isReversed": false,
@@ -2371,12 +2371,10 @@ const cme_new = {
               "desc": "Photograph of the King David Hotel ruins after the Irgun bombing, July 1946.",
               "provenance": "Photograph taken in Jerusalem after the bombing, 22 July 1946 (public domain).",
               "citation": "Public domain photograph, 1946.",
-              "hinge_question": "How did the King David Hotel bombing increase pressure on Britain to leave Palestine?",
-              "source_context": "On 22 July 1946 the Irgun smuggled explosives in milk churns into the King David Hotel, the centre of British government in Palestine. The blast killed 91 people, including British officials, Arab civil servants and Jewish staff. The Haganah left the United Resistance Movement after the attack, but the Irgun and Lehi carried on. **Hinge Question:** How did the King David Hotel bombing increase pressure on Britain to leave Palestine?",
+              "source_context": "On 22 July 1946 the Irgun smuggled explosives in milk churns into the King David Hotel, the centre of British government in Palestine. The blast killed 91 people, including British officials, Arab civil servants and Jewish staff. The Haganah left the United Resistance Movement after the attack, but the Irgun and Lehi carried on.",
               "context": "The Irgun bombed the British headquarters in the King David Hotel, killing 91 people.",
               "question_badge": "Human Impact",
               "question_type": "Human Impact",
-              "enquiry_question": "A whole wing of the hotel has collapsed. Why did this attack change British and Jewish attitudes in 1946?",
               "model_answer": "The bombing destroyed the heart of British government in Palestine and killed 91 people of all communities, shocking the British public and showing the rising cost of staying. Mainstream Jewish leaders were also shocked by the civilian deaths, so the Haganah left the United Resistance Movement, splitting the Jewish underground.",
               "provenance_clues": {
                 "author": "Photographer in Jerusalem recording the aftermath.",
@@ -2385,8 +2383,10 @@ const cme_new = {
                 "hinge_question": "How did the King David Hotel bombing increase pressure on Britain to leave Palestine?"
               },
               "teacher_notes": {
-                "source_context": "On 22 July 1946 the Irgun smuggled explosives in milk churns into the King David Hotel, the centre of British government in Palestine. The blast killed 91 people, including British officials, Arab civil servants and Jewish staff. The Haganah left the United Resistance Movement after the attack, but the Irgun and Lehi carried on. **Hinge Question:** How did the King David Hotel bombing increase pressure on Britain to leave Palestine?"
-              }
+                "source_context": "On 22 July 1946 the Irgun smuggled explosives in milk churns into the King David Hotel, the centre of British government in Palestine. The blast killed 91 people, including British officials, Arab civil servants and Jewish staff. The Haganah left the United Resistance Movement after the attack, but the Irgun and Lehi carried on. **Hinge Question:** How did the King David Hotel bombing increase pressure on Britain to leave Palestine?",
+                "hinge_question": "How did the King David Hotel bombing increase pressure on Britain to leave Palestine?"
+              },
+              "question": "A whole wing of the hotel has collapsed. Why did this attack change British and Jewish attitudes in 1946?"
             }
           ],
           "image": "/images/cme_plate_king_david_etzel_1946.jpg",
@@ -2418,13 +2418,11 @@ const cme_new = {
               "desc": "Photograph of the two British sergeants hanged by the Irgun near Netanya, July 1947.",
               "provenance": "Photograph taken near Netanya when the bodies were found, 31 July 1947; published in the British press (public domain).",
               "citation": "Public domain photograph, 1947.",
-              "hinge_question": "Why did the Sergeants Affair turn British public opinion decisively against staying in Palestine?",
-              "source_context": "After Britain sentenced three Irgun fighters to death, the Irgun kidnapped Sergeants Clifford Martin and Mervyn Paice. When the executions went ahead in July 1947, the Irgun hanged both men and booby-trapped their bodies. The killings caused outrage and anti-Jewish riots in British cities, and calls to bring the troops home grew louder. **Hinge Question:** Why did the Sergeants Affair turn British public opinion decisively against staying in Palestine?",
+              "source_context": "After Britain sentenced three Irgun fighters to death, the Irgun kidnapped Sergeants Clifford Martin and Mervyn Paice. When the executions went ahead in July 1947, the Irgun hanged both men and booby-trapped their bodies. The killings caused outrage and anti-Jewish riots in British cities, and calls to bring the troops home grew louder.",
               "context": "In July 1947 the Irgun hanged two British sergeants in revenge for the execution of three Irgun fighters.",
               "question_badge": "Turning Point Insight",
               "question_type": "Turning Point Insight",
-              "enquiry_question": "Pictures of the two hanged sergeants appeared in British newspapers. Why did this event make many Britons want to leave Palestine?",
-              "model_answer": "The killing of two young sergeants in revenge for executions horrified the British public and led to anti-Jewish riots in Liverpool, Manchester and London. Newspapers and MPs asked why British soldiers should keep dying in someone else's conflict. With Britain nearly bankrupt after the war, it strengthened the case for ending the Mandate.",
+              "model_answer": "The killing of two young sergeants in revenge for executions horrified the British public and led to anti-Jewish riots in Liverpool, Manchester and London. Newspapers and MPs asked why British soldiers should keep dying in someone else's conflict; with Britain nearly bankrupt after the war, it strengthened the case for ending the Mandate.",
               "provenance_clues": {
                 "author": "Photographer present when the bodies were found.",
                 "audience": "The British public, through national newspapers.",
@@ -2432,8 +2430,10 @@ const cme_new = {
                 "hinge_question": "Why did the Sergeants Affair turn British public opinion decisively against staying in Palestine?"
               },
               "teacher_notes": {
-                "source_context": "After Britain sentenced three Irgun fighters to death, the Irgun kidnapped Sergeants Clifford Martin and Mervyn Paice. When the executions went ahead in July 1947, the Irgun hanged both men and booby-trapped their bodies. The killings caused outrage and anti-Jewish riots in British cities, and calls to bring the troops home grew louder. **Hinge Question:** Why did the Sergeants Affair turn British public opinion decisively against staying in Palestine?"
-              }
+                "source_context": "After Britain sentenced three Irgun fighters to death, the Irgun kidnapped Sergeants Clifford Martin and Mervyn Paice. When the executions went ahead in July 1947, the Irgun hanged both men and booby-trapped their bodies. The killings caused outrage and anti-Jewish riots in British cities, and calls to bring the troops home grew louder. **Hinge Question:** Why did the Sergeants Affair turn British public opinion decisively against staying in Palestine?",
+                "hinge_question": "Why did the Sergeants Affair turn British public opinion decisively against staying in Palestine?"
+              },
+              "question": "Pictures of the two hanged sergeants appeared in British newspapers. Why did this event make many Britons want to leave Palestine?"
             }
           ],
           "isReversed": true,
@@ -2465,13 +2465,11 @@ const cme_new = {
               "desc": "Photograph of the Exodus 1947 at Haifa, with paired summaries of Jewish and Arab responses to the UN partition vote.",
               "provenance": "Photograph, Haifa harbour, July 1947 (United States Holocaust Memorial Museum collection). Extracts: summaries of each organisation's stated position, November 1947.",
               "citation": "United States Holocaust Memorial Museum.",
-              "hinge_question": "Why did the UN vote of 29 November 1947 lead immediately to civil war in Palestine?",
-              "source_context": "Britain's decision to send the Exodus passengers back to Germany caused international outrage. Britain had already handed the Palestine problem to the UN, whose committee (UNSCOP) recommended partition. On 29 November 1947 the UN General Assembly passed Resolution 181, dividing Palestine into a Jewish state, an Arab state and an international zone around Jerusalem. **Hinge Question:** Why did the UN vote of 29 November 1947 lead immediately to civil war in Palestine?",
+              "source_context": "Britain's decision to send the Exodus passengers back to Germany caused international outrage. Britain had already handed the Palestine problem to the UN, whose committee (UNSCOP) recommended partition. On 29 November 1947 the UN General Assembly passed Resolution 181, dividing Palestine into a Jewish state, an Arab state and an international zone around Jerusalem.",
               "context": "The Exodus affair in July 1947 won sympathy for a Jewish state. In November 1947 the UN voted to partition Palestine.",
               "question_badge": "Competing Perspectives",
               "question_type": "Competing Perspectives",
-              "enquiry_question": "The UN gave about 55% of Palestine to a Jewish state. Why did Jewish and Arab leaders react so differently?",
-              "model_answer": "Jewish Agency leaders accepted Resolution 181 reluctantly — even though Jerusalem was placed under international control, much of their ~55–56% share of Mandate Palestine was Negev desert, and Revisionists like the Irgun rejected partition — because it offered internationally recognised statehood able to admit Holocaust survivors like those on the Exodus. By contrast, the Arab Higher Committee rejected giving over half the land to roughly one-third of the population, noting that Palestinian Arabs formed the two-thirds majority and lived across and owned much of the land inside the proposed Jewish state. With Britain refusing to enforce a plan rejected by Arab leaders, inter-communal fighting broke out within days and escalated into civil war.",
+              "model_answer": "Jewish Agency leaders accepted Resolution 181 reluctantly — even though Jerusalem was placed under international control, much of their ~55–56% share of Mandate Palestine was Negev desert, and Revisionists like the Irgun rejected partition — because it offered internationally recognised statehood able to admit Holocaust survivors like those on the Exodus. By contrast, the Arab Higher Committee rejected giving over half the land to roughly one-third of the population, noting that Palestinian Arabs formed the two-thirds majority and lived across and owned much of the land inside the proposed Jewish state; with Britain refusing to enforce a plan rejected by Arab leaders, inter-communal fighting broke out within days and escalated into civil war.",
               "provenance_clues": {
                 "author": "Photographer at Haifa; extracts summarise the Jewish Agency and the Arab Higher Committee.",
                 "audience": "World opinion, the United Nations and each community in Palestine.",
@@ -2479,7 +2477,8 @@ const cme_new = {
                 "hinge_question": "Why did the UN vote of 29 November 1947 lead immediately to civil war in Palestine?"
               },
               "teacher_notes": {
-                "source_context": "Britain's decision to send the Exodus passengers back to Germany caused international outrage. Britain had already handed the Palestine problem to the UN, whose committee (UNSCOP) recommended partition. On 29 November 1947 the UN General Assembly passed Resolution 181, dividing Palestine into a Jewish state, an Arab state and an international zone around Jerusalem. **Hinge Question:** Why did the UN vote of 29 November 1947 lead immediately to civil war in Palestine?"
+                "source_context": "Britain's decision to send the Exodus passengers back to Germany caused international outrage. Britain had already handed the Palestine problem to the UN, whose committee (UNSCOP) recommended partition. On 29 November 1947 the UN General Assembly passed Resolution 181, dividing Palestine into a Jewish state, an Arab state and an international zone around Jerusalem. **Hinge Question:** Why did the UN vote of 29 November 1947 lead immediately to civil war in Palestine?",
+                "hinge_question": "Why did the UN vote of 29 November 1947 lead immediately to civil war in Palestine?"
               },
               "perspective_pair": {
                 "framing_note": "The Exodus affair helped win sympathy for a Jewish state; four months later the UN vote produced opposite reactions.",
@@ -2499,7 +2498,8 @@ const cme_new = {
                   "text_type": "summary",
                   "provenance": "Summary of the Arab Higher Committee's stated position at the UN and in Palestine, autumn 1947."
                 }
-              }
+              },
+              "question": "The UN gave about 55% of Palestine to a Jewish state. Why did Jewish and Arab leaders react so differently?"
             }
           ],
           "image": "/images/cme_new/kt1/cme_l1_b4_unscop_jerusalem_1947.jpg",
@@ -3852,13 +3852,11 @@ const cme_new = {
               "desc": "Map of the Arab invasion of May–June 1948 with paired extracts from the Israeli Declaration of Independence and the Arab League statement.",
               "provenance": "Map: United States Military Academy (West Point), Department of History atlas (public domain). Extracts: Declaration of the Establishment of the State of Israel, 14 May 1948 (verbatim); Arab League statement to the UN, 15 May 1948 (summary).",
               "citation": "United States Military Academy, Department of History.",
-              "hinge_question": "Why did the end of the British Mandate on 14 May 1948 turn a civil war into a regional war?",
-              "source_context": "On 14 May 1948, as the British Mandate ended, David Ben-Gurion declared the State of Israel. At dawn on 15 May, forces from Egypt, Transjordan, Syria, Lebanon and Iraq crossed into Palestine. The fighting that had begun as a civil war in November 1947 became a regional war. **Hinge Question:** Why did the end of the British Mandate on 14 May 1948 turn a civil war into a regional war?",
+              "source_context": "On 14 May 1948, as the British Mandate ended, David Ben-Gurion declared the State of Israel. At dawn on 15 May, forces from Egypt, Transjordan, Syria, Lebanon and Iraq crossed into Palestine. The fighting that had begun as a civil war in November 1947 became a regional war.",
               "context": "Israel declared independence on 14 May 1948. The next day the armies of five Arab states entered Palestine.",
               "question_badge": "Competing Perspectives",
               "question_type": "Competing Perspectives",
-              "enquiry_question": "The map shows five Arab armies entering on 15 May 1948. How did each side justify what happened that week?",
-              "model_answer": "Israel's leaders based statehood on the Jewish people's historic ties and UN Resolution 181, and saw the entry of five Arab states the next morning as an attack aimed at destroying the new state at birth, leaving Israelis fighting for survival. By contrast, the Arab League argued that British withdrawal left no lawful authority and framed intervention as preventing an unjust partition and halting Palestinian refugee flight after Plan Dalet and Deir Yassin. Because each side saw its own actions as lawful defence and the other as the aggressor, the civil war widened immediately into a regional war.",
+              "model_answer": "Israel's leaders based statehood on the Jewish people's historic ties and UN Resolution 181, and saw the entry of five Arab states the next morning as an attack aimed at destroying the new state at birth, leaving Israelis fighting for survival. By contrast, the Arab League argued that British withdrawal left no lawful authority and framed intervention as preventing an unjust partition and halting Palestinian refugee flight after Plan Dalet and Deir Yassin; because each side saw its own actions as lawful defence and the other as the aggressor, the civil war widened immediately into a regional war.",
               "provenance_clues": {
                 "author": "Map: US Military Academy historians. Extracts: Israel's People's Council and the Arab League.",
                 "audience": "The United Nations and world opinion.",
@@ -3866,7 +3864,8 @@ const cme_new = {
                 "hinge_question": "Why did the end of the British Mandate on 14 May 1948 turn a civil war into a regional war?"
               },
               "teacher_notes": {
-                "source_context": "On 14 May 1948, as the British Mandate ended, David Ben-Gurion declared the State of Israel. At dawn on 15 May, forces from Egypt, Transjordan, Syria, Lebanon and Iraq crossed into Palestine. The fighting that had begun as a civil war in November 1947 became a regional war. **Hinge Question:** Why did the end of the British Mandate on 14 May 1948 turn a civil war into a regional war?"
+                "source_context": "On 14 May 1948, as the British Mandate ended, David Ben-Gurion declared the State of Israel. At dawn on 15 May, forces from Egypt, Transjordan, Syria, Lebanon and Iraq crossed into Palestine. The fighting that had begun as a civil war in November 1947 became a regional war. **Hinge Question:** Why did the end of the British Mandate on 14 May 1948 turn a civil war into a regional war?",
+                "hinge_question": "Why did the end of the British Mandate on 14 May 1948 turn a civil war into a regional war?"
               },
               "perspective_pair": {
                 "framing_note": "On consecutive days in May 1948, each side explained its actions to the world.",
@@ -3886,7 +3885,8 @@ const cme_new = {
                   "text_type": "summary",
                   "provenance": "Summary of the cablegram from the Secretary-General of the Arab League to the UN Secretary-General, 15 May 1948."
                 }
-              }
+              },
+              "question": "The map shows five Arab armies entering on 15 May 1948. How did each side justify what happened that week?"
             }
           ],
           "content": "<span class=\"para-ref\">[1.1]</span> On **14 May 1948**, hours before the British Mandate officially expired at midnight, **David Ben-Gurion** stood beneath Theodor Herzl’s portrait in the Tel Aviv Museum to proclaim the independent State of Israel. Asserting the Jewish people’s right to self-determination, Ben-Gurion won immediate diplomatic recognition from both US President Harry S. Truman and the Soviet Union.\n\n<span class=\"para-ref\">[1.2]</span> Statehood ignited immediate regional war. At dawn on **15 May 1948**, regular military forces from five **Arab League** nations—Egypt, Transjordan, Syria, Lebanon, and Iraq—crossed into Palestine without a unified military command. Facing acute shortages of heavy artillery, tanks, and combat aircraft, outnumbered Israeli defenders mounted a desperate multi-front defence while Jordan’s British-trained Arab Legion captured East Jerusalem’s Old City."
@@ -3910,13 +3910,11 @@ const cme_new = {
               "desc": "Photograph of a Czech-built Avia S-199 fighter in Israeli service, June 1948.",
               "provenance": "Israeli Air Force photograph, June 1948 (public domain in Israel; via Wikimedia Commons).",
               "citation": "Israeli Air Force, 1948 (public domain).",
-              "hinge_question": "Why did Israel use the June 1948 truce more effectively than the Arab states?",
-              "source_context": "Israel began the war short of artillery, tanks and aircraft, and a UN arms embargo blocked most supplies. With Soviet approval, Czechoslovakia sold Israel rifles, machine guns and Avia S-199 fighters, flown in from late May 1948 and during the four-week truce arranged by Count Folke Bernadotte in June. Ben-Gurion also united the militias into the IDF. **Hinge Question:** Why did Israel use the June 1948 truce more effectively than the Arab states?",
+              "source_context": "Israel began the war short of artillery, tanks and aircraft, and a UN arms embargo blocked most supplies. With Soviet approval, Czechoslovakia sold Israel rifles, machine guns and Avia S-199 fighters, flown in from late May 1948 and during the four-week truce arranged by Count Folke Bernadotte in June. Ben-Gurion also united the militias into the IDF.",
               "context": "Short of heavy weapons, Israel secretly bought arms from Czechoslovakia and used the first UN truce in June 1948 to rearm.",
               "question_badge": "Turning Point Insight",
               "question_type": "Turning Point Insight",
-              "enquiry_question": "This fighter plane was built in Czechoslovakia and flown by Israel in June 1948. Why did arms like this change the war?",
-              "model_answer": "Israel started the war short of heavy weapons, and a UN arms embargo blocked most supplies. Czech aircraft, rifles and machine guns, bought with Soviet approval and arriving from late May and through the truce, let the newly formed IDF rearm faster than the divided Arab armies. When fighting resumed in July, Israel seized the initiative.",
+              "model_answer": "Israel started the war short of heavy weapons, and a UN arms embargo blocked most supplies. Czech aircraft, rifles and machine guns, bought with Soviet approval and arriving from late May and through the truce, let the newly formed IDF rearm faster than the divided Arab armies; when fighting resumed in July, Israel seized the initiative.",
               "provenance_clues": {
                 "author": "Israeli Air Force photographer.",
                 "audience": "Israeli military records.",
@@ -3924,8 +3922,10 @@ const cme_new = {
                 "hinge_question": "Why did Israel use the June 1948 truce more effectively than the Arab states?"
               },
               "teacher_notes": {
-                "source_context": "Israel began the war short of artillery, tanks and aircraft, and a UN arms embargo blocked most supplies. With Soviet approval, Czechoslovakia sold Israel rifles, machine guns and Avia S-199 fighters, flown in from late May 1948 and during the four-week truce arranged by Count Folke Bernadotte in June. Ben-Gurion also united the militias into the IDF. **Hinge Question:** Why did Israel use the June 1948 truce more effectively than the Arab states?"
-              }
+                "source_context": "Israel began the war short of artillery, tanks and aircraft, and a UN arms embargo blocked most supplies. With Soviet approval, Czechoslovakia sold Israel rifles, machine guns and Avia S-199 fighters, flown in from late May 1948 and during the four-week truce arranged by Count Folke Bernadotte in June. Ben-Gurion also united the militias into the IDF. **Hinge Question:** Why did Israel use the June 1948 truce more effectively than the Arab states?",
+                "hinge_question": "Why did Israel use the June 1948 truce more effectively than the Arab states?"
+              },
+              "question": "This fighter plane was built in Czechoslovakia and flown by Israel in June 1948. Why did arms like this change the war?"
             }
           ],
           "image": "/images/cme_plate_bernadotte_jerusalem_1948.jpg",
@@ -3957,12 +3957,10 @@ const cme_new = {
               "desc": "UN photograph of a Palestinian refugee camp in Gaza, with paired summaries of the refugee and Israeli government positions on return.",
               "provenance": "UNRWA Photo and Film Archive, Khan Yunis, Gaza, c. 1948–49. Extracts: summaries of each side's stated position, 1948–49.",
               "citation": "UNRWA Photo and Film Archive.",
-              "hinge_question": "Why did temporary wartime displacement harden into permanent exile after 1949?",
-              "source_context": "During the war more than 700,000 Palestinian Arabs fled or were expelled from the areas that became Israel, and over 400 villages were emptied. UN Resolution 194 (December 1948) said refugees wishing to return and live in peace should be allowed to do so, but Israel refused large-scale return while Arab states refused to make peace. **Hinge Question:** Why did temporary wartime displacement harden into permanent exile after 1949?",
+              "source_context": "During the war more than 700,000 Palestinian Arabs fled or were expelled from the areas that became Israel, and over 400 villages were emptied. UN Resolution 194 (December 1948) said refugees wishing to return and live in peace should be allowed to do so, but Israel refused large-scale return while Arab states refused to make peace.",
               "context": "During the 1948–49 war more than 700,000 Palestinian Arabs fled or were expelled, an event Palestinians call the Nakba.",
               "question_badge": "Competing Perspectives",
               "question_type": "Competing Perspectives",
-              "enquiry_question": "Families in this camp at Khan Yunis hoped to return home soon. Why did their exile become permanent?",
               "model_answer": "Refugees and Arab states insisted on the right of return set out in UN Resolution 194, while Israel refused large-scale return without peace, fearing for its security and its Jewish majority. Neither side would move first and Arab states refused to make peace, so the refugees stayed in camps run by UNRWA.",
               "provenance_clues": {
                 "author": "UN relief photographer; extracts summarise the refugees/Arab states and the Government of Israel.",
@@ -3971,7 +3969,8 @@ const cme_new = {
                 "hinge_question": "Why did temporary wartime displacement harden into permanent exile after 1949?"
               },
               "teacher_notes": {
-                "source_context": "During the war more than 700,000 Palestinian Arabs fled or were expelled from the areas that became Israel, and over 400 villages were emptied. UN Resolution 194 (December 1948) said refugees wishing to return and live in peace should be allowed to do so, but Israel refused large-scale return while Arab states refused to make peace. **Hinge Question:** Why did temporary wartime displacement harden into permanent exile after 1949?"
+                "source_context": "During the war more than 700,000 Palestinian Arabs fled or were expelled from the areas that became Israel, and over 400 villages were emptied. UN Resolution 194 (December 1948) said refugees wishing to return and live in peace should be allowed to do so, but Israel refused large-scale return while Arab states refused to make peace. **Hinge Question:** Why did temporary wartime displacement harden into permanent exile after 1949?",
+                "hinge_question": "Why did temporary wartime displacement harden into permanent exile after 1949?"
               },
               "perspective_pair": {
                 "framing_note": "The war created over 700,000 Palestinian refugees; each side explained the crisis — and its solution — differently.",
@@ -3991,7 +3990,8 @@ const cme_new = {
                   "text_type": "summary",
                   "provenance": "Summary of statements by Foreign Minister Moshe Sharett and Israel's delegation at the Lausanne Conference, 1948–49."
                 }
-              }
+              },
+              "question": "Families in this camp at Khan Yunis hoped to return home soon. Why did their exile become permanent?"
             }
           ],
           "content": "<span class=\"para-ref\">[3.1]</span> The 1948 war caused the catastrophic displacement of Palestinian Arab society, an event Palestinians commemorate as the **Nakba** (\"The Catastrophe\"). In April 1948, Zionist forces implemented **Plan Dalet**, a military operational strategy aimed at securing roads and Jewish enclaves by capturing hostile villages along vital transport corridors. Violent attacks—above all the 9 April 1948 **Deir Yassin massacre**, in which **Irgun** and **Lehi** fighters killed over 100 Palestinian villagers west of Jerusalem—spread intense civilian panic, causing whole communities to flee.\n\n<span class=\"para-ref\">[3.2]</span> By the war's conclusion, over **700,000 Palestinian Arabs** had fled or been expelled from territories that fell under Israeli sovereignty, leaving over 400 villages depopulated. Most refugees were forced into squalid camps across Gaza, the West Bank, Lebanon, Syria, and Jordan. While the UN established **UNRWA** for humanitarian relief and passed Resolution 194 urging refugee return, Israel permanently barred repatriation to preserve a Jewish demographic majority."
@@ -4019,12 +4019,10 @@ const cme_new = {
               "desc": "Photograph of Arab Legion soldiers defending the Old City walls, 1948, from Glubb Pasha's memoir.",
               "provenance": "Photograph, Jerusalem, 1948, published in Sir John Bagot Glubb ('Glubb Pasha'), A Soldier with the Arabs (public domain; via Wikimedia Commons).",
               "citation": "J. B. Glubb, 'A Soldier with the Arabs'.",
-              "hinge_question": "Why did the 1949 armistice lines leave Jerusalem divided and Palestinians without a state?",
-              "source_context": "In 1949 UN mediator Ralph Bunche negotiated armistice agreements at Rhodes between Israel and Egypt, Lebanon, Jordan and Syria. The ceasefire lines — the 'Green Line' — left Israel with about 78% of Mandatory Palestine. Jordan kept East Jerusalem and the West Bank, which it annexed in 1950, and Egypt ran the Gaza Strip. No Palestinian Arab state was created. **Hinge Question:** Why did the 1949 armistice lines leave Jerusalem divided and Palestinians without a state?",
-              "context": "The 1949 armistice lines left Jerusalem divided: Jordan held the Old City and East Jerusalem, Israel the west.",
+              "source_context": "Photographed during the closing stages of the 1948–1949 Arab–Israeli War, soldiers of Transjordan’s British-trained Arab Legion—commanded by Sir John Bagot Glubb—stand guard along the sixteenth-century stone ramparts of Jerusalem’s Old City prior to the 1949 Rhodes armistice talks.",
+              "context": "Photographed during the closing stages of the 1948–1949 Arab–Israeli War, soldiers of Transjordan’s British-trained Arab Legion—commanded by Sir John Bagot Glubb—stand guard along the sixteenth-century stone ramparts of Jerusalem’s Old City prior to the 1949 Rhodes armistice talks.",
               "question_badge": "Turning Point Insight",
               "question_type": "Turning Point Insight",
-              "enquiry_question": "Arab Legion soldiers guard the walls of Jerusalem's Old City in 1948. What does this show about who controlled Jerusalem after 1949?",
               "model_answer": "Jordan's Arab Legion held East Jerusalem and the Old City at the end of the war, so the 1949 armistice left Jerusalem divided, with Israel holding the west. Jordan went on to annex East Jerusalem and the West Bank, so no Palestinian Arab state was created and Jews lost access to the Old City's holy sites until 1967.",
               "provenance_clues": {
                 "author": "Photographer with the Arab Legion; published by its British commander, Glubb Pasha.",
@@ -4033,8 +4031,10 @@ const cme_new = {
                 "hinge_question": "Why did the 1949 armistice lines leave Jerusalem divided and Palestinians without a state?"
               },
               "teacher_notes": {
-                "source_context": "In 1949 UN mediator Ralph Bunche negotiated armistice agreements at Rhodes between Israel and Egypt, Lebanon, Jordan and Syria. The ceasefire lines — the 'Green Line' — left Israel with about 78% of Mandatory Palestine. Jordan kept East Jerusalem and the West Bank, which it annexed in 1950, and Egypt ran the Gaza Strip. No Palestinian Arab state was created. **Hinge Question:** Why did the 1949 armistice lines leave Jerusalem divided and Palestinians without a state?"
-              }
+                "source_context": "In 1949 UN mediator Ralph Bunche negotiated armistice agreements at Rhodes between Israel and Egypt, Lebanon, Jordan and Syria. The ceasefire lines — the 'Green Line' — left Israel with about 78% of Mandatory Palestine. Jordan kept East Jerusalem and the West Bank, which it annexed in 1950, and Egypt ran the Gaza Strip. No Palestinian Arab state was created. **Hinge Question:** Why did the 1949 armistice lines leave Jerusalem divided and Palestinians without a state?",
+                "hinge_question": "Why did the 1949 armistice lines leave Jerusalem divided and Palestinians without a state?"
+              },
+              "question": "Arab Legion soldiers guard the walls of Jerusalem's Old City in 1948. What does this show about who controlled Jerusalem after 1949?"
             }
           ],
           "slide_compare": {
@@ -4074,13 +4074,11 @@ const cme_new = {
               "desc": "Photograph of Jewish immigrants arriving at Haifa, 1949, with the opening line of the 1950 Law of Return.",
               "provenance": "Photograph: Israel Government Press Office collection, Haifa, 1949. Extract: Law of Return, passed by the Knesset, 5 July 1950 (official English translation).",
               "citation": "Israel Government Press Office / National Library of Israel.",
-              "hinge_question": "How did mass immigration after 1948 strengthen Israel, and what problems did it create?",
-              "source_context": "In 1950 the Knesset passed the Law of Return, giving every Jew the right to settle in Israel ('oleh' means immigrant). Airlifts such as Operation Magic Carpet brought Jews from Yemen, and many Jews came from Iraq and other Arab countries. The population surge meant rationing and crowded transit camps (ma'abarot), helped by American loans and donations. **Hinge Question:** How did mass immigration after 1948 strengthen Israel, and what problems did it create?",
-              "context": "Israel welcomed mass Jewish immigration; the 1950 Law of Return gave every Jew the right to settle and become a citizen.",
+              "source_context": "Passed unanimously by Israel’s parliament (the Knesset) on 5 July 1950, the Law of Return became one of the foundational laws of the new state during a period of mass migration from post-war Europe and across the Middle East and North Africa.",
+              "context": "Passed unanimously by Israel’s parliament (the Knesset) on 5 July 1950, the Law of Return became one of the foundational laws of the new state during a period of mass migration from post-war Europe and across the Middle East and North Africa.",
               "question_badge": "Perspective & Motive",
               "question_type": "Perspective & Motive",
-              "enquiry_question": "The Law of Return said 'Every Jew has the right to come to this country'. Why did Israel welcome immigrants so eagerly?",
-              "model_answer": "Israel's leaders saw the state as a refuge for Jews everywhere, especially after the Holocaust and as Jews left Arab countries such as Yemen and Iraq. A bigger population also meant more soldiers and settlers to defend vulnerable borders. The cost was severe: rationing and crowded transit camps, paid for partly by US loans and donations.",
+              "model_answer": "Israel's leaders saw the state as a refuge for Jews everywhere, especially after the Holocaust and as Jews left Arab countries such as Yemen and Iraq. A bigger population also meant more soldiers and settlers to defend vulnerable borders; the cost was severe: rationing and crowded transit camps, paid for partly by US loans and donations.",
               "provenance_clues": {
                 "author": "Israel Government Press Office photographer; the Knesset (Law of Return).",
                 "audience": "Israelis, Jewish communities worldwide and foreign governments.",
@@ -4088,10 +4086,12 @@ const cme_new = {
                 "hinge_question": "How did mass immigration after 1948 strengthen Israel, and what problems did it create?"
               },
               "teacher_notes": {
-                "source_context": "In 1950 the Knesset passed the Law of Return, giving every Jew the right to settle in Israel ('oleh' means immigrant). Airlifts such as Operation Magic Carpet brought Jews from Yemen, and many Jews came from Iraq and other Arab countries. The population surge meant rationing and crowded transit camps (ma'abarot), helped by American loans and donations. **Hinge Question:** How did mass immigration after 1948 strengthen Israel, and what problems did it create?"
+                "source_context": "In 1950 the Knesset passed the Law of Return, giving every Jew the right to settle in Israel ('oleh' means immigrant). Airlifts such as Operation Magic Carpet brought Jews from Yemen, and many Jews came from Iraq and other Arab countries. The population surge meant rationing and crowded transit camps (ma'abarot), helped by American loans and donations. **Hinge Question:** How did mass immigration after 1948 strengthen Israel, and what problems did it create?",
+                "hinge_question": "How did mass immigration after 1948 strengthen Israel, and what problems did it create?"
               },
               "text": "Every Jew has the right to come to this country as an oleh.",
-              "text_type": "verbatim"
+              "text_type": "verbatim",
+              "question": "The Law of Return said 'Every Jew has the right to come to this country'. Why did Israel welcome immigrants so eagerly?"
             }
           ],
           "image": "/images/cme_plate_beit_lid_maabara_1950.jpg",
@@ -4591,13 +4591,11 @@ const cme_new = {
           "desc": "Map of the Arab invasion of May–June 1948 with paired extracts from the Israeli Declaration of Independence and the Arab League statement.",
           "provenance": "Map: United States Military Academy (West Point), Department of History atlas (public domain). Extracts: Declaration of the Establishment of the State of Israel, 14 May 1948 (verbatim); Arab League statement to the UN, 15 May 1948 (summary).",
           "citation": "United States Military Academy, Department of History.",
-          "hinge_question": "Why did the end of the British Mandate on 14 May 1948 turn a civil war into a regional war?",
-          "source_context": "On 14 May 1948, as the British Mandate ended, David Ben-Gurion declared the State of Israel. At dawn on 15 May, forces from Egypt, Transjordan, Syria, Lebanon and Iraq crossed into Palestine. The fighting that had begun as a civil war in November 1947 became a regional war. **Hinge Question:** Why did the end of the British Mandate on 14 May 1948 turn a civil war into a regional war?",
+          "source_context": "On 14 May 1948, as the British Mandate ended, David Ben-Gurion declared the State of Israel. At dawn on 15 May, forces from Egypt, Transjordan, Syria, Lebanon and Iraq crossed into Palestine. The fighting that had begun as a civil war in November 1947 became a regional war.",
           "context": "Israel declared independence on 14 May 1948. The next day the armies of five Arab states entered Palestine.",
           "question_badge": "Competing Perspectives",
           "question_type": "Competing Perspectives",
-          "enquiry_question": "The map shows five Arab armies entering on 15 May 1948. How did each side justify what happened that week?",
-          "model_answer": "Israel's leaders based statehood on the Jewish people's historic ties and UN Resolution 181, and saw the entry of five Arab states the next morning as an attack aimed at destroying the new state at birth, leaving Israelis fighting for survival. By contrast, the Arab League argued that British withdrawal left no lawful authority and framed intervention as preventing an unjust partition and halting Palestinian refugee flight after Plan Dalet and Deir Yassin. Because each side saw its own actions as lawful defence and the other as the aggressor, the civil war widened immediately into a regional war.",
+          "model_answer": "Israel's leaders based statehood on the Jewish people's historic ties and UN Resolution 181, and saw the entry of five Arab states the next morning as an attack aimed at destroying the new state at birth, leaving Israelis fighting for survival. By contrast, the Arab League argued that British withdrawal left no lawful authority and framed intervention as preventing an unjust partition and halting Palestinian refugee flight after Plan Dalet and Deir Yassin; because each side saw its own actions as lawful defence and the other as the aggressor, the civil war widened immediately into a regional war.",
           "provenance_clues": {
             "author": "Map: US Military Academy historians. Extracts: Israel's People's Council and the Arab League.",
             "audience": "The United Nations and world opinion.",
@@ -4605,7 +4603,8 @@ const cme_new = {
             "hinge_question": "Why did the end of the British Mandate on 14 May 1948 turn a civil war into a regional war?"
           },
           "teacher_notes": {
-            "source_context": "On 14 May 1948, as the British Mandate ended, David Ben-Gurion declared the State of Israel. At dawn on 15 May, forces from Egypt, Transjordan, Syria, Lebanon and Iraq crossed into Palestine. The fighting that had begun as a civil war in November 1947 became a regional war. **Hinge Question:** Why did the end of the British Mandate on 14 May 1948 turn a civil war into a regional war?"
+            "source_context": "On 14 May 1948, as the British Mandate ended, David Ben-Gurion declared the State of Israel. At dawn on 15 May, forces from Egypt, Transjordan, Syria, Lebanon and Iraq crossed into Palestine. The fighting that had begun as a civil war in November 1947 became a regional war. **Hinge Question:** Why did the end of the British Mandate on 14 May 1948 turn a civil war into a regional war?",
+            "hinge_question": "Why did the end of the British Mandate on 14 May 1948 turn a civil war into a regional war?"
           },
           "perspective_pair": {
             "framing_note": "On consecutive days in May 1948, each side explained its actions to the world.",
@@ -4625,7 +4624,8 @@ const cme_new = {
               "text_type": "summary",
               "provenance": "Summary of the cablegram from the Secretary-General of the Arab League to the UN Secretary-General, 15 May 1948."
             }
-          }
+          },
+          "question": "The map shows five Arab armies entering on 15 May 1948. How did each side justify what happened that week?"
         },
         {
           "id": "cme_l3_source_b",
@@ -4639,13 +4639,11 @@ const cme_new = {
           "desc": "Photograph of a Czech-built Avia S-199 fighter in Israeli service, June 1948.",
           "provenance": "Israeli Air Force photograph, June 1948 (public domain in Israel; via Wikimedia Commons).",
           "citation": "Israeli Air Force, 1948 (public domain).",
-          "hinge_question": "Why did Israel use the June 1948 truce more effectively than the Arab states?",
-          "source_context": "Israel began the war short of artillery, tanks and aircraft, and a UN arms embargo blocked most supplies. With Soviet approval, Czechoslovakia sold Israel rifles, machine guns and Avia S-199 fighters, flown in from late May 1948 and during the four-week truce arranged by Count Folke Bernadotte in June. Ben-Gurion also united the militias into the IDF. **Hinge Question:** Why did Israel use the June 1948 truce more effectively than the Arab states?",
+          "source_context": "Israel began the war short of artillery, tanks and aircraft, and a UN arms embargo blocked most supplies. With Soviet approval, Czechoslovakia sold Israel rifles, machine guns and Avia S-199 fighters, flown in from late May 1948 and during the four-week truce arranged by Count Folke Bernadotte in June. Ben-Gurion also united the militias into the IDF.",
           "context": "Short of heavy weapons, Israel secretly bought arms from Czechoslovakia and used the first UN truce in June 1948 to rearm.",
           "question_badge": "Turning Point Insight",
           "question_type": "Turning Point Insight",
-          "enquiry_question": "This fighter plane was built in Czechoslovakia and flown by Israel in June 1948. Why did arms like this change the war?",
-          "model_answer": "Israel started the war short of heavy weapons, and a UN arms embargo blocked most supplies. Czech aircraft, rifles and machine guns, bought with Soviet approval and arriving from late May and through the truce, let the newly formed IDF rearm faster than the divided Arab armies. When fighting resumed in July, Israel seized the initiative.",
+          "model_answer": "Israel started the war short of heavy weapons, and a UN arms embargo blocked most supplies. Czech aircraft, rifles and machine guns, bought with Soviet approval and arriving from late May and through the truce, let the newly formed IDF rearm faster than the divided Arab armies; when fighting resumed in July, Israel seized the initiative.",
           "provenance_clues": {
             "author": "Israeli Air Force photographer.",
             "audience": "Israeli military records.",
@@ -4653,8 +4651,10 @@ const cme_new = {
             "hinge_question": "Why did Israel use the June 1948 truce more effectively than the Arab states?"
           },
           "teacher_notes": {
-            "source_context": "Israel began the war short of artillery, tanks and aircraft, and a UN arms embargo blocked most supplies. With Soviet approval, Czechoslovakia sold Israel rifles, machine guns and Avia S-199 fighters, flown in from late May 1948 and during the four-week truce arranged by Count Folke Bernadotte in June. Ben-Gurion also united the militias into the IDF. **Hinge Question:** Why did Israel use the June 1948 truce more effectively than the Arab states?"
-          }
+            "source_context": "Israel began the war short of artillery, tanks and aircraft, and a UN arms embargo blocked most supplies. With Soviet approval, Czechoslovakia sold Israel rifles, machine guns and Avia S-199 fighters, flown in from late May 1948 and during the four-week truce arranged by Count Folke Bernadotte in June. Ben-Gurion also united the militias into the IDF. **Hinge Question:** Why did Israel use the June 1948 truce more effectively than the Arab states?",
+            "hinge_question": "Why did Israel use the June 1948 truce more effectively than the Arab states?"
+          },
+          "question": "This fighter plane was built in Czechoslovakia and flown by Israel in June 1948. Why did arms like this change the war?"
         },
         {
           "id": "cme_l3_source_c",
@@ -4668,12 +4668,10 @@ const cme_new = {
           "desc": "UN photograph of a Palestinian refugee camp in Gaza, with paired summaries of the refugee and Israeli government positions on return.",
           "provenance": "UNRWA Photo and Film Archive, Khan Yunis, Gaza, c. 1948–49. Extracts: summaries of each side's stated position, 1948–49.",
           "citation": "UNRWA Photo and Film Archive.",
-          "hinge_question": "Why did temporary wartime displacement harden into permanent exile after 1949?",
-          "source_context": "During the war more than 700,000 Palestinian Arabs fled or were expelled from the areas that became Israel, and over 400 villages were emptied. UN Resolution 194 (December 1948) said refugees wishing to return and live in peace should be allowed to do so, but Israel refused large-scale return while Arab states refused to make peace. **Hinge Question:** Why did temporary wartime displacement harden into permanent exile after 1949?",
+          "source_context": "During the war more than 700,000 Palestinian Arabs fled or were expelled from the areas that became Israel, and over 400 villages were emptied. UN Resolution 194 (December 1948) said refugees wishing to return and live in peace should be allowed to do so, but Israel refused large-scale return while Arab states refused to make peace.",
           "context": "During the 1948–49 war more than 700,000 Palestinian Arabs fled or were expelled, an event Palestinians call the Nakba.",
           "question_badge": "Competing Perspectives",
           "question_type": "Competing Perspectives",
-          "enquiry_question": "Families in this camp at Khan Yunis hoped to return home soon. Why did their exile become permanent?",
           "model_answer": "Refugees and Arab states insisted on the right of return set out in UN Resolution 194, while Israel refused large-scale return without peace, fearing for its security and its Jewish majority. Neither side would move first and Arab states refused to make peace, so the refugees stayed in camps run by UNRWA.",
           "provenance_clues": {
             "author": "UN relief photographer; extracts summarise the refugees/Arab states and the Government of Israel.",
@@ -4682,7 +4680,8 @@ const cme_new = {
             "hinge_question": "Why did temporary wartime displacement harden into permanent exile after 1949?"
           },
           "teacher_notes": {
-            "source_context": "During the war more than 700,000 Palestinian Arabs fled or were expelled from the areas that became Israel, and over 400 villages were emptied. UN Resolution 194 (December 1948) said refugees wishing to return and live in peace should be allowed to do so, but Israel refused large-scale return while Arab states refused to make peace. **Hinge Question:** Why did temporary wartime displacement harden into permanent exile after 1949?"
+            "source_context": "During the war more than 700,000 Palestinian Arabs fled or were expelled from the areas that became Israel, and over 400 villages were emptied. UN Resolution 194 (December 1948) said refugees wishing to return and live in peace should be allowed to do so, but Israel refused large-scale return while Arab states refused to make peace. **Hinge Question:** Why did temporary wartime displacement harden into permanent exile after 1949?",
+            "hinge_question": "Why did temporary wartime displacement harden into permanent exile after 1949?"
           },
           "perspective_pair": {
             "framing_note": "The war created over 700,000 Palestinian refugees; each side explained the crisis — and its solution — differently.",
@@ -4702,7 +4701,8 @@ const cme_new = {
               "text_type": "summary",
               "provenance": "Summary of statements by Foreign Minister Moshe Sharett and Israel's delegation at the Lausanne Conference, 1948–49."
             }
-          }
+          },
+          "question": "Families in this camp at Khan Yunis hoped to return home soon. Why did their exile become permanent?"
         },
         {
           "id": "cme_l3_source_d",
@@ -4716,12 +4716,10 @@ const cme_new = {
           "desc": "Photograph of Arab Legion soldiers defending the Old City walls, 1948, from Glubb Pasha's memoir.",
           "provenance": "Photograph, Jerusalem, 1948, published in Sir John Bagot Glubb ('Glubb Pasha'), A Soldier with the Arabs (public domain; via Wikimedia Commons).",
           "citation": "J. B. Glubb, 'A Soldier with the Arabs'.",
-          "hinge_question": "Why did the 1949 armistice lines leave Jerusalem divided and Palestinians without a state?",
-          "source_context": "In 1949 UN mediator Ralph Bunche negotiated armistice agreements at Rhodes between Israel and Egypt, Lebanon, Jordan and Syria. The ceasefire lines — the 'Green Line' — left Israel with about 78% of Mandatory Palestine. Jordan kept East Jerusalem and the West Bank, which it annexed in 1950, and Egypt ran the Gaza Strip. No Palestinian Arab state was created. **Hinge Question:** Why did the 1949 armistice lines leave Jerusalem divided and Palestinians without a state?",
-          "context": "The 1949 armistice lines left Jerusalem divided: Jordan held the Old City and East Jerusalem, Israel the west.",
+          "source_context": "Photographed during the closing stages of the 1948–1949 Arab–Israeli War, soldiers of Transjordan’s British-trained Arab Legion—commanded by Sir John Bagot Glubb—stand guard along the sixteenth-century stone ramparts of Jerusalem’s Old City prior to the 1949 Rhodes armistice talks.",
+          "context": "Photographed during the closing stages of the 1948–1949 Arab–Israeli War, soldiers of Transjordan’s British-trained Arab Legion—commanded by Sir John Bagot Glubb—stand guard along the sixteenth-century stone ramparts of Jerusalem’s Old City prior to the 1949 Rhodes armistice talks.",
           "question_badge": "Turning Point Insight",
           "question_type": "Turning Point Insight",
-          "enquiry_question": "Arab Legion soldiers guard the walls of Jerusalem's Old City in 1948. What does this show about who controlled Jerusalem after 1949?",
           "model_answer": "Jordan's Arab Legion held East Jerusalem and the Old City at the end of the war, so the 1949 armistice left Jerusalem divided, with Israel holding the west. Jordan went on to annex East Jerusalem and the West Bank, so no Palestinian Arab state was created and Jews lost access to the Old City's holy sites until 1967.",
           "provenance_clues": {
             "author": "Photographer with the Arab Legion; published by its British commander, Glubb Pasha.",
@@ -4730,8 +4728,10 @@ const cme_new = {
             "hinge_question": "Why did the 1949 armistice lines leave Jerusalem divided and Palestinians without a state?"
           },
           "teacher_notes": {
-            "source_context": "In 1949 UN mediator Ralph Bunche negotiated armistice agreements at Rhodes between Israel and Egypt, Lebanon, Jordan and Syria. The ceasefire lines — the 'Green Line' — left Israel with about 78% of Mandatory Palestine. Jordan kept East Jerusalem and the West Bank, which it annexed in 1950, and Egypt ran the Gaza Strip. No Palestinian Arab state was created. **Hinge Question:** Why did the 1949 armistice lines leave Jerusalem divided and Palestinians without a state?"
-          }
+            "source_context": "In 1949 UN mediator Ralph Bunche negotiated armistice agreements at Rhodes between Israel and Egypt, Lebanon, Jordan and Syria. The ceasefire lines — the 'Green Line' — left Israel with about 78% of Mandatory Palestine. Jordan kept East Jerusalem and the West Bank, which it annexed in 1950, and Egypt ran the Gaza Strip. No Palestinian Arab state was created. **Hinge Question:** Why did the 1949 armistice lines leave Jerusalem divided and Palestinians without a state?",
+            "hinge_question": "Why did the 1949 armistice lines leave Jerusalem divided and Palestinians without a state?"
+          },
+          "question": "Arab Legion soldiers guard the walls of Jerusalem's Old City in 1948. What does this show about who controlled Jerusalem after 1949?"
         },
         {
           "id": "cme_l3_source_e",
@@ -4745,13 +4745,11 @@ const cme_new = {
           "desc": "Photograph of Jewish immigrants arriving at Haifa, 1949, with the opening line of the 1950 Law of Return.",
           "provenance": "Photograph: Israel Government Press Office collection, Haifa, 1949. Extract: Law of Return, passed by the Knesset, 5 July 1950 (official English translation).",
           "citation": "Israel Government Press Office / National Library of Israel.",
-          "hinge_question": "How did mass immigration after 1948 strengthen Israel, and what problems did it create?",
-          "source_context": "In 1950 the Knesset passed the Law of Return, giving every Jew the right to settle in Israel ('oleh' means immigrant). Airlifts such as Operation Magic Carpet brought Jews from Yemen, and many Jews came from Iraq and other Arab countries. The population surge meant rationing and crowded transit camps (ma'abarot), helped by American loans and donations. **Hinge Question:** How did mass immigration after 1948 strengthen Israel, and what problems did it create?",
-          "context": "Israel welcomed mass Jewish immigration; the 1950 Law of Return gave every Jew the right to settle and become a citizen.",
+          "source_context": "Passed unanimously by Israel’s parliament (the Knesset) on 5 July 1950, the Law of Return became one of the foundational laws of the new state during a period of mass migration from post-war Europe and across the Middle East and North Africa.",
+          "context": "Passed unanimously by Israel’s parliament (the Knesset) on 5 July 1950, the Law of Return became one of the foundational laws of the new state during a period of mass migration from post-war Europe and across the Middle East and North Africa.",
           "question_badge": "Perspective & Motive",
           "question_type": "Perspective & Motive",
-          "enquiry_question": "The Law of Return said 'Every Jew has the right to come to this country'. Why did Israel welcome immigrants so eagerly?",
-          "model_answer": "Israel's leaders saw the state as a refuge for Jews everywhere, especially after the Holocaust and as Jews left Arab countries such as Yemen and Iraq. A bigger population also meant more soldiers and settlers to defend vulnerable borders. The cost was severe: rationing and crowded transit camps, paid for partly by US loans and donations.",
+          "model_answer": "Israel's leaders saw the state as a refuge for Jews everywhere, especially after the Holocaust and as Jews left Arab countries such as Yemen and Iraq. A bigger population also meant more soldiers and settlers to defend vulnerable borders; the cost was severe: rationing and crowded transit camps, paid for partly by US loans and donations.",
           "provenance_clues": {
             "author": "Israel Government Press Office photographer; the Knesset (Law of Return).",
             "audience": "Israelis, Jewish communities worldwide and foreign governments.",
@@ -4759,10 +4757,12 @@ const cme_new = {
             "hinge_question": "How did mass immigration after 1948 strengthen Israel, and what problems did it create?"
           },
           "teacher_notes": {
-            "source_context": "In 1950 the Knesset passed the Law of Return, giving every Jew the right to settle in Israel ('oleh' means immigrant). Airlifts such as Operation Magic Carpet brought Jews from Yemen, and many Jews came from Iraq and other Arab countries. The population surge meant rationing and crowded transit camps (ma'abarot), helped by American loans and donations. **Hinge Question:** How did mass immigration after 1948 strengthen Israel, and what problems did it create?"
+            "source_context": "In 1950 the Knesset passed the Law of Return, giving every Jew the right to settle in Israel ('oleh' means immigrant). Airlifts such as Operation Magic Carpet brought Jews from Yemen, and many Jews came from Iraq and other Arab countries. The population surge meant rationing and crowded transit camps (ma'abarot), helped by American loans and donations. **Hinge Question:** How did mass immigration after 1948 strengthen Israel, and what problems did it create?",
+            "hinge_question": "How did mass immigration after 1948 strengthen Israel, and what problems did it create?"
           },
           "text": "Every Jew has the right to come to this country as an oleh.",
-          "text_type": "verbatim"
+          "text_type": "verbatim",
+          "question": "The Law of Return said 'Every Jew has the right to come to this country'. Why did Israel welcome immigrants so eagerly?"
         }
       ],
       "hook_text": "The moment Israel declared independence on 14 May 1948, five Arab armies invaded. What followed was a desperate fight for survival for the Israelis, and a catastrophic loss of land for the Palestinians—an event they remember as the 'Nakba' (Catastrophe). The map of the Middle East was forever redrawn.",
@@ -6027,12 +6027,10 @@ const cme_new = {
               "desc": "IDF History Branch diagram of the Gaza Raid with paired summaries of Egyptian and Israeli views of the raid.",
               "provenance": "IDF General Staff, History Branch, diagram of Operation Black Arrow, July 1955 (released by the IDF Spokesperson's Unit; CC BY-SA 3.0). Extracts: summaries of each side's stated position.",
               "citation": "IDF Spokesperson's Unit / Wikimedia Commons (CC BY-SA 3.0).",
-              "hinge_question": "Why did a single border raid in February 1955 start a Middle East arms race?",
-              "source_context": "Under Nasser, Palestinian fedayeen carried out raids into southern Israel from Egyptian-held Gaza. On 28 February 1955 Ben-Gurion and Dayan approved Operation Black Arrow, an attack on an Egyptian army camp in Gaza that killed 38 Egyptian soldiers and police. The raid humiliated Nasser and convinced him that Egypt needed modern weapons. **Hinge Question:** Why did a single border raid in February 1955 start a Middle East arms race?",
-              "context": "In February 1955 Israeli paratroopers attacked an Egyptian army camp in Gaza in reprisal for raids from Gaza, killing 38 Egyptian soldiers and police.",
+              "source_context": "Following the 1949 armistice, Gaza remained under Egyptian military administration while cross-border raids escalated along Israel’s southern frontier; on 28 February 1955, Israeli paratroopers launched Operation Black Arrow against an Egyptian army garrison outside Gaza town.",
+              "context": "Following the 1949 armistice, Gaza remained under Egyptian military administration while cross-border raids escalated along Israel’s southern frontier; on 28 February 1955, Israeli paratroopers launched Operation Black Arrow against an Egyptian army garrison outside Gaza town.",
               "question_badge": "Competing Perspectives",
               "question_type": "Competing Perspectives",
-              "enquiry_question": "Israel called the Gaza Raid a reprisal; Nasser called it aggression. Why did the same raid push Egypt to rearm?",
               "model_answer": "Israel saw the raid as deterrence against fedayeen attacks from Gaza, while Nasser saw it as aggression that humiliated his army, killing 38 Egyptian soldiers and police. Because it exposed Egypt's weakness, Nasser decided he needed modern weapons, which led directly to the Czech arms deal and a more dangerous arms race.",
               "provenance_clues": {
                 "author": "Israeli army historians; extracts summarise Nasser and Ben-Gurion/Dayan.",
@@ -6041,7 +6039,8 @@ const cme_new = {
                 "hinge_question": "Why did a single border raid in February 1955 start a Middle East arms race?"
               },
               "teacher_notes": {
-                "source_context": "Under Nasser, Palestinian fedayeen carried out raids into southern Israel from Egyptian-held Gaza. On 28 February 1955 Ben-Gurion and Dayan approved Operation Black Arrow, an attack on an Egyptian army camp in Gaza that killed 38 Egyptian soldiers and police. The raid humiliated Nasser and convinced him that Egypt needed modern weapons. **Hinge Question:** Why did a single border raid in February 1955 start a Middle East arms race?"
+                "source_context": "Under Nasser, Palestinian fedayeen carried out raids into southern Israel from Egyptian-held Gaza. On 28 February 1955 Ben-Gurion and Dayan approved Operation Black Arrow, an attack on an Egyptian army camp in Gaza that killed 38 Egyptian soldiers and police. The raid humiliated Nasser and convinced him that Egypt needed modern weapons. **Hinge Question:** Why did a single border raid in February 1955 start a Middle East arms race?",
+                "hinge_question": "Why did a single border raid in February 1955 start a Middle East arms race?"
               },
               "perspective_pair": {
                 "framing_note": "The same raid looked like self-defence from Israel and aggression from Egypt — and it set off an arms race.",
@@ -6061,7 +6060,8 @@ const cme_new = {
                   "text_type": "summary",
                   "provenance": "Summary of the stated reprisal policy of Prime Minister David Ben-Gurion and Chief of Staff Moshe Dayan, 1955."
                 }
-              }
+              },
+              "question": "Israel called the Gaza Raid a reprisal; Nasser called it aggression. Why did the same raid push Egypt to rearm?"
             }
           ],
           "stage_hook_map": {
@@ -6145,13 +6145,11 @@ const cme_new = {
               "desc": "Photograph of Nasser and Nehru at Bandung, with a summary of Nasser's Czech arms announcement of September 1955.",
               "provenance": "Photograph, Bandung Conference, 17 April 1955 (public domain; via Wikimedia Commons). Extract: summary of Nasser's announcement of 27 September 1955.",
               "citation": "Public domain photograph, 1955.",
-              "hinge_question": "Why did the Czech arms deal of September 1955 alarm Israel and the Western powers?",
-              "source_context": "After the Gaza Raid, Nasser asked the USA and Britain for weapons, but they wanted Egypt to join anti-Soviet Cold War pacts. At Bandung in April 1955 he championed non-alignment. In September 1955 he announced the Czech arms deal: Soviet-designed weapons, including MiG-15 jets and tanks, supplied via Czechoslovakia in exchange for cotton. **Hinge Question:** Why did the Czech arms deal of September 1955 alarm Israel and the Western powers?",
+              "source_context": "After the Gaza Raid, Nasser asked the USA and Britain for weapons, but they wanted Egypt to join anti-Soviet Cold War pacts. At Bandung in April 1955 he championed non-alignment. In September 1955 he announced the Czech arms deal: Soviet-designed weapons, including MiG-15 jets and tanks, supplied via Czechoslovakia in exchange for cotton.",
               "context": "At Bandung in 1955 Nasser presented Egypt as non-aligned. In September he announced a huge arms deal with the Soviet bloc.",
               "question_badge": "Perspective & Motive",
               "question_type": "Perspective & Motive",
-              "enquiry_question": "Nasser stands beside India's Nehru at Bandung. Why did a 'non-aligned' leader then buy weapons from the Soviet bloc?",
-              "model_answer": "At Bandung Nasser presented Egypt as independent of both Cold War camps. When the West would only sell arms if Egypt joined anti-Soviet pacts, he bought Soviet weapons through Czechoslovakia without such conditions. To Nasser this protected Egypt's independence, but Britain, the USA and Israel saw Soviet influence arriving in the Middle East.",
+              "model_answer": "At Bandung Nasser presented Egypt as independent of both Cold War camps. When the West would only sell arms if Egypt joined anti-Soviet pacts, he bought Soviet weapons through Czechoslovakia without such conditions; To Nasser this protected Egypt's independence, but Britain, the USA and Israel saw Soviet influence arriving in the Middle East.",
               "provenance_clues": {
                 "author": "Conference photographer; Nasser (announcement).",
                 "audience": "Egyptians, the Arab world and the Cold War superpowers.",
@@ -6159,10 +6157,12 @@ const cme_new = {
                 "hinge_question": "Why did the Czech arms deal of September 1955 alarm Israel and the Western powers?"
               },
               "teacher_notes": {
-                "source_context": "After the Gaza Raid, Nasser asked the USA and Britain for weapons, but they wanted Egypt to join anti-Soviet Cold War pacts. At Bandung in April 1955 he championed non-alignment. In September 1955 he announced the Czech arms deal: Soviet-designed weapons, including MiG-15 jets and tanks, supplied via Czechoslovakia in exchange for cotton. **Hinge Question:** Why did the Czech arms deal of September 1955 alarm Israel and the Western powers?"
+                "source_context": "After the Gaza Raid, Nasser asked the USA and Britain for weapons, but they wanted Egypt to join anti-Soviet Cold War pacts. At Bandung in April 1955 he championed non-alignment. In September 1955 he announced the Czech arms deal: Soviet-designed weapons, including MiG-15 jets and tanks, supplied via Czechoslovakia in exchange for cotton. **Hinge Question:** Why did the Czech arms deal of September 1955 alarm Israel and the Western powers?",
+                "hinge_question": "Why did the Czech arms deal of September 1955 alarm Israel and the Western powers?"
               },
               "text": "On 27 September 1955 Nasser announced that Egypt had agreed to buy weapons from Czechoslovakia, paid for largely with Egyptian cotton. He said Egypt had asked the Western powers for arms for years but had only been offered them on conditions that would limit its independence, so it would now buy arms from anyone willing to sell without strings.",
-              "text_type": "summary"
+              "text_type": "summary",
+              "question": "Nasser stands beside India's Nehru at Bandung. Why did a 'non-aligned' leader then buy weapons from the Soviet bloc?"
             }
           ],
           "isReversed": false,
@@ -6194,12 +6194,10 @@ const cme_new = {
               "desc": "Egyptian newspaper front page reporting Nasser's nationalisation of the Suez Canal Company.",
               "provenance": "Al-Ahram (Egyptian daily newspaper), Cairo, 27 July 1956. Headlines translated from Arabic.",
               "citation": "Al-Ahram, Cairo.",
-              "hinge_question": "Why did nationalising the Suez Canal turn a dispute about a dam loan into an international crisis?",
-              "source_context": "In July 1956 US Secretary of State Dulles cancelled American funding for the Aswan High Dam, partly to punish Nasser's recognition of Communist China. On 26 July, in a speech in Alexandria, Nasser nationalised the Suez Canal Company, saying its tolls would pay for the dam. Egyptians celebrated; London and Paris were furious. **Hinge Question:** Why did nationalising the Suez Canal turn a dispute about a dam loan into an international crisis?",
+              "source_context": "In July 1956 US Secretary of State Dulles cancelled American funding for the Aswan High Dam, partly to punish Nasser's recognition of Communist China. On 26 July, in a speech in Alexandria, Nasser nationalised the Suez Canal Company, saying its tolls would pay for the dam. Egyptians celebrated; London and Paris were furious.",
               "context": "After the USA cancelled its loan for the Aswan High Dam, Nasser nationalised the British- and French-owned Suez Canal Company on 26 July 1956.",
               "question_badge": "Perspective & Motive",
               "question_type": "Perspective & Motive",
-              "enquiry_question": "Al-Ahram says 'our money and our rights have been returned to us'. Why did Egyptians cheer what London and Paris called theft?",
               "model_answer": "For Egyptians, taking the canal from a British- and French-owned company ended a hated symbol of foreign control and promised tolls to pay for the Aswan Dam after the USA withdrew its loan. Britain and France saw their key oil route seized by a leader they distrusted, which is why they began planning to remove him.",
               "provenance_clues": {
                 "author": "Al-Ahram, Egypt's leading daily newspaper.",
@@ -6208,8 +6206,10 @@ const cme_new = {
                 "hinge_question": "Why did nationalising the Suez Canal turn a dispute about a dam loan into an international crisis?"
               },
               "teacher_notes": {
-                "source_context": "In July 1956 US Secretary of State Dulles cancelled American funding for the Aswan High Dam, partly to punish Nasser's recognition of Communist China. On 26 July, in a speech in Alexandria, Nasser nationalised the Suez Canal Company, saying its tolls would pay for the dam. Egyptians celebrated; London and Paris were furious. **Hinge Question:** Why did nationalising the Suez Canal turn a dispute about a dam loan into an international crisis?"
-              }
+                "source_context": "In July 1956 US Secretary of State Dulles cancelled American funding for the Aswan High Dam, partly to punish Nasser's recognition of Communist China. On 26 July, in a speech in Alexandria, Nasser nationalised the Suez Canal Company, saying its tolls would pay for the dam. Egyptians celebrated; London and Paris were furious. **Hinge Question:** Why did nationalising the Suez Canal turn a dispute about a dam loan into an international crisis?",
+                "hinge_question": "Why did nationalising the Suez Canal turn a dispute about a dam loan into an international crisis?"
+              },
+              "question": "Al-Ahram says 'our money and our rights have been returned to us'. Why did Egyptians cheer what London and Paris called theft?"
             }
           ],
           "image": "/images/cme_suez_1956_campaign_map.jpg",
@@ -6241,12 +6241,10 @@ const cme_new = {
               "desc": "RAF aerial photograph of burning oil tanks at Port Said during the Anglo-French invasion, November 1956.",
               "provenance": "Royal Air Force reconnaissance photograph, Port Said, November 1956 (Imperial War Museums; Crown copyright expired).",
               "citation": "Imperial War Museums, London.",
-              "hinge_question": "Why did the Anglo-French landing at Port Said look to the world like an invasion rather than peacekeeping?",
-              "source_context": "In October 1956 Britain, France and Israel secretly agreed at Sèvres that Israel would invade Sinai and Britain and France would then order both sides away from the canal. Israel attacked on 29 October; when Egypt refused the ultimatum, Anglo-French aircraft bombed Egyptian airfields from 31 October and troops landed at Port Said on 5–6 November. **Hinge Question:** Why did the Anglo-French landing at Port Said look to the world like an invasion rather than peacekeeping?",
+              "source_context": "In October 1956 Britain, France and Israel secretly agreed at Sèvres that Israel would invade Sinai and Britain and France would then order both sides away from the canal. Israel attacked on 29 October; when Egypt refused the ultimatum, Anglo-French aircraft bombed Egyptian airfields from 31 October and troops landed at Port Said on 5–6 November.",
               "context": "Britain and France secretly planned with Israel to attack Egypt, then landed troops at Port Said claiming to separate the two sides.",
               "question_badge": "Perspective & Motive",
               "question_type": "Perspective & Motive",
-              "enquiry_question": "Smoke rises over Port Said in this RAF photograph. What does it reveal about the Anglo-French claim to 'separate the combatants'?",
               "model_answer": "Britain and France claimed they were only stepping in to separate Israeli and Egyptian forces, yet the fighting between those armies was in Sinai, not at Port Said, until Anglo-French bombing and landings began. The damage shows their real aim was to seize the canal zone, as secretly agreed with Israel at Sèvres.",
               "provenance_clues": {
                 "author": "Royal Air Force reconnaissance crew.",
@@ -6255,8 +6253,10 @@ const cme_new = {
                 "hinge_question": "Why did the Anglo-French landing at Port Said look to the world like an invasion rather than peacekeeping?"
               },
               "teacher_notes": {
-                "source_context": "In October 1956 Britain, France and Israel secretly agreed at Sèvres that Israel would invade Sinai and Britain and France would then order both sides away from the canal. Israel attacked on 29 October; when Egypt refused the ultimatum, Anglo-French aircraft bombed Egyptian airfields from 31 October and troops landed at Port Said on 5–6 November. **Hinge Question:** Why did the Anglo-French landing at Port Said look to the world like an invasion rather than peacekeeping?"
-              }
+                "source_context": "In October 1956 Britain, France and Israel secretly agreed at Sèvres that Israel would invade Sinai and Britain and France would then order both sides away from the canal. Israel attacked on 29 October; when Egypt refused the ultimatum, Anglo-French aircraft bombed Egyptian airfields from 31 October and troops landed at Port Said on 5–6 November. **Hinge Question:** Why did the Anglo-French landing at Port Said look to the world like an invasion rather than peacekeeping?",
+                "hinge_question": "Why did the Anglo-French landing at Port Said look to the world like an invasion rather than peacekeeping?"
+              },
+              "question": "Smoke rises over Port Said in this RAF photograph. What does it reveal about the Anglo-French claim to 'separate the combatants'?"
             }
           ],
           "image": "/images/cme_port_said_british_troops_1956.jpg",
@@ -6288,12 +6288,10 @@ const cme_new = {
               "desc": "Photograph of British troops and armour in Port Said at the end of the Suez invasion, November 1956.",
               "provenance": "British official photograph, Port Said, November 1956 (Imperial War Museums; Crown copyright expired).",
               "citation": "Imperial War Museums, London.",
-              "hinge_question": "Why did US economic pressure force Britain to abandon the Suez invasion?",
-              "source_context": "US President Eisenhower, furious at not being consulted, refused to support the falling pound and blocked IMF help, while the USSR issued threats. Britain accepted a ceasefire on 6 November 1956 and its troops left by December; Israel withdrew from Sinai in early 1957 as UN forces (UNEF) arrived. Nasser kept the canal and his prestige soared. **Hinge Question:** Why did US economic pressure force Britain to abandon the Suez invasion?",
-              "context": "US pressure forced Britain and France to accept a ceasefire on 6 November 1956 and withdraw; Nasser emerged as the hero of the Arab world.",
+              "source_context": "In early November 1956, Anglo-French paratroopers and royal marines landed at Port Said at the northern entrance to the Suez Canal under Operation Musketeer, even as emergency debates opened at the United Nations and financial pressure mounted in Washington.",
+              "context": "In early November 1956, Anglo-French paratroopers and royal marines landed at Port Said at the northern entrance to the Suez Canal under Operation Musketeer, even as emergency debates opened at the United Nations and financial pressure mounted in Washington.",
               "question_badge": "Turning Point Insight",
               "question_type": "Turning Point Insight",
-              "enquiry_question": "British troops held Port Said in November 1956, yet Britain soon withdrew. Why could military success not save Eden's plan?",
               "model_answer": "Britain's forces were winning on the ground, but the USA refused to support the pound and blocked IMF loans, while the USSR made threats and the UN condemned the invasion. Without American backing Britain could not afford to continue, so it accepted a ceasefire on 6 November and withdrew, leaving Nasser the hero of the Arab world.",
               "provenance_clues": {
                 "author": "British Army official photographer.",
@@ -6302,8 +6300,10 @@ const cme_new = {
                 "hinge_question": "Why did US economic pressure force Britain to abandon the Suez invasion?"
               },
               "teacher_notes": {
-                "source_context": "US President Eisenhower, furious at not being consulted, refused to support the falling pound and blocked IMF help, while the USSR issued threats. Britain accepted a ceasefire on 6 November 1956 and its troops left by December; Israel withdrew from Sinai in early 1957 as UN forces (UNEF) arrived. Nasser kept the canal and his prestige soared. **Hinge Question:** Why did US economic pressure force Britain to abandon the Suez invasion?"
-              }
+                "source_context": "US President Eisenhower, furious at not being consulted, refused to support the falling pound and blocked IMF help, while the USSR issued threats. Britain accepted a ceasefire on 6 November 1956 and its troops left by December; Israel withdrew from Sinai in early 1957 as UN forces (UNEF) arrived. Nasser kept the canal and his prestige soared. **Hinge Question:** Why did US economic pressure force Britain to abandon the Suez invasion?",
+                "hinge_question": "Why did US economic pressure force Britain to abandon the Suez invasion?"
+              },
+              "question": "British troops held Port Said in November 1956, yet Britain soon withdrew. Why could military success not save Eden's plan?"
             }
           ],
           "image": "/images/cme_plate_unef_peacekeepers_sinai_1957.jpg",
@@ -6328,12 +6328,10 @@ const cme_new = {
           "desc": "IDF History Branch diagram of the Gaza Raid with paired summaries of Egyptian and Israeli views of the raid.",
           "provenance": "IDF General Staff, History Branch, diagram of Operation Black Arrow, July 1955 (released by the IDF Spokesperson's Unit; CC BY-SA 3.0). Extracts: summaries of each side's stated position.",
           "citation": "IDF Spokesperson's Unit / Wikimedia Commons (CC BY-SA 3.0).",
-          "hinge_question": "Why did a single border raid in February 1955 start a Middle East arms race?",
-          "source_context": "Under Nasser, Palestinian fedayeen carried out raids into southern Israel from Egyptian-held Gaza. On 28 February 1955 Ben-Gurion and Dayan approved Operation Black Arrow, an attack on an Egyptian army camp in Gaza that killed 38 Egyptian soldiers and police. The raid humiliated Nasser and convinced him that Egypt needed modern weapons. **Hinge Question:** Why did a single border raid in February 1955 start a Middle East arms race?",
-          "context": "In February 1955 Israeli paratroopers attacked an Egyptian army camp in Gaza in reprisal for raids from Gaza, killing 38 Egyptian soldiers and police.",
+          "source_context": "Following the 1949 armistice, Gaza remained under Egyptian military administration while cross-border raids escalated along Israel’s southern frontier; on 28 February 1955, Israeli paratroopers launched Operation Black Arrow against an Egyptian army garrison outside Gaza town.",
+          "context": "Following the 1949 armistice, Gaza remained under Egyptian military administration while cross-border raids escalated along Israel’s southern frontier; on 28 February 1955, Israeli paratroopers launched Operation Black Arrow against an Egyptian army garrison outside Gaza town.",
           "question_badge": "Competing Perspectives",
           "question_type": "Competing Perspectives",
-          "enquiry_question": "Israel called the Gaza Raid a reprisal; Nasser called it aggression. Why did the same raid push Egypt to rearm?",
           "model_answer": "Israel saw the raid as deterrence against fedayeen attacks from Gaza, while Nasser saw it as aggression that humiliated his army, killing 38 Egyptian soldiers and police. Because it exposed Egypt's weakness, Nasser decided he needed modern weapons, which led directly to the Czech arms deal and a more dangerous arms race.",
           "provenance_clues": {
             "author": "Israeli army historians; extracts summarise Nasser and Ben-Gurion/Dayan.",
@@ -6342,7 +6340,8 @@ const cme_new = {
             "hinge_question": "Why did a single border raid in February 1955 start a Middle East arms race?"
           },
           "teacher_notes": {
-            "source_context": "Under Nasser, Palestinian fedayeen carried out raids into southern Israel from Egyptian-held Gaza. On 28 February 1955 Ben-Gurion and Dayan approved Operation Black Arrow, an attack on an Egyptian army camp in Gaza that killed 38 Egyptian soldiers and police. The raid humiliated Nasser and convinced him that Egypt needed modern weapons. **Hinge Question:** Why did a single border raid in February 1955 start a Middle East arms race?"
+            "source_context": "Under Nasser, Palestinian fedayeen carried out raids into southern Israel from Egyptian-held Gaza. On 28 February 1955 Ben-Gurion and Dayan approved Operation Black Arrow, an attack on an Egyptian army camp in Gaza that killed 38 Egyptian soldiers and police. The raid humiliated Nasser and convinced him that Egypt needed modern weapons. **Hinge Question:** Why did a single border raid in February 1955 start a Middle East arms race?",
+            "hinge_question": "Why did a single border raid in February 1955 start a Middle East arms race?"
           },
           "perspective_pair": {
             "framing_note": "The same raid looked like self-defence from Israel and aggression from Egypt — and it set off an arms race.",
@@ -6362,7 +6361,8 @@ const cme_new = {
               "text_type": "summary",
               "provenance": "Summary of the stated reprisal policy of Prime Minister David Ben-Gurion and Chief of Staff Moshe Dayan, 1955."
             }
-          }
+          },
+          "question": "Israel called the Gaza Raid a reprisal; Nasser called it aggression. Why did the same raid push Egypt to rearm?"
         },
         {
           "id": "cme_l4_source_b",
@@ -6376,13 +6376,11 @@ const cme_new = {
           "desc": "Photograph of Nasser and Nehru at Bandung, with a summary of Nasser's Czech arms announcement of September 1955.",
           "provenance": "Photograph, Bandung Conference, 17 April 1955 (public domain; via Wikimedia Commons). Extract: summary of Nasser's announcement of 27 September 1955.",
           "citation": "Public domain photograph, 1955.",
-          "hinge_question": "Why did the Czech arms deal of September 1955 alarm Israel and the Western powers?",
-          "source_context": "After the Gaza Raid, Nasser asked the USA and Britain for weapons, but they wanted Egypt to join anti-Soviet Cold War pacts. At Bandung in April 1955 he championed non-alignment. In September 1955 he announced the Czech arms deal: Soviet-designed weapons, including MiG-15 jets and tanks, supplied via Czechoslovakia in exchange for cotton. **Hinge Question:** Why did the Czech arms deal of September 1955 alarm Israel and the Western powers?",
+          "source_context": "After the Gaza Raid, Nasser asked the USA and Britain for weapons, but they wanted Egypt to join anti-Soviet Cold War pacts. At Bandung in April 1955 he championed non-alignment. In September 1955 he announced the Czech arms deal: Soviet-designed weapons, including MiG-15 jets and tanks, supplied via Czechoslovakia in exchange for cotton.",
           "context": "At Bandung in 1955 Nasser presented Egypt as non-aligned. In September he announced a huge arms deal with the Soviet bloc.",
           "question_badge": "Perspective & Motive",
           "question_type": "Perspective & Motive",
-          "enquiry_question": "Nasser stands beside India's Nehru at Bandung. Why did a 'non-aligned' leader then buy weapons from the Soviet bloc?",
-          "model_answer": "At Bandung Nasser presented Egypt as independent of both Cold War camps. When the West would only sell arms if Egypt joined anti-Soviet pacts, he bought Soviet weapons through Czechoslovakia without such conditions. To Nasser this protected Egypt's independence, but Britain, the USA and Israel saw Soviet influence arriving in the Middle East.",
+          "model_answer": "At Bandung Nasser presented Egypt as independent of both Cold War camps. When the West would only sell arms if Egypt joined anti-Soviet pacts, he bought Soviet weapons through Czechoslovakia without such conditions; To Nasser this protected Egypt's independence, but Britain, the USA and Israel saw Soviet influence arriving in the Middle East.",
           "provenance_clues": {
             "author": "Conference photographer; Nasser (announcement).",
             "audience": "Egyptians, the Arab world and the Cold War superpowers.",
@@ -6390,10 +6388,12 @@ const cme_new = {
             "hinge_question": "Why did the Czech arms deal of September 1955 alarm Israel and the Western powers?"
           },
           "teacher_notes": {
-            "source_context": "After the Gaza Raid, Nasser asked the USA and Britain for weapons, but they wanted Egypt to join anti-Soviet Cold War pacts. At Bandung in April 1955 he championed non-alignment. In September 1955 he announced the Czech arms deal: Soviet-designed weapons, including MiG-15 jets and tanks, supplied via Czechoslovakia in exchange for cotton. **Hinge Question:** Why did the Czech arms deal of September 1955 alarm Israel and the Western powers?"
+            "source_context": "After the Gaza Raid, Nasser asked the USA and Britain for weapons, but they wanted Egypt to join anti-Soviet Cold War pacts. At Bandung in April 1955 he championed non-alignment. In September 1955 he announced the Czech arms deal: Soviet-designed weapons, including MiG-15 jets and tanks, supplied via Czechoslovakia in exchange for cotton. **Hinge Question:** Why did the Czech arms deal of September 1955 alarm Israel and the Western powers?",
+            "hinge_question": "Why did the Czech arms deal of September 1955 alarm Israel and the Western powers?"
           },
           "text": "On 27 September 1955 Nasser announced that Egypt had agreed to buy weapons from Czechoslovakia, paid for largely with Egyptian cotton. He said Egypt had asked the Western powers for arms for years but had only been offered them on conditions that would limit its independence, so it would now buy arms from anyone willing to sell without strings.",
-          "text_type": "summary"
+          "text_type": "summary",
+          "question": "Nasser stands beside India's Nehru at Bandung. Why did a 'non-aligned' leader then buy weapons from the Soviet bloc?"
         },
         {
           "id": "cme_l4_source_c",
@@ -6407,12 +6407,10 @@ const cme_new = {
           "desc": "Egyptian newspaper front page reporting Nasser's nationalisation of the Suez Canal Company.",
           "provenance": "Al-Ahram (Egyptian daily newspaper), Cairo, 27 July 1956. Headlines translated from Arabic.",
           "citation": "Al-Ahram, Cairo.",
-          "hinge_question": "Why did nationalising the Suez Canal turn a dispute about a dam loan into an international crisis?",
-          "source_context": "In July 1956 US Secretary of State Dulles cancelled American funding for the Aswan High Dam, partly to punish Nasser's recognition of Communist China. On 26 July, in a speech in Alexandria, Nasser nationalised the Suez Canal Company, saying its tolls would pay for the dam. Egyptians celebrated; London and Paris were furious. **Hinge Question:** Why did nationalising the Suez Canal turn a dispute about a dam loan into an international crisis?",
+          "source_context": "In July 1956 US Secretary of State Dulles cancelled American funding for the Aswan High Dam, partly to punish Nasser's recognition of Communist China. On 26 July, in a speech in Alexandria, Nasser nationalised the Suez Canal Company, saying its tolls would pay for the dam. Egyptians celebrated; London and Paris were furious.",
           "context": "After the USA cancelled its loan for the Aswan High Dam, Nasser nationalised the British- and French-owned Suez Canal Company on 26 July 1956.",
           "question_badge": "Perspective & Motive",
           "question_type": "Perspective & Motive",
-          "enquiry_question": "Al-Ahram says 'our money and our rights have been returned to us'. Why did Egyptians cheer what London and Paris called theft?",
           "model_answer": "For Egyptians, taking the canal from a British- and French-owned company ended a hated symbol of foreign control and promised tolls to pay for the Aswan Dam after the USA withdrew its loan. Britain and France saw their key oil route seized by a leader they distrusted, which is why they began planning to remove him.",
           "provenance_clues": {
             "author": "Al-Ahram, Egypt's leading daily newspaper.",
@@ -6421,8 +6419,10 @@ const cme_new = {
             "hinge_question": "Why did nationalising the Suez Canal turn a dispute about a dam loan into an international crisis?"
           },
           "teacher_notes": {
-            "source_context": "In July 1956 US Secretary of State Dulles cancelled American funding for the Aswan High Dam, partly to punish Nasser's recognition of Communist China. On 26 July, in a speech in Alexandria, Nasser nationalised the Suez Canal Company, saying its tolls would pay for the dam. Egyptians celebrated; London and Paris were furious. **Hinge Question:** Why did nationalising the Suez Canal turn a dispute about a dam loan into an international crisis?"
-          }
+            "source_context": "In July 1956 US Secretary of State Dulles cancelled American funding for the Aswan High Dam, partly to punish Nasser's recognition of Communist China. On 26 July, in a speech in Alexandria, Nasser nationalised the Suez Canal Company, saying its tolls would pay for the dam. Egyptians celebrated; London and Paris were furious. **Hinge Question:** Why did nationalising the Suez Canal turn a dispute about a dam loan into an international crisis?",
+            "hinge_question": "Why did nationalising the Suez Canal turn a dispute about a dam loan into an international crisis?"
+          },
+          "question": "Al-Ahram says 'our money and our rights have been returned to us'. Why did Egyptians cheer what London and Paris called theft?"
         },
         {
           "id": "cme_l4_source_d",
@@ -6436,12 +6436,10 @@ const cme_new = {
           "desc": "RAF aerial photograph of burning oil tanks at Port Said during the Anglo-French invasion, November 1956.",
           "provenance": "Royal Air Force reconnaissance photograph, Port Said, November 1956 (Imperial War Museums; Crown copyright expired).",
           "citation": "Imperial War Museums, London.",
-          "hinge_question": "Why did the Anglo-French landing at Port Said look to the world like an invasion rather than peacekeeping?",
-          "source_context": "In October 1956 Britain, France and Israel secretly agreed at Sèvres that Israel would invade Sinai and Britain and France would then order both sides away from the canal. Israel attacked on 29 October; when Egypt refused the ultimatum, Anglo-French aircraft bombed Egyptian airfields from 31 October and troops landed at Port Said on 5–6 November. **Hinge Question:** Why did the Anglo-French landing at Port Said look to the world like an invasion rather than peacekeeping?",
+          "source_context": "In October 1956 Britain, France and Israel secretly agreed at Sèvres that Israel would invade Sinai and Britain and France would then order both sides away from the canal. Israel attacked on 29 October; when Egypt refused the ultimatum, Anglo-French aircraft bombed Egyptian airfields from 31 October and troops landed at Port Said on 5–6 November.",
           "context": "Britain and France secretly planned with Israel to attack Egypt, then landed troops at Port Said claiming to separate the two sides.",
           "question_badge": "Perspective & Motive",
           "question_type": "Perspective & Motive",
-          "enquiry_question": "Smoke rises over Port Said in this RAF photograph. What does it reveal about the Anglo-French claim to 'separate the combatants'?",
           "model_answer": "Britain and France claimed they were only stepping in to separate Israeli and Egyptian forces, yet the fighting between those armies was in Sinai, not at Port Said, until Anglo-French bombing and landings began. The damage shows their real aim was to seize the canal zone, as secretly agreed with Israel at Sèvres.",
           "provenance_clues": {
             "author": "Royal Air Force reconnaissance crew.",
@@ -6450,8 +6448,10 @@ const cme_new = {
             "hinge_question": "Why did the Anglo-French landing at Port Said look to the world like an invasion rather than peacekeeping?"
           },
           "teacher_notes": {
-            "source_context": "In October 1956 Britain, France and Israel secretly agreed at Sèvres that Israel would invade Sinai and Britain and France would then order both sides away from the canal. Israel attacked on 29 October; when Egypt refused the ultimatum, Anglo-French aircraft bombed Egyptian airfields from 31 October and troops landed at Port Said on 5–6 November. **Hinge Question:** Why did the Anglo-French landing at Port Said look to the world like an invasion rather than peacekeeping?"
-          }
+            "source_context": "In October 1956 Britain, France and Israel secretly agreed at Sèvres that Israel would invade Sinai and Britain and France would then order both sides away from the canal. Israel attacked on 29 October; when Egypt refused the ultimatum, Anglo-French aircraft bombed Egyptian airfields from 31 October and troops landed at Port Said on 5–6 November. **Hinge Question:** Why did the Anglo-French landing at Port Said look to the world like an invasion rather than peacekeeping?",
+            "hinge_question": "Why did the Anglo-French landing at Port Said look to the world like an invasion rather than peacekeeping?"
+          },
+          "question": "Smoke rises over Port Said in this RAF photograph. What does it reveal about the Anglo-French claim to 'separate the combatants'?"
         },
         {
           "id": "cme_l4_source_e",
@@ -6465,12 +6465,10 @@ const cme_new = {
           "desc": "Photograph of British troops and armour in Port Said at the end of the Suez invasion, November 1956.",
           "provenance": "British official photograph, Port Said, November 1956 (Imperial War Museums; Crown copyright expired).",
           "citation": "Imperial War Museums, London.",
-          "hinge_question": "Why did US economic pressure force Britain to abandon the Suez invasion?",
-          "source_context": "US President Eisenhower, furious at not being consulted, refused to support the falling pound and blocked IMF help, while the USSR issued threats. Britain accepted a ceasefire on 6 November 1956 and its troops left by December; Israel withdrew from Sinai in early 1957 as UN forces (UNEF) arrived. Nasser kept the canal and his prestige soared. **Hinge Question:** Why did US economic pressure force Britain to abandon the Suez invasion?",
-          "context": "US pressure forced Britain and France to accept a ceasefire on 6 November 1956 and withdraw; Nasser emerged as the hero of the Arab world.",
+          "source_context": "In early November 1956, Anglo-French paratroopers and royal marines landed at Port Said at the northern entrance to the Suez Canal under Operation Musketeer, even as emergency debates opened at the United Nations and financial pressure mounted in Washington.",
+          "context": "In early November 1956, Anglo-French paratroopers and royal marines landed at Port Said at the northern entrance to the Suez Canal under Operation Musketeer, even as emergency debates opened at the United Nations and financial pressure mounted in Washington.",
           "question_badge": "Turning Point Insight",
           "question_type": "Turning Point Insight",
-          "enquiry_question": "British troops held Port Said in November 1956, yet Britain soon withdrew. Why could military success not save Eden's plan?",
           "model_answer": "Britain's forces were winning on the ground, but the USA refused to support the pound and blocked IMF loans, while the USSR made threats and the UN condemned the invasion. Without American backing Britain could not afford to continue, so it accepted a ceasefire on 6 November and withdrew, leaving Nasser the hero of the Arab world.",
           "provenance_clues": {
             "author": "British Army official photographer.",
@@ -6479,8 +6477,10 @@ const cme_new = {
             "hinge_question": "Why did US economic pressure force Britain to abandon the Suez invasion?"
           },
           "teacher_notes": {
-            "source_context": "US President Eisenhower, furious at not being consulted, refused to support the falling pound and blocked IMF help, while the USSR issued threats. Britain accepted a ceasefire on 6 November 1956 and its troops left by December; Israel withdrew from Sinai in early 1957 as UN forces (UNEF) arrived. Nasser kept the canal and his prestige soared. **Hinge Question:** Why did US economic pressure force Britain to abandon the Suez invasion?"
-          }
+            "source_context": "US President Eisenhower, furious at not being consulted, refused to support the falling pound and blocked IMF help, while the USSR issued threats. Britain accepted a ceasefire on 6 November 1956 and its troops left by December; Israel withdrew from Sinai in early 1957 as UN forces (UNEF) arrived. Nasser kept the canal and his prestige soared. **Hinge Question:** Why did US economic pressure force Britain to abandon the Suez invasion?",
+            "hinge_question": "Why did US economic pressure force Britain to abandon the Suez invasion?"
+          },
+          "question": "British troops held Port Said in November 1956, yet Britain soon withdrew. Why could military success not save Eden's plan?"
         }
       ],
       "learning_objectives": {
@@ -7563,13 +7563,11 @@ const cme_new = {
               "desc": "Paired written extracts: the 1964 Palestinian National Charter and a summary of Israeli Prime Minister Levi Eshkol's position on the Jordan waters.",
               "provenance": "Side A: Palestinian National Charter, adopted by the first Palestine National Council, East Jerusalem, 28 May 1964 (English translation). Side B: summary of Israeli government statements, 1964. Photo: Ahmad Shukeiri, c. 1965 (Wikimedia Commons, public domain).",
               "citation": "Palestinian National Charter (1964), Articles 1 and 17; Israeli government statements on the Jordan waters (1964).",
-              "hinge_question": "Was the PLO founded in 1964 mainly to give Palestinians their own voice, or to let Arab governments control Palestinian resistance?",
-              "source_context": "Arab leaders meeting in Cairo in January 1964 agreed to oppose Israel's National Water Carrier and to back a Palestinian organisation under Arab League sponsorship. In May 1964 a Palestinian congress in Jordanian-ruled East Jerusalem founded the PLO and adopted its National Charter. Israel saw the PLO and the Arab water-diversion plan as two parts of one hostile strategy. **Hinge Question:** Was the PLO founded in 1964 mainly to give Palestinians their own voice, or to let Arab governments control Palestinian resistance?",
+              "source_context": "Arab leaders meeting in Cairo in January 1964 agreed to oppose Israel's National Water Carrier and to back a Palestinian organisation under Arab League sponsorship. In May 1964 a Palestinian congress in Jordanian-ruled East Jerusalem founded the PLO and adopted its National Charter. Israel saw the PLO and the Arab water-diversion plan as two parts of one hostile strategy.",
               "context": "The January 1964 Arab summit in Cairo backed a Palestinian \"entity\"; the PLO was founded in East Jerusalem that May under Ahmad Shukeiri.",
               "question_badge": "Competing Perspectives",
               "question_type": "Competing Perspectives",
-              "enquiry_question": "The Charter calls Israel's creation \"null and void\", while Eshkol defends Israel's water project. Why did both sides feel threatened in 1964?",
-              "model_answer": "The Charter showed that the new PLO rejected Israel's existence completely, so Israeli leaders saw it as proof that Arab states still aimed to destroy Israel. Eshkol saw pumping Jordan water as Israel's legal right, while Arab leaders saw it as theft of shared water. Each side therefore read the other's 1964 moves as aggression.",
+              "model_answer": "The Charter showed that the new PLO rejected Israel's existence completely, so Israeli leaders saw it as proof that Arab states still aimed to destroy Israel. Eshkol saw pumping Jordan water as Israel's legal right, while Arab leaders saw it as theft of shared water; Each side therefore read the other's 1964 moves as aggression.",
               "provenance_clues": {
                 "author": "Side A: the Palestine National Council (PLO founding congress). Side B: Prime Minister Levi Eshkol and the Israeli government.",
                 "audience": "Side A: Palestinians and Arab governments. Side B: Israelis, the United States and other foreign governments.",
@@ -7577,7 +7575,8 @@ const cme_new = {
                 "hinge_question": "Was the PLO founded in 1964 mainly to give Palestinians their own voice, or to let Arab governments control Palestinian resistance?"
               },
               "teacher_notes": {
-                "source_context": "Arab leaders meeting in Cairo in January 1964 agreed to oppose Israel's National Water Carrier and to back a Palestinian organisation under Arab League sponsorship. In May 1964 a Palestinian congress in Jordanian-ruled East Jerusalem founded the PLO and adopted its National Charter. Israel saw the PLO and the Arab water-diversion plan as two parts of one hostile strategy. **Hinge Question:** Was the PLO founded in 1964 mainly to give Palestinians their own voice, or to let Arab governments control Palestinian resistance?"
+                "source_context": "Arab leaders meeting in Cairo in January 1964 agreed to oppose Israel's National Water Carrier and to back a Palestinian organisation under Arab League sponsorship. In May 1964 a Palestinian congress in Jordanian-ruled East Jerusalem founded the PLO and adopted its National Charter. Israel saw the PLO and the Arab water-diversion plan as two parts of one hostile strategy. **Hinge Question:** Was the PLO founded in 1964 mainly to give Palestinians their own voice, or to let Arab governments control Palestinian resistance?",
+                "hinge_question": "Was the PLO founded in 1964 mainly to give Palestinians their own voice, or to let Arab governments control Palestinian resistance?"
               },
               "perspective_pair": {
                 "framing_note": "Both texts come from 1964, the year the PLO was founded and Israel's water carrier opened; reading them together shows how each side interpreted the other's actions as a threat.",
@@ -7599,7 +7598,8 @@ const cme_new = {
                   "provenance": "Summary of Israeli government statements to the Knesset and foreign governments, 1964.",
                   "image": "/units/cme_new/assets/card_eshkol.png"
                 }
-              }
+              },
+              "question": "The Charter calls Israel's creation \"null and void\", while Eshkol defends Israel's water project. Why did both sides feel threatened in 1964?"
             }
           ],
           "image": "/images/cme_new/kt2/cme_l4_b0_nasser_hafiz_cairo_1964.jpg",
@@ -7631,13 +7631,11 @@ const cme_new = {
               "desc": "Israel Government Press Office photograph of the Banias spring and pools, June 1967.",
               "provenance": "Israel Government Press Office (GPO) National Photo Collection, June 1967 (via Wikimedia Commons, File:Banias_1967.jpg).",
               "citation": "Israel Government Press Office / Wikimedia Commons.",
-              "hinge_question": "Was the water dispute a genuine fight over survival, or a symbol both sides used to justify hostility?",
-              "source_context": "After Israel opened its National Water Carrier in 1964, the Arab League backed a Headwater Diversion Plan to redirect the Banias and Hasbani streams before they reached Israel. Israeli tanks, artillery and aircraft struck the Syrian earth-moving equipment between 1965 and 1966, turning a water dispute into regular border fighting. **Hinge Question:** Was the water dispute a genuine fight over survival, or a symbol both sides used to justify hostility?",
+              "source_context": "After Israel opened its National Water Carrier in 1964, the Arab League backed a Headwater Diversion Plan to redirect the Banias and Hasbani streams before they reached Israel. Israeli tanks, artillery and aircraft struck the Syrian earth-moving equipment between 1965 and 1966, turning a water dispute into regular border fighting.",
               "context": "Syria and Jordan tried to divert the Jordan's northern headwaters (the Banias and Hasbani) away from Israel in 1965–66.",
               "question_badge": "Perspective & Motive",
               "question_type": "Perspective & Motive",
-              "enquiry_question": "The Banias spring fed the River Jordan from Syrian-held land. Why did both sides think it was worth fighting over?",
-              "model_answer": "The Banias was one of the River Jordan's three main sources, so whoever controlled it could cut or protect the water flowing to Israel. Syria saw diverting it as a lawful way to stop Israel taking shared Arab water, while Israel saw diversion as an attack on its survival in a dry land. That is why Israel bombed the Syrian diversion works in 1965–66.",
+              "model_answer": "The Banias was one of the River Jordan's three main sources, so whoever controlled it could cut or protect the water flowing to Israel. Syria saw diverting it as a lawful way to stop Israel taking shared Arab water, while Israel saw diversion as an attack on its survival in a dry land; that is why Israel bombed the Syrian diversion works in 1965–66.",
               "provenance_clues": {
                 "author": "Israel Government Press Office photographer.",
                 "audience": "Israeli and international newspapers in 1967.",
@@ -7645,8 +7643,10 @@ const cme_new = {
                 "hinge_question": "Was the water dispute a genuine fight over survival, or a symbol both sides used to justify hostility?"
               },
               "teacher_notes": {
-                "source_context": "After Israel opened its National Water Carrier in 1964, the Arab League backed a Headwater Diversion Plan to redirect the Banias and Hasbani streams before they reached Israel. Israeli tanks, artillery and aircraft struck the Syrian earth-moving equipment between 1965 and 1966, turning a water dispute into regular border fighting. **Hinge Question:** Was the water dispute a genuine fight over survival, or a symbol both sides used to justify hostility?"
-              }
+                "source_context": "After Israel opened its National Water Carrier in 1964, the Arab League backed a Headwater Diversion Plan to redirect the Banias and Hasbani streams before they reached Israel. Israeli tanks, artillery and aircraft struck the Syrian earth-moving equipment between 1965 and 1966, turning a water dispute into regular border fighting. **Hinge Question:** Was the water dispute a genuine fight over survival, or a symbol both sides used to justify hostility?",
+                "hinge_question": "Was the water dispute a genuine fight over survival, or a symbol both sides used to justify hostility?"
+              },
+              "question": "The Banias spring fed the River Jordan from Syrian-held land. Why did both sides think it was worth fighting over?"
             }
           ],
           "image": "/images/upgraded/gcse-cw-cme/cme_l4_national_water_carrier_pipeline_1964.jpg",
@@ -7678,13 +7678,11 @@ const cme_new = {
               "desc": "Later US government relief map of the Golan Heights; it also shows post-1967 changes such as Israeli settlements and the UN disengagement zone.",
               "provenance": "US Central Intelligence Agency relief map of the Golan Heights (published after 1974; public domain US government work). Used here to show the geography of the 1960s border.",
               "citation": "US Central Intelligence Agency, Golan Heights relief map (public domain).",
-              "hinge_question": "Did Syria's position on the high ground make it feel safe enough to back Fatah raids, or did it make Israeli retaliation inevitable?",
-              "source_context": "Fatah began raids into Israel in January 1965. After a radical Ba'athist faction seized power in Damascus in February 1966, Syria gave Fatah weapons, training and bases. Syrian artillery on the Golan Heights regularly fired on Israeli farmers working disputed land below, and Israeli commanders warned that Syria would face heavy retaliation. **Hinge Question:** Did Syria's position on the high ground make it feel safe enough to back Fatah raids, or did it make Israeli retaliation inevitable?",
+              "source_context": "Fatah began raids into Israel in January 1965. After a radical Ba'athist faction seized power in Damascus in February 1966, Syria gave Fatah weapons, training and bases. Syrian artillery on the Golan Heights regularly fired on Israeli farmers working disputed land below, and Israeli commanders warned that Syria would face heavy retaliation.",
               "context": "From 1966 a radical government in Damascus armed and sheltered Fatah, while Syrian guns on the Golan shelled the Hula Valley.",
               "question_badge": "Human Impact",
               "question_type": "Human Impact",
-              "enquiry_question": "The map shows the Golan rising steeply above Hula Valley farms. How did this height shape daily life near the border?",
-              "model_answer": "Syrian gunners on the heights could see and shell Israeli tractors and kibbutzim in the valley, so farming the border fields became dangerous and frightening. Syria saw the slopes as a natural defence against a stronger Israel. The geography helped turn Fatah raids and farming disputes into artillery duels and Israeli threats of retaliation.",
+              "model_answer": "Syrian gunners on the heights could see and shell Israeli tractors and kibbutzim in the valley, so farming the border fields became dangerous and frightening. Syria saw the slopes as a natural defence against a stronger Israel; the geography helped turn Fatah raids and farming disputes into artillery duels and Israeli threats of retaliation.",
               "provenance_clues": {
                 "author": "US government cartographers (CIA).",
                 "audience": "US officials and analysts.",
@@ -7692,8 +7690,10 @@ const cme_new = {
                 "hinge_question": "Did Syria's position on the high ground make it feel safe enough to back Fatah raids, or did it make Israeli retaliation inevitable?"
               },
               "teacher_notes": {
-                "source_context": "Fatah began raids into Israel in January 1965. After a radical Ba'athist faction seized power in Damascus in February 1966, Syria gave Fatah weapons, training and bases. Syrian artillery on the Golan Heights regularly fired on Israeli farmers working disputed land below, and Israeli commanders warned that Syria would face heavy retaliation. **Hinge Question:** Did Syria's position on the high ground make it feel safe enough to back Fatah raids, or did it make Israeli retaliation inevitable?"
-              }
+                "source_context": "Fatah began raids into Israel in January 1965. After a radical Ba'athist faction seized power in Damascus in February 1966, Syria gave Fatah weapons, training and bases. Syrian artillery on the Golan Heights regularly fired on Israeli farmers working disputed land below, and Israeli commanders warned that Syria would face heavy retaliation. **Hinge Question:** Did Syria's position on the high ground make it feel safe enough to back Fatah raids, or did it make Israeli retaliation inevitable?",
+                "hinge_question": "Did Syria's position on the high ground make it feel safe enough to back Fatah raids, or did it make Israeli retaliation inevitable?"
+              },
+              "question": "The map shows the Golan rising steeply above Hula Valley farms. How did this height shape daily life near the border?"
             }
           ],
           "isReversed": false,
@@ -7792,13 +7792,11 @@ const cme_new = {
               "desc": "Photograph of the 13 November 1966 Samu raid, with the operative paragraphs of UN Security Council Resolution 228 (25 November 1966).",
               "provenance": "Text: UN Security Council Resolution 228, adopted 25 November 1966. Photo: Mickey Astel / Bamahane (IDF magazine), 13 November 1966, via Wikimedia Commons (CC BY-SA 3.0).",
               "citation": "United Nations Security Council, S/RES/228 (1966); Wikimedia Commons, File:Samu_Incident._VI.jpg.",
-              "hinge_question": "Did the Samu raid make Israel safer, or did it push Jordan into the arms of Nasser?",
-              "source_context": "On 13 November 1966 Israel sent troops, tanks and aircraft against the village of Samu, south of Hebron, in reprisal for a Fatah landmine. Fighting with the Jordanian army killed 15 Jordanian soldiers and many houses were destroyed. Twelve days later the UN Security Council censured Israel, and riots against King Hussein spread across the West Bank. **Hinge Question:** Did the Samu raid make Israel safer, or did it push Jordan into the arms of Nasser?",
+              "source_context": "On 13 November 1966 Israel sent troops, tanks and aircraft against the village of Samu, south of Hebron, in reprisal for a Fatah landmine. Fighting with the Jordanian army killed 15 Jordanian soldiers and many houses were destroyed. Twelve days later the UN Security Council censured Israel, and riots against King Hussein spread across the West Bank.",
               "context": "After a landmine killed three Israeli soldiers, Israel launched a large daylight reprisal raid on Samu in the Jordanian-ruled West Bank on 13 November 1966.",
               "question_badge": "Turning Point Insight",
               "question_type": "Turning Point Insight",
-              "enquiry_question": "The UN \"censures\" Israel for a \"large-scale military action\" at Samu. Why did this raid weaken King Hussein rather than Fatah?",
-              "model_answer": "Israel struck a Jordanian village even though most Fatah raids were backed by Syria, and 15 Jordanian soldiers were killed. West Bank Palestinians rioted, accusing Hussein of failing to protect them, while other Arab states mocked him. The humiliation pushed Hussein to take a harder line and, in May 1967, to join Nasser.",
+              "model_answer": "Israel struck a Jordanian village even though most Fatah raids were backed by Syria, and 15 Jordanian soldiers were killed. West Bank Palestinians rioted, accusing Hussein of failing to protect them, while other Arab states mocked him; the humiliation pushed Hussein to take a harder line and, in May 1967, to join Nasser.",
               "provenance_clues": {
                 "author": "Text: the 15-member UN Security Council. Photo: an Israeli army magazine photographer.",
                 "audience": "Text: governments worldwide, especially Israel and Jordan. Photo: Israeli soldiers and the Israeli public.",
@@ -7806,10 +7804,12 @@ const cme_new = {
                 "hinge_question": "Did the Samu raid make Israel safer, or did it push Jordan into the arms of Nasser?"
               },
               "teacher_notes": {
-                "source_context": "On 13 November 1966 Israel sent troops, tanks and aircraft against the village of Samu, south of Hebron, in reprisal for a Fatah landmine. Fighting with the Jordanian army killed 15 Jordanian soldiers and many houses were destroyed. Twelve days later the UN Security Council censured Israel, and riots against King Hussein spread across the West Bank. **Hinge Question:** Did the Samu raid make Israel safer, or did it push Jordan into the arms of Nasser?"
+                "source_context": "On 13 November 1966 Israel sent troops, tanks and aircraft against the village of Samu, south of Hebron, in reprisal for a Fatah landmine. Fighting with the Jordanian army killed 15 Jordanian soldiers and many houses were destroyed. Twelve days later the UN Security Council censured Israel, and riots against King Hussein spread across the West Bank. **Hinge Question:** Did the Samu raid make Israel safer, or did it push Jordan into the arms of Nasser?",
+                "hinge_question": "Did the Samu raid make Israel safer, or did it push Jordan into the arms of Nasser?"
               },
               "text": "1. Deplores the loss of life and heavy damage to property resulting from the action of the Government of Israel on 13 November 1966; 2. Censures Israel for this large-scale military action in violation of the United Nations Charter and of the General Armistice Agreement between Israel and Jordan; 3. Emphasizes to Israel that actions of military reprisal cannot be tolerated and that, if they are repeated, the Security Council will have to consider further and more effective steps as envisaged in the Charter to ensure against the repetition of such acts.",
-              "text_type": "verbatim"
+              "text_type": "verbatim",
+              "question": "The UN \"censures\" Israel for a \"large-scale military action\" at Samu. Why did this raid weaken King Hussein rather than Fatah?"
             }
           ],
           "image": "/images/cme_plate_levi_eshkol_pm.jpg",
@@ -7841,13 +7841,11 @@ const cme_new = {
               "desc": "Paired summaries of the Israeli and Syrian versions of the 7 April 1967 air battle, with a photograph of the French-built Mirage jet used by Israel.",
               "provenance": "Side A: summary of Israel Defense Forces statements, April 1967. Side B: summary of Syrian government statements, April 1967. Photo: IPPA photographer, 1970 (National Library of Israel), via Wikimedia Commons (CC BY 4.0).",
               "citation": "Israeli and Syrian official statements, April 1967; Wikimedia Commons (IPPA / Dan Hadani collection).",
-              "hinge_question": "Did Israel's overwhelming victory on 7 April deter Syria, or did it make a wider war more likely?",
-              "source_context": "On 7 April 1967 Syrian guns fired on an Israeli tractor ploughing disputed land in the demilitarised zone near the Sea of Galilee. Israel sent Mirage jets against the Syrian positions; in the air battle that followed six Syrian MiG-21s were shot down and Israeli jets flew over Damascus. Syria turned to Egypt for support under their defence pact. **Hinge Question:** Did Israel's overwhelming victory on 7 April deter Syria, or did it make a wider war more likely?",
+              "source_context": "On 7 April 1967 Syrian guns fired on an Israeli tractor ploughing disputed land in the demilitarised zone near the Sea of Galilee. Israel sent Mirage jets against the Syrian positions; in the air battle that followed six Syrian MiG-21s were shot down and Israeli jets flew over Damascus. Syria turned to Egypt for support under their defence pact.",
               "context": "On 7 April 1967 a clash over a tractor in the demilitarised zone grew into an air battle in which Israel shot down six Syrian MiG-21s.",
               "question_badge": "Competing Perspectives",
               "question_type": "Competing Perspectives",
-              "enquiry_question": "Israel blames Syrian shelling; Syria blames Israeli provocation. Why did this one air battle push the region towards war?",
-              "model_answer": "Each side blamed the other for the fighting over farmland in the demilitarised zone, so neither felt it had started the clash. Losing six MiGs in public humiliated Syria, which then demanded that Egypt honour their November 1966 defence pact. That pressure, added to taunts that Nasser was hiding behind UN troops, helped push him into the May 1967 crisis.",
+              "model_answer": "Each side blamed the other for the fighting over farmland in the demilitarised zone, so neither felt it had started the clash. Losing six MiGs in public humiliated Syria, which then demanded that Egypt honour their November 1966 defence pact; that pressure, added to taunts that Nasser was hiding behind UN troops, helped push him into the May 1967 crisis.",
               "provenance_clues": {
                 "author": "Side A: the Israel Defense Forces. Side B: the Syrian government.",
                 "audience": "Side A: Israelis and foreign governments. Side B: Syrians and the wider Arab world.",
@@ -7855,7 +7853,8 @@ const cme_new = {
                 "hinge_question": "Did Israel's overwhelming victory on 7 April deter Syria, or did it make a wider war more likely?"
               },
               "teacher_notes": {
-                "source_context": "On 7 April 1967 Syrian guns fired on an Israeli tractor ploughing disputed land in the demilitarised zone near the Sea of Galilee. Israel sent Mirage jets against the Syrian positions; in the air battle that followed six Syrian MiG-21s were shot down and Israeli jets flew over Damascus. Syria turned to Egypt for support under their defence pact. **Hinge Question:** Did Israel's overwhelming victory on 7 April deter Syria, or did it make a wider war more likely?"
+                "source_context": "On 7 April 1967 Syrian guns fired on an Israeli tractor ploughing disputed land in the demilitarised zone near the Sea of Galilee. Israel sent Mirage jets against the Syrian positions; in the air battle that followed six Syrian MiG-21s were shot down and Israeli jets flew over Damascus. Syria turned to Egypt for support under their defence pact. **Hinge Question:** Did Israel's overwhelming victory on 7 April deter Syria, or did it make a wider war more likely?",
+                "hinge_question": "Did Israel's overwhelming victory on 7 April deter Syria, or did it make a wider war more likely?"
               },
               "perspective_pair": {
                 "framing_note": "The same air battle was described in opposite ways; comparing the two accounts shows why each government felt justified and why the crisis escalated.",
@@ -7875,7 +7874,8 @@ const cme_new = {
                   "text_type": "summary",
                   "provenance": "Summary of Syrian government statements and radio broadcasts, April 1967."
                 }
-              }
+              },
+              "question": "Israel blames Syrian shelling; Syria blames Israeli provocation. Why did this one air battle push the region towards war?"
             }
           ],
           "image": "/images/cme_plate_ein_gev_sea_of_galilee.jpg",
@@ -7898,13 +7898,11 @@ const cme_new = {
           "desc": "Paired written extracts: the 1964 Palestinian National Charter and a summary of Israeli Prime Minister Levi Eshkol's position on the Jordan waters.",
           "provenance": "Side A: Palestinian National Charter, adopted by the first Palestine National Council, East Jerusalem, 28 May 1964 (English translation). Side B: summary of Israeli government statements, 1964. Photo: Ahmad Shukeiri, c. 1965 (Wikimedia Commons, public domain).",
           "citation": "Palestinian National Charter (1964), Articles 1 and 17; Israeli government statements on the Jordan waters (1964).",
-          "hinge_question": "Was the PLO founded in 1964 mainly to give Palestinians their own voice, or to let Arab governments control Palestinian resistance?",
-          "source_context": "Arab leaders meeting in Cairo in January 1964 agreed to oppose Israel's National Water Carrier and to back a Palestinian organisation under Arab League sponsorship. In May 1964 a Palestinian congress in Jordanian-ruled East Jerusalem founded the PLO and adopted its National Charter. Israel saw the PLO and the Arab water-diversion plan as two parts of one hostile strategy. **Hinge Question:** Was the PLO founded in 1964 mainly to give Palestinians their own voice, or to let Arab governments control Palestinian resistance?",
+          "source_context": "Arab leaders meeting in Cairo in January 1964 agreed to oppose Israel's National Water Carrier and to back a Palestinian organisation under Arab League sponsorship. In May 1964 a Palestinian congress in Jordanian-ruled East Jerusalem founded the PLO and adopted its National Charter. Israel saw the PLO and the Arab water-diversion plan as two parts of one hostile strategy.",
           "context": "The January 1964 Arab summit in Cairo backed a Palestinian \"entity\"; the PLO was founded in East Jerusalem that May under Ahmad Shukeiri.",
           "question_badge": "Competing Perspectives",
           "question_type": "Competing Perspectives",
-          "enquiry_question": "The Charter calls Israel's creation \"null and void\", while Eshkol defends Israel's water project. Why did both sides feel threatened in 1964?",
-          "model_answer": "The Charter showed that the new PLO rejected Israel's existence completely, so Israeli leaders saw it as proof that Arab states still aimed to destroy Israel. Eshkol saw pumping Jordan water as Israel's legal right, while Arab leaders saw it as theft of shared water. Each side therefore read the other's 1964 moves as aggression.",
+          "model_answer": "The Charter showed that the new PLO rejected Israel's existence completely, so Israeli leaders saw it as proof that Arab states still aimed to destroy Israel. Eshkol saw pumping Jordan water as Israel's legal right, while Arab leaders saw it as theft of shared water; Each side therefore read the other's 1964 moves as aggression.",
           "provenance_clues": {
             "author": "Side A: the Palestine National Council (PLO founding congress). Side B: Prime Minister Levi Eshkol and the Israeli government.",
             "audience": "Side A: Palestinians and Arab governments. Side B: Israelis, the United States and other foreign governments.",
@@ -7912,7 +7910,8 @@ const cme_new = {
             "hinge_question": "Was the PLO founded in 1964 mainly to give Palestinians their own voice, or to let Arab governments control Palestinian resistance?"
           },
           "teacher_notes": {
-            "source_context": "Arab leaders meeting in Cairo in January 1964 agreed to oppose Israel's National Water Carrier and to back a Palestinian organisation under Arab League sponsorship. In May 1964 a Palestinian congress in Jordanian-ruled East Jerusalem founded the PLO and adopted its National Charter. Israel saw the PLO and the Arab water-diversion plan as two parts of one hostile strategy. **Hinge Question:** Was the PLO founded in 1964 mainly to give Palestinians their own voice, or to let Arab governments control Palestinian resistance?"
+            "source_context": "Arab leaders meeting in Cairo in January 1964 agreed to oppose Israel's National Water Carrier and to back a Palestinian organisation under Arab League sponsorship. In May 1964 a Palestinian congress in Jordanian-ruled East Jerusalem founded the PLO and adopted its National Charter. Israel saw the PLO and the Arab water-diversion plan as two parts of one hostile strategy. **Hinge Question:** Was the PLO founded in 1964 mainly to give Palestinians their own voice, or to let Arab governments control Palestinian resistance?",
+            "hinge_question": "Was the PLO founded in 1964 mainly to give Palestinians their own voice, or to let Arab governments control Palestinian resistance?"
           },
           "perspective_pair": {
             "framing_note": "Both texts come from 1964, the year the PLO was founded and Israel's water carrier opened; reading them together shows how each side interpreted the other's actions as a threat.",
@@ -7934,7 +7933,8 @@ const cme_new = {
               "provenance": "Summary of Israeli government statements to the Knesset and foreign governments, 1964.",
               "image": "/units/cme_new/assets/card_eshkol.png"
             }
-          }
+          },
+          "question": "The Charter calls Israel's creation \"null and void\", while Eshkol defends Israel's water project. Why did both sides feel threatened in 1964?"
         },
         {
           "id": "cme_l5_source_b",
@@ -7948,13 +7948,11 @@ const cme_new = {
           "desc": "Israel Government Press Office photograph of the Banias spring and pools, June 1967.",
           "provenance": "Israel Government Press Office (GPO) National Photo Collection, June 1967 (via Wikimedia Commons, File:Banias_1967.jpg).",
           "citation": "Israel Government Press Office / Wikimedia Commons.",
-          "hinge_question": "Was the water dispute a genuine fight over survival, or a symbol both sides used to justify hostility?",
-          "source_context": "After Israel opened its National Water Carrier in 1964, the Arab League backed a Headwater Diversion Plan to redirect the Banias and Hasbani streams before they reached Israel. Israeli tanks, artillery and aircraft struck the Syrian earth-moving equipment between 1965 and 1966, turning a water dispute into regular border fighting. **Hinge Question:** Was the water dispute a genuine fight over survival, or a symbol both sides used to justify hostility?",
+          "source_context": "After Israel opened its National Water Carrier in 1964, the Arab League backed a Headwater Diversion Plan to redirect the Banias and Hasbani streams before they reached Israel. Israeli tanks, artillery and aircraft struck the Syrian earth-moving equipment between 1965 and 1966, turning a water dispute into regular border fighting.",
           "context": "Syria and Jordan tried to divert the Jordan's northern headwaters (the Banias and Hasbani) away from Israel in 1965–66.",
           "question_badge": "Perspective & Motive",
           "question_type": "Perspective & Motive",
-          "enquiry_question": "The Banias spring fed the River Jordan from Syrian-held land. Why did both sides think it was worth fighting over?",
-          "model_answer": "The Banias was one of the River Jordan's three main sources, so whoever controlled it could cut or protect the water flowing to Israel. Syria saw diverting it as a lawful way to stop Israel taking shared Arab water, while Israel saw diversion as an attack on its survival in a dry land. That is why Israel bombed the Syrian diversion works in 1965–66.",
+          "model_answer": "The Banias was one of the River Jordan's three main sources, so whoever controlled it could cut or protect the water flowing to Israel. Syria saw diverting it as a lawful way to stop Israel taking shared Arab water, while Israel saw diversion as an attack on its survival in a dry land; that is why Israel bombed the Syrian diversion works in 1965–66.",
           "provenance_clues": {
             "author": "Israel Government Press Office photographer.",
             "audience": "Israeli and international newspapers in 1967.",
@@ -7962,8 +7960,10 @@ const cme_new = {
             "hinge_question": "Was the water dispute a genuine fight over survival, or a symbol both sides used to justify hostility?"
           },
           "teacher_notes": {
-            "source_context": "After Israel opened its National Water Carrier in 1964, the Arab League backed a Headwater Diversion Plan to redirect the Banias and Hasbani streams before they reached Israel. Israeli tanks, artillery and aircraft struck the Syrian earth-moving equipment between 1965 and 1966, turning a water dispute into regular border fighting. **Hinge Question:** Was the water dispute a genuine fight over survival, or a symbol both sides used to justify hostility?"
-          }
+            "source_context": "After Israel opened its National Water Carrier in 1964, the Arab League backed a Headwater Diversion Plan to redirect the Banias and Hasbani streams before they reached Israel. Israeli tanks, artillery and aircraft struck the Syrian earth-moving equipment between 1965 and 1966, turning a water dispute into regular border fighting. **Hinge Question:** Was the water dispute a genuine fight over survival, or a symbol both sides used to justify hostility?",
+            "hinge_question": "Was the water dispute a genuine fight over survival, or a symbol both sides used to justify hostility?"
+          },
+          "question": "The Banias spring fed the River Jordan from Syrian-held land. Why did both sides think it was worth fighting over?"
         },
         {
           "id": "cme_l5_source_c",
@@ -7977,13 +7977,11 @@ const cme_new = {
           "desc": "Later US government relief map of the Golan Heights; it also shows post-1967 changes such as Israeli settlements and the UN disengagement zone.",
           "provenance": "US Central Intelligence Agency relief map of the Golan Heights (published after 1974; public domain US government work). Used here to show the geography of the 1960s border.",
           "citation": "US Central Intelligence Agency, Golan Heights relief map (public domain).",
-          "hinge_question": "Did Syria's position on the high ground make it feel safe enough to back Fatah raids, or did it make Israeli retaliation inevitable?",
-          "source_context": "Fatah began raids into Israel in January 1965. After a radical Ba'athist faction seized power in Damascus in February 1966, Syria gave Fatah weapons, training and bases. Syrian artillery on the Golan Heights regularly fired on Israeli farmers working disputed land below, and Israeli commanders warned that Syria would face heavy retaliation. **Hinge Question:** Did Syria's position on the high ground make it feel safe enough to back Fatah raids, or did it make Israeli retaliation inevitable?",
+          "source_context": "Fatah began raids into Israel in January 1965. After a radical Ba'athist faction seized power in Damascus in February 1966, Syria gave Fatah weapons, training and bases. Syrian artillery on the Golan Heights regularly fired on Israeli farmers working disputed land below, and Israeli commanders warned that Syria would face heavy retaliation.",
           "context": "From 1966 a radical government in Damascus armed and sheltered Fatah, while Syrian guns on the Golan shelled the Hula Valley.",
           "question_badge": "Human Impact",
           "question_type": "Human Impact",
-          "enquiry_question": "The map shows the Golan rising steeply above Hula Valley farms. How did this height shape daily life near the border?",
-          "model_answer": "Syrian gunners on the heights could see and shell Israeli tractors and kibbutzim in the valley, so farming the border fields became dangerous and frightening. Syria saw the slopes as a natural defence against a stronger Israel. The geography helped turn Fatah raids and farming disputes into artillery duels and Israeli threats of retaliation.",
+          "model_answer": "Syrian gunners on the heights could see and shell Israeli tractors and kibbutzim in the valley, so farming the border fields became dangerous and frightening. Syria saw the slopes as a natural defence against a stronger Israel; the geography helped turn Fatah raids and farming disputes into artillery duels and Israeli threats of retaliation.",
           "provenance_clues": {
             "author": "US government cartographers (CIA).",
             "audience": "US officials and analysts.",
@@ -7991,8 +7989,10 @@ const cme_new = {
             "hinge_question": "Did Syria's position on the high ground make it feel safe enough to back Fatah raids, or did it make Israeli retaliation inevitable?"
           },
           "teacher_notes": {
-            "source_context": "Fatah began raids into Israel in January 1965. After a radical Ba'athist faction seized power in Damascus in February 1966, Syria gave Fatah weapons, training and bases. Syrian artillery on the Golan Heights regularly fired on Israeli farmers working disputed land below, and Israeli commanders warned that Syria would face heavy retaliation. **Hinge Question:** Did Syria's position on the high ground make it feel safe enough to back Fatah raids, or did it make Israeli retaliation inevitable?"
-          }
+            "source_context": "Fatah began raids into Israel in January 1965. After a radical Ba'athist faction seized power in Damascus in February 1966, Syria gave Fatah weapons, training and bases. Syrian artillery on the Golan Heights regularly fired on Israeli farmers working disputed land below, and Israeli commanders warned that Syria would face heavy retaliation. **Hinge Question:** Did Syria's position on the high ground make it feel safe enough to back Fatah raids, or did it make Israeli retaliation inevitable?",
+            "hinge_question": "Did Syria's position on the high ground make it feel safe enough to back Fatah raids, or did it make Israeli retaliation inevitable?"
+          },
+          "question": "The map shows the Golan rising steeply above Hula Valley farms. How did this height shape daily life near the border?"
         },
         {
           "id": "cme_l5_source_d",
@@ -8006,13 +8006,11 @@ const cme_new = {
           "desc": "Photograph of the 13 November 1966 Samu raid, with the operative paragraphs of UN Security Council Resolution 228 (25 November 1966).",
           "provenance": "Text: UN Security Council Resolution 228, adopted 25 November 1966. Photo: Mickey Astel / Bamahane (IDF magazine), 13 November 1966, via Wikimedia Commons (CC BY-SA 3.0).",
           "citation": "United Nations Security Council, S/RES/228 (1966); Wikimedia Commons, File:Samu_Incident._VI.jpg.",
-          "hinge_question": "Did the Samu raid make Israel safer, or did it push Jordan into the arms of Nasser?",
-          "source_context": "On 13 November 1966 Israel sent troops, tanks and aircraft against the village of Samu, south of Hebron, in reprisal for a Fatah landmine. Fighting with the Jordanian army killed 15 Jordanian soldiers and many houses were destroyed. Twelve days later the UN Security Council censured Israel, and riots against King Hussein spread across the West Bank. **Hinge Question:** Did the Samu raid make Israel safer, or did it push Jordan into the arms of Nasser?",
+          "source_context": "On 13 November 1966 Israel sent troops, tanks and aircraft against the village of Samu, south of Hebron, in reprisal for a Fatah landmine. Fighting with the Jordanian army killed 15 Jordanian soldiers and many houses were destroyed. Twelve days later the UN Security Council censured Israel, and riots against King Hussein spread across the West Bank.",
           "context": "After a landmine killed three Israeli soldiers, Israel launched a large daylight reprisal raid on Samu in the Jordanian-ruled West Bank on 13 November 1966.",
           "question_badge": "Turning Point Insight",
           "question_type": "Turning Point Insight",
-          "enquiry_question": "The UN \"censures\" Israel for a \"large-scale military action\" at Samu. Why did this raid weaken King Hussein rather than Fatah?",
-          "model_answer": "Israel struck a Jordanian village even though most Fatah raids were backed by Syria, and 15 Jordanian soldiers were killed. West Bank Palestinians rioted, accusing Hussein of failing to protect them, while other Arab states mocked him. The humiliation pushed Hussein to take a harder line and, in May 1967, to join Nasser.",
+          "model_answer": "Israel struck a Jordanian village even though most Fatah raids were backed by Syria, and 15 Jordanian soldiers were killed. West Bank Palestinians rioted, accusing Hussein of failing to protect them, while other Arab states mocked him; the humiliation pushed Hussein to take a harder line and, in May 1967, to join Nasser.",
           "provenance_clues": {
             "author": "Text: the 15-member UN Security Council. Photo: an Israeli army magazine photographer.",
             "audience": "Text: governments worldwide, especially Israel and Jordan. Photo: Israeli soldiers and the Israeli public.",
@@ -8020,10 +8018,12 @@ const cme_new = {
             "hinge_question": "Did the Samu raid make Israel safer, or did it push Jordan into the arms of Nasser?"
           },
           "teacher_notes": {
-            "source_context": "On 13 November 1966 Israel sent troops, tanks and aircraft against the village of Samu, south of Hebron, in reprisal for a Fatah landmine. Fighting with the Jordanian army killed 15 Jordanian soldiers and many houses were destroyed. Twelve days later the UN Security Council censured Israel, and riots against King Hussein spread across the West Bank. **Hinge Question:** Did the Samu raid make Israel safer, or did it push Jordan into the arms of Nasser?"
+            "source_context": "On 13 November 1966 Israel sent troops, tanks and aircraft against the village of Samu, south of Hebron, in reprisal for a Fatah landmine. Fighting with the Jordanian army killed 15 Jordanian soldiers and many houses were destroyed. Twelve days later the UN Security Council censured Israel, and riots against King Hussein spread across the West Bank. **Hinge Question:** Did the Samu raid make Israel safer, or did it push Jordan into the arms of Nasser?",
+            "hinge_question": "Did the Samu raid make Israel safer, or did it push Jordan into the arms of Nasser?"
           },
           "text": "1. Deplores the loss of life and heavy damage to property resulting from the action of the Government of Israel on 13 November 1966; 2. Censures Israel for this large-scale military action in violation of the United Nations Charter and of the General Armistice Agreement between Israel and Jordan; 3. Emphasizes to Israel that actions of military reprisal cannot be tolerated and that, if they are repeated, the Security Council will have to consider further and more effective steps as envisaged in the Charter to ensure against the repetition of such acts.",
-          "text_type": "verbatim"
+          "text_type": "verbatim",
+          "question": "The UN \"censures\" Israel for a \"large-scale military action\" at Samu. Why did this raid weaken King Hussein rather than Fatah?"
         },
         {
           "id": "cme_l5_source_e",
@@ -8037,13 +8037,11 @@ const cme_new = {
           "desc": "Paired summaries of the Israeli and Syrian versions of the 7 April 1967 air battle, with a photograph of the French-built Mirage jet used by Israel.",
           "provenance": "Side A: summary of Israel Defense Forces statements, April 1967. Side B: summary of Syrian government statements, April 1967. Photo: IPPA photographer, 1970 (National Library of Israel), via Wikimedia Commons (CC BY 4.0).",
           "citation": "Israeli and Syrian official statements, April 1967; Wikimedia Commons (IPPA / Dan Hadani collection).",
-          "hinge_question": "Did Israel's overwhelming victory on 7 April deter Syria, or did it make a wider war more likely?",
-          "source_context": "On 7 April 1967 Syrian guns fired on an Israeli tractor ploughing disputed land in the demilitarised zone near the Sea of Galilee. Israel sent Mirage jets against the Syrian positions; in the air battle that followed six Syrian MiG-21s were shot down and Israeli jets flew over Damascus. Syria turned to Egypt for support under their defence pact. **Hinge Question:** Did Israel's overwhelming victory on 7 April deter Syria, or did it make a wider war more likely?",
+          "source_context": "On 7 April 1967 Syrian guns fired on an Israeli tractor ploughing disputed land in the demilitarised zone near the Sea of Galilee. Israel sent Mirage jets against the Syrian positions; in the air battle that followed six Syrian MiG-21s were shot down and Israeli jets flew over Damascus. Syria turned to Egypt for support under their defence pact.",
           "context": "On 7 April 1967 a clash over a tractor in the demilitarised zone grew into an air battle in which Israel shot down six Syrian MiG-21s.",
           "question_badge": "Competing Perspectives",
           "question_type": "Competing Perspectives",
-          "enquiry_question": "Israel blames Syrian shelling; Syria blames Israeli provocation. Why did this one air battle push the region towards war?",
-          "model_answer": "Each side blamed the other for the fighting over farmland in the demilitarised zone, so neither felt it had started the clash. Losing six MiGs in public humiliated Syria, which then demanded that Egypt honour their November 1966 defence pact. That pressure, added to taunts that Nasser was hiding behind UN troops, helped push him into the May 1967 crisis.",
+          "model_answer": "Each side blamed the other for the fighting over farmland in the demilitarised zone, so neither felt it had started the clash. Losing six MiGs in public humiliated Syria, which then demanded that Egypt honour their November 1966 defence pact; that pressure, added to taunts that Nasser was hiding behind UN troops, helped push him into the May 1967 crisis.",
           "provenance_clues": {
             "author": "Side A: the Israel Defense Forces. Side B: the Syrian government.",
             "audience": "Side A: Israelis and foreign governments. Side B: Syrians and the wider Arab world.",
@@ -8051,7 +8049,8 @@ const cme_new = {
             "hinge_question": "Did Israel's overwhelming victory on 7 April deter Syria, or did it make a wider war more likely?"
           },
           "teacher_notes": {
-            "source_context": "On 7 April 1967 Syrian guns fired on an Israeli tractor ploughing disputed land in the demilitarised zone near the Sea of Galilee. Israel sent Mirage jets against the Syrian positions; in the air battle that followed six Syrian MiG-21s were shot down and Israeli jets flew over Damascus. Syria turned to Egypt for support under their defence pact. **Hinge Question:** Did Israel's overwhelming victory on 7 April deter Syria, or did it make a wider war more likely?"
+            "source_context": "On 7 April 1967 Syrian guns fired on an Israeli tractor ploughing disputed land in the demilitarised zone near the Sea of Galilee. Israel sent Mirage jets against the Syrian positions; in the air battle that followed six Syrian MiG-21s were shot down and Israeli jets flew over Damascus. Syria turned to Egypt for support under their defence pact. **Hinge Question:** Did Israel's overwhelming victory on 7 April deter Syria, or did it make a wider war more likely?",
+            "hinge_question": "Did Israel's overwhelming victory on 7 April deter Syria, or did it make a wider war more likely?"
           },
           "perspective_pair": {
             "framing_note": "The same air battle was described in opposite ways; comparing the two accounts shows why each government felt justified and why the crisis escalated.",
@@ -8071,7 +8070,8 @@ const cme_new = {
               "text_type": "summary",
               "provenance": "Summary of Syrian government statements and radio broadcasts, April 1967."
             }
-          }
+          },
+          "question": "Israel blames Syrian shelling; Syria blames Israeli provocation. Why did this one air battle push the region towards war?"
         }
       ],
       "exam_practice": {
@@ -9161,13 +9161,11 @@ const cme_new = {
               "desc": "Map of the Sinai Peninsula and Gulf of Aqaba with paired summaries of Nasser's announcement of 22 May 1967 and the Israeli government's response.",
               "provenance": "Map: US Central Intelligence Agency relief map of the Sinai Peninsula (public domain US government work). Side A: summary of Nasser's speech at Bir Gifgafa air base, 22 May 1967. Side B: summary of Prime Minister Eshkol's statement to the Knesset, 23 May 1967.",
               "citation": "US CIA Sinai Peninsula map; Nasser speech, 22 May 1967; Eshkol Knesset statement, 23 May 1967.",
-              "hinge_question": "By closing the Straits, did Nasser choose war, or did he gamble that Israel and the great powers would let him win without fighting?",
-              "source_context": "A false Soviet warning on 13 May 1967 claimed Israel was massing troops against Syria. Nasser sent about 100,000 troops into Sinai, demanded the withdrawal of UNEF, and on 22 May closed the Straits of Tiran to Israeli ships — crossing a red line Israel had declared since 1957. **Hinge Question:** By closing the Straits, did Nasser choose war, or did he gamble that Israel and the great powers would let him win without fighting?",
+              "source_context": "A false Soviet warning on 13 May 1967 claimed Israel was massing troops against Syria. Nasser sent about 100,000 troops into Sinai, demanded the withdrawal of UNEF, and on 22 May closed the Straits of Tiran to Israeli ships — crossing a red line Israel had declared since 1957.",
               "context": "After expelling UN peacekeepers from Sinai, Nasser announced on 22 May 1967 that the Straits of Tiran were closed to Israeli shipping.",
               "question_badge": "Competing Perspectives",
               "question_type": "Competing Perspectives",
-              "enquiry_question": "Nasser calls the Gulf of Aqaba Egyptian water; Eshkol calls the blockade aggression. Why could neither leader back down?",
-              "model_answer": "Nasser had promised to defend Syria and lead the Arab world, so reopening the Straits would have looked like surrender to Israel. Israel had warned since 1957 that closing Tiran would be an act of war, because Eilat was its only route to the Red Sea and its oil supply. Backing down would have cost each leader his credibility at home.",
+              "model_answer": "Nasser had promised to defend Syria and lead the Arab world, so reopening the Straits would have looked like surrender to Israel. Israel had warned since 1957 that closing Tiran would be an act of war, because Eilat was its only route to the Red Sea and its oil supply; Backing down would have cost each leader his credibility at home.",
               "provenance_clues": {
                 "author": "Side A: President Gamal Abdel Nasser of Egypt. Side B: Prime Minister Levi Eshkol of Israel.",
                 "audience": "Side A: Egyptian airmen and the wider Arab public. Side B: the Knesset, Israelis and the Western powers.",
@@ -9175,7 +9173,8 @@ const cme_new = {
                 "hinge_question": "By closing the Straits, did Nasser choose war, or did he gamble that Israel and the great powers would let him win without fighting?"
               },
               "teacher_notes": {
-                "source_context": "A false Soviet warning on 13 May 1967 claimed Israel was massing troops against Syria. Nasser sent about 100,000 troops into Sinai, demanded the withdrawal of UNEF, and on 22 May closed the Straits of Tiran to Israeli ships — crossing a red line Israel had declared since 1957. **Hinge Question:** By closing the Straits, did Nasser choose war, or did he gamble that Israel and the great powers would let him win without fighting?"
+                "source_context": "A false Soviet warning on 13 May 1967 claimed Israel was massing troops against Syria. Nasser sent about 100,000 troops into Sinai, demanded the withdrawal of UNEF, and on 22 May closed the Straits of Tiran to Israeli ships — crossing a red line Israel had declared since 1957. **Hinge Question:** By closing the Straits, did Nasser choose war, or did he gamble that Israel and the great powers would let him win without fighting?",
+                "hinge_question": "By closing the Straits, did Nasser choose war, or did he gamble that Israel and the great powers would let him win without fighting?"
               },
               "perspective_pair": {
                 "framing_note": "Read together, the two statements show how one narrow sea lane became a test of national honour and legal rights for both governments.",
@@ -9195,7 +9194,8 @@ const cme_new = {
                   "text_type": "summary",
                   "provenance": "Summary of Eshkol's statement to the Knesset, 23 May 1967."
                 }
-              }
+              },
+              "question": "Nasser calls the Gulf of Aqaba Egyptian water; Eshkol calls the blockade aggression. Why could neither leader back down?"
             }
           ],
           "stage_hook_map": {
@@ -9280,13 +9280,11 @@ const cme_new = {
               "desc": "Photograph of the signing of the 30 May 1967 defence pact, with paired summaries of the Egyptian–Jordanian position and the Israeli view.",
               "provenance": "Photo: photographer not credited, Cairo, 30 May 1967 (Wikimedia Commons, public domain). Side A: summary of the terms and public statements of the Egyptian–Jordanian pact. Side B: summary of Israeli government and public reactions, late May 1967; side B photo LBJ Library, 26 May 1967.",
               "citation": "Egyptian–Jordanian Joint Defence Agreement, 30 May 1967; LBJ Presidential Library photo, 26 May 1967.",
-              "hinge_question": "Why did King Hussein sign a pact with his old rival Nasser, even though it risked dragging Jordan into a war it might lose?",
-              "source_context": "King Hussein had been attacked by Nasser's radio for years, but after the Samu raid and the May crisis he feared that staying out of an Arab–Israeli war would cost him his throne. On 30 May he signed a joint defence pact in Cairo; Iraqi troops soon entered Jordan. In Israel, Prime Minister Eshkol formed a national unity government on 1 June and appointed Moshe Dayan Minister of Defence. **Hinge Question:** Why did King Hussein sign a pact with his old rival Nasser, even though it risked dragging Jordan into a war it might lose?",
+              "source_context": "King Hussein had been attacked by Nasser's radio for years, but after the Samu raid and the May crisis he feared that staying out of an Arab–Israeli war would cost him his throne. On 30 May he signed a joint defence pact in Cairo; Iraqi troops soon entered Jordan. In Israel, Prime Minister Eshkol formed a national unity government on 1 June and appointed Moshe Dayan Minister of Defence.",
               "context": "On 30 May 1967 King Hussein flew to Cairo and signed a defence pact with Nasser, placing Jordan's army under Egyptian command.",
               "question_badge": "Competing Perspectives",
               "question_type": "Competing Perspectives",
-              "enquiry_question": "Egypt and Jordan called their 30 May pact self-defence; Israelis saw encirclement. How did this pact change Israel's choices?",
-              "model_answer": "The pact put Jordan's army under Egyptian command, so Israel now faced hostile forces on its southern, eastern and northern borders at once. With President Johnson unable to organise a convoy to reopen the Straits, many Israeli leaders concluded that waiting made Israel weaker. The pact therefore strengthened the case for a pre-emptive strike.",
+              "model_answer": "The pact put Jordan's army under Egyptian command, so Israel now faced hostile forces on its southern, eastern and northern borders at once. With President Johnson unable to organise a convoy to reopen the Straits, many Israeli leaders concluded that waiting made Israel weaker; the pact therefore strengthened the case for a pre-emptive strike.",
               "provenance_clues": {
                 "author": "Photo: an Egyptian press photographer. Side A: the Egyptian and Jordanian governments. Side B: Israeli leaders and diplomats.",
                 "audience": "Arab publics, Israelis and the great powers.",
@@ -9294,7 +9292,8 @@ const cme_new = {
                 "hinge_question": "Why did King Hussein sign a pact with his old rival Nasser, even though it risked dragging Jordan into a war it might lose?"
               },
               "teacher_notes": {
-                "source_context": "King Hussein had been attacked by Nasser's radio for years, but after the Samu raid and the May crisis he feared that staying out of an Arab–Israeli war would cost him his throne. On 30 May he signed a joint defence pact in Cairo; Iraqi troops soon entered Jordan. In Israel, Prime Minister Eshkol formed a national unity government on 1 June and appointed Moshe Dayan Minister of Defence. **Hinge Question:** Why did King Hussein sign a pact with his old rival Nasser, even though it risked dragging Jordan into a war it might lose?"
+                "source_context": "King Hussein had been attacked by Nasser's radio for years, but after the Samu raid and the May crisis he feared that staying out of an Arab–Israeli war would cost him his throne. On 30 May he signed a joint defence pact in Cairo; Iraqi troops soon entered Jordan. In Israel, Prime Minister Eshkol formed a national unity government on 1 June and appointed Moshe Dayan Minister of Defence. **Hinge Question:** Why did King Hussein sign a pact with his old rival Nasser, even though it risked dragging Jordan into a war it might lose?",
+                "hinge_question": "Why did King Hussein sign a pact with his old rival Nasser, even though it risked dragging Jordan into a war it might lose?"
               },
               "perspective_pair": {
                 "framing_note": "The same agreement looked defensive from Cairo and Amman and threatening from Tel Aviv and Jerusalem; comparing the two views explains the speed of the final slide to war.",
@@ -9315,7 +9314,8 @@ const cme_new = {
                   "provenance": "Summary of Israeli government records and public reaction, late May 1967; photo LBJ Presidential Library, 26 May 1967.",
                   "image": "/images/cme_lbj_eban_white_house_may_1967.jpg"
                 }
-              }
+              },
+              "question": "Egypt and Jordan called their 30 May pact self-defence; Israelis saw encirclement. How did this pact change Israel's choices?"
             }
           ],
           "isReversed": false,
@@ -9347,13 +9347,11 @@ const cme_new = {
               "desc": "Israel Defense Forces photograph of an armoured column in Sinai during the Six-Day War.",
               "provenance": "Israel Defense Forces archive photograph, June 1967 (via Wikimedia Commons, File:Six-Day_War._IDF_14th_Armored_Brigade.jpg).",
               "citation": "Israel Defense Forces and Defense Establishment Archives / Wikimedia Commons.",
-              "hinge_question": "Was Israel's victory decided by the air strike itself, or by the way its ground forces exploited it?",
-              "source_context": "At 07:45 on 5 June 1967 Israeli jets flew low across the Mediterranean and struck Egyptian airfields, cratering runways and destroying parked aircraft. By the afternoon the Jordanian and Syrian air forces had also been crippled. Israeli armoured divisions began their advance into Sinai the same morning under skies their own air force controlled. **Hinge Question:** Was Israel's victory decided by the air strike itself, or by the way its ground forces exploited it?",
+              "source_context": "At 07:45 on 5 June 1967 Israeli jets flew low across the Mediterranean and struck Egyptian airfields, cratering runways and destroying parked aircraft. By the afternoon the Jordanian and Syrian air forces had also been crippled. Israeli armoured divisions began their advance into Sinai the same morning under skies their own air force controlled.",
               "context": "On 5 June 1967 Israel's pre-emptive air strike destroyed over 300 Egyptian aircraft, giving Israeli ground forces air supremacy.",
               "question_badge": "Turning Point Insight",
               "question_type": "Turning Point Insight",
-              "enquiry_question": "These tanks cross open desert without fear of air attack. What made this possible after the morning of 5 June?",
-              "model_answer": "Israel's surprise air strike on the morning of 5 June destroyed most of the Egyptian air force on the ground within about three hours. With no enemy aircraft left to attack them, Israeli tank columns could move fast across open desert, while retreating Egyptian columns were exposed to Israeli jets. The first three hours effectively decided the war.",
+              "model_answer": "Israel's surprise air strike on the morning of 5 June destroyed most of the Egyptian air force on the ground within about three hours. With no enemy aircraft left to attack them, Israeli tank columns could move fast across open desert, while retreating Egyptian columns were exposed to Israeli jets; the first three hours effectively decided the war.",
               "provenance_clues": {
                 "author": "An Israel Defense Forces photographer.",
                 "audience": "Israeli army records and the Israeli press.",
@@ -9361,8 +9359,10 @@ const cme_new = {
                 "hinge_question": "Was Israel's victory decided by the air strike itself, or by the way its ground forces exploited it?"
               },
               "teacher_notes": {
-                "source_context": "At 07:45 on 5 June 1967 Israeli jets flew low across the Mediterranean and struck Egyptian airfields, cratering runways and destroying parked aircraft. By the afternoon the Jordanian and Syrian air forces had also been crippled. Israeli armoured divisions began their advance into Sinai the same morning under skies their own air force controlled. **Hinge Question:** Was Israel's victory decided by the air strike itself, or by the way its ground forces exploited it?"
-              }
+                "source_context": "At 07:45 on 5 June 1967 Israeli jets flew low across the Mediterranean and struck Egyptian airfields, cratering runways and destroying parked aircraft. By the afternoon the Jordanian and Syrian air forces had also been crippled. Israeli armoured divisions began their advance into Sinai the same morning under skies their own air force controlled. **Hinge Question:** Was Israel's victory decided by the air strike itself, or by the way its ground forces exploited it?",
+                "hinge_question": "Was Israel's victory decided by the air strike itself, or by the way its ground forces exploited it?"
+              },
+              "question": "These tanks cross open desert without fear of air attack. What made this possible after the morning of 5 June?"
             }
           ],
           "image": "/images/cme_six_day_war_airfield_1967.jpg",
@@ -9394,13 +9394,11 @@ const cme_new = {
               "desc": "Israel Government Press Office photograph taken on 7 June 1967, the day Israeli paratroopers captured the Old City from Jordan.",
               "provenance": "Israel Government Press Office (GPO), Jerusalem, 7 June 1967.",
               "citation": "Israel Government Press Office National Photo Collection.",
-              "hinge_question": "Why did King Hussein enter the war on 5 June despite Israeli appeals to stay out, and what did it cost Jordan?",
-              "source_context": "On 5 June, believing false Egyptian claims of victory, Jordan shelled West Jerusalem despite Israeli messages urging Hussein to stay out. Israel counter-attacked into the West Bank and on 7 June paratroopers stormed the Old City, capturing East Jerusalem and the Western Wall. Meanwhile Israeli divisions reached the Suez Canal and Sharm el-Sheikh by 8 June. **Hinge Question:** Why did King Hussein enter the war on 5 June despite Israeli appeals to stay out, and what did it cost Jordan?",
+              "source_context": "On 5 June, believing false Egyptian claims of victory, Jordan shelled West Jerusalem despite Israeli messages urging Hussein to stay out. Israel counter-attacked into the West Bank and on 7 June paratroopers stormed the Old City, capturing East Jerusalem and the Western Wall. Meanwhile Israeli divisions reached the Suez Canal and Sharm el-Sheikh by 8 June.",
               "context": "Jordan entered the war on 5 June; on 7 June Israeli paratroopers captured East Jerusalem and the Old City.",
               "question_badge": "Turning Point Insight",
               "question_type": "Turning Point Insight",
-              "enquiry_question": "Israel's commanders enter the Old City on 7 June. Why was this a triumph for Israelis but a loss for Arabs?",
-              "model_answer": "For Israelis and Jews worldwide, capturing the Old City was an emotional national and religious triumph because Jews could pray at the Western Wall again after being barred under Jordanian rule since 1948. For Jordanians and Palestinians, however, 7 June meant losing East Jerusalem — including the Haram al-Sharif and al-Aqsa Mosque as well as major Christian holy sites — and placed East Jerusalem's Palestinian residents under Israeli military occupation. Control of Jerusalem therefore became one of the hardest issues in any future peace talks.",
+              "model_answer": "For Israelis and Jews worldwide, capturing the Old City was an emotional national and religious triumph because Jews could pray at the Western Wall again after being barred under Jordanian rule since 1948. For Jordanians and Palestinians, however, 7 June meant losing East Jerusalem — including the Haram al-Sharif and al-Aqsa Mosque as well as major Christian holy sites — and placed East Jerusalem's Palestinian residents under Israeli military occupation; Control of Jerusalem therefore became one of the hardest issues in any future peace talks.",
               "provenance_clues": {
                 "author": "An Israel Government Press Office photographer.",
                 "audience": "Israeli and international newspapers.",
@@ -9408,8 +9406,10 @@ const cme_new = {
                 "hinge_question": "Why did King Hussein enter the war on 5 June despite Israeli appeals to stay out, and what did it cost Jordan?"
               },
               "teacher_notes": {
-                "source_context": "On 5 June, believing false Egyptian claims of victory, Jordan shelled West Jerusalem despite Israeli messages urging Hussein to stay out. Israel counter-attacked into the West Bank and on 7 June paratroopers stormed the Old City, capturing East Jerusalem and the Western Wall. Meanwhile Israeli divisions reached the Suez Canal and Sharm el-Sheikh by 8 June. **Hinge Question:** Why did King Hussein enter the war on 5 June despite Israeli appeals to stay out, and what did it cost Jordan?"
-              }
+                "source_context": "On 5 June, believing false Egyptian claims of victory, Jordan shelled West Jerusalem despite Israeli messages urging Hussein to stay out. Israel counter-attacked into the West Bank and on 7 June paratroopers stormed the Old City, capturing East Jerusalem and the Western Wall. Meanwhile Israeli divisions reached the Suez Canal and Sharm el-Sheikh by 8 June. **Hinge Question:** Why did King Hussein enter the war on 5 June despite Israeli appeals to stay out, and what did it cost Jordan?",
+                "hinge_question": "Why did King Hussein enter the war on 5 June despite Israeli appeals to stay out, and what did it cost Jordan?"
+              },
+              "question": "Israel's commanders enter the Old City on 7 June. Why was this a triumph for Israelis but a loss for Arabs?"
             }
           ],
           "isReversed": true,
@@ -9441,13 +9441,11 @@ const cme_new = {
               "desc": "Bamahane (IDF magazine) photograph of Israeli forces preparing for the Golan assault.",
               "provenance": "Yosef Levita / Bamahane (Israel Defense Forces magazine), 9 June 1967, via Wikimedia Commons (CC BY-SA 3.0).",
               "citation": "Wikimedia Commons, File:Six-Day_War._IDF_force_on_caterpillars_preparing_for_the_ascent_to_the_Golan_Heights.jpg.",
-              "hinge_question": "Did the Six-Day War make Israel more secure, or did its conquests create new problems that would fuel future wars?",
-              "source_context": "With Egypt and Jordan defeated, Moshe Dayan ordered an assault on the Syrian Golan Heights on 9 June 1967. Israeli troops fought uphill through fortified positions and took Quneitra before the ceasefire on 10 June. In six days Israel had taken Sinai, Gaza, the West Bank, East Jerusalem and the Golan Heights. **Hinge Question:** Did the Six-Day War make Israel more secure, or did its conquests create new problems that would fuel future wars?",
+              "source_context": "With Egypt and Jordan defeated, Moshe Dayan ordered an assault on the Syrian Golan Heights on 9 June 1967. Israeli troops fought uphill through fortified positions and took Quneitra before the ceasefire on 10 June. In six days Israel had taken Sinai, Gaza, the West Bank, East Jerusalem and the Golan Heights.",
               "context": "Israel attacked the Golan Heights on 9 June and captured Quneitra before the UN ceasefire on 10 June 1967.",
               "question_badge": "Human Impact",
               "question_type": "Human Impact",
-              "enquiry_question": "Israeli troops prepare to climb the Golan Heights on 9 June. Why did capturing them matter, and who paid the price?",
-              "model_answer": "Taking the Golan removed the Syrian guns that had shelled northern Israeli villages for years and gave Israel a strong defensive buffer. But an estimated 100,000 Syrian residents of the Golan (estimates vary) fled or were expelled and could not return. Across all fronts, victory also placed over a million Palestinians under Israeli military rule.",
+              "model_answer": "Taking the Golan removed the Syrian guns that had shelled northern Israeli villages for years and gave Israel a strong defensive buffer. But an estimated 100,000 Syrian residents of the Golan (estimates vary) fled or were expelled and could not return; across all fronts, victory also placed over a million Palestinians under Israeli military rule.",
               "provenance_clues": {
                 "author": "A photographer for Bamahane, the Israeli army magazine.",
                 "audience": "Israeli soldiers and the Israeli public.",
@@ -9455,8 +9453,10 @@ const cme_new = {
                 "hinge_question": "Did the Six-Day War make Israel more secure, or did its conquests create new problems that would fuel future wars?"
               },
               "teacher_notes": {
-                "source_context": "With Egypt and Jordan defeated, Moshe Dayan ordered an assault on the Syrian Golan Heights on 9 June 1967. Israeli troops fought uphill through fortified positions and took Quneitra before the ceasefire on 10 June. In six days Israel had taken Sinai, Gaza, the West Bank, East Jerusalem and the Golan Heights. **Hinge Question:** Did the Six-Day War make Israel more secure, or did its conquests create new problems that would fuel future wars?"
-              }
+                "source_context": "With Egypt and Jordan defeated, Moshe Dayan ordered an assault on the Syrian Golan Heights on 9 June 1967. Israeli troops fought uphill through fortified positions and took Quneitra before the ceasefire on 10 June. In six days Israel had taken Sinai, Gaza, the West Bank, East Jerusalem and the Golan Heights. **Hinge Question:** Did the Six-Day War make Israel more secure, or did its conquests create new problems that would fuel future wars?",
+                "hinge_question": "Did the Six-Day War make Israel more secure, or did its conquests create new problems that would fuel future wars?"
+              },
+              "question": "Israeli troops prepare to climb the Golan Heights on 9 June. Why did capturing them matter, and who paid the price?"
             }
           ],
           "image": "/images/cme_plate_syrian_bunkers_golan_1967.jpg",
@@ -9479,13 +9479,11 @@ const cme_new = {
           "desc": "Map of the Sinai Peninsula and Gulf of Aqaba with paired summaries of Nasser's announcement of 22 May 1967 and the Israeli government's response.",
           "provenance": "Map: US Central Intelligence Agency relief map of the Sinai Peninsula (public domain US government work). Side A: summary of Nasser's speech at Bir Gifgafa air base, 22 May 1967. Side B: summary of Prime Minister Eshkol's statement to the Knesset, 23 May 1967.",
           "citation": "US CIA Sinai Peninsula map; Nasser speech, 22 May 1967; Eshkol Knesset statement, 23 May 1967.",
-          "hinge_question": "By closing the Straits, did Nasser choose war, or did he gamble that Israel and the great powers would let him win without fighting?",
-          "source_context": "A false Soviet warning on 13 May 1967 claimed Israel was massing troops against Syria. Nasser sent about 100,000 troops into Sinai, demanded the withdrawal of UNEF, and on 22 May closed the Straits of Tiran to Israeli ships — crossing a red line Israel had declared since 1957. **Hinge Question:** By closing the Straits, did Nasser choose war, or did he gamble that Israel and the great powers would let him win without fighting?",
+          "source_context": "A false Soviet warning on 13 May 1967 claimed Israel was massing troops against Syria. Nasser sent about 100,000 troops into Sinai, demanded the withdrawal of UNEF, and on 22 May closed the Straits of Tiran to Israeli ships — crossing a red line Israel had declared since 1957.",
           "context": "After expelling UN peacekeepers from Sinai, Nasser announced on 22 May 1967 that the Straits of Tiran were closed to Israeli shipping.",
           "question_badge": "Competing Perspectives",
           "question_type": "Competing Perspectives",
-          "enquiry_question": "Nasser calls the Gulf of Aqaba Egyptian water; Eshkol calls the blockade aggression. Why could neither leader back down?",
-          "model_answer": "Nasser had promised to defend Syria and lead the Arab world, so reopening the Straits would have looked like surrender to Israel. Israel had warned since 1957 that closing Tiran would be an act of war, because Eilat was its only route to the Red Sea and its oil supply. Backing down would have cost each leader his credibility at home.",
+          "model_answer": "Nasser had promised to defend Syria and lead the Arab world, so reopening the Straits would have looked like surrender to Israel. Israel had warned since 1957 that closing Tiran would be an act of war, because Eilat was its only route to the Red Sea and its oil supply; Backing down would have cost each leader his credibility at home.",
           "provenance_clues": {
             "author": "Side A: President Gamal Abdel Nasser of Egypt. Side B: Prime Minister Levi Eshkol of Israel.",
             "audience": "Side A: Egyptian airmen and the wider Arab public. Side B: the Knesset, Israelis and the Western powers.",
@@ -9493,7 +9491,8 @@ const cme_new = {
             "hinge_question": "By closing the Straits, did Nasser choose war, or did he gamble that Israel and the great powers would let him win without fighting?"
           },
           "teacher_notes": {
-            "source_context": "A false Soviet warning on 13 May 1967 claimed Israel was massing troops against Syria. Nasser sent about 100,000 troops into Sinai, demanded the withdrawal of UNEF, and on 22 May closed the Straits of Tiran to Israeli ships — crossing a red line Israel had declared since 1957. **Hinge Question:** By closing the Straits, did Nasser choose war, or did he gamble that Israel and the great powers would let him win without fighting?"
+            "source_context": "A false Soviet warning on 13 May 1967 claimed Israel was massing troops against Syria. Nasser sent about 100,000 troops into Sinai, demanded the withdrawal of UNEF, and on 22 May closed the Straits of Tiran to Israeli ships — crossing a red line Israel had declared since 1957. **Hinge Question:** By closing the Straits, did Nasser choose war, or did he gamble that Israel and the great powers would let him win without fighting?",
+            "hinge_question": "By closing the Straits, did Nasser choose war, or did he gamble that Israel and the great powers would let him win without fighting?"
           },
           "perspective_pair": {
             "framing_note": "Read together, the two statements show how one narrow sea lane became a test of national honour and legal rights for both governments.",
@@ -9513,7 +9512,8 @@ const cme_new = {
               "text_type": "summary",
               "provenance": "Summary of Eshkol's statement to the Knesset, 23 May 1967."
             }
-          }
+          },
+          "question": "Nasser calls the Gulf of Aqaba Egyptian water; Eshkol calls the blockade aggression. Why could neither leader back down?"
         },
         {
           "id": "cme_l6_source_b",
@@ -9527,13 +9527,11 @@ const cme_new = {
           "desc": "Photograph of the signing of the 30 May 1967 defence pact, with paired summaries of the Egyptian–Jordanian position and the Israeli view.",
           "provenance": "Photo: photographer not credited, Cairo, 30 May 1967 (Wikimedia Commons, public domain). Side A: summary of the terms and public statements of the Egyptian–Jordanian pact. Side B: summary of Israeli government and public reactions, late May 1967; side B photo LBJ Library, 26 May 1967.",
           "citation": "Egyptian–Jordanian Joint Defence Agreement, 30 May 1967; LBJ Presidential Library photo, 26 May 1967.",
-          "hinge_question": "Why did King Hussein sign a pact with his old rival Nasser, even though it risked dragging Jordan into a war it might lose?",
-          "source_context": "King Hussein had been attacked by Nasser's radio for years, but after the Samu raid and the May crisis he feared that staying out of an Arab–Israeli war would cost him his throne. On 30 May he signed a joint defence pact in Cairo; Iraqi troops soon entered Jordan. In Israel, Prime Minister Eshkol formed a national unity government on 1 June and appointed Moshe Dayan Minister of Defence. **Hinge Question:** Why did King Hussein sign a pact with his old rival Nasser, even though it risked dragging Jordan into a war it might lose?",
+          "source_context": "King Hussein had been attacked by Nasser's radio for years, but after the Samu raid and the May crisis he feared that staying out of an Arab–Israeli war would cost him his throne. On 30 May he signed a joint defence pact in Cairo; Iraqi troops soon entered Jordan. In Israel, Prime Minister Eshkol formed a national unity government on 1 June and appointed Moshe Dayan Minister of Defence.",
           "context": "On 30 May 1967 King Hussein flew to Cairo and signed a defence pact with Nasser, placing Jordan's army under Egyptian command.",
           "question_badge": "Competing Perspectives",
           "question_type": "Competing Perspectives",
-          "enquiry_question": "Egypt and Jordan called their 30 May pact self-defence; Israelis saw encirclement. How did this pact change Israel's choices?",
-          "model_answer": "The pact put Jordan's army under Egyptian command, so Israel now faced hostile forces on its southern, eastern and northern borders at once. With President Johnson unable to organise a convoy to reopen the Straits, many Israeli leaders concluded that waiting made Israel weaker. The pact therefore strengthened the case for a pre-emptive strike.",
+          "model_answer": "The pact put Jordan's army under Egyptian command, so Israel now faced hostile forces on its southern, eastern and northern borders at once. With President Johnson unable to organise a convoy to reopen the Straits, many Israeli leaders concluded that waiting made Israel weaker; the pact therefore strengthened the case for a pre-emptive strike.",
           "provenance_clues": {
             "author": "Photo: an Egyptian press photographer. Side A: the Egyptian and Jordanian governments. Side B: Israeli leaders and diplomats.",
             "audience": "Arab publics, Israelis and the great powers.",
@@ -9541,7 +9539,8 @@ const cme_new = {
             "hinge_question": "Why did King Hussein sign a pact with his old rival Nasser, even though it risked dragging Jordan into a war it might lose?"
           },
           "teacher_notes": {
-            "source_context": "King Hussein had been attacked by Nasser's radio for years, but after the Samu raid and the May crisis he feared that staying out of an Arab–Israeli war would cost him his throne. On 30 May he signed a joint defence pact in Cairo; Iraqi troops soon entered Jordan. In Israel, Prime Minister Eshkol formed a national unity government on 1 June and appointed Moshe Dayan Minister of Defence. **Hinge Question:** Why did King Hussein sign a pact with his old rival Nasser, even though it risked dragging Jordan into a war it might lose?"
+            "source_context": "King Hussein had been attacked by Nasser's radio for years, but after the Samu raid and the May crisis he feared that staying out of an Arab–Israeli war would cost him his throne. On 30 May he signed a joint defence pact in Cairo; Iraqi troops soon entered Jordan. In Israel, Prime Minister Eshkol formed a national unity government on 1 June and appointed Moshe Dayan Minister of Defence. **Hinge Question:** Why did King Hussein sign a pact with his old rival Nasser, even though it risked dragging Jordan into a war it might lose?",
+            "hinge_question": "Why did King Hussein sign a pact with his old rival Nasser, even though it risked dragging Jordan into a war it might lose?"
           },
           "perspective_pair": {
             "framing_note": "The same agreement looked defensive from Cairo and Amman and threatening from Tel Aviv and Jerusalem; comparing the two views explains the speed of the final slide to war.",
@@ -9562,7 +9561,8 @@ const cme_new = {
               "provenance": "Summary of Israeli government records and public reaction, late May 1967; photo LBJ Presidential Library, 26 May 1967.",
               "image": "/images/cme_lbj_eban_white_house_may_1967.jpg"
             }
-          }
+          },
+          "question": "Egypt and Jordan called their 30 May pact self-defence; Israelis saw encirclement. How did this pact change Israel's choices?"
         },
         {
           "id": "cme_l6_source_c",
@@ -9576,13 +9576,11 @@ const cme_new = {
           "desc": "Israel Defense Forces photograph of an armoured column in Sinai during the Six-Day War.",
           "provenance": "Israel Defense Forces archive photograph, June 1967 (via Wikimedia Commons, File:Six-Day_War._IDF_14th_Armored_Brigade.jpg).",
           "citation": "Israel Defense Forces and Defense Establishment Archives / Wikimedia Commons.",
-          "hinge_question": "Was Israel's victory decided by the air strike itself, or by the way its ground forces exploited it?",
-          "source_context": "At 07:45 on 5 June 1967 Israeli jets flew low across the Mediterranean and struck Egyptian airfields, cratering runways and destroying parked aircraft. By the afternoon the Jordanian and Syrian air forces had also been crippled. Israeli armoured divisions began their advance into Sinai the same morning under skies their own air force controlled. **Hinge Question:** Was Israel's victory decided by the air strike itself, or by the way its ground forces exploited it?",
+          "source_context": "At 07:45 on 5 June 1967 Israeli jets flew low across the Mediterranean and struck Egyptian airfields, cratering runways and destroying parked aircraft. By the afternoon the Jordanian and Syrian air forces had also been crippled. Israeli armoured divisions began their advance into Sinai the same morning under skies their own air force controlled.",
           "context": "On 5 June 1967 Israel's pre-emptive air strike destroyed over 300 Egyptian aircraft, giving Israeli ground forces air supremacy.",
           "question_badge": "Turning Point Insight",
           "question_type": "Turning Point Insight",
-          "enquiry_question": "These tanks cross open desert without fear of air attack. What made this possible after the morning of 5 June?",
-          "model_answer": "Israel's surprise air strike on the morning of 5 June destroyed most of the Egyptian air force on the ground within about three hours. With no enemy aircraft left to attack them, Israeli tank columns could move fast across open desert, while retreating Egyptian columns were exposed to Israeli jets. The first three hours effectively decided the war.",
+          "model_answer": "Israel's surprise air strike on the morning of 5 June destroyed most of the Egyptian air force on the ground within about three hours. With no enemy aircraft left to attack them, Israeli tank columns could move fast across open desert, while retreating Egyptian columns were exposed to Israeli jets; the first three hours effectively decided the war.",
           "provenance_clues": {
             "author": "An Israel Defense Forces photographer.",
             "audience": "Israeli army records and the Israeli press.",
@@ -9590,8 +9588,10 @@ const cme_new = {
             "hinge_question": "Was Israel's victory decided by the air strike itself, or by the way its ground forces exploited it?"
           },
           "teacher_notes": {
-            "source_context": "At 07:45 on 5 June 1967 Israeli jets flew low across the Mediterranean and struck Egyptian airfields, cratering runways and destroying parked aircraft. By the afternoon the Jordanian and Syrian air forces had also been crippled. Israeli armoured divisions began their advance into Sinai the same morning under skies their own air force controlled. **Hinge Question:** Was Israel's victory decided by the air strike itself, or by the way its ground forces exploited it?"
-          }
+            "source_context": "At 07:45 on 5 June 1967 Israeli jets flew low across the Mediterranean and struck Egyptian airfields, cratering runways and destroying parked aircraft. By the afternoon the Jordanian and Syrian air forces had also been crippled. Israeli armoured divisions began their advance into Sinai the same morning under skies their own air force controlled. **Hinge Question:** Was Israel's victory decided by the air strike itself, or by the way its ground forces exploited it?",
+            "hinge_question": "Was Israel's victory decided by the air strike itself, or by the way its ground forces exploited it?"
+          },
+          "question": "These tanks cross open desert without fear of air attack. What made this possible after the morning of 5 June?"
         },
         {
           "id": "cme_l6_source_d",
@@ -9605,13 +9605,11 @@ const cme_new = {
           "desc": "Israel Government Press Office photograph taken on 7 June 1967, the day Israeli paratroopers captured the Old City from Jordan.",
           "provenance": "Israel Government Press Office (GPO), Jerusalem, 7 June 1967.",
           "citation": "Israel Government Press Office National Photo Collection.",
-          "hinge_question": "Why did King Hussein enter the war on 5 June despite Israeli appeals to stay out, and what did it cost Jordan?",
-          "source_context": "On 5 June, believing false Egyptian claims of victory, Jordan shelled West Jerusalem despite Israeli messages urging Hussein to stay out. Israel counter-attacked into the West Bank and on 7 June paratroopers stormed the Old City, capturing East Jerusalem and the Western Wall. Meanwhile Israeli divisions reached the Suez Canal and Sharm el-Sheikh by 8 June. **Hinge Question:** Why did King Hussein enter the war on 5 June despite Israeli appeals to stay out, and what did it cost Jordan?",
+          "source_context": "On 5 June, believing false Egyptian claims of victory, Jordan shelled West Jerusalem despite Israeli messages urging Hussein to stay out. Israel counter-attacked into the West Bank and on 7 June paratroopers stormed the Old City, capturing East Jerusalem and the Western Wall. Meanwhile Israeli divisions reached the Suez Canal and Sharm el-Sheikh by 8 June.",
           "context": "Jordan entered the war on 5 June; on 7 June Israeli paratroopers captured East Jerusalem and the Old City.",
           "question_badge": "Turning Point Insight",
           "question_type": "Turning Point Insight",
-          "enquiry_question": "Israel's commanders enter the Old City on 7 June. Why was this a triumph for Israelis but a loss for Arabs?",
-          "model_answer": "For Israelis and Jews worldwide, capturing the Old City was an emotional national and religious triumph because Jews could pray at the Western Wall again after being barred under Jordanian rule since 1948. For Jordanians and Palestinians, however, 7 June meant losing East Jerusalem — including the Haram al-Sharif and al-Aqsa Mosque as well as major Christian holy sites — and placed East Jerusalem's Palestinian residents under Israeli military occupation. Control of Jerusalem therefore became one of the hardest issues in any future peace talks.",
+          "model_answer": "For Israelis and Jews worldwide, capturing the Old City was an emotional national and religious triumph because Jews could pray at the Western Wall again after being barred under Jordanian rule since 1948. For Jordanians and Palestinians, however, 7 June meant losing East Jerusalem — including the Haram al-Sharif and al-Aqsa Mosque as well as major Christian holy sites — and placed East Jerusalem's Palestinian residents under Israeli military occupation; Control of Jerusalem therefore became one of the hardest issues in any future peace talks.",
           "provenance_clues": {
             "author": "An Israel Government Press Office photographer.",
             "audience": "Israeli and international newspapers.",
@@ -9619,8 +9617,10 @@ const cme_new = {
             "hinge_question": "Why did King Hussein enter the war on 5 June despite Israeli appeals to stay out, and what did it cost Jordan?"
           },
           "teacher_notes": {
-            "source_context": "On 5 June, believing false Egyptian claims of victory, Jordan shelled West Jerusalem despite Israeli messages urging Hussein to stay out. Israel counter-attacked into the West Bank and on 7 June paratroopers stormed the Old City, capturing East Jerusalem and the Western Wall. Meanwhile Israeli divisions reached the Suez Canal and Sharm el-Sheikh by 8 June. **Hinge Question:** Why did King Hussein enter the war on 5 June despite Israeli appeals to stay out, and what did it cost Jordan?"
-          }
+            "source_context": "On 5 June, believing false Egyptian claims of victory, Jordan shelled West Jerusalem despite Israeli messages urging Hussein to stay out. Israel counter-attacked into the West Bank and on 7 June paratroopers stormed the Old City, capturing East Jerusalem and the Western Wall. Meanwhile Israeli divisions reached the Suez Canal and Sharm el-Sheikh by 8 June. **Hinge Question:** Why did King Hussein enter the war on 5 June despite Israeli appeals to stay out, and what did it cost Jordan?",
+            "hinge_question": "Why did King Hussein enter the war on 5 June despite Israeli appeals to stay out, and what did it cost Jordan?"
+          },
+          "question": "Israel's commanders enter the Old City on 7 June. Why was this a triumph for Israelis but a loss for Arabs?"
         },
         {
           "id": "cme_l6_source_e",
@@ -9634,13 +9634,11 @@ const cme_new = {
           "desc": "Bamahane (IDF magazine) photograph of Israeli forces preparing for the Golan assault.",
           "provenance": "Yosef Levita / Bamahane (Israel Defense Forces magazine), 9 June 1967, via Wikimedia Commons (CC BY-SA 3.0).",
           "citation": "Wikimedia Commons, File:Six-Day_War._IDF_force_on_caterpillars_preparing_for_the_ascent_to_the_Golan_Heights.jpg.",
-          "hinge_question": "Did the Six-Day War make Israel more secure, or did its conquests create new problems that would fuel future wars?",
-          "source_context": "With Egypt and Jordan defeated, Moshe Dayan ordered an assault on the Syrian Golan Heights on 9 June 1967. Israeli troops fought uphill through fortified positions and took Quneitra before the ceasefire on 10 June. In six days Israel had taken Sinai, Gaza, the West Bank, East Jerusalem and the Golan Heights. **Hinge Question:** Did the Six-Day War make Israel more secure, or did its conquests create new problems that would fuel future wars?",
+          "source_context": "With Egypt and Jordan defeated, Moshe Dayan ordered an assault on the Syrian Golan Heights on 9 June 1967. Israeli troops fought uphill through fortified positions and took Quneitra before the ceasefire on 10 June. In six days Israel had taken Sinai, Gaza, the West Bank, East Jerusalem and the Golan Heights.",
           "context": "Israel attacked the Golan Heights on 9 June and captured Quneitra before the UN ceasefire on 10 June 1967.",
           "question_badge": "Human Impact",
           "question_type": "Human Impact",
-          "enquiry_question": "Israeli troops prepare to climb the Golan Heights on 9 June. Why did capturing them matter, and who paid the price?",
-          "model_answer": "Taking the Golan removed the Syrian guns that had shelled northern Israeli villages for years and gave Israel a strong defensive buffer. But an estimated 100,000 Syrian residents of the Golan (estimates vary) fled or were expelled and could not return. Across all fronts, victory also placed over a million Palestinians under Israeli military rule.",
+          "model_answer": "Taking the Golan removed the Syrian guns that had shelled northern Israeli villages for years and gave Israel a strong defensive buffer. But an estimated 100,000 Syrian residents of the Golan (estimates vary) fled or were expelled and could not return; across all fronts, victory also placed over a million Palestinians under Israeli military rule.",
           "provenance_clues": {
             "author": "A photographer for Bamahane, the Israeli army magazine.",
             "audience": "Israeli soldiers and the Israeli public.",
@@ -9648,8 +9646,10 @@ const cme_new = {
             "hinge_question": "Did the Six-Day War make Israel more secure, or did its conquests create new problems that would fuel future wars?"
           },
           "teacher_notes": {
-            "source_context": "With Egypt and Jordan defeated, Moshe Dayan ordered an assault on the Syrian Golan Heights on 9 June 1967. Israeli troops fought uphill through fortified positions and took Quneitra before the ceasefire on 10 June. In six days Israel had taken Sinai, Gaza, the West Bank, East Jerusalem and the Golan Heights. **Hinge Question:** Did the Six-Day War make Israel more secure, or did its conquests create new problems that would fuel future wars?"
-          }
+            "source_context": "With Egypt and Jordan defeated, Moshe Dayan ordered an assault on the Syrian Golan Heights on 9 June 1967. Israeli troops fought uphill through fortified positions and took Quneitra before the ceasefire on 10 June. In six days Israel had taken Sinai, Gaza, the West Bank, East Jerusalem and the Golan Heights. **Hinge Question:** Did the Six-Day War make Israel more secure, or did its conquests create new problems that would fuel future wars?",
+            "hinge_question": "Did the Six-Day War make Israel more secure, or did its conquests create new problems that would fuel future wars?"
+          },
+          "question": "Israeli troops prepare to climb the Golan Heights on 9 June. Why did capturing them matter, and who paid the price?"
         }
       ],
       "exam_practice": {
@@ -10830,13 +10830,11 @@ const cme_new = {
               "desc": "US Central Intelligence Agency map of the territories captured by Israel in the Six-Day War.",
               "provenance": "US Central Intelligence Agency map, 1967 (public domain US government work).",
               "citation": "US Central Intelligence Agency / US National Archives.",
-              "hinge_question": "Why could Israel later return Sinai to Egypt but never agree to give up East Jerusalem?",
-              "source_context": "The Six-Day War tripled the land under Israeli control and displaced around 300,000 Palestinians, many for the second time. On 7 June Israeli paratroopers captured the Old City, and Jews could pray at the Western Wall for the first time since 1948. Israel then extended its law to an enlarged East Jerusalem, a step the UN declared invalid. **Hinge Question:** Why could Israel later return Sinai to Egypt but never agree to give up East Jerusalem?",
+              "source_context": "The Six-Day War tripled the land under Israeli control and displaced around 300,000 Palestinians, many for the second time. On 7 June Israeli paratroopers captured the Old City, and Jews could pray at the Western Wall for the first time since 1948. Israel then extended its law to an enlarged East Jerusalem, a step the UN declared invalid.",
               "context": "In June 1967 Israel captured East Jerusalem, the West Bank, Gaza, Sinai and the Golan; weeks later it annexed East Jerusalem.",
               "question_badge": "Turning Point Insight",
               "question_type": "Turning Point Insight",
-              "enquiry_question": "The map shows Israel's new lines after June 1967. Why did East Jerusalem matter more to both sides than Sinai?",
-              "model_answer": "East Jerusalem contains the Western Wall, Judaism's holiest place of prayer, and the Haram al-Sharif, one of Islam's holiest sites, so neither side saw it as just land. Israel quickly annexed it and declared Jerusalem united, while Palestinians and the UN rejected the annexation. Sinai could be bargained over, but Jerusalem became the hardest issue of all.",
+              "model_answer": "East Jerusalem contains the Western Wall, Judaism's holiest place of prayer, and the Haram al-Sharif, one of Islam's holiest sites, so neither side saw it as just land. Israel quickly annexed it and declared Jerusalem united, while Palestinians and the UN rejected the annexation; Sinai could be bargained over, but Jerusalem became the hardest issue of all.",
               "provenance_clues": {
                 "author": "US intelligence analysts (CIA).",
                 "audience": "US policymakers.",
@@ -10844,8 +10842,10 @@ const cme_new = {
                 "hinge_question": "Why could Israel later return Sinai to Egypt but never agree to give up East Jerusalem?"
               },
               "teacher_notes": {
-                "source_context": "The Six-Day War tripled the land under Israeli control and displaced around 300,000 Palestinians, many for the second time. On 7 June Israeli paratroopers captured the Old City, and Jews could pray at the Western Wall for the first time since 1948. Israel then extended its law to an enlarged East Jerusalem, a step the UN declared invalid. **Hinge Question:** Why could Israel later return Sinai to Egypt but never agree to give up East Jerusalem?"
-              }
+                "source_context": "The Six-Day War tripled the land under Israeli control and displaced around 300,000 Palestinians, many for the second time. On 7 June Israeli paratroopers captured the Old City, and Jews could pray at the Western Wall for the first time since 1948. Israel then extended its law to an enlarged East Jerusalem, a step the UN declared invalid. **Hinge Question:** Why could Israel later return Sinai to Egypt but never agree to give up East Jerusalem?",
+                "hinge_question": "Why could Israel later return Sinai to Egypt but never agree to give up East Jerusalem?"
+              },
+              "question": "The map shows Israel's new lines after June 1967. Why did East Jerusalem matter more to both sides than Sinai?"
             }
           ],
           "image": "/images/cme_paratroopers_western_wall_1967.jpg",
@@ -10877,13 +10877,11 @@ const cme_new = {
               "desc": "Paragraph 3 of the Khartoum Resolution (1 September 1967) paired with a summary of the Israeli government's position.",
               "provenance": "Side A: Khartoum Resolution of the Arab League summit, 1 September 1967, paragraph 3 (standard English translation). Side B: summary of the Israeli cabinet decision of 19 June 1967 and later Israeli statements.",
               "citation": "Khartoum Resolution, 1 September 1967; Israeli cabinet decision, 19 June 1967.",
-              "hinge_question": "Was the Khartoum Resolution a refusal to make peace, or a refusal to negotiate from a position of defeat?",
-              "source_context": "After their defeat, eight Arab heads of state met in Khartoum. Moderates such as King Hussein wanted diplomacy to win back land, while Syria and Algeria wanted continued confrontation. The final resolution of 1 September combined a demand for Israeli withdrawal with the famous refusals of peace, recognition and negotiation. **Hinge Question:** Was the Khartoum Resolution a refusal to make peace, or a refusal to negotiate from a position of defeat?",
+              "source_context": "After their defeat, eight Arab heads of state met in Khartoum. Moderates such as King Hussein wanted diplomacy to win back land, while Syria and Algeria wanted continued confrontation. The final resolution of 1 September combined a demand for Israeli withdrawal with the famous refusals of peace, recognition and negotiation.",
               "context": "At the Khartoum summit (29 August–1 September 1967) Arab leaders adopted the \"Three Noes\".",
               "question_badge": "Competing Perspectives",
               "question_type": "Competing Perspectives",
-              "enquiry_question": "Khartoum promises \"no peace, no recognition, no negotiations\". Why did many Israelis read this as proof they should keep the land?",
-              "model_answer": "Israel's cabinet had secretly agreed in June 1967 to return Sinai and the Golan in exchange for peace, so the Three Noes looked like a flat rejection of any deal. Israeli leaders concluded they should hold the territories until Arab states were ready to negotiate. Arab leaders, however, saw negotiating under occupation as rewarding Israel's conquest.",
+              "model_answer": "Israel's cabinet had secretly agreed in June 1967 to return Sinai and the Golan in exchange for peace, so the Three Noes looked like a flat rejection of any deal. Israeli leaders concluded they should hold the territories until Arab states were ready to negotiate; Arab leaders, however, saw negotiating under occupation as rewarding Israel's conquest.",
               "provenance_clues": {
                 "author": "Side A: the Arab League heads of state. Side B: the Israeli government.",
                 "audience": "Side A: Arab publics and the world. Side B: Israelis and the United States.",
@@ -10891,7 +10889,8 @@ const cme_new = {
                 "hinge_question": "Was the Khartoum Resolution a refusal to make peace, or a refusal to negotiate from a position of defeat?"
               },
               "teacher_notes": {
-                "source_context": "After their defeat, eight Arab heads of state met in Khartoum. Moderates such as King Hussein wanted diplomacy to win back land, while Syria and Algeria wanted continued confrontation. The final resolution of 1 September combined a demand for Israeli withdrawal with the famous refusals of peace, recognition and negotiation. **Hinge Question:** Was the Khartoum Resolution a refusal to make peace, or a refusal to negotiate from a position of defeat?"
+                "source_context": "After their defeat, eight Arab heads of state met in Khartoum. Moderates such as King Hussein wanted diplomacy to win back land, while Syria and Algeria wanted continued confrontation. The final resolution of 1 September combined a demand for Israeli withdrawal with the famous refusals of peace, recognition and negotiation. **Hinge Question:** Was the Khartoum Resolution a refusal to make peace, or a refusal to negotiate from a position of defeat?",
+                "hinge_question": "Was the Khartoum Resolution a refusal to make peace, or a refusal to negotiate from a position of defeat?"
               },
               "perspective_pair": {
                 "framing_note": "Both governments wanted the land question settled on their own terms; reading the two positions together shows why \"land for peace\" stalled after 1967.",
@@ -10911,7 +10910,8 @@ const cme_new = {
                   "text_type": "summary",
                   "provenance": "Summary of the Israeli cabinet decision of 19 June 1967 and later statements by Israeli ministers."
                 }
-              }
+              },
+              "question": "Khartoum promises \"no peace, no recognition, no negotiations\". Why did many Israelis read this as proof they should keep the land?"
             }
           ],
           "isReversed": false,
@@ -11106,13 +11106,11 @@ const cme_new = {
               "desc": "Operative text of Resolution 242 with paired summaries of how Israel and the Arab side interpreted it.",
               "provenance": "Text: UN Security Council Resolution 242 (S/RES/242), 22 November 1967. Side A: summary of Israeli government interpretation. Side B: summary of Egyptian, Jordanian and PLO positions, 1967–68.",
               "citation": "United Nations Security Council, S/RES/242 (1967).",
-              "hinge_question": "Did Resolution 242's deliberate ambiguity save diplomacy, or guarantee deadlock?",
-              "source_context": "Resolution 242 linked Israeli withdrawal to Arab recognition of every state's right to live in peace within secure and recognised boundaries. The English text spoke of withdrawal from \"territories occupied\", not \"the territories\" or \"all territories\", while the French version used \"des territoires occupés\". It referred to Palestinians only through \"a just settlement of the refugee problem\". **Hinge Question:** Did Resolution 242's deliberate ambiguity save diplomacy, or guarantee deadlock?",
+              "source_context": "Resolution 242 linked Israeli withdrawal to Arab recognition of every state's right to live in peace within secure and recognised boundaries. The English text spoke of withdrawal from \"territories occupied\", not \"the territories\" or \"all territories\", while the French version used \"des territoires occupés\". It referred to Palestinians only through \"a just settlement of the refugee problem\".",
               "context": "Resolution 242, drafted by Britain's Lord Caradon, was passed unanimously on 22 November 1967.",
               "question_badge": "Competing Perspectives",
               "question_type": "Competing Perspectives",
-              "enquiry_question": "Israel and its neighbours read \"territories occupied\" differently. Why did this vague wording both help and hurt peace?",
-              "model_answer": "Leaving out \"all\" or \"the\" let Israel argue for some border changes and let Egypt and Jordan claim it meant full withdrawal, so both could vote for it. That ambiguity got the resolution passed, but it also meant each side could blame the other for not following it. Palestinians were mentioned only as a \"refugee problem\", so the PLO rejected it entirely.",
+              "model_answer": "Leaving out \"all\" or \"the\" let Israel argue for some border changes and let Egypt and Jordan claim it meant full withdrawal, so both could vote for it. That ambiguity got the resolution passed, but it also meant each side could blame the other for not following it; Palestinians were mentioned only as a \"refugee problem\", so the PLO rejected it entirely.",
               "provenance_clues": {
                 "author": "Text: the UN Security Council. Sides: the Israeli government; the Egyptian and Jordanian governments and the PLO.",
                 "audience": "Governments worldwide and the parties to the conflict.",
@@ -11120,7 +11118,8 @@ const cme_new = {
                 "hinge_question": "Did Resolution 242's deliberate ambiguity save diplomacy, or guarantee deadlock?"
               },
               "teacher_notes": {
-                "source_context": "Resolution 242 linked Israeli withdrawal to Arab recognition of every state's right to live in peace within secure and recognised boundaries. The English text spoke of withdrawal from \"territories occupied\", not \"the territories\" or \"all territories\", while the French version used \"des territoires occupés\". It referred to Palestinians only through \"a just settlement of the refugee problem\". **Hinge Question:** Did Resolution 242's deliberate ambiguity save diplomacy, or guarantee deadlock?"
+                "source_context": "Resolution 242 linked Israeli withdrawal to Arab recognition of every state's right to live in peace within secure and recognised boundaries. The English text spoke of withdrawal from \"territories occupied\", not \"the territories\" or \"all territories\", while the French version used \"des territoires occupés\". It referred to Palestinians only through \"a just settlement of the refugee problem\". **Hinge Question:** Did Resolution 242's deliberate ambiguity save diplomacy, or guarantee deadlock?",
+                "hinge_question": "Did Resolution 242's deliberate ambiguity save diplomacy, or guarantee deadlock?"
               },
               "text": "The Security Council … Affirms that the fulfilment of Charter principles requires the establishment of a just and lasting peace in the Middle East which should include the application of both the following principles: (i) Withdrawal of Israel armed forces from territories occupied in the recent conflict; (ii) Termination of all claims or states of belligerency and respect for and acknowledgment of the sovereignty, territorial integrity and political independence of every State in the area and their right to live in peace within secure and recognized boundaries free from threats or acts of force; … Affirms further the necessity … (b) For achieving a just settlement of the refugee problem.",
               "text_type": "verbatim",
@@ -11142,7 +11141,8 @@ const cme_new = {
                   "text_type": "summary",
                   "provenance": "Summary of Egyptian, Jordanian and PLO statements, 1967–68."
                 }
-              }
+              },
+              "question": "Israel and its neighbours read \"territories occupied\" differently. Why did this vague wording both help and hurt peace?"
             }
           ],
           "image": "/images/cme_plate_abba_eban_diplomacy_1967.jpg",
@@ -11174,13 +11174,11 @@ const cme_new = {
               "desc": "Map of the Bar-Lev Line strongpoints and supporting roads along the Suez Canal.",
               "provenance": "Map of the Bar-Lev Line based on Israeli military sources (via Wikimedia Commons, File:Bar_Lev_Line_1973_map.svg, CC BY-SA 3.0).",
               "citation": "Wikimedia Commons, Bar-Lev Line map.",
-              "hinge_question": "Was the Bar-Lev Line a sensible defence of captured land, or a sign that Israel expected to keep Sinai indefinitely?",
-              "source_context": "After June 1967 the Suez Canal stayed closed and became the ceasefire line between Egypt and Israel. Chief of Staff Haim Bar-Lev ordered a line of fortified strongpoints behind a sand rampart up to about 20 metres high. During the War of Attrition (1969–70) Nasser shelled and raided the line to stop the ceasefire line becoming a permanent border. **Hinge Question:** Was the Bar-Lev Line a sensible defence of captured land, or a sign that Israel expected to keep Sinai indefinitely?",
+              "source_context": "After June 1967 the Suez Canal stayed closed and became the ceasefire line between Egypt and Israel. Chief of Staff Haim Bar-Lev ordered a line of fortified strongpoints behind a sand rampart up to about 20 metres high. During the War of Attrition (1969–70) Nasser shelled and raided the line to stop the ceasefire line becoming a permanent border.",
               "context": "Israel built the Bar-Lev Line along the Suez Canal in 1968–69; it became the front line of the War of Attrition.",
               "question_badge": "Perspective & Motive",
               "question_type": "Perspective & Motive",
-              "enquiry_question": "The map shows forts behind a giant sand wall. Why did holding this line make Israel overconfident by 1973?",
-              "model_answer": "The forts survived years of Egyptian shelling during the War of Attrition, so many Israeli commanders believed the canal line could not be broken. That confidence made them slow to take warnings of an Egyptian attack seriously. In October 1973 Egyptian engineers cut through the sand wall within hours, showing the line's limits.",
+              "model_answer": "The forts survived years of Egyptian shelling during the War of Attrition, so many Israeli commanders believed the canal line could not be broken. That confidence made them slow to take warnings of an Egyptian attack seriously; in October 1973 Egyptian engineers cut through the sand wall within hours, showing the line's limits.",
               "provenance_clues": {
                 "author": "Cartographers working from Israeli military plans.",
                 "audience": "Military planners and, later, students of the 1973 war.",
@@ -11188,8 +11186,10 @@ const cme_new = {
                 "hinge_question": "Was the Bar-Lev Line a sensible defence of captured land, or a sign that Israel expected to keep Sinai indefinitely?"
               },
               "teacher_notes": {
-                "source_context": "After June 1967 the Suez Canal stayed closed and became the ceasefire line between Egypt and Israel. Chief of Staff Haim Bar-Lev ordered a line of fortified strongpoints behind a sand rampart up to about 20 metres high. During the War of Attrition (1969–70) Nasser shelled and raided the line to stop the ceasefire line becoming a permanent border. **Hinge Question:** Was the Bar-Lev Line a sensible defence of captured land, or a sign that Israel expected to keep Sinai indefinitely?"
-              }
+                "source_context": "After June 1967 the Suez Canal stayed closed and became the ceasefire line between Egypt and Israel. Chief of Staff Haim Bar-Lev ordered a line of fortified strongpoints behind a sand rampart up to about 20 metres high. During the War of Attrition (1969–70) Nasser shelled and raided the line to stop the ceasefire line becoming a permanent border. **Hinge Question:** Was the Bar-Lev Line a sensible defence of captured land, or a sign that Israel expected to keep Sinai indefinitely?",
+                "hinge_question": "Was the Bar-Lev Line a sensible defence of captured land, or a sign that Israel expected to keep Sinai indefinitely?"
+              },
+              "question": "The map shows forts behind a giant sand wall. Why did holding this line make Israel overconfident by 1973?"
             }
           ],
           "image": "/units/cme_new/assets/cme_bar_lev_line_fortifications_1970.jpg",
@@ -11221,13 +11221,11 @@ const cme_new = {
               "desc": "Map illustrating Deputy Prime Minister Yigal Allon's proposal for the future of the West Bank.",
               "provenance": "Map of the Allon Plan as proposed by Yigal Allon, 1967–68.",
               "citation": "Allon Plan map, 1967–68.",
-              "hinge_question": "Did the settlements begin as a security measure that later took on a life of its own?",
-              "source_context": "After 1967 Israel's Labour government allowed settlements mainly in areas it saw as vital for security, such as the Jordan Valley. Religious-nationalist settlers later moved into the hills of the West Bank, which they call Judea and Samaria. Under Menachem Begin's Likud government from 1977, state support for settlements grew sharply, creating major obstacles to a two-state solution. **Hinge Question:** Did the settlements begin as a security measure that later took on a life of its own?",
+              "source_context": "After 1967 Israel's Labour government allowed settlements mainly in areas it saw as vital for security, such as the Jordan Valley. Religious-nationalist settlers later moved into the hills of the West Bank, which they call Judea and Samaria. Under Menachem Begin's Likud government from 1977, state support for settlements grew sharply, creating major obstacles to a two-state solution.",
               "context": "Yigal Allon proposed in 1967 that Israel keep the Jordan Valley as a security zone and return populated areas to Jordan.",
               "question_badge": "Perspective & Motive",
               "question_type": "Perspective & Motive",
-              "enquiry_question": "Allon's map keeps the Jordan Valley but returns the crowded hill towns. Why did early settlement planning focus on security?",
-              "model_answer": "Labour leaders like Allon wanted a defensive buffer along the Jordan River without ruling over large numbers of Palestinians, so the plan avoided the populated hills. From the mid-1970s religious-nationalist groups such as Gush Emunim settled in the biblical heartland instead, and after 1977 the Likud government expanded settlements rapidly. Palestinians saw every settlement as taking land needed for a future state.",
+              "model_answer": "Labour leaders like Allon wanted a defensive buffer along the Jordan River without ruling over large numbers of Palestinians, so the plan avoided the populated hills. From the mid-1970s religious-nationalist groups such as Gush Emunim settled in the biblical heartland instead, and after 1977 the Likud government expanded settlements rapidly; Palestinians saw every settlement as taking land needed for a future state.",
               "provenance_clues": {
                 "author": "Yigal Allon, Israeli Deputy Prime Minister and former military commander.",
                 "audience": "The Israeli cabinet and, later, Jordan and the United States.",
@@ -11235,8 +11233,10 @@ const cme_new = {
                 "hinge_question": "Did the settlements begin as a security measure that later took on a life of its own?"
               },
               "teacher_notes": {
-                "source_context": "After 1967 Israel's Labour government allowed settlements mainly in areas it saw as vital for security, such as the Jordan Valley. Religious-nationalist settlers later moved into the hills of the West Bank, which they call Judea and Samaria. Under Menachem Begin's Likud government from 1977, state support for settlements grew sharply, creating major obstacles to a two-state solution. **Hinge Question:** Did the settlements begin as a security measure that later took on a life of its own?"
-              }
+                "source_context": "After 1967 Israel's Labour government allowed settlements mainly in areas it saw as vital for security, such as the Jordan Valley. Religious-nationalist settlers later moved into the hills of the West Bank, which they call Judea and Samaria. Under Menachem Begin's Likud government from 1977, state support for settlements grew sharply, creating major obstacles to a two-state solution. **Hinge Question:** Did the settlements begin as a security measure that later took on a life of its own?",
+                "hinge_question": "Did the settlements begin as a security measure that later took on a life of its own?"
+              },
+              "question": "Allon's map keeps the Jordan Valley but returns the crowded hill towns. Why did early settlement planning focus on security?"
             }
           ],
           "image": "/images/cme_plate_kfar_etzion_settlement_1967.jpg",
@@ -11259,13 +11259,11 @@ const cme_new = {
           "desc": "US Central Intelligence Agency map of the territories captured by Israel in the Six-Day War.",
           "provenance": "US Central Intelligence Agency map, 1967 (public domain US government work).",
           "citation": "US Central Intelligence Agency / US National Archives.",
-          "hinge_question": "Why could Israel later return Sinai to Egypt but never agree to give up East Jerusalem?",
-          "source_context": "The Six-Day War tripled the land under Israeli control and displaced around 300,000 Palestinians, many for the second time. On 7 June Israeli paratroopers captured the Old City, and Jews could pray at the Western Wall for the first time since 1948. Israel then extended its law to an enlarged East Jerusalem, a step the UN declared invalid. **Hinge Question:** Why could Israel later return Sinai to Egypt but never agree to give up East Jerusalem?",
+          "source_context": "The Six-Day War tripled the land under Israeli control and displaced around 300,000 Palestinians, many for the second time. On 7 June Israeli paratroopers captured the Old City, and Jews could pray at the Western Wall for the first time since 1948. Israel then extended its law to an enlarged East Jerusalem, a step the UN declared invalid.",
           "context": "In June 1967 Israel captured East Jerusalem, the West Bank, Gaza, Sinai and the Golan; weeks later it annexed East Jerusalem.",
           "question_badge": "Turning Point Insight",
           "question_type": "Turning Point Insight",
-          "enquiry_question": "The map shows Israel's new lines after June 1967. Why did East Jerusalem matter more to both sides than Sinai?",
-          "model_answer": "East Jerusalem contains the Western Wall, Judaism's holiest place of prayer, and the Haram al-Sharif, one of Islam's holiest sites, so neither side saw it as just land. Israel quickly annexed it and declared Jerusalem united, while Palestinians and the UN rejected the annexation. Sinai could be bargained over, but Jerusalem became the hardest issue of all.",
+          "model_answer": "East Jerusalem contains the Western Wall, Judaism's holiest place of prayer, and the Haram al-Sharif, one of Islam's holiest sites, so neither side saw it as just land. Israel quickly annexed it and declared Jerusalem united, while Palestinians and the UN rejected the annexation; Sinai could be bargained over, but Jerusalem became the hardest issue of all.",
           "provenance_clues": {
             "author": "US intelligence analysts (CIA).",
             "audience": "US policymakers.",
@@ -11273,8 +11271,10 @@ const cme_new = {
             "hinge_question": "Why could Israel later return Sinai to Egypt but never agree to give up East Jerusalem?"
           },
           "teacher_notes": {
-            "source_context": "The Six-Day War tripled the land under Israeli control and displaced around 300,000 Palestinians, many for the second time. On 7 June Israeli paratroopers captured the Old City, and Jews could pray at the Western Wall for the first time since 1948. Israel then extended its law to an enlarged East Jerusalem, a step the UN declared invalid. **Hinge Question:** Why could Israel later return Sinai to Egypt but never agree to give up East Jerusalem?"
-          }
+            "source_context": "The Six-Day War tripled the land under Israeli control and displaced around 300,000 Palestinians, many for the second time. On 7 June Israeli paratroopers captured the Old City, and Jews could pray at the Western Wall for the first time since 1948. Israel then extended its law to an enlarged East Jerusalem, a step the UN declared invalid. **Hinge Question:** Why could Israel later return Sinai to Egypt but never agree to give up East Jerusalem?",
+            "hinge_question": "Why could Israel later return Sinai to Egypt but never agree to give up East Jerusalem?"
+          },
+          "question": "The map shows Israel's new lines after June 1967. Why did East Jerusalem matter more to both sides than Sinai?"
         },
         {
           "id": "cme_l7_source_b",
@@ -11288,13 +11288,11 @@ const cme_new = {
           "desc": "Paragraph 3 of the Khartoum Resolution (1 September 1967) paired with a summary of the Israeli government's position.",
           "provenance": "Side A: Khartoum Resolution of the Arab League summit, 1 September 1967, paragraph 3 (standard English translation). Side B: summary of the Israeli cabinet decision of 19 June 1967 and later Israeli statements.",
           "citation": "Khartoum Resolution, 1 September 1967; Israeli cabinet decision, 19 June 1967.",
-          "hinge_question": "Was the Khartoum Resolution a refusal to make peace, or a refusal to negotiate from a position of defeat?",
-          "source_context": "After their defeat, eight Arab heads of state met in Khartoum. Moderates such as King Hussein wanted diplomacy to win back land, while Syria and Algeria wanted continued confrontation. The final resolution of 1 September combined a demand for Israeli withdrawal with the famous refusals of peace, recognition and negotiation. **Hinge Question:** Was the Khartoum Resolution a refusal to make peace, or a refusal to negotiate from a position of defeat?",
+          "source_context": "After their defeat, eight Arab heads of state met in Khartoum. Moderates such as King Hussein wanted diplomacy to win back land, while Syria and Algeria wanted continued confrontation. The final resolution of 1 September combined a demand for Israeli withdrawal with the famous refusals of peace, recognition and negotiation.",
           "context": "At the Khartoum summit (29 August–1 September 1967) Arab leaders adopted the \"Three Noes\".",
           "question_badge": "Competing Perspectives",
           "question_type": "Competing Perspectives",
-          "enquiry_question": "Khartoum promises \"no peace, no recognition, no negotiations\". Why did many Israelis read this as proof they should keep the land?",
-          "model_answer": "Israel's cabinet had secretly agreed in June 1967 to return Sinai and the Golan in exchange for peace, so the Three Noes looked like a flat rejection of any deal. Israeli leaders concluded they should hold the territories until Arab states were ready to negotiate. Arab leaders, however, saw negotiating under occupation as rewarding Israel's conquest.",
+          "model_answer": "Israel's cabinet had secretly agreed in June 1967 to return Sinai and the Golan in exchange for peace, so the Three Noes looked like a flat rejection of any deal. Israeli leaders concluded they should hold the territories until Arab states were ready to negotiate; Arab leaders, however, saw negotiating under occupation as rewarding Israel's conquest.",
           "provenance_clues": {
             "author": "Side A: the Arab League heads of state. Side B: the Israeli government.",
             "audience": "Side A: Arab publics and the world. Side B: Israelis and the United States.",
@@ -11302,7 +11300,8 @@ const cme_new = {
             "hinge_question": "Was the Khartoum Resolution a refusal to make peace, or a refusal to negotiate from a position of defeat?"
           },
           "teacher_notes": {
-            "source_context": "After their defeat, eight Arab heads of state met in Khartoum. Moderates such as King Hussein wanted diplomacy to win back land, while Syria and Algeria wanted continued confrontation. The final resolution of 1 September combined a demand for Israeli withdrawal with the famous refusals of peace, recognition and negotiation. **Hinge Question:** Was the Khartoum Resolution a refusal to make peace, or a refusal to negotiate from a position of defeat?"
+            "source_context": "After their defeat, eight Arab heads of state met in Khartoum. Moderates such as King Hussein wanted diplomacy to win back land, while Syria and Algeria wanted continued confrontation. The final resolution of 1 September combined a demand for Israeli withdrawal with the famous refusals of peace, recognition and negotiation. **Hinge Question:** Was the Khartoum Resolution a refusal to make peace, or a refusal to negotiate from a position of defeat?",
+            "hinge_question": "Was the Khartoum Resolution a refusal to make peace, or a refusal to negotiate from a position of defeat?"
           },
           "perspective_pair": {
             "framing_note": "Both governments wanted the land question settled on their own terms; reading the two positions together shows why \"land for peace\" stalled after 1967.",
@@ -11322,7 +11321,8 @@ const cme_new = {
               "text_type": "summary",
               "provenance": "Summary of the Israeli cabinet decision of 19 June 1967 and later statements by Israeli ministers."
             }
-          }
+          },
+          "question": "Khartoum promises \"no peace, no recognition, no negotiations\". Why did many Israelis read this as proof they should keep the land?"
         },
         {
           "id": "cme_l7_source_c",
@@ -11336,13 +11336,11 @@ const cme_new = {
           "desc": "Operative text of Resolution 242 with paired summaries of how Israel and the Arab side interpreted it.",
           "provenance": "Text: UN Security Council Resolution 242 (S/RES/242), 22 November 1967. Side A: summary of Israeli government interpretation. Side B: summary of Egyptian, Jordanian and PLO positions, 1967–68.",
           "citation": "United Nations Security Council, S/RES/242 (1967).",
-          "hinge_question": "Did Resolution 242's deliberate ambiguity save diplomacy, or guarantee deadlock?",
-          "source_context": "Resolution 242 linked Israeli withdrawal to Arab recognition of every state's right to live in peace within secure and recognised boundaries. The English text spoke of withdrawal from \"territories occupied\", not \"the territories\" or \"all territories\", while the French version used \"des territoires occupés\". It referred to Palestinians only through \"a just settlement of the refugee problem\". **Hinge Question:** Did Resolution 242's deliberate ambiguity save diplomacy, or guarantee deadlock?",
+          "source_context": "Resolution 242 linked Israeli withdrawal to Arab recognition of every state's right to live in peace within secure and recognised boundaries. The English text spoke of withdrawal from \"territories occupied\", not \"the territories\" or \"all territories\", while the French version used \"des territoires occupés\". It referred to Palestinians only through \"a just settlement of the refugee problem\".",
           "context": "Resolution 242, drafted by Britain's Lord Caradon, was passed unanimously on 22 November 1967.",
           "question_badge": "Competing Perspectives",
           "question_type": "Competing Perspectives",
-          "enquiry_question": "Israel and its neighbours read \"territories occupied\" differently. Why did this vague wording both help and hurt peace?",
-          "model_answer": "Leaving out \"all\" or \"the\" let Israel argue for some border changes and let Egypt and Jordan claim it meant full withdrawal, so both could vote for it. That ambiguity got the resolution passed, but it also meant each side could blame the other for not following it. Palestinians were mentioned only as a \"refugee problem\", so the PLO rejected it entirely.",
+          "model_answer": "Leaving out \"all\" or \"the\" let Israel argue for some border changes and let Egypt and Jordan claim it meant full withdrawal, so both could vote for it. That ambiguity got the resolution passed, but it also meant each side could blame the other for not following it; Palestinians were mentioned only as a \"refugee problem\", so the PLO rejected it entirely.",
           "provenance_clues": {
             "author": "Text: the UN Security Council. Sides: the Israeli government; the Egyptian and Jordanian governments and the PLO.",
             "audience": "Governments worldwide and the parties to the conflict.",
@@ -11350,7 +11348,8 @@ const cme_new = {
             "hinge_question": "Did Resolution 242's deliberate ambiguity save diplomacy, or guarantee deadlock?"
           },
           "teacher_notes": {
-            "source_context": "Resolution 242 linked Israeli withdrawal to Arab recognition of every state's right to live in peace within secure and recognised boundaries. The English text spoke of withdrawal from \"territories occupied\", not \"the territories\" or \"all territories\", while the French version used \"des territoires occupés\". It referred to Palestinians only through \"a just settlement of the refugee problem\". **Hinge Question:** Did Resolution 242's deliberate ambiguity save diplomacy, or guarantee deadlock?"
+            "source_context": "Resolution 242 linked Israeli withdrawal to Arab recognition of every state's right to live in peace within secure and recognised boundaries. The English text spoke of withdrawal from \"territories occupied\", not \"the territories\" or \"all territories\", while the French version used \"des territoires occupés\". It referred to Palestinians only through \"a just settlement of the refugee problem\". **Hinge Question:** Did Resolution 242's deliberate ambiguity save diplomacy, or guarantee deadlock?",
+            "hinge_question": "Did Resolution 242's deliberate ambiguity save diplomacy, or guarantee deadlock?"
           },
           "text": "The Security Council … Affirms that the fulfilment of Charter principles requires the establishment of a just and lasting peace in the Middle East which should include the application of both the following principles: (i) Withdrawal of Israel armed forces from territories occupied in the recent conflict; (ii) Termination of all claims or states of belligerency and respect for and acknowledgment of the sovereignty, territorial integrity and political independence of every State in the area and their right to live in peace within secure and recognized boundaries free from threats or acts of force; … Affirms further the necessity … (b) For achieving a just settlement of the refugee problem.",
           "text_type": "verbatim",
@@ -11372,7 +11371,8 @@ const cme_new = {
               "text_type": "summary",
               "provenance": "Summary of Egyptian, Jordanian and PLO statements, 1967–68."
             }
-          }
+          },
+          "question": "Israel and its neighbours read \"territories occupied\" differently. Why did this vague wording both help and hurt peace?"
         },
         {
           "id": "cme_l7_source_d",
@@ -11386,13 +11386,11 @@ const cme_new = {
           "desc": "Map of the Bar-Lev Line strongpoints and supporting roads along the Suez Canal.",
           "provenance": "Map of the Bar-Lev Line based on Israeli military sources (via Wikimedia Commons, File:Bar_Lev_Line_1973_map.svg, CC BY-SA 3.0).",
           "citation": "Wikimedia Commons, Bar-Lev Line map.",
-          "hinge_question": "Was the Bar-Lev Line a sensible defence of captured land, or a sign that Israel expected to keep Sinai indefinitely?",
-          "source_context": "After June 1967 the Suez Canal stayed closed and became the ceasefire line between Egypt and Israel. Chief of Staff Haim Bar-Lev ordered a line of fortified strongpoints behind a sand rampart up to about 20 metres high. During the War of Attrition (1969–70) Nasser shelled and raided the line to stop the ceasefire line becoming a permanent border. **Hinge Question:** Was the Bar-Lev Line a sensible defence of captured land, or a sign that Israel expected to keep Sinai indefinitely?",
+          "source_context": "After June 1967 the Suez Canal stayed closed and became the ceasefire line between Egypt and Israel. Chief of Staff Haim Bar-Lev ordered a line of fortified strongpoints behind a sand rampart up to about 20 metres high. During the War of Attrition (1969–70) Nasser shelled and raided the line to stop the ceasefire line becoming a permanent border.",
           "context": "Israel built the Bar-Lev Line along the Suez Canal in 1968–69; it became the front line of the War of Attrition.",
           "question_badge": "Perspective & Motive",
           "question_type": "Perspective & Motive",
-          "enquiry_question": "The map shows forts behind a giant sand wall. Why did holding this line make Israel overconfident by 1973?",
-          "model_answer": "The forts survived years of Egyptian shelling during the War of Attrition, so many Israeli commanders believed the canal line could not be broken. That confidence made them slow to take warnings of an Egyptian attack seriously. In October 1973 Egyptian engineers cut through the sand wall within hours, showing the line's limits.",
+          "model_answer": "The forts survived years of Egyptian shelling during the War of Attrition, so many Israeli commanders believed the canal line could not be broken. That confidence made them slow to take warnings of an Egyptian attack seriously; in October 1973 Egyptian engineers cut through the sand wall within hours, showing the line's limits.",
           "provenance_clues": {
             "author": "Cartographers working from Israeli military plans.",
             "audience": "Military planners and, later, students of the 1973 war.",
@@ -11400,8 +11398,10 @@ const cme_new = {
             "hinge_question": "Was the Bar-Lev Line a sensible defence of captured land, or a sign that Israel expected to keep Sinai indefinitely?"
           },
           "teacher_notes": {
-            "source_context": "After June 1967 the Suez Canal stayed closed and became the ceasefire line between Egypt and Israel. Chief of Staff Haim Bar-Lev ordered a line of fortified strongpoints behind a sand rampart up to about 20 metres high. During the War of Attrition (1969–70) Nasser shelled and raided the line to stop the ceasefire line becoming a permanent border. **Hinge Question:** Was the Bar-Lev Line a sensible defence of captured land, or a sign that Israel expected to keep Sinai indefinitely?"
-          }
+            "source_context": "After June 1967 the Suez Canal stayed closed and became the ceasefire line between Egypt and Israel. Chief of Staff Haim Bar-Lev ordered a line of fortified strongpoints behind a sand rampart up to about 20 metres high. During the War of Attrition (1969–70) Nasser shelled and raided the line to stop the ceasefire line becoming a permanent border. **Hinge Question:** Was the Bar-Lev Line a sensible defence of captured land, or a sign that Israel expected to keep Sinai indefinitely?",
+            "hinge_question": "Was the Bar-Lev Line a sensible defence of captured land, or a sign that Israel expected to keep Sinai indefinitely?"
+          },
+          "question": "The map shows forts behind a giant sand wall. Why did holding this line make Israel overconfident by 1973?"
         },
         {
           "id": "cme_l7_source_e",
@@ -11415,13 +11415,11 @@ const cme_new = {
           "desc": "Map illustrating Deputy Prime Minister Yigal Allon's proposal for the future of the West Bank.",
           "provenance": "Map of the Allon Plan as proposed by Yigal Allon, 1967–68.",
           "citation": "Allon Plan map, 1967–68.",
-          "hinge_question": "Did the settlements begin as a security measure that later took on a life of its own?",
-          "source_context": "After 1967 Israel's Labour government allowed settlements mainly in areas it saw as vital for security, such as the Jordan Valley. Religious-nationalist settlers later moved into the hills of the West Bank, which they call Judea and Samaria. Under Menachem Begin's Likud government from 1977, state support for settlements grew sharply, creating major obstacles to a two-state solution. **Hinge Question:** Did the settlements begin as a security measure that later took on a life of its own?",
+          "source_context": "After 1967 Israel's Labour government allowed settlements mainly in areas it saw as vital for security, such as the Jordan Valley. Religious-nationalist settlers later moved into the hills of the West Bank, which they call Judea and Samaria. Under Menachem Begin's Likud government from 1977, state support for settlements grew sharply, creating major obstacles to a two-state solution.",
           "context": "Yigal Allon proposed in 1967 that Israel keep the Jordan Valley as a security zone and return populated areas to Jordan.",
           "question_badge": "Perspective & Motive",
           "question_type": "Perspective & Motive",
-          "enquiry_question": "Allon's map keeps the Jordan Valley but returns the crowded hill towns. Why did early settlement planning focus on security?",
-          "model_answer": "Labour leaders like Allon wanted a defensive buffer along the Jordan River without ruling over large numbers of Palestinians, so the plan avoided the populated hills. From the mid-1970s religious-nationalist groups such as Gush Emunim settled in the biblical heartland instead, and after 1977 the Likud government expanded settlements rapidly. Palestinians saw every settlement as taking land needed for a future state.",
+          "model_answer": "Labour leaders like Allon wanted a defensive buffer along the Jordan River without ruling over large numbers of Palestinians, so the plan avoided the populated hills. From the mid-1970s religious-nationalist groups such as Gush Emunim settled in the biblical heartland instead, and after 1977 the Likud government expanded settlements rapidly; Palestinians saw every settlement as taking land needed for a future state.",
           "provenance_clues": {
             "author": "Yigal Allon, Israeli Deputy Prime Minister and former military commander.",
             "audience": "The Israeli cabinet and, later, Jordan and the United States.",
@@ -11429,8 +11427,10 @@ const cme_new = {
             "hinge_question": "Did the settlements begin as a security measure that later took on a life of its own?"
           },
           "teacher_notes": {
-            "source_context": "After 1967 Israel's Labour government allowed settlements mainly in areas it saw as vital for security, such as the Jordan Valley. Religious-nationalist settlers later moved into the hills of the West Bank, which they call Judea and Samaria. Under Menachem Begin's Likud government from 1977, state support for settlements grew sharply, creating major obstacles to a two-state solution. **Hinge Question:** Did the settlements begin as a security measure that later took on a life of its own?"
-          }
+            "source_context": "After 1967 Israel's Labour government allowed settlements mainly in areas it saw as vital for security, such as the Jordan Valley. Religious-nationalist settlers later moved into the hills of the West Bank, which they call Judea and Samaria. Under Menachem Begin's Likud government from 1977, state support for settlements grew sharply, creating major obstacles to a two-state solution. **Hinge Question:** Did the settlements begin as a security measure that later took on a life of its own?",
+            "hinge_question": "Did the settlements begin as a security measure that later took on a life of its own?"
+          },
+          "question": "Allon's map keeps the Jordan Valley but returns the crowded hill towns. Why did early settlement planning focus on security?"
         }
       ],
       "exam_practice": {
@@ -12504,13 +12504,11 @@ const cme_new = {
               "desc": "Press photograph of Yasser Arafat as a guerrilla commander, c. 1969.",
               "provenance": "Press photograph, c. 1969 (Gamma-Rapho agency).",
               "citation": "Gamma-Rapho, c. 1969.",
-              "hinge_question": "Was Karameh a military defeat for Fatah that became a political victory?",
-              "source_context": "Israel raided the Fatah base at Karameh in Jordan on 21 March 1968. Palestinian fighters and Jordanian artillery inflicted significant losses before the Israelis withdrew after destroying the camp. Fatah celebrated Karameh as a victory, recruits flooded in, and in February 1969 Arafat was elected Chairman of the PLO, putting guerrilla groups in charge of Palestinian politics. **Hinge Question:** Was Karameh a military defeat for Fatah that became a political victory?",
+              "source_context": "Israel raided the Fatah base at Karameh in Jordan on 21 March 1968. Palestinian fighters and Jordanian artillery inflicted significant losses before the Israelis withdrew after destroying the camp. Fatah celebrated Karameh as a victory, recruits flooded in, and in February 1969 Arafat was elected Chairman of the PLO, putting guerrilla groups in charge of Palestinian politics.",
               "context": "On 21 March 1968 Palestinian fighters and the Jordanian army fought an Israeli raid on Karameh; Arafat became PLO Chairman in February 1969.",
               "question_badge": "Perspective & Motive",
               "question_type": "Perspective & Motive",
-              "enquiry_question": "Arafat chose to be photographed in battle fatigues soon after Karameh. Why did Fatah want Palestinians seen as fighters rather than refugees?",
-              "model_answer": "After 1967 many Palestinians felt Arab armies had failed them, so Fatah presented Palestinians as people fighting for their own cause. Karameh, where fighters stood their ground beside the Jordanian army, gave this image real power and brought thousands of volunteers. The image helped Arafat take over the PLO in February 1969.",
+              "model_answer": "After 1967 many Palestinians felt Arab armies had failed them, so Fatah presented Palestinians as people fighting for their own cause. Karameh, where fighters stood their ground beside the Jordanian army, gave this image real power and brought thousands of volunteers; the image helped Arafat take over the PLO in February 1969.",
               "provenance_clues": {
                 "author": "A press photographer working for an international agency.",
                 "audience": "Newspaper readers in the Arab world and the West.",
@@ -12518,8 +12516,10 @@ const cme_new = {
                 "hinge_question": "Was Karameh a military defeat for Fatah that became a political victory?"
               },
               "teacher_notes": {
-                "source_context": "Israel raided the Fatah base at Karameh in Jordan on 21 March 1968. Palestinian fighters and Jordanian artillery inflicted significant losses before the Israelis withdrew after destroying the camp. Fatah celebrated Karameh as a victory, recruits flooded in, and in February 1969 Arafat was elected Chairman of the PLO, putting guerrilla groups in charge of Palestinian politics. **Hinge Question:** Was Karameh a military defeat for Fatah that became a political victory?"
-              }
+                "source_context": "Israel raided the Fatah base at Karameh in Jordan on 21 March 1968. Palestinian fighters and Jordanian artillery inflicted significant losses before the Israelis withdrew after destroying the camp. Fatah celebrated Karameh as a victory, recruits flooded in, and in February 1969 Arafat was elected Chairman of the PLO, putting guerrilla groups in charge of Palestinian politics. **Hinge Question:** Was Karameh a military defeat for Fatah that became a political victory?",
+                "hinge_question": "Was Karameh a military defeat for Fatah that became a political victory?"
+              },
+              "question": "Arafat chose to be photographed in battle fatigues soon after Karameh. Why did Fatah want Palestinians seen as fighters rather than refugees?"
             }
           ],
           "image": "/images/cme_karameh_battle_1968.jpg",
@@ -12551,13 +12551,11 @@ const cme_new = {
               "desc": "News photograph of the destruction of hijacked airliners at Dawson's Field.",
               "provenance": "Associated Press news photograph, 12 September 1970.",
               "citation": "Associated Press.",
-              "hinge_question": "Did the hijackings help the Palestinian cause by making it famous, or harm it by linking it to terrorism?",
-              "source_context": "George Habash's Popular Front for the Liberation of Palestine (PFLP) used aircraft hijackings to publicise its cause and free prisoners. In September 1970 it forced three airliners to land at Dawson's Field near Zarqa, held hundreds of passengers, and blew up the empty planes in front of the world's media, humiliating King Hussein. **Hinge Question:** Did the hijackings help the Palestinian cause by making it famous, or harm it by linking it to terrorism?",
+              "source_context": "George Habash's Popular Front for the Liberation of Palestine (PFLP) used aircraft hijackings to publicise its cause and free prisoners. In September 1970 it forced three airliners to land at Dawson's Field near Zarqa, held hundreds of passengers, and blew up the empty planes in front of the world's media, humiliating King Hussein.",
               "context": "On 6 September 1970 the PFLP hijacked four Western airliners; three were flown to Dawson's Field in Jordan and destroyed on 12 September.",
               "question_badge": "Perspective & Motive",
               "question_type": "Perspective & Motive",
-              "enquiry_question": "Empty airliners explode on a Jordanian airstrip in front of TV cameras. What did the PFLP want the world to notice?",
-              "model_answer": "The PFLP wanted the world's attention on the Palestinian cause and on prisoners it hoped to free from European and Israeli jails. Blowing up the jets on camera guaranteed global headlines. It also showed that armed Palestinian groups, not King Hussein, controlled parts of Jordan — which pushed Hussein to act.",
+              "model_answer": "The PFLP wanted the world's attention on the Palestinian cause and on prisoners it hoped to free from European and Israeli jails. Blowing up the jets on camera guaranteed global headlines; it also showed that armed Palestinian groups, not King Hussein, controlled parts of Jordan — which pushed Hussein to act.",
               "provenance_clues": {
                 "author": "An Associated Press photographer.",
                 "audience": "Newspaper readers and TV viewers worldwide.",
@@ -12565,8 +12563,10 @@ const cme_new = {
                 "hinge_question": "Did the hijackings help the Palestinian cause by making it famous, or harm it by linking it to terrorism?"
               },
               "teacher_notes": {
-                "source_context": "George Habash's Popular Front for the Liberation of Palestine (PFLP) used aircraft hijackings to publicise its cause and free prisoners. In September 1970 it forced three airliners to land at Dawson's Field near Zarqa, held hundreds of passengers, and blew up the empty planes in front of the world's media, humiliating King Hussein. **Hinge Question:** Did the hijackings help the Palestinian cause by making it famous, or harm it by linking it to terrorism?"
-              }
+                "source_context": "George Habash's Popular Front for the Liberation of Palestine (PFLP) used aircraft hijackings to publicise its cause and free prisoners. In September 1970 it forced three airliners to land at Dawson's Field near Zarqa, held hundreds of passengers, and blew up the empty planes in front of the world's media, humiliating King Hussein. **Hinge Question:** Did the hijackings help the Palestinian cause by making it famous, or harm it by linking it to terrorism?",
+                "hinge_question": "Did the hijackings help the Palestinian cause by making it famous, or harm it by linking it to terrorism?"
+              },
+              "question": "Empty airliners explode on a Jordanian airstrip in front of TV cameras. What did the PFLP want the world to notice?"
             }
           ],
           "isReversed": false,
@@ -12666,13 +12666,11 @@ const cme_new = {
               "desc": "Modern explanatory map of Palestinian armed-group bases in Jordan before Black September and the Syrian incursion.",
               "provenance": "Modern explanatory map, \"Map of Fedayeen concentrations in Jordan in 1970\", drawn by Wikimedia contributor Makeandtoss (2017) from published histories; Wikimedia Commons, CC0.",
               "citation": "Wikimedia Commons, File:Map of Fedayeen concentrations in Jordan in 1970.png (CC0).",
-              "hinge_question": "Why did armed PLO factions become a threat to King Hussein's throne as well as to Israel?",
-              "source_context": "By 1970 Palestinian armed groups in Jordan ran checkpoints, collected taxes and openly challenged the king. After Dawson's Field, Hussein ordered his army against them on 16 September 1970. Thousands were killed, many in refugee camps around Amman; a Syrian armoured intervention was repulsed, and the PLO moved its headquarters to Lebanon. **Hinge Question:** Why did armed PLO factions become a threat to King Hussein's throne as well as to Israel?",
+              "source_context": "By 1970 Palestinian armed groups in Jordan ran checkpoints, collected taxes and openly challenged the king. After Dawson's Field, Hussein ordered his army against them on 16 September 1970. Thousands were killed, many in refugee camps around Amman; a Syrian armoured intervention was repulsed, and the PLO moved its headquarters to Lebanon.",
               "context": "On 16 September 1970 King Hussein ordered his army to crush the Palestinian armed groups; the PLO was expelled from Jordan by mid-1971.",
               "question_badge": "Turning Point Insight",
               "question_type": "Turning Point Insight",
-              "enquiry_question": "The map shows fedayeen bases across Jordan's towns and a Syrian invasion. Why did September 1970 end with the PLO expelled?",
-              "model_answer": "Armed fedayeen groups had built a 'state within a state' in Jordan with their own checkpoints, and when the PFLP hijacked and blew up Western airliners at Dawson's Field, King Hussein saw a direct threat to his authority and throne. Hussein ordered the Jordanian army to crush fedayeen bases in Amman and the refugee camps, and his forces also drove back a Syrian tank incursion across the northern border. By mid-1971 the PLO had been expelled from Jordan to Beirut and southern Lebanon, shifting the conflict's front line northwards.",
+              "model_answer": "Armed fedayeen groups had built a 'state within a state' in Jordan with their own checkpoints, and when the PFLP hijacked and blew up Western airliners at Dawson's Field, King Hussein saw a direct threat to his authority and throne. Hussein ordered the Jordanian army to crush fedayeen bases in Amman and the refugee camps, and his forces also drove back a Syrian tank incursion across the northern border; by mid-1971 the PLO had been expelled from Jordan to Beirut and southern Lebanon, shifting the conflict's front line northwards.",
               "provenance_clues": {
                 "author": "A Wikimedia Commons contributor (2017) drawing on published histories.",
                 "audience": "Online readers of encyclopedia articles on Black September.",
@@ -12680,8 +12678,10 @@ const cme_new = {
                 "hinge_question": "Why did armed PLO factions become a threat to King Hussein's throne as well as to Israel?"
               },
               "teacher_notes": {
-                "source_context": "By 1970 Palestinian armed groups in Jordan ran checkpoints, collected taxes and openly challenged the king. After Dawson's Field, Hussein ordered his army against them on 16 September 1970. Thousands were killed, many in refugee camps around Amman; a Syrian armoured intervention was repulsed, and the PLO moved its headquarters to Lebanon. **Hinge Question:** Why did armed PLO factions become a threat to King Hussein's throne as well as to Israel?"
-              }
+                "source_context": "By 1970 Palestinian armed groups in Jordan ran checkpoints, collected taxes and openly challenged the king. After Dawson's Field, Hussein ordered his army against them on 16 September 1970. Thousands were killed, many in refugee camps around Amman; a Syrian armoured intervention was repulsed, and the PLO moved its headquarters to Lebanon. **Hinge Question:** Why did armed PLO factions become a threat to King Hussein's throne as well as to Israel?",
+                "hinge_question": "Why did armed PLO factions become a threat to King Hussein's throne as well as to Israel?"
+              },
+              "question": "The map shows fedayeen bases across Jordan's towns and a Syrian invasion. Why did September 1970 end with the PLO expelled?"
             }
           ],
           "image": "/images/cme_king_hussein_black_september_1970.png",
@@ -12713,13 +12713,11 @@ const cme_new = {
               "desc": "Paired summaries of Golda Meir's Knesset statement after Munich and of Black September's stated aims and Arab reactions.",
               "provenance": "Side A: summary of Golda Meir's statement to the Knesset, 12 September 1972. Side B: summary of Black September's demands and Arab reactions, September 1972. Photo: IPPA photographer, 16 October 1972 (National Library of Israel), via Wikimedia Commons (CC BY 4.0).",
               "citation": "Knesset record, 12 September 1972; contemporary press reports, September 1972.",
-              "hinge_question": "Did Munich make the world take the Palestinian cause more seriously, or turn world opinion against it?",
-              "source_context": "Eight Black September gunmen broke into the Israeli team's quarters at the Munich Olympics, killed two Israelis and took nine hostages, demanding the release of over 200 Palestinian prisoners. A failed West German rescue at Fürstenfeldbruck airfield ended with all the hostages dead. The massacre was watched live by hundreds of millions of people. **Hinge Question:** Did Munich make the world take the Palestinian cause more seriously, or turn world opinion against it?",
+              "source_context": "Eight Black September gunmen broke into the Israeli team's quarters at the Munich Olympics, killed two Israelis and took nine hostages, demanding the release of over 200 Palestinian prisoners. A failed West German rescue at Fürstenfeldbruck airfield ended with all the hostages dead. The massacre was watched live by hundreds of millions of people.",
               "context": "On 5 September 1972 Black September gunmen took Israeli athletes hostage at the Munich Olympics; all eleven Israeli hostages and team members were killed.",
               "question_badge": "Competing Perspectives",
               "question_type": "Competing Perspectives",
-              "enquiry_question": "Meir vows to strike terror groups anywhere; Black September claims to act for prisoners. Why did Munich harden both sides?",
-              "model_answer": "For Israelis, the murder of eleven athletes and coaches proved that the armed groups targeted civilians anywhere, so Meir backed air strikes and a covert campaign to kill those responsible. Black September believed that only shocking violence would force the world to notice Palestinians and free prisoners. Each side's actions confirmed the other's view, deepening the cycle of attack and revenge.",
+              "model_answer": "For Israelis, the murder of eleven athletes and coaches proved that the armed groups targeted civilians anywhere, so Meir backed air strikes and a covert campaign to kill those responsible. Black September believed that only shocking violence would force the world to notice Palestinians and free prisoners; Each side's actions confirmed the other's view, deepening the cycle of attack and revenge.",
               "provenance_clues": {
                 "author": "Side A: Prime Minister Golda Meir. Side B: the Black September organisation and Arab governments.",
                 "audience": "Side A: the Knesset and Israelis. Side B: Palestinians, Arab publics and the world's media.",
@@ -12727,7 +12725,8 @@ const cme_new = {
                 "hinge_question": "Did Munich make the world take the Palestinian cause more seriously, or turn world opinion against it?"
               },
               "teacher_notes": {
-                "source_context": "Eight Black September gunmen broke into the Israeli team's quarters at the Munich Olympics, killed two Israelis and took nine hostages, demanding the release of over 200 Palestinian prisoners. A failed West German rescue at Fürstenfeldbruck airfield ended with all the hostages dead. The massacre was watched live by hundreds of millions of people. **Hinge Question:** Did Munich make the world take the Palestinian cause more seriously, or turn world opinion against it?"
+                "source_context": "Eight Black September gunmen broke into the Israeli team's quarters at the Munich Olympics, killed two Israelis and took nine hostages, demanding the release of over 200 Palestinian prisoners. A failed West German rescue at Fürstenfeldbruck airfield ended with all the hostages dead. The massacre was watched live by hundreds of millions of people. **Hinge Question:** Did Munich make the world take the Palestinian cause more seriously, or turn world opinion against it?",
+                "hinge_question": "Did Munich make the world take the Palestinian cause more seriously, or turn world opinion against it?"
               },
               "perspective_pair": {
                 "framing_note": "The massacre was seen in sharply different ways; reading the Israeli government's response beside the attackers' aims and Arab reactions shows why Munich deepened the conflict.",
@@ -12748,7 +12747,8 @@ const cme_new = {
                   "text_type": "summary",
                   "provenance": "Summary of Black September's demands and contemporary Arab reactions reported in the press, September 1972."
                 }
-              }
+              },
+              "question": "Meir vows to strike terror groups anywhere; Black September claims to act for prisoners. Why did Munich harden both sides?"
             }
           ],
           "image": "/images/cme_munich_1972_balcony.jpg",
@@ -12780,13 +12780,11 @@ const cme_new = {
               "desc": "United Nations photograph of Arafat's address to the General Assembly.",
               "provenance": "United Nations Photo, New York, 13 November 1974.",
               "citation": "United Nations Photo Library.",
-              "hinge_question": "Did Israel's Operation Wrath of God weaken the Palestinian armed groups, or did the PLO gain international standing anyway?",
-              "source_context": "Golda Meir ordered air strikes on PLO camps in Lebanon and Syria and approved Mossad's covert Operation Wrath of God, which killed Black September planners in Europe and Beirut but also killed an innocent waiter in Lillehammer, Norway, in 1973. Western governments condemned the Munich killings, yet the attacks also forced the world to confront the Palestinian question. **Hinge Question:** Did Israel's Operation Wrath of God weaken the Palestinian armed groups, or did the PLO gain international standing anyway?",
+              "source_context": "Golda Meir ordered air strikes on PLO camps in Lebanon and Syria and approved Mossad's covert Operation Wrath of God, which killed Black September planners in Europe and Beirut but also killed an innocent waiter in Lillehammer, Norway, in 1973. Western governments condemned the Munich killings, yet the attacks also forced the world to confront the Palestinian question.",
               "context": "After Munich, Israel struck PLO bases and Mossad hunted Black September planners; by 1974 the PLO had won wide international recognition.",
               "question_badge": "Turning Point Insight",
               "question_type": "Turning Point Insight",
-              "enquiry_question": "Two years after Munich, Arafat spoke at the United Nations. Why were world leaders now willing to hear the PLO?",
-              "model_answer": "Munich and the hijackings were condemned, but they also showed that Palestinian statelessness could not be dismissed as just a refugee issue. After the 1973 war and the oil embargo, many states wanted Arab goodwill, and in 1974 the Arab League recognised the PLO as the Palestinians' sole legitimate representative. Israel and many Western governments still refused to deal with it because of its use of violence.",
+              "model_answer": "Munich and the hijackings were condemned, but they also showed that Palestinian statelessness could not be dismissed as just a refugee issue. After the 1973 war and the oil embargo, many states wanted Arab goodwill, and in 1974 the Arab League recognised the PLO as the Palestinians' sole legitimate representative; Israel and many Western governments still refused to deal with it because of its use of violence.",
               "provenance_clues": {
                 "author": "A United Nations staff photographer.",
                 "audience": "UN member states and the world's press.",
@@ -12794,8 +12792,10 @@ const cme_new = {
                 "hinge_question": "Did Israel's Operation Wrath of God weaken the Palestinian armed groups, or did the PLO gain international standing anyway?"
               },
               "teacher_notes": {
-                "source_context": "Golda Meir ordered air strikes on PLO camps in Lebanon and Syria and approved Mossad's covert Operation Wrath of God, which killed Black September planners in Europe and Beirut but also killed an innocent waiter in Lillehammer, Norway, in 1973. Western governments condemned the Munich killings, yet the attacks also forced the world to confront the Palestinian question. **Hinge Question:** Did Israel's Operation Wrath of God weaken the Palestinian armed groups, or did the PLO gain international standing anyway?"
-              }
+                "source_context": "Golda Meir ordered air strikes on PLO camps in Lebanon and Syria and approved Mossad's covert Operation Wrath of God, which killed Black September planners in Europe and Beirut but also killed an innocent waiter in Lillehammer, Norway, in 1973. Western governments condemned the Munich killings, yet the attacks also forced the world to confront the Palestinian question. **Hinge Question:** Did Israel's Operation Wrath of God weaken the Palestinian armed groups, or did the PLO gain international standing anyway?",
+                "hinge_question": "Did Israel's Operation Wrath of God weaken the Palestinian armed groups, or did the PLO gain international standing anyway?"
+              },
+              "question": "Two years after Munich, Arafat spoke at the United Nations. Why were world leaders now willing to hear the PLO?"
             }
           ],
           "image": "/images/cme_plate_munich_memorial_service_1972.jpg",
@@ -12818,13 +12818,11 @@ const cme_new = {
           "desc": "Press photograph of Yasser Arafat as a guerrilla commander, c. 1969.",
           "provenance": "Press photograph, c. 1969 (Gamma-Rapho agency).",
           "citation": "Gamma-Rapho, c. 1969.",
-          "hinge_question": "Was Karameh a military defeat for Fatah that became a political victory?",
-          "source_context": "Israel raided the Fatah base at Karameh in Jordan on 21 March 1968. Palestinian fighters and Jordanian artillery inflicted significant losses before the Israelis withdrew after destroying the camp. Fatah celebrated Karameh as a victory, recruits flooded in, and in February 1969 Arafat was elected Chairman of the PLO, putting guerrilla groups in charge of Palestinian politics. **Hinge Question:** Was Karameh a military defeat for Fatah that became a political victory?",
+          "source_context": "Israel raided the Fatah base at Karameh in Jordan on 21 March 1968. Palestinian fighters and Jordanian artillery inflicted significant losses before the Israelis withdrew after destroying the camp. Fatah celebrated Karameh as a victory, recruits flooded in, and in February 1969 Arafat was elected Chairman of the PLO, putting guerrilla groups in charge of Palestinian politics.",
           "context": "On 21 March 1968 Palestinian fighters and the Jordanian army fought an Israeli raid on Karameh; Arafat became PLO Chairman in February 1969.",
           "question_badge": "Perspective & Motive",
           "question_type": "Perspective & Motive",
-          "enquiry_question": "Arafat chose to be photographed in battle fatigues soon after Karameh. Why did Fatah want Palestinians seen as fighters rather than refugees?",
-          "model_answer": "After 1967 many Palestinians felt Arab armies had failed them, so Fatah presented Palestinians as people fighting for their own cause. Karameh, where fighters stood their ground beside the Jordanian army, gave this image real power and brought thousands of volunteers. The image helped Arafat take over the PLO in February 1969.",
+          "model_answer": "After 1967 many Palestinians felt Arab armies had failed them, so Fatah presented Palestinians as people fighting for their own cause. Karameh, where fighters stood their ground beside the Jordanian army, gave this image real power and brought thousands of volunteers; the image helped Arafat take over the PLO in February 1969.",
           "provenance_clues": {
             "author": "A press photographer working for an international agency.",
             "audience": "Newspaper readers in the Arab world and the West.",
@@ -12832,8 +12830,10 @@ const cme_new = {
             "hinge_question": "Was Karameh a military defeat for Fatah that became a political victory?"
           },
           "teacher_notes": {
-            "source_context": "Israel raided the Fatah base at Karameh in Jordan on 21 March 1968. Palestinian fighters and Jordanian artillery inflicted significant losses before the Israelis withdrew after destroying the camp. Fatah celebrated Karameh as a victory, recruits flooded in, and in February 1969 Arafat was elected Chairman of the PLO, putting guerrilla groups in charge of Palestinian politics. **Hinge Question:** Was Karameh a military defeat for Fatah that became a political victory?"
-          }
+            "source_context": "Israel raided the Fatah base at Karameh in Jordan on 21 March 1968. Palestinian fighters and Jordanian artillery inflicted significant losses before the Israelis withdrew after destroying the camp. Fatah celebrated Karameh as a victory, recruits flooded in, and in February 1969 Arafat was elected Chairman of the PLO, putting guerrilla groups in charge of Palestinian politics. **Hinge Question:** Was Karameh a military defeat for Fatah that became a political victory?",
+            "hinge_question": "Was Karameh a military defeat for Fatah that became a political victory?"
+          },
+          "question": "Arafat chose to be photographed in battle fatigues soon after Karameh. Why did Fatah want Palestinians seen as fighters rather than refugees?"
         },
         {
           "id": "cme_l8_source_b",
@@ -12847,13 +12847,11 @@ const cme_new = {
           "desc": "News photograph of the destruction of hijacked airliners at Dawson's Field.",
           "provenance": "Associated Press news photograph, 12 September 1970.",
           "citation": "Associated Press.",
-          "hinge_question": "Did the hijackings help the Palestinian cause by making it famous, or harm it by linking it to terrorism?",
-          "source_context": "George Habash's Popular Front for the Liberation of Palestine (PFLP) used aircraft hijackings to publicise its cause and free prisoners. In September 1970 it forced three airliners to land at Dawson's Field near Zarqa, held hundreds of passengers, and blew up the empty planes in front of the world's media, humiliating King Hussein. **Hinge Question:** Did the hijackings help the Palestinian cause by making it famous, or harm it by linking it to terrorism?",
+          "source_context": "George Habash's Popular Front for the Liberation of Palestine (PFLP) used aircraft hijackings to publicise its cause and free prisoners. In September 1970 it forced three airliners to land at Dawson's Field near Zarqa, held hundreds of passengers, and blew up the empty planes in front of the world's media, humiliating King Hussein.",
           "context": "On 6 September 1970 the PFLP hijacked four Western airliners; three were flown to Dawson's Field in Jordan and destroyed on 12 September.",
           "question_badge": "Perspective & Motive",
           "question_type": "Perspective & Motive",
-          "enquiry_question": "Empty airliners explode on a Jordanian airstrip in front of TV cameras. What did the PFLP want the world to notice?",
-          "model_answer": "The PFLP wanted the world's attention on the Palestinian cause and on prisoners it hoped to free from European and Israeli jails. Blowing up the jets on camera guaranteed global headlines. It also showed that armed Palestinian groups, not King Hussein, controlled parts of Jordan — which pushed Hussein to act.",
+          "model_answer": "The PFLP wanted the world's attention on the Palestinian cause and on prisoners it hoped to free from European and Israeli jails. Blowing up the jets on camera guaranteed global headlines; it also showed that armed Palestinian groups, not King Hussein, controlled parts of Jordan — which pushed Hussein to act.",
           "provenance_clues": {
             "author": "An Associated Press photographer.",
             "audience": "Newspaper readers and TV viewers worldwide.",
@@ -12861,8 +12859,10 @@ const cme_new = {
             "hinge_question": "Did the hijackings help the Palestinian cause by making it famous, or harm it by linking it to terrorism?"
           },
           "teacher_notes": {
-            "source_context": "George Habash's Popular Front for the Liberation of Palestine (PFLP) used aircraft hijackings to publicise its cause and free prisoners. In September 1970 it forced three airliners to land at Dawson's Field near Zarqa, held hundreds of passengers, and blew up the empty planes in front of the world's media, humiliating King Hussein. **Hinge Question:** Did the hijackings help the Palestinian cause by making it famous, or harm it by linking it to terrorism?"
-          }
+            "source_context": "George Habash's Popular Front for the Liberation of Palestine (PFLP) used aircraft hijackings to publicise its cause and free prisoners. In September 1970 it forced three airliners to land at Dawson's Field near Zarqa, held hundreds of passengers, and blew up the empty planes in front of the world's media, humiliating King Hussein. **Hinge Question:** Did the hijackings help the Palestinian cause by making it famous, or harm it by linking it to terrorism?",
+            "hinge_question": "Did the hijackings help the Palestinian cause by making it famous, or harm it by linking it to terrorism?"
+          },
+          "question": "Empty airliners explode on a Jordanian airstrip in front of TV cameras. What did the PFLP want the world to notice?"
         },
         {
           "id": "cme_l8_source_c",
@@ -12876,13 +12876,11 @@ const cme_new = {
           "desc": "Modern explanatory map of Palestinian armed-group bases in Jordan before Black September and the Syrian incursion.",
           "provenance": "Modern explanatory map, \"Map of Fedayeen concentrations in Jordan in 1970\", drawn by Wikimedia contributor Makeandtoss (2017) from published histories; Wikimedia Commons, CC0.",
           "citation": "Wikimedia Commons, File:Map of Fedayeen concentrations in Jordan in 1970.png (CC0).",
-          "hinge_question": "Why did armed PLO factions become a threat to King Hussein's throne as well as to Israel?",
-          "source_context": "By 1970 Palestinian armed groups in Jordan ran checkpoints, collected taxes and openly challenged the king. After Dawson's Field, Hussein ordered his army against them on 16 September 1970. Thousands were killed, many in refugee camps around Amman; a Syrian armoured intervention was repulsed, and the PLO moved its headquarters to Lebanon. **Hinge Question:** Why did armed PLO factions become a threat to King Hussein's throne as well as to Israel?",
+          "source_context": "By 1970 Palestinian armed groups in Jordan ran checkpoints, collected taxes and openly challenged the king. After Dawson's Field, Hussein ordered his army against them on 16 September 1970. Thousands were killed, many in refugee camps around Amman; a Syrian armoured intervention was repulsed, and the PLO moved its headquarters to Lebanon.",
           "context": "On 16 September 1970 King Hussein ordered his army to crush the Palestinian armed groups; the PLO was expelled from Jordan by mid-1971.",
           "question_badge": "Turning Point Insight",
           "question_type": "Turning Point Insight",
-          "enquiry_question": "The map shows fedayeen bases across Jordan's towns and a Syrian invasion. Why did September 1970 end with the PLO expelled?",
-          "model_answer": "Armed fedayeen groups had built a 'state within a state' in Jordan with their own checkpoints, and when the PFLP hijacked and blew up Western airliners at Dawson's Field, King Hussein saw a direct threat to his authority and throne. Hussein ordered the Jordanian army to crush fedayeen bases in Amman and the refugee camps, and his forces also drove back a Syrian tank incursion across the northern border. By mid-1971 the PLO had been expelled from Jordan to Beirut and southern Lebanon, shifting the conflict's front line northwards.",
+          "model_answer": "Armed fedayeen groups had built a 'state within a state' in Jordan with their own checkpoints, and when the PFLP hijacked and blew up Western airliners at Dawson's Field, King Hussein saw a direct threat to his authority and throne. Hussein ordered the Jordanian army to crush fedayeen bases in Amman and the refugee camps, and his forces also drove back a Syrian tank incursion across the northern border; by mid-1971 the PLO had been expelled from Jordan to Beirut and southern Lebanon, shifting the conflict's front line northwards.",
           "provenance_clues": {
             "author": "A Wikimedia Commons contributor (2017) drawing on published histories.",
             "audience": "Online readers of encyclopedia articles on Black September.",
@@ -12890,8 +12888,10 @@ const cme_new = {
             "hinge_question": "Why did armed PLO factions become a threat to King Hussein's throne as well as to Israel?"
           },
           "teacher_notes": {
-            "source_context": "By 1970 Palestinian armed groups in Jordan ran checkpoints, collected taxes and openly challenged the king. After Dawson's Field, Hussein ordered his army against them on 16 September 1970. Thousands were killed, many in refugee camps around Amman; a Syrian armoured intervention was repulsed, and the PLO moved its headquarters to Lebanon. **Hinge Question:** Why did armed PLO factions become a threat to King Hussein's throne as well as to Israel?"
-          }
+            "source_context": "By 1970 Palestinian armed groups in Jordan ran checkpoints, collected taxes and openly challenged the king. After Dawson's Field, Hussein ordered his army against them on 16 September 1970. Thousands were killed, many in refugee camps around Amman; a Syrian armoured intervention was repulsed, and the PLO moved its headquarters to Lebanon. **Hinge Question:** Why did armed PLO factions become a threat to King Hussein's throne as well as to Israel?",
+            "hinge_question": "Why did armed PLO factions become a threat to King Hussein's throne as well as to Israel?"
+          },
+          "question": "The map shows fedayeen bases across Jordan's towns and a Syrian invasion. Why did September 1970 end with the PLO expelled?"
         },
         {
           "id": "cme_l8_source_d",
@@ -12905,13 +12905,11 @@ const cme_new = {
           "desc": "Paired summaries of Golda Meir's Knesset statement after Munich and of Black September's stated aims and Arab reactions.",
           "provenance": "Side A: summary of Golda Meir's statement to the Knesset, 12 September 1972. Side B: summary of Black September's demands and Arab reactions, September 1972. Photo: IPPA photographer, 16 October 1972 (National Library of Israel), via Wikimedia Commons (CC BY 4.0).",
           "citation": "Knesset record, 12 September 1972; contemporary press reports, September 1972.",
-          "hinge_question": "Did Munich make the world take the Palestinian cause more seriously, or turn world opinion against it?",
-          "source_context": "Eight Black September gunmen broke into the Israeli team's quarters at the Munich Olympics, killed two Israelis and took nine hostages, demanding the release of over 200 Palestinian prisoners. A failed West German rescue at Fürstenfeldbruck airfield ended with all the hostages dead. The massacre was watched live by hundreds of millions of people. **Hinge Question:** Did Munich make the world take the Palestinian cause more seriously, or turn world opinion against it?",
+          "source_context": "Eight Black September gunmen broke into the Israeli team's quarters at the Munich Olympics, killed two Israelis and took nine hostages, demanding the release of over 200 Palestinian prisoners. A failed West German rescue at Fürstenfeldbruck airfield ended with all the hostages dead. The massacre was watched live by hundreds of millions of people.",
           "context": "On 5 September 1972 Black September gunmen took Israeli athletes hostage at the Munich Olympics; all eleven Israeli hostages and team members were killed.",
           "question_badge": "Competing Perspectives",
           "question_type": "Competing Perspectives",
-          "enquiry_question": "Meir vows to strike terror groups anywhere; Black September claims to act for prisoners. Why did Munich harden both sides?",
-          "model_answer": "For Israelis, the murder of eleven athletes and coaches proved that the armed groups targeted civilians anywhere, so Meir backed air strikes and a covert campaign to kill those responsible. Black September believed that only shocking violence would force the world to notice Palestinians and free prisoners. Each side's actions confirmed the other's view, deepening the cycle of attack and revenge.",
+          "model_answer": "For Israelis, the murder of eleven athletes and coaches proved that the armed groups targeted civilians anywhere, so Meir backed air strikes and a covert campaign to kill those responsible. Black September believed that only shocking violence would force the world to notice Palestinians and free prisoners; Each side's actions confirmed the other's view, deepening the cycle of attack and revenge.",
           "provenance_clues": {
             "author": "Side A: Prime Minister Golda Meir. Side B: the Black September organisation and Arab governments.",
             "audience": "Side A: the Knesset and Israelis. Side B: Palestinians, Arab publics and the world's media.",
@@ -12919,7 +12917,8 @@ const cme_new = {
             "hinge_question": "Did Munich make the world take the Palestinian cause more seriously, or turn world opinion against it?"
           },
           "teacher_notes": {
-            "source_context": "Eight Black September gunmen broke into the Israeli team's quarters at the Munich Olympics, killed two Israelis and took nine hostages, demanding the release of over 200 Palestinian prisoners. A failed West German rescue at Fürstenfeldbruck airfield ended with all the hostages dead. The massacre was watched live by hundreds of millions of people. **Hinge Question:** Did Munich make the world take the Palestinian cause more seriously, or turn world opinion against it?"
+            "source_context": "Eight Black September gunmen broke into the Israeli team's quarters at the Munich Olympics, killed two Israelis and took nine hostages, demanding the release of over 200 Palestinian prisoners. A failed West German rescue at Fürstenfeldbruck airfield ended with all the hostages dead. The massacre was watched live by hundreds of millions of people. **Hinge Question:** Did Munich make the world take the Palestinian cause more seriously, or turn world opinion against it?",
+            "hinge_question": "Did Munich make the world take the Palestinian cause more seriously, or turn world opinion against it?"
           },
           "perspective_pair": {
             "framing_note": "The massacre was seen in sharply different ways; reading the Israeli government's response beside the attackers' aims and Arab reactions shows why Munich deepened the conflict.",
@@ -12940,7 +12939,8 @@ const cme_new = {
               "text_type": "summary",
               "provenance": "Summary of Black September's demands and contemporary Arab reactions reported in the press, September 1972."
             }
-          }
+          },
+          "question": "Meir vows to strike terror groups anywhere; Black September claims to act for prisoners. Why did Munich harden both sides?"
         },
         {
           "id": "cme_l8_source_e",
@@ -12954,13 +12954,11 @@ const cme_new = {
           "desc": "United Nations photograph of Arafat's address to the General Assembly.",
           "provenance": "United Nations Photo, New York, 13 November 1974.",
           "citation": "United Nations Photo Library.",
-          "hinge_question": "Did Israel's Operation Wrath of God weaken the Palestinian armed groups, or did the PLO gain international standing anyway?",
-          "source_context": "Golda Meir ordered air strikes on PLO camps in Lebanon and Syria and approved Mossad's covert Operation Wrath of God, which killed Black September planners in Europe and Beirut but also killed an innocent waiter in Lillehammer, Norway, in 1973. Western governments condemned the Munich killings, yet the attacks also forced the world to confront the Palestinian question. **Hinge Question:** Did Israel's Operation Wrath of God weaken the Palestinian armed groups, or did the PLO gain international standing anyway?",
+          "source_context": "Golda Meir ordered air strikes on PLO camps in Lebanon and Syria and approved Mossad's covert Operation Wrath of God, which killed Black September planners in Europe and Beirut but also killed an innocent waiter in Lillehammer, Norway, in 1973. Western governments condemned the Munich killings, yet the attacks also forced the world to confront the Palestinian question.",
           "context": "After Munich, Israel struck PLO bases and Mossad hunted Black September planners; by 1974 the PLO had won wide international recognition.",
           "question_badge": "Turning Point Insight",
           "question_type": "Turning Point Insight",
-          "enquiry_question": "Two years after Munich, Arafat spoke at the United Nations. Why were world leaders now willing to hear the PLO?",
-          "model_answer": "Munich and the hijackings were condemned, but they also showed that Palestinian statelessness could not be dismissed as just a refugee issue. After the 1973 war and the oil embargo, many states wanted Arab goodwill, and in 1974 the Arab League recognised the PLO as the Palestinians' sole legitimate representative. Israel and many Western governments still refused to deal with it because of its use of violence.",
+          "model_answer": "Munich and the hijackings were condemned, but they also showed that Palestinian statelessness could not be dismissed as just a refugee issue. After the 1973 war and the oil embargo, many states wanted Arab goodwill, and in 1974 the Arab League recognised the PLO as the Palestinians' sole legitimate representative; Israel and many Western governments still refused to deal with it because of its use of violence.",
           "provenance_clues": {
             "author": "A United Nations staff photographer.",
             "audience": "UN member states and the world's press.",
@@ -12968,8 +12966,10 @@ const cme_new = {
             "hinge_question": "Did Israel's Operation Wrath of God weaken the Palestinian armed groups, or did the PLO gain international standing anyway?"
           },
           "teacher_notes": {
-            "source_context": "Golda Meir ordered air strikes on PLO camps in Lebanon and Syria and approved Mossad's covert Operation Wrath of God, which killed Black September planners in Europe and Beirut but also killed an innocent waiter in Lillehammer, Norway, in 1973. Western governments condemned the Munich killings, yet the attacks also forced the world to confront the Palestinian question. **Hinge Question:** Did Israel's Operation Wrath of God weaken the Palestinian armed groups, or did the PLO gain international standing anyway?"
-          }
+            "source_context": "Golda Meir ordered air strikes on PLO camps in Lebanon and Syria and approved Mossad's covert Operation Wrath of God, which killed Black September planners in Europe and Beirut but also killed an innocent waiter in Lillehammer, Norway, in 1973. Western governments condemned the Munich killings, yet the attacks also forced the world to confront the Palestinian question. **Hinge Question:** Did Israel's Operation Wrath of God weaken the Palestinian armed groups, or did the PLO gain international standing anyway?",
+            "hinge_question": "Did Israel's Operation Wrath of God weaken the Palestinian armed groups, or did the PLO gain international standing anyway?"
+          },
+          "question": "Two years after Munich, Arafat spoke at the United Nations. Why were world leaders now willing to hear the PLO?"
         }
       ],
       "exam_practice": {
@@ -14080,13 +14080,11 @@ const cme_new = {
               "desc": "Modern explanatory diagram of the Suez Canal front, with paired summaries of Egyptian and Israeli aims in the War of Attrition.",
               "provenance": "Diagram: explanatory cross-section drawn for this unit. Side A: summary of President Nasser's public statements, 1968–70. Side B: summary of Israeli government and IDF statements, 1969–70.",
               "citation": "Nasser speeches, 1968–70; Israeli government and IDF statements, 1969–70.",
-              "hinge_question": "Did the War of Attrition show that Israel's 1967 victory had settled nothing?",
-              "source_context": "Nasser launched the War of Attrition in March 1969 to stop the 1967 ceasefire line hardening into a border and to make holding Sinai costly for Israel. Israeli soldiers sheltered in Bar-Lev Line bunkers while Israeli jets struck deep inside Egypt. When the Soviet Union sent missiles and pilots to defend Egypt, the risk of superpower clash led both sides to accept a US-brokered ceasefire in August 1970. **Hinge Question:** Did the War of Attrition show that Israel's 1967 victory had settled nothing?",
+              "source_context": "Nasser launched the War of Attrition in March 1969 to stop the 1967 ceasefire line hardening into a border and to make holding Sinai costly for Israel. Israeli soldiers sheltered in Bar-Lev Line bunkers while Israeli jets struck deep inside Egypt. When the Soviet Union sent missiles and pilots to defend Egypt, the risk of superpower clash led both sides to accept a US-brokered ceasefire in August 1970.",
               "context": "From March 1969 to August 1970 Egypt and Israel fought a grinding war of shelling, raids and air strikes along the Suez Canal.",
               "question_badge": "Competing Perspectives",
               "question_type": "Competing Perspectives",
-              "enquiry_question": "Nasser wanted to wear Israel down; Israel wanted to prove its canal line could hold. Who gained most from this war?",
-              "model_answer": "Neither side won outright: Israel kept the Bar-Lev Line but suffered a steady stream of casualties, and Egypt lost heavily to Israeli air raids. However, the fighting brought Soviet missiles and pilots to Egypt, and in 1970 the missile belt moved up to the canal. That missile umbrella later protected Egypt's crossing in October 1973.",
+              "model_answer": "Neither side won outright: Israel kept the Bar-Lev Line but suffered a steady stream of casualties, and Egypt lost heavily to Israeli air raids. However, the fighting brought Soviet missiles and pilots to Egypt, and in 1970 the missile belt moved up to the canal; that missile umbrella later protected Egypt's crossing in October 1973.",
               "provenance_clues": {
                 "author": "Side A: President Gamal Abdel Nasser. Side B: the Israeli government and the Israel Defense Forces.",
                 "audience": "Side A: Egyptians and the Arab world. Side B: Israelis and the United States.",
@@ -14094,7 +14092,8 @@ const cme_new = {
                 "hinge_question": "Did the War of Attrition show that Israel's 1967 victory had settled nothing?"
               },
               "teacher_notes": {
-                "source_context": "Nasser launched the War of Attrition in March 1969 to stop the 1967 ceasefire line hardening into a border and to make holding Sinai costly for Israel. Israeli soldiers sheltered in Bar-Lev Line bunkers while Israeli jets struck deep inside Egypt. When the Soviet Union sent missiles and pilots to defend Egypt, the risk of superpower clash led both sides to accept a US-brokered ceasefire in August 1970. **Hinge Question:** Did the War of Attrition show that Israel's 1967 victory had settled nothing?"
+                "source_context": "Nasser launched the War of Attrition in March 1969 to stop the 1967 ceasefire line hardening into a border and to make holding Sinai costly for Israel. Israeli soldiers sheltered in Bar-Lev Line bunkers while Israeli jets struck deep inside Egypt. When the Soviet Union sent missiles and pilots to defend Egypt, the risk of superpower clash led both sides to accept a US-brokered ceasefire in August 1970. **Hinge Question:** Did the War of Attrition show that Israel's 1967 victory had settled nothing?",
+                "hinge_question": "Did the War of Attrition show that Israel's 1967 victory had settled nothing?"
               },
               "perspective_pair": {
                 "framing_note": "The two governments fought the same war for opposite purposes; comparing their aims explains why it ended in stalemate rather than victory.",
@@ -14114,7 +14113,8 @@ const cme_new = {
                   "text_type": "summary",
                   "provenance": "Summary of Israeli government and IDF statements, 1969–70."
                 }
-              }
+              },
+              "question": "Nasser wanted to wear Israel down; Israel wanted to prove its canal line could hold. Who gained most from this war?"
             }
           ],
           "stage_hook_map": {
@@ -14198,13 +14198,11 @@ const cme_new = {
               "desc": "Photograph of Sadat in 1971 with paired summaries of Egypt's February 1971 initiative and Israel's response.",
               "provenance": "Photo: Anwar Sadat, 1971 (Wikimedia Commons, public domain). Side A: summary of Sadat's initiative of 4 February 1971 and Egypt's reply to UN envoy Gunnar Jarring, 15 February 1971. Side B: summary of Israel's reply to Jarring, 26 February 1971.",
               "citation": "Egyptian and Israeli replies to Ambassador Gunnar Jarring, February 1971.",
-              "hinge_question": "Was the 1973 war caused more by Israeli overconfidence or by Sadat's need to win back Egyptian pride?",
-              "source_context": "After Nasser died in September 1970, Anwar Sadat offered in February 1971 to reopen the Suez Canal if Israel pulled back from it, and told UN envoy Gunnar Jarring that Egypt would sign a peace agreement in return for full withdrawal. Golda Meir's government refused to return to the pre-1967 lines. In July 1972 Sadat expelled about 15,000 Soviet advisers and began secret war planning with Syria. **Hinge Question:** Was the 1973 war caused more by Israeli overconfidence or by Sadat's need to win back Egyptian pride?",
+              "source_context": "After Nasser died in September 1970, Anwar Sadat offered in February 1971 to reopen the Suez Canal if Israel pulled back from it, and told UN envoy Gunnar Jarring that Egypt would sign a peace agreement in return for full withdrawal. Golda Meir's government refused to return to the pre-1967 lines. In July 1972 Sadat expelled about 15,000 Soviet advisers and began secret war planning with Syria.",
               "context": "In February 1971 Sadat proposed reopening the Suez Canal and said Egypt was ready for a peace agreement if Israel withdrew from Sinai.",
               "question_badge": "Competing Perspectives",
               "question_type": "Competing Perspectives",
-              "enquiry_question": "Sadat offered peace for land in 1971, but Israel refused the 1967 lines. Why did this deadlock push Sadat towards war?",
-              "model_answer": "Sadat had taken a big risk by saying Egypt would make peace, yet Israel, confident in its military superiority, would not promise full withdrawal and the USA did not press it. Sadat concluded that only a limited war could shake Israel's confidence and force the superpowers to restart diplomacy. In July 1972 he expelled Soviet advisers and began planning that war with Syria.",
+              "model_answer": "Sadat had taken a big risk by saying Egypt would make peace, yet Israel, confident in its military superiority, would not promise full withdrawal and the USA did not press it. Sadat concluded that only a limited war could shake Israel's confidence and force the superpowers to restart diplomacy; in July 1972 he expelled Soviet advisers and began planning that war with Syria.",
               "provenance_clues": {
                 "author": "Side A: President Anwar Sadat and the Egyptian government. Side B: Prime Minister Golda Meir's government.",
                 "audience": "The UN envoy Gunnar Jarring, the United States and both countries' publics.",
@@ -14212,7 +14210,8 @@ const cme_new = {
                 "hinge_question": "Was the 1973 war caused more by Israeli overconfidence or by Sadat's need to win back Egyptian pride?"
               },
               "teacher_notes": {
-                "source_context": "After Nasser died in September 1970, Anwar Sadat offered in February 1971 to reopen the Suez Canal if Israel pulled back from it, and told UN envoy Gunnar Jarring that Egypt would sign a peace agreement in return for full withdrawal. Golda Meir's government refused to return to the pre-1967 lines. In July 1972 Sadat expelled about 15,000 Soviet advisers and began secret war planning with Syria. **Hinge Question:** Was the 1973 war caused more by Israeli overconfidence or by Sadat's need to win back Egyptian pride?"
+                "source_context": "After Nasser died in September 1970, Anwar Sadat offered in February 1971 to reopen the Suez Canal if Israel pulled back from it, and told UN envoy Gunnar Jarring that Egypt would sign a peace agreement in return for full withdrawal. Golda Meir's government refused to return to the pre-1967 lines. In July 1972 Sadat expelled about 15,000 Soviet advisers and began secret war planning with Syria. **Hinge Question:** Was the 1973 war caused more by Israeli overconfidence or by Sadat's need to win back Egyptian pride?",
+                "hinge_question": "Was the 1973 war caused more by Israeli overconfidence or by Sadat's need to win back Egyptian pride?"
               },
               "perspective_pair": {
                 "framing_note": "Both governments said they wanted peace in February 1971; comparing their conditions shows why diplomacy stalled and Sadat turned to war.",
@@ -14233,7 +14232,8 @@ const cme_new = {
                   "text_type": "summary",
                   "provenance": "Summary of Israel's reply to Ambassador Jarring, 26 February 1971, and statements by Israeli ministers."
                 }
-              }
+              },
+              "question": "Sadat offered peace for land in 1971, but Israel refused the 1967 lines. Why did this deadlock push Sadat towards war?"
             }
           ],
           "image": "/images/cme_sadat_assad_gaddafi_benghazi_1971.jpg",
@@ -14265,13 +14265,11 @@ const cme_new = {
               "desc": "Egyptian military photograph of the canal crossing in the first days of the October 1973 war.",
               "provenance": "Egyptian armed forces photograph, October 1973.",
               "citation": "Egyptian Ministry of Defence archive photograph.",
-              "hinge_question": "Was the surprise of 6 October caused mainly by Egyptian skill or by Israeli overconfidence?",
-              "source_context": "The attack came on Yom Kippur, the holiest day in Judaism, during the month of Ramadan. Israeli intelligence had misread the Arab build-up as an exercise. Under a huge artillery barrage, Egyptian troops crossed the canal, engineers washed away sections of the sand rampart with high-pressure water, and bridges carried tanks and trucks across, while Syrian armour broke through on the Golan. **Hinge Question:** Was the surprise of 6 October caused mainly by Egyptian skill or by Israeli overconfidence?",
+              "source_context": "The attack came on Yom Kippur, the holiest day in Judaism, during the month of Ramadan. Israeli intelligence had misread the Arab build-up as an exercise. Under a huge artillery barrage, Egyptian troops crossed the canal, engineers washed away sections of the sand rampart with high-pressure water, and bridges carried tanks and trucks across, while Syrian armour broke through on the Golan.",
               "context": "At 14:00 on 6 October 1973 Egypt and Syria attacked; Egyptian troops crossed the canal and broke through the Bar-Lev Line.",
               "question_badge": "Turning Point Insight",
               "question_type": "Turning Point Insight",
-              "enquiry_question": "Egyptian trucks drive through a gap in the sand wall Israel thought unbreakable. Why did this crossing shock Israel so badly?",
-              "model_answer": "Israeli intelligence had believed Egypt would not attack, so most reservists were at home for Yom Kippur when the assault began on 6 October. Egyptian engineers used water cannon to wash gaps in the rampart within hours, and soldiers armed with Soviet anti-tank missiles stopped Israeli counter-attacks. The crossing destroyed the belief that the Bar-Lev Line and Israel's army made it untouchable.",
+              "model_answer": "Israeli intelligence had believed Egypt would not attack, so most reservists were at home for Yom Kippur when the assault began on 6 October. Egyptian engineers used water cannon to wash gaps in the rampart within hours, and soldiers armed with Soviet anti-tank missiles stopped Israeli counter-attacks; the crossing destroyed the belief that the Bar-Lev Line and Israel's army made it untouchable.",
               "provenance_clues": {
                 "author": "An Egyptian army photographer.",
                 "audience": "Egyptian and Arab newspapers and later commemorations.",
@@ -14279,8 +14277,10 @@ const cme_new = {
                 "hinge_question": "Was the surprise of 6 October caused mainly by Egyptian skill or by Israeli overconfidence?"
               },
               "teacher_notes": {
-                "source_context": "The attack came on Yom Kippur, the holiest day in Judaism, during the month of Ramadan. Israeli intelligence had misread the Arab build-up as an exercise. Under a huge artillery barrage, Egyptian troops crossed the canal, engineers washed away sections of the sand rampart with high-pressure water, and bridges carried tanks and trucks across, while Syrian armour broke through on the Golan. **Hinge Question:** Was the surprise of 6 October caused mainly by Egyptian skill or by Israeli overconfidence?"
-              }
+                "source_context": "The attack came on Yom Kippur, the holiest day in Judaism, during the month of Ramadan. Israeli intelligence had misread the Arab build-up as an exercise. Under a huge artillery barrage, Egyptian troops crossed the canal, engineers washed away sections of the sand rampart with high-pressure water, and bridges carried tanks and trucks across, while Syrian armour broke through on the Golan. **Hinge Question:** Was the surprise of 6 October caused mainly by Egyptian skill or by Israeli overconfidence?",
+                "hinge_question": "Was the surprise of 6 October caused mainly by Egyptian skill or by Israeli overconfidence?"
+              },
+              "question": "Egyptian trucks drive through a gap in the sand wall Israel thought unbreakable. Why did this crossing shock Israel so badly?"
             }
           ],
           "image": "/units/cme_new/assets/sadat_operations_center_1973.jpg",
@@ -14312,13 +14312,11 @@ const cme_new = {
               "desc": "Israeli army photograph of the canal crossing at Deversoir.",
               "provenance": "Israel Defense Forces archive photograph, October 1973.",
               "citation": "Israel Defense Forces Archives.",
-              "hinge_question": "Did the superpowers end the war to protect their allies or to avoid a direct clash with each other?",
-              "source_context": "Israel lost many tanks and aircraft to Soviet-made missiles in the first days. President Nixon ordered an emergency airlift on 14 October to match Soviet supplies to Egypt and Syria. General Ariel Sharon then led forces across the canal near Deversoir, encircling Egypt's Third Army. Soviet threats to intervene and a US nuclear alert pushed both superpowers to impose a ceasefire. **Hinge Question:** Did the superpowers end the war to protect their allies or to avoid a direct clash with each other?",
-              "context": "After heavy early losses, Israel was resupplied by a US airlift from 14 October and crossed the canal on 15–16 October.",
+              "source_context": "In the second week of the October 1973 Yom Kippur War, following heavy armoured battles in Sinai and rival superpower resupply airlifts, Israeli armoured brigades under General Ariel Sharon bridged the Suez Canal at Deversoir between the Great Bitter Lake and Lake Timsah.",
+              "context": "In the second week of the October 1973 Yom Kippur War, following heavy armoured battles in Sinai and rival superpower resupply airlifts, Israeli armoured brigades under General Ariel Sharon bridged the Suez Canal at Deversoir between the Great Bitter Lake and Lake Timsah.",
               "question_badge": "Turning Point Insight",
               "question_type": "Turning Point Insight",
-              "enquiry_question": "Israeli tanks cross to the canal's west bank. How did this counter-attack and the US airlift turn the war?",
-              "model_answer": "The American airlift from 14 October replaced Israel's lost tanks and ammunition, allowing Israel to go back on the offensive. Sharon's crossing at Deversoir on 15–16 October put Israeli forces behind Egyptian lines and trapped the Third Army. With the Soviet Union threatening to intervene, the superpowers hurried to impose a ceasefire.",
+              "model_answer": "The American airlift from 14 October replaced Israel's lost tanks and ammunition, allowing Israel to go back on the offensive. Sharon's crossing at Deversoir on 15–16 October put Israeli forces behind Egyptian lines and trapped the Third Army; with the Soviet Union threatening to intervene, the superpowers hurried to impose a ceasefire.",
               "provenance_clues": {
                 "author": "An Israel Defense Forces photographer.",
                 "audience": "Israeli army records and the Israeli press.",
@@ -14326,8 +14324,10 @@ const cme_new = {
                 "hinge_question": "Did the superpowers end the war to protect their allies or to avoid a direct clash with each other?"
               },
               "teacher_notes": {
-                "source_context": "Israel lost many tanks and aircraft to Soviet-made missiles in the first days. President Nixon ordered an emergency airlift on 14 October to match Soviet supplies to Egypt and Syria. General Ariel Sharon then led forces across the canal near Deversoir, encircling Egypt's Third Army. Soviet threats to intervene and a US nuclear alert pushed both superpowers to impose a ceasefire. **Hinge Question:** Did the superpowers end the war to protect their allies or to avoid a direct clash with each other?"
-              }
+                "source_context": "Israel lost many tanks and aircraft to Soviet-made missiles in the first days. President Nixon ordered an emergency airlift on 14 October to match Soviet supplies to Egypt and Syria. General Ariel Sharon then led forces across the canal near Deversoir, encircling Egypt's Third Army. Soviet threats to intervene and a US nuclear alert pushed both superpowers to impose a ceasefire. **Hinge Question:** Did the superpowers end the war to protect their allies or to avoid a direct clash with each other?",
+                "hinge_question": "Did the superpowers end the war to protect their allies or to avoid a direct clash with each other?"
+              },
+              "question": "Israeli tanks cross to the canal's west bank. How did this counter-attack and the US airlift turn the war?"
             }
           ],
           "image": "/images/cme_new/kt2/cme_l8_b3_usaf_mac_c5a_galaxy.jpg",
@@ -14359,13 +14359,11 @@ const cme_new = {
               "desc": "White House photograph of Golda Meir's meeting with Nixon and Kissinger after the October War.",
               "provenance": "White House Photo Office, 1 November 1973 (Richard Nixon Presidential Library; public domain US government work).",
               "citation": "Richard Nixon Presidential Library / US National Archives.",
-              "hinge_question": "Was the October War a military victory for Israel but a political victory for Egypt?",
-              "source_context": "Arab oil ministers used the \"oil weapon\" from 17 October 1973, cutting production and embargoing the United States and other supporters of Israel, and oil prices quadrupled within months. Resolution 338 demanded a ceasefire and negotiations based on Resolution 242. Israel had won on the battlefield, but heavy losses ended the myth of its invulnerability and restored Arab self-respect. **Hinge Question:** Was the October War a military victory for Israel but a political victory for Egypt?",
+              "source_context": "Arab oil ministers used the \"oil weapon\" from 17 October 1973, cutting production and embargoing the United States and other supporters of Israel, and oil prices quadrupled within months. Resolution 338 demanded a ceasefire and negotiations based on Resolution 242. Israel had won on the battlefield, but heavy losses ended the myth of its invulnerability and restored Arab self-respect.",
               "context": "From 17 October 1973 Arab oil producers cut output and embargoed the USA; UN Resolution 338 on 22 October called for a ceasefire and negotiations.",
               "question_badge": "Perspective & Motive",
               "question_type": "Perspective & Motive",
-              "enquiry_question": "Kissinger meets Golda Meir in November 1973 as oil prices soar. Why did the United States now push hard for a settlement?",
-              "model_answer": "The OAPEC oil embargo quadrupled world oil prices and delivered a severe economic shock to the United States and Western Europe, making Middle East stability an urgent economic priority. At the same time, October's superpower nuclear alert and UN Resolution 338 showed how easily renewed fighting could drag Washington and Moscow toward direct confrontation. Together, the oil shock and Cold War danger drove Henry Kissinger to launch urgent negotiations that also aimed to draw Egypt away from Soviet influence.",
+              "model_answer": "The OAPEC oil embargo quadrupled world oil prices and delivered a severe economic shock to the United States and Western Europe, making Middle East stability an urgent economic priority. At the same time, October's superpower nuclear alert and UN Resolution 338 showed how easily renewed fighting could drag Washington and Moscow toward direct confrontation; together, the oil shock and Cold War danger drove Henry Kissinger to launch urgent negotiations that also aimed to draw Egypt away from Soviet influence.",
               "provenance_clues": {
                 "author": "A White House staff photographer.",
                 "audience": "The US government and the press.",
@@ -14373,8 +14371,10 @@ const cme_new = {
                 "hinge_question": "Was the October War a military victory for Israel but a political victory for Egypt?"
               },
               "teacher_notes": {
-                "source_context": "Arab oil ministers used the \"oil weapon\" from 17 October 1973, cutting production and embargoing the United States and other supporters of Israel, and oil prices quadrupled within months. Resolution 338 demanded a ceasefire and negotiations based on Resolution 242. Israel had won on the battlefield, but heavy losses ended the myth of its invulnerability and restored Arab self-respect. **Hinge Question:** Was the October War a military victory for Israel but a political victory for Egypt?"
-              }
+                "source_context": "Arab oil ministers used the \"oil weapon\" from 17 October 1973, cutting production and embargoing the United States and other supporters of Israel, and oil prices quadrupled within months. Resolution 338 demanded a ceasefire and negotiations based on Resolution 242. Israel had won on the battlefield, but heavy losses ended the myth of its invulnerability and restored Arab self-respect. **Hinge Question:** Was the October War a military victory for Israel but a political victory for Egypt?",
+                "hinge_question": "Was the October War a military victory for Israel but a political victory for Egypt?"
+              },
+              "question": "Kissinger meets Golda Meir in November 1973 as oil prices soar. Why did the United States now push hard for a settlement?"
             }
           ],
           "image": "/images/cme_plate_kilometre_101_talks_1973.jpg",
@@ -14397,13 +14397,11 @@ const cme_new = {
           "desc": "Modern explanatory diagram of the Suez Canal front, with paired summaries of Egyptian and Israeli aims in the War of Attrition.",
           "provenance": "Diagram: explanatory cross-section drawn for this unit. Side A: summary of President Nasser's public statements, 1968–70. Side B: summary of Israeli government and IDF statements, 1969–70.",
           "citation": "Nasser speeches, 1968–70; Israeli government and IDF statements, 1969–70.",
-          "hinge_question": "Did the War of Attrition show that Israel's 1967 victory had settled nothing?",
-          "source_context": "Nasser launched the War of Attrition in March 1969 to stop the 1967 ceasefire line hardening into a border and to make holding Sinai costly for Israel. Israeli soldiers sheltered in Bar-Lev Line bunkers while Israeli jets struck deep inside Egypt. When the Soviet Union sent missiles and pilots to defend Egypt, the risk of superpower clash led both sides to accept a US-brokered ceasefire in August 1970. **Hinge Question:** Did the War of Attrition show that Israel's 1967 victory had settled nothing?",
+          "source_context": "Nasser launched the War of Attrition in March 1969 to stop the 1967 ceasefire line hardening into a border and to make holding Sinai costly for Israel. Israeli soldiers sheltered in Bar-Lev Line bunkers while Israeli jets struck deep inside Egypt. When the Soviet Union sent missiles and pilots to defend Egypt, the risk of superpower clash led both sides to accept a US-brokered ceasefire in August 1970.",
           "context": "From March 1969 to August 1970 Egypt and Israel fought a grinding war of shelling, raids and air strikes along the Suez Canal.",
           "question_badge": "Competing Perspectives",
           "question_type": "Competing Perspectives",
-          "enquiry_question": "Nasser wanted to wear Israel down; Israel wanted to prove its canal line could hold. Who gained most from this war?",
-          "model_answer": "Neither side won outright: Israel kept the Bar-Lev Line but suffered a steady stream of casualties, and Egypt lost heavily to Israeli air raids. However, the fighting brought Soviet missiles and pilots to Egypt, and in 1970 the missile belt moved up to the canal. That missile umbrella later protected Egypt's crossing in October 1973.",
+          "model_answer": "Neither side won outright: Israel kept the Bar-Lev Line but suffered a steady stream of casualties, and Egypt lost heavily to Israeli air raids. However, the fighting brought Soviet missiles and pilots to Egypt, and in 1970 the missile belt moved up to the canal; that missile umbrella later protected Egypt's crossing in October 1973.",
           "provenance_clues": {
             "author": "Side A: President Gamal Abdel Nasser. Side B: the Israeli government and the Israel Defense Forces.",
             "audience": "Side A: Egyptians and the Arab world. Side B: Israelis and the United States.",
@@ -14411,7 +14409,8 @@ const cme_new = {
             "hinge_question": "Did the War of Attrition show that Israel's 1967 victory had settled nothing?"
           },
           "teacher_notes": {
-            "source_context": "Nasser launched the War of Attrition in March 1969 to stop the 1967 ceasefire line hardening into a border and to make holding Sinai costly for Israel. Israeli soldiers sheltered in Bar-Lev Line bunkers while Israeli jets struck deep inside Egypt. When the Soviet Union sent missiles and pilots to defend Egypt, the risk of superpower clash led both sides to accept a US-brokered ceasefire in August 1970. **Hinge Question:** Did the War of Attrition show that Israel's 1967 victory had settled nothing?"
+            "source_context": "Nasser launched the War of Attrition in March 1969 to stop the 1967 ceasefire line hardening into a border and to make holding Sinai costly for Israel. Israeli soldiers sheltered in Bar-Lev Line bunkers while Israeli jets struck deep inside Egypt. When the Soviet Union sent missiles and pilots to defend Egypt, the risk of superpower clash led both sides to accept a US-brokered ceasefire in August 1970. **Hinge Question:** Did the War of Attrition show that Israel's 1967 victory had settled nothing?",
+            "hinge_question": "Did the War of Attrition show that Israel's 1967 victory had settled nothing?"
           },
           "perspective_pair": {
             "framing_note": "The two governments fought the same war for opposite purposes; comparing their aims explains why it ended in stalemate rather than victory.",
@@ -14431,7 +14430,8 @@ const cme_new = {
               "text_type": "summary",
               "provenance": "Summary of Israeli government and IDF statements, 1969–70."
             }
-          }
+          },
+          "question": "Nasser wanted to wear Israel down; Israel wanted to prove its canal line could hold. Who gained most from this war?"
         },
         {
           "id": "cme_l9_source_b",
@@ -14445,13 +14445,11 @@ const cme_new = {
           "desc": "Photograph of Sadat in 1971 with paired summaries of Egypt's February 1971 initiative and Israel's response.",
           "provenance": "Photo: Anwar Sadat, 1971 (Wikimedia Commons, public domain). Side A: summary of Sadat's initiative of 4 February 1971 and Egypt's reply to UN envoy Gunnar Jarring, 15 February 1971. Side B: summary of Israel's reply to Jarring, 26 February 1971.",
           "citation": "Egyptian and Israeli replies to Ambassador Gunnar Jarring, February 1971.",
-          "hinge_question": "Was the 1973 war caused more by Israeli overconfidence or by Sadat's need to win back Egyptian pride?",
-          "source_context": "After Nasser died in September 1970, Anwar Sadat offered in February 1971 to reopen the Suez Canal if Israel pulled back from it, and told UN envoy Gunnar Jarring that Egypt would sign a peace agreement in return for full withdrawal. Golda Meir's government refused to return to the pre-1967 lines. In July 1972 Sadat expelled about 15,000 Soviet advisers and began secret war planning with Syria. **Hinge Question:** Was the 1973 war caused more by Israeli overconfidence or by Sadat's need to win back Egyptian pride?",
+          "source_context": "After Nasser died in September 1970, Anwar Sadat offered in February 1971 to reopen the Suez Canal if Israel pulled back from it, and told UN envoy Gunnar Jarring that Egypt would sign a peace agreement in return for full withdrawal. Golda Meir's government refused to return to the pre-1967 lines. In July 1972 Sadat expelled about 15,000 Soviet advisers and began secret war planning with Syria.",
           "context": "In February 1971 Sadat proposed reopening the Suez Canal and said Egypt was ready for a peace agreement if Israel withdrew from Sinai.",
           "question_badge": "Competing Perspectives",
           "question_type": "Competing Perspectives",
-          "enquiry_question": "Sadat offered peace for land in 1971, but Israel refused the 1967 lines. Why did this deadlock push Sadat towards war?",
-          "model_answer": "Sadat had taken a big risk by saying Egypt would make peace, yet Israel, confident in its military superiority, would not promise full withdrawal and the USA did not press it. Sadat concluded that only a limited war could shake Israel's confidence and force the superpowers to restart diplomacy. In July 1972 he expelled Soviet advisers and began planning that war with Syria.",
+          "model_answer": "Sadat had taken a big risk by saying Egypt would make peace, yet Israel, confident in its military superiority, would not promise full withdrawal and the USA did not press it. Sadat concluded that only a limited war could shake Israel's confidence and force the superpowers to restart diplomacy; in July 1972 he expelled Soviet advisers and began planning that war with Syria.",
           "provenance_clues": {
             "author": "Side A: President Anwar Sadat and the Egyptian government. Side B: Prime Minister Golda Meir's government.",
             "audience": "The UN envoy Gunnar Jarring, the United States and both countries' publics.",
@@ -14459,7 +14457,8 @@ const cme_new = {
             "hinge_question": "Was the 1973 war caused more by Israeli overconfidence or by Sadat's need to win back Egyptian pride?"
           },
           "teacher_notes": {
-            "source_context": "After Nasser died in September 1970, Anwar Sadat offered in February 1971 to reopen the Suez Canal if Israel pulled back from it, and told UN envoy Gunnar Jarring that Egypt would sign a peace agreement in return for full withdrawal. Golda Meir's government refused to return to the pre-1967 lines. In July 1972 Sadat expelled about 15,000 Soviet advisers and began secret war planning with Syria. **Hinge Question:** Was the 1973 war caused more by Israeli overconfidence or by Sadat's need to win back Egyptian pride?"
+            "source_context": "After Nasser died in September 1970, Anwar Sadat offered in February 1971 to reopen the Suez Canal if Israel pulled back from it, and told UN envoy Gunnar Jarring that Egypt would sign a peace agreement in return for full withdrawal. Golda Meir's government refused to return to the pre-1967 lines. In July 1972 Sadat expelled about 15,000 Soviet advisers and began secret war planning with Syria. **Hinge Question:** Was the 1973 war caused more by Israeli overconfidence or by Sadat's need to win back Egyptian pride?",
+            "hinge_question": "Was the 1973 war caused more by Israeli overconfidence or by Sadat's need to win back Egyptian pride?"
           },
           "perspective_pair": {
             "framing_note": "Both governments said they wanted peace in February 1971; comparing their conditions shows why diplomacy stalled and Sadat turned to war.",
@@ -14480,7 +14479,8 @@ const cme_new = {
               "text_type": "summary",
               "provenance": "Summary of Israel's reply to Ambassador Jarring, 26 February 1971, and statements by Israeli ministers."
             }
-          }
+          },
+          "question": "Sadat offered peace for land in 1971, but Israel refused the 1967 lines. Why did this deadlock push Sadat towards war?"
         },
         {
           "id": "cme_l9_source_c",
@@ -14494,13 +14494,11 @@ const cme_new = {
           "desc": "Egyptian military photograph of the canal crossing in the first days of the October 1973 war.",
           "provenance": "Egyptian armed forces photograph, October 1973.",
           "citation": "Egyptian Ministry of Defence archive photograph.",
-          "hinge_question": "Was the surprise of 6 October caused mainly by Egyptian skill or by Israeli overconfidence?",
-          "source_context": "The attack came on Yom Kippur, the holiest day in Judaism, during the month of Ramadan. Israeli intelligence had misread the Arab build-up as an exercise. Under a huge artillery barrage, Egyptian troops crossed the canal, engineers washed away sections of the sand rampart with high-pressure water, and bridges carried tanks and trucks across, while Syrian armour broke through on the Golan. **Hinge Question:** Was the surprise of 6 October caused mainly by Egyptian skill or by Israeli overconfidence?",
+          "source_context": "The attack came on Yom Kippur, the holiest day in Judaism, during the month of Ramadan. Israeli intelligence had misread the Arab build-up as an exercise. Under a huge artillery barrage, Egyptian troops crossed the canal, engineers washed away sections of the sand rampart with high-pressure water, and bridges carried tanks and trucks across, while Syrian armour broke through on the Golan.",
           "context": "At 14:00 on 6 October 1973 Egypt and Syria attacked; Egyptian troops crossed the canal and broke through the Bar-Lev Line.",
           "question_badge": "Turning Point Insight",
           "question_type": "Turning Point Insight",
-          "enquiry_question": "Egyptian trucks drive through a gap in the sand wall Israel thought unbreakable. Why did this crossing shock Israel so badly?",
-          "model_answer": "Israeli intelligence had believed Egypt would not attack, so most reservists were at home for Yom Kippur when the assault began on 6 October. Egyptian engineers used water cannon to wash gaps in the rampart within hours, and soldiers armed with Soviet anti-tank missiles stopped Israeli counter-attacks. The crossing destroyed the belief that the Bar-Lev Line and Israel's army made it untouchable.",
+          "model_answer": "Israeli intelligence had believed Egypt would not attack, so most reservists were at home for Yom Kippur when the assault began on 6 October. Egyptian engineers used water cannon to wash gaps in the rampart within hours, and soldiers armed with Soviet anti-tank missiles stopped Israeli counter-attacks; the crossing destroyed the belief that the Bar-Lev Line and Israel's army made it untouchable.",
           "provenance_clues": {
             "author": "An Egyptian army photographer.",
             "audience": "Egyptian and Arab newspapers and later commemorations.",
@@ -14508,8 +14506,10 @@ const cme_new = {
             "hinge_question": "Was the surprise of 6 October caused mainly by Egyptian skill or by Israeli overconfidence?"
           },
           "teacher_notes": {
-            "source_context": "The attack came on Yom Kippur, the holiest day in Judaism, during the month of Ramadan. Israeli intelligence had misread the Arab build-up as an exercise. Under a huge artillery barrage, Egyptian troops crossed the canal, engineers washed away sections of the sand rampart with high-pressure water, and bridges carried tanks and trucks across, while Syrian armour broke through on the Golan. **Hinge Question:** Was the surprise of 6 October caused mainly by Egyptian skill or by Israeli overconfidence?"
-          }
+            "source_context": "The attack came on Yom Kippur, the holiest day in Judaism, during the month of Ramadan. Israeli intelligence had misread the Arab build-up as an exercise. Under a huge artillery barrage, Egyptian troops crossed the canal, engineers washed away sections of the sand rampart with high-pressure water, and bridges carried tanks and trucks across, while Syrian armour broke through on the Golan. **Hinge Question:** Was the surprise of 6 October caused mainly by Egyptian skill or by Israeli overconfidence?",
+            "hinge_question": "Was the surprise of 6 October caused mainly by Egyptian skill or by Israeli overconfidence?"
+          },
+          "question": "Egyptian trucks drive through a gap in the sand wall Israel thought unbreakable. Why did this crossing shock Israel so badly?"
         },
         {
           "id": "cme_l9_source_d",
@@ -14523,13 +14523,11 @@ const cme_new = {
           "desc": "Israeli army photograph of the canal crossing at Deversoir.",
           "provenance": "Israel Defense Forces archive photograph, October 1973.",
           "citation": "Israel Defense Forces Archives.",
-          "hinge_question": "Did the superpowers end the war to protect their allies or to avoid a direct clash with each other?",
-          "source_context": "Israel lost many tanks and aircraft to Soviet-made missiles in the first days. President Nixon ordered an emergency airlift on 14 October to match Soviet supplies to Egypt and Syria. General Ariel Sharon then led forces across the canal near Deversoir, encircling Egypt's Third Army. Soviet threats to intervene and a US nuclear alert pushed both superpowers to impose a ceasefire. **Hinge Question:** Did the superpowers end the war to protect their allies or to avoid a direct clash with each other?",
-          "context": "After heavy early losses, Israel was resupplied by a US airlift from 14 October and crossed the canal on 15–16 October.",
+          "source_context": "In the second week of the October 1973 Yom Kippur War, following heavy armoured battles in Sinai and rival superpower resupply airlifts, Israeli armoured brigades under General Ariel Sharon bridged the Suez Canal at Deversoir between the Great Bitter Lake and Lake Timsah.",
+          "context": "In the second week of the October 1973 Yom Kippur War, following heavy armoured battles in Sinai and rival superpower resupply airlifts, Israeli armoured brigades under General Ariel Sharon bridged the Suez Canal at Deversoir between the Great Bitter Lake and Lake Timsah.",
           "question_badge": "Turning Point Insight",
           "question_type": "Turning Point Insight",
-          "enquiry_question": "Israeli tanks cross to the canal's west bank. How did this counter-attack and the US airlift turn the war?",
-          "model_answer": "The American airlift from 14 October replaced Israel's lost tanks and ammunition, allowing Israel to go back on the offensive. Sharon's crossing at Deversoir on 15–16 October put Israeli forces behind Egyptian lines and trapped the Third Army. With the Soviet Union threatening to intervene, the superpowers hurried to impose a ceasefire.",
+          "model_answer": "The American airlift from 14 October replaced Israel's lost tanks and ammunition, allowing Israel to go back on the offensive. Sharon's crossing at Deversoir on 15–16 October put Israeli forces behind Egyptian lines and trapped the Third Army; with the Soviet Union threatening to intervene, the superpowers hurried to impose a ceasefire.",
           "provenance_clues": {
             "author": "An Israel Defense Forces photographer.",
             "audience": "Israeli army records and the Israeli press.",
@@ -14537,8 +14535,10 @@ const cme_new = {
             "hinge_question": "Did the superpowers end the war to protect their allies or to avoid a direct clash with each other?"
           },
           "teacher_notes": {
-            "source_context": "Israel lost many tanks and aircraft to Soviet-made missiles in the first days. President Nixon ordered an emergency airlift on 14 October to match Soviet supplies to Egypt and Syria. General Ariel Sharon then led forces across the canal near Deversoir, encircling Egypt's Third Army. Soviet threats to intervene and a US nuclear alert pushed both superpowers to impose a ceasefire. **Hinge Question:** Did the superpowers end the war to protect their allies or to avoid a direct clash with each other?"
-          }
+            "source_context": "Israel lost many tanks and aircraft to Soviet-made missiles in the first days. President Nixon ordered an emergency airlift on 14 October to match Soviet supplies to Egypt and Syria. General Ariel Sharon then led forces across the canal near Deversoir, encircling Egypt's Third Army. Soviet threats to intervene and a US nuclear alert pushed both superpowers to impose a ceasefire. **Hinge Question:** Did the superpowers end the war to protect their allies or to avoid a direct clash with each other?",
+            "hinge_question": "Did the superpowers end the war to protect their allies or to avoid a direct clash with each other?"
+          },
+          "question": "Israeli tanks cross to the canal's west bank. How did this counter-attack and the US airlift turn the war?"
         },
         {
           "id": "cme_l9_source_e",
@@ -14552,13 +14552,11 @@ const cme_new = {
           "desc": "White House photograph of Golda Meir's meeting with Nixon and Kissinger after the October War.",
           "provenance": "White House Photo Office, 1 November 1973 (Richard Nixon Presidential Library; public domain US government work).",
           "citation": "Richard Nixon Presidential Library / US National Archives.",
-          "hinge_question": "Was the October War a military victory for Israel but a political victory for Egypt?",
-          "source_context": "Arab oil ministers used the \"oil weapon\" from 17 October 1973, cutting production and embargoing the United States and other supporters of Israel, and oil prices quadrupled within months. Resolution 338 demanded a ceasefire and negotiations based on Resolution 242. Israel had won on the battlefield, but heavy losses ended the myth of its invulnerability and restored Arab self-respect. **Hinge Question:** Was the October War a military victory for Israel but a political victory for Egypt?",
+          "source_context": "Arab oil ministers used the \"oil weapon\" from 17 October 1973, cutting production and embargoing the United States and other supporters of Israel, and oil prices quadrupled within months. Resolution 338 demanded a ceasefire and negotiations based on Resolution 242. Israel had won on the battlefield, but heavy losses ended the myth of its invulnerability and restored Arab self-respect.",
           "context": "From 17 October 1973 Arab oil producers cut output and embargoed the USA; UN Resolution 338 on 22 October called for a ceasefire and negotiations.",
           "question_badge": "Perspective & Motive",
           "question_type": "Perspective & Motive",
-          "enquiry_question": "Kissinger meets Golda Meir in November 1973 as oil prices soar. Why did the United States now push hard for a settlement?",
-          "model_answer": "The OAPEC oil embargo quadrupled world oil prices and delivered a severe economic shock to the United States and Western Europe, making Middle East stability an urgent economic priority. At the same time, October's superpower nuclear alert and UN Resolution 338 showed how easily renewed fighting could drag Washington and Moscow toward direct confrontation. Together, the oil shock and Cold War danger drove Henry Kissinger to launch urgent negotiations that also aimed to draw Egypt away from Soviet influence.",
+          "model_answer": "The OAPEC oil embargo quadrupled world oil prices and delivered a severe economic shock to the United States and Western Europe, making Middle East stability an urgent economic priority. At the same time, October's superpower nuclear alert and UN Resolution 338 showed how easily renewed fighting could drag Washington and Moscow toward direct confrontation; together, the oil shock and Cold War danger drove Henry Kissinger to launch urgent negotiations that also aimed to draw Egypt away from Soviet influence.",
           "provenance_clues": {
             "author": "A White House staff photographer.",
             "audience": "The US government and the press.",
@@ -14566,8 +14564,10 @@ const cme_new = {
             "hinge_question": "Was the October War a military victory for Israel but a political victory for Egypt?"
           },
           "teacher_notes": {
-            "source_context": "Arab oil ministers used the \"oil weapon\" from 17 October 1973, cutting production and embargoing the United States and other supporters of Israel, and oil prices quadrupled within months. Resolution 338 demanded a ceasefire and negotiations based on Resolution 242. Israel had won on the battlefield, but heavy losses ended the myth of its invulnerability and restored Arab self-respect. **Hinge Question:** Was the October War a military victory for Israel but a political victory for Egypt?"
-          }
+            "source_context": "Arab oil ministers used the \"oil weapon\" from 17 October 1973, cutting production and embargoing the United States and other supporters of Israel, and oil prices quadrupled within months. Resolution 338 demanded a ceasefire and negotiations based on Resolution 242. Israel had won on the battlefield, but heavy losses ended the myth of its invulnerability and restored Arab self-respect. **Hinge Question:** Was the October War a military victory for Israel but a political victory for Egypt?",
+            "hinge_question": "Was the October War a military victory for Israel but a political victory for Egypt?"
+          },
+          "question": "Kissinger meets Golda Meir in November 1973 as oil prices soar. Why did the United States now push hard for a settlement?"
         }
       ],
       "exam_practice": {
@@ -16040,13 +16040,11 @@ const cme_new = {
               "desc": "Official US government portrait photograph of Secretary of State Henry Kissinger.",
               "provenance": "Official US government portrait, Gerald R. Ford Presidential Library / US National Archives (US federal government work, public domain), mid-1970s.",
               "citation": "Gerald R. Ford Presidential Library, Ann Arbor, Michigan.",
-              "hinge_question": "Why did Kissinger choose small step-by-step pullback deals instead of one big peace conference?",
-              "source_context": "Henry Kissinger served as US Secretary of State from 1973 to 1977. After the October 1973 war and the Arab oil embargo, he flew back and forth between Jerusalem, Cairo and Damascus rather than calling one large peace conference. He brokered the Sinai I agreement (January 1974), the Golan disengagement with Syria (May 1974) and Sinai II (September 1975). His aims were to end the oil crisis, reduce Soviet influence and move Egypt towards the USA. **Hinge Question:** Why did Kissinger choose small step-by-step pullback deals instead of one big peace conference?",
+              "source_context": "Henry Kissinger served as US Secretary of State from 1973 to 1977. After the October 1973 war and the Arab oil embargo, he flew back and forth between Jerusalem, Cairo and Damascus rather than calling one large peace conference. He brokered the Sinai I agreement (January 1974), the Golan disengagement with Syria (May 1974) and Sinai II (September 1975). His aims were to end the oil crisis, reduce Soviet influence and move Egypt towards the USA.",
               "context": "US Secretary of State Henry Kissinger used step-by-step \"shuttle diplomacy\" to secure Israeli pullbacks in Sinai and the Golan, 1974–75.",
               "question_badge": "Perspective & Motive",
               "question_type": "Perspective & Motive",
-              "enquiry_question": "This official portrait shows America's top diplomat. Why did the USA, not the Soviet Union, lead peace talks after 1973?",
-              "model_answer": "After the 1973 war and the oil embargo, the USA needed Arab oil flowing again and wanted to push Soviet influence out of the Middle East. Only Washington could put pressure on Israel to pull back, so Kissinger shuttled between capitals to broker small deals such as Sinai I (1974) and Sinai II (1975). These deals reopened the Suez Canal and drew Egypt away from Moscow towards the USA.",
+              "model_answer": "After the 1973 war and the oil embargo, the USA needed Arab oil flowing again and wanted to push Soviet influence out of the Middle East. Only Washington could put pressure on Israel to pull back, so Kissinger shuttled between capitals to broker small deals such as Sinai I (1974) and Sinai II (1975); these deals reopened the Suez Canal and drew Egypt away from Moscow towards the USA.",
               "provenance_clues": {
                 "author": "An official US government photographer.",
                 "audience": "The American public, the media and foreign governments.",
@@ -16054,9 +16052,11 @@ const cme_new = {
                 "hinge_question": "Why did Kissinger choose small step-by-step pullback deals instead of one big peace conference?"
               },
               "teacher_notes": {
-                "source_context": "Henry Kissinger served as US Secretary of State from 1973 to 1977. After the October 1973 war and the Arab oil embargo, he flew back and forth between Jerusalem, Cairo and Damascus rather than calling one large peace conference. He brokered the Sinai I agreement (January 1974), the Golan disengagement with Syria (May 1974) and Sinai II (September 1975). His aims were to end the oil crisis, reduce Soviet influence and move Egypt towards the USA. **Hinge Question:** Why did Kissinger choose small step-by-step pullback deals instead of one big peace conference?"
+                "source_context": "Henry Kissinger served as US Secretary of State from 1973 to 1977. After the October 1973 war and the Arab oil embargo, he flew back and forth between Jerusalem, Cairo and Damascus rather than calling one large peace conference. He brokered the Sinai I agreement (January 1974), the Golan disengagement with Syria (May 1974) and Sinai II (September 1975). His aims were to end the oil crisis, reduce Soviet influence and move Egypt towards the USA. **Hinge Question:** Why did Kissinger choose small step-by-step pullback deals instead of one big peace conference?",
+                "hinge_question": "Why did Kissinger choose small step-by-step pullback deals instead of one big peace conference?"
               },
-              "image_alt": "Black-and-white official portrait of Henry Kissinger in dark-rimmed glasses, suit and patterned tie"
+              "image_alt": "Black-and-white official portrait of Henry Kissinger in dark-rimmed glasses, suit and patterned tie",
+              "question": "This official portrait shows America's top diplomat. Why did the USA, not the Soviet Union, lead peace talks after 1973?"
             }
           ],
           "image": "/images/cme_opec_oil_embargo_pump_1973.jpg",
@@ -16087,13 +16087,11 @@ const cme_new = {
               "desc": "Israeli Government Press Office photograph of Sadat and Begin in conversation during Sadat's visit to Jerusalem, paired with summaries of the two leaders' Knesset speeches.",
               "provenance": "Photograph: Israel Government Press Office, National Photo Collection (D3-004), November 1977, via Wikimedia Commons (CC BY-SA 3.0). Speeches: Knesset session of 20 November 1977.",
               "citation": "National Photo Collection of Israel, Government Press Office, Jerusalem; Knesset Archives, Jerusalem.",
-              "hinge_question": "If both leaders wanted peace, why did their Knesset speeches show that talks would be difficult?",
-              "source_context": "On 20 November 1977 Sadat became the first Arab head of state to address Israel's parliament, the Knesset. He offered Israel peace and acceptance in return for withdrawal from all Arab land occupied in 1967 and Palestinian self-determination. Begin replied in the same session, welcoming the visit but defending the Jewish people's historic tie to the land and proposing direct negotiations without preconditions. The speeches showed both a breakthrough and the gaps that would soon stall talks. **Hinge Question:** If both leaders wanted peace, why did their Knesset speeches show that talks would be difficult?",
-              "context": "Sadat's Knesset speech and Begin's reply, 20 November 1977, set out both leaders' positions at the start of direct Egypt–Israel talks.",
+              "source_context": "On 20 November 1977, Egyptian President Anwar Sadat flew to Jerusalem and became the first Arab head of state to address Israel’s parliament (the Knesset) in person, receiving an immediate formal reply in the chamber from Israeli Prime Minister Menachem Begin.",
+              "context": "On 20 November 1977, Egyptian President Anwar Sadat flew to Jerusalem and became the first Arab head of state to address Israel’s parliament (the Knesset) in person, receiving an immediate formal reply in the chamber from Israeli Prime Minister Menachem Begin.",
               "question_badge": "Competing Perspectives",
               "question_type": "Competing Perspectives",
-              "enquiry_question": "Sadat offered 'durable peace based on justice'; Begin said Jews had returned to their homeland. Where did their positions clash most?",
-              "model_answer": "Both leaders accepted the idea of peace and direct talks, which was itself a breakthrough after thirty years of war. But Sadat demanded Israeli withdrawal from all land taken in 1967 and rights for the Palestinians, while Begin stressed the Jewish historic tie to the land and offered talks without preconditions. This clash over land and the Palestinian question explains why direct talks soon deadlocked.",
+              "model_answer": "Both leaders accepted the idea of peace and direct talks, which was itself a breakthrough after thirty years of war. But Sadat demanded Israeli withdrawal from all land taken in 1967 and rights for the Palestinians, while Begin stressed the Jewish historic tie to the land and offered talks without preconditions; this clash over land and the Palestinian question explains why direct talks soon deadlocked.",
               "provenance_clues": {
                 "author": "Anwar Sadat (President of Egypt) and Menachem Begin (Prime Minister of Israel), speaking in the Knesset.",
                 "audience": "Knesset members, Israeli and Egyptian citizens, and a worldwide television audience.",
@@ -16101,7 +16099,8 @@ const cme_new = {
                 "hinge_question": "If both leaders wanted peace, why did their Knesset speeches show that talks would be difficult?"
               },
               "teacher_notes": {
-                "source_context": "On 20 November 1977 Sadat became the first Arab head of state to address Israel's parliament, the Knesset. He offered Israel peace and acceptance in return for withdrawal from all Arab land occupied in 1967 and Palestinian self-determination. Begin replied in the same session, welcoming the visit but defending the Jewish people's historic tie to the land and proposing direct negotiations without preconditions. The speeches showed both a breakthrough and the gaps that would soon stall talks. **Hinge Question:** If both leaders wanted peace, why did their Knesset speeches show that talks would be difficult?"
+                "source_context": "On 20 November 1977 Sadat became the first Arab head of state to address Israel's parliament, the Knesset. He offered Israel peace and acceptance in return for withdrawal from all Arab land occupied in 1967 and Palestinian self-determination. Begin replied in the same session, welcoming the visit but defending the Jewish people's historic tie to the land and proposing direct negotiations without preconditions. The speeches showed both a breakthrough and the gaps that would soon stall talks. **Hinge Question:** If both leaders wanted peace, why did their Knesset speeches show that talks would be difficult?",
+                "hinge_question": "If both leaders wanted peace, why did their Knesset speeches show that talks would be difficult?"
               },
               "image_alt": "Black-and-white photograph of Anwar Sadat and Menachem Begin leaning close together in conversation at a dinner table",
               "perspective_pair": {
@@ -16122,7 +16121,8 @@ const cme_new = {
                   "text_type": "summary",
                   "provenance": "Knesset session of 20 November 1977 (Israel Ministry of Foreign Affairs English translation); summary of stated position."
                 }
-              }
+              },
+              "question": "Sadat offered 'durable peace based on justice'; Begin said Jews had returned to their homeland. Where did their positions clash most?"
             }
           ],
           "image": "/images/cme_begin_sadat_ismailia_1977.jpg",
@@ -16157,13 +16157,11 @@ const cme_new = {
               "desc": "White House photograph of the three leaders at the Camp David Accords signing ceremony.",
               "provenance": "White House Photographic Office, Jimmy Carter Administration, 17 September 1978; US National Archives (US federal government work, public domain).",
               "citation": "Jimmy Carter Presidential Library / US National Archives.",
-              "hinge_question": "Why did Camp David produce a clear deal for Egypt but only vague promises for the Palestinians?",
-              "source_context": "After thirteen days at Camp David, Carter, Sadat and Begin signed two frameworks on 17 September 1978. The first set out terms for an Egypt–Israel peace treaty, including full Israeli withdrawal from Sinai. The second, \"A Framework for Peace in the Middle East\", promised a five-year transitional period of Palestinian self-government in the West Bank and Gaza, but left statehood, Jerusalem and Israeli settlements unresolved. **Hinge Question:** Why did Camp David produce a clear deal for Egypt but only vague promises for the Palestinians?",
-              "context": "The Camp David Accords (17 September 1978) contained a detailed Egypt–Israel framework and a vaguer framework for Palestinian autonomy.",
+              "source_context": "On 17 September 1978, after thirteen days of secluded negotiations hosted by US President Jimmy Carter at Camp David in Maryland, Egyptian President Anwar Sadat and Israeli Prime Minister Menachem Begin signed two separate diplomatic framework documents at the White House.",
+              "context": "On 17 September 1978, after thirteen days of secluded negotiations hosted by US President Jimmy Carter at Camp David in Maryland, Egyptian President Anwar Sadat and Israeli Prime Minister Menachem Begin signed two separate diplomatic framework documents at the White House.",
               "question_badge": "Turning Point Insight",
               "question_type": "Turning Point Insight",
-              "enquiry_question": "All three leaders smile at the signing. Why was the Palestinian part of the Accords far less settled than the Egyptian part?",
-              "model_answer": "Egypt and Israel could agree a clear trade: Sinai returned to Egypt in exchange for peace and recognition. The Palestinian framework only promised five years of \"self-government\" and avoided statehood, Jerusalem and settlements, because Begin would not give up the West Bank and no Palestinian representatives took part. The smiles hide that the hardest issue was postponed, not solved.",
+              "model_answer": "Egypt and Israel could agree a clear trade: Sinai returned to Egypt in exchange for peace and recognition. The Palestinian framework only promised five years of \"self-government\" and avoided statehood, Jerusalem and settlements, because Begin would not give up the West Bank and no Palestinian representatives took part; the smiles hide that the hardest issue was postponed, not solved.",
               "provenance_clues": {
                 "author": "An official White House photographer.",
                 "audience": "The American public and the world media.",
@@ -16171,9 +16169,11 @@ const cme_new = {
                 "hinge_question": "Why did Camp David produce a clear deal for Egypt but only vague promises for the Palestinians?"
               },
               "teacher_notes": {
-                "source_context": "After thirteen days at Camp David, Carter, Sadat and Begin signed two frameworks on 17 September 1978. The first set out terms for an Egypt–Israel peace treaty, including full Israeli withdrawal from Sinai. The second, \"A Framework for Peace in the Middle East\", promised a five-year transitional period of Palestinian self-government in the West Bank and Gaza, but left statehood, Jerusalem and Israeli settlements unresolved. **Hinge Question:** Why did Camp David produce a clear deal for Egypt but only vague promises for the Palestinians?"
+                "source_context": "After thirteen days at Camp David, Carter, Sadat and Begin signed two frameworks on 17 September 1978. The first set out terms for an Egypt–Israel peace treaty, including full Israeli withdrawal from Sinai. The second, \"A Framework for Peace in the Middle East\", promised a five-year transitional period of Palestinian self-government in the West Bank and Gaza, but left statehood, Jerusalem and Israeli settlements unresolved. **Hinge Question:** Why did Camp David produce a clear deal for Egypt but only vague promises for the Palestinians?",
+                "hinge_question": "Why did Camp David produce a clear deal for Egypt but only vague promises for the Palestinians?"
               },
-              "image_alt": "Colour photograph of Anwar Sadat clapping, Jimmy Carter smiling in the centre and Menachem Begin seated at a desk with microphones in the White House East Room"
+              "image_alt": "Colour photograph of Anwar Sadat clapping, Jimmy Carter smiling in the centre and Menachem Begin seated at a desk with microphones in the White House East Room",
+              "question": "All three leaders smile at the signing. Why was the Palestinian part of the Accords far less settled than the Egyptian part?"
             }
           ],
           "content": "<span class=\"para-ref\">[3.1]</span> In **September 1978**, US President **Jimmy Carter** invited Begin and Sadat to the secluded presidential retreat at **Camp David**, Maryland. Carter sequestered both national delegations for thirteen days of exhaustive negotiations, acting as mediator, draftsman, and diplomatic cajoler when direct personal discussions between the stubborn Israeli Prime Minister and emotional Egyptian President broke down completely in mutual frustration.\n\n<span class=\"para-ref\">[3.2]</span> On 17 September 1978, the leaders signed the historic **Camp David Accords**. The landmark agreement contained two frameworks: the first detailed terms for an Egyptian-Israeli bilateral peace treaty, while the second promised vague, five-year self-governing autonomy for Palestinians in the West Bank and Gaza, though it avoided addressing sovereign Palestinian statehood or the contested status of East Jerusalem."
@@ -16200,13 +16200,11 @@ const cme_new = {
               "desc": "Photograph of the three-way handshake at the signing of the Egypt–Israel Peace Treaty.",
               "provenance": "Jimmy Carter Presidential Library (NAID 175653), 26 March 1979 (US federal government work, public domain).",
               "citation": "Jimmy Carter Presidential Library, Atlanta, Georgia.",
-              "hinge_question": "Could Egypt and Israel have made peace in 1979 without the USA?",
-              "source_context": "On 26 March 1979 Egypt and Israel signed the first peace treaty between Israel and an Arab state. Israel agreed to withdraw from the whole Sinai Peninsula in phases by 1982 and dismantle its settlements there; Egypt agreed to full diplomatic relations and free Israeli shipping through the Suez Canal. The USA promised both countries large amounts of economic and military aid. **Hinge Question:** Could Egypt and Israel have made peace in 1979 without the USA?",
+              "source_context": "On 26 March 1979 Egypt and Israel signed the first peace treaty between Israel and an Arab state. Israel agreed to withdraw from the whole Sinai Peninsula in phases by 1982 and dismantle its settlements there; Egypt agreed to full diplomatic relations and free Israeli shipping through the Suez Canal. The USA promised both countries large amounts of economic and military aid.",
               "context": "The Egypt–Israel Peace Treaty was signed at the White House on 26 March 1979, with US President Carter as witness and guarantor.",
               "question_badge": "Turning Point Insight",
               "question_type": "Turning Point Insight",
-              "enquiry_question": "Carter stands in the middle with his hands joined to both leaders'. What does this reveal about America's role in the treaty?",
-              "model_answer": "The USA was more than a host: Carter had mediated at Camp David and kept the talks alive when they nearly collapsed. Washington also underwrote the deal with billions of dollars in aid to both countries each year. The image shows that the treaty depended on American pressure, money and guarantees as well as on Sadat and Begin.",
+              "model_answer": "The USA was more than a host: Carter had mediated at Camp David and kept the talks alive when they nearly collapsed. Washington also underwrote the deal with billions of dollars in aid to both countries each year; the image shows that the treaty depended on American pressure, money and guarantees as well as on Sadat and Begin.",
               "provenance_clues": {
                 "author": "An official White House photographer.",
                 "audience": "The American public and world media.",
@@ -16214,9 +16212,11 @@ const cme_new = {
                 "hinge_question": "Could Egypt and Israel have made peace in 1979 without the USA?"
               },
               "teacher_notes": {
-                "source_context": "On 26 March 1979 Egypt and Israel signed the first peace treaty between Israel and an Arab state. Israel agreed to withdraw from the whole Sinai Peninsula in phases by 1982 and dismantle its settlements there; Egypt agreed to full diplomatic relations and free Israeli shipping through the Suez Canal. The USA promised both countries large amounts of economic and military aid. **Hinge Question:** Could Egypt and Israel have made peace in 1979 without the USA?"
+                "source_context": "On 26 March 1979 Egypt and Israel signed the first peace treaty between Israel and an Arab state. Israel agreed to withdraw from the whole Sinai Peninsula in phases by 1982 and dismantle its settlements there; Egypt agreed to full diplomatic relations and free Israeli shipping through the Suez Canal. The USA promised both countries large amounts of economic and military aid. **Hinge Question:** Could Egypt and Israel have made peace in 1979 without the USA?",
+                "hinge_question": "Could Egypt and Israel have made peace in 1979 without the USA?"
               },
-              "image_alt": "Anwar Sadat, Jimmy Carter and Menachem Begin clasping hands together in front of Egyptian and Israeli flags on the White House lawn"
+              "image_alt": "Anwar Sadat, Jimmy Carter and Menachem Begin clasping hands together in front of Egyptian and Israeli flags on the White House lawn",
+              "question": "Carter stands in the middle with his hands joined to both leaders'. What does this reveal about America's role in the treaty?"
             }
           ],
           "image": "/images/cme_sinai_withdrawal_zones_cia_1979.jpg",
@@ -16248,13 +16248,11 @@ const cme_new = {
               "desc": "Portrait of Anwar Sadat, paired with summaries of the Arab League's 1979 Baghdad resolutions and Sadat's defence of the treaty.",
               "provenance": "Portrait photograph of Anwar Sadat (Egyptian official portrait, 1970s). Texts: Arab League Council resolutions, Baghdad, March 1979; speeches of President Sadat, 1979 (summaries).",
               "citation": "Arab League Council, Baghdad (March 1979); Egyptian State Information Service.",
-              "hinge_question": "Was Egypt's separate peace a first step for the region or a betrayal of the Palestinians?",
-              "source_context": "Days after the treaty was signed, Arab League ministers meeting in Baghdad suspended Egypt's membership, withdrew their ambassadors from Cairo, moved the League's headquarters to Tunis and imposed economic sanctions. They accused Sadat of abandoning the Palestinians to recover Sinai. Sadat defended the treaty as the first step towards a wider peace. Opposition to the treaty inside Egypt helped lead to his assassination by Islamist army officers on 6 October 1981. **Hinge Question:** Was Egypt's separate peace a first step for the region or a betrayal of the Palestinians?",
+              "source_context": "Days after the treaty was signed, Arab League ministers meeting in Baghdad suspended Egypt's membership, withdrew their ambassadors from Cairo, moved the League's headquarters to Tunis and imposed economic sanctions. They accused Sadat of abandoning the Palestinians to recover Sinai. Sadat defended the treaty as the first step towards a wider peace. Opposition to the treaty inside Egypt helped lead to his assassination by Islamist army officers on 6 October 1981.",
               "context": "The Arab League isolated Egypt in March 1979; Sadat defended the treaty as a first step to a comprehensive peace.",
               "question_badge": "Competing Perspectives",
               "question_type": "Competing Perspectives",
-              "enquiry_question": "The Arab League suspended Egypt, while Sadat called the treaty a first step. Why did they judge it so differently?",
-              "model_answer": "Arab states saw a separate peace as Egypt recovering Sinai while the West Bank, Gaza, Golan and the Palestinians stayed under occupation, and as removing the strongest Arab army from the conflict. Sadat saw it as the only realistic way to end war and win back Egyptian land, hoping others would follow. This bitter split isolated Egypt and fed the anger that ended with Sadat's assassination in 1981.",
+              "model_answer": "Arab states saw a separate peace as Egypt recovering Sinai while the West Bank, Gaza, Golan and the Palestinians stayed under occupation, and as removing the strongest Arab army from the conflict. Sadat saw it as the only realistic way to end war and win back Egyptian land, hoping others would follow; this bitter split isolated Egypt and fed the anger that ended with Sadat's assassination in 1981.",
               "provenance_clues": {
                 "author": "Arab League foreign and economy ministers; President Anwar Sadat.",
                 "audience": "Arab governments and publics, Egyptians, and international opinion.",
@@ -16262,7 +16260,8 @@ const cme_new = {
                 "hinge_question": "Was Egypt's separate peace a first step for the region or a betrayal of the Palestinians?"
               },
               "teacher_notes": {
-                "source_context": "Days after the treaty was signed, Arab League ministers meeting in Baghdad suspended Egypt's membership, withdrew their ambassadors from Cairo, moved the League's headquarters to Tunis and imposed economic sanctions. They accused Sadat of abandoning the Palestinians to recover Sinai. Sadat defended the treaty as the first step towards a wider peace. Opposition to the treaty inside Egypt helped lead to his assassination by Islamist army officers on 6 October 1981. **Hinge Question:** Was Egypt's separate peace a first step for the region or a betrayal of the Palestinians?"
+                "source_context": "Days after the treaty was signed, Arab League ministers meeting in Baghdad suspended Egypt's membership, withdrew their ambassadors from Cairo, moved the League's headquarters to Tunis and imposed economic sanctions. They accused Sadat of abandoning the Palestinians to recover Sinai. Sadat defended the treaty as the first step towards a wider peace. Opposition to the treaty inside Egypt helped lead to his assassination by Islamist army officers on 6 October 1981. **Hinge Question:** Was Egypt's separate peace a first step for the region or a betrayal of the Palestinians?",
+                "hinge_question": "Was Egypt's separate peace a first step for the region or a betrayal of the Palestinians?"
               },
               "image_alt": "Colour portrait of Anwar Sadat in profile wearing a military cap and dress uniform with medals",
               "perspective_pair": {
@@ -16283,7 +16282,8 @@ const cme_new = {
                   "text_type": "summary",
                   "provenance": "Speeches and statements of President Anwar Sadat, 1979 (summary of stated position)."
                 }
-              }
+              },
+              "question": "The Arab League suspended Egypt, while Sadat called the treaty a first step. Why did they judge it so differently?"
             }
           ],
           "content": "<span class=\"para-ref\">[5.1]</span> The separate peace treaty triggered furious condemnation across the Arab world, which accused Sadat of betraying Palestinian national rights simply to recover Egyptian territory. The **Arab League** suspended Egypt's membership, severed formal diplomatic relations, moved its headquarters from Cairo to Tunis, and organized sweeping economic boycotts against Egyptian businesses to isolate the Cairo government completely from the Arab community.\n\n<span class=\"para-ref\">[5.2]</span> At home, domestic Islamist fundamentalists condemned Sadat as a traitor to the Islamic cause. On **6 October 1981**, while reviewing a military parade in Cairo celebrating the 1973 canal crossing, Sadat was assassinated by Egyptian Islamic Jihad soldiers. His successor took power, upholding the formal treaty with Israel while gradually repairing Egypt's severed diplomatic relations with Arab neighbors over the following decade.",
@@ -16372,13 +16372,11 @@ const cme_new = {
           "desc": "Official US government portrait photograph of Secretary of State Henry Kissinger.",
           "provenance": "Official US government portrait, Gerald R. Ford Presidential Library / US National Archives (US federal government work, public domain), mid-1970s.",
           "citation": "Gerald R. Ford Presidential Library, Ann Arbor, Michigan.",
-          "hinge_question": "Why did Kissinger choose small step-by-step pullback deals instead of one big peace conference?",
-          "source_context": "Henry Kissinger served as US Secretary of State from 1973 to 1977. After the October 1973 war and the Arab oil embargo, he flew back and forth between Jerusalem, Cairo and Damascus rather than calling one large peace conference. He brokered the Sinai I agreement (January 1974), the Golan disengagement with Syria (May 1974) and Sinai II (September 1975). His aims were to end the oil crisis, reduce Soviet influence and move Egypt towards the USA. **Hinge Question:** Why did Kissinger choose small step-by-step pullback deals instead of one big peace conference?",
+          "source_context": "Henry Kissinger served as US Secretary of State from 1973 to 1977. After the October 1973 war and the Arab oil embargo, he flew back and forth between Jerusalem, Cairo and Damascus rather than calling one large peace conference. He brokered the Sinai I agreement (January 1974), the Golan disengagement with Syria (May 1974) and Sinai II (September 1975). His aims were to end the oil crisis, reduce Soviet influence and move Egypt towards the USA.",
           "context": "US Secretary of State Henry Kissinger used step-by-step \"shuttle diplomacy\" to secure Israeli pullbacks in Sinai and the Golan, 1974–75.",
           "question_badge": "Perspective & Motive",
           "question_type": "Perspective & Motive",
-          "enquiry_question": "This official portrait shows America's top diplomat. Why did the USA, not the Soviet Union, lead peace talks after 1973?",
-          "model_answer": "After the 1973 war and the oil embargo, the USA needed Arab oil flowing again and wanted to push Soviet influence out of the Middle East. Only Washington could put pressure on Israel to pull back, so Kissinger shuttled between capitals to broker small deals such as Sinai I (1974) and Sinai II (1975). These deals reopened the Suez Canal and drew Egypt away from Moscow towards the USA.",
+          "model_answer": "After the 1973 war and the oil embargo, the USA needed Arab oil flowing again and wanted to push Soviet influence out of the Middle East. Only Washington could put pressure on Israel to pull back, so Kissinger shuttled between capitals to broker small deals such as Sinai I (1974) and Sinai II (1975); these deals reopened the Suez Canal and drew Egypt away from Moscow towards the USA.",
           "provenance_clues": {
             "author": "An official US government photographer.",
             "audience": "The American public, the media and foreign governments.",
@@ -16386,9 +16384,11 @@ const cme_new = {
             "hinge_question": "Why did Kissinger choose small step-by-step pullback deals instead of one big peace conference?"
           },
           "teacher_notes": {
-            "source_context": "Henry Kissinger served as US Secretary of State from 1973 to 1977. After the October 1973 war and the Arab oil embargo, he flew back and forth between Jerusalem, Cairo and Damascus rather than calling one large peace conference. He brokered the Sinai I agreement (January 1974), the Golan disengagement with Syria (May 1974) and Sinai II (September 1975). His aims were to end the oil crisis, reduce Soviet influence and move Egypt towards the USA. **Hinge Question:** Why did Kissinger choose small step-by-step pullback deals instead of one big peace conference?"
+            "source_context": "Henry Kissinger served as US Secretary of State from 1973 to 1977. After the October 1973 war and the Arab oil embargo, he flew back and forth between Jerusalem, Cairo and Damascus rather than calling one large peace conference. He brokered the Sinai I agreement (January 1974), the Golan disengagement with Syria (May 1974) and Sinai II (September 1975). His aims were to end the oil crisis, reduce Soviet influence and move Egypt towards the USA. **Hinge Question:** Why did Kissinger choose small step-by-step pullback deals instead of one big peace conference?",
+            "hinge_question": "Why did Kissinger choose small step-by-step pullback deals instead of one big peace conference?"
           },
-          "image_alt": "Black-and-white official portrait of Henry Kissinger in dark-rimmed glasses, suit and patterned tie"
+          "image_alt": "Black-and-white official portrait of Henry Kissinger in dark-rimmed glasses, suit and patterned tie",
+          "question": "This official portrait shows America's top diplomat. Why did the USA, not the Soviet Union, lead peace talks after 1973?"
         },
         {
           "id": "cme_l10_source_b",
@@ -16401,13 +16401,11 @@ const cme_new = {
           "desc": "Israeli Government Press Office photograph of Sadat and Begin in conversation during Sadat's visit to Jerusalem, paired with summaries of the two leaders' Knesset speeches.",
           "provenance": "Photograph: Israel Government Press Office, National Photo Collection (D3-004), November 1977, via Wikimedia Commons (CC BY-SA 3.0). Speeches: Knesset session of 20 November 1977.",
           "citation": "National Photo Collection of Israel, Government Press Office, Jerusalem; Knesset Archives, Jerusalem.",
-          "hinge_question": "If both leaders wanted peace, why did their Knesset speeches show that talks would be difficult?",
-          "source_context": "On 20 November 1977 Sadat became the first Arab head of state to address Israel's parliament, the Knesset. He offered Israel peace and acceptance in return for withdrawal from all Arab land occupied in 1967 and Palestinian self-determination. Begin replied in the same session, welcoming the visit but defending the Jewish people's historic tie to the land and proposing direct negotiations without preconditions. The speeches showed both a breakthrough and the gaps that would soon stall talks. **Hinge Question:** If both leaders wanted peace, why did their Knesset speeches show that talks would be difficult?",
-          "context": "Sadat's Knesset speech and Begin's reply, 20 November 1977, set out both leaders' positions at the start of direct Egypt–Israel talks.",
+          "source_context": "On 20 November 1977, Egyptian President Anwar Sadat flew to Jerusalem and became the first Arab head of state to address Israel’s parliament (the Knesset) in person, receiving an immediate formal reply in the chamber from Israeli Prime Minister Menachem Begin.",
+          "context": "On 20 November 1977, Egyptian President Anwar Sadat flew to Jerusalem and became the first Arab head of state to address Israel’s parliament (the Knesset) in person, receiving an immediate formal reply in the chamber from Israeli Prime Minister Menachem Begin.",
           "question_badge": "Competing Perspectives",
           "question_type": "Competing Perspectives",
-          "enquiry_question": "Sadat offered 'durable peace based on justice'; Begin said Jews had returned to their homeland. Where did their positions clash most?",
-          "model_answer": "Both leaders accepted the idea of peace and direct talks, which was itself a breakthrough after thirty years of war. But Sadat demanded Israeli withdrawal from all land taken in 1967 and rights for the Palestinians, while Begin stressed the Jewish historic tie to the land and offered talks without preconditions. This clash over land and the Palestinian question explains why direct talks soon deadlocked.",
+          "model_answer": "Both leaders accepted the idea of peace and direct talks, which was itself a breakthrough after thirty years of war. But Sadat demanded Israeli withdrawal from all land taken in 1967 and rights for the Palestinians, while Begin stressed the Jewish historic tie to the land and offered talks without preconditions; this clash over land and the Palestinian question explains why direct talks soon deadlocked.",
           "provenance_clues": {
             "author": "Anwar Sadat (President of Egypt) and Menachem Begin (Prime Minister of Israel), speaking in the Knesset.",
             "audience": "Knesset members, Israeli and Egyptian citizens, and a worldwide television audience.",
@@ -16415,7 +16413,8 @@ const cme_new = {
             "hinge_question": "If both leaders wanted peace, why did their Knesset speeches show that talks would be difficult?"
           },
           "teacher_notes": {
-            "source_context": "On 20 November 1977 Sadat became the first Arab head of state to address Israel's parliament, the Knesset. He offered Israel peace and acceptance in return for withdrawal from all Arab land occupied in 1967 and Palestinian self-determination. Begin replied in the same session, welcoming the visit but defending the Jewish people's historic tie to the land and proposing direct negotiations without preconditions. The speeches showed both a breakthrough and the gaps that would soon stall talks. **Hinge Question:** If both leaders wanted peace, why did their Knesset speeches show that talks would be difficult?"
+            "source_context": "On 20 November 1977 Sadat became the first Arab head of state to address Israel's parliament, the Knesset. He offered Israel peace and acceptance in return for withdrawal from all Arab land occupied in 1967 and Palestinian self-determination. Begin replied in the same session, welcoming the visit but defending the Jewish people's historic tie to the land and proposing direct negotiations without preconditions. The speeches showed both a breakthrough and the gaps that would soon stall talks. **Hinge Question:** If both leaders wanted peace, why did their Knesset speeches show that talks would be difficult?",
+            "hinge_question": "If both leaders wanted peace, why did their Knesset speeches show that talks would be difficult?"
           },
           "image_alt": "Black-and-white photograph of Anwar Sadat and Menachem Begin leaning close together in conversation at a dinner table",
           "perspective_pair": {
@@ -16436,7 +16435,8 @@ const cme_new = {
               "text_type": "summary",
               "provenance": "Knesset session of 20 November 1977 (Israel Ministry of Foreign Affairs English translation); summary of stated position."
             }
-          }
+          },
+          "question": "Sadat offered 'durable peace based on justice'; Begin said Jews had returned to their homeland. Where did their positions clash most?"
         },
         {
           "id": "cme_l10_source_c",
@@ -16449,13 +16449,11 @@ const cme_new = {
           "desc": "White House photograph of the three leaders at the Camp David Accords signing ceremony.",
           "provenance": "White House Photographic Office, Jimmy Carter Administration, 17 September 1978; US National Archives (US federal government work, public domain).",
           "citation": "Jimmy Carter Presidential Library / US National Archives.",
-          "hinge_question": "Why did Camp David produce a clear deal for Egypt but only vague promises for the Palestinians?",
-          "source_context": "After thirteen days at Camp David, Carter, Sadat and Begin signed two frameworks on 17 September 1978. The first set out terms for an Egypt–Israel peace treaty, including full Israeli withdrawal from Sinai. The second, \"A Framework for Peace in the Middle East\", promised a five-year transitional period of Palestinian self-government in the West Bank and Gaza, but left statehood, Jerusalem and Israeli settlements unresolved. **Hinge Question:** Why did Camp David produce a clear deal for Egypt but only vague promises for the Palestinians?",
-          "context": "The Camp David Accords (17 September 1978) contained a detailed Egypt–Israel framework and a vaguer framework for Palestinian autonomy.",
+          "source_context": "On 17 September 1978, after thirteen days of secluded negotiations hosted by US President Jimmy Carter at Camp David in Maryland, Egyptian President Anwar Sadat and Israeli Prime Minister Menachem Begin signed two separate diplomatic framework documents at the White House.",
+          "context": "On 17 September 1978, after thirteen days of secluded negotiations hosted by US President Jimmy Carter at Camp David in Maryland, Egyptian President Anwar Sadat and Israeli Prime Minister Menachem Begin signed two separate diplomatic framework documents at the White House.",
           "question_badge": "Turning Point Insight",
           "question_type": "Turning Point Insight",
-          "enquiry_question": "All three leaders smile at the signing. Why was the Palestinian part of the Accords far less settled than the Egyptian part?",
-          "model_answer": "Egypt and Israel could agree a clear trade: Sinai returned to Egypt in exchange for peace and recognition. The Palestinian framework only promised five years of \"self-government\" and avoided statehood, Jerusalem and settlements, because Begin would not give up the West Bank and no Palestinian representatives took part. The smiles hide that the hardest issue was postponed, not solved.",
+          "model_answer": "Egypt and Israel could agree a clear trade: Sinai returned to Egypt in exchange for peace and recognition. The Palestinian framework only promised five years of \"self-government\" and avoided statehood, Jerusalem and settlements, because Begin would not give up the West Bank and no Palestinian representatives took part; the smiles hide that the hardest issue was postponed, not solved.",
           "provenance_clues": {
             "author": "An official White House photographer.",
             "audience": "The American public and the world media.",
@@ -16463,9 +16461,11 @@ const cme_new = {
             "hinge_question": "Why did Camp David produce a clear deal for Egypt but only vague promises for the Palestinians?"
           },
           "teacher_notes": {
-            "source_context": "After thirteen days at Camp David, Carter, Sadat and Begin signed two frameworks on 17 September 1978. The first set out terms for an Egypt–Israel peace treaty, including full Israeli withdrawal from Sinai. The second, \"A Framework for Peace in the Middle East\", promised a five-year transitional period of Palestinian self-government in the West Bank and Gaza, but left statehood, Jerusalem and Israeli settlements unresolved. **Hinge Question:** Why did Camp David produce a clear deal for Egypt but only vague promises for the Palestinians?"
+            "source_context": "After thirteen days at Camp David, Carter, Sadat and Begin signed two frameworks on 17 September 1978. The first set out terms for an Egypt–Israel peace treaty, including full Israeli withdrawal from Sinai. The second, \"A Framework for Peace in the Middle East\", promised a five-year transitional period of Palestinian self-government in the West Bank and Gaza, but left statehood, Jerusalem and Israeli settlements unresolved. **Hinge Question:** Why did Camp David produce a clear deal for Egypt but only vague promises for the Palestinians?",
+            "hinge_question": "Why did Camp David produce a clear deal for Egypt but only vague promises for the Palestinians?"
           },
-          "image_alt": "Colour photograph of Anwar Sadat clapping, Jimmy Carter smiling in the centre and Menachem Begin seated at a desk with microphones in the White House East Room"
+          "image_alt": "Colour photograph of Anwar Sadat clapping, Jimmy Carter smiling in the centre and Menachem Begin seated at a desk with microphones in the White House East Room",
+          "question": "All three leaders smile at the signing. Why was the Palestinian part of the Accords far less settled than the Egyptian part?"
         },
         {
           "id": "cme_l10_source_d",
@@ -16478,13 +16478,11 @@ const cme_new = {
           "desc": "Photograph of the three-way handshake at the signing of the Egypt–Israel Peace Treaty.",
           "provenance": "Jimmy Carter Presidential Library (NAID 175653), 26 March 1979 (US federal government work, public domain).",
           "citation": "Jimmy Carter Presidential Library, Atlanta, Georgia.",
-          "hinge_question": "Could Egypt and Israel have made peace in 1979 without the USA?",
-          "source_context": "On 26 March 1979 Egypt and Israel signed the first peace treaty between Israel and an Arab state. Israel agreed to withdraw from the whole Sinai Peninsula in phases by 1982 and dismantle its settlements there; Egypt agreed to full diplomatic relations and free Israeli shipping through the Suez Canal. The USA promised both countries large amounts of economic and military aid. **Hinge Question:** Could Egypt and Israel have made peace in 1979 without the USA?",
+          "source_context": "On 26 March 1979 Egypt and Israel signed the first peace treaty between Israel and an Arab state. Israel agreed to withdraw from the whole Sinai Peninsula in phases by 1982 and dismantle its settlements there; Egypt agreed to full diplomatic relations and free Israeli shipping through the Suez Canal. The USA promised both countries large amounts of economic and military aid.",
           "context": "The Egypt–Israel Peace Treaty was signed at the White House on 26 March 1979, with US President Carter as witness and guarantor.",
           "question_badge": "Turning Point Insight",
           "question_type": "Turning Point Insight",
-          "enquiry_question": "Carter stands in the middle with his hands joined to both leaders'. What does this reveal about America's role in the treaty?",
-          "model_answer": "The USA was more than a host: Carter had mediated at Camp David and kept the talks alive when they nearly collapsed. Washington also underwrote the deal with billions of dollars in aid to both countries each year. The image shows that the treaty depended on American pressure, money and guarantees as well as on Sadat and Begin.",
+          "model_answer": "The USA was more than a host: Carter had mediated at Camp David and kept the talks alive when they nearly collapsed. Washington also underwrote the deal with billions of dollars in aid to both countries each year; the image shows that the treaty depended on American pressure, money and guarantees as well as on Sadat and Begin.",
           "provenance_clues": {
             "author": "An official White House photographer.",
             "audience": "The American public and world media.",
@@ -16492,9 +16490,11 @@ const cme_new = {
             "hinge_question": "Could Egypt and Israel have made peace in 1979 without the USA?"
           },
           "teacher_notes": {
-            "source_context": "On 26 March 1979 Egypt and Israel signed the first peace treaty between Israel and an Arab state. Israel agreed to withdraw from the whole Sinai Peninsula in phases by 1982 and dismantle its settlements there; Egypt agreed to full diplomatic relations and free Israeli shipping through the Suez Canal. The USA promised both countries large amounts of economic and military aid. **Hinge Question:** Could Egypt and Israel have made peace in 1979 without the USA?"
+            "source_context": "On 26 March 1979 Egypt and Israel signed the first peace treaty between Israel and an Arab state. Israel agreed to withdraw from the whole Sinai Peninsula in phases by 1982 and dismantle its settlements there; Egypt agreed to full diplomatic relations and free Israeli shipping through the Suez Canal. The USA promised both countries large amounts of economic and military aid. **Hinge Question:** Could Egypt and Israel have made peace in 1979 without the USA?",
+            "hinge_question": "Could Egypt and Israel have made peace in 1979 without the USA?"
           },
-          "image_alt": "Anwar Sadat, Jimmy Carter and Menachem Begin clasping hands together in front of Egyptian and Israeli flags on the White House lawn"
+          "image_alt": "Anwar Sadat, Jimmy Carter and Menachem Begin clasping hands together in front of Egyptian and Israeli flags on the White House lawn",
+          "question": "Carter stands in the middle with his hands joined to both leaders'. What does this reveal about America's role in the treaty?"
         },
         {
           "id": "cme_l10_source_e",
@@ -16507,13 +16507,11 @@ const cme_new = {
           "desc": "Portrait of Anwar Sadat, paired with summaries of the Arab League's 1979 Baghdad resolutions and Sadat's defence of the treaty.",
           "provenance": "Portrait photograph of Anwar Sadat (Egyptian official portrait, 1970s). Texts: Arab League Council resolutions, Baghdad, March 1979; speeches of President Sadat, 1979 (summaries).",
           "citation": "Arab League Council, Baghdad (March 1979); Egyptian State Information Service.",
-          "hinge_question": "Was Egypt's separate peace a first step for the region or a betrayal of the Palestinians?",
-          "source_context": "Days after the treaty was signed, Arab League ministers meeting in Baghdad suspended Egypt's membership, withdrew their ambassadors from Cairo, moved the League's headquarters to Tunis and imposed economic sanctions. They accused Sadat of abandoning the Palestinians to recover Sinai. Sadat defended the treaty as the first step towards a wider peace. Opposition to the treaty inside Egypt helped lead to his assassination by Islamist army officers on 6 October 1981. **Hinge Question:** Was Egypt's separate peace a first step for the region or a betrayal of the Palestinians?",
+          "source_context": "Days after the treaty was signed, Arab League ministers meeting in Baghdad suspended Egypt's membership, withdrew their ambassadors from Cairo, moved the League's headquarters to Tunis and imposed economic sanctions. They accused Sadat of abandoning the Palestinians to recover Sinai. Sadat defended the treaty as the first step towards a wider peace. Opposition to the treaty inside Egypt helped lead to his assassination by Islamist army officers on 6 October 1981.",
           "context": "The Arab League isolated Egypt in March 1979; Sadat defended the treaty as a first step to a comprehensive peace.",
           "question_badge": "Competing Perspectives",
           "question_type": "Competing Perspectives",
-          "enquiry_question": "The Arab League suspended Egypt, while Sadat called the treaty a first step. Why did they judge it so differently?",
-          "model_answer": "Arab states saw a separate peace as Egypt recovering Sinai while the West Bank, Gaza, Golan and the Palestinians stayed under occupation, and as removing the strongest Arab army from the conflict. Sadat saw it as the only realistic way to end war and win back Egyptian land, hoping others would follow. This bitter split isolated Egypt and fed the anger that ended with Sadat's assassination in 1981.",
+          "model_answer": "Arab states saw a separate peace as Egypt recovering Sinai while the West Bank, Gaza, Golan and the Palestinians stayed under occupation, and as removing the strongest Arab army from the conflict. Sadat saw it as the only realistic way to end war and win back Egyptian land, hoping others would follow; this bitter split isolated Egypt and fed the anger that ended with Sadat's assassination in 1981.",
           "provenance_clues": {
             "author": "Arab League foreign and economy ministers; President Anwar Sadat.",
             "audience": "Arab governments and publics, Egyptians, and international opinion.",
@@ -16521,7 +16519,8 @@ const cme_new = {
             "hinge_question": "Was Egypt's separate peace a first step for the region or a betrayal of the Palestinians?"
           },
           "teacher_notes": {
-            "source_context": "Days after the treaty was signed, Arab League ministers meeting in Baghdad suspended Egypt's membership, withdrew their ambassadors from Cairo, moved the League's headquarters to Tunis and imposed economic sanctions. They accused Sadat of abandoning the Palestinians to recover Sinai. Sadat defended the treaty as the first step towards a wider peace. Opposition to the treaty inside Egypt helped lead to his assassination by Islamist army officers on 6 October 1981. **Hinge Question:** Was Egypt's separate peace a first step for the region or a betrayal of the Palestinians?"
+            "source_context": "Days after the treaty was signed, Arab League ministers meeting in Baghdad suspended Egypt's membership, withdrew their ambassadors from Cairo, moved the League's headquarters to Tunis and imposed economic sanctions. They accused Sadat of abandoning the Palestinians to recover Sinai. Sadat defended the treaty as the first step towards a wider peace. Opposition to the treaty inside Egypt helped lead to his assassination by Islamist army officers on 6 October 1981. **Hinge Question:** Was Egypt's separate peace a first step for the region or a betrayal of the Palestinians?",
+            "hinge_question": "Was Egypt's separate peace a first step for the region or a betrayal of the Palestinians?"
           },
           "image_alt": "Colour portrait of Anwar Sadat in profile wearing a military cap and dress uniform with medals",
           "perspective_pair": {
@@ -16542,7 +16541,8 @@ const cme_new = {
               "text_type": "summary",
               "provenance": "Speeches and statements of President Anwar Sadat, 1979 (summary of stated position)."
             }
-          }
+          },
+          "question": "The Arab League suspended Egypt, while Sadat called the treaty a first step. Why did they judge it so differently?"
         }
       ],
       "learning_objectives": {
@@ -17934,13 +17934,11 @@ const cme_new = {
               "desc": "Press photograph of Israeli forces and Lebanese civilians during Operation Litani.",
               "provenance": "Dan Hadani Press Photography Archive, National Library of Israel, March 1978.",
               "citation": "National Library of Israel, Jerusalem.",
-              "hinge_question": "Why did the PLO's presence in southern Lebanon drag Lebanese civilians into the Arab-Israeli conflict?",
-              "source_context": "From the early 1970s the PLO used southern Lebanon as a base for raids and rocket fire into northern Israel. In March 1978, after a PLO attack on a bus on Israel's coastal road, Israel launched Operation Litani, occupying southern Lebanon up to the Litani River. The UN demanded Israel's withdrawal and sent UNIFIL peacekeepers. Four years later, in June 1982, Israel invaded again on a much larger scale. **Hinge Question:** Why did the PLO's presence in southern Lebanon drag Lebanese civilians into the Arab-Israeli conflict?",
+              "source_context": "From the early 1970s the PLO used southern Lebanon as a base for raids and rocket fire into northern Israel. In March 1978, after a PLO attack on a bus on Israel's coastal road, Israel launched Operation Litani, occupying southern Lebanon up to the Litani River. The UN demanded Israel's withdrawal and sent UNIFIL peacekeepers. Four years later, in June 1982, Israel invaded again on a much larger scale.",
               "context": "Operation Litani (March 1978) was Israel's first large incursion into southern Lebanon against PLO bases.",
               "question_badge": "Human Impact",
               "question_type": "Human Impact",
-              "enquiry_question": "Lebanese women and children sit beside an Israeli armoured carrier. What does this show about who suffered when Lebanon became a battleground?",
-              "model_answer": "The photo shows that Lebanese civilians, not just PLO fighters and Israeli soldiers, were caught up in the fighting in southern Lebanon. Because the PLO operated from Lebanese villages, Israeli operations against it took place among civilians. This helps explain why the 1978 and 1982 invasions caused such anger in Lebanon and abroad.",
+              "model_answer": "The photo shows that Lebanese civilians, not just PLO fighters and Israeli soldiers, were caught up in the fighting in southern Lebanon. Because the PLO operated from Lebanese villages, Israeli operations against it took place among civilians; this helps explain why the 1978 and 1982 invasions caused such anger in Lebanon and abroad.",
               "provenance_clues": {
                 "author": "An Israeli press photographer.",
                 "audience": "Israeli newspaper readers.",
@@ -17948,9 +17946,11 @@ const cme_new = {
                 "hinge_question": "Why did the PLO's presence in southern Lebanon drag Lebanese civilians into the Arab-Israeli conflict?"
               },
               "teacher_notes": {
-                "source_context": "From the early 1970s the PLO used southern Lebanon as a base for raids and rocket fire into northern Israel. In March 1978, after a PLO attack on a bus on Israel's coastal road, Israel launched Operation Litani, occupying southern Lebanon up to the Litani River. The UN demanded Israel's withdrawal and sent UNIFIL peacekeepers. Four years later, in June 1982, Israel invaded again on a much larger scale. **Hinge Question:** Why did the PLO's presence in southern Lebanon drag Lebanese civilians into the Arab-Israeli conflict?"
+                "source_context": "From the early 1970s the PLO used southern Lebanon as a base for raids and rocket fire into northern Israel. In March 1978, after a PLO attack on a bus on Israel's coastal road, Israel launched Operation Litani, occupying southern Lebanon up to the Litani River. The UN demanded Israel's withdrawal and sent UNIFIL peacekeepers. Four years later, in June 1982, Israel invaded again on a much larger scale. **Hinge Question:** Why did the PLO's presence in southern Lebanon drag Lebanese civilians into the Arab-Israeli conflict?",
+                "hinge_question": "Why did the PLO's presence in southern Lebanon drag Lebanese civilians into the Arab-Israeli conflict?"
               },
-              "image_alt": "Black-and-white photograph of Israeli soldiers and an armoured personnel carrier beside a group of seated Lebanese women and children next to a damaged building"
+              "image_alt": "Black-and-white photograph of Israeli soldiers and an armoured personnel carrier beside a group of seated Lebanese women and children next to a damaged building",
+              "question": "Lebanese women and children sit beside an Israeli armoured carrier. What does this show about who suffered when Lebanon became a battleground?"
             }
           ],
           "stage_hook_map": {
@@ -18034,13 +18034,11 @@ const cme_new = {
               "desc": "Israel Government Press Office photograph of Ariel Sharon at a command position above Beirut, 1982.",
               "provenance": "Israel Government Press Office, National Photo Collection, 1982, via Wikimedia Commons (File:Ariel Sharon Beirut 1982.jpg).",
               "citation": "National Photo Collection of Israel, Government Press Office, Jerusalem.",
-              "hinge_question": "Why did an Israeli inquiry blame Israel's own Defence Minister for killings carried out by a Lebanese militia?",
-              "source_context": "As Defence Minister, Ariel Sharon directed the 1982 invasion of Lebanon and the siege of Beirut. After the PLO fighters left and Bachir Gemayel was assassinated, Israeli forces surrounding West Beirut allowed Lebanese Phalangist militiamen into the Sabra and Shatila camps, where they killed hundreds of Palestinian and Lebanese civilians on 16–18 September 1982. In February 1983 Israel's Kahan Commission found that Sharon bore personal responsibility for ignoring the danger of revenge killings, and he had to resign as Defence Minister. **Hinge Question:** Why did an Israeli inquiry blame Israel's own Defence Minister for killings carried out by a Lebanese militia?",
-              "context": "Israel's Kahan Commission (February 1983) found Defence Minister Ariel Sharon personally (indirectly) responsible for failing to prevent the Sabra and Shatila massacre.",
+              "source_context": "Photographed during Operation Peace for Galilee in the summer of 1982, Israeli Defence Minister Ariel Sharon studies operational maps on a rooftop overlooking besieged West Beirut shortly before the evacuation of PLO fighters and the September Sabra and Shatila camp killings.",
+              "context": "Photographed during Operation Peace for Galilee in the summer of 1982, Israeli Defence Minister Ariel Sharon studies operational maps on a rooftop overlooking besieged West Beirut shortly before the evacuation of PLO fighters and the September Sabra and Shatila camp killings.",
               "question_badge": "Perspective & Motive",
               "question_type": "Perspective & Motive",
-              "enquiry_question": "Sharon sits above Beirut with a military map beside him. Why did the Kahan Commission later hold him personally responsible?",
-              "model_answer": "The photo shows Sharon directing the war from close to Beirut, so he was in overall command of the area around the camps. In February 1983 Israel's Kahan Commission found he bore personal responsibility for letting Phalangist militiamen into Sabra and Shatila without considering the danger of revenge killings. The killings were carried out by the Phalangists, so the responsibility was indirect, but Sharon was forced to resign as Defence Minister.",
+              "model_answer": "The photo shows Sharon directing the war from close to Beirut, so he was in overall command of the area around the camps. In February 1983 Israel's Kahan Commission found he bore personal responsibility for letting Phalangist militiamen into Sabra and Shatila without considering the danger of revenge killings; the killings were carried out by the Phalangists, so the responsibility was indirect, but Sharon was forced to resign as Defence Minister.",
               "provenance_clues": {
                 "author": "A photographer of the Israel Government Press Office.",
                 "audience": "The Israeli public and the media.",
@@ -18048,9 +18046,11 @@ const cme_new = {
                 "hinge_question": "Why did an Israeli inquiry blame Israel's own Defence Minister for killings carried out by a Lebanese militia?"
               },
               "teacher_notes": {
-                "source_context": "As Defence Minister, Ariel Sharon directed the 1982 invasion of Lebanon and the siege of Beirut. After the PLO fighters left and Bachir Gemayel was assassinated, Israeli forces surrounding West Beirut allowed Lebanese Phalangist militiamen into the Sabra and Shatila camps, where they killed hundreds of Palestinian and Lebanese civilians on 16–18 September 1982. In February 1983 Israel's Kahan Commission found that Sharon bore personal responsibility for ignoring the danger of revenge killings, and he had to resign as Defence Minister. **Hinge Question:** Why did an Israeli inquiry blame Israel's own Defence Minister for killings carried out by a Lebanese militia?"
+                "source_context": "As Defence Minister, Ariel Sharon directed the 1982 invasion of Lebanon and the siege of Beirut. After the PLO fighters left and Bachir Gemayel was assassinated, Israeli forces surrounding West Beirut allowed Lebanese Phalangist militiamen into the Sabra and Shatila camps, where they killed hundreds of Palestinian and Lebanese civilians on 16–18 September 1982. In February 1983 Israel's Kahan Commission found that Sharon bore personal responsibility for ignoring the danger of revenge killings, and he had to resign as Defence Minister. **Hinge Question:** Why did an Israeli inquiry blame Israel's own Defence Minister for killings carried out by a Lebanese militia?",
+                "hinge_question": "Why did an Israeli inquiry blame Israel's own Defence Minister for killings carried out by a Lebanese militia?"
               },
-              "image_alt": "Black-and-white photograph of Ariel Sharon sitting on a concrete wall and talking, with a military map beside him and the buildings of Beirut in the distance"
+              "image_alt": "Black-and-white photograph of Ariel Sharon sitting on a concrete wall and talking, with a military map beside him and the buildings of Beirut in the distance",
+              "question": "Sharon sits above Beirut with a military map beside him. Why did the Kahan Commission later hold him personally responsible?"
             }
           ],
           "image": "/units/cme_new/assets/cme_idf_coastal_advance_1982.jpg",
@@ -18081,13 +18081,11 @@ const cme_new = {
               "desc": "Typed Arabic leaflet directing workers, shopkeepers, transport companies and doctors during a general strike in the First Intifada.",
               "provenance": "Clandestine leaflet, West Bank and Gaza, January 1988; Birzeit University Digital Palestinian Archive / Palestinian Museum Digital Archive.",
               "citation": "Birzeit University / Palestinian Museum Digital Archive.",
-              "hinge_question": "Why did strikes and boycotts make the Intifada harder to stop than armed raids?",
-              "source_context": "Within weeks of the uprising starting in December 1987, local activists formed an underground leadership, later called the Unified National Leadership of the Uprising (UNLU), which pledged loyalty to the PLO. Its numbered leaflets, copied and passed hand to hand, set dates for strikes, shop closures and boycotts of Israeli goods and taxes. This leaflet calls on workers to stay away from work, tells shop owners to close, warns bus and taxi companies to obey the strike, and asks doctors and pharmacists to stay on emergency standby. **Hinge Question:** Why did strikes and boycotts make the Intifada harder to stop than armed raids?",
+              "source_context": "Within weeks of the uprising starting in December 1987, local activists formed an underground leadership, later called the Unified National Leadership of the Uprising (UNLU), which pledged loyalty to the PLO. Its numbered leaflets, copied and passed hand to hand, set dates for strikes, shop closures and boycotts of Israeli goods and taxes. This leaflet calls on workers to stay away from work, tells shop owners to close, warns bus and taxi companies to obey the strike, and asks doctors and pharmacists to stay on emergency standby.",
               "context": "The underground UNLU organised the First Intifada through leaflets calling for strikes and civil disobedience from January 1988.",
               "question_badge": "Perspective & Motive",
               "question_type": "Perspective & Motive",
-              "enquiry_question": "The leaflet gives instructions to workers, shopkeepers, taxi firms and doctors. What does this reveal about how the Intifada was organised?",
-              "model_answer": "The leaflet shows that the uprising was not just spontaneous rioting: a local underground leadership was planning strikes and telling each part of society what to do. By involving shopkeepers, workers and doctors, it turned the Intifada into a mass movement of whole communities. Its loyalty to the PLO also shows that leaders inside the territories still looked to Arafat's organisation in Tunis.",
+              "model_answer": "The leaflet shows that the uprising was not just spontaneous rioting: a local underground leadership was planning strikes and telling each part of society what to do. By involving shopkeepers, workers and doctors, it turned the Intifada into a mass movement of whole communities; its loyalty to the PLO also shows that leaders inside the territories still looked to Arafat's organisation in Tunis.",
               "provenance_clues": {
                 "author": "The underground leadership of the uprising ('The Palestinian National Forces', later the UNLU).",
                 "audience": "Palestinians in the West Bank and Gaza.",
@@ -18095,9 +18093,11 @@ const cme_new = {
                 "hinge_question": "Why did strikes and boycotts make the Intifada harder to stop than armed raids?"
               },
               "teacher_notes": {
-                "source_context": "Within weeks of the uprising starting in December 1987, local activists formed an underground leadership, later called the Unified National Leadership of the Uprising (UNLU), which pledged loyalty to the PLO. Its numbered leaflets, copied and passed hand to hand, set dates for strikes, shop closures and boycotts of Israeli goods and taxes. This leaflet calls on workers to stay away from work, tells shop owners to close, warns bus and taxi companies to obey the strike, and asks doctors and pharmacists to stay on emergency standby. **Hinge Question:** Why did strikes and boycotts make the Intifada harder to stop than armed raids?"
+                "source_context": "Within weeks of the uprising starting in December 1987, local activists formed an underground leadership, later called the Unified National Leadership of the Uprising (UNLU), which pledged loyalty to the PLO. Its numbered leaflets, copied and passed hand to hand, set dates for strikes, shop closures and boycotts of Israeli goods and taxes. This leaflet calls on workers to stay away from work, tells shop owners to close, warns bus and taxi companies to obey the strike, and asks doctors and pharmacists to stay on emergency standby. **Hinge Question:** Why did strikes and boycotts make the Intifada harder to stop than armed raids?",
+                "hinge_question": "Why did strikes and boycotts make the Intifada harder to stop than armed raids?"
               },
-              "image_alt": "Photocopied Arabic typed leaflet headed \"Call ... Call\" calling for a general strike, signed The Palestinian National Forces"
+              "image_alt": "Photocopied Arabic typed leaflet headed \"Call ... Call\" calling for a general strike, signed The Palestinian National Forces",
+              "question": "The leaflet gives instructions to workers, shopkeepers, taxi firms and doctors. What does this reveal about how the Intifada was organised?"
             }
           ],
           "isReversed": false,
@@ -18291,13 +18291,11 @@ const cme_new = {
               "desc": "Photograph of Defence Minister Yitzhak Rabin visiting Gaza during the uprising.",
               "provenance": "Israeli press photograph, Gaza Strip, First Intifada (1987–88).",
               "citation": "Israeli press archive.",
-              "hinge_question": "Why did the use of force against the Intifada damage Israel more than it damaged the uprising?",
-              "source_context": "As Defence Minister in a national unity government, Yitzhak Rabin was responsible for ending the uprising. He ordered a tough response: curfews, mass arrests, deportations, house demolitions and the use of force against protesters, including the beating of demonstrators. Television images of soldiers beating young Palestinians damaged Israel's reputation abroad and caused debate inside Israel. At the same time, the Islamist movement Hamas was founded in Gaza in December 1987 as a rival to the PLO. **Hinge Question:** Why did the use of force against the Intifada damage Israel more than it damaged the uprising?",
+              "source_context": "As Defence Minister in a national unity government, Yitzhak Rabin was responsible for ending the uprising. He ordered a tough response: curfews, mass arrests, deportations, house demolitions and the use of force against protesters, including the beating of demonstrators. Television images of soldiers beating young Palestinians damaged Israel's reputation abroad and caused debate inside Israel. At the same time, the Islamist movement Hamas was founded in Gaza in December 1987 as a rival to the PLO.",
               "context": "Defence Minister Yitzhak Rabin led Israel's 'iron fist' response to the First Intifada, 1987–88.",
               "question_badge": "Perspective & Motive",
               "question_type": "Perspective & Motive",
-              "enquiry_question": "Rabin walks through a Gaza street watched by local people. Why did his tough policy fail to end the uprising?",
-              "model_answer": "Rabin used curfews, mass arrests and force because he believed order had to be restored quickly. But the uprising was a mass movement of whole communities, so arrests could not remove it, and images of soldiers beating protesters cost Israel international support. The experience helped convince Rabin that military force alone could not solve the conflict, which shaped his later support for Oslo.",
+              "model_answer": "Rabin used curfews, mass arrests and force because he believed order had to be restored quickly. But the uprising was a mass movement of whole communities, so arrests could not remove it, and images of soldiers beating protesters cost Israel international support; the experience helped convince Rabin that military force alone could not solve the conflict, which shaped his later support for Oslo.",
               "provenance_clues": {
                 "author": "An Israeli press photographer.",
                 "audience": "The Israeli public.",
@@ -18305,9 +18303,11 @@ const cme_new = {
                 "hinge_question": "Why did the use of force against the Intifada damage Israel more than it damaged the uprising?"
               },
               "teacher_notes": {
-                "source_context": "As Defence Minister in a national unity government, Yitzhak Rabin was responsible for ending the uprising. He ordered a tough response: curfews, mass arrests, deportations, house demolitions and the use of force against protesters, including the beating of demonstrators. Television images of soldiers beating young Palestinians damaged Israel's reputation abroad and caused debate inside Israel. At the same time, the Islamist movement Hamas was founded in Gaza in December 1987 as a rival to the PLO. **Hinge Question:** Why did the use of force against the Intifada damage Israel more than it damaged the uprising?"
+                "source_context": "As Defence Minister in a national unity government, Yitzhak Rabin was responsible for ending the uprising. He ordered a tough response: curfews, mass arrests, deportations, house demolitions and the use of force against protesters, including the beating of demonstrators. Television images of soldiers beating young Palestinians damaged Israel's reputation abroad and caused debate inside Israel. At the same time, the Islamist movement Hamas was founded in Gaza in December 1987 as a rival to the PLO. **Hinge Question:** Why did the use of force against the Intifada damage Israel more than it damaged the uprising?",
+                "hinge_question": "Why did the use of force against the Intifada damage Israel more than it damaged the uprising?"
               },
-              "image_alt": "Black-and-white photograph of Yitzhak Rabin in a dark jacket walking along a Gaza street while Palestinian men and boys watch from shopfronts"
+              "image_alt": "Black-and-white photograph of Yitzhak Rabin in a dark jacket walking along a Gaza street while Palestinian men and boys watch from shopfronts",
+              "question": "Rabin walks through a Gaza street watched by local people. Why did his tough policy fail to end the uprising?"
             }
           ],
           "isReversed": true,
@@ -18338,13 +18338,11 @@ const cme_new = {
               "desc": "Photograph of Yasser Arafat in 1988, paired with his Geneva statement and a summary of the Israeli government's response.",
               "provenance": "Photograph: European Parliament multimedia archive, September 1988, via Wikimedia Commons. Texts: Arafat press statement, Geneva, 14 December 1988; Israeli government statements, December 1988.",
               "citation": "European Parliament; Arafat press conference, Geneva, 14 December 1988.",
-              "hinge_question": "Why did the USA accept Arafat's December 1988 statement when Israel's government did not?",
-              "source_context": "In November 1988 the Palestine National Council in Algiers declared a State of Palestine and accepted UN Resolution 242. On 13 December Arafat addressed the UN General Assembly, moved to Geneva after the USA refused him a visa. The next day, at a press conference in Geneva, he used the exact wording the USA required. Within hours the Reagan administration opened talks with the PLO. Prime Minister Yitzhak Shamir's government rejected the statement and refused to negotiate with the PLO. **Hinge Question:** Why did the USA accept Arafat's December 1988 statement when Israel's government did not?",
+              "source_context": "In November 1988 the Palestine National Council in Algiers declared a State of Palestine and accepted UN Resolution 242. On 13 December Arafat addressed the UN General Assembly, moved to Geneva after the USA refused him a visa. The next day, at a press conference in Geneva, he used the exact wording the USA required. Within hours the Reagan administration opened talks with the PLO. Prime Minister Yitzhak Shamir's government rejected the statement and refused to negotiate with the PLO.",
               "context": "On 14 December 1988 Arafat accepted Resolutions 242 and 338, recognised Israel's right to exist and renounced terrorism; the USA opened talks with the PLO, while the Shamir government rejected the move.",
               "question_badge": "Competing Perspectives",
               "question_type": "Competing Perspectives",
-              "enquiry_question": "Arafat said he 'totally and absolutely' renounced terrorism; Shamir's government called it a manoeuvre. Why such different readings?",
-              "model_answer": "Arafat's words met the exact US conditions—accepting Resolutions 242 and 338, recognising Israel's right to exist and renouncing terrorism—so Washington opened talks with the PLO the same day. Shamir's government did not trust the statement, pointing to past PLO attacks and its charter, and feared talks would lead to a Palestinian state. The two readings show that recognition on paper did not yet create trust.",
+              "model_answer": "Arafat's words met the exact US conditions—accepting Resolutions 242 and 338, recognising Israel's right to exist and renouncing terrorism—so Washington opened talks with the PLO the same day. Shamir's government did not trust the statement, pointing to past PLO attacks and its charter, and feared talks would lead to a Palestinian state; the two readings show that recognition on paper did not yet create trust.",
               "provenance_clues": {
                 "author": "Yasser Arafat (PLO Chairman); the Israeli government of Prime Minister Yitzhak Shamir.",
                 "audience": "The US government, world media, Israelis and Palestinians.",
@@ -18352,7 +18350,8 @@ const cme_new = {
                 "hinge_question": "Why did the USA accept Arafat's December 1988 statement when Israel's government did not?"
               },
               "teacher_notes": {
-                "source_context": "In November 1988 the Palestine National Council in Algiers declared a State of Palestine and accepted UN Resolution 242. On 13 December Arafat addressed the UN General Assembly, moved to Geneva after the USA refused him a visa. The next day, at a press conference in Geneva, he used the exact wording the USA required. Within hours the Reagan administration opened talks with the PLO. Prime Minister Yitzhak Shamir's government rejected the statement and refused to negotiate with the PLO. **Hinge Question:** Why did the USA accept Arafat's December 1988 statement when Israel's government did not?"
+                "source_context": "In November 1988 the Palestine National Council in Algiers declared a State of Palestine and accepted UN Resolution 242. On 13 December Arafat addressed the UN General Assembly, moved to Geneva after the USA refused him a visa. The next day, at a press conference in Geneva, he used the exact wording the USA required. Within hours the Reagan administration opened talks with the PLO. Prime Minister Yitzhak Shamir's government rejected the statement and refused to negotiate with the PLO. **Hinge Question:** Why did the USA accept Arafat's December 1988 statement when Israel's government did not?",
+                "hinge_question": "Why did the USA accept Arafat's December 1988 statement when Israel's government did not?"
               },
               "image_alt": "Black-and-white portrait of Yasser Arafat in a keffiyeh and military-style jacket seated at a table with a microphone",
               "perspective_pair": {
@@ -18375,7 +18374,8 @@ const cme_new = {
                   "provenance": "Statements of the Israeli Prime Minister's Office and government, December 1988 (summary of stated position).",
                   "image": "/images/yitzhak_shamir.jpg"
                 }
-              }
+              },
+              "question": "Arafat said he 'totally and absolutely' renounced terrorism; Shamir's government called it a manoeuvre. Why such different readings?"
             }
           ],
           "image": "/images/cme_plate_reagan_shultz_diplomacy_1988.jpg",
@@ -18399,13 +18399,11 @@ const cme_new = {
           "desc": "Press photograph of Israeli forces and Lebanese civilians during Operation Litani.",
           "provenance": "Dan Hadani Press Photography Archive, National Library of Israel, March 1978.",
           "citation": "National Library of Israel, Jerusalem.",
-          "hinge_question": "Why did the PLO's presence in southern Lebanon drag Lebanese civilians into the Arab-Israeli conflict?",
-          "source_context": "From the early 1970s the PLO used southern Lebanon as a base for raids and rocket fire into northern Israel. In March 1978, after a PLO attack on a bus on Israel's coastal road, Israel launched Operation Litani, occupying southern Lebanon up to the Litani River. The UN demanded Israel's withdrawal and sent UNIFIL peacekeepers. Four years later, in June 1982, Israel invaded again on a much larger scale. **Hinge Question:** Why did the PLO's presence in southern Lebanon drag Lebanese civilians into the Arab-Israeli conflict?",
+          "source_context": "From the early 1970s the PLO used southern Lebanon as a base for raids and rocket fire into northern Israel. In March 1978, after a PLO attack on a bus on Israel's coastal road, Israel launched Operation Litani, occupying southern Lebanon up to the Litani River. The UN demanded Israel's withdrawal and sent UNIFIL peacekeepers. Four years later, in June 1982, Israel invaded again on a much larger scale.",
           "context": "Operation Litani (March 1978) was Israel's first large incursion into southern Lebanon against PLO bases.",
           "question_badge": "Human Impact",
           "question_type": "Human Impact",
-          "enquiry_question": "Lebanese women and children sit beside an Israeli armoured carrier. What does this show about who suffered when Lebanon became a battleground?",
-          "model_answer": "The photo shows that Lebanese civilians, not just PLO fighters and Israeli soldiers, were caught up in the fighting in southern Lebanon. Because the PLO operated from Lebanese villages, Israeli operations against it took place among civilians. This helps explain why the 1978 and 1982 invasions caused such anger in Lebanon and abroad.",
+          "model_answer": "The photo shows that Lebanese civilians, not just PLO fighters and Israeli soldiers, were caught up in the fighting in southern Lebanon. Because the PLO operated from Lebanese villages, Israeli operations against it took place among civilians; this helps explain why the 1978 and 1982 invasions caused such anger in Lebanon and abroad.",
           "provenance_clues": {
             "author": "An Israeli press photographer.",
             "audience": "Israeli newspaper readers.",
@@ -18413,9 +18411,11 @@ const cme_new = {
             "hinge_question": "Why did the PLO's presence in southern Lebanon drag Lebanese civilians into the Arab-Israeli conflict?"
           },
           "teacher_notes": {
-            "source_context": "From the early 1970s the PLO used southern Lebanon as a base for raids and rocket fire into northern Israel. In March 1978, after a PLO attack on a bus on Israel's coastal road, Israel launched Operation Litani, occupying southern Lebanon up to the Litani River. The UN demanded Israel's withdrawal and sent UNIFIL peacekeepers. Four years later, in June 1982, Israel invaded again on a much larger scale. **Hinge Question:** Why did the PLO's presence in southern Lebanon drag Lebanese civilians into the Arab-Israeli conflict?"
+            "source_context": "From the early 1970s the PLO used southern Lebanon as a base for raids and rocket fire into northern Israel. In March 1978, after a PLO attack on a bus on Israel's coastal road, Israel launched Operation Litani, occupying southern Lebanon up to the Litani River. The UN demanded Israel's withdrawal and sent UNIFIL peacekeepers. Four years later, in June 1982, Israel invaded again on a much larger scale. **Hinge Question:** Why did the PLO's presence in southern Lebanon drag Lebanese civilians into the Arab-Israeli conflict?",
+            "hinge_question": "Why did the PLO's presence in southern Lebanon drag Lebanese civilians into the Arab-Israeli conflict?"
           },
-          "image_alt": "Black-and-white photograph of Israeli soldiers and an armoured personnel carrier beside a group of seated Lebanese women and children next to a damaged building"
+          "image_alt": "Black-and-white photograph of Israeli soldiers and an armoured personnel carrier beside a group of seated Lebanese women and children next to a damaged building",
+          "question": "Lebanese women and children sit beside an Israeli armoured carrier. What does this show about who suffered when Lebanon became a battleground?"
         },
         {
           "id": "cme_l11_source_b",
@@ -18428,13 +18428,11 @@ const cme_new = {
           "desc": "Israel Government Press Office photograph of Ariel Sharon at a command position above Beirut, 1982.",
           "provenance": "Israel Government Press Office, National Photo Collection, 1982, via Wikimedia Commons (File:Ariel Sharon Beirut 1982.jpg).",
           "citation": "National Photo Collection of Israel, Government Press Office, Jerusalem.",
-          "hinge_question": "Why did an Israeli inquiry blame Israel's own Defence Minister for killings carried out by a Lebanese militia?",
-          "source_context": "As Defence Minister, Ariel Sharon directed the 1982 invasion of Lebanon and the siege of Beirut. After the PLO fighters left and Bachir Gemayel was assassinated, Israeli forces surrounding West Beirut allowed Lebanese Phalangist militiamen into the Sabra and Shatila camps, where they killed hundreds of Palestinian and Lebanese civilians on 16–18 September 1982. In February 1983 Israel's Kahan Commission found that Sharon bore personal responsibility for ignoring the danger of revenge killings, and he had to resign as Defence Minister. **Hinge Question:** Why did an Israeli inquiry blame Israel's own Defence Minister for killings carried out by a Lebanese militia?",
-          "context": "Israel's Kahan Commission (February 1983) found Defence Minister Ariel Sharon personally (indirectly) responsible for failing to prevent the Sabra and Shatila massacre.",
+          "source_context": "Photographed during Operation Peace for Galilee in the summer of 1982, Israeli Defence Minister Ariel Sharon studies operational maps on a rooftop overlooking besieged West Beirut shortly before the evacuation of PLO fighters and the September Sabra and Shatila camp killings.",
+          "context": "Photographed during Operation Peace for Galilee in the summer of 1982, Israeli Defence Minister Ariel Sharon studies operational maps on a rooftop overlooking besieged West Beirut shortly before the evacuation of PLO fighters and the September Sabra and Shatila camp killings.",
           "question_badge": "Perspective & Motive",
           "question_type": "Perspective & Motive",
-          "enquiry_question": "Sharon sits above Beirut with a military map beside him. Why did the Kahan Commission later hold him personally responsible?",
-          "model_answer": "The photo shows Sharon directing the war from close to Beirut, so he was in overall command of the area around the camps. In February 1983 Israel's Kahan Commission found he bore personal responsibility for letting Phalangist militiamen into Sabra and Shatila without considering the danger of revenge killings. The killings were carried out by the Phalangists, so the responsibility was indirect, but Sharon was forced to resign as Defence Minister.",
+          "model_answer": "The photo shows Sharon directing the war from close to Beirut, so he was in overall command of the area around the camps. In February 1983 Israel's Kahan Commission found he bore personal responsibility for letting Phalangist militiamen into Sabra and Shatila without considering the danger of revenge killings; the killings were carried out by the Phalangists, so the responsibility was indirect, but Sharon was forced to resign as Defence Minister.",
           "provenance_clues": {
             "author": "A photographer of the Israel Government Press Office.",
             "audience": "The Israeli public and the media.",
@@ -18442,9 +18440,11 @@ const cme_new = {
             "hinge_question": "Why did an Israeli inquiry blame Israel's own Defence Minister for killings carried out by a Lebanese militia?"
           },
           "teacher_notes": {
-            "source_context": "As Defence Minister, Ariel Sharon directed the 1982 invasion of Lebanon and the siege of Beirut. After the PLO fighters left and Bachir Gemayel was assassinated, Israeli forces surrounding West Beirut allowed Lebanese Phalangist militiamen into the Sabra and Shatila camps, where they killed hundreds of Palestinian and Lebanese civilians on 16–18 September 1982. In February 1983 Israel's Kahan Commission found that Sharon bore personal responsibility for ignoring the danger of revenge killings, and he had to resign as Defence Minister. **Hinge Question:** Why did an Israeli inquiry blame Israel's own Defence Minister for killings carried out by a Lebanese militia?"
+            "source_context": "As Defence Minister, Ariel Sharon directed the 1982 invasion of Lebanon and the siege of Beirut. After the PLO fighters left and Bachir Gemayel was assassinated, Israeli forces surrounding West Beirut allowed Lebanese Phalangist militiamen into the Sabra and Shatila camps, where they killed hundreds of Palestinian and Lebanese civilians on 16–18 September 1982. In February 1983 Israel's Kahan Commission found that Sharon bore personal responsibility for ignoring the danger of revenge killings, and he had to resign as Defence Minister. **Hinge Question:** Why did an Israeli inquiry blame Israel's own Defence Minister for killings carried out by a Lebanese militia?",
+            "hinge_question": "Why did an Israeli inquiry blame Israel's own Defence Minister for killings carried out by a Lebanese militia?"
           },
-          "image_alt": "Black-and-white photograph of Ariel Sharon sitting on a concrete wall and talking, with a military map beside him and the buildings of Beirut in the distance"
+          "image_alt": "Black-and-white photograph of Ariel Sharon sitting on a concrete wall and talking, with a military map beside him and the buildings of Beirut in the distance",
+          "question": "Sharon sits above Beirut with a military map beside him. Why did the Kahan Commission later hold him personally responsible?"
         },
         {
           "id": "cme_l11_source_c",
@@ -18457,13 +18457,11 @@ const cme_new = {
           "desc": "Typed Arabic leaflet directing workers, shopkeepers, transport companies and doctors during a general strike in the First Intifada.",
           "provenance": "Clandestine leaflet, West Bank and Gaza, January 1988; Birzeit University Digital Palestinian Archive / Palestinian Museum Digital Archive.",
           "citation": "Birzeit University / Palestinian Museum Digital Archive.",
-          "hinge_question": "Why did strikes and boycotts make the Intifada harder to stop than armed raids?",
-          "source_context": "Within weeks of the uprising starting in December 1987, local activists formed an underground leadership, later called the Unified National Leadership of the Uprising (UNLU), which pledged loyalty to the PLO. Its numbered leaflets, copied and passed hand to hand, set dates for strikes, shop closures and boycotts of Israeli goods and taxes. This leaflet calls on workers to stay away from work, tells shop owners to close, warns bus and taxi companies to obey the strike, and asks doctors and pharmacists to stay on emergency standby. **Hinge Question:** Why did strikes and boycotts make the Intifada harder to stop than armed raids?",
+          "source_context": "Within weeks of the uprising starting in December 1987, local activists formed an underground leadership, later called the Unified National Leadership of the Uprising (UNLU), which pledged loyalty to the PLO. Its numbered leaflets, copied and passed hand to hand, set dates for strikes, shop closures and boycotts of Israeli goods and taxes. This leaflet calls on workers to stay away from work, tells shop owners to close, warns bus and taxi companies to obey the strike, and asks doctors and pharmacists to stay on emergency standby.",
           "context": "The underground UNLU organised the First Intifada through leaflets calling for strikes and civil disobedience from January 1988.",
           "question_badge": "Perspective & Motive",
           "question_type": "Perspective & Motive",
-          "enquiry_question": "The leaflet gives instructions to workers, shopkeepers, taxi firms and doctors. What does this reveal about how the Intifada was organised?",
-          "model_answer": "The leaflet shows that the uprising was not just spontaneous rioting: a local underground leadership was planning strikes and telling each part of society what to do. By involving shopkeepers, workers and doctors, it turned the Intifada into a mass movement of whole communities. Its loyalty to the PLO also shows that leaders inside the territories still looked to Arafat's organisation in Tunis.",
+          "model_answer": "The leaflet shows that the uprising was not just spontaneous rioting: a local underground leadership was planning strikes and telling each part of society what to do. By involving shopkeepers, workers and doctors, it turned the Intifada into a mass movement of whole communities; its loyalty to the PLO also shows that leaders inside the territories still looked to Arafat's organisation in Tunis.",
           "provenance_clues": {
             "author": "The underground leadership of the uprising ('The Palestinian National Forces', later the UNLU).",
             "audience": "Palestinians in the West Bank and Gaza.",
@@ -18471,9 +18469,11 @@ const cme_new = {
             "hinge_question": "Why did strikes and boycotts make the Intifada harder to stop than armed raids?"
           },
           "teacher_notes": {
-            "source_context": "Within weeks of the uprising starting in December 1987, local activists formed an underground leadership, later called the Unified National Leadership of the Uprising (UNLU), which pledged loyalty to the PLO. Its numbered leaflets, copied and passed hand to hand, set dates for strikes, shop closures and boycotts of Israeli goods and taxes. This leaflet calls on workers to stay away from work, tells shop owners to close, warns bus and taxi companies to obey the strike, and asks doctors and pharmacists to stay on emergency standby. **Hinge Question:** Why did strikes and boycotts make the Intifada harder to stop than armed raids?"
+            "source_context": "Within weeks of the uprising starting in December 1987, local activists formed an underground leadership, later called the Unified National Leadership of the Uprising (UNLU), which pledged loyalty to the PLO. Its numbered leaflets, copied and passed hand to hand, set dates for strikes, shop closures and boycotts of Israeli goods and taxes. This leaflet calls on workers to stay away from work, tells shop owners to close, warns bus and taxi companies to obey the strike, and asks doctors and pharmacists to stay on emergency standby. **Hinge Question:** Why did strikes and boycotts make the Intifada harder to stop than armed raids?",
+            "hinge_question": "Why did strikes and boycotts make the Intifada harder to stop than armed raids?"
           },
-          "image_alt": "Photocopied Arabic typed leaflet headed \"Call ... Call\" calling for a general strike, signed The Palestinian National Forces"
+          "image_alt": "Photocopied Arabic typed leaflet headed \"Call ... Call\" calling for a general strike, signed The Palestinian National Forces",
+          "question": "The leaflet gives instructions to workers, shopkeepers, taxi firms and doctors. What does this reveal about how the Intifada was organised?"
         },
         {
           "id": "cme_l11_source_d",
@@ -18486,13 +18486,11 @@ const cme_new = {
           "desc": "Photograph of Defence Minister Yitzhak Rabin visiting Gaza during the uprising.",
           "provenance": "Israeli press photograph, Gaza Strip, First Intifada (1987–88).",
           "citation": "Israeli press archive.",
-          "hinge_question": "Why did the use of force against the Intifada damage Israel more than it damaged the uprising?",
-          "source_context": "As Defence Minister in a national unity government, Yitzhak Rabin was responsible for ending the uprising. He ordered a tough response: curfews, mass arrests, deportations, house demolitions and the use of force against protesters, including the beating of demonstrators. Television images of soldiers beating young Palestinians damaged Israel's reputation abroad and caused debate inside Israel. At the same time, the Islamist movement Hamas was founded in Gaza in December 1987 as a rival to the PLO. **Hinge Question:** Why did the use of force against the Intifada damage Israel more than it damaged the uprising?",
+          "source_context": "As Defence Minister in a national unity government, Yitzhak Rabin was responsible for ending the uprising. He ordered a tough response: curfews, mass arrests, deportations, house demolitions and the use of force against protesters, including the beating of demonstrators. Television images of soldiers beating young Palestinians damaged Israel's reputation abroad and caused debate inside Israel. At the same time, the Islamist movement Hamas was founded in Gaza in December 1987 as a rival to the PLO.",
           "context": "Defence Minister Yitzhak Rabin led Israel's 'iron fist' response to the First Intifada, 1987–88.",
           "question_badge": "Perspective & Motive",
           "question_type": "Perspective & Motive",
-          "enquiry_question": "Rabin walks through a Gaza street watched by local people. Why did his tough policy fail to end the uprising?",
-          "model_answer": "Rabin used curfews, mass arrests and force because he believed order had to be restored quickly. But the uprising was a mass movement of whole communities, so arrests could not remove it, and images of soldiers beating protesters cost Israel international support. The experience helped convince Rabin that military force alone could not solve the conflict, which shaped his later support for Oslo.",
+          "model_answer": "Rabin used curfews, mass arrests and force because he believed order had to be restored quickly. But the uprising was a mass movement of whole communities, so arrests could not remove it, and images of soldiers beating protesters cost Israel international support; the experience helped convince Rabin that military force alone could not solve the conflict, which shaped his later support for Oslo.",
           "provenance_clues": {
             "author": "An Israeli press photographer.",
             "audience": "The Israeli public.",
@@ -18500,9 +18498,11 @@ const cme_new = {
             "hinge_question": "Why did the use of force against the Intifada damage Israel more than it damaged the uprising?"
           },
           "teacher_notes": {
-            "source_context": "As Defence Minister in a national unity government, Yitzhak Rabin was responsible for ending the uprising. He ordered a tough response: curfews, mass arrests, deportations, house demolitions and the use of force against protesters, including the beating of demonstrators. Television images of soldiers beating young Palestinians damaged Israel's reputation abroad and caused debate inside Israel. At the same time, the Islamist movement Hamas was founded in Gaza in December 1987 as a rival to the PLO. **Hinge Question:** Why did the use of force against the Intifada damage Israel more than it damaged the uprising?"
+            "source_context": "As Defence Minister in a national unity government, Yitzhak Rabin was responsible for ending the uprising. He ordered a tough response: curfews, mass arrests, deportations, house demolitions and the use of force against protesters, including the beating of demonstrators. Television images of soldiers beating young Palestinians damaged Israel's reputation abroad and caused debate inside Israel. At the same time, the Islamist movement Hamas was founded in Gaza in December 1987 as a rival to the PLO. **Hinge Question:** Why did the use of force against the Intifada damage Israel more than it damaged the uprising?",
+            "hinge_question": "Why did the use of force against the Intifada damage Israel more than it damaged the uprising?"
           },
-          "image_alt": "Black-and-white photograph of Yitzhak Rabin in a dark jacket walking along a Gaza street while Palestinian men and boys watch from shopfronts"
+          "image_alt": "Black-and-white photograph of Yitzhak Rabin in a dark jacket walking along a Gaza street while Palestinian men and boys watch from shopfronts",
+          "question": "Rabin walks through a Gaza street watched by local people. Why did his tough policy fail to end the uprising?"
         },
         {
           "id": "cme_l11_source_e",
@@ -18515,13 +18515,11 @@ const cme_new = {
           "desc": "Photograph of Yasser Arafat in 1988, paired with his Geneva statement and a summary of the Israeli government's response.",
           "provenance": "Photograph: European Parliament multimedia archive, September 1988, via Wikimedia Commons. Texts: Arafat press statement, Geneva, 14 December 1988; Israeli government statements, December 1988.",
           "citation": "European Parliament; Arafat press conference, Geneva, 14 December 1988.",
-          "hinge_question": "Why did the USA accept Arafat's December 1988 statement when Israel's government did not?",
-          "source_context": "In November 1988 the Palestine National Council in Algiers declared a State of Palestine and accepted UN Resolution 242. On 13 December Arafat addressed the UN General Assembly, moved to Geneva after the USA refused him a visa. The next day, at a press conference in Geneva, he used the exact wording the USA required. Within hours the Reagan administration opened talks with the PLO. Prime Minister Yitzhak Shamir's government rejected the statement and refused to negotiate with the PLO. **Hinge Question:** Why did the USA accept Arafat's December 1988 statement when Israel's government did not?",
+          "source_context": "In November 1988 the Palestine National Council in Algiers declared a State of Palestine and accepted UN Resolution 242. On 13 December Arafat addressed the UN General Assembly, moved to Geneva after the USA refused him a visa. The next day, at a press conference in Geneva, he used the exact wording the USA required. Within hours the Reagan administration opened talks with the PLO. Prime Minister Yitzhak Shamir's government rejected the statement and refused to negotiate with the PLO.",
           "context": "On 14 December 1988 Arafat accepted Resolutions 242 and 338, recognised Israel's right to exist and renounced terrorism; the USA opened talks with the PLO, while the Shamir government rejected the move.",
           "question_badge": "Competing Perspectives",
           "question_type": "Competing Perspectives",
-          "enquiry_question": "Arafat said he 'totally and absolutely' renounced terrorism; Shamir's government called it a manoeuvre. Why such different readings?",
-          "model_answer": "Arafat's words met the exact US conditions—accepting Resolutions 242 and 338, recognising Israel's right to exist and renouncing terrorism—so Washington opened talks with the PLO the same day. Shamir's government did not trust the statement, pointing to past PLO attacks and its charter, and feared talks would lead to a Palestinian state. The two readings show that recognition on paper did not yet create trust.",
+          "model_answer": "Arafat's words met the exact US conditions—accepting Resolutions 242 and 338, recognising Israel's right to exist and renouncing terrorism—so Washington opened talks with the PLO the same day. Shamir's government did not trust the statement, pointing to past PLO attacks and its charter, and feared talks would lead to a Palestinian state; the two readings show that recognition on paper did not yet create trust.",
           "provenance_clues": {
             "author": "Yasser Arafat (PLO Chairman); the Israeli government of Prime Minister Yitzhak Shamir.",
             "audience": "The US government, world media, Israelis and Palestinians.",
@@ -18529,7 +18527,8 @@ const cme_new = {
             "hinge_question": "Why did the USA accept Arafat's December 1988 statement when Israel's government did not?"
           },
           "teacher_notes": {
-            "source_context": "In November 1988 the Palestine National Council in Algiers declared a State of Palestine and accepted UN Resolution 242. On 13 December Arafat addressed the UN General Assembly, moved to Geneva after the USA refused him a visa. The next day, at a press conference in Geneva, he used the exact wording the USA required. Within hours the Reagan administration opened talks with the PLO. Prime Minister Yitzhak Shamir's government rejected the statement and refused to negotiate with the PLO. **Hinge Question:** Why did the USA accept Arafat's December 1988 statement when Israel's government did not?"
+            "source_context": "In November 1988 the Palestine National Council in Algiers declared a State of Palestine and accepted UN Resolution 242. On 13 December Arafat addressed the UN General Assembly, moved to Geneva after the USA refused him a visa. The next day, at a press conference in Geneva, he used the exact wording the USA required. Within hours the Reagan administration opened talks with the PLO. Prime Minister Yitzhak Shamir's government rejected the statement and refused to negotiate with the PLO. **Hinge Question:** Why did the USA accept Arafat's December 1988 statement when Israel's government did not?",
+            "hinge_question": "Why did the USA accept Arafat's December 1988 statement when Israel's government did not?"
           },
           "image_alt": "Black-and-white portrait of Yasser Arafat in a keffiyeh and military-style jacket seated at a table with a microphone",
           "perspective_pair": {
@@ -18552,7 +18551,8 @@ const cme_new = {
               "provenance": "Statements of the Israeli Prime Minister's Office and government, December 1988 (summary of stated position).",
               "image": "/images/yitzhak_shamir.jpg"
             }
-          }
+          },
+          "question": "Arafat said he 'totally and absolutely' renounced terrorism; Shamir's government called it a manoeuvre. Why such different readings?"
         }
       ],
       "learning_objectives": {
@@ -19704,13 +19704,11 @@ const cme_new = {
               "desc": "White House photograph of the opening plenary of the Madrid Peace Conference.",
               "provenance": "White House Photographic Office, George H. W. Bush Administration, 30 October 1991; US National Archives (US federal government work, public domain).",
               "citation": "George H. W. Bush Presidential Library / US National Archives.",
-              "hinge_question": "Why did Madrid matter even though it produced almost no immediate agreements?",
-              "source_context": "The end of the Cold War and the 1991 Gulf War left the USA with unrivalled influence in the Middle East. President Bush and Secretary of State James Baker brought Israel, Syria, Lebanon, Jordan and the Palestinians to Madrid in October 1991. Because Prime Minister Yitzhak Shamir's government refused to deal with the PLO, Palestinians from the West Bank and Gaza attended inside a joint delegation with Jordan, with Hanan Ashrawi as their spokesperson. **Hinge Question:** Why did Madrid matter even though it produced almost no immediate agreements?",
+              "source_context": "The end of the Cold War and the 1991 Gulf War left the USA with unrivalled influence in the Middle East. President Bush and Secretary of State James Baker brought Israel, Syria, Lebanon, Jordan and the Palestinians to Madrid in October 1991. Because Prime Minister Yitzhak Shamir's government refused to deal with the PLO, Palestinians from the West Bank and Gaza attended inside a joint delegation with Jordan, with Hanan Ashrawi as their spokesperson.",
               "context": "The Madrid Conference (October 1991) brought Israel and its Arab neighbours, including Palestinians, to direct talks for the first time.",
               "question_badge": "Turning Point Insight",
               "question_type": "Turning Point Insight",
-              "enquiry_question": "Israeli, Syrian, Lebanese and Jordanian-Palestinian delegations sit around one table. Why was this seating itself a breakthrough in 1991?",
-              "model_answer": "For over forty years Arab states had refused to sit openly with Israel, so sharing a table broke a deep taboo. The end of the Cold War and the Gulf War gave the USA the influence to bring everyone together, while Palestinians attended inside a joint delegation with Jordan because Shamir's government refused to negotiate with the PLO. Madrid produced few agreements, but it started direct talks.",
+              "model_answer": "For over forty years Arab states had refused to sit openly with Israel, so sharing a table broke a deep taboo. The end of the Cold War and the Gulf War gave the USA the influence to bring everyone together, while Palestinians attended inside a joint delegation with Jordan because Shamir's government refused to negotiate with the PLO; Madrid produced few agreements, but it started direct talks.",
               "provenance_clues": {
                 "author": "An official White House photographer.",
                 "audience": "The American public and world media.",
@@ -19718,9 +19716,11 @@ const cme_new = {
                 "hinge_question": "Why did Madrid matter even though it produced almost no immediate agreements?"
               },
               "teacher_notes": {
-                "source_context": "The end of the Cold War and the 1991 Gulf War left the USA with unrivalled influence in the Middle East. President Bush and Secretary of State James Baker brought Israel, Syria, Lebanon, Jordan and the Palestinians to Madrid in October 1991. Because Prime Minister Yitzhak Shamir's government refused to deal with the PLO, Palestinians from the West Bank and Gaza attended inside a joint delegation with Jordan, with Hanan Ashrawi as their spokesperson. **Hinge Question:** Why did Madrid matter even though it produced almost no immediate agreements?"
+                "source_context": "The end of the Cold War and the 1991 Gulf War left the USA with unrivalled influence in the Middle East. President Bush and Secretary of State James Baker brought Israel, Syria, Lebanon, Jordan and the Palestinians to Madrid in October 1991. Because Prime Minister Yitzhak Shamir's government refused to deal with the PLO, Palestinians from the West Bank and Gaza attended inside a joint delegation with Jordan, with Hanan Ashrawi as their spokesperson. **Hinge Question:** Why did Madrid matter even though it produced almost no immediate agreements?",
+                "hinge_question": "Why did Madrid matter even though it produced almost no immediate agreements?"
               },
-              "image_alt": "Delegations seated around a large T-shaped table beneath chandeliers in the Royal Palace of Madrid while US President George H. W. Bush speaks at a lectern"
+              "image_alt": "Delegations seated around a large T-shaped table beneath chandeliers in the Royal Palace of Madrid while US President George H. W. Bush speaks at a lectern",
+              "question": "Israeli, Syrian, Lebanese and Jordanian-Palestinian delegations sit around one table. Why was this seating itself a breakthrough in 1991?"
             }
           ],
           "stage_hook_map": {
@@ -19803,13 +19803,11 @@ const cme_new = {
               "desc": "Broadcast still of Shimon Peres signing the Oslo I Declaration of Principles.",
               "provenance": "Television broadcast still, White House South Lawn, 13 September 1993, via Wikimedia Commons (CC BY-SA 3.0).",
               "citation": "Wikimedia Commons: Peres signing Oslo I.",
-              "hinge_question": "Why could secret talks in Norway achieve what open talks in Washington could not?",
-              "source_context": "After Madrid, public Israeli–Palestinian talks in Washington stalled. In early 1993 Israeli academics, later joined by officials from Foreign Minister Shimon Peres's ministry, met PLO representatives secretly in Norway, hosted by Norwegian diplomats. Away from the media they drafted the Declaration of Principles: mutual recognition, and a five-year interim period of Palestinian self-government starting in Gaza and Jericho. Peres signed it for Israel and Mahmoud Abbas for the PLO. **Hinge Question:** Why could secret talks in Norway achieve what open talks in Washington could not?",
-              "context": "The secret Oslo channel (January–August 1993) produced the Declaration of Principles signed in Washington on 13 September 1993.",
+              "source_context": "After public post-Madrid negotiations in Washington deadlocked in 1992, Norwegian diplomats Terje Rød-Larsen and Mona Juul hosted a small back-channel group of Israeli negotiators and PLO officials at country houses near Oslo during early 1993.",
+              "context": "After public post-Madrid negotiations in Washington deadlocked in 1992, Norwegian diplomats Terje Rød-Larsen and Mona Juul hosted a small back-channel group of Israeli negotiators and PLO officials at country houses near Oslo during early 1993.",
               "question_badge": "Perspective & Motive",
               "question_type": "Perspective & Motive",
-              "enquiry_question": "Peres, whose ministry backed the secret Norway talks, signs the final document. Why had secrecy worked where public talks failed?",
-              "model_answer": "Public talks in Washington after Madrid were stuck because negotiators had to play to their home audiences and Israel still refused to talk to the PLO directly. In Norway, away from the media, Israeli and PLO representatives could test ideas without losing face, backed quietly by Peres's foreign ministry. The result was the Declaration of Principles, signed here by Peres for Israel and by Mahmoud Abbas for the PLO.",
+              "model_answer": "Public talks in Washington after Madrid were stuck because negotiators had to play to their home audiences and Israel still refused to talk to the PLO directly. In Norway, away from the media, Israeli and PLO representatives could test ideas without losing face, backed quietly by Peres's foreign ministry; the result was the Declaration of Principles, signed here by Peres for Israel and by Mahmoud Abbas for the PLO.",
               "provenance_clues": {
                 "author": "A television news camera at the signing ceremony.",
                 "audience": "A worldwide television audience.",
@@ -19817,9 +19815,11 @@ const cme_new = {
                 "hinge_question": "Why could secret talks in Norway achieve what open talks in Washington could not?"
               },
               "teacher_notes": {
-                "source_context": "After Madrid, public Israeli–Palestinian talks in Washington stalled. In early 1993 Israeli academics, later joined by officials from Foreign Minister Shimon Peres's ministry, met PLO representatives secretly in Norway, hosted by Norwegian diplomats. Away from the media they drafted the Declaration of Principles: mutual recognition, and a five-year interim period of Palestinian self-government starting in Gaza and Jericho. Peres signed it for Israel and Mahmoud Abbas for the PLO. **Hinge Question:** Why could secret talks in Norway achieve what open talks in Washington could not?"
+                "source_context": "After Madrid, public Israeli–Palestinian talks in Washington stalled. In early 1993 Israeli academics, later joined by officials from Foreign Minister Shimon Peres's ministry, met PLO representatives secretly in Norway, hosted by Norwegian diplomats. Away from the media they drafted the Declaration of Principles: mutual recognition, and a five-year interim period of Palestinian self-government starting in Gaza and Jericho. Peres signed it for Israel and Mahmoud Abbas for the PLO. **Hinge Question:** Why could secret talks in Norway achieve what open talks in Washington could not?",
+                "hinge_question": "Why could secret talks in Norway achieve what open talks in Washington could not?"
               },
-              "image_alt": "Shimon Peres seated at a table signing a document while officials stand behind him"
+              "image_alt": "Shimon Peres seated at a table signing a document while officials stand behind him",
+              "question": "Peres, whose ministry backed the secret Norway talks, signs the final document. Why had secrecy worked where public talks failed?"
             }
           ],
           "image": "/images/cme_nobel_peace_prize_oslo_1994.jpg",
@@ -19850,13 +19850,11 @@ const cme_new = {
               "desc": "White House photograph of the Rabin–Arafat handshake.",
               "provenance": "White House Photographic Office / William J. Clinton Presidential Library, 13 September 1993 (US federal government work, public domain).",
               "citation": "Clinton Presidential Library / US National Archives.",
-              "hinge_question": "Was postponing Jerusalem, refugees and settlements a sensible way to start—or Oslo's fatal flaw?",
-              "source_context": "Days before the ceremony, Israel and the PLO exchanged letters of mutual recognition: the PLO recognised Israel's right to exist and renounced violence, and Israel recognised the PLO as the representative of the Palestinian people. The Declaration of Principles promised Israeli withdrawal from Gaza and Jericho and a Palestinian Authority, but postponed Jerusalem, refugees, settlements, security and borders to final-status talks within five years. **Hinge Question:** Was postponing Jerusalem, refugees and settlements a sensible way to start—or Oslo's fatal flaw?",
-              "context": "The Oslo I signing and handshake (13 September 1993) followed Israel–PLO mutual recognition but postponed final-status issues.",
+              "source_context": "On 13 September 1993, before 3,000 guests on the White House South Lawn in Washington, D.C., US President Bill Clinton presided over the formal signing of the Oslo I Declaration of Principles accompanied by Israeli Prime Minister Yitzhak Rabin and PLO Chairman Yasser Arafat.",
+              "context": "On 13 September 1993, before 3,000 guests on the White House South Lawn in Washington, D.C., US President Bill Clinton presided over the formal signing of the Oslo I Declaration of Principles accompanied by Israeli Prime Minister Yitzhak Rabin and PLO Chairman Yasser Arafat.",
               "question_badge": "Turning Point Insight",
               "question_type": "Turning Point Insight",
-              "enquiry_question": "Clinton spreads his arms behind Rabin and Arafat's handshake. What did this handshake promise, and what did it postpone?",
-              "model_answer": "The handshake showed mutual recognition between Israel and the PLO after decades as enemies, and promised Palestinian self-rule starting in Gaza and Jericho. But Oslo I postponed the hardest issues—Jerusalem, refugees, settlements, security and borders—for up to five years. The image captured real hope while hiding how much was still unresolved.",
+              "model_answer": "The handshake showed mutual recognition between Israel and the PLO after decades as enemies, and promised Palestinian self-rule starting in Gaza and Jericho. But Oslo I postponed the hardest issues—Jerusalem, refugees, settlements, security and borders—for up to five years; the image captured real hope while hiding how much was still unresolved.",
               "provenance_clues": {
                 "author": "An official White House photographer.",
                 "audience": "The American public and world media.",
@@ -19864,9 +19862,11 @@ const cme_new = {
                 "hinge_question": "Was postponing Jerusalem, refugees and settlements a sensible way to start—or Oslo's fatal flaw?"
               },
               "teacher_notes": {
-                "source_context": "Days before the ceremony, Israel and the PLO exchanged letters of mutual recognition: the PLO recognised Israel's right to exist and renounced violence, and Israel recognised the PLO as the representative of the Palestinian people. The Declaration of Principles promised Israeli withdrawal from Gaza and Jericho and a Palestinian Authority, but postponed Jerusalem, refugees, settlements, security and borders to final-status talks within five years. **Hinge Question:** Was postponing Jerusalem, refugees and settlements a sensible way to start—or Oslo's fatal flaw?"
+                "source_context": "Days before the ceremony, Israel and the PLO exchanged letters of mutual recognition: the PLO recognised Israel's right to exist and renounced violence, and Israel recognised the PLO as the representative of the Palestinian people. The Declaration of Principles promised Israeli withdrawal from Gaza and Jericho and a Palestinian Authority, but postponed Jerusalem, refugees, settlements, security and borders to final-status talks within five years. **Hinge Question:** Was postponing Jerusalem, refugees and settlements a sensible way to start—or Oslo's fatal flaw?",
+                "hinge_question": "Was postponing Jerusalem, refugees and settlements a sensible way to start—or Oslo's fatal flaw?"
               },
-              "image_alt": "Yitzhak Rabin and Yasser Arafat shaking hands while Bill Clinton stands behind them with his arms spread wide"
+              "image_alt": "Yitzhak Rabin and Yasser Arafat shaking hands while Bill Clinton stands behind them with his arms spread wide",
+              "question": "Clinton spreads his arms behind Rabin and Arafat's handshake. What did this handshake promise, and what did it postpone?"
             }
           ],
           "image": "/images/cme_plate_oslo_south_lawn_ceremony_1993.jpg",
@@ -19897,13 +19897,11 @@ const cme_new = {
               "desc": "Official Oslo II redeployment map, paired with Rabin's 1995 Knesset defence of the agreement and Edward Said's 1993 critique of Oslo.",
               "provenance": "Map: Israeli–Palestinian Interim Agreement on the West Bank and the Gaza Strip, Map No. 1, September 1995. Texts: Knesset, 5 October 1995; London Review of Books, 21 October 1993.",
               "citation": "Israeli–Palestinian Interim Agreement (1995), Annex maps; Knesset Record; London Review of Books, Vol. 15 No. 20.",
-              "hinge_question": "Why could the same Oslo II map be seen as progress by Rabin and as fragmentation by Said?",
-              "source_context": "Signed in September 1995, Oslo II divided the West Bank into Area A (full Palestinian control of the main towns), Area B (Palestinian civil control with Israeli security control) and Area C (full Israeli control, including settlements, roads and most open land). Rabin presented it to the Knesset on 5 October 1995, where it was approved by 61 votes to 59. Edward Said had attacked the Oslo framework as early as October 1993, warning that settlements and their roads would break Palestinian areas apart. **Hinge Question:** Why could the same Oslo II map be seen as progress by Rabin and as fragmentation by Said?",
+              "source_context": "Signed in September 1995, Oslo II divided the West Bank into Area A (full Palestinian control of the main towns), Area B (Palestinian civil control with Israeli security control) and Area C (full Israeli control, including settlements, roads and most open land). Rabin presented it to the Knesset on 5 October 1995, where it was approved by 61 votes to 59. Edward Said had attacked the Oslo framework as early as October 1993, warning that settlements and their roads would break Palestinian areas apart.",
               "context": "The Oslo II map (September 1995) divided the West Bank into Areas A, B and C; Rabin defended it in the Knesset, while Edward Said had condemned the Oslo framework in 1993.",
               "question_badge": "Competing Perspectives",
               "question_type": "Competing Perspectives",
-              "enquiry_question": "Rabin wanted an entity 'less than a state'; Said saw settlements breaking Palestinian land apart. How does the map support each view?",
-              "model_answer": "For Rabin, the map showed controlled, step-by-step progress: Palestinians ran their own towns in Areas A and B while Israel kept security control and the settlements. For Said, the same pattern of scattered islands surrounded by Israeli-controlled Area C was exactly the fragmentation he had warned about in 1993. The map shows why Oslo II could be defended as realistic and attacked as unfair at the same time.",
+              "model_answer": "For Rabin, the map showed controlled, step-by-step progress: Palestinians ran their own towns in Areas A and B while Israel kept security control and the settlements. For Said, the same pattern of scattered islands surrounded by Israeli-controlled Area C was exactly the fragmentation he had warned about in 1993; the map shows why Oslo II could be defended as realistic and attacked as unfair at the same time.",
               "provenance_clues": {
                 "author": "Israeli and Palestinian negotiators (map); Yitzhak Rabin; Edward Said.",
                 "audience": "Negotiators and officials (map); Knesset members (Rabin); Western readers (Said).",
@@ -19911,7 +19909,8 @@ const cme_new = {
                 "hinge_question": "Why could the same Oslo II map be seen as progress by Rabin and as fragmentation by Said?"
               },
               "teacher_notes": {
-                "source_context": "Signed in September 1995, Oslo II divided the West Bank into Area A (full Palestinian control of the main towns), Area B (Palestinian civil control with Israeli security control) and Area C (full Israeli control, including settlements, roads and most open land). Rabin presented it to the Knesset on 5 October 1995, where it was approved by 61 votes to 59. Edward Said had attacked the Oslo framework as early as October 1993, warning that settlements and their roads would break Palestinian areas apart. **Hinge Question:** Why could the same Oslo II map be seen as progress by Rabin and as fragmentation by Said?"
+                "source_context": "Signed in September 1995, Oslo II divided the West Bank into Area A (full Palestinian control of the main towns), Area B (Palestinian civil control with Israeli security control) and Area C (full Israeli control, including settlements, roads and most open land). Rabin presented it to the Knesset on 5 October 1995, where it was approved by 61 votes to 59. Edward Said had attacked the Oslo framework as early as October 1993, warning that settlements and their roads would break Palestinian areas apart. **Hinge Question:** Why could the same Oslo II map be seen as progress by Rabin and as fragmentation by Said?",
+                "hinge_question": "Why could the same Oslo II map be seen as progress by Rabin and as fragmentation by Said?"
               },
               "image_alt": "Official Oslo II map of the West Bank with many scattered yellow areas outlined in red, marking Areas A and B, surrounded by unshaded Area C",
               "perspective_pair": {
@@ -19934,7 +19933,8 @@ const cme_new = {
                   "provenance": "Edward Said, 'The Morning After', London Review of Books, Vol. 15 No. 20, 21 October 1993.",
                   "image": "/images/cme_edward_said_2002.jpg"
                 }
-              }
+              },
+              "question": "Rabin wanted an entity 'less than a state'; Said saw settlements breaking Palestinian land apart. How does the map support each view?"
             }
           ],
           "isReversed": true,
@@ -19965,13 +19965,11 @@ const cme_new = {
               "desc": "Photograph of Prime Minister Yitzhak Rabin addressing the 4 November 1995 peace rally in Tel Aviv.",
               "provenance": "Press photograph, Kings of Israel Square, Tel Aviv, 4 November 1995.",
               "citation": "Israeli press archive.",
-              "hinge_question": "How did violence by extremists on both sides undermine the Oslo peace process?",
-              "source_context": "By late 1995 the Oslo process faced violent opposition on both sides: the killing of 29 Palestinian worshippers in Hebron by settler Baruch Goldstein in February 1994, and a series of Hamas and Islamic Jihad suicide bombings in Israeli cities. Israeli right-wing protesters denounced Rabin as a traitor for giving up land. On 4 November 1995 a mass rally in Tel Aviv supported the peace process; as Rabin left, he was assassinated by Yigal Amir, a Jewish Israeli law student opposed to Oslo. **Hinge Question:** How did violence by extremists on both sides undermine the Oslo peace process?",
+              "source_context": "By late 1995 the Oslo process faced violent opposition on both sides: the killing of 29 Palestinian worshippers in Hebron by settler Baruch Goldstein in February 1994, and a series of Hamas and Islamic Jihad suicide bombings in Israeli cities. Israeli right-wing protesters denounced Rabin as a traitor for giving up land. On 4 November 1995 a mass rally in Tel Aviv supported the peace process; as Rabin left, he was assassinated by Yigal Amir, a Jewish Israeli law student opposed to Oslo.",
               "context": "Rabin was assassinated by Yigal Amir after addressing a peace rally in Tel Aviv on 4 November 1995.",
               "question_badge": "Human Impact",
               "question_type": "Human Impact",
-              "enquiry_question": "The podium sign reads 'Yes to peace, no to violence'. Why does this slogan make Rabin's murder that night so significant?",
-              "model_answer": "The rally was organised to show public support for Oslo after months of suicide bombings and a fierce campaign branding Rabin a traitor. Minutes after speaking under this slogan, Rabin was assassinated by Yigal Amir, an Israeli opponent of the peace process. His death removed the leader with the military credibility to persuade Israelis to compromise, and deepened divisions inside Israel.",
+              "model_answer": "The rally was organised to show public support for Oslo after months of suicide bombings and a fierce campaign branding Rabin a traitor. Minutes after speaking under this slogan, Rabin was assassinated by Yigal Amir, an Israeli opponent of the peace process; his death removed the leader with the military credibility to persuade Israelis to compromise, and deepened divisions inside Israel.",
               "provenance_clues": {
                 "author": "A press photographer at the rally.",
                 "audience": "Israeli newspaper readers.",
@@ -19979,9 +19977,11 @@ const cme_new = {
                 "hinge_question": "How did violence by extremists on both sides undermine the Oslo peace process?"
               },
               "teacher_notes": {
-                "source_context": "By late 1995 the Oslo process faced violent opposition on both sides: the killing of 29 Palestinian worshippers in Hebron by settler Baruch Goldstein in February 1994, and a series of Hamas and Islamic Jihad suicide bombings in Israeli cities. Israeli right-wing protesters denounced Rabin as a traitor for giving up land. On 4 November 1995 a mass rally in Tel Aviv supported the peace process; as Rabin left, he was assassinated by Yigal Amir, a Jewish Israeli law student opposed to Oslo. **Hinge Question:** How did violence by extremists on both sides undermine the Oslo peace process?"
+                "source_context": "By late 1995 the Oslo process faced violent opposition on both sides: the killing of 29 Palestinian worshippers in Hebron by settler Baruch Goldstein in February 1994, and a series of Hamas and Islamic Jihad suicide bombings in Israeli cities. Israeli right-wing protesters denounced Rabin as a traitor for giving up land. On 4 November 1995 a mass rally in Tel Aviv supported the peace process; as Rabin left, he was assassinated by Yigal Amir, a Jewish Israeli law student opposed to Oslo. **Hinge Question:** How did violence by extremists on both sides undermine the Oslo peace process?",
+                "hinge_question": "How did violence by extremists on both sides undermine the Oslo peace process?"
               },
-              "image_alt": "Yitzhak Rabin speaking at a wooden podium at night; a sign on the podium reads in Hebrew Yes to peace, no to violence"
+              "image_alt": "Yitzhak Rabin speaking at a wooden podium at night; a sign on the podium reads in Hebrew Yes to peace, no to violence",
+              "question": "The podium sign reads 'Yes to peace, no to violence'. Why does this slogan make Rabin's murder that night so significant?"
             }
           ],
           "image": "/images/cme_plate_rabin_memorial_candles_1995.jpg",
@@ -20482,13 +20482,11 @@ const cme_new = {
           "desc": "White House photograph of the opening plenary of the Madrid Peace Conference.",
           "provenance": "White House Photographic Office, George H. W. Bush Administration, 30 October 1991; US National Archives (US federal government work, public domain).",
           "citation": "George H. W. Bush Presidential Library / US National Archives.",
-          "hinge_question": "Why did Madrid matter even though it produced almost no immediate agreements?",
-          "source_context": "The end of the Cold War and the 1991 Gulf War left the USA with unrivalled influence in the Middle East. President Bush and Secretary of State James Baker brought Israel, Syria, Lebanon, Jordan and the Palestinians to Madrid in October 1991. Because Prime Minister Yitzhak Shamir's government refused to deal with the PLO, Palestinians from the West Bank and Gaza attended inside a joint delegation with Jordan, with Hanan Ashrawi as their spokesperson. **Hinge Question:** Why did Madrid matter even though it produced almost no immediate agreements?",
+          "source_context": "The end of the Cold War and the 1991 Gulf War left the USA with unrivalled influence in the Middle East. President Bush and Secretary of State James Baker brought Israel, Syria, Lebanon, Jordan and the Palestinians to Madrid in October 1991. Because Prime Minister Yitzhak Shamir's government refused to deal with the PLO, Palestinians from the West Bank and Gaza attended inside a joint delegation with Jordan, with Hanan Ashrawi as their spokesperson.",
           "context": "The Madrid Conference (October 1991) brought Israel and its Arab neighbours, including Palestinians, to direct talks for the first time.",
           "question_badge": "Turning Point Insight",
           "question_type": "Turning Point Insight",
-          "enquiry_question": "Israeli, Syrian, Lebanese and Jordanian-Palestinian delegations sit around one table. Why was this seating itself a breakthrough in 1991?",
-          "model_answer": "For over forty years Arab states had refused to sit openly with Israel, so sharing a table broke a deep taboo. The end of the Cold War and the Gulf War gave the USA the influence to bring everyone together, while Palestinians attended inside a joint delegation with Jordan because Shamir's government refused to negotiate with the PLO. Madrid produced few agreements, but it started direct talks.",
+          "model_answer": "For over forty years Arab states had refused to sit openly with Israel, so sharing a table broke a deep taboo. The end of the Cold War and the Gulf War gave the USA the influence to bring everyone together, while Palestinians attended inside a joint delegation with Jordan because Shamir's government refused to negotiate with the PLO; Madrid produced few agreements, but it started direct talks.",
           "provenance_clues": {
             "author": "An official White House photographer.",
             "audience": "The American public and world media.",
@@ -20496,9 +20494,11 @@ const cme_new = {
             "hinge_question": "Why did Madrid matter even though it produced almost no immediate agreements?"
           },
           "teacher_notes": {
-            "source_context": "The end of the Cold War and the 1991 Gulf War left the USA with unrivalled influence in the Middle East. President Bush and Secretary of State James Baker brought Israel, Syria, Lebanon, Jordan and the Palestinians to Madrid in October 1991. Because Prime Minister Yitzhak Shamir's government refused to deal with the PLO, Palestinians from the West Bank and Gaza attended inside a joint delegation with Jordan, with Hanan Ashrawi as their spokesperson. **Hinge Question:** Why did Madrid matter even though it produced almost no immediate agreements?"
+            "source_context": "The end of the Cold War and the 1991 Gulf War left the USA with unrivalled influence in the Middle East. President Bush and Secretary of State James Baker brought Israel, Syria, Lebanon, Jordan and the Palestinians to Madrid in October 1991. Because Prime Minister Yitzhak Shamir's government refused to deal with the PLO, Palestinians from the West Bank and Gaza attended inside a joint delegation with Jordan, with Hanan Ashrawi as their spokesperson. **Hinge Question:** Why did Madrid matter even though it produced almost no immediate agreements?",
+            "hinge_question": "Why did Madrid matter even though it produced almost no immediate agreements?"
           },
-          "image_alt": "Delegations seated around a large T-shaped table beneath chandeliers in the Royal Palace of Madrid while US President George H. W. Bush speaks at a lectern"
+          "image_alt": "Delegations seated around a large T-shaped table beneath chandeliers in the Royal Palace of Madrid while US President George H. W. Bush speaks at a lectern",
+          "question": "Israeli, Syrian, Lebanese and Jordanian-Palestinian delegations sit around one table. Why was this seating itself a breakthrough in 1991?"
         },
         {
           "id": "cme_l12_source_b",
@@ -20511,13 +20511,11 @@ const cme_new = {
           "desc": "Broadcast still of Shimon Peres signing the Oslo I Declaration of Principles.",
           "provenance": "Television broadcast still, White House South Lawn, 13 September 1993, via Wikimedia Commons (CC BY-SA 3.0).",
           "citation": "Wikimedia Commons: Peres signing Oslo I.",
-          "hinge_question": "Why could secret talks in Norway achieve what open talks in Washington could not?",
-          "source_context": "After Madrid, public Israeli–Palestinian talks in Washington stalled. In early 1993 Israeli academics, later joined by officials from Foreign Minister Shimon Peres's ministry, met PLO representatives secretly in Norway, hosted by Norwegian diplomats. Away from the media they drafted the Declaration of Principles: mutual recognition, and a five-year interim period of Palestinian self-government starting in Gaza and Jericho. Peres signed it for Israel and Mahmoud Abbas for the PLO. **Hinge Question:** Why could secret talks in Norway achieve what open talks in Washington could not?",
-          "context": "The secret Oslo channel (January–August 1993) produced the Declaration of Principles signed in Washington on 13 September 1993.",
+          "source_context": "After public post-Madrid negotiations in Washington deadlocked in 1992, Norwegian diplomats Terje Rød-Larsen and Mona Juul hosted a small back-channel group of Israeli negotiators and PLO officials at country houses near Oslo during early 1993.",
+          "context": "After public post-Madrid negotiations in Washington deadlocked in 1992, Norwegian diplomats Terje Rød-Larsen and Mona Juul hosted a small back-channel group of Israeli negotiators and PLO officials at country houses near Oslo during early 1993.",
           "question_badge": "Perspective & Motive",
           "question_type": "Perspective & Motive",
-          "enquiry_question": "Peres, whose ministry backed the secret Norway talks, signs the final document. Why had secrecy worked where public talks failed?",
-          "model_answer": "Public talks in Washington after Madrid were stuck because negotiators had to play to their home audiences and Israel still refused to talk to the PLO directly. In Norway, away from the media, Israeli and PLO representatives could test ideas without losing face, backed quietly by Peres's foreign ministry. The result was the Declaration of Principles, signed here by Peres for Israel and by Mahmoud Abbas for the PLO.",
+          "model_answer": "Public talks in Washington after Madrid were stuck because negotiators had to play to their home audiences and Israel still refused to talk to the PLO directly. In Norway, away from the media, Israeli and PLO representatives could test ideas without losing face, backed quietly by Peres's foreign ministry; the result was the Declaration of Principles, signed here by Peres for Israel and by Mahmoud Abbas for the PLO.",
           "provenance_clues": {
             "author": "A television news camera at the signing ceremony.",
             "audience": "A worldwide television audience.",
@@ -20525,9 +20523,11 @@ const cme_new = {
             "hinge_question": "Why could secret talks in Norway achieve what open talks in Washington could not?"
           },
           "teacher_notes": {
-            "source_context": "After Madrid, public Israeli–Palestinian talks in Washington stalled. In early 1993 Israeli academics, later joined by officials from Foreign Minister Shimon Peres's ministry, met PLO representatives secretly in Norway, hosted by Norwegian diplomats. Away from the media they drafted the Declaration of Principles: mutual recognition, and a five-year interim period of Palestinian self-government starting in Gaza and Jericho. Peres signed it for Israel and Mahmoud Abbas for the PLO. **Hinge Question:** Why could secret talks in Norway achieve what open talks in Washington could not?"
+            "source_context": "After Madrid, public Israeli–Palestinian talks in Washington stalled. In early 1993 Israeli academics, later joined by officials from Foreign Minister Shimon Peres's ministry, met PLO representatives secretly in Norway, hosted by Norwegian diplomats. Away from the media they drafted the Declaration of Principles: mutual recognition, and a five-year interim period of Palestinian self-government starting in Gaza and Jericho. Peres signed it for Israel and Mahmoud Abbas for the PLO. **Hinge Question:** Why could secret talks in Norway achieve what open talks in Washington could not?",
+            "hinge_question": "Why could secret talks in Norway achieve what open talks in Washington could not?"
           },
-          "image_alt": "Shimon Peres seated at a table signing a document while officials stand behind him"
+          "image_alt": "Shimon Peres seated at a table signing a document while officials stand behind him",
+          "question": "Peres, whose ministry backed the secret Norway talks, signs the final document. Why had secrecy worked where public talks failed?"
         },
         {
           "id": "cme_l12_source_c",
@@ -20540,13 +20540,11 @@ const cme_new = {
           "desc": "White House photograph of the Rabin–Arafat handshake.",
           "provenance": "White House Photographic Office / William J. Clinton Presidential Library, 13 September 1993 (US federal government work, public domain).",
           "citation": "Clinton Presidential Library / US National Archives.",
-          "hinge_question": "Was postponing Jerusalem, refugees and settlements a sensible way to start—or Oslo's fatal flaw?",
-          "source_context": "Days before the ceremony, Israel and the PLO exchanged letters of mutual recognition: the PLO recognised Israel's right to exist and renounced violence, and Israel recognised the PLO as the representative of the Palestinian people. The Declaration of Principles promised Israeli withdrawal from Gaza and Jericho and a Palestinian Authority, but postponed Jerusalem, refugees, settlements, security and borders to final-status talks within five years. **Hinge Question:** Was postponing Jerusalem, refugees and settlements a sensible way to start—or Oslo's fatal flaw?",
-          "context": "The Oslo I signing and handshake (13 September 1993) followed Israel–PLO mutual recognition but postponed final-status issues.",
+          "source_context": "On 13 September 1993, before 3,000 guests on the White House South Lawn in Washington, D.C., US President Bill Clinton presided over the formal signing of the Oslo I Declaration of Principles accompanied by Israeli Prime Minister Yitzhak Rabin and PLO Chairman Yasser Arafat.",
+          "context": "On 13 September 1993, before 3,000 guests on the White House South Lawn in Washington, D.C., US President Bill Clinton presided over the formal signing of the Oslo I Declaration of Principles accompanied by Israeli Prime Minister Yitzhak Rabin and PLO Chairman Yasser Arafat.",
           "question_badge": "Turning Point Insight",
           "question_type": "Turning Point Insight",
-          "enquiry_question": "Clinton spreads his arms behind Rabin and Arafat's handshake. What did this handshake promise, and what did it postpone?",
-          "model_answer": "The handshake showed mutual recognition between Israel and the PLO after decades as enemies, and promised Palestinian self-rule starting in Gaza and Jericho. But Oslo I postponed the hardest issues—Jerusalem, refugees, settlements, security and borders—for up to five years. The image captured real hope while hiding how much was still unresolved.",
+          "model_answer": "The handshake showed mutual recognition between Israel and the PLO after decades as enemies, and promised Palestinian self-rule starting in Gaza and Jericho. But Oslo I postponed the hardest issues—Jerusalem, refugees, settlements, security and borders—for up to five years; the image captured real hope while hiding how much was still unresolved.",
           "provenance_clues": {
             "author": "An official White House photographer.",
             "audience": "The American public and world media.",
@@ -20554,9 +20552,11 @@ const cme_new = {
             "hinge_question": "Was postponing Jerusalem, refugees and settlements a sensible way to start—or Oslo's fatal flaw?"
           },
           "teacher_notes": {
-            "source_context": "Days before the ceremony, Israel and the PLO exchanged letters of mutual recognition: the PLO recognised Israel's right to exist and renounced violence, and Israel recognised the PLO as the representative of the Palestinian people. The Declaration of Principles promised Israeli withdrawal from Gaza and Jericho and a Palestinian Authority, but postponed Jerusalem, refugees, settlements, security and borders to final-status talks within five years. **Hinge Question:** Was postponing Jerusalem, refugees and settlements a sensible way to start—or Oslo's fatal flaw?"
+            "source_context": "Days before the ceremony, Israel and the PLO exchanged letters of mutual recognition: the PLO recognised Israel's right to exist and renounced violence, and Israel recognised the PLO as the representative of the Palestinian people. The Declaration of Principles promised Israeli withdrawal from Gaza and Jericho and a Palestinian Authority, but postponed Jerusalem, refugees, settlements, security and borders to final-status talks within five years. **Hinge Question:** Was postponing Jerusalem, refugees and settlements a sensible way to start—or Oslo's fatal flaw?",
+            "hinge_question": "Was postponing Jerusalem, refugees and settlements a sensible way to start—or Oslo's fatal flaw?"
           },
-          "image_alt": "Yitzhak Rabin and Yasser Arafat shaking hands while Bill Clinton stands behind them with his arms spread wide"
+          "image_alt": "Yitzhak Rabin and Yasser Arafat shaking hands while Bill Clinton stands behind them with his arms spread wide",
+          "question": "Clinton spreads his arms behind Rabin and Arafat's handshake. What did this handshake promise, and what did it postpone?"
         },
         {
           "id": "cme_l12_source_d",
@@ -20569,13 +20569,11 @@ const cme_new = {
           "desc": "Official Oslo II redeployment map, paired with Rabin's 1995 Knesset defence of the agreement and Edward Said's 1993 critique of Oslo.",
           "provenance": "Map: Israeli–Palestinian Interim Agreement on the West Bank and the Gaza Strip, Map No. 1, September 1995. Texts: Knesset, 5 October 1995; London Review of Books, 21 October 1993.",
           "citation": "Israeli–Palestinian Interim Agreement (1995), Annex maps; Knesset Record; London Review of Books, Vol. 15 No. 20.",
-          "hinge_question": "Why could the same Oslo II map be seen as progress by Rabin and as fragmentation by Said?",
-          "source_context": "Signed in September 1995, Oslo II divided the West Bank into Area A (full Palestinian control of the main towns), Area B (Palestinian civil control with Israeli security control) and Area C (full Israeli control, including settlements, roads and most open land). Rabin presented it to the Knesset on 5 October 1995, where it was approved by 61 votes to 59. Edward Said had attacked the Oslo framework as early as October 1993, warning that settlements and their roads would break Palestinian areas apart. **Hinge Question:** Why could the same Oslo II map be seen as progress by Rabin and as fragmentation by Said?",
+          "source_context": "Signed in September 1995, Oslo II divided the West Bank into Area A (full Palestinian control of the main towns), Area B (Palestinian civil control with Israeli security control) and Area C (full Israeli control, including settlements, roads and most open land). Rabin presented it to the Knesset on 5 October 1995, where it was approved by 61 votes to 59. Edward Said had attacked the Oslo framework as early as October 1993, warning that settlements and their roads would break Palestinian areas apart.",
           "context": "The Oslo II map (September 1995) divided the West Bank into Areas A, B and C; Rabin defended it in the Knesset, while Edward Said had condemned the Oslo framework in 1993.",
           "question_badge": "Competing Perspectives",
           "question_type": "Competing Perspectives",
-          "enquiry_question": "Rabin wanted an entity 'less than a state'; Said saw settlements breaking Palestinian land apart. How does the map support each view?",
-          "model_answer": "For Rabin, the map showed controlled, step-by-step progress: Palestinians ran their own towns in Areas A and B while Israel kept security control and the settlements. For Said, the same pattern of scattered islands surrounded by Israeli-controlled Area C was exactly the fragmentation he had warned about in 1993. The map shows why Oslo II could be defended as realistic and attacked as unfair at the same time.",
+          "model_answer": "For Rabin, the map showed controlled, step-by-step progress: Palestinians ran their own towns in Areas A and B while Israel kept security control and the settlements. For Said, the same pattern of scattered islands surrounded by Israeli-controlled Area C was exactly the fragmentation he had warned about in 1993; the map shows why Oslo II could be defended as realistic and attacked as unfair at the same time.",
           "provenance_clues": {
             "author": "Israeli and Palestinian negotiators (map); Yitzhak Rabin; Edward Said.",
             "audience": "Negotiators and officials (map); Knesset members (Rabin); Western readers (Said).",
@@ -20583,7 +20581,8 @@ const cme_new = {
             "hinge_question": "Why could the same Oslo II map be seen as progress by Rabin and as fragmentation by Said?"
           },
           "teacher_notes": {
-            "source_context": "Signed in September 1995, Oslo II divided the West Bank into Area A (full Palestinian control of the main towns), Area B (Palestinian civil control with Israeli security control) and Area C (full Israeli control, including settlements, roads and most open land). Rabin presented it to the Knesset on 5 October 1995, where it was approved by 61 votes to 59. Edward Said had attacked the Oslo framework as early as October 1993, warning that settlements and their roads would break Palestinian areas apart. **Hinge Question:** Why could the same Oslo II map be seen as progress by Rabin and as fragmentation by Said?"
+            "source_context": "Signed in September 1995, Oslo II divided the West Bank into Area A (full Palestinian control of the main towns), Area B (Palestinian civil control with Israeli security control) and Area C (full Israeli control, including settlements, roads and most open land). Rabin presented it to the Knesset on 5 October 1995, where it was approved by 61 votes to 59. Edward Said had attacked the Oslo framework as early as October 1993, warning that settlements and their roads would break Palestinian areas apart. **Hinge Question:** Why could the same Oslo II map be seen as progress by Rabin and as fragmentation by Said?",
+            "hinge_question": "Why could the same Oslo II map be seen as progress by Rabin and as fragmentation by Said?"
           },
           "image_alt": "Official Oslo II map of the West Bank with many scattered yellow areas outlined in red, marking Areas A and B, surrounded by unshaded Area C",
           "perspective_pair": {
@@ -20606,7 +20605,8 @@ const cme_new = {
               "provenance": "Edward Said, 'The Morning After', London Review of Books, Vol. 15 No. 20, 21 October 1993.",
               "image": "/images/cme_edward_said_2002.jpg"
             }
-          }
+          },
+          "question": "Rabin wanted an entity 'less than a state'; Said saw settlements breaking Palestinian land apart. How does the map support each view?"
         },
         {
           "id": "cme_l12_source_e",
@@ -20619,13 +20619,11 @@ const cme_new = {
           "desc": "Photograph of Prime Minister Yitzhak Rabin addressing the 4 November 1995 peace rally in Tel Aviv.",
           "provenance": "Press photograph, Kings of Israel Square, Tel Aviv, 4 November 1995.",
           "citation": "Israeli press archive.",
-          "hinge_question": "How did violence by extremists on both sides undermine the Oslo peace process?",
-          "source_context": "By late 1995 the Oslo process faced violent opposition on both sides: the killing of 29 Palestinian worshippers in Hebron by settler Baruch Goldstein in February 1994, and a series of Hamas and Islamic Jihad suicide bombings in Israeli cities. Israeli right-wing protesters denounced Rabin as a traitor for giving up land. On 4 November 1995 a mass rally in Tel Aviv supported the peace process; as Rabin left, he was assassinated by Yigal Amir, a Jewish Israeli law student opposed to Oslo. **Hinge Question:** How did violence by extremists on both sides undermine the Oslo peace process?",
+          "source_context": "By late 1995 the Oslo process faced violent opposition on both sides: the killing of 29 Palestinian worshippers in Hebron by settler Baruch Goldstein in February 1994, and a series of Hamas and Islamic Jihad suicide bombings in Israeli cities. Israeli right-wing protesters denounced Rabin as a traitor for giving up land. On 4 November 1995 a mass rally in Tel Aviv supported the peace process; as Rabin left, he was assassinated by Yigal Amir, a Jewish Israeli law student opposed to Oslo.",
           "context": "Rabin was assassinated by Yigal Amir after addressing a peace rally in Tel Aviv on 4 November 1995.",
           "question_badge": "Human Impact",
           "question_type": "Human Impact",
-          "enquiry_question": "The podium sign reads 'Yes to peace, no to violence'. Why does this slogan make Rabin's murder that night so significant?",
-          "model_answer": "The rally was organised to show public support for Oslo after months of suicide bombings and a fierce campaign branding Rabin a traitor. Minutes after speaking under this slogan, Rabin was assassinated by Yigal Amir, an Israeli opponent of the peace process. His death removed the leader with the military credibility to persuade Israelis to compromise, and deepened divisions inside Israel.",
+          "model_answer": "The rally was organised to show public support for Oslo after months of suicide bombings and a fierce campaign branding Rabin a traitor. Minutes after speaking under this slogan, Rabin was assassinated by Yigal Amir, an Israeli opponent of the peace process; his death removed the leader with the military credibility to persuade Israelis to compromise, and deepened divisions inside Israel.",
           "provenance_clues": {
             "author": "A press photographer at the rally.",
             "audience": "Israeli newspaper readers.",
@@ -20633,9 +20631,11 @@ const cme_new = {
             "hinge_question": "How did violence by extremists on both sides undermine the Oslo peace process?"
           },
           "teacher_notes": {
-            "source_context": "By late 1995 the Oslo process faced violent opposition on both sides: the killing of 29 Palestinian worshippers in Hebron by settler Baruch Goldstein in February 1994, and a series of Hamas and Islamic Jihad suicide bombings in Israeli cities. Israeli right-wing protesters denounced Rabin as a traitor for giving up land. On 4 November 1995 a mass rally in Tel Aviv supported the peace process; as Rabin left, he was assassinated by Yigal Amir, a Jewish Israeli law student opposed to Oslo. **Hinge Question:** How did violence by extremists on both sides undermine the Oslo peace process?"
+            "source_context": "By late 1995 the Oslo process faced violent opposition on both sides: the killing of 29 Palestinian worshippers in Hebron by settler Baruch Goldstein in February 1994, and a series of Hamas and Islamic Jihad suicide bombings in Israeli cities. Israeli right-wing protesters denounced Rabin as a traitor for giving up land. On 4 November 1995 a mass rally in Tel Aviv supported the peace process; as Rabin left, he was assassinated by Yigal Amir, a Jewish Israeli law student opposed to Oslo. **Hinge Question:** How did violence by extremists on both sides undermine the Oslo peace process?",
+            "hinge_question": "How did violence by extremists on both sides undermine the Oslo peace process?"
           },
-          "image_alt": "Yitzhak Rabin speaking at a wooden podium at night; a sign on the podium reads in Hebrew Yes to peace, no to violence"
+          "image_alt": "Yitzhak Rabin speaking at a wooden podium at night; a sign on the podium reads in Hebrew Yes to peace, no to violence",
+          "question": "The podium sign reads 'Yes to peace, no to violence'. Why does this slogan make Rabin's murder that night so significant?"
         }
       ],
       "hook_text": "The sheer exhaustion of the Intifada forced both sides to the negotiating table in secret. In 1993, the world watched in awe as PLO Chairman Yasser Arafat and Israeli Prime Minister Yitzhak Rabin shook hands on the White House lawn, signing the Oslo Accords. It seemed peace was finally possible, but extremists on both sides were determined to destroy it.",

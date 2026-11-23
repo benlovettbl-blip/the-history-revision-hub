@@ -11,6 +11,7 @@ import { appStore } from './store.js';
 import { getArenaStandoffPair } from './arena_standoff_registry.js';
 import { getArenaCornersData } from './arena_corners_registry.js';
 import { generateQuestionId, recordQuestionResult } from '../storage.js';
+import { isStaffModeActive } from '../data/unit_resources_catalog.js';
 
 window.consolidateStations = window.consolidateStations || {};
 
@@ -241,8 +242,7 @@ export function renderConsolidateStationHTML(lesson) {
     '';
 
   const quickCount = Math.min(5, rawQuiz.length);
-  const isTeacherOn =
-    typeof document !== 'undefined' && document.body.classList.contains('teacher-mode-active');
+  const isTeacherOn = isStaffModeActive();
 
   let savedScoreBadge = '';
   try {
@@ -487,8 +487,7 @@ function renderStationClozeDrawer(state, bodyEl) {
     bodyEl.innerHTML = '';
     return;
   }
-  const isTeacherOn =
-    typeof document !== 'undefined' && document.body.classList.contains('teacher-mode-active');
+  const isTeacherOn = isStaffModeActive();
   const total = c.answers.length;
   const filledCount = c.slots.filter((s) => s !== null).length;
   const allFilled = filledCount === total;
@@ -663,8 +662,6 @@ function renderQuickQuizDrawer(lessonId) {
   const total = state.questions.length;
   const currentNum = state.currentIndex + 1;
   const letters = ['A', 'B', 'C', 'D'];
-  const isTeacherOn =
-    typeof document !== 'undefined' && document.body.classList.contains('teacher-mode-active');
 
   bodyEl.innerHTML = `
     <div style="max-width: 800px; margin: 0 auto;">
@@ -711,17 +708,6 @@ function renderQuickQuizDrawer(lessonId) {
           <button type="button" onclick="window.nextStationQuestion('${state.lessonId}')" style="background:#2563eb;color:#ffffff;border:none;padding:9px 18px;border-radius:8px;font-weight:700;font-size:0.88rem;cursor:pointer;">
             ${currentNum === total ? 'See Result' : 'Next'} <i class="fa-solid fa-arrow-right"></i>
           </button>
-        </div>
-      `
-          : ''
-      }
-
-      ${
-        isTeacherOn
-          ? `
-        <div style="margin-top:12px;background:#f5f3ff;border:1px solid #c4b5fd;border-left:4px solid #7c3aed;border-radius:8px;padding:10px 14px;font-size:0.82rem;color:#1e293b;">
-          <strong style="color:#5b21b6;"><i class="fa-solid fa-chalkboard-user"></i> Teacher Answer Key:</strong>
-          ${state.questions.map((it, i) => `${i + 1}. <strong>${letters[it.answer] || ''}: ${it.a}</strong>`).join(' &bull; ')}
         </div>
       `
           : ''

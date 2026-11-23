@@ -21,6 +21,7 @@ import {
   getNonDuplicateExtraMockQuestions,
   getCanonicalGcsePaperCode,
   getRecommendedExamMins,
+  renderInlineTaskTimerBarHTML,
 } from './lesson_exam_practice_panel.js';
 import { getLessonMockQuestions } from './mock_exam_bank_data.js';
 import { buildComprehensiveVocabDict, highlightGlossaryInProse } from './disciplinary_glossary.js';
@@ -3678,26 +3679,58 @@ export function renderSourceUtilityTaskHTML(task, lessonIndex, tIdx, unitId, les
     `;
   };
 
-  return `
-    <div class="task-box source-utility-interactive" id="${taskId}" data-task-id="${taskId}" style="margin-bottom: 25px; background: #ffffff; padding: 20px; border-radius: 10px; border: 2px solid #1e3a8a; box-shadow: 0 4px 14px rgba(30, 58, 138, 0.08);">
-      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; border-bottom: 1.5px solid #dbeafe; padding-bottom: 10px; flex-wrap: wrap; gap: 8px;">
-        <h4 style="margin: 0; color: #1e3a8a; font-size: 1.15rem; display: flex; align-items: center; gap: 8px;">
-          <i class="fa-solid fa-scale-balanced" style="color: #2563eb;"></i> ${qNumPrefix}${title}
-        </h4>
-        <div style="display: flex; align-items: center; gap: 8px;">
-          <span style="background: #1e3a8a; color: #ffffff; font-size: 0.75rem; font-weight: 700; padding: 3px 8px; border-radius: 4px; text-transform: uppercase; letter-spacing: 0.5px;">${isKs3TaskUnit ? 'Source Enquiry • Content &amp; Provenance' : 'Dual-Source Utility [8 Marks]'}</span>
-          <button type="button" class="btn btn-pedagogy-primary btn-launch-task4" data-action="launch-task4-workspace" data-task-id="${taskId}" style="background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%); color: #ffffff; border: none; padding: 6px 14px; border-radius: 6px; font-weight: 700; font-size: 0.84rem; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; box-shadow: 0 2px 6px rgba(30, 58, 138, 0.25); transition: all 0.2s;" title="Open distraction-free fullscreen writing workspace with 15m timer">
-            <i class="fa-solid fa-rocket"></i> ${isKs3TaskUnit ? 'Fullscreen Workspace' : 'Launch Task 4'}
-          </button>
+  const suUid = String(taskId).replace(/[^a-zA-Z0-9_-]/g, '_');
+  const suTargetMins = 12;
+  const buildProjSourcePane = (srcObj, letter) => {
+    const sTitle = srcObj.title || `Source ${letter}`;
+    const sProv = srcObj.shelfmark || srcObj.provenance || '';
+    const sText = srcObj.text || srcObj.quote || '';
+    const rawImg = srcObj.src || srcObj.image || '';
+    const imgSrc = rawImg ? getAssetUrl(rawImg) : '';
+    return `
+      <div class="proj-pane proj-pane-source">
+        <div class="proj-pane-header">
+          <span class="proj-badge proj-badge-source">Source ${letter}</span>
+          <span class="proj-prov">${sTitle}${sProv && sProv !== sTitle ? ` &bull; ${sProv}` : ''}</span>
+        </div>
+        <div class="proj-pane-body${imgSrc ? ' proj-pane-media' : ''}">
+          ${imgSrc ? `<img src="${imgSrc}" alt="${sTitle}" />` : ''}
+          <div>${sText ? `&ldquo;${sText.replace(/^“|”$/g, '')}&rdquo;` : ''}</div>
         </div>
       </div>
+    `;
+  };
+  registerUnifiedExamQuestion(suUid, {
+    id: suUid,
+    qCode: `Task ${tIdx + 1}`,
+    type: isKs3TaskUnit ? 'Source Enquiry' : 'Source Utility',
+    marks: 8,
+    marksDisplay: isKs3TaskUnit ? 'Source Enquiry' : '8 Marks',
+    targetMins: suTargetMins,
+    inWorkbook: true,
+    mockTitle: 'In Printed Workbook',
+    questionText: prompt,
+    stimulus: [],
+    sourceExtract: `<div class="proj-pair-grid">${buildProjSourcePane(sourceA, 'A')}${buildProjSourcePane(sourceB, 'B')}</div>`,
+    projectorFooter: isKs3TaskUnit
+      ? 'Key Stage 3 History &bull; Primary Source Enquiry &bull; The History Revision Hub'
+      : `Pearson Edexcel GCSE History &bull; ${getCanonicalGcsePaperCode(unitId)} &bull; The History Revision Hub`,
+  });
 
-      <div style="font-size: 1.02rem; font-weight: 700; color: #0f172a; margin-bottom: 14px; line-height: 1.5; padding: 10px 14px; background: #eff6ff; border-left: 4px solid #1e3a8a; border-radius: 0 6px 6px 0;">
-        <strong>Enquiry Question:</strong> ${prompt}
-      </div>
+  const suHasOuterStripStem = Boolean(task.question || task.stem || task.text || task.prompt);
+
+  return `
+    <div class="task-box source-utility-interactive" id="${taskId}" data-task-id="${taskId}" style="margin-bottom: 4px; background: #ffffff; padding: 4px 0 0 0;">
+      ${
+        !suHasOuterStripStem
+          ? `<div style="font-size: 0.98rem; font-weight: 700; color: #0f172a; margin-bottom: 12px; line-height: 1.5; padding: 10px 14px; background: #eff6ff; border-left: 4px solid #1e3a8a; border-radius: 0 6px 6px 0;">
+              <strong>Enquiry Question:</strong> ${prompt}
+            </div>`
+          : ''
+      }
 
       <!-- Side-by-Side Primary Sources -->
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 16px; margin-bottom: 16px;">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 16px; margin-bottom: 14px;">
         ${renderSourceCard(sourceA, 'A', '#93c5fd', '#f8fafc', '#1e40af')}
         ${renderSourceCard(sourceB, 'B', '#cbd5e1', '#ffffff', '#334155')}
       </div>
@@ -3711,12 +3744,11 @@ export function renderSourceUtilityTaskHTML(task, lessonIndex, tIdx, unitId, les
           (Array.isArray(lessonObj?.vocab)
             ? lessonObj.vocab.map((v) => (typeof v === 'object' ? v.term : v)).filter(Boolean)
             : []);
-        const suUid = String(taskId).replace(/[^a-zA-Z0-9_-]/g, '_');
         const wbBtnHtml =
           rawWords.length > 0
             ? `<button type="button" class="btn btn-pedagogy btn-pedagogy-sm" data-action="toggle-element" data-target-id="su-wb-${suUid}" style="background: #f0fdfa; color: #0f766e; border: 1px solid #99f6e4; font-weight: 700; display: inline-flex; align-items: center; gap: 6px;"><i class="fa-solid fa-tags" style="color: #0d9488;"></i> Word Bank <i class="fa-solid fa-chevron-down wb-dd-chevron" style="font-size: 0.68rem; opacity: 0.75;"></i></button>`
             : '';
-        const scafBtnHtml = `<button type="button" class="btn btn-pedagogy btn-pedagogy-sm" data-action="toggle-element" data-target-id="su-scaf-${suUid}" style="background: #f1f5f9; color: #1e3a8a; border: 1px solid #cbd5e1; font-weight: 600; display: inline-flex; align-items: center; gap: 6px;"><i class="fa-solid fa-wand-magic-sparkles" style="color: #2563eb;"></i> Sentence Starters &amp; Matrix <i class="fa-solid fa-chevron-down wb-dd-chevron" style="font-size: 0.68rem; opacity: 0.75;"></i></button>`;
+        const scafBtnHtml = `<button type="button" class="btn btn-pedagogy btn-pedagogy-sm" data-action="toggle-element" data-target-id="su-scaf-${suUid}" style="background: #f1f5f9; color: #1e3a8a; border: 1px solid #cbd5e1; font-weight: 600; display: inline-flex; align-items: center; gap: 6px;"><i class="fa-solid fa-wand-magic-sparkles" style="color: #2563eb;"></i> Starters &amp; Plan <i class="fa-solid fa-chevron-down wb-dd-chevron" style="font-size: 0.68rem; opacity: 0.75;"></i></button>`;
         const wbDrawerHtml =
           rawWords.length > 0
             ? `<div id="su-wb-${suUid}" class="scaffold-box" style="display: none; background: #f8fafc; border: 1.5px solid #99f6e4; border-radius: 8px; padding: 11px 14px; margin-top: 8px;">
@@ -3751,27 +3783,42 @@ export function renderSourceUtilityTaskHTML(task, lessonIndex, tIdx, unitId, les
                 .join('')}
             </div>
             <div style="display: flex; flex-wrap: wrap; gap: 6px; align-items: center;">
-              <span style="font-size: 0.78rem; font-weight: 700; color: #1e40af; text-transform: uppercase;">Analytical Connectives (Click to Insert):</span>
+              <span style="font-size: 0.78rem; font-weight: 700; color: #1e40af; text-transform: uppercase;">Sentence Starters &amp; Connectives:</span>
               ${connectives
                 .map(
                   (c) => `
-                <button type="button" class="connective-chip" data-connective="${c.replace(/"/g, '&quot;')}" style="background: #ffffff; border: 1px solid #bfdbfe; color: #1e40af; padding: 3px 10px; border-radius: 12px; font-size: 0.8rem; font-weight: 600; cursor: pointer; transition: all 0.15s ease;" title="Click to insert at cursor">${c}</button>
+                <span class="wb-interactive-chip" data-action="toggle-wb-chip" role="button" tabindex="0" title="Tap to cross off once used" style="background: #ffffff; border: 1px solid #bfdbfe; color: #1e40af; padding: 3px 10px; border-radius: 12px; font-size: 0.8rem; font-weight: 600;">${c}</span>
               `,
                 )
                 .join('')}
             </div>
           </div>`;
         const modelBtnHtml = modelAnswer
-          ? `<button type="button" class="btn btn-pedagogy btn-pedagogy-sm btn-pedagogy-model" data-action="toggle-element" data-target-id="su-model-${suUid}" title="Reveal Level 4 Target Exemplar Model Answer" style="margin-left: auto; background: #f0fdf4; color: #166534; border: 1px solid #86efac; font-weight: 700; display: inline-flex; align-items: center; gap: 6px;"><i class="fa-solid fa-eye" style="color: #16a34a;"></i> Reveal Model Answer</button>`
+          ? `<button type="button" class="btn btn-pedagogy btn-pedagogy-sm btn-pedagogy-model" data-action="toggle-element" data-target-id="su-model-${suUid}" title="Reveal Model Answer" style="background: #f0fdf4; color: #166534; border: 1.5px solid #86efac; font-weight: 700; display: inline-flex; align-items: center; gap: 6px;"><i class="fa-solid fa-eye" style="color: #16a34a;"></i> Reveal Answer</button>`
           : '';
+        const timerProjBtnsHtml = `
+          <button type="button" onclick="window.toggleExamCardTimer('${suUid}', ${suTargetMins})" style="background: #eff6ff; color: #1d4ed8; border: 1.5px solid #bfdbfe; padding: 5px 10px; border-radius: 7px; font-weight: 700; font-size: 0.8rem; cursor: pointer; display: inline-flex; align-items: center; gap: 5px;">
+            <i class="fa-regular fa-clock" style="color: #2563eb;"></i> Timer (${suTargetMins}m)
+          </button>
+          <button type="button" onclick="window.openExamCardProjector('${suUid}')" style="background: #f8fafc; color: #0f172a; border: 1.5px solid #cbd5e1; padding: 5px 10px; border-radius: 7px; font-weight: 700; font-size: 0.8rem; cursor: pointer; display: inline-flex; align-items: center; gap: 5px;">
+            <i class="fa-solid fa-expand" style="color: #475569;"></i> Projector
+          </button>
+        `;
         const modelDrawerHtml = modelAnswer
           ? `<div id="su-model-${suUid}" class="scaffold-box model-box" style="display: none; margin-top: 8px; padding: 12px 15px; background: #ffffff; border-left: 3px solid #2563eb; border-radius: 6px; font-size: 0.92rem; color: #1e293b; line-height: 1.6; border: 1px solid #bfdbfe;">${modelAnswer}</div>`
           : '';
-        return `<div class="no-print" style="margin-bottom: 10px;"><div class="wb-unified-control-bar" style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px;">${wbBtnHtml}${scafBtnHtml}${modelBtnHtml}</div>${wbDrawerHtml}${scafDrawerHtml}${modelDrawerHtml}</div>`;
+        return `
+          <div class="no-print">
+            <div class="wb-unified-control-bar" style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px;">
+              <div style="display: flex; align-items: center; flex-wrap: wrap; gap: 7px;">${wbBtnHtml}${scafBtnHtml}</div>
+              <div style="display: flex; align-items: center; flex-wrap: wrap; gap: 7px; margin-left: auto;">${modelBtnHtml}${timerProjBtnsHtml}</div>
+            </div>
+            ${wbDrawerHtml}
+            ${scafDrawerHtml}
+            ${renderInlineTaskTimerBarHTML(suUid, suTargetMins)}
+            ${modelDrawerHtml}
+          </div>`;
       })()}
-
-      <!-- Pupil Writing Workspace Area -->
-      <textarea class="interactive-textarea" style="width: 100%; box-sizing: border-box; min-height: 92px; padding: 10px 12px; border: 1.5px solid #bfdbfe; border-radius: 6px; font-size: 0.92rem; font-family: inherit; resize: vertical; line-height: 1.5;" placeholder="Evaluate the utility of both sources: analyse specific content, evaluate author provenance and purpose, and reach a reasoned comparative judgement..."></textarea>
     </div>
   `;
 }
@@ -3955,23 +4002,74 @@ export function renderHistoricalInterpretationsTaskHTML(
     `;
   };
 
-  return `
-    <div class="task-box historical-interpretations-interactive" id="${taskId}" data-task-id="${taskId}" style="margin-bottom: 25px; background: #ffffff; padding: 20px; border-radius: 10px; border: 2px solid #7c3aed; box-shadow: 0 4px 14px rgba(124, 58, 237, 0.08);">
-      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; border-bottom: 1.5px solid #ede9fe; padding-bottom: 10px; flex-wrap: wrap; gap: 8px;">
-        <h4 style="margin: 0; color: #7c3aed; font-size: 1.15rem; display: flex; align-items: center; gap: 8px;">
-          <i class="fa-solid fa-comments" style="color: #8b5cf6;"></i> ${qNumPrefix}${title}
-        </h4>
-        <div style="display: flex; align-items: center; gap: 8px;">
-          <span style="background: #7c3aed; color: #ffffff; font-size: 0.75rem; font-weight: 700; padding: 3px 8px; border-radius: 4px; text-transform: uppercase; letter-spacing: 0.5px;">${isKs3TaskUnit ? 'Historical Interpretations • 2 Paragraphs' : 'Historiographical Debate [16+4 Marks]'}</span>
-          <button type="button" class="btn btn-pedagogy-primary btn-launch-task4" data-action="launch-task4-workspace" data-task-id="${taskId}" style="background: linear-gradient(135deg, #7c3aed 0%, #6d28d9 100%); color: #ffffff; border: none; padding: 6px 14px; border-radius: 6px; font-weight: 700; font-size: 0.84rem; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; box-shadow: 0 2px 6px rgba(124, 58, 237, 0.25); transition: all 0.2s;" title="Open distraction-free fullscreen writing workspace with 15m timer">
-            <i class="fa-solid fa-rocket"></i> ${isKs3TaskUnit ? 'Fullscreen Workspace' : 'Launch Task 4'}
-          </button>
+  const hiUid = String(taskId).replace(/[^a-zA-Z0-9_-]/g, '_');
+  const hiTargetMins = 15;
+  const extractInterpStr = (intObj) =>
+    typeof intObj === 'string'
+      ? intObj
+      : intObj?.extract || intObj?.text || intObj?.quote || intObj?.content || intObj?.interpretation || intObj?.body || intObj?.statement || intObj?.excerpt || '';
+  const buildProjInterpPane = (intObj, num) => {
+    const iAuthor = intObj?.author || intObj?.provenance || intObj?.attribution || '';
+    const iWork = intObj?.work || intObj?.source || intObj?.title_of_work || '';
+    const iCit = [iAuthor, iWork].filter(Boolean).join(' • ') || `Interpretation ${num}`;
+    const iTxt = extractInterpStr(intObj);
+    return `
+      <div class="proj-pane proj-pane-interp">
+        <div class="proj-pane-header">
+          <span class="proj-badge proj-badge-interp">Interpretation ${num}</span>
+          <span class="proj-prov">${iCit}</span>
         </div>
+        <div class="proj-pane-body">&ldquo;${String(iTxt).replace(/^“|”$/g, '')}&rdquo;</div>
       </div>
+    `;
+  };
+  const buildProjMatchedSrcPane = (srcObj, lbl) => {
+    if (!srcObj) return '';
+    const sAuthor = srcObj?.author || srcObj?.provenance || srcObj?.attribution || srcObj?.title || lbl;
+    const sTxt = extractInterpStr(srcObj);
+    return `
+      <div class="proj-pane proj-pane-source">
+        <div class="proj-pane-header">
+          <span class="proj-badge proj-badge-source">${lbl}</span>
+          <span class="proj-prov">${sAuthor}</span>
+        </div>
+        <div class="proj-pane-body">&ldquo;${String(sTxt).replace(/^“|”$/g, '')}&rdquo;</div>
+      </div>
+    `;
+  };
+  const hiProjExtract =
+    sourceB || sourceC
+      ? `<div class="proj-quad-matrix"><div class="proj-quad-top">${buildProjInterpPane(interp1, 1)}${buildProjInterpPane(interp2, 2)}</div><div class="proj-quad-seam"><span>Matched Primary Evidence (Sources B &amp; C)</span><button type="button" onclick="window.toggleProjectorQuadSources(this)" style="background:#ffffff;border:1px solid #93c5fd;color:#1e40af;border-radius:5px;padding:2px 8px;font-size:0.75rem;font-weight:700;cursor:pointer;">Hide Sources B &amp; C ▴</button></div><div class="proj-quad-bottom">${buildProjMatchedSrcPane(sourceB, 'Source B')}${buildProjMatchedSrcPane(sourceC, 'Source C')}</div></div>`
+      : `<div class="proj-pair-grid">${buildProjInterpPane(interp1, 1)}${buildProjInterpPane(interp2, 2)}</div>`;
 
-      <div style="font-size: 1.02rem; font-weight: 700; color: #0f172a; margin-bottom: 14px; line-height: 1.5; padding: 10px 14px; background: #f5f3ff; border-left: 4px solid #7c3aed; border-radius: 0 6px 6px 0;">
-        <strong>Debate Prompt:</strong> ${prompt}
-      </div>
+  registerUnifiedExamQuestion(hiUid, {
+    id: hiUid,
+    qCode: `Task ${tIdx + 1}`,
+    type: isKs3TaskUnit ? 'Historical Interpretations' : 'Historiographical Debate',
+    marks: 16,
+    marksDisplay: isKs3TaskUnit ? 'Historical Interpretations' : '16 Marks + 4 SPaG',
+    targetMins: hiTargetMins,
+    inWorkbook: true,
+    mockTitle: 'In Printed Workbook',
+    questionText: prompt,
+    stimulus: [],
+    sourceExtract: hiProjExtract,
+    projectorFooter: isKs3TaskUnit
+      ? 'Key Stage 3 History &bull; Historical Interpretations &bull; The History Revision Hub'
+      : `Pearson Edexcel GCSE History &bull; ${getCanonicalGcsePaperCode(unitId)} &bull; The History Revision Hub`,
+  });
+
+  const hiHasOuterStripStem = Boolean(task.question || task.stem || task.text || task.prompt);
+
+  return `
+    <div class="task-box historical-interpretations-interactive" id="${taskId}" data-task-id="${taskId}" style="margin-bottom: 4px; background: #ffffff; padding: 4px 0 0 0;">
+      ${
+        !hiHasOuterStripStem
+          ? `<div style="font-size: 0.98rem; font-weight: 700; color: #0f172a; margin-bottom: 12px; line-height: 1.5; padding: 10px 14px; background: #f5f3ff; border-left: 4px solid #7c3aed; border-radius: 0 6px 6px 0;">
+              <strong>Debate Prompt:</strong> ${prompt}
+            </div>`
+          : ''
+      }
 
       <!-- Disciplinary Technique Guide -->
       <div style="background: #f0fdf4; border: 1.5px solid #86efac; border-left: 4px solid #16a34a; border-radius: 6px; padding: 12px 14px; margin-bottom: 16px;">
@@ -4021,7 +4119,7 @@ export function renderHistoricalInterpretationsTaskHTML(
     }
 
       <!-- Side-by-Side Historical Interpretations -->
-      <div style="margin-bottom: 16px;">
+      <div style="margin-bottom: 14px;">
         <div style="font-weight: 700; font-size: 0.85rem; color: #6d28d9; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px; display: flex; align-items: center; gap: 6px;">
           <i class="fa-solid fa-graduation-cap"></i> Secondary Historical Interpretations &bull; Study Interpretation 1 &amp; Interpretation 2
         </div>
@@ -4040,12 +4138,11 @@ export function renderHistoricalInterpretationsTaskHTML(
           (Array.isArray(lessonObj?.vocab)
             ? lessonObj.vocab.map((v) => (typeof v === 'object' ? v.term : v)).filter(Boolean)
             : []);
-        const hiUid = String(taskId).replace(/[^a-zA-Z0-9_-]/g, '_');
         const wbBtnHtml =
           rawWords.length > 0
             ? `<button type="button" class="btn btn-pedagogy btn-pedagogy-sm" data-action="toggle-element" data-target-id="hi-wb-${hiUid}" style="background: #f0fdfa; color: #0f766e; border: 1px solid #99f6e4; font-weight: 700; display: inline-flex; align-items: center; gap: 6px;"><i class="fa-solid fa-tags" style="color: #0d9488;"></i> Word Bank <i class="fa-solid fa-chevron-down wb-dd-chevron" style="font-size: 0.68rem; opacity: 0.75;"></i></button>`
             : '';
-        const scafBtnHtml = `<button type="button" class="btn btn-pedagogy btn-pedagogy-sm" data-action="toggle-element" data-target-id="hi-scaf-${hiUid}" style="background: #f1f5f9; color: #1e3a8a; border: 1px solid #cbd5e1; font-weight: 600; display: inline-flex; align-items: center; gap: 6px;"><i class="fa-solid fa-wand-magic-sparkles" style="color: #2563eb;"></i> Sentence Starters &amp; Matrix <i class="fa-solid fa-chevron-down wb-dd-chevron" style="font-size: 0.68rem; opacity: 0.75;"></i></button>`;
+        const scafBtnHtml = `<button type="button" class="btn btn-pedagogy btn-pedagogy-sm" data-action="toggle-element" data-target-id="hi-scaf-${hiUid}" style="background: #f1f5f9; color: #1e3a8a; border: 1px solid #cbd5e1; font-weight: 600; display: inline-flex; align-items: center; gap: 6px;"><i class="fa-solid fa-wand-magic-sparkles" style="color: #2563eb;"></i> Starters &amp; Plan <i class="fa-solid fa-chevron-down wb-dd-chevron" style="font-size: 0.68rem; opacity: 0.75;"></i></button>`;
         const wbDrawerHtml =
           rawWords.length > 0
             ? `<div id="hi-wb-${hiUid}" class="scaffold-box" style="display: none; background: #f8fafc; border: 1.5px solid #99f6e4; border-radius: 8px; padding: 11px 14px; margin-top: 8px;">
@@ -4080,27 +4177,42 @@ export function renderHistoricalInterpretationsTaskHTML(
                 .join('')}
             </div>
             <div style="display: flex; flex-wrap: wrap; gap: 6px; align-items: center;">
-              <span style="font-size: 0.78rem; font-weight: 700; color: #6d28d9; text-transform: uppercase;">Historiographical Connectives (Click to Insert):</span>
+              <span style="font-size: 0.78rem; font-weight: 700; color: #6d28d9; text-transform: uppercase;">Sentence Starters &amp; Connectives:</span>
               ${connectives
                 .map(
                   (c) => `
-                <button type="button" class="connective-chip" data-connective="${c.replace(/"/g, '&quot;')}" style="background: #ffffff; border: 1px solid #ddd6fe; color: #6d28d9; padding: 3px 10px; border-radius: 12px; font-size: 0.8rem; font-weight: 600; cursor: pointer; transition: all 0.15s ease;" title="Click to insert at cursor">${c}</button>
+                <span class="wb-interactive-chip" data-action="toggle-wb-chip" role="button" tabindex="0" title="Tap to cross off once used" style="background: #ffffff; border: 1px solid #ddd6fe; color: #6d28d9; padding: 3px 10px; border-radius: 12px; font-size: 0.8rem; font-weight: 600;">${c}</span>
               `,
                 )
                 .join('')}
             </div>
           </div>`;
         const modelBtnHtml = modelAnswer
-          ? `<button type="button" class="btn btn-pedagogy btn-pedagogy-sm btn-pedagogy-model" data-action="toggle-element" data-target-id="hi-model-${hiUid}" title="Reveal Level 4 Target Exemplar Model Answer" style="margin-left: auto; background: #f0fdf4; color: #166534; border: 1px solid #86efac; font-weight: 700; display: inline-flex; align-items: center; gap: 6px;"><i class="fa-solid fa-eye" style="color: #16a34a;"></i> Reveal Model Answer</button>`
+          ? `<button type="button" class="btn btn-pedagogy btn-pedagogy-sm btn-pedagogy-model" data-action="toggle-element" data-target-id="hi-model-${hiUid}" title="Reveal Model Answer" style="background: #f0fdf4; color: #166534; border: 1.5px solid #86efac; font-weight: 700; display: inline-flex; align-items: center; gap: 6px;"><i class="fa-solid fa-eye" style="color: #16a34a;"></i> Reveal Answer</button>`
           : '';
+        const timerProjBtnsHtml = `
+          <button type="button" onclick="window.toggleExamCardTimer('${hiUid}', ${hiTargetMins})" style="background: #eff6ff; color: #1d4ed8; border: 1.5px solid #bfdbfe; padding: 5px 10px; border-radius: 7px; font-weight: 700; font-size: 0.8rem; cursor: pointer; display: inline-flex; align-items: center; gap: 5px;">
+            <i class="fa-regular fa-clock" style="color: #2563eb;"></i> Timer (${hiTargetMins}m)
+          </button>
+          <button type="button" onclick="window.openExamCardProjector('${hiUid}')" style="background: #f8fafc; color: #0f172a; border: 1.5px solid #cbd5e1; padding: 5px 10px; border-radius: 7px; font-weight: 700; font-size: 0.8rem; cursor: pointer; display: inline-flex; align-items: center; gap: 5px;">
+            <i class="fa-solid fa-expand" style="color: #475569;"></i> Projector
+          </button>
+        `;
         const modelDrawerHtml = modelAnswer
           ? `<div id="hi-model-${hiUid}" class="scaffold-box model-box" style="display: none; margin-top: 8px; padding: 12px 15px; background: #ffffff; border-left: 3px solid #7c3aed; border-radius: 6px; font-size: 0.92rem; color: #1e293b; line-height: 1.6; border: 1px solid #ddd6fe;">${modelAnswer}</div>`
           : '';
-        return `<div class="no-print" style="margin-bottom: 10px;"><div class="wb-unified-control-bar" style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px;">${wbBtnHtml}${scafBtnHtml}${modelBtnHtml}</div>${wbDrawerHtml}${scafDrawerHtml}${modelDrawerHtml}</div>`;
+        return `
+          <div class="no-print">
+            <div class="wb-unified-control-bar" style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px;">
+              <div style="display: flex; align-items: center; flex-wrap: wrap; gap: 7px;">${wbBtnHtml}${scafBtnHtml}</div>
+              <div style="display: flex; align-items: center; flex-wrap: wrap; gap: 7px; margin-left: auto;">${modelBtnHtml}${timerProjBtnsHtml}</div>
+            </div>
+            ${wbDrawerHtml}
+            ${scafDrawerHtml}
+            ${renderInlineTaskTimerBarHTML(hiUid, hiTargetMins)}
+            ${modelDrawerHtml}
+          </div>`;
       })()}
-
-      <!-- Pupil Writing Workspace Area -->
-      <textarea class="interactive-textarea" style="width: 100%; box-sizing: border-box; min-height: 92px; padding: 10px 12px; border: 1.5px solid #ddd6fe; border-radius: 6px; font-size: 0.92rem; font-family: inherit; resize: vertical; line-height: 1.5;" placeholder="Evaluate both interpretations: analyse the arguments of Interpretation 1, contrast with Interpretation 2, and weigh against specific historical knowledge to reach your sustained verdict..."></textarea>
     </div>
   `;
 }
@@ -4192,7 +4304,7 @@ export function renderBecauseButSoTaskHTML(task, lessonIndex, tIdx, unitId) {
       : ''
     }
           </div>
-          <textarea class="student-answer-input bbs-input" style="width: 100%; box-sizing: border-box; min-height: 60px; padding: 10px; border: 1px solid #86efac; border-radius: 6px; font-size: 0.95rem; font-family: inherit; resize: vertical; line-height: 1.45; background: #ffffff;" placeholder="${becausePlaceholder}"></textarea>
+          <div style="font-size: 0.88rem; color: #166534; font-style: italic; padding: 8px 10px; background: #ffffff; border: 1px dashed #86efac; border-radius: 6px;">${becausePlaceholder}</div>
           ${becauseModel
       ? `
             <div class="bbs-model-box" style="display: none; margin-top: 10px; padding: 12px 14px; background: #ffffff; border-left: 3.5px solid #16a34a; border-radius: 4px; font-size: 0.92rem; color: #14532d; line-height: 1.5; border: 1px solid #bbf7d0;">
@@ -4219,7 +4331,7 @@ export function renderBecauseButSoTaskHTML(task, lessonIndex, tIdx, unitId) {
       : ''
     }
           </div>
-          <textarea class="student-answer-input bbs-input" style="width: 100%; box-sizing: border-box; min-height: 60px; padding: 10px; border: 1px solid #fde68a; border-radius: 6px; font-size: 0.95rem; font-family: inherit; resize: vertical; line-height: 1.45; background: #ffffff;" placeholder="${butPlaceholder}"></textarea>
+          <div style="font-size: 0.88rem; color: #92400e; font-style: italic; padding: 8px 10px; background: #ffffff; border: 1px dashed #fde68a; border-radius: 6px;">${butPlaceholder}</div>
           ${butModel
       ? `
             <div class="bbs-model-box" style="display: none; margin-top: 10px; padding: 12px 14px; background: #ffffff; border-left: 3.5px solid #d97706; border-radius: 4px; font-size: 0.92rem; color: #78350f; line-height: 1.5; border: 1px solid #fef3c7;">
@@ -4246,7 +4358,7 @@ export function renderBecauseButSoTaskHTML(task, lessonIndex, tIdx, unitId) {
       : ''
     }
           </div>
-          <textarea class="student-answer-input bbs-input" style="width: 100%; box-sizing: border-box; min-height: 60px; padding: 10px; border: 1px solid #bfdbfe; border-radius: 6px; font-size: 0.95rem; font-family: inherit; resize: vertical; line-height: 1.45; background: #ffffff;" placeholder="${soPlaceholder}"></textarea>
+          <div style="font-size: 0.88rem; color: #1e40af; font-style: italic; padding: 8px 10px; background: #ffffff; border: 1px dashed #bfdbfe; border-radius: 6px;">${soPlaceholder}</div>
           ${soModel
       ? `
             <div class="bbs-model-box" style="display: none; margin-top: 10px; padding: 12px 14px; background: #ffffff; border-left: 3.5px solid #2563eb; border-radius: 4px; font-size: 0.92rem; color: #1e3a8a; line-height: 1.5; border: 1px solid #dbeafe;">
@@ -6267,115 +6379,9 @@ window.syncWhiteboardButtons = function (isActive) {
   }
 };
 
-window.applyTeacherModeToLessonDOM = function (isActive) {
-  if (typeof document === 'undefined') return;
-  const lessonRoot = document.querySelector('.lesson-content') || document;
-
-  // 1. Do Now Starter Answers
-  const doNowPanel = lessonRoot.querySelector('.donow-panel-content');
-  if (doNowPanel) {
-    doNowPanel.querySelectorAll('.answer').forEach((ans) => {
-      ans.style.display = isActive ? 'block' : 'none';
-      ans.classList.toggle('revealed', isActive);
-      const card = ans.closest('.do-now-card');
-      if (card) card.classList.toggle('revealed', isActive);
-    });
-    const revealAllBtn = document.querySelector('[data-action="toggle-all-answers"]');
-    if (revealAllBtn) {
-      revealAllBtn.innerHTML = isActive
-        ? '<i class="fa-solid fa-eye-slash"></i> Hide All'
-        : '<i class="fa-solid fa-eye"></i> Reveal All';
-    }
-  }
-
-  // 2. Primary Source Drawers & Enquiry Model Answers
-  lessonRoot.querySelectorAll('details.source-enquiry-reveal').forEach((det) => {
-    det.open = Boolean(isActive);
-  });
-  if (isActive) {
-    lessonRoot.querySelectorAll('details.cme-source-drawer').forEach((det) => {
-      det.open = true;
-    });
-  }
-  lessonRoot.querySelectorAll('.archival-discussion-model-panel').forEach((panel) => {
-    panel.style.display = isActive ? 'block' : 'none';
-  });
-
-  // 3. Digital Workbook / Historian Writing Challenges & Model Answers
-  lessonRoot.querySelectorAll('details.wb-question-strip, details.model-paragraph-reveal, details.two-features-model').forEach((det) => {
-    det.open = Boolean(isActive);
-  });
-  lessonRoot.querySelectorAll('.wb-unified-station .model-box').forEach((box) => {
-    box.style.display = isActive ? 'block' : 'none';
-    box.classList.toggle('revealed', Boolean(isActive));
-  });
-
-  // 4. Check & Consolidate Station Quiz Teacher Crib & Plenary Button
-  document.querySelectorAll('.teacher-only-plenary-btn').forEach((btn) => {
-    btn.style.display = isActive ? 'inline-flex' : 'none';
-  });
-  if (typeof window.refreshConsolidateTeacherMode === 'function') {
-    window.refreshConsolidateTeacherMode(Boolean(isActive));
-  }
-};
-
-window.toggleTeacherMode = function (forceState) {
-  const isCurrentlyActive = document.body.classList.contains('teacher-mode-active');
-  const nextState = typeof forceState === 'boolean' ? forceState : !isCurrentlyActive;
-  if (nextState) {
-    document.body.classList.add('teacher-mode-active');
-  } else {
-    document.body.classList.remove('teacher-mode-active');
-  }
-  try {
-    localStorage.setItem('teacherMode', nextState ? 'true' : 'false');
-  } catch (e) { }
-  window.syncTeacherButtons(nextState);
-  if (typeof window.applyTeacherModeToLessonDOM === 'function') {
-    window.applyTeacherModeToLessonDOM(nextState);
-  }
-};
-
-window.syncTeacherButtons = function (isActive) {
-  const btns = document.querySelectorAll('.btn-teacher-mode-toggle');
-  btns.forEach((btn) => {
-    const isKs2Btn = btn.classList.contains('btn-ks2-teacher-mode');
-    if (isActive) {
-      btn.classList.add('active');
-      btn.innerHTML = isKs2Btn
-        ? '<i class="fa-solid fa-eye-slash"></i> <span class="teacher-btn-label">Teacher Mode: Answers ON</span>'
-        : '<i class="fa-solid fa-user-tie"></i> <span class="teacher-btn-label">Teacher Mode: ON</span>';
-      btn.title = 'Teacher Mode is ON — all model answers revealed (click to hide)';
-    } else {
-      btn.classList.remove('active');
-      btn.innerHTML = isKs2Btn
-        ? '<i class="fa-solid fa-eye"></i> <span class="teacher-btn-label">Teacher Mode: Reveal Answers</span>'
-        : '<i class="fa-solid fa-user-tie"></i> <span class="teacher-btn-label">Teacher Mode</span>';
-      btn.title = isKs2Btn
-        ? '1-Click Teacher Mode: Reveal all Do Now, Source, Writing & Quiz answers on this page'
-        : 'Click to show Teacher Guidance & Delivery Roadmap';
-    }
-  });
-  const teacherTags = document.querySelectorAll('.teacher-status-tag');
-  teacherTags.forEach((tag) => {
-    tag.textContent = isActive ? 'ON' : 'OFF';
-    tag.style.background = isActive ? '#dcfce7' : '#f1f5f9';
-    tag.style.color = isActive ? '#15803d' : '#475569';
-  });
-  if (typeof window.updateClassroomToolsBadge === 'function') {
-    window.updateClassroomToolsBadge();
-  }
-};
-
 window.updateClassroomToolsBadge = function () { };
 window.toggleLessonToolsMenu = function () { };
 window.closeLessonToolsMenu = function () { };
-
-if (typeof localStorage !== 'undefined' && localStorage.getItem('teacherMode') === 'true') {
-  if (typeof document !== 'undefined' && document.body) {
-    document.body.classList.add('teacher-mode-active');
-  }
-}
 
 // Register global switchVideoTab handler if in browser
 if (typeof window !== 'undefined' && !window.switchVideoTab) {

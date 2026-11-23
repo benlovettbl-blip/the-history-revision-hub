@@ -6,7 +6,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;800&family=Inter:wght@400;600;700;800&family=Lora:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
   <style>
   * { box-sizing: border-box; margin: 0; padding: 0; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
-  @page { size: A4 portrait; margin: 0; }
+  @page { size: 210mm 297mm; margin: 0; }
   body { background: #cbd5e1; font-family: 'Inter', sans-serif; color: #0f172a; display: flex; flex-direction: column; align-items: center; }
   .screen-toolbar {
     width: 100%; background: #0f172a; color: #fff; padding: 9px 20px; display: flex; justify-content: space-between; align-items: center;
@@ -25,6 +25,7 @@
     body { background: #fff; }
     .screen-toolbar { display: none !important; }
     .worksheet-page, .wb-page { margin: 0; box-shadow: none !important; }
+    .worksheet-page:last-of-type, .wb-page:last-of-type { page-break-after: avoid !important; break-after: avoid !important; }
   }
   .ws-hdr {
     display: flex; justify-content: space-between; align-items: stretch; gap: 4mm; flex-shrink: 0;
@@ -68,7 +69,7 @@
   .lines-stack { display: flex; flex-direction: column; flex: 1; justify-content: space-evenly; min-height: 0; }
   .q-item { font-size: 8.1pt; line-height: 1.3; color: #0f172a; margin-bottom: 1mm; flex-shrink: 0; }
   .starter-hint { font-size: 7.3pt; line-height: 1.28; color: #475569; background: #f8fafc; border-left: 3px solid #94a3b8; padding: 1mm 2mm; margin-bottom: 1mm; flex-shrink: 0; }
-  .dual-scaffold-bar { font-size: 7.2pt; line-height: 1.28; background: #f5f3ff; border: 1px solid #ddd6fe; border-radius: 4px; padding: 1.4mm 2.2mm; margin-bottom: 1mm; flex-shrink: 0; }
+  .scaffold-bar { font-size: 7.2pt; line-height: 1.28; background: #f5f3ff; border: 1px solid #ddd6fe; border-radius: 4px; padding: 1.4mm 2.2mm; margin-bottom: 1mm; flex-shrink: 0; }
   .ruled-line { height: 7.8mm; border-bottom: 1.2px dashed #94a3b8; width: 100%; }
   .lines-stack .ruled-line { flex: 1; height: auto; min-height: 6.8mm; max-height: 8.8mm; }
   .chrono-grid { display: flex; flex-direction: column; gap: 1.5mm; }
@@ -96,7 +97,7 @@
   <div class="worksheet-page">
     <div class="ws-hdr">
       <div>
-        <div class="ws-kicker">KS2 ANGLO-SAXONS &amp; VIKINGS • MISSION 04 OF 06 • KEY STAGE 2 DUAL-SCAFFOLD</div>
+        <div class="ws-kicker">KS2 ANGLO-SAXONS &amp; VIKINGS • MISSION 04 OF 06 • KEY STAGE 2 PRIMARY HISTORY</div>
         <h1>Enquiry 4: Alfred the Great, Burhs &amp; the Danelaw — How Did Wessex Survive? (AD 871–899)</h1>
         <div class="ws-eq">Big Question: How did King Alfred save Wessex in AD 878, and why do historians call him 'Alfred the Great'?</div>
       </div>
@@ -121,10 +122,9 @@
         </div>
         <div class="src-q-col">
           <p class="q-item"><strong>1a.</strong> Look closely at Source A and its Old English words. What does the Alfred Jewel prove mattered to Alfred besides winning battles?</p>
-          <div class="starter-hint">Starter: <em>"Looking closely at Source A, the gold inscription around the Alfred Jewel proves King Alfred cared deeply about..."</em></div>
+          <div class="starter-hint"><strong>Starter:</strong> <em>"Looking closely at Source A, the gold inscription around the Alfred Jewel proves King Alfred cared deeply about..."</em><br><strong>Word Bank:</strong> Alfred Jewel  •  Old English  •  reading pointer  •  education</div>
           <div class="lines-stack">
             <div class="ruled-line"></div>
-          <div class="ruled-line"></div>
           <div class="ruled-line"></div>
           <div class="ruled-line"></div>
           <div class="ruled-line"></div>
@@ -178,10 +178,9 @@
     <div class="task-box flex-grow-card">
       <div class="task-title"><span class="t-badge green">TASK 3</span> Historical Investigation • Cause &amp; Consequence</div>
       <p class="q-item">How did King Alfred's clever network of 33 fortified burhs and taller warships stop future Viking raids from overwhelming Wessex?</p>
-      <div class="starter-hint">Foundation Starter: <em>"After AD 878, King Alfred made sure Wessex could never be caught off guard again by building..."</em></div>
+      <div class="starter-hint"><strong>Starter:</strong> <em>"After AD 878, King Alfred made sure Wessex could never be caught off guard again by building..."</em> &bull; <strong>Word Bank:</strong> burhs  •  20 miles  •  Wareham  •  60-oar warships</div>
       <div class="lines-stack">
         <div class="ruled-line"></div>
-          <div class="ruled-line"></div>
           <div class="ruled-line"></div>
           <div class="ruled-line"></div>
           <div class="ruled-line"></div>
@@ -211,13 +210,13 @@
       </div>
     </div>
 
-    <!-- TASK 5: MISSION CHALLENGE (DUAL-SCAFFOLDED FOR LKS2 & UKS2) -->
+    <!-- TASK 5: MISSION CHALLENGE (UNIVERSAL HISTORIAN SCAFFOLD) -->
     <div class="task-box challenge flex-grow-card-lg">
       <div class="task-title"><span class="t-badge purple">TASK 5</span> Mission Challenge • Answer Today's Big Enquiry Question</div>
       <p class="q-item"><strong>How did King Alfred save Wessex in AD 878, and why do historians call him 'Alfred the Great'?</strong></p>
-      <div class="dual-scaffold-bar">
-        <div><strong>🟢 Foundation Clues:</strong> Start with <em>"Historians call King Alfred of Wessex 'Alfred the Great' because he combined..."</em> &bull; <strong>Word Bank:</strong> Edington  •  Danelaw  •  33 burhs  •  Anglo-Saxon Chronicle</div>
-        <div style="margin-top:0.8mm; color:#5b21b6;"><strong>🟣 Point 2 (Builder &amp; Scholar): Show how he protected families with 33 burhs and warships while translating Latin books into Old English and starting the Anglo-Saxon Chronicle.</strong></div>
+      <div class="scaffold-bar">
+        <div><strong>Starter:</strong> <em>"Historians call King Alfred of Wessex 'Alfred the Great' because he combined..."</em></div>
+        <div style="margin-top:0.6mm;"><strong>Historian Word Bank:</strong> Edington  •  Danelaw  •  33 burhs  •  Anglo-Saxon Chronicle</div>
       </div>
       <div class="lines-stack">
         <div class="ruled-line"></div>

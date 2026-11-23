@@ -28,7 +28,7 @@
     }
 
     @page {
-      size: A4 portrait;
+      size: 210mm 297mm;
       margin: 0;
     }
 
@@ -113,6 +113,10 @@
       .worksheet-page {
         margin: 0;
         box-shadow: none !important;
+      }
+      .worksheet-page:last-of-type {
+        page-break-after: avoid !important;
+        break-after: avoid !important;
       }
     }
 
@@ -649,6 +653,8 @@
       min-height: 0;
     }
 
+    .wb-scaffold-strip { font-size: 6.9pt; line-height: 1.2; color: #334155; background: #fffbeb; border: 1px solid #fde68a; border-radius: 3px; padding: 0.6mm 1.5mm; margin-bottom: 0.4mm; flex-shrink: 0; }
+
     .synthesis-header {
       font-family: 'Lora', Georgia, serif;
       font-size: 8.2pt;
@@ -1097,8 +1103,8 @@
         </div>
         <div class="synthesis-container">
           <p class="synthesis-header">Enquiry Answer: How did secret codebreakers working at Bletchley Park help shorten the Second World War?</p>
+          <div class="wb-scaffold-strip"><strong>Starter:</strong> <em>"Secret codebreakers at Bletchley Park helped shorten the Second World War and save countless lives by..."</em> &bull; <strong>Word Bank:</strong> Enigma cipher  •  Alan Turing’s Bombe  •  Wrens  •  Atlantic convoys</div>
           <div class="ruled-lines-box">
-            <div class="ruled-line"></div>
             <div class="ruled-line"></div>
             <div class="ruled-line"></div>
             <div class="ruled-line"></div>

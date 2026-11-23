@@ -311,17 +311,17 @@ export default {
               "text": "“The long struggle is crowned with victory. For fifty years we have fought patiently, without breaking the laws or violating the constitution, to persuade our countrymen that women are responsible citizens. The magnificent devotion of women in the factories, the fields, and the hospitals during the dark years of war finally swept away the last lingering prejudices of Parliament. We have won the citadel by steadfast reason and patriotic sacrifice.”",
               "citation": "Millicent Garrett Fawcett, The Women's Victory — and After: Personal Reminiscences (1920).",
               "question_badge": "Cross-Referencing",
-              "enquiry_question": "How does Millicent Fawcett's interpretation in Source A differ from Suffragette claims that militancy secured the vote?",
               "model_answer": "Fawcett attributes victory entirely to fifty years of patient, constitutional persuasion combined with women's selfless wartime service, arguing that quiet reason rather than militant violence won parliamentary respect.",
-              "source_context": "Reflections written by NUWSS leader Millicent Fawcett following the passage of the Representation of the People Act in February 1918. **Hinge Question:** Why did Fawcett emphasize women's wartime industrial sacrifice rather than pre-war campaigning when explaining their victory in 1918?",
-              "hinge_question": "Why did Fawcett emphasize women's wartime industrial sacrifice rather than pre-war campaigning when explaining their victory in 1918?",
+              "source_context": "Reflections written by NUWSS leader Millicent Fawcett following the passage of the Representation of the People Act in February 1918.",
               "teacher_notes": {
-                "source_context": "Reflections written by NUWSS leader Millicent Fawcett following the passage of the Representation of the People Act in February 1918. **Hinge Question:** Why did Fawcett emphasize women's wartime industrial sacrifice rather than pre-war campaigning when explaining their victory in 1918?"
+                "source_context": "Reflections written by NUWSS leader Millicent Fawcett following the passage of the Representation of the People Act in February 1918. **Hinge Question:** Why did Fawcett emphasize women's wartime industrial sacrifice rather than pre-war campaigning when explaining their victory in 1918?",
+                "hinge_question": "Why did Fawcett emphasize women's wartime industrial sacrifice rather than pre-war campaigning when explaining their victory in 1918?"
               },
               "id": "pwb_l1_src_a",
               "type": "written",
               "src": "",
-              "image": ""
+              "image": "",
+              "question": "How does Millicent Fawcett's interpretation in Source A differ from Suffragette claims that militancy secured the vote?"
             }
           ],
           "source": {
@@ -330,17 +330,17 @@ export default {
             "text": "“The long struggle is crowned with victory. For fifty years we have fought patiently, without breaking the laws or violating the constitution, to persuade our countrymen that women are responsible citizens. The magnificent devotion of women in the factories, the fields, and the hospitals during the dark years of war finally swept away the last lingering prejudices of Parliament. We have won the citadel by steadfast reason and patriotic sacrifice.”",
             "citation": "Millicent Garrett Fawcett, The Women's Victory — and After: Personal Reminiscences (1920).",
             "question_badge": "Cross-Referencing",
-            "enquiry_question": "How does Millicent Fawcett's interpretation in Source A differ from Suffragette claims that militancy secured the vote?",
             "model_answer": "Fawcett attributes victory entirely to fifty years of patient, constitutional persuasion combined with women's selfless wartime service, arguing that quiet reason rather than militant violence won parliamentary respect.",
-            "source_context": "Reflections written by NUWSS leader Millicent Fawcett following the passage of the Representation of the People Act in February 1918. **Hinge Question:** Why did Fawcett emphasize women's wartime industrial sacrifice rather than pre-war campaigning when explaining their victory in 1918?",
-            "hinge_question": "Why did Fawcett emphasize women's wartime industrial sacrifice rather than pre-war campaigning when explaining their victory in 1918?",
+            "source_context": "Reflections written by NUWSS leader Millicent Fawcett following the passage of the Representation of the People Act in February 1918.",
             "teacher_notes": {
-              "source_context": "Reflections written by NUWSS leader Millicent Fawcett following the passage of the Representation of the People Act in February 1918. **Hinge Question:** Why did Fawcett emphasize women's wartime industrial sacrifice rather than pre-war campaigning when explaining their victory in 1918?"
+              "source_context": "Reflections written by NUWSS leader Millicent Fawcett following the passage of the Representation of the People Act in February 1918. **Hinge Question:** Why did Fawcett emphasize women's wartime industrial sacrifice rather than pre-war campaigning when explaining their victory in 1918?",
+              "hinge_question": "Why did Fawcett emphasize women's wartime industrial sacrifice rather than pre-war campaigning when explaining their victory in 1918?"
             },
             "id": "pwb_l1_src_a",
             "type": "written",
             "src": "",
-            "image": ""
+            "image": "",
+            "question": "How does Millicent Fawcett's interpretation in Source A differ from Suffragette claims that militancy secured the vote?"
           },
           "content": "<p class=\"prose-p\"><span class=\"para-ref\">[1.1]</span> In 1897, seventeen regional suffrage groups united under Dame Millicent Garrett Fawcett to establish the National Union of Women's Suffrage Societies (NUWSS). Known as Suffragists, the democratic organisation rapidly grew to over 50,000 peaceful members across Great Britain.</p><p class=\"prose-p\">Fawcett championed constitutional campaigning, arguing that law-abiding methods, mass petitions, and reasoned parliamentary lobbying were the only way to win voting rights. By demonstrating moral responsibility, the NUWSS persuaded politicians that women were mature citizens capable of exercising the democratic franchise.</p>"
         },
@@ -359,16 +359,16 @@ export default {
               "caption": "Superintendent Rolfe carrying Emmeline Pankhurst away under arrest as she attempts to present a petition to King George V outside Buckingham Palace, 21 May 1914 (IWM Q 81486).",
               "citation": "Imperial War Museum, Catalogue ID: Q 81486.",
               "question_badge": "Source Inference",
-              "enquiry_question": "What can you infer from Source B about the determination of Suffragettes and the state's response to their militancy?",
               "model_answer": "Source B reveals that Suffragette leaders were willing to risk physical confrontation with police at the highest royal institutions to demand the vote, while the British state used heavy physical force and arrest to suppress female political protest.",
-              "source_context": "Photograph of WSPU leader Emmeline Pankhurst being carried off by police officers outside Buckingham Palace while attempting to deliver a petition on 21 May 1914. **Hinge Question:** Does this photographic evidence demonstrate Suffragette heroism or provide evidence of lawless disorder that alienated moderate public opinion?",
-              "hinge_question": "Does this photographic evidence demonstrate Suffragette heroism or provide evidence of lawless disorder that alienated moderate public opinion?",
+              "source_context": "Photograph of WSPU leader Emmeline Pankhurst being carried off by police officers outside Buckingham Palace while attempting to deliver a petition on 21 May 1914.",
               "teacher_notes": {
-                "source_context": "Photograph of WSPU leader Emmeline Pankhurst being carried off by police officers outside Buckingham Palace while attempting to deliver a petition on 21 May 1914. **Hinge Question:** Does this photographic evidence demonstrate Suffragette heroism or provide evidence of lawless disorder that alienated moderate public opinion?"
+                "source_context": "Photograph of WSPU leader Emmeline Pankhurst being carried off by police officers outside Buckingham Palace while attempting to deliver a petition on 21 May 1914. **Hinge Question:** Does this photographic evidence demonstrate Suffragette heroism or provide evidence of lawless disorder that alienated moderate public opinion?",
+                "hinge_question": "Does this photographic evidence demonstrate Suffragette heroism or provide evidence of lawless disorder that alienated moderate public opinion?"
               },
               "id": "pwb_l1_src_b",
               "type": "visual",
-              "image_alt": "Superintendent Rolfe lifting WSPU leader Emmeline Pankhurst off the ground as he arrests her outside the iron gates of Buckingham Palace on 21 May 1914"
+              "image_alt": "Superintendent Rolfe lifting WSPU leader Emmeline Pankhurst off the ground as he arrests her outside the iron gates of Buckingham Palace on 21 May 1914",
+              "question": "What can you infer from Source B about the determination of Suffragettes and the state's response to their militancy?"
             }
           ],
           "source": {
@@ -379,16 +379,16 @@ export default {
             "caption": "Superintendent Rolfe carrying Emmeline Pankhurst away under arrest as she attempts to present a petition to King George V outside Buckingham Palace, 21 May 1914 (IWM Q 81486).",
             "citation": "Imperial War Museum, Catalogue ID: Q 81486.",
             "question_badge": "Source Inference",
-            "enquiry_question": "What can you infer from Source B about the determination of Suffragettes and the state's response to their militancy?",
             "model_answer": "Source B reveals that Suffragette leaders were willing to risk physical confrontation with police at the highest royal institutions to demand the vote, while the British state used heavy physical force and arrest to suppress female political protest.",
-            "source_context": "Photograph of WSPU leader Emmeline Pankhurst being carried off by police officers outside Buckingham Palace while attempting to deliver a petition on 21 May 1914. **Hinge Question:** Does this photographic evidence demonstrate Suffragette heroism or provide evidence of lawless disorder that alienated moderate public opinion?",
-            "hinge_question": "Does this photographic evidence demonstrate Suffragette heroism or provide evidence of lawless disorder that alienated moderate public opinion?",
+            "source_context": "Photograph of WSPU leader Emmeline Pankhurst being carried off by police officers outside Buckingham Palace while attempting to deliver a petition on 21 May 1914.",
             "teacher_notes": {
-              "source_context": "Photograph of WSPU leader Emmeline Pankhurst being carried off by police officers outside Buckingham Palace while attempting to deliver a petition on 21 May 1914. **Hinge Question:** Does this photographic evidence demonstrate Suffragette heroism or provide evidence of lawless disorder that alienated moderate public opinion?"
+              "source_context": "Photograph of WSPU leader Emmeline Pankhurst being carried off by police officers outside Buckingham Palace while attempting to deliver a petition on 21 May 1914. **Hinge Question:** Does this photographic evidence demonstrate Suffragette heroism or provide evidence of lawless disorder that alienated moderate public opinion?",
+              "hinge_question": "Does this photographic evidence demonstrate Suffragette heroism or provide evidence of lawless disorder that alienated moderate public opinion?"
             },
             "id": "pwb_l1_src_b",
             "type": "visual",
-            "image_alt": "Superintendent Rolfe lifting WSPU leader Emmeline Pankhurst off the ground as he arrests her outside the iron gates of Buckingham Palace on 21 May 1914"
+            "image_alt": "Superintendent Rolfe lifting WSPU leader Emmeline Pankhurst off the ground as he arrests her outside the iron gates of Buckingham Palace on 21 May 1914",
+            "question": "What can you infer from Source B about the determination of Suffragettes and the state's response to their militancy?"
           },
           "content": "<p class=\"prose-p\"><span class=\"para-ref\">[1.2]</span> Frustrated by decades of parliamentary delay, Emmeline Pankhurst and her daughters founded the Women's Social and Political Union (WSPU) in Manchester in October 1903. Members adopted the radical motto 'Deeds, not words' militancy, becoming universally known as the Suffragettes.</p><p class=\"prose-p\">Unlike peaceful suffragists, the militant WSPU operated as a disciplined military hierarchy. Suffragettes embraced direct action to capture national headlines, chaining themselves to parliamentary railings, interrupting political rallies, and confronting police outside Buckingham Palace to force the government to grant female suffrage.</p>",
           "concept_widget": {
@@ -503,16 +503,16 @@ export default {
               "caption": "Silver WSPU Hunger Strike Medal with purple, white, and green ribbon, engraved 'For Valour' with bar 'Fed by Force 4/3/12', awarded to militant suffragette Helen MacRae.",
               "citation": "Museum of London Suffragette Collection / WSPU Roll of Honour.",
               "question_badge": "Historical Significance",
-              "enquiry_question": "Why did the WSPU award military-style medals to members who were force-fed in prison?",
               "model_answer": "The WSPU awarded military-style medals to frame their members as brave political soldiers fighting in a war of liberation, turning the ordeal of brutal prison torture into a badge of supreme national honour.",
-              "source_context": "Physical silver medal awarded by Emmeline Pankhurst to Helen MacRae following force-feeding at Holloway Prison in March 1912. **Hinge Question:** How does this medal prove that the Suffragettes viewed themselves not as criminals, but as political soldiers waging a war for democratic rights?",
-              "hinge_question": "How does this medal prove that the Suffragettes viewed themselves not as criminals, but as political soldiers waging a war for democratic rights?",
+              "source_context": "Physical silver medal awarded by Emmeline Pankhurst to Helen MacRae following force-feeding at Holloway Prison in March 1912.",
               "teacher_notes": {
-                "source_context": "Physical silver medal awarded by Emmeline Pankhurst to Helen MacRae following force-feeding at Holloway Prison in March 1912. **Hinge Question:** How does this medal prove that the Suffragettes viewed themselves not as criminals, but as political soldiers waging a war for democratic rights?"
+                "source_context": "Physical silver medal awarded by Emmeline Pankhurst to Helen MacRae following force-feeding at Holloway Prison in March 1912. **Hinge Question:** How does this medal prove that the Suffragettes viewed themselves not as criminals, but as political soldiers waging a war for democratic rights?",
+                "hinge_question": "How does this medal prove that the Suffragettes viewed themselves not as criminals, but as political soldiers waging a war for democratic rights?"
               },
               "id": "pwb_l1_src_c",
               "type": "visual",
-              "image_alt": "Silver WSPU Hunger Strike Medal on purple, white, and green striped ribbon engraved FOR VALOUR and FED BY FORCE 4/3/12 beneath its gold-lettered silk presentation box lid inscribed to Helen MacRae"
+              "image_alt": "Silver WSPU Hunger Strike Medal on purple, white, and green striped ribbon engraved FOR VALOUR and FED BY FORCE 4/3/12 beneath its gold-lettered silk presentation box lid inscribed to Helen MacRae",
+              "question": "Why did the WSPU award military-style medals to members who were force-fed in prison?"
             }
           ],
           "source": {
@@ -523,16 +523,16 @@ export default {
             "caption": "Silver WSPU Hunger Strike Medal with purple, white, and green ribbon, engraved 'For Valour' with bar 'Fed by Force 4/3/12', awarded to militant suffragette Helen MacRae.",
             "citation": "Museum of London Suffragette Collection / WSPU Roll of Honour.",
             "question_badge": "Historical Significance",
-            "enquiry_question": "Why did the WSPU award military-style medals to members who were force-fed in prison?",
             "model_answer": "The WSPU awarded military-style medals to frame their members as brave political soldiers fighting in a war of liberation, turning the ordeal of brutal prison torture into a badge of supreme national honour.",
-            "source_context": "Physical silver medal awarded by Emmeline Pankhurst to Helen MacRae following force-feeding at Holloway Prison in March 1912. **Hinge Question:** How does this medal prove that the Suffragettes viewed themselves not as criminals, but as political soldiers waging a war for democratic rights?",
-            "hinge_question": "How does this medal prove that the Suffragettes viewed themselves not as criminals, but as political soldiers waging a war for democratic rights?",
+            "source_context": "Physical silver medal awarded by Emmeline Pankhurst to Helen MacRae following force-feeding at Holloway Prison in March 1912.",
             "teacher_notes": {
-              "source_context": "Physical silver medal awarded by Emmeline Pankhurst to Helen MacRae following force-feeding at Holloway Prison in March 1912. **Hinge Question:** How does this medal prove that the Suffragettes viewed themselves not as criminals, but as political soldiers waging a war for democratic rights?"
+              "source_context": "Physical silver medal awarded by Emmeline Pankhurst to Helen MacRae following force-feeding at Holloway Prison in March 1912. **Hinge Question:** How does this medal prove that the Suffragettes viewed themselves not as criminals, but as political soldiers waging a war for democratic rights?",
+              "hinge_question": "How does this medal prove that the Suffragettes viewed themselves not as criminals, but as political soldiers waging a war for democratic rights?"
             },
             "id": "pwb_l1_src_c",
             "type": "visual",
-            "image_alt": "Silver WSPU Hunger Strike Medal on purple, white, and green striped ribbon engraved FOR VALOUR and FED BY FORCE 4/3/12 beneath its gold-lettered silk presentation box lid inscribed to Helen MacRae"
+            "image_alt": "Silver WSPU Hunger Strike Medal on purple, white, and green striped ribbon engraved FOR VALOUR and FED BY FORCE 4/3/12 beneath its gold-lettered silk presentation box lid inscribed to Helen MacRae",
+            "question": "Why did the WSPU award military-style medals to members who were force-fed in prison?"
           },
           "content": "<p class=\"prose-p\"><span class=\"para-ref\">[1.3]</span> Imprisoned in Holloway and other jails, Suffragettes initiated defiant hunger strike protests demanding to be treated as political prisoners. To prevent inmate deaths, the Liberal government introduced agonizing forced tube-feeding, shoving rubber hoses down prisoners' throats and provoking widespread public outrage.</p><p class=\"prose-p\">In response, Parliament passed the notorious 1913 'Cat and Mouse Act', allowing severely weakened hunger strikers to be released on license and re-arrested once recovered. Honoring their physical sacrifice, the WSPU awarded military-style silver Hunger Strike Medals to courageous survivors.</p>",
           "image": "/images/post_war_britain/pwb_l1_b2_cat_and_mouse_poster_1913.jpg",
@@ -554,16 +554,16 @@ export default {
               "caption": "Satirical cartoon from Punch magazine (July 1910) showing a female suffragette using martial arts techniques against an intimidated London police constable.",
               "citation": "Punch Magazine Archive, 6 July 1910.",
               "question_badge": "Source Evaluation",
-              "enquiry_question": "What attitude towards the suffragette movement does the cartoonist in Punch express?",
               "model_answer": "The cartoonist mocks both the suffragettes as aggressive and unfeminine fighters, while simultaneously ridiculing the helpless police officer, reflecting middle-class amusement and unease at female militancy.",
-              "source_context": "Contemporary cartoon published in Punch in 1910 reflecting reports that Suffragettes were receiving self-defence training in jiu-jitsu from Edith Garrud to resist police arrest. **Hinge Question:** Does this cartoon suggest that militant Suffragettes were viewed by the British establishment as a dangerous threat or a ridiculous spectacle?",
-              "hinge_question": "Does this cartoon suggest that militant Suffragettes were viewed by the British establishment as a dangerous threat or a ridiculous spectacle?",
+              "source_context": "Contemporary cartoon published in Punch in 1910 reflecting reports that Suffragettes were receiving self-defence training in jiu-jitsu from Edith Garrud to resist police arrest.",
               "teacher_notes": {
-                "source_context": "Contemporary cartoon published in Punch in 1910 reflecting reports that Suffragettes were receiving self-defence training in jiu-jitsu from Edith Garrud to resist police arrest. **Hinge Question:** Does this cartoon suggest that militant Suffragettes were viewed by the British establishment as a dangerous threat or a ridiculous spectacle?"
+                "source_context": "Contemporary cartoon published in Punch in 1910 reflecting reports that Suffragettes were receiving self-defence training in jiu-jitsu from Edith Garrud to resist police arrest. **Hinge Question:** Does this cartoon suggest that militant Suffragettes were viewed by the British establishment as a dangerous threat or a ridiculous spectacle?",
+                "hinge_question": "Does this cartoon suggest that militant Suffragettes were viewed by the British establishment as a dangerous threat or a ridiculous spectacle?"
               },
               "id": "pwb_l1_src_d",
               "type": "visual",
-              "image_alt": "Arthur Wallis Mills 1910 Punch cartoon titled THE SUFFRAGETTE THAT KNEW JIU-JITSU showing one slender suffragette standing calmly beside a VOTES FOR WOMEN placard while cowering policemen huddle back and two officers hang over park railings"
+              "image_alt": "Arthur Wallis Mills 1910 Punch cartoon titled THE SUFFRAGETTE THAT KNEW JIU-JITSU showing one slender suffragette standing calmly beside a VOTES FOR WOMEN placard while cowering policemen huddle back and two officers hang over park railings",
+              "question": "What attitude towards the suffragette movement does the cartoonist in Punch express?"
             }
           ],
           "source": {
@@ -574,16 +574,16 @@ export default {
             "caption": "Satirical cartoon from Punch magazine (July 1910) showing a female suffragette using martial arts techniques against an intimidated London police constable.",
             "citation": "Punch Magazine Archive, 6 July 1910.",
             "question_badge": "Source Evaluation",
-            "enquiry_question": "What attitude towards the suffragette movement does the cartoonist in Punch express?",
             "model_answer": "The cartoonist mocks both the suffragettes as aggressive and unfeminine fighters, while simultaneously ridiculing the helpless police officer, reflecting middle-class amusement and unease at female militancy.",
-            "source_context": "Contemporary cartoon published in Punch in 1910 reflecting reports that Suffragettes were receiving self-defence training in jiu-jitsu from Edith Garrud to resist police arrest. **Hinge Question:** Does this cartoon suggest that militant Suffragettes were viewed by the British establishment as a dangerous threat or a ridiculous spectacle?",
-            "hinge_question": "Does this cartoon suggest that militant Suffragettes were viewed by the British establishment as a dangerous threat or a ridiculous spectacle?",
+            "source_context": "Contemporary cartoon published in Punch in 1910 reflecting reports that Suffragettes were receiving self-defence training in jiu-jitsu from Edith Garrud to resist police arrest.",
             "teacher_notes": {
-              "source_context": "Contemporary cartoon published in Punch in 1910 reflecting reports that Suffragettes were receiving self-defence training in jiu-jitsu from Edith Garrud to resist police arrest. **Hinge Question:** Does this cartoon suggest that militant Suffragettes were viewed by the British establishment as a dangerous threat or a ridiculous spectacle?"
+              "source_context": "Contemporary cartoon published in Punch in 1910 reflecting reports that Suffragettes were receiving self-defence training in jiu-jitsu from Edith Garrud to resist police arrest. **Hinge Question:** Does this cartoon suggest that militant Suffragettes were viewed by the British establishment as a dangerous threat or a ridiculous spectacle?",
+              "hinge_question": "Does this cartoon suggest that militant Suffragettes were viewed by the British establishment as a dangerous threat or a ridiculous spectacle?"
             },
             "id": "pwb_l1_src_d",
             "type": "visual",
-            "image_alt": "Arthur Wallis Mills 1910 Punch cartoon titled THE SUFFRAGETTE THAT KNEW JIU-JITSU showing one slender suffragette standing calmly beside a VOTES FOR WOMEN placard while cowering policemen huddle back and two officers hang over park railings"
+            "image_alt": "Arthur Wallis Mills 1910 Punch cartoon titled THE SUFFRAGETTE THAT KNEW JIU-JITSU showing one slender suffragette standing calmly beside a VOTES FOR WOMEN placard while cowering policemen huddle back and two officers hang over park railings",
+            "question": "What attitude towards the suffragette movement does the cartoonist in Punch express?"
           },
           "content": "<p class=\"prose-p\"><span class=\"para-ref\">[1.4]</span> As police violence escalated, the WSPU formed an elite thirty-woman security unit known as 'The Bodyguard'. Directed by martial arts pioneer Edith Garrud, these athletic women were trained in jiu-jitsu self-defence to shield Emmeline Pankhurst from aggressive police batons.</p><p class=\"prose-p\">Concealing wooden clubs beneath their Edwardian dresses, the bodyguards successfully fought off arresting officers during public speeches. Physical conflict peaked in June 1913 when Emily Wilding Davison stepped before King George V’s horse at the Epsom Derby, dying from catastrophic injuries.</p>",
           "image": "/images/post_war_britain/pwb_l1_b3_emily_davison_funeral_1913_q81834.jpg",
@@ -605,17 +605,16 @@ export default {
               "id": "pwb_l1_src_e",
               "type": "written",
               "title": "Source E (Statute Law): The Representation of the People Act 1918 (7 & 8 Geo. 5, c. 64)",
-              "context": "Passed in February 1918, this landmark legislation extended the parliamentary franchise to 8.4 million women over the age of thirty who met property qualifications, while granting universal suffrage to all men aged twenty-one and older. **Hinge Question:** Why did Parliament choose to enfranchise only older, property-owning women in 1918 rather than granting equal voting rights to all adult women?",
-              "hinge_question": "Why did Parliament choose to enfranchise only older, property-owning women in 1918 rather than granting equal voting rights to all adult women?",
+              "context": "Passed in February 1918, this landmark legislation extended the parliamentary franchise to 8.4 million women over the age of thirty who met property qualifications, while granting universal suffrage to all men aged twenty-one and older.",
               "text": "“A woman shall be entitled to be registered as a parliamentary elector for a constituency if she has attained the age of thirty years, and is not subject to any legal incapacity, and is entitled to be registered as a local government elector in respect of the occupation in that constituency of land or premises (not being a dwelling-house) of a yearly value of not less than five pounds, or of a dwelling-house, or is the wife of a husband entitled to be so registered.”",
               "caption": "Source E: Key clause from the Representation of the People Act 1918 granting parliamentary votes to women over thirty with property qualifications.",
               "question_badge": "Political Legislation",
               "question": "What age and property qualifications did women have to meet to vote in parliamentary elections under the 1918 Act?",
-              "enquiry_question": "What age and property qualifications did women have to meet to vote in parliamentary elections under the 1918 Act?",
               "model_answer": "Under the 1918 Act, women had to be at least thirty years old and either own property or be married to a man who owned property, unlike men who gained the vote at twenty-one without property requirements.",
-              "source_context": "Passed in February 1918, this landmark legislation extended the parliamentary franchise to 8.4 million women over the age of thirty who met property qualifications, while granting universal suffrage to all men aged twenty-one and older. **Hinge Question:** Why did Parliament choose to enfranchise only older, property-owning women in 1918 rather than granting equal voting rights to all adult women?",
+              "source_context": "Passed in February 1918, this landmark legislation extended the parliamentary franchise to 8.4 million women over the age of thirty who met property qualifications, while granting universal suffrage to all men aged twenty-one and older.",
               "teacher_notes": {
-                "source_context": "Passed in February 1918, this landmark legislation extended the parliamentary franchise to 8.4 million women over the age of thirty who met property qualifications, while granting universal suffrage to all men aged twenty-one and older. **Hinge Question:** Why did Parliament choose to enfranchise only older, property-owning women in 1918 rather than granting equal voting rights to all adult women?"
+                "source_context": "Passed in February 1918, this landmark legislation extended the parliamentary franchise to 8.4 million women over the age of thirty who met property qualifications, while granting universal suffrage to all men aged twenty-one and older. **Hinge Question:** Why did Parliament choose to enfranchise only older, property-owning women in 1918 rather than granting equal voting rights to all adult women?",
+                "hinge_question": "Why did Parliament choose to enfranchise only older, property-owning women in 1918 rather than granting equal voting rights to all adult women?"
               },
               "src": "",
               "image": ""
@@ -626,17 +625,16 @@ export default {
             "id": "pwb_l1_src_e",
             "type": "written",
             "title": "Source E (Statute Law): The Representation of the People Act 1918 (7 & 8 Geo. 5, c. 64)",
-            "context": "Passed in February 1918, this landmark legislation extended the parliamentary franchise to 8.4 million women over the age of thirty who met property qualifications, while granting universal suffrage to all men aged twenty-one and older. **Hinge Question:** Why did Parliament choose to enfranchise only older, property-owning women in 1918 rather than granting equal voting rights to all adult women?",
-            "hinge_question": "Why did Parliament choose to enfranchise only older, property-owning women in 1918 rather than granting equal voting rights to all adult women?",
+            "context": "Passed in February 1918, this landmark legislation extended the parliamentary franchise to 8.4 million women over the age of thirty who met property qualifications, while granting universal suffrage to all men aged twenty-one and older.",
             "text": "“A woman shall be entitled to be registered as a parliamentary elector for a constituency if she has attained the age of thirty years, and is not subject to any legal incapacity, and is entitled to be registered as a local government elector in respect of the occupation in that constituency of land or premises (not being a dwelling-house) of a yearly value of not less than five pounds, or of a dwelling-house, or is the wife of a husband entitled to be so registered.”",
             "caption": "Source E: Key clause from the Representation of the People Act 1918 granting parliamentary votes to women over thirty with property qualifications.",
             "question_badge": "Political Legislation",
             "question": "What age and property qualifications did women have to meet to vote in parliamentary elections under the 1918 Act?",
-            "enquiry_question": "What age and property qualifications did women have to meet to vote in parliamentary elections under the 1918 Act?",
             "model_answer": "Under the 1918 Act, women had to be at least thirty years old and either own property or be married to a man who owned property, unlike men who gained the vote at twenty-one without property requirements.",
-            "source_context": "Passed in February 1918, this landmark legislation extended the parliamentary franchise to 8.4 million women over the age of thirty who met property qualifications, while granting universal suffrage to all men aged twenty-one and older. **Hinge Question:** Why did Parliament choose to enfranchise only older, property-owning women in 1918 rather than granting equal voting rights to all adult women?",
+            "source_context": "Passed in February 1918, this landmark legislation extended the parliamentary franchise to 8.4 million women over the age of thirty who met property qualifications, while granting universal suffrage to all men aged twenty-one and older.",
             "teacher_notes": {
-              "source_context": "Passed in February 1918, this landmark legislation extended the parliamentary franchise to 8.4 million women over the age of thirty who met property qualifications, while granting universal suffrage to all men aged twenty-one and older. **Hinge Question:** Why did Parliament choose to enfranchise only older, property-owning women in 1918 rather than granting equal voting rights to all adult women?"
+              "source_context": "Passed in February 1918, this landmark legislation extended the parliamentary franchise to 8.4 million women over the age of thirty who met property qualifications, while granting universal suffrage to all men aged twenty-one and older. **Hinge Question:** Why did Parliament choose to enfranchise only older, property-owning women in 1918 rather than granting equal voting rights to all adult women?",
+              "hinge_question": "Why did Parliament choose to enfranchise only older, property-owning women in 1918 rather than granting equal voting rights to all adult women?"
             },
             "src": "",
             "image": ""
@@ -651,18 +649,18 @@ export default {
           "text": "“The long struggle is crowned with victory. For fifty years we have fought patiently, without breaking the laws or violating the constitution, to persuade our countrymen that women are responsible citizens. The magnificent devotion of women in the factories, the fields, and the hospitals during the dark years of war finally swept away the last lingering prejudices of Parliament. We have won the citadel by steadfast reason and patriotic sacrifice.”",
           "citation": "Millicent Garrett Fawcett, The Women's Victory — and After: Personal Reminiscences (1920).",
           "question_badge": "Cross-Referencing",
-          "enquiry_question": "How does Millicent Fawcett's interpretation in Source A differ from Suffragette claims that militancy secured the vote?",
           "model_answer": "Fawcett attributes victory entirely to fifty years of patient, constitutional persuasion combined with women's selfless wartime service, arguing that quiet reason rather than militant violence won parliamentary respect.",
-          "source_context": "Reflections written by NUWSS leader Millicent Fawcett following the passage of the Representation of the People Act in February 1918. **Hinge Question:** Why did Fawcett emphasize women's wartime industrial sacrifice rather than pre-war campaigning when explaining their victory in 1918?",
-          "hinge_question": "Why did Fawcett emphasize women's wartime industrial sacrifice rather than pre-war campaigning when explaining their victory in 1918?",
+          "source_context": "Reflections written by NUWSS leader Millicent Fawcett following the passage of the Representation of the People Act in February 1918.",
           "teacher_notes": {
-            "source_context": "Reflections written by NUWSS leader Millicent Fawcett following the passage of the Representation of the People Act in February 1918. **Hinge Question:** Why did Fawcett emphasize women's wartime industrial sacrifice rather than pre-war campaigning when explaining their victory in 1918?"
+            "source_context": "Reflections written by NUWSS leader Millicent Fawcett following the passage of the Representation of the People Act in February 1918. **Hinge Question:** Why did Fawcett emphasize women's wartime industrial sacrifice rather than pre-war campaigning when explaining their victory in 1918?",
+            "hinge_question": "Why did Fawcett emphasize women's wartime industrial sacrifice rather than pre-war campaigning when explaining their victory in 1918?"
           },
           "id": "pwb_l1_src_a",
           "type": "written",
           "src": "",
           "image": "",
-          "context": "Reflections written by NUWSS leader Millicent Fawcett following the passage of the Representation of the People Act in February 1918."
+          "context": "Reflections written by NUWSS leader Millicent Fawcett following the passage of the Representation of the People Act in February 1918.",
+          "question": "How does Millicent Fawcett's interpretation in Source A differ from Suffragette claims that militancy secured the vote?"
         },
         {
           "letter": "B",
@@ -672,17 +670,17 @@ export default {
           "caption": "Superintendent Rolfe carrying Emmeline Pankhurst away under arrest as she attempts to present a petition to King George V outside Buckingham Palace, 21 May 1914 (IWM Q 81486).",
           "citation": "Imperial War Museum, Catalogue ID: Q 81486.",
           "question_badge": "Source Inference",
-          "enquiry_question": "What can you infer from Source B about the determination of Suffragettes and the state's response to their militancy?",
           "model_answer": "Source B reveals that Suffragette leaders were willing to risk physical confrontation with police at the highest royal institutions to demand the vote, while the British state used heavy physical force and arrest to suppress female political protest.",
-          "source_context": "Photograph of WSPU leader Emmeline Pankhurst being carried off by police officers outside Buckingham Palace while attempting to deliver a petition on 21 May 1914. **Hinge Question:** Does this photographic evidence demonstrate Suffragette heroism or provide evidence of lawless disorder that alienated moderate public opinion?",
-          "hinge_question": "Does this photographic evidence demonstrate Suffragette heroism or provide evidence of lawless disorder that alienated moderate public opinion?",
+          "source_context": "Photograph of WSPU leader Emmeline Pankhurst being carried off by police officers outside Buckingham Palace while attempting to deliver a petition on 21 May 1914.",
           "teacher_notes": {
-            "source_context": "Photograph of WSPU leader Emmeline Pankhurst being carried off by police officers outside Buckingham Palace while attempting to deliver a petition on 21 May 1914. **Hinge Question:** Does this photographic evidence demonstrate Suffragette heroism or provide evidence of lawless disorder that alienated moderate public opinion?"
+            "source_context": "Photograph of WSPU leader Emmeline Pankhurst being carried off by police officers outside Buckingham Palace while attempting to deliver a petition on 21 May 1914. **Hinge Question:** Does this photographic evidence demonstrate Suffragette heroism or provide evidence of lawless disorder that alienated moderate public opinion?",
+            "hinge_question": "Does this photographic evidence demonstrate Suffragette heroism or provide evidence of lawless disorder that alienated moderate public opinion?"
           },
           "id": "pwb_l1_src_b",
           "type": "visual",
           "context": "Photograph of WSPU leader Emmeline Pankhurst being carried off by police officers outside Buckingham Palace while attempting to deliver a petition on 21 May 1914.",
-          "image_alt": "Superintendent Rolfe lifting WSPU leader Emmeline Pankhurst off the ground as he arrests her outside the iron gates of Buckingham Palace on 21 May 1914"
+          "image_alt": "Superintendent Rolfe lifting WSPU leader Emmeline Pankhurst off the ground as he arrests her outside the iron gates of Buckingham Palace on 21 May 1914",
+          "question": "What can you infer from Source B about the determination of Suffragettes and the state's response to their militancy?"
         },
         {
           "letter": "C",
@@ -692,17 +690,17 @@ export default {
           "caption": "Silver WSPU Hunger Strike Medal with purple, white, and green ribbon, engraved 'For Valour' with bar 'Fed by Force 4/3/12', awarded to militant suffragette Helen MacRae.",
           "citation": "Museum of London Suffragette Collection / WSPU Roll of Honour.",
           "question_badge": "Historical Significance",
-          "enquiry_question": "Why did the WSPU award military-style medals to members who were force-fed in prison?",
           "model_answer": "The WSPU awarded military-style medals to frame their members as brave political soldiers fighting in a war of liberation, turning the ordeal of brutal prison torture into a badge of supreme national honour.",
-          "source_context": "Physical silver medal awarded by Emmeline Pankhurst to Helen MacRae following force-feeding at Holloway Prison in March 1912. **Hinge Question:** How does this medal prove that the Suffragettes viewed themselves not as criminals, but as political soldiers waging a war for democratic rights?",
-          "hinge_question": "How does this medal prove that the Suffragettes viewed themselves not as criminals, but as political soldiers waging a war for democratic rights?",
+          "source_context": "Physical silver medal awarded by Emmeline Pankhurst to Helen MacRae following force-feeding at Holloway Prison in March 1912.",
           "teacher_notes": {
-            "source_context": "Physical silver medal awarded by Emmeline Pankhurst to Helen MacRae following force-feeding at Holloway Prison in March 1912. **Hinge Question:** How does this medal prove that the Suffragettes viewed themselves not as criminals, but as political soldiers waging a war for democratic rights?"
+            "source_context": "Physical silver medal awarded by Emmeline Pankhurst to Helen MacRae following force-feeding at Holloway Prison in March 1912. **Hinge Question:** How does this medal prove that the Suffragettes viewed themselves not as criminals, but as political soldiers waging a war for democratic rights?",
+            "hinge_question": "How does this medal prove that the Suffragettes viewed themselves not as criminals, but as political soldiers waging a war for democratic rights?"
           },
           "id": "pwb_l1_src_c",
           "type": "visual",
           "context": "Physical silver medal awarded by Emmeline Pankhurst to Helen MacRae following force-feeding at Holloway Prison in March 1912.",
-          "image_alt": "Silver WSPU Hunger Strike Medal on purple, white, and green striped ribbon engraved FOR VALOUR and FED BY FORCE 4/3/12 beneath its gold-lettered silk presentation box lid inscribed to Helen MacRae"
+          "image_alt": "Silver WSPU Hunger Strike Medal on purple, white, and green striped ribbon engraved FOR VALOUR and FED BY FORCE 4/3/12 beneath its gold-lettered silk presentation box lid inscribed to Helen MacRae",
+          "question": "Why did the WSPU award military-style medals to members who were force-fed in prison?"
         },
         {
           "letter": "D",
@@ -712,34 +710,33 @@ export default {
           "caption": "Satirical cartoon from Punch magazine (July 1910) showing a female suffragette using martial arts techniques against an intimidated London police constable.",
           "citation": "Punch Magazine Archive, 6 July 1910.",
           "question_badge": "Source Evaluation",
-          "enquiry_question": "What attitude towards the suffragette movement does the cartoonist in Punch express?",
           "model_answer": "The cartoonist mocks both the suffragettes as aggressive and unfeminine fighters, while simultaneously ridiculing the helpless police officer, reflecting middle-class amusement and unease at female militancy.",
-          "source_context": "Contemporary cartoon published in Punch in 1910 reflecting reports that Suffragettes were receiving self-defence training in jiu-jitsu from Edith Garrud to resist police arrest. **Hinge Question:** Does this cartoon suggest that militant Suffragettes were viewed by the British establishment as a dangerous threat or a ridiculous spectacle?",
-          "hinge_question": "Does this cartoon suggest that militant Suffragettes were viewed by the British establishment as a dangerous threat or a ridiculous spectacle?",
+          "source_context": "Contemporary cartoon published in Punch in 1910 reflecting reports that Suffragettes were receiving self-defence training in jiu-jitsu from Edith Garrud to resist police arrest.",
           "teacher_notes": {
-            "source_context": "Contemporary cartoon published in Punch in 1910 reflecting reports that Suffragettes were receiving self-defence training in jiu-jitsu from Edith Garrud to resist police arrest. **Hinge Question:** Does this cartoon suggest that militant Suffragettes were viewed by the British establishment as a dangerous threat or a ridiculous spectacle?"
+            "source_context": "Contemporary cartoon published in Punch in 1910 reflecting reports that Suffragettes were receiving self-defence training in jiu-jitsu from Edith Garrud to resist police arrest. **Hinge Question:** Does this cartoon suggest that militant Suffragettes were viewed by the British establishment as a dangerous threat or a ridiculous spectacle?",
+            "hinge_question": "Does this cartoon suggest that militant Suffragettes were viewed by the British establishment as a dangerous threat or a ridiculous spectacle?"
           },
           "id": "pwb_l1_src_d",
           "type": "visual",
           "context": "Contemporary cartoon published in Punch in 1910 reflecting reports that Suffragettes were receiving self-defence training in jiu-jitsu from Edith Garrud to resist police arrest.",
-          "image_alt": "Arthur Wallis Mills 1910 Punch cartoon titled THE SUFFRAGETTE THAT KNEW JIU-JITSU showing one slender suffragette standing calmly beside a VOTES FOR WOMEN placard while cowering policemen huddle back and two officers hang over park railings"
+          "image_alt": "Arthur Wallis Mills 1910 Punch cartoon titled THE SUFFRAGETTE THAT KNEW JIU-JITSU showing one slender suffragette standing calmly beside a VOTES FOR WOMEN placard while cowering policemen huddle back and two officers hang over park railings",
+          "question": "What attitude towards the suffragette movement does the cartoonist in Punch express?"
         },
         {
           "letter": "E",
           "id": "pwb_l1_src_e",
           "type": "written",
           "title": "Source E (Statute Law): The Representation of the People Act 1918 (7 & 8 Geo. 5, c. 64)",
-          "context": "Passed in February 1918, this landmark legislation extended the parliamentary franchise to 8.4 million women over the age of thirty who met property qualifications, while granting universal suffrage to all men aged twenty-one and older. **Hinge Question:** Why did Parliament choose to enfranchise only older, property-owning women in 1918 rather than granting equal voting rights to all adult women?",
-          "hinge_question": "Why did Parliament choose to enfranchise only older, property-owning women in 1918 rather than granting equal voting rights to all adult women?",
+          "context": "Passed in February 1918, this landmark legislation extended the parliamentary franchise to 8.4 million women over the age of thirty who met property qualifications, while granting universal suffrage to all men aged twenty-one and older.",
           "text": "“A woman shall be entitled to be registered as a parliamentary elector for a constituency if she has attained the age of thirty years, and is not subject to any legal incapacity, and is entitled to be registered as a local government elector in respect of the occupation in that constituency of land or premises (not being a dwelling-house) of a yearly value of not less than five pounds, or of a dwelling-house, or is the wife of a husband entitled to be so registered.”",
           "caption": "Source E: Key clause from the Representation of the People Act 1918 granting parliamentary votes to women over thirty with property qualifications.",
           "question_badge": "Political Legislation",
           "question": "What age and property qualifications did women have to meet to vote in parliamentary elections under the 1918 Act?",
-          "enquiry_question": "What age and property qualifications did women have to meet to vote in parliamentary elections under the 1918 Act?",
           "model_answer": "Under the 1918 Act, women had to be at least thirty years old and either own property or be married to a man who owned property, unlike men who gained the vote at twenty-one without property requirements.",
-          "source_context": "Passed in February 1918, this landmark legislation extended the parliamentary franchise to 8.4 million women over the age of thirty who met property qualifications, while granting universal suffrage to all men aged twenty-one and older. **Hinge Question:** Why did Parliament choose to enfranchise only older, property-owning women in 1918 rather than granting equal voting rights to all adult women?",
+          "source_context": "Passed in February 1918, this landmark legislation extended the parliamentary franchise to 8.4 million women over the age of thirty who met property qualifications, while granting universal suffrage to all men aged twenty-one and older.",
           "teacher_notes": {
-            "source_context": "Passed in February 1918, this landmark legislation extended the parliamentary franchise to 8.4 million women over the age of thirty who met property qualifications, while granting universal suffrage to all men aged twenty-one and older. **Hinge Question:** Why did Parliament choose to enfranchise only older, property-owning women in 1918 rather than granting equal voting rights to all adult women?"
+            "source_context": "Passed in February 1918, this landmark legislation extended the parliamentary franchise to 8.4 million women over the age of thirty who met property qualifications, while granting universal suffrage to all men aged twenty-one and older. **Hinge Question:** Why did Parliament choose to enfranchise only older, property-owning women in 1918 rather than granting equal voting rights to all adult women?",
+            "hinge_question": "Why did Parliament choose to enfranchise only older, property-owning women in 1918 rather than granting equal voting rights to all adult women?"
           },
           "src": "",
           "image": ""
@@ -2064,17 +2061,16 @@ export default {
               "id": "pwb_l2_src_a",
               "type": "written",
               "title": "Source A (Government Appeal): Ministry of Health Circular on Operation Pied Piper & Shared Wartime Sacrifice (1940)",
-              "context": "During the Blitz, the evacuation of over 1.5 million city children to rural foster homes exposed wealthy rural families to the acute poverty and malnutrition of urban working-class children. **Hinge Question:** How did the shared suffering of total war create the political consensus needed to build a universal welfare state?",
-              "hinge_question": "How did the shared suffering of total war create the political consensus needed to build a universal welfare state?",
+              "context": "During the Blitz, the evacuation of over 1.5 million city children to rural foster homes exposed wealthy rural families to the acute poverty and malnutrition of urban working-class children.",
               "text": "“The evacuation scheme has brought together sections of the community that had never previously known one another. Householders in rural districts have seen for themselves the devastating effects of urban poverty, bad housing, and preventable disease upon our children. This experience has deepened the nationwide conviction that when victory is won, there can be no return to the neglected social conditions of the 1930s. The community as a whole must take collective responsibility for the health and welfare of every citizen.”",
               "caption": "Source A: Ministry of Health memorandum on the social impact of wartime evacuation and the public demand for postwar healthcare reform (1940).",
               "question_badge": "Social Impact of War",
               "question": "Why did the experience of wartime evacuation convince British people that postwar social reform was essential?",
-              "enquiry_question": "Why did the experience of wartime evacuation convince British people that postwar social reform was essential?",
               "model_answer": "Evacuation exposed rural families to the severe poverty and poor health of city children, convincing the public that the government had to guarantee healthcare and welfare for all citizens after the war.",
-              "source_context": "During the Blitz, the evacuation of over 1.5 million city children to rural foster homes exposed wealthy rural families to the acute poverty and malnutrition of urban working-class children. **Hinge Question:** How did the shared suffering of total war create the political consensus needed to build a universal welfare state?",
+              "source_context": "During the Blitz, the evacuation of over 1.5 million city children to rural foster homes exposed wealthy rural families to the acute poverty and malnutrition of urban working-class children.",
               "teacher_notes": {
-                "source_context": "During the Blitz, the evacuation of over 1.5 million city children to rural foster homes exposed wealthy rural families to the acute poverty and malnutrition of urban working-class children. **Hinge Question:** How did the shared suffering of total war create the political consensus needed to build a universal welfare state?"
+                "source_context": "During the Blitz, the evacuation of over 1.5 million city children to rural foster homes exposed wealthy rural families to the acute poverty and malnutrition of urban working-class children. **Hinge Question:** How did the shared suffering of total war create the political consensus needed to build a universal welfare state?",
+                "hinge_question": "How did the shared suffering of total war create the political consensus needed to build a universal welfare state?"
               },
               "src": "",
               "image": ""
@@ -2088,17 +2084,16 @@ export default {
             "id": "pwb_l2_src_a",
             "type": "written",
             "title": "Source A (Government Appeal): Ministry of Health Circular on Operation Pied Piper & Shared Wartime Sacrifice (1940)",
-            "context": "During the Blitz, the evacuation of over 1.5 million city children to rural foster homes exposed wealthy rural families to the acute poverty and malnutrition of urban working-class children. **Hinge Question:** How did the shared suffering of total war create the political consensus needed to build a universal welfare state?",
-            "hinge_question": "How did the shared suffering of total war create the political consensus needed to build a universal welfare state?",
+            "context": "During the Blitz, the evacuation of over 1.5 million city children to rural foster homes exposed wealthy rural families to the acute poverty and malnutrition of urban working-class children.",
             "text": "“The evacuation scheme has brought together sections of the community that had never previously known one another. Householders in rural districts have seen for themselves the devastating effects of urban poverty, bad housing, and preventable disease upon our children. This experience has deepened the nationwide conviction that when victory is won, there can be no return to the neglected social conditions of the 1930s. The community as a whole must take collective responsibility for the health and welfare of every citizen.”",
             "caption": "Source A: Ministry of Health memorandum on the social impact of wartime evacuation and the public demand for postwar healthcare reform (1940).",
             "question_badge": "Social Impact of War",
             "question": "Why did the experience of wartime evacuation convince British people that postwar social reform was essential?",
-            "enquiry_question": "Why did the experience of wartime evacuation convince British people that postwar social reform was essential?",
             "model_answer": "Evacuation exposed rural families to the severe poverty and poor health of city children, convincing the public that the government had to guarantee healthcare and welfare for all citizens after the war.",
-            "source_context": "During the Blitz, the evacuation of over 1.5 million city children to rural foster homes exposed wealthy rural families to the acute poverty and malnutrition of urban working-class children. **Hinge Question:** How did the shared suffering of total war create the political consensus needed to build a universal welfare state?",
+            "source_context": "During the Blitz, the evacuation of over 1.5 million city children to rural foster homes exposed wealthy rural families to the acute poverty and malnutrition of urban working-class children.",
             "teacher_notes": {
-              "source_context": "During the Blitz, the evacuation of over 1.5 million city children to rural foster homes exposed wealthy rural families to the acute poverty and malnutrition of urban working-class children. **Hinge Question:** How did the shared suffering of total war create the political consensus needed to build a universal welfare state?"
+              "source_context": "During the Blitz, the evacuation of over 1.5 million city children to rural foster homes exposed wealthy rural families to the acute poverty and malnutrition of urban working-class children. **Hinge Question:** How did the shared suffering of total war create the political consensus needed to build a universal welfare state?",
+              "hinge_question": "How did the shared suffering of total war create the political consensus needed to build a universal welfare state?"
             },
             "src": "",
             "image": ""
@@ -2120,16 +2115,16 @@ export default {
               "caption": "Title page of the landmark government Command Paper Cmd. 6404: 'Social Insurance and Allied Services: Report by Sir William Beveridge', published by HMSO in November 1942.",
               "citation": "His Majesty's Stationery Office (HMSO), London, Cmd. 6404, November 1942.",
               "question_badge": "Author's Purpose",
-              "enquiry_question": "Why did the British public react with such extraordinary enthusiasm to the publication of the Beveridge Report in the middle of World War II?",
               "model_answer": "The public responded with tremendous enthusiasm because the report offered an inspiring vision of a fairer postwar society that would eliminate pre-war poverty, providing hope during the darkest days of total war.",
-              "source_context": "The title page of the 1942 Beveridge Report, which sold over 630,000 copies and became an international bestseller. **Hinge Question:** Why was a bureaucratic white paper on social insurance able to capture the imagination of millions of wartime citizens?",
-              "hinge_question": "Why was a bureaucratic white paper on social insurance able to capture the imagination of millions of wartime citizens?",
+              "source_context": "The title page of the 1942 Beveridge Report, which sold over 630,000 copies and became an international bestseller.",
               "teacher_notes": {
-                "source_context": "The title page of the 1942 Beveridge Report, which sold over 630,000 copies and became an international bestseller. **Hinge Question:** Why was a bureaucratic white paper on social insurance able to capture the imagination of millions of wartime citizens?"
+                "source_context": "The title page of the 1942 Beveridge Report, which sold over 630,000 copies and became an international bestseller. **Hinge Question:** Why was a bureaucratic white paper on social insurance able to capture the imagination of millions of wartime citizens?",
+                "hinge_question": "Why was a bureaucratic white paper on social insurance able to capture the imagination of millions of wartime citizens?"
               },
               "id": "pwb_l2_src_b",
               "type": "visual",
-              "image_alt": "Title page of HMSO Command Paper Cmd. 6404 titled SOCIAL INSURANCE AND ALLIED SERVICES: Report by SIR WILLIAM BEVERIDGE, Presented to Parliament November 1942 beneath the Royal Coat of Arms"
+              "image_alt": "Title page of HMSO Command Paper Cmd. 6404 titled SOCIAL INSURANCE AND ALLIED SERVICES: Report by SIR WILLIAM BEVERIDGE, Presented to Parliament November 1942 beneath the Royal Coat of Arms",
+              "question": "Why did the British public react with such extraordinary enthusiasm to the publication of the Beveridge Report in the middle of World War II?"
             }
           ],
           "source": {
@@ -2143,15 +2138,15 @@ export default {
             "caption": "Title page of the landmark government Command Paper Cmd. 6404: 'Social Insurance and Allied Services: Report by Sir William Beveridge', published by HMSO in November 1942.",
             "citation": "His Majesty's Stationery Office (HMSO), London, Cmd. 6404, November 1942.",
             "question_badge": "Author's Purpose",
-            "enquiry_question": "Why did the British public react with such extraordinary enthusiasm to the publication of the Beveridge Report in the middle of World War II?",
             "model_answer": "The public responded with tremendous enthusiasm because the report offered an inspiring vision of a fairer postwar society that would eliminate pre-war poverty, providing hope during the darkest days of total war.",
-            "source_context": "The title page of the 1942 Beveridge Report, which sold over 630,000 copies and became an international bestseller. **Hinge Question:** Why was a bureaucratic white paper on social insurance able to capture the imagination of millions of wartime citizens?",
-            "hinge_question": "Why was a bureaucratic white paper on social insurance able to capture the imagination of millions of wartime citizens?",
+            "source_context": "The title page of the 1942 Beveridge Report, which sold over 630,000 copies and became an international bestseller.",
             "teacher_notes": {
-              "source_context": "The title page of the 1942 Beveridge Report, which sold over 630,000 copies and became an international bestseller. **Hinge Question:** Why was a bureaucratic white paper on social insurance able to capture the imagination of millions of wartime citizens?"
+              "source_context": "The title page of the 1942 Beveridge Report, which sold over 630,000 copies and became an international bestseller. **Hinge Question:** Why was a bureaucratic white paper on social insurance able to capture the imagination of millions of wartime citizens?",
+              "hinge_question": "Why was a bureaucratic white paper on social insurance able to capture the imagination of millions of wartime citizens?"
             },
             "id": "pwb_l2_src_b",
-            "image_alt": "Title page of HMSO Command Paper Cmd. 6404 titled SOCIAL INSURANCE AND ALLIED SERVICES: Report by SIR WILLIAM BEVERIDGE, Presented to Parliament November 1942 beneath the Royal Coat of Arms"
+            "image_alt": "Title page of HMSO Command Paper Cmd. 6404 titled SOCIAL INSURANCE AND ALLIED SERVICES: Report by SIR WILLIAM BEVERIDGE, Presented to Parliament November 1942 beneath the Royal Coat of Arms",
+            "question": "Why did the British public react with such extraordinary enthusiasm to the publication of the Beveridge Report in the middle of World War II?"
           },
           "content": "<span class=\"para-ref\">[2.1]</span> In December 1942, amidst the gloom of war, civil servant Sir William Beveridge published his revolutionary report, *Social Insurance and Allied Services*. The Beveridge Report became an overnight sensation with over 630,000 copies sold as queues formed outside government bookshops.<br><br><span class=\"para-ref\">[2.2]</span> Beveridge proposed a comprehensive post-war social security system dedicated to slaying the five giants blocking reconstruction: Want (poverty), Disease, Ignorance, Squalor, and Idleness (unemployment). Beveridge promised cradle to grave security, guaranteeing that no British citizen would ever be abandoned to destitution through sickness, unemployment, or old age.",
           "concept_widget": {
@@ -2294,16 +2289,16 @@ export default {
               "caption": "Prime Minister Clement Attlee (1883–1967), whose July 1945 Labour landslide of 146 seats delivered a decisive parliamentary mandate to implement the Beveridge Report and establish the Welfare State and NHS.",
               "citation": "Central Office of Information / National Portrait Gallery, London.",
               "question_badge": "Source Inference",
-              "enquiry_question": "What does the 1945 general election result suggest about the changing expectations of the British electorate after the Second World War?",
               "model_answer": "The result shows that voters firmly rejected the pre-war era of poverty, means tests, and mass unemployment, demanding an interventionist government committed to full employment, welfare, and housing.",
-              "source_context": "Official portrait of Clement Attlee taking office as Prime Minister in July 1945. **Hinge Question:** Why did British voters reject Churchill as a peacetime leader despite his victorious war leadership?",
-              "hinge_question": "Why did British voters reject Churchill as a peacetime leader despite his victorious war leadership?",
+              "source_context": "Official portrait of Clement Attlee taking office as Prime Minister in July 1945.",
               "teacher_notes": {
-                "source_context": "Official portrait of Clement Attlee taking office as Prime Minister in July 1945. **Hinge Question:** Why did British voters reject Churchill as a peacetime leader despite his victorious war leadership?"
+                "source_context": "Official portrait of Clement Attlee taking office as Prime Minister in July 1945. **Hinge Question:** Why did British voters reject Churchill as a peacetime leader despite his victorious war leadership?",
+                "hinge_question": "Why did British voters reject Churchill as a peacetime leader despite his victorious war leadership?"
               },
               "id": "pwb_l2_src_c",
               "type": "visual",
-              "image_alt": "Close-up portrait photograph of Labour Prime Minister Clement Attlee smiling in a three-piece tweed suit and patterned tie"
+              "image_alt": "Close-up portrait photograph of Labour Prime Minister Clement Attlee smiling in a three-piece tweed suit and patterned tie",
+              "question": "What does the 1945 general election result suggest about the changing expectations of the British electorate after the Second World War?"
             }
           ],
           "source": {
@@ -2314,16 +2309,16 @@ export default {
             "caption": "Prime Minister Clement Attlee (1883–1967), whose July 1945 Labour landslide of 146 seats delivered a decisive parliamentary mandate to implement the Beveridge Report and establish the Welfare State and NHS.",
             "citation": "Central Office of Information / National Portrait Gallery, London.",
             "question_badge": "Source Inference",
-            "enquiry_question": "What does the 1945 general election result suggest about the changing expectations of the British electorate after the Second World War?",
             "model_answer": "The result shows that voters firmly rejected the pre-war era of poverty, means tests, and mass unemployment, demanding an interventionist government committed to full employment, welfare, and housing.",
-            "source_context": "Official portrait of Clement Attlee taking office as Prime Minister in July 1945. **Hinge Question:** Why did British voters reject Churchill as a peacetime leader despite his victorious war leadership?",
-            "hinge_question": "Why did British voters reject Churchill as a peacetime leader despite his victorious war leadership?",
+            "source_context": "Official portrait of Clement Attlee taking office as Prime Minister in July 1945.",
             "teacher_notes": {
-              "source_context": "Official portrait of Clement Attlee taking office as Prime Minister in July 1945. **Hinge Question:** Why did British voters reject Churchill as a peacetime leader despite his victorious war leadership?"
+              "source_context": "Official portrait of Clement Attlee taking office as Prime Minister in July 1945. **Hinge Question:** Why did British voters reject Churchill as a peacetime leader despite his victorious war leadership?",
+              "hinge_question": "Why did British voters reject Churchill as a peacetime leader despite his victorious war leadership?"
             },
             "id": "pwb_l2_src_c",
             "type": "visual",
-            "image_alt": "Close-up portrait photograph of Labour Prime Minister Clement Attlee smiling in a three-piece tweed suit and patterned tie"
+            "image_alt": "Close-up portrait photograph of Labour Prime Minister Clement Attlee smiling in a three-piece tweed suit and patterned tie",
+            "question": "What does the 1945 general election result suggest about the changing expectations of the British electorate after the Second World War?"
           },
           "content": "<span class=\"para-ref\">[3.1]</span> In July 1945, Britain held its first General Election in a decade. While Prime Minister Winston Churchill was revered as a victorious wartime leader, his Conservative Party was burdened by memories of 1930s slump—mass unemployment, means-tested dole queues, and the Jarrow March.<br><br><span class=\"para-ref\">[3.2]</span> Clement Attlee's Labour Party ran on an inspiring socialist manifesto titled *Let Us Face the Future*, promising a firm pledge to build welfare state institutions, nationalise key industries, and eliminate poverty. The result was a political earthquake: a 146-seat Labour landslide that gave Attlee a massive parliamentary majority to reshape British society.",
           "image": "/images/post_war_britain/pwb_l2_b2_jarrow_marchers_1936.jpg",
@@ -2343,17 +2338,17 @@ export default {
               "text": "“No society can legitimately call itself civilised if a sick person is denied medical aid because of lack of means. Society becomes more wholesome, more serene, and spiritually healthier if it knows that its citizens have at the back of their consciousness the knowledge that not only themselves, but all their fellows, have access, when ill, to the best that medical skill can provide without payment.”",
               "citation": "Aneurin Bevan, Minister of Health, House of Commons Speech on the Second Reading of the National Health Service Bill (30 April 1946).",
               "question_badge": "Reliability & Provenance",
-              "enquiry_question": "Why is this parliamentary speech highly valuable for a historian investigating the core founding philosophy of the NHS?",
               "model_answer": "It is directly authored by the architect of the NHS, Aneurin Bevan, articulating the core egalitarian principle that healthcare is a universal moral right rather than a commercial commodity.",
-              "source_context": "Speech delivered in Parliament by Health Minister Aneurin Bevan introducing the National Health Service Bill on 30 April 1946. **Hinge Question:** Why did Bevan insist that healthcare must be free for everyone, including the wealthy, rather than means-tested only for the poor?",
-              "hinge_question": "Why did Bevan insist that healthcare must be free for everyone, including the wealthy, rather than means-tested only for the poor?",
+              "source_context": "Speech delivered in Parliament by Health Minister Aneurin Bevan introducing the National Health Service Bill on 30 April 1946.",
               "teacher_notes": {
-                "source_context": "Speech delivered in Parliament by Health Minister Aneurin Bevan introducing the National Health Service Bill on 30 April 1946. **Hinge Question:** Why did Bevan insist that healthcare must be free for everyone, including the wealthy, rather than means-tested only for the poor?"
+                "source_context": "Speech delivered in Parliament by Health Minister Aneurin Bevan introducing the National Health Service Bill on 30 April 1946. **Hinge Question:** Why did Bevan insist that healthcare must be free for everyone, including the wealthy, rather than means-tested only for the poor?",
+                "hinge_question": "Why did Bevan insist that healthcare must be free for everyone, including the wealthy, rather than means-tested only for the poor?"
               },
               "id": "pwb_l2_src_d",
               "type": "written",
               "src": "",
-              "image": ""
+              "image": "",
+              "question": "Why is this parliamentary speech highly valuable for a historian investigating the core founding philosophy of the NHS?"
             }
           ],
           "source": {
@@ -2362,17 +2357,17 @@ export default {
             "text": "“No society can legitimately call itself civilised if a sick person is denied medical aid because of lack of means. Society becomes more wholesome, more serene, and spiritually healthier if it knows that its citizens have at the back of their consciousness the knowledge that not only themselves, but all their fellows, have access, when ill, to the best that medical skill can provide without payment.”",
             "citation": "Aneurin Bevan, Minister of Health, House of Commons Speech on the Second Reading of the National Health Service Bill (30 April 1946).",
             "question_badge": "Reliability & Provenance",
-            "enquiry_question": "Why is this parliamentary speech highly valuable for a historian investigating the core founding philosophy of the NHS?",
             "model_answer": "It is directly authored by the architect of the NHS, Aneurin Bevan, articulating the core egalitarian principle that healthcare is a universal moral right rather than a commercial commodity.",
-            "source_context": "Speech delivered in Parliament by Health Minister Aneurin Bevan introducing the National Health Service Bill on 30 April 1946. **Hinge Question:** Why did Bevan insist that healthcare must be free for everyone, including the wealthy, rather than means-tested only for the poor?",
-            "hinge_question": "Why did Bevan insist that healthcare must be free for everyone, including the wealthy, rather than means-tested only for the poor?",
+            "source_context": "Speech delivered in Parliament by Health Minister Aneurin Bevan introducing the National Health Service Bill on 30 April 1946.",
             "teacher_notes": {
-              "source_context": "Speech delivered in Parliament by Health Minister Aneurin Bevan introducing the National Health Service Bill on 30 April 1946. **Hinge Question:** Why did Bevan insist that healthcare must be free for everyone, including the wealthy, rather than means-tested only for the poor?"
+              "source_context": "Speech delivered in Parliament by Health Minister Aneurin Bevan introducing the National Health Service Bill on 30 April 1946. **Hinge Question:** Why did Bevan insist that healthcare must be free for everyone, including the wealthy, rather than means-tested only for the poor?",
+              "hinge_question": "Why did Bevan insist that healthcare must be free for everyone, including the wealthy, rather than means-tested only for the poor?"
             },
             "id": "pwb_l2_src_d",
             "type": "written",
             "src": "",
-            "image": ""
+            "image": "",
+            "question": "Why is this parliamentary speech highly valuable for a historian investigating the core founding philosophy of the NHS?"
           },
           "content": "<span class=\"para-ref\">[4.1]</span> Between 1946 and 1948, Attlee's government passed sweeping legislation to build the Welfare State. The National Insurance Act 1946 established universal National Insurance, providing flat-rate sickness benefits, unemployment pay, and retirement pensions funded by weekly contributions from workers, employers, and the state.<br><br><span class=\"para-ref\">[4.2]</span> The National Assistance Act 1948 completed the transformation with the official abolition of Poor Law workhouses, ending the Victorian workhouse system forever and establishing an unconditional state safety net for anyone who fell outside the insurance scheme.",
           "image": "/images/post_war_britain/pwb_l2_b3_marylebone_workhouse_queue_wellcome.jpg",
@@ -2397,16 +2392,16 @@ export default {
               "caption": "A pair of 1948 standard-issue pink cellulose acetate coil spring NHS spectacles with round lenses, distributed completely free of charge to patients (Wellcome Collection L0059061).",
               "citation": "Wellcome Collection, London, Catalogue ID: L0059061.",
               "question_badge": "Historical Significance",
-              "enquiry_question": "Why did the provision of free spectacles and dental care generate an unprecedented rush of patients in the summer of 1948?",
               "model_answer": "The massive rush demonstrated the vast unmet healthcare needs of millions of working-class Britons who had previously been forced to endure untreated vision and dental problems due to private costs.",
-              "source_context": "Physical medical artifact: 1948 standard NHS spectacles. Within the first nine months, the NHS supplied over 5.25 million pairs of glasses and treated 6.5 million dental patients. **Hinge Question:** How does this simple pair of glasses prove that healthcare in Britain was deeply unequal prior to 1948?",
-              "hinge_question": "How does this simple pair of glasses prove that healthcare in Britain was deeply unequal prior to 1948?",
+              "source_context": "Physical medical artifact: 1948 standard NHS spectacles. Within the first nine months, the NHS supplied over 5.25 million pairs of glasses and treated 6.5 million dental patients.",
               "teacher_notes": {
-                "source_context": "Physical medical artifact: 1948 standard NHS spectacles. Within the first nine months, the NHS supplied over 5.25 million pairs of glasses and treated 6.5 million dental patients. **Hinge Question:** How does this simple pair of glasses prove that healthcare in Britain was deeply unequal prior to 1948?"
+                "source_context": "Physical medical artifact: 1948 standard NHS spectacles. Within the first nine months, the NHS supplied over 5.25 million pairs of glasses and treated 6.5 million dental patients. **Hinge Question:** How does this simple pair of glasses prove that healthcare in Britain was deeply unequal prior to 1948?",
+                "hinge_question": "How does this simple pair of glasses prove that healthcare in Britain was deeply unequal prior to 1948?"
               },
               "id": "pwb_l2_src_e",
               "type": "visual",
-              "image_alt": "Pair of 1948 standard-issue translucent pink cellulose-acetate NHS spectacles with round lenses and curved wire earpieces photographed on a dark background (Wellcome Collection L0059061)"
+              "image_alt": "Pair of 1948 standard-issue translucent pink cellulose-acetate NHS spectacles with round lenses and curved wire earpieces photographed on a dark background (Wellcome Collection L0059061)",
+              "question": "Why did the provision of free spectacles and dental care generate an unprecedented rush of patients in the summer of 1948?"
             }
           ],
           "source": {
@@ -2417,16 +2412,16 @@ export default {
             "caption": "A pair of 1948 standard-issue pink cellulose acetate coil spring NHS spectacles with round lenses, distributed completely free of charge to patients (Wellcome Collection L0059061).",
             "citation": "Wellcome Collection, London, Catalogue ID: L0059061.",
             "question_badge": "Historical Significance",
-            "enquiry_question": "Why did the provision of free spectacles and dental care generate an unprecedented rush of patients in the summer of 1948?",
             "model_answer": "The massive rush demonstrated the vast unmet healthcare needs of millions of working-class Britons who had previously been forced to endure untreated vision and dental problems due to private costs.",
-            "source_context": "Physical medical artifact: 1948 standard NHS spectacles. Within the first nine months, the NHS supplied over 5.25 million pairs of glasses and treated 6.5 million dental patients. **Hinge Question:** How does this simple pair of glasses prove that healthcare in Britain was deeply unequal prior to 1948?",
-            "hinge_question": "How does this simple pair of glasses prove that healthcare in Britain was deeply unequal prior to 1948?",
+            "source_context": "Physical medical artifact: 1948 standard NHS spectacles. Within the first nine months, the NHS supplied over 5.25 million pairs of glasses and treated 6.5 million dental patients.",
             "teacher_notes": {
-              "source_context": "Physical medical artifact: 1948 standard NHS spectacles. Within the first nine months, the NHS supplied over 5.25 million pairs of glasses and treated 6.5 million dental patients. **Hinge Question:** How does this simple pair of glasses prove that healthcare in Britain was deeply unequal prior to 1948?"
+              "source_context": "Physical medical artifact: 1948 standard NHS spectacles. Within the first nine months, the NHS supplied over 5.25 million pairs of glasses and treated 6.5 million dental patients. **Hinge Question:** How does this simple pair of glasses prove that healthcare in Britain was deeply unequal prior to 1948?",
+              "hinge_question": "How does this simple pair of glasses prove that healthcare in Britain was deeply unequal prior to 1948?"
             },
             "id": "pwb_l2_src_e",
             "type": "visual",
-            "image_alt": "Pair of 1948 standard-issue translucent pink cellulose-acetate NHS spectacles with round lenses and curved wire earpieces photographed on a dark background (Wellcome Collection L0059061)"
+            "image_alt": "Pair of 1948 standard-issue translucent pink cellulose-acetate NHS spectacles with round lenses and curved wire earpieces photographed on a dark background (Wellcome Collection L0059061)",
+            "question": "Why did the provision of free spectacles and dental care generate an unprecedented rush of patients in the summer of 1948?"
           },
           "content": "<p class=\"prose-p\"><span class=\"para-ref\">[2.5]</span> The crowning achievement of post-war welfare was the National Health Service (NHS), founded on 5 July 1948 under Health Minister Aneurin Bevan. Bevan faced intense resistance from private doctors in the British Medical Association, who threatened a total boycott rather than becoming salaried state employees.</p><p class=\"prose-p\">Bevan overcame opposition through his famous 'stuffed their mouths with gold' compromise, allowing senior hospital consultants to treat lucrative private patients in NHS beds. When the NHS opened, it guaranteed free medical care for all at the point of delivery, transforming healthcare from a privileged luxury into a universal civil right.</p>"
         }
@@ -2437,17 +2432,16 @@ export default {
           "id": "pwb_l2_src_a",
           "type": "written",
           "title": "Source A (Government Appeal): Ministry of Health Circular on Operation Pied Piper & Shared Wartime Sacrifice (1940)",
-          "context": "During the Blitz, the evacuation of over 1.5 million city children to rural foster homes exposed wealthy rural families to the acute poverty and malnutrition of urban working-class children. **Hinge Question:** How did the shared suffering of total war create the political consensus needed to build a universal welfare state?",
-          "hinge_question": "How did the shared suffering of total war create the political consensus needed to build a universal welfare state?",
+          "context": "During the Blitz, the evacuation of over 1.5 million city children to rural foster homes exposed wealthy rural families to the acute poverty and malnutrition of urban working-class children.",
           "text": "“The evacuation scheme has brought together sections of the community that had never previously known one another. Householders in rural districts have seen for themselves the devastating effects of urban poverty, bad housing, and preventable disease upon our children. This experience has deepened the nationwide conviction that when victory is won, there can be no return to the neglected social conditions of the 1930s. The community as a whole must take collective responsibility for the health and welfare of every citizen.”",
           "caption": "Source A: Ministry of Health memorandum on the social impact of wartime evacuation and the public demand for postwar healthcare reform (1940).",
           "question_badge": "Social Impact of War",
           "question": "Why did the experience of wartime evacuation convince British people that postwar social reform was essential?",
-          "enquiry_question": "Why did the experience of wartime evacuation convince British people that postwar social reform was essential?",
           "model_answer": "Evacuation exposed rural families to the severe poverty and poor health of city children, convincing the public that the government had to guarantee healthcare and welfare for all citizens after the war.",
-          "source_context": "During the Blitz, the evacuation of over 1.5 million city children to rural foster homes exposed wealthy rural families to the acute poverty and malnutrition of urban working-class children. **Hinge Question:** How did the shared suffering of total war create the political consensus needed to build a universal welfare state?",
+          "source_context": "During the Blitz, the evacuation of over 1.5 million city children to rural foster homes exposed wealthy rural families to the acute poverty and malnutrition of urban working-class children.",
           "teacher_notes": {
-            "source_context": "During the Blitz, the evacuation of over 1.5 million city children to rural foster homes exposed wealthy rural families to the acute poverty and malnutrition of urban working-class children. **Hinge Question:** How did the shared suffering of total war create the political consensus needed to build a universal welfare state?"
+            "source_context": "During the Blitz, the evacuation of over 1.5 million city children to rural foster homes exposed wealthy rural families to the acute poverty and malnutrition of urban working-class children. **Hinge Question:** How did the shared suffering of total war create the political consensus needed to build a universal welfare state?",
+            "hinge_question": "How did the shared suffering of total war create the political consensus needed to build a universal welfare state?"
           },
           "src": "",
           "image": ""
@@ -2460,17 +2454,17 @@ export default {
           "caption": "Title page of the landmark government Command Paper Cmd. 6404: 'Social Insurance and Allied Services: Report by Sir William Beveridge', published by HMSO in November 1942.",
           "citation": "His Majesty's Stationery Office (HMSO), London, Cmd. 6404, November 1942.",
           "question_badge": "Author's Purpose",
-          "enquiry_question": "Why did the British public react with such extraordinary enthusiasm to the publication of the Beveridge Report in the middle of World War II?",
           "model_answer": "The public responded with tremendous enthusiasm because the report offered an inspiring vision of a fairer postwar society that would eliminate pre-war poverty, providing hope during the darkest days of total war.",
-          "source_context": "The title page of the 1942 Beveridge Report, which sold over 630,000 copies and became an international bestseller. **Hinge Question:** Why was a bureaucratic white paper on social insurance able to capture the imagination of millions of wartime citizens?",
-          "hinge_question": "Why was a bureaucratic white paper on social insurance able to capture the imagination of millions of wartime citizens?",
+          "source_context": "The title page of the 1942 Beveridge Report, which sold over 630,000 copies and became an international bestseller.",
           "teacher_notes": {
-            "source_context": "The title page of the 1942 Beveridge Report, which sold over 630,000 copies and became an international bestseller. **Hinge Question:** Why was a bureaucratic white paper on social insurance able to capture the imagination of millions of wartime citizens?"
+            "source_context": "The title page of the 1942 Beveridge Report, which sold over 630,000 copies and became an international bestseller. **Hinge Question:** Why was a bureaucratic white paper on social insurance able to capture the imagination of millions of wartime citizens?",
+            "hinge_question": "Why was a bureaucratic white paper on social insurance able to capture the imagination of millions of wartime citizens?"
           },
           "id": "pwb_l2_src_b",
           "type": "visual",
           "context": "The title page of the 1942 Beveridge Report, which sold over 630,000 copies and became an international bestseller.",
-          "image_alt": "Title page of HMSO Command Paper Cmd. 6404 titled SOCIAL INSURANCE AND ALLIED SERVICES: Report by SIR WILLIAM BEVERIDGE, Presented to Parliament November 1942 beneath the Royal Coat of Arms"
+          "image_alt": "Title page of HMSO Command Paper Cmd. 6404 titled SOCIAL INSURANCE AND ALLIED SERVICES: Report by SIR WILLIAM BEVERIDGE, Presented to Parliament November 1942 beneath the Royal Coat of Arms",
+          "question": "Why did the British public react with such extraordinary enthusiasm to the publication of the Beveridge Report in the middle of World War II?"
         },
         {
           "letter": "C",
@@ -2483,16 +2477,16 @@ export default {
           "caption": "Prime Minister Clement Attlee (1883–1967), whose July 1945 Labour landslide of 146 seats delivered a decisive parliamentary mandate to implement the Beveridge Report and establish the Welfare State and NHS.",
           "citation": "Central Office of Information / National Portrait Gallery, London.",
           "question_badge": "Source Inference",
-          "enquiry_question": "What does the 1945 general election result suggest about the changing expectations of the British electorate after the Second World War?",
           "model_answer": "The result shows that voters firmly rejected the pre-war era of poverty, means tests, and mass unemployment, demanding an interventionist government committed to full employment, welfare, and housing.",
-          "source_context": "Official portrait of Clement Attlee taking office as Prime Minister in July 1945. **Hinge Question:** Why did British voters reject Churchill as a peacetime leader despite his victorious war leadership?",
-          "hinge_question": "Why did British voters reject Churchill as a peacetime leader despite his victorious war leadership?",
+          "source_context": "Official portrait of Clement Attlee taking office as Prime Minister in July 1945.",
           "teacher_notes": {
-            "source_context": "Official portrait of Clement Attlee taking office as Prime Minister in July 1945. **Hinge Question:** Why did British voters reject Churchill as a peacetime leader despite his victorious war leadership?"
+            "source_context": "Official portrait of Clement Attlee taking office as Prime Minister in July 1945. **Hinge Question:** Why did British voters reject Churchill as a peacetime leader despite his victorious war leadership?",
+            "hinge_question": "Why did British voters reject Churchill as a peacetime leader despite his victorious war leadership?"
           },
           "id": "pwb_l2_src_c",
           "context": "Official portrait of Clement Attlee taking office as Prime Minister in July 1945.",
-          "image_alt": "Close-up portrait photograph of Labour Prime Minister Clement Attlee smiling in a three-piece tweed suit and patterned tie"
+          "image_alt": "Close-up portrait photograph of Labour Prime Minister Clement Attlee smiling in a three-piece tweed suit and patterned tie",
+          "question": "What does the 1945 general election result suggest about the changing expectations of the British electorate after the Second World War?"
         },
         {
           "letter": "D",
@@ -2500,18 +2494,18 @@ export default {
           "text": "“No society can legitimately call itself civilised if a sick person is denied medical aid because of lack of means. Society becomes more wholesome, more serene, and spiritually healthier if it knows that its citizens have at the back of their consciousness the knowledge that not only themselves, but all their fellows, have access, when ill, to the best that medical skill can provide without payment.”",
           "citation": "Aneurin Bevan, Minister of Health, House of Commons Speech on the Second Reading of the National Health Service Bill (30 April 1946).",
           "question_badge": "Reliability & Provenance",
-          "enquiry_question": "Why is this parliamentary speech highly valuable for a historian investigating the core founding philosophy of the NHS?",
           "model_answer": "It is directly authored by the architect of the NHS, Aneurin Bevan, articulating the core egalitarian principle that healthcare is a universal moral right rather than a commercial commodity.",
-          "source_context": "Speech delivered in Parliament by Health Minister Aneurin Bevan introducing the National Health Service Bill on 30 April 1946. **Hinge Question:** Why did Bevan insist that healthcare must be free for everyone, including the wealthy, rather than means-tested only for the poor?",
-          "hinge_question": "Why did Bevan insist that healthcare must be free for everyone, including the wealthy, rather than means-tested only for the poor?",
+          "source_context": "Speech delivered in Parliament by Health Minister Aneurin Bevan introducing the National Health Service Bill on 30 April 1946.",
           "teacher_notes": {
-            "source_context": "Speech delivered in Parliament by Health Minister Aneurin Bevan introducing the National Health Service Bill on 30 April 1946. **Hinge Question:** Why did Bevan insist that healthcare must be free for everyone, including the wealthy, rather than means-tested only for the poor?"
+            "source_context": "Speech delivered in Parliament by Health Minister Aneurin Bevan introducing the National Health Service Bill on 30 April 1946. **Hinge Question:** Why did Bevan insist that healthcare must be free for everyone, including the wealthy, rather than means-tested only for the poor?",
+            "hinge_question": "Why did Bevan insist that healthcare must be free for everyone, including the wealthy, rather than means-tested only for the poor?"
           },
           "id": "pwb_l2_src_d",
           "type": "written",
           "src": "",
           "image": "",
-          "context": "Speech delivered in Parliament by Health Minister Aneurin Bevan introducing the National Health Service Bill on 30 April 1946."
+          "context": "Speech delivered in Parliament by Health Minister Aneurin Bevan introducing the National Health Service Bill on 30 April 1946.",
+          "question": "Why is this parliamentary speech highly valuable for a historian investigating the core founding philosophy of the NHS?"
         },
         {
           "letter": "E",
@@ -2521,17 +2515,17 @@ export default {
           "caption": "A pair of 1948 standard-issue pink cellulose acetate coil spring NHS spectacles with round lenses, distributed completely free of charge to patients (Wellcome Collection L0059061).",
           "citation": "Wellcome Collection, London, Catalogue ID: L0059061.",
           "question_badge": "Historical Significance",
-          "enquiry_question": "Why did the provision of free spectacles and dental care generate an unprecedented rush of patients in the summer of 1948?",
           "model_answer": "The massive rush demonstrated the vast unmet healthcare needs of millions of working-class Britons who had previously been forced to endure untreated vision and dental problems due to private costs.",
-          "source_context": "Physical medical artifact: 1948 standard NHS spectacles. Within the first nine months, the NHS supplied over 5.25 million pairs of glasses and treated 6.5 million dental patients. **Hinge Question:** How does this simple pair of glasses prove that healthcare in Britain was deeply unequal prior to 1948?",
-          "hinge_question": "How does this simple pair of glasses prove that healthcare in Britain was deeply unequal prior to 1948?",
+          "source_context": "Physical medical artifact: 1948 standard NHS spectacles. Within the first nine months, the NHS supplied over 5.25 million pairs of glasses and treated 6.5 million dental patients.",
           "teacher_notes": {
-            "source_context": "Physical medical artifact: 1948 standard NHS spectacles. Within the first nine months, the NHS supplied over 5.25 million pairs of glasses and treated 6.5 million dental patients. **Hinge Question:** How does this simple pair of glasses prove that healthcare in Britain was deeply unequal prior to 1948?"
+            "source_context": "Physical medical artifact: 1948 standard NHS spectacles. Within the first nine months, the NHS supplied over 5.25 million pairs of glasses and treated 6.5 million dental patients. **Hinge Question:** How does this simple pair of glasses prove that healthcare in Britain was deeply unequal prior to 1948?",
+            "hinge_question": "How does this simple pair of glasses prove that healthcare in Britain was deeply unequal prior to 1948?"
           },
           "id": "pwb_l2_src_e",
           "type": "visual",
           "context": "Physical medical artifact: 1948 standard NHS spectacles. Within the first nine months, the NHS supplied over 5.25 million pairs of glasses and treated 6.5 million dental patients.",
-          "image_alt": "Pair of 1948 standard-issue translucent pink cellulose-acetate NHS spectacles with round lenses and curved wire earpieces photographed on a dark background (Wellcome Collection L0059061)"
+          "image_alt": "Pair of 1948 standard-issue translucent pink cellulose-acetate NHS spectacles with round lenses and curved wire earpieces photographed on a dark background (Wellcome Collection L0059061)",
+          "question": "Why did the provision of free spectacles and dental care generate an unprecedented rush of patients in the summer of 1948?"
         }
       ],
       "comprehension": [
@@ -3865,17 +3859,17 @@ export default {
               "text": "“Every person who under this Act is a citizen of the United Kingdom and Colonies or who under any enactment for the time being in force in any country mentioned in subsection (3) of this section is a citizen of that country shall by virtue of that citizenship have the status of a British subject. Citizens of the United Kingdom and Colonies shall possess the unrestricted right of entry, residence, and employment within the United Kingdom.”",
               "citation": "British Nationality Act 1948 (11 & 12 Geo. 6. c. 56), Section 1.",
               "question_badge": "Author's Purpose",
-              "enquiry_question": "Why did Clement Attlee's government pass the British Nationality Act in 1948 granting unrestricted entry to Commonwealth citizens?",
               "model_answer": "The government passed the Act to preserve the unity of the British Empire and Commonwealth by maintaining a single global British citizenship, while simultaneously addressing acute industrial and healthcare labour shortages at home.",
-              "source_context": "The statutory text of the British Nationality Act 1948 passed by Parliament. **Hinge Question:** Why did British politicians celebrate imperial citizenship in theory, yet express private alarm when non-white citizens actually arrived to live in Britain?",
-              "hinge_question": "Why did British politicians celebrate imperial citizenship in theory, yet express private alarm when non-white citizens actually arrived to live in Britain?",
+              "source_context": "The statutory text of the British Nationality Act 1948 passed by Parliament.",
               "teacher_notes": {
-                "source_context": "The statutory text of the British Nationality Act 1948 passed by Parliament. **Hinge Question:** Why did British politicians celebrate imperial citizenship in theory, yet express private alarm when non-white citizens actually arrived to live in Britain?"
+                "source_context": "The statutory text of the British Nationality Act 1948 passed by Parliament. **Hinge Question:** Why did British politicians celebrate imperial citizenship in theory, yet express private alarm when non-white citizens actually arrived to live in Britain?",
+                "hinge_question": "Why did British politicians celebrate imperial citizenship in theory, yet express private alarm when non-white citizens actually arrived to live in Britain?"
               },
               "id": "pwb_l3_src_a",
               "type": "written",
               "src": "",
-              "image": ""
+              "image": "",
+              "question": "Why did Clement Attlee's government pass the British Nationality Act in 1948 granting unrestricted entry to Commonwealth citizens?"
             }
           ],
           "source": {
@@ -3884,17 +3878,17 @@ export default {
             "text": "“Every person who under this Act is a citizen of the United Kingdom and Colonies or who under any enactment for the time being in force in any country mentioned in subsection (3) of this section is a citizen of that country shall by virtue of that citizenship have the status of a British subject. Citizens of the United Kingdom and Colonies shall possess the unrestricted right of entry, residence, and employment within the United Kingdom.”",
             "citation": "British Nationality Act 1948 (11 & 12 Geo. 6. c. 56), Section 1.",
             "question_badge": "Author's Purpose",
-            "enquiry_question": "Why did Clement Attlee's government pass the British Nationality Act in 1948 granting unrestricted entry to Commonwealth citizens?",
             "model_answer": "The government passed the Act to preserve the unity of the British Empire and Commonwealth by maintaining a single global British citizenship, while simultaneously addressing acute industrial and healthcare labour shortages at home.",
-            "source_context": "The statutory text of the British Nationality Act 1948 passed by Parliament. **Hinge Question:** Why did British politicians celebrate imperial citizenship in theory, yet express private alarm when non-white citizens actually arrived to live in Britain?",
-            "hinge_question": "Why did British politicians celebrate imperial citizenship in theory, yet express private alarm when non-white citizens actually arrived to live in Britain?",
+            "source_context": "The statutory text of the British Nationality Act 1948 passed by Parliament.",
             "teacher_notes": {
-              "source_context": "The statutory text of the British Nationality Act 1948 passed by Parliament. **Hinge Question:** Why did British politicians celebrate imperial citizenship in theory, yet express private alarm when non-white citizens actually arrived to live in Britain?"
+              "source_context": "The statutory text of the British Nationality Act 1948 passed by Parliament. **Hinge Question:** Why did British politicians celebrate imperial citizenship in theory, yet express private alarm when non-white citizens actually arrived to live in Britain?",
+              "hinge_question": "Why did British politicians celebrate imperial citizenship in theory, yet express private alarm when non-white citizens actually arrived to live in Britain?"
             },
             "id": "pwb_l3_src_a",
             "type": "written",
             "src": "",
-            "image": ""
+            "image": "",
+            "question": "Why did Clement Attlee's government pass the British Nationality Act in 1948 granting unrestricted entry to Commonwealth citizens?"
           },
           "content": "<span class=\"para-ref\">[1.1]</span> In 1945, post-war Britain faced catastrophic economic and physical exhaustion. Rebuilding bomb-damaged infrastructure, clearing Blitz rubble, and expanding nationalised coal mines, railways, and London Transport required millions of workers.<br><br><span class=\"para-ref\">[1.2]</span> Compounding the shortage, the founding of the NHS in 1948 created an urgent need for staff needed for NHS & rail networks, hospitals, and bus depots. Because hundreds of thousands of British workers had been killed in the war, the British government responded by actively recruiting Commonwealth workers from across the Caribbean, India, and Pakistan to rebuild the country.",
           "image": "/images/post_war_britain/pwb_l3_b0_london_blitz_damage_hu36188.jpg",
@@ -3916,16 +3910,16 @@ export default {
               "caption": "The official Ministry of Transport passenger manifest header for HMT Empire Windrush, docking at Tilbury on 22 June 1948, listing occupations including mechanics, clerks, and nurses (The National Archives, BT 26/1237).",
               "citation": "The National Archives (Kew), Board of Trade Passenger Lists, BT 26/1237.",
               "question_badge": "Source Inference",
-              "enquiry_question": "What does the official passenger manifest in Source B reveal about the skills and backgrounds of the Caribbean passengers on the Empire Windrush?",
               "model_answer": "The manifest reveals that passengers were skilled professionals—including carpenters, welders, mechanics, clerks, and nurses—who arrived specifically to fill essential vacancies in Britain's postwar economy.",
-              "source_context": "Original Board of Trade passenger shipping manifest for the Empire Windrush preserved at The National Archives, Kew (BT 26/1237). **Hinge Question:** Why does this administrative document challenge the hostile contemporary stereotype that Commonwealth arrivals were unskilled economic dependents?",
-              "hinge_question": "Why does this administrative document challenge the hostile contemporary stereotype that Commonwealth arrivals were unskilled economic dependents?",
+              "source_context": "Original Board of Trade passenger shipping manifest for the Empire Windrush preserved at The National Archives, Kew (BT 26/1237).",
               "teacher_notes": {
-                "source_context": "Original Board of Trade passenger shipping manifest for the Empire Windrush preserved at The National Archives, Kew (BT 26/1237). **Hinge Question:** Why does this administrative document challenge the hostile contemporary stereotype that Commonwealth arrivals were unskilled economic dependents?"
+                "source_context": "Original Board of Trade passenger shipping manifest for the Empire Windrush preserved at The National Archives, Kew (BT 26/1237). **Hinge Question:** Why does this administrative document challenge the hostile contemporary stereotype that Commonwealth arrivals were unskilled economic dependents?",
+                "hinge_question": "Why does this administrative document challenge the hostile contemporary stereotype that Commonwealth arrivals were unskilled economic dependents?"
               },
               "id": "pwb_l3_src_b",
               "type": "visual",
-              "image_alt": "Official Board of Trade inward passenger manifest header typed M.V. EMPIRE WINDRUSH, Port of Arrival Tilbury, stamped Immigration Office London 22 JUN 1948"
+              "image_alt": "Official Board of Trade inward passenger manifest header typed M.V. EMPIRE WINDRUSH, Port of Arrival Tilbury, stamped Immigration Office London 22 JUN 1948",
+              "question": "What does the official passenger manifest in Source B reveal about the skills and backgrounds of the Caribbean passengers on the Empire Windrush?"
             }
           ],
           "source": {
@@ -3936,16 +3930,16 @@ export default {
             "caption": "The official Ministry of Transport passenger manifest header for HMT Empire Windrush, docking at Tilbury on 22 June 1948, listing occupations including mechanics, clerks, and nurses (The National Archives, BT 26/1237).",
             "citation": "The National Archives (Kew), Board of Trade Passenger Lists, BT 26/1237.",
             "question_badge": "Source Inference",
-            "enquiry_question": "What does the official passenger manifest in Source B reveal about the skills and backgrounds of the Caribbean passengers on the Empire Windrush?",
             "model_answer": "The manifest reveals that passengers were skilled professionals—including carpenters, welders, mechanics, clerks, and nurses—who arrived specifically to fill essential vacancies in Britain's postwar economy.",
-            "source_context": "Original Board of Trade passenger shipping manifest for the Empire Windrush preserved at The National Archives, Kew (BT 26/1237). **Hinge Question:** Why does this administrative document challenge the hostile contemporary stereotype that Commonwealth arrivals were unskilled economic dependents?",
-            "hinge_question": "Why does this administrative document challenge the hostile contemporary stereotype that Commonwealth arrivals were unskilled economic dependents?",
+            "source_context": "Original Board of Trade passenger shipping manifest for the Empire Windrush preserved at The National Archives, Kew (BT 26/1237).",
             "teacher_notes": {
-              "source_context": "Original Board of Trade passenger shipping manifest for the Empire Windrush preserved at The National Archives, Kew (BT 26/1237). **Hinge Question:** Why does this administrative document challenge the hostile contemporary stereotype that Commonwealth arrivals were unskilled economic dependents?"
+              "source_context": "Original Board of Trade passenger shipping manifest for the Empire Windrush preserved at The National Archives, Kew (BT 26/1237). **Hinge Question:** Why does this administrative document challenge the hostile contemporary stereotype that Commonwealth arrivals were unskilled economic dependents?",
+              "hinge_question": "Why does this administrative document challenge the hostile contemporary stereotype that Commonwealth arrivals were unskilled economic dependents?"
             },
             "id": "pwb_l3_src_b",
             "type": "visual",
-            "image_alt": "Official Board of Trade inward passenger manifest header typed M.V. EMPIRE WINDRUSH, Port of Arrival Tilbury, stamped Immigration Office London 22 JUN 1948"
+            "image_alt": "Official Board of Trade inward passenger manifest header typed M.V. EMPIRE WINDRUSH, Port of Arrival Tilbury, stamped Immigration Office London 22 JUN 1948",
+            "question": "What does the official passenger manifest in Source B reveal about the skills and backgrounds of the Caribbean passengers on the Empire Windrush?"
           },
           "content": "<span class=\"para-ref\">[2.1]</span> To cement imperial ties, Clement Attlee’s government passed the historic **British Nationality Act 1948**. The Act created the legal category of Citizens of UK and colonies (CUKC), granting all 800 million subjects across the British Empire an unrestricted right of entry to live, work, and settle in Great Britain without visas.<br><br><span class=\"para-ref\">[2.2]</span> Crucially, Commonwealth citizens held equal British subject status under the Crown, carrying British passports that granted them full civil and political rights, including the immediate right to vote in British general elections.",
           "concept_widget": {
@@ -4068,16 +4062,16 @@ export default {
               "caption": "Trinidadian calypsonian Lord Kitchener (Aldwyn Roberts, 1922–2000), who arrived on the Empire Windrush and famously sang 'London is the Place for Me' to Pathé News cameras upon landing at Tilbury.",
               "citation": "Archival Portrait / Trinidad & Tobago Ministry of Culture Archive.",
               "question_badge": "Historical Significance",
-              "enquiry_question": "How did Lord Kitchener's famous song 'London is the Place for Me' capture the optimism and patriotism of the Windrush pioneers?",
               "model_answer": "His song expressed the deep affection Caribbean migrants felt towards Britain as their ancestral 'Mother Country', capturing their proud belief that they were arriving as equal British subjects to contribute to London's life.",
-              "source_context": "Photograph of young Lord Kitchener, the renowned calypso artist who sang 'London is the Place for Me' on the quayside at Tilbury in June 1948. **Hinge Question:** How did the reality of British racial hostility contrast with the boundless optimism expressed in Kitchener's calypso?",
-              "hinge_question": "How did the reality of British racial hostility contrast with the boundless optimism expressed in Kitchener's calypso?",
+              "source_context": "Photograph of young Lord Kitchener, the renowned calypso artist who sang 'London is the Place for Me' on the quayside at Tilbury in June 1948.",
               "teacher_notes": {
-                "source_context": "Photograph of young Lord Kitchener, the renowned calypso artist who sang 'London is the Place for Me' on the quayside at Tilbury in June 1948. **Hinge Question:** How did the reality of British racial hostility contrast with the boundless optimism expressed in Kitchener's calypso?"
+                "source_context": "Photograph of young Lord Kitchener, the renowned calypso artist who sang 'London is the Place for Me' on the quayside at Tilbury in June 1948. **Hinge Question:** How did the reality of British racial hostility contrast with the boundless optimism expressed in Kitchener's calypso?",
+                "hinge_question": "How did the reality of British racial hostility contrast with the boundless optimism expressed in Kitchener's calypso?"
               },
               "id": "pwb_l3_src_c",
               "type": "visual",
-              "image_alt": "Full-length archival newspaper photograph of Trinidadian calypsonian Aldwyn Roberts ('Lord Kitchener') wearing a dark double-breasted suit, two-tone shoes, and light fedora hat while holding a walking cane"
+              "image_alt": "Full-length archival newspaper photograph of Trinidadian calypsonian Aldwyn Roberts ('Lord Kitchener') wearing a dark double-breasted suit, two-tone shoes, and light fedora hat while holding a walking cane",
+              "question": "How did Lord Kitchener's famous song 'London is the Place for Me' capture the optimism and patriotism of the Windrush pioneers?"
             }
           ],
           "source": {
@@ -4088,16 +4082,16 @@ export default {
             "caption": "Trinidadian calypsonian Lord Kitchener (Aldwyn Roberts, 1922–2000), who arrived on the Empire Windrush and famously sang 'London is the Place for Me' to Pathé News cameras upon landing at Tilbury.",
             "citation": "Archival Portrait / Trinidad & Tobago Ministry of Culture Archive.",
             "question_badge": "Historical Significance",
-            "enquiry_question": "How did Lord Kitchener's famous song 'London is the Place for Me' capture the optimism and patriotism of the Windrush pioneers?",
             "model_answer": "His song expressed the deep affection Caribbean migrants felt towards Britain as their ancestral 'Mother Country', capturing their proud belief that they were arriving as equal British subjects to contribute to London's life.",
-            "source_context": "Photograph of young Lord Kitchener, the renowned calypso artist who sang 'London is the Place for Me' on the quayside at Tilbury in June 1948. **Hinge Question:** How did the reality of British racial hostility contrast with the boundless optimism expressed in Kitchener's calypso?",
-            "hinge_question": "How did the reality of British racial hostility contrast with the boundless optimism expressed in Kitchener's calypso?",
+            "source_context": "Photograph of young Lord Kitchener, the renowned calypso artist who sang 'London is the Place for Me' on the quayside at Tilbury in June 1948.",
             "teacher_notes": {
-              "source_context": "Photograph of young Lord Kitchener, the renowned calypso artist who sang 'London is the Place for Me' on the quayside at Tilbury in June 1948. **Hinge Question:** How did the reality of British racial hostility contrast with the boundless optimism expressed in Kitchener's calypso?"
+              "source_context": "Photograph of young Lord Kitchener, the renowned calypso artist who sang 'London is the Place for Me' on the quayside at Tilbury in June 1948. **Hinge Question:** How did the reality of British racial hostility contrast with the boundless optimism expressed in Kitchener's calypso?",
+              "hinge_question": "How did the reality of British racial hostility contrast with the boundless optimism expressed in Kitchener's calypso?"
             },
             "id": "pwb_l3_src_c",
             "type": "visual",
-            "image_alt": "Full-length archival newspaper photograph of Trinidadian calypsonian Aldwyn Roberts ('Lord Kitchener') wearing a dark double-breasted suit, two-tone shoes, and light fedora hat while holding a walking cane"
+            "image_alt": "Full-length archival newspaper photograph of Trinidadian calypsonian Aldwyn Roberts ('Lord Kitchener') wearing a dark double-breasted suit, two-tone shoes, and light fedora hat while holding a walking cane",
+            "question": "How did Lord Kitchener's famous song 'London is the Place for Me' capture the optimism and patriotism of the Windrush pioneers?"
           },
           "content": "<p class=\"prose-p\"><span class=\"para-ref\">[3.3]</span> On 22 June 1948, the converted troopship HMT Empire Windrush docked at Tilbury Docks in Essex. Carrying 492 passengers from Jamaica, Trinidad, and Barbados, the ship brought eager Caribbean pioneer arrivals answering Britain’s urgent post-war labour shortage.</p><p class=\"prose-p\">As British Pathé newsreel cameras filmed the historic arrival, Trinidadian calypso singer Aldwyn Roberts performed his legendary Lord Kitchener calypso recording, singing \"London is the place for me\" from the deck. These pioneering arrivals included RAF veterans, nurses, and artisans who laid the foundation of modern multicultural Britain.</p>",
           "stage_hook_map": {
@@ -4270,17 +4264,17 @@ export default {
               "text": "“When I first walked down the streets of Ladbroke Grove looking for a room, you would see cards in the newsagent windows: 'Room to let — No Irish, No Blacks, No Dogs'. You would knock on a door where a 'Vacant' sign was in the window, and as soon as the landlady opened the door and saw my face, she would slam it shut and say, 'The room has just gone.' We had to club together in 'Pardner' hand-to-hand savings just to buy our own dilapidated houses because no British bank would touch us.”",
               "citation": "Oral History Testimony of Jamaican arrival Alford Gardner, BBC Windrush Archive (Recorded 1998).",
               "question_badge": "Source Evaluation",
-              "enquiry_question": "What does Alford Gardner's testimony reveal about the everyday barriers encountered by Caribbean arrivals in 1950s Britain?",
               "model_answer": "It reveals that Caribbean migrants faced open, systematic racial discrimination from landlords and financial institutions, forcing them to rely on mutual-aid community networks like 'Pardner' schemes to secure basic shelter.",
-              "source_context": "Oral history interview with Alford Gardner, who served in the RAF during WWII and arrived on the Empire Windrush in 1948. **Hinge Question:** Why was overt racial discrimination completely legal in housing and employment in Britain throughout the 1950s?",
-              "hinge_question": "Why was overt racial discrimination completely legal in housing and employment in Britain throughout the 1950s?",
+              "source_context": "Oral history interview with Alford Gardner, who served in the RAF during WWII and arrived on the Empire Windrush in 1948.",
               "teacher_notes": {
-                "source_context": "Oral history interview with Alford Gardner, who served in the RAF during WWII and arrived on the Empire Windrush in 1948. **Hinge Question:** Why was overt racial discrimination completely legal in housing and employment in Britain throughout the 1950s?"
+                "source_context": "Oral history interview with Alford Gardner, who served in the RAF during WWII and arrived on the Empire Windrush in 1948. **Hinge Question:** Why was overt racial discrimination completely legal in housing and employment in Britain throughout the 1950s?",
+                "hinge_question": "Why was overt racial discrimination completely legal in housing and employment in Britain throughout the 1950s?"
               },
               "id": "pwb_l3_src_d",
               "type": "written",
               "src": "",
-              "image": ""
+              "image": "",
+              "question": "What does Alford Gardner's testimony reveal about the everyday barriers encountered by Caribbean arrivals in 1950s Britain?"
             }
           ],
           "source": {
@@ -4289,17 +4283,17 @@ export default {
             "text": "“When I first walked down the streets of Ladbroke Grove looking for a room, you would see cards in the newsagent windows: 'Room to let — No Irish, No Blacks, No Dogs'. You would knock on a door where a 'Vacant' sign was in the window, and as soon as the landlady opened the door and saw my face, she would slam it shut and say, 'The room has just gone.' We had to club together in 'Pardner' hand-to-hand savings just to buy our own dilapidated houses because no British bank would touch us.”",
             "citation": "Oral History Testimony of Jamaican arrival Alford Gardner, BBC Windrush Archive (Recorded 1998).",
             "question_badge": "Source Evaluation",
-            "enquiry_question": "What does Alford Gardner's testimony reveal about the everyday barriers encountered by Caribbean arrivals in 1950s Britain?",
             "model_answer": "It reveals that Caribbean migrants faced open, systematic racial discrimination from landlords and financial institutions, forcing them to rely on mutual-aid community networks like 'Pardner' schemes to secure basic shelter.",
-            "source_context": "Oral history interview with Alford Gardner, who served in the RAF during WWII and arrived on the Empire Windrush in 1948. **Hinge Question:** Why was overt racial discrimination completely legal in housing and employment in Britain throughout the 1950s?",
-            "hinge_question": "Why was overt racial discrimination completely legal in housing and employment in Britain throughout the 1950s?",
+            "source_context": "Oral history interview with Alford Gardner, who served in the RAF during WWII and arrived on the Empire Windrush in 1948.",
             "teacher_notes": {
-              "source_context": "Oral history interview with Alford Gardner, who served in the RAF during WWII and arrived on the Empire Windrush in 1948. **Hinge Question:** Why was overt racial discrimination completely legal in housing and employment in Britain throughout the 1950s?"
+              "source_context": "Oral history interview with Alford Gardner, who served in the RAF during WWII and arrived on the Empire Windrush in 1948. **Hinge Question:** Why was overt racial discrimination completely legal in housing and employment in Britain throughout the 1950s?",
+              "hinge_question": "Why was overt racial discrimination completely legal in housing and employment in Britain throughout the 1950s?"
             },
             "id": "pwb_l3_src_d",
             "type": "written",
             "src": "",
-            "image": ""
+            "image": "",
+            "question": "What does Alford Gardner's testimony reveal about the everyday barriers encountered by Caribbean arrivals in 1950s Britain?"
           },
           "content": "<span class=\"para-ref\">[4.1]</span> Despite their legal citizenship, Caribbean arrivals faced harsh, everyday racism. In private housing, landlords displayed notorious signs: 'No Blacks, No Dogs, No Irish' in boarding house windows, forcing families into overcrowded, substandard rooms in cold, damp inner-city boroughs.<br><br><span class=\"para-ref\">[4.2]</span> High-street banks refused bank loans & mortgages to Black buyers. In response, Caribbean communities demonstrated remarkable resilience, establishing cooperative \"pardner\" schemes (informal rotating credit unions) where members pooled savings each week to help families buy their own freehold homes.",
           "image": "/images/post_war_britain/pwb_l3_b3_brixton_electric_avenue_market.jpg",
@@ -4322,17 +4316,17 @@ export default {
               "text": "“A people's art is the genesis of their freedom. In the face of the racial terror of Notting Hill, our answer must not be fear or retreat, but unity and cultural pride. This Carnival is our declaration to Britain that we are here to stay, that our art, our calypso, and our steel bands are an enduring gift to this country. We bring our Caribbean warmth to wash away the bitterness of hatred.”",
               "citation": "Claudia Jones, Editorial in the West Indian Gazette (January 1959), announcing the St Pancras Town Hall Carnival.",
               "question_badge": "Cross-Referencing",
-              "enquiry_question": "How did Claudia Jones propose to combat racial hatred following the 1958 Notting Hill riots?",
               "model_answer": "Jones proposed using joyful cultural celebration, Caribbean music, and public carnivals to assert Black dignity and bring diverse communities together in mutual respect.",
-              "source_context": "Editorial written by Claudia Jones in the West Indian Gazette launching the first London Caribbean Carnival at St Pancras Town Hall in January 1959. **Hinge Question:** Why was a cultural celebration like Carnival an effective political response to violent racial riots?",
-              "hinge_question": "Why was a cultural celebration like Carnival an effective political response to violent racial riots?",
+              "source_context": "Editorial written by Claudia Jones in the West Indian Gazette launching the first London Caribbean Carnival at St Pancras Town Hall in January 1959.",
               "teacher_notes": {
-                "source_context": "Editorial written by Claudia Jones in the West Indian Gazette launching the first London Caribbean Carnival at St Pancras Town Hall in January 1959. **Hinge Question:** Why was a cultural celebration like Carnival an effective political response to violent racial riots?"
+                "source_context": "Editorial written by Claudia Jones in the West Indian Gazette launching the first London Caribbean Carnival at St Pancras Town Hall in January 1959. **Hinge Question:** Why was a cultural celebration like Carnival an effective political response to violent racial riots?",
+                "hinge_question": "Why was a cultural celebration like Carnival an effective political response to violent racial riots?"
               },
               "id": "pwb_l3_src_e",
               "type": "written",
               "src": "",
-              "image": ""
+              "image": "",
+              "question": "How did Claudia Jones propose to combat racial hatred following the 1958 Notting Hill riots?"
             }
           ],
           "source": {
@@ -4341,17 +4335,17 @@ export default {
             "text": "“A people's art is the genesis of their freedom. In the face of the racial terror of Notting Hill, our answer must not be fear or retreat, but unity and cultural pride. This Carnival is our declaration to Britain that we are here to stay, that our art, our calypso, and our steel bands are an enduring gift to this country. We bring our Caribbean warmth to wash away the bitterness of hatred.”",
             "citation": "Claudia Jones, Editorial in the West Indian Gazette (January 1959), announcing the St Pancras Town Hall Carnival.",
             "question_badge": "Cross-Referencing",
-            "enquiry_question": "How did Claudia Jones propose to combat racial hatred following the 1958 Notting Hill riots?",
             "model_answer": "Jones proposed using joyful cultural celebration, Caribbean music, and public carnivals to assert Black dignity and bring diverse communities together in mutual respect.",
-            "source_context": "Editorial written by Claudia Jones in the West Indian Gazette launching the first London Caribbean Carnival at St Pancras Town Hall in January 1959. **Hinge Question:** Why was a cultural celebration like Carnival an effective political response to violent racial riots?",
-            "hinge_question": "Why was a cultural celebration like Carnival an effective political response to violent racial riots?",
+            "source_context": "Editorial written by Claudia Jones in the West Indian Gazette launching the first London Caribbean Carnival at St Pancras Town Hall in January 1959.",
             "teacher_notes": {
-              "source_context": "Editorial written by Claudia Jones in the West Indian Gazette launching the first London Caribbean Carnival at St Pancras Town Hall in January 1959. **Hinge Question:** Why was a cultural celebration like Carnival an effective political response to violent racial riots?"
+              "source_context": "Editorial written by Claudia Jones in the West Indian Gazette launching the first London Caribbean Carnival at St Pancras Town Hall in January 1959. **Hinge Question:** Why was a cultural celebration like Carnival an effective political response to violent racial riots?",
+              "hinge_question": "Why was a cultural celebration like Carnival an effective political response to violent racial riots?"
             },
             "id": "pwb_l3_src_e",
             "type": "written",
             "src": "",
-            "image": ""
+            "image": "",
+            "question": "How did Claudia Jones propose to combat racial hatred following the 1958 Notting Hill riots?"
           },
           "content": "<span class=\"para-ref\">[5.1]</span> Tensions exploded in late August 1958 during the Notting Hill race riots, when violent white 'Teddy Boy' attacks targeted Black residents with iron bars, petrol bombs, and knives. Police offered little protection, leading to deep community trauma.<br><br><span class=\"para-ref\">[5.2]</span> In the aftermath, Trinidadian activist and journalist **Claudia Jones** took decisive cultural action: founding West Indian Gazette in Brixton to give the community a political voice, and organizing the 1959 first Caribbean Carnival in St Pancras Town Hall, a vibrant celebration of Caribbean music, steel bands, and dance that grew into the world-famous Notting Hill Carnival."
         }
@@ -4363,18 +4357,18 @@ export default {
           "text": "“Every person who under this Act is a citizen of the United Kingdom and Colonies or who under any enactment for the time being in force in any country mentioned in subsection (3) of this section is a citizen of that country shall by virtue of that citizenship have the status of a British subject. Citizens of the United Kingdom and Colonies shall possess the unrestricted right of entry, residence, and employment within the United Kingdom.”",
           "citation": "British Nationality Act 1948 (11 & 12 Geo. 6. c. 56), Section 1.",
           "question_badge": "Author's Purpose",
-          "enquiry_question": "Why did Clement Attlee's government pass the British Nationality Act in 1948 granting unrestricted entry to Commonwealth citizens?",
           "model_answer": "The government passed the Act to preserve the unity of the British Empire and Commonwealth by maintaining a single global British citizenship, while simultaneously addressing acute industrial and healthcare labour shortages at home.",
-          "source_context": "The statutory text of the British Nationality Act 1948 passed by Parliament. **Hinge Question:** Why did British politicians celebrate imperial citizenship in theory, yet express private alarm when non-white citizens actually arrived to live in Britain?",
-          "hinge_question": "Why did British politicians celebrate imperial citizenship in theory, yet express private alarm when non-white citizens actually arrived to live in Britain?",
+          "source_context": "The statutory text of the British Nationality Act 1948 passed by Parliament.",
           "teacher_notes": {
-            "source_context": "The statutory text of the British Nationality Act 1948 passed by Parliament. **Hinge Question:** Why did British politicians celebrate imperial citizenship in theory, yet express private alarm when non-white citizens actually arrived to live in Britain?"
+            "source_context": "The statutory text of the British Nationality Act 1948 passed by Parliament. **Hinge Question:** Why did British politicians celebrate imperial citizenship in theory, yet express private alarm when non-white citizens actually arrived to live in Britain?",
+            "hinge_question": "Why did British politicians celebrate imperial citizenship in theory, yet express private alarm when non-white citizens actually arrived to live in Britain?"
           },
           "id": "pwb_l3_src_a",
           "type": "written",
           "src": "",
           "image": "",
-          "context": "The statutory text of the British Nationality Act 1948 passed by Parliament."
+          "context": "The statutory text of the British Nationality Act 1948 passed by Parliament.",
+          "question": "Why did Clement Attlee's government pass the British Nationality Act in 1948 granting unrestricted entry to Commonwealth citizens?"
         },
         {
           "letter": "B",
@@ -4384,17 +4378,17 @@ export default {
           "caption": "The official Ministry of Transport passenger manifest header for HMT Empire Windrush, docking at Tilbury on 22 June 1948, listing occupations including mechanics, clerks, and nurses (The National Archives, BT 26/1237).",
           "citation": "The National Archives (Kew), Board of Trade Passenger Lists, BT 26/1237.",
           "question_badge": "Source Inference",
-          "enquiry_question": "What does the official passenger manifest in Source B reveal about the skills and backgrounds of the Caribbean passengers on the Empire Windrush?",
           "model_answer": "The manifest reveals that passengers were skilled professionals—including carpenters, welders, mechanics, clerks, and nurses—who arrived specifically to fill essential vacancies in Britain's postwar economy.",
-          "source_context": "Original Board of Trade passenger shipping manifest for the Empire Windrush preserved at The National Archives, Kew (BT 26/1237). **Hinge Question:** Why does this administrative document challenge the hostile contemporary stereotype that Commonwealth arrivals were unskilled economic dependents?",
-          "hinge_question": "Why does this administrative document challenge the hostile contemporary stereotype that Commonwealth arrivals were unskilled economic dependents?",
+          "source_context": "Original Board of Trade passenger shipping manifest for the Empire Windrush preserved at The National Archives, Kew (BT 26/1237).",
           "teacher_notes": {
-            "source_context": "Original Board of Trade passenger shipping manifest for the Empire Windrush preserved at The National Archives, Kew (BT 26/1237). **Hinge Question:** Why does this administrative document challenge the hostile contemporary stereotype that Commonwealth arrivals were unskilled economic dependents?"
+            "source_context": "Original Board of Trade passenger shipping manifest for the Empire Windrush preserved at The National Archives, Kew (BT 26/1237). **Hinge Question:** Why does this administrative document challenge the hostile contemporary stereotype that Commonwealth arrivals were unskilled economic dependents?",
+            "hinge_question": "Why does this administrative document challenge the hostile contemporary stereotype that Commonwealth arrivals were unskilled economic dependents?"
           },
           "id": "pwb_l3_src_b",
           "type": "visual",
           "context": "Original Board of Trade passenger shipping manifest for the Empire Windrush preserved at The National Archives, Kew (BT 26/1237).",
-          "image_alt": "Official Board of Trade inward passenger manifest header typed M.V. EMPIRE WINDRUSH, Port of Arrival Tilbury, stamped Immigration Office London 22 JUN 1948"
+          "image_alt": "Official Board of Trade inward passenger manifest header typed M.V. EMPIRE WINDRUSH, Port of Arrival Tilbury, stamped Immigration Office London 22 JUN 1948",
+          "question": "What does the official passenger manifest in Source B reveal about the skills and backgrounds of the Caribbean passengers on the Empire Windrush?"
         },
         {
           "letter": "C",
@@ -4404,17 +4398,17 @@ export default {
           "caption": "Trinidadian calypsonian Lord Kitchener (Aldwyn Roberts, 1922–2000), who arrived on the Empire Windrush and famously sang 'London is the Place for Me' to Pathé News cameras upon landing at Tilbury.",
           "citation": "Archival Portrait / Trinidad & Tobago Ministry of Culture Archive.",
           "question_badge": "Historical Significance",
-          "enquiry_question": "How did Lord Kitchener's famous song 'London is the Place for Me' capture the optimism and patriotism of the Windrush pioneers?",
           "model_answer": "His song expressed the deep affection Caribbean migrants felt towards Britain as their ancestral 'Mother Country', capturing their proud belief that they were arriving as equal British subjects to contribute to London's life.",
-          "source_context": "Photograph of young Lord Kitchener, the renowned calypso artist who sang 'London is the Place for Me' on the quayside at Tilbury in June 1948. **Hinge Question:** How did the reality of British racial hostility contrast with the boundless optimism expressed in Kitchener's calypso?",
-          "hinge_question": "How did the reality of British racial hostility contrast with the boundless optimism expressed in Kitchener's calypso?",
+          "source_context": "Photograph of young Lord Kitchener, the renowned calypso artist who sang 'London is the Place for Me' on the quayside at Tilbury in June 1948.",
           "teacher_notes": {
-            "source_context": "Photograph of young Lord Kitchener, the renowned calypso artist who sang 'London is the Place for Me' on the quayside at Tilbury in June 1948. **Hinge Question:** How did the reality of British racial hostility contrast with the boundless optimism expressed in Kitchener's calypso?"
+            "source_context": "Photograph of young Lord Kitchener, the renowned calypso artist who sang 'London is the Place for Me' on the quayside at Tilbury in June 1948. **Hinge Question:** How did the reality of British racial hostility contrast with the boundless optimism expressed in Kitchener's calypso?",
+            "hinge_question": "How did the reality of British racial hostility contrast with the boundless optimism expressed in Kitchener's calypso?"
           },
           "id": "pwb_l3_src_c",
           "type": "visual",
           "context": "Photograph of young Lord Kitchener, the renowned calypso artist who sang 'London is the Place for Me' on the quayside at Tilbury in June 1948.",
-          "image_alt": "Full-length archival newspaper photograph of Trinidadian calypsonian Aldwyn Roberts ('Lord Kitchener') wearing a dark double-breasted suit, two-tone shoes, and light fedora hat while holding a walking cane"
+          "image_alt": "Full-length archival newspaper photograph of Trinidadian calypsonian Aldwyn Roberts ('Lord Kitchener') wearing a dark double-breasted suit, two-tone shoes, and light fedora hat while holding a walking cane",
+          "question": "How did Lord Kitchener's famous song 'London is the Place for Me' capture the optimism and patriotism of the Windrush pioneers?"
         },
         {
           "letter": "D",
@@ -4422,18 +4416,18 @@ export default {
           "text": "“When I first walked down the streets of Ladbroke Grove looking for a room, you would see cards in the newsagent windows: 'Room to let — No Irish, No Blacks, No Dogs'. You would knock on a door where a 'Vacant' sign was in the window, and as soon as the landlady opened the door and saw my face, she would slam it shut and say, 'The room has just gone.' We had to club together in 'Pardner' hand-to-hand savings just to buy our own dilapidated houses because no British bank would touch us.”",
           "citation": "Oral History Testimony of Jamaican arrival Alford Gardner, BBC Windrush Archive (Recorded 1998).",
           "question_badge": "Source Evaluation",
-          "enquiry_question": "What does Alford Gardner's testimony reveal about the everyday barriers encountered by Caribbean arrivals in 1950s Britain?",
           "model_answer": "It reveals that Caribbean migrants faced open, systematic racial discrimination from landlords and financial institutions, forcing them to rely on mutual-aid community networks like 'Pardner' schemes to secure basic shelter.",
-          "source_context": "Oral history interview with Alford Gardner, who served in the RAF during WWII and arrived on the Empire Windrush in 1948. **Hinge Question:** Why was overt racial discrimination completely legal in housing and employment in Britain throughout the 1950s?",
-          "hinge_question": "Why was overt racial discrimination completely legal in housing and employment in Britain throughout the 1950s?",
+          "source_context": "Oral history interview with Alford Gardner, who served in the RAF during WWII and arrived on the Empire Windrush in 1948.",
           "teacher_notes": {
-            "source_context": "Oral history interview with Alford Gardner, who served in the RAF during WWII and arrived on the Empire Windrush in 1948. **Hinge Question:** Why was overt racial discrimination completely legal in housing and employment in Britain throughout the 1950s?"
+            "source_context": "Oral history interview with Alford Gardner, who served in the RAF during WWII and arrived on the Empire Windrush in 1948. **Hinge Question:** Why was overt racial discrimination completely legal in housing and employment in Britain throughout the 1950s?",
+            "hinge_question": "Why was overt racial discrimination completely legal in housing and employment in Britain throughout the 1950s?"
           },
           "id": "pwb_l3_src_d",
           "type": "written",
           "src": "",
           "image": "",
-          "context": "Oral history interview with Alford Gardner, who served in the RAF during WWII and arrived on the Empire Windrush in 1948."
+          "context": "Oral history interview with Alford Gardner, who served in the RAF during WWII and arrived on the Empire Windrush in 1948.",
+          "question": "What does Alford Gardner's testimony reveal about the everyday barriers encountered by Caribbean arrivals in 1950s Britain?"
         },
         {
           "letter": "E",
@@ -4441,18 +4435,18 @@ export default {
           "text": "“A people's art is the genesis of their freedom. In the face of the racial terror of Notting Hill, our answer must not be fear or retreat, but unity and cultural pride. This Carnival is our declaration to Britain that we are here to stay, that our art, our calypso, and our steel bands are an enduring gift to this country. We bring our Caribbean warmth to wash away the bitterness of hatred.”",
           "citation": "Claudia Jones, Editorial in the West Indian Gazette (January 1959), announcing the St Pancras Town Hall Carnival.",
           "question_badge": "Cross-Referencing",
-          "enquiry_question": "How did Claudia Jones propose to combat racial hatred following the 1958 Notting Hill riots?",
           "model_answer": "Jones proposed using joyful cultural celebration, Caribbean music, and public carnivals to assert Black dignity and bring diverse communities together in mutual respect.",
-          "source_context": "Editorial written by Claudia Jones in the West Indian Gazette launching the first London Caribbean Carnival at St Pancras Town Hall in January 1959. **Hinge Question:** Why was a cultural celebration like Carnival an effective political response to violent racial riots?",
-          "hinge_question": "Why was a cultural celebration like Carnival an effective political response to violent racial riots?",
+          "source_context": "Editorial written by Claudia Jones in the West Indian Gazette launching the first London Caribbean Carnival at St Pancras Town Hall in January 1959.",
           "teacher_notes": {
-            "source_context": "Editorial written by Claudia Jones in the West Indian Gazette launching the first London Caribbean Carnival at St Pancras Town Hall in January 1959. **Hinge Question:** Why was a cultural celebration like Carnival an effective political response to violent racial riots?"
+            "source_context": "Editorial written by Claudia Jones in the West Indian Gazette launching the first London Caribbean Carnival at St Pancras Town Hall in January 1959. **Hinge Question:** Why was a cultural celebration like Carnival an effective political response to violent racial riots?",
+            "hinge_question": "Why was a cultural celebration like Carnival an effective political response to violent racial riots?"
           },
           "id": "pwb_l3_src_e",
           "type": "written",
           "src": "",
           "image": "",
-          "context": "Editorial written by Claudia Jones in the West Indian Gazette launching the first London Caribbean Carnival at St Pancras Town Hall in January 1959."
+          "context": "Editorial written by Claudia Jones in the West Indian Gazette launching the first London Caribbean Carnival at St Pancras Town Hall in January 1959.",
+          "question": "How did Claudia Jones propose to combat racial hatred following the 1958 Notting Hill riots?"
         }
       ],
       "comprehension": [
@@ -5794,17 +5788,17 @@ export default {
               "text": "“The company does not employ non-white bus crews because our existing white staff will not agree to work alongside them. If we recruit coloured conductors or drivers, the white drivers will walk out and the city's bus services will come to a complete standstill. It is not prejudice on our part; it is simply a hard practical reality of industrial relations in Bristol.”",
               "citation": "Ian Patey, General Manager of the Bristol Omnibus Company, Press Statement (3 May 1963).",
               "question_badge": "Reliability & Provenance",
-              "enquiry_question": "What reason did the General Manager give in Source A for refusing to employ non-white staff on Bristol buses?",
               "model_answer": "He claimed the company was not personally racist, but was compelled to enforce the colour bar because white trade union workers threatened an all-out strike if non-white drivers were hired.",
-              "source_context": "Public press statement issued by the General Manager of the state-owned Bristol Omnibus Company on 3 May 1963. **Hinge Question:** Why did the bus management and trade union shop stewards attempt to blame each other for the colour bar?",
-              "hinge_question": "Why did the bus management and trade union shop stewards attempt to blame each other for the colour bar?",
+              "source_context": "Public press statement issued by the General Manager of the state-owned Bristol Omnibus Company on 3 May 1963.",
               "teacher_notes": {
-                "source_context": "Public press statement issued by the General Manager of the state-owned Bristol Omnibus Company on 3 May 1963. **Hinge Question:** Why did the bus management and trade union shop stewards attempt to blame each other for the colour bar?"
+                "source_context": "Public press statement issued by the General Manager of the state-owned Bristol Omnibus Company on 3 May 1963. **Hinge Question:** Why did the bus management and trade union shop stewards attempt to blame each other for the colour bar?",
+                "hinge_question": "Why did the bus management and trade union shop stewards attempt to blame each other for the colour bar?"
               },
               "id": "pwb_l4_src_a",
               "type": "written",
               "src": "",
-              "image": ""
+              "image": "",
+              "question": "What reason did the General Manager give in Source A for refusing to employ non-white staff on Bristol buses?"
             }
           ],
           "source": {
@@ -5813,17 +5807,17 @@ export default {
             "text": "“The company does not employ non-white bus crews because our existing white staff will not agree to work alongside them. If we recruit coloured conductors or drivers, the white drivers will walk out and the city's bus services will come to a complete standstill. It is not prejudice on our part; it is simply a hard practical reality of industrial relations in Bristol.”",
             "citation": "Ian Patey, General Manager of the Bristol Omnibus Company, Press Statement (3 May 1963).",
             "question_badge": "Reliability & Provenance",
-            "enquiry_question": "What reason did the General Manager give in Source A for refusing to employ non-white staff on Bristol buses?",
             "model_answer": "He claimed the company was not personally racist, but was compelled to enforce the colour bar because white trade union workers threatened an all-out strike if non-white drivers were hired.",
-            "source_context": "Public press statement issued by the General Manager of the state-owned Bristol Omnibus Company on 3 May 1963. **Hinge Question:** Why did the bus management and trade union shop stewards attempt to blame each other for the colour bar?",
-            "hinge_question": "Why did the bus management and trade union shop stewards attempt to blame each other for the colour bar?",
+            "source_context": "Public press statement issued by the General Manager of the state-owned Bristol Omnibus Company on 3 May 1963.",
             "teacher_notes": {
-              "source_context": "Public press statement issued by the General Manager of the state-owned Bristol Omnibus Company on 3 May 1963. **Hinge Question:** Why did the bus management and trade union shop stewards attempt to blame each other for the colour bar?"
+              "source_context": "Public press statement issued by the General Manager of the state-owned Bristol Omnibus Company on 3 May 1963. **Hinge Question:** Why did the bus management and trade union shop stewards attempt to blame each other for the colour bar?",
+              "hinge_question": "Why did the bus management and trade union shop stewards attempt to blame each other for the colour bar?"
             },
             "id": "pwb_l4_src_a",
             "type": "written",
             "src": "",
-            "image": ""
+            "image": "",
+            "question": "What reason did the General Manager give in Source A for refusing to employ non-white staff on Bristol buses?"
           },
           "content": "<span class=\"para-ref\">[1.1]</span> In early 1963, the state-owned **Bristol Omnibus Company** enforced an open, rigid 'colour bar': while Black and Asian workers were employed in low-paid, behind-the-scenes garage cleaning roles, there were strictly no Black drivers or conductors allowed on passenger buses.<br><br><span class=\"para-ref\">[1.2]</span> This racist exclusion occurred despite a severe shortage of 200 staff that caused dozens of daily bus cancellations. Crucially, the local Transport and General Workers’ Union (TGWU) union backs discriminatory ban, passing a secret resolution refusing to work alongside non-white platform staff to protect white wages.",
           "concept_widget": {
@@ -5940,17 +5934,16 @@ export default {
               "id": "pwb_l4_src_b",
               "type": "written",
               "title": "Source B (Press Conference): Paul Stephenson on Launching the Bristol Bus Boycott (1 May 1963)",
-              "context": "On 1 May 1963, youth worker Paul Stephenson and the West Indian Development Council announced a total passenger boycott of Bristol buses after Guy Bailey was rejected for an interview solely because he was Black. **Hinge Question:** Why did the West Indian Development Council adopt non-violent boycott tactics inspired by Martin Luther King rather than relying on existing trade union mechanisms?",
-              "hinge_question": "Why did the West Indian Development Council adopt non-violent boycott tactics inspired by Martin Luther King rather than relying on existing trade union mechanisms?",
+              "context": "On 1 May 1963, youth worker Paul Stephenson and the West Indian Development Council announced a total passenger boycott of Bristol buses after Guy Bailey was rejected for an interview solely because he was Black.",
               "text": "“We are not asking for charity or special privilege. We are demanding the simple, fundamental right of every British citizen to apply for a job without being turned away because of the colour of his skin. The bus company claims the white workers will strike if coloured crews are hired. If a transport company operates a public service using public revenue on public roads, it cannot operate an apartheid color bar. We will refuse to ride their buses until every Bristolian is judged on merit alone.”",
               "caption": "Source B: Statement by Paul Stephenson at a press conference announcing the commencement of the Bristol Bus Boycott (1 May 1963).",
               "question_badge": "Civil Rights Strategy",
               "question": "How did Paul Stephenson justify calling a total public boycott of Bristol buses?",
-              "enquiry_question": "How did Paul Stephenson justify calling a total public boycott of Bristol buses?",
               "model_answer": "Stephenson argued that a public bus company supported by public roads and revenue had no right to bar citizens from employment based on race, and urged all passengers to boycott the buses until the discriminatory ban ended.",
-              "source_context": "On 1 May 1963, youth worker Paul Stephenson and the West Indian Development Council announced a total passenger boycott of Bristol buses after Guy Bailey was rejected for an interview solely because he was Black. **Hinge Question:** Why did the West Indian Development Council adopt non-violent boycott tactics inspired by Martin Luther King rather than relying on existing trade union mechanisms?",
+              "source_context": "On 1 May 1963, youth worker Paul Stephenson and the West Indian Development Council announced a total passenger boycott of Bristol buses after Guy Bailey was rejected for an interview solely because he was Black.",
               "teacher_notes": {
-                "source_context": "On 1 May 1963, youth worker Paul Stephenson and the West Indian Development Council announced a total passenger boycott of Bristol buses after Guy Bailey was rejected for an interview solely because he was Black. **Hinge Question:** Why did the West Indian Development Council adopt non-violent boycott tactics inspired by Martin Luther King rather than relying on existing trade union mechanisms?"
+                "source_context": "On 1 May 1963, youth worker Paul Stephenson and the West Indian Development Council announced a total passenger boycott of Bristol buses after Guy Bailey was rejected for an interview solely because he was Black. **Hinge Question:** Why did the West Indian Development Council adopt non-violent boycott tactics inspired by Martin Luther King rather than relying on existing trade union mechanisms?",
+                "hinge_question": "Why did the West Indian Development Council adopt non-violent boycott tactics inspired by Martin Luther King rather than relying on existing trade union mechanisms?"
               },
               "src": "",
               "image": ""
@@ -5961,17 +5954,16 @@ export default {
             "id": "pwb_l4_src_b",
             "type": "written",
             "title": "Source B (Press Conference): Paul Stephenson on Launching the Bristol Bus Boycott (1 May 1963)",
-            "context": "On 1 May 1963, youth worker Paul Stephenson and the West Indian Development Council announced a total passenger boycott of Bristol buses after Guy Bailey was rejected for an interview solely because he was Black. **Hinge Question:** Why did the West Indian Development Council adopt non-violent boycott tactics inspired by Martin Luther King rather than relying on existing trade union mechanisms?",
-            "hinge_question": "Why did the West Indian Development Council adopt non-violent boycott tactics inspired by Martin Luther King rather than relying on existing trade union mechanisms?",
+            "context": "On 1 May 1963, youth worker Paul Stephenson and the West Indian Development Council announced a total passenger boycott of Bristol buses after Guy Bailey was rejected for an interview solely because he was Black.",
             "text": "“We are not asking for charity or special privilege. We are demanding the simple, fundamental right of every British citizen to apply for a job without being turned away because of the colour of his skin. The bus company claims the white workers will strike if coloured crews are hired. If a transport company operates a public service using public revenue on public roads, it cannot operate an apartheid color bar. We will refuse to ride their buses until every Bristolian is judged on merit alone.”",
             "caption": "Source B: Statement by Paul Stephenson at a press conference announcing the commencement of the Bristol Bus Boycott (1 May 1963).",
             "question_badge": "Civil Rights Strategy",
             "question": "How did Paul Stephenson justify calling a total public boycott of Bristol buses?",
-            "enquiry_question": "How did Paul Stephenson justify calling a total public boycott of Bristol buses?",
             "model_answer": "Stephenson argued that a public bus company supported by public roads and revenue had no right to bar citizens from employment based on race, and urged all passengers to boycott the buses until the discriminatory ban ended.",
-            "source_context": "On 1 May 1963, youth worker Paul Stephenson and the West Indian Development Council announced a total passenger boycott of Bristol buses after Guy Bailey was rejected for an interview solely because he was Black. **Hinge Question:** Why did the West Indian Development Council adopt non-violent boycott tactics inspired by Martin Luther King rather than relying on existing trade union mechanisms?",
+            "source_context": "On 1 May 1963, youth worker Paul Stephenson and the West Indian Development Council announced a total passenger boycott of Bristol buses after Guy Bailey was rejected for an interview solely because he was Black.",
             "teacher_notes": {
-              "source_context": "On 1 May 1963, youth worker Paul Stephenson and the West Indian Development Council announced a total passenger boycott of Bristol buses after Guy Bailey was rejected for an interview solely because he was Black. **Hinge Question:** Why did the West Indian Development Council adopt non-violent boycott tactics inspired by Martin Luther King rather than relying on existing trade union mechanisms?"
+              "source_context": "On 1 May 1963, youth worker Paul Stephenson and the West Indian Development Council announced a total passenger boycott of Bristol buses after Guy Bailey was rejected for an interview solely because he was Black. **Hinge Question:** Why did the West Indian Development Council adopt non-violent boycott tactics inspired by Martin Luther King rather than relying on existing trade union mechanisms?",
+              "hinge_question": "Why did the West Indian Development Council adopt non-violent boycott tactics inspired by Martin Luther King rather than relying on existing trade union mechanisms?"
             },
             "src": "",
             "image": ""
@@ -5999,16 +5991,16 @@ export default {
               "caption": "Students from the University of Bristol marching through the city centre in May 1963 carrying placards reading 'No Colour Bar — Boycott the Buses' and 'Every Man Right to Work'.",
               "citation": "BBC Archive / Bristol Post Historical Photographic Collection, May 1963.",
               "question_badge": "Source Inference",
-              "enquiry_question": "What does Source C suggest about the breadth of community support for the Bristol Bus Boycott across different social groups?",
               "model_answer": "Source C demonstrates that the boycott was not isolated to Caribbean residents; white university students and young citizens actively mobilised, turning a workplace dispute into a broad civic equality movement.",
-              "source_context": "Archival photograph of university students holding public protest demonstrations in central Bristol in support of the boycott in May 1963. **Hinge Question:** Why was student solidarity and media coverage vital in pressuring the bus company to abandon its colour bar?",
-              "hinge_question": "Why was student solidarity and media coverage vital in pressuring the bus company to abandon its colour bar?",
+              "source_context": "Archival photograph of university students holding public protest demonstrations in central Bristol in support of the boycott in May 1963.",
               "teacher_notes": {
-                "source_context": "Archival photograph of university students holding public protest demonstrations in central Bristol in support of the boycott in May 1963. **Hinge Question:** Why was student solidarity and media coverage vital in pressuring the bus company to abandon its colour bar?"
+                "source_context": "Archival photograph of university students holding public protest demonstrations in central Bristol in support of the boycott in May 1963. **Hinge Question:** Why was student solidarity and media coverage vital in pressuring the bus company to abandon its colour bar?",
+                "hinge_question": "Why was student solidarity and media coverage vital in pressuring the bus company to abandon its colour bar?"
               },
               "id": "pwb_l4_src_c",
               "type": "visual",
-              "image_alt": "May 1963 press photograph of University of Bristol students marching past city stone buildings carrying tall placards reading NO COLOUR BAR — BOYCOTT THE BUSES and EVERY MAN HAS A RIGHT TO WORK"
+              "image_alt": "May 1963 press photograph of University of Bristol students marching past city stone buildings carrying tall placards reading NO COLOUR BAR — BOYCOTT THE BUSES and EVERY MAN HAS A RIGHT TO WORK",
+              "question": "What does Source C suggest about the breadth of community support for the Bristol Bus Boycott across different social groups?"
             }
           ],
           "source": {
@@ -6019,16 +6011,16 @@ export default {
             "caption": "Students from the University of Bristol marching through the city centre in May 1963 carrying placards reading 'No Colour Bar — Boycott the Buses' and 'Every Man Right to Work'.",
             "citation": "BBC Archive / Bristol Post Historical Photographic Collection, May 1963.",
             "question_badge": "Source Inference",
-            "enquiry_question": "What does Source C suggest about the breadth of community support for the Bristol Bus Boycott across different social groups?",
             "model_answer": "Source C demonstrates that the boycott was not isolated to Caribbean residents; white university students and young citizens actively mobilised, turning a workplace dispute into a broad civic equality movement.",
-            "source_context": "Archival photograph of university students holding public protest demonstrations in central Bristol in support of the boycott in May 1963. **Hinge Question:** Why was student solidarity and media coverage vital in pressuring the bus company to abandon its colour bar?",
-            "hinge_question": "Why was student solidarity and media coverage vital in pressuring the bus company to abandon its colour bar?",
+            "source_context": "Archival photograph of university students holding public protest demonstrations in central Bristol in support of the boycott in May 1963.",
             "teacher_notes": {
-              "source_context": "Archival photograph of university students holding public protest demonstrations in central Bristol in support of the boycott in May 1963. **Hinge Question:** Why was student solidarity and media coverage vital in pressuring the bus company to abandon its colour bar?"
+              "source_context": "Archival photograph of university students holding public protest demonstrations in central Bristol in support of the boycott in May 1963. **Hinge Question:** Why was student solidarity and media coverage vital in pressuring the bus company to abandon its colour bar?",
+              "hinge_question": "Why was student solidarity and media coverage vital in pressuring the bus company to abandon its colour bar?"
             },
             "id": "pwb_l4_src_c",
             "type": "visual",
-            "image_alt": "May 1963 press photograph of University of Bristol students marching past city stone buildings carrying tall placards reading NO COLOUR BAR — BOYCOTT THE BUSES and EVERY MAN HAS A RIGHT TO WORK"
+            "image_alt": "May 1963 press photograph of University of Bristol students marching past city stone buildings carrying tall placards reading NO COLOUR BAR — BOYCOTT THE BUSES and EVERY MAN HAS A RIGHT TO WORK",
+            "question": "What does Source C suggest about the breadth of community support for the Bristol Bus Boycott across different social groups?"
           },
           "content": "<span class=\"para-ref\">[3.1]</span> On 30 April 1963, Stephenson, Roy Hackett, Owen Henry, and Audley Evans of the West Indian Development Council announced a total boycott of the Bristol Omnibus Company.<br><br><span class=\"para-ref\">[3.2]</span> Inspired by US Montgomery Boycott and Dr Martin Luther King Jr’s 1955 campaign in Alabama, the organizers urged Bristol's 3,000 West Indians and white sympathizers to walk to work. Within days, thousands refuse to ride buses, stripping the company of ticket revenues and drawing intense national media attention to racial discrimination in Britain."
         },
@@ -6047,16 +6039,16 @@ export default {
               "caption": "Anthony Wedgwood Benn (Tony Benn, 1925–2014), Labour MP for Bristol South East (1950–1960, 1963–1983), who publicly championed the 1963 Bristol Bus Boycott, condemned the Bristol Omnibus Company’s colour bar, and refused to ride its buses.",
               "citation": "Parliamentary & Public Speaking Portrait of Tony Benn (Wikimedia Commons CC BY-SA 3.0).",
               "question_badge": "Author's Purpose",
-              "enquiry_question": "Why did local MP Tony Benn intervene in the dispute between the Bristol Omnibus Company and the Caribbean community?",
               "model_answer": "Tony Benn intervened because he viewed the colour bar as a moral outrage and a violation of basic democratic rights, using his parliamentary authority to force national attention onto local racism.",
-              "source_context": "Portrait of Tony Benn, Member of Parliament for Bristol South East. Benn publicly declared he would not ride a Bristol bus until the discriminatory hiring policy was abandoned. **Hinge Question:** How did the intervention of prominent political figures transform a local consumer boycott into a national issue?",
-              "hinge_question": "How did the intervention of prominent political figures transform a local consumer boycott into a national issue?",
+              "source_context": "Portrait of Tony Benn, Member of Parliament for Bristol South East. Benn publicly declared he would not ride a Bristol bus until the discriminatory hiring policy was abandoned.",
               "teacher_notes": {
-                "source_context": "Portrait of Tony Benn, Member of Parliament for Bristol South East. Benn publicly declared he would not ride a Bristol bus until the discriminatory hiring policy was abandoned. **Hinge Question:** How did the intervention of prominent political figures transform a local consumer boycott into a national issue?"
+                "source_context": "Portrait of Tony Benn, Member of Parliament for Bristol South East. Benn publicly declared he would not ride a Bristol bus until the discriminatory hiring policy was abandoned. **Hinge Question:** How did the intervention of prominent political figures transform a local consumer boycott into a national issue?",
+                "hinge_question": "How did the intervention of prominent political figures transform a local consumer boycott into a national issue?"
               },
               "id": "pwb_l4_src_d",
               "type": "visual",
-              "image_alt": "Portrait photograph of Labour parliamentarian Tony Benn (Anthony Wedgwood Benn), MP for Bristol South East during the 1963 Bristol Bus Boycott"
+              "image_alt": "Portrait photograph of Labour parliamentarian Tony Benn (Anthony Wedgwood Benn), MP for Bristol South East during the 1963 Bristol Bus Boycott",
+              "question": "Why did local MP Tony Benn intervene in the dispute between the Bristol Omnibus Company and the Caribbean community?"
             }
           ],
           "source": {
@@ -6067,16 +6059,16 @@ export default {
             "caption": "Anthony Wedgwood Benn (Tony Benn, 1925–2014), Labour MP for Bristol South East (1950–1960, 1963–1983), who publicly championed the 1963 Bristol Bus Boycott, condemned the Bristol Omnibus Company’s colour bar, and refused to ride its buses.",
             "citation": "Parliamentary & Public Speaking Portrait of Tony Benn (Wikimedia Commons CC BY-SA 3.0).",
             "question_badge": "Author's Purpose",
-            "enquiry_question": "Why did local MP Tony Benn intervene in the dispute between the Bristol Omnibus Company and the Caribbean community?",
             "model_answer": "Tony Benn intervened because he viewed the colour bar as a moral outrage and a violation of basic democratic rights, using his parliamentary authority to force national attention onto local racism.",
-            "source_context": "Portrait of Tony Benn, Member of Parliament for Bristol South East. Benn publicly declared he would not ride a Bristol bus until the discriminatory hiring policy was abandoned. **Hinge Question:** How did the intervention of prominent political figures transform a local consumer boycott into a national issue?",
-            "hinge_question": "How did the intervention of prominent political figures transform a local consumer boycott into a national issue?",
+            "source_context": "Portrait of Tony Benn, Member of Parliament for Bristol South East. Benn publicly declared he would not ride a Bristol bus until the discriminatory hiring policy was abandoned.",
             "teacher_notes": {
-              "source_context": "Portrait of Tony Benn, Member of Parliament for Bristol South East. Benn publicly declared he would not ride a Bristol bus until the discriminatory hiring policy was abandoned. **Hinge Question:** How did the intervention of prominent political figures transform a local consumer boycott into a national issue?"
+              "source_context": "Portrait of Tony Benn, Member of Parliament for Bristol South East. Benn publicly declared he would not ride a Bristol bus until the discriminatory hiring policy was abandoned. **Hinge Question:** How did the intervention of prominent political figures transform a local consumer boycott into a national issue?",
+              "hinge_question": "How did the intervention of prominent political figures transform a local consumer boycott into a national issue?"
             },
             "id": "pwb_l4_src_d",
             "type": "visual",
-            "image_alt": "Portrait photograph of Labour parliamentarian Tony Benn (Anthony Wedgwood Benn), MP for Bristol South East during the 1963 Bristol Bus Boycott"
+            "image_alt": "Portrait photograph of Labour parliamentarian Tony Benn (Anthony Wedgwood Benn), MP for Bristol South East during the 1963 Bristol Bus Boycott",
+            "question": "Why did local MP Tony Benn intervene in the dispute between the Bristol Omnibus Company and the Caribbean community?"
           },
           "content": "<span class=\"para-ref\">[4.1]</span> The boycott gained rapid momentum across the city. Hundreds of University of Bristol students march in streets with banners, picketing company headquarters and the bus station alongside West Indian church groups.<br><br><span class=\"para-ref\">[4.2]</span> High-profile national politicians joined the crusade: local Bristol South East MP Tony Benn backs the boycott, refusing to speak at rallies with racist union officials, while Labour Party leader Harold Wilson pledges legislation against racial discrimination at an anti-apartheid rally in London.",
           "image": "/images/post_war_britain/pwb_l4_b3_bristol_buses_wills_memorial.jpg",
@@ -6099,17 +6091,17 @@ export default {
               "text": "“It shall be unlawful for any person, being the proprietor or manager of or employed for the purposes of any place of public resort, to practice discrimination on the ground of colour, race, or ethnic or national origins against any person seeking to obtain or use the facilities or services thereof. Places of public resort include hotels, restaurants, public houses, and places of entertainment or recreation.”",
               "citation": "Race Relations Act 1965 (1965 c. 73), Section 1.",
               "question_badge": "Cross-Referencing",
-              "enquiry_question": "What limitations did civil rights campaigners identify in the 1965 Race Relations Act that required further legislation in 1968?",
               "model_answer": "The 1965 Act only covered public facilities like pubs and hotels, failing to ban racial discrimination in private employment or housing, which had to be outlawed in the expanded 1968 Act.",
-              "source_context": "The statutory text of the Race Relations Act 1965, the first legislation in British history addressing racial discrimination. **Hinge Question:** Why did the British Parliament choose conciliation rather than criminal penalties when enforcing the 1965 Act?",
-              "hinge_question": "Why did the British Parliament choose conciliation rather than criminal penalties when enforcing the 1965 Act?",
+              "source_context": "The statutory text of the Race Relations Act 1965, the first legislation in British history addressing racial discrimination.",
               "teacher_notes": {
-                "source_context": "The statutory text of the Race Relations Act 1965, the first legislation in British history addressing racial discrimination. **Hinge Question:** Why did the British Parliament choose conciliation rather than criminal penalties when enforcing the 1965 Act?"
+                "source_context": "The statutory text of the Race Relations Act 1965, the first legislation in British history addressing racial discrimination. **Hinge Question:** Why did the British Parliament choose conciliation rather than criminal penalties when enforcing the 1965 Act?",
+                "hinge_question": "Why did the British Parliament choose conciliation rather than criminal penalties when enforcing the 1965 Act?"
               },
               "id": "pwb_l4_src_e",
               "type": "written",
               "src": "",
-              "image": ""
+              "image": "",
+              "question": "What limitations did civil rights campaigners identify in the 1965 Race Relations Act that required further legislation in 1968?"
             }
           ],
           "source": {
@@ -6118,17 +6110,17 @@ export default {
             "text": "“It shall be unlawful for any person, being the proprietor or manager of or employed for the purposes of any place of public resort, to practice discrimination on the ground of colour, race, or ethnic or national origins against any person seeking to obtain or use the facilities or services thereof. Places of public resort include hotels, restaurants, public houses, and places of entertainment or recreation.”",
             "citation": "Race Relations Act 1965 (1965 c. 73), Section 1.",
             "question_badge": "Cross-Referencing",
-            "enquiry_question": "What limitations did civil rights campaigners identify in the 1965 Race Relations Act that required further legislation in 1968?",
             "model_answer": "The 1965 Act only covered public facilities like pubs and hotels, failing to ban racial discrimination in private employment or housing, which had to be outlawed in the expanded 1968 Act.",
-            "source_context": "The statutory text of the Race Relations Act 1965, the first legislation in British history addressing racial discrimination. **Hinge Question:** Why did the British Parliament choose conciliation rather than criminal penalties when enforcing the 1965 Act?",
-            "hinge_question": "Why did the British Parliament choose conciliation rather than criminal penalties when enforcing the 1965 Act?",
+            "source_context": "The statutory text of the Race Relations Act 1965, the first legislation in British history addressing racial discrimination.",
             "teacher_notes": {
-              "source_context": "The statutory text of the Race Relations Act 1965, the first legislation in British history addressing racial discrimination. **Hinge Question:** Why did the British Parliament choose conciliation rather than criminal penalties when enforcing the 1965 Act?"
+              "source_context": "The statutory text of the Race Relations Act 1965, the first legislation in British history addressing racial discrimination. **Hinge Question:** Why did the British Parliament choose conciliation rather than criminal penalties when enforcing the 1965 Act?",
+              "hinge_question": "Why did the British Parliament choose conciliation rather than criminal penalties when enforcing the 1965 Act?"
             },
             "id": "pwb_l4_src_e",
             "type": "written",
             "src": "",
-            "image": ""
+            "image": "",
+            "question": "What limitations did civil rights campaigners identify in the 1965 Race Relations Act that required further legislation in 1968?"
           },
           "content": "<span class=\"para-ref\">[5.1]</span> After four gruelling months of economic boycotting and relentless public shaming, the bus company collapsed. On **28 August 1963**—the very day Martin Luther King delivered his 'I Have a Dream' speech in Washington—the colour bar ends 28 August 1963 as union members voted to end the exclusion.<br><br><span class=\"para-ref\">[5.2]</span> In September, the first Sikh conductor hired, Raghbir Singh, donned his bus uniform, followed by Norman Samuels and others. The triumph proved that citizen direct action could conquer institutional prejudice, prompting Harold Wilson's government to enact the Race Relations Acts of 1965 and 1968, introducing statutory bans on discrimination in housing, employment, and public accommodation."
         }
@@ -6140,35 +6132,34 @@ export default {
           "text": "“The company does not employ non-white bus crews because our existing white staff will not agree to work alongside them. If we recruit coloured conductors or drivers, the white drivers will walk out and the city's bus services will come to a complete standstill. It is not prejudice on our part; it is simply a hard practical reality of industrial relations in Bristol.”",
           "citation": "Ian Patey, General Manager of the Bristol Omnibus Company, Press Statement (3 May 1963).",
           "question_badge": "Reliability & Provenance",
-          "enquiry_question": "What reason did the General Manager give in Source A for refusing to employ non-white staff on Bristol buses?",
           "model_answer": "He claimed the company was not personally racist, but was compelled to enforce the colour bar because white trade union workers threatened an all-out strike if non-white drivers were hired.",
-          "source_context": "Public press statement issued by the General Manager of the state-owned Bristol Omnibus Company on 3 May 1963. **Hinge Question:** Why did the bus management and trade union shop stewards attempt to blame each other for the colour bar?",
-          "hinge_question": "Why did the bus management and trade union shop stewards attempt to blame each other for the colour bar?",
+          "source_context": "Public press statement issued by the General Manager of the state-owned Bristol Omnibus Company on 3 May 1963.",
           "teacher_notes": {
-            "source_context": "Public press statement issued by the General Manager of the state-owned Bristol Omnibus Company on 3 May 1963. **Hinge Question:** Why did the bus management and trade union shop stewards attempt to blame each other for the colour bar?"
+            "source_context": "Public press statement issued by the General Manager of the state-owned Bristol Omnibus Company on 3 May 1963. **Hinge Question:** Why did the bus management and trade union shop stewards attempt to blame each other for the colour bar?",
+            "hinge_question": "Why did the bus management and trade union shop stewards attempt to blame each other for the colour bar?"
           },
           "id": "pwb_l4_src_a",
           "type": "written",
           "src": "",
           "image": "",
-          "context": "Public press statement issued by the General Manager of the state-owned Bristol Omnibus Company on 3 May 1963."
+          "context": "Public press statement issued by the General Manager of the state-owned Bristol Omnibus Company on 3 May 1963.",
+          "question": "What reason did the General Manager give in Source A for refusing to employ non-white staff on Bristol buses?"
         },
         {
           "letter": "B",
           "id": "pwb_l4_src_b",
           "type": "written",
           "title": "Source B (Press Conference): Paul Stephenson on Launching the Bristol Bus Boycott (1 May 1963)",
-          "context": "On 1 May 1963, youth worker Paul Stephenson and the West Indian Development Council announced a total passenger boycott of Bristol buses after Guy Bailey was rejected for an interview solely because he was Black. **Hinge Question:** Why did the West Indian Development Council adopt non-violent boycott tactics inspired by Martin Luther King rather than relying on existing trade union mechanisms?",
-          "hinge_question": "Why did the West Indian Development Council adopt non-violent boycott tactics inspired by Martin Luther King rather than relying on existing trade union mechanisms?",
+          "context": "On 1 May 1963, youth worker Paul Stephenson and the West Indian Development Council announced a total passenger boycott of Bristol buses after Guy Bailey was rejected for an interview solely because he was Black.",
           "text": "“We are not asking for charity or special privilege. We are demanding the simple, fundamental right of every British citizen to apply for a job without being turned away because of the colour of his skin. The bus company claims the white workers will strike if coloured crews are hired. If a transport company operates a public service using public revenue on public roads, it cannot operate an apartheid color bar. We will refuse to ride their buses until every Bristolian is judged on merit alone.”",
           "caption": "Source B: Statement by Paul Stephenson at a press conference announcing the commencement of the Bristol Bus Boycott (1 May 1963).",
           "question_badge": "Civil Rights Strategy",
           "question": "How did Paul Stephenson justify calling a total public boycott of Bristol buses?",
-          "enquiry_question": "How did Paul Stephenson justify calling a total public boycott of Bristol buses?",
           "model_answer": "Stephenson argued that a public bus company supported by public roads and revenue had no right to bar citizens from employment based on race, and urged all passengers to boycott the buses until the discriminatory ban ended.",
-          "source_context": "On 1 May 1963, youth worker Paul Stephenson and the West Indian Development Council announced a total passenger boycott of Bristol buses after Guy Bailey was rejected for an interview solely because he was Black. **Hinge Question:** Why did the West Indian Development Council adopt non-violent boycott tactics inspired by Martin Luther King rather than relying on existing trade union mechanisms?",
+          "source_context": "On 1 May 1963, youth worker Paul Stephenson and the West Indian Development Council announced a total passenger boycott of Bristol buses after Guy Bailey was rejected for an interview solely because he was Black.",
           "teacher_notes": {
-            "source_context": "On 1 May 1963, youth worker Paul Stephenson and the West Indian Development Council announced a total passenger boycott of Bristol buses after Guy Bailey was rejected for an interview solely because he was Black. **Hinge Question:** Why did the West Indian Development Council adopt non-violent boycott tactics inspired by Martin Luther King rather than relying on existing trade union mechanisms?"
+            "source_context": "On 1 May 1963, youth worker Paul Stephenson and the West Indian Development Council announced a total passenger boycott of Bristol buses after Guy Bailey was rejected for an interview solely because he was Black. **Hinge Question:** Why did the West Indian Development Council adopt non-violent boycott tactics inspired by Martin Luther King rather than relying on existing trade union mechanisms?",
+            "hinge_question": "Why did the West Indian Development Council adopt non-violent boycott tactics inspired by Martin Luther King rather than relying on existing trade union mechanisms?"
           },
           "src": "",
           "image": ""
@@ -6181,17 +6172,17 @@ export default {
           "caption": "Students from the University of Bristol marching through the city centre in May 1963 carrying placards reading 'No Colour Bar — Boycott the Buses' and 'Every Man Right to Work'.",
           "citation": "BBC Archive / Bristol Post Historical Photographic Collection, May 1963.",
           "question_badge": "Source Inference",
-          "enquiry_question": "What does Source C suggest about the breadth of community support for the Bristol Bus Boycott across different social groups?",
           "model_answer": "Source C demonstrates that the boycott was not isolated to Caribbean residents; white university students and young citizens actively mobilised, turning a workplace dispute into a broad civic equality movement.",
-          "source_context": "Archival photograph of university students holding public protest demonstrations in central Bristol in support of the boycott in May 1963. **Hinge Question:** Why was student solidarity and media coverage vital in pressuring the bus company to abandon its colour bar?",
-          "hinge_question": "Why was student solidarity and media coverage vital in pressuring the bus company to abandon its colour bar?",
+          "source_context": "Archival photograph of university students holding public protest demonstrations in central Bristol in support of the boycott in May 1963.",
           "teacher_notes": {
-            "source_context": "Archival photograph of university students holding public protest demonstrations in central Bristol in support of the boycott in May 1963. **Hinge Question:** Why was student solidarity and media coverage vital in pressuring the bus company to abandon its colour bar?"
+            "source_context": "Archival photograph of university students holding public protest demonstrations in central Bristol in support of the boycott in May 1963. **Hinge Question:** Why was student solidarity and media coverage vital in pressuring the bus company to abandon its colour bar?",
+            "hinge_question": "Why was student solidarity and media coverage vital in pressuring the bus company to abandon its colour bar?"
           },
           "id": "pwb_l4_src_c",
           "type": "visual",
           "context": "Archival photograph of university students holding public protest demonstrations in central Bristol in support of the boycott in May 1963.",
-          "image_alt": "May 1963 press photograph of University of Bristol students marching past city stone buildings carrying tall placards reading NO COLOUR BAR — BOYCOTT THE BUSES and EVERY MAN HAS A RIGHT TO WORK"
+          "image_alt": "May 1963 press photograph of University of Bristol students marching past city stone buildings carrying tall placards reading NO COLOUR BAR — BOYCOTT THE BUSES and EVERY MAN HAS A RIGHT TO WORK",
+          "question": "What does Source C suggest about the breadth of community support for the Bristol Bus Boycott across different social groups?"
         },
         {
           "letter": "D",
@@ -6201,17 +6192,17 @@ export default {
           "caption": "Anthony Wedgwood Benn (Tony Benn, 1925–2014), Labour MP for Bristol South East (1950–1960, 1963–1983), who publicly championed the 1963 Bristol Bus Boycott, condemned the Bristol Omnibus Company’s colour bar, and refused to ride its buses.",
           "citation": "Parliamentary & Public Speaking Portrait of Tony Benn (Wikimedia Commons CC BY-SA 3.0).",
           "question_badge": "Author's Purpose",
-          "enquiry_question": "Why did local MP Tony Benn intervene in the dispute between the Bristol Omnibus Company and the Caribbean community?",
           "model_answer": "Tony Benn intervened because he viewed the colour bar as a moral outrage and a violation of basic democratic rights, using his parliamentary authority to force national attention onto local racism.",
-          "source_context": "Portrait of Tony Benn, Member of Parliament for Bristol South East. Benn publicly declared he would not ride a Bristol bus until the discriminatory hiring policy was abandoned. **Hinge Question:** How did the intervention of prominent political figures transform a local consumer boycott into a national issue?",
-          "hinge_question": "How did the intervention of prominent political figures transform a local consumer boycott into a national issue?",
+          "source_context": "Portrait of Tony Benn, Member of Parliament for Bristol South East. Benn publicly declared he would not ride a Bristol bus until the discriminatory hiring policy was abandoned.",
           "teacher_notes": {
-            "source_context": "Portrait of Tony Benn, Member of Parliament for Bristol South East. Benn publicly declared he would not ride a Bristol bus until the discriminatory hiring policy was abandoned. **Hinge Question:** How did the intervention of prominent political figures transform a local consumer boycott into a national issue?"
+            "source_context": "Portrait of Tony Benn, Member of Parliament for Bristol South East. Benn publicly declared he would not ride a Bristol bus until the discriminatory hiring policy was abandoned. **Hinge Question:** How did the intervention of prominent political figures transform a local consumer boycott into a national issue?",
+            "hinge_question": "How did the intervention of prominent political figures transform a local consumer boycott into a national issue?"
           },
           "id": "pwb_l4_src_d",
           "type": "visual",
           "context": "Portrait of Tony Benn, Member of Parliament for Bristol South East. Benn publicly declared he would not ride a Bristol bus until the discriminatory hiring policy was abandoned.",
-          "image_alt": "Portrait photograph of Labour parliamentarian Tony Benn (Anthony Wedgwood Benn), MP for Bristol South East during the 1963 Bristol Bus Boycott"
+          "image_alt": "Portrait photograph of Labour parliamentarian Tony Benn (Anthony Wedgwood Benn), MP for Bristol South East during the 1963 Bristol Bus Boycott",
+          "question": "Why did local MP Tony Benn intervene in the dispute between the Bristol Omnibus Company and the Caribbean community?"
         },
         {
           "letter": "E",
@@ -6219,18 +6210,18 @@ export default {
           "text": "“It shall be unlawful for any person, being the proprietor or manager of or employed for the purposes of any place of public resort, to practice discrimination on the ground of colour, race, or ethnic or national origins against any person seeking to obtain or use the facilities or services thereof. Places of public resort include hotels, restaurants, public houses, and places of entertainment or recreation.”",
           "citation": "Race Relations Act 1965 (1965 c. 73), Section 1.",
           "question_badge": "Cross-Referencing",
-          "enquiry_question": "What limitations did civil rights campaigners identify in the 1965 Race Relations Act that required further legislation in 1968?",
           "model_answer": "The 1965 Act only covered public facilities like pubs and hotels, failing to ban racial discrimination in private employment or housing, which had to be outlawed in the expanded 1968 Act.",
-          "source_context": "The statutory text of the Race Relations Act 1965, the first legislation in British history addressing racial discrimination. **Hinge Question:** Why did the British Parliament choose conciliation rather than criminal penalties when enforcing the 1965 Act?",
-          "hinge_question": "Why did the British Parliament choose conciliation rather than criminal penalties when enforcing the 1965 Act?",
+          "source_context": "The statutory text of the Race Relations Act 1965, the first legislation in British history addressing racial discrimination.",
           "teacher_notes": {
-            "source_context": "The statutory text of the Race Relations Act 1965, the first legislation in British history addressing racial discrimination. **Hinge Question:** Why did the British Parliament choose conciliation rather than criminal penalties when enforcing the 1965 Act?"
+            "source_context": "The statutory text of the Race Relations Act 1965, the first legislation in British history addressing racial discrimination. **Hinge Question:** Why did the British Parliament choose conciliation rather than criminal penalties when enforcing the 1965 Act?",
+            "hinge_question": "Why did the British Parliament choose conciliation rather than criminal penalties when enforcing the 1965 Act?"
           },
           "id": "pwb_l4_src_e",
           "type": "written",
           "src": "",
           "image": "",
-          "context": "The statutory text of the Race Relations Act 1965, the first legislation in British history addressing racial discrimination."
+          "context": "The statutory text of the Race Relations Act 1965, the first legislation in British history addressing racial discrimination.",
+          "question": "What limitations did civil rights campaigners identify in the 1965 Race Relations Act that required further legislation in 1968?"
         }
       ],
       "comprehension": [
@@ -7536,17 +7527,16 @@ export default {
               "id": "pwb_l5_src_a",
               "type": "written",
               "title": "Source A (Official Dispatch): Prime Minister Winston Churchill on the First British Atomic Bomb Test (October 1952)",
-              "context": "On 3 October 1952, Britain detonated its first atomic bomb (Operation Hurricane) inside the hull of the frigate HMS Plym off the coast of Western Australia, becoming the third nuclear power after the USA and USSR. **Hinge Question:** Why did postwar British governments prioritize developing an independent nuclear deterrent despite severe domestic economic rationing?",
-              "hinge_question": "Why did postwar British governments prioritize developing an independent nuclear deterrent despite severe domestic economic rationing?",
+              "context": "On 3 October 1952, Britain detonated its first atomic bomb (Operation Hurricane) inside the hull of the frigate HMS Plym off the coast of Western Australia, becoming the third nuclear power after the USA and USSR.",
               "text": "“We have conducted our first atomic explosion with complete success... When the bomb exploded inside the frigate HMS Plym, the vessel was instantly vaporised, leaving only a glowing crater fifty feet deep in the seabed. Britain has now acquired the means to defend herself and maintain her rightful place at the highest council of great powers. Yet the destructive violence of this weapon imposes upon all civilized nations an awful responsibility to avert the calamity of atomic war.”",
               "caption": "Source A: Prime Minister Winston Churchill’s statement to Parliament announcing the successful test of Britain’s first atomic weapon in Operation Hurricane (October 1952).",
               "question_badge": "Nuclear Geopolitics",
               "question": "Why did Winston Churchill consider Britain’s first successful atomic bomb test to be an essential national achievement?",
-              "enquiry_question": "Why did Winston Churchill consider Britain’s first successful atomic bomb test to be an essential national achievement?",
               "model_answer": "Churchill argued that possessing an independent atomic bomb was necessary for Britain to defend itself and retain its global status alongside the United States and the Soviet Union.",
-              "source_context": "On 3 October 1952, Britain detonated its first atomic bomb (Operation Hurricane) inside the hull of the frigate HMS Plym off the coast of Western Australia, becoming the third nuclear power after the USA and USSR. **Hinge Question:** Why did postwar British governments prioritize developing an independent nuclear deterrent despite severe domestic economic rationing?",
+              "source_context": "On 3 October 1952, Britain detonated its first atomic bomb (Operation Hurricane) inside the hull of the frigate HMS Plym off the coast of Western Australia, becoming the third nuclear power after the USA and USSR.",
               "teacher_notes": {
-                "source_context": "On 3 October 1952, Britain detonated its first atomic bomb (Operation Hurricane) inside the hull of the frigate HMS Plym off the coast of Western Australia, becoming the third nuclear power after the USA and USSR. **Hinge Question:** Why did postwar British governments prioritize developing an independent nuclear deterrent despite severe domestic economic rationing?"
+                "source_context": "On 3 October 1952, Britain detonated its first atomic bomb (Operation Hurricane) inside the hull of the frigate HMS Plym off the coast of Western Australia, becoming the third nuclear power after the USA and USSR. **Hinge Question:** Why did postwar British governments prioritize developing an independent nuclear deterrent despite severe domestic economic rationing?",
+                "hinge_question": "Why did postwar British governments prioritize developing an independent nuclear deterrent despite severe domestic economic rationing?"
               },
               "src": "",
               "image": ""
@@ -7557,17 +7547,16 @@ export default {
             "id": "pwb_l5_src_a",
             "type": "written",
             "title": "Source A (Official Dispatch): Prime Minister Winston Churchill on the First British Atomic Bomb Test (October 1952)",
-            "context": "On 3 October 1952, Britain detonated its first atomic bomb (Operation Hurricane) inside the hull of the frigate HMS Plym off the coast of Western Australia, becoming the third nuclear power after the USA and USSR. **Hinge Question:** Why did postwar British governments prioritize developing an independent nuclear deterrent despite severe domestic economic rationing?",
-            "hinge_question": "Why did postwar British governments prioritize developing an independent nuclear deterrent despite severe domestic economic rationing?",
+            "context": "On 3 October 1952, Britain detonated its first atomic bomb (Operation Hurricane) inside the hull of the frigate HMS Plym off the coast of Western Australia, becoming the third nuclear power after the USA and USSR.",
             "text": "“We have conducted our first atomic explosion with complete success... When the bomb exploded inside the frigate HMS Plym, the vessel was instantly vaporised, leaving only a glowing crater fifty feet deep in the seabed. Britain has now acquired the means to defend herself and maintain her rightful place at the highest council of great powers. Yet the destructive violence of this weapon imposes upon all civilized nations an awful responsibility to avert the calamity of atomic war.”",
             "caption": "Source A: Prime Minister Winston Churchill’s statement to Parliament announcing the successful test of Britain’s first atomic weapon in Operation Hurricane (October 1952).",
             "question_badge": "Nuclear Geopolitics",
             "question": "Why did Winston Churchill consider Britain’s first successful atomic bomb test to be an essential national achievement?",
-            "enquiry_question": "Why did Winston Churchill consider Britain’s first successful atomic bomb test to be an essential national achievement?",
             "model_answer": "Churchill argued that possessing an independent atomic bomb was necessary for Britain to defend itself and retain its global status alongside the United States and the Soviet Union.",
-            "source_context": "On 3 October 1952, Britain detonated its first atomic bomb (Operation Hurricane) inside the hull of the frigate HMS Plym off the coast of Western Australia, becoming the third nuclear power after the USA and USSR. **Hinge Question:** Why did postwar British governments prioritize developing an independent nuclear deterrent despite severe domestic economic rationing?",
+            "source_context": "On 3 October 1952, Britain detonated its first atomic bomb (Operation Hurricane) inside the hull of the frigate HMS Plym off the coast of Western Australia, becoming the third nuclear power after the USA and USSR.",
             "teacher_notes": {
-              "source_context": "On 3 October 1952, Britain detonated its first atomic bomb (Operation Hurricane) inside the hull of the frigate HMS Plym off the coast of Western Australia, becoming the third nuclear power after the USA and USSR. **Hinge Question:** Why did postwar British governments prioritize developing an independent nuclear deterrent despite severe domestic economic rationing?"
+              "source_context": "On 3 October 1952, Britain detonated its first atomic bomb (Operation Hurricane) inside the hull of the frigate HMS Plym off the coast of Western Australia, becoming the third nuclear power after the USA and USSR. **Hinge Question:** Why did postwar British governments prioritize developing an independent nuclear deterrent despite severe domestic economic rationing?",
+              "hinge_question": "Why did postwar British governments prioritize developing an independent nuclear deterrent despite severe domestic economic rationing?"
             },
             "src": "",
             "image": ""
@@ -7595,16 +7584,16 @@ export default {
               "caption": "Artist Gerald Holtom's original 1958 geometric sketch combining the flag semaphore letters for 'N' (Nuclear) and 'D' (Disarmament) inside a circle, creating the global peace symbol.",
               "citation": "CND Archives / Modern Records Centre, University of Warwick.",
               "question_badge": "Historical Significance",
-              "enquiry_question": "Why did Gerald Holtom's 1958 semaphore design achieve such enduring global fame as a universal symbol of anti-war protest?",
               "model_answer": "Its simple, powerful geometric design was easily drawn on banners, badges, and walls, while capturing both human despair at nuclear destruction and hope for disarmament.",
-              "source_context": "The original design drawing of the CND symbol created by Gerald Holtom in February 1958 for the first Aldermaston March. **Hinge Question:** Why did Holtom describe his design as representing 'a human being in despair' with arms outstretched downwards?",
-              "hinge_question": "Why did Holtom describe his design as representing 'a human being in despair' with arms outstretched downwards?",
+              "source_context": "The original design drawing of the CND symbol created by Gerald Holtom in February 1958 for the first Aldermaston March.",
               "teacher_notes": {
-                "source_context": "The original design drawing of the CND symbol created by Gerald Holtom in February 1958 for the first Aldermaston March. **Hinge Question:** Why did Holtom describe his design as representing 'a human being in despair' with arms outstretched downwards?"
+                "source_context": "The original design drawing of the CND symbol created by Gerald Holtom in February 1958 for the first Aldermaston March. **Hinge Question:** Why did Holtom describe his design as representing 'a human being in despair' with arms outstretched downwards?",
+                "hinge_question": "Why did Holtom describe his design as representing 'a human being in despair' with arms outstretched downwards?"
               },
               "id": "pwb_l5_src_b",
               "type": "visual",
-              "image_alt": "Proportional geometric diagram of Gerald Holtom’s 1958 Campaign for Nuclear Disarmament peace symbol showing the 45-degree downward semaphore arms for N (Nuclear) and vertical line for D (Disarmament) inside a circle"
+              "image_alt": "Proportional geometric diagram of Gerald Holtom’s 1958 Campaign for Nuclear Disarmament peace symbol showing the 45-degree downward semaphore arms for N (Nuclear) and vertical line for D (Disarmament) inside a circle",
+              "question": "Why did Gerald Holtom's 1958 semaphore design achieve such enduring global fame as a universal symbol of anti-war protest?"
             }
           ],
           "source": {
@@ -7615,16 +7604,16 @@ export default {
             "caption": "Artist Gerald Holtom's original 1958 geometric sketch combining the flag semaphore letters for 'N' (Nuclear) and 'D' (Disarmament) inside a circle, creating the global peace symbol.",
             "citation": "CND Archives / Modern Records Centre, University of Warwick.",
             "question_badge": "Historical Significance",
-            "enquiry_question": "Why did Gerald Holtom's 1958 semaphore design achieve such enduring global fame as a universal symbol of anti-war protest?",
             "model_answer": "Its simple, powerful geometric design was easily drawn on banners, badges, and walls, while capturing both human despair at nuclear destruction and hope for disarmament.",
-            "source_context": "The original design drawing of the CND symbol created by Gerald Holtom in February 1958 for the first Aldermaston March. **Hinge Question:** Why did Holtom describe his design as representing 'a human being in despair' with arms outstretched downwards?",
-            "hinge_question": "Why did Holtom describe his design as representing 'a human being in despair' with arms outstretched downwards?",
+            "source_context": "The original design drawing of the CND symbol created by Gerald Holtom in February 1958 for the first Aldermaston March.",
             "teacher_notes": {
-              "source_context": "The original design drawing of the CND symbol created by Gerald Holtom in February 1958 for the first Aldermaston March. **Hinge Question:** Why did Holtom describe his design as representing 'a human being in despair' with arms outstretched downwards?"
+              "source_context": "The original design drawing of the CND symbol created by Gerald Holtom in February 1958 for the first Aldermaston March. **Hinge Question:** Why did Holtom describe his design as representing 'a human being in despair' with arms outstretched downwards?",
+              "hinge_question": "Why did Holtom describe his design as representing 'a human being in despair' with arms outstretched downwards?"
             },
             "id": "pwb_l5_src_b",
             "type": "visual",
-            "image_alt": "Proportional geometric diagram of Gerald Holtom’s 1958 Campaign for Nuclear Disarmament peace symbol showing the 45-degree downward semaphore arms for N (Nuclear) and vertical line for D (Disarmament) inside a circle"
+            "image_alt": "Proportional geometric diagram of Gerald Holtom’s 1958 Campaign for Nuclear Disarmament peace symbol showing the 45-degree downward semaphore arms for N (Nuclear) and vertical line for D (Disarmament) inside a circle",
+            "question": "Why did Gerald Holtom's 1958 semaphore design achieve such enduring global fame as a universal symbol of anti-war protest?"
           },
           "content": "<span class=\"para-ref\">[2.1]</span> In February 1958, escalating horror at the genetic and environmental devastation of radioactive fallout led to the founding of the **Campaign for Nuclear Disarmament (CND)** in London.<br><br><span class=\"para-ref\">[2.2]</span> Led by philosopher Bertrand Russell & Canon Collins of St Paul’s Cathedral, CND rallied a broad coalition demanding unilateral disarmament—arguing that Britain should voluntarily scrap its nuclear weapons to set a moral example to the world. Professional designer **Gerald Holtom** created the famous CND logo, combining the naval Gerald Holtom semaphore symbol for 'N' (Nuclear) and 'D' (Disarmament), creating what became the universal global peace symbol.",
           "stage_hook_map": {
@@ -7795,16 +7784,16 @@ export default {
               "caption": "The blast-proof entrance and decontamination airlock of the semi-subterranean York Cold War Bunker, built in 1961 as the ROC No. 20 Group Headquarters (English Heritage).",
               "citation": "English Heritage / Royal Observer Corps Archive, York.",
               "question_badge": "Source Inference",
-              "enquiry_question": "What does the construction of blast-proof command bunkers like the York bunker reveal about British military planning during the Cold War?",
               "model_answer": "It reveals that the government anticipated catastrophic surface destruction in a thermonuclear exchange, focusing resources on preserving command continuity and fallout tracking rather than public shelters.",
-              "source_context": "Physical Cold War command structure: York ROC Bunker. Volunteers were prepared to be locked underground for thirty days to map nuclear blast yields and fallout clouds across Yorkshire. **Hinge Question:** Why did the British government build fortified underground command bunkers for officials while advising ordinary families to shelter beneath wooden doors?",
-              "hinge_question": "Why did the British government build fortified underground command bunkers for officials while advising ordinary families to shelter beneath wooden doors?",
+              "source_context": "Physical Cold War command structure: York ROC Bunker. Volunteers were prepared to be locked underground for thirty days to map nuclear blast yields and fallout clouds across Yorkshire.",
               "teacher_notes": {
-                "source_context": "Physical Cold War command structure: York ROC Bunker. Volunteers were prepared to be locked underground for thirty days to map nuclear blast yields and fallout clouds across Yorkshire. **Hinge Question:** Why did the British government build fortified underground command bunkers for officials while advising ordinary families to shelter beneath wooden doors?"
+                "source_context": "Physical Cold War command structure: York ROC Bunker. Volunteers were prepared to be locked underground for thirty days to map nuclear blast yields and fallout clouds across Yorkshire. **Hinge Question:** Why did the British government build fortified underground command bunkers for officials while advising ordinary families to shelter beneath wooden doors?",
+                "hinge_question": "Why did the British government build fortified underground command bunkers for officials while advising ordinary families to shelter beneath wooden doors?"
               },
               "id": "pwb_l5_src_c",
               "type": "visual",
-              "image_alt": "Reinforced green concrete blast entrance, steel airlock door, and communications mast atop the earth-covered Royal Observer Corps No. 20 Group Cold War Bunker in York"
+              "image_alt": "Reinforced green concrete blast entrance, steel airlock door, and communications mast atop the earth-covered Royal Observer Corps No. 20 Group Cold War Bunker in York",
+              "question": "What does the construction of blast-proof command bunkers like the York bunker reveal about British military planning during the Cold War?"
             }
           ],
           "source": {
@@ -7815,16 +7804,16 @@ export default {
             "caption": "The blast-proof entrance and decontamination airlock of the semi-subterranean York Cold War Bunker, built in 1961 as the ROC No. 20 Group Headquarters (English Heritage).",
             "citation": "English Heritage / Royal Observer Corps Archive, York.",
             "question_badge": "Source Inference",
-            "enquiry_question": "What does the construction of blast-proof command bunkers like the York bunker reveal about British military planning during the Cold War?",
             "model_answer": "It reveals that the government anticipated catastrophic surface destruction in a thermonuclear exchange, focusing resources on preserving command continuity and fallout tracking rather than public shelters.",
-            "source_context": "Physical Cold War command structure: York ROC Bunker. Volunteers were prepared to be locked underground for thirty days to map nuclear blast yields and fallout clouds across Yorkshire. **Hinge Question:** Why did the British government build fortified underground command bunkers for officials while advising ordinary families to shelter beneath wooden doors?",
-            "hinge_question": "Why did the British government build fortified underground command bunkers for officials while advising ordinary families to shelter beneath wooden doors?",
+            "source_context": "Physical Cold War command structure: York ROC Bunker. Volunteers were prepared to be locked underground for thirty days to map nuclear blast yields and fallout clouds across Yorkshire.",
             "teacher_notes": {
-              "source_context": "Physical Cold War command structure: York ROC Bunker. Volunteers were prepared to be locked underground for thirty days to map nuclear blast yields and fallout clouds across Yorkshire. **Hinge Question:** Why did the British government build fortified underground command bunkers for officials while advising ordinary families to shelter beneath wooden doors?"
+              "source_context": "Physical Cold War command structure: York ROC Bunker. Volunteers were prepared to be locked underground for thirty days to map nuclear blast yields and fallout clouds across Yorkshire. **Hinge Question:** Why did the British government build fortified underground command bunkers for officials while advising ordinary families to shelter beneath wooden doors?",
+              "hinge_question": "Why did the British government build fortified underground command bunkers for officials while advising ordinary families to shelter beneath wooden doors?"
             },
             "id": "pwb_l5_src_c",
             "type": "visual",
-            "image_alt": "Reinforced green concrete blast entrance, steel airlock door, and communications mast atop the earth-covered Royal Observer Corps No. 20 Group Cold War Bunker in York"
+            "image_alt": "Reinforced green concrete blast entrance, steel airlock door, and communications mast atop the earth-covered Royal Observer Corps No. 20 Group Cold War Bunker in York",
+            "question": "What does the construction of blast-proof command bunkers like the York bunker reveal about British military planning during the Cold War?"
           },
           "content": "<span class=\"para-ref\">[3.1]</span> Over Easter weekend in 1958, CND organized the legendary first **Aldermaston March**—walking 52 miles to nuclear laboratory facilities at the Atomic Weapons Research Establishment at Aldermaston in Berkshire.<br><br><span class=\"para-ref\">[3.2]</span> Tens of thousands marching included students, pacifists, young families, and jazz musicians who walked through wind and rain for four days. The march captured the moral imagination of the nation, marking the moment a distinctive youth counter-culture born in post-war Britain took to the streets in political defiance.",
           "image": "/images/post_war_britain/aldermaston_cnd_demo.jpg",
@@ -7846,16 +7835,16 @@ export default {
               "caption": "The cover of the controversial British government civil defence booklet 'Protect and Survive', published by HMSO for the Home Office in May 1980.",
               "citation": "Home Office & Central Office of Information, HMSO, London, May 1980.",
               "question_badge": "Author's Purpose",
-              "enquiry_question": "What message did the Home Office intend to convey to British families through the publication of 'Protect and Survive' in 1980?",
               "model_answer": "The government aimed to reassure citizens that nuclear war was survivable through disciplined domestic civil defence preparations, maintaining public calm and sustaining political support for Britain's nuclear deterrent.",
-              "source_context": "Official publication cover of the Home Office manual Protect and Survive. **Hinge Question:** Did publishing survival guides reassure the British public or increase civilian dread and cynicism towards nuclear strategy?",
-              "hinge_question": "Did publishing survival guides reassure the British public or increase civilian dread and cynicism towards nuclear strategy?",
+              "source_context": "Official publication cover of the Home Office manual Protect and Survive.",
               "teacher_notes": {
-                "source_context": "Official publication cover of the Home Office manual Protect and Survive. **Hinge Question:** Did publishing survival guides reassure the British public or increase civilian dread and cynicism towards nuclear strategy?"
+                "source_context": "Official publication cover of the Home Office manual Protect and Survive. **Hinge Question:** Did publishing survival guides reassure the British public or increase civilian dread and cynicism towards nuclear strategy?",
+                "hinge_question": "Did publishing survival guides reassure the British public or increase civilian dread and cynicism towards nuclear strategy?"
               },
               "id": "pwb_l5_src_d",
               "type": "visual",
-              "image_alt": "Front cover of the May 1980 UK Home Office booklet PROTECT AND SURVIVE showing a white silhouette of two parents and two children inside a protective ring on an orange-and-black background above the subtitle This booklet tells you how to make your home and your family as safe as possible under nuclear attack"
+              "image_alt": "Front cover of the May 1980 UK Home Office booklet PROTECT AND SURVIVE showing a white silhouette of two parents and two children inside a protective ring on an orange-and-black background above the subtitle This booklet tells you how to make your home and your family as safe as possible under nuclear attack",
+              "question": "What message did the Home Office intend to convey to British families through the publication of 'Protect and Survive' in 1980?"
             }
           ],
           "source": {
@@ -7866,16 +7855,16 @@ export default {
             "caption": "The cover of the controversial British government civil defence booklet 'Protect and Survive', published by HMSO for the Home Office in May 1980.",
             "citation": "Home Office & Central Office of Information, HMSO, London, May 1980.",
             "question_badge": "Author's Purpose",
-            "enquiry_question": "What message did the Home Office intend to convey to British families through the publication of 'Protect and Survive' in 1980?",
             "model_answer": "The government aimed to reassure citizens that nuclear war was survivable through disciplined domestic civil defence preparations, maintaining public calm and sustaining political support for Britain's nuclear deterrent.",
-            "source_context": "Official publication cover of the Home Office manual Protect and Survive. **Hinge Question:** Did publishing survival guides reassure the British public or increase civilian dread and cynicism towards nuclear strategy?",
-            "hinge_question": "Did publishing survival guides reassure the British public or increase civilian dread and cynicism towards nuclear strategy?",
+            "source_context": "Official publication cover of the Home Office manual Protect and Survive.",
             "teacher_notes": {
-              "source_context": "Official publication cover of the Home Office manual Protect and Survive. **Hinge Question:** Did publishing survival guides reassure the British public or increase civilian dread and cynicism towards nuclear strategy?"
+              "source_context": "Official publication cover of the Home Office manual Protect and Survive. **Hinge Question:** Did publishing survival guides reassure the British public or increase civilian dread and cynicism towards nuclear strategy?",
+              "hinge_question": "Did publishing survival guides reassure the British public or increase civilian dread and cynicism towards nuclear strategy?"
             },
             "id": "pwb_l5_src_d",
             "type": "visual",
-            "image_alt": "Front cover of the May 1980 UK Home Office booklet PROTECT AND SURVIVE showing a white silhouette of two parents and two children inside a protective ring on an orange-and-black background above the subtitle This booklet tells you how to make your home and your family as safe as possible under nuclear attack"
+            "image_alt": "Front cover of the May 1980 UK Home Office booklet PROTECT AND SURVIVE showing a white silhouette of two parents and two children inside a protective ring on an orange-and-black background above the subtitle This booklet tells you how to make your home and your family as safe as possible under nuclear attack",
+            "question": "What message did the Home Office intend to convey to British families through the publication of 'Protect and Survive' in 1980?"
           },
           "content": "<span class=\"para-ref\">[4.1]</span> While ordinary citizens were given no physical shelter, the British state invested vast budgets in constructing a secret underground command infrastructure for the military and elite. Across the provinces, the Home Office constructed twenty-nine regional command centers for the Royal Observer Corps HQ, including the fortified **York Cold War Bunker** built in 1961.<br><br><span class=\"para-ref\">[4.2]</span> Built behind blast-proof reinforced concrete walls, sixty volunteer officers could remain sealed underground for 30 days, plotting bomb fallout plumes and radioactive cloud trajectories with Geiger counters and triangulation map boards.",
           "concept_widget": {
@@ -7991,17 +7980,17 @@ export default {
               "text": "“The booklet 'Protect and Survive' is a cruel and dangerous deception. It is designed not to protect human lives, but to protect the nuclear strategy of our rulers from democratic scrutiny. By pretending that a war fought with thermonuclear megaton weapons can be weathered beneath cardboard and mattresses, the government is attempting to condition the British people into accepting nuclear weapons as normal. There is no survival in nuclear war: our only defence is to protest and dismantle these machines of doom.”",
               "citation": "E. P. Thompson, Protest and Survive, CND Pamphlet (1980).",
               "question_badge": "Cross-Referencing",
-              "enquiry_question": "How does E. P. Thompson's argument in Source E directly challenge the Home Office guidance in Source D?",
               "model_answer": "Thompson contends that nuclear war is unsurvivable, accusing the government of using civil defence instructions as psychological propaganda to fool the public into accepting nuclear weapons rather than demanding peace.",
-              "source_context": "Pamphlet written by historian and CND leader E. P. Thompson responding to the government's Protect and Survive booklet. **Hinge Question:** Why did anti-nuclear campaigners argue that civil defence made nuclear war more likely rather than less likely?",
-              "hinge_question": "Why did anti-nuclear campaigners argue that civil defence made nuclear war more likely rather than less likely?",
+              "source_context": "Pamphlet written by historian and CND leader E. P. Thompson responding to the government's Protect and Survive booklet.",
               "teacher_notes": {
-                "source_context": "Pamphlet written by historian and CND leader E. P. Thompson responding to the government's Protect and Survive booklet. **Hinge Question:** Why did anti-nuclear campaigners argue that civil defence made nuclear war more likely rather than less likely?"
+                "source_context": "Pamphlet written by historian and CND leader E. P. Thompson responding to the government's Protect and Survive booklet. **Hinge Question:** Why did anti-nuclear campaigners argue that civil defence made nuclear war more likely rather than less likely?",
+                "hinge_question": "Why did anti-nuclear campaigners argue that civil defence made nuclear war more likely rather than less likely?"
               },
               "id": "pwb_l5_src_e",
               "type": "written",
               "src": "",
-              "image": ""
+              "image": "",
+              "question": "How does E. P. Thompson's argument in Source E directly challenge the Home Office guidance in Source D?"
             }
           ],
           "source": {
@@ -8010,17 +7999,17 @@ export default {
             "text": "“The booklet 'Protect and Survive' is a cruel and dangerous deception. It is designed not to protect human lives, but to protect the nuclear strategy of our rulers from democratic scrutiny. By pretending that a war fought with thermonuclear megaton weapons can be weathered beneath cardboard and mattresses, the government is attempting to condition the British people into accepting nuclear weapons as normal. There is no survival in nuclear war: our only defence is to protest and dismantle these machines of doom.”",
             "citation": "E. P. Thompson, Protest and Survive, CND Pamphlet (1980).",
             "question_badge": "Cross-Referencing",
-            "enquiry_question": "How does E. P. Thompson's argument in Source E directly challenge the Home Office guidance in Source D?",
             "model_answer": "Thompson contends that nuclear war is unsurvivable, accusing the government of using civil defence instructions as psychological propaganda to fool the public into accepting nuclear weapons rather than demanding peace.",
-            "source_context": "Pamphlet written by historian and CND leader E. P. Thompson responding to the government's Protect and Survive booklet. **Hinge Question:** Why did anti-nuclear campaigners argue that civil defence made nuclear war more likely rather than less likely?",
-            "hinge_question": "Why did anti-nuclear campaigners argue that civil defence made nuclear war more likely rather than less likely?",
+            "source_context": "Pamphlet written by historian and CND leader E. P. Thompson responding to the government's Protect and Survive booklet.",
             "teacher_notes": {
-              "source_context": "Pamphlet written by historian and CND leader E. P. Thompson responding to the government's Protect and Survive booklet. **Hinge Question:** Why did anti-nuclear campaigners argue that civil defence made nuclear war more likely rather than less likely?"
+              "source_context": "Pamphlet written by historian and CND leader E. P. Thompson responding to the government's Protect and Survive booklet. **Hinge Question:** Why did anti-nuclear campaigners argue that civil defence made nuclear war more likely rather than less likely?",
+              "hinge_question": "Why did anti-nuclear campaigners argue that civil defence made nuclear war more likely rather than less likely?"
             },
             "id": "pwb_l5_src_e",
             "type": "written",
             "src": "",
-            "image": ""
+            "image": "",
+            "question": "How does E. P. Thompson's argument in Source E directly challenge the Home Office guidance in Source D?"
           },
           "content": "<span class=\"para-ref\">[5.1]</span> In 1980, the Thatcher government published a notorious 32-page civil defense booklet titled **Protect and Survive**. If the dreaded four-minute warning sirens sounded, the booklet advised families to build an 'Inner Core Shelter' inside their homes: leaning interior wooden doors packed with sandbags and mattresses against a wall.<br><br><span class=\"para-ref\">[5.2]</span> The absurd advice sparked outrage, inspiring E. P. Thompson's polemic *Protest and Survive* and the mass women's peace camp at Greenham Common 'embrace base' in 1982, where 30,000 women held hands to encircle the 9-mile perimeter fence of the US cruise missile base."
         }
@@ -8031,17 +8020,16 @@ export default {
           "id": "pwb_l5_src_a",
           "type": "written",
           "title": "Source A (Official Dispatch): Prime Minister Winston Churchill on the First British Atomic Bomb Test (October 1952)",
-          "context": "On 3 October 1952, Britain detonated its first atomic bomb (Operation Hurricane) inside the hull of the frigate HMS Plym off the coast of Western Australia, becoming the third nuclear power after the USA and USSR. **Hinge Question:** Why did postwar British governments prioritize developing an independent nuclear deterrent despite severe domestic economic rationing?",
-          "hinge_question": "Why did postwar British governments prioritize developing an independent nuclear deterrent despite severe domestic economic rationing?",
+          "context": "On 3 October 1952, Britain detonated its first atomic bomb (Operation Hurricane) inside the hull of the frigate HMS Plym off the coast of Western Australia, becoming the third nuclear power after the USA and USSR.",
           "text": "“We have conducted our first atomic explosion with complete success... When the bomb exploded inside the frigate HMS Plym, the vessel was instantly vaporised, leaving only a glowing crater fifty feet deep in the seabed. Britain has now acquired the means to defend herself and maintain her rightful place at the highest council of great powers. Yet the destructive violence of this weapon imposes upon all civilized nations an awful responsibility to avert the calamity of atomic war.”",
           "caption": "Source A: Prime Minister Winston Churchill’s statement to Parliament announcing the successful test of Britain’s first atomic weapon in Operation Hurricane (October 1952).",
           "question_badge": "Nuclear Geopolitics",
           "question": "Why did Winston Churchill consider Britain’s first successful atomic bomb test to be an essential national achievement?",
-          "enquiry_question": "Why did Winston Churchill consider Britain’s first successful atomic bomb test to be an essential national achievement?",
           "model_answer": "Churchill argued that possessing an independent atomic bomb was necessary for Britain to defend itself and retain its global status alongside the United States and the Soviet Union.",
-          "source_context": "On 3 October 1952, Britain detonated its first atomic bomb (Operation Hurricane) inside the hull of the frigate HMS Plym off the coast of Western Australia, becoming the third nuclear power after the USA and USSR. **Hinge Question:** Why did postwar British governments prioritize developing an independent nuclear deterrent despite severe domestic economic rationing?",
+          "source_context": "On 3 October 1952, Britain detonated its first atomic bomb (Operation Hurricane) inside the hull of the frigate HMS Plym off the coast of Western Australia, becoming the third nuclear power after the USA and USSR.",
           "teacher_notes": {
-            "source_context": "On 3 October 1952, Britain detonated its first atomic bomb (Operation Hurricane) inside the hull of the frigate HMS Plym off the coast of Western Australia, becoming the third nuclear power after the USA and USSR. **Hinge Question:** Why did postwar British governments prioritize developing an independent nuclear deterrent despite severe domestic economic rationing?"
+            "source_context": "On 3 October 1952, Britain detonated its first atomic bomb (Operation Hurricane) inside the hull of the frigate HMS Plym off the coast of Western Australia, becoming the third nuclear power after the USA and USSR. **Hinge Question:** Why did postwar British governments prioritize developing an independent nuclear deterrent despite severe domestic economic rationing?",
+            "hinge_question": "Why did postwar British governments prioritize developing an independent nuclear deterrent despite severe domestic economic rationing?"
           },
           "src": "",
           "image": ""
@@ -8054,17 +8042,17 @@ export default {
           "caption": "Artist Gerald Holtom's original 1958 geometric sketch combining the flag semaphore letters for 'N' (Nuclear) and 'D' (Disarmament) inside a circle, creating the global peace symbol.",
           "citation": "CND Archives / Modern Records Centre, University of Warwick.",
           "question_badge": "Historical Significance",
-          "enquiry_question": "Why did Gerald Holtom's 1958 semaphore design achieve such enduring global fame as a universal symbol of anti-war protest?",
           "model_answer": "Its simple, powerful geometric design was easily drawn on banners, badges, and walls, while capturing both human despair at nuclear destruction and hope for disarmament.",
-          "source_context": "The original design drawing of the CND symbol created by Gerald Holtom in February 1958 for the first Aldermaston March. **Hinge Question:** Why did Holtom describe his design as representing 'a human being in despair' with arms outstretched downwards?",
-          "hinge_question": "Why did Holtom describe his design as representing 'a human being in despair' with arms outstretched downwards?",
+          "source_context": "The original design drawing of the CND symbol created by Gerald Holtom in February 1958 for the first Aldermaston March.",
           "teacher_notes": {
-            "source_context": "The original design drawing of the CND symbol created by Gerald Holtom in February 1958 for the first Aldermaston March. **Hinge Question:** Why did Holtom describe his design as representing 'a human being in despair' with arms outstretched downwards?"
+            "source_context": "The original design drawing of the CND symbol created by Gerald Holtom in February 1958 for the first Aldermaston March. **Hinge Question:** Why did Holtom describe his design as representing 'a human being in despair' with arms outstretched downwards?",
+            "hinge_question": "Why did Holtom describe his design as representing 'a human being in despair' with arms outstretched downwards?"
           },
           "id": "pwb_l5_src_b",
           "type": "visual",
           "context": "The original design drawing of the CND symbol created by Gerald Holtom in February 1958 for the first Aldermaston March.",
-          "image_alt": "Proportional geometric diagram of Gerald Holtom’s 1958 Campaign for Nuclear Disarmament peace symbol showing the 45-degree downward semaphore arms for N (Nuclear) and vertical line for D (Disarmament) inside a circle"
+          "image_alt": "Proportional geometric diagram of Gerald Holtom’s 1958 Campaign for Nuclear Disarmament peace symbol showing the 45-degree downward semaphore arms for N (Nuclear) and vertical line for D (Disarmament) inside a circle",
+          "question": "Why did Gerald Holtom's 1958 semaphore design achieve such enduring global fame as a universal symbol of anti-war protest?"
         },
         {
           "letter": "C",
@@ -8074,17 +8062,17 @@ export default {
           "caption": "The blast-proof entrance and decontamination airlock of the semi-subterranean York Cold War Bunker, built in 1961 as the ROC No. 20 Group Headquarters (English Heritage).",
           "citation": "English Heritage / Royal Observer Corps Archive, York.",
           "question_badge": "Source Inference",
-          "enquiry_question": "What does the construction of blast-proof command bunkers like the York bunker reveal about British military planning during the Cold War?",
           "model_answer": "It reveals that the government anticipated catastrophic surface destruction in a thermonuclear exchange, focusing resources on preserving command continuity and fallout tracking rather than public shelters.",
-          "source_context": "Physical Cold War command structure: York ROC Bunker. Volunteers were prepared to be locked underground for thirty days to map nuclear blast yields and fallout clouds across Yorkshire. **Hinge Question:** Why did the British government build fortified underground command bunkers for officials while advising ordinary families to shelter beneath wooden doors?",
-          "hinge_question": "Why did the British government build fortified underground command bunkers for officials while advising ordinary families to shelter beneath wooden doors?",
+          "source_context": "Physical Cold War command structure: York ROC Bunker. Volunteers were prepared to be locked underground for thirty days to map nuclear blast yields and fallout clouds across Yorkshire.",
           "teacher_notes": {
-            "source_context": "Physical Cold War command structure: York ROC Bunker. Volunteers were prepared to be locked underground for thirty days to map nuclear blast yields and fallout clouds across Yorkshire. **Hinge Question:** Why did the British government build fortified underground command bunkers for officials while advising ordinary families to shelter beneath wooden doors?"
+            "source_context": "Physical Cold War command structure: York ROC Bunker. Volunteers were prepared to be locked underground for thirty days to map nuclear blast yields and fallout clouds across Yorkshire. **Hinge Question:** Why did the British government build fortified underground command bunkers for officials while advising ordinary families to shelter beneath wooden doors?",
+            "hinge_question": "Why did the British government build fortified underground command bunkers for officials while advising ordinary families to shelter beneath wooden doors?"
           },
           "id": "pwb_l5_src_c",
           "type": "visual",
           "context": "Physical Cold War command structure: York ROC Bunker. Volunteers were prepared to be locked underground for thirty days to map nuclear blast yields and fallout clouds across Yorkshire.",
-          "image_alt": "Reinforced green concrete blast entrance, steel airlock door, and communications mast atop the earth-covered Royal Observer Corps No. 20 Group Cold War Bunker in York"
+          "image_alt": "Reinforced green concrete blast entrance, steel airlock door, and communications mast atop the earth-covered Royal Observer Corps No. 20 Group Cold War Bunker in York",
+          "question": "What does the construction of blast-proof command bunkers like the York bunker reveal about British military planning during the Cold War?"
         },
         {
           "letter": "D",
@@ -8094,17 +8082,17 @@ export default {
           "caption": "Front cover of the British government civil defence booklet 'Protect and Survive', published by HMSO for the Home Office in May 1980.",
           "citation": "Home Office & Central Office of Information, HMSO, London, May 1980.",
           "question_badge": "Author's Purpose",
-          "enquiry_question": "What message did the Home Office intend to convey to British families through the publication of 'Protect and Survive' in 1980?",
           "model_answer": "The government aimed to reassure citizens that nuclear war was survivable through disciplined domestic civil defence preparations, maintaining public calm and sustaining political support for Britain's nuclear deterrent.",
-          "source_context": "Official publication cover of the Home Office manual Protect and Survive. **Hinge Question:** Did publishing survival guides reassure the British public or increase civilian dread and cynicism towards nuclear strategy?",
-          "hinge_question": "Did publishing survival guides reassure the British public or increase civilian dread and cynicism towards nuclear strategy?",
+          "source_context": "Official publication cover of the Home Office manual Protect and Survive.",
           "teacher_notes": {
-            "source_context": "Official publication cover of the Home Office manual Protect and Survive. **Hinge Question:** Did publishing survival guides reassure the British public or increase civilian dread and cynicism towards nuclear strategy?"
+            "source_context": "Official publication cover of the Home Office manual Protect and Survive. **Hinge Question:** Did publishing survival guides reassure the British public or increase civilian dread and cynicism towards nuclear strategy?",
+            "hinge_question": "Did publishing survival guides reassure the British public or increase civilian dread and cynicism towards nuclear strategy?"
           },
           "id": "pwb_l5_src_d",
           "type": "visual",
           "context": "Official publication cover of the Home Office manual Protect and Survive.",
-          "image_alt": "Front cover of the May 1980 UK Home Office booklet PROTECT AND SURVIVE showing a white silhouette of two parents and two children inside a protective ring on an orange-and-black background above the subtitle This booklet tells you how to make your home and your family as safe as possible under nuclear attack"
+          "image_alt": "Front cover of the May 1980 UK Home Office booklet PROTECT AND SURVIVE showing a white silhouette of two parents and two children inside a protective ring on an orange-and-black background above the subtitle This booklet tells you how to make your home and your family as safe as possible under nuclear attack",
+          "question": "What message did the Home Office intend to convey to British families through the publication of 'Protect and Survive' in 1980?"
         },
         {
           "letter": "E",
@@ -8112,18 +8100,18 @@ export default {
           "text": "“The booklet 'Protect and Survive' is a cruel and dangerous deception. It is designed not to protect human lives, but to protect the nuclear strategy of our rulers from democratic scrutiny. By pretending that a war fought with thermonuclear megaton weapons can be weathered beneath cardboard and mattresses, the government is attempting to condition the British people into accepting nuclear weapons as normal. There is no survival in nuclear war: our only defence is to protest and dismantle these machines of doom.”",
           "citation": "E. P. Thompson, Protest and Survive, CND Pamphlet (1980).",
           "question_badge": "Cross-Referencing",
-          "enquiry_question": "How does E. P. Thompson's argument in Source E directly challenge the Home Office guidance in Source D?",
           "model_answer": "Thompson contends that nuclear war is unsurvivable, accusing the government of using civil defence instructions as psychological propaganda to fool the public into accepting nuclear weapons rather than demanding peace.",
-          "source_context": "Pamphlet written by historian and CND leader E. P. Thompson responding to the government's Protect and Survive booklet. **Hinge Question:** Why did anti-nuclear campaigners argue that civil defence made nuclear war more likely rather than less likely?",
-          "hinge_question": "Why did anti-nuclear campaigners argue that civil defence made nuclear war more likely rather than less likely?",
+          "source_context": "Pamphlet written by historian and CND leader E. P. Thompson responding to the government's Protect and Survive booklet.",
           "teacher_notes": {
-            "source_context": "Pamphlet written by historian and CND leader E. P. Thompson responding to the government's Protect and Survive booklet. **Hinge Question:** Why did anti-nuclear campaigners argue that civil defence made nuclear war more likely rather than less likely?"
+            "source_context": "Pamphlet written by historian and CND leader E. P. Thompson responding to the government's Protect and Survive booklet. **Hinge Question:** Why did anti-nuclear campaigners argue that civil defence made nuclear war more likely rather than less likely?",
+            "hinge_question": "Why did anti-nuclear campaigners argue that civil defence made nuclear war more likely rather than less likely?"
           },
           "id": "pwb_l5_src_e",
           "type": "written",
           "src": "",
           "image": "",
-          "context": "Pamphlet written by historian and CND leader E. P. Thompson responding to the government's Protect and Survive booklet."
+          "context": "Pamphlet written by historian and CND leader E. P. Thompson responding to the government's Protect and Survive booklet.",
+          "question": "How does E. P. Thompson's argument in Source E directly challenge the Home Office guidance in Source D?"
         }
       ],
       "comprehension": [

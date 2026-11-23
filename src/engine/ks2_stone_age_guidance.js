@@ -2,7 +2,7 @@
  * KS2 Junior School Teacher Planning Hub & Worksheet Companion Data for:
  * Stone Age to Iron Age Britain — Hunter-Gatherers to Hillforts (c. 800,000 BC–AD 43) [ks2_stone_to_iron_age]
  *
- * 100% Year-Neutral Key Stage 2 Primary Calibration with Universal Dual-Scaffolding (🟢 Foundation Clues & 🟣 Scholar Challenge).
+ * 100% Year-Neutral Key Stage 2 Primary Calibration with Universal Single-Tier Historian Scaffolding.
  * Strict Institutional Neutrality under 'The History Revision Hub'.
  */
 
@@ -139,7 +139,7 @@ export const KS2_STONE_AGE_TEACHER_GUIDANCE = {
     timeline: [
       { time: '00–10 mins', phase: 'Do Now Retrieval', activity: '5-question spaced retrieval of Lessons 1–2 (Doggerland, Neolithic farming, polished axes, Skara Brae 1850 storm).' },
       { time: '10–25 mins', phase: 'Building Stonehenge in Stages', activity: 'Read Acts 1–2 aloud; trace the 150-mile Preseli Hills bluestone route on the map and examine sarsen trilithon joints.' },
-      { time: '25–45 mins', phase: 'Durrington Walls & Worksheet', activity: 'Read Act 3 on Solstice alignments and winter pig feasts at Durrington Walls; complete Dual-Scaffolded Worksheet Tasks 1–5.' },
+      { time: '25–45 mins', phase: 'Durrington Walls & Worksheet', activity: 'Read Act 3 on Solstice alignments and winter pig feasts at Durrington Walls; complete Enquiry Worksheet Tasks 1–5.' },
       { time: '45–60 mins', phase: 'Hinge Check & Plenary', activity: 'Vote on whether Stonehenge was mainly a solar calendar, healing shrine, or ancestors’ monument, then run the Consolidate Quiz.' },
     ],
     subjectPrimer: `Stonehenge on Salisbury Plain in Wiltshire was built in stages over nearly 1,000 years (c. 3000–2000 BC), not in one go—and NOT by Celtic Druids (who lived over 2,000 years later!). Stage 1 (c. 3000 BC) was a circular chalk bank and ditch ("henge") dug with red-deer antler picks and cattle shoulder-blade shovels, holding cremation burials. Around 2500 BC, builders hauled spotted Welsh bluestones over 150 miles from the Preseli Hills in Pembrokeshire and dragged 25-tonne grey sarsen boulders from West Woods near Marlborough (15 miles north) on wooden sledges and rollers. Incredibly, they shaped stone interlocking joints—mortise holes and tenon pegs—like giant Lego! Two miles away at Durrington Walls stood the thatched village of the builders, where animal bones show people travelled from as far as Scotland for midwinter pig and beef feasts aligned with the Solstice sun.`,
@@ -156,7 +156,7 @@ export const KS2_STONE_AGE_TEACHER_GUIDANCE = {
       },
     ],
     answers: {
-      task1: `Source A shows giant upright sarsen stones topped by horizontal lintels locked into place on Salisbury Plain—carved using stone mauls with mortise-and-tenon joints so the 7-tonne cross-stones have stayed balanced for 4,500 years.`,
+      task1: `From the air, Source A reveals Stonehenge's giant circular outer chalk bank and ditch (a henge dug with deer-antler picks around 3000 BC) plus the straight Avenue leading towards the Heel Stone.`,
       task2: `Correct order: 1) c. 3000 BC — Workers dig Stonehenge's circular chalk ditch and bank using deer-antler picks; 2) c. 2500 BC — Spotted bluestones arrive 150 miles from Wales and 25-tonne sarsens are raised; 3) c. 2500 BC — Families feast on roast pork in midwinter at nearby Durrington Walls village; 4) 1928 & Today — Aerial photos and excavations reveal buried pits and roads around Stonehenge.`,
       task3: `Without wheels or metal tools, Neolithic communities dug chalk with deer-antler picks, hauled Welsh bluestones and Wiltshire sarsens on greased wooden sledges, tipped uprights into sloped pits using earth ramps, and locked lintels with carved stone pegs.`,
       task4: `Stonehenge Engineer: "Pull together on the greased oak sledge and check the carved tenon peg fits the lintel!" vs. Pilgrim at Durrington Walls: "My family walked all the way from northern Britain to feast by the fire and watch the midwinter sunset between the giant stones."`,
@@ -185,7 +185,7 @@ export const KS2_STONE_AGE_TEACHER_GUIDANCE = {
       },
     ],
     answers: {
-      task1: `Source A shows the Amesbury Archer's skeleton surrounded by Beaker pots, copper knives, flint arrowheads, wristguards, and gold hair rings—proving he was a high-status traveller and skilled metalworker buried near Stonehenge around 2300 BC.`,
+      task1: `Source A shows tall, comb-stamped Bell Beaker clay pots alongside flat cast bronze blades—proving Beaker craftworkers around 2400 BC mastered both fine geometric pottery and metal smelting.`,
       task2: `Correct order: 1) c. 2450 BC — Bell Beaker newcomers cross from Europe bringing copper and gold working; 2) c. 2300 BC — The Amesbury Archer (raised near the Alps) is buried with 100+ items near Stonehenge; 3) c. 1900–1600 BC — Miners dig copper at Great Orme and master smiths hammer the Mold Gold Cape; 4) AD 2002 — Archaeologists excavate the Amesbury Archer before a new school is built.`,
       task3: `Bronze transformed Britain because melting copper with Cornish tin produced tougher, sharper axes and daggers that could be poured into moulds and melted down again if broken, while tin and copper trade linked Britain to Europe.`,
       task4: `Amesbury Archer: "I grew up drinking icy mountain water near the Alps and crossed the sea with copper knives, gold rings, and metalworking stones." vs. Young Miner at Great Orme: "I squeeze through narrow Welsh rock tunnels with bone picks to dig green copper ore for the smelters!"`,
@@ -197,7 +197,7 @@ export const KS2_STONE_AGE_TEACHER_GUIDANCE = {
     timeline: [
       { time: '00–10 mins', phase: 'Do Now Retrieval', activity: '5-question spaced retrieval of Lesson 4 (copper + tin = bronze, Beaker pots, Amesbury Archer Alps tooth enamel, Great Orme).' },
       { time: '10–25 mins', phase: 'Fire & Mud at Must Farm', activity: 'Read Acts 1–2 aloud; inspect the 2015–16 Must Farm excavation, socketed bronze axes, charred pots, and wicker eel traps.' },
-      { time: '25–45 mins', phase: 'Dover Boat, Flag Fen & Worksheet', activity: 'Read Act 3 on the Dover Bronze Age Boat and Flag Fen ritual swords; complete Dual-Scaffolded Worksheet Tasks 1–5.' },
+      { time: '25–45 mins', phase: 'Dover Boat, Flag Fen & Worksheet', activity: 'Read Act 3 on the Dover Bronze Age Boat and Flag Fen ritual swords; complete Enquiry Worksheet Tasks 1–5.' },
       { time: '45–60 mins', phase: 'Hinge Check & Plenary', activity: 'Explain why archaeologists nicknamed Must Farm "Britain’s Pompeii", then run the 5-question Consolidate Quiz.' },
     ],
     subjectPrimer: `Usually wood, cloth, and food rot away in British soil, making prehistoric homes look bare. At Must Farm near Peterborough in Cambridgeshire around 850 BC (Late Bronze Age), families built five cosy wooden roundhouses perched on oak stilts directly above a slow-moving Fenland river, surrounded by a timber palisade. Less than a year after it was built, a sudden fire swept through the roofs: families escaped safely (no human bodies died in the fire!), while their burning houses plunged into wet, oxygen-free river silt that snuffed out the flames and froze everyday life in time—earning the nickname "Britain's Pompeii"! Excavated in 2015–2016, Must Farm yielded Britain's oldest complete wooden wheel (1 metre wide), socketed bronze axes still in wooden handles, woven lime-bark and flax/nettle textiles, wicker eel traps, wooden bowls with spoon marks in wheat porridge, and glass beads traded from the Mediterranean and Middle East—right beside the ritual wooden causeway of Flag Fen.`,
@@ -243,7 +243,7 @@ export const KS2_STONE_AGE_TEACHER_GUIDANCE = {
       },
     ],
     answers: {
-      task1: `Source A shows the huge triple chalk ramparts and deep ditches of Maiden Castle in Dorset—built with maze-like entrances so Iron Age defenders on high wooden walls could hurl sling-stones down at attackers while protecting families and grain stores inside.`,
+      task1: `Source A is the heavy round top stone of an Iron Age rotary quern: families poured wheat or barley into the central hole and turned a wooden peg handle to spin the stone and grind bread flour quickly.`,
       task2: `Correct order: 1) c. 800 BC — Blacksmiths begin smelting common iron ore and hammering strong ploughs and tools; 2) c. 450–100 BC — Celtic tribes expand giant rampart hillforts like Maiden Castle in Dorset; 3) c. 150–50 BC — Craftworkers twist gold Snettisham torcs, decorate bronze shields, and mint tribal coins; 4) AD 43 — Emperor Claudius's Roman legions invade Britain, bringing written records and ending prehistory.`,
       task3: `Iron changed life in Britain because iron ore was much easier to find locally than rare tin for bronze, and red-hot hammered iron made tougher ploughs and axes that cleared heavy clay soils, grew more food, and supported larger Celtic tribes.`,
       task4: `Celtic Blacksmith Inside a Hillfort: "My iron ploughs feed our tribe, our Snettisham gold torcs dazzle visitors, and Maiden Castle's ramparts guard our grain!" vs. Roman Scout in AD 43: "Britain has rich cornfields, gold coins, and steep earth hillforts, but its rival tribes do not fight as one united army."`,
