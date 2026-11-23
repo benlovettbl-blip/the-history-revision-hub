@@ -3284,7 +3284,7 @@ img::after {
   }
 
   .lesson-hero-content,
-  .lesson-hero > div:last-child {
+  .lesson-hero > div:last-child:not(.lesson-hero-cameo):not(.lesson-hero-bottom-tools) {
     position: relative !important;
     bottom: auto !important;
     left: auto !important;
@@ -16009,12 +16009,15 @@ body.lesson-full-width .btn-fullwidth-toggle,
   transform: translateY(-50%) translateX(0);
 }
 
-@media (max-width: 740px) {
+@media (max-width: 740px), (max-width: 932px) and (orientation: landscape) and (max-height: 500px) {
   .lesson-hero-cameo {
     display: none !important;
   }
   .lesson-hero.has-hero-cameo .lesson-hero-content {
-    padding-right: 1.25rem !important;
+    padding-right: 1rem !important;
+  }
+  .lesson-hero.has-hero-cameo .lesson-hero-bottom-tools {
+    right: 12px !important;
   }
 }
 
