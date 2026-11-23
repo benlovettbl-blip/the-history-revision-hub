@@ -7,17 +7,91 @@ import {
   SITE_ORIGIN,
   getLessonSeoSlugList,
 } from './src/data/seo_routes.js';
+import { getLessonMockQuestions } from './src/engine/mock_exam_bank_data.js';
 
 function stripPlainText(str = '') {
   return String(str)
+    .replace(/<br\s*\/?>/gi, ' ')
+    .replace(/<\/(?:p|div|li|h[1-6])>/gi, ' ')
     .replace(/<[^>]+>/g, ' ')
     .replace(/&nbsp;/gi, ' ')
+    .replace(/&bull;|•/gi, ' ')
     .replace(/&amp;/gi, '&')
     .replace(/&ndash;/gi, '–')
     .replace(/&mdash;/gi, '—')
     .replace(/&ldquo;|&rdquo;|&quot;/gi, '"')
+    .replace(/&#39;|&rsquo;|&lsquo;/gi, "'")
     .replace(/\s+/g, ' ')
     .trim();
+}
+
+function trimAtSentence(text = '', maxLen = 380) {
+  const clean = stripPlainText(text).replace(/^Sample Acceptable Inferences:\s*/i, '').trim();
+  if (!clean || clean.length <= maxLen) return clean;
+  const slice = clean.slice(0, maxLen);
+  const lastStop = Math.max(slice.lastIndexOf('. '), slice.lastIndexOf('! '), slice.lastIndexOf('? '));
+  if (lastStop > 110) return slice.slice(0, lastStop + 1).trim();
+  const lastSpace = slice.lastIndexOf(' ');
+  return `${(lastSpace > 80 ? slice.slice(0, lastSpace) : slice).trim()}...`;
+}
+
+function collectLessonSeoQA(unitId, lesson) {
+  const items = [];
+  const seenKeys = new Set();
+
+  const pushQA = (rawQ, rawAns, marks) => {
+    let qClean = stripPlainText(rawQ || '').replace(/^(?:Question|Task)\s*\d+[\.:\s-]*/i, '').trim();
+    if (!qClean || qClean.length < 12) return;
+    const normKey = qClean
+      .toLowerCase()
+      .replace(/\[\s*\d+[^\]]*\]|\(\s*\d+\s*marks?\s*\)/gi, '')
+      .replace(/[^a-z0-9]+/g, ' ')
+      .trim();
+    if (!normKey || seenKeys.has(normKey)) return;
+    seenKeys.add(normKey);
+
+    if (marks && !/\b\d+\s*marks?\b/i.test(qClean)) {
+      qClean = `${qClean} (${marks} marks)`;
+    }
+    const ansClean = trimAtSentence(rawAns || '', 380);
+    items.push({ question: qClean, answer: ansClean });
+  };
+
+  if (lesson?.exam_practice) {
+    const ep = lesson.exam_practice;
+    if (Array.isArray(ep.questions)) {
+      ep.questions.forEach((q) => {
+        let bestAns = q.model || q.model_answer || q.answer || '';
+        if (!bestAns && q.model_tiers && typeof q.model_tiers === 'object' && !Array.isArray(q.model_tiers)) {
+          const tierVals = Object.values(q.model_tiers).filter((v) => typeof v === 'string');
+          if (tierVals.length > 0) bestAns = tierVals[tierVals.length - 1];
+        }
+        pushQA(q.question || q.prompt, bestAns, q.marks);
+      });
+    }
+    if (ep.question) pushQA(ep.question, ep.model || ep.model_answer || ep.answer, ep.marks);
+    if (ep.part_a?.question) pushQA(ep.part_a.question, ep.part_a.model || ep.part_a.answer, ep.part_a.marks);
+    if (ep.part_b?.question) pushQA(ep.part_b.question, ep.part_b.model || ep.part_b.answer, ep.part_b.marks);
+  }
+
+  const extraMocks = getLessonMockQuestions(unitId, lesson?.id);
+  if (Array.isArray(extraMocks)) {
+    extraMocks.forEach((mq) => {
+      pushQA(mq.questionText || mq.question, mq.modelAnswer || mq.model, mq.marks);
+    });
+  }
+
+  if (Array.isArray(lesson?.tasks)) {
+    lesson.tasks.forEach((t) => {
+      let tAns = t.model_answer || t.model || t.answer || '';
+      if (!tAns && t.feature_1?.model) {
+        tAns = `${t.feature_1.model} ${t.feature_2?.model || ''}`;
+      }
+      pushQA(t.question || t.prompt || t.synthesis_prompt, tAns, t.marks);
+    });
+  }
+
+  return items;
 }
 
 function escapeHtml(str = '') {
@@ -106,6 +180,7 @@ function seoCoursePagesPlugin() {
       // 2. Generate dedicated static HTML route for each course + every individual lesson in SEO_UNIT_ROUTES
       let generatedCount = 0;
       let generatedLessonCount = 0;
+      let totalIndexedQuestions = 0;
       const lessonSitemapUrls = [];
 
       for (const route of SEO_UNIT_ROUTES) {
@@ -261,19 +336,20 @@ function seoCoursePagesPlugin() {
             })
             .filter((s) => s.stTitle || s.stQ);
 
-          // Collect authentic exam/practice question stems for Google long-tail search indexing
-          const practiceStems = [];
-          if (lesson.exam_practice && Array.isArray(lesson.exam_practice.questions)) {
-            lesson.exam_practice.questions.forEach((q) => {
-              const qTxt = stripPlainText(q.question || q.prompt || '');
-              if (qTxt) practiceStems.push(qTxt);
-            });
-          } else if (Array.isArray(lesson.tasks)) {
-            lesson.tasks.forEach((t) => {
-              const tTxt = stripPlainText(t.question || t.prompt || t.synthesis_prompt || '');
-              if (tTxt) practiceStems.push(tTxt);
-            });
-          }
+          // Collect all workbook, past-paper & forecast questions + concise model answer summaries
+          const lessonQAItems = collectLessonSeoQA(route.unitId, lesson);
+          totalIndexedQuestions += lessonQAItems.length;
+          const faqEntities = lessonQAItems
+            .filter((item) => item.question && item.answer && item.answer.length >= 25)
+            .slice(0, 10)
+            .map((item) => ({
+              '@type': 'Question',
+              name: item.question,
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: item.answer,
+              },
+            }));
 
           const rawLessonHero =
             lesson.hero_image ||
@@ -296,37 +372,44 @@ function seoCoursePagesPlugin() {
           const lessonMetaDesc =
             rawMetaDesc.length > 160 ? `${rawMetaDesc.slice(0, 157).trim()}...` : rawMetaDesc;
 
+          const lessonSchemaGraph = [
+            {
+              '@type': 'BreadcrumbList',
+              itemListElement: [
+                { '@type': 'ListItem', position: 1, name: 'The History Revision Hub', item: `${SITE_ORIGIN}/` },
+                { '@type': 'ListItem', position: 2, name: route.heading, item: canonicalUrl },
+                { '@type': 'ListItem', position: 3, name: rawLessonTitle, item: lessonCanonical },
+              ],
+            },
+            {
+              '@type': 'LearningResource',
+              name: rawLessonTitle,
+              description: lessonMetaDesc,
+              url: lessonCanonical,
+              educationalLevel: route.keyStage,
+              learningResourceType: ['Lesson', 'Practice Questions', 'Model Answers', 'Primary Source Enquiry'],
+              inLanguage: 'en-GB',
+              isPartOf: {
+                '@type': 'Course',
+                name: route.heading,
+                url: canonicalUrl,
+              },
+              provider: {
+                '@type': 'EducationalOrganization',
+                name: 'The History Revision Hub',
+                url: `${SITE_ORIGIN}/`,
+              },
+            },
+          ];
+          if (faqEntities.length > 0) {
+            lessonSchemaGraph.push({
+              '@type': 'FAQPage',
+              mainEntity: faqEntities,
+            });
+          }
           const lessonSchema = {
             '@context': 'https://schema.org',
-            '@graph': [
-              {
-                '@type': 'BreadcrumbList',
-                itemListElement: [
-                  { '@type': 'ListItem', position: 1, name: 'The History Revision Hub', item: `${SITE_ORIGIN}/` },
-                  { '@type': 'ListItem', position: 2, name: route.heading, item: canonicalUrl },
-                  { '@type': 'ListItem', position: 3, name: rawLessonTitle, item: lessonCanonical },
-                ],
-              },
-              {
-                '@type': 'LearningResource',
-                name: rawLessonTitle,
-                description: lessonMetaDesc,
-                url: lessonCanonical,
-                educationalLevel: route.keyStage,
-                learningResourceType: ['Lesson', 'Practice Questions', 'Primary Source Enquiry'],
-                inLanguage: 'en-GB',
-                isPartOf: {
-                  '@type': 'Course',
-                  name: route.heading,
-                  url: canonicalUrl,
-                },
-                provider: {
-                  '@type': 'EducationalOrganization',
-                  name: 'The History Revision Hub',
-                  url: `${SITE_ORIGIN}/`,
-                },
-              },
-            ],
+            '@graph': lessonSchemaGraph,
           };
 
           const prevLessonLink =
@@ -360,11 +443,16 @@ function seoCoursePagesPlugin() {
                 : ''
             }
             ${
-              practiceStems.length > 0
-                ? `<h2 style="font-size: 1.18rem; margin-bottom: 8px;">Practice Questions &amp; Stepped Model Answers</h2>
-            <ul style="line-height: 1.75; padding-left: 22px; margin-bottom: 22px;">
-              ${practiceStems.map((q) => `<li>${escapeHtml(q)}</li>`).join('\n              ')}
-            </ul>`
+              lessonQAItems.length > 0
+                ? `<section aria-label="Exam and Practice Questions" style="margin-bottom: 22px;">
+              <h2 style="font-size: 1.18rem; margin-bottom: 10px;">Exam &amp; Practice Questions with Model Answer Summaries</h2>
+              ${lessonQAItems
+                .map(
+                  (item) =>
+                    `<div style="margin-bottom: 12px;"><h3 style="font-size: 1rem; margin: 0 0 4px 0;">${escapeHtml(item.question)}</h3>${item.answer ? `<p style="margin: 0; line-height: 1.6; font-size: 0.93rem;">${escapeHtml(item.answer)}</p>` : ''}</div>`,
+                )
+                .join('\n              ')}
+            </section>`
                 : ''
             }
             <nav aria-label="Lesson Navigation" style="font-size: 0.88rem; line-height: 1.8; border-top: 1px solid rgba(148,163,184,0.25); padding-top: 14px;">
@@ -515,7 +603,7 @@ function seoCoursePagesPlugin() {
       fs.writeFileSync(path.resolve(process.cwd(), 'public', 'sitemap.xml'), sitemapXml, 'utf8');
 
       console.log(
-        `[seo-course-pages-generator] Generated ${generatedCount} course pages + ${generatedLessonCount} lesson pages + /schools/ + sitemap.xml (${SEO_UNIT_ROUTES.length + generatedLessonCount + 2} URLs) in dist/.`,
+        `[seo-course-pages-generator] Generated ${generatedCount} course pages + ${generatedLessonCount} lesson pages (${totalIndexedQuestions} indexed exam/practice Q&As) + /schools/ + sitemap.xml (${SEO_UNIT_ROUTES.length + generatedLessonCount + 2} URLs) in dist/.`,
       );
     },
   };
