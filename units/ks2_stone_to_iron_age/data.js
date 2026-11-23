@@ -939,7 +939,8 @@ window.UNIT_DATA = {
           ]
         ],
         "spokenTakeaway": "Here is the big story in one sentence. <short pause> Stone Age hunter-gatherers survived the Ice Age with chipped flint tools before melting ice flooded Doggerland around 6500 BC and turned Britain into an island."
-      }
+      },
+      "banner_caption": "Life-size woolly mammoth reconstruction showing the shaggy coat and curved ivory tusks hunted by Ice Age bands"
     },
     {
       "id": "lesson_2",
@@ -1845,7 +1846,8 @@ window.UNIT_DATA = {
           ]
         ],
         "spokenTakeaway": "Here is the big story in one sentence. <short pause> Around 4000 BC, Neolithic farming let families settle in year-round villages like stone-built Skara Brae and raise giant ancestor tombs like West Kennet Long Barrow."
-      }
+      },
+      "banner_caption": "The iconic 5,000-year-old Neolithic flagstone dresser and hearth inside House 7 at Skara Brae, Orkney"
     },
     {
       "id": "lesson_3",
@@ -2751,7 +2753,8 @@ window.UNIT_DATA = {
           ]
         ],
         "spokenTakeaway": "Here is the big story in one sentence. <short pause> Using antler picks, wooden sledges, and huge teamwork, Stone Age builders hauled Welsh bluestones and 25-tonne sarsens to align Stonehenge with the solstice sun."
-      }
+      },
+      "banner_caption": "Giant sarsen sandstone trilithons and lintel stones locked with mortise-and-tenon joints at Stonehenge, Wiltshire"
     },
     {
       "id": "lesson_4",
@@ -3688,7 +3691,8 @@ window.UNIT_DATA = {
           ]
         ],
         "spokenTakeaway": "Here is the big story in one sentence. <short pause> Beaker newcomers introduced metalworking around 2400 BC, and mixing Welsh copper with Cornish tin gave Bronze Age Britain tough cast axes and rich trade links."
-      }
+      },
+      "banner_caption": "Bronze Age round barrow burial mounds on the chalk landscape near Stonehenge in Wiltshire (New King Barrows)."
     },
     {
       "id": "lesson_5",
@@ -4620,6 +4624,11 @@ window.UNIT_DATA = {
           ]
         ],
         "spokenTakeaway": "Here is the big story in one sentence. <short pause> Sealed in wet river mud around 900 BC, Must Farm preserved stilt roundhouses, charred porridge, woven cloth, and Britain's oldest complete wooden wheel."
+      },
+      "banner_caption": "A reconstructed Bronze Age family home at Flag Fen in Cambridgeshire, built with woven wattle-and-daub walls, stacked logs, and a thick turf-and-thatch roof.",
+      "banner": {
+        "image": "/units/ks2_stone_to_iron_age/assets/flag_fen_bronze_age_roundhouse.jpg",
+        "caption": "A reconstructed Bronze Age family home at Flag Fen in Cambridgeshire, built with woven wattle-and-daub walls, stacked logs, and a thick turf-and-thatch roof."
       }
     },
     {
@@ -5552,6 +5561,11 @@ window.UNIT_DATA = {
           ]
         ],
         "spokenTakeaway": "Here is the big story in one sentence. <short pause> Tough iron ploughs, thatched roundhouses, giant hillforts like Maiden Castle, and gold torcs shaped Celtic Britain until Rome invaded in AD 43."
+      },
+      "banner_caption": "Reconstructed Iron Age roundhouses with steep cone-shaped thatched roofs behind woven hazel fences and a timber gateway at Butser Ancient Farm in Hampshire.",
+      "banner": {
+        "image": "/units/ks2_stone_to_iron_age/assets/butser_iron_age_roundhouse_village.jpg",
+        "caption": "Reconstructed Iron Age roundhouses with steep cone-shaped thatched roofs behind woven hazel fences and a timber gateway at Butser Ancient Farm in Hampshire."
       }
     }
   ],

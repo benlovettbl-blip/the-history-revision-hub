@@ -1,0 +1,115 @@
+{
+  "unit_covers": {
+    "water_and_sanitation": "Dr John Snow’s Soho Cholera Spot Map (1854), plotting fatal cholera cases as black bars around the Broad Street pump to prove that contaminated drinking water spread the disease.",
+    "medieval_england": "Scene 57 of the Bayeux Tapestry (c. 1070s), inscribed 'Harold Rex Interfectus Est', depicting the death of Anglo-Saxon King Harold II during Duke William’s Norman victory at Hastings in October 1066.",
+    "monarchy_religion_power": "The Family of Henry VIII (c. 1545), showing Henry VIII enthroned beside Jane Seymour and his Protestant heir Prince Edward, flanked by Princesses Mary and Elizabeth amid Tudor dynastic upheaval.",
+    "first_british_empire": "Contemporary military survey plan of the Battle of Plassey (23 June 1757), mapping Colonel Robert Clive’s East India Company positions along the Bhagirathi River that secured corporate rule over Mughal Bengal.",
+    "australia": "Francis Fowkes’s Sketch and Description of the Settlement at Sydney Cove, Port Jackson (16 April 1788), the earliest chart of Britain’s First Fleet penal colony on ancestral Gadigal Country.",
+    "the_shoah": "Three generations of Dr Samuel and Esther Kracowski’s Jewish family photographed together in Białystok, Poland (1 September 1935), testifying to the vibrant European Jewish family life targeted during the Shoah.",
+    "cold_war": "The Berlin Wall at Bethaniendamm (1986), contrasting colourful West Berlin street murals on the outer barrier with East German border guards patrolling the raked 'death strip' behind the Iron Curtain.",
+    "post_war_britain": "Abram Games’s official Festival of Britain South Bank Exhibition guide cover (1951), fusing Britannia’s profile with compass points and festive bunting to celebrate post-war national reconstruction and civic renewal.",
+    "edexcel_medicine": "Albert Edelfelt’s Louis Pasteur in his Laboratory (1885), depicting the French microbiologist examining dried spinal cord tissue in a glass flask while developing his pioneering vaccine against rabies.",
+    "usa": "Civil rights and labour leaders linking arms beneath placards demanding voting rights, school desegregation, and jobs for all during the historic March on Washington (28 August 1963).",
+    "weimar_nazi_germany": "Adolf Hitler taking the salute as uniformed Sturmabteilung (SA) stormtroopers march past beneath a swastika standard during a late-Weimar Nazi Party rally (c. 1930–1932), projecting paramilitary street power.",
+    "cme_new": "Israeli Prime Minister Menachem Begin, US President Jimmy Carter, and Egyptian President Anwar Sadat at the Camp David Summit (September 1978), which forged the historic 1979 Egypt–Israel Peace Treaty.",
+    "eee": "The Armada Portrait of Queen Elizabeth I (c. 1588, attributed to George Gower), resting her hand upon an imperial globe as English fireships scatter the Spanish Armada behind her.",
+    "gcse_cold_war": "Jubilant East and West Berliners standing atop the Berlin Wall before the Brandenburg Gate (November 1989), symbolising the peaceful collapse of the Iron Curtain across Europe.",
+    "great_war": "The Royal Navy battleship HMS Dreadnought steaming at sea (1906), whose steam-turbine speed and 'all-big-gun' armament rendered earlier battleships obsolete and ignited the Anglo-German naval arms race.",
+    "great_war_part2": "John Singer Sargent’s Gassed (1919), depicting British soldiers blinded by mustard gas guiding one another along wooden duckboards toward a Western Front dressing station in August 1918."
+  },
+  "lesson_banners": {
+    "ks2_stone_to_iron_age": {
+      "lesson_5": "A reconstructed Bronze Age family home at Flag Fen in Cambridgeshire, built with woven wattle-and-daub walls, stacked logs, and a thick turf-and-thatch roof.",
+      "lesson_6": "Reconstructed Iron Age roundhouses with steep cone-shaped thatched roofs behind woven hazel fences and a timber gateway at Butser Ancient Farm in Hampshire."
+    },
+    "ks2_anglo_saxons_vikings": {
+      "lesson_2": "The great solid-gold belt buckle from the royal ship burial at Sutton Hoo (early AD 600s), decorated with intricately twisted ribbons of Anglo-Saxon animal artwork.",
+      "lesson_3": "Re-enactors in iron helmets and chainmail locking painted wooden shields and raising long spears beside the sea, showing how Viking raiders fought after beaching their longships.",
+      "lesson_4": "Warriors standing shoulder to shoulder in a tight shield wall of painted round shields and raised battle-axes in front of a tall wooden palisade.",
+      "lesson_5": "A reconstructed Viking townhouse and planked wooden walkway at Ribe in Denmark, built with whitewashed walls, sturdy oak posts, and a steep reed-thatched roof.",
+      "lesson_6": "Re-enactors clashing with spears, swords, chainmail, and painted shields beneath battle banners to recreate the fierce struggle at the Battle of Hastings in October 1066."
+    },
+    "ks2_ww2": {
+      "lesson_9": {
+        "image": "/images/upgraded/ks2-ww2/l09_banner_bletchley_hut8_exterior.jpg",
+        "caption": "Exterior of Wooden Hut 8 at Bletchley Park, Where Alan Turing's Team Cracked German Naval Enigma Codes"
+      }
+    },
+    "ks2_ancient_egypt": {
+      "lesson_4": "Scene from the ancient Egyptian Book of the Dead of Hunefer (c. 1275 BC), showing jackal-headed Anubis weighing Hunefer’s heart against the feather of truth before Osiris.",
+      "lesson_5": "Four giant 20-metre sandstone statues of Pharaoh Ramesses II carved straight into the desert cliff face outside the Great Temple at Abu Simbel (c. 1264 BC)."
+    },
+    "medieval_england": {
+      "lesson_2": "The Norman stone keep of the White Tower rising behind Traitors’ Gate on the River Thames (begun c. 1078), built by William the Conqueror to awe and control London.",
+      "lesson_3": "Vaulted stone arcades of the Great Cloister at Canterbury Cathedral, adjoining the Martyrdom transept where four royal knights murdered Archbishop Thomas Becket in December 1170.",
+      "lesson_4": "Henry B. Wimbush’s watercolour of Magna Carta Island at Runnymede (c. 1903), beside the Thames meadow where rebel barons forced King John to seal Magna Carta in June 1215.",
+      "lesson_5": "Late-medieval Danse Macabre ('Dance of Death') church fresco frieze (c. 1490), showing skeletons leading away rich and poor alike in the wake of recurring European plague epidemics."
+    },
+    "monarchy_religion_power": {
+      "lesson_1": "The Embarkation of Henry VIII at Dover (c. 1540), showing the Tudor warship Henry Grace à Dieu and royal fleet sailing from Dover harbour beneath St George banners.",
+      "lesson_2": "Contemporary College of Arms manuscript drawing of Queen Elizabeth I’s coronation procession through London (14 January 1559), carried in an open royal litter beneath a canopy of state.",
+      "lesson_3": "Cornelis Claesz van Wieringen’s The Spanish Armada off the English Coast (c. 1620–1625), showing English race-built galleons engaging Philip II’s towering warships in the Channel in 1588."
+    },
+    "industrialisation_and_empire": {
+      "lesson_1": "Thomas Frederick Burney’s watercolour of The Iron Bridge at Coalbrookdale (c. 1780s), the world’s first major cast-iron arch bridge spanning the River Severn Gorge in Shropshire.",
+      "lesson_3": "William Wyld’s Manchester from Kersal Moor (1852), showing scores of coal-fired cotton-mill chimneys smoking across 'Cottonopolis' as rapid industrial urbanisation transformed northern England.",
+      "lesson_5": "Sir George Hayter’s The House of Commons, 1833, commemorating the opening session of Britain’s newly reformed Parliament at Westminster in February 1833 after the Great Reform Act."
+    },
+    "great_war": {
+      "lesson_6": "Cheering crowds waving hats outside the gates of Buckingham Palace on the night of 4 August 1914 as Great Britain entered the First World War."
+    },
+    "great_war_part2": {
+      "lesson_1_enlistment": "Newly enlisted volunteers of the Lincolnshire Regiment parading in civilian flat caps and kitbags beside the grandstand at Lincoln Racecourse in September 1914.",
+      "lesson_2_trenches_haig": "Ernest Brooks’s photograph of British soldiers advancing across shell-torn ground under bursting artillery fire during the Battle of Ginchy on the Somme (9 September 1916).",
+      "lesson_3_empire_troops": "Australian and New Zealand troops coming ashore from packed rowboats onto the narrow pebble beach at ANZAC Cove on the Gallipoli Peninsula (25 April 1915).",
+      "lesson_4_home_front_dora": "Horace Nicholls’s photograph of female munitions workers inspecting thousands of high-explosive artillery shells inside National Shell Filling Factory No. 6 at Chilwell, Nottinghamshire (July 1917)."
+    },
+    "the_shoah": {
+      "lesson_4": "German Wehrmacht troops inspecting a knocked-out Soviet KV-2 heavy tank during Operation Barbarossa (summer 1941), behind whose front lines SS Einsatzgruppen waged mass murder across occupied Soviet territory."
+    },
+    "edexcel_medicine": {
+      "lesson_1_2": "Claudius Galen enthroned holding his medical codex in an illuminated Greek edition printed in Venice (1500), reflecting how Galenic humoral theory dominated European university medicine for over 1,400 years.",
+      "lesson_1_3": "Early modern German medical manuscript painting of phlebotomy (bloodletting), showing a red tourniquet constricting the upper arm as venous blood streams into graduated bowls to rebalance the Four Humours.",
+      "lesson_2_1": "Historical engraving of an early modern Dutch printing workshop, where compositors set movable metal type and pressmen pull a wooden screw press to multiply new anatomical and medical texts.",
+      "lesson_2_5": "Eighteenth-century copperplate engraving titled 'The Great Plague in London, 1665', showing stricken victims in the street as a dead-cart carries bodies away during London’s last major bubonic plague epidemic.",
+      "lesson_3_1": "Nineteenth-century engraving of Louis Pasteur peering through a microscope beside a curved swan-neck glass flask in his Paris laboratory, where his 1861 experiments disproved spontaneous generation.",
+      "lesson_3_3": "Samuel Bellin’s 1857 engraving after Jerry Barrett’s The Mission of Mercy, depicting Florence Nightingale receiving wounded Crimean War soldiers at Scutari Barrack Hospital, where her nurses transformed ward hygiene.",
+      "lesson_3_4": "Ernest Board’s painting of Robert Liston performing Europe’s first public operation under ether anaesthetic at University College Hospital, London (21 December 1846), watched from the packed surgical gallery.",
+      "lesson_3_5": "Cutaway engineering engraving from The Illustrated London News (22 June 1867) showing Sir Joseph Bazalgette’s Thames Embankment and low-level intercepting sewer built after the 1858 Great Stink.",
+      "lesson_4_1": "National Cancer Institute researchers inspecting backlit X-ray autoradiograph DNA sequencing columns (late twentieth century), reading the chemical base-pair code first unlocked by Crick, Watson, Franklin, and Wilkins in 1953.",
+      "lesson_4_3": "Uniformed nurses tending a ward at St Bartholomew’s Hospital, London (c. 1908), one of Britain’s voluntary hospitals later brought into the free National Health Service in July 1948.",
+      "lesson_4_4": "Chemist Dr Wilson Baker purifying experimental penicillin extracts with a glass separating funnel in Oxford University’s Dyson Perrins Laboratory (1944), helping turn Alexander Fleming’s mould discovery into a mass-produced antibiotic.",
+      "lesson_5_2": "An exhausted horse team and regimental water cart bogged down in liquid Flanders mud during Passchendaele (11 August 1917), illustrating waterlogged conditions that caused trench foot and delayed evacuation.",
+      "lesson_5_3": "John Singer Sargent’s Gassed (1919), depicting blinded mustard-gas casualties led by a medical orderly along wooden duckboards toward a Western Front dressing station in August 1918.",
+      "lesson_5_5": "A British surgical team operating beneath electric lighting inside the 34th (West Lancashire) Casualty Clearing Station on the Western Front, where prompt wound excision combated deadly gas gangrene.",
+      "lesson_5_6": "John Hodgson Lobley’s painting The Commercial Class (1918), showing wounded servicemen undergoing facial plastic reconstruction under Harold Gillies at the Queen’s Hospital, Sidcup while retraining for civilian employment."
+    },
+    "eee": {
+      "lesson_2_3": "Hendrick Cornelisz Vroom’s Dutch Ships Ramming Spanish Galleys off the Flemish Coast (1617), depicting the Dutch Revolt naval warfare that drew Elizabeth I into open conflict with Spain.",
+      "lesson_2_4": "Cornelis Claesz van Wieringen’s The Spanish Armada off the English Coast (c. 1620–1625), capturing English agile galleons engaging Philip II’s crescent fleet across the Channel in July–August 1588."
+    },
+    "gcse_cold_war": {
+      "lesson_5": "West Berliners gathering before the newly sealed Brandenburg Gate shortly after East German forces closed the Berlin sector border on 13 August 1961 to halt refugee flight.",
+      "lesson_6": "United States Navy destroyers steaming on patrol in Caribbean waters to enforce President John F. Kennedy’s naval quarantine around Cuba during the October 1962 Cuban Missile Crisis.",
+      "lesson_7": "Panoramic view across the River Vltava toward Charles Bridge and Prague Castle (Hradčany), political heart of Czechoslovakia during Alexander Dubček’s 1968 Prague Spring reforms.",
+      "lesson_8": "Wenceslas Square looking toward the National Museum in central Prague, epicentre of Czechoslovak civic resistance to the August 1968 Warsaw Pact invasion that enforced the Brezhnev Doctrine.",
+      "lesson_10": "Snow-covered peaks of the Hindu Kush flanking the high-altitude Salang Tunnel highway linking the Soviet border to Kabul, vital supply artery during the 1979–1989 Soviet war in Afghanistan.",
+      "lesson_11": "Waterfront view of Höfði House in Reykjavik, Iceland, where Ronald Reagan and Mikhail Gorbachev came close to sweeping nuclear abolition during their dramatic October 1986 superpower summit.",
+      "lesson_12": "East German border guards and onlookers watching a mobile crane lift out a graffiti-covered concrete slab of the Berlin Wall before the illuminated Brandenburg Gate in December 1989."
+    },
+    "cme_new": {
+      "lesson_0": "Pedestrians and street vendors outside Damascus Gate in the sixteenth-century Old City walls of Jerusalem during the British Mandate in Palestine (c. 1920–1936).",
+      "lesson_1": "Aerial photograph of Jerusalem in 1931 showing the King David Hotel—later headquarters of the British Mandate administration bombed by the Irgun in July 1946—beside the YMCA tower.",
+      "lesson_2": "Panoramic view across the Mount of Olives and the surrounding Judean Hills in Jerusalem, strategic high ground fiercely contested during the 1948–1949 Arab-Israeli War.",
+      "lesson_3": "Merchant cargo vessel Jalagouri and a pilot launch transiting the Suez Canal (1976), the strategic waterway whose July 1956 nationalisation by President Nasser sparked the Suez Crisis.",
+      "lesson_4": "Looking west from the Golan Heights escarpment across the Sea of Galilee (Lake Kinneret), flashpoint of the 1964–1967 Jordan headwaters dispute and cross-border shelling before the Six-Day War.",
+      "lesson_5": "Desert highway winding through the rugged southern Sinai mountains toward the Gulf of Aqaba, where Egypt’s May 1967 closure of the Straits of Tiran precipitated the Six-Day War.",
+      "lesson_6": "View from the Mount of Olives across East Jerusalem’s Old City walls and the Dome of the Rock on the Haram al-Sharif (Temple Mount), occupied in June 1967.",
+      "lesson_7": "Sweeping tensile roof canopy of Munich’s Olympiapark, venue of the September 1972 Summer Olympics where the Black September hostage crisis thrust the Israeli-Palestinian conflict onto global television.",
+      "lesson_8": "Israeli tanks crossing a mobile roller pontoon bridge over the Suez Canal onto its Egyptian west bank during the decisive counter-offensive of the October 1973 Yom Kippur War.",
+      "lesson_9": "The South Portico and South Lawn of the White House in Washington, D.C., where Anwar Sadat and Menachem Begin signed the historic Egypt–Israel Peace Treaty on 26 March 1979.",
+      "lesson_10": "Mediterranean limestone cliffs along the Raouche coastline of West Beirut, Lebanon, the coastal capital besieged by Israeli forces to expel the PLO headquarters during the summer of 1982.",
+      "lesson_11": "Twin red-brick towers of Oslo City Hall in Norway, host city of the secret 1993 Oslo diplomatic channel and venue of the 1994 Nobel Peace Prize ceremony."
+    }
+  }
+}

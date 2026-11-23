@@ -1,0 +1,1021 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Invasion &amp; Survival in Australia (1768–1901) • Walk-In Teacher Guide &amp; Scheme of Work (6 Pages) | The History Revision Hub</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;800&family=Inter:wght@400;600;700;800&family=Lora:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --accent: #92400e;
+      --accent-dark: #451a03;
+      --accent-soft: #fffbeb;
+      --accent-border: #fcd34d;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+    @page {
+      size: 210mm 297mm;
+      margin: 0;
+    }
+    body {
+      background: #cbd5e1;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      color: #0f172a;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .screen-toolbar {
+      width: 100%;
+      background: #0f172a;
+      color: #ffffff;
+      padding: 9px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid #f59e0b;
+      position: sticky;
+      top: 0;
+      z-index: 50;
+    }
+    .screen-toolbar-actions a,
+    .screen-toolbar-actions button {
+      background: var(--accent-dark);
+      color: #ffffff;
+      border: 1px solid #fbbf24;
+      padding: 5px 12px;
+      border-radius: 5px;
+      font-size: 8.5pt;
+      font-weight: 700;
+      text-decoration: none;
+      cursor: pointer;
+      margin-left: 6px;
+    }
+    .page.sow-page {
+      width: 210mm;
+      height: 297mm;
+      max-height: 297mm;
+      background: #ffffff;
+      margin: 7mm auto;
+      padding: 8mm 10.5mm;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      overflow: hidden;
+      page-break-after: always;
+      break-after: page;
+      box-shadow: 0 8px 24px rgba(15, 23, 42, 0.16);
+    }
+    .page-inner {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 2.1mm;
+      min-height: 0;
+    }
+    .sow-masthead,
+    .sow-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1.5px solid var(--accent);
+      padding-bottom: 1.1mm;
+      font-size: 8.2pt;
+      font-weight: 800;
+      color: var(--accent-dark);
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+    }
+    .sow-foot {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 1px solid #cbd5e1;
+      padding-top: 1.2mm;
+      margin-top: 1.4mm;
+      font-size: 8.2pt;
+      color: #475569;
+      font-weight: 600;
+      flex-shrink: 0;
+    }
+    .sow-pill {
+      background: var(--accent-dark);
+      color: #ffffff;
+      padding: 1px 8px;
+      border-radius: 3px;
+      font-weight: 800;
+      font-size: 8.2pt;
+    }
+    .hero-banner {
+      background: linear-gradient(135deg, #0f172a 0%, var(--accent-dark) 100%);
+      color: #ffffff;
+      border-radius: 5px;
+      padding: 3.0mm 4.0mm;
+      border-bottom: 2.5px solid #f59e0b;
+    }
+    .hero-kicker {
+      font-size: 8.2pt;
+      font-weight: 800;
+      color: #fde68a;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+    .hero-pill {
+      background: rgba(255, 255, 255, 0.14);
+      border: 1px solid rgba(253, 230, 138, 0.55);
+      color: #fef3c7;
+      padding: 0.5mm 2.2mm;
+      border-radius: 3px;
+      font-size: 8.2pt;
+      font-weight: 700;
+    }
+    .hero-title {
+      font-family: 'Cinzel', Georgia, serif;
+      font-size: 13.2pt;
+      line-height: 1.16;
+      margin-top: 0.8mm;
+      color: #ffffff;
+    }
+    .matrix-bar {
+      background: var(--accent-dark);
+      color: #ffffff;
+      padding: 1.1mm 2.4mm;
+      border-radius: 4px 4px 0 0;
+      display: flex;
+      justify-content: space-between;
+      font-size: 8.2pt;
+      font-weight: 800;
+      letter-spacing: 0.03em;
+    }
+    .enquiry-banner {
+      background: var(--accent-soft);
+      border: 1.2px solid var(--accent-border);
+      border-left: 4.5px solid var(--accent);
+      border-radius: 5px;
+      padding: 2.0mm 3.0mm;
+    }
+    .enquiry-title-row {
+      display: flex;
+      align-items: center;
+      gap: 2mm;
+    }
+    .enquiry-code-pill {
+      background: var(--accent-dark);
+      color: #ffffff;
+      font-size: 8.2pt;
+      font-weight: 800;
+      padding: 0.5mm 2.0mm;
+      border-radius: 3px;
+      white-space: nowrap;
+    }
+    .enquiry-h2 {
+      font-size: 11.2pt;
+      font-weight: 800;
+      color: #0f172a;
+      line-height: 1.18;
+    }
+    .enquiry-eq-line {
+      font-family: 'Lora', Georgia, serif;
+      font-style: italic;
+      font-size: 9.0pt;
+      font-weight: 600;
+      color: var(--accent-dark);
+      margin-top: 0.7mm;
+    }
+    .two-col-grid {
+      display: grid;
+      gap: 2.2mm;
+    }
+    .crib-card {
+      border: 1px solid #cbd5e1;
+      border-left: 3.5px solid var(--accent);
+      border-radius: 4px;
+      padding: 1.8mm 2.6mm;
+      background: #ffffff;
+    }
+    .card-heading {
+      font-size: 8.6pt;
+      font-weight: 800;
+      color: var(--accent-dark);
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+      margin-bottom: 0.8mm;
+      border-bottom: 1px solid #e2e8f0;
+      padding-bottom: 0.5mm;
+    }
+    .body-copy {
+      font-size: 8.5pt;
+      line-height: 1.25;
+      color: #1e293b;
+    }
+    .crib-ul {
+      padding-left: 4.2mm;
+      display: flex;
+      flex-direction: column;
+      gap: 0.7mm;
+    }
+    .phase-row {
+      margin-bottom: 0.7mm;
+    }
+    .phase-row:last-child {
+      margin-bottom: 0;
+    }
+    .time-chip {
+      display: inline-block;
+      background: #e2e8f0;
+      color: #0f172a;
+      font-weight: 800;
+      font-size: 8.2pt;
+      padding: 0 1.3mm;
+      border-radius: 2px;
+      margin-right: 0.6mm;
+    }
+    @media print {
+      body {
+        background: #ffffff;
+      }
+      .screen-toolbar {
+        display: none !important;
+      }
+      .page.sow-page {
+        margin: 0 !important;
+        box-shadow: none !important;
+      }
+      .page.sow-page:last-of-type {
+        page-break-after: avoid !important;
+        break-after: avoid !important;
+      }
+      .crib-card,
+      .enquiry-banner,
+      .hero-banner,
+      tr {
+        page-break-inside: avoid;
+        break-inside: avoid;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="screen-toolbar">
+    <div>
+      <strong style="font-size:9.2pt;">Invasion &amp; Survival in Australia (1768–1901) &bull; Walk-In Teacher Guide &amp; SOW</strong>
+      <span style="margin-left:8px;font-size:8pt;color:#fde68a;font-weight:700;">Staff Planning Pack &bull; 6 Pages (A4 Portrait &bull; Corner Staple)</span>
+    </div>
+    <div class="screen-toolbar-actions">
+      <a href="/?view=lessons&amp;unit=australia">&larr; Back to Unit Hub</a>
+      <a href="/pdfs/australia_scheme_of_work.pdf" download>&darr; Download PDF (6p)</a>
+      <button type="button" onclick="window.print()">&#128424; Print Teacher Guide</button>
+    </div>
+  </div>
+
+  
+  <section class="page sow-page" data-page="1" data-page-kind="overview">
+    <div class="page-inner">
+      <div class="sow-masthead">
+        <span>THE HISTORY REVISION HUB &bull; WALK-IN TEACHER GUIDE &amp; SCHEME OF WORK</span>
+        <span class="school-brand-target" data-department-name="The History Department">The History Department</span>
+      </div>
+
+      <div class="hero-banner">
+        <div style="display:flex; justify-content:space-between; align-items:center; gap:2mm; flex-wrap:wrap;">
+          <span class="hero-kicker">Year 8 • KS3 Indigenous &amp; Colonial Depth Study (1768–1901)</span>
+          <span class="hero-pill">Staff Guide &bull; 5 Enquiries &bull; 6 Pages A4</span>
+        </div>
+        <h1 class="hero-title">Invasion &amp; Survival in Australia (1768–1901)</h1>
+        <div class="body-copy" style="color:#f1f5f9; margin-top:0.7mm;">
+          <strong>Curriculum Specification:</strong> KS3 National Curriculum: Ideas, political power, industry and empire — Britain, 1745–1901 (settler colonialism, First Nations custodianship, penal transportation, frontier resistance, and democratic…
+        </div>
+      </div>
+
+      <div class="two-col-grid" style="grid-template-columns: 1.22fr 1fr;">
+        <div class="crib-card">
+          <div class="card-heading">Non-Specialist Executive Summary &amp; Core Threads</div>
+          <p class="body-copy" style="margin-bottom:1mm;">This five-enquiry sequence traces how over 65,000 years of continuous First Nations custodianship collided with British imperial expansion after James Cook's 1770 coastal claim and the 1788 arrival of the First Fleet.</p>
+          <div class="body-copy" style="padding-top:0.8mm; border-top:1px dashed #cbd5e1;">
+            <strong style="color:var(--accent-dark);">Disciplinary Threads:</strong> Causation and Consequence, Evidential Source Scrutiny, Historical Interpretations, and Significance.
+          </div>
+        </div>
+        <div class="crib-card" style="background:var(--accent-soft); border-left-color:var(--accent);">
+          <div class="card-heading">Curricular Pillar Reprographics Map</div>
+          <div class="body-copy" style="margin-bottom:0.8mm;"><strong style="color:var(--accent-dark);">Classroom Textbook:</strong> 8 Pages • Pure reading narrative</div><div class="body-copy" style="margin-bottom:0.8mm;"><strong style="color:var(--accent-dark);">Pupil Workbook:</strong> 16 Pages • 5-Stage Spine + Tasks</div><div class="body-copy" style="margin-bottom:0.8mm;"><strong style="color:var(--accent-dark);">Retrieval Companion:</strong> 30 Qs • 8 Pages + Rear Marking Bank</div><div class="body-copy" style="margin-bottom:0.8mm;"><strong style="color:var(--accent-dark);">Literary Anthology:</strong> 8 Pages • Optional Home/Tutor Read-Aloud</div>
+        </div>
+      </div>
+
+      
+    <div class="crib-card safeguarding-box" style="border-left:4px solid #b45309; background:#fffbeb; padding:1.6mm 2.6mm;">
+      <div class="body-copy" style="color:#78350f;">
+        <strong style="color:#92400e; text-transform:uppercase;">Safeguarding &amp; Statutory Impartiality Guidance:</strong>
+        Respectful Terminology Note: Use specific First Nations / Aboriginal and Torres Strait Islander peoples or nation names (e.g. Eora, Gadigal, Wiradjuri) rather than outdated colonial labels, and interrogate the legal fiction of terra nullius.
+      </div>
+    </div>
+
+      <div style="flex:1; display:flex; flex-direction:column; justify-content:flex-start;">
+        <div class="matrix-bar">
+          <span>SCHEME OF WORK OVERVIEW MATRIX (ALL 5 ENQUIRIES)</span>
+          <span>2 &times; 50 MIN DELIVERY SEQUENCE PER ENQUIRY</span>
+        </div>
+        
+    <table class="sow-matrix-table" style="width:100%; border-collapse:collapse; border:1px solid #94a3b8;">
+      <thead>
+        <tr style="background:#0f172a; color:#ffffff;">
+          <th class="body-copy" style="padding:1.4mm 1.6mm; text-align:left; width:13mm; font-weight:800;">Enq #</th>
+          <th class="body-copy" style="padding:1.4mm 1.6mm; text-align:left; width:86mm; font-weight:800;">Title &amp; Key Enquiry Question</th>
+          <th class="body-copy" style="padding:1.4mm 1.6mm; text-align:left; width:52mm; font-weight:800;">Core Concepts / Spec Focus</th>
+          <th class="body-copy" style="padding:1.4mm 1.6mm; text-align:left; width:38mm; font-weight:800;">Assessment / Exam Tariff</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+      <tr style="background:#ffffff; border-bottom:1px solid #cbd5e1;">
+        <td class="body-copy" style="padding:1.7mm 2.0mm; font-weight:800; color:var(--accent-dark); white-space:nowrap; vertical-align:top;">E01</td>
+        <td class="body-copy" style="padding:1.7mm 2.0mm; vertical-align:top;">
+          <strong style="color:#0f172a;">Claiming Australia: Captain Cook, Tupaia &amp; The Myth of…</strong>
+          <span style="color:#475569; font-style:italic;"> — Why did Britain claim eastern Australia and declare the land ‘terra…</span>
+        </td>
+        <td class="body-copy" style="padding:1.7mm 2.0mm; color:#1e293b; vertical-align:top;">KS3 National Curriculum (Britain 1745–1901): Maritime exploration…</td>
+        <td class="body-copy" style="padding:1.7mm 2.0mm; font-weight:700; color:#0f172a; vertical-align:top;">Extended Historical Writing • Causal Explanati…</td>
+      </tr>
+      <tr style="background:#f8fafc; border-bottom:1px solid #cbd5e1;">
+        <td class="body-copy" style="padding:1.7mm 2.0mm; font-weight:800; color:var(--accent-dark); white-space:nowrap; vertical-align:top;">E02</td>
+        <td class="body-copy" style="padding:1.7mm 2.0mm; vertical-align:top;">
+          <strong style="color:#0f172a;">The First Fleet &amp; The Convict Penal Colony (1783–1792)</strong>
+          <span style="color:#475569; font-style:italic;"> — Whose story do we tell about the founding of the first British penal colony…</span>
+        </td>
+        <td class="body-copy" style="padding:1.7mm 2.0mm; color:#1e293b; vertical-align:top;">KS3 National Curriculum (Britain 1745–1901): Georgian crime, the Bloody…</td>
+        <td class="body-copy" style="padding:1.7mm 2.0mm; font-weight:700; color:#0f172a; vertical-align:top;">Primary Source Enquiry • Content &amp; Provenance…</td>
+      </tr>
+      <tr style="background:#ffffff; border-bottom:1px solid #cbd5e1;">
+        <td class="body-copy" style="padding:1.7mm 2.0mm; font-weight:800; color:var(--accent-dark); white-space:nowrap; vertical-align:top;">E03</td>
+        <td class="body-copy" style="padding:1.7mm 2.0mm; vertical-align:top;">
+          <strong style="color:#0f172a;">Frontier Warfare: Smallpox, Bennelong &amp; Pemulwuy’s…</strong>
+          <span style="color:#475569; font-style:italic;"> — Was the colonisation of Australia a story of ‘amity and kindness’ or…</span>
+        </td>
+        <td class="body-copy" style="padding:1.7mm 2.0mm; color:#1e293b; vertical-align:top;">KS3 National Curriculum (Britain 1745–1901): First Nations ecological…</td>
+        <td class="body-copy" style="padding:1.7mm 2.0mm; font-weight:700; color:#0f172a; vertical-align:top;">Chronological Historical Narrative • Analytica…</td>
+      </tr>
+      <tr style="background:#f8fafc; border-bottom:1px solid #cbd5e1;">
+        <td class="body-copy" style="padding:1.7mm 2.0mm; font-weight:800; color:var(--accent-dark); white-space:nowrap; vertical-align:top;">E04</td>
+        <td class="body-copy" style="padding:1.7mm 2.0mm; vertical-align:top;">
+          <strong style="color:#0f172a;">The Frontier Wars, Pastoral Expansion &amp; The Black War…</strong>
+          <span style="color:#475569; font-style:italic;"> — How did pastoral expansion and frontier conflict transform colonial…</span>
+        </td>
+        <td class="body-copy" style="padding:1.7mm 2.0mm; color:#1e293b; vertical-align:top;">KS3 National Curriculum (Britain 1745–1901): Industrial Britain's…</td>
+        <td class="body-copy" style="padding:1.7mm 2.0mm; font-weight:700; color:#0f172a; vertical-align:top;">Comparing Historical Interpretations • Contras…</td>
+      </tr>
+      <tr style="background:#ffffff; border-bottom:1px solid #cbd5e1;">
+        <td class="body-copy" style="padding:1.7mm 2.0mm; font-weight:800; color:var(--accent-dark); white-space:nowrap; vertical-align:top;">E05</td>
+        <td class="body-copy" style="padding:1.7mm 2.0mm; vertical-align:top;">
+          <strong style="color:#0f172a;">The Gold Rush, Eureka Stockade &amp; The Legacy of…</strong>
+          <span style="color:#475569; font-style:italic;"> — How did the 1851 Gold Rush and the Eureka Stockade transform Australian…</span>
+        </td>
+        <td class="body-copy" style="padding:1.7mm 2.0mm; color:#1e293b; vertical-align:top;">KS3 National Curriculum (Britain 1745–1901 &amp; Challenges Post-1901): The…</td>
+        <td class="body-copy" style="padding:1.7mm 2.0mm; font-weight:700; color:#0f172a; vertical-align:top;">Evaluative Historical Essay • Balanced Judgeme…</td>
+      </tr>
+      </tbody>
+    </table>
+      </div>
+    </div>
+
+    <div class="sow-foot">
+      <span>The History Revision Hub &bull; Walk-In Teacher Guide &amp; SOW (KS3)</span>
+      <span class="sow-pill">Page 1 of 6</span>
+    </div>
+  </section>
+
+  <section class="page sow-page" data-page="2" data-page-kind="crib">
+    <div class="page-inner">
+      <div class="sow-head">
+        <span>3-MINUTE WALK-IN TEACHER CRIB SHEET &bull; ENQUIRY 1 OF 5</span>
+        <span>Invasion &amp; Survival in Australia (1768–1901)</span>
+      </div>
+
+      <!-- (a) Header Bar -->
+      <div class="enquiry-banner">
+        <div style="display:flex; justify-content:space-between; align-items:baseline; gap:2mm;">
+          <div class="enquiry-title-row">
+            <span class="enquiry-code-pill">E01</span>
+            <h2 class="enquiry-h2">Claiming Australia: Captain Cook, Tupaia &amp; The Myth of Terra Nullius (1768–1770)</h2>
+          </div>
+        </div>
+        <div class="enquiry-eq-line">Central Enquiry: Why did Britain claim eastern Australia and declare the land ‘terra nullius’?</div>
+        <div class="body-copy" style="color:#334155; margin-top:0.6mm;">
+          <strong style="color:var(--accent-dark);">Curriculum / Spec Anchor:</strong> KS3 National Curriculum (Britain 1745–1901): Maritime exploration, imperial rivalry, Indigenous Pacific navigation, and the legal doctrine of terra nullius — Causal…
+        </div>
+      </div>
+
+      <div class="crib-card" style="border-left:4px solid #b45309; background:#fffbeb; padding:1.2mm 2.4mm;">
+         <div class="body-copy" style="color:#78350f;"><strong style="color:#92400e;">Pastoral / Impartiality Note:</strong> First Nations Terminology &amp; Respectful Framing: Capitalise 'First Nations', 'Indigenous', and 'Country' (when referring to ancestral land and waterways), and name specific communities where known, such as the…</div>
+       </div>
+
+      <!-- (b) Subject Knowledge Primer + Learning Objectives -->
+      <div class="two-col-grid" style="grid-template-columns: 1.28fr 1fr;">
+        <div class="crib-card">
+          <div class="card-heading">Subject Knowledge Primer (Non-Specialist Walk-In Briefing)</div>
+          <p class="body-copy">This enquiry deconstructs the traditional narrative of Captain Cook 'discovering' Australia in 1770. By contrasting public astronomical research with secret Admiralty instructions, pupils analyse how Polynesian master navigator Tupaia made the voyage possible, and interrogate the first encounter at Botany Bay from the spiritual perspective of the Gweagal people before examining how terra nullius legalised dispossession.</p>
+        </div>
+        <div class="crib-card" style="background:#f8fafc;">
+          <div class="card-heading">Core Learning Objectives</div>
+          <ul class="crib-ul">
+            <li class="body-copy">Explain the dual scientific and imperial motives of Cook’s 1768 Endeavour voyage.</li><li class="body-copy">Analyse Tupaia’s essential contribution to Pacific navigation and cultural translation.</li><li class="body-copy">Evaluate the legal and human impact of claiming eastern Australia under terra nullius.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- (c) 2-Lesson Delivery Plan (2 x 50 mins) -->
+      <div class="two-col-grid" style="grid-template-columns: 1fr 1fr;">
+        <div class="crib-card" style="border-left-color:#1d4ed8;">
+          <div class="card-heading" style="color:#1e3a8a;">Lesson 1: Context, Shared Reading &amp; Early Evidence (Stages 1–3 • 50 mins)</div>
+          <div class="body-copy phase-row"><span class="time-chip">00–08m</span> <strong>Spaced Retrieval Starter:</strong> Complete the 5-question Do Now starter retrieving foundational prior knowledge (eighteenth-century European maritime…</div><div class="body-copy phase-row"><span class="time-chip">08–28m</span> <strong>Modelled Shared Reading &amp; Verso Spine (Stages 1–3):</strong> Read Stages 1–3 (&quot;The Secret Admiralty Orders&quot;, &quot;Tupaia and Polynesian Star Navigation&quot;, and &quot;The Gweagal Encounter at…</div><div class="body-copy phase-row"><span class="time-chip">28–44m</span> <strong>Primary Source Investigation (Sources A–B):</strong> Unpack Source A (Secret Instructions from the British Admiralty to…) and Source B (Tupaia's Chart of the Pacific Ocean…</div><div class="body-copy phase-row"><span class="time-chip">44–50m</span> <strong>Formative Hinge Plenary:</strong> Check whole-class understanding before Lesson 2 using the Hinge Question: &quot;Why did the British Admiralty include a…</div>
+        </div>
+        <div class="crib-card" style="border-left-color:#15803d;">
+          <div class="card-heading" style="color:#14532d;">Lesson 2: Turning Points, Disciplinary Sources &amp; Extended Writing (Stages 4–5…</div>
+          <div class="body-copy phase-row"><span class="time-chip">00–08m</span> <strong>Part 1 Retrieval &amp; Vocabulary Anchor:</strong> Rapid recall of Lesson 1 Stages 1–3 (&quot;The Secret Admiralty Orders&quot; → &quot;The Gweagal Encounter at Botany Bay&quot;) and core…</div><div class="body-copy phase-row"><span class="time-chip">08–24m</span> <strong>Stages 4–5 &amp; Sources C–E Cross-Referencing:</strong> Read Stages 4–5 (&quot;Possession Island &amp; The Royal Claim&quot; and &quot;The Legal Fiction of Terra Nullius&quot;) to complete the Verso…</div><div class="body-copy phase-row"><span class="time-chip">24–44m</span> <strong>Recto Workbook Extended Writing:</strong> Model using the Word Bank and Analytical Connectives, then have pupils complete their Recto writing task (Extended…</div><div class="body-copy phase-row"><span class="time-chip">44–50m</span> <strong>Tap-Tile Consolidation &amp; Live Critique:</strong> Review one pupil paragraph under the visualiser against the model answer and complete the end-of-lesson Tap-Tile Summary…</div>
+        </div>
+      </div>
+
+      <!-- (d) Misconceptions & Corrections + Hinge Question + SEND & Stretch -->
+      <div class="two-col-grid" style="grid-template-columns: 1.15fr 1fr;">
+        <div class="crib-card" style="border-left-color:#b91c1c;">
+          <div class="card-heading" style="color:#7f1d1d;">Common Pupil Misconceptions &amp; Historical Corrections</div>
+          
+      <div class="body-copy misc-item" style="">
+        <div><strong style="color:#991b1b;">Misconception 1:</strong> Pupils often believe Captain James Cook was the first person to 'discover' an empty Australian continent in 1770.</div>
+        <div><strong style="color:#166534;">Correction:</strong> First Nations peoples had cared for ancestral Country across Australia for over 65,000 years, and Dutch navigators had already charted stretches…</div>
+      </div>
+      <div class="body-copy misc-item" style="border-top:1px dashed #cbd5e1; padding-top:0.9mm; margin-top:0.9mm;">
+        <div><strong style="color:#991b1b;">Misconception 2:</strong> Pupils assume HMS Endeavour sailed purely as a peaceful scientific astronomy mission to observe the transit of…</div>
+        <div><strong style="color:#166534;">Correction:</strong> Alongside Royal Society astronomer Joseph Banks, Cook carried locked secret Admiralty instructions (Source A) ordering him to sail south after…</div>
+      </div>
+      <div class="body-copy misc-item" style="border-top:1px dashed #cbd5e1; padding-top:0.9mm; margin-top:0.9mm;">
+        <div><strong style="color:#991b1b;">Misconception 3:</strong> Pupils assume European instruments alone guided HMS Endeavour across the Pacific without Indigenous expertise.</div>
+        <div><strong style="color:#166534;">Correction:</strong> Cook relied heavily on Ra'iatean high priest and master navigator Tupaia, who read stars, ocean swells, and bird paths, drew a chart of over 70…</div>
+      </div>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:2mm; justify-content:space-between;">
+          <div class="crib-card" style="border-left-color:#d97706; background:#fffbeb; flex:1;">
+            <div class="card-heading" style="color:#92400e;">Targeted Diagnostic Hinge Question</div>
+            <div class="body-copy" style="font-weight:700; color:#0f172a; margin-bottom:0.7mm;">&ldquo;How do Cook's locked 1768 Admiralty orders and Sydney Parkinson's 1770 sketches together expose the contradiction behind Britain's claim of terra nullius?&rdquo;</div>
+            <div class="body-copy" style="color:#334155;"><strong>Look For:</strong> Strong responses connect two pieces of lesson evidence: Source A explicitly instructed Cook to take possession only 'with the Consent of the Natives', while Source C (Parkinson's sketches of…</div>
+          </div>
+          <div class="crib-card" style="border-left-color:#6d28d9; background:#faf5ff; flex:1;">
+            <div class="card-heading" style="color:#4c1d95;">SEND Scaffold &amp; High-Ceiling Stretch</div>
+            <div class="body-copy" style="margin-bottom:0.7mm;"><strong style="color:#5b21b6;">SEND:</strong> Pair read-aloud audio on Blocks [1.1]–[1.5] with the Block 5 spectrum slider widget and pre-highlight the two key phrases in Source A ('Consent of the Natives') and Source C…</div>
+            <div class="body-copy"><strong style="color:#5b21b6;">Stretch:</strong> Compare Britain's decision to sign treaties in North America and New Zealand (such as Waitangi later in 1840) with its refusal to negotiate any treaty in eastern Australia…</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- (e) Quick Classroom Answer Crib -->
+      <div class="crib-card answer-crib-box" style="border-left-color:#0f172a; background:#f8fafc;">
+        <div class="card-heading" style="color:#0f172a;">Quick Classroom Answer Crib (Do Now &bull; Sources A–E &bull; Workbook / Exam Key)</div>
+        <div class="body-copy" style="margin-bottom:0.8mm; padding-bottom:0.8mm; border-bottom:1px solid #e2e8f0;">
+          <strong style="color:var(--accent-dark);">Do Now Key:</strong>
+          Q1: Mercantilism • Q2: Queen Elizabeth I • Q3: The Battle of Plassey • Q4: Liverpool and Bristol • Q5: The Middle Passage
+        </div>
+        <div class="body-copy" style="margin-bottom:0.8mm; padding-bottom:0.8mm; border-bottom:1px solid #e2e8f0;">
+          <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src A:</strong> The Admiralty instructions reveal Britain's imperial policy of claiming territory while…</span> <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src B:</strong> Tupaia's chart demonstrates that Pacific peoples possessed profound geographical and…</span> <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src C:</strong> Parkinson's sketches provide undeniable visual proof that Gweagal society possessed complex…</span> <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src D:</strong> Cook's journal confirms that Britain claimed eastern Australia through ceremonial imperial…</span> <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src E:</strong> Blackstone's legal treatise created the ideological framework that allowed the British…</span>
+        </div>
+        <div class="body-copy">
+          <strong style="color:#0f172a;">[Extended Historical Writing • Causal Explanation (2–3…]</strong>
+          <em>Explain why the British Empire claimed eastern Australia and declared it terra nullius between 1768 and 1788.</em>
+          &rarr; <strong>Core Model Argument:</strong> A primary reason Britain claimed eastern Australia in 1770 was strategic imperial rivalry with France. Following Captain Cook’s voyage, the British Admiralty sought naval bases in the Pacific to protect valuable Asian…
+        </div>
+      </div>
+    </div>
+
+    <div class="sow-foot">
+      <span>The History Revision Hub &bull; <span class="school-brand-target" data-department-name="The History Department">The History Department</span> &bull; Confidential Staff Guide</span>
+      <span class="sow-pill">Page 2 of 6</span>
+    </div>
+  </section>
+
+  <section class="page sow-page" data-page="3" data-page-kind="crib">
+    <div class="page-inner">
+      <div class="sow-head">
+        <span>3-MINUTE WALK-IN TEACHER CRIB SHEET &bull; ENQUIRY 2 OF 5</span>
+        <span>Invasion &amp; Survival in Australia (1768–1901)</span>
+      </div>
+
+      <!-- (a) Header Bar -->
+      <div class="enquiry-banner">
+        <div style="display:flex; justify-content:space-between; align-items:baseline; gap:2mm;">
+          <div class="enquiry-title-row">
+            <span class="enquiry-code-pill">E02</span>
+            <h2 class="enquiry-h2">The First Fleet &amp; The Convict Penal Colony (1783–1792)</h2>
+          </div>
+        </div>
+        <div class="enquiry-eq-line">Central Enquiry: Whose story do we tell about the founding of the first British penal colony in Australia?</div>
+        <div class="body-copy" style="color:#334155; margin-top:0.6mm;">
+          <strong style="color:var(--accent-dark);">Curriculum / Spec Anchor:</strong> KS3 National Curriculum (Britain 1745–1901): Georgian crime, the Bloody Code, the 1783 loss of the American colonies, and penal transportation to New South Wales…
+        </div>
+      </div>
+
+      
+
+      <!-- (b) Subject Knowledge Primer + Learning Objectives -->
+      <div class="two-col-grid" style="grid-template-columns: 1.28fr 1fr;">
+        <div class="crib-card">
+          <div class="card-heading">Subject Knowledge Primer (Non-Specialist Walk-In Briefing)</div>
+          <p class="body-copy">This enquiry investigates the social and institutional origins of British penal transportation to Australia. Students evaluate how the loss of the American colonies triggered a crisis in London jails, investigate the brutal physical reality of the First Fleet voyage and early starvation years, and assess convict labour under Governor Arthur Phillip through primary journals and sketches.</p>
+        </div>
+        <div class="crib-card" style="background:#f8fafc;">
+          <div class="card-heading">Core Learning Objectives</div>
+          <ul class="crib-ul">
+            <li class="body-copy">Explain why the British government chose Botany Bay as a penal destination in 1786.</li><li class="body-copy">Analyse the forensic challenges of the 15,000-mile voyage and early settlement at Sydney Cove.</li><li class="body-copy">Assess convict experiences, discipline, and the transition to free emancipists.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- (c) 2-Lesson Delivery Plan (2 x 50 mins) -->
+      <div class="two-col-grid" style="grid-template-columns: 1fr 1fr;">
+        <div class="crib-card" style="border-left-color:#1d4ed8;">
+          <div class="card-heading" style="color:#1e3a8a;">Lesson 1: Context, Shared Reading &amp; Early Evidence (Stages 1–3 • 50 mins)</div>
+          <div class="body-copy phase-row"><span class="time-chip">00–08m</span> <strong>Spaced Retrieval Starter:</strong> Complete the 5-question Do Now starter retrieving last lesson (&quot;Claiming Australia: Captain Cook, Tupaia &amp; The Myth of…</div><div class="body-copy phase-row"><span class="time-chip">08–28m</span> <strong>Modelled Shared Reading &amp; Verso Spine (Stages 1–3):</strong> Read Stages 1–3 (&quot;The American Crisis &amp; The Thames Prison Hulks&quot;, &quot;Outfitting the First Fleet&quot;, and &quot;Founding Sydney…</div><div class="body-copy phase-row"><span class="time-chip">28–44m</span> <strong>Primary Source Investigation (Sources A–B):</strong> Unpack Source A (Louis Garneray, British Prison Hulks Moored in…) and Source B (Journal of Surgeon Arthur Bowes Smyth…</div><div class="body-copy phase-row"><span class="time-chip">44–50m</span> <strong>Formative Hinge Plenary:</strong> Check whole-class understanding before Lesson 2 using the Hinge Question: &quot;Why did the British government choose an…</div>
+        </div>
+        <div class="crib-card" style="border-left-color:#15803d;">
+          <div class="card-heading" style="color:#14532d;">Lesson 2: Turning Points, Disciplinary Sources &amp; Extended Writing (Stages 4–5…</div>
+          <div class="body-copy phase-row"><span class="time-chip">00–08m</span> <strong>Part 1 Retrieval &amp; Vocabulary Anchor:</strong> Rapid recall of Lesson 1 Stages 1–3 (&quot;The American Crisis &amp; The Thames Prison Hulks&quot; → &quot;Founding Sydney Cove&quot;) and core…</div><div class="body-copy phase-row"><span class="time-chip">08–24m</span> <strong>Stages 4–5 &amp; Sources C–E Cross-Referencing:</strong> Read Stages 4–5 (&quot;The Starvation Years&quot; and &quot;Convict Labour, The Lash &amp; Emancipists&quot;) to complete the Verso spine, then…</div><div class="body-copy phase-row"><span class="time-chip">24–44m</span> <strong>Recto Workbook Extended Writing:</strong> Model using the Word Bank and Analytical Connectives, then have pupils complete their Recto writing task (Short…</div><div class="body-copy phase-row"><span class="time-chip">44–50m</span> <strong>Tap-Tile Consolidation &amp; Live Critique:</strong> Review one pupil paragraph under the visualiser against the model answer and complete the end-of-lesson Tap-Tile Summary…</div>
+        </div>
+      </div>
+
+      <!-- (d) Misconceptions & Corrections + Hinge Question + SEND & Stretch -->
+      <div class="two-col-grid" style="grid-template-columns: 1.15fr 1fr;">
+        <div class="crib-card" style="border-left-color:#b91c1c;">
+          <div class="card-heading" style="color:#7f1d1d;">Common Pupil Misconceptions &amp; Historical Corrections</div>
+          
+      <div class="body-copy misc-item" style="">
+        <div><strong style="color:#991b1b;">Misconception 1:</strong> Pupils often imagine First Fleet convicts were hardened serial killers locked inside stone prison cells upon…</div>
+        <div><strong style="color:#166534;">Correction:</strong> Most First Fleet convicts were poor urban labourers sentenced under the Bloody Code for minor property thefts, and Sydney Cove operated as an…</div>
+      </div>
+      <div class="body-copy misc-item" style="border-top:1px dashed #cbd5e1; padding-top:0.9mm; margin-top:0.9mm;">
+        <div><strong style="color:#991b1b;">Misconception 2:</strong> Pupils assume the First Fleet voyage suffered catastrophic mortality similar to transatlantic slave ships.</div>
+        <div><strong style="color:#166534;">Correction:</strong> Governor Arthur Phillip enforced strict deck ventilation, clean water, and fresh food stops at Rio de Janeiro and Cape Town, achieving an…</div>
+      </div>
+      <div class="body-copy misc-item" style="border-top:1px dashed #cbd5e1; padding-top:0.9mm; margin-top:0.9mm;">
+        <div><strong style="color:#991b1b;">Misconception 3:</strong> Pupils assume the British colony thrived straight away at Botany Bay using Joseph Banks's 1770 recommendations.</div>
+        <div><strong style="color:#166534;">Correction:</strong> Phillip immediately rejected swampy, exposed Botany Bay in January 1788 for deep-water Sydney Cove in Port Jackson, where sandy soil, snapped…</div>
+      </div>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:2mm; justify-content:space-between;">
+          <div class="crib-card" style="border-left-color:#d97706; background:#fffbeb; flex:1;">
+            <div class="card-heading" style="color:#92400e;">Targeted Diagnostic Hinge Question</div>
+            <div class="body-copy" style="font-weight:700; color:#0f172a; margin-bottom:0.7mm;">&ldquo;Why did losing the American War of Independence in 1783 trigger a domestic crisis on the River Thames that ended with eleven ships landing at Sydney Cove…&rdquo;</div>
+            <div class="body-copy" style="color:#334155;"><strong>Look For:</strong> Listen for a clear three-step causal chain: losing America closed Britain's existing outlet for transported felons; harsh Bloody Code sentences rapidly overcrowded county jails and…</div>
+          </div>
+          <div class="crib-card" style="border-left-color:#6d28d9; background:#faf5ff; flex:1;">
+            <div class="card-heading" style="color:#4c1d95;">SEND Scaffold &amp; High-Ceiling Stretch</div>
+            <div class="body-copy" style="margin-bottom:0.7mm;"><strong style="color:#5b21b6;">SEND:</strong> Use the Block 1 convict profile deck and the Block 3 Reference Map to trace the Portsmouth-to-Port Jackson route visually, then lean on the built-in sentence starters in the…</div>
+            <div class="body-copy"><strong style="color:#5b21b6;">Stretch:</strong> Using Source E, evaluate Governor Phillip's dual system of 300-lash corporal punishment (John Caesar) alongside 30-acre emancipist land grants (James Ruse): was…</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- (e) Quick Classroom Answer Crib -->
+      <div class="crib-card answer-crib-box" style="border-left-color:#0f172a; background:#f8fafc;">
+        <div class="card-heading" style="color:#0f172a;">Quick Classroom Answer Crib (Do Now &bull; Sources A–E &bull; Workbook / Exam Key)</div>
+        <div class="body-copy" style="margin-bottom:0.8mm; padding-bottom:0.8mm; border-bottom:1px solid #e2e8f0;">
+          <strong style="color:var(--accent-dark);">Do Now Key:</strong>
+          Q1: HMS Endeavour • Q2: Tupaia • Q3: Botany Bay • Q4: Possession Island • Q5: Terra nullius
+        </div>
+        <div class="body-copy" style="margin-bottom:0.8mm; padding-bottom:0.8mm; border-bottom:1px solid #e2e8f0;">
+          <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src A:</strong> Garneray's painting highlights the intolerable overcrowding and squalor of prison hulks…</span> <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src B:</strong> Bowes Smyth's journal demonstrates that strict sanitation, regular deck exercise, and fresh…</span> <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src C:</strong> Fowkes' plan shows how the British immediately organized the landscape around military…</span> <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src D:</strong> Tench's account exposes how close the penal colony came to starvation due to poor planning…</span> <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src E:</strong> The judicial records illustrate that while the lash maintained totalitarian discipline…</span>
+        </div>
+        <div class="body-copy">
+          <strong style="color:#0f172a;">[Primary Source Enquiry • Content &amp; Provenance (2…]</strong>
+          <em>How useful are Sources A and B for an enquiry into the challenges faced by convicts and colonial authorities during the founding…</em>
+          &rarr; <strong>Core Model Argument:</strong> Source A is useful for an enquiry into the founding of Sydney Cove because it reveals the severe food shortages and poor soil confronting the First Fleet.
+        </div>
+      </div>
+    </div>
+
+    <div class="sow-foot">
+      <span>The History Revision Hub &bull; <span class="school-brand-target" data-department-name="The History Department">The History Department</span> &bull; Confidential Staff Guide</span>
+      <span class="sow-pill">Page 3 of 6</span>
+    </div>
+  </section>
+
+  <section class="page sow-page" data-page="4" data-page-kind="crib">
+    <div class="page-inner">
+      <div class="sow-head">
+        <span>3-MINUTE WALK-IN TEACHER CRIB SHEET &bull; ENQUIRY 3 OF 5</span>
+        <span>Invasion &amp; Survival in Australia (1768–1901)</span>
+      </div>
+
+      <!-- (a) Header Bar -->
+      <div class="enquiry-banner">
+        <div style="display:flex; justify-content:space-between; align-items:baseline; gap:2mm;">
+          <div class="enquiry-title-row">
+            <span class="enquiry-code-pill">E03</span>
+            <h2 class="enquiry-h2">Frontier Warfare: Smallpox, Bennelong &amp; Pemulwuy’s Resistance (1788–1802)</h2>
+          </div>
+        </div>
+        <div class="enquiry-eq-line">Central Enquiry: Was the colonisation of Australia a story of ‘amity and kindness’ or violent frontier resistance?</div>
+        <div class="body-copy" style="color:#334155; margin-top:0.6mm;">
+          <strong style="color:var(--accent-dark);">Curriculum / Spec Anchor:</strong> KS3 National Curriculum (Britain 1745–1901): First Nations ecological custodianship, the 1789 smallpox epidemic, cultural mediation, and Sydney Basin guerrilla…
+        </div>
+      </div>
+
+      <div class="crib-card" style="border-left:4px solid #b45309; background:#fffbeb; padding:1.2mm 2.4mm;">
+         <div class="body-copy" style="color:#78350f;"><strong style="color:#92400e;">Pastoral / Impartiality Note:</strong> Sensitive Historical &amp; Cultural Framing: Name specific Sydney Basin peoples accurately (Eora, Gadigal, Wangal, Bidjigal, Dharug). Handle the 1789 smallpox mortality (Source B) and the colonial mutilation of…</div>
+       </div>
+
+      <!-- (b) Subject Knowledge Primer + Learning Objectives -->
+      <div class="two-col-grid" style="grid-template-columns: 1.28fr 1fr;">
+        <div class="crib-card">
+          <div class="card-heading">Subject Knowledge Primer (Non-Specialist Walk-In Briefing)</div>
+          <p class="body-copy">This enquiry challenges the colonial myth of peaceful settlement by examining the collision between 65,000 years of First Nations custodianship and British territorial conquest. Students investigate the catastrophic 1789 smallpox epidemic, evaluate Bennelong's complex diplomatic role, and study the military leadership of Pemulwuy during the Hawkesbury and Parramatta wars.</p>
+        </div>
+        <div class="crib-card" style="background:#f8fafc;">
+          <div class="card-heading">Core Learning Objectives</div>
+          <ul class="crib-ul">
+            <li class="body-copy">Explain the sophisticated environmental and spiritual governance of First Nations peoples before 1788.</li><li class="body-copy">Analyse the demographic and social devastation of the 1789 smallpox epidemic.</li><li class="body-copy">Contrast Bennelong’s diplomatic strategy with Pemulwuy’s armed guerrilla resistance.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- (c) 2-Lesson Delivery Plan (2 x 50 mins) -->
+      <div class="two-col-grid" style="grid-template-columns: 1fr 1fr;">
+        <div class="crib-card" style="border-left-color:#1d4ed8;">
+          <div class="card-heading" style="color:#1e3a8a;">Lesson 1: Context, Shared Reading &amp; Early Evidence (Stages 1–3 • 50 mins)</div>
+          <div class="body-copy phase-row"><span class="time-chip">00–08m</span> <strong>Spaced Retrieval Starter:</strong> Complete the 5-question Do Now starter retrieving last lesson (&quot;The First Fleet &amp; The Convict Penal Colony (1783–1792)&quot;…</div><div class="body-copy phase-row"><span class="time-chip">08–28m</span> <strong>Modelled Shared Reading &amp; Verso Spine (Stages 1–3):</strong> Read Stages 1–3 (&quot;First Nations Custodianship&quot;, &quot;The 1789 Smallpox Catastrophe&quot;, and &quot;Bennelong: The Tragic…</div><div class="body-copy phase-row"><span class="time-chip">28–44m</span> <strong>Primary Source Investigation (Sources A–B):</strong> Unpack Source A (Watkin Tench on Eora Custodianship and Marine Ecology…) and Source B (Surgeon John White's Journal on…</div><div class="body-copy phase-row"><span class="time-chip">44–50m</span> <strong>Formative Hinge Plenary:</strong> Check whole-class understanding before Lesson 2 using the Hinge Question: &quot;How does Tench's observation of family-owned…</div>
+        </div>
+        <div class="crib-card" style="border-left-color:#15803d;">
+          <div class="card-heading" style="color:#14532d;">Lesson 2: Turning Points, Disciplinary Sources &amp; Extended Writing (Stages 4–5…</div>
+          <div class="body-copy phase-row"><span class="time-chip">00–08m</span> <strong>Part 1 Retrieval &amp; Vocabulary Anchor:</strong> Rapid recall of Lesson 1 Stages 1–3 (&quot;First Nations Custodianship&quot; → &quot;Bennelong: The Tragic Intermediary&quot;) and core…</div><div class="body-copy phase-row"><span class="time-chip">08–24m</span> <strong>Stages 4–5 &amp; Sources C–E Cross-Referencing:</strong> Read Stages 4–5 (&quot;Pemulwuy: The Rainbow Warrior&quot; and &quot;The Hawkesbury River Frontier War&quot;) to complete the Verso spine…</div><div class="body-copy phase-row"><span class="time-chip">24–44m</span> <strong>Recto Workbook Extended Writing:</strong> Model using the Word Bank and Analytical Connectives, then have pupils complete their Recto writing task (Chronological…</div><div class="body-copy phase-row"><span class="time-chip">44–50m</span> <strong>Tap-Tile Consolidation &amp; Live Critique:</strong> Review one pupil paragraph under the visualiser against the model answer and complete the end-of-lesson Tap-Tile Summary…</div>
+        </div>
+      </div>
+
+      <!-- (d) Misconceptions & Corrections + Hinge Question + SEND & Stretch -->
+      <div class="two-col-grid" style="grid-template-columns: 1.15fr 1fr;">
+        <div class="crib-card" style="border-left-color:#b91c1c;">
+          <div class="card-heading" style="color:#7f1d1d;">Common Pupil Misconceptions &amp; Historical Corrections</div>
+          
+      <div class="body-copy misc-item" style="">
+        <div><strong style="color:#991b1b;">Misconception 1:</strong> Pupils assume pre-1788 Australian landscapes were untouched 'wilderness' that Indigenous communities merely…</div>
+        <div><strong style="color:#166534;">Correction:</strong> Across 65,000 years and more than 250 language nations, First Nations peoples actively managed Country through seasonal fire-stick farming…</div>
+      </div>
+      <div class="body-copy misc-item" style="border-top:1px dashed #cbd5e1; padding-top:0.9mm; margin-top:0.9mm;">
+        <div><strong style="color:#991b1b;">Misconception 2:</strong> Pupils assume British colonisation of New South Wales was peaceful because no formal war was declared in London.</div>
+        <div><strong style="color:#166534;">Correction:</strong> From 1790 to 1802, Bidjigal warrior Pemulwuy led coordinated guerrilla warfare across Parramatta and the Hawkesbury River, prompting Governor…</div>
+      </div>
+      <div class="body-copy misc-item" style="border-top:1px dashed #cbd5e1; padding-top:0.9mm; margin-top:0.9mm;">
+        <div><strong style="color:#991b1b;">Misconception 3:</strong> Pupils think Woollarawarre Bennelong voluntarily moved into Government House out of admiration for British customs.</div>
+        <div><strong style="color:#166534;">Correction:</strong> Bennelong was kidnapped by British marines in late 1789 on Governor Phillip's orders; his subsequent English fluency and 1792 voyage to London…</div>
+      </div>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:2mm; justify-content:space-between;">
+          <div class="crib-card" style="border-left-color:#d97706; background:#fffbeb; flex:1;">
+            <div class="card-heading" style="color:#92400e;">Targeted Diagnostic Hinge Question</div>
+            <div class="body-copy" style="font-weight:700; color:#0f172a; margin-bottom:0.7mm;">&ldquo;Why were Woollarawarre Bennelong's diplomacy and Pemulwuy's guerrilla raids two contrasting yet rational responses to the same post-1788 crisis?&rdquo;</div>
+            <div class="body-copy" style="color:#334155;"><strong>Look For:</strong> Strong answers anchor both men's choices in the devastating April 1789 gal-galla smallpox outbreak (which killed 50 to 70 percent of Sydney's Eora population and shattered elder leadership).</div>
+          </div>
+          <div class="crib-card" style="border-left-color:#6d28d9; background:#faf5ff; flex:1;">
+            <div class="card-heading" style="color:#4c1d95;">SEND Scaffold &amp; High-Ceiling Stretch</div>
+            <div class="body-copy" style="margin-bottom:0.7mm;"><strong style="color:#5b21b6;">SEND:</strong> Use the Block 3 spectrum slider to compare Bennelong and Pemulwuy visually before writing, and chunk the Recto 3-paragraph narrative account into Beginning (1788–90…</div>
+            <div class="body-copy"><strong style="color:#5b21b6;">Stretch:</strong> Examine Governor King's 1 May 1801 proclamation (Source E): how does outlawing Pemulwuy 'dead or alive' unintentionally prove that British authorities recognised they were…</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- (e) Quick Classroom Answer Crib -->
+      <div class="crib-card answer-crib-box" style="border-left-color:#0f172a; background:#f8fafc;">
+        <div class="card-heading" style="color:#0f172a;">Quick Classroom Answer Crib (Do Now &bull; Sources A–E &bull; Workbook / Exam Key)</div>
+        <div class="body-copy" style="margin-bottom:0.8mm; padding-bottom:0.8mm; border-bottom:1px solid #e2e8f0;">
+          <strong style="color:var(--accent-dark);">Do Now Key:</strong>
+          Q1: Loss of American colonies • Q2: Captain Arthur Phillip • Q3: Swampy marshes and no river • Q4: Sandy unproductive soil • Q5: Cat-o’-nine-tails lash
+        </div>
+        <div class="body-copy" style="margin-bottom:0.8mm; padding-bottom:0.8mm; border-bottom:1px solid #e2e8f0;">
+          <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src A:</strong> Tench's account proves that First Nations clans maintained clear territorial boundaries and…</span> <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src B:</strong> Surgeon White's eyewitness account confirms the catastrophic mortality of the 1789 smallpox…</span> <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src C:</strong> The portrait of Bennelong highlights the complex, difficult position of Indigenous cultural…</span> <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src D:</strong> Collins' engraving demonstrates the extraordinary physical skill and mobility of warriors…</span> <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src E:</strong> Governor King's proclamation officially acknowledges that the colony was engaged in open…</span>
+        </div>
+        <div class="body-copy">
+          <strong style="color:#0f172a;">[Chronological Historical Narrative • Analytical Account…]</strong>
+          <em>Write a narrative account analysing the key events of Indigenous resistance and frontier conflict in New South Wales between 1788…</em>
+          &rarr; <strong>Core Model Argument:</strong> Initially, relations between the Eora people and British settlers deteriorated in 1788 as colonists cleared land, felled trees, and cut off Aboriginal hunting grounds and fishing coves around Sydney.
+        </div>
+      </div>
+    </div>
+
+    <div class="sow-foot">
+      <span>The History Revision Hub &bull; <span class="school-brand-target" data-department-name="The History Department">The History Department</span> &bull; Confidential Staff Guide</span>
+      <span class="sow-pill">Page 4 of 6</span>
+    </div>
+  </section>
+
+  <section class="page sow-page" data-page="5" data-page-kind="crib">
+    <div class="page-inner">
+      <div class="sow-head">
+        <span>3-MINUTE WALK-IN TEACHER CRIB SHEET &bull; ENQUIRY 4 OF 5</span>
+        <span>Invasion &amp; Survival in Australia (1768–1901)</span>
+      </div>
+
+      <!-- (a) Header Bar -->
+      <div class="enquiry-banner">
+        <div style="display:flex; justify-content:space-between; align-items:baseline; gap:2mm;">
+          <div class="enquiry-title-row">
+            <span class="enquiry-code-pill">E04</span>
+            <h2 class="enquiry-h2">The Frontier Wars, Pastoral Expansion &amp; The Black War (1803–1840)</h2>
+          </div>
+        </div>
+        <div class="enquiry-eq-line">Central Enquiry: How did pastoral expansion and frontier conflict transform colonial Australia?</div>
+        <div class="body-copy" style="color:#334155; margin-top:0.6mm;">
+          <strong style="color:var(--accent-dark);">Curriculum / Spec Anchor:</strong> KS3 National Curriculum (Britain 1745–1901): Industrial Britain's imperial links (Yorkshire wool demand), the Tasmanian Black War, and the 1838 Myall Creek trial…
+        </div>
+      </div>
+
+      <div class="crib-card" style="border-left:4px solid #b45309; background:#fffbeb; padding:1.2mm 2.4mm;">
+         <div class="body-copy" style="color:#78350f;"><strong style="color:#92400e;">Pastoral / Impartiality Note:</strong> Trauma-Informed &amp; Respectful Framing: This enquiry addresses unprovoked frontier massacres at Risdon Cove (1804) and Myall Creek (1838) alongside forced exile at Wybalenna.</div>
+       </div>
+
+      <!-- (b) Subject Knowledge Primer + Learning Objectives -->
+      <div class="two-col-grid" style="grid-template-columns: 1.28fr 1fr;">
+        <div class="crib-card">
+          <div class="card-heading">Subject Knowledge Primer (Non-Specialist Walk-In Briefing)</div>
+          <p class="body-copy">This enquiry investigates the bloody zenith of the Australian Frontier Wars. Pupils examine the near-annihilation of the Palawa in Van Diemen’s Land during the Black War, evaluate Truganini’s tragic diplomacy, analyse how the international boom in Australian Merino wool drove squatter expansion across the continent, and examine the landmark Myall Creek trial of 1838.</p>
+        </div>
+        <div class="crib-card" style="background:#f8fafc;">
+          <div class="card-heading">Core Learning Objectives</div>
+          <ul class="crib-ul">
+            <li class="body-copy">Explain the causes and course of the Black War in Van Diemen’s Land (1824–1832).</li><li class="body-copy">Analyse how the economic boom in Merino wool fuelled rapid frontier dispossession.</li><li class="body-copy">Evaluate contrasting historical interpretations of the scale and nature of the Frontier Wars.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- (c) 2-Lesson Delivery Plan (2 x 50 mins) -->
+      <div class="two-col-grid" style="grid-template-columns: 1fr 1fr;">
+        <div class="crib-card" style="border-left-color:#1d4ed8;">
+          <div class="card-heading" style="color:#1e3a8a;">Lesson 1: Context, Shared Reading &amp; Early Evidence (Stages 1–3 • 50 mins)</div>
+          <div class="body-copy phase-row"><span class="time-chip">00–08m</span> <strong>Spaced Retrieval Starter:</strong> Complete the 5-question Do Now starter retrieving last lesson (&quot;Frontier Warfare: Smallpox, Bennelong &amp; Pemulwuy’s…</div><div class="body-copy phase-row"><span class="time-chip">08–28m</span> <strong>Modelled Shared Reading &amp; Verso Spine (Stages 1–3):</strong> Read Stages 1–3 (&quot;The Invasion of Van Diemen’s Land&quot;, &quot;The Black War &amp; Governor Arthur’s Martial Law&quot;, and &quot;Truganini and…</div><div class="body-copy phase-row"><span class="time-chip">28–44m</span> <strong>Primary Source Investigation (Sources A–B):</strong> Unpack Source A (Deposition of Convict Edward White on the Risdon Cove…) and Source B (Governor George Arthur's Pictorial…</div><div class="body-copy phase-row"><span class="time-chip">44–50m</span> <strong>Formative Hinge Plenary:</strong> Check whole-class understanding before Lesson 2 using the Hinge Question: &quot;Why did the British military respond to an…</div>
+        </div>
+        <div class="crib-card" style="border-left-color:#15803d;">
+          <div class="card-heading" style="color:#14532d;">Lesson 2: Turning Points, Disciplinary Sources &amp; Extended Writing (Stages 4–5…</div>
+          <div class="body-copy phase-row"><span class="time-chip">00–08m</span> <strong>Part 1 Retrieval &amp; Vocabulary Anchor:</strong> Rapid recall of Lesson 1 Stages 1–3 (&quot;The Invasion of Van Diemen’s Land&quot; → &quot;Truganini and the Exile to Wybalenna&quot;) and…</div><div class="body-copy phase-row"><span class="time-chip">08–24m</span> <strong>Stages 4–5 &amp; Sources C–E Cross-Referencing:</strong> Read Stages 4–5 (&quot;Squatters and the Great Merino Land Grab&quot; and &quot;The Myall Creek Reckoning&quot;) to complete the Verso spine…</div><div class="body-copy phase-row"><span class="time-chip">24–44m</span> <strong>Recto Workbook Extended Writing:</strong> Model using the Word Bank and Analytical Connectives, then have pupils complete their Recto writing task (Comparing…</div><div class="body-copy phase-row"><span class="time-chip">44–50m</span> <strong>Tap-Tile Consolidation &amp; Live Critique:</strong> Review one pupil paragraph under the visualiser against the model answer and complete the end-of-lesson Tap-Tile Summary…</div>
+        </div>
+      </div>
+
+      <!-- (d) Misconceptions & Corrections + Hinge Question + SEND & Stretch -->
+      <div class="two-col-grid" style="grid-template-columns: 1.15fr 1fr;">
+        <div class="crib-card" style="border-left-color:#b91c1c;">
+          <div class="card-heading" style="color:#7f1d1d;">Common Pupil Misconceptions &amp; Historical Corrections</div>
+          
+      <div class="body-copy misc-item" style="">
+        <div><strong style="color:#991b1b;">Misconception 1:</strong> Pupils assume Governor Arthur's c. 1829 Pictorial Proclamation Board (Source B) shows that British law treated…</div>
+        <div><strong style="color:#166534;">Correction:</strong> Arthur issued the board right after declaring martial law in November 1828, which authorised soldiers and settlers to shoot Palawa people on…</div>
+      </div>
+      <div class="body-copy misc-item" style="border-top:1px dashed #cbd5e1; padding-top:0.9mm; margin-top:0.9mm;">
+        <div><strong style="color:#991b1b;">Misconception 2:</strong> Pupils think pastoral expansion on the mainland had nothing to do with Britain's domestic Industrial Revolution.</div>
+        <div><strong style="color:#166534;">Correction:</strong> Booming mechanized woollen mills in Yorkshire created insatiable demand for Australian Merino fleece, driving colonial squatters across the Blue…</div>
+      </div>
+      <div class="body-copy misc-item" style="border-top:1px dashed #cbd5e1; padding-top:0.9mm; margin-top:0.9mm;">
+        <div><strong style="color:#991b1b;">Misconception 3:</strong> Pupils sometimes repeat the outdated colonial claim that Tasmanian Aboriginal people 'died out' completely after…</div>
+        <div><strong style="color:#166534;">Correction:</strong> Although betrayal and disease at Wybalenna camp killed over 150 of the 200 exiled Palawa people (Source C), Palawa families endured and continue…</div>
+      </div>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:2mm; justify-content:space-between;">
+          <div class="crib-card" style="border-left-color:#d97706; background:#fffbeb; flex:1;">
+            <div class="card-heading" style="color:#92400e;">Targeted Diagnostic Hinge Question</div>
+            <div class="body-copy" style="font-weight:700; color:#0f172a; margin-bottom:0.7mm;">&ldquo;Why did the hanging of seven white stockmen after the 1838 Myall Creek Massacre fail to stop violence across the Australian pastoral frontier?&rdquo;</div>
+            <div class="body-copy" style="color:#334155;"><strong>Look For:</strong> Look for pupils connecting two forces: first, soaring Yorkshire textile mill demand for fine Merino wool gave colonial squatters an overwhelming financial incentive to keep seizing inland…</div>
+          </div>
+          <div class="crib-card" style="border-left-color:#6d28d9; background:#faf5ff; flex:1;">
+            <div class="card-heading" style="color:#4c1d95;">SEND Scaffold &amp; High-Ceiling Stretch</div>
+            <div class="body-copy" style="margin-bottom:0.7mm;"><strong style="color:#5b21b6;">SEND:</strong> Anchor geographical transitions using the Block 1 Reference Map (separating Van Diemen's Land from mainland Bathurst and Myall Creek), and display Source B beside Block [4.2]…</div>
+            <div class="body-copy"><strong style="color:#5b21b6;">Stretch:</strong> Cross-reference the 1837 British Parliamentary Select Committee Report (Source D) with Interpretation 1 on the Recto task: how do official colonial depositions from Risdon…</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- (e) Quick Classroom Answer Crib -->
+      <div class="crib-card answer-crib-box" style="border-left-color:#0f172a; background:#f8fafc;">
+        <div class="card-heading" style="color:#0f172a;">Quick Classroom Answer Crib (Do Now &bull; Sources A–E &bull; Workbook / Exam Key)</div>
+        <div class="body-copy" style="margin-bottom:0.8mm; padding-bottom:0.8mm; border-bottom:1px solid #e2e8f0;">
+          <strong style="color:var(--accent-dark);">Do Now Key:</strong>
+          Q1: 65,000 years • Q2: Smallpox • Q3: Bennelong • Q4: Pemulwuy • Q5: Hawkesbury
+        </div>
+        <div class="body-copy" style="margin-bottom:0.8mm; padding-bottom:0.8mm; border-bottom:1px solid #e2e8f0;">
+          <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src A:</strong> White's testimony demonstrates that the Black War began with unprovoked military aggression…</span> <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src B:</strong> Arthur's proclamation board presents an idealized fiction of equal legal protection that…</span> <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src C:</strong> Robinson's journal records the devastating human cost of forced exile, showing that…</span> <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src D:</strong> The 1837 British Parliamentary Report represents a historic official admission that…</span> <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src E:</strong> Hobbs' deposition provides indispensable legal evidence of the Myall Creek Massacre, which…</span>
+        </div>
+        <div class="body-copy">
+          <strong style="color:#0f172a;">[Comparing Historical Interpretations • Contrasting Views…]</strong>
+          <em>Explain how Interpretations 1 and 2 differ on the nature of the Australian Frontier Wars and suggest why they reach contrasting…</em>
+          &rarr; <strong>Core Model Argument:</strong> Part (b) [4 marks]: 3(b). Study Interpretations 1 and 2. They give different views about the nature of the Australian Frontier Wars. What is the main difference between these views?
+        </div>
+      </div>
+    </div>
+
+    <div class="sow-foot">
+      <span>The History Revision Hub &bull; <span class="school-brand-target" data-department-name="The History Department">The History Department</span> &bull; Confidential Staff Guide</span>
+      <span class="sow-pill">Page 5 of 6</span>
+    </div>
+  </section>
+
+  <section class="page sow-page" data-page="6" data-page-kind="crib">
+    <div class="page-inner">
+      <div class="sow-head">
+        <span>3-MINUTE WALK-IN TEACHER CRIB SHEET &bull; ENQUIRY 5 OF 5</span>
+        <span>Invasion &amp; Survival in Australia (1768–1901)</span>
+      </div>
+
+      <!-- (a) Header Bar -->
+      <div class="enquiry-banner">
+        <div style="display:flex; justify-content:space-between; align-items:baseline; gap:2mm;">
+          <div class="enquiry-title-row">
+            <span class="enquiry-code-pill">E05</span>
+            <h2 class="enquiry-h2">The Gold Rush, Eureka Stockade &amp; The Legacy of Colonisation (1851–1901)</h2>
+          </div>
+        </div>
+        <div class="enquiry-eq-line">Central Enquiry: How did the 1851 Gold Rush and the Eureka Stockade transform Australian society and democracy?</div>
+        <div class="body-copy" style="color:#334155; margin-top:0.6mm;">
+          <strong style="color:var(--accent-dark);">Curriculum / Spec Anchor:</strong> KS3 National Curriculum (Britain 1745–1901 &amp; Challenges Post-1901): The 1851 Gold Rush, the 1854 Eureka Stockade, Federation, the White Australia Policy, and Native…
+        </div>
+      </div>
+
+      <div class="crib-card" style="border-left:4px solid #b45309; background:#fffbeb; padding:1.2mm 2.4mm;">
+         <div class="body-copy" style="color:#78350f;"><strong style="color:#92400e;">Pastoral / Impartiality Note:</strong> Pastoral &amp; Historical Framing: Teach anti-Chinese violence at Lambing Flat (1861), the 1901 White Australia Policy, and the forced removal of Aboriginal and Torres Strait Islander children (the Stolen…</div>
+       </div>
+
+      <!-- (b) Subject Knowledge Primer + Learning Objectives -->
+      <div class="two-col-grid" style="grid-template-columns: 1.28fr 1fr;">
+        <div class="crib-card">
+          <div class="card-heading">Subject Knowledge Primer (Non-Specialist Walk-In Briefing)</div>
+          <p class="body-copy">This final enquiry investigates the transformation of Australia from a penal colony into a wealthy, democratic nation through the 1851 Gold Rush and the 1854 Eureka Stockade. Pupils analyse how gold fever created an assertive working class, interrogate the dark legacy of anti-Chinese goldfield riots that gave birth to the White Australia Policy, and evaluate modern First Nations civil rights from the 1938 Day of Mourning to the historic 1992 Mabo Decision.</p>
+        </div>
+        <div class="crib-card" style="background:#f8fafc;">
+          <div class="card-heading">Core Learning Objectives</div>
+          <ul class="crib-ul">
+            <li class="body-copy">Explain the demographic and economic impact of the 1851 Australian Gold Rush.</li><li class="body-copy">Assess the significance of the 1854 Eureka Stockade for the development of Australian democracy.</li><li class="body-copy">Evaluate the dual legacy of Federation: the White Australia Policy alongside First Nations survival and the Mabo Decision.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- (c) 2-Lesson Delivery Plan (2 x 50 mins) -->
+      <div class="two-col-grid" style="grid-template-columns: 1fr 1fr;">
+        <div class="crib-card" style="border-left-color:#1d4ed8;">
+          <div class="card-heading" style="color:#1e3a8a;">Lesson 1: Context, Shared Reading &amp; Early Evidence (Stages 1–3 • 50 mins)</div>
+          <div class="body-copy phase-row"><span class="time-chip">00–08m</span> <strong>Spaced Retrieval Starter:</strong> Complete the 5-question Do Now starter retrieving last lesson (&quot;The Frontier Wars, Pastoral Expansion &amp; The Black War…</div><div class="body-copy phase-row"><span class="time-chip">08–28m</span> <strong>Modelled Shared Reading &amp; Verso Spine (Stages 1–3):</strong> Read Stages 1–3 (&quot;Gold Fever: Ballarat &amp; Bendigo&quot;, &quot;The Gold Commission &amp; Licence Hunts&quot;, and &quot;The Eureka Stockade&quot;)…</div><div class="body-copy phase-row"><span class="time-chip">28–44m</span> <strong>Primary Source Investigation (Sources A–B):</strong> Unpack Source A (Edward Hargraves, Letter to the Colonial Secretary…) and Source B (Colony of Victoria Gold Mining…</div><div class="body-copy phase-row"><span class="time-chip">44–50m</span> <strong>Formative Hinge Plenary:</strong> Check whole-class understanding before Lesson 2 using the Hinge Question: &quot;Why did colonial governors initially fear the…</div>
+        </div>
+        <div class="crib-card" style="border-left-color:#15803d;">
+          <div class="card-heading" style="color:#14532d;">Lesson 2: Turning Points, Disciplinary Sources &amp; Extended Writing (Stages 4–5…</div>
+          <div class="body-copy phase-row"><span class="time-chip">00–08m</span> <strong>Part 1 Retrieval &amp; Vocabulary Anchor:</strong> Rapid recall of Lesson 1 Stages 1–3 (&quot;Gold Fever: Ballarat &amp; Bendigo&quot; → &quot;The Eureka Stockade&quot;) and core lesson vocabulary…</div><div class="body-copy phase-row"><span class="time-chip">08–24m</span> <strong>Stages 4–5 &amp; Sources C–E Cross-Referencing:</strong> Read Stages 4–5 (&quot;Chinese Miners &amp; The White Australia Policy&quot; and &quot;First Nations Survival &amp; The Mabo Legacy&quot;) to…</div><div class="body-copy phase-row"><span class="time-chip">24–44m</span> <strong>Recto Workbook Extended Writing:</strong> Model using the Word Bank and Analytical Connectives, then have pupils complete their Recto writing task (Evaluative…</div><div class="body-copy phase-row"><span class="time-chip">44–50m</span> <strong>Tap-Tile Consolidation &amp; Live Critique:</strong> Review one pupil paragraph under the visualiser against the model answer and complete the end-of-lesson Tap-Tile Summary…</div>
+        </div>
+      </div>
+
+      <!-- (d) Misconceptions & Corrections + Hinge Question + SEND & Stretch -->
+      <div class="two-col-grid" style="grid-template-columns: 1.15fr 1fr;">
+        <div class="crib-card" style="border-left-color:#b91c1c;">
+          <div class="card-heading" style="color:#7f1d1d;">Common Pupil Misconceptions &amp; Historical Corrections</div>
+          
+      <div class="body-copy misc-item" style="">
+        <div><strong style="color:#991b1b;">Misconception 1:</strong> Pupils assume the Eureka Stockade was a military victory in which Ballarat miners defeated the British army.</div>
+        <div><strong style="color:#166534;">Correction:</strong> Militarily, redcoats overran the wooden stockade in fifteen minutes at dawn on 3 December 1854, killing twenty-two diggers; its victory was…</div>
+      </div>
+      <div class="body-copy misc-item" style="border-top:1px dashed #cbd5e1; padding-top:0.9mm; margin-top:0.9mm;">
+        <div><strong style="color:#991b1b;">Misconception 2:</strong> Pupils think the 1901 Immigration Restriction Act openly stated a ban on Asian migrants in plain words.</div>
+        <div><strong style="color:#166534;">Correction:</strong> To avoid offending Britain's imperial subjects and Japanese allies openly, federal officials used a rigged 50-word dictation test in any…</div>
+      </div>
+      <div class="body-copy misc-item" style="border-top:1px dashed #cbd5e1; padding-top:0.9mm; margin-top:0.9mm;">
+        <div><strong style="color:#991b1b;">Misconception 3:</strong> Pupils assume First Nations political campaigning only began in the late twentieth century before the 1992 Mabo…</div>
+        <div><strong style="color:#166534;">Correction:</strong> Aboriginal activists led by the Aborigines Progressive Association staged the landmark Day of Mourning protest at Sydney's Australian Hall on 26…</div>
+      </div>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:2mm; justify-content:space-between;">
+          <div class="crib-card" style="border-left-color:#d97706; background:#fffbeb; flex:1;">
+            <div class="card-heading" style="color:#92400e;">Targeted Diagnostic Hinge Question</div>
+            <div class="body-copy" style="font-weight:700; color:#0f172a; margin-bottom:0.7mm;">&ldquo;Why did the birth of Australian democracy between Eureka (1854) and Federation (1901) expand voting rights for white working men while deepening legal…&rdquo;</div>
+            <div class="body-copy" style="color:#334155;"><strong>Look For:</strong> Strong answers hold this central paradox together: outrage after redcoats stormed the Eureka Stockade in December 1854 abolished the hated 30-shilling monthly mining licence and won manhood…</div>
+          </div>
+          <div class="crib-card" style="border-left-color:#6d28d9; background:#faf5ff; flex:1;">
+            <div class="card-heading" style="color:#4c1d95;">SEND Scaffold &amp; High-Ceiling Stretch</div>
+            <div class="body-copy" style="margin-bottom:0.7mm;"><strong style="color:#5b21b6;">SEND:</strong> Use the Block 5 profile deck and Verso 5-Stage Spine to separate the lesson's three strands (Eureka democracy, anti-Chinese Immigration Restriction Act, and Day of Mourning…</div>
+            <div class="body-copy"><strong style="color:#5b21b6;">Stretch:</strong> Synthesise Lesson 1 and Lesson 5: explain how the High Court's 1992 Mabo decision legally dismantled the exact 18th-century property argument established by Cook and…</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- (e) Quick Classroom Answer Crib -->
+      <div class="crib-card answer-crib-box" style="border-left-color:#0f172a; background:#f8fafc;">
+        <div class="card-heading" style="color:#0f172a;">Quick Classroom Answer Crib (Do Now &bull; Sources A–E &bull; Workbook / Exam Key)</div>
+        <div class="body-copy" style="margin-bottom:0.8mm; padding-bottom:0.8mm; border-bottom:1px solid #e2e8f0;">
+          <strong style="color:var(--accent-dark);">Do Now Key:</strong>
+          Q1: Van Diemen’s Land • Q2: Martial law • Q3: George Augustus Robinson • Q4: Yorkshire wool demand • Q5: Myall Creek
+        </div>
+        <div class="body-copy" style="margin-bottom:0.8mm; padding-bottom:0.8mm; border-bottom:1px solid #e2e8f0;">
+          <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src A:</strong> Hargraves' letter initiated the Australian Gold Rush, transforming the continent from an…</span> <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src B:</strong> This authentic 1854 licence proves how the colonial government extracted direct taxation…</span> <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src C:</strong> Doudiet's watercolor captures the defining moment of democratic solidarity at Eureka…</span> <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src D:</strong> The Immigration Restriction Act demonstrates how racial exclusion was codified into…</span> <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src E:</strong> The 1938 Day of Mourning resolution marked a turning point in First Nations political…</span>
+        </div>
+        <div class="body-copy">
+          <strong style="color:#0f172a;">[Evaluative Historical Essay • Balanced Judgement (3…]</strong>
+          <em>‘The discovery of gold and the Eureka Stockade were the most important turning points in 19th-century Australian history.’ How…</em>
+          &rarr; <strong>Core Model Argument:</strong> On the one hand, the 1854 Eureka Stockade was a major turning point in Australian democracy. Frustrated by corrupt gold commissioners and expensive mining licence fees, Ballarat gold miners rebelled under the Southern…
+        </div>
+      </div>
+    </div>
+
+    <div class="sow-foot">
+      <span>The History Revision Hub &bull; <span class="school-brand-target" data-department-name="The History Department">The History Department</span> &bull; Confidential Staff Guide</span>
+      <span class="sow-pill">Page 6 of 6</span>
+    </div>
+  </section>
+
+  
+  <script>
+    (function () {
+      // 1. Commercial School Cover Customizer (?school=School+Name)
+      try {
+        var params = new URLSearchParams(window.location.search);
+        var customSchool = (params.get('school') || '').trim();
+        if (customSchool) {
+          var targets = document.querySelectorAll('.school-brand-target');
+          for (var i = 0; i < targets.length; i++) {
+            targets[i].textContent = customSchool;
+          }
+        }
+      } catch (e) {}
+
+      // 2. Zero-Overflow A4 Portrait Auto-Fit Engine (Strictly preserves body prose >= 8.2pt!)
+      window.autoFitPages = function () {
+        var pages = document.querySelectorAll('.page');
+        for (var p = 0; p < pages.length; p++) {
+          var page = pages[p];
+          var inner = page.querySelector('.page-inner');
+          var bodyEls = page.querySelectorAll('.body-copy');
+          var cards = page.querySelectorAll('.crib-card, .enquiry-banner, .hero-banner');
+          var grids = page.querySelectorAll('.two-col-grid');
+          var cells = page.querySelectorAll('.sow-matrix-table td, .sow-matrix-table th');
+          var headings = page.querySelectorAll('.card-heading');
+
+          var bodyPt = 8.5;
+          var bodyLh = 1.25;
+          var gapMm = 2.1;
+          var padY = 8.0;
+          var guard = 0;
+
+          while (page.scrollHeight > page.clientHeight && guard < 36) {
+            guard++;
+            if (guard <= 10) {
+              // Phase 1: Tighten vertical gaps & card/table padding first (0pt font loss)
+              gapMm = Math.max(1.0, gapMm - 0.12);
+              if (inner) inner.style.gap = gapMm.toFixed(2) + 'mm';
+              for (var g = 0; g < grids.length; g++) {
+                grids[g].style.gap = Math.max(1.2, gapMm).toFixed(2) + 'mm';
+              }
+              var cardPadY = Math.max(1.0, 1.8 - guard * 0.08);
+              for (var c = 0; c < cards.length; c++) {
+                cards[c].style.paddingTop = cardPadY.toFixed(2) + 'mm';
+                cards[c].style.paddingBottom = cardPadY.toFixed(2) + 'mm';
+              }
+              var cellPadY = Math.max(0.65, 1.2 - guard * 0.055);
+              for (var td = 0; td < cells.length; td++) {
+                cells[td].style.paddingTop = cellPadY.toFixed(2) + 'mm';
+                cells[td].style.paddingBottom = cellPadY.toFixed(2) + 'mm';
+              }
+            } else if (guard <= 20) {
+              // Phase 2: Step body copy gently from 8.5pt toward 8.20pt floor & tighter line-height
+              bodyPt = Math.max(8.2, bodyPt - 0.03);
+              bodyLh = Math.max(1.16, bodyLh - 0.009);
+              for (var b = 0; b < bodyEls.length; b++) {
+                bodyEls[b].style.fontSize = bodyPt.toFixed(2) + 'pt';
+                bodyEls[b].style.lineHeight = bodyLh.toFixed(2);
+              }
+            } else {
+              // Phase 3: Tighten outer page vertical margin & heading margins while locking bodyPt >= 8.2pt!
+              padY = Math.max(5.5, padY - 0.2);
+              page.style.paddingTop = padY.toFixed(2) + 'mm';
+              page.style.paddingBottom = padY.toFixed(2) + 'mm';
+              bodyLh = Math.max(1.13, bodyLh - 0.004);
+              for (var b2 = 0; b2 < bodyEls.length; b2++) {
+                bodyEls[b2].style.lineHeight = bodyLh.toFixed(2);
+              }
+              for (var h = 0; h < headings.length; h++) {
+                headings[h].style.fontSize = '8.25pt';
+                headings[h].style.marginBottom = '0.4mm';
+                headings[h].style.paddingBottom = '0.3mm';
+              }
+              var foot = page.querySelector('.sow-foot');
+              if (foot) {
+                foot.style.marginTop = '0.8mm';
+                foot.style.paddingTop = '0.8mm';
+              }
+            }
+          }
+        }
+      };
+
+      if (document.readyState === 'complete') {
+        window.autoFitPages();
+      } else {
+        window.addEventListener('load', window.autoFitPages);
+      }
+      if (document.fonts && document.fonts.ready) {
+        document.fonts.ready.then(window.autoFitPages);
+      }
+    })();
+  </script>
+</body>
+</html>

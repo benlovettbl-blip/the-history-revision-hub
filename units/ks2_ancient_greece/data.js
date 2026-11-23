@@ -944,7 +944,8 @@ window.UNIT_DATA = {
         ],
         "provenanceNote": "British Museum, Metropolitan Museum of Art, Louvre, Archaeological Museums of Greece & Wikimedia Commons (Zero AI Imagery)",
         "spokenTakeaway": "Here is the big story in one sentence. <short pause> Steep mountains and Aegean islands split Greece into rival city-states, yet sea trade, a 24-letter alphabet, and shared gods united all Hellenes."
-      }
+      },
+      "banner_caption": "Marble columns of the Temple of Poseidon at Cape Sounion overlooking the islands and blue waters of the Aegean Sea"
     },
     {
       "id": "lesson_2",
@@ -1855,7 +1856,8 @@ window.UNIT_DATA = {
         ],
         "provenanceNote": "British Museum, Metropolitan Museum of Art, Louvre, Archaeological Museums of Greece & Wikimedia Commons (Zero AI Imagery)",
         "spokenTakeaway": "Here is the big story in one sentence. <short pause> Sea-trading Athens invented citizen democracy and prized arts, while warrior Sparta trained boys in agoge barracks from age seven and gave women greater freedom."
-      }
+      },
+      "banner_caption": "Carved stone speakers' platform (bema) on the Pnyx hill in Athens, where citizens addressed thousands of Assembly voters"
     },
     {
       "id": "lesson_3",
@@ -2766,7 +2768,8 @@ window.UNIT_DATA = {
         ],
         "provenanceNote": "British Museum, Metropolitan Museum of Art, Louvre, Archaeological Museums of Greece & Wikimedia Commons (Zero AI Imagery)",
         "spokenTakeaway": "Here is the big story in one sentence. <short pause> Belief in the twelve Olympian gods inspired marble temples like the Parthenon, hero myths on painted vases, and peaceful Olympic Games from 776 BC."
-      }
+      },
+      "banner_caption": "The ancient packed-earth stadion running track at Olympia, where barefoot Greek sprinters raced in honour of Zeus from 776 BC"
     },
     {
       "id": "lesson_4",
@@ -3677,7 +3680,8 @@ window.UNIT_DATA = {
         ],
         "provenanceNote": "British Museum, Metropolitan Museum of Art, Louvre, Archaeological Museums of Greece & Wikimedia Commons (Zero AI Imagery)",
         "spokenTakeaway": "Here is the big story in one sentence. <short pause> By uniting together and using hoplite shield-walls, narrow passes, and fast trireme warships, tiny Greek city-states defeated mighty Persia between 490 and 479 BC."
-      }
+      },
+      "banner_caption": "1816 historical engraving looking down toward the narrow coastal pass (defile) of Thermopylae between steep Greek mountains and the sea."
     },
     {
       "id": "lesson_5",
@@ -4588,7 +4592,8 @@ window.UNIT_DATA = {
         ],
         "provenanceNote": "British Museum, Metropolitan Museum of Art, Louvre, Archaeological Museums of Greece & Wikimedia Commons (Zero AI Imagery)",
         "spokenTakeaway": "Here is the big story in one sentence. <short pause> Greek playwrights, philosophers like Socrates and Aristotle, doctor Hippocrates, and mathematicians like Euclid taught people to question, observe nature, and prove ideas."
-      }
+      },
+      "banner_caption": "Marble tholos and sanctuary terraces at Delphi set high on the slopes of Mount Parnassus."
     },
     {
       "id": "lesson_6",
@@ -5499,7 +5504,8 @@ window.UNIT_DATA = {
         ],
         "provenanceNote": "British Museum, Metropolitan Museum of Art, Louvre, Archaeological Museums of Greece & Wikimedia Commons (Zero AI Imagery)",
         "spokenTakeaway": "Here is the big story in one sentence. <short pause> Alexander the Great and Alexandria's Great Library spread Greek learning afar, leaving a lasting legacy in our democracy, language, buildings, and Olympic Games."
-      }
+      },
+      "banner_caption": "Two-storey marble facade of the ancient Library of Celsus at Ephesus — showcasing the lasting spread of Greek architecture and scholarship."
     }
   ],
   "key_individuals": [

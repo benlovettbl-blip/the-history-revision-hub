@@ -941,7 +941,8 @@ window.UNIT_DATA = {
           ]
         ],
         "spokenTakeaway": "Here is the big story in one sentence. <short pause> Yearly Nile floods left fertile black Kemet silt for wheat and papyrus, and around 3100 BC King Narmer united Upper and Lower Egypt under one Double Crown."
-      }
+      },
+      "banner_caption": "Satellite view from space showing the lush green Nile valley and fan-shaped Nile Delta cutting through golden Sahara sands"
     },
     {
       "id": "lesson_2",
@@ -1850,7 +1851,8 @@ window.UNIT_DATA = {
           ]
         ],
         "spokenTakeaway": "Here is the big story in one sentence. <short pause> Using copper chisels, Nile barges, wet-sand sledges, and well-fed paid teams, Old Kingdom Egyptians built Khufu's 146-metre Great Pyramid and Khafre's Great Sphinx at Giza."
-      }
+      },
+      "banner_caption": "The lion-bodied Great Sphinx carved from Giza’s limestone bedrock for Pharaoh Khafre, standing guard before the Great Pyramids"
     },
     {
       "id": "lesson_3",
@@ -2758,7 +2760,8 @@ window.UNIT_DATA = {
           ]
         ],
         "spokenTakeaway": "Here is the big story in one sentence. <short pause> Farmers and craftworkers lived in cool whitewashed mud-brick homes and played Senet, while Champollion used the three-script Rosetta Stone in 1822 to crack 700 hieroglyphs."
-      }
+      },
+      "banner_caption": "Giant sandstone columns carved in sunken relief hieroglyphs inside the Great Temple of Karnak at Luxor."
     },
     {
       "id": "lesson_4",
@@ -3582,7 +3585,7 @@ window.UNIT_DATA = {
       "banner_image": "/units/ks2_ancient_egypt/assets/hunefer_weighing_of_the_heart.jpg",
       "banner": {
         "image": "/units/ks2_ancient_egypt/assets/hunefer_weighing_of_the_heart.jpg",
-        "caption": "Ra, Osiris & Anubis, 70-Day Mummification, Canopic Jars, Shabtis & Weighing the Heart",
+        "caption": "Scene from the ancient Egyptian Book of the Dead of Hunefer (c. 1275 BC), showing jackal-headed Anubis weighing Hunefer’s heart against the feather of truth before Osiris.",
         "position": "center 35%"
       },
       "enquiry": "Why did Ancient Egyptians make mummies for the afterlife?",
@@ -3667,7 +3670,8 @@ window.UNIT_DATA = {
           ]
         ],
         "spokenTakeaway": "Here is the big story in one sentence. <short pause> Believing the ka and ba spirits needed a lasting body, priests dried mummies in natron salt for 70 days so kind hearts could pass Ma'at's feather into the Field of Reeds."
-      }
+      },
+      "banner_caption": "Scene from the ancient Egyptian Book of the Dead of Hunefer (c. 1275 BC), showing jackal-headed Anubis weighing Hunefer’s heart against the feather of truth before Osiris."
     },
     {
       "id": "lesson_5",
@@ -4491,7 +4495,7 @@ window.UNIT_DATA = {
       "banner_image": "/units/ks2_ancient_egypt/assets/abu_simbel_ramesses_temples.jpg",
       "banner": {
         "image": "/units/ks2_ancient_egypt/assets/abu_simbel_ramesses_temples.jpg",
-        "caption": "Thebes & Karnak, Hatshepsut's Voyage to Punt, Nefertiti at Amarna, Kadesh Peace Treaty & Abu Simbel",
+        "caption": "Four giant 20-metre sandstone statues of Pharaoh Ramesses II carved straight into the desert cliff face outside the Great Temple at Abu Simbel (c. 1264 BC).",
         "position": "center 35%"
       },
       "enquiry": "What made Hatshepsut, Nefertiti, and Ramesses II such famous rulers?",
@@ -4576,7 +4580,8 @@ window.UNIT_DATA = {
           ]
         ],
         "spokenTakeaway": "Here is the big story in one sentence. <short pause> New Kingdom rulers made Egypt famous through Hatshepsut's trading voyage to Punt, Nefertiti and Akhenaten's sun-disc city at Amarna, and Ramesses II's Kadesh peace treaty and Abu Simbel temples."
-      }
+      },
+      "banner_caption": "Four giant 20-metre sandstone statues of Pharaoh Ramesses II carved straight into the desert cliff face outside the Great Temple at Abu Simbel (c. 1264 BC)."
     },
     {
       "id": "lesson_6",
@@ -5484,7 +5489,8 @@ window.UNIT_DATA = {
           ]
         ],
         "spokenTakeaway": "Here is the big story in one sentence. <short pause> Limestone rubble hid boy-king Tutankhamun's 5,000 tomb treasures until 1922, while Roman armies defeated multi-lingual Queen Cleopatra VII in 30 BC to end pharaonic rule."
-      }
+      },
+      "banner_caption": "Sun-baked limestone cliffs of the Valley of the Kings on the West Bank at Thebes (Luxor), royal burial valley of Tutankhamun."
     }
   ],
   "key_individuals": [

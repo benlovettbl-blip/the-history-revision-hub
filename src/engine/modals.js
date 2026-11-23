@@ -2246,23 +2246,48 @@ window.openModal = function (src, options = {}) {
   zoomControls.appendChild(resetBtn);
   modal.appendChild(zoomControls);
 
-  // Bottom Helper Hint
-  const hint = document.createElement('div');
-  hint.innerText = 'Pinch, scroll, or use buttons to zoom · Drag to pan · Double-tap to expand';
-  hint.style.position = 'absolute';
-  hint.style.bottom = '20px';
-  hint.style.left = '50%';
-  hint.style.transform = 'translateX(-50%)';
-  hint.style.color = 'rgba(255,255,255,0.85)';
-  hint.style.background = 'rgba(0,0,0,0.6)';
-  hint.style.border = '1px solid rgba(255,255,255,0.15)';
-  hint.style.padding = '6px 16px';
-  hint.style.borderRadius = '20px';
-  hint.style.fontSize = '0.82rem';
-  hint.style.letterSpacing = '0.03em';
-  hint.style.pointerEvents = 'none';
-  hint.style.zIndex = '1000001';
-  modal.appendChild(hint);
+  const captionText =
+    typeof options === 'object' && options !== null && options.caption
+      ? String(options.caption).trim()
+      : '';
+
+  // Bottom Museum Caption Plaque (when caption provided) or Helper Hint
+  let captionPlaque = null;
+  if (captionText) {
+    captionPlaque = document.createElement('div');
+    captionPlaque.id = 'global-image-modal-caption';
+    captionPlaque.style.cssText =
+      'position: absolute; bottom: 16px; left: 50%; transform: translateX(-50%); width: max-content; max-width: min(860px, 90vw); background: rgba(15, 23, 42, 0.94); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 1px solid rgba(148, 163, 184, 0.35); border-left: 3.5px solid #fbbf24; border-radius: 10px; padding: 10px 18px; color: #f1f5f9; font-family: "Inter", sans-serif; font-size: 0.86rem; line-height: 1.5; box-shadow: 0 12px 30px rgba(0, 0, 0, 0.65); z-index: 1000002; pointer-events: auto; text-align: left;';
+    const capMain = document.createElement('div');
+    capMain.style.fontWeight = '500';
+    capMain.textContent = captionText;
+    const capSub = document.createElement('div');
+    capSub.style.cssText =
+      'margin-top: 4px; font-size: 0.72rem; color: #94a3b8; letter-spacing: 0.02em;';
+    capSub.textContent =
+      'Scroll, pinch, or click image to zoom · Drag to pan · Press Esc to close';
+    captionPlaque.appendChild(capMain);
+    captionPlaque.appendChild(capSub);
+    captionPlaque.onclick = (e) => e.stopPropagation();
+    modal.appendChild(captionPlaque);
+  } else {
+    const hint = document.createElement('div');
+    hint.innerText = 'Pinch, scroll, or use buttons to zoom · Drag to pan · Double-tap to expand';
+    hint.style.position = 'absolute';
+    hint.style.bottom = '20px';
+    hint.style.left = '50%';
+    hint.style.transform = 'translateX(-50%)';
+    hint.style.color = 'rgba(255,255,255,0.85)';
+    hint.style.background = 'rgba(0,0,0,0.6)';
+    hint.style.border = '1px solid rgba(255,255,255,0.15)';
+    hint.style.padding = '6px 16px';
+    hint.style.borderRadius = '20px';
+    hint.style.fontSize = '0.82rem';
+    hint.style.letterSpacing = '0.03em';
+    hint.style.pointerEvents = 'none';
+    hint.style.zIndex = '1000001';
+    modal.appendChild(hint);
+  }
 
   // Image Viewport & Transform State
   const imgContainer = document.createElement('div');
@@ -2273,11 +2298,15 @@ window.openModal = function (src, options = {}) {
   imgContainer.style.alignItems = 'center';
   imgContainer.style.overflow = 'hidden';
   imgContainer.style.position = 'relative';
+  if (captionText) {
+    imgContainer.style.paddingBottom = '56px';
+    imgContainer.style.boxSizing = 'border-box';
+  }
 
   const img = document.createElement('img');
   img.src = src;
   img.style.maxWidth = '90%';
-  img.style.maxHeight = '88%';
+  img.style.maxHeight = captionText ? '78vh' : '88%';
   img.style.objectFit = 'contain';
   img.style.borderRadius = '8px';
   img.style.boxShadow = '0 10px 30px rgba(0,0,0,0.6)';
@@ -2458,6 +2487,7 @@ window.openModal = function (src, options = {}) {
       e.target === closeBtn ||
       closeBtn.contains(e.target) ||
       zoomControls.contains(e.target) ||
+      (captionPlaque && captionPlaque.contains(e.target)) ||
       hasDragged
     ) {
       hasDragged = false;
@@ -2479,6 +2509,7 @@ window.openModal = function (src, options = {}) {
   img.onerror = () => {
     img.style.display = 'none';
     zoomControls.style.display = 'none';
+    if (captionPlaque) captionPlaque.style.display = 'none';
     const errBox = document.createElement('div');
     errBox.style.background = '#ffffff';
     errBox.style.padding = '30px';

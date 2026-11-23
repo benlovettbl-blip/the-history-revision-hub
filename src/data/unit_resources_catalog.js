@@ -631,6 +631,17 @@ export const UNIT_RESOURCES_CATALOG = {
       downloadName: 'KS3_Water_and_Sanitation_Literary_Companion_Anthology.pdf',
       printSpec: PRINT_SPEC_A3,
     },
+    schemeOfWork: {
+      title: 'Walk-In Secondary Teacher Guide & 6-Enquiry Scheme of Work',
+      label: 'Teacher Guide & SOW',
+      pages: '7 Pages',
+      desc: 'Ready-to-teach 6-enquiry KS3 scheme of work, walk-in lesson cribs, misconceptions, SEND/stretch scaffolds, and classroom answer keys.',
+      htmlUrl: '/units/water_and_sanitation/water_and_sanitation_scheme_of_work.html',
+      pdfUrl: '/pdfs/water_and_sanitation_scheme_of_work.pdf',
+      downloadName: 'KS3_Water_and_Sanitation_Teacher_Guide_and_SOW.pdf',
+      printSpec: PRINT_SPEC_A4,
+      staffOnly: true,
+    },
   },
 
   medieval_england: {
@@ -678,6 +689,17 @@ export const UNIT_RESOURCES_CATALOG = {
       pdfUrl: '/pdfs/medieval_england_literary_companion.pdf',
       downloadName: 'KS3_Medieval_England_Literary_Companion_Anthology.pdf',
       printSpec: PRINT_SPEC_A3,
+    },
+    schemeOfWork: {
+      title: 'Walk-In Secondary Teacher Guide & 5-Enquiry Scheme of Work',
+      label: 'Teacher Guide & SOW',
+      pages: '6 Pages',
+      desc: 'Ready-to-teach 5-enquiry KS3 scheme of work, walk-in lesson cribs, misconceptions, SEND/stretch scaffolds, and classroom answer keys.',
+      htmlUrl: '/units/medieval_england/medieval_england_scheme_of_work.html',
+      pdfUrl: '/pdfs/medieval_england_scheme_of_work.pdf',
+      downloadName: 'KS3_Medieval_England_Teacher_Guide_and_SOW.pdf',
+      printSpec: PRINT_SPEC_A4,
+      staffOnly: true,
     },
   },
 
@@ -727,6 +749,17 @@ export const UNIT_RESOURCES_CATALOG = {
       downloadName: 'KS3_Crown_Church_Parliament_Literary_Companion_Anthology.pdf',
       printSpec: PRINT_SPEC_A3,
     },
+    schemeOfWork: {
+      title: 'Walk-In Secondary Teacher Guide & 5-Enquiry Scheme of Work',
+      label: 'Teacher Guide & SOW',
+      pages: '6 Pages',
+      desc: 'Ready-to-teach 5-enquiry KS3 scheme of work, walk-in lesson cribs, misconceptions, SEND/stretch scaffolds, and classroom answer keys.',
+      htmlUrl: '/units/monarchy_religion_power/monarchy_religion_power_scheme_of_work.html',
+      pdfUrl: '/pdfs/monarchy_religion_power_scheme_of_work.pdf',
+      downloadName: 'KS3_Crown_Church_Parliament_Teacher_Guide_and_SOW.pdf',
+      printSpec: PRINT_SPEC_A4,
+      staffOnly: true,
+    },
   },
 
   first_british_empire: {
@@ -774,6 +807,17 @@ export const UNIT_RESOURCES_CATALOG = {
       pdfUrl: '/pdfs/first_british_empire_literary_companion.pdf',
       downloadName: 'KS3_First_British_Empire_Literary_Companion_Anthology.pdf',
       printSpec: PRINT_SPEC_A3,
+    },
+    schemeOfWork: {
+      title: 'Walk-In Secondary Teacher Guide & 5-Enquiry Scheme of Work',
+      label: 'Teacher Guide & SOW',
+      pages: '6 Pages',
+      desc: 'Ready-to-teach 5-enquiry KS3 scheme of work, pastoral terminology notes, walk-in lesson cribs, misconceptions, and classroom answer keys.',
+      htmlUrl: '/units/first_british_empire/first_british_empire_scheme_of_work.html',
+      pdfUrl: '/pdfs/first_british_empire_scheme_of_work.pdf',
+      downloadName: 'KS3_First_British_Empire_Teacher_Guide_and_SOW.pdf',
+      printSpec: PRINT_SPEC_A4,
+      staffOnly: true,
     },
   },
 
@@ -823,6 +867,17 @@ export const UNIT_RESOURCES_CATALOG = {
       downloadName: 'KS3_Industrialisation_Literary_Companion_Anthology.pdf',
       printSpec: PRINT_SPEC_A3,
     },
+    schemeOfWork: {
+      title: 'Walk-In Secondary Teacher Guide & 5-Enquiry Scheme of Work',
+      label: 'Teacher Guide & SOW',
+      pages: '6 Pages',
+      desc: 'Ready-to-teach 5-enquiry KS3 scheme of work, walk-in lesson cribs, misconceptions, SEND/stretch scaffolds, and classroom answer keys.',
+      htmlUrl: '/units/industrialisation_and_empire/industrialisation_and_empire_scheme_of_work.html',
+      pdfUrl: '/pdfs/industrialisation_and_empire_scheme_of_work.pdf',
+      downloadName: 'KS3_Industrialisation_Teacher_Guide_and_SOW.pdf',
+      printSpec: PRINT_SPEC_A4,
+      staffOnly: true,
+    },
   },
 
   second_british_empire: {
@@ -870,6 +925,17 @@ export const UNIT_RESOURCES_CATALOG = {
       pdfUrl: '/pdfs/second_british_empire_literary_companion.pdf',
       downloadName: 'KS3_Second_British_Empire_Literary_Companion_Anthology.pdf',
       printSpec: PRINT_SPEC_A3,
+    },
+    schemeOfWork: {
+      title: 'Walk-In Secondary Teacher Guide & 5-Enquiry Scheme of Work',
+      label: 'Teacher Guide & SOW',
+      pages: '6 Pages',
+      desc: 'Ready-to-teach 5-enquiry KS3 scheme of work, walk-in lesson cribs, misconceptions, SEND/stretch scaffolds, and classroom answer keys.',
+      htmlUrl: '/units/second_british_empire/second_british_empire_scheme_of_work.html',
+      pdfUrl: '/pdfs/second_british_empire_scheme_of_work.pdf',
+      downloadName: 'KS3_Second_British_Empire_Teacher_Guide_and_SOW.pdf',
+      printSpec: PRINT_SPEC_A4,
+      staffOnly: true,
     },
   },
 
@@ -919,6 +985,17 @@ export const UNIT_RESOURCES_CATALOG = {
       downloadName: 'KS3_Australia_Literary_Companion_Anthology.pdf',
       printSpec: PRINT_SPEC_A3,
     },
+    schemeOfWork: {
+      title: 'Walk-In Secondary Teacher Guide & 5-Enquiry Scheme of Work',
+      label: 'Teacher Guide & SOW',
+      pages: '6 Pages',
+      desc: 'Ready-to-teach 5-enquiry KS3 scheme of work, First Nations terminology guidance, walk-in lesson cribs, misconceptions, and answer keys.',
+      htmlUrl: '/units/australia/australia_scheme_of_work.html',
+      pdfUrl: '/pdfs/australia_scheme_of_work.pdf',
+      downloadName: 'KS3_Australia_Teacher_Guide_and_SOW.pdf',
+      printSpec: PRINT_SPEC_A4,
+      staffOnly: true,
+    },
   },
 
   great_war: {
@@ -966,6 +1043,17 @@ export const UNIT_RESOURCES_CATALOG = {
       pdfUrl: '/pdfs/great_war_literary_companion.pdf',
       downloadName: 'KS3_Causes_of_Great_War_Literary_Companion_Anthology.pdf',
       printSpec: PRINT_SPEC_A3,
+    },
+    schemeOfWork: {
+      title: 'Walk-In Secondary Teacher Guide & 6-Enquiry Scheme of Work',
+      label: 'Teacher Guide & SOW',
+      pages: '7 Pages',
+      desc: 'Ready-to-teach 6-enquiry KS3 scheme of work, walk-in lesson cribs, misconceptions, SEND/stretch scaffolds, and classroom answer keys.',
+      htmlUrl: '/units/great_war/great_war_scheme_of_work.html',
+      pdfUrl: '/pdfs/great_war_scheme_of_work.pdf',
+      downloadName: 'KS3_Causes_of_Great_War_Teacher_Guide_and_SOW.pdf',
+      printSpec: PRINT_SPEC_A4,
+      staffOnly: true,
     },
   },
 
@@ -1035,6 +1123,17 @@ export const UNIT_RESOURCES_CATALOG = {
       downloadName: 'KS3_Course_of_Great_War_Literary_Companion_Anthology.pdf',
       printSpec: PRINT_SPEC_A3,
     },
+    schemeOfWork: {
+      title: 'Walk-In Secondary Teacher Guide & 5-Enquiry Scheme of Work',
+      label: 'Teacher Guide & SOW',
+      pages: '6 Pages',
+      desc: 'Ready-to-teach 5-enquiry KS3 scheme of work, walk-in lesson cribs, misconceptions, SEND/stretch scaffolds, and classroom answer keys.',
+      htmlUrl: '/units/great_war_part2/great_war_part2_scheme_of_work.html',
+      pdfUrl: '/pdfs/great_war_part2_scheme_of_work.pdf',
+      downloadName: 'KS3_Course_of_Great_War_Teacher_Guide_and_SOW.pdf',
+      printSpec: PRINT_SPEC_A4,
+      staffOnly: true,
+    },
   },
 
   the_shoah: {
@@ -1082,6 +1181,17 @@ export const UNIT_RESOURCES_CATALOG = {
       pdfUrl: '/pdfs/the_shoah_literary_companion.pdf',
       downloadName: 'KS3_The_Shoah_Literary_Companion_Anthology.pdf',
       printSpec: PRINT_SPEC_A3,
+    },
+    schemeOfWork: {
+      title: 'Walk-In Secondary Teacher Guide & 7-Enquiry Scheme of Work',
+      label: 'Teacher Guide & SOW',
+      pages: '8 Pages',
+      desc: 'Ready-to-teach 7-enquiry statutory Holocaust depth study guide, safeguarding framing, walk-in cribs, misconceptions, and answer keys.',
+      htmlUrl: '/units/the_shoah/the_shoah_scheme_of_work.html',
+      pdfUrl: '/pdfs/the_shoah_scheme_of_work.pdf',
+      downloadName: 'KS3_The_Shoah_Teacher_Guide_and_SOW.pdf',
+      printSpec: PRINT_SPEC_A4,
+      staffOnly: true,
     },
   },
 
@@ -1131,6 +1241,17 @@ export const UNIT_RESOURCES_CATALOG = {
       downloadName: 'KS3_Post_War_Britain_Literary_Companion_Anthology.pdf',
       printSpec: PRINT_SPEC_A3,
     },
+    schemeOfWork: {
+      title: 'Walk-In Secondary Teacher Guide & 5-Enquiry Scheme of Work',
+      label: 'Teacher Guide & SOW',
+      pages: '6 Pages',
+      desc: 'Ready-to-teach 5-enquiry KS3 scheme of work, walk-in lesson cribs, misconceptions, SEND/stretch scaffolds, and classroom answer keys.',
+      htmlUrl: '/units/post_war_britain/post_war_britain_scheme_of_work.html',
+      pdfUrl: '/pdfs/post_war_britain_scheme_of_work.pdf',
+      downloadName: 'KS3_Post_War_Britain_Teacher_Guide_and_SOW.pdf',
+      printSpec: PRINT_SPEC_A4,
+      staffOnly: true,
+    },
   },
 
   cold_war: {
@@ -1178,6 +1299,17 @@ export const UNIT_RESOURCES_CATALOG = {
       pdfUrl: '/pdfs/cold_war_literary_companion.pdf',
       downloadName: 'KS3_Cold_War_Literary_Companion_Anthology.pdf',
       printSpec: PRINT_SPEC_A3,
+    },
+    schemeOfWork: {
+      title: 'Walk-In Secondary Teacher Guide & 7-Enquiry Scheme of Work',
+      label: 'Teacher Guide & SOW',
+      pages: '8 Pages',
+      desc: 'Ready-to-teach 7-enquiry KS3 Cold War scheme of work, walk-in lesson cribs, misconceptions, SEND/stretch scaffolds, and classroom answer keys.',
+      htmlUrl: '/units/cold_war/cold_war_scheme_of_work.html',
+      pdfUrl: '/pdfs/cold_war_scheme_of_work.pdf',
+      downloadName: 'KS3_Cold_War_Teacher_Guide_and_SOW.pdf',
+      printSpec: PRINT_SPEC_A4,
+      staffOnly: true,
     },
     courseInfographics: [
       {
@@ -1289,6 +1421,17 @@ export const UNIT_RESOURCES_CATALOG = {
       pdfUrl: '/pdfs/edexcel_medicine_mastery_pack_FULL.pdf',
       downloadName: 'GCSE_Medicine_Paper1_Mastery_Exam_Pack.pdf',
     },
+    schemeOfWork: {
+      title: 'Walk-In GCSE Teacher Guide & 26-Lesson Scheme of Work',
+      label: 'Teacher Guide & SOW',
+      pages: '28 Pages',
+      desc: 'Complete 28-page Paper 1 (1HI0/11) staff planning pack across all 26 Thematic & Western Front lessons with cribs, misconceptions, and exam keys.',
+      htmlUrl: '/units/edexcel_medicine/edexcel_medicine_scheme_of_work.html',
+      pdfUrl: '/pdfs/edexcel_medicine_scheme_of_work.pdf',
+      downloadName: 'GCSE_Medicine_Teacher_Guide_and_SOW.pdf',
+      printSpec: PRINT_SPEC_A4,
+      staffOnly: true,
+    },
     courseInfographics: [
       {
         slug: 'med_l01_visual_story_sheet',
@@ -1382,6 +1525,17 @@ export const UNIT_RESOURCES_CATALOG = {
         { id: 'KT2', label: 'KT2 Mastery Exam Pack', pages: '19 Pages', htmlUrl: '/units/eee/mastery_pack_KT2.html', pdfUrl: '/pdfs/eee_mastery_pack_KT2.pdf', downloadName: 'GCSE_Elizabethan_England_KT2_Mastery_Exam_Pack.pdf' },
         { id: 'KT3', label: 'KT3 Mastery Exam Pack', pages: '19 Pages', htmlUrl: '/units/eee/mastery_pack_KT3.html', pdfUrl: '/pdfs/eee_mastery_pack_KT3.pdf', downloadName: 'GCSE_Elizabethan_England_KT3_Mastery_Exam_Pack.pdf' },
       ],
+    },
+    schemeOfWork: {
+      title: 'Walk-In GCSE Teacher Guide & 12-Lesson Scheme of Work',
+      label: 'Teacher Guide & SOW',
+      pages: '13 Pages',
+      desc: 'Complete Paper 2 Option B4 (1HI0/B4) staff scheme of work across KT1–KT3 with 1-page walk-in cribs, misconceptions, and exam keys.',
+      htmlUrl: '/units/eee/eee_scheme_of_work.html',
+      pdfUrl: '/pdfs/eee_scheme_of_work.pdf',
+      downloadName: 'GCSE_Elizabethan_England_Teacher_Guide_and_SOW.pdf',
+      printSpec: PRINT_SPEC_A4,
+      staffOnly: true,
     },
     courseInfographics: [
       {
@@ -1477,6 +1631,17 @@ export const UNIT_RESOURCES_CATALOG = {
         { id: 'MOCK_C', label: 'Predicted Mock Paper C (32m)', pages: '32 Marks', htmlUrl: '/units/cold_war/cold_war_mock_c.html', pdfUrl: '/pdfs/mocks/cold_war/cold_war_mock_c.pdf', downloadName: 'GCSE_Cold_War_Mock_Paper_C.pdf' },
         { id: 'RADAR', label: 'Radar Gap-Focus Mock Paper (32m)', pages: '32 Marks', htmlUrl: '/units/cold_war/cold_war_mock_radar.html', pdfUrl: '/pdfs/mocks/cold_war/cold_war_mock_radar.pdf', downloadName: 'GCSE_Cold_War_Radar_Mock_Paper.pdf' },
       ],
+    },
+    schemeOfWork: {
+      title: 'Walk-In GCSE Teacher Guide & 12-Lesson Scheme of Work',
+      label: 'Teacher Guide & SOW',
+      pages: '13 Pages',
+      desc: 'Complete Paper 2 Option P4 (1HI0/P4) staff scheme of work across KT1–KT3 with 1-page walk-in cribs, misconceptions, and exam keys.',
+      htmlUrl: '/units/gcse_cold_war/gcse_cold_war_scheme_of_work.html',
+      pdfUrl: '/pdfs/gcse_cold_war_scheme_of_work.pdf',
+      downloadName: 'GCSE_Cold_War_Teacher_Guide_and_SOW.pdf',
+      printSpec: PRINT_SPEC_A4,
+      staffOnly: true,
     },
     courseInfographics: [
       {
@@ -1582,6 +1747,17 @@ export const UNIT_RESOURCES_CATALOG = {
         { id: 'KT3', label: 'KT3 Mastery Exam Pack (12p)', pages: '12 Pages', htmlUrl: '/units/cme_new/mastery_pack_KT3.html', pdfUrl: '/pdfs/cme_new_mastery_pack_KT3.pdf', downloadName: 'GCSE_Middle_East_KT3_Mastery_Exam_Pack.pdf' },
       ],
     },
+    schemeOfWork: {
+      title: 'Walk-In GCSE Teacher Guide & 12-Lesson Scheme of Work',
+      label: 'Teacher Guide & SOW',
+      pages: '13 Pages',
+      desc: 'Complete Paper 2 Option P5 (1HI0/P5) staff scheme of work across KT1–KT3 with statutory impartiality notes, walk-in cribs, and exam keys.',
+      htmlUrl: '/units/cme_new/cme_new_scheme_of_work.html',
+      pdfUrl: '/pdfs/cme_new_scheme_of_work.pdf',
+      downloadName: 'GCSE_Middle_East_Teacher_Guide_and_SOW.pdf',
+      printSpec: PRINT_SPEC_A4,
+      staffOnly: true,
+    },
     courseInfographics: [
       {
         slug: 'cme_kt1_1_visual_story_sheet',
@@ -1677,6 +1853,17 @@ export const UNIT_RESOURCES_CATALOG = {
         { id: 'KT3', label: 'KT3 Mastery Exam Pack', pages: '19 Pages', htmlUrl: '/units/weimar_nazi_germany/mastery_pack_KT3.html', pdfUrl: '/pdfs/weimar_nazi_germany_mastery_pack_KT3.pdf', downloadName: 'GCSE_Weimar_Germany_KT3_Mastery_Exam_Pack.pdf' },
         { id: 'KT4', label: 'KT4 Mastery Exam Pack', pages: '21 Pages', htmlUrl: '/units/weimar_nazi_germany/mastery_pack_KT4.html', pdfUrl: '/pdfs/weimar_nazi_germany_mastery_pack_KT4.pdf', downloadName: 'GCSE_Weimar_Germany_KT4_Mastery_Exam_Pack.pdf' },
       ],
+    },
+    schemeOfWork: {
+      title: 'Walk-In GCSE Teacher Guide & 16-Lesson Scheme of Work',
+      label: 'Teacher Guide & SOW',
+      pages: '17 Pages',
+      desc: 'Complete Paper 3 Option 31 (1HI0/31) staff scheme of work across KT1–KT4 (1918–39) with walk-in lesson cribs, misconceptions, and exam keys.',
+      htmlUrl: '/units/weimar_nazi_germany/weimar_nazi_germany_scheme_of_work.html',
+      pdfUrl: '/pdfs/weimar_nazi_germany_scheme_of_work.pdf',
+      downloadName: 'GCSE_Weimar_Germany_Teacher_Guide_and_SOW.pdf',
+      printSpec: PRINT_SPEC_A4,
+      staffOnly: true,
     },
     courseInfographics: [
       {
@@ -1774,6 +1961,17 @@ export const UNIT_RESOURCES_CATALOG = {
         { id: 'KT4', label: 'KT4 Mastery Exam Pack (15p)', pages: '15 Pages', htmlUrl: '/units/usa/mastery_pack_KT4.html', pdfUrl: '/pdfs/usa_mastery_pack_KT4.pdf', downloadName: 'GCSE_USA_1954_75_KT4_Mastery_Exam_Pack.pdf' },
       ],
     },
+    schemeOfWork: {
+      title: 'Walk-In GCSE Teacher Guide & 16-Lesson Scheme of Work',
+      label: 'Teacher Guide & SOW',
+      pages: '17 Pages',
+      desc: 'Complete Paper 3 Option 33 (1HI0/33) staff scheme of work across KT1–KT4 (Civil Rights & Vietnam) with walk-in cribs, misconceptions, and exam keys.',
+      htmlUrl: '/units/usa/usa_scheme_of_work.html',
+      pdfUrl: '/pdfs/usa_scheme_of_work.pdf',
+      downloadName: 'GCSE_USA_1954_75_Teacher_Guide_and_SOW.pdf',
+      printSpec: PRINT_SPEC_A4,
+      staffOnly: true,
+    },
     courseInfographics: [
       {
         slug: 'usa_l02_visual_story_sheet',
@@ -1857,6 +2055,9 @@ export function resolveCanonicalPdfUrl(url, explicitPdfUrl = null) {
     }
     if (file === 'literary_companion') {
       return `/pdfs/${u}_literary_companion.pdf`;
+    }
+    if (file === `${u}_scheme_of_work` || file === 'scheme_of_work' || file.endsWith('_scheme_of_work')) {
+      return `/pdfs/${u}_scheme_of_work.pdf`;
     }
     if (file.includes('retrieval') || file.includes('companion') || file === 'quiz_pack') {
       return `/pdfs/${u}_retrieval_companion.pdf`;

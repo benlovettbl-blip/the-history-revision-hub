@@ -922,7 +922,27 @@ export default {
               }
             ]
           }
-        }
+        },
+        "curriculum_link": "Key Topic 1.1: The position of Black Americans in the early 1950s (segregation, Jim Crow laws, Southern disenfranchisement, NAACP litigation, CORE, Double V, and Executive Order 9981) — Edexcel Paper 3 Demand: Q1 Source Inference (4m), Q2 Causation 'Explain why' (12m), and Q3(a) Source Utility (8m).",
+        "hinge_question": "If the 14th and 15th Amendments already guaranteed equal citizenship and voting rights on paper, why were Black Southerners unable to vote out Jim Crow laws in the early 1950s?",
+        "hinge_guidance": "Strong GCSE answers connect three interlocking barriers: arbitrary voter registration traps (poll taxes and impossible state constitutional literacy tests like those described by Amzie Moore in Source C), economic retaliation (evictions, sackings, and loan refusals), and unpunished vigilante and police terror. Catch the common exam slip of claiming Black Americans had no constitutional right to vote before 1965—the 15th Amendment existed, but Southern registrars systematically blocked its enforcement.",
+        "misconceptions": [
+          {
+            "misconception": "Racial segregation in the early 1950s was an informal social custom across all fifty US states.",
+            "correction": "In seventeen Southern states and Washington D.C., segregation was compulsory state law (de jure segregation) anchored in the 1896 Plessy v. Ferguson 'separate but equal' ruling, whereas Northern cities had de facto segregation without formal Jim Crow statutes (Sources A and E)."
+          },
+          {
+            "misconception": "Black Americans could not legally vote anywhere in the USA until the 1965 Voting Rights Act gave them the franchise.",
+            "correction": "The 15th Amendment already guaranteed the right to vote regardless of race, so Southern registrars used poll taxes, rigged literacy tests, grandfather clauses for poor whites, and intimidation to keep Mississippi Black registration below 5% (Source C)."
+          },
+          {
+            "misconception": "President Truman's Executive Order 9981 (July 1948) ended racial segregation across civilian life in the South.",
+            "correction": "Executive Order 9981 desegregated only the United States Armed Forces following the wartime Double V Campaign, leaving state-level civilian Jim Crow laws untouched across Southern schools, buses, and waiting rooms."
+          }
+        ],
+        "send_adaptation": "Start with the Visual Story Sheet ('What Was the Position of Black Americans in the Early 1950s?') and Studio Audio read-aloud to pre-teach de jure segregation and disenfranchisement before tackling text blocks. Use the Block 5 Concept Diagram ('Challenging Jim Crow: Legal Litigation, Economic Boycotts, Direct Action') alongside the Workbook Verso 5-Stage Chronological Spine so learners can separate Thurgood Marshall's NAACP courtroom lawsuits from CORE's 1947 Journey of Reconciliation.",
+        "stretch_challenge": "Push Grade 8–9 pupils to evaluate why NAACP higher-education victories like Sweatt v. Painter and McLaurin v. Oklahoma (1950) chipped away at 'separate but equal' in law yet required grassroots mass mobilisation alongside federal litigation to challenge everyday Southern Jim Crow.",
+        "safeguarding_impartiality": "Frame historical terminology in primary sources (such as 'colored' on transit signs in Source B and Mississippi statutes in Source A) strictly within its 1950s legal context, and prepare pupils sensitively before discussing vigilante intimidation and lynching."
       },
       "learning_objectives": {
         "overarching": "What was the position of Black Americans in the early 1950s?",
@@ -2621,7 +2641,8 @@ export default {
           ]
         ]
       },
-      "banner_image": "/images/upgraded/gcse-p3/usa_l01_banner_jim_crow_cinema_belzoni_ms.jpg"
+      "banner_image": "/images/upgraded/gcse-p3/usa_l01_banner_jim_crow_cinema_belzoni_ms.jpg",
+      "banner_caption": "An African American man ascending the segregated exterior staircase marked \"COLORED ADM. 10¢\" above a ground-floor \"WHITE MEN ONLY\" entrance at the Crescent Theatre in Belzoni, Mississippi (Marion Post Wolcott, October 1939, Library of Congress FSA Collection)."
     },
     {
       "id": "lesson_1_2",
@@ -2717,7 +2738,27 @@ export default {
               }
             ]
           }
-        }
+        },
+        "curriculum_link": "Key Topic 1.2: Progress in education, 1954–59 (Brown v. Board of Education, Brown II, Massive Resistance, Southern Manifesto, Little Rock Central High 1957, Lost Year, and Cooper v. Aaron) — Edexcel Paper 3 Demand: Q1 Source Inference (4m), Q2 Causation 'Explain why' (12m), and Q3(a) Source Utility (8m).",
+        "hinge_question": "Why did a reluctant President Eisenhower send 1,000 paratroopers of the 101st Airborne Division into Little Rock in September 1957 when he had avoided enforcing school integration since 1954?",
+        "hinge_guidance": "Look for pupils recognising that Governor Orval Faubus crossed a constitutional red line by deploying the Arkansas National Guard to block a federal court order, turning school integration into a direct test of federal executive authority alongside acute Cold War propaganda embarrassment on world television. Correct pupils who assume Eisenhower sent troops out of personal enthusiasm for rapid civil rights reform.",
+        "misconceptions": [
+          {
+            "misconception": "The May 1954 Brown v. Board of Education ruling immediately integrated schools across the Deep South.",
+            "correction": "Brown I overturned Plessy in public education, but the 1955 Brown II phrase 'with all deliberate speed' omitted a compliance deadline, allowing Massive Resistance and the 1956 Southern Manifesto to keep integrated Black pupils in the former Confederacy below 2% by 1957."
+          },
+          {
+            "misconception": "Governor Orval Faubus deployed the Arkansas National Guard at Central High to protect the Little Rock Nine from white mobs.",
+            "correction": "Although Faubus claimed in his televised broadcast (Source C) that he was preserving public order, he ordered guardsmen to bar Elizabeth Eckford and the Black students from entering while white mobs screamed threats outside (Source D)."
+          },
+          {
+            "misconception": "Sending the 101st Airborne in September 1957 permanently settled school integration in Little Rock.",
+            "correction": "In September 1958 Faubus shut all four Little Rock public high schools for 'The Lost Year', forcing the NAACP to win Cooper v. Aaron (1958) before integrated public schools reopened in 1959."
+          }
+        ],
+        "send_adaptation": "Play the Studio Audio read-aloud alongside the Visual Story Sheet ('How Did Battles over Education Challenge Segregation Between 1954 and 1959?') before reading Source D's photograph of Elizabeth Eckford. Anchor sequencing on the Block 5 Concept Diagram ('School Desegregation Crisis 1954–59: From Brown I to Cooper v. Aaron') and the Workbook Verso 5-Stage Chronological Spine so learners do not muddle Brown I (1954), Little Rock (1957), and The Lost Year (1958).",
+        "stretch_challenge": "Ask high-attaining pupils to judge whether Brown v. Board (1954) was more significant as a legal triumph that shattered Plessy v. Ferguson or as a political catalyst that provoked Southern Massive Resistance and forced federal intervention at Little Rock.",
+        "safeguarding_impartiality": "Pre-warn pupils before examining Source D and eyewitness accounts of the Little Rock mob's verbal racial abuse and lynch threats directed at fifteen-year-old Elizabeth Eckford, keeping classroom analysis focused on constitutional defiance and disciplined student courage."
       },
       "learning_objectives": {
         "overarching": "How did developments in education challenge segregation (1954–57)?",
@@ -4361,7 +4402,8 @@ export default {
           ]
         ]
       },
-      "banner_image": "/images/usa/kt1/usa_l02_banner_central_high_little_rock_loc.jpg"
+      "banner_image": "/images/usa/kt1/usa_l02_banner_central_high_little_rock_loc.jpg",
+      "banner_caption": "Little Rock Central High School in Little Rock, Arkansas — the national flashpoint of the September 1957 school desegregation crisis between Governor Orval Faubus and President Dwight D. Eisenhower (Carol M. Highsmith Archive, Library of Congress)."
     },
     {
       "id": "lesson_1_3",
@@ -4457,7 +4499,27 @@ export default {
               }
             ]
           }
-        }
+        },
+        "curriculum_link": "Key Topic 1.3: The Montgomery Bus Boycott and its impact, 1955–57 (Rosa Parks, WPC, MIA, Martin Luther King Jr., carpool logistics, Browder v. Gayle, and founding of the SCLC) — Edexcel Paper 3 Demand: Full Paper 3 suite including Q3(a) Source Utility (8m) and Q3(b)–(d) Interpretations (4m + 4m + 16m + 4 SPaG).",
+        "hinge_question": "Did the 381-day Montgomery Bus Boycott defeat segregated buses through grassroots economic pressure on the transit company, or through the NAACP's federal lawsuit in Browder v. Gayle?",
+        "hinge_guidance": "Strong GCSE answers explain how both mechanisms worked together and recognise this exact debate in Paper 3 Section B Interpretations: 381 days of WPC leafleting, MIA carpools, and lost bus revenue (65% drop) sustained mass unity, yet city officials still refused to yield until the US Supreme Court outlawed bus segregation in Browder v. Gayle (November 1956). Catch the exam pitfall in Q3(b)–(d) where pupils treat historians' Interpretations 1 and 2 like primary sources by testing the historian's 'reliability' instead of comparing their substantive arguments.",
+        "misconceptions": [
+          {
+            "misconception": "Rosa Parks was an unpolitical seamstress who spontaneously refused to stand simply because her feet were tired.",
+            "correction": "Rosa Parks was the seasoned local NAACP secretary, and Jo Ann Robinson's Women's Political Council (WPC) had already prepared boycott plans—printing 35,000 leaflets overnight after her 1 December 1955 arrest (Sources A and B)."
+          },
+          {
+            "misconception": "Financial losses alone forced Montgomery's white city council to surrender and desegregate the buses.",
+            "correction": "Despite losing roughly 65% of bus passenger revenue and downtown Black trade, city officials indicted boycott leaders and held out until the Supreme Court struck down municipal bus segregation in Browder v. Gayle on 13 November 1956 (Source E)."
+          },
+          {
+            "misconception": "GCSE Exam Tip: Evaluating Interpretations 1 and 2 in Q3(d) by commenting on when the historian wrote or accusing them of bias.",
+            "correction": "Edexcel Paper 3 Demand for Q3(d) (16m + 4 SPaG) rewards testing the convincingness of both historians' claims—such as Martin Luther King Jr.'s inspirational leadership versus grassroots WPC/MIA carpool organisation and NAACP litigation—against precise contextual own knowledge."
+          }
+        ],
+        "send_adaptation": "Pair the Visual Story Sheet ('How Did the Montgomery Bus Boycott Defeat Segregation Between 1955 and 1956?') with Studio Audio read-aloud to clarify key groups (WPC, MIA, NAACP, SCLC). Use the Block 5 Concept Diagram ('Why the 381-Day Montgomery Bus Boycott Succeeded') and the Workbook Verso 5-Stage Chronological Spine to colour-code grassroots organisation (300-car pool, Black churches) versus courtroom victory (Browder v. Gayle).",
+        "stretch_challenge": "Challenge Grade 8–9 pupils to evaluate competing historiographical interpretations of Montgomery: how far was victory driven from the pulpit by Martin Luther King Jr.'s charismatic oratory versus from below by Jo Ann Robinson's WPC, Black domestic workers walking daily, and Thurgood Marshall's legal team?",
+        "safeguarding_impartiality": "Remind pupils when covering Block 5 that peaceful court-ordered bus integration on 21 December 1956 was met with white supremacist sniper fire and church and home bombings, framing non-violent discipline as a demanding strategic choice rather than passivity."
       },
       "learning_objectives": {
         "overarching": "How did the Montgomery Bus Boycott happen, and why did it succeed?",
@@ -6645,7 +6707,8 @@ export default {
           ]
         ]
       },
-      "banner_image": "/images/upgraded/gcse-p3/usa_l03_banner_dexter_ave_baptist_montgomery.jpg"
+      "banner_image": "/images/upgraded/gcse-p3/usa_l03_banner_dexter_ave_baptist_montgomery.jpg",
+      "banner_caption": "Sanctuary and wooden pulpit of the historic Dexter Avenue Baptist Church in Montgomery, Alabama, where Dr Martin Luther King Jr. served as pastor while leading the 1955–1956 Montgomery Bus Boycott (Library of Congress)."
     },
     {
       "id": "lesson_1_4",
@@ -6741,7 +6804,27 @@ export default {
               }
             ]
           }
-        }
+        },
+        "curriculum_link": "Key Topic 1.4: Opposition to the civil rights movement, 1954–60 (White Citizens' Councils, murder of Emmett Till 1955, KKK resurgence in 'Bombingham', Dixiecrats, and the watered-down 1957 Civil Rights Act) — Edexcel Paper 3 Demand: Full Paper 3 suite including Q3(a) Source Utility (8m) and Q3(b)–(d) Interpretations (4m + 4m + 16m + 4 SPaG).",
+        "hinge_question": "Why was 'respectable' opposition from White Citizens' Councils and Southern Senators often even harder for civil rights activists to overcome than violent Ku Klux Klan terror between 1954 and 1960?",
+        "hinge_guidance": "Look for pupils contrasting covert KKK bombings with institutional white power: bankers, landlords, and employers in White Citizens' Councils evicted sharecroppers and sacked petitioners legally, all-white juries acquitted killers like Bryant and Milam in 67 minutes, and Southern Senators like Strom Thurmond gutted federal enforcement in the 1957 Civil Rights Act. Ensure pupils see how violent terror and institutional obstruction reinforced one another rather than treating them in isolation.",
+        "misconceptions": [
+          {
+            "misconception": "Southern resistance to integration came entirely from poor, uneducated Ku Klux Klan vigilantes.",
+            "correction": "Founded by Robert B. Patterson in Indianola, Mississippi in July 1954, White Citizens' Councils ('the uptown Klan') enrolled over 60,000 bankers, judges, editors, and planters who used sackings, evictions, and credit bans to crush activism."
+          },
+          {
+            "misconception": "Roy Bryant and J.W. Milam were punished once they confessed to murdering Emmett Till in Look magazine in 1956.",
+            "correction": "Because an all-white jury in Sumner, Mississippi acquitted both men in 67 minutes in September 1955 despite Moses Wright's eyewitness testimony, constitutional double jeopardy protected them from retrial when they sold their confession for $4,000."
+          },
+          {
+            "misconception": "The Civil Rights Act of 1957 transformed Southern Black voter registration because it was the first federal civil rights law since Reconstruction.",
+            "correction": "Following Strom Thurmond's 24-hour filibuster, Senate amendments required jury trials for voting-rights contempt cases, meaning all-white Southern juries refused to convict registrars and Black registration rose by under 3% by 1960 (Sources D and E)."
+          }
+        ],
+        "send_adaptation": "Use the Visual Story Sheet ('How and Why Did White Southerners Resist Integration Between 1954 and 1957?') and Studio Audio read-aloud before examining Block 4's Concept Diagram ('How the White South Resisted Integration 1954–60'). Lean on the Workbook Verso 5-Stage Chronological Spine to help learners group resistance into three clear buckets for 12-mark or 16-mark paragraphs: Economic (Citizens' Councils), Violent (KKK/Till), and Political/Legal (Southern Senators/all-white juries).",
+        "stretch_challenge": "Push Grade 8–9 learners to weigh Interpretations 1 and 2 on why progress stalled in the Deep South by 1960: was federal hesitation under Eisenhower and Senate dilution of the 1957 Act more decisive than grass-roots white intimidation by Citizens' Councils and the Klan?",
+        "safeguarding_impartiality": "Give an explicit advance warning before teaching Blocks 2–3 on the abduction, mutilation, and lynching of fourteen-year-old Emmett Till and Mamie Till-Mobley's open-casket decision; avoid graphic sensationalism and emphasise Moses Wright's courtroom courage and the national moral awakening sparked by Jet magazine."
       },
       "learning_objectives": {
         "overarching": "Why did white people in the South resist integration, and how did they do it?",
@@ -8986,7 +9069,8 @@ export default {
           ]
         ]
       },
-      "banner_image": "/images/upgraded/gcse-p3/usa_l04_banner_bryants_grocery_money_ms.jpg"
+      "banner_image": "/images/upgraded/gcse-p3/usa_l04_banner_bryants_grocery_money_ms.jpg",
+      "banner_caption": "Brick ruins of Bryant’s Grocery and Meat Market and Mississippi Freedom Trail marker in Money, Leflore County, Mississippi, visited by fourteen-year-old Emmett Till in August 1955."
     },
     {
       "id": "lesson_2_1",
@@ -9082,7 +9166,27 @@ export default {
               }
             ]
           }
-        }
+        },
+        "curriculum_link": "Key Topic 2.1: Protest, progress and radicalism, 1960–62 (Greensboro sit-ins, Ella Baker and founding of SNCC, CORE Freedom Rides, Anniston and Montgomery violence, and the 1961 ICC desegregation order) — Edexcel Paper 3 Demand: Q1 Source Inference (4m), Q2 Causation 'Explain why' (12m), and Q3(a) Source Utility (8m).",
+        "hinge_question": "If the Supreme Court had already outlawed segregated interstate bus terminals in Boynton v. Virginia (1960), why did CORE and SNCC still risk their lives on the 1961 Freedom Rides?",
+        "hinge_guidance": "Strong GCSE answers identify the enforcement gap: Southern states routinely ignored Supreme Court rulings unless direct action provoked a public crisis that forced the federal executive to intervene. By braving the Mother's Day Anniston firebombing and Montgomery mob beatings on international news, Freedom Riders compelled Attorney General Robert F. Kennedy to send 600 federal marshals and secure the September 1961 ICC desegregation order.",
+        "misconceptions": [
+          {
+            "misconception": "Martin Luther King Jr. planned and led both the 1960 Greensboro sit-ins and the 1961 Freedom Rides.",
+            "correction": "Four North Carolina A&T freshmen launched the Greensboro Woolworth sit-in on 1 February 1960, Ella Baker helped students form an independent grassroots SNCC in April 1960, and CORE organised the May 1961 Freedom Rides."
+          },
+          {
+            "misconception": "Non-violent direct action meant passively avoiding confrontation with Southern authorities.",
+            "correction": "Sit-in students and Freedom Riders deliberately created disciplined commercial disruption and entered the Deep South expecting violent backlash so televised brutality would shame the Kennedy administration into enforcing federal law (Sources A, B, and C)."
+          },
+          {
+            "misconception": "The 1961 Freedom Rides failed because white mobs firebombed the Greyhound bus at Anniston and beat riders in Montgomery.",
+            "correction": "SNCC activists continued the rides into Mississippi, and Cold War embarrassment pushed Robert F. Kennedy to compel the Interstate Commerce Commission (ICC) in September 1961 to take down Jim Crow terminal signs nationwide by November 1961 (Source E)."
+          }
+        ],
+        "send_adaptation": "Read through the Visual Story Sheet ('How Did Sit-ins and Freedom Rides Force Federal Action Between 1960 and 1962?') with Studio Audio support, then trace the cause-and-effect loop on the Block 5 Concept Diagram ('How Peaceful Direct Action Forced Federal Intervention 1960–62'). Pair this directly with the Workbook Verso 5-Stage Chronological Spine so learners see how Greensboro (1960) led to SNCC, Freedom Rides (May 1961), and the ICC Order (September 1961).",
+        "stretch_challenge": "Ask Grade 8–9 pupils to analyse Ella Baker's warning at Shaw University (April 1960): how did SNCC's model of bottom-up 'participatory democracy' strengthen the civil rights movement in 1960–62 while planting the seeds of later friction with King's SCLC?",
+        "safeguarding_impartiality": "Prepare pupils before examining Source A (abuse at lunch counters) and Sources C–D (the Anniston bus firebombing and Montgomery mob beatings), highlighting the rigorous training and collective resilience depicted in SNCC's non-violent guidelines."
       },
       "learning_objectives": {
         "overarching": "How did peaceful protests (like sit-ins and Freedom Rides) force the government to act?",
@@ -10777,7 +10881,8 @@ export default {
           ]
         ]
       },
-      "banner_image": "/images/upgraded/gcse-p3/usa_l05_banner_woolworth_greensboro_facade.jpg"
+      "banner_image": "/images/upgraded/gcse-p3/usa_l05_banner_woolworth_greensboro_facade.jpg",
+      "banner_caption": "Historic storefront of the F. W. Woolworth building in Greensboro, North Carolina—preserved today as the International Civil Rights Center & Museum—where four North Carolina A&T freshmen launched the February 1960 lunch counter sit-in movement."
     },
     {
       "id": "lesson_2_2",
@@ -10873,7 +10978,27 @@ export default {
               }
             ]
           }
-        }
+        },
+        "curriculum_link": "Key Topic 2.2: Birmingham, Washington, Selma and landmark legislation, 1963–65 (Project C, Children's Crusade, March on Washington, Civil Rights Act 1964, Bloody Sunday at Selma, and Voting Rights Act 1965) — Edexcel Paper 3 Demand: Q1 Source Inference (4m), Q2 Causation 'Explain why' (12m), and Q3(a) Source Utility (8m).",
+        "hinge_question": "Why did the USA still need the 1965 Voting Rights Act only thirteen months after President Johnson signed the sweeping 1964 Civil Rights Act?",
+        "hinge_guidance": "Strong GCSE answers distinguish exact statutory powers: the July 1964 Civil Rights Act outlawed segregation in public accommodations and created the EEOC against job discrimination, but it did not abolish Southern voter literacy tests or send federal registrars—leaving Dallas County (Selma) Black voter registration at just 2% until Bloody Sunday (7 March 1965) propelled the August 1965 Voting Rights Act. Catch the very common exam error of muddling what the 1964 and 1965 Acts actually legislated.",
+        "misconceptions": [
+          {
+            "misconception": "GCSE Exam Tip: Confusing the provisions of the 1964 Civil Rights Act with the 1965 Voting Rights Act in 12-mark causation answers.",
+            "correction": "The 2 July 1964 Civil Rights Act outlawed Jim Crow segregation in public facilities and set up the EEOC for employment, whereas the 6 August 1965 Voting Rights Act abolished literacy tests and sent federal examiners to register voters directly."
+          },
+          {
+            "misconception": "SCLC chose Birmingham in April 1963 and Selma in early 1965 at random.",
+            "correction": "King and SCLC strategically targeted Public Safety Commissioner Eugene 'Bull' Connor in Birmingham (Project C) and Dallas County authorities in Selma knowing their televised brutality—police dogs and fire hoses on children, tear gas and clubs on Edmund Pettus Bridge—would force JFK and LBJ to legislate."
+          },
+          {
+            "misconception": "Grassroots protest alone passed the 1964 and 1965 Acts without presidential and congressional maneuvering.",
+            "correction": "Alongside Birmingham, the 250,000-strong March on Washington, and Selma, President Lyndon B. Johnson used national grief after JFK's assassination and fierce Senate arm-twisting to break a 54-day Southern filibuster in 1964."
+          }
+        ],
+        "send_adaptation": "Anchor the statutory distinction immediately using the Block 3 Concept Diagram ('Dismantling De Jure Segregation: The 1964, 1965 & 1968 Acts') alongside the Visual Story Sheet and Studio Audio read-aloud. Have learners match Birmingham + March on Washington (Stages 1–2) to the 1964 Act (Stage 3), and Selma's Bloody Sunday (Stage 4) to the 1965 Voting Rights Act (Stage 5) on their Workbook Verso 5-Stage Chronological Spine.",
+        "stretch_challenge": "Challenge Grade 8–9 pupils to debate the 'top-down vs bottom-up' synthesis: could Lyndon B. Johnson's legislative skill have defeated the 54-day Senate filibuster in 1964 and delivered federal voting examiners in 1965 without King and Bevel's calculated provocation at Birmingham and Selma?",
+        "safeguarding_impartiality": "Contextualise televised state violence against schoolchildren during Birmingham's Children's Crusade and unarmed marchers on Edmund Pettus Bridge (Source D) carefully, discussing both the ethical debate King faced in risking young protesters and the transformative impact of media witness."
       },
       "learning_objectives": {
         "overarching": "How did protests in Birmingham and Selma lead to the Civil and Voting Rights Acts?",
@@ -12497,7 +12622,8 @@ export default {
           ]
         ]
       },
-      "banner_image": "/images/upgraded/gcse-p3/usa_l06_banner_edmund_pettus_bridge_selma.jpg"
+      "banner_image": "/images/upgraded/gcse-p3/usa_l06_banner_edmund_pettus_bridge_selma.jpg",
+      "banner_caption": "The steel-arch Edmund Pettus Bridge spanning the Alabama River in Selma, Alabama—where state troopers and sheriff’s posses attacked peaceful voting-rights marchers on \"Bloody Sunday\" (7 March 1965), galvanising passage of the Voting Rights Act."
     },
     {
       "id": "lesson_2_3",
@@ -12593,7 +12719,27 @@ export default {
               }
             ]
           }
-        }
+        },
+        "curriculum_link": "Key Topic 2.3: The rise of Black radicalism, 1963–70 (Malcolm X and the Nation of Islam, Stokely Carmichael and Black Power on the 1966 Meredith March, Black Panther Party Ten-Point Program and survival programs, COINTELPRO, and 1968 Mexico Olympics) — Edexcel Paper 3 Demand: Q1 Source Inference (4m), Q2 Causation 'Explain why' (12m), and Q3(a) Source Utility (8m).",
+        "hinge_question": "Why did Malcolm X's message and Stokely Carmichael's 1966 'Black Power' call resonate so strongly with young urban Black Americans just as King won his greatest legislative victories in 1964–65?",
+        "hinge_guidance": "Look for pupils explaining that ending Southern de jure Jim Crow signs and literacy tests did nothing to solve Northern and Western urban ghetto poverty, slum housing, unemployment, and systemic police brutality. Watch out for pupils flattening Malcolm X and the Black Panthers into purely violent caricatures—strong answers note Malcolm's shift after his 1964 Hajj and the Panthers' Ten-Point Program and Free Breakfast for Children survival clinics alongside armed self-defence.",
+        "misconceptions": [
+          {
+            "misconception": "Malcolm X's racial beliefs remained identical throughout his career until his assassination in February 1965.",
+            "correction": "While serving as Nation of Islam minister Malcolm preached strict racial separatism, after breaking with Elijah Muhammad and completing the Hajj to Mecca in 1964 he embraced orthodox Sunni Islam, founded the Organization of Afro-American Unity, and opened willingness to work across racial lines."
+          },
+          {
+            "misconception": "The Black Panther Party was solely an armed street gang rather than a political and community welfare organisation.",
+            "correction": "Founded in Oakland in October 1966 by Huey P. Newton and Bobby Seale, the Panthers paired armed citizen police patrols and a Ten-Point Program (Source D) with extensive survival programs—feeding tens of thousands of children free breakfasts and running free medical clinics."
+          },
+          {
+            "misconception": "Stokely Carmichael invented Black nationalism from scratch on the 1966 March Against Fear, completely ending non-violent civil rights work.",
+            "correction": "Carmichael popularised the 'Black Power' slogan in Greenwood, Mississippi in June 1966 after years of rural SNCC beatings and Northern frustration, fracturing the movement into competing integrationist (SCLC/NAACP) and Black Power wings rather than erasing non-violence overnight."
+          }
+        ],
+        "send_adaptation": "Use the Visual Story Sheet ('What Was the Black Power Movement, and How Did It Differ from Non-violent Protest?') and Studio Audio read-aloud first, then display the Block 4 Concept Diagram ('Integration vs. Black Power & Revolutionary Survival 1960–69') side-by-side with the Workbook Verso 5-Stage Chronological Spine so learners can compare aims, methods, and geographic support clearly.",
+        "stretch_challenge": "Push Grade 8–9 pupils to evaluate whether the Black Power movement widened the civil rights agenda—forcing America to confront urban poverty, police brutality, and cultural pride—or weakened it by alienating white moderates and triggering lethal FBI COINTELPRO repression.",
+        "safeguarding_impartiality": "Maintain strict historical impartiality when comparing non-violent integrationism with armed self-defence and revolutionary nationalism, and frame police brutality and FBI COINTELPRO operations (including the December 1969 killing of Fred Hampton) factually through primary evidence."
       },
       "learning_objectives": {
         "overarching": "What was the Black Power movement, and how did it differ from non-violent protests?",
@@ -14225,7 +14371,8 @@ export default {
           ]
         ]
       },
-      "banner_image": "/images/upgraded/gcse-p3/usa_l07_banner_mlk_malcolm_x_capitol_1964.jpg"
+      "banner_image": "/images/upgraded/gcse-p3/usa_l07_banner_mlk_malcolm_x_capitol_1964.jpg",
+      "banner_caption": "Dr Martin Luther King Jr. and Malcolm X meeting for the only time in a corridor of the United States Capitol during the Senate filibuster debate over the Civil Rights Act (26 March 1964, Library of Congress)."
     },
     {
       "id": "lesson_2_4",
@@ -14321,7 +14468,27 @@ export default {
               }
             ]
           }
-        }
+        },
+        "curriculum_link": "Key Topic 2.4: Urban riots, King's Chicago campaign, the Kerner Report, King's assassination, and progress by 1975 (Watts 1965, Chicago 1966, Detroit/Newark 1967, Kerner Commission 1968, Memphis assassination, and 1968 Fair Housing Act) — Edexcel Paper 3 Demand: Full Paper 3 suite including Q3(a) Source Utility (8m) and Q3(b)–(d) Interpretations (4m + 4m + 16m + 4 SPaG).",
+        "hinge_question": "Why did Watts erupt into six days of rebellion in August 1965—just five days after President Johnson signed the landmark Voting Rights Act?",
+        "hinge_guidance": "Strong GCSE answers distinguish Southern de jure segregation from Northern and Western de facto inequality: Black residents in Los Angeles, Chicago, Newark, and Detroit already had the legal right to vote, so the 1964–65 Acts left untouched the aggressive policing (Marquette Frye's arrest), redlined slum housing, and chronic joblessness diagnosed by the 1968 Kerner Report. Catch pupils who assume Northern cities had Southern-style Jim Crow laws.",
+        "misconceptions": [
+          {
+            "misconception": "The urban rebellions of 1965–67 broke out in Deep South states to protest against segregated buses and poll taxes.",
+            "correction": "Watts (Los Angeles, August 1965, 34 dead), Newark (1967, 26 dead), and Detroit (1967, 43 dead) erupted in Western and Northern industrial cities over de facto ghetto poverty, slum housing, and police brutality triggers."
+          },
+          {
+            "misconception": "The 1968 Kerner Commission Report blamed Black Power agitators and communist conspiracies for the urban riots, prompting huge federal investment.",
+            "correction": "President Johnson's Kerner Report (February 1968) warned America was splitting into 'two societies, one Black, one white—separate and unequal' and blamed white institutional racism (Source B), yet LBJ shelved its costly welfare proposals due to Vietnam War spending."
+          },
+          {
+            "misconception": "Martin Luther King Jr.'s 1966 Chicago Freedom Movement achieved the same decisive federal victory as Birmingham and Selma.",
+            "correction": "Confronting vicious white mob hostility in Marquette Park and Northern de facto housing redlining, King secured only vague, largely unenforced promises from Mayor Richard Daley—until national shock after King's 4 April 1968 assassination unlocked the 1968 Fair Housing Act (Source D)."
+          }
+        ],
+        "send_adaptation": "Introduce the de jure vs de facto contrast using the Visual Story Sheet ('Why Did Violent Riots Erupt in American Cities Between 1965 and 1968?') and Studio Audio read-aloud. Pair the Block 4 Concept Diagram ('Why Cities Burned 1965–68: The Kerner Commission Diagnosis') with the Workbook Verso 5-Stage Chronological Spine so learners can trace Watts (1965), Chicago (1966), Detroit/Newark (1967), Kerner (Feb 1968), and King's assassination/Fair Housing Act (April 1968).",
+        "stretch_challenge": "Challenge Grade 8–9 learners preparing for Q3(d) to evaluate how far civil rights had genuinely progressed by 1975: weighing the complete dismantling of de jure Jim Crow and surging Black Southern voter registration against persistent Northern economic inequality and Vietnam-starved social budgets.",
+        "safeguarding_impartiality": "Handle accounts of fatal urban unrest, white mob violence in Marquette Park, and the 4 April 1968 assassination of Dr Martin Luther King Jr. (alongside Robert F. Kennedy's Indianapolis speech in Source C) with calm historical sensitivity."
       },
       "learning_objectives": {
         "overarching": "Why did riots break out in American cities between 1965 and 1968?",
@@ -16639,7 +16806,8 @@ export default {
           ]
         ]
       },
-      "banner_image": "/images/upgraded/gcse-p3/usa_l08_banner_washington_riots_troops_apr1968.jpg"
+      "banner_image": "/images/upgraded/gcse-p3/usa_l08_banner_washington_riots_troops_apr1968.jpg",
+      "banner_caption": "Armed U.S. federal soldiers guarding the intersection of 7th and N Streets NW beside smouldering ruins in Washington, D.C. during the nationwide urban uprisings triggered by the assassination of Dr Martin Luther King Jr. (8 April 1968, Library of Congress)."
     },
     {
       "id": "lesson_3_1",
@@ -16735,7 +16903,27 @@ export default {
               }
             ]
           }
-        }
+        },
+        "curriculum_link": "Key Topic 3.1: Reasons for US involvement in Vietnam, 1954–63 (Dien Bien Phu, 1954 Geneva Accords, Domino Theory, Ngo Dinh Diem's regime, Vietcong/NLF, Strategic Hamlets, Buddhist Crisis, and Nov 1963 coup) — Edexcel Paper 3 Demand: Q1 Source Inference (4m), Q2 Causation 'Explain why' (12m), and Q3(a) Source Utility (8m).",
+        "hinge_question": "If Eisenhower and Kennedy knew Ngo Dinh Diem's regime was rigged, corrupt, and alienating South Vietnam's Buddhist majority, why did Washington fund him from 1954 until late 1963?",
+        "hinge_guidance": "Strong GCSE answers explain the Cold War trap created by Eisenhower's Domino Theory (Source A): fearing Ho Chi Minh would win the promised 1956 Geneva reunification elections by a landslide, Washington backed staunch anti-communist Diem as its indispensable bulwark—only withdrawing support via Cable 243 (Source D) after failed Strategic Hamlets and Thich Quang Duc's June 1963 self-immolation proved Diem was driving peasants into the Vietcong. Catch pupils who confuse the Southern guerrilla Vietcong (NLF, formed December 1960) with the regular North Vietnamese Army (NVA).",
+        "misconceptions": [
+          {
+            "misconception": "The United States signed the 1954 Geneva Accords and sent full combat divisions to fight in Vietnam throughout the 1950s.",
+            "correction": "Following France's defeat at Dien Bien Phu (May 1954), the USA refused to sign the Geneva Accords' 1956 election pledge and relied on financial subsidies, CIA backing, and military advisers—not US ground combat divisions—between 1954 and 1963."
+          },
+          {
+            "misconception": "The Strategic Hamlet Program (1962) won peasant 'hearts and minds' by protecting villagers from communist insurgents.",
+            "correction": "Forcibly uprooting over four million peasants from ancestral lands into barbed-wire compounds while Catholic landlords reclaimed Mekong Delta farmland outraged rural Buddhists and swelled recruitment into the Vietcong (NLF)."
+          },
+          {
+            "misconception": "North Vietnamese communist assassins murdered Ngo Dinh Diem in November 1963.",
+            "correction": "South Vietnamese ARVN generals overthrew and killed Diem and his brother Nhu on 1–2 November 1963 after the Kennedy administration signalled via Cable 243 (Source D) that Washington would not oppose a coup following the Buddhist Crisis."
+          }
+        ],
+        "send_adaptation": "Use the Visual Story Sheet ('Why Did the United States Support the Unpopular Government of Ngo Dinh Diem in South Vietnam?') and Studio Audio read-aloud alongside Source B's map of the 17th Parallel and Ho Chi Minh Trail before reading prose blocks. Lean on the Block 5 Concept Diagram ('Deepening the US Commitment in South Vietnam 1954–1963') and the Workbook Verso 5-Stage Chronological Spine to track how each US fix worsened Saigon's crisis.",
+        "stretch_challenge": "Ask Grade 8–9 pupils to judge whether US entrapment in Vietnam by November 1963 stemmed primarily from Washington's rigid Cold War Domino Theory—misreading Vietnamese anti-colonial nationalism as monolithic communism—or from Diem's own authoritarian misrule.",
+        "safeguarding_impartiality": "Give a clear advance warning before displaying Source C (the June 1963 self-immolation photograph of Buddhist monk Thich Quang Duc in Saigon) and discussing rural executions and Diem's assassination, framing the image strictly around its religious protest context and international impact."
       },
       "learning_objectives": {
         "overarching": "Why did the US support the unpopular government of Ngo Dinh Diem in South Vietnam?",
@@ -18355,7 +18543,8 @@ export default {
           ]
         ]
       },
-      "banner_image": "/images/upgraded/gcse-p3/usa_l09_banner_ngo_dinh_diem_us_congress_1957.jpg"
+      "banner_image": "/images/upgraded/gcse-p3/usa_l09_banner_ngo_dinh_diem_us_congress_1957.jpg",
+      "banner_caption": "South Vietnamese President Ngo Dinh Diem addressing a joint session of the United States Congress in Washington, D.C. beneath Vice President Richard Nixon and Speaker Sam Rayburn during his official state visit (9 May 1957)."
     },
     {
       "id": "lesson_3_2",
@@ -18451,7 +18640,26 @@ export default {
               }
             ]
           }
-        }
+        },
+        "curriculum_link": "Key Topic 3.2: Escalation of the conflict under Johnson, 1963–65 (post-Diem Saigon coups and ARVN collapse, Aug 1964 Gulf of Tonkin incident and Resolution, Pleiku raid, Operation Rolling Thunder, and Mar 1965 Da Nang Marine landings) — Edexcel Paper 3 Demand: Q1 Source Inference (4m), Q2 Causation 'Explain why' (12m), and Q3(a) Source Utility (8m).",
+        "hinge_question": "Did the disputed August 1964 Gulf of Tonkin torpedo attack cause America's ground war in Vietnam, or did it hand President Johnson the legal 'blank cheque' to rescue a collapsing South Vietnam?",
+        "hinge_guidance": "Look for pupils combining structural instability in South Vietnam (ten Saigon military governments in 18 months, ARVN desertions, and Vietcong control of 40% of rural villages by late 1964) with the legal trigger of the 7 August 1964 Gulf of Tonkin Resolution and the February 1965 Pleiku raid. Catch the common chronological slip of claiming Johnson sent ground troops in August 1964—Rolling Thunder began on 2 March 1965 and the first 3,500 US Marines landed at Da Nang on 8 March 1965.",
+        "misconceptions": [
+          {
+            "misconception": "Both August 1964 Gulf of Tonkin naval attacks were unprovoked, confirmed North Vietnamese assaults on US ships in international waters.",
+            "correction": "While North Vietnamese torpedo boats skirmished with the intelligence-gathering USS Maddox on 2 August 1964, Captain Herrick's own cable (Source A) warned that the 4 August 'second attack' relied on storm-hit phantom sonar readings—yet Johnson used it to win the Gulf of Tonkin Resolution."
+          },
+          {
+            "misconception": "Congress formally declared war on North Vietnam in August 1964 and immediately sent 500,000 US ground troops.",
+            "correction": "Congress never passed a formal declaration of war; the 7 August 1964 Gulf of Tonkin Resolution (Source C) gave LBJ a legislative 'blank cheque', and the first 3,500 combat Marines landed at Da Nang seven months later on 8 March 1965 to guard Rolling Thunder airbases."
+          },
+          {
+            "misconception": "Operation Rolling Thunder was a brief tactical airstrike that quickly broke North Vietnam's ability to supply the Vietcong.",
+            "correction": "Launched on 2 March 1965 after the Vietcong raid on Pleiku, Operation Rolling Thunder lasted three years and dropped over 864,000 tons of bombs, yet failed to sever the Ho Chi Minh Trail or force Hanoi to surrender."
+          }
+        ],
+        "send_adaptation": "Start directly with the Block 1 Concept Diagram ('Why Johnson Americanised the War, Nov 1963 – Mar 1965'), Visual Story Sheet, and Studio Audio read-aloud to clarify the ladder of escalation. Have learners point to each step on their Workbook Verso 5-Stage Chronological Spine so they separate the August 1964 Congressional Resolution (Stage 3) from March 1965 Rolling Thunder and Da Nang Marines (Stages 4–5).",
+        "stretch_challenge": "Push Grade 8–9 pupils to evaluate whether Lyndon B. Johnson 'Americanised' the war in 1964–65 out of strategic conviction, domestic political fear of being branded 'soft on communism' in the 1964 election, or inescapable ARVN collapse after Diem's overthrow."
       },
       "learning_objectives": {
         "overarching": "Why did the US send combat troops to Vietnam after the Gulf of Tonkin incident?",
@@ -20184,7 +20392,8 @@ export default {
           ]
         ]
       },
-      "banner_image": "/images/upgraded/gcse-p3/usa_l10_banner_uss_maddox_herrick_aug1964.jpg"
+      "banner_image": "/images/upgraded/gcse-p3/usa_l10_banner_uss_maddox_herrick_aug1964.jpg",
+      "banner_caption": "Captain John J. Herrick (Commander Destroyer Division 192, left) and Commander Herbert L. Ogier (Commanding Officer, right) in battle helmets aboard the destroyer USS Maddox (DD-731) following the Gulf of Tonkin Incident (13 August 1964)."
     },
     {
       "id": "lesson_3_3",
@@ -20280,7 +20489,27 @@ export default {
               }
             ]
           }
-        }
+        },
+        "curriculum_link": "Key Topic 3.3: The nature of the conflict in Vietnam, 1965–68 (Vo Nguyen Giap's guerrilla doctrine, Cu Chi tunnels and booby traps, Ho Chi Minh Trail, Operation Ranch Hand/Agent Orange, napalm, and Westmoreland's Search and Destroy attrition) — Edexcel Paper 3 Demand: Full Paper 3 suite including Q3(a) Source Utility (8m) and Q3(b)–(d) Interpretations (4m + 4m + 16m + 4 SPaG).",
+        "hinge_question": "Why did General Westmoreland's massive helicopter mobility, chemical defoliants, and Search-and-Destroy 'body count' strategy create more Vietcong fighters than it eliminated?",
+        "hinge_guidance": "Strong GCSE answers connect military mismatch with political alienation: Vietcong guerrillas neutralised US airpower by fighting 'on US belt buckles' and vanishing into 250km Cu Chi tunnels, while indiscriminate napalm, 20 million gallons of Agent Orange, and 'Zippo' village raids destroyed peasant livelihoods and drove rural civilians into supporting the Vietcong. Catch pupils who describe weapons descriptively in 12m/16m answers without explaining why those tactics failed politically and militarily.",
+        "misconceptions": [
+          {
+            "misconception": "The Vietcong were poorly organised peasant fighters lacking logistics, command structures, or external weapons.",
+            "correction": "Guided by General Vo Nguyen Giap's asymmetric doctrine, insurgents operated multi-level Cu Chi tunnel complexes with underground hospitals (Source A) and received steady Soviet and Chinese arms via the Ho Chi Minh Trail through Laos and Cambodia (Source C)."
+          },
+          {
+            "misconception": "High enemy 'body counts' during US Search-and-Destroy sweeps proved General Westmoreland was winning the war of attrition.",
+            "correction": "Because US platoons did not hold rural territory after helicopter sweeps, reliance on body counts encouraged inflated figures and civilian 'Zippo' village burns (Source E), alienating South Vietnamese peasants while Hanoi and the NLF absorbed heavy losses."
+          },
+          {
+            "misconception": "GCSE Exam Tip: Confusing the tactical purpose of Agent Orange with napalm in Paper 3 answers.",
+            "correction": "Agent Orange was a carcinogenic dioxin herbicide sprayed under Operation Ranch Hand (20 million gallons) to strip jungle cover and crops, whereas napalm was an incendiary petroleum jelly burning at over 1,000 degrees Celsius used in tactical strikes."
+          }
+        ],
+        "send_adaptation": "Use the Block 1 Concept Diagram ('Why Firepower Failed: Vietcong Guerrilla Doctrine vs US Attrition') alongside the Visual Story Sheet, Source A's cutaway tunnel diagram, and Studio Audio read-aloud to build a concrete visual comparison. Map Vietcong methods (Stages 1–3) against US countermeasures (Stages 4–5) on the Workbook Verso 5-Stage Chronological Spine before drafting comparison or utility paragraphs.",
+        "stretch_challenge": "Challenge Grade 8–9 pupils in Q3(b)–(d) to weigh competing historiographical interpretations of US military failure (1965–68): was defeat primarily due to the tactical ingenuity and Ho Chi Minh Trail logistics of communist forces, or the self-defeating brutality of Westmoreland's attrition strategy?",
+        "safeguarding_impartiality": "Prepare pupils thoughtfully before covering concealed booby traps, carcinogenic Agent Orange poisoning, napalm burns on civilian villagers, and Lieutenant Philip Caputo's attrition testimony (Source E), keeping discussion anchored in historical causation rather than graphic shock."
       },
       "learning_objectives": {
         "overarching": "Why did US military tactics (like bombing and search & destroy) fail to defeat the Vietcong?",
@@ -22488,7 +22717,8 @@ export default {
           ]
         ]
       },
-      "banner_image": "/images/upgraded/gcse-p3/usa_l11_banner_uh1d_helicopters_air_assault_1966.jpg"
+      "banner_image": "/images/upgraded/gcse-p3/usa_l11_banner_uh1d_helicopters_air_assault_1966.jpg",
+      "banner_caption": "U.S. Army Bell UH-1D \"Huey\" helicopters airlifting infantrymen of the 25th Infantry Division during Operation Wahiawa, a search-and-destroy sweep northeast of Cu Chi, South Vietnam (16 May 1966)."
     },
     {
       "id": "lesson_3_4",
@@ -22584,7 +22814,27 @@ export default {
               }
             ]
           }
-        }
+        },
+        "curriculum_link": "Key Topic 3.4: The Tet Offensive and Nixon's Vietnamisation, 1968–71 (Jan 1968 Tet Offensive and Saigon Embassy raid, Walter Cronkite and Credibility Gap, LBJ withdrawal, Nixon Doctrine, Vietnamisation, secret Cambodian bombing, and US conscript morale collapse) — Edexcel Paper 3 Demand: Full Paper 3 suite including Q3(a) Source Utility (8m) and Q3(b)–(d) Interpretations (4m + 4m + 16m + 4 SPaG).",
+        "hinge_question": "How could the January 1968 Tet Offensive be a crushing military defeat for the Vietcong yet simultaneously a decisive political defeat for the United States?",
+        "hinge_guidance": "Look for pupils nailing the central paradox of 1968: communist forces lost over 50,000 experienced fighters and failed to hold cities or spark an urban uprising, yet televised combat inside the US Embassy compound in Saigon shattered White House victory claims, opened a fatal domestic Credibility Gap, led Walter Cronkite to declare stalemate (Source A), and drove LBJ out of the 1968 presidential race. Also catch pupils assuming Nixon's 'Vietnamisation' meant purely de-escalating—he cut US ground troops while secretly bombing Cambodia (Operation Menu).",
+        "misconceptions": [
+          {
+            "misconception": "Tet was a turning point because communist forces captured and held Saigon and defeated the US military on the battlefield.",
+            "correction": "Militarily, US and ARVN forces repelled all attacks—killing all nineteen Saigon Embassy commandos within six hours and inflicting over 50,000 communist losses—but politically the surprise assault destroyed domestic trust in official US optimism."
+          },
+          {
+            "misconception": "Nixon's 1969 Vietnamisation policy simply wound down all American military combat across Indochina.",
+            "correction": "While phasing US troops down from 543,000 (early 1969) to under 156,000 (late 1971) and handing ground combat to the ARVN, Nixon secretly widened aerial bombardment into neutral Cambodia under Operation Menu (March 1969) and invaded Cambodia in April 1970 (Source C)."
+          },
+          {
+            "misconception": "Withdrawing US troops smoothly strengthened morale among the soldiers remaining in Vietnam.",
+            "correction": "Knowing the USA was exiting made remaining conscripts unwilling to die as the last casualties, triggering widespread drug abuse, combat refusals, and over 800 investigated 'fragging' grenade attacks against officers alongside chaotic ARVN retreats (Source D)."
+          }
+        ],
+        "send_adaptation": "Pair the Visual Story Sheet ('What Was President Nixon's Vietnamization Policy, and Did It Achieve Peace with Honour?') and Studio Audio read-aloud with the Block 3 Concept Diagram ('Nixon's Peace with Honour Strategy & Its Contradictions'). Use the Workbook Verso 5-Stage Chronological Spine to split the lesson cleanly into the 1968 Turning Point (Stages 1–2: Tet & Cronkite) and Nixon's 1969–71 Response (Stages 3–5: Vietnamisation, Cambodia, and morale collapse).",
+        "stretch_challenge": "Push Grade 8–9 pupils to evaluate Interpretations 1 and 2 on why Vietnamisation failed to secure 'peace with honour': was failure rooted in structural ARVN corruption and dependency (exposed in Laos/Lam Son 719, Source D), or in the domestic political deadline and collapse of US conscript morale?",
+        "safeguarding_impartiality": "Approach Block 5's coverage of conscript psychological breakdown, addiction, and 'fragging' assaults on officers with measured historical objectivity, framing them as symptoms of fighting a conscript war during a phased political withdrawal."
       },
       "learning_objectives": {
         "overarching": "What was Nixon's 'Vietnamization' policy, and did it achieve peace with honour?",
@@ -24921,7 +25171,8 @@ export default {
           ]
         ]
       },
-      "banner_image": "/images/upgraded/gcse-p3/usa_l12_banner_nixon_cambodia_incursion_map_1970.jpg"
+      "banner_image": "/images/upgraded/gcse-p3/usa_l12_banner_nixon_cambodia_incursion_map_1970.jpg",
+      "banner_caption": "President Richard Nixon pointing to North Vietnamese sanctuary zones along the Cambodian–South Vietnamese border during his televised Oval Office address announcing the Cambodian Incursion (30 April 1970)."
     },
     {
       "id": "lesson_4_1",
@@ -25017,7 +25268,27 @@ export default {
               }
             ]
           }
-        }
+        },
+        "curriculum_link": "Key Topic 4.1: Growing opposition to the war, 1968–71 ('Living Room War' television coverage, draft class/racial inequity, exposure of the My Lai Massacre, May 1970 Kent State shootings, and June 1971 Pentagon Papers) — Edexcel Paper 3 Demand: Full Paper 3 suite including Q3(a) Source Utility (8m) and Q3(b)–(d) Interpretations (4m + 4m + 16m + 4 SPaG).",
+        "hinge_question": "Why did middle-class American opposition to the Vietnam War peak in 1969–71 when US combat troop numbers were actually falling under Nixon?",
+        "hinge_guidance": "Strong GCSE answers point to explosive moral and constitutional revelations hitting home simultaneously: Seymour Hersh's November 1969 exposure of the March 1968 My Lai massacre (after a 20-month cover-up), Nixon's April 1970 Cambodian incursion sparking the 4 May 1970 Kent State killings of four unarmed students, the 1969 draft lottery, and Daniel Ellsberg's June 1971 Pentagon Papers proving systematic presidential deception. Remind pupils to distinguish March 1968 (when My Lai occurred) from November 1969 (when the American public learned of it).",
+        "misconceptions": [
+          {
+            "misconception": "GCSE Exam Tip: Writing that the My Lai Massacre caused immediate public protests across America in March 1968.",
+            "correction": "Charlie Company committed the Son My (My Lai) massacre on 16 March 1968, but the US military covered it up for twenty months until Ron Ridenhour and journalist Seymour Hersh exposed it alongside Ronald Haeberle's photographs in November 1969."
+          },
+          {
+            "misconception": "The Selective Service military draft called up wealthy university students and working-class youths in equal proportions throughout the 1960s.",
+            "correction": "College deferments and medical exemptions shielded affluent students for years, placing a disproportionate combat burden on working-class, Black, and Hispanic men and inspiring draft-card burnings and Muhammad Ali's principled refusal before the December 1969 lottery (Source C)."
+          },
+          {
+            "misconception": "Only radical hippy counter-culture groups opposed the Vietnam War.",
+            "correction": "Nightly uncensored colour TV broadcasts into 90% of homes, the shock of National Guardsmen shooting four unarmed students at Kent State (4 May 1970, Source D), and the 1971 Pentagon Papers leak alienated mainstream middle-class Americans, veterans, and Congress."
+          }
+        ],
+        "send_adaptation": "Open with the Block 1 Concept Diagram ('Catalysts of Anti-War Opposition: TV Media, Draft Inequity, My Lai, Kent State & Pentagon Papers'), Visual Story Sheet, and Studio Audio read-aloud so learners grasp all five distinct strands at a glance. Use the Workbook Verso 5-Stage Chronological Spine as a 5-factor checklist when planning Q2 (12m) causation or Q3(d) (16m) interpretation essays.",
+        "stretch_challenge": "Challenge Grade 8–9 pupils in Q3(d) to weigh whether media and moral shocks (television coverage and My Lai) or direct personal self-interest and constitutional betrayal (draft casualties, Kent State, and the Pentagon Papers) did more to turn mainstream America against the war.",
+        "safeguarding_impartiality": "Give a clear pastoral warning before teaching Block 3 and Source B on the March 1968 My Lai atrocity (murder and assault of over 500 unarmed women, children, and elderly villagers) and Block 4 on the fatal Kent State campus shootings; highlight Warrant Officer Hugh Thompson Jr.'s moral courage in intervening to rescue civilians (Source A)."
       },
       "learning_objectives": {
         "overarching": "Why did so many Americans oppose the Vietnam War (like at My Lai and Kent State)?",
@@ -27244,7 +27515,8 @@ export default {
           ]
         ]
       },
-      "banner_image": "/images/upgraded/gcse-p3/usa_l13_banner_antiwar_protest_washington_loc.jpg"
+      "banner_image": "/images/upgraded/gcse-p3/usa_l13_banner_antiwar_protest_washington_loc.jpg",
+      "banner_caption": "Anti-Vietnam War demonstrators from Women Strike for Peace picketing outside the White House in Washington, D.C. with placards reading \"NO MORE... Stop the War!\" and \"END the DRAFT!\" (19 January 1968)."
     },
     {
       "id": "lesson_4_2",
@@ -27340,7 +27612,26 @@ export default {
               }
             ]
           }
-        }
+        },
+        "curriculum_link": "Key Topic 4.2: Support for the war, 1968–72 (Cold War anti-communism, Nixon's Nov 1969 'Silent Majority' speech, May 1970 New York Hard Hat Riots, Congressional Hawks, and Nixon's 1972 49-state landslide) — Edexcel Paper 3 Demand: Q1 Source Inference (4m), Q2 Causation 'Explain why' (12m), and Q3(a) Source Utility (8m).",
+        "hinge_question": "If anti-war protests shut down over 400 US college campuses in May 1970, how did Richard Nixon win 60% of the vote and 49 out of 50 states in November 1972?",
+        "hinge_guidance": "Look for pupils recognising that noisy campus marches did not represent the entire electorate: Nixon mobilised the 'Silent Majority' (3 November 1969 speech, Source A) by combining phased troop cuts under Vietnamisation with appeals to Cold War anti-communism, fear of national humiliation, and blue-collar resentment against privileged student protesters (seen in the 8 May 1970 Wall Street Hard Hat clashes, Source B). Catch pupils who assume every American opposed the war after 1968.",
+        "misconceptions": [
+          {
+            "misconception": "By 1969–70, virtually the entire American population supported the student anti-war movement.",
+            "correction": "Opinion polls (Source D) and tens of thousands of White House telegrams after Nixon's 3 November 1969 'Silent Majority' speech showed millions of older, suburban, and working-class Americans backed 'peace with honour' and resented student demonstrators."
+          },
+          {
+            "misconception": "Working-class trade unionists naturally allied with university students against the Vietnam War.",
+            "correction": "Many blue-collar families whose sons served in Vietnam felt insulted by flag-burning and draft deferments for affluent students—erupting on 8 May 1970 when New York construction workers ('Hard Hats') attacked anti-war marchers near Wall Street and were later welcomed by Nixon (Sources B and C)."
+          },
+          {
+            "misconception": "Supporters of the war in 1969–72 all wanted endless escalation of US ground troop numbers.",
+            "correction": "While Congressional 'Hawks' feared Cold War dominoes and America's first military defeat, much of Nixon's Silent Majority backed him in 1972 precisely because Vietnamisation reduced US casualties while avoiding immediate unilateral surrender."
+          }
+        ],
+        "send_adaptation": "Display the Block 1 Concept Diagram ('Divided America 1968–72: Radical Doves, Nixon's Silent Majority, Pro-War Hawks') alongside the Visual Story Sheet and Studio Audio read-aloud to clarify the three positions. Anchor key vocabulary ('Hawks', 'Doves', 'Silent Majority', 'Peace with Honour') on the Workbook Verso 5-Stage Chronological Spine before comparing Source B (Hard Hats) with Source E (Vietnam Veterans Against the War).",
+        "stretch_challenge": "Ask Grade 8–9 pupils to analyse how far Nixon's 49-state landslide over George McGovern in November 1972 reflected genuine Cold War ideological support for the war versus class-based cultural backlash against 1960s student radicalism."
       },
       "learning_objectives": {
         "overarching": "Why did some Americans support the Vietnam War and the 'Silent Majority'?",
@@ -28966,7 +29257,8 @@ export default {
           ]
         ]
       },
-      "banner_image": "/images/upgraded/gcse-p3/usa_l14_banner_nixon_rally_silent_majority_1972.jpg"
+      "banner_image": "/images/upgraded/gcse-p3/usa_l14_banner_nixon_rally_silent_majority_1972.jpg",
+      "banner_caption": "President Richard Nixon greeting thousands of flag-waving \"Silent Majority\" supporters at an evening rally in Ontario, California on the eve of his 49-state landslide re-election (4 November 1972)."
     },
     {
       "id": "lesson_4_3",
@@ -29062,7 +29354,26 @@ export default {
               }
             ]
           }
-        }
+        },
+        "curriculum_link": "Key Topic 4.3: Peace negotiations and US withdrawal, 1972–73 (Kissinger–Le Duc Tho secret Paris talks, Oct 1972 NVA troop concession, Dec 1972 Operation Linebacker II, Jan 1973 Paris Peace Accords, final US troop exit, and Nov 1973 War Powers Act) — Edexcel Paper 3 Demand: Q1 Source Inference (4m), Q2 Causation 'Explain why' (12m), and Q3(a) Source Utility (8m).",
+        "hinge_question": "Why did the January 1973 Paris Peace Accords bring America's 591 POWs and final combat troops home, yet virtually guarantee South Vietnam's eventual collapse?",
+        "hinge_guidance": "Strong GCSE answers pinpoint Henry Kissinger's decisive October 1972 concession allowing roughly 150,000 North Vietnamese (NVA) soldiers to remain in place inside South Vietnam after all US troops withdrew within 60 days, combined with Congress passing the November 1973 War Powers Act over Nixon's veto so Washington could not re-intervene. Catch pupils who confuse the January 1973 US withdrawal under the Paris Peace Accords with the April 1975 Fall of Saigon.",
+        "misconceptions": [
+          {
+            "misconception": "The January 1973 Paris Peace Accords required North Vietnamese troops to withdraw north of the 17th Parallel alongside departing US forces.",
+            "correction": "To break the diplomatic deadlock and retrieve 591 US POWs, Kissinger conceded in October 1972 that roughly 150,000 NVA regulars could remain in captured Southern territory while all US combat forces withdrew by 29 March 1973 (Source B)."
+          },
+          {
+            "misconception": "Operation Linebacker II (December 1972 'Christmas Bombings') was launched to conquer North Vietnam and cancel peace talks.",
+            "correction": "Nixon ordered eleven days of heavy B-52 raids over Hanoi and Haiphong (18–29 December 1972) both to force Hanoi back to the negotiating table and to reassure South Vietnamese President Nguyen Van Thieu so he would sign the Paris Peace Accords."
+          },
+          {
+            "misconception": "GCSE Exam Tip: Blending the 1964 Gulf of Tonkin Resolution and the 1973 War Powers Act in Paper 3 answers.",
+            "correction": "The November 1973 War Powers Act—passed over a Watergate-weakened Nixon's veto—reversed the 1964 Tonkin 'blank cheque' by requiring presidents to notify Congress within 48 hours of hostilities and withdraw troops within 60 days unless Congress authorised war."
+          }
+        ],
+        "send_adaptation": "Pair the Visual Story Sheet ('How Did the United States Exit Vietnam, and Why Was South Vietnam Left so Vulnerable?') and Studio Audio read-aloud with the Block 5 Concept Diagram ('Jan 1973 Paris Peace Accords, Watergate Paralysis & Nov 1973 War Powers Act'). Use the Workbook Verso 5-Stage Chronological Spine to step cleanly from secret talks and Christmas Bombings (1972) to the Accords, troop exit, and War Powers Act (1973).",
+        "stretch_challenge": "Challenge Grade 8–9 pupils to evaluate Nixon and Kissinger's declassified 'decent interval' calculation: did the January 1973 Paris Peace Accords achieve 'peace with honour', or merely disguise an American strategic defeat long enough to bring US troops and POWs home?"
       },
       "learning_objectives": {
         "overarching": "How did the US exit Vietnam, and why did South Vietnam fall so quickly in 1975?",
@@ -30663,7 +30974,8 @@ export default {
           ]
         ]
       },
-      "banner_image": "/images/upgraded/gcse-p3/usa_l15_banner_frequent_wind_uh1_overboard_1975.jpg"
+      "banner_image": "/images/upgraded/gcse-p3/usa_l15_banner_frequent_wind_uh1_overboard_1975.jpg",
+      "banner_caption": "U.S. Navy flight-deck crewmen pushing an evacuated South Vietnamese Air Force UH-1 Huey helicopter overboard from USS Blue Ridge to clear deck space for incoming refugee flights during Operation Frequent Wind (29 April 1975)."
     },
     {
       "id": "lesson_4_4",
@@ -30759,7 +31071,27 @@ export default {
               }
             ]
           }
-        }
+        },
+        "curriculum_link": "Key Topic 4.4: The Fall of Saigon (1975) and reasons for US failure in Vietnam, 1954–75 (1975 Spring Offensive, Operation Frequent Wind, Fall of Saigon, revolutionary nationalism, guerrilla warfare vs US tactics, Saigon corruption, and US home-front collapse) — Edexcel Paper 3 Demand: Full synoptic Paper 3 suite including Q3(a) Source Utility (8m) and Q3(b)–(d) Interpretations (4m + 4m + 16m + 4 SPaG).",
+        "hinge_question": "Why did the world's richest nuclear superpower—without losing a single major pitched battle—still lose the Vietnam War?",
+        "hinge_guidance": "Strong GCSE answers synthesise multi-causal interaction rather than naming a single isolated cause: Vietnamese revolutionary nationalism and asymmetric guerrilla resilience (accepting over one million casualties along the Ho Chi Minh Trail) neutralised US industrial firepower, corrupt Saigon regimes alienated Southern peasants, and mounting casualties (58,220 US dead) plus moral shocks shattered domestic political will on the American home front. Catch pupils who treat the 1975 Fall of Saigon as a sudden shock unconnected to congressional aid cuts, oil-shock inflation, and chronic ARVN corruption.",
+        "misconceptions": [
+          {
+            "misconception": "American combat divisions were defeated in Saigon on 30 April 1975 when North Vietnamese tanks smashed through the Independence Palace gates.",
+            "correction": "Final US combat troops had already departed in March 1973; in April 1975 Operation Frequent Wind helicopters evacuated 7,000 US diplomats and South Vietnamese allies while fuel-starved, demoralised ARVN forces collapsed before General Van Tien Dung's Spring Offensive (Source D)."
+          },
+          {
+            "misconception": "US failure can be explained solely by anti-war protesters and television journalists 'losing the war at home'.",
+            "correction": "Domestic consensus collapsed only because Vietnamese nationalist determination, guerrilla tactics, Ho Chi Minh Trail logistics, and illegitimate Saigon governments turned Westmoreland's war of attrition into an unwinnable stalemate (Sources B and E)."
+          },
+          {
+            "misconception": "GCSE Exam Tip: Listing four separate factors in Q3(d) without sustaining a clear judgement on the stated Interpretation.",
+            "correction": "Top-band Edexcel Paper 3 answers on Q3(d) (16m + 4 SPaG) explicitly weigh the stated historian's emphasis (for example, military tactics vs political/home-front failure) against the counter-interpretation and explain how the factors interacted across 1954–75."
+          }
+        ],
+        "send_adaptation": "Use the Block 5 Concept Diagram ('Why Did the USA Fail in Vietnam? Weighing the Four Core Exam Factors') alongside the Visual Story Sheet and Studio Audio read-aloud to organise revision into four clear colour-coded buckets (Vietcong Strength, US Tactics Weaknesses, Saigon Corruption, US Home Front). Pair this with the Workbook Verso 5-Stage Chronological Spine to separate the 1975 Fall of Saigon narrative (Stages 1–2) from the synoptic explanation factors (Stages 3–5).",
+        "stretch_challenge": "Push Grade 8–9 pupils to construct a clinching Q3(d) hierarchy of causes across 1954–75: was American defeat fundamentally sealed on the battlefields and villages of Vietnam (where industrial firepower could not manufacture political legitimacy for Saigon) or in Washington and American living rooms?",
+        "safeguarding_impartiality": "Frame the human cost of the war—over one million Vietnamese fighters and civilians killed alongside 58,220 US service deaths, over 300,000 wounded, and the 'Convoy of Tears' refugee crisis (Source D)—with solemn respect and balanced historical perspective."
       },
       "learning_objectives": {
         "overarching": "What were the main reasons why the US failed to win the war in Vietnam?",
@@ -33081,10 +33413,17 @@ export default {
           ]
         ]
       },
-      "banner_image": "/images/upgraded/gcse-p3/usa_l16_banner_1st_cavalry_patrol_vietnam_1966.jpg"
+      "banner_image": "/images/upgraded/gcse-p3/usa_l16_banner_1st_cavalry_patrol_vietnam_1966.jpg",
+      "banner_caption": "U.S. 1st Cavalry Division (Airmobile) infantrymen searching a thatched rural dwelling watched by an elderly Vietnamese villager and young child during Operation Irving north of Qui Nhon (6 October 1966)."
     }
   ],
   "keyStage": "GCSE",
   "key_stage": "GCSE",
-  "year_group": "GCSE (9–1)"
+  "year_group": "GCSE (9–1)",
+  "cover_caption": "Civil rights and labour leaders linking arms beneath placards demanding voting rights, school desegregation, and jobs for all during the historic March on Washington (28 August 1963).",
+  "teacher_guidance_overview": {
+    "curriculum_focus": "Pearson Edexcel GCSE (9–1) History Paper 3 Option 33: The USA, 1954–75: Conflict at Home and Abroad.",
+    "disciplinary_threads": "Source Inference (4m), Causation 'Explain why' (12m), Source Utility (8m), How Interpretations Differ (4m), Why Interpretations Differ (4m), and Evaluate Interpretation 'How far do you agree' (16m + 4 SPaG).",
+    "non_specialist_summary": "This Modern Depth study pairs two overlapping domestic and foreign crises between 1954 and 1975: Key Topics 1–2 trace the struggle for Black civil rights from Southern de jure Jim Crow segregation through non-violent direct action, landmark 1964–68 federal laws, Black Power, and Northern urban rebellions, while Key Topics 3–4 examine why the USA escalated, fought, divided domestically over, and ultimately lost the Vietnam War. Because Paper 3 assesses both Section A (4m Inference and 12m Causation) and Section B (8m Source Utility plus 4m, 4m, and 16m+4 SPaG Historiographical Interpretations) on a single sub-enquiry, pupils must know precise factual detail across all four Key Topics and distinguish contemporary primary sources from later historians' arguments."
+  }
 };

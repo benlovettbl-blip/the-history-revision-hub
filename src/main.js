@@ -33,7 +33,11 @@ import {
   getLessonSeoSlugList,
 } from './data/seo_routes.js';
 import { initShareUtilsGlobals } from './engine/share_utils.js';
+import { openUnifiedTeacherGuidance } from './engine/teacher_guidance_modal.js';
 initShareUtilsGlobals();
+if (typeof window !== 'undefined') {
+  window.openUnifiedTeacherGuidance = openUnifiedTeacherGuidance;
+}
 
 function purgeGDPRHistoricalCache() {
   try {
@@ -98,6 +102,9 @@ export function syncStaffUiState() {
     document.querySelectorAll('.teacher-only-plenary-btn').forEach((btn) => {
       btn.style.display = active ? 'inline-flex' : 'none';
     });
+    document.querySelectorAll('.btn-teacher-guidance-launcher').forEach((btn) => {
+      btn.style.display = active ? 'inline-flex' : 'none';
+    });
     document.querySelectorAll('.teacher-only-guidance-drawer').forEach((det) => {
       det.style.display = active ? 'block' : 'none';
     });
@@ -119,47 +126,85 @@ export function syncStaffUiState() {
   const headerBtn = document.getElementById('btn-cover-modal');
   if (headerBtn) headerBtn.style.display = active ? 'inline-flex' : 'none';
   const copyClassBtn = document.getElementById('btn-copy-class-link');
-  if (copyClassBtn) copyClassBtn.style.display = active ? 'inline-flex' : 'none';
+  if (copyClassBtn) {
+    copyClassBtn.style.display = active ? 'inline-flex' : 'none';
+    copyClassBtn.classList.toggle('staff-hidden', !active);
+  }
   const sidebarBtn = document.getElementById('nav-cover-generator');
   if (sidebarBtn) sidebarBtn.style.display = active ? 'flex' : 'none';
 
   const toggleBtn = document.getElementById('btn-sidebar-staff-toggle');
   const toggleLabel = document.getElementById('sidebar-staff-toggle-label');
   const toggleSub = document.getElementById('sidebar-staff-toggle-sub');
+  const headerStaffBtn = document.getElementById('btn-header-staff-toggle');
   const urlParams = new URLSearchParams(window.location.search || '');
   const isSafeguardLocked =
     urlParams.get('locked') === 'true' ||
     urlParams.get('mode') === 'pupil' ||
     urlParams.get('safeguard') === 'true';
+  const isLocalHost =
+    window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
 
   if (toggleBtn && isSafeguardLocked) {
     toggleBtn.style.display = 'none';
   } else if (toggleBtn && toggleLabel) {
     toggleBtn.style.display = 'flex';
-    const isLocalHost =
-      window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
     if (active) {
-      toggleBtn.style.borderColor = 'rgba(52, 211, 153, 0.35)';
-      toggleBtn.style.background = 'rgba(16, 185, 129, 0.1)';
-      toggleBtn.style.color = '#d1fae5';
+      toggleBtn.style.borderColor = 'rgba(52, 211, 153, 0.45)';
+      toggleBtn.style.background = 'rgba(16, 185, 129, 0.16)';
+      toggleBtn.style.color = '#ecfdf5';
       toggleBtn.title = isLocalHost
-        ? 'Staff Mode active — click to preview exact Pupil View'
-        : 'Staff Mode active — click to lock back to Pupil View';
+        ? 'Teacher Mode active — click to preview exact Pupil View'
+        : 'Teacher Mode active — click to lock back to Pupil View';
       toggleLabel.innerHTML =
-        '<i class="fa-solid fa-unlock-keyhole" style="margin-right: 6px; color: #34d399"></i>Staff Mode ON';
+        '<i class="fa-solid fa-unlock-keyhole" style="margin-right: 6px; color: #34d399"></i>Teacher Mode ON';
       if (toggleSub) toggleSub.textContent = isLocalHost ? 'Pupil View' : 'Lock';
     } else {
-      toggleBtn.style.borderColor = 'rgba(255, 255, 255, 0.08)';
-      toggleBtn.style.background = 'rgba(255, 255, 255, 0.03)';
-      toggleBtn.style.color = 'rgba(255, 255, 255, 0.48)';
+      toggleBtn.style.borderColor = 'rgba(148, 163, 184, 0.28)';
+      toggleBtn.style.background = 'rgba(255, 255, 255, 0.06)';
+      toggleBtn.style.color = 'rgba(241, 245, 249, 0.85)';
       toggleBtn.title =
         isPreviewPupil && isLocalHost
-          ? 'Currently previewing Pupil View — click to resume Staff Mode'
-          : 'Staff Login (Schemes of Work, Mark Schemes & Department Portal)';
+          ? 'Currently previewing Pupil View — click to resume Teacher Mode'
+          : 'Teacher / Staff Mode (Lesson Plans, Answer Keys & Schemes of Work)';
       toggleLabel.innerHTML =
-        '<i class="fa-solid fa-lock" style="margin-right: 6px; font-size: 0.7rem"></i>Staff';
+        '<i class="fa-solid fa-lock" style="margin-right: 6px; font-size: 0.72rem; color: #cbd5e1"></i>Teacher / Staff Mode';
       if (toggleSub) toggleSub.textContent = isPreviewPupil && isLocalHost ? 'Pupil Preview' : '';
     }
+  }
+
+  const syncCompactStaffBtn = (btn) => {
+    if (!btn) return;
+    if (isSafeguardLocked) {
+      btn.style.display = 'none';
+      btn.classList.add('staff-hidden');
+      btn.classList.remove('is-staff-active');
+      return;
+    }
+    btn.classList.remove('staff-hidden');
+    if (btn.id === 'btn-header-staff-toggle') {
+      btn.style.display = 'inline-flex';
+    }
+    btn.classList.toggle('is-staff-active', Boolean(active));
+    if (active) {
+      btn.title = isLocalHost
+        ? 'Teacher Mode ON — click to preview exact Pupil View'
+        : 'Teacher Mode ON — click to lock back to Pupil View';
+      btn.innerHTML =
+        '<i class="fa-solid fa-unlock-keyhole"></i> <span class="btn-text">Teacher ON</span>';
+    } else {
+      btn.title =
+        isPreviewPupil && isLocalHost
+          ? 'Currently previewing Pupil View — click to resume Teacher Mode'
+          : 'Teacher / Staff Mode (Lesson Plans, Answer Keys & Schemes of Work)';
+      btn.innerHTML =
+        '<i class="fa-solid fa-chalkboard-user"></i> <span class="btn-text">Teacher</span>';
+    }
+  };
+
+  syncCompactStaffBtn(headerStaffBtn);
+  if (typeof document !== 'undefined') {
+    document.querySelectorAll('.btn-fullwidth-staff-toggle').forEach(syncCompactStaffBtn);
   }
   if (typeof syncStaffAddressBarSeed === 'function') syncStaffAddressBarSeed();
 }

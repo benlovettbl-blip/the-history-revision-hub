@@ -2904,7 +2904,7 @@ img::after {
 }
 
 .lesson-hero-inner,
-.lesson-hero > div:last-child:not(.lesson-hero-cameo) {
+.lesson-hero > div:last-child:not(.lesson-hero-cameo):not(.lesson-hero-bottom-tools) {
   padding: 1rem 32px;
   box-sizing: border-box;
 }
@@ -16015,5 +16015,179 @@ body.lesson-full-width .btn-fullwidth-toggle,
   }
   .lesson-hero.has-hero-cameo .lesson-hero-content {
     padding-right: 1.25rem !important;
+  }
+}
+
+/* =========================================================================
+   Always-Findable Teacher / Staff Mode Toggle & Interactive Banner Zoom
+   ========================================================================= */
+.header-tool-btn.staff-hidden,
+.btn-fullwidth-staff-toggle.staff-hidden {
+  display: none !important;
+}
+
+.header-tool-btn.btn-header-staff {
+  border-color: var(--border-glass, #cbd5e1);
+  color: var(--text-primary, #1e293b);
+}
+
+.header-tool-btn.btn-header-staff i {
+  color: #475569;
+}
+
+.header-tool-btn.btn-header-staff:hover {
+  border-color: #10b981;
+  background: #f0fdf4;
+  color: #065f46;
+}
+
+.header-tool-btn.btn-header-staff:hover i {
+  color: #059669;
+}
+
+.header-tool-btn.btn-header-staff.is-staff-active {
+  background: #ecfdf5 !important;
+  border-color: #10b981 !important;
+  color: #065f46 !important;
+  box-shadow: 0 1px 4px rgba(16, 185, 129, 0.22);
+}
+
+.header-tool-btn.btn-header-staff.is-staff-active i {
+  color: #059669 !important;
+}
+
+.btn-fullwidth-staff-toggle {
+  display: none !important;
+}
+
+body.lesson-full-width .btn-fullwidth-staff-toggle:not(.staff-hidden) {
+  display: inline-flex !important;
+}
+
+#btn-sidebar-staff-toggle:hover {
+  border-color: rgba(148, 163, 184, 0.55) !important;
+  background: rgba(255, 255, 255, 0.11) !important;
+}
+
+/* Lesson Hero & Unit Homepage Banner Inspect Pill + Hover Caption Tooltip */
+.lesson-hero-bottom-tools {
+  position: absolute;
+  bottom: 8px;
+  right: 14px;
+  z-index: 9;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 !important;
+  pointer-events: auto;
+}
+
+.lesson-hero.has-hero-cameo .lesson-hero-bottom-tools {
+  right: 172px;
+}
+
+.hero-banner-inspect-wrap {
+  position: absolute;
+  bottom: 12px;
+  left: 20px;
+  z-index: 6;
+  display: inline-flex;
+  align-items: center;
+  pointer-events: auto;
+}
+
+.btn-banner-inspect {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: rgba(15, 23, 42, 0.78);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border: 1px solid rgba(251, 191, 36, 0.45);
+  color: #f8fafc;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  line-height: 1.2;
+  cursor: zoom-in;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  transition: background 0.16s ease, border-color 0.16s ease, transform 0.16s ease;
+  white-space: nowrap;
+}
+
+.btn-banner-inspect i {
+  color: #fbbf24;
+  font-size: 0.74rem;
+}
+
+.btn-banner-inspect:hover {
+  background: rgba(15, 23, 42, 0.94);
+  border-color: #fde047;
+  transform: translateY(-1px);
+}
+
+.lesson-banner-tooltip {
+  position: absolute;
+  bottom: calc(100% + 8px);
+  right: 0;
+  width: max-content;
+  max-width: min(420px, 68vw);
+  background: rgba(15, 23, 42, 0.96);
+  color: #f8fafc;
+  border: 1px solid rgba(251, 191, 36, 0.65);
+  border-left: 3px solid #fbbf24;
+  border-radius: 7px;
+  padding: 7px 11px;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 1.4;
+  text-align: left;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.55);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translateY(4px);
+  transition: opacity 0.16s ease, transform 0.16s ease, visibility 0.16s ease;
+  z-index: 22;
+}
+
+.lesson-banner-tooltip.hero-unit-tooltip {
+  right: auto;
+  left: 0;
+  max-width: min(460px, 76vw);
+}
+
+@media (hover: hover) {
+  .btn-banner-inspect:hover ~ .lesson-banner-tooltip,
+  .lesson-hero:hover:not(:has(.lesson-hero-cameo:hover)):not(:has(.spec-anchor-btn:hover)):not(:has(.btn-banner-gallery:hover)) .lesson-banner-tooltip,
+  .hero-container:hover:not(:has(.hero-curricular-launchpad:hover)):not(:has(button:not(.btn-banner-inspect):hover)):not(:has(a:hover)) .hero-unit-tooltip {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 740px) {
+  .lesson-hero.has-hero-cameo .lesson-hero-bottom-tools {
+    right: 12px;
+  }
+  .lesson-hero-bottom-tools {
+    bottom: 6px;
+    right: 10px;
+  }
+  .hero-banner-inspect-wrap {
+    bottom: 8px;
+    left: 12px;
+  }
+  .btn-banner-inspect {
+    padding: 3px 8px;
+    font-size: 0.68rem;
+  }
+  .lesson-banner-tooltip {
+    display: none !important;
   }
 }

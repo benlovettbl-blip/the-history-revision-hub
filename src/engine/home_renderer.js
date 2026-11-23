@@ -134,13 +134,32 @@ export function renderHomepage() {
       const heroOverlay = isKs2Hero
         ? 'linear-gradient(to bottom, rgba(15,23,42,0.46) 0%, rgba(15,23,42,0.58) 60%, rgba(15,23,42,0.82) 100%)'
         : 'linear-gradient(to bottom, rgba(15,23,42,0.85) 0%, rgba(15,23,42,0.7) 60%, rgba(15,23,42,0.9) 100%)';
+      const rawUnitCoverCap =
+        appStore.state.activeUnitData.cover_caption ||
+        appStore.state.activeUnitData.banner_caption ||
+        appStore.state.activeUnitData.title ||
+        'Historical Unit Cover Artwork';
+      const safeUnitCoverCap = String(rawUnitCoverCap)
+        .replace(/<[^>]+>/g, ' ')
+        .replace(/\*\*([^*]+)\*\*/g, '$1')
+        .replace(/\*([^*]+)\*/g, '$1')
+        .replace(/\s+/g, ' ')
+        .trim()
+        .replace(/"/g, '&quot;');
       topSectionHTML = `
-          <div class="hero-container" style="background: ${heroOverlay}, url('${heroImageUrl}') ${heroBgPos}/cover no-repeat;">
+          <div class="hero-container" data-action="open-modal" data-src="${heroImageUrl}" data-caption="${safeUnitCoverCap}" data-banner-clue="${safeUnitCoverCap}" style="background: ${heroOverlay}, url('${heroImageUrl}') ${heroBgPos}/cover no-repeat; cursor: zoom-in;">
             <h1 class="hero-title">${appStore.state.activeUnitData.enquiry_question || appStore.state.activeUnitData.enquiry || 'Unit Enquiry'}</h1>
             <h2 class="hero-subtitle">
               ${appStore.state.activeUnitData.title}
             </h2>
             ${launchpadHTML}
+            <div class="hero-banner-inspect-wrap no-print">
+              <button type="button" class="btn-banner-inspect" data-action="open-modal" data-src="${heroImageUrl}" data-caption="${safeUnitCoverCap}" data-banner-clue="${safeUnitCoverCap}" aria-label="Inspect unit cover artwork: ${safeUnitCoverCap}">
+                <i class="fa-solid fa-magnifying-glass-plus"></i>
+                <span>Inspect artwork</span>
+              </button>
+              <div class="lesson-banner-tooltip hero-unit-tooltip" role="tooltip">${safeUnitCoverCap}</div>
+            </div>
             ${appStore.state.activeUnitData.cover_caption ? `<p class="hero-caption">${appStore.state.activeUnitData.cover_caption}</p>` : ''}
           </div>
           ${renderCoverSourcesHTML(appStore.state.activeUnitData, true) ? `<div style="padding: 20px 30px 0 30px; background: white;">${renderCoverSourcesHTML(appStore.state.activeUnitData, true)}</div>` : ''}

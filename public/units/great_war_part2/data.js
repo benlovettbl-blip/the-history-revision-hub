@@ -13,7 +13,7 @@ export default {
   "homepage_background": "/images/sargent_gassed_1919.jpg",
   "enquiry": "How did total industrialised war (1914–1919) shatter societies and transform the modern world?",
   "cover_image": "/images/sargent_gassed_1919.jpg",
-  "cover_caption": "Primary Archival Record: John Singer Sargent • Gassed (1919). A monumental frieze of British infantrymen blinded by mustard gas walking toward an advanced dressing station along wooden duckboards. Imperial War Museums (Art.IWM ART 1460).",
+  "cover_caption": "John Singer Sargent’s Gassed (1919), depicting British soldiers blinded by mustard gas guiding one another along wooden duckboards toward a Western Front dressing station in August 1918.",
   "hero_image": "/images/stubbington_memorial_1.jpg",
   "hero_caption": "The Stubbington War Memorial, built in 1922 over the village pump on the green. Designed by the mother of the only woman commemorated, its unique wooden shelter stands as a powerful and poignant local reminder of the devastating human cost of the conflict on tight-knit communities.",
   "workbooks": [
@@ -539,7 +539,26 @@ export default {
               }
             ]
           }
-        }
+        },
+        "curriculum_link": "KS3 National Curriculum (Challenges 1901–Present): Voluntary recruitment in 1914, Belgian neutrality, Pals Battalions, working-class pragmatism, and social coercion — Multi-Causal Explanation.",
+        "hinge_question": "Why does calling 1914 volunteers 'gullible victims of government posters' miss the real economic, community, and moral reasons young men enlisted?",
+        "hinge_guidance": "Strong responses weave together at least three genuine drivers from Blocks [1.2]–[1.5] and Source E (Private Arthur Savage): moral outrage at Germany invading neutral Belgium and burning Louvain library (Source A); civic pride and peer solidarity in local Pals Battalions like the Pompey Pals (Source C); guaranteed wages, boots, and three hot meals ('the King's shilling') for poorly paid labourers; alongside intense public shaming from Jessie Pope's verse and the White Feather campaign. Probe any pupil who assumes Britain conscripted men from day one—unlike France and Germany, Britain relied entirely on volunteers until January 1916.",
+        "misconceptions": [
+          {
+            "misconception": "Pupils often assume Britain enforced compulsory military conscription in August 1914 just like continental Germany and France.",
+            "correction": "Britain entered the war with no peacetime conscription and a regular army of roughly 120,000 professional soldiers, forcing War Secretary Lord Kitchener to appeal for 500,000 volunteers (Block [1.1] and Source B)."
+          },
+          {
+            "misconception": "Pupils think Lord Kitchener promised recruits that the war would be 'over by Christmas'.",
+            "correction": "While many civilians and young recruits expected a brief campaign, Kitchener's September 1914 Guildhall speech (Source B) explicitly warned men to enlist for 'three years or the duration of the war'."
+          },
+          {
+            "misconception": "Pupils assume Pals Battalions had only positive effects because serving beside friends boosted morale.",
+            "correction": "Concentrating neighbours, workmates, and teammates into single infantry units meant that one morning's heavy machine-gun fire—especially on 1 July 1916—could devastate an entire town or neighbourhood at once."
+          }
+        ],
+        "send_adaptation": "Pair Private Arthur Savage's oral testimony (Source E) with the four-paragraph structure strip in the Recto writing task so pupils can match one concrete reason (Belgium, Pals, regular pay/boots, White Feathers) to each scaffolded paragraph.",
+        "stretch_challenge": "Compare the War Office Pals directive (Source C) with Jessie Pope's 'Who's for the Game?' (Source D): which exerted stronger psychological pressure on a hesitant nineteen-year-old clerk—positive loyalty to workmates or fear of public shame?"
       },
       "tasks": [
         {
@@ -1041,7 +1060,7 @@ export default {
       "banner": {
         "image": "/images/upgraded/ks3-empire-gw/gw2_l1_banner_lincolnshire_recruits_1914_q53285.jpg",
         "alt": "Hundreds of civilian volunteers in flat caps and suits carrying white kitbags as new recruits to the Lincolnshire Regiment parade past the brick grandstand on Lincoln Racecourse in September 1914",
-        "caption": "New Recruits to the Lincolnshire Regiment Parading on Lincoln Racecourse (September 1914, Imperial War Museums Q 53285)",
+        "caption": "Newly enlisted volunteers of the Lincolnshire Regiment parading in civilian flat caps and kitbags beside the grandstand at Lincoln Racecourse in September 1914.",
         "position": "center 56%"
       },
       "maps": [
@@ -1291,7 +1310,8 @@ export default {
       "hero_image": "/images/upgraded/ks3-empire-gw/gw2_l1_banner_lincolnshire_recruits_1914_q53285.jpg",
       "banner_position": "center 56%",
       "card_image": "/images/great_war_part2/gw2_l1_b0_kitchener_wants_you_leete_1914.jpg",
-      "enquiryQuestion": "Why were young British men so desperate to volunteer for the slaughter of 1914?"
+      "enquiryQuestion": "Why were young British men so desperate to volunteer for the slaughter of 1914?",
+      "banner_caption": "Newly enlisted volunteers of the Lincolnshire Regiment parading in civilian flat caps and kitbags beside the grandstand at Lincoln Racecourse in September 1914."
     },
     {
       "id": "lesson_2_trenches_haig",
@@ -1812,7 +1832,27 @@ export default {
               }
             ]
           }
-        }
+        },
+        "curriculum_link": "KS3 National Curriculum (Challenges 1901–Present): Industrial firepower, Western Front trench systems, 1 July 1916 on the Somme, and the Haig 'Butcher vs Learning Curve' debate — Source Cross-Referencing & Interpretations.",
+        "hinge_question": "When we cross-reference General Haig's pre-battle Fourth Army plan (Source C) with Private George Coppard's eyewitness memoir (Source D), why did 1 July 1916 turn into a catastrophe of 57,470 British casualties?",
+        "hinge_guidance": "Look for precise tactical analysis rather than personal insults against generals: Haig assumed a seven-day, 1.5-million-shell bombardment would cut German wire and crush trenches, but most shells were shrapnel rather than armour-piercing high explosive, leaving barbed wire tangled intact while German Maxim crews waited thirty feet underground in concrete dugouts before emerging to sweep No Man's Land. Probe pupils who rely solely on 'lions led by donkeys' stereotypes; direct them to Block [2.5] and John Keegan in Source E on how the British Army adapted via creeping barrages, tanks, and aircraft by 1918.",
+        "misconceptions": [
+          {
+            "misconception": "Pupils imagine Western Front trenches were single straight mud ditches where soldiers charged 'over the top' every day.",
+            "correction": "Trenches formed an engineered three-tier network (front, support, and reserve lines linked by communication trenches) dug in right-angled zig-zag bays ('traverses') to contain shell blasts (Block [2.2] and Source A)."
+          },
+          {
+            "misconception": "Pupils assume machine-gun bullets caused the vast majority of casualties across the entire First World War.",
+            "correction": "Although Maxim machine guns were lethal during exposed infantry assaults like 1 July 1916, heavy long-range artillery shrapnel and high-explosive shelling caused roughly 60 percent of all battlefield casualties (Vocab & Block [2.3])."
+          },
+          {
+            "misconception": "Pupils assume 'shell shock' was cowardice or a minor temporary fright rather than a severe medical injury.",
+            "correction": "Relentless concussive bombardments inflicted debilitating neurological and psychological trauma (recognised today as PTSD), documented alongside gangrenous trench foot in RAMC medical inspection reports (Source B)."
+          }
+        ],
+        "send_adaptation": "Use the aerial reconnaissance photo and War Office cross-section schematic (Source A) to label zig-zag traverses and the three trench tiers visually before completing the scaffolded 'Two Key Features' Recto task, then use the Block 5 spectrum slider to map Taylor vs Keegan.",
+        "stretch_challenge": "Evaluate A. J. P. Taylor and John Keegan in Source E alongside Ludendorff's 'Black Day' of August 1918 (previewed in Block [2.5]): if Haig's armies pioneered combined-arms victory in 1918, why does 1 July 1916 still dominate British public memory?",
+        "safeguarding_impartiality": "Sensitive Trauma & Bereavement Framing: Discuss gangrenous trench foot, shell shock (Source B), and mass Somme casualties clinically and respectfully without graphic sensationalism or trivialising trench games, keeping in mind pupils with serving Armed Forces family members."
       },
       "tasks": [
         {
@@ -2556,7 +2596,7 @@ export default {
       "banner": {
         "image": "/images/upgraded/ks3-empire-gw/gw2_l2_banner_somme_advance_ginchy_1916_q1302.jpg",
         "alt": "British infantrymen crouched in a shell-torn earth trench in the foreground while a line of supporting troops advances across open Somme ground beside a white artillery shell burst at Ginchy on 9 September 1916",
-        "caption": "British Supporting Troops Advancing Under Shellfire at the Battle of Ginchy, Somme (9 September 1916, Ernest Brooks, Imperial War Museums Q 1302)",
+        "caption": "Ernest Brooks’s photograph of British soldiers advancing across shell-torn ground under bursting artillery fire during the Battle of Ginchy on the Somme (9 September 1916).",
         "position": "center 42%"
       },
       "maps": [
@@ -2810,7 +2850,8 @@ export default {
       "hero_image": "/images/upgraded/ks3-empire-gw/gw2_l2_banner_somme_advance_ginchy_1916_q1302.jpg",
       "banner_position": "center 42%",
       "card_image": "/images/great_war_part2/gw2_l2_cameo_douglas_haig_portrait.jpg",
-      "enquiryQuestion": "Why was the Somme so costly—and does General Haig deserve the blame?"
+      "enquiryQuestion": "Why was the Somme so costly—and does General Haig deserve the blame?",
+      "banner_caption": "Ernest Brooks’s photograph of British soldiers advancing across shell-torn ground under bursting artillery fire during the Battle of Ginchy on the Somme (9 September 1916)."
     },
     {
       "id": "lesson_3_empire_troops",
@@ -3303,7 +3344,27 @@ export default {
               }
             ]
           }
-        }
+        },
+        "curriculum_link": "KS3 National Curriculum (Challenges 1901–Present): Global imperial mobilisation — the Indian Army at First Ypres, ANZACs at Gallipoli, the BWIR, Chinese Labour Corps, African Carrier Corps, and post-war erasure (Historical Interpretations).",
+        "hinge_question": "Why did imperial service in 1914–1918—celebrated on posters as 'imperial brotherhood'—accelerate demands for independence across the British Empire after 1919?",
+        "hinge_guidance": "Strong answers contrast Britain's wartime rhetoric ('The Empire Needs Men!', Source A, and Lord Curzon's Interpretation 1) with the lived institutional racism documented in Blocks [3.4]–[3.5] and Source E: 130,000 Indian soldiers held Flanders in thin cotton uniforms, 140,000 Chinese Labour Corps workers were locked in segregated camps, British West Indies Regiment soldiers at Taranto were denied equal pay rises and ordered to clean white troops' latrines, and fallen African carriers were left in unmarked graves and excluded from the July 1919 London Victory Parade. Probe any pupil who thinks colonial personnel only served in minor side theatres away from France and Belgium.",
+        "misconceptions": [
+          {
+            "misconception": "Pupils often picture the Western Front in France and Belgium as fought exclusively by white European soldiers.",
+            "correction": "Over four million colonial and Dominion personnel mobilised globally, including 130,000 Indian Expeditionary Force troops rushed to Flanders in autumn 1914—where Sepoy Khudadad Khan won the first Asian Victoria Cross at Hollebeke—and 140,000 Chinese Labour Corps workers in France."
+          },
+          {
+            "misconception": "Pupils assume Caribbean volunteers in the British West Indies Regiment were treated equally alongside white British regiments.",
+            "correction": "War Office prejudice restricted most of the 15,600 BWIR volunteers in Europe to hazardous ammunition and labour duties, denied them equal pay increases, and provoked the December 1918 Taranto Mutiny when men were ordered to clean latrines for white troops (Source E)."
+          },
+          {
+            "misconception": "Pupils assume every fallen serviceman across the British Empire received an individual named headstone after 1918.",
+            "correction": "While fallen white British soldiers received individual graves and bronze memorial plaques, hundreds of thousands of African Carrier Corps porters who died in East Africa were left in unmarked graves without individual commemoration (Block [3.5])."
+          }
+        ],
+        "send_adaptation": "Anchor the five global theatres on the Block 1 Reference Map (India, ANZAC Gallipoli, Caribbean BWIR, East African Carrier Corps, Chinese Labour Corps) before pairing Lord Curzon's 1917 speech (Interpretation 1) against Source E (Taranto report) on the Recto task.",
+        "stretch_challenge": "Using Second Lieutenant Walter Tull's commission (Source C) alongside the Taranto Mutiny inquiry (Source E), explain the tension between frontline meritocracy under fire and official War Office racial policy.",
+        "safeguarding_impartiality": "Respectful Framing of Colonial Racism: Contextualise discriminatory imperial policies and insulting racial treatment recorded in the 1918 War Office Taranto Mutiny report (Source E) accurately as historical evidence of institutional racism, centring the skill, dignity, and agency of Indian, Caribbean, Chinese, and African personnel."
       },
       "vocab_cloze_text": "When Britain declared war in 1914, it commanded the vast resources of the [British Empire]. With the regular army exhausted, over one million Indian troops rushed to Europe, where an infantryman was known as a [Sepoy]. For extraordinary courage at First Ypres, Khudadad Khan became the first South Asian awarded the [Victoria Cross]. Behind the front lines, 140,000 men of the [Chinese Labour Corps] handled millions of artillery shells, while volunteers of the [British West Indies Regiment] endured racial segregation. Wounded soldiers received medical care at the [Royal Pavilion, Brighton], but private mail faced strict [Imperial Censorship]. Returning home, colonial veterans demanded [Self-Determination], sparking powerful movements for national independence.",
       "video": [
@@ -3877,7 +3938,7 @@ export default {
       "banner": {
         "image": "/images/upgraded/ks3-empire-gw/gw2_l3_banner_anzac_cove_gallipoli_1915.jpg",
         "alt": "Rowing boats packed with Australian infantrymen landing along the narrow shingle beach at ANZAC Cove, Gallipoli while troops in slouch hats gather among scrub on the foreshore on 25 April 1915",
-        "caption": "The Landing of Australian Troops at ANZAC Cove, Gallipoli (25 April 1915, State Library of New South Wales PXB 592)",
+        "caption": "Australian and New Zealand troops coming ashore from packed rowboats onto the narrow pebble beach at ANZAC Cove on the Gallipoli Peninsula (25 April 1915).",
         "position": "center 50%"
       },
       "maps": [
@@ -4224,7 +4285,8 @@ export default {
       "hero_image": "/images/upgraded/ks3-empire-gw/gw2_l3_banner_anzac_cove_gallipoli_1915.jpg",
       "banner_position": "center 50%",
       "card_image": "/images/great_war_part2/gw2_l3_b1_indian_mg_crew_flanders_1914.jpg",
-      "enquiryQuestion": "Why were over four million colonial and dominion troops erased from popular memory?"
+      "enquiryQuestion": "Why were over four million colonial and dominion troops erased from popular memory?",
+      "banner_caption": "Australian and New Zealand troops coming ashore from packed rowboats onto the narrow pebble beach at ANZAC Cove on the Gallipoli Peninsula (25 April 1915)."
     },
     {
       "id": "lesson_4_home_front_dora",
@@ -4717,7 +4779,26 @@ export default {
               }
             ]
           }
-        }
+        },
+        "curriculum_link": "KS3 National Curriculum (Challenges 1901–Present): Total war on the British Home Front — DORA (1914), the 1915 Shell Crisis, January 1916 conscription, Conscientious Objectors, 'Canary Girls', and 1918 rationing (Chronological Narrative).",
+        "hinge_question": "How did total war between 1914 and 1918 overturn Victorian 'laissez-faire' freedom and draw the British state into almost every corner of civilian life?",
+        "hinge_guidance": "Listen for concrete examples spanning governance, industry, military service, and food: DORA (August 1914, Source A) imposed censorship, blackouts, and pub rules; the May 1915 Shell Crisis forced Lloyd George's Ministry of Munitions to take over factories staffed by nearly one million female 'Canary Girls' producing 80 percent of shells (Source C); the January 1916 Military Service Act ended voluntary tradition with conscription; and unrestricted U-boat attacks in 1917 forced compulsory ration books by early 1918 (Source B). Probe pupils who confuse WWI rationing (introduced late, in early 1918) with WWII rationing (introduced straight away in 1940).",
+        "misconceptions": [
+          {
+            "misconception": "Pupils often confuse the two world wars and assume compulsory food ration books began in Britain in 1914.",
+            "correction": "Compulsory ration books for sugar, meat, and butter were only introduced in early 1918 (Source B) after unrestricted German U-boat warfare in 1917 cut Britain's wheat reserves to roughly six weeks."
+          },
+          {
+            "misconception": "Pupils assume all 16,000 Conscientious Objectors refused every form of wartime help out of fear.",
+            "correction": "Many objectors served bravely as unarmed stretcher-bearers, while 'absolutists' like the Richmond Sixteen (Source E) endured prison chains and death sentences in France rather than betray deeply held religious or moral convictions."
+          },
+          {
+            "misconception": "Pupils think factory work for female 'Munitionettes' was safe, well-paid, and led to equal voting rights for young women in 1918.",
+            "correction": "Munitions workers endured twelve-hour shifts handling toxic TNT that turned skin yellow ('Canary Girls', Source C) and lethal blasts like Silvertown (1917, 73 killed), yet the 1918 voting Act excluded most young munitions workers under age thirty."
+          }
+        ],
+        "send_adaptation": "Use the Block 3 profile deck to clarify the difference between volunteers, conscripts, and conscientious objectors, then follow the three-phase structure strip on the Recto task (May 1915 Shell Crisis -> Lloyd George's Ministry of Munitions -> January 1916 Military Service Act).",
+        "stretch_challenge": "Compare the Southwark Military Service Tribunal transcript (Source D) with Norman Gaudie's Richmond Castle cell inscription (Source E): why did a liberal democracy feel compelled to prosecute tiny numbers of absolutist objectors so harshly in 1916?"
       },
       "vocab_cloze_text": "During the First World War, daily life on the British [Home Front] was transformed by total war. In August 1914, Parliament passed [DORA], giving the government control over mines, railways, pub hours, and press censorship. As casualty lists grew, the state ended voluntary enlistment by introducing compulsory [Conscription] in 1916. Those who refused on moral grounds were branded a [Conscientious Objector] and imprisoned. To replace men at the front, over one million women became [Munitionettes], risking toxic chemical jaundice as [Canary Girls] filling artillery shells. Under pressure from German U-boats, the government introduced [Compulsory Rationing] in 1918. In recognition of changing times, Parliament passed the [Representation of the People Act] in 1918, granting the vote to men over 21 and women over 30.",
       "video": [
@@ -5245,7 +5326,7 @@ export default {
       "banner": {
         "image": "/images/upgraded/ks3-empire-gw/gw2_l4_banner_chilwell_canary_girls_1917_q30018.jpg",
         "alt": "Rows of thousands of heavy steel high-explosive artillery shells standing upright inside the vast iron-trussed shell warehouse at National Shell Filling Factory No. 6, Chilwell, tended by female munition workers in July 1917",
-        "caption": "Female Munition Workers in the Shell Warehouse at National Shell Filling Factory No. 6, Chilwell, Nottinghamshire (July 1917, Horace Nicholls, Imperial War Museums Q 30018)",
+        "caption": "Horace Nicholls’s photograph of female munitions workers inspecting thousands of high-explosive artillery shells inside National Shell Filling Factory No. 6 at Chilwell, Nottinghamshire (July 1917).",
         "position": "center 42%"
       },
       "maps": [
@@ -5589,7 +5670,8 @@ export default {
       "hero_image": "/images/upgraded/ks3-empire-gw/gw2_l4_banner_chilwell_canary_girls_1917_q30018.jpg",
       "banner_position": "center 42%",
       "card_image": "/images/great_war_part2/gw2_l4_b3_forbes_the_munition_girls_1918.jpg",
-      "enquiryQuestion": "How far did the First World War transform life on Britain’s Home Front?"
+      "enquiryQuestion": "How far did the First World War transform life on Britain’s Home Front?",
+      "banner_caption": "Horace Nicholls’s photograph of female munitions workers inspecting thousands of high-explosive artillery shells inside National Shell Filling Factory No. 6 at Chilwell, Nottinghamshire (July 1917)."
     },
     {
       "id": "lesson_5_versailles",
@@ -6082,7 +6164,26 @@ export default {
               }
             ]
           }
-        }
+        },
+        "curriculum_link": "KS3 National Curriculum (Challenges 1901–Present): The November 1918 Armistice, conflicting aims of the Big Three at Paris, the June 1919 Treaty of Versailles, and historiography (Keynes vs MacMillan) — Evaluative Essay.",
+        "hinge_question": "Why did the conflicting aims of Wilson, Clemenceau, and Lloyd George in Paris guarantee a treaty that was too harsh to win German acceptance yet too lenient to crush German power permanently?",
+        "hinge_guidance": "Strong answers pinpoint this fatal middle ground: Clemenceau's traumatised France wanted permanent German dismemberment, Wilson championed self-determination and a League of Nations, and Lloyd George wanted Germany punished yet economically strong enough to buy British exports (Block [5.2]). Consequently, Article 231 War Guilt and £6.6 billion reparations infuriated Germans across every party as a 'Diktat' (Keynes and Will Dyson's '1940 Class' cartoon, Source E), yet Germany retained its industrial heartland and Europe's largest population—meaning peace collapsed in the 1930s when Allied will to enforce the treaty failed (Block [5.5]). Probe deterministic claims that June 1919 automatically made Adolf Hitler's rise inevitable without the 1929 Great Depression or 1930s appeasement.",
+        "misconceptions": [
+          {
+            "misconception": "Pupils sometimes echo interwar German propaganda that the German Army was undefeated on the battlefield in 1918 ('stabbed in the back').",
+            "correction": "General Ludendorff himself called 8 August 1918 the 'black day of the German Army' (Source A) as Allied tanks and combined-arms offensives shattered German lines before naval mutinies at Kiel forced Kaiser Wilhelm II to flee."
+          },
+          {
+            "misconception": "Pupils assume Britain and France agreed completely at Paris and wanted identical harsh terms imposed on Germany.",
+            "correction": "While Clemenceau demanded maximum security for twice-invaded France, Lloyd George privately feared that crushing Germany economically would ruin British trade and push Central Europe toward Bolshevik revolution."
+          },
+          {
+            "misconception": "Pupils assume German diplomats sat around the table with the Big Three to negotiate the 440 articles of Versailles.",
+            "correction": "Defeated Germany was barred from the negotiations at Paris (Source C) and handed the finished treaty in May 1919 under threat of Allied invasion—why Germans condemned it as a 'Diktat' (dictated peace)."
+          }
+        ],
+        "send_adaptation": "Use the Block 2 Big Three profile deck and Block 5 spectrum slider to sort evidence into 'Too Harsh (Keynes / Dyson Source E)' vs 'Manageable if Enforced (MacMillan)' before following the Recto three-paragraph evaluative essay strip.",
+        "stretch_challenge": "Connect Enquiry 1 of Causes of the Great War (the 1871 Treaty of Frankfurt and Hall of Mirrors coronation) to Versailles in June 1919: how did Clemenceau's lifelong memory of 1871 shape French demands, and why did Keynes call the result a 'Carthaginian peace'?"
       },
       "vocab_cloze_text": "In 1919, the Paris Peace Conference was dominated by [The Big Three]. French leader [Georges Clemenceau] demanded harsh revenge to weaken Germany, while US President [Woodrow Wilson] promoted self-determination. The resulting Treaty of Versailles was denounced in Berlin as a humiliating [Diktat]. Under the hated [Article 231], Germany was forced to accept sole war guilt, justifying colossal financial [Reparations] of £6.6 billion. The German military was severely reduced, with the Rhineland turned into a [Demilitarized Zone]. Although Wilson established the [League of Nations] to prevent future conflict, the treaty’s harsh terms planted the seeds of bitter resentment.",
       "video": [
@@ -7001,7 +7102,8 @@ export default {
       "hero_image": "/images/upgraded/ks3-empire-gw/gw2_l5_banner_versailles_signing_hall_of_mirrors_1919.jpg",
       "banner_position": "center 55%",
       "card_image": "/images/great_war_part2/gw2_l5_b0_compiegne_armistice_carriage_1918.jpg",
-      "enquiryQuestion": "Did the Treaty of Versailles solve the problems of 1914, or create the nightmares of 1939?"
+      "enquiryQuestion": "Did the Treaty of Versailles solve the problems of 1914, or create the nightmares of 1939?",
+      "banner_caption": "Delegations Witnessing the Signing of the Treaty of Versailles in the Hall of Mirrors (28 June 1919)"
     }
   ],
   "guided_reading": [
@@ -7727,5 +7829,10 @@ export default {
       ]
     }
   ],
-  "is_ks3": true
+  "is_ks3": true,
+  "teacher_guidance_overview": {
+    "curriculum_focus": "KS3 National Curriculum: Challenges for Britain, Europe and the wider world 1901 to the present day (First World War mobilisation, Western Front trench warfare, global Empire troops, Home Front total war, and the 1919 peace settlement).",
+    "disciplinary_threads": "Multi-Causal Explanation, Forensic Source Cross-Referencing, Historical Interpretations, and Significance & Memory.",
+    "non_specialist_summary": "Picking up in August 1914, this five-enquiry Year 9 unit examines how an expected short European campaign turned into four years of global industrial total war. Pupils investigate voluntary enlistment and Pals Battalions, Western Front stalemate and the historiographical debate over General Douglas Haig on the Somme, the indispensable yet long-marginalised service of four million colonial and Dominion personnel, DORA and female munitions labour at home, and the contested 1919 Treaty of Versailles."
+  }
 };

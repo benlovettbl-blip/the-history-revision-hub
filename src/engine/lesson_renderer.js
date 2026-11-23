@@ -37,6 +37,10 @@ import {
   renderFurtherReadingShelfHTML,
   runPendingQuestionDeepLink,
 } from './share_utils.js';
+import { openUnifiedTeacherGuidance } from './teacher_guidance_modal.js';
+if (typeof window !== 'undefined' && !window.openUnifiedTeacherGuidance) {
+  window.openUnifiedTeacherGuidance = openUnifiedTeacherGuidance;
+}
 
 import {
   KS2_CANONICAL_UNITS,
@@ -759,13 +763,12 @@ export function renderLesson(lesson) {
               ${isKs2
         ? `
                     <button type="button" class="btn btn-ks2-worksheet-launcher" onclick="window.openKs2WorksheetModal('${lesson.id}', ${currentIndex})" style="padding: 6px 12px; font-size: 0.88rem; background: #eff6ff; color: #1e3a8a; border: 1.5px solid #bfdbfe; font-weight: 700; border-radius: 6px; box-shadow: 0 1px 3px rgba(30, 58, 138, 0.1); display: inline-flex; align-items: center; gap: 6px; cursor: pointer;" title="Open A4 Companion Worksheet (PDF & Print)"><i class="fa-solid fa-file-pdf" style="color: #2563eb;"></i> <span>Enquiry Worksheet</span></button>
-                    ${
-                      isStaffModeActive()
-                        ? `
-                    <button type="button" class="btn btn-ks2-teacher-launcher" onclick="window.openKs2TeacherGuidanceModal('${lesson.id}', ${currentIndex})" style="padding: 6px 12px; font-size: 0.88rem; background: #fdf2f8; color: #9d174d; border: 1.5px solid #fbcfe8; font-weight: 700; border-radius: 6px; box-shadow: 0 1px 3px rgba(157, 23, 77, 0.1); display: inline-flex; align-items: center; gap: 6px; cursor: pointer;" title="Staff Only: Walk-In Primary Teacher Guidance & Model Answers"><i class="fa-solid fa-chalkboard-user" style="color: #be185d;"></i> <span>Teacher Guidance</span></button>
-                    `
-                        : ''
-                    }
+                  `
+        : ''
+      }
+              <button type="button" class="btn btn-teacher-guidance-launcher no-print" onclick="window.openUnifiedTeacherGuidance && window.openUnifiedTeacherGuidance('${lesson.id}', ${currentIndex}, '${unitId}')" style="display: ${isStaffModeActive() ? 'inline-flex' : 'none'}; padding: 6px 12px; font-size: 0.86rem; background: #fdf2f8; color: #9d174d; border: 1.5px solid #fbcfe8; font-weight: 700; border-radius: 6px; box-shadow: 0 1px 3px rgba(157, 23, 77, 0.1); align-items: center; gap: 6px; cursor: pointer; white-space: nowrap;" title="Staff Only: Walk-In Teacher Guidance, Misconceptions, Delivery Plan &amp; Answer Key"><i class="fa-solid fa-chalkboard-user" style="color: #be185d;"></i> <span>Teacher Guidance</span></button>
+              ${isKs2
+        ? `
                     <a href="/pdfs/${unitId || 'ks2_ww2'}_pupil_workbook.pdf" target="_blank" class="btn btn-ks2-workbook-launcher" style="padding: 6px 12px; font-size: 0.88rem; background: #f0fdf4; color: #166534; border: 1.5px solid #bbf7d0; font-weight: 700; text-decoration: none; border-radius: 6px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); display: inline-flex; align-items: center; gap: 6px;" title="Open complete Pupil Workbook (PDF)"><i class="fa-solid fa-book-bookmark" style="color: #16a34a;"></i> <span>Pupil Workbook (PDF)</span></a>
                     <button type="button" class="btn btn-ks2-quiz-jump" onclick="if(window.consolidateStations && window.consolidateStations['${lesson.id}'] && !window.consolidateStations['${lesson.id}'].isOpen){ window.switchConsolidateTab('${lesson.id}', 'quiz'); } else if(window.consolidateStations && window.consolidateStations['${lesson.id}'] && window.consolidateStations['${lesson.id}'].mode !== 'quiz'){ window.switchConsolidateTab('${lesson.id}', 'quiz'); } const qb = document.getElementById('tab-btn-quiz-${lesson.id}'); if(qb) qb.scrollIntoView({ behavior: 'smooth', block: 'start' });" style="padding: 6px 12px; font-size: 0.88rem; background: #fffbeb; color: #92400e; border: 1.5px solid #fde68a; font-weight: 700; border-radius: 6px; box-shadow: 0 1px 3px rgba(146, 64, 14, 0.1); display: inline-flex; align-items: center; gap: 6px; cursor: pointer;" title="Jump straight to the 5-Question Lesson Quiz"><i class="fa-solid fa-circle-question" style="color: #d97706;"></i> <span>Lesson Quiz</span></button>
                   `
@@ -785,6 +788,19 @@ export function renderLesson(lesson) {
             `
     }
           ${renderTopShareLessonBtnHTML(unitId, currentIndex)}
+          <button type="button" class="header-tool-btn btn-header-staff btn-fullwidth-staff-toggle no-print${(() => {
+            try {
+              const p = new URLSearchParams(window.location.search || '');
+              return p.get('locked') === 'true' || p.get('mode') === 'pupil' || p.get('safeguard') === 'true'
+                ? ' staff-hidden'
+                : '';
+            } catch (e) {
+              return '';
+            }
+          })()}${isStaffModeActive() ? ' is-staff-active' : ''}" onclick="window.toggleGlobalStaffMode && window.toggleGlobalStaffMode()" title="${isStaffModeActive() ? 'Teacher Mode ON — click to switch to Pupil View' : 'Teacher / Staff Mode (Lesson Plans, Answer Keys & Schemes of Work)'}">
+            <i class="fa-solid ${isStaffModeActive() ? 'fa-unlock-keyhole' : 'fa-chalkboard-user'}"></i>
+            <span class="btn-text">${isStaffModeActive() ? 'Teacher ON' : 'Teacher'}</span>
+          </button>
           <button type="button" class="btn-fullwidth-toggle no-print ${isFullWidth ? 'active' : ''}" onclick="window.toggleLessonFullWidth()" title="${isFullWidth ? 'Restore outer sidebar and top bar' : 'Hide outer sidebar and top bar for full-width classroom view'}">
             <i class="fa-solid ${isFullWidth ? 'fa-compress' : 'fa-expand'}"></i>
             <span class="fw-btn-label">${isFullWidth ? 'Restore Sidebar' : 'Full-Width View'}</span>
@@ -823,8 +839,8 @@ export function renderLesson(lesson) {
 
     if (isBannerArtwork) {
       bannerGalleryBtn = `
-        <button class="btn-banner-gallery" data-action="open-masterpiece" data-banner-lesson="${lesson.id}" style="position: absolute; bottom: 16px; right: 4rem; z-index: 10;" title="Launch Art Spotlight">
-          <i class="fa-solid fa-palette" style="color: #fbbf24; font-size: 0.9rem;"></i>
+        <button type="button" class="btn-banner-gallery" data-action="open-masterpiece" data-banner-lesson="${lesson.id}" style="position: relative; z-index: 10;" title="Launch Art Spotlight">
+          <i class="fa-solid fa-palette" style="color: #fbbf24; font-size: 0.85rem;"></i>
           <span>Art Spotlight</span>
         </button>
       `;
@@ -836,6 +852,21 @@ export function renderLesson(lesson) {
   const cleanLessonHeading = (lesson.title || '')
     .replace(/^(?:Enquiry|Lesson)\s*\d+:\s*/i, '')
     .trim();
+
+  const rawBannerCaption =
+    (typeof lesson.banner === 'object' && lesson.banner ? lesson.banner.caption : '') ||
+    lesson.banner_caption ||
+    lesson.hero_caption ||
+    activeUnit?.cover_caption ||
+    cleanLessonHeading ||
+    '';
+  const safeBannerCap = String(rawBannerCaption)
+    .replace(/<[^>]+>/g, ' ')
+    .replace(/\*\*([^*]+)\*\*/g, '$1')
+    .replace(/\*([^*]+)\*/g, '$1')
+    .replace(/\s+/g, ' ')
+    .trim()
+    .replace(/"/g, '&quot;');
 
   const isHeadingAQuestion =
     /\?\s*$/.test(cleanLessonHeading) ||
@@ -892,7 +923,7 @@ export function renderLesson(lesson) {
     specPillHtml = `
       <button type="button"
         class="spec-anchor-btn"
-        onclick="window.showLessonSpecModal('${safeSpec}', '${specPaperBadge}', '${safeTitle}')"
+        onclick="event.stopPropagation(); window.showLessonSpecModal('${safeSpec}', '${specPaperBadge}', '${safeTitle}')"
         style="pointer-events: auto; background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(148, 163, 184, 0.45); color: #93c5fd; padding: 4px 12px; border-radius: 6px; font-family: 'Inter', sans-serif; font-size: 0.74rem; font-weight: 700; letter-spacing: 0.4px; display: inline-flex; align-items: center; gap: 6px; backdrop-filter: blur(6px); cursor: pointer; transition: all 0.2s;"
         onmouseover="this.style.background='rgba(30, 41, 59, 0.9)'; this.style.borderColor='#60a5fa'; this.style.color='#bfdbfe';"
         onmouseout="this.style.background='rgba(15, 23, 42, 0.75)'; this.style.borderColor='rgba(148, 163, 184, 0.45)'; this.style.color='#93c5fd';"
@@ -915,25 +946,45 @@ export function renderLesson(lesson) {
     cameoImageUrl && cameoImageUrl !== resolvedHeroImage && cameoImageUrl !== firstStageImageUrl,
   );
 
+  const heroZoomAttrs = resolvedHeroImage
+    ? ` data-action="open-modal" data-src="${resolvedHeroImage}" data-caption="${safeBannerCap}" data-banner-clue="${safeBannerCap}"`
+    : '';
+  const heroCursorRule = resolvedHeroImage ? ' cursor: zoom-in;' : '';
+
   const heroContainerStyle = isKs2
-    ? `position: relative; width: 100%; margin-left: 0; margin-top: 0.25rem; height: ${heroBannerHeight}; background: #0f172a url('${resolvedHeroImage}') ${bannerPosition}/cover no-repeat; margin-bottom: 0.6rem; border-radius: 12px; overflow: hidden; border: 1px solid rgba(15,23,42,0.12); box-shadow: 0 6px 18px rgba(15,23,42,0.12);`
-    : `position: relative; width: 100%; margin-left: 0; margin-right: 0; margin-top: 0.25rem; height: ${heroBannerHeight}; background: #0f172a url('${resolvedHeroImage}') ${bannerPosition}/cover no-repeat; margin-bottom: 0.5rem; border-radius: 10px; overflow: hidden; border: 1px solid rgba(15,23,42,0.14); box-shadow: 0 4px 16px rgba(0,0,0,0.08);`;
+    ? `position: relative; width: 100%; margin-left: 0; margin-top: 0.25rem; height: ${heroBannerHeight}; background: #0f172a url('${resolvedHeroImage}') ${bannerPosition}/cover no-repeat; margin-bottom: 0.6rem; border-radius: 12px; overflow: hidden; border: 1px solid rgba(15,23,42,0.12); box-shadow: 0 6px 18px rgba(15,23,42,0.12);${heroCursorRule}`
+    : `position: relative; width: 100%; margin-left: 0; margin-right: 0; margin-top: 0.25rem; height: ${heroBannerHeight}; background: #0f172a url('${resolvedHeroImage}') ${bannerPosition}/cover no-repeat; margin-bottom: 0.5rem; border-radius: 10px; overflow: hidden; border: 1px solid rgba(15,23,42,0.14); box-shadow: 0 4px 16px rgba(0,0,0,0.08);${heroCursorRule}`;
   const heroOverlayStyle = isKs2
     ? `position: absolute; inset: 0; background: linear-gradient(90deg, rgba(15,23,42,0.86) 0%, rgba(15,23,42,0.46) 54%, rgba(15,23,42,0.08) 100%), linear-gradient(to top, rgba(15,23,42,0.78) 0%, rgba(15,23,42,0.18) 55%, rgba(15,23,42,0.04) 100%);`
     : `position: absolute; inset: 0; background: linear-gradient(90deg, rgba(15,23,42,0.88) 0%, rgba(15,23,42,0.48) 54%, rgba(15,23,42,0.08) 100%), linear-gradient(to top, rgba(15,23,42,0.80) 0%, rgba(15,23,42,0.20) 55%, rgba(15,23,42,0.04) 100%);`;
-  const heroContentPadding = isKs2 ? '1rem 1.75rem' : '0.9rem 1.5rem';
+  const heroContentPadding = isKs2
+    ? '0.75rem 1.75rem 1.6rem 1.75rem'
+    : '0.65rem 1.5rem 1.55rem 1.5rem';
 
   const safeCameoAlt = String((iconicVisuals && iconicVisuals.cameoAlt) || cleanLessonHeading).replace(/"/g, '&quot;');
   const heroCameoHtml = hasHeroCameo
     ? `
-      <div class="lesson-hero-cameo" data-action="open-modal" data-src="${cameoImageUrl}" data-cameo-clue="${safeCameoAlt}" title="${safeCameoAlt} (Click to zoom)" role="button" tabindex="0">
-        <img src="${cameoImageUrl}" alt="${safeCameoAlt}" data-action="open-modal" data-src="${cameoImageUrl}" decoding="async" />
+      <div class="lesson-hero-cameo" data-action="open-modal" data-src="${cameoImageUrl}" data-caption="${safeCameoAlt}" data-cameo-clue="${safeCameoAlt}" title="${safeCameoAlt} (Click to zoom)" role="button" tabindex="0">
+        <img src="${cameoImageUrl}" alt="${safeCameoAlt}" data-action="open-modal" data-src="${cameoImageUrl}" data-caption="${safeCameoAlt}" decoding="async" />
+      </div>
+    `
+    : '';
+
+  const bannerInspectHtml = resolvedHeroImage
+    ? `
+      <div class="lesson-hero-bottom-tools no-print">
+        ${hasHeroCameo ? '' : bannerGalleryBtn}
+        <button type="button" class="btn-banner-inspect" data-action="open-modal" data-src="${resolvedHeroImage}" data-caption="${safeBannerCap}" data-banner-clue="${safeBannerCap}" aria-label="Inspect banner artwork: ${safeBannerCap}">
+          <i class="fa-solid fa-magnifying-glass-plus"></i>
+          <span>Inspect artwork</span>
+        </button>
+        ${safeBannerCap ? `<div class="lesson-banner-tooltip" role="tooltip">${safeBannerCap}</div>` : ''}
       </div>
     `
     : '';
 
   html += `
-      <div class="lesson-hero${heroExtraClass}${isKs2 ? ' ks2-hero' : ''}${hasHeroCameo ? ' has-hero-cameo' : ''}" style="${heroContainerStyle}">
+      <div class="lesson-hero${heroExtraClass}${isKs2 ? ' ks2-hero' : ''}${hasHeroCameo ? ' has-hero-cameo' : ''}"${heroZoomAttrs} style="${heroContainerStyle}">
         <div style="${heroOverlayStyle}"></div>
         <div class="lesson-hero-content" style="position: absolute; inset: 0; z-index: 4; display: flex; flex-direction: column; justify-content: center; gap: 3px; width: 100%; padding: ${heroContentPadding}; box-sizing: border-box; pointer-events: none;">
           <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px; margin-bottom: 2px;">
@@ -944,7 +995,7 @@ export function renderLesson(lesson) {
           ${enquirySubtitle}
         </div>
         ${heroCameoHtml}
-        ${hasHeroCameo ? '' : bannerGalleryBtn}
+        ${bannerInspectHtml}
       </div>
     `;
 
@@ -953,89 +1004,6 @@ export function renderLesson(lesson) {
         <div id="progress-bar" style="background: #10b981; height: 100%; width: 0%; transition: width 0.3s;"></div>
       </div>
     `;
-
-  // -----------------------------------------------------
-  // TEACHER-MODE-ONLY GUIDANCE & 2-LESSON DELIVERY DRAWER
-  // -----------------------------------------------------
-  if (lesson.teacher_notes && (lesson.teacher_notes.primer || lesson.teacher_notes.delivery_plan)) {
-    const tn = lesson.teacher_notes;
-    const dp = tn.delivery_plan;
-    const renderDpLessonCard = (lObj, fallbackLabel) => {
-      if (!lObj || !Array.isArray(lObj.phases) || lObj.phases.length === 0) return '';
-      const heading = lObj.title || (lObj.focus ? `${fallbackLabel}: ${lObj.focus}` : fallbackLabel);
-      const rows = lObj.phases
-        .map((p) => {
-          let tBadge = p.time || '';
-          let pLabel = p.label || p.phase || '';
-          const pInstr = p.instruction || p.activity || '';
-          if (!tBadge && pLabel) {
-            const tm = pLabel.match(/\(([^)]*(?:min|m)[^)]*)\)/i);
-            if (tm) {
-              tBadge = tm[1].replace(/\s*mins?\b/i, 'm');
-              pLabel = pLabel.replace(/\s*\([^)]*\)\s*/, '').replace(/^Phase\s+\d+:\s*/i, '').trim();
-            }
-          }
-          return `
-            <div style="display: flex; gap: 8px; font-size: 0.81rem; line-height: 1.45; margin-bottom: 5px;">
-              ${tBadge ? `<span style="background: #e0f2fe; color: #0369a1; font-weight: 800; padding: 1px 6px; border-radius: 3px; font-family: monospace; white-space: nowrap; height: fit-content;">${tBadge}</span>` : ''}
-              <div style="color: #334155;">${pLabel ? `<strong style="color: #0f172a;">${pLabel}:</strong> ` : ''}${pInstr}</div>
-            </div>
-          `;
-        })
-        .join('');
-      return `
-        <div style="background: #ffffff; border: 1px solid #cbd5e1; border-radius: 6px; padding: 10px 12px; flex: 1 1 300px; min-width: 260px;">
-          <div style="font-weight: 800; color: #0284c7; font-size: 0.83rem; margin-bottom: 7px;">
-            <i class="fa-regular fa-clock"></i> ${heading}
-          </div>
-          ${rows}
-        </div>
-      `;
-    };
-
-    const hasDeliveryCards = Boolean(dp && (dp.lesson_1 || dp.lesson_2));
-    html += `
-      <details class="teacher-only-guidance-drawer no-print" style="display: ${isStaffModeActive() ? 'block' : 'none'}; margin: 0 0 10px 0; border: 1.5px solid #f59e0b; border-radius: 8px; background: #fffbeb; overflow: hidden; box-shadow: 0 2px 6px rgba(217, 119, 6, 0.08);">
-        <summary style="padding: 7px 14px; cursor: pointer; display: flex; align-items: center; justify-content: space-between; gap: 10px; list-style: none; user-select: none; background: linear-gradient(90deg, #fef3c7 0%, #fffbeb 100%);">
-          <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
-            <span style="background: #1b365d; color: #facc15; font-size: 0.7rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px; padding: 2px 8px; border-radius: 4px; display: inline-flex; align-items: center; gap: 5px;">
-              <i class="fa-solid fa-user-tie"></i> Staff Briefing
-            </span>
-            <span style="font-size: 0.86rem; font-weight: 800; color: #78350f;">
-              Lesson Briefing${hasDeliveryCards ? ' &amp; 2-Lesson Delivery Plan' : ''}
-            </span>
-            ${dp?.format ? `<span style="font-size: 0.75rem; font-weight: 600; color: #92400e;">&bull; ${dp.format}</span>` : ''}
-          </div>
-          <span style="font-size: 0.76rem; font-weight: 700; color: #92400e; white-space: nowrap;">
-            <span class="tgd-lbl-closed">Open Plan &#9662;</span>
-            <span class="tgd-lbl-open">Hide Plan &#9652;</span>
-          </span>
-        </summary>
-        <div style="padding: 12px 16px; background: #f8fafc; border-top: 1px solid #fde68a;">
-          ${
-            tn.primer
-              ? `
-            <div style="background: #ffffff; border: 1px solid #cbd5e1; border-left: 4px solid #1b365d; border-radius: 5px; padding: 9px 13px; margin-bottom: ${hasDeliveryCards ? '10px' : '0'}; font-size: 0.85rem; color: #1e293b; line-height: 1.52;">
-              <strong style="color: #1b365d; text-transform: uppercase; font-size: 0.73rem; letter-spacing: 0.45px; display: block; margin-bottom: 3px;">Pedagogical Primer:</strong>
-              ${tn.primer}
-            </div>
-          `
-              : ''
-          }
-          ${
-            hasDeliveryCards
-              ? `
-            <div style="display: flex; gap: 10px; flex-wrap: wrap;">
-              ${dp.lesson_1 ? renderDpLessonCard(dp.lesson_1, 'Lesson 1') : ''}
-              ${dp.lesson_2 ? renderDpLessonCard(dp.lesson_2, 'Lesson 2') : ''}
-            </div>
-          `
-              : ''
-          }
-        </div>
-      </details>
-    `;
-  }
 
   const activeUnitData =
     (appStore && appStore.state && appStore.state.activeUnitData) ||

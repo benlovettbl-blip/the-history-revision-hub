@@ -433,32 +433,32 @@
             <i class="fa-solid fa-landmark" style="font-size: 0.88rem; color: #60a5fa"></i>
             <span>Department Portal</span>
           </div>
-          <!-- Discreet Staff Mode Lock / Pupil Preview Switch -->
+          <!-- Always-Findable Staff Mode Lock / Pupil Preview Switch -->
           <button
             type="button"
             id="btn-sidebar-staff-toggle"
             onclick="window.toggleGlobalStaffMode && window.toggleGlobalStaffMode()"
-            title="Staff Login / Toggle Pupil Preview"
+            title="Teacher / Staff Mode (Lesson Plans, Answer Keys &amp; Schemes of Work)"
             style="
               display: flex;
               align-items: center;
               justify-content: space-between;
               gap: 8px;
               width: 100%;
-              padding: 6px 12px;
+              padding: 7px 12px;
               border-radius: 8px;
-              border: 1px solid rgba(255, 255, 255, 0.08);
-              background: rgba(255, 255, 255, 0.03);
-              color: rgba(255, 255, 255, 0.48);
-              font-size: 0.72rem;
-              font-weight: 600;
+              border: 1px solid rgba(148, 163, 184, 0.28);
+              background: rgba(255, 255, 255, 0.06);
+              color: rgba(241, 245, 249, 0.85);
+              font-size: 0.76rem;
+              font-weight: 700;
               cursor: pointer;
               text-align: left;
               transition: all 0.15s ease;
             "
           >
-            <span id="sidebar-staff-toggle-label"><i class="fa-solid fa-lock" style="margin-right: 6px; font-size: 0.7rem"></i>Staff</span>
-            <span id="sidebar-staff-toggle-sub" style="font-size: 0.65rem; opacity: 0.75"></span>
+            <span id="sidebar-staff-toggle-label"><i class="fa-solid fa-lock" style="margin-right: 6px; font-size: 0.72rem; color: #cbd5e1"></i>Teacher / Staff Mode</span>
+            <span id="sidebar-staff-toggle-sub" style="font-size: 0.65rem; opacity: 0.8"></span>
           </button>
         </div>
 
@@ -645,13 +645,26 @@
             <button
               type="button"
               id="btn-copy-class-link"
-              class="header-tool-btn"
+              class="header-tool-btn staff-hidden"
               onclick="window.copyStaffClassLink && window.copyStaffClassLink(this)"
               title="Staff Only: Copy pupil homework/Classroom link for this exact page (auto-includes silent pupil pass)"
               style="display: none; border-color: rgba(16, 185, 129, 0.45); color: #059669;"
             >
               <i class="fa-solid fa-link"></i>
               <span class="btn-text" id="copy-class-link-label">Class Link</span>
+            </button>
+
+            <!-- Always-Findable Teacher / Staff Mode Toggle -->
+            <button
+              type="button"
+              id="btn-header-staff-toggle"
+              class="header-tool-btn btn-header-staff"
+              onclick="window.toggleGlobalStaffMode && window.toggleGlobalStaffMode()"
+              title="Teacher / Staff Mode (Lesson Plans, Answer Keys &amp; Schemes of Work)"
+              aria-label="Toggle Teacher and Staff Mode"
+            >
+              <i class="fa-solid fa-chalkboard-user" id="header-staff-toggle-icon"></i>
+              <span class="btn-text" id="header-staff-toggle-label">Teacher</span>
             </button>
 
             <!-- Persistent Theme Toggle (always visible in header) -->

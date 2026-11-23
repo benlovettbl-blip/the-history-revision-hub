@@ -1,0 +1,115 @@
+{
+  "unit_id": "monarchy_religion_power",
+  "unit_overview": {
+    "curriculum_focus": "KS3 National Curriculum: The development of Church, state and society in Britain 1509–1745 (Reformation, Elizabethan Settlement, English Civil War, Regicide, and Constitutional Monarchy).",
+    "disciplinary_threads": "Multi-Causal Explanation, Historical Significance, Constitutional Change & Continuity, and Visual/Statutory Evidential Scrutiny.",
+    "non_specialist_summary": "This Year 8 unit charts the dramatic 170-year transformation of authority in Britain from Henry VIII's Break with Rome (1534) to the Bill of Rights (1689). Pupils see how Tudor monarchs broke papal power by partnering with Parliament through statute law, before Stuart claims to the absolute Divine Right of Kings collided with MPs over religion and taxation—culminating in Civil War, the 1649 trial and execution of Charles I, and the birth of constitutional monarchy."
+  },
+  "lessons": {
+    "lesson_1": {
+      "curriculum_link": "KS3 Britain 1509–1745: The Henrician Reformation — evaluating religious, dynastic, geopolitical, and financial causes of the Break with Rome (1517–1540).",
+      "hinge_question": "If Popes normally granted marriage annulments to European kings, why couldn't Pope Clement VII grant Henry VIII an annulment from Catherine of Aragon in 1527–1529—and how did Thomas Cromwell solve Henry's deadlock?",
+      "hinge_guidance": "Strong responses identify two crucial mechanisms: geopolitically, Catherine's nephew Emperor Charles V had sacked Rome in May 1527 and held Pope Clement VII captive in Castel Sant'Angelo; constitutionally, Thomas Cromwell bypassed Rome by using the Reformation Parliament to pass English statutes—culminating in the 1534 Act of Supremacy—before dissolving over 800 monasteries to enrich the Crown.",
+      "misconceptions": [
+        {
+          "misconception": "Henry VIII wanted a 'divorce' simply because he grew bored of Catherine of Aragon and fell in love with Anne Boleyn.",
+          "correction": "Henry sought a papal annulment (declaring the marriage invalid under Leviticus from the start) driven by urgent dynastic fear that leaving no legitimate male heir (Source B) would plunge England back into civil war."
+        },
+        {
+          "misconception": "Breaking with Rome in 1534 turned Henry VIII into a strict Lutheran Protestant overnight.",
+          "correction": "Henry had won the papal title 'Defender of the Faith' attacking Martin Luther in 1521; he seized papal sovereignty as Supreme Head (Sources C–D) and dissolved monasteries (Source E) while keeping many traditional Catholic beliefs."
+        },
+        {
+          "misconception": "Henry VIII broke with Rome by personal royal decree alone without needing MPs.",
+          "correction": "Chief minister Thomas Cromwell engineered the Break with Rome through statute laws voted by the Reformation Parliament (1529–1536), unintentionally elevating Parliament into England's supreme law-making partner."
+        }
+      ],
+      "send_adaptation": "Pre-teach annulment (declaring a marriage never legally existed) and Act of Supremacy (the 1534 law making Henry Supreme Head of the Church of England). Pair Holbein's 1539 Great Bible title page (Source D) with Studio Audio so pupils can visually trace power flowing from God -> Henry VIII -> Cranmer and Cromwell -> ordinary subjects.",
+      "stretch_challenge": "Challenge higher-attaining pupils to compare Henry VIII in 1534 with Henry II in 1174 (Medieval England Lesson 3): why was Henry VIII able to execute Sir Thomas More and crush papal authority in England whereas Henry II had to kneel barefoot at Becket's shrine?"
+    },
+    "lesson_2": {
+      "curriculum_link": "KS3 Britain 1509–1745: The Elizabethan Religious Settlement (1559) — analysing political compromise, religious conformity, and Catholic security threats to 1588.",
+      "hinge_question": "Why did Elizabeth I deliberately choose the title 'Supreme Governor' in 1559 instead of her father's 'Supreme Head'—and what shattered that peaceful compromise after 1568?",
+      "hinge_guidance": "Look for pupils explaining Elizabeth's pragmatic Via Media: 'Supreme Governor' (Source B) and ambiguous English communion wording (Source C) allowed moderate Catholics and Protestants to conform outwardly ('no windows into men's souls') for a modest 12d recusancy fine. That calm fractured when Mary, Queen of Scots arrived in 1568, the Northern Earls rebelled in 1569, and Pope Pius V's 1570 bull Regnans in Excelsis (Source D) turned loyalty to Rome into political treason.",
+      "misconceptions": [
+        {
+          "misconception": "Elizabeth's 1559 'Middle Way' gave modern religious freedom allowing English people to worship at whatever church they liked.",
+          "correction": "Under the 1559 Act of Uniformity, attending the Church of England with the English Book of Common Prayer (Source C) was compulsory every Sunday; Catholic recusants who stayed away faced a 12-pence fine."
+        },
+        {
+          "misconception": "English Catholics plotted against Elizabeth I continually from the first day of her reign in 1558.",
+          "correction": "Most English Catholics conformed quietly for a decade until the 1569 Northern Earls' Rebellion and Pope Pius V's 1570 excommunication bull Regnans in Excelsis (Source D) commanded Catholics to depose her."
+        },
+        {
+          "misconception": "Elizabeth I eagerly executed her Catholic cousin Mary, Queen of Scots as soon as Mary arrived in England in 1568.",
+          "correction": "Elizabeth kept Mary in custody for nineteen years—fearing the dangerous precedent of executing an anointed monarch (Source E)—until Sir Francis Walsingham's codebreakers proved Mary's treason in the 1586 Babington Plot."
+        }
+      ],
+      "send_adaptation": "Pre-teach Via Media ('The Middle Way' religious compromise) and recusant (a Catholic refusing Sunday Church of England services). Use the Block 3 interactive Concept Widget to sort settlement features into 'Pleased Protestants' vs 'Reassured Moderate Catholics' before writing the two-paragraph explanation.",
+      "stretch_challenge": "Push higher-attaining pupils to evaluate Pope Pius V's 1570 bull Regnans in Excelsis (Source D) as a strategic blunder: how did ordering English Catholics to overthrow Elizabeth actually make life far more dangerous for ordinary loyal Catholics in England?"
+    },
+    "lesson_3": {
+      "curriculum_link": "KS3 Britain 1509–1745: The 1588 Spanish Armada — multi-factor causal narrative weighing naval gunnery, logistics, fireship tactics, and weather.",
+      "hinge_question": "Elizabeth I's 1588 medal boasted 'God blew and they were scattered'—was the Armada really defeated by storm winds alone, or had Spain's invasion plan already failed off Calais and Gravelines?",
+      "hinge_guidance": "Strong answers challenge the 'luck/weather alone' myth: Francis Drake's 1587 Cadiz raid (Source B) rotted Spanish food and water in green unseasoned barrels, English race-built galleons out-ranged Spanish ships with long culverins, and midnight fireships at Calais on 7–8 August (Source D) forced Medina Sidonia to cut anchors and lose his defensive crescent before Gravelines battered the fleet northward into Atlantic gales. Probe any pupil who treats the 'Protestant Wind' as the sole cause rather than the final blow.",
+      "misconceptions": [
+        {
+          "misconception": "Philip II sent the 1588 Armada simply because Elizabeth I turned down his marriage proposal.",
+          "correction": "Philip launched a papal-backed Catholic crusade (Source A) provoked by years of Francis Drake raiding Spanish treasure ships, English troops aiding Dutch Protestant rebels in 1585, and the 1587 execution of Mary, Queen of Scots."
+        },
+        {
+          "misconception": "The Spanish Armada sailed to land an invasion army directly from Spain onto English beaches.",
+          "correction": "Medina Sidonia's 130 ships were ordered to escort the Duke of Parma's veteran army across the narrow Strait of Dover from Flanders—a rendezvous ruined because Spain lacked a deep-water port and English fireships scattered the fleet at Calais (Source D)."
+        },
+        {
+          "misconception": "English fireships burned down most of the Spanish Armada in Calais harbour.",
+          "correction": "The eight pitch-and-gunpowder 'hellburners' hit zero Spanish hulls directly, yet panic forced Spanish captains to cut their heavy anchor cables in the dark, breaking their crescent formation ahead of English broadsides at Gravelines."
+        }
+      ],
+      "send_adaptation": "Pre-teach broadside (firing cannons along a ship's side from a distance) and fireship (burning ship steered into an anchored fleet). Trace the numbered stages on the 1588 Armada Reference Map and Adams/Ryther chart (Source C)—Cadiz -> Plymouth -> Calais fireships -> Gravelines -> Irish shipwrecks—to scaffold the chronological 3-paragraph narrative account.",
+      "stretch_challenge": "Challenge higher-attaining pupils to analyse Queen Elizabeth's victory medal (Source E) as political propaganda: why was it far cleverer for the Tudor state to credit 'God's Protestant Wind' than to credit sailors, John Hawkins's shipyards, or Spanish logistical blunders?"
+    },
+    "lesson_4": {
+      "curriculum_link": "KS3 Britain 1509–1745: The English Civil War, Regicide (1649), Restoration, and Glorious Revolution — tracing the breakdown of absolute Stuart monarchy.",
+      "hinge_question": "When MPs fought King Charles I in 1642 most still claimed to be loyal to the Crown—so why did a Rump Parliament take the unprecedented step of putting their anointed King on trial and beheading him in January 1649?",
+      "hinge_guidance": "Look for two converging causes: Charles I's stubborn belief in Divine Right (Source A) led him to reject every negotiated compromise after Naseby (Source C) and secretly trigger a bloody Second Civil War with Scottish allies in 1648, convincing the radicalised New Model Army that peace was impossible while the 'man of blood' lived. Probe pupils who skip Pride's Purge (December 1648)—remind them most moderate MPs opposed regicide and had to be barred by soldiers first.",
+      "misconceptions": [
+        {
+          "misconception": "Parliament fought the English Civil War in 1642 intending to abolish the monarchy and execute Charles I from the start.",
+          "correction": "In 1642 MPs fought to curb illegal Ship Money, Archbishop Laud's religious changes, and royal advisers (Grand Remonstrance, Source B); regicide only occurred in January 1649 after Charles started a Second Civil War and Colonel Pride purged moderate MPs."
+        },
+        {
+          "misconception": "The Civil War was simply rich Cavaliers on horseback fighting poor peasant Roundheads.",
+          "correction": "The conflict split nobles, gentry, and families on both sides along religious and constitutional lines; Parliament won only after creating the disciplined, merit-promoted professional New Model Army in 1645 under Fairfax and Cromwell (Source C)."
+        },
+        {
+          "misconception": "Executing Charles I in 1649 permanently ended the monarchy in Britain.",
+          "correction": "After eleven years of republican Commonwealth and Cromwell's rule, the Stuart monarchy returned under Charles II in 1660—before the 1688 Glorious Revolution and 1689 Bill of Rights (Source E) bound William III and Mary II beneath parliamentary law."
+        }
+      ],
+      "send_adaptation": "Pre-teach Divine Right (the belief that kings answer only to God) and Regicide (putting a reigning monarch on trial and executing them). Pair Van Dyck's triple portrait of Charles I (Source A) with the 59-signature 1649 Death Warrant (Source D) to make the shift from untouchable king to accountable prisoner concrete.",
+      "stretch_challenge": "Push higher-attaining pupils to compare the violent 1649 Regicide with the 1688–89 Glorious Revolution and Bill of Rights (Source E): why did the 1689 constitutional settlement endure permanently whereas the 1649 republican experiment collapsed within eleven years?"
+    },
+    "lesson_5": {
+      "curriculum_link": "KS3 Britain 1509–1745 (Synoptic Capstone): Evaluating turning points in the shifting balance of sovereignty across Crown, Church, and Parliament (1517–1689).",
+      "hinge_question": "Across the whole 170-year story from 1517 to 1689, which single turning point did the most to make Parliament supreme: Henry VIII's 1534 Act of Supremacy, the 1649 execution of Charles I, or the 1689 Bill of Rights?",
+      "hinge_guidance": "Reward any historically defended choice provided pupils weigh comparative criteria (precedent vs permanence): 1534 (Source A) accidentally made parliamentary statute the vehicle for changing England's religion and land ownership; 1649 proved no monarch stood above treason law, though monarchy returned in 1660; 1689 (Source E) permanently locked constitutional monarchy into law by banning unvoted taxes, standing armies, and royal suspension of statutes.",
+      "misconceptions": [
+        {
+          "misconception": "Henry VIII weakened Parliament because he was a terrifying, all-powerful Tudor autocrat.",
+          "correction": "By using the Reformation Parliament to pass the 1534 Act of Supremacy (Source A) and selling monastic estates to county gentry, Henry made King-in-Parliament statute law supreme and enriched the very class of MPs who later challenged the Stuarts."
+        },
+        {
+          "misconception": "The 1689 Bill of Rights created modern universal democracy where every adult man and woman voted.",
+          "correction": "The 1689 Bill of Rights (Source E) shifted sovereign power from the monarch to a Parliament still elected by wealthy male property owners; full democratic voting rights took another two centuries of reform."
+        },
+        {
+          "misconception": "Religion stopped mattering in British politics once Henry VIII and Elizabeth I broke with Rome.",
+          "correction": "Fears of Catholicism and absolutism drove the entire seventeenth-century crisis—from Charles I and Archbishop Laud's reforms in 1640 to Catholic King James II's overthrow by Protestant William of Orange in 1688."
+        }
+      ],
+      "send_adaptation": "Pre-teach statute law (written law passed by Parliament and Crown) and constitutional monarchy (a ruler bound by parliamentary laws). Use the Verso 5-Stage 'Crown vs Parliament Power Meter' timeline so pupils rate royal vs parliamentary strength out of 10 at 1534, 1588, 1629, 1649, and 1689 before writing their judgement.",
+      "stretch_challenge": "Challenge higher-attaining pupils to trace a 474-year constitutional thread back to Medieval England Lesson 4: how did the barons' 1215 Runnymede principle in Magna Carta ('no arbitrary taxation and no ruler above the law') evolve into the 1689 Declaration and Bill of Rights (Source E)?"
+    }
+  }
+}

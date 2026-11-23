@@ -23,10 +23,10 @@ export default {
   ],
   "specification_file": "/data/great_war_overview.json",
   "title": "KS3: Causes of the Great War",
-  "homepage_background": "assets/somme_trench_1916.jpg",
+  "homepage_background": "/images/great_war_cover.jpg",
   "enquiry": "How did decades of imperial rivalry and fear culminate in thirty days of madness?",
   "cover_image": "/images/great_war_cover.jpg",
-  "cover_caption": "Primary Photograph: The Royal Navy battleship HMS Dreadnought at sea (c. 1906–1907), whose revolutionary steam-turbine propulsion and 'all-big-gun' armament rendered all existing battleships obsolete and triggered the Anglo-German naval arms race.",
+  "cover_caption": "The Royal Navy battleship HMS Dreadnought steaming at sea (1906), whose steam-turbine speed and 'all-big-gun' armament rendered earlier battleships obsolete and ignited the Anglo-German naval arms race.",
   "workbooks": [
     {
       "id": "full",
@@ -253,7 +253,26 @@ export default {
               }
             ]
           }
-        }
+        },
+        "curriculum_link": "KS3 National Curriculum (Challenges 1901–Present): Pre-1914 European geopolitics — German unification (1871), Alsace-Lorraine, French revanche, and Bismarckian alliance diplomacy (Multi-Causal Explanation).",
+        "hinge_question": "Why did annexing Alsace-Lorraine in May 1871 prove far more dangerous to long-term European peace than forcing France to pay 5 billion gold francs?",
+        "hinge_guidance": "Strong answers explain that France paid off the 5 billion franc indemnity within a few years, whereas tearing away iron-and-coal-rich Alsace-Lorraine created a permanent open wound in French national identity ('revanche', seen in Bettannier's 1887 classroom painting Source D). That permanent hostility meant France could never reconcile with Berlin, locking Bismarck into constant dread of a two-front war with France and Russia. Probe any pupil who thinks Bismarck wanted endless expansion after 1871—point them to the 1887 Reinsurance Treaty (Source E) showing his defensive obsession with keeping Russia neutral.",
+        "misconceptions": [
+          {
+            "misconception": "Pupils often assume Germany had always existed as a single united country throughout modern European history.",
+            "correction": "Before January 1871, Central Europe was divided into 39 separate German kingdoms, duchies, and free cities; Prussian Minister-President Otto von Bismarck united them through three wars against Denmark (1864), Austria (1866), and France (1870–71)."
+          },
+          {
+            "misconception": "Pupils confuse the 1871 proclamation at Versailles with the 1919 Treaty of Versailles at the end of the First World War.",
+            "correction": "Use Source B (Werner's painting) to anchor the chronology: Bismarck crowned Kaiser Wilhelm I inside Versailles's Hall of Mirrors in January 1871 to humiliate France—the exact reason French Premier Clemenceau chose the same hall to punish Germany in 1919."
+          },
+          {
+            "misconception": "Pupils assume Otto von Bismarck remained eager for further European conquests after 1871.",
+            "correction": "Once Germany was unified in 1871, Bismarck viewed it as a 'satisfied power' and spent nineteen years weaving defensive treaties like the secret 1887 Reinsurance Treaty with Russia (Source E) to keep France isolated."
+          }
+        ],
+        "send_adaptation": "Pair the Block 4 Reference Map with Source D (La Tache Noire, showing Alsace-Lorraine shaded black on a French school map) and use the Block 5 profile deck plus the Recto PEEL sentence prompts to scaffold two clear causal paragraphs.",
+        "stretch_challenge": "Using Article I of the 1887 Reinsurance Treaty (Source E), explain why Bismarck's entire European peace system depended on a fragile personal balancing act between rival Austria-Hungary and Tsarist Russia."
       },
       "do_now": {
         "type": "questions",
@@ -1606,7 +1625,8 @@ export default {
       "banner_position": "center 64%",
       "card_image": "/images/great_war/gw1_l1_b1_bismarck_napoleon_iii_sedan_1870.jpg",
       "enquiry": "How did German unification in 1871 unsettle the balance of power in Europe?",
-      "enquiry_question": "How did German unification in 1871 unsettle the balance of power in Europe?"
+      "enquiry_question": "How did German unification in 1871 unsettle the balance of power in Europe?",
+      "banner_caption": "The Defense of Champigny, December 1870 (Édouard Detaille, 1879, Metropolitan Museum of Art): French troops defending the outskirts of Paris during the Franco-Prussian War that forged the unified German Empire."
     },
     {
       "id": "lesson_2",
@@ -1822,7 +1842,26 @@ export default {
               }
             ]
           }
-        }
+        },
+        "curriculum_link": "KS3 National Curriculum (Challenges 1901–Present): Imperialism, the 1884–85 Berlin Conference, Kaiser Wilhelm II's Weltpolitik, and the 1905 and 1911 Moroccan Crises — Consequence & Diplomatic Motive.",
+        "hinge_question": "Why did Kaiser Wilhelm II's theatrical interventions in Morocco at Tangier (1905) and Agadir (1911) achieve the exact opposite of what Berlin intended?",
+        "hinge_guidance": "Look for pupils identifying Berlin's goal—humiliating France and shattering the young 1904 Anglo-French Entente Cordiale—and contrasting it with the real outcome: twelve-to-two isolation at the 1906 Algeciras Conference, secret Anglo-French joint military staff talks, and Lloyd George's stern July 1911 Mansion House warning (Source E). Probe pupils who take Wilhelm's 1905 Tangier speech at face value as genuine support for Moroccan freedom; Source D proves he used Moroccan sovereignty as a lever to test Anglo-French unity.",
+        "misconceptions": [
+          {
+            "misconception": "Pupils assume European powers fought battles against one another inside Africa during the 1884–85 Berlin Conference.",
+            "correction": "Bismarck convened the Berlin Conference precisely to avoid intra-European war while partitioning African land under 'effective occupation' rules, without inviting a single African leader to the table."
+          },
+          {
+            "misconception": "Pupils confuse Bismarck's cautious European diplomacy with Kaiser Wilhelm II's aggressive global Weltpolitik.",
+            "correction": "Wilhelm II forced Bismarck's resignation in 1890 specifically to abandon quiet continental treaties and pursue overseas colonies and naval prestige—demanding Germany's 'place in the sun' (Source B)."
+          },
+          {
+            "misconception": "Pupils think the 1904 Entente Cordiale was already a binding military alliance obliging Britain to fight for France.",
+            "correction": "In 1904 the Entente Cordiale merely settled colonial disputes in Egypt and Morocco; it was Germany's own gunboat bullying at Tangier (1905) and Agadir (1911) that drove London and Paris into secret joint military and naval planning."
+          }
+        ],
+        "send_adaptation": "Use the Block 2 spectrum slider to contrast Bismarck's Realpolitik with Wilhelm II's Weltpolitik visually, then anchor Tangier and Agadir on the Block 1 Reference Map before completing the short 'Two Features' and 'One Consequence' Recto tasks.",
+        "stretch_challenge": "Explain why David Lloyd George's background as a radical anti-war Liberal politician made his 21 July 1911 Mansion House speech (Source E) far more alarming to Berlin than a speech from a Conservative imperialist."
       },
       "do_now": {
         "type": "questions",
@@ -3176,7 +3215,8 @@ export default {
       "banner_position": "center 52%",
       "card_image": "/images/great_war/gw1_l2_b3_entente_cordiale_1904_punch.jpg",
       "enquiry": "How did colonial rivalry in Africa and Kaiser Wilhelm’s ambitions fuel tension?",
-      "enquiry_question": "How did colonial rivalry in Africa and Kaiser Wilhelm’s ambitions fuel tension?"
+      "enquiry_question": "How did colonial rivalry in Africa and Kaiser Wilhelm’s ambitions fuel tension?",
+      "banner_caption": "Diplomatic Session of the Algeciras Conference, Spain (January–April 1906): Called after Kaiser Wilhelm II’s Tangier landing, the summit isolated Germany 12 votes to 2 as Great Britain backed France."
     },
     {
       "id": "lesson_3",
@@ -3392,7 +3432,26 @@ export default {
               }
             ]
           }
-        }
+        },
+        "curriculum_link": "KS3 National Curriculum (Challenges 1901–Present): Militarism, the 1889 Two-Power Standard, Tirpitz's Risk Theory, and the 1906 HMS Dreadnought arms race — Historical Interpretations & Statistical Scrutiny.",
+        "hinge_question": "Why was launching HMS Dreadnought in February 1906 both a technological triumph and a strategic gamble that wiped out Britain's own numerical lead?",
+        "hinge_guidance": "Strong responses explain the paradox in Block [3.3]: Dreadnought's ten 12-inch guns and steam turbines outclassed every warship afloat, but by making all pre-1906 'pre-dreadnought' battleships obsolete overnight, Admiral Jackie Fisher accidentally reset the scoreboard nearly to zero—allowing Admiral Tirpitz's shipyards to race Britain almost from scratch. Probe pupils who think Germany actually overtook the Royal Navy; point them to the March 1914 Admiralty statistics in Source E proving Britain held a decisive 29-to-17 lead in completed dreadnoughts.",
+        "misconceptions": [
+          {
+            "misconception": "Pupils assume Britain wanted a huge navy out of vanity in exactly the same way Germany wanted a large army.",
+            "correction": "As an island importing over 60 percent of its food by sea (Block [3.1]), Britain faced rapid civilian starvation if any rival fleet severed its home sea lanes, whereas continental Germany could feed and defend itself by land."
+          },
+          {
+            "misconception": "Pupils think Admiral von Tirpitz planned to build a German fleet numerically larger than the British Royal Navy.",
+            "correction": "Under 'Risk Theory' in the 1900 Second Naval Law (Source B), Tirpitz calculated Germany only needed a North Sea fleet strong enough to inflict heavy damage on the Royal Navy, assuming Britain would choose neutrality rather than risk its global supremacy."
+          },
+          {
+            "misconception": "Pupils assume the naval arms race was still accelerating uncontrollably on the very eve of war in August 1914.",
+            "correction": "Source E proves Britain won the construction race decisively (29 dreadnoughts and 9 battlecruisers to Germany's 17 and 5 by March 1914), though the 1909 panic and failed 1912 Haldane Mission permanently poisoned Anglo-German trust."
+          }
+        ],
+        "send_adaptation": "Read the clean comparison table in Source E (29 vs 17 dreadnoughts) aloud alongside the 1909 Puck poker cartoon (Source D), then use the Block 5 profile deck to clarify Fisher, Tirpitz, and Haldane before comparing Interpretations 1 and 2.",
+        "stretch_challenge": "Using Block [3.5], explain how the failure of the 1912 Haldane Mission led Britain to redeploy its Mediterranean fleet to the North Sea while France guarded the Mediterranean—creating a moral obligation to defend France's northern coast in 1914."
       },
       "do_now": {
         "type": "questions",
@@ -4629,7 +4688,8 @@ export default {
       "banner_position": "center 54%",
       "card_image": "/images/great_war/gw1_l3_b3_hms_neptune_launch_1909.jpg",
       "enquiry": "Why did the Dreadnought battleship race poison relations between Britain and Germany?",
-      "enquiry_question": "Why did the Dreadnought battleship race poison relations between Britain and Germany?"
+      "enquiry_question": "Why did the Dreadnought battleship race poison relations between Britain and Germany?",
+      "banner_caption": "The First Battle Squadron of Dreadnoughts at Sea (1910): All-big-gun turbine battleships built to defend British maritime trade routes and outpace Admiral von Tirpitz’s High Seas Fleet."
     },
     {
       "id": "lesson_4",
@@ -4865,7 +4925,26 @@ export default {
               }
             ]
           }
-        }
+        },
+        "curriculum_link": "KS3 National Curriculum (Challenges 1901–Present): Triple Alliance vs Triple Entente, Ottoman decline, Pan-Slavism, the 1908 Bosnian Crisis, and the 1912–13 Balkan Wars — Chronological Narrative Causation.",
+        "hinge_question": "Why did Russia's humiliating forced retreat during the 1908 Bosnian Annexation Crisis make general European war far more likely in July 1914?",
+        "hinge_guidance": "Listen for pupils linking national prestige to military preparation: when Austria-Hungary seized Bosnia-Herzegovina in October 1908 and Germany backed Vienna with a blunt threat, Tsar Nicholas II was too militarily weak to fight and had to back down—vowing never to suffer a second public humiliation before Slavic allies like Serbia (Blocks [4.4]–[4.5]). After Serbia doubled its territory in the 1912–13 Balkan Wars, Vienna grew equally desperate for a pre-emptive war while Russia refused to retreat again. Probe any pupil who assumes Britain was bound by the same automatic military mobilisation rules as France and Russia in Source B.",
+        "misconceptions": [
+          {
+            "misconception": "Pupils assume the Triple Alliance (1882) and Triple Entente (1907) were signed with the aggressive aim of starting a European war.",
+            "correction": "Both coalitions were framed as defensive deterrents (Sources A and B), yet secret automatic mobilisation clauses meant a regional clash could rapidly pull rival blocs into war."
+          },
+          {
+            "misconception": "Pupils think Serbia was part of the Austro-Hungarian Empire in 1914.",
+            "correction": "Serbia was an independent Slavic kingdom that doubled its land and army in the 1912–13 Balkan Wars; Vienna feared Serbia because millions of South Slavs living inside Austria-Hungary (such as in annexed Bosnia) wanted to join a Greater Serbia."
+          },
+          {
+            "misconception": "Pupils assume Italy fought alongside Germany and Austria-Hungary in 1914 because it belonged to the 1882 Triple Alliance.",
+            "correction": "Because the Triple Alliance was strictly a defensive pact, Italy declared neutrality in August 1914—arguing Austria-Hungary had attacked Serbia first—and later joined the Entente side in 1915."
+          }
+        ],
+        "send_adaptation": "Trace the two colour-coded alliance blocs and Bosnia/Serbia on the Block 1 Reference Map, then use the Verso 5-Stage Chronology Spine (1879 -> 1894/1907 -> Ottoman decline -> 1908 Bosnia -> 1912–13 Balkan Wars) as a ready-made three-paragraph plan for the Recto narrative account.",
+        "stretch_challenge": "Connect Source B (1894 Franco-Russian Military Convention) with Source E (the Schlieffen Plan map): how did French loans funding Russian frontier railways create the exact strategic time-pressure behind Germany's 42-day plan to sweep through neutral Belgium?"
       },
       "do_now": {
         "type": "questions",
@@ -6185,7 +6264,8 @@ export default {
       "banner_position": "center 62%",
       "card_image": "/images/great_war/gw1_l4_b3_bosnian_crisis_1908_petit_journal.jpg",
       "enquiry": "Did rival European alliances protect peace or make a wider war more likely?",
-      "enquiry_question": "Did rival European alliances protect peace or make a wider war more likely?"
+      "enquiry_question": "Did rival European alliances protect peace or make a wider war more likely?",
+      "banner_caption": "The Congress of Berlin, 13 July 1878 (Anton von Werner, 1881): Chancellor Otto von Bismarck brokering Balkan borders among Europe’s Great Powers as Ottoman rule in south-eastern Europe weakened."
     },
     {
       "id": "lesson_5",
@@ -6409,7 +6489,26 @@ export default {
               }
             ]
           }
-        }
+        },
+        "curriculum_link": "KS3 National Curriculum (Challenges 1901–Present): The July Crisis (28 June – 4 August 1914), Sarajevo, the Blank Cheque, mobilisation timetables, and Belgian neutrality — Balanced Evaluative Judgement.",
+        "hinge_question": "At which point between 28 June and 4 August 1914 did a local Austro-Serbian clash turn into an unstoppable continental war—and why?",
+        "hinge_guidance": "Accept well-evidenced turning points provided pupils explain the mechanism: Kaiser Wilhelm II's 5 July 'Blank Cheque' (Source B) removed Vienna's fear of Russia; Tsar Nicholas II's 30 July general mobilisation (Source D) triggered Berlin's rigid Schlieffen railway clock; and Germany's 4 August invasion of neutral Belgium ('scrap of paper') united a divided British Cabinet behind war. Probe simplistic answers claiming Princip's two pistol shots automatically forced all five Great Powers to fight without five weeks of deliberate political gambles.",
+        "misconceptions": [
+          {
+            "misconception": "Pupils believe the Serbian government officially ordered Gavrilo Princip to assassinate Archduke Franz Ferdinand.",
+            "correction": "Princip was a nineteen-year-old Bosnian Serb student armed by rogue Black Hand intelligence officers; Serbia's elected government actually accepted nine of Austria-Hungary's ten harsh ultimatum demands on 25 July (Block [5.3])."
+          },
+          {
+            "misconception": "Pupils assume European armies immediately marched to war the day after Franz Ferdinand was shot on 28 June 1914.",
+            "correction": "Thirty-seven days of diplomatic cables, secret pledges (the 5 July Blank Cheque), and delayed ultimatums (23 July) passed before Britain entered the war at midnight on 4 August 1914."
+          },
+          {
+            "misconception": "Pupils assume Britain declared war on 4 August 1914 because the Triple Entente legally forced London to defend France and Russia.",
+            "correction": "Britain had no binding military alliance forcing intervention for Serbia or Russia; Germany's invasion of neutral Belgium under the Schlieffen Plan violated the 1839 Treaty of London and threatened Channel security, bringing Britain in."
+          }
+        ],
+        "send_adaptation": "Walk through the Sarajevo route map (Source A) and the Block 3 profile deck to anchor who did what during July 1914, then use the Recto PEEL prompts to balance one paragraph on alliances against one paragraph on July Crisis brinkmanship.",
+        "stretch_challenge": "Examine Points 5 and 6 of the 23 July Austro-Hungarian ultimatum (Source C): why did Vienna intentionally draft demands that no sovereign state could accept, and why did it wait nearly a month after Sarajevo to deliver them?"
       },
       "do_now": {
         "type": "questions",
@@ -7611,7 +7710,8 @@ export default {
       "hero_image": "/images/upgraded/ks3-empire-gw/gw1_l5_banner_sarajevo_arrest_28_june_1914.jpg",
       "banner_position": "center 40%",
       "enquiry": "Why did one assassination in Sarajevo trigger a world war within five weeks?",
-      "enquiry_question": "Why did one assassination in Sarajevo trigger a world war within five weeks?"
+      "enquiry_question": "Why did one assassination in Sarajevo trigger a world war within five weeks?",
+      "banner_caption": "Sarajevo, 28 June 1914: Austro-Hungarian gendarmes arresting a suspect in the street minutes after nineteen-year-old Bosnian-Serb nationalist Gavrilo Princip shot Archduke Franz Ferdinand and Duchess Sophie."
     },
     {
       "id": "lesson_6",
@@ -7625,7 +7725,7 @@ export default {
       "banner": {
         "image": "/images/upgraded/ks3-empire-gw/gw1_l6_banner_outbreak_first_world_war_1914_q81832.jpg",
         "alt": "Nighttime press photograph of thousands of British citizens waving straw boater hats outside the illuminated gates and balcony of Buckingham Palace on the outbreak of the First World War in August 1914",
-        "caption": "Crowds Cheering Outside Buckingham Palace on the Outbreak of War (4 August 1914, Imperial War Museum Q 81832): After thirty-seven days of diplomatic escalation from Sarajevo to Belgium, Europe’s Great Powers plunged into total war.",
+        "caption": "Cheering crowds waving hats outside the gates of Buckingham Palace on the night of 4 August 1914 as Great Britain entered the First World War.",
         "position": "center 68%"
       },
       "cover_image": "/images/great_war_cover.jpg",
@@ -7818,7 +7918,26 @@ export default {
               }
             ]
           }
-        }
+        },
+        "curriculum_link": "KS3 National Curriculum (Challenges 1901–Present): Synoptic Multi-Causal Synthesis & Historiographical Evaluation (Fritz Fischer vs Christopher Clark) — 30-Minute Summative Assessment Masterclass.",
+        "hinge_question": "In a PEEL paragraph on why war broke out in 1914, what is the difference between listing facts from 1871–1914 and explaining the causal mechanism ('because / therefore')?",
+        "hinge_guidance": "Strong responses distinguish pure description (e.g. stating that Britain launched HMS Dreadnought in 1906) from causal explanation (explaining that because Dreadnought made older battleships obsolete, Germany could race Britain from scratch across the North Sea, poisoning trust and pushing London closer to France). Probe pupils who plan to write a lengthy introduction and conclusion—remind them that this 30-minute assessment rewards strictly three developed PEEL factor paragraphs with no conclusion required.",
+        "misconceptions": [
+          {
+            "misconception": "Pupils assume historians all agree on one single culprit for the outbreak of the First World War.",
+            "correction": "Historians remain sharply divided: Fritz Fischer (Source C, 1961) argued German leaders deliberately engineered war to break encirclement, whereas Christopher Clark (Source B, 2012) argues all Great Powers 'sleepwalked' into catastrophe through shared miscalculations."
+          },
+          {
+            "misconception": "Pupils waste ten minutes of their 30-minute assessment repeating their points in an uncredited summary conclusion.",
+            "correction": "For a causal 'Why did war break out?' essay in this masterclass, top marks come from three fully evidenced PEEL paragraphs (~10 minutes each) linking directly back to tensions in 1914—no conclusion is needed (Block [6.1])."
+          },
+          {
+            "misconception": "Pupils copy full pre-written essay sentences onto their one-page A4 revision planning sheet.",
+            "correction": "The A4 planning sheet rule allows bullet keywords, mind maps, statistics (such as 29 vs 17 dreadnoughts or 5 billion francs), and key dates only—ensuring pupils construct independent causal explanations under timed conditions."
+          }
+        ],
+        "send_adaptation": "Use the Block 1 profile deck and Source E causal flowchart to help SEND learners pick their three strongest factors from the four stimulus strands, building a clean 3-box A4 keyword card (Point, 2 Facts/Dates, 'This pushed Europe toward war because...').",
+        "stretch_challenge": "Weigh Admiral von Muller's diary of the 8 December 1912 Imperial War Council ('War is inevitable, and the sooner the better', Source A) against Prime Minister Asquith's 2 August 1914 Cabinet letter (Source D): which historian—Fischer (Source C) or Clark (Source B)—does this pair of primary sources better support?"
       },
       "do_now": {
         "type": "questions",
@@ -9213,7 +9332,8 @@ export default {
       "banner_image": "/images/upgraded/ks3-empire-gw/gw1_l6_banner_outbreak_first_world_war_1914_q81832.jpg",
       "hero_image": "/images/upgraded/ks3-empire-gw/gw1_l6_banner_outbreak_first_world_war_1914_q81832.jpg",
       "banner_position": "center 68%",
-      "enquiry_question": "Why did war break out in 1914?"
+      "enquiry_question": "Why did war break out in 1914?",
+      "banner_caption": "Cheering crowds waving hats outside the gates of Buckingham Palace on the night of 4 August 1914 as Great Britain entered the First World War."
     }
   ],
   "quizPack": [
@@ -10749,5 +10869,10 @@ export default {
   "year_group": "Key Stage 3",
   "category": "KS3",
   "key_stage": "KS3",
-  "is_ks3": true
+  "is_ks3": true,
+  "teacher_guidance_overview": {
+    "curriculum_focus": "KS3 National Curriculum: Challenges for Britain, Europe and the wider world 1901 to the present day (long-term structural causes and short-term triggers of the First World War, 1871–1914).",
+    "disciplinary_threads": "Multi-Causal Explanation, Diplomatic Source Analysis, Chronological Escalation, and Historiographical Debate.",
+    "non_specialist_summary": "This six-enquiry Year 9 course traces how European peace unravelled between the proclamation of the German Empire at Versailles in 1871 and the outbreak of global war in August 1914. Pupils investigate French revanchism over Alsace-Lorraine, Kaiser Wilhelm II's Weltpolitik in Morocco, the Anglo-German Dreadnought race, interlocking alliance blocs alongside Balkan nationalism, and the 37-day July Crisis triggered at Sarajevo. Enquiry 6 equips every pupil to write a structured three-paragraph PEEL causal assessment weighing structural rivalries against diplomatic brinkmanship."
+  }
 };

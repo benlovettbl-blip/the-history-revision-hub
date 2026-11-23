@@ -1347,7 +1347,27 @@
               }
             ]
           }
-        }
+        },
+        "curriculum_link": "KS3 Empire & Global History (1600–1765): Corporate imperialism — analysing how the East India Company shifted from Mughal coastal trading posts to territorial tax ruler of Bengal.",
+        "hinge_question": "How did a private London merchant company founded to buy spices in 1600 end up collecting taxes from twenty million people across Bengal by 1765?",
+        "hinge_guidance": "Look for pupils connecting corporate militarisation with opportunistic Indian politics: armed coastal factories (Surat, Madras, Calcutta) and sepoy regiments collided with Nawab Siraj ud-Daulah in 1756, allowing Robert Clive to win Plassey in June 1757 not through sheer military might, but by secretly bribing Siraj's commander Mir Jafar (Source D)—culminating in the 1765 Treaty of Allahabad granting the Diwani (Source E). Probe any pupil who thinks the British government sent a vast royal army from London to conquer all of India in one stroke.",
+        "misconceptions": [
+          {
+            "misconception": "Pre-colonial India was a poor, backward land that the British government easily conquered in 1600.",
+            "correction": "Seventeenth-century Mughal India was one of the wealthiest empires on earth; in 1615 Ambassador Sir Thomas Roe had to petition Emperor Jahangir humbly just to rent coastal warehouse 'factories' at Surat."
+          },
+          {
+            "misconception": "The British Crown and Parliament directly invaded and ruled Bengal in 1757.",
+            "correction": "Bengal was seized by a profit-seeking joint-stock corporation—the East India Company, chartered in London in 1600 (Source A)—employing private sepoy armies to enrich shareholders."
+          },
+          {
+            "misconception": "Robert Clive won the Battle of Plassey in June 1757 purely because British weapons outmatched Bengal's army.",
+            "correction": "Alongside keeping his gunpowder dry under tarpaulins during the monsoon, Clive won Plassey primarily through political conspiracy—bribing Bengal commander Mir Jafar with the Nawab's throne so his divisions stood idle (Source D)."
+          }
+        ],
+        "send_adaptation": "Pre-teach factory (in 1600s trade, an armed coastal warehouse, NOT a steam mill) and Diwani (the legal right to collect Bengal's land taxes). Walk through the five stages on the India Reference Map—1600 London Charter -> 1615 Surat -> 1756 Calcutta -> 1757 Plassey -> 1765 Allahabad—before scaffolding the causal PEEL paragraphs.",
+        "stretch_challenge": "Challenge higher-attaining pupils to interrogate the 1770s Bengal silver rupee (Source B): why did the East India Company deliberately carry on minting coins in the name of Mughal Emperor Shah Alam II even after stripping his real fiscal power in 1765?",
+        "safeguarding_impartiality": "Foreground Mughal Bengal's wealth, courtly sophistication, and political sovereignty before 1757 so South Asian history is never reduced to colonial victimhood, and handle the 1770 Bengal famine (up to ten million deaths exacerbated by unyielding Company tax extraction) with sober historical dignity."
       },
       "prologue": "In 1600, Queen Elizabeth I granted a royal charter to a tiny syndicate of London merchants trading in Indian spices. Over 150 years, this private corporation built its own mercenary armies, forts, and warships. In 1757, Robert Clive defeated the Nawab of Bengal at Plassey. How did a commercial company become the ruler of millions?",
       "video": [
@@ -2305,7 +2325,8 @@
       "banner_image": "/images/upgraded/ks3-early/fbe_l1_banner_fort_william_calcutta_1754.jpg",
       "hero_image": "/images/upgraded/ks3-early/fbe_l1_banner_fort_william_calcutta_1754.jpg",
       "banner_position": "center 35%",
-      "enquiryQuestion": "How did a London trading company seize military control of Mughal Bengal?"
+      "enquiryQuestion": "How did a London trading company seize military control of Mughal Bengal?",
+      "banner_caption": "Fort William in the Kingdom of Bengal, Belonging to the East India Company of England (Jan van Ryne, London, 1754): Armed Indiamen moored before the fortified Calcutta trading post that became the launchpad for Company rule across Bengal."
     },
     {
       "id": "lesson_2",
@@ -3369,7 +3390,27 @@
               }
             ]
           }
-        }
+        },
+        "curriculum_link": "KS3 Britain & Transatlantic Slavery (1619–1807): Analysing the economic mechanics of the Triangular Trade, the brutality of chattel slavery, and abolitionist campaigning.",
+        "hinge_question": "How do both the 1781 Zong insurance court case and the 1788 Brookes ship diagram expose the exact legal meaning of 'chattel slavery'—and how did abolitionists turn that evidence against the trade?",
+        "hinge_guidance": "Strong answers explain that chattel law classified African men, women, and children as commercial property ('cargo', Source B), which is why Captain Luke Collingwood murdered 133 sick captives off the Zong to claim maritime insurance. Abolitionists—led by Olaudah Equiano's 1789 testimony (Source D), Granville Sharp, and Thomas Clarkson's circulation of the Brookes architectural stowage plan (Source C)—used the slave traders' own cold measurements to prove systemic inhumanity and win the 1807 Abolition Act.",
+        "misconceptions": [
+          {
+            "misconception": "The Transatlantic Slave Trade was carried out only by rogue pirates operating outside British law.",
+            "correction": "Slave trafficking was legally sanctioned and funded at the pinnacle of the British state: King Charles II chartered the Royal African Company in 1672 under his brother James, Duke of York, and Britain secured the Spanish Asiento contract in 1713."
+          },
+          {
+            "misconception": "The 1807 Abolition Act immediately freed every enslaved person across the British Empire.",
+            "correction": "The 1807 Act outlawed the maritime buying and transporting of captives on British ships, but enslaved families on Caribbean plantations remained legally enslaved until the 1833 Slavery Abolition Act (and 1838 full emancipation)."
+          },
+          {
+            "misconception": "Abolition in 1807 was achieved solely by white British MPs in Westminster.",
+            "correction": "Abolition depended heavily on Black testimony, shipboard insurrections, and published leadership—above all Olaudah Equiano's bestselling 1789 autobiography and nationwide speaking tours (Source D)."
+          }
+        ],
+        "send_adaptation": "Pre-teach chattel slavery (treating human beings legally as permanent property) and Middle Passage (the Atlantic voyage from West Africa to the Americas). Trace the three legs of the Triangular Trade Reference Map clearly before reading, and pair Wedgwood's medallion (Source E) with Equiano's frontispiece (Source D) to model concise two-sentence feature answers.",
+        "stretch_challenge": "Push higher-attaining pupils to compare Olaudah Equiano's dignified 1789 gentleman's portrait holding an open Bible (Source D) with Josiah Wedgwood's kneeling 'Am I Not a Man and a Brother?' medallion (Source E): why do historians point out that Equiano's self-presentation asserted far stronger equality and agency than Wedgwood's supplicating figure?",
+        "safeguarding_impartiality": "Use humanising historical terminology throughout ('enslaved Africans' or 'captives' rather than defining people solely as 'slaves'). Never use classroom roleplay, physical space-cramping simulations, or mock auctions; examine the Charleston broadside (Source B), Brookes stowage plan (Source C), and 1781 Zong massacre forensically as historical indictments of planter greed while centring Olaudah Equiano's lived voice and dignity."
       },
       "prologue": "Between the sixteenth and nineteenth centuries, European slave ships forcibly transported over twelve million African men, women, and children across the Atlantic Ocean. Packed in suffocating darkness below deck, captives endured the unspeakable horrors of the Middle Passage. What were the brutal economic mechanics and human costs of this global trading empire?",
       "video": [
@@ -4347,7 +4388,8 @@
       "banner_image": "/images/upgraded/ks3-early/fbe_l2_banner_biard_slave_trade_1833.jpg",
       "hero_image": "/images/upgraded/ks3-early/fbe_l2_banner_biard_slave_trade_1833.jpg",
       "banner_position": "center 40%",
-      "enquiryQuestion": "How did the transatlantic slave trade operate, and how was it challenged?"
+      "enquiryQuestion": "How did the transatlantic slave trade operate, and how was it challenged?",
+      "banner_caption": "The Slave Trade (Slaves on the West Coast of Africa, François-Auguste Biard, c. 1833, Wilberforce House Museum): Captive Africans chained, inspected, and branded on the coast before forced embarkation on the Middle Passage."
     },
     {
       "id": "lesson_3",
@@ -5302,7 +5344,27 @@
               }
             ]
           }
-        }
+        },
+        "curriculum_link": "KS3 Empire & Resistance (1655–1740): Historical interpretations and agency — evaluating covert cultural survival and armed Maroon resistance in Jamaica.",
+        "hinge_question": "Why were covert boiling-house sabotage on sugar estates and Queen Nanny's guerrilla ambushes in the Blue Mountains BOTH forms of active resistance—and why did the 1739 Maroon Peace Treaty require a painful compromise?",
+        "hinge_guidance": "Look for pupils recognising a spectrum of resistance: on lowland plantations under whips and crushing rollers (Sources A–B), breaking tools, slowing harvests, and telling Anansi tales attacked planter profits and preserved African identity; in the Blue Mountains, Queen Nanny's Windward Maroons used living-branch camouflage and abeng cow-horn signals to defeat British troops. Ensure pupils explain both halves of Governor Trelawny's 1739 Treaty (Source E): 1,500 sovereign free acres won, traded against a tragic pledge to return future plantation runaways.",
+        "misconceptions": [
+          {
+            "misconception": "Enslaved Africans passively accepted plantation slavery until British Parliament abolished it.",
+            "correction": "Resistance was relentless from 1655 onwards—ranging from covert tool-breaking, boiling-house sabotage, and preserving West African Anansi stories on estates to victorious armed Maroon guerrilla warfare in Jamaica's Blue Mountains."
+          },
+          {
+            "misconception": "Working slowly or breaking hoes proved planter Edward Long's claim that enslaved workers were 'naturally lazy'.",
+            "correction": "In the Interpretations task, Jamaican planter Edward Long (1774) twisted deliberate covert sabotage—feigning illness and stalling boiling vats to disrupt 18-hour sugar harvests—into racist pro-slavery propaganda."
+          },
+          {
+            "misconception": "Small Maroon bands could never defeat professional, musket-armed British Army regiments.",
+            "correction": "Led by Asante strategist Queen Nanny (Source D) and captains like Leonard Parkinson (Source C), Maroons exploited steep rainforest ridges, living-branch camouflage, and coded abeng horn signals until Governor Trelawny sued for peace in 1739."
+          }
+        ],
+        "send_adaptation": "Pre-teach Maroon (self-liberated Africans governing free mountain towns) and sabotage (deliberately breaking tools or slowing work to resist oppression). Use Studio Audio and chunk the Interpretations task by highlighting Edward Long's provenance ('Jamaican slave-owning planter, 1774') before contrasting it with modern historians of resistance.",
+        "stretch_challenge": "Challenge higher-attaining pupils to evaluate the 1739 Maroon Treaty (Source E) ethically and strategically: did signing the runaway-return clause strengthen or weaken the broader struggle against Jamaican plantation slavery over the following century?",
+        "safeguarding_impartiality": "Frame Edward Long's 1774 History of Jamaica extract explicitly as self-serving slaveholder ideology so pupils interrogate its provenance critically without internalising colonial stereotypes, and balance the harsh reality of sugar-mill mortality with proud emphasis on African tactical brilliance, music, and Queen Nanny's leadership."
       },
       "prologue": "On Caribbean sugar plantations, enslaved Africans endured backbreaking labour under the overseer's whip to feed Britain's booming sweet tooth. Yet resistance was relentless. In the misty Blue Mountains of Jamaica, Queen Nanny led runaway Maroons in daring guerrilla warfare against British soldiers. How did enslaved people actively resist colonial bondage?",
       "video": [
@@ -6215,7 +6277,8 @@
       "banner_image": "/images/upgraded/ks3-early/fbe_l3_banner_roaring_river_jamaica_1778.jpg",
       "hero_image": "/images/upgraded/ks3-early/fbe_l3_banner_roaring_river_jamaica_1778.jpg",
       "banner_position": "center 35%",
-      "enquiryQuestion": "How did enslaved Africans and Queen Nanny resist plantation slavery in Jamaica?"
+      "enquiryQuestion": "How did enslaved Africans and Queen Nanny resist plantation slavery in Jamaica?",
+      "banner_caption": "A View in the Island of Jamaica, of the Spring-Head of Roaring River on the Estate of William Beckford (engraved by James Mason after George Robertson, 1778): Lush tropical mountain valleys bordering the sugar estates of eighteenth-century Jamaica."
     },
     {
       "id": "lesson_4",
@@ -7172,7 +7235,26 @@
               }
             ]
           }
-        }
+        },
+        "curriculum_link": "KS3 Britain & Revolutionary America (1763–1773): Causation and propaganda — tracing how imperial war debt, taxation, and East India Company monopoly sparked colonial rebellion.",
+        "hinge_question": "If the May 1773 Tea Act actually made legal tea CHEAPER for American shoppers than smuggled Dutch tea, why did the Sons of Liberty smash and dump 342 chests into Boston Harbour in December 1773?",
+        "hinge_guidance": "Strong answers see past the price tag to the constitutional principle and monopoly threat: buying cheap East India Company tea meant accepting Parliament's legal right to levy taxes without colonial representation AND allowed a giant London monopoly to undercut local American merchants. Probe pupils who think the Tea Act raised tea prices—that classic error misses why Bostonians rejected a bargain on principle!",
+        "misconceptions": [
+          {
+            "misconception": "The Sons of Liberty dumped tea into Boston Harbour because Britain raised the price of tea sky-high in 1773.",
+            "correction": "The 1773 Tea Act actually lowered tea prices to help the East India Company offload 18 million pounds of surplus tea; colonists rebelled because paying the residual duty accepted 'taxation without representation' and ruined local traders."
+          },
+          {
+            "misconception": "Britain taxed the Thirteen Colonies after 1763 purely out of royal greed.",
+            "correction": "Victory in the Seven Years' War saddled Britain with a £133 million national debt, and Westminster MPs argued colonists should help pay for the 10,000 redcoats stationed to guard the 1763 Proclamation frontier (Source A)."
+          },
+          {
+            "misconception": "Paul Revere's famous 1770 engraving shows an accurate eyewitness snapshot of the Boston Massacre.",
+            "correction": "Revere's 'Bloody Massacre' print (Source C) was calculated revolutionary propaganda—depicting redcoats firing an ordered volley into peaceful gentlemen while omitting the snowballs, ice, and oyster shells hurled at the surrounded sentry."
+          }
+        ],
+        "send_adaptation": "Pre-teach boycott (refusing to buy British goods) and propaganda (one-sided imagery designed to stir political anger). Compare Paul Revere's 1770 engraving (Source C) against the narrative description of King Street in Block 3 as a 'Spot the Spin' visual detective warm-up before writing the 1765–1773 narrative account.",
+        "stretch_challenge": "Ask higher-attaining pupils to connect Lesson 4 directly back to Lesson 1: how did the East India Company's corporate crisis in London and Bengal directly trigger the 1773 Tea Act crisis across the Atlantic in Boston Harbour?"
       },
       "prologue": "Following the Seven Years' War, Parliament insisted that American colonists help pay for imperial defence. Colonists furiously resisted, shouting 'No taxation without representation!' In December 1773, Boston rebels disguised themselves as Native Americans and dumped 342 chests of British tea into the harbour. Why did imperial taxes push loyal subjects toward rebellion?",
       "video": [
@@ -8122,7 +8204,8 @@
       "banner_image": "/images/upgraded/ks3-early/fbe_l4_banner_revere_boston_landing_1768.jpg",
       "hero_image": "/images/upgraded/ks3-early/fbe_l4_banner_revere_boston_landing_1768.jpg",
       "banner_position": "center 45%",
-      "enquiryQuestion": "Why did British taxes push the Thirteen Colonies toward open rebellion by 1773?"
+      "enquiryQuestion": "Why did British taxes push the Thirteen Colonies toward open rebellion by 1773?",
+      "banner_caption": "A View of Part of the Town of Boston in New-England and Brittish Ships of War Landing Their Troops! (Paul Revere, 1768–1770): Royal Navy warships landing redcoat regiments along Boston’s Long Wharf to enforce imperial customs duties."
     },
     {
       "id": "lesson_5",
@@ -9006,7 +9089,27 @@
               }
             ]
           }
-        }
+        },
+        "curriculum_link": "KS3 Revolutionary America & The Atlantic World (1775–1783): Analysing global war, Enlightenment hypocrisy, and Black Loyalist self-emancipation.",
+        "hinge_question": "Why did thousands of enslaved African Americans risk their lives to fight FOR King George III against George Washington's Patriots when Thomas Jefferson's 1776 Declaration proclaimed 'all men are created equal'?",
+        "hinge_guidance": "Look for pupils exposing the central paradox of 1776: forty-one of the fifty-six Patriot signatories (including Jefferson) personally held people in chattel bondage and left slavery untouched, whereas Royal Governor Lord Dunmore's November 1775 Proclamation (Source A) offered concrete military emancipation—leading 3,000 Black Loyalists recorded in the 1783 Book of Negroes (Source D) to evacuate New York for freedom in Nova Scotia and Sierra Leone.",
+        "misconceptions": [
+          {
+            "misconception": "The 1776 Declaration of Independence ('all men are created equal') abolished slavery across the new United States.",
+            "correction": "Forty-one of the fifty-six signatories owned enslaved people, and half a million African Americans remained in chattel bondage; enslaved freedom-seekers found tangible emancipation offers from British commanders like Lord Dunmore (Source A)."
+          },
+          {
+            "misconception": "American Patriot militias defeated the British Empire entirely on their own through guerrilla fighting.",
+            "correction": "After Saratoga in October 1777, King Louis XVI's France entered as a formal superpower ally—and it was Admiral de Grasse's French battle fleet blocking Chesapeake Bay alongside Washington's army that trapped Cornwallis at Yorktown in 1781."
+          },
+          {
+            "misconception": "Lord Dunmore issued his 1775 freedom offer out of pure abolitionist morality.",
+            "correction": "Britain still ran slave plantations in Jamaica; Dunmore's 1775 proclamation (Source A) was a calculated military strategy to cripple Virginia Patriot plantations and swell royal troop numbers—though Sir Guy Carleton honoured freedom certificates in 1783 (Source D)."
+          }
+        ],
+        "send_adaptation": "Pre-teach hypocrisy (preaching equal liberty while owning enslaved people) and Black Loyalist (an enslaved African who escaped Patriot masters to win freedom fighting for Britain). Use the Verso 5-Stage Spine and Captain William Booth's Shelburne watercolour to separate military turning points (Saratoga, Yorktown) from human outcomes before writing the evaluative essay.",
+        "stretch_challenge": "Challenge higher-attaining pupils to link the Caribbean sugar colonies (Lesson 3) to Britain's defeat at Yorktown in 1781: why was Westminster willing to divert Royal Navy fleets away from North America—risking the loss of thirteen colonies—just to protect small islands like Jamaica from the French?",
+        "safeguarding_impartiality": "Contextualise the historical archive title The Book of Negroes (1783, Source D) clearly as the original eighteenth-century military register of 3,000 emancipated Black Loyalists signed by Brigadier-General Samuel Birch, modelling modern respectful language ('Black Loyalists') in classroom discussion while celebrating their self-determined pursuit of freedom in Nova Scotia and Freetown."
       },
       "prologue": "In July 1776, American delegates proclaimed that 'all men are created equal' and declared independence from King George III. Yet thousands of enslaved Black Loyalists fled to British battle-lines, seeking genuine personal freedom under the Crown. At Yorktown in 1781, Britain surrendered. How did revolutionary ideals collide with imperial defeat and the reality of slavery?",
       "video": [
@@ -9964,7 +10067,8 @@
       "banner_image": "/images/upgraded/ks3-early/fbe_l5_banner_washington_crossing_delaware.jpg",
       "hero_image": "/images/upgraded/ks3-early/fbe_l5_banner_washington_crossing_delaware.jpg",
       "banner_position": "center 40%",
-      "enquiryQuestion": "How did the American Revolution win independence while leaving slavery intact?"
+      "enquiryQuestion": "How did the American Revolution win independence while leaving slavery intact?",
+      "banner_caption": "Washington Crossing the Delaware (Emanuel Leutze, 1851, Metropolitan Museum of Art): General George Washington leading Continental troops across the ice-choked Delaware River on Christmas night 1776 during the War of American Independence."
     }
   ],
   "homepage_background": "/images/first_british_empire/battle_of_plassey_1757.jpg",
@@ -10669,5 +10773,11 @@
       "studio_audio": "/audio/reading/first_british_empire/r4.mp3",
       "studio_voice_label": "Studio Male Historian · Archival Reading"
     }
-  ]
+  ],
+  "cover_caption": "Contemporary military survey plan of the Battle of Plassey (23 June 1757), mapping Colonel Robert Clive’s East India Company positions along the Bhagirathi River that secured corporate rule over Mughal Bengal.",
+  "teacher_guidance_overview": {
+    "curriculum_focus": "KS3 National Curriculum: Ideas, political power, industry and empire: Britain, 1745–1901 (with seventeenth-century foundations in early colonial expansion, corporate empire in India, the transatlantic slave trade, African resistance, and the American Revolution).",
+    "disciplinary_threads": "Multi-Causal Explanation, Primary Source Forensic & Provenance Analysis, Historical Interpretations, and Agency vs Structure.",
+    "non_specialist_summary": "This Year 8 unit examines the rise, human cost, and fracture of the First British Empire between 1600 and 1783. Pupils investigate how royal charters empowered private corporations—the East India Company in Mughal Bengal and the Royal African Company in West Africa—to build fortunes through military bribery and chattel slavery, how enslaved Africans resisted aboard ships, in Maroon strongholds under Queen Nanny, and as Black Loyalists, and why colonial taxation cost Britain the Thirteen American Colonies."
+  }
 }

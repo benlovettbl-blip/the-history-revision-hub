@@ -292,7 +292,26 @@
           "Source C": "Enacted in 1660 and reinforced throughout the eighteenth century, the Navigation Acts formed the legal backbone of British mercantilism by banning foreign ships from colonial trade. **Hinge Question:** How did forcing colonies to use only British ships help fund the growth of the Royal Navy?",
           "Source D": "Written the morning after Nelson’s death off Cape Trafalgar, Vice-Admiral Collingwood’s dispatch announced the destruction of Napoleon’s combined invasion fleet. **Hinge Question:** Why did smashing both the French and Spanish fleets in a single battle usher in a century of \"Pax Britannica\"?",
           "Source E": "In March 1889, First Lord of the Admiralty Lord George Hamilton asked Parliament for £21.5 million to build 70 warships, enshrining the Two-Power Standard in law. **Hinge Question:** Why did the rise of industrial rivals like France, Russia, and Germany force Britain to pass the 1889 Naval Defence Act?"
-        }
+        },
+        "curriculum_link": "KS3 Industry & Empire (1783–1914): Naval hegemony and local history — linking mercantilist trade, Trafalgar (1805), Portsmouth Dockyard mass production, HMS Warrior, and the 1889 Two-Power Standard.",
+        "hinge_question": "Why couldn't Britain maintain a global trading empire after 1805 with wooden sailing ships alone—and how did Portsmouth Royal Dockyard keep the Royal Navy ahead of every rival?",
+        "hinge_guidance": "Look for pupils connecting industrial manufacturing directly to sea control: after Nelson's 1805 Trafalgar victory (Source D) secured ocean trade lanes, Marc Brunel's 1803 steam block mills at Portsmouth pioneered factory mass production for 10,000+ dockyard workers, 1860 ironclad HMS Warrior (Source B) rendered wooden fleets obsolete overnight, and the £21.5m 1889 Naval Defence Act (Source E) locked in the Two-Power Standard against France, Russia, and Germany.",
+        "misconceptions": [
+          {
+            "misconception": "The British Empire expanded solely through peaceful free-market shopping and exploration.",
+            "correction": "Imperial trade rested on legal coercion under the Navigation Acts (Source C) and overwhelming Royal Navy gunboat power—secured at Trafalgar in 1805 and maintained by a £21.5 million battleship budget in 1889 (Source E)."
+          },
+          {
+            "misconception": "Factory assembly-line mass production was invented by Henry Ford's car plants in twentieth-century America.",
+            "correction": "More than a century earlier in 1803, Marc Brunel installed steam-powered wooden pulley-block machinery at Portsmouth Royal Dockyard—creating the world's first integrated industrial mass-production line."
+          },
+          {
+            "misconception": "HMS Warrior (1860) looked and operated just like a modern all-steel diesel warship.",
+            "correction": "HMS Warrior (Source B) was a transitional hybrid marvel—combining 4.5-inch wrought-iron armour plates over 18 inches of solid teak with both twin steam engines and towering ocean sails."
+          }
+        ],
+        "send_adaptation": "Pre-teach mercantilism (forcing colonies to trade raw goods only on British ships to enrich Britain) and Two-Power Standard (keeping the Royal Navy as strong as the next two largest foreign navies combined). Pair Walter Crane's 1886 Imperial Federation world map (Source A) with the photograph of HMS Warrior at Portsmouth (Source B) along the Verso Spine before writing.",
+        "stretch_challenge": "Challenge higher-attaining pupils to link Second British Empire Lesson 1 directly to Industrialisation Lesson 1: how did Henry Cort's 1784 Funtley wrought-iron rollers and James Watt's rotary steam engines converge seventy-six years later in the armoured hull of HMS Warrior (1860)?"
       },
       "learning_objectives": {
         "overarching": "How was the British Empire built and sustained in the 19th century?",
@@ -1446,7 +1465,8 @@
       "banner_position": "center 45%",
       "card_image": "/images/ks3_sbe/sbe_l1_card_hms_victory_portsmouth.jpg",
       "enquiry": "How did naval power and Portsmouth Dockyard sustain the British Empire?",
-      "enquiryQuestion": "How did naval power and Portsmouth Dockyard sustain the British Empire?"
+      "enquiryQuestion": "How did naval power and Portsmouth Dockyard sustain the British Empire?",
+      "banner_caption": "A View of Part of the British Fleet at Portsmouth (Royal Collection): Guarded by wooden battleships and later steam ironclads, Portsmouth Royal Dockyard served as the industrial nerve centre of Britain’s maritime empire."
     },
     {
       "id": "lesson_2",
@@ -1529,7 +1549,26 @@
           "Source C": "Passed under fierce lobbying from English woollen and silk weavers, the 1721 Calico Act outlawed wearing or selling printed Indian cotton cloth in Britain, imposing heavy £5 fines on wearers and £20 fines on merchants to shut Indian textiles out of the British market. **Hinge Question:** Why is the 1721 Calico Act crucial evidence against the claim that Lancashire cotton triumphed over Indian textiles purely through fair free-market competition?",
           "Source D": "Giving sworn evidence before a British Parliamentary Select Committee in 1840, colonial administrator Sir Charles Trevelyan documented how high British import tariffs (70–80% on Indian cloth vs 2–3.5% on British factory cotton entering India) emptied historic weaving cities like Dhaka. **Hinge Question:** What does the collapse of Dhaka's population from 150,000 to 30,000 reveal about how colonial trade rules reshaped Indian cities as well as British industrial towns?",
           "Source E": "Attributed to Governor-General Lord William Bentinck's 1834 administrative minute, this famous warning came from the very top of British rule in India—making it especially striking evidence because a colonial governor had no motive to exaggerate British-caused suffering. **Hinge Question:** Why does this bleak verdict carry particular weight coming from Britain's own Governor-General of India rather than from an opponent of British rule?"
-        }
+        },
+        "curriculum_link": "KS3 Global Economic History & Empire (1700–1850): Analysing how protectionist tariffs, the 1765 Diwani, and Lancashire steam mills de-industrialised Mughal India's textile economy.",
+        "hinge_question": "In 1700 India produced over a quarter of the world's textiles—so how did British laws and Lancashire steam mills turn Bengal from the world's cloth workshop into a raw-cotton supplier by 1840?",
+        "hinge_guidance": "Strong answers reject the myth that British steam mills simply won a 'fair free-market race': first, Parliament passed the 1700/1721 Calico Acts (Source C) and 70% import tariffs to lock Indian cloth out of Britain; second, the 1765 Bengal Diwani (Source A) let the Company buy goods using Bengali peasant taxes rather than silver bullion; third, cheap Lancashire factory cloth flooded India virtually tariff-free—devastating Dhaka handloom weavers as admitted by Charles Trevelyan and Governor-General Bentinck (Sources D–E).",
+        "misconceptions": [
+          {
+            "misconception": "India was always a purely rural farming country before British factories introduced modern manufacturing.",
+            "correction": "Before colonial rule, Mughal Bengal and Gujarat were the textile workshop of the world—weaving exquisite Dhaka muslins and calicoes that drew silver and gold bullion from across Europe."
+          },
+          {
+            "misconception": "Lancashire cotton mills outcompeted Indian handloom weavers through fair, equal free trade.",
+            "correction": "Trade rules were rigged one way: Britain banned Indian prints under the 1721 Calico Act (Source C) and imposed 70% border tariffs on Indian cloth while forcing Indian ports to accept machine-spun Manchester cotton almost duty-free."
+          },
+          {
+            "misconception": "Only modern anti-imperial critics noticed the ruin of Indian weavers—Victorian officials had no idea it was happening.",
+            "correction": "Top British colonial officials documented the catastrophe firsthand: in 1834 Governor-General Lord William Bentinck wrote that 'the bones of the cotton weavers are bleaching the plains of India' (Source E)."
+          }
+        ],
+        "send_adaptation": "Pre-teach tariff (a border tax making imported goods expensive) and de-industrialisation (the collapse of a country's skilled manufacturing workshops). Use the Block 2 flow widget to draw two contrasting arrows—pre-1765 ('European Silver -> Indian Weavers') versus post-1800 ('Lancashire Cloth -> India Duty-Free, 70% Tax Blocking Indian Cloth')—before writing.",
+        "stretch_challenge": "Push higher-attaining pupils to cross-reference the 1862 Bolton civic statue of spinning-mule inventor Samuel Crompton (Source B) with Bentinck's 1834 dispatch (Source E): how can the exact same industrial invention be remembered accurately as heroic progress in Lancashire and economic ruin in Dhaka?"
       },
       "learning_objectives": {
         "overarching": "How did East India Company corporate expansion and British industrialisation de-industrialise the Indian economy?",
@@ -2677,7 +2716,8 @@
       "banner_position": "center 48%",
       "card_image": "/images/east_india_house.jpg",
       "enquiry": "How did East India Company rule ruin India’s world-leading textile industry?",
-      "enquiryQuestion": "How did East India Company rule ruin India’s world-leading textile industry?"
+      "enquiryQuestion": "How did East India Company rule ruin India’s world-leading textile industry?",
+      "banner_caption": "Calcutta from the Garden Reach (Thomas & William Daniell, 1797): East India Company merchant vessels crowded the Hooghly River as Company tax extraction and unequal tariffs transformed Bengal’s economy."
     },
     {
       "id": "lesson_3",
@@ -2760,7 +2800,27 @@
           "Source C": "Issued in August 1857 in the name of Mughal Emperor Bahadur Shah Zafar’s court, the Azamgarh Manifesto deliberately reached beyond army barracks—calling on Hindu and Muslim landowners, merchants, civil servants, and weavers to overthrow East India Company rule together. **Hinge Question:** How does the Azamgarh Proclamation challenge the Victorian British label that 1857 was merely a narrow military 'Sepoy Mutiny'?",
           "Source D": "Published by Cambridge University Press ('Northern India: The Mutiny 1857–9'), this cartographic record highlights both the fierce regional scale of the revolt across Hindustani northern India and the strategic role of telegraph lines, the Grand Trunk Road, and newly opened rail links in British counter-offensives. **Hinge Question:** Why was the geographic concentration of the uprising in northern India—while Bengal ports, Madras, Bombay, and the Punjab did not join—so decisive for Britain's ability to recapture Delhi and Lucknow?",
           "Source E": "Following the Government of India Act (August 1858), which liquidated East India Company rule and transferred sovereignty directly to the British Crown (the British Raj), Queen Victoria's proclamation was read aloud at Allahabad on 1 November 1858 to win back princely loyalty. **Hinge Question:** Did the 1858 creation of the British Raj genuinely empower ordinary Indians, or did it simply replace unstable Company greed with more cautious direct imperial rule?"
-        }
+        },
+        "curriculum_link": "KS3 Empire & Resistance in India (1848–1858): Distinguishing long-term political/economic grievances from immediate religious triggers in the 1857 Indian Rebellion and birth of the British Raj.",
+        "hinge_question": "Were the greased Pattern 1853 Enfield rifle cartridges the REAL cause of the 1857 Indian Rebellion, or merely the spark that lit a barrel of gunpowder stacked up by Lord Dalhousie?",
+        "hinge_guidance": "Look for pupils separating preconditions from trigger: Lord Dalhousie's Doctrine of Lapse seizing Satara, Nagpur, and Jhansi, the 1856 annexation of Awadh (homeland of thousands of Bengal sepoys), heavy land taxes, and missionary fears stacked the gunpowder; biting Enfield cartridges rumoured to hold cow and pig fat (Source A) lit the fuse at Meerut in May 1857—uniting Hindu and Muslim rebels behind Bahadur Shah II (Azamgarh Proclamation, Source C) and Rani Lakshmibai (Source B) and forcing Parliament to replace Company rule with the Crown's Raj in 1858.",
+        "misconceptions": [
+          {
+            "misconception": "The 1857 uprising was just a brief, minor soldiers' strike over rifle grease.",
+            "correction": "While greased Enfield cartridges triggered the May 1857 Meerut mutiny (Source A), rebellion engulfed northern and central India—uniting dispossessed rulers like Rani Lakshmibai of Jhansi (Source B), Mughal Delhi, landowners, and overtaxed peasants (Source C)."
+          },
+          {
+            "misconception": "Hindu and Muslim soldiers refused to unite during 1857 because of religious differences.",
+            "correction": "Shared outrage that cow fat defiled Hindus and pig fat defiled Muslims forged remarkable Hindu-Muslim solidarity—marching together from Meerut to rally behind Muslim Mughal Emperor Bahadur Shah II in Delhi and issuing the joint Azamgarh Proclamation (Source C)."
+          },
+          {
+            "misconception": "When the East India Company was abolished in 1858, India gained self-government.",
+            "correction": "The Government of India Act 1858 transferred sovereignty from the Company directly to Queen Victoria's Crown under a royal Viceroy (the British Raj, Source E)—promising religious non-interference while tightening British military and racial dominance."
+          }
+        ],
+        "send_adaptation": "Pre-teach Doctrine of Lapse (Company seizure of any Hindu princely state without a biological male heir) and sepoys (Indian soldiers serving in the East India Company army). Sort the Verso 5-Stage Spine into 'Long-Term Anger' (Stage 1), 'Immediate Spark' (Stage 2), 'Rebellion Spreads' (Stages 3–4), and 'Result: The Raj' (Stage 5) before tackling the causal essay.",
+        "stretch_challenge": "Challenge higher-attaining pupils to analyse why naming matters in history: why did Victorian British textbooks call 1857 'The Sepoy Mutiny', whereas Indian nationalist historians called it 'The First War of Independence'—and which label fits the Azamgarh Proclamation (Source C) better?",
+        "safeguarding_impartiality": "Explain Hindu reverence for cattle and Islamic prohibition of pork respectfully as deeply held sacred obligations violated by Company military carelessness (Source A), and teach the contested terminology ('Mutiny' vs '1857 Rebellion') impartially through primary evidence."
       },
       "learning_objectives": {
         "overarching": "Why did corporate military rule spark the 1857 Indian Rebellion, and how did it establish the British Raj?",
@@ -4059,7 +4119,8 @@
       "banner_position": "center 46%",
       "card_image": "/images/ks3_sbe/sbe_l3_card_cashmere_gate_delhi_1858.jpg",
       "enquiry": "Why did corporate military rule spark the 1857 Rebellion and establish the British Raj?",
-      "enquiryQuestion": "Why did corporate military rule spark the 1857 Rebellion and establish the British Raj?"
+      "enquiryQuestion": "Why did corporate military rule spark the 1857 Rebellion and establish the British Raj?",
+      "banner_caption": "The Relief of Lucknow, November 1857 (Thomas Jones Barker, 1859, National Portrait Gallery): Fierce fighting raged across northern and central India during the 1857–1858 Uprising before Parliament dissolved the East India Company."
     },
     {
       "id": "lesson_4",
@@ -4142,7 +4203,27 @@
           "Source C": "Poem published in 1899 urging imperial powers to colonize and rule foreign societies as a moral obligation. **Hinge Question:** What phrase reveals Kipling’s paternalistic belief that colonized peoples were incapable of governing themselves?",
           "Source D": "British journalist E. D. Morel founded the Congo Reform Association to expose the atrocities committed by European concession companies in Africa. **Hinge Question:** According to Morel, what was the real motivation that drove European syndicates into the African interior?",
           "Source E": "In 1888, agents representing diamond magnate Cecil Rhodes secured the \"Rudd Concession\" from King Lobengula of the Ndebele (Matabele) nation in southern Africa. While Lobengula believed he had merely granted limited digging rights to a few miners, Rhodes used the English text to claim all mineral rights across Zimbabwe and secure a royal charter for the British South Africa Company. Upon discovering the deception, Lobengula dispatched an urgent diplomatic petition directly to Queen Victoria. **Hinge Question:** Why did Cecil Rhodes and European imperialists rely on deceptive legal contracts alongside Maxim guns to seize African territories?"
-        }
+        },
+        "curriculum_link": "KS3 New Imperialism & The Scramble for Africa (1879–1914): Evaluating diplomatic partition, technological asymmetry (Maxim gun & quinine), colonial ideology, and African resistance.",
+        "hinge_question": "In 1870 Europeans controlled barely 10% of Africa along the coast, yet by 1914 they controlled 90%—what changed technologically and diplomatically in the 1880s, and how did writers like Kipling disguise plunder as 'duty'?",
+        "hinge_guidance": "Strong answers combine three drivers: Bismarck's 1884–85 Berlin Conference (with zero Africans invited, Source A) demanded 'Effective Occupation' inland; quinine anti-malarial medicine plus Hiram Maxim's 600-round-per-minute machine gun created lethal battlefield asymmetry as seen at Omdurman in 1898 (Source B); and paternalistic racial propaganda like Kipling's 1899 'White Man's Burden' (Source C) masked violent extraction of rubber, diamonds, and copper exposed by E. D. Morel (Source D) and King Lobengula (Source E).",
+        "misconceptions": [
+          {
+            "misconception": "Africa before 1884 was an empty wilderness without organised kingdoms, diplomacy, or armies.",
+            "correction": "Africa encompassed sophisticated states including the Zulu Kingdom under King Cetshwayo (who defeated British troops at Isandlwana in 1879), Matabeleland under King Lobengula (Source E), and Ethiopia (which defeated Italy to remain independent)."
+          },
+          {
+            "misconception": "African leaders agreed to colonial borders at the 1884–1885 Berlin Conference.",
+            "correction": "Chancellor Otto von Bismarck invited fourteen Western powers and zero African representatives (Source A), drawing geometric lines across maps that sliced straight through historic African kingdoms and languages."
+          },
+          {
+            "misconception": "European empires conquered Africa mainly to build schools and spread Christian charity.",
+            "correction": "While Rudyard Kipling framed empire as a selfless 'civilising mission' in 1899 (Source C), E. D. Morel (Source D) exposed how colonial regimes extracted rubber, gold, diamonds, and palm oil—reaching horrific extremes in King Leopold II's Congo Free State."
+          }
+        ],
+        "send_adaptation": "Pre-teach Effective Occupation (the Berlin rule that empires had to send troops inland to claim territory) and Maxim gun (the first 600-round-per-minute automatic machine gun). Read King Lobengula's vivid 1888 'chameleon and the fly' metaphor to Queen Victoria (Source E) aloud so pupils grasp diplomatic betrayal concretely before writing.",
+        "stretch_challenge": "Push higher-attaining pupils to pair Rudyard Kipling's 1899 poem (Source C) directly against E. D. Morel's 1920 The Black Man's Burden (Source D) and King Leopold II's Congo rubber terror: why did democratic European parliaments need paternalistic 'civilising' myths far more in the 1890s than sixteenth-century conquistadors ever did?",
+        "safeguarding_impartiality": "Never ask pupils to read colonial racial slurs in Kipling's 'The White Man's Burden' ('half-devil and half-child', Source C) aloud uncontextualised; frame Source C explicitly as nineteenth-century racial propaganda immediately dismantled by African ruler King Lobengula (Source E) and campaigner E. D. Morel (Source D), and teach King Leopold II's Congo atrocities with sober historical dignity rather than graphic shock."
       },
       "learning_objectives": {
         "overarching": "Why did European empires carve up Africa, and was it a civilising mission or economic plunder?",
@@ -5344,7 +5425,8 @@
       "banner_position": "center 48%",
       "card_image": "/images/ks3_sbe/sbe_l4_card_battle_of_isandlwana_fripp.jpg",
       "enquiry": "How did European industrial powers partition Africa, and how was conquest justified?",
-      "enquiryQuestion": "How did European industrial powers partition Africa, and how was conquest justified?"
+      "enquiryQuestion": "How did European industrial powers partition Africa, and how was conquest justified?",
+      "banner_caption": "The Defence of Rorke’s Drift, January 1879 (Alphonse de Neuville, 1880, Art Gallery of New South Wales): Fierce Zulu resistance during the 1879 Anglo-Zulu War preceded the 1884–1885 Berlin Conference and the Maxim-gun partition of Africa."
     },
     {
       "id": "lesson_5",
@@ -5427,7 +5509,27 @@
           "Source C": "John Leech's celebrated 1843 engraving visually divided Victorian society into two distinct worlds: the gilded, lavish salon of the capitalist bourgeoisie above, and the dark, subterranean pit of working-class toil below. **Hinge Question:** How does Leech use visual contrast in Source C to challenge the Victorian narrative of universal industrial progress?",
           "Source D": "Dadabhai Naoroji's pioneering 'Drain Theory' provided the scientific economic critique that underpinned the Indian National Congress, proving that British prosperity was subsidized by colonial impoverishment. **Hinge Question:** What evidence does Source D provide that Victorian British wealth was directly dependent upon the systematic underdevelopment of India?",
           "Source E": "Lord Curzon served as Viceroy of India from 1899 to 1905, presiding over the British Raj at its zenith. Curzon firmly believed in the \"civilising mission\", arguing that British imperial governance was a selfless moral duty that brought peace, impartial courts of law, irrigation canals, and modern railway infrastructure to millions of subjects. **Hinge Question:** Why did Victorian imperial administrators like Curzon view British rule as a \"providential instrument for good\", while Indian nationalists viewed it as systematic economic exploitation?"
-        }
+        },
+        "curriculum_link": "KS3 Synoptic Historiography Capstone (1851–Present): Evaluating competing historical interpretations of the British Empire (Dadabhai Naoroji, Lord Curzon, Niall Ferguson, and Shashi Tharoor).",
+        "hinge_question": "British engineers built 25,000 miles of railways across India—why do historians like Niall Ferguson and Shashi Tharoor look at those exact same railway tracks and reach completely opposite verdicts?",
+        "hinge_guidance": "Look for genuine historiographical maturity: Ferguson cites railways, telegraph networks, common law, and global trade as modernising foundations, whereas Dadabhai Naoroji's 'Drain of Wealth' critique (Source D) and Tharoor point out those railways were paid for out of Indian peasant taxes primarily to rush raw cotton to ports, carry British troops to crush unrest, and export grain to Britain even while ten million Indians starved in the 1876–78 Great Famine under Viceroy Lytton. Also highlight Engels and Punch (Sources B–C) showing imperial wealth bypassed Britain's own slum workers.",
+        "misconceptions": [
+          {
+            "misconception": "Imperial wealth made every ordinary person living in Victorian Britain rich and comfortable.",
+            "correction": "As Friedrich Engels (Source B) and Punch's 1843 'Capital and Labour' cartoon (Source C) demonstrate, vast imperial profits enriched merchants, financiers, and aristocrats while British miners and mill hands still endured harsh poverty."
+          },
+          {
+            "misconception": "The 25,000 miles of Indian railways were a free gift paid for by British taxpayers to help Indian travellers.",
+            "correction": "Indian railways were funded by taxes levied on Indian peasants (returning guaranteed 5% profits to British investors) and engineered first to extract raw cash crops to ports and move soldiers rapidly after 1857."
+          },
+          {
+            "misconception": "Late-Victorian Indian famines (1876–1878) killed millions purely because Britain had no food or transport left to help.",
+            "correction": "Railways and grain existed, but Viceroy Lord Lytton enforced rigid laissez-faire free-market dogma—refusing to halt record wheat exports to Britain while forcing starving peasants into punitive hard-labour camps."
+          }
+        ],
+        "send_adaptation": "Pre-teach Drain of Wealth (Dadabhai Naoroji's proof that Britain siphoned millions in Indian tax money to London without fair return) and historiography (why historians reach different verdicts on the past). Use a two-column 'Balance Sheet' organiser pairing Lord Curzon/Ferguson against Dadabhai Naoroji/Tharoor before drafting the balanced 3-paragraph essay.",
+        "stretch_challenge": "Challenge higher-attaining pupils to evaluate Dadabhai Naoroji's career (elected in 1892 by working-class London voters in Finsbury Central as Britain's first Indian MP, Source D): how did Naoroji turn Britain's own parliamentary institutions and colonial statistics into the sharpest weapon against imperial rule?",
+        "safeguarding_impartiality": "In line with DfE statutory political impartiality guidance, present contested interpretations of the British Empire (Lord Curzon and Niall Ferguson alongside Dadabhai Naoroji and Shashi Tharoor) as an evidence-grounded disciplinary debate—equipping pupils of all backgrounds to weigh infrastructure, law, economic extraction, and famine mortality rigorously without partisan assertion or present-day collective blame."
       },
       "learning_objectives": {
         "overarching": "Who truly benefited from the 19th-century industrial and imperial transformation?",
@@ -6581,7 +6683,8 @@
       "banner_position": "center 52%",
       "card_image": "/images/ks3_sbe/sbe_l5_card_rhodes_colossus_1892.jpg",
       "enquiry": "How and why do historians disagree fiercely over the legacy of the British Empire?",
-      "enquiryQuestion": "How and why do historians disagree fiercely over the legacy of the British Empire?"
+      "enquiryQuestion": "How and why do historians disagree fiercely over the legacy of the British Empire?",
+      "banner_caption": "Inauguration of the Suez Canal at Port Said (17 November 1869, Édouard Riou): Slashing sea voyages between Britain and India by over 4,000 miles, global imperial infrastructure bound colonial raw materials tightly to British industry."
     }
   ],
   "glossary": [
@@ -7267,5 +7370,10 @@
   "keyStage": "KS3",
   "key_stage": "KS3",
   "yearGroup": "Key Stage 3",
-  "category": "KS3"
+  "category": "KS3",
+  "teacher_guidance_overview": {
+    "curriculum_focus": "KS3 National Curriculum: Ideas, political power, industry and empire: Britain, 1745–1901 (Naval hegemony, Indian de-industrialisation, the 1857 Indian Rebellion and British Raj, the Scramble for Africa, and contested legacies of empire).",
+    "disciplinary_threads": "Multi-Causal Explanation, Economic & Military Interdependence, Evidential & Ideological Critique, and Historiographical Debate.",
+    "non_specialist_summary": "This Year 8 unit explores how industrial Britain forged the largest empire in world history between 1783 and 1914—and how colonized peoples experienced, resisted, and critiqued it. Starting locally at Portsmouth Royal Dockyard and HMS Warrior, pupils examine how British tariffs and Lancashire steam mills ruined Bengal's handloom weavers, why the 1857 Rebellion ended East India Company rule to create the Crown's Raj, how Maxim guns and the 1884 Berlin Conference partitioned Africa, and why historians from Dadabhai Naoroji to Niall Ferguson and Shashi Tharoor debate the Empire's legacy today."
+  }
 }

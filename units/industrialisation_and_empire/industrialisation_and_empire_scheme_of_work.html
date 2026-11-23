@@ -1,0 +1,1015 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Industrialisation, Power &amp; Protest (1750–1900) • Walk-In Teacher Guide &amp; Scheme of Work (6 Pages) | The History Revision Hub</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;800&family=Inter:wght@400;600;700;800&family=Lora:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --accent: #334155;
+      --accent-dark: #0f172a;
+      --accent-soft: #f8fafc;
+      --accent-border: #cbd5e1;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+    @page {
+      size: 210mm 297mm;
+      margin: 0;
+    }
+    body {
+      background: #cbd5e1;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      color: #0f172a;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .screen-toolbar {
+      width: 100%;
+      background: #0f172a;
+      color: #ffffff;
+      padding: 9px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid #f59e0b;
+      position: sticky;
+      top: 0;
+      z-index: 50;
+    }
+    .screen-toolbar-actions a,
+    .screen-toolbar-actions button {
+      background: var(--accent-dark);
+      color: #ffffff;
+      border: 1px solid #fbbf24;
+      padding: 5px 12px;
+      border-radius: 5px;
+      font-size: 8.5pt;
+      font-weight: 700;
+      text-decoration: none;
+      cursor: pointer;
+      margin-left: 6px;
+    }
+    .page.sow-page {
+      width: 210mm;
+      height: 297mm;
+      max-height: 297mm;
+      background: #ffffff;
+      margin: 7mm auto;
+      padding: 8mm 10.5mm;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      overflow: hidden;
+      page-break-after: always;
+      break-after: page;
+      box-shadow: 0 8px 24px rgba(15, 23, 42, 0.16);
+    }
+    .page-inner {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 2.1mm;
+      min-height: 0;
+    }
+    .sow-masthead,
+    .sow-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1.5px solid var(--accent);
+      padding-bottom: 1.1mm;
+      font-size: 8.2pt;
+      font-weight: 800;
+      color: var(--accent-dark);
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+    }
+    .sow-foot {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 1px solid #cbd5e1;
+      padding-top: 1.2mm;
+      margin-top: 1.4mm;
+      font-size: 8.2pt;
+      color: #475569;
+      font-weight: 600;
+      flex-shrink: 0;
+    }
+    .sow-pill {
+      background: var(--accent-dark);
+      color: #ffffff;
+      padding: 1px 8px;
+      border-radius: 3px;
+      font-weight: 800;
+      font-size: 8.2pt;
+    }
+    .hero-banner {
+      background: linear-gradient(135deg, #0f172a 0%, var(--accent-dark) 100%);
+      color: #ffffff;
+      border-radius: 5px;
+      padding: 3.0mm 4.0mm;
+      border-bottom: 2.5px solid #f59e0b;
+    }
+    .hero-kicker {
+      font-size: 8.2pt;
+      font-weight: 800;
+      color: #fde68a;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+    .hero-pill {
+      background: rgba(255, 255, 255, 0.14);
+      border: 1px solid rgba(253, 230, 138, 0.55);
+      color: #fef3c7;
+      padding: 0.5mm 2.2mm;
+      border-radius: 3px;
+      font-size: 8.2pt;
+      font-weight: 700;
+    }
+    .hero-title {
+      font-family: 'Cinzel', Georgia, serif;
+      font-size: 13.2pt;
+      line-height: 1.16;
+      margin-top: 0.8mm;
+      color: #ffffff;
+    }
+    .matrix-bar {
+      background: var(--accent-dark);
+      color: #ffffff;
+      padding: 1.1mm 2.4mm;
+      border-radius: 4px 4px 0 0;
+      display: flex;
+      justify-content: space-between;
+      font-size: 8.2pt;
+      font-weight: 800;
+      letter-spacing: 0.03em;
+    }
+    .enquiry-banner {
+      background: var(--accent-soft);
+      border: 1.2px solid var(--accent-border);
+      border-left: 4.5px solid var(--accent);
+      border-radius: 5px;
+      padding: 2.0mm 3.0mm;
+    }
+    .enquiry-title-row {
+      display: flex;
+      align-items: center;
+      gap: 2mm;
+    }
+    .enquiry-code-pill {
+      background: var(--accent-dark);
+      color: #ffffff;
+      font-size: 8.2pt;
+      font-weight: 800;
+      padding: 0.5mm 2.0mm;
+      border-radius: 3px;
+      white-space: nowrap;
+    }
+    .enquiry-h2 {
+      font-size: 11.2pt;
+      font-weight: 800;
+      color: #0f172a;
+      line-height: 1.18;
+    }
+    .enquiry-eq-line {
+      font-family: 'Lora', Georgia, serif;
+      font-style: italic;
+      font-size: 9.0pt;
+      font-weight: 600;
+      color: var(--accent-dark);
+      margin-top: 0.7mm;
+    }
+    .two-col-grid {
+      display: grid;
+      gap: 2.2mm;
+    }
+    .crib-card {
+      border: 1px solid #cbd5e1;
+      border-left: 3.5px solid var(--accent);
+      border-radius: 4px;
+      padding: 1.8mm 2.6mm;
+      background: #ffffff;
+    }
+    .card-heading {
+      font-size: 8.6pt;
+      font-weight: 800;
+      color: var(--accent-dark);
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+      margin-bottom: 0.8mm;
+      border-bottom: 1px solid #e2e8f0;
+      padding-bottom: 0.5mm;
+    }
+    .body-copy {
+      font-size: 8.5pt;
+      line-height: 1.25;
+      color: #1e293b;
+    }
+    .crib-ul {
+      padding-left: 4.2mm;
+      display: flex;
+      flex-direction: column;
+      gap: 0.7mm;
+    }
+    .phase-row {
+      margin-bottom: 0.7mm;
+    }
+    .phase-row:last-child {
+      margin-bottom: 0;
+    }
+    .time-chip {
+      display: inline-block;
+      background: #e2e8f0;
+      color: #0f172a;
+      font-weight: 800;
+      font-size: 8.2pt;
+      padding: 0 1.3mm;
+      border-radius: 2px;
+      margin-right: 0.6mm;
+    }
+    @media print {
+      body {
+        background: #ffffff;
+      }
+      .screen-toolbar {
+        display: none !important;
+      }
+      .page.sow-page {
+        margin: 0 !important;
+        box-shadow: none !important;
+      }
+      .page.sow-page:last-of-type {
+        page-break-after: avoid !important;
+        break-after: avoid !important;
+      }
+      .crib-card,
+      .enquiry-banner,
+      .hero-banner,
+      tr {
+        page-break-inside: avoid;
+        break-inside: avoid;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="screen-toolbar">
+    <div>
+      <strong style="font-size:9.2pt;">Industrialisation, Power &amp; Protest (1750–1900) &bull; Walk-In Teacher Guide &amp; SOW</strong>
+      <span style="margin-left:8px;font-size:8pt;color:#fde68a;font-weight:700;">Staff Planning Pack &bull; 6 Pages (A4 Portrait &bull; Corner Staple)</span>
+    </div>
+    <div class="screen-toolbar-actions">
+      <a href="/?view=lessons&amp;unit=industrialisation_and_empire">&larr; Back to Unit Hub</a>
+      <a href="/pdfs/industrialisation_and_empire_scheme_of_work.pdf" download>&darr; Download PDF (6p)</a>
+      <button type="button" onclick="window.print()">&#128424; Print Teacher Guide</button>
+    </div>
+  </div>
+
+  
+  <section class="page sow-page" data-page="1" data-page-kind="overview">
+    <div class="page-inner">
+      <div class="sow-masthead">
+        <span>THE HISTORY REVISION HUB &bull; WALK-IN TEACHER GUIDE &amp; SCHEME OF WORK</span>
+        <span class="school-brand-target" data-department-name="The History Department">The History Department</span>
+      </div>
+
+      <div class="hero-banner">
+        <div style="display:flex; justify-content:space-between; align-items:center; gap:2mm; flex-wrap:wrap;">
+          <span class="hero-kicker">Year 8 • KS3 Social &amp; Economic Study (1750–1900)</span>
+          <span class="hero-pill">Staff Guide &bull; 5 Enquiries &bull; 6 Pages A4</span>
+        </div>
+        <h1 class="hero-title">Industrialisation, Power &amp; Protest (1750–1900)</h1>
+        <div class="body-copy" style="color:#f1f5f9; margin-top:0.7mm;">
+          <strong>Curriculum Specification:</strong> KS3 National Curriculum: Ideas, political power, industry and empire: Britain, 1745–1901 (Britain as the first industrial nation, local history depth study, factory reform, public health, working-class…
+        </div>
+      </div>
+
+      <div class="two-col-grid" style="grid-template-columns: 1.22fr 1fr;">
+        <div class="crib-card">
+          <div class="card-heading">Non-Specialist Executive Summary &amp; Core Threads</div>
+          <p class="body-copy" style="margin-bottom:1mm;">This Year 8 unit investigates how coal, rotary steam engines, and Hampshire wrought iron turned rural Britain into the world's first industrial powerhouse between 1750 and 1900—and at what human cost. Grounded locally in Henry Cort's Funtley Ironworks, Portsmouth Dockyard, and the 1830 Hampshire Swing Riots alongside northern…</p>
+          <div class="body-copy" style="padding-top:0.8mm; border-top:1px dashed #cbd5e1;">
+            <strong style="color:var(--accent-dark);">Disciplinary Threads:</strong> Causation &amp; Consequence, Local-to-National Historical Significance, Evidential Provenance Scrutiny, and Change &amp; Continuity.
+          </div>
+        </div>
+        <div class="crib-card" style="background:var(--accent-soft); border-left-color:var(--accent);">
+          <div class="card-heading">Curricular Pillar Reprographics Map</div>
+          <div class="body-copy" style="margin-bottom:0.8mm;"><strong style="color:var(--accent-dark);">Classroom Textbook:</strong> 8 Pages • Pure reading narrative</div><div class="body-copy" style="margin-bottom:0.8mm;"><strong style="color:var(--accent-dark);">Pupil Workbook:</strong> 16 Pages • 5-Stage Spine + Tasks</div><div class="body-copy" style="margin-bottom:0.8mm;"><strong style="color:var(--accent-dark);">Retrieval Companion:</strong> 30 Qs • 8 Pages + Rear Marking Bank</div><div class="body-copy" style="margin-bottom:0.8mm;"><strong style="color:var(--accent-dark);">Literary Anthology:</strong> 8 Pages • Optional Home/Tutor Read-Aloud</div>
+        </div>
+      </div>
+
+      
+    <div class="crib-card safeguarding-box" style="border-left:4px solid #b45309; background:#fffbeb; padding:1.6mm 2.6mm;">
+      <div class="body-copy" style="color:#78350f;">
+        <strong style="color:#92400e; text-transform:uppercase;">Safeguarding &amp; Statutory Impartiality Guidance:</strong>
+        Be mindful of care-experienced or looked-after pupils in the room when teaching Poor Law parish 'pauper apprentice' trafficking and corporal strap beatings in Matthew Crabtree's testimony (Source D); frame the material through historical reform and…
+      </div>
+    </div>
+
+      <div style="flex:1; display:flex; flex-direction:column; justify-content:flex-start;">
+        <div class="matrix-bar">
+          <span>SCHEME OF WORK OVERVIEW MATRIX (ALL 5 ENQUIRIES)</span>
+          <span>2 &times; 50 MIN DELIVERY SEQUENCE PER ENQUIRY</span>
+        </div>
+        
+    <table class="sow-matrix-table" style="width:100%; border-collapse:collapse; border:1px solid #94a3b8;">
+      <thead>
+        <tr style="background:#0f172a; color:#ffffff;">
+          <th class="body-copy" style="padding:1.4mm 1.6mm; text-align:left; width:13mm; font-weight:800;">Enq #</th>
+          <th class="body-copy" style="padding:1.4mm 1.6mm; text-align:left; width:86mm; font-weight:800;">Title &amp; Key Enquiry Question</th>
+          <th class="body-copy" style="padding:1.4mm 1.6mm; text-align:left; width:52mm; font-weight:800;">Core Concepts / Spec Focus</th>
+          <th class="body-copy" style="padding:1.4mm 1.6mm; text-align:left; width:38mm; font-weight:800;">Assessment / Exam Tariff</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+      <tr style="background:#ffffff; border-bottom:1px solid #cbd5e1;">
+        <td class="body-copy" style="padding:1.7mm 2.0mm; font-weight:800; color:var(--accent-dark); white-space:nowrap; vertical-align:top;">E01</td>
+        <td class="body-copy" style="padding:1.7mm 2.0mm; vertical-align:top;">
+          <strong style="color:#0f172a;">Steam, Coal &amp; Henry Cort’s Iron Revolution (1750–1800)</strong>
+          <span style="color:#475569; font-style:italic;"> — How did steam power and Hampshire ironmaking drive Britain’s Industrial…</span>
+        </td>
+        <td class="body-copy" style="padding:1.7mm 2.0mm; color:#1e293b; vertical-align:top;">KS3 Industrial Britain &amp; Local History Study (1750–1800): Analysing…</td>
+        <td class="body-copy" style="padding:1.7mm 2.0mm; font-weight:700; color:#0f172a; vertical-align:top;">Extended Historical Writing • Causal Explanati…</td>
+      </tr>
+      <tr style="background:#f8fafc; border-bottom:1px solid #cbd5e1;">
+        <td class="body-copy" style="padding:1.7mm 2.0mm; font-weight:800; color:var(--accent-dark); white-space:nowrap; vertical-align:top;">E02</td>
+        <td class="body-copy" style="padding:1.7mm 2.0mm; vertical-align:top;">
+          <strong style="color:#0f172a;">Factory Mills, Child Labour &amp; The 1833 Factory Act</strong>
+          <span style="color:#475569; font-style:italic;"> — How harsh was factory life, and why did Parliament pass the 1833 Act?</span>
+        </td>
+        <td class="body-copy" style="padding:1.7mm 2.0mm; color:#1e293b; vertical-align:top;">KS3 Social Impact of Industrialisation (1780–1833): Evaluating primary…</td>
+        <td class="body-copy" style="padding:1.7mm 2.0mm; font-weight:700; color:#0f172a; vertical-align:top;">Short Historical Explanation • Consequence (1…</td>
+      </tr>
+      <tr style="background:#ffffff; border-bottom:1px solid #cbd5e1;">
+        <td class="body-copy" style="padding:1.7mm 2.0mm; font-weight:800; color:var(--accent-dark); white-space:nowrap; vertical-align:top;">E03</td>
+        <td class="body-copy" style="padding:1.7mm 2.0mm; vertical-align:top;">
+          <strong style="color:#0f172a;">Industrial Boomtowns, Cholera &amp; Sanitary Reform…</strong>
+          <span style="color:#475569; font-style:italic;"> — Did rapid industrial growth make Victorian cities unlivable—and how did…</span>
+        </td>
+        <td class="body-copy" style="padding:1.7mm 2.0mm; color:#1e293b; vertical-align:top;">KS3 Urbanisation &amp; Public Health (1800–1865): Tracing the causal link…</td>
+        <td class="body-copy" style="padding:1.7mm 2.0mm; font-weight:700; color:#0f172a; vertical-align:top;">Short Historical Explanation • Consequence (1…</td>
+      </tr>
+      <tr style="background:#f8fafc; border-bottom:1px solid #cbd5e1;">
+        <td class="body-copy" style="padding:1.7mm 2.0mm; font-weight:800; color:var(--accent-dark); white-space:nowrap; vertical-align:top;">E04</td>
+        <td class="body-copy" style="padding:1.7mm 2.0mm; vertical-align:top;">
+          <strong style="color:#0f172a;">Luddites, Peterloo, Swing Riots &amp; Tolpuddle (1811–1834)</strong>
+          <span style="color:#475569; font-style:italic;"> — Why did working people protest between 1811 and 1834, and how did rulers…</span>
+        </td>
+        <td class="body-copy" style="padding:1.7mm 2.0mm; color:#1e293b; vertical-align:top;">KS3 Popular Protest &amp; State Repression (1811–1834): Comparing urban and…</td>
+        <td class="body-copy" style="padding:1.7mm 2.0mm; font-weight:700; color:#0f172a; vertical-align:top;">Chronological Historical Narrative • Analytica…</td>
+      </tr>
+      <tr style="background:#ffffff; border-bottom:1px solid #cbd5e1;">
+        <td class="body-copy" style="padding:1.7mm 2.0mm; font-weight:800; color:var(--accent-dark); white-space:nowrap; vertical-align:top;">E05</td>
+        <td class="body-copy" style="padding:1.7mm 2.0mm; vertical-align:top;">
+          <strong style="color:#0f172a;">Rotten Boroughs, Chartism &amp; Winning the Vote (1800–1872)</strong>
+          <span style="color:#475569; font-style:italic;"> — How did protest and reform gradually expand the right to vote by 1872?</span>
+        </td>
+        <td class="body-copy" style="padding:1.7mm 2.0mm; color:#1e293b; vertical-align:top;">KS3 Political Reform &amp; Democracy (1800–1872): Evaluating why Parliament…</td>
+        <td class="body-copy" style="padding:1.7mm 2.0mm; font-weight:700; color:#0f172a; vertical-align:top;">Evaluative Historical Essay • Balanced Judgeme…</td>
+      </tr>
+      </tbody>
+    </table>
+      </div>
+    </div>
+
+    <div class="sow-foot">
+      <span>The History Revision Hub &bull; Walk-In Teacher Guide &amp; SOW (KS3)</span>
+      <span class="sow-pill">Page 1 of 6</span>
+    </div>
+  </section>
+
+  <section class="page sow-page" data-page="2" data-page-kind="crib">
+    <div class="page-inner">
+      <div class="sow-head">
+        <span>3-MINUTE WALK-IN TEACHER CRIB SHEET &bull; ENQUIRY 1 OF 5</span>
+        <span>Industrialisation, Power &amp; Protest (1750–1900)</span>
+      </div>
+
+      <!-- (a) Header Bar -->
+      <div class="enquiry-banner">
+        <div style="display:flex; justify-content:space-between; align-items:baseline; gap:2mm;">
+          <div class="enquiry-title-row">
+            <span class="enquiry-code-pill">E01</span>
+            <h2 class="enquiry-h2">Steam, Coal &amp; Henry Cort’s Iron Revolution (1750–1800)</h2>
+          </div>
+        </div>
+        <div class="enquiry-eq-line">Central Enquiry: How did steam power and Hampshire ironmaking drive Britain’s Industrial Revolution?</div>
+        <div class="body-copy" style="color:#334155; margin-top:0.6mm;">
+          <strong style="color:var(--accent-dark);">Curriculum / Spec Anchor:</strong> KS3 Industrial Britain &amp; Local History Study (1750–1800): Analysing technological causation — James Watt's rotary steam engine and Henry Cort's puddling and rolling…
+        </div>
+      </div>
+
+      
+
+      <!-- (b) Subject Knowledge Primer + Learning Objectives -->
+      <div class="two-col-grid" style="grid-template-columns: 1.28fr 1fr;">
+        <div class="crib-card">
+          <div class="card-heading">Subject Knowledge Primer (Non-Specialist Walk-In Briefing)</div>
+          <p class="body-copy">This enquiry introduces the transition from the domestic system to mechanized industrial production, anchored in the energy shift from wood and water to coal and steam. The lesson centers on a world-class local history study of Fareham ironmaster Henry Cort at the Funtley Ironworks (1775–1784) and the decisive 1787 Portsmouth Royal Navy Dockyard trials.</p>
+        </div>
+        <div class="crib-card" style="background:#f8fafc;">
+          <div class="card-heading">Core Learning Objectives</div>
+          <ul class="crib-ul">
+            <li class="body-copy">Explain how the transition from the domestic system to coal and Watt's steam engine liberated manufacturing from river valleys.</li><li class="body-copy">Analyse how Henry Cort's twin inventions at Funtley (puddling and rolling) solved the Royal Navy's pig iron crisis, and evaluate the…</li><li class="body-copy">Evaluate whether Henry Cort's triumph was driven primarily by geographical proximity to Portsmouth Dockyard or technological genius.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- (c) 2-Lesson Delivery Plan (2 x 50 mins) -->
+      <div class="two-col-grid" style="grid-template-columns: 1fr 1fr;">
+        <div class="crib-card" style="border-left-color:#1d4ed8;">
+          <div class="card-heading" style="color:#1e3a8a;">Lesson 1: Immersion, Shared Reading &amp; Hampshire Archaeology (50 mins)</div>
+          <div class="body-copy phase-row"><span class="time-chip">00–10m</span> <strong>Hook &amp; Prior Retrieval:</strong> Display Source A (Coalbrookdale by Night). Connect the shift to concentrated coal power with prior recall of the domestic…</div><div class="body-copy phase-row"><span class="time-chip">10–30m</span> <strong>Modelled Shared Reading:</strong> Read Blocks 1 &amp; 2 together (or project web app with natural UK audio at 1.0x).</div><div class="body-copy phase-row"><span class="time-chip">30–45m</span> <strong>Archival &amp; Fieldwork Analysis:</strong> Study Source B and the Funtley Fieldwork Dossier. Contrast the 1784 watercolour with surviving River Meon weir and…</div><div class="body-copy phase-row"><span class="time-chip">45–50m</span> <strong>Formative Hinge Plenary:</strong> Conduct check for understanding on Hinge Question 2: How does an iron slag dry-stone wall prove Cort’s chemical puddling…</div>
+        </div>
+        <div class="crib-card" style="border-left-color:#15803d;">
+          <div class="card-heading" style="color:#14532d;">Lesson 2: The Portsmouth Trials, Historiography &amp; Extended Writing (50 mins)</div>
+          <div class="body-copy phase-row"><span class="time-chip">00–10m</span> <strong>Spaced Retrieval &amp; Vocab Anchor:</strong> Complete retrieval check in printed workbook. Review crucial distinction: Brittle Pig Iron vs. Tough Naval Wrought Iron.</div><div class="body-copy phase-row"><span class="time-chip">10–25m</span> <strong>Shared Reading &amp; Historiographical Debate:</strong> Read Acts 3 &amp; 4. Debate competing historical verdicts: Was Cort’s triumph driven by geographical proximity to Portsmouth…</div><div class="body-copy phase-row"><span class="time-chip">25–45m</span> <strong>Workbook Application (Pages 4–5):</strong> Pupils complete the reverberatory furnace annotation, Admiralty trial evaluation, and 18-line PEEL extended writing using…</div><div class="body-copy phase-row"><span class="time-chip">45–50m</span> <strong>Live Exemplar Debrief:</strong> Peer assessment or live visualiser critique of high-level student responses against the departmental evaluative criteria.</div>
+        </div>
+      </div>
+
+      <!-- (d) Misconceptions & Corrections + Hinge Question + SEND & Stretch -->
+      <div class="two-col-grid" style="grid-template-columns: 1.15fr 1fr;">
+        <div class="crib-card" style="border-left-color:#b91c1c;">
+          <div class="card-heading" style="color:#7f1d1d;">Common Pupil Misconceptions &amp; Historical Corrections</div>
+          
+      <div class="body-copy misc-item" style="">
+        <div><strong style="color:#991b1b;">Misconception 1:</strong> James Watt invented the very first steam engine from scratch in 1769.</div>
+        <div><strong style="color:#166534;">Correction:</strong> Thomas Newcomen had built atmospheric mine-pumping engines decades earlier; Watt's 1769 separate condenser slashed coal use and his Soho…</div>
+      </div>
+      <div class="body-copy misc-item" style="border-top:1px dashed #cbd5e1; padding-top:0.9mm; margin-top:0.9mm;">
+        <div><strong style="color:#991b1b;">Misconception 2:</strong> All iron is identical, so any blast furnace using British coal could forge warship anchors and bridges.</div>
+        <div><strong style="color:#166534;">Correction:</strong> Raw coal-smelted pig iron was brittle with carbon and sulphur impurities and shattered under hammer blows; Britain relied on costly Swedish…</div>
+      </div>
+      <div class="body-copy misc-item" style="border-top:1px dashed #cbd5e1; padding-top:0.9mm; margin-top:0.9mm;">
+        <div><strong style="color:#991b1b;">Misconception 3:</strong> The Industrial Revolution happened exclusively in northern mill towns like Manchester and Coalbrookdale.</div>
+        <div><strong style="color:#166534;">Correction:</strong> Southern naval demand drove world-changing metallurgy in Hampshire: Henry Cort perfected puddling and grooved rolling at Funtley near Fareham…</div>
+      </div>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:2mm; justify-content:space-between;">
+          <div class="crib-card" style="border-left-color:#d97706; background:#fffbeb; flex:1;">
+            <div class="card-heading" style="color:#92400e;">Targeted Diagnostic Hinge Question</div>
+            <div class="body-copy" style="font-weight:700; color:#0f172a; margin-bottom:0.7mm;">&ldquo;Why couldn't Britain build its Industrial Revolution or Royal Navy anchors using ordinary coal-smelted pig iron before 1783—and how did Henry Cort solve…&rdquo;</div>
+            <div class="body-copy" style="color:#334155;"><strong>Look For:</strong> Strong answers pinpoint the chemical and mechanical breakthroughs: burning coal directly in blast furnaces contaminated pig iron with carbon and sulphur so it snapped under shock, leaving the…</div>
+          </div>
+          <div class="crib-card" style="border-left-color:#6d28d9; background:#faf5ff; flex:1;">
+            <div class="card-heading" style="color:#4c1d95;">SEND Scaffold &amp; High-Ceiling Stretch</div>
+            <div class="body-copy" style="margin-bottom:0.7mm;"><strong style="color:#5b21b6;">SEND:</strong> Pre-teach pig iron (brittle, impure iron that snaps) versus wrought iron (tough, bendable purified iron). Use the Block 3 puddling Concept Widget and Source C's arched…</div>
+            <div class="body-copy"><strong style="color:#5b21b6;">Stretch:</strong> Challenge higher-attaining pupils to link metallurgy to geopolitics using the 1787 Admiralty trial minutes (Source E): what might have happened to Britain's Royal Navy in the…</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- (e) Quick Classroom Answer Crib -->
+      <div class="crib-card answer-crib-box" style="border-left-color:#0f172a; background:#f8fafc;">
+        <div class="card-heading" style="color:#0f172a;">Quick Classroom Answer Crib (Do Now &bull; Sources A–E &bull; Workbook / Exam Key)</div>
+        <div class="body-copy" style="margin-bottom:0.8mm; padding-bottom:0.8mm; border-bottom:1px solid #e2e8f0;">
+          <strong style="color:var(--accent-dark);">Do Now Key:</strong>
+          Q1: The open-field manorial system • Q2: The Black Death • Q3: The movable-type printing press • Q4: King Henry VIII • Q5: The Spanish Armada
+        </div>
+        <div class="body-copy" style="margin-bottom:0.8mm; padding-bottom:0.8mm; border-bottom:1px solid #e2e8f0;">
+          <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src A:</strong> The painting suggests industrial furnaces turned quiet rural valleys into a blazing, fiery…</span> <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src B:</strong> The portrait shows Watt seated thoughtfully beside his steam engine blueprints…</span> <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src C:</strong> By curving the flame over a low roof to heat the metal without letting the dirty coal touch…</span> <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src D:</strong> Cort explains that grooved rollers squeezed out impurities and shaped hot iron into tough…</span> <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src E:</strong> Historians can trust this report because Navy inspectors strictly tested the iron against…</span>
+        </div>
+        <div class="body-copy">
+          <strong style="color:#0f172a;">[Extended Historical Writing • Causal Explanation (2–3…]</strong>
+          <em>Explain why Henry Cort achieved his metallurgical breakthrough in wrought iron production at Funtley in 1784.</em>
+          &rarr; <strong>Core Model Argument:</strong> A primary reason Henry Cort achieved his breakthrough in wrought iron production at Funtley in 1784 was his innovative combination of the puddling furnace and grooved rollers.
+        </div>
+      </div>
+    </div>
+
+    <div class="sow-foot">
+      <span>The History Revision Hub &bull; <span class="school-brand-target" data-department-name="The History Department">The History Department</span> &bull; Confidential Staff Guide</span>
+      <span class="sow-pill">Page 2 of 6</span>
+    </div>
+  </section>
+
+  <section class="page sow-page" data-page="3" data-page-kind="crib">
+    <div class="page-inner">
+      <div class="sow-head">
+        <span>3-MINUTE WALK-IN TEACHER CRIB SHEET &bull; ENQUIRY 2 OF 5</span>
+        <span>Industrialisation, Power &amp; Protest (1750–1900)</span>
+      </div>
+
+      <!-- (a) Header Bar -->
+      <div class="enquiry-banner">
+        <div style="display:flex; justify-content:space-between; align-items:baseline; gap:2mm;">
+          <div class="enquiry-title-row">
+            <span class="enquiry-code-pill">E02</span>
+            <h2 class="enquiry-h2">Factory Mills, Child Labour &amp; The 1833 Factory Act</h2>
+          </div>
+        </div>
+        <div class="enquiry-eq-line">Central Enquiry: How harsh was factory life, and why did Parliament pass the 1833 Act?</div>
+        <div class="body-copy" style="color:#334155; margin-top:0.6mm;">
+          <strong style="color:var(--accent-dark);">Curriculum / Spec Anchor:</strong> KS3 Social Impact of Industrialisation (1780–1833): Evaluating primary evidence on factory discipline, child labour, and the 1833 Factory Act.
+        </div>
+      </div>
+
+      <div class="crib-card" style="border-left:4px solid #b45309; background:#fffbeb; padding:1.2mm 2.4mm;">
+         <div class="body-copy" style="color:#78350f;"><strong style="color:#92400e;">Pastoral / Impartiality Note:</strong> Be mindful of care-experienced or looked-after pupils in the room when teaching Poor Law parish 'pauper apprentice' trafficking and corporal strap beatings in Matthew Crabtree's testimony (Source D); frame the…</div>
+       </div>
+
+      <!-- (b) Subject Knowledge Primer + Learning Objectives -->
+      <div class="two-col-grid" style="grid-template-columns: 1.28fr 1fr;">
+        <div class="crib-card">
+          <div class="card-heading">Subject Knowledge Primer (Non-Specialist Walk-In Briefing)</div>
+          <p class="body-copy">This enquiry investigates the human and social impact of industrialisation, moving beyond simplistic narratives by contrasting northern steam-powered textile mills with the local Hampshire industrial economy of the Fareham Red Brick Boom. Pupils examine the shift from task-oriented domestic handcraft to the relentless machine-clock discipline of the factory system.</p>
+        </div>
+        <div class="crib-card" style="background:#f8fafc;">
+          <div class="card-heading">Core Learning Objectives</div>
+          <ul class="crib-ul">
+            <li class="body-copy">Explain how the transition from the domestic system to steam-powered factories transformed working life, discipline, and physical…</li><li class="body-copy">Analyse how Victorian urbanization triggered the Fareham Red Brick Boom and the exploitation of child labour in local Hampshire clay…</li><li class="body-copy">Evaluate the Optimist vs. Pessimist historical debate regarding whether industrial work represented societal progress or human…</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- (c) 2-Lesson Delivery Plan (2 x 50 mins) -->
+      <div class="two-col-grid" style="grid-template-columns: 1fr 1fr;">
+        <div class="crib-card" style="border-left-color:#1d4ed8;">
+          <div class="card-heading" style="color:#1e3a8a;">Lesson 1: Immersion, Shared Reading &amp; Factory Realities (50 mins)</div>
+          <div class="body-copy phase-row"><span class="time-chip">00–10m</span> <strong>Hook &amp; Prior Retrieval:</strong> Display Source A (Thomas Allom, Powerloom Weaving). Connect the shift from human muscle to steam power with prior recall…</div><div class="body-copy phase-row"><span class="time-chip">10–30m</span> <strong>Modelled Shared Reading:</strong> Read Blocks 1 &amp; 2 together with prosody tracking. Pause at Block 1 to interrogate the loss of &quot;Saint Monday&quot; and the…</div><div class="body-copy phase-row"><span class="time-chip">30–45m</span> <strong>Archival &amp; Local Analysis:</strong> Study Source C (Matthew Crabtree’s 1832 Sadler Committee testimony) and Source D (1881 Fareham Census).</div><div class="body-copy phase-row"><span class="time-chip">45–50m</span> <strong>Formative Hinge Plenary:</strong> Conduct check for understanding on Hinge Question 2: How does the fact that 6 million Fareham Red bricks built the Royal…</div>
+        </div>
+        <div class="crib-card" style="border-left-color:#15803d;">
+          <div class="card-heading" style="color:#14532d;">Lesson 2: Historiographical Debate, Standard of Living &amp; Extended Writing (50…</div>
+          <div class="body-copy phase-row"><span class="time-chip">00–10m</span> <strong>Spaced Retrieval &amp; Vocab Anchor:</strong> Complete retrieval Do Now in printed workbook. Review vocabulary mapping: connecting the mechanised pug mill to…</div><div class="body-copy phase-row"><span class="time-chip">10–25m</span> <strong>Shared Reading &amp; Historiographical Debate:</strong> Read Acts 3 &amp; 4. Debate the central historical controversy: The Optimists (Hartwell: rising real wages, consumer goods)…</div><div class="body-copy phase-row"><span class="time-chip">25–45m</span> <strong>Workbook Application (Pages 6–7):</strong> Pupils complete the Analytical Conflict Ledger (Task 4) and 18-line PEEL extended writing enquiry using the Gold Criteria…</div><div class="body-copy phase-row"><span class="time-chip">45–50m</span> <strong>Live Exemplar Debrief:</strong> Visualiser showcase and live critique of pupil responses evaluating whether industrialisation was primarily human…</div>
+        </div>
+      </div>
+
+      <!-- (d) Misconceptions & Corrections + Hinge Question + SEND & Stretch -->
+      <div class="two-col-grid" style="grid-template-columns: 1.15fr 1fr;">
+        <div class="crib-card" style="border-left-color:#b91c1c;">
+          <div class="card-heading" style="color:#7f1d1d;">Common Pupil Misconceptions &amp; Historical Corrections</div>
+          
+      <div class="body-copy misc-item" style="">
+        <div><strong style="color:#991b1b;">Misconception 1:</strong> Children never worked in Britain before steam-powered Victorian cotton mills were built.</div>
+        <div><strong style="color:#166534;">Correction:</strong> Children had long helped parents on farms and around cottage handlooms, but steam factories replaced family supervision with relentless…</div>
+      </div>
+      <div class="body-copy misc-item" style="border-top:1px dashed #cbd5e1; padding-top:0.9mm; margin-top:0.9mm;">
+        <div><strong style="color:#991b1b;">Misconception 2:</strong> The 1833 Factory Act completely ended all child labour across every workplace in Britain.</div>
+        <div><strong style="color:#166534;">Correction:</strong> The 1833 Act (Source E) banned only under-nines in textile mills (leaving coal mines and brickfields untouched until later Acts) and capped…</div>
+      </div>
+      <div class="body-copy misc-item" style="border-top:1px dashed #cbd5e1; padding-top:0.9mm; margin-top:0.9mm;">
+        <div><strong style="color:#991b1b;">Misconception 3:</strong> Factory owners kept mill windows locked and rooms above 80°F simply out of cruelty.</div>
+        <div><strong style="color:#166534;">Correction:</strong> Owners enforced sweltering, humid, unventilated rooms via heavy shilling fines (Source B) for cold commercial profit—warm damp air stopped…</div>
+      </div>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:2mm; justify-content:space-between;">
+          <div class="crib-card" style="border-left-color:#d97706; background:#fffbeb; flex:1;">
+            <div class="card-heading" style="color:#92400e;">Targeted Diagnostic Hinge Question</div>
+            <div class="body-copy" style="font-weight:700; color:#0f172a; margin-bottom:0.7mm;">&ldquo;Why did rural weaving families lose control over their daily lives when production moved into steam mills—and why was the appointment of four factory…&rdquo;</div>
+            <div class="body-copy" style="color:#334155;"><strong>Look For:</strong> Look for two insights: first, domestic handloom weavers chose their own pace at home, whereas relentless steam line-shafting enforced 14-hour clock tyranny, 80°F dust-choked air, and shilling…</div>
+          </div>
+          <div class="crib-card" style="border-left-color:#6d28d9; background:#faf5ff; flex:1;">
+            <div class="card-heading" style="color:#4c1d95;">SEND Scaffold &amp; High-Ceiling Stretch</div>
+            <div class="body-copy" style="margin-bottom:0.7mm;"><strong style="color:#5b21b6;">SEND:</strong> Pre-teach domestic system (handweaving in rural cottages) and scavenger (young child crawling under moving spinning mules to sweep loose cotton).</div>
+            <div class="body-copy"><strong style="color:#5b21b6;">Stretch:</strong> Push higher-attaining pupils to evaluate source utility and bias: factory owners claimed Michael Sadler's 1832 Parliamentary Committee (Source D) selected dramatic witnesses…</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- (e) Quick Classroom Answer Crib -->
+      <div class="crib-card answer-crib-box" style="border-left-color:#0f172a; background:#f8fafc;">
+        <div class="card-heading" style="color:#0f172a;">Quick Classroom Answer Crib (Do Now &bull; Sources A–E &bull; Workbook / Exam Key)</div>
+        <div class="body-copy" style="margin-bottom:0.8mm; padding-bottom:0.8mm; border-bottom:1px solid #e2e8f0;">
+          <strong style="color:var(--accent-dark);">Do Now Key:</strong>
+          Q1: Timber charcoal • Q2: James Watt • Q3: Henry Cort • Q4: Trip-hammers • Q5: 1787
+        </div>
+        <div class="body-copy" style="margin-bottom:0.8mm; padding-bottom:0.8mm; border-bottom:1px solid #e2e8f0;">
+          <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src A:</strong> Children had to crawl underneath clattering, unguarded machinery and moving leather belts…</span> <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src B:</strong> Factory owners used strict monetary fines to turn farmworkers into obedient, clock-watching…</span> <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src C:</strong> By showing small, exhausted children crouching dangerously under looming iron wheels while…</span> <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src D:</strong> Crabtree explains under oath that working fourteen-hour days without breaks left children…</span> <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src E:</strong> The Act banned the employment of children under the age of nine and restricted children…</span>
+        </div>
+        <div class="body-copy">
+          <strong style="color:#0f172a;">[Short Historical Explanation • Consequence (1 Paragraph •…]</strong>
+          <em>Explain one consequence of the 1833 Factory Act for working children in Britain.</em>
+          &rarr; <strong>Core Model Argument:</strong> One significant consequence of the 1833 Factory Act was the introduction of statutory legal limits on child labour and independent factory inspectors [2.5].
+        </div>
+      </div>
+    </div>
+
+    <div class="sow-foot">
+      <span>The History Revision Hub &bull; <span class="school-brand-target" data-department-name="The History Department">The History Department</span> &bull; Confidential Staff Guide</span>
+      <span class="sow-pill">Page 3 of 6</span>
+    </div>
+  </section>
+
+  <section class="page sow-page" data-page="4" data-page-kind="crib">
+    <div class="page-inner">
+      <div class="sow-head">
+        <span>3-MINUTE WALK-IN TEACHER CRIB SHEET &bull; ENQUIRY 3 OF 5</span>
+        <span>Industrialisation, Power &amp; Protest (1750–1900)</span>
+      </div>
+
+      <!-- (a) Header Bar -->
+      <div class="enquiry-banner">
+        <div style="display:flex; justify-content:space-between; align-items:baseline; gap:2mm;">
+          <div class="enquiry-title-row">
+            <span class="enquiry-code-pill">E03</span>
+            <h2 class="enquiry-h2">Industrial Boomtowns, Cholera &amp; Sanitary Reform (1800–1865)</h2>
+          </div>
+        </div>
+        <div class="enquiry-eq-line">Central Enquiry: Did rapid industrial growth make Victorian cities unlivable—and how did they change?</div>
+        <div class="body-copy" style="color:#334155; margin-top:0.6mm;">
+          <strong style="color:var(--accent-dark);">Curriculum / Spec Anchor:</strong> KS3 Urbanisation &amp; Public Health (1800–1865): Tracing the causal link between unregulated slum housing, cholera epidemics, Edwin Chadwick, and Bazalgette's sewers.
+        </div>
+      </div>
+
+      
+
+      <!-- (b) Subject Knowledge Primer + Learning Objectives -->
+      <div class="two-col-grid" style="grid-template-columns: 1.28fr 1fr;">
+        <div class="crib-card">
+          <div class="card-heading">Subject Knowledge Primer (Non-Specialist Walk-In Briefing)</div>
+          <p class="body-copy">This lesson explores the public health crisis triggered by explosive, unregulated urbanisation between 1800 and 1875. It juxtaposes the immense imperial wealth generated by British manufacturing against the squalid reality of working-class cellar dwellings, overflowing cesspools, and repeated cholera epidemics. Guides pupils through the shift from laissez-faire apathy to state intervention via Edwin Chadwick's 1842 report, the 1858 Great Stink, and Joseph Bazalgette's intercepting sewers.</p>
+        </div>
+        <div class="crib-card" style="background:#f8fafc;">
+          <div class="card-heading">Core Learning Objectives</div>
+          <ul class="crib-ul">
+            <li class="body-copy">Explain how rapid urbanisation, back-to-back housing, and contaminated cesspools created deadly conditions in industrial cities.</li><li class="body-copy">Analyse how King Cholera and the 1858 Great Stink shattered the government’s laissez-faire ideology.</li><li class="body-copy">Evaluate Edwin Chadwick’s 1842 Sanitary Report and the 1875 Public Health Act using forensic archival evidence.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- (c) 2-Lesson Delivery Plan (2 x 50 mins) -->
+      <div class="two-col-grid" style="grid-template-columns: 1fr 1fr;">
+        <div class="crib-card" style="border-left-color:#1d4ed8;">
+          <div class="card-heading" style="color:#1e3a8a;">Lesson 1: Immersion, Epidemic Tracking &amp; The Sanitary Crisis (50 mins)</div>
+          <div class="body-copy phase-row"><span class="time-chip">00–10m</span> <strong>Hook &amp; Prior Retrieval:</strong> Display Source A (John Leech, &quot;A Court for King Cholera&quot;, 1852). Connect slum overcrowding with prior recall of the…</div><div class="body-copy phase-row"><span class="time-chip">10–30m</span> <strong>Modelled Shared Reading:</strong> Read Blocks 1 &amp; 2 together. Pause at Block 1 to interrogate back-to-back construction, cellar dwellings, and overflowing…</div><div class="body-copy phase-row"><span class="time-chip">30–45m</span> <strong>Archival &amp; Forensic Investigation:</strong> Interrogate Source C (Edwin Chadwick’s 1842 Sanitary Report) and Dr John Snow’s 1854 Broad Street cholera spot map.</div><div class="body-copy phase-row"><span class="time-chip">45–50m</span> <strong>Formative Hinge Plenary:</strong> Conduct check for understanding on Hinge Question 1: Why did the lack of municipal planning inevitably turn urban water…</div>
+        </div>
+        <div class="crib-card" style="border-left-color:#15803d;">
+          <div class="card-heading" style="color:#14532d;">Lesson 2: The Great Stink, Engineering Salvation &amp; Extended Writing (50 mins)</div>
+          <div class="body-copy phase-row"><span class="time-chip">00–10m</span> <strong>Spaced Retrieval &amp; Vocab Anchor:</strong> Complete retrieval Do Now in printed workbook. Review core disciplinary distinction: Miasma Theory vs.</div><div class="body-copy phase-row"><span class="time-chip">10–25m</span> <strong>Shared Reading &amp; Engineering Analysis:</strong> Read Acts 3 &amp; 4. Examine how the 1858 Great Stink forced Parliament to abandon laissez-faire dogma and fund Joseph…</div><div class="body-copy phase-row"><span class="time-chip">25–45m</span> <strong>Workbook Application (Pages 8–9):</strong> Pupils complete the Sanitary Reform Timeline Domino, causal flow diagram, and 18-line PEEL extended writing evaluation on…</div><div class="body-copy phase-row"><span class="time-chip">45–50m</span> <strong>Live Exemplar Debrief:</strong> Live visualiser critique comparing pupil answers evaluating whether technology alone or state intervention made…</div>
+        </div>
+      </div>
+
+      <!-- (d) Misconceptions & Corrections + Hinge Question + SEND & Stretch -->
+      <div class="two-col-grid" style="grid-template-columns: 1.15fr 1fr;">
+        <div class="crib-card" style="border-left-color:#b91c1c;">
+          <div class="card-heading" style="color:#7f1d1d;">Common Pupil Misconceptions &amp; Historical Corrections</div>
+          
+      <div class="body-copy misc-item" style="">
+        <div><strong style="color:#991b1b;">Misconception 1:</strong> Back-to-back slum houses were built badly because Victorian builders lacked brickmaking or architectural skill.</div>
+        <div><strong style="color:#166534;">Correction:</strong> Victorian engineers built magnificent railways and viaducts; unregulated private landlords crammed windowless, shared-wall back-to-back courts…</div>
+      </div>
+      <div class="body-copy misc-item" style="border-top:1px dashed #cbd5e1; padding-top:0.9mm; margin-top:0.9mm;">
+        <div><strong style="color:#991b1b;">Misconception 2:</strong> Edwin Chadwick campaigned for clean water in 1842 purely out of gentle humanitarian sympathy for the poor.</div>
+        <div><strong style="color:#166534;">Correction:</strong> As Poor Law Secretary, Chadwick (Source C) deliberately appealed to hard-headed ratepayers' wallets—proving statistically that preventable slum…</div>
+      </div>
+      <div class="body-copy misc-item" style="border-top:1px dashed #cbd5e1; padding-top:0.9mm; margin-top:0.9mm;">
+        <div><strong style="color:#991b1b;">Misconception 3:</strong> Working-class families caught cholera because of personal laziness or poor morals, as many rich Victorians claimed.</div>
+        <div><strong style="color:#166534;">Correction:</strong> When dozens of families shared one overflowing courtyard privy beside a shallow street water pump, drinking sewage-tainted groundwater was…</div>
+      </div>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:2mm; justify-content:space-between;">
+          <div class="crib-card" style="border-left-color:#d97706; background:#fffbeb; flex:1;">
+            <div class="card-heading" style="color:#92400e;">Targeted Diagnostic Hinge Question</div>
+            <div class="body-copy" style="font-weight:700; color:#0f172a; margin-bottom:0.7mm;">&ldquo;Why did wealthy Victorian ratepayers and MPs abandon 'laissez-faire' ('leave housing and drains alone') between the 1831 cholera epidemic and the 1858…&rdquo;</div>
+            <div class="body-copy" style="color:#334155;"><strong>Look For:</strong> Strong answers combine fear and financial logic: Asiatic cholera ('King Cholera', Source B) crossed from flooded back-to-back cellars into rich districts, Edwin Chadwick's 1842 Sanitary Report…</div>
+          </div>
+          <div class="crib-card" style="border-left-color:#6d28d9; background:#faf5ff; flex:1;">
+            <div class="card-heading" style="color:#4c1d95;">SEND Scaffold &amp; High-Ceiling Stretch</div>
+            <div class="body-copy" style="margin-bottom:0.7mm;"><strong style="color:#5b21b6;">SEND:</strong> Pre-teach urbanisation (mass movement from countryside to cities) and back-to-back housing (terraced slum rows sharing three walls with zero through-air).</div>
+            <div class="body-copy"><strong style="color:#5b21b6;">Stretch:</strong> Challenge higher-attaining pupils to connect Year 8 Lesson 3 back to their Year 7 Water &amp; Sanitation knowledge: how did Dr John Snow's 1854 Soho spot map and Bazalgette's…</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- (e) Quick Classroom Answer Crib -->
+      <div class="crib-card answer-crib-box" style="border-left-color:#0f172a; background:#f8fafc;">
+        <div class="card-heading" style="color:#0f172a;">Quick Classroom Answer Crib (Do Now &bull; Sources A–E &bull; Workbook / Exam Key)</div>
+        <div class="body-copy" style="margin-bottom:0.8mm; padding-bottom:0.8mm; border-bottom:1px solid #e2e8f0;">
+          <strong style="color:var(--accent-dark);">Do Now Key:</strong>
+          Q1: Domestic home handlooms • Q2: Factory clock • Q3: Southern workhouses • Q4: Michael Sadler • Q5: Lord Ashley, Earl of Shaftesbury
+        </div>
+        <div class="body-copy" style="margin-bottom:0.8mm; padding-bottom:0.8mm; border-bottom:1px solid #e2e8f0;">
+          <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src A:</strong> It shows that families were crammed into bleak back-to-back brick houses with tiny fenced…</span> <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src B:</strong> Leech draws cholera as a skeletal king ruling over rubbish heaps and dirty cesspools to…</span> <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src C:</strong> Chadwick compared slum deaths to war casualties to shock politicians into realizing that…</span> <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src D:</strong> The cartoon was warning that the filthy, sewage-polluted Thames was the direct parent and…</span> <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src E:</strong> It reveals the massive scale of Bazalgette's underground brick tunnels, built to divert…</span>
+        </div>
+        <div class="body-copy">
+          <strong style="color:#0f172a;">[Short Historical Explanation • Consequence (1 Paragraph •…]</strong>
+          <em>Explain one consequence of the 1858 Great Stink for public health in Victorian London.</em>
+          &rarr; <strong>Core Model Argument:</strong> One decisive consequence of the 1858 Great Stink was that Parliament abandoned laissez-faire and funded Sir Joseph Bazalgette’s underground interceptor sewer network [3.5].
+        </div>
+      </div>
+    </div>
+
+    <div class="sow-foot">
+      <span>The History Revision Hub &bull; <span class="school-brand-target" data-department-name="The History Department">The History Department</span> &bull; Confidential Staff Guide</span>
+      <span class="sow-pill">Page 4 of 6</span>
+    </div>
+  </section>
+
+  <section class="page sow-page" data-page="5" data-page-kind="crib">
+    <div class="page-inner">
+      <div class="sow-head">
+        <span>3-MINUTE WALK-IN TEACHER CRIB SHEET &bull; ENQUIRY 4 OF 5</span>
+        <span>Industrialisation, Power &amp; Protest (1750–1900)</span>
+      </div>
+
+      <!-- (a) Header Bar -->
+      <div class="enquiry-banner">
+        <div style="display:flex; justify-content:space-between; align-items:baseline; gap:2mm;">
+          <div class="enquiry-title-row">
+            <span class="enquiry-code-pill">E04</span>
+            <h2 class="enquiry-h2">Luddites, Peterloo, Swing Riots &amp; Tolpuddle (1811–1834)</h2>
+          </div>
+        </div>
+        <div class="enquiry-eq-line">Central Enquiry: Why did working people protest between 1811 and 1834, and how did rulers respond?</div>
+        <div class="body-copy" style="color:#334155; margin-top:0.6mm;">
+          <strong style="color:var(--accent-dark);">Curriculum / Spec Anchor:</strong> KS3 Popular Protest &amp; State Repression (1811–1834): Comparing urban and local Hampshire rural protest from the Luddites and Peterloo to Captain Swing and Tolpuddle.
+        </div>
+      </div>
+
+      
+
+      <!-- (b) Subject Knowledge Primer + Learning Objectives -->
+      <div class="two-col-grid" style="grid-template-columns: 1.28fr 1fr;">
+        <div class="crib-card">
+          <div class="card-heading">Subject Knowledge Primer (Non-Specialist Walk-In Briefing)</div>
+          <p class="body-copy">This lesson explores the turbulent, often bloody struggles of the British working class to gain political representation, living wages, and trade union rights between 1815 and 1848. Tracks the arc of popular resistance: from the post-Napoleonic economic depression that provoked the 1819 Peterloo Massacre to the rural machine-breaking of the 1830 Captain Swing Riots across Hampshire, the transportation of the 1834 Tolpuddle Martyrs, and the rise of Chartism—Britain’s first mass working-class democratic movement.</p>
+        </div>
+        <div class="crib-card" style="background:#f8fafc;">
+          <div class="card-heading">Core Learning Objectives</div>
+          <ul class="crib-ul">
+            <li class="body-copy">Explain how post-war economic depression and parliamentary disenfranchisement led to the 1819 Peterloo Massacre.</li><li class="body-copy">Analyse how agricultural mechanisation sparked rural rebellion in Hampshire through the Captain Swing Riots.</li><li class="body-copy">Evaluate the strategic split within Chartism between Moral Force and Physical Force using primary source manifestos.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- (c) 2-Lesson Delivery Plan (2 x 50 mins) -->
+      <div class="two-col-grid" style="grid-template-columns: 1fr 1fr;">
+        <div class="crib-card" style="border-left-color:#1d4ed8;">
+          <div class="card-heading" style="color:#1e3a8a;">Lesson 1: Immersion, Radical Protest &amp; The Crackdown (50 mins)</div>
+          <div class="body-copy phase-row"><span class="time-chip">00–10m</span> <strong>Hook &amp; Prior Retrieval:</strong> Display Source A (George Cruikshank’s Peterloo Massacre caricature). Connect post-war economic distress with prior recall…</div><div class="body-copy phase-row"><span class="time-chip">10–30m</span> <strong>Modelled Shared Reading:</strong> Read Blocks 1 &amp; 2 together with prosody tracking. Pause at Block 1 to interrogate the St Peter’s Field cavalry charge and…</div><div class="body-copy phase-row"><span class="time-chip">30–45m</span> <strong>Local &amp; Archival Investigation:</strong> Study Source B (Anonymous 1830 &quot;Captain Swing&quot; threatening letter to Hampshire magistrates) and the 1834 Tolpuddle…</div><div class="body-copy phase-row"><span class="time-chip">45–50m</span> <strong>Formative Hinge Plenary:</strong> Conduct check for understanding on Hinge Question 2: How did the mythical pseudonym of &quot;Captain Swing&quot; become a weapon of…</div>
+        </div>
+        <div class="crib-card" style="border-left-color:#15803d;">
+          <div class="card-heading" style="color:#14532d;">Lesson 2: Chartism, Causal Mechanics &amp; Extended Writing (50 mins)</div>
+          <div class="body-copy phase-row"><span class="time-chip">00–10m</span> <strong>Spaced Retrieval &amp; Vocab Anchor:</strong> Complete retrieval Do Now in printed workbook. Review vocabulary: Moral Force vs. Physical Force Chartism.</div><div class="body-copy phase-row"><span class="time-chip">10–25m</span> <strong>Shared Reading &amp; Historiographical Debate:</strong> Read Acts 3 &amp; 4. Interrogate the Six Points of the People’s Charter and debate: Why did Parliament reject three massive…</div><div class="body-copy phase-row"><span class="time-chip">25–45m</span> <strong>Workbook Application (Pages 14–15):</strong> Pupils complete the Working-Class Resistance Strategy Matrix (Task 4) and 18-line PEEL extended writing evaluation on…</div><div class="body-copy phase-row"><span class="time-chip">45–50m</span> <strong>Live Exemplar Debrief:</strong> Visualiser debrief evaluating pupil arguments on whether peaceful petitioning or armed resistance was more effective in…</div>
+        </div>
+      </div>
+
+      <!-- (d) Misconceptions & Corrections + Hinge Question + SEND & Stretch -->
+      <div class="two-col-grid" style="grid-template-columns: 1.15fr 1fr;">
+        <div class="crib-card" style="border-left-color:#b91c1c;">
+          <div class="card-heading" style="color:#7f1d1d;">Common Pupil Misconceptions &amp; Historical Corrections</div>
+          
+      <div class="body-copy misc-item" style="">
+        <div><strong style="color:#991b1b;">Misconception 1:</strong> The Luddites and Hampshire Swing rioters smashed machines because they were ignorant and hated new technology.</div>
+        <div><strong style="color:#166534;">Correction:</strong> Skilled weavers ('General Ned Ludd', Source A) and Hampshire farmhands ('Captain Swing', Source C) targeted only machines used to slash wages to…</div>
+      </div>
+      <div class="body-copy misc-item" style="border-top:1px dashed #cbd5e1; padding-top:0.9mm; margin-top:0.9mm;">
+        <div><strong style="color:#991b1b;">Misconception 2:</strong> The crowd at St Peter's Field in August 1819 ('Peterloo') was a violent armed mob rioting in Manchester.</div>
+        <div><strong style="color:#166534;">Correction:</strong> Over 60,000 men, women, and children marched peacefully in their Sunday best to hear speeches on voting reform before panicked magistrates sent…</div>
+      </div>
+      <div class="body-copy misc-item" style="border-top:1px dashed #cbd5e1; padding-top:0.9mm; margin-top:0.9mm;">
+        <div><strong style="color:#991b1b;">Misconception 3:</strong> Harsh state punishment always succeeded in permanently crushing working-class organisation.</div>
+        <div><strong style="color:#166534;">Correction:</strong> While the December 1830 Winchester Assizes broke the Swing Riots through hangings and 400+ Australian transportations (Source D), sentencing the…</div>
+      </div>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:2mm; justify-content:space-between;">
+          <div class="crib-card" style="border-left-color:#d97706; background:#fffbeb; flex:1;">
+            <div class="card-heading" style="color:#92400e;">Targeted Diagnostic Hinge Question</div>
+            <div class="body-copy" style="font-weight:700; color:#0f172a; margin-bottom:0.7mm;">&ldquo;Why did northern Luddites (1811) and Hampshire 'Captain Swing' farmworkers (1830) smash machines while Manchester families at Peterloo (1819) and…&rdquo;</div>
+            <div class="body-copy" style="color:#334155;"><strong>Look For:</strong> Look for pupils recognising economic desperation behind machine-breaking (powerlooms slashing weavers' pay; threshing machines destroying winter barn wages across Hampshire) AND noticing that…</div>
+          </div>
+          <div class="crib-card" style="border-left-color:#6d28d9; background:#faf5ff; flex:1;">
+            <div class="card-heading" style="color:#4c1d95;">SEND Scaffold &amp; High-Ceiling Stretch</div>
+            <div class="body-copy" style="margin-bottom:0.7mm;"><strong style="color:#5b21b6;">SEND:</strong> Pre-teach penal transportation (exiling convicts by ship to forced labour in Australia) and trade union (workers banding together to protect fair pay).</div>
+            <div class="body-copy"><strong style="color:#5b21b6;">Stretch:</strong> Ask higher-attaining pupils to compare George Loveless's dignified 1834 Dorchester courtroom speech (Source E) with the anonymous 1830 Captain Swing threat letter (Source C)…</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- (e) Quick Classroom Answer Crib -->
+      <div class="crib-card answer-crib-box" style="border-left-color:#0f172a; background:#f8fafc;">
+        <div class="card-heading" style="color:#0f172a;">Quick Classroom Answer Crib (Do Now &bull; Sources A–E &bull; Workbook / Exam Key)</div>
+        <div class="body-copy" style="margin-bottom:0.8mm; padding-bottom:0.8mm; border-bottom:1px solid #e2e8f0;">
+          <strong style="color:var(--accent-dark);">Do Now Key:</strong>
+          Q1: Manchester, Leeds, and Sheffield • Q2: Outdoor earth closet • Q3: Asiatic cholera • Q4: Edwin Chadwick • Q5: Great Stink
+        </div>
+        <div class="body-copy" style="margin-bottom:0.8mm; padding-bottom:0.8mm; border-bottom:1px solid #e2e8f0;">
+          <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src A:</strong> They broke machines because new frames produced shoddy goods and undercut their wages, and…</span> <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src B:</strong> He wanted to show the shocking brutality of the magistrates who sent armed soldiers to…</span> <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src C:</strong> It reveals that farmworkers were facing literal starvation on poverty wages, and saw…</span> <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src D:</strong> The report shows government determination by praising death sentences and mass…</span> <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src E:</strong> Loveless maintained they harmed no one's property and only banded together peacefully to…</span>
+        </div>
+        <div class="body-copy">
+          <strong style="color:#0f172a;">[Chronological Historical Narrative • Analytical Account…]</strong>
+          <em>Write a narrative account analysing the key events leading from the Peterloo Massacre (1819) and Hampshire Swing Riots (1830) to…</em>
+          &rarr; <strong>Core Model Argument:</strong> Initially, in August 1819, 60,000 peaceful protesters gathered at St Peter's Field in Manchester demanding parliamentary reform. Magistrates sent cavalry charging into the crowd, killing eighteen and injuring hundreds…
+        </div>
+      </div>
+    </div>
+
+    <div class="sow-foot">
+      <span>The History Revision Hub &bull; <span class="school-brand-target" data-department-name="The History Department">The History Department</span> &bull; Confidential Staff Guide</span>
+      <span class="sow-pill">Page 5 of 6</span>
+    </div>
+  </section>
+
+  <section class="page sow-page" data-page="6" data-page-kind="crib">
+    <div class="page-inner">
+      <div class="sow-head">
+        <span>3-MINUTE WALK-IN TEACHER CRIB SHEET &bull; ENQUIRY 5 OF 5</span>
+        <span>Industrialisation, Power &amp; Protest (1750–1900)</span>
+      </div>
+
+      <!-- (a) Header Bar -->
+      <div class="enquiry-banner">
+        <div style="display:flex; justify-content:space-between; align-items:baseline; gap:2mm;">
+          <div class="enquiry-title-row">
+            <span class="enquiry-code-pill">E05</span>
+            <h2 class="enquiry-h2">Rotten Boroughs, Chartism &amp; Winning the Vote (1800–1872)</h2>
+          </div>
+        </div>
+        <div class="enquiry-eq-line">Central Enquiry: How did protest and reform gradually expand the right to vote by 1872?</div>
+        <div class="body-copy" style="color:#334155; margin-top:0.6mm;">
+          <strong style="color:var(--accent-dark);">Curriculum / Spec Anchor:</strong> KS3 Political Reform &amp; Democracy (1800–1872): Evaluating why Parliament passed the 1832 Great Reform Act, the significance of Chartism, and the 1872 Secret Ballot…
+        </div>
+      </div>
+
+      
+
+      <!-- (b) Subject Knowledge Primer + Learning Objectives -->
+      <div class="two-col-grid" style="grid-template-columns: 1.28fr 1fr;">
+        <div class="crib-card">
+          <div class="card-heading">Subject Knowledge Primer (Non-Specialist Walk-In Briefing)</div>
+          <p class="body-copy">This lesson examines the constitutional evolution of British parliamentary democracy from the notoriously corrupt 'Old Sarum' electoral system to the mass franchise reforms of the late 19th century. Analyzes the landmark 1832 Great Reform Act (which enfranchised the industrial middle class while deliberately excluding workers), the 1872 Secret Ballot Act (which destroyed landlord coercion and open-air bribery), and the 1867/1884 Reform Acts.</p>
+        </div>
+        <div class="crib-card" style="background:#f8fafc;">
+          <div class="card-heading">Core Learning Objectives</div>
+          <ul class="crib-ul">
+            <li class="body-copy">Explain the corrupt mechanics of the unreformed electoral system, including Rotten Boroughs and Pocket Boroughs.</li><li class="body-copy">Analyse how the fear of violent revolution and middle-class economic pressure forced Parliament to pass the 1832 Great Reform Act.</li><li class="body-copy">Evaluate the transformative impact of the 1872 Secret Ballot Act and franchise expansions (1867 &amp; 1884) on working-class political…</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- (c) 2-Lesson Delivery Plan (2 x 50 mins) -->
+      <div class="two-col-grid" style="grid-template-columns: 1fr 1fr;">
+        <div class="crib-card" style="border-left-color:#1d4ed8;">
+          <div class="card-heading" style="color:#1e3a8a;">Lesson 1: Immersion, Rotten Boroughs &amp; Parliamentary Clashes (50 mins)</div>
+          <div class="body-copy phase-row"><span class="time-chip">00–10m</span> <strong>Hook &amp; Prior Retrieval:</strong> Display Source A (Old Sarum electoral mound engraving). Connect parliamentary corruption with prior recall of the…</div><div class="body-copy phase-row"><span class="time-chip">10–30m</span> <strong>Modelled Shared Reading:</strong> Read Blocks 1 &amp; 2 together. Pause at Block 1 to contrast rotten boroughs returning two MPs with zero representation for…</div><div class="body-copy phase-row"><span class="time-chip">30–45m</span> <strong>Archival &amp; Strategic Analysis:</strong> Study Source B (1832 &quot;To Stop the Duke, Go for Gold&quot; bank run placard). Analyze how middle-class economic warfare and…</div><div class="body-copy phase-row"><span class="time-chip">45–50m</span> <strong>Formative Hinge Plenary:</strong> Conduct check for understanding on Hinge Question 2: Did Earl Grey pass the 1832 Reform Act to advance democracy or to…</div>
+        </div>
+        <div class="crib-card" style="border-left-color:#15803d;">
+          <div class="card-heading" style="color:#14532d;">Lesson 2: The Democratic Cascade, Historiographical Models &amp; Extended Writing…</div>
+          <div class="body-copy phase-row"><span class="time-chip">00–10m</span> <strong>Spaced Retrieval &amp; Vocab Anchor:</strong> Complete retrieval Do Now in printed workbook. Review vocabulary: Rotten Borough vs. Secret Ballot.</div><div class="body-copy phase-row"><span class="time-chip">10–25m</span> <strong>Shared Reading &amp; Historiographical Debate:</strong> Read Acts 3 &amp; 4. Interrogate the 1872 Pontefract liquorice ballot box (Source C) and debate: Was democracy conceded from…</div><div class="body-copy phase-row"><span class="time-chip">25–45m</span> <strong>Workbook Application (Pages 16–17):</strong> Pupils complete the Reform Acts Comparative Progression Table (Task 4) and 18-line PEEL extended writing evaluation on…</div><div class="body-copy phase-row"><span class="time-chip">45–50m</span> <strong>Live Exemplar Debrief:</strong> Live visualiser analysis of student judgements on the relative importance of the 1832, 1867, and 1884 Acts in forging…</div>
+        </div>
+      </div>
+
+      <!-- (d) Misconceptions & Corrections + Hinge Question + SEND & Stretch -->
+      <div class="two-col-grid" style="grid-template-columns: 1.15fr 1fr;">
+        <div class="crib-card" style="border-left-color:#b91c1c;">
+          <div class="card-heading" style="color:#7f1d1d;">Common Pupil Misconceptions &amp; Historical Corrections</div>
+          
+      <div class="body-copy misc-item" style="">
+        <div><strong style="color:#991b1b;">Misconception 1:</strong> The 1832 Great Reform Act gave every adult man in Britain the right to vote.</div>
+        <div><strong style="color:#166534;">Correction:</strong> The 1832 Act (Source C) kept a strict £10 borough property qualification that left around four out of five adult men—and 100% of women—without a…</div>
+      </div>
+      <div class="body-copy misc-item" style="border-top:1px dashed #cbd5e1; padding-top:0.9mm; margin-top:0.9mm;">
+        <div><strong style="color:#991b1b;">Misconception 2:</strong> Chartism (1838–1848) was a total failure because Parliament rejected all three mass petitions.</div>
+        <div><strong style="color:#166534;">Correction:</strong> Despite short-term rejection after the 1848 Kennington Common rally (Source D), five of William Lovett's Six Points—secret ballot (1872), no…</div>
+      </div>
+      <div class="body-copy misc-item" style="border-top:1px dashed #cbd5e1; padding-top:0.9mm; margin-top:0.9mm;">
+        <div><strong style="color:#991b1b;">Misconception 3:</strong> Once working men won the right to vote in 1867, elections immediately became fair without further reform.</div>
+        <div><strong style="color:#166534;">Correction:</strong> Until Gladstone's 1872 Secret Ballot Act (Source E) replaced open wooden hustings with private booths and wax-sealed boxes, bosses and landlords…</div>
+      </div>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:2mm; justify-content:space-between;">
+          <div class="crib-card" style="border-left-color:#d97706; background:#fffbeb; flex:1;">
+            <div class="card-heading" style="color:#92400e;">Targeted Diagnostic Hinge Question</div>
+            <div class="body-copy" style="font-weight:700; color:#0f172a; margin-bottom:0.7mm;">&ldquo;Why did working-class Chartists call the 1832 Great Reform Act a 'Great Betrayal'—and how much of the Chartists' 'failed' 1838 People's Charter actually…&rdquo;</div>
+            <div class="body-copy" style="color:#334155;"><strong>Look For:</strong> Strong answers explain Earl Grey's calculated Whig strategy: after the 1831 Bristol riots and May 1832 gold run forced the Lords to yield, the 1832 Act (Source C) scrapped 56 rotten boroughs…</div>
+          </div>
+          <div class="crib-card" style="border-left-color:#6d28d9; background:#faf5ff; flex:1;">
+            <div class="card-heading" style="color:#4c1d95;">SEND Scaffold &amp; High-Ceiling Stretch</div>
+            <div class="body-copy" style="margin-bottom:0.7mm;"><strong style="color:#5b21b6;">SEND:</strong> Pre-teach rotten borough (an empty medieval constituency like Old Sarum still sending two MPs to Parliament) and secret ballot (voting privately on paper in a booth).</div>
+            <div class="body-copy"><strong style="color:#5b21b6;">Stretch:</strong> Challenge higher-attaining pupils to weigh fear of revolution against genuine reform across the unit: compare why MPs passed the 1832 Great Reform Act after the Bristol riots…</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- (e) Quick Classroom Answer Crib -->
+      <div class="crib-card answer-crib-box" style="border-left-color:#0f172a; background:#f8fafc;">
+        <div class="card-heading" style="color:#0f172a;">Quick Classroom Answer Crib (Do Now &bull; Sources A–E &bull; Workbook / Exam Key)</div>
+        <div class="body-copy" style="margin-bottom:0.8mm; padding-bottom:0.8mm; border-bottom:1px solid #e2e8f0;">
+          <strong style="color:var(--accent-dark);">Do Now Key:</strong>
+          Q1: General Ned Ludd • Q2: Sixty thousand • Q3: Captain Swing • Q4: Winchester Great Hall • Q5: Tolpuddle, Dorset
+        </div>
+        <div class="body-copy" style="margin-bottom:0.8mm; padding-bottom:0.8mm; border-bottom:1px solid #e2e8f0;">
+          <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src A:</strong> The map shows that tiny southern villages with few residents had dozens of MPs, while huge…</span> <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src B:</strong> The cartoonist made Wellington wear a dunce's cap to mock him for foolishly refusing to…</span> <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src C:</strong> The Act granted seats to large industrial cities like Manchester and Birmingham, but…</span> <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src D:</strong> It was one of the earliest photographs ever taken of a working-class political rally…</span> <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src E:</strong> The locked tin box allowed working-class men to vote in total privacy for the first time…</span>
+        </div>
+        <div class="body-copy">
+          <strong style="color:#0f172a;">[Evaluative Historical Essay • Balanced Judgement (3…]</strong>
+          <em>“The 1832 Great Reform Act was passed because the ruling aristocracy feared violent revolution, rather than from a desire for…</em>
+          &rarr; <strong>Core Model Argument:</strong> On the one hand, fear of violent revolution was the primary motive for passing the 1832 Great Reform Act. Following the 1830 French Revolution and the rejection of the bill by the House of Lords, riots erupted in…
+        </div>
+      </div>
+    </div>
+
+    <div class="sow-foot">
+      <span>The History Revision Hub &bull; <span class="school-brand-target" data-department-name="The History Department">The History Department</span> &bull; Confidential Staff Guide</span>
+      <span class="sow-pill">Page 6 of 6</span>
+    </div>
+  </section>
+
+  
+  <script>
+    (function () {
+      // 1. Commercial School Cover Customizer (?school=School+Name)
+      try {
+        var params = new URLSearchParams(window.location.search);
+        var customSchool = (params.get('school') || '').trim();
+        if (customSchool) {
+          var targets = document.querySelectorAll('.school-brand-target');
+          for (var i = 0; i < targets.length; i++) {
+            targets[i].textContent = customSchool;
+          }
+        }
+      } catch (e) {}
+
+      // 2. Zero-Overflow A4 Portrait Auto-Fit Engine (Strictly preserves body prose >= 8.2pt!)
+      window.autoFitPages = function () {
+        var pages = document.querySelectorAll('.page');
+        for (var p = 0; p < pages.length; p++) {
+          var page = pages[p];
+          var inner = page.querySelector('.page-inner');
+          var bodyEls = page.querySelectorAll('.body-copy');
+          var cards = page.querySelectorAll('.crib-card, .enquiry-banner, .hero-banner');
+          var grids = page.querySelectorAll('.two-col-grid');
+          var cells = page.querySelectorAll('.sow-matrix-table td, .sow-matrix-table th');
+          var headings = page.querySelectorAll('.card-heading');
+
+          var bodyPt = 8.5;
+          var bodyLh = 1.25;
+          var gapMm = 2.1;
+          var padY = 8.0;
+          var guard = 0;
+
+          while (page.scrollHeight > page.clientHeight && guard < 36) {
+            guard++;
+            if (guard <= 10) {
+              // Phase 1: Tighten vertical gaps & card/table padding first (0pt font loss)
+              gapMm = Math.max(1.0, gapMm - 0.12);
+              if (inner) inner.style.gap = gapMm.toFixed(2) + 'mm';
+              for (var g = 0; g < grids.length; g++) {
+                grids[g].style.gap = Math.max(1.2, gapMm).toFixed(2) + 'mm';
+              }
+              var cardPadY = Math.max(1.0, 1.8 - guard * 0.08);
+              for (var c = 0; c < cards.length; c++) {
+                cards[c].style.paddingTop = cardPadY.toFixed(2) + 'mm';
+                cards[c].style.paddingBottom = cardPadY.toFixed(2) + 'mm';
+              }
+              var cellPadY = Math.max(0.65, 1.2 - guard * 0.055);
+              for (var td = 0; td < cells.length; td++) {
+                cells[td].style.paddingTop = cellPadY.toFixed(2) + 'mm';
+                cells[td].style.paddingBottom = cellPadY.toFixed(2) + 'mm';
+              }
+            } else if (guard <= 20) {
+              // Phase 2: Step body copy gently from 8.5pt toward 8.20pt floor & tighter line-height
+              bodyPt = Math.max(8.2, bodyPt - 0.03);
+              bodyLh = Math.max(1.16, bodyLh - 0.009);
+              for (var b = 0; b < bodyEls.length; b++) {
+                bodyEls[b].style.fontSize = bodyPt.toFixed(2) + 'pt';
+                bodyEls[b].style.lineHeight = bodyLh.toFixed(2);
+              }
+            } else {
+              // Phase 3: Tighten outer page vertical margin & heading margins while locking bodyPt >= 8.2pt!
+              padY = Math.max(5.5, padY - 0.2);
+              page.style.paddingTop = padY.toFixed(2) + 'mm';
+              page.style.paddingBottom = padY.toFixed(2) + 'mm';
+              bodyLh = Math.max(1.13, bodyLh - 0.004);
+              for (var b2 = 0; b2 < bodyEls.length; b2++) {
+                bodyEls[b2].style.lineHeight = bodyLh.toFixed(2);
+              }
+              for (var h = 0; h < headings.length; h++) {
+                headings[h].style.fontSize = '8.25pt';
+                headings[h].style.marginBottom = '0.4mm';
+                headings[h].style.paddingBottom = '0.3mm';
+              }
+              var foot = page.querySelector('.sow-foot');
+              if (foot) {
+                foot.style.marginTop = '0.8mm';
+                foot.style.paddingTop = '0.8mm';
+              }
+            }
+          }
+        }
+      };
+
+      if (document.readyState === 'complete') {
+        window.autoFitPages();
+      } else {
+        window.addEventListener('load', window.autoFitPages);
+      }
+      if (document.fonts && document.fonts.ready) {
+        document.fonts.ready.then(window.autoFitPages);
+      }
+    })();
+  </script>
+</body>
+</html>

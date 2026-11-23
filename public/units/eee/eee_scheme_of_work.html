@@ -1,0 +1,1805 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Early Elizabethan England, 1558–1588 • Walk-In Teacher Guide &amp; Scheme of Work (13 Pages) | The History Revision Hub</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;800&family=Inter:wght@400;600;700;800&family=Lora:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --accent: #991b1b;
+      --accent-dark: #450a0a;
+      --accent-soft: #fef2f2;
+      --accent-border: #fecaca;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+    @page {
+      size: 210mm 297mm;
+      margin: 0;
+    }
+    body {
+      background: #cbd5e1;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      color: #0f172a;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .screen-toolbar {
+      width: 100%;
+      background: #0f172a;
+      color: #ffffff;
+      padding: 9px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid #f59e0b;
+      position: sticky;
+      top: 0;
+      z-index: 50;
+    }
+    .screen-toolbar-actions a,
+    .screen-toolbar-actions button {
+      background: var(--accent-dark);
+      color: #ffffff;
+      border: 1px solid #fbbf24;
+      padding: 5px 12px;
+      border-radius: 5px;
+      font-size: 8.5pt;
+      font-weight: 700;
+      text-decoration: none;
+      cursor: pointer;
+      margin-left: 6px;
+    }
+    .page.sow-page {
+      width: 210mm;
+      height: 297mm;
+      max-height: 297mm;
+      background: #ffffff;
+      margin: 7mm auto;
+      padding: 8mm 10.5mm;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      overflow: hidden;
+      page-break-after: always;
+      break-after: page;
+      box-shadow: 0 8px 24px rgba(15, 23, 42, 0.16);
+    }
+    .page-inner {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 2.1mm;
+      min-height: 0;
+    }
+    .sow-masthead,
+    .sow-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1.5px solid var(--accent);
+      padding-bottom: 1.1mm;
+      font-size: 8.2pt;
+      font-weight: 800;
+      color: var(--accent-dark);
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+    }
+    .sow-foot {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 1px solid #cbd5e1;
+      padding-top: 1.2mm;
+      margin-top: 1.4mm;
+      font-size: 8.2pt;
+      color: #475569;
+      font-weight: 600;
+      flex-shrink: 0;
+    }
+    .sow-pill {
+      background: var(--accent-dark);
+      color: #ffffff;
+      padding: 1px 8px;
+      border-radius: 3px;
+      font-weight: 800;
+      font-size: 8.2pt;
+    }
+    .hero-banner {
+      background: linear-gradient(135deg, #0f172a 0%, var(--accent-dark) 100%);
+      color: #ffffff;
+      border-radius: 5px;
+      padding: 3.0mm 4.0mm;
+      border-bottom: 2.5px solid #f59e0b;
+    }
+    .hero-kicker {
+      font-size: 8.2pt;
+      font-weight: 800;
+      color: #fde68a;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+    .hero-pill {
+      background: rgba(255, 255, 255, 0.14);
+      border: 1px solid rgba(253, 230, 138, 0.55);
+      color: #fef3c7;
+      padding: 0.5mm 2.2mm;
+      border-radius: 3px;
+      font-size: 8.2pt;
+      font-weight: 700;
+    }
+    .hero-title {
+      font-family: 'Cinzel', Georgia, serif;
+      font-size: 13.2pt;
+      line-height: 1.16;
+      margin-top: 0.8mm;
+      color: #ffffff;
+    }
+    .matrix-bar {
+      background: var(--accent-dark);
+      color: #ffffff;
+      padding: 1.1mm 2.4mm;
+      border-radius: 4px 4px 0 0;
+      display: flex;
+      justify-content: space-between;
+      font-size: 8.2pt;
+      font-weight: 800;
+      letter-spacing: 0.03em;
+    }
+    .enquiry-banner {
+      background: var(--accent-soft);
+      border: 1.2px solid var(--accent-border);
+      border-left: 4.5px solid var(--accent);
+      border-radius: 5px;
+      padding: 2.0mm 3.0mm;
+    }
+    .enquiry-title-row {
+      display: flex;
+      align-items: center;
+      gap: 2mm;
+    }
+    .enquiry-code-pill {
+      background: var(--accent-dark);
+      color: #ffffff;
+      font-size: 8.2pt;
+      font-weight: 800;
+      padding: 0.5mm 2.0mm;
+      border-radius: 3px;
+      white-space: nowrap;
+    }
+    .enquiry-h2 {
+      font-size: 11.2pt;
+      font-weight: 800;
+      color: #0f172a;
+      line-height: 1.18;
+    }
+    .enquiry-eq-line {
+      font-family: 'Lora', Georgia, serif;
+      font-style: italic;
+      font-size: 9.0pt;
+      font-weight: 600;
+      color: var(--accent-dark);
+      margin-top: 0.7mm;
+    }
+    .two-col-grid {
+      display: grid;
+      gap: 2.2mm;
+    }
+    .crib-card {
+      border: 1px solid #cbd5e1;
+      border-left: 3.5px solid var(--accent);
+      border-radius: 4px;
+      padding: 1.8mm 2.6mm;
+      background: #ffffff;
+    }
+    .card-heading {
+      font-size: 8.6pt;
+      font-weight: 800;
+      color: var(--accent-dark);
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+      margin-bottom: 0.8mm;
+      border-bottom: 1px solid #e2e8f0;
+      padding-bottom: 0.5mm;
+    }
+    .body-copy {
+      font-size: 8.5pt;
+      line-height: 1.25;
+      color: #1e293b;
+    }
+    .crib-ul {
+      padding-left: 4.2mm;
+      display: flex;
+      flex-direction: column;
+      gap: 0.7mm;
+    }
+    .phase-row {
+      margin-bottom: 0.7mm;
+    }
+    .phase-row:last-child {
+      margin-bottom: 0;
+    }
+    .time-chip {
+      display: inline-block;
+      background: #e2e8f0;
+      color: #0f172a;
+      font-weight: 800;
+      font-size: 8.2pt;
+      padding: 0 1.3mm;
+      border-radius: 2px;
+      margin-right: 0.6mm;
+    }
+    @media print {
+      body {
+        background: #ffffff;
+      }
+      .screen-toolbar {
+        display: none !important;
+      }
+      .page.sow-page {
+        margin: 0 !important;
+        box-shadow: none !important;
+      }
+      .page.sow-page:last-of-type {
+        page-break-after: avoid !important;
+        break-after: avoid !important;
+      }
+      .crib-card,
+      .enquiry-banner,
+      .hero-banner,
+      tr {
+        page-break-inside: avoid;
+        break-inside: avoid;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="screen-toolbar">
+    <div>
+      <strong style="font-size:9.2pt;">Early Elizabethan England, 1558–1588 &bull; Walk-In Teacher Guide &amp; SOW</strong>
+      <span style="margin-left:8px;font-size:8pt;color:#fde68a;font-weight:700;">Staff Planning Pack &bull; 13 Pages (A4 Portrait &bull; Corner Staple)</span>
+    </div>
+    <div class="screen-toolbar-actions">
+      <a href="/?view=lessons&amp;unit=eee">&larr; Back to Unit Hub</a>
+      <a href="/pdfs/eee_scheme_of_work.pdf" download>&darr; Download PDF (13p)</a>
+      <button type="button" onclick="window.print()">&#128424; Print Teacher Guide</button>
+    </div>
+  </div>
+
+  
+  <section class="page sow-page" data-page="1" data-page-kind="overview">
+    <div class="page-inner">
+      <div class="sow-masthead">
+        <span>THE HISTORY REVISION HUB &bull; WALK-IN TEACHER GUIDE &amp; SCHEME OF WORK</span>
+        <span class="school-brand-target" data-department-name="The History Department">The History Department</span>
+      </div>
+
+      <div class="hero-banner">
+        <div style="display:flex; justify-content:space-between; align-items:center; gap:2mm; flex-wrap:wrap;">
+          <span class="hero-kicker">Pearson Edexcel GCSE (9–1) • Paper 2 British Depth Option B4 (1HI0/B4)</span>
+          <span class="hero-pill">Staff Guide &bull; 12 Enquiries &bull; 13 Pages A4</span>
+        </div>
+        <h1 class="hero-title">Early Elizabethan England, 1558–1588</h1>
+        <div class="body-copy" style="color:#f1f5f9; margin-top:0.7mm;">
+          <strong>Curriculum Specification:</strong> Pearson Edexcel GCSE (9–1) History Paper 2 Option B4: Early Elizabethan England, 1558–88.
+        </div>
+      </div>
+
+      <div class="two-col-grid" style="grid-template-columns: 1.22fr 1fr;">
+        <div class="crib-card">
+          <div class="card-heading">Non-Specialist Executive Summary &amp; Core Threads</div>
+          <p class="body-copy" style="margin-bottom:1mm;">This British Depth Study examines the first thirty years of Elizabeth I's reign from her fragile accession in November 1558 to the defeat of the Spanish Armada in August 1588.</p>
+          <div class="body-copy" style="padding-top:0.8mm; border-top:1px dashed #cbd5e1;">
+            <strong style="color:var(--accent-dark);">Disciplinary Threads:</strong> Key Features (4m), Causation 'Explain why' (12m), and Evaluative Judgement 'How far do you agree' (16m).
+          </div>
+        </div>
+        <div class="crib-card" style="background:var(--accent-soft); border-left-color:var(--accent);">
+          <div class="card-heading">Curricular Pillar Reprographics Map</div>
+          <div class="body-copy" style="margin-bottom:0.8mm;"><strong style="color:var(--accent-dark);">Classroom Textbook:</strong> 12 Pages / KT • Pure reading narrative</div><div class="body-copy" style="margin-bottom:0.8mm;"><strong style="color:var(--accent-dark);">Pupil Workbook:</strong> 16 Pages / KT • 5-Stage Spine + Tasks + Staff Mark Scheme</div><div class="body-copy" style="margin-bottom:0.8mm;"><strong style="color:var(--accent-dark);">Retrieval Companion:</strong> 120 Qs • 16 Pages + Rear Marking Bank</div><div class="body-copy" style="margin-bottom:0.8mm;"><strong style="color:var(--accent-dark);">Mastery Exam Pack:</strong> 19–59 Pages • Exam Papers &amp; WAGOLLs</div>
+        </div>
+      </div>
+
+      
+
+      <div style="flex:1; display:flex; flex-direction:column; justify-content:flex-start;">
+        <div class="matrix-bar">
+          <span>SCHEME OF WORK OVERVIEW MATRIX (ALL 12 ENQUIRIES)</span>
+          <span>2 &times; 50 MIN DELIVERY SEQUENCE PER ENQUIRY</span>
+        </div>
+        
+    <table class="sow-matrix-table" style="width:100%; border-collapse:collapse; border:1px solid #94a3b8;">
+      <thead>
+        <tr style="background:#0f172a; color:#ffffff;">
+          <th class="body-copy" style="padding:1.4mm 1.6mm; text-align:left; width:13mm; font-weight:800;">Enq #</th>
+          <th class="body-copy" style="padding:1.4mm 1.6mm; text-align:left; width:86mm; font-weight:800;">Title &amp; Key Enquiry Question</th>
+          <th class="body-copy" style="padding:1.4mm 1.6mm; text-align:left; width:52mm; font-weight:800;">Core Concepts / Spec Focus</th>
+          <th class="body-copy" style="padding:1.4mm 1.6mm; text-align:left; width:38mm; font-weight:800;">Assessment / Exam Tariff</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+      <tr style="background:#ffffff; border-bottom:1px solid #cbd5e1;">
+        <td class="body-copy" style="padding:1.05mm 1.6mm; font-weight:800; color:var(--accent-dark); white-space:nowrap; vertical-align:top;">KT 1.1</td>
+        <td class="body-copy" style="padding:1.05mm 1.6mm; vertical-align:top;">
+          <strong style="color:#0f172a;">The Situation on Elizabeth’s Accession, 1558</strong>
+          <span style="color:#475569; font-style:italic;"> — Why was Elizabeth’s position so insecure at home and abroad in 1558?</span>
+        </td>
+        <td class="body-copy" style="padding:1.05mm 1.6mm; color:#1e293b; vertical-align:top;">Key Topic 1.1: Queen, government and religion, 1558–69 — society and…</td>
+        <td class="body-copy" style="padding:1.05mm 1.6mm; font-weight:700; color:#0f172a; vertical-align:top;">2 marks + 2 marks + 12 marks</td>
+      </tr>
+      <tr style="background:#f8fafc; border-bottom:1px solid #cbd5e1;">
+        <td class="body-copy" style="padding:1.05mm 1.6mm; font-weight:800; color:var(--accent-dark); white-space:nowrap; vertical-align:top;">KT 1.2</td>
+        <td class="body-copy" style="padding:1.05mm 1.6mm; vertical-align:top;">
+          <strong style="color:#0f172a;">The 'Settlement' of Religion, 1559</strong>
+          <span style="color:#475569; font-style:italic;"> — How did Elizabeth’s 1559 Religious Settlement try to unite a divided…</span>
+        </td>
+        <td class="body-copy" style="padding:1.05mm 1.6mm; color:#1e293b; vertical-align:top;">Key Topic 1.2: The 'settlement' of religion, 1559 — the Act of Supremacy…</td>
+        <td class="body-copy" style="padding:1.05mm 1.6mm; font-weight:700; color:#0f172a; vertical-align:top;">2 marks + 2 marks + 12 marks</td>
+      </tr>
+      <tr style="background:#ffffff; border-bottom:1px solid #cbd5e1;">
+        <td class="body-copy" style="padding:1.05mm 1.6mm; font-weight:800; color:var(--accent-dark); white-space:nowrap; vertical-align:top;">KT 1.3</td>
+        <td class="body-copy" style="padding:1.05mm 1.6mm; vertical-align:top;">
+          <strong style="color:#0f172a;">Challenge to the Religious Settlement</strong>
+          <span style="color:#475569; font-style:italic;"> — Why did opposition from Puritan zealots and Catholic traditionalists test…</span>
+        </td>
+        <td class="body-copy" style="padding:1.05mm 1.6mm; color:#1e293b; vertical-align:top;">Key Topic 1.3: Challenge to the religious settlement — Puritan crucifix…</td>
+        <td class="body-copy" style="padding:1.05mm 1.6mm; font-weight:700; color:#0f172a; vertical-align:top;">2 marks + 2 marks + 16 marks</td>
+      </tr>
+      <tr style="background:#f8fafc; border-bottom:1px solid #cbd5e1;">
+        <td class="body-copy" style="padding:1.05mm 1.6mm; font-weight:800; color:var(--accent-dark); white-space:nowrap; vertical-align:top;">KT 1.4</td>
+        <td class="body-copy" style="padding:1.05mm 1.6mm; vertical-align:top;">
+          <strong style="color:#0f172a;">The Problem of Mary, Queen of Scots, 1568–69</strong>
+          <span style="color:#475569; font-style:italic;"> — Why was Mary, Queen of Scots such a dangerous problem for Elizabeth from…</span>
+        </td>
+        <td class="body-copy" style="padding:1.05mm 1.6mm; color:#1e293b; vertical-align:top;">Key Topic 1.4: The problem of Mary, Queen of Scots, 1568–69 — Mary's…</td>
+        <td class="body-copy" style="padding:1.05mm 1.6mm; font-weight:700; color:#0f172a; vertical-align:top;">2 marks + 2 marks + 16 marks</td>
+      </tr>
+      <tr style="background:#ffffff; border-bottom:1px solid #cbd5e1;">
+        <td class="body-copy" style="padding:1.05mm 1.6mm; font-weight:800; color:var(--accent-dark); white-space:nowrap; vertical-align:top;">KT 2.1</td>
+        <td class="body-copy" style="padding:1.05mm 1.6mm; vertical-align:top;">
+          <strong style="color:#0f172a;">Plots and Revolts at Home, 1569–1587</strong>
+          <span style="color:#475569; font-style:italic;"> — Why did Catholic rebellions and plots finally persuade Elizabeth to execute…</span>
+        </td>
+        <td class="body-copy" style="padding:1.05mm 1.6mm; color:#1e293b; vertical-align:top;">Key Topic 2.1: Plots and revolts at home, 1569–87 — Revolt of the…</td>
+        <td class="body-copy" style="padding:1.05mm 1.6mm; font-weight:700; color:#0f172a; vertical-align:top;">2 marks + 2 marks + 12 marks</td>
+      </tr>
+      <tr style="background:#f8fafc; border-bottom:1px solid #cbd5e1;">
+        <td class="body-copy" style="padding:1.05mm 1.6mm; font-weight:800; color:var(--accent-dark); white-space:nowrap; vertical-align:top;">KT 2.2</td>
+        <td class="body-copy" style="padding:1.05mm 1.6mm; vertical-align:top;">
+          <strong style="color:#0f172a;">Relations with Spain, 1569–1585</strong>
+          <span style="color:#475569; font-style:italic;"> — Why did rivalry with Spain slide toward open war between 1569 and 1585?</span>
+        </td>
+        <td class="body-copy" style="padding:1.05mm 1.6mm; color:#1e293b; vertical-align:top;">Key Topic 2.2: Relations with Spain, 1569–85 — political, religious, and…</td>
+        <td class="body-copy" style="padding:1.05mm 1.6mm; font-weight:700; color:#0f172a; vertical-align:top;">2 marks + 2 marks + 16 marks</td>
+      </tr>
+      <tr style="background:#ffffff; border-bottom:1px solid #cbd5e1;">
+        <td class="body-copy" style="padding:1.05mm 1.6mm; font-weight:800; color:var(--accent-dark); white-space:nowrap; vertical-align:top;">KT 2.3</td>
+        <td class="body-copy" style="padding:1.05mm 1.6mm; vertical-align:top;">
+          <strong style="color:#0f172a;">The Outbreak of War with Spain, 1585–1588</strong>
+          <span style="color:#475569; font-style:italic;"> — How did war in the Netherlands and Drake’s raid on Cadiz trigger the Armada?</span>
+        </td>
+        <td class="body-copy" style="padding:1.05mm 1.6mm; color:#1e293b; vertical-align:top;">Key Topic 2.3: Outbreak of war with Spain, 1585–88 — Leicester's campaign…</td>
+        <td class="body-copy" style="padding:1.05mm 1.6mm; font-weight:700; color:#0f172a; vertical-align:top;">2 marks + 2 marks + 16 marks</td>
+      </tr>
+      <tr style="background:#f8fafc; border-bottom:1px solid #cbd5e1;">
+        <td class="body-copy" style="padding:1.05mm 1.6mm; font-weight:800; color:var(--accent-dark); white-space:nowrap; vertical-align:top;">KT 2.4</td>
+        <td class="body-copy" style="padding:1.05mm 1.6mm; vertical-align:top;">
+          <strong style="color:#0f172a;">The Spanish Armada: Strategy, Conflict &amp; Defeat, 1588</strong>
+          <span style="color:#475569; font-style:italic;"> — Why did Philip II’s Spanish Armada fail to conquer England in 1588?</span>
+        </td>
+        <td class="body-copy" style="padding:1.05mm 1.6mm; color:#1e293b; vertical-align:top;">Key Topic 2.4: The Spanish Armada, 1588 — Spanish invasion plan, Channel…</td>
+        <td class="body-copy" style="padding:1.05mm 1.6mm; font-weight:700; color:#0f172a; vertical-align:top;">2 marks + 2 marks + 12 marks</td>
+      </tr>
+      <tr style="background:#ffffff; border-bottom:1px solid #cbd5e1;">
+        <td class="body-copy" style="padding:1.05mm 1.6mm; font-weight:800; color:var(--accent-dark); white-space:nowrap; vertical-align:top;">KT 3.1</td>
+        <td class="body-copy" style="padding:1.05mm 1.6mm; vertical-align:top;">
+          <strong style="color:#0f172a;">Education and Leisure in Elizabethan England, 1558–1588</strong>
+          <span style="color:#475569; font-style:italic;"> — How did educational expansion and popular theatrical culture reflect both…</span>
+        </td>
+        <td class="body-copy" style="padding:1.05mm 1.6mm; color:#1e293b; vertical-align:top;">Key Topic 3.1: Education and leisure in Elizabethan England, 1558–88…</td>
+        <td class="body-copy" style="padding:1.05mm 1.6mm; font-weight:700; color:#0f172a; vertical-align:top;">2 marks + 2 marks + 16 marks</td>
+      </tr>
+      <tr style="background:#f8fafc; border-bottom:1px solid #cbd5e1;">
+        <td class="body-copy" style="padding:1.05mm 1.6mm; font-weight:800; color:var(--accent-dark); white-space:nowrap; vertical-align:top;">KT 3.2</td>
+        <td class="body-copy" style="padding:1.05mm 1.6mm; vertical-align:top;">
+          <strong style="color:#0f172a;">The Problem of the Poor and Vagrancy, 1558–1588</strong>
+          <span style="color:#475569; font-style:italic;"> — Why did poverty rise in Elizabethan England, and how did laws toward the…</span>
+        </td>
+        <td class="body-copy" style="padding:1.05mm 1.6mm; color:#1e293b; vertical-align:top;">Key Topic 3.2: The problem of the poor, 1558–88 — population rise, price…</td>
+        <td class="body-copy" style="padding:1.05mm 1.6mm; font-weight:700; color:#0f172a; vertical-align:top;">2 marks + 2 marks + 16 marks</td>
+      </tr>
+      <tr style="background:#ffffff; border-bottom:1px solid #cbd5e1;">
+        <td class="body-copy" style="padding:1.05mm 1.6mm; font-weight:800; color:var(--accent-dark); white-space:nowrap; vertical-align:top;">KT 3.3</td>
+        <td class="body-copy" style="padding:1.05mm 1.6mm; vertical-align:top;">
+          <strong style="color:#0f172a;">Exploration and Voyages of Discovery, 1558–1588</strong>
+          <span style="color:#475569; font-style:italic;"> — How did navigational science, galleon engineering, and Drake’s…</span>
+        </td>
+        <td class="body-copy" style="padding:1.05mm 1.6mm; color:#1e293b; vertical-align:top;">Key Topic 3.3: Exploration and voyages of discovery, 1558–88…</td>
+        <td class="body-copy" style="padding:1.05mm 1.6mm; font-weight:700; color:#0f172a; vertical-align:top;">2 marks + 2 marks + 12 marks</td>
+      </tr>
+      <tr style="background:#f8fafc; border-bottom:1px solid #cbd5e1;">
+        <td class="body-copy" style="padding:1.05mm 1.6mm; font-weight:800; color:var(--accent-dark); white-space:nowrap; vertical-align:top;">KT 3.4</td>
+        <td class="body-copy" style="padding:1.05mm 1.6mm; vertical-align:top;">
+          <strong style="color:#0f172a;">Raleigh and the Colonisation of Virginia, 1584–1590</strong>
+          <span style="color:#475569; font-style:italic;"> — Why did Sir Walter Raleigh promote Virginia, and why did both the 1585 and…</span>
+        </td>
+        <td class="body-copy" style="padding:1.05mm 1.6mm; color:#1e293b; vertical-align:top;">Key Topic 3.4: Raleigh and Virginia, 1584–88 — Sir Walter Raleigh's royal…</td>
+        <td class="body-copy" style="padding:1.05mm 1.6mm; font-weight:700; color:#0f172a; vertical-align:top;">2 marks + 2 marks + 16 marks</td>
+      </tr>
+      </tbody>
+    </table>
+      </div>
+    </div>
+
+    <div class="sow-foot">
+      <span>The History Revision Hub &bull; Walk-In Teacher Guide &amp; SOW (GCSE)</span>
+      <span class="sow-pill">Page 1 of 13</span>
+    </div>
+  </section>
+
+  <section class="page sow-page" data-page="2" data-page-kind="crib">
+    <div class="page-inner">
+      <div class="sow-head">
+        <span>3-MINUTE WALK-IN TEACHER CRIB SHEET &bull; ENQUIRY 1 OF 12</span>
+        <span>Early Elizabethan England, 1558–1588</span>
+      </div>
+
+      <!-- (a) Header Bar -->
+      <div class="enquiry-banner">
+        <div style="display:flex; justify-content:space-between; align-items:baseline; gap:2mm;">
+          <div class="enquiry-title-row">
+            <span class="enquiry-code-pill">KT 1.1</span>
+            <h2 class="enquiry-h2">The Situation on Elizabeth’s Accession, 1558</h2>
+          </div>
+        </div>
+        <div class="enquiry-eq-line">Central Enquiry: Why was Elizabeth’s position so insecure at home and abroad in 1558?</div>
+        <div class="body-copy" style="color:#334155; margin-top:0.6mm;">
+          <strong style="color:var(--accent-dark);">Curriculum / Spec Anchor:</strong> Key Topic 1.1: Queen, government and religion, 1558–69 — society and government in 1558, legitimacy, gender and marriage, £300,000 Crown debt, and foreign threats…
+        </div>
+      </div>
+
+      
+
+      <!-- (b) Subject Knowledge Primer + Learning Objectives -->
+      <div class="two-col-grid" style="grid-template-columns: 1.28fr 1fr;">
+        <div class="crib-card">
+          <div class="card-heading">Subject Knowledge Primer (Non-Specialist Walk-In Briefing)</div>
+          <p class="body-copy">This lesson establishes the precarious nature of Elizabeth's accession in 1558. It explores the rigid Tudor social hierarchy, the prejudices against female rule, and the immediate crises of state debt and foreign hostility she inherited.</p>
+        </div>
+        <div class="crib-card" style="background:#f8fafc;">
+          <div class="card-heading">Core Learning Objectives</div>
+          <ul class="crib-ul">
+            <li class="body-copy">Explain and evaluate Accession of Elizabeth I (17 NOV 1558): £300,000, Antwerp, William Cecil.</li><li class="body-copy">Explain and evaluate Features of Elizabethan Government (NOV–DEC 1558): Privy Council, patronage, monopolies.</li><li class="body-copy">Explain and evaluate Challenges of Gender &amp; Legitimacy (DEC 1558): Anne Boleyn, 1536 Succession Act, Protestant heir.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- (c) 2-Lesson Delivery Plan (2 x 50 mins) -->
+      <div class="two-col-grid" style="grid-template-columns: 1fr 1fr;">
+        <div class="crib-card" style="border-left-color:#1d4ed8;">
+          <div class="card-heading" style="color:#1e3a8a;">Lesson 1: Accession, Royal Court &amp; Legitimacy Doubts (Stages 1–3) (50 mins)</div>
+          <div class="body-copy phase-row"><span class="time-chip">8m</span> <strong>Spaced Retrieval Starter:</strong> Run the baseline Do Now retrieving Henry VII’s 1485 Tudor dynasty, Henry VIII’s 1530s break with Rome, Anne Boleyn’s…</div><div class="body-copy phase-row"><span class="time-chip">15m</span> <strong>Teacher Exposition:</strong> Introduce Tudor society’s Great Chain of Being and explain why twenty-five-year-old Elizabeth faced immediate domestic…</div><div class="body-copy phase-row"><span class="time-chip">17m</span> <strong>Shared Reading &amp; Spine:</strong> Shared reading of Stages 1–3 covering inherited financial crisis, patronage and factions inside the 19-member Privy…</div><div class="body-copy phase-row"><span class="time-chip">10m</span> <strong>Hinge Check:</strong> Compare Source A (the 1559 Coronation Portrait’s orb, sceptre, and cloth of estate) with Source B (Sir William Cecil) and…</div>
+        </div>
+        <div class="crib-card" style="border-left-color:#15803d;">
+          <div class="card-heading" style="color:#14532d;">Lesson 2: Local Shires, Foreign Encirclement &amp; Paper 2 B4 Writing (Stages…</div>
+          <div class="body-copy phase-row"><span class="time-chip">8m</span> <strong>Spaced Retrieval Starter:</strong> Spaced recall check on Crown debt (£300,000), royal patronage in the Privy Council, and Catholic canon-law objections to…</div><div class="body-copy phase-row"><span class="time-chip">17m</span> <strong>Narrative &amp; Sources:</strong> Read Stages 4–5 on Parliament’s extraordinary taxation, unpaid Lords Lieutenant and Justices of the Peace in the shires…</div><div class="body-copy phase-row"><span class="time-chip">20m</span> <strong>Exam Writing:</strong> Timed Edexcel Paper 2 Section B (1HI0/B4) practice: complete Q1(a)/(b) Describe two features (French threat in 1558…</div><div class="body-copy phase-row"><span class="time-chip">5m</span> <strong>Consolidate &amp; DIRT:</strong> Green-pen DIRT check: verify each 2-mark feature pairs an identified feature with specific supporting detail, and check…</div>
+        </div>
+      </div>
+
+      <!-- (d) Misconceptions & Corrections + Hinge Question + SEND & Stretch -->
+      <div class="two-col-grid" style="grid-template-columns: 1.15fr 1fr;">
+        <div class="crib-card" style="border-left-color:#b91c1c;">
+          <div class="card-heading" style="color:#7f1d1d;">Common Pupil Misconceptions &amp; Historical Corrections</div>
+          
+      <div class="body-copy misc-item" style="">
+        <div><strong style="color:#991b1b;">Misconception 1:</strong> Assuming Elizabeth I held absolute personal power backed by a standing army and professional police force.</div>
+        <div><strong style="color:#166534;">Correction:</strong> The Tudor Crown had no standing army or paid police force; Elizabeth relied on her 19-man Privy Council at court and unpaid noble Lords…</div>
+      </div>
+      <div class="body-copy misc-item" style="border-top:1px dashed #cbd5e1; padding-top:0.9mm; margin-top:0.9mm;">
+        <div><strong style="color:#991b1b;">Misconception 2:</strong> Believing Catholic Spain was England's main foreign enemy on Elizabeth's accession in 1558.</div>
+        <div><strong style="color:#166534;">Correction:</strong> In 1558 England had just fought alongside Habsburg Spain against France, losing Calais in January 1558.</div>
+      </div>
+      <div class="body-copy misc-item" style="border-top:1px dashed #cbd5e1; padding-top:0.9mm; margin-top:0.9mm;">
+        <div><strong style="color:#991b1b;">Misconception 3:</strong> Confusing Protestant doubts about female rule with Roman Catholic doubts about Elizabeth's legitimacy.</div>
+        <div><strong style="color:#166534;">Correction:</strong> Catholics rejected Elizabeth's legitimacy because Pope Clement VII had never annulled Henry VIII's marriage to Catherine of Aragon, making…</div>
+      </div>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:2mm; justify-content:space-between;">
+          <div class="crib-card" style="border-left-color:#d97706; background:#fffbeb; flex:1;">
+            <div class="card-heading" style="color:#92400e;">Targeted Diagnostic Hinge Question</div>
+            <div class="body-copy" style="font-weight:700; color:#0f172a; margin-bottom:0.7mm;">&ldquo;Why did France and Scotland pose a more immediate threat to Elizabeth in November 1558 than Catholic Spain?&rdquo;</div>
+            <div class="body-copy" style="color:#334155;"><strong>Look For:</strong> Strong GCSE answers recognise that France held Calais, stationed French garrisons in Scotland under the Auld Alliance, and backed the rival dynastic claim of Mary, Queen of Scots (married to the…</div>
+          </div>
+          <div class="crib-card" style="border-left-color:#6d28d9; background:#faf5ff; flex:1;">
+            <div class="card-heading" style="color:#4c1d95;">SEND Scaffold &amp; High-Ceiling Stretch</div>
+            <div class="body-copy" style="margin-bottom:0.7mm;"><strong style="color:#5b21b6;">SEND:</strong> Start with the Visual Story Sheet and the Catholic Encirclement Concept Diagram before reading, playing Studio Audio alongside the 5 narrative blocks.</div>
+            <div class="body-copy"><strong style="color:#5b21b6;">Stretch:</strong> Evaluate whether Elizabeth's domestic financial and dynastic weaknesses in 1558 were actually dangerous in their own right, or only perilous because Catholic France and…</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- (e) Quick Classroom Answer Crib -->
+      <div class="crib-card answer-crib-box" style="border-left-color:#0f172a; background:#f8fafc;">
+        <div class="card-heading" style="color:#0f172a;">Quick Classroom Answer Crib (Do Now &bull; Sources A–E &bull; Workbook / Exam Key)</div>
+        <div class="body-copy" style="margin-bottom:0.8mm; padding-bottom:0.8mm; border-bottom:1px solid #e2e8f0;">
+          <strong style="color:var(--accent-dark);">Do Now Key:</strong>
+          Q1: The Tudor dynasty • Q2: King Henry VIII • Q3: Anne Boleyn • Q4: King Edward VI • Q5: Queen Mary I
+        </div>
+        <div class="body-copy" style="margin-bottom:0.8mm; padding-bottom:0.8mm; border-bottom:1px solid #e2e8f0;">
+          <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src A:</strong> Source A is highly useful because it demonstrates how Elizabeth countered contemporary…</span> <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src B:</strong> Source B suggests that Elizabeth prized cautious administrative competence and unshakeable…</span> <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src C:</strong> Source C shows that contemporary religious theorists viewed female monarchy as unnatural…</span> <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src D:</strong> Source D is an official royal directive proving that royal authority depended on unpaid…</span> <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src E:</strong> A historian examines Mary's reign to show that Elizabeth inherited a bankrupt crown…</span>
+        </div>
+        <div class="body-copy">
+          <strong style="color:#0f172a;">[2 marks + 2 marks + 12 marks]</strong>
+          <em>2. Explain why Elizabeth’s legitimacy, gender and marriage were a problem for her in 1558. [12 marks]</em>
+          &rarr; <strong>Core Model Argument:</strong> Elizabeth’s disputed legitimacy posed an acute dynastic threat in 1558 because devout Catholics at home and abroad rejected Henry VIII’s divorce from Catherine of Aragon and his 1533 marriage to Anne Boleyn.
+        </div>
+      </div>
+    </div>
+
+    <div class="sow-foot">
+      <span>The History Revision Hub &bull; <span class="school-brand-target" data-department-name="The History Department">The History Department</span> &bull; Confidential Staff Guide</span>
+      <span class="sow-pill">Page 2 of 13</span>
+    </div>
+  </section>
+
+  <section class="page sow-page" data-page="3" data-page-kind="crib">
+    <div class="page-inner">
+      <div class="sow-head">
+        <span>3-MINUTE WALK-IN TEACHER CRIB SHEET &bull; ENQUIRY 2 OF 12</span>
+        <span>Early Elizabethan England, 1558–1588</span>
+      </div>
+
+      <!-- (a) Header Bar -->
+      <div class="enquiry-banner">
+        <div style="display:flex; justify-content:space-between; align-items:baseline; gap:2mm;">
+          <div class="enquiry-title-row">
+            <span class="enquiry-code-pill">KT 1.2</span>
+            <h2 class="enquiry-h2">The 'Settlement' of Religion, 1559</h2>
+          </div>
+        </div>
+        <div class="enquiry-eq-line">Central Enquiry: How did Elizabeth’s 1559 Religious Settlement try to unite a divided country?</div>
+        <div class="body-copy" style="color:#334155; margin-top:0.6mm;">
+          <strong style="color:var(--accent-dark);">Curriculum / Spec Anchor:</strong> Key Topic 1.2: The 'settlement' of religion, 1559 — the Act of Supremacy, the Act of Uniformity, the 1559 Book of Common Prayer, Royal Injunctions, and Church…
+        </div>
+      </div>
+
+      
+
+      <!-- (b) Subject Knowledge Primer + Learning Objectives -->
+      <div class="two-col-grid" style="grid-template-columns: 1.28fr 1fr;">
+        <div class="crib-card">
+          <div class="card-heading">Subject Knowledge Primer (Non-Specialist Walk-In Briefing)</div>
+          <p class="body-copy">This lesson explores Elizabeth's attempt to navigate the treacherous religious divide in England by establishing a 'Middle Way'. The pedagogical focus is on helping students understand that the Religious Settlement of 1559 was a political compromise rather than a purely theological one, and to evaluate how the Church functioned as an instrument of state control before analysing the subsequent backlash from both extremes (Puritans and Catholics).</p>
+        </div>
+        <div class="crib-card" style="background:#f8fafc;">
+          <div class="card-heading">Core Learning Objectives</div>
+          <ul class="crib-ul">
+            <li class="body-copy">Explain and evaluate Religious Divisions in 1558 (NOV 1558–JAN 1559): northern gentry, Marian exiles, Marian bishops.</li><li class="body-copy">Explain and evaluate The Act of Supremacy (MAY 1559): Act of Supremacy, Supreme Governor, Oath of Supremacy.</li><li class="body-copy">Explain and evaluate The Act of Uniformity (MAY 1559): Act of Uniformity, Book of Common Prayer, recusants.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- (c) 2-Lesson Delivery Plan (2 x 50 mins) -->
+      <div class="two-col-grid" style="grid-template-columns: 1fr 1fr;">
+        <div class="crib-card" style="border-left-color:#1d4ed8;">
+          <div class="card-heading" style="color:#1e3a8a;">Lesson 1: 1558 Religious Divide, Supremacy &amp; Uniformity (Stages 1–3) (50 mins)</div>
+          <div class="body-copy phase-row"><span class="time-chip">8m</span> <strong>Spaced Retrieval Starter:</strong> Complete the spaced Do Now retrieving Elizabeth’s November 1558 accession, Principal Secretary Sir William Cecil, John…</div><div class="body-copy phase-row"><span class="time-chip">15m</span> <strong>Teacher Exposition:</strong> Map England’s geographical religious divide in 1558 (conservative Catholic north-west vs Protestant London, East Anglia…</div><div class="body-copy phase-row"><span class="time-chip">17m</span> <strong>Shared Reading &amp; Spine:</strong> Read Stages 1–3 on religious divisions, adopting the title ‘Supreme Governor’ under the Act of Supremacy, and the 1559…</div><div class="body-copy phase-row"><span class="time-chip">10m</span> <strong>Hinge Check:</strong> Scrutinise Source A (1559 Act of Supremacy roll) alongside Source B (1559 Book of Common Prayer title page) to test how…</div>
+        </div>
+        <div class="crib-card" style="border-left-color:#15803d;">
+          <div class="card-heading" style="color:#14532d;">Lesson 2: Royal Injunctions, Visitations &amp; Paper 2 B4 Writing (Stages 4–5)…</div>
+          <div class="body-copy phase-row"><span class="time-chip">8m</span> <strong>Spaced Retrieval Starter:</strong> Retrieve England’s regional religious divide, why Elizabeth chose ‘Supreme Governor’ over ‘Supreme Head’, and the 1559…</div><div class="body-copy phase-row"><span class="time-chip">17m</span> <strong>Narrative &amp; Sources:</strong> Read Stages 4–5 on Cecil’s 57 Royal Injunctions, the autumn 1559 nationwide visitations (400 clergy resigning or deprived…</div><div class="body-copy phase-row"><span class="time-chip">20m</span> <strong>Exam Writing:</strong> Timed Edexcel Paper 2 B4 practice: complete Q1(a)/(b) Describe features (role of the Church of England; religious…</div><div class="body-copy phase-row"><span class="time-chip">5m</span> <strong>Consolidate &amp; DIRT:</strong> Peer-assess 12-mark explanations against domestic peace, Marian bishops in the House of Lords, and avoiding a joint…</div>
+        </div>
+      </div>
+
+      <!-- (d) Misconceptions & Corrections + Hinge Question + SEND & Stretch -->
+      <div class="two-col-grid" style="grid-template-columns: 1.15fr 1fr;">
+        <div class="crib-card" style="border-left-color:#b91c1c;">
+          <div class="card-heading" style="color:#7f1d1d;">Common Pupil Misconceptions &amp; Historical Corrections</div>
+          
+      <div class="body-copy misc-item" style="">
+        <div><strong style="color:#991b1b;">Misconception 1:</strong> Mixing up the legal roles of the Act of Supremacy and the Act of Uniformity (May 1559).</div>
+        <div><strong style="color:#166534;">Correction:</strong> The Act of Supremacy dealt with Church governance, ending papal authority and making Elizabeth Supreme Governor via the Oath of Supremacy.</div>
+      </div>
+      <div class="body-copy misc-item" style="border-top:1px dashed #cbd5e1; padding-top:0.9mm; margin-top:0.9mm;">
+        <div><strong style="color:#991b1b;">Misconception 2:</strong> Thinking the 1559 'Middle Way' meant half Catholic and half Protestant or full religious toleration.</div>
+        <div><strong style="color:#166534;">Correction:</strong> The 1559 Settlement created an unmistakably Protestant Church in doctrine and royal supremacy, outlawing the Latin Mass.</div>
+      </div>
+      <div class="body-copy misc-item" style="border-top:1px dashed #cbd5e1; padding-top:0.9mm; margin-top:0.9mm;">
+        <div><strong style="color:#991b1b;">Misconception 3:</strong> Assuming ordinary people rather than parish clergy had to swear the 1559 Oath of Supremacy.</div>
+        <div><strong style="color:#166534;">Correction:</strong> Only clergy, royal officials, JPs, and university graduates were required to swear the Oath of Supremacy, and roughly 8,000 of 10,000 parish…</div>
+      </div>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:2mm; justify-content:space-between;">
+          <div class="crib-card" style="border-left-color:#d97706; background:#fffbeb; flex:1;">
+            <div class="card-heading" style="color:#92400e;">Targeted Diagnostic Hinge Question</div>
+            <div class="body-copy" style="font-weight:700; color:#0f172a; margin-bottom:0.7mm;">&ldquo;How did the wording and rules of Elizabeth's 1559 Religious Settlement deliberately leave room for moderate Catholics to conform outwardly?&rdquo;</div>
+            <div class="body-copy" style="color:#334155;"><strong>Look For:</strong> Look for pupils identifying specific compromises: choosing the title 'Supreme Governor' rather than 'Supreme Head', fusing traditional Catholic and Protestant communion wording in the 1559 Book…</div>
+          </div>
+          <div class="crib-card" style="border-left-color:#6d28d9; background:#faf5ff; flex:1;">
+            <div class="card-heading" style="color:#4c1d95;">SEND Scaffold &amp; High-Ceiling Stretch</div>
+            <div class="body-copy" style="margin-bottom:0.7mm;"><strong style="color:#5b21b6;">SEND:</strong> Project the Catholic-Compromise-Puritan Concept Diagram alongside the Visual Story Sheet so learners visually separate Church leadership (Supremacy) from Church services…</div>
+            <div class="body-copy"><strong style="color:#5b21b6;">Stretch:</strong> Assess how far the rapid acceptance of the 1559 Settlement owed more to Cecil's fifty-seven Royal Injunctions and the replacement of twenty-six Marian bishops than to genuine…</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- (e) Quick Classroom Answer Crib -->
+      <div class="crib-card answer-crib-box" style="border-left-color:#0f172a; background:#f8fafc;">
+        <div class="card-heading" style="color:#0f172a;">Quick Classroom Answer Crib (Do Now &bull; Sources A–E &bull; Workbook / Exam Key)</div>
+        <div class="body-copy" style="margin-bottom:0.8mm; padding-bottom:0.8mm; border-bottom:1px solid #e2e8f0;">
+          <strong style="color:var(--accent-dark);">Do Now Key:</strong>
+          Q1: Elizabeth Tudor • Q2: Sir William Cecil • Q3: John Knox • Q4: Justices of the Peace (JPs) • Q5: Calais
+        </div>
+        <div class="body-copy" style="margin-bottom:0.8mm; padding-bottom:0.8mm; border-bottom:1px solid #e2e8f0;">
+          <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src A:</strong> Elizabeth adopted the title 'Supreme Governor' as a deliberate linguistic compromise…</span> <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src B:</strong> Source B demonstrates that the Crown sought religious conformity through calculated…</span> <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src C:</strong> Cecil wrote this confidential memorandum to orchestrate the imprisonment of Catholic…</span> <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src D:</strong> Source D is useful for depicting the solemn constitutional authority of Parliament where…</span> <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src E:</strong> The Papacy intended to denounce Elizabeth's Royal Supremacy as illegitimate and mobilize…</span>
+        </div>
+        <div class="body-copy">
+          <strong style="color:#0f172a;">[2 marks + 2 marks + 12 marks]</strong>
+          <em>2. Explain why Elizabeth’s religious settlement (1559) took the form it did in 1559. [12 marks]</em>
+          &rarr; <strong>Core Model Argument:</strong> Elizabeth’s 1559 religious settlement took the form of a cautious Protestant ‘middle way’ primarily to heal deep domestic religious divisions without provoking civil war.
+        </div>
+      </div>
+    </div>
+
+    <div class="sow-foot">
+      <span>The History Revision Hub &bull; <span class="school-brand-target" data-department-name="The History Department">The History Department</span> &bull; Confidential Staff Guide</span>
+      <span class="sow-pill">Page 3 of 13</span>
+    </div>
+  </section>
+
+  <section class="page sow-page" data-page="4" data-page-kind="crib">
+    <div class="page-inner">
+      <div class="sow-head">
+        <span>3-MINUTE WALK-IN TEACHER CRIB SHEET &bull; ENQUIRY 3 OF 12</span>
+        <span>Early Elizabethan England, 1558–1588</span>
+      </div>
+
+      <!-- (a) Header Bar -->
+      <div class="enquiry-banner">
+        <div style="display:flex; justify-content:space-between; align-items:baseline; gap:2mm;">
+          <div class="enquiry-title-row">
+            <span class="enquiry-code-pill">KT 1.3</span>
+            <h2 class="enquiry-h2">Challenge to the Religious Settlement</h2>
+          </div>
+        </div>
+        <div class="enquiry-eq-line">Central Enquiry: Why did opposition from Puritan zealots and Catholic traditionalists test Elizabeth’s middle way during the 1560s?</div>
+        <div class="body-copy" style="color:#334155; margin-top:0.6mm;">
+          <strong style="color:var(--accent-dark);">Curriculum / Spec Anchor:</strong> Key Topic 1.3: Challenge to the religious settlement — Puritan crucifix and vestments controversies, domestic Catholic recusancy, and foreign Catholic threats…
+        </div>
+      </div>
+
+      
+
+      <!-- (b) Subject Knowledge Primer + Learning Objectives -->
+      <div class="two-col-grid" style="grid-template-columns: 1.28fr 1fr;">
+        <div class="crib-card">
+          <div class="card-heading">Subject Knowledge Primer (Non-Specialist Walk-In Briefing)</div>
+          <p class="body-copy">This lesson evaluates the dual threats to Elizabeth's Religious Settlement. Pedagogically, the focus is on contrasting the fundamentally different natures of these threats: the Puritan challenge was internal, theological, and ultimately contained, whereas the Catholic challenge morphed from passive domestic disobedience into a foreign-backed, treasonous attempt to overthrow the monarchy.</p>
+        </div>
+        <div class="crib-card" style="background:#f8fafc;">
+          <div class="card-heading">Core Learning Objectives</div>
+          <ul class="crib-ul">
+            <li class="body-copy">Explain and evaluate The Nature of the Puritan Challenge (1559–1563): Puritans, crucifix, 1563 Convocation.</li><li class="body-copy">Explain and evaluate The Crucifix &amp; Vestments Controversy (1566): surplice, Matthew Parker, Book of Advertisements.</li><li class="body-copy">Explain and evaluate The Catholic Challenge at Home (1559–1568): Church Papists, Counter-Reformation, Pope Pius V.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- (c) 2-Lesson Delivery Plan (2 x 50 mins) -->
+      <div class="two-col-grid" style="grid-template-columns: 1fr 1fr;">
+        <div class="crib-card" style="border-left-color:#1d4ed8;">
+          <div class="card-heading" style="color:#1e3a8a;">Lesson 1: Puritan Crucifix &amp; Vestments Controversies (Stages 1–3) (50 mins)</div>
+          <div class="body-copy phase-row"><span class="time-chip">8m</span> <strong>Spaced Retrieval Starter:</strong> Complete the spaced Do Now retrieving Geneva exiles, the 1559 Acts of Supremacy and Uniformity, Royal Injunctions, and…</div><div class="body-copy phase-row"><span class="time-chip">15m</span> <strong>Teacher Exposition:</strong> Contrast the internal theological challenge of radical Puritans with the subdued domestic posture of English ‘Church…</div><div class="body-copy phase-row"><span class="time-chip">17m</span> <strong>Shared Reading &amp; Spine:</strong> Shared reading of Stages 1–3 covering Puritan opposition to ‘popish’ remnants, Elizabeth backing down on parish…</div><div class="body-copy phase-row"><span class="time-chip">10m</span> <strong>Hinge Check:</strong> Compare Source A (Bishop Jewel on the 1560 Crucifix Controversy) with Source B (Parker’s March 1566 Lambeth vestments…</div>
+        </div>
+        <div class="crib-card" style="border-left-color:#15803d;">
+          <div class="card-heading" style="color:#14532d;">Lesson 2: Counter-Reformation Abroad, Genoese Loan &amp; Paper 2 B4 Essay (Stages…</div>
+          <div class="body-copy phase-row"><span class="time-chip">8m</span> <strong>Spaced Retrieval Starter:</strong> Spaced recall check on the Crucifix and Vestments controversies, Archbishop Parker’s 1566 crackdown, and why most English…</div><div class="body-copy phase-row"><span class="time-chip">17m</span> <strong>Narrative &amp; Sources:</strong> Read Stages 4–5 on the 1562 French Wars of Religion (Treaty of Troyes), the Duke of Alba’s 10,000 Spanish troops marching…</div><div class="body-copy phase-row"><span class="time-chip">20m</span> <strong>Exam Writing:</strong> Timed Edexcel Paper 2 B4 practice: complete Q1(a)/(b) Describe features (Puritan challenge; role of the Papacy and…</div><div class="body-copy phase-row"><span class="time-chip">5m</span> <strong>Consolidate &amp; DIRT:</strong> Check Q3 essays during DIRT for sustained balanced criteria (scale of domestic support, threat to royal authority, and…</div>
+        </div>
+      </div>
+
+      <!-- (d) Misconceptions & Corrections + Hinge Question + SEND & Stretch -->
+      <div class="two-col-grid" style="grid-template-columns: 1.15fr 1fr;">
+        <div class="crib-card" style="border-left-color:#b91c1c;">
+          <div class="card-heading" style="color:#7f1d1d;">Common Pupil Misconceptions &amp; Historical Corrections</div>
+          
+      <div class="body-copy misc-item" style="">
+        <div><strong style="color:#991b1b;">Misconception 1:</strong> Believing 1560s Puritans plotted to overthrow Elizabeth and replace her with another monarch.</div>
+        <div><strong style="color:#166534;">Correction:</strong> Puritans were ardent Protestants who relied on Elizabeth's survival against Catholic rivals; their 1560s clashes over crucifixes and linen…</div>
+      </div>
+      <div class="body-copy misc-item" style="border-top:1px dashed #cbd5e1; padding-top:0.9mm; margin-top:0.9mm;">
+        <div><strong style="color:#991b1b;">Misconception 2:</strong> Placing the Papal Bull of Excommunication or Edmund Campion's Jesuit mission in the 1560s.</div>
+        <div><strong style="color:#166534;">Correction:</strong> Throughout the early-to-mid 1560s Pope Pius IV avoided excommunicating Elizabeth, encouraging quiet 'wait-and-see' survival among English…</div>
+      </div>
+      <div class="body-copy misc-item" style="border-top:1px dashed #cbd5e1; padding-top:0.9mm; margin-top:0.9mm;">
+        <div><strong style="color:#991b1b;">Misconception 3:</strong> Treating Elizabeth's seizure of the Genoese Loan in November 1568 as an act of open naval piracy against Spanish…</div>
+        <div><strong style="color:#166534;">Correction:</strong> The £85,000 gold bullion sheltering in Plymouth and Southampton still legally belonged to private Genoese banking houses until delivered to the…</div>
+      </div>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:2mm; justify-content:space-between;">
+          <div class="crib-card" style="border-left-color:#d97706; background:#fffbeb; flex:1;">
+            <div class="card-heading" style="color:#92400e;">Targeted Diagnostic Hinge Question</div>
+            <div class="body-copy" style="font-weight:700; color:#0f172a; margin-bottom:0.7mm;">&ldquo;Why did neither domestic Puritans nor English Catholics come close to overturning the Religious Settlement between 1559 and 1568?&rdquo;</div>
+            <div class="body-copy" style="color:#334155;"><strong>Look For:</strong> Strong answers explain that Puritans wanted to purify the Church from within rather than depose a Protestant Queen (backing down on crucifixes, while Archbishop Parker suspended only 37 London…</div>
+          </div>
+          <div class="crib-card" style="border-left-color:#6d28d9; background:#faf5ff; flex:1;">
+            <div class="card-heading" style="color:#4c1d95;">SEND Scaffold &amp; High-Ceiling Stretch</div>
+            <div class="body-copy" style="margin-bottom:0.7mm;"><strong style="color:#5b21b6;">SEND:</strong> Use the Visual Story Sheet and Studio Audio to group the five stages into two clear buckets on the board: 'Challenges at Home' (Crucifixes, Vestments, Church Papists) and…</div>
+            <div class="body-copy"><strong style="color:#5b21b6;">Stretch:</strong> Compare Elizabeth's climbdown over the royal chapel crucifixes (1560) with her firm backing for Parker's Book of Advertisements over vestments (1566): what explains the…</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- (e) Quick Classroom Answer Crib -->
+      <div class="crib-card answer-crib-box" style="border-left-color:#0f172a; background:#f8fafc;">
+        <div class="card-heading" style="color:#0f172a;">Quick Classroom Answer Crib (Do Now &bull; Sources A–E &bull; Workbook / Exam Key)</div>
+        <div class="body-copy" style="margin-bottom:0.8mm; padding-bottom:0.8mm; border-bottom:1px solid #e2e8f0;">
+          <strong style="color:var(--accent-dark);">Do Now Key:</strong>
+          Q1: Geneva exiles • Q2: The Act of Supremacy • Q3: The Act of Uniformity • Q4: The Royal Injunctions • Q5: One shilling (12 pence)
+        </div>
+        <div class="body-copy" style="margin-bottom:0.8mm; padding-bottom:0.8mm; border-bottom:1px solid #e2e8f0;">
+          <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src A:</strong> Source A reveals that Puritans viewed crucifixes and visual imagery as idolatrous remnants…</span> <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src B:</strong> They believed the surplice and square cap were 'popish rags' that falsely suggested priests…</span> <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src C:</strong> Source C is very useful because it visually demonstrates that Catholicism remained…</span> <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src D:</strong> Allen aimed to preserve English Catholic priesthood by educating young exiles abroad and…</span> <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src E:</strong> Source E documents Elizabeth's deliberate legal seizure of money intended to pay Alba's…</span>
+        </div>
+        <div class="body-copy">
+          <strong style="color:#0f172a;">[2 marks + 2 marks + 16 marks]</strong>
+          <em>3. ‘The Catholic challenge was a greater threat to Elizabeth’s religious settlement than the Puritan challenge in the years…</em>
+          &rarr; <strong>Core Model Argument:</strong> Between 1559 and 1569, the Catholic challenge posed a substantially greater threat to Elizabeth’s religious settlement than the Puritan challenge because Catholic opposition combined powerful northern aristocratic…
+        </div>
+      </div>
+    </div>
+
+    <div class="sow-foot">
+      <span>The History Revision Hub &bull; <span class="school-brand-target" data-department-name="The History Department">The History Department</span> &bull; Confidential Staff Guide</span>
+      <span class="sow-pill">Page 4 of 13</span>
+    </div>
+  </section>
+
+  <section class="page sow-page" data-page="5" data-page-kind="crib">
+    <div class="page-inner">
+      <div class="sow-head">
+        <span>3-MINUTE WALK-IN TEACHER CRIB SHEET &bull; ENQUIRY 4 OF 12</span>
+        <span>Early Elizabethan England, 1558–1588</span>
+      </div>
+
+      <!-- (a) Header Bar -->
+      <div class="enquiry-banner">
+        <div style="display:flex; justify-content:space-between; align-items:baseline; gap:2mm;">
+          <div class="enquiry-title-row">
+            <span class="enquiry-code-pill">KT 1.4</span>
+            <h2 class="enquiry-h2">The Problem of Mary, Queen of Scots, 1568–69</h2>
+          </div>
+        </div>
+        <div class="enquiry-eq-line">Central Enquiry: Why was Mary, Queen of Scots such a dangerous problem for Elizabeth from 1568?</div>
+        <div class="body-copy" style="color:#334155; margin-top:0.6mm;">
+          <strong style="color:var(--accent-dark);">Curriculum / Spec Anchor:</strong> Key Topic 1.4: The problem of Mary, Queen of Scots, 1568–69 — Mary's Tudor claim, Darnley's murder, flight to England (May 1568), the York-Westminster Inquiry and…
+        </div>
+      </div>
+
+      
+
+      <!-- (b) Subject Knowledge Primer + Learning Objectives -->
+      <div class="two-col-grid" style="grid-template-columns: 1.28fr 1fr;">
+        <div class="crib-card">
+          <div class="card-heading">Subject Knowledge Primer (Non-Specialist Walk-In Briefing)</div>
+          <p class="body-copy">This lesson explores the dynastic and political crisis triggered by Mary, Queen of Scots' arrival in England in 1568. The pedagogical goal is for students to grasp the complexity of Elizabeth's dilemma—she could not easily help, punish, banish, or imprison Mary without causing a separate geopolitical disaster.</p>
+        </div>
+        <div class="crib-card" style="background:#f8fafc;">
+          <div class="card-heading">Core Learning Objectives</div>
+          <ul class="crib-ul">
+            <li class="body-copy">Explain and evaluate Mary’s Claim to the English Throne (1560–1565): Mary, Queen of Scots, Margaret Tudor, James VI.</li><li class="body-copy">Explain and evaluate The Murder of Lord Darnley (FEB 1567): Lord Darnley, Kirk o’ Field, Earl of Bothwell.</li><li class="body-copy">Explain and evaluate Abdication, Lochleven &amp; Escape (1567–1568): Lochleven, Earl of Moray, house arrest.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- (c) 2-Lesson Delivery Plan (2 x 50 mins) -->
+      <div class="two-col-grid" style="grid-template-columns: 1fr 1fr;">
+        <div class="crib-card" style="border-left-color:#1d4ed8;">
+          <div class="card-heading" style="color:#1e3a8a;">Lesson 1: Mary Stuart’s Claim, Darnley’s Murder &amp; Lochleven Escape (Stages…</div>
+          <div class="body-copy phase-row"><span class="time-chip">8m</span> <strong>Spaced Retrieval Starter:</strong> Complete the spaced Do Now retrieving Puritans, the 1559–60 Crucifix Controversy, Church Papists, Alba’s army in the…</div><div class="body-copy phase-row"><span class="time-chip">15m</span> <strong>Teacher Exposition:</strong> Explain why Mary, Queen of Scots’ sudden arrival in Cumbria in May 1568 trapped Elizabeth: as Henry VII’s Catholic…</div><div class="body-copy phase-row"><span class="time-chip">17m</span> <strong>Shared Reading &amp; Spine:</strong> Read Stages 1–3 on Mary’s dynastic claim, the February 1567 murder of Lord Darnley at Kirk o’ Field and marriage to…</div><div class="body-copy phase-row"><span class="time-chip">10m</span> <strong>Hinge Check:</strong> Interrogate Source A (Mary Stuart’s portrait) alongside Source C (the 24 July 1567 Lochleven Deed of Abdication) to…</div>
+        </div>
+        <div class="crib-card" style="border-left-color:#15803d;">
+          <div class="card-heading" style="color:#14532d;">Lesson 2: York Inquiry, Casket Letters &amp; Captivity (Stages 4–5 &amp; Paper 2 B4…</div>
+          <div class="body-copy phase-row"><span class="time-chip">8m</span> <strong>Spaced Retrieval Starter:</strong> Recall check on Margaret Tudor’s bloodline, Lord Darnley’s murder at Kirk o’ Field, Regent Moray, and why Elizabeth…</div><div class="body-copy phase-row"><span class="time-chip">17m</span> <strong>Narrative &amp; Sources:</strong> Read Stages 4–5 on the October 1568–January 1569 York/Westminster Inquiry, Regent Moray’s presentation of the disputed…</div><div class="body-copy phase-row"><span class="time-chip">20m</span> <strong>Exam Writing:</strong> Timed Edexcel Paper 2 B4 practice: complete Q1(a)/(b) Describe features (relations between Elizabeth and Mary, 1568–69…</div><div class="body-copy phase-row"><span class="time-chip">5m</span> <strong>Consolidate &amp; DIRT:</strong> Run exemplar DIRT checking that Q3 weighs Mary’s Catholic dynastic claim against the Darnley murder scandal, foreign…</div>
+        </div>
+      </div>
+
+      <!-- (d) Misconceptions & Corrections + Hinge Question + SEND & Stretch -->
+      <div class="two-col-grid" style="grid-template-columns: 1.15fr 1fr;">
+        <div class="crib-card" style="border-left-color:#b91c1c;">
+          <div class="card-heading" style="color:#7f1d1d;">Common Pupil Misconceptions &amp; Historical Corrections</div>
+          
+      <div class="body-copy misc-item" style="">
+        <div><strong style="color:#991b1b;">Misconception 1:</strong> Confusing Catholic Mary I ('Bloody Mary', Elizabeth's half-sister who died in 1558) with Mary, Queen of Scots…</div>
+        <div><strong style="color:#166534;">Correction:</strong> Mary I Tudor ruled England from 1553 until her death in November 1558. Mary Stuart, Queen of Scots, was the Catholic granddaughter of Henry…</div>
+      </div>
+      <div class="body-copy misc-item" style="border-top:1px dashed #cbd5e1; padding-top:0.9mm; margin-top:0.9mm;">
+        <div><strong style="color:#991b1b;">Misconception 2:</strong> Assuming Elizabeth put Mary on criminal trial for treason in 1568 when she arrived in Cumbria.</div>
+        <div><strong style="color:#166534;">Correction:</strong> In 1568–69 Mary was a foreign sovereign accused of complicity in her husband Lord Darnley's murder in Scotland, not treason against Elizabeth.</div>
+      </div>
+      <div class="body-copy misc-item" style="border-top:1px dashed #cbd5e1; padding-top:0.9mm; margin-top:0.9mm;">
+        <div><strong style="color:#991b1b;">Misconception 3:</strong> Thinking the 1569 Norfolk marriage scheme initially began as a Spanish-backed treasonous assassination plot.</div>
+        <div><strong style="color:#166534;">Correction:</strong> Courtiers including Robert Dudley and William Cecil initially knew of or explored marrying Mary to England's premier Protestant peer, the Duke…</div>
+      </div>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:2mm; justify-content:space-between;">
+          <div class="crib-card" style="border-left-color:#d97706; background:#fffbeb; flex:1;">
+            <div class="card-heading" style="color:#92400e;">Targeted Diagnostic Hinge Question</div>
+            <div class="body-copy" style="font-weight:700; color:#0f172a; margin-bottom:0.7mm;">&ldquo;Why was delivering a 'not proven' non-verdict at the York-Westminster Inquiry in January 1569 so politically convenient for Elizabeth—yet so dangerous for…&rdquo;</div>
+            <div class="body-copy" style="color:#334155;"><strong>Look For:</strong> Strong GCSE answers see both sides of Elizabeth's trap: clearing Mary would oblige Elizabeth to restore a Catholic rival to Scotland, while convicting her would set a dangerous precedent for…</div>
+          </div>
+          <div class="crib-card" style="border-left-color:#6d28d9; background:#faf5ff; flex:1;">
+            <div class="card-heading" style="color:#4c1d95;">SEND Scaffold &amp; High-Ceiling Stretch</div>
+            <div class="body-copy" style="margin-bottom:0.7mm;"><strong style="color:#5b21b6;">SEND:</strong> Display the May 1568 Solway Firth Concept Diagram alongside the Visual Story Sheet so learners trace each rejected option (Help Mary back, Hand Mary over, Send Mary to…</div>
+            <div class="body-copy"><strong style="color:#5b21b6;">Stretch:</strong> To what extent was Mary, Queen of Scots more dangerous to Elizabeth as a captive victim inside England after May 1568 than she had ever been as ruling Queen in Edinburgh?</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- (e) Quick Classroom Answer Crib -->
+      <div class="crib-card answer-crib-box" style="border-left-color:#0f172a; background:#f8fafc;">
+        <div class="card-heading" style="color:#0f172a;">Quick Classroom Answer Crib (Do Now &bull; Sources A–E &bull; Workbook / Exam Key)</div>
+        <div class="body-copy" style="margin-bottom:0.8mm; padding-bottom:0.8mm; border-bottom:1px solid #e2e8f0;">
+          <strong style="color:var(--accent-dark);">Do Now Key:</strong>
+          Q1: The Puritans • Q2: The Crucifix Controversy • Q3: Church papists • Q4: The Duke of Alba • Q5: The Genoese loan ships
+        </div>
+        <div class="body-copy" style="margin-bottom:0.8mm; padding-bottom:0.8mm; border-bottom:1px solid #e2e8f0;">
+          <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src A:</strong> Source A shows Mary's royal lineage and Catholic piety, illustrating that her presence in…</span> <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src B:</strong> Walsingham compiled surveillance dossiers to gather irrefutable legal proof that Mary was…</span> <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src C:</strong> Source C was signed under direct duress while Mary was imprisoned on an island in Lochleven…</span> <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src D:</strong> The Scottish lords wanted to prove Mary was complicit in Darnley's murder and an unfit…</span> <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src E:</strong> Source E proves that Mary's royal bloodline and Catholic faith acted as an immediate magnet…</span>
+        </div>
+        <div class="body-copy">
+          <strong style="color:#0f172a;">[2 marks + 2 marks + 16 marks]</strong>
+          <em>3. ‘Mary, Queen of Scots’ claim to the English throne was the main problem in relations between Elizabeth and Mary in the years…</em>
+          &rarr; <strong>Core Model Argument:</strong> Mary, Queen of Scots’ legitimate Catholic claim to the English throne was indeed the underlying root problem in relations between the two queens in 1568–69, because without that hereditary claim neither her arrival in…
+        </div>
+      </div>
+    </div>
+
+    <div class="sow-foot">
+      <span>The History Revision Hub &bull; <span class="school-brand-target" data-department-name="The History Department">The History Department</span> &bull; Confidential Staff Guide</span>
+      <span class="sow-pill">Page 5 of 13</span>
+    </div>
+  </section>
+
+  <section class="page sow-page" data-page="6" data-page-kind="crib">
+    <div class="page-inner">
+      <div class="sow-head">
+        <span>3-MINUTE WALK-IN TEACHER CRIB SHEET &bull; ENQUIRY 5 OF 12</span>
+        <span>Early Elizabethan England, 1558–1588</span>
+      </div>
+
+      <!-- (a) Header Bar -->
+      <div class="enquiry-banner">
+        <div style="display:flex; justify-content:space-between; align-items:baseline; gap:2mm;">
+          <div class="enquiry-title-row">
+            <span class="enquiry-code-pill">KT 2.1</span>
+            <h2 class="enquiry-h2">Plots and Revolts at Home, 1569–1587</h2>
+          </div>
+        </div>
+        <div class="enquiry-eq-line">Central Enquiry: Why did Catholic rebellions and plots finally persuade Elizabeth to execute Mary in 1587?</div>
+        <div class="body-copy" style="color:#334155; margin-top:0.6mm;">
+          <strong style="color:var(--accent-dark);">Curriculum / Spec Anchor:</strong> Key Topic 2.1: Plots and revolts at home, 1569–87 — Revolt of the Northern Earls (1569–70), Papal Bull (1570), Ridolfi (1571), Throckmorton (1583), and Babington…
+        </div>
+      </div>
+
+      
+
+      <!-- (b) Subject Knowledge Primer + Learning Objectives -->
+      <div class="two-col-grid" style="grid-template-columns: 1.28fr 1fr;">
+        <div class="crib-card">
+          <div class="card-heading">Subject Knowledge Primer (Non-Specialist Walk-In Briefing)</div>
+          <p class="body-copy">This lesson explores the persistent domestic Catholic threat to Elizabeth, tracking the evolution of plots from the Northern Earls to the Babington Plot, and the vital role of Walsingham's spy network.</p>
+        </div>
+        <div class="crib-card" style="background:#f8fafc;">
+          <div class="card-heading">Core Learning Objectives</div>
+          <ul class="crib-ul">
+            <li class="body-copy">Explain and evaluate The Revolt of the Northern Earls (NOV 1569–JAN 1570): Northern Earls, Durham Cathedral, 450 rebels executed.</li><li class="body-copy">Explain and evaluate Papal Bull &amp; The Ridolfi Plot (1570–1572): Regnans in Excelsis, Ridolfi Plot, Duke of Norfolk.</li><li class="body-copy">Explain and evaluate The Throckmorton Plot &amp; Bond of Association (1583–1584): Sir Francis Walsingham, Throckmorton Plot, Bond of…</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- (c) 2-Lesson Delivery Plan (2 x 50 mins) -->
+      <div class="two-col-grid" style="grid-template-columns: 1fr 1fr;">
+        <div class="crib-card" style="border-left-color:#1d4ed8;">
+          <div class="card-heading" style="color:#1e3a8a;">Lesson 1: Northern Earls, 1570 Papal Bull, Ridolfi &amp; Throckmorton (Stages…</div>
+          <div class="body-copy phase-row"><span class="time-chip">8m</span> <strong>Spaced Retrieval Starter:</strong> Complete the spaced Do Now retrieving Margaret Tudor’s lineage, Lord Darnley and the Earl of Bothwell, the Casket Letters…</div><div class="body-copy phase-row"><span class="time-chip">15m</span> <strong>Teacher Exposition:</strong> Chart how domestic Catholic resistance escalated from feudal northern rebellion to foreign-backed assassination plots…</div><div class="body-copy phase-row"><span class="time-chip">17m</span> <strong>Shared Reading &amp; Spine:</strong> Read Stages 1–3 and complete Workbook Verso Spine boxes 1–3, noting Durham Cathedral’s Catholic Mass, Elizabeth raising…</div><div class="body-copy phase-row"><span class="time-chip">10m</span> <strong>Hinge Check:</strong> Compare Source A (Earl of Northumberland) and Source B (Duke of Norfolk, executed 1572 after Ridolfi) with Source C…</div>
+        </div>
+        <div class="crib-card" style="border-left-color:#15803d;">
+          <div class="card-heading" style="color:#14532d;">Lesson 2: Babington Cipher Trap, Mary’s Execution &amp; Paper 2 B4 Writing…</div>
+          <div class="body-copy phase-row"><span class="time-chip">8m</span> <strong>Spaced Retrieval Starter:</strong> Spaced recall check on why the 1569 Northern Revolt failed, the impact of the 1570 Papal Bull on English Catholics’…</div><div class="body-copy phase-row"><span class="time-chip">17m</span> <strong>Narrative &amp; Sources:</strong> Read Stages 4–5 on Sir Francis Walsingham and cryptanalyst Thomas Phelippes intercepting Anthony Babington’s 1586…</div><div class="body-copy phase-row"><span class="time-chip">20m</span> <strong>Exam Writing:</strong> Timed Edexcel Paper 2 B4 practice: complete Q1(a)/(b) Describe features (Walsingham’s spy network; Revolt of the Northern…</div><div class="body-copy phase-row"><span class="time-chip">5m</span> <strong>Consolidate &amp; DIRT:</strong> Audit 12-mark essays using DIRT: ensure paragraphs connect Walsingham’s forensic cipher proof, the 1584–85 Bond/Act legal…</div>
+        </div>
+      </div>
+
+      <!-- (d) Misconceptions & Corrections + Hinge Question + SEND & Stretch -->
+      <div class="two-col-grid" style="grid-template-columns: 1.15fr 1fr;">
+        <div class="crib-card" style="border-left-color:#b91c1c;">
+          <div class="card-heading" style="color:#7f1d1d;">Common Pupil Misconceptions &amp; Historical Corrections</div>
+          
+      <div class="body-copy misc-item" style="">
+        <div><strong style="color:#991b1b;">Misconception 1:</strong> Claiming Pope Pius V's 1570 Papal Bull caused the November 1569 Revolt of the Northern Earls.</div>
+        <div><strong style="color:#166534;">Correction:</strong> Chronology is crucial in Paper 2: Northumberland and Westmorland rose in November 1569 and were defeated by January 1570 BEFORE news of Regnans…</div>
+      </div>
+      <div class="body-copy misc-item" style="border-top:1px dashed #cbd5e1; padding-top:0.9mm; margin-top:0.9mm;">
+        <div><strong style="color:#991b1b;">Misconception 2:</strong> Confusing the Ridolfi Plot (1571), Throckmorton Plot (1583), and Babington Plot (1586) into a single generic…</div>
+        <div><strong style="color:#166534;">Correction:</strong> Each plot had distinct features: Roberto Ridolfi (1571) was an Italian banker linking Norfolk with Alba's 10,000 troops (leading to Norfolk's…</div>
+      </div>
+      <div class="body-copy misc-item" style="border-top:1px dashed #cbd5e1; padding-top:0.9mm; margin-top:0.9mm;">
+        <div><strong style="color:#991b1b;">Misconception 3:</strong> Assuming English Catholics rose en masse against Elizabeth once excommunicated in 1570.</div>
+        <div><strong style="color:#166534;">Correction:</strong> Despite harsh £20 monthly recusancy fines (1581) and Jesuit missions, the vast majority of English Catholics remained politically loyal to…</div>
+      </div>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:2mm; justify-content:space-between;">
+          <div class="crib-card" style="border-left-color:#d97706; background:#fffbeb; flex:1;">
+            <div class="card-heading" style="color:#92400e;">Targeted Diagnostic Hinge Question</div>
+            <div class="body-copy" style="font-weight:700; color:#0f172a; margin-bottom:0.7mm;">&ldquo;Why did Elizabeth refuse to execute Mary Stuart after the 1569 Northern Revolt, the 1571 Ridolfi Plot, and the 1583 Throckmorton Plot, yet finally sign…&rdquo;</div>
+            <div class="body-copy" style="color:#334155;"><strong>Look For:</strong> High-attaining GCSE answers trace three cumulative shifts by 1586: first, Walsingham and cipher clerk Thomas Phelippes intercepted direct, deciphered written proof from Chartley beer barrels…</div>
+          </div>
+          <div class="crib-card" style="border-left-color:#6d28d9; background:#faf5ff; flex:1;">
+            <div class="card-heading" style="color:#4c1d95;">SEND Scaffold &amp; High-Ceiling Stretch</div>
+            <div class="body-copy" style="margin-bottom:0.7mm;"><strong style="color:#5b21b6;">SEND:</strong> Pair the Four Catholic Threats Concept Diagram with the Visual Story Sheet so learners sort 1569 (Earls), 1571 (Ridolfi), 1583 (Throckmorton), and 1586 (Babington) by date…</div>
+            <div class="body-copy"><strong style="color:#5b21b6;">Stretch:</strong> Did the 1570 Papal Bull of Excommunication actually strengthen or weaken the Catholic threat to Elizabeth between 1570 and 1587?</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- (e) Quick Classroom Answer Crib -->
+      <div class="crib-card answer-crib-box" style="border-left-color:#0f172a; background:#f8fafc;">
+        <div class="card-heading" style="color:#0f172a;">Quick Classroom Answer Crib (Do Now &bull; Sources A–E &bull; Workbook / Exam Key)</div>
+        <div class="body-copy" style="margin-bottom:0.8mm; padding-bottom:0.8mm; border-bottom:1px solid #e2e8f0;">
+          <strong style="color:var(--accent-dark);">Do Now Key:</strong>
+          Q1: Margaret Tudor, sister of Henry VIII • Q2: Lord Darnley (Henry Stuart) • Q3: The Earl of Bothwell • Q4: Her infant son, King James VI • Q5: Kirk o' Field
+        </div>
+        <div class="body-copy" style="margin-bottom:0.8mm; padding-bottom:0.8mm; border-bottom:1px solid #e2e8f0;">
+          <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src A:</strong> The Northern Earls sought to re-establish the Catholic faith, restore their traditional…</span> <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src B:</strong> The evidence is highly reliable because ciphered letters and decoded confessions from…</span> <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src C:</strong> Source C reveals that foreign Catholic powers were actively organizing armed landings on…</span> <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src D:</strong> Source D is useful because Babington's plot provided the definitive documentary evidence of…</span> <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src E:</strong> Source E proves that Walsingham allowed the correspondence to continue deliberately until…</span>
+        </div>
+        <div class="body-copy">
+          <strong style="color:#0f172a;">[2 marks + 2 marks + 12 marks]</strong>
+          <em>2. Explain why Mary, Queen of Scots was executed in 1587. [12 marks]</em>
+          &rarr; <strong>Core Model Argument:</strong> The immediate trigger for Mary, Queen of Scots’ execution in February 1587 was her proven personal treason in the 1586 Babington Plot. Unlike the earlier Ridolfi (1571) and Throckmorton (1583) plots where Elizabeth…
+        </div>
+      </div>
+    </div>
+
+    <div class="sow-foot">
+      <span>The History Revision Hub &bull; <span class="school-brand-target" data-department-name="The History Department">The History Department</span> &bull; Confidential Staff Guide</span>
+      <span class="sow-pill">Page 6 of 13</span>
+    </div>
+  </section>
+
+  <section class="page sow-page" data-page="7" data-page-kind="crib">
+    <div class="page-inner">
+      <div class="sow-head">
+        <span>3-MINUTE WALK-IN TEACHER CRIB SHEET &bull; ENQUIRY 6 OF 12</span>
+        <span>Early Elizabethan England, 1558–1588</span>
+      </div>
+
+      <!-- (a) Header Bar -->
+      <div class="enquiry-banner">
+        <div style="display:flex; justify-content:space-between; align-items:baseline; gap:2mm;">
+          <div class="enquiry-title-row">
+            <span class="enquiry-code-pill">KT 2.2</span>
+            <h2 class="enquiry-h2">Relations with Spain, 1569–1585</h2>
+          </div>
+        </div>
+        <div class="enquiry-eq-line">Central Enquiry: Why did rivalry with Spain slide toward open war between 1569 and 1585?</div>
+        <div class="body-copy" style="color:#334155; margin-top:0.6mm;">
+          <strong style="color:var(--accent-dark);">Curriculum / Spec Anchor:</strong> Key Topic 2.2: Relations with Spain, 1569–85 — political, religious, and commercial rivalry, the Dutch Revolt, New World privateering, Drake's circumnavigation…
+        </div>
+      </div>
+
+      
+
+      <!-- (b) Subject Knowledge Primer + Learning Objectives -->
+      <div class="two-col-grid" style="grid-template-columns: 1.28fr 1fr;">
+        <div class="crib-card">
+          <div class="card-heading">Subject Knowledge Primer (Non-Specialist Walk-In Briefing)</div>
+          <p class="body-copy">This lesson covers the escalation of the Anglo-Spanish conflict from privateering and proxy wars into the full-scale invasion attempt of the Spanish Armada. The pedagogical focus is on helping students weigh the different factors (tactics, Spanish mistakes, weather) that led to the Armada's defeat.</p>
+        </div>
+        <div class="crib-card" style="background:#f8fafc;">
+          <div class="card-heading">Core Learning Objectives</div>
+          <ul class="crib-ul">
+            <li class="body-copy">Explain and evaluate Political and Religious Rivalry with Spain (1570–1577): Spanish Netherlands, William of Orange, Sea Beggars.</li><li class="body-copy">Explain and evaluate Commercial Rivalry in the New World (1570–1579): privateers, Francis Drake, Spanish Fury.</li><li class="body-copy">Explain and evaluate Drake’s Circumnavigation (1577–1580): Golden Hind, Cacafuego, £400,000.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- (c) 2-Lesson Delivery Plan (2 x 50 mins) -->
+      <div class="two-col-grid" style="grid-template-columns: 1fr 1fr;">
+        <div class="crib-card" style="border-left-color:#1d4ed8;">
+          <div class="card-heading" style="color:#1e3a8a;">Lesson 1: Dutch Revolt, New World Privateering &amp; Circumnavigation (Stages…</div>
+          <div class="body-copy phase-row"><span class="time-chip">8m</span> <strong>Spaced Retrieval Starter:</strong> Complete the spaced Do Now retrieving Northumberland and Westmorland (1569), Pope Pius V’s Regnans in Excelsis (1570)…</div><div class="body-copy phase-row"><span class="time-chip">15m</span> <strong>Teacher Exposition:</strong> Unpack the three intertwined strands of Anglo-Spanish rivalry between 1569 and 1585: strategic/religious alarm over…</div><div class="body-copy phase-row"><span class="time-chip">17m</span> <strong>Shared Reading &amp; Spine:</strong> Read Stages 1–3 and complete Workbook Verso Spine boxes 1–3, tracking Elizabeth’s indirect financial aid (£100,000 /…</div><div class="body-copy phase-row"><span class="time-chip">10m</span> <strong>Hinge Check:</strong> Compare Source B (Sir Francis Drake) and Source C (Sir John Hawkins and San Juan de Ulúa) with Source D (Hondius’s…</div>
+        </div>
+        <div class="crib-card" style="border-left-color:#15803d;">
+          <div class="card-heading" style="color:#14532d;">Lesson 2: Deptford Knighting, Joinville &amp; Nonsuch (Stages 4–5 &amp; Paper 2 B4…</div>
+          <div class="body-copy phase-row"><span class="time-chip">8m</span> <strong>Spaced Retrieval Starter:</strong> Retrieve the 1576 Spanish Fury at Antwerp, the 1568 ambush at San Juan de Ulúa, and Drake’s capture of the Cacafuego…</div><div class="body-copy phase-row"><span class="time-chip">17m</span> <strong>Narrative &amp; Sources:</strong> Read Stages 4–5 on Philip II’s 1580 annexation of Portugal, Elizabeth publicly knighting Drake on the Golden Hind at…</div><div class="body-copy phase-row"><span class="time-chip">20m</span> <strong>Exam Writing:</strong> Timed Edexcel Paper 2 B4 practice: complete Q1(a)/(b) Describe features (Drake’s privateering; political and religious…</div><div class="body-copy phase-row"><span class="time-chip">5m</span> <strong>Consolidate &amp; DIRT:</strong> Review Q3 judgements with green-pen DIRT, checking that essays weigh New World treasure/trade clashes against Dutch…</div>
+        </div>
+      </div>
+
+      <!-- (d) Misconceptions & Corrections + Hinge Question + SEND & Stretch -->
+      <div class="two-col-grid" style="grid-template-columns: 1.15fr 1fr;">
+        <div class="crib-card" style="border-left-color:#b91c1c;">
+          <div class="card-heading" style="color:#7f1d1d;">Common Pupil Misconceptions &amp; Historical Corrections</div>
+          
+      <div class="body-copy misc-item" style="">
+        <div><strong style="color:#991b1b;">Misconception 1:</strong> Treating Anglo-Spanish hostility before 1585 as purely religious hatred between Protestantism and Catholicism.</div>
+        <div><strong style="color:#166534;">Correction:</strong> Had religion been Philip II's sole motive, he would have invaded in 1559 or 1570; instead, strategic security in the Low Countries (Antwerp…</div>
+      </div>
+      <div class="body-copy misc-item" style="border-top:1px dashed #cbd5e1; padding-top:0.9mm; margin-top:0.9mm;">
+        <div><strong style="color:#991b1b;">Misconception 2:</strong> Believing Elizabeth aimed to annex the Netherlands or overthrow Philip II's sovereignty there.</div>
+        <div><strong style="color:#166534;">Correction:</strong> Elizabeth disliked aiding rebels against an anointed king and repeatedly rejected Dutch offers of sovereignty; her consistent goal was restoring…</div>
+      </div>
+      <div class="body-copy misc-item" style="border-top:1px dashed #cbd5e1; padding-top:0.9mm; margin-top:0.9mm;">
+        <div><strong style="color:#991b1b;">Misconception 3:</strong> Thinking England and Spain were formally at war during Drake's 1577–80 circumnavigation and the capture of the…</div>
+        <div><strong style="color:#166534;">Correction:</strong> Drake raided Valparaíso and seized £140,000 from the Cacafuego during official peacetime under secret royal backing, which is why Elizabeth's…</div>
+      </div>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:2mm; justify-content:space-between;">
+          <div class="crib-card" style="border-left-color:#d97706; background:#fffbeb; flex:1;">
+            <div class="card-heading" style="color:#92400e;">Targeted Diagnostic Hinge Question</div>
+            <div class="body-copy" style="font-weight:700; color:#0f172a; margin-bottom:0.7mm;">&ldquo;Why was the December 1584 Franco-Spanish Treaty of Joinville—paired with William of Orange's assassination—the tipping point that forced Elizabeth into…&rdquo;</div>
+            <div class="body-copy" style="color:#334155;"><strong>Look For:</strong> Strong GCSE answers explain that throughout the 1570s Elizabeth preferred indirect, deniable pressure (hiring Casimir's mercenaries, backing the Duke of Alençon, and knighting Drake in 1581) to…</div>
+          </div>
+          <div class="crib-card" style="border-left-color:#6d28d9; background:#faf5ff; flex:1;">
+            <div class="card-heading" style="color:#4c1d95;">SEND Scaffold &amp; High-Ceiling Stretch</div>
+            <div class="body-copy" style="margin-bottom:0.7mm;"><strong style="color:#5b21b6;">SEND:</strong> Use the Visual Story Sheet and Studio Audio to colour-code or group the five stages on the Workbook Verso Spine into three clear GCSE factors: Netherlands Strategy, New World…</div>
+            <div class="body-copy"><strong style="color:#5b21b6;">Stretch:</strong> Assess whether Elizabeth's public knighting of Francis Drake in April 1581 was reckless provocation against a newly strengthened Philip II (who had just annexed Portugal in…</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- (e) Quick Classroom Answer Crib -->
+      <div class="crib-card answer-crib-box" style="border-left-color:#0f172a; background:#f8fafc;">
+        <div class="card-heading" style="color:#0f172a;">Quick Classroom Answer Crib (Do Now &bull; Sources A–E &bull; Workbook / Exam Key)</div>
+        <div class="body-copy" style="margin-bottom:0.8mm; padding-bottom:0.8mm; border-bottom:1px solid #e2e8f0;">
+          <strong style="color:var(--accent-dark);">Do Now Key:</strong>
+          Q1: Earl of Northumberland and Earl of Westmorland • Q2: Regnans in Excelsis • Q3: The Throckmorton Plot • Q4: The Babington Plot • Q5: Act for the Preservation of the Queen's Safety
+        </div>
+        <div class="body-copy" style="margin-bottom:0.8mm; padding-bottom:0.8mm; border-bottom:1px solid #e2e8f0;">
+          <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src A:</strong> Leicester believed that English security was inseparable from European Protestant survival…</span> <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src B:</strong> Source B shows that Elizabeth officially condoned and financially rewarded privateering…</span> <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src C:</strong> The betrayal at San Juan de Ulúa convinced English mariners that Spain would never permit…</span> <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src D:</strong> Source D is exceptionally useful because it illustrates how English sailors breached the…</span> <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src E:</strong> Parma wanted to alert Philip to the fatal operational flaw in the invasion plan: his barges…</span>
+        </div>
+        <div class="body-copy">
+          <strong style="color:#0f172a;">[2 marks + 2 marks + 16 marks]</strong>
+          <em>3. ‘Commercial rivalry was the main reason for rivalry between England and Spain in the years 1569–85.’ How far do you agree?</em>
+          &rarr; <strong>Core Model Argument:</strong> While commercial rivalry and Francis Drake’s audacious privateering provoked bitter Spanish anger throughout the 1570s, political and strategic rivalry over the Spanish Netherlands—intensified by religious hostility—was…
+        </div>
+      </div>
+    </div>
+
+    <div class="sow-foot">
+      <span>The History Revision Hub &bull; <span class="school-brand-target" data-department-name="The History Department">The History Department</span> &bull; Confidential Staff Guide</span>
+      <span class="sow-pill">Page 7 of 13</span>
+    </div>
+  </section>
+
+  <section class="page sow-page" data-page="8" data-page-kind="crib">
+    <div class="page-inner">
+      <div class="sow-head">
+        <span>3-MINUTE WALK-IN TEACHER CRIB SHEET &bull; ENQUIRY 7 OF 12</span>
+        <span>Early Elizabethan England, 1558–1588</span>
+      </div>
+
+      <!-- (a) Header Bar -->
+      <div class="enquiry-banner">
+        <div style="display:flex; justify-content:space-between; align-items:baseline; gap:2mm;">
+          <div class="enquiry-title-row">
+            <span class="enquiry-code-pill">KT 2.3</span>
+            <h2 class="enquiry-h2">The Outbreak of War with Spain, 1585–1588</h2>
+          </div>
+        </div>
+        <div class="enquiry-eq-line">Central Enquiry: How did war in the Netherlands and Drake’s raid on Cadiz trigger the Armada?</div>
+        <div class="body-copy" style="color:#334155; margin-top:0.6mm;">
+          <strong style="color:var(--accent-dark);">Curriculum / Spec Anchor:</strong> Key Topic 2.3: Outbreak of war with Spain, 1585–88 — Leicester's campaign in the Netherlands, Zutphen and Deventer, Drake's April 1587 raid on Cadiz ('singeing the…
+        </div>
+      </div>
+
+      
+
+      <!-- (b) Subject Knowledge Primer + Learning Objectives -->
+      <div class="two-col-grid" style="grid-template-columns: 1.28fr 1fr;">
+        <div class="crib-card">
+          <div class="card-heading">Subject Knowledge Primer (Non-Specialist Walk-In Briefing)</div>
+          <p class="body-copy">This lesson details the transition from cold war to open conflict with Spain, focusing on the deterioration of relations and English direct involvement in the Netherlands via the Treaty of Nonsuch.</p>
+        </div>
+        <div class="crib-card" style="background:#f8fafc;">
+          <div class="card-heading">Core Learning Objectives</div>
+          <ul class="crib-ul">
+            <li class="body-copy">Explain and evaluate Dudley’s Campaign in the Netherlands (DEC 1585–1586): Robert Dudley, Governor-General, Duke of Parma.</li><li class="body-copy">Explain and evaluate Treachery at Deventer and Zutphen (1586–JAN 1587): Zutphen, Rowland Yorke, Deventer.</li><li class="body-copy">Explain and evaluate Drake’s Raid on Cadiz (1587) (APRIL 1587): Cadiz, ‘Singeing the King of Spain’s Beard’, 30 Spanish ships.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- (c) 2-Lesson Delivery Plan (2 x 50 mins) -->
+      <div class="two-col-grid" style="grid-template-columns: 1fr 1fr;">
+        <div class="crib-card" style="border-left-color:#1d4ed8;">
+          <div class="card-heading" style="color:#1e3a8a;">Lesson 1: Leicester in the Netherlands, Deventer &amp; Raid on Cadiz (Stages 1–3)…</div>
+          <div class="body-copy phase-row"><span class="time-chip">8m</span> <strong>Spaced Retrieval Starter:</strong> Complete the spaced Do Now retrieving Philip II’s rule, the 1568 clash at San Juan de Ulúa, Drake’s 1577–80…</div><div class="body-copy phase-row"><span class="time-chip">15m</span> <strong>Teacher Exposition:</strong> Explain why English intervention in the Netherlands stumbled between 1585 and 1587 while Drake’s naval strike bought…</div><div class="body-copy phase-row"><span class="time-chip">17m</span> <strong>Shared Reading &amp; Spine:</strong> Read Stages 1–3 and complete Workbook Verso Spine boxes 1–3, noting how burning ~30 warships at Cadiz (“Singeing the King…</div><div class="body-copy phase-row"><span class="time-chip">10m</span> <strong>Hinge Check:</strong> Compare Source B (1585 Treaty of Nonsuch terms) with Source C (Elizabeth’s furious 10 February 1586 letter read before…</div>
+        </div>
+        <div class="crib-card" style="border-left-color:#15803d;">
+          <div class="card-heading" style="color:#14532d;">Lesson 2: Burned Barrel Staves, Armada Flaws &amp; Paper 2 B4 Essay (Stages 4–5)…</div>
+          <div class="body-copy phase-row"><span class="time-chip">8m</span> <strong>Spaced Retrieval Starter:</strong> Spaced recall check on Flushing and Brielle, why Dudley’s Governor-General title enraged Elizabeth, betrayals at Deventer…</div><div class="body-copy phase-row"><span class="time-chip">17m</span> <strong>Narrative &amp; Sources:</strong> Read Stages 4–5 on Drake burning seasoned oak barrel staves off Cape St Vincent (rotting 1588 provisions in green wood)…</div><div class="body-copy phase-row"><span class="time-chip">20m</span> <strong>Exam Writing:</strong> Timed Edexcel Paper 2 B4 practice: complete Q1(a)/(b) Describe features (Drake’s 1587 raid on Cadiz; English direct…</div><div class="body-copy phase-row"><span class="time-chip">5m</span> <strong>Consolidate &amp; DIRT:</strong> DIRT check on Q3: ensure pupils evaluate Dudley’s Dutch campaign alongside Nonsuch itself, Drake’s Cadiz offensive, Mary…</div>
+        </div>
+      </div>
+
+      <!-- (d) Misconceptions & Corrections + Hinge Question + SEND & Stretch -->
+      <div class="two-col-grid" style="grid-template-columns: 1.15fr 1fr;">
+        <div class="crib-card" style="border-left-color:#b91c1c;">
+          <div class="card-heading" style="color:#7f1d1d;">Common Pupil Misconceptions &amp; Historical Corrections</div>
+          
+      <div class="body-copy misc-item" style="">
+        <div><strong style="color:#991b1b;">Misconception 1:</strong> Assuming Robert Dudley, Earl of Leicester, won decisive battlefield victories in the Netherlands between 1585 and…</div>
+        <div><strong style="color:#166534;">Correction:</strong> Leicester's expedition was chronically underfunded by Elizabeth, divided by his unauthorised acceptance of 'Governor-General' in January 1586…</div>
+      </div>
+      <div class="body-copy misc-item" style="border-top:1px dashed #cbd5e1; padding-top:0.9mm; margin-top:0.9mm;">
+        <div><strong style="color:#991b1b;">Misconception 2:</strong> Thinking Drake's April 1587 raid on Cadiz was part of the August 1588 Channel battles against the Armada.</div>
+        <div><strong style="color:#166534;">Correction:</strong> GCSE Exam Tip: Keep April 1587 ('singeing the King of Spain's beard' at Cadiz and Cape St Vincent) strictly separate from July–August 1588…</div>
+      </div>
+      <div class="body-copy misc-item" style="border-top:1px dashed #cbd5e1; padding-top:0.9mm; margin-top:0.9mm;">
+        <div><strong style="color:#991b1b;">Misconception 3:</strong> Believing the 130 ships of the Spanish Armada carried the main land army intended to conquer London on board from…</div>
+        <div><strong style="color:#166534;">Correction:</strong> Philip II's strategy required the Duke of Medina Sidonia's fleet to sail up the Channel and escort the Duke of Parma's 27,000 veteran troops…</div>
+      </div>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:2mm; justify-content:space-between;">
+          <div class="crib-card" style="border-left-color:#d97706; background:#fffbeb; flex:1;">
+            <div class="card-heading" style="color:#92400e;">Targeted Diagnostic Hinge Question</div>
+            <div class="body-copy" style="font-weight:700; color:#0f172a; margin-bottom:0.7mm;">&ldquo;Why did Drake's April 1587 raid on Cadiz and Cape St Vincent damage the Spanish Armada far beyond the twelve months' delay it caused?&rdquo;</div>
+            <div class="body-copy" style="color:#334155;"><strong>Look For:</strong> Look beyond the headline destruction of ~30 ships in Cadiz harbour: strong GCSE answers highlight that off Cape St Vincent Drake burned Spain's stockpiles of seasoned oak barrel staves and…</div>
+          </div>
+          <div class="crib-card" style="border-left-color:#6d28d9; background:#faf5ff; flex:1;">
+            <div class="card-heading" style="color:#4c1d95;">SEND Scaffold &amp; High-Ceiling Stretch</div>
+            <div class="body-copy" style="margin-bottom:0.7mm;"><strong style="color:#5b21b6;">SEND:</strong> Walk through the Visual Story Sheet with Studio Audio, emphasizing the cause-and-effect link between Stage 3 (Cadiz harbour) and Stage 4 (burned oak barrel staves -&gt; rotten…</div>
+            <div class="body-copy"><strong style="color:#5b21b6;">Stretch:</strong> To what extent were the failures of Leicester's Dutch campaign (1585–87) the fault of Leicester's leadership rather than Elizabeth's refusal to fund a decisive war against…</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- (e) Quick Classroom Answer Crib -->
+      <div class="crib-card answer-crib-box" style="border-left-color:#0f172a; background:#f8fafc;">
+        <div class="card-heading" style="color:#0f172a;">Quick Classroom Answer Crib (Do Now &bull; Sources A–E &bull; Workbook / Exam Key)</div>
+        <div class="body-copy" style="margin-bottom:0.8mm; padding-bottom:0.8mm; border-bottom:1px solid #e2e8f0;">
+          <strong style="color:var(--accent-dark);">Do Now Key:</strong>
+          Q1: King Philip II • Q2: San Juan de Ulúa • Q3: Francis Drake • Q4: The Golden Hind • Q5: Brill
+        </div>
+        <div class="body-copy" style="margin-bottom:0.8mm; padding-bottom:0.8mm; border-bottom:1px solid #e2e8f0;">
+          <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src A:</strong> Source A indicates that Drake's bold pre-emptive strike devastated Spanish naval logistics…</span> <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src B:</strong> Source B shows that Elizabeth sought to block total Spanish conquest of the Channel coast…</span> <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src C:</strong> Elizabeth wanted to distance the English Crown publicly from deposing King Philip II…</span> <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src D:</strong> Source D confirms that burning over thirty supply ships and vital wooden pipe-staves…</span> <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src E:</strong> Source E highlights that the invasion was completely dependent on joining Parma's 27,000…</span>
+        </div>
+        <div class="body-copy">
+          <strong style="color:#0f172a;">[2 marks + 2 marks + 16 marks]</strong>
+          <em>3. ‘The actions of Robert Dudley were the main reason for deteriorating relations with Spain in the years 1585–88.’ How far do…</em>
+          &rarr; <strong>Core Model Argument:</strong> Robert Dudley’s provocative actions in the Netherlands certainly deepened Philip II’s determination to defeat England, yet they were part of a wider strategic escalation in which Elizabeth’s Treaty of Nonsuch (1585)…
+        </div>
+      </div>
+    </div>
+
+    <div class="sow-foot">
+      <span>The History Revision Hub &bull; <span class="school-brand-target" data-department-name="The History Department">The History Department</span> &bull; Confidential Staff Guide</span>
+      <span class="sow-pill">Page 8 of 13</span>
+    </div>
+  </section>
+
+  <section class="page sow-page" data-page="9" data-page-kind="crib">
+    <div class="page-inner">
+      <div class="sow-head">
+        <span>3-MINUTE WALK-IN TEACHER CRIB SHEET &bull; ENQUIRY 8 OF 12</span>
+        <span>Early Elizabethan England, 1558–1588</span>
+      </div>
+
+      <!-- (a) Header Bar -->
+      <div class="enquiry-banner">
+        <div style="display:flex; justify-content:space-between; align-items:baseline; gap:2mm;">
+          <div class="enquiry-title-row">
+            <span class="enquiry-code-pill">KT 2.4</span>
+            <h2 class="enquiry-h2">The Spanish Armada: Strategy, Conflict &amp; Defeat, 1588</h2>
+          </div>
+        </div>
+        <div class="enquiry-eq-line">Central Enquiry: Why did Philip II’s Spanish Armada fail to conquer England in 1588?</div>
+        <div class="body-copy" style="color:#334155; margin-top:0.6mm;">
+          <strong style="color:var(--accent-dark);">Curriculum / Spec Anchor:</strong> Key Topic 2.4: The Spanish Armada, 1588 — Spanish invasion plan, Channel battles, Calais fireships, Battle of Gravelines (8 August 1588), tactical leadership…
+        </div>
+      </div>
+
+      
+
+      <!-- (b) Subject Knowledge Primer + Learning Objectives -->
+      <div class="two-col-grid" style="grid-template-columns: 1.28fr 1fr;">
+        <div class="crib-card">
+          <div class="card-heading">Subject Knowledge Primer (Non-Specialist Walk-In Briefing)</div>
+          <p class="body-copy">This lesson covers the culmination of Anglo-Spanish tensions: the Armada. The focus is on evaluating the overlapping motivations for the invasion, the logistical flaws in the Spanish plan, and the combination of English tactics and weather that caused its defeat.</p>
+        </div>
+        <div class="crib-card" style="background:#f8fafc;">
+          <div class="card-heading">Core Learning Objectives</div>
+          <ul class="crib-ul">
+            <li class="body-copy">Explain and evaluate Channel Battles: Plymouth to Isle of Wight (29 JUL–4 AUG 1588): crescent formation, Lord Howard of Effingham…</li><li class="body-copy">Explain and evaluate Calais Roads &amp; The Fireships (7–8 AUG 1588): Calais Roads, fireships, cut anchor cables.</li><li class="body-copy">Explain and evaluate The Battle of Gravelines (8 AUG 1588): Gravelines, race-built galleons, culverins.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- (c) 2-Lesson Delivery Plan (2 x 50 mins) -->
+      <div class="two-col-grid" style="grid-template-columns: 1fr 1fr;">
+        <div class="crib-card" style="border-left-color:#1d4ed8;">
+          <div class="card-heading" style="color:#1e3a8a;">Lesson 1: Channel Crescent, Calais Fireships &amp; Battle of Gravelines (Stages…</div>
+          <div class="body-copy phase-row"><span class="time-chip">8m</span> <strong>Spaced Retrieval Starter:</strong> Complete the spaced Do Now retrieving the Earl of Leicester’s 1585 Dutch expedition, his Governor-General title, Drake’s…</div><div class="body-copy phase-row"><span class="time-chip">15m</span> <strong>Teacher Exposition:</strong> Map the tactical turning points of July–August 1588: Medina Sidonia’s disciplined 130-ship crescent sailing past Plymouth…</div><div class="body-copy phase-row"><span class="time-chip">17m</span> <strong>Shared Reading &amp; Spine:</strong> Read Stages 1–3 and complete Workbook Verso Spine boxes 1–3, contrasting John Hawkins’s fast race-built galleons firing…</div><div class="body-copy phase-row"><span class="time-chip">10m</span> <strong>Hinge Check:</strong> Scrutinise Source A (fireships and Gravelines engagement) alongside Source D (Medina Sidonia’s post-action report to…</div>
+        </div>
+        <div class="crib-card" style="border-left-color:#15803d;">
+          <div class="card-heading" style="color:#14532d;">Lesson 2: Gales, Tilbury Prestige &amp; Paper 2 B4 Writing (Stages 4–5) (50 mins)</div>
+          <div class="body-copy phase-row"><span class="time-chip">8m</span> <strong>Spaced Retrieval Starter:</strong> Retrieve why the Spanish crescent held firm up the Channel, how Calais fireships broke formation, and why English naval…</div><div class="body-copy phase-row"><span class="time-chip">17m</span> <strong>Narrative &amp; Sources:</strong> Read Stages 4–5 on the south-westerly ‘Protestant Wind’ driving battered ships lacking anchors and maps around Scotland…</div><div class="body-copy phase-row"><span class="time-chip">20m</span> <strong>Exam Writing:</strong> Timed Edexcel Paper 2 B4 practice: complete Q1(a)/(b) Describe features (Spanish invasion plans; key events of the Armada…</div><div class="body-copy phase-row"><span class="time-chip">5m</span> <strong>Consolidate &amp; DIRT:</strong> Use exemplar DIRT to verify causal synthesis across three factors: English ship design and tactics…</div>
+        </div>
+      </div>
+
+      <!-- (d) Misconceptions & Corrections + Hinge Question + SEND & Stretch -->
+      <div class="two-col-grid" style="grid-template-columns: 1.15fr 1fr;">
+        <div class="crib-card" style="border-left-color:#b91c1c;">
+          <div class="card-heading" style="color:#7f1d1d;">Common Pupil Misconceptions &amp; Historical Corrections</div>
+          
+      <div class="body-copy misc-item" style="">
+        <div><strong style="color:#991b1b;">Misconception 1:</strong> Crediting the August–September storms ('the Protestant Wind') as the sole reason the Spanish Armada failed to…</div>
+        <div><strong style="color:#166534;">Correction:</strong> Gales wrecked dozens of Spanish ships off Scotland and Ireland during the retreat home, crippling Spanish fleet losses, but English fireships at…</div>
+      </div>
+      <div class="body-copy misc-item" style="border-top:1px dashed #cbd5e1; padding-top:0.9mm; margin-top:0.9mm;">
+        <div><strong style="color:#991b1b;">Misconception 2:</strong> Naming Sir Francis Drake as overall Commander-in-Chief of the English fleet in 1588.</div>
+        <div><strong style="color:#166534;">Correction:</strong> Lord Charles Howard of Effingham (Lord High Admiral) commanded the English fleet overall, with Sir Francis Drake serving as his Vice-Admiral and…</div>
+      </div>
+      <div class="body-copy misc-item" style="border-top:1px dashed #cbd5e1; padding-top:0.9mm; margin-top:0.9mm;">
+        <div><strong style="color:#991b1b;">Misconception 3:</strong> Thinking defeat of the Armada in August 1588 ended the Anglo-Spanish War.</div>
+        <div><strong style="color:#166534;">Correction:</strong> While 1588 safeguarded English independence, boosted Protestant national pride ('Flavit Jehovah et dissipati sunt'), and secured Dutch survival…</div>
+      </div>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:2mm; justify-content:space-between;">
+          <div class="crib-card" style="border-left-color:#d97706; background:#fffbeb; flex:1;">
+            <div class="card-heading" style="color:#92400e;">Targeted Diagnostic Hinge Question</div>
+            <div class="body-copy" style="font-weight:700; color:#0f172a; margin-bottom:0.7mm;">&ldquo;Had the 'Protestant Wind' never blown after 8 August 1588, could Philip II's Armada plan still have succeeded?&rdquo;</div>
+            <div class="body-copy" style="color:#334155;"><strong>Look For:</strong> Strong GCSE answers explain why the invasion plan had already failed strategically before the Atlantic gales struck: Parma controlled no deep-water Dutch port, Dutch flyboats blockaded his…</div>
+          </div>
+          <div class="crib-card" style="border-left-color:#6d28d9; background:#faf5ff; flex:1;">
+            <div class="card-heading" style="color:#4c1d95;">SEND Scaffold &amp; High-Ceiling Stretch</div>
+            <div class="body-copy" style="margin-bottom:0.7mm;"><strong style="color:#5b21b6;">SEND:</strong> Pair the August–September 1588 Concept Diagram with the Visual Story Sheet so learners visually separate the three decisive factors for a 16-mark essay: Flawed Spanish…</div>
+            <div class="body-copy"><strong style="color:#5b21b6;">Stretch:</strong> Evaluate Philip II's personal responsibility for the defeat of 1588: was appointing the inexperienced Duke of Medina Sidonia less damaging than Philip's refusal to heed…</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- (e) Quick Classroom Answer Crib -->
+      <div class="crib-card answer-crib-box" style="border-left-color:#0f172a; background:#f8fafc;">
+        <div class="card-heading" style="color:#0f172a;">Quick Classroom Answer Crib (Do Now &bull; Sources A–E &bull; Workbook / Exam Key)</div>
+        <div class="body-copy" style="margin-bottom:0.8mm; padding-bottom:0.8mm; border-bottom:1px solid #e2e8f0;">
+          <strong style="color:var(--accent-dark);">Do Now Key:</strong>
+          Q1: Robert Dudley, Earl of Leicester • Q2: Governor-General of the Low Countries • Q3: Cádiz • Q4: The Duke of Parma • Q5: 130 ships
+        </div>
+        <div class="body-copy" style="margin-bottom:0.8mm; padding-bottom:0.8mm; border-bottom:1px solid #e2e8f0;">
+          <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src A:</strong> Source A is very useful because it depicts English race-built galleons exploiting superior…</span> <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src B:</strong> The artist intended to portray the Armada's destruction as providential divine judgement…</span> <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src C:</strong> Source C shows that the long, hazardous voyage around Scotland and Ireland exposed damaged…</span> <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src D:</strong> The report is highly reliable regarding Spanish logistical collapse, ruined provisions, and…</span> <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src E:</strong> Source E corroborates that the victory elevated Elizabeth into a legendary Protestant…</span>
+        </div>
+        <div class="body-copy">
+          <strong style="color:#0f172a;">[2 marks + 2 marks + 12 marks]</strong>
+          <em>2. Explain why the English achieved victory over the Spanish Armada in 1588. [12 marks]</em>
+          &rarr; <strong>Core Model Argument:</strong> Fatal weaknesses in Philip II’s Spanish invasion plans laid the foundation for English victory before a single shot was fired in the Channel.
+        </div>
+      </div>
+    </div>
+
+    <div class="sow-foot">
+      <span>The History Revision Hub &bull; <span class="school-brand-target" data-department-name="The History Department">The History Department</span> &bull; Confidential Staff Guide</span>
+      <span class="sow-pill">Page 9 of 13</span>
+    </div>
+  </section>
+
+  <section class="page sow-page" data-page="10" data-page-kind="crib">
+    <div class="page-inner">
+      <div class="sow-head">
+        <span>3-MINUTE WALK-IN TEACHER CRIB SHEET &bull; ENQUIRY 9 OF 12</span>
+        <span>Early Elizabethan England, 1558–1588</span>
+      </div>
+
+      <!-- (a) Header Bar -->
+      <div class="enquiry-banner">
+        <div style="display:flex; justify-content:space-between; align-items:baseline; gap:2mm;">
+          <div class="enquiry-title-row">
+            <span class="enquiry-code-pill">KT 3.1</span>
+            <h2 class="enquiry-h2">Education and Leisure in Elizabethan England, 1558–1588</h2>
+          </div>
+        </div>
+        <div class="enquiry-eq-line">Central Enquiry: How did educational expansion and popular theatrical culture reflect both social change and strict Tudor hierarchy?</div>
+        <div class="body-copy" style="color:#334155; margin-top:0.6mm;">
+          <strong style="color:var(--accent-dark);">Curriculum / Spec Anchor:</strong> Key Topic 3.1: Education and leisure in Elizabethan England, 1558–88 — petty, grammar, and university education, class and gender disparities in literacy, sports…
+        </div>
+      </div>
+
+      
+
+      <!-- (b) Subject Knowledge Primer + Learning Objectives -->
+      <div class="two-col-grid" style="grid-template-columns: 1.28fr 1fr;">
+        <div class="crib-card">
+          <div class="card-heading">Subject Knowledge Primer (Non-Specialist Walk-In Briefing)</div>
+          <p class="body-copy">This lesson explores the strict social hierarchy of Elizabethan England through the lens of education and leisure, culminating in the cultural revolution of the theatre.</p>
+        </div>
+        <div class="crib-card" style="background:#f8fafc;">
+          <div class="card-heading">Core Learning Objectives</div>
+          <ul class="crib-ul">
+            <li class="body-copy">Explain and evaluate Attitudes to Education &amp; Literacy (1558–1580s): literacy, petty schools, Great Chain of Being.</li><li class="body-copy">Explain and evaluate Grammar Schools (1558–1580s): grammar schools, classical curriculum, Latin.</li><li class="body-copy">Explain and evaluate Universities &amp; Noble Education (1558–1580s): private tutors, Oxford and Cambridge, Inns of Court.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- (c) 2-Lesson Delivery Plan (2 x 50 mins) -->
+      <div class="two-col-grid" style="grid-template-columns: 1fr 1fr;">
+        <div class="crib-card" style="border-left-color:#1d4ed8;">
+          <div class="card-heading" style="color:#1e3a8a;">Lesson 1: Humanist Literacy, Grammar Schools &amp; Noble Education (Stages 1–3)…</div>
+          <div class="body-copy phase-row"><span class="time-chip">8m</span> <strong>Spaced Retrieval Starter:</strong> Complete the spaced Do Now retrieving the 130-ship Spanish Armada, Medina Sidonia, Hawkins’s race-built warships, Calais…</div><div class="body-copy phase-row"><span class="time-chip">15m</span> <strong>Teacher Exposition:</strong> Shift to Elizabethan society (KT3), explaining how Renaissance humanism and Protestantism spurred educational growth…</div><div class="body-copy phase-row"><span class="time-chip">17m</span> <strong>Shared Reading &amp; Spine:</strong> Read Stages 1–3 and complete Workbook Verso Spine boxes 1–3, tracking male literacy rising to ~30% (female ~10%) while…</div><div class="body-copy phase-row"><span class="time-chip">10m</span> <strong>Hinge Check:</strong> Compare Source A (Elizabethan wooden hornbook) with Source B (Roger Ascham’s 1570 The Scholemaster) and Source C (Oxford…</div>
+        </div>
+        <div class="crib-card" style="border-left-color:#15803d;">
+          <div class="card-heading" style="color:#14532d;">Lesson 2: Class-Divided Pastimes, London Playhouses &amp; Paper 2 B4 Essay…</div>
+          <div class="body-copy phase-row"><span class="time-chip">8m</span> <strong>Spaced Retrieval Starter:</strong> Spaced recall check on petty vs dame schools, the Latin curriculum of Elizabethan grammar schools, noble home tutoring…</div><div class="body-copy phase-row"><span class="time-chip">17m</span> <strong>Narrative &amp; Sources:</strong> Read Stages 4–5 on rank-stratified leisure (noble hunting, hawking, real tennis vs parish mob football, cock-fighting…</div><div class="body-copy phase-row"><span class="time-chip">20m</span> <strong>Exam Writing:</strong> Timed Edexcel Paper 2 B4 practice: complete Q1(a)/(b) Describe features (sport and pastimes; education in the home [4m])…</div><div class="body-copy phase-row"><span class="time-chip">5m</span> <strong>Consolidate &amp; DIRT:</strong> Audit Q3 essays via DIRT: reward explicit comparison between socially shared theatre audiences (supported by royal…</div>
+        </div>
+      </div>
+
+      <!-- (d) Misconceptions & Corrections + Hinge Question + SEND & Stretch -->
+      <div class="two-col-grid" style="grid-template-columns: 1.15fr 1fr;">
+        <div class="crib-card" style="border-left-color:#b91c1c;">
+          <div class="card-heading" style="color:#7f1d1d;">Common Pupil Misconceptions &amp; Historical Corrections</div>
+          
+      <div class="body-copy misc-item" style="">
+        <div><strong style="color:#991b1b;">Misconception 1:</strong> Assuming the founding of 72 new grammar schools in the 1560s–70s created mass literacy across working-class boys…</div>
+        <div><strong style="color:#166534;">Correction:</strong> Grammar schools primarily educated sons of gentry, merchants, professionals, and prosperous yeomen (with limited scholarships for poor boys)…</div>
+      </div>
+      <div class="body-copy misc-item" style="border-top:1px dashed #cbd5e1; padding-top:0.9mm; margin-top:0.9mm;">
+        <div><strong style="color:#991b1b;">Misconception 2:</strong> Thinking Elizabethan sports and theatre lacked cross-class appeal altogether.</div>
+        <div><strong style="color:#166534;">Correction:</strong> While hunting deer, hawking, fencing, and real tennis were exclusive to the nobility and gentry (and mob football to the lower orders), blood…</div>
+      </div>
+      <div class="body-copy misc-item" style="border-top:1px dashed #cbd5e1; padding-top:0.9mm; margin-top:0.9mm;">
+        <div><strong style="color:#991b1b;">Misconception 3:</strong> Assuming everyone welcomed Shakespearean and Marlovian playhouses.</div>
+        <div><strong style="color:#166534;">Correction:</strong> Puritan magistrates and preachers fiercely opposed theatres as dens of idleness, Sabbath-breaking, pickpockets, and bubonic plague infection…</div>
+      </div>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:2mm; justify-content:space-between;">
+          <div class="crib-card" style="border-left-color:#d97706; background:#fffbeb; flex:1;">
+            <div class="card-heading" style="color:#92400e;">Targeted Diagnostic Hinge Question</div>
+            <div class="body-copy" style="font-weight:700; color:#0f172a; margin-bottom:0.7mm;">&ldquo;Did the rapid growth of Elizabethan grammar schools and London playhouses break down Tudor social hierarchy or visually reinforce it?&rdquo;</div>
+            <div class="body-copy" style="color:#334155;"><strong>Look For:</strong> Strong GCSE answers argue that both institutions expanded cultural participation while strictly preserving rank: literacy rose to ~30% of men and ~10% of women, yet labouring children stayed in…</div>
+          </div>
+          <div class="crib-card" style="border-left-color:#6d28d9; background:#faf5ff; flex:1;">
+            <div class="card-heading" style="color:#4c1d95;">SEND Scaffold &amp; High-Ceiling Stretch</div>
+            <div class="body-copy" style="margin-bottom:0.7mm;"><strong style="color:#5b21b6;">SEND:</strong> Project the Elizabethan Leisure by Social Rank Concept Diagram alongside the Visual Story Sheet so learners contrast elite vs working-majority schooling and pastimes at a…</div>
+            <div class="body-copy"><strong style="color:#5b21b6;">Stretch:</strong> Assess how far the flowering of secular Elizabethan drama after 1572 was an unintended consequence of government vagrancy legislation and royal patronage (such as forming the…</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- (e) Quick Classroom Answer Crib -->
+      <div class="crib-card answer-crib-box" style="border-left-color:#0f172a; background:#f8fafc;">
+        <div class="card-heading" style="color:#0f172a;">Quick Classroom Answer Crib (Do Now &bull; Sources A–E &bull; Workbook / Exam Key)</div>
+        <div class="body-copy" style="margin-bottom:0.8mm; padding-bottom:0.8mm; border-bottom:1px solid #e2e8f0;">
+          <strong style="color:var(--accent-dark);">Do Now Key:</strong>
+          Q1: 130 ships • Q2: The Duke of Medina Sidonia • Q3: Race-built warships • Q4: Off the coast of Flanders (Calais/Dunkirk) • Q5: The 'Protestant Wind'
+        </div>
+        <div class="body-copy" style="margin-bottom:0.8mm; padding-bottom:0.8mm; border-bottom:1px solid #e2e8f0;">
+          <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src A:</strong> Source A demonstrates that early literacy was inextricably linked with religious…</span> <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src B:</strong> Ascham aimed to reform grammar school education by arguing against routine corporal…</span> <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src C:</strong> Source C shows that while traditional humanities like logic and Latin rhetoric remained…</span> <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src D:</strong> Source D depicts a chained bear fighting ferocious mastiffs in an arena packed with…</span> <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src E:</strong> Source E is the only surviving contemporary drawing of an Elizabethan theatre interior…</span>
+        </div>
+        <div class="body-copy">
+          <strong style="color:#0f172a;">[2 marks + 2 marks + 16 marks]</strong>
+          <em>3. ‘The growth of the theatre was the most significant feature of sport, pastimes and the theatre in early Elizabethan England.’…</em>
+          &rarr; <strong>Core Model Argument:</strong> The dramatic rise of permanent commercial playhouses after 1576 was indeed the most innovative and culturally significant feature of Elizabethan leisure, even though traditional class-divided sports and blood sports…
+        </div>
+      </div>
+    </div>
+
+    <div class="sow-foot">
+      <span>The History Revision Hub &bull; <span class="school-brand-target" data-department-name="The History Department">The History Department</span> &bull; Confidential Staff Guide</span>
+      <span class="sow-pill">Page 10 of 13</span>
+    </div>
+  </section>
+
+  <section class="page sow-page" data-page="11" data-page-kind="crib">
+    <div class="page-inner">
+      <div class="sow-head">
+        <span>3-MINUTE WALK-IN TEACHER CRIB SHEET &bull; ENQUIRY 10 OF 12</span>
+        <span>Early Elizabethan England, 1558–1588</span>
+      </div>
+
+      <!-- (a) Header Bar -->
+      <div class="enquiry-banner">
+        <div style="display:flex; justify-content:space-between; align-items:baseline; gap:2mm;">
+          <div class="enquiry-title-row">
+            <span class="enquiry-code-pill">KT 3.2</span>
+            <h2 class="enquiry-h2">The Problem of the Poor and Vagrancy, 1558–1588</h2>
+          </div>
+        </div>
+        <div class="enquiry-eq-line">Central Enquiry: Why did poverty rise in Elizabethan England, and how did laws toward the poor change?</div>
+        <div class="body-copy" style="color:#334155; margin-top:0.6mm;">
+          <strong style="color:var(--accent-dark);">Curriculum / Spec Anchor:</strong> Key Topic 3.2: The problem of the poor, 1558–88 — population rise, price inflation, sheep enclosure, cloth-trade slumps, deserving vs idle poor, and the 1563, 1572…
+        </div>
+      </div>
+
+      
+
+      <!-- (b) Subject Knowledge Primer + Learning Objectives -->
+      <div class="two-col-grid" style="grid-template-columns: 1.28fr 1fr;">
+        <div class="crib-card">
+          <div class="card-heading">Subject Knowledge Primer (Non-Specialist Walk-In Briefing)</div>
+          <p class="body-copy">This lesson covers the economic crisis of Elizabethan England, focusing on population growth, inflation, enclosure, and the Tudor categorization of the poor. It transitions from early brutal punishments to the foundational steps of a national welfare state.</p>
+        </div>
+        <div class="crib-card" style="background:#f8fafc;">
+          <div class="card-heading">Core Learning Objectives</div>
+          <ul class="crib-ul">
+            <li class="body-copy">Explain and evaluate Population Growth &amp; Rising Prices (1558–1580s): 3 million to 4 million, bad harvests, price inflation.</li><li class="body-copy">Explain and evaluate Changes in Farming: Enclosure &amp; Sheep (1558–1580s): 80% of exports, enclosure, sheep.</li><li class="body-copy">Explain and evaluate Changing Attitudes to the Poor (1560s–1570s): impotent poor, sturdy beggars, Thomas Harman.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- (c) 2-Lesson Delivery Plan (2 x 50 mins) -->
+      <div class="two-col-grid" style="grid-template-columns: 1fr 1fr;">
+        <div class="crib-card" style="border-left-color:#1d4ed8;">
+          <div class="card-heading" style="color:#1e3a8a;">Lesson 1: Population Surge, Sheep Enclosure &amp; Categories of Poor (Stages 1–3)…</div>
+          <div class="body-copy phase-row"><span class="time-chip">8m</span> <strong>Spaced Retrieval Starter:</strong> Complete the spaced Do Now retrieving Tudor hornbooks, fee-paying grammar schools, Roger Ascham’s The Scholemaster, and…</div><div class="body-copy phase-row"><span class="time-chip">15m</span> <strong>Teacher Exposition:</strong> Trace the structural causes of Elizabethan poverty: England’s ~35% population surge (3 million to 4.1 million…</div><div class="body-copy phase-row"><span class="time-chip">17m</span> <strong>Shared Reading &amp; Spine:</strong> Read Stages 1–3 and complete Workbook Verso Spine boxes 1–3, checking why cloth accounting for over 80% of English…</div><div class="body-copy phase-row"><span class="time-chip">10m</span> <strong>Hinge Check:</strong> Compare Source A (Cecil’s memoranda on bad harvests and grain prices) with Source B (1560s enclosure complaints) and…</div>
+        </div>
+        <div class="crib-card" style="border-left-color:#15803d;">
+          <div class="card-heading" style="color:#14532d;">Lesson 2: 1572 Vagabonds Act, 1576 Poor Relief Act &amp; Paper 2 B4 Essay (Stages…</div>
+          <div class="body-copy phase-row"><span class="time-chip">8m</span> <strong>Spaced Retrieval Starter:</strong> Retrieve England’s population growth, why sheep enclosure caused rural eviction and rack-renting, and the legal…</div><div class="body-copy phase-row"><span class="time-chip">17m</span> <strong>Narrative &amp; Sources:</strong> Read Stages 4–5 on the Turning-Point Statutes: the 1572 Vagabonds Act (compulsory local poor rate + ear-boring/whipping…</div><div class="body-copy phase-row"><span class="time-chip">20m</span> <strong>Exam Writing:</strong> Timed Edexcel Paper 2 B4 practice: complete Q1(a)/(b) Describe features (policies towards the poor; changing attitudes…</div><div class="body-copy phase-row"><span class="time-chip">5m</span> <strong>Consolidate &amp; DIRT:</strong> Check Q3 balance during DIRT: contrast long-term demographic growth against agricultural enclosure, cloth-trade slumps…</div>
+        </div>
+      </div>
+
+      <!-- (d) Misconceptions & Corrections + Hinge Question + SEND & Stretch -->
+      <div class="two-col-grid" style="grid-template-columns: 1.15fr 1fr;">
+        <div class="crib-card" style="border-left-color:#b91c1c;">
+          <div class="card-heading" style="color:#7f1d1d;">Common Pupil Misconceptions &amp; Historical Corrections</div>
+          
+      <div class="body-copy misc-item" style="">
+        <div><strong style="color:#991b1b;">Misconception 1:</strong> Blaming Elizabethan poverty solely on Henry VIII's Dissolution of the Monasteries in the 1530s.</div>
+        <div><strong style="color:#166534;">Correction:</strong> While losing monastic charity removed an older safety net, poverty surged between 1558 and 1588 mainly due to 35% population growth (3 million…</div>
+      </div>
+      <div class="body-copy misc-item" style="border-top:1px dashed #cbd5e1; padding-top:0.9mm; margin-top:0.9mm;">
+        <div><strong style="color:#991b1b;">Misconception 2:</strong> Claiming Elizabethan governments dropped harsh punishments once they introduced poor relief.</div>
+        <div><strong style="color:#166534;">Correction:</strong> Tudor legislation remained dual-track throughout: the impotent (deserving) poor received parish relief, the able-bodied unemployed were given…</div>
+      </div>
+      <div class="body-copy misc-item" style="border-top:1px dashed #cbd5e1; padding-top:0.9mm; margin-top:0.9mm;">
+        <div><strong style="color:#991b1b;">Misconception 3:</strong> Writing extensively about the 1590s famine harvests and the 1601 Elizabethan Poor Law in an Edexcel 1558–88 Paper…</div>
+        <div><strong style="color:#166534;">Correction:</strong> GCSE Exam Tip: Edexcel Option B4 ends strictly in 1588. Anchor poor-relief answers firmly in the 1563 Statute of Artificers, the 1572 Vagabonds…</div>
+      </div>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:2mm; justify-content:space-between;">
+          <div class="crib-card" style="border-left-color:#d97706; background:#fffbeb; flex:1;">
+            <div class="card-heading" style="color:#92400e;">Targeted Diagnostic Hinge Question</div>
+            <div class="body-copy" style="font-weight:700; color:#0f172a; margin-bottom:0.7mm;">&ldquo;What specific change between the 1572 Vagabonds Act and the 1576 Poor Relief Act proves that Elizabethan MPs finally understood structural unemployment?&rdquo;</div>
+            <div class="body-copy" style="color:#334155;"><strong>Look For:</strong> Strong GCSE answers pinpoint that while the 1572 Vagabonds Act established a compulsory local poor rate alongside savage ear-boring and hanging for 'sturdy beggars', the 1576 Poor Relief Act…</div>
+          </div>
+          <div class="crib-card" style="border-left-color:#6d28d9; background:#faf5ff; flex:1;">
+            <div class="card-heading" style="color:#4c1d95;">SEND Scaffold &amp; High-Ceiling Stretch</div>
+            <div class="body-copy" style="margin-bottom:0.7mm;"><strong style="color:#5b21b6;">SEND:</strong> Display the Three Categories of the Elizabethan Poor Concept Diagram alongside the Visual Story Sheet so learners clearly distinguish Impotent Poor, Able-Bodied Unemployed…</div>
+            <div class="body-copy"><strong style="color:#5b21b6;">Stretch:</strong> Evaluate whether Elizabethan Poor Laws in 1572 and 1576 were motivated more by Christian charity toward the destitute or by gentry fear of social disorder and rebellion after…</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- (e) Quick Classroom Answer Crib -->
+      <div class="crib-card answer-crib-box" style="border-left-color:#0f172a; background:#f8fafc;">
+        <div class="card-heading" style="color:#0f172a;">Quick Classroom Answer Crib (Do Now &bull; Sources A–E &bull; Workbook / Exam Key)</div>
+        <div class="body-copy" style="margin-bottom:0.8mm; padding-bottom:0.8mm; border-bottom:1px solid #e2e8f0;">
+          <strong style="color:var(--accent-dark);">Do Now Key:</strong>
+          Q1: A hornbook • Q2: Grammar schools • Q3: Roger Ascham • Q4: The Inns of Court • Q5: The Theatre
+        </div>
+        <div class="body-copy" style="margin-bottom:0.8mm; padding-bottom:0.8mm; border-bottom:1px solid #e2e8f0;">
+          <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src A:</strong> Source A shows that repeated harvest failures caused severe grain shortages and runaway…</span> <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src B:</strong> They argued that enclosing arable fields for wool production drove tenant farmers off the…</span> <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src C:</strong> Source C reveals that the Tudor ruling class viewed able-bodied unemployment not as an…</span> <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src D:</strong> Source D portrays the able-bodied “Upright Man” as an armed, intimidating masterless…</span> <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src E:</strong> Parliament codified the 1601 statute to establish a permanent, legally binding nationwide…</span>
+        </div>
+        <div class="body-copy">
+          <strong style="color:#0f172a;">[2 marks + 2 marks + 16 marks]</strong>
+          <em>3. ‘Economic pressures were the main reason for the increase in poverty and vagabondage in the years 1558–88.’ How far do you…</em>
+          &rarr; <strong>Core Model Argument:</strong> Economic pressures—such as price inflation, falling real wages, cloth trade slumps, and agricultural enclosure for sheep farming—played a major role in impoverishing Elizabethan labourers, yet sustained demographic…
+        </div>
+      </div>
+    </div>
+
+    <div class="sow-foot">
+      <span>The History Revision Hub &bull; <span class="school-brand-target" data-department-name="The History Department">The History Department</span> &bull; Confidential Staff Guide</span>
+      <span class="sow-pill">Page 11 of 13</span>
+    </div>
+  </section>
+
+  <section class="page sow-page" data-page="12" data-page-kind="crib">
+    <div class="page-inner">
+      <div class="sow-head">
+        <span>3-MINUTE WALK-IN TEACHER CRIB SHEET &bull; ENQUIRY 11 OF 12</span>
+        <span>Early Elizabethan England, 1558–1588</span>
+      </div>
+
+      <!-- (a) Header Bar -->
+      <div class="enquiry-banner">
+        <div style="display:flex; justify-content:space-between; align-items:baseline; gap:2mm;">
+          <div class="enquiry-title-row">
+            <span class="enquiry-code-pill">KT 3.3</span>
+            <h2 class="enquiry-h2">Exploration and Voyages of Discovery, 1558–1588</h2>
+          </div>
+        </div>
+        <div class="enquiry-eq-line">Central Enquiry: How did navigational science, galleon engineering, and Drake’s circumnavigation turn England into an oceanic sea power?</div>
+        <div class="body-copy" style="color:#334155; margin-top:0.6mm;">
+          <strong style="color:var(--accent-dark);">Curriculum / Spec Anchor:</strong> Key Topic 3.3: Exploration and voyages of discovery, 1558–88 — navigational technology (astrolabe, quadrant, Mercator map), race-built galleons, joint-stock trading…
+        </div>
+      </div>
+
+      
+
+      <!-- (b) Subject Knowledge Primer + Learning Objectives -->
+      <div class="two-col-grid" style="grid-template-columns: 1.28fr 1fr;">
+        <div class="crib-card">
+          <div class="card-heading">Subject Knowledge Primer (Non-Specialist Walk-In Briefing)</div>
+          <p class="body-copy">This lesson covers the technological and economic drivers of Elizabethan exploration, focusing on Drake's circumnavigation and Raleigh's disastrous attempts to colonise Virginia. It emphasises the catastrophic intersection of poor planning, Native American resistance, and the Spanish Armada in dooming the Roanoke colony.</p>
+        </div>
+        <div class="crib-card" style="background:#f8fafc;">
+          <div class="card-heading">Core Learning Objectives</div>
+          <ul class="crib-ul">
+            <li class="body-copy">Explain and evaluate New Navigational Technology (1558–1575): astrolabes, quadrants, Mercator.</li><li class="body-copy">Explain and evaluate Improvements in Ship Design (1558–1577): race-built galleons, lateen sails, culverins.</li><li class="body-copy">Explain and evaluate The Search for New Trade Routes (1550s–1570s): Muscovy Company, Levant Company, Martin Frobisher.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- (c) 2-Lesson Delivery Plan (2 x 50 mins) -->
+      <div class="two-col-grid" style="grid-template-columns: 1fr 1fr;">
+        <div class="crib-card" style="border-left-color:#1d4ed8;">
+          <div class="card-heading" style="color:#1e3a8a;">Lesson 1: Navigational Science, Race-Built Galleons &amp; Trade Routes (Stages…</div>
+          <div class="body-copy phase-row"><span class="time-chip">8m</span> <strong>Spaced Retrieval Starter:</strong> Complete the spaced Do Now retrieving England’s population rise, rural sheep enclosure, the impotent vs idle poor, and…</div><div class="body-copy phase-row"><span class="time-chip">15m</span> <strong>Teacher Exposition:</strong> Explain the technological and commercial engines behind Elizabethan oceanic expansion: brass astrolabes, quadrants…</div><div class="body-copy phase-row"><span class="time-chip">17m</span> <strong>Shared Reading &amp; Spine:</strong> Read Stages 1–3 and complete Workbook Verso Spine boxes 1–3, ensuring pupils link triangular lateen sails, lowered…</div><div class="body-copy phase-row"><span class="time-chip">10m</span> <strong>Hinge Check:</strong> Scrutinise Source A (mariner’s astrolabe) alongside Source B (the race-built Ark Royal, 1587) and Source C (Ryther’s sea…</div>
+        </div>
+        <div class="crib-card" style="border-left-color:#15803d;">
+          <div class="card-heading" style="color:#14532d;">Lesson 2: Drake’s 1577–80 Circumnavigation &amp; Paper 2 B4 Writing (Stages 4–5)…</div>
+          <div class="body-copy phase-row"><span class="time-chip">8m</span> <strong>Spaced Retrieval Starter:</strong> Spaced recall check on astrolabes/quadrants, Mercator’s 1569 projection, Hawkins’s race-built galleon design, and why the…</div><div class="body-copy phase-row"><span class="time-chip">17m</span> <strong>Narrative &amp; Sources:</strong> Read Stages 4–5 on Francis Drake’s December 1577 departure from Plymouth, navigating the Strait of Magellan in the Golden…</div><div class="body-copy phase-row"><span class="time-chip">20m</span> <strong>Exam Writing:</strong> Timed Edexcel Paper 2 B4 practice: complete Q1(a)/(b) Describe features (impact of new technology on ships and sailing…</div><div class="body-copy phase-row"><span class="time-chip">5m</span> <strong>Consolidate &amp; DIRT:</strong> Green-pen DIRT check on Q2: verify three analytical themes—financial boost to Crown/investors, shattering Spain’s Pacific…</div>
+        </div>
+      </div>
+
+      <!-- (d) Misconceptions & Corrections + Hinge Question + SEND & Stretch -->
+      <div class="two-col-grid" style="grid-template-columns: 1.15fr 1fr;">
+        <div class="crib-card" style="border-left-color:#b91c1c;">
+          <div class="card-heading" style="color:#7f1d1d;">Common Pupil Misconceptions &amp; Historical Corrections</div>
+          
+      <div class="body-copy misc-item" style="">
+        <div><strong style="color:#991b1b;">Misconception 1:</strong> Thinking Francis Drake set out from Plymouth in December 1577 intending to sail all the way around the world.</div>
+        <div><strong style="color:#166534;">Correction:</strong> Drake's secret royal commission aimed to pass through the Strait of Magellan, raid unguarded Spanish ports in Chile and Peru (capturing £140,000…</div>
+      </div>
+      <div class="body-copy misc-item" style="border-top:1px dashed #cbd5e1; padding-top:0.9mm; margin-top:0.9mm;">
+        <div><strong style="color:#991b1b;">Misconception 2:</strong> Confusing latitude navigation tools (astrolabes and quadrants) with accurate longitude measurement.</div>
+        <div><strong style="color:#166534;">Correction:</strong> Elizabethan mariners could calculate north-south latitude using an astrolabe, quadrant, or back-staff with printed sun tables, and Mercator's…</div>
+      </div>
+      <div class="body-copy misc-item" style="border-top:1px dashed #cbd5e1; padding-top:0.9mm; margin-top:0.9mm;">
+        <div><strong style="color:#991b1b;">Misconception 3:</strong> Overlooking Drake's Nova Albion landing in June 1579 when explaining the significance of his circumnavigation.</div>
+        <div><strong style="color:#166534;">Correction:</strong> Alongside returning a 4,700% profit for investors (including Elizabeth) and proving English navigational reach, Drake claimed 'Nova Albion' on…</div>
+      </div>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:2mm; justify-content:space-between;">
+          <div class="crib-card" style="border-left-color:#d97706; background:#fffbeb; flex:1;">
+            <div class="card-heading" style="color:#92400e;">Targeted Diagnostic Hinge Question</div>
+            <div class="body-copy" style="font-weight:700; color:#0f172a; margin-bottom:0.7mm;">&ldquo;Would English merchants and privateers have ventured across the Atlantic and Pacific in the 1570s without the collapse of the Antwerp woollen cloth market?&rdquo;</div>
+            <div class="body-copy" style="color:#334155;"><strong>Look For:</strong> Strong GCSE answers distinguish between enabling factors (Mercator's 1569 projection map, astrolabes/quadrants, triangular lateen sails, and Hawkins's race-built galleons made global ocean…</div>
+          </div>
+          <div class="crib-card" style="border-left-color:#6d28d9; background:#faf5ff; flex:1;">
+            <div class="card-heading" style="color:#4c1d95;">SEND Scaffold &amp; High-Ceiling Stretch</div>
+            <div class="body-copy" style="margin-bottom:0.7mm;"><strong style="color:#5b21b6;">SEND:</strong> Pair the Drake's Circumnavigation Concept Diagram with the Visual Story Sheet so learners trace his 1577–80 route visually while listening to Studio Audio.</div>
+            <div class="body-copy"><strong style="color:#5b21b6;">Stretch:</strong> How far was technical innovation in ship design and cartography less decisive in driving Elizabethan oceanic expansion than the joint-stock financial model of London merchant…</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- (e) Quick Classroom Answer Crib -->
+      <div class="crib-card answer-crib-box" style="border-left-color:#0f172a; background:#f8fafc;">
+        <div class="card-heading" style="color:#0f172a;">Quick Classroom Answer Crib (Do Now &bull; Sources A–E &bull; Workbook / Exam Key)</div>
+        <div class="body-copy" style="margin-bottom:0.8mm; padding-bottom:0.8mm; border-bottom:1px solid #e2e8f0;">
+          <strong style="color:var(--accent-dark);">Do Now Key:</strong>
+          Q1: From roughly 3 million to over 4.2 million… • Q2: Enclosure • Q3: Idle beggars • Q4: Whipped through the town until bloody and bored… • Q5: The House of Correction (Bridewell)
+        </div>
+        <div class="body-copy" style="margin-bottom:0.8mm; padding-bottom:0.8mm; border-bottom:1px solid #e2e8f0;">
+          <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src A:</strong> Source A shows that oceanic navigation evolved from guesswork to scientific celestial…</span> <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src B:</strong> Source B illustrates Hawkins' 'race-built' concept: cutting down high clumsy forecastles to…</span> <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src C:</strong> Source C shows that navigational charts incorporated accurate compass bearings, rhumb…</span> <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src D:</strong> Source D is an authoritative map compiled by Hondius using Drake's verified navigational…</span> <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src E:</strong> Mendoza intended to portray Elizabeth as an unprincipled sponsor of piracy who personally…</span>
+        </div>
+        <div class="body-copy">
+          <strong style="color:#0f172a;">[2 marks + 2 marks + 12 marks]</strong>
+          <em>2. Explain why Drake’s circumnavigation of the globe (1577–80) was significant. [12 marks]</em>
+          &rarr; <strong>Core Model Argument:</strong> First, Drake’s circumnavigation (1577–80) was financially and commercially transformative because of the vast haul of captured Spanish treasure brought back to Plymouth in September 1580.
+        </div>
+      </div>
+    </div>
+
+    <div class="sow-foot">
+      <span>The History Revision Hub &bull; <span class="school-brand-target" data-department-name="The History Department">The History Department</span> &bull; Confidential Staff Guide</span>
+      <span class="sow-pill">Page 12 of 13</span>
+    </div>
+  </section>
+
+  <section class="page sow-page" data-page="13" data-page-kind="crib">
+    <div class="page-inner">
+      <div class="sow-head">
+        <span>3-MINUTE WALK-IN TEACHER CRIB SHEET &bull; ENQUIRY 12 OF 12</span>
+        <span>Early Elizabethan England, 1558–1588</span>
+      </div>
+
+      <!-- (a) Header Bar -->
+      <div class="enquiry-banner">
+        <div style="display:flex; justify-content:space-between; align-items:baseline; gap:2mm;">
+          <div class="enquiry-title-row">
+            <span class="enquiry-code-pill">KT 3.4</span>
+            <h2 class="enquiry-h2">Raleigh and the Colonisation of Virginia, 1584–1590</h2>
+          </div>
+        </div>
+        <div class="enquiry-eq-line">Central Enquiry: Why did Sir Walter Raleigh promote Virginia, and why did both the 1585 and 1587 Roanoke settlements fail?</div>
+        <div class="body-copy" style="color:#334155; margin-top:0.6mm;">
+          <strong style="color:var(--accent-dark);">Curriculum / Spec Anchor:</strong> Key Topic 3.4: Raleigh and Virginia, 1584–88 — Sir Walter Raleigh's royal patent, economic and strategic motives, the 1585–86 Ralph Lane expedition, the 1587 John…
+        </div>
+      </div>
+
+      
+
+      <!-- (b) Subject Knowledge Primer + Learning Objectives -->
+      <div class="two-col-grid" style="grid-template-columns: 1.28fr 1fr;">
+        <div class="crib-card">
+          <div class="card-heading">Subject Knowledge Primer (Non-Specialist Walk-In Briefing)</div>
+          <p class="body-copy">This final lesson of the Elizabethan unit examines Raleigh's Virginia colonies. It highlights the intersection of economic motives, disastrous planning (like the grounding of The Tiger), aggressive leadership, and the catastrophic impact of the Spanish Armada on supply lines, culminating in the mystery of the Lost Colony.</p>
+        </div>
+        <div class="crib-card" style="background:#f8fafc;">
+          <div class="card-heading">Core Learning Objectives</div>
+          <ul class="crib-ul">
+            <li class="body-copy">Explain and evaluate Raleigh’s Patent &amp; Planning (1584): Sir Walter Raleigh, Virginia, Richard Hakluyt.</li><li class="body-copy">Explain and evaluate Recruiting Colonists &amp; Leaders (APRIL 1585): 107 colonists, Sir Richard Grenville, Ralph Lane.</li><li class="body-copy">Explain and evaluate The First Roanoke Colony &amp; Disaster (JUNE 1585–1586): Tiger, seed corn, Secotan fish traps.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- (c) 2-Lesson Delivery Plan (2 x 50 mins) -->
+      <div class="two-col-grid" style="grid-template-columns: 1fr 1fr;">
+        <div class="crib-card" style="border-left-color:#1d4ed8;">
+          <div class="card-heading" style="color:#1e3a8a;">Lesson 1: Raleigh’s 1584 Patent, Recruitment &amp; Wreck of the Tiger (Stages…</div>
+          <div class="body-copy phase-row"><span class="time-chip">8m</span> <strong>Spaced Retrieval Starter:</strong> Complete the spaced Do Now retrieving the mariner’s astrolabe, Sir John Hawkins’s race-built galleons, the Muscovy…</div><div class="body-copy phase-row"><span class="time-chip">15m</span> <strong>Teacher Exposition:</strong> Examine Sir Walter Raleigh’s blueprint for colonising Virginia: the March 1584 royal patent, Barlowe and Amadas’s…</div><div class="body-copy phase-row"><span class="time-chip">17m</span> <strong>Shared Reading &amp; Spine:</strong> Read Stages 1–3 and complete Workbook Verso Spine boxes 1–3, contrasting cousin Richard Grenville’s aggressive naval…</div><div class="body-copy phase-row"><span class="time-chip">10m</span> <strong>Hinge Check:</strong> Compare Source A (Sir Walter Raleigh) with Source B (John White’s 1585 Roanoke Island map showing treacherous outer…</div>
+        </div>
+        <div class="crib-card" style="border-left-color:#15803d;">
+          <div class="card-heading" style="color:#14532d;">Lesson 2: Chief Wingina, The 1587 Lost Colony &amp; Paper 2 B4 Essay (Stages 4–5)…</div>
+          <div class="body-copy phase-row"><span class="time-chip">8m</span> <strong>Spaced Retrieval Starter:</strong> Retrieve Raleigh’s 1584 patent, Manteo and Wanchese, why recruiting 107 gentlemen and soldiers weakened the 1585…</div><div class="body-copy phase-row"><span class="time-chip">17m</span> <strong>Narrative &amp; Sources:</strong> Read Stages 4–5 on Grenville burning Aquascogoc, Ralph Lane’s June 1586 ambush killing Secotan Chief Wingina (Pemisapan)…</div><div class="body-copy phase-row"><span class="time-chip">20m</span> <strong>Exam Writing:</strong> Timed Edexcel Paper 2 B4 practice: complete Q1(a)/(b) Describe features (Raleigh’s role in colonising Virginia; first…</div><div class="body-copy phase-row"><span class="time-chip">5m</span> <strong>Consolidate &amp; DIRT:</strong> Final DIRT review on Q3: weigh commercial/raw-material independence from Europe against anti-Spanish privateering bases…</div>
+        </div>
+      </div>
+
+      <!-- (d) Misconceptions & Corrections + Hinge Question + SEND & Stretch -->
+      <div class="two-col-grid" style="grid-template-columns: 1.15fr 1fr;">
+        <div class="crib-card" style="border-left-color:#b91c1c;">
+          <div class="card-heading" style="color:#7f1d1d;">Common Pupil Misconceptions &amp; Historical Corrections</div>
+          
+      <div class="body-copy misc-item" style="">
+        <div><strong style="color:#991b1b;">Misconception 1:</strong> Writing that Sir Walter Raleigh personally sailed to Virginia and led the Roanoke colonists ashore.</div>
+        <div><strong style="color:#166534;">Correction:</strong> Elizabeth I refused to let Raleigh risk his life at sea; Raleigh organised the royal patent (1584), raised £40,000 from investors, and promoted…</div>
+      </div>
+      <div class="body-copy misc-item" style="border-top:1px dashed #cbd5e1; padding-top:0.9mm; margin-top:0.9mm;">
+        <div><strong style="color:#991b1b;">Misconception 2:</strong> Merging the 1585–86 military colony and the 1587 'Lost Colony' into a single Roanoke expedition.</div>
+        <div><strong style="color:#166534;">Correction:</strong> GCSE Exam Tip: Keep the two voyages distinct. The April 1585 voyage of 107 men (wreck of the Tiger ruining seed corn, killing of Chief Wingina…</div>
+      </div>
+      <div class="body-copy misc-item" style="border-top:1px dashed #cbd5e1; padding-top:0.9mm; margin-top:0.9mm;">
+        <div><strong style="color:#991b1b;">Misconception 3:</strong> Assuming Roanoke left zero positive legacy for England because both settlements failed.</div>
+        <div><strong style="color:#166534;">Correction:</strong> Thomas Harriot's scientific survey and John White's detailed watercolours mapped Algonquian crops, customs, and geography, providing the…</div>
+      </div>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:2mm; justify-content:space-between;">
+          <div class="crib-card" style="border-left-color:#d97706; background:#fffbeb; flex:1;">
+            <div class="card-heading" style="color:#92400e;">Targeted Diagnostic Hinge Question</div>
+            <div class="body-copy" style="font-weight:700; color:#0f172a; margin-bottom:0.7mm;">&ldquo;Why did the second Roanoke expedition under John White in 1587 fail even after Raleigh deliberately fixed the all-male military recruitment mistakes of…&rdquo;</div>
+            <div class="body-copy" style="color:#334155;"><strong>Look For:</strong> Strong GCSE answers connect pre-existing hostility with bad timing: although Raleigh recruited 118 men, women, and children promised 500 acres on Chesapeake Bay, pilot Simon Fernandez dropped…</div>
+          </div>
+          <div class="crib-card" style="border-left-color:#6d28d9; background:#faf5ff; flex:1;">
+            <div class="card-heading" style="color:#4c1d95;">SEND Scaffold &amp; High-Ceiling Stretch</div>
+            <div class="body-copy" style="margin-bottom:0.7mm;"><strong style="color:#5b21b6;">SEND:</strong> Use the Ralph Lane 1585–86 Concept Diagram and Visual Story Sheet alongside Studio Audio so learners see the chain reaction: Late April Sailing + Wreck of the Tiger -&gt; Ruined…</div>
+            <div class="body-copy"><strong style="color:#5b21b6;">Stretch:</strong> Assess whether poor planning and settler skill mismatches (soldiers and fortune-hunters vs farmers) were more important than the 1588 Spanish Armada crisis in explaining why…</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- (e) Quick Classroom Answer Crib -->
+      <div class="crib-card answer-crib-box" style="border-left-color:#0f172a; background:#f8fafc;">
+        <div class="card-heading" style="color:#0f172a;">Quick Classroom Answer Crib (Do Now &bull; Sources A–E &bull; Workbook / Exam Key)</div>
+        <div class="body-copy" style="margin-bottom:0.8mm; padding-bottom:0.8mm; border-bottom:1px solid #e2e8f0;">
+          <strong style="color:var(--accent-dark);">Do Now Key:</strong>
+          Q1: The astrolabe • Q2: Sir John Hawkins • Q3: The Muscovy Company • Q4: Sir Francis Drake • Q5: The log and line
+        </div>
+        <div class="body-copy" style="margin-bottom:0.8mm; padding-bottom:0.8mm; border-bottom:1px solid #e2e8f0;">
+          <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src A:</strong> Raleigh sought to establish a permanent English base to raid Spanish treasure fleets in the…</span> <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src B:</strong> Source B is highly useful because it reveals the hostile geographical barrier of…</span> <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src C:</strong> Source C demonstrates that the Algonquin peoples possessed an established political…</span> <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src D:</strong> White's painting is remarkably reliable because it was sketched directly from life before…</span> <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src E:</strong> Source E corroborates promotional tracts by showing that indigenous people lived…</span>
+        </div>
+        <div class="body-copy">
+          <strong style="color:#0f172a;">[2 marks + 2 marks + 16 marks]</strong>
+          <em>3. ‘The drive to expand trade was the main reason for the attempted colonisation of Virginia.’ How far do you agree?</em>
+          &rarr; <strong>Core Model Argument:</strong> The drive to expand trade and acquire raw materials untied to European rivals was a powerful economic motive behind the attempted colonisation of Virginia in the 1580s, yet strategic rivalry with Catholic…
+        </div>
+      </div>
+    </div>
+
+    <div class="sow-foot">
+      <span>The History Revision Hub &bull; <span class="school-brand-target" data-department-name="The History Department">The History Department</span> &bull; Confidential Staff Guide</span>
+      <span class="sow-pill">Page 13 of 13</span>
+    </div>
+  </section>
+
+  
+  <script>
+    (function () {
+      // 1. Commercial School Cover Customizer (?school=School+Name)
+      try {
+        var params = new URLSearchParams(window.location.search);
+        var customSchool = (params.get('school') || '').trim();
+        if (customSchool) {
+          var targets = document.querySelectorAll('.school-brand-target');
+          for (var i = 0; i < targets.length; i++) {
+            targets[i].textContent = customSchool;
+          }
+        }
+      } catch (e) {}
+
+      // 2. Zero-Overflow A4 Portrait Auto-Fit Engine (Strictly preserves body prose >= 8.2pt!)
+      window.autoFitPages = function () {
+        var pages = document.querySelectorAll('.page');
+        for (var p = 0; p < pages.length; p++) {
+          var page = pages[p];
+          var inner = page.querySelector('.page-inner');
+          var bodyEls = page.querySelectorAll('.body-copy');
+          var cards = page.querySelectorAll('.crib-card, .enquiry-banner, .hero-banner');
+          var grids = page.querySelectorAll('.two-col-grid');
+          var cells = page.querySelectorAll('.sow-matrix-table td, .sow-matrix-table th');
+          var headings = page.querySelectorAll('.card-heading');
+
+          var bodyPt = 8.5;
+          var bodyLh = 1.25;
+          var gapMm = 2.1;
+          var padY = 8.0;
+          var guard = 0;
+
+          while (page.scrollHeight > page.clientHeight && guard < 36) {
+            guard++;
+            if (guard <= 10) {
+              // Phase 1: Tighten vertical gaps & card/table padding first (0pt font loss)
+              gapMm = Math.max(1.0, gapMm - 0.12);
+              if (inner) inner.style.gap = gapMm.toFixed(2) + 'mm';
+              for (var g = 0; g < grids.length; g++) {
+                grids[g].style.gap = Math.max(1.2, gapMm).toFixed(2) + 'mm';
+              }
+              var cardPadY = Math.max(1.0, 1.8 - guard * 0.08);
+              for (var c = 0; c < cards.length; c++) {
+                cards[c].style.paddingTop = cardPadY.toFixed(2) + 'mm';
+                cards[c].style.paddingBottom = cardPadY.toFixed(2) + 'mm';
+              }
+              var cellPadY = Math.max(0.65, 1.2 - guard * 0.055);
+              for (var td = 0; td < cells.length; td++) {
+                cells[td].style.paddingTop = cellPadY.toFixed(2) + 'mm';
+                cells[td].style.paddingBottom = cellPadY.toFixed(2) + 'mm';
+              }
+            } else if (guard <= 20) {
+              // Phase 2: Step body copy gently from 8.5pt toward 8.20pt floor & tighter line-height
+              bodyPt = Math.max(8.2, bodyPt - 0.03);
+              bodyLh = Math.max(1.16, bodyLh - 0.009);
+              for (var b = 0; b < bodyEls.length; b++) {
+                bodyEls[b].style.fontSize = bodyPt.toFixed(2) + 'pt';
+                bodyEls[b].style.lineHeight = bodyLh.toFixed(2);
+              }
+            } else {
+              // Phase 3: Tighten outer page vertical margin & heading margins while locking bodyPt >= 8.2pt!
+              padY = Math.max(5.5, padY - 0.2);
+              page.style.paddingTop = padY.toFixed(2) + 'mm';
+              page.style.paddingBottom = padY.toFixed(2) + 'mm';
+              bodyLh = Math.max(1.13, bodyLh - 0.004);
+              for (var b2 = 0; b2 < bodyEls.length; b2++) {
+                bodyEls[b2].style.lineHeight = bodyLh.toFixed(2);
+              }
+              for (var h = 0; h < headings.length; h++) {
+                headings[h].style.fontSize = '8.25pt';
+                headings[h].style.marginBottom = '0.4mm';
+                headings[h].style.paddingBottom = '0.3mm';
+              }
+              var foot = page.querySelector('.sow-foot');
+              if (foot) {
+                foot.style.marginTop = '0.8mm';
+                foot.style.paddingTop = '0.8mm';
+              }
+            }
+          }
+        }
+      };
+
+      if (document.readyState === 'complete') {
+        window.autoFitPages();
+      } else {
+        window.addEventListener('load', window.autoFitPages);
+      }
+      if (document.fonts && document.fonts.ready) {
+        document.fonts.ready.then(window.autoFitPages);
+      }
+    })();
+  </script>
+</body>
+</html>

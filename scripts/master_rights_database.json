@@ -1491,6 +1491,21 @@
           "source_url": "https://commons.wikimedia.org/wiki/File:View_of_Lake_Windermere_from_Orrest_Head_Viewpoint.jpg",
           "asset_path": "/images/upgraded/ks2-ww2/l11_banner_lake_windermere_fells_panorama.jpg",
           "visual_inspection_verified": "Verified 1600x1067 serene wide landscape photograph looking across northern Lake Windermere and Lakeland hills from Orrest Head above Calgarth Estate; zero watermarks."
+        },
+        {
+          "lesson_num": 9,
+          "lesson_title": "lesson_9",
+          "source_id": "Lesson Banner",
+          "artifact_title": "Exterior of Wooden Hut 8 at Bletchley Park, Where Alan Turing's Team Cracked German Naval Enigma Codes",
+          "date": "2 July 2022 (Wartime Hut Built 1940)",
+          "creator": "Vintage Fan 5678",
+          "repository": "Bletchley Park Museum / Wikimedia Commons",
+          "accession_id": "Commons: File:Bletchley_Park_Entrance_to_Hut_8.jpg",
+          "rights_status": "Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)",
+          "commercial_use_permitted": true,
+          "source_url": "https://commons.wikimedia.org/wiki/File:Bletchley_Park_Entrance_to_Hut_8.jpg",
+          "asset_path": "/images/upgraded/ks2-ww2/l09_banner_bletchley_hut8_exterior.jpg",
+          "visual_inspection_verified": "Verified 1600x1200 sharp horizontal photograph of the dark-green timber exterior of Hut 8 at Bletchley Park showing the white HUT 8 doorway plaque and ramped entrance; zero watermarks."
         }
       ]
     },
@@ -41362,8 +41377,8 @@
     }
   },
   "total_units": 27,
-  "total_sources": 2165,
+  "total_sources": 2166,
   "total_lessons": 171,
-  "total_registered_sources": 2165,
+  "total_registered_sources": 2166,
   "last_audit": "2026-11-22T09:21:31.979Z"
 }

@@ -1338,7 +1338,26 @@ export default {
               }
             ]
           }
-        }
+        },
+        "curriculum_link": "KS3 Thematic Study (Pre-1066 Baseline): Roman Britain (AD 43–410) — evaluating change, continuity, and the limits of imperial public health engineering.",
+        "hinge_question": "If Roman towns had stone aqueducts, heated thermae baths, and flushed latrines, why did ordinary townsfolk still suffer from dysentery, whipworm, and lead poisoning?",
+        "hinge_guidance": "Strong responses distinguish impressive civil engineering from modern germ science: bathhouse plunge pools were rarely drained, soldiers shared unsterilised tersorium sponges in communal latrines like Housesteads, and pressurized fistula pipes leached toxic lead into drinking water. Probe any pupil who assumes clean-looking running water meant Romans understood microscopic bacteria.",
+        "misconceptions": [
+          {
+            "misconception": "The Romans built aqueducts and bathhouses out of scientific knowledge of germs and bacteria.",
+            "correction": "Romans had zero knowledge of microscopic germs; governors built grand stone aqueducts and marble thermae like Aquae Sulis and Fishbourne Palace (Source E) primarily to project imperial prestige and Romanitas."
+          },
+          {
+            "misconception": "Iron Age Britons before AD 43 lived in filthy, disease-ridden settlements until Rome civilised them.",
+            "correction": "Dispersed rural Celtic roundhouses safely composted waste in shallow field cesspits away from streams; it was Emperor Claudius's AD 43 urban towns like Londinium and Eboracum that created dense crowding hazards."
+          },
+          {
+            "misconception": "Roman bathhouses and communal latrines kept citizens free from infectious stomach diseases.",
+            "correction": "Unchanged warm bathwater harboured whipworm and dysentery parasite eggs, shared tersorium toilet sponges spread infection, and lead fistula pipes (Source A) caused chronic plumbism."
+          }
+        ],
+        "send_adaptation": "Pre-teach two anchor terms—aqueduct (gravity water bridge) and Romanitas (Roman imperial pride)—before reading. Play the Studio Audio alongside the cutaway bathhouse diagram (Source B) and chunk the Verso 5-Stage Chronology Spine into pairs so lower-attaining readers match each engineering feature (hypocaust, strigil, latrine) to one benefit and one hidden health danger.",
+        "stretch_challenge": "Challenge higher-attaining pupils to interrogate why Roman water systems collapsed so completely after AD 410: what does this reveal about infrastructure that depends entirely on centralised imperial taxation and military garrisons rather than local town upkeep?"
       },
       "video": [
         {
@@ -2157,7 +2176,8 @@ export default {
       "hero_image": "/images/upgraded/ks3-early/was_l1_banner_roman_baths_aquae_sulis.jpg",
       "banner_position": "center 35%",
       "enquiry_question": "Did Roman water engineering protect ordinary Britons or showcase imperial luxury?",
-      "enquiryQuestion": "Did Roman water engineering protect ordinary Britons or showcase imperial luxury?"
+      "enquiryQuestion": "Did Roman water engineering protect ordinary Britons or showcase imperial luxury?",
+      "banner_caption": "The Great Roman Bath and Colonnade at Aquae Sulis (Bath, Somerset, c. AD 70): Fed continuously by geothermal hot springs through lead conduits, showcasing imperial Roman hydraulic engineering in Britain."
     },
     {
       "id": "lesson_2",
@@ -3153,7 +3173,26 @@ export default {
               }
             ]
           }
-        }
+        },
+        "curriculum_link": "KS3 Thematic Study & Medieval Britain (1066–1509): Contrasting municipal borough sanitation with monastic hydraulic engineering and the 1348 Black Death.",
+        "hinge_question": "Why did Christ Church Priory in Canterbury enjoy five-stage filtered spring water in c. 1165 while nearby medieval market boroughs struggled with polluted rivers and overflowing gutters?",
+        "hinge_guidance": "Look for pupils contrasting wealthy, walled, low-density monasteries funded by Church tithes and estates (Source B's settling tanks and lavatorium) against rapidly growing commercial boroughs that lacked central taxation, mechanical pumps, and underground sewers. Challenge any sweeping Victorian stereotype that medieval townsfolk simply 'liked living in dirt' by pointing to Winchester Court Leet fines (Source A) and the 1388 Statute of Cambridge (Source E).",
+        "misconceptions": [
+          {
+            "misconception": "Medieval townspeople threw waste into the street because they did not care about cleanliness or smell.",
+            "correction": "Historian Carole Rawcliffe has shown medieval councils cared deeply because they believed foul miasma caused disease—hiring rakers and gong farmers, fining polluters in Court Leet rolls (Source A), and passing the £20 fine Statute of Cambridge in 1388 (Source E)."
+          },
+          {
+            "misconception": "Nobody in medieval England knew how to engineer clean piped water after the Romans left.",
+            "correction": "Monasteries such as Christ Church Priory in Canterbury (c. 1165, Source B) and Titchfield Abbey (Source C) engineered sophisticated lead conduits, five successive settling tanks, and running-water latrines."
+          },
+          {
+            "misconception": "Because medieval doctors blamed miasma and the stars for the 1348 Black Death, town councils took no practical action.",
+            "correction": "Even though miasma theory missed Yersinia pestis rat fleas, it drove councils to clear rotting offal, enforce forty-day port quarantines, and dig deep emergency burial trenches at Smithfield."
+          }
+        ],
+        "send_adaptation": "Pre-teach miasma (the belief that bad-smelling air spread disease) and gong farmer (night-time cesspit cleaner). Use the Eadwine Psalter waterworks plan (Source B) alongside York's overhanging Shambles plate to build a simple T-chart comparing 'Rich Quiet Monastery' vs 'Crowded Market Borough' before tackling the Recto causal paragraph.",
+        "stretch_challenge": "Push higher-attaining pupils to evaluate a paradox: how could a completely wrong medical idea (miasma theory in the 1388 Statute of Cambridge, Source E) still motivate medieval authorities to pass sensible environmental laws banning offal in rivers?"
       },
       "video": [
         {
@@ -3967,7 +4006,8 @@ export default {
       "hero_image": "/images/upgraded/ks3-early/was_l2_banner_medieval_plague_victims.jpg",
       "banner_position": "center 45%",
       "enquiry_question": "Why did medieval towns struggle so badly to keep streets and water clean?",
-      "enquiryQuestion": "Why did medieval towns struggle so badly to keep streets and water clean?"
+      "enquiryQuestion": "Why did medieval towns struggle so badly to keep streets and water clean?",
+      "banner_caption": "Giuseppe Maria Crespi, Blessed Bernardo Tolomei Visiting Victims of the 1348 Plague (c. 1735): Depicting monastic charity amid the catastrophic Black Death pandemic that killed up to half of Europe’s population."
     },
     {
       "id": "lesson_3",
@@ -4863,7 +4903,26 @@ export default {
               }
             ]
           }
-        }
+        },
+        "curriculum_link": "KS3 Thematic Study & Early Modern Britain (1500–1700): Evaluating private technological innovation versus municipal infrastructure failure in Tudor and Stuart London.",
+        "hinge_question": "If Sir John Harington invented a working flush toilet in 1596 and Sir Hugh Myddelton opened the 38-mile New River in 1613, why was Samuel Pepys still stepping in raw sewage in his cellar in 1660?",
+        "hinge_guidance": "Strong answers separate isolated private enterprise from universal public infrastructure: Harington's 'Ajax' at Richmond Palace (Source B) had no city water mains or underground sewers to connect to, while Myddelton's wooden elm pipes (Source C) only served wealthy households paying annual fees. Probe pupils who equate a single royal invention with everyday life for London's 500,000 inhabitants.",
+        "misconceptions": [
+          {
+            "misconception": "Sir John Harington's 1596 flush toilet transformed Tudor homes across England.",
+            "correction": "Without pressurized street water mains or municipal sewers, Harington's brass-valve 'Ajax' at Richmond Palace (Source B) remained a rare royal novelty while ordinary families used chamber pots and backyard cesspits for another two centuries."
+          },
+          {
+            "misconception": "Sir Hugh Myddelton's 1613 New River gave free clean drinking water to all Londoners.",
+            "correction": "The 38-mile canal from Hertfordshire to Islington (Source C) was a profit-making private venture piped through hollowed elm trunks solely to rich households able to afford the annual water rate."
+          },
+          {
+            "misconception": "Killing 40,000 dogs and 200,000 cats during the 1665 Great Plague helped slow down the epidemic.",
+            "correction": "Slaughtering cats and dogs made the 1665 epidemic worse by wiping out the predators that hunted black rats carrying plague-infected fleas, contributing to over 100,000 London deaths recorded in the Bills of Mortality (Source E)."
+          }
+        ],
+        "send_adaptation": "Pre-teach metropolis (giant capital city) and cesspit (underground waste vault). Pair Studio Audio read-aloud of Samuel Pepys's 20 October 1660 cellar diary (Source D) with the hollowed elm pipe visual so pupils can orally sort evidence into 'Progress for the Rich' versus 'Filth for the Majority' before writing their balanced evaluation.",
+        "stretch_challenge": "Ask higher-attaining pupils to compare Early Modern London (1500–1665) with Roman Londinium in Lesson 1: why did private Stuart entrepreneurs like Sir Hugh Myddelton fail to achieve the city-wide sanitation coverage that imperial Roman governors engineered?"
       },
       "video": [
         {
@@ -5668,7 +5727,8 @@ export default {
       "hero_image": "/images/upgraded/ks3-early/was_l3_banner_hollar_london_1647.jpg",
       "banner_position": "center 48%",
       "enquiry_question": "Why did rapid growth make Tudor and Stuart London filthier and deadlier?",
-      "enquiryQuestion": "Why did rapid growth make Tudor and Stuart London filthier and deadlier?"
+      "enquiryQuestion": "Why did rapid growth make Tudor and Stuart London filthier and deadlier?",
+      "banner_caption": "Wenceslaus Hollar, Long View of London from Bankside (1647): Showing the densely packed gabled timber and brick tenements crowding the north bank of the River Thames between Blackfriars and Baynard’s Castle before the 1665 Plague and 1666 Fire."
     },
     {
       "id": "lesson_4",
@@ -6305,7 +6365,26 @@ export default {
               }
             ]
           }
-        }
+        },
+        "curriculum_link": "KS3 Thematic Study & Industrial Britain (1750–1900): Analysing urbanisation, laissez-faire ideology, the 1848 Public Health Act, and Joseph Bazalgette's civil engineering.",
+        "hinge_question": "Why did Edwin Chadwick's shocking 1842 Sanitary Report fail to force councils to build sewers, whereas the eighteen-day 'Great Stink' of summer 1858 unlocked £3 million immediately?",
+        "hinge_guidance": "Look for two linked explanations: first, Chadwick's 1848 Public Health Act was permissive (optional), allowing ratepayer-sensitive laissez-faire town councils to ignore slum deaths; second, the 35°C June–July 1858 heatwave baked raw water-closet sewage in the Thames directly beneath MPs' noses in Westminster despite lime-soaked curtains. Probe any pupil who thinks MPs funded Bazalgette's 82 miles of intercepting sewers because they suddenly accepted germ theory—in 1858 they still feared miasma!",
+        "misconceptions": [
+          {
+            "misconception": "Installing 200,000 flushing water closets in wealthy London homes before 1858 made the capital cleaner and healthier.",
+            "correction": "Flushing water closets actually caused the Thames crisis by pouring millions of gallons of raw sewage out of household cesspools into old storm drains that emptied straight into the river supplying London's drinking water."
+          },
+          {
+            "misconception": "The 1848 Public Health Act forced every British factory town to build underground sewers.",
+            "correction": "The 1848 Act was permissive rather than compulsory, meaning laissez-faire local councils dominated by stingy ratepayers legally refused to spend money on drains."
+          },
+          {
+            "misconception": "Parliament paid £3 million for Joseph Bazalgette's sewers in 1858 because MPs accepted that bacteria in water caused cholera.",
+            "correction": "MPs voted £3 million in eighteen days because they terrified themselves breathing the 1858 Great Stink miasma at Westminster; Bazalgette's 318-million-brick intercepting sewers (Source E) solved the waterborne problem for the wrong medical reason."
+          }
+        ],
+        "send_adaptation": "Pre-teach laissez-faire ('leave alone' government refusal to interfere) and permissive (optional, not forced by law). Use the Punch 'Court for King Cholera' and 'Father Thames' cartoons (Sources B and D) as visual anchors along the Verso 5-Stage Spine to trace the chain reaction from back-to-back slums to Abbey Mills and Crossness pumping stations.",
+        "stretch_challenge": "Challenge higher-attaining pupils to link Lesson 4 back to Lesson 2: both medieval councils in 1388 and Victorian MPs in 1858 believed in miasma, so what changed in Britain's economy, state wealth, and civil engineering (Portland cement and steam beam engines) to allow Bazalgette to succeed on a scale medieval boroughs never could?"
       },
       "quick_quiz": [
         {
@@ -7079,7 +7158,8 @@ export default {
       "hero_image": "/images/upgraded/ks3-early/was_l4_banner_bazalgette_sewer_construction.jpg",
       "banner_position": "center 48%",
       "enquiry_question": "How did cholera and the 1858 ‘Great Stink’ force London to build sewers?",
-      "enquiryQuestion": "How did cholera and the 1858 ‘Great Stink’ force London to build sewers?"
+      "enquiryQuestion": "How did cholera and the 1858 ‘Great Stink’ force London to build sewers?",
+      "banner_caption": "Section of the Thames Embankment Showing Sir Joseph Bazalgette’s Low-Level Intercepting Sewer (The Illustrated London News, 1867): Built after the 1858 Great Stink to carry London’s sewage eastward away from central drinking supplies."
     },
     {
       "id": "lesson_5",
@@ -7733,7 +7813,26 @@ export default {
               }
             ]
           }
-        }
+        },
+        "curriculum_link": "KS3 Thematic Study & Nineteenth-Century Science/Reform: Evaluating empirical epidemiology (Snow), microbiology (Pasteur & Koch), and compulsory state legislation (1875).",
+        "hinge_question": "If Dr John Snow proved the Broad Street pump spread cholera in September 1854, why did doctors and town councils across Britain still resist water reform until Pasteur (1861), Koch (1884), and the 1875 Public Health Act?",
+        "hinge_guidance": "Strong answers explain that Snow spotted the spatial pattern (616 Soho deaths and zero deaths among the 70 beer-drinking Lion Brewery workers in Sources A–B) and Reverend Whitehead found the cracked cesspool at 40 Broad Street (Source C), yet Snow could not show the microscopic pathogen itself. Only Louis Pasteur's 1861 swan-neck flasks (Source D), Robert Koch's 1884 isolation of Vibrio cholerae, the 1867 working-class male vote, and Disraeli's compulsory 1875 Act (Source E) killed off both miasma dogma and ratepayer excuses nationwide.",
+        "misconceptions": [
+          {
+            "misconception": "Every doctor immediately abandoned miasma theory the day Dr John Snow removed the Broad Street pump handle in September 1854.",
+            "correction": "The General Board of Health initially rejected Snow's waterborne theory because nobody had yet seen a bacterium; full scientific proof required Pasteur's 1861 Germ Theory (Source D) and Koch isolating Vibrio cholerae in 1884."
+          },
+          {
+            "misconception": "Dr John Snow discovered the cholera germ under a microscope in Soho.",
+            "correction": "Snow used doorway-by-doorway epidemiology, his Broad Street spot map (Source A), and the Lion Brewery control group (Source B) to prove water transmission statistically—thirty years before Robert Koch identified the comma-shaped bacterium."
+          },
+          {
+            "misconception": "Scientific proof alone was enough to make local town councils build clean piped water systems.",
+            "correction": "Even after scientific breakthroughs, reluctant ratepayers avoided costs until Prime Minister Disraeli's compulsory Public Health Act of 1875 (Source E) legally forced every council to appoint Medical Officers of Health and lay covered sewers."
+          }
+        ],
+        "send_adaptation": "Pre-teach epidemiology (detective mapping of how disease spreads) and compulsory (legally required with zero choice). Zoom into Dr John Snow's 1854 Soho spot map (Source A) to circle the Broad Street pump and the Lion Brewery together before reading, using the Verso Spine stages as sentence-by-sentence stepping stones.",
+        "stretch_challenge": "Push higher-attaining pupils to explain why Reverend Henry Whitehead's parish investigation at 40 Broad Street (Source C) was vital to Snow's case: why does science often need community trust alongside data mapping to uncover a physical mechanism?"
       },
       "quick_quiz": [
         {
@@ -8507,7 +8606,8 @@ export default {
       "hero_image": "/images/upgraded/ks3-early/was_l5_banner_monster_soup_thames_water.jpg",
       "banner_position": "center 38%",
       "enquiry_question": "How did science and government laws finally defeat water-borne cholera?",
-      "enquiryQuestion": "How did science and government laws finally defeat water-borne cholera?"
+      "enquiryQuestion": "How did science and government laws finally defeat water-borne cholera?",
+      "banner_caption": "William Heath, \"Monster Soup Commonly Called Thames Water\" (1828, Wellcome Collection): Satirical print exposing the invisible sewage filth pumped into London homes decades before Dr John Snow and Louis Pasteur proved waterborne germs."
     },
     {
       "id": "lesson_6",
@@ -9308,7 +9408,26 @@ export default {
               }
             ]
           }
-        }
+        },
+        "curriculum_link": "KS3 Summative Assessment Masterclass: Synthesising multi-causal historical explanation ('Explain why there was rapid progress in Public Health between 1800 and 1900').",
+        "hinge_question": "Which single factor turned scientific ideas and engineering blueprints into clean water for every town across Great Britain—not just London—by 1900, and how did the four factors lock together?",
+        "hinge_guidance": "Ensure pupils move beyond listing Snow (1854), Bazalgette (1858–65), Pasteur/Koch (1861/1884), and Disraeli's 1875 Public Health Act in isolation. Top-band reasoning explains causal interaction: Snow and Pasteur/Koch supplied the scientific 'why', Bazalgette's Portland-cement sewers proved the engineering 'how' in London, and the 1867 franchise reform plus the compulsory 1875 Act supplied the national legal 'must' across provincial cities.",
+        "misconceptions": [
+          {
+            "misconception": "Writing a high-scoring causal essay means telling a chronological story of everything that happened from 1800 to 1900.",
+            "correction": "Top-band 12-mark responses organise paragraphs thematically around distinct causal factors (Epidemiology, Civil Engineering, Microbiology, Compulsory Legislation) and explain explicitly how each drove national progress."
+          },
+          {
+            "misconception": "Joseph Bazalgette's London intercepting sewers solved public health across the whole of Great Britain.",
+            "correction": "Bazalgette's 82 miles of brick tunnels rescued London after the 1858 Great Stink (Source C), whereas industrial cities like Manchester, Leeds, and Portsmouth relied on the compulsory 1875 Public Health Act (Source E) to mandate nationwide sanitation."
+          },
+          {
+            "misconception": "Individuals like Snow and Pasteur worked completely independently of politics and technology.",
+            "correction": "Scientific discoveries needed glass microscopes, Hassall's water analysis (Source B), steam pumping engines like Abbey Mills and Eastney, and working-class voting power after 1867 to overcome laissez-faire resistance."
+          }
+        ],
+        "send_adaptation": "Provide zero-prep oral rehearsal using the 4-factor Verso planning grid before timed writing: ask lower-attaining writers to pick three factors (Snow's 1854 map, Bazalgette's 1858 sewers, Disraeli's 1875 compulsory law) and draft one Point-Evidence-Explain paragraph per stage using the printed PEEL sentence starters.",
+        "stretch_challenge": "Challenge higher-attaining writers to build a clinching synoptic conclusion comparing 19th-century Britain with Roman Britain (Lesson 1): why has modern public health endured since 1875 whereas Roman hydraulic sanitation vanished after AD 410?"
       },
       "quick_quiz": [
         {
@@ -9993,7 +10112,8 @@ export default {
       "hero_image": "/images/upgraded/ks3-early/was_l6_banner_thames_embankment_1869.jpg",
       "banner_position": "center 42%",
       "enquiry_question": "Why was there rapid progress in Public Health between 1800 and 1900? [12 marks • 30 mins]",
-      "enquiryQuestion": "Why was there rapid progress in Public Health between 1800 and 1900? [12 marks • 30 mins]"
+      "enquiryQuestion": "Why was there rapid progress in Public Health between 1800 and 1900? [12 marks • 30 mins]",
+      "banner_caption": "Opening of the Southern Embankment of the Thames at Lambeth (The Illustrated London News, 1869): Celebrating the monumental civil-engineering and sanitary transformation of Victorian London between 1858 and 1875."
     }
   ],
   "keyStage": "KS3",
@@ -10619,5 +10739,11 @@ export default {
       "studio_audio": "/audio/reading/water_and_sanitation/r5.mp3",
       "studio_voice_label": "Studio Male Historian · Storied History"
     }
-  ]
+  ],
+  "cover_caption": "Dr John Snow’s Soho Cholera Spot Map (1854), plotting fatal cholera cases as black bars around the Broad Street pump to prove that contaminated drinking water spread the disease.",
+  "teacher_guidance_overview": {
+    "curriculum_focus": "KS3 National Curriculum: A study of an aspect or theme in British history that consolidates and extends pupils' chronological knowledge from before 1066 to the twentieth century (Public Health, Science, Technology, and the State).",
+    "disciplinary_threads": "Change & Continuity across millennia, Multi-Factor Causation, Primary Source Evidential Scrutiny, and Thematic Synthesis.",
+    "non_specialist_summary": "This thematic Year 7 enquiry traces two thousand years of British water engineering and public health from Roman Londinium and Aquae Sulis to the compulsory 1875 Public Health Act. Pupils discover that public health never improved in a neat upward line: Roman gravity aqueducts collapsed after AD 410, medieval monasteries outshone crowded market boroughs, and Victorian industrial cities plunged life expectancy to nineteen before Dr John Snow, Sir Joseph Bazalgette, Louis Pasteur, and parliamentary reform defeated waterborne cholera."
+  }
 };

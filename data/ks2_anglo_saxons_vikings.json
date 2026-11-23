@@ -926,7 +926,8 @@
           ]
         ],
         "spokenTakeaway": "Here is the big story in one sentence. <short pause> Pushed by flooded marshes and pulled by rich farmland, Angles, Saxons, and Jutes built timber mead-hall villages, formed seven kingdoms, and gave England its name and language."
-      }
+      },
+      "banner_caption": "Panoramic View of Reconstructed Early Anglo-Saxon Thatched Timber Houses at West Stow Village, Suffolk"
     },
     {
       "id": "lesson_2",
@@ -1813,6 +1814,11 @@
           ]
         ],
         "spokenTakeaway": "Here is the big story in one sentence. <short pause> Sutton Hoo's royal ship burial and Christian monasteries at Canterbury, Lindisfarne, and Jarrow reveal dazzling Anglo-Saxon craftwork, trade, and vellum scholarship."
+      },
+      "banner_caption": "The great solid-gold belt buckle from the royal ship burial at Sutton Hoo (early AD 600s), decorated with intricately twisted ribbons of Anglo-Saxon animal artwork.",
+      "banner": {
+        "image": "/units/ks2_anglo_saxons_vikings/assets/sutton_hoo_gold_buckle.jpg",
+        "caption": "The great solid-gold belt buckle from the royal ship burial at Sutton Hoo (early AD 600s), decorated with intricately twisted ribbons of Anglo-Saxon animal artwork."
       }
     },
     {
@@ -2700,6 +2706,11 @@
           ]
         ],
         "spokenTakeaway": "Here is the big story in one sentence. <short pause> Using fast, shallow-draught oak longships, Vikings raided Lindisfarne in AD 793 before the Great Heathen Army landed in AD 865 and conquered every Saxon kingdom except Wessex."
+      },
+      "banner_caption": "Re-enactors in iron helmets and chainmail locking painted wooden shields and raising long spears beside the sea, showing how Viking raiders fought after beaching their longships.",
+      "banner": {
+        "image": "/units/ks2_anglo_saxons_vikings/assets/viking_coastal_shield_wall.jpg",
+        "caption": "Re-enactors in iron helmets and chainmail locking painted wooden shields and raising long spears beside the sea, showing how Viking raiders fought after beaching their longships."
       }
     },
     {
@@ -3631,6 +3642,11 @@
           ]
         ],
         "spokenTakeaway": "Here is the big story in one sentence. <short pause> After regrouping in the Somerset marshes to win at Edington in AD 878, King Alfred agreed the Danelaw border, built 33 fortified burhs, and revived English books."
+      },
+      "banner_caption": "Warriors standing shoulder to shoulder in a tight shield wall of painted round shields and raised battle-axes in front of a tall wooden palisade.",
+      "banner": {
+        "image": "/units/ks2_anglo_saxons_vikings/assets/viking_palisade_shield_wall.jpg",
+        "caption": "Warriors standing shoulder to shoulder in a tight shield wall of painted round shields and raised battle-axes in front of a tall wooden palisade."
       }
     },
     {
@@ -4550,6 +4566,11 @@
           ]
         ],
         "spokenTakeaway": "Here is the big story in one sentence. <short pause> Excavations under Coppergate in Jorvik reveal that Vikings were skilled craftworkers, global merchants trading Baghdad silver dirhams, and farmers who gave English words like sky and egg."
+      },
+      "banner_caption": "A reconstructed Viking townhouse and planked wooden walkway at Ribe in Denmark, built with whitewashed walls, sturdy oak posts, and a steep reed-thatched roof.",
+      "banner": {
+        "image": "/units/ks2_anglo_saxons_vikings/assets/ribe_viking_longhouse.jpg",
+        "caption": "A reconstructed Viking townhouse and planked wooden walkway at Ribe in Denmark, built with whitewashed walls, sturdy oak posts, and a steep reed-thatched roof."
       }
     },
     {
@@ -5481,6 +5502,11 @@
           ]
         ],
         "spokenTakeaway": "Here is the big story in one sentence. <short pause> Aethelflaed and Athelstan forged one Kingdom of England and Cnut ruled a North Sea Empire before 1066 ended both the Viking Age at Stamford Bridge and Saxon rule at Hastings."
+      },
+      "banner_caption": "Re-enactors clashing with spears, swords, chainmail, and painted shields beneath battle banners to recreate the fierce struggle at the Battle of Hastings in October 1066.",
+      "banner": {
+        "image": "/units/ks2_anglo_saxons_vikings/assets/hastings_1066_shield_wall.jpg",
+        "caption": "Re-enactors clashing with spears, swords, chainmail, and painted shields beneath battle banners to recreate the fierce struggle at the Battle of Hastings in October 1066."
       }
     }
   ],

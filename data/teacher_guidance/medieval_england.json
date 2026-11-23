@@ -1,0 +1,116 @@
+{
+  "unit_id": "medieval_england",
+  "unit_overview": {
+    "curriculum_focus": "KS3 National Curriculum: The development of Church, state and society in Medieval Britain 1066–1509.",
+    "disciplinary_threads": "Causation, Change & Continuity, Primary Source Evidential Scrutiny, and Historical Interpretations.",
+    "non_specialist_summary": "This Year 7 unit investigates how power was seized, enforced, and contested across medieval England from the 1066 succession crisis to the 1381 Peasants' Revolt. Pupils see how William the Conqueror's tiny Norman elite subjugated two million Anglo-Saxons through castles, terror, and the Domesday Book, before tracing three great limits placed on royal power: the Church under Thomas Becket (1170), the barons at Runnymede in Magna Carta (1215), and ordinary working peasants after the Black Death (1348–1381)."
+  },
+  "lessons": {
+    "lesson_1": {
+      "curriculum_link": "KS3 Medieval Britain (1066–1509): The Norman Conquest — multi-causal analysis of military tactics, logistics, and leadership at Stamford Bridge and Hastings.",
+      "hinge_question": "If King Harold's Anglo-Saxon shield wall held Senlac Hill for five gruelling hours on 14 October 1066, what actually broke it in the late afternoon?",
+      "hinge_guidance": "Look for pupils combining tactical innovation with cumulative exhaustion: Duke William turned Breton panic on his left flank into deliberate feigned retreats that lured undisciplined fyrd militia downhill out of their locked shield wall, allowing Norman heavy cavalry to wheel round and cut them down. Probe pupils who claim 'Norman archers simply shot Harold in the eye' as a standalone explanation without explaining how the shield wall was thinned first.",
+      "misconceptions": [
+        {
+          "misconception": "Harold Godwinson stole the throne illegally because the eldest son always inherited the Anglo-Saxon crown.",
+          "correction": "Edward the Confessor died childless on 5 January 1066, and in Anglo-Saxon England the Witan council held the lawful constitutional right to elect the strongest adult candidate—crowning Harold II (Source B)."
+        },
+        {
+          "misconception": "The Anglo-Saxon army was poorly armed and easily swept aside by superior Norman knights.",
+          "correction": "Harold's elite mail-clad housecarls wielding two-handed battleaxes locked shields atop Senlac Hill and repelled uphill Norman cavalry charges and arrows for five hours (Bayeux Tapestry Scene 52)."
+        },
+        {
+          "misconception": "The Bayeux Tapestry is a neutral eyewitness strip cartoon showing exactly what happened in 1066.",
+          "correction": "Commissioned in the 1070s for William's half-brother Bishop Odo of Bayeux, Scenes 23, 55, and 57 (Sources A, D, and E) were embroidered as Norman propaganda framing Harold as a perjured oath-breaker punished by God."
+        }
+      ],
+      "send_adaptation": "Pre-teach Witan (Anglo-Saxon royal council) and feigned retreat (faking flight to lure defenders downhill). Use the 1066 Reference Map to trace Harold's 190-mile march north to Stamford Bridge and 250-mile march south with a finger before reading, then pair Bayeux Tapestry Scenes 52 and 55 (Source D) to visualise why uphill cavalry failed until the shield wall broke.",
+      "stretch_challenge": "Challenge higher-attaining pupils to weigh strategic luck against tactical skill: would William's feigned retreats at Hastings have succeeded if Harald Hardrada's 300 longships had not forced Harold II to fight at Stamford Bridge (Source C) nineteen days earlier?"
+    },
+    "lesson_2": {
+      "curriculum_link": "KS3 Medieval Britain (1066–1509): Consolidating the Norman Conquest — evaluating military architecture, state terror, feudalism, and Domesday bureaucracy.",
+      "hinge_question": "How did fewer than 10,000 Normans keep permanent control over two million hostile Anglo-Saxons when swords and battlefields alone could not be everywhere at once?",
+      "hinge_guidance": "Strong answers connect three interlocking tools of control: rapid physical domination (over 500 motte-and-bailey castles built in 8–14 days, then stone keeps like Portchester), merciless deterrence (the 1069–70 Harrying of the North), and total economic dispossession recorded in the 1086 Domesday Book (Source D). Probe any pupil who focuses only on castles without explaining how stripping land from Anglo-Saxon thegns funded Norman knights.",
+      "misconceptions": [
+        {
+          "misconception": "William the Conqueror immediately built giant stone castles with turrets across England in 1066.",
+          "correction": "Stone keeps like Portchester Castle (Source E) took years to quarry and build; in 1066–1068 Normans threw up over 500 earth-and-timber motte-and-bailey forts like Hastings and Berkhamsted (Source B) in under two weeks."
+        },
+        {
+          "misconception": "The 1086 Domesday Book was a population census counting every man, woman, and child in England.",
+          "correction": "Commissioned at Gloucester in 1085 when King Cnut IV of Denmark threatened invasion, the Domesday Book (Source D) audited manors, ploughs, mills, and livestock so William could extract maximum gelds and feudal knight service."
+        },
+        {
+          "misconception": "After winning the Battle of Hastings in October 1066, Anglo-Saxon resistance ended immediately.",
+          "correction": "Major rebellions erupted for five years, peaking in 1069 when northern rebels and Danes wiped out the Norman garrison at York—provoking William's scorched-earth Harrying of the North (Source C)."
+        }
+      ],
+      "send_adaptation": "Pre-teach motte-and-bailey (raised earth mound and timber courtyard fort) and Harrying (scorched-earth destruction of crops and villages). Chunk the Verso 5-Stage Spine into three concrete symbols—'Sword/Castle' (Stages 1 & 3), 'Fire' (Stage 2), and 'Book/Tax' (Stages 4 & 5)—before pupils complete the Two Key Features task.",
+      "stretch_challenge": "Ask higher-attaining pupils to compare violent conquest with bureaucratic conquest: why was the 1086 Domesday survey of manors like Fareham (Source D) ultimately more permanent in destroying Anglo-Saxon power than the 1069 Harrying of the North?",
+      "safeguarding_impartiality": "Handle Orderic Vitalis and the Peterborough Chronicle accounts of the 1069–70 Harrying of the North (100,000 famine deaths) with sober historical gravity rather than sensationalism, framing scorched-earth famine as deliberate medieval state terror examined through monastic primary evidence."
+    },
+    "lesson_3": {
+      "curriculum_link": "KS3 Medieval Britain (1066–1509): Church versus Crown — analysing institutional conflict between royal common law and papal authority (1154–1174).",
+      "hinge_question": "Why did Thomas Becket's murder inside Canterbury Cathedral on 29 December 1170 end up weakening King Henry II rather than giving the Crown victory over Church courts?",
+      "hinge_guidance": "Look for pupils explaining how martyrdom inverted power in a devoutly Catholic Europe: slaughtering an Archbishop beside the altar horrified Christendom, led Pope Alexander III to canonise Becket within three years, and forced Henry II into barefoot public whipping by eighty Canterbury monks in July 1174 while abandoning trials of criminous clerks. Probe pupils who reduce the clash to a petty personal argument without mentioning the 1164 Constitutions of Clarendon and Benefit of Clergy.",
+      "misconceptions": [
+        {
+          "misconception": "Henry II and Thomas Becket quarrelled simply because two stubborn friends fell out personally.",
+          "correction": "At its core lay a fierce constitutional collision over who held supreme legal power in England: Henry's 1164 Constitutions of Clarendon (Source C) demanded royal trials for 'criminous clerks', while Becket defended papal Canon Law."
+        },
+        {
+          "misconception": "King Henry II sent four knights with written orders to execute Thomas Becket in Canterbury Cathedral.",
+          "correction": "Henry flew into a furious Christmas rage in Normandy after Becket excommunicated bishops supporting the Crown (Source D); four knights took his outburst literally, and the resulting murder ruined Henry's own legal campaign."
+        },
+        {
+          "misconception": "Medieval monarchs had total power and could ignore the Pope without serious consequences.",
+          "correction": "Because kings ruled over devout Christian subjects and feared papal interdict or excommunication, spiritual outrage forced even mighty Henry II to walk barefoot through Canterbury in 1174 and leave Benefit of Clergy intact."
+        }
+      ],
+      "send_adaptation": "Pre-teach criminous clerk (a churchman accused of serious crime like murder) and Benefit of Clergy (claiming trial in a lenient Church court by reading a Latin psalm). Use the Becket Leaves illuminations (Sources A and D) alongside Studio Audio to track Becket's visual shift from silk-robed Chancellor to hairshirt-wearing Archbishop.",
+      "stretch_challenge": "Challenge higher-attaining pupils to argue from King Henry II's perspective using Clause 3 of the Constitutions of Clarendon (Source C): why would a modern lawyer actually sympathise with Henry's frustration over 'criminous clerks' escaping royal justice?"
+    },
+    "lesson_4": {
+      "curriculum_link": "KS3 Medieval Britain (1066–1509): Magna Carta and the emergence of constitutional limits — evaluating historical significance and myth versus 1215 reality.",
+      "hinge_question": "Was Magna Carta at Runnymede on 15 June 1215 a heroic triumph for ordinary English people's freedom, or a selfish feudal contract forced by twenty-five angry barons?",
+      "hinge_guidance": "Strong answers hold both truths in tension: in 1215, rebel barons led by Robert Fitzwalter acted out of class self-interest over scutage taxes, lost Norman estates, and feudal widow/inheritance rights—excluding unfree serfs entirely—yet Clause 39 ('no free man shall be seized or imprisoned except by lawful judgement of his equals or the law of the land') planted the enduring seed of the Rule of Law that placed even the monarch beneath the law.",
+      "misconceptions": [
+        {
+          "misconception": "Magna Carta gave human rights, democracy, and freedom to every peasant in England in 1215.",
+          "correction": "Most of its 63 clauses protected wealthy feudal barons from extortionate scutage, and Clause 39 (Source D) applied strictly to 'free men'—excluding the unfree villeins and serfs who made up the majority of the population."
+        },
+        {
+          "misconception": "King John signed Magna Carta with a pen and obeyed it peacefully for the rest of his reign.",
+          "correction": "Medieval kings affixed a wax Great Seal (Source C) rather than signing, and within weeks John persuaded Pope Innocent III to annul the charter—plunging England into the First Barons' War and the siege of Rochester Castle (Source E)."
+        },
+        {
+          "misconception": "Barons rebelled against King John simply because he had a cruel personality compared with Richard the Lionheart.",
+          "correction": "While Richard drained England for crusades, he won battles; John lost ancestral Normandy in 1204 ('Softsword'), suffered a five-year Papal Interdict (1208–13), and squandered crushing scutage taxes in defeat at Bouvines in 1214."
+        }
+      ],
+      "send_adaptation": "Pre-teach scutage (cash tax paid instead of providing knights) and Interdict (the Pope locking England's churches for five years). Build the chronological chain on the Verso Spine—1204 Loss of Normandy -> 1208 Interdict -> 1214 Bouvines -> 1215 Runnymede -> 1216 Civil War—before scaffolding the 3-paragraph analytical narrative account.",
+      "stretch_challenge": "Push higher-attaining pupils to explain why Magna Carta survived at all if Pope Innocent III tore it up in 1215: why was regent William Marshal's decision to reissue the charter for nine-year-old Henry III after John's death in October 1216 just as decisive as Runnymede itself?"
+    },
+    "lesson_5": {
+      "curriculum_link": "KS3 Medieval Britain (1066–1509): Society, economy, and peasant agency — connecting demographic shock (1348 Black Death) to economic law and the 1381 Peasants' Revolt.",
+      "hinge_question": "If the Black Death arrived in 1348 and surviving farm workers were able to demand double wages, why did it take thirty-three years for the Peasants' Revolt to explode in May 1381?",
+      "hinge_guidance": "Look for pupils tracing long-term frustration colliding with a sharp political trigger: after the 1348–50 plague halved the workforce, lords used the 1351 Statute of Labourers (Source B) and 1363 Sumptuary Laws to freeze wages and brand runaway serfs, building thirty years of resentment that finally ignited when John Bampton tried to enforce the flat 12-pence third Poll Tax at Brentwood in May 1381. Probe pupils who jump straight from plague deaths to Wat Tyler marching on London without explaining wage caps and Poll Taxes.",
+      "misconceptions": [
+        {
+          "misconception": "The Black Death made surviving medieval peasants poorer because so many people died.",
+          "correction": "Acute labour shortages across empty villages gave surviving peasants unprecedented bargaining power (Henry Knighton, Source A), allowing workers to demand double wages and walk off harsh lords' manors."
+        },
+        {
+          "misconception": "The 1381 rebels were an unorganised rabble of starving beggars rioting blindly.",
+          "correction": "Led by Wat Tyler and radical preacher John Ball ('When Adam delved and Eve span, who was then the gentleman?', Source C), rebels included literate village officials and artisans who targeted Poll Tax rolls and demanded an end to serfdom."
+        },
+        {
+          "misconception": "Because Wat Tyler was stabbed at Smithfield and King Richard II broke his promises, the 1381 Peasants' Revolt achieved nothing.",
+          "correction": "Although fourteen-year-old Richard II revoked his charters and executed rebel leaders, terrified Parliament never levied a medieval Poll Tax again and unpaid serfdom steadily withered away over the next century."
+        }
+      ],
+      "send_adaptation": "Pre-teach serfdom (peasants legally tied to a lord's manor) and Poll Tax (a flat 12-pence tax paid equally by poor labourers and rich dukes). Use the supply-and-demand Concept Widget in Block 3 and Froissart's illuminations (Sources C–E) to rehearse why Froissart—writing for royal patrons—portrayed Wat Tyler negatively.",
+      "stretch_challenge": "Challenge higher-attaining pupils to connect Lesson 5 back to Lesson 2 and Lesson 4: in 1086 Domesday locked peasants onto Norman manors and in 1215 Magna Carta ignored unfree villeins—how did a microscopic bacterium in 1348 weaken feudalism faster than any royal charter?"
+    }
+  }
+}

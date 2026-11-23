@@ -1,0 +1,164 @@
+{
+  "unit_id": "the_shoah",
+  "unit_overview": {
+    "curriculum_focus": "KS3 National Curriculum (Statutory Requirement): Challenges for Britain, Europe and the wider world 1901 to the present day — The Holocaust / Shoah.",
+    "disciplinary_threads": "Change and Continuity, Forensic Archival Scrutiny, Historical Interpretations, Agency & Resistance, and Ethical Significance.",
+    "non_specialist_summary": "Beginning deliberately with the rich cultural diversity of Europe's 9.5 million pre-war Jewish citizens rather than Nazi persecution, this seven-enquiry Year 9 unit traces how anti-Jewish policy radicalised from legal exclusion in Germany (1933–1939) to wartime ghettoisation in occupied Poland (1939–1941), mass shootings during Operation Barbarossa (1941), and industrialised extermination camps (1942–1944). Throughout every enquiry, pupils examine spiritual and armed Jewish resistance alongside European collaboration, rescue, and post-1945 Displaced Persons trauma and international justice."
+  },
+  "lessons": {
+    "lesson_1": {
+      "curriculum_link": "KS3 National Curriculum (Statutory Holocaust Study): Pre-war European Jewish diversity (Yiddishland, assimilated Central/Western citizens, Sephardic Salonica) and the shift from religious anti-Judaism to racial antisemitism — Feature Identification & Conceptual Contrast.",
+      "hinge_question": "Why did nineteenth-century racial theorists like Wilhelm Marr make modern antisemitism far more inescapable than medieval religious anti-Judaism?",
+      "hinge_guidance": "Strong answers pinpoint the shift documented in Block [1.5] and Source E: medieval Christian anti-Judaism targeted religious belief (meaning conversion or baptism could theoretically alter a person's legal status), whereas pseudo-scientific racial antisemitism falsely claimed Jewishness was a fixed biological trait 'in the blood' that no conversion, assimilation, or patriotic war service could change. Probe any pupil who treats pre-war European Jews as a single uniform group—ask them to contrast Yiddish-speaking Warsaw (Source B), patriotic German WWI veterans (Source C), and Ladino-speaking dockworkers in Thessaloniki (Source D).",
+      "misconceptions": [
+        {
+          "misconception": "Pupils often assume most of Europe's pre-war Jewish population lived inside Germany.",
+          "correction": "Of roughly 9.5 million European Jews in 1933, German Jews numbered around half a million (under one percent of Germany's population), whereas over 5.5 million lived in Poland and the Soviet Union (Source A)."
+        },
+        {
+          "misconception": "Pupils imagine pre-war Eastern European Jews lived only in isolated, backward rural villages.",
+          "correction": "Alongside small market shtetls, vibrant modern capitals like Warsaw (350,000+ Jews, over twenty Yiddish daily papers, and five professional theatres, Source B) and Vilna flourished with secular schools, unions, and arts."
+        },
+        {
+          "misconception": "Pupils assume German Jews before 1933 lived as outsiders separate from German national life.",
+          "correction": "Emancipated in 1871, German Jews were deeply integrated citizens; over 100,000 served in the Imperial German Army during WWI, with 12,000 killed in action and 18,000 awarded the Iron Cross (Source C)."
+        }
+      ],
+      "send_adaptation": "Use the Block 1 Reference Map to locate the three distinct cultural zones (Eastern Yiddishland, Central Berlin, Southern Sephardic Thessaloniki) and pair the Block 5 spectrum slider with the scaffolded 'Two Key Features' sentence starters on the Recto page.",
+      "stretch_challenge": "Using Source A (1933 population map), explain why Nazi Germany's military expansion eastward into Poland (1939) and the USSR (1941)—rather than events inside Germany alone—placed the vast majority of European Jewry in mortal danger.",
+      "safeguarding_impartiality": "Holocaust Pedagogical & Pastoral Framing: Always anchor this unit in vibrant pre-war human life, family diversity, and civic belonging so pupils grasp who Jewish people were as individuals before studying persecution. Never ask pupils to debate racial theories as if pseudo-science held factual validity; explicitly dismantle Wilhelm Marr's 1879 biological claims (Source E) as an unscientific political lie."
+    },
+    "lesson_2": {
+      "curriculum_link": "KS3 National Curriculum (Statutory Holocaust Study): Progressive legal ostracism in Nazi Germany (1933–1939), the 1935 Nuremberg Laws, 'social death', Kristallnacht, and the 1938 Evian refugee crisis — Chronological Narrative Analysis.",
+      "hinge_question": "How do Professor Victor Klemperer's Dresden diary (Source C) and the Frankfurt firefighter orders on 10 November 1938 (Source D) prove that Kristallnacht was a major turning point rather than a random street riot?",
+      "hinge_guidance": "Listen for pupils tracing the escalation from cumulative legal humiliation to coordinated state terror: between 1933 and 1938 over 400 decrees and the 1935 Nuremberg Laws imposed 'social death' step by step (Source C), whereas on 9–10 November 1938 Goebbels and the state unleashed nationwide arson and 30,000 camp arrests while ordering municipal firefighters to protect only adjacent non-Jewish buildings (Source D). Probe any pupil who assumes Hitler already had gas chambers operating in 1933–1938—clarify that pre-war Nazi policy aimed at economic ruin and forced emigration against closed international borders (Evian Conference, Source E).",
+      "misconceptions": [
+        {
+          "misconception": "Pupils assume the Nazi regime built extermination camps immediately upon taking power in January 1933.",
+          "correction": "Between 1933 and 1939 Nazi policy escalated through boycotts, civil service purges, the 1935 Nuremberg Laws, and violent pogroms aimed at terrorising German Jews into emigrating while stripping their wealth."
+        },
+        {
+          "misconception": "Pupils think the 1935 Nuremberg Laws targeted only observant synagogue-goers.",
+          "correction": "The Reich Interior Ministry's racial chart (Source B) defined Jewish status strictly by having three or four Jewish grandparents, stripping citizenship even from secular Germans or Christian converts."
+        },
+        {
+          "misconception": "Pupils ask 'Why didn't German Jews simply leave before 1939?' assuming foreign borders stood wide open.",
+          "correction": "At the July 1938 Evian Conference, delegates from 32 nations expressed sympathy while refusing to lift strict immigration quotas (Source E); even Britain's Kindertransport rescued 10,000 children only on condition that their parents remained behind."
+        }
+      ],
+      "send_adaptation": "Pair Victor Klemperer's concrete diary examples in Source C (losing radios, libraries, driving licences, and jobs) with the Block 3 profile deck, then follow the three-stage Beginning/Middle/End structure strip on the Recto narrative task.",
+      "stretch_challenge": "Evaluate Australian delegate T. W. White's statement at the July 1938 Evian Conference (Source E): how did international refusal to admit refugees embolden the Nazi leadership between July and November 1938?",
+      "safeguarding_impartiality": "Holocaust Pedagogical & Pastoral Framing: Never use classroom segregation games, 'imagine you were banned' roleplay, or arbitrary eye-colour exercises to simulate Nazi decrees. Ground understanding respectfully in authentic human testimony such as Victor Klemperer's diary (Source C), and be mindful of refugee, adopted, or bereaved pupils when teaching family separation on the Kindertransport."
+    },
+    "lesson_3": {
+      "curriculum_link": "KS3 National Curriculum (Statutory Holocaust Study): The September 1939 conquest of Poland, Heydrich's Schnellbrief, sealed ghettos (Warsaw & Lodz), child smugglers, and the Oneg Shabbat archive — Evidential Source Utility.",
+      "hinge_question": "Why did historian Emanuel Ringelblum and nineteen-year-old David Graber risk execution to bury diaries and German decrees inside metal milk cans beneath the Warsaw Ghetto?",
+      "hinge_guidance": "Strong responses explain 'spiritual resistance' using Block [3.5] and Source E: trapped behind a three-metre brick wall on starvation rations of 180–220 calories a day, Ringelblum's Oneg Shabbat team recognised that Nazi propaganda intended to erase both Jewish lives and truthful memory—so preserving victim eyewitness voices underground ensured historical truth would outlive their murderers. Probe pupils who think ghettos were ancient neighbourhood quarters where Jewish families chose to live; use Source C (Governor Ludwig Fischer's October 1940 boundary decree) to show they were coercive walled prisons.",
+      "misconceptions": [
+        {
+          "misconception": "Pupils confuse wartime Nazi ghettos with ordinary pre-war Jewish neighbourhoods.",
+          "correction": "Nazi ghettos were sealed open-air prisons created by occupation decrees in 1940: Warsaw's ghetto locked 450,000 people from across the region behind a three-metre brick wall in 1.3 square miles at seven to nine people per room (Source C)."
+        },
+        {
+          "misconception": "Pupils assume 'resistance' in the Holocaust meant only fighting German soldiers with guns.",
+          "correction": "Alongside armed defiance, imprisoned communities waged vital spiritual and civic resistance—running secret schools, soup kitchens, orphanages, child food-smuggling lifelines (Source D), and the buried Oneg Shabbat archive (Source E)."
+        },
+        {
+          "misconception": "Pupils think starvation in the Warsaw Ghetto was caused by accidental wartime food shortages across Poland.",
+          "correction": "Starvation was a deliberate Nazi weapon: German officials capped official Jewish rations at roughly 180–220 calories a day, killing over 80,000 people in Warsaw through hunger and typhus between 1940 and 1942."
+        }
+      ],
+      "send_adaptation": "Compare Governor Fischer's official German boundary map (Source C) directly with Mary Berg's diary and David Graber's milk-can testament (Sources D–E) using the Block 5 profile deck before scaffolding the two-paragraph Recto source utility response.",
+      "stretch_challenge": "Examine Reinhard Heydrich's 21 September 1939 Schnellbrief (Source A): why did Heydrich insist on concentrating rural Polish Jewish communities specifically into cities located on major railway junctions?",
+      "safeguarding_impartiality": "Holocaust Pedagogical & Pastoral Framing: Frame ghetto conditions through the dignified eyewitness words of diarists Mary Berg and David Graber (Sources D and E) rather than dehumanising Nazi propaganda films. Emphasise mutual aid, child food smugglers, and cultural resilience so victims are encountered as active moral agents striving to keep families alive under impossible coercion."
+    },
+    "lesson_4": {
+      "curriculum_link": "KS3 National Curriculum (Statutory Holocaust Study): Operation Barbarossa (June 1941), the 'Holocaust by Bullets' (Einsatzgruppen, Order Police, Babyn Yar, Ponary), local collaboration, and perpetrator historiography (Browning vs Goldhagen).",
+      "hinge_question": "Why does studying Operation Barbarossa in summer 1941 overturn the common belief that the Holocaust happened entirely behind barbed wire inside gas chambers?",
+      "hinge_guidance": "Look for pupils citing concrete evidence from Blocks [4.2]–[4.4] and Sources B–D: between June 1941 and 1942, SS Einsatzgruppen, Order Police battalions, and local Baltic/Ukrainian auxiliaries murdered over 1.5 million Jewish men, women, and children in open-air face-to-face mass shootings at ravines and forests such as Babyn Yar (33,771 murdered in 36 hours) and Ponary. Probe pupils on why Himmler ordered Chelmno gas vans in late 1941 (Block [4.5] and Source E)—not out of mercy for victims, but to shield executioners from psychological breakdown.",
+      "misconceptions": [
+        {
+          "misconception": "Pupils assume every Holocaust victim was deported by train to camp gas chambers.",
+          "correction": "Roughly 1.5 to 2 million Jewish civilians were murdered close to their home towns in open-air ravines and forest pits across occupied Soviet and Baltic territories during the 'Holocaust by Bullets' from June 1941."
+        },
+        {
+          "misconception": "Pupils assume only fanatical black-uniformed SS soldiers carried out shootings, forced at gunpoint if they hesitated.",
+          "correction": "Middle-aged civilian reservists in Order Police units (such as Reserve Police Battalion 101) and local Baltic volunteers carried out mass shootings, and historian Christopher Browning showed policemen were given the option to step out without execution."
+        },
+        {
+          "misconception": "Pupils think the regular German army (Wehrmacht) fought a clean military war separate from SS atrocities.",
+          "correction": "The June 1941 OKW Commissar Order (Source A) framed Barbarossa from the outset as a merciless ideological war of racial annihilation, with Wehrmacht units securing towns and logistics alongside Einsatzgruppen squads."
+        }
+      ],
+      "send_adaptation": "Use the Block 1 Reference Map to distinguish occupied Poland's ghettos from the 1941 Barbarossa shooting sites to the east, then summarise Browning ('peer conformity') vs Goldhagen ('deep ideological antisemitism') in two clear side-by-side boxes before tackling the Recto interpretations task.",
+      "stretch_challenge": "Analyse the language in Willy Just's technical memorandum on Chelmno gas vans (Source E) alongside the Babyn Yar report (Source C): why did Nazi officials deliberately disguise mass murder behind cold bureaucratic and engineering euphemisms?",
+      "safeguarding_impartiality": "Holocaust Pedagogical & Pastoral Framing: This enquiry confronts the transition to systematic mass murder, including sensitive archival plates from Ukraine and Babyn Yar. Forewarn pupils calmly before the lesson, never zoom sensationally on atrocity photographs, and interrogate official German documents (Sources A, B, C, and E) critically so perpetrator euphemisms ('actions', 'processed') never obscure the humanity of the families murdered."
+    },
+    "lesson_5": {
+      "curriculum_link": "KS3 National Curriculum (Statutory Holocaust Study): The January 1942 Wannsee Conference, Operation Reinhard extermination camps vs Auschwitz-Birkenau, the 1943 Warsaw Ghetto Uprising, and camp revolts — Feature Identification & Agency.",
+      "hinge_question": "What made Operation Reinhard camps (Belzec, Sobibor, Treblinka) fundamentally different from pre-war concentration camps—and how do the 1943–1944 uprisings shatter the myth of passive victimhood?",
+      "hinge_guidance": "Strong responses tackle both halves cleanly: unlike pre-war prison/labour camps (or dual-function Auschwitz-Birkenau), Belzec, Sobibor, and Treblinka were pure extermination sites with zero slave-labour selection where victims were murdered within two hours of arrival (Block [5.2] and the Hofle Telegram, Source B); yet despite starvation and collective reprisals, fighters mounted 27 days of urban battle in the Warsaw Ghetto (Source D) plus armed revolts inside Treblinka, Sobibor, and Birkenau Crematorium IV (Source E). Probe any pupil who thinks Hitler first decided to murder Europe's Jews at Wannsee—Wannsee lasted ninety minutes to coordinate ministerial bureaucracy and railways for a genocide already underway.",
+      "misconceptions": [
+        {
+          "misconception": "Pupils think Adolf Hitler attended the Wannsee Conference in January 1942 to invent the 'Final Solution'.",
+          "correction": "Hitler was not at Wannsee, and mass murder had already killed hundreds of thousands in 1941; Heydrich chaired the 90-minute meeting of 15 senior civil servants and SS officials to coordinate European-wide ministries and railways (Source A)."
+        },
+        {
+          "misconception": "Pupils conflate all Nazi concentration camps with dedicated extermination camps.",
+          "correction": "Camps inside Germany like Dachau and Belsen were brutal concentration camps (without industrial gas chambers), Operation Reinhard sites (Belzec, Sobibor, Treblinka) were pure death camps, and Auschwitz-Birkenau combined both functions."
+        },
+        {
+          "misconception": "Pupils repeat the false trope that Jewish victims went 'like sheep to the slaughter' without fighting back.",
+          "correction": "Despite total isolation and lack of Allied arms drops, Mordechai Anielewicz's ZOB/ZZW held off German tanks in Warsaw for 27 days, prisoners broke out of Treblinka and Sobibor, and Roza Robota's gunpowder blew up Birkenau's Crematorium IV."
+        }
+      ],
+      "send_adaptation": "Use the Block 1 Reference Map to distinguish the three Operation Reinhard camps from Auschwitz-Birkenau visually, and use the built-in sentence starters on the Recto 'Two Key Features' task focusing on transit-station deception and rapid killing logistics.",
+      "stretch_challenge": "Examine the 15 attendees of the January 1942 Wannsee Conference (Block [5.1] and Source A—many holding university law doctorates from Justice, Foreign, and Transport ministries): why was educated civil-service cooperation essential to industrial genocide?",
+      "safeguarding_impartiality": "Holocaust Pedagogical & Pastoral Framing: Maintain clinical historical precision when distinguishing concentration camps from extermination centres, avoiding sensationalist descriptions of gas chambers. Balance logistical documents (Sources A–C) directly with the named moral courage of young Jewish resisters—Mordechai Anielewicz, Stanislaw Szmajzner, and Roza Robota (Sources D–E)—honouring their choice to defend human dignity."
+    },
+    "lesson_6": {
+      "curriculum_link": "KS3 National Curriculum (Statutory Holocaust Study): Raul Hilberg's bureaucracy of destruction, European collaboration (Vichy France & Hungary), bystanders, Righteous rescuers (Denmark, Le Chambon, Sugihara), and Allied knowledge — Source Utility.",
+      "hinge_question": "Why does comparing Paris in July 1942 (Source B) with Denmark in October 1943 (Source E) prove that local citizens and authorities held real power to determine whether Jewish neighbours lived or died?",
+      "hinge_guidance": "Listen for a sharp comparative contrast: in Paris, 9,000 French municipal police officers—not German soldiers—carried out the Vel d'Hiv roundup of 13,152 Jewish men, women, and children for deportation (Source B), whereas in occupied Denmark leaked warnings, church protests, and ordinary citizens and fishermen hid and ferried over 7,200 Danish Jews to neutral Sweden, saving over 95 percent of the community (Source E). Probe simplistic explanations blaming everything solely on Hitler and a handful of SS fanatics while ignoring Reichsbahn railway clerks (Source A), local police, and profiting bystanders.",
+      "misconceptions": [
+        {
+          "misconception": "Pupils assume every roundup across Nazi-occupied Europe was carried out solely by German SS troops.",
+          "correction": "Across Europe the SS relied heavily on domestic collaborators—including 9,000 French police in the 1942 Paris Vel d'Hiv roundup (Source B) and Hungarian authorities who deported 437,000 citizens in 54 days in 1944."
+        },
+        {
+          "misconception": "Pupils assume ordinary railway clerks and civil servants had no real connection to the death camps.",
+          "correction": "Raul Hilberg's 'desk murderers' and Deutsche Reichsbahn officials scheduled deportation cattle trains and billed the SS per passenger-kilometre (one-way, children half-price) just like routine commercial traffic (Source A)."
+        },
+        {
+          "misconception": "Pupils believe British and American leaders knew nothing about the extermination camps until liberation in 1945.",
+          "correction": "Polish courier Jan Karski delivered eyewitness testimony to London and Washington in late 1942, prompting the Allies' public December 1942 condemnation—though Allied commanders prioritized general military victory over bombing Auschwitz rail lines (Block [6.5])."
+        }
+      ],
+      "send_adaptation": "Use the Block 3 profile deck to map individuals onto four clear categories (Desk Perpetrator, Collaborator, Bystander, Rescuer) before cross-referencing the Paris police circular and Danish rescue accounts on the Recto source utility task.",
+      "stretch_challenge": "Assess Ian Kershaw's verdict in Block [6.3] ('The road to Auschwitz was built by hatred, but paved with indifference'): why were ordinary bystanders who bought auctioned Jewish furniture or stayed silent just as vital to Nazi policy as ideological fanatics?",
+      "safeguarding_impartiality": "Holocaust Pedagogical & Pastoral Framing: Avoid asking pupils 'What would you have done?'—which invites unrealistic moralising outside the reality of totalitarian terror. Instead, ask historically grounded analytical questions about why specific individuals and communities (Chiune Sugihara, Le Chambon-sur-Lignon, Danish citizens, and White Rose students in Sources C–E) made the choices they did."
+    },
+    "lesson_7": {
+      "curriculum_link": "KS3 National Curriculum (Statutory Holocaust Study): Winter 1944–45 death marches, camp liberation (Auschwitz & Bergen-Belsen), Displaced Persons & Windermere Children, Nuremberg & Raphael Lemkin's Genocide Convention, and memory — Evaluative Essay.",
+      "hinge_question": "Why did Allied liberation of camps like Bergen-Belsen in April 1945 mark the end of Nazi murder yet the beginning of an agonising new struggle for surviving Jewish people?",
+      "hinge_guidance": "Strong answers balance immediate physical rescue by Allied soldiers and medics (Source B) against the devastating aftermath in Block [7.3] and Source C: tens of thousands died even after liberation from typhus and starvation, survivors discovered entire families and pre-war towns had been wiped out, hostile post-war violence such as the 1946 Kielce pogrom blocked return home, and over 250,000 survivors spent years behind wire in Displaced Persons camps or turned back aboard ships like SS Exodus (1947). Probe pupils who confuse Bergen-Belsen (a western concentration camp overwhelmed by winter death-march evacuees, liberated by Britain) with eastern extermination camps like Treblinka or Auschwitz-Birkenau.",
+      "misconceptions": [
+        {
+          "misconception": "Pupils assume Bergen-Belsen—famous from British liberation newsreels and Richard Dimbleby's broadcast—was one of the Nazi gas-chamber extermination camps.",
+          "correction": "Extermination centres lay further east in occupied Poland (liberated by Soviet forces); Bergen-Belsen in northern Germany had no gas chambers, becoming a typhus-ridden death trap as Himmler's winter 1944–45 death marches dumped tens of thousands of starving prisoners there."
+        },
+        {
+          "misconception": "Pupils assume liberated survivors simply caught trains home to their pre-war houses and resumed normal life in May 1945.",
+          "correction": "With families murdered, pre-war homes occupied, and deadly antisemitic attacks continuing (such as Kielce in 1946), over 250,000 Jewish survivors remained in Allied Displaced Persons camps for years while Britain admitted 300 orphaned Windermere Children."
+        },
+        {
+          "misconception": "Pupils think the legal crime of 'genocide' already existed in international law before the Second World War.",
+          "correction": "Polish-Jewish jurist Raphael Lemkin—who lost 49 relatives in the Shoah—coined the word 'genocide' in 1944 and campaigned tirelessly for the 1948 UN Genocide Convention alongside the Nuremberg principle rejecting 'superior orders' (Source D)."
+        }
+      ],
+      "send_adaptation": "Use the Block 4 profile deck (Nuremberg IMT and Raphael Lemkin) and the Verso 5-Stage Chronology Spine to build two clear columns ('Relief Brought by Liberation' vs 'Ongoing Trauma in DP Camps & Loss') before writing the Recto balanced judgement essay.",
+      "stretch_challenge": "Reflect on Primo Levi's warning in Source E ('It happened, therefore it can happen again') across all seven enquiries of this unit: why is understanding the human, bureaucratic steps from 1933 to 1945 a stronger safeguard than treating perpetrators as inhuman monsters?",
+      "safeguarding_impartiality": "Holocaust Pedagogical & Pastoral Framing: Conclude the unit with dignity, quiet reflection, and agency. Handle Richard Dimbleby's April 1945 Bergen-Belsen broadcast (Source B) and Elie Wiesel's death-march account (Source A) with calm solemnity, highlight post-war healing among the 300 Windermere Children and Raphael Lemkin's transformation of grief into international human rights law, and give pupils quiet space to process what was lost."
+    }
+  }
+}

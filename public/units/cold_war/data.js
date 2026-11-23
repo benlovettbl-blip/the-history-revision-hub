@@ -1938,7 +1938,26 @@ export default {
             ],
             "title": "Lesson 2: 1945–46 Power Vacuum, Primary Sources & Consequence/Narrative Writing (Stages 4–5) (50 mins)"
           }
-        }
+        },
+        "curriculum_link": "KS3 National Curriculum (Challenges 1901–Present): Ideological clash between US liberal capitalism and Soviet Marxist-Leninist command socialism, pre-1945 grievances, and the 1945 European power vacuum — Consequence Explanation.",
+        "hinge_question": "Why did pre-war memories from 1918 to 1939 make Washington and Moscow interpret every post-1945 defensive move by the other side as an aggressive plot?",
+        "hinge_guidance": "Strong answers anchor 1945 suspicion in concrete mutual grievances from Block [3.1]–[3.2] alongside ideology: Stalin never forgot Western military intervention against the Bolsheviks in 1918–20 or exclusion from the 1938 Munich Conference, while Western democracies never forgave Stalin's August 1939 Nazi-Soviet Pact carving up Poland. Combined with America's temporary August 1945 atomic monopoly and George Kennan's February 1946 Long Telegram (Source D), both sides read security steps as hostility. Probe pupils who think hostility began out of nowhere in May 1945—or who confuse Marxist economic ideals of worker equality (Source E) with Stalinist Politburo dictatorship in practice.",
+        "misconceptions": [
+          {
+            "misconception": "Pupils assume the USA and USSR were warm, trusting friends until Nazi Germany surrendered in May 1945.",
+            "correction": "Their wartime Grand Alliance (1941–45) was strictly a marriage of convenience against Hitler, built atop bitter memories of 1918 Allied intervention in Russia and Stalin's 1939 Nazi-Soviet Pact."
+          },
+          {
+            "misconception": "Pupils confuse communism as an economic idea with personal wealth-hoarding by kings or monarchs.",
+            "correction": "Marxist-Leninist ideology abolished private ownership of factories, banks, and farms in the name of the working class (proletariat, Source E), though in practice power was monopolised by a one-party Communist Politburo in Moscow."
+          },
+          {
+            "misconception": "Pupils think both superpowers already possessed nuclear arsenals at the end of the Second World War in 1945.",
+            "correction": "From July 1945 until August 1949 the United States held an exclusive nuclear monopoly, which Stalin viewed as atomic blackmail and raced to match (Block [4.1]–[4.2])."
+          }
+        ],
+        "send_adaptation": "Use the Block 1 profile deck to compare US Capitalism vs Soviet Communism across three simple rows (Economy, Voting, Press) before applying the three-sentence 'Consequence' starter frame and word bank on the Recto task.",
+        "stretch_challenge": "Compare Stalin's February 1946 Bolshoi speech (Source A) with George Kennan's Long Telegram sent thirteen days later (Source D): how did each document convince its own capital that lasting compromise with the rival system was impossible?"
       },
       "vocab_cloze_text": "Once Nazi Germany surrendered in 1945, conflicting systems of [Ideology] shattered wartime unity. American free-market [Capitalism] and multi-party elections clashed directly with Soviet [Communism], which claimed to rule in the name of the industrial [Proletariat]. Convinced peaceful [Coexistence] with Stalin was impossible after 1946, Washington adopted George Kennan’s strategy of [Containment].",
       "banner": {
@@ -1951,7 +1970,8 @@ export default {
       "hero_image": "/images/upgraded/ks3-modern/cw_l1_banner_elbe_day_torgau_1945.jpg",
       "banner_position": "center 30%",
       "enquiry": "Why did rival ideas turn the USA and USSR into enemies after 1945?",
-      "enquiry_question": "Why did rival ideas turn the USA and USSR into enemies after 1945?"
+      "enquiry_question": "Why did rival ideas turn the USA and USSR into enemies after 1945?",
+      "banner_caption": "American and Soviet Officers Embracing at Torgau on Elbe Day (\"East Meets West\", 25 April 1945, U.S. Army Signal Corps): Wartime allies meeting across ruined Germany on the eve of the Cold War ideological divide."
     },
     {
       "id": "lesson_2",
@@ -3606,7 +3626,26 @@ export default {
             ],
             "title": "Lesson 2: Atomic Diplomacy, German Reparations & Chronological Narrative Writing (Stages 4–5) (50 mins)"
           }
-        }
+        },
+        "curriculum_link": "KS3 National Curriculum (Challenges 1901–Present): The Yalta (February 1945) and Potsdam (July–August 1945) Conferences, Poland's borders, leadership changes, and atomic diplomacy — Consequence & Diplomatic Scrutiny.",
+        "hinge_question": "What changed in the five months between Yalta (February 1945) and Potsdam (July 1945) to turn polite wartime compromises into open superpower confrontation?",
+        "hinge_guidance": "Listen for the three decisive shifts across Blocks [2.1]–[4.2]: Hitler was defeated (removing the shared enemy while Red Army troops physically occupied Poland and sidelined the democratic London Poles); anti-communist Harry S. Truman replaced Roosevelt and Clement Attlee replaced Churchill; and on 16 July 1945 the US tested the Trinity atomic bomb, stiffening Truman's stance while deepening Stalin's suspicion when Truman hinted at the weapon on 24 July (Source D). Probe pupils who think Potsdam erected the Berlin Wall—clarify that 1945 divided Germany and Berlin into four Allied occupation zones, whereas the Wall was not built until 1961.",
+        "misconceptions": [
+          {
+            "misconception": "Pupils often confuse the 1945 four-zone division of Berlin with the building of the concrete Berlin Wall in 1961.",
+            "correction": "At Yalta and Potsdam in 1945, the Allies divided defeated Germany—and Berlin deep inside the Soviet zone—into British, American, French, and Soviet occupation zones; the concrete Wall did not go up until August 1961."
+          },
+          {
+            "misconception": "Pupils assume Stalin was shocked and intimidated when Truman mentioned a 'new weapon of unusual destructive force' at Potsdam on 24 July 1945.",
+            "correction": "Soviet espionage inside the Manhattan Project had already briefed Stalin on the Trinity test, so Truman's secretive hint merely hardened Stalin's refusal to yield over Poland and accelerated the Soviet bomb programme."
+          },
+          {
+            "misconception": "Pupils think Stalin wanted control of Poland purely out of random greed rather than strategic security.",
+            "correction": "Having lost 27 million Soviet citizens after Germany invaded through Poland twice in thirty years, Stalin insisted on a compliant communist 'buffer zone' along Russia's western frontier—clashing head-on with Western pledges of free elections (Source B)."
+          }
+        ],
+        "send_adaptation": "Use the Block 2 spectrum slider and the Yalta vs Potsdam summit photographs (Sources A and E) so pupils can visually spot who changed seats around the table before writing their one-paragraph consequence of the 1945 atomic bomb.",
+        "stretch_challenge": "Connect Potsdam's reparations dispute (Block [5.1]—Stalin demanding $20 billion vs Truman and Attlee refusing) back to the 1919 Treaty of Versailles: why were Western leaders so determined not to repeat 1919 in western Germany?"
       },
       "vocab_cloze_text": "In February 1945, the wartime [Grand Alliance] met at Yalta and promised liberated Europeans democratic [Self-Determination], though Stalin demanded a friendly Eastern European [Buffer Zone] blocking future invasions. By the July 1945 Potsdam summit, bitter clashes over German [Reparations], rival [Spheres of Influence], and America’s brief [Atomic Monopoly] turned former allies into open rivals.",
       "banner": {
@@ -3619,7 +3658,8 @@ export default {
       "hero_image": "/images/upgraded/ks3-modern/cw_l2_banner_potsdam_round_table_1945.jpg",
       "banner_position": "center 30%",
       "enquiry": "Why did wartime allies turn into bitter rivals between Yalta and Potsdam?",
-      "enquiry_question": "Why did wartime allies turn into bitter rivals between Yalta and Potsdam?"
+      "enquiry_question": "Why did wartime allies turn into bitter rivals between Yalta and Potsdam?",
+      "banner_caption": "Plenary Session Around the Round Table at Cecilienhof Palace, Potsdam (July 1945): Within five months of Yalta, clashes over Poland, German reparations, and America’s atomic monopoly fractured the Grand Alliance."
     },
     {
       "id": "lesson_3",
@@ -5327,7 +5367,26 @@ export default {
             ],
             "title": "Lesson 2: The Berlin Blockade, Operation Vittles & Rival Alliances (Stages 4–5) (50 mins)"
           }
-        }
+        },
+        "curriculum_link": "KS3 National Curriculum (Challenges 1901–Present): Soviet satellite states, Churchill's 1946 Iron Curtain speech, the 1947 Truman Doctrine & Marshall Plan, the 1948–49 Berlin Airlift, and NATO vs the Warsaw Pact — Consequence Analysis.",
+        "hinge_question": "Why was flying 2.3 million tons of coal and food into West Berlin over 324 days a far smarter victory for President Truman than ramming an armed tank convoy down the blocked autobahn?",
+        "hinge_guidance": "Strong responses grasp the strategic trap of June 1948: ramming tanks through Soviet-occupied East Germany would have made the West fire the first shot and risked World War Three, whereas abandoning two million West Berliners would have shattered faith in US containment. By supplying Berlin along three legal 20-mile air corridors (Source C), Operation Vittles put the onus back on Stalin—who dared not shoot down unarmed cargo planes—forcing Moscow to lift the blockade in humiliation in May 1949 while winning German hearts via 'Candy Bomber' drops (Source D).",
+        "misconceptions": [
+          {
+            "misconception": "Pupils imagine Winston Churchill's March 1946 'Iron Curtain' was an actual physical steel fence built across Europe in 1946.",
+            "correction": "In March 1946 Churchill used 'iron curtain' at Fulton, Missouri (Source A) as a vivid political metaphor for Soviet police censorship and rigged 'salami tactics' cutting Eastern European capitals off from the West."
+          },
+          {
+            "misconception": "Pupils confuse the Truman Doctrine (March 1947) with the Marshall Plan (June 1947).",
+            "correction": "Treat them as two halves of the same walnut: the Truman Doctrine was the political and military pledge to contain communism (triggered by Greece and Turkey, Source B), while the Marshall Plan provided over $13 billion in economic recovery aid so poverty wouldn't turn Western European voters communist."
+          },
+          {
+            "misconception": "Pupils forget Berlin's geography and assume West Berlin sat right on the border touching West Germany.",
+            "correction": "Use Source C's flight-corridor map to show that West Berlin was an isolated Western island 110 miles deep inside the Soviet zone, which is why Stalin could sever every road, rail, and canal link overnight in June 1948."
+          }
+        ],
+        "send_adaptation": "Point directly to the Block 1 Reference Map and Source C (the three 20-mile air corridors) to anchor West Berlin's island geography visually before pupils use the Recto sentence starters and word bank on the Truman Doctrine.",
+        "stretch_challenge": "Explain why Stalin's June 1948 Berlin Blockade—intended to stop the creation of a unified West German state—backfired so badly by May 1949, producing both the Federal Republic of Germany (FRG) and NATO's Article 5 collective defence guarantee (Source E)."
       },
       "vocab_cloze_text": "After Winston Churchill warned in 1946 that the [Iron Curtain] had divided Europe, Washington announced the 1947 [Truman Doctrine] and $13 billion [Marshall Plan] to stop communism spreading west. When Stalin imposed the 1948–49 Berlin [Blockade], Western planes saved two million West Berliners via the eleven-month [Berlin Airlift], leading directly to the founding of [NATO] in April 1949.",
       "banner": {
@@ -5340,7 +5399,8 @@ export default {
       "hero_image": "/images/upgraded/ks3-modern/cw_l3_banner_berlin_airlift_tempelhof_1948.jpg",
       "banner_position": "center 35%",
       "enquiry": "How did containment and the Berlin Blockade divide Europe into rival blocs?",
-      "enquiry_question": "How did containment and the Berlin Blockade divide Europe into rival blocs?"
+      "enquiry_question": "How did containment and the Berlin Blockade divide Europe into rival blocs?",
+      "banner_caption": "Expanding Tempelhof Runway Under Approaching USAF C-54 Skymaster During the Berlin Airlift (1948, U.S. Air Force): Western airpower supplied 2.5 million West Berliners for 324 days to defeat Stalin’s land blockade."
     },
     {
       "id": "lesson_4",
@@ -7147,7 +7207,26 @@ export default {
             ],
             "title": "Lesson 2: Submarine B-59, Secret Turkey Deal & 1963 De-Escalation (Stages 4–5) (50 mins)"
           }
-        }
+        },
+        "curriculum_link": "KS3 National Curriculum (Challenges 1901–Present): Castro's Cuban Revolution, the 1961 Bay of Pigs, Operation Anadyr, the October 1962 Thirteen Days, Mutually Assured Destruction, and 1963 arms-control steps — Consequence & Statecraft.",
+        "hinge_question": "Why did both Washington and Moscow claim victory on 28 October 1962—and why was keeping the Turkey missile swap secret vital to ending the crisis?",
+        "hinge_guidance": "Look for balanced superpower analysis from Block [4.2]: publicly, Kennedy won a dramatic triumph as Khrushchev dismantled Soviet missiles in Cuba under UN checks, protecting JFK from domestic critics; privately, Khrushchev achieved his core strategic goals—a firm US pledge never to invade Castro's Cuba plus the quiet removal of US Jupiter missiles sitting on Russia's doorstep in Turkey. Keeping the Turkey swap secret prevented NATO allies from feeling traded away. Probe any pupil who portrays Khrushchev's missile deployment purely as mad aggression without mentioning the 17-to-1 US ICBM lead, Jupiter missiles in Turkey, or the 1961 Bay of Pigs invasion.",
+        "misconceptions": [
+          {
+            "misconception": "Pupils assume Fidel Castro seized power in January 1959 already under direct orders from Moscow.",
+            "correction": "Castro initially overthrew US-backed dictator Batista as a Cuban nationalist; it was escalating tit-for-tat US sugar embargoes after Cuban nationalisations—and the CIA's failed April 1961 Bay of Pigs invasion—that pushed Cuba firmly into Soviet military protection."
+          },
+          {
+            "misconception": "Pupils think 'naval quarantine' and 'blockade' meant the exact same thing in international law.",
+            "correction": "Kennedy deliberately chose the word 'quarantine' on 22 October 1962 (Block [3.2] and Source C) because a formal naval 'blockade' was legally an act of war that could have forced Soviet retaliation against West Berlin."
+          },
+          {
+            "misconception": "Pupils assume Kennedy and Khrushchev had total personal control over every nuclear weapon during the Thirteen Days.",
+            "correction": "On 'Black Saturday' (27 October 1962), a U-2 spy plane was shot down without Kremlin orders and nuclear war was averted underwater only because Soviet submarine officer Vasili Arkhipov vetoed launching a nuclear torpedo aboard B-59 (Source E)."
+          }
+        ],
+        "send_adaptation": "Pair the Block 1 strike-range map and Leslie Illingworth's H-bomb arm-wrestle cartoon (Source B) with the Block 5 profile deck before completing the scaffolded one-paragraph consequence task on the April 1961 Bay of Pigs.",
+        "stretch_challenge": "Using Vasili Arkhipov's standoff on 27 October (Source E) and the delayed telegrams of October 1962 (Source D), explain why frighteningly close near-misses during the crisis produced the 1963 Moscow–Washington Hotline and Partial Test Ban Treaty."
       },
       "vocab_cloze_text": "In October 1962, Soviet nuclear [ICBM] sites discovered in Cuba pushed superpower [Brinkmanship] to its closest point to World War Three, raising US military readiness to [DEFCON] 2. Knowing war meant [Mutually Assured Destruction] under nuclear [Deterrence], President Kennedy ordered a careful [Naval Quarantine] and secret talks removing US missiles from Turkey to end the crisis peacefully.",
       "banner": {
@@ -7160,7 +7239,8 @@ export default {
       "hero_image": "/images/upgraded/ks3-modern/cw_l4_banner_excomm_meeting_october_1962.jpg",
       "banner_position": "center 35%",
       "enquiry": "How close did Cuba bring nuclear war in 1962—and how was it avoided?",
-      "enquiry_question": "How close did Cuba bring nuclear war in 1962—and how was it avoided?"
+      "enquiry_question": "How close did Cuba bring nuclear war in 1962—and how was it avoided?",
+      "banner_caption": "White House ExComm Deliberations During the Cuban Missile Crisis (29 October 1962, Cecil Stoughton, JFK Library): Thirteen days on the brink of nuclear war at DEFCON 2."
     },
     {
       "id": "lesson_5",
@@ -8859,7 +8939,26 @@ export default {
             ],
             "title": "Lesson 2: Asymmetric Guerrilla Warfare in Vietnam & Proxy War Writing (Stages 4–5) (50 mins)"
           }
-        }
+        },
+        "curriculum_link": "KS3 National Curriculum (Challenges 1901–Present): Mao's 1949 victory, NSC-68, the Domino Theory, the Korean War (1950–53), and asymmetric guerrilla warfare in Vietnam (1954–1975) — Global Proxy Conflict & Consequence.",
+        "hinge_question": "Why was conventional American military firepower able to halt communism along Korea's 38th Parallel by 1953, yet unable to prevent the fall of Saigon in Vietnam by 1975?",
+        "hinge_guidance": "Strong answers contrast terrain, tactics, and political legitimacy across Blocks [2.1]–[5.2]: in Korea, UN forces under MacArthur fought a conventional front-line war against North Korean and Chinese armies across a narrow peninsula to restore the 38th Parallel border; in South Vietnam, despite 500,000 US troops, Huey helicopters, napalm, and B-52 bombing, US forces faced rural Vietcong guerrillas using 250 km of Cu Chi tunnels (Source D) and the Ho Chi Minh Trail, backed by deep anti-colonial nationalist loyalty to Ho Chi Minh, while televised casualties and the January 1968 Tet Offensive (Source E) broke domestic political support inside America.",
+        "misconceptions": [
+          {
+            "misconception": "Pupils assume American and Soviet armies fought one another face-to-face on the ground in Korea and Vietnam.",
+            "correction": "Both were 'proxy wars': to avoid direct nuclear World War Three, Moscow and Beijing supplied weapons, tanks, and (in Korea) Chinese troops to communist allies while US forces fought on the ground alongside South Korean or South Vietnamese allies."
+          },
+          {
+            "misconception": "Pupils believe the January 1968 Tet Offensive was a crushing military victory on the battlefield for the Vietcong.",
+            "correction": "Militarily, US and South Vietnamese troops retook every town and inflicted heavy losses on the Vietcong; Tet's decisive triumph was psychological and political, proving on American television screens (Source E) that victory was nowhere in sight."
+          },
+          {
+            "misconception": "Pupils reduce Ho Chi Minh and Vietnamese fighters solely to Cold War puppets controlled by Moscow.",
+            "correction": "Ho Chi Minh had led a decades-long nationalist independence struggle defeating French colonial rule at Dien Bien Phu in 1954 (Block [3.1]); Washington misread local anti-colonial nationalism solely through the lens of NSC-68 and the Domino Theory (Source A)."
+          }
+        ],
+        "send_adaptation": "Locate Korea's 38th Parallel and Vietnam's 17th Parallel / Ho Chi Minh Trail on the Block 1 Reference Map, inspect the 'tunnel rat' photo in Source D to visualise asymmetric warfare, and use the Recto word bank and sentence starters on the Korean War consequence task.",
+        "stretch_challenge": "Read Chinese Premier Zhou Enlai's 3 October 1950 warning (Source B): how did General MacArthur's decision to push UN troops north of the 38th Parallel toward China's border turn a UN 'containment' mission into a three-year war with Communist China?"
       },
       "vocab_cloze_text": "Driven by the [Domino Theory] in Asia, Cold War rivalry erupted into bloody [Proxy War] conflicts across Korea and Vietnam. After fighting between 1950 and 1953 ended along Korea’s fortified [Demilitarized Zone], America sent over 500,000 troops to South Vietnam, where [Vietcong] fighters used jungle tunnels and [Guerrilla Warfare] to defeat a costly US [War of Attrition].",
       "banner": {
@@ -8872,7 +8971,8 @@ export default {
       "hero_image": "/images/upgraded/ks3-modern/cw_l5_banner_vietnam_uh1c_lai_khe_1967.jpg",
       "banner_position": "center 42%",
       "enquiry": "Why did the Cold War turn into deadly wars in Korea and Vietnam?",
-      "enquiry_question": "Why did the Cold War turn into deadly wars in Korea and Vietnam?"
+      "enquiry_question": "Why did the Cold War turn into deadly wars in Korea and Vietnam?",
+      "banner_caption": "U.S. Army UH-1 Huey Helicopters Lifting Off Over Lai Khe, South Vietnam (1967, U.S. Army): Superpower containment turned hot across Cold War battlefields in Korea and Vietnam."
     },
     {
       "id": "lesson_6",
@@ -10509,7 +10609,26 @@ export default {
             ],
             "title": "Lesson 2: 9 November 1989, Velvet Revolutions & Dissolution of the USSR (Stages 4–5) (50 mins)"
           }
-        }
+        },
+        "curriculum_link": "KS3 National Curriculum (Challenges 1901–Present): The 1961 Berlin Wall, Soviet economic stagnation & Afghanistan (1979–89), Gorbachev's Glasnost, Perestroika & 'Sinatra Doctrine', 9 November 1989, and the 1991 dissolution of the USSR — Causation & Consequence.",
+        "hinge_question": "Did Ronald Reagan's military pressure defeat the Soviet Union from outside, or did economic stagnation, Eastern European protest, and Mikhail Gorbachev's reforms unravel it from within?",
+        "hinge_guidance": "Encourage multi-causal weighing rather than a 'one-man' myth: Reagan's defence spending and SDI 'Star Wars' strained Moscow's budget, yet the Soviet command economy was already stalling with chronic consumer queues (Source C) and bleeding in Afghanistan (1979–89). Crucially, revolutions succeeded peacefully in 1989 because Polish Solidarity and Berlin crowds pushed against gates after Gorbachev replaced the Brezhnev Doctrine with the non-interventionist 'Sinatra Doctrine'—meaning border guards had no Red Army tank backing when Gunter Schabowski misspoke live on 9 November 1989 (Source D). Probe any pupil who thinks Gorbachev intended to destroy communism—he launched Glasnost and Perestroika in 1985 to save and modernise the Soviet system.",
+        "misconceptions": [
+          {
+            "misconception": "Pupils think East Germany built the Berlin Wall in August 1961 to stop Western armies invading East Berlin.",
+            "correction": "Despite calling it an 'Anti-Fascist Protection Rampart', Walter Ulbricht sealed the border overnight on 13 August 1961 (Source B) to stop East Germany's own young doctors, engineers, and workers—over 2.7 million since 1949—fleeing west."
+          },
+          {
+            "misconception": "Pupils assume Mikhail Gorbachev took office in 1985 with a secret plan to abolish communism and break up the USSR.",
+            "correction": "Gorbachev was a committed reformer who introduced Glasnost ('openness') and Perestroika ('restructuring') to rescue Soviet socialism from stagnation; once censorship lifted and force ended, nationalist and democratic demands spun beyond Kremlin control."
+          },
+          {
+            "misconception": "Pupils assume the Soviet Union collapsed on the exact same night the Berlin Wall opened on 9 November 1989.",
+            "correction": "The Berlin Wall opened in November 1989 and Germany reunified in October 1990, whereas the USSR itself endured for two more years until Boris Yeltsin defeated the August 1991 hardline coup and Gorbachev resigned on 25 December 1991 (Source E)."
+          }
+        ],
+        "send_adaptation": "Use the Block 2 profile deck (Brezhnev, Afghanistan, Reagan SDI) and Source C's Krokodil queue cartoon to make 'economic stagnation' concrete before applying the Recto three-sentence consequence scaffold on Glasnost.",
+        "stretch_challenge": "Using Gunter Schabowski's handwritten 9 November 1989 press-conference note (Source D), evaluate the interplay between long-term structural decay and accidental human contingency in bringing down the Berlin Wall that evening."
       },
       "vocab_cloze_text": "Built in 1961 to stop East Germans fleeing Soviet [Satellite State] rule, the Berlin Wall stood until Mikhail Gorbachev introduced [Glasnost] openness, [Perestroika] economic reforms, and ended military intervention abroad. Inspired by Poland’s [Solidarity] union, peaceful crowds opened the Berlin Wall in November 1989, bringing German [Reunification] in 1990 and Soviet collapse after a failed 1991 [Coup D’état].",
       "banner": {
@@ -10522,7 +10641,8 @@ export default {
       "hero_image": "/images/upgraded/ks3-modern/cw_l6_banner_berlin_wall_potsdamer_platz_1989.jpg",
       "banner_position": "center 38%",
       "enquiry": "Why did Soviet rule in Eastern Europe—and the USSR itself—collapse by 1991?",
-      "enquiry_question": "Why did Soviet rule in Eastern Europe—and the USSR itself—collapse by 1991?"
+      "enquiry_question": "Why did Soviet rule in Eastern Europe—and the USSR itself—collapse by 1991?",
+      "banner_caption": "Crowds Gathered Beside the Breached Berlin Wall at Potsdamer Platz (November 1989, U.S. Department of Defense): People power and Gorbachev’s reforms brought down the Iron Curtain peacefully."
     },
     {
       "id": "lesson_7",
@@ -12162,7 +12282,26 @@ export default {
             ],
             "title": "Lesson 2: Space Race, Détente & Synoptic Cold War Writing (Stages 4–5) (50 mins)"
           }
-        }
+        },
+        "curriculum_link": "KS3 National Curriculum (Challenges 1901–Present): Synoptic reassessment of 1945–1991 — Eurocentric 'Long Peace' vs Global South proxy bloodshed, CIA/KGB covert action, the Space Race, civil defence, and MAD.",
+        "hinge_question": "Why does calling 1945–1991 a 'Cold War' or 'Long Peace' make sense from Berlin or London, yet ring hollow from Seoul, Hanoi, Kabul, or Luanda?",
+        "hinge_guidance": "Strong synoptic answers use the Block 5 spectrum slider and Source E directly: in Europe, Mutually Assured Destruction (exemplified by the 15-megaton Castle Bravo H-bomb in Source A) made direct NATO–Warsaw Pact combat suicidal, freezing borders in a tense peace of spy planes, bunkers (Source C), and Space Race propaganda (Source D); across Asia, Africa, the Middle East, and Latin America, however, superpower proxy wars, arms transfers, and CIA/KGB coups killed over twenty million people. Probe pupils who think ordinary British civilians felt safe during Europe's 'Long Peace'—point to the 1980 Home Office 'Protect and Survive' indoor door shelter guide (Source B).",
+        "misconceptions": [
+          {
+            "misconception": "Pupils take the label 'Cold War' literally and assume 1945–1991 was a largely bloodless era of spy thrillers and speeches.",
+            "correction": "While American and Soviet soldiers avoided direct battlefield war in Europe, Cold War proxy wars, insurgencies, and interventions across four continents killed over twenty million people (Block [2.1] and Source E)."
+          },
+          {
+            "misconception": "Pupils view the Space Race (Sputnik 1 in 1957 to Apollo 11 in 1969) as pure peaceful astronomy detached from military rivalry.",
+            "correction": "Every orbital rocket breakthrough doubled as proof of Intercontinental Ballistic Missile (ICBM) guidance and thrust capability—while broadcasting ideological prestige to hundreds of millions of television viewers (Source D)."
+          },
+          {
+            "misconception": "Pupils assume the British government built deep underground fallout bunkers for ordinary families during the Cold War.",
+            "correction": "Reinforced blast bunkers like the 1961 York Cold War Bunker (Source C) housed Royal Observer Corps and government officials, whereas ordinary families in 1980 were told in 'Protect and Survive' (Source B) to lean unscrewed house doors and bags indoors."
+          }
+        ],
+        "send_adaptation": "Use the Block 5 spectrum slider to weigh 'Cold in Europe (MAD, Sputnik/Apollo, Bunkers)' against 'Hot in the Global South (Korea, Vietnam, Afghanistan, 20m dead)' before writing the scaffolded Recto consequence paragraph on December 1991.",
+        "stretch_challenge": "Synthesise Enquiries 1 to 7: why did thermonuclear weapons like the 15-megaton Castle Bravo bomb (Source A)—1,000 times stronger than Hiroshima—paradoxically prevent World War Three in Europe while displacing superpower violence onto post-colonial nations?"
       },
       "vocab_cloze_text": "Across a divided [Bipolar World], each rival [Superpower] competed for global influence without fighting face-to-face in Europe. Beneath brief 1970s [Détente] treaties, both sides poured trillions into the nuclear and space [Arms Race], waged secret KGB and CIA [Espionage], and backed devastating Third World wars as Washington and Moscow struggled for regional [Hegemony].",
       "banner": {
@@ -12175,7 +12314,8 @@ export default {
       "hero_image": "/images/upgraded/ks3-modern/cw_l7_banner_crossroads_baker_1946.jpg",
       "banner_position": "center 45%",
       "enquiry": "Why do historians argue the ‘Cold War’ was never truly cold outside Europe?",
-      "enquiry_question": "Why do historians argue the ‘Cold War’ was never truly cold outside Europe?"
+      "enquiry_question": "Why do historians argue the ‘Cold War’ was never truly cold outside Europe?",
+      "banner_caption": "Operation Crossroads \"Baker\" Atomic Detonation at Bikini Atoll (25 July 1946, Joint Task Force One): Nuclear terror kept Europe frozen in a \"Long Peace\" while proxy wars raged across four continents."
     }
   ],
   "homepage_background": "/images/cold_war_cover.jpg",
@@ -12918,5 +13058,11 @@ export default {
       "studio_voice_label": "Studio Male Historian · Scholarship"
     }
   ],
-  "is_ks3": true
+  "is_ks3": true,
+  "cover_caption": "The Berlin Wall at Bethaniendamm (1986), contrasting colourful West Berlin street murals on the outer barrier with East German border guards patrolling the raked 'death strip' behind the Iron Curtain.",
+  "teacher_guidance_overview": {
+    "curriculum_focus": "KS3 National Curriculum: Challenges for Britain, Europe and the wider world 1901 to the present day (ideological origins, European division, nuclear brinkmanship, Asian proxy wars, and the collapse of the Soviet Union, 1945–1991).",
+    "disciplinary_threads": "Causation and Consequence, Evidential Source Scrutiny, Global vs Eurocentric Interpretations, and Synoptic Significance.",
+    "non_specialist_summary": "This seven-enquiry Year 9 course explains how the wartime Grand Alliance between the United States and the Soviet Union fractured after 1945 into a forty-six-year global struggle without direct superpower battle. Pupils examine the ideological divide, Yalta and Potsdam, the Berlin Blockade and NATO, the 1962 Cuban Missile Crisis, deadly Asian proxy wars in Korea and Vietnam, and the 1989–1991 collapse of the Berlin Wall and USSR. The final enquiry challenges Eurocentric 'Long Peace' narratives against twenty million proxy-war deaths across the Global South."
+  }
 };

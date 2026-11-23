@@ -842,7 +842,26 @@
               }
             ]
           }
-        }
+        },
+        "curriculum_link": "KS3 National Curriculum (Challenges 1901–Present): Women's suffrage — Millicent Fawcett's NUWSS, Emmeline Pankhurst's WSPU, the 1913 Cat and Mouse Act, WWI munitions work, and the 1918 Representation of the People Act (Multi-Causal Explanation).",
+        "hinge_question": "Did militant Suffragette direct action bring votes for women closer before 1914, or was wartime work combined with fifty years of peaceful Suffragist campaigning the real breakthrough in 1918?",
+        "hinge_guidance": "Reward pupils who weigh the genuine tension between Sources A, B, C, and E: WSPU militancy ('Deeds, not words'), Holloway hunger strikes, and public revulsion at forced feeding and the 1913 Cat and Mouse Act kept suffrage on every front page, yet escalating violence gave reluctant MPs an excuse to delay; conversely, Millicent Fawcett's 50,000-strong NUWSS built parliamentary allies, and 1.5 million women working in WWI factories ('Canary Girls') swept away claims that women were unfit for citizenship—though Source E proves 1918 still excluded women under thirty. Probe any pupil who confuses Suffragists with Suffragettes or assumes all women won equal votes in 1918.",
+        "misconceptions": [
+          {
+            "misconception": "Pupils frequently mix up the peaceful Suffragists (NUWSS) with the militant Suffragettes (WSPU).",
+            "correction": "Anchor the 'g-i-s-t' vs 'g-e-t-t-e' distinction early: Millicent Fawcett's NUWSS Suffragists (1897, 50,000+ members) used peaceful petitions and lobbying (Source A), whereas Emmeline Pankhurst's WSPU Suffragettes (1903) used direct action ('Deeds, not words', Source B)."
+          },
+          {
+            "misconception": "Pupils assume the February 1918 Representation of the People Act gave every adult woman the vote on equal terms with men.",
+            "correction": "Source E proves the 1918 Act enfranchised 8.4 million women only if they were aged thirty or over and met a property or marriage qualification—excluding most young working-class 'Canary Girls' until equal franchise at age twenty-one in 1928."
+          },
+          {
+            "misconception": "Pupils think the 1913 'Cat and Mouse Act' was passed out of humanitarian kindness toward frail hunger strikers.",
+            "correction": "The Liberal government passed the Act to avoid creating suffragette martyrs in prison after public outcry over brutal tube force-feeding, releasing weakened women on licence only to re-arrest them once they recovered strength."
+          }
+        ],
+        "send_adaptation": "Use the Block 2 spectrum slider to sort NUWSS peaceful tactics against WSPU militancy visually, then follow the Recto hints pairing pre-war campaigning with wartime 'Canary Girl' munitions service across two structured causal paragraphs.",
+        "stretch_challenge": "Examine Source E (1918 statute text): why did MPs set the female voting age at thirty with a property rule in 1918 when millions of unmarried women in their twenties had just risked their health packing TNT shells?"
       },
       "pair_share": {
         "prompt": "Discuss with your partner: Were the Suffragists or Suffragettes more effective in securing the vote?",
@@ -1933,7 +1952,8 @@
       "banner_position": "center 35%",
       "enquiry": "How did women’s campaigning and wartime work win the vote in 1918?",
       "enquiry_question": "How did women’s campaigning and wartime work win the vote in 1918?",
-      "enquiryQuestion": "How did women’s campaigning and wartime work win the vote in 1918?"
+      "enquiryQuestion": "How did women’s campaigning and wartime work win the vote in 1918?",
+      "banner_caption": "Women’s Coronation Suffrage Procession Through London (17 June 1911, LSE Women’s Library): Marching behind a banner recording '690 Imprisonments to Win Freedom for Women', over 40,000 suffragists and suffragettes united ahead of King George V’s coronation."
     },
     {
       "id": "lesson_2",
@@ -2631,7 +2651,26 @@
               }
             ]
           }
-        }
+        },
+        "curriculum_link": "KS3 National Curriculum (Challenges 1901–Present): Wartime social solidarity, the 1942 Beveridge Report ('Five Giants'), Attlee's July 1945 Labour landslide, and Aneurin Bevan's 5 July 1948 National Health Service — Feature & Source Analysis.",
+        "hinge_question": "Why did British voters cheer Winston Churchill as the hero of VE Day in May 1945, yet hand Clement Attlee's Labour Party a 146-seat landslide just two months later?",
+        "hinge_guidance": "Strong answers connect wartime social awakening to interwar memory using Blocks [2.1]–[2.3] and Sources A–C: Operation Pied Piper evacuation (Source A) and the Blitz had united social classes and sold 630,000 copies of the 1942 Beveridge Report promising to slay the 'Five Giants', whereas voters associated Churchill's Conservative Party with 1930s mass unemployment, the Jarrow March, and hated Means Tests—trusting Attlee's 'Let Us Face the Future' manifesto to actually build a 'cradle to grave' Welfare State. Probe pupils who assume doctors universally welcomed the free NHS in 1948—highlight Bevan's tough negotiations with the British Medical Association.",
+        "misconceptions": [
+          {
+            "misconception": "Pupils assume free doctors, hospitals, and spectacles had always existed in Britain or were welcomed effortlessly by every doctor in 1948.",
+            "correction": "Before 5 July 1948 millions of working-class women, children, and elderly people had to pay fees or rely on charity/workhouse infirmaries, and Health Minister Aneurin Bevan overcame fierce British Medical Association boycott threats only by allowing senior consultants to keep lucrative private pay-beds ('stuffed their mouths with gold')."
+          },
+          {
+            "misconception": "Pupils think the Welfare State consisted solely of the National Health Service.",
+            "correction": "Alongside Bevan's 1948 NHS, Attlee's government passed the 1946 National Insurance Act (sickness, unemployment, and retirement pensions) and the 1948 National Assistance Act abolishing Victorian Poor Law workhouses forever (Block [2.4])."
+          },
+          {
+            "misconception": "Pupils assume Sir William Beveridge was a Labour MP who wrote his report after the war ended in 1945.",
+            "correction": "Beveridge was a Liberal civil servant and economist whose bestselling report (Cmd. 6404, Source B) was published in the middle of the Second World War in late 1942, giving Britons a shared post-war blueprint worth fighting for."
+          }
+        ],
+        "send_adaptation": "Use the Block 2 profile deck to memorise Beveridge's 'Five Giants' (Want, Disease, Ignorance, Squalor, Idleness) with concrete one-word translations (poverty, sickness, poor schooling, slums, unemployment) before completing the scaffolded 'Two Key Features' Recto task.",
+        "stretch_challenge": "Use the rush for free NHS spectacles and dental care in summer 1948 (Source E) alongside Bevan's 1946 parliamentary speech (Source D) to evaluate why early NHS costs immediately exceeded Treasury forecasts: was the surge evidence of public abuse or decades of untreated working-class illness?"
       },
       "pair_share": {
         "prompt": "Discuss with your partner: Why did the experience of total war lead directly to the creation of the Welfare State?",
@@ -3733,7 +3772,8 @@
       "banner_position": "center 45%",
       "enquiry": "Why and how did post-war Britain create the Welfare State and free NHS?",
       "enquiry_question": "Why and how did post-war Britain create the Welfare State and free NHS?",
-      "enquiryQuestion": "Why and how did post-war Britain create the Welfare State and free NHS?"
+      "enquiryQuestion": "Why and how did post-war Britain create the Welfare State and free NHS?",
+      "banner_caption": "VE Day Crowds Packed Across Whitehall, London (8 May 1945, Ministry of Information): Shared sacrifice through six years of total war forged a popular determination never to return to 1930s poverty—powering the creation of Britain’s Welfare State and NHS."
     },
     {
       "id": "lesson_3",
@@ -4555,7 +4595,27 @@
               }
             ]
           }
-        }
+        },
+        "curriculum_link": "KS3 National Curriculum (Challenges 1901–Present): Post-war labour shortages, the British Nationality Act 1948, HMT Empire Windrush (22 June 1948), the 1950s housing 'colour bar', 'pardner' savings, and Claudia Jones's 1959 Caribbean Carnival — Historical Interpretations.",
+        "hinge_question": "Why was there such a stark gap between Caribbean arrivals' legal status under the 1948 British Nationality Act (Source A) and their lived experience on British streets in the 1950s (Source D)?",
+        "hinge_guidance": "Look for pupils contrasting statutory law with everyday informal discrimination: legally, the 1948 Act confirmed all 800 million Empire and Commonwealth subjects as full Citizens of the UK and Colonies (CUKC) with unrestricted rights to work, settle, and vote—answering urgent recruitment in the new NHS and rail networks (Sources A–C); socially, however, no anti-discrimination law yet governed private landlords or banks, leaving skilled pioneers facing 'No Irish, No Blacks, No Dogs' rooming signs (Source D) and bank mortgage refusals until families pooled 'pardner' savings and Claudia Jones launched the West Indian Gazette and 1959 St Pancras Carnival after the 1958 Notting Hill riots (Source E).",
+        "misconceptions": [
+          {
+            "misconception": "Pupils often assume passengers aboard HMT Empire Windrush in June 1948 were foreign immigrants arriving without British legal status or skills.",
+            "correction": "Under the British Nationality Act 1948 (Source A), Caribbean arrivals were British subjects carrying British rights, many were returning RAF wartime veterans, and the official ship manifest (Source B) records skilled nurses, mechanics, welders, carpenters, and clerks."
+          },
+          {
+            "misconception": "Pupils think HMT Empire Windrush was the very first time any Black people had lived in Britain—or that migration stopped after that one ship.",
+            "correction": "Black communities had lived in British port cities for centuries, while Windrush's docking at Tilbury on 22 June 1948 symbolised the start of wider post-war Commonwealth migration (1948–1971) rebuilding Britain's hospitals and transport."
+          },
+          {
+            "misconception": "Pupils assume the Notting Hill Carnival began simply as a summer outdoor street party unrelated to racism or politics.",
+            "correction": "Trinidadian journalist Claudia Jones founded the first Caribbean Carnival indoors at St Pancras Town Hall in January 1959 (Source E) specifically as an act of cultural defiance and healing after white 'Teddy Boy' mobs attacked Black residents in the August 1958 Notting Hill riots."
+          }
+        ],
+        "send_adaptation": "Trace the Jamaica-and-Trinidad voyage to Tilbury Docks on the Block 3 Reference Map and use the Block 2 CUKC profile deck before contrasting the upbeat 1948 Pathe newsreel (Interpretation 1) with Alford Gardner's housing testimony (Source D) on the Recto task.",
+        "stretch_challenge": "Explain how cooperative Caribbean 'pardner' rotating savings clubs (Block [3.4]) and Claudia Jones's West Indian Gazette and 1959 Carnival (Source E) together demonstrate economic and cultural self-reliance in the absence of legal protection.",
+        "safeguarding_impartiality": "Respectful Framing of Historical Racism: Source D quotes notorious 1950s boarding-house exclusion cards ('No Irish, No Blacks, No Dogs') as primary historical evidence of the informal colour bar. Establish clearly that such discriminatory language is examined strictly as an archival record of post-war prejudice—never read performatively—and foreground the skill, citizenship, and civic leadership of Windrush pioneers."
       },
       "pair_share": {
         "prompt": "Discuss with your partner: Was Britain welcoming to the Windrush Generation?",
@@ -5665,7 +5725,8 @@
       "banner_position": "center 48%",
       "enquiry": "Why did the Windrush generation come to Britain, and what hostility did they face?",
       "enquiry_question": "Why did the Windrush generation come to Britain, and what hostility did they face?",
-      "enquiryQuestion": "Why did the Windrush generation come to Britain, and what hostility did they face?"
+      "enquiryQuestion": "Why did the Windrush generation come to Britain, and what hostility did they face?",
+      "banner_caption": "Tate Central Library and Civic Plaza at Windrush Square, Brixton, South London: Heart of Britain’s post-war Caribbean community, where Windrush pioneers settled from June 1948 despite the informal housing colour bar."
     },
     {
       "id": "lesson_4",
@@ -6333,7 +6394,27 @@
               }
             ]
           }
-        }
+        },
+        "curriculum_link": "KS3 National Curriculum (Challenges 1901–Present): Institutional discrimination, the April–August 1963 Bristol Bus Boycott (Paul Stephenson, Guy Bailey, Roy Hackett, Tony Benn), and the Race Relations Acts of 1965 and 1968 — Chronological Narrative.",
+        "hinge_question": "Why was racial refusal to hire Guy Bailey completely legal in Bristol in April 1963—and how did a four-month local bus boycott help change the law across the whole of Britain?",
+        "hinge_guidance": "Strong answers connect three links in the causal chain: first, Britain had zero laws banning racial discrimination in employment before 1965, allowing the state-owned Bristol Omnibus Company and local TGWU branch to bar Black and Asian crews despite 200 staff vacancies (Block [4.1] and Source A); second, Paul Stephenson's deliberate telephone check over qualified eighteen-year-old Guy Bailey proved the ban was purely racial, sparking a Montgomery-inspired boycott backed by West Indian commuters, marching Bristol University students (Source C), Tony Benn (Source D), and Opposition leader Harold Wilson; third, forcing the company's surrender on 28 August 1963 gave Wilson's incoming Labour government the momentum to pass the 1965 and 1968 Race Relations Acts (Source E).",
+        "misconceptions": [
+          {
+            "misconception": "Pupils assume the civil rights movement of the 1950s and 1960s happened only in the American South under Martin Luther King Jr and Rosa Parks.",
+            "correction": "Inspired directly by the 1955 Montgomery Bus Boycott, Bristol organisers Paul Stephenson, Roy Hackett, Owen Henry, and Audley Evans led a four-month British boycott that overturned the colour bar on 28 August 1963—the exact day of King's Washington speech."
+          },
+          {
+            "misconception": "Pupils assume trade unions in post-war Britain always defended Black and Asian workers against racist employers.",
+            "correction": "In Bristol in 1963, the local Transport and General Workers' Union branch actively backed the colour bar—passing a resolution refusing to work beside non-white crews out of misplaced fear over overtime and wages (Block [4.1] and Source A)."
+          },
+          {
+            "misconception": "Pupils think the first Race Relations Act of 1965 immediately outlawed all racism in jobs and housing across Britain.",
+            "correction": "Source E shows the 1965 Act outlawed racial discrimination only in 'places of public resort' such as hotels, pubs, and restaurants; campaigners had to keep pressing until the expanded 1968 Race Relations Act finally covered employment and housing."
+          }
+        ],
+        "send_adaptation": "Use the Block 1 profile deck to keep the five key individuals clear (Guy Bailey, Paul Stephenson, Roy Hackett, Tony Benn, Raghbir Singh) and follow the Beginning/Middle/End chronological prompts on the Recto narrative account.",
+        "stretch_challenge": "Cross-reference the General Manager's excuse in Source A with Paul Stephenson's press statement in Source B and the 1965 statute in Source E: why did relying on voluntary goodwill fail, making statutory employment law in 1968 essential?",
+        "safeguarding_impartiality": "Historical Terminology & Statutory Impartiality Framing: Contextualise outdated 1960s period terms inside Source A ('coloured conductors') strictly within their 1963 documentary setting while modelling accurate modern terminology in class discussion, and uphold balanced, evidence-led impartiality if pupils connect 1965–68 legislation to contemporary equality law."
       },
       "pair_share": {
         "prompt": "Discuss with your partner: Was the Bristol Bus Boycott a turning point for British civil rights?",
@@ -7408,7 +7489,8 @@
       "banner_position": "center 52%",
       "enquiry": "How did the 1963 Bristol Bus Boycott help win Britain’s first Race Relations laws?",
       "enquiry_question": "How did the 1963 Bristol Bus Boycott help win Britain’s first Race Relations laws?",
-      "enquiryQuestion": "How did the 1963 Bristol Bus Boycott help win Britain’s first Race Relations laws?"
+      "enquiryQuestion": "How did the 1963 Bristol Bus Boycott help win Britain’s first Race Relations laws?",
+      "banner_caption": "1960s Green-and-Cream Bristol Omnibus Company Bus 2934 ('City Centre Circle — Temple Meads'): State-owned operator whose refusal to employ Black or Asian drivers and conductors sparked the landmark four-month 1963 Bristol Bus Boycott."
     },
     {
       "id": "lesson_5",
@@ -8226,7 +8308,26 @@
               }
             ]
           }
-        }
+        },
+        "curriculum_link": "KS3 National Curriculum (Challenges 1901–Present): Britain's nuclear deterrent (1952–57), CND & the 1958 Aldermaston Marches, the 1961 York Cold War Bunker, the 1980 'Protect and Survive' booklet, and Greenham Common — Evaluative Essay.",
+        "hinge_question": "When we compare the blast-proof 1961 York Cold War Bunker (Source C) with the 1980 'Protect and Survive' household pamphlet (Source D), how credible was E. P. Thompson's accusation that British civil defence was a political illusion?",
+        "hinge_guidance": "Reward balanced evaluation weighing both perspectives from Sources A–E and the Block 4 spectrum slider: critics like historian E. P. Thompson ('Protest and Survive', Source E) and the 30,000 women encircling RAF Greenham Common pointed out that unscrewing interior wooden doors and piling suitcases indoors could never survive megaton hydrogen bombs—while the state built reinforced concrete ROC bunkers like York (Source C) only to track fallout and preserve official command; defenders of deterrence (Source A and Source D's Home Office authors) argued independent nuclear weapons prevented a Soviet strike from ever happening and calm domestic routines would curb panic and protect survivors on the outer fringes of fallout zones.",
+        "misconceptions": [
+          {
+            "misconception": "Pupils assume only the United States and Soviet Union possessed nuclear weapons during the Cold War.",
+            "correction": "Britain became the world's third nuclear power with the October 1952 Operation Hurricane atomic test off Western Australia (Source A), followed by megaton hydrogen bomb tests at Malden Island in May 1957 (Operation Grapple)."
+          },
+          {
+            "misconception": "Pupils recognise the circular peace symbol from modern fashion without knowing its British Cold War origin.",
+            "correction": "Designer Gerald Holtom sketched the emblem in February 1958 specifically for Britain's Campaign for Nuclear Disarmament (CND), combining the naval flag-semaphore signals for 'N' (Nuclear) and 'D' (Disarmament) inside a circle representing Earth (Source B)."
+          },
+          {
+            "misconception": "Pupils confuse WWII Anderson garden shelters with 1980s Cold War nuclear civil defence.",
+            "correction": "Against megaton thermonuclear blasts and a four-minute missile warning, Britain built no public fallout shelters for civilians—issuing instead the 1980 'Protect and Survive' booklet advising families to build an indoor 'Inner Refuge' from doors and sandbags (Source D)."
+          }
+        ],
+        "send_adaptation": "Locate Aldermaston, York Cold War Bunker, and RAF Greenham Common on the Block 2 Reference Map, then use the Block 4 spectrum slider to organise 'Genuine Deterrence & Calm' vs 'Political Reassurance & CND Protest' before writing the Recto balanced judgement essay.",
+        "stretch_challenge": "Compare the tactics of the WSPU Suffragettes in Lesson 1 and the Bristol Bus Boycott in Lesson 4 with CND's 1958 Aldermaston Marches and the 1982 Greenham Common 'Embrace the Base': why did post-war civil rights campaigners win rapid parliamentary laws while unilateral nuclear disarmament was never adopted by government?"
       },
       "pair_share": {
         "prompt": "Discuss with your partner: How did nuclear paranoia shape British popular culture?",
@@ -9310,7 +9411,8 @@
       "banner_position": "center 54%",
       "enquiry": "How did the threat of nuclear war spark protest and shape British life?",
       "enquiry_question": "How did the threat of nuclear war spark protest and shape British life?",
-      "enquiryQuestion": "How did the threat of nuclear war spark protest and shape British life?"
+      "enquiryQuestion": "How did the threat of nuclear war spark protest and shape British life?",
+      "banner_caption": "Royal Air Force Avro Vulcan B.2 Strategic Nuclear V-Bomber (XL426): Backbone of Britain’s airborne nuclear deterrent during the Cold War, kept on four-minute readiness while CND campaigners marched for nuclear disarmament."
     }
   ],
   "edition": "2026.1",
@@ -9841,5 +9943,11 @@
       "studio_voice_label": "Studio Male Historian · Historic Speech"
     }
   ],
-  "is_ks3": true
+  "is_ks3": true,
+  "cover_caption": "Abram Games’s official Festival of Britain South Bank Exhibition guide cover (1951), fusing Britannia’s profile with compass points and festive bunting to celebrate post-war national reconstruction and civic renewal.",
+  "teacher_guidance_overview": {
+    "curriculum_focus": "KS3 National Curriculum: Challenges for Britain, Europe and the wider world 1901 to the present day (social, cultural, and political transformation in modern Britain — female suffrage, the Welfare State & NHS, Windrush migration, civil rights legislation, and anti-nuclear protest).",
+    "disciplinary_threads": "Multi-Causal Explanation, Primary Source & Statute Scrutiny, Historical Interpretations, Chronological Narrative, and Evaluative Judgement.",
+    "non_specialist_summary": "This five-enquiry Year 9 course explores how ordinary citizens, wartime sacrifice, and grassroots campaigning reshaped rights and daily life in twentieth-century Britain. Pupils evaluate constitutional versus militant women's suffrage up to 1918, the wartime origins of the 1942 Beveridge Report and Aneurin Bevan's 1948 NHS, the arrival and community resilience of the Windrush generation, the 1963 Bristol Bus Boycott leading to Britain's first Race Relations Acts, and Cold War nuclear culture from CND's Aldermaston marches to Greenham Common."
+  }
 }

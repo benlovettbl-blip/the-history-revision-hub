@@ -28,7 +28,7 @@
   "enquiry": "From religious division to the Armada: How did Elizabeth secure her throne?",
   "enquiry_question": "From religious division to the Armada: How did Elizabeth secure her throne?",
   "desc": "Paper 2",
-  "cover_caption": "Source A: The Armada Portrait of Queen Elizabeth I, painted to commemorate the defeat of the Spanish Armada (1588).",
+  "cover_caption": "The Armada Portrait of Queen Elizabeth I (c. 1588, attributed to George Gower), resting her hand upon an imperial globe as English fireships scatter the Spanish Armada behind her.",
   "workbooks": [
     {
       "id": "KT1",
@@ -330,7 +330,26 @@
               }
             ]
           }
-        }
+        },
+        "curriculum_link": "Key Topic 1.1: Queen, government and religion, 1558–69 — society and government in 1558, legitimacy, gender and marriage, £300,000 Crown debt, and foreign threats from France and Scotland (Edexcel Paper 2 Demand: 4m Features & 12m Explain why).",
+        "hinge_question": "Why did France and Scotland pose a more immediate threat to Elizabeth in November 1558 than Catholic Spain?",
+        "hinge_guidance": "Strong GCSE answers recognise that France held Calais, stationed French garrisons in Scotland under the Auld Alliance, and backed the rival dynastic claim of Mary, Queen of Scots (married to the French Dauphin Francis). Catch the common chronological slip where pupils assume Philip II of Spain was already England's enemy in 1558—in reality, Philip had been married to Mary I and initially sought an alliance with Elizabeth to block French dominance.",
+        "misconceptions": [
+          {
+            "misconception": "Assuming Elizabeth I held absolute personal power backed by a standing army and professional police force.",
+            "correction": "The Tudor Crown had no standing army or paid police force; Elizabeth relied on her 19-man Privy Council at court and unpaid noble Lords Lieutenant and gentry Justices of the Peace to keep order in the shires. She also needed Parliament to grant extraordinary taxation subsidies."
+          },
+          {
+            "misconception": "Believing Catholic Spain was England's main foreign enemy on Elizabeth's accession in 1558.",
+            "correction": "In 1558 England had just fought alongside Habsburg Spain against France, losing Calais in January 1558. The immediate foreign danger came from Catholic France and Scotland via the Auld Alliance and Mary Stuart's rival claim to the English throne."
+          },
+          {
+            "misconception": "Confusing Protestant doubts about female rule with Roman Catholic doubts about Elizabeth's legitimacy.",
+            "correction": "Catholics rejected Elizabeth's legitimacy because Pope Clement VII had never annulled Henry VIII's marriage to Catherine of Aragon, making Henry's 1533 marriage to Anne Boleyn invalid in Catholic eyes. Gender prejudice against female monarchy was shared across both Catholics and Protestants, exemplified by Protestant reformer John Knox."
+          }
+        ],
+        "send_adaptation": "Start with the Visual Story Sheet and the Catholic Encirclement Concept Diagram before reading, playing Studio Audio alongside the 5 narrative blocks. Have learners highlight one domestic challenge (£300,000 debt or legitimacy) and one foreign challenge (Calais or the Auld Alliance) on the Workbook Verso 5-Stage Chronological Spine before attempting the 4-mark feature sentences.",
+        "stretch_challenge": "Evaluate whether Elizabeth's domestic financial and dynastic weaknesses in 1558 were actually dangerous in their own right, or only perilous because Catholic France and Scotland could exploit them simultaneously."
       },
       "exam_practice": {
         "type": "feature_and_extended",
@@ -1986,7 +2005,8 @@
           ]
         ]
       },
-      "banner_image": "/images/eee/kt1/banner_l1_whitehall_palace_hollar.jpg"
+      "banner_image": "/images/eee/kt1/banner_l1_whitehall_palace_hollar.jpg",
+      "banner_caption": "Tudor West Front and Great Gatehouse of Hampton Court Palace: Royal Thames-side palace of the Tudor dynasty where Queen Elizabeth I presided over her Royal Court and Privy Council."
     },
     {
       "id": "lesson_1_2",
@@ -2158,7 +2178,26 @@
               }
             ]
           }
-        }
+        },
+        "curriculum_link": "Key Topic 1.2: The 'settlement' of religion, 1559 — the Act of Supremacy, the Act of Uniformity, the 1559 Book of Common Prayer, Royal Injunctions, and Church visitations (Edexcel Paper 2 Demand: 4m Features & 12m Explain why).",
+        "hinge_question": "How did the wording and rules of Elizabeth's 1559 Religious Settlement deliberately leave room for moderate Catholics to conform outwardly?",
+        "hinge_guidance": "Look for pupils identifying specific compromises: choosing the title 'Supreme Governor' rather than 'Supreme Head', fusing traditional Catholic and Protestant communion wording in the 1559 Book of Common Prayer, retaining vestments and ornaments, and setting the recusancy fine at a modest 12 pence per Sunday. Correct any pupil who claims Elizabeth granted religious freedom or legalised Roman Catholic Mass—Latin Mass remained illegal, even if private conscience was not aggressively policed in 1559.",
+        "misconceptions": [
+          {
+            "misconception": "Mixing up the legal roles of the Act of Supremacy and the Act of Uniformity (May 1559).",
+            "correction": "The Act of Supremacy dealt with Church governance, ending papal authority and making Elizabeth Supreme Governor via the Oath of Supremacy. The Act of Uniformity regulated parish worship, enforcing the English Book of Common Prayer and a 12d Sunday recusancy fine."
+          },
+          {
+            "misconception": "Thinking the 1559 'Middle Way' meant half Catholic and half Protestant or full religious toleration.",
+            "correction": "The 1559 Settlement created an unmistakably Protestant Church in doctrine and royal supremacy, outlawing the Latin Mass. Its 'middle way' lay in retaining traditional church hierarchy (bishops), clerical vestments, and deliberately broad communion wording so moderate conservatives would conform."
+          },
+          {
+            "misconception": "Assuming ordinary people rather than parish clergy had to swear the 1559 Oath of Supremacy.",
+            "correction": "Only clergy, royal officials, JPs, and university graduates were required to swear the Oath of Supremacy, and roughly 8,000 of 10,000 parish clergy took it (though all Marian bishops save one refused). Ordinary parishioners were policed instead through compulsory Sunday church attendance."
+          }
+        ],
+        "send_adaptation": "Project the Catholic-Compromise-Puritan Concept Diagram alongside the Visual Story Sheet so learners visually separate Church leadership (Supremacy) from Church services (Uniformity). Pair Studio Audio with the Workbook Verso Spine so pupils match each 1559 measure (Supremacy, Uniformity, Royal Injunctions, Visitations) to its exact job before writing.",
+        "stretch_challenge": "Assess how far the rapid acceptance of the 1559 Settlement owed more to Cecil's fifty-seven Royal Injunctions and the replacement of twenty-six Marian bishops than to genuine popular enthusiasm for Protestantism."
       },
       "video": [
         {
@@ -3768,7 +3807,8 @@
         "caption": "Tudor Interior of King’s College Chapel, Cambridge: Completed under the Tudors with soaring stone fan vaulting, stained glass, and carved oak rood screen, illustrating the sacred architectural heritage contested during Elizabeth I’s 1559 Religious Settlement."
       },
       "banner_position": "center 68%",
-      "banner_image": "/images/eee/kt1/banner_l2_coronation_procession_1559.jpg"
+      "banner_image": "/images/eee/kt1/banner_l2_coronation_procession_1559.jpg",
+      "banner_caption": "Tudor Interior of King’s College Chapel, Cambridge: Completed under the Tudors with soaring stone fan vaulting, stained glass, and carved oak rood screen, illustrating the sacred architectural heritage contested during Elizabeth I’s 1559 Religious Settlement."
     },
     {
       "id": "lesson_1_3",
@@ -3940,7 +3980,26 @@
               }
             ]
           }
-        }
+        },
+        "curriculum_link": "Key Topic 1.3: Challenge to the religious settlement — Puritan crucifix and vestments controversies, domestic Catholic recusancy, and foreign Catholic threats including the Dutch Revolt and the 1568 Genoese Loan (Edexcel Paper 2 Demand: 12m Explain why & 16m Judgement).",
+        "hinge_question": "Why did neither domestic Puritans nor English Catholics come close to overturning the Religious Settlement between 1559 and 1568?",
+        "hinge_guidance": "Strong answers explain that Puritans wanted to purify the Church from within rather than depose a Protestant Queen (backing down on crucifixes, while Archbishop Parker suspended only 37 London ministers over vestments in 1566), whereas most English Catholics conformed outwardly as 'Church Papists' because Pope Pius IV issued no clear call to rebel. Watch for chronological drift: pupils must not bring the 1570 Papal Bull, Jesuit missionaries (1580), or £20 recusancy fines (1581) into a 1558–68 question.",
+        "misconceptions": [
+          {
+            "misconception": "Believing 1560s Puritans plotted to overthrow Elizabeth and replace her with another monarch.",
+            "correction": "Puritans were ardent Protestants who relied on Elizabeth's survival against Catholic rivals; their 1560s clashes over crucifixes and linen surplices aimed to strip 'popish' ceremony from parish worship, not topple the Crown."
+          },
+          {
+            "misconception": "Placing the Papal Bull of Excommunication or Edmund Campion's Jesuit mission in the 1560s.",
+            "correction": "Throughout the early-to-mid 1560s Pope Pius IV avoided excommunicating Elizabeth, encouraging quiet 'wait-and-see' survival among English Catholics. William Allen only founded the Douai seminary in 1568, Pope Pius V excommunicated Elizabeth in 1570, and Jesuits arrived in 1580."
+          },
+          {
+            "misconception": "Treating Elizabeth's seizure of the Genoese Loan in November 1568 as an act of open naval piracy against Spanish state property.",
+            "correction": "The £85,000 gold bullion sheltering in Plymouth and Southampton still legally belonged to private Genoese banking houses until delivered to the Duke of Alba in Antwerp. Cecil shrewdly transferred the loan to the English Crown, starving Alba's army of pay without technically declaring war on Spain."
+          }
+        ],
+        "send_adaptation": "Use the Visual Story Sheet and Studio Audio to group the five stages into two clear buckets on the board: 'Challenges at Home' (Crucifixes, Vestments, Church Papists) and 'Pressures Abroad' (Dutch Sea Beggars, Alba's 10,000 troops, Genoese Loan). Guide learners through the Workbook Verso Spine before structuring two causal paragraphs.",
+        "stretch_challenge": "Compare Elizabeth's climbdown over the royal chapel crucifixes (1560) with her firm backing for Parker's Book of Advertisements over vestments (1566): what explains the difference in royal tactics?"
       },
       "video": [
         {
@@ -5443,7 +5502,8 @@
         "caption": "Frans Hogenberg, \"The Iconoclastic Fury (Beeldenstorm) in Antwerp, 20 August 1566\" (contemporary engraving): Escalating Calvinist agitation in the Low Countries that provoked Philip II to dispatch the Duke of Alba’s Spanish army across the Channel."
       },
       "banner_position": "center 48%",
-      "banner_image": "/images/eee/kt1/banner_l3_hogenberg_reformation_1566.jpg"
+      "banner_image": "/images/eee/kt1/banner_l3_hogenberg_reformation_1566.jpg",
+      "banner_caption": "Frans Hogenberg, \"The Iconoclastic Fury (Beeldenstorm) in Antwerp, 20 August 1566\" (contemporary engraving): Escalating Calvinist agitation in the Low Countries that provoked Philip II to dispatch the Duke of Alba’s Spanish army across the Channel."
     },
     {
       "id": "lesson_1_4",
@@ -5623,7 +5683,26 @@
               }
             ]
           }
-        }
+        },
+        "curriculum_link": "Key Topic 1.4: The problem of Mary, Queen of Scots, 1568–69 — Mary's Tudor claim, Darnley's murder, flight to England (May 1568), the York-Westminster Inquiry and Casket Letters, and house arrest (Edexcel Paper 2 Demand: 12m Explain why & 16m Judgement).",
+        "hinge_question": "Why was delivering a 'not proven' non-verdict at the York-Westminster Inquiry in January 1569 so politically convenient for Elizabeth—yet so dangerous for the next eighteen years?",
+        "hinge_guidance": "Strong GCSE answers see both sides of Elizabeth's trap: clearing Mary would oblige Elizabeth to restore a Catholic rival to Scotland, while convicting her would set a dangerous precedent for judging an anointed monarch and anger France or Spain; 'not proven' kept Protestant Regent Moray in power in Edinburgh and detained Mary in England. Yet keeping the Catholic heir captive at Tutbury and Sheffield instantly gave disaffected English nobles and foreign powers a living figurehead at the heart of England.",
+        "misconceptions": [
+          {
+            "misconception": "Confusing Catholic Mary I ('Bloody Mary', Elizabeth's half-sister who died in 1558) with Mary, Queen of Scots (Elizabeth's first cousin once removed).",
+            "correction": "Mary I Tudor ruled England from 1553 until her death in November 1558. Mary Stuart, Queen of Scots, was the Catholic granddaughter of Henry VIII's sister Margaret Tudor; she fled Scotland into England in May 1568 and remained under English captivity until 1587."
+          },
+          {
+            "misconception": "Assuming Elizabeth put Mary on criminal trial for treason in 1568 when she arrived in Cumbria.",
+            "correction": "In 1568–69 Mary was a foreign sovereign accused of complicity in her husband Lord Darnley's murder in Scotland, not treason against Elizabeth. The October 1568–January 1569 York-Westminster Commission examined the disputed Casket Letters politically and deliberately avoided a formal verdict."
+          },
+          {
+            "misconception": "Thinking the 1569 Norfolk marriage scheme initially began as a Spanish-backed treasonous assassination plot.",
+            "correction": "Courtiers including Robert Dudley and William Cecil initially knew of or explored marrying Mary to England's premier Protestant peer, the Duke of Norfolk, to neutralise the succession crisis. Only when Elizabeth forbade the match and Norfolk conspired secretly did it slide toward the 1569 Northern Revolt."
+          }
+        ],
+        "send_adaptation": "Display the May 1568 Solway Firth Concept Diagram alongside the Visual Story Sheet so learners trace each rejected option (Help Mary back, Hand Mary over, Send Mary to France, Keep Mary captive). Play Studio Audio while completing the Workbook Verso 5-Stage Spine to secure the sequence from Kirk o' Field (1567) to Tutbury captivity (1569).",
+        "stretch_challenge": "To what extent was Mary, Queen of Scots more dangerous to Elizabeth as a captive victim inside England after May 1568 than she had ever been as ruling Queen in Edinburgh?"
       },
       "video": [
         {
@@ -7293,7 +7372,8 @@
           ]
         ]
       },
-      "banner_image": "/images/eee/kt1/banner_l4_lochleven_castle_panorama.jpg"
+      "banner_image": "/images/eee/kt1/banner_l4_lochleven_castle_panorama.jpg",
+      "banner_caption": "Lochleven Castle on Castle Island, Kinross-shire: The isolated island fortress where Scottish Protestant lords imprisoned Mary, Queen of Scots and forced her abdication in July 1567."
     },
     {
       "id": "lesson_2_1",
@@ -7500,7 +7580,26 @@
               }
             ]
           }
-        }
+        },
+        "curriculum_link": "Key Topic 2.1: Plots and revolts at home, 1569–87 — Revolt of the Northern Earls (1569–70), Papal Bull (1570), Ridolfi (1571), Throckmorton (1583), and Babington (1586) plots, Walsingham's spies, and Mary's execution (1587) (Edexcel Paper 2 Demand: 12m Explain why & 16m Judgement).",
+        "hinge_question": "Why did Elizabeth refuse to execute Mary Stuart after the 1569 Northern Revolt, the 1571 Ridolfi Plot, and the 1583 Throckmorton Plot, yet finally sign her death warrant after the 1586 Babington Plot?",
+        "hinge_guidance": "High-attaining GCSE answers trace three cumulative shifts by 1586: first, Walsingham and cipher clerk Thomas Phelippes intercepted direct, deciphered written proof from Chartley beer barrels showing Mary personally endorsing Elizabeth's assassination; second, Parliament's 1585 Act for the Preservation of the Queen's Safety provided the legal mechanism to try her; third, open Anglo-Spanish war had already begun in 1585, removing Elizabeth's earlier fear of provoking Philip II. Watch out for pupils muddling the foreign backers of Ridolfi (Spain/Alba), Throckmorton (French Duke of Guise + Spanish finance), and Babington (Guise/Spanish invasion force of 60,000).",
+        "misconceptions": [
+          {
+            "misconception": "Claiming Pope Pius V's 1570 Papal Bull caused the November 1569 Revolt of the Northern Earls.",
+            "correction": "Chronology is crucial in Paper 2: Northumberland and Westmorland rose in November 1569 and were defeated by January 1570 BEFORE news of Regnans in Excelsis (issued February 1570) reached England. That uncertainty helps explain why most Lancashire and southern Catholics refused to join the earls."
+          },
+          {
+            "misconception": "Confusing the Ridolfi Plot (1571), Throckmorton Plot (1583), and Babington Plot (1586) into a single generic Catholic conspiracy.",
+            "correction": "Each plot had distinct features: Roberto Ridolfi (1571) was an Italian banker linking Norfolk with Alba's 10,000 troops (leading to Norfolk's execution in 1572); Francis Throckmorton (1583) acted as courier for a French Guise invasion paid for by Spain (leading to Mendoza's expulsion); Anthony Babington (1586) left direct ciphered letters from Mary approving regicide."
+          },
+          {
+            "misconception": "Assuming English Catholics rose en masse against Elizabeth once excommunicated in 1570.",
+            "correction": "Despite harsh £20 monthly recusancy fines (1581) and Jesuit missions, the vast majority of English Catholics remained politically loyal to Elizabeth, forcing Catholic plotters after 1570 to rely on foreign Spanish or French invasion armies rather than domestic rebellion."
+          }
+        ],
+        "send_adaptation": "Pair the Four Catholic Threats Concept Diagram with the Visual Story Sheet so learners sort 1569 (Earls), 1571 (Ridolfi), 1583 (Throckmorton), and 1586 (Babington) by date, leader, and outcome before touching extended writing. Use Studio Audio and the Workbook Verso Spine to lock in Walsingham's beer-barrel cipher trap.",
+        "stretch_challenge": "Did the 1570 Papal Bull of Excommunication actually strengthen or weaken the Catholic threat to Elizabeth between 1570 and 1587?"
       },
       "learning_objectives": {
         "target": [
@@ -9252,7 +9351,8 @@
         "alt": "Three Norman sandstone towers of Durham Cathedral rising above wooded riverbanks"
       },
       "banner_position": "center 35%",
-      "banner_image": "/images/eee/kt2/durham_cathedral_exterior_banner.jpg"
+      "banner_image": "/images/eee/kt2/durham_cathedral_exterior_banner.jpg",
+      "banner_caption": "Durham Cathedral: Stronghold of the Prince-Bishops where 4,600 northern rebels tore up the English Bible and celebrated a defiant Latin Mass in November 1569."
     },
     {
       "id": "lesson_2_2",
@@ -9424,7 +9524,26 @@
               }
             ]
           }
-        }
+        },
+        "curriculum_link": "Key Topic 2.2: Relations with Spain, 1569–85 — political, religious, and commercial rivalry, the Dutch Revolt, New World privateering, Drake's circumnavigation (1577–80), and the Treaties of Joinville and Nonsuch (Edexcel Paper 2 Demand: 12m Explain why & 16m Judgement).",
+        "hinge_question": "Why was the December 1584 Franco-Spanish Treaty of Joinville—paired with William of Orange's assassination—the tipping point that forced Elizabeth into the 1585 Treaty of Nonsuch?",
+        "hinge_guidance": "Strong GCSE answers explain that throughout the 1570s Elizabeth preferred indirect, deniable pressure (hiring Casimir's mercenaries, backing the Duke of Alençon, and knighting Drake in 1581) to avoid open war with Spain. However, once William of Orange was assassinated (July 1584), Parma advanced on Antwerp, and the Catholic League in France allied with Philip II at Joinville (December 1584), England faced joint Franco-Spanish Catholic encirclement across the Channel, leaving direct intervention under Nonsuch (August 1585) as Elizabeth's only way to keep Dutch ports out of Parma's hands.",
+        "misconceptions": [
+          {
+            "misconception": "Treating Anglo-Spanish hostility before 1585 as purely religious hatred between Protestantism and Catholicism.",
+            "correction": "Had religion been Philip II's sole motive, he would have invaded in 1559 or 1570; instead, strategic security in the Low Countries (Antwerp cloth trade and Channel invasion ports) and Atlantic commercial rivalry over New World silver drove both monarchs' calculations."
+          },
+          {
+            "misconception": "Believing Elizabeth aimed to annex the Netherlands or overthrow Philip II's sovereignty there.",
+            "correction": "Elizabeth disliked aiding rebels against an anointed king and repeatedly rejected Dutch offers of sovereignty; her consistent goal was restoring the ancient self-governing liberties of the Spanish Netherlands under nominal Habsburg rule without a hostile Spanish army opposite the Thames."
+          },
+          {
+            "misconception": "Thinking England and Spain were formally at war during Drake's 1577–80 circumnavigation and the capture of the Cacafuego.",
+            "correction": "Drake raided Valparaíso and seized £140,000 from the Cacafuego during official peacetime under secret royal backing, which is why Elizabeth's public knighting of Drake aboard the Golden Hind at Deptford in April 1581 infuriated Philip II without yet triggering open war."
+          }
+        ],
+        "send_adaptation": "Use the Visual Story Sheet and Studio Audio to colour-code or group the five stages on the Workbook Verso Spine into three clear GCSE factors: Netherlands Strategy, New World Money/Privateering, and 1584–85 Diplomatic Crisis (Joinville to Nonsuch). This directly scaffolds three structured paragraphs for a 12-mark causation answer.",
+        "stretch_challenge": "Assess whether Elizabeth's public knighting of Francis Drake in April 1581 was reckless provocation against a newly strengthened Philip II (who had just annexed Portugal in 1580) or calculated deterrence."
       },
       "video": [
         {
@@ -10927,7 +11046,8 @@
         "alt": "Wide aerial panorama of the vast granite Royal Monastery and Palace of San Lorenzo de El Escorial surrounded by the wooded slopes of the Sierra de Guadarrama outside Madrid"
       },
       "banner_position": "center 52%",
-      "banner_image": "/images/eee/kt2/boazio_drake_west_indies_raid.jpg"
+      "banner_image": "/images/eee/kt2/boazio_drake_west_indies_raid.jpg",
+      "banner_caption": "San Lorenzo de El Escorial, Spain: Vast granite palace-monastery outside Madrid from which King Philip II directed the Catholic Counter-Reformation and governed Spain’s global empire."
     },
     {
       "id": "lesson_2_3",
@@ -11099,7 +11219,26 @@
               }
             ]
           }
-        }
+        },
+        "curriculum_link": "Key Topic 2.3: Outbreak of war with Spain, 1585–88 — Leicester's campaign in the Netherlands, Zutphen and Deventer, Drake's April 1587 raid on Cadiz ('singeing the King of Spain's beard'), and Armada preparations (Edexcel Paper 2 Demand: 4m Features & 12m Explain why).",
+        "hinge_question": "Why did Drake's April 1587 raid on Cadiz and Cape St Vincent damage the Spanish Armada far beyond the twelve months' delay it caused?",
+        "hinge_guidance": "Look beyond the headline destruction of ~30 ships in Cadiz harbour: strong GCSE answers highlight that off Cape St Vincent Drake burned Spain's stockpiles of seasoned oak barrel staves and hoops. Forced to use damp, unseasoned green pine for casks, the 1588 Armada sailed with leaky barrels whose water soured and food rotted at sea, weakening Spanish crews before and during the Channel battles.",
+        "misconceptions": [
+          {
+            "misconception": "Assuming Robert Dudley, Earl of Leicester, won decisive battlefield victories in the Netherlands between 1585 and 1587.",
+            "correction": "Leicester's expedition was chronically underfunded by Elizabeth, divided by his unauthorised acceptance of 'Governor-General' in January 1586, and damaged when Catholic officers Sir William Stanley and Rowland York betrayed Deventer and Zutphen fort to Parma in January 1587. Even so, Leicester kept Ostend and deep-water ports out of Parma's reach."
+          },
+          {
+            "misconception": "Thinking Drake's April 1587 raid on Cadiz was part of the August 1588 Channel battles against the Armada.",
+            "correction": "GCSE Exam Tip: Keep April 1587 ('singeing the King of Spain's beard' at Cadiz and Cape St Vincent) strictly separate from July–August 1588 (Plymouth, Calais fireships, and Gravelines). Cadiz was a pre-emptive strike in Spain that delayed the Armada from 1587 to 1588."
+          },
+          {
+            "misconception": "Believing the 130 ships of the Spanish Armada carried the main land army intended to conquer London on board from Lisbon.",
+            "correction": "Philip II's strategy required the Duke of Medina Sidonia's fleet to sail up the Channel and escort the Duke of Parma's 27,000 veteran troops across from Flanders in flat-bottomed barges—making a Channel rendezvous essential."
+          }
+        ],
+        "send_adaptation": "Walk through the Visual Story Sheet with Studio Audio, emphasizing the cause-and-effect link between Stage 3 (Cadiz harbour) and Stage 4 (burned oak barrel staves -> rotten food in 1588). Have learners complete the Workbook Verso 5-Stage Spine to secure the exact 1585 -> 1586 -> April 1587 -> July 1588 timeline.",
+        "stretch_challenge": "To what extent were the failures of Leicester's Dutch campaign (1585–87) the fault of Leicester's leadership rather than Elizabeth's refusal to fund a decisive war against Philip II?"
       },
       "video": [
         {
@@ -12605,11 +12744,12 @@
       "banner": {
         "image": "/images/eee/kt2/vroom_dutch_revolt_spanish_galleys_banner.jpg",
         "position": "center 56%",
-        "caption": "Naval Warfare of the Dutch Revolt (1617, by Hendrick Cornelisz Vroom, Rijksmuseum SK-A-460): Towering square-rigged Protestant warships engaging Spanish war galleys off the Flemish coast.",
+        "caption": "Hendrick Cornelisz Vroom’s Dutch Ships Ramming Spanish Galleys off the Flemish Coast (1617), depicting the Dutch Revolt naval warfare that drew Elizabeth I into open conflict with Spain.",
         "alt": "Early seventeenth-century maritime oil painting by Hendrick Cornelisz Vroom showing square-rigged Dutch Revolt warships ramming and firing cannon broadsides into Spanish galleys off the Flemish coast"
       },
       "banner_position": "center 50%",
-      "banner_image": "/images/eee/kt2/siege_of_antwerp_1585_banner.jpg"
+      "banner_image": "/images/eee/kt2/siege_of_antwerp_1585_banner.jpg",
+      "banner_caption": "Hendrick Cornelisz Vroom’s Dutch Ships Ramming Spanish Galleys off the Flemish Coast (1617), depicting the Dutch Revolt naval warfare that drew Elizabeth I into open conflict with Spain."
     },
     {
       "id": "lesson_2_4",
@@ -12824,7 +12964,26 @@
               }
             ]
           }
-        }
+        },
+        "curriculum_link": "Key Topic 2.4: The Spanish Armada, 1588 — Spanish invasion plan, Channel battles, Calais fireships, Battle of Gravelines (8 August 1588), tactical leadership, weather, and consequences of English victory (Edexcel Paper 2 Demand: 12m Explain why & 16m Judgement).",
+        "hinge_question": "Had the 'Protestant Wind' never blown after 8 August 1588, could Philip II's Armada plan still have succeeded?",
+        "hinge_guidance": "Strong GCSE answers explain why the invasion plan had already failed strategically before the Atlantic gales struck: Parma controlled no deep-water Dutch port, Dutch flyboats blockaded his flat-bottomed barges at Dunkirk and Nieuwpoort, communications between Medina Sidonia and Parma took days without safe anchorage, and the Calais fireships (7 August) plus English broadsides at Gravelines (8 August) had already scattered Spain's crescent formation and forced Medina Sidonia to cut his anchors. Catch pupils who treat Elizabeth's Tilbury speech (18 August) as a military cause of the Armada's naval defeat rather than a post-Gravelines morale and propaganda milestone.",
+        "misconceptions": [
+          {
+            "misconception": "Crediting the August–September storms ('the Protestant Wind') as the sole reason the Spanish Armada failed to invade England.",
+            "correction": "Gales wrecked dozens of Spanish ships off Scotland and Ireland during the retreat home, crippling Spanish fleet losses, but English fireships at Calais (7 August), Hawkins's fast race-built galleons at Gravelines (8 August), and the flawed Parma rendezvous plan had already defeated the invasion."
+          },
+          {
+            "misconception": "Naming Sir Francis Drake as overall Commander-in-Chief of the English fleet in 1588.",
+            "correction": "Lord Charles Howard of Effingham (Lord High Admiral) commanded the English fleet overall, with Sir Francis Drake serving as his Vice-Admiral and Sir John Hawkins as Rear-Admiral and chief naval designer."
+          },
+          {
+            "misconception": "Thinking defeat of the Armada in August 1588 ended the Anglo-Spanish War.",
+            "correction": "While 1588 safeguarded English independence, boosted Protestant national pride ('Flavit Jehovah et dissipati sunt'), and secured Dutch survival, costly Anglo-Spanish warfare dragged on at sea and in Europe until 1604, after Elizabeth's death."
+          }
+        ],
+        "send_adaptation": "Pair the August–September 1588 Concept Diagram with the Visual Story Sheet so learners visually separate the three decisive factors for a 16-mark essay: Flawed Spanish Strategy/Supplies, English Ships & Tactics (Calais fireships + Gravelines), and Weather. Use Studio Audio and the Workbook Verso Spine to rehearse each factor.",
+        "stretch_challenge": "Evaluate Philip II's personal responsibility for the defeat of 1588: was appointing the inexperienced Duke of Medina Sidonia less damaging than Philip's refusal to heed Parma's warnings about the lack of a deep-water port?"
       },
       "learning_objectives": {
         "target": [
@@ -14466,11 +14625,12 @@
       "banner": {
         "image": "/images/eee/kt2/wieringen_spanish_armada_banner.jpg",
         "position": "center 48%",
-        "caption": "The Spanish Armada off the English Coast (c. 1620–1625, by Cornelis Claesz van Wieringen, Rijksmuseum SK-A-1629): Panoramic maritime painting capturing the 1588 naval struggle across the English Channel.",
+        "caption": "Cornelis Claesz van Wieringen’s The Spanish Armada off the English Coast (c. 1620–1625), capturing English agile galleons engaging Philip II’s crescent fleet across the Channel in July–August 1588.",
         "alt": "Panoramic early seventeenth-century maritime oil painting by Cornelis Claesz van Wieringen showing English and Spanish galleons engaged across the English Channel in 1588"
       },
       "banner_position": "center 48%",
-      "banner_image": "/images/eee/kt2/wieringen_spanish_armada_banner.jpg"
+      "banner_image": "/images/eee/kt2/wieringen_spanish_armada_banner.jpg",
+      "banner_caption": "Cornelis Claesz van Wieringen’s The Spanish Armada off the English Coast (c. 1620–1625), capturing English agile galleons engaging Philip II’s crescent fleet across the Channel in July–August 1588."
     },
     {
       "id": "lesson_3_1",
@@ -14642,7 +14802,26 @@
               }
             ]
           }
-        }
+        },
+        "curriculum_link": "Key Topic 3.1: Education and leisure in Elizabethan England, 1558–88 — petty, grammar, and university education, class and gender disparities in literacy, sports and pastimes, and the rise of permanent theatres (Edexcel Paper 2 Demand: 4m Features & 12m/16m Social Change).",
+        "hinge_question": "Did the rapid growth of Elizabethan grammar schools and London playhouses break down Tudor social hierarchy or visually reinforce it?",
+        "hinge_guidance": "Strong GCSE answers argue that both institutions expanded cultural participation while strictly preserving rank: literacy rose to ~30% of men and ~10% of women, yet labouring children stayed in fields, girls were barred from grammar schools and Oxford/Cambridge, and inside purpose-built playhouses like 'The Theatre' (1576) or the Rose (1587), penny 'groundlings' stood in the open yard while gentry paid extra for cushioned gallery seats or stage stools.",
+        "misconceptions": [
+          {
+            "misconception": "Assuming the founding of 72 new grammar schools in the 1560s–70s created mass literacy across working-class boys and girls.",
+            "correction": "Grammar schools primarily educated sons of gentry, merchants, professionals, and prosperous yeomen (with limited scholarships for poor boys); overall literacy by 1603 reached roughly 30% of men and just 10% of women, as ordinary labourers needed children's farm or workshop wages."
+          },
+          {
+            "misconception": "Thinking Elizabethan sports and theatre lacked cross-class appeal altogether.",
+            "correction": "While hunting deer, hawking, fencing, and real tennis were exclusive to the nobility and gentry (and mob football to the lower orders), blood sports like bear-baiting and cock-fighting, alongside the new Bankside theatres, drew spectators from every social class—even though seating remained strictly segregated."
+          },
+          {
+            "misconception": "Assuming everyone welcomed Shakespearean and Marlovian playhouses.",
+            "correction": "Puritan magistrates and preachers fiercely opposed theatres as dens of idleness, Sabbath-breaking, pickpockets, and bubonic plague infection, forcing playhouses like the Rose outside City of London jurisdiction onto Southwark's Bankside."
+          }
+        ],
+        "send_adaptation": "Project the Elizabethan Leisure by Social Rank Concept Diagram alongside the Visual Story Sheet so learners contrast elite vs working-majority schooling and pastimes at a glance. Play Studio Audio and use the Workbook Verso Spine to capture concrete named details (petty schools, hornbooks, 72 grammar schools, James Burbage's 1576 'The Theatre', penny groundlings).",
+        "stretch_challenge": "Assess how far the flowering of secular Elizabethan drama after 1572 was an unintended consequence of government vagrancy legislation and royal patronage (such as forming the Queen's Men in 1583) rather than purely artistic genius."
       },
       "learning_objectives": {
         "target": [
@@ -16221,7 +16400,8 @@
         "caption": "Hardwick Hall, Derbyshire (built 1590–1597 for Bess of Hardwick, Countess of Shrewsbury, designed by Robert Smythson). Famous as “Hardwick Hall, more glass than wall”, its soaring mullioned windows and rooftop initials embodied rising Elizabethan noble wealth, classical taste, and renaissance culture."
       },
       "banner_position": "center 32%",
-      "banner_image": "/images/eee/kt3/l9_banner_visscher_southwark.jpg"
+      "banner_image": "/images/eee/kt3/l9_banner_visscher_southwark.jpg",
+      "banner_caption": "Hardwick Hall, Derbyshire (built 1590–1597 for Bess of Hardwick, Countess of Shrewsbury, designed by Robert Smythson). Famous as “Hardwick Hall, more glass than wall”, its soaring mullioned windows and rooftop initials embodied rising Elizabethan noble wealth, classical taste, and renaissance culture."
     },
     {
       "id": "lesson_3_2",
@@ -16393,7 +16573,26 @@
               }
             ]
           }
-        }
+        },
+        "curriculum_link": "Key Topic 3.2: The problem of the poor, 1558–88 — population rise, price inflation, sheep enclosure, cloth-trade slumps, deserving vs idle poor, and the 1563, 1572, and 1576 Poor Laws (Edexcel Paper 2 Demand: 12m Explain why & 16m Judgement).",
+        "hinge_question": "What specific change between the 1572 Vagabonds Act and the 1576 Poor Relief Act proves that Elizabethan MPs finally understood structural unemployment?",
+        "hinge_guidance": "Strong GCSE answers pinpoint that while the 1572 Vagabonds Act established a compulsory local poor rate alongside savage ear-boring and hanging for 'sturdy beggars', the 1576 Poor Relief Act ordered towns and parishes to buy raw wool, flax, hemp, and iron so able-bodied unemployed people could earn wages—recognising a third group ('the able-bodied poor unable to find work' after cloth-trade slumps) distinct from idle vagabonds. Warn pupils not to build their whole answer around the 1601 Poor Law, which falls outside the 1558–88 specification window except as long-term consolidation.",
+        "misconceptions": [
+          {
+            "misconception": "Blaming Elizabethan poverty solely on Henry VIII's Dissolution of the Monasteries in the 1530s.",
+            "correction": "While losing monastic charity removed an older safety net, poverty surged between 1558 and 1588 mainly due to 35% population growth (3 million to 4 million), bad harvests in the 1570s inflating grain prices, gentry sheep enclosure reducing farm jobs, and Antwerp cloth-trade embargoes."
+          },
+          {
+            "misconception": "Claiming Elizabethan governments dropped harsh punishments once they introduced poor relief.",
+            "correction": "Tudor legislation remained dual-track throughout: the impotent (deserving) poor received parish relief, the able-bodied unemployed were given raw materials to spin or weave from 1576, and persistent 'sturdy beggars' were sent to Bridewell Houses of Correction, whipped, or executed."
+          },
+          {
+            "misconception": "Writing extensively about the 1590s famine harvests and the 1601 Elizabethan Poor Law in an Edexcel 1558–88 Paper 2 answer.",
+            "correction": "GCSE Exam Tip: Edexcel Option B4 ends strictly in 1588. Anchor poor-relief answers firmly in the 1563 Statute of Artificers, the 1572 Vagabonds Act, and the 1576 Act for Setting the Poor on Work."
+          }
+        ],
+        "send_adaptation": "Display the Three Categories of the Elizabethan Poor Concept Diagram alongside the Visual Story Sheet so learners clearly distinguish Impotent Poor, Able-Bodied Unemployed, and Idle Vagabonds. Use Studio Audio and the Workbook Verso Spine to pair Causes (Stages 1–2) with Government Laws (Stages 3–5).",
+        "stretch_challenge": "Evaluate whether Elizabethan Poor Laws in 1572 and 1576 were motivated more by Christian charity toward the destitute or by gentry fear of social disorder and rebellion after the 1569 Northern Rising."
       },
       "learning_objectives": {
         "target": [
@@ -17985,7 +18184,8 @@
         "caption": "Pieter Bruegel the Elder, The Harvesters (1565, Metropolitan Museum of Art). Depicting sixteenth-century seasonal grain reapers whose livelihood depended on bountiful summer harvests and labour-intensive arable farming before sheep enclosure."
       },
       "banner_position": "center 38%",
-      "banner_image": "/images/eee/kt3/l10_banner_saxton_england_1579.jpg"
+      "banner_image": "/images/eee/kt3/l10_banner_saxton_england_1579.jpg",
+      "banner_caption": "Pieter Bruegel the Elder, The Harvesters (1565, Metropolitan Museum of Art). Depicting sixteenth-century seasonal grain reapers whose livelihood depended on bountiful summer harvests and labour-intensive arable farming before sheep enclosure."
     },
     {
       "id": "lesson_3_3",
@@ -18157,7 +18357,26 @@
               }
             ]
           }
-        }
+        },
+        "curriculum_link": "Key Topic 3.3: Exploration and voyages of discovery, 1558–88 — navigational technology (astrolabe, quadrant, Mercator map), race-built galleons, joint-stock trading companies, and Drake's 1577–80 circumnavigation (Edexcel Paper 2 Demand: 4m Features & 12m Explain why).",
+        "hinge_question": "Would English merchants and privateers have ventured across the Atlantic and Pacific in the 1570s without the collapse of the Antwerp woollen cloth market?",
+        "hinge_guidance": "Strong GCSE answers distinguish between enabling factors (Mercator's 1569 projection map, astrolabes/quadrants, triangular lateen sails, and Hawkins's race-built galleons made global ocean crossings physically possible) and motivating triggers (Spanish trade embargoes in the Netherlands choked England's vital woollen cloth exports, pushing London merchants into the Muscovy, Eastland, and Levant companies and privateering against Spanish silver).",
+        "misconceptions": [
+          {
+            "misconception": "Thinking Francis Drake set out from Plymouth in December 1577 intending to sail all the way around the world.",
+            "correction": "Drake's secret royal commission aimed to pass through the Strait of Magellan, raid unguarded Spanish ports in Chile and Peru (capturing £140,000 on the Cacafuego), and search for a Northwest Passage home; he crossed the Pacific and Indian Oceans to avoid waiting Spanish warships."
+          },
+          {
+            "misconception": "Confusing latitude navigation tools (astrolabes and quadrants) with accurate longitude measurement.",
+            "correction": "Elizabethan mariners could calculate north-south latitude using an astrolabe, quadrant, or back-staff with printed sun tables, and Mercator's 1569 map gave true compass bearings, but accurate east-west longitude at sea remained unsolved until the eighteenth century."
+          },
+          {
+            "misconception": "Overlooking Drake's Nova Albion landing in June 1579 when explaining the significance of his circumnavigation.",
+            "correction": "Alongside returning a 4,700% profit for investors (including Elizabeth) and proving English navigational reach, Drake claimed 'Nova Albion' on the California coast in Elizabeth's name, directly inspiring Sir Humphrey Gilbert and Sir Walter Raleigh's North American colonisation plans."
+          }
+        ],
+        "send_adaptation": "Pair the Drake's Circumnavigation Concept Diagram with the Visual Story Sheet so learners trace his 1577–80 route visually while listening to Studio Audio. Have pupils sort the Workbook Verso Spine into 'Why They Sailed' (trade/plunder), 'How They Sailed' (astrolabes/galleons), and 'What Changed' (treasure/Nova Albion).",
+        "stretch_challenge": "How far was technical innovation in ship design and cartography less decisive in driving Elizabethan oceanic expansion than the joint-stock financial model of London merchant adventurers and royal courtiers?"
       },
       "learning_objectives": {
         "target": [
@@ -19862,7 +20081,8 @@
         "caption": "Hendrick Cornelisz Vroom, Ocean-Going Galleons Setting Sail (1600, Rijksmuseum, Amsterdam). Illustrating the sleek, multi-masted hulls, combined square and lateen rigging, and low gun decks that enabled late sixteenth-century transoceanic voyages."
       },
       "banner_position": "center 35%",
-      "banner_image": "/images/eee/kt3/l11_banner_ortelius_world_map_1570.jpg"
+      "banner_image": "/images/eee/kt3/l11_banner_ortelius_world_map_1570.jpg",
+      "banner_caption": "Hendrick Cornelisz Vroom, Ocean-Going Galleons Setting Sail (1600, Rijksmuseum, Amsterdam). Illustrating the sleek, multi-masted hulls, combined square and lateen rigging, and low gun decks that enabled late sixteenth-century transoceanic voyages."
     },
     {
       "id": "lesson_3_4",
@@ -20042,7 +20262,26 @@
               }
             ]
           }
-        }
+        },
+        "curriculum_link": "Key Topic 3.4: Raleigh and Virginia, 1584–88 — Sir Walter Raleigh's royal patent, economic and strategic motives, the 1585–86 Ralph Lane expedition, the 1587 John White 'Lost Colony', and reasons for failure (Edexcel Paper 2 Demand: 4m Features, 12m Explain why & 16m Judgement).",
+        "hinge_question": "Why did the second Roanoke expedition under John White in 1587 fail even after Raleigh deliberately fixed the all-male military recruitment mistakes of 1585?",
+        "hinge_guidance": "Strong GCSE answers connect pre-existing hostility with bad timing: although Raleigh recruited 118 men, women, and children promised 500 acres on Chesapeake Bay, pilot Simon Fernandez dropped them back at drought-hit Roanoke Island where Ralph Lane's 1586 killing of Secotan Chief Wingina had poisoned Algonquian relations; then, when White sailed back to England for urgent supplies in August 1587, Elizabeth requisitioned every English ship to fight the 1588 Spanish Armada, stranding Roanoke until 1590. Remind pupils that Raleigh himself never set foot in North America because Elizabeth forbade her favourite courtier from sailing.",
+        "misconceptions": [
+          {
+            "misconception": "Writing that Sir Walter Raleigh personally sailed to Virginia and led the Roanoke colonists ashore.",
+            "correction": "Elizabeth I refused to let Raleigh risk his life at sea; Raleigh organised the royal patent (1584), raised £40,000 from investors, and promoted Virginia from England, delegating command to Richard Grenville and Ralph Lane (1585) and John White (1587)."
+          },
+          {
+            "misconception": "Merging the 1585–86 military colony and the 1587 'Lost Colony' into a single Roanoke expedition.",
+            "correction": "GCSE Exam Tip: Keep the two voyages distinct. The April 1585 voyage of 107 men (wreck of the Tiger ruining seed corn, killing of Chief Wingina, evacuated by Francis Drake in June 1586) preceded John White's May 1587 family settlement of 118 colonists (found vanished with 'CROATOAN' carved on a post in 1590)."
+          },
+          {
+            "misconception": "Assuming Roanoke left zero positive legacy for England because both settlements failed.",
+            "correction": "Thomas Harriot's scientific survey and John White's detailed watercolours mapped Algonquian crops, customs, and geography, providing the practical blueprint—and lessons on self-sufficiency and timing—that enabled England's permanent Jamestown colony in Virginia twenty years later."
+          }
+        ],
+        "send_adaptation": "Use the Ralph Lane 1585–86 Concept Diagram and Visual Story Sheet alongside Studio Audio so learners see the chain reaction: Late April Sailing + Wreck of the Tiger -> Ruined Seed Corn -> Food Dependence -> Conflict with Chief Wingina. Consolidate both 1585 and 1587 voyages on the Workbook Verso Spine before tackling comparison or causation tasks.",
+        "stretch_challenge": "Assess whether poor planning and settler skill mismatches (soldiers and fortune-hunters vs farmers) were more important than the 1588 Spanish Armada crisis in explaining why Elizabethan England failed to establish a permanent North American colony."
       },
       "learning_objectives": {
         "target": [
@@ -21733,7 +21972,8 @@
         "caption": "Barrier-Island Dunes and Shallow Atlantic Shoals of the Outer Banks (Cape Hatteras National Seashore, North Carolina). These shifting barrier sandbars sheltered Roanoke Island inside Pamlico Sound yet grounded heavy supply ships like the Tiger in June 1585."
       },
       "banner_position": "center 45%",
-      "banner_image": "/images/eee/kt3/l12_banner_debry_virginia_coast_1590.jpg"
+      "banner_image": "/images/eee/kt3/l12_banner_debry_virginia_coast_1590.jpg",
+      "banner_caption": "Barrier-Island Dunes and Shallow Atlantic Shoals of the Outer Banks (Cape Hatteras National Seashore, North Carolina). These shifting barrier sandbars sheltered Roanoke Island inside Pamlico Sound yet grounded heavy supply ships like the Tiger in June 1585."
     }
   ],
   "key_individuals": [
@@ -21937,5 +22177,10 @@
   "key_stage": "GCSE",
   "yearGroup": "GCSE (9–1)",
   "year_group": "GCSE (9–1)",
-  "category": "GCSE"
+  "category": "GCSE",
+  "teacher_guidance_overview": {
+    "curriculum_focus": "Pearson Edexcel GCSE (9–1) History Paper 2 Option B4: Early Elizabethan England, 1558–88.",
+    "disciplinary_threads": "Key Features (4m), Causation 'Explain why' (12m), and Evaluative Judgement 'How far do you agree' (16m).",
+    "non_specialist_summary": "This British Depth Study examines the first thirty years of Elizabeth I's reign from her fragile accession in November 1558 to the defeat of the Spanish Armada in August 1588. Organised across three Key Topics—government and the 1559 Religious Settlement, domestic Catholic plots and war with Spain, and Elizabethan education, poverty, exploration, and Virginia—the course rewards precise factual knowledge of Tudor institutions, religious turning points, and multi-causal explanations."
+  }
 }

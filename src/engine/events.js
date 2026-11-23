@@ -295,9 +295,16 @@ export function initEventDelegation() {
             zoomImg.dataset.defaultZoom ||
             zoomImg.getAttribute('data-default-zoom') ||
             zoomImg.closest('[data-default-zoom]')?.getAttribute('data-default-zoom');
+          const caption = String(
+            zoomImg.dataset.caption ||
+              zoomImg.getAttribute('data-caption') ||
+              zoomImg.closest('[data-caption]')?.getAttribute('data-caption') ||
+              zoomImg.getAttribute('alt') ||
+              '',
+          ).trim();
           if (imgSrc && window.openModal) {
             e.preventDefault();
-            window.openModal(imgSrc, { defaultZoom });
+            window.openModal(imgSrc, { defaultZoom, caption });
             return;
           }
         }
@@ -315,6 +322,15 @@ export function initEventDelegation() {
         break;
 
       case 'open-modal': {
+        if (
+          (target.classList.contains('lesson-hero') ||
+            target.classList.contains('hero-container')) &&
+          e.target.closest(
+            'button:not(.btn-banner-inspect), a, select, input, details, summary, .hero-curricular-launchpad, .spec-anchor-btn, .lesson-hero-cameo, .btn-banner-gallery',
+          )
+        ) {
+          break;
+        }
         if (window.openModal) {
           const imgSrc =
             target.dataset.src ||
@@ -334,8 +350,24 @@ export function initEventDelegation() {
             e.target.dataset?.defaultZoom ||
             e.target.getAttribute?.('data-default-zoom');
 
+          const caption = String(
+            target.dataset.caption ||
+              target.getAttribute('data-caption') ||
+              target.dataset.cameoClue ||
+              target.getAttribute('data-cameo-clue') ||
+              target.dataset.bannerClue ||
+              target.getAttribute('data-banner-clue') ||
+              e.target.dataset?.caption ||
+              e.target.getAttribute?.('data-caption') ||
+              target.getAttribute('alt') ||
+              e.target.getAttribute?.('alt') ||
+              target.querySelector('img')?.getAttribute('data-caption') ||
+              target.querySelector('img')?.getAttribute('alt') ||
+              '',
+          ).trim();
+
           if (imgSrc) {
-            window.openModal(imgSrc, { defaultZoom });
+            window.openModal(imgSrc, { defaultZoom, caption });
           }
         }
         break;

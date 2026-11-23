@@ -1,0 +1,120 @@
+{
+  "unit_id": "australia",
+  "unit_overview": {
+    "curriculum_focus": "KS3 National Curriculum: Ideas, political power, industry and empire — Britain, 1745–1901 (settler colonialism, First Nations custodianship, penal transportation, frontier resistance, and democratic Federation).",
+    "disciplinary_threads": "Causation and Consequence, Evidential Source Scrutiny, Historical Interpretations, and Significance.",
+    "non_specialist_summary": "This five-enquiry sequence traces how over 65,000 years of continuous First Nations custodianship collided with British imperial expansion after James Cook's 1770 coastal claim and the 1788 arrival of the First Fleet. Pupils investigate convict life, epidemic disease, diplomatic mediation and armed resistance across the Sydney Basin and Van Diemen's Land, and the Merino wool land grab. The unit concludes with the 1851 Gold Rush, the 1854 Eureka Stockade, the 1901 White Australia Policy, and First Nations civil rights campaigning culminating in the 1992 Mabo ruling."
+  },
+  "lessons": {
+    "lesson_1": {
+      "curriculum_link": "KS3 National Curriculum (Britain 1745–1901): Maritime exploration, imperial rivalry, Indigenous Pacific navigation, and the legal doctrine of terra nullius — Causal Explanation & Primary Source Contradiction.",
+      "hinge_question": "How do Cook's locked 1768 Admiralty orders and Sydney Parkinson's 1770 sketches together expose the contradiction behind Britain's claim of terra nullius?",
+      "hinge_guidance": "Strong responses connect two pieces of lesson evidence: Source A explicitly instructed Cook to take possession only 'with the Consent of the Natives', while Source C (Parkinson's sketches of Gweagal bark canoes, gunyahs, and shields) proved Botany Bay was actively inhabited and defended. Probe any pupil who assumes Cook genuinely saw no people; guide them to Block 5 and Source E (Blackstone) showing how British lawyers redefined ownership around ploughs, fences, and permanent towns to bypass Indigenous sovereignty.",
+      "misconceptions": [
+        {
+          "misconception": "Pupils often believe Captain James Cook was the first person to 'discover' an empty Australian continent in 1770.",
+          "correction": "First Nations peoples had cared for ancestral Country across Australia for over 65,000 years, and Dutch navigators had already charted stretches of the northern and western coasts before Cook's 1770 east-coast survey."
+        },
+        {
+          "misconception": "Pupils assume HMS Endeavour sailed purely as a peaceful scientific astronomy mission to observe the transit of Venus.",
+          "correction": "Alongside Royal Society astronomer Joseph Banks, Cook carried locked secret Admiralty instructions (Source A) ordering him to sail south after Tahiti and claim Pacific territory for King George III ahead of rival European empires."
+        },
+        {
+          "misconception": "Pupils assume European instruments alone guided HMS Endeavour across the Pacific without Indigenous expertise.",
+          "correction": "Cook relied heavily on Ra'iatean high priest and master navigator Tupaia, who read stars, ocean swells, and bird paths, drew a chart of over 70 Pacific islands across 3,000 miles (Source B), and mediated encounters with Maori communities."
+        }
+      ],
+      "send_adaptation": "Pair read-aloud audio on Blocks [1.1]–[1.5] with the Block 5 spectrum slider widget and pre-highlight the two key phrases in Source A ('Consent of the Natives') and Source C ('canoes, homes, and defensive shields') before pupils attempt the three-point causal writing frame.",
+      "stretch_challenge": "Compare Britain's decision to sign treaties in North America and New Zealand (such as Waitangi later in 1840) with its refusal to negotiate any treaty in eastern Australia: why did Blackstone's definition of cultivation in Source E prove so decisive here?",
+      "safeguarding_impartiality": "First Nations Terminology & Respectful Framing: Capitalise 'First Nations', 'Indigenous', and 'Country' (when referring to ancestral land and waterways), and name specific communities where known, such as the Gweagal clan of the Dharawal Nation at Kamay (Botany Bay). Ensure pupils understand that colonial descriptions of First Nations peoples as 'primitive nomads' in historical texts reflect 18th-century European bias rather than historical reality."
+    },
+    "lesson_2": {
+      "curriculum_link": "KS3 National Curriculum (Britain 1745–1901): Georgian crime, the Bloody Code, the 1783 loss of the American colonies, and penal transportation to New South Wales — Evidential Inference & Feature Identification.",
+      "hinge_question": "Why did losing the American War of Independence in 1783 trigger a domestic crisis on the River Thames that ended with eleven ships landing at Sydney Cove in 1788?",
+      "hinge_guidance": "Listen for a clear three-step causal chain: losing America closed Britain's existing outlet for transported felons; harsh Bloody Code sentences rapidly overcrowded county jails and disease-ridden Thames prison hulks (Block 1 and Source A); and William Pitt's government chose Botany Bay to permanently remove convicts while securing a Pacific naval foothold. Probe pupils who think convicts were sent to Australia because they were violent murderers—most were urban working-class men and women convicted of petty property theft.",
+      "misconceptions": [
+        {
+          "misconception": "Pupils often imagine First Fleet convicts were hardened serial killers locked inside stone prison cells upon reaching Australia.",
+          "correction": "Most First Fleet convicts were poor urban labourers sentenced under the Bloody Code for minor property thefts, and Sydney Cove operated as an open-air labour settlement rather than a walled Victorian jail."
+        },
+        {
+          "misconception": "Pupils assume the First Fleet voyage suffered catastrophic mortality similar to transatlantic slave ships.",
+          "correction": "Governor Arthur Phillip enforced strict deck ventilation, clean water, and fresh food stops at Rio de Janeiro and Cape Town, achieving an extraordinary survival rate of over 97 percent across the eight-month, 15,000-mile voyage (Source B)."
+        },
+        {
+          "misconception": "Pupils assume the British colony thrived straight away at Botany Bay using Joseph Banks's 1770 recommendations.",
+          "correction": "Phillip immediately rejected swampy, exposed Botany Bay in January 1788 for deep-water Sydney Cove in Port Jackson, where sandy soil, snapped hoes, and the wreck of supply ship HMS Guardian nearly starved the settlement between 1788 and 1790 (Source D)."
+        }
+      ],
+      "send_adaptation": "Use the Block 1 convict profile deck and the Block 3 Reference Map to trace the Portsmouth-to-Port Jackson route visually, then lean on the built-in sentence starters in the Recto 'Two Key Features' task on Thames prison hulks.",
+      "stretch_challenge": "Using Source E, evaluate Governor Phillip's dual system of 300-lash corporal punishment (John Caesar) alongside 30-acre emancipist land grants (James Ruse): was transportation primarily an instrument of Georgian terror or an engine of settler colony-building?",
+      "safeguarding_impartiality": null
+    },
+    "lesson_3": {
+      "curriculum_link": "KS3 National Curriculum (Britain 1745–1901): First Nations ecological custodianship, the 1789 smallpox epidemic, cultural mediation, and Sydney Basin guerrilla warfare — Chronological Narrative Analysis.",
+      "hinge_question": "Why were Woollarawarre Bennelong's diplomacy and Pemulwuy's guerrilla raids two contrasting yet rational responses to the same post-1788 crisis?",
+      "hinge_guidance": "Strong answers anchor both men's choices in the devastating April 1789 gal-galla smallpox outbreak (which killed 50 to 70 percent of Sydney's Eora population and shattered elder leadership). Within that crisis, Wangal envoy Bennelong used language and personal diplomacy with Governor Phillip to negotiate survival space, whereas Bidjigal leader Pemulwuy united clans in armed raids on Hawkesbury and Parramatta farms seizing Dharug yam beds. Challenge any pupil who labels Bennelong a 'collaborator' or dismisses Pemulwuy as an 'outlaw' using uncritical colonial language from Source E.",
+      "misconceptions": [
+        {
+          "misconception": "Pupils assume pre-1788 Australian landscapes were untouched 'wilderness' that Indigenous communities merely wandered through.",
+          "correction": "Across 65,000 years and more than 250 language nations, First Nations peoples actively managed Country through seasonal fire-stick farming, sustainable fishing protocols (Source A), and sacred Songlines."
+        },
+        {
+          "misconception": "Pupils assume British colonisation of New South Wales was peaceful because no formal war was declared in London.",
+          "correction": "From 1790 to 1802, Bidjigal warrior Pemulwuy led coordinated guerrilla warfare across Parramatta and the Hawkesbury River, prompting Governor King's 1801 dead-or-alive proclamation and shoot-on-sight orders (Source E)."
+        },
+        {
+          "misconception": "Pupils think Woollarawarre Bennelong voluntarily moved into Government House out of admiration for British customs.",
+          "correction": "Bennelong was kidnapped by British marines in late 1789 on Governor Phillip's orders; his subsequent English fluency and 1792 voyage to London were strategic efforts to mediate between his Wangal kin and the Crown."
+        }
+      ],
+      "send_adaptation": "Use the Block 3 spectrum slider to compare Bennelong and Pemulwuy visually before writing, and chunk the Recto 3-paragraph narrative account into Beginning (1788–90 smallpox), Middle (1792–97 Parramatta), and End (1797–1802 Hawkesbury) using the Verso 5-Stage Chronology Spine.",
+      "stretch_challenge": "Examine Governor King's 1 May 1801 proclamation (Source E): how does outlawing Pemulwuy 'dead or alive' unintentionally prove that British authorities recognised they were fighting an organised military resistance rather than policing petty crime?",
+      "safeguarding_impartiality": "Sensitive Historical & Cultural Framing: Name specific Sydney Basin peoples accurately (Eora, Gadigal, Wangal, Bidjigal, Dharug). Handle the 1789 smallpox mortality (Source B) and the colonial mutilation of Pemulwuy's remains in 1802 with calm historical dignity—note for pupils' awareness that First Nations communities have long campaigned for the respectful repatriation of ancestral remains from overseas museums."
+    },
+    "lesson_4": {
+      "curriculum_link": "KS3 National Curriculum (Britain 1745–1901): Industrial Britain's imperial links (Yorkshire wool demand), the Tasmanian Black War, and the 1838 Myall Creek trial — Historical Interpretations & Provenance.",
+      "hinge_question": "Why did the hanging of seven white stockmen after the 1838 Myall Creek Massacre fail to stop violence across the Australian pastoral frontier?",
+      "hinge_guidance": "Look for pupils connecting two forces: first, soaring Yorkshire textile mill demand for fine Merino wool gave colonial squatters an overwhelming financial incentive to keep seizing inland grasslands and waterholes (Block 4); second, furious settler backlash against Governor Gipps's prosecution drove future frontier killings behind a rural code of silence rather than ending them (Block 5). Probe any response that takes the 1838 verdict—or Governor Arthur's c. 1829 Pictorial Proclamation Board (Source B)—as proof that equal legal protection operated normally across the frontier.",
+      "misconceptions": [
+        {
+          "misconception": "Pupils assume Governor Arthur's c. 1829 Pictorial Proclamation Board (Source B) shows that British law treated settlers and Palawa people equally in Tasmania.",
+          "correction": "Arthur issued the board right after declaring martial law in November 1828, which authorised soldiers and settlers to shoot Palawa people on sight across settled districts and culminated in the 2,200-man Black Line of 1830."
+        },
+        {
+          "misconception": "Pupils think pastoral expansion on the mainland had nothing to do with Britain's domestic Industrial Revolution.",
+          "correction": "Booming mechanized woollen mills in Yorkshire created insatiable demand for Australian Merino fleece, driving colonial squatters across the Blue Mountains onto Wirrayaraay and other inland Nations' hunting grounds and yam fields."
+        },
+        {
+          "misconception": "Pupils sometimes repeat the outdated colonial claim that Tasmanian Aboriginal people 'died out' completely after exile to Flinders Island.",
+          "correction": "Although betrayal and disease at Wybalenna camp killed over 150 of the 200 exiled Palawa people (Source C), Palawa families endured and continue to maintain living Tasmanian Aboriginal culture and identity today."
+        }
+      ],
+      "send_adaptation": "Anchor geographical transitions using the Block 1 Reference Map (separating Van Diemen's Land from mainland Bathurst and Myall Creek), and display Source B beside Block [4.2] so pupils can spot the visual contrast between promised justice and martial law before tackling Interpretations 1 and 2.",
+      "stretch_challenge": "Cross-reference the 1837 British Parliamentary Select Committee Report (Source D) with Interpretation 1 on the Recto task: how do official colonial depositions from Risdon Cove (Source A) and Myall Creek (Source E) test revisionist claims that frontier violence was minimal?",
+      "safeguarding_impartiality": "Trauma-Informed & Respectful Framing: This enquiry addresses unprovoked frontier massacres at Risdon Cove (1804) and Myall Creek (1838) alongside forced exile at Wybalenna. Ground discussion strictly in legal depositions and parliamentary records (Sources A, D, and E) without graphic elaboration or roleplay, and affirm the enduring survival of the Palawa community in lutruwita / Tasmania."
+    },
+    "lesson_5": {
+      "curriculum_link": "KS3 National Curriculum (Britain 1745–1901 & Challenges Post-1901): The 1851 Gold Rush, the 1854 Eureka Stockade, Federation, the White Australia Policy, and Native Title — Synoptic Evaluation.",
+      "hinge_question": "Why did the birth of Australian democracy between Eureka (1854) and Federation (1901) expand voting rights for white working men while deepening legal exclusion for First Nations and Chinese people?",
+      "hinge_guidance": "Strong answers hold this central paradox together: outrage after redcoats stormed the Eureka Stockade in December 1854 abolished the hated 30-shilling monthly mining licence and won manhood suffrage and the secret ballot in Victoria, yet goldfield hostility toward 40,000 Chinese diggers (such as the 1861 Lambing Flat riots) directly shaped the 1901 Immigration Restriction Act's dictation test (Source D), while Federation excluded Indigenous Australians from the census and entrenched state child removals. Probe pupils who treat Eureka or 1901 Federation as an uncomplicated triumph of equality for everyone.",
+      "misconceptions": [
+        {
+          "misconception": "Pupils assume the Eureka Stockade was a military victory in which Ballarat miners defeated the British army.",
+          "correction": "Militarily, redcoats overran the wooden stockade in fifteen minutes at dawn on 3 December 1854, killing twenty-two diggers; its victory was political, as public sympathy forced juries to acquit the rebels and won manhood suffrage."
+        },
+        {
+          "misconception": "Pupils think the 1901 Immigration Restriction Act openly stated a ban on Asian migrants in plain words.",
+          "correction": "To avoid offending Britain's imperial subjects and Japanese allies openly, federal officials used a rigged 50-word dictation test in any European language chosen by the customs officer to bar non-European arrivals (Source D)."
+        },
+        {
+          "misconception": "Pupils assume First Nations political campaigning only began in the late twentieth century before the 1992 Mabo ruling.",
+          "correction": "Aboriginal activists led by the Aborigines Progressive Association staged the landmark Day of Mourning protest at Sydney's Australian Hall on 26 January 1938—the 150th anniversary of the First Fleet—demanding full citizen rights (Source E)."
+        }
+      ],
+      "send_adaptation": "Use the Block 5 profile deck and Verso 5-Stage Spine to separate the lesson's three strands (Eureka democracy, anti-Chinese Immigration Restriction Act, and Day of Mourning to Mabo) into colour-coded bullet banks before pupils write their balanced three-paragraph essay.",
+      "stretch_challenge": "Synthesise Lesson 1 and Lesson 5: explain how the High Court's 1992 Mabo decision legally dismantled the exact 18th-century property argument established by Cook and Blackstone in 1768–1788.",
+      "safeguarding_impartiality": "Pastoral & Historical Framing: Teach anti-Chinese violence at Lambing Flat (1861), the 1901 White Australia Policy, and the forced removal of Aboriginal and Torres Strait Islander children (the Stolen Generations) factually through statutory and activist evidence (Sources D and E). Highlight Indigenous political agency from the 1938 Day of Mourning to Eddie Koiki Mabo's legal victory, and remain attentive to looked-after or adopted pupils when referencing state child removals."
+    }
+  }
+}

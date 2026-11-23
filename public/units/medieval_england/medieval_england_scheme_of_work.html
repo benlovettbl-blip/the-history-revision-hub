@@ -1,0 +1,1015 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medieval England (1066–1485) • Walk-In Teacher Guide &amp; Scheme of Work (6 Pages) | The History Revision Hub</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;800&family=Inter:wght@400;600;700;800&family=Lora:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --accent: #7c2d12;
+      --accent-dark: #431407;
+      --accent-soft: #fff7ed;
+      --accent-border: #fed7aa;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+    @page {
+      size: 210mm 297mm;
+      margin: 0;
+    }
+    body {
+      background: #cbd5e1;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      color: #0f172a;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .screen-toolbar {
+      width: 100%;
+      background: #0f172a;
+      color: #ffffff;
+      padding: 9px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid #f59e0b;
+      position: sticky;
+      top: 0;
+      z-index: 50;
+    }
+    .screen-toolbar-actions a,
+    .screen-toolbar-actions button {
+      background: var(--accent-dark);
+      color: #ffffff;
+      border: 1px solid #fbbf24;
+      padding: 5px 12px;
+      border-radius: 5px;
+      font-size: 8.5pt;
+      font-weight: 700;
+      text-decoration: none;
+      cursor: pointer;
+      margin-left: 6px;
+    }
+    .page.sow-page {
+      width: 210mm;
+      height: 297mm;
+      max-height: 297mm;
+      background: #ffffff;
+      margin: 7mm auto;
+      padding: 8mm 10.5mm;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      overflow: hidden;
+      page-break-after: always;
+      break-after: page;
+      box-shadow: 0 8px 24px rgba(15, 23, 42, 0.16);
+    }
+    .page-inner {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 2.1mm;
+      min-height: 0;
+    }
+    .sow-masthead,
+    .sow-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1.5px solid var(--accent);
+      padding-bottom: 1.1mm;
+      font-size: 8.2pt;
+      font-weight: 800;
+      color: var(--accent-dark);
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+    }
+    .sow-foot {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 1px solid #cbd5e1;
+      padding-top: 1.2mm;
+      margin-top: 1.4mm;
+      font-size: 8.2pt;
+      color: #475569;
+      font-weight: 600;
+      flex-shrink: 0;
+    }
+    .sow-pill {
+      background: var(--accent-dark);
+      color: #ffffff;
+      padding: 1px 8px;
+      border-radius: 3px;
+      font-weight: 800;
+      font-size: 8.2pt;
+    }
+    .hero-banner {
+      background: linear-gradient(135deg, #0f172a 0%, var(--accent-dark) 100%);
+      color: #ffffff;
+      border-radius: 5px;
+      padding: 3.0mm 4.0mm;
+      border-bottom: 2.5px solid #f59e0b;
+    }
+    .hero-kicker {
+      font-size: 8.2pt;
+      font-weight: 800;
+      color: #fde68a;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+    .hero-pill {
+      background: rgba(255, 255, 255, 0.14);
+      border: 1px solid rgba(253, 230, 138, 0.55);
+      color: #fef3c7;
+      padding: 0.5mm 2.2mm;
+      border-radius: 3px;
+      font-size: 8.2pt;
+      font-weight: 700;
+    }
+    .hero-title {
+      font-family: 'Cinzel', Georgia, serif;
+      font-size: 13.2pt;
+      line-height: 1.16;
+      margin-top: 0.8mm;
+      color: #ffffff;
+    }
+    .matrix-bar {
+      background: var(--accent-dark);
+      color: #ffffff;
+      padding: 1.1mm 2.4mm;
+      border-radius: 4px 4px 0 0;
+      display: flex;
+      justify-content: space-between;
+      font-size: 8.2pt;
+      font-weight: 800;
+      letter-spacing: 0.03em;
+    }
+    .enquiry-banner {
+      background: var(--accent-soft);
+      border: 1.2px solid var(--accent-border);
+      border-left: 4.5px solid var(--accent);
+      border-radius: 5px;
+      padding: 2.0mm 3.0mm;
+    }
+    .enquiry-title-row {
+      display: flex;
+      align-items: center;
+      gap: 2mm;
+    }
+    .enquiry-code-pill {
+      background: var(--accent-dark);
+      color: #ffffff;
+      font-size: 8.2pt;
+      font-weight: 800;
+      padding: 0.5mm 2.0mm;
+      border-radius: 3px;
+      white-space: nowrap;
+    }
+    .enquiry-h2 {
+      font-size: 11.2pt;
+      font-weight: 800;
+      color: #0f172a;
+      line-height: 1.18;
+    }
+    .enquiry-eq-line {
+      font-family: 'Lora', Georgia, serif;
+      font-style: italic;
+      font-size: 9.0pt;
+      font-weight: 600;
+      color: var(--accent-dark);
+      margin-top: 0.7mm;
+    }
+    .two-col-grid {
+      display: grid;
+      gap: 2.2mm;
+    }
+    .crib-card {
+      border: 1px solid #cbd5e1;
+      border-left: 3.5px solid var(--accent);
+      border-radius: 4px;
+      padding: 1.8mm 2.6mm;
+      background: #ffffff;
+    }
+    .card-heading {
+      font-size: 8.6pt;
+      font-weight: 800;
+      color: var(--accent-dark);
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+      margin-bottom: 0.8mm;
+      border-bottom: 1px solid #e2e8f0;
+      padding-bottom: 0.5mm;
+    }
+    .body-copy {
+      font-size: 8.5pt;
+      line-height: 1.25;
+      color: #1e293b;
+    }
+    .crib-ul {
+      padding-left: 4.2mm;
+      display: flex;
+      flex-direction: column;
+      gap: 0.7mm;
+    }
+    .phase-row {
+      margin-bottom: 0.7mm;
+    }
+    .phase-row:last-child {
+      margin-bottom: 0;
+    }
+    .time-chip {
+      display: inline-block;
+      background: #e2e8f0;
+      color: #0f172a;
+      font-weight: 800;
+      font-size: 8.2pt;
+      padding: 0 1.3mm;
+      border-radius: 2px;
+      margin-right: 0.6mm;
+    }
+    @media print {
+      body {
+        background: #ffffff;
+      }
+      .screen-toolbar {
+        display: none !important;
+      }
+      .page.sow-page {
+        margin: 0 !important;
+        box-shadow: none !important;
+      }
+      .page.sow-page:last-of-type {
+        page-break-after: avoid !important;
+        break-after: avoid !important;
+      }
+      .crib-card,
+      .enquiry-banner,
+      .hero-banner,
+      tr {
+        page-break-inside: avoid;
+        break-inside: avoid;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="screen-toolbar">
+    <div>
+      <strong style="font-size:9.2pt;">Medieval England (1066–1485) &bull; Walk-In Teacher Guide &amp; SOW</strong>
+      <span style="margin-left:8px;font-size:8pt;color:#fde68a;font-weight:700;">Staff Planning Pack &bull; 6 Pages (A4 Portrait &bull; Corner Staple)</span>
+    </div>
+    <div class="screen-toolbar-actions">
+      <a href="/?view=lessons&amp;unit=medieval_england">&larr; Back to Unit Hub</a>
+      <a href="/pdfs/medieval_england_scheme_of_work.pdf" download>&darr; Download PDF (6p)</a>
+      <button type="button" onclick="window.print()">&#128424; Print Teacher Guide</button>
+    </div>
+  </div>
+
+  
+  <section class="page sow-page" data-page="1" data-page-kind="overview">
+    <div class="page-inner">
+      <div class="sow-masthead">
+        <span>THE HISTORY REVISION HUB &bull; WALK-IN TEACHER GUIDE &amp; SCHEME OF WORK</span>
+        <span class="school-brand-target" data-department-name="The History Department">The History Department</span>
+      </div>
+
+      <div class="hero-banner">
+        <div style="display:flex; justify-content:space-between; align-items:center; gap:2mm; flex-wrap:wrap;">
+          <span class="hero-kicker">Year 7 • KS3 Medieval Period Study (1066–1485)</span>
+          <span class="hero-pill">Staff Guide &bull; 5 Enquiries &bull; 6 Pages A4</span>
+        </div>
+        <h1 class="hero-title">Medieval England (1066–1485)</h1>
+        <div class="body-copy" style="color:#f1f5f9; margin-top:0.7mm;">
+          <strong>Curriculum Specification:</strong> KS3 National Curriculum: The development of Church, state and society in Medieval Britain 1066–1509.
+        </div>
+      </div>
+
+      <div class="two-col-grid" style="grid-template-columns: 1.22fr 1fr;">
+        <div class="crib-card">
+          <div class="card-heading">Non-Specialist Executive Summary &amp; Core Threads</div>
+          <p class="body-copy" style="margin-bottom:1mm;">This Year 7 unit investigates how power was seized, enforced, and contested across medieval England from the 1066 succession crisis to the 1381 Peasants' Revolt. Pupils see how William the Conqueror's tiny Norman elite subjugated two million Anglo-Saxons through castles, terror, and the Domesday Book, before tracing three great…</p>
+          <div class="body-copy" style="padding-top:0.8mm; border-top:1px dashed #cbd5e1;">
+            <strong style="color:var(--accent-dark);">Disciplinary Threads:</strong> Causation, Change &amp; Continuity, Primary Source Evidential Scrutiny, and Historical Interpretations.
+          </div>
+        </div>
+        <div class="crib-card" style="background:var(--accent-soft); border-left-color:var(--accent);">
+          <div class="card-heading">Curricular Pillar Reprographics Map</div>
+          <div class="body-copy" style="margin-bottom:0.8mm;"><strong style="color:var(--accent-dark);">Classroom Textbook:</strong> 8 Pages • Pure reading narrative</div><div class="body-copy" style="margin-bottom:0.8mm;"><strong style="color:var(--accent-dark);">Pupil Workbook:</strong> 16 Pages • 5-Stage Spine + Tasks</div><div class="body-copy" style="margin-bottom:0.8mm;"><strong style="color:var(--accent-dark);">Retrieval Companion:</strong> 30 Qs • 8 Pages + Rear Marking Bank</div><div class="body-copy" style="margin-bottom:0.8mm;"><strong style="color:var(--accent-dark);">Literary Anthology:</strong> 8 Pages • Optional Home/Tutor Read-Aloud</div>
+        </div>
+      </div>
+
+      
+    <div class="crib-card safeguarding-box" style="border-left:4px solid #b45309; background:#fffbeb; padding:1.6mm 2.6mm;">
+      <div class="body-copy" style="color:#78350f;">
+        <strong style="color:#92400e; text-transform:uppercase;">Safeguarding &amp; Statutory Impartiality Guidance:</strong>
+        Handle Orderic Vitalis and the Peterborough Chronicle accounts of the 1069–70 Harrying of the North (100,000 famine deaths) with sober historical gravity rather than sensationalism, framing scorched-earth famine as deliberate medieval state terror…
+      </div>
+    </div>
+
+      <div style="flex:1; display:flex; flex-direction:column; justify-content:flex-start;">
+        <div class="matrix-bar">
+          <span>SCHEME OF WORK OVERVIEW MATRIX (ALL 5 ENQUIRIES)</span>
+          <span>2 &times; 50 MIN DELIVERY SEQUENCE PER ENQUIRY</span>
+        </div>
+        
+    <table class="sow-matrix-table" style="width:100%; border-collapse:collapse; border:1px solid #94a3b8;">
+      <thead>
+        <tr style="background:#0f172a; color:#ffffff;">
+          <th class="body-copy" style="padding:1.4mm 1.6mm; text-align:left; width:13mm; font-weight:800;">Enq #</th>
+          <th class="body-copy" style="padding:1.4mm 1.6mm; text-align:left; width:86mm; font-weight:800;">Title &amp; Key Enquiry Question</th>
+          <th class="body-copy" style="padding:1.4mm 1.6mm; text-align:left; width:52mm; font-weight:800;">Core Concepts / Spec Focus</th>
+          <th class="body-copy" style="padding:1.4mm 1.6mm; text-align:left; width:38mm; font-weight:800;">Assessment / Exam Tariff</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+      <tr style="background:#ffffff; border-bottom:1px solid #cbd5e1;">
+        <td class="body-copy" style="padding:1.7mm 2.0mm; font-weight:800; color:var(--accent-dark); white-space:nowrap; vertical-align:top;">E01</td>
+        <td class="body-copy" style="padding:1.7mm 2.0mm; vertical-align:top;">
+          <strong style="color:#0f172a;">1066 &amp; The Battle of Hastings</strong>
+          <span style="color:#475569; font-style:italic;"> — Why did William of Normandy win the Battle of Hastings in 1066?</span>
+        </td>
+        <td class="body-copy" style="padding:1.7mm 2.0mm; color:#1e293b; vertical-align:top;">KS3 Medieval Britain (1066–1509): The Norman Conquest — multi-causal…</td>
+        <td class="body-copy" style="padding:1.7mm 2.0mm; font-weight:700; color:#0f172a; vertical-align:top;">Extended Historical Writing • Causal Explanati…</td>
+      </tr>
+      <tr style="background:#f8fafc; border-bottom:1px solid #cbd5e1;">
+        <td class="body-copy" style="padding:1.7mm 2.0mm; font-weight:800; color:var(--accent-dark); white-space:nowrap; vertical-align:top;">E02</td>
+        <td class="body-copy" style="padding:1.7mm 2.0mm; vertical-align:top;">
+          <strong style="color:#0f172a;">Castles, Terror &amp; The Domesday Book (1066–1086)</strong>
+          <span style="color:#475569; font-style:italic;"> — How did fewer than 10,000 Normans control two million Anglo-Saxons?</span>
+        </td>
+        <td class="body-copy" style="padding:1.7mm 2.0mm; color:#1e293b; vertical-align:top;">KS3 Medieval Britain (1066–1509): Consolidating the Norman Conquest…</td>
+        <td class="body-copy" style="padding:1.7mm 2.0mm; font-weight:700; color:#0f172a; vertical-align:top;">Short Historical Explanation • Consequence (1…</td>
+      </tr>
+      <tr style="background:#ffffff; border-bottom:1px solid #cbd5e1;">
+        <td class="body-copy" style="padding:1.7mm 2.0mm; font-weight:800; color:var(--accent-dark); white-space:nowrap; vertical-align:top;">E03</td>
+        <td class="body-copy" style="padding:1.7mm 2.0mm; vertical-align:top;">
+          <strong style="color:#0f172a;">Crown vs Church: Henry II &amp; Thomas Becket (1154–1174)</strong>
+          <span style="color:#475569; font-style:italic;"> — Why did the quarrel between Henry II and Becket end in murder?</span>
+        </td>
+        <td class="body-copy" style="padding:1.7mm 2.0mm; color:#1e293b; vertical-align:top;">KS3 Medieval Britain (1066–1509): Church versus Crown — analysing…</td>
+        <td class="body-copy" style="padding:1.7mm 2.0mm; font-weight:700; color:#0f172a; vertical-align:top;">Extended Historical Writing • Causal Explanati…</td>
+      </tr>
+      <tr style="background:#f8fafc; border-bottom:1px solid #cbd5e1;">
+        <td class="body-copy" style="padding:1.7mm 2.0mm; font-weight:800; color:var(--accent-dark); white-space:nowrap; vertical-align:top;">E04</td>
+        <td class="body-copy" style="padding:1.7mm 2.0mm; vertical-align:top;">
+          <strong style="color:#0f172a;">King John &amp; Magna Carta (1199–1225)</strong>
+          <span style="color:#475569; font-style:italic;"> — Was Magna Carta a victory for liberty or a barons’ power grab?</span>
+        </td>
+        <td class="body-copy" style="padding:1.7mm 2.0mm; color:#1e293b; vertical-align:top;">KS3 Medieval Britain (1066–1509): Magna Carta and the emergence of…</td>
+        <td class="body-copy" style="padding:1.7mm 2.0mm; font-weight:700; color:#0f172a; vertical-align:top;">Chronological Historical Narrative • Analytica…</td>
+      </tr>
+      <tr style="background:#ffffff; border-bottom:1px solid #cbd5e1;">
+        <td class="body-copy" style="padding:1.7mm 2.0mm; font-weight:800; color:var(--accent-dark); white-space:nowrap; vertical-align:top;">E05</td>
+        <td class="body-copy" style="padding:1.7mm 2.0mm; vertical-align:top;">
+          <strong style="color:#0f172a;">The Black Death &amp; The Peasants’ Revolt (1348–1381)</strong>
+          <span style="color:#475569; font-style:italic;"> — How did the Black Death spark the Peasants’ Revolt of 1381?</span>
+        </td>
+        <td class="body-copy" style="padding:1.7mm 2.0mm; color:#1e293b; vertical-align:top;">KS3 Medieval Britain (1066–1509): Society, economy, and peasant agency…</td>
+        <td class="body-copy" style="padding:1.7mm 2.0mm; font-weight:700; color:#0f172a; vertical-align:top;">Evaluative Historical Essay • Balanced Judgeme…</td>
+      </tr>
+      </tbody>
+    </table>
+      </div>
+    </div>
+
+    <div class="sow-foot">
+      <span>The History Revision Hub &bull; Walk-In Teacher Guide &amp; SOW (KS3)</span>
+      <span class="sow-pill">Page 1 of 6</span>
+    </div>
+  </section>
+
+  <section class="page sow-page" data-page="2" data-page-kind="crib">
+    <div class="page-inner">
+      <div class="sow-head">
+        <span>3-MINUTE WALK-IN TEACHER CRIB SHEET &bull; ENQUIRY 1 OF 5</span>
+        <span>Medieval England (1066–1485)</span>
+      </div>
+
+      <!-- (a) Header Bar -->
+      <div class="enquiry-banner">
+        <div style="display:flex; justify-content:space-between; align-items:baseline; gap:2mm;">
+          <div class="enquiry-title-row">
+            <span class="enquiry-code-pill">E01</span>
+            <h2 class="enquiry-h2">1066 &amp; The Battle of Hastings</h2>
+          </div>
+        </div>
+        <div class="enquiry-eq-line">Central Enquiry: Why did William of Normandy win the Battle of Hastings in 1066?</div>
+        <div class="body-copy" style="color:#334155; margin-top:0.6mm;">
+          <strong style="color:var(--accent-dark);">Curriculum / Spec Anchor:</strong> KS3 Medieval Britain (1066–1509): The Norman Conquest — multi-causal analysis of military tactics, logistics, and leadership at Stamford Bridge and Hastings.
+        </div>
+      </div>
+
+      
+
+      <!-- (b) Subject Knowledge Primer + Learning Objectives -->
+      <div class="two-col-grid" style="grid-template-columns: 1.28fr 1fr;">
+        <div class="crib-card">
+          <div class="card-heading">Subject Knowledge Primer (Non-Specialist Walk-In Briefing)</div>
+          <p class="body-copy">This enquiry establishes the foundational geopolitical crisis of 1066. Ground pupils in the succession void left by Edward the Confessor before examining the mechanics of Senlac Hill. Emphasise that the shield wall was nearly impenetrable until the feigned retreat broke Saxon discipline.</p>
+        </div>
+        <div class="crib-card" style="background:#f8fafc;">
+          <div class="card-heading">Core Learning Objectives</div>
+          <ul class="crib-ul">
+            <li class="body-copy">Assess the rival claims to the English throne in 1066.</li><li class="body-copy">Explain the tactical turning points of the Battle of Hastings.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- (c) 2-Lesson Delivery Plan (2 x 50 mins) -->
+      <div class="two-col-grid" style="grid-template-columns: 1fr 1fr;">
+        <div class="crib-card" style="border-left-color:#1d4ed8;">
+          <div class="card-heading" style="color:#1e3a8a;">Lesson 1: Context, Shared Reading &amp; Early Evidence (Stages 1–3 • 50 mins)</div>
+          <div class="body-copy phase-row"><span class="time-chip">00–08m</span> <strong>Spaced Retrieval Starter:</strong> Complete the 5-question Do Now starter retrieving foundational prior knowledge (Roman and Anglo-Saxon Britain before…</div><div class="body-copy phase-row"><span class="time-chip">08–28m</span> <strong>Modelled Shared Reading &amp; Verso Spine (Stages 1–3):</strong> Read Stages 1–3 (&quot;The Succession Void&quot;, &quot;The Three Claimants&quot;, and &quot;The Forced March &amp; Stamford Bridge&quot;) aloud or with…</div><div class="body-copy phase-row"><span class="time-chip">28–44m</span> <strong>Primary Source Investigation (Sources A–B):</strong> Unpack Source A (Harold Swearing the Sacred Oath to William (Bayeux…) and Source B (Silver Penny of Harold II Godwinson…</div><div class="body-copy phase-row"><span class="time-chip">44–50m</span> <strong>Formative Hinge Plenary:</strong> Check whole-class understanding before Lesson 2 using the Hinge Question: &quot;Why did Norman chroniclers place so much…</div>
+        </div>
+        <div class="crib-card" style="border-left-color:#15803d;">
+          <div class="card-heading" style="color:#14532d;">Lesson 2: Turning Points, Disciplinary Sources &amp; Extended Writing (Stages 4–5…</div>
+          <div class="body-copy phase-row"><span class="time-chip">00–08m</span> <strong>Part 1 Retrieval &amp; Vocabulary Anchor:</strong> Rapid recall of Lesson 1 Stages 1–3 (&quot;The Succession Void&quot; → &quot;The Forced March &amp; Stamford Bridge&quot;) and core lesson…</div><div class="body-copy phase-row"><span class="time-chip">08–24m</span> <strong>Stages 4–5 &amp; Sources C–E Cross-Referencing:</strong> Read Stages 4–5 (&quot;The Shield Wall at Senlac Hill&quot; and &quot;The Feigned Retreat &amp; Anglo-Saxon Defeat&quot;) to complete the Verso…</div><div class="body-copy phase-row"><span class="time-chip">24–44m</span> <strong>Recto Workbook Extended Writing:</strong> Model using the Word Bank and Analytical Connectives, then have pupils complete their Recto writing task (Extended…</div><div class="body-copy phase-row"><span class="time-chip">44–50m</span> <strong>Tap-Tile Consolidation &amp; Live Critique:</strong> Review one pupil paragraph under the visualiser against the model answer and complete the end-of-lesson Tap-Tile Summary…</div>
+        </div>
+      </div>
+
+      <!-- (d) Misconceptions & Corrections + Hinge Question + SEND & Stretch -->
+      <div class="two-col-grid" style="grid-template-columns: 1.15fr 1fr;">
+        <div class="crib-card" style="border-left-color:#b91c1c;">
+          <div class="card-heading" style="color:#7f1d1d;">Common Pupil Misconceptions &amp; Historical Corrections</div>
+          
+      <div class="body-copy misc-item" style="">
+        <div><strong style="color:#991b1b;">Misconception 1:</strong> Harold Godwinson stole the throne illegally because the eldest son always inherited the Anglo-Saxon crown.</div>
+        <div><strong style="color:#166534;">Correction:</strong> Edward the Confessor died childless on 5 January 1066, and in Anglo-Saxon England the Witan council held the lawful constitutional right to…</div>
+      </div>
+      <div class="body-copy misc-item" style="border-top:1px dashed #cbd5e1; padding-top:0.9mm; margin-top:0.9mm;">
+        <div><strong style="color:#991b1b;">Misconception 2:</strong> The Anglo-Saxon army was poorly armed and easily swept aside by superior Norman knights.</div>
+        <div><strong style="color:#166534;">Correction:</strong> Harold's elite mail-clad housecarls wielding two-handed battleaxes locked shields atop Senlac Hill and repelled uphill Norman cavalry charges…</div>
+      </div>
+      <div class="body-copy misc-item" style="border-top:1px dashed #cbd5e1; padding-top:0.9mm; margin-top:0.9mm;">
+        <div><strong style="color:#991b1b;">Misconception 3:</strong> The Bayeux Tapestry is a neutral eyewitness strip cartoon showing exactly what happened in 1066.</div>
+        <div><strong style="color:#166534;">Correction:</strong> Commissioned in the 1070s for William's half-brother Bishop Odo of Bayeux, Scenes 23, 55, and 57 (Sources A, D, and E) were embroidered as…</div>
+      </div>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:2mm; justify-content:space-between;">
+          <div class="crib-card" style="border-left-color:#d97706; background:#fffbeb; flex:1;">
+            <div class="card-heading" style="color:#92400e;">Targeted Diagnostic Hinge Question</div>
+            <div class="body-copy" style="font-weight:700; color:#0f172a; margin-bottom:0.7mm;">&ldquo;If King Harold's Anglo-Saxon shield wall held Senlac Hill for five gruelling hours on 14 October 1066, what actually broke it in the late afternoon?&rdquo;</div>
+            <div class="body-copy" style="color:#334155;"><strong>Look For:</strong> Look for pupils combining tactical innovation with cumulative exhaustion: Duke William turned Breton panic on his left flank into deliberate feigned retreats that lured undisciplined fyrd…</div>
+          </div>
+          <div class="crib-card" style="border-left-color:#6d28d9; background:#faf5ff; flex:1;">
+            <div class="card-heading" style="color:#4c1d95;">SEND Scaffold &amp; High-Ceiling Stretch</div>
+            <div class="body-copy" style="margin-bottom:0.7mm;"><strong style="color:#5b21b6;">SEND:</strong> Pre-teach Witan (Anglo-Saxon royal council) and feigned retreat (faking flight to lure defenders downhill). Use the 1066 Reference Map to trace Harold's 190-mile march north…</div>
+            <div class="body-copy"><strong style="color:#5b21b6;">Stretch:</strong> Challenge higher-attaining pupils to weigh strategic luck against tactical skill: would William's feigned retreats at Hastings have succeeded if Harald Hardrada's 300…</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- (e) Quick Classroom Answer Crib -->
+      <div class="crib-card answer-crib-box" style="border-left-color:#0f172a; background:#f8fafc;">
+        <div class="card-heading" style="color:#0f172a;">Quick Classroom Answer Crib (Do Now &bull; Sources A–E &bull; Workbook / Exam Key)</div>
+        <div class="body-copy" style="margin-bottom:0.8mm; padding-bottom:0.8mm; border-bottom:1px solid #e2e8f0;">
+          <strong style="color:var(--accent-dark);">Do Now Key:</strong>
+          Q1: The Roman Empire • Q2: AD 410 • Q3: The Anglo-Saxons (Angles, Saxons, and Jutes) • Q4: Scandinavia (Norway and Denmark) • Q5: The Danelaw
+        </div>
+        <div class="body-copy" style="margin-bottom:0.8mm; padding-bottom:0.8mm; border-bottom:1px solid #e2e8f0;">
+          <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src A:</strong> The embroidery depicts Harold swearing on sacred relics, framing his subsequent coronation…</span> <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src B:</strong> The coin shows Harold crowned with the royal sceptre and the title 'Rex Anglorum', with…</span> <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src C:</strong> Source C describes a stubborn, day-long battle that utterly destroyed Harald Hardrada's…</span> <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src D:</strong> When rumors spread that William had fallen, his left flank broke into retreat.</span> <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src E:</strong> Source E depicts Harold being struck and hacked down, labelled 'HAROLD REX INTERFECTUS…</span>
+        </div>
+        <div class="body-copy">
+          <strong style="color:#0f172a;">[Extended Historical Writing • Causal Explanation (2–3…]</strong>
+          <em>Explain why William of Normandy achieved victory at the Battle of Hastings in 1066.</em>
+          &rarr; <strong>Core Model Argument:</strong> One decisive reason why William of Normandy won the Battle of Hastings was Anglo-Saxon exhaustion caused by fighting a war on two fronts [1.2, 1.3].
+        </div>
+      </div>
+    </div>
+
+    <div class="sow-foot">
+      <span>The History Revision Hub &bull; <span class="school-brand-target" data-department-name="The History Department">The History Department</span> &bull; Confidential Staff Guide</span>
+      <span class="sow-pill">Page 2 of 6</span>
+    </div>
+  </section>
+
+  <section class="page sow-page" data-page="3" data-page-kind="crib">
+    <div class="page-inner">
+      <div class="sow-head">
+        <span>3-MINUTE WALK-IN TEACHER CRIB SHEET &bull; ENQUIRY 2 OF 5</span>
+        <span>Medieval England (1066–1485)</span>
+      </div>
+
+      <!-- (a) Header Bar -->
+      <div class="enquiry-banner">
+        <div style="display:flex; justify-content:space-between; align-items:baseline; gap:2mm;">
+          <div class="enquiry-title-row">
+            <span class="enquiry-code-pill">E02</span>
+            <h2 class="enquiry-h2">Castles, Terror &amp; The Domesday Book (1066–1086)</h2>
+          </div>
+        </div>
+        <div class="enquiry-eq-line">Central Enquiry: How did fewer than 10,000 Normans control two million Anglo-Saxons?</div>
+        <div class="body-copy" style="color:#334155; margin-top:0.6mm;">
+          <strong style="color:var(--accent-dark);">Curriculum / Spec Anchor:</strong> KS3 Medieval Britain (1066–1509): Consolidating the Norman Conquest — evaluating military architecture, state terror, feudalism, and Domesday bureaucracy.
+        </div>
+      </div>
+
+      <div class="crib-card" style="border-left:4px solid #b45309; background:#fffbeb; padding:1.2mm 2.4mm;">
+         <div class="body-copy" style="color:#78350f;"><strong style="color:#92400e;">Pastoral / Impartiality Note:</strong> Handle Orderic Vitalis and the Peterborough Chronicle accounts of the 1069–70 Harrying of the North (100,000 famine deaths) with sober historical gravity rather than sensationalism, framing scorched-earth…</div>
+       </div>
+
+      <!-- (b) Subject Knowledge Primer + Learning Objectives -->
+      <div class="two-col-grid" style="grid-template-columns: 1.28fr 1fr;">
+        <div class="crib-card">
+          <div class="card-heading">Subject Knowledge Primer (Non-Specialist Walk-In Briefing)</div>
+          <p class="body-copy">This enquiry challenges pupils to explain how a tiny foreign military elite achieved permanent subjugation. Structure the lesson around three pillars: physical architecture (castles), psychological terror (Harrying of the North), and fiscal surveillance (Domesday). Ground the lesson locally in Portchester Castle and Hampshire Domesday manors.</p>
+        </div>
+        <div class="crib-card" style="background:#f8fafc;">
+          <div class="card-heading">Core Learning Objectives</div>
+          <ul class="crib-ul">
+            <li class="body-copy">Explain how motte-and-bailey castles functioned as weapons of subjugation.</li><li class="body-copy">Analyse the significance of the Domesday audit in disinheriting the English.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- (c) 2-Lesson Delivery Plan (2 x 50 mins) -->
+      <div class="two-col-grid" style="grid-template-columns: 1fr 1fr;">
+        <div class="crib-card" style="border-left-color:#1d4ed8;">
+          <div class="card-heading" style="color:#1e3a8a;">Lesson 1: Context, Shared Reading &amp; Early Evidence (Stages 1–3 • 50 mins)</div>
+          <div class="body-copy phase-row"><span class="time-chip">00–08m</span> <strong>Spaced Retrieval Starter:</strong> Complete the 5-question Do Now starter retrieving last lesson (&quot;1066 &amp; The Battle of Hastings: Why did William win?&quot;: The…</div><div class="body-copy phase-row"><span class="time-chip">08–28m</span> <strong>Modelled Shared Reading &amp; Verso Spine (Stages 1–3):</strong> Read Stages 1–3 (&quot;The Motte &amp; Bailey Blitz&quot;, &quot;The Scorched-Earth Harrying of the North&quot;, and &quot;Stone Keeps &amp; Portchester…</div><div class="body-copy phase-row"><span class="time-chip">28–44m</span> <strong>Primary Source Investigation (Sources A–B):</strong> Unpack Source A (The Great Seal of William the Conqueror: Dual…) and Source B (Motte-and-Bailey Earthwork Plan…</div><div class="body-copy phase-row"><span class="time-chip">44–50m</span> <strong>Formative Hinge Plenary:</strong> Check whole-class understanding before Lesson 2 using the Hinge Question: &quot;Why was projecting legitimate legal authority…</div>
+        </div>
+        <div class="crib-card" style="border-left-color:#15803d;">
+          <div class="card-heading" style="color:#14532d;">Lesson 2: Turning Points, Disciplinary Sources &amp; Extended Writing (Stages 4–5…</div>
+          <div class="body-copy phase-row"><span class="time-chip">00–08m</span> <strong>Part 1 Retrieval &amp; Vocabulary Anchor:</strong> Rapid recall of Lesson 1 Stages 1–3 (&quot;The Motte &amp; Bailey Blitz&quot; → &quot;Stone Keeps &amp; Portchester Castle&quot;) and core lesson…</div><div class="body-copy phase-row"><span class="time-chip">08–24m</span> <strong>Stages 4–5 &amp; Sources C–E Cross-Referencing:</strong> Read Stages 4–5 (&quot;The Great Domesday Book Audit&quot; and &quot;Feudal Hierarchy &amp; Land Dispossession&quot;) to complete the Verso…</div><div class="body-copy phase-row"><span class="time-chip">24–44m</span> <strong>Recto Workbook Extended Writing:</strong> Model using the Word Bank and Analytical Connectives, then have pupils complete their Recto writing task (Short…</div><div class="body-copy phase-row"><span class="time-chip">44–50m</span> <strong>Tap-Tile Consolidation &amp; Live Critique:</strong> Review one pupil paragraph under the visualiser against the model answer and complete the end-of-lesson Tap-Tile Summary…</div>
+        </div>
+      </div>
+
+      <!-- (d) Misconceptions & Corrections + Hinge Question + SEND & Stretch -->
+      <div class="two-col-grid" style="grid-template-columns: 1.15fr 1fr;">
+        <div class="crib-card" style="border-left-color:#b91c1c;">
+          <div class="card-heading" style="color:#7f1d1d;">Common Pupil Misconceptions &amp; Historical Corrections</div>
+          
+      <div class="body-copy misc-item" style="">
+        <div><strong style="color:#991b1b;">Misconception 1:</strong> William the Conqueror immediately built giant stone castles with turrets across England in 1066.</div>
+        <div><strong style="color:#166534;">Correction:</strong> Stone keeps like Portchester Castle (Source E) took years to quarry and build; in 1066–1068 Normans threw up over 500 earth-and-timber…</div>
+      </div>
+      <div class="body-copy misc-item" style="border-top:1px dashed #cbd5e1; padding-top:0.9mm; margin-top:0.9mm;">
+        <div><strong style="color:#991b1b;">Misconception 2:</strong> The 1086 Domesday Book was a population census counting every man, woman, and child in England.</div>
+        <div><strong style="color:#166534;">Correction:</strong> Commissioned at Gloucester in 1085 when King Cnut IV of Denmark threatened invasion, the Domesday Book (Source D) audited manors, ploughs…</div>
+      </div>
+      <div class="body-copy misc-item" style="border-top:1px dashed #cbd5e1; padding-top:0.9mm; margin-top:0.9mm;">
+        <div><strong style="color:#991b1b;">Misconception 3:</strong> After winning the Battle of Hastings in October 1066, Anglo-Saxon resistance ended immediately.</div>
+        <div><strong style="color:#166534;">Correction:</strong> Major rebellions erupted for five years, peaking in 1069 when northern rebels and Danes wiped out the Norman garrison at York—provoking…</div>
+      </div>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:2mm; justify-content:space-between;">
+          <div class="crib-card" style="border-left-color:#d97706; background:#fffbeb; flex:1;">
+            <div class="card-heading" style="color:#92400e;">Targeted Diagnostic Hinge Question</div>
+            <div class="body-copy" style="font-weight:700; color:#0f172a; margin-bottom:0.7mm;">&ldquo;How did fewer than 10,000 Normans keep permanent control over two million hostile Anglo-Saxons when swords and battlefields alone could not be everywhere…&rdquo;</div>
+            <div class="body-copy" style="color:#334155;"><strong>Look For:</strong> Strong answers connect three interlocking tools of control: rapid physical domination (over 500 motte-and-bailey castles built in 8–14 days, then stone keeps like Portchester), merciless…</div>
+          </div>
+          <div class="crib-card" style="border-left-color:#6d28d9; background:#faf5ff; flex:1;">
+            <div class="card-heading" style="color:#4c1d95;">SEND Scaffold &amp; High-Ceiling Stretch</div>
+            <div class="body-copy" style="margin-bottom:0.7mm;"><strong style="color:#5b21b6;">SEND:</strong> Pre-teach motte-and-bailey (raised earth mound and timber courtyard fort) and Harrying (scorched-earth destruction of crops and villages).</div>
+            <div class="body-copy"><strong style="color:#5b21b6;">Stretch:</strong> Ask higher-attaining pupils to compare violent conquest with bureaucratic conquest: why was the 1086 Domesday survey of manors like Fareham (Source D) ultimately more…</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- (e) Quick Classroom Answer Crib -->
+      <div class="crib-card answer-crib-box" style="border-left-color:#0f172a; background:#f8fafc;">
+        <div class="card-heading" style="color:#0f172a;">Quick Classroom Answer Crib (Do Now &bull; Sources A–E &bull; Workbook / Exam Key)</div>
+        <div class="body-copy" style="margin-bottom:0.8mm; padding-bottom:0.8mm; border-bottom:1px solid #e2e8f0;">
+          <strong style="color:var(--accent-dark);">Do Now Key:</strong>
+          Q1: 5 January 1066 • Q2: Twenty-four years • Q3: Harald Hardrada • Q4: 190 miles • Q5: With an arrow through the throat
+        </div>
+        <div class="body-copy" style="margin-bottom:0.8mm; padding-bottom:0.8mm; border-bottom:1px solid #e2e8f0;">
+          <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src A:</strong> The seal presents William with the royal orb and sword of state on one side, and fully…</span> <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src B:</strong> The elevated earthen motte provided an unassailable defensive strongpoint with 360-degree…</span> <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src C:</strong> The chronicler records that William ordered crops burned, livestock slaughtered, and…</span> <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src D:</strong> Domesday established absolute legal inventory of all taxable wealth, landownership, and…</span> <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src E:</strong> At Portchester, Norman conquerors repurposed an ancient Roman Saxon Shore fort, inserting a…</span>
+        </div>
+        <div class="body-copy">
+          <strong style="color:#0f172a;">[Short Historical Explanation • Consequence (1 Paragraph •…]</strong>
+          <em>Explain one consequence of the motte-and-bailey blitz for Anglo-Saxon resistance against Norman rule.</em>
+          &rarr; <strong>Core Model Argument:</strong> One consequence of the motte-and-bailey blitz for Anglo-Saxon resistance was that it shattered rebel coordination and locked England under rapid military occupation [2.1].
+        </div>
+      </div>
+    </div>
+
+    <div class="sow-foot">
+      <span>The History Revision Hub &bull; <span class="school-brand-target" data-department-name="The History Department">The History Department</span> &bull; Confidential Staff Guide</span>
+      <span class="sow-pill">Page 3 of 6</span>
+    </div>
+  </section>
+
+  <section class="page sow-page" data-page="4" data-page-kind="crib">
+    <div class="page-inner">
+      <div class="sow-head">
+        <span>3-MINUTE WALK-IN TEACHER CRIB SHEET &bull; ENQUIRY 3 OF 5</span>
+        <span>Medieval England (1066–1485)</span>
+      </div>
+
+      <!-- (a) Header Bar -->
+      <div class="enquiry-banner">
+        <div style="display:flex; justify-content:space-between; align-items:baseline; gap:2mm;">
+          <div class="enquiry-title-row">
+            <span class="enquiry-code-pill">E03</span>
+            <h2 class="enquiry-h2">Crown vs Church: Henry II &amp; Thomas Becket (1154–1174)</h2>
+          </div>
+        </div>
+        <div class="enquiry-eq-line">Central Enquiry: Why did the quarrel between Henry II and Becket end in murder?</div>
+        <div class="body-copy" style="color:#334155; margin-top:0.6mm;">
+          <strong style="color:var(--accent-dark);">Curriculum / Spec Anchor:</strong> KS3 Medieval Britain (1066–1509): Church versus Crown — analysing institutional conflict between royal common law and papal authority (1154–1174).
+        </div>
+      </div>
+
+      
+
+      <!-- (b) Subject Knowledge Primer + Learning Objectives -->
+      <div class="two-col-grid" style="grid-template-columns: 1.28fr 1fr;">
+        <div class="crib-card">
+          <div class="card-heading">Subject Knowledge Primer (Non-Specialist Walk-In Briefing)</div>
+          <p class="body-copy">This enquiry explores the fierce medieval clash between secular monarchy and ecclesiastical sovereignty. Guide pupils to see that both men felt they were defending vital principles: Henry was fighting for universal justice and the rule of law, while Becket was defending the spiritual autonomy of the Church from royal tyranny.</p>
+        </div>
+        <div class="crib-card" style="background:#f8fafc;">
+          <div class="card-heading">Core Learning Objectives</div>
+          <ul class="crib-ul">
+            <li class="body-copy">Explain the conflict between Canon Law and royal courts over criminous clerks.</li><li class="body-copy">Analyse the causes and consequences of Becket’s martyrdom.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- (c) 2-Lesson Delivery Plan (2 x 50 mins) -->
+      <div class="two-col-grid" style="grid-template-columns: 1fr 1fr;">
+        <div class="crib-card" style="border-left-color:#1d4ed8;">
+          <div class="card-heading" style="color:#1e3a8a;">Lesson 1: Context, Shared Reading &amp; Early Evidence (Stages 1–3 • 50 mins)</div>
+          <div class="body-copy phase-row"><span class="time-chip">00–08m</span> <strong>Spaced Retrieval Starter:</strong> Complete the 5-question Do Now starter retrieving last lesson (&quot;Castles, Terror &amp; Domesday: How did the Normans subjugate…</div><div class="body-copy phase-row"><span class="time-chip">08–28m</span> <strong>Modelled Shared Reading &amp; Verso Spine (Stages 1–3):</strong> Read Stages 1–3 (&quot;Worldly Chancellor to Archbishop&quot;, &quot;Becket’s Metamorphosis &amp; Spiritual Allegiance&quot;, and &quot;The…</div><div class="body-copy phase-row"><span class="time-chip">28–44m</span> <strong>Primary Source Investigation (Sources A–B):</strong> Unpack Source A (The Becket Leaves: Henry II Expelling Becket's Kin…) and Source B (Edward Grim, Life of St Thomas Becket…</div><div class="body-copy phase-row"><span class="time-chip">44–50m</span> <strong>Formative Hinge Plenary:</strong> Check whole-class understanding before Lesson 2 using the Hinge Question: &quot;Why did a dispute over legal courts escalate…</div>
+        </div>
+        <div class="crib-card" style="border-left-color:#15803d;">
+          <div class="card-heading" style="color:#14532d;">Lesson 2: Turning Points, Disciplinary Sources &amp; Extended Writing (Stages 4–5…</div>
+          <div class="body-copy phase-row"><span class="time-chip">00–08m</span> <strong>Part 1 Retrieval &amp; Vocabulary Anchor:</strong> Rapid recall of Lesson 1 Stages 1–3 (&quot;Worldly Chancellor to Archbishop&quot; → &quot;The Constitutions of Clarendon &amp; ‘Criminous…</div><div class="body-copy phase-row"><span class="time-chip">08–24m</span> <strong>Stages 4–5 &amp; Sources C–E Cross-Referencing:</strong> Read Stages 4–5 (&quot;Murder in Canterbury Cathedral&quot; and &quot;Barefoot Royal Penance &amp; Papal Compromise&quot;) to complete the Verso…</div><div class="body-copy phase-row"><span class="time-chip">24–44m</span> <strong>Recto Workbook Extended Writing:</strong> Model using the Word Bank and Analytical Connectives, then have pupils complete their Recto writing task (Extended…</div><div class="body-copy phase-row"><span class="time-chip">44–50m</span> <strong>Tap-Tile Consolidation &amp; Live Critique:</strong> Review one pupil paragraph under the visualiser against the model answer and complete the end-of-lesson Tap-Tile Summary…</div>
+        </div>
+      </div>
+
+      <!-- (d) Misconceptions & Corrections + Hinge Question + SEND & Stretch -->
+      <div class="two-col-grid" style="grid-template-columns: 1.15fr 1fr;">
+        <div class="crib-card" style="border-left-color:#b91c1c;">
+          <div class="card-heading" style="color:#7f1d1d;">Common Pupil Misconceptions &amp; Historical Corrections</div>
+          
+      <div class="body-copy misc-item" style="">
+        <div><strong style="color:#991b1b;">Misconception 1:</strong> Henry II and Thomas Becket quarrelled simply because two stubborn friends fell out personally.</div>
+        <div><strong style="color:#166534;">Correction:</strong> At its core lay a fierce constitutional collision over who held supreme legal power in England: Henry's 1164 Constitutions of Clarendon (Source…</div>
+      </div>
+      <div class="body-copy misc-item" style="border-top:1px dashed #cbd5e1; padding-top:0.9mm; margin-top:0.9mm;">
+        <div><strong style="color:#991b1b;">Misconception 2:</strong> King Henry II sent four knights with written orders to execute Thomas Becket in Canterbury Cathedral.</div>
+        <div><strong style="color:#166534;">Correction:</strong> Henry flew into a furious Christmas rage in Normandy after Becket excommunicated bishops supporting the Crown (Source D); four knights took his…</div>
+      </div>
+      <div class="body-copy misc-item" style="border-top:1px dashed #cbd5e1; padding-top:0.9mm; margin-top:0.9mm;">
+        <div><strong style="color:#991b1b;">Misconception 3:</strong> Medieval monarchs had total power and could ignore the Pope without serious consequences.</div>
+        <div><strong style="color:#166534;">Correction:</strong> Because kings ruled over devout Christian subjects and feared papal interdict or excommunication, spiritual outrage forced even mighty Henry II…</div>
+      </div>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:2mm; justify-content:space-between;">
+          <div class="crib-card" style="border-left-color:#d97706; background:#fffbeb; flex:1;">
+            <div class="card-heading" style="color:#92400e;">Targeted Diagnostic Hinge Question</div>
+            <div class="body-copy" style="font-weight:700; color:#0f172a; margin-bottom:0.7mm;">&ldquo;Why did Thomas Becket's murder inside Canterbury Cathedral on 29 December 1170 end up weakening King Henry II rather than giving the Crown victory over…&rdquo;</div>
+            <div class="body-copy" style="color:#334155;"><strong>Look For:</strong> Look for pupils explaining how martyrdom inverted power in a devoutly Catholic Europe: slaughtering an Archbishop beside the altar horrified Christendom, led Pope Alexander III to canonise…</div>
+          </div>
+          <div class="crib-card" style="border-left-color:#6d28d9; background:#faf5ff; flex:1;">
+            <div class="card-heading" style="color:#4c1d95;">SEND Scaffold &amp; High-Ceiling Stretch</div>
+            <div class="body-copy" style="margin-bottom:0.7mm;"><strong style="color:#5b21b6;">SEND:</strong> Pre-teach criminous clerk (a churchman accused of serious crime like murder) and Benefit of Clergy (claiming trial in a lenient Church court by reading a Latin psalm).</div>
+            <div class="body-copy"><strong style="color:#5b21b6;">Stretch:</strong> Challenge higher-attaining pupils to argue from King Henry II's perspective using Clause 3 of the Constitutions of Clarendon (Source C): why would a modern lawyer actually…</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- (e) Quick Classroom Answer Crib -->
+      <div class="crib-card answer-crib-box" style="border-left-color:#0f172a; background:#f8fafc;">
+        <div class="card-heading" style="color:#0f172a;">Quick Classroom Answer Crib (Do Now &bull; Sources A–E &bull; Workbook / Exam Key)</div>
+        <div class="body-copy" style="margin-bottom:0.8mm; padding-bottom:0.8mm; border-bottom:1px solid #e2e8f0;">
+          <strong style="color:var(--accent-dark);">Do Now Key:</strong>
+          Q1: Christmas Day 1066 • Q2: Fewer than 10,000 soldiers • Q3: Portchester Castle • Q4: Christmas 1085 • Q5: Roughly 200 tenants-in-chief
+        </div>
+        <div class="body-copy" style="margin-bottom:0.8mm; padding-bottom:0.8mm; border-bottom:1px solid #e2e8f0;">
+          <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src A:</strong> Source A shows Henry II actively banishing women, children, and elderly relatives of Becket…</span> <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src B:</strong> Henry appointed his loyal, worldly Chancellor Becket expecting him to subserviently…</span> <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src C:</strong> Over one-sixth of England's population held clerical tonsures, claiming immunity from royal…</span> <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src D:</strong> Excommunication spiritually cut off royal officials from the sacraments and Christian…</span> <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src E:</strong> Source E portrays Becket kneeling prayerfully before the altar while four heavily armed…</span>
+        </div>
+        <div class="body-copy">
+          <strong style="color:#0f172a;">[Extended Historical Writing • Causal Explanation (2–3…]</strong>
+          <em>Explain why King Henry II clashed with Archbishop Thomas Becket between 1162 and 1170.</em>
+          &rarr; <strong>Core Model Argument:</strong> One major reason King Henry II clashed with Thomas Becket was a fierce legal dispute over ‘criminous clerks’ and the power of Church courts [3.3].
+        </div>
+      </div>
+    </div>
+
+    <div class="sow-foot">
+      <span>The History Revision Hub &bull; <span class="school-brand-target" data-department-name="The History Department">The History Department</span> &bull; Confidential Staff Guide</span>
+      <span class="sow-pill">Page 4 of 6</span>
+    </div>
+  </section>
+
+  <section class="page sow-page" data-page="5" data-page-kind="crib">
+    <div class="page-inner">
+      <div class="sow-head">
+        <span>3-MINUTE WALK-IN TEACHER CRIB SHEET &bull; ENQUIRY 4 OF 5</span>
+        <span>Medieval England (1066–1485)</span>
+      </div>
+
+      <!-- (a) Header Bar -->
+      <div class="enquiry-banner">
+        <div style="display:flex; justify-content:space-between; align-items:baseline; gap:2mm;">
+          <div class="enquiry-title-row">
+            <span class="enquiry-code-pill">E04</span>
+            <h2 class="enquiry-h2">King John &amp; Magna Carta (1199–1225)</h2>
+          </div>
+        </div>
+        <div class="enquiry-eq-line">Central Enquiry: Was Magna Carta a victory for liberty or a barons’ power grab?</div>
+        <div class="body-copy" style="color:#334155; margin-top:0.6mm;">
+          <strong style="color:var(--accent-dark);">Curriculum / Spec Anchor:</strong> KS3 Medieval Britain (1066–1509): Magna Carta and the emergence of constitutional limits — evaluating historical significance and myth versus 1215 reality.
+        </div>
+      </div>
+
+      
+
+      <!-- (b) Subject Knowledge Primer + Learning Objectives -->
+      <div class="two-col-grid" style="grid-template-columns: 1.28fr 1fr;">
+        <div class="crib-card">
+          <div class="card-heading">Subject Knowledge Primer (Non-Specialist Walk-In Briefing)</div>
+          <p class="body-copy">This enquiry deconstructs the popular myth of Magna Carta. Challenge pupils to interrogate whether the charter was a modern manifesto of freedom or a medieval trade union agreement for 25 disgruntled barons. Emphasise Clause 39 as the pivot point where feudal self-interest inadvertently created constitutional law.</p>
+        </div>
+        <div class="crib-card" style="background:#f8fafc;">
+          <div class="card-heading">Core Learning Objectives</div>
+          <ul class="crib-ul">
+            <li class="body-copy">Explain the financial and military pressures that pushed the barons into rebellion.</li><li class="body-copy">Evaluate the dual nature of Magna Carta: feudal self-interest versus constitutional legacy.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- (c) 2-Lesson Delivery Plan (2 x 50 mins) -->
+      <div class="two-col-grid" style="grid-template-columns: 1fr 1fr;">
+        <div class="crib-card" style="border-left-color:#1d4ed8;">
+          <div class="card-heading" style="color:#1e3a8a;">Lesson 1: Context, Shared Reading &amp; Early Evidence (Stages 1–3 • 50 mins)</div>
+          <div class="body-copy phase-row"><span class="time-chip">00–08m</span> <strong>Spaced Retrieval Starter:</strong> Complete the 5-question Do Now starter retrieving last lesson (&quot;Crown vs Church: Why did Henry II clash with Thomas…</div><div class="body-copy phase-row"><span class="time-chip">08–28m</span> <strong>Modelled Shared Reading &amp; Verso Spine (Stages 1–3):</strong> Read Stages 1–3 (&quot;‘Softsword’ &amp; The Loss of Normandy&quot;, &quot;The Papal Interdict &amp; Extortion&quot;, and &quot;The Baronial Rebellion&quot;)…</div><div class="body-copy phase-row"><span class="time-chip">28–44m</span> <strong>Primary Source Investigation (Sources A–B):</strong> Unpack Source A (Marble Tomb Effigy of King John: Worcester Cathedral…) and Source B (Contemporary Fresco Portrait of…</div><div class="body-copy phase-row"><span class="time-chip">44–50m</span> <strong>Formative Hinge Plenary:</strong> Check whole-class understanding before Lesson 2 using the Hinge Question: &quot;Why did John's loss of Normandy in 1204 make…</div>
+        </div>
+        <div class="crib-card" style="border-left-color:#15803d;">
+          <div class="card-heading" style="color:#14532d;">Lesson 2: Turning Points, Disciplinary Sources &amp; Extended Writing (Stages 4–5…</div>
+          <div class="body-copy phase-row"><span class="time-chip">00–08m</span> <strong>Part 1 Retrieval &amp; Vocabulary Anchor:</strong> Rapid recall of Lesson 1 Stages 1–3 (&quot;‘Softsword’ &amp; The Loss of Normandy&quot; → &quot;The Baronial Rebellion&quot;) and core lesson…</div><div class="body-copy phase-row"><span class="time-chip">08–24m</span> <strong>Stages 4–5 &amp; Sources C–E Cross-Referencing:</strong> Read Stages 4–5 (&quot;The Clauses of Runnymede&quot; and &quot;Civil War &amp; The Myth of Liberty&quot;) to complete the Verso spine, then…</div><div class="body-copy phase-row"><span class="time-chip">24–44m</span> <strong>Recto Workbook Extended Writing:</strong> Model using the Word Bank and Analytical Connectives, then have pupils complete their Recto writing task (Chronological…</div><div class="body-copy phase-row"><span class="time-chip">44–50m</span> <strong>Tap-Tile Consolidation &amp; Live Critique:</strong> Review one pupil paragraph under the visualiser against the model answer and complete the end-of-lesson Tap-Tile Summary…</div>
+        </div>
+      </div>
+
+      <!-- (d) Misconceptions & Corrections + Hinge Question + SEND & Stretch -->
+      <div class="two-col-grid" style="grid-template-columns: 1.15fr 1fr;">
+        <div class="crib-card" style="border-left-color:#b91c1c;">
+          <div class="card-heading" style="color:#7f1d1d;">Common Pupil Misconceptions &amp; Historical Corrections</div>
+          
+      <div class="body-copy misc-item" style="">
+        <div><strong style="color:#991b1b;">Misconception 1:</strong> Magna Carta gave human rights, democracy, and freedom to every peasant in England in 1215.</div>
+        <div><strong style="color:#166534;">Correction:</strong> Most of its 63 clauses protected wealthy feudal barons from extortionate scutage, and Clause 39 (Source D) applied strictly to 'free…</div>
+      </div>
+      <div class="body-copy misc-item" style="border-top:1px dashed #cbd5e1; padding-top:0.9mm; margin-top:0.9mm;">
+        <div><strong style="color:#991b1b;">Misconception 2:</strong> King John signed Magna Carta with a pen and obeyed it peacefully for the rest of his reign.</div>
+        <div><strong style="color:#166534;">Correction:</strong> Medieval kings affixed a wax Great Seal (Source C) rather than signing, and within weeks John persuaded Pope Innocent III to annul the…</div>
+      </div>
+      <div class="body-copy misc-item" style="border-top:1px dashed #cbd5e1; padding-top:0.9mm; margin-top:0.9mm;">
+        <div><strong style="color:#991b1b;">Misconception 3:</strong> Barons rebelled against King John simply because he had a cruel personality compared with Richard the Lionheart.</div>
+        <div><strong style="color:#166534;">Correction:</strong> While Richard drained England for crusades, he won battles; John lost ancestral Normandy in 1204 ('Softsword'), suffered a five-year Papal…</div>
+      </div>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:2mm; justify-content:space-between;">
+          <div class="crib-card" style="border-left-color:#d97706; background:#fffbeb; flex:1;">
+            <div class="card-heading" style="color:#92400e;">Targeted Diagnostic Hinge Question</div>
+            <div class="body-copy" style="font-weight:700; color:#0f172a; margin-bottom:0.7mm;">&ldquo;Was Magna Carta at Runnymede on 15 June 1215 a heroic triumph for ordinary English people's freedom, or a selfish feudal contract forced by twenty-five…&rdquo;</div>
+            <div class="body-copy" style="color:#334155;"><strong>Look For:</strong> Strong answers hold both truths in tension: in 1215, rebel barons led by Robert Fitzwalter acted out of class self-interest over scutage taxes, lost Norman estates, and feudal widow/inheritance…</div>
+          </div>
+          <div class="crib-card" style="border-left-color:#6d28d9; background:#faf5ff; flex:1;">
+            <div class="card-heading" style="color:#4c1d95;">SEND Scaffold &amp; High-Ceiling Stretch</div>
+            <div class="body-copy" style="margin-bottom:0.7mm;"><strong style="color:#5b21b6;">SEND:</strong> Pre-teach scutage (cash tax paid instead of providing knights) and Interdict (the Pope locking England's churches for five years).</div>
+            <div class="body-copy"><strong style="color:#5b21b6;">Stretch:</strong> Push higher-attaining pupils to explain why Magna Carta survived at all if Pope Innocent III tore it up in 1215: why was regent William Marshal's decision to reissue the…</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- (e) Quick Classroom Answer Crib -->
+      <div class="crib-card answer-crib-box" style="border-left-color:#0f172a; background:#f8fafc;">
+        <div class="card-heading" style="color:#0f172a;">Quick Classroom Answer Crib (Do Now &bull; Sources A–E &bull; Workbook / Exam Key)</div>
+        <div class="body-copy" style="margin-bottom:0.8mm; padding-bottom:0.8mm; border-bottom:1px solid #e2e8f0;">
+          <strong style="color:var(--accent-dark);">Do Now Key:</strong>
+          Q1: Lord Chancellor • Q2: 1162 • Q3: Canon Law • Q4: France • Q5: Just three years later
+        </div>
+        <div class="body-copy" style="margin-bottom:0.8mm; padding-bottom:0.8mm; border-bottom:1px solid #e2e8f0;">
+          <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src A:</strong> The effigy portrays John as a dignified, pious ruler protected by local Saxon saints…</span> <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src B:</strong> Innocent III placed England under Interdict for five years, silencing church bells and…</span> <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src C:</strong> The Great Seal was the legal embodiment of the King's will.</span> <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src D:</strong> Clauses 39 and 40 established for the first time that the monarch is subject to the law…</span> <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src E:</strong> Just months after sealing Magna Carta, John secured papal annulment and unleashed savage…</span>
+        </div>
+        <div class="body-copy">
+          <strong style="color:#0f172a;">[Chronological Historical Narrative • Analytical Account…]</strong>
+          <em>Write a narrative account analysing the key events leading from the loss of Normandy (1204) to the sealing of Magna Carta at…</em>
+          &rarr; <strong>Core Model Argument:</strong> The crisis leading to Magna Carta began between 1199 and 1204, when King Philip II of France outmanoeuvred King John and captured the ancestral duchy of Normandy [4.1].
+        </div>
+      </div>
+    </div>
+
+    <div class="sow-foot">
+      <span>The History Revision Hub &bull; <span class="school-brand-target" data-department-name="The History Department">The History Department</span> &bull; Confidential Staff Guide</span>
+      <span class="sow-pill">Page 5 of 6</span>
+    </div>
+  </section>
+
+  <section class="page sow-page" data-page="6" data-page-kind="crib">
+    <div class="page-inner">
+      <div class="sow-head">
+        <span>3-MINUTE WALK-IN TEACHER CRIB SHEET &bull; ENQUIRY 5 OF 5</span>
+        <span>Medieval England (1066–1485)</span>
+      </div>
+
+      <!-- (a) Header Bar -->
+      <div class="enquiry-banner">
+        <div style="display:flex; justify-content:space-between; align-items:baseline; gap:2mm;">
+          <div class="enquiry-title-row">
+            <span class="enquiry-code-pill">E05</span>
+            <h2 class="enquiry-h2">The Black Death &amp; The Peasants’ Revolt (1348–1381)</h2>
+          </div>
+        </div>
+        <div class="enquiry-eq-line">Central Enquiry: How did the Black Death spark the Peasants’ Revolt of 1381?</div>
+        <div class="body-copy" style="color:#334155; margin-top:0.6mm;">
+          <strong style="color:var(--accent-dark);">Curriculum / Spec Anchor:</strong> KS3 Medieval Britain (1066–1509): Society, economy, and peasant agency — connecting demographic shock (1348 Black Death) to economic law and the 1381 Peasants'…
+        </div>
+      </div>
+
+      
+
+      <!-- (b) Subject Knowledge Primer + Learning Objectives -->
+      <div class="two-col-grid" style="grid-template-columns: 1.28fr 1fr;">
+        <div class="crib-card">
+          <div class="card-heading">Subject Knowledge Primer (Non-Specialist Walk-In Briefing)</div>
+          <p class="body-copy">This capstone enquiry traces the economic and social chain reaction from the biological shock of the Black Death (1348) to the political explosion of the Peasants’ Revolt (1381). Challenge pupils to connect demographic scarcity with wage inflation, royal repression (Statute of Labourers), and tax resistance.</p>
+        </div>
+        <div class="crib-card" style="background:#f8fafc;">
+          <div class="card-heading">Core Learning Objectives</div>
+          <ul class="crib-ul">
+            <li class="body-copy">Explain the economic chain reaction connecting the Black Death to the labour crisis.</li><li class="body-copy">Evaluate whether the Peasants’ Revolt was a failure or long-term success.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- (c) 2-Lesson Delivery Plan (2 x 50 mins) -->
+      <div class="two-col-grid" style="grid-template-columns: 1fr 1fr;">
+        <div class="crib-card" style="border-left-color:#1d4ed8;">
+          <div class="card-heading" style="color:#1e3a8a;">Lesson 1: Context, Shared Reading &amp; Early Evidence (Stages 1–3 • 50 mins)</div>
+          <div class="body-copy phase-row"><span class="time-chip">00–08m</span> <strong>Spaced Retrieval Starter:</strong> Complete the 5-question Do Now starter retrieving last lesson (&quot;Magna Carta (1215) &amp; Medieval Kingship: Liberty or…</div><div class="body-copy phase-row"><span class="time-chip">08–28m</span> <strong>Modelled Shared Reading &amp; Verso Spine (Stages 1–3):</strong> Read Stages 1–3 (&quot;Arrival of the Plague at Melcombe Regis&quot;, &quot;Labour Shortage &amp; The Economic Revolution&quot;, and &quot;The Statute…</div><div class="body-copy phase-row"><span class="time-chip">28–44m</span> <strong>Primary Source Investigation (Sources A–B):</strong> Unpack Source A (Chronicle of Henry Knighton on Plague Mortality and…) and Source B (The Statute of Labourers (25 Edw.</div><div class="body-copy phase-row"><span class="time-chip">44–50m</span> <strong>Formative Hinge Plenary:</strong> Check whole-class understanding before Lesson 2 using the Hinge Question: &quot;Why did a biological disaster like the plague…</div>
+        </div>
+        <div class="crib-card" style="border-left-color:#15803d;">
+          <div class="card-heading" style="color:#14532d;">Lesson 2: Turning Points, Disciplinary Sources &amp; Extended Writing (Stages 4–5…</div>
+          <div class="body-copy phase-row"><span class="time-chip">00–08m</span> <strong>Part 1 Retrieval &amp; Vocabulary Anchor:</strong> Rapid recall of Lesson 1 Stages 1–3 (&quot;Arrival of the Plague at Melcombe Regis&quot; → &quot;The Statute of Labourers &amp; Sumptuary…</div><div class="body-copy phase-row"><span class="time-chip">08–24m</span> <strong>Stages 4–5 &amp; Sources C–E Cross-Referencing:</strong> Read Stages 4–5 (&quot;The Regressive Poll Taxes &amp; Brentwood Spark&quot; and &quot;Showdown at Smithfield &amp; The End of Serfdom&quot;) to…</div><div class="body-copy phase-row"><span class="time-chip">24–44m</span> <strong>Recto Workbook Extended Writing:</strong> Model using the Word Bank and Analytical Connectives, then have pupils complete their Recto writing task (Evaluative…</div><div class="body-copy phase-row"><span class="time-chip">44–50m</span> <strong>Tap-Tile Consolidation &amp; Live Critique:</strong> Review one pupil paragraph under the visualiser against the model answer and complete the end-of-lesson Tap-Tile Summary…</div>
+        </div>
+      </div>
+
+      <!-- (d) Misconceptions & Corrections + Hinge Question + SEND & Stretch -->
+      <div class="two-col-grid" style="grid-template-columns: 1.15fr 1fr;">
+        <div class="crib-card" style="border-left-color:#b91c1c;">
+          <div class="card-heading" style="color:#7f1d1d;">Common Pupil Misconceptions &amp; Historical Corrections</div>
+          
+      <div class="body-copy misc-item" style="">
+        <div><strong style="color:#991b1b;">Misconception 1:</strong> The Black Death made surviving medieval peasants poorer because so many people died.</div>
+        <div><strong style="color:#166534;">Correction:</strong> Acute labour shortages across empty villages gave surviving peasants unprecedented bargaining power (Henry Knighton, Source A), allowing workers…</div>
+      </div>
+      <div class="body-copy misc-item" style="border-top:1px dashed #cbd5e1; padding-top:0.9mm; margin-top:0.9mm;">
+        <div><strong style="color:#991b1b;">Misconception 2:</strong> The 1381 rebels were an unorganised rabble of starving beggars rioting blindly.</div>
+        <div><strong style="color:#166534;">Correction:</strong> Led by Wat Tyler and radical preacher John Ball ('When Adam delved and Eve span, who was then the gentleman?', Source C), rebels included…</div>
+      </div>
+      <div class="body-copy misc-item" style="border-top:1px dashed #cbd5e1; padding-top:0.9mm; margin-top:0.9mm;">
+        <div><strong style="color:#991b1b;">Misconception 3:</strong> Because Wat Tyler was stabbed at Smithfield and King Richard II broke his promises, the 1381 Peasants' Revolt…</div>
+        <div><strong style="color:#166534;">Correction:</strong> Although fourteen-year-old Richard II revoked his charters and executed rebel leaders, terrified Parliament never levied a medieval Poll Tax…</div>
+      </div>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:2mm; justify-content:space-between;">
+          <div class="crib-card" style="border-left-color:#d97706; background:#fffbeb; flex:1;">
+            <div class="card-heading" style="color:#92400e;">Targeted Diagnostic Hinge Question</div>
+            <div class="body-copy" style="font-weight:700; color:#0f172a; margin-bottom:0.7mm;">&ldquo;If the Black Death arrived in 1348 and surviving farm workers were able to demand double wages, why did it take thirty-three years for the Peasants'…&rdquo;</div>
+            <div class="body-copy" style="color:#334155;"><strong>Look For:</strong> Look for pupils tracing long-term frustration colliding with a sharp political trigger: after the 1348–50 plague halved the workforce, lords used the 1351 Statute of Labourers (Source B) and…</div>
+          </div>
+          <div class="crib-card" style="border-left-color:#6d28d9; background:#faf5ff; flex:1;">
+            <div class="card-heading" style="color:#4c1d95;">SEND Scaffold &amp; High-Ceiling Stretch</div>
+            <div class="body-copy" style="margin-bottom:0.7mm;"><strong style="color:#5b21b6;">SEND:</strong> Pre-teach serfdom (peasants legally tied to a lord's manor) and Poll Tax (a flat 12-pence tax paid equally by poor labourers and rich dukes).</div>
+            <div class="body-copy"><strong style="color:#5b21b6;">Stretch:</strong> Challenge higher-attaining pupils to connect Lesson 5 back to Lesson 2 and Lesson 4: in 1086 Domesday locked peasants onto Norman manors and in 1215 Magna Carta ignored…</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- (e) Quick Classroom Answer Crib -->
+      <div class="crib-card answer-crib-box" style="border-left-color:#0f172a; background:#f8fafc;">
+        <div class="card-heading" style="color:#0f172a;">Quick Classroom Answer Crib (Do Now &bull; Sources A–E &bull; Workbook / Exam Key)</div>
+        <div class="body-copy" style="margin-bottom:0.8mm; padding-bottom:0.8mm; border-bottom:1px solid #e2e8f0;">
+          <strong style="color:var(--accent-dark);">Do Now Key:</strong>
+          Q1: 1199 • Q2: &quot;John Softsword&quot; • Q3: Normandy • Q4: 15 June 1215 • Q5: London
+        </div>
+        <div class="body-copy" style="margin-bottom:0.8mm; padding-bottom:0.8mm; border-bottom:1px solid #e2e8f0;">
+          <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src A:</strong> Knighton explains that catastrophic mortality killed nearly half the workforce, leaving…</span> <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src B:</strong> Parliament was composed entirely of aristocratic and gentry landlords who used state…</span> <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src C:</strong> Ball used biblical authority to argue that God created humanity as natural equals without…</span> <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src D:</strong> Source D shows the royal court physically isolated and trapped in the Tower of London while…</span> <span style="margin-right:2.2mm;"><strong style="color:var(--accent-dark);">Src E:</strong> The illumination frames Tyler's murder as a righteous strike of civic defence by Lord Mayor…</span>
+        </div>
+        <div class="body-copy">
+          <strong style="color:#0f172a;">[Evaluative Historical Essay • Balanced Judgement (3…]</strong>
+          <em>‘The Black Death of 1348 was the main cause of the breakdown of the feudal system in medieval England.’ How far do you agree?</em>
+          &rarr; <strong>Core Model Argument:</strong> On the one hand, the Black Death of 1348–1350 was the fundamental economic shock that undermined the feudal system in medieval England [5.1, 5.2].
+        </div>
+      </div>
+    </div>
+
+    <div class="sow-foot">
+      <span>The History Revision Hub &bull; <span class="school-brand-target" data-department-name="The History Department">The History Department</span> &bull; Confidential Staff Guide</span>
+      <span class="sow-pill">Page 6 of 6</span>
+    </div>
+  </section>
+
+  
+  <script>
+    (function () {
+      // 1. Commercial School Cover Customizer (?school=School+Name)
+      try {
+        var params = new URLSearchParams(window.location.search);
+        var customSchool = (params.get('school') || '').trim();
+        if (customSchool) {
+          var targets = document.querySelectorAll('.school-brand-target');
+          for (var i = 0; i < targets.length; i++) {
+            targets[i].textContent = customSchool;
+          }
+        }
+      } catch (e) {}
+
+      // 2. Zero-Overflow A4 Portrait Auto-Fit Engine (Strictly preserves body prose >= 8.2pt!)
+      window.autoFitPages = function () {
+        var pages = document.querySelectorAll('.page');
+        for (var p = 0; p < pages.length; p++) {
+          var page = pages[p];
+          var inner = page.querySelector('.page-inner');
+          var bodyEls = page.querySelectorAll('.body-copy');
+          var cards = page.querySelectorAll('.crib-card, .enquiry-banner, .hero-banner');
+          var grids = page.querySelectorAll('.two-col-grid');
+          var cells = page.querySelectorAll('.sow-matrix-table td, .sow-matrix-table th');
+          var headings = page.querySelectorAll('.card-heading');
+
+          var bodyPt = 8.5;
+          var bodyLh = 1.25;
+          var gapMm = 2.1;
+          var padY = 8.0;
+          var guard = 0;
+
+          while (page.scrollHeight > page.clientHeight && guard < 36) {
+            guard++;
+            if (guard <= 10) {
+              // Phase 1: Tighten vertical gaps & card/table padding first (0pt font loss)
+              gapMm = Math.max(1.0, gapMm - 0.12);
+              if (inner) inner.style.gap = gapMm.toFixed(2) + 'mm';
+              for (var g = 0; g < grids.length; g++) {
+                grids[g].style.gap = Math.max(1.2, gapMm).toFixed(2) + 'mm';
+              }
+              var cardPadY = Math.max(1.0, 1.8 - guard * 0.08);
+              for (var c = 0; c < cards.length; c++) {
+                cards[c].style.paddingTop = cardPadY.toFixed(2) + 'mm';
+                cards[c].style.paddingBottom = cardPadY.toFixed(2) + 'mm';
+              }
+              var cellPadY = Math.max(0.65, 1.2 - guard * 0.055);
+              for (var td = 0; td < cells.length; td++) {
+                cells[td].style.paddingTop = cellPadY.toFixed(2) + 'mm';
+                cells[td].style.paddingBottom = cellPadY.toFixed(2) + 'mm';
+              }
+            } else if (guard <= 20) {
+              // Phase 2: Step body copy gently from 8.5pt toward 8.20pt floor & tighter line-height
+              bodyPt = Math.max(8.2, bodyPt - 0.03);
+              bodyLh = Math.max(1.16, bodyLh - 0.009);
+              for (var b = 0; b < bodyEls.length; b++) {
+                bodyEls[b].style.fontSize = bodyPt.toFixed(2) + 'pt';
+                bodyEls[b].style.lineHeight = bodyLh.toFixed(2);
+              }
+            } else {
+              // Phase 3: Tighten outer page vertical margin & heading margins while locking bodyPt >= 8.2pt!
+              padY = Math.max(5.5, padY - 0.2);
+              page.style.paddingTop = padY.toFixed(2) + 'mm';
+              page.style.paddingBottom = padY.toFixed(2) + 'mm';
+              bodyLh = Math.max(1.13, bodyLh - 0.004);
+              for (var b2 = 0; b2 < bodyEls.length; b2++) {
+                bodyEls[b2].style.lineHeight = bodyLh.toFixed(2);
+              }
+              for (var h = 0; h < headings.length; h++) {
+                headings[h].style.fontSize = '8.25pt';
+                headings[h].style.marginBottom = '0.4mm';
+                headings[h].style.paddingBottom = '0.3mm';
+              }
+              var foot = page.querySelector('.sow-foot');
+              if (foot) {
+                foot.style.marginTop = '0.8mm';
+                foot.style.paddingTop = '0.8mm';
+              }
+            }
+          }
+        }
+      };
+
+      if (document.readyState === 'complete') {
+        window.autoFitPages();
+      } else {
+        window.addEventListener('load', window.autoFitPages);
+      }
+      if (document.fonts && document.fonts.ready) {
+        document.fonts.ready.then(window.autoFitPages);
+      }
+    })();
+  </script>
+</body>
+</html>

@@ -740,7 +740,26 @@
               }
             ]
           }
-        }
+        },
+        "curriculum_link": "KT1 Medicine in Medieval England (c1250–c1500): Supernatural and religious explanations of disease; the institutional control of the Catholic Church over medical learning. Targets Paper 1 Section B Question 3 Similarity/Difference (4m) and Question 5/6 Evaluative Essay (16m + 4 SPaG).",
+        "hinge_question": "Why did the medieval Catholic Church actively promote Claudius Galen's pagan medical writings while imprisoning Christian friars like Roger Bacon?",
+        "hinge_guidance": "Strong GCSE answers recognise that Galen's anatomical theory pointed to a single 'purposeful creator', fitting neatly alongside Christian doctrine so questioning Galen became tantamount to questioning God. Watch for pupils assuming the medieval Church banned all medical books; in reality, monastic scriptoria preserved classical learning in Latin while policing empirical experimentation.",
+        "misconceptions": [
+          {
+            "misconception": "Assuming medieval people ONLY believed in God and sin as causes of disease, ignoring astrology and natural humours.",
+            "correction": "University physicians and laypeople blended divine punishment seamlessly with natural explanations like the 1345 planetary alignment of Mars, Saturn, and Jupiter and corrupted air. Edexcel Paper 1 Demand requires balancing supernatural faith alongside rational classical theories in 16-mark essays."
+          },
+          {
+            "misconception": "Thinking astrology was viewed as fringe magic or superstition opposed by educated doctors.",
+            "correction": "Astrology was mainstream university science taught through Zodiac Man charts after Arabic medical texts reached Europe. Physicians checked planetary alignments before bleeding or operating to avoid harming specific organs."
+          },
+          {
+            "misconception": "Believing leprosy segregation in Lazar houses was purely cruel punishment with zero health logic.",
+            "correction": "While the Sarum Rite framed leprosy as outward moral taint from sin, exiling sufferers outside town walls with wooden clappers also reflected practical observation of contagion."
+          }
+        ],
+        "send_adaptation": "Pre-teach the five core stages using the Visual Story Sheet alongside Studio Audio read-aloud so pupils hear Latin terms like Purgatory, Lazar house, and scriptoria pronounced in context. Pair this with the Workbook Verso 5-Stage Chronological Spine so Grade 3–4 learners anchor one concrete example (pilgrimage to St Thomas Becket's shrine, Zodiac Man, Roger Bacon c1277) per stage before attempting the 4-mark similarity paragraph.",
+        "stretch_challenge": "Evaluate whether the medieval Catholic Church acted purely as a barrier to medical progress or simultaneously functioned as the sole institutional preserver of literate scholarship and charitable care across Western Europe between c1250 and c1500."
       },
       "do_now": {
         "type": "questions",
@@ -2165,7 +2184,8 @@
         ]
       },
       "banner_image": "/images/med_banner_kt1_1_supernatural_belief.jpg",
-      "enquiry": "Why did the medieval Catholic Church hold an unshakeable monopoly over beliefs about the causes of disease?"
+      "enquiry": "Why did the medieval Catholic Church hold an unshakeable monopoly over beliefs about the causes of disease?",
+      "banner_caption": "Public Penitential Procession of the Flagellants (1349, Chronicles of Gilles Li Muisis): Convinced epidemic pestilence was divine punishment for human sin, medieval Christians turned to public penance, prayer, and saintly intercession."
     },
     {
       "id": "lesson_1_2",
@@ -2173,7 +2193,7 @@
         "image": "/images/edexcel_medicine/kt12/med_l1_2_banner_galen_illuminated_wellcome.jpg",
         "alt": "Gold-and-vermilion illuminated Greek medical headpiece depicting Claudius Galen enthroned in red and green robes holding an open medical codex flanked by foliate scroll borders and Greek inscriptions",
         "position": "center 46%",
-        "caption": "Claudius Galen Enthroned Holding His Medical Codex (Illuminated Greek headpiece, Venice, 1500, Wellcome Collection M0011642): Building upon Hippocrates’s Four Humours, Galen’s Theory of Opposites dominated European university medicine for over 1,400 years."
+        "caption": "Claudius Galen enthroned holding his medical codex in an illuminated Greek edition printed in Venice (1500), reflecting how Galenic humoral theory dominated European university medicine for over 1,400 years."
       },
       "banner_position": "center 46%",
       "title": "KT1.2: Rational Explanations: Hippocrates, Galen & The Four Humours (c1250–c1500)",
@@ -2357,7 +2377,26 @@
               }
             ]
           }
-        }
+        },
+        "curriculum_link": "KT1 Medicine in Medieval England (c1250–c1500): Rational explanations—the Theory of the Four Humours, Galen's Theory of Opposites, diagnostic uroscopy, and miasma. Targets Paper 1 Section B Question 3 Difference (4m) and Question 4 Causation 'Explain why' (12m).",
+        "hinge_question": "If the Theory of the Four Humours was scientifically wrong, why did it convince both university physicians and ordinary patients for over 1,400 years?",
+        "hinge_guidance": "Strong GCSE answers explain that humoral theory matched everyday visible symptoms—winter colds produced real phlegm, fevers flushed skin red with blood, and vomiting expelled bile—giving doctors a logical, all-encompassing explanation tailored to every patient. Catch pupils who conflate 'rational' with 'scientifically accurate' in Paper 1 essays; humoralism and miasma were rational because they sought physical, observable causes rather than supernatural wrath.",
+        "misconceptions": [
+          {
+            "misconception": "Confusing Hippocrates and Claudius Galen as medieval Englishmen or contemporaries.",
+            "correction": "Hippocrates practised in fifth-century BC Greece (clinical observation and Four Humours), while Galen worked in second-century AD Rome (Theory of Opposites and animal dissection). Medieval English universities inherited their translated texts centuries later."
+          },
+          {
+            "misconception": "Thinking miasma theory was the early version of Pasteur's Germ Theory because both involved the air.",
+            "correction": "Miasma attributed epidemics to poisonous foul smells rising from rotting waste and swamps that corrupted bodily humours, with zero knowledge of living microscopic bacteria. GCSE Exam Tip: keep miasma strictly separate from 1861 Germ Theory in Question 3 comparisons."
+          },
+          {
+            "misconception": "Assuming medieval physicians dissected human corpses in universities and simply misread what they saw.",
+            "correction": "Galen's errors—such as a two-piece lower jawbone and invisible pores in the heart's septum—stemmed from dissecting pigs, dogs, and apes under Roman law, and medieval lectures merely read Galen aloud to prove him right."
+          }
+        ],
+        "send_adaptation": "Display the Visual Story Sheet to map the four humours (blood, phlegm, yellow bile, black bile) to concrete seasonal symptoms like winter coughs and summer fevers while playing the Studio Audio read-aloud. Guide learners to complete the Workbook Verso 5-Stage Chronological Spine first so they have ready-made evidence for three distinct causal paragraphs on why medieval medicine stagnated.",
+        "stretch_challenge": "Compare how institutional authority (Church backing of Galen), clinical plausibility (uroscopy via the glass matula), and lack of alternative technology interacted to lock European medicine into classical orthodoxy from c1250 to c1500."
       },
       "do_now": {
         "type": "questions",
@@ -3782,7 +3821,8 @@
         ]
       },
       "banner_image": "/images/edexcel_medicine/kt12/med_l1_2_banner_galen_illuminated_wellcome.jpg",
-      "enquiry": "Why did ancient ideas like the Four Humours and miasma dominate medieval medicine?"
+      "enquiry": "Why did ancient ideas like the Four Humours and miasma dominate medieval medicine?",
+      "banner_caption": "Claudius Galen enthroned holding his medical codex in an illuminated Greek edition printed in Venice (1500), reflecting how Galenic humoral theory dominated European university medicine for over 1,400 years."
     },
     {
       "id": "lesson_1_3",
@@ -3790,7 +3830,7 @@
         "image": "/images/med_banner_kt1_3_bloodletting.jpg",
         "alt": "Hand-coloured medical manuscript illustration showing a patient with a red tourniquet ribbon tied around the upper arm as venous blood arcs into three graduated collecting bowls on a table",
         "position": "center 38%",
-        "caption": "Humoral Phlebotomy in Practice (Wellcome MS 990, Wellcome Collection L0041074): A tourniquet constricts the upper arm while venous blood streams into three graduated bowls to drain supposed excess hot, wet blood."
+        "caption": "Early modern German medical manuscript painting of phlebotomy (bloodletting), showing a red tourniquet constricting the upper arm as venous blood streams into graduated bowls to rebalance the Four Humours."
       },
       "banner_position": "center 38%",
       "title": "KT1.3: Approaches to Prevention & Treatment: Rituals, Bleeding & Purging (c1250–c1500)",
@@ -3974,7 +4014,26 @@
               }
             ]
           }
-        }
+        },
+        "curriculum_link": "KT1 Medicine in Medieval England (c1250–c1500): Religious and rational approaches to prevention and treatment—prayer, phlebotomy, purging, herbal remedies, theriac, and the Regimen Sanitatis. Targets Paper 1 Section B Question 3 Similarity (4m) and Question 5/6 Evaluative Essay (16m + 4 SPaG).",
+        "hinge_question": "Why was following the preventative Regimen Sanitatis far safer for a medieval patient than paying for curative treatment from a physician or barber-surgeon?",
+        "hinge_guidance": "Strong answers contrast gentle lifestyle moderation—bathing, balanced diet, rest, and clean air under the Salernitan rules—with invasive humoral cures like iron-fleam phlebotomy and black hellebore emetics that drained vital fluids and worsened shock or dehydration. Watch for the chronological slip of claiming all medieval herbal remedies were useless superstition; ingredients like honey, mint, chamomile, and willow bark had genuine mild soothing or antiseptic properties, even if powerless against epidemic bacteria.",
+        "misconceptions": [
+          {
+            "misconception": "Assuming patients chose EITHER religious prayer OR physical humoral medicine depending on whether they were superstitious.",
+            "correction": "Medieval patients routinely combined spiritual penance, chantry masses, and saintly pilgrimage with bloodletting, herbal simples, and apothecary theriac, believing God created earthly herbs to rebalance humours once sin was confessed."
+          },
+          {
+            "misconception": "Writing that bloodletting and clyster purging were random torture rather than logical extensions of medical theory.",
+            "correction": "Phlebotomy (via fleams, leeches, or heated cupping vessels) and purging were systematic applications of humoral pathology designed to evacuate excess or corrupted fluids indicated by Vein Man charts and uroscopy."
+          },
+          {
+            "misconception": "Treating expensive apothecary theriac as clinically superior to peasant herbal simples.",
+            "correction": "Although 70-ingredient theriac cost a fortune because of imported spices, opium, and snake flesh, neither wealthy compounds nor domestic herbs could cure systemic bacterial infections."
+          }
+        ],
+        "send_adaptation": "Use the Visual Story Sheet and Studio Audio read-aloud to group unfamiliar vocabulary (phlebotomy, fleam, emetic, clyster, theriac, pomander) into two simple classroom buckets: 'Taking Bad Fluids Out' versus 'Keeping Body & Air Clean'. Pupils then sequence those actions along the Workbook Verso 5-Stage Chronological Spine before drafting balanced paragraph points.",
+        "stretch_challenge": "Assess whether medieval treatments failed primarily because of flawed humoral theory, Church religious dominance, or the complete absence of scientific microbiology and controlled clinical testing."
       },
       "do_now": {
         "type": "questions",
@@ -5392,7 +5451,8 @@
         ]
       },
       "banner_image": "/images/med_banner_kt1_3_bloodletting.jpg",
-      "enquiry": "Why did standard medieval medical treatments frequently endanger the lives of the patients they were meant to cure?"
+      "enquiry": "Why did standard medieval medical treatments frequently endanger the lives of the patients they were meant to cure?",
+      "banner_caption": "Early modern German medical manuscript painting of phlebotomy (bloodletting), showing a red tourniquet constricting the upper arm as venous blood streams into graduated bowls to rebalance the Four Humours."
     },
     {
       "id": "lesson_1_4",
@@ -5578,7 +5638,26 @@
               }
             ]
           }
-        }
+        },
+        "curriculum_link": "KT1 Medicine in Medieval England (c1250–c1500): Medical care providers—university physicians, guild apothecaries, barber-surgeons, domestic women healers, and monastic hospitals ('care not cure'). Targets Paper 1 Section B Question 3 Difference (4m) and Question 4 Causation 'Explain why' (12m).",
+        "hinge_question": "Why did medieval monastic hospitals like St Bartholomew's turn away patients with infectious fevers or leprosy when their Christian mission was charity for the sick poor?",
+        "hinge_guidance": "Strong GCSE answers explain that monastic hospitals operated as religious almshouses delivering 'care not cure'—offering shelter, clean linen, broth, and sight of the chapel altar for spiritual salvation—and lacked cures, so admitting contagious patients would swiftly wipe out elderly pilgrims and monks alike. Catch pupils who assume ordinary villagers visited university physicians; fewer than 100 university doctors practised in England around 1300, meaning over 90 percent of people relied on domestic women healers, wise women, or town apothecaries.",
+        "misconceptions": [
+          {
+            "misconception": "Describing medieval hospitals as surgical treatment wards staffed by qualified doctors.",
+            "correction": "Almost all of England's 1,100+ medieval hospitals were run by monks and nuns prioritising rest, cleanliness, food, and prayer for the soul rather than medical operations. GCSE Exam Tip: contrast 'care not cure' directly with late-19th-century clinical pavilion wards in Question 3."
+          },
+          {
+            "misconception": "Assuming university physicians were the most skilled practical surgeons because they sat at the top of the medical hierarchy.",
+            "correction": "University physicians studied Latin texts and star charts for up to ten years and disdained manual work; hands-on wound stitching, tooth extraction, bleeding, and amputations were performed by guild-trained barber-surgeons."
+          },
+          {
+            "misconception": "Overlooking women healers or claiming women played no role in medieval healthcare because universities barred them.",
+            "correction": "Mothers, grandmothers, and village wise women delivered the vast majority of everyday rural nursing, midwifery, and herbal remedies using household leechbooks."
+          }
+        ],
+        "send_adaptation": "Project Block 1's interactive Concept Diagram ('The Medieval Medical Marketplace: Comparing England's 4 Care Providers') alongside the Visual Story Sheet so learners visually contrast training, cost, and hands-on care before listening to the Studio Audio read-aloud. Anchor independent writing around the Workbook Verso 5-Stage Chronological Spine so Grade 3–4 learners separate physicians, apothecaries, barber-surgeons, monastic hospitals, and household women cleanly.",
+        "stretch_challenge": "To what extent did wealth affect the cost and prestige of medieval medical practitioners far more than it improved a patient's actual chance of surviving serious illness or trauma?"
       },
       "do_now": {
         "type": "questions",
@@ -7105,7 +7184,8 @@
         ]
       },
       "banner_image": "/images/edexcel_medicine/kt12/med_l1_4_banner_santa_maria_della_scala_siena.jpg",
-      "enquiry": "How did social hierarchy and the Catholic Church shape who provided medical care in medieval England?"
+      "enquiry": "How did social hierarchy and the Catholic Church shape who provided medical care in medieval England?",
+      "banner_caption": "Hospital Ward Care in Late-Medieval Europe — Care of the Sick (Domenico di Bartolo fresco, 1440–1441, Ospedale di Santa Maria della Scala, Siena): Religious brothers wash patients and tend beds alongside visiting physicians."
     },
     {
       "id": "lesson_1_5",
@@ -7297,7 +7377,26 @@
               }
             ]
           }
-        }
+        },
+        "curriculum_link": "KT1 Medicine in Medieval England (c1250–c1500): Case study—Dealing with the Black Death, 1348–49 (approaches to treatment and attempts to prevent spread). Targets Paper 1 Section B Question 3 Similarity (4m) and Question 5/6 Evaluative Essay (16m + 4 SPaG).",
+        "hinge_question": "Why did King Edward III's April 1349 order to clear butchery waste from London's streets represent rational public health thinking yet completely fail to halt the Black Death?",
+        "hinge_guidance": "Strong GCSE answers identify that clearing offal and dung followed logical miasma theory—removing foul smells believed to poison the air—but without understanding Yersinia pestis bacteria carried by Oriental rat fleas on black rats, cleaning visible street filth late in the epidemic could not stop flea bites or pneumonic coughing indoors. Watch out for the major Paper 1 chronological trap where pupils muddle the 1348–49 Black Death (KT1 Medieval) with the 1665 Great Plague of London (KT2 Renaissance), attributing red crosses, printed Bills of Mortality, or 200,000 culled cats and dogs to 1348.",
+        "misconceptions": [
+          {
+            "misconception": "Confusing 1348 Black Death measures with 1665 Great Plague orders such as nailed doors with red crosses, paid watchmen, and mass dog/cat culls.",
+            "correction": "Those organised parish enforcement rules belong to the 1665 Great Plague of London (KT2). In 1348–49, local councils lacked enforcement machinery, relying mainly on church processions, basic isolation rules in towns like Gloucester, and King Edward III's street-cleaning proclamation."
+          },
+          {
+            "misconception": "Writing that medieval people knew rats and fleas spread the plague.",
+            "correction": "Contemporaries blamed God's wrath, the 1345 planetary conjunction, and corrupt miasma; the Yersinia pestis bacterium and rat-flea vector were not discovered until the late nineteenth century."
+          },
+          {
+            "misconception": "Claiming local quarantine orders in 1348–49 saved trapped families from catching plague.",
+            "correction": "Shutting families inside timber houses without understanding flea transmission often trapped healthy relatives alongside infected black rats, fleas, and pneumonic droplets, wiping out entire households."
+          }
+        ],
+        "send_adaptation": "Pair the Visual Story Sheet and Studio Audio read-aloud to distinguish 'What Medieval People Believed' (sin, planets, miasma) from 'What Really Spread Plague' (Yersinia pestis, black rats, rat fleas) without cognitive overload. Have pupils complete the Workbook Verso 5-Stage Chronological Spine from Melcombe Regis (June 1348) to East Smithfield mass pits before comparing 1348 and 1665 in Question 3.",
+        "stretch_challenge": "Compare responses to the 1348–49 Black Death against responses to the 1665 Great Plague: why did civic organisation advance noticeably over those three centuries while medical cures showed almost total stagnation?"
       },
       "do_now": {
         "type": "questions",
@@ -8820,7 +8919,8 @@
         ]
       },
       "banner_image": "/images/upgraded/gcse-med-eee/med_banner_kt1_5_florence_plague_1348.jpg",
-      "enquiry": "Why were medieval communities, doctors, and civic authorities completely powerless to stop the Black Death?"
+      "enquiry": "Why were medieval communities, doctors, and civic authorities completely powerless to stop the Black Death?",
+      "banner_caption": "The Plague of Florence in 1348, as Described in Giovanni Boccaccio’s Decameron (Etching by Luigi Sabatelli, Wellcome Collection): Between 1348 and 1349, bubonic and pneumonic plague killed between one-third and one-half of England’s population."
     },
     {
       "id": "lesson_2_1",
@@ -9007,7 +9107,26 @@
               }
             ]
           }
-        }
+        },
+        "curriculum_link": "KT2 The Medical Renaissance in England (c1500–c1700): Communication and scientific enquiry—Humanism, Gutenberg's printing press, the Royal Society (1660), Philosophical Transactions (1665), and early microscopy. Targets Paper 1 Section B Question 3 Similarity (4m) and Question 4 Causation 'Explain why' (12m).",
+        "hinge_question": "If Robert Hooke and Antony van Leeuwenhoek observed tiny 'animalcules' through microscopes by the 1670s, why did Renaissance doctors still blame disease on miasma and the Four Humours?",
+        "hinge_guidance": "Strong GCSE answers distinguish between seeing microscopic shapes through blurry early glass lenses and proving scientifically that specific microbes cause human disease—a causal leap not achieved until Pasteur (1861) and Koch (1876–83). Catch pupils who assume the Renaissance immediately overthrew humours and cured patients; KT2 was an intellectual and communication revolution ('Nullius in Verba') whose practical bedside payoff arrived generations later.",
+        "misconceptions": [
+          {
+            "misconception": "Believing the printing press and the Royal Society caused doctors to abandon the Four Humours and miasma during the Renaissance.",
+            "correction": "While Gutenberg's press (c1440/Caxton 1476) and the Royal Society's Philosophical Transactions (1665) shattered the Church's monopoly on books and sped up debate, humoral and miasma theories remained the dominant explanations of illness until 1861."
+          },
+          {
+            "misconception": "Thinking Leeuwenhoek's 1670s discovery of 'animalcules' meant Renaissance scientists understood Germ Theory.",
+            "correction": "Seventeenth-century lenses suffered severe chromatic blurring, so 'animalcules' were treated as harmless curiosities in pond water and dental plaque rather than agents of epidemic disease."
+          },
+          {
+            "misconception": "Giving the wrong dates or monarch for the Royal Society by placing it in Tudor England.",
+            "correction": "The Royal Society was founded in London in 1660 and granted its Royal Charter by King Charles II in 1662, over a century after Vesalius's 1543 anatomical work."
+          }
+        ],
+        "send_adaptation": "Use Block 3's Concept Diagram ('Engines of the Medical Renaissance: Four Communication & Science Catalysts') alongside the Visual Story Sheet and Studio Audio read-aloud so learners visualise how printing, Humanism, the Royal Society, and microscopes connected. Structure 12-mark 'Explain why' planning directly from the Workbook Verso 5-Stage Chronological Spine, turning Stages 1, 3, and 4 into three clear causal paragraphs.",
+        "stretch_challenge": "Weigh the technological impact of movable-type printing (c1440) against institutional royal patronage of the Royal Society (1660–62): which catalyst did more to dismantle Galenic scholasticism in Britain?"
       },
       "do_now": {
         "type": "questions",
@@ -10428,7 +10547,7 @@
         "image": "/images/med_banner_kt2_1_printing_press.jpg",
         "alt": "Engraved view inside an early modern Dutch printing workshop showing compositors setting movable metal type from angled cases on the left, a spectacled proofreader, and a pressman pulling the bar of a wooden screw press on the right",
         "position": "center 44%",
-        "caption": "Inside an Early Modern Printing House (Wellcome Collection V0023786): Compositors set movable metal type while pressmen pull the wooden screw press, breaking the medieval Church’s monopoly over hand-copied manuscripts."
+        "caption": "Historical engraving of an early modern Dutch printing workshop, where compositors set movable metal type and pressmen pull a wooden screw press to multiply new anatomical and medical texts."
       },
       "hero_image": "/images/med_banner_kt2_1_printing_press.jpg",
       "card_image": "/images/renaissance_printing_house_stradanus.jpg",
@@ -10543,7 +10662,8 @@
         ]
       },
       "banner_image": "/images/med_banner_kt2_1_printing_press.jpg",
-      "enquiry": "How did the invention of printing and the scientific method challenge 1,500 years of medical orthodoxy?"
+      "enquiry": "How did the invention of printing and the scientific method challenge 1,500 years of medical orthodoxy?",
+      "banner_caption": "Historical engraving of an early modern Dutch printing workshop, where compositors set movable metal type and pressmen pull a wooden screw press to multiply new anatomical and medical texts."
     },
     {
       "id": "lesson_2_2",
@@ -10736,7 +10856,26 @@
               }
             ]
           }
-        }
+        },
+        "curriculum_link": "KT2 The Medical Renaissance in England (c1500–c1700): Continuity and change in clinical care and treatment—Dr Thomas Sydenham, Observationes Medicae (1676), disease classification, cinchona bark, and cool therapy. Targets Paper 1 Section B Question 3 Difference (4m) and Question 4 Causation 'Explain why' (12m).",
+        "hinge_question": "How did Thomas Sydenham's claim that measles and scarlet fever could be classified like plant species deal a fatal blow to medieval humoral diagnosis?",
+        "hinge_guidance": "Strong GCSE answers explain that humoral medicine taught every illness was unique to an individual patient's personal temperament and star sign, whereas Sydenham's 1676 Observationes Medicae proved a specific disease caused the same symptoms in every patient—laying the foundation for targeted cures like Peruvian cinchona bark (quinine) for malaria. Watch for pupils overstating Sydenham's break with the past: he still blamed epidemics on atmospheric miasma and prescribed purging for non-feverish ailments.",
+        "misconceptions": [
+          {
+            "misconception": "Claiming Sydenham discovered bacteria or knew why cinchona bark cured malaria.",
+            "correction": "Sydenham worked empirically from bedside results without any knowledge of microscopic parasites; he still attributed epidemic outbreaks to seasonal changes and corrupt atmospheric miasma."
+          },
+          {
+            "misconception": "Assuming Sydenham's bedside methods immediately replaced bleeding and purging across seventeenth-century England.",
+            "correction": "Conservative Fellows of the Royal College of Physicians resisted Sydenham's rejection of Latin authorities, while ordinary patients continued receiving humoral bleeding, purges, or street quack remedies well into the eighteenth century."
+          },
+          {
+            "misconception": "Thinking the nickname 'English Hippocrates' meant Sydenham merely copied ancient Greek humoral books.",
+            "correction": "He earned that title because he revived Hippocrates' original habit of patient bedside observation and symptom logging rather than relying on library theories."
+          }
+        ],
+        "send_adaptation": "Use the Visual Story Sheet and Studio Audio read-aloud to anchor Sydenham around three memorable contrasts: 'Bedside vs Books', 'Cool Air vs Hot Sweating Blankets' (smallpox), and 'Tree Bark vs Bleeding' (cinchona for malaria). Learners then map these onto the Workbook Verso 5-Stage Chronological Spine to scaffold their 4-mark difference and 12-mark causation answers.",
+        "stretch_challenge": "Why was Sydenham's conceptual leap—viewing diseases as independent species rather than personal humoral imbalances—essential before nineteenth-century bacteriologists like Robert Koch could hunt specific microbes?"
       },
       "do_now": {
         "type": "questions",
@@ -12157,7 +12296,8 @@
         ]
       },
       "banner_image": "/images/med_banner_kt2_2_apothecary_hall.jpg",
-      "enquiry": "How did Thomas Sydenham's focus on direct observation challenge traditional medical practice?"
+      "enquiry": "How did Thomas Sydenham's focus on direct observation challenge traditional medical practice?",
+      "banner_caption": "A Seventeenth-Century Apothecary’s Dispensary (Wellcome Collection): While traditional apothecaries still compounded classical Theriac alongside New World remedies like Peruvian cinchona bark, Dr Thomas Sydenham championed direct bedside observation."
     },
     {
       "id": "lesson_2_3",
@@ -12350,7 +12490,26 @@
               }
             ]
           }
-        }
+        },
+        "curriculum_link": "KT2 The Medical Renaissance in England (c1500–c1700): Andreas Vesalius, Padua human dissections, De Humani Corporis Fabrica (1543), and anatomical training in England. Targets Paper 1 Section B Question 3 Similarity (4m) and Question 4 Causation 'Explain why' (12m).",
+        "hinge_question": "Why did Andreas Vesalius's proof that the human heart's septum has no invisible pores transform anatomical science after 1543 yet save zero patients from infectious disease during the Renaissance?",
+        "hinge_guidance": "Strong GCSE answers separate anatomical knowledge (understanding how the body is built, which paved the way for Harvey's circulation and safer Tudor barber-surgeon training via Thomas Geminus's 1545 London plates) from pathology and therapeutics (curing bacterial fevers or surgical sepsis). Catch the frequent Paper 1 essay mistake where candidates claim Vesalius immediately improved cure rates or stopped doctors using the Four Humours.",
+        "misconceptions": [
+          {
+            "misconception": "Writing that Vesalius's De Humani Corporis Fabrica (1543) immediately cured illnesses and improved Renaissance life expectancy.",
+            "correction": "Correcting over 300 Galenic anatomical errors improved anatomical knowledge and surgical training, but knowing a human jawbone has one bone or a sternum has three segments could not cure plague, smallpox, or wound infection."
+          },
+          {
+            "misconception": "Assuming European university professors welcomed Vesalius's corrections once presented with clear woodcut evidence.",
+            "correction": "Traditional Galenists like Professor Jacobus Sylvius fiercely attacked Vesalius—even claiming human bodies had degenerated since Roman times—driving Vesalius to resign from Padua in 1544."
+          },
+          {
+            "misconception": "Crediting Vesalius alone without linking his impact to Renaissance art and printing technology.",
+            "correction": "Edexcel Paper 1 Demand rewards factor interaction: Vesalius's hands-on dissections only transformed England because Titian's studio artists drew forensic woodcuts, Oporinus printed them in 1543, and Thomas Geminus engraved London editions in 1545."
+          }
+        ],
+        "send_adaptation": "Display Block 3's Concept Diagram ('Overturning 1,400 Years of Galen: Vesalius's Key Anatomical Corrections') alongside the Visual Story Sheet so learners memorise the three concrete corrections (1-bone human jaw vs dog's 2; 3-part sternum vs monkey's 7; solid heart septum with zero pores). Combine Studio Audio read-aloud with the Workbook Verso 5-Stage Chronological Spine so Grade 3–4 learners separate 'Breakthrough' from 'Limits/Backlash' clearly.",
+        "stretch_challenge": "Evaluate how Individual Genius (Vesalius performing his own dissections), Technology (Basel woodblock printing and Geminus's copperplates), and Attitudes (Renaissance art and Henry VIII legalising felon dissections for the Company of Barber-Surgeons) combined to break Galen's anatomical monopoly."
       },
       "do_now": {
         "type": "questions",
@@ -13907,7 +14066,8 @@
         ]
       },
       "banner_image": "/images/upgraded/gcse-med-eee/med_banner_kt2_3_vesalius_dissection.jpg",
-      "enquiry": "Why did Andreas Vesalius succeed in overturning 1,400 years of Galenic anatomical authority?"
+      "enquiry": "Why did Andreas Vesalius succeed in overturning 1,400 years of Galenic anatomical authority?",
+      "banner_caption": "Andreas Vesalius Performing Direct Human Dissection (After Edouard Hamman, Wellcome Collection): By descending from the professorial chair at Padua in 1537 to dissect human corpses himself, Vesalius exposed over 300 errors in Galenic anatomy."
     },
     {
       "id": "lesson_2_4",
@@ -14094,7 +14254,26 @@
               }
             ]
           }
-        }
+        },
+        "curriculum_link": "KT2 The Medical Renaissance in England (c1500–c1700): William Harvey, De Motu Cordis (1628), mechanical proof of blood circulation, and Marcello Malpighi's capillaries (1661). Targets Paper 1 Section B Question 3 Difference (4m) and Question 4 Causation 'Explain why' (12m).",
+        "hinge_question": "If William Harvey proved mathematically in 1628 that the liver did not constantly manufacture fresh blood, why did doctors carry on bleeding feverish patients for another two hundred years?",
+        "hinge_guidance": "Strong GCSE answers explain that proving blood circulated in a closed mechanical loop did not give seventeenth-century doctors an alternative cure for fevers, nor could transfusions work safely before Karl Landsteiner's 1901 discovery of ABO blood groups. Watch for pupils muddling Vesalius (1543, static structure/anatomy) with Harvey (1628, physiological function/movement of blood) in Paper 1 questions—a classic exam slip.",
+        "misconceptions": [
+          {
+            "misconception": "Confusing Andreas Vesalius (anatomy—how organs look) with William Harvey (physiology—how the heart pumps blood).",
+            "correction": "Vesalius mapped static human structures in 1543 (such as disproving septum pores); Harvey proved in De Motu Cordis (1628) that the heart acts as a mechanical pump circulating blood one-way through arteries and veins."
+          },
+          {
+            "misconception": "Thinking Harvey used a microscope to see capillaries connecting arteries and veins.",
+            "correction": "Harvey lacked powerful microscopes and had to rely on cold-blooded frog dissections, forearm ligature tests, and volume calculations; Italian anatomist Marcello Malpighi first saw capillaries in frog lungs using a microscope in 1661."
+          },
+          {
+            "misconception": "Claiming Harvey's discovery enabled successful human blood transfusions or ended bloodletting in the 1600s.",
+            "correction": "Early seventeenth-century sheep-to-human transfusion experiments proved fatal because ABO blood groups were unknown until 1901, and conservative doctors mocked Harvey as a 'circulator' while continuing routine phlebotomy."
+          }
+        ],
+        "send_adaptation": "Pair the Visual Story Sheet (especially the forearm ligature vein test) with Studio Audio read-aloud so learners grasp Harvey's three proofs—slow frog hearts, maths calculation (>500 pints/hour), and one-way arm valves—in plain concrete language. Use the Workbook Verso 5-Stage Chronological Spine to help Grade 3–4 learners structure why Harvey succeeded scientifically (Stages 1–3) yet faced practical limits until Malpighi (Stages 4–5).",
+        "stretch_challenge": "How does the 118-year chain from Vesalius (1543) and Fabricius (venous valves) to Harvey (1628) and Malpighi (1661) demonstrate that scientific progress in physiology depended equally on cumulative collaboration and improved optical technology?"
       },
       "do_now": {
         "type": "questions",
@@ -15555,7 +15734,8 @@
         ]
       },
       "banner_image": "/images/upgraded/gcse-med-eee/med_banner_kt2_4_rcp_london_wellcome.jpg",
-      "enquiry": "Why did William Harvey's discovery of blood circulation meet fierce medical resistance?"
+      "enquiry": "Why did William Harvey's discovery of blood circulation meet fierce medical resistance?",
+      "banner_caption": "The Entrance of the Royal College of Physicians, Warwick Lane, London (Wellcome Collection): As Lumleian Lecturer to the College from 1615, Dr William Harvey demonstrated that the heart acts as a mechanical pump driving blood in a continuous circle."
     },
     {
       "id": "lesson_2_5",
@@ -15742,7 +15922,26 @@
               }
             ]
           }
-        }
+        },
+        "curriculum_link": "KT2 The Medical Renaissance in England (c1500–c1700): Case study—Dealing with the Great Plague in London, 1665 (continuity in treatment vs organised civic prevention). Targets Paper 1 Section B Question 3 Difference (4m) and Question 5/6 Evaluative Essay (16m + 4 SPaG).",
+        "hinge_question": "Why were the Lord Mayor of London's 1665 Plague Orders far better organised than medieval responses in 1348, yet actually counter-productive when authorities slaughtered 200,000 dogs and cats?",
+        "hinge_guidance": "Strong GCSE answers distinguish administrative organisation (paid watchmen enforcing 40-day household quarantines, red crosses, Searchers of the Dead, printed weekly Bills of Mortality, and suburban pest houses) from flawed causal understanding (acting on miasma and fur-contagion fears wiped out the very predators that kept flea-carrying black rats in check). Catch pupils who argue everything changed between 1348 and 1665: bedside cures like pomanders, plague water, prayer, and strapping live plucked pigeons to buboes remained almost identical.",
+        "misconceptions": [
+          {
+            "misconception": "Arguing that the Scientific Revolution (Royal Society 1660, Harvey 1628) produced effective medical cures for the 1665 Great Plague.",
+            "correction": "Even the Royal College of Physicians' official 1665 plague directions relied on humoral bleeding, sweating, theriac, and herbal pomanders, proving Renaissance theoretical science had not yet reached epidemic medicine."
+          },
+          {
+            "misconception": "Claiming national government under King Charles II led hands-on medical care in London during 1665.",
+            "correction": "King Charles II, his court, Parliament, and many wealthy physicians fled London for Oxford and Salisbury; practical enforcement fell to civic and parish officials under the Lord Mayor and Aldermen."
+          },
+          {
+            "misconception": "Writing a one-sided 16-mark essay claiming 1665 responses were EITHER totally different OR totally identical to 1348.",
+            "correction": "GCSE Exam Tip: top-band 16-mark answers separate the strands—showing strong continuity in supernatural/miasma beliefs and sympathetic cures alongside marked progress in local government quarantine enforcement and statistical Bills of Mortality."
+          }
+        ],
+        "send_adaptation": "Display Block 4's Concept Diagram ('Dealing with Plague: 1348 Black Death ↔ 1665 Continuity ↔ 1665 Organised Civic Action') alongside the Visual Story Sheet and Studio Audio read-aloud so learners visually sort 'Stayed the Same' (prayers, pomanders, plucked birds, miasma fires) from 'Changed by 1665' (watchmen, red crosses, pest houses, Bills of Mortality). Anchor essay paragraphs directly to the Workbook Verso 5-Stage Chronological Spine.",
+        "stretch_challenge": "Does the 1665 Great Plague prove that municipal government enforcement is powerless—or even dangerous—whenever state officials act without accurate scientific pathology?"
       },
       "do_now": {
         "type": "questions",
@@ -17243,7 +17442,7 @@
         "image": "/images/edexcel_medicine/kt12/med_l2_5_banner_plague_street_1665_wellcome_v0010608.jpg",
         "alt": "Copperplate engraving titled The Great Plague in London 1665 showing plague victims collapsed in the foreground street with an infant while a horse-drawn dead-cart rolls past shuttered timber-framed London houses and church spires",
         "position": "center 58%",
-        "caption": "The Great Plague in London, 1665 (Copperplate engraving, Wellcome Collection V0010608): Despite organised parish quarantines and red-crossed doors, seventeenth-century Londoners still lacked any understanding of bacteria or rat-flea transmission."
+        "caption": "Eighteenth-century copperplate engraving titled 'The Great Plague in London, 1665', showing stricken victims in the street as a dead-cart carries bodies away during London’s last major bubonic plague epidemic."
       },
       "hero_image": "/images/edexcel_medicine/kt12/med_l2_5_banner_plague_street_1665_wellcome_v0010608.jpg",
       "key_topic": "KT2: c1500–c1700: The Medical Renaissance in England",
@@ -17357,7 +17556,8 @@
         ]
       },
       "banner_image": "/images/edexcel_medicine/kt12/med_l2_5_banner_plague_street_1665_wellcome_v0010608.jpg",
-      "enquiry": "Why did the Great Plague of 1665 reveal the severe limitations of Renaissance medical progress?"
+      "enquiry": "Why did the Great Plague of 1665 reveal the severe limitations of Renaissance medical progress?",
+      "banner_caption": "Eighteenth-century copperplate engraving titled 'The Great Plague in London, 1665', showing stricken victims in the street as a dead-cart carries bodies away during London’s last major bubonic plague epidemic."
     },
     {
       "id": "lesson_3_1",
@@ -17543,7 +17743,26 @@
               }
             ]
           }
-        }
+        },
+        "curriculum_link": "KT3 Medicine in 18th- and 19th-Century Britain (c1700–c1900): Louis Pasteur's Germ Theory (1861), British medical scepticism, and Robert Koch's bacteriology (1876–1883). Targets Paper 1 Section B Question 3 Difference (4m) and Question 4 Causation 'Explain why' (12m).",
+        "hinge_question": "What could Robert Koch prove in Berlin by 1882–83 using solid agar plates and chemical dyes that Louis Pasteur's 1861 swan-neck flasks could not?",
+        "hinge_guidance": "Strong GCSE answers explain that Pasteur's 1861 Germ Theory proved airborne microbes caused decay and fermentation in general (destroying Spontaneous Generation), whereas Koch proved microbial specificity—growing pure bacterial colonies on solid agar and staining them with methyl violet to pinpoint the exact bacterium causing anthrax (1876), tuberculosis (1882), and cholera (1883). Watch for two classic Paper 1 errors: confusing Pasteur and Koch's exact contributions, or assuming Germ Theory instantly produced antibiotic cures in the 1860s (chemical cures did not arrive until Salvarsan 606 in 1909).",
+        "misconceptions": [
+          {
+            "misconception": "Muddling Louis Pasteur and Robert Koch, or crediting Pasteur with identifying human tuberculosis and cholera bacteria.",
+            "correction": "French chemist Pasteur published general Germ Theory in 1861 using swan-neck flasks; German doctor Koch pioneered solid agar plates, aniline stains, and microphotography to isolate specific human disease microbes like TB (1882) and cholera (1883)."
+          },
+          {
+            "misconception": "Assuming British doctors immediately accepted Pasteur's 1861 Germ Theory and dropped miasma overnight.",
+            "correction": "Senior British physicians like Dr Henry Charlton Bastian resisted Pasteur into the late 1870s, dismissing him as a chemist studying sour alcohol until physicist John Tyndall's lectures and Koch's stained photographs proved human bacteriology."
+          },
+          {
+            "misconception": "Thinking Spontaneous Generation meant microbes caused rotting.",
+            "correction": "Spontaneous Generation got cause and effect completely backwards, claiming decaying flesh magically generated harmless microbes as a by-product rather than external microbes causing decay."
+          }
+        ],
+        "send_adaptation": "Open Block 1's Concept Diagram ('Ideas on Disease Causation: Miasma ↔ Germ Theory ↔ Bacteriology') alongside the Visual Story Sheet and Studio Audio read-aloud so learners lock in the three-step progression before tackling dense microbiological terms. Use the Workbook Verso 5-Stage Chronological Spine so Grade 3–4 learners keep Pasteur (Stage 2), Bastian/Tyndall (Stage 3), and Koch (Stages 4–5) in separate, non-confused boxes.",
+        "stretch_challenge": "Evaluate how Franco-German national rivalry, industrial technology (synthetic aniline dyes, Carl Zeiss microscope lenses, microphotography), and individual experimental rigour combined to accelerate bacteriology between 1861 and 1884."
       },
       "do_now": {
         "type": "questions",
@@ -18927,7 +19146,7 @@
         "image": "/images/edexcel_medicine/kt3/med_kt3_l1_banner_pasteur_lab.jpg",
         "alt": "Nineteenth-century wood engraving titled MONSIEUR PASTEUR IN HIS LABORATORY showing Louis Pasteur in a skullcap peering intently through a brass microscope beside a curved swan-neck glass flask and laboratory apparatus",
         "position": "center 38%",
-        "caption": "Louis Pasteur in His Paris Laboratory (\"Monsieur Pasteur in His Laboratory\", Wellcome Collection M0010355): Pasteur peers through his microscope beside a curved swan-neck glass flask—the apparatus that disproved spontaneous generation in 1861."
+        "caption": "Nineteenth-century engraving of Louis Pasteur peering through a microscope beside a curved swan-neck glass flask in his Paris laboratory, where his 1861 experiments disproved spontaneous generation."
       },
       "card_image": "/images/pasteur_actual_flask.jpg",
       "banner_position": "center 38%",
@@ -19102,7 +19321,8 @@
         ]
       },
       "banner_image": "/images/edexcel_medicine/kt3/med_kt3_l1_banner_pasteur_lab.jpg",
-      "enquiry": "Why did it take over two decades for British doctors to accept Louis Pasteur’s Germ Theory?"
+      "enquiry": "Why did it take over two decades for British doctors to accept Louis Pasteur’s Germ Theory?",
+      "banner_caption": "Nineteenth-century engraving of Louis Pasteur peering through a microscope beside a curved swan-neck glass flask in his Paris laboratory, where his 1861 experiments disproved spontaneous generation."
     },
     {
       "id": "lesson_3_2",
@@ -19288,7 +19508,26 @@
               }
             ]
           }
-        }
+        },
+        "curriculum_link": "KT3 Medicine in 18th- and 19th-Century Britain (c1700–c1900): Prevention of disease—Edward Jenner's smallpox vaccination (1796), public/medical opposition, and government Vaccination Acts (1840, 1853, 1871). Targets Paper 1 Section B Question 3 Difference (4m) and Question 5/6 Evaluative Essay (16m + 4 SPaG).",
+        "hinge_question": "Why was Edward Jenner's 1796 cowpox vaccine a triumph that saved millions from smallpox, yet a complete scientific dead end for preventing any other disease for the next eighty years?",
+        "hinge_guidance": "Strong GCSE answers identify that Jenner proved empirically on James Phipps that cowpox gave immunity against smallpox, yet because he worked 65 years before Pasteur's 1861 Germ Theory he could not explain how vaccination worked biologically—and no other human killer happened to have a convenient mild animal twin like cowpox. Catch two high-frequency Paper 1 slips: placing Jenner (1796) in the Renaissance instead of KT3 (c1700–c1900), and confusing dangerous 18th-century variolation/inoculation (live smallpox pus) with Jenner's safe vaccination (mild cowpox).",
+        "misconceptions": [
+          {
+            "misconception": "Placing Edward Jenner (1796) in the Medical Renaissance (c1500–c1700) or confusing inoculation with vaccination.",
+            "correction": "Jenner belongs strictly to KT3 (c1700–c1900). Earlier 18th-century variolation/inoculation (Montagu 1721 / Suttonian method) used live smallpox matter that could kill patients or start epidemics, whereas Jenner's 1796 vaccination used harmless cowpox."
+          },
+          {
+            "misconception": "Assuming people only opposed Jenner's vaccine out of ignorant superstition about turning into cows.",
+            "correction": "Alongside Gillray's 1802 cartoon and religious objections to animal matter, variolators opposed losing lucrative fees, the Royal Society doubted a method with no scientific explanation, and working-class families resented state fines under the 1853 and 1871 Compulsory Acts."
+          },
+          {
+            "misconception": "Claiming the 1853 Compulsory Vaccination Act immediately wiped out smallpox because every parent obeyed.",
+            "correction": "The 1853 Act lacked strict local enforcement; smallpox deaths only plummeted decisively after the 1871 Vaccination Act forced Poor Law Guardians to appoint paid Vaccination Officers to fine non-compliant parents."
+          }
+        ],
+        "send_adaptation": "Project Block 4's Concept Diagram ('Government & Smallpox Vaccination (1802–1898): From Grants to Compulsion') alongside the Visual Story Sheet and Studio Audio read-aloud so learners track the shift from £30,000 grants (1802/1807) to Free (1840), Compulsory (1853), and Enforced (1871). Pair this with the Workbook Verso 5-Stage Chronological Spine so Grade 3–4 learners clearly distinguish variolation (Stage 1) from vaccination (Stage 2).",
+        "stretch_challenge": "Why did Parliament vote £30,000 to Jenner by 1807 and compel infant vaccination in 1853–71 at the very same time Victorian politicians invoked laissez-faire to resist national sanitary reform until 1875?"
       },
       "do_now": {
         "type": "questions",
@@ -20832,7 +21071,8 @@
         ]
       },
       "banner_image": "/images/edexcel_medicine/kt3/med_kt3_l2_banner_jenner_board.jpg",
-      "enquiry": "Why did Edward Jenner’s smallpox vaccine face ferocious opposition despite proving scientifically successful?"
+      "enquiry": "Why did Edward Jenner’s smallpox vaccine face ferocious opposition despite proving scientifically successful?",
+      "banner_caption": "Dr Edward Jenner Vaccinating Eight-Year-Old James Phipps, 14 May 1796 (Oil painting by Ernest Board, Wellcome Collection): Using cowpox matter from dairymaid Sarah Nelmes’s hand, Jenner proved empirically that cowpox conferred immunity against lethal smallpox."
     },
     {
       "id": "lesson_3_3",
@@ -21018,7 +21258,26 @@
               }
             ]
           }
-        }
+        },
+        "curriculum_link": "KT3 Medicine in 18th- and 19th-Century Britain (c1700–c1900): Improvements in hospital care and nursing—Florence Nightingale at Scutari (1854), Notes on Nursing/Hospitals (1859), Pavilion Plan design, St Thomas' Training School (1860), and Mary Seacole. Targets Paper 1 Section B Question 3 Difference (4m) and Question 4 Causation 'Explain why' (12m).",
+        "hinge_question": "How did Florence Nightingale slash mortality at Scutari from 42 percent to 2 percent and redesign Victorian Pavilion hospitals when she still believed disease was spread by miasma rather than germs?",
+        "hinge_guidance": "Strong GCSE answers explain the productive irony at the heart of mid-Victorian reform: scrubbing wards, boiling sheets, unblocking sewers, and building separate cross-ventilated Pavilion wings with washable tiled walls were designed to banish foul miasma, yet physically removed bacterial contamination and cross-infection anyway. Watch for pupils claiming Nightingale used Pasteur's Germ Theory in 1854 (Pasteur did not publish until 1861, and Nightingale initially doubted Germ Theory!) or conflating Mary Seacole's frontline Crimean 'British Hotel' care with Nightingale's permanent institutional reform of UK nurse training.",
+        "misconceptions": [
+          {
+            "misconception": "Writing that Florence Nightingale cleaned Scutari Hospital in 1854 because she understood Pasteur's Germ Theory.",
+            "correction": "Pasteur published Germ Theory in 1861, seven years after Scutari. Nightingale acted on miasma theory—demanding pure air, clean water, drainage, cleanliness, and light—which eliminated deadly bacteria in practice despite the older theory."
+          },
+          {
+            "misconception": "Limiting Nightingale's historical significance to holding a lamp and comforting wounded Crimean soldiers.",
+            "correction": "Edexcel Paper 1 Demand focuses on her long-term UK institutional impact after 1856: statistical Coxcomb charts persuading Parliament, Pavilion Plan hospital architecture (Notes on Hospitals, 1859), and professionalising nurses via the £44,000 Nightingale School at St Thomas' (1860)."
+          },
+          {
+            "misconception": "Treating Florence Nightingale and Mary Seacole's roles as interchangeable.",
+            "correction": "Seacole self-funded the frontline 'British Hotel' near Balaclava to nurse sick and wounded troops directly with herbal remedies, whereas Nightingale reformed military hospital administration at Scutari and institutionalised British hospital nursing."
+          }
+        ],
+        "send_adaptation": "Use Block 5's Concept Diagram ('Transforming Nursing & Wards: Nightingale, Seacole & Pavilion Design') with the Visual Story Sheet and Studio Audio read-aloud so learners contrast pre-1850 'Betsy Prig' squalor against clean Pavilion wards visually. Scaffold 12-mark 'Explain why' paragraphs directly from the Workbook Verso 5-Stage Chronological Spine (Crimean sanitation, statistical publications, Pavilion design, St Thomas' nurse training).",
+        "stretch_challenge": "Assess how War (Crimean War media reporting in The Times), Individual Leadership (Nightingale's statistical lobbying), and Public Philanthropy (the £44,000 Nightingale Fund) interacted to transform Victorian hospitals before bacteriology was accepted."
       },
       "do_now": {
         "type": "questions",
@@ -22335,7 +22594,7 @@
         "image": "/images/edexcel_medicine/kt3/med_kt3_l3_banner_nightingale_scutari_arrival.jpg",
         "alt": "Panoramic nineteenth-century engraving by Samuel Bellin after Jerry Barrett showing Florence Nightingale standing beneath the stone archway of the Barrack Hospital at Scutari welcoming wounded Crimean War soldiers overlooking the Bosphorus",
         "position": "center 58%",
-        "caption": "The Mission of Mercy — Florence Nightingale Receiving Wounded Soldiers at Scutari Hospital (Samuel Bellin after Jerry Barrett, 1857, Wellcome Collection V0006854): Arriving in November 1854 with thirty-eight nurses, Nightingale transformed ward hygiene, laundry, and ventilation."
+        "caption": "Samuel Bellin’s 1857 engraving after Jerry Barrett’s The Mission of Mercy, depicting Florence Nightingale receiving wounded Crimean War soldiers at Scutari Barrack Hospital, where her nurses transformed ward hygiene."
       },
       "card_image": "/images/edexcel_medicine/kt3/med_kt3_l3_b1_scutari_ward_simpson.jpg",
       "hero_image": "/images/edexcel_medicine/kt3/med_kt3_l3_banner_nightingale_scutari_arrival.jpg",
@@ -22511,7 +22770,8 @@
         ]
       },
       "banner_image": "/images/edexcel_medicine/kt3/med_kt3_l3_banner_nightingale_scutari_arrival.jpg",
-      "enquiry": "How did nursing pioneers and sanitary reform transform 19th-century hospital care?"
+      "enquiry": "How did nursing pioneers and sanitary reform transform 19th-century hospital care?",
+      "banner_caption": "Samuel Bellin’s 1857 engraving after Jerry Barrett’s The Mission of Mercy, depicting Florence Nightingale receiving wounded Crimean War soldiers at Scutari Barrack Hospital, where her nurses transformed ward hygiene."
     },
     {
       "id": "lesson_3_4",
@@ -22697,7 +22957,26 @@
               }
             ]
           }
-        }
+        },
+        "curriculum_link": "KT3 Medicine in 18th- and 19th-Century Britain (c1700–c1900): The surgical revolution—James Simpson and chloroform (1847), the 'Black Period' of surgery, Joseph Lister and carbolic acid (1865), and aseptic theatres (1890s). Targets Paper 1 Section B Question 3 Similarity (4m) and Question 4 Causation 'Explain why' (12m).",
+        "hinge_question": "Why did surgical death rates actually rise during the 'Black Period of Surgery' (1846–1865) right after James Simpson's chloroform conquered operating-table pain?",
+        "hinge_guidance": "Strong GCSE answers identify the causal paradox: once unconscious patients no longer suffered fatal pain shock, surgeons slowed down from 30-second surface amputations to attempt deep, prolonged internal operations—while still wearing blood-stiffened coats and probing wounds with unwashed hands before Lister introduced carbolic antisepsis in 1865. Catch pupils who confuse anaesthetics (pain relief: ether, chloroform) with antiseptics (killing germs in the wound: Lister's carbolic spray) and aseptic surgery (excluding germs entirely from the theatre via steam autoclaves, gloves, and masks by c1900).",
+        "misconceptions": [
+          {
+            "misconception": "Confusing anaesthetics, antiseptics, and aseptic surgery—or claiming chloroform reduced post-operative infection.",
+            "correction": "Anaesthetics (Simpson's 1847 chloroform) stopped pain; antiseptics (Lister's 1865 carbolic acid) killed microbes inside wounds, cutting mortality from 46% to 15%; aseptic surgery (late 1880s–90s) kept germs out altogether using 140°C steam autoclaves, rubber gloves, and masks."
+          },
+          {
+            "misconception": "Assuming surgeons opposed chloroform and carbolic spray solely out of stubborn stupidity.",
+            "correction": "Early chloroform overdoses killed patients (such as Hannah Greener in 1848) before John Snow's inhaler controlled dosage and Queen Victoria used it in 1853, while Lister's caustic carbolic spray cracked surgeons' hands, slowed operations, and rested on Pasteur's still-disputed Germ Theory."
+          },
+          {
+            "misconception": "Thinking nineteenth-century surgeons solved all three barriers to surgery—pain, infection, and blood loss—by 1900.",
+            "correction": "While chloroform conquered pain and aseptic theatres conquered infection by 1900, safe blood transfusions to solve catastrophic blood loss were impossible until Landsteiner discovered ABO blood groups in 1901 and sodium citrate storage developed in WWI (KT4/KT5)."
+          }
+        ],
+        "send_adaptation": "Demonstrate Block 5's interactive Slide Compare diagram alongside the Visual Story Sheet and Studio Audio read-aloud so learners visually contrast messy pre-modern/carbolic operating rooms with spotless 1890s aseptic theatres. Have Grade 3–4 learners lock in the sequence—Pain Shock -> Chloroform (1847) -> Black Period -> Lister's Carbolic (1865) -> Aseptic Theatre—using the Workbook Verso 5-Stage Chronological Spine.",
+        "stretch_challenge": "To what extent was Joseph Lister's 1865 surgical breakthrough an achievement of individual clinical courage versus a direct spin-off of Louis Pasteur's 1861 Germ Theory and industrial coal-tar chemistry?"
       },
       "do_now": {
         "type": "questions",
@@ -24015,7 +24294,7 @@
         "image": "/images/edexcel_medicine/kt3/med_kt3_l4_banner_liston_ether_1846.jpg",
         "alt": "Panoramic painting by Ernest Board depicting surgeon Robert Liston in white shirt-sleeves holding an amputation knife beside an ether inhaler bottle at University College Hospital on 21 December 1846 while medical students including young Joseph Lister watch from the gallery",
         "position": "center 34%",
-        "caption": "Europe’s First Public Operation Under Anaesthetic — University College Hospital, London (21 December 1846, by Ernest Board, Wellcome Collection M0005603): Robert Liston amputates a butler’s leg using William Squire’s ether inhaler while a young Joseph Lister watches from the packed gallery."
+        "caption": "Ernest Board’s painting of Robert Liston performing Europe’s first public operation under ether anaesthetic at University College Hospital, London (21 December 1846), watched from the packed surgical gallery."
       },
       "card_image": "/images/lister_carbolic_spray_apparatus.jpg",
       "hero_image": "/images/edexcel_medicine/kt3/med_kt3_l4_banner_liston_ether_1846.jpg",
@@ -24190,7 +24469,8 @@
         ]
       },
       "banner_image": "/images/edexcel_medicine/kt3/med_kt3_l4_banner_liston_ether_1846.jpg",
-      "enquiry": "How did 19th-century surgeons overcome the twin killers of pain and infection?"
+      "enquiry": "How did 19th-century surgeons overcome the twin killers of pain and infection?",
+      "banner_caption": "Ernest Board’s painting of Robert Liston performing Europe’s first public operation under ether anaesthetic at University College Hospital, London (21 December 1846), watched from the packed surgical gallery."
     },
     {
       "id": "lesson_3_5",
@@ -24376,7 +24656,26 @@
               }
             ]
           }
-        }
+        },
+        "curriculum_link": "KT3 Medicine in 18th- and 19th-Century Britain (c1700–c1900): Public health and cholera—Edwin Chadwick (1842), 1848 Public Health Act, John Snow and the Broad Street pump (1854), the Great Stink and Bazalgette's sewers (1858–65), and the compulsory 1875 Public Health Act. Targets Paper 1 Section B Question 3 Difference (4m) and Question 5/6 Evaluative Essay (16m + 4 SPaG).",
+        "hinge_question": "If John Snow proved statistically in 1854 that cholera spread through sewage-polluted water rather than miasma, why did it take the 1858 Great Stink—a smell—to make Parliament fund Joseph Bazalgette's London sewers?",
+        "hinge_guidance": "Strong GCSE answers explain that Snow had no microscope proof of the cholera bacterium (isolated by Koch in 1883), so the General Board of Health clung to miasma and laissez-faire cost objections—until the intolerable stench of the Thames invaded MPs' own riverside chambers in July 1858, prompting £3 million for Bazalgette's intercepting sewers for the wrong scientific reason (miasma) with the right practical result (clean water). Watch for pupils confusing the weak, permissive 1848 Public Health Act (optional local boards) with Disraeli's compulsory 1875 Public Health Act.",
+        "misconceptions": [
+          {
+            "misconception": "Claiming John Snow discovered the cholera bacterium under a microscope in 1854 or immediately persuaded the government to pass the 1875 Public Health Act.",
+            "correction": "Snow used street spot-mapping, outlier cases (Lion Brewery), and the Southwark vs Lambeth water-company table to prove cholera was waterborne in 1854–55, but the General Board of Health rejected his theory; Robert Koch isolated Vibrio cholerae in 1883."
+          },
+          {
+            "misconception": "Treating the 1848 and 1875 Public Health Acts as equally effective.",
+            "correction": "The 1848 Act was permissive (voluntary unless local death rates exceeded 23 per 1,000), leaving most ratepayers to block costly drains; the 1875 Act was compulsory nationwide, forcing every council to provide sewers, clean piped water, and Medical Officers of Health."
+          },
+          {
+            "misconception": "Overlooking political reform when explaining why laissez-faire ended in 1875.",
+            "correction": "GCSE Exam Tip: pair Pasteur's 1861 Germ Theory with the 1867 Second Reform Act, which gave urban working-class men the vote and forced politicians to legislate for clean slum water and sanitation."
+          }
+        ],
+        "send_adaptation": "Display Block 5's Concept Diagram ('Government & Sanitation (1800–1875): Laissez-Faire ↔ 1848 Permissive ↔ 1875 Compulsory') alongside the Visual Story Sheet (Broad Street spot map and Father Thames cartoon) and Studio Audio read-aloud. Guide learners along the Workbook Verso 5-Stage Chronological Spine so they weigh Snow against Chadwick, the 1858 Great Stink/Bazalgette, Germ Theory, and 1867 working-class voting rights in their 16-mark essay.",
+        "stretch_challenge": "Evaluate the claim that nineteenth-century British public health advanced primarily when middle-class ratepayers and MPs felt personally threatened (the 1858 Great Stink) or electorally pressured (1867 Reform Act), rather than in response to medical evidence."
       },
       "do_now": {
         "type": "questions",
@@ -25855,7 +26154,7 @@
         "image": "/images/edexcel_medicine/kt3/med_kt3_l5_banner_metropolis_main_drainage.jpg",
         "alt": "Cutaway engineering engraving from The Illustrated London News (22 June 1867) titled SECTION OF THE THAMES EMBANKMENT, 1867 showing Sir Joseph Bazalgette’s subterranean brick Low-Level Intercepting Sewer, pipe subway, and underground railway beneath the river wall",
         "position": "center 48%",
-        "caption": "Cutaway Engineering Section of Sir Joseph Bazalgette’s Thames Embankment & Low-Level Intercepting Sewer (The Illustrated London News, 22 June 1867, Wellcome Collection M0010346): Built after the 1858 Great Stink to carry London’s sewage safely downstream away from drinking-water intakes."
+        "caption": "Cutaway engineering engraving from The Illustrated London News (22 June 1867) showing Sir Joseph Bazalgette’s Thames Embankment and low-level intercepting sewer built after the 1858 Great Stink."
       },
       "card_image": "/images/edexcel_medicine/kt3/med_kt3_l5_b3_bazalgette_old_ford_sewers.jpg",
       "hero_image": "/images/edexcel_medicine/kt3/med_kt3_l5_banner_metropolis_main_drainage.jpg",
@@ -26030,7 +26329,8 @@
         ]
       },
       "banner_image": "/images/edexcel_medicine/kt3/med_kt3_l5_banner_metropolis_main_drainage.jpg",
-      "enquiry": "Why did the British government abandon its laissez-faire policy to pass the compulsory 1875 Public Health Act?"
+      "enquiry": "Why did the British government abandon its laissez-faire policy to pass the compulsory 1875 Public Health Act?",
+      "banner_caption": "Cutaway engineering engraving from The Illustrated London News (22 June 1867) showing Sir Joseph Bazalgette’s Thames Embankment and low-level intercepting sewer built after the 1858 Great Stink."
     },
     {
       "id": "lesson_4_1",
@@ -26177,7 +26477,26 @@
               }
             ]
           }
-        }
+        },
+        "curriculum_link": "KT4 Medicine in Modern Britain (c1900–present): Genetic explanations of disease—Mendel's laws, Rosalind Franklin's Photograph 51 (1952), Watson and Crick's DNA double helix (1953), the Human Genome Project (1990–2003), and the 'treatment gap'. Targets Paper 1 Section B Question 3 Difference (4m) and Question 4 Causation 'Explain why' (12m).",
+        "hinge_question": "Why do historians compare Watson and Crick's 1953 discovery of DNA's double helix to Vesalius's 1543 anatomy—a giant leap in understanding disease causation that created a stubborn 'treatment gap'?",
+        "hinge_guidance": "Strong GCSE answers explain that unlocking DNA (1953) and mapping all 3 billion base pairs in the Human Genome Project (1990–2003) revealed the non-microbial root of hereditary disorders like cystic fibrosis, sickle cell anaemia, and BRCA1/2 breast cancer, transforming genetic screening and preventative choices (such as preventative mastectomy), yet gene therapy to cure faulty chromosomes inside living patients remains rare and expensive. Catch pupils who think DNA replaced Germ Theory; DNA explained inherited conditions that Germ Theory could never account for.",
+        "misconceptions": [
+          {
+            "misconception": "Crediting Watson and Crick as lone geniuses who discovered DNA through wet test-tube experiments without wider technology or teammates.",
+            "correction": "Watson and Crick built physical models at Cambridge using vital X-ray crystallography measurements from Rosalind Franklin and Raymond Gosling's Photograph 51 (1952) at King's College London, shown to them by Maurice Wilkins."
+          },
+          {
+            "misconception": "Claiming the Human Genome Project (1990–2003) enabled doctors to cure genetic diseases like cystic fibrosis or Down's syndrome routinely.",
+            "correction": "Mapping ~25,000 human genes revolutionised diagnosis and risk screening (such as BRCA1/2 testing), but altering faulty DNA across millions of living human cells—gene therapy—remains largely experimental, creating a clear 'treatment gap'."
+          },
+          {
+            "misconception": "Confusing bacterial/viral infections (caused by external pathogens) with genetic disorders (inherited via faulty DNA).",
+            "correction": "Antibiotics and vaccines target external microbes identified since Pasteur and Koch; genetics explains internal hereditary conditions passed from parents to children."
+          }
+        ],
+        "send_adaptation": "Project Block 5's Concept Diagram ('Genetics Breakthroughs vs The Treatment Gap (1953–Present)') with the Visual Story Sheet and Studio Audio read-aloud so learners see clearly what DNA CAN do today (spot faulty genes, BRCA1/2 screening) versus what it CANNOT easily do yet (routine gene-therapy cures). Use the Workbook Verso 5-Stage Chronological Spine to structure three Big Science/Technology paragraphs for the 12-mark causation question.",
+        "stretch_challenge": "How does the shift from Watson, Crick, Franklin, and Wilkins (1951–53) to the Human Genome Project (1990–2003) illustrate the transition of modern medical discovery from small university teams to publicly funded international 'Big Science' powered by supercomputing?"
       },
       "fun_facts": [
         "If unwound and tied end-to-end, the DNA inside a single human cell would stretch approximately six feet long, yet it is packed into a nucleus smaller than a pinpoint.",
@@ -27603,7 +27922,7 @@
         "image": "/images/edexcel_medicine/kt4/med_kt4_1_banner_dna_sequencing_nci.jpg",
         "alt": "Two National Cancer Institute genetic researchers in laboratory coats examining dark vertical base-pair bands on illuminated X-ray DNA sequencing autoradiograph gels mounted on a lightbox",
         "position": "center 38%",
-        "caption": "Reading the Genetic Code: National Cancer Institute researchers inspect X-ray autoradiograph DNA sequencing gel columns, tracing the chemical sequence of adenine, thymine, cytosine, and guanine base pairs (Linda Bartlett, National Cancer Institute, NIH ID 2018)."
+        "caption": "National Cancer Institute researchers inspecting backlit X-ray autoradiograph DNA sequencing columns (late twentieth century), reading the chemical base-pair code first unlocked by Crick, Watson, Franklin, and Wilkins in 1953."
       },
       "hero_image": "/images/edexcel_medicine/kt4/med_kt4_1_banner_dna_sequencing_nci.jpg",
       "banner_position": "center 38%",
@@ -27723,7 +28042,8 @@
         ]
       },
       "banner_image": "/images/edexcel_medicine/kt4/med_kt4_1_banner_dna_sequencing_nci.jpg",
-      "enquiry": "How did unlocking the double helix and mapping the human genome revolutionise our understanding of disease causation?"
+      "enquiry": "How did unlocking the double helix and mapping the human genome revolutionise our understanding of disease causation?",
+      "banner_caption": "National Cancer Institute researchers inspecting backlit X-ray autoradiograph DNA sequencing columns (late twentieth century), reading the chemical base-pair code first unlocked by Crick, Watson, Franklin, and Wilkins in 1953."
     },
     {
       "id": "lesson_4_2",
@@ -27871,7 +28191,26 @@
               }
             ]
           }
-        }
+        },
+        "curriculum_link": "KT4 Medicine in Modern Britain (c1900–present): Lifestyle explanations of disease (smoking, diet, alcohol) and high-tech non-invasive diagnosis (X-rays, blood labs, endoscopes, CT and MRI scans). Targets Paper 1 Section B Question 3 Difference (4m) and Question 5/6 Evaluative Essay (16m + 4 SPaG).",
+        "hinge_question": "Why did chronic lifestyle illnesses like heart disease, stroke, and cancer overtake infectious epidemics as Britain's biggest killers after 1950—and how did that shift change the role of both hospital scanners and government?",
+        "hinge_guidance": "Strong GCSE answers spot the demographic link: clean water, vaccines, and antibiotics curbed bacterial killers like TB and cholera, raising British life expectancy past 75 so people lived long enough to develop non-infectious conditions driven by smoking, sugar-rich diets, alcohol, and inactivity. Catch pupils who confuse diagnostic technology (CT, MRI, fibre-optic endoscopes, blood tests—finding what is wrong inside the body without open exploratory surgery) with curative treatment (surgery, radiotherapy, drugs) in Paper 1 questions!",
+        "misconceptions": [
+          {
+            "misconception": "Writing about CT scans, MRI scans, and X-rays as 'treatments' or 'cures' in a Paper 1 treatment question.",
+            "correction": "GCSE Exam Tip: X-rays (Röntgen 1895), endoscopes, CT scanners (Hounsfield 1971), and MRI scans (1980s) are strictly DIAGNOSTIC tools that locate fractures, bleeds, or tumours safely without exploratory surgery; they do not cure the illness by themselves."
+          },
+          {
+            "misconception": "Assuming conventional 1895 X-rays could already spot soft-tissue brain tumours and early internal cancers clearly.",
+            "correction": "Standard 2D X-rays imaged dense bone and metal shrapnel well, whereas soft organs remained hidden in shadow until Godfrey Hounsfield's computerised 3D CT scanner (1971) and radiation-free magnetic MRI scans (1980s)."
+          },
+          {
+            "misconception": "Thinking lifestyle factors only became recognized in the 2000s or were tackled purely through polite NHS posters.",
+            "correction": "Epidemiological links grew from the 1950s–70s, and because chronic disease costs strained the NHS, governments escalated from education (Change4Life) to taxation (Soft Drinks Industry Levy) and legal compulsion (1983 seatbelts, 2007 indoor smoking ban)."
+          }
+        ],
+        "send_adaptation": "Display Block 3's Concept Diagram ('Modern Non-Invasive Diagnostics (1895–Present)') alongside the Visual Story Sheet and Studio Audio read-aloud so learners match each tool to what it sees inside the body (X-ray = bones; Endoscope = camera down throat/gut; CT/MRI = 3D soft organs/brain). Anchor 16-mark essay planning onto the Workbook Verso 5-Stage Chronological Spine, balancing high-tech diagnosis (Stages 1–3) against lifestyle prevention (Stages 4–5).",
+        "stretch_challenge": "Compare Victorian miasma/regimen anxieties with late-twentieth-century lifestyle epidemiology: in what ways do modern preventative campaigns echo the medieval Regimen Sanitatis, and how have statistical science and statutory compulsion transformed their effectiveness?"
       },
       "fun_facts": [
         "Wilhelm Röntgen refused to patent X-rays or name them after himself because he believed scientific discoveries belonged freely to all humanity.",
@@ -29413,7 +29752,8 @@
         ]
       },
       "banner_image": "/images/med_banner_kt4_2_ct_diagnostic_suite.jpg",
-      "enquiry": "How did the shift toward lifestyle diseases and the rise of diagnostic scanning transform 20th-century medicine?"
+      "enquiry": "How did the shift toward lifestyle diseases and the rise of diagnostic scanning transform 20th-century medicine?",
+      "banner_caption": "Non-Invasive 3D Clinical Imaging: A hospital CT control console displays four axial cross-sectional scans while a radiographer prepares a patient inside the rotating scanner gantry behind leaded observation glass."
     },
     {
       "id": "lesson_4_3",
@@ -29421,7 +29761,7 @@
         "image": "/images/upgraded/gcse-med-eee/med_banner_kt4_3_st_barts_ward_nurses.jpg",
         "alt": "Uniformed hospital nurses in starched white aprons and caps standing beside iron patient beds in a spacious brick-pillared ward at St Bartholomew’s Hospital, London (c. 1908)",
         "position": "center 44%",
-        "caption": "Early Twentieth-Century Hospital Nursing Care: Uniformed nurses tend iron beds in a clean ward at St Bartholomew’s Hospital, London (c. 1908, Wellcome Collection V0028973) — one of Britain’s historic voluntary hospitals later integrated into the National Health Service in July 1948."
+        "caption": "Uniformed nurses tending a ward at St Bartholomew’s Hospital, London (c. 1908), one of Britain’s voluntary hospitals later brought into the free National Health Service in July 1948."
       },
       "banner_position": "center 44%",
       "title": "KT4.3: The Search for Magic Bullets, High-Tech Treatments & The Birth of the NHS (1909–1948)",
@@ -29567,7 +29907,26 @@
               }
             ]
           }
-        }
+        },
+        "curriculum_link": "KT4 Medicine in Modern Britain (c1900–present): Chemical 'magic bullets' (Salvarsan 606, Prontosil/sulphonamides), the Beveridge Report (1942), Aneurin Bevan and the launch of the NHS (1948), and high-tech hospital treatments. Targets Paper 1 Section B Question 3 Difference (4m) and Question 5/6 Evaluative Essay (16m + 4 SPaG).",
+        "hinge_question": "Why did over 90 percent of British doctors in the BMA initially oppose Aneurin Bevan's National Health Service before July 1948—and why did free access alone still rely on breakthroughs like magic bullets and antibiotics to save lives?",
+        "hinge_guidance": "Strong GCSE answers explain both politics and clinical science: doctors feared becoming salaried civil servants losing private income until Bevan 'stuffed their mouths with gold' via GP capitation payments and private consultant pay-beds in NHS hospitals; meanwhile, free universal access dismantled pre-1948 financial inequality (where the 1911 National Insurance Act covered insured male workers but left many women, children, and older people out), yet hospitals only cured patients because chemical magic bullets (Salvarsan 606 in 1909; Prontosil/sulphonamides in 1932–35), penicillin, and later high-tech surgery (dialysis, Charnley's 1962 hip replacements) existed to deliver inside them.",
+        "misconceptions": [
+          {
+            "misconception": "Confusing synthetic chemical 'magic bullets' (Salvarsan 606 and Prontosil) with natural mould-derived antibiotics like penicillin.",
+            "correction": "Paul Ehrlich and Sahachiro Hata's Salvarsan 606 (1909, for syphilis) and Gerhard Domagk's Prontosil red dye (1932/1935, active ingredient sulphonamide) were man-made chemical compounds, whereas penicillin (KT4.4) was the first true antibiotic derived from living Penicillium mould."
+          },
+          {
+            "misconception": "Claiming nobody in Britain received state-supported medical care before 5 July 1948.",
+            "correction": "Lloyd George's 1911 National Insurance Act gave low-paid employed men access to a panel GP, and WWII created the Emergency Medical Service—but millions of uninsured wives, children, and elderly citizens still faced doctor bills before the 1948 NHS made care universal and free at the point of delivery."
+          },
+          {
+            "misconception": "Assuming the NHS solved healthcare challenges permanently without creating financial strain.",
+            "correction": "Clinical success—rising life expectancy plus costly kidney dialysis, organ transplants, keyhole microsurgery, and pharmaceuticals—created acute NHS budget pressures from the 1950s to the present."
+          }
+        ],
+        "send_adaptation": "Use Block 5's Concept Diagram ('High-Tech Modern Hospital Treatments & Escalating NHS Costs') alongside the Visual Story Sheet and Studio Audio read-aloud so learners grasp both the 1948 access breakthrough and why modern high-tech care costs billions. Sequence the Workbook Verso 5-Stage Chronological Spine so Grade 3–4 learners separate Chemical Cures (Stages 1–2) from Welfare Access (Stages 3–4) and High-Tech Surgery (Stage 5) in their 16-mark essay.",
+        "stretch_challenge": "Weigh the founding of the NHS (1948) against the pharmacological revolution (magic bullets and antibiotics): which transformed working-class survival rates in post-war Britain more decisively, universal state access or effective antimicrobial drugs?"
       },
       "fun_facts": [
         "Compound 606 (Salvarsan) had actually been tested and discarded as ineffective in 1907; it was only when Sahachiro Hata painstakingly retested every single sample in 1909 that its cure for syphilis was discovered.",
@@ -31127,7 +31486,8 @@
         ]
       },
       "banner_image": "/images/upgraded/gcse-med-eee/med_banner_kt4_3_st_barts_ward_nurses.jpg",
-      "enquiry": "How did synthetic magic bullets and the foundation of the NHS dismantle medical inequality in Britain?"
+      "enquiry": "How did synthetic magic bullets and the foundation of the NHS dismantle medical inequality in Britain?",
+      "banner_caption": "Uniformed nurses tending a ward at St Bartholomew’s Hospital, London (c. 1908), one of Britain’s voluntary hospitals later brought into the free National Health Service in July 1948."
     },
     {
       "id": "lesson_4_4",
@@ -31275,7 +31635,26 @@
               }
             ]
           }
-        }
+        },
+        "curriculum_link": "KT4 Medicine in Modern Britain (c1900–present): Case study 1—The development and mass production of penicillin: Alexander Fleming (1928–29), Howard Florey, Ernst Chain and the Oxford team (1938–41), US wartime deep-tank production (1941–44), and MRSA resistance. Targets Paper 1 Section B Question 3 Similarity (4m) and Question 4 Causation 'Explain why' (12m).",
+        "hinge_question": "If Alexander Fleming spotted Penicillium mould dissolving staphylococcus bacteria in 1928, why did policeman Albert Alexander still die in February 1941—and what finally produced 2.3 million doses for D-Day in 1944?",
+        "hinge_guidance": "Strong GCSE answers demolish the 'Fleming lone-hero myth': Fleming observed the mould halo by chance in 1928 but lacked the biochemistry team and funding to purify unstable penicillin; Florey, Chain, and Norman Heatley proved its curative power in mice (1940) and on Albert Alexander (1941, even recycling his urine before supplies ran out); and only Second World War urgency—US government funding after Pearl Harbor plus Peoria corn-steep liquor and pharmaceutical deep-tank fermentation—achieved industrial mass production by 1944.",
+        "misconceptions": [
+          {
+            "misconception": "Writing that Alexander Fleming invented, purified, and mass-produced injectable penicillin tablets in 1928.",
+            "correction": "Fleming discovered the antibacterial mould juice in 1928 and published in 1929, but could not stabilise or purify it for internal human medicine; Howard Florey, Ernst Chain, and Norman Heatley turned it into an injectable drug at Oxford in 1938–41."
+          },
+          {
+            "misconception": "Thinking Albert Alexander died in February 1941 because penicillin failed to work on humans.",
+            "correction": "Alexander rallied dramatically from fatal septicaemia once injected, proving penicillin worked brilliantly in humans; he died solely because Oxford's improvised bedpan-and-milk-churn brew ran out of supply."
+          },
+          {
+            "misconception": "Crediting British factories for wartime mass production of penicillin.",
+            "correction": "Britain's chemical industry was tied up with explosives under Blitz bombing, so Florey and Heatley took penicillin to Peoria, Illinois in July 1941, where US government grants and Pfizer/pharmaceutical deep-fermentation tanks delivered 2.3 million doses by D-Day."
+          }
+        ],
+        "send_adaptation": "Pair the Visual Story Sheet and Studio Audio read-aloud to teach penicillin as a clear three-relay-runner story: Runner 1 Fleming spots the mould (1928) -> Runner 2 Florey, Chain & Heatley purify and test on mice/Albert Alexander (1938–41) -> Runner 3 US Government & War Factories mass-produce 2.3m D-Day doses (1941–44). Map this directly onto the Workbook Verso 5-Stage Chronological Spine to scaffold 12-mark 'Explain why' factor paragraphs (Chance, Science/Teamwork, War/Government).",
+        "stretch_challenge": "Use the development of penicillin (1928–45) and modern MRSA superbug resistance to evaluate whether War and Government funding now outweigh Individual Genius and Chance in turning laboratory science into global life-saving medicine."
       },
       "fun_facts": [
         "Alexander Fleming almost washed the historic penicillin petri dish in lysol disinfectant, but paused to show it to a visiting former assistant, C.J. La Touche.",
@@ -32667,7 +33046,7 @@
         "image": "/images/med_banner_kt4_4_penicillin_mass_prod.jpg",
         "alt": "White-coated chemist Dr Wilson Baker adjusting the stopcock of a glass separating funnel amidst rows of reagent bottles and distillation glassware in the Dyson Perrins Laboratory at Oxford University in 1944",
         "position": "center 38%",
-        "caption": "Wartime Penicillin Chemistry at Oxford (1944): Dr Wilson Baker purifies experimental penicillin extracts with a glass separating funnel in the Dyson Perrins Laboratory, Oxford University (Official Ministry of Information photograph, Imperial War Museums D 17816)."
+        "caption": "Chemist Dr Wilson Baker purifying experimental penicillin extracts with a glass separating funnel in Oxford University’s Dyson Perrins Laboratory (1944), helping turn Alexander Fleming’s mould discovery into a mass-produced antibiotic."
       },
       "hero_image": "/images/med_banner_kt4_4_penicillin_mass_prod.jpg",
       "card_image": "/images/edexcel_medicine/kt4/med_kt4_4_cameo_howard_florey_1960.jpg",
@@ -32786,7 +33165,8 @@
         ]
       },
       "banner_image": "/images/med_banner_kt4_4_penicillin_mass_prod.jpg",
-      "enquiry": "How did an accidental laboratory mould transform into humanity’s first mass-produced antibiotic wonder drug?"
+      "enquiry": "How did an accidental laboratory mould transform into humanity’s first mass-produced antibiotic wonder drug?",
+      "banner_caption": "Chemist Dr Wilson Baker purifying experimental penicillin extracts with a glass separating funnel in Oxford University’s Dyson Perrins Laboratory (1944), helping turn Alexander Fleming’s mould discovery into a mass-produced antibiotic."
     },
     {
       "id": "lesson_4_5",
@@ -32940,7 +33320,26 @@
               }
             ]
           }
-        }
+        },
+        "curriculum_link": "KT4 Medicine in Modern Britain (c1900–present): Case study 2—The fight against lung cancer in the 21st century: science and technology in early diagnosis (low-dose CT, PET-CT, bronchoscopy) and precision treatment (VATS keyhole surgery, CyberKnife, pharmacogenomics, immunotherapy) alongside UK government prevention. Targets Paper 1 Section B Question 3 Difference (4m) and Question 5/6 Evaluative Essay (16m + 4 SPaG).",
+        "hinge_question": "Despite robotic CyberKnife radiotherapy, keyhole VATS surgery, and DNA-targeted immunotherapy, why does UK government anti-smoking legislation remain more effective at cutting lung cancer deaths than hospital treatment?",
+        "hinge_guidance": "Strong GCSE answers connect anatomy directly to policy: because internal lung tissue has very few pain receptors, tumours grow silently without early symptoms and are frequently caught at late Stage 3 or 4 after metastasis—meaning preventing smoking in the first place via the 2007 indoor smoking ban, 2016 plain packaging, taxation, and age laws saves vastly more lives than trying to cure late-stage cancer. Catch pupils who mix up diagnostic scans (CT, PET-CT, bronchoscopy biopsy) with treatments (VATS lobectomy, CyberKnife stereotactic radiotherapy, genetic pharmacotherapy, immunotherapy).",
+        "misconceptions": [
+          {
+            "misconception": "Confusing diagnostic tools (PET-CT scans and bronchoscopy) with curative treatments (CyberKnife radiotherapy and immunotherapy) in Paper 1 essays.",
+            "correction": "Low-dose CT, radioactive-glucose PET-CT scans, and fibre-optic bronchoscopy biopsies DIAGNOSE and stage lung tumours accurately; VATS keyhole lobectomy, CyberKnife pinpoint radiation, targeted genetic drugs, and immunotherapy TREAT them."
+          },
+          {
+            "misconception": "Assuming the British government banned public smoking immediately after Richard Doll and Austin Bradford Hill proved the smoking link in 1950.",
+            "correction": "Governments hesitated for decades because cigarette tax raised vast Treasury revenue and politicians feared intruding on personal adult liberty, moving slowly from banning TV cigarette adverts (1965) to legal compulsion in the 2007 indoor smoking ban and 2016 plain packaging."
+          },
+          {
+            "misconception": "Describing modern lung cancer chemotherapy and radiotherapy as unchanged blunt-force treatments that destroy the whole body.",
+            "correction": "Twenty-first-century oncology sequences tumour DNA (such as EGFR mutations) to prescribe targeted pharmacotherapy and immunotherapy alongside breathing-tracked CyberKnife beams that spare healthy lung tissue."
+          }
+        ],
+        "send_adaptation": "Project Block 5's Concept Diagram ('UK Government Action Against Lung Cancer: 1950s Hesitation ↔ Persuasion ↔ Legal Compulsion') alongside the Visual Story Sheet and Studio Audio read-aloud. Guide Grade 3–4 learners through the Workbook Verso 5-Stage Chronological Spine as three clear colour-coded steps for their 16-mark essay: Why It Hides (Stage 1), High-Tech Scans & Treatments (Stages 2–4), and Government Laws Stopping Smoking (Stage 5).",
+        "stretch_challenge": "Compare the Victorian government's transition from laissez-faire to the compulsory 1875 Public Health Act against the post-1950 UK government's transition from hesitation to the compulsory 2007 indoor smoking ban: how similar were the economic and ideological barriers to state intervention?"
       },
       "fun_facts": [
         "When epidemiologist Richard Doll began his 1948 study, he was a heavy smoker who assumed tarmac road dust was causing lung cancer; as the statistical data accumulated, he immediately quit smoking and lived to age 92.",
@@ -34459,7 +34858,8 @@
         ]
       },
       "banner_image": "/images/edexcel_medicine/kt4/med_kt4_5_banner_surgeon_general_smoking_1964_nih.jpg",
-      "enquiry": "How have modern science and government action combined to fight lung cancer?"
+      "enquiry": "How have modern science and government action combined to fight lung cancer?",
+      "banner_caption": "Epidemiology Confronts Big Tobacco (11 January 1964): Surgeon General Dr Luther Terry (at lectern) and his medical advisory panel unveil the landmark Smoking and Health report confirming the causal link between cigarette smoking and lung cancer first established in Britain by Richard Doll and Austin Bradford Hill (National Institutes of Health)."
     },
     {
       "id": "lesson_5_1",
@@ -34575,7 +34975,26 @@
               }
             ]
           }
-        }
+        },
+        "curriculum_link": "KT5 The British Sector of the Western Front, 1914–18 (Historic Environment): Flanders and northern France terrain, the Ypres Salient, Somme, Arras underground hospital (Thompson's Cave), Cambrai, and the four-line trench system. Targets Paper 1 Section A Question 1 Two Features (4m) and Question 2(a) Source Utility (8m).",
+        "hinge_question": "Why did evacuating a wounded soldier from the Ypres Salient in October 1917 pose completely different logistical and medical challenges from treating casualties beneath Arras in April 1917?",
+        "hinge_guidance": "Strong Section A answers contrast waterlogged low-lying Flanders clay in the Ypres Salient—where German high ground on three sides, shattered drainage, and Passchendaele liquid mud choked narrow zig-zag communication trenches for 4 to 6 hours—with the dry medieval chalk quarries beneath Arras, where tunnellers built Thompson's Cave, a 700-bed bombproof underground hospital with electric lighting, piped water, and operating theatres just 800 yards behind the front. Watch for pupils writing generic WWI battle narratives instead of tying every terrain feature (zig-zag traverses, duckboards, Somme's 57,470 first-day casualties) directly to casualty retrieval and medical strain.",
+        "misconceptions": [
+          {
+            "misconception": "Writing general First World War combat history in Section A without connecting terrain or battles to wound care and casualty evacuation.",
+            "correction": "Edexcel Paper 1 Demand in Section A is strictly medical: zig-zag firebays and narrow muddy communication trenches matter because stretcher bearers could not walk straight and jammed against incoming reinforcement troops."
+          },
+          {
+            "misconception": "Assuming the entire British Western Front looked identical from Belgium down to the Somme.",
+            "correction": "Geography varied sharply by sector and season: Flanders around Ypres had a high water table and glutinous clay mud (plus Hill 60 mines), whereas Arras sat on dry porous chalk ideal for subterranean hospital caves, and Cambrai (Nov 1917) had firmer ground suited to tanks and stored blood."
+          },
+          {
+            "misconception": "Dismissing an RAMC War Diary or official aerial photograph in Question 2(a) as 'not useful because it only shows one place or date'.",
+            "correction": "GCSE Exam Tip: in 8-mark Source Utility answers, treat specific date and sector provenance (such as Ypres in October 1917 during Third Ypres) as a strength that gives authentic frontline testimony of peak mud bottlenecks, while using own knowledge of Arras or Cambrai to show wider sector context."
+          }
+        ],
+        "send_adaptation": "Display Block 2's Concept Diagram ('The Four-Line Western Front Trench System (1914–1918)') alongside the Visual Story Sheet and Studio Audio read-aloud so learners trace a casualty's slow route from Frontline -> Support -> Reserve via zig-zag communication trenches. Pair this with the Workbook Verso 5-Stage Chronological Spine to rehearse crisp two-sentence 'Identify + Support' answers for Question 1 (4 marks).",
+        "stretch_challenge": "When evaluating Western Front photographs and RAMC war diaries for Question 2(a) (8 marks), how should a historian weigh the immediacy of a single battalion officer's October 1917 Ypres diary against official War Office medical summaries compiled across the whole sector?"
       },
       "learning_objectives": [
         "Explain the defensive layout of the trench system and why static warfare developed in autumn 1914.",
@@ -36229,7 +36648,8 @@
         ]
       },
       "banner_image": "/images/edexcel_medicine/kt5/med_kt5_l51_banner_menin_road_ypres_1917.jpg",
-      "enquiry": "How did the geography of the British sector and trench design shape medical challenges on the Western Front?"
+      "enquiry": "How did the geography of the British sector and trench design shape medical challenges on the Western Front?",
+      "banner_caption": "Casualties Awaiting Evacuation Along the Menin Road, Ypres Sector (September 1917): Stretcher cases and walking wounded gather beside a ditched lorry along the shell-swept Menin Road during the Third Battle of Ypres."
     },
     {
       "id": "lesson_5_2",
@@ -36345,7 +36765,27 @@
               }
             ]
           }
-        }
+        },
+        "curriculum_link": "KT5 The British Sector of the Western Front, 1914–18 (Historic Environment): Environmental conditions requiring treatment—trench foot, trench fever (PUO/body lice), dysentery, and shell shock (NYDN). Targets Paper 1 Section A Question 1 Two Features (4m) and Question 2(b) Follow-Up Enquiry (4m).",
+        "hinge_question": "Why did the British Army treat preventing trench foot and trench fever as matters of strict military discipline—even threatening officers with court-martial—rather than leaving them to doctors alone?",
+        "hinge_guidance": "Strong answers recognise that non-combat environmental illnesses drained whole battalions out of the firing line without a single enemy bullet being fired (over 20,000 hospitalised with trench foot in winter 1914–15, and up to 15 percent of troops disabled for 6–8 weeks by lice-borne trench fever), forcing command to enforce whale-oil rubs, dry socks, buddy checks, steam delousing baths, and chlorinated water. In Question 2(b) (4-mark Follow-Up), catch vague answers suggesting 'search the internet' or 'read a soldier's diary'; candidates must name a specific contemporary British military medical record such as RAMC Field Ambulance admission books or Battalion War Diaries.",
+        "misconceptions": [
+          {
+            "misconception": "Confusing trench foot (caused by standing in freezing waterlogged mud with tight boots/puttees) and trench fever (caused by body lice faeces scratched into skin).",
+            "correction": "Trench foot was a circulatory cold/wet injury leading to numbness, swelling, and gangrene amputation (prevented by whale oil, dry socks, and duckboards); trench fever (PUO) was a bacterial flu-like shin-pain illness transmitted by body lice (tackled from 1918 once lice were proven culpable via mobile steam delousing)."
+          },
+          {
+            "misconception": "Assuming the British Army understood and sympathetically treated shell shock throughout 1914–18.",
+            "correction": "Early in the war, commanders widely suspected shell-shocked men showing tremors, paralysis, or mutism of cowardice or malingering; by 1916–17 over 80,000 cases forced the Army to establish 'NYDN (Not Yet Diagnosed, Nervous)' centres and specialist hospitals like Craiglockhart."
+          },
+          {
+            "misconception": "Naming generic sources like 'medical records' or 'books' in Question 2(b) Follow-Up (4 marks).",
+            "correction": "GCSE Exam Tip: always specify an exact Western Front archival source—for example, 'RAMC Casualty Clearing Station statistical returns for the Ypres sector in winter 1915–16'—and match your follow-up question directly to the detail quoted from the source."
+          }
+        ],
+        "send_adaptation": "Use the Visual Story Sheet and Studio Audio read-aloud to anchor each trench illness to a clear 'Cause -> Prevention' pair: Freezing Mud -> Whale Oil & Dry Socks (Trench Foot); Body Lice -> Steam Delousing Baths (Trench Fever); Dirty Latrines -> Chloride of Lime & Water Tablets (Dysentery). Consolidate on the Workbook Verso 5-Stage Chronological Spine before practising the four-box Question 2(b) Follow-Up table.",
+        "stretch_challenge": "Design a full-mark Question 2(b) archival follow-up enquiry investigating how British Army classification of shell shock ('NYDN') shifted between 1915 and 1917, explaining why War Office Courts-Martial records and RAMC NYDN specialist centre registers reveal different halves of the story.",
+        "safeguarding_impartiality": "Frame shell shock, mutism, and wartime accusations of cowardice with calm clinical sensitivity, noting that over 80,000 British soldiers experienced acute psychological trauma under prolonged artillery bombardment before post-traumatic stress was medically understood. Avoid graphic shock imagery when discussing gangrenous trench foot amputations, keeping focus on RAMC preventative care."
       },
       "learning_objectives": [
         "Explain the causes, symptoms, and preventive measures enforced against trench foot.",
@@ -37640,7 +38080,7 @@
         "image": "/images/edexcel_medicine/kt5/med_kt5_l52_banner_passchendaele_mud_q5943.jpg",
         "alt": "British soldiers watching a horse-drawn water cart sunk to its axle with one mule belly-deep in liquid Flanders mud during the Battle of Pilckem Ridge at Passchendaele on 11 August 1917",
         "position": "center 44%",
-        "caption": "Bogged Down in Liquid Flanders Clay (Battle of Pilckem Ridge, Passchendaele, 11 August 1917, IWM Q 5943): A regimental water cart sunk to its axle illustrates the waterlogged Flanders terrain that triggered epidemic trench foot and paralysed wheeled transport."
+        "caption": "An exhausted horse team and regimental water cart bogged down in liquid Flanders mud during Passchendaele (11 August 1917), illustrating waterlogged conditions that caused trench foot and delayed evacuation."
       },
       "hero_image": "/images/edexcel_medicine/kt5/med_kt5_l52_banner_passchendaele_mud_q5943.jpg",
       "card_image": "/images/divisional_baths_delousing.jpg",
@@ -37760,7 +38200,8 @@
         ]
       },
       "banner_image": "/images/edexcel_medicine/kt5/med_kt5_l52_banner_passchendaele_mud_q5943.jpg",
-      "enquiry": "How did the horrific physical environment of the trenches create widespread non-combat medical crises?"
+      "enquiry": "How did the horrific physical environment of the trenches create widespread non-combat medical crises?",
+      "banner_caption": "An exhausted horse team and regimental water cart bogged down in liquid Flanders mud during Passchendaele (11 August 1917), illustrating waterlogged conditions that caused trench foot and delayed evacuation."
     },
     {
       "id": "lesson_5_3",
@@ -37772,7 +38213,7 @@
         "image": "/images/edexcel_medicine/kt5/med_kt5_l53_banner_sargent_gassed_1919.jpg",
         "alt": "John Singer Sargent’s monumental 1919 oil painting Gassed showing a file of British soldiers blinded by mustard gas walking with bandaged eyes and hands on each other’s shoulders past wounded men lying at a Western Front dressing station",
         "position": "center 45%",
-        "caption": "John Singer Sargent RA, \"Gassed\" (1919, Imperial War Museum Art.IWM ART 1460): Blinded mustard-gas casualties led by a medical orderly along a duckboard path toward a Western Front dressing station in August 1918."
+        "caption": "John Singer Sargent’s Gassed (1919), depicting blinded mustard-gas casualties led by a medical orderly along wooden duckboards toward a Western Front dressing station in August 1918."
       },
       "banner_position": "center 45%",
       "hook_text": "The First World War was an industrial collision between high-technology steel and fragile human flesh. Over 70% of all battlefield casualties were inflicted not by rifle bullets, but by high-explosive artillery shells that tore bodies apart with jagged metal fragments. Yet the most lethal enemy was often microscopic: Flanders agricultural soil, heavily manured for centuries with animal dung, teemed with deadly anaerobic bacteria that invaded ragged wounds, spawning lethal gas gangrene and tetanus within hours of injury. Why were shrapnel injuries, poison gas, and wound infections such lethal threats to British soldiers on the Western Front?",
@@ -37882,7 +38323,27 @@
               }
             ]
           }
-        }
+        },
+        "curriculum_link": "KT5 The British Sector of the Western Front, 1914–18 (Historic Environment): Nature of wounds—high-explosive shrapnel, bullets, manured Flanders soil and gas gangrene, head wounds and the Brodie steel helmet, and chlorine, phosgene, and mustard gas. Targets Paper 1 Section A Question 1 Two Features (4m) and Question 2(a) Source Utility (8m).",
+        "hinge_question": "Why did manured farmland soil in Flanders make jagged shrapnel wounds far deadlier than smooth rifle bullets—and why did poison gas terrify troops yet cause under 3 percent of British wartime deaths?",
+        "hinge_guidance": "Strong GCSE answers explain two crucial Western Front realities: first, artillery shells and shrapnel (~58 percent of wounds) ripped ragged cavities and drove dirty uniform cloth plus heavily fertilised soil packed with anaerobic Clostridium perfringens and tetanus bacteria deep into oxygen-starved muscle, triggering rapid fatal gas gangrene; second, chlorine (April 1915), phosgene (Dec 1915), and blistering mustard gas (July 1917) caused mass panic and temporary blindness, yet rapid British countermeasures—from improvised urine-soaked pads to the 1916 PH Helmet and Small Box Respirator—kept gas fatalities remarkably low.",
+        "misconceptions": [
+          {
+            "misconception": "Thinking 'gas gangrene' was caused by German poison gas attacks (chlorine, phosgene, or mustard gas).",
+            "correction": "Gas gangrene had zero connection to chemical weapons; it was a lethal bacterial wound infection caused by anaerobic Clostridium bacteria from manured Flanders soil multiplying in deep, oxygen-starved wounds and producing foul gas bubbles under rotting tissue."
+          },
+          {
+            "misconception": "Claiming machine-gun bullets or poison gas caused the majority of deaths and wounds on the Western Front.",
+            "correction": "High-explosive artillery shells and shrapnel caused roughly 58% of all Western Front wounds (bullets ~39%), while poison gas accounted for fewer than 3% of British wartime fatalities thanks to the 1916 Small Box Respirator."
+          },
+          {
+            "misconception": "Assuming British soldiers wore steel helmets and gas masks from August 1914.",
+            "correction": "Troops went to war in 1914 wearing soft cloth caps with zero gas protection; the manganese-steel Brodie helmet arrived in late 1915 (cutting fatal penetrating head wounds by ~80%), and respirators evolved after Second Ypres (April 1915)."
+          }
+        ],
+        "send_adaptation": "Project Block 4's Concept Diagram ('Poison Gas & Anti-Gas Evolution on the Western Front (1915–1918)') alongside the Visual Story Sheet and Studio Audio read-aloud so learners track Chlorine (April 1915) -> Phosgene (Dec 1915) -> Mustard Gas (July 1917) beside their matching British defences. Reinforce the distinction between 'Gas Gangrene (Soil Bacteria)' and 'Poison Gas (Chemical Weapon)' using Stages 2 and 4–5 of the Workbook Verso 5-Stage Chronological Spine.",
+        "stretch_challenge": "In an 8-mark Source Utility answer comparing an April 1915 eyewitness diary of the first chlorine attack at Second Ypres with a 1918 War Office statistical table on gas mortality, explain why both sources are simultaneously accurate yet give starkly contrasting impressions of chemical warfare.",
+        "safeguarding_impartiality": "Approach descriptions of chlorine/phosgene asphyxiation, mustard gas burns, and catastrophic shrapnel trauma in a matter-of-fact historical and medical register rather than sensationalising battlefield horror. Emphasise how swiftly RAMC researchers and protective innovations (the Brodie steel helmet and Small Box Respirator) saved tens of thousands of soldiers' lives."
       },
       "learning_objectives": [
         "Describe the nature of wounds caused by high-explosive artillery shells and jagged shrapnel.",
@@ -39450,7 +39911,8 @@
         ]
       },
       "banner_image": "/images/edexcel_medicine/kt5/med_kt5_l53_banner_sargent_gassed_1919.jpg",
-      "enquiry": "How did industrialised weaponry and manured soil create terrifying new forms of wound trauma and infection?"
+      "enquiry": "How did industrialised weaponry and manured soil create terrifying new forms of wound trauma and infection?",
+      "banner_caption": "John Singer Sargent’s Gassed (1919), depicting blinded mustard-gas casualties led by a medical orderly along wooden duckboards toward a Western Front dressing station in August 1918."
     },
     {
       "id": "lesson_5_4",
@@ -39572,7 +40034,26 @@
               }
             ]
           }
-        }
+        },
+        "curriculum_link": "KT5 The British Sector of the Western Front, 1914–18 (Historic Environment): Work of the RAMC and FANY; transport (stretcher bearers, motor ambulances, trains, canal barges) and the Chain of Evacuation (RAP, ADS/MDS, CCS, Base Hospitals). Targets Paper 1 Section A Question 1 Two Features (4m) and Question 2(b) Follow-Up Enquiry (4m).",
+        "hinge_question": "Why did Casualty Clearing Stations (CCS) situated 7 to 12 miles behind the trenches overtake coastal Base Hospitals to become the most decisive surgical link in the Chain of Evacuation?",
+        "hinge_guidance": "Strong GCSE answers explain the 24-hour bacterial race against gas gangrene: Regimental Aid Posts (200m behind the front) and Dressing Stations could only staunch bleeding, splint limbs, and inject morphine/anti-tetanus under fire, while waiting until a wounded man reached a coastal Base Hospital (Boulogne or Rouen) meant anaerobic infection had already turned fatal—so moving full operating theatres forward to railhead CCS hubs saved thousands of limbs and lives. Catch pupils jumbling the exact sequence: Stretcher Bearers -> RAP -> ADS/MDS -> CCS -> Base Hospital.",
+        "misconceptions": [
+          {
+            "misconception": "Mixing up the order of the Chain of Evacuation or claiming major surgery happened inside frontline Regimental Aid Posts (RAPs).",
+            "correction": "RAPs sat in dugouts ~200 yards behind the frontline with one battalion Medical Officer giving emergency tourniquets, dressings, and morphine—never internal surgery; life-saving operations occurred miles back at Casualty Clearing Stations (CCS) and Base Hospitals."
+          },
+          {
+            "misconception": "Thinking female volunteer FANY drivers were part of the regular RAMC or only served cups of tea at Base Hospitals.",
+            "correction": "First Aid Nursing Yeomanry (FANY) volunteers were unpaid women who drove and repaired motor ambulances under bombardment from January 1916, scrubbed wards, drove supply lorries, and freed male RAMC orderlies for frontline stretcher work."
+          },
+          {
+            "misconception": "Assuming motor ambulances completely replaced horse-drawn wagons and canal barges across every sector.",
+            "correction": "Motor ambulances transformed road speed from 1915, but deep Passchendaele shell-crater mud still required six-horse ambulance wagons where engines bogged down, while smooth hospital canal barges carried severe head and abdominal casualties without jarring road vibration."
+          }
+        ],
+        "send_adaptation": "Use the Visual Story Sheet and Studio Audio read-aloud to rehearse the mnemonic chain in order—Stretcher Bearers -> RAP -> Dressing Station (ADS) -> Casualty Clearing Station (CCS) -> Base Hospital—exactly matching Stages 1 to 5 of the Workbook Verso 5-Stage Chronological Spine. Have Grade 3–4 learners annotate 'Who worked here?' and 'What treatment happened?' on each stage before writing Question 1 and Question 2(b).",
+        "stretch_challenge": "Evaluate how triage at Casualty Clearing Stations like Remy Siding near Poperinghe during Third Ypres (1917) balanced humanitarian care against ruthless military necessity when tens of thousands of casualties arrived simultaneously."
       },
       "learning_objectives": [
         "Detail the order and purpose of each station in the Chain of Evacuation.",
@@ -41152,7 +41633,8 @@
         ]
       },
       "banner_image": "/images/edexcel_medicine/kt5/med_kt5_l54_banner_ccs_ambulance_bertrancourt_1918.jpg",
-      "enquiry": "How did the Chain of Evacuation move wounded soldiers from frontline trenches to hospitals?"
+      "enquiry": "How did the Chain of Evacuation move wounded soldiers from frontline trenches to hospitals?",
+      "banner_caption": "Loading Stretcher Cases into a Motor Ambulance at Bertrancourt Casualty Clearing Station (6 April 1918, Official Photograph by H. A. Sanders): Motorised ambulance convoys linked forward dressing stations with railhead surgical hubs."
     },
     {
       "id": "lesson_5_5",
@@ -41268,7 +41750,26 @@
               }
             ]
           }
-        }
+        },
+        "curriculum_link": "KT5 The British Sector of the Western Front, 1914–18 (Historic Environment): Surgical and radiological breakthroughs—wound excision/debridement, the Carrel-Dakin antiseptic irrigation method, the Thomas splint, and mobile X-ray units. Targets Paper 1 Section A Question 1 Two Features (4m) and Question 2(a) Source Utility (8m).",
+        "hinge_question": "Why did standard peacetime aseptic surgery and Listerian carbolic acid fail catastrophically against Western Front wounds in 1914, forcing surgeons to invent radical debridement and the Carrel-Dakin tube method?",
+        "hinge_guidance": "Strong GCSE answers explain that peacetime hospital patients entered clean aseptic theatres uncontaminated, whereas Western Front casualties arrived with manured soil and cloth blasted deep into muscle: surface carbolic acid burned healthy white blood cells without reaching deep pockets, and stitching wounds shut trapped oxygen-hating gas gangrene bacilli inside—so surgeons had to excise all dead tissue/cloth (debridement, leaving wounds open 48 hours) or pump sterilised sodium hypochlorite continuously through perforated rubber tubes (Carrel-Dakin, 1915). Also highlight the concrete statistic for the Thomas splint: mandated from December 1915, it lifted compound femur fracture survival from 20 percent to 82 percent.",
+        "misconceptions": [
+          {
+            "misconception": "Claiming Western Front doctors discovered penicillin to cure gas gangrene in 1914–18.",
+            "correction": "GCSE Exam Tip: antibiotics did NOT exist during WWI (Fleming discovered penicillin in 1928; mass production arrived in 1944 for WWII). WWI surgeons conquered gas gangrene solely through physical wound debridement and Carrel-Dakin sodium hypochlorite chemical irrigation."
+          },
+          {
+            "misconception": "Assuming mobile X-ray vans could detect every piece of debris inside a soldier's wound instantly.",
+            "correction": "While two-angle X-rays pinpointed bullets and metal shrapnel, they could NOT detect muddy uniform cloth, wood splinters, or soil—and glass X-ray tubes overheated quickly, forcing three-machine rotation during big offensives."
+          },
+          {
+            "misconception": "Thinking Hugh Owen Thomas invented the Thomas splint during the First World War.",
+            "correction": "Hugh Owen Thomas designed the traction splint in the late nineteenth century; his nephew Sir Robert Jones mandated and trained stretcher bearers and orderlies to apply it on the Western Front from December 1915, slashing femur death rates from 80% to 18%."
+          }
+        ],
+        "send_adaptation": "Pair the Visual Story Sheet and Studio Audio read-aloud to anchor each breakthrough to the exact killer it solved: Debridement & Carrel-Dakin Tubes -> Deep Gas Gangrene; Thomas Splint -> Broken Thigh Arterial Bleeding (20% to 82% survival); Mobile X-Rays -> Hidden Metal Shrapnel. Learners then use Stages 1 to 5 of the Workbook Verso 5-Stage Chronological Spine to check both strengths and technical limits (Stage 5) for 8-mark Source Utility.",
+        "stretch_challenge": "When assessing Sir Robert Jones's 1917 official report on the Thomas splint alongside a frontline CCS surgeon's 1917 Poperinghe memoir in Question 2(a) (8 marks), how do purpose and frontline context shape what each source emphasises about surgical success versus operational strain?"
       },
       "learning_objectives": [
         "Explain how the Thomas Splint transformed survival rates for compound fractures from 20% to 80%.",
@@ -42624,7 +43125,7 @@
         "image": "/images/edexcel_medicine/kt5/med_kt5_l55_banner_ccs_operating_theatre_l0030464.jpg",
         "alt": "Surgeons in white gowns, a military nursing sister, and an anaesthetist operating beneath an overhead electric lamp inside the timber-lined operating hut of the 34th (1/1 West Lancashire) Casualty Clearing Hospital on the Western Front",
         "position": "center 52%",
-        "caption": "\"In the Operating Theatre\": Surgical team operating beneath electric lighting inside the 34th (1/1 West Lancashire) Casualty Clearing Hospital on the Western Front (Wellcome Collection L0030464)."
+        "caption": "A British surgical team operating beneath electric lighting inside the 34th (West Lancashire) Casualty Clearing Station on the Western Front, where prompt wound excision combated deadly gas gangrene."
       },
       "hero_image": "/images/edexcel_medicine/kt5/med_kt5_l55_banner_ccs_operating_theatre_l0030464.jpg",
       "card_image": "/images/thomas_splint_authentic.jpg",
@@ -42741,7 +43242,8 @@
         ]
       },
       "banner_image": "/images/edexcel_medicine/kt5/med_kt5_l55_banner_ccs_operating_theatre_l0030464.jpg",
-      "enquiry": "How did pioneering surgical techniques and mechanical innovations conquer the crisis of compound fractures and wound sepsis?"
+      "enquiry": "How did pioneering surgical techniques and mechanical innovations conquer the crisis of compound fractures and wound sepsis?",
+      "banner_caption": "A British surgical team operating beneath electric lighting inside the 34th (West Lancashire) Casualty Clearing Station on the Western Front, where prompt wound excision combated deadly gas gangrene."
     },
     {
       "id": "lesson_5_6",
@@ -42857,7 +43359,27 @@
               }
             ]
           }
-        }
+        },
+        "curriculum_link": "KT5 The British Sector of the Western Front, 1914–18 (Historic Environment): Blood transfusions and storage—Lewisohn's sodium citrate (1915), Rous-Turner glucose refrigeration (1916), Oswald Robertson's Cambrai Blood Depot (Nov 1917), Harvey Cushing's brain surgery, and Harold Gillies's plastic reconstruction at Sidcup. Targets Paper 1 Section A Question 1 Two Features (4m) and Question 2(b) Follow-Up Enquiry (4m).",
+        "hinge_question": "Why had Karl Landsteiner's 1901 discovery of ABO blood groups not already solved battlefield blood loss in 1914—and what three wartime steps enabled Captain Oswald Robertson to stockpile blood ahead of the Battle of Cambrai in November 1917?",
+        "hinge_guidance": "Strong GCSE answers trace the exact technological chain: in 1914 blood clotted almost immediately outside the body, forcing impractical donor-to-patient tube transfusions; Richard Lewisohn's 0.2 percent sodium citrate (1915) stopped clotting in glass bottles, Peyton Rous and Joseph Turner's citrate-dextrose glucose solution plus ice refrigeration (1916) stopped red cells decaying for up to 4 weeks, and Oswald Robertson combined universal Group O donor blood with iced ammunition-box chests at Cambrai (Nov 1917) to create the world's first blood bank. Watch for pupils forgetting that Harold Gillies's Queen's Hospital was in Sidcup, Kent (back in Britain along Stage 5 of evacuation), not a tent on the French frontline.",
+        "misconceptions": [
+          {
+            "misconception": "Confusing what sodium citrate (Lewisohn, 1915) did with what citrate-dextrose glucose (Rous & Turner, 1916) achieved.",
+            "correction": "Lewisohn's sodium citrate stopped blood clotting so indirect syringe/bottle transfusions worked, but blood still spoiled within ~48 hours; Rous and Turner's 1916 citrate-dextrose (glucose) plus refrigeration preserved red blood cells for up to four weeks, making blood banking possible."
+          },
+          {
+            "misconception": "Writing that Harold Gillies performed facial plastic reconstruction in muddy frontline Dressing Stations in France.",
+            "correction": "Casualties received initial stabilisation in France before evacuation home to Britain, where Major Harold Gillies opened The Queen's Hospital in Sidcup, Kent in June 1917, performing over 11,000 reconstructive operations using vascularised 'tubed pedicle' skin grafts."
+          },
+          {
+            "misconception": "Assuming Harvey Cushing used general chloroform/ether anaesthetic like limb surgeons when operating on Western Front brain wounds.",
+            "correction": "General anaesthetics raised intracranial blood pressure and caused fatal brain swelling; Cushing operated under local anaesthetic at CCS No. 46 (Mendinghem) in 1917 and used surgical electromagnets to draw out metal shrapnel gently, cutting brain surgery mortality from ~54% to ~29%."
+          }
+        ],
+        "send_adaptation": "Project Block 1's Concept Diagram ('Solving Blood Loss on the Western Front (1901–1917)') alongside the Visual Story Sheet and Studio Audio read-aloud so learners lock in the four-step blood chain (Landsteiner 1901 -> Lewisohn Citrate 1915 -> Rous-Turner Glucose + Ice 1916 -> Robertson Cambrai Depot Nov 1917). Use the Workbook Verso 5-Stage Chronological Spine to pair blood banking (Stages 1–3) cleanly beside Cushing's magnet neurosurgery (Stage 4) and Gillies's Sidcup pedicle grafts (Stage 5).",
+        "stretch_challenge": "Looking back across the entire GCSE Medicine course from medieval barber-surgeons (KT1) and Victorian surgery (KT3.4) to Cambrai, Mendinghem, and Sidcup in 1917 (KT5.6), explain why total war finally conquered the third historic barrier to surgery—blood loss—and birthed modern specialist neurosurgery and plastic surgery.",
+        "safeguarding_impartiality": "Introduce severe facial shrapnel injuries and reconstructive surgery at The Queen's Hospital, Sidcup with respectful clinical framing focused on human dignity, resilience, and surgical ingenuity rather than shock value. Remind pupils that Harold Gillies and his team pioneered the tubed pedicle graft specifically to restore speech, eating, and confidence to wounded veterans returning to civilian life."
       },
       "learning_objectives": [
         "Explain how sodium citrate, glucose, and Oswald Robertson enabled the world’s first blood bank at Cambrai (1917).",
@@ -44288,7 +44810,7 @@
         "image": "/images/edexcel_medicine/kt5/med_kt5_l56_banner_queens_hospital_sidcup_iwm3767.jpg",
         "alt": "John Hodgson Lobley’s 1918 painting of convalescent soldiers in blue hospital suits—several wearing facial and jaw bandages—seated at green baize tables inside a vocational classroom at The Queen’s Hospital for Facial Injuries, Sidcup",
         "position": "center 54%",
-        "caption": "John Hodgson Lobley, \"The Queen’s Hospital for Facial Injuries, Frognal, Sidcup: The Commercial Class\" (1918, IWM Art.IWM ART 3767): Convalescent facial-reconstruction patients in hospital blues retraining for civilian life."
+        "caption": "John Hodgson Lobley’s painting The Commercial Class (1918), showing wounded servicemen undergoing facial plastic reconstruction under Harold Gillies at the Queen’s Hospital, Sidcup while retraining for civilian employment."
       },
       "hero_image": "/images/edexcel_medicine/kt5/med_kt5_l56_banner_queens_hospital_sidcup_iwm3767.jpg",
       "card_image": "/images/med_stage_cushing_neurosurgery.jpg",
@@ -44407,7 +44929,8 @@
         ]
       },
       "banner_image": "/images/edexcel_medicine/kt5/med_kt5_l56_banner_queens_hospital_sidcup_iwm3767.jpg",
-      "enquiry": "How did Western Front casualties drive lifesaving breakthroughs in blood storage and specialist surgery?"
+      "enquiry": "How did Western Front casualties drive lifesaving breakthroughs in blood storage and specialist surgery?",
+      "banner_caption": "John Hodgson Lobley’s painting The Commercial Class (1918), showing wounded servicemen undergoing facial plastic reconstruction under Harold Gillies at the Queen’s Hospital, Sidcup while retraining for civilian employment."
     }
   ],
   "specification": [
@@ -45851,5 +46374,11 @@
       "image": "/images/plain_cigarette_packaging_uk.jpg",
       "lessonIndex": 19
     }
-  ]
+  ],
+  "cover_caption": "Albert Edelfelt’s Louis Pasteur in his Laboratory (1885), depicting the French microbiologist examining dried spinal cord tissue in a glass flask while developing his pioneering vaccine against rabies.",
+  "teacher_guidance_overview": {
+    "curriculum_focus": "Pearson Edexcel GCSE (9–1) History Paper 1 Option 11: Medicine in Britain, c1250–present and The British Sector of the Western Front, 1914–18: injuries, treatment and the trenches.",
+    "disciplinary_threads": "Section A Historic Environment: Describe Two Features (4m), Source Utility (8m), Follow-Up Enquiry (4m). Section B Thematic: Similarity/Difference Across Periods (4m), Causation 'Explain why' (12m), and Evaluative Judgement 'How far do you agree' (16m + 4 SPaG).",
+    "non_specialist_summary": "This unit pairs a thousand-year thematic sweep across four strict chronological eras—Medieval (c1250–c1500), Medical Renaissance (c1500–c1700), 18th and 19th Century (c1700–c1900), and Modern Britain (c1900–present)—with a primary-source depth study on medical care on the Western Front (1914–18). Across Lessons 1.1–4.5, pupils track change and continuity across three recurring strands (ideas about causes, prevention and treatment, and hospital/public health care) driven by factors such as religion, individuals, science and technology, war, and government. Lessons 5.1–5.6 shift to Section A source-enquiry skills, training pupils to pair precise battlefield medicine knowledge with provenance evaluation and archival follow-up on RAMC records."
+  }
 }
