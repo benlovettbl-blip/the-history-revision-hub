@@ -452,7 +452,9 @@
             ],
             "teacher_notes": {
               "hinge_question": "Why did Western leaders interpret Stalin’s ideological speech as a direct military warning to the capitalist world?"
-            }
+            },
+            "studio_audio": "/audio/sources/cold_war/lesson_1_sA.mp3",
+            "studio_voice_label": "Joseph Stalin’s Bolshoi Theatre…"
           },
           "act_title": "Stage 1: Incompatible Economic Visions — Why were Western market capitalism and Soviet command socialism fundamentally incompatible?",
           "date_badge": "1917–1924",
@@ -567,7 +569,9 @@
             ],
             "teacher_notes": {
               "hinge_question": "If Soviet leaders were educated on Lenin's doctrine of violent revolution, why was it difficult for Western democracies to trust Soviet promises of peace?"
-            }
+            },
+            "studio_audio": "/audio/sources/cold_war/lesson_1_sB.mp3",
+            "studio_voice_label": "Vladimir Lenin on Democratic Cen…"
           },
           "act_title": "Stage 2: Democracy vs Bolshevik Autocracy — How did the Soviet one-party state convince Western nations that peaceful political coexistence was impossible?",
           "date_badge": "1920s–1930s",
@@ -607,7 +611,9 @@
             ],
             "teacher_notes": {
               "hinge_question": "What visual symbols does the cartoonist use to show that the Soviet government was deliberately shutting itself off from the rest of the world?"
-            }
+            },
+            "studio_audio": "/audio/sources/cold_war/lesson_1_sC.mp3",
+            "studio_voice_label": "David Low"
           },
           "image": "/images/cold_war/molotov_ribbentrop_pact_1939.jpg",
           "image_alt": "Archival Kremlin photograph from 23 August 1939 showing smiling Soviet leader Joseph Stalin in a light tunic shaking hands with Nazi German Foreign Minister Joachim von Ribbentrop in a dark suit",
@@ -647,7 +653,9 @@
             ],
             "teacher_notes": {
               "hinge_question": "How did Kennan's claim that Soviet power is 'highly sensitive to logic of force' persuade President Truman to adopt a policy of military containment?"
-            }
+            },
+            "studio_audio": "/audio/sources/cold_war/lesson_1_sD.mp3",
+            "studio_voice_label": "George Kennan and the Moscow Emb…"
           },
           "image": "/images/cold_war/hiroshima_atomic_cloud_1945.jpg",
           "image_alt": "U.S. Army Air Forces aerial photograph showing a towering white atomic mushroom cloud rising miles into the sky above smoke-shrouded Hiroshima on 6 August 1945",
@@ -687,7 +695,9 @@
             ],
             "teacher_notes": {
               "hinge_question": "Why did Soviet propaganda focus so heavily on full employment and healthcare while completely ignoring the absence of political opposition?"
-            }
+            },
+            "studio_audio": "/audio/sources/cold_war/lesson_1_sE.mp3",
+            "studio_voice_label": "Supreme Soviet Election Appeal t…"
           },
           "image": "/images/cold_war/reichstag_soviet_flag_1945.jpg",
           "image_alt": "Yevgeny Khaldei’s May 1945 photograph of a Red Army soldier planting the Soviet hammer-and-sickle banner atop the parapet of the bombed-out Reichstag overlooking ruined Berlin streets",
@@ -774,7 +784,9 @@
           "teacher_notes": {
             "source_context": "Stalin’s Bolshoi speech shattered Western hopes that wartime cooperation would continue into peacetime. In Washington, Supreme Court Justice William O. Douglas described the address as 'The Declaration of World War Three,' prompting the US State Department to urgently demand diplomatic analysis. **Hinge Question:** Why did Western leaders interpret Stalin’s ideological speech as a direct military warning to the capitalist world?",
             "hinge_question": "Why did Western leaders interpret Stalin’s ideological speech as a direct military warning to the capitalist world?"
-          }
+          },
+          "studio_audio": "/audio/sources/cold_war/lesson_1_sA.mp3",
+          "studio_voice_label": "Joseph Stalin’s Bolshoi Theatre…"
         },
         {
           "id": "cw_l1_src_b",
@@ -796,7 +808,9 @@
           "teacher_notes": {
             "source_context": "Lenin’s core text established the bedrock doctrine taught in every Soviet school and university. To Western observers, this text proved that communist states were ideologically committed to the violent destruction of capitalist democracies. **Hinge Question:** If Soviet leaders were educated on Lenin's doctrine of violent revolution, why was it difficult for Western democracies to trust Soviet promises of peace?",
             "hinge_question": "If Soviet leaders were educated on Lenin's doctrine of violent revolution, why was it difficult for Western democracies to trust Soviet promises of peace?"
-          }
+          },
+          "studio_audio": "/audio/sources/cold_war/lesson_1_sB.mp3",
+          "studio_voice_label": "Vladimir Lenin on Democratic Cen…"
         },
         {
           "id": "cw_l1_src_c",
@@ -818,7 +832,9 @@
           "teacher_notes": {
             "source_context": "David Low was widely regarded as the greatest political cartoonist of the 20th century. Here he visualizes Churchill's metaphor of the Iron Curtain, capturing the British public's growing dismay that wartime alliance with Russia had transformed into secretive hostility. **Hinge Question:** What visual symbols does the cartoonist use to show that the Soviet government was deliberately shutting itself off from the rest of the world?",
             "hinge_question": "What visual symbols does the cartoonist use to show that the Soviet government was deliberately shutting itself off from the rest of the world?"
-          }
+          },
+          "studio_audio": "/audio/sources/cold_war/lesson_1_sC.mp3",
+          "studio_voice_label": "David Low"
         },
         {
           "id": "cw_l1_src_d",
@@ -840,7 +856,9 @@
           "teacher_notes": {
             "source_context": "Kennan’s telegram circulated through the highest levels of the Truman administration. Kennan argued that traditional diplomacy would fail with Moscow because Soviet leaders needed external enemies to justify their own tyrannical rule at home. **Hinge Question:** How did Kennan's claim that Soviet power is 'highly sensitive to logic of force' persuade President Truman to adopt a policy of military containment?",
             "hinge_question": "How did Kennan's claim that Soviet power is 'highly sensitive to logic of force' persuade President Truman to adopt a policy of military containment?"
-          }
+          },
+          "studio_audio": "/audio/sources/cold_war/lesson_1_sD.mp3",
+          "studio_voice_label": "George Kennan and the Moscow Emb…"
         },
         {
           "id": "cw_l1_src_e",
@@ -862,7 +880,9 @@
           "teacher_notes": {
             "source_context": "While Western observers saw Soviet elections as rubber-stamp shams, Soviet domestic propaganda relentlessly hammered home economic comparisons: emphasizing full employment and social welfare to contrast with memories of the 1930s Western Great Depression. **Hinge Question:** Why did Soviet propaganda focus so heavily on full employment and healthcare while completely ignoring the absence of political opposition?",
             "hinge_question": "Why did Soviet propaganda focus so heavily on full employment and healthcare while completely ignoring the absence of political opposition?"
-          }
+          },
+          "studio_audio": "/audio/sources/cold_war/lesson_1_sE.mp3",
+          "studio_voice_label": "Supreme Soviet Election Appeal t…"
         }
       ],
       "causal_domino_spine": {
@@ -1971,7 +1991,9 @@
       "banner_position": "center 30%",
       "enquiry": "Why did rival ideas turn the USA and USSR into enemies after 1945?",
       "enquiry_question": "Why did rival ideas turn the USA and USSR into enemies after 1945?",
-      "banner_caption": "American and Soviet Officers Embracing at Torgau on Elbe Day (\"East Meets West\", 25 April 1945, U.S. Army Signal Corps): Wartime allies meeting across ruined Germany on the eve of the Cold War ideological divide."
+      "banner_caption": "American and Soviet Officers Embracing at Torgau on Elbe Day (\"East Meets West\", 25 April 1945, U.S. Army Signal Corps): Wartime allies meeting across ruined Germany on the eve of the Cold War ideological divide.",
+      "prologue_audio": "/audio/lessons/cold_war/lesson_1_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · Historian"
     },
     {
       "id": "lesson_2",
@@ -2157,7 +2179,9 @@
             ],
             "teacher_notes": {
               "hinge_question": "Why did Stalin's definition of 'democracy' in Poland completely contradict what Churchill and Roosevelt expected when they signed this declaration?"
-            }
+            },
+            "studio_audio": "/audio/sources/cold_war/lesson_2_sB.mp3",
+            "studio_voice_label": "Protocol of Proceedings of the C…"
           },
           "act_title": "Stage 2: The Polish Question & Liberated Europe — Why did the fate of post-war Poland become the primary catalyst for Allied breakdown?",
           "date_badge": "Feb–Mar 1945",
@@ -2291,7 +2315,9 @@
             "image_alt": "U.S. Army Signal Corps photograph showing Secretary of State James F. Byrnes, President Harry S. Truman, Soviet Premier Joseph Stalin, and Soviet Foreign Minister Vyacheslav Molotov standing behind a white iron balcony railing at Stalin’s Potsdam residence in July 1945",
             "teacher_notes": {
               "hinge_question": "Did Truman's aggressive, no-nonsense style trigger Soviet paranoia, or was Stalin already planning to dominate Eastern Europe regardless of who was US president?"
-            }
+            },
+            "studio_audio": "/audio/sources/cold_war/lesson_2_sC.mp3",
+            "studio_voice_label": "President Truman"
           },
           "image": "/images/cold_war/potsdam_conference_1945.jpg",
           "image_alt": "Colour U.S. Army Signal Corps photograph showing British Prime Minister Clement Attlee, U.S. President Harry S. Truman, and Soviet Premier Joseph Stalin seated in wicker armchairs at Cecilienhof Palace with Admiral Leahy, Ernest Bevin, James Byrnes, and Vyacheslav Molotov standing behind them",
@@ -2331,7 +2357,9 @@
             ],
             "teacher_notes": {
               "hinge_question": "Truman wrote that the atomic bomb might be 'the most terrible thing ever discovered.' Why did he still choose to drop it on Hiroshima and Nagasaki two weeks later?"
-            }
+            },
+            "studio_audio": "/audio/sources/cold_war/lesson_2_sD.mp3",
+            "studio_voice_label": "The Atomic Bomb and Truman’s Pot…"
           },
           "act_title": "Stage 4: The Trinity Test & Atomic Leverage — Why did Truman's disclosure of the atomic bomb at Potsdam increase Soviet suspicion rather than compliance?",
           "date_badge": "July 1945",
@@ -2372,7 +2400,9 @@
             "image_alt": "U.S. Army Signal Corps photograph showing British Prime Minister Winston Churchill in uniform, U.S. President Harry S. Truman in suit, and Soviet Premier Joseph Stalin in white tunic seated in wicker armchairs on the garden terrace of Cecilienhof Palace at Potsdam in July 1945",
             "teacher_notes": {
               "hinge_question": "Why did the pledge to treat Germany as a 'single economic unit' fail within months of signing this agreement?"
-            }
+            },
+            "studio_audio": "/audio/sources/cold_war/lesson_2_sE.mp3",
+            "studio_voice_label": "Churchill"
           },
           "image": "/images/ks3_cold_war/cw_l2_b4_allies_brandenburg_gate_1945.jpg",
           "image_alt": "Original July 1945 War Office colour photograph showing British Field Marshal Sir Bernard Montgomery in black beret walking alongside decorated Soviet Marshals Georgy Zhukov and Konstantin Rokossovsky in front of the shell-damaged Brandenburg Gate and gutted Berlin buildings",
@@ -2480,7 +2510,9 @@
           "teacher_notes": {
             "source_context": "This declaration was hailed in the West as a triumph for democracy. However, Stalin interpreted 'democratic' governments in Eastern Europe to mean governments that were unconditionally friendly and subservient to Moscow. **Hinge Question:** Why did Stalin's definition of 'democracy' in Poland completely contradict what Churchill and Roosevelt expected when they signed this declaration?",
             "hinge_question": "Why did Stalin's definition of 'democracy' in Poland completely contradict what Churchill and Roosevelt expected when they signed this declaration?"
-          }
+          },
+          "studio_audio": "/audio/sources/cold_war/lesson_2_sB.mp3",
+          "studio_voice_label": "Protocol of Proceedings of the C…"
         },
         {
           "id": "cw_l2_src_c",
@@ -2503,7 +2535,9 @@
             "source_context": "Unlike the diplomatic Roosevelt, Truman was blunt and combative. Having received news of the successful Trinity atomic bomb test just hours earlier, Truman was determined to halt Soviet expansion in Eastern Europe. **Hinge Question:** Did Truman's aggressive, no-nonsense style trigger Soviet paranoia, or was Stalin already planning to dominate Eastern Europe regardless of who was US president?",
             "hinge_question": "Did Truman's aggressive, no-nonsense style trigger Soviet paranoia, or was Stalin already planning to dominate Eastern Europe regardless of who was US president?"
           },
-          "image_alt": "U.S. Army Signal Corps photograph showing Secretary of State James F. Byrnes, President Harry S. Truman, Soviet Premier Joseph Stalin, and Soviet Foreign Minister Vyacheslav Molotov standing behind a white iron balcony railing at Stalin’s Potsdam residence in July 1945"
+          "image_alt": "U.S. Army Signal Corps photograph showing Secretary of State James F. Byrnes, President Harry S. Truman, Soviet Premier Joseph Stalin, and Soviet Foreign Minister Vyacheslav Molotov standing behind a white iron balcony railing at Stalin’s Potsdam residence in July 1945",
+          "studio_audio": "/audio/sources/cold_war/lesson_2_sC.mp3",
+          "studio_voice_label": "President Truman"
         },
         {
           "id": "cw_l2_src_d",
@@ -2525,7 +2559,9 @@
           "teacher_notes": {
             "source_context": "This deeply personal diary entry shows Truman grappling with the terrifying moral weight of atomic weaponry while simultaneously realizing that it gave America supreme geopolitical supremacy over Stalin. **Hinge Question:** Truman wrote that the atomic bomb might be 'the most terrible thing ever discovered.' Why did he still choose to drop it on Hiroshima and Nagasaki two weeks later?",
             "hinge_question": "Truman wrote that the atomic bomb might be 'the most terrible thing ever discovered.' Why did he still choose to drop it on Hiroshima and Nagasaki two weeks later?"
-          }
+          },
+          "studio_audio": "/audio/sources/cold_war/lesson_2_sD.mp3",
+          "studio_voice_label": "The Atomic Bomb and Truman’s Pot…"
         },
         {
           "id": "cw_l2_src_e",
@@ -2548,7 +2584,9 @@
             "source_context": "While the Potsdam Agreement mandated that Germany be treated as a 'single economic unit,' the four powers (US, USSR, Britain, France) each administered their own zones completely differently. Stalin systematically stripped his Eastern zone of industrial machinery as reparations, setting the stage for the permanent division of Germany. **Hinge Question:** Why did the pledge to treat Germany as a 'single economic unit' fail within months of signing this agreement?",
             "hinge_question": "Why did the pledge to treat Germany as a 'single economic unit' fail within months of signing this agreement?"
           },
-          "image_alt": "U.S. Army Signal Corps photograph showing British Prime Minister Winston Churchill in uniform, U.S. President Harry S. Truman in suit, and Soviet Premier Joseph Stalin in white tunic seated in wicker armchairs on the garden terrace of Cecilienhof Palace at Potsdam in July 1945"
+          "image_alt": "U.S. Army Signal Corps photograph showing British Prime Minister Winston Churchill in uniform, U.S. President Harry S. Truman in suit, and Soviet Premier Joseph Stalin in white tunic seated in wicker armchairs on the garden terrace of Cecilienhof Palace at Potsdam in July 1945",
+          "studio_audio": "/audio/sources/cold_war/lesson_2_sE.mp3",
+          "studio_voice_label": "Churchill"
         }
       ],
       "causal_domino_spine": {
@@ -3659,7 +3697,9 @@
       "banner_position": "center 30%",
       "enquiry": "Why did wartime allies turn into bitter rivals between Yalta and Potsdam?",
       "enquiry_question": "Why did wartime allies turn into bitter rivals between Yalta and Potsdam?",
-      "banner_caption": "Plenary Session Around the Round Table at Cecilienhof Palace, Potsdam (July 1945): Within five months of Yalta, clashes over Poland, German reparations, and America’s atomic monopoly fractured the Grand Alliance."
+      "banner_caption": "Plenary Session Around the Round Table at Cecilienhof Palace, Potsdam (July 1945): Within five months of Yalta, clashes over Poland, German reparations, and America’s atomic monopoly fractured the Grand Alliance.",
+      "prologue_audio": "/audio/lessons/cold_war/lesson_2_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · Historian"
     },
     {
       "id": "lesson_3",
@@ -3806,7 +3846,9 @@
             ],
             "teacher_notes": {
               "hinge_question": "Why did Soviet newspapers immediately attack Churchill as a 'warmonger' following this speech?"
-            }
+            },
+            "studio_audio": "/audio/sources/cold_war/lesson_3_sA.mp3",
+            "studio_voice_label": "Winston Churchill’s \"Sinews of P…"
           },
           "act_title": "Stage 1: Churchill's Fulton 'Iron Curtain' Address — Why did Churchill's 'Iron Curtain' speech mark a decisive turning point in Western public perceptions of the USSR?",
           "date_badge": "March 1946",
@@ -3997,7 +4039,9 @@
             "image_alt": "Official printed 80th Congress House of Representatives Document No. 171 titled RECOMMENDATION FOR ASSISTANCE TO GREECE AND TURKEY — ADDRESS OF THE PRESIDENT OF THE UNITED STATES DELIVERED BEFORE A JOINT SESSION OF THE SENATE AND THE HOUSE OF REPRESENTATIVES, MARCH 12, 1947",
             "teacher_notes": {
               "hinge_question": "Was the Truman Doctrine a noble defense of human freedom, or an aggressive American pledge to police the entire globe?"
-            }
+            },
+            "studio_audio": "/audio/sources/cold_war/lesson_3_sB.mp3",
+            "studio_voice_label": "President Truman Delivering the…"
           },
           "image": "/images/ks3_cold_war/cw_l3_b1_marshall_plan_germany_nara_541691.jpg",
           "image_alt": "U.S. National Archives photograph showing a smiling West Berlin reconstruction workman shovelling building mortar in front of a large wall sign featuring the Berlin Bear and Stars-and-Stripes shield reading BERLINER-NOT-PROGRAMM MIT MARSHALL-PLAN-HILFE",
@@ -4116,7 +4160,9 @@
             "image_alt": "White House photograph by Abbie Rowe showing President Harry S. Truman seated at his Oval Office desk signing the instrument implementing the North Atlantic Treaty surrounded by Secretary of State Dean Acheson, Defense Secretary Louis Johnson, and Congressional leaders in August 1949",
             "teacher_notes": {
               "hinge_question": "Why was signing Article 5 such a historic turning point for the United States, which had avoided permanent European military alliances for 150 years?"
-            }
+            },
+            "studio_audio": "/audio/sources/cold_war/lesson_3_sE.mp3",
+            "studio_voice_label": "President Truman and Foreign Min…"
           },
           "act_title": "Stage 5: Permanent Partition: NATO vs Warsaw Pact — Why did the Berlin Crisis result in the formal military and political partition of Europe?",
           "date_badge": "1949–1955",
@@ -4203,7 +4249,9 @@
           "teacher_notes": {
             "source_context": "Churchill was now the leader of the opposition in Britain. Free from diplomatic office, he used his speech to issue a direct warning to the American people that Stalin had betrayed his wartime promises and was turning Eastern Europe into a prison of communist police states. **Hinge Question:** Why did Soviet newspapers immediately attack Churchill as a 'warmonger' following this speech?",
             "hinge_question": "Why did Soviet newspapers immediately attack Churchill as a 'warmonger' following this speech?"
-          }
+          },
+          "studio_audio": "/audio/sources/cold_war/lesson_3_sA.mp3",
+          "studio_voice_label": "Winston Churchill’s \"Sinews of P…"
         },
         {
           "id": "cw_l3_src_b",
@@ -4226,7 +4274,9 @@
             "source_context": "Britain had informed Washington that it could no longer afford to fund the royalist Greek government fighting communist guerrillas. Truman seized the moment to announce an open-ended American commitment to intervene globally to stop the spread of communism. **Hinge Question:** Was the Truman Doctrine a noble defense of human freedom, or an aggressive American pledge to police the entire globe?",
             "hinge_question": "Was the Truman Doctrine a noble defense of human freedom, or an aggressive American pledge to police the entire globe?"
           },
-          "image_alt": "Official printed 80th Congress House of Representatives Document No. 171 titled RECOMMENDATION FOR ASSISTANCE TO GREECE AND TURKEY — ADDRESS OF THE PRESIDENT OF THE UNITED STATES DELIVERED BEFORE A JOINT SESSION OF THE SENATE AND THE HOUSE OF REPRESENTATIVES, MARCH 12, 1947"
+          "image_alt": "Official printed 80th Congress House of Representatives Document No. 171 titled RECOMMENDATION FOR ASSISTANCE TO GREECE AND TURKEY — ADDRESS OF THE PRESIDENT OF THE UNITED STATES DELIVERED BEFORE A JOINT SESSION OF THE SENATE AND THE HOUSE OF REPRESENTATIVES, MARCH 12, 1947",
+          "studio_audio": "/audio/sources/cold_war/lesson_3_sB.mp3",
+          "studio_voice_label": "President Truman Delivering the…"
         },
         {
           "id": "cw_l3_src_c",
@@ -4291,7 +4341,9 @@
             "source_context": "The Berlin Blockade convinced Western leaders that Stalin was prepared to use force to expand his empire. NATO was created to link American nuclear power directly to the defense of Western Europe. **Hinge Question:** Why was signing Article 5 such a historic turning point for the United States, which had avoided permanent European military alliances for 150 years?",
             "hinge_question": "Why was signing Article 5 such a historic turning point for the United States, which had avoided permanent European military alliances for 150 years?"
           },
-          "image_alt": "White House photograph by Abbie Rowe showing President Harry S. Truman seated at his Oval Office desk signing the instrument implementing the North Atlantic Treaty surrounded by Secretary of State Dean Acheson, Defense Secretary Louis Johnson, and Congressional leaders in August 1949"
+          "image_alt": "White House photograph by Abbie Rowe showing President Harry S. Truman seated at his Oval Office desk signing the instrument implementing the North Atlantic Treaty surrounded by Secretary of State Dean Acheson, Defense Secretary Louis Johnson, and Congressional leaders in August 1949",
+          "studio_audio": "/audio/sources/cold_war/lesson_3_sE.mp3",
+          "studio_voice_label": "President Truman and Foreign Min…"
         }
       ],
       "causal_domino_spine": {
@@ -5400,7 +5452,9 @@
       "banner_position": "center 35%",
       "enquiry": "How did containment and the Berlin Blockade divide Europe into rival blocs?",
       "enquiry_question": "How did containment and the Berlin Blockade divide Europe into rival blocs?",
-      "banner_caption": "Expanding Tempelhof Runway Under Approaching USAF C-54 Skymaster During the Berlin Airlift (1948, U.S. Air Force): Western airpower supplied 2.5 million West Berliners for 324 days to defeat Stalin’s land blockade."
+      "banner_caption": "Expanding Tempelhof Runway Under Approaching USAF C-54 Skymaster During the Berlin Airlift (1948, U.S. Air Force): Western airpower supplied 2.5 million West Berliners for 324 days to defeat Stalin’s land blockade.",
+      "prologue_audio": "/audio/lessons/cold_war/lesson_3_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · Historian"
     },
     {
       "id": "lesson_4",
@@ -5738,7 +5792,9 @@
             ],
             "teacher_notes": {
               "hinge_question": "Why does the cartoonist show both leaders sweating with their fingers hovering over the detonator buttons?"
-            }
+            },
+            "studio_audio": "/audio/sources/cold_war/lesson_4_sB.mp3",
+            "studio_voice_label": "Leslie Illingworth"
           },
           "image": "/images/cold_war/jfk_excomm_cabinet_room_1962.jpg",
           "image_alt": "White House photograph showing President John F. Kennedy standing with bowed head beside Secretary of State Dean Rusk and Defense Secretary Robert McNamara in the Cabinet Room during the October 1962 missile crisis",
@@ -5779,7 +5835,9 @@
             ],
             "teacher_notes": {
               "hinge_question": "General Curtis LeMay urged Kennedy to immediately bomb the missile sites. Why did Kennedy resist military pressure and choose a naval quarantine instead?"
-            }
+            },
+            "studio_audio": "/audio/sources/cold_war/lesson_4_sC.mp3",
+            "studio_voice_label": "President John F. Kennedy’s Addr…"
           },
           "image": "/images/cold_war/us_navy_p2_neptune_cuban_missile_1962.jpg",
           "image_alt": "Official U.S. Navy aerial photograph showing a twin-engine Lockheed P-2H Neptune patrol aircraft banking low over a Soviet cargo freighter carrying deck-lashed crates across the Atlantic during the October 1962 Cuban quarantine",
@@ -5819,7 +5877,9 @@
             ],
             "teacher_notes": {
               "hinge_question": "Does Khrushchev’s emotional, unedited letter show a dangerous dictator backing down, or a terrified human being desperate to prevent a nuclear apocalypse?"
-            }
+            },
+            "studio_audio": "/audio/sources/cold_war/lesson_4_sD.mp3",
+            "studio_voice_label": "Draft of President Kennedy’s Con…"
           },
           "image": "/images/cold_war/adlai_stevenson_un_cuba_1962.jpg",
           "image_alt": "United Nations Security Council photograph from 25 October 1962 showing U.S. Ambassador Adlai Stevenson seated at the curved council table while enlarged U-2 aerial reconnaissance photographs of Cuban missile sites stand displayed on easels",
@@ -6064,7 +6124,9 @@
           "teacher_notes": {
             "source_context": "Illingworth perfectly captured the concept of Mutually Assured Destruction (MAD). Both Kennedy and Khrushchev were trapped by their own military arsenals; pushing for victory meant total annihilation for both. **Hinge Question:** Why does the cartoonist show both leaders sweating with their fingers hovering over the detonator buttons?",
             "hinge_question": "Why does the cartoonist show both leaders sweating with their fingers hovering over the detonator buttons?"
-          }
+          },
+          "studio_audio": "/audio/sources/cold_war/lesson_4_sB.mp3",
+          "studio_voice_label": "Leslie Illingworth"
         },
         {
           "id": "cw_l4_src_c",
@@ -6087,7 +6149,9 @@
           "teacher_notes": {
             "source_context": "Kennedy had concealed the crisis for six days while debating secretly with his Executive Committee (ExComm). This address informed an astonished world that nuclear armageddon was suddenly imminent. **Hinge Question:** General Curtis LeMay urged Kennedy to immediately bomb the missile sites. Why did Kennedy resist military pressure and choose a naval quarantine instead?",
             "hinge_question": "General Curtis LeMay urged Kennedy to immediately bomb the missile sites. Why did Kennedy resist military pressure and choose a naval quarantine instead?"
-          }
+          },
+          "studio_audio": "/audio/sources/cold_war/lesson_4_sC.mp3",
+          "studio_voice_label": "President John F. Kennedy’s Addr…"
         },
         {
           "id": "cw_l4_src_d",
@@ -6109,7 +6173,9 @@
           "teacher_notes": {
             "source_context": "This remarkable letter revealed to Kennedy that Khrushchev was terrified of the crisis spiraling out of control. It opened the diplomatic path that allowed both sides to reach a face-saving compromise. **Hinge Question:** Does Khrushchev’s emotional, unedited letter show a dangerous dictator backing down, or a terrified human being desperate to prevent a nuclear apocalypse?",
             "hinge_question": "Does Khrushchev’s emotional, unedited letter show a dangerous dictator backing down, or a terrified human being desperate to prevent a nuclear apocalypse?"
-          }
+          },
+          "studio_audio": "/audio/sources/cold_war/lesson_4_sD.mp3",
+          "studio_voice_label": "Draft of President Kennedy’s Con…"
         },
         {
           "id": "cw_l4_src_e",
@@ -7240,7 +7306,9 @@
       "banner_position": "center 35%",
       "enquiry": "How close did Cuba bring nuclear war in 1962—and how was it avoided?",
       "enquiry_question": "How close did Cuba bring nuclear war in 1962—and how was it avoided?",
-      "banner_caption": "White House ExComm Deliberations During the Cuban Missile Crisis (29 October 1962, Cecil Stoughton, JFK Library): Thirteen days on the brink of nuclear war at DEFCON 2."
+      "banner_caption": "White House ExComm Deliberations During the Cuban Missile Crisis (29 October 1962, Cecil Stoughton, JFK Library): Thirteen days on the brink of nuclear war at DEFCON 2.",
+      "prologue_audio": "/audio/lessons/cold_war/lesson_4_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · Historian"
     },
     {
       "id": "lesson_5",
@@ -7387,7 +7455,9 @@
             ],
             "teacher_notes": {
               "hinge_question": "Did the 'Domino Theory' accurately describe the spread of Asian communism, or did it blind American leaders to local struggles for national independence?"
-            }
+            },
+            "studio_audio": "/audio/sources/cold_war/lesson_5_sA.mp3",
+            "studio_voice_label": "Declassified Cover of National S…"
           },
           "act_title": "Stage 1: Asian Cold War & NSC-68 — Why did the 1949 Chinese Revolution expand the Cold War from Europe into Asia?",
           "date_badge": "1949–1950",
@@ -7579,7 +7649,9 @@
             "teacher_notes": {
               "source_context": "Following General Douglas MacArthur’s triumphant landing at Inchon in September 1950, UN forces liberated Seoul and pursued fleeing North Korean forces northward across the 38th Parallel. Washington dismissed Zhou Enlai’s warning as a diplomatic bluff. In late October 1950, nearly 300,000 Chinese 'People's Volunteers' secretly crossed the frozen Yalu River, ambushing UN troops and pushing them back south of Seoul in temperatures of -30°C. **Hinge Question:** Why did the US government dismiss Zhou Enlai’s warning as a bluff, and what catastrophic military consequences followed?",
               "hinge_question": "Why did the US government dismiss Zhou Enlai’s warning as a bluff, and what catastrophic military consequences followed?"
-            }
+            },
+            "studio_audio": "/audio/sources/cold_war/lesson_5_sB.mp3",
+            "studio_voice_label": "Premier Zhou Enlai on UN Troops…"
           },
           "image": "/images/cold_war/korean_war_inchon_landing_1950.jpg",
           "image_alt": "U.S. Navy / Marine Corps combat photograph from 15 September 1950 showing helmeted U.S. Marines crouching inside a landing craft fitted with tall wooden scaling ladders heading toward the smoke-veiled seawall at Inchon, Korea",
@@ -7620,7 +7692,9 @@
             "image_alt": "U.S. Army combat photograph showing medic SP4 Lee C. Pugh of the 101st Airborne Division bandaging a wounded infantryman’s leg in tall jungle grass in South Vietnam in September 1967",
             "teacher_notes": {
               "hinge_question": "How does reading a young Vietnamese doctor’s private diary challenge the one-sided view of the Vietnam War often shown in Western movies?"
-            }
+            },
+            "studio_audio": "/audio/sources/cold_war/lesson_5_sC.mp3",
+            "studio_voice_label": "Frontline Medical Evacuation and…"
           },
           "act_title": "Stage 3: Indochina Escalation: Geneva to Tonkin — Why did the Gulf of Tonkin Resolution transform American involvement in Vietnam into a full-scale ground war?",
           "date_badge": "1954–1964",
@@ -7775,7 +7849,9 @@
           "teacher_notes": {
             "source_context": "NSC-68 transformed US foreign policy from regional containment in Europe into a militarized global crusade. Two months after it was signed, North Korea invaded South Korea, convincing Washington that Moscow was launching its global military offensive. **Hinge Question:** Did the 'Domino Theory' accurately describe the spread of Asian communism, or did it blind American leaders to local struggles for national independence?",
             "hinge_question": "Did the 'Domino Theory' accurately describe the spread of Asian communism, or did it blind American leaders to local struggles for national independence?"
-          }
+          },
+          "studio_audio": "/audio/sources/cold_war/lesson_5_sA.mp3",
+          "studio_voice_label": "Declassified Cover of National S…"
         },
         {
           "id": "cw_l5_src_b",
@@ -7797,7 +7873,9 @@
           "teacher_notes": {
             "source_context": "Following General Douglas MacArthur’s triumphant landing at Inchon in September 1950, UN forces liberated Seoul and pursued fleeing North Korean forces northward across the 38th Parallel. Washington dismissed Zhou Enlai’s warning as a diplomatic bluff. In late October 1950, nearly 300,000 Chinese 'People's Volunteers' secretly crossed the frozen Yalu River, ambushing UN troops and pushing them back south of Seoul in temperatures of -30°C. **Hinge Question:** Why did the US government dismiss Zhou Enlai’s warning as a bluff, and what catastrophic military consequences followed?",
             "hinge_question": "Why did the US government dismiss Zhou Enlai’s warning as a bluff, and what catastrophic military consequences followed?"
-          }
+          },
+          "studio_audio": "/audio/sources/cold_war/lesson_5_sB.mp3",
+          "studio_voice_label": "Premier Zhou Enlai on UN Troops…"
         },
         {
           "id": "cw_l5_src_c",
@@ -7820,7 +7898,9 @@
             "source_context": "Dr. Trâm’s diary was saved from burning by an American intelligence officer who was told by his translator: 'Do not burn this, it already has fire in it.' It gives an extraordinary, deeply human voice to the Vietnamese fighters who endured relentless American bombing. **Hinge Question:** How does reading a young Vietnamese doctor’s private diary challenge the one-sided view of the Vietnam War often shown in Western movies?",
             "hinge_question": "How does reading a young Vietnamese doctor’s private diary challenge the one-sided view of the Vietnam War often shown in Western movies?"
           },
-          "image_alt": "U.S. Army combat photograph showing medic SP4 Lee C. Pugh of the 101st Airborne Division bandaging a wounded infantryman’s leg in tall jungle grass in South Vietnam in September 1967"
+          "image_alt": "U.S. Army combat photograph showing medic SP4 Lee C. Pugh of the 101st Airborne Division bandaging a wounded infantryman’s leg in tall jungle grass in South Vietnam in September 1967",
+          "studio_audio": "/audio/sources/cold_war/lesson_5_sC.mp3",
+          "studio_voice_label": "Frontline Medical Evacuation and…"
         },
         {
           "id": "cw_l5_src_d",
@@ -8972,7 +9052,9 @@
       "banner_position": "center 42%",
       "enquiry": "Why did the Cold War turn into deadly wars in Korea and Vietnam?",
       "enquiry_question": "Why did the Cold War turn into deadly wars in Korea and Vietnam?",
-      "banner_caption": "U.S. Army UH-1 Huey Helicopters Lifting Off Over Lai Khe, South Vietnam (1967, U.S. Army): Superpower containment turned hot across Cold War battlefields in Korea and Vietnam."
+      "banner_caption": "U.S. Army UH-1 Huey Helicopters Lifting Off Over Lai Khe, South Vietnam (1967, U.S. Army): Superpower containment turned hot across Cold War battlefields in Korea and Vietnam.",
+      "prologue_audio": "/audio/lessons/cold_war/lesson_5_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · Historian"
     },
     {
       "id": "lesson_6",
@@ -9159,7 +9241,9 @@
             "image_alt": "Declassified August 1961 photograph showing an East German border soldier viewed through dense criss-crossing strands of barbed wire attached to a concrete post as he strings wire to seal the East Berlin sector border",
             "teacher_notes": {
               "hinge_question": "The East German government called the wall an 'Anti-Fascist Protection Rampart.' Who were the machine guns and watchtowers really pointing at?"
-            }
+            },
+            "studio_audio": "/audio/sources/cold_war/lesson_6_sB.mp3",
+            "studio_voice_label": "East German Troops Stringing Bar…"
           },
           "act_title": "Stage 2: Gorbachev's Dual Reforms: Glasnost & Perestroika — Why did Gorbachev's reform policies unintentionally destabilize the Soviet system they were meant to save?",
           "date_badge": "1985–1988",
@@ -9274,7 +9358,9 @@
             ],
             "teacher_notes": {
               "hinge_question": "Why did the Soviet command economy excel at building nuclear missiles and space rockets, but completely fail at providing shoes, toilet paper, and cars for its people?"
-            }
+            },
+            "studio_audio": "/audio/sources/cold_war/lesson_6_sC.mp3",
+            "studio_voice_label": "Soviet Shoppers Facing Chronic S…"
           },
           "image": "/images/cold_war/reagan_gorbachev_geneva_summit_1985.jpg",
           "image_alt": "White House photograph showing U.S. President Ronald Reagan and Soviet General Secretary Mikhail Gorbachev laughing in leather armchairs beside a roaring stone fireplace during their first summit meeting in Geneva in November 1985",
@@ -9355,7 +9441,9 @@
             "image_alt": "Close-up RIA Novosti colour photograph of Soviet leader Mikhail Gorbachev in dark suit and striped tie raising his right index finger as he speaks behind podium microphones",
             "teacher_notes": {
               "hinge_question": "Did Gorbachev's reforms destroy the Soviet Union, or was the communist system already doomed by economic failure and the arms race?"
-            }
+            },
+            "studio_audio": "/audio/sources/cold_war/lesson_6_sE.mp3",
+            "studio_voice_label": "Mikhail Gorbachev Delivering Far…"
           },
           "act_title": "Stage 5: The August Coup & Soviet Dissolution — How did the failed hardline coup of August 1991 accelerate the final dissolution of the Soviet Union?",
           "date_badge": "1991",
@@ -9464,7 +9552,9 @@
             "source_context": "Between 1949 and 1961, over 2.7 million East Germans (mostly young professionals, doctors, and engineers) fled to the West through Berlin. In 'Operation Rose', East German leader Walter Ulbricht sealed the border in a single night. **Hinge Question:** The East German government called the wall an 'Anti-Fascist Protection Rampart.' Who were the machine guns and watchtowers really pointing at?",
             "hinge_question": "The East German government called the wall an 'Anti-Fascist Protection Rampart.' Who were the machine guns and watchtowers really pointing at?"
           },
-          "image_alt": "Declassified August 1961 photograph showing an East German border soldier viewed through dense criss-crossing strands of barbed wire attached to a concrete post as he strings wire to seal the East Berlin sector border"
+          "image_alt": "Declassified August 1961 photograph showing an East German border soldier viewed through dense criss-crossing strands of barbed wire attached to a concrete post as he strings wire to seal the East Berlin sector border",
+          "studio_audio": "/audio/sources/cold_war/lesson_6_sB.mp3",
+          "studio_voice_label": "East German Troops Stringing Bar…"
         },
         {
           "id": "cw_l6_src_c",
@@ -9486,7 +9576,9 @@
           "teacher_notes": {
             "source_context": "By 1980, the Soviet economy was stagnating. While the USSR matched America in nuclear warheads and space exploration, its planned economy was incapable of producing basic consumer goods, forcing citizens to spend hours queuing for shoes, toilet paper, and meat. **Hinge Question:** Why did the Soviet command economy excel at building nuclear missiles and space rockets, but completely fail at providing shoes, toilet paper, and cars for its people?",
             "hinge_question": "Why did the Soviet command economy excel at building nuclear missiles and space rockets, but completely fail at providing shoes, toilet paper, and cars for its people?"
-          }
+          },
+          "studio_audio": "/audio/sources/cold_war/lesson_6_sC.mp3",
+          "studio_voice_label": "Soviet Shoppers Facing Chronic S…"
         },
         {
           "id": "cw_l6_src_d",
@@ -9531,7 +9623,9 @@
             "source_context": "Gorbachev had sought to save socialism through reform (*Glasnost* and *Perestroika*), not destroy it. His refusal to use military violence to hold the Soviet empire together allowed 15 new independent nations to emerge peacefully. **Hinge Question:** Did Gorbachev's reforms destroy the Soviet Union, or was the communist system already doomed by economic failure and the arms race?",
             "hinge_question": "Did Gorbachev's reforms destroy the Soviet Union, or was the communist system already doomed by economic failure and the arms race?"
           },
-          "image_alt": "Close-up RIA Novosti colour photograph of Soviet leader Mikhail Gorbachev in dark suit and striped tie raising his right index finger as he speaks behind podium microphones"
+          "image_alt": "Close-up RIA Novosti colour photograph of Soviet leader Mikhail Gorbachev in dark suit and striped tie raising his right index finger as he speaks behind podium microphones",
+          "studio_audio": "/audio/sources/cold_war/lesson_6_sE.mp3",
+          "studio_voice_label": "Mikhail Gorbachev Delivering Far…"
         }
       ],
       "causal_domino_spine": {
@@ -10642,7 +10736,9 @@
       "banner_position": "center 38%",
       "enquiry": "Why did Soviet rule in Eastern Europe—and the USSR itself—collapse by 1991?",
       "enquiry_question": "Why did Soviet rule in Eastern Europe—and the USSR itself—collapse by 1991?",
-      "banner_caption": "Crowds Gathered Beside the Breached Berlin Wall at Potsdamer Platz (November 1989, U.S. Department of Defense): People power and Gorbachev’s reforms brought down the Iron Curtain peacefully."
+      "banner_caption": "Crowds Gathered Beside the Breached Berlin Wall at Potsdamer Platz (November 1989, U.S. Department of Defense): People power and Gorbachev’s reforms brought down the Iron Curtain peacefully.",
+      "prologue_audio": "/audio/lessons/cold_war/lesson_6_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · Historian"
     },
     {
       "id": "lesson_7",
@@ -10789,7 +10885,9 @@
             ],
             "teacher_notes": {
               "hinge_question": "If having 500 nuclear bombs is enough to destroy human civilization, why did the two superpowers spend billions building over 60,000 warheads?"
-            }
+            },
+            "studio_audio": "/audio/sources/cold_war/lesson_7_sA.mp3",
+            "studio_voice_label": "The Castle Bravo 15-Megaton Ther…"
           },
           "act_title": "Stage 1: The Eurocentric Myth of the 'Long Peace' — Why is characterizing the Cold War as a 'peaceful' era an inaccurate Eurocentric perspective?",
           "date_badge": "1945–1990",
@@ -10947,7 +11045,9 @@
             ],
             "teacher_notes": {
               "hinge_question": "If over 20 million people died in proxy wars between 1945 and 1991, why do many Western textbooks still describe the Cold War as an era of 'peace'?"
-            }
+            },
+            "studio_audio": "/audio/sources/cold_war/lesson_7_sE.mp3",
+            "studio_voice_label": "The Global Cold War and the Prox…"
           },
           "act_title": "Stage 5: The Synoptic Verdict: Total War in Disguise — To what extent was the Cold War an era of total ideological warfare conducted without direct superpower confrontation?",
           "date_badge": "1945–1991",
@@ -11127,7 +11227,9 @@
           "teacher_notes": {
             "source_context": "Archival photograph of the 15-megaton Castle Bravo thermonuclear detonation on Bikini Atoll, 1 March 1954. The hydrogen bomb ushered in the era of thermonuclear overkill and Mutual Assured Destruction. **Hinge Question:** Why did the terrifying destructive power of thermonuclear weapons like Castle Bravo paradoxically prevent the USA and USSR from ever engaging in direct military conflict?",
             "hinge_question": "If having 500 nuclear bombs is enough to destroy human civilization, why did the two superpowers spend billions building over 60,000 warheads?"
-          }
+          },
+          "studio_audio": "/audio/sources/cold_war/lesson_7_sA.mp3",
+          "studio_voice_label": "The Castle Bravo 15-Megaton Ther…"
         },
         {
           "id": "cw_l7_src_b",
@@ -11213,7 +11315,9 @@
           "teacher_notes": {
             "source_context": "Westad’s groundbreaking work forced historians to rethink the traditional narrative. He argued that the true battlefield of the Cold War was not Europe, but the Global South, where the superpowers treated developing nations as disposable chessboard pawns. **Hinge Question:** If over 20 million people died in proxy wars between 1945 and 1991, why do many Western textbooks still describe the Cold War as an era of 'peace'?",
             "hinge_question": "If over 20 million people died in proxy wars between 1945 and 1991, why do many Western textbooks still describe the Cold War as an era of 'peace'?"
-          }
+          },
+          "studio_audio": "/audio/sources/cold_war/lesson_7_sE.mp3",
+          "studio_voice_label": "The Global Cold War and the Prox…"
         }
       ],
       "causal_domino_spine": {
@@ -12315,7 +12419,9 @@
       "banner_position": "center 45%",
       "enquiry": "Why do historians argue the ‘Cold War’ was never truly cold outside Europe?",
       "enquiry_question": "Why do historians argue the ‘Cold War’ was never truly cold outside Europe?",
-      "banner_caption": "Operation Crossroads \"Baker\" Atomic Detonation at Bikini Atoll (25 July 1946, Joint Task Force One): Nuclear terror kept Europe frozen in a \"Long Peace\" while proxy wars raged across four continents."
+      "banner_caption": "Operation Crossroads \"Baker\" Atomic Detonation at Bikini Atoll (25 July 1946, Joint Task Force One): Nuclear terror kept Europe frozen in a \"Long Peace\" while proxy wars raged across four continents.",
+      "prologue_audio": "/audio/lessons/cold_war/lesson_7_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · Historian"
     }
   ],
   "homepage_background": "/images/cold_war_cover.jpg",

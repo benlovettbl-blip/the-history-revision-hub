@@ -1090,7 +1090,9 @@ export default {
                 "hinge_question": "Why was de jure (legal) segregation in the South significantly harder to overturn than de facto (customary) segregation in the North?"
               },
               "source_context": "Mississippi Department of Archives and History, State Statute Compendium. The Mississippi State Legislature for State law enforcement, business owners, and all southern residents with the objective: To codify White supremacy into statutory law and criminalise racial integration under the guise of maintaining public order..",
-              "text": "The Mississippi State Code (§7785): All railroad companies and bus operators carrying passengers in this state shall provide equal but separate accommodations for the white and colored races by providing separate cars, coaches, or waiting rooms... No person shall be permitted to occupy a seat in a coach or room other than the one assigned to his or her race. Any conductor or official willfully failing to enforce this law shall be guilty of a misdemeanor."
+              "text": "The Mississippi State Code (§7785): All railroad companies and bus operators carrying passengers in this state shall provide equal but separate accommodations for the white and colored races by providing separate cars, coaches, or waiting rooms... No person shall be permitted to occupy a seat in a coach or room other than the one assigned to his or her race. Any conductor or official willfully failing to enforce this law shall be guilty of a misdemeanor.",
+              "studio_audio": "/audio/sources/usa/lesson_1_1_sA.mp3",
+              "studio_voice_label": "Mississippi State Code Statute E…"
             }
           ],
           "image": "/images/usa/maps/usa_map_l1_jim_crow_segregation_1954.svg",
@@ -1257,7 +1259,9 @@ export default {
                 "hinge_question": "Why did southern white registrars prioritize disenfranchising Black citizens above all other forms of segregation?"
               },
               "source_context": "National Association for the Advancement of Colored People (NAACP) Legal Defense Archive. Amzie Moore, World War II veteran, local entrepreneur, and NAACP field secretary for NAACP national legal counsel and federal civil rights attorneys preparing test cases with the objective: To systematically record documented evidence of poll tax extortion and arbitrary literacy tests for federal litigation..",
-              "text": "When Black citizens attempted to register to vote in Sunflower County, the white circuit clerk demanded that they copy and interpret complex sections of the Mississippi State Constitution, such as the section dealing with habeas corpus or writ of mandamus. If an applicant missed a single comma, the registrar pronounced them illiterate and rejected their application. Those who persisted were visited by the Citizens' Council, fired from their jobs, and denied bank loans."
+              "text": "When Black citizens attempted to register to vote in Sunflower County, the white circuit clerk demanded that they copy and interpret complex sections of the Mississippi State Constitution, such as the section dealing with habeas corpus or writ of mandamus. If an applicant missed a single comma, the registrar pronounced them illiterate and rejected their application. Those who persisted were visited by the Citizens' Council, fired from their jobs, and denied bank loans.",
+              "studio_audio": "/audio/sources/usa/lesson_1_1_sC.mp3",
+              "studio_voice_label": "Sworn Deposition of Amzie Moore…"
             }
           ],
           "image": "/units/usa/assets/sources/kkk-march-washington-1926.jpg",
@@ -1303,7 +1307,9 @@ export default {
               "src": "/units/usa/assets/sources/thurgood_marshall_naacp_counsel.jpg",
               "source": "/units/usa/assets/sources/portraits/thurgood_marshall.jpg",
               "caption": "Thurgood Marshall (1908–1993), Chief Legal Counsel for the NAACP Legal Defense Fund, who formulated and argued the landmark Brown v. Board of Education case before the US Supreme Court (Library of Congress, c. 1953).",
-              "text": "We are not asking for charity. We are not asking for special treatment. We are asking for the rights guaranteed to us under the Constitution of the United States. We have established beyond question that 'separate but equal' is a myth, designed for one purpose and one purpose only—to perpetuate the badge of slavery upon an entire race of people. The time has come to destroy segregation at its very root."
+              "text": "We are not asking for charity. We are not asking for special treatment. We are asking for the rights guaranteed to us under the Constitution of the United States. We have established beyond question that 'separate but equal' is a myth, designed for one purpose and one purpose only—to perpetuate the badge of slavery upon an entire race of people. The time has come to destroy segregation at its very root.",
+              "studio_audio": "/audio/sources/usa/lesson_1_1_sD.mp3",
+              "studio_voice_label": "From an Address by Thurgood Mars…"
             }
           ],
           "isReversed": true,
@@ -2148,7 +2154,9 @@ export default {
             "hinge_question": "Why was de jure (legal) segregation in the South significantly harder to overturn than de facto (customary) segregation in the North?"
           },
           "source_context": "Mississippi Department of Archives and History, State Statute Compendium. The Mississippi State Legislature for State law enforcement, business owners, and all southern residents with the objective: To codify White supremacy into statutory law and criminalise racial integration under the guise of maintaining public order..",
-          "text": "The Mississippi State Code (§7785): All railroad companies and bus operators carrying passengers in this state shall provide equal but separate accommodations for the white and colored races by providing separate cars, coaches, or waiting rooms... No person shall be permitted to occupy a seat in a coach or room other than the one assigned to his or her race. Any conductor or official willfully failing to enforce this law shall be guilty of a misdemeanor."
+          "text": "The Mississippi State Code (§7785): All railroad companies and bus operators carrying passengers in this state shall provide equal but separate accommodations for the white and colored races by providing separate cars, coaches, or waiting rooms... No person shall be permitted to occupy a seat in a coach or room other than the one assigned to his or her race. Any conductor or official willfully failing to enforce this law shall be guilty of a misdemeanor.",
+          "studio_audio": "/audio/sources/usa/lesson_1_1_sA.mp3",
+          "studio_voice_label": "Mississippi State Code Statute E…"
         },
         {
           "id": "usa_lesson_1_1_b",
@@ -2198,7 +2206,9 @@ export default {
             "hinge_question": "Why did southern white registrars prioritize disenfranchising Black citizens above all other forms of segregation?"
           },
           "source_context": "National Association for the Advancement of Colored People (NAACP) Legal Defense Archive. Amzie Moore, World War II veteran, local entrepreneur, and NAACP field secretary for NAACP national legal counsel and federal civil rights attorneys preparing test cases with the objective: To systematically record documented evidence of poll tax extortion and arbitrary literacy tests for federal litigation..",
-          "text": "When Black citizens attempted to register to vote in Sunflower County, the white circuit clerk demanded that they copy and interpret complex sections of the Mississippi State Constitution, such as the section dealing with habeas corpus or writ of mandamus. If an applicant missed a single comma, the registrar pronounced them illiterate and rejected their application. Those who persisted were visited by the Citizens' Council, fired from their jobs, and denied bank loans."
+          "text": "When Black citizens attempted to register to vote in Sunflower County, the white circuit clerk demanded that they copy and interpret complex sections of the Mississippi State Constitution, such as the section dealing with habeas corpus or writ of mandamus. If an applicant missed a single comma, the registrar pronounced them illiterate and rejected their application. Those who persisted were visited by the Citizens' Council, fired from their jobs, and denied bank loans.",
+          "studio_audio": "/audio/sources/usa/lesson_1_1_sC.mp3",
+          "studio_voice_label": "Sworn Deposition of Amzie Moore…"
         },
         {
           "id": "usa_lesson_1_1_d",
@@ -2226,7 +2236,9 @@ export default {
           "src": "/units/usa/assets/sources/thurgood_marshall_naacp_counsel.jpg",
           "source": "/units/usa/assets/sources/portraits/thurgood_marshall.jpg",
           "caption": "Thurgood Marshall (1908–1993), Chief Legal Counsel for the NAACP Legal Defense Fund, who formulated and argued the landmark Brown v. Board of Education case before the US Supreme Court (Library of Congress, c. 1953).",
-          "text": "We are not asking for charity. We are not asking for special treatment. We are asking for the rights guaranteed to us under the Constitution of the United States. We have established beyond question that 'separate but equal' is a myth, designed for one purpose and one purpose only—to perpetuate the badge of slavery upon an entire race of people. The time has come to destroy segregation at its very root."
+          "text": "We are not asking for charity. We are not asking for special treatment. We are asking for the rights guaranteed to us under the Constitution of the United States. We have established beyond question that 'separate but equal' is a myth, designed for one purpose and one purpose only—to perpetuate the badge of slavery upon an entire race of people. The time has come to destroy segregation at its very root.",
+          "studio_audio": "/audio/sources/usa/lesson_1_1_sD.mp3",
+          "studio_voice_label": "From an Address by Thurgood Mars…"
         },
         {
           "id": "usa_lesson_1_1_e",
@@ -2642,7 +2654,9 @@ export default {
         ]
       },
       "banner_image": "/images/upgraded/gcse-p3/usa_l01_banner_jim_crow_cinema_belzoni_ms.jpg",
-      "banner_caption": "An African American man ascending the segregated exterior staircase marked \"COLORED ADM. 10¢\" above a ground-floor \"WHITE MEN ONLY\" entrance at the Crescent Theatre in Belzoni, Mississippi (Marion Post Wolcott, October 1939, Library of Congress FSA Collection)."
+      "banner_caption": "An African American man ascending the segregated exterior staircase marked \"COLORED ADM. 10¢\" above a ground-floor \"WHITE MEN ONLY\" entrance at the Crescent Theatre in Belzoni, Mississippi (Marion Post Wolcott, October 1939, Library of Congress FSA Collection).",
+      "prologue_audio": "/audio/lessons/usa/lesson_1_1_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · Historian"
     },
     {
       "id": "lesson_1_2",
@@ -2909,7 +2923,9 @@ export default {
               "src": "/units/usa/assets/sources/warren-court-1954.jpg",
               "source": "/units/usa/assets/sources/portraits/earl_warren.jpg",
               "caption": "The nine justices of the Warren Court in judicial robes (May 1954). Chief Justice Earl Warren (seated center) forged a unanimous 9–0 decision outlawing racial segregation in public schools.",
-              "text": "Does segregation of children in public schools solely on the basis of race, even though the physical facilities and other 'tangible' factors may be equal, deprive the children of the minority group of equal educational opportunities? We believe that it does... To separate them from others of similar age and qualifications solely because of their race generates a feeling of inferiority as to their status in the community that may affect their hearts and minds in a way unlikely ever to be undone... We conclude that in the field of public education the doctrine of 'separate but equal' has no place. Separate educational facilities are inherently unequal."
+              "text": "Does segregation of children in public schools solely on the basis of race, even though the physical facilities and other 'tangible' factors may be equal, deprive the children of the minority group of equal educational opportunities? We believe that it does... To separate them from others of similar age and qualifications solely because of their race generates a feeling of inferiority as to their status in the community that may affect their hearts and minds in a way unlikely ever to be undone... We conclude that in the field of public education the doctrine of 'separate but equal' has no place. Separate educational facilities are inherently unequal.",
+              "studio_audio": "/audio/sources/usa/lesson_1_2_sA.mp3",
+              "studio_voice_label": "From the Unanimous Supreme Court…"
             }
           ],
           "image": "/images/usa/kt1/usa_l02_b0_warren_court_1953_1954.jpg",
@@ -2955,7 +2971,9 @@ export default {
               "src": "/units/usa/assets/sources/southern_manifesto_congressional_record_1956.png",
               "source": "/units/usa/assets/sources/southern-manifesto-signing.jpg",
               "caption": "Facsimile of the 12 March 1956 Congressional Record publishing the 'Declaration of Constitutional Principles' (Southern Manifesto), signed by 101 Southern senators and representatives pledging 'Massive Resistance' to school desegregation.",
-              "text": "The unwarranted decision of the Supreme Court in the public school cases is now bearing the fruit always produced when men substitute naked power for established law... We regard the decisions of the Supreme Court as a clear abuse of judicial power. It climaxes a trend in the Federal judiciary undertaking to legislate, in derogation of the authority of Congress, and to encroach upon the reserved rights of the States and the people... We pledge ourselves to use all lawful means to bring about a reversal of this decision which is contrary to the Constitution and to prevent the use of force in its implementation."
+              "text": "The unwarranted decision of the Supreme Court in the public school cases is now bearing the fruit always produced when men substitute naked power for established law... We regard the decisions of the Supreme Court as a clear abuse of judicial power. It climaxes a trend in the Federal judiciary undertaking to legislate, in derogation of the authority of Congress, and to encroach upon the reserved rights of the States and the people... We pledge ourselves to use all lawful means to bring about a reversal of this decision which is contrary to the Constitution and to prevent the use of force in its implementation.",
+              "studio_audio": "/audio/sources/usa/lesson_1_2_sB.mp3",
+              "studio_voice_label": "Declaration of Constitutional Pr…"
             }
           ],
           "isReversed": true,
@@ -3002,7 +3020,9 @@ export default {
               "src": "/units/usa/assets/sources/orval_faubus_little_rock_1957.jpg",
               "source": "/units/usa/assets/sources/portraits/orval_faubus.jpg",
               "caption": "Arkansas Governor Orval Faubus speaking before press microphones backed by state police in Little Rock, September 1957, announcing troops would surround Central High School to block the Little Rock Nine.",
-              "text": "Now that a federal court has chosen for the first time to issue an order to forcibly integrate a high school, it becomes my duty as Governor of Arkansas to preserve the peace and public order. Evidence has been presented to me that violence and civil disorder are imminent if this integration is attempted tomorrow morning. Therefore, in the interest of public safety and tranquility, I have issued orders to Major General Sherman T. Clinger to place units of the Arkansas National Guard around Central High School. These troops are not there to enforce integration, but to maintain the status quo and prevent disorder."
+              "text": "Now that a federal court has chosen for the first time to issue an order to forcibly integrate a high school, it becomes my duty as Governor of Arkansas to preserve the peace and public order. Evidence has been presented to me that violence and civil disorder are imminent if this integration is attempted tomorrow morning. Therefore, in the interest of public safety and tranquility, I have issued orders to Major General Sherman T. Clinger to place units of the Arkansas National Guard around Central High School. These troops are not there to enforce integration, but to maintain the status quo and prevent disorder.",
+              "studio_audio": "/audio/sources/usa/lesson_1_2_sC.mp3",
+              "studio_voice_label": "Arkansas Governor Orval Faubus T…"
             }
           ],
           "image": "/images/usa/kt1/usa_l02_b2_eisenhower_faubus_newport_1957.jpg",
@@ -3901,7 +3921,9 @@ export default {
           "text": "Does segregation of children in public schools solely on the basis of race, even though the physical facilities and other 'tangible' factors may be equal, deprive the children of the minority group of equal educational opportunities? We believe that it does... To separate them from others of similar age and qualifications solely because of their race generates a feeling of inferiority as to their status in the community that may affect their hearts and minds in a way unlikely ever to be undone... We conclude that in the field of public education the doctrine of 'separate but equal' has no place. Separate educational facilities are inherently unequal.",
           "image": "/images/usa/kt1/usa_l02_s0_earl_warren_loc_portrait.jpg",
           "src": "/images/usa/kt1/usa_l02_s0_earl_warren_loc_portrait.jpg",
-          "image_alt": "Half-length portrait of Earl Warren (1891–1974), fourteenth Chief Justice of the United States who authored the unanimous 1954 Brown v. Board of Education opinion"
+          "image_alt": "Half-length portrait of Earl Warren (1891–1974), fourteenth Chief Justice of the United States who authored the unanimous 1954 Brown v. Board of Education opinion",
+          "studio_audio": "/audio/sources/usa/lesson_1_2_sA.mp3",
+          "studio_voice_label": "From the Unanimous Supreme Court…"
         },
         {
           "id": "usa_lesson_1_2_c",
@@ -3929,7 +3951,9 @@ export default {
           "src": "/units/usa/assets/sources/southern_manifesto_congressional_record_1956.png",
           "source": "/units/usa/assets/sources/southern-manifesto-signing.jpg",
           "caption": "Facsimile of the 12 March 1956 Congressional Record publishing the 'Declaration of Constitutional Principles' (Southern Manifesto), signed by 101 Southern senators and representatives pledging 'Massive Resistance' to school desegregation.",
-          "text": "The unwarranted decision of the Supreme Court in the public school cases is now bearing the fruit always produced when men substitute naked power for established law... We regard the decisions of the Supreme Court as a clear abuse of judicial power. It climaxes a trend in the Federal judiciary undertaking to legislate, in derogation of the authority of Congress, and to encroach upon the reserved rights of the States and the people... We pledge ourselves to use all lawful means to bring about a reversal of this decision which is contrary to the Constitution and to prevent the use of force in its implementation."
+          "text": "The unwarranted decision of the Supreme Court in the public school cases is now bearing the fruit always produced when men substitute naked power for established law... We regard the decisions of the Supreme Court as a clear abuse of judicial power. It climaxes a trend in the Federal judiciary undertaking to legislate, in derogation of the authority of Congress, and to encroach upon the reserved rights of the States and the people... We pledge ourselves to use all lawful means to bring about a reversal of this decision which is contrary to the Constitution and to prevent the use of force in its implementation.",
+          "studio_audio": "/audio/sources/usa/lesson_1_2_sB.mp3",
+          "studio_voice_label": "Declaration of Constitutional Pr…"
         },
         {
           "id": "usa_lesson_1_2_e",
@@ -3957,7 +3981,9 @@ export default {
           "src": "/units/usa/assets/sources/orval_faubus_little_rock_1957.jpg",
           "source": "/units/usa/assets/sources/portraits/orval_faubus.jpg",
           "caption": "Arkansas Governor Orval Faubus speaking before press microphones backed by state police in Little Rock, September 1957, announcing troops would surround Central High School to block the Little Rock Nine.",
-          "text": "Now that a federal court has chosen for the first time to issue an order to forcibly integrate a high school, it becomes my duty as Governor of Arkansas to preserve the peace and public order. Evidence has been presented to me that violence and civil disorder are imminent if this integration is attempted tomorrow morning. Therefore, in the interest of public safety and tranquility, I have issued orders to Major General Sherman T. Clinger to place units of the Arkansas National Guard around Central High School. These troops are not there to enforce integration, but to maintain the status quo and prevent disorder."
+          "text": "Now that a federal court has chosen for the first time to issue an order to forcibly integrate a high school, it becomes my duty as Governor of Arkansas to preserve the peace and public order. Evidence has been presented to me that violence and civil disorder are imminent if this integration is attempted tomorrow morning. Therefore, in the interest of public safety and tranquility, I have issued orders to Major General Sherman T. Clinger to place units of the Arkansas National Guard around Central High School. These troops are not there to enforce integration, but to maintain the status quo and prevent disorder.",
+          "studio_audio": "/audio/sources/usa/lesson_1_2_sC.mp3",
+          "studio_voice_label": "Arkansas Governor Orval Faubus T…"
         },
         {
           "id": "usa_lesson_1_2_a",
@@ -4403,7 +4429,9 @@ export default {
         ]
       },
       "banner_image": "/images/usa/kt1/usa_l02_banner_central_high_little_rock_loc.jpg",
-      "banner_caption": "Little Rock Central High School in Little Rock, Arkansas — the national flashpoint of the September 1957 school desegregation crisis between Governor Orval Faubus and President Dwight D. Eisenhower (Carol M. Highsmith Archive, Library of Congress)."
+      "banner_caption": "Little Rock Central High School in Little Rock, Arkansas — the national flashpoint of the September 1957 school desegregation crisis between Governor Orval Faubus and President Dwight D. Eisenhower (Carol M. Highsmith Archive, Library of Congress).",
+      "prologue_audio": "/audio/lessons/usa/lesson_1_2_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · Historian"
     },
     {
       "id": "lesson_1_3",
@@ -4716,7 +4744,9 @@ export default {
               "src": "/units/usa/assets/sources/jo_ann_robinson_booking_photo_1956.jpg",
               "source": "/units/usa/assets/sources/portraits/jo_ann_robinson.jpg",
               "caption": "Police arrest booking photograph of Jo Ann Robinson (1912–1992), President of the Women's Political Council (WPC), following the mass boycott indictments in Montgomery, Alabama (February 1956). Robinson spent the night of 1 December 1955 mimeographing 35,000 boycott leaflets following Rosa Parks' arrest.",
-              "text": "Another woman has been arrested and thrown into jail because she refused to get up out of her seat on the bus for a white person to sit down. It is the second time since the Claudette Colvin case that a Negro woman has been arrested for the same thing. This has to be stopped. Negroes have rights too, for if Negroes did not ride the buses, they could not operate. Three-fourths of the riders are Negroes, yet we are arrested, or have to stand over empty seats. If we do not do something to stop these arrests, they will continue. The next time it may be you, or your daughter, or mother. We are, therefore, asking every Negro to stay off the buses Monday in protest of the arrest and trial. Don't ride the buses to work, to town, to school, or anywhere on Monday."
+              "text": "Another woman has been arrested and thrown into jail because she refused to get up out of her seat on the bus for a white person to sit down. It is the second time since the Claudette Colvin case that a Negro woman has been arrested for the same thing. This has to be stopped. Negroes have rights too, for if Negroes did not ride the buses, they could not operate. Three-fourths of the riders are Negroes, yet we are arrested, or have to stand over empty seats. If we do not do something to stop these arrests, they will continue. The next time it may be you, or your daughter, or mother. We are, therefore, asking every Negro to stay off the buses Monday in protest of the arrest and trial. Don't ride the buses to work, to town, to school, or anywhere on Monday.",
+              "studio_audio": "/audio/sources/usa/lesson_1_3_sB.mp3",
+              "studio_voice_label": "Mimeographed Boycott Leaflet Aut…"
             }
           ],
           "isReversed": true,
@@ -4757,7 +4787,9 @@ export default {
                 "hinge_question": "Why were southern Black churches uniquely insulated from white economic retaliation compared to other community institutions?"
               },
               "source_context": "Dan Weiner / John F. Kennedy Presidential Library and Museum. Dan Weiner, photojournalist documenting civil rights leadership for National magazine subscribers and historical record with the objective: To document the emergence of twenty-six-year-old Dr Martin Luther King Jr. as the primary orator of the nascent movement..",
-              "text": "We are here this evening for serious business. We are here in a general sense because first and foremost we are American citizens, and we are determined to apply our citizenship to the fullness of its meaning. We are here because of our love for democracy. And you know, my friends, there comes a time when people get tired of being trampled over by the iron feet of oppression. There comes a time, my friends, when people get tired of being plunged across the abyss of humiliation."
+              "text": "We are here this evening for serious business. We are here in a general sense because first and foremost we are American citizens, and we are determined to apply our citizenship to the fullness of its meaning. We are here because of our love for democracy. And you know, my friends, there comes a time when people get tired of being trampled over by the iron feet of oppression. There comes a time, my friends, when people get tired of being plunged across the abyss of humiliation.",
+              "studio_audio": "/audio/sources/usa/lesson_1_3_sC.mp3",
+              "studio_voice_label": "Dr Martin Luther King Jr. Addres…"
             }
           ],
           "isReversed": true,
@@ -4798,7 +4830,9 @@ export default {
                 "hinge_question": "What does the success of the carpool network reveal about the class solidarity of Montgomery's Black community?"
               },
               "source_context": "Civil Rights Documentation Project, Moorland-Spingarn Research Center, Howard University. Reverend B.J. Simms, director of the Montgomery Improvement Association's transport committee for Oral historians and researchers studying non-violent logistics with the objective: To record the intricate daily operational mechanics required to transport thousands of daily commuters without public transit..",
-              "text": "We had over three hundred cars running every morning from five o'clock until nine, and from four in the afternoon until eight at night. We established forty-eight dispatch stations all over Montgomery. The white police commissioner tried to break the car pools by arresting our drivers for carrying more passengers than insurance allowed, and insurance companies cancelled policies on church vehicles. But we kept rollin'."
+              "text": "We had over three hundred cars running every morning from five o'clock until nine, and from four in the afternoon until eight at night. We established forty-eight dispatch stations all over Montgomery. The white police commissioner tried to break the car pools by arresting our drivers for carrying more passengers than insurance allowed, and insurance companies cancelled policies on church vehicles. But we kept rollin'.",
+              "studio_audio": "/audio/sources/usa/lesson_1_3_sD.mp3",
+              "studio_voice_label": "Oral History Account by Reverend…"
             }
           ],
           "isReversed": true,
@@ -4844,7 +4878,9 @@ export default {
               "src": "/units/usa/assets/sources/rosa-parks-bus-1956.jpg",
               "source": "/units/usa/assets/sources/rosa-parks-bus-1956.jpg",
               "caption": "Rosa Parks seated near the front of a Montgomery city bus on 21 December 1956, the morning the Supreme Court mandate in Browder v. Gayle took effect, ending 381 days of boycott.",
-              "text": "We hold that the statutes and ordinances requiring segregation of the white and colored races on the motor buses of a common carrier of passengers in the City of Montgomery and the State of Alabama violate the due process and equal protection clauses of the Fourteenth Amendment to the Constitution of the United States. In the light of Brown v. Board of Education, the separate but equal doctrine can no longer be safely followed as a correct statement of the law. There is no rational basis for the segregation of races in public transportation."
+              "text": "We hold that the statutes and ordinances requiring segregation of the white and colored races on the motor buses of a common carrier of passengers in the City of Montgomery and the State of Alabama violate the due process and equal protection clauses of the Fourteenth Amendment to the Constitution of the United States. In the light of Brown v. Board of Education, the separate but equal doctrine can no longer be safely followed as a correct statement of the law. There is no rational basis for the segregation of races in public transportation.",
+              "studio_audio": "/audio/sources/usa/lesson_1_3_sE.mp3",
+              "studio_voice_label": "From the Federal District Court…"
             }
           ],
           "isReversed": false,
@@ -5487,7 +5523,9 @@ export default {
                 "attribution": "Protest leaflet written and mimeographed overnight by Jo Ann Robinson and the Women’s Political Council (WPC) on 1–2 December 1955, distributing 35,000 copies across Montgomery.",
                 "caption": "Source B: Mimeographed Boycott Leaflet Written by Jo Ann Robinson and the Women's Political Council (2 December 1955)",
                 "content": "Another woman has been arrested and thrown into jail because she refused to get up out of her seat on the bus for a white person... This has to be stopped. Negroes have rights too. If Negroes did not ride the buses, they could not operate; three-fourths of the riders are Negroes. We are asking every Negro to stay off the buses on Monday in protest of the arrest and trial. Don’t ride the buses to work, to town, to school, or anywhere on Monday. If you must work, take a cab, or share a ride, or walk.",
-                "text": "Another woman has been arrested and thrown into jail because she refused to get up out of her seat on the bus for a white person... This has to be stopped. Negroes have rights too. If Negroes did not ride the buses, they could not operate; three-fourths of the riders are Negroes. We are asking every Negro to stay off the buses on Monday in protest of the arrest and trial. Don’t ride the buses to work, to town, to school, or anywhere on Monday. If you must work, take a cab, or share a ride, or walk."
+                "text": "Another woman has been arrested and thrown into jail because she refused to get up out of her seat on the bus for a white person... This has to be stopped. Negroes have rights too. If Negroes did not ride the buses, they could not operate; three-fourths of the riders are Negroes. We are asking every Negro to stay off the buses on Monday in protest of the arrest and trial. Don’t ride the buses to work, to town, to school, or anywhere on Monday. If you must work, take a cab, or share a ride, or walk.",
+                "studio_audio": "/audio/sources/usa/lesson_1_3_sB.mp3",
+                "studio_voice_label": "Mimeographed Boycott Leaflet Aut…"
               },
               {
                 "letter": "C",
@@ -5500,7 +5538,9 @@ export default {
                 "attribution": "Speech delivered by Dr Martin Luther King Jr. at Holt Street Baptist Church on 5 December 1955 to over 5,000 citizens at the first mass rally of the Montgomery Bus Boycott.",
                 "caption": "Source C: Speech by Dr Martin Luther King Jr. at Holt Street Baptist Church (5 December 1955)",
                 "content": "We are here this evening for serious business. We are here in a general sense because first and foremost we are American citizens, and we are determined to apply our citizenship to the fullness of its meaning... There comes a time when people get tired of being trampled over by the iron feet of oppression. Our method will be that of persuasion, not coercion. We will say to the people: let your conscience be your guide. Our actions must be guided by the highest Christian principles of love and non-violence.",
-                "text": "We are here this evening for serious business. We are here in a general sense because first and foremost we are American citizens, and we are determined to apply our citizenship to the fullness of its meaning... There comes a time when people get tired of being trampled over by the iron feet of oppression. Our method will be that of persuasion, not coercion. We will say to the people: let your conscience be your guide. Our actions must be guided by the highest Christian principles of love and non-violence."
+                "text": "We are here this evening for serious business. We are here in a general sense because first and foremost we are American citizens, and we are determined to apply our citizenship to the fullness of its meaning... There comes a time when people get tired of being trampled over by the iron feet of oppression. Our method will be that of persuasion, not coercion. We will say to the people: let your conscience be your guide. Our actions must be guided by the highest Christian principles of love and non-violence.",
+                "studio_audio": "/audio/sources/usa/lesson_1_3_sC.mp3",
+                "studio_voice_label": "Dr Martin Luther King Jr. Addres…"
               }
             ],
             "supporting_sources": [
@@ -5645,7 +5685,9 @@ export default {
                 "attribution": "Protest leaflet written and mimeographed overnight by Jo Ann Robinson and the Women’s Political Council (WPC) on 1–2 December 1955, distributing 35,000 copies across Montgomery.",
                 "caption": "Source B: Mimeographed Boycott Leaflet Written by Jo Ann Robinson and the Women's Political Council (2 December 1955)",
                 "content": "Another woman has been arrested and thrown into jail because she refused to get up out of her seat on the bus for a white person... This has to be stopped. Negroes have rights too. If Negroes did not ride the buses, they could not operate; three-fourths of the riders are Negroes. We are asking every Negro to stay off the buses on Monday in protest of the arrest and trial. Don’t ride the buses to work, to town, to school, or anywhere on Monday. If you must work, take a cab, or share a ride, or walk.",
-                "text": "Another woman has been arrested and thrown into jail because she refused to get up out of her seat on the bus for a white person... This has to be stopped. Negroes have rights too. If Negroes did not ride the buses, they could not operate; three-fourths of the riders are Negroes. We are asking every Negro to stay off the buses on Monday in protest of the arrest and trial. Don’t ride the buses to work, to town, to school, or anywhere on Monday. If you must work, take a cab, or share a ride, or walk."
+                "text": "Another woman has been arrested and thrown into jail because she refused to get up out of her seat on the bus for a white person... This has to be stopped. Negroes have rights too. If Negroes did not ride the buses, they could not operate; three-fourths of the riders are Negroes. We are asking every Negro to stay off the buses on Monday in protest of the arrest and trial. Don’t ride the buses to work, to town, to school, or anywhere on Monday. If you must work, take a cab, or share a ride, or walk.",
+                "studio_audio": "/audio/sources/usa/lesson_1_3_sB.mp3",
+                "studio_voice_label": "Mimeographed Boycott Leaflet Aut…"
               },
               {
                 "letter": "C",
@@ -5658,7 +5700,9 @@ export default {
                 "attribution": "Speech delivered by Dr Martin Luther King Jr. at Holt Street Baptist Church on 5 December 1955 to over 5,000 citizens at the first mass rally of the Montgomery Bus Boycott.",
                 "caption": "Source C: Speech by Dr Martin Luther King Jr. at Holt Street Baptist Church (5 December 1955)",
                 "content": "We are here this evening for serious business. We are here in a general sense because first and foremost we are American citizens, and we are determined to apply our citizenship to the fullness of its meaning... There comes a time when people get tired of being trampled over by the iron feet of oppression. Our method will be that of persuasion, not coercion. We will say to the people: let your conscience be your guide. Our actions must be guided by the highest Christian principles of love and non-violence.",
-                "text": "We are here this evening for serious business. We are here in a general sense because first and foremost we are American citizens, and we are determined to apply our citizenship to the fullness of its meaning... There comes a time when people get tired of being trampled over by the iron feet of oppression. Our method will be that of persuasion, not coercion. We will say to the people: let your conscience be your guide. Our actions must be guided by the highest Christian principles of love and non-violence."
+                "text": "We are here this evening for serious business. We are here in a general sense because first and foremost we are American citizens, and we are determined to apply our citizenship to the fullness of its meaning... There comes a time when people get tired of being trampled over by the iron feet of oppression. Our method will be that of persuasion, not coercion. We will say to the people: let your conscience be your guide. Our actions must be guided by the highest Christian principles of love and non-violence.",
+                "studio_audio": "/audio/sources/usa/lesson_1_3_sC.mp3",
+                "studio_voice_label": "Dr Martin Luther King Jr. Addres…"
               }
             ],
             "supporting_sources": [
@@ -5776,7 +5820,9 @@ export default {
                 "attribution": "Protest leaflet written and mimeographed overnight by Jo Ann Robinson and the Women’s Political Council (WPC) on 1–2 December 1955, distributing 35,000 copies across Montgomery.",
                 "caption": "Source B: Mimeographed Boycott Leaflet Written by Jo Ann Robinson and the Women's Political Council (2 December 1955)",
                 "content": "Another woman has been arrested and thrown into jail because she refused to get up out of her seat on the bus for a white person... This has to be stopped. Negroes have rights too. If Negroes did not ride the buses, they could not operate; three-fourths of the riders are Negroes. We are asking every Negro to stay off the buses on Monday in protest of the arrest and trial. Don’t ride the buses to work, to town, to school, or anywhere on Monday. If you must work, take a cab, or share a ride, or walk.",
-                "text": "Another woman has been arrested and thrown into jail because she refused to get up out of her seat on the bus for a white person... This has to be stopped. Negroes have rights too. If Negroes did not ride the buses, they could not operate; three-fourths of the riders are Negroes. We are asking every Negro to stay off the buses on Monday in protest of the arrest and trial. Don’t ride the buses to work, to town, to school, or anywhere on Monday. If you must work, take a cab, or share a ride, or walk."
+                "text": "Another woman has been arrested and thrown into jail because she refused to get up out of her seat on the bus for a white person... This has to be stopped. Negroes have rights too. If Negroes did not ride the buses, they could not operate; three-fourths of the riders are Negroes. We are asking every Negro to stay off the buses on Monday in protest of the arrest and trial. Don’t ride the buses to work, to town, to school, or anywhere on Monday. If you must work, take a cab, or share a ride, or walk.",
+                "studio_audio": "/audio/sources/usa/lesson_1_3_sB.mp3",
+                "studio_voice_label": "Mimeographed Boycott Leaflet Aut…"
               },
               {
                 "letter": "C",
@@ -5789,7 +5835,9 @@ export default {
                 "attribution": "Speech delivered by Dr Martin Luther King Jr. at Holt Street Baptist Church on 5 December 1955 to over 5,000 citizens at the first mass rally of the Montgomery Bus Boycott.",
                 "caption": "Source C: Speech by Dr Martin Luther King Jr. at Holt Street Baptist Church (5 December 1955)",
                 "content": "We are here this evening for serious business. We are here in a general sense because first and foremost we are American citizens, and we are determined to apply our citizenship to the fullness of its meaning... There comes a time when people get tired of being trampled over by the iron feet of oppression. Our method will be that of persuasion, not coercion. We will say to the people: let your conscience be your guide. Our actions must be guided by the highest Christian principles of love and non-violence.",
-                "text": "We are here this evening for serious business. We are here in a general sense because first and foremost we are American citizens, and we are determined to apply our citizenship to the fullness of its meaning... There comes a time when people get tired of being trampled over by the iron feet of oppression. Our method will be that of persuasion, not coercion. We will say to the people: let your conscience be your guide. Our actions must be guided by the highest Christian principles of love and non-violence."
+                "text": "We are here this evening for serious business. We are here in a general sense because first and foremost we are American citizens, and we are determined to apply our citizenship to the fullness of its meaning... There comes a time when people get tired of being trampled over by the iron feet of oppression. Our method will be that of persuasion, not coercion. We will say to the people: let your conscience be your guide. Our actions must be guided by the highest Christian principles of love and non-violence.",
+                "studio_audio": "/audio/sources/usa/lesson_1_3_sC.mp3",
+                "studio_voice_label": "Dr Martin Luther King Jr. Addres…"
               }
             ],
             "supporting_sources": [
@@ -5944,7 +5992,9 @@ export default {
                 "attribution": "Protest leaflet written and mimeographed overnight by Jo Ann Robinson and the Women’s Political Council (WPC) on 1–2 December 1955, distributing 35,000 copies across Montgomery.",
                 "caption": "Source B: Mimeographed Boycott Leaflet Written by Jo Ann Robinson and the Women's Political Council (2 December 1955)",
                 "content": "Another woman has been arrested and thrown into jail because she refused to get up out of her seat on the bus for a white person... This has to be stopped. Negroes have rights too. If Negroes did not ride the buses, they could not operate; three-fourths of the riders are Negroes. We are asking every Negro to stay off the buses on Monday in protest of the arrest and trial. Don’t ride the buses to work, to town, to school, or anywhere on Monday. If you must work, take a cab, or share a ride, or walk.",
-                "text": "Another woman has been arrested and thrown into jail because she refused to get up out of her seat on the bus for a white person... This has to be stopped. Negroes have rights too. If Negroes did not ride the buses, they could not operate; three-fourths of the riders are Negroes. We are asking every Negro to stay off the buses on Monday in protest of the arrest and trial. Don’t ride the buses to work, to town, to school, or anywhere on Monday. If you must work, take a cab, or share a ride, or walk."
+                "text": "Another woman has been arrested and thrown into jail because she refused to get up out of her seat on the bus for a white person... This has to be stopped. Negroes have rights too. If Negroes did not ride the buses, they could not operate; three-fourths of the riders are Negroes. We are asking every Negro to stay off the buses on Monday in protest of the arrest and trial. Don’t ride the buses to work, to town, to school, or anywhere on Monday. If you must work, take a cab, or share a ride, or walk.",
+                "studio_audio": "/audio/sources/usa/lesson_1_3_sB.mp3",
+                "studio_voice_label": "Mimeographed Boycott Leaflet Aut…"
               },
               {
                 "letter": "C",
@@ -5957,7 +6007,9 @@ export default {
                 "attribution": "Speech delivered by Dr Martin Luther King Jr. at Holt Street Baptist Church on 5 December 1955 to over 5,000 citizens at the first mass rally of the Montgomery Bus Boycott.",
                 "caption": "Source C: Speech by Dr Martin Luther King Jr. at Holt Street Baptist Church (5 December 1955)",
                 "content": "We are here this evening for serious business. We are here in a general sense because first and foremost we are American citizens, and we are determined to apply our citizenship to the fullness of its meaning... There comes a time when people get tired of being trampled over by the iron feet of oppression. Our method will be that of persuasion, not coercion. We will say to the people: let your conscience be your guide. Our actions must be guided by the highest Christian principles of love and non-violence.",
-                "text": "We are here this evening for serious business. We are here in a general sense because first and foremost we are American citizens, and we are determined to apply our citizenship to the fullness of its meaning... There comes a time when people get tired of being trampled over by the iron feet of oppression. Our method will be that of persuasion, not coercion. We will say to the people: let your conscience be your guide. Our actions must be guided by the highest Christian principles of love and non-violence."
+                "text": "We are here this evening for serious business. We are here in a general sense because first and foremost we are American citizens, and we are determined to apply our citizenship to the fullness of its meaning... There comes a time when people get tired of being trampled over by the iron feet of oppression. Our method will be that of persuasion, not coercion. We will say to the people: let your conscience be your guide. Our actions must be guided by the highest Christian principles of love and non-violence.",
+                "studio_audio": "/audio/sources/usa/lesson_1_3_sC.mp3",
+                "studio_voice_label": "Dr Martin Luther King Jr. Addres…"
               }
             ],
             "supporting_sources": [
@@ -6247,7 +6299,9 @@ export default {
           "src": "/images/upgraded/gcse-p3/usa_l03_s1_mia_boycott_flyer_1956.jpg",
           "source": "/units/usa/assets/sources/portraits/jo_ann_robinson.jpg",
           "caption": "Original printed leaflet distributed in Montgomery, Alabama by the Montgomery Improvement Association (1956, Schomburg Center / NYPL), exemplifying the grassroots duplicating and church distribution networks initiated on the night of 1–2 December 1955 by Jo Ann Robinson and the Women’s Political Council.",
-          "text": "Another woman has been arrested and thrown into jail because she refused to get up out of her seat on the bus for a white person to sit down. It is the second time since the Claudette Colvin case that a Negro woman has been arrested for the same thing. This has to be stopped. Negroes have rights too, for if Negroes did not ride the buses, they could not operate. Three-fourths of the riders are Negroes, yet we are arrested, or have to stand over empty seats. If we do not do something to stop these arrests, they will continue. The next time it may be you, or your daughter, or mother. We are, therefore, asking every Negro to stay off the buses Monday in protest of the arrest and trial. Don't ride the buses to work, to town, to school, or anywhere on Monday."
+          "text": "Another woman has been arrested and thrown into jail because she refused to get up out of her seat on the bus for a white person to sit down. It is the second time since the Claudette Colvin case that a Negro woman has been arrested for the same thing. This has to be stopped. Negroes have rights too, for if Negroes did not ride the buses, they could not operate. Three-fourths of the riders are Negroes, yet we are arrested, or have to stand over empty seats. If we do not do something to stop these arrests, they will continue. The next time it may be you, or your daughter, or mother. We are, therefore, asking every Negro to stay off the buses Monday in protest of the arrest and trial. Don't ride the buses to work, to town, to school, or anywhere on Monday.",
+          "studio_audio": "/audio/sources/usa/lesson_1_3_sB.mp3",
+          "studio_voice_label": "Mimeographed Boycott Leaflet Aut…"
         },
         {
           "id": "usa_lesson_1_3_a",
@@ -6270,7 +6324,9 @@ export default {
             "hinge_question": "Why were southern Black churches uniquely insulated from white economic retaliation compared to other community institutions?"
           },
           "source_context": "Dan Weiner / John F. Kennedy Presidential Library and Museum. Dan Weiner, photojournalist documenting civil rights leadership for National magazine subscribers and historical record with the objective: To document the emergence of twenty-six-year-old Dr Martin Luther King Jr. as the primary orator of the nascent movement..",
-          "text": "We are here this evening for serious business. We are here in a general sense because first and foremost we are American citizens, and we are determined to apply our citizenship to the fullness of its meaning. We are here because of our love for democracy. And you know, my friends, there comes a time when people get tired of being trampled over by the iron feet of oppression. There comes a time, my friends, when people get tired of being plunged across the abyss of humiliation."
+          "text": "We are here this evening for serious business. We are here in a general sense because first and foremost we are American citizens, and we are determined to apply our citizenship to the fullness of its meaning. We are here because of our love for democracy. And you know, my friends, there comes a time when people get tired of being trampled over by the iron feet of oppression. There comes a time, my friends, when people get tired of being plunged across the abyss of humiliation.",
+          "studio_audio": "/audio/sources/usa/lesson_1_3_sC.mp3",
+          "studio_voice_label": "Dr Martin Luther King Jr. Addres…"
         },
         {
           "id": "usa_lesson_1_3_e",
@@ -6293,7 +6349,9 @@ export default {
             "hinge_question": "What does the success of the carpool network reveal about the class solidarity of Montgomery's Black community?"
           },
           "source_context": "Civil Rights Documentation Project, Moorland-Spingarn Research Center, Howard University. Reverend B.J. Simms, director of the Montgomery Improvement Association's transport committee for Oral historians and researchers studying non-violent logistics with the objective: To record the intricate daily operational mechanics required to transport thousands of daily commuters without public transit..",
-          "text": "We had over three hundred cars running every morning from five o'clock until nine, and from four in the afternoon until eight at night. We established forty-eight dispatch stations all over Montgomery. The white police commissioner tried to break the car pools by arresting our drivers for carrying more passengers than insurance allowed, and insurance companies cancelled policies on church vehicles. But we kept rollin'."
+          "text": "We had over three hundred cars running every morning from five o'clock until nine, and from four in the afternoon until eight at night. We established forty-eight dispatch stations all over Montgomery. The white police commissioner tried to break the car pools by arresting our drivers for carrying more passengers than insurance allowed, and insurance companies cancelled policies on church vehicles. But we kept rollin'.",
+          "studio_audio": "/audio/sources/usa/lesson_1_3_sD.mp3",
+          "studio_voice_label": "Oral History Account by Reverend…"
         },
         {
           "id": "usa_lesson_1_3_d",
@@ -6318,7 +6376,9 @@ export default {
           "source_context": "United States District Court for the Middle District of Alabama, 142 F. Supp. 707. Federal Judges Richard Rives and Frank Johnson Jr. for The City of Montgomery, the State of Alabama, and the federal judiciary with the objective: To apply the constitutional precedent of Brown v. Board to municipal public transportation systems..",
           "source": "/units/usa/assets/sources/rosa-parks-bus-1956.jpg",
           "caption": "Rosa Parks seated near the front of a Montgomery city bus on 21 December 1956, the morning the Supreme Court mandate in Browder v. Gayle took effect, ending 381 days of boycott.",
-          "text": "We hold that the statutes and ordinances requiring segregation of the white and colored races on the motor buses of a common carrier of passengers in the City of Montgomery and the State of Alabama violate the due process and equal protection clauses of the Fourteenth Amendment to the Constitution of the United States. In the light of Brown v. Board of Education, the separate but equal doctrine can no longer be safely followed as a correct statement of the law. There is no rational basis for the segregation of races in public transportation."
+          "text": "We hold that the statutes and ordinances requiring segregation of the white and colored races on the motor buses of a common carrier of passengers in the City of Montgomery and the State of Alabama violate the due process and equal protection clauses of the Fourteenth Amendment to the Constitution of the United States. In the light of Brown v. Board of Education, the separate but equal doctrine can no longer be safely followed as a correct statement of the law. There is no rational basis for the segregation of races in public transportation.",
+          "studio_audio": "/audio/sources/usa/lesson_1_3_sE.mp3",
+          "studio_voice_label": "From the Federal District Court…"
         }
       ],
       "video": [
@@ -6708,7 +6768,9 @@ export default {
         ]
       },
       "banner_image": "/images/upgraded/gcse-p3/usa_l03_banner_dexter_ave_baptist_montgomery.jpg",
-      "banner_caption": "Sanctuary and wooden pulpit of the historic Dexter Avenue Baptist Church in Montgomery, Alabama, where Dr Martin Luther King Jr. served as pastor while leading the 1955–1956 Montgomery Bus Boycott (Library of Congress)."
+      "banner_caption": "Sanctuary and wooden pulpit of the historic Dexter Avenue Baptist Church in Montgomery, Alabama, where Dr Martin Luther King Jr. served as pastor while leading the 1955–1956 Montgomery Bus Boycott (Library of Congress).",
+      "prologue_audio": "/audio/lessons/usa/lesson_1_3_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · Historian"
     },
     {
       "id": "lesson_1_4",
@@ -7020,7 +7082,9 @@ export default {
               "src": "/units/usa/assets/sources/emmett_till_open_casket_mamie_1955.jpg",
               "source": "/units/usa/assets/sources/portraits/emmett_till.jpg",
               "caption": "Segregationist demonstrators holding American flags and placards declaring 'Race Mixing is Communism' and 'Stop the Race Mixing March of the Antichrist' on the steps of the Arkansas State Capitol in Little Rock (1959).",
-              "text": "NATION SHOCKED BY TERROR LYNCHING OF CHICAGO BOY IN MISSISSIPPI. The mutilated, bullet-shattered body of 14-year-old Emmett Till was returned to Chicago this week after being dragged from the Tallahatchie River with a 75-pound cotton gin fan barbed-wired to his neck. His grieving mother, Mrs. Mamie Till Bradley, insisted on an open-casket funeral so that 'all the world can see what they did to my boy.' More than 50,000 mourners filed past the casket at Roberts Temple, weeping and shuddering in horror at the savagery of Southern racism."
+              "text": "NATION SHOCKED BY TERROR LYNCHING OF CHICAGO BOY IN MISSISSIPPI. The mutilated, bullet-shattered body of 14-year-old Emmett Till was returned to Chicago this week after being dragged from the Tallahatchie River with a 75-pound cotton gin fan barbed-wired to his neck. His grieving mother, Mrs. Mamie Till Bradley, insisted on an open-casket funeral so that 'all the world can see what they did to my boy.' More than 50,000 mourners filed past the casket at Roberts Temple, weeping and shuddering in horror at the savagery of Southern racism.",
+              "studio_audio": "/audio/sources/usa/lesson_1_4_sB.mp3",
+              "studio_voice_label": "Front-Page Report from the Chica…"
             }
           ],
           "isReversed": true,
@@ -7061,7 +7125,9 @@ export default {
                 "hinge_question": "How did the exclusion of Black citizens from voter rolls directly corrupt the jury trial system in the southern states?"
               },
               "source_context": "State of Mississippi v. Roy Bryant and J.W. Milam, Tallahatchie County Court Records. J.W. Kellum, lead defense attorney representing confessed kidnappers Bryant and Milam for The all-white, twelve-man Tallahatchie County jury with the objective: To secure immediate acquittals by appealing directly to white racial solidarity against outside northern scrutiny..",
-              "text": "Question by Special Prosecutor: 'Mr. Wright, do you see the man in this courtroom who came to your house that night and took your grandnephew, Emmett Till?'\nMose Wright stood up in the witness box, extended his trembling arm, pointed his finger straight at J.W. Milam, and answered clearly: 'Thar he.' In Mississippi in 1955, for a Black man to point his finger at a white man and accuse him of kidnapping and murder was almost certain death."
+              "text": "Question by Special Prosecutor: 'Mr. Wright, do you see the man in this courtroom who came to your house that night and took your grandnephew, Emmett Till?'\nMose Wright stood up in the witness box, extended his trembling arm, pointed his finger straight at J.W. Milam, and answered clearly: 'Thar he.' In Mississippi in 1955, for a Black man to point his finger at a white man and accuse him of kidnapping and murder was almost certain death.",
+              "studio_audio": "/audio/sources/usa/lesson_1_4_sC.mp3",
+              "studio_voice_label": "From the Closing Arguments of De…"
             }
           ],
           "image": "/images/upgraded/gcse-p3/usa_l04_b2_bryant_milam_sumner_trial_1955.jpg",
@@ -7107,7 +7173,9 @@ export default {
               "src": "/units/usa/assets/sources/eisenhower-little-rock-speech.jpg",
               "source": "/units/usa/assets/sources/eisenhower-little-rock-speech.jpg",
               "caption": "President Dwight D. Eisenhower addressing the American public from the Oval Office. On 9 September 1957, Eisenhower signed the Civil Rights Act of 1957, the first federal civil rights legislation since Reconstruction.",
-              "text": "An Act to provide means of further securing and protecting the civil rights of persons within the jurisdiction of the United States. Be it enacted by the Senate and House of Representatives: Section 101. There is created in the executive branch of the Government a Commission on Civil Rights... Section 131. Whenever any person has engaged or there are reasonable grounds to believe that any person is about to engage in any act or practice which would deprive any other person of any right or privilege secured by subsection (a) or (b) [the right to vote without racial discrimination], the Attorney General may institute for the United States a civil action for preventive relief, including an application for a permanent or temporary injunction."
+              "text": "An Act to provide means of further securing and protecting the civil rights of persons within the jurisdiction of the United States. Be it enacted by the Senate and House of Representatives: Section 101. There is created in the executive branch of the Government a Commission on Civil Rights... Section 131. Whenever any person has engaged or there are reasonable grounds to believe that any person is about to engage in any act or practice which would deprive any other person of any right or privilege secured by subsection (a) or (b) [the right to vote without racial discrimination], the Attorney General may institute for the United States a civil action for preventive relief, including an application for a permanent or temporary injunction.",
+              "studio_audio": "/audio/sources/usa/lesson_1_4_sD.mp3",
+              "studio_voice_label": "Excerpt from the Civil Rights Ac…"
             }
           ],
           "isReversed": true,
@@ -7793,7 +7861,9 @@ export default {
                 "text": "NATION SHOCKED BY TERROR LYNCHING OF CHICAGO BOY IN MISSISSIPPI. The mutilated, bullet-shattered body of 14-year-old Emmett Till was returned to Chicago this week after being dragged from the Tallahatchie River with a 75-pound cotton gin fan barbed-wired to his neck. His grieving mother, Mrs. Mamie Till Bradley, insisted on an open-casket funeral so that 'all the world can see what they did to my boy.' More than 50,000 mourners filed past the casket at Roberts Temple, weeping and shuddering in horror at the savagery of Southern racism.",
                 "image": "/units/usa/assets/sources/emmett_till_open_casket_mamie_1955.jpg",
                 "image_url": "/units/usa/assets/sources/emmett_till_open_casket_mamie_1955.jpg",
-                "src": "/units/usa/assets/sources/emmett_till_open_casket_mamie_1955.jpg"
+                "src": "/units/usa/assets/sources/emmett_till_open_casket_mamie_1955.jpg",
+                "studio_audio": "/audio/sources/usa/lesson_1_4_sB.mp3",
+                "studio_voice_label": "Front-Page Report from the Chica…"
               },
               {
                 "letter": "C",
@@ -7809,7 +7879,9 @@ export default {
                 "text": "An Act to provide means of further securing and protecting the civil rights of persons within the jurisdiction of the United States. Be it enacted by the Senate and House of Representatives: Section 101. There is created in the executive branch of the Government a Commission on Civil Rights... Section 131. Whenever any person has engaged or there are reasonable grounds to believe that any person is about to engage in any act or practice which would deprive any other person of any right or privilege secured by subsection (a) or (b) [the right to vote without racial discrimination], the Attorney General may institute for the United States a civil action for preventive relief, including an application for a permanent or temporary injunction.",
                 "image": "/units/usa/assets/sources/eisenhower-little-rock-speech.jpg",
                 "image_url": "/units/usa/assets/sources/eisenhower-little-rock-speech.jpg",
-                "src": "/units/usa/assets/sources/eisenhower-little-rock-speech.jpg"
+                "src": "/units/usa/assets/sources/eisenhower-little-rock-speech.jpg",
+                "studio_audio": "/audio/sources/usa/lesson_1_4_sD.mp3",
+                "studio_voice_label": "Excerpt from the Civil Rights Ac…"
               }
             ],
             "supporting_sources": [
@@ -7963,7 +8035,9 @@ export default {
                 "text": "NATION SHOCKED BY TERROR LYNCHING OF CHICAGO BOY IN MISSISSIPPI. The mutilated, bullet-shattered body of 14-year-old Emmett Till was returned to Chicago this week after being dragged from the Tallahatchie River with a 75-pound cotton gin fan barbed-wired to his neck. His grieving mother, Mrs. Mamie Till Bradley, insisted on an open-casket funeral so that 'all the world can see what they did to my boy.' More than 50,000 mourners filed past the casket at Roberts Temple, weeping and shuddering in horror at the savagery of Southern racism.",
                 "image": "/units/usa/assets/sources/emmett_till_open_casket_mamie_1955.jpg",
                 "image_url": "/units/usa/assets/sources/emmett_till_open_casket_mamie_1955.jpg",
-                "src": "/units/usa/assets/sources/emmett_till_open_casket_mamie_1955.jpg"
+                "src": "/units/usa/assets/sources/emmett_till_open_casket_mamie_1955.jpg",
+                "studio_audio": "/audio/sources/usa/lesson_1_4_sB.mp3",
+                "studio_voice_label": "Front-Page Report from the Chica…"
               },
               {
                 "letter": "C",
@@ -7979,7 +8053,9 @@ export default {
                 "text": "An Act to provide means of further securing and protecting the civil rights of persons within the jurisdiction of the United States. Be it enacted by the Senate and House of Representatives: Section 101. There is created in the executive branch of the Government a Commission on Civil Rights... Section 131. Whenever any person has engaged or there are reasonable grounds to believe that any person is about to engage in any act or practice which would deprive any other person of any right or privilege secured by subsection (a) or (b) [the right to vote without racial discrimination], the Attorney General may institute for the United States a civil action for preventive relief, including an application for a permanent or temporary injunction.",
                 "image": "/units/usa/assets/sources/eisenhower-little-rock-speech.jpg",
                 "image_url": "/units/usa/assets/sources/eisenhower-little-rock-speech.jpg",
-                "src": "/units/usa/assets/sources/eisenhower-little-rock-speech.jpg"
+                "src": "/units/usa/assets/sources/eisenhower-little-rock-speech.jpg",
+                "studio_audio": "/audio/sources/usa/lesson_1_4_sD.mp3",
+                "studio_voice_label": "Excerpt from the Civil Rights Ac…"
               }
             ],
             "supporting_sources": [
@@ -8106,7 +8182,9 @@ export default {
                 "text": "NATION SHOCKED BY TERROR LYNCHING OF CHICAGO BOY IN MISSISSIPPI. The mutilated, bullet-shattered body of 14-year-old Emmett Till was returned to Chicago this week after being dragged from the Tallahatchie River with a 75-pound cotton gin fan barbed-wired to his neck. His grieving mother, Mrs. Mamie Till Bradley, insisted on an open-casket funeral so that 'all the world can see what they did to my boy.' More than 50,000 mourners filed past the casket at Roberts Temple, weeping and shuddering in horror at the savagery of Southern racism.",
                 "image": "/units/usa/assets/sources/emmett_till_open_casket_mamie_1955.jpg",
                 "image_url": "/units/usa/assets/sources/emmett_till_open_casket_mamie_1955.jpg",
-                "src": "/units/usa/assets/sources/emmett_till_open_casket_mamie_1955.jpg"
+                "src": "/units/usa/assets/sources/emmett_till_open_casket_mamie_1955.jpg",
+                "studio_audio": "/audio/sources/usa/lesson_1_4_sB.mp3",
+                "studio_voice_label": "Front-Page Report from the Chica…"
               },
               {
                 "letter": "C",
@@ -8122,7 +8200,9 @@ export default {
                 "text": "An Act to provide means of further securing and protecting the civil rights of persons within the jurisdiction of the United States. Be it enacted by the Senate and House of Representatives: Section 101. There is created in the executive branch of the Government a Commission on Civil Rights... Section 131. Whenever any person has engaged or there are reasonable grounds to believe that any person is about to engage in any act or practice which would deprive any other person of any right or privilege secured by subsection (a) or (b) [the right to vote without racial discrimination], the Attorney General may institute for the United States a civil action for preventive relief, including an application for a permanent or temporary injunction.",
                 "image": "/units/usa/assets/sources/eisenhower-little-rock-speech.jpg",
                 "image_url": "/units/usa/assets/sources/eisenhower-little-rock-speech.jpg",
-                "src": "/units/usa/assets/sources/eisenhower-little-rock-speech.jpg"
+                "src": "/units/usa/assets/sources/eisenhower-little-rock-speech.jpg",
+                "studio_audio": "/audio/sources/usa/lesson_1_4_sD.mp3",
+                "studio_voice_label": "Excerpt from the Civil Rights Ac…"
               }
             ],
             "supporting_sources": [
@@ -8286,7 +8366,9 @@ export default {
                 "text": "NATION SHOCKED BY TERROR LYNCHING OF CHICAGO BOY IN MISSISSIPPI. The mutilated, bullet-shattered body of 14-year-old Emmett Till was returned to Chicago this week after being dragged from the Tallahatchie River with a 75-pound cotton gin fan barbed-wired to his neck. His grieving mother, Mrs. Mamie Till Bradley, insisted on an open-casket funeral so that 'all the world can see what they did to my boy.' More than 50,000 mourners filed past the casket at Roberts Temple, weeping and shuddering in horror at the savagery of Southern racism.",
                 "image": "/units/usa/assets/sources/emmett_till_open_casket_mamie_1955.jpg",
                 "image_url": "/units/usa/assets/sources/emmett_till_open_casket_mamie_1955.jpg",
-                "src": "/units/usa/assets/sources/emmett_till_open_casket_mamie_1955.jpg"
+                "src": "/units/usa/assets/sources/emmett_till_open_casket_mamie_1955.jpg",
+                "studio_audio": "/audio/sources/usa/lesson_1_4_sB.mp3",
+                "studio_voice_label": "Front-Page Report from the Chica…"
               },
               {
                 "letter": "C",
@@ -8302,7 +8384,9 @@ export default {
                 "text": "An Act to provide means of further securing and protecting the civil rights of persons within the jurisdiction of the United States. Be it enacted by the Senate and House of Representatives: Section 101. There is created in the executive branch of the Government a Commission on Civil Rights... Section 131. Whenever any person has engaged or there are reasonable grounds to believe that any person is about to engage in any act or practice which would deprive any other person of any right or privilege secured by subsection (a) or (b) [the right to vote without racial discrimination], the Attorney General may institute for the United States a civil action for preventive relief, including an application for a permanent or temporary injunction.",
                 "image": "/units/usa/assets/sources/eisenhower-little-rock-speech.jpg",
                 "image_url": "/units/usa/assets/sources/eisenhower-little-rock-speech.jpg",
-                "src": "/units/usa/assets/sources/eisenhower-little-rock-speech.jpg"
+                "src": "/units/usa/assets/sources/eisenhower-little-rock-speech.jpg",
+                "studio_audio": "/audio/sources/usa/lesson_1_4_sD.mp3",
+                "studio_voice_label": "Excerpt from the Civil Rights Ac…"
               }
             ],
             "supporting_sources": [
@@ -8601,7 +8685,9 @@ export default {
           "source_context": "Chicago Defender National Edition, Historic Black Press Archive. Chicago Defender editorial staff and investigative journalists for African American communities across the North and national civil rights organizations with the objective: To expose the barbaric violence of Mississippi white supremacy and generate nationwide outrage demanding federal intervention..",
           "source": "/units/usa/assets/sources/portraits/emmett_till.jpg",
           "caption": "Front-page press report published in the Chicago Defender (10 September 1955) documenting national outrage over the lynching of Emmett Till in Mississippi.",
-          "text": "NATION SHOCKED BY TERROR LYNCHING OF CHICAGO BOY IN MISSISSIPPI. The mutilated, bullet-shattered body of 14-year-old Emmett Till was returned to Chicago this week after being dragged from the Tallahatchie River with a 75-pound cotton gin fan barbed-wired to his neck. His grieving mother, Mrs. Mamie Till Bradley, insisted on an open-casket funeral so that 'all the world can see what they did to my boy.' More than 50,000 mourners filed past the casket at Roberts Temple, weeping and shuddering in horror at the savagery of Southern racism."
+          "text": "NATION SHOCKED BY TERROR LYNCHING OF CHICAGO BOY IN MISSISSIPPI. The mutilated, bullet-shattered body of 14-year-old Emmett Till was returned to Chicago this week after being dragged from the Tallahatchie River with a 75-pound cotton gin fan barbed-wired to his neck. His grieving mother, Mrs. Mamie Till Bradley, insisted on an open-casket funeral so that 'all the world can see what they did to my boy.' More than 50,000 mourners filed past the casket at Roberts Temple, weeping and shuddering in horror at the savagery of Southern racism.",
+          "studio_audio": "/audio/sources/usa/lesson_1_4_sB.mp3",
+          "studio_voice_label": "Front-Page Report from the Chica…"
         },
         {
           "id": "usa_lesson_1_4_c",
@@ -8624,7 +8710,9 @@ export default {
             "hinge_question": "How did the exclusion of Black citizens from voter rolls directly corrupt the jury trial system in the southern states?"
           },
           "source_context": "State of Mississippi v. Roy Bryant and J.W. Milam, Tallahatchie County Court Records. J.W. Kellum, lead defense attorney representing confessed kidnappers Bryant and Milam for The all-white, twelve-man Tallahatchie County jury with the objective: To secure immediate acquittals by appealing directly to white racial solidarity against outside northern scrutiny..",
-          "text": "Question by Special Prosecutor: 'Mr. Wright, do you see the man in this courtroom who came to your house that night and took your grandnephew, Emmett Till?'\nMose Wright stood up in the witness box, extended his trembling arm, pointed his finger straight at J.W. Milam, and answered clearly: 'Thar he.' In Mississippi in 1955, for a Black man to point his finger at a white man and accuse him of kidnapping and murder was almost certain death."
+          "text": "Question by Special Prosecutor: 'Mr. Wright, do you see the man in this courtroom who came to your house that night and took your grandnephew, Emmett Till?'\nMose Wright stood up in the witness box, extended his trembling arm, pointed his finger straight at J.W. Milam, and answered clearly: 'Thar he.' In Mississippi in 1955, for a Black man to point his finger at a white man and accuse him of kidnapping and murder was almost certain death.",
+          "studio_audio": "/audio/sources/usa/lesson_1_4_sC.mp3",
+          "studio_voice_label": "From the Closing Arguments of De…"
         },
         {
           "id": "usa_lesson_1_4_d",
@@ -8653,7 +8741,9 @@ export default {
           "source": "/units/usa/assets/sources/eisenhower-little-rock-speech.jpg",
           "caption": "Original enrolled first page of the Civil Rights Act of 1957 (Public Law 85-315, H.R. 6127, signed 9 September 1957), establishing the bipartisan U.S. Commission on Civil Rights under Section 101 (Dwight D. Eisenhower Presidential Library / U.S. National Archives).",
           "text": "An Act to provide means of further securing and protecting the civil rights of persons within the jurisdiction of the United States. Be it enacted by the Senate and House of Representatives: Section 101. There is created in the executive branch of the Government a Commission on Civil Rights... Section 131. Whenever any person has engaged or there are reasonable grounds to believe that any person is about to engage in any act or practice which would deprive any other person of any right or privilege secured by subsection (a) or (b) [the right to vote without racial discrimination], the Attorney General may institute for the United States a civil action for preventive relief, including an application for a permanent or temporary injunction.",
-          "image_alt": "First page of the original enrolled statute of the Civil Rights Act of 1957 (Public Law 85-315, H.R. 6127) bearing White House and National Archives date stamps and establishing the executive Commission on Civil Rights under Part I, Section 101"
+          "image_alt": "First page of the original enrolled statute of the Civil Rights Act of 1957 (Public Law 85-315, H.R. 6127) bearing White House and National Archives date stamps and establishing the executive Commission on Civil Rights under Part I, Section 101",
+          "studio_audio": "/audio/sources/usa/lesson_1_4_sD.mp3",
+          "studio_voice_label": "Excerpt from the Civil Rights Ac…"
         },
         {
           "id": "usa_lesson_1_4_e",
@@ -9070,7 +9160,9 @@ export default {
         ]
       },
       "banner_image": "/images/upgraded/gcse-p3/usa_l04_banner_bryants_grocery_money_ms.jpg",
-      "banner_caption": "Brick ruins of Bryant’s Grocery and Meat Market and Mississippi Freedom Trail marker in Money, Leflore County, Mississippi, visited by fourteen-year-old Emmett Till in August 1955."
+      "banner_caption": "Brick ruins of Bryant’s Grocery and Meat Market and Mississippi Freedom Trail marker in Money, Leflore County, Mississippi, visited by fourteen-year-old Emmett Till in August 1955.",
+      "prologue_audio": "/audio/lessons/usa/lesson_1_4_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · Historian"
     },
     {
       "id": "lesson_2_1",
@@ -9377,7 +9469,9 @@ export default {
                 "hinge_question": "Why was rigorous non-violent roleplaying training essential before demonstrators were allowed onto the streets?"
               },
               "source_context": "SNCC Founding Papers, Martin Luther King Jr. Center for Nonviolent Social Change, Atlanta. James Lawson and founding executive committee of SNCC for Student volunteers, college sit-in participants, and protest coordinators with the objective: To instill rigorous philosophical and practical training in Gandhian non-violent resistance..",
-              "text": "Student Nonviolent Coordinating Committee (SNCC) Statement of Purpose & Field Rules (October 1960):\n'Do not strike back or curse if abused. Do not laugh out. Do not hold conversations with the floor walker. Do not block the aisles. Do not leave your seat until your leader has given you permission. If you are assaulted, curl into a ball to protect your head and vital organs. Maintain eye contact with dignity and Christian love. Through non-violence, courage displaces fear; love transforms hate. Acceptance replaces prejudice, and peace triumphs over violence.'"
+              "text": "Student Nonviolent Coordinating Committee (SNCC) Statement of Purpose & Field Rules (October 1960):\n'Do not strike back or curse if abused. Do not laugh out. Do not hold conversations with the floor walker. Do not block the aisles. Do not leave your seat until your leader has given you permission. If you are assaulted, curl into a ball to protect your head and vital organs. Maintain eye contact with dignity and Christian love. Through non-violence, courage displaces fear; love transforms hate. Acceptance replaces prejudice, and peace triumphs over violence.'",
+              "studio_audio": "/audio/sources/usa/lesson_2_1_sB.mp3",
+              "studio_voice_label": "Non-Violent Direct Action Guidel…"
             }
           ],
           "isReversed": true,
@@ -9543,7 +9637,9 @@ export default {
                 "hinge_question": "Was Robert F. Kennedy's primary motive during the Freedom Rides civil rights justice or maintaining federal law and order?"
               },
               "source_context": "Bettmann Archive / Getty Images. Wire service press photographer embedded with the riders for National news readership with the objective: To document the militarized escort required to allow interstate buses to transit southern highways..",
-              "text": "When the Trailways bus pulled into the Birmingham terminal on Mother's Day, not a single police officer was in sight. Within seconds, a mob of forty men carrying iron pipes, lead clubs, and baseball bats stormed the waiting room. Before I could say a word, six men pounced on me, clubbing me over the head. I fell forward onto the concrete floor, bleeding profusely, and they kicked me repeatedly in the ribs. The police department under Bull Connor had agreed to give the Ku Klux Klan fifteen minutes to beat the Freedom Riders before dispatching a single squad car."
+              "text": "When the Trailways bus pulled into the Birmingham terminal on Mother's Day, not a single police officer was in sight. Within seconds, a mob of forty men carrying iron pipes, lead clubs, and baseball bats stormed the waiting room. Before I could say a word, six men pounced on me, clubbing me over the head. I fell forward onto the concrete floor, bleeding profusely, and they kicked me repeatedly in the ribs. The police department under Bull Connor had agreed to give the Ku Klux Klan fifteen minutes to beat the Freedom Riders before dispatching a single squad car.",
+              "studio_audio": "/audio/sources/usa/lesson_2_1_sD.mp3",
+              "studio_voice_label": "Eyewitness Testimony of Freedom…"
             }
           ],
           "isReversed": true,
@@ -9590,7 +9686,9 @@ export default {
               "src": "/units/usa/assets/sources/icc_order_mc_c_3358_1961.png",
               "source": "/units/usa/assets/sources/portraits/james_farmer.jpg",
               "caption": "Facsimile of the official Interstate Commerce Commission Order Docket No. MC-C-3358 (22 September 1961), issued at the petition of Attorney General Robert F. Kennedy following the Freedom Rides.",
-              "text": "No motor common carrier of passengers subject to the Interstate Commerce Act shall, in the operation of passenger vehicles in interstate or foreign commerce, utilize or permit the use of any terminal facilities which are in any manner segregated on the basis of race, color, creed, or national origin. All signs, placards, or notices displaying designations such as 'White Waiting Room', 'Colored Waiting Room', or similarly segregating restrooms, dining counters, or waiting spaces are hereby declared unlawful and ordered removed from all interstate passenger terminals forthwith."
+              "text": "No motor common carrier of passengers subject to the Interstate Commerce Act shall, in the operation of passenger vehicles in interstate or foreign commerce, utilize or permit the use of any terminal facilities which are in any manner segregated on the basis of race, color, creed, or national origin. All signs, placards, or notices displaying designations such as 'White Waiting Room', 'Colored Waiting Room', or similarly segregating restrooms, dining counters, or waiting spaces are hereby declared unlawful and ordered removed from all interstate passenger terminals forthwith.",
+              "studio_audio": "/audio/sources/usa/lesson_2_1_sE.mp3",
+              "studio_voice_label": "Interstate Commerce Commission (…"
             }
           ],
           "isReversed": false,
@@ -10422,7 +10520,9 @@ export default {
             "hinge_question": "Why was rigorous non-violent roleplaying training essential before demonstrators were allowed onto the streets?"
           },
           "source_context": "SNCC Founding Papers, Martin Luther King Jr. Center for Nonviolent Social Change, Atlanta. James Lawson and founding executive committee of SNCC for Student volunteers, college sit-in participants, and protest coordinators with the objective: To instill rigorous philosophical and practical training in Gandhian non-violent resistance..",
-          "text": "Student Nonviolent Coordinating Committee (SNCC) Statement of Purpose & Field Rules (October 1960):\n'Do not strike back or curse if abused. Do not laugh out. Do not hold conversations with the floor walker. Do not block the aisles. Do not leave your seat until your leader has given you permission. If you are assaulted, curl into a ball to protect your head and vital organs. Maintain eye contact with dignity and Christian love. Through non-violence, courage displaces fear; love transforms hate. Acceptance replaces prejudice, and peace triumphs over violence.'"
+          "text": "Student Nonviolent Coordinating Committee (SNCC) Statement of Purpose & Field Rules (October 1960):\n'Do not strike back or curse if abused. Do not laugh out. Do not hold conversations with the floor walker. Do not block the aisles. Do not leave your seat until your leader has given you permission. If you are assaulted, curl into a ball to protect your head and vital organs. Maintain eye contact with dignity and Christian love. Through non-violence, courage displaces fear; love transforms hate. Acceptance replaces prejudice, and peace triumphs over violence.'",
+          "studio_audio": "/audio/sources/usa/lesson_2_1_sB.mp3",
+          "studio_voice_label": "Non-Violent Direct Action Guidel…"
         },
         {
           "id": "usa_lesson_2_1_b",
@@ -10473,7 +10573,9 @@ export default {
             "hinge_question": "Was Robert F. Kennedy's primary motive during the Freedom Rides civil rights justice or maintaining federal law and order?"
           },
           "source_context": "Bettmann Archive / Getty Images. Wire service press photographer embedded with the riders for National news readership with the objective: To document the militarized escort required to allow interstate buses to transit southern highways..",
-          "text": "When the Trailways bus pulled into the Birmingham terminal on Mother's Day, not a single police officer was in sight. Within seconds, a mob of forty men carrying iron pipes, lead clubs, and baseball bats stormed the waiting room. Before I could say a word, six men pounced on me, clubbing me over the head. I fell forward onto the concrete floor, bleeding profusely, and they kicked me repeatedly in the ribs. The police department under Bull Connor had agreed to give the Ku Klux Klan fifteen minutes to beat the Freedom Riders before dispatching a single squad car."
+          "text": "When the Trailways bus pulled into the Birmingham terminal on Mother's Day, not a single police officer was in sight. Within seconds, a mob of forty men carrying iron pipes, lead clubs, and baseball bats stormed the waiting room. Before I could say a word, six men pounced on me, clubbing me over the head. I fell forward onto the concrete floor, bleeding profusely, and they kicked me repeatedly in the ribs. The police department under Bull Connor had agreed to give the Ku Klux Klan fifteen minutes to beat the Freedom Riders before dispatching a single squad car.",
+          "studio_audio": "/audio/sources/usa/lesson_2_1_sD.mp3",
+          "studio_voice_label": "Eyewitness Testimony of Freedom…"
         },
         {
           "id": "usa_lesson_2_1_e",
@@ -10501,7 +10603,9 @@ export default {
           "src": "/units/usa/assets/sources/icc_order_mc_c_3358_1961.png",
           "source": "/units/usa/assets/sources/portraits/james_farmer.jpg",
           "caption": "Facsimile of the official Interstate Commerce Commission Order Docket No. MC-C-3358 (22 September 1961), issued at the petition of Attorney General Robert F. Kennedy following the Freedom Rides.",
-          "text": "No motor common carrier of passengers subject to the Interstate Commerce Act shall, in the operation of passenger vehicles in interstate or foreign commerce, utilize or permit the use of any terminal facilities which are in any manner segregated on the basis of race, color, creed, or national origin. All signs, placards, or notices displaying designations such as 'White Waiting Room', 'Colored Waiting Room', or similarly segregating restrooms, dining counters, or waiting spaces are hereby declared unlawful and ordered removed from all interstate passenger terminals forthwith."
+          "text": "No motor common carrier of passengers subject to the Interstate Commerce Act shall, in the operation of passenger vehicles in interstate or foreign commerce, utilize or permit the use of any terminal facilities which are in any manner segregated on the basis of race, color, creed, or national origin. All signs, placards, or notices displaying designations such as 'White Waiting Room', 'Colored Waiting Room', or similarly segregating restrooms, dining counters, or waiting spaces are hereby declared unlawful and ordered removed from all interstate passenger terminals forthwith.",
+          "studio_audio": "/audio/sources/usa/lesson_2_1_sE.mp3",
+          "studio_voice_label": "Interstate Commerce Commission (…"
         }
       ],
       "video": [
@@ -10882,7 +10986,9 @@ export default {
         ]
       },
       "banner_image": "/images/upgraded/gcse-p3/usa_l05_banner_woolworth_greensboro_facade.jpg",
-      "banner_caption": "Historic storefront of the F. W. Woolworth building in Greensboro, North Carolina—preserved today as the International Civil Rights Center & Museum—where four North Carolina A&T freshmen launched the February 1960 lunch counter sit-in movement."
+      "banner_caption": "Historic storefront of the F. W. Woolworth building in Greensboro, North Carolina—preserved today as the International Civil Rights Center & Museum—where four North Carolina A&T freshmen launched the February 1960 lunch counter sit-in movement.",
+      "prologue_audio": "/audio/lessons/usa/lesson_2_1_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · Historian"
     },
     {
       "id": "lesson_2_2",
@@ -11149,7 +11255,9 @@ export default {
               "src": "/units/usa/assets/sources/birmingham-protests-dogs-1963.jpg",
               "source": "/units/usa/assets/sources/portraits/mlk.jpg",
               "caption": "Police attack dogs deployed by Public Safety Commissioner Eugene 'Bull' Connor against civil rights demonstrators in Birmingham, Alabama, May 1963.",
-              "text": "We know through painful experience that freedom is never voluntarily given by the oppressor; it must be demanded by the oppressed. Frankly, I have yet to engage in a direct action campaign that was 'well timed' in the view of those who have not suffered unduly from the disease of segregation. For years now I have heard the word 'Wait!' It rings in the ear of every Negro with piercing familiarity. This 'Wait' has almost always meant 'Never.' We must come to see, with one of our distinguished jurists, that 'justice too long delayed is justice denied.'"
+              "text": "We know through painful experience that freedom is never voluntarily given by the oppressor; it must be demanded by the oppressed. Frankly, I have yet to engage in a direct action campaign that was 'well timed' in the view of those who have not suffered unduly from the disease of segregation. For years now I have heard the word 'Wait!' It rings in the ear of every Negro with piercing familiarity. This 'Wait' has almost always meant 'Never.' We must come to see, with one of our distinguished jurists, that 'justice too long delayed is justice denied.'",
+              "studio_audio": "/audio/sources/usa/lesson_2_2_sA.mp3",
+              "studio_voice_label": "From Dr Martin Luther King Jr.'s…"
             }
           ],
           "image": "/units/usa/assets/sources/birmingham-protests-dogs-1963.jpg",
@@ -11196,7 +11304,9 @@ export default {
               "src": "/units/usa/assets/sources/mlk-dream-speech-1963.jpg",
               "source": "/units/usa/assets/sources/mlk-dream-speech-1963.jpg",
               "caption": "Dr. Martin Luther King Jr. addressing an estimated 250,000 civil rights demonstrators gathered at the Lincoln Memorial during the March on Washington for Jobs and Freedom, 28 August 1963.",
-              "text": "I say to you today, my friends, that in spite of the difficulties and frustrations of the moment, I still have a dream. It is a dream deeply rooted in the American dream. I have a dream that one day this nation will rise up and live out the true meaning of its creed: 'We hold these truths to be self-evident, that all men are created equal.' I have a dream that my four little children will one day live in a nation where they will not be judged by the color of their skin but by the content of their character. I have a dream today!"
+              "text": "I say to you today, my friends, that in spite of the difficulties and frustrations of the moment, I still have a dream. It is a dream deeply rooted in the American dream. I have a dream that one day this nation will rise up and live out the true meaning of its creed: 'We hold these truths to be self-evident, that all men are created equal.' I have a dream that my four little children will one day live in a nation where they will not be judged by the color of their skin but by the content of their character. I have a dream today!",
+              "studio_audio": "/audio/sources/usa/lesson_2_2_sB.mp3",
+              "studio_voice_label": "Dr Martin Luther King Jr. Delive…"
             }
           ],
           "isReversed": true,
@@ -11242,7 +11352,9 @@ export default {
               "src": "/units/usa/assets/sources/lbj-mlk-signing-1964.jpg",
               "source": "/units/usa/assets/sources/lbj-mlk-signing-1964.jpg",
               "caption": "President Lyndon B. Johnson signs the historic Civil Rights Act of 1964 in the East Room of the White House, handing a ceremonial pen to Dr. Martin Luther King Jr. standing behind him (White House Photo Office, 2 July 1964).",
-              "text": "We believe that all men are created equal. Yet many are denied equal treatment. We believe that all men have certain unalienable rights. Yet many Americans do not enjoy those rights. We believe that all men are entitled to the blessings of liberty. Yet millions are being deprived of those blessings—not because of their own failures, but because of the color of their skin... Its purpose is to promote a more abiding commitment to freedom, a more pursuit of justice, and a deeper respect for human dignity. We have come now to a time of testing. We must not fail. Let us close the springs of racial poison."
+              "text": "We believe that all men are created equal. Yet many are denied equal treatment. We believe that all men have certain unalienable rights. Yet many Americans do not enjoy those rights. We believe that all men are entitled to the blessings of liberty. Yet millions are being deprived of those blessings—not because of their own failures, but because of the color of their skin... Its purpose is to promote a more abiding commitment to freedom, a more pursuit of justice, and a deeper respect for human dignity. We have come now to a time of testing. We must not fail. Let us close the springs of racial poison.",
+              "studio_audio": "/audio/sources/usa/lesson_2_2_sC.mp3",
+              "studio_voice_label": "Archival Photograph of President…"
             }
           ],
           "isReversed": true,
@@ -11408,7 +11520,9 @@ export default {
               "src": "/units/usa/assets/sources/lbj-signing-voting-rights-1965.jpg",
               "source": "/units/usa/assets/sources/lbj-signing-voting-rights-1965.jpg",
               "caption": "President Lyndon B. Johnson signs the Voting Rights Act of 1965 in the President's Room of the Capitol in Washington D.C., with Rosa Parks, Martin Luther King Jr., and congressional leaders looking on (6 August 1965).",
-              "text": "This act flows from a clear and simple wrong. Millions of Americans are denied the right to vote because of their color. This law will strike away the last major shackle of those fierce and ancient bonds. Today the Negro citizen takes his place at the ballot box. The command of the Constitution is clear. No American may be denied the right to vote because of his race or color. Every American citizen must have an equal right to vote in every election where he is entitled to vote under the Constitution."
+              "text": "This act flows from a clear and simple wrong. Millions of Americans are denied the right to vote because of their color. This law will strike away the last major shackle of those fierce and ancient bonds. Today the Negro citizen takes his place at the ballot box. The command of the Constitution is clear. No American may be denied the right to vote because of his race or color. Every American citizen must have an equal right to vote in every election where he is entitled to vote under the Constitution.",
+              "studio_audio": "/audio/sources/usa/lesson_2_2_sE.mp3",
+              "studio_voice_label": "Archival Photograph of President…"
             }
           ],
           "isReversed": false,
@@ -12117,7 +12231,9 @@ export default {
           "source_context": "The King Center Archives, Atlanta, Georgia. Dr Martin Luther King Jr., incarcerated in the Birmingham city jail for Eight prominent moderate white Christian and Jewish clergymen in Alabama with the objective: To dismantle the moral argument for patience and defend the urgency of direct-action civil disobedience..",
           "source": "/units/usa/assets/sources/portraits/mlk.jpg",
           "caption": "Police attack dogs deployed by Public Safety Commissioner Eugene 'Bull' Connor against civil rights demonstrators in Birmingham, Alabama, May 1963.",
-          "text": "We know through painful experience that freedom is never voluntarily given by the oppressor; it must be demanded by the oppressed. Frankly, I have yet to engage in a direct action campaign that was 'well timed' in the view of those who have not suffered unduly from the disease of segregation. For years now I have heard the word 'Wait!' It rings in the ear of every Negro with piercing familiarity. This 'Wait' has almost always meant 'Never.' We must come to see, with one of our distinguished jurists, that 'justice too long delayed is justice denied.'"
+          "text": "We know through painful experience that freedom is never voluntarily given by the oppressor; it must be demanded by the oppressed. Frankly, I have yet to engage in a direct action campaign that was 'well timed' in the view of those who have not suffered unduly from the disease of segregation. For years now I have heard the word 'Wait!' It rings in the ear of every Negro with piercing familiarity. This 'Wait' has almost always meant 'Never.' We must come to see, with one of our distinguished jurists, that 'justice too long delayed is justice denied.'",
+          "studio_audio": "/audio/sources/usa/lesson_2_2_sA.mp3",
+          "studio_voice_label": "From Dr Martin Luther King Jr.'s…"
         },
         {
           "id": "usa_lesson_2_2_a",
@@ -12146,7 +12262,9 @@ export default {
           "source": "/units/usa/assets/sources/mlk-dream-speech-1963.jpg",
           "caption": "Dr Martin Luther King Jr. holding his speech text and waving from the Lincoln Memorial steps to 250,000 civil rights demonstrators during the March on Washington for Jobs and Freedom (28 August 1963).",
           "text": "I say to you today, my friends, that in spite of the difficulties and frustrations of the moment, I still have a dream. It is a dream deeply rooted in the American dream. I have a dream that one day this nation will rise up and live out the true meaning of its creed: 'We hold these truths to be self-evident, that all men are created equal.' I have a dream that my four little children will one day live in a nation where they will not be judged by the color of their skin but by the content of their character. I have a dream today!",
-          "image_alt": "Dr Martin Luther King Jr. standing at the Lincoln Memorial podium holding his speech manuscript and raising his right hand before 250,000 demonstrators stretched toward the Washington Monument on 28 August 1963"
+          "image_alt": "Dr Martin Luther King Jr. standing at the Lincoln Memorial podium holding his speech manuscript and raising his right hand before 250,000 demonstrators stretched toward the Washington Monument on 28 August 1963",
+          "studio_audio": "/audio/sources/usa/lesson_2_2_sB.mp3",
+          "studio_voice_label": "Dr Martin Luther King Jr. Delive…"
         },
         {
           "id": "usa_lesson_2_2_c",
@@ -12174,7 +12292,9 @@ export default {
           "src": "/units/usa/assets/sources/lbj-mlk-signing-1964.jpg",
           "source": "/units/usa/assets/sources/lbj-mlk-signing-1964.jpg",
           "caption": "President Lyndon B. Johnson signs the historic Civil Rights Act of 1964 in the East Room of the White House, handing a ceremonial pen to Dr. Martin Luther King Jr. standing behind him (White House Photo Office, 2 July 1964).",
-          "text": "We believe that all men are created equal. Yet many are denied equal treatment. We believe that all men have certain unalienable rights. Yet many Americans do not enjoy those rights. We believe that all men are entitled to the blessings of liberty. Yet millions are being deprived of those blessings—not because of their own failures, but because of the color of their skin... Its purpose is to promote a more abiding commitment to freedom, a more pursuit of justice, and a deeper respect for human dignity. We have come now to a time of testing. We must not fail. Let us close the springs of racial poison."
+          "text": "We believe that all men are created equal. Yet many are denied equal treatment. We believe that all men have certain unalienable rights. Yet many Americans do not enjoy those rights. We believe that all men are entitled to the blessings of liberty. Yet millions are being deprived of those blessings—not because of their own failures, but because of the color of their skin... Its purpose is to promote a more abiding commitment to freedom, a more pursuit of justice, and a deeper respect for human dignity. We have come now to a time of testing. We must not fail. Let us close the springs of racial poison.",
+          "studio_audio": "/audio/sources/usa/lesson_2_2_sC.mp3",
+          "studio_voice_label": "Archival Photograph of President…"
         },
         {
           "id": "usa_lesson_2_2_b",
@@ -12230,7 +12350,9 @@ export default {
           "src": "/units/usa/assets/sources/lbj-signing-voting-rights-1965.jpg",
           "source": "/units/usa/assets/sources/lbj-signing-voting-rights-1965.jpg",
           "caption": "President Lyndon B. Johnson signs the Voting Rights Act of 1965 in the President's Room of the Capitol in Washington D.C., with Rosa Parks, Martin Luther King Jr., and congressional leaders looking on (6 August 1965).",
-          "text": "This act flows from a clear and simple wrong. Millions of Americans are denied the right to vote because of their color. This law will strike away the last major shackle of those fierce and ancient bonds. Today the Negro citizen takes his place at the ballot box. The command of the Constitution is clear. No American may be denied the right to vote because of his race or color. Every American citizen must have an equal right to vote in every election where he is entitled to vote under the Constitution."
+          "text": "This act flows from a clear and simple wrong. Millions of Americans are denied the right to vote because of their color. This law will strike away the last major shackle of those fierce and ancient bonds. Today the Negro citizen takes his place at the ballot box. The command of the Constitution is clear. No American may be denied the right to vote because of his race or color. Every American citizen must have an equal right to vote in every election where he is entitled to vote under the Constitution.",
+          "studio_audio": "/audio/sources/usa/lesson_2_2_sE.mp3",
+          "studio_voice_label": "Archival Photograph of President…"
         }
       ],
       "video": [
@@ -12623,7 +12745,9 @@ export default {
         ]
       },
       "banner_image": "/images/upgraded/gcse-p3/usa_l06_banner_edmund_pettus_bridge_selma.jpg",
-      "banner_caption": "The steel-arch Edmund Pettus Bridge spanning the Alabama River in Selma, Alabama—where state troopers and sheriff’s posses attacked peaceful voting-rights marchers on \"Bloody Sunday\" (7 March 1965), galvanising passage of the Voting Rights Act."
+      "banner_caption": "The steel-arch Edmund Pettus Bridge spanning the Alabama River in Selma, Alabama—where state troopers and sheriff’s posses attacked peaceful voting-rights marchers on \"Bloody Sunday\" (7 March 1965), galvanising passage of the Voting Rights Act.",
+      "prologue_audio": "/audio/lessons/usa/lesson_2_2_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · Historian"
     },
     {
       "id": "lesson_2_3",
@@ -12936,7 +13060,9 @@ export default {
               "src": "/units/usa/assets/sources/malcolm-x-speaking.jpg",
               "source": "/units/usa/assets/sources/portraits/malcolm_x.jpg",
               "caption": "Malcolm X speaking at a press conference in 1964, articulating the philosophy of Black nationalism, self-defense, and political accountability.",
-              "text": "It's got to be the ballot or the bullet. The ballot or the bullet. If you're afraid to use an expression like that, you should get on out of the country, you should get back in the cotton patch... In 1964, it's the ballot or the bullet. Don't be throwing out any ballots. A ballot is like a bullet. You don't throw your ballots until you see a target, and if that target is not within your reach, keep your ballot in your pocket... It's time for us to see that every time we look at our community, we see our people suffering from exploitation, poverty, and brutality. If the government is unwilling or unable to defend the lives and properties of Negroes, it's time for Negroes to defend themselves."
+              "text": "It's got to be the ballot or the bullet. The ballot or the bullet. If you're afraid to use an expression like that, you should get on out of the country, you should get back in the cotton patch... In 1964, it's the ballot or the bullet. Don't be throwing out any ballots. A ballot is like a bullet. You don't throw your ballots until you see a target, and if that target is not within your reach, keep your ballot in your pocket... It's time for us to see that every time we look at our community, we see our people suffering from exploitation, poverty, and brutality. If the government is unwilling or unable to defend the lives and properties of Negroes, it's time for Negroes to defend themselves.",
+              "studio_audio": "/audio/sources/usa/lesson_2_3_sB.mp3",
+              "studio_voice_label": "From Malcolm X's Landmark Addres…"
             }
           ],
           "isReversed": true,
@@ -12982,7 +13108,9 @@ export default {
               "src": "/units/usa/assets/sources/stokely_carmichael_mississippi_1966.jpg",
               "source": "/units/usa/assets/sources/stokely_carmichael_mississippi_1966.jpg",
               "caption": "SNCC Chairman Stokely Carmichael addressing a mass civil rights rally in Greenwood, Mississippi during the June 1966 March Against Fear, where he first electrified the crowd with the cry 'Black Power!'.",
-              "text": "This is the twenty-seventh time that I've been arrested. I ain't going to jail no more! The only way we gonna stop them white men from whuppin' us is to take over. We been saying 'freedom' for six years and we ain't got nothin'. What we gonna start saying now is Black Power! We want Black Power! Every county where we are the majority, we want to elect Black sheriffs, Black mayors, and control our own communities!"
+              "text": "This is the twenty-seventh time that I've been arrested. I ain't going to jail no more! The only way we gonna stop them white men from whuppin' us is to take over. We been saying 'freedom' for six years and we ain't got nothin'. What we gonna start saying now is Black Power! We want Black Power! Every county where we are the majority, we want to elect Black sheriffs, Black mayors, and control our own communities!",
+              "studio_audio": "/audio/sources/usa/lesson_2_3_sC.mp3",
+              "studio_voice_label": "SNCC Chairman Stokely Carmichael…"
             }
           ],
           "image": "/images/usa/kt2/usa_l2_3_b2_huey_newton_black_panthers.jpg",
@@ -13028,7 +13156,9 @@ export default {
               "src": "/units/usa/assets/sources/black-panthers-marching.jpg",
               "source": "/units/usa/assets/sources/portraits/huey_newton.jpg",
               "caption": "Black Panther Party members drilling and standing in uniform with black leather jackets and berets in Oakland, California.",
-              "text": "1. We want freedom. We want power to determine the destiny of our Black Community.<br>2. We want full employment for our people.<br>3. We want an end to the robbery by the white man of our Black Community.<br>4. We want decent housing, fit for the shelter of human beings.<br>7. We want an immediate end to POLICE BRUTALITY and MURDER of Black people.<br>8. We want freedom for all Black men held in federal, state, county and city prisons and jails.<br>10. We want land, bread, housing, education, clothing, justice and peace."
+              "text": "1. We want freedom. We want power to determine the destiny of our Black Community.<br>2. We want full employment for our people.<br>3. We want an end to the robbery by the white man of our Black Community.<br>4. We want decent housing, fit for the shelter of human beings.<br>7. We want an immediate end to POLICE BRUTALITY and MURDER of Black people.<br>8. We want freedom for all Black men held in federal, state, county and city prisons and jails.<br>10. We want land, bread, housing, education, clothing, justice and peace.",
+              "studio_audio": "/audio/sources/usa/lesson_2_3_sD.mp3",
+              "studio_voice_label": "Excerpt from the Black Panther P…"
             }
           ],
           "isReversed": true,
@@ -13901,7 +14031,9 @@ export default {
           "source_context": "Malcolm X Memorial Foundation / Library of Congress Sound Recording Collection. Malcolm X (el-Hajj Malik el-Shabazz) for 3,000 community members at Cory Methodist Church and national broadcast audiences with the objective: To warn the federal government that African Americans would no longer tolerate non-violent passivity if their political rights were obstructed..",
           "source": "/units/usa/assets/sources/portraits/malcolm_x.jpg",
           "caption": "Malcolm X speaking at a press conference in 1964, articulating the philosophy of Black nationalism, self-defense, and political accountability.",
-          "text": "It's got to be the ballot or the bullet. The ballot or the bullet. If you're afraid to use an expression like that, you should get on out of the country, you should get back in the cotton patch... In 1964, it's the ballot or the bullet. Don't be throwing out any ballots. A ballot is like a bullet. You don't throw your ballots until you see a target, and if that target is not within your reach, keep your ballot in your pocket... It's time for us to see that every time we look at our community, we see our people suffering from exploitation, poverty, and brutality. If the government is unwilling or unable to defend the lives and properties of Negroes, it's time for Negroes to defend themselves."
+          "text": "It's got to be the ballot or the bullet. The ballot or the bullet. If you're afraid to use an expression like that, you should get on out of the country, you should get back in the cotton patch... In 1964, it's the ballot or the bullet. Don't be throwing out any ballots. A ballot is like a bullet. You don't throw your ballots until you see a target, and if that target is not within your reach, keep your ballot in your pocket... It's time for us to see that every time we look at our community, we see our people suffering from exploitation, poverty, and brutality. If the government is unwilling or unable to defend the lives and properties of Negroes, it's time for Negroes to defend themselves.",
+          "studio_audio": "/audio/sources/usa/lesson_2_3_sB.mp3",
+          "studio_voice_label": "From Malcolm X's Landmark Addres…"
         },
         {
           "id": "usa_lesson_2_3_e",
@@ -13929,7 +14061,9 @@ export default {
           "src": "/units/usa/assets/sources/stokely_carmichael_mississippi_1966.jpg",
           "source": "/units/usa/assets/sources/stokely_carmichael_mississippi_1966.jpg",
           "caption": "SNCC Chairman Stokely Carmichael addressing a mass civil rights rally in Greenwood, Mississippi during the June 1966 March Against Fear, where he first electrified the crowd with the cry 'Black Power!'.",
-          "text": "This is the twenty-seventh time that I've been arrested. I ain't going to jail no more! The only way we gonna stop them white men from whuppin' us is to take over. We been saying 'freedom' for six years and we ain't got nothin'. What we gonna start saying now is Black Power! We want Black Power! Every county where we are the majority, we want to elect Black sheriffs, Black mayors, and control our own communities!"
+          "text": "This is the twenty-seventh time that I've been arrested. I ain't going to jail no more! The only way we gonna stop them white men from whuppin' us is to take over. We been saying 'freedom' for six years and we ain't got nothin'. What we gonna start saying now is Black Power! We want Black Power! Every county where we are the majority, we want to elect Black sheriffs, Black mayors, and control our own communities!",
+          "studio_audio": "/audio/sources/usa/lesson_2_3_sC.mp3",
+          "studio_voice_label": "SNCC Chairman Stokely Carmichael…"
         },
         {
           "id": "usa_lesson_2_3_d",
@@ -13954,7 +14088,9 @@ export default {
           "source_context": "BPP National Headquarters, Oakland, California / Stanford University Special Collections. Huey P. Newton and Bobby Seale, co-founders of the Black Panther Party for Urban Black youth, working-class communities, and radical activist groups with the objective: To set forth the core ideological objectives and practical socialist demands of the revolutionary Black Panther Party..",
           "source": "/units/usa/assets/sources/portraits/huey_newton.jpg",
           "caption": "Black Panther Party members drilling and standing in uniform with black leather jackets and berets in Oakland, California.",
-          "text": "1. We want freedom. We want power to determine the destiny of our Black Community.<br>2. We want full employment for our people.<br>3. We want an end to the robbery by the white man of our Black Community.<br>4. We want decent housing, fit for the shelter of human beings.<br>7. We want an immediate end to POLICE BRUTALITY and MURDER of Black people.<br>8. We want freedom for all Black men held in federal, state, county and city prisons and jails.<br>10. We want land, bread, housing, education, clothing, justice and peace."
+          "text": "1. We want freedom. We want power to determine the destiny of our Black Community.<br>2. We want full employment for our people.<br>3. We want an end to the robbery by the white man of our Black Community.<br>4. We want decent housing, fit for the shelter of human beings.<br>7. We want an immediate end to POLICE BRUTALITY and MURDER of Black people.<br>8. We want freedom for all Black men held in federal, state, county and city prisons and jails.<br>10. We want land, bread, housing, education, clothing, justice and peace.",
+          "studio_audio": "/audio/sources/usa/lesson_2_3_sD.mp3",
+          "studio_voice_label": "Excerpt from the Black Panther P…"
         },
         {
           "id": "usa_lesson_2_3_a",
@@ -14372,7 +14508,9 @@ export default {
         ]
       },
       "banner_image": "/images/upgraded/gcse-p3/usa_l07_banner_mlk_malcolm_x_capitol_1964.jpg",
-      "banner_caption": "Dr Martin Luther King Jr. and Malcolm X meeting for the only time in a corridor of the United States Capitol during the Senate filibuster debate over the Civil Rights Act (26 March 1964, Library of Congress)."
+      "banner_caption": "Dr Martin Luther King Jr. and Malcolm X meeting for the only time in a corridor of the United States Capitol during the Senate filibuster debate over the Civil Rights Act (26 March 1964, Library of Congress).",
+      "prologue_audio": "/audio/lessons/usa/lesson_2_3_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · Historian"
     },
     {
       "id": "lesson_2_4",
@@ -14634,7 +14772,9 @@ export default {
               "src": "/units/usa/assets/sources/watts_riots_avalon_blvd_1965.jpg",
               "source": "/units/usa/assets/sources/portraits/mlk.jpg",
               "caption": "Aerial view of Avalon Boulevard during the Watts Rebellion in Los Angeles, August 1965, with dense black smoke rising from burning commercial blocks.",
-              "text": "Since August 1965, where are we going? Where is Watts going? We didn't burn our own community; we burned the property of white slumlords and merchants who bled our people dry for generations. It was a revolt, not a riot. It was a rebellion of young Black people standing up and declaring: 'We are tired of being brutalized by the Los Angeles Police Department, tired of living in rat-infested tenements, and tired of being treated like second-class citizens in our own country.'"
+              "text": "Since August 1965, where are we going? Where is Watts going? We didn't burn our own community; we burned the property of white slumlords and merchants who bled our people dry for generations. It was a revolt, not a riot. It was a rebellion of young Black people standing up and declaring: 'We are tired of being brutalized by the Los Angeles Police Department, tired of living in rat-infested tenements, and tired of being treated like second-class citizens in our own country.'",
+              "studio_audio": "/audio/sources/usa/lesson_2_4_sA.mp3",
+              "studio_voice_label": "Statement of Watts Resident Tomm…"
             }
           ],
           "isReversed": false,
@@ -14762,7 +14902,9 @@ export default {
               "src": "/units/usa/assets/sources/detroit-riot-guard-1967.jpg",
               "source": "/units/usa/assets/sources/detroit-riot-guard-1967.jpg",
               "caption": "Remains of burned-out residential structures in Detroit following the July 1967 rebellion, where 43 people died and paratroopers of the 82nd Airborne were deployed.",
-              "text": "This is our basic conclusion: Our nation is moving toward two societies, one black, one white—separate and unequal. Reaction to Detroit, Newark, and other riots of 1967 should not be planned on the basis of suppressing disorder, but on enriching the lives of the millions of ghetto dwellers who have lost hope. What white Americans have never fully understood—but what the Negro can never forget—is that white society is deeply implicated in the ghetto. White institutions created it, white institutions maintain it, and white society condones it."
+              "text": "This is our basic conclusion: Our nation is moving toward two societies, one black, one white—separate and unequal. Reaction to Detroit, Newark, and other riots of 1967 should not be planned on the basis of suppressing disorder, but on enriching the lives of the millions of ghetto dwellers who have lost hope. What white Americans have never fully understood—but what the Negro can never forget—is that white society is deeply implicated in the ghetto. White institutions created it, white institutions maintain it, and white society condones it.",
+              "studio_audio": "/audio/sources/usa/lesson_2_4_sB.mp3",
+              "studio_voice_label": "From the Summary of the Report o…"
             }
           ],
           "isReversed": true,
@@ -14808,7 +14950,9 @@ export default {
               "src": "/units/usa/assets/sources/mourners-mlk-assassination.jpg",
               "source": "/units/usa/assets/sources/mourners-mlk-assassination.jpg",
               "caption": "Soldiers of the 3rd Infantry Regiment and National Guardsmen patrol 7th Street NW in Washington D.C. as firefighters hose down buildings destroyed in the April 1968 uprisings following the assassination of Martin Luther King Jr.",
-              "text": "I have very sad news for all of you, and I think sad news for all of our fellow citizens, and people who love peace all over the world, and that is that Martin Luther King was shot and was killed tonight in Memphis, Tennessee. Martin Luther King dedicated his life to love and to justice between fellow human beings. For those of you who are black—considering the evidence evidently that there were white people who were responsible—you can be filled with bitterness, and with hatred, and a desire for revenge. But what we need in the United States is not division; what we need in the United States is not hatred; what we need in the United States is not violence and lawlessness, but is love, and wisdom, and compassion toward one another."
+              "text": "I have very sad news for all of you, and I think sad news for all of our fellow citizens, and people who love peace all over the world, and that is that Martin Luther King was shot and was killed tonight in Memphis, Tennessee. Martin Luther King dedicated his life to love and to justice between fellow human beings. For those of you who are black—considering the evidence evidently that there were white people who were responsible—you can be filled with bitterness, and with hatred, and a desire for revenge. But what we need in the United States is not division; what we need in the United States is not hatred; what we need in the United States is not violence and lawlessness, but is love, and wisdom, and compassion toward one another.",
+              "studio_audio": "/audio/sources/usa/lesson_2_4_sC.mp3",
+              "studio_voice_label": "Senator Robert F. Kennedy Announ…"
             }
           ],
           "isReversed": true,
@@ -14854,7 +14998,9 @@ export default {
               "src": "/units/usa/assets/sources/lbj-mlk-signing-1964.jpg",
               "source": "/units/usa/assets/sources/portraits/johnson.jpg",
               "caption": "President Lyndon B. Johnson signing federal civil rights legislation in the East Room of the White House. On 11 April 1968, amid national grief following MLK's assassination, Johnson signed the Civil Rights Act of 1968.",
-              "text": "An Act to prescribe penalties for certain acts of violence or intimidation, and for other purposes. Be it enacted by the Senate and House of Representatives: Section 804. It shall be unlawful—(a) To refuse to sell or rent after the making of a bona fide offer, or to refuse to negotiate for the sale or rental of, or otherwise make unavailable or deny, a dwelling to any person because of race, color, religion, or national origin. (b) To discriminate against any person in the terms, conditions, or privileges of sale or rental of a dwelling... because of race, color, religion, or national origin."
+              "text": "An Act to prescribe penalties for certain acts of violence or intimidation, and for other purposes. Be it enacted by the Senate and House of Representatives: Section 804. It shall be unlawful—(a) To refuse to sell or rent after the making of a bona fide offer, or to refuse to negotiate for the sale or rental of, or otherwise make unavailable or deny, a dwelling to any person because of race, color, religion, or national origin. (b) To discriminate against any person in the terms, conditions, or privileges of sale or rental of a dwelling... because of race, color, religion, or national origin.",
+              "studio_audio": "/audio/sources/usa/lesson_2_4_sD.mp3",
+              "studio_voice_label": "Excerpt from the Civil Rights Ac…"
             }
           ],
           "isReversed": true,
@@ -15543,7 +15689,9 @@ export default {
                 "attribution": "From the official findings of the National Advisory Commission on Civil Disorders (the Kerner Commission), established by President Lyndon B. Johnson in July 1967 to investigate the 1965–67 urban riots.",
                 "caption": "Source B: From the Official Findings of the Kerner Commission Report on Civil Disorders (February 1968)",
                 "content": "Our nation is moving toward two societies, one black, one white—separate and unequal... Segregation and poverty have created in the racial ghetto a destructive environment totally unknown to white Americans. What white Americans have never fully understood—but what the Negro can never forget—is that white society is deeply implicated in the ghetto. White institutions created it, white institutions maintain it, and white society condones it. Pervasive discrimination in employment and housing, coupled with routine police harassment, has generated a reservoir of frustration that ignited in Watts, Newark, and Detroit.",
-                "text": "Our nation is moving toward two societies, one black, one white—separate and unequal... Segregation and poverty have created in the racial ghetto a destructive environment totally unknown to white Americans. What white Americans have never fully understood—but what the Negro can never forget—is that white society is deeply implicated in the ghetto. White institutions created it, white institutions maintain it, and white society condones it. Pervasive discrimination in employment and housing, coupled with routine police harassment, has generated a reservoir of frustration that ignited in Watts, Newark, and Detroit."
+                "text": "Our nation is moving toward two societies, one black, one white—separate and unequal... Segregation and poverty have created in the racial ghetto a destructive environment totally unknown to white Americans. What white Americans have never fully understood—but what the Negro can never forget—is that white society is deeply implicated in the ghetto. White institutions created it, white institutions maintain it, and white society condones it. Pervasive discrimination in employment and housing, coupled with routine police harassment, has generated a reservoir of frustration that ignited in Watts, Newark, and Detroit.",
+                "studio_audio": "/audio/sources/usa/lesson_2_4_ep3_sB.mp3",
+                "studio_voice_label": "From the Official Findings of th…"
               },
               {
                 "letter": "C",
@@ -15556,7 +15704,9 @@ export default {
                 "attribution": "Speech by SNCC leader Stokely Carmichael delivered to an audience of urban Black youths in Chicago in 1966, widely broadcast across national media.",
                 "caption": "Source C: Speech by SNCC Leader Stokely Carmichael to Urban Black Youths in Chicago (1966)",
                 "content": "We have been begging the white man for freedom for over a century, singing ‘We Shall Overcome’ while his police beat our heads and his judges throw us in jail. Non-violence has failed to protect Black people in the northern slums. The Civil Rights Act did not give our brothers jobs; it did not tear down the rats and roaches in Harlem and Chicago! Black Power means Black people coming together to organize our own strength. If white police come into our communities acting like an occupying army, Black men have a duty to defend themselves and take control of our own destiny.",
-                "text": "We have been begging the white man for freedom for over a century, singing ‘We Shall Overcome’ while his police beat our heads and his judges throw us in jail. Non-violence has failed to protect Black people in the northern slums. The Civil Rights Act did not give our brothers jobs; it did not tear down the rats and roaches in Harlem and Chicago! Black Power means Black people coming together to organize our own strength. If white police come into our communities acting like an occupying army, Black men have a duty to defend themselves and take control of our own destiny."
+                "text": "We have been begging the white man for freedom for over a century, singing ‘We Shall Overcome’ while his police beat our heads and his judges throw us in jail. Non-violence has failed to protect Black people in the northern slums. The Civil Rights Act did not give our brothers jobs; it did not tear down the rats and roaches in Harlem and Chicago! Black Power means Black people coming together to organize our own strength. If white police come into our communities acting like an occupying army, Black men have a duty to defend themselves and take control of our own destiny.",
+                "studio_audio": "/audio/sources/usa/lesson_2_4_ep3_sC.mp3",
+                "studio_voice_label": "Speech by SNCC Leader Stokely Ca…"
               }
             ],
             "supporting_sources": [
@@ -15701,7 +15851,9 @@ export default {
                 "attribution": "From the official findings of the National Advisory Commission on Civil Disorders (the Kerner Commission), established by President Lyndon B. Johnson in July 1967 to investigate the 1965–67 urban riots.",
                 "caption": "Source B: From the Official Findings of the Kerner Commission Report on Civil Disorders (February 1968)",
                 "content": "Our nation is moving toward two societies, one black, one white—separate and unequal... Segregation and poverty have created in the racial ghetto a destructive environment totally unknown to white Americans. What white Americans have never fully understood—but what the Negro can never forget—is that white society is deeply implicated in the ghetto. White institutions created it, white institutions maintain it, and white society condones it. Pervasive discrimination in employment and housing, coupled with routine police harassment, has generated a reservoir of frustration that ignited in Watts, Newark, and Detroit.",
-                "text": "Our nation is moving toward two societies, one black, one white—separate and unequal... Segregation and poverty have created in the racial ghetto a destructive environment totally unknown to white Americans. What white Americans have never fully understood—but what the Negro can never forget—is that white society is deeply implicated in the ghetto. White institutions created it, white institutions maintain it, and white society condones it. Pervasive discrimination in employment and housing, coupled with routine police harassment, has generated a reservoir of frustration that ignited in Watts, Newark, and Detroit."
+                "text": "Our nation is moving toward two societies, one black, one white—separate and unequal... Segregation and poverty have created in the racial ghetto a destructive environment totally unknown to white Americans. What white Americans have never fully understood—but what the Negro can never forget—is that white society is deeply implicated in the ghetto. White institutions created it, white institutions maintain it, and white society condones it. Pervasive discrimination in employment and housing, coupled with routine police harassment, has generated a reservoir of frustration that ignited in Watts, Newark, and Detroit.",
+                "studio_audio": "/audio/sources/usa/lesson_2_4_ep3_sB.mp3",
+                "studio_voice_label": "From the Official Findings of th…"
               },
               {
                 "letter": "C",
@@ -15714,7 +15866,9 @@ export default {
                 "attribution": "Speech by SNCC leader Stokely Carmichael delivered to an audience of urban Black youths in Chicago in 1966, widely broadcast across national media.",
                 "caption": "Source C: Speech by SNCC Leader Stokely Carmichael to Urban Black Youths in Chicago (1966)",
                 "content": "We have been begging the white man for freedom for over a century, singing ‘We Shall Overcome’ while his police beat our heads and his judges throw us in jail. Non-violence has failed to protect Black people in the northern slums. The Civil Rights Act did not give our brothers jobs; it did not tear down the rats and roaches in Harlem and Chicago! Black Power means Black people coming together to organize our own strength. If white police come into our communities acting like an occupying army, Black men have a duty to defend themselves and take control of our own destiny.",
-                "text": "We have been begging the white man for freedom for over a century, singing ‘We Shall Overcome’ while his police beat our heads and his judges throw us in jail. Non-violence has failed to protect Black people in the northern slums. The Civil Rights Act did not give our brothers jobs; it did not tear down the rats and roaches in Harlem and Chicago! Black Power means Black people coming together to organize our own strength. If white police come into our communities acting like an occupying army, Black men have a duty to defend themselves and take control of our own destiny."
+                "text": "We have been begging the white man for freedom for over a century, singing ‘We Shall Overcome’ while his police beat our heads and his judges throw us in jail. Non-violence has failed to protect Black people in the northern slums. The Civil Rights Act did not give our brothers jobs; it did not tear down the rats and roaches in Harlem and Chicago! Black Power means Black people coming together to organize our own strength. If white police come into our communities acting like an occupying army, Black men have a duty to defend themselves and take control of our own destiny.",
+                "studio_audio": "/audio/sources/usa/lesson_2_4_ep3_sC.mp3",
+                "studio_voice_label": "Speech by SNCC Leader Stokely Ca…"
               }
             ],
             "supporting_sources": [
@@ -15832,7 +15986,9 @@ export default {
                 "attribution": "From the official findings of the National Advisory Commission on Civil Disorders (the Kerner Commission), established by President Lyndon B. Johnson in July 1967 to investigate the 1965–67 urban riots.",
                 "caption": "Source B: From the Official Findings of the Kerner Commission Report on Civil Disorders (February 1968)",
                 "content": "Our nation is moving toward two societies, one black, one white—separate and unequal... Segregation and poverty have created in the racial ghetto a destructive environment totally unknown to white Americans. What white Americans have never fully understood—but what the Negro can never forget—is that white society is deeply implicated in the ghetto. White institutions created it, white institutions maintain it, and white society condones it. Pervasive discrimination in employment and housing, coupled with routine police harassment, has generated a reservoir of frustration that ignited in Watts, Newark, and Detroit.",
-                "text": "Our nation is moving toward two societies, one black, one white—separate and unequal... Segregation and poverty have created in the racial ghetto a destructive environment totally unknown to white Americans. What white Americans have never fully understood—but what the Negro can never forget—is that white society is deeply implicated in the ghetto. White institutions created it, white institutions maintain it, and white society condones it. Pervasive discrimination in employment and housing, coupled with routine police harassment, has generated a reservoir of frustration that ignited in Watts, Newark, and Detroit."
+                "text": "Our nation is moving toward two societies, one black, one white—separate and unequal... Segregation and poverty have created in the racial ghetto a destructive environment totally unknown to white Americans. What white Americans have never fully understood—but what the Negro can never forget—is that white society is deeply implicated in the ghetto. White institutions created it, white institutions maintain it, and white society condones it. Pervasive discrimination in employment and housing, coupled with routine police harassment, has generated a reservoir of frustration that ignited in Watts, Newark, and Detroit.",
+                "studio_audio": "/audio/sources/usa/lesson_2_4_ep3_sB.mp3",
+                "studio_voice_label": "From the Official Findings of th…"
               },
               {
                 "letter": "C",
@@ -15845,7 +16001,9 @@ export default {
                 "attribution": "Speech by SNCC leader Stokely Carmichael delivered to an audience of urban Black youths in Chicago in 1966, widely broadcast across national media.",
                 "caption": "Source C: Speech by SNCC Leader Stokely Carmichael to Urban Black Youths in Chicago (1966)",
                 "content": "We have been begging the white man for freedom for over a century, singing ‘We Shall Overcome’ while his police beat our heads and his judges throw us in jail. Non-violence has failed to protect Black people in the northern slums. The Civil Rights Act did not give our brothers jobs; it did not tear down the rats and roaches in Harlem and Chicago! Black Power means Black people coming together to organize our own strength. If white police come into our communities acting like an occupying army, Black men have a duty to defend themselves and take control of our own destiny.",
-                "text": "We have been begging the white man for freedom for over a century, singing ‘We Shall Overcome’ while his police beat our heads and his judges throw us in jail. Non-violence has failed to protect Black people in the northern slums. The Civil Rights Act did not give our brothers jobs; it did not tear down the rats and roaches in Harlem and Chicago! Black Power means Black people coming together to organize our own strength. If white police come into our communities acting like an occupying army, Black men have a duty to defend themselves and take control of our own destiny."
+                "text": "We have been begging the white man for freedom for over a century, singing ‘We Shall Overcome’ while his police beat our heads and his judges throw us in jail. Non-violence has failed to protect Black people in the northern slums. The Civil Rights Act did not give our brothers jobs; it did not tear down the rats and roaches in Harlem and Chicago! Black Power means Black people coming together to organize our own strength. If white police come into our communities acting like an occupying army, Black men have a duty to defend themselves and take control of our own destiny.",
+                "studio_audio": "/audio/sources/usa/lesson_2_4_ep3_sC.mp3",
+                "studio_voice_label": "Speech by SNCC Leader Stokely Ca…"
               }
             ],
             "supporting_sources": [
@@ -16000,7 +16158,9 @@ export default {
                 "attribution": "From the official findings of the National Advisory Commission on Civil Disorders (the Kerner Commission), established by President Lyndon B. Johnson in July 1967 to investigate the 1965–67 urban riots.",
                 "caption": "Source B: From the Official Findings of the Kerner Commission Report on Civil Disorders (February 1968)",
                 "content": "Our nation is moving toward two societies, one black, one white—separate and unequal... Segregation and poverty have created in the racial ghetto a destructive environment totally unknown to white Americans. What white Americans have never fully understood—but what the Negro can never forget—is that white society is deeply implicated in the ghetto. White institutions created it, white institutions maintain it, and white society condones it. Pervasive discrimination in employment and housing, coupled with routine police harassment, has generated a reservoir of frustration that ignited in Watts, Newark, and Detroit.",
-                "text": "Our nation is moving toward two societies, one black, one white—separate and unequal... Segregation and poverty have created in the racial ghetto a destructive environment totally unknown to white Americans. What white Americans have never fully understood—but what the Negro can never forget—is that white society is deeply implicated in the ghetto. White institutions created it, white institutions maintain it, and white society condones it. Pervasive discrimination in employment and housing, coupled with routine police harassment, has generated a reservoir of frustration that ignited in Watts, Newark, and Detroit."
+                "text": "Our nation is moving toward two societies, one black, one white—separate and unequal... Segregation and poverty have created in the racial ghetto a destructive environment totally unknown to white Americans. What white Americans have never fully understood—but what the Negro can never forget—is that white society is deeply implicated in the ghetto. White institutions created it, white institutions maintain it, and white society condones it. Pervasive discrimination in employment and housing, coupled with routine police harassment, has generated a reservoir of frustration that ignited in Watts, Newark, and Detroit.",
+                "studio_audio": "/audio/sources/usa/lesson_2_4_ep3_sB.mp3",
+                "studio_voice_label": "From the Official Findings of th…"
               },
               {
                 "letter": "C",
@@ -16013,7 +16173,9 @@ export default {
                 "attribution": "Speech by SNCC leader Stokely Carmichael delivered to an audience of urban Black youths in Chicago in 1966, widely broadcast across national media.",
                 "caption": "Source C: Speech by SNCC Leader Stokely Carmichael to Urban Black Youths in Chicago (1966)",
                 "content": "We have been begging the white man for freedom for over a century, singing ‘We Shall Overcome’ while his police beat our heads and his judges throw us in jail. Non-violence has failed to protect Black people in the northern slums. The Civil Rights Act did not give our brothers jobs; it did not tear down the rats and roaches in Harlem and Chicago! Black Power means Black people coming together to organize our own strength. If white police come into our communities acting like an occupying army, Black men have a duty to defend themselves and take control of our own destiny.",
-                "text": "We have been begging the white man for freedom for over a century, singing ‘We Shall Overcome’ while his police beat our heads and his judges throw us in jail. Non-violence has failed to protect Black people in the northern slums. The Civil Rights Act did not give our brothers jobs; it did not tear down the rats and roaches in Harlem and Chicago! Black Power means Black people coming together to organize our own strength. If white police come into our communities acting like an occupying army, Black men have a duty to defend themselves and take control of our own destiny."
+                "text": "We have been begging the white man for freedom for over a century, singing ‘We Shall Overcome’ while his police beat our heads and his judges throw us in jail. Non-violence has failed to protect Black people in the northern slums. The Civil Rights Act did not give our brothers jobs; it did not tear down the rats and roaches in Harlem and Chicago! Black Power means Black people coming together to organize our own strength. If white police come into our communities acting like an occupying army, Black men have a duty to defend themselves and take control of our own destiny.",
+                "studio_audio": "/audio/sources/usa/lesson_2_4_ep3_sC.mp3",
+                "studio_voice_label": "Speech by SNCC Leader Stokely Ca…"
               }
             ],
             "supporting_sources": [
@@ -16277,7 +16439,9 @@ export default {
           "source": "/units/usa/assets/sources/portraits/mlk.jpg",
           "caption": "Aerial view of thick black smoke rising from burning commercial buildings along Avalon Boulevard in South Los Angeles during the August 1965 Watts Rebellion (George R. Fry, Los Angeles Times Photographic Archive, UCLA, CC BY 4.0).",
           "text": "Since August 1965, where are we going? Where is Watts going? We didn't burn our own community; we burned the property of white slumlords and merchants who bled our people dry for generations. It was a revolt, not a riot. It was a rebellion of young Black people standing up and declaring: 'We are tired of being brutalized by the Los Angeles Police Department, tired of living in rat-infested tenements, and tired of being treated like second-class citizens in our own country.'",
-          "image_alt": "Aerial photograph by George R. Fry for the Los Angeles Times showing thick plumes of black smoke billowing from burning commercial buildings along Avalon Boulevard during the August 1965 Watts Rebellion"
+          "image_alt": "Aerial photograph by George R. Fry for the Los Angeles Times showing thick plumes of black smoke billowing from burning commercial buildings along Avalon Boulevard during the August 1965 Watts Rebellion",
+          "studio_audio": "/audio/sources/usa/lesson_2_4_sA.mp3",
+          "studio_voice_label": "Statement of Watts Resident Tomm…"
         },
         {
           "id": "usa_lesson_2_4_a",
@@ -16306,7 +16470,9 @@ export default {
           "source": "/units/usa/assets/sources/detroit-riot-guard-1967.jpg",
           "caption": "President Lyndon B. Johnson conferring in the White House Cabinet Room with Chairman Governor Otto Kerner, Mayor John Lindsay, Senator Edward Brooke, Roy Wilkins, and members of the National Advisory Commission on Civil Disorders (Kerner Commission, Library of Congress).",
           "text": "This is our basic conclusion: Our nation is moving toward two societies, one black, one white—separate and unequal. Reaction to Detroit, Newark, and other riots of 1967 should not be planned on the basis of suppressing disorder, but on enriching the lives of the millions of ghetto dwellers who have lost hope. What white Americans have never fully understood—but what the Negro can never forget—is that white society is deeply implicated in the ghetto. White institutions created it, white institutions maintain it, and white society condones it.",
-          "image_alt": "Library of Congress photograph showing President Lyndon B. Johnson conferring in the White House Cabinet Room with Illinois Governor Otto Kerner, New York Mayor John Lindsay, Senator Edward Brooke, Roy Wilkins, and members of the National Advisory Commission on Civil Disorders"
+          "image_alt": "Library of Congress photograph showing President Lyndon B. Johnson conferring in the White House Cabinet Room with Illinois Governor Otto Kerner, New York Mayor John Lindsay, Senator Edward Brooke, Roy Wilkins, and members of the National Advisory Commission on Civil Disorders",
+          "studio_audio": "/audio/sources/usa/lesson_2_4_sB.mp3",
+          "studio_voice_label": "From the Summary of the Report o…"
         },
         {
           "id": "usa_lesson_2_4_d",
@@ -16335,7 +16501,9 @@ export default {
           "source": "/units/usa/assets/sources/mourners-mlk-assassination.jpg",
           "caption": "Senator Robert F. Kennedy addressing a 1968 presidential campaign crowd (Evan Freed): On the night of 4 April 1968 in inner-city Indianapolis, Kennedy’s unscripted plea for compassion and wisdom helped keep Indianapolis peaceful while over 100 cities erupted.",
           "text": "I have very sad news for all of you, and I think sad news for all of our fellow citizens, and people who love peace all over the world, and that is that Martin Luther King was shot and was killed tonight in Memphis, Tennessee. Martin Luther King dedicated his life to love and to justice between fellow human beings. For those of you who are black—considering the evidence evidently that there were white people who were responsible—you can be filled with bitterness, and with hatred, and a desire for revenge. But what we need in the United States is not division; what we need in the United States is not hatred; what we need in the United States is not violence and lawlessness, but is love, and wisdom, and compassion toward one another.",
-          "image_alt": "Senator Robert F. Kennedy speaking earnestly in shirtsleeves into a cluster of microphones at an outdoor presidential campaign rally in 1968"
+          "image_alt": "Senator Robert F. Kennedy speaking earnestly in shirtsleeves into a cluster of microphones at an outdoor presidential campaign rally in 1968",
+          "studio_audio": "/audio/sources/usa/lesson_2_4_sC.mp3",
+          "studio_voice_label": "Senator Robert F. Kennedy Announ…"
         },
         {
           "id": "usa_lesson_2_4_e",
@@ -16364,7 +16532,9 @@ export default {
           "source": "/units/usa/assets/sources/portraits/johnson.jpg",
           "caption": "President Lyndon B. Johnson signing the Civil Rights Act of 1968 (Fair Housing Act) in the East Room of the White House on 11 April 1968—one week after Dr King’s murder—watched by Senator Edward Brooke, NAACP lobbyist Clarence Mitchell Jr., and Vice President Hubert Humphrey (Library of Congress).",
           "text": "An Act to prescribe penalties for certain acts of violence or intimidation, and for other purposes. Be it enacted by the Senate and House of Representatives: Section 804. It shall be unlawful—(a) To refuse to sell or rent after the making of a bona fide offer, or to refuse to negotiate for the sale or rental of, or otherwise make unavailable or deny, a dwelling to any person because of race, color, religion, or national origin. (b) To discriminate against any person in the terms, conditions, or privileges of sale or rental of a dwelling... because of race, color, religion, or national origin.",
-          "image_alt": "President Lyndon B. Johnson seated at a desk in the East Room of the White House on 11 April 1968 signing the Civil Rights Act of 1968 (Fair Housing Act) surrounded by Justice Thurgood Marshall, Senator Edward Brooke, Clarence Mitchell Jr., and Vice President Hubert Humphrey"
+          "image_alt": "President Lyndon B. Johnson seated at a desk in the East Room of the White House on 11 April 1968 signing the Civil Rights Act of 1968 (Fair Housing Act) surrounded by Justice Thurgood Marshall, Senator Edward Brooke, Clarence Mitchell Jr., and Vice President Hubert Humphrey",
+          "studio_audio": "/audio/sources/usa/lesson_2_4_sD.mp3",
+          "studio_voice_label": "Excerpt from the Civil Rights Ac…"
         },
         {
           "id": "usa_lesson_2_4_b",
@@ -16807,7 +16977,9 @@ export default {
         ]
       },
       "banner_image": "/images/upgraded/gcse-p3/usa_l08_banner_washington_riots_troops_apr1968.jpg",
-      "banner_caption": "Armed U.S. federal soldiers guarding the intersection of 7th and N Streets NW beside smouldering ruins in Washington, D.C. during the nationwide urban uprisings triggered by the assassination of Dr Martin Luther King Jr. (8 April 1968, Library of Congress)."
+      "banner_caption": "Armed U.S. federal soldiers guarding the intersection of 7th and N Streets NW beside smouldering ruins in Washington, D.C. during the nationwide urban uprisings triggered by the assassination of Dr Martin Luther King Jr. (8 April 1968, Library of Congress).",
+      "prologue_audio": "/audio/lessons/usa/lesson_2_4_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · Historian"
     },
     {
       "id": "lesson_3_1",
@@ -17081,7 +17253,9 @@ export default {
               "src": "/units/usa/assets/sources/eisenhower-little-rock-speech.jpg",
               "source": "/units/usa/assets/sources/portraits/eisenhower.jpg",
               "caption": "President Dwight D. Eisenhower addressing news reporters during an executive press conference.",
-              "text": "You have, of course, both the specific and the general when you talk about such things. First of all, you have the specific value of a locality in its production of materials that the world needs, like rubber and tin. Then you have the possibility that many human beings pass under a dictatorship that is inimical to the free world. Finally, you have broader considerations that might follow what you would call the 'falling domino' principle. You have a row of dominoes set up, you knock over the first one, and what will happen to the last one is the certainty that it will go over very quickly. So you could have a beginning of a disintegration that would have the most profound influences."
+              "text": "You have, of course, both the specific and the general when you talk about such things. First of all, you have the specific value of a locality in its production of materials that the world needs, like rubber and tin. Then you have the possibility that many human beings pass under a dictatorship that is inimical to the free world. Finally, you have broader considerations that might follow what you would call the 'falling domino' principle. You have a row of dominoes set up, you knock over the first one, and what will happen to the last one is the certainty that it will go over very quickly. So you could have a beginning of a disintegration that would have the most profound influences.",
+              "studio_audio": "/audio/sources/usa/lesson_3_1_sA.mp3",
+              "studio_voice_label": "President Dwight D. Eisenhower P…"
             }
           ],
           "content": "<span class=\"para-ref\">[1.1]</span> In May 1954, Vietnamese communist forces decisively defeated the French colonial army at the **Battle of Dien Bien Phu**, bringing almost a century of French colonial rule in Indochina to an end. The subsequent **Geneva Accords (1954)** established a temporary ceasefire, dividing Vietnam along the **17th Parallel partition** into a communist North led by Ho Chi Minh and a pro-Western South.\n\n<span class=\"para-ref\">[1.2]</span> The accords stipulated that nationwide democratic elections would take place by July 1956 to reunify the divided country under a single government. However, fearing a landslide communist victory across both zones, the United States refused to sign the final declaration, resolving instead to construct an anti-communist bastion in South Vietnam to prevent the regional spread of communism.",
@@ -17215,7 +17389,9 @@ export default {
               "src": "/units/usa/assets/sources/state_dept_cable_243_1963.png",
               "source": "/units/usa/assets/sources/portraits/kennedy.jpg",
               "caption": "Facsimile of declassified State Department Telegram No. 243 (Cable 243), sent on 24 August 1963 authorizing Ambassador Henry Cabot Lodge Jr. to signal support for a military coup against Ngo Dinh Diem.",
-              "text": "It is now clear that whether military proposed martial law or whether Nhu tricked them into it, Nhu took advantage of it to smash Pagodas with police and Tung's Special Forces loyal to him. The US Government cannot tolerate situation in which power lies in Nhu's hands. Diem must be given chance remove Nhu and his coterie and replace them with best military and political personalities available. If Diem remains obdurate and refuses, then we must face the possibility that Diem himself cannot be preserved... You may also tell appropriate military commanders that we will give them direct support in any interim period of breakdown central government mechanism."
+              "text": "It is now clear that whether military proposed martial law or whether Nhu tricked them into it, Nhu took advantage of it to smash Pagodas with police and Tung's Special Forces loyal to him. The US Government cannot tolerate situation in which power lies in Nhu's hands. Diem must be given chance remove Nhu and his coterie and replace them with best military and political personalities available. If Diem remains obdurate and refuses, then we must face the possibility that Diem himself cannot be preserved... You may also tell appropriate military commanders that we will give them direct support in any interim period of breakdown central government mechanism.",
+              "studio_audio": "/audio/sources/usa/lesson_3_1_sD.mp3",
+              "studio_voice_label": "State Department Telegram No. 24…"
             }
           ],
           "isReversed": true,
@@ -17261,7 +17437,9 @@ export default {
               "src": "/units/usa/assets/sources/cia_snie_53_63_south_vietnam.png",
               "source": "/units/usa/assets/sources/portraits/diem.jpg",
               "caption": "Facsimile of declassified CIA Special National Intelligence Estimate (SNIE 53-2-63), concluding that the Diem regime had lost all authority and that a military coup was imminent.",
-              "text": "We believe that the Buddhist crisis and the repression of students and intellectuals have alienated virtually all educated urban Vietnamese from the Diem regime. Respect for Ngo Dinh Diem has evaporated, and his brother Ngo Dinh Nhu is universally loathed and feared throughout Saigon. Concurrently, the military leadership in Saigon is divided, suspicious of Diem and Nhu, and increasingly convinced that victory over the Viet Cong is impossible under the present political leadership. A successful military coup against the Diem government appears increasingly likely within the coming weeks."
+              "text": "We believe that the Buddhist crisis and the repression of students and intellectuals have alienated virtually all educated urban Vietnamese from the Diem regime. Respect for Ngo Dinh Diem has evaporated, and his brother Ngo Dinh Nhu is universally loathed and feared throughout Saigon. Concurrently, the military leadership in Saigon is divided, suspicious of Diem and Nhu, and increasingly convinced that victory over the Viet Cong is impossible under the present political leadership. A successful military coup against the Diem government appears increasingly likely within the coming weeks.",
+              "studio_audio": "/audio/sources/usa/lesson_3_1_sE.mp3",
+              "studio_voice_label": "CIA Special National Intelligenc…"
             }
           ],
           "isReversed": false,
@@ -18048,7 +18226,9 @@ export default {
           "source": "/units/usa/assets/sources/portraits/eisenhower.jpg",
           "caption": "President Dwight D. Eisenhower (National Archives 531434): At his 7 April 1954 White House news conference, Eisenhower coined the \"falling domino\" principle to justify American containment across Indochina.",
           "text": "You have, of course, both the specific and the general when you talk about such things. First of all, you have the specific value of a locality in its production of materials that the world needs, like rubber and tin. Then you have the possibility that many human beings pass under a dictatorship that is inimical to the free world. Finally, you have broader considerations that might follow what you would call the 'falling domino' principle. You have a row of dominoes set up, you knock over the first one, and what will happen to the last one is the certainty that it will go over very quickly. So you could have a beginning of a disintegration that would have the most profound influences.",
-          "image_alt": "Official White House photograph of President Dwight D. Eisenhower holding his spectacles in front of the presidential flag (National Archives 531434)"
+          "image_alt": "Official White House photograph of President Dwight D. Eisenhower holding his spectacles in front of the presidential flag (National Archives 531434)",
+          "studio_audio": "/audio/sources/usa/lesson_3_1_sA.mp3",
+          "studio_voice_label": "President Dwight D. Eisenhower P…"
         },
         {
           "id": "usa_lesson_3_1_e",
@@ -18131,7 +18311,9 @@ export default {
           "src": "/units/usa/assets/sources/state_dept_cable_243_1963.png",
           "source": "/units/usa/assets/sources/portraits/kennedy.jpg",
           "caption": "Facsimile of declassified State Department Telegram No. 243 (Cable 243), sent on 24 August 1963 authorizing Ambassador Henry Cabot Lodge Jr. to signal support for a military coup against Ngo Dinh Diem.",
-          "text": "It is now clear that whether military proposed martial law or whether Nhu tricked them into it, Nhu took advantage of it to smash Pagodas with police and Tung's Special Forces loyal to him. The US Government cannot tolerate situation in which power lies in Nhu's hands. Diem must be given chance remove Nhu and his coterie and replace them with best military and political personalities available. If Diem remains obdurate and refuses, then we must face the possibility that Diem himself cannot be preserved... You may also tell appropriate military commanders that we will give them direct support in any interim period of breakdown central government mechanism."
+          "text": "It is now clear that whether military proposed martial law or whether Nhu tricked them into it, Nhu took advantage of it to smash Pagodas with police and Tung's Special Forces loyal to him. The US Government cannot tolerate situation in which power lies in Nhu's hands. Diem must be given chance remove Nhu and his coterie and replace them with best military and political personalities available. If Diem remains obdurate and refuses, then we must face the possibility that Diem himself cannot be preserved... You may also tell appropriate military commanders that we will give them direct support in any interim period of breakdown central government mechanism.",
+          "studio_audio": "/audio/sources/usa/lesson_3_1_sD.mp3",
+          "studio_voice_label": "State Department Telegram No. 24…"
         },
         {
           "id": "usa_lesson_3_1_d",
@@ -18159,7 +18341,9 @@ export default {
           "src": "/units/usa/assets/sources/cia_snie_53_63_south_vietnam.png",
           "source": "/units/usa/assets/sources/portraits/diem.jpg",
           "caption": "Facsimile of declassified CIA Special National Intelligence Estimate (SNIE 53-2-63), concluding that the Diem regime had lost all authority and that a military coup was imminent.",
-          "text": "We believe that the Buddhist crisis and the repression of students and intellectuals have alienated virtually all educated urban Vietnamese from the Diem regime. Respect for Ngo Dinh Diem has evaporated, and his brother Ngo Dinh Nhu is universally loathed and feared throughout Saigon. Concurrently, the military leadership in Saigon is divided, suspicious of Diem and Nhu, and increasingly convinced that victory over the Viet Cong is impossible under the present political leadership. A successful military coup against the Diem government appears increasingly likely within the coming weeks."
+          "text": "We believe that the Buddhist crisis and the repression of students and intellectuals have alienated virtually all educated urban Vietnamese from the Diem regime. Respect for Ngo Dinh Diem has evaporated, and his brother Ngo Dinh Nhu is universally loathed and feared throughout Saigon. Concurrently, the military leadership in Saigon is divided, suspicious of Diem and Nhu, and increasingly convinced that victory over the Viet Cong is impossible under the present political leadership. A successful military coup against the Diem government appears increasingly likely within the coming weeks.",
+          "studio_audio": "/audio/sources/usa/lesson_3_1_sE.mp3",
+          "studio_voice_label": "CIA Special National Intelligenc…"
         }
       ],
       "video": [
@@ -18544,7 +18728,9 @@ export default {
         ]
       },
       "banner_image": "/images/upgraded/gcse-p3/usa_l09_banner_ngo_dinh_diem_us_congress_1957.jpg",
-      "banner_caption": "South Vietnamese President Ngo Dinh Diem addressing a joint session of the United States Congress in Washington, D.C. beneath Vice President Richard Nixon and Speaker Sam Rayburn during his official state visit (9 May 1957)."
+      "banner_caption": "South Vietnamese President Ngo Dinh Diem addressing a joint session of the United States Congress in Washington, D.C. beneath Vice President Richard Nixon and Speaker Sam Rayburn during his official state visit (9 May 1957).",
+      "prologue_audio": "/audio/lessons/usa/lesson_3_1_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · Historian"
     },
     {
       "id": "lesson_3_2",
@@ -18811,7 +18997,9 @@ export default {
               "src": "/units/usa/assets/sources/uss-maddox.jpg",
               "source": "/units/usa/assets/sources/uss-maddox.jpg",
               "caption": "Declassified US Navy operational track chart showing the reported naval maneuvers and torpedo contacts of the USS Maddox (DD-731) in the Gulf of Tonkin (4 August 1964).",
-              "text": "Review of action makes many reported contacts and torpedoes fired appear doubtful. Freak weather effects on radar and overeager sonarmen may have accounted for many reports. No actual visual sightings by Maddox. Suggest complete evaluation before any further action taken."
+              "text": "Review of action makes many reported contacts and torpedoes fired appear doubtful. Freak weather effects on radar and overeager sonarmen may have accounted for many reports. No actual visual sightings by Maddox. Suggest complete evaluation before any further action taken.",
+              "studio_audio": "/audio/sources/usa/lesson_3_2_sA.mp3",
+              "studio_voice_label": "Declassified Flash Precedence Ca…"
             }
           ],
           "isReversed": false,
@@ -18932,7 +19120,9 @@ export default {
               "src": "",
               "source": "/units/usa/assets/sources/portraits/ho_chi_minh.jpg",
               "caption": "North Vietnamese transport column moving through jungle staging areas. On 6 August 1964, Radio Hanoi broadcast an official statement condemning US naval aggression.",
-              "text": "The Government of the Democratic Republic of Vietnam vehemently denounces before world public opinion the extremely serious provocative acts of the United States imperialists in dispatching warships to violate our territorial waters and fabricate so-called 'second attacks' on 4 August. This is a transparent pretext manufactured by the Johnson administration to justify unprovoked air strikes against North Vietnamese naval bases and expand the aggressive war into the North."
+              "text": "The Government of the Democratic Republic of Vietnam vehemently denounces before world public opinion the extremely serious provocative acts of the United States imperialists in dispatching warships to violate our territorial waters and fabricate so-called 'second attacks' on 4 August. This is a transparent pretext manufactured by the Johnson administration to justify unprovoked air strikes against North Vietnamese naval bases and expand the aggressive war into the North.",
+              "studio_audio": "/audio/sources/usa/lesson_3_2_sB.mp3",
+              "studio_voice_label": "Official Statement Broadcast by…"
             }
           ],
           "isReversed": true,
@@ -19058,7 +19248,9 @@ export default {
               "src": "/units/usa/assets/sources/gulf_of_tonkin_resolution_statute_1964.png",
               "source": "/units/usa/assets/sources/portraits/johnson.jpg",
               "caption": "Facsimile of the Gulf of Tonkin Resolution (Public Law 88-408), passed overwhelmingly by Congress on 7 August 1964 granting President Johnson authority to wage undeclared war in Vietnam.",
-              "text": "Whereas naval units of the Communist regime in Vietnam, in violation of the principles of the Charter of the United Nations and of international law, have deliberately and repeatedly attacked United States naval vessels lawfully present in international waters... Resolved by the Senate and House of Representatives of the United States of America in Congress assembled: That the Congress approves and supports the determination of the President, as Commander in Chief, to take all necessary measures to repel any armed attack against the forces of the United States and to prevent further aggression."
+              "text": "Whereas naval units of the Communist regime in Vietnam, in violation of the principles of the Charter of the United Nations and of international law, have deliberately and repeatedly attacked United States naval vessels lawfully present in international waters... Resolved by the Senate and House of Representatives of the United States of America in Congress assembled: That the Congress approves and supports the determination of the President, as Commander in Chief, to take all necessary measures to repel any armed attack against the forces of the United States and to prevent further aggression.",
+              "studio_audio": "/audio/sources/usa/lesson_3_2_sC.mp3",
+              "studio_voice_label": "Joint Resolution of Congress"
             }
           ],
           "image": "/images/usa/kt3/usa_l10_b2_lbj_signing_tonkin_resolution_1964.jpg",
@@ -19860,7 +20052,9 @@ export default {
           "src": "/units/usa/assets/sources/uss-maddox.jpg",
           "source": "/units/usa/assets/sources/uss-maddox.jpg",
           "caption": "Declassified US Navy operational track chart showing the reported naval maneuvers and torpedo contacts of the USS Maddox (DD-731) in the Gulf of Tonkin (4 August 1964).",
-          "text": "Review of action makes many reported contacts and torpedoes fired appear doubtful. Freak weather effects on radar and overeager sonarmen may have accounted for many reports. No actual visual sightings by Maddox. Suggest complete evaluation before any further action taken."
+          "text": "Review of action makes many reported contacts and torpedoes fired appear doubtful. Freak weather effects on radar and overeager sonarmen may have accounted for many reports. No actual visual sightings by Maddox. Suggest complete evaluation before any further action taken.",
+          "studio_audio": "/audio/sources/usa/lesson_3_2_sA.mp3",
+          "studio_voice_label": "Declassified Flash Precedence Ca…"
         },
         {
           "id": "usa_lesson_3_2_e",
@@ -19888,7 +20082,9 @@ export default {
           "src": "",
           "source": "/units/usa/assets/sources/portraits/ho_chi_minh.jpg",
           "caption": "North Vietnamese transport column moving through jungle staging areas. On 6 August 1964, Radio Hanoi broadcast an official statement condemning US naval aggression.",
-          "text": "The Government of the Democratic Republic of Vietnam vehemently denounces before world public opinion the extremely serious provocative acts of the United States imperialists in dispatching warships to violate our territorial waters and fabricate so-called 'second attacks' on 4 August. This is a transparent pretext manufactured by the Johnson administration to justify unprovoked air strikes against North Vietnamese naval bases and expand the aggressive war into the North."
+          "text": "The Government of the Democratic Republic of Vietnam vehemently denounces before world public opinion the extremely serious provocative acts of the United States imperialists in dispatching warships to violate our territorial waters and fabricate so-called 'second attacks' on 4 August. This is a transparent pretext manufactured by the Johnson administration to justify unprovoked air strikes against North Vietnamese naval bases and expand the aggressive war into the North.",
+          "studio_audio": "/audio/sources/usa/lesson_3_2_sB.mp3",
+          "studio_voice_label": "Official Statement Broadcast by…"
         },
         {
           "id": "usa_lesson_3_2_b",
@@ -19916,7 +20112,9 @@ export default {
           "src": "/units/usa/assets/sources/gulf_of_tonkin_resolution_statute_1964.png",
           "source": "/units/usa/assets/sources/portraits/johnson.jpg",
           "caption": "Facsimile of the Gulf of Tonkin Resolution (Public Law 88-408), passed overwhelmingly by Congress on 7 August 1964 granting President Johnson authority to wage undeclared war in Vietnam.",
-          "text": "Whereas naval units of the Communist regime in Vietnam, in violation of the principles of the Charter of the United Nations and of international law, have deliberately and repeatedly attacked United States naval vessels lawfully present in international waters... Resolved by the Senate and House of Representatives of the United States of America in Congress assembled: That the Congress approves and supports the determination of the President, as Commander in Chief, to take all necessary measures to repel any armed attack against the forces of the United States and to prevent further aggression."
+          "text": "Whereas naval units of the Communist regime in Vietnam, in violation of the principles of the Charter of the United Nations and of international law, have deliberately and repeatedly attacked United States naval vessels lawfully present in international waters... Resolved by the Senate and House of Representatives of the United States of America in Congress assembled: That the Congress approves and supports the determination of the President, as Commander in Chief, to take all necessary measures to repel any armed attack against the forces of the United States and to prevent further aggression.",
+          "studio_audio": "/audio/sources/usa/lesson_3_2_sC.mp3",
+          "studio_voice_label": "Joint Resolution of Congress"
         },
         {
           "id": "usa_lesson_3_2_d",
@@ -20393,7 +20591,9 @@ export default {
         ]
       },
       "banner_image": "/images/upgraded/gcse-p3/usa_l10_banner_uss_maddox_herrick_aug1964.jpg",
-      "banner_caption": "Captain John J. Herrick (Commander Destroyer Division 192, left) and Commander Herbert L. Ogier (Commanding Officer, right) in battle helmets aboard the destroyer USS Maddox (DD-731) following the Gulf of Tonkin Incident (13 August 1964)."
+      "banner_caption": "Captain John J. Herrick (Commander Destroyer Division 192, left) and Commander Herbert L. Ogier (Commanding Officer, right) in battle helmets aboard the destroyer USS Maddox (DD-731) following the Gulf of Tonkin Incident (13 August 1964).",
+      "prologue_audio": "/audio/lessons/usa/lesson_3_2_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · Historian"
     },
     {
       "id": "lesson_3_3",
@@ -20776,7 +20976,9 @@ export default {
                 "hinge_question": "Why did the invisible nature of booby trap warfare cause American soldiers to develop deep resentment and paranoia toward all Vietnamese villagers?"
               },
               "source_context": "Department of the Army, FM 5-31 Field Manual Series, Washington D.C.. Office of the Chief of Engineers, Department of the Army for Junior officers, non-commissioned officers, and infantry riflemen deploying to Vietnam with the objective: To provide critical tactical instruction on recognizing, disarming, and surviving concealed insurgent booby traps..",
-              "text": "From MACV Field Manual (FM 5-31): The Viet Cong employ simple, highly lethal booby traps constructed from local bamboo, barbed wire, and unexploded American ordnance. The punji stake pit consists of sharpened bamboo sticks hardened over fire and smeared with human or animal excrement to cause rapid gangrenous infection. These are concealed under thin layers of leaves along jungle tracks, designed not only to inflict casualties but to shatter the patrol's psychological morale."
+              "text": "From MACV Field Manual (FM 5-31): The Viet Cong employ simple, highly lethal booby traps constructed from local bamboo, barbed wire, and unexploded American ordnance. The punji stake pit consists of sharpened bamboo sticks hardened over fire and smeared with human or animal excrement to cause rapid gangrenous infection. These are concealed under thin layers of leaves along jungle tracks, designed not only to inflict casualties but to shatter the patrol's psychological morale.",
+              "studio_audio": "/audio/sources/usa/lesson_3_3_sB.mp3",
+              "studio_voice_label": "Excerpt from US Military Assista…"
             }
           ],
           "isReversed": true,
@@ -20914,7 +21116,9 @@ export default {
               "src": "/units/usa/assets/sources/us-soldier-patrolling-swamp.jpg",
               "source": "/units/usa/assets/sources/us-soldier-patrolling-swamp.jpg",
               "caption": "US soldier on point patrol through murky swamp water in the Mekong Delta. Search and destroy operations pitted American infantry against unseen snipers and booby traps.",
-              "text": "Our mission was not to win terrain or seize cities, but simply to kill: to kill communists and to count the bodies. It was an attrition strategy of body counts. But out in the rice paddies and jungle elephant grass, you couldn't tell who was Vietcong and who was a simple rice farmer. The VC didn't wear uniforms; they carried farming hoes by day and AK-47s by night. Every booby trap that tore a friend apart made us hate the villagers more, because we knew they knew where the punji stakes were buried and didn't warn us. In trying to destroy the enemy, we ended up destroying villages and driving the very people we were supposed to protect into the arms of the Vietcong."
+              "text": "Our mission was not to win terrain or seize cities, but simply to kill: to kill communists and to count the bodies. It was an attrition strategy of body counts. But out in the rice paddies and jungle elephant grass, you couldn't tell who was Vietcong and who was a simple rice farmer. The VC didn't wear uniforms; they carried farming hoes by day and AK-47s by night. Every booby trap that tore a friend apart made us hate the villagers more, because we knew they knew where the punji stakes were buried and didn't warn us. In trying to destroy the enemy, we ended up destroying villages and driving the very people we were supposed to protect into the arms of the Vietcong.",
+              "studio_audio": "/audio/sources/usa/lesson_3_3_sE.mp3",
+              "studio_voice_label": "Testimony of Platoon Leader Lieu…"
             }
           ],
           "isReversed": false,
@@ -21459,7 +21663,9 @@ export default {
                 "attribution": "Written by Philip Caputo, a US Marine lieutenant who commanded combat infantry units in South Vietnam in 1965–66, in his memoir 'A Rumor of War'.",
                 "caption": "Source B: Account by US Marine Lieutenant Philip Caputo on 'Search and Destroy' Patrols (1965–66)",
                 "content": "We were sent on ‘search and destroy’ patrols through dense jungle and steaming swamps. The strategy was simple: find the enemy, fix him, and destroy him with massive artillery and air strikes. But we could almost never locate him. The Vietcong fought on their own terms: a sudden burst of fire from concealed tree lines, a sniper round, or an explosive booby trap made from a recycled artillery shell and bamboo punji sticks. When we entered a village, we could not distinguish a friendly farmer by day from a guerrilla fighter by night. Frustrated soldiers burned thatched huts with Zippo lighters, turning the very peasants we were sent to defend into sworn enemies.",
-                "text": "We were sent on ‘search and destroy’ patrols through dense jungle and steaming swamps. The strategy was simple: find the enemy, fix him, and destroy him with massive artillery and air strikes. But we could almost never locate him. The Vietcong fought on their own terms: a sudden burst of fire from concealed tree lines, a sniper round, or an explosive booby trap made from a recycled artillery shell and bamboo punji sticks. When we entered a village, we could not distinguish a friendly farmer by day from a guerrilla fighter by night. Frustrated soldiers burned thatched huts with Zippo lighters, turning the very peasants we were sent to defend into sworn enemies."
+                "text": "We were sent on ‘search and destroy’ patrols through dense jungle and steaming swamps. The strategy was simple: find the enemy, fix him, and destroy him with massive artillery and air strikes. But we could almost never locate him. The Vietcong fought on their own terms: a sudden burst of fire from concealed tree lines, a sniper round, or an explosive booby trap made from a recycled artillery shell and bamboo punji sticks. When we entered a village, we could not distinguish a friendly farmer by day from a guerrilla fighter by night. Frustrated soldiers burned thatched huts with Zippo lighters, turning the very peasants we were sent to defend into sworn enemies.",
+                "studio_audio": "/audio/sources/usa/lesson_3_3_ep3_sB.mp3",
+                "studio_voice_label": "Account by US Marine Lieutenant…"
               },
               {
                 "letter": "C",
@@ -21472,7 +21678,9 @@ export default {
                 "attribution": "Oral history interview with a veteran Vietcong combatant who operated in the Cu Chi tunnel network in South Vietnam during 1965–68.",
                 "caption": "Source C: Oral History Interview with a Veteran Vietcong Combatant from the Cu Chi Tunnels",
                 "content": "The Americans possessed immense firepower—jets, helicopters, tanks, and chemical poisons that destroyed our rice crops. But they did not know the forest, and they did not know our people. Beneath the soil, we built over two hundred kilometers of multi-level tunnels with barracks, hospitals, and weapons factories. When their planes bombed, we remained safe twenty feet underground. When their infantry advanced, our booby traps—punji stakes smeared with animal dung, tripwires, and toe-poppers—inflicted daily casualties and wrecked their nerves. We were fighting for our own homeland; their soldiers fought only because they were drafted.",
-                "text": "The Americans possessed immense firepower—jets, helicopters, tanks, and chemical poisons that destroyed our rice crops. But they did not know the forest, and they did not know our people. Beneath the soil, we built over two hundred kilometers of multi-level tunnels with barracks, hospitals, and weapons factories. When their planes bombed, we remained safe twenty feet underground. When their infantry advanced, our booby traps—punji stakes smeared with animal dung, tripwires, and toe-poppers—inflicted daily casualties and wrecked their nerves. We were fighting for our own homeland; their soldiers fought only because they were drafted."
+                "text": "The Americans possessed immense firepower—jets, helicopters, tanks, and chemical poisons that destroyed our rice crops. But they did not know the forest, and they did not know our people. Beneath the soil, we built over two hundred kilometers of multi-level tunnels with barracks, hospitals, and weapons factories. When their planes bombed, we remained safe twenty feet underground. When their infantry advanced, our booby traps—punji stakes smeared with animal dung, tripwires, and toe-poppers—inflicted daily casualties and wrecked their nerves. We were fighting for our own homeland; their soldiers fought only because they were drafted.",
+                "studio_audio": "/audio/sources/usa/lesson_3_3_ep3_sC.mp3",
+                "studio_voice_label": "Oral History Interview with a Ve…"
               }
             ],
             "supporting_sources": [
@@ -21617,7 +21825,9 @@ export default {
                 "attribution": "Written by Philip Caputo, a US Marine lieutenant who commanded combat infantry units in South Vietnam in 1965–66, in his memoir 'A Rumor of War'.",
                 "caption": "Source B: Account by US Marine Lieutenant Philip Caputo on 'Search and Destroy' Patrols (1965–66)",
                 "content": "We were sent on ‘search and destroy’ patrols through dense jungle and steaming swamps. The strategy was simple: find the enemy, fix him, and destroy him with massive artillery and air strikes. But we could almost never locate him. The Vietcong fought on their own terms: a sudden burst of fire from concealed tree lines, a sniper round, or an explosive booby trap made from a recycled artillery shell and bamboo punji sticks. When we entered a village, we could not distinguish a friendly farmer by day from a guerrilla fighter by night. Frustrated soldiers burned thatched huts with Zippo lighters, turning the very peasants we were sent to defend into sworn enemies.",
-                "text": "We were sent on ‘search and destroy’ patrols through dense jungle and steaming swamps. The strategy was simple: find the enemy, fix him, and destroy him with massive artillery and air strikes. But we could almost never locate him. The Vietcong fought on their own terms: a sudden burst of fire from concealed tree lines, a sniper round, or an explosive booby trap made from a recycled artillery shell and bamboo punji sticks. When we entered a village, we could not distinguish a friendly farmer by day from a guerrilla fighter by night. Frustrated soldiers burned thatched huts with Zippo lighters, turning the very peasants we were sent to defend into sworn enemies."
+                "text": "We were sent on ‘search and destroy’ patrols through dense jungle and steaming swamps. The strategy was simple: find the enemy, fix him, and destroy him with massive artillery and air strikes. But we could almost never locate him. The Vietcong fought on their own terms: a sudden burst of fire from concealed tree lines, a sniper round, or an explosive booby trap made from a recycled artillery shell and bamboo punji sticks. When we entered a village, we could not distinguish a friendly farmer by day from a guerrilla fighter by night. Frustrated soldiers burned thatched huts with Zippo lighters, turning the very peasants we were sent to defend into sworn enemies.",
+                "studio_audio": "/audio/sources/usa/lesson_3_3_ep3_sB.mp3",
+                "studio_voice_label": "Account by US Marine Lieutenant…"
               },
               {
                 "letter": "C",
@@ -21630,7 +21840,9 @@ export default {
                 "attribution": "Oral history interview with a veteran Vietcong combatant who operated in the Cu Chi tunnel network in South Vietnam during 1965–68.",
                 "caption": "Source C: Oral History Interview with a Veteran Vietcong Combatant from the Cu Chi Tunnels",
                 "content": "The Americans possessed immense firepower—jets, helicopters, tanks, and chemical poisons that destroyed our rice crops. But they did not know the forest, and they did not know our people. Beneath the soil, we built over two hundred kilometers of multi-level tunnels with barracks, hospitals, and weapons factories. When their planes bombed, we remained safe twenty feet underground. When their infantry advanced, our booby traps—punji stakes smeared with animal dung, tripwires, and toe-poppers—inflicted daily casualties and wrecked their nerves. We were fighting for our own homeland; their soldiers fought only because they were drafted.",
-                "text": "The Americans possessed immense firepower—jets, helicopters, tanks, and chemical poisons that destroyed our rice crops. But they did not know the forest, and they did not know our people. Beneath the soil, we built over two hundred kilometers of multi-level tunnels with barracks, hospitals, and weapons factories. When their planes bombed, we remained safe twenty feet underground. When their infantry advanced, our booby traps—punji stakes smeared with animal dung, tripwires, and toe-poppers—inflicted daily casualties and wrecked their nerves. We were fighting for our own homeland; their soldiers fought only because they were drafted."
+                "text": "The Americans possessed immense firepower—jets, helicopters, tanks, and chemical poisons that destroyed our rice crops. But they did not know the forest, and they did not know our people. Beneath the soil, we built over two hundred kilometers of multi-level tunnels with barracks, hospitals, and weapons factories. When their planes bombed, we remained safe twenty feet underground. When their infantry advanced, our booby traps—punji stakes smeared with animal dung, tripwires, and toe-poppers—inflicted daily casualties and wrecked their nerves. We were fighting for our own homeland; their soldiers fought only because they were drafted.",
+                "studio_audio": "/audio/sources/usa/lesson_3_3_ep3_sC.mp3",
+                "studio_voice_label": "Oral History Interview with a Ve…"
               }
             ],
             "supporting_sources": [
@@ -21748,7 +21960,9 @@ export default {
                 "attribution": "Written by Philip Caputo, a US Marine lieutenant who commanded combat infantry units in South Vietnam in 1965–66, in his memoir 'A Rumor of War'.",
                 "caption": "Source B: Account by US Marine Lieutenant Philip Caputo on 'Search and Destroy' Patrols (1965–66)",
                 "content": "We were sent on ‘search and destroy’ patrols through dense jungle and steaming swamps. The strategy was simple: find the enemy, fix him, and destroy him with massive artillery and air strikes. But we could almost never locate him. The Vietcong fought on their own terms: a sudden burst of fire from concealed tree lines, a sniper round, or an explosive booby trap made from a recycled artillery shell and bamboo punji sticks. When we entered a village, we could not distinguish a friendly farmer by day from a guerrilla fighter by night. Frustrated soldiers burned thatched huts with Zippo lighters, turning the very peasants we were sent to defend into sworn enemies.",
-                "text": "We were sent on ‘search and destroy’ patrols through dense jungle and steaming swamps. The strategy was simple: find the enemy, fix him, and destroy him with massive artillery and air strikes. But we could almost never locate him. The Vietcong fought on their own terms: a sudden burst of fire from concealed tree lines, a sniper round, or an explosive booby trap made from a recycled artillery shell and bamboo punji sticks. When we entered a village, we could not distinguish a friendly farmer by day from a guerrilla fighter by night. Frustrated soldiers burned thatched huts with Zippo lighters, turning the very peasants we were sent to defend into sworn enemies."
+                "text": "We were sent on ‘search and destroy’ patrols through dense jungle and steaming swamps. The strategy was simple: find the enemy, fix him, and destroy him with massive artillery and air strikes. But we could almost never locate him. The Vietcong fought on their own terms: a sudden burst of fire from concealed tree lines, a sniper round, or an explosive booby trap made from a recycled artillery shell and bamboo punji sticks. When we entered a village, we could not distinguish a friendly farmer by day from a guerrilla fighter by night. Frustrated soldiers burned thatched huts with Zippo lighters, turning the very peasants we were sent to defend into sworn enemies.",
+                "studio_audio": "/audio/sources/usa/lesson_3_3_ep3_sB.mp3",
+                "studio_voice_label": "Account by US Marine Lieutenant…"
               },
               {
                 "letter": "C",
@@ -21761,7 +21975,9 @@ export default {
                 "attribution": "Oral history interview with a veteran Vietcong combatant who operated in the Cu Chi tunnel network in South Vietnam during 1965–68.",
                 "caption": "Source C: Oral History Interview with a Veteran Vietcong Combatant from the Cu Chi Tunnels",
                 "content": "The Americans possessed immense firepower—jets, helicopters, tanks, and chemical poisons that destroyed our rice crops. But they did not know the forest, and they did not know our people. Beneath the soil, we built over two hundred kilometers of multi-level tunnels with barracks, hospitals, and weapons factories. When their planes bombed, we remained safe twenty feet underground. When their infantry advanced, our booby traps—punji stakes smeared with animal dung, tripwires, and toe-poppers—inflicted daily casualties and wrecked their nerves. We were fighting for our own homeland; their soldiers fought only because they were drafted.",
-                "text": "The Americans possessed immense firepower—jets, helicopters, tanks, and chemical poisons that destroyed our rice crops. But they did not know the forest, and they did not know our people. Beneath the soil, we built over two hundred kilometers of multi-level tunnels with barracks, hospitals, and weapons factories. When their planes bombed, we remained safe twenty feet underground. When their infantry advanced, our booby traps—punji stakes smeared with animal dung, tripwires, and toe-poppers—inflicted daily casualties and wrecked their nerves. We were fighting for our own homeland; their soldiers fought only because they were drafted."
+                "text": "The Americans possessed immense firepower—jets, helicopters, tanks, and chemical poisons that destroyed our rice crops. But they did not know the forest, and they did not know our people. Beneath the soil, we built over two hundred kilometers of multi-level tunnels with barracks, hospitals, and weapons factories. When their planes bombed, we remained safe twenty feet underground. When their infantry advanced, our booby traps—punji stakes smeared with animal dung, tripwires, and toe-poppers—inflicted daily casualties and wrecked their nerves. We were fighting for our own homeland; their soldiers fought only because they were drafted.",
+                "studio_audio": "/audio/sources/usa/lesson_3_3_ep3_sC.mp3",
+                "studio_voice_label": "Oral History Interview with a Ve…"
               }
             ],
             "supporting_sources": [
@@ -21916,7 +22132,9 @@ export default {
                 "attribution": "Written by Philip Caputo, a US Marine lieutenant who commanded combat infantry units in South Vietnam in 1965–66, in his memoir 'A Rumor of War'.",
                 "caption": "Source B: Account by US Marine Lieutenant Philip Caputo on 'Search and Destroy' Patrols (1965–66)",
                 "content": "We were sent on ‘search and destroy’ patrols through dense jungle and steaming swamps. The strategy was simple: find the enemy, fix him, and destroy him with massive artillery and air strikes. But we could almost never locate him. The Vietcong fought on their own terms: a sudden burst of fire from concealed tree lines, a sniper round, or an explosive booby trap made from a recycled artillery shell and bamboo punji sticks. When we entered a village, we could not distinguish a friendly farmer by day from a guerrilla fighter by night. Frustrated soldiers burned thatched huts with Zippo lighters, turning the very peasants we were sent to defend into sworn enemies.",
-                "text": "We were sent on ‘search and destroy’ patrols through dense jungle and steaming swamps. The strategy was simple: find the enemy, fix him, and destroy him with massive artillery and air strikes. But we could almost never locate him. The Vietcong fought on their own terms: a sudden burst of fire from concealed tree lines, a sniper round, or an explosive booby trap made from a recycled artillery shell and bamboo punji sticks. When we entered a village, we could not distinguish a friendly farmer by day from a guerrilla fighter by night. Frustrated soldiers burned thatched huts with Zippo lighters, turning the very peasants we were sent to defend into sworn enemies."
+                "text": "We were sent on ‘search and destroy’ patrols through dense jungle and steaming swamps. The strategy was simple: find the enemy, fix him, and destroy him with massive artillery and air strikes. But we could almost never locate him. The Vietcong fought on their own terms: a sudden burst of fire from concealed tree lines, a sniper round, or an explosive booby trap made from a recycled artillery shell and bamboo punji sticks. When we entered a village, we could not distinguish a friendly farmer by day from a guerrilla fighter by night. Frustrated soldiers burned thatched huts with Zippo lighters, turning the very peasants we were sent to defend into sworn enemies.",
+                "studio_audio": "/audio/sources/usa/lesson_3_3_ep3_sB.mp3",
+                "studio_voice_label": "Account by US Marine Lieutenant…"
               },
               {
                 "letter": "C",
@@ -21929,7 +22147,9 @@ export default {
                 "attribution": "Oral history interview with a veteran Vietcong combatant who operated in the Cu Chi tunnel network in South Vietnam during 1965–68.",
                 "caption": "Source C: Oral History Interview with a Veteran Vietcong Combatant from the Cu Chi Tunnels",
                 "content": "The Americans possessed immense firepower—jets, helicopters, tanks, and chemical poisons that destroyed our rice crops. But they did not know the forest, and they did not know our people. Beneath the soil, we built over two hundred kilometers of multi-level tunnels with barracks, hospitals, and weapons factories. When their planes bombed, we remained safe twenty feet underground. When their infantry advanced, our booby traps—punji stakes smeared with animal dung, tripwires, and toe-poppers—inflicted daily casualties and wrecked their nerves. We were fighting for our own homeland; their soldiers fought only because they were drafted.",
-                "text": "The Americans possessed immense firepower—jets, helicopters, tanks, and chemical poisons that destroyed our rice crops. But they did not know the forest, and they did not know our people. Beneath the soil, we built over two hundred kilometers of multi-level tunnels with barracks, hospitals, and weapons factories. When their planes bombed, we remained safe twenty feet underground. When their infantry advanced, our booby traps—punji stakes smeared with animal dung, tripwires, and toe-poppers—inflicted daily casualties and wrecked their nerves. We were fighting for our own homeland; their soldiers fought only because they were drafted."
+                "text": "The Americans possessed immense firepower—jets, helicopters, tanks, and chemical poisons that destroyed our rice crops. But they did not know the forest, and they did not know our people. Beneath the soil, we built over two hundred kilometers of multi-level tunnels with barracks, hospitals, and weapons factories. When their planes bombed, we remained safe twenty feet underground. When their infantry advanced, our booby traps—punji stakes smeared with animal dung, tripwires, and toe-poppers—inflicted daily casualties and wrecked their nerves. We were fighting for our own homeland; their soldiers fought only because they were drafted.",
+                "studio_audio": "/audio/sources/usa/lesson_3_3_ep3_sC.mp3",
+                "studio_voice_label": "Oral History Interview with a Ve…"
               }
             ],
             "supporting_sources": [
@@ -22214,7 +22434,9 @@ export default {
             "hinge_question": "Why did the invisible nature of booby trap warfare cause American soldiers to develop deep resentment and paranoia toward all Vietnamese villagers?"
           },
           "source_context": "Department of the Army, FM 5-31 Field Manual Series, Washington D.C.. Office of the Chief of Engineers, Department of the Army for Junior officers, non-commissioned officers, and infantry riflemen deploying to Vietnam with the objective: To provide critical tactical instruction on recognizing, disarming, and surviving concealed insurgent booby traps..",
-          "text": "From MACV Field Manual (FM 5-31): The Viet Cong employ simple, highly lethal booby traps constructed from local bamboo, barbed wire, and unexploded American ordnance. The punji stake pit consists of sharpened bamboo sticks hardened over fire and smeared with human or animal excrement to cause rapid gangrenous infection. These are concealed under thin layers of leaves along jungle tracks, designed not only to inflict casualties but to shatter the patrol's psychological morale."
+          "text": "From MACV Field Manual (FM 5-31): The Viet Cong employ simple, highly lethal booby traps constructed from local bamboo, barbed wire, and unexploded American ordnance. The punji stake pit consists of sharpened bamboo sticks hardened over fire and smeared with human or animal excrement to cause rapid gangrenous infection. These are concealed under thin layers of leaves along jungle tracks, designed not only to inflict casualties but to shatter the patrol's psychological morale.",
+          "studio_audio": "/audio/sources/usa/lesson_3_3_sB.mp3",
+          "studio_voice_label": "Excerpt from US Military Assista…"
         },
         {
           "id": "usa_lesson_3_3_b",
@@ -22297,7 +22519,9 @@ export default {
           "src": "/units/usa/assets/sources/us-soldier-patrolling-swamp.jpg",
           "source": "/units/usa/assets/sources/us-soldier-patrolling-swamp.jpg",
           "caption": "US soldier on point patrol through murky swamp water in the Mekong Delta. Search and destroy operations pitted American infantry against unseen snipers and booby traps.",
-          "text": "Our mission was not to win terrain or seize cities, but simply to kill: to kill communists and to count the bodies. It was an attrition strategy of body counts. But out in the rice paddies and jungle elephant grass, you couldn't tell who was Vietcong and who was a simple rice farmer. The VC didn't wear uniforms; they carried farming hoes by day and AK-47s by night. Every booby trap that tore a friend apart made us hate the villagers more, because we knew they knew where the punji stakes were buried and didn't warn us. In trying to destroy the enemy, we ended up destroying villages and driving the very people we were supposed to protect into the arms of the Vietcong."
+          "text": "Our mission was not to win terrain or seize cities, but simply to kill: to kill communists and to count the bodies. It was an attrition strategy of body counts. But out in the rice paddies and jungle elephant grass, you couldn't tell who was Vietcong and who was a simple rice farmer. The VC didn't wear uniforms; they carried farming hoes by day and AK-47s by night. Every booby trap that tore a friend apart made us hate the villagers more, because we knew they knew where the punji stakes were buried and didn't warn us. In trying to destroy the enemy, we ended up destroying villages and driving the very people we were supposed to protect into the arms of the Vietcong.",
+          "studio_audio": "/audio/sources/usa/lesson_3_3_sE.mp3",
+          "studio_voice_label": "Testimony of Platoon Leader Lieu…"
         }
       ],
       "video": [
@@ -22718,7 +22942,9 @@ export default {
         ]
       },
       "banner_image": "/images/upgraded/gcse-p3/usa_l11_banner_uh1d_helicopters_air_assault_1966.jpg",
-      "banner_caption": "U.S. Army Bell UH-1D \"Huey\" helicopters airlifting infantrymen of the 25th Infantry Division during Operation Wahiawa, a search-and-destroy sweep northeast of Cu Chi, South Vietnam (16 May 1966)."
+      "banner_caption": "U.S. Army Bell UH-1D \"Huey\" helicopters airlifting infantrymen of the 25th Infantry Division during Operation Wahiawa, a search-and-destroy sweep northeast of Cu Chi, South Vietnam (16 May 1966).",
+      "prologue_audio": "/audio/lessons/usa/lesson_3_3_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · Historian"
     },
     {
       "id": "lesson_3_4",
@@ -22986,7 +23212,9 @@ export default {
               "text": "To say that we are closer to victory today is to believe, in the face of the evidence, the optimists who have been wrong in the past. To suggest we are on the edge of defeat is to yield to unreasonable pessimism. To say that we are mired in stalemate seems the only realistic, yet unsatisfactory, conclusion. It is increasingly clear to this reporter that the only rational way out then will be to negotiate, not as victors, but as an honorable people who lived up to their pledge to defend democracy, and did the best they could.",
               "src": "/units/usa/assets/sources/walter_cronkite_vietnam_hue_1968.jpg",
               "source": "/units/usa/assets/sources/walter_cronkite_vietnam_hue_1968.jpg",
-              "caption": "CBS Evening News anchor Walter Cronkite reporting from the battlefield at Hue during the 1968 Tet Offensive."
+              "caption": "CBS Evening News anchor Walter Cronkite reporting from the battlefield at Hue during the 1968 Tet Offensive.",
+              "studio_audio": "/audio/sources/usa/lesson_3_4_sA.mp3",
+              "studio_voice_label": "Editorial Declaration by CBS Eve…"
             }
           ],
           "image": "/images/usa/maps/usa_map_l12_tet_offensive_cambodia_laos_1968_71.svg",
@@ -23157,7 +23385,9 @@ export default {
               "src": "/units/usa/assets/sources/nixon-television-address.jpg",
               "source": "/units/usa/assets/sources/nixon-television-address.jpg",
               "caption": "President Richard Nixon delivering a televised address from the Oval Office with a map of Cambodia, 30 April 1970.",
-              "text": "Tonight, American and South Vietnamese units will attack the headquarters for the entire Communist military operation in South Vietnam. A major responsibility for the ground operations is being assumed by South Vietnamese forces... This is not an invasion of Cambodia. The areas in which these attacks will take place are completely occupied and controlled by North Vietnamese forces... Our purpose is not to expand the war into Cambodia, but to end the war in Vietnam and to win the just peace we all desire."
+              "text": "Tonight, American and South Vietnamese units will attack the headquarters for the entire Communist military operation in South Vietnam. A major responsibility for the ground operations is being assumed by South Vietnamese forces... This is not an invasion of Cambodia. The areas in which these attacks will take place are completely occupied and controlled by North Vietnamese forces... Our purpose is not to expand the war into Cambodia, but to end the war in Vietnam and to win the just peace we all desire.",
+              "studio_audio": "/audio/sources/usa/lesson_3_4_sC.mp3",
+              "studio_voice_label": "From President Nixon’s Address t…"
             }
           ],
           "content": "<span class=\"para-ref\">[3.1]</span> Broken by the political fallout of Tet, Johnson stunned the world on 31 March 1968 with a dramatic **LBJ non-candidacy speech**, announcing that he would neither seek nor accept his party's nomination for re-election and halting bombing above the 20th parallel. Elected in November 1968 on promises of \"peace with honor\", President Richard Nixon introduced a fundamental foreign policy shift known as the **Nixon Doctrine**.\n\n<span class=\"para-ref\">[3.2]</span> The doctrine declared that while the US would maintain its nuclear umbrella, Asian allies had to provide their own ground combat troops for defense. To quell intense anti-war demonstrations at home, Nixon initiated **phased troop withdrawals**, reducing American combat forces in Vietnam from a peak of 543,000 soldiers in early 1969 to fewer than 156,000 by late 1971.",
@@ -23345,7 +23575,9 @@ export default {
               },
               "source_context": "Nixon Presidential Materials Project, White House Tapes, National Archives, College Park. President Richard Nixon and Dr Henry Kissinger (secretly recorded by the White House taping system) for None; classified, intimate strategic deliberation with the objective: To formulate private diplomatic terms for exiting the war prior to the November 1972 presidential election..",
               "src": "/units/usa/assets/sources/nixon_kissinger_oval_office_1972.jpg",
-              "source": "/units/usa/assets/sources/portraits/kissinger.jpg"
+              "source": "/units/usa/assets/sources/portraits/kissinger.jpg",
+              "studio_audio": "/audio/sources/usa/lesson_3_4_sE.mp3",
+              "studio_voice_label": "Declassified Oval Office Tape Re…"
             }
           ],
           "isReversed": false,
@@ -23893,7 +24125,9 @@ export default {
                 "text": "Dr. Henry Kissinger: 'We require a decent interval. If a year or two years from now South Vietnam goes down the drain, it will look like a hell of an achievement to have got out, and it will be blamed on the South Vietnamese and on Congress.' President Richard Nixon: 'If we can get them out by November... then we've got to find a formula that holds the thing together until after the election. Then, if South Vietnam collapses in two years, that's their problem. We will have done our best.'",
                 "image": "/units/usa/assets/sources/nixon_kissinger_oval_office_1972.jpg",
                 "image_url": "/units/usa/assets/sources/nixon_kissinger_oval_office_1972.jpg",
-                "src": "/units/usa/assets/sources/nixon_kissinger_oval_office_1972.jpg"
+                "src": "/units/usa/assets/sources/nixon_kissinger_oval_office_1972.jpg",
+                "studio_audio": "/audio/sources/usa/lesson_3_4_sE.mp3",
+                "studio_voice_label": "Declassified Oval Office Tape Re…"
               },
               {
                 "letter": "C",
@@ -23909,7 +24143,9 @@ export default {
                 "text": "Tonight, American and South Vietnamese units will attack the headquarters for the entire Communist military operation in South Vietnam. A major responsibility for the ground operations is being assumed by South Vietnamese forces... This is not an invasion of Cambodia. The areas in which these attacks will take place are completely occupied and controlled by North Vietnamese forces... Our purpose is not to expand the war into Cambodia, but to end the war in Vietnam and to win the just peace we all desire.",
                 "image": "/units/usa/assets/sources/nixon-television-address.jpg",
                 "image_url": "/units/usa/assets/sources/nixon-television-address.jpg",
-                "src": "/units/usa/assets/sources/nixon-television-address.jpg"
+                "src": "/units/usa/assets/sources/nixon-television-address.jpg",
+                "studio_audio": "/audio/sources/usa/lesson_3_4_sC.mp3",
+                "studio_voice_label": "From President Nixon’s Address t…"
               }
             ],
             "supporting_sources": [
@@ -24063,7 +24299,9 @@ export default {
                 "text": "Dr. Henry Kissinger: 'We require a decent interval. If a year or two years from now South Vietnam goes down the drain, it will look like a hell of an achievement to have got out, and it will be blamed on the South Vietnamese and on Congress.' President Richard Nixon: 'If we can get them out by November... then we've got to find a formula that holds the thing together until after the election. Then, if South Vietnam collapses in two years, that's their problem. We will have done our best.'",
                 "image": "/units/usa/assets/sources/nixon_kissinger_oval_office_1972.jpg",
                 "image_url": "/units/usa/assets/sources/nixon_kissinger_oval_office_1972.jpg",
-                "src": "/units/usa/assets/sources/nixon_kissinger_oval_office_1972.jpg"
+                "src": "/units/usa/assets/sources/nixon_kissinger_oval_office_1972.jpg",
+                "studio_audio": "/audio/sources/usa/lesson_3_4_sE.mp3",
+                "studio_voice_label": "Declassified Oval Office Tape Re…"
               },
               {
                 "letter": "C",
@@ -24079,7 +24317,9 @@ export default {
                 "text": "Tonight, American and South Vietnamese units will attack the headquarters for the entire Communist military operation in South Vietnam. A major responsibility for the ground operations is being assumed by South Vietnamese forces... This is not an invasion of Cambodia. The areas in which these attacks will take place are completely occupied and controlled by North Vietnamese forces... Our purpose is not to expand the war into Cambodia, but to end the war in Vietnam and to win the just peace we all desire.",
                 "image": "/units/usa/assets/sources/nixon-television-address.jpg",
                 "image_url": "/units/usa/assets/sources/nixon-television-address.jpg",
-                "src": "/units/usa/assets/sources/nixon-television-address.jpg"
+                "src": "/units/usa/assets/sources/nixon-television-address.jpg",
+                "studio_audio": "/audio/sources/usa/lesson_3_4_sC.mp3",
+                "studio_voice_label": "From President Nixon’s Address t…"
               }
             ],
             "supporting_sources": [
@@ -24206,7 +24446,9 @@ export default {
                 "text": "Dr. Henry Kissinger: 'We require a decent interval. If a year or two years from now South Vietnam goes down the drain, it will look like a hell of an achievement to have got out, and it will be blamed on the South Vietnamese and on Congress.' President Richard Nixon: 'If we can get them out by November... then we've got to find a formula that holds the thing together until after the election. Then, if South Vietnam collapses in two years, that's their problem. We will have done our best.'",
                 "image": "/units/usa/assets/sources/nixon_kissinger_oval_office_1972.jpg",
                 "image_url": "/units/usa/assets/sources/nixon_kissinger_oval_office_1972.jpg",
-                "src": "/units/usa/assets/sources/nixon_kissinger_oval_office_1972.jpg"
+                "src": "/units/usa/assets/sources/nixon_kissinger_oval_office_1972.jpg",
+                "studio_audio": "/audio/sources/usa/lesson_3_4_sE.mp3",
+                "studio_voice_label": "Declassified Oval Office Tape Re…"
               },
               {
                 "letter": "C",
@@ -24222,7 +24464,9 @@ export default {
                 "text": "Tonight, American and South Vietnamese units will attack the headquarters for the entire Communist military operation in South Vietnam. A major responsibility for the ground operations is being assumed by South Vietnamese forces... This is not an invasion of Cambodia. The areas in which these attacks will take place are completely occupied and controlled by North Vietnamese forces... Our purpose is not to expand the war into Cambodia, but to end the war in Vietnam and to win the just peace we all desire.",
                 "image": "/units/usa/assets/sources/nixon-television-address.jpg",
                 "image_url": "/units/usa/assets/sources/nixon-television-address.jpg",
-                "src": "/units/usa/assets/sources/nixon-television-address.jpg"
+                "src": "/units/usa/assets/sources/nixon-television-address.jpg",
+                "studio_audio": "/audio/sources/usa/lesson_3_4_sC.mp3",
+                "studio_voice_label": "From President Nixon’s Address t…"
               }
             ],
             "supporting_sources": [
@@ -24386,7 +24630,9 @@ export default {
                 "text": "Dr. Henry Kissinger: 'We require a decent interval. If a year or two years from now South Vietnam goes down the drain, it will look like a hell of an achievement to have got out, and it will be blamed on the South Vietnamese and on Congress.' President Richard Nixon: 'If we can get them out by November... then we've got to find a formula that holds the thing together until after the election. Then, if South Vietnam collapses in two years, that's their problem. We will have done our best.'",
                 "image": "/units/usa/assets/sources/nixon_kissinger_oval_office_1972.jpg",
                 "image_url": "/units/usa/assets/sources/nixon_kissinger_oval_office_1972.jpg",
-                "src": "/units/usa/assets/sources/nixon_kissinger_oval_office_1972.jpg"
+                "src": "/units/usa/assets/sources/nixon_kissinger_oval_office_1972.jpg",
+                "studio_audio": "/audio/sources/usa/lesson_3_4_sE.mp3",
+                "studio_voice_label": "Declassified Oval Office Tape Re…"
               },
               {
                 "letter": "C",
@@ -24402,7 +24648,9 @@ export default {
                 "text": "Tonight, American and South Vietnamese units will attack the headquarters for the entire Communist military operation in South Vietnam. A major responsibility for the ground operations is being assumed by South Vietnamese forces... This is not an invasion of Cambodia. The areas in which these attacks will take place are completely occupied and controlled by North Vietnamese forces... Our purpose is not to expand the war into Cambodia, but to end the war in Vietnam and to win the just peace we all desire.",
                 "image": "/units/usa/assets/sources/nixon-television-address.jpg",
                 "image_url": "/units/usa/assets/sources/nixon-television-address.jpg",
-                "src": "/units/usa/assets/sources/nixon-television-address.jpg"
+                "src": "/units/usa/assets/sources/nixon-television-address.jpg",
+                "studio_audio": "/audio/sources/usa/lesson_3_4_sC.mp3",
+                "studio_voice_label": "From President Nixon’s Address t…"
               }
             ],
             "supporting_sources": [
@@ -24677,7 +24925,9 @@ export default {
           "src": "/units/usa/assets/sources/walter_cronkite_vietnam_hue_1968.jpg",
           "source": "/units/usa/assets/sources/walter_cronkite_vietnam_hue_1968.jpg",
           "caption": "CBS Evening News anchor Walter Cronkite reporting from the battlefield at Hue during the 1968 Tet Offensive.",
-          "text": "To say that we are closer to victory today is to believe, in the face of the evidence, the optimists who have been wrong in the past. To suggest we are on the edge of defeat is to yield to unreasonable pessimism. To say that we are mired in stalemate seems the only realistic, yet unsatisfactory, conclusion. It is increasingly clear to this reporter that the only rational way out then will be to negotiate, not as victors, but as an honorable people who lived up to their pledge to defend democracy, and did the best they could."
+          "text": "To say that we are closer to victory today is to believe, in the face of the evidence, the optimists who have been wrong in the past. To suggest we are on the edge of defeat is to yield to unreasonable pessimism. To say that we are mired in stalemate seems the only realistic, yet unsatisfactory, conclusion. It is increasingly clear to this reporter that the only rational way out then will be to negotiate, not as victors, but as an honorable people who lived up to their pledge to defend democracy, and did the best they could.",
+          "studio_audio": "/audio/sources/usa/lesson_3_4_sA.mp3",
+          "studio_voice_label": "Editorial Declaration by CBS Eve…"
         },
         {
           "id": "usa_lesson_3_4_a",
@@ -24732,7 +24982,9 @@ export default {
           "src": "/units/usa/assets/sources/nixon-television-address.jpg",
           "source": "/units/usa/assets/sources/nixon-television-address.jpg",
           "caption": "President Richard Nixon delivering a televised address from the Oval Office with a map of Cambodia, 30 April 1970.",
-          "text": "Tonight, American and South Vietnamese units will attack the headquarters for the entire Communist military operation in South Vietnam. A major responsibility for the ground operations is being assumed by South Vietnamese forces... This is not an invasion of Cambodia. The areas in which these attacks will take place are completely occupied and controlled by North Vietnamese forces... Our purpose is not to expand the war into Cambodia, but to end the war in Vietnam and to win the just peace we all desire."
+          "text": "Tonight, American and South Vietnamese units will attack the headquarters for the entire Communist military operation in South Vietnam. A major responsibility for the ground operations is being assumed by South Vietnamese forces... This is not an invasion of Cambodia. The areas in which these attacks will take place are completely occupied and controlled by North Vietnamese forces... Our purpose is not to expand the war into Cambodia, but to end the war in Vietnam and to win the just peace we all desire.",
+          "studio_audio": "/audio/sources/usa/lesson_3_4_sC.mp3",
+          "studio_voice_label": "From President Nixon’s Address t…"
         },
         {
           "id": "usa_lesson_3_4_b",
@@ -24787,7 +25039,9 @@ export default {
           "src": "/units/usa/assets/sources/nixon_kissinger_oval_office_1972.jpg",
           "source": "/units/usa/assets/sources/portraits/kissinger.jpg",
           "caption": "President Richard Nixon seated on the Oval Office desk conferring in private with National Security Advisor Dr. Henry Kissinger during strategic deliberations over Vietnam exit terms (White House Photo Office, 1972).",
-          "text": "Dr. Henry Kissinger: \"We require a decent interval. If a year or two years from now South Vietnam goes down the drain, it will look like a hell of an achievement to have got out, and it will be blamed on the South Vietnamese and on Congress.\"<br><br>President Richard Nixon: \"If we can get them out by November... then we've got to find a formula that holds the thing together until after the election. Then, if South Vietnam collapses in two years, that's their problem. We will have done our best.\""
+          "text": "Dr. Henry Kissinger: \"We require a decent interval. If a year or two years from now South Vietnam goes down the drain, it will look like a hell of an achievement to have got out, and it will be blamed on the South Vietnamese and on Congress.\"<br><br>President Richard Nixon: \"If we can get them out by November... then we've got to find a formula that holds the thing together until after the election. Then, if South Vietnam collapses in two years, that's their problem. We will have done our best.\"",
+          "studio_audio": "/audio/sources/usa/lesson_3_4_sE.mp3",
+          "studio_voice_label": "Declassified Oval Office Tape Re…"
         }
       ],
       "video": [
@@ -25172,7 +25426,9 @@ export default {
         ]
       },
       "banner_image": "/images/upgraded/gcse-p3/usa_l12_banner_nixon_cambodia_incursion_map_1970.jpg",
-      "banner_caption": "President Richard Nixon pointing to North Vietnamese sanctuary zones along the Cambodian–South Vietnamese border during his televised Oval Office address announcing the Cambodian Incursion (30 April 1970)."
+      "banner_caption": "President Richard Nixon pointing to North Vietnamese sanctuary zones along the Cambodian–South Vietnamese border during his televised Oval Office address announcing the Cambodian Incursion (30 April 1970).",
+      "prologue_audio": "/audio/lessons/usa/lesson_3_4_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · Historian"
     },
     {
       "id": "lesson_4_1",
@@ -26287,7 +26543,9 @@ export default {
                 "attribution": "Broadcast on 27 February 1968 to millions of American households by CBS Evening News anchor Walter Cronkite, the nation’s most respected news broadcaster, following his fact-finding mission to Vietnam after the Tet Offensive.",
                 "caption": "Source B: CBS Evening News Broadcast by Walter Cronkite Following the Tet Offensive (27 February 1968)",
                 "content": "It seems now more certain than ever that the bloody experience of Vietnam is to end in a stalemate. To say that we are closer to victory today is to believe, in the face of the evidence, the optimists who have been wrong in the past. To suggest we are on the edge of defeat is to yield to unreasonable despair. To say that we are mired in stalemate seems the only realistic, yet unsatisfactory, conclusion. It is increasingly clear to this reporter that the only rational way out will be to negotiate, not as victors, but as an honorable people who lived up to their pledge to defend democracy and did the best they could.",
-                "text": "It seems now more certain than ever that the bloody experience of Vietnam is to end in a stalemate. To say that we are closer to victory today is to believe, in the face of the evidence, the optimists who have been wrong in the past. To suggest we are on the edge of defeat is to yield to unreasonable despair. To say that we are mired in stalemate seems the only realistic, yet unsatisfactory, conclusion. It is increasingly clear to this reporter that the only rational way out will be to negotiate, not as victors, but as an honorable people who lived up to their pledge to defend democracy and did the best they could."
+                "text": "It seems now more certain than ever that the bloody experience of Vietnam is to end in a stalemate. To say that we are closer to victory today is to believe, in the face of the evidence, the optimists who have been wrong in the past. To suggest we are on the edge of defeat is to yield to unreasonable despair. To say that we are mired in stalemate seems the only realistic, yet unsatisfactory, conclusion. It is increasingly clear to this reporter that the only rational way out will be to negotiate, not as victors, but as an honorable people who lived up to their pledge to defend democracy and did the best they could.",
+                "studio_audio": "/audio/sources/usa/lesson_4_1_ep3_sB.mp3",
+                "studio_voice_label": "CBS Evening News Broadcast by Wa…"
               },
               {
                 "letter": "C",
@@ -26300,7 +26558,9 @@ export default {
                 "attribution": "Protest pamphlet produced and circulated on American university campuses by the student anti-war organization Students for a Democratic Society (SDS) prior to the 15 October 1969 Moratorium.",
                 "caption": "Source C: Students for a Democratic Society (SDS) Anti-War Protest Pamphlet (October 1969)",
                 "content": "Rich young men with political connections go to prestigious colleges and receive student deferments. Working-class and Black youth who cannot afford university are handed M16 rifles and shipped off to die in the jungles for a corrupt dictatorship in Saigon. Over 35,000 American boys have already come home in aluminum coffins, while Washington politicians lie about ‘progress’. We refuse to participate in the slaughter of Vietnamese peasants. Burn your draft cards! Join the nationwide Moratorium on October 15! Strike against the war machine!",
-                "text": "Rich young men with political connections go to prestigious colleges and receive student deferments. Working-class and Black youth who cannot afford university are handed M16 rifles and shipped off to die in the jungles for a corrupt dictatorship in Saigon. Over 35,000 American boys have already come home in aluminum coffins, while Washington politicians lie about ‘progress’. We refuse to participate in the slaughter of Vietnamese peasants. Burn your draft cards! Join the nationwide Moratorium on October 15! Strike against the war machine!"
+                "text": "Rich young men with political connections go to prestigious colleges and receive student deferments. Working-class and Black youth who cannot afford university are handed M16 rifles and shipped off to die in the jungles for a corrupt dictatorship in Saigon. Over 35,000 American boys have already come home in aluminum coffins, while Washington politicians lie about ‘progress’. We refuse to participate in the slaughter of Vietnamese peasants. Burn your draft cards! Join the nationwide Moratorium on October 15! Strike against the war machine!",
+                "studio_audio": "/audio/sources/usa/lesson_4_1_ep3_sC.mp3",
+                "studio_voice_label": "Students for a Democratic Societ…"
               }
             ],
             "supporting_sources": [
@@ -26445,7 +26705,9 @@ export default {
                 "attribution": "Broadcast on 27 February 1968 to millions of American households by CBS Evening News anchor Walter Cronkite, the nation’s most respected news broadcaster, following his fact-finding mission to Vietnam after the Tet Offensive.",
                 "caption": "Source B: CBS Evening News Broadcast by Walter Cronkite Following the Tet Offensive (27 February 1968)",
                 "content": "It seems now more certain than ever that the bloody experience of Vietnam is to end in a stalemate. To say that we are closer to victory today is to believe, in the face of the evidence, the optimists who have been wrong in the past. To suggest we are on the edge of defeat is to yield to unreasonable despair. To say that we are mired in stalemate seems the only realistic, yet unsatisfactory, conclusion. It is increasingly clear to this reporter that the only rational way out will be to negotiate, not as victors, but as an honorable people who lived up to their pledge to defend democracy and did the best they could.",
-                "text": "It seems now more certain than ever that the bloody experience of Vietnam is to end in a stalemate. To say that we are closer to victory today is to believe, in the face of the evidence, the optimists who have been wrong in the past. To suggest we are on the edge of defeat is to yield to unreasonable despair. To say that we are mired in stalemate seems the only realistic, yet unsatisfactory, conclusion. It is increasingly clear to this reporter that the only rational way out will be to negotiate, not as victors, but as an honorable people who lived up to their pledge to defend democracy and did the best they could."
+                "text": "It seems now more certain than ever that the bloody experience of Vietnam is to end in a stalemate. To say that we are closer to victory today is to believe, in the face of the evidence, the optimists who have been wrong in the past. To suggest we are on the edge of defeat is to yield to unreasonable despair. To say that we are mired in stalemate seems the only realistic, yet unsatisfactory, conclusion. It is increasingly clear to this reporter that the only rational way out will be to negotiate, not as victors, but as an honorable people who lived up to their pledge to defend democracy and did the best they could.",
+                "studio_audio": "/audio/sources/usa/lesson_4_1_ep3_sB.mp3",
+                "studio_voice_label": "CBS Evening News Broadcast by Wa…"
               },
               {
                 "letter": "C",
@@ -26458,7 +26720,9 @@ export default {
                 "attribution": "Protest pamphlet produced and circulated on American university campuses by the student anti-war organization Students for a Democratic Society (SDS) prior to the 15 October 1969 Moratorium.",
                 "caption": "Source C: Students for a Democratic Society (SDS) Anti-War Protest Pamphlet (October 1969)",
                 "content": "Rich young men with political connections go to prestigious colleges and receive student deferments. Working-class and Black youth who cannot afford university are handed M16 rifles and shipped off to die in the jungles for a corrupt dictatorship in Saigon. Over 35,000 American boys have already come home in aluminum coffins, while Washington politicians lie about ‘progress’. We refuse to participate in the slaughter of Vietnamese peasants. Burn your draft cards! Join the nationwide Moratorium on October 15! Strike against the war machine!",
-                "text": "Rich young men with political connections go to prestigious colleges and receive student deferments. Working-class and Black youth who cannot afford university are handed M16 rifles and shipped off to die in the jungles for a corrupt dictatorship in Saigon. Over 35,000 American boys have already come home in aluminum coffins, while Washington politicians lie about ‘progress’. We refuse to participate in the slaughter of Vietnamese peasants. Burn your draft cards! Join the nationwide Moratorium on October 15! Strike against the war machine!"
+                "text": "Rich young men with political connections go to prestigious colleges and receive student deferments. Working-class and Black youth who cannot afford university are handed M16 rifles and shipped off to die in the jungles for a corrupt dictatorship in Saigon. Over 35,000 American boys have already come home in aluminum coffins, while Washington politicians lie about ‘progress’. We refuse to participate in the slaughter of Vietnamese peasants. Burn your draft cards! Join the nationwide Moratorium on October 15! Strike against the war machine!",
+                "studio_audio": "/audio/sources/usa/lesson_4_1_ep3_sC.mp3",
+                "studio_voice_label": "Students for a Democratic Societ…"
               }
             ],
             "supporting_sources": [
@@ -26576,7 +26840,9 @@ export default {
                 "attribution": "Broadcast on 27 February 1968 to millions of American households by CBS Evening News anchor Walter Cronkite, the nation’s most respected news broadcaster, following his fact-finding mission to Vietnam after the Tet Offensive.",
                 "caption": "Source B: CBS Evening News Broadcast by Walter Cronkite Following the Tet Offensive (27 February 1968)",
                 "content": "It seems now more certain than ever that the bloody experience of Vietnam is to end in a stalemate. To say that we are closer to victory today is to believe, in the face of the evidence, the optimists who have been wrong in the past. To suggest we are on the edge of defeat is to yield to unreasonable despair. To say that we are mired in stalemate seems the only realistic, yet unsatisfactory, conclusion. It is increasingly clear to this reporter that the only rational way out will be to negotiate, not as victors, but as an honorable people who lived up to their pledge to defend democracy and did the best they could.",
-                "text": "It seems now more certain than ever that the bloody experience of Vietnam is to end in a stalemate. To say that we are closer to victory today is to believe, in the face of the evidence, the optimists who have been wrong in the past. To suggest we are on the edge of defeat is to yield to unreasonable despair. To say that we are mired in stalemate seems the only realistic, yet unsatisfactory, conclusion. It is increasingly clear to this reporter that the only rational way out will be to negotiate, not as victors, but as an honorable people who lived up to their pledge to defend democracy and did the best they could."
+                "text": "It seems now more certain than ever that the bloody experience of Vietnam is to end in a stalemate. To say that we are closer to victory today is to believe, in the face of the evidence, the optimists who have been wrong in the past. To suggest we are on the edge of defeat is to yield to unreasonable despair. To say that we are mired in stalemate seems the only realistic, yet unsatisfactory, conclusion. It is increasingly clear to this reporter that the only rational way out will be to negotiate, not as victors, but as an honorable people who lived up to their pledge to defend democracy and did the best they could.",
+                "studio_audio": "/audio/sources/usa/lesson_4_1_ep3_sB.mp3",
+                "studio_voice_label": "CBS Evening News Broadcast by Wa…"
               },
               {
                 "letter": "C",
@@ -26589,7 +26855,9 @@ export default {
                 "attribution": "Protest pamphlet produced and circulated on American university campuses by the student anti-war organization Students for a Democratic Society (SDS) prior to the 15 October 1969 Moratorium.",
                 "caption": "Source C: Students for a Democratic Society (SDS) Anti-War Protest Pamphlet (October 1969)",
                 "content": "Rich young men with political connections go to prestigious colleges and receive student deferments. Working-class and Black youth who cannot afford university are handed M16 rifles and shipped off to die in the jungles for a corrupt dictatorship in Saigon. Over 35,000 American boys have already come home in aluminum coffins, while Washington politicians lie about ‘progress’. We refuse to participate in the slaughter of Vietnamese peasants. Burn your draft cards! Join the nationwide Moratorium on October 15! Strike against the war machine!",
-                "text": "Rich young men with political connections go to prestigious colleges and receive student deferments. Working-class and Black youth who cannot afford university are handed M16 rifles and shipped off to die in the jungles for a corrupt dictatorship in Saigon. Over 35,000 American boys have already come home in aluminum coffins, while Washington politicians lie about ‘progress’. We refuse to participate in the slaughter of Vietnamese peasants. Burn your draft cards! Join the nationwide Moratorium on October 15! Strike against the war machine!"
+                "text": "Rich young men with political connections go to prestigious colleges and receive student deferments. Working-class and Black youth who cannot afford university are handed M16 rifles and shipped off to die in the jungles for a corrupt dictatorship in Saigon. Over 35,000 American boys have already come home in aluminum coffins, while Washington politicians lie about ‘progress’. We refuse to participate in the slaughter of Vietnamese peasants. Burn your draft cards! Join the nationwide Moratorium on October 15! Strike against the war machine!",
+                "studio_audio": "/audio/sources/usa/lesson_4_1_ep3_sC.mp3",
+                "studio_voice_label": "Students for a Democratic Societ…"
               }
             ],
             "supporting_sources": [
@@ -26744,7 +27012,9 @@ export default {
                 "attribution": "Broadcast on 27 February 1968 to millions of American households by CBS Evening News anchor Walter Cronkite, the nation’s most respected news broadcaster, following his fact-finding mission to Vietnam after the Tet Offensive.",
                 "caption": "Source B: CBS Evening News Broadcast by Walter Cronkite Following the Tet Offensive (27 February 1968)",
                 "content": "It seems now more certain than ever that the bloody experience of Vietnam is to end in a stalemate. To say that we are closer to victory today is to believe, in the face of the evidence, the optimists who have been wrong in the past. To suggest we are on the edge of defeat is to yield to unreasonable despair. To say that we are mired in stalemate seems the only realistic, yet unsatisfactory, conclusion. It is increasingly clear to this reporter that the only rational way out will be to negotiate, not as victors, but as an honorable people who lived up to their pledge to defend democracy and did the best they could.",
-                "text": "It seems now more certain than ever that the bloody experience of Vietnam is to end in a stalemate. To say that we are closer to victory today is to believe, in the face of the evidence, the optimists who have been wrong in the past. To suggest we are on the edge of defeat is to yield to unreasonable despair. To say that we are mired in stalemate seems the only realistic, yet unsatisfactory, conclusion. It is increasingly clear to this reporter that the only rational way out will be to negotiate, not as victors, but as an honorable people who lived up to their pledge to defend democracy and did the best they could."
+                "text": "It seems now more certain than ever that the bloody experience of Vietnam is to end in a stalemate. To say that we are closer to victory today is to believe, in the face of the evidence, the optimists who have been wrong in the past. To suggest we are on the edge of defeat is to yield to unreasonable despair. To say that we are mired in stalemate seems the only realistic, yet unsatisfactory, conclusion. It is increasingly clear to this reporter that the only rational way out will be to negotiate, not as victors, but as an honorable people who lived up to their pledge to defend democracy and did the best they could.",
+                "studio_audio": "/audio/sources/usa/lesson_4_1_ep3_sB.mp3",
+                "studio_voice_label": "CBS Evening News Broadcast by Wa…"
               },
               {
                 "letter": "C",
@@ -26757,7 +27027,9 @@ export default {
                 "attribution": "Protest pamphlet produced and circulated on American university campuses by the student anti-war organization Students for a Democratic Society (SDS) prior to the 15 October 1969 Moratorium.",
                 "caption": "Source C: Students for a Democratic Society (SDS) Anti-War Protest Pamphlet (October 1969)",
                 "content": "Rich young men with political connections go to prestigious colleges and receive student deferments. Working-class and Black youth who cannot afford university are handed M16 rifles and shipped off to die in the jungles for a corrupt dictatorship in Saigon. Over 35,000 American boys have already come home in aluminum coffins, while Washington politicians lie about ‘progress’. We refuse to participate in the slaughter of Vietnamese peasants. Burn your draft cards! Join the nationwide Moratorium on October 15! Strike against the war machine!",
-                "text": "Rich young men with political connections go to prestigious colleges and receive student deferments. Working-class and Black youth who cannot afford university are handed M16 rifles and shipped off to die in the jungles for a corrupt dictatorship in Saigon. Over 35,000 American boys have already come home in aluminum coffins, while Washington politicians lie about ‘progress’. We refuse to participate in the slaughter of Vietnamese peasants. Burn your draft cards! Join the nationwide Moratorium on October 15! Strike against the war machine!"
+                "text": "Rich young men with political connections go to prestigious colleges and receive student deferments. Working-class and Black youth who cannot afford university are handed M16 rifles and shipped off to die in the jungles for a corrupt dictatorship in Saigon. Over 35,000 American boys have already come home in aluminum coffins, while Washington politicians lie about ‘progress’. We refuse to participate in the slaughter of Vietnamese peasants. Burn your draft cards! Join the nationwide Moratorium on October 15! Strike against the war machine!",
+                "studio_audio": "/audio/sources/usa/lesson_4_1_ep3_sC.mp3",
+                "studio_voice_label": "Students for a Democratic Societ…"
               }
             ],
             "supporting_sources": [
@@ -27516,7 +27788,9 @@ export default {
         ]
       },
       "banner_image": "/images/upgraded/gcse-p3/usa_l13_banner_antiwar_protest_washington_loc.jpg",
-      "banner_caption": "Anti-Vietnam War demonstrators from Women Strike for Peace picketing outside the White House in Washington, D.C. with placards reading \"NO MORE... Stop the War!\" and \"END the DRAFT!\" (19 January 1968)."
+      "banner_caption": "Anti-Vietnam War demonstrators from Women Strike for Peace picketing outside the White House in Washington, D.C. with placards reading \"NO MORE... Stop the War!\" and \"END the DRAFT!\" (19 January 1968).",
+      "prologue_audio": "/audio/lessons/usa/lesson_4_1_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · Historian"
     },
     {
       "id": "lesson_4_2",
@@ -27783,7 +28057,9 @@ export default {
               "src": "/units/usa/assets/sources/nixon-television-address.jpg",
               "source": "/units/usa/assets/sources/portraits/nixon.jpg",
               "caption": "President Richard Nixon in the Oval Office surrounded by thousands of letters and telegrams sent by citizens supporting his 3 November 1969 'Silent Majority' address.",
-              "text": "Let historians not record that when America was the most powerful nation in the world we passed on the other side of the road and allowed the last hopes for peace and freedom of millions of people to be suffocated by the forces of totalitarianism. And so tonight—to you, the great silent majority of my fellow Americans—I ask for your support. I pledged in my campaign for the Presidency to end the war in a way that we could win the peace... Let us be united for peace. Let us also be united against defeat. Because let us understand: North Vietnam cannot defeat or humiliate the United States. Only Americans can do that."
+              "text": "Let historians not record that when America was the most powerful nation in the world we passed on the other side of the road and allowed the last hopes for peace and freedom of millions of people to be suffocated by the forces of totalitarianism. And so tonight—to you, the great silent majority of my fellow Americans—I ask for your support. I pledged in my campaign for the Presidency to end the war in a way that we could win the peace... Let us be united for peace. Let us also be united against defeat. Because let us understand: North Vietnam cannot defeat or humiliate the United States. Only Americans can do that.",
+              "studio_audio": "/audio/sources/usa/lesson_4_2_sA.mp3",
+              "studio_voice_label": "President Richard Nixon's Televi…"
             }
           ],
           "isReversed": false,
@@ -28012,7 +28288,9 @@ export default {
               "src": "/units/usa/assets/sources/pro-war-rally-nyc.jpg",
               "source": "/units/usa/assets/sources/pro-war-rally-nyc.jpg",
               "caption": "Thousands of construction workers, longshoremen, and blue-collar citizens rallying in lower Manhattan waving American flags in support of President Nixon and American troops (May 1970).",
-              "text": "Gallup Special Survey on Campus Protests and the Cambodian Incursion (May 1970):<br>• 58% of respondents held student anti-war demonstrators primarily responsible for the fatal shootings at Kent State University, compared to only 11% who blamed the Ohio National Guard.<br>• 50% approved of President Nixon's decision to order US ground troops into Cambodia to attack communist sanctuaries, with 39% disapproving.<br>• 65% expressed favorable views of the 'Silent Majority' and believed anti-war protesters were hurting the country's international standing."
+              "text": "Gallup Special Survey on Campus Protests and the Cambodian Incursion (May 1970):<br>• 58% of respondents held student anti-war demonstrators primarily responsible for the fatal shootings at Kent State University, compared to only 11% who blamed the Ohio National Guard.<br>• 50% approved of President Nixon's decision to order US ground troops into Cambodia to attack communist sanctuaries, with 39% disapproving.<br>• 65% expressed favorable views of the 'Silent Majority' and believed anti-war protesters were hurting the country's international standing.",
+              "studio_audio": "/audio/sources/usa/lesson_4_2_sD.mp3",
+              "studio_voice_label": "Gallup Opinion Poll Findings on…"
             }
           ],
           "isReversed": true,
@@ -28765,7 +29043,9 @@ export default {
           "source_context": "Public Papers of the Presidents: Richard Nixon, 1969. President Richard Nixon for The American television audience, estimated at over 70 million citizens with the objective: To buy political time for his Vietnamization strategy and neutralize the massive anti-war Moratorium demonstrations..",
           "source": "/units/usa/assets/sources/portraits/nixon.jpg",
           "caption": "President Richard Nixon in the Oval Office surrounded by thousands of letters and telegrams sent by citizens supporting his 3 November 1969 'Silent Majority' address.",
-          "text": "Let historians not record that when America was the most powerful nation in the world we passed on the other side of the road and allowed the last hopes for peace and freedom of millions of people to be suffocated by the forces of totalitarianism. And so tonight—to you, the great silent majority of my fellow Americans—I ask for your support. I pledged in my campaign for the Presidency to end the war in a way that we could win the peace... Let us be united for peace. Let us also be united against defeat. Because let us understand: North Vietnam cannot defeat or humiliate the United States. Only Americans can do that."
+          "text": "Let historians not record that when America was the most powerful nation in the world we passed on the other side of the road and allowed the last hopes for peace and freedom of millions of people to be suffocated by the forces of totalitarianism. And so tonight—to you, the great silent majority of my fellow Americans—I ask for your support. I pledged in my campaign for the Presidency to end the war in a way that we could win the peace... Let us be united for peace. Let us also be united against defeat. Because let us understand: North Vietnam cannot defeat or humiliate the United States. Only Americans can do that.",
+          "studio_audio": "/audio/sources/usa/lesson_4_2_sA.mp3",
+          "studio_voice_label": "President Richard Nixon's Televi…"
         },
         {
           "id": "usa_lesson_4_2_c",
@@ -28846,7 +29126,9 @@ export default {
           "source_context": "The Gallup Poll: Public Opinion 1935–1971, Volume 3, Random House. George Gallup and the American Institute of Public Opinion for Newspaper subscribers, political strategists, and academic researchers with the objective: To measure scientifically validated cross-sections of American public sentiment during national crises..",
           "source": "/units/usa/assets/sources/pro-war-rally-nyc.jpg",
           "caption": "National Gallup Poll survey findings (May 1970) measuring American public attitudes toward anti-war campus demonstrators and the Nixon administration.",
-          "text": "Gallup Special Survey on Campus Protests and the Cambodian Incursion (May 1970):<br>• 58% of respondents held student anti-war demonstrators primarily responsible for the fatal shootings at Kent State University, compared to only 11% who blamed the Ohio National Guard.<br>• 50% approved of President Nixon's decision to order US ground troops into Cambodia to attack communist sanctuaries, with 39% disapproving.<br>• 65% expressed favorable views of the 'Silent Majority' and believed anti-war protesters were hurting the country's international standing."
+          "text": "Gallup Special Survey on Campus Protests and the Cambodian Incursion (May 1970):<br>• 58% of respondents held student anti-war demonstrators primarily responsible for the fatal shootings at Kent State University, compared to only 11% who blamed the Ohio National Guard.<br>• 50% approved of President Nixon's decision to order US ground troops into Cambodia to attack communist sanctuaries, with 39% disapproving.<br>• 65% expressed favorable views of the 'Silent Majority' and believed anti-war protesters were hurting the country's international standing.",
+          "studio_audio": "/audio/sources/usa/lesson_4_2_sD.mp3",
+          "studio_voice_label": "Gallup Opinion Poll Findings on…"
         },
         {
           "id": "usa_lesson_4_2_b",
@@ -29258,7 +29540,9 @@ export default {
         ]
       },
       "banner_image": "/images/upgraded/gcse-p3/usa_l14_banner_nixon_rally_silent_majority_1972.jpg",
-      "banner_caption": "President Richard Nixon greeting thousands of flag-waving \"Silent Majority\" supporters at an evening rally in Ontario, California on the eve of his 49-state landslide re-election (4 November 1972)."
+      "banner_caption": "President Richard Nixon greeting thousands of flag-waving \"Silent Majority\" supporters at an evening rally in Ontario, California on the eve of his 49-state landslide re-election (4 November 1972).",
+      "prologue_audio": "/audio/lessons/usa/lesson_4_2_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · Historian"
     },
     {
       "id": "lesson_4_3",
@@ -29565,7 +29849,9 @@ export default {
                 "hinge_question": "Why did North Vietnam agree to sign the Paris Accords in January 1973 after having rejected identical terms months earlier?"
               },
               "source_context": "United States Treaties and Other International Agreements, 24 UST 1, TIAS 7542. Chief negotiators William P. Rogers, Nguyen Duy Trinh, Tran Van Lam, and Nguyen Thi Binh for The United Nations, international governments, and the combatant nations with the objective: To legally codify the terms of immediate American military withdrawal and prisoner-of-war repatriation..",
-              "text": "Agreement on Ending the War and Restoring Peace in Viet-Nam (Signed 27 January 1973):\nArticle 2: A cease-fire shall be observed throughout South Viet-Nam as of 24:00 hours G.M.T. on January 27, 1973.\nArticle 3: The United States will stop all its military activities against the territory of the Democratic Republic of Viet-Nam.\nArticle 5: Within sixty days of the signing of this Agreement, there will be a complete withdrawal from South Viet-Nam of all troops, military personnel, weapons, and war material of the United States.\nArticle 8: The return of captured military personnel and foreign civilians shall be completed within the same sixty-day time limit."
+              "text": "Agreement on Ending the War and Restoring Peace in Viet-Nam (Signed 27 January 1973):\nArticle 2: A cease-fire shall be observed throughout South Viet-Nam as of 24:00 hours G.M.T. on January 27, 1973.\nArticle 3: The United States will stop all its military activities against the territory of the Democratic Republic of Viet-Nam.\nArticle 5: Within sixty days of the signing of this Agreement, there will be a complete withdrawal from South Viet-Nam of all troops, military personnel, weapons, and war material of the United States.\nArticle 8: The return of captured military personnel and foreign civilians shall be completed within the same sixty-day time limit.",
+              "studio_audio": "/audio/sources/usa/lesson_4_3_sB.mp3",
+              "studio_voice_label": "Key Articles from the 'Agreement…"
             }
           ],
           "isReversed": true,
@@ -29656,7 +29942,9 @@ export default {
               "src": "/units/usa/assets/sources/frequent_wind_refugees_uss_midway_1975.jpg",
               "source": "/units/usa/assets/sources/portraits/creighton_abrams.jpg",
               "caption": "South Vietnamese evacuees disembark from a helicopter onto USS Midway during Operation Frequent Wind (29–30 April 1975) as North Vietnamese forces capture Saigon.",
-              "text": "The puppet troops fled in complete panic, abandoning their heavy tanks, howitzers, and aircraft at Da Nang and Cam Ranh Bay. Our revolutionary tanks smashed directly through the iron gates of the Independence Palace in Saigon at 11:30 a.m. on 30 April. The red-and-blue flag with the gold star was hoisted over the presidential palace. General Duong Van Minh surrendered unconditionally. Thirty years of liberation struggle had achieved glorious, total victory."
+              "text": "The puppet troops fled in complete panic, abandoning their heavy tanks, howitzers, and aircraft at Da Nang and Cam Ranh Bay. Our revolutionary tanks smashed directly through the iron gates of the Independence Palace in Saigon at 11:30 a.m. on 30 April. The red-and-blue flag with the gold star was hoisted over the presidential palace. General Duong Van Minh surrendered unconditionally. Thirty years of liberation struggle had achieved glorious, total victory.",
+              "studio_audio": "/audio/sources/usa/lesson_4_3_sD.mp3",
+              "studio_voice_label": "From General Van Tien Dung's Off…"
             }
           ],
           "isReversed": true,
@@ -29702,7 +29990,9 @@ export default {
               "src": "/units/usa/assets/sources/ch53_frequent_wind_saigon_1975.jpg",
               "source": "/units/usa/assets/sources/portraits/ford.jpg",
               "caption": "A US Marine guards the perimeter at Tan Son Nhut Air Base during Operation Frequent Wind, the final evacuation of Saigon in late April 1975.",
-              "text": "Today, America can again feel the pride that existed in New Orleans that day 160 years ago. But it is not a pride that will be achieved by fighting again a war that is finished as far as America is concerned. I believe it is time for us to look forward to the future, to direct our energies and our resources towards the great goals of which we are capable, and to restore the confidence of the American people in their own destiny."
+              "text": "Today, America can again feel the pride that existed in New Orleans that day 160 years ago. But it is not a pride that will be achieved by fighting again a war that is finished as far as America is concerned. I believe it is time for us to look forward to the future, to direct our energies and our resources towards the great goals of which we are capable, and to restore the confidence of the American people in their own destiny.",
+              "studio_audio": "/audio/sources/usa/lesson_4_3_sE.mp3",
+              "studio_voice_label": "President Gerald R. Ford's Addre…"
             }
           ],
           "isReversed": false,
@@ -30511,7 +30801,9 @@ export default {
             "hinge_question": "Why did North Vietnam agree to sign the Paris Accords in January 1973 after having rejected identical terms months earlier?"
           },
           "source_context": "United States Treaties and Other International Agreements, 24 UST 1, TIAS 7542. Chief negotiators William P. Rogers, Nguyen Duy Trinh, Tran Van Lam, and Nguyen Thi Binh for The United Nations, international governments, and the combatant nations with the objective: To legally codify the terms of immediate American military withdrawal and prisoner-of-war repatriation..",
-          "text": "Agreement on Ending the War and Restoring Peace in Viet-Nam (Signed 27 January 1973):\nArticle 2: A cease-fire shall be observed throughout South Viet-Nam as of 24:00 hours G.M.T. on January 27, 1973.\nArticle 3: The United States will stop all its military activities against the territory of the Democratic Republic of Viet-Nam.\nArticle 5: Within sixty days of the signing of this Agreement, there will be a complete withdrawal from South Viet-Nam of all troops, military personnel, weapons, and war material of the United States.\nArticle 8: The return of captured military personnel and foreign civilians shall be completed within the same sixty-day time limit."
+          "text": "Agreement on Ending the War and Restoring Peace in Viet-Nam (Signed 27 January 1973):\nArticle 2: A cease-fire shall be observed throughout South Viet-Nam as of 24:00 hours G.M.T. on January 27, 1973.\nArticle 3: The United States will stop all its military activities against the territory of the Democratic Republic of Viet-Nam.\nArticle 5: Within sixty days of the signing of this Agreement, there will be a complete withdrawal from South Viet-Nam of all troops, military personnel, weapons, and war material of the United States.\nArticle 8: The return of captured military personnel and foreign civilians shall be completed within the same sixty-day time limit.",
+          "studio_audio": "/audio/sources/usa/lesson_4_3_sB.mp3",
+          "studio_voice_label": "Key Articles from the 'Agreement…"
         },
         {
           "id": "usa_lesson_4_3_c",
@@ -30563,7 +30855,9 @@ export default {
           "source_context": "General Van Tien Dung, 'Our Great Spring Victory', Foreign Languages Publishing House, Hanoi (1977). General Van Tien Dung, Chief of the General Staff of the Vietnam People's Army for Military historians and the reunited population of Vietnam with the objective: To record the military planning and execution of the final 55-day offensive that captured Saigon..",
           "source": "/units/usa/assets/sources/portraits/creighton_abrams.jpg",
           "caption": "Civilians scramble up a rooftop ladder to board an Air America helicopter in Saigon on 29 April 1975 as communist forces led by General Van Tien Dung surround the capital.",
-          "text": "The puppet troops fled in complete panic, abandoning their heavy tanks, howitzers, and aircraft at Da Nang and Cam Ranh Bay. Our revolutionary tanks smashed directly through the iron gates of the Independence Palace in Saigon at 11:30 a.m. on 30 April. The red-and-blue flag with the gold star was hoisted over the presidential palace. General Duong Van Minh surrendered unconditionally. Thirty years of liberation struggle had achieved glorious, total victory."
+          "text": "The puppet troops fled in complete panic, abandoning their heavy tanks, howitzers, and aircraft at Da Nang and Cam Ranh Bay. Our revolutionary tanks smashed directly through the iron gates of the Independence Palace in Saigon at 11:30 a.m. on 30 April. The red-and-blue flag with the gold star was hoisted over the presidential palace. General Duong Van Minh surrendered unconditionally. Thirty years of liberation struggle had achieved glorious, total victory.",
+          "studio_audio": "/audio/sources/usa/lesson_4_3_sD.mp3",
+          "studio_voice_label": "From General Van Tien Dung's Off…"
         },
         {
           "id": "usa_lesson_4_3_e",
@@ -30588,7 +30882,9 @@ export default {
           "source_context": "Gerald R. Ford Presidential Library and Museum, Ann Arbor, Michigan. President Gerald R. Ford for Faculty and students at Tulane University and the national broadcast audience with the objective: To prepare the American public psychologically for the imminent fall of Saigon and signal a turn toward the future..",
           "source": "/units/usa/assets/sources/portraits/ford.jpg",
           "caption": "A US Marine guards the perimeter at Tan Son Nhut Air Base during Operation Frequent Wind, the final evacuation of Saigon in late April 1975.",
-          "text": "Today, America can again feel the pride that existed in New Orleans that day 160 years ago. But it is not a pride that will be achieved by fighting again a war that is finished as far as America is concerned. I believe it is time for us to look forward to the future, to direct our energies and our resources towards the great goals of which we are capable, and to restore the confidence of the American people in their own destiny."
+          "text": "Today, America can again feel the pride that existed in New Orleans that day 160 years ago. But it is not a pride that will be achieved by fighting again a war that is finished as far as America is concerned. I believe it is time for us to look forward to the future, to direct our energies and our resources towards the great goals of which we are capable, and to restore the confidence of the American people in their own destiny.",
+          "studio_audio": "/audio/sources/usa/lesson_4_3_sE.mp3",
+          "studio_voice_label": "President Gerald R. Ford's Addre…"
         }
       ],
       "video": [
@@ -30975,7 +31271,9 @@ export default {
         ]
       },
       "banner_image": "/images/upgraded/gcse-p3/usa_l15_banner_frequent_wind_uh1_overboard_1975.jpg",
-      "banner_caption": "U.S. Navy flight-deck crewmen pushing an evacuated South Vietnamese Air Force UH-1 Huey helicopter overboard from USS Blue Ridge to clear deck space for incoming refugee flights during Operation Frequent Wind (29 April 1975)."
+      "banner_caption": "U.S. Navy flight-deck crewmen pushing an evacuated South Vietnamese Air Force UH-1 Huey helicopter overboard from USS Blue Ridge to clear deck space for incoming refugee flights during Operation Frequent Wind (29 April 1975).",
+      "prologue_audio": "/audio/lessons/usa/lesson_4_3_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · Historian"
     },
     {
       "id": "lesson_4_4",
@@ -31413,7 +31711,9 @@ export default {
               "src": "/units/usa/assets/sources/war_powers_resolution_1973_statute.png",
               "source": "/units/usa/assets/sources/portraits/nixon.jpg",
               "caption": "Facsimile of the opening section of the War Powers Resolution (Public Law 93-148), passed by Congress on 7 November 1973 to restrict presidential war-making power.",
-              "text": "Resolved by the Senate and House of Representatives of the United States of America in Congress assembled... Section 2(c). The constitutional powers of the President as Commander-in-Chief to introduce United States Armed Forces into hostilities are exercised only pursuant to (1) a declaration of war, (2) specific statutory authorization, or (3) a national emergency created by attack upon the United States... Section 5(b). Within sixty calendar days after a report is submitted, the President shall terminate any use of United States Armed Forces unless Congress has declared war or enacted a specific authorization."
+              "text": "Resolved by the Senate and House of Representatives of the United States of America in Congress assembled... Section 2(c). The constitutional powers of the President as Commander-in-Chief to introduce United States Armed Forces into hostilities are exercised only pursuant to (1) a declaration of war, (2) specific statutory authorization, or (3) a national emergency created by attack upon the United States... Section 5(b). Within sixty calendar days after a report is submitted, the President shall terminate any use of United States Armed Forces unless Congress has declared war or enacted a specific authorization.",
+              "studio_audio": "/audio/sources/usa/lesson_4_4_sC.mp3",
+              "studio_voice_label": "Excerpt from the War Powers Reso…"
             }
           ],
           "image": "/images/usa/kt4/usa_kt4_l16_b2_vc_flag_fighters_1973.jpg",
@@ -31460,7 +31760,9 @@ export default {
               "src": "",
               "source": "",
               "text": "United States Department of Defense Official Summary of Vietnam War Casualties and Costs (1975):\n• Total US Military Personnel Served in Southeast Asia: 3,403,100\n• Total Deaths (All Causes): 58,220\n• Battle Deaths (Killed in Action): 47,434\n• Non-Battle Deaths: 10,786\n• Wounded in Action (Requiring Hospital Care): 153,303\n• Missing in Action / Presumed Dead: 1,600\n• Total Direct Military Budget Expenditure: $168 Billion (Equivalent to over $1 Trillion today)\n• Aerial Munitions Expended: 7.5 million tons of bombs (more than double the total tonnage dropped by all nations during the entire Second World War).",
-              "content": "United States Department of Defense Official Summary of Vietnam War Casualties and Costs (1975):\n• Total US Military Personnel Served in Southeast Asia: 3,403,100\n• Total Deaths (All Causes): 58,220\n• Battle Deaths (Killed in Action): 47,434\n• Non-Battle Deaths: 10,786\n• Wounded in Action (Requiring Hospital Care): 153,303\n• Missing in Action / Presumed Dead: 1,600\n• Total Direct Military Budget Expenditure: $168 Billion (Equivalent to over $1 Trillion today)\n• Aerial Munitions Expended: 7.5 million tons of bombs (more than double the total tonnage dropped by all nations during the entire Second World War)."
+              "content": "United States Department of Defense Official Summary of Vietnam War Casualties and Costs (1975):\n• Total US Military Personnel Served in Southeast Asia: 3,403,100\n• Total Deaths (All Causes): 58,220\n• Battle Deaths (Killed in Action): 47,434\n• Non-Battle Deaths: 10,786\n• Wounded in Action (Requiring Hospital Care): 153,303\n• Missing in Action / Presumed Dead: 1,600\n• Total Direct Military Budget Expenditure: $168 Billion (Equivalent to over $1 Trillion today)\n• Aerial Munitions Expended: 7.5 million tons of bombs (more than double the total tonnage dropped by all nations during the entire Second World War).",
+              "studio_audio": "/audio/sources/usa/lesson_4_4_sD.mp3",
+              "studio_voice_label": "Official United States Departmen…"
             }
           ],
           "isReversed": true,
@@ -31506,7 +31808,9 @@ export default {
               "src": "/units/usa/assets/sources/us-troops-bogged-down.jpg",
               "source": "/units/usa/assets/sources/portraits/westmoreland.jpg",
               "caption": "US soldiers wading through swamp under thick canopy in the Mekong Delta (US Army Combat Art Program).",
-              "text": "The United States intervened in Vietnam to contain communist expansion, but it fundamentally misperceived the nature of the conflict. Washington viewed the struggle through the rigid ideological lens of the global Cold War, failing to recognize that Vietnamese communism was deeply rooted in a century-long, ferocious struggle for national independence against foreign colonial domination. By intervening to prop up an artificial, corrupt, and illegitimate client regime in Saigon, the United States embarked upon an unwinnable war in which no amount of modern industrial technology or high-explosive firepower could compensate for the lack of political legitimacy."
+              "text": "The United States intervened in Vietnam to contain communist expansion, but it fundamentally misperceived the nature of the conflict. Washington viewed the struggle through the rigid ideological lens of the global Cold War, failing to recognize that Vietnamese communism was deeply rooted in a century-long, ferocious struggle for national independence against foreign colonial domination. By intervening to prop up an artificial, corrupt, and illegitimate client regime in Saigon, the United States embarked upon an unwinnable war in which no amount of modern industrial technology or high-explosive firepower could compensate for the lack of political legitimacy.",
+              "studio_audio": "/audio/sources/usa/lesson_4_4_sE.mp3",
+              "studio_voice_label": "From an Analysis by Military His…"
             }
           ],
           "isReversed": false,
@@ -32166,7 +32470,9 @@ export default {
                 "text": "Resolved by the Senate and House of Representatives of the United States of America in Congress assembled... Section 2(c). The constitutional powers of the President as Commander-in-Chief to introduce United States Armed Forces into hostilities are exercised only pursuant to (1) a declaration of war, (2) specific statutory authorization, or (3) a national emergency created by attack upon the United States... Section 5(b). Within sixty calendar days after a report is submitted, the President shall terminate any use of United States Armed Forces unless Congress has declared war or enacted a specific authorization.",
                 "image": "/units/usa/assets/sources/war_powers_resolution_1973_statute.png",
                 "image_url": "/units/usa/assets/sources/war_powers_resolution_1973_statute.png",
-                "src": "/units/usa/assets/sources/war_powers_resolution_1973_statute.png"
+                "src": "/units/usa/assets/sources/war_powers_resolution_1973_statute.png",
+                "studio_audio": "/audio/sources/usa/lesson_4_4_sC.mp3",
+                "studio_voice_label": "Excerpt from the War Powers Reso…"
               }
             ],
             "supporting_sources": [
@@ -32332,7 +32638,9 @@ export default {
                 "text": "Resolved by the Senate and House of Representatives of the United States of America in Congress assembled... Section 2(c). The constitutional powers of the President as Commander-in-Chief to introduce United States Armed Forces into hostilities are exercised only pursuant to (1) a declaration of war, (2) specific statutory authorization, or (3) a national emergency created by attack upon the United States... Section 5(b). Within sixty calendar days after a report is submitted, the President shall terminate any use of United States Armed Forces unless Congress has declared war or enacted a specific authorization.",
                 "image": "/units/usa/assets/sources/war_powers_resolution_1973_statute.png",
                 "image_url": "/units/usa/assets/sources/war_powers_resolution_1973_statute.png",
-                "src": "/units/usa/assets/sources/war_powers_resolution_1973_statute.png"
+                "src": "/units/usa/assets/sources/war_powers_resolution_1973_statute.png",
+                "studio_audio": "/audio/sources/usa/lesson_4_4_sC.mp3",
+                "studio_voice_label": "Excerpt from the War Powers Reso…"
               }
             ],
             "supporting_sources": [
@@ -32471,7 +32779,9 @@ export default {
                 "text": "Resolved by the Senate and House of Representatives of the United States of America in Congress assembled... Section 2(c). The constitutional powers of the President as Commander-in-Chief to introduce United States Armed Forces into hostilities are exercised only pursuant to (1) a declaration of war, (2) specific statutory authorization, or (3) a national emergency created by attack upon the United States... Section 5(b). Within sixty calendar days after a report is submitted, the President shall terminate any use of United States Armed Forces unless Congress has declared war or enacted a specific authorization.",
                 "image": "/units/usa/assets/sources/war_powers_resolution_1973_statute.png",
                 "image_url": "/units/usa/assets/sources/war_powers_resolution_1973_statute.png",
-                "src": "/units/usa/assets/sources/war_powers_resolution_1973_statute.png"
+                "src": "/units/usa/assets/sources/war_powers_resolution_1973_statute.png",
+                "studio_audio": "/audio/sources/usa/lesson_4_4_sC.mp3",
+                "studio_voice_label": "Excerpt from the War Powers Reso…"
               }
             ],
             "supporting_sources": [
@@ -32647,7 +32957,9 @@ export default {
                 "text": "Resolved by the Senate and House of Representatives of the United States of America in Congress assembled... Section 2(c). The constitutional powers of the President as Commander-in-Chief to introduce United States Armed Forces into hostilities are exercised only pursuant to (1) a declaration of war, (2) specific statutory authorization, or (3) a national emergency created by attack upon the United States... Section 5(b). Within sixty calendar days after a report is submitted, the President shall terminate any use of United States Armed Forces unless Congress has declared war or enacted a specific authorization.",
                 "image": "/units/usa/assets/sources/war_powers_resolution_1973_statute.png",
                 "image_url": "/units/usa/assets/sources/war_powers_resolution_1973_statute.png",
-                "src": "/units/usa/assets/sources/war_powers_resolution_1973_statute.png"
+                "src": "/units/usa/assets/sources/war_powers_resolution_1973_statute.png",
+                "studio_audio": "/audio/sources/usa/lesson_4_4_sC.mp3",
+                "studio_voice_label": "Excerpt from the War Powers Reso…"
               }
             ],
             "supporting_sources": [
@@ -32973,7 +33285,9 @@ export default {
           "source": "/units/usa/assets/sources/portraits/nixon.jpg",
           "caption": "Original enrolled statute of the War Powers Resolution (Public Law 93-148, H.J. Res. 542), enacted over President Richard Nixon’s veto on 7 November 1973 to restrict unilateral presidential war-making authority.",
           "text": "Resolved by the Senate and House of Representatives of the United States of America in Congress assembled... Section 2(c). The constitutional powers of the President as Commander-in-Chief to introduce United States Armed Forces into hostilities are exercised only pursuant to (1) a declaration of war, (2) specific statutory authorization, or (3) a national emergency created by attack upon the United States... Section 5(b). Within sixty calendar days after a report is submitted, the President shall terminate any use of United States Armed Forces unless Congress has declared war or enacted a specific authorization.",
-          "image_alt": "Original red-bordered enrolled parchment of Public Law 93-148 (H.J. Res. 542, Ninety-third Congress), Joint Resolution Concerning the war powers of Congress and the President, bearing White House and National Archives receipt stamps (October–November 1973)"
+          "image_alt": "Original red-bordered enrolled parchment of Public Law 93-148 (H.J. Res. 542, Ninety-third Congress), Joint Resolution Concerning the war powers of Congress and the President, bearing White House and National Archives receipt stamps (October–November 1973)",
+          "studio_audio": "/audio/sources/usa/lesson_4_4_sC.mp3",
+          "studio_voice_label": "Excerpt from the War Powers Reso…"
         },
         {
           "id": "usa_lesson_4_4_e",
@@ -33002,7 +33316,9 @@ export default {
           },
           "source_context": "Office of the Secretary of Defense (Comptroller), Southeast Asia Statistical Tables. Pentagon statisticians and Department of Defense comptrollers for The United States Congress, veterans' organizations, and the historical record with the objective: To provide the definitive official statistical record of the personnel and financial costs of the conflict..",
           "src": "",
-          "source": ""
+          "source": "",
+          "studio_audio": "/audio/sources/usa/lesson_4_4_sD.mp3",
+          "studio_voice_label": "Official United States Departmen…"
         },
         {
           "id": "usa_lesson_4_4_d",
@@ -33027,7 +33343,9 @@ export default {
           "source_context": "George C. Herring, 'America's Longest War: The United States and Vietnam, 1950–1975', Temple University Press. Professor George C. Herring, leading diplomatic and military historian of the Vietnam War for University students, academic historians, and military strategists with the objective: To provide a rigorous, objective historical autopsy of the comprehensive failure of US intervention..",
           "source": "/units/usa/assets/sources/portraits/westmoreland.jpg",
           "caption": "US soldiers wading through swamp under thick canopy in the Mekong Delta (US Army Combat Art Program).",
-          "text": "The United States intervened in Vietnam to contain communist expansion, but it fundamentally misperceived the nature of the conflict. Washington viewed the struggle through the rigid ideological lens of the global Cold War, failing to recognize that Vietnamese communism was deeply rooted in a century-long, ferocious struggle for national independence against foreign colonial domination. By intervening to prop up an artificial, corrupt, and illegitimate client regime in Saigon, the United States embarked upon an unwinnable war in which no amount of modern industrial technology or high-explosive firepower could compensate for the lack of political legitimacy."
+          "text": "The United States intervened in Vietnam to contain communist expansion, but it fundamentally misperceived the nature of the conflict. Washington viewed the struggle through the rigid ideological lens of the global Cold War, failing to recognize that Vietnamese communism was deeply rooted in a century-long, ferocious struggle for national independence against foreign colonial domination. By intervening to prop up an artificial, corrupt, and illegitimate client regime in Saigon, the United States embarked upon an unwinnable war in which no amount of modern industrial technology or high-explosive firepower could compensate for the lack of political legitimacy.",
+          "studio_audio": "/audio/sources/usa/lesson_4_4_sE.mp3",
+          "studio_voice_label": "From an Analysis by Military His…"
         }
       ],
       "video": [
@@ -33414,7 +33732,9 @@ export default {
         ]
       },
       "banner_image": "/images/upgraded/gcse-p3/usa_l16_banner_1st_cavalry_patrol_vietnam_1966.jpg",
-      "banner_caption": "U.S. 1st Cavalry Division (Airmobile) infantrymen searching a thatched rural dwelling watched by an elderly Vietnamese villager and young child during Operation Irving north of Qui Nhon (6 October 1966)."
+      "banner_caption": "U.S. 1st Cavalry Division (Airmobile) infantrymen searching a thatched rural dwelling watched by an elderly Vietnamese villager and young child during Operation Irving north of Qui Nhon (6 October 1966).",
+      "prologue_audio": "/audio/lessons/usa/lesson_4_4_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · Historian"
     }
   ],
   "keyStage": "GCSE",

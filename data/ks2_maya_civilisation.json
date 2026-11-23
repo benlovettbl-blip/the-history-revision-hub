@@ -945,7 +945,9 @@
         "provenanceNote": "Museo Nacional de Antropología (Mexico), Peabody Museum, SLUB Dresden, Metropolitan Museum of Art & Wikimedia Commons (Zero AI Imagery)",
         "spokenTakeaway": "Here is the big story in one sentence. <short pause> Without metal tools or wheeled carts, Maya builders used cenote wells, plastered reservoirs, and Three Sisters farming to raise towering limestone rainforest cities."
       },
-      "banner_caption": "Stepped limestone temples of Tikal rising high above the emerald rainforest canopy in Guatemala"
+      "banner_caption": "Stepped limestone temples of Tikal rising high above the emerald rainforest canopy in Guatemala",
+      "prologue_audio": "/audio/lessons/ks2_maya_civilisation/lesson_1_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · Historian"
     },
     {
       "id": "lesson_2",
@@ -1856,7 +1858,9 @@
         "provenanceNote": "Museo Nacional de Antropología (Mexico), Peabody Museum, SLUB Dresden, Metropolitan Museum of Art & Wikimedia Commons (Zero AI Imagery)",
         "spokenTakeaway": "Here is the big story in one sentence. <short pause> Across forty rival Maya city-states, holy Ajaw kings like Pakal and queens like Lady Six Sky ruled from step-pyramids adorned with green jade and carved stelae."
       },
-      "banner_caption": "Panoramic view across the stepped limestone temples and four-storey Royal Palace tower of Classic Maya Palenque in the Chiapas rainforest."
+      "banner_caption": "Panoramic view across the stepped limestone temples and four-storey Royal Palace tower of Classic Maya Palenque in the Chiapas rainforest.",
+      "prologue_audio": "/audio/lessons/ks2_maya_civilisation/lesson_2_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · Historian"
     },
     {
       "id": "lesson_3",
@@ -2768,7 +2772,9 @@
         "provenanceNote": "Museo Nacional de Antropología (Mexico), Peabody Museum, SLUB Dresden, Metropolitan Museum of Art & Wikimedia Commons (Zero AI Imagery)",
         "spokenTakeaway": "Here is the big story in one sentence. <short pause> Maya scholars created over 800 hieroglyphs, painted fig-bark codices, independently invented place-value zero, and tracked Venus to run interlocking calendars."
       },
-      "banner_caption": "Round limestone dome and viewing windows of El Caracol astronomical observatory at Chichén Itzá in Yucatán"
+      "banner_caption": "Round limestone dome and viewing windows of El Caracol astronomical observatory at Chichén Itzá in Yucatán",
+      "prologue_audio": "/audio/lessons/ks2_maya_civilisation/lesson_3_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · Historian"
     },
     {
       "id": "lesson_4",
@@ -3681,7 +3687,9 @@
         "provenanceNote": "Museo Nacional de Antropología (Mexico), Peabody Museum, SLUB Dresden, Metropolitan Museum of Art & Wikimedia Commons (Zero AI Imagery)",
         "spokenTakeaway": "Here is the big story in one sentence. <short pause> Maya families ground limewater maize on stone metates, spent cacao beans as market cash, traded jade by porter and canoe, and played sacred Pok-ta-Pok."
       },
-      "banner_caption": "High stone walls of the Great Ball Court (Gran Juego de Pelota) at Chichén Itzá, the largest Pok-ta-Pok arena in ancient Mesoamerica."
+      "banner_caption": "High stone walls of the Great Ball Court (Gran Juego de Pelota) at Chichén Itzá, the largest Pok-ta-Pok arena in ancient Mesoamerica.",
+      "prologue_audio": "/audio/lessons/ks2_maya_civilisation/lesson_4_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · Historian"
     },
     {
       "id": "lesson_5",
@@ -4594,7 +4602,9 @@
         "provenanceNote": "Museo Nacional de Antropología (Mexico), Peabody Museum, SLUB Dresden, Metropolitan Museum of Art & Wikimedia Commons (Zero AI Imagery)",
         "spokenTakeaway": "Here is the big story in one sentence. <short pause> Inspired by Popol Vuh creation stories, rain god Chaac, and Kukulkan, Maya builders designed Chichén Itzá's 365-step pyramid to cast an equinox serpent shadow."
       },
-      "banner_caption": "Rows of carved limestone columns beside the stepped Temple of the Warriors at Chichén Itzá in Yucatán."
+      "banner_caption": "Rows of carved limestone columns beside the stepped Temple of the Warriors at Chichén Itzá in Yucatán.",
+      "prologue_audio": "/audio/lessons/ks2_maya_civilisation/lesson_5_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · Historian"
     },
     {
       "id": "lesson_6",
@@ -5507,7 +5517,9 @@
         "provenanceNote": "Museo Nacional de Antropología (Mexico), Peabody Museum, SLUB Dresden, Metropolitan Museum of Art & Wikimedia Commons (Zero AI Imagery)",
         "spokenTakeaway": "Here is the big story in one sentence. <short pause> Drought, deforestation, and warfare emptied southern cities around AD 900, yet northern ports like Tulum thrived and over seven million Maya live proudly today."
       },
-      "banner_caption": "Lake Atitlán and towering volcanic highlands in Guatemala — heartland of vibrant living Maya communities and languages today."
+      "banner_caption": "Lake Atitlán and towering volcanic highlands in Guatemala — heartland of vibrant living Maya communities and languages today.",
+      "prologue_audio": "/audio/lessons/ks2_maya_civilisation/lesson_6_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · Historian"
     }
   ],
   "key_individuals": [

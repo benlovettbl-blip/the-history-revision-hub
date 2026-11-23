@@ -154,6 +154,433 @@
       "voiceKey": "male_historian",
       "badge": "Historian 1 · Academic View",
       "updatedAt": "2026-11-23T15:17:47.479Z"
+    },
+    "lesson_1_1_sB": {
+      "hash": "bc71b7694b5897f0",
+      "bytes": 129740,
+      "voiceKey": "male_historian",
+      "badge": "Chancellor Prince Max von Baden'…",
+      "updatedAt": "2026-11-23T23:02:36.980Z"
+    },
+    "lesson_3_4_ep3_sB": {
+      "hash": "7510a8d00f051873",
+      "bytes": 159308,
+      "voiceKey": "male_historian",
+      "badge": "The Barmen Theological Declarati…",
+      "updatedAt": "2026-11-23T23:02:43.069Z"
+    },
+    "lesson_4_1_sA": {
+      "hash": "775e4885a5f841bf",
+      "bytes": 137900,
+      "voiceKey": "male_historian",
+      "badge": "Joseph Goebbels",
+      "updatedAt": "2026-11-23T23:02:44.229Z"
+    },
+    "lesson_4_1_sD": {
+      "hash": "2fef1918e8963e69",
+      "bytes": 231692,
+      "voiceKey": "male_historian",
+      "badge": "The Law for the Prevention of He…",
+      "updatedAt": "2026-11-23T23:02:44.878Z"
+    },
+    "lesson_4_1_sE": {
+      "hash": "c75294baaba74c25",
+      "bytes": 236780,
+      "voiceKey": "male_historian",
+      "badge": "Secret Sopade Intelligence Repor…",
+      "updatedAt": "2026-11-23T23:02:45.569Z"
+    },
+    "lesson_4_2_sA": {
+      "hash": "5f376510e5fb7a69",
+      "bytes": 203468,
+      "voiceKey": "male_historian",
+      "badge": "The First Decree for the Impleme…",
+      "updatedAt": "2026-11-23T23:02:46.837Z"
+    },
+    "lesson_4_2_sB": {
+      "hash": "7b43a7a56a08ffab",
+      "bytes": 178892,
+      "voiceKey": "male_historian",
+      "badge": "Adolf Hitler Addressing 54",
+      "updatedAt": "2026-11-23T23:02:47.387Z"
+    },
+    "lesson_1_4_sC": {
+      "hash": "eb434e957f36a774",
+      "bytes": 136268,
+      "voiceKey": "male_historian",
+      "badge": "Walter Gropius",
+      "updatedAt": "2026-11-23T23:02:49.122Z"
+    },
+    "lesson_2_1_sA": {
+      "hash": "e6c1427acfc63e61",
+      "bytes": 140012,
+      "voiceKey": "male_historian",
+      "badge": "Anton Drexler",
+      "updatedAt": "2026-11-23T23:02:50.268Z"
+    },
+    "lesson_2_1_sB": {
+      "hash": "4e5e5950ab840806",
+      "bytes": 231020,
+      "voiceKey": "male_historian",
+      "badge": "The 25-Point Programme of the NS…",
+      "updatedAt": "2026-11-23T23:02:50.900Z"
+    },
+    "lesson_2_1_sD": {
+      "hash": "96c4f74193e724a5",
+      "bytes": 218828,
+      "voiceKey": "male_historian",
+      "badge": "Bavarian State Police Intelligen…",
+      "updatedAt": "2026-11-23T23:02:51.509Z"
+    },
+    "lesson_2_2_sA": {
+      "hash": "4f5c5702cd51744d",
+      "bytes": 143180,
+      "voiceKey": "male_historian",
+      "badge": "State Commissioner Gustav von Ka…",
+      "updatedAt": "2026-11-23T23:02:52.612Z"
+    },
+    "lesson_2_2_sC": {
+      "hash": "5f5c2f904266b091",
+      "bytes": 223532,
+      "voiceKey": "male_historian",
+      "badge": "Hitler's Closing Speech at the M…",
+      "updatedAt": "2026-11-23T23:02:53.179Z"
+    },
+    "lesson_1_1_sC": {
+      "hash": "eff810a2c9567e38",
+      "bytes": 146540,
+      "voiceKey": "male_historian",
+      "badge": "Proclamation of the Republic by…",
+      "updatedAt": "2026-11-23T23:02:53.906Z"
+    },
+    "lesson_1_1_sD": {
+      "hash": "3cbb6078d8c5c38b",
+      "bytes": 164300,
+      "voiceKey": "male_historian",
+      "badge": "Reich President Friedrich Ebert'…",
+      "updatedAt": "2026-11-23T23:02:54.328Z"
+    },
+    "lesson_1_3_sA": {
+      "hash": "220281ca75b76f4d",
+      "bytes": 129452,
+      "voiceKey": "male_historian",
+      "badge": "Chancellor Gustav Stresemann’s D…",
+      "updatedAt": "2026-11-23T23:02:56.057Z"
+    },
+    "lesson_1_3_sC": {
+      "hash": "e37fdb83faf44b6a",
+      "bytes": 197132,
+      "voiceKey": "male_historian",
+      "badge": "Gustav Stresemann's Confidential…",
+      "updatedAt": "2026-11-23T23:02:56.530Z"
+    },
+    "lesson_1_3_sD": {
+      "hash": "327ca6d77d318ea3",
+      "bytes": 140300,
+      "voiceKey": "male_historian",
+      "badge": "Gustav Stresemann’s Keynote Addr…",
+      "updatedAt": "2026-11-23T23:02:56.976Z"
+    },
+    "lesson_3_1_sA": {
+      "hash": "05384c1c47e94e16",
+      "bytes": 258668,
+      "voiceKey": "male_historian",
+      "badge": "The Reichstag Fire Emergency Dec…",
+      "updatedAt": "2026-11-23T23:02:59.817Z"
+    },
+    "lesson_3_1_sC": {
+      "hash": "2228cf175eedbfa4",
+      "bytes": 116108,
+      "voiceKey": "male_historian",
+      "badge": "The Law Against the Establishmen…",
+      "updatedAt": "2026-11-23T23:03:00.271Z"
+    },
+    "lesson_3_1_sD": {
+      "hash": "10cfdabb23dfcb6a",
+      "bytes": 183980,
+      "voiceKey": "male_historian",
+      "badge": "Adolf Hitler",
+      "updatedAt": "2026-11-23T23:03:00.781Z"
+    },
+    "lesson_3_1_sE": {
+      "hash": "324c858a037c4489",
+      "bytes": 150188,
+      "voiceKey": "male_historian",
+      "badge": "The Law on the Swearing of Soldi…",
+      "updatedAt": "2026-11-23T23:03:01.324Z"
+    },
+    "lesson_3_2_sA": {
+      "hash": "c9833f1b44144c34",
+      "bytes": 138188,
+      "voiceKey": "male_historian",
+      "badge": "Munich Police President Heinrich…",
+      "updatedAt": "2026-11-23T23:03:02.443Z"
+    },
+    "lesson_3_2_sC": {
+      "hash": "a7250f172e36fd6b",
+      "bytes": 224588,
+      "voiceKey": "male_historian",
+      "badge": "Law Establishing the People's Co…",
+      "updatedAt": "2026-11-23T23:03:03.044Z"
+    },
+    "lesson_2_2_sD": {
+      "hash": "e1dd1972a88a6245",
+      "bytes": 146540,
+      "voiceKey": "male_historian",
+      "badge": "Joseph Goebbels",
+      "updatedAt": "2026-11-23T23:03:04.317Z"
+    },
+    "lesson_2_2_sE": {
+      "hash": "7239d642034f5022",
+      "bytes": 211820,
+      "voiceKey": "male_historian",
+      "badge": "Official Reichstag Election Stat…",
+      "updatedAt": "2026-11-23T23:03:04.865Z"
+    },
+    "lesson_2_3_sA": {
+      "hash": "122e394667024d25",
+      "bytes": 153452,
+      "voiceKey": "male_historian",
+      "badge": "Report of the Berlin Police Pres…",
+      "updatedAt": "2026-11-23T23:03:06.065Z"
+    },
+    "lesson_2_4_sA": {
+      "hash": "3af2759e1ca7a67f",
+      "bytes": 216428,
+      "voiceKey": "male_historian",
+      "badge": "Reichstag Election Statistical R…",
+      "updatedAt": "2026-11-23T23:03:07.295Z"
+    },
+    "lesson_2_4_sC": {
+      "hash": "4ce30e2f1df6f8e1",
+      "bytes": 191948,
+      "voiceKey": "male_historian",
+      "badge": "Franz von Papen's Boast to Conse…",
+      "updatedAt": "2026-11-23T23:03:07.862Z"
+    },
+    "lesson_2_4_ep3_sB": {
+      "hash": "f9e26cb281d7f081",
+      "bytes": 278348,
+      "voiceKey": "male_historian",
+      "badge": "Official Reichstag Election Stat…",
+      "updatedAt": "2026-11-23T23:03:08.507Z"
+    },
+    "lesson_4_4_sC": {
+      "hash": "1143b9f48b275fb4",
+      "bytes": 265868,
+      "voiceKey": "male_historian",
+      "badge": "The Reich Citizenship Law & Law…",
+      "updatedAt": "2026-11-23T23:03:10.206Z"
+    },
+    "lesson_4_4_sE": {
+      "hash": "025a63a9260178ff",
+      "bytes": 252908,
+      "voiceKey": "male_historian",
+      "badge": "British Consul-General Report fr…",
+      "updatedAt": "2026-11-23T23:03:10.816Z"
+    },
+    "lesson_4_2_sE": {
+      "hash": "cc8bff8b5dcb66d9",
+      "bytes": 228908,
+      "voiceKey": "male_historian",
+      "badge": "Secret Sopade Report on Youth Di…",
+      "updatedAt": "2026-11-23T23:03:14.664Z"
+    },
+    "lesson_4_3_sA": {
+      "hash": "cf881d7e241196bf",
+      "bytes": 199628,
+      "voiceKey": "male_historian",
+      "badge": "The Reich Labour Service Law",
+      "updatedAt": "2026-11-23T23:03:15.907Z"
+    },
+    "lesson_4_3_sC": {
+      "hash": "f773985cbe76862b",
+      "bytes": 289388,
+      "voiceKey": "male_historian",
+      "badge": "Official Nazi Unemployment Figur…",
+      "updatedAt": "2026-11-23T23:03:16.645Z"
+    },
+    "lesson_4_3_ep3_sB": {
+      "hash": "2e107a3a0664092e",
+      "bytes": 184940,
+      "voiceKey": "male_historian",
+      "badge": "Official German Labour Front (DA…",
+      "updatedAt": "2026-11-23T23:03:17.258Z"
+    },
+    "lesson_4_3_ep3_sC": {
+      "hash": "70c28ecf81318c70",
+      "bytes": 176300,
+      "voiceKey": "male_historian",
+      "badge": "Underground Sopade Report on Ger…",
+      "updatedAt": "2026-11-23T23:03:17.800Z"
+    },
+    "lesson_4_4_sA": {
+      "hash": "90c11a6df63f0069",
+      "bytes": 146828,
+      "voiceKey": "male_historian",
+      "badge": "Excerpt from an Official Seconda…",
+      "updatedAt": "2026-11-23T23:03:18.893Z"
+    },
+    "lesson_3_2_sD": {
+      "hash": "7ba1c1851779e0ea",
+      "bytes": 213068,
+      "voiceKey": "male_historian",
+      "badge": "Pope Pius XI",
+      "updatedAt": "2026-11-23T23:03:19.780Z"
+    },
+    "lesson_3_2_sE": {
+      "hash": "42bba50ab7c6972f",
+      "bytes": 289388,
+      "voiceKey": "male_historian",
+      "badge": "The Barmen Theological Declarati…",
+      "updatedAt": "2026-11-23T23:03:20.469Z"
+    },
+    "lesson_3_3_sA": {
+      "hash": "5408b813ef82c10a",
+      "bytes": 128108,
+      "voiceKey": "male_historian",
+      "badge": "Joseph Goebbels",
+      "updatedAt": "2026-11-23T23:03:21.593Z"
+    },
+    "lesson_3_3_sC": {
+      "hash": "178b427034164d0c",
+      "bytes": 226028,
+      "voiceKey": "male_historian",
+      "badge": "William L. Shirer",
+      "updatedAt": "2026-11-23T23:03:22.200Z"
+    },
+    "lesson_3_4_sA": {
+      "hash": "6a6fb4f40edff7ae",
+      "bytes": 289868,
+      "voiceKey": "male_historian",
+      "badge": "Sopade (SPD in Exile) Undergroun…",
+      "updatedAt": "2026-11-23T23:03:23.575Z"
+    },
+    "lesson_3_4_sC": {
+      "hash": "aeb73800f25f4c6c",
+      "bytes": 259052,
+      "voiceKey": "male_historian",
+      "badge": "Gestapo Situation Report on the…",
+      "updatedAt": "2026-11-23T23:03:24.207Z"
+    },
+    "lesson_3_4_ep3_sC": {
+      "hash": "7e8d9dfc1e9a4951",
+      "bytes": 208748,
+      "voiceKey": "female_historian",
+      "badge": "Gestapo Situation Report on the…",
+      "updatedAt": "2026-11-23T23:09:19.758Z"
+    },
+    "lesson_4_1_sB": {
+      "hash": "6b12ae38189a75d6",
+      "bytes": 190220,
+      "voiceKey": "female_historian",
+      "badge": "The Law for the Encouragement of…",
+      "updatedAt": "2026-11-23T23:09:20.316Z"
+    },
+    "lesson_4_1_sC": {
+      "hash": "9d7b7e030e2bca8b",
+      "bytes": 175532,
+      "voiceKey": "female_historian",
+      "badge": "Gertrud Scholtz-Klink Addressing…",
+      "updatedAt": "2026-11-23T23:09:20.833Z"
+    },
+    "lesson_4_2_sD": {
+      "hash": "0c392867be8d9f11",
+      "bytes": 237260,
+      "voiceKey": "female_historian",
+      "badge": "Nazi Mathematics Exercise Book f…",
+      "updatedAt": "2026-11-23T23:09:21.452Z"
+    },
+    "lesson_4_3_sB": {
+      "hash": "122e9e75b46d8933",
+      "bytes": 162188,
+      "voiceKey": "female_historian",
+      "badge": "Dr. Fritz Todt (1936)",
+      "updatedAt": "2026-11-23T23:09:21.963Z"
+    },
+    "lesson_4_3_sD": {
+      "hash": "8aecf90c9ba7b9e6",
+      "bytes": 169772,
+      "voiceKey": "female_historian",
+      "badge": "Robert Ley Proclamation on the D…",
+      "updatedAt": "2026-11-23T23:09:22.452Z"
+    },
+    "lesson_4_4_sD": {
+      "hash": "526872c418e7b74e",
+      "bytes": 256940,
+      "voiceKey": "female_historian",
+      "badge": "Reinhard Heydrich's Secret Instr…",
+      "updatedAt": "2026-11-23T23:09:23.039Z"
+    },
+    "lesson_1_4_ep3_sC": {
+      "hash": "06fb63ef36c38a94",
+      "bytes": 174572,
+      "voiceKey": "female_historian",
+      "badge": "Election Appeal of the DNVP Nati…",
+      "updatedAt": "2026-11-23T23:09:30.168Z"
+    },
+    "lesson_2_3_sB": {
+      "hash": "53566f52795f34e4",
+      "bytes": 259532,
+      "voiceKey": "female_historian",
+      "badge": "Chancellor Heinrich Brüning's Em…",
+      "updatedAt": "2026-11-23T23:09:30.839Z"
+    },
+    "lesson_2_3_sE": {
+      "hash": "e5b35881a9c7e7ed",
+      "bytes": 272972,
+      "voiceKey": "female_historian",
+      "badge": "Melita Maschmann",
+      "updatedAt": "2026-11-23T23:09:31.533Z"
+    },
+    "lesson_3_1_sB": {
+      "hash": "731e8a4963cdad23",
+      "bytes": 191180,
+      "voiceKey": "female_historian",
+      "badge": "Otto Wels",
+      "updatedAt": "2026-11-23T23:09:32.080Z"
+    },
+    "lesson_3_2_sB": {
+      "hash": "2cc3e1ec36e5372d",
+      "bytes": 284492,
+      "voiceKey": "female_historian",
+      "badge": "Gestapo Investigation Dossier on…",
+      "updatedAt": "2026-11-23T23:09:32.867Z"
+    },
+    "lesson_3_3_sD": {
+      "hash": "ad84ba219497fe9e",
+      "bytes": 167468,
+      "voiceKey": "female_historian",
+      "badge": "Foreign Correspondent Report on…",
+      "updatedAt": "2026-11-23T23:09:33.388Z"
+    },
+    "lesson_3_3_ep3_sC": {
+      "hash": "cfc24152a7c3ed61",
+      "bytes": 272780,
+      "voiceKey": "female_historian",
+      "badge": "Gestapo Investigation Dossier on…",
+      "updatedAt": "2026-11-23T23:09:34.066Z"
+    },
+    "lesson_3_4_sD": {
+      "hash": "6029bd11aceefeaf",
+      "bytes": 302252,
+      "voiceKey": "female_historian",
+      "badge": "Secret SD Intelligence Report on…",
+      "updatedAt": "2026-11-23T23:09:34.776Z"
+    },
+    "lesson_1_2_sD": {
+      "hash": "0f0eee852d746ecf",
+      "bytes": 153740,
+      "voiceKey": "female_historian",
+      "badge": "Chancellor Joseph Wirth’s Reichs…",
+      "updatedAt": "2026-11-23T23:09:44.000Z"
+    },
+    "lesson_1_4_sB": {
+      "hash": "cf6ecf456a9d7c8d",
+      "bytes": 249932,
+      "voiceKey": "female_historian",
+      "badge": "Alice Rühle-Gerstel",
+      "updatedAt": "2026-11-23T23:09:44.653Z"
     }
   }
 }

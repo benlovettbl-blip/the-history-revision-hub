@@ -2326,7 +2326,9 @@
       "hero_image": "/images/upgraded/ks3-early/fbe_l1_banner_fort_william_calcutta_1754.jpg",
       "banner_position": "center 35%",
       "enquiryQuestion": "How did a London trading company seize military control of Mughal Bengal?",
-      "banner_caption": "Fort William in the Kingdom of Bengal, Belonging to the East India Company of England (Jan van Ryne, London, 1754): Armed Indiamen moored before the fortified Calcutta trading post that became the launchpad for Company rule across Bengal."
+      "banner_caption": "Fort William in the Kingdom of Bengal, Belonging to the East India Company of England (Jan van Ryne, London, 1754): Armed Indiamen moored before the fortified Calcutta trading post that became the launchpad for Company rule across Bengal.",
+      "prologue_audio": "/audio/lessons/first_british_empire/lesson_1_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · Historian"
     },
     {
       "id": "lesson_2",
@@ -4389,7 +4391,9 @@
       "hero_image": "/images/upgraded/ks3-early/fbe_l2_banner_biard_slave_trade_1833.jpg",
       "banner_position": "center 40%",
       "enquiryQuestion": "How did the transatlantic slave trade operate, and how was it challenged?",
-      "banner_caption": "The Slave Trade (Slaves on the West Coast of Africa, François-Auguste Biard, c. 1833, Wilberforce House Museum): Captive Africans chained, inspected, and branded on the coast before forced embarkation on the Middle Passage."
+      "banner_caption": "The Slave Trade (Slaves on the West Coast of Africa, François-Auguste Biard, c. 1833, Wilberforce House Museum): Captive Africans chained, inspected, and branded on the coast before forced embarkation on the Middle Passage.",
+      "prologue_audio": "/audio/lessons/first_british_empire/lesson_2_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · Historian"
     },
     {
       "id": "lesson_3",
@@ -6278,7 +6282,9 @@
       "hero_image": "/images/upgraded/ks3-early/fbe_l3_banner_roaring_river_jamaica_1778.jpg",
       "banner_position": "center 35%",
       "enquiryQuestion": "How did enslaved Africans and Queen Nanny resist plantation slavery in Jamaica?",
-      "banner_caption": "A View in the Island of Jamaica, of the Spring-Head of Roaring River on the Estate of William Beckford (engraved by James Mason after George Robertson, 1778): Lush tropical mountain valleys bordering the sugar estates of eighteenth-century Jamaica."
+      "banner_caption": "A View in the Island of Jamaica, of the Spring-Head of Roaring River on the Estate of William Beckford (engraved by James Mason after George Robertson, 1778): Lush tropical mountain valleys bordering the sugar estates of eighteenth-century Jamaica.",
+      "prologue_audio": "/audio/lessons/first_british_empire/lesson_3_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · Historian"
     },
     {
       "id": "lesson_4",
@@ -8205,7 +8211,9 @@
       "hero_image": "/images/upgraded/ks3-early/fbe_l4_banner_revere_boston_landing_1768.jpg",
       "banner_position": "center 45%",
       "enquiryQuestion": "Why did British taxes push the Thirteen Colonies toward open rebellion by 1773?",
-      "banner_caption": "A View of Part of the Town of Boston in New-England and Brittish Ships of War Landing Their Troops! (Paul Revere, 1768–1770): Royal Navy warships landing redcoat regiments along Boston’s Long Wharf to enforce imperial customs duties."
+      "banner_caption": "A View of Part of the Town of Boston in New-England and Brittish Ships of War Landing Their Troops! (Paul Revere, 1768–1770): Royal Navy warships landing redcoat regiments along Boston’s Long Wharf to enforce imperial customs duties.",
+      "prologue_audio": "/audio/lessons/first_british_empire/lesson_4_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · Historian"
     },
     {
       "id": "lesson_5",
@@ -10068,7 +10076,9 @@
       "hero_image": "/images/upgraded/ks3-early/fbe_l5_banner_washington_crossing_delaware.jpg",
       "banner_position": "center 40%",
       "enquiryQuestion": "How did the American Revolution win independence while leaving slavery intact?",
-      "banner_caption": "Washington Crossing the Delaware (Emanuel Leutze, 1851, Metropolitan Museum of Art): General George Washington leading Continental troops across the ice-choked Delaware River on Christmas night 1776 during the War of American Independence."
+      "banner_caption": "Washington Crossing the Delaware (Emanuel Leutze, 1851, Metropolitan Museum of Art): General George Washington leading Continental troops across the ice-choked Delaware River on Christmas night 1776 during the War of American Independence.",
+      "prologue_audio": "/audio/lessons/first_british_empire/lesson_5_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · Historian"
     }
   ],
   "homepage_background": "/images/first_british_empire/battle_of_plassey_1757.jpg",

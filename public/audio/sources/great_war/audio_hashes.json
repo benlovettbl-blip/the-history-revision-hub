@@ -133,6 +133,20 @@
       "voiceKey": "ww1_german_voice",
       "badge": "Admiral von Müller Diary (1912)",
       "updatedAt": "2026-11-19T22:37:10.444Z"
+    },
+    "root_assessments_3_s2": {
+      "hash": "9c49786e86bdb948",
+      "bytes": 73100,
+      "voiceKey": "male_historian",
+      "badge": "Living Archive · Primary Record",
+      "updatedAt": "2026-11-23T23:07:47.082Z"
+    },
+    "root_assessments_3_s1": {
+      "hash": "d3a307d7723bc091",
+      "bytes": 126188,
+      "voiceKey": "female_historian",
+      "badge": "Living Archive · Primary Record",
+      "updatedAt": "2026-11-23T23:12:14.692Z"
     }
   }
 }

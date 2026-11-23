@@ -233,8 +233,9 @@ export function buildUnitLessonTimingsJson(rootDir, unitId) {
   for (const lesson of lessons) {
     const prologueKey = `${lesson.id}_prologue`;
     const prologueMp3 = path.join(audioDir, `${prologueKey}.mp3`);
-    if (lesson.prologue && fs.existsSync(prologueMp3)) {
-      timings[prologueKey] = alignSentencesToMp3(prologueMp3, lesson.prologue);
+    const rawPrologue = lesson.prologue || lesson.hook_text || lesson.blurb || '';
+    if (rawPrologue && fs.existsSync(prologueMp3)) {
+      timings[prologueKey] = alignSentencesToMp3(prologueMp3, rawPrologue);
     }
 
     const blocks = Array.isArray(lesson.narrative_blocks) ? lesson.narrative_blocks : [];

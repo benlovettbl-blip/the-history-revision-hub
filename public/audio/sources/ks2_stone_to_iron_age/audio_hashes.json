@@ -1,0 +1,173 @@
+{
+  "version": 1,
+  "clips": {
+    "lesson_1_sA": {
+      "hash": "cafcf5a0afd49404",
+      "bytes": 55148,
+      "voiceKey": "male_historian",
+      "badge": "Tear-Drop Chipped Flint Handaxe…",
+      "updatedAt": "2026-11-23T23:07:54.435Z"
+    },
+    "lesson_1_sC": {
+      "hash": "142425aa474f4857",
+      "bytes": 59372,
+      "voiceKey": "male_historian",
+      "badge": "10",
+      "updatedAt": "2026-11-23T23:07:54.832Z"
+    },
+    "lesson_2_sA": {
+      "hash": "6ba7fe465987f4b5",
+      "bytes": 55340,
+      "voiceKey": "male_historian",
+      "badge": "Stone Box Beds",
+      "updatedAt": "2026-11-23T23:08:27.794Z"
+    },
+    "lesson_2_sC": {
+      "hash": "5f0d94ac9d351bef",
+      "bytes": 58220,
+      "voiceKey": "male_historian",
+      "badge": "Curved Neolithic Flint Sickle Bl…",
+      "updatedAt": "2026-11-23T23:08:28.154Z"
+    },
+    "lesson_3_sA": {
+      "hash": "df52775ffeba74ce",
+      "bytes": 54092,
+      "voiceKey": "male_historian",
+      "badge": "1928 Aeroplane Photograph of Sto…",
+      "updatedAt": "2026-11-23T23:08:28.820Z"
+    },
+    "lesson_3_sC": {
+      "hash": "dcd694e7a69c7a22",
+      "bytes": 54572,
+      "voiceKey": "male_historian",
+      "badge": "Heavy Neolithic Flint Axehead fr…",
+      "updatedAt": "2026-11-23T23:08:29.133Z"
+    },
+    "lesson_4_sA": {
+      "hash": "0e8b095ff584bd78",
+      "bytes": 54380,
+      "voiceKey": "male_historian",
+      "badge": "Decorated Bell Beaker Clay Pots…",
+      "updatedAt": "2026-11-23T23:08:29.845Z"
+    },
+    "lesson_4_sC": {
+      "hash": "4774ec697c2ff5df",
+      "bytes": 50348,
+      "voiceKey": "male_historian",
+      "badge": "Hammered Gold Crescent Neck Coll…",
+      "updatedAt": "2026-11-23T23:08:36.548Z"
+    },
+    "lesson_5_sA": {
+      "hash": "c79f8e94593224ce",
+      "bytes": 59372,
+      "voiceKey": "male_historian",
+      "badge": "Bronze Axes with Wooden Handles…",
+      "updatedAt": "2026-11-23T23:08:37.281Z"
+    },
+    "lesson_5_sC": {
+      "hash": "fd85513244b1c428",
+      "bytes": 59180,
+      "voiceKey": "male_historian",
+      "badge": "3",
+      "updatedAt": "2026-11-23T23:08:37.658Z"
+    },
+    "lesson_6_sA": {
+      "hash": "63f95b5b143548d9",
+      "bytes": 63212,
+      "voiceKey": "male_historian",
+      "badge": "Spinning Iron Age Rotary Quern S…",
+      "updatedAt": "2026-11-23T23:08:38.412Z"
+    },
+    "lesson_6_sC": {
+      "hash": "eeb4cdb0d678ed8e",
+      "bytes": 60812,
+      "voiceKey": "male_historian",
+      "badge": "The Snettisham Great Torc",
+      "updatedAt": "2026-11-23T23:08:38.729Z"
+    },
+    "lesson_4_sD": {
+      "hash": "ae5a398e606d2c5c",
+      "bytes": 64940,
+      "voiceKey": "female_historian",
+      "badge": "Gold Breastplate Lozenge from Bu…",
+      "updatedAt": "2026-11-23T23:11:52.639Z"
+    },
+    "lesson_5_sB": {
+      "hash": "d1fff4655fc36f15",
+      "bytes": 55532,
+      "voiceKey": "female_historian",
+      "badge": "Fire-Scorched Clay Cooking Pot f…",
+      "updatedAt": "2026-11-23T23:11:52.953Z"
+    },
+    "lesson_5_sD": {
+      "hash": "502e9c0cfd73c658",
+      "bytes": 57068,
+      "voiceKey": "female_historian",
+      "badge": "Circular Sheet-Bronze Shield Pla…",
+      "updatedAt": "2026-11-23T23:11:53.265Z"
+    },
+    "lesson_6_sB": {
+      "hash": "a3bf0cec241d59fd",
+      "bytes": 67148,
+      "voiceKey": "female_historian",
+      "badge": "The Waterloo Bridge Bronze Horne…",
+      "updatedAt": "2026-11-23T23:11:53.635Z"
+    },
+    "lesson_6_sD": {
+      "hash": "1e52efa396f51aa5",
+      "bytes": 59468,
+      "voiceKey": "female_historian",
+      "badge": "Iron Age British Gold Stater Coi…",
+      "updatedAt": "2026-11-23T23:11:54.027Z"
+    },
+    "lesson_1_sB": {
+      "hash": "80f09abcfecf05ad",
+      "bytes": 59468,
+      "voiceKey": "female_historian",
+      "badge": "Skeleton and Curved Tusks of a W…",
+      "updatedAt": "2026-11-23T23:12:07.802Z"
+    },
+    "lesson_1_sD": {
+      "hash": "91b9653bbcb6b6fa",
+      "bytes": 57932,
+      "voiceKey": "female_historian",
+      "badge": "Carved Red-Deer Antler Headdress…",
+      "updatedAt": "2026-11-23T23:12:08.121Z"
+    },
+    "lesson_2_sB": {
+      "hash": "726671a205e8a85b",
+      "bytes": 56012,
+      "voiceKey": "female_historian",
+      "badge": "Ground-and-Polished Neolithic St…",
+      "updatedAt": "2026-11-23T23:12:08.482Z"
+    },
+    "lesson_2_sD": {
+      "hash": "99c54afbf594b8e0",
+      "bytes": 62348,
+      "voiceKey": "female_historian",
+      "badge": "Hand-Coiled Clay Bowls",
+      "updatedAt": "2026-11-23T23:12:08.861Z"
+    },
+    "lesson_3_sB": {
+      "hash": "edd9119cdbaa421a",
+      "bytes": 64268,
+      "voiceKey": "female_historian",
+      "badge": "Reconstructed Stonehenge Builder…",
+      "updatedAt": "2026-11-23T23:12:09.210Z"
+    },
+    "lesson_3_sD": {
+      "hash": "1451dbde0da04881",
+      "bytes": 58508,
+      "voiceKey": "female_historian",
+      "badge": "Giant Standing Stone at Nearby A…",
+      "updatedAt": "2026-11-23T23:12:09.518Z"
+    },
+    "lesson_4_sB": {
+      "hash": "aa402a3895bee4b8",
+      "bytes": 56780,
+      "voiceKey": "female_historian",
+      "badge": "Two-Piece Mould for Casting Bron…",
+      "updatedAt": "2026-11-23T23:12:09.949Z"
+    }
+  }
+}

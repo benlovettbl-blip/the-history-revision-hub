@@ -1,0 +1,166 @@
+{
+  "version": 1,
+  "clips": {
+    "lesson_1_1_sD": {
+      "hash": "88731c9c2faf51dd",
+      "bytes": 116492,
+      "voiceKey": "male_historian",
+      "badge": "Royal Commission of the Peace an…",
+      "updatedAt": "2026-11-23T23:02:27.616Z"
+    },
+    "lesson_1_2_sC": {
+      "hash": "6a72d7067eef6c22",
+      "bytes": 110348,
+      "voiceKey": "male_historian",
+      "badge": "Sir William Cecil's Confidential…",
+      "updatedAt": "2026-11-23T23:02:27.986Z"
+    },
+    "lesson_1_2_sE": {
+      "hash": "d182ec680df1151c",
+      "bytes": 93740,
+      "voiceKey": "male_historian",
+      "badge": "Papal Dispatch of Pope Pius IV C…",
+      "updatedAt": "2026-11-23T23:02:28.365Z"
+    },
+    "lesson_1_3_sB": {
+      "hash": "fae0df5d90ea8a0c",
+      "bytes": 116300,
+      "voiceKey": "male_historian",
+      "badge": "Chronicle Account of Archbishop…",
+      "updatedAt": "2026-11-23T23:02:28.819Z"
+    },
+    "lesson_1_3_sD": {
+      "hash": "245235d2f9f71798",
+      "bytes": 111788,
+      "voiceKey": "male_historian",
+      "badge": "Father William Allen on Founding…",
+      "updatedAt": "2026-11-23T23:02:29.198Z"
+    },
+    "lesson_1_3_sE": {
+      "hash": "b6d2c7f2000ecab2",
+      "bytes": 121100,
+      "voiceKey": "male_historian",
+      "badge": "Sir William Cecil's Privy Counci…",
+      "updatedAt": "2026-11-23T23:02:29.656Z"
+    },
+    "lesson_2_2_sE": {
+      "hash": "c211cf95ccd41122",
+      "bytes": 119948,
+      "voiceKey": "male_historian",
+      "badge": "The Duke of Parma's Dispatch to…",
+      "updatedAt": "2026-11-23T23:02:30.106Z"
+    },
+    "lesson_2_4_sD": {
+      "hash": "21cd50ae8b407514",
+      "bytes": 211340,
+      "voiceKey": "male_historian",
+      "badge": "Duke of Medina Sidonia's Post-Ac…",
+      "updatedAt": "2026-11-23T23:02:30.694Z"
+    },
+    "lesson_3_1_sB": {
+      "hash": "ba81ffd46f5be541",
+      "bytes": 110348,
+      "voiceKey": "male_historian",
+      "badge": "Roger Ascham on Cruelty and the…",
+      "updatedAt": "2026-11-23T23:02:33.919Z"
+    },
+    "lesson_3_1_sC": {
+      "hash": "17fa46e845aba277",
+      "bytes": 111692,
+      "voiceKey": "male_historian",
+      "badge": "Register of Oxford University St…",
+      "updatedAt": "2026-11-23T23:02:34.321Z"
+    },
+    "lesson_3_2_sA": {
+      "hash": "d0c84809f2f75f27",
+      "bytes": 103340,
+      "voiceKey": "male_historian",
+      "badge": "Sir William Cecil's Parliamentar…",
+      "updatedAt": "2026-11-23T23:02:34.710Z"
+    },
+    "lesson_3_2_sB": {
+      "hash": "12e5016aea46c46d",
+      "bytes": 120812,
+      "voiceKey": "male_historian",
+      "badge": "Contemporary Complaint on the Ev…",
+      "updatedAt": "2026-11-23T23:02:35.114Z"
+    },
+    "lesson_3_2_sC": {
+      "hash": "2ed7c9641c65bd46",
+      "bytes": 164012,
+      "voiceKey": "male_historian",
+      "badge": "William Harrison on the Three Ca…",
+      "updatedAt": "2026-11-23T23:02:35.638Z"
+    },
+    "lesson_3_3_sE": {
+      "hash": "2554587b167a02d1",
+      "bytes": 135788,
+      "voiceKey": "male_historian",
+      "badge": "Spanish Ambassador Bernardino de…",
+      "updatedAt": "2026-11-23T23:02:36.054Z"
+    },
+    "lesson_1_4_sD": {
+      "hash": "556ac6b5e0d4c0fd",
+      "bytes": 125132,
+      "voiceKey": "female_historian",
+      "badge": "The Disputed Casket Letters Prod…",
+      "updatedAt": "2026-11-23T23:08:48.991Z"
+    },
+    "lesson_1_4_sE": {
+      "hash": "f2ef2285b050e6b9",
+      "bytes": 117548,
+      "voiceKey": "female_historian",
+      "badge": "Sir Ralph Sadler's Confidential…",
+      "updatedAt": "2026-11-23T23:08:49.413Z"
+    },
+    "lesson_2_3_sB": {
+      "hash": "2714932aa52e5d01",
+      "bytes": 123020,
+      "voiceKey": "female_historian",
+      "badge": "Terms of the Anglo-Dutch Treaty…",
+      "updatedAt": "2026-11-23T23:08:51.599Z"
+    },
+    "lesson_2_3_sC": {
+      "hash": "2ae4fd613e441e6b",
+      "bytes": 128588,
+      "voiceKey": "female_historian",
+      "badge": "Queen Elizabeth I’s Furious Lett…",
+      "updatedAt": "2026-11-23T23:08:52.066Z"
+    },
+    "lesson_2_3_sD": {
+      "hash": "53f9e1f599297282",
+      "bytes": 138572,
+      "voiceKey": "female_historian",
+      "badge": "Sir Francis Drake’s Dispatch to…",
+      "updatedAt": "2026-11-23T23:08:52.517Z"
+    },
+    "lesson_1_1_sC": {
+      "hash": "91acdce57c7710ef",
+      "bytes": 142892,
+      "voiceKey": "female_historian",
+      "badge": "John Knox (1558)",
+      "updatedAt": "2026-11-23T23:08:55.205Z"
+    },
+    "lesson_1_3_sA": {
+      "hash": "fb4160d3c75bb62c",
+      "bytes": 98540,
+      "voiceKey": "female_historian",
+      "badge": "Bishop John Jewel on the Crucifi…",
+      "updatedAt": "2026-11-23T23:08:56.691Z"
+    },
+    "lesson_1_4_sC": {
+      "hash": "fd0c9af7a99c9f58",
+      "bytes": 123308,
+      "voiceKey": "female_historian",
+      "badge": "The Deed of Abdication Extorted…",
+      "updatedAt": "2026-11-23T23:08:57.703Z"
+    },
+    "lesson_3_2_sE": {
+      "hash": "1cfb96a8c794e5b6",
+      "bytes": 255980,
+      "voiceKey": "female_historian",
+      "badge": "The Elizabethan Poor Law Statute…",
+      "updatedAt": "2026-11-23T23:09:42.370Z"
+    }
+  }
+}

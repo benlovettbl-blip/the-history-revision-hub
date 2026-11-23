@@ -803,7 +803,9 @@ export default {
               "teacher_notes": {
                 "hinge_question": "Would Harold have won at Hastings if Harald Hardrada had not invaded Yorkshire three weeks earlier?",
                 "source_context": "On 25 September 1066, Harold surprised Hardrada's army at Stamford Bridge, winning a total victory but exhausting his elite troops. **Hinge Question:** Would Harold have won at Hastings if Harald Hardrada had not invaded Yorkshire three weeks earlier?"
-              }
+              },
+              "studio_audio": "/audio/sources/medieval_england/lesson_1_sC.mp3",
+              "studio_voice_label": "The Anglo-Saxon Chronicle (Manus…"
             }
           ],
           "source": {
@@ -1590,7 +1592,9 @@ export default {
             "hinge_question": "Would Harold have won at Hastings if Harald Hardrada had not invaded Yorkshire three weeks earlier?",
             "source_context": "On 25 September 1066, Harold surprised Hardrada's army at Stamford Bridge, winning a total victory but exhausting his elite troops. **Hinge Question:** Would Harold have won at Hastings if Harald Hardrada had not invaded Yorkshire three weeks earlier?"
           },
-          "source_context": "On 25 September 1066, Harold surprised Hardrada's army at Stamford Bridge. Although a stunning Saxon victory, Harold lost many of his finest troops and faced immediate invasion from the south."
+          "source_context": "On 25 September 1066, Harold surprised Hardrada's army at Stamford Bridge. Although a stunning Saxon victory, Harold lost many of his finest troops and faced immediate invasion from the south.",
+          "studio_audio": "/audio/sources/medieval_england/lesson_1_sC.mp3",
+          "studio_voice_label": "The Anglo-Saxon Chronicle (Manus…"
         },
         {
           "id": "medieval_england_l1_src_d",
@@ -2216,7 +2220,9 @@ export default {
       "hero_image": "/images/upgraded/ks3-early/med_l1_banner_bayeux_scene50.jpg",
       "enquiry_question": "Why did William of Normandy win the Battle of Hastings in 1066?",
       "enquiryQuestion": "Why did William of Normandy win the Battle of Hastings in 1066?",
-      "banner_caption": "Bayeux Tapestry Scene 50: Messenger Reporting Duke William’s Army to King Harold before Hastings"
+      "banner_caption": "Bayeux Tapestry Scene 50: Messenger Reporting Duke William’s Army to King Harold before Hastings",
+      "prologue_audio": "/audio/lessons/medieval_england/lesson_1_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · Historian"
     },
     {
       "id": "lesson_2",
@@ -2489,7 +2495,9 @@ export default {
               "teacher_notes": {
                 "hinge_question": "Did William view the Harrying of the North as military necessity or personal vengeance?",
                 "source_context": "In the winter of 1069–1070, William ravaged Yorkshire, causing over 100,000 starvation deaths. **Hinge Question:** Did William view the Harrying of the North as military necessity or personal vengeance?"
-              }
+              },
+              "studio_audio": "/audio/sources/medieval_england/lesson_2_sC.mp3",
+              "studio_voice_label": "The Peterborough Chronicle on th…"
             }
           ],
           "content": "<span class=\"para-ref\">[2.2]</span> Where castles failed to deter rebellion, William deployed merciless state terror. In the winter of 1069, northern English <strong>Rebels Attack York</strong> and slaughtered the Norman garrison with Danish allies. William marched north in fury, ordering the systematic destruction of Yorkshire and the northern shires. Norman cavalry conducted total war by <strong>Burning Every Crop</strong>, slaughtering livestock, salting agricultural soil, and destroying farming tools. Chronicler Orderic Vitalis recorded that over <strong>100,000 Starve to Death</strong> in the ensuing famine, leaving vast areas entirely desolate and broken for over a generation.",
@@ -3366,7 +3374,9 @@ export default {
             "hinge_question": "Did William view the Harrying of the North as military necessity or personal vengeance?",
             "source_context": "In the winter of 1069–1070, William ravaged Yorkshire, causing over 100,000 starvation deaths. **Hinge Question:** Did William view the Harrying of the North as military necessity or personal vengeance?"
           },
-          "source_context": "In the winter of 1069–1070, following northern English revolts allied with the Danes, William marched north, systematically depopulating the countryside between the Humber and the Tees."
+          "source_context": "In the winter of 1069–1070, following northern English revolts allied with the Danes, William marched north, systematically depopulating the countryside between the Humber and the Tees.",
+          "studio_audio": "/audio/sources/medieval_england/lesson_2_sC.mp3",
+          "studio_voice_label": "The Peterborough Chronicle on th…"
         },
         {
           "id": "medieval_england_l2_src_d",
@@ -3992,7 +4002,9 @@ export default {
       "hero_image": "/images/upgraded/ks3-early/med_l2_banner_white_tower_thames.jpg",
       "enquiry_question": "How did fewer than 10,000 Normans control two million Anglo-Saxons?",
       "enquiryQuestion": "How did fewer than 10,000 Normans control two million Anglo-Saxons?",
-      "banner_caption": "The Norman stone keep of the White Tower rising behind Traitors’ Gate on the River Thames (begun c. 1078), built by William the Conqueror to awe and control London."
+      "banner_caption": "The Norman stone keep of the White Tower rising behind Traitors’ Gate on the River Thames (begun c. 1078), built by William the Conqueror to awe and control London.",
+      "prologue_audio": "/audio/lessons/medieval_england/lesson_2_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · Historian"
     },
     {
       "id": "lesson_3",
@@ -4265,7 +4277,9 @@ export default {
               "teacher_notes": {
                 "hinge_question": "Was Becket's transformation genuine religious conviction or calculated institutional defiance?",
                 "source_context": "In 1162, Becket embraced austerity and severed ties with royal governance. **Hinge Question:** Was Becket's transformation genuine religious conviction or calculated institutional defiance?"
-              }
+              },
+              "studio_audio": "/audio/sources/medieval_england/lesson_3_sB.mp3",
+              "studio_voice_label": "Edward Grim (1162)"
             }
           ],
           "content": "<span class=\"para-ref\">[3.2]</span> The moment Becket was consecrated Archbishop in June 1162, he underwent an astonishing personal and spiritual transformation. Becket immediately resigned the Chancellorship, <strong>Throws Off Silk Robes</strong> of worldly power, and adopted a life of severe monastic asceticism, wearing a <strong>Scratchy Goat Hairshirt</strong> infested with lice beneath his vestments and washing the feet of thirteen paupers daily. Becket declared himself <strong>Loyal Only to the Pope</strong> and the universal Catholic Church, setting up an unavoidable collision course with the Crown."
@@ -4295,7 +4309,9 @@ export default {
               "teacher_notes": {
                 "hinge_question": "Can a kingdom function effectively when a large portion of the population is immune from the monarch's criminal courts?",
                 "source_context": "Clause 3 demanded that criminal clergy face royal punishment rather than church penance. **Hinge Question:** Can a kingdom function effectively when a large portion of the population is immune from the monarch's criminal courts?"
-              }
+              },
+              "studio_audio": "/audio/sources/medieval_england/lesson_3_sC.mp3",
+              "studio_voice_label": "The Constitutions of Clarendon (…"
             }
           ],
           "content": "<span class=\"para-ref\">[3.3]</span> The flashpoint between King and Archbishop was the legal scandal of 'criminous clerks'. Anyone who could read a Latin psalm claimed 'benefit of clergy', meaning corrupt <strong>Priests Escaping Punishment</strong> for robbery, rape, and murder faced lenient church courts instead of royal gallows by simply <strong>Reading a Latin Verse</strong>. Henry summoned the barons and bishops to Clarendon in January 1164, issuing the Constitutions of Clarendon where the <strong>King Demands Royal Trials</strong> and punishment for defrocked priests. Becket furiously refused to seal the document.",
@@ -4958,7 +4974,9 @@ export default {
             "hinge_question": "Was Becket's transformation genuine religious conviction or calculated institutional defiance?",
             "source_context": "In 1162, Becket embraced austerity and severed ties with royal governance. **Hinge Question:** Was Becket's transformation genuine religious conviction or calculated institutional defiance?"
           },
-          "source_context": "In 1162, Henry forced Becket's election as Archbishop of Canterbury. Immediately upon consecration, Becket resigned the chancellorship and embraced monastic austerity."
+          "source_context": "In 1162, Henry forced Becket's election as Archbishop of Canterbury. Immediately upon consecration, Becket resigned the chancellorship and embraced monastic austerity.",
+          "studio_audio": "/audio/sources/medieval_england/lesson_3_sB.mp3",
+          "studio_voice_label": "Edward Grim (1162)"
         },
         {
           "id": "medieval_england_l3_src_c",
@@ -4979,7 +4997,9 @@ export default {
             "hinge_question": "Can a kingdom function effectively when a large portion of the population is immune from the monarch's criminal courts?",
             "source_context": "Clause 3 demanded that criminal clergy face royal punishment rather than church penance. **Hinge Question:** Can a kingdom function effectively when a large portion of the population is immune from the monarch's criminal courts?"
           },
-          "source_context": "In January 1164, Henry II convened nobles and bishops at Clarendon to codify royal customs and strip clergy of exemption from secular criminal law."
+          "source_context": "In January 1164, Henry II convened nobles and bishops at Clarendon to codify royal customs and strip clergy of exemption from secular criminal law.",
+          "studio_audio": "/audio/sources/medieval_england/lesson_3_sC.mp3",
+          "studio_voice_label": "The Constitutions of Clarendon (…"
         },
         {
           "id": "medieval_england_l3_src_d",
@@ -5605,7 +5625,9 @@ export default {
       "hero_image": "/images/upgraded/ks3-early/med_l3_banner_canterbury_cathedral.jpg",
       "enquiry_question": "Why did the quarrel between Henry II and Becket end in murder?",
       "enquiryQuestion": "Why did the quarrel between Henry II and Becket end in murder?",
-      "banner_caption": "Vaulted stone arcades of the Great Cloister at Canterbury Cathedral, adjoining the Martyrdom transept where four royal knights murdered Archbishop Thomas Becket in December 1170."
+      "banner_caption": "Vaulted stone arcades of the Great Cloister at Canterbury Cathedral, adjoining the Martyrdom transept where four royal knights murdered Archbishop Thomas Becket in December 1170.",
+      "prologue_audio": "/audio/lessons/medieval_england/lesson_3_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · Historian"
     },
     {
       "id": "lesson_4",
@@ -7214,7 +7236,9 @@ export default {
       "hero_image": "/images/upgraded/ks3-early/med_l4_banner_runnymede_magna_carta_island.jpg",
       "enquiry_question": "Was Magna Carta a victory for liberty or a barons’ power grab?",
       "enquiryQuestion": "Was Magna Carta a victory for liberty or a barons’ power grab?",
-      "banner_caption": "Henry B. Wimbush’s watercolour of Magna Carta Island at Runnymede (c. 1903), beside the Thames meadow where rebel barons forced King John to seal Magna Carta in June 1215."
+      "banner_caption": "Henry B. Wimbush’s watercolour of Magna Carta Island at Runnymede (c. 1903), beside the Thames meadow where rebel barons forced King John to seal Magna Carta in June 1215.",
+      "prologue_audio": "/audio/lessons/medieval_england/lesson_4_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · Historian"
     },
     {
       "id": "lesson_5",
@@ -7457,7 +7481,9 @@ export default {
                 "hinge_question": "Why did a biological disaster like the plague create economic empowerment for ordinary peasants?",
                 "source_context": "In 1348–1350, the Black Death destroyed half the population, enabling surviving labourers to demand higher wages. **Hinge Question:** Why did a biological disaster like the plague create economic empowerment for ordinary peasants?"
               },
-              "image_alt": "Fourteenth-century English illuminated initial from James le Palmer’s Omne Bonum (BL Royal MS 6 E VI f. 301r, c. 1360–1375) showing four plague victims covered in red-spotted buboes standing before a mitred bishop"
+              "image_alt": "Fourteenth-century English illuminated initial from James le Palmer’s Omne Bonum (BL Royal MS 6 E VI f. 301r, c. 1360–1375) showing four plague victims covered in red-spotted buboes standing before a mitred bishop",
+              "studio_audio": "/audio/sources/medieval_england/lesson_5_sA.mp3",
+              "studio_voice_label": "Chronicle of Henry Knighton on P…"
             }
           ],
           "content": "<span class=\"para-ref\">[5.1]</span> In June 1348, the Black Death landed on English shores when a <strong>Sailor Ship at Weymouth</strong> (Melcombe Regis) carried plague-carrying fleas from Gascony. The pandemic spread with terrifying speed. Victims developed agonizing egg-sized black swelling <strong>Buboes Under the Arms</strong> and in the groin, spat dark blood, and suffered acute fever, perishing within three to five days. By 1350, with <strong>Nearly Half the Country Dead</strong>, entire villages lay deserted, churchyards overflowed into mass trenches, and medieval society stood shattered.",
@@ -7792,7 +7818,9 @@ export default {
               "teacher_notes": {
                 "hinge_question": "Can any government law successfully stop the economic laws of supply and demand during an acute labour shortage?",
                 "source_context": "In 1351, Parliament tried to freeze wages at pre-plague levels, angering peasants for 30 years. **Hinge Question:** Can any government law successfully stop the economic laws of supply and demand during an acute labour shortage?"
-              }
+              },
+              "studio_audio": "/audio/sources/medieval_england/lesson_5_sB.mp3",
+              "studio_voice_label": "The Statute of Labourers"
             }
           ],
           "content": "<span class=\"para-ref\">[5.4]</span> Simmering tensions erupted when the royal government faced bankruptcy from the costly Hundred Years’ War, passing a crippling <strong>French War Debt Bill</strong>. Unlike property taxes, the third Poll Tax of 1381 demanded a flat <strong>Twelve Pence from Every Head</strong> aged over fifteen—equivalent to two weeks' hard wages for a labourer. Mass tax evasion followed, and when royal commissioner John Bampton arrived on 30 May 1381, he was a <strong>Tax Collector Chased with Pitchforks</strong> by furious Essex villagers at Brentwood, igniting armed rebellion."
@@ -8309,7 +8337,9 @@ export default {
             "source_context": "In 1348–1350, the Black Death destroyed half the population, enabling surviving labourers to demand higher wages. **Hinge Question:** Why did a biological disaster like the plague create economic empowerment for ordinary peasants?"
           },
           "source_context": "In 1348–1350, the Black Death swept across England, killing an estimated 30–50% of the population and triggering a massive structural labour shortage.",
-          "image_alt": "Fourteenth-century English illuminated initial from James le Palmer’s Omne Bonum (BL Royal MS 6 E VI f. 301r, c. 1360–1375) showing four plague victims covered in red-spotted buboes standing before a mitred bishop"
+          "image_alt": "Fourteenth-century English illuminated initial from James le Palmer’s Omne Bonum (BL Royal MS 6 E VI f. 301r, c. 1360–1375) showing four plague victims covered in red-spotted buboes standing before a mitred bishop",
+          "studio_audio": "/audio/sources/medieval_england/lesson_5_sA.mp3",
+          "studio_voice_label": "Chronicle of Henry Knighton on P…"
         },
         {
           "id": "medieval_england_l5_src_b",
@@ -8330,7 +8360,9 @@ export default {
             "hinge_question": "Can any government law successfully stop the economic laws of supply and demand during an acute labour shortage?",
             "source_context": "In 1351, Parliament tried to freeze wages at pre-plague levels, angering peasants for 30 years. **Hinge Question:** Can any government law successfully stop the economic laws of supply and demand during an acute labour shortage?"
           },
-          "source_context": "Following the Black Death, Edward III passed the Ordinance of Labourers (1349) and Parliament enacted the Statute of Labourers (1351) to prevent market wages from rising."
+          "source_context": "Following the Black Death, Edward III passed the Ordinance of Labourers (1349) and Parliament enacted the Statute of Labourers (1351) to prevent market wages from rising.",
+          "studio_audio": "/audio/sources/medieval_england/lesson_5_sB.mp3",
+          "studio_voice_label": "The Statute of Labourers"
         },
         {
           "id": "medieval_england_l5_src_c",
@@ -8976,7 +9008,9 @@ export default {
       "hero_image": "/images/upgraded/ks3-early/med_l5_banner_danse_macabre.jpg",
       "enquiry_question": "How did the Black Death spark the Peasants’ Revolt of 1381?",
       "enquiryQuestion": "How did the Black Death spark the Peasants’ Revolt of 1381?",
-      "banner_caption": "Late-medieval Danse Macabre ('Dance of Death') church fresco frieze (c. 1490), showing skeletons leading away rich and poor alike in the wake of recurring European plague epidemics."
+      "banner_caption": "Late-medieval Danse Macabre ('Dance of Death') church fresco frieze (c. 1490), showing skeletons leading away rich and poor alike in the wake of recurring European plague epidemics.",
+      "prologue_audio": "/audio/lessons/medieval_england/lesson_5_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · Historian"
     }
   ],
   "edition": "3-Layer Pedagogical Architecture Gold Standard (2026)",

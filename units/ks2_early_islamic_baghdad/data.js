@@ -943,7 +943,9 @@ window.UNIT_DATA = {
         "provenanceNote": "Metropolitan Museum of Art, Bibliothèque nationale de France, British Museum, Khalili Collections & Wikimedia Commons (Zero AI Imagery)",
         "spokenTakeaway": "Here is the big story in one sentence. <short pause> Founded by Caliph al-Mansur beside the River Tigris in AD 762, circular Baghdad grew to nearly one million people, dwarfing Anglo-Saxon towns in Britain."
       },
-      "banner_caption": "The 52-metre Abbasid Spiral Minaret (Malwiya) and walled Great Mosque at Samarra in Iraq (9th century AD)."
+      "banner_caption": "The 52-metre Abbasid Spiral Minaret (Malwiya) and walled Great Mosque at Samarra in Iraq (9th century AD).",
+      "prologue_audio": "/audio/lessons/ks2_early_islamic_baghdad/lesson_1_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · Historian"
     },
     {
       "id": "lesson_2",
@@ -1853,7 +1855,9 @@ window.UNIT_DATA = {
         "provenanceNote": "Metropolitan Museum of Art, Bibliothèque nationale de France, British Museum, Khalili Collections & Wikimedia Commons (Zero AI Imagery)",
         "spokenTakeaway": "Here is the big story in one sentence. <short pause> Cheap rag paper, Baghdad's House of Wisdom translators, and patrons like Fatima al-Fihri rescued ancient scrolls and sparked fresh Golden Age discoveries."
       },
-      "banner_caption": "Arched brick courtyard of Al-Mustansiriya Madrasah in Baghdad (founded AD 1227), one of the Islamic world’s oldest centres of higher learning."
+      "banner_caption": "Arched brick courtyard of Al-Mustansiriya Madrasah in Baghdad (founded AD 1227), one of the Islamic world’s oldest centres of higher learning.",
+      "prologue_audio": "/audio/lessons/ks2_early_islamic_baghdad/lesson_2_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · Historian"
     },
     {
       "id": "lesson_3",
@@ -2762,7 +2766,9 @@ window.UNIT_DATA = {
         "provenanceNote": "Metropolitan Museum of Art, Bibliothèque nationale de France, British Museum, Khalili Collections & Wikimedia Commons (Zero AI Imagery)",
         "spokenTakeaway": "Here is the big story in one sentence. <short pause> Scholars like al-Khwarizmi, Ibn al-Haytham, al-Razi, and al-Zahrawi transformed world science with zero, algebra, pinhole optics, surgical tools, and free hospitals."
       },
-      "banner_caption": "Giant underground curved stone sextant arc inside Ulugh Beg’s medieval Islamic astronomical observatory at Samarkand."
+      "banner_caption": "Giant underground curved stone sextant arc inside Ulugh Beg’s medieval Islamic astronomical observatory at Samarkand.",
+      "prologue_audio": "/audio/lessons/ks2_early_islamic_baghdad/lesson_3_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · Historian"
     },
     {
       "id": "lesson_4",
@@ -3673,7 +3679,9 @@ window.UNIT_DATA = {
         "provenanceNote": "Metropolitan Museum of Art, Bibliothèque nationale de France, British Museum, Khalili Collections & Wikimedia Commons (Zero AI Imagery)",
         "spokenTakeaway": "Here is the big story in one sentence. <short pause> Camel caravans, stitched Indian Ocean dhows, paper sakk cheques, and trusted silver dirhams connected Baghdad's markets from China all the way to Viking Britain."
       },
-      "banner_caption": "A desert caravan of pack dromedary camels crossing golden sand dunes along historic overland trade routes."
+      "banner_caption": "A desert caravan of pack dromedary camels crossing golden sand dunes along historic overland trade routes.",
+      "prologue_audio": "/audio/lessons/ks2_early_islamic_baghdad/lesson_4_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · Historian"
     },
     {
       "id": "lesson_5",
@@ -4585,7 +4593,9 @@ window.UNIT_DATA = {
         "provenanceNote": "Metropolitan Museum of Art, Bibliothèque nationale de France, British Museum, Khalili Collections & Wikimedia Commons (Zero AI Imagery)",
         "spokenTakeaway": "Here is the big story in one sentence. <short pause> Around AD 900, Baghdad families enjoyed windcatcher-cooled courtyards, clean hammam bathhouses, citrus foods, geometric star tilework, and shatranj chess."
       },
-      "banner_caption": "1840 architectural plate by Pascal Coste showing glazed turquoise geometric tilework, soaring iwans, and shaded courtyard arcades."
+      "banner_caption": "1840 architectural plate by Pascal Coste showing glazed turquoise geometric tilework, soaring iwans, and shaded courtyard arcades.",
+      "prologue_audio": "/audio/lessons/ks2_early_islamic_baghdad/lesson_5_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · Historian"
     },
     {
       "id": "lesson_6",
@@ -5496,7 +5506,9 @@ window.UNIT_DATA = {
         "provenanceNote": "Metropolitan Museum of Art, Bibliothèque nationale de France, British Museum, Khalili Collections & Wikimedia Commons (Zero AI Imagery)",
         "spokenTakeaway": "Here is the big story in one sentence. <short pause> Hulagu Khan's Mongol siege destroyed Baghdad in 1258, yet paper copies in Cairo, Córdoba, and Toledo saved Islamic maths, medicine, and words for today."
       },
-      "banner_caption": "Stone arches of the historic bridge and Great Mosque-Cathedral in Córdoba (Al-Andalus), where Arabic science and philosophy passed into Europe."
+      "banner_caption": "Stone arches of the historic bridge and Great Mosque-Cathedral in Córdoba (Al-Andalus), where Arabic science and philosophy passed into Europe.",
+      "prologue_audio": "/audio/lessons/ks2_early_islamic_baghdad/lesson_6_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · Historian"
     }
   ],
   "key_individuals": [

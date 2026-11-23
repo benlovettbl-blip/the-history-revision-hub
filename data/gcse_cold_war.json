@@ -991,7 +991,9 @@
             "source_context": "Truman wrote this private diary reflection nine days after the Trinity atomic test in New Mexico, grouping Stalin alongside Hitler and viewing the American nuclear monopoly as a diplomatic asset. **Hinge Question:** Why is a private diary entry written during Potsdam particularly revealing about Truman’s real motives?",
             "hinge_question": "Why is a private diary entry written during Potsdam particularly revealing about Truman’s real motives?"
           },
-          "question": "What can you infer from Source C about Truman’s attitude toward Stalin and the Soviet Union at Potsdam in July 1945?"
+          "question": "What can you infer from Source C about Truman’s attitude toward Stalin and the Soviet Union at Potsdam in July 1945?",
+          "studio_audio": "/audio/sources/gcse_cold_war/lesson_1_sC.mp3",
+          "studio_voice_label": "President Harry S. Truman’s Pots…"
         },
         {
           "id": "gcse_cw_l1_source_d",
@@ -2372,7 +2374,9 @@
             "source_context": "Kennan’s 8,000-word dispatch gave the Truman administration a clear strategic middle ground between appeasement and nuclear war: patient, firm containment wherever Moscow probed. **Hinge Question:** According to Kennan, how did Stalin’s style of expansion differ from Adolf Hitler’s reckless military gambles?",
             "hinge_question": "According to Kennan, how did Stalin’s style of expansion differ from Adolf Hitler’s reckless military gambles?"
           },
-          "question": "Why did Kennan’s analysis in Source A directly inspire President Truman’s 1947 policy of containment?"
+          "question": "Why did Kennan’s analysis in Source A directly inspire President Truman’s 1947 policy of containment?",
+          "studio_audio": "/audio/sources/gcse_cold_war/lesson_2_sA.mp3",
+          "studio_voice_label": "George F. Kennan’s \"Long Telegra…"
         },
         {
           "id": "gcse_cw_l2_source_b",
@@ -2391,7 +2395,9 @@
             "source_context": "Declassified after the Cold War, Novikov’s telegram mirrored Kennan’s warnings from the Soviet perspective, reinforcing Stalin’s belief that tight control over Eastern Europe was vital against encircling US bases. **Hinge Question:** Which Soviet Foreign Minister encouraged Novikov to draft this hardline assessment of American motives?",
             "hinge_question": "Which Soviet Foreign Minister encouraged Novikov to draft this hardline assessment of American motives?"
           },
-          "question": "When cross-referenced with Source A, how does Source B show why US–Soviet distrust escalated so rapidly in 1946?"
+          "question": "When cross-referenced with Source A, how does Source B show why US–Soviet distrust escalated so rapidly in 1946?",
+          "studio_audio": "/audio/sources/gcse_cold_war/lesson_2_sB.mp3",
+          "studio_voice_label": "Soviet Ambassador Nikolai Noviko…"
         },
         {
           "id": "gcse_cw_l2_source_c",
@@ -3868,7 +3874,9 @@
             "source_context": "While Western Europe viewed Article 5 as a purely defensive shield against the Red Army after Prague and Berlin, Moscow condemned NATO as an aggressive anti-Soviet coalition encircling the USSR. **Hinge Question:** How did Stalin view the signing of NATO in April 1949 while the Berlin Blockade was still underway?",
             "hinge_question": "How did Stalin view the signing of NATO in April 1949 while the Berlin Blockade was still underway?"
           },
-          "question": "Why was Article 5 of the North Atlantic Treaty (Source C) a revolutionary shift in US foreign policy in April 1949?"
+          "question": "Why was Article 5 of the North Atlantic Treaty (Source C) a revolutionary shift in US foreign policy in April 1949?",
+          "studio_audio": "/audio/sources/gcse_cold_war/lesson_3_sC.mp3",
+          "studio_voice_label": "Article 5 of the North Atlantic…"
         },
         {
           "id": "gcse_cw_l3_source_d",
@@ -3909,7 +3917,9 @@
             "source_context": "Although Khrushchev framed the Warsaw Pact as collective defence against a rearmed West Germany inside NATO, unified Soviet command also gave Moscow a legal pretext to station Red Army divisions permanently inside its satellite states. **Hinge Question:** Against which countries would Warsaw Pact tanks actually be deployed in 1956 and 1968?",
             "hinge_question": "Against which countries would Warsaw Pact tanks actually be deployed in 1956 and 1968?"
           },
-          "question": "What specific Western action in May 1955 does Source E cite to justify Khrushchev creating the Warsaw Pact?"
+          "question": "What specific Western action in May 1955 does Source E cite to justify Khrushchev creating the Warsaw Pact?",
+          "studio_audio": "/audio/sources/gcse_cold_war/lesson_3_sE.mp3",
+          "studio_voice_label": "Preamble to the Warsaw Pact Trea…"
         }
       ],
       "vocab": [
@@ -5115,7 +5125,9 @@
             "source_context": "Khrushchev wanted to end arbitrary Stalinist purges inside the Communist Party while keeping one-party rule intact—yet Hungarians heard his speech as a green light to sweep away Stalinist dictatorship altogether. **Hinge Question:** Did Khrushchev intend \"de-Stalinisation\" to end one-party Communist rule or weaken the Warsaw Pact?",
             "hinge_question": "Did Khrushchev intend \"de-Stalinisation\" to end one-party Communist rule or weaken the Warsaw Pact?"
           },
-          "question": "How did Khrushchev’s words in Source A unintentionally help spark the October 1956 uprising in Hungary?"
+          "question": "How did Khrushchev’s words in Source A unintentionally help spark the October 1956 uprising in Hungary?",
+          "studio_audio": "/audio/sources/gcse_cold_war/lesson_4_sA.mp3",
+          "studio_voice_label": "Nikita Khrushchev’s \"Secret Spee…"
         },
         {
           "id": "gcse_cw_l4_source_b",
@@ -5136,7 +5148,9 @@
           },
           "caption": "Hungarian national flags with the Rákosi-era Soviet coat-of-arms cut out (\"the flag with the hole\") flying from Budapest balconies in October 1956 alongside the student manifesto demands.",
           "image": "/images/gcse_cold_war/kt1/cw_l4_src_b_fortepan_holed_flag_1956.jpg",
-          "question": "Which specific demands in Source B show why the Hungarian movement quickly threatened Soviet control far more than earlier protests in Poland?"
+          "question": "Which specific demands in Source B show why the Hungarian movement quickly threatened Soviet control far more than earlier protests in Poland?",
+          "studio_audio": "/audio/sources/gcse_cold_war/lesson_4_sB.mp3",
+          "studio_voice_label": "Sixteen Points of the Hungarian…"
         },
         {
           "id": "gcse_cw_l4_source_c",
@@ -5155,7 +5169,9 @@
             "source_context": "Minutes after broadcasting this appeal to the world, Nagy was forced to flee to the Yugoslav Embassy as Soviet armour overwhelmed Hungarian resistance without any Western military intervention. **Hinge Question:** How had US-backed Radio Free Europe broadcasts contributed to Hungarian expectations of Western help?",
             "hinge_question": "How had US-backed Radio Free Europe broadcasts contributed to Hungarian expectations of Western help?"
           },
-          "question": "Why did Imre Nagy address \"the entire world\" in his 4 November 1956 dawn broadcast (Source C), and why did his appeal fail?"
+          "question": "Why did Imre Nagy address \"the entire world\" in his 4 November 1956 dawn broadcast (Source C), and why did his appeal fail?",
+          "studio_audio": "/audio/sources/gcse_cold_war/lesson_4_sC.mp3",
+          "studio_voice_label": "Prime Minister Imre Nagy’s Final…"
         },
         {
           "id": "gcse_cw_l4_source_d",
@@ -6566,7 +6582,9 @@
             "source_context": "While millions of educated East Germans used West Berlin’s open sector boundary to escape Walter Ulbricht’s GDR, Khrushchev’s official November 1958 diplomatic note accused the West of using the city for sabotage and demanded Allied withdrawal within six months. **Hinge Question:** What would have happened to West Berlin’s 2.2 million citizens if Western troops had actually withdrawn under this \"free city\" proposal?",
             "hinge_question": "What would have happened to West Berlin’s 2.2 million citizens if Western troops had actually withdrawn under this \"free city\" proposal?"
           },
-          "question": "Why did Khrushchev frame West Berlin as an \"espionage\" base in Source A rather than admitting the real scale of East Germany’s refugee crisis?"
+          "question": "Why did Khrushchev frame West Berlin as an \"espionage\" base in Source A rather than admitting the real scale of East Germany’s refugee crisis?",
+          "studio_audio": "/audio/sources/gcse_cold_war/lesson_5_sA.mp3",
+          "studio_voice_label": "Nikita Khrushchev’s Berlin Ultim…"
         },
         {
           "id": "gcse_cw_l5_source_b",
@@ -6585,7 +6603,9 @@
             "source_context": "Shaken by Khrushchev’s aggressive bullying at Vienna just seven weeks after the failed Bay of Pigs landing in Cuba, Kennedy confided to journalist James Reston that he had to demonstrate firm military resolve over West Berlin. **Hinge Question:** How did events in Cuba in April 1961 directly affect Khrushchev’s tone toward Kennedy in Vienna two months later?",
             "hinge_question": "How did events in Cuba in April 1961 directly affect Khrushchev’s tone toward Kennedy in Vienna two months later?"
           },
-          "question": "What can you infer from Source B about how the June 1961 Vienna Summit shaped Kennedy’s military decisions over the summer of 1961?"
+          "question": "What can you infer from Source B about how the June 1961 Vienna Summit shaped Kennedy’s military decisions over the summer of 1961?",
+          "studio_audio": "/audio/sources/gcse_cold_war/lesson_5_sB.mp3",
+          "studio_voice_label": "President John F. Kennedy’s Priv…"
         },
         {
           "id": "gcse_cw_l5_source_c",
@@ -6648,7 +6668,9 @@
             "source_context": "Outraged as families were torn apart by barbed wire on 13 August 1961, West Berlin Mayor Willy Brandt warned Kennedy that Western restraint looked like weakness—prompting JFK to dispatch Vice-President Johnson and General Lucius Clay to reassure the city without risking war. **Hinge Question:** How does comparing Source E (August 1961) with Source D (June 1963) show how West Berliners’ attitude toward Kennedy changed over two years?",
             "hinge_question": "How does comparing Source E (August 1961) with Source D (June 1963) show how West Berliners’ attitude toward Kennedy changed over two years?"
           },
-          "question": "Why did President Kennedy resist Mayor Brandt’s plea in Source E to tear down the barbed wire in East Berlin by military force in August 1961?"
+          "question": "Why did President Kennedy resist Mayor Brandt’s plea in Source E to tear down the barbed wire in East Berlin by military force in August 1961?",
+          "studio_audio": "/audio/sources/gcse_cold_war/lesson_5_sE.mp3",
+          "studio_voice_label": "West Berlin Mayor Willy Brandt’s…"
         }
       ],
       "vocab": [
@@ -8143,7 +8165,9 @@
             "source_context": "Written personally by Khrushchev as US invasion preparations intensified in Florida, this emotional 26 October letter offered the framework for compromise—though hours later Kremlin hardliners pressed a second letter demanding US Jupiter missiles leave Turkey. **Hinge Question:** Why did Robert Kennedy advise answering this 26 October letter publicly while ignoring Khrushchev’s harsher second letter of 27 October?",
             "hinge_question": "Why did Robert Kennedy advise answering this 26 October letter publicly while ignoring Khrushchev’s harsher second letter of 27 October?"
           },
-          "question": "What does Khrushchev’s \"knot of war\" metaphor in Source D reveal about why he sought an urgent diplomatic exit on 26 October 1962?"
+          "question": "What does Khrushchev’s \"knot of war\" metaphor in Source D reveal about why he sought an urgent diplomatic exit on 26 October 1962?",
+          "studio_audio": "/audio/sources/gcse_cold_war/lesson_6_sD.mp3",
+          "studio_voice_label": "Nikita Khrushchev’s First Urgent…"
         },
         {
           "id": "gcse_cw_l6_source_e",
@@ -8162,7 +8186,9 @@
             "source_context": "Shaken by the Thirteen Days, Kennedy and Khrushchev moved swiftly in summer 1963 to install the Moscow–Washington \"hotline\" and sign the Limited Test Ban Treaty—though underground nuclear testing remained legal because neither side agreed on on-site inspections. **Hinge Question:** What type of nuclear testing was still legally permitted under Source E, showing the limits of 1963 arms control?",
             "hinge_question": "What type of nuclear testing was still legally permitted under Source E, showing the limits of 1963 arms control?"
           },
-          "question": "How does Source E demonstrate that the October 1962 Cuban Missile Crisis marked a major turning point toward superpower cooperation?"
+          "question": "How does Source E demonstrate that the October 1962 Cuban Missile Crisis marked a major turning point toward superpower cooperation?",
+          "studio_audio": "/audio/sources/gcse_cold_war/lesson_6_sE.mp3",
+          "studio_voice_label": "Preamble & Article I of the Limi…"
         }
       ],
       "vocab": [
@@ -9518,7 +9544,9 @@
             "source_context": "Notice the deliberate balancing act inside the Action Programme: radical domestic liberalisation (ending censorship) paired with explicit loyalty to the Soviet alliance so Moscow would not repeat 1956 Budapest. **Hinge Question:** Why had Imre Nagy’s fate in Hungary twelve years earlier taught Dubček to include that final foreign-policy pledge?",
             "hinge_question": "Why had Imre Nagy’s fate in Hungary twelve years earlier taught Dubček to include that final foreign-policy pledge?"
           },
-          "question": "How did Alexander Dubček try in Source A to satisfy dissatisfied Czechoslovak citizens while simultaneously reassuring Moscow?"
+          "question": "How did Alexander Dubček try in Source A to satisfy dissatisfied Czechoslovak citizens while simultaneously reassuring Moscow?",
+          "studio_audio": "/audio/sources/gcse_cold_war/lesson_7_sA.mp3",
+          "studio_voice_label": "The Czechoslovak Communist Party…"
         },
         {
           "id": "gcse_cw_l7_source_b",
@@ -9537,7 +9565,9 @@
             "source_context": "Signed by prominent scientists, Olympic champion Emil Zátopek, and writers, \"Two Thousand Words\" was cited furiously by Brezhnev as proof that ending censorship invited open rebellion against Communist rule. **Hinge Question:** Why was Dubček unable to stop Prague newspapers printing Vaculík’s manifesto even though it embarrassed his leadership?",
             "hinge_question": "Why was Dubček unable to stop Prague newspapers printing Vaculík’s manifesto even though it embarrassed his leadership?"
           },
-          "question": "Why did the publication of Source B in June 1968 alarm Leonid Brezhnev far more than Dubček’s official April Action Programme?"
+          "question": "Why did the publication of Source B in June 1968 alarm Leonid Brezhnev far more than Dubček’s official April Action Programme?",
+          "studio_audio": "/audio/sources/gcse_cold_war/lesson_7_sB.mp3",
+          "studio_voice_label": "Ludvík Vaculík’s \"Two Thousand W…"
         },
         {
           "id": "gcse_cw_l7_source_c",
@@ -9556,7 +9586,9 @@
             "source_context": "Notice how Source C already foreshadows the later Brezhnev Doctrine (\"no longer your affair alone\"), while Nicolae Ceaușescu’s Romania refused to attend or sign. **Hinge Question:** Which Warsaw Pact member state conspicuously refused to attend the Warsaw meeting or sign this July 1968 warning letter?",
             "hinge_question": "Which Warsaw Pact member state conspicuously refused to attend the Warsaw meeting or sign this July 1968 warning letter?"
           },
-          "question": "What both ideological and strategic arguments do the five Warsaw Pact leaders use in Source C to justify interfering in Czechoslovakia’s domestic reforms?"
+          "question": "What both ideological and strategic arguments do the five Warsaw Pact leaders use in Source C to justify interfering in Czechoslovakia’s domestic reforms?",
+          "studio_audio": "/audio/sources/gcse_cold_war/lesson_7_sC.mp3",
+          "studio_voice_label": "The Five-Party \"Warsaw Letter\" t…"
         },
         {
           "id": "gcse_cw_l7_source_d",
@@ -9598,7 +9630,9 @@
             "source_context": "Declassified from Kremlin archives in the 1990s, this tense one-hour call captures the exact moment Brezhnev concluded Dubček would never reimpose censorship—four days before the Politburo formally voted to invade. **Hinge Question:** What did Brezhnev mean by warning Dubček on 13 August that Moscow would \"adopt new, independent measures\"?",
             "hinge_question": "What did Brezhnev mean by warning Dubček on 13 August that Moscow would \"adopt new, independent measures\"?"
           },
-          "question": "When cross-referenced with Source A, what does Source E reveal about why summer summit diplomacy at Čierna nad Tisou and Bratislava broke down by mid-August 1968?"
+          "question": "When cross-referenced with Source A, what does Source E reveal about why summer summit diplomacy at Čierna nad Tisou and Bratislava broke down by mid-August 1968?",
+          "studio_audio": "/audio/sources/gcse_cold_war/lesson_7_sE.mp3",
+          "studio_voice_label": "Kremlin Transcript of Leonid Bre…"
         }
       ],
       "vocab": [
@@ -11068,7 +11102,9 @@
             "source_context": "Known in the West as the Brezhnev Doctrine, this principle of \"limited sovereignty\" froze political reform across the Warsaw Pact for twenty-one years (and was invoked again in Afghanistan in 1979) until Mikhail Gorbachev replaced it with the \"Sinatra Doctrine\" in 1989. **Hinge Question:** Until which Soviet leader took power in the late 1980s did the Brezhnev Doctrine lock Eastern Europe under one-party rule?",
             "hinge_question": "Until which Soviet leader took power in the late 1980s did the Brezhnev Doctrine lock Eastern Europe under one-party rule?"
           },
-          "question": "How did Brezhnev use Source C both to justify the August 1968 invasion of Czechoslovakia and to deter future reform across Eastern Europe?"
+          "question": "How did Brezhnev use Source C both to justify the August 1968 invasion of Czechoslovakia and to deter future reform across Eastern Europe?",
+          "studio_audio": "/audio/sources/gcse_cold_war/lesson_8_sC.mp3",
+          "studio_voice_label": "Leonid Brezhnev Proclaiming the…"
         },
         {
           "id": "gcse_cw_l8_source_d",
@@ -11087,7 +11123,9 @@
             "source_context": "Just as Eisenhower had refused to risk nuclear war over Hungary in 1956, Johnson accepted the unspoken Cold War rule that NATO would not fight inside the Warsaw Pact—especially while Washington wanted future nuclear arms talks with Moscow and faced global criticism over Vietnam. **Hinge Question:** How did America’s heavy military involvement in Vietnam weaken Washington’s moral authority when condemning Soviet intervention in Prague?",
             "hinge_question": "How did America’s heavy military involvement in Vietnam weaken Washington’s moral authority when condemning Soviet intervention in Prague?"
           },
-          "question": "Why did President Johnson’s statement in Source D rely solely on moral condemnation rather than threatening American military intervention?"
+          "question": "Why did President Johnson’s statement in Source D rely solely on moral condemnation rather than threatening American military intervention?",
+          "studio_audio": "/audio/sources/gcse_cold_war/lesson_8_sD.mp3",
+          "studio_voice_label": "US President Lyndon B. Johnson’s…"
         },
         {
           "id": "gcse_cw_l8_source_e",
@@ -11106,7 +11144,9 @@
             "source_context": "For the French Communist Party—historically one of Moscow’s most loyal supporters—\"reprobation\" marked a historic rupture, proving that crushing \"Socialism with a human face\" destroyed Moscow’s moral authority among Western socialists. **Hinge Question:** Why did French and Italian Communist leaders need to distance themselves urgently from Soviet tanks in front of Western European voters?",
             "hinge_question": "Why did French and Italian Communist leaders need to distance themselves urgently from Soviet tanks in front of Western European voters?"
           },
-          "question": "When cross-referenced with Source C, what does Source E reveal about the unintended damage the 1968 invasion inflicted on Soviet leadership of world communism?"
+          "question": "When cross-referenced with Source C, what does Source E reveal about the unintended damage the 1968 invasion inflicted on Soviet leadership of world communism?",
+          "studio_audio": "/audio/sources/gcse_cold_war/lesson_8_sE.mp3",
+          "studio_voice_label": "Declarations of the French and I…"
         }
       ],
       "vocab": [
@@ -12559,7 +12599,9 @@
             "source_context": "SALT 1 paired a permanent limit of two ABM defensive sites each with a five-year freeze on ICBM and SLBM missile launchers, yet said nothing about fitting multiple MIRV warheads onto each missile. **Hinge Question:** Which dangerous multi-warhead weapon technology did Article I of the Interim Agreement leave completely unrestricted?",
             "hinge_question": "Which dangerous multi-warhead weapon technology did Article I of the Interim Agreement leave completely unrestricted?"
           },
-          "question": "Why did restricting defensive anti-missile shields to just two sites in Source B actually make nuclear war less likely under MAD?"
+          "question": "Why did restricting defensive anti-missile shields to just two sites in Source B actually make nuclear war less likely under MAD?",
+          "studio_audio": "/audio/sources/gcse_cold_war/lesson_9_sB.mp3",
+          "studio_voice_label": "Extract from the Anti-Ballistic…"
         },
         {
           "id": "gcse_cw_l9_source_c",
@@ -12600,7 +12642,9 @@
             "source_context": "Because Moscow wanted to boast about Basket I’s recognition of post-war borders and East Germany, Soviet newspapers printed the entire Helsinki Final Act—inadvertently handing millions of Soviet citizens the exact human-rights promises of Basket III. **Hinge Question:** Why was it much harder for the KGB to dismiss Helsinki Watch critics as \"foreign agents\" when they quoted a document Brezhnev himself had signed in Pravda?",
             "hinge_question": "Why was it much harder for the KGB to dismiss Helsinki Watch critics as \"foreign agents\" when they quoted a document Brezhnev himself had signed in Pravda?"
           },
-          "question": "Why did Leonid Brezhnev agree to sign the Basket III commitments in Source D, and how did that calculation backfire on the Soviet regime?"
+          "question": "Why did Leonid Brezhnev agree to sign the Basket III commitments in Source D, and how did that calculation backfire on the Soviet regime?",
+          "studio_audio": "/audio/sources/gcse_cold_war/lesson_9_sD.mp3",
+          "studio_voice_label": "Extract from Principle VII & Bas…"
         },
         {
           "id": "gcse_cw_l9_source_e",
@@ -14081,7 +14125,9 @@
             "source_context": "Deliberately modelling his warning on the 1947 Truman Doctrine, Carter backed his speech by creating the Rapid Deployment Force, registering young Americans for a potential military draft, and halting US grain shipments to the USSR. **Hinge Question:** Which 1947 presidential pledge did Carter deliberately echo by promising US military containment in the Persian Gulf?",
             "hinge_question": "Which 1947 presidential pledge did Carter deliberately echo by promising US military containment in the Persian Gulf?"
           },
-          "question": "How does Source B show that President Carter interpreted the Soviet invasion of Afghanistan through a wider geopolitical lens than Brezhnev intended?"
+          "question": "How does Source B show that President Carter interpreted the Soviet invasion of Afghanistan through a wider geopolitical lens than Brezhnev intended?",
+          "studio_audio": "/audio/sources/gcse_cold_war/lesson_10_sB.mp3",
+          "studio_voice_label": "President Jimmy Carter’s State o…"
         },
         {
           "id": "gcse_cw_l10_source_c",
@@ -14122,7 +14168,9 @@
             "source_context": "In early 1983 millions of Western protesters campaigned for a bilateral \"nuclear freeze\"; Reagan used moral religious language before evangelical leaders to rally support for B-1 bombers, Trident submarines, and Pershing II missiles. **Hinge Question:** Why was Reagan addressing this warning specifically to domestic supporters of a \"nuclear freeze\" in March 1983?",
             "hinge_question": "Why was Reagan addressing this warning specifically to domestic supporters of a \"nuclear freeze\" in March 1983?"
           },
-          "question": "How did Ronald Reagan’s language in Source D break sharply with the diplomatic assumptions of 1970s Détente?"
+          "question": "How did Ronald Reagan’s language in Source D break sharply with the diplomatic assumptions of 1970s Détente?",
+          "studio_audio": "/audio/sources/gcse_cold_war/lesson_10_sD.mp3",
+          "studio_voice_label": "Extract from President Ronald Re…"
         },
         {
           "id": "gcse_cw_l10_source_e",
@@ -15528,7 +15576,9 @@
             "source_context": "Although Reagan refused to give up SDI at Geneva, five hours of private fireside talks convinced both Reagan and Gorbachev that the other genuinely feared nuclear miscalculation. **Hinge Question:** Even though Geneva produced no formal arms treaty, why do historians view this November 1985 summit as a turning point?",
             "hinge_question": "Even though Geneva produced no formal arms treaty, why do historians view this November 1985 summit as a turning point?"
           },
-          "question": "Why did the wording of Source B mark such a dramatic shift from the \"Second Cold War\" rhetoric of 1981–84?"
+          "question": "Why did the wording of Source B mark such a dramatic shift from the \"Second Cold War\" rhetoric of 1981–84?",
+          "studio_audio": "/audio/sources/gcse_cold_war/lesson_11_sB.mp3",
+          "studio_voice_label": "Joint US"
         },
         {
           "id": "gcse_cw_l11_source_c",
@@ -15591,7 +15641,9 @@
             "source_context": "Gorbachev’s December 1988 UN address dismantled the military threat that had kept Communist regimes in power across Eastern Europe since 1945–48 and crushed uprisings in 1956 and 1968. **Hinge Question:** Why did reform movements in Poland and Hungary immediately test Gorbachev’s promise within months of this speech?",
             "hinge_question": "Why did reform movements in Poland and Hungary immediately test Gorbachev’s promise within months of this speech?"
           },
-          "question": "What can you infer from Gorbachev’s pledge of \"universal\" freedom of choice in Source E about the future of the Warsaw Pact satellite states?"
+          "question": "What can you infer from Gorbachev’s pledge of \"universal\" freedom of choice in Source E about the future of the Warsaw Pact satellite states?",
+          "studio_audio": "/audio/sources/gcse_cold_war/lesson_11_sE.mp3",
+          "studio_voice_label": "Mikhail Gorbachev’s Address to t…"
         }
       ],
       "vocab": [
@@ -17027,7 +17079,9 @@
             "source_context": "Witty and informal on American television, Gerasimov’s \"Sinatra Doctrine\" phrase gave protesters in Leipzig, East Berlin, and Prague unmistakable proof that Gorbachev would keep Red Army troops inside their barracks. **Hinge Question:** Just fifteen days after Gerasimov spoke these words on 25 October 1989, which iconic Cold War barrier collapsed?",
             "hinge_question": "Just fifteen days after Gerasimov spoke these words on 25 October 1989, which iconic Cold War barrier collapsed?"
           },
-          "question": "Why did Gerasimov’s announcement in Source A immediately fatalise hardline Communist governments in East Germany and Czechoslovakia?"
+          "question": "Why did Gerasimov’s announcement in Source A immediately fatalise hardline Communist governments in East Germany and Czechoslovakia?",
+          "studio_audio": "/audio/sources/gcse_cold_war/lesson_12_sA.mp3",
+          "studio_voice_label": "Soviet Spokesman Gennady Gerasim…"
         },
         {
           "id": "gcse_cw_l12_source_b",
@@ -17090,7 +17144,9 @@
             "source_context": "Had the Gang of Eight not staged their coup on 19 August 1991, several republics had been due to sign Gorbachev’s looser New Union Treaty the very next day; instead, the coup destroyed trust in Moscow and propelled full independence across the republics. **Hinge Question:** What tragic irony turned the hardliners’ attempt to save the USSR on 19 August 1991 into the exact event that accelerated its breakup?",
             "hinge_question": "What tragic irony turned the hardliners’ attempt to save the USSR on 19 August 1991 into the exact event that accelerated its breakup?"
           },
-          "question": "Why did Boris Yeltsin’s appeal in Source D defeat the Gang of Eight coup while simultaneously undermining Mikhail Gorbachev’s remaining authority?"
+          "question": "Why did Boris Yeltsin’s appeal in Source D defeat the Gang of Eight coup while simultaneously undermining Mikhail Gorbachev’s remaining authority?",
+          "studio_audio": "/audio/sources/gcse_cold_war/lesson_12_sD.mp3",
+          "studio_voice_label": "Boris Yeltsin’s Appeal \"To the C…"
         },
         {
           "id": "gcse_cw_l12_source_e",
@@ -17109,7 +17165,9 @@
             "source_context": "At 7:32 p.m. on 25 December 1991, immediately after Gorbachev signed over nuclear launch codes to Boris Yeltsin, the Soviet hammer-and-sickle flag was lowered over the Kremlin and replaced by the Russian tricolour. **Hinge Question:** Which flag replaced the red Soviet hammer-and-sickle over the Kremlin flagpole twenty minutes after Gorbachev finished speaking?",
             "hinge_question": "Which flag replaced the red Soviet hammer-and-sickle over the Kremlin flagpole twenty minutes after Gorbachev finished speaking?"
           },
-          "question": "What can you infer from Source E about how Mikhail Gorbachev judged both the failures and the achievements of his leadership by Christmas 1991?"
+          "question": "What can you infer from Source E about how Mikhail Gorbachev judged both the failures and the achievements of his leadership by Christmas 1991?",
+          "studio_audio": "/audio/sources/gcse_cold_war/lesson_12_sE.mp3",
+          "studio_voice_label": "Mikhail Gorbachev’s Televised Re…"
         }
       ],
       "vocab": [

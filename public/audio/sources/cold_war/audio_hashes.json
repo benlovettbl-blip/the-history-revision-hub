@@ -1,0 +1,166 @@
+{
+  "version": 1,
+  "clips": {
+    "lesson_7_sA": {
+      "hash": "659c07fa40b5abc6",
+      "bytes": 357548,
+      "voiceKey": "male_historian",
+      "badge": "The Castle Bravo 15-Megaton Ther…",
+      "updatedAt": "2026-11-23T23:04:46.511Z"
+    },
+    "lesson_7_sE": {
+      "hash": "7d85571fd183bbde",
+      "bytes": 225740,
+      "voiceKey": "male_historian",
+      "badge": "The Global Cold War and the Prox…",
+      "updatedAt": "2026-11-23T23:04:47.066Z"
+    },
+    "lesson_2_sD": {
+      "hash": "9f5ed8ee854b7920",
+      "bytes": 209132,
+      "voiceKey": "male_historian",
+      "badge": "The Atomic Bomb and Truman’s Pot…",
+      "updatedAt": "2026-11-23T23:05:09.888Z"
+    },
+    "lesson_2_sE": {
+      "hash": "8ab055f32406f35d",
+      "bytes": 192332,
+      "voiceKey": "male_historian",
+      "badge": "Churchill",
+      "updatedAt": "2026-11-23T23:05:10.399Z"
+    },
+    "lesson_3_sA": {
+      "hash": "638084bffbfe88e4",
+      "bytes": 215180,
+      "voiceKey": "male_historian",
+      "badge": "Winston Churchill’s \"Sinews of P…",
+      "updatedAt": "2026-11-23T23:05:11.393Z"
+    },
+    "lesson_3_sB": {
+      "hash": "7159c61931a72cfa",
+      "bytes": 223052,
+      "voiceKey": "male_historian",
+      "badge": "President Truman Delivering the…",
+      "updatedAt": "2026-11-23T23:05:11.934Z"
+    },
+    "lesson_3_sE": {
+      "hash": "35b2d5cad5241e55",
+      "bytes": 168908,
+      "voiceKey": "male_historian",
+      "badge": "President Truman and Foreign Min…",
+      "updatedAt": "2026-11-23T23:05:12.450Z"
+    },
+    "lesson_4_sC": {
+      "hash": "82742d53bc3c5408",
+      "bytes": 179372,
+      "voiceKey": "male_historian",
+      "badge": "President John F. Kennedy’s Addr…",
+      "updatedAt": "2026-11-23T23:05:13.421Z"
+    },
+    "lesson_4_sD": {
+      "hash": "0d7016b5141c6813",
+      "bytes": 234860,
+      "voiceKey": "male_historian",
+      "badge": "Draft of President Kennedy’s Con…",
+      "updatedAt": "2026-11-23T23:05:14.419Z"
+    },
+    "lesson_5_sA": {
+      "hash": "66e8af0fd33ee250",
+      "bytes": 196268,
+      "voiceKey": "male_historian",
+      "badge": "Declassified Cover of National S…",
+      "updatedAt": "2026-11-23T23:05:15.746Z"
+    },
+    "lesson_5_sB": {
+      "hash": "c0df94eb46cec479",
+      "bytes": 141932,
+      "voiceKey": "male_historian",
+      "badge": "Premier Zhou Enlai on UN Troops…",
+      "updatedAt": "2026-11-23T23:05:16.238Z"
+    },
+    "lesson_5_sC": {
+      "hash": "a18f373e230df4f4",
+      "bytes": 225932,
+      "voiceKey": "male_historian",
+      "badge": "Frontline Medical Evacuation and…",
+      "updatedAt": "2026-11-23T23:05:16.876Z"
+    },
+    "lesson_6_sE": {
+      "hash": "d638659577e4b566",
+      "bytes": 262220,
+      "voiceKey": "male_historian",
+      "badge": "Mikhail Gorbachev Delivering Far…",
+      "updatedAt": "2026-11-23T23:05:18.010Z"
+    },
+    "lesson_1_sA": {
+      "hash": "d68c1160d0fca5b1",
+      "bytes": 189260,
+      "voiceKey": "male_historian",
+      "badge": "Joseph Stalin’s Bolshoi Theatre…",
+      "updatedAt": "2026-11-23T23:05:24.062Z"
+    },
+    "lesson_1_sC": {
+      "hash": "85cacaef092e42aa",
+      "bytes": 165932,
+      "voiceKey": "male_historian",
+      "badge": "David Low",
+      "updatedAt": "2026-11-23T23:05:24.514Z"
+    },
+    "lesson_1_sD": {
+      "hash": "26ccc8e99c3f80d9",
+      "bytes": 172940,
+      "voiceKey": "male_historian",
+      "badge": "George Kennan and the Moscow Emb…",
+      "updatedAt": "2026-11-23T23:05:24.985Z"
+    },
+    "lesson_1_sE": {
+      "hash": "d7ff0821ce588bd1",
+      "bytes": 176012,
+      "voiceKey": "male_historian",
+      "badge": "Supreme Soviet Election Appeal t…",
+      "updatedAt": "2026-11-23T23:05:25.530Z"
+    },
+    "lesson_2_sC": {
+      "hash": "23dbd3724ee97ab6",
+      "bytes": 190028,
+      "voiceKey": "male_historian",
+      "badge": "President Truman",
+      "updatedAt": "2026-11-23T23:05:26.437Z"
+    },
+    "lesson_1_sB": {
+      "hash": "a5b7b891a0aff664",
+      "bytes": 193868,
+      "voiceKey": "female_historian",
+      "badge": "Vladimir Lenin on Democratic Cen…",
+      "updatedAt": "2026-11-23T23:10:02.196Z"
+    },
+    "lesson_2_sB": {
+      "hash": "86fd133da9e510d6",
+      "bytes": 210668,
+      "voiceKey": "female_historian",
+      "badge": "Protocol of Proceedings of the C…",
+      "updatedAt": "2026-11-23T23:10:02.780Z"
+    },
+    "lesson_4_sB": {
+      "hash": "04744f028b9d0466",
+      "bytes": 178988,
+      "voiceKey": "female_historian",
+      "badge": "Leslie Illingworth",
+      "updatedAt": "2026-11-23T23:10:03.351Z"
+    },
+    "lesson_6_sB": {
+      "hash": "2eacf71f9a94f76b",
+      "bytes": 218252,
+      "voiceKey": "female_historian",
+      "badge": "East German Troops Stringing Bar…",
+      "updatedAt": "2026-11-23T23:10:46.979Z"
+    },
+    "lesson_6_sC": {
+      "hash": "9b244e59c3d81e90",
+      "bytes": 196268,
+      "voiceKey": "female_historian",
+      "badge": "Soviet Shoppers Facing Chronic S…",
+      "updatedAt": "2026-11-23T23:10:47.583Z"
+    }
+  }
+}

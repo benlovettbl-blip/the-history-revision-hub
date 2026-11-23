@@ -230,7 +230,9 @@ window.UNIT_DATA = {
               "question": "Compare the West Stow house with Bede's words in Source A. Which three peoples crossed the sea, and how were their homes built?",
               "model_answer": "Bede records that the Angles, Saxons, and Jutes sailed across to settle Kent, Wessex, Mercia, East Anglia, and Northumbria, and the West Stow house shows they built rectangular timber and wattle-and-daub homes with steep thatched roofs.",
               "text": "Venerable Bede (AD 731): \"Those who came over were of the three most powerful nations of Germany — Saxons, Angles, and Jutes. From the Jutes are descended the people of Kent [...] From the Angles [...] Mercians, all the race of the Northumbrians.\"<br><br><strong>In plain words:</strong> The monk Bede explains that three seafaring peoples — the Angles, Saxons, and Jutes — sailed across the North Sea to settle new kingdoms across Britain.",
-              "provenance": "Reconstructed Anglo-Saxon sunken-featured weaving house at West Stow, Suffolk, paired with Venerable Bede, History of the English Church and People of the English Nation, Book I, Chapter 15 (AD 731), translated by J. A. Giles (London: Henry G. Bohn, 1847 — Public Domain)."
+              "provenance": "Reconstructed Anglo-Saxon sunken-featured weaving house at West Stow, Suffolk, paired with Venerable Bede, History of the English Church and People of the English Nation, Book I, Chapter 15 (AD 731), translated by J. A. Giles (London: Henry G. Bohn, 1847 — Public Domain).",
+              "studio_audio": "/audio/sources/ks2_anglo_saxons_vikings/lesson_1_sA.mp3",
+              "studio_voice_label": "Reconstructed Anglo-Saxon Villag…"
             }
           ]
         },
@@ -330,7 +332,9 @@ window.UNIT_DATA = {
           "question": "Compare the West Stow house with Bede's words in Source A. Which three peoples crossed the sea, and how were their homes built?",
           "model_answer": "Bede records that the Angles, Saxons, and Jutes sailed across to settle Kent, Wessex, Mercia, East Anglia, and Northumbria, and the West Stow house shows they built rectangular timber and wattle-and-daub homes with steep thatched roofs.",
           "text": "Venerable Bede (AD 731): \"Those who came over were of the three most powerful nations of Germany — Saxons, Angles, and Jutes. From the Jutes are descended the people of Kent [...] From the Angles [...] Mercians, all the race of the Northumbrians.\"<br><br><strong>In plain words:</strong> The monk Bede explains that three seafaring peoples — the Angles, Saxons, and Jutes — sailed across the North Sea to settle new kingdoms across Britain.",
-          "provenance": "Reconstructed Anglo-Saxon sunken-featured weaving house at West Stow, Suffolk, paired with Venerable Bede, History of the English Church and People of the English Nation, Book I, Chapter 15 (AD 731), translated by J. A. Giles (London: Henry G. Bohn, 1847 — Public Domain)."
+          "provenance": "Reconstructed Anglo-Saxon sunken-featured weaving house at West Stow, Suffolk, paired with Venerable Bede, History of the English Church and People of the English Nation, Book I, Chapter 15 (AD 731), translated by J. A. Giles (London: Henry G. Bohn, 1847 — Public Domain).",
+          "studio_audio": "/audio/sources/ks2_anglo_saxons_vikings/lesson_1_sA.mp3",
+          "studio_voice_label": "Reconstructed Anglo-Saxon Villag…"
         },
         {
           "id": "ks2_anglo_saxons_vikings_l1_src_b",
@@ -927,7 +931,9 @@ window.UNIT_DATA = {
         ],
         "spokenTakeaway": "Here is the big story in one sentence. <short pause> Pushed by flooded marshes and pulled by rich farmland, Angles, Saxons, and Jutes built timber mead-hall villages, formed seven kingdoms, and gave England its name and language."
       },
-      "banner_caption": "Panoramic View of Reconstructed Early Anglo-Saxon Thatched Timber Houses at West Stow Village, Suffolk"
+      "banner_caption": "Panoramic View of Reconstructed Early Anglo-Saxon Thatched Timber Houses at West Stow Village, Suffolk",
+      "prologue_audio": "/audio/lessons/ks2_anglo_saxons_vikings/lesson_1_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · Historian"
     },
     {
       "id": "lesson_2",
@@ -1171,7 +1177,9 @@ window.UNIT_DATA = {
               "question": "Look at Source C and read Bede's words. How did Christian monks and nuns transform reading, art, and history-writing in Britain?",
               "model_answer": "Christian monasteries brought Latin reading, schools, and book-making on calfskin vellum to Britain, creating painted masterpieces like the Lindisfarne Gospels and Bede’s first English history book.",
               "text": "Venerable Bede (AD 731): \"I have spent all the remainder of my life in this monastery [...] and amidst the daily care of singing in the church, I always took delight in learning, teaching, and writing.\"<br><br><strong>In plain words:</strong> Bede says he lived happily inside Jarrow Monastery from boyhood, spending every day singing in church, studying, teaching pupils, and writing history books.",
-              "provenance": "Cross-carpet folio from the Lindisfarne Gospels (British Library Cotton MS Nero D.IV, c. AD 715), paired with Venerable Bede, History of the English Church and People of the English Nation, Book V, Chapter 24 (AD 731), translated by J. A. Giles (1847 — Public Domain)."
+              "provenance": "Cross-carpet folio from the Lindisfarne Gospels (British Library Cotton MS Nero D.IV, c. AD 715), paired with Venerable Bede, History of the English Church and People of the English Nation, Book V, Chapter 24 (AD 731), translated by J. A. Giles (1847 — Public Domain).",
+              "studio_audio": "/audio/sources/ks2_anglo_saxons_vikings/lesson_2_sC.mp3",
+              "studio_voice_label": "Illuminated Carpet Page from the…"
             }
           ]
         },
@@ -1258,7 +1266,9 @@ window.UNIT_DATA = {
           "question": "Look at Source C and read Bede's words. How did Christian monks and nuns transform reading, art, and history-writing in Britain?",
           "model_answer": "Christian monasteries brought Latin reading, schools, and book-making on calfskin vellum to Britain, creating painted masterpieces like the Lindisfarne Gospels and Bede’s first English history book.",
           "text": "Venerable Bede (AD 731): \"I have spent all the remainder of my life in this monastery [...] and amidst the daily care of singing in the church, I always took delight in learning, teaching, and writing.\"<br><br><strong>In plain words:</strong> Bede says he lived happily inside Jarrow Monastery from boyhood, spending every day singing in church, studying, teaching pupils, and writing history books.",
-          "provenance": "Cross-carpet folio from the Lindisfarne Gospels (British Library Cotton MS Nero D.IV, c. AD 715), paired with Venerable Bede, History of the English Church and People of the English Nation, Book V, Chapter 24 (AD 731), translated by J. A. Giles (1847 — Public Domain)."
+          "provenance": "Cross-carpet folio from the Lindisfarne Gospels (British Library Cotton MS Nero D.IV, c. AD 715), paired with Venerable Bede, History of the English Church and People of the English Nation, Book V, Chapter 24 (AD 731), translated by J. A. Giles (1847 — Public Domain).",
+          "studio_audio": "/audio/sources/ks2_anglo_saxons_vikings/lesson_2_sC.mp3",
+          "studio_voice_label": "Illuminated Carpet Page from the…"
         },
         {
           "id": "ks2_anglo_saxons_vikings_l2_src_d",
@@ -1819,7 +1829,9 @@ window.UNIT_DATA = {
       "banner": {
         "image": "/units/ks2_anglo_saxons_vikings/assets/sutton_hoo_gold_buckle.jpg",
         "caption": "The great solid-gold belt buckle from the royal ship burial at Sutton Hoo (early AD 600s), decorated with intricately twisted ribbons of Anglo-Saxon animal artwork."
-      }
+      },
+      "prologue_audio": "/audio/lessons/ks2_anglo_saxons_vikings/lesson_2_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · Historian"
     },
     {
       "id": "lesson_3",
@@ -2016,7 +2028,9 @@ window.UNIT_DATA = {
               "question": "Compare the oak longship and AD 793 chronicle in Source A. How did longships aid raids, and why call Vikings \"heathen men\"?",
               "model_answer": "Source A’s low oak longship could sail fast across open sea and land straight on Lindisfarne’s sandy beach. Because Christian monks wrote the Chronicle after being attacked, they called non-Christian Vikings \"heathen men\".",
               "text": "Anglo-Saxon Chronicle (AD 793): \"Here terrible portents came over the land of Northumbria [...] immense flashes of lightning, and fiery dragons were seen flying in the air [...] and the ravaging of heathen men miserably destroyed God's church at Lindisfarne.\"<br><br><strong>In plain words:</strong> Shocked monks wrote that scary storms filled the sky right before non-Christian Viking raiders suddenly landed and looted Lindisfarne church in AD 793.",
-              "provenance": "The 9th-century Gokstad oak longship (Oslo, Norway), paired with The Anglo-Saxon Chronicle entry for AD 793 (Public Domain translation after Rev. James Ingram, 1823, and J. A. Giles, 1847)."
+              "provenance": "The 9th-century Gokstad oak longship (Oslo, Norway), paired with The Anglo-Saxon Chronicle entry for AD 793 (Public Domain translation after Rev. James Ingram, 1823, and J. A. Giles, 1847).",
+              "studio_audio": "/audio/sources/ks2_anglo_saxons_vikings/lesson_3_sA.mp3",
+              "studio_voice_label": "9th-Century Gokstad Oak Longship…"
             },
             {
               "id": "ks2_anglo_saxons_vikings_l3_src_b",
@@ -2116,7 +2130,9 @@ window.UNIT_DATA = {
           "question": "Compare the oak longship and AD 793 chronicle in Source A. How did longships aid raids, and why call Vikings \"heathen men\"?",
           "model_answer": "Source A’s low oak longship could sail fast across open sea and land straight on Lindisfarne’s sandy beach. Because Christian monks wrote the Chronicle after being attacked, they called non-Christian Vikings \"heathen men\".",
           "text": "Anglo-Saxon Chronicle (AD 793): \"Here terrible portents came over the land of Northumbria [...] immense flashes of lightning, and fiery dragons were seen flying in the air [...] and the ravaging of heathen men miserably destroyed God's church at Lindisfarne.\"<br><br><strong>In plain words:</strong> Shocked monks wrote that scary storms filled the sky right before non-Christian Viking raiders suddenly landed and looted Lindisfarne church in AD 793.",
-          "provenance": "The 9th-century Gokstad oak longship (Oslo, Norway), paired with The Anglo-Saxon Chronicle entry for AD 793 (Public Domain translation after Rev. James Ingram, 1823, and J. A. Giles, 1847)."
+          "provenance": "The 9th-century Gokstad oak longship (Oslo, Norway), paired with The Anglo-Saxon Chronicle entry for AD 793 (Public Domain translation after Rev. James Ingram, 1823, and J. A. Giles, 1847).",
+          "studio_audio": "/audio/sources/ks2_anglo_saxons_vikings/lesson_3_sA.mp3",
+          "studio_voice_label": "9th-Century Gokstad Oak Longship…"
         },
         {
           "id": "ks2_anglo_saxons_vikings_l3_src_b",
@@ -2711,7 +2727,9 @@ window.UNIT_DATA = {
       "banner": {
         "image": "/units/ks2_anglo_saxons_vikings/assets/viking_coastal_shield_wall.jpg",
         "caption": "Re-enactors in iron helmets and chainmail locking painted wooden shields and raising long spears beside the sea, showing how Viking raiders fought after beaching their longships."
-      }
+      },
+      "prologue_audio": "/audio/lessons/ks2_anglo_saxons_vikings/lesson_3_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · Historian"
     },
     {
       "id": "lesson_4",
@@ -2940,7 +2958,9 @@ window.UNIT_DATA = {
               "question": "Look closely at Source A and its Old English words. What does the Alfred Jewel prove mattered to Alfred besides winning battles?",
               "model_answer": "Source A is inscribed \"Alfred ordered me to be made\" and held a wooden pointer for following lines in books, proving Alfred cared deeply about schools, reading, and translating wisdom into Old English.",
               "text": "Alfred Jewel & King Alfred's Preface (c. AD 890): \"+ AELFRED MEC HEHT GEWYRCAN [Alfred ordered me to be made].\" — \"We should turn certain books which are most needful for all men to know into the language that we can all understand.\"<br><br><strong>In plain words:</strong> The gold frame says King Alfred ordered this crystal reading pointer made, and his letter explains why he translated important Latin books into everyday Old English.",
-              "provenance": "The Alfred Jewel (Ashmolean Museum, Oxford, AN1836 p.135.371; Public Domain illustration, fresh direct translation from the original Old English inscription and Preface)."
+              "provenance": "The Alfred Jewel (Ashmolean Museum, Oxford, AN1836 p.135.371; Public Domain illustration, fresh direct translation from the original Old English inscription and Preface).",
+              "studio_audio": "/audio/sources/ks2_anglo_saxons_vikings/lesson_4_sA.mp3",
+              "studio_voice_label": "The Gold"
             }
           ]
         },
@@ -2972,7 +2992,9 @@ window.UNIT_DATA = {
               "question": "Inspect Source B. Why did Alfred change his coin title from \"King of the West Saxons\" to \"King of the English\" after AD 886?",
               "model_answer": "Every trader and farmer using Alfred’s silver pennies saw \"Alfred, King of the English\", helping unite West Saxons and Mercians together after London was restored in AD 886.",
               "text": "Coin inscription (c. AD 886–899): \"AELFRED REX ANGLO[RUM]\" — \"Alfred, King of the English.\"<br><br><strong>In plain words:</strong> Instead of calling himself only King of Wessex, Alfred stamped his everyday silver pennies \"King of the English\" to unite Anglo-Saxons together.",
-              "provenance": "Silver coin of King Alfred the Great, reigned AD 871–899 (Public Domain photograph by PHGCOM; fresh direct translation from the Latin legend)."
+              "provenance": "Silver coin of King Alfred the Great, reigned AD 871–899 (Public Domain photograph by PHGCOM; fresh direct translation from the Latin legend).",
+              "studio_audio": "/audio/sources/ks2_anglo_saxons_vikings/lesson_4_sB.mp3",
+              "studio_voice_label": "Silver Penny Coin of King Alfred…"
             }
           ]
         },
@@ -3004,7 +3026,9 @@ window.UNIT_DATA = {
               "question": "Read the AD 878 Anglo-Saxon Chronicle in Source C. How does the writer make King Alfred sound heroic during Wessex’s darkest winter?",
               "model_answer": "Source C stresses that when Guthrum overran Wessex, everyone yielded \"all save Alfred the King\", celebrating how Alfred held out with a small band before winning at Edington.",
               "text": "Anglo-Saxon Chronicle (AD 878): \"After twelfth-night, the Danish army stole out to Chippenham, and rode over the land of the West-Saxons [...] — ALL SAVE ALFRED THE KING [...] Afterwards they fought at Edington against all the army, and put them to flight.\"<br><br><strong>In plain words:</strong> After Guthrum’s surprise winter attack conquered most of Wessex, only King Alfred refused to give up — hiding in the marshes before rallying his warriors to win at Edington.",
-              "provenance": "The Anglo-Saxon Chronicle, Entry for AD 878, translated from Old English by Rev. James Ingram (London, 1823 — Public Domain), paired with Peterborough Chronicle fol. 1r (Bodleian MS Laud Misc. 636 — Public Domain)."
+              "provenance": "The Anglo-Saxon Chronicle, Entry for AD 878, translated from Old English by Rev. James Ingram (London, 1823 — Public Domain), paired with Peterborough Chronicle fol. 1r (Bodleian MS Laud Misc. 636 — Public Domain).",
+              "studio_audio": "/audio/sources/ks2_anglo_saxons_vikings/lesson_4_sC.mp3",
+              "studio_voice_label": "Old English Manuscript Page of t…"
             },
             {
               "id": "ks2_anglo_saxons_vikings_l4_src_d",
@@ -3023,7 +3047,9 @@ window.UNIT_DATA = {
               "question": "Combine the photo and Bishop Asser's words in Source D. How did teamwork and terrain shape the Battle of Edington in AD 878?",
               "model_answer": "Source D shows the steep Wiltshire hills above Edington, while Bishop Asser explains that Alfred’s warriors locked a tight \"serried shield-wall\" shoulder-to-shoulder until Guthrum’s line broke.",
               "text": "Bishop Asser (AD 893): \"He came to a place which is called Ethandun [Edington], and fiercely warring against the whole army of the pagans with serried shield-wall, and struggling long and bravely, at length [...] he gained a victory.\"<br><br><strong>In plain words:</strong> Alfred’s Welsh friend Bishop Asser explains that Wessex soldiers locked their round wooden shields tightly shoulder-to-shoulder at Edington and fought bravely until the Viking army fled.",
-              "provenance": "Asser's Life of King Alfred (written AD 893), Chapter 56, translated from Latin by Albert S. Cook (Ginn & Company, 1906 — Public Domain), paired with Bratton Camp earthworks above Edington, Wiltshire (CC BY-SA 2.0, Phil Williams)."
+              "provenance": "Asser's Life of King Alfred (written AD 893), Chapter 56, translated from Latin by Albert S. Cook (Ginn & Company, 1906 — Public Domain), paired with Bratton Camp earthworks above Edington, Wiltshire (CC BY-SA 2.0, Phil Williams).",
+              "studio_audio": "/audio/sources/ks2_anglo_saxons_vikings/lesson_4_sD.mp3",
+              "studio_voice_label": "Bratton Camp Chalk Escarpment ne…"
             }
           ]
         }
@@ -3046,7 +3072,9 @@ window.UNIT_DATA = {
           "question": "Look closely at Source A and its Old English words. What does the Alfred Jewel prove mattered to Alfred besides winning battles?",
           "model_answer": "Source A is inscribed \"Alfred ordered me to be made\" and held a wooden pointer for following lines in books, proving Alfred cared deeply about schools, reading, and translating wisdom into Old English.",
           "text": "Alfred Jewel & King Alfred's Preface (c. AD 890): \"+ AELFRED MEC HEHT GEWYRCAN [Alfred ordered me to be made].\" — \"We should turn certain books which are most needful for all men to know into the language that we can all understand.\"<br><br><strong>In plain words:</strong> The gold frame says King Alfred ordered this crystal reading pointer made, and his letter explains why he translated important Latin books into everyday Old English.",
-          "provenance": "The Alfred Jewel (Ashmolean Museum, Oxford, AN1836 p.135.371; Public Domain illustration, fresh direct translation from the original Old English inscription and Preface)."
+          "provenance": "The Alfred Jewel (Ashmolean Museum, Oxford, AN1836 p.135.371; Public Domain illustration, fresh direct translation from the original Old English inscription and Preface).",
+          "studio_audio": "/audio/sources/ks2_anglo_saxons_vikings/lesson_4_sA.mp3",
+          "studio_voice_label": "The Gold"
         },
         {
           "id": "ks2_anglo_saxons_vikings_l4_src_b",
@@ -3065,7 +3093,9 @@ window.UNIT_DATA = {
           "question": "Inspect Source B. Why did Alfred change his coin title from \"King of the West Saxons\" to \"King of the English\" after AD 886?",
           "model_answer": "Every trader and farmer using Alfred’s silver pennies saw \"Alfred, King of the English\", helping unite West Saxons and Mercians together after London was restored in AD 886.",
           "text": "Coin inscription (c. AD 886–899): \"AELFRED REX ANGLO[RUM]\" — \"Alfred, King of the English.\"<br><br><strong>In plain words:</strong> Instead of calling himself only King of Wessex, Alfred stamped his everyday silver pennies \"King of the English\" to unite Anglo-Saxons together.",
-          "provenance": "Silver coin of King Alfred the Great, reigned AD 871–899 (Public Domain photograph by PHGCOM; fresh direct translation from the Latin legend)."
+          "provenance": "Silver coin of King Alfred the Great, reigned AD 871–899 (Public Domain photograph by PHGCOM; fresh direct translation from the Latin legend).",
+          "studio_audio": "/audio/sources/ks2_anglo_saxons_vikings/lesson_4_sB.mp3",
+          "studio_voice_label": "Silver Penny Coin of King Alfred…"
         },
         {
           "id": "ks2_anglo_saxons_vikings_l4_src_c",
@@ -3084,7 +3114,9 @@ window.UNIT_DATA = {
           "question": "Read the AD 878 Anglo-Saxon Chronicle in Source C. How does the writer make King Alfred sound heroic during Wessex’s darkest winter?",
           "model_answer": "Source C stresses that when Guthrum overran Wessex, everyone yielded \"all save Alfred the King\", celebrating how Alfred held out with a small band before winning at Edington.",
           "text": "Anglo-Saxon Chronicle (AD 878): \"After twelfth-night, the Danish army stole out to Chippenham, and rode over the land of the West-Saxons [...] — ALL SAVE ALFRED THE KING [...] Afterwards they fought at Edington against all the army, and put them to flight.\"<br><br><strong>In plain words:</strong> After Guthrum’s surprise winter attack conquered most of Wessex, only King Alfred refused to give up — hiding in the marshes before rallying his warriors to win at Edington.",
-          "provenance": "The Anglo-Saxon Chronicle, Entry for AD 878, translated from Old English by Rev. James Ingram (London, 1823 — Public Domain), paired with Peterborough Chronicle fol. 1r (Bodleian MS Laud Misc. 636 — Public Domain)."
+          "provenance": "The Anglo-Saxon Chronicle, Entry for AD 878, translated from Old English by Rev. James Ingram (London, 1823 — Public Domain), paired with Peterborough Chronicle fol. 1r (Bodleian MS Laud Misc. 636 — Public Domain).",
+          "studio_audio": "/audio/sources/ks2_anglo_saxons_vikings/lesson_4_sC.mp3",
+          "studio_voice_label": "Old English Manuscript Page of t…"
         },
         {
           "id": "ks2_anglo_saxons_vikings_l4_src_d",
@@ -3103,7 +3135,9 @@ window.UNIT_DATA = {
           "question": "Combine the photo and Bishop Asser's words in Source D. How did teamwork and terrain shape the Battle of Edington in AD 878?",
           "model_answer": "Source D shows the steep Wiltshire hills above Edington, while Bishop Asser explains that Alfred’s warriors locked a tight \"serried shield-wall\" shoulder-to-shoulder until Guthrum’s line broke.",
           "text": "Bishop Asser (AD 893): \"He came to a place which is called Ethandun [Edington], and fiercely warring against the whole army of the pagans with serried shield-wall, and struggling long and bravely, at length [...] he gained a victory.\"<br><br><strong>In plain words:</strong> Alfred’s Welsh friend Bishop Asser explains that Wessex soldiers locked their round wooden shields tightly shoulder-to-shoulder at Edington and fought bravely until the Viking army fled.",
-          "provenance": "Asser's Life of King Alfred (written AD 893), Chapter 56, translated from Latin by Albert S. Cook (Ginn & Company, 1906 — Public Domain), paired with Bratton Camp earthworks above Edington, Wiltshire (CC BY-SA 2.0, Phil Williams)."
+          "provenance": "Asser's Life of King Alfred (written AD 893), Chapter 56, translated from Latin by Albert S. Cook (Ginn & Company, 1906 — Public Domain), paired with Bratton Camp earthworks above Edington, Wiltshire (CC BY-SA 2.0, Phil Williams).",
+          "studio_audio": "/audio/sources/ks2_anglo_saxons_vikings/lesson_4_sD.mp3",
+          "studio_voice_label": "Bratton Camp Chalk Escarpment ne…"
         }
       ],
       "causal_domino_spine": {
@@ -3647,7 +3681,9 @@ window.UNIT_DATA = {
       "banner": {
         "image": "/units/ks2_anglo_saxons_vikings/assets/viking_palisade_shield_wall.jpg",
         "caption": "Warriors standing shoulder to shoulder in a tight shield wall of painted round shields and raised battle-axes in front of a tall wooden palisade."
-      }
+      },
+      "prologue_audio": "/audio/lessons/ks2_anglo_saxons_vikings/lesson_4_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · Historian"
     },
     {
       "id": "lesson_5",
@@ -3876,7 +3912,9 @@ window.UNIT_DATA = {
               "question": "Look at the hornless Coppergate Helmet in Source A. What two important lessons does this surviving iron helmet teach archaeologists?",
               "model_answer": "Source A proves real warriors in Britain wore practical hornless iron helmets with cheek-guards, and shows how York’s wet, oxygen-free soil preserved buried metal, wood, and leather like a time capsule.",
               "text": "Latin brass inscription on the Coppergate Helmet: \"In the name of our Lord Jesus Christ, the Holy Spirit, and God; to all we say Amen. Oshere.\"<br><br><strong>In plain words:</strong> The brass strip across this hornless iron helmet asks God to protect its Anglo-Saxon owner, a nobleman named Oshere.",
-              "provenance": "The Coppergate (York) Helmet, Yorkshire Museum (YORYM : 1992.8; CC BY-SA 3.0, Jonathan Cardy; fresh direct translation from the original Latin brass inscription)."
+              "provenance": "The Coppergate (York) Helmet, Yorkshire Museum (YORYM : 1992.8; CC BY-SA 3.0, Jonathan Cardy; fresh direct translation from the original Latin brass inscription).",
+              "studio_audio": "/audio/sources/ks2_anglo_saxons_vikings/lesson_5_sA.mp3",
+              "studio_voice_label": "8th-Century Coppergate Helmet Di…"
             },
             {
               "id": "ks2_anglo_saxons_vikings_l5_src_b",
@@ -3976,7 +4014,9 @@ window.UNIT_DATA = {
           "question": "Look at the hornless Coppergate Helmet in Source A. What two important lessons does this surviving iron helmet teach archaeologists?",
           "model_answer": "Source A proves real warriors in Britain wore practical hornless iron helmets with cheek-guards, and shows how York’s wet, oxygen-free soil preserved buried metal, wood, and leather like a time capsule.",
           "text": "Latin brass inscription on the Coppergate Helmet: \"In the name of our Lord Jesus Christ, the Holy Spirit, and God; to all we say Amen. Oshere.\"<br><br><strong>In plain words:</strong> The brass strip across this hornless iron helmet asks God to protect its Anglo-Saxon owner, a nobleman named Oshere.",
-          "provenance": "The Coppergate (York) Helmet, Yorkshire Museum (YORYM : 1992.8; CC BY-SA 3.0, Jonathan Cardy; fresh direct translation from the original Latin brass inscription)."
+          "provenance": "The Coppergate (York) Helmet, Yorkshire Museum (YORYM : 1992.8; CC BY-SA 3.0, Jonathan Cardy; fresh direct translation from the original Latin brass inscription).",
+          "studio_audio": "/audio/sources/ks2_anglo_saxons_vikings/lesson_5_sA.mp3",
+          "studio_voice_label": "8th-Century Coppergate Helmet Di…"
         },
         {
           "id": "ks2_anglo_saxons_vikings_l5_src_b",
@@ -4571,7 +4611,9 @@ window.UNIT_DATA = {
       "banner": {
         "image": "/units/ks2_anglo_saxons_vikings/assets/ribe_viking_longhouse.jpg",
         "caption": "A reconstructed Viking townhouse and planked wooden walkway at Ribe in Denmark, built with whitewashed walls, sturdy oak posts, and a steep reed-thatched roof."
-      }
+      },
+      "prologue_audio": "/audio/lessons/ks2_anglo_saxons_vikings/lesson_5_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · Historian"
     },
     {
       "id": "lesson_6",
@@ -4800,7 +4842,9 @@ window.UNIT_DATA = {
               "question": "Inspect King Athelstan's portrait and the AD 937 poem in Source A. How did Athelstan use faith and battle strength to unite England?",
               "model_answer": "Source A’s painting shows Athelstan honouring northern Saint Cuthbert to win northern Christians’ loyalty, while the AD 937 poem celebrates his army smashing enemies at Brunanburh to defend one united England.",
               "text": "Anglo-Saxon Chronicle Poem (AD 937): \"Here Athelstan King, of earls the lord, bracelet-giver of heroes, and his brother Edmund, a lasting glory won [...] with the edges of swords, at Brunanburh! They clove the board-wall.\"<br><br><strong>In plain words:</strong> This victory poem praises how King Athelstan and Prince Edmund smashed through the northern invaders’ wooden shield wall (\"board-wall\") at Brunanburh in AD 937.",
-              "provenance": "Corpus Christi College, Cambridge MS 183, fol. 1v (c. AD 934 — Public Domain), paired with The Anglo-Saxon Chronicle, Entry for AD 937, translated by Rev. James Ingram (London, 1823 — Public Domain)."
+              "provenance": "Corpus Christi College, Cambridge MS 183, fol. 1v (c. AD 934 — Public Domain), paired with The Anglo-Saxon Chronicle, Entry for AD 937, translated by Rev. James Ingram (London, 1823 — Public Domain).",
+              "studio_audio": "/audio/sources/ks2_anglo_saxons_vikings/lesson_6_sA.mp3",
+              "studio_voice_label": "Illuminated Portrait of King Ath…"
             }
           ]
         },
@@ -4832,7 +4876,9 @@ window.UNIT_DATA = {
               "question": "Inspect the coin and AD 1027 letter in Source B. How did King Cnut reassure Anglo-Saxon families after winning the crown?",
               "model_answer": "Instead of treating England as a conquered prize, Cnut kept sound silver coins, protected churches, and vowed in his AD 1027 letter to rule English and Danish people fairly.",
               "text": "King Cnut's Letter (AD 1027): \"Cnut, king of all England, and of Denmark, Norway, and part of Sweden [...] to the whole nation of the English, both nobles and commons, greeting. I have vowed to God [...] to rule justly and piously.\"<br><br><strong>In plain words:</strong> Writing to every noble and ordinary family in England, Danish King Cnut promises before God to rule all his kingdoms fairly and keep peaceful laws.",
-              "provenance": "Silver penny of Cnut (York Museums Trust, YORYM 2000.594 — CC BY-SA 4.0), paired with The Chronicle of Florence of Worcester, Entry for AD 1027, translated by Thomas Forester (Henry G. Bohn, 1854 — Public Domain)."
+              "provenance": "Silver penny of Cnut (York Museums Trust, YORYM 2000.594 — CC BY-SA 4.0), paired with The Chronicle of Florence of Worcester, Entry for AD 1027, translated by Thomas Forester (Henry G. Bohn, 1854 — Public Domain).",
+              "studio_audio": "/audio/sources/ks2_anglo_saxons_vikings/lesson_6_sB.mp3",
+              "studio_voice_label": "Silver Penny Coin & King Cnut's…"
             }
           ]
         },
@@ -4864,7 +4910,9 @@ window.UNIT_DATA = {
               "question": "Look closely at Source C. How does the Bayeux Tapestry suggest that King Harold’s January 1066 coronation would soon bring disaster?",
               "model_answer": "Source C shows Harold enthroned on the left while frightened crowds point at fiery Halley’s Comet on the right — a Norman hint that God was warning Harold for taking the crown William claimed.",
               "text": "Bayeux Tapestry Latin captions: \"HIC RESIDET HAROLD REX ANGLORUM\" (\"Here sits Harold, King of the English\") | \"ISTI MIRANT STELLA\" (\"These people marvel at the star\").<br><br><strong>In plain words:</strong> Right after Harold is crowned King of England in January 1066, worried crowds point up at blazing Halley’s Comet as a warning of danger ahead.",
-              "provenance": "Bayeux Tapestry, Scenes 29–32, Musée de la Tapisserie de Bayeux (c. AD 1070s — Public Domain, photo by Myrabella; fresh direct translation from the embroidered Latin)."
+              "provenance": "Bayeux Tapestry, Scenes 29–32, Musée de la Tapisserie de Bayeux (c. AD 1070s — Public Domain, photo by Myrabella; fresh direct translation from the embroidered Latin).",
+              "studio_audio": "/audio/sources/ks2_anglo_saxons_vikings/lesson_6_sC.mp3",
+              "studio_voice_label": "11th-Century Bayeux Tapestry (1066)"
             },
             {
               "id": "ks2_anglo_saxons_vikings_l6_src_d",
@@ -4883,7 +4931,9 @@ window.UNIT_DATA = {
               "question": "Read the AD 1066 Chronicle in Source D. Why did autumn 1066 end BOTH the Viking Age and Anglo-Saxon rule in England?",
               "model_answer": "Harold’s victory over Harald Hardrada at Stamford Bridge on 25 September ended major Viking invasions, but marching 250 miles back south left his army tired when William won at Hastings on 14 October.",
               "text": "Anglo-Saxon Chronicle (AD 1066): \"Came Harold our king unawares upon the Norwegians, and met with them beyond York at Stamford-bridge [...] There was slain Harald [Hardrada] [...] Meanwhile Earl William came up from Normandy [...] and there was King Harold slain.\"<br><br><strong>In plain words:</strong> The Chronicle tells how King Harold surprised and killed Viking King Harald Hardrada at Stamford Bridge, then marched south to fight Duke William at Hastings, where Harold fell.",
-              "provenance": "Battle Abbey Gatehouse on Senlac Hill, Battle, East Sussex (CC BY-SA 4.0, JamCor), paired with The Anglo-Saxon Chronicle, Entry for AD 1066, translated by Rev. James Ingram (London, 1823 — Public Domain)."
+              "provenance": "Battle Abbey Gatehouse on Senlac Hill, Battle, East Sussex (CC BY-SA 4.0, JamCor), paired with The Anglo-Saxon Chronicle, Entry for AD 1066, translated by Rev. James Ingram (London, 1823 — Public Domain).",
+              "studio_audio": "/audio/sources/ks2_anglo_saxons_vikings/lesson_6_sD.mp3",
+              "studio_voice_label": "Battle Abbey on Senlac Hill (Has…"
             }
           ]
         }
@@ -4906,7 +4956,9 @@ window.UNIT_DATA = {
           "question": "Inspect King Athelstan's portrait and the AD 937 poem in Source A. How did Athelstan use faith and battle strength to unite England?",
           "model_answer": "Source A’s painting shows Athelstan honouring northern Saint Cuthbert to win northern Christians’ loyalty, while the AD 937 poem celebrates his army smashing enemies at Brunanburh to defend one united England.",
           "text": "Anglo-Saxon Chronicle Poem (AD 937): \"Here Athelstan King, of earls the lord, bracelet-giver of heroes, and his brother Edmund, a lasting glory won [...] with the edges of swords, at Brunanburh! They clove the board-wall.\"<br><br><strong>In plain words:</strong> This victory poem praises how King Athelstan and Prince Edmund smashed through the northern invaders’ wooden shield wall (\"board-wall\") at Brunanburh in AD 937.",
-          "provenance": "Corpus Christi College, Cambridge MS 183, fol. 1v (c. AD 934 — Public Domain), paired with The Anglo-Saxon Chronicle, Entry for AD 937, translated by Rev. James Ingram (London, 1823 — Public Domain)."
+          "provenance": "Corpus Christi College, Cambridge MS 183, fol. 1v (c. AD 934 — Public Domain), paired with The Anglo-Saxon Chronicle, Entry for AD 937, translated by Rev. James Ingram (London, 1823 — Public Domain).",
+          "studio_audio": "/audio/sources/ks2_anglo_saxons_vikings/lesson_6_sA.mp3",
+          "studio_voice_label": "Illuminated Portrait of King Ath…"
         },
         {
           "id": "ks2_anglo_saxons_vikings_l6_src_b",
@@ -4925,7 +4977,9 @@ window.UNIT_DATA = {
           "question": "Inspect the coin and AD 1027 letter in Source B. How did King Cnut reassure Anglo-Saxon families after winning the crown?",
           "model_answer": "Instead of treating England as a conquered prize, Cnut kept sound silver coins, protected churches, and vowed in his AD 1027 letter to rule English and Danish people fairly.",
           "text": "King Cnut's Letter (AD 1027): \"Cnut, king of all England, and of Denmark, Norway, and part of Sweden [...] to the whole nation of the English, both nobles and commons, greeting. I have vowed to God [...] to rule justly and piously.\"<br><br><strong>In plain words:</strong> Writing to every noble and ordinary family in England, Danish King Cnut promises before God to rule all his kingdoms fairly and keep peaceful laws.",
-          "provenance": "Silver penny of Cnut (York Museums Trust, YORYM 2000.594 — CC BY-SA 4.0), paired with The Chronicle of Florence of Worcester, Entry for AD 1027, translated by Thomas Forester (Henry G. Bohn, 1854 — Public Domain)."
+          "provenance": "Silver penny of Cnut (York Museums Trust, YORYM 2000.594 — CC BY-SA 4.0), paired with The Chronicle of Florence of Worcester, Entry for AD 1027, translated by Thomas Forester (Henry G. Bohn, 1854 — Public Domain).",
+          "studio_audio": "/audio/sources/ks2_anglo_saxons_vikings/lesson_6_sB.mp3",
+          "studio_voice_label": "Silver Penny Coin & King Cnut's…"
         },
         {
           "id": "ks2_anglo_saxons_vikings_l6_src_c",
@@ -4944,7 +4998,9 @@ window.UNIT_DATA = {
           "question": "Look closely at Source C. How does the Bayeux Tapestry suggest that King Harold’s January 1066 coronation would soon bring disaster?",
           "model_answer": "Source C shows Harold enthroned on the left while frightened crowds point at fiery Halley’s Comet on the right — a Norman hint that God was warning Harold for taking the crown William claimed.",
           "text": "Bayeux Tapestry Latin captions: \"HIC RESIDET HAROLD REX ANGLORUM\" (\"Here sits Harold, King of the English\") | \"ISTI MIRANT STELLA\" (\"These people marvel at the star\").<br><br><strong>In plain words:</strong> Right after Harold is crowned King of England in January 1066, worried crowds point up at blazing Halley’s Comet as a warning of danger ahead.",
-          "provenance": "Bayeux Tapestry, Scenes 29–32, Musée de la Tapisserie de Bayeux (c. AD 1070s — Public Domain, photo by Myrabella; fresh direct translation from the embroidered Latin)."
+          "provenance": "Bayeux Tapestry, Scenes 29–32, Musée de la Tapisserie de Bayeux (c. AD 1070s — Public Domain, photo by Myrabella; fresh direct translation from the embroidered Latin).",
+          "studio_audio": "/audio/sources/ks2_anglo_saxons_vikings/lesson_6_sC.mp3",
+          "studio_voice_label": "11th-Century Bayeux Tapestry (1066)"
         },
         {
           "id": "ks2_anglo_saxons_vikings_l6_src_d",
@@ -4963,7 +5019,9 @@ window.UNIT_DATA = {
           "question": "Read the AD 1066 Chronicle in Source D. Why did autumn 1066 end BOTH the Viking Age and Anglo-Saxon rule in England?",
           "model_answer": "Harold’s victory over Harald Hardrada at Stamford Bridge on 25 September ended major Viking invasions, but marching 250 miles back south left his army tired when William won at Hastings on 14 October.",
           "text": "Anglo-Saxon Chronicle (AD 1066): \"Came Harold our king unawares upon the Norwegians, and met with them beyond York at Stamford-bridge [...] There was slain Harald [Hardrada] [...] Meanwhile Earl William came up from Normandy [...] and there was King Harold slain.\"<br><br><strong>In plain words:</strong> The Chronicle tells how King Harold surprised and killed Viking King Harald Hardrada at Stamford Bridge, then marched south to fight Duke William at Hastings, where Harold fell.",
-          "provenance": "Battle Abbey Gatehouse on Senlac Hill, Battle, East Sussex (CC BY-SA 4.0, JamCor), paired with The Anglo-Saxon Chronicle, Entry for AD 1066, translated by Rev. James Ingram (London, 1823 — Public Domain)."
+          "provenance": "Battle Abbey Gatehouse on Senlac Hill, Battle, East Sussex (CC BY-SA 4.0, JamCor), paired with The Anglo-Saxon Chronicle, Entry for AD 1066, translated by Rev. James Ingram (London, 1823 — Public Domain).",
+          "studio_audio": "/audio/sources/ks2_anglo_saxons_vikings/lesson_6_sD.mp3",
+          "studio_voice_label": "Battle Abbey on Senlac Hill (Has…"
         }
       ],
       "causal_domino_spine": {
@@ -5507,7 +5565,9 @@ window.UNIT_DATA = {
       "banner": {
         "image": "/units/ks2_anglo_saxons_vikings/assets/hastings_1066_shield_wall.jpg",
         "caption": "Re-enactors clashing with spears, swords, chainmail, and painted shields beneath battle banners to recreate the fierce struggle at the Battle of Hastings in October 1066."
-      }
+      },
+      "prologue_audio": "/audio/lessons/ks2_anglo_saxons_vikings/lesson_6_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · Historian"
     }
   ],
   "key_individuals": [

@@ -1,0 +1,96 @@
+{
+  "version": 1,
+  "clips": {
+    "lesson_2_sC": {
+      "hash": "b82f763c44e5ff95",
+      "bytes": 191372,
+      "voiceKey": "male_historian",
+      "badge": "Prime Minister Clement Attlee Fo…",
+      "updatedAt": "2026-11-23T23:07:51.976Z"
+    },
+    "lesson_2_sD": {
+      "hash": "53b3954b76cb15f4",
+      "bytes": 118412,
+      "voiceKey": "male_historian",
+      "badge": "Aneurin Bevan on the Moral Found…",
+      "updatedAt": "2026-11-23T23:07:52.390Z"
+    },
+    "lesson_3_sD": {
+      "hash": "42709de9506f13e5",
+      "bytes": 132716,
+      "voiceKey": "male_historian",
+      "badge": "Firsthand Account of the \"Colour…",
+      "updatedAt": "2026-11-23T23:07:52.870Z"
+    },
+    "lesson_4_sB": {
+      "hash": "346c9ee7239e5880",
+      "bytes": 149420,
+      "voiceKey": "male_historian",
+      "badge": "Paul Stephenson on Launching the…",
+      "updatedAt": "2026-11-23T23:07:53.360Z"
+    },
+    "lesson_5_sA": {
+      "hash": "0da5987c2aa75251",
+      "bytes": 142700,
+      "voiceKey": "male_historian",
+      "badge": "Prime Minister Winston Churchill…",
+      "updatedAt": "2026-11-23T23:07:53.796Z"
+    },
+    "lesson_2_sA": {
+      "hash": "024c279826c5afe8",
+      "bytes": 152300,
+      "voiceKey": "female_historian",
+      "badge": "Ministry of Health Circular on O…",
+      "updatedAt": "2026-11-23T23:12:02.613Z"
+    },
+    "lesson_3_sA": {
+      "hash": "4d7315ad4f6df5d1",
+      "bytes": 131180,
+      "voiceKey": "female_historian",
+      "badge": "The British Nationality Act 1948…",
+      "updatedAt": "2026-11-23T23:12:03.455Z"
+    },
+    "lesson_3_sE": {
+      "hash": "90783b0d2476c081",
+      "bytes": 142700,
+      "voiceKey": "female_historian",
+      "badge": "Claudia Jones Launches the Carib…",
+      "updatedAt": "2026-11-23T23:12:03.931Z"
+    },
+    "lesson_4_sA": {
+      "hash": "9b2c7c43debd37e4",
+      "bytes": 103820,
+      "voiceKey": "female_historian",
+      "badge": "The Bristol Omnibus Company Just…",
+      "updatedAt": "2026-11-23T23:12:04.679Z"
+    },
+    "lesson_4_sE": {
+      "hash": "e67483e70973abe9",
+      "bytes": 138572,
+      "voiceKey": "female_historian",
+      "badge": "The Race Relations Act 1965",
+      "updatedAt": "2026-11-23T23:12:05.184Z"
+    },
+    "lesson_5_sE": {
+      "hash": "f9faec6a430d37ea",
+      "bytes": 145772,
+      "voiceKey": "female_historian",
+      "badge": "E. P. Thompson (1980)",
+      "updatedAt": "2026-11-23T23:12:07.420Z"
+    },
+    "lesson_1_sA": {
+      "hash": "49c4eb7c863c05a6",
+      "bytes": 149612,
+      "voiceKey": "female_historian",
+      "badge": "Millicent Garrett Fawcett Reflec…",
+      "updatedAt": "2026-11-23T23:12:15.656Z"
+    },
+    "lesson_1_sE": {
+      "hash": "dd1cb65cb110d9c5",
+      "bytes": 150860,
+      "voiceKey": "female_historian",
+      "badge": "The Representation of the People…",
+      "updatedAt": "2026-11-23T23:12:16.143Z"
+    }
+  }
+}

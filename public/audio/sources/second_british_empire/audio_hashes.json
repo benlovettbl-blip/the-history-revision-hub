@@ -1,0 +1,145 @@
+{
+  "version": 1,
+  "clips": {
+    "lesson_4_sC": {
+      "hash": "7680b59075a01395",
+      "bytes": 85580,
+      "voiceKey": "male_historian",
+      "badge": "Rudyard Kipling (1899)",
+      "updatedAt": "2026-11-23T23:07:09.393Z"
+    },
+    "lesson_5_sA": {
+      "hash": "73d54baa1c5be394",
+      "bytes": 192908,
+      "voiceKey": "male_historian",
+      "badge": "Historical Data on Real Wages &…",
+      "updatedAt": "2026-11-23T23:07:10.446Z"
+    },
+    "lesson_5_sB": {
+      "hash": "2802e1c6cd1b2c4a",
+      "bytes": 140972,
+      "voiceKey": "male_historian",
+      "badge": "Friedrich Engels (1845)",
+      "updatedAt": "2026-11-23T23:07:10.927Z"
+    },
+    "lesson_5_sD": {
+      "hash": "f27debe03a8d4c8f",
+      "bytes": 153740,
+      "voiceKey": "male_historian",
+      "badge": "Dadabhai Naoroji (1901)",
+      "updatedAt": "2026-11-23T23:07:11.388Z"
+    },
+    "lesson_5_sE": {
+      "hash": "022f41df7bea826c",
+      "bytes": 175340,
+      "voiceKey": "male_historian",
+      "badge": "Lord Curzon (1901)",
+      "updatedAt": "2026-11-23T23:07:11.933Z"
+    },
+    "lesson_1_sE": {
+      "hash": "054694beea90f537",
+      "bytes": 161132,
+      "voiceKey": "male_historian",
+      "badge": "Lord George Hamilton Introducing…",
+      "updatedAt": "2026-11-23T23:07:22.072Z"
+    },
+    "lesson_2_sA": {
+      "hash": "08910fe129135df0",
+      "bytes": 86060,
+      "voiceKey": "male_historian",
+      "badge": "Benjamin West (1795)",
+      "updatedAt": "2026-11-23T23:07:22.897Z"
+    },
+    "lesson_2_sC": {
+      "hash": "62047e94274ed88f",
+      "bytes": 131852,
+      "voiceKey": "male_historian",
+      "badge": "The British Calico Act (1721)",
+      "updatedAt": "2026-11-23T23:07:23.406Z"
+    },
+    "lesson_2_sE": {
+      "hash": "17e35c0e2ad46956",
+      "bytes": 76652,
+      "voiceKey": "male_historian",
+      "badge": "Governor-General Lord William Be…",
+      "updatedAt": "2026-11-23T23:07:23.742Z"
+    },
+    "lesson_3_sA": {
+      "hash": "75b5297164425e58",
+      "bytes": 93740,
+      "voiceKey": "male_historian",
+      "badge": "Sepoy Grievance over the Greased…",
+      "updatedAt": "2026-11-23T23:07:24.709Z"
+    },
+    "lesson_3_sC": {
+      "hash": "b4b0a47f02393a60",
+      "bytes": 132620,
+      "voiceKey": "male_historian",
+      "badge": "The Azamgarh Proclamation",
+      "updatedAt": "2026-11-23T23:07:25.101Z"
+    },
+    "lesson_1_sC": {
+      "hash": "f01c74c10522b3c2",
+      "bytes": 140780,
+      "voiceKey": "male_historian",
+      "badge": "The Navigation Act (1660)",
+      "updatedAt": "2026-11-23T23:07:29.071Z"
+    },
+    "lesson_4_sD": {
+      "hash": "bc4e2f5b340fe1a4",
+      "bytes": 154796,
+      "voiceKey": "female_historian",
+      "badge": "E. D. Morel (1920)",
+      "updatedAt": "2026-11-23T23:12:21.757Z"
+    },
+    "lesson_4_sE": {
+      "hash": "88565f56845d6cbe",
+      "bytes": 264908,
+      "voiceKey": "female_historian",
+      "badge": "King Lobengula of Matabeleland…",
+      "updatedAt": "2026-11-23T23:12:22.422Z"
+    },
+    "lesson_1_sD": {
+      "hash": "b30ed1b62b986466",
+      "bytes": 160460,
+      "voiceKey": "female_historian",
+      "badge": "Vice-Admiral Cuthbert Collingwoo…",
+      "updatedAt": "2026-11-23T23:12:31.815Z"
+    },
+    "lesson_2_sB": {
+      "hash": "2013bb01dfe64e2e",
+      "bytes": 126860,
+      "voiceKey": "female_historian",
+      "badge": "Public Statue of Samuel Crompton…",
+      "updatedAt": "2026-11-23T23:12:32.306Z"
+    },
+    "lesson_2_sD": {
+      "hash": "9a7643719fd3286f",
+      "bytes": 115820,
+      "voiceKey": "female_historian",
+      "badge": "Evidence on the Collapse of the…",
+      "updatedAt": "2026-11-23T23:12:32.756Z"
+    },
+    "lesson_3_sB": {
+      "hash": "bdb03ac4fd1dcf03",
+      "bytes": 108140,
+      "voiceKey": "female_historian",
+      "badge": "Contemporary Portrait of Rani La…",
+      "updatedAt": "2026-11-23T23:12:33.268Z"
+    },
+    "lesson_3_sD": {
+      "hash": "e994cbdc98736e54",
+      "bytes": 104588,
+      "voiceKey": "female_historian",
+      "badge": "Reference Map",
+      "updatedAt": "2026-11-23T23:12:33.709Z"
+    },
+    "lesson_3_sE": {
+      "hash": "fd007179bec82ce4",
+      "bytes": 142892,
+      "voiceKey": "female_historian",
+      "badge": "Queen Victoria’s Royal Proclamat…",
+      "updatedAt": "2026-11-23T23:12:34.233Z"
+    }
+  }
+}

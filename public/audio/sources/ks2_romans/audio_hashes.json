@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "clips": {
+    "lesson_1_sD": {
+      "hash": "ba64bb0d972cba58",
+      "bytes": 143948,
+      "voiceKey": "male_historian",
+      "badge": "Iron Age Gold Stater Coin & Juli…",
+      "updatedAt": "2026-11-23T23:08:42.836Z"
+    },
+    "lesson_2_sD": {
+      "hash": "2ded12648611272f",
+      "bytes": 136268,
+      "voiceKey": "male_historian",
+      "badge": "Richborough Roman Fort (Kent) &…",
+      "updatedAt": "2026-11-23T23:08:43.302Z"
+    },
+    "lesson_4_sD": {
+      "hash": "bafb8b0fc304d4d1",
+      "bytes": 148748,
+      "voiceKey": "male_historian",
+      "badge": "Reconstructed Gatehouse & Tombst…",
+      "updatedAt": "2026-11-23T23:08:43.743Z"
+    },
+    "lesson_3_sA": {
+      "hash": "6ffc2fd2dedb167f",
+      "bytes": 160652,
+      "voiceKey": "female_historian",
+      "badge": "Statue of Boudicca in Her Chario…",
+      "updatedAt": "2026-11-23T23:12:00.155Z"
+    },
+    "lesson_4_sC": {
+      "hash": "bb3d5c91bfa4a63f",
+      "bytes": 157484,
+      "voiceKey": "female_historian",
+      "badge": "Vindolanda Wooden Ink Letters —…",
+      "updatedAt": "2026-11-23T23:12:37.517Z"
+    },
+    "lesson_6_sA": {
+      "hash": "f8ae0a3d514468a3",
+      "bytes": 129740,
+      "voiceKey": "female_historian",
+      "badge": "Gold Solidus Coin of Emperor Hon…",
+      "updatedAt": "2026-11-23T23:12:38.868Z"
+    }
+  }
+}

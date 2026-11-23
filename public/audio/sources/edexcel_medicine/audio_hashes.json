@@ -1,0 +1,698 @@
+{
+  "version": 1,
+  "clips": {
+    "lesson_1_1_sA": {
+      "hash": "d79a75496b684c56",
+      "bytes": 166700,
+      "voiceKey": "male_historian",
+      "badge": "Pastoral Letter of William Zouch…",
+      "updatedAt": "2026-11-23T23:03:11.238Z"
+    },
+    "lesson_1_1_sB": {
+      "hash": "053d0621504ad026",
+      "bytes": 160652,
+      "voiceKey": "male_historian",
+      "badge": "The Sarum Rite for the Seclusion…",
+      "updatedAt": "2026-11-23T23:03:11.718Z"
+    },
+    "lesson_1_1_sE": {
+      "hash": "746d23c84c309d4f",
+      "bytes": 162092,
+      "voiceKey": "male_historian",
+      "badge": "Roger Bacon (c.1267)",
+      "updatedAt": "2026-11-23T23:03:12.183Z"
+    },
+    "lesson_1_2_sA": {
+      "hash": "e1d6e763349b3c28",
+      "bytes": 113228,
+      "voiceKey": "male_historian",
+      "badge": "Hippocratic Corpus",
+      "updatedAt": "2026-11-23T23:03:12.579Z"
+    },
+    "lesson_1_2_sC": {
+      "hash": "3103d562898b3d34",
+      "bytes": 145100,
+      "voiceKey": "male_historian",
+      "badge": "Galen of Pergamon",
+      "updatedAt": "2026-11-23T23:03:13.044Z"
+    },
+    "lesson_1_3_sA": {
+      "hash": "19edd295a8f65196",
+      "bytes": 143660,
+      "voiceKey": "male_historian",
+      "badge": "Benedict of Peterborough (c.1200)",
+      "updatedAt": "2026-11-23T23:03:13.520Z"
+    },
+    "lesson_3_3_sA": {
+      "hash": "49a512c58ed44205",
+      "bytes": 101900,
+      "voiceKey": "male_historian",
+      "badge": "Hospital Physician’s Testimony o…",
+      "updatedAt": "2026-11-23T23:04:21.597Z"
+    },
+    "lesson_3_4_sD": {
+      "hash": "045d425b592886dc",
+      "bytes": 209612,
+      "voiceKey": "male_historian",
+      "badge": "Operating Under Joseph Lister’s…",
+      "updatedAt": "2026-11-23T23:04:22.189Z"
+    },
+    "lesson_3_5_sA": {
+      "hash": "a0796323b56e1f6d",
+      "bytes": 149420,
+      "voiceKey": "male_historian",
+      "badge": "Edwin Chadwick (1842)",
+      "updatedAt": "2026-11-23T23:04:22.657Z"
+    },
+    "lesson_4_1_sA": {
+      "hash": "fda27732eb25f886",
+      "bytes": 143180,
+      "voiceKey": "male_historian",
+      "badge": "Gregor Mendel",
+      "updatedAt": "2026-11-23T23:04:23.108Z"
+    },
+    "lesson_4_1_sD": {
+      "hash": "29c5223bc18f38ef",
+      "bytes": 198380,
+      "voiceKey": "male_historian",
+      "badge": "President Bill Clinton and Prime…",
+      "updatedAt": "2026-11-23T23:04:23.692Z"
+    },
+    "lesson_4_2_sB": {
+      "hash": "dc46ea113c102c30",
+      "bytes": 130220,
+      "voiceKey": "male_historian",
+      "badge": "Medical Report on the Clinical I…",
+      "updatedAt": "2026-11-23T23:04:24.140Z"
+    },
+    "lesson_4_2_sD": {
+      "hash": "90c9aec629a6367e",
+      "bytes": 115532,
+      "voiceKey": "male_historian",
+      "badge": "Annual Report of the Chief Medic…",
+      "updatedAt": "2026-11-23T23:04:24.572Z"
+    },
+    "lesson_4_3_sA": {
+      "hash": "1471d5df5b9def74",
+      "bytes": 207788,
+      "voiceKey": "male_historian",
+      "badge": "Paul Ehrlich",
+      "updatedAt": "2026-11-23T23:04:25.182Z"
+    },
+    "lesson_1_3_sD": {
+      "hash": "79f7318043385cce",
+      "bytes": 150860,
+      "voiceKey": "male_historian",
+      "badge": "Compendium on the Preparation of…",
+      "updatedAt": "2026-11-23T23:04:27.769Z"
+    },
+    "lesson_1_3_sE": {
+      "hash": "7926d87fb9f39565",
+      "bytes": 102092,
+      "voiceKey": "male_historian",
+      "badge": "Regimen Sanitatis Salernitanum (…",
+      "updatedAt": "2026-11-23T23:04:28.155Z"
+    },
+    "lesson_1_4_sA": {
+      "hash": "ed44307d2940fd23",
+      "bytes": 148268,
+      "voiceKey": "male_historian",
+      "badge": "Geoffrey Chaucer (c.1387)",
+      "updatedAt": "2026-11-23T23:04:28.634Z"
+    },
+    "lesson_1_4_sB": {
+      "hash": "720432a4e2b8d0c3",
+      "bytes": 104300,
+      "voiceKey": "male_historian",
+      "badge": "Ordinance of the Pepperers and A…",
+      "updatedAt": "2026-11-23T23:04:29.031Z"
+    },
+    "lesson_1_4_sD": {
+      "hash": "e557281cb0c2a04b",
+      "bytes": 158828,
+      "voiceKey": "male_historian",
+      "badge": "Statutes of St Bartholomew’s Hos…",
+      "updatedAt": "2026-11-23T23:04:29.477Z"
+    },
+    "lesson_1_5_sD": {
+      "hash": "85f0c4ec5a0535aa",
+      "bytes": 122540,
+      "voiceKey": "male_historian",
+      "badge": "Royal Proclamation of King Edwar…",
+      "updatedAt": "2026-11-23T23:04:29.891Z"
+    },
+    "lesson_2_1_sB": {
+      "hash": "a811086575bb8226",
+      "bytes": 151532,
+      "voiceKey": "male_historian",
+      "badge": "Desiderius Erasmus (1511)",
+      "updatedAt": "2026-11-23T23:04:30.315Z"
+    },
+    "lesson_2_1_sC": {
+      "hash": "36a4570bec612960",
+      "bytes": 144620,
+      "voiceKey": "male_historian",
+      "badge": "Second Royal Charter Granted to…",
+      "updatedAt": "2026-11-23T23:04:30.760Z"
+    },
+    "lesson_2_1_sD": {
+      "hash": "b6d58054bb500077",
+      "bytes": 149612,
+      "voiceKey": "male_historian",
+      "badge": "Henry Oldenburg",
+      "updatedAt": "2026-11-23T23:04:31.583Z"
+    },
+    "lesson_2_2_sB": {
+      "hash": "4214ac2061cf326e",
+      "bytes": 169580,
+      "voiceKey": "male_historian",
+      "badge": "Thomas Sydenham (1676)",
+      "updatedAt": "2026-11-23T23:04:32.117Z"
+    },
+    "lesson_2_2_sC": {
+      "hash": "c064a5eedf5ecb58",
+      "bytes": 147692,
+      "voiceKey": "male_historian",
+      "badge": "Thomas Sydenham on Treating Mala…",
+      "updatedAt": "2026-11-23T23:04:32.756Z"
+    },
+    "lesson_2_2_sD": {
+      "hash": "a35c410b53db1a9f",
+      "bytes": 142700,
+      "voiceKey": "male_historian",
+      "badge": "Thomas Sydenham on the \"Cool Reg…",
+      "updatedAt": "2026-11-23T23:04:33.208Z"
+    },
+    "lesson_2_3_sB": {
+      "hash": "89cd595da1a91cb5",
+      "bytes": 165068,
+      "voiceKey": "male_historian",
+      "badge": "Andreas Vesalius (1543)",
+      "updatedAt": "2026-11-23T23:04:33.714Z"
+    },
+    "lesson_2_3_sC": {
+      "hash": "1a1627ef95c56d99",
+      "bytes": 142700,
+      "voiceKey": "male_historian",
+      "badge": "Andreas Vesalius Disproving Pore…",
+      "updatedAt": "2026-11-23T23:04:34.201Z"
+    },
+    "lesson_2_4_sA": {
+      "hash": "f6c76eed3a086dc2",
+      "bytes": 114572,
+      "voiceKey": "male_historian",
+      "badge": "William Harvey (1628)",
+      "updatedAt": "2026-11-23T23:04:34.672Z"
+    },
+    "lesson_2_4_sB": {
+      "hash": "bb3fd23d8385db65",
+      "bytes": 154892,
+      "voiceKey": "male_historian",
+      "badge": "William Harvey (1628)",
+      "updatedAt": "2026-11-23T23:04:35.202Z"
+    },
+    "lesson_2_5_sB": {
+      "hash": "00cc7c5afcbf544f",
+      "bytes": 143468,
+      "voiceKey": "male_historian",
+      "badge": "Royal College of Physicians (1665)",
+      "updatedAt": "2026-11-23T23:04:41.545Z"
+    },
+    "lesson_2_5_sC": {
+      "hash": "3d8a8a87cae0f3d8",
+      "bytes": 146348,
+      "voiceKey": "male_historian",
+      "badge": "Orders Conceived and Published b…",
+      "updatedAt": "2026-11-23T23:04:42.054Z"
+    },
+    "lesson_2_5_sD": {
+      "hash": "874e7f608935f4b0",
+      "bytes": 106988,
+      "voiceKey": "male_historian",
+      "badge": "Daniel Defoe / Civic Plague Reco…",
+      "updatedAt": "2026-11-23T23:04:42.515Z"
+    },
+    "lesson_2_5_sE": {
+      "hash": "459fbe2a25d14113",
+      "bytes": 158060,
+      "voiceKey": "male_historian",
+      "badge": "Samuel Pepys’s Diary (31 Aug 166…",
+      "updatedAt": "2026-11-23T23:04:43.001Z"
+    },
+    "lesson_3_1_sB": {
+      "hash": "513c428f9b225341",
+      "bytes": 171500,
+      "voiceKey": "male_historian",
+      "badge": "Louis Pasteur",
+      "updatedAt": "2026-11-23T23:04:43.526Z"
+    },
+    "lesson_3_1_sE": {
+      "hash": "f9c9260cdb77175d",
+      "bytes": 150188,
+      "voiceKey": "male_historian",
+      "badge": "Robert Koch",
+      "updatedAt": "2026-11-23T23:04:44.092Z"
+    },
+    "lesson_3_2_sB": {
+      "hash": "5c523cc07d0615a4",
+      "bytes": 229388,
+      "voiceKey": "male_historian",
+      "badge": "Dr Edward Jenner’s Inquiry (1798)",
+      "updatedAt": "2026-11-23T23:04:44.670Z"
+    },
+    "lesson_3_2_sD": {
+      "hash": "2a9987392d54d693",
+      "bytes": 196268,
+      "voiceKey": "male_historian",
+      "badge": "Debate in the House of Commons o…",
+      "updatedAt": "2026-11-23T23:04:45.224Z"
+    },
+    "lesson_4_5_sD": {
+      "hash": "9d77021998008c28",
+      "bytes": 123596,
+      "voiceKey": "male_historian",
+      "badge": "Cancer Research UK Briefing on P…",
+      "updatedAt": "2026-11-23T23:04:50.805Z"
+    },
+    "lesson_5_1_sB": {
+      "hash": "ef4ee88fe4e15881",
+      "bytes": 170732,
+      "voiceKey": "male_historian",
+      "badge": "From the Official War Diary of a…",
+      "updatedAt": "2026-11-23T23:04:51.298Z"
+    },
+    "lesson_5_1_sD": {
+      "hash": "cd5f56006f71ef3a",
+      "bytes": 185708,
+      "voiceKey": "male_historian",
+      "badge": "From an Account by a British Arm…",
+      "updatedAt": "2026-11-23T23:04:51.811Z"
+    },
+    "lesson_5_2_sB": {
+      "hash": "fdb2b716bc9ab0cc",
+      "bytes": 195020,
+      "voiceKey": "male_historian",
+      "badge": "From 2nd Battalion Routine Stand…",
+      "updatedAt": "2026-11-23T23:04:52.387Z"
+    },
+    "lesson_5_2_sD": {
+      "hash": "1f4fa40d2702e638",
+      "bytes": 114092,
+      "voiceKey": "male_historian",
+      "badge": "Report of an RAMC Divisional San…",
+      "updatedAt": "2026-11-23T23:04:52.801Z"
+    },
+    "lesson_5_3_sB": {
+      "hash": "52b1baa070330cb8",
+      "bytes": 237356,
+      "voiceKey": "male_historian",
+      "badge": "From an RAMC Surgical Report on…",
+      "updatedAt": "2026-11-23T23:04:53.472Z"
+    },
+    "lesson_5_3_sD": {
+      "hash": "66b1cd8e6aca6a91",
+      "bytes": 213932,
+      "voiceKey": "male_historian",
+      "badge": "From an Account by an RAMC Medic…",
+      "updatedAt": "2026-11-23T23:04:54.100Z"
+    },
+    "lesson_5_4_sB": {
+      "hash": "30daa93b5efd4108",
+      "bytes": 208172,
+      "voiceKey": "male_historian",
+      "badge": "From the Diary of Captain J. C.…",
+      "updatedAt": "2026-11-23T23:04:54.673Z"
+    },
+    "lesson_4_3_sB": {
+      "hash": "0e1470d94e08df63",
+      "bytes": 117068,
+      "voiceKey": "male_historian",
+      "badge": "Gerhard Domagk",
+      "updatedAt": "2026-11-23T23:04:56.727Z"
+    },
+    "lesson_4_3_sC": {
+      "hash": "e8018cb1b4303acb",
+      "bytes": 228908,
+      "voiceKey": "male_historian",
+      "badge": "Sir William Beveridge",
+      "updatedAt": "2026-11-23T23:04:57.375Z"
+    },
+    "lesson_4_3_sE": {
+      "hash": "1634d9422068b17f",
+      "bytes": 126188,
+      "voiceKey": "male_historian",
+      "badge": "NHS Clinical Review on High-Tech…",
+      "updatedAt": "2026-11-23T23:04:57.835Z"
+    },
+    "lesson_4_4_sA": {
+      "hash": "58b932dff442162f",
+      "bytes": 209228,
+      "voiceKey": "male_historian",
+      "badge": "Alexander Fleming’s Penicillium…",
+      "updatedAt": "2026-11-23T23:04:58.378Z"
+    },
+    "lesson_4_4_sB": {
+      "hash": "5d7273b034468025",
+      "bytes": 118988,
+      "voiceKey": "male_historian",
+      "badge": "Dr Norman Heatley’s Recollection…",
+      "updatedAt": "2026-11-23T23:04:58.789Z"
+    },
+    "lesson_4_4_sC": {
+      "hash": "ab9aa7a07ec1587b",
+      "bytes": 248012,
+      "voiceKey": "male_historian",
+      "badge": "Howard Florey",
+      "updatedAt": "2026-11-23T23:04:59.423Z"
+    },
+    "lesson_4_4_sE": {
+      "hash": "23340e1c45422e67",
+      "bytes": 247148,
+      "voiceKey": "male_historian",
+      "badge": "Sir Alexander Fleming",
+      "updatedAt": "2026-11-23T23:05:00.014Z"
+    },
+    "lesson_4_5_sB": {
+      "hash": "0332e365434f8d4f",
+      "bytes": 115628,
+      "voiceKey": "male_historian",
+      "badge": "NHS Thoracic Diagnostic Pathway…",
+      "updatedAt": "2026-11-23T23:05:00.407Z"
+    },
+    "root_xams_4_section_a_questions_3_s1": {
+      "hash": "e9884992234dadd0",
+      "bytes": 183500,
+      "voiceKey": "male_historian",
+      "badge": "Living Archive · Primary Record",
+      "updatedAt": "2026-11-23T23:05:23.123Z"
+    },
+    "lesson_5_5_sB": {
+      "hash": "a8b685ad0fbb11aa",
+      "bytes": 241388,
+      "voiceKey": "male_historian",
+      "badge": "From a Paper by Dr Alexis Carrel…",
+      "updatedAt": "2026-11-23T23:05:27.502Z"
+    },
+    "lesson_5_5_sC": {
+      "hash": "370aafb88c6e9510",
+      "bytes": 248972,
+      "voiceKey": "male_historian",
+      "badge": "From an Official Report by Sir R…",
+      "updatedAt": "2026-11-23T23:05:28.100Z"
+    },
+    "lesson_5_6_sB": {
+      "hash": "f39d5ac4cf23a5b1",
+      "bytes": 149612,
+      "voiceKey": "male_historian",
+      "badge": "Dr. Francis Peyton Rous and Dr.…",
+      "updatedAt": "2026-11-23T23:05:28.667Z"
+    },
+    "lesson_5_6_sD": {
+      "hash": "461df2e0d8db229e",
+      "bytes": 241292,
+      "voiceKey": "male_historian",
+      "badge": "From the Western Front War Diary…",
+      "updatedAt": "2026-11-23T23:05:29.307Z"
+    },
+    "lesson_5_6_sE": {
+      "hash": "4add492f45296002",
+      "bytes": 268652,
+      "voiceKey": "male_historian",
+      "badge": "From an Account by Sir Harold Gi…",
+      "updatedAt": "2026-11-23T23:05:30.033Z"
+    },
+    "root_xams_1_section_a_questions_3_s1": {
+      "hash": "3b3ff2ca7b29a2e0",
+      "bytes": 167372,
+      "voiceKey": "male_historian",
+      "badge": "Living Archive · Primary Record",
+      "updatedAt": "2026-11-23T23:05:30.578Z"
+    },
+    "root_xams_2_section_a_questions_3_s1": {
+      "hash": "77aca2255bf5948a",
+      "bytes": 116300,
+      "voiceKey": "male_historian",
+      "badge": "Living Archive · Primary Record",
+      "updatedAt": "2026-11-23T23:05:30.997Z"
+    },
+    "root_xams_3_section_a_questions_3_s1": {
+      "hash": "b01b36866fcae087",
+      "bytes": 121388,
+      "voiceKey": "male_historian",
+      "badge": "Living Archive · Primary Record",
+      "updatedAt": "2026-11-23T23:05:31.413Z"
+    },
+    "lesson_1_2_sE": {
+      "hash": "42ffb061c3cc3ebf",
+      "bytes": 147980,
+      "voiceKey": "female_historian",
+      "badge": "London Assize of Nuisance Court…",
+      "updatedAt": "2026-11-23T23:09:36.499Z"
+    },
+    "lesson_1_4_sE": {
+      "hash": "71e4dc26349da8cd",
+      "bytes": 132140,
+      "voiceKey": "female_historian",
+      "badge": "Domestic Recipe Book of a Househ…",
+      "updatedAt": "2026-11-23T23:09:38.399Z"
+    },
+    "lesson_1_5_sA": {
+      "hash": "c4f7ac5bb645de3b",
+      "bytes": 161132,
+      "voiceKey": "female_historian",
+      "badge": "Giovanni Boccaccio (1348)",
+      "updatedAt": "2026-11-23T23:09:39.603Z"
+    },
+    "lesson_1_5_sE": {
+      "hash": "9c94cb600349116b",
+      "bytes": 128108,
+      "voiceKey": "female_historian",
+      "badge": "Henry Knighton (1349)",
+      "updatedAt": "2026-11-23T23:09:40.054Z"
+    },
+    "lesson_5_6_sC": {
+      "hash": "b57c1d3b7a21699b",
+      "bytes": 240524,
+      "voiceKey": "female_historian",
+      "badge": "From a Report by Captain Oswald…",
+      "updatedAt": "2026-11-23T23:09:59.921Z"
+    },
+    "root_xams_1_section_a_questions_3_s2": {
+      "hash": "27d2ebcaca24a07d",
+      "bytes": 169580,
+      "voiceKey": "female_historian",
+      "badge": "Living Archive · Primary Record",
+      "updatedAt": "2026-11-23T23:10:00.435Z"
+    },
+    "root_xams_2_section_a_questions_3_s2": {
+      "hash": "0fb328d1be7273b7",
+      "bytes": 102188,
+      "voiceKey": "female_historian",
+      "badge": "Living Archive · Primary Record",
+      "updatedAt": "2026-11-23T23:10:00.818Z"
+    },
+    "root_xams_3_section_a_questions_3_s2": {
+      "hash": "20d990aaf0c0bf1b",
+      "bytes": 131468,
+      "voiceKey": "female_historian",
+      "badge": "Living Archive · Primary Record",
+      "updatedAt": "2026-11-23T23:10:01.262Z"
+    },
+    "root_xams_4_section_a_questions_3_s2": {
+      "hash": "1748fadcd187dadb",
+      "bytes": 101420,
+      "voiceKey": "female_historian",
+      "badge": "Living Archive · Primary Record",
+      "updatedAt": "2026-11-23T23:10:01.665Z"
+    },
+    "lesson_5_1_sE": {
+      "hash": "423018255af47383",
+      "bytes": 190892,
+      "voiceKey": "female_historian",
+      "badge": "From an Official Report by the D…",
+      "updatedAt": "2026-11-23T23:10:07.886Z"
+    },
+    "lesson_5_2_sC": {
+      "hash": "51948a24febfb911",
+      "bytes": 212108,
+      "voiceKey": "female_historian",
+      "badge": "From a Report by the British War…",
+      "updatedAt": "2026-11-23T23:10:09.053Z"
+    },
+    "lesson_5_2_sE": {
+      "hash": "b113096cff3e377b",
+      "bytes": 255020,
+      "voiceKey": "female_historian",
+      "badge": "From Medical Case Notes of an RA…",
+      "updatedAt": "2026-11-23T23:10:09.705Z"
+    },
+    "lesson_5_3_sA": {
+      "hash": "a445c1d8cf4597e7",
+      "bytes": 147212,
+      "voiceKey": "female_historian",
+      "badge": "Report of an RAMC Consulting Sur…",
+      "updatedAt": "2026-11-23T23:10:10.829Z"
+    },
+    "lesson_5_3_sC": {
+      "hash": "5bacf86dc78f5b55",
+      "bytes": 185612,
+      "voiceKey": "female_historian",
+      "badge": "Report of RAMC Consulting Surgeo…",
+      "updatedAt": "2026-11-23T23:10:11.339Z"
+    },
+    "lesson_5_4_sC": {
+      "hash": "5b1f0dd95386bb9a",
+      "bytes": 243212,
+      "voiceKey": "female_historian",
+      "badge": "From an Inspection Report on Adv…",
+      "updatedAt": "2026-11-23T23:10:20.301Z"
+    },
+    "lesson_5_4_sD": {
+      "hash": "a76c666ab4b5f614",
+      "bytes": 104300,
+      "voiceKey": "female_historian",
+      "badge": "Surgical Sister’s Triage & Opera…",
+      "updatedAt": "2026-11-23T23:10:20.763Z"
+    },
+    "lesson_5_4_sE": {
+      "hash": "1a84bacf277058ed",
+      "bytes": 233900,
+      "voiceKey": "female_historian",
+      "badge": "From the Memoir of an Ambulance…",
+      "updatedAt": "2026-11-23T23:10:21.338Z"
+    },
+    "lesson_5_5_sE": {
+      "hash": "7afab53ada026b93",
+      "bytes": 225260,
+      "voiceKey": "female_historian",
+      "badge": "From the Memoir of a British Arm…",
+      "updatedAt": "2026-11-23T23:10:22.567Z"
+    },
+    "lesson_5_6_sA": {
+      "hash": "4950e7569034ad27",
+      "bytes": 153740,
+      "voiceKey": "female_historian",
+      "badge": "Dr. Richard Lewisohn (1915)",
+      "updatedAt": "2026-11-23T23:10:23.757Z"
+    },
+    "lesson_3_4_sC": {
+      "hash": "4adbda0330fb4bf0",
+      "bytes": 153068,
+      "voiceKey": "female_historian",
+      "badge": "John Eric Erichsen (1874)",
+      "updatedAt": "2026-11-23T23:10:24.472Z"
+    },
+    "lesson_3_4_sE": {
+      "hash": "49dbca09229d1236",
+      "bytes": 204140,
+      "voiceKey": "female_historian",
+      "badge": "Robert Lawson Tait (1880)",
+      "updatedAt": "2026-11-23T23:10:25.023Z"
+    },
+    "lesson_3_5_sE": {
+      "hash": "238f1472b6771e1c",
+      "bytes": 272300,
+      "voiceKey": "female_historian",
+      "badge": "Public Health Act 1875",
+      "updatedAt": "2026-11-23T23:10:26.496Z"
+    },
+    "lesson_4_1_sB": {
+      "hash": "4ad9f62e631d432f",
+      "bytes": 158348,
+      "voiceKey": "female_historian",
+      "badge": "Dr Rosalind Franklin (1952)",
+      "updatedAt": "2026-11-23T23:10:27.586Z"
+    },
+    "lesson_4_1_sE": {
+      "hash": "eb90cfecea263abd",
+      "bytes": 209228,
+      "voiceKey": "female_historian",
+      "badge": "Dr Francis Collins (2003)",
+      "updatedAt": "2026-11-23T23:10:28.084Z"
+    },
+    "lesson_4_2_sA": {
+      "hash": "b725f4b0d3e716d5",
+      "bytes": 207692,
+      "voiceKey": "female_historian",
+      "badge": "Wilhelm Conrad Röntgen",
+      "updatedAt": "2026-11-23T23:10:29.346Z"
+    },
+    "lesson_4_2_sE": {
+      "hash": "3baeda7920bca77a",
+      "bytes": 269612,
+      "voiceKey": "female_historian",
+      "badge": "Department of Health & Social Se…",
+      "updatedAt": "2026-11-23T23:10:30.067Z"
+    },
+    "lesson_4_5_sA": {
+      "hash": "030bee755520b42f",
+      "bytes": 220268,
+      "voiceKey": "female_historian",
+      "badge": "Richard Doll and Austin Bradford…",
+      "updatedAt": "2026-11-23T23:10:32.360Z"
+    },
+    "lesson_4_5_sC": {
+      "hash": "ea955edf46087a4e",
+      "bytes": 142892,
+      "voiceKey": "female_historian",
+      "badge": "Royal College of Surgeons Clinic…",
+      "updatedAt": "2026-11-23T23:10:32.894Z"
+    },
+    "lesson_4_5_sE": {
+      "hash": "b9a1442742e3e417",
+      "bytes": 234572,
+      "voiceKey": "female_historian",
+      "badge": "UK Government Compulsion",
+      "updatedAt": "2026-11-23T23:10:33.559Z"
+    },
+    "lesson_3_2_sA": {
+      "hash": "d29778a44be8cb13",
+      "bytes": 131852,
+      "voiceKey": "female_historian",
+      "badge": "Lady Mary Wortley Montagu",
+      "updatedAt": "2026-11-23T23:10:35.012Z"
+    },
+    "lesson_3_3_sB": {
+      "hash": "e4b7ae8522adc899",
+      "bytes": 189740,
+      "voiceKey": "female_historian",
+      "badge": "Florence Nightingale",
+      "updatedAt": "2026-11-23T23:10:36.428Z"
+    },
+    "lesson_3_3_sD": {
+      "hash": "5d7a86bbd493bd3a",
+      "bytes": 211820,
+      "voiceKey": "female_historian",
+      "badge": "Florence Nightingale (1859)",
+      "updatedAt": "2026-11-23T23:10:37.069Z"
+    },
+    "lesson_3_3_sE": {
+      "hash": "5b26ac4b92d6f245",
+      "bytes": 200300,
+      "voiceKey": "female_historian",
+      "badge": "Mary Seacole’s Wonderful Adventu…",
+      "updatedAt": "2026-11-23T23:10:37.713Z"
+    },
+    "lesson_3_4_sA": {
+      "hash": "916a656ed390b130",
+      "bytes": 148268,
+      "voiceKey": "female_historian",
+      "badge": "Contemporary Medical Account of…",
+      "updatedAt": "2026-11-23T23:10:38.964Z"
+    },
+    "lesson_2_3_sE": {
+      "hash": "aaf5912b3e5f923c",
+      "bytes": 118700,
+      "voiceKey": "female_historian",
+      "badge": "Thomas Geminus",
+      "updatedAt": "2026-11-23T23:10:41.530Z"
+    },
+    "lesson_3_1_sA": {
+      "hash": "c7a4513c303e5152",
+      "bytes": 111980,
+      "voiceKey": "female_historian",
+      "badge": "Early Victorian Medical Textbook…",
+      "updatedAt": "2026-11-23T23:10:44.092Z"
+    }
+  }
+}

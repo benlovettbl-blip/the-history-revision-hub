@@ -1,0 +1,89 @@
+{
+  "version": 1,
+  "clips": {
+    "lesson_6_sC": {
+      "hash": "a252bbb8f3f334c1",
+      "bytes": 92108,
+      "voiceKey": "male_historian",
+      "badge": "11th-Century Bayeux Tapestry (1066)",
+      "updatedAt": "2026-11-23T23:08:23.714Z"
+    },
+    "lesson_4_sB": {
+      "hash": "e43737a0a6ed5bec",
+      "bytes": 92780,
+      "voiceKey": "male_historian",
+      "badge": "Silver Penny Coin of King Alfred…",
+      "updatedAt": "2026-11-23T23:08:31.707Z"
+    },
+    "lesson_4_sC": {
+      "hash": "52e08a503c5dc76c",
+      "bytes": 150092,
+      "voiceKey": "male_historian",
+      "badge": "Old English Manuscript Page of t…",
+      "updatedAt": "2026-11-23T23:08:32.123Z"
+    },
+    "lesson_4_sD": {
+      "hash": "9521b3690b8d37f6",
+      "bytes": 141548,
+      "voiceKey": "male_historian",
+      "badge": "Bratton Camp Chalk Escarpment ne…",
+      "updatedAt": "2026-11-23T23:08:32.558Z"
+    },
+    "lesson_5_sA": {
+      "hash": "1fa16efe476a6947",
+      "bytes": 104012,
+      "voiceKey": "male_historian",
+      "badge": "8th-Century Coppergate Helmet Di…",
+      "updatedAt": "2026-11-23T23:08:33.406Z"
+    },
+    "lesson_6_sA": {
+      "hash": "557539449871ecc6",
+      "bytes": 147980,
+      "voiceKey": "male_historian",
+      "badge": "Illuminated Portrait of King Ath…",
+      "updatedAt": "2026-11-23T23:08:34.245Z"
+    },
+    "lesson_6_sB": {
+      "hash": "1e7c3814e40e63ec",
+      "bytes": 136268,
+      "voiceKey": "male_historian",
+      "badge": "Silver Penny Coin & King Cnut's…",
+      "updatedAt": "2026-11-23T23:08:34.688Z"
+    },
+    "lesson_1_sA": {
+      "hash": "7ad2d5427e0d42e1",
+      "bytes": 140012,
+      "voiceKey": "male_historian",
+      "badge": "Reconstructed Anglo-Saxon Villag…",
+      "updatedAt": "2026-11-23T23:08:45.211Z"
+    },
+    "lesson_2_sC": {
+      "hash": "22945277f5b3e3fb",
+      "bytes": 123020,
+      "voiceKey": "male_historian",
+      "badge": "Illuminated Carpet Page from the…",
+      "updatedAt": "2026-11-23T23:08:46.089Z"
+    },
+    "lesson_3_sA": {
+      "hash": "f0f6d58ad49728d7",
+      "bytes": 150092,
+      "voiceKey": "male_historian",
+      "badge": "9th-Century Gokstad Oak Longship…",
+      "updatedAt": "2026-11-23T23:08:47.038Z"
+    },
+    "lesson_4_sA": {
+      "hash": "4ef880452b142718",
+      "bytes": 180428,
+      "voiceKey": "male_historian",
+      "badge": "The Gold",
+      "updatedAt": "2026-11-23T23:08:48.042Z"
+    },
+    "lesson_6_sD": {
+      "hash": "59e93fcbfdc9e6ad",
+      "bytes": 164012,
+      "voiceKey": "female_historian",
+      "badge": "Battle Abbey on Senlac Hill (Has…",
+      "updatedAt": "2026-11-23T23:12:39.384Z"
+    }
+  }
+}

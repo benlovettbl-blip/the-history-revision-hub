@@ -1,0 +1,89 @@
+{
+  "version": 1,
+  "clips": {
+    "lesson_1_sD": {
+      "hash": "3e3481130e3c1a6f",
+      "bytes": 202508,
+      "voiceKey": "male_historian",
+      "badge": "Henry Cort (1784)",
+      "updatedAt": "2026-11-23T23:07:25.931Z"
+    },
+    "lesson_2_sB": {
+      "hash": "f239a97f535d3ecb",
+      "bytes": 155852,
+      "voiceKey": "male_historian",
+      "badge": "Tyldesley Cotton Mill Factory Ru…",
+      "updatedAt": "2026-11-23T23:07:26.353Z"
+    },
+    "lesson_2_sD": {
+      "hash": "f779748ddc9e478d",
+      "bytes": 125420,
+      "voiceKey": "male_historian",
+      "badge": "Parliamentary Sadler Committee R…",
+      "updatedAt": "2026-11-23T23:07:26.763Z"
+    },
+    "lesson_3_sC": {
+      "hash": "9d1488027c51743a",
+      "bytes": 120908,
+      "voiceKey": "male_historian",
+      "badge": "Edwin Chadwick (1842)",
+      "updatedAt": "2026-11-23T23:07:27.169Z"
+    },
+    "lesson_4_sB": {
+      "hash": "3d1a36bd85df3b12",
+      "bytes": 84428,
+      "voiceKey": "male_historian",
+      "badge": "George Cruikshank (1819)",
+      "updatedAt": "2026-11-23T23:07:27.541Z"
+    },
+    "lesson_4_sD": {
+      "hash": "3410a6f79646ec25",
+      "bytes": 134060,
+      "voiceKey": "male_historian",
+      "badge": "Contemporary Report of the Winch…",
+      "updatedAt": "2026-11-23T23:07:28.020Z"
+    },
+    "lesson_1_sE": {
+      "hash": "95887e6e6302109d",
+      "bytes": 101228,
+      "voiceKey": "female_historian",
+      "badge": "Admiralty Navy Board Portsmouth…",
+      "updatedAt": "2026-11-23T23:11:15.119Z"
+    },
+    "lesson_2_sE": {
+      "hash": "47569bd19c5a5dd5",
+      "bytes": 211148,
+      "voiceKey": "female_historian",
+      "badge": "The Factory Act 1833",
+      "updatedAt": "2026-11-23T23:11:16.081Z"
+    },
+    "lesson_4_sA": {
+      "hash": "4f951aeca3757521",
+      "bytes": 150572,
+      "voiceKey": "female_historian",
+      "badge": "Declaration of General Ned Ludd…",
+      "updatedAt": "2026-11-23T23:11:17.374Z"
+    },
+    "lesson_4_sC": {
+      "hash": "616b6ada294b408d",
+      "bytes": 116012,
+      "voiceKey": "female_historian",
+      "badge": "The Threat of Captain Swing",
+      "updatedAt": "2026-11-23T23:11:17.823Z"
+    },
+    "lesson_4_sE": {
+      "hash": "12fc16aa6fc1da09",
+      "bytes": 145100,
+      "voiceKey": "female_historian",
+      "badge": "George Loveless (1834)",
+      "updatedAt": "2026-11-23T23:11:18.287Z"
+    },
+    "lesson_5_sC": {
+      "hash": "ba744869b760fae6",
+      "bytes": 151532,
+      "voiceKey": "female_historian",
+      "badge": "The Representation of the People…",
+      "updatedAt": "2026-11-23T23:12:31.284Z"
+    }
+  }
+}

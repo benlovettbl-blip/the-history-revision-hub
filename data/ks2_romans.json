@@ -317,7 +317,9 @@
               "question": "Compare Caesar's words and the gold coin in Source D. What proves Britain was rich, and why might Caesar exaggerate Celtic fierceness?",
               "model_answer": "Source D proves Britons minted gold coins, kept large cattle herds, and mined tin and iron. However, Caesar wrote to impress readers back in Rome, so describing blue-painted warriors made his own army sound even braver!",
               "text": "Julius Caesar (54 BC): \"The cattle [are] very numerous. For money they use bronze, or gold coins... In Britain tin is produced, and iron... All the Britons dye themselves with woad, which produces a bluish colour, to look terrible in fight.\"<br><br><strong>In plain words:</strong> Britons keep huge herds of cattle, mine tin and iron, and use gold coins. Before battle, warriors paint their skin blue with woad to scare enemies!",
-              "provenance": "Celtic gold stater coin paired with Julius Caesar, The Gallic War (54 BC)."
+              "provenance": "Celtic gold stater coin paired with Julius Caesar, The Gallic War (54 BC).",
+              "studio_audio": "/audio/sources/ks2_romans/lesson_1_sD.mp3",
+              "studio_voice_label": "Iron Age Gold Stater Coin & Juli…"
             }
           ],
           "image_caption": "The Snettisham Great Torc (c. 150–50 BC), crafted in Norfolk from over a kilogram of twisted gold threads."
@@ -392,7 +394,9 @@
           "question": "Compare Caesar's words and the gold coin in Source D. What proves Britain was rich, and why might Caesar exaggerate Celtic fierceness?",
           "model_answer": "Source D proves Britons minted gold coins, kept large cattle herds, and mined tin and iron. However, Caesar wrote to impress readers back in Rome, so describing blue-painted warriors made his own army sound even braver!",
           "text": "Julius Caesar (54 BC): \"The cattle [are] very numerous. For money they use bronze, or gold coins... In Britain tin is produced, and iron... All the Britons dye themselves with woad, which produces a bluish colour, to look terrible in fight.\"<br><br><strong>In plain words:</strong> Britons keep huge herds of cattle, mine tin and iron, and use gold coins. Before battle, warriors paint their skin blue with woad to scare enemies!",
-          "provenance": "Celtic gold stater coin paired with Julius Caesar, The Gallic War (54 BC)."
+          "provenance": "Celtic gold stater coin paired with Julius Caesar, The Gallic War (54 BC).",
+          "studio_audio": "/audio/sources/ks2_romans/lesson_1_sD.mp3",
+          "studio_voice_label": "Iron Age Gold Stater Coin & Juli…"
         }
       ],
       "causal_domino_spine": {
@@ -939,7 +943,9 @@
         ],
         "spokenTakeaway": "Here is the big story in one sentence. <short pause> Before AD 43, Iron Age Celtic tribes lived in thatched roundhouses, defended hilltop ramparts, crafted gold torcs, and traded tin and wheat across the Channel."
       },
-      "banner_caption": "Iron Age Earthwork Ramparts at British Camp Hillfort (Herefordshire Beacon), Malvern Hills"
+      "banner_caption": "Iron Age Earthwork Ramparts at British Camp Hillfort (Herefordshire Beacon), Malvern Hills",
+      "prologue_audio": "/audio/lessons/ks2_romans/lesson_1_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · Historian"
     },
     {
       "id": "lesson_2",
@@ -1261,7 +1267,9 @@
               "question": "Read Source D. How did Roman soldiers feel before sailing, and how did Claudius claim credit for victory?",
               "model_answer": "Source D shows soldiers grumbled in fear at sailing \"outside the limits of the known world\"! After Plautius beat Caratacus, Claudius joined the army near the Thames with war elephants to lead the capture of Camulodunum himself.",
               "text": "Cassius Dio: \"The soldiers were complaining at carrying on a campaign outside the limits of the known world... Plautius first defeated Caratacus... Claudius himself now joined the expedition, including even elephants; he crossed the Thames and captured Camulodunum.\"<br><br><strong>In plain words:</strong> At first, frightened Roman soldiers grumbled about sailing across the sea to Britain. After General Plautius beat Caratacus, Emperor Claudius arrived with war elephants to capture Colchester!",
-              "provenance": "Richborough Roman Fort (Kent) paired with Cassius Dio, Roman History (c. AD 215)."
+              "provenance": "Richborough Roman Fort (Kent) paired with Cassius Dio, Roman History (c. AD 215).",
+              "studio_audio": "/audio/sources/ks2_romans/lesson_2_sD.mp3",
+              "studio_voice_label": "Richborough Roman Fort (Kent) &…"
             }
           ],
           "image_caption": "The surviving first-century Roman stone lighthouse at Dover, which guided Roman ships across the English Channel into Kent."
@@ -1336,7 +1344,9 @@
           "question": "Read Source D. How did Roman soldiers feel before sailing, and how did Claudius claim credit for victory?",
           "model_answer": "Source D shows soldiers grumbled in fear at sailing \"outside the limits of the known world\"! After Plautius beat Caratacus, Claudius joined the army near the Thames with war elephants to lead the capture of Camulodunum himself.",
           "text": "Cassius Dio: \"The soldiers were complaining at carrying on a campaign outside the limits of the known world... Plautius first defeated Caratacus... Claudius himself now joined the expedition, including even elephants; he crossed the Thames and captured Camulodunum.\"<br><br><strong>In plain words:</strong> At first, frightened Roman soldiers grumbled about sailing across the sea to Britain. After General Plautius beat Caratacus, Emperor Claudius arrived with war elephants to capture Colchester!",
-          "provenance": "Richborough Roman Fort (Kent) paired with Cassius Dio, Roman History (c. AD 215)."
+          "provenance": "Richborough Roman Fort (Kent) paired with Cassius Dio, Roman History (c. AD 215).",
+          "studio_audio": "/audio/sources/ks2_romans/lesson_2_sD.mp3",
+          "studio_voice_label": "Richborough Roman Fort (Kent) &…"
         }
       ],
       "causal_domino_spine": {
@@ -1883,7 +1893,9 @@
         ],
         "spokenTakeaway": "Here is the big story in one sentence. <short pause> Seeking military glory and metal riches in AD 43, Emperor Claudius sent 40,000 disciplined legionaries and war elephants to turn southern Britain into a Roman province."
       },
-      "banner_caption": "Panoramic Sea View of the White Cliffs of Dover Across the English Channel"
+      "banner_caption": "Panoramic Sea View of the White Cliffs of Dover Across the English Channel",
+      "prologue_audio": "/audio/lessons/ks2_romans/lesson_2_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · Historian"
     },
     {
       "id": "lesson_3",
@@ -2128,7 +2140,9 @@
               "question": "Read Tacitus's words in Source A. What had King Prasutagus hoped would happen, and what did Roman officials actually do?",
               "model_answer": "King Prasutagus shared his kingdom with the Roman Emperor to keep his family and people safe. Instead, greedy Roman officers stole Iceni homes like war prizes and mistreated Boudicca and her daughters.",
               "text": "Tacitus: \"Prasutagus, king of the Iceni, had named the emperor his heir along with his two daughters... Kingdom and household were alike plundered like prizes of war... Boudicca, with her daughters in a chariot, cried: 'I am avenging lost freedom!'\"<br><br><strong>In plain words:</strong> King Prasutagus shared his riches with Rome to keep his family safe, but greedy Roman officers stole Iceni homes anyway. Queen Boudicca rode out in her chariot to fight back for freedom!",
-              "provenance": "Westminster Boudicca monument paired with Tacitus, Annals (c. AD 115)."
+              "provenance": "Westminster Boudicca monument paired with Tacitus, Annals (c. AD 115).",
+              "studio_audio": "/audio/sources/ks2_romans/lesson_3_sA.mp3",
+              "studio_voice_label": "Statue of Boudicca in Her Chario…"
             }
           ],
           "image_caption": "Colchester (Camulodunum), standing above the stone base of the Roman Temple of Claudius burned during Boudicca's AD 60 rebellion."
@@ -2229,7 +2243,9 @@
           "question": "Read Tacitus's words in Source A. What had King Prasutagus hoped would happen, and what did Roman officials actually do?",
           "model_answer": "King Prasutagus shared his kingdom with the Roman Emperor to keep his family and people safe. Instead, greedy Roman officers stole Iceni homes like war prizes and mistreated Boudicca and her daughters.",
           "text": "Tacitus: \"Prasutagus, king of the Iceni, had named the emperor his heir along with his two daughters... Kingdom and household were alike plundered like prizes of war... Boudicca, with her daughters in a chariot, cried: 'I am avenging lost freedom!'\"<br><br><strong>In plain words:</strong> King Prasutagus shared his riches with Rome to keep his family safe, but greedy Roman officers stole Iceni homes anyway. Queen Boudicca rode out in her chariot to fight back for freedom!",
-          "provenance": "Westminster Boudicca monument paired with Tacitus, Annals (c. AD 115)."
+          "provenance": "Westminster Boudicca monument paired with Tacitus, Annals (c. AD 115).",
+          "studio_audio": "/audio/sources/ks2_romans/lesson_3_sA.mp3",
+          "studio_voice_label": "Statue of Boudicca in Her Chario…"
         },
         {
           "id": "ks2_romans_l3_src_b",
@@ -2827,7 +2843,9 @@
         ],
         "spokenTakeaway": "Here is the big story in one sentence. <short pause> Outraged by broken Roman promises in AD 60, Queen Boudicca burned three Roman towns before disciplined legionaries defeated her outnumbered rebels in a narrow valley."
       },
-      "banner_caption": "Surviving Roman Stone and Red-Tile Town Wall of Camulodunum in Colchester Castle Park"
+      "banner_caption": "Surviving Roman Stone and Red-Tile Town Wall of Camulodunum in Colchester Castle Park",
+      "prologue_audio": "/audio/lessons/ks2_romans/lesson_3_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · Historian"
     },
     {
       "id": "lesson_4",
@@ -3106,7 +3124,9 @@
               "model_answer": "Source C proves Roman forts were not just stern army camps — officers' wives like Claudia Severa threw warm birthday parties for friends, while cold soldiers needed parcels of woollen socks and underpants!",
               "source_context": "Preserved for nearly 2,000 years in wet, oxygen-free mud at Vindolanda, thin wooden ink letters reveal warm friendships and parcels of socks sent to chilly soldiers. **Hinge Question:** How do personal letters like Claudia Severa's party invitation change our picture of life on a Roman frontier?",
               "text": "Vindolanda wooden ink letters (c. AD 100): \"On 11 September, sister, for my birthday, I warmly ask that you come to us, to make the day happier... Farewell, my dearest soul.\" \"I have sent you woollen socks, sandals, and underpants.\"<br><br><strong>In plain words:</strong> One wooden letter invites Claudia Severa's best friend to her birthday party on 11 September. Another letter lists a cosy parcel of warm socks, sandals, and underpants for a cold soldier!",
-              "provenance": "Wooden ink letters excavated from wet mud at Vindolanda Roman Fort, Northumberland (c. AD 100)."
+              "provenance": "Wooden ink letters excavated from wet mud at Vindolanda Roman Fort, Northumberland (c. AD 100).",
+              "studio_audio": "/audio/sources/ks2_romans/lesson_4_sC.mp3",
+              "studio_voice_label": "Vindolanda Wooden Ink Letters —…"
             }
           ],
           "image_caption": "Stone ruins of Vindolanda Roman Fort in Northumberland, where wet, oxygen-free mud preserved thin wooden ink letters from around AD 100."
@@ -3138,7 +3158,9 @@
               "model_answer": "The tombstones prove Roman Britain brought people together from three continents: Barates travelled from Syria and married Regina from southern Britain, while Victor came from Mauretania in North Africa.",
               "source_context": "Arbeia guarded sea supplies for Hadrian's Wall, and tombstones outside the fort prove people from Syria, North Africa, and southern Britain lived side by side. **Hinge Question:** Why are carved Roman tombstones at forts like Arbeia such valuable clues about who lived in Roman Britain?",
               "text": "Carved Roman tombstones at Arbeia Fort: \"Regina, freedwoman and wife of Barates of Palmyra [in Syria], a woman of the Catuvellaunian tribe, died aged 30.\" — \"Victor, of the Moorish nation [North Africa], aged 20, freedman of Numerianus.\"<br><br><strong>In plain words:</strong> These stone memorials show that people from across the world lived beside Hadrian's Wall. Barates came from Syria and married British-born Regina, while young Victor came from North Africa!",
-              "provenance": "Carved Roman tombstones excavated outside Arbeia Fort, South Shields (2nd century AD)."
+              "provenance": "Carved Roman tombstones excavated outside Arbeia Fort, South Shields (2nd century AD).",
+              "studio_audio": "/audio/sources/ks2_romans/lesson_4_sD.mp3",
+              "studio_voice_label": "Reconstructed Gatehouse & Tombst…"
             }
           ],
           "image_caption": "Archaeological remains along the Hadrian's Wall frontier, where soldiers and traders from Europe, Syria, and North Africa lived and served."
@@ -3196,7 +3218,9 @@
           "model_answer": "Source C proves Roman forts were not just stern army camps — officers' wives like Claudia Severa threw warm birthday parties for friends, while cold soldiers needed parcels of woollen socks and underpants!",
           "source_context": "Preserved for nearly 2,000 years in wet, oxygen-free mud at Vindolanda, thin wooden ink letters reveal warm friendships and parcels of socks sent to chilly soldiers. **Hinge Question:** How do personal letters like Claudia Severa's party invitation change our picture of life on a Roman frontier?",
           "text": "Vindolanda wooden ink letters (c. AD 100): \"On 11 September, sister, for my birthday, I warmly ask that you come to us, to make the day happier... Farewell, my dearest soul.\" \"I have sent you woollen socks, sandals, and underpants.\"<br><br><strong>In plain words:</strong> One wooden letter invites Claudia Severa's best friend to her birthday party on 11 September. Another letter lists a cosy parcel of warm socks, sandals, and underpants for a cold soldier!",
-          "provenance": "Wooden ink letters excavated from wet mud at Vindolanda Roman Fort, Northumberland (c. AD 100)."
+          "provenance": "Wooden ink letters excavated from wet mud at Vindolanda Roman Fort, Northumberland (c. AD 100).",
+          "studio_audio": "/audio/sources/ks2_romans/lesson_4_sC.mp3",
+          "studio_voice_label": "Vindolanda Wooden Ink Letters —…"
         },
         {
           "id": "ks2_romans_l4_src_d",
@@ -3215,7 +3239,9 @@
           "model_answer": "The tombstones prove Roman Britain brought people together from three continents: Barates travelled from Syria and married Regina from southern Britain, while Victor came from Mauretania in North Africa.",
           "source_context": "Arbeia guarded sea supplies for Hadrian's Wall, and tombstones outside the fort prove people from Syria, North Africa, and southern Britain lived side by side. **Hinge Question:** Why are carved Roman tombstones at forts like Arbeia such valuable clues about who lived in Roman Britain?",
           "text": "Carved Roman tombstones at Arbeia Fort: \"Regina, freedwoman and wife of Barates of Palmyra [in Syria], a woman of the Catuvellaunian tribe, died aged 30.\" — \"Victor, of the Moorish nation [North Africa], aged 20, freedman of Numerianus.\"<br><br><strong>In plain words:</strong> These stone memorials show that people from across the world lived beside Hadrian's Wall. Barates came from Syria and married British-born Regina, while young Victor came from North Africa!",
-          "provenance": "Carved Roman tombstones excavated outside Arbeia Fort, South Shields (2nd century AD)."
+          "provenance": "Carved Roman tombstones excavated outside Arbeia Fort, South Shields (2nd century AD).",
+          "studio_audio": "/audio/sources/ks2_romans/lesson_4_sD.mp3",
+          "studio_voice_label": "Reconstructed Gatehouse & Tombst…"
         }
       ],
       "tasks": [
@@ -3762,7 +3788,9 @@
         ],
         "spokenTakeaway": "Here is the big story in one sentence. <short pause> Begun in AD 122, Hadrian's 73-mile stone wall controlled Rome's northern border while Vindolanda letters and tombstones reveal soldiers and families from three continents."
       },
-      "banner_caption": "Panoramic View of Hadrian's Wall Skirting the Volcanic Crags at Steel Rigg, Northumberland"
+      "banner_caption": "Panoramic View of Hadrian's Wall Skirting the Volcanic Crags at Steel Rigg, Northumberland",
+      "prologue_audio": "/audio/lessons/ks2_romans/lesson_4_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · Historian"
     },
     {
       "id": "lesson_5",
@@ -4689,7 +4717,9 @@
         ],
         "spokenTakeaway": "Here is the big story in one sentence. <short pause> Romans built 10,000 miles of straight stone roads, aqueduct bathhouses, and mosaic villas, even though most rural Britons kept farming in thatched roundhouses."
       },
-      "banner_caption": "Excavated Stone Granaries, Columns, and Paved Main Street at Corbridge Roman Town (Coria), Northumberland"
+      "banner_caption": "Excavated Stone Granaries, Columns, and Paved Main Street at Corbridge Roman Town (Coria), Northumberland",
+      "prologue_audio": "/audio/lessons/ks2_romans/lesson_5_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · Historian"
     },
     {
       "id": "lesson_6",
@@ -4921,7 +4951,9 @@
               "model_answer": "Source A shows enemy armies were attacking the Empire everywhere, including Italy itself, so Honorius had no spare troops and told British towns to guard themselves.",
               "source_context": "By AD 410, Visigoth armies were attacking Italy while Picts, Scotti, Angles, and Saxons raided Britain, leaving Emperor Honorius no spare legions to send. **Hinge Question:** Did the Romans leave Britain in AD 410 because Britain defeated them, or because Rome itself was in danger?",
               "text": "Zosimus on AD 410: \"The barbarians above the Rhine attacked everywhere at once, and Honorius wrote letters to the cities in Britain, bidding them to guard themselves and look to their own safety.\"<br><br><strong>In plain words:</strong> Because enemy armies were attacking the Roman Empire on every side, Emperor Honorius wrote to British towns in AD 410 warning that they had to protect themselves!",
-              "provenance": "Gold coin of Emperor Honorius paired with Greek historian Zosimus, New History (5th century AD)."
+              "provenance": "Gold coin of Emperor Honorius paired with Greek historian Zosimus, New History (5th century AD).",
+              "studio_audio": "/audio/sources/ks2_romans/lesson_6_sA.mp3",
+              "studio_voice_label": "Gold Solidus Coin of Emperor Hon…"
             }
           ],
           "image_caption": "Massive late-Roman stone walls of the coastal fort at Pevensey, built to guard southern Britain against sea raiders."
@@ -5022,7 +5054,9 @@
           "model_answer": "Source A shows enemy armies were attacking the Empire everywhere, including Italy itself, so Honorius had no spare troops and told British towns to guard themselves.",
           "source_context": "By AD 410, Visigoth armies were attacking Italy while Picts, Scotti, Angles, and Saxons raided Britain, leaving Emperor Honorius no spare legions to send. **Hinge Question:** Did the Romans leave Britain in AD 410 because Britain defeated them, or because Rome itself was in danger?",
           "text": "Zosimus on AD 410: \"The barbarians above the Rhine attacked everywhere at once, and Honorius wrote letters to the cities in Britain, bidding them to guard themselves and look to their own safety.\"<br><br><strong>In plain words:</strong> Because enemy armies were attacking the Roman Empire on every side, Emperor Honorius wrote to British towns in AD 410 warning that they had to protect themselves!",
-          "provenance": "Gold coin of Emperor Honorius paired with Greek historian Zosimus, New History (5th century AD)."
+          "provenance": "Gold coin of Emperor Honorius paired with Greek historian Zosimus, New History (5th century AD).",
+          "studio_audio": "/audio/sources/ks2_romans/lesson_6_sA.mp3",
+          "studio_voice_label": "Gold Solidus Coin of Emperor Hon…"
         },
         {
           "id": "ks2_romans_l6_src_b",
@@ -5620,7 +5654,9 @@
         ],
         "spokenTakeaway": "Here is the big story in one sentence. <short pause> Roman legions left Britain in AD 410 as raiders attacked the Empire, leaving buried silver hoards alongside lasting roads, cities, calendar months, and our ABC alphabet."
       },
-      "banner_caption": "Late-Roman Saxon Shore Stone Fort Walls and Bastions at Burgh Castle (Gariannonum), Norfolk"
+      "banner_caption": "Late-Roman Saxon Shore Stone Fort Walls and Bastions at Burgh Castle (Gariannonum), Norfolk",
+      "prologue_audio": "/audio/lessons/ks2_romans/lesson_6_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · Historian"
     }
   ],
   "key_individuals": [

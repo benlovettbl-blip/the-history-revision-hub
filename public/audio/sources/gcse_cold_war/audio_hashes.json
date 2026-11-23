@@ -1,0 +1,208 @@
+{
+  "version": 1,
+  "clips": {
+    "lesson_1_sC": {
+      "hash": "efbe68a1cc843242",
+      "bytes": 147020,
+      "voiceKey": "male_historian",
+      "badge": "President Harry S. Truman’s Pots…",
+      "updatedAt": "2026-11-23T23:04:47.531Z"
+    },
+    "lesson_2_sA": {
+      "hash": "a2cba62e716861f8",
+      "bytes": 150572,
+      "voiceKey": "male_historian",
+      "badge": "George F. Kennan’s \"Long Telegra…",
+      "updatedAt": "2026-11-23T23:04:48.067Z"
+    },
+    "lesson_2_sB": {
+      "hash": "ac2ef3681b9b2dfd",
+      "bytes": 132428,
+      "voiceKey": "male_historian",
+      "badge": "Soviet Ambassador Nikolai Noviko…",
+      "updatedAt": "2026-11-23T23:04:48.503Z"
+    },
+    "lesson_3_sC": {
+      "hash": "00288af34ff3d5b3",
+      "bytes": 132428,
+      "voiceKey": "male_historian",
+      "badge": "Article 5 of the North Atlantic…",
+      "updatedAt": "2026-11-23T23:04:48.978Z"
+    },
+    "lesson_3_sE": {
+      "hash": "4f6ad87fc278f3a6",
+      "bytes": 120812,
+      "voiceKey": "male_historian",
+      "badge": "Preamble to the Warsaw Pact Trea…",
+      "updatedAt": "2026-11-23T23:04:49.454Z"
+    },
+    "lesson_4_sA": {
+      "hash": "269f2b85343d6057",
+      "bytes": 121292,
+      "voiceKey": "male_historian",
+      "badge": "Nikita Khrushchev’s \"Secret Spee…",
+      "updatedAt": "2026-11-23T23:04:49.947Z"
+    },
+    "lesson_4_sC": {
+      "hash": "75c955d3ad4020fa",
+      "bytes": 109868,
+      "voiceKey": "male_historian",
+      "badge": "Prime Minister Imre Nagy’s Final…",
+      "updatedAt": "2026-11-23T23:05:51.094Z"
+    },
+    "lesson_5_sA": {
+      "hash": "a9e7aad437a94599",
+      "bytes": 155948,
+      "voiceKey": "male_historian",
+      "badge": "Nikita Khrushchev’s Berlin Ultim…",
+      "updatedAt": "2026-11-23T23:05:51.636Z"
+    },
+    "lesson_5_sB": {
+      "hash": "a1b912c82313bad3",
+      "bytes": 120812,
+      "voiceKey": "male_historian",
+      "badge": "President John F. Kennedy’s Priv…",
+      "updatedAt": "2026-11-23T23:05:52.074Z"
+    },
+    "lesson_5_sE": {
+      "hash": "74bb6ffd4f9ddd05",
+      "bytes": 106700,
+      "voiceKey": "male_historian",
+      "badge": "West Berlin Mayor Willy Brandt’s…",
+      "updatedAt": "2026-11-23T23:05:52.491Z"
+    },
+    "lesson_6_sD": {
+      "hash": "425df7a271e575da",
+      "bytes": 204620,
+      "voiceKey": "male_historian",
+      "badge": "Nikita Khrushchev’s First Urgent…",
+      "updatedAt": "2026-11-23T23:05:53.057Z"
+    },
+    "lesson_6_sE": {
+      "hash": "a6d85d233ca9c796",
+      "bytes": 178988,
+      "voiceKey": "male_historian",
+      "badge": "Preamble & Article I of the Limi…",
+      "updatedAt": "2026-11-23T23:05:53.549Z"
+    },
+    "lesson_7_sA": {
+      "hash": "c13b637c07b7792b",
+      "bytes": 162380,
+      "voiceKey": "male_historian",
+      "badge": "The Czechoslovak Communist Party…",
+      "updatedAt": "2026-11-23T23:05:53.994Z"
+    },
+    "lesson_7_sC": {
+      "hash": "ea850406e1a3f574",
+      "bytes": 136172,
+      "voiceKey": "male_historian",
+      "badge": "The Five-Party \"Warsaw Letter\" t…",
+      "updatedAt": "2026-11-23T23:05:54.446Z"
+    },
+    "lesson_7_sE": {
+      "hash": "7699cf50d773fcbb",
+      "bytes": 143468,
+      "voiceKey": "male_historian",
+      "badge": "Kremlin Transcript of Leonid Bre…",
+      "updatedAt": "2026-11-23T23:06:47.332Z"
+    },
+    "lesson_8_sC": {
+      "hash": "00aa94a0d7459396",
+      "bytes": 148748,
+      "voiceKey": "male_historian",
+      "badge": "Leonid Brezhnev Proclaiming the…",
+      "updatedAt": "2026-11-23T23:06:47.790Z"
+    },
+    "lesson_8_sD": {
+      "hash": "0b5197e00c70f0b4",
+      "bytes": 140012,
+      "voiceKey": "male_historian",
+      "badge": "US President Lyndon B. Johnson’s…",
+      "updatedAt": "2026-11-23T23:06:48.277Z"
+    },
+    "lesson_8_sE": {
+      "hash": "9bfa5999c61e754f",
+      "bytes": 151052,
+      "voiceKey": "male_historian",
+      "badge": "Declarations of the French and I…",
+      "updatedAt": "2026-11-23T23:06:48.811Z"
+    },
+    "lesson_9_sB": {
+      "hash": "16ccbf2b694f6425",
+      "bytes": 195308,
+      "voiceKey": "male_historian",
+      "badge": "Extract from the Anti-Ballistic…",
+      "updatedAt": "2026-11-23T23:06:49.363Z"
+    },
+    "lesson_10_sB": {
+      "hash": "edfd8d9f2a6cc9de",
+      "bytes": 183020,
+      "voiceKey": "male_historian",
+      "badge": "President Jimmy Carter’s State o…",
+      "updatedAt": "2026-11-23T23:06:49.954Z"
+    },
+    "lesson_10_sD": {
+      "hash": "7b5e83ae553391fe",
+      "bytes": 213932,
+      "voiceKey": "male_historian",
+      "badge": "Extract from President Ronald Re…",
+      "updatedAt": "2026-11-23T23:06:50.607Z"
+    },
+    "lesson_11_sB": {
+      "hash": "66696be4f8af9a30",
+      "bytes": 132620,
+      "voiceKey": "male_historian",
+      "badge": "Joint US",
+      "updatedAt": "2026-11-23T23:06:51.059Z"
+    },
+    "lesson_11_sE": {
+      "hash": "00cd201c7ff15c36",
+      "bytes": 135212,
+      "voiceKey": "male_historian",
+      "badge": "Mikhail Gorbachev’s Address to t…",
+      "updatedAt": "2026-11-23T23:06:54.045Z"
+    },
+    "lesson_12_sA": {
+      "hash": "6bf0fd2590f27d01",
+      "bytes": 71180,
+      "voiceKey": "male_historian",
+      "badge": "Soviet Spokesman Gennady Gerasim…",
+      "updatedAt": "2026-11-23T23:06:54.347Z"
+    },
+    "lesson_12_sE": {
+      "hash": "9c87783215e87d71",
+      "bytes": 145772,
+      "voiceKey": "male_historian",
+      "badge": "Mikhail Gorbachev’s Televised Re…",
+      "updatedAt": "2026-11-23T23:06:54.828Z"
+    },
+    "lesson_4_sB": {
+      "hash": "1f0cfed40288b517",
+      "bytes": 166988,
+      "voiceKey": "female_historian",
+      "badge": "Sixteen Points of the Hungarian…",
+      "updatedAt": "2026-11-23T23:10:48.074Z"
+    },
+    "lesson_7_sB": {
+      "hash": "631ca5315c034a85",
+      "bytes": 146060,
+      "voiceKey": "female_historian",
+      "badge": "Ludvík Vaculík’s \"Two Thousand W…",
+      "updatedAt": "2026-11-23T23:10:48.552Z"
+    },
+    "lesson_9_sD": {
+      "hash": "62b10d64cad11e63",
+      "bytes": 198092,
+      "voiceKey": "female_historian",
+      "badge": "Extract from Principle VII & Bas…",
+      "updatedAt": "2026-11-23T23:10:49.117Z"
+    },
+    "lesson_12_sD": {
+      "hash": "1364163bfba374b5",
+      "bytes": 165260,
+      "voiceKey": "female_historian",
+      "badge": "Boris Yeltsin’s Appeal \"To the C…",
+      "updatedAt": "2026-11-23T23:10:49.608Z"
+    }
+  }
+}

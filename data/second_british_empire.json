@@ -1073,7 +1073,9 @@
           "type": "written",
           "provenance": "Statutes of the Realm, 12 Cha. II c. 18 (Parliament of England, 1660; enforced across the Atlantic Empire until 1849).",
           "content": "For the increase of shipping and encouragement of the navigation of this nation... no goods or commodities whatsoever shall be imported into or exported out of any lands, islands, plantations, or territories to His Majesty belonging in Asia, Africa, or America, in any other ship or vessel whatsoever, but in such ships or vessels as do truly and without fraud belong only to the people of England... and whereof the master and three-fourths of the mariners at least are English.",
-          "badge": "Author’s Purpose"
+          "badge": "Author’s Purpose",
+          "studio_audio": "/audio/sources/second_british_empire/lesson_1_sC.mp3",
+          "studio_voice_label": "The Navigation Act (1660)"
         },
         {
           "letter": "D",
@@ -1095,7 +1097,9 @@
           "type": "written",
           "provenance": "Vice-Admiral Cuthbert Collingwood aboard HMS Euryalus off Cape Trafalgar, Official Dispatch to the Admiralty, published in The London Gazette Extraordinary (6 November 1805).",
           "content": "The ever-to-be-lamented death of Vice-Admiral Lord Viscount Nelson, who, in the late conflict with the enemy, fell in the hour of victory, leaves to me the duty of informing my Lords Commissioners of the Admiralty, that on the nineteenth instant the combined fleets of France and Spain put to sea from Cadiz... On Monday the twenty-first instant, off Cape Trafalgar, the Commander-in-Chief made the signal to bear up in two columns, breaking the enemy’s line with irresistible fury; nineteen ships of the line struck their colours to His Majesty’s fleet.",
-          "badge": "Source Inference"
+          "badge": "Source Inference",
+          "studio_audio": "/audio/sources/second_british_empire/lesson_1_sD.mp3",
+          "studio_voice_label": "Vice-Admiral Cuthbert Collingwoo…"
         },
         {
           "letter": "E",
@@ -1117,7 +1121,9 @@
           "type": "written",
           "provenance": "Lord George Hamilton, First Lord of the Admiralty, Speech to the House of Commons on the Naval Defence Bill, Hansard Parliamentary Debates, 3rd Series, Vol. 333 (7 March 1889).",
           "content": "Our supremacy upon the sea is not a matter of national vanity; it is the absolute condition of our national existence and the sole bond that holds our scattered Empire together. The leading idea of Her Majesty’s Government is that our naval establishment should be maintained upon such a scale that it shall be at least equal to the naval strength of any two other foreign countries combined, and for this purpose we ask Parliament to sanction the immediate construction of seventy vessels at an expenditure of £21,500,000.",
-          "badge": "Reliability & Provenance"
+          "badge": "Reliability & Provenance",
+          "studio_audio": "/audio/sources/second_british_empire/lesson_1_sE.mp3",
+          "studio_voice_label": "Lord George Hamilton Introducing…"
         }
       ],
       "tasks": [
@@ -1466,7 +1472,9 @@
       "card_image": "/images/ks3_sbe/sbe_l1_card_hms_victory_portsmouth.jpg",
       "enquiry": "How did naval power and Portsmouth Dockyard sustain the British Empire?",
       "enquiryQuestion": "How did naval power and Portsmouth Dockyard sustain the British Empire?",
-      "banner_caption": "A View of Part of the British Fleet at Portsmouth (Royal Collection): Guarded by wooden battleships and later steam ironclads, Portsmouth Royal Dockyard served as the industrial nerve centre of Britain’s maritime empire."
+      "banner_caption": "A View of Part of the British Fleet at Portsmouth (Royal Collection): Guarded by wooden battleships and later steam ironclads, Portsmouth Royal Dockyard served as the industrial nerve centre of Britain’s maritime empire.",
+      "prologue_audio": "/audio/lessons/second_british_empire/lesson_1_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · Historian"
     },
     {
       "id": "lesson_2",
@@ -2292,7 +2300,9 @@
           "image_alt": "Benjamin West’s oil painting showing Mughal Emperor Shah Alam II seated beneath a gilded canopy handing the rolled 1765 Diwani scroll to red-coated Robert Clive surrounded by Mughal courtiers, elephants, and British officers",
           "teacher_notes": {
             "hinge_question": "Why did East India Company patrons commission a grand ceremonial painting of the 1765 Diwani rather than showing the battlefield violence at Plassey and Buxar that forced the Emperor to sign it?"
-          }
+          },
+          "studio_audio": "/audio/sources/second_british_empire/lesson_2_sA.mp3",
+          "studio_voice_label": "Benjamin West (1795)"
         },
         {
           "id": "sbe_l2_src_b",
@@ -2314,7 +2324,9 @@
           "image_alt": "September 1862 Bolton Chronicle lithograph showing W. Calder Marshall’s seated bronze statue of spinning-mule inventor Samuel Crompton atop a stepped stone pedestal",
           "teacher_notes": {
             "hinge_question": "How could the exact same invention be celebrated on a bronze pedestal in Lancashire as heroic progress while being experienced in Dhaka as economic ruin?"
-          }
+          },
+          "studio_audio": "/audio/sources/second_british_empire/lesson_2_sB.mp3",
+          "studio_voice_label": "Public Statue of Samuel Crompton…"
         },
         {
           "id": "sbe_l2_src_c",
@@ -2332,7 +2344,9 @@
           "source_context": "Passed under fierce lobbying from English woollen and silk weavers, the 1721 Calico Act outlawed wearing or selling printed Indian cotton cloth in Britain, imposing heavy £5 fines on wearers and £20 fines on merchants to shut Indian textiles out of the British market.",
           "teacher_notes": {
             "hinge_question": "Why is the 1721 Calico Act crucial evidence against the claim that Lancashire cotton triumphed over Indian textiles purely through fair free-market competition?"
-          }
+          },
+          "studio_audio": "/audio/sources/second_british_empire/lesson_2_sC.mp3",
+          "studio_voice_label": "The British Calico Act (1721)"
         },
         {
           "id": "sbe_l2_src_d",
@@ -2350,7 +2364,9 @@
           "source_context": "Giving sworn evidence before a British Parliamentary Select Committee in 1840, colonial administrator Sir Charles Trevelyan documented how high British import tariffs (70–80% on Indian cloth vs 2–3.5% on British factory cotton entering India) emptied historic weaving cities like Dhaka.",
           "teacher_notes": {
             "hinge_question": "What does the collapse of Dhaka's population from 150,000 to 30,000 reveal about how colonial trade rules reshaped Indian cities as well as British industrial towns?"
-          }
+          },
+          "studio_audio": "/audio/sources/second_british_empire/lesson_2_sD.mp3",
+          "studio_voice_label": "Evidence on the Collapse of the…"
         },
         {
           "id": "sbe_l2_src_e",
@@ -2369,7 +2385,9 @@
           "source_context": "Attributed to Governor-General Lord William Bentinck's 1834 administrative minute, this famous warning came from the very top of British rule in India—making it especially striking evidence because a colonial governor had no motive to exaggerate British-caused suffering.",
           "teacher_notes": {
             "hinge_question": "Why does this bleak verdict carry particular weight coming from Britain's own Governor-General of India rather than from an opponent of British rule?"
-          }
+          },
+          "studio_audio": "/audio/sources/second_british_empire/lesson_2_sE.mp3",
+          "studio_voice_label": "Governor-General Lord William Be…"
         }
       ],
       "tasks": [
@@ -2717,7 +2735,9 @@
       "card_image": "/images/east_india_house.jpg",
       "enquiry": "How did East India Company rule ruin India’s world-leading textile industry?",
       "enquiryQuestion": "How did East India Company rule ruin India’s world-leading textile industry?",
-      "banner_caption": "Calcutta from the Garden Reach (Thomas & William Daniell, 1797): East India Company merchant vessels crowded the Hooghly River as Company tax extraction and unequal tariffs transformed Bengal’s economy."
+      "banner_caption": "Calcutta from the Garden Reach (Thomas & William Daniell, 1797): East India Company merchant vessels crowded the Hooghly River as Company tax extraction and unequal tariffs transformed Bengal’s economy.",
+      "prologue_audio": "/audio/lessons/second_british_empire/lesson_2_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · Historian"
     },
     {
       "id": "lesson_3",
@@ -3691,7 +3711,9 @@
           "source_context": "Recorded during the spring of 1857 among Bengal Army regiments stationed at Barrackpore and Meerut, shortly after East India Company arsenals introduced the new rifled Pattern 1853 Enfield musket to Indian sepoy infantrymen.",
           "teacher_notes": {
             "hinge_question": "Why do historians view the greased Enfield cartridges as the short-term trigger of 1857 rather than its sole underlying cause?"
-          }
+          },
+          "studio_audio": "/audio/sources/second_british_empire/lesson_3_sA.mp3",
+          "studio_voice_label": "Sepoy Grievance over the Greased…"
         },
         {
           "id": "sbe_l3_src_b",
@@ -3713,7 +3735,9 @@
           "image_alt": "Nineteenth-century Indian half-length portrait of Rani Lakshmibai of Jhansi holding an upright talwar sword in her right hand and a round four-bossed dhal shield in her left",
           "teacher_notes": {
             "hinge_question": "How did Lord Dalhousie's Doctrine of Lapse turn previously allied Indian princely rulers like Rani Lakshmibai into determined military leaders of the 1857 uprising?"
-          }
+          },
+          "studio_audio": "/audio/sources/second_british_empire/lesson_3_sB.mp3",
+          "studio_voice_label": "Contemporary Portrait of Rani La…"
         },
         {
           "id": "sbe_l3_src_c",
@@ -3731,7 +3755,9 @@
           "source_context": "Issued in August 1857 in the name of Mughal Emperor Bahadur Shah Zafar’s court, the Azamgarh Manifesto deliberately reached beyond army barracks—calling on Hindu and Muslim landowners, merchants, civil servants, and weavers to overthrow East India Company rule together.",
           "teacher_notes": {
             "hinge_question": "How does the Azamgarh Proclamation challenge the Victorian British label that 1857 was merely a narrow military 'Sepoy Mutiny'?"
-          }
+          },
+          "studio_audio": "/audio/sources/second_british_empire/lesson_3_sC.mp3",
+          "studio_voice_label": "The Azamgarh Proclamation"
         },
         {
           "id": "sbe_l3_src_d",
@@ -3753,7 +3779,9 @@
           "image_alt": "Cambridge Modern History Atlas Map 123 titled NORTHERN INDIA — THE MUTINY 1857–9 underlining rebellion centres including Meerut, Delhi, Lucknow, Cawnpore, Jhansi, and Gwalior along the Grand Trunk Road and early railway lines",
           "teacher_notes": {
             "hinge_question": "Why was the geographic concentration of the uprising in northern India—while Bengal ports, Madras, Bombay, and the Punjab did not join—so decisive for Britain's ability to recapture Delhi and Lucknow?"
-          }
+          },
+          "studio_audio": "/audio/sources/second_british_empire/lesson_3_sD.mp3",
+          "studio_voice_label": "Reference Map"
         },
         {
           "id": "sbe_l3_src_e",
@@ -3772,7 +3800,9 @@
           "source_context": "Following the Government of India Act (August 1858), which liquidated East India Company rule and transferred sovereignty directly to the British Crown (the British Raj), Queen Victoria's proclamation was read aloud at Allahabad on 1 November 1858 to win back princely loyalty.",
           "teacher_notes": {
             "hinge_question": "Did the 1858 creation of the British Raj genuinely empower ordinary Indians, or did it simply replace unstable Company greed with more cautious direct imperial rule?"
-          }
+          },
+          "studio_audio": "/audio/sources/second_british_empire/lesson_3_sE.mp3",
+          "studio_voice_label": "Queen Victoria’s Royal Proclamat…"
         }
       ],
       "tasks": [
@@ -4120,7 +4150,9 @@
       "card_image": "/images/ks3_sbe/sbe_l3_card_cashmere_gate_delhi_1858.jpg",
       "enquiry": "Why did corporate military rule spark the 1857 Rebellion and establish the British Raj?",
       "enquiryQuestion": "Why did corporate military rule spark the 1857 Rebellion and establish the British Raj?",
-      "banner_caption": "The Relief of Lucknow, November 1857 (Thomas Jones Barker, 1859, National Portrait Gallery): Fierce fighting raged across northern and central India during the 1857–1858 Uprising before Parliament dissolved the East India Company."
+      "banner_caption": "The Relief of Lucknow, November 1857 (Thomas Jones Barker, 1859, National Portrait Gallery): Fierce fighting raged across northern and central India during the 1857–1858 Uprising before Parliament dissolved the East India Company.",
+      "prologue_audio": "/audio/lessons/second_british_empire/lesson_3_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · Historian"
     },
     {
       "id": "lesson_4",
@@ -5029,7 +5061,9 @@
           },
           "type": "written",
           "src": "",
-          "image": ""
+          "image": "",
+          "studio_audio": "/audio/sources/second_british_empire/lesson_4_sC.mp3",
+          "studio_voice_label": "Rudyard Kipling (1899)"
         },
         {
           "letter": "D",
@@ -5050,7 +5084,9 @@
           },
           "type": "written",
           "src": "",
-          "image": ""
+          "image": "",
+          "studio_audio": "/audio/sources/second_british_empire/lesson_4_sD.mp3",
+          "studio_voice_label": "E. D. Morel (1920)"
         },
         {
           "letter": "E",
@@ -5071,7 +5107,9 @@
           },
           "type": "written",
           "src": "",
-          "image": ""
+          "image": "",
+          "studio_audio": "/audio/sources/second_british_empire/lesson_4_sE.mp3",
+          "studio_voice_label": "King Lobengula of Matabeleland…"
         }
       ],
       "tasks": [
@@ -5426,7 +5464,9 @@
       "card_image": "/images/ks3_sbe/sbe_l4_card_battle_of_isandlwana_fripp.jpg",
       "enquiry": "How did European industrial powers partition Africa, and how was conquest justified?",
       "enquiryQuestion": "How did European industrial powers partition Africa, and how was conquest justified?",
-      "banner_caption": "The Defence of Rorke’s Drift, January 1879 (Alphonse de Neuville, 1880, Art Gallery of New South Wales): Fierce Zulu resistance during the 1879 Anglo-Zulu War preceded the 1884–1885 Berlin Conference and the Maxim-gun partition of Africa."
+      "banner_caption": "The Defence of Rorke’s Drift, January 1879 (Alphonse de Neuville, 1880, Art Gallery of New South Wales): Fierce Zulu resistance during the 1879 Anglo-Zulu War preceded the 1884–1885 Berlin Conference and the Maxim-gun partition of Africa.",
+      "prologue_audio": "/audio/lessons/second_british_empire/lesson_4_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · Historian"
     },
     {
       "id": "lesson_5",
@@ -6253,7 +6293,9 @@
           },
           "type": "written",
           "src": "",
-          "image": ""
+          "image": "",
+          "studio_audio": "/audio/sources/second_british_empire/lesson_5_sA.mp3",
+          "studio_voice_label": "Historical Data on Real Wages &…"
         },
         {
           "letter": "B",
@@ -6274,7 +6316,9 @@
           },
           "type": "written",
           "src": "",
-          "image": ""
+          "image": "",
+          "studio_audio": "/audio/sources/second_british_empire/lesson_5_sB.mp3",
+          "studio_voice_label": "Friedrich Engels (1845)"
         },
         {
           "letter": "C",
@@ -6316,7 +6360,9 @@
           },
           "type": "written",
           "src": "",
-          "image": ""
+          "image": "",
+          "studio_audio": "/audio/sources/second_british_empire/lesson_5_sD.mp3",
+          "studio_voice_label": "Dadabhai Naoroji (1901)"
         },
         {
           "letter": "E",
@@ -6337,7 +6383,9 @@
           },
           "type": "written",
           "src": "",
-          "image": ""
+          "image": "",
+          "studio_audio": "/audio/sources/second_british_empire/lesson_5_sE.mp3",
+          "studio_voice_label": "Lord Curzon (1901)"
         }
       ],
       "tasks": [
@@ -6684,7 +6732,9 @@
       "card_image": "/images/ks3_sbe/sbe_l5_card_rhodes_colossus_1892.jpg",
       "enquiry": "How and why do historians disagree fiercely over the legacy of the British Empire?",
       "enquiryQuestion": "How and why do historians disagree fiercely over the legacy of the British Empire?",
-      "banner_caption": "Inauguration of the Suez Canal at Port Said (17 November 1869, Édouard Riou): Slashing sea voyages between Britain and India by over 4,000 miles, global imperial infrastructure bound colonial raw materials tightly to British industry."
+      "banner_caption": "Inauguration of the Suez Canal at Port Said (17 November 1869, Édouard Riou): Slashing sea voyages between Britain and India by over 4,000 miles, global imperial infrastructure bound colonial raw materials tightly to British industry.",
+      "prologue_audio": "/audio/lessons/second_british_empire/lesson_5_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · Historian"
     }
   ],
   "glossary": [

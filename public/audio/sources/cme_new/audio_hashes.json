@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "clips": {
+    "lesson_0_sA": {
+      "hash": "bc5d6dc022f55753",
+      "bytes": 125036,
+      "voiceKey": "male_historian",
+      "badge": "McMahon's Letter to Sharif Husse…",
+      "updatedAt": "2026-11-23T23:02:19.788Z"
+    },
+    "lesson_0_sC": {
+      "hash": "dd4b3e2e5f126e00",
+      "bytes": 111692,
+      "voiceKey": "male_historian",
+      "badge": "The Balfour Declaration",
+      "updatedAt": "2026-11-23T23:02:20.189Z"
+    },
+    "lesson_2_sE": {
+      "hash": "a666db5a51743612",
+      "bytes": 22508,
+      "voiceKey": "male_historian",
+      "badge": "Jewish Immigrants Arrive at Haif…",
+      "updatedAt": "2026-11-23T23:02:21.132Z"
+    },
+    "lesson_3_sB": {
+      "hash": "180fea18b3e40c25",
+      "bytes": 106508,
+      "voiceKey": "male_historian",
+      "badge": "Nasser with Nehru at Bandung (Ap…",
+      "updatedAt": "2026-11-23T23:02:21.843Z"
+    },
+    "lesson_4_sD": {
+      "hash": "37b6ddd1cd3d7a3a",
+      "bytes": 171308,
+      "voiceKey": "female_historian",
+      "badge": "UN Security Council Resolution 2…",
+      "updatedAt": "2026-11-23T23:08:54.246Z"
+    }
+  }
+}

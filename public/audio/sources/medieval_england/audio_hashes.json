@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "clips": {
+    "lesson_2_sC": {
+      "hash": "1dfecb955618ceac",
+      "bytes": 153260,
+      "voiceKey": "female_historian",
+      "badge": "The Peterborough Chronicle on th…",
+      "updatedAt": "2026-11-23T22:58:47.790Z"
+    },
+    "lesson_1_sC": {
+      "hash": "911aa2f8f8dc3d2d",
+      "bytes": 116492,
+      "voiceKey": "male_historian",
+      "badge": "The Anglo-Saxon Chronicle (Manus…",
+      "updatedAt": "2026-11-23T22:58:50.152Z"
+    },
+    "lesson_3_sB": {
+      "hash": "d43a64266f46639d",
+      "bytes": 123212,
+      "voiceKey": "male_historian",
+      "badge": "Edward Grim (1162)",
+      "updatedAt": "2026-11-23T22:58:50.530Z"
+    },
+    "lesson_3_sC": {
+      "hash": "894c6565277937ee",
+      "bytes": 90860,
+      "voiceKey": "male_historian",
+      "badge": "The Constitutions of Clarendon (…",
+      "updatedAt": "2026-11-23T22:58:50.874Z"
+    },
+    "lesson_5_sA": {
+      "hash": "7d9f5ba2f1a4a89f",
+      "bytes": 159212,
+      "voiceKey": "male_historian",
+      "badge": "Chronicle of Henry Knighton on P…",
+      "updatedAt": "2026-11-23T22:58:51.311Z"
+    },
+    "lesson_5_sB": {
+      "hash": "a88e9deb3e917482",
+      "bytes": 161612,
+      "voiceKey": "male_historian",
+      "badge": "The Statute of Labourers",
+      "updatedAt": "2026-11-23T22:58:51.746Z"
+    }
+  }
+}

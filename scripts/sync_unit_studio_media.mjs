@@ -37,6 +37,7 @@ import { WW1_LIVING_VOICE_UNITS, syncWw1UnitLivingVoices } from './sync_ww1_livi
 import { SHOAH_KS2_LIVING_VOICE_UNITS, syncShoahKs2LivingVoices } from './sync_shoah_ks2_living_voices.mjs';
 import { PAPER3_INTERPRETATION_UNITS, syncPaper3InterpretationAudio } from './sync_paper3_interpretation_audio.mjs';
 import { KS2_KS3_GUIDED_READING_UNITS, syncGuidedReadingUnits } from './sync_guided_reading_studio_audio.mjs';
+import { syncProloguesAndSourcesForUnits } from './sync_all_prologues_and_sources_audio.mjs';
 import { expandBritishDatesForSpeech } from './spoken_date_normalizer.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -1388,6 +1389,8 @@ async function syncSingleUnit(unitId, { initAudio = false, forceAudio = false, s
     } else {
       if (SHOAH_KS2_LIVING_VOICE_UNITS.has(unitId)) {
         await syncShoahKs2LivingVoices(unitId, { forceAudio, skipTts });
+      } else {
+        await syncProloguesAndSourcesForUnits([unitId], { forceAudio, skipTts, skipDbBuild: true });
       }
       if (PAPER3_INTERPRETATION_UNITS.has(unitId)) {
         await syncPaper3InterpretationAudio([unitId], { forceAudio, skipTts, skipDbBuild: true });
@@ -1422,9 +1425,12 @@ async function syncSingleUnit(unitId, { initAudio = false, forceAudio = false, s
   }
   if (WW1_LIVING_VOICE_UNITS.has(unitId)) {
     await syncWw1UnitLivingVoices(unitId, { forceAudio, skipTts });
+    await syncProloguesAndSourcesForUnits([unitId], { forceAudio, skipTts, skipDbBuild: true });
   } else {
     if (SHOAH_KS2_LIVING_VOICE_UNITS.has(unitId)) {
       await syncShoahKs2LivingVoices(unitId, { forceAudio, skipTts });
+    } else {
+      await syncProloguesAndSourcesForUnits([unitId], { forceAudio, skipTts, skipDbBuild: true });
     }
     if (PAPER3_INTERPRETATION_UNITS.has(unitId)) {
       await syncPaper3InterpretationAudio([unitId], { forceAudio, skipTts, skipDbBuild: true });

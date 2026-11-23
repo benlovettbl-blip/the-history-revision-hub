@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "clips": {
+    "lesson_2_sC": {
+      "hash": "dd0042db8033e200",
+      "bytes": 83468,
+      "voiceKey": "male_historian",
+      "badge": "The Book of Common Prayer (1559)",
+      "updatedAt": "2026-11-23T23:07:18.470Z"
+    },
+    "lesson_4_sB": {
+      "hash": "a66b2136fab5d5f2",
+      "bytes": 121100,
+      "voiceKey": "male_historian",
+      "badge": "The Grand Remonstrance",
+      "updatedAt": "2026-11-23T23:07:19.773Z"
+    },
+    "lesson_5_sA": {
+      "hash": "3055e56bac149756",
+      "bytes": 112172,
+      "voiceKey": "male_historian",
+      "badge": "The Act of Supremacy 1534",
+      "updatedAt": "2026-11-23T23:07:20.609Z"
+    },
+    "lesson_5_sC": {
+      "hash": "9529b9b27108a4e3",
+      "bytes": 103820,
+      "voiceKey": "male_historian",
+      "badge": "King James I",
+      "updatedAt": "2026-11-23T23:07:20.994Z"
+    },
+    "lesson_3_sA": {
+      "hash": "e168eb9710eed71c",
+      "bytes": 107660,
+      "voiceKey": "female_historian",
+      "badge": "Pope Sixtus V Promises 1 (1587)",
+      "updatedAt": "2026-11-23T23:12:17.125Z"
+    },
+    "lesson_2_sB": {
+      "hash": "1f3cd33ed1aa8e14",
+      "bytes": 135020,
+      "voiceKey": "female_historian",
+      "badge": "The Act of Supremacy 1559 (1 Eli…",
+      "updatedAt": "2026-11-23T23:12:29.740Z"
+    },
+    "lesson_2_sD": {
+      "hash": "b517f804244488b2",
+      "bytes": 120908,
+      "voiceKey": "female_historian",
+      "badge": "Pope Pius V",
+      "updatedAt": "2026-11-23T23:12:30.154Z"
+    }
+  }
+}

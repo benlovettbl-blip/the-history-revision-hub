@@ -1045,7 +1045,9 @@ export default {
                 }
               },
               "source_context": "Seneca lived in rented lodgings directly above public baths in Rome.",
-              "image_alt": "Ancient Roman bronze portrait bust traditionally identified as the Stoic philosopher Lucius Annaeus Seneca with furrowed brow, curly beard, and inlaid eyes, excavated at Herculaneum and displayed at Naples"
+              "image_alt": "Ancient Roman bronze portrait bust traditionally identified as the Stoic philosopher Lucius Annaeus Seneca with furrowed brow, curly beard, and inlaid eyes, excavated at Herculaneum and displayed at Naples",
+              "studio_audio": "/audio/sources/water_and_sanitation/lesson_1_sD.mp3",
+              "studio_voice_label": "Seneca the Younger"
             }
           ],
           "image": "/images/ks3_was/was_l1_b3_housesteads_roman_latrine.jpg",
@@ -2025,7 +2027,9 @@ export default {
             }
           },
           "source_context": "Seneca lived in rented lodgings directly above public baths in Rome.",
-          "image_alt": "Ancient Roman bronze portrait bust traditionally identified as the Stoic philosopher Lucius Annaeus Seneca with furrowed brow, curly beard, and inlaid eyes, excavated at Herculaneum and displayed at Naples"
+          "image_alt": "Ancient Roman bronze portrait bust traditionally identified as the Stoic philosopher Lucius Annaeus Seneca with furrowed brow, curly beard, and inlaid eyes, excavated at Herculaneum and displayed at Naples",
+          "studio_audio": "/audio/sources/water_and_sanitation/lesson_1_sD.mp3",
+          "studio_voice_label": "Seneca the Younger"
         },
         {
           "id": "water_l1_src_e",
@@ -2177,7 +2181,9 @@ export default {
       "banner_position": "center 35%",
       "enquiry_question": "Did Roman water engineering protect ordinary Britons or showcase imperial luxury?",
       "enquiryQuestion": "Did Roman water engineering protect ordinary Britons or showcase imperial luxury?",
-      "banner_caption": "The Great Roman Bath and Colonnade at Aquae Sulis (Bath, Somerset, c. AD 70): Fed continuously by geothermal hot springs through lead conduits, showcasing imperial Roman hydraulic engineering in Britain."
+      "banner_caption": "The Great Roman Bath and Colonnade at Aquae Sulis (Bath, Somerset, c. AD 70): Fed continuously by geothermal hot springs through lead conduits, showcasing imperial Roman hydraulic engineering in Britain.",
+      "prologue_audio": "/audio/lessons/water_and_sanitation/lesson_1_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · Historian"
     },
     {
       "id": "lesson_2",
@@ -2617,7 +2623,9 @@ export default {
                   "motive": "Enforcing borough by-laws against dumping butchers' waste and blocking street kennels."
                 }
               },
-              "source_context": "Medieval towns held Court Leet hearings twice a year where neighbours reported sanitation offences."
+              "source_context": "Medieval towns held Court Leet hearings twice a year where neighbours reported sanitation offences.",
+              "studio_audio": "/audio/sources/water_and_sanitation/lesson_2_sA.mp3",
+              "studio_voice_label": "Winchester Court Leet Presentmen…"
             }
           ],
           "isReversed": false,
@@ -2952,7 +2960,9 @@ export default {
                   "motive": "Halting river pollution to eliminate the foul air believed to cause plague."
                 }
               },
-              "source_context": "Following recurring outbreaks of pestilence after 1348, Parliament enacted the 1388 Statute of Cambridge."
+              "source_context": "Following recurring outbreaks of pestilence after 1348, Parliament enacted the 1388 Statute of Cambridge.",
+              "studio_audio": "/audio/sources/water_and_sanitation/lesson_2_sE.mp3",
+              "studio_voice_label": "The 1388 Statute of Cambridge (P…"
             }
           ],
           "content": "<p class=\"prose-p\"><span class=\"para-ref\">[2.5]</span> Historian **Carole Rawcliffe** has shown that medieval town leaders cared deeply about clean streets and rivers. In **1388**, Parliament passed the **Statute of Cambridge**, Britain's first national hygiene law. It set huge **£20 fines** for dumping animal guts or dung into rivers and ditches.</p><p class=\"prose-p\">In **Coventry**, officials banned rubbish dumping in the River Sherbourne and built waste heaps outside the town walls. Medieval towns struggled not because people liked dirt, but because small councils lacked money, pumps, and police to keep up with growing crowds.</p>",
@@ -3763,7 +3773,9 @@ export default {
               "motive": "Enforcing borough by-laws against dumping butchers' waste and blocking street kennels."
             }
           },
-          "source_context": "Medieval towns held Court Leet hearings twice a year where neighbours reported sanitation offences."
+          "source_context": "Medieval towns held Court Leet hearings twice a year where neighbours reported sanitation offences.",
+          "studio_audio": "/audio/sources/water_and_sanitation/lesson_2_sA.mp3",
+          "studio_voice_label": "Winchester Court Leet Presentmen…"
         },
         {
           "id": "water_l2_src_b",
@@ -3887,7 +3899,9 @@ export default {
               "motive": "Halting river pollution to eliminate the foul air believed to cause plague."
             }
           },
-          "source_context": "Following recurring outbreaks of pestilence after 1348, Parliament enacted the 1388 Statute of Cambridge."
+          "source_context": "Following recurring outbreaks of pestilence after 1348, Parliament enacted the 1388 Statute of Cambridge.",
+          "studio_audio": "/audio/sources/water_and_sanitation/lesson_2_sE.mp3",
+          "studio_voice_label": "The 1388 Statute of Cambridge (P…"
         }
       ],
       "visual_story_sheet": {
@@ -4007,7 +4021,9 @@ export default {
       "banner_position": "center 45%",
       "enquiry_question": "Why did medieval towns struggle so badly to keep streets and water clean?",
       "enquiryQuestion": "Why did medieval towns struggle so badly to keep streets and water clean?",
-      "banner_caption": "Giuseppe Maria Crespi, Blessed Bernardo Tolomei Visiting Victims of the 1348 Plague (c. 1735): Depicting monastic charity amid the catastrophic Black Death pandemic that killed up to half of Europe’s population."
+      "banner_caption": "Giuseppe Maria Crespi, Blessed Bernardo Tolomei Visiting Victims of the 1348 Plague (c. 1735): Depicting monastic charity amid the catastrophic Black Death pandemic that killed up to half of Europe’s population.",
+      "prologue_audio": "/audio/lessons/water_and_sanitation/lesson_2_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · Historian"
     },
     {
       "id": "lesson_3",
@@ -4445,7 +4461,9 @@ export default {
                   "motive": "Documenting the historic geography of London while warning of rapid urban decay."
                 }
               },
-              "source_context": "Antiquary John Stow surveyed every ward of Elizabethan London, documenting how rapid migration from the countryside had divided ancient family homes into overcrowded tenements without sewage disposal."
+              "source_context": "Antiquary John Stow surveyed every ward of Elizabethan London, documenting how rapid migration from the countryside had divided ancient family homes into overcrowded tenements without sewage disposal.",
+              "studio_audio": "/audio/sources/water_and_sanitation/lesson_3_sA.mp3",
+              "studio_voice_label": "John Stow (1598)"
             }
           ],
           "source": {
@@ -4706,7 +4724,9 @@ export default {
                 }
               },
               "source_context": "London townhouses had brick or timber cesspools beneath basements.",
-              "image_alt": "Archival photograph of the original leather-bound manuscript volumes of Samuel Pepys’s shorthand Diary stamped with his gilt Admiralty coat of arms and motto at the Pepys Library, Magdalene College, Cambridge"
+              "image_alt": "Archival photograph of the original leather-bound manuscript volumes of Samuel Pepys’s shorthand Diary stamped with his gilt Admiralty coat of arms and motto at the Pepys Library, Magdalene College, Cambridge",
+              "studio_audio": "/audio/sources/water_and_sanitation/lesson_3_sD.mp3",
+              "studio_voice_label": "Diary Entry of Samuel Pepys"
             }
           ],
           "content": "<p class=\"prose-p\"><span class=\"para-ref\">[3.4]</span> **Samuel Pepys** left a vivid record of seventeenth-century filth in his famous diary. One morning in October **1660**, Pepys walked down into his cellar and stepped into his neighbour's waste! His neighbour's cesspit had cracked and leaked right through the cellar wall.</p><p class=\"prose-p\">Because brick cellars were poorly mortared, fractured brick **cesspits** cracked and leaked raw sewage into basements and nearby drinking wells. Householders had to hire **nightsoil** men with filth carts after midnight to bucket out smelly vaults and haul the waste outside city walls.</p>"
@@ -4783,7 +4803,9 @@ export default {
                   "motive": "Publishing official weekly totals of births and infectious deaths across London."
                 }
               },
-              "source_context": "London Bills of Mortality were compiled weekly from parish church wardens."
+              "source_context": "London Bills of Mortality were compiled weekly from parish church wardens.",
+              "studio_audio": "/audio/sources/water_and_sanitation/lesson_3_sE.mp3",
+              "studio_voice_label": "London Bill of Mortality for the…"
             }
           ],
           "content": "<p class=\"prose-p\"><span class=\"para-ref\">[3.5]</span> Although the **Scientific Revolution** brought big breakthroughs in science, **epidemic medicine remained trapped in medieval miasma theory**. When the **Great Plague of 1665** killed over **100,000** Londoners, parish **Searchers of the Dead** tallied victims in weekly **Bills of Mortality** while officials still blamed foul air.</p><p class=\"prose-p\">The Lord Mayor ordered 40,000 dogs and 200,000 cats killed — wiping out the very animals that hunted plague rats! Watchmen locked families inside houses marked with a red cross and <em>\"Lord Have Mercy Upon Us\"</em>. People smoked **tobacco** and sniffed herb pomanders, unaware that rat fleas spread plague.</p>"
@@ -5483,7 +5505,9 @@ export default {
               "motive": "Documenting the historic geography of London while warning of rapid urban decay."
             }
           },
-          "source_context": "Antiquary John Stow surveyed every ward of Elizabethan London, documenting how rapid migration from the countryside had divided ancient family homes into overcrowded tenements without sewage disposal."
+          "source_context": "Antiquary John Stow surveyed every ward of Elizabethan London, documenting how rapid migration from the countryside had divided ancient family homes into overcrowded tenements without sewage disposal.",
+          "studio_audio": "/audio/sources/water_and_sanitation/lesson_3_sA.mp3",
+          "studio_voice_label": "John Stow (1598)"
         },
         {
           "id": "water_l3_src_b",
@@ -5578,7 +5602,9 @@ export default {
             }
           },
           "source_context": "London townhouses had brick or timber cesspools beneath basements.",
-          "image_alt": "Archival photograph of the original leather-bound manuscript volumes of Samuel Pepys’s shorthand Diary stamped with his gilt Admiralty coat of arms and motto at the Pepys Library, Magdalene College, Cambridge"
+          "image_alt": "Archival photograph of the original leather-bound manuscript volumes of Samuel Pepys’s shorthand Diary stamped with his gilt Admiralty coat of arms and motto at the Pepys Library, Magdalene College, Cambridge",
+          "studio_audio": "/audio/sources/water_and_sanitation/lesson_3_sD.mp3",
+          "studio_voice_label": "Diary Entry of Samuel Pepys"
         },
         {
           "id": "water_l3_src_e",
@@ -5610,7 +5636,9 @@ export default {
               "motive": "Publishing official weekly totals of births and infectious deaths across London."
             }
           },
-          "source_context": "London Bills of Mortality were compiled weekly from parish church wardens."
+          "source_context": "London Bills of Mortality were compiled weekly from parish church wardens.",
+          "studio_audio": "/audio/sources/water_and_sanitation/lesson_3_sE.mp3",
+          "studio_voice_label": "London Bill of Mortality for the…"
         }
       ],
       "visual_story_sheet": {
@@ -5728,7 +5756,9 @@ export default {
       "banner_position": "center 48%",
       "enquiry_question": "Why did rapid growth make Tudor and Stuart London filthier and deadlier?",
       "enquiryQuestion": "Why did rapid growth make Tudor and Stuart London filthier and deadlier?",
-      "banner_caption": "Wenceslaus Hollar, Long View of London from Bankside (1647): Showing the densely packed gabled timber and brick tenements crowding the north bank of the River Thames between Blackfriars and Baynard’s Castle before the 1665 Plague and 1666 Fire."
+      "banner_caption": "Wenceslaus Hollar, Long View of London from Bankside (1647): Showing the densely packed gabled timber and brick tenements crowding the north bank of the River Thames between Blackfriars and Baynard’s Castle before the 1665 Plague and 1666 Fire.",
+      "prologue_audio": "/audio/lessons/water_and_sanitation/lesson_3_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · Historian"
     },
     {
       "id": "lesson_4",
@@ -6165,7 +6195,9 @@ export default {
           "teacher_notes": {
             "hinge_question": "Why were speculative landlords permitted to construct unventilated back-to-backs and cellars without any legal sanitary regulations before 1848?"
           },
-          "question": "What does Source A reveal about the living conditions and lack of sanitary infrastructure in rapidly growing industrial boomtowns?"
+          "question": "What does Source A reveal about the living conditions and lack of sanitary infrastructure in rapidly growing industrial boomtowns?",
+          "studio_audio": "/audio/sources/water_and_sanitation/lesson_4_sSOURCEA.mp3",
+          "studio_voice_label": "Dr James Phillips Kay-Shuttlewor…"
         },
         {
           "id": "water_l4_src_b",
@@ -6197,7 +6229,9 @@ export default {
           "teacher_notes": {
             "hinge_question": "Why did Chadwick believe that spending public taxes on sewers would actually make Britain richer rather than poorer?"
           },
-          "question": "How did Edwin Chadwick use evidence in Source C to challenge traditional Victorian beliefs about poverty and public health?"
+          "question": "How did Edwin Chadwick use evidence in Source C to challenge traditional Victorian beliefs about poverty and public health?",
+          "studio_audio": "/audio/sources/water_and_sanitation/lesson_4_sSOURCEC.mp3",
+          "studio_voice_label": "Edwin Chadwick's 'Report on the…"
         },
         {
           "id": "water_l4_src_d",
@@ -7159,7 +7193,9 @@ export default {
       "banner_position": "center 48%",
       "enquiry_question": "How did cholera and the 1858 ‘Great Stink’ force London to build sewers?",
       "enquiryQuestion": "How did cholera and the 1858 ‘Great Stink’ force London to build sewers?",
-      "banner_caption": "Section of the Thames Embankment Showing Sir Joseph Bazalgette’s Low-Level Intercepting Sewer (The Illustrated London News, 1867): Built after the 1858 Great Stink to carry London’s sewage eastward away from central drinking supplies."
+      "banner_caption": "Section of the Thames Embankment Showing Sir Joseph Bazalgette’s Low-Level Intercepting Sewer (The Illustrated London News, 1867): Built after the 1858 Great Stink to carry London’s sewage eastward away from central drinking supplies.",
+      "prologue_audio": "/audio/lessons/water_and_sanitation/lesson_4_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · Historian"
     },
     {
       "id": "lesson_5",
@@ -7648,7 +7684,9 @@ export default {
           "teacher_notes": {
             "hinge_question": "Why was Reverend Whitehead’s collaboration vital in convincing a sceptical medical establishment of Snow’s waterborne discovery?"
           },
-          "question": "What does Source C prove about the physical mechanism that caused the Broad Street cholera outbreak in September 1854?"
+          "question": "What does Source C prove about the physical mechanism that caused the Broad Street cholera outbreak in September 1854?",
+          "studio_audio": "/audio/sources/water_and_sanitation/lesson_5_sSOURCEC.mp3",
+          "studio_voice_label": "Reverend Henry Whitehead's Vestr…"
         },
         {
           "id": "water_l5_src_d",
@@ -7679,7 +7717,9 @@ export default {
           "teacher_notes": {
             "hinge_question": "Why did it take until 1875 for the British Parliament to make sanitary provision legally compulsory rather than merely optional?"
           },
-          "question": "What does Source E reveal about the fundamental shift in the British government’s approach to public health by 1875?"
+          "question": "What does Source E reveal about the fundamental shift in the British government’s approach to public health by 1875?",
+          "studio_audio": "/audio/sources/water_and_sanitation/lesson_5_sSOURCEE.mp3",
+          "studio_voice_label": "The Public Health Act 1875"
         }
       ],
       "tasks": [
@@ -8607,7 +8647,9 @@ export default {
       "banner_position": "center 38%",
       "enquiry_question": "How did science and government laws finally defeat water-borne cholera?",
       "enquiryQuestion": "How did science and government laws finally defeat water-borne cholera?",
-      "banner_caption": "William Heath, \"Monster Soup Commonly Called Thames Water\" (1828, Wellcome Collection): Satirical print exposing the invisible sewage filth pumped into London homes decades before Dr John Snow and Louis Pasteur proved waterborne germs."
+      "banner_caption": "William Heath, \"Monster Soup Commonly Called Thames Water\" (1828, Wellcome Collection): Satirical print exposing the invisible sewage filth pumped into London homes decades before Dr John Snow and Louis Pasteur proved waterborne germs.",
+      "prologue_audio": "/audio/lessons/water_and_sanitation/lesson_5_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · Historian"
     },
     {
       "id": "lesson_6",
@@ -9279,7 +9321,9 @@ export default {
               "motive": "Establishing a universal, compulsory statutory framework for sanitation and clean water across Britain."
             }
           },
-          "source_context": "Passed by Disraeli's government, the 1875 Act was the turning point in British public health, completely replacing laissez-faire with enforceable state duties."
+          "source_context": "Passed by Disraeli's government, the 1875 Act was the turning point in British public health, completely replacing laissez-faire with enforceable state duties.",
+          "studio_audio": "/audio/sources/water_and_sanitation/lesson_6_sE.mp3",
+          "studio_voice_label": "The Public Health Act 1875"
         }
       ],
       "tasks": [
@@ -10113,7 +10157,9 @@ export default {
       "banner_position": "center 42%",
       "enquiry_question": "Why was there rapid progress in Public Health between 1800 and 1900? [12 marks • 30 mins]",
       "enquiryQuestion": "Why was there rapid progress in Public Health between 1800 and 1900? [12 marks • 30 mins]",
-      "banner_caption": "Opening of the Southern Embankment of the Thames at Lambeth (The Illustrated London News, 1869): Celebrating the monumental civil-engineering and sanitary transformation of Victorian London between 1858 and 1875."
+      "banner_caption": "Opening of the Southern Embankment of the Thames at Lambeth (The Illustrated London News, 1869): Celebrating the monumental civil-engineering and sanitary transformation of Victorian London between 1858 and 1875.",
+      "prologue_audio": "/audio/lessons/water_and_sanitation/lesson_6_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · Historian"
     }
   ],
   "keyStage": "KS3",

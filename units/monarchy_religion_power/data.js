@@ -2082,7 +2082,9 @@ export default {
       "banner_position": "center 46%",
       "enquiry_question": "Why did Henry VIII break with Rome and destroy the monasteries?",
       "enquiryQuestion": "Why did Henry VIII break with Rome and destroy the monasteries?",
-      "banner_caption": "The Embarkation of Henry VIII at Dover (c. 1540), showing the Tudor warship Henry Grace à Dieu and royal fleet sailing from Dover harbour beneath St George banners."
+      "banner_caption": "The Embarkation of Henry VIII at Dover (c. 1540), showing the Tudor warship Henry Grace à Dieu and royal fleet sailing from Dover harbour beneath St George banners.",
+      "prologue_audio": "/audio/lessons/monarchy_religion_power/lesson_1_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · Historian"
     },
     {
       "id": "lesson_2",
@@ -2347,7 +2349,9 @@ export default {
               "teacher_notes": {
                 "hinge_question": "Did the compromise title of 'Supreme Governor' reflect genuine moderation or cunning political pragmatism?",
                 "source_context": "In 1559, Elizabeth adopted the title 'Supreme Governor' to placate Catholics and Puritans. **Hinge Question:** Did the compromise title of 'Supreme Governor' reflect genuine moderation or cunning political pragmatism?"
-              }
+              },
+              "studio_audio": "/audio/sources/monarchy_religion_power/lesson_2_sB.mp3",
+              "studio_voice_label": "The Act of Supremacy 1559 (1 Eli…"
             }
           ],
           "content": "<p class=\"prose-p\"><span class=\"para-ref\">[2.2]</span> Elizabeth needed an enduring political <strong>compromise</strong> to avoid civil war. In early 1559, Parliament passed the Act of Supremacy. To soothe Catholics who believed only Christ or the Pope could lead the Church, Elizabeth adopted the clever title of <strong>Supreme Governor</strong> rather than Supreme Head.</p><p class=\"prose-p\">The Act required strict loyalty oaths for priests and public officials. When all but one Marian Catholic bishop refused to take the oath, Elizabeth showed steel by sacking Catholic bishops and appointing moderate Protestants in their place.</p>",
@@ -2398,7 +2402,9 @@ export default {
               "teacher_notes": {
                 "hinge_question": "Can an intentionally ambiguous religious service maintain long-term peace in a deeply divided country?",
                 "source_context": "The 1559 Prayer Book blended Catholic and Protestant wording to achieve broad conformity. **Hinge Question:** Can an intentionally ambiguous religious service maintain long-term peace in a deeply divided country?"
-              }
+              },
+              "studio_audio": "/audio/sources/monarchy_religion_power/lesson_2_sC.mp3",
+              "studio_voice_label": "The Book of Common Prayer (1559)"
             }
           ],
           "content": "<p class=\"prose-p\"><span class=\"para-ref\">[2.3]</span> Alongside supremacy, the 1559 Act of <strong>Uniformity</strong> established Elizabeth's famed <strong>Via Media</strong> (Middle Way). It introduced one shared prayer book for every parish, written in English. The communion service featured clever compromise wording that satisfied both Protestants and Catholics.</p><p class=\"prose-p\">Attendance was strictly compulsory. Any Catholic <strong>recusant</strong> who refused to attend Sunday church services was punished with Sunday church fines (12d)—roughly a day’s wages for a labourer. Elizabeth avoided probing private conscience, famously declaring she had no desire to make windows into men's souls.</p>",
@@ -2545,7 +2551,9 @@ export default {
               "teacher_notes": {
                 "hinge_question": "Did the Pope's bull protect English Catholics or seal their doom as suspected traitors?",
                 "source_context": "In 1570, Pope Pius V excommunicated Elizabeth, absolving English subjects of loyalty. **Hinge Question:** Did the Pope's bull protect English Catholics or seal their doom as suspected traitors?"
-              }
+              },
+              "studio_audio": "/audio/sources/monarchy_religion_power/lesson_2_sD.mp3",
+              "studio_voice_label": "Pope Pius V"
             }
           ],
           "content": "<p class=\"prose-p\"><span class=\"para-ref\">[2.4]</span> Elizabeth’s Middle Way soon faced violent Catholic resistance. In 1569, traditionalist Northern Earls rebel against royal authority, marching into Durham Cathedral, tearing down Protestant communion tables, and celebrating secret Catholic mass. Elizabeth swiftly crushed the rebellion, executing four hundred rebels.</p><p class=\"prose-p\">In response, Pope Pius V issued the 1570 <strong>papal bull</strong> <em>Regnans in Excelsis</em>, ordering Elizabeth's <strong>excommunication</strong>. By declaring Elizabeth a heretic and usurper, the Pope orders Elizabeth deposed, freeing English Catholics from their allegiance and turning every Catholic subject into a suspected traitor.</p>"
@@ -2640,7 +2648,9 @@ export default {
             "hinge_question": "Did the compromise title of 'Supreme Governor' reflect genuine moderation or cunning political pragmatism?",
             "source_context": "In 1559, Elizabeth adopted the title 'Supreme Governor' to placate Catholics and Puritans. **Hinge Question:** Did the compromise title of 'Supreme Governor' reflect genuine moderation or cunning political pragmatism?"
           },
-          "source_context": "In 1559, Parliament passed the Acts of Supremacy and Uniformity, creating the Elizabethan Religious Settlement (the Via Media)."
+          "source_context": "In 1559, Parliament passed the Acts of Supremacy and Uniformity, creating the Elizabethan Religious Settlement (the Via Media).",
+          "studio_audio": "/audio/sources/monarchy_religion_power/lesson_2_sB.mp3",
+          "studio_voice_label": "The Act of Supremacy 1559 (1 Eli…"
         },
         {
           "id": "monarchy_religion_power_l2_src_c",
@@ -2661,7 +2671,9 @@ export default {
             "hinge_question": "Can an intentionally ambiguous religious service maintain long-term peace in a deeply divided country?",
             "source_context": "The 1559 Prayer Book blended Catholic and Protestant wording to achieve broad conformity. **Hinge Question:** Can an intentionally ambiguous religious service maintain long-term peace in a deeply divided country?"
           },
-          "source_context": "The 1559 Book of Common Prayer was designed to encompass as many moderate believers as possible, penalising non-attendance with small 12d recusancy fines."
+          "source_context": "The 1559 Book of Common Prayer was designed to encompass as many moderate believers as possible, penalising non-attendance with small 12d recusancy fines.",
+          "studio_audio": "/audio/sources/monarchy_religion_power/lesson_2_sC.mp3",
+          "studio_voice_label": "The Book of Common Prayer (1559)"
         },
         {
           "id": "monarchy_religion_power_l2_src_d",
@@ -2682,7 +2694,9 @@ export default {
             "hinge_question": "Did the Pope's bull protect English Catholics or seal their doom as suspected traitors?",
             "source_context": "In 1570, Pope Pius V excommunicated Elizabeth, absolving English subjects of loyalty. **Hinge Question:** Did the Pope's bull protect English Catholics or seal their doom as suspected traitors?"
           },
-          "source_context": "Following the 1569 Northern Rebellion, Pius V issued Regnans in Excelsis, inciting assassination plots and ushering in Walsingham's surveillance network."
+          "source_context": "Following the 1569 Northern Rebellion, Pius V issued Regnans in Excelsis, inciting assassination plots and ushering in Walsingham's surveillance network.",
+          "studio_audio": "/audio/sources/monarchy_religion_power/lesson_2_sD.mp3",
+          "studio_voice_label": "Pope Pius V"
         },
         {
           "id": "monarchy_religion_power_l2_src_e",
@@ -3787,7 +3801,9 @@ export default {
       "banner_position": "center 28%",
       "enquiry_question": "How did Elizabeth I try to settle England’s religious divisions after 1558?",
       "enquiryQuestion": "How did Elizabeth I try to settle England’s religious divisions after 1558?",
-      "banner_caption": "Contemporary College of Arms manuscript drawing of Queen Elizabeth I’s coronation procession through London (14 January 1559), carried in an open royal litter beneath a canopy of state."
+      "banner_caption": "Contemporary College of Arms manuscript drawing of Queen Elizabeth I’s coronation procession through London (14 January 1559), carried in an open royal litter beneath a canopy of state.",
+      "prologue_audio": "/audio/lessons/monarchy_religion_power/lesson_2_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · Historian"
     },
     {
       "id": "lesson_3",
@@ -4006,7 +4022,9 @@ export default {
               "teacher_notes": {
                 "hinge_question": "Did Philip II launch the Armada out of genuine religious duty or strategic imperial ambition?",
                 "source_context": "Pope Sixtus V pledged 1,000,000 gold ducats to support Philip II's Armada. **Hinge Question:** Did Philip II launch the Armada out of genuine religious duty or strategic imperial ambition?"
-              }
+              },
+              "studio_audio": "/audio/sources/monarchy_religion_power/lesson_3_sA.mp3",
+              "studio_voice_label": "Pope Sixtus V Promises 1 (1587)"
             }
           ],
           "content": "<p class=\"prose-p\"><span class=\"para-ref\">[3.1]</span> By 1585, King Philip II of Spain launched a holy Catholic <strong>crusade</strong> to conquer Protestant England. Philip was infuriated by English help for Dutch rebels fighting Spanish rule in the Netherlands, and enraged by English <strong>privateer</strong> Sir Francis Drake stealing Spanish gold and raiding Caribbean treasure fleets.</p><p class=\"prose-p\">When Mary Queen of Scots was beheaded in 1587, Philip secured papal blessings to depose Elizabeth. Philip assembled an invincible Armada to sail up the English Channel, ferry the Duke of Parma's veteran army from Flanders, and overthrow the Protestant Crown.</p>"
@@ -4356,7 +4374,9 @@ export default {
             "hinge_question": "Did Philip II launch the Armada out of genuine religious duty or strategic imperial ambition?",
             "source_context": "Pope Sixtus V pledged 1,000,000 gold ducats to support Philip II's Armada. **Hinge Question:** Did Philip II launch the Armada out of genuine religious duty or strategic imperial ambition?"
           },
-          "source_context": "Following the execution of Mary Stuart and Elizabeth's Treaty of Nonsuch aiding Dutch rebels, Philip II assembled the Armada with papal blessing."
+          "source_context": "Following the execution of Mary Stuart and Elizabeth's Treaty of Nonsuch aiding Dutch rebels, Philip II assembled the Armada with papal blessing.",
+          "studio_audio": "/audio/sources/monarchy_religion_power/lesson_3_sA.mp3",
+          "studio_voice_label": "Pope Sixtus V Promises 1 (1587)"
         },
         {
           "id": "monarchy_religion_power_l3_src_b",
@@ -5498,7 +5518,9 @@ export default {
       "banner_position": "center 35%",
       "enquiry_question": "Why did Philip II’s Spanish Armada fail to invade England in 1588?",
       "enquiryQuestion": "Why did Philip II’s Spanish Armada fail to invade England in 1588?",
-      "banner_caption": "Cornelis Claesz van Wieringen’s The Spanish Armada off the English Coast (c. 1620–1625), showing English race-built galleons engaging Philip II’s towering warships in the Channel in 1588."
+      "banner_caption": "Cornelis Claesz van Wieringen’s The Spanish Armada off the English Coast (c. 1620–1625), showing English race-built galleons engaging Philip II’s towering warships in the Channel in 1588.",
+      "prologue_audio": "/audio/lessons/monarchy_religion_power/lesson_3_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · Historian"
     },
     {
       "id": "lesson_4",
@@ -5768,7 +5790,9 @@ export default {
               "teacher_notes": {
                 "hinge_question": "Was the Grand Remonstrance a reasonable safeguard of English liberties or an unconstitutional coup by Parliament?",
                 "source_context": "In December 1641, Parliament presented the Grand Remonstrance, precipitating the Civil War. **Hinge Question:** Was the Grand Remonstrance a reasonable safeguard of English liberties or an unconstitutional coup by Parliament?"
-              }
+              },
+              "studio_audio": "/audio/sources/monarchy_religion_power/lesson_4_sB.mp3",
+              "studio_voice_label": "The Grand Remonstrance"
             }
           ],
           "content": "<p class=\"prose-p\"><span class=\"para-ref\">[4.2]</span> Scottish rebellion forced Charles to recall Parliament in 1640. Furious MPs dismantled royal courts and pursued the <strong>impeachment</strong> of Charles's closest ministers. Tensions exploded on 4 January 1642, when armed royal guards raid the Commons chamber as Charles attempted to arrest Five MPs for high treason.</p><p class=\"prose-p\">Warned beforehand, the Five MPs escape by river boat into the protective shelter of the City of London. Humiliated and furious, Charles fled London. In August 1642, the King raises war flag at Nottingham, plunging England into brutal civil war.</p>"
@@ -5962,7 +5986,9 @@ export default {
             "hinge_question": "Was the Grand Remonstrance a reasonable safeguard of English liberties or an unconstitutional coup by Parliament?",
             "source_context": "In December 1641, Parliament presented the Grand Remonstrance, precipitating the Civil War. **Hinge Question:** Was the Grand Remonstrance a reasonable safeguard of English liberties or an unconstitutional coup by Parliament?"
           },
-          "source_context": "Passed by only 11 votes in November 1641, the Grand Remonstrance split Parliament and provoked Charles into his failed attempt to arrest the Five Members in January 1642."
+          "source_context": "Passed by only 11 votes in November 1641, the Grand Remonstrance split Parliament and provoked Charles into his failed attempt to arrest the Five Members in January 1642.",
+          "studio_audio": "/audio/sources/monarchy_religion_power/lesson_4_sB.mp3",
+          "studio_voice_label": "The Grand Remonstrance"
         },
         {
           "id": "monarchy_religion_power_l4_src_c",
@@ -7102,7 +7128,9 @@ export default {
       "banner_position": "center 72%",
       "enquiry_question": "Why did conflict with Parliament cost King Charles I his head—and reshape monarchy?",
       "enquiryQuestion": "Why did conflict with Parliament cost King Charles I his head—and reshape monarchy?",
-      "banner_caption": "William Miller after J. M. W. Turner, The Prince of Orange Landing at Torbay, November 1688 (published 1852 after 1832 Tate painting): William of Orange's Protestant fleet arriving off Devon during the Glorious Revolution."
+      "banner_caption": "William Miller after J. M. W. Turner, The Prince of Orange Landing at Torbay, November 1688 (published 1852 after 1832 Tate painting): William of Orange's Protestant fleet arriving off Devon during the Glorious Revolution.",
+      "prologue_audio": "/audio/lessons/monarchy_religion_power/lesson_4_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · Historian"
     },
     {
       "id": "lesson_5",
@@ -7321,7 +7349,9 @@ export default {
               "teacher_notes": {
                 "hinge_question": "Looking back across 1517–1689, was Henry VIII the creator of royal power or the accidental spark of its ultimate downfall?",
                 "source_context": "Passed in 1534, the Act of Supremacy inaugurated English royal church sovereignty. **Hinge Question:** Looking back across 1517–1689, was Henry VIII the creator of royal power or the accidental spark of its ultimate downfall?"
-              }
+              },
+              "studio_audio": "/audio/sources/monarchy_religion_power/lesson_5_sA.mp3",
+              "studio_voice_label": "The Act of Supremacy 1534"
             }
           ],
           "content": "<p class=\"prose-p\"><span class=\"para-ref\">[5.1]</span> The Break with Rome transformed national authority. Under Henry VIII, the Pope lost all English power as the Crown established sovereign national independence. Crucially, Henry achieved this not by royal decree, but through <strong>statute law</strong> passed by the Reformation Parliament.</p><p class=\"prose-p\">New laws made with MPs forged an unprecedented partnership between King and Parliament. Furthermore, vast monastery lands given away or sold to local gentry bound England’s landowning classes to royal supremacy, laying the foundations of modern English parliamentary <strong>sovereignty</strong>.</p>"
@@ -7423,7 +7453,9 @@ export default {
               "teacher_notes": {
                 "hinge_question": "Why did the Stuart belief in Divine Right lead to civil war under Charles I, while the Tudors ruled without rebellion?",
                 "source_context": "In 1610, James I told Parliament that questioning the King's prerogative was blasphemy. **Hinge Question:** Why did the Stuart belief in Divine Right lead to civil war under Charles I, while the Tudors ruled without rebellion?"
-              }
+              },
+              "studio_audio": "/audio/sources/monarchy_religion_power/lesson_5_sC.mp3",
+              "studio_voice_label": "King James I"
             }
           ],
           "content": "<p class=\"prose-p\"><span class=\"para-ref\">[5.3]</span> The Stuart accession shattered Tudor harmony. James I and Charles I embraced <strong>absolutism</strong>, insisting through Divine Right that kings claim only God rules them, free from parliamentary consent. Charles ruled eleven years without MPs, extracting illegal taxes without votes through Ship Money.</p><p class=\"prose-p\">This tyranny collapsed when Scots rebel against English rules and prayer books. Bankrupted by military resistance, Charles was forced to recall MPs in 1640, triggering an ideological showdown between absolute royal power and parliamentary privilege.</p>"
@@ -7683,7 +7715,9 @@ export default {
             "hinge_question": "Looking back across 1517–1689, was Henry VIII the creator of royal power or the accidental spark of its ultimate downfall?",
             "source_context": "Passed in 1534, the Act of Supremacy inaugurated English royal church sovereignty. **Hinge Question:** Looking back across 1517–1689, was Henry VIII the creator of royal power or the accidental spark of its ultimate downfall?"
           },
-          "source_context": "In 1534, Parliament passed the Act of Supremacy, officially severing England from the Roman Catholic Church and vesting supreme ecclesiastical power in the monarch."
+          "source_context": "In 1534, Parliament passed the Act of Supremacy, officially severing England from the Roman Catholic Church and vesting supreme ecclesiastical power in the monarch.",
+          "studio_audio": "/audio/sources/monarchy_religion_power/lesson_5_sA.mp3",
+          "studio_voice_label": "The Act of Supremacy 1534"
         },
         {
           "id": "monarchy_religion_power_l5_src_b",
@@ -7725,7 +7759,9 @@ export default {
             "hinge_question": "Why did the Stuart belief in Divine Right lead to civil war under Charles I, while the Tudors ruled without rebellion?",
             "source_context": "In 1610, James I told Parliament that questioning the King's prerogative was blasphemy. **Hinge Question:** Why did the Stuart belief in Divine Right lead to civil war under Charles I, while the Tudors ruled without rebellion?"
           },
-          "source_context": "The accession of the Scottish Stuart dynasty in 1603 imported absolutist political theories that caused escalating constitutional conflict with Parliament."
+          "source_context": "The accession of the Scottish Stuart dynasty in 1603 imported absolutist political theories that caused escalating constitutional conflict with Parliament.",
+          "studio_audio": "/audio/sources/monarchy_religion_power/lesson_5_sC.mp3",
+          "studio_voice_label": "King James I"
         },
         {
           "id": "monarchy_religion_power_l5_src_d",
@@ -8869,7 +8905,9 @@ export default {
       "banner_position": "center 24%",
       "enquiry_question": "Which turning point shifted power most decisively from monarchs to Parliament?",
       "enquiryQuestion": "Which turning point shifted power most decisively from monarchs to Parliament?",
-      "banner_caption": "Wenceslaus Hollar, Sala Regalis cum Curia West-monasterij, vulgo Westminster Haall (1647, British Museum / Metropolitan Museum of Art): New Palace Yard and Westminster Hall, seat of England's royal law courts, parliamentary state trials, and constitutional struggle."
+      "banner_caption": "Wenceslaus Hollar, Sala Regalis cum Curia West-monasterij, vulgo Westminster Haall (1647, British Museum / Metropolitan Museum of Art): New Palace Yard and Westminster Hall, seat of England's royal law courts, parliamentary state trials, and constitutional struggle.",
+      "prologue_audio": "/audio/lessons/monarchy_religion_power/lesson_5_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · Historian"
     }
   ],
   "homepage_background": "/images/family_of_henry_viii_c1545.jpg",

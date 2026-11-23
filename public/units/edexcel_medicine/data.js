@@ -75,12 +75,16 @@ export default {
               {
                 "id": "Source A",
                 "provenance": "From the journal of Reverend Arthur Davies, July 1916. He was serving as an army chaplain at a Casualty Clearing Station near the Somme. He is describing the opening days of the offensive.",
-                "content": "1 July 1916\nThe casualties have started to arrive. Throughout the day, the injured and dying are brought in continuously. The volume of patients is overwhelming; every bed is occupied, and men are fortunate just to find a spot on the bare ground. Many will pass away before surgery is possible. We have already admitted 1,500 casualties, and the stream has not stopped.\n\n3 July 1916\nAnother thousand severely injured men arrive daily. The wards, tents, and wooden huts are packed to the limit with suffering soldiers."
+                "content": "1 July 1916\nThe casualties have started to arrive. Throughout the day, the injured and dying are brought in continuously. The volume of patients is overwhelming; every bed is occupied, and men are fortunate just to find a spot on the bare ground. Many will pass away before surgery is possible. We have already admitted 1,500 casualties, and the stream has not stopped.\n\n3 July 1916\nAnother thousand severely injured men arrive daily. The wards, tents, and wooden huts are packed to the limit with suffering soldiers.",
+                "studio_audio": "/audio/sources/edexcel_medicine/root_xams_1_section_a_questions_3_s1.mp3",
+                "studio_voice_label": "Living Archive · Primary Record"
               },
               {
                 "id": "Source B",
                 "provenance": "From a letter written by Edith Smith, a VAD nurse, to her sister in December 1917. She was stationed at a base hospital near the French coast.",
-                "content": "Our morning duties (changing the linens, washing patients, recording temperatures, and dispensing medication) begin at 3.30 am! The freezing temperatures are unbearable. Icicles hang thick over the ward windows. I have to work while wearing an extra knitted sweater and my heavy overcoat. Even the kettles, rubber hot water bottles, and washing sponges have frozen solid. The pipes freeze entirely, meaning we must strictly ration the water provided to the wounded. If any water splashes onto the floor, it instantly turns into a sheet of ice."
+                "content": "Our morning duties (changing the linens, washing patients, recording temperatures, and dispensing medication) begin at 3.30 am! The freezing temperatures are unbearable. Icicles hang thick over the ward windows. I have to work while wearing an extra knitted sweater and my heavy overcoat. Even the kettles, rubber hot water bottles, and washing sponges have frozen solid. The pipes freeze entirely, meaning we must strictly ration the water provided to the wounded. If any water splashes onto the floor, it instantly turns into a sheet of ice.",
+                "studio_audio": "/audio/sources/edexcel_medicine/root_xams_1_section_a_questions_3_s2.mp3",
+                "studio_voice_label": "Living Archive · Primary Record"
               }
             ],
             "model_answer": "Source A is highly useful for an enquiry into the challenges of caring for casualties because its content vividly captures how mass offensives overwhelmed medical capacity at Casualty Clearing Stations (CCSs). Reverend Davies notes that on 1 July 1916—the opening day of the Battle of the Somme—1,500 wounded men poured into his CCS, packing huts, tents, and bare ground while another thousand arrived daily by 3 July, leaving many to die before surgeons could operate. This aligns closely with contextual knowledge: British planners expected roughly 10,000 daily Somme casualties, yet suffered 57,470 on Day 1 alone (including 19,240 killed), swamping CCS surgical teams designed to hold 200–1,000 patients and forcing strict three-tier triage. In terms of provenance, as a contemporaneous private diary written on the spot by an army chaplain tending the dying on 1–3 July 1916, Davies was an eyewitness with no propaganda motive to conceal operational breakdown, making Source A candid evidence of mass-casualty congestion—though as a non-surgeon he does not detail clinical obstacles inside the theatre such as gas gangrene or blood loss.\n\nSource B is equally useful because it illuminates a completely different environmental challenge further down the Chain of Evacuation: bitter winter conditions in coastal Base Hospitals. Writing in December 1917, VAD nurse Edith Smith describes gruelling 3.30 a.m. ward shifts where icicles hung inside windows, pipes froze solid forcing strict water rationing, sponges and hot-water bottles froze, and spilled water turned instantly to sheet ice. Contextually, the winters of 1916–17 and late 1917 were among the coldest in Northern France in decades; Base Hospitals at Boulogne, Étaples, and Rouen often expanded into draughty canvas marquees and uninsulated huts where Volunteer Aid Detachment (VAD) nurses performed exhausting sanitation and nursing duties. Regarding provenance, a personal letter to her sister bypassed press optimism to give an honest picture of daily nursing hardship, though wartime field censorship prevented naming her exact location and her coastal perspective cannot show frontline stretcher-bearer or RAP perils.\n\nOverall, both sources are highly useful in combination: Source A exposes the acute surgical bottleneck created by industrial-scale Somme casualties at forward CCS hubs, while Source B reveals how extreme weather and gruelling nursing conditions impeded recovery even at rear Base Hospitals."
@@ -181,14 +185,18 @@ export default {
               {
                 "id": "Source A",
                 "provenance": "A clinical extract from an RAMC medical officer logbook at an Advanced Dressing Station (ADS) near Ypres, May 1915.",
-                "content": "The men were brought in stumbling, clutching their throats and gasping violently for air. Their eyes were severely inflamed and streaming with tears. We immediately began washing out the blinded eyes of the chlorine gas casualties using simple bicarbonate of soda solutions. It provides some relief, but the respiratory damage is profound. Many will not survive the night."
+                "content": "The men were brought in stumbling, clutching their throats and gasping violently for air. Their eyes were severely inflamed and streaming with tears. We immediately began washing out the blinded eyes of the chlorine gas casualties using simple bicarbonate of soda solutions. It provides some relief, but the respiratory damage is profound. Many will not survive the night.",
+                "studio_audio": "/audio/sources/edexcel_medicine/root_xams_2_section_a_questions_3_s1.mp3",
+                "studio_voice_label": "Living Archive · Primary Record"
               },
               {
                 "id": "Source B",
                 "provenance": "An official British War Office photograph taken by Second Lieutenant Ernest Brooks near Ovillers during the Battle of the Somme, July 1916 (Imperial War Museum, IWM Q 3995 / Q 4002). It shows a British Vickers machine-gun crew wearing Phenate-Hexamine (PH) anti-gas helmets.",
                 "image": "/images/med_banner_kt5_3_vickers_gas_helmets.jpg",
                 "caption": "Source B: Official War Office photograph taken near Ovillers on the Somme (July 1916) showing a British Vickers machine-gun crew wearing flannel PH gas helmets.",
-                "content": "[Archival Photograph: Two British Machine Gun Corps soldiers in a trench near Ovillers on the Somme, July 1916, wearing chemically treated flannel Phenate-Hexamine (PH) hoods tucked into their tunics with glass eyepieces and rubber exhalation valves while operating a Vickers machine gun.]"
+                "content": "[Archival Photograph: Two British Machine Gun Corps soldiers in a trench near Ovillers on the Somme, July 1916, wearing chemically treated flannel Phenate-Hexamine (PH) hoods tucked into their tunics with glass eyepieces and rubber exhalation valves while operating a Vickers machine gun.]",
+                "studio_audio": "/audio/sources/edexcel_medicine/root_xams_2_section_a_questions_3_s2.mp3",
+                "studio_voice_label": "Living Archive · Primary Record"
               }
             ],
             "model_answer": "Source A is highly useful for an enquiry into the physical trauma and early makeshift response to poison gas because it provides direct clinical evidence from May 1915, weeks after Germany’s first chlorine release at Second Ypres (22 April 1915). The RAMC officer records men stumbling into the Advanced Dressing Station clutching their throats, gasping violently as fluid filled their stripped lungs (internal suffocation), and having inflamed eyes irrigated with simple bicarbonate of soda solution. This matches historical context: caught completely unprepared for chemical warfare in spring 1915, troops initially improvised urine- or bicarbonate-soaked cotton pads, while ADS staff could offer only oxygen cylinders, eye-washes, and rest. Its provenance as a contemporaneous May 1915 ADS medical logbook gives it high clinical candour free from press spin, though being written in May 1915 means it covers only chlorine and cannot reflect deadlier phosgene (December 1915) or blistering mustard gas (July 1917).\n\nSource B is equally useful for showing how rapidly the British Army developed mass-produced protective equipment to counter suffocating gas clouds by mid-1916. Photographed near Ovillers on the Somme in July 1916, the British Vickers gunners wear Phenate-Hexamine (PH) flannel hoods tucked tightly inside their tunic collars, fitted with circular glass eyepieces and a one-way rubber exhalation tube. Contextually, over 26 million Hypo and PH chemical-impregnated hoods were issued in 1915–16 to neutralise chlorine and phosgene, keeping fatal British gas deaths below 6,000 (~1% of total fatalities) despite intense psychological terror. Evaluating provenance, however, Second Lieutenant Ernest Brooks took this staged official War Office photograph to reassure British newspaper readers that troops were well protected; a still photograph hides how PH eyepieces misted up, perished in heavy rain, and were already being superseded from August 1916 by Edward Harrison’s far superior charcoal-canister Small Box Respirator.\n\nTogether, Sources A and B are strongly complementary: Source A captures the acute respiratory agony and helpless early treatment of spring 1915 chlorine casualties, while Source B demonstrates the War Office’s rapid technological adaptation by July 1916."
@@ -289,12 +297,16 @@ export default {
               {
                 "id": "Source A",
                 "provenance": "A private diary entry from an RAMC surgeon at a Casualty Clearing Station (CCS) near the Somme, August 1916.",
-                "content": "Gas gangrene is claiming too many of our men with deep shrapnel wounds. Today we fully implemented the Carrel-Dakin method of chemical wound irrigation. By inserting rubber tubes directly into the deep tissue, we can flush the wound continuously with a sterilised salt solution. It is labour-intensive and requires the solution to be mixed fresh, but the reduction in severe infections and subsequent amputations is already noticeable."
+                "content": "Gas gangrene is claiming too many of our men with deep shrapnel wounds. Today we fully implemented the Carrel-Dakin method of chemical wound irrigation. By inserting rubber tubes directly into the deep tissue, we can flush the wound continuously with a sterilised salt solution. It is labour-intensive and requires the solution to be mixed fresh, but the reduction in severe infections and subsequent amputations is already noticeable.",
+                "studio_audio": "/audio/sources/edexcel_medicine/root_xams_3_section_a_questions_3_s1.mp3",
+                "studio_voice_label": "Living Archive · Primary Record"
               },
               {
                 "id": "Source B",
                 "provenance": "An official British Army medical directive issued to RAMC units in late 1915.",
-                "content": "URGENT: PREVENTATIVE MEASURES FOR TETANUS.\n\nIt is strictly ordered that all stretcher bearers and medical personnel at Regimental Aid Posts must ensure the immediate administration of anti-tetanus serum to any casualty presenting with shrapnel or gunshot wounds. The high concentration of manure in the French soil has led to unacceptable mortality rates from tetanus infection. Immediate injection is mandatory before evacuation down the line."
+                "content": "URGENT: PREVENTATIVE MEASURES FOR TETANUS.\n\nIt is strictly ordered that all stretcher bearers and medical personnel at Regimental Aid Posts must ensure the immediate administration of anti-tetanus serum to any casualty presenting with shrapnel or gunshot wounds. The high concentration of manure in the French soil has led to unacceptable mortality rates from tetanus infection. Immediate injection is mandatory before evacuation down the line.",
+                "studio_audio": "/audio/sources/edexcel_medicine/root_xams_3_section_a_questions_3_s2.mp3",
+                "studio_voice_label": "Living Archive · Primary Record"
               }
             ],
             "model_answer": "Source A is highly useful for an enquiry into the surgical management of deep wound infections because it records the frontline clinical adoption of the Carrel-Dakin method at a Somme Casualty Clearing Station in August 1916. The surgeon notes that gas gangrene was killing men with deep shrapnel wounds, prompting his team to thread perforated rubber tubes into excised wound cavities to flush them continuously with freshly mixed sterilised Dakin’s solution (buffered sodium hypochlorite), noticeably cutting infections and amputations. This aligns closely with contextual knowledge: traditional Listerian surface carbolic dressings failed against anaerobic Clostridium perfringens driven deep into muscle with manured soil, forcing surgeons to combine radical wound debridement (cutting away dead tissue and khaki cloth) with Carrel-Dakin chemical irrigation before delayed stitching. Its provenance as a candid August 1916 private diary by an operating CCS surgeon during the Somme offensive gives reliable eyewitness insight into both the method’s success and its practical drawback—that unstable hypochlorite took six hours to prepare and expired quickly during mass casualty surges.\n\nSource B is equally useful because it demonstrates the British Army’s highly successful *preventative* response to a second lethal soil-borne wound infection: tetanus. Issued as an urgent late-1915 army directive, it orders all medical personnel at Regimental Aid Posts to inject anti-tetanus serum immediately into every shrapnel or gunshot casualty before evacuation down the line because manured French farmland caused high tetanus mortality. Contextually, tetanus killed scores of wounded British soldiers during the autumn 1914 battles on the Marne and First Ypres, but once prophylactic anti-tetanus serum injections were made routine at RAPs and Dressing Stations from late 1914–1915, tetanus deaths plummeted almost to zero—contrasting starkly with gas gangrene, for which no vaccine or serum cure succeeded. As a binding official RAMC order, Source B reliably proves army-wide preventative policy, though an order alone does not show supply challenges during the chaotic opening weeks of 1914.\n\nOverall, Sources A and B are highly useful together: Source B shows how biological serum injections solved tetanus right at the RAP, whereas Source A shows why gas gangrene required complex surgical irrigation further back at the CCS."
@@ -395,14 +407,18 @@ export default {
               {
                 "id": "Source A",
                 "provenance": "From a clinical report by Captain Oswald Hope Robertson (US Army Medical Officer attached to the British Third Army RAMC), published in the British Medical Journal in June 1918, describing the first \"blood depot\" during the Battle of Cambrai in November 1917.",
-                "content": "To prepare for the anticipated casualties before the Cambrai offensive, we established a forward blood depot at Casualty Clearing Station No. 48. Twenty-two units of universal Group O blood were collected in advance into sterilised glass bottles containing sodium citrate and dextrose (glucose) solution, packed in insulated wooden ammunition cases with ice and sawdust for up to twenty-six days. During the heavy fighting, we transfused twenty severely wounded British soldiers suffering from extreme haemorrhagic shock who had been judged too weak to survive surgery; eleven made a complete recovery."
+                "content": "To prepare for the anticipated casualties before the Cambrai offensive, we established a forward blood depot at Casualty Clearing Station No. 48. Twenty-two units of universal Group O blood were collected in advance into sterilised glass bottles containing sodium citrate and dextrose (glucose) solution, packed in insulated wooden ammunition cases with ice and sawdust for up to twenty-six days. During the heavy fighting, we transfused twenty severely wounded British soldiers suffering from extreme haemorrhagic shock who had been judged too weak to survive surgery; eleven made a complete recovery.",
+                "studio_audio": "/audio/sources/edexcel_medicine/root_xams_4_section_a_questions_3_s1.mp3",
+                "studio_voice_label": "Living Archive · Primary Record"
               },
               {
                 "id": "Source B",
                 "provenance": "An official First World War medical photograph (National Museum of Health and Medicine / Otis Historical Archives) showing a graduated glass transfusion bottle marked \"500 C.C. BLOOD / 150 C.C. CITRATE\" beside a portable wooden \"TRANSFUSION SET\" field chest used for storing and administering citrated blood near the front in 1917–1918.",
                 "image": "/images/med_stage_peyton_rous_blood_storage.jpg",
                 "caption": "Source B: Contemporary WWI photograph of a graduated \"500 C.C. BLOOD / 150 C.C. CITRATE\" storage bottle, rubber tubing, and portable \"TRANSFUSION SET\" chest (1917–1918).",
-                "content": "[Archival Photograph: A First World War graduated glass blood-storage bottle stencilled \"500 C.C. BLOOD\" and \"150 C.C. CITRATE\" fitted with rubber delivery tubing and needle cannula, displayed alongside a compartmentalised wooden \"TRANSFUSION SET\" field carrying chest.]"
+                "content": "[Archival Photograph: A First World War graduated glass blood-storage bottle stencilled \"500 C.C. BLOOD\" and \"150 C.C. CITRATE\" fitted with rubber delivery tubing and needle cannula, displayed alongside a compartmentalised wooden \"TRANSFUSION SET\" field carrying chest.]",
+                "studio_audio": "/audio/sources/edexcel_medicine/root_xams_4_section_a_questions_3_s2.mp3",
+                "studio_voice_label": "Living Archive · Primary Record"
               }
             ],
             "model_answer": "Source A is exceptionally useful for an enquiry into the development of blood transfusion and frontline storage because it records the world’s first pre-battle blood bank in action at the Battle of Cambrai (November 1917). Robertson details collecting 22 units of universal Group O blood (building on Karl Landsteiner’s 1901 ABO discovery) preserved in sodium citrate and Rous-Turner dextrose (glucose) inside ice-packed ammunition boxes for up to 26 days, saving 11 of 20 shock-stricken soldiers otherwise doomed to die on the operating table. Contextually, before 1915 rapid clotting forced doctors to connect a live donor vein-to-vein or via Keynes/Robertson syringe-cannulas right beside the patient—impossible during chaotic CCS surges—whereas citrate-glucose refrigeration finally separated donor from recipient in both space and time. Regarding provenance, writing in the British Medical Journal (June 1918) as the pioneering US Army researcher attached to British CCS No. 48, Robertson provides authoritative clinical data intended to persuade RAMC surgical teams to adopt resuscitation blood depots across the Western Front in 1918, though his trial sample of 20 patients at one CCS cannot show how widely depots spread by the Armistice.\n\nSource B is highly useful as corroborating material evidence of the practical field apparatus that made indirect frontline blood storage and transfusion possible in 1917–18. The photograph clearly displays a graduated glass bottle marked \"500 C.C. BLOOD\" and \"150 C.C. CITRATE\" connected to rubber tubing, rubber-bulb pressure pump, and needle cannula, housed beside a rugged compartmentalised wooden \"TRANSFUSION SET\" carrying case. This aligns with historical knowledge: Richard Lewisohn’s 1915 discovery of safe sodium citrate anticoagulation and Rous and Turner’s 1916 glucose preservative allowed standardised portable kits like Captain Robertson’s bottle apparatus to be carried directly into CCS resuscitation (\"shock\") wards. In terms of provenance, as an official wartime medical-equipment record photograph, it accurately documents exact apparatus design and measurements, though a static studio equipment photo cannot show the clinical perils of haemolysis if blood was mismatched or allowed to warm when ice ran short.\n\nIn conclusion, Sources A and B work together powerfully: Source B reveals the physical anticoagulant bottle and portable kit engineering, while Source A proves its life-saving clinical impact on shock casualties at Cambrai."
@@ -858,7 +874,9 @@ export default {
               "content": "The mortal pestilence and plagues which now afflict the Christian world are the just judgments of Almighty God. For the sins of men—their pride, unchastity, and neglect of holy worship—provoke the righteous wrath of Heaven. No medicine of earthly herbs or physician's skill can avail to save the body, unless the sinner first reconcile himself to God through devout confession, fasting, and tears. We command all priests throughout our diocese to lead their people in barefoot processions, reciting litanies to appease the anger of the Lord.",
               "teacher_notes": {
                 "source_context": "Pastoral mandate from the Archbishop of York, July 1348. The Church taught that physical illness originated in moral wrongdoing."
-              }
+              },
+              "studio_audio": "/audio/sources/edexcel_medicine/lesson_1_1_sA.mp3",
+              "studio_voice_label": "Pastoral Letter of William Zouch…"
             }
           ],
           "paragraphs": [
@@ -894,7 +912,9 @@ export default {
               "content": "When a man is judged by the bishop to be afflicted with leprosy, he must be cast out from the fellowship of sound men. For this terrible disease is viewed as the outward corruption of sin. The priest shall lead him to the churchyard, cast earth upon his feet as if he were already dead, and command him: \"Never again enter church, inn, mill, or bakehouse; wash not thy hands or cloths in any running spring; and speak to no man travelling upon the road except thou standest downwind from him, sounding thy wooden rattle.\"",
               "teacher_notes": {
                 "source_context": "The medieval Sarum rite for expelling lepers. Lepers were legally segregated into isolated lazar houses."
-              }
+              },
+              "studio_audio": "/audio/sources/edexcel_medicine/lesson_1_1_sB.mp3",
+              "studio_voice_label": "The Sarum Rite for the Seclusion…"
             }
           ],
           "paragraphs": [
@@ -1019,7 +1039,9 @@ export default {
               "content": "There are four chief obstacles to grasping the truth: the example of frail and unworthy authority, long-established custom, the sense of the ignorant crowd, and the hiding of one’s own ignorance under the show of wisdom. Reasoning draws a conclusion, but it does not make the conclusion certain unless the mind discovers it by the path of experience. If a man who had never seen fire were proved by satisfactory arguments that fire burns, his mind would not be satisfied until he had placed his hand into the flame.",
               "teacher_notes": {
                 "source_context": "Extract from Roger Bacon’s Opus Majus, c.1267. Bacon advocated observation over blind deference to authority."
-              }
+              },
+              "studio_audio": "/audio/sources/edexcel_medicine/lesson_1_1_sE.mp3",
+              "studio_voice_label": "Roger Bacon (c.1267)"
             }
           ],
           "paragraphs": [
@@ -1048,7 +1070,9 @@ export default {
           "content": "The mortal pestilence and plagues which now afflict the Christian world are the just judgments of Almighty God. For the sins of men—their pride, unchastity, and neglect of holy worship—provoke the righteous wrath of Heaven. No medicine of earthly herbs or physician's skill can avail to save the body, unless the sinner first reconcile himself to God through devout confession, fasting, and tears. We command all priests throughout our diocese to lead their people in barefoot processions, reciting litanies to appease the anger of the Lord.",
           "teacher_notes": {
             "source_context": "Pastoral mandate from the Archbishop of York, July 1348. The Church taught that physical illness originated in moral wrongdoing."
-          }
+          },
+          "studio_audio": "/audio/sources/edexcel_medicine/lesson_1_1_sA.mp3",
+          "studio_voice_label": "Pastoral Letter of William Zouch…"
         },
         {
           "id": "med_l1_source_d",
@@ -1068,7 +1092,9 @@ export default {
           "content": "When a man is judged by the bishop to be afflicted with leprosy, he must be cast out from the fellowship of sound men. For this terrible disease is viewed as the outward corruption of sin. The priest shall lead him to the churchyard, cast earth upon his feet as if he were already dead, and command him: \"Never again enter church, inn, mill, or bakehouse; wash not thy hands or cloths in any running spring; and speak to no man travelling upon the road except thou standest downwind from him, sounding thy wooden rattle.\"",
           "teacher_notes": {
             "source_context": "The medieval Sarum rite for expelling lepers. Lepers were legally segregated into isolated lazar houses."
-          }
+          },
+          "studio_audio": "/audio/sources/edexcel_medicine/lesson_1_1_sB.mp3",
+          "studio_voice_label": "The Sarum Rite for the Seclusion…"
         },
         {
           "id": "med_l1_source_a",
@@ -1134,7 +1160,9 @@ export default {
           "content": "There are four chief obstacles to grasping the truth: the example of frail and unworthy authority, long-established custom, the sense of the ignorant crowd, and the hiding of one’s own ignorance under the show of wisdom. Reasoning draws a conclusion, but it does not make the conclusion certain unless the mind discovers it by the path of experience. If a man who had never seen fire were proved by satisfactory arguments that fire burns, his mind would not be satisfied until he had placed his hand into the flame.",
           "teacher_notes": {
             "source_context": "Extract from Roger Bacon’s Opus Majus, c.1267. Bacon advocated observation over blind deference to authority."
-          }
+          },
+          "studio_audio": "/audio/sources/edexcel_medicine/lesson_1_1_sE.mp3",
+          "studio_voice_label": "Roger Bacon (c.1267)"
         }
       ],
       "quick_quiz": [
@@ -2185,7 +2213,9 @@ export default {
       },
       "banner_image": "/images/med_banner_kt1_1_supernatural_belief.jpg",
       "enquiry": "Why did the medieval Catholic Church hold an unshakeable monopoly over beliefs about the causes of disease?",
-      "banner_caption": "Public Penitential Procession of the Flagellants (1349, Chronicles of Gilles Li Muisis): Convinced epidemic pestilence was divine punishment for human sin, medieval Christians turned to public penance, prayer, and saintly intercession."
+      "banner_caption": "Public Penitential Procession of the Flagellants (1349, Chronicles of Gilles Li Muisis): Convinced epidemic pestilence was divine punishment for human sin, medieval Christians turned to public penance, prayer, and saintly intercession.",
+      "prologue_audio": "/audio/lessons/edexcel_medicine/lesson_1_1_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · Historian"
     },
     {
       "id": "lesson_1_2",
@@ -2493,7 +2523,9 @@ export default {
               "question": "Why was the Hippocratic approach in Source A a major turning point away from supernatural explanations of illness?",
               "model_answer": "Source A insists that even dramatic illnesses like epilepsy (\"the Sacred Disease\") have natural bodily causes rather than divine anger, and directs physicians to observe physical symptoms systematically at the bedside. This created rational clinical observation—though medieval doctors read Hippocrates as fixed dogma rather than extending his observations.",
               "text": "Men regard epilepsy as divine and sacred merely because they do not understand it. In truth, it is no more divine or sacred than any other disease, but arises from natural physical causes like all other affections. In examining the sick, the physician must observe the patient’s countenance, breathing, sweat, sleep, and excretions day by day to judge the crisis.",
-              "content": "Men regard epilepsy as divine and sacred merely because they do not understand it. In truth, it is no more divine or sacred than any other disease, but arises from natural physical causes like all other affections. In examining the sick, the physician must observe the patient’s countenance, breathing, sweat, sleep, and excretions day by day to judge the crisis."
+              "content": "Men regard epilepsy as divine and sacred merely because they do not understand it. In truth, it is no more divine or sacred than any other disease, but arises from natural physical causes like all other affections. In examining the sick, the physician must observe the patient’s countenance, breathing, sweat, sleep, and excretions day by day to judge the crisis.",
+              "studio_audio": "/audio/sources/edexcel_medicine/lesson_1_2_sA.mp3",
+              "studio_voice_label": "Hippocratic Corpus"
             }
           ],
           "paragraphs": [
@@ -2572,7 +2604,9 @@ export default {
               "content": "Every disease is cured by that which is contrary to its nature. If the distemper be of cold and moisture, such as phlegmatic rheum, it must be counteracted with remedies that are hot and dry. Therefore, administer pepper, mustard, and warming electuaries, and let the patient avoid damp dwellings and cooling water, so that the balance of the bodily humours may be restored. Nature strives always toward harmony, and the physician is but the servant of Nature.",
               "teacher_notes": {
                 "source_context": "Latin university textbook text of Galen's Method of Medicine. Galen taught that diseases should be cured by opposites."
-              }
+              },
+              "studio_audio": "/audio/sources/edexcel_medicine/lesson_1_2_sC.mp3",
+              "studio_voice_label": "Galen of Pergamon"
             }
           ],
           "paragraphs": [
@@ -2649,7 +2683,9 @@ export default {
               "content": "The jurors present that the butchers of the Shambles near St Nicholas do throw entrails, blood, and corrupt offal into the public streets, whence arise horrible stenches and corrupt vapours. By these rotten miasmas the air is corrupted, whereby grave sicknesses and corrupt fevers are engendered among the King’s lieges dwelling nearby. It is ordered that the butchers remove their filth upon pain of forfeiture, and that no dung be cast into the public watercourses.",
               "teacher_notes": {
                 "source_context": "London Assize of Nuisance court roll, 1371. The Miasma Theory linked rotting organic waste to infectious pestilence."
-              }
+              },
+              "studio_audio": "/audio/sources/edexcel_medicine/lesson_1_2_sE.mp3",
+              "studio_voice_label": "London Assize of Nuisance Court…"
             }
           ],
           "paragraphs": [
@@ -2682,7 +2718,9 @@ export default {
           "question": "Why was the Hippocratic approach in Source A a major turning point away from supernatural explanations of illness?",
           "model_answer": "Source A insists that even dramatic illnesses like epilepsy (\"the Sacred Disease\") have natural bodily causes rather than divine anger, and directs physicians to observe physical symptoms systematically at the bedside. This created rational clinical observation—though medieval doctors read Hippocrates as fixed dogma rather than extending his observations.",
           "text": "Men regard epilepsy as divine and sacred merely because they do not understand it. In truth, it is no more divine or sacred than any other disease, but arises from natural physical causes like all other affections. In examining the sick, the physician must observe the patient’s countenance, breathing, sweat, sleep, and excretions day by day to judge the crisis.",
-          "content": "Men regard epilepsy as divine and sacred merely because they do not understand it. In truth, it is no more divine or sacred than any other disease, but arises from natural physical causes like all other affections. In examining the sick, the physician must observe the patient’s countenance, breathing, sweat, sleep, and excretions day by day to judge the crisis."
+          "content": "Men regard epilepsy as divine and sacred merely because they do not understand it. In truth, it is no more divine or sacred than any other disease, but arises from natural physical causes like all other affections. In examining the sick, the physician must observe the patient’s countenance, breathing, sweat, sleep, and excretions day by day to judge the crisis.",
+          "studio_audio": "/audio/sources/edexcel_medicine/lesson_1_2_sA.mp3",
+          "studio_voice_label": "Hippocratic Corpus"
         },
         {
           "id": "med_l2_source_tacuinum",
@@ -2723,7 +2761,9 @@ export default {
           "content": "Every disease is cured by that which is contrary to its nature. If the distemper be of cold and moisture, such as phlegmatic rheum, it must be counteracted with remedies that are hot and dry. Therefore, administer pepper, mustard, and warming electuaries, and let the patient avoid damp dwellings and cooling water, so that the balance of the bodily humours may be restored. Nature strives always toward harmony, and the physician is but the servant of Nature.",
           "teacher_notes": {
             "source_context": "Latin university textbook text of Galen's Method of Medicine. Galen taught that diseases should be cured by opposites."
-          }
+          },
+          "studio_audio": "/audio/sources/edexcel_medicine/lesson_1_2_sC.mp3",
+          "studio_voice_label": "Galen of Pergamon"
         },
         {
           "id": "med_l2_source_b",
@@ -2766,7 +2806,9 @@ export default {
           "content": "The jurors present that the butchers of the Shambles near St Nicholas do throw entrails, blood, and corrupt offal into the public streets, whence arise horrible stenches and corrupt vapours. By these rotten miasmas the air is corrupted, whereby grave sicknesses and corrupt fevers are engendered among the King’s lieges dwelling nearby. It is ordered that the butchers remove their filth upon pain of forfeiture, and that no dung be cast into the public watercourses.",
           "teacher_notes": {
             "source_context": "London Assize of Nuisance court roll, 1371. The Miasma Theory linked rotting organic waste to infectious pestilence."
-          }
+          },
+          "studio_audio": "/audio/sources/edexcel_medicine/lesson_1_2_sE.mp3",
+          "studio_voice_label": "London Assize of Nuisance Court…"
         }
       ],
       "quick_quiz": [
@@ -3822,7 +3864,9 @@ export default {
       },
       "banner_image": "/images/edexcel_medicine/kt12/med_l1_2_banner_galen_illuminated_wellcome.jpg",
       "enquiry": "Why did ancient ideas like the Four Humours and miasma dominate medieval medicine?",
-      "banner_caption": "Claudius Galen enthroned holding his medical codex in an illuminated Greek edition printed in Venice (1500), reflecting how Galenic humoral theory dominated European university medicine for over 1,400 years."
+      "banner_caption": "Claudius Galen enthroned holding his medical codex in an illuminated Greek edition printed in Venice (1500), reflecting how Galenic humoral theory dominated European university medicine for over 1,400 years.",
+      "prologue_audio": "/audio/lessons/edexcel_medicine/lesson_1_2_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · Historian"
     },
     {
       "id": "lesson_1_3",
@@ -4129,7 +4173,9 @@ export default {
               "content": "A knight of Kent, long stricken with a burning dropsy and swollen with foul water, had spent all his substance upon physicians who could do nothing to relieve his agony. Despairing of earthly aid, he made pilgrimage to Canterbury and drank of the Water of St Thomas. Immediately he voided the corrupt fluids through vomiting and sweat, and within three days departed sound in all his limbs, praising God and the holy martyr who had healed him where all doctor's potions had failed.",
               "teacher_notes": {
                 "source_context": "Miracle collection of St Thomas Becket, c.1200. Monasteries actively promoted stories of miraculous healing to encourage pilgrim donations."
-              }
+              },
+              "studio_audio": "/audio/sources/edexcel_medicine/lesson_1_3_sA.mp3",
+              "studio_voice_label": "Benedict of Peterborough (c.1200)"
             }
           ],
           "paragraphs": [
@@ -4253,7 +4299,9 @@ export default {
               "content": "Theriac is the sovereign preservative against all poisons and corrupt pestilences. It must be compounded of sixty-four chosen simples, including the flesh of dried vipers, opium of Thebes, cinnamon, saffron, and asphaltum, boiled together in aged white wine and clarified honey. It must mature in earthen vessels for ten years before it attaineth its full virtue to expel corrupt poisons from the heart. The public compounding shall be inspected by the city magistrates to ensure no false ingredients are substituted.",
               "teacher_notes": {
                 "source_context": "Apothecary guild treatise on compounding Theriac, c.1400. Believed to purge poison and corrupt humours from vital organs."
-              }
+              },
+              "studio_audio": "/audio/sources/edexcel_medicine/lesson_1_3_sD.mp3",
+              "studio_voice_label": "Compendium on the Preparation of…"
             }
           ],
           "paragraphs": [
@@ -4289,7 +4337,9 @@ export default {
               "question": "Why was the preventative Regimen Sanitatis advice in Source E far safer and more effective than medieval curative treatments?",
               "model_answer": "By recommending clean handwashing, fresh air, moderate food and drink, rest, and avoiding stress, the Regimen Sanitatis reduced exposure to dirt and waterborne/contagious illness in practice—even though its authors intended those habits only to keep the Four Humours balanced.",
               "text": "If thou to health and vigour wouldst attain, / Shun weighty cares, all anger deem profane; / From heavy suppers and much wine abstain; / Rise early, wash thy hands and eyes with clean cold water, / Walk gently in pure air, nor sleep at noon, / And thou shalt live in health full many a year.",
-              "content": "If thou to health and vigour wouldst attain, / Shun weighty cares, all anger deem profane; / From heavy suppers and much wine abstain; / Rise early, wash thy hands and eyes with clean cold water, / Walk gently in pure air, nor sleep at noon, / And thou shalt live in health full many a year."
+              "content": "If thou to health and vigour wouldst attain, / Shun weighty cares, all anger deem profane; / From heavy suppers and much wine abstain; / Rise early, wash thy hands and eyes with clean cold water, / Walk gently in pure air, nor sleep at noon, / And thou shalt live in health full many a year.",
+              "studio_audio": "/audio/sources/edexcel_medicine/lesson_1_3_sE.mp3",
+              "studio_voice_label": "Regimen Sanitatis Salernitanum (…"
             }
           ],
           "paragraphs": [
@@ -4320,7 +4370,9 @@ export default {
           "content": "A knight of Kent, long stricken with a burning dropsy and swollen with foul water, had spent all his substance upon physicians who could do nothing to relieve his agony. Despairing of earthly aid, he made pilgrimage to Canterbury and drank of the Water of St Thomas. Immediately he voided the corrupt fluids through vomiting and sweat, and within three days departed sound in all his limbs, praising God and the holy martyr who had healed him where all doctor's potions had failed.",
           "teacher_notes": {
             "source_context": "Miracle collection of St Thomas Becket, c.1200. Monasteries actively promoted stories of miraculous healing to encourage pilgrim donations."
-          }
+          },
+          "studio_audio": "/audio/sources/edexcel_medicine/lesson_1_3_sA.mp3",
+          "studio_voice_label": "Benedict of Peterborough (c.1200)"
         },
         {
           "id": "med_l3_source_a",
@@ -4385,7 +4437,9 @@ export default {
           "content": "Theriac is the sovereign preservative against all poisons and corrupt pestilences. It must be compounded of sixty-four chosen simples, including the flesh of dried vipers, opium of Thebes, cinnamon, saffron, and asphaltum, boiled together in aged white wine and clarified honey. It must mature in earthen vessels for ten years before it attaineth its full virtue to expel corrupt poisons from the heart. The public compounding shall be inspected by the city magistrates to ensure no false ingredients are substituted.",
           "teacher_notes": {
             "source_context": "Apothecary guild treatise on compounding Theriac, c.1400. Believed to purge poison and corrupt humours from vital organs."
-          }
+          },
+          "studio_audio": "/audio/sources/edexcel_medicine/lesson_1_3_sD.mp3",
+          "studio_voice_label": "Compendium on the Preparation of…"
         },
         {
           "id": "med_l3_source_regimen_salernitanum",
@@ -4405,7 +4459,9 @@ export default {
           "question": "Why was the preventative Regimen Sanitatis advice in Source E far safer and more effective than medieval curative treatments?",
           "model_answer": "By recommending clean handwashing, fresh air, moderate food and drink, rest, and avoiding stress, the Regimen Sanitatis reduced exposure to dirt and waterborne/contagious illness in practice—even though its authors intended those habits only to keep the Four Humours balanced.",
           "text": "If thou to health and vigour wouldst attain, / Shun weighty cares, all anger deem profane; / From heavy suppers and much wine abstain; / Rise early, wash thy hands and eyes with clean cold water, / Walk gently in pure air, nor sleep at noon, / And thou shalt live in health full many a year.",
-          "content": "If thou to health and vigour wouldst attain, / Shun weighty cares, all anger deem profane; / From heavy suppers and much wine abstain; / Rise early, wash thy hands and eyes with clean cold water, / Walk gently in pure air, nor sleep at noon, / And thou shalt live in health full many a year."
+          "content": "If thou to health and vigour wouldst attain, / Shun weighty cares, all anger deem profane; / From heavy suppers and much wine abstain; / Rise early, wash thy hands and eyes with clean cold water, / Walk gently in pure air, nor sleep at noon, / And thou shalt live in health full many a year.",
+          "studio_audio": "/audio/sources/edexcel_medicine/lesson_1_3_sE.mp3",
+          "studio_voice_label": "Regimen Sanitatis Salernitanum (…"
         }
       ],
       "quick_quiz": [
@@ -5452,7 +5508,9 @@ export default {
       },
       "banner_image": "/images/med_banner_kt1_3_bloodletting.jpg",
       "enquiry": "Why did standard medieval medical treatments frequently endanger the lives of the patients they were meant to cure?",
-      "banner_caption": "Early modern German medical manuscript painting of phlebotomy (bloodletting), showing a red tourniquet constricting the upper arm as venous blood streams into graduated bowls to rebalance the Four Humours."
+      "banner_caption": "Early modern German medical manuscript painting of phlebotomy (bloodletting), showing a red tourniquet constricting the upper arm as venous blood streams into graduated bowls to rebalance the Four Humours.",
+      "prologue_audio": "/audio/lessons/edexcel_medicine/lesson_1_3_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · Historian"
     },
     {
       "id": "lesson_1_4",
@@ -5753,7 +5811,9 @@ export default {
               "question": "What does Source A reveal about both the book-based training of medieval physicians and why ordinary peasants rarely saw one?",
               "model_answer": "Source A shows that elite physicians grounded their authority in astrological hours, humoral theory, and ancient authorities (Hippocrates, Galen, Avicenna) rather than hands-on surgery—and charged lucrative fees in gold (\"he loved gold in special\"), pricing them out of reach for 90% of the population.",
               "text": "With us there was a Doctour of Phisik; / In all this world ne was there none him lik, / To speke of phisik and of surgerye, / For he was grounded in astronomye... / Well knew he the olde Esculapius, / And Deyscorides, and eek Rufus, / Olde Ypocras [Hippocrates], Haly, and Galyen [Galen]... / Ready he had his apothecaries / To send him drugs and his letuaries; / For each of them made other for to winne... / Therefore he loved gold in special.",
-              "content": "With us there was a Doctour of Phisik; / In all this world ne was there none him lik, / To speke of phisik and of surgerye, / For he was grounded in astronomye... / Well knew he the olde Esculapius, / And Deyscorides, and eek Rufus, / Olde Ypocras [Hippocrates], Haly, and Galyen [Galen]... / Ready he had his apothecaries / To send him drugs and his letuaries; / For each of them made other for to winne... / Therefore he loved gold in special."
+              "content": "With us there was a Doctour of Phisik; / In all this world ne was there none him lik, / To speke of phisik and of surgerye, / For he was grounded in astronomye... / Well knew he the olde Esculapius, / And Deyscorides, and eek Rufus, / Olde Ypocras [Hippocrates], Haly, and Galyen [Galen]... / Ready he had his apothecaries / To send him drugs and his letuaries; / For each of them made other for to winne... / Therefore he loved gold in special.",
+              "studio_audio": "/audio/sources/edexcel_medicine/lesson_1_4_sA.mp3",
+              "studio_voice_label": "Geoffrey Chaucer (c.1387)"
             }
           ],
           "paragraphs": [
@@ -5890,7 +5950,9 @@ export default {
               "question": "Why were guild apothecaries (Source B) far more widely used by medieval townspeople than university-trained physicians?",
               "model_answer": "Unlike rare and expensive university physicians, apothecaries kept accessible town shops selling affordable herbal simples and ointments directly over the counter, backed by practical guild apprenticeship knowledge of medicinal plants and spices.",
               "text": "No one of the trade of Pepperers and Apothecaries of Soper Lane shall mix any old or corrupt wares with good and pure spices, nor moisten saffron, ginger, or medicinal herbs to make them weigh heavier; and every master shall be sworn before the Mayor to compound electuaries, syrups, and waters faithfully according to the craft.",
-              "content": "No one of the trade of Pepperers and Apothecaries of Soper Lane shall mix any old or corrupt wares with good and pure spices, nor moisten saffron, ginger, or medicinal herbs to make them weigh heavier; and every master shall be sworn before the Mayor to compound electuaries, syrups, and waters faithfully according to the craft."
+              "content": "No one of the trade of Pepperers and Apothecaries of Soper Lane shall mix any old or corrupt wares with good and pure spices, nor moisten saffron, ginger, or medicinal herbs to make them weigh heavier; and every master shall be sworn before the Mayor to compound electuaries, syrups, and waters faithfully according to the craft.",
+              "studio_audio": "/audio/sources/edexcel_medicine/lesson_1_4_sB.mp3",
+              "studio_voice_label": "Ordinance of the Pepperers and A…"
             }
           ],
           "paragraphs": [
@@ -5975,7 +6037,9 @@ export default {
               },
               "image": "/images/rahere_st_bartholomew.jpg",
               "src": "/images/rahere_st_bartholomew.jpg",
-              "source": "/images/rahere_st_bartholomew.jpg"
+              "source": "/images/rahere_st_bartholomew.jpg",
+              "studio_audio": "/audio/sources/edexcel_medicine/lesson_1_4_sD.mp3",
+              "studio_voice_label": "Statutes of St Bartholomew’s Hos…"
             }
           ],
           "paragraphs": [
@@ -6011,7 +6075,9 @@ export default {
               "content": "For a feverish ague when the physician is far off or too costly: take fresh leaves of plantain, sage, and mint; crush them with pure honey and spring water, and give the sick person to drink upon waking. For aching joints, rub with warmed lard mixed with chamomile and elder-flowers. These herbs God hath planted freely in every hedgerow for the succour of the poor who have no coin for university doctors.",
               "teacher_notes": {
                 "source_context": "Fifteenth-century domestic herbal recipe manuscript. Most medical care in medieval England was administered at home by women."
-              }
+              },
+              "studio_audio": "/audio/sources/edexcel_medicine/lesson_1_4_sE.mp3",
+              "studio_voice_label": "Domestic Recipe Book of a Househ…"
             }
           ],
           "paragraphs": [
@@ -6043,7 +6109,9 @@ export default {
           "question": "What does Source A reveal about both the book-based training of medieval physicians and why ordinary peasants rarely saw one?",
           "model_answer": "Source A shows that elite physicians grounded their authority in astrological hours, humoral theory, and ancient authorities (Hippocrates, Galen, Avicenna) rather than hands-on surgery—and charged lucrative fees in gold (\"he loved gold in special\"), pricing them out of reach for 90% of the population.",
           "text": "With us there was a Doctour of Phisik; / In all this world ne was there none him lik, / To speke of phisik and of surgerye, / For he was grounded in astronomye... / Well knew he the olde Esculapius, / And Deyscorides, and eek Rufus, / Olde Ypocras [Hippocrates], Haly, and Galyen [Galen]... / Ready he had his apothecaries / To send him drugs and his letuaries; / For each of them made other for to winne... / Therefore he loved gold in special.",
-          "content": "With us there was a Doctour of Phisik; / In all this world ne was there none him lik, / To speke of phisik and of surgerye, / For he was grounded in astronomye... / Well knew he the olde Esculapius, / And Deyscorides, and eek Rufus, / Olde Ypocras [Hippocrates], Haly, and Galyen [Galen]... / Ready he had his apothecaries / To send him drugs and his letuaries; / For each of them made other for to winne... / Therefore he loved gold in special."
+          "content": "With us there was a Doctour of Phisik; / In all this world ne was there none him lik, / To speke of phisik and of surgerye, / For he was grounded in astronomye... / Well knew he the olde Esculapius, / And Deyscorides, and eek Rufus, / Olde Ypocras [Hippocrates], Haly, and Galyen [Galen]... / Ready he had his apothecaries / To send him drugs and his letuaries; / For each of them made other for to winne... / Therefore he loved gold in special.",
+          "studio_audio": "/audio/sources/edexcel_medicine/lesson_1_4_sA.mp3",
+          "studio_voice_label": "Geoffrey Chaucer (c.1387)"
         },
         {
           "id": "med_l4_source_apothecary_ordinance",
@@ -6063,7 +6131,9 @@ export default {
           "question": "Why were guild apothecaries (Source B) far more widely used by medieval townspeople than university-trained physicians?",
           "model_answer": "Unlike rare and expensive university physicians, apothecaries kept accessible town shops selling affordable herbal simples and ointments directly over the counter, backed by practical guild apprenticeship knowledge of medicinal plants and spices.",
           "text": "No one of the trade of Pepperers and Apothecaries of Soper Lane shall mix any old or corrupt wares with good and pure spices, nor moisten saffron, ginger, or medicinal herbs to make them weigh heavier; and every master shall be sworn before the Mayor to compound electuaries, syrups, and waters faithfully according to the craft.",
-          "content": "No one of the trade of Pepperers and Apothecaries of Soper Lane shall mix any old or corrupt wares with good and pure spices, nor moisten saffron, ginger, or medicinal herbs to make them weigh heavier; and every master shall be sworn before the Mayor to compound electuaries, syrups, and waters faithfully according to the craft."
+          "content": "No one of the trade of Pepperers and Apothecaries of Soper Lane shall mix any old or corrupt wares with good and pure spices, nor moisten saffron, ginger, or medicinal herbs to make them weigh heavier; and every master shall be sworn before the Mayor to compound electuaries, syrups, and waters faithfully according to the craft.",
+          "studio_audio": "/audio/sources/edexcel_medicine/lesson_1_4_sB.mp3",
+          "studio_voice_label": "Ordinance of the Pepperers and A…"
         },
         {
           "id": "med_l4_source_a",
@@ -6109,7 +6179,9 @@ export default {
           },
           "image": "/images/rahere_st_bartholomew.jpg",
           "src": "/images/rahere_st_bartholomew.jpg",
-          "source": "/images/rahere_st_bartholomew.jpg"
+          "source": "/images/rahere_st_bartholomew.jpg",
+          "studio_audio": "/audio/sources/edexcel_medicine/lesson_1_4_sD.mp3",
+          "studio_voice_label": "Statutes of St Bartholomew’s Hos…"
         },
         {
           "id": "med_l4_source_e",
@@ -6129,7 +6201,9 @@ export default {
           "content": "For a feverish ague when the physician is far off or too costly: take fresh leaves of plantain, sage, and mint; crush them with pure honey and spring water, and give the sick person to drink upon waking. For aching joints, rub with warmed lard mixed with chamomile and elder-flowers. These herbs God hath planted freely in every hedgerow for the succour of the poor who have no coin for university doctors.",
           "teacher_notes": {
             "source_context": "Fifteenth-century domestic herbal recipe manuscript. Most medical care in medieval England was administered at home by women."
-          }
+          },
+          "studio_audio": "/audio/sources/edexcel_medicine/lesson_1_4_sE.mp3",
+          "studio_voice_label": "Domestic Recipe Book of a Househ…"
         }
       ],
       "quick_quiz": [
@@ -7185,7 +7259,9 @@ export default {
       },
       "banner_image": "/images/edexcel_medicine/kt12/med_l1_4_banner_santa_maria_della_scala_siena.jpg",
       "enquiry": "How did social hierarchy and the Catholic Church shape who provided medical care in medieval England?",
-      "banner_caption": "Hospital Ward Care in Late-Medieval Europe — Care of the Sick (Domenico di Bartolo fresco, 1440–1441, Ospedale di Santa Maria della Scala, Siena): Religious brothers wash patients and tend beds alongside visiting physicians."
+      "banner_caption": "Hospital Ward Care in Late-Medieval Europe — Care of the Sick (Domenico di Bartolo fresco, 1440–1441, Ospedale di Santa Maria della Scala, Siena): Religious brothers wash patients and tend beds alongside visiting physicians.",
+      "prologue_audio": "/audio/lessons/edexcel_medicine/lesson_1_4_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · Historian"
     },
     {
       "id": "lesson_1_5",
@@ -7493,7 +7569,9 @@ export default {
               "content": "In men and women alike, it first betrayed itself by the emergence of certain tumours in the groin or the armpits, some of which grew as large as a common apple, others as an egg, which the common people called buboes. From these two parts, the deadly swellings spread rapidly over the whole body. What was still worse, this disaster struck so much terror into men's hearts that brother abandoned brother, uncle abandoned nephew, and often the wife her husband; and what is almost incredible, fathers and mothers refused to visit and tend their children.",
               "teacher_notes": {
                 "source_context": "Eyewitness account from Boccaccio's Decameron, 1348. The extreme mortality rate caused widespread panic and social abandonment."
-              }
+              },
+              "studio_audio": "/audio/sources/edexcel_medicine/lesson_1_5_sA.mp3",
+              "studio_voice_label": "Giovanni Boccaccio (1348)"
             }
           ],
           "paragraphs": [
@@ -7697,7 +7775,9 @@ export default {
               "content": "Whereas the city of London, by reason of the dung, filth, and corruption lying in the streets and lanes, and the entrails of slaughtered beasts, is infected with an unbearable stench, whereby the air is corrupted and poisoned, and the plague increaseth daily among our subjects: We command you straightway that you cause the city to be cleansed of all such filth and refuse, that the anger of God may be turned away and our people preserved from death.",
               "teacher_notes": {
                 "source_context": "Royal writ of King Edward III to London, April 1349. Authorities believed plague was carried on miasma generated by putrid refuse."
-              }
+              },
+              "studio_audio": "/audio/sources/edexcel_medicine/lesson_1_5_sD.mp3",
+              "studio_voice_label": "Royal Proclamation of King Edwar…"
             }
           ],
           "paragraphs": [
@@ -7738,7 +7818,9 @@ export default {
               "question": "According to Source E, how did the catastrophic death toll of 1348–49 disrupt both burial customs and England’s rural economy?",
               "model_answer": "Knighton records consecrated churchyards overflowing into emergency mass pits, whole villages left deserted, sheep and cattle wandering through unharvested corn, and surviving labourers demanding triple wages—prompting Parliament’s 1351 Statute of Labourers while exposing medicine’s total failure to save lives.",
               "text": "Then the grievous plague penetrated the seacoasts from Southampton and came to Bristol, and virtually the whole strength of the town died... In the same year there was a great mortality of sheep, and crops rotted in the fields for want of reapers; for so scarce were servants and labourers that workers demanded thrice the wages accustomed before, while priests could scarce be found to bury the dead in deep trenches.",
-              "content": "Then the grievous plague penetrated the seacoasts from Southampton and came to Bristol, and virtually the whole strength of the town died... In the same year there was a great mortality of sheep, and crops rotted in the fields for want of reapers; for so scarce were servants and labourers that workers demanded thrice the wages accustomed before, while priests could scarce be found to bury the dead in deep trenches."
+              "content": "Then the grievous plague penetrated the seacoasts from Southampton and came to Bristol, and virtually the whole strength of the town died... In the same year there was a great mortality of sheep, and crops rotted in the fields for want of reapers; for so scarce were servants and labourers that workers demanded thrice the wages accustomed before, while priests could scarce be found to bury the dead in deep trenches.",
+              "studio_audio": "/audio/sources/edexcel_medicine/lesson_1_5_sE.mp3",
+              "studio_voice_label": "Henry Knighton (1349)"
             }
           ],
           "paragraphs": [
@@ -7769,7 +7851,9 @@ export default {
           "content": "In men and women alike, it first betrayed itself by the emergence of certain tumours in the groin or the armpits, some of which grew as large as a common apple, others as an egg, which the common people called buboes. From these two parts, the deadly swellings spread rapidly over the whole body. What was still worse, this disaster struck so much terror into men's hearts that brother abandoned brother, uncle abandoned nephew, and often the wife her husband; and what is almost incredible, fathers and mothers refused to visit and tend their children.",
           "teacher_notes": {
             "source_context": "Eyewitness account from Boccaccio's Decameron, 1348. The extreme mortality rate caused widespread panic and social abandonment."
-          }
+          },
+          "studio_audio": "/audio/sources/edexcel_medicine/lesson_1_5_sA.mp3",
+          "studio_voice_label": "Giovanni Boccaccio (1348)"
         },
         {
           "id": "med_l5_source_a",
@@ -7834,7 +7918,9 @@ export default {
           "content": "Whereas the city of London, by reason of the dung, filth, and corruption lying in the streets and lanes, and the entrails of slaughtered beasts, is infected with an unbearable stench, whereby the air is corrupted and poisoned, and the plague increaseth daily among our subjects: We command you straightway that you cause the city to be cleansed of all such filth and refuse, that the anger of God may be turned away and our people preserved from death.",
           "teacher_notes": {
             "source_context": "Royal writ of King Edward III to London, April 1349. Authorities believed plague was carried on miasma generated by putrid refuse."
-          }
+          },
+          "studio_audio": "/audio/sources/edexcel_medicine/lesson_1_5_sD.mp3",
+          "studio_voice_label": "Royal Proclamation of King Edwar…"
         },
         {
           "id": "med_l5_source_knighton_collapse",
@@ -7854,7 +7940,9 @@ export default {
           "question": "According to Source E, how did the catastrophic death toll of 1348–49 disrupt both burial customs and England’s rural economy?",
           "model_answer": "Knighton records consecrated churchyards overflowing into emergency mass pits, whole villages left deserted, sheep and cattle wandering through unharvested corn, and surviving labourers demanding triple wages—prompting Parliament’s 1351 Statute of Labourers while exposing medicine’s total failure to save lives.",
           "text": "Then the grievous plague penetrated the seacoasts from Southampton and came to Bristol, and virtually the whole strength of the town died... In the same year there was a great mortality of sheep, and crops rotted in the fields for want of reapers; for so scarce were servants and labourers that workers demanded thrice the wages accustomed before, while priests could scarce be found to bury the dead in deep trenches.",
-          "content": "Then the grievous plague penetrated the seacoasts from Southampton and came to Bristol, and virtually the whole strength of the town died... In the same year there was a great mortality of sheep, and crops rotted in the fields for want of reapers; for so scarce were servants and labourers that workers demanded thrice the wages accustomed before, while priests could scarce be found to bury the dead in deep trenches."
+          "content": "Then the grievous plague penetrated the seacoasts from Southampton and came to Bristol, and virtually the whole strength of the town died... In the same year there was a great mortality of sheep, and crops rotted in the fields for want of reapers; for so scarce were servants and labourers that workers demanded thrice the wages accustomed before, while priests could scarce be found to bury the dead in deep trenches.",
+          "studio_audio": "/audio/sources/edexcel_medicine/lesson_1_5_sE.mp3",
+          "studio_voice_label": "Henry Knighton (1349)"
         }
       ],
       "quick_quiz": [
@@ -8920,7 +9008,9 @@ export default {
       },
       "banner_image": "/images/upgraded/gcse-med-eee/med_banner_kt1_5_florence_plague_1348.jpg",
       "enquiry": "Why were medieval communities, doctors, and civic authorities completely powerless to stop the Black Death?",
-      "banner_caption": "The Plague of Florence in 1348, as Described in Giovanni Boccaccio’s Decameron (Etching by Luigi Sabatelli, Wellcome Collection): Between 1348 and 1349, bubonic and pneumonic plague killed between one-third and one-half of England’s population."
+      "banner_caption": "The Plague of Florence in 1348, as Described in Giovanni Boccaccio’s Decameron (Etching by Luigi Sabatelli, Wellcome Collection): Between 1348 and 1349, bubonic and pneumonic plague killed between one-third and one-half of England’s population.",
+      "prologue_audio": "/audio/lessons/edexcel_medicine/lesson_1_5_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · Historian"
     },
     {
       "id": "lesson_2_1",
@@ -9285,7 +9375,9 @@ export default {
               "teacher_notes": {
                 "source_context": "Extract from Erasmus’s Praise of Folly, 1511. Humanism emphasised direct study of original languages and nature over medieval scholastic authority."
               },
-              "content": "The scholastic doctors and academic professors wrap themselves in obscure terms and ancient dogmas, fancying themselves closest to Heaven. They despise the study of Greek, preferring corrupt Latin translations of Aristotle and Galen riddled with scribal errors. They spend their days arguing over idle trifles in the university halls rather than reading original ancient texts or observing God’s living creation with their own eyes. They condemn as dangerous heretics all who dare to question their dry, bookish commentaries."
+              "content": "The scholastic doctors and academic professors wrap themselves in obscure terms and ancient dogmas, fancying themselves closest to Heaven. They despise the study of Greek, preferring corrupt Latin translations of Aristotle and Galen riddled with scribal errors. They spend their days arguing over idle trifles in the university halls rather than reading original ancient texts or observing God’s living creation with their own eyes. They condemn as dangerous heretics all who dare to question their dry, bookish commentaries.",
+              "studio_audio": "/audio/sources/edexcel_medicine/lesson_2_1_sB.mp3",
+              "studio_voice_label": "Desiderius Erasmus (1511)"
             }
           ],
           "text": "<p><span class=\"para-ref\">[2.1]</span> Beginning in fifteenth-century Italy, the revolutionary movement of **Renaissance Humanism** transformed European thought by encouraging direct intellectual curiosity and independent critical thinking. Humanist scholars rejected blind medieval deference to Church dogma, seeking out forgotten classical manuscripts scattered across monastic libraries following the sudden fall of Constantinople in 1453. They sought to understand the natural world through human observation rather than divine revelation.</p><p><span class=\"para-ref\">[2.2]</span> Medical humanists studied **original Greek translations** of Hippocrates and Galen, discovering that centuries of careless medieval Latin translations had distorted classical teachings. More importantly, humanism revived the ancient spirit of empirical inquiry, **challenging Galenic dogma** by urging physicians to verify anatomical descriptions through direct human dissection rather than accepting ancient authority without question. This critical mindset provided the intellectual catalyst for early modern anatomical science.</p>",
@@ -9321,7 +9413,9 @@ export default {
               "teacher_notes": {
                 "source_context": "Charter granted by King Charles II to the Royal Society, 1662. The Society rejected reliance on unproven classical authorities."
               },
-              "content": "We have long resolved to establish and encourage a Society whose chief design shall be to promote, by the authority of experiments, the knowledge of natural things and of all useful arts. In their assemblies, the Fellows shall admit no doctrine upon mere hearsay or ancient authority, but shall examine all hypotheses by rigorous trial, dissection, and demonstration. Their labours shall be dedicated to the glory of God the Creator, the advancement of natural philosophy, and the practical benefit of all mankind."
+              "content": "We have long resolved to establish and encourage a Society whose chief design shall be to promote, by the authority of experiments, the knowledge of natural things and of all useful arts. In their assemblies, the Fellows shall admit no doctrine upon mere hearsay or ancient authority, but shall examine all hypotheses by rigorous trial, dissection, and demonstration. Their labours shall be dedicated to the glory of God the Creator, the advancement of natural philosophy, and the practical benefit of all mankind.",
+              "studio_audio": "/audio/sources/edexcel_medicine/lesson_2_1_sC.mp3",
+              "studio_voice_label": "Second Royal Charter Granted to…"
             }
           ],
           "text": "<p><span class=\"para-ref\">[3.1]</span> In November 1660, a distinguished gathering of natural philosophers—including architect Christopher Wren, chemist Robert Boyle, and John Wilkins—founded a new scientific academy at Gresham College in London. This landmark assembly became the prestigious **Royal Society** in **1660**, chartered by King Charles II to promote natural knowledge through collaborative laboratory experimentation and rational debate rather than theological speculation. The society rapidly attracted Britain's leading scientific minds.</p><p><span class=\"para-ref\">[3.2]</span> In 1662, the institution received an official **Royal Charter from King Charles II**, granting royal patronage and intellectual freedom. The Society adopted the famous **'Nullius in Verba' motto** ('Take nobody’s word for it'), boldly declaring that scientific truth could never rely on ancient authority, but must be demonstrated through rigorous, repeatable physical experiments. This motto established empirical observation as the core principle of modern British medical science.</p>",
@@ -9457,7 +9551,9 @@ export default {
               "teacher_notes": {
                 "source_context": "Oldenburg’s preface to Philosophical Transactions, 1665. The journal established the modern principle of published peer review."
               },
-              "content": "Whereas there is nothing more necessary for promoting the improvement of Philosophical Matters, than the communicating to such as apply their Studies and Endeavours that way, such things as are discovered or put in practise by others: It is therefore thought fit to employ the Press, that such Inquiries and Discoveries as are made by Ingenious Men in all parts of the World may be impartially communicated, examined, and confirmed. Thus knowledge shall no longer be buried in private closets, but exposed to the common light of reason."
+              "content": "Whereas there is nothing more necessary for promoting the improvement of Philosophical Matters, than the communicating to such as apply their Studies and Endeavours that way, such things as are discovered or put in practise by others: It is therefore thought fit to employ the Press, that such Inquiries and Discoveries as are made by Ingenious Men in all parts of the World may be impartially communicated, examined, and confirmed. Thus knowledge shall no longer be buried in private closets, but exposed to the common light of reason.",
+              "studio_audio": "/audio/sources/edexcel_medicine/lesson_2_1_sD.mp3",
+              "studio_voice_label": "Henry Oldenburg"
             }
           ],
           "text": "<p><span class=\"para-ref\">[4.1]</span> In 1665, Royal Society secretary Henry Oldenburg established the pioneering journal ***Philosophical Transactions***, creating the world’s first continuous scientific periodical. Oldenburg established a formal network of international scientific correspondence, allowing physicians, chemists, and natural philosophers across Europe to communicate findings, publish experimental records, and challenge unproven theories rapidly in print. This publication revolutionised how academic medical discoveries were evaluated and preserved.</p><p><span class=\"para-ref\">[4.2]</span> Crucially, the journal pioneered the modern mechanism of **scientific paper peer-sharing**, submitting submitted papers to independent expert committees for critical evaluation before publication. The journal fostered lively **empirical laboratory debates**, recording investigations into blood transfusions, respiration, and microscopic tissue structures. This transparent communication model ensured medical discoveries were tested collectively, preventing fraudulent claims and accelerating genuine scientific progress. It established a permanent archive for European scientific medicine.</p>",
@@ -9905,7 +10001,9 @@ export default {
           "teacher_notes": {
             "source_context": "Extract from Erasmus’s Praise of Folly, 1511. Humanism emphasised direct study of original languages and nature over medieval scholastic authority."
           },
-          "content": "The scholastic doctors and academic professors wrap themselves in obscure terms and ancient dogmas, fancying themselves closest to Heaven. They despise the study of Greek, preferring corrupt Latin translations of Aristotle and Galen riddled with scribal errors. They spend their days arguing over idle trifles in the university halls rather than reading original ancient texts or observing God’s living creation with their own eyes. They condemn as dangerous heretics all who dare to question their dry, bookish commentaries."
+          "content": "The scholastic doctors and academic professors wrap themselves in obscure terms and ancient dogmas, fancying themselves closest to Heaven. They despise the study of Greek, preferring corrupt Latin translations of Aristotle and Galen riddled with scribal errors. They spend their days arguing over idle trifles in the university halls rather than reading original ancient texts or observing God’s living creation with their own eyes. They condemn as dangerous heretics all who dare to question their dry, bookish commentaries.",
+          "studio_audio": "/audio/sources/edexcel_medicine/lesson_2_1_sB.mp3",
+          "studio_voice_label": "Desiderius Erasmus (1511)"
         },
         {
           "id": "med_l6_source_b",
@@ -9925,7 +10023,9 @@ export default {
           "teacher_notes": {
             "source_context": "Charter granted by King Charles II to the Royal Society, 1662. The Society rejected reliance on unproven classical authorities."
           },
-          "content": "We have long resolved to establish and encourage a Society whose chief design shall be to promote, by the authority of experiments, the knowledge of natural things and of all useful arts. In their assemblies, the Fellows shall admit no doctrine upon mere hearsay or ancient authority, but shall examine all hypotheses by rigorous trial, dissection, and demonstration. Their labours shall be dedicated to the glory of God the Creator, the advancement of natural philosophy, and the practical benefit of all mankind."
+          "content": "We have long resolved to establish and encourage a Society whose chief design shall be to promote, by the authority of experiments, the knowledge of natural things and of all useful arts. In their assemblies, the Fellows shall admit no doctrine upon mere hearsay or ancient authority, but shall examine all hypotheses by rigorous trial, dissection, and demonstration. Their labours shall be dedicated to the glory of God the Creator, the advancement of natural philosophy, and the practical benefit of all mankind.",
+          "studio_audio": "/audio/sources/edexcel_medicine/lesson_2_1_sC.mp3",
+          "studio_voice_label": "Second Royal Charter Granted to…"
         },
         {
           "id": "med_l6_source_d",
@@ -9945,7 +10045,9 @@ export default {
           "teacher_notes": {
             "source_context": "Oldenburg’s preface to Philosophical Transactions, 1665. The journal established the modern principle of published peer review."
           },
-          "content": "Whereas there is nothing more necessary for promoting the improvement of Philosophical Matters, than the communicating to such as apply their Studies and Endeavours that way, such things as are discovered or put in practise by others: It is therefore thought fit to employ the Press, that such Inquiries and Discoveries as are made by Ingenious Men in all parts of the World may be impartially communicated, examined, and confirmed. Thus knowledge shall no longer be buried in private closets, but exposed to the common light of reason."
+          "content": "Whereas there is nothing more necessary for promoting the improvement of Philosophical Matters, than the communicating to such as apply their Studies and Endeavours that way, such things as are discovered or put in practise by others: It is therefore thought fit to employ the Press, that such Inquiries and Discoveries as are made by Ingenious Men in all parts of the World may be impartially communicated, examined, and confirmed. Thus knowledge shall no longer be buried in private closets, but exposed to the common light of reason.",
+          "studio_audio": "/audio/sources/edexcel_medicine/lesson_2_1_sD.mp3",
+          "studio_voice_label": "Henry Oldenburg"
         },
         {
           "id": "med_l6_source_c",
@@ -10663,7 +10765,9 @@ export default {
       },
       "banner_image": "/images/med_banner_kt2_1_printing_press.jpg",
       "enquiry": "How did the invention of printing and the scientific method challenge 1,500 years of medical orthodoxy?",
-      "banner_caption": "Historical engraving of an early modern Dutch printing workshop, where compositors set movable metal type and pressmen pull a wooden screw press to multiply new anatomical and medical texts."
+      "banner_caption": "Historical engraving of an early modern Dutch printing workshop, where compositors set movable metal type and pressmen pull a wooden screw press to multiply new anatomical and medical texts.",
+      "prologue_audio": "/audio/lessons/edexcel_medicine/lesson_2_1_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · Historian"
     },
     {
       "id": "lesson_2_2",
@@ -11034,7 +11138,9 @@ export default {
               "teacher_notes": {
                 "source_context": "Preface to Sydenham’s Observationes Medicae, 1676. Sydenham argued diseases were distinct biological entities."
               },
-              "content": "The physician must observe nature attentively, noting the exact symptoms of disease as a botanist classifies species of plants. Sickness is not an arbitrary mystery: each disease hath its own uniform symptoms, course, and crises. He who would understand medicine must visit the sick bed, observe the fever with his own senses, and discard theoretical speculations copied from ancient books. When a student asked me what books he should read, I answered: \"Read Don Quixote, for it is a very good book; but at the bedside, observe nature alone.\""
+              "content": "The physician must observe nature attentively, noting the exact symptoms of disease as a botanist classifies species of plants. Sickness is not an arbitrary mystery: each disease hath its own uniform symptoms, course, and crises. He who would understand medicine must visit the sick bed, observe the fever with his own senses, and discard theoretical speculations copied from ancient books. When a student asked me what books he should read, I answered: \"Read Don Quixote, for it is a very good book; but at the bedside, observe nature alone.\"",
+              "studio_audio": "/audio/sources/edexcel_medicine/lesson_2_2_sB.mp3",
+              "studio_voice_label": "Thomas Sydenham (1676)"
             }
           ],
           "text": "<p><span class=\"para-ref\">[2.1]</span> Sydenham’s greatest conceptual breakthrough was treating diseases as distinct, uniform biological species rather than unique personal humoral imbalances. Applying principles borrowed from **medical botany taxonomy**, he argued that illnesses could be classified into distinct families, genera, and species just like plants. He proved that different patients suffering from the same disease shared identical core physical symptoms. This destroyed the ancient belief that every patient possessed a wholly unique individual illness.</p><p><span class=\"para-ref\">[2.2]</span> This revolutionary method enabled accurate **differential disease diagnosis**, allowing Sydenham to distinguish measles from scarlet fever for the first time. In his landmark treatise ***Observationes Medicae* (1676)**, Sydenham published comprehensive diagnostic descriptions of acute epidemics, including smallpox, dysentery, and gout. His textbook became the standard clinical guide studied by European medical students for over two centuries, founding modern clinical pathology.</p>",
@@ -11074,7 +11180,9 @@ export default {
               "teacher_notes": {
                 "source_context": "Sydenham on Cinchona bark, 1676. Peruvian bark directly treated malaria without purging humours."
               },
-              "content": "Peruvian Bark (Cinchona) hath gained great credit for curing intermittents and ague fevers when given in due proportion. It cureth not by evacuating corrupt humours through bleeding or violent purges, as Galenists falsely insist all remedies must do, but by acting directly upon the specific root of the disease itself. Thus experience triumphs over scholastic dogma: for though we know not its hidden mechanism, its virtue to banish the shivering ague is undeniable."
+              "content": "Peruvian Bark (Cinchona) hath gained great credit for curing intermittents and ague fevers when given in due proportion. It cureth not by evacuating corrupt humours through bleeding or violent purges, as Galenists falsely insist all remedies must do, but by acting directly upon the specific root of the disease itself. Thus experience triumphs over scholastic dogma: for though we know not its hidden mechanism, its virtue to banish the shivering ague is undeniable.",
+              "studio_audio": "/audio/sources/edexcel_medicine/lesson_2_2_sC.mp3",
+              "studio_voice_label": "Thomas Sydenham on Treating Mala…"
             }
           ],
           "text": "<p><span class=\"para-ref\">[3.1]</span> In therapeutics, Sydenham championed empirical remedies proven by practical bedside results rather than ancient humoral deductions. When treating malaria, known as ague in seventeenth-century England, he popularised imported **cinchona bark (quinine)** from South America. While traditional Galenic doctors rejected the foreign bark because it fit no humoral category, Sydenham observed that it consistently and miraculously broke dangerous recurring fevers.</p><p><span class=\"para-ref\">[3.2]</span> By proving cinchona provided a **specific cure for malaria (ague)**, Sydenham dealt a devastating blow to traditional humoral medicine, decisively **challenging humour balance** theories that insisted all disease required general bleeding or purging. He also developed a medicinal liquid tincture of opium dissolved in sherry called laudanum, providing reliable pain relief and establishing the principle that specific diseases required targeted chemical cures.</p>",
@@ -11109,7 +11217,9 @@ export default {
               "teacher_notes": {
                 "source_context": "Sydenham’s smallpox chapter, 1676. He abolished the harmful sweating method in favour of fresh air and light covers."
               },
-              "content": "It is common practice among our doctors to stifle smallpox patients with blazing fires, heavy blankets, and heating cordials, driving the poison inward and burning the patient to death in their own sweat. I have found by experience that the patient should be kept cool, with windows opened to admit fresh air, light bedclothes, and cooling drinks of small beer and barley water. By this cooling regimen, fevers abate, pustules mature gently, and hundreds of lives are spared."
+              "content": "It is common practice among our doctors to stifle smallpox patients with blazing fires, heavy blankets, and heating cordials, driving the poison inward and burning the patient to death in their own sweat. I have found by experience that the patient should be kept cool, with windows opened to admit fresh air, light bedclothes, and cooling drinks of small beer and barley water. By this cooling regimen, fevers abate, pustules mature gently, and hundreds of lives are spared.",
+              "studio_audio": "/audio/sources/edexcel_medicine/lesson_2_2_sD.mp3",
+              "studio_voice_label": "Thomas Sydenham on the \"Cool Reg…"
             }
           ],
           "text": "<p><span class=\"para-ref\">[4.1]</span> Sydenham’s observational methodology led him to challenge dangerous traditional orthodoxies, particularly when managing virulent smallpox epidemics. The standard treatment prescribed by Galenic doctors was the \"sweating method\", trapping feverish patients in sealed rooms with shuttered windows, piling heavy blankets on beds, and administering boiling cordials to sweat out evil humours, which frequently caused fatal heatstroke in delirious patients.</p><p><span class=\"para-ref\">[4.2]</span> Sydenham revolutionised care by pioneering his famous **cool therapy treatment**. He ordered **fresh bedroom ventilation**, threw open bedroom windows, removed thick quilts, and kept patients comfortably cool while **avoiding heavy blankets** and serving light broths and barley water. This humane, observational regimen dramatically lowered smallpox mortality, proving that gentle supportive nursing produced far better clinical outcomes than aggressive medical intervention.</p>",
@@ -11560,7 +11670,9 @@ export default {
           "teacher_notes": {
             "source_context": "Preface to Sydenham’s Observationes Medicae, 1676. Sydenham argued diseases were distinct biological entities."
           },
-          "content": "The physician must observe nature attentively, noting the exact symptoms of disease as a botanist classifies species of plants. Sickness is not an arbitrary mystery: each disease hath its own uniform symptoms, course, and crises. He who would understand medicine must visit the sick bed, observe the fever with his own senses, and discard theoretical speculations copied from ancient books. When a student asked me what books he should read, I answered: \"Read Don Quixote, for it is a very good book; but at the bedside, observe nature alone.\""
+          "content": "The physician must observe nature attentively, noting the exact symptoms of disease as a botanist classifies species of plants. Sickness is not an arbitrary mystery: each disease hath its own uniform symptoms, course, and crises. He who would understand medicine must visit the sick bed, observe the fever with his own senses, and discard theoretical speculations copied from ancient books. When a student asked me what books he should read, I answered: \"Read Don Quixote, for it is a very good book; but at the bedside, observe nature alone.\"",
+          "studio_audio": "/audio/sources/edexcel_medicine/lesson_2_2_sB.mp3",
+          "studio_voice_label": "Thomas Sydenham (1676)"
         },
         {
           "id": "med_l7_source_d",
@@ -11580,7 +11692,9 @@ export default {
           "teacher_notes": {
             "source_context": "Sydenham on Cinchona bark, 1676. Peruvian bark directly treated malaria without purging humours."
           },
-          "content": "Peruvian Bark (Cinchona) hath gained great credit for curing intermittents and ague fevers when given in due proportion. It cureth not by evacuating corrupt humours through bleeding or violent purges, as Galenists falsely insist all remedies must do, but by acting directly upon the specific root of the disease itself. Thus experience triumphs over scholastic dogma: for though we know not its hidden mechanism, its virtue to banish the shivering ague is undeniable."
+          "content": "Peruvian Bark (Cinchona) hath gained great credit for curing intermittents and ague fevers when given in due proportion. It cureth not by evacuating corrupt humours through bleeding or violent purges, as Galenists falsely insist all remedies must do, but by acting directly upon the specific root of the disease itself. Thus experience triumphs over scholastic dogma: for though we know not its hidden mechanism, its virtue to banish the shivering ague is undeniable.",
+          "studio_audio": "/audio/sources/edexcel_medicine/lesson_2_2_sC.mp3",
+          "studio_voice_label": "Thomas Sydenham on Treating Mala…"
         },
         {
           "id": "med_l7_source_e",
@@ -11600,7 +11714,9 @@ export default {
           "teacher_notes": {
             "source_context": "Sydenham’s smallpox chapter, 1676. He abolished the harmful sweating method in favour of fresh air and light covers."
           },
-          "content": "It is common practice among our doctors to stifle smallpox patients with blazing fires, heavy blankets, and heating cordials, driving the poison inward and burning the patient to death in their own sweat. I have found by experience that the patient should be kept cool, with windows opened to admit fresh air, light bedclothes, and cooling drinks of small beer and barley water. By this cooling regimen, fevers abate, pustules mature gently, and hundreds of lives are spared."
+          "content": "It is common practice among our doctors to stifle smallpox patients with blazing fires, heavy blankets, and heating cordials, driving the poison inward and burning the patient to death in their own sweat. I have found by experience that the patient should be kept cool, with windows opened to admit fresh air, light bedclothes, and cooling drinks of small beer and barley water. By this cooling regimen, fevers abate, pustules mature gently, and hundreds of lives are spared.",
+          "studio_audio": "/audio/sources/edexcel_medicine/lesson_2_2_sD.mp3",
+          "studio_voice_label": "Thomas Sydenham on the \"Cool Reg…"
         },
         {
           "id": "med_l7_source_c",
@@ -12297,7 +12413,9 @@ export default {
       },
       "banner_image": "/images/med_banner_kt2_2_apothecary_hall.jpg",
       "enquiry": "How did Thomas Sydenham's focus on direct observation challenge traditional medical practice?",
-      "banner_caption": "A Seventeenth-Century Apothecary’s Dispensary (Wellcome Collection): While traditional apothecaries still compounded classical Theriac alongside New World remedies like Peruvian cinchona bark, Dr Thomas Sydenham championed direct bedside observation."
+      "banner_caption": "A Seventeenth-Century Apothecary’s Dispensary (Wellcome Collection): While traditional apothecaries still compounded classical Theriac alongside New World remedies like Peruvian cinchona bark, Dr Thomas Sydenham championed direct bedside observation.",
+      "prologue_audio": "/audio/lessons/edexcel_medicine/lesson_2_2_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · Historian"
     },
     {
       "id": "lesson_2_3",
@@ -12675,7 +12793,9 @@ export default {
               "teacher_notes": {
                 "source_context": "Vesalius's dedication preface to Emperor Charles V, 1543. He declared that Galen had deceived physicians by dissecting animals."
               },
-              "content": "Those who teach anatomy today sit aloft in a high chair like rooks, croaking with lofty pride about things they have never seen, but only learned by rote from the books of others. Meanwhile, an ignorant barber-surgeon hacketh at the cadaver without understanding what he uncovereth. Thus all things are taught wrongly in the schools, and days are wasted in ridiculous questions. I was compelled to lay my own hand to the work, dissecting human bodies myself, whereby I discovered more than two hundred errors in the anatomical writings of the divine Galen."
+              "content": "Those who teach anatomy today sit aloft in a high chair like rooks, croaking with lofty pride about things they have never seen, but only learned by rote from the books of others. Meanwhile, an ignorant barber-surgeon hacketh at the cadaver without understanding what he uncovereth. Thus all things are taught wrongly in the schools, and days are wasted in ridiculous questions. I was compelled to lay my own hand to the work, dissecting human bodies myself, whereby I discovered more than two hundred errors in the anatomical writings of the divine Galen.",
+              "studio_audio": "/audio/sources/edexcel_medicine/lesson_2_3_sB.mp3",
+              "studio_voice_label": "Andreas Vesalius (1543)"
             }
           ],
           "paragraphs": [
@@ -12711,7 +12831,9 @@ export default {
               "teacher_notes": {
                 "source_context": "Vesalius examining the heart septum, 1543. By proving the septum had no pores, he dismantled Galen’s explanation of blood flow."
               },
-              "content": "The septum of the heart is thick and dense, composed of the hardest muscle. Galen declared that blood sweated directly through invisible pores from the right ventricle into the left ventricle. But in truth, however much one may probe and inspect the septum, not the smallest pore or passage can be found. I am amazed at the ingenuity of Galen, who asserted a transit of blood which is nowhere visible to the human eye, and which the structure of the heart completely denieth."
+              "content": "The septum of the heart is thick and dense, composed of the hardest muscle. Galen declared that blood sweated directly through invisible pores from the right ventricle into the left ventricle. But in truth, however much one may probe and inspect the septum, not the smallest pore or passage can be found. I am amazed at the ingenuity of Galen, who asserted a transit of blood which is nowhere visible to the human eye, and which the structure of the heart completely denieth.",
+              "studio_audio": "/audio/sources/edexcel_medicine/lesson_2_3_sC.mp3",
+              "studio_voice_label": "Andreas Vesalius Disproving Pore…"
             }
           ],
           "paragraphs": [
@@ -12903,7 +13025,9 @@ export default {
               "question": "How did Thomas Geminus’s London editions (Source E) ensure Vesalius’s breakthrough transformed practical surgical training in Tudor England?",
               "model_answer": "Vesalius’s original 1543 Latin folio was vast and costly. By engraving affordable copperplate copies in London (1545) and translating the text into English (1553), Geminus enabled non-Latin-speaking English barber-surgeons to learn accurate blood-vessel, muscle, and bone positions before operating.",
               "text": "Seeing that unlearned surgeons who understand not the Latin tongue do daily put men’s lives in peril through ignorance of the true situation of veins, arteries, sinews, and bones, I have set forth in English these lively figures of Andreas Vesalius, newly graven in copper at London, that every practical surgeon of this realm may behold the true fabric of man’s body.",
-              "content": "Seeing that unlearned surgeons who understand not the Latin tongue do daily put men’s lives in peril through ignorance of the true situation of veins, arteries, sinews, and bones, I have set forth in English these lively figures of Andreas Vesalius, newly graven in copper at London, that every practical surgeon of this realm may behold the true fabric of man’s body."
+              "content": "Seeing that unlearned surgeons who understand not the Latin tongue do daily put men’s lives in peril through ignorance of the true situation of veins, arteries, sinews, and bones, I have set forth in English these lively figures of Andreas Vesalius, newly graven in copper at London, that every practical surgeon of this realm may behold the true fabric of man’s body.",
+              "studio_audio": "/audio/sources/edexcel_medicine/lesson_2_3_sE.mp3",
+              "studio_voice_label": "Thomas Geminus"
             }
           ],
           "paragraphs": [
@@ -13312,7 +13436,9 @@ export default {
           "teacher_notes": {
             "source_context": "Vesalius's dedication preface to Emperor Charles V, 1543. He declared that Galen had deceived physicians by dissecting animals."
           },
-          "content": "Those who teach anatomy today sit aloft in a high chair like rooks, croaking with lofty pride about things they have never seen, but only learned by rote from the books of others. Meanwhile, an ignorant barber-surgeon hacketh at the cadaver without understanding what he uncovereth. Thus all things are taught wrongly in the schools, and days are wasted in ridiculous questions. I was compelled to lay my own hand to the work, dissecting human bodies myself, whereby I discovered more than two hundred errors in the anatomical writings of the divine Galen."
+          "content": "Those who teach anatomy today sit aloft in a high chair like rooks, croaking with lofty pride about things they have never seen, but only learned by rote from the books of others. Meanwhile, an ignorant barber-surgeon hacketh at the cadaver without understanding what he uncovereth. Thus all things are taught wrongly in the schools, and days are wasted in ridiculous questions. I was compelled to lay my own hand to the work, dissecting human bodies myself, whereby I discovered more than two hundred errors in the anatomical writings of the divine Galen.",
+          "studio_audio": "/audio/sources/edexcel_medicine/lesson_2_3_sB.mp3",
+          "studio_voice_label": "Andreas Vesalius (1543)"
         },
         {
           "id": "med_l8_source_d",
@@ -13332,7 +13458,9 @@ export default {
           "teacher_notes": {
             "source_context": "Vesalius examining the heart septum, 1543. By proving the septum had no pores, he dismantled Galen’s explanation of blood flow."
           },
-          "content": "The septum of the heart is thick and dense, composed of the hardest muscle. Galen declared that blood sweated directly through invisible pores from the right ventricle into the left ventricle. But in truth, however much one may probe and inspect the septum, not the smallest pore or passage can be found. I am amazed at the ingenuity of Galen, who asserted a transit of blood which is nowhere visible to the human eye, and which the structure of the heart completely denieth."
+          "content": "The septum of the heart is thick and dense, composed of the hardest muscle. Galen declared that blood sweated directly through invisible pores from the right ventricle into the left ventricle. But in truth, however much one may probe and inspect the septum, not the smallest pore or passage can be found. I am amazed at the ingenuity of Galen, who asserted a transit of blood which is nowhere visible to the human eye, and which the structure of the heart completely denieth.",
+          "studio_audio": "/audio/sources/edexcel_medicine/lesson_2_3_sC.mp3",
+          "studio_voice_label": "Andreas Vesalius Disproving Pore…"
         },
         {
           "id": "med_l8_source_vesalius_vs_sylvius",
@@ -13389,7 +13517,9 @@ export default {
           "question": "How did Thomas Geminus’s London editions (Source E) ensure Vesalius’s breakthrough transformed practical surgical training in Tudor England?",
           "model_answer": "Vesalius’s original 1543 Latin folio was vast and costly. By engraving affordable copperplate copies in London (1545) and translating the text into English (1553), Geminus enabled non-Latin-speaking English barber-surgeons to learn accurate blood-vessel, muscle, and bone positions before operating.",
           "text": "Seeing that unlearned surgeons who understand not the Latin tongue do daily put men’s lives in peril through ignorance of the true situation of veins, arteries, sinews, and bones, I have set forth in English these lively figures of Andreas Vesalius, newly graven in copper at London, that every practical surgeon of this realm may behold the true fabric of man’s body.",
-          "content": "Seeing that unlearned surgeons who understand not the Latin tongue do daily put men’s lives in peril through ignorance of the true situation of veins, arteries, sinews, and bones, I have set forth in English these lively figures of Andreas Vesalius, newly graven in copper at London, that every practical surgeon of this realm may behold the true fabric of man’s body."
+          "content": "Seeing that unlearned surgeons who understand not the Latin tongue do daily put men’s lives in peril through ignorance of the true situation of veins, arteries, sinews, and bones, I have set forth in English these lively figures of Andreas Vesalius, newly graven in copper at London, that every practical surgeon of this realm may behold the true fabric of man’s body.",
+          "studio_audio": "/audio/sources/edexcel_medicine/lesson_2_3_sE.mp3",
+          "studio_voice_label": "Thomas Geminus"
         }
       ],
       "quick_quiz": [
@@ -14067,7 +14197,9 @@ export default {
       },
       "banner_image": "/images/upgraded/gcse-med-eee/med_banner_kt2_3_vesalius_dissection.jpg",
       "enquiry": "Why did Andreas Vesalius succeed in overturning 1,400 years of Galenic anatomical authority?",
-      "banner_caption": "Andreas Vesalius Performing Direct Human Dissection (After Edouard Hamman, Wellcome Collection): By descending from the professorial chair at Padua in 1537 to dissect human corpses himself, Vesalius exposed over 300 errors in Galenic anatomy."
+      "banner_caption": "Andreas Vesalius Performing Direct Human Dissection (After Edouard Hamman, Wellcome Collection): By descending from the professorial chair at Padua in 1537 to dissect human corpses himself, Vesalius exposed over 300 errors in Galenic anatomy.",
+      "prologue_audio": "/audio/lessons/edexcel_medicine/lesson_2_3_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · Historian"
     },
     {
       "id": "lesson_2_4",
@@ -14392,7 +14524,9 @@ export default {
               "question": "Why did Harvey dissect cold-blooded animals like frogs and snakes (Source A) alongside human corpses to solve how the heart worked?",
               "model_answer": "Dead human corpses could not show blood moving, while warm-blooded mammal hearts beat too fast for the naked eye to follow. Cold-blooded reptile hearts beat slowly and clearly, letting Harvey observe the heart harden, pale, and squeeze blood forcefully into the arteries like a mechanical water pump.",
               "text": "In warm-blooded animals the motion of the heart is so rapid that the eye can scarce distinguish contraction from dilatation, like the flash of a flintlock gun. Yet in colder creatures—such as serpents, frogs, toads, and fishes—the heart beats slowly and distinctly: when it contracts, it grows hard and pale, driving the blood forth with force into the arteries.",
-              "content": "In warm-blooded animals the motion of the heart is so rapid that the eye can scarce distinguish contraction from dilatation, like the flash of a flintlock gun. Yet in colder creatures—such as serpents, frogs, toads, and fishes—the heart beats slowly and distinctly: when it contracts, it grows hard and pale, driving the blood forth with force into the arteries."
+              "content": "In warm-blooded animals the motion of the heart is so rapid that the eye can scarce distinguish contraction from dilatation, like the flash of a flintlock gun. Yet in colder creatures—such as serpents, frogs, toads, and fishes—the heart beats slowly and distinctly: when it contracts, it grows hard and pale, driving the blood forth with force into the arteries.",
+              "studio_audio": "/audio/sources/edexcel_medicine/lesson_2_4_sA.mp3",
+              "studio_voice_label": "William Harvey (1628)"
             }
           ],
           "text": "<p><span class=\"para-ref\">[1.1]</span> English physician William Harvey studied medicine at the renowned University of Padua under anatomist **Girolamo Fabricius**, discoverer of **venous valves**. While Fabricius identified tiny one-way flap valves inside human veins, he mistakenly believed they merely slowed blood down to prevent pooling. Harvey suspected these valves served a mechanical purpose, ensuring **one-way blood flow** toward the central heart rather than outward toward extremities.</p><p><span class=\"para-ref\">[1.2]</span> To observe heart mechanics directly, Harvey conducted pioneering vivisections on slow-beating **cold frog dissections**, toads, and snakes. Because mammalian hearts beat too rapidly for the naked eye, cold-blooded reptiles allowed Harvey to observe systolic contractions clearly, proving that the heart was not a furnace creating heat, but an active muscular pump expelling blood into arterial pathways with each rhythmic contraction.</p>",
@@ -14430,7 +14564,9 @@ export default {
               "teacher_notes": {
                 "source_context": "Harvey's mathematical proof in De Motu Cordis, 1628. He was the first to use numerical calculations to prove biological functions."
               },
-              "content": "Let us calculate the quantity of blood pumped by the heart. If the left ventricle contains two ounces of blood, and the pulse beats seventy times in a minute, the heart must expel over five hundred ounces of blood in an hour—which is thrice the weight of the entire human body! Whence can all this blood come? It is impossible that the liver could continuously manufacture such an enormous mass of blood from ingested food. Therefore, I was forced to conclude that blood is driven in a perpetual circle by the beat of the heart."
+              "content": "Let us calculate the quantity of blood pumped by the heart. If the left ventricle contains two ounces of blood, and the pulse beats seventy times in a minute, the heart must expel over five hundred ounces of blood in an hour—which is thrice the weight of the entire human body! Whence can all this blood come? It is impossible that the liver could continuously manufacture such an enormous mass of blood from ingested food. Therefore, I was forced to conclude that blood is driven in a perpetual circle by the beat of the heart.",
+              "studio_audio": "/audio/sources/edexcel_medicine/lesson_2_4_sB.mp3",
+              "studio_voice_label": "William Harvey (1628)"
             }
           ],
           "text": "<p><span class=\"para-ref\">[2.1]</span> To prove blood circulated continuously, Harvey applied revolutionary quantitative calculations, providing **mathematical proof of blood circulation**. Measuring cardiac ventricles, he calculated that each beat expelled two ounces of blood. With seventy beats per minute, the heart pumped over five hundred pints of blood hourly—three times an adult's body weight—proving it was physically impossible for food to manufacture such massive quantities continually.</p><p><span class=\"para-ref\">[2.2]</span> Harvey concluded that the **heart acts as a mechanical pump** that must continuously circulate the exact same blood throughout the body in an endless closed loop. Through this rigorous mathematical proof, the centuries-old **Galenic liver theory** was permanently refuted. Harvey proved that the liver did not continuously manufacture fresh blood consumed as bodily fuel, overturning one of the most foundational dogmas of ancient Greek medicine.</p>",
@@ -14951,7 +15087,9 @@ export default {
           "question": "Why did Harvey dissect cold-blooded animals like frogs and snakes (Source A) alongside human corpses to solve how the heart worked?",
           "model_answer": "Dead human corpses could not show blood moving, while warm-blooded mammal hearts beat too fast for the naked eye to follow. Cold-blooded reptile hearts beat slowly and clearly, letting Harvey observe the heart harden, pale, and squeeze blood forcefully into the arteries like a mechanical water pump.",
           "text": "In warm-blooded animals the motion of the heart is so rapid that the eye can scarce distinguish contraction from dilatation, like the flash of a flintlock gun. Yet in colder creatures—such as serpents, frogs, toads, and fishes—the heart beats slowly and distinctly: when it contracts, it grows hard and pale, driving the blood forth with force into the arteries.",
-          "content": "In warm-blooded animals the motion of the heart is so rapid that the eye can scarce distinguish contraction from dilatation, like the flash of a flintlock gun. Yet in colder creatures—such as serpents, frogs, toads, and fishes—the heart beats slowly and distinctly: when it contracts, it grows hard and pale, driving the blood forth with force into the arteries."
+          "content": "In warm-blooded animals the motion of the heart is so rapid that the eye can scarce distinguish contraction from dilatation, like the flash of a flintlock gun. Yet in colder creatures—such as serpents, frogs, toads, and fishes—the heart beats slowly and distinctly: when it contracts, it grows hard and pale, driving the blood forth with force into the arteries.",
+          "studio_audio": "/audio/sources/edexcel_medicine/lesson_2_4_sA.mp3",
+          "studio_voice_label": "William Harvey (1628)"
         },
         {
           "id": "med_l9_source_b",
@@ -14971,7 +15109,9 @@ export default {
           "teacher_notes": {
             "source_context": "Harvey's mathematical proof in De Motu Cordis, 1628. He was the first to use numerical calculations to prove biological functions."
           },
-          "content": "Let us calculate the quantity of blood pumped by the heart. If the left ventricle contains two ounces of blood, and the pulse beats seventy times in a minute, the heart must expel over five hundred ounces of blood in an hour—which is thrice the weight of the entire human body! Whence can all this blood come? It is impossible that the liver could continuously manufacture such an enormous mass of blood from ingested food. Therefore, I was forced to conclude that blood is driven in a perpetual circle by the beat of the heart."
+          "content": "Let us calculate the quantity of blood pumped by the heart. If the left ventricle contains two ounces of blood, and the pulse beats seventy times in a minute, the heart must expel over five hundred ounces of blood in an hour—which is thrice the weight of the entire human body! Whence can all this blood come? It is impossible that the liver could continuously manufacture such an enormous mass of blood from ingested food. Therefore, I was forced to conclude that blood is driven in a perpetual circle by the beat of the heart.",
+          "studio_audio": "/audio/sources/edexcel_medicine/lesson_2_4_sB.mp3",
+          "studio_voice_label": "William Harvey (1628)"
         },
         {
           "id": "med_l9_source_a",
@@ -15735,7 +15875,9 @@ export default {
       },
       "banner_image": "/images/upgraded/gcse-med-eee/med_banner_kt2_4_rcp_london_wellcome.jpg",
       "enquiry": "Why did William Harvey's discovery of blood circulation meet fierce medical resistance?",
-      "banner_caption": "The Entrance of the Royal College of Physicians, Warwick Lane, London (Wellcome Collection): As Lumleian Lecturer to the College from 1615, Dr William Harvey demonstrated that the heart acts as a mechanical pump driving blood in a continuous circle."
+      "banner_caption": "The Entrance of the Royal College of Physicians, Warwick Lane, London (Wellcome Collection): As Lumleian Lecturer to the College from 1615, Dr William Harvey demonstrated that the heart acts as a mechanical pump driving blood in a continuous circle.",
+      "prologue_audio": "/audio/lessons/edexcel_medicine/lesson_2_4_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · Historian"
     },
     {
       "id": "lesson_2_5",
@@ -16184,7 +16326,9 @@ export default {
               "teacher_notes": {
                 "source_context": "Royal College of Physicians plague tract, 1665. Medical advice in 1665 showed total continuity with fourteenth-century treatments."
               },
-              "content": "To defend the brain and heart from pestilential miasmas, let fires of pitch, resin, and frankincense be kept burning in rooms and streets. Hold in the mouth a piece of angelica root, rue, or zedoary steeped in vinegar. If swellings appear, let the surgeon apply a blister-plaster to draw the poison outward, or lay the tail of a live plucked fowl to the sore until the fowl die. Bleeding may be used sparingly on the first day, provided the pulse be strong and the fever moderate."
+              "content": "To defend the brain and heart from pestilential miasmas, let fires of pitch, resin, and frankincense be kept burning in rooms and streets. Hold in the mouth a piece of angelica root, rue, or zedoary steeped in vinegar. If swellings appear, let the surgeon apply a blister-plaster to draw the poison outward, or lay the tail of a live plucked fowl to the sore until the fowl die. Bleeding may be used sparingly on the first day, provided the pulse be strong and the fever moderate.",
+              "studio_audio": "/audio/sources/edexcel_medicine/lesson_2_5_sB.mp3",
+              "studio_voice_label": "Royal College of Physicians (1665)"
             }
           ],
           "text": "<p><span class=\"para-ref\">[2.1]</span> Despite the scientific breakthroughs of Vesalius, Harvey, and the Royal Society, seventeenth-century explanations of disease demonstrated striking continuity with the Middle Ages. The overwhelming majority of citizens believed the epidemic was caused by the **wrath of God and poisonous miasma**, interpreting planetary alignments, comets, and solar eclipses as celestial signs of divine vengeance sent upon a decadent, sinful London society.</p><p><span class=\"para-ref\">[2.2]</span> Medical therapeutics remained steeped in humoral and sympathetic superstition. Citizens purchased expensive **plague water and herbal pomanders** containing cloves, vinegar, and ambergris to ward off corrupt air, while quack doctors peddled miraculous London Drops. In desperate attempts to draw poison from swollen bodies, healers prescribed **pigeon bubo remedies**, strapping the plucked, warm rumps of live pigeons against blackened sores, which achieved zero curative benefit.</p>",
@@ -16218,7 +16362,9 @@ export default {
               "teacher_notes": {
                 "source_context": "The Lord Mayor’s Plague Orders, July 1665. The civic government attempted to isolate the disease through strict domestic quarantine."
               },
-              "content": "Every visited house shall be shut up with a red cross of a foot long painted on the middle of the door, with these words: \"Lord have mercy upon us\", there to continue until forty days after the infection hath ceased. Two watchmen shall be appointed to every infected house, one by day and the other by night, who shall strictly prevent any person from going in or coming forth upon pain of imprisonment. All dogs and cats shall be forthwith slaughtered by the dog-killers, lest they carry the pestilence in their fur."
+              "content": "Every visited house shall be shut up with a red cross of a foot long painted on the middle of the door, with these words: \"Lord have mercy upon us\", there to continue until forty days after the infection hath ceased. Two watchmen shall be appointed to every infected house, one by day and the other by night, who shall strictly prevent any person from going in or coming forth upon pain of imprisonment. All dogs and cats shall be forthwith slaughtered by the dog-killers, lest they carry the pestilence in their fur.",
+              "studio_audio": "/audio/sources/edexcel_medicine/lesson_2_5_sC.mp3",
+              "studio_voice_label": "Orders Conceived and Published b…"
             }
           ],
           "text": "<p><span class=\"para-ref\">[3.1]</span> In response to soaring death tolls, London civic authorities enacted far more aggressive public health controls than in 1348. The Lord Mayor issued strict **civic quarantine orders**, mandating that any dwelling containing an infected patient be nailed shut from the outside for forty days, trapping healthy family members inside with the sick under the supervision of appointed armed street watchmen.</p><p><span class=\"para-ref\">[3.2]</span> Quarantined dwellings featured tragic **red cross marked doors**, accompanied by the desperate inscription: *Lord Have Mercy Upon Us!* Dead bodies were surrendered only at night to prevent panic. Authorities also constructed specialised **parish pest houses** in open fields outside London walls, though these primitive wooden isolation barracks had far too few beds to accommodate the infected.</p>",
@@ -16256,7 +16402,9 @@ export default {
               "question": "Why did London’s decision to cull dogs and cats and light street bonfires (Source D) seem sensible in 1665—yet actually worsen the plague?",
               "model_answer": "Believing plague clung to stray animal fur and floated in damp foul air (miasma), purifying streets with smoke and removing stray animals was logical public hygiene in context. Tragically, slaughtering 200,000 cats and 40,000 dogs removed the predators keeping London’s black rats in check—allowing flea-carrying rats to multiply rapidly.",
               "text": "Wherefore it was ordered by the Magistrates that all dogs and cats should be immediately killed and buried deep by officers appointed for that purpose, lest they carry the effluvia of infected houses in their fur; whereby it was computed that forty thousand dogs and five times as many cats were destroyed, while great fires of sea-coal were kept blazing at every street corner for three nights and days.",
-              "content": "Wherefore it was ordered by the Magistrates that all dogs and cats should be immediately killed and buried deep by officers appointed for that purpose, lest they carry the effluvia of infected houses in their fur; whereby it was computed that forty thousand dogs and five times as many cats were destroyed, while great fires of sea-coal were kept blazing at every street corner for three nights and days."
+              "content": "Wherefore it was ordered by the Magistrates that all dogs and cats should be immediately killed and buried deep by officers appointed for that purpose, lest they carry the effluvia of infected houses in their fur; whereby it was computed that forty thousand dogs and five times as many cats were destroyed, while great fires of sea-coal were kept blazing at every street corner for three nights and days.",
+              "studio_audio": "/audio/sources/edexcel_medicine/lesson_2_5_sD.mp3",
+              "studio_voice_label": "Daniel Defoe / Civic Plague Reco…"
             }
           ],
           "text": "<p><span class=\"para-ref\">[4.1]</span> Because authorities believed the epidemic was spread by atmospheric miasma and animal fur, they enacted well-intentioned but disastrous preventative policies. Convinced household pets carried infection, the Lord Mayor ordered the **mass culling of dogs and cats**, leading to the slaughter of an estimated two hundred thousand animals, which eliminated the natural predators of black rats and accelerated the flea population. This tragic mistake allowed plague-carrying rats to multiply unhindered across London.</p><p><span class=\"para-ref\">[4.2]</span> To combat corrupt miasma, town authorities maintained continuous **street barrel fires**, burning coal, pitch, and sulphur day and night at road intersections to purify the heavy summer atmosphere. Citizens also practised **tobacco smoke warding**, compelling children and adults to smoke clay pipes continuously in schools and streets, believing pungent tobacco fumes acted as a powerful protective disinfectant against airborne contagion.</p>",
@@ -16389,7 +16537,9 @@ export default {
               "content": "In the City died this week 7,496, and of them 6,102 of the plague. But it is feared that the true number is nearer 10,000, partly by the Quakers and others that will not have any bell ring for them, and partly that the clerks do not report the dead. Thus one of the saddest sights I saw today in the street was to see how empty the City is: no boats upon the river, shops shut up, grass growing in the streets of Whitehall, and people walking down the middle of the roadway for fear of passing infected doors.",
               "image": "/images/bill_of_mortality_1665.jpg",
               "src": "/images/bill_of_mortality_1665.jpg",
-              "source": "/images/bill_of_mortality_1665.jpg"
+              "source": "/images/bill_of_mortality_1665.jpg",
+              "studio_audio": "/audio/sources/edexcel_medicine/lesson_2_5_sE.mp3",
+              "studio_voice_label": "Samuel Pepys’s Diary (31 Aug 166…"
             }
           ],
           "text": "<p><span class=\"para-ref\">[5.1]</span> By September 1665, London was engulfed in apocalyptic horror as weekly deaths surpassed eight thousand. Traditional churchyard burials ceased completely, replaced by municipal **London dead carts** that traversed midnight streets accompanied by tolling handbells and the grim cries of drivers shouting: *Bring out your dead!* Unclaimed corpses were tipped into gigantic communal burial trenches at Holywell Mount and Aldgate.</p><p><span class=\"para-ref\">[5.2]</span> By winter 1665, the epidemic subsided as cold weather killed off fleas, leaving over **100,000 plague deaths** recorded across the capital—nearly a quarter of London’s total population. Weekly **Bills of Mortality records** documented the horrifying toll across each parish. The catastrophe demonstrated the complete failure of Renaissance medicine to conquer infectious disease, proving that theoretical anatomical progress had yet to transform bedside therapeutics.</p>",
@@ -16800,7 +16950,9 @@ export default {
           "teacher_notes": {
             "source_context": "Royal College of Physicians plague tract, 1665. Medical advice in 1665 showed total continuity with fourteenth-century treatments."
           },
-          "content": "To defend the brain and heart from pestilential miasmas, let fires of pitch, resin, and frankincense be kept burning in rooms and streets. Hold in the mouth a piece of angelica root, rue, or zedoary steeped in vinegar. If swellings appear, let the surgeon apply a blister-plaster to draw the poison outward, or lay the tail of a live plucked fowl to the sore until the fowl die. Bleeding may be used sparingly on the first day, provided the pulse be strong and the fever moderate."
+          "content": "To defend the brain and heart from pestilential miasmas, let fires of pitch, resin, and frankincense be kept burning in rooms and streets. Hold in the mouth a piece of angelica root, rue, or zedoary steeped in vinegar. If swellings appear, let the surgeon apply a blister-plaster to draw the poison outward, or lay the tail of a live plucked fowl to the sore until the fowl die. Bleeding may be used sparingly on the first day, provided the pulse be strong and the fever moderate.",
+          "studio_audio": "/audio/sources/edexcel_medicine/lesson_2_5_sB.mp3",
+          "studio_voice_label": "Royal College of Physicians (1665)"
         },
         {
           "id": "med_l10_source_b",
@@ -16820,7 +16972,9 @@ export default {
           "teacher_notes": {
             "source_context": "The Lord Mayor’s Plague Orders, July 1665. The civic government attempted to isolate the disease through strict domestic quarantine."
           },
-          "content": "Every visited house shall be shut up with a red cross of a foot long painted on the middle of the door, with these words: \"Lord have mercy upon us\", there to continue until forty days after the infection hath ceased. Two watchmen shall be appointed to every infected house, one by day and the other by night, who shall strictly prevent any person from going in or coming forth upon pain of imprisonment. All dogs and cats shall be forthwith slaughtered by the dog-killers, lest they carry the pestilence in their fur."
+          "content": "Every visited house shall be shut up with a red cross of a foot long painted on the middle of the door, with these words: \"Lord have mercy upon us\", there to continue until forty days after the infection hath ceased. Two watchmen shall be appointed to every infected house, one by day and the other by night, who shall strictly prevent any person from going in or coming forth upon pain of imprisonment. All dogs and cats shall be forthwith slaughtered by the dog-killers, lest they carry the pestilence in their fur.",
+          "studio_audio": "/audio/sources/edexcel_medicine/lesson_2_5_sC.mp3",
+          "studio_voice_label": "Orders Conceived and Published b…"
         },
         {
           "id": "med_l10_source_animal_cull_1665",
@@ -16840,7 +16994,9 @@ export default {
           "question": "Why did London’s decision to cull dogs and cats and light street bonfires (Source D) seem sensible in 1665—yet actually worsen the plague?",
           "model_answer": "Believing plague clung to stray animal fur and floated in damp foul air (miasma), purifying streets with smoke and removing stray animals was logical public hygiene in context. Tragically, slaughtering 200,000 cats and 40,000 dogs removed the predators keeping London’s black rats in check—allowing flea-carrying rats to multiply rapidly.",
           "text": "Wherefore it was ordered by the Magistrates that all dogs and cats should be immediately killed and buried deep by officers appointed for that purpose, lest they carry the effluvia of infected houses in their fur; whereby it was computed that forty thousand dogs and five times as many cats were destroyed, while great fires of sea-coal were kept blazing at every street corner for three nights and days.",
-          "content": "Wherefore it was ordered by the Magistrates that all dogs and cats should be immediately killed and buried deep by officers appointed for that purpose, lest they carry the effluvia of infected houses in their fur; whereby it was computed that forty thousand dogs and five times as many cats were destroyed, while great fires of sea-coal were kept blazing at every street corner for three nights and days."
+          "content": "Wherefore it was ordered by the Magistrates that all dogs and cats should be immediately killed and buried deep by officers appointed for that purpose, lest they carry the effluvia of infected houses in their fur; whereby it was computed that forty thousand dogs and five times as many cats were destroyed, while great fires of sea-coal were kept blazing at every street corner for three nights and days.",
+          "studio_audio": "/audio/sources/edexcel_medicine/lesson_2_5_sD.mp3",
+          "studio_voice_label": "Daniel Defoe / Civic Plague Reco…"
         },
         {
           "id": "med_l10_source_d",
@@ -16864,7 +17020,9 @@ export default {
           "image": "/images/edexcel_medicine/kt12/med_l2_5_s4_general_bill_mortality_1665_wellcome.jpg",
           "src": "/images/edexcel_medicine/kt12/med_l2_5_s4_general_bill_mortality_1665_wellcome.jpg",
           "source": "/images/bill_of_mortality_1665.jpg",
-          "image_alt": "Original printed broadsheet A generall Bill for this present year, ending the 19 of December 1665 compiled by the Company of Parish Clerks of London recording 97,306 total burials whereof 68,596 died of the Plague"
+          "image_alt": "Original printed broadsheet A generall Bill for this present year, ending the 19 of December 1665 compiled by the Company of Parish Clerks of London recording 97,306 total burials whereof 68,596 died of the Plague",
+          "studio_audio": "/audio/sources/edexcel_medicine/lesson_2_5_sE.mp3",
+          "studio_voice_label": "Samuel Pepys’s Diary (31 Aug 166…"
         }
       ],
       "lesson_reflection": {
@@ -17557,7 +17715,9 @@ export default {
       },
       "banner_image": "/images/edexcel_medicine/kt12/med_l2_5_banner_plague_street_1665_wellcome_v0010608.jpg",
       "enquiry": "Why did the Great Plague of 1665 reveal the severe limitations of Renaissance medical progress?",
-      "banner_caption": "Eighteenth-century copperplate engraving titled 'The Great Plague in London, 1665', showing stricken victims in the street as a dead-cart carries bodies away during London’s last major bubonic plague epidemic."
+      "banner_caption": "Eighteenth-century copperplate engraving titled 'The Great Plague in London, 1665', showing stricken victims in the street as a dead-cart carries bodies away during London’s last major bubonic plague epidemic.",
+      "prologue_audio": "/audio/lessons/edexcel_medicine/lesson_2_5_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · Historian"
     },
     {
       "id": "lesson_3_1",
@@ -17887,7 +18047,9 @@ export default {
               "question": "Even after stronger microscopes revealed bacteria in infected wounds by the 1850s, why did doctors (Source A) still cling to Spontaneous Generation and Miasma?",
               "model_answer": "Seeing bacteria on rotting flesh did not prove *which came first*: doctors assumed chemical putrefaction and foul miasma air caused tissues to break down and \"spontaneously generate\" microbes as a harmless by-product, much as people once thought rotting meat bred maggots.",
               "text": "Where animal or vegetable matter falls into putrefaction under warm, stagnant miasmatic air, minute living corpuscles and vibrios arise spontaneously out of the decaying fluid itself. These microscopic organisms are therefore the consequence and accompaniment of corruption, rather than the primary agent of epidemic disease.",
-              "content": "Where animal or vegetable matter falls into putrefaction under warm, stagnant miasmatic air, minute living corpuscles and vibrios arise spontaneously out of the decaying fluid itself. These microscopic organisms are therefore the consequence and accompaniment of corruption, rather than the primary agent of epidemic disease."
+              "content": "Where animal or vegetable matter falls into putrefaction under warm, stagnant miasmatic air, minute living corpuscles and vibrios arise spontaneously out of the decaying fluid itself. These microscopic organisms are therefore the consequence and accompaniment of corruption, rather than the primary agent of epidemic disease.",
+              "studio_audio": "/audio/sources/edexcel_medicine/lesson_3_1_sA.mp3",
+              "studio_voice_label": "Early Victorian Medical Textbook…"
             }
           ],
           "content": "<p><span class=\"para-ref\">[1.1]</span> In the first half of the nineteenth century, British and European understanding of disease causation remained fundamentally flawed. The dominant scientific orthodoxy was the **spontaneous generation theory**, which taught that microscopic organisms and maggots were created spontaneously inside decaying organic matter, mistakenly viewing microbes as the harmless secondary consequence of rotting tissue rather than its active biological cause.</p><p><span class=\"para-ref\">[1.2]</span> Alongside this, **foul miasma stenches** were blamed for devastating urban epidemics like cholera and typhus, as medical authorities insisted foul vapours rising from cesspools poisoned human blood. These **pre-bacteriology limits** prevented physicians from recognising human-to-human contagion, leaving doctors completely powerless to treat infections while municipal councils focused exclusively on removing atmospheric smells rather than targeting microscopic bacterial pathogens.</p>",
@@ -18018,7 +18180,9 @@ export default {
               },
               "text": "Never will the doctrine of spontaneous generation recover from the mortal blow struck by this simple experiment. No, there is no circumstance known in which it can be affirmed that microscopic beings came into the world without germs, without parents similar to themselves. Those who affirm it have been the sport of illusions, of ill-conducted experiments, tainted with errors that they did not know how to perceive, or did not know how to avoid. The air contains germs which produce these living microscopic organisms; when you exclude the air's germs, life does not appear.",
               "source_context": "Pasteur delivered this triumphant public address before France's scientific elite, brandishing his swan-neck flasks to refute Felix Pouchet's belief that life arose spontaneously from dead matter.",
-              "question_type": "Turning Point & Limits"
+              "question_type": "Turning Point & Limits",
+              "studio_audio": "/audio/sources/edexcel_medicine/lesson_3_1_sB.mp3",
+              "studio_voice_label": "Louis Pasteur"
             }
           ],
           "content": "<p><span class=\"para-ref\">[2.1]</span> The breakthrough in biological causation occurred in France in **1861** through French chemist **Louis Pasteur**. Commissioned by industrial alcohol distillers in Lille to investigate why vats of beetroot alcohol turned sour, Pasteur used compound microscopes to prove that souring was caused by living yeast microbes contaminating the liquid from the surrounding room air. He heated liquids to kill bacteria in a process known as pasteurisation.</p><p><span class=\"para-ref\">[2.2]</span> To silence conservative critics who defended spontaneous generation, Pasteur devised his celebrated **swan-neck flask test**. Boiling broth inside S-shaped glass flasks, he demonstrated that broth remained sterile because dust settled in the curved necks. Snapping the neck caused rapid bacterial decay, proving that **airborne microbes** caused fermentation, publishing his foundational Germ Theory in 1861.</p>",
@@ -18149,7 +18313,9 @@ export default {
               "question_type": "Turning Point & Limits",
               "caption": "High-magnification photomicrograph of Mycobacterium tuberculosis bacilli stained bright crimson using acid-fast aniline dye against a blue counterstain—demonstrating how chemical staining made specific invisible pathogens visible under the microscope.",
               "provenance": "Robert Koch’s address \"Die Aetiologie der Tuberkulose\" delivered to the Physiological Society of Berlin, 24 March 1882, paired with stained Mycobacterium tuberculosis microscopy.",
-              "image_url": "/images/koch_bacteria.jpg"
+              "image_url": "/images/koch_bacteria.jpg",
+              "studio_audio": "/audio/sources/edexcel_medicine/lesson_3_1_sE.mp3",
+              "studio_voice_label": "Robert Koch"
             }
           ],
           "content": "<p><span class=\"para-ref\">[5.1]</span> Armed with advanced staining and culture methods, Koch’s Berlin research team made historic pathological discoveries. In 1882, Koch isolated the deadly **tuberculosis bacillus** (*Mycobacterium tuberculosis*), proving that the widespread lung disease killing one in seven Europeans was an infectious bacterial illness rather than a hereditary weakness passed down through family bloodlines. This discovery shocked the European medical world.</p><p><span class=\"para-ref\">[5.2]</span> In 1883, travelling to Egypt and India, Koch isolated the comma-shaped **cholera bacillus** (*Vibrio cholerae*), confirming John Snow’s theory that contaminated drinking water transmitted the disease. Koch documented his findings using **high-resolution microphotography**, photographing microbes through microscope lenses to provide indisputable visual proof that destroyed miasma theory forever and established the modern bacterial basis of infectious disease.</p>",
@@ -18360,7 +18526,9 @@ export default {
           "question": "Even after stronger microscopes revealed bacteria in infected wounds by the 1850s, why did doctors (Source A) still cling to Spontaneous Generation and Miasma?",
           "model_answer": "Seeing bacteria on rotting flesh did not prove *which came first*: doctors assumed chemical putrefaction and foul miasma air caused tissues to break down and \"spontaneously generate\" microbes as a harmless by-product, much as people once thought rotting meat bred maggots.",
           "text": "Where animal or vegetable matter falls into putrefaction under warm, stagnant miasmatic air, minute living corpuscles and vibrios arise spontaneously out of the decaying fluid itself. These microscopic organisms are therefore the consequence and accompaniment of corruption, rather than the primary agent of epidemic disease.",
-          "content": "Where animal or vegetable matter falls into putrefaction under warm, stagnant miasmatic air, minute living corpuscles and vibrios arise spontaneously out of the decaying fluid itself. These microscopic organisms are therefore the consequence and accompaniment of corruption, rather than the primary agent of epidemic disease."
+          "content": "Where animal or vegetable matter falls into putrefaction under warm, stagnant miasmatic air, minute living corpuscles and vibrios arise spontaneously out of the decaying fluid itself. These microscopic organisms are therefore the consequence and accompaniment of corruption, rather than the primary agent of epidemic disease.",
+          "studio_audio": "/audio/sources/edexcel_medicine/lesson_3_1_sA.mp3",
+          "studio_voice_label": "Early Victorian Medical Textbook…"
         },
         {
           "id": "source_b_pasteur_sorbonne_1864",
@@ -18377,7 +18545,9 @@ export default {
           },
           "text": "Never will the doctrine of spontaneous generation recover from the mortal blow struck by this simple experiment. No, there is no circumstance known in which it can be affirmed that microscopic beings came into the world without germs, without parents similar to themselves. Those who affirm it have been the sport of illusions, of ill-conducted experiments, tainted with errors that they did not know how to perceive, or did not know how to avoid. The air contains germs which produce these living microscopic organisms; when you exclude the air's germs, life does not appear.",
           "source_context": "Pasteur delivered this triumphant public address before France's scientific elite, brandishing his swan-neck flasks to refute Felix Pouchet's belief that life arose spontaneously from dead matter.",
-          "question_type": "Turning Point & Limits"
+          "question_type": "Turning Point & Limits",
+          "studio_audio": "/audio/sources/edexcel_medicine/lesson_3_1_sB.mp3",
+          "studio_voice_label": "Louis Pasteur"
         },
         {
           "id": "med_l11_source_tyndall_vs_bastian",
@@ -18460,7 +18630,9 @@ export default {
           "caption": "High-magnification photomicrograph of Mycobacterium tuberculosis bacilli stained bright crimson using acid-fast aniline dye against a blue counterstain—demonstrating how chemical staining made specific invisible pathogens visible under the microscope.",
           "provenance": "Robert Koch’s address \"Die Aetiologie der Tuberkulose\" delivered to the Physiological Society of Berlin, 24 March 1882, paired with stained Mycobacterium tuberculosis microscopy.",
           "image_url": "/images/koch_bacteria.jpg",
-          "image_alt": "High-magnification photomicrograph showing rod-shaped Mycobacterium tuberculosis bacilli stained bright crimson-red with aniline dye against a blue cellular counterstain"
+          "image_alt": "High-magnification photomicrograph showing rod-shaped Mycobacterium tuberculosis bacilli stained bright crimson-red with aniline dye against a blue cellular counterstain",
+          "studio_audio": "/audio/sources/edexcel_medicine/lesson_3_1_sE.mp3",
+          "studio_voice_label": "Robert Koch"
         }
       ],
       "video": [
@@ -19322,7 +19494,9 @@ export default {
       },
       "banner_image": "/images/edexcel_medicine/kt3/med_kt3_l1_banner_pasteur_lab.jpg",
       "enquiry": "Why did it take over two decades for British doctors to accept Louis Pasteur’s Germ Theory?",
-      "banner_caption": "Nineteenth-century engraving of Louis Pasteur peering through a microscope beside a curved swan-neck glass flask in his Paris laboratory, where his 1861 experiments disproved spontaneous generation."
+      "banner_caption": "Nineteenth-century engraving of Louis Pasteur peering through a microscope beside a curved swan-neck glass flask in his Paris laboratory, where his 1861 experiments disproved spontaneous generation.",
+      "prologue_audio": "/audio/lessons/edexcel_medicine/lesson_3_1_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · Historian"
     },
     {
       "id": "lesson_3_2",
@@ -19652,7 +19826,9 @@ export default {
               "question": "Why was 18th-century smallpox inoculation (variolation, Source A) both a step forward and a dangerous method compared to Jenner’s later vaccine?",
               "model_answer": "Variolation introduced the vital principle of deliberate active immunity, protecting many wealthy families. However, because it used *live human smallpox matter*, roughly 1–2% of inoculated patients died, poorer families could not afford quarantine houses, and treated patients remained contagious enough to trigger fresh outbreaks.",
               "text": "The small-pox, so fatal and so general amongst us in England, is here rendered entirely harmless by the invention of ingrafting. Old women come with a nutshell full of the matter of the best sort of small-pox, open a vein with a needle, and put in as much venom as can lie upon the head of it. After eight days of fever they recover without a scar; and I am patriot enough to take pains to bring this useful invention into fashion in England.",
-              "content": "The small-pox, so fatal and so general amongst us in England, is here rendered entirely harmless by the invention of ingrafting. Old women come with a nutshell full of the matter of the best sort of small-pox, open a vein with a needle, and put in as much venom as can lie upon the head of it. After eight days of fever they recover without a scar; and I am patriot enough to take pains to bring this useful invention into fashion in England."
+              "content": "The small-pox, so fatal and so general amongst us in England, is here rendered entirely harmless by the invention of ingrafting. Old women come with a nutshell full of the matter of the best sort of small-pox, open a vein with a needle, and put in as much venom as can lie upon the head of it. After eight days of fever they recover without a scar; and I am patriot enough to take pains to bring this useful invention into fashion in England.",
+              "studio_audio": "/audio/sources/edexcel_medicine/lesson_3_2_sA.mp3",
+              "studio_voice_label": "Lady Mary Wortley Montagu"
             }
           ],
           "content": "<p><span class=\"para-ref\">[1.1]</span> Throughout the eighteenth century, smallpox was the most terrifying epidemic killer in Britain, killing roughly forty thousand people annually and blinding or disfiguring hundreds of thousands of survivors. The only known preventative method was **smallpox variolation inoculation**, introduced to England from the Ottoman Empire in 1721 by aristocratic traveller Lady Mary Wortley Montagu. It involved transferring live smallpox matter into scratches on healthy patients.</p><p><span class=\"para-ref\">[1.2]</span> By the 1760s, commercial doctors popularised the lucrative Suttonian method, charging steep **Suttonian method fees** that only wealthy merchants and aristocrats could afford. However, the severe **risk of fatal infection** made inoculation dangerous: patients suffered full-blown smallpox, and inoculated individuals frequently triggered fresh epidemic outbreaks across unvaccinated communities, killing two to three percent of those treated.</p>",
@@ -19693,7 +19869,9 @@ export default {
               "image": "/images/sarah_nelmes_cowpox_hand.jpg",
               "src": "/images/sarah_nelmes_cowpox_hand.jpg",
               "source": "/images/sarah_nelmes_cowpox_hand.jpg",
-              "question_type": "Turning Point & Limits"
+              "question_type": "Turning Point & Limits",
+              "studio_audio": "/audio/sources/edexcel_medicine/lesson_3_2_sB.mp3",
+              "studio_voice_label": "Dr Edward Jenner’s Inquiry (1798)"
             }
           ],
           "content": "<p><span class=\"para-ref\">[2.1]</span> In rural Gloucestershire, observant country physician **Edward Jenner** investigated in **1796** a widespread piece of local dairy folklore: milkmaids who contracted mild cowpox from cattle never caught lethal smallpox. In May 1796, Jenner tested this observation empirically. Extracting fresh **cowpox blister pus** from the pustules on dairymaid Sarah Nelmes, Jenner inoculated his gardener's healthy eight-year-old son, **James Phipps**, in the world’s first **cowpox vaccination**.</p><p><span class=\"para-ref\">[2.2]</span> Six weeks later, Jenner boldly exposed young Phipps to virulent live smallpox scab material multiple times. True to Jenner's hypothesis, the boy developed no smallpox symptoms whatsoever, proving conclusively that mild cowpox provided complete clinical immunity against deadly smallpox. Jenner coined the term \"vaccination\" (from the Latin *vacca*, cow), publishing his historic clinical case studies in 1798.</p>",
@@ -19762,7 +19940,9 @@ export default {
               },
               "text": "Mr. Bankes reported from the Committee to whom the Petition of Edward Jenner, Doctor of Physic, was referred... That Dr. Jenner has discovered a disease called the Cow-Pox, which is introduced by inoculation, and that this disease is a complete preservative against the Small-Pox; that it is attended with no danger, produces no disfigurement, and is not infectious by effluvia... That the petitioner has sacrificed his lucrative private practice to diffuse this discovery throughout the world without personal profit. Resolved: That a sum not exceeding £10,000 be granted to His Majesty, to be paid to Dr. Edward Jenner, as a remuneration for his grand discovery.",
               "source_context": "This £10,000 national grant (followed by a further £20,000 in 1807) represented unprecedented state intervention in medical science during a period of fierce laissez-faire governance, proving the immense strategic value Parliament placed on eradicating smallpox.",
-              "question_type": "Change & Continuity"
+              "question_type": "Change & Continuity",
+              "studio_audio": "/audio/sources/edexcel_medicine/lesson_3_2_sD.mp3",
+              "studio_voice_label": "Debate in the House of Commons o…"
             }
           ],
           "content": "<p><span class=\"para-ref\">[4.1]</span> Despite vocal conservative opposition, vaccination’s overwhelming clinical efficacy gradually convinced the British state. In 1802 and 1807, Parliament voted substantial **parliamentary grants (£30,000)** to Jenner to establish the Royal Jennerian Society, providing free vaccinations to Londoners. Across Europe, Napoleon Bonaparte vaccinated the French army and praised Jenner as one of humanity’s greatest benefactors. This royal and parliamentary support elevated Jenner's status.</p><p><span class=\"para-ref\">[4.2]</span> The decisive shift from private charity to state public health came with the landmark **1840 Vaccination Act**, which made smallpox vaccination available completely free of charge to all infants, funded by local poor rate taxes. Simultaneously, dangerous variolation **inoculation was legally banned**, making it a criminal offence to deliberately spread live smallpox, establishing the revolutionary principle that the state held responsibility for public epidemic prevention.</p>",
@@ -20125,7 +20305,9 @@ export default {
           "question": "Why was 18th-century smallpox inoculation (variolation, Source A) both a step forward and a dangerous method compared to Jenner’s later vaccine?",
           "model_answer": "Variolation introduced the vital principle of deliberate active immunity, protecting many wealthy families. However, because it used *live human smallpox matter*, roughly 1–2% of inoculated patients died, poorer families could not afford quarantine houses, and treated patients remained contagious enough to trigger fresh outbreaks.",
           "text": "The small-pox, so fatal and so general amongst us in England, is here rendered entirely harmless by the invention of ingrafting. Old women come with a nutshell full of the matter of the best sort of small-pox, open a vein with a needle, and put in as much venom as can lie upon the head of it. After eight days of fever they recover without a scar; and I am patriot enough to take pains to bring this useful invention into fashion in England.",
-          "content": "The small-pox, so fatal and so general amongst us in England, is here rendered entirely harmless by the invention of ingrafting. Old women come with a nutshell full of the matter of the best sort of small-pox, open a vein with a needle, and put in as much venom as can lie upon the head of it. After eight days of fever they recover without a scar; and I am patriot enough to take pains to bring this useful invention into fashion in England."
+          "content": "The small-pox, so fatal and so general amongst us in England, is here rendered entirely harmless by the invention of ingrafting. Old women come with a nutshell full of the matter of the best sort of small-pox, open a vein with a needle, and put in as much venom as can lie upon the head of it. After eight days of fever they recover without a scar; and I am patriot enough to take pains to bring this useful invention into fashion in England.",
+          "studio_audio": "/audio/sources/edexcel_medicine/lesson_3_2_sA.mp3",
+          "studio_voice_label": "Lady Mary Wortley Montagu"
         },
         {
           "id": "source_b_jenner_inquiry_1798",
@@ -20146,7 +20328,9 @@ export default {
           "src": "/images/sarah_nelmes_cowpox_hand.jpg",
           "source": "/images/sarah_nelmes_cowpox_hand.jpg",
           "question_type": "Turning Point & Limits",
-          "image_alt": "Open first-edition 1798 copy of Dr Edward Jenner’s Variolae Vaccinae displaying page 32 (CASE XVII on eight-year-old James Phipps) facing the hand-coloured copperplate engraving of cowpox pustules on dairymaid Sarah Nelmes’s hand and wrist"
+          "image_alt": "Open first-edition 1798 copy of Dr Edward Jenner’s Variolae Vaccinae displaying page 32 (CASE XVII on eight-year-old James Phipps) facing the hand-coloured copperplate engraving of cowpox pustules on dairymaid Sarah Nelmes’s hand and wrist",
+          "studio_audio": "/audio/sources/edexcel_medicine/lesson_3_2_sB.mp3",
+          "studio_voice_label": "Dr Edward Jenner’s Inquiry (1798)"
         },
         {
           "id": "source_a_gillray_cow_pock",
@@ -20184,7 +20368,9 @@ export default {
           },
           "text": "Mr. Bankes reported from the Committee to whom the Petition of Edward Jenner, Doctor of Physic, was referred... That Dr. Jenner has discovered a disease called the Cow-Pox, which is introduced by inoculation, and that this disease is a complete preservative against the Small-Pox; that it is attended with no danger, produces no disfigurement, and is not infectious by effluvia... That the petitioner has sacrificed his lucrative private practice to diffuse this discovery throughout the world without personal profit. Resolved: That a sum not exceeding £10,000 be granted to His Majesty, to be paid to Dr. Edward Jenner, as a remuneration for his grand discovery.",
           "source_context": "This £10,000 national grant (followed by a further £20,000 in 1807) represented unprecedented state intervention in medical science during a period of fierce laissez-faire governance, proving the immense strategic value Parliament placed on eradicating smallpox.",
-          "question_type": "Change & Continuity"
+          "question_type": "Change & Continuity",
+          "studio_audio": "/audio/sources/edexcel_medicine/lesson_3_2_sD.mp3",
+          "studio_voice_label": "Debate in the House of Commons o…"
         },
         {
           "id": "med_l12_source_compulsory_vax_clash",
@@ -21072,7 +21258,9 @@ export default {
       },
       "banner_image": "/images/edexcel_medicine/kt3/med_kt3_l2_banner_jenner_board.jpg",
       "enquiry": "Why did Edward Jenner’s smallpox vaccine face ferocious opposition despite proving scientifically successful?",
-      "banner_caption": "Dr Edward Jenner Vaccinating Eight-Year-Old James Phipps, 14 May 1796 (Oil painting by Ernest Board, Wellcome Collection): Using cowpox matter from dairymaid Sarah Nelmes’s hand, Jenner proved empirically that cowpox conferred immunity against lethal smallpox."
+      "banner_caption": "Dr Edward Jenner Vaccinating Eight-Year-Old James Phipps, 14 May 1796 (Oil painting by Ernest Board, Wellcome Collection): Using cowpox matter from dairymaid Sarah Nelmes’s hand, Jenner proved empirically that cowpox conferred immunity against lethal smallpox.",
+      "prologue_audio": "/audio/lessons/edexcel_medicine/lesson_3_2_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · Historian"
     },
     {
       "id": "lesson_3_3",
@@ -21402,7 +21590,9 @@ export default {
               "question": "Why had British hospitals by 1850 (Source A) become dangerous centres of infection that anyone who could afford home care avoided?",
               "model_answer": "Rapid urban growth crammed dirty, unventilated wards with surgical and fever patients side by side, attended by underpaid, untrained nurses who lacked hygiene training, while doctors wore unwashed coats from the mortuary straight to the ward.",
               "text": "In too many of our metropolitan wards the air is heavy and fetid day and night; bandages are washed in the same basin from bed to bed, floors are rarely scrubbed clean, and the women hired as night-nurses are drawn from the lowest domestic service—untrained, exhausted, and frequently given to gin—so that fever and erysipelas sweep from bed to bed.",
-              "content": "In too many of our metropolitan wards the air is heavy and fetid day and night; bandages are washed in the same basin from bed to bed, floors are rarely scrubbed clean, and the women hired as night-nurses are drawn from the lowest domestic service—untrained, exhausted, and frequently given to gin—so that fever and erysipelas sweep from bed to bed."
+              "content": "In too many of our metropolitan wards the air is heavy and fetid day and night; bandages are washed in the same basin from bed to bed, floors are rarely scrubbed clean, and the women hired as night-nurses are drawn from the lowest domestic service—untrained, exhausted, and frequently given to gin—so that fever and erysipelas sweep from bed to bed.",
+              "studio_audio": "/audio/sources/edexcel_medicine/lesson_3_3_sA.mp3",
+              "studio_voice_label": "Hospital Physician’s Testimony o…"
             }
           ],
           "content": "<p><span class=\"para-ref\">[1.1]</span> In the early nineteenth century, British voluntary hospitals were lethal centres of infection rather than healing. Wards were overcrowded, poorly ventilated, and filthy, creating **pauper hospital squalor** where patients shared unwashed bedding soaked in wound discharges. Doctors moved between autopsies and operations wearing blood-encrusted coats without washing hands, spreading deadly erysipelas and pyaemia across crowded **cross-infection septic wards**.</p><p><span class=\"para-ref\">[1.2]</span> Nursing was held in low social esteem, characterised by the notorious **untrained nurse reputation** immortalised in Charles Dickens’ satirical character \"Betsy Prig\". Hospital nurses were recruited from illiterate, destitute working-class women with zero medical training, widely associated with drunkenness, petty theft, and callous neglect of dying patients, driving mortality rates among hospitalised patients far above those treated in private homes.</p>",
@@ -21440,7 +21630,9 @@ export default {
               },
               "text": "There are no vessels for water, no soap, no towels, no bandages, no hospital clothes; the men lie in the filth of their uniforms, stiff with blood and covered with vermin. We have four miles of beds packed within eighteen inches of each other, over an uncleaned sewer that vents sewer gas directly through the floorboards into the wards. The purveyor provides neither brooms nor mops. I have had to hire 200 Turkish workmen with my own funds to scrub the floors and clear the blocked privies. Men are arriving by hundreds with frostbite and dysentery, only to be poisoned by the very air of this pesthouse.",
               "source_context": "Nightingale arrived at Scutari with thirty-eight nurses following shocking dispatches in The Times by war correspondent William Howard Russell. Military medical officers initially resented her intrusion and tried to block her work.",
-              "question_type": "Turning Point & Limits"
+              "question_type": "Turning Point & Limits",
+              "studio_audio": "/audio/sources/edexcel_medicine/lesson_3_3_sB.mp3",
+              "studio_voice_label": "Florence Nightingale"
             }
           ],
           "content": "<p><span class=\"para-ref\">[2.1]</span> In 1854, Britain entered the **Crimean War** against Russia. Newspaper reports by William Howard Russell in *The Times* revealed scandalous medical negligence in the British army, prompting Minister for War Sidney Herbert to invite Florence Nightingale to lead thirty-eight volunteer nurses to the British military hospital at Scutari near Constantinople. Nightingale arrived in November to find wounded soldiers lying in raw filth.</p><p><span class=\"para-ref\">[2.2]</span> Nightingale implemented immediate **Scutari hospital sanitation**, organising soldiers' wives to wash bedsheets, scrub wards with boiling water, clear blocked sewers, and serve nutritious food. When the government Sanitary Commission flushed out dead animals from water pipes, the hospital **mortality rate plummeted from 42% to 2%** within six months. Nightingale proved conclusively that environmental hygiene and basic sanitation saved vastly more lives than contemporary medicine.</p>",
@@ -21509,7 +21701,9 @@ export default {
               },
               "text": "The very first requirement in a hospital is that it should do the sick no harm. Yet in our existing crowded, poorly-built infirmaries, diseases are generated which kill more patients than their original ailments. The only true architectural design is the Pavilion Plan. Wards must be separate detached blocks, connected only by an open corridor, with tall opposing windows along both walls to allow a continuous draught of fresh external air. Ceilings must be high, floors made of polished impermeable wood, walls painted with non-porous plaster that can be washed down with carbolic, and beds placed at least eight feet apart to prevent the accumulation of foul hospital miasma.",
               "source_context": "Although Nightingale based her design on miasma theory (believing bad air carried disease), her insistence on fresh airflow, strict cleanliness, washable tiled walls, and wide bed spacing achieved the exact conditions needed to stop bacterial cross-contamination.",
-              "question_type": "Change & Continuity"
+              "question_type": "Change & Continuity",
+              "studio_audio": "/audio/sources/edexcel_medicine/lesson_3_3_sD.mp3",
+              "studio_voice_label": "Florence Nightingale (1859)"
             }
           ],
           "content": "<p><span class=\"para-ref\">[4.1]</span> In 1859, Nightingale published *Notes on Hospitals*, detailing revolutionary architectural standards that transformed hospital construction across the Victorian era. She insisted that hospitals abandon large, central buildings in favour of detached **separate pavilion wards**. Connected by covered walkways, these long, narrow, single-story wings isolated infectious patients from surgical wards, preventing airborne contagion from spreading throughout the institution. This layout minimised cross-infection between different medical departments.</p><p><span class=\"para-ref\">[4.2]</span> Each ward featured **cross-ventilation high windows** placed opposite each other, allowing fresh air to circulate continually over beds and flush out noxious miasmas. Floors were constructed of polished hardwood and walls lined with **tiled washable surfaces** that could be easily scrubbed with carbolic disinfectant, creating bright, sanitary environments that became the global blueprint for modern hospital architecture.</p>",
@@ -21546,7 +21740,9 @@ export default {
               "image": "/images/mary_seacole.jpg",
               "src": "/images/mary_seacole.jpg",
               "source": "/images/mary_seacole.jpg",
-              "question_type": "Change & Continuity"
+              "question_type": "Change & Continuity",
+              "studio_audio": "/audio/sources/edexcel_medicine/lesson_3_3_sE.mp3",
+              "studio_voice_label": "Mary Seacole’s Wonderful Adventu…"
             }
           ],
           "content": "<p><span class=\"para-ref\">[5.1]</span> In 1860, Nightingale founded the **St Thomas' Training School** for nurses in London, financed by £44,000 raised through the public **Nightingale Fund (£44,000)**. The school transformed nursing into an educated, respectable profession for middle-class women, requiring a year of rigorous practical and scientific instruction under the command of **professional disciplined matrons** who enforced strict hygiene, morality, and compassionate patient care.</p><p><span class=\"para-ref\">[5.2]</span> Nightingale’s graduates established modern nursing departments across Britain and the British Empire. Meanwhile, Jamaican doctress Mary Seacole demonstrated alternative nursing excellence in the Crimea, establishing the \"British Hotel\" near Balaclava using herbal remedies to treat cholera and dysentery. Together, their wartime heroism dismantled the drunken \"Betsy Prig\" stereotype, turning nursing into a respected, indispensable pillar of modern healthcare.</p>",
@@ -21832,7 +22028,9 @@ export default {
           "question": "Why had British hospitals by 1850 (Source A) become dangerous centres of infection that anyone who could afford home care avoided?",
           "model_answer": "Rapid urban growth crammed dirty, unventilated wards with surgical and fever patients side by side, attended by underpaid, untrained nurses who lacked hygiene training, while doctors wore unwashed coats from the mortuary straight to the ward.",
           "text": "In too many of our metropolitan wards the air is heavy and fetid day and night; bandages are washed in the same basin from bed to bed, floors are rarely scrubbed clean, and the women hired as night-nurses are drawn from the lowest domestic service—untrained, exhausted, and frequently given to gin—so that fever and erysipelas sweep from bed to bed.",
-          "content": "In too many of our metropolitan wards the air is heavy and fetid day and night; bandages are washed in the same basin from bed to bed, floors are rarely scrubbed clean, and the women hired as night-nurses are drawn from the lowest domestic service—untrained, exhausted, and frequently given to gin—so that fever and erysipelas sweep from bed to bed."
+          "content": "In too many of our metropolitan wards the air is heavy and fetid day and night; bandages are washed in the same basin from bed to bed, floors are rarely scrubbed clean, and the women hired as night-nurses are drawn from the lowest domestic service—untrained, exhausted, and frequently given to gin—so that fever and erysipelas sweep from bed to bed.",
+          "studio_audio": "/audio/sources/edexcel_medicine/lesson_3_3_sA.mp3",
+          "studio_voice_label": "Hospital Physician’s Testimony o…"
         },
         {
           "id": "source_b_nightingale_scutari_letter_1854",
@@ -21849,7 +22047,9 @@ export default {
           },
           "text": "There are no vessels for water, no soap, no towels, no bandages, no hospital clothes; the men lie in the filth of their uniforms, stiff with blood and covered with vermin. We have four miles of beds packed within eighteen inches of each other, over an uncleaned sewer that vents sewer gas directly through the floorboards into the wards. The purveyor provides neither brooms nor mops. I have had to hire 200 Turkish workmen with my own funds to scrub the floors and clear the blocked privies. Men are arriving by hundreds with frostbite and dysentery, only to be poisoned by the very air of this pesthouse.",
           "source_context": "Nightingale arrived at Scutari with thirty-eight nurses following shocking dispatches in The Times by war correspondent William Howard Russell. Military medical officers initially resented her intrusion and tried to block her work.",
-          "question_type": "Turning Point & Limits"
+          "question_type": "Turning Point & Limits",
+          "studio_audio": "/audio/sources/edexcel_medicine/lesson_3_3_sB.mp3",
+          "studio_voice_label": "Florence Nightingale"
         },
         {
           "id": "source_a_nightingale_coxcomb",
@@ -21887,7 +22087,9 @@ export default {
           },
           "text": "The very first requirement in a hospital is that it should do the sick no harm. Yet in our existing crowded, poorly-built infirmaries, diseases are generated which kill more patients than their original ailments. The only true architectural design is the Pavilion Plan. Wards must be separate detached blocks, connected only by an open corridor, with tall opposing windows along both walls to allow a continuous draught of fresh external air. Ceilings must be high, floors made of polished impermeable wood, walls painted with non-porous plaster that can be washed down with carbolic, and beds placed at least eight feet apart to prevent the accumulation of foul hospital miasma.",
           "source_context": "Although Nightingale based her design on miasma theory (believing bad air carried disease), her insistence on fresh airflow, strict cleanliness, washable tiled walls, and wide bed spacing achieved the exact conditions needed to stop bacterial cross-contamination.",
-          "question_type": "Change & Continuity"
+          "question_type": "Change & Continuity",
+          "studio_audio": "/audio/sources/edexcel_medicine/lesson_3_3_sD.mp3",
+          "studio_voice_label": "Florence Nightingale (1859)"
         },
         {
           "id": "source_d_seacole_autobiography_1857",
@@ -21908,7 +22110,9 @@ export default {
           "src": "/images/upgraded/gcse-med-eee/med_l3_3_mary_seacole_challen_1869.jpg",
           "source": "/images/mary_seacole.jpg",
           "question_type": "Change & Continuity",
-          "image_alt": "1869 oil portrait on panel of Jamaican-Scottish healer Mary Seacole by Albert Charles Challen (National Portrait Gallery NPG 6805), wearing a crimson scarf and three Crimean campaign medals pinned to her dark bodice"
+          "image_alt": "1869 oil portrait on panel of Jamaican-Scottish healer Mary Seacole by Albert Charles Challen (National Portrait Gallery NPG 6805), wearing a crimson scarf and three Crimean campaign medals pinned to her dark bodice",
+          "studio_audio": "/audio/sources/edexcel_medicine/lesson_3_3_sE.mp3",
+          "studio_voice_label": "Mary Seacole’s Wonderful Adventu…"
         }
       ],
       "video": [
@@ -22771,7 +22975,9 @@ export default {
       },
       "banner_image": "/images/edexcel_medicine/kt3/med_kt3_l3_banner_nightingale_scutari_arrival.jpg",
       "enquiry": "How did nursing pioneers and sanitary reform transform 19th-century hospital care?",
-      "banner_caption": "Samuel Bellin’s 1857 engraving after Jerry Barrett’s The Mission of Mercy, depicting Florence Nightingale receiving wounded Crimean War soldiers at Scutari Barrack Hospital, where her nurses transformed ward hygiene."
+      "banner_caption": "Samuel Bellin’s 1857 engraving after Jerry Barrett’s The Mission of Mercy, depicting Florence Nightingale receiving wounded Crimean War soldiers at Scutari Barrack Hospital, where her nurses transformed ward hygiene.",
+      "prologue_audio": "/audio/lessons/edexcel_medicine/lesson_3_3_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · Historian"
     },
     {
       "id": "lesson_3_4",
@@ -23104,7 +23310,9 @@ export default {
               },
               "text": "Before the introduction of ether and chloroform, the surgical amphitheatre was a chamber of terror. Strong orderlies pinioned the screaming patient to the wooden table with leather straps. The surgeon’s primary virtue was sheer speed: Mr Liston was famous for amputating a leg at the thigh in under twenty-eight seconds, holding the bloody knife between his teeth as his hands sawed through the bone. Patients frequently perished from the sheer agony of surgical shock.",
               "question": "Why did the absence of effective anaesthetics before 1846–47 (Source A) restrict surgeons like Robert Liston to lightning-fast surface amputations?",
-              "content": "Before the introduction of ether and chloroform, the surgical amphitheatre was a chamber of terror. Strong orderlies pinioned the screaming patient to the wooden table with leather straps. The surgeon’s primary virtue was sheer speed: Mr Liston was famous for amputating a leg at the thigh in under twenty-eight seconds, holding the bloody knife between his teeth as his hands sawed through the bone. Patients frequently perished from the sheer agony of surgical shock."
+              "content": "Before the introduction of ether and chloroform, the surgical amphitheatre was a chamber of terror. Strong orderlies pinioned the screaming patient to the wooden table with leather straps. The surgeon’s primary virtue was sheer speed: Mr Liston was famous for amputating a leg at the thigh in under twenty-eight seconds, holding the bloody knife between his teeth as his hands sawed through the bone. Patients frequently perished from the sheer agony of surgical shock.",
+              "studio_audio": "/audio/sources/edexcel_medicine/lesson_3_4_sA.mp3",
+              "studio_voice_label": "Contemporary Medical Account of…"
             }
           ],
           "content": "<p><span class=\"para-ref\">[1.1]</span> Before the mid-nineteenth century, surgery was an ordeal of unimaginable human agony. Because patients were fully conscious, surgeons were judged almost entirely on **rapid surgical speed** to minimise agony, operating in mere seconds. Renowned surgeon Robert Liston could amputate a leg in under thirty seconds, working as burly male orderlies pinned screaming patients down to wooden operating tables. Surgical operations were limited to quick surface cuts and amputations.</p><p><span class=\"para-ref\">[1.2]</span> The overwhelming danger was acute **surgical shock mortality**, where immense pain caused blood pressure collapse and heart failure on the operating table. Early chemical experiments with **ether and nitrous oxide** (laughing gas) had severe limitations: nitrous oxide was too weak for deep incisions, while ether irritated patients’ lungs, caused violent vomiting, and was dangerously flammable near open gas lamps in operating rooms.</p>",
@@ -23203,7 +23411,9 @@ export default {
               },
               "text": "A man laid on an operating table in one of our large metropolitan hospitals is exposed to greater danger of death than a soldier on the battlefield of Waterloo. The very atmosphere of the surgical wards is impregnated with septic poisons generated by decomposing animal matter. Hospital gangrene, pyaemia, and erysipelas stalk the beds. While anaesthesia has abolished pain, it has multiplied operations and thereby multiplied the harvest of death.",
               "question": "Why did Professor Erichsen warn in Source C that a patient on a Victorian London operating table faced greater danger of death than a soldier at Waterloo?",
-              "content": "A man laid on an operating table in one of our large metropolitan hospitals is exposed to greater danger of death than a soldier on the battlefield of Waterloo. The very atmosphere of the surgical wards is impregnated with septic poisons generated by decomposing animal matter. Hospital gangrene, pyaemia, and erysipelas stalk the beds. While anaesthesia has abolished pain, it has multiplied operations and thereby multiplied the harvest of death."
+              "content": "A man laid on an operating table in one of our large metropolitan hospitals is exposed to greater danger of death than a soldier on the battlefield of Waterloo. The very atmosphere of the surgical wards is impregnated with septic poisons generated by decomposing animal matter. Hospital gangrene, pyaemia, and erysipelas stalk the beds. While anaesthesia has abolished pain, it has multiplied operations and thereby multiplied the harvest of death.",
+              "studio_audio": "/audio/sources/edexcel_medicine/lesson_3_4_sC.mp3",
+              "studio_voice_label": "John Eric Erichsen (1874)"
             }
           ],
           "content": "<p><span class=\"para-ref\">[3.1]</span> Paradoxically, the conquest of pain did not immediately lower surgical mortality, leading directly to the disastrous **'Black Period' surgery** era (1846–1865). Because patients were unconscious and relaxed, surgeons carried out far **deeper invasive operations** inside the abdominal cavity, undertaking complex procedures that lasted hours rather than seconds, exposing open internal tissues to contaminated hospital environments. However, surgeons still operated without washing hands or sterilising instruments.</p><p><span class=\"para-ref\">[3.2]</span> Because medical science had not yet accepted Germ Theory, unsterilised surgical instruments, dirty bandages, and unwashed aprons transferred deadly bacteria directly into open wounds. This triggered a catastrophic **hospital gangrene surge**, alongside lethal outbreaks of pyaemia and sepsis that killed up to fifty percent of all surgical patients, making Victorian hospitals far more dangerous than battlefield dressing stations.</p>",
@@ -23248,7 +23458,9 @@ export default {
               "provenance": "Published surgical manual illustration in William Watson Cheyne, Antiseptic Surgery: Its Principles, Practice, History, and Results, London: Smith, Elder & Co., 1882, Fig. 23.",
               "image_url": "/images/lister_carbolic_spray.jpg",
               "src": "/images/lister_carbolic_spray.jpg",
-              "source": "/images/lister_carbolic_spray.jpg"
+              "source": "/images/lister_carbolic_spray.jpg",
+              "studio_audio": "/audio/sources/edexcel_medicine/lesson_3_4_sD.mp3",
+              "studio_voice_label": "Operating Under Joseph Lister’s…"
             }
           ],
           "content": "<p><span class=\"para-ref\">[4.1]</span> In 1865, Scottish surgeon **Joseph Lister** resolved to conquer post-operative wound infection at Glasgow Royal Infirmary. Reading Louis Pasteur’s 1861 Germ Theory, Lister realised that wound sepsis was caused by living airborne microbes rather than chemical oxidation. Noting that carbolic acid treated raw sewage in Carlisle without harming cattle, Lister pioneered its surgical application. He applied carbolic dressing directly onto surgical wounds.</p><p><span class=\"para-ref\">[4.2]</span> In August 1865, Lister operated on an eleven-year-old boy suffering a fractured leg, achieving sensational **compound fracture antisepsis** without gangrene. He subsequently invented the continuous **carbolic acid spray**, misting operating theaters, surgical hands, instruments, and dressings with carbolic acid during operations, which dramatically reduced post-surgical mortality at his Glasgow clinic from forty-six percent to fifteen percent within three years.</p>",
@@ -23279,7 +23491,9 @@ export default {
               },
               "text": "I have abandoned Professor Lister's carbolic spray entirely, and my success in abdominal surgery has increased rather than diminished. Carbolic acid is a corrosive poison; it damages healthy human tissue, chills the patient, and deadens the surgeon's fingers. The true secret of surgical success is not pouring poisons into wounds to kill germs, but absolute, scrupulous cleanliness. We must scrub the skin with boiling water and soap, boil all our instruments in steam autoclaves, use boiled silk ligatures, and wash our hands until not a speck of filth remains. Aseptic surgery—keeping germs out from the beginning—is far superior to Lister's irritating antiseptic spray.",
               "source_context": "Robert Lawson Tait was a brilliant Birmingham gynaecological surgeon who achieved world-record low mortality rates without using Lister's carbolic spray. His pioneering focus on steam-sterilised instruments and spotless cleanliness paved the way for modern aseptic operating theatres with autoclaves, sterile gowns, and rubber gloves.",
-              "question_type": "Change & Continuity"
+              "question_type": "Change & Continuity",
+              "studio_audio": "/audio/sources/edexcel_medicine/lesson_3_4_sE.mp3",
+              "studio_voice_label": "Robert Lawson Tait (1880)"
             }
           ],
           "content": "<p><span class=\"para-ref\">[5.1]</span> While carbolic acid was undeniably effective, it had severe drawbacks: the caustic spray cracked surgeons' hands, irritated patients’ lungs, and made surgical tools slippery. By the late 1880s, surgeons transitioned from antiseptic surgery (killing germs already present in wounds) to the superior philosophy of the **aseptic surgical theatre**, where all microbes were completely excluded from the operating room before surgery commenced.</p><p><span class=\"para-ref\">[5.2]</span> Operating rooms were transformed into sterilised chambers with tiled walls. Surgeons used pressurised **autoclave steam sterilisation** to sterilise instruments at 140°C, while medical staff scrubbed thoroughly and wore **sterile rubber gloves and surgical masks** alongside clean white surgical gowns. By 1900, aseptic technique eliminated chemical sprays entirely, achieving near-zero post-operative infection rates and ushering in modern abdominal, neurological, and cardiovascular surgery.</p>",
@@ -23502,7 +23716,9 @@ export default {
           },
           "text": "Before the introduction of ether and chloroform, the surgical amphitheatre was a chamber of terror. Strong orderlies pinioned the screaming patient to the wooden table with leather straps. The surgeon’s primary virtue was sheer speed: Mr Liston was famous for amputating a leg at the thigh in under twenty-eight seconds, holding the bloody knife between his teeth as his hands sawed through the bone. Patients frequently perished from the sheer agony of surgical shock.",
           "question": "Why did the absence of effective anaesthetics before 1846–47 (Source A) restrict surgeons like Robert Liston to lightning-fast surface amputations?",
-          "content": "Before the introduction of ether and chloroform, the surgical amphitheatre was a chamber of terror. Strong orderlies pinioned the screaming patient to the wooden table with leather straps. The surgeon’s primary virtue was sheer speed: Mr Liston was famous for amputating a leg at the thigh in under twenty-eight seconds, holding the bloody knife between his teeth as his hands sawed through the bone. Patients frequently perished from the sheer agony of surgical shock."
+          "content": "Before the introduction of ether and chloroform, the surgical amphitheatre was a chamber of terror. Strong orderlies pinioned the screaming patient to the wooden table with leather straps. The surgeon’s primary virtue was sheer speed: Mr Liston was famous for amputating a leg at the thigh in under twenty-eight seconds, holding the bloody knife between his teeth as his hands sawed through the bone. Patients frequently perished from the sheer agony of surgical shock.",
+          "studio_audio": "/audio/sources/edexcel_medicine/lesson_3_4_sA.mp3",
+          "studio_voice_label": "Contemporary Medical Account of…"
         },
         {
           "id": "med_l14_source_simpson_vs_hall",
@@ -23567,7 +23783,9 @@ export default {
           },
           "text": "A man laid on an operating table in one of our large metropolitan hospitals is exposed to greater danger of death than a soldier on the battlefield of Waterloo. The very atmosphere of the surgical wards is impregnated with septic poisons generated by decomposing animal matter. Hospital gangrene, pyaemia, and erysipelas stalk the beds. While anaesthesia has abolished pain, it has multiplied operations and thereby multiplied the harvest of death.",
           "question": "Why did Professor Erichsen warn in Source C that a patient on a Victorian London operating table faced greater danger of death than a soldier at Waterloo?",
-          "content": "A man laid on an operating table in one of our large metropolitan hospitals is exposed to greater danger of death than a soldier on the battlefield of Waterloo. The very atmosphere of the surgical wards is impregnated with septic poisons generated by decomposing animal matter. Hospital gangrene, pyaemia, and erysipelas stalk the beds. While anaesthesia has abolished pain, it has multiplied operations and thereby multiplied the harvest of death."
+          "content": "A man laid on an operating table in one of our large metropolitan hospitals is exposed to greater danger of death than a soldier on the battlefield of Waterloo. The very atmosphere of the surgical wards is impregnated with septic poisons generated by decomposing animal matter. Hospital gangrene, pyaemia, and erysipelas stalk the beds. While anaesthesia has abolished pain, it has multiplied operations and thereby multiplied the harvest of death.",
+          "studio_audio": "/audio/sources/edexcel_medicine/lesson_3_4_sC.mp3",
+          "studio_voice_label": "John Eric Erichsen (1874)"
         },
         {
           "id": "source_d_lister_carbolic_spray_1882",
@@ -23591,7 +23809,9 @@ export default {
           "provenance": "Published surgical manual illustration in William Watson Cheyne, Antiseptic Surgery: Its Principles, Practice, History, and Results, London: Smith, Elder & Co., 1882, Fig. 23.",
           "image_url": "/images/lister_carbolic_spray.jpg",
           "src": "/images/edexcel_medicine/kt3/med_kt3_l4_s3_lister_carbolic_spray_1882.jpg",
-          "source": "/images/lister_carbolic_spray.jpg"
+          "source": "/images/lister_carbolic_spray.jpg",
+          "studio_audio": "/audio/sources/edexcel_medicine/lesson_3_4_sD.mp3",
+          "studio_voice_label": "Operating Under Joseph Lister’s…"
         },
         {
           "id": "source_e_tait_aseptic_critique_1880",
@@ -23608,7 +23828,9 @@ export default {
           },
           "text": "I have abandoned Professor Lister's carbolic spray entirely, and my success in abdominal surgery has increased rather than diminished. Carbolic acid is a corrosive poison; it damages healthy human tissue, chills the patient, and deadens the surgeon's fingers. The true secret of surgical success is not pouring poisons into wounds to kill germs, but absolute, scrupulous cleanliness. We must scrub the skin with boiling water and soap, boil all our instruments in steam autoclaves, use boiled silk ligatures, and wash our hands until not a speck of filth remains. Aseptic surgery—keeping germs out from the beginning—is far superior to Lister's irritating antiseptic spray.",
           "source_context": "Robert Lawson Tait was a brilliant Birmingham gynaecological surgeon who achieved world-record low mortality rates without using Lister's carbolic spray. His pioneering focus on steam-sterilised instruments and spotless cleanliness paved the way for modern aseptic operating theatres with autoclaves, sterile gowns, and rubber gloves.",
-          "question_type": "Change & Continuity"
+          "question_type": "Change & Continuity",
+          "studio_audio": "/audio/sources/edexcel_medicine/lesson_3_4_sE.mp3",
+          "studio_voice_label": "Robert Lawson Tait (1880)"
         }
       ],
       "video": [
@@ -24470,7 +24692,9 @@ export default {
       },
       "banner_image": "/images/edexcel_medicine/kt3/med_kt3_l4_banner_liston_ether_1846.jpg",
       "enquiry": "How did 19th-century surgeons overcome the twin killers of pain and infection?",
-      "banner_caption": "Ernest Board’s painting of Robert Liston performing Europe’s first public operation under ether anaesthetic at University College Hospital, London (21 December 1846), watched from the packed surgical gallery."
+      "banner_caption": "Ernest Board’s painting of Robert Liston performing Europe’s first public operation under ether anaesthetic at University College Hospital, London (21 December 1846), watched from the packed surgical gallery.",
+      "prologue_audio": "/audio/lessons/edexcel_medicine/lesson_3_4_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · Historian"
     },
     {
       "id": "lesson_3_5",
@@ -24803,7 +25027,9 @@ export default {
               },
               "text": "The primary and most important condition that affects the health of the labouring classes is the defective drainage, the lack of clean water, and the accumulation of decaying refuse in their dwellings and streets. Such conditions generate atmospheric impurities that depress the vital powers and produce epidemic, endemic, and contagious diseases. The expenditure of public funds on clean water and underground drainage will prevent disease, reduce pauperism, and promote public morality.",
               "question": "Why did Edwin Chadwick’s 1842 Sanitary Report (Source A) produce only a weak, permissive Public Health Act in 1848?",
-              "content": "The primary and most important condition that affects the health of the labouring classes is the defective drainage, the lack of clean water, and the accumulation of decaying refuse in their dwellings and streets. Such conditions generate atmospheric impurities that depress the vital powers and produce epidemic, endemic, and contagious diseases. The expenditure of public funds on clean water and underground drainage will prevent disease, reduce pauperism, and promote public morality."
+              "content": "The primary and most important condition that affects the health of the labouring classes is the defective drainage, the lack of clean water, and the accumulation of decaying refuse in their dwellings and streets. Such conditions generate atmospheric impurities that depress the vital powers and produce epidemic, endemic, and contagious diseases. The expenditure of public funds on clean water and underground drainage will prevent disease, reduce pauperism, and promote public morality.",
+              "studio_audio": "/audio/sources/edexcel_medicine/lesson_3_5_sA.mp3",
+              "studio_voice_label": "Edwin Chadwick (1842)"
             }
           ],
           "content": "<p><span class=\"para-ref\">[1.1]</span> During the Industrial Revolution, British industrial cities grew at unprecedented speed. Rapid urban migration created squalid slums lacking piped water, sewers, or refuse collection. Squalid living conditions fuelled devastating **cholera epidemics between 1831 and 1854**, killing tens of thousands of working-class citizens in rapid waves of watery diarrhoea, severe muscle spasms, and sudden dehydration that turned skin a chilling bluish-grey.</p><p><span class=\"para-ref\">[1.2]</span> Despite social reformer Edwin Chadwick’s 1842 report linking urban squalor to disease, widespread **laissez-faire government policy** resisted state intervention, with politicians objecting to local taxation. The resulting **permissive 1848 Health Act** allowed municipal councils to establish local boards of health only if mortality rates exceeded twenty-three per thousand, meaning most cities did nothing to improve drainage or clean water supplies.</p>",
@@ -25053,7 +25279,9 @@ export default {
               },
               "text": "Section 13: All existing and future sewers within the district of a local authority shall vest in and be under the control of such local authority, which shall cause them to be properly cleansed and emptied... Section 64: All existing public cisterns, pumps, wells, reservoirs, and conduits used for the gratuitous supply of water to inhabitants shall be maintained and kept plentifully supplied with pure and wholesome water by the local authority... Section 189: Every urban authority shall from time to time appoint a legally qualified medical practitioner as Medical Officer of Health, and shall appoint a fit and proper person to be Inspector of Nuisances... Section 116: The Medical Officer of Health may at all reasonable times inspect any animal, carcass, meat, poultry, fish, fruit, or vegetables exposed for sale, and if unfit for the food of man, seize the same.",
               "source_context": "Disraeli's Conservative government passed the 1875 Act under the campaign slogan Sanitas sanitatum, omnia sanitas ('Sanitation of sanitations, all is sanitation'). Unlike the permissive 1848 Act, councils could no longer refuse to spend ratepayer money on public health.",
-              "question_type": "Turning Point & Limits"
+              "question_type": "Turning Point & Limits",
+              "studio_audio": "/audio/sources/edexcel_medicine/lesson_3_5_sE.mp3",
+              "studio_voice_label": "Public Health Act 1875"
             }
           ],
           "content": "<p><span class=\"para-ref\">[5.1]</span> By the 1870s, two decisive developments dismantled *laissez-faire* government in Britain: the 1867 Reform Act enfranchised working-class male town laborers, forcing politicians to address sanitary reform, while Pasteur’s 1861 Germ Theory proved scientifically that dirty water and sewage fostered deadly bacteria that caused infectious epidemic disease. This political pressure forced Benjamin Disraeli’s Conservative government to take decisive national action.</p><p><span class=\"para-ref\">[5.2]</span> In 1875, Disraeli’s administration enacted the landmark **1875 Public Health Act**, which decisively ended government inaction by mandating **compulsory town sewers**, clean piped water, street lighting, and dedicated medical officers of health across every municipality. This statute represented the definitive **end of laissez-faire**, establishing the modern legal principle that national government held an absolute legal duty to safeguard public sanitary health.</p>",
@@ -25360,7 +25588,9 @@ export default {
           },
           "text": "The primary and most important condition that affects the health of the labouring classes is the defective drainage, the lack of clean water, and the accumulation of decaying refuse in their dwellings and streets. Such conditions generate atmospheric impurities that depress the vital powers and produce epidemic, endemic, and contagious diseases. The expenditure of public funds on clean water and underground drainage will prevent disease, reduce pauperism, and promote public morality.",
           "question": "Why did Edwin Chadwick’s 1842 Sanitary Report (Source A) produce only a weak, permissive Public Health Act in 1848?",
-          "content": "The primary and most important condition that affects the health of the labouring classes is the defective drainage, the lack of clean water, and the accumulation of decaying refuse in their dwellings and streets. Such conditions generate atmospheric impurities that depress the vital powers and produce epidemic, endemic, and contagious diseases. The expenditure of public funds on clean water and underground drainage will prevent disease, reduce pauperism, and promote public morality."
+          "content": "The primary and most important condition that affects the health of the labouring classes is the defective drainage, the lack of clean water, and the accumulation of decaying refuse in their dwellings and streets. Such conditions generate atmospheric impurities that depress the vital powers and produce epidemic, endemic, and contagious diseases. The expenditure of public funds on clean water and underground drainage will prevent disease, reduce pauperism, and promote public morality.",
+          "studio_audio": "/audio/sources/edexcel_medicine/lesson_3_5_sA.mp3",
+          "studio_voice_label": "Edwin Chadwick (1842)"
         },
         {
           "id": "source_a_snow_cholera_map",
@@ -25458,7 +25688,9 @@ export default {
           },
           "text": "Section 13: All existing and future sewers within the district of a local authority shall vest in and be under the control of such local authority, which shall cause them to be properly cleansed and emptied... Section 64: All existing public cisterns, pumps, wells, reservoirs, and conduits used for the gratuitous supply of water to inhabitants shall be maintained and kept plentifully supplied with pure and wholesome water by the local authority... Section 189: Every urban authority shall from time to time appoint a legally qualified medical practitioner as Medical Officer of Health, and shall appoint a fit and proper person to be Inspector of Nuisances... Section 116: The Medical Officer of Health may at all reasonable times inspect any animal, carcass, meat, poultry, fish, fruit, or vegetables exposed for sale, and if unfit for the food of man, seize the same.",
           "source_context": "Disraeli's Conservative government passed the 1875 Act under the campaign slogan Sanitas sanitatum, omnia sanitas ('Sanitation of sanitations, all is sanitation'). Unlike the permissive 1848 Act, councils could no longer refuse to spend ratepayer money on public health.",
-          "question_type": "Turning Point & Limits"
+          "question_type": "Turning Point & Limits",
+          "studio_audio": "/audio/sources/edexcel_medicine/lesson_3_5_sE.mp3",
+          "studio_voice_label": "Public Health Act 1875"
         }
       ],
       "video": [
@@ -26330,7 +26562,9 @@ export default {
       },
       "banner_image": "/images/edexcel_medicine/kt3/med_kt3_l5_banner_metropolis_main_drainage.jpg",
       "enquiry": "Why did the British government abandon its laissez-faire policy to pass the compulsory 1875 Public Health Act?",
-      "banner_caption": "Cutaway engineering engraving from The Illustrated London News (22 June 1867) showing Sir Joseph Bazalgette’s Thames Embankment and low-level intercepting sewer built after the 1858 Great Stink."
+      "banner_caption": "Cutaway engineering engraving from The Illustrated London News (22 June 1867) showing Sir Joseph Bazalgette’s Thames Embankment and low-level intercepting sewer built after the 1858 Great Stink.",
+      "prologue_audio": "/audio/lessons/edexcel_medicine/lesson_3_5_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · Historian"
     },
     {
       "id": "lesson_4_1",
@@ -26551,7 +26785,9 @@ export default {
               "source_context": "Between 1856 and 1863, Augustinian friar Gregor Mendel bred over 28,000 pea plants in Brno to formulate the basic laws of heredity. His findings were ignored by nineteenth-century medicine until botanists rediscovered them in 1900.",
               "teacher_notes": {
                 "source_context": "Between 1856 and 1863, Augustinian friar Gregor Mendel bred over 28,000 pea plants in Brno to formulate the basic laws of heredity. His findings were ignored by nineteenth-century medicine until botanists rediscovered them in 1900."
-              }
+              },
+              "studio_audio": "/audio/sources/edexcel_medicine/lesson_4_1_sA.mp3",
+              "studio_voice_label": "Gregor Mendel"
             }
           ],
           "paragraphs": [
@@ -26587,7 +26823,9 @@ export default {
               "source_context": "Maurice Wilkins showed Franklin's report and Photograph 51 to Watson without her knowledge or consent in early 1953. Watson later confessed that upon seeing her photograph, his 'mouth fell open and pulse began to race'.",
               "teacher_notes": {
                 "source_context": "Maurice Wilkins showed Franklin's report and Photograph 51 to Watson without her knowledge or consent in early 1953. Watson later confessed that upon seeing her photograph, his 'mouth fell open and pulse began to race'."
-              }
+              },
+              "studio_audio": "/audio/sources/edexcel_medicine/lesson_4_1_sB.mp3",
+              "studio_voice_label": "Dr Rosalind Franklin (1952)"
             }
           ],
           "content": "<p><span class=\"para-ref\">[2.1]</span> In 1951, physical chemist **Rosalind Franklin** joined King's College London to investigate the physical structure of DNA. A pioneer in **X-ray crystallography**, Franklin used high-powered X-ray beams to photograph shadow diffraction patterns of microscopic molecules. Working with PhD student Raymond Gosling, Franklin painstakingly exposed delicate crystallised DNA fibres to sixty-two continuous hours of radiation in a basement laboratory.</p><p><span class=\"para-ref\">[2.2]</span> In May 1952, Franklin captured the famous X-ray diffraction image **Photograph 51**, revealing a distinct dark X-shaped pattern that proved DNA was a double-stranded helical spiral. In January 1953, Maurice Wilkins showed this image to James Watson without Franklin’s knowledge or permission. Seeing the clear diffraction pattern provided Watson and Francis Crick with the crucial mathematical data needed to solve DNA's structure.</p>",
@@ -26666,7 +26904,9 @@ export default {
               "source_context": "The Human Genome Project mapped over 20,000 human genes ahead of schedule and under budget in 2003. However, while genetic screening advanced rapidly, curing genetic illnesses (the 'treatment gap') proved far more challenging and costly.",
               "teacher_notes": {
                 "source_context": "The Human Genome Project mapped over 20,000 human genes ahead of schedule and under budget in 2003. However, while genetic screening advanced rapidly, curing genetic illnesses (the 'treatment gap') proved far more challenging and costly."
-              }
+              },
+              "studio_audio": "/audio/sources/edexcel_medicine/lesson_4_1_sD.mp3",
+              "studio_voice_label": "President Bill Clinton and Prime…"
             }
           ],
           "content": "<p><span class=\"para-ref\">[4.1]</span> Deciphering DNA's molecular structure led directly to the launch of the **Human Genome Project** in 1990. Coordinated by international public bodies, including Britain’s Wellcome Trust and Medical Research Council alongside American laboratories, this global scientific consortium set out to decode the complete instruction manual of human life. It was an extraordinary triumph of **international teamwork**, publishing all genomic findings freely online.</p><p><span class=\"para-ref\">[4.2]</span> By April 2003, researchers had successfully **mapped three billion base pairs** across twenty-five thousand human genes. Utilising automated computer sequencing, scientists pinpointed the precise chromosomal locations of over four thousand faulty genes responsible for inherited conditions, including sickle cell anaemia, cystic fibrosis, and hereditary forms of breast and bowel cancer, transforming medical understanding of pathology.</p>",
@@ -26702,7 +26942,9 @@ export default {
               "source_context": "In modern medicine, genetic testing for BRCA1 and BRCA2 allows preventative surgery, but repairing faulty genes with gene therapy remains extremely difficult.",
               "teacher_notes": {
                 "source_context": "In modern medicine, genetic testing for BRCA1 and BRCA2 allows preventative surgery, but repairing faulty genes with gene therapy remains extremely difficult."
-              }
+              },
+              "studio_audio": "/audio/sources/edexcel_medicine/lesson_4_1_sE.mp3",
+              "studio_voice_label": "Dr Francis Collins (2003)"
             }
           ],
           "paragraphs": [
@@ -27031,7 +27273,9 @@ export default {
           "source_context": "Between 1856 and 1863, Augustinian friar Gregor Mendel bred over 28,000 pea plants in Brno to formulate the basic laws of heredity. His findings were ignored by nineteenth-century medicine until botanists rediscovered them in 1900.",
           "teacher_notes": {
             "source_context": "Between 1856 and 1863, Augustinian friar Gregor Mendel bred over 28,000 pea plants in Brno to formulate the basic laws of heredity. His findings were ignored by nineteenth-century medicine until botanists rediscovered them in 1900."
-          }
+          },
+          "studio_audio": "/audio/sources/edexcel_medicine/lesson_4_1_sA.mp3",
+          "studio_voice_label": "Gregor Mendel"
         },
         {
           "id": "source_b_franklin_report_1952",
@@ -27051,7 +27295,9 @@ export default {
           "source_context": "Maurice Wilkins showed Franklin's report and Photograph 51 to Watson without her knowledge or consent in early 1953. Watson later confessed that upon seeing her photograph, his 'mouth fell open and pulse began to race'.",
           "teacher_notes": {
             "source_context": "Maurice Wilkins showed Franklin's report and Photograph 51 to Watson without her knowledge or consent in early 1953. Watson later confessed that upon seeing her photograph, his 'mouth fell open and pulse began to race'."
-          }
+          },
+          "studio_audio": "/audio/sources/edexcel_medicine/lesson_4_1_sB.mp3",
+          "studio_voice_label": "Dr Rosalind Franklin (1952)"
         },
         {
           "id": "source_a_watson_crick_model",
@@ -27094,7 +27340,9 @@ export default {
           "source_context": "The Human Genome Project mapped over 20,000 human genes ahead of schedule and under budget in 2003. However, while genetic screening advanced rapidly, curing genetic illnesses (the 'treatment gap') proved far more challenging and costly.",
           "teacher_notes": {
             "source_context": "The Human Genome Project mapped over 20,000 human genes ahead of schedule and under budget in 2003. However, while genetic screening advanced rapidly, curing genetic illnesses (the 'treatment gap') proved far more challenging and costly."
-          }
+          },
+          "studio_audio": "/audio/sources/edexcel_medicine/lesson_4_1_sD.mp3",
+          "studio_voice_label": "President Bill Clinton and Prime…"
         },
         {
           "id": "source_e_collins_treatment_gap_2003",
@@ -27114,7 +27362,9 @@ export default {
           "source_context": "In modern medicine, genetic testing for BRCA1 and BRCA2 allows preventative surgery, but repairing faulty genes with gene therapy remains extremely difficult.",
           "teacher_notes": {
             "source_context": "In modern medicine, genetic testing for BRCA1 and BRCA2 allows preventative surgery, but repairing faulty genes with gene therapy remains extremely difficult."
-          }
+          },
+          "studio_audio": "/audio/sources/edexcel_medicine/lesson_4_1_sE.mp3",
+          "studio_voice_label": "Dr Francis Collins (2003)"
         }
       ],
       "do_now": {
@@ -28043,7 +28293,9 @@ export default {
       },
       "banner_image": "/images/edexcel_medicine/kt4/med_kt4_1_banner_dna_sequencing_nci.jpg",
       "enquiry": "How did unlocking the double helix and mapping the human genome revolutionise our understanding of disease causation?",
-      "banner_caption": "National Cancer Institute researchers inspecting backlit X-ray autoradiograph DNA sequencing columns (late twentieth century), reading the chemical base-pair code first unlocked by Crick, Watson, Franklin, and Wilkins in 1953."
+      "banner_caption": "National Cancer Institute researchers inspecting backlit X-ray autoradiograph DNA sequencing columns (late twentieth century), reading the chemical base-pair code first unlocked by Crick, Watson, Franklin, and Wilkins in 1953.",
+      "prologue_audio": "/audio/lessons/edexcel_medicine/lesson_4_1_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · Historian"
     },
     {
       "id": "lesson_4_2",
@@ -28257,7 +28509,9 @@ export default {
               },
               "text": "If the discharge of a fairly large induction coil be passed through a vacuum Crookes tube... a paper screen washed with barium platino-cyanide lights up brilliantly and fluoresces even at a distance of nearly two metres... It is soon discovered that all bodies are transparent to this influence, though in very different degrees. Paper is very transparent; wood is almost equally transparent; aluminium permits the rays to pass freely, while lead of 1.5 millimetres thickness is practically opaque. If the hand be held between the discharge-tube and the screen, the darker shadow of the bones is seen within the faintly illuminated outline of the soft flesh.",
               "source_context": "Within weeks of Röntgen's December 1895 paper, hospitals across Europe and North America began constructing X-ray apparatus. British military doctors deployed mobile X-ray units to the Sudan Campaign in 1898 and the Boer War in 1899.",
-              "question_type": "Change & Continuity"
+              "question_type": "Change & Continuity",
+              "studio_audio": "/audio/sources/edexcel_medicine/lesson_4_2_sA.mp3",
+              "studio_voice_label": "Wilhelm Conrad Röntgen"
             }
           ],
           "content": "<p><span class=\"para-ref\">[1.1]</span> Before 1895, diagnosing internal fractures and gunshot wounds required agonising exploratory surgery. This limitation ended when German physicist **Wilhelm Röntgen** discovered in **1895** an invisible form of electromagnetic radiation while experimenting with cathode-ray tubes. Observing that these unknown rays penetrated flesh and cardboard but were absorbed by dense bone, Röntgen created the first diagnostic radiograph of his wife's hand.</p><p><span class=\"para-ref\">[1.2]</span> During the First World War, Polish-French scientist Marie Curie equipped twenty **Marie Curie mobile vans** to bring radiographic equipment directly to frontline Casualty Clearing Stations. These mobile vehicles enabled military surgeons to achieve rapid **shrapnel detection**, locating bullets and jagged metal fragments lodged in soldiers' muscles before performing surgery, preventing catastrophic tissue damage and fatal battlefield infections.</p>",
@@ -28298,7 +28552,9 @@ export default {
               },
               "text": "The transmission of light through flexible bundles of coated glass fibres has transformed internal diagnosis. Instead of subjecting patients to exploratory laparotomies, clinicians can now visually examine the mucosal lining of the stomach and duodenum in real time. Biopsies of malignant lesions can be obtained under direct vision without surgical trauma. Combined with automated biochemical blood auto-analysers, diseases can be diagnosed at cellular stages.",
               "question": "How did automated blood testing, sphygmomanometers, and fibre-optic endoscopes (Source B) move diagnosis away from nineteenth-century bedside guesswork?",
-              "content": "The transmission of light through flexible bundles of coated glass fibres has transformed internal diagnosis. Instead of subjecting patients to exploratory laparotomies, clinicians can now visually examine the mucosal lining of the stomach and duodenum in real time. Biopsies of malignant lesions can be obtained under direct vision without surgical trauma. Combined with automated biochemical blood auto-analysers, diseases can be diagnosed at cellular stages."
+              "content": "The transmission of light through flexible bundles of coated glass fibres has transformed internal diagnosis. Instead of subjecting patients to exploratory laparotomies, clinicians can now visually examine the mucosal lining of the stomach and duodenum in real time. Biopsies of malignant lesions can be obtained under direct vision without surgical trauma. Combined with automated biochemical blood auto-analysers, diseases can be diagnosed at cellular stages.",
+              "studio_audio": "/audio/sources/edexcel_medicine/lesson_4_2_sB.mp3",
+              "studio_voice_label": "Medical Report on the Clinical I…"
             }
           ],
           "content": "<p><span class=\"para-ref\">[2.1]</span> In the mid-twentieth century, clinical diagnosis expanded from imaging bones to analysing body chemistry. The introduction of routine **blood testing and ABO blood-group typing** enabled doctors to identify anaemia, monitor blood glucose levels in diabetics, and match compatible donors safely for blood transfusions. Laboratory **centrifuges and tissue biopsies** allowed pathologists to detect abnormal cellular changes and identify cancerous growths without major exploratory operations.</p><p><span class=\"para-ref\">[2.2]</span> In the 1950s, optical physicists developed flexible fibre-optic glass cables capable of transmitting light and images around physical curves. Modern **fibre-optic endoscopes** allowed physicians to inspect digestive tracts, stomachs, and bronchial airways through natural bodily openings. This eliminated dangerous open-cavity exploratory surgery, allowing specialists to visualise internal bleeding, ulceration, and malignant tumours with minimal patient trauma.</p>",
@@ -28472,7 +28728,9 @@ export default {
               "question": "Why did lifestyle factors (smoking, diet, alcohol, and inactivity) become a central explanation of disease in Britain after 1950 (Source D)?",
               "model_answer": "As antibiotics, vaccines, and the NHS sharply reduced infectious deaths from TB, diphtheria, and pneumonia, people lived longer and epidemiological studies exposed a new wave of non-infectious killers—coronary heart disease, stroke, type-2 diabetes, liver cirrhosis, and lung cancer—directly linked to tobacco, processed diets, alcohol, and sedentary work.",
               "text": "Whereas fifty years ago our hospital wards were filled with young victims of diphtheria, scarlet fever, and tuberculosis, today premature mortality among middle-aged Britons is dominated by coronary thrombosis, chronic bronchitis, lung carcinoma, and metabolic disorders linked unmistakably to cigarette smoking, over-nutrition, physical inactivity, and excess alcohol.",
-              "content": "Whereas fifty years ago our hospital wards were filled with young victims of diphtheria, scarlet fever, and tuberculosis, today premature mortality among middle-aged Britons is dominated by coronary thrombosis, chronic bronchitis, lung carcinoma, and metabolic disorders linked unmistakably to cigarette smoking, over-nutrition, physical inactivity, and excess alcohol."
+              "content": "Whereas fifty years ago our hospital wards were filled with young victims of diphtheria, scarlet fever, and tuberculosis, today premature mortality among middle-aged Britons is dominated by coronary thrombosis, chronic bronchitis, lung carcinoma, and metabolic disorders linked unmistakably to cigarette smoking, over-nutrition, physical inactivity, and excess alcohol.",
+              "studio_audio": "/audio/sources/edexcel_medicine/lesson_4_2_sD.mp3",
+              "studio_voice_label": "Annual Report of the Chief Medic…"
             }
           ],
           "content": "<p><span class=\"para-ref\">[4.1]</span> In 1900, infectious epidemics like tuberculosis, pneumonia, and cholera caused most deaths in Britain. By the mid-twentieth century, clean municipal water infrastructure, compulsory childhood immunisations, and **antibiotics curbed infectious fevers**, bringing bacterial epidemics under historic control. Consequently, Britain experienced a **higher life expectancy**, with average lifespans rising past seventy-five years for both men and women across the nation.</p><p><span class=\"para-ref\">[4.2]</span> However, living decades longer generated a profound epidemiological shift: modern mortality became dominated by **cancer, stroke, and coronary heart disease**. Medical researchers proved that chronic illnesses were driven by daily lifestyle choices, including cigarette smoking, high-sugar diets, physical inactivity, and excessive alcohol consumption, compelling the medical profession to shift attention from treating acute infections to managing long-term lifestyle conditions.</p>",
@@ -28506,7 +28764,9 @@ export default {
               },
               "text": "The great infectious killers of the past—cholera, typhus, smallpox, and tuberculosis—have been conquered through clean water, improved housing, vaccination, and antibiotics. Today, the chief causes of premature death in Britain are non-communicable lifestyle conditions: coronary heart disease, stroke, and cancers of the lung and bowel... Modern medicine possesses extraordinary technological wizardry: intensive care units, coronary bypass grafts, kidney dialysis, and joint replacements. Yet these high-tech interventions are vastly expensive and merely salvage patients after organs are irreparably damaged. The future of healthcare lies not in hospital cure, but in individual prevention: reducing cigarette smoking, moderating alcohol consumption, adopting balanced diets low in animal fat and salt, and taking regular physical exercise.",
               "source_context": "This 1976 consultation paper marked the official recognition that twentieth-century lifestyle diseases had replaced infectious pathogens as the primary threat to British public health, prompting national campaigns like 'Look After Yourself' and dietary guidelines.",
-              "question_type": "Change & Continuity"
+              "question_type": "Change & Continuity",
+              "studio_audio": "/audio/sources/edexcel_medicine/lesson_4_2_sE.mp3",
+              "studio_voice_label": "Department of Health & Social Se…"
             }
           ],
           "content": "<p><span class=\"para-ref\">[5.1]</span> Treating advanced chronic conditions placed enormous financial pressure on the NHS, prompting the British government to embrace preventive public health campaigns. Parliament introduced statutory safety measures, including mandatory **seatbelt legislation (1983)** to slash motor vehicle trauma, alongside nationwide public health initiatives such as the **Change4Life** campaign and the **Soft Drinks Industry Levy** (sugar tax), educating families to improve daily nutrition and reduce childhood obesity.</p><p><span class=\"para-ref\">[5.2]</span> The most impactful statutory intervention was the **2007 smoking ban**, prohibiting smoking in all enclosed workplaces and public venues across England. By eliminating secondhand smoke in pubs and restaurants, the law reduced hospital admissions for heart attacks and established the modern principle that government legislation and preventive education save vastly more lives than expensive hospital technology.</p>",
@@ -28736,7 +28996,9 @@ export default {
           },
           "text": "If the discharge of a fairly large induction coil be passed through a vacuum Crookes tube... a paper screen washed with barium platino-cyanide lights up brilliantly and fluoresces even at a distance of nearly two metres... It is soon discovered that all bodies are transparent to this influence, though in very different degrees. Paper is very transparent; wood is almost equally transparent; aluminium permits the rays to pass freely, while lead of 1.5 millimetres thickness is practically opaque. If the hand be held between the discharge-tube and the screen, the darker shadow of the bones is seen within the faintly illuminated outline of the soft flesh.",
           "source_context": "Within weeks of Röntgen's December 1895 paper, hospitals across Europe and North America began constructing X-ray apparatus. British military doctors deployed mobile X-ray units to the Sudan Campaign in 1898 and the Boer War in 1899.",
-          "question_type": "Change & Continuity"
+          "question_type": "Change & Continuity",
+          "studio_audio": "/audio/sources/edexcel_medicine/lesson_4_2_sA.mp3",
+          "studio_voice_label": "Wilhelm Conrad Röntgen"
         },
         {
           "id": "med_l17_source_endoscopy",
@@ -28759,7 +29021,9 @@ export default {
           },
           "text": "The transmission of light through flexible bundles of coated glass fibres has transformed internal diagnosis. Instead of subjecting patients to exploratory laparotomies, clinicians can now visually examine the mucosal lining of the stomach and duodenum in real time. Biopsies of malignant lesions can be obtained under direct vision without surgical trauma. Combined with automated biochemical blood auto-analysers, diseases can be diagnosed at cellular stages.",
           "question": "How did automated blood testing, sphygmomanometers, and fibre-optic endoscopes (Source B) move diagnosis away from nineteenth-century bedside guesswork?",
-          "content": "The transmission of light through flexible bundles of coated glass fibres has transformed internal diagnosis. Instead of subjecting patients to exploratory laparotomies, clinicians can now visually examine the mucosal lining of the stomach and duodenum in real time. Biopsies of malignant lesions can be obtained under direct vision without surgical trauma. Combined with automated biochemical blood auto-analysers, diseases can be diagnosed at cellular stages."
+          "content": "The transmission of light through flexible bundles of coated glass fibres has transformed internal diagnosis. Instead of subjecting patients to exploratory laparotomies, clinicians can now visually examine the mucosal lining of the stomach and duodenum in real time. Biopsies of malignant lesions can be obtained under direct vision without surgical trauma. Combined with automated biochemical blood auto-analysers, diseases can be diagnosed at cellular stages.",
+          "studio_audio": "/audio/sources/edexcel_medicine/lesson_4_2_sB.mp3",
+          "studio_voice_label": "Medical Report on the Clinical I…"
         },
         {
           "id": "source_a_rontgen_ct_prototype",
@@ -28801,7 +29065,9 @@ export default {
           "question": "Why did lifestyle factors (smoking, diet, alcohol, and inactivity) become a central explanation of disease in Britain after 1950 (Source D)?",
           "model_answer": "As antibiotics, vaccines, and the NHS sharply reduced infectious deaths from TB, diphtheria, and pneumonia, people lived longer and epidemiological studies exposed a new wave of non-infectious killers—coronary heart disease, stroke, type-2 diabetes, liver cirrhosis, and lung cancer—directly linked to tobacco, processed diets, alcohol, and sedentary work.",
           "text": "Whereas fifty years ago our hospital wards were filled with young victims of diphtheria, scarlet fever, and tuberculosis, today premature mortality among middle-aged Britons is dominated by coronary thrombosis, chronic bronchitis, lung carcinoma, and metabolic disorders linked unmistakably to cigarette smoking, over-nutrition, physical inactivity, and excess alcohol.",
-          "content": "Whereas fifty years ago our hospital wards were filled with young victims of diphtheria, scarlet fever, and tuberculosis, today premature mortality among middle-aged Britons is dominated by coronary thrombosis, chronic bronchitis, lung carcinoma, and metabolic disorders linked unmistakably to cigarette smoking, over-nutrition, physical inactivity, and excess alcohol."
+          "content": "Whereas fifty years ago our hospital wards were filled with young victims of diphtheria, scarlet fever, and tuberculosis, today premature mortality among middle-aged Britons is dominated by coronary thrombosis, chronic bronchitis, lung carcinoma, and metabolic disorders linked unmistakably to cigarette smoking, over-nutrition, physical inactivity, and excess alcohol.",
+          "studio_audio": "/audio/sources/edexcel_medicine/lesson_4_2_sD.mp3",
+          "studio_voice_label": "Annual Report of the Chief Medic…"
         },
         {
           "id": "source_e_dhss_lifestyle_report_1976",
@@ -28818,7 +29084,9 @@ export default {
           },
           "text": "The great infectious killers of the past—cholera, typhus, smallpox, and tuberculosis—have been conquered through clean water, improved housing, vaccination, and antibiotics. Today, the chief causes of premature death in Britain are non-communicable lifestyle conditions: coronary heart disease, stroke, and cancers of the lung and bowel... Modern medicine possesses extraordinary technological wizardry: intensive care units, coronary bypass grafts, kidney dialysis, and joint replacements. Yet these high-tech interventions are vastly expensive and merely salvage patients after organs are irreparably damaged. The future of healthcare lies not in hospital cure, but in individual prevention: reducing cigarette smoking, moderating alcohol consumption, adopting balanced diets low in animal fat and salt, and taking regular physical exercise.",
           "source_context": "This 1976 consultation paper marked the official recognition that twentieth-century lifestyle diseases had replaced infectious pathogens as the primary threat to British public health, prompting national campaigns like 'Look After Yourself' and dietary guidelines.",
-          "question_type": "Change & Continuity"
+          "question_type": "Change & Continuity",
+          "studio_audio": "/audio/sources/edexcel_medicine/lesson_4_2_sE.mp3",
+          "studio_voice_label": "Department of Health & Social Se…"
         }
       ],
       "do_now": {
@@ -29753,7 +30021,9 @@ export default {
       },
       "banner_image": "/images/med_banner_kt4_2_ct_diagnostic_suite.jpg",
       "enquiry": "How did the shift toward lifestyle diseases and the rise of diagnostic scanning transform 20th-century medicine?",
-      "banner_caption": "Non-Invasive 3D Clinical Imaging: A hospital CT control console displays four axial cross-sectional scans while a radiographer prepares a patient inside the rotating scanner gantry behind leaded observation glass."
+      "banner_caption": "Non-Invasive 3D Clinical Imaging: A hospital CT control console displays four axial cross-sectional scans while a radiographer prepares a patient inside the rotating scanner gantry behind leaded observation glass.",
+      "prologue_audio": "/audio/lessons/edexcel_medicine/lesson_4_2_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · Historian"
     },
     {
       "id": "lesson_4_3",
@@ -29973,7 +30243,9 @@ export default {
               },
               "text": "The organism of the host must be protected, while the invading parasite alone is attacked. In chemotherapy, we must learn to aim, and to aim chemically! We must search for synthetic chemical substances which possess a specific affinity for the parasitic microbes, but which have little or no affinity for the organs of the living patient. These substances are what I have termed 'magic bullets' (Zauberkugeln). They seek out the pathogenic enemies alone, destroying them completely without harming the delicate cellular tissues of the host. In Salvarsan 606, we possess our first synthetic chemical bullet capable of annihilating the spiral spirochaete of syphilis in the blood.",
               "source_context": "Ehrlich had worked with Robert Koch on staining bacterial cells with chemical dyes, noticing that certain dyes only bound to specific microbes. He reasoned that if a dye could be chemically bonded with a poison like arsenic, it would kill the microbe while sparing the human host.",
-              "question_type": "Turning Point & Limits"
+              "question_type": "Turning Point & Limits",
+              "studio_audio": "/audio/sources/edexcel_medicine/lesson_4_3_sA.mp3",
+              "studio_voice_label": "Paul Ehrlich"
             }
           ],
           "content": "<p><span class=\"para-ref\">[1.1]</span> By 1900, bacteriology had identified specific disease-causing microbes, but doctors lacked chemical treatments that could kill bacteria inside living patients without causing fatal poisoning. In Germany, scientist **Paul Ehrlich** pioneered chemotherapy, introducing the revolutionary **magic bullet concept**—a synthetic chemical compound that would seek out and destroy specific microbes while leaving surrounding bodily tissues completely unharmed.</p><p><span class=\"para-ref\">[1.2]</span> Working with Japanese bacteriologist Sahachiro Hata, Ehrlich systematically tested hundreds of arsenic chemical derivatives. In 1909, their 606th experimental compound successfully destroyed the spirochaete bacterium responsible for syphilis. Developed in **1909** and marketed internationally as **Salvarsan 606**, this became the world's first synthetic chemical cure, proving scientifically that targeted chemical compounds could eradicate specific internal bacterial infections inside the living human body.</p>",
@@ -30011,7 +30283,9 @@ export default {
               "question": "How did Gerhard Domagk’s discovery of Prontosil (Source B) break the thirty-year deadlock after Salvarsan 606?",
               "model_answer": "Critics feared chemical drugs could kill parasites like syphilis but never common wound bacteria inside humans. Using Bayer’s industrial dye-testing laboratories, Domagk proved Prontosil cured deadly *Streptococcus* blood-poisoning—enabling French and British chemists (May & Baker’s M&B 693) to develop sulphonamides that slashed maternal puerperal-fever deaths by over 75%.",
               "text": "Mice infected with ten times the lethal dose of haemolytic streptococci from human septicaemia all perished within forty-eight hours when left untreated. Every animal treated orally or by injection with Prontosil survived in good health. Clinical trials confirm equally striking recoveries in severe human streptococcal infections and erysipelas.",
-              "content": "Mice infected with ten times the lethal dose of haemolytic streptococci from human septicaemia all perished within forty-eight hours when left untreated. Every animal treated orally or by injection with Prontosil survived in good health. Clinical trials confirm equally striking recoveries in severe human streptococcal infections and erysipelas."
+              "content": "Mice infected with ten times the lethal dose of haemolytic streptococci from human septicaemia all perished within forty-eight hours when left untreated. Every animal treated orally or by injection with Prontosil survived in good health. Clinical trials confirm equally striking recoveries in severe human streptococcal infections and erysipelas.",
+              "studio_audio": "/audio/sources/edexcel_medicine/lesson_4_3_sB.mp3",
+              "studio_voice_label": "Gerhard Domagk"
             }
           ],
           "content": "<p><span class=\"para-ref\">[2.1]</span> While Salvarsan 606 cured syphilis, it was ineffective against common bacterial killers like blood poisoning, scarlet fever, and pneumonia. In 1932, German pathologist **Gerhard Domagk** discovered that a bright-red chemical dye named **Prontosil** killed lethal streptococcal bacteria in laboratory mice without damaging their healthy internal organs or causing fatal toxicity.</p><p><span class=\"para-ref\">[2.2]</span> In 1935, Domagk treated his own daughter with Prontosil when she faced fatal blood poisoning from an infected embroidery needle, achieving a rapid clinical recovery. Researchers at the Pasteur Institute discovered its active ingredient, sulphonamide, triggering the global **sulphonamide drug revolution**. Inexpensive, mass-produced sulphonamides slashed maternal puerperal fever mortality and saved millions of civilian lives from deadly bacterial infections.</p>",
@@ -30045,7 +30319,9 @@ export default {
               },
               "text": "Now, when the social fabric is in a state of flux, is a time for revolutions, not for patching... Social insurance should be treated as one part of a comprehensive policy of social progress. The Plan for Social Security is an attack upon Want. But Want is only one of five giant evils on the road of reconstruction, and in some ways the easiest to attack. The others are Disease, Ignorance, Squalor, and Idleness... Assumption B of the Plan is that there shall be established a comprehensive National Health Service, ensuring that for every citizen there is available whatever medical treatment he requires, in whatever form he requires it, domiciliary or institutional, general, specialist or surgical, without any charge at the time of treatment.",
               "source_context": "Published during the darkest days of the Second World War, the Beveridge Report became an instant sensation, selling over 600,000 copies with queues stretching around bookshops. It unified wartime British society around the promise of a fairer society after victory.",
-              "question_type": "Turning Point & Limits"
+              "question_type": "Turning Point & Limits",
+              "studio_audio": "/audio/sources/edexcel_medicine/lesson_4_3_sC.mp3",
+              "studio_voice_label": "Sir William Beveridge"
             }
           ],
           "content": "<p><span class=\"para-ref\">[3.1]</span> Before 1948, healthcare in Britain was deeply unequal. Under the 1911 National Insurance Act, only insured male workers received subsidised GP care, leaving wives, children, and the elderly dependent on charity hospitals or personal savings. The shared dangers of the Blitz, mass evacuation, and food rationing created widespread public solidarity and demand for egalitarian state welfare reform across all classes.</p><p><span class=\"para-ref\">[3.2]</span> In December 1942, economist William Beveridge published the landmark **1942 Beveridge Report**, proposing a comprehensive system of social insurance to slay the **Five Giant Evils**: Want, Disease, Ignorance, Squalor, and Idleness. The report became an instant bestseller, laying the architectural foundation for a **post-war welfare state** that guaranteed medical care as a fundamental universal right for all citizens.</p>",
@@ -30140,7 +30416,9 @@ export default {
               "question": "How have high-tech surgical and medical treatments (Source E) transformed patient survival since 1948 while creating new challenges for the NHS?",
               "model_answer": "Combining engineering, computing, and anti-rejection drugs enabled life-saving kidney dialysis, heart bypasses and organ transplants (1960s+), Charnley hip replacements (1962), and minimally invasive keyhole/robotic surgery that slashes infection and recovery times. Yet each advance keeps an ageing population alive longer with complex needs, driving up waiting lists and NHS budgets.",
               "text": "Within a single generation, conditions once uniformly fatal or crippling have yielded to hospital engineering: mechanical haemodialysis sustains patients in total renal failure, prosthetic low-friction hip replacements restore mobility to thousands, cardiopulmonary bypass and immunosuppressant drugs permit organ transplantation, and fibre-optic microsurgery shrinks surgical trauma.",
-              "content": "Within a single generation, conditions once uniformly fatal or crippling have yielded to hospital engineering: mechanical haemodialysis sustains patients in total renal failure, prosthetic low-friction hip replacements restore mobility to thousands, cardiopulmonary bypass and immunosuppressant drugs permit organ transplantation, and fibre-optic microsurgery shrinks surgical trauma."
+              "content": "Within a single generation, conditions once uniformly fatal or crippling have yielded to hospital engineering: mechanical haemodialysis sustains patients in total renal failure, prosthetic low-friction hip replacements restore mobility to thousands, cardiopulmonary bypass and immunosuppressant drugs permit organ transplantation, and fibre-optic microsurgery shrinks surgical trauma.",
+              "studio_audio": "/audio/sources/edexcel_medicine/lesson_4_3_sE.mp3",
+              "studio_voice_label": "NHS Clinical Review on High-Tech…"
             }
           ],
           "content": "<p><span class=\"para-ref\">[5.1]</span> Following the creation of the NHS, British hospitals embraced high-tech surgery. In 1962, Sir John Charnley perfected low-friction **hip replacement surgery**, restoring mobility to hundreds of thousands of elderly patients. Simultaneously, mechanical **kidney dialysis units** cleansed toxic blood in patients suffering renal failure, while organ transplants and minimally invasive keyhole operations drastically accelerated patient recovery and reduced surgical trauma.</p><p><span class=\"para-ref\">[5.2]</span> However, clinical success created severe financial challenges. An aging population, public expectations of modern pharmaceuticals, and expensive diagnostic technologies generated **rising NHS cost pressures**. Managing escalating hospital budgets for cutting-edge treatments while maintaining Bevan’s founding principle of free universal access at the point of delivery remains the primary structural dilemma of contemporary British healthcare.</p>",
@@ -30468,7 +30746,9 @@ export default {
           },
           "text": "The organism of the host must be protected, while the invading parasite alone is attacked. In chemotherapy, we must learn to aim, and to aim chemically! We must search for synthetic chemical substances which possess a specific affinity for the parasitic microbes, but which have little or no affinity for the organs of the living patient. These substances are what I have termed 'magic bullets' (Zauberkugeln). They seek out the pathogenic enemies alone, destroying them completely without harming the delicate cellular tissues of the host. In Salvarsan 606, we possess our first synthetic chemical bullet capable of annihilating the spiral spirochaete of syphilis in the blood.",
           "source_context": "Ehrlich had worked with Robert Koch on staining bacterial cells with chemical dyes, noticing that certain dyes only bound to specific microbes. He reasoned that if a dye could be chemically bonded with a poison like arsenic, it would kill the microbe while sparing the human host.",
-          "question_type": "Turning Point & Limits"
+          "question_type": "Turning Point & Limits",
+          "studio_audio": "/audio/sources/edexcel_medicine/lesson_4_3_sA.mp3",
+          "studio_voice_label": "Paul Ehrlich"
         },
         {
           "id": "med_l18_source_domagk_prontosil_1935",
@@ -30488,7 +30768,9 @@ export default {
           "question": "How did Gerhard Domagk’s discovery of Prontosil (Source B) break the thirty-year deadlock after Salvarsan 606?",
           "model_answer": "Critics feared chemical drugs could kill parasites like syphilis but never common wound bacteria inside humans. Using Bayer’s industrial dye-testing laboratories, Domagk proved Prontosil cured deadly *Streptococcus* blood-poisoning—enabling French and British chemists (May & Baker’s M&B 693) to develop sulphonamides that slashed maternal puerperal-fever deaths by over 75%.",
           "text": "Mice infected with ten times the lethal dose of haemolytic streptococci from human septicaemia all perished within forty-eight hours when left untreated. Every animal treated orally or by injection with Prontosil survived in good health. Clinical trials confirm equally striking recoveries in severe human streptococcal infections and erysipelas.",
-          "content": "Mice infected with ten times the lethal dose of haemolytic streptococci from human septicaemia all perished within forty-eight hours when left untreated. Every animal treated orally or by injection with Prontosil survived in good health. Clinical trials confirm equally striking recoveries in severe human streptococcal infections and erysipelas."
+          "content": "Mice infected with ten times the lethal dose of haemolytic streptococci from human septicaemia all perished within forty-eight hours when left untreated. Every animal treated orally or by injection with Prontosil survived in good health. Clinical trials confirm equally striking recoveries in severe human streptococcal infections and erysipelas.",
+          "studio_audio": "/audio/sources/edexcel_medicine/lesson_4_3_sB.mp3",
+          "studio_voice_label": "Gerhard Domagk"
         },
         {
           "id": "source_d_beveridge_report_1942",
@@ -30505,7 +30787,9 @@ export default {
           },
           "text": "Now, when the social fabric is in a state of flux, is a time for revolutions, not for patching... Social insurance should be treated as one part of a comprehensive policy of social progress. The Plan for Social Security is an attack upon Want. But Want is only one of five giant evils on the road of reconstruction, and in some ways the easiest to attack. The others are Disease, Ignorance, Squalor, and Idleness... Assumption B of the Plan is that there shall be established a comprehensive National Health Service, ensuring that for every citizen there is available whatever medical treatment he requires, in whatever form he requires it, domiciliary or institutional, general, specialist or surgical, without any charge at the time of treatment.",
           "source_context": "Published during the darkest days of the Second World War, the Beveridge Report became an instant sensation, selling over 600,000 copies with queues stretching around bookshops. It unified wartime British society around the promise of a fairer society after victory.",
-          "question_type": "Turning Point & Limits"
+          "question_type": "Turning Point & Limits",
+          "studio_audio": "/audio/sources/edexcel_medicine/lesson_4_3_sC.mp3",
+          "studio_voice_label": "Sir William Beveridge"
         },
         {
           "id": "med_l18_source_bevan_vs_bma",
@@ -30566,7 +30850,9 @@ export default {
           "question": "How have high-tech surgical and medical treatments (Source E) transformed patient survival since 1948 while creating new challenges for the NHS?",
           "model_answer": "Combining engineering, computing, and anti-rejection drugs enabled life-saving kidney dialysis, heart bypasses and organ transplants (1960s+), Charnley hip replacements (1962), and minimally invasive keyhole/robotic surgery that slashes infection and recovery times. Yet each advance keeps an ageing population alive longer with complex needs, driving up waiting lists and NHS budgets.",
           "text": "Within a single generation, conditions once uniformly fatal or crippling have yielded to hospital engineering: mechanical haemodialysis sustains patients in total renal failure, prosthetic low-friction hip replacements restore mobility to thousands, cardiopulmonary bypass and immunosuppressant drugs permit organ transplantation, and fibre-optic microsurgery shrinks surgical trauma.",
-          "content": "Within a single generation, conditions once uniformly fatal or crippling have yielded to hospital engineering: mechanical haemodialysis sustains patients in total renal failure, prosthetic low-friction hip replacements restore mobility to thousands, cardiopulmonary bypass and immunosuppressant drugs permit organ transplantation, and fibre-optic microsurgery shrinks surgical trauma."
+          "content": "Within a single generation, conditions once uniformly fatal or crippling have yielded to hospital engineering: mechanical haemodialysis sustains patients in total renal failure, prosthetic low-friction hip replacements restore mobility to thousands, cardiopulmonary bypass and immunosuppressant drugs permit organ transplantation, and fibre-optic microsurgery shrinks surgical trauma.",
+          "studio_audio": "/audio/sources/edexcel_medicine/lesson_4_3_sE.mp3",
+          "studio_voice_label": "NHS Clinical Review on High-Tech…"
         }
       ],
       "do_now": {
@@ -31487,7 +31773,9 @@ export default {
       },
       "banner_image": "/images/upgraded/gcse-med-eee/med_banner_kt4_3_st_barts_ward_nurses.jpg",
       "enquiry": "How did synthetic magic bullets and the foundation of the NHS dismantle medical inequality in Britain?",
-      "banner_caption": "Uniformed nurses tending a ward at St Bartholomew’s Hospital, London (c. 1908), one of Britain’s voluntary hospitals later brought into the free National Health Service in July 1948."
+      "banner_caption": "Uniformed nurses tending a ward at St Bartholomew’s Hospital, London (c. 1908), one of Britain’s voluntary hospitals later brought into the free National Health Service in July 1948.",
+      "prologue_audio": "/audio/lessons/edexcel_medicine/lesson_4_3_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · Historian"
     },
     {
       "id": "lesson_4_4",
@@ -31707,7 +31995,9 @@ export default {
               "content": "While working with staphylococcus variants a number of culture-plates were set aside on the laboratory bench and examined from time to time... It was noticed that around a large colony of a contaminating mould the staphylococcal colonies became transparent and were obviously undergoing lysis (dissolution)... The mould broth juice was found to inhibit the growth of staphylococci, streptococci, and the diphtheria bacillus, while having no effect upon the typhoid bacillus or the influenza bacillus... It is non-toxic to animals in enormous doses, and does not interfere with the functioning of human white blood cells. It seems capable of being an efficient antiseptic for application to, or injection into, areas infected with penicillin-sensitive microbes.",
               "image": "/images/fleming_petri_dish.jpg",
               "src": "/images/fleming_petri_dish.jpg",
-              "source": "/images/fleming_petri_dish.jpg"
+              "source": "/images/fleming_petri_dish.jpg",
+              "studio_audio": "/audio/sources/edexcel_medicine/lesson_4_4_sA.mp3",
+              "studio_voice_label": "Alexander Fleming’s Penicillium…"
             }
           ],
           "content": "<p><span class=\"para-ref\">[1.1]</span> During the First World War, Scottish bacteriologist **Alexander Fleming** witnessed thousands of soldiers die from infected wounds, observing that carbolic antiseptics damaged white blood cells without reaching deep bacterial infections. In September 1928, returning from holiday to his untidy laboratory at St Mary's Hospital, London, Fleming examined discarded culture plates of pathogenic bacteria piled on his workbench.</p><p><span class=\"para-ref\">[1.2]</span> Fleming noticed a drifting spore of **Penicillium notatum mould** had contaminated a petri dish, surrounded by a distinct **staphylococcus halo** where bacteria had dissolved completely. Fleming named the non-toxic fluid \"penicillin.\" Although publishing his findings in 1929, Fleming could not extract or chemically stabilise pure penicillin, leaving it an unexploited laboratory curiosity for nearly a decade.</p>",
@@ -31749,7 +32039,9 @@ export default {
               "question": "What does Source B reveal about how the Oxford team overcame chemical barriers that had defeated Fleming—and why Britain still could not mass-produce penicillin alone in 1940?",
               "model_answer": "Unlike Fleming working solo, Florey led an interdisciplinary team: Chain freeze-dried purified penicillin while Heatley designed back-extraction apparatus and ceramic culture vessels tended round-the-clock by technician \"Penicillin Girls\". Yet growing surface mould in hundreds of bedpans yielded tiny milligram amounts while German bombing tied up British chemical factories.",
               "text": "Because conventional laboratory glassware was unobtainable in wartime Britain, we grew Penicillium notatum in shallow layers across hundreds of glazed ceramic hospital bedpans, biscuit tins, and milk churns, extracting the fragile acid through chilled ether and amyl acetate columns—yet five hundred litres of mould broth yielded barely enough pure brown powder to treat a single patient.",
-              "content": "Because conventional laboratory glassware was unobtainable in wartime Britain, we grew Penicillium notatum in shallow layers across hundreds of glazed ceramic hospital bedpans, biscuit tins, and milk churns, extracting the fragile acid through chilled ether and amyl acetate columns—yet five hundred litres of mould broth yielded barely enough pure brown powder to treat a single patient."
+              "content": "Because conventional laboratory glassware was unobtainable in wartime Britain, we grew Penicillium notatum in shallow layers across hundreds of glazed ceramic hospital bedpans, biscuit tins, and milk churns, extracting the fragile acid through chilled ether and amyl acetate columns—yet five hundred litres of mould broth yielded barely enough pure brown powder to treat a single patient.",
+              "studio_audio": "/audio/sources/edexcel_medicine/lesson_4_4_sB.mp3",
+              "studio_voice_label": "Dr Norman Heatley’s Recollection…"
             }
           ],
           "content": "<p><span class=\"para-ref\">[2.1]</span> In 1938, Australian pathologist Howard Florey and German-Jewish refugee biochemist Ernst Chain re-examined Fleming's paper at Oxford University. Leading an interdisciplinary research team of chemists and bacteriologists, **Howard Florey and Ernst Chain** at Oxford recognised penicillin's revolutionary potential, securing essential research funding from the British Medical Research Council and the American Rockefeller Foundation to investigate its clinical properties.</p><p><span class=\"para-ref\">[2.2]</span> The team faced the enormous technical obstacle of **purifying active penicillin** in usable therapeutic quantities. Oxford technician Norman Heatley designed ingenious laboratory equipment, assembling a makeshift **Norman Heatley apparatus** of milk churns, hospital bedpans, and glass flasks to brew culture fluid in university basements, freeze-drying the delicate chemical into a stable brown therapeutic powder that could be safely injected into living patients.</p>",
@@ -31780,7 +32072,9 @@ export default {
               },
               "text": "Case 1: A policeman, aged 43, developed severe staphylococcal and streptococcal septicaemia after scratching his face on a rose thorn. When treatment began on February 12th, he was in a desperate condition: an abscess had destroyed his left eye, his scalp was covered with sloughing sores, and pus was draining from his lungs. Within twenty-four hours of intravenous penicillin administration, an astonishing improvement occurred: the fever dropped, appetite returned, and the facial ulcers began to heal... Penicillin was continuously recovered from his urine and re-injected. By the tenth day, however, our entire supply was completely exhausted. Relapse followed, and the patient died on March 15th... This tragic case nevertheless proved beyond all scientific doubt that penicillin is extraordinarily active in human blood against lethal pyogenic infections.",
               "source_context": "Albert Alexander's tragic death galvanised Florey and Heatley to travel to the United States in July 1941, where they convinced the US Department of Agriculture Northern Regional Research Laboratory in Peoria, Illinois, to develop deep-tank corn steep liquor fermentation.",
-              "question_type": "Turning Point & Limits"
+              "question_type": "Turning Point & Limits",
+              "studio_audio": "/audio/sources/edexcel_medicine/lesson_4_4_sC.mp3",
+              "studio_voice_label": "Howard Florey"
             }
           ],
           "content": "<p><span class=\"para-ref\">[3.1]</span> In May 1940, the Oxford researchers conducted their decisive **mouse-protection trial**. Eight mice were injected with fatal doses of streptococcus bacteria; four were treated with penicillin while four remained untreated. Within twenty-four hours, the untreated mice died, whereas the four penicillin-treated mice recovered completely, providing indisputable experimental evidence that penicillin cured fatal bacterial infections in living animals.</p><p><span class=\"para-ref\">[3.2]</span> In February 1941, the team treated forty-three-year-old Oxford policeman **Albert Alexander**, who was dying from severe facial blood poisoning. Alexander improved dramatically after receiving penicillin, but supplies were so scarce that doctors recycled the drug from his urine. When stocks ran out, Alexander suffered a tragic **supply exhaustion death**, demonstrating that clinical survival required industrial mass-production.</p>",
@@ -31935,7 +32229,9 @@ export default {
               },
               "text": "I would like to sound one note of warning. Penicillin may not be entirely a blessing if it is used unwisely. It is not difficult to make microbes resistant to penicillin in the laboratory by exposing them to concentrations not sufficient to kill them, and the same thing has occasionally happened in the body. The time may come when penicillin can be bought by anyone in the shops. Then there is the danger that the ignorant man may easily underdose himself and, by exposing his microbes to non-lethal quantities of the drug, make them resistant... Here is a hypothetical illustration: Mr. X has a sore throat. He buys some penicillin and takes enough to stop the symptoms but not enough to kill the streptococci. He then infects his wife with resistant bugs. She gets pneumonia and dies. Who is primarily responsible for Mrs. X's death? Why, Mr. X, whose negligent use of penicillin changed the nature of the bacterium.",
               "source_context": "Fleming's 1945 warning proved remarkably prescient: by the late twentieth century, over-prescription of antibiotics and widespread agricultural use led to the emergence of MRSA and pan-resistant 'superbugs', creating one of modern medicine's greatest global crises.",
-              "question_type": "Turning Point & Limits"
+              "question_type": "Turning Point & Limits",
+              "studio_audio": "/audio/sources/edexcel_medicine/lesson_4_4_sE.mp3",
+              "studio_voice_label": "Sir Alexander Fleming"
             }
           ],
           "content": "<p><span class=\"para-ref\">[5.1]</span> Penicillin transformed military surgery, securing **Allied troop survival** across the European theatre and slashing wound infection fatalities during the Normandy campaign. Following their joint **1945 Nobel Prize**, Fleming, Florey, and Chain were celebrated globally. Available freely through the NHS, penicillin wiped out deadly streptococcal throat infections, pneumonia, and syphilis, launching the twentieth-century golden age of antibiotic chemotherapy across Britain.</p><p><span class=\"para-ref\">[5.2]</span> However, widespread clinical over-prescription and agricultural misuse created a dangerous modern crisis: antimicrobial resistance. Bacterial strains evolved genetic defences, creating the lethal **MRSA superbug threat** in modern hospital wards. This demonstrated how revolutionary biomedical breakthroughs require continuous scientific innovation, strict prescription stewardship, and hospital infection control to preserve their life-saving clinical efficacy for future generations.</p>",
@@ -32170,7 +32466,9 @@ export default {
           "content": "While working with staphylococcus variants a number of culture-plates were set aside on the laboratory bench and examined from time to time... It was noticed that around a large colony of a contaminating mould the staphylococcal colonies became transparent and were obviously undergoing lysis (dissolution)... The mould broth juice was found to inhibit the growth of staphylococci, streptococci, and the diphtheria bacillus, while having no effect upon the typhoid bacillus or the influenza bacillus... It is non-toxic to animals in enormous doses, and does not interfere with the functioning of human white blood cells. It seems capable of being an efficient antiseptic for application to, or injection into, areas infected with penicillin-sensitive microbes.",
           "image": "/images/fleming_petri_dish.jpg",
           "src": "/images/fleming_petri_dish.jpg",
-          "source": "/images/fleming_petri_dish.jpg"
+          "source": "/images/fleming_petri_dish.jpg",
+          "studio_audio": "/audio/sources/edexcel_medicine/lesson_4_4_sA.mp3",
+          "studio_voice_label": "Alexander Fleming’s Penicillium…"
         },
         {
           "id": "med_l19_source_heatley_oxford_1940",
@@ -32190,7 +32488,9 @@ export default {
           "question": "What does Source B reveal about how the Oxford team overcame chemical barriers that had defeated Fleming—and why Britain still could not mass-produce penicillin alone in 1940?",
           "model_answer": "Unlike Fleming working solo, Florey led an interdisciplinary team: Chain freeze-dried purified penicillin while Heatley designed back-extraction apparatus and ceramic culture vessels tended round-the-clock by technician \"Penicillin Girls\". Yet growing surface mould in hundreds of bedpans yielded tiny milligram amounts while German bombing tied up British chemical factories.",
           "text": "Because conventional laboratory glassware was unobtainable in wartime Britain, we grew Penicillium notatum in shallow layers across hundreds of glazed ceramic hospital bedpans, biscuit tins, and milk churns, extracting the fragile acid through chilled ether and amyl acetate columns—yet five hundred litres of mould broth yielded barely enough pure brown powder to treat a single patient.",
-          "content": "Because conventional laboratory glassware was unobtainable in wartime Britain, we grew Penicillium notatum in shallow layers across hundreds of glazed ceramic hospital bedpans, biscuit tins, and milk churns, extracting the fragile acid through chilled ether and amyl acetate columns—yet five hundred litres of mould broth yielded barely enough pure brown powder to treat a single patient."
+          "content": "Because conventional laboratory glassware was unobtainable in wartime Britain, we grew Penicillium notatum in shallow layers across hundreds of glazed ceramic hospital bedpans, biscuit tins, and milk churns, extracting the fragile acid through chilled ether and amyl acetate columns—yet five hundred litres of mould broth yielded barely enough pure brown powder to treat a single patient.",
+          "studio_audio": "/audio/sources/edexcel_medicine/lesson_4_4_sB.mp3",
+          "studio_voice_label": "Dr Norman Heatley’s Recollection…"
         },
         {
           "id": "source_d_oxford_lancet_1941",
@@ -32207,7 +32507,9 @@ export default {
           },
           "text": "Case 1: A policeman, aged 43, developed severe staphylococcal and streptococcal septicaemia after scratching his face on a rose thorn. When treatment began on February 12th, he was in a desperate condition: an abscess had destroyed his left eye, his scalp was covered with sloughing sores, and pus was draining from his lungs. Within twenty-four hours of intravenous penicillin administration, an astonishing improvement occurred: the fever dropped, appetite returned, and the facial ulcers began to heal... Penicillin was continuously recovered from his urine and re-injected. By the tenth day, however, our entire supply was completely exhausted. Relapse followed, and the patient died on March 15th... This tragic case nevertheless proved beyond all scientific doubt that penicillin is extraordinarily active in human blood against lethal pyogenic infections.",
           "source_context": "Albert Alexander's tragic death galvanised Florey and Heatley to travel to the United States in July 1941, where they convinced the US Department of Agriculture Northern Regional Research Laboratory in Peoria, Illinois, to develop deep-tank corn steep liquor fermentation.",
-          "question_type": "Turning Point & Limits"
+          "question_type": "Turning Point & Limits",
+          "studio_audio": "/audio/sources/edexcel_medicine/lesson_4_4_sC.mp3",
+          "studio_voice_label": "Howard Florey"
         },
         {
           "id": "source_c_penicillin_wartime_poster",
@@ -32245,7 +32547,9 @@ export default {
           },
           "text": "I would like to sound one note of warning. Penicillin may not be entirely a blessing if it is used unwisely. It is not difficult to make microbes resistant to penicillin in the laboratory by exposing them to concentrations not sufficient to kill them, and the same thing has occasionally happened in the body. The time may come when penicillin can be bought by anyone in the shops. Then there is the danger that the ignorant man may easily underdose himself and, by exposing his microbes to non-lethal quantities of the drug, make them resistant... Here is a hypothetical illustration: Mr. X has a sore throat. He buys some penicillin and takes enough to stop the symptoms but not enough to kill the streptococci. He then infects his wife with resistant bugs. She gets pneumonia and dies. Who is primarily responsible for Mrs. X's death? Why, Mr. X, whose negligent use of penicillin changed the nature of the bacterium.",
           "source_context": "Fleming's 1945 warning proved remarkably prescient: by the late twentieth century, over-prescription of antibiotics and widespread agricultural use led to the emergence of MRSA and pan-resistant 'superbugs', creating one of modern medicine's greatest global crises.",
-          "question_type": "Turning Point & Limits"
+          "question_type": "Turning Point & Limits",
+          "studio_audio": "/audio/sources/edexcel_medicine/lesson_4_4_sE.mp3",
+          "studio_voice_label": "Sir Alexander Fleming"
         }
       ],
       "do_now": {
@@ -33166,7 +33470,9 @@ export default {
       },
       "banner_image": "/images/med_banner_kt4_4_penicillin_mass_prod.jpg",
       "enquiry": "How did an accidental laboratory mould transform into humanity’s first mass-produced antibiotic wonder drug?",
-      "banner_caption": "Chemist Dr Wilson Baker purifying experimental penicillin extracts with a glass separating funnel in Oxford University’s Dyson Perrins Laboratory (1944), helping turn Alexander Fleming’s mould discovery into a mass-produced antibiotic."
+      "banner_caption": "Chemist Dr Wilson Baker purifying experimental penicillin extracts with a glass separating funnel in Oxford University’s Dyson Perrins Laboratory (1944), helping turn Alexander Fleming’s mould discovery into a mass-produced antibiotic.",
+      "prologue_audio": "/audio/lessons/edexcel_medicine/lesson_4_4_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · Historian"
     },
     {
       "id": "lesson_4_5",
@@ -33386,7 +33692,9 @@ export default {
               },
               "text": "A statistical investigation was carried out in twenty London hospitals to determine whether patients suffering from cancer of the lung differed in their smoking habits from patients suffering from other diseases... Among 649 men with carcinoma of the lung, only two (0.3%) were non-smokers, compared with twenty-seven (4.2%) in the control group. Among heavy smokers (consuming 25 or more cigarettes a day), the ratio was even more striking: 26.0% of the lung cancer patients were heavy smokers compared with only 13.5% of the controls... The association between smoking and carcinoma of the lung is not due to chance. It is concluded that smoking is a factor, and an important factor, in the production of carcinoma of the lung.",
               "source_context": "Prior to their research, most doctors assumed the dramatic rise in lung cancer was caused by tarred motor roads or atmospheric industrial coal smog. Doll himself was a heavy smoker who gave up cigarettes halfway through compiling the statistics.",
-              "question_type": "Turning Point & Limits"
+              "question_type": "Turning Point & Limits",
+              "studio_audio": "/audio/sources/edexcel_medicine/lesson_4_5_sA.mp3",
+              "studio_voice_label": "Richard Doll and Austin Bradford…"
             }
           ],
           "content": "<p><span class=\"para-ref\">[1.1]</span> In the twentieth century, lung cancer emerged as the deadliest malignant epidemic in Great Britain, driven by the mass popularity of cigarette smoking. Early diagnosis remained extraordinarily difficult because human lungs possess **few pain receptors** inside internal alveolar tissues. Patients do not feel developing tumours expanding, mistaking early symptoms for a harmless smoker's cough or mild breathlessness.</p><p><span class=\"para-ref\">[1.2]</span> Consequently, malignant tumours develop through silent **asymptomatic growth** for months or years without causing clinical distress. By the time patients experience acute warning signs like persistent chest pain or coughing blood, the disease has reached **late Stage 3/4 detection**. At this advanced stage, cancer cells have metastasised to the lymph nodes and other organs, rendering curative surgery impossible.</p>",
@@ -33424,7 +33732,9 @@ export default {
               "question": "Why did replacing 2D chest X-rays with PET-CT scans and fibre-optic bronchoscopy (Source B) transform lung cancer diagnosis and staging?",
               "model_answer": "Flat 2D chest X-rays often miss early coin-sized nodules hidden behind ribs or the heart. A **PET-CT scan** injects mildly radioactive glucose that fast-growing cancer cells absorb brightly on a 3D map, while a **flexible bronchoscope** threads a miniature camera and ultrasound biopsy needle down the windpipe without cutting open the chest.",
               "text": "Patients with suspected thoracic malignancy undergo rapid-access contrast CT followed by fluorodeoxyglucose PET-CT scanning, which highlights metabolically active tumour cells across both lungs and lymph nodes. Tissue confirmation and genetic sub-typing are then obtained minimally invasively via flexible fibre-optic bronchoscopy or endobronchial ultrasound (EBUS) biopsy.",
-              "content": "Patients with suspected thoracic malignancy undergo rapid-access contrast CT followed by fluorodeoxyglucose PET-CT scanning, which highlights metabolically active tumour cells across both lungs and lymph nodes. Tissue confirmation and genetic sub-typing are then obtained minimally invasively via flexible fibre-optic bronchoscopy or endobronchial ultrasound (EBUS) biopsy."
+              "content": "Patients with suspected thoracic malignancy undergo rapid-access contrast CT followed by fluorodeoxyglucose PET-CT scanning, which highlights metabolically active tumour cells across both lungs and lymph nodes. Tissue confirmation and genetic sub-typing are then obtained minimally invasively via flexible fibre-optic bronchoscopy or endobronchial ultrasound (EBUS) biopsy.",
+              "studio_audio": "/audio/sources/edexcel_medicine/lesson_4_5_sB.mp3",
+              "studio_voice_label": "NHS Thoracic Diagnostic Pathway…"
             }
           ],
           "content": "<p><span class=\"para-ref\">[2.1]</span> Conventional 2D chest X-rays were inadequate for detecting early lung cancer, as small tumours remained hidden behind the heart and ribcage shadows. Modern diagnosis was revolutionised by **high-resolution CT scans**, which rotate around the patient's thorax to assemble hundreds of digital cross-sections, pinpointing microscopic nodules long before they cause noticeable physical symptoms or severe respiratory distress.</p><p><span class=\"para-ref\">[2.2]</span> Oncology centres combine CT with advanced **PET-CT tracer imaging**, injecting radioactive glucose that lights up fast-growing cancer cells to show whether tumours are active and spreading. Specialists then perform a **bronchoscopy and tissue biopsy**, sliding a thin flexible camera down the airways to extract cellular tissue, confirming the precise histological subtype of cancer to design targeted clinical treatments.</p>",
@@ -33461,7 +33771,9 @@ export default {
               "question": "How do keyhole VATS surgery and stereotactic radiotherapy (CyberKnife/SABR, Source C) improve survival for frail lung cancer patients?",
               "model_answer": "Traditional open thoracotomy required sawing or spreading ribs apart, causing severe pain, pneumonia, and long hospital stays. **Keyhole VATS** removes lung lobes through tiny camera ports, while computer-guided **stereotactic radiotherapy (SABR/CyberKnife)** tracks the patient’s breathing to fire converging high-dose radiation beams right into inoperable tumours while sparing healthy lung tissue.",
               "text": "Video-Assisted Thoracoscopic Surgery (VATS) enables surgeons to resect cancerous lung lobes through three small intercostal ports guided by high-definition cameras, halving post-operative pain and hospital stay. For patients unfit for anaesthesia, Stereotactic Ablative Radiotherapy (SABR / CyberKnife) delivers concentrated multi-angle radiation beams tracking respiratory motion to within a millimetre.",
-              "content": "Video-Assisted Thoracoscopic Surgery (VATS) enables surgeons to resect cancerous lung lobes through three small intercostal ports guided by high-definition cameras, halving post-operative pain and hospital stay. For patients unfit for anaesthesia, Stereotactic Ablative Radiotherapy (SABR / CyberKnife) delivers concentrated multi-angle radiation beams tracking respiratory motion to within a millimetre."
+              "content": "Video-Assisted Thoracoscopic Surgery (VATS) enables surgeons to resect cancerous lung lobes through three small intercostal ports guided by high-definition cameras, halving post-operative pain and hospital stay. For patients unfit for anaesthesia, Stereotactic Ablative Radiotherapy (SABR / CyberKnife) delivers concentrated multi-angle radiation beams tracking respiratory motion to within a millimetre.",
+              "studio_audio": "/audio/sources/edexcel_medicine/lesson_4_5_sC.mp3",
+              "studio_voice_label": "Royal College of Surgeons Clinic…"
             }
           ],
           "content": "<p><span class=\"para-ref\">[3.1]</span> Historically, surgical removal of lung tumours required major open thoracotomy, a high-risk operation cutting through chest muscles and spreading ribs that caused severe pain and prolonged recovery. Modern thoracic surgeons instead utilise **VATS keyhole lobectomy**, inserting microscopic cameras and surgical instruments through tiny incisions, meaning traumatic **open-chest rib spreading** was avoided and patient recovery times were drastically reduced in hospital wards.</p><p><span class=\"para-ref\">[3.2]</span> For elderly patients or those too frail for surgery, modern oncology utilises advanced radiotherapy systems like the **CyberKnife pinpoint rays**. This robotic machine fires targeted beams of high-dose radiation from hundreds of angles directly into the tumour while tracking patient breathing, destroying malignant cancer cells while preserving surrounding healthy lung tissue from destructive radiation damage.</p>",
@@ -33499,7 +33811,9 @@ export default {
               "question": "How have pharmacogenomics and immunotherapy (Source D) applied the DNA revolution directly to modern lung cancer treatment?",
               "model_answer": "Sequencing the DNA of a patient’s bronchoscopy biopsy identifies specific driver mutations (such as **EGFR** or **ALK**), allowing doctors to prescribe daily oral targeted-therapy tablets that block tumour growth with far fewer side effects than cytotoxic chemotherapy, while **immunotherapy** antibodies strip away the chemical camouflage cancer cells use to hide from T-cells.",
               "text": "Routine genomic profiling of lung biopsy tissue now screens for actionable mutations including EGFR, ALK, and ROS1. Instead of exposing every patient solely to systemic cytotoxic chemotherapy, clinicians prescribe targeted tyrosine-kinase inhibitors or checkpoint immunotherapies (such as pembrolizumab) that unmask tumour cells so the patient’s own immune T-cells destroy them.",
-              "content": "Routine genomic profiling of lung biopsy tissue now screens for actionable mutations including EGFR, ALK, and ROS1. Instead of exposing every patient solely to systemic cytotoxic chemotherapy, clinicians prescribe targeted tyrosine-kinase inhibitors or checkpoint immunotherapies (such as pembrolizumab) that unmask tumour cells so the patient’s own immune T-cells destroy them."
+              "content": "Routine genomic profiling of lung biopsy tissue now screens for actionable mutations including EGFR, ALK, and ROS1. Instead of exposing every patient solely to systemic cytotoxic chemotherapy, clinicians prescribe targeted tyrosine-kinase inhibitors or checkpoint immunotherapies (such as pembrolizumab) that unmask tumour cells so the patient’s own immune T-cells destroy them.",
+              "studio_audio": "/audio/sources/edexcel_medicine/lesson_4_5_sD.mp3",
+              "studio_voice_label": "Cancer Research UK Briefing on P…"
             }
           ],
           "content": "<p><span class=\"para-ref\">[4.1]</span> In the twenty-first century, decoding the human genome transformed modern lung cancer treatment from blunt chemotherapy into precision genetic oncology. Pathologists perform routine **tumour DNA sequencing** on biopsy tissue to identify specific genetic mutations that stimulate tumour growth, such as EGFR mutations, allowing oncologists to personalise therapy to each individual patient's unique cellular profile and cancer characteristics.</p><p><span class=\"para-ref\">[4.2]</span> Doctors prescribe advanced **targeted pharmacotherapy** drugs that block the specific molecular proteins feeding the tumour, halting cancer progression without destroying healthy blood cells. Alongside this, **targeted immunotherapy** medications unmask cancer cells, training the patient’s own immune system to identify and destroy malignant tumours, significantly extending life expectancy for patients with advanced lung cancer across NHS hospitals.</p>",
@@ -33540,7 +33854,9 @@ export default {
               "image": "/images/plain_cigarette_packaging_uk.jpg",
               "src": "/images/plain_cigarette_packaging_uk.jpg",
               "source": "/images/plain_cigarette_packaging_uk.jpg",
-              "image_url": "/images/plain_cigarette_packaging_uk.jpg"
+              "image_url": "/images/plain_cigarette_packaging_uk.jpg",
+              "studio_audio": "/audio/sources/edexcel_medicine/lesson_4_5_sE.mp3",
+              "studio_voice_label": "UK Government Compulsion"
             }
           ],
           "content": "<p><span class=\"para-ref\">[5.1]</span> While high-tech oncology improved survival rates, the British government recognised that prevention was vastly more effective than attempting to cure advanced disease. The decisive legislative breakthrough was the landmark **2007 smoking ban**, prohibiting smoking in all enclosed workplaces, restaurants, and public transport across England, virtually eliminating deadly secondhand smoke exposure and encouraging thousands of citizens to quit permanently.</p><p><span class=\"para-ref\">[5.2]</span> Parliament reinforced prevention through **standardised plain tobacco packaging (2016)**, replacing branded logos with standardised drab olive boxes covered in graphic health warnings. Looking ahead, statutory initiatives like the proposed **smoke-free generation law** aim to raise the legal smoking age annually, proving that government legislation and public health education remain the most decisive weapons against lung cancer.</p>",
@@ -33862,7 +34178,9 @@ export default {
           },
           "text": "A statistical investigation was carried out in twenty London hospitals to determine whether patients suffering from cancer of the lung differed in their smoking habits from patients suffering from other diseases... Among 649 men with carcinoma of the lung, only two (0.3%) were non-smokers, compared with twenty-seven (4.2%) in the control group. Among heavy smokers (consuming 25 or more cigarettes a day), the ratio was even more striking: 26.0% of the lung cancer patients were heavy smokers compared with only 13.5% of the controls... The association between smoking and carcinoma of the lung is not due to chance. It is concluded that smoking is a factor, and an important factor, in the production of carcinoma of the lung.",
           "source_context": "Prior to their research, most doctors assumed the dramatic rise in lung cancer was caused by tarred motor roads or atmospheric industrial coal smog. Doll himself was a heavy smoker who gave up cigarettes halfway through compiling the statistics.",
-          "question_type": "Turning Point & Limits"
+          "question_type": "Turning Point & Limits",
+          "studio_audio": "/audio/sources/edexcel_medicine/lesson_4_5_sA.mp3",
+          "studio_voice_label": "Richard Doll and Austin Bradford…"
         },
         {
           "id": "med_l20_source_ct_bronchoscopy",
@@ -33882,7 +34200,9 @@ export default {
           "question": "Why did replacing 2D chest X-rays with PET-CT scans and fibre-optic bronchoscopy (Source B) transform lung cancer diagnosis and staging?",
           "model_answer": "Flat 2D chest X-rays often miss early coin-sized nodules hidden behind ribs or the heart. A **PET-CT scan** injects mildly radioactive glucose that fast-growing cancer cells absorb brightly on a 3D map, while a **flexible bronchoscope** threads a miniature camera and ultrasound biopsy needle down the windpipe without cutting open the chest.",
           "text": "Patients with suspected thoracic malignancy undergo rapid-access contrast CT followed by fluorodeoxyglucose PET-CT scanning, which highlights metabolically active tumour cells across both lungs and lymph nodes. Tissue confirmation and genetic sub-typing are then obtained minimally invasively via flexible fibre-optic bronchoscopy or endobronchial ultrasound (EBUS) biopsy.",
-          "content": "Patients with suspected thoracic malignancy undergo rapid-access contrast CT followed by fluorodeoxyglucose PET-CT scanning, which highlights metabolically active tumour cells across both lungs and lymph nodes. Tissue confirmation and genetic sub-typing are then obtained minimally invasively via flexible fibre-optic bronchoscopy or endobronchial ultrasound (EBUS) biopsy."
+          "content": "Patients with suspected thoracic malignancy undergo rapid-access contrast CT followed by fluorodeoxyglucose PET-CT scanning, which highlights metabolically active tumour cells across both lungs and lymph nodes. Tissue confirmation and genetic sub-typing are then obtained minimally invasively via flexible fibre-optic bronchoscopy or endobronchial ultrasound (EBUS) biopsy.",
+          "studio_audio": "/audio/sources/edexcel_medicine/lesson_4_5_sB.mp3",
+          "studio_voice_label": "NHS Thoracic Diagnostic Pathway…"
         },
         {
           "id": "med_l20_source_vats_stereotactic",
@@ -33902,7 +34222,9 @@ export default {
           "question": "How do keyhole VATS surgery and stereotactic radiotherapy (CyberKnife/SABR, Source C) improve survival for frail lung cancer patients?",
           "model_answer": "Traditional open thoracotomy required sawing or spreading ribs apart, causing severe pain, pneumonia, and long hospital stays. **Keyhole VATS** removes lung lobes through tiny camera ports, while computer-guided **stereotactic radiotherapy (SABR/CyberKnife)** tracks the patient’s breathing to fire converging high-dose radiation beams right into inoperable tumours while sparing healthy lung tissue.",
           "text": "Video-Assisted Thoracoscopic Surgery (VATS) enables surgeons to resect cancerous lung lobes through three small intercostal ports guided by high-definition cameras, halving post-operative pain and hospital stay. For patients unfit for anaesthesia, Stereotactic Ablative Radiotherapy (SABR / CyberKnife) delivers concentrated multi-angle radiation beams tracking respiratory motion to within a millimetre.",
-          "content": "Video-Assisted Thoracoscopic Surgery (VATS) enables surgeons to resect cancerous lung lobes through three small intercostal ports guided by high-definition cameras, halving post-operative pain and hospital stay. For patients unfit for anaesthesia, Stereotactic Ablative Radiotherapy (SABR / CyberKnife) delivers concentrated multi-angle radiation beams tracking respiratory motion to within a millimetre."
+          "content": "Video-Assisted Thoracoscopic Surgery (VATS) enables surgeons to resect cancerous lung lobes through three small intercostal ports guided by high-definition cameras, halving post-operative pain and hospital stay. For patients unfit for anaesthesia, Stereotactic Ablative Radiotherapy (SABR / CyberKnife) delivers concentrated multi-angle radiation beams tracking respiratory motion to within a millimetre.",
+          "studio_audio": "/audio/sources/edexcel_medicine/lesson_4_5_sC.mp3",
+          "studio_voice_label": "Royal College of Surgeons Clinic…"
         },
         {
           "id": "med_l20_source_pharmacogenomics_lung",
@@ -33922,7 +34244,9 @@ export default {
           "question": "How have pharmacogenomics and immunotherapy (Source D) applied the DNA revolution directly to modern lung cancer treatment?",
           "model_answer": "Sequencing the DNA of a patient’s bronchoscopy biopsy identifies specific driver mutations (such as **EGFR** or **ALK**), allowing doctors to prescribe daily oral targeted-therapy tablets that block tumour growth with far fewer side effects than cytotoxic chemotherapy, while **immunotherapy** antibodies strip away the chemical camouflage cancer cells use to hide from T-cells.",
           "text": "Routine genomic profiling of lung biopsy tissue now screens for actionable mutations including EGFR, ALK, and ROS1. Instead of exposing every patient solely to systemic cytotoxic chemotherapy, clinicians prescribe targeted tyrosine-kinase inhibitors or checkpoint immunotherapies (such as pembrolizumab) that unmask tumour cells so the patient’s own immune T-cells destroy them.",
-          "content": "Routine genomic profiling of lung biopsy tissue now screens for actionable mutations including EGFR, ALK, and ROS1. Instead of exposing every patient solely to systemic cytotoxic chemotherapy, clinicians prescribe targeted tyrosine-kinase inhibitors or checkpoint immunotherapies (such as pembrolizumab) that unmask tumour cells so the patient’s own immune T-cells destroy them."
+          "content": "Routine genomic profiling of lung biopsy tissue now screens for actionable mutations including EGFR, ALK, and ROS1. Instead of exposing every patient solely to systemic cytotoxic chemotherapy, clinicians prescribe targeted tyrosine-kinase inhibitors or checkpoint immunotherapies (such as pembrolizumab) that unmask tumour cells so the patient’s own immune T-cells destroy them.",
+          "studio_audio": "/audio/sources/edexcel_medicine/lesson_4_5_sD.mp3",
+          "studio_voice_label": "Cancer Research UK Briefing on P…"
         },
         {
           "id": "source_e_govt_antismoking_combined",
@@ -33946,7 +34270,9 @@ export default {
           "image": "/images/plain_cigarette_packaging_uk.jpg",
           "src": "/images/plain_cigarette_packaging_uk.jpg",
           "source": "/images/plain_cigarette_packaging_uk.jpg",
-          "image_url": "/images/plain_cigarette_packaging_uk.jpg"
+          "image_url": "/images/plain_cigarette_packaging_uk.jpg",
+          "studio_audio": "/audio/sources/edexcel_medicine/lesson_4_5_sE.mp3",
+          "studio_voice_label": "UK Government Compulsion"
         }
       ],
       "do_now": {
@@ -34859,7 +35185,9 @@ export default {
       },
       "banner_image": "/images/edexcel_medicine/kt4/med_kt4_5_banner_surgeon_general_smoking_1964_nih.jpg",
       "enquiry": "How have modern science and government action combined to fight lung cancer?",
-      "banner_caption": "Epidemiology Confronts Big Tobacco (11 January 1964): Surgeon General Dr Luther Terry (at lectern) and his medical advisory panel unveil the landmark Smoking and Health report confirming the causal link between cigarette smoking and lung cancer first established in Britain by Richard Doll and Austin Bradford Hill (National Institutes of Health)."
+      "banner_caption": "Epidemiology Confronts Big Tobacco (11 January 1964): Surgeon General Dr Luther Terry (at lectern) and his medical advisory panel unveil the landmark Smoking and Health report confirming the causal link between cigarette smoking and lung cancer first established in Britain by Richard Doll and Austin Bradford Hill (National Institutes of Health).",
+      "prologue_audio": "/audio/lessons/edexcel_medicine/lesson_4_5_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · Historian"
     },
     {
       "id": "lesson_5_1",
@@ -35206,7 +35534,9 @@ export default {
               "text": "The state of the ground defies description. The communication trenches have ceased to exist, having been obliterated by continuous heavy shelling and turned into channels of liquid clay three to four feet deep. Relieving stretcher squads took six hours to convey a single severely wounded casualty over a distance of barely two miles from the frontline aid post to the dressing station. Four bearers carried the stretcher while two accompanied them with poles to haul the bearers out when they sank to their waists. Several walking wounded fell into water-filled shell craters in the dark and were drowned before assistance could reach them.",
               "source_context": "RAMC War Diary, October 1917. The Third Battle of Ypres (Passchendaele) saw the destruction of all drainage dykes, creating unprecedented mud.",
               "question": "Study Source B. How useful is Source B for an enquiry into the problems of evacuating wounded soldiers in the Ypres Salient in 1917?",
-              "model_answer": "Source B is highly useful because this October 1917 RAMC Field Ambulance war diary gives candid eyewitness detail of how Passchendaele shelling obliterated communication trenches and turned Flanders clay into waist-deep liquid mud, forcing six bearers to take six hours to carry one casualty two miles. However, it records only one waterlogged Ypres sector during severe autumn rains and cannot show firmer chalk evacuation conditions at Arras or Cambrai."
+              "model_answer": "Source B is highly useful because this October 1917 RAMC Field Ambulance war diary gives candid eyewitness detail of how Passchendaele shelling obliterated communication trenches and turned Flanders clay into waist-deep liquid mud, forcing six bearers to take six hours to carry one casualty two miles. However, it records only one waterlogged Ypres sector during severe autumn rains and cannot show firmer chalk evacuation conditions at Arras or Cambrai.",
+              "studio_audio": "/audio/sources/edexcel_medicine/lesson_5_1_sB.mp3",
+              "studio_voice_label": "From the Official War Diary of a…"
             }
           ],
           "content": "<p><span class=\"para-ref\">[2.1]</span> To survive relentless artillery bombardments, British soldiers constructed sophisticated earthworks six to seven feet deep. To contain explosive shell fragments, trenches followed a defensive **zig-zag trench layout** with right-angled bends called traverses. This structural design prevented flying shrapnel from sweeping down long ditches and stopped enemy trench-raiders from firing unchecked along entire frontline lengths.</p><p><span class=\"para-ref\">[2.2]</span> Earthworks were divided into alternating **firebays and traverses**, providing sandbagged positions where riflemen stood on wooden firesteps to repel enemy infantry assaults. Sandbagged **parapets and rear parados earthworks** shielded soldiers’ heads from direct sniper fire and rear blast splinters, while wooden floor duckboards were laid over drainage sumps to keep soldiers' boots elevated out of freezing standing water.</p>",
@@ -35378,7 +35708,9 @@ export default {
                 "source_context": "Account of Thompson's Cave, Arras, 1917. Over 24,000 British and Commonwealth troops sheltered in the Arras caves before zero hour."
               },
               "text": "Beneath the ruined city of Arras lies a subterranean city carved out of ancient chalk quarries by the New Zealand Tunnelling Company. Here, thirty feet below ground, safe from the heaviest German artillery, the RAMC has established a fully equipped hospital known as Thompson's Cave. It contains 700 hospital beds arranged in long chalk galleries, fully fitted operating theatres with electric lighting, a mortuary, and piped water. Wounded men are brought directly from the battlefront through underground communication tunnels without ever coming into view of enemy observers or exposing stretcher bearers to shellfire.",
-              "source_context": "Account of Thompson's Cave, Arras, 1917. Over 24,000 British and Commonwealth troops sheltered in the Arras caves before zero hour."
+              "source_context": "Account of Thompson's Cave, Arras, 1917. Over 24,000 British and Commonwealth troops sheltered in the Arras caves before zero hour.",
+              "studio_audio": "/audio/sources/edexcel_medicine/lesson_5_1_sD.mp3",
+              "studio_voice_label": "From an Account by a British Arm…"
             }
           ],
           "content": "<p><span class=\"para-ref\">[4.1]</span> In northern France, the ancient city of Arras sat above vast subterranean chalk quarries excavated during the Middle Ages. In late 1916, British and New Zealand tunnelling companies connected these chalk caverns, excavating over eight miles of **Arras underground chalk tunnels** to conceal twenty-five thousand assault troops directly beneath German frontline positions ahead of the planned 1917 offensive.</p><p><span class=\"para-ref\">[4.2]</span> Within these bombproof chalk caverns, the RAMC constructed a **700-bed underground hospital in Thompson’s Cave**, a subterranean medical station located just eight hundred yards behind the frontline. Powered by generator-driven **electric lighting and piped running water**, the complex contained fully functioning surgical operating theatres, triage wards, and mortuaries, allowing military surgeons to operate safely under intense surface artillery bombardments without interruption.</p>",
@@ -35412,7 +35744,9 @@ export default {
                 "source_context": "Report by DGAMS on Somme casualties, 1916. The Somme marked the bloodiest day in British military history."
               },
               "text": "The scale of casualties on the opening day of the Somme offensive (1 July 1916) completely overwhelmed all pre-arranged medical calculations. Over 57,000 British casualties occurred in twenty-four hours, of whom nearly 20,000 were killed. Casualty Clearing Stations, designed to accommodate a maximum of 200 to 300 patients, were engulfed by upwards of a thousand casualties each before midday. Operating surgeons worked forty-eight hours without sleep, performing emergency amputations and wound dressings in tent corridors as stretchers covered acres of open farmland awaiting evacuation trains.",
-              "source_context": "Report by DGAMS on Somme casualties, 1916. The Somme marked the bloodiest day in British military history."
+              "source_context": "Report by DGAMS on Somme casualties, 1916. The Somme marked the bloodiest day in British military history.",
+              "studio_audio": "/audio/sources/edexcel_medicine/lesson_5_1_sE.mp3",
+              "studio_voice_label": "From an Official Report by the D…"
             }
           ],
           "content": "<p><span class=\"para-ref\">[5.1]</span> Large-scale industrial offensives exerted unprecedented pressure on British medical infrastructure. On 1 July 1916, the British Army suffered the devastating opening day of the **Battle of the Somme**, sustaining 57,470 casualties on the opening day alone. The overwhelming flood of wounded soldiers swamped frontline medical stations, exhausting stretcher bearer units and exposing severe logistical weaknesses in casualty evacuation along trench networks.</p><p><span class=\"para-ref\">[5.2]</span> In November 1917, the British launched the **Battle of Cambrai**, deploying over four hundred tanks supported by surprise artillery fire. To support this advance, the army deployed the world's first stored blood depot. Managing intense **mass casualty triage strain** during these giant offensives compelled military medical authorities to modernise surgical triage, motor transport, and blood storage.</p>",
@@ -35461,7 +35795,9 @@ export default {
           "text": "The state of the ground defies description. The communication trenches have ceased to exist, having been obliterated by continuous heavy shelling and turned into channels of liquid clay three to four feet deep. Relieving stretcher squads took six hours to convey a single severely wounded casualty over a distance of barely two miles from the frontline aid post to the dressing station. Four bearers carried the stretcher while two accompanied them with poles to haul the bearers out when they sank to their waists. Several walking wounded fell into water-filled shell craters in the dark and were drowned before assistance could reach them.",
           "source_context": "RAMC War Diary, October 1917. The Third Battle of Ypres (Passchendaele) saw the destruction of all drainage dykes, creating unprecedented mud.",
           "question": "Study Source B. How useful is Source B for an enquiry into the problems of evacuating wounded soldiers in the Ypres Salient in 1917?",
-          "model_answer": "Source B is highly useful because this October 1917 RAMC Field Ambulance war diary gives candid eyewitness detail of how Passchendaele shelling obliterated communication trenches and turned Flanders clay into waist-deep liquid mud, forcing six bearers to take six hours to carry one casualty two miles. However, it records only one waterlogged Ypres sector during severe autumn rains and cannot show firmer chalk evacuation conditions at Arras or Cambrai."
+          "model_answer": "Source B is highly useful because this October 1917 RAMC Field Ambulance war diary gives candid eyewitness detail of how Passchendaele shelling obliterated communication trenches and turned Flanders clay into waist-deep liquid mud, forcing six bearers to take six hours to carry one casualty two miles. However, it records only one waterlogged Ypres sector during severe autumn rains and cannot show firmer chalk evacuation conditions at Arras or Cambrai.",
+          "studio_audio": "/audio/sources/edexcel_medicine/lesson_5_1_sB.mp3",
+          "studio_voice_label": "From the Official War Diary of a…"
         },
         {
           "id": "med_l21_source_c",
@@ -35500,7 +35836,9 @@ export default {
             "source_context": "Account of Thompson's Cave, Arras, 1917. Over 24,000 British and Commonwealth troops sheltered in the Arras caves before zero hour."
           },
           "text": "Beneath the ruined city of Arras lies a subterranean city carved out of ancient chalk quarries by the New Zealand Tunnelling Company. Here, thirty feet below ground, safe from the heaviest German artillery, the RAMC has established a fully equipped hospital known as Thompson's Cave. It contains 700 hospital beds arranged in long chalk galleries, fully fitted operating theatres with electric lighting, a mortuary, and piped water. Wounded men are brought directly from the battlefront through underground communication tunnels without ever coming into view of enemy observers or exposing stretcher bearers to shellfire.",
-          "source_context": "Account of Thompson's Cave, Arras, 1917. Over 24,000 British and Commonwealth troops sheltered in the Arras caves before zero hour."
+          "source_context": "Account of Thompson's Cave, Arras, 1917. Over 24,000 British and Commonwealth troops sheltered in the Arras caves before zero hour.",
+          "studio_audio": "/audio/sources/edexcel_medicine/lesson_5_1_sD.mp3",
+          "studio_voice_label": "From an Account by a British Arm…"
         },
         {
           "id": "med_l21_source_e",
@@ -35517,7 +35855,9 @@ export default {
             "source_context": "Report by DGAMS on Somme casualties, 1916. The Somme marked the bloodiest day in British military history."
           },
           "text": "The scale of casualties on the opening day of the Somme offensive (1 July 1916) completely overwhelmed all pre-arranged medical calculations. Over 57,000 British casualties occurred in twenty-four hours, of whom nearly 20,000 were killed. Casualty Clearing Stations, designed to accommodate a maximum of 200 to 300 patients, were engulfed by upwards of a thousand casualties each before midday. Operating surgeons worked forty-eight hours without sleep, performing emergency amputations and wound dressings in tent corridors as stretchers covered acres of open farmland awaiting evacuation trains.",
-          "source_context": "Report by DGAMS on Somme casualties, 1916. The Somme marked the bloodiest day in British military history."
+          "source_context": "Report by DGAMS on Somme casualties, 1916. The Somme marked the bloodiest day in British military history.",
+          "studio_audio": "/audio/sources/edexcel_medicine/lesson_5_1_sE.mp3",
+          "studio_voice_label": "From an Official Report by the D…"
         }
       ],
       "vocab": [
@@ -36156,7 +36496,9 @@ export default {
                   "content_inferences": "Source B directly reveals how artillery destroyed communication trenches and turned Flanders clay into \"channels of liquid clay three to four feet deep\", forcing teams of **six men** (four carrying the stretcher and two hauling bearers out with poles—up from the textbook two-to-four) six exhausting hours to carry one casualty barely two miles.",
                   "provenance_evaluation": "As an **official War Diary** recorded contemporaneously in **October 1917** by an **RAMC Field Ambulance officer** serving at Third Ypres (Passchendaele), the author was an eyewitness responsible for frontline bearer relays and recorded operational bottlenecks candidly for military logistics rather than home-front propaganda.",
                   "context_limitations": "Matches wider knowledge of **Passchendaele’s heaviest autumn rains in 30 years**, where waterlogged Flanders soil lacked chalk drainage. However, Source B covers only one bogged-down Ypres sector in October 1917 and cannot show firmer chalk evacuation conditions at **Arras** or **Cambrai**."
-                }
+                },
+                "studio_audio": "/audio/sources/edexcel_medicine/lesson_5_1_sB.mp3",
+                "studio_voice_label": "From the Official War Diary of a…"
               }
             ]
           }
@@ -36649,7 +36991,9 @@ export default {
       },
       "banner_image": "/images/edexcel_medicine/kt5/med_kt5_l51_banner_menin_road_ypres_1917.jpg",
       "enquiry": "How did the geography of the British sector and trench design shape medical challenges on the Western Front?",
-      "banner_caption": "Casualties Awaiting Evacuation Along the Menin Road, Ypres Sector (September 1917): Stretcher cases and walking wounded gather beside a ditched lorry along the shell-swept Menin Road during the Third Battle of Ypres."
+      "banner_caption": "Casualties Awaiting Evacuation Along the Menin Road, Ypres Sector (September 1917): Stretcher cases and walking wounded gather beside a ditched lorry along the shell-swept Menin Road during the Third Battle of Ypres.",
+      "prologue_audio": "/audio/lessons/edexcel_medicine/lesson_5_1_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · Historian"
     },
     {
       "id": "lesson_5_2",
@@ -36919,7 +37263,9 @@ export default {
               "text": "1. Every man before entering the frontline trenches must grease his feet thoroughly with whale oil provided at company stores.\n2. Company commanders will ensure that every soldier carries two pairs of dry socks in his haversack. A dry pair must be put on every twelve hours, and the wet pair dried around the neck inside the tunic.\n3. Platoon officers will hold a daily foot inspection in the firebays. Every soldier will remove his boots and puttees in the presence of an officer or NCO, rub his feet with oil, and rub his comrade's feet. Any officer whose platoon reports preventable cases of trench foot will be required to explain why disciplinary standing orders were neglected.",
               "source_context": "2nd Battalion Standing Orders, 1915. Whale oil created a waterproof barrier over the skin.",
               "question": "Study Source B. How useful is Source B for an enquiry into attempts by the British Army to prevent trench foot on the Western Front?",
-              "model_answer": "Source B is very useful as binding December 1915 battalion standing orders showing official preventative discipline: daily whale-oil rubbing using ten gallons per battalion, carrying two spare pairs of dry socks, and paired foot inspections. However, military orders only show what officers commanded rather than whether soldiers pinned down under heavy shelling could actually remove wet boots in flooded trenches."
+              "model_answer": "Source B is very useful as binding December 1915 battalion standing orders showing official preventative discipline: daily whale-oil rubbing using ten gallons per battalion, carrying two spare pairs of dry socks, and paired foot inspections. However, military orders only show what officers commanded rather than whether soldiers pinned down under heavy shelling could actually remove wet boots in flooded trenches.",
+              "studio_audio": "/audio/sources/edexcel_medicine/lesson_5_2_sB.mp3",
+              "studio_voice_label": "From 2nd Battalion Routine Stand…"
             }
           ],
           "content": "<p><span class=\"para-ref\">[2.1]</span> Recognising that trench foot drained frontline fighting strength, the British Army introduced strict preventative discipline. Every soldier was ordered to rub grease into their skin, performing a mandatory **daily whale-oil foot rub** to create a waterproof barrier repelling damp. In addition, the army distributed thousands of pairs of clean socks, enforcing a strict **twice-daily foot inspection and dry-sock routine** by battalion officers.</p><p><span class=\"para-ref\">[2.2]</span> Command established **buddy-system partner checks**, pairing soldiers together with instructions to examine, dry, and massage each other's feet daily. Drainage channels were deepened and duckboards elevated across trench floors. Because commanding officers faced disciplinary court-martial if their men contracted the condition, trench foot cases plummeted dramatically across the British sector by 1917.</p>",
@@ -36951,7 +37297,9 @@ export default {
                 "source_context": "War Office Trench Fever Committee Report, 1918. Over 1 million British soldiers contracted trench fever during WW1."
               },
               "text": "Trench Fever (Pyrexia of Unknown Origin) has been responsible for the loss of more rifle strength than any other single disease on the Western Front. Over 15% of all non-combat hospital admissions are due to this relapsing 5-day fever, which causes severe headaches, high pyrexia, and agonising pain in the shins and back.\nOur laboratory investigations confirm beyond doubt that the disease is transmitted by the body louse (Pediculus humanus). The infection is not inoculated by the bite of the insect itself, but by the soldier scratching louse excreta into broken skin. Complete eradication depends entirely on regular steam delousing of uniforms in Divisional de-lousing plants and the frequent provision of clean clothing.",
-              "source_context": "War Office Trench Fever Committee Report, 1918. Over 1 million British soldiers contracted trench fever during WW1."
+              "source_context": "War Office Trench Fever Committee Report, 1918. Over 1 million British soldiers contracted trench fever during WW1.",
+              "studio_audio": "/audio/sources/edexcel_medicine/lesson_5_2_sC.mp3",
+              "studio_voice_label": "From a Report by the British War…"
             }
           ],
           "content": "<p><span class=\"para-ref\">[3.1]</span> Alongside cold injuries, soldiers lived in unhygienic conditions infested with vermin. Millions of microscopic **body lice in uniform seams** multiplied in soldiers' warm woollen clothing, biting skin and causing uncontrollable itching. When men scratched their bites, lice faeces entered open skin abrasions, transmitting the bacterium *Bartonella quintana* and incapacitating up to fifteen percent of frontline troops across the Western Front.</p><p><span class=\"para-ref\">[3.2]</span> This infection caused **trench fever (PUO)**—Pyrexia of Unknown Origin—triggering sudden high fevers, pounding headaches, and agonising shooting pains across soldiers' shins that disabled men for six to eight weeks. To eradicate lice, the RAMC established **mobile delousing steam baths** and chemical fumigation wagons behind frontline trenches, baking uniforms in high-temperature steam autoclaves to kill lice eggs.</p>",
@@ -36988,7 +37336,9 @@ export default {
               "question": "How did RAMC Sanitary Sections combat dysentery in the trenches (Source D), and why did soldiers hate chlorinated water?",
               "model_answer": "RAMC Sanitary Sections dug deep fly-proof bucket latrines treated with cresol/lime and purified drinking water in horse-drawn and motor water-carts using **chloride of lime** (bleaching powder). Although chlorination prevented catastrophic cholera or typhoid epidemics, its harsh chemical taste tempted thirsty soldiers under fire to drink contaminated shell-hole water.",
               "text": "Summer heat and swarms of bluebottle flies breeding around shallow trench latrines have caused sharp outbreaks of bacillary dysentery. Every regimental water-cart drawing from village wells or canal barges must be dosed strictly with chloride of lime thirty minutes before issue, and men are forbidden under disciplinary penalty to drink unboiled water from shell craters.",
-              "content": "Summer heat and swarms of bluebottle flies breeding around shallow trench latrines have caused sharp outbreaks of bacillary dysentery. Every regimental water-cart drawing from village wells or canal barges must be dosed strictly with chloride of lime thirty minutes before issue, and men are forbidden under disciplinary penalty to drink unboiled water from shell craters."
+              "content": "Summer heat and swarms of bluebottle flies breeding around shallow trench latrines have caused sharp outbreaks of bacillary dysentery. Every regimental water-cart drawing from village wells or canal barges must be dosed strictly with chloride of lime thirty minutes before issue, and men are forbidden under disciplinary penalty to drink unboiled water from shell craters.",
+              "studio_audio": "/audio/sources/edexcel_medicine/lesson_5_2_sD.mp3",
+              "studio_voice_label": "Report of an RAMC Divisional San…"
             }
           ],
           "content": "<p><span class=\"para-ref\">[4.1]</span> In crowded, muddy trenches, maintaining hygiene was essential to stop infectious disease. Overflowing latrines, unwashed hands, and swarms of flies feeding on human excrement and corpses caused severe **latrine pit contamination**. This spread bacterial gastroenteritis, plunging soldiers into **severe dysentery diarrhoea**, accompanied by violent vomiting, high fevers, and dangerous dehydration that threatened to decimate entire military battalions.</p><p><span class=\"para-ref\">[4.2]</span> To prevent devastating waterborne epidemics, the RAMC enforced rigorous sanitary discipline. Latrines were dug five feet deep, disinfected daily with chloride of lime, and sealed when abandoned. Crucially, the army introduced universal **water chlorination purification**, treating all drinking water supplies with chlorine tablets, strictly forbidding troops from drinking contaminated puddle water collected inside battlefield shell holes.</p>",
@@ -37021,7 +37371,9 @@ export default {
                 "source_context": "RAMC Case Notes on NYDN, 1917. Over 80,000 British soldiers were treated for shellshock during the war."
               },
               "text": "Private J. H., aged 21. Admitted to casualty post classified as NYDN (Not Yet Diagnosed, Nervous). The patient was subjected to forty-eight hours of ceaseless drumfire barrage in a dugout near Sanctuary Wood that was twice buried by high-explosive shell bursts. On arrival, he was incapable of speech (hysterical mutism), exhibited violent coarse tremors of both hands, and flinched in terror at the slightest sound. His pupils were widely dilated, and he could not stand without falling.\nIn 1915, such men were suspected of malingering or cowardice; we now recognise this acute condition as shellshock caused by severe atmospheric concussion, sensory overload, and emotional exhaustion. He has been transferred to a specialist neurological clearing hospital for rest and sedation.",
-              "source_context": "RAMC Case Notes on NYDN, 1917. Over 80,000 British soldiers were treated for shellshock during the war."
+              "source_context": "RAMC Case Notes on NYDN, 1917. Over 80,000 British soldiers were treated for shellshock during the war.",
+              "studio_audio": "/audio/sources/edexcel_medicine/lesson_5_2_sE.mp3",
+              "studio_voice_label": "From Medical Case Notes of an RA…"
             }
           ],
           "content": "<p><span class=\"para-ref\">[5.1]</span> Days-long high-explosive artillery bombardments subjected frontline troops to unimaginable psychological horror. Relentless concussive blasts, being buried alive in collapsed earth dugouts, and witnessing gruesome battlefield trauma produced widespread mental breakdowns known as **shell shock trauma**. Over eighty thousand British soldiers were formally diagnosed with the condition, which the army initially labelled \"Not Yet Diagnosed (Nervous)\" to prevent widespread panic among fighting battalions.</p><p><span class=\"para-ref\">[5.2]</span> Sufferers exhibited severe physical symptoms, including uncontrollable **tremors, limb paralysis, and mutism**, terrifying nightmares, and complete cognitive disorientation without showing physical external wounds. While military authorities initially accused traumatised men of cowardice or malingering, doctors gradually recognised psychiatric trauma. Specialised institutions like **Craiglockhart psychiatric care** in Edinburgh pioneered compassionate psychoanalysis and rest therapies to rehabilitate traumatised soldiers.</p>",
@@ -37069,7 +37421,9 @@ export default {
           "text": "1. Every man before entering the frontline trenches must grease his feet thoroughly with whale oil provided at company stores.\n2. Company commanders will ensure that every soldier carries two pairs of dry socks in his haversack. A dry pair must be put on every twelve hours, and the wet pair dried around the neck inside the tunic.\n3. Platoon officers will hold a daily foot inspection in the firebays. Every soldier will remove his boots and puttees in the presence of an officer or NCO, rub his feet with oil, and rub his comrade's feet. Any officer whose platoon reports preventable cases of trench foot will be required to explain why disciplinary standing orders were neglected.",
           "source_context": "2nd Battalion Standing Orders, 1915. Whale oil created a waterproof barrier over the skin.",
           "question": "Study Source B. How useful is Source B for an enquiry into attempts by the British Army to prevent trench foot on the Western Front?",
-          "model_answer": "Source B is very useful as binding December 1915 battalion standing orders showing official preventative discipline: daily whale-oil rubbing using ten gallons per battalion, carrying two spare pairs of dry socks, and paired foot inspections. However, military orders only show what officers commanded rather than whether soldiers pinned down under heavy shelling could actually remove wet boots in flooded trenches."
+          "model_answer": "Source B is very useful as binding December 1915 battalion standing orders showing official preventative discipline: daily whale-oil rubbing using ten gallons per battalion, carrying two spare pairs of dry socks, and paired foot inspections. However, military orders only show what officers commanded rather than whether soldiers pinned down under heavy shelling could actually remove wet boots in flooded trenches.",
+          "studio_audio": "/audio/sources/edexcel_medicine/lesson_5_2_sB.mp3",
+          "studio_voice_label": "From 2nd Battalion Routine Stand…"
         },
         {
           "id": "med_l22_source_d",
@@ -37086,7 +37440,9 @@ export default {
             "source_context": "War Office Trench Fever Committee Report, 1918. Over 1 million British soldiers contracted trench fever during WW1."
           },
           "text": "Trench Fever (Pyrexia of Unknown Origin) has been responsible for the loss of more rifle strength than any other single disease on the Western Front. Over 15% of all non-combat hospital admissions are due to this relapsing 5-day fever, which causes severe headaches, high pyrexia, and agonising pain in the shins and back.\nOur laboratory investigations confirm beyond doubt that the disease is transmitted by the body louse (Pediculus humanus). The infection is not inoculated by the bite of the insect itself, but by the soldier scratching louse excreta into broken skin. Complete eradication depends entirely on regular steam delousing of uniforms in Divisional de-lousing plants and the frequent provision of clean clothing.",
-          "source_context": "War Office Trench Fever Committee Report, 1918. Over 1 million British soldiers contracted trench fever during WW1."
+          "source_context": "War Office Trench Fever Committee Report, 1918. Over 1 million British soldiers contracted trench fever during WW1.",
+          "studio_audio": "/audio/sources/edexcel_medicine/lesson_5_2_sC.mp3",
+          "studio_voice_label": "From a Report by the British War…"
         },
         {
           "id": "med_l22_source_dysentery_water_1916",
@@ -37106,7 +37462,9 @@ export default {
           "question": "How did RAMC Sanitary Sections combat dysentery in the trenches (Source D), and why did soldiers hate chlorinated water?",
           "model_answer": "RAMC Sanitary Sections dug deep fly-proof bucket latrines treated with cresol/lime and purified drinking water in horse-drawn and motor water-carts using **chloride of lime** (bleaching powder). Although chlorination prevented catastrophic cholera or typhoid epidemics, its harsh chemical taste tempted thirsty soldiers under fire to drink contaminated shell-hole water.",
           "text": "Summer heat and swarms of bluebottle flies breeding around shallow trench latrines have caused sharp outbreaks of bacillary dysentery. Every regimental water-cart drawing from village wells or canal barges must be dosed strictly with chloride of lime thirty minutes before issue, and men are forbidden under disciplinary penalty to drink unboiled water from shell craters.",
-          "content": "Summer heat and swarms of bluebottle flies breeding around shallow trench latrines have caused sharp outbreaks of bacillary dysentery. Every regimental water-cart drawing from village wells or canal barges must be dosed strictly with chloride of lime thirty minutes before issue, and men are forbidden under disciplinary penalty to drink unboiled water from shell craters."
+          "content": "Summer heat and swarms of bluebottle flies breeding around shallow trench latrines have caused sharp outbreaks of bacillary dysentery. Every regimental water-cart drawing from village wells or canal barges must be dosed strictly with chloride of lime thirty minutes before issue, and men are forbidden under disciplinary penalty to drink unboiled water from shell craters.",
+          "studio_audio": "/audio/sources/edexcel_medicine/lesson_5_2_sD.mp3",
+          "studio_voice_label": "Report of an RAMC Divisional San…"
         },
         {
           "id": "med_l22_source_e",
@@ -37123,7 +37481,9 @@ export default {
             "source_context": "RAMC Case Notes on NYDN, 1917. Over 80,000 British soldiers were treated for shellshock during the war."
           },
           "text": "Private J. H., aged 21. Admitted to casualty post classified as NYDN (Not Yet Diagnosed, Nervous). The patient was subjected to forty-eight hours of ceaseless drumfire barrage in a dugout near Sanctuary Wood that was twice buried by high-explosive shell bursts. On arrival, he was incapable of speech (hysterical mutism), exhibited violent coarse tremors of both hands, and flinched in terror at the slightest sound. His pupils were widely dilated, and he could not stand without falling.\nIn 1915, such men were suspected of malingering or cowardice; we now recognise this acute condition as shellshock caused by severe atmospheric concussion, sensory overload, and emotional exhaustion. He has been transferred to a specialist neurological clearing hospital for rest and sedation.",
-          "source_context": "RAMC Case Notes on NYDN, 1917. Over 80,000 British soldiers were treated for shellshock during the war."
+          "source_context": "RAMC Case Notes on NYDN, 1917. Over 80,000 British soldiers were treated for shellshock during the war.",
+          "studio_audio": "/audio/sources/edexcel_medicine/lesson_5_2_sE.mp3",
+          "studio_voice_label": "From Medical Case Notes of an RA…"
         }
       ],
       "vocab": [
@@ -37707,7 +38067,9 @@ export default {
                   "content_inferences": "Source B shows the Army enforced practical preventative routines: greasing feet with **whale oil** (10 gallons issued daily per battalion), carrying **two spare pairs of dry socks**, and pairing men in mutual foot-rubbing inspections to keep circulation flowing.",
                   "provenance_evaluation": "Issued as **2nd Battalion Routine Standing Orders in December 1915** after the devastating first winter in Flanders, its purpose was binding military discipline enforced by company officers—making it highly reliable evidence of official army prevention policy.",
                   "context_limitations": "Matches wider preventative engineering (wooden **duckboards**, mechanical trench pumps, gumboots, and braziers). However, standing orders show **what was commanded**, not whether exhausted soldiers under heavy shelling at Passchendaele could actually remove boots or stay dry."
-                }
+                },
+                "studio_audio": "/audio/sources/edexcel_medicine/lesson_5_2_sB.mp3",
+                "studio_voice_label": "From 2nd Battalion Routine Stand…"
               }
             ]
           }
@@ -38201,7 +38563,9 @@ export default {
       },
       "banner_image": "/images/edexcel_medicine/kt5/med_kt5_l52_banner_passchendaele_mud_q5943.jpg",
       "enquiry": "How did the horrific physical environment of the trenches create widespread non-combat medical crises?",
-      "banner_caption": "An exhausted horse team and regimental water cart bogged down in liquid Flanders mud during Passchendaele (11 August 1917), illustrating waterlogged conditions that caused trench foot and delayed evacuation."
+      "banner_caption": "An exhausted horse team and regimental water cart bogged down in liquid Flanders mud during Passchendaele (11 August 1917), illustrating waterlogged conditions that caused trench foot and delayed evacuation.",
+      "prologue_audio": "/audio/lessons/edexcel_medicine/lesson_5_2_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · Historian"
     },
     {
       "id": "lesson_5_3",
@@ -38444,7 +38808,9 @@ export default {
               },
               "text": "The devastating nature of modern artillery shrapnel exceeds anything in medical history. When a high explosive shell detonates, it shatters into hundreds of jagged, irregular steel fragments travelling at supersonic velocity. These hot jagged fragments rip through flesh, pulverising bone into splinters and driving fragments of mud, filthy wool uniform, and manure deep into the tissues. Infection is instantaneous; clean bullet wounds are almost unknown.",
               "question": "Why were high-explosive shell splinters and shrapnel balls (Source A, responsible for ~58% of Western Front wounds) far more likely to trigger fatal infection than smooth high-velocity rifle bullets?",
-              "content": "The devastating nature of modern artillery shrapnel exceeds anything in medical history. When a high explosive shell detonates, it shatters into hundreds of jagged, irregular steel fragments travelling at supersonic velocity. These hot jagged fragments rip through flesh, pulverising bone into splinters and driving fragments of mud, filthy wool uniform, and manure deep into the tissues. Infection is instantaneous; clean bullet wounds are almost unknown."
+              "content": "The devastating nature of modern artillery shrapnel exceeds anything in medical history. When a high explosive shell detonates, it shatters into hundreds of jagged, irregular steel fragments travelling at supersonic velocity. These hot jagged fragments rip through flesh, pulverising bone into splinters and driving fragments of mud, filthy wool uniform, and manure deep into the tissues. Infection is instantaneous; clean bullet wounds are almost unknown.",
+              "studio_audio": "/audio/sources/edexcel_medicine/lesson_5_3_sA.mp3",
+              "studio_voice_label": "Report of an RAMC Consulting Sur…"
             }
           ],
           "content": "<p><span class=\"para-ref\">[1.1]</span> Battlefield trauma on the Western Front was dominated by industrial artillery, which caused approximately fifty-eight percent of all wounds, compared to thirty-nine percent caused by rifle bullets and machine guns. Exploding **high explosive shrapnel shells** hurled metal casing fragments and hundreds of lead balls through the air at supersonic speeds, shattering limbs, penetrating protective trenches, and causing horrific open cavities in soft muscle tissue.</p><p><span class=\"para-ref\">[1.2]</span> High-velocity **steel ball fragmentation** ripped through flesh, pulverising bones into compound fractures and carrying muddy uniform fabric deep into open wound beds. These jagged penetrating metal fragments caused **catastrophic arterial haemorrhage**, severing femoral and brachial blood vessels and plunging wounded soldiers into fatal hypovolaemic shock within minutes unless medical orderlies applied tourniquets under fire.</p>",
@@ -38476,7 +38842,9 @@ export default {
               "text": "Flanders farmland is saturated with animal manure through centuries of intensive cultivation, containing dense spores of tetanus and anaerobic gas gangrene bacilli (Clostridium perfringens). When a shell splinter tears into a thigh or buttock, it drives fragments of mud-caked serge uniform deep into the lacerated muscle.\nIn the deep, oxygen-deprived wound track, the anaerobic bacteria proliferate with terrifying speed, fermenting muscle tissue and producing foul gas bubbles beneath the skin within twelve hours. The limb turns purple, cold, and crackles like dry parchment under the surgeon's touch (crepitation). Antiseptics poured onto the surface are completely useless; unless the entire wound track is widely excised (debridement) or the limb amputated immediately, the soldier dies of systemic toxaemia.",
               "source_context": "RAMC Report on Gas Gangrene, 1916. Clostridium perfringens flourishes without oxygen.",
               "question": "Study Source B. How useful is Source B for an enquiry into why wound infection and gas gangrene were such serious medical problems on the Western Front?",
-              "model_answer": "Source B is highly useful because an experienced RAMC surgeon explains in 1916 how shell splinters drove manured Flanders soil and dirty uniform cloth into deep, oxygen-starved wounds where anaerobic Clostridium perfringens bacteria caused fatal gas gangrene within hours. While it shows clearly why surface antiseptics failed and immediate debridement or amputation was vital, this single 1916 report does not cover later Carrel-Dakin tube irrigation."
+              "model_answer": "Source B is highly useful because an experienced RAMC surgeon explains in 1916 how shell splinters drove manured Flanders soil and dirty uniform cloth into deep, oxygen-starved wounds where anaerobic Clostridium perfringens bacteria caused fatal gas gangrene within hours. While it shows clearly why surface antiseptics failed and immediate debridement or amputation was vital, this single 1916 report does not cover later Carrel-Dakin tube irrigation.",
+              "studio_audio": "/audio/sources/edexcel_medicine/lesson_5_3_sB.mp3",
+              "studio_voice_label": "From an RAMC Surgical Report on…"
             }
           ],
           "content": "<p><span class=\"para-ref\">[2.1]</span> Compounding battlefield trauma, the agricultural terrain of northern France and Flanders presented a deadly microbiological hazard. For centuries, intense crop farming had enriched the **manured Flanders farmland** with heavy animal fertiliser, saturating the damp clay soil with lethal anaerobic spore-forming bacteria, including Clostridium tetani and Clostridium perfringens, which thrived deep inside oxygen-deprived subterranean mud.</p><p><span class=\"para-ref\">[2.2]</span> When shrapnel tore through soldiers' uniforms, it injected manured soil carrying **tetanus and gas gangrene bacilli** deep into torn, blood-deprived muscle pockets. Deprived of oxygen, these microbes multiplied rapidly, producing toxins that caused **anaerobic tissue rotting** and bubbling subcutaneous gas. Gas gangrene destroyed healthy flesh in hours, forcing surgeons to perform radical emergency debridement to prevent fatal systemic blood poisoning.</p>",
@@ -38512,7 +38880,9 @@ export default {
               "source_context": "Before spring 1916, British infantry entered frontline trenches wearing soft peaked cloth service caps beneath overhead shrapnel air-bursts; inventor John Leopold Brodie patented his shallow manganese-steel helmet in 1915 for mass issue across the BEF.",
               "provenance": "Official medical report submitted by RAMC Consulting Surgeons in France to the War Office Medical Department, 1916.",
               "text": "Prior to the general issue of the protective steel helmet in the spring of 1916, low-velocity shrapnel balls and jagged shell splinters striking the soft cloth service cap almost invariably fractured the skull and drove infected cloth and bone fragments deep into the brain. Since every battalion in the front line has been equipped with the Brodie manganese-steel helmet, fatal penetrating shrapnel wounds of the cranium have fallen dramatically, and our clearing stations now treat large numbers of men suffering only mild concussion or scalp lacerations who six months ago would have perished instantly in the fire-trench.",
-              "content": "Prior to the general issue of the protective steel helmet in the spring of 1916, low-velocity shrapnel balls and jagged shell splinters striking the soft cloth service cap almost invariably fractured the skull and drove infected cloth and bone fragments deep into the brain. Since every battalion in the front line has been equipped with the Brodie manganese-steel helmet, fatal penetrating shrapnel wounds of the cranium have fallen dramatically, and our clearing stations now treat large numbers of men suffering only mild concussion or scalp lacerations who six months ago would have perished instantly in the fire-trench."
+              "content": "Prior to the general issue of the protective steel helmet in the spring of 1916, low-velocity shrapnel balls and jagged shell splinters striking the soft cloth service cap almost invariably fractured the skull and drove infected cloth and bone fragments deep into the brain. Since every battalion in the front line has been equipped with the Brodie manganese-steel helmet, fatal penetrating shrapnel wounds of the cranium have fallen dramatically, and our clearing stations now treat large numbers of men suffering only mild concussion or scalp lacerations who six months ago would have perished instantly in the fire-trench.",
+              "studio_audio": "/audio/sources/edexcel_medicine/lesson_5_3_sC.mp3",
+              "studio_voice_label": "Report of RAMC Consulting Surgeo…"
             }
           ],
           "content": "<p><span class=\"para-ref\">[3.1]</span> In 1914, British soldiers arrived on the Western Front wearing soft peaked cloth caps, which offered zero physical protection against descending artillery shell bursts and falling masonry. Because trench warfare forced soldiers to raise their heads above earthwork parapets to observe enemy lines, men suffered **severe shrapnel head trauma**, resulting in skull fractures, cerebral lacerations, and fatal brain haemorrhages that filled field ambulances.</p><p><span class=\"para-ref\">[3.2]</span> In late 1915, the British Army introduced the pressed-steel **Brodie helmet**. Pressed from a single sheet of hardened manganese steel with a protective rim, this circular helmet deflected falling shrapnel balls. The Brodie helmet delivered an estimated **eighty percent trauma reduction** in fatal penetrating cranial wounds across British frontline sectors, saving tens of thousands of infantry lives.</p>",
@@ -38546,7 +38916,9 @@ export default {
                 "source_context": "First chlorine attack at Second Ypres, 22 April 1915. The Germans released 168 tons of chlorine from 5,730 cylinders."
               },
               "text": "At 5 p.m. a strange, greenish-yellow vapour was seen creeping toward the Allied trenches from the German lines near Langemarck. Carried on a gentle breeze, it settled into every hollow and trench bay. Within minutes, hundreds of French and Algerian soldiers staggered through our lines coughing violently, clutching their throats and tearing open their tunics in agony. Men collapsed on the roads in convulsions, their faces turning an ashen slate-blue (cyanosis) as their lungs rapidly filled with fluid.\nWe had no anti-gas respirators of any kind. Medical officers desperately ordered men to tie handkerchiefs or flannel soaked in urine or bicarbonate of soda solution across their mouths and noses to neutralise the gas, but dozens suffocated in our dressing stations before dawn.",
-              "source_context": "First chlorine attack at Second Ypres, 22 April 1915. The Germans released 168 tons of chlorine from 5,730 cylinders."
+              "source_context": "First chlorine attack at Second Ypres, 22 April 1915. The Germans released 168 tons of chlorine from 5,730 cylinders.",
+              "studio_audio": "/audio/sources/edexcel_medicine/lesson_5_3_sD.mp3",
+              "studio_voice_label": "From an Account by an RAMC Medic…"
             }
           ],
           "content": "<p><span class=\"para-ref\">[4.1]</span> In April 1915, during the Second Battle of Ypres, German forces unleashed industrial chemical warfare by releasing cylinders of chlorine gas. The green cloud inflicted **acute chlorine asphyxiation**, reacting with bodily water to form hydrochloric acid that stripped victims' bronchial linings, causing fluid to flood internal airways so soldiers slowly drowned in their own bodily fluids.</p><p><span class=\"para-ref\">[4.2]</span> Having no protective equipment, Allied troops desperately improvised by pressing **urine-soaked cloth pads** against their faces, using ammonia in urine to neutralise the acidic chlorine vapour. In December 1915, Germany introduced **phosgene gas**, a colourless gas six times more lethal than chlorine that delayed symptoms for forty-eight hours, causing unsuspected lung collapse after casualties returned to frontline trenches.</p>",
@@ -38714,7 +39086,9 @@ export default {
           },
           "text": "The devastating nature of modern artillery shrapnel exceeds anything in medical history. When a high explosive shell detonates, it shatters into hundreds of jagged, irregular steel fragments travelling at supersonic velocity. These hot jagged fragments rip through flesh, pulverising bone into splinters and driving fragments of mud, filthy wool uniform, and manure deep into the tissues. Infection is instantaneous; clean bullet wounds are almost unknown.",
           "question": "Why were high-explosive shell splinters and shrapnel balls (Source A, responsible for ~58% of Western Front wounds) far more likely to trigger fatal infection than smooth high-velocity rifle bullets?",
-          "content": "The devastating nature of modern artillery shrapnel exceeds anything in medical history. When a high explosive shell detonates, it shatters into hundreds of jagged, irregular steel fragments travelling at supersonic velocity. These hot jagged fragments rip through flesh, pulverising bone into splinters and driving fragments of mud, filthy wool uniform, and manure deep into the tissues. Infection is instantaneous; clean bullet wounds are almost unknown."
+          "content": "The devastating nature of modern artillery shrapnel exceeds anything in medical history. When a high explosive shell detonates, it shatters into hundreds of jagged, irregular steel fragments travelling at supersonic velocity. These hot jagged fragments rip through flesh, pulverising bone into splinters and driving fragments of mud, filthy wool uniform, and manure deep into the tissues. Infection is instantaneous; clean bullet wounds are almost unknown.",
+          "studio_audio": "/audio/sources/edexcel_medicine/lesson_5_3_sA.mp3",
+          "studio_voice_label": "Report of an RAMC Consulting Sur…"
         },
         {
           "id": "med_l23_source_d",
@@ -38729,7 +39103,9 @@ export default {
           "text": "Flanders farmland is saturated with animal manure through centuries of intensive cultivation, containing dense spores of tetanus and anaerobic gas gangrene bacilli (Clostridium perfringens). When a shell splinter tears into a thigh or buttock, it drives fragments of mud-caked serge uniform deep into the lacerated muscle.\nIn the deep, oxygen-deprived wound track, the anaerobic bacteria proliferate with terrifying speed, fermenting muscle tissue and producing foul gas bubbles beneath the skin within twelve hours. The limb turns purple, cold, and crackles like dry parchment under the surgeon's touch (crepitation). Antiseptics poured onto the surface are completely useless; unless the entire wound track is widely excised (debridement) or the limb amputated immediately, the soldier dies of systemic toxaemia.",
           "source_context": "RAMC Report on Gas Gangrene, 1916. Clostridium perfringens flourishes without oxygen.",
           "question": "Study Source B. How useful is Source B for an enquiry into why wound infection and gas gangrene were such serious medical problems on the Western Front?",
-          "model_answer": "Source B is highly useful because an experienced RAMC surgeon explains in 1916 how shell splinters drove manured Flanders soil and dirty uniform cloth into deep, oxygen-starved wounds where anaerobic Clostridium perfringens bacteria caused fatal gas gangrene within hours. While it shows clearly why surface antiseptics failed and immediate debridement or amputation was vital, this single 1916 report does not cover later Carrel-Dakin tube irrigation."
+          "model_answer": "Source B is highly useful because an experienced RAMC surgeon explains in 1916 how shell splinters drove manured Flanders soil and dirty uniform cloth into deep, oxygen-starved wounds where anaerobic Clostridium perfringens bacteria caused fatal gas gangrene within hours. While it shows clearly why surface antiseptics failed and immediate debridement or amputation was vital, this single 1916 report does not cover later Carrel-Dakin tube irrigation.",
+          "studio_audio": "/audio/sources/edexcel_medicine/lesson_5_3_sB.mp3",
+          "studio_voice_label": "From an RAMC Surgical Report on…"
         },
         {
           "id": "source_c_brodie_helmet_report_1916",
@@ -38748,7 +39124,9 @@ export default {
           "source_context": "Before spring 1916, British infantry entered frontline trenches wearing soft peaked cloth service caps beneath overhead shrapnel air-bursts; inventor John Leopold Brodie patented his shallow manganese-steel helmet in 1915 for mass issue across the BEF.",
           "provenance": "Official medical report submitted by RAMC Consulting Surgeons in France to the War Office Medical Department, 1916.",
           "text": "Prior to the general issue of the protective steel helmet in the spring of 1916, low-velocity shrapnel balls and jagged shell splinters striking the soft cloth service cap almost invariably fractured the skull and drove infected cloth and bone fragments deep into the brain. Since every battalion in the front line has been equipped with the Brodie manganese-steel helmet, fatal penetrating shrapnel wounds of the cranium have fallen dramatically, and our clearing stations now treat large numbers of men suffering only mild concussion or scalp lacerations who six months ago would have perished instantly in the fire-trench.",
-          "content": "Prior to the general issue of the protective steel helmet in the spring of 1916, low-velocity shrapnel balls and jagged shell splinters striking the soft cloth service cap almost invariably fractured the skull and drove infected cloth and bone fragments deep into the brain. Since every battalion in the front line has been equipped with the Brodie manganese-steel helmet, fatal penetrating shrapnel wounds of the cranium have fallen dramatically, and our clearing stations now treat large numbers of men suffering only mild concussion or scalp lacerations who six months ago would have perished instantly in the fire-trench."
+          "content": "Prior to the general issue of the protective steel helmet in the spring of 1916, low-velocity shrapnel balls and jagged shell splinters striking the soft cloth service cap almost invariably fractured the skull and drove infected cloth and bone fragments deep into the brain. Since every battalion in the front line has been equipped with the Brodie manganese-steel helmet, fatal penetrating shrapnel wounds of the cranium have fallen dramatically, and our clearing stations now treat large numbers of men suffering only mild concussion or scalp lacerations who six months ago would have perished instantly in the fire-trench.",
+          "studio_audio": "/audio/sources/edexcel_medicine/lesson_5_3_sC.mp3",
+          "studio_voice_label": "Report of RAMC Consulting Surgeo…"
         },
         {
           "id": "med_l23_source_b",
@@ -38765,7 +39143,9 @@ export default {
             "source_context": "First chlorine attack at Second Ypres, 22 April 1915. The Germans released 168 tons of chlorine from 5,730 cylinders."
           },
           "text": "At 5 p.m. a strange, greenish-yellow vapour was seen creeping toward the Allied trenches from the German lines near Langemarck. Carried on a gentle breeze, it settled into every hollow and trench bay. Within minutes, hundreds of French and Algerian soldiers staggered through our lines coughing violently, clutching their throats and tearing open their tunics in agony. Men collapsed on the roads in convulsions, their faces turning an ashen slate-blue (cyanosis) as their lungs rapidly filled with fluid.\nWe had no anti-gas respirators of any kind. Medical officers desperately ordered men to tie handkerchiefs or flannel soaked in urine or bicarbonate of soda solution across their mouths and noses to neutralise the gas, but dozens suffocated in our dressing stations before dawn.",
-          "source_context": "First chlorine attack at Second Ypres, 22 April 1915. The Germans released 168 tons of chlorine from 5,730 cylinders."
+          "source_context": "First chlorine attack at Second Ypres, 22 April 1915. The Germans released 168 tons of chlorine from 5,730 cylinders.",
+          "studio_audio": "/audio/sources/edexcel_medicine/lesson_5_3_sD.mp3",
+          "studio_voice_label": "From an Account by an RAMC Medic…"
         },
         {
           "id": "source_e_british_ph_gas_helmet_1916",
@@ -39403,7 +39783,9 @@ export default {
                 },
                 "text": "At 5 p.m. a strange, greenish-yellow vapour was seen creeping toward the Allied trenches from the German lines near Langemarck. Carried on a gentle breeze, it settled into every hollow and trench bay. Within minutes, hundreds of French and Algerian soldiers staggered through our lines coughing violently, clutching their throats and tearing open their tunics in agony. Men collapsed on the roads in convulsions, their faces turning an ashen slate-blue (cyanosis) as their lungs rapidly filled with fluid.\nWe had no anti-gas respirators of any kind. Medical officers desperately ordered men to tie handkerchiefs or flannel soaked in urine or bicarbonate of soda solution across their mouths and noses to neutralise the gas, but dozens suffocated in our dressing stations before dawn.",
                 "enquiry_question": "Why did the first German chlorine gas attack at Second Ypres on 22 April 1915 (Source D) cause mass panic even though gas ultimately caused fewer than 1% of British wartime deaths?",
-                "source_context": "First chlorine attack at Second Ypres, 22 April 1915. The Germans released 168 tons of chlorine from 5,730 cylinders."
+                "source_context": "First chlorine attack at Second Ypres, 22 April 1915. The Germans released 168 tons of chlorine from 5,730 cylinders.",
+                "studio_audio": "/audio/sources/edexcel_medicine/lesson_5_3_sD.mp3",
+                "studio_voice_label": "From an Account by an RAMC Medic…"
               },
               {
                 "id": "source_e_british_ph_gas_helmet_1916",
@@ -39912,7 +40294,9 @@ export default {
       },
       "banner_image": "/images/edexcel_medicine/kt5/med_kt5_l53_banner_sargent_gassed_1919.jpg",
       "enquiry": "How did industrialised weaponry and manured soil create terrifying new forms of wound trauma and infection?",
-      "banner_caption": "John Singer Sargent’s Gassed (1919), depicting blinded mustard-gas casualties led by a medical orderly along wooden duckboards toward a Western Front dressing station in August 1918."
+      "banner_caption": "John Singer Sargent’s Gassed (1919), depicting blinded mustard-gas casualties led by a medical orderly along wooden duckboards toward a Western Front dressing station in August 1918.",
+      "prologue_audio": "/audio/lessons/edexcel_medicine/lesson_5_3_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · Historian"
     },
     {
       "id": "lesson_5_4",
@@ -40270,7 +40654,9 @@ export default {
                 "source_context": "Captain J. C. Dunn, 2nd Royal Welch Fusiliers. RAPs were located in dugouts, ruined cellars, or communication trenches."
               },
               "text": "The Regimental Aid Post was set up in a collapsed German dugout 200 yards behind the frontline trench. Throughout the bombardment, casualties poured in in an unending stream. My duty as Battalion Medical Officer is not to perform operations, but to execute rapid triage: stop severe arterial haemorrhage with tourniquets, dress wounds with sterile gauze, inject antitetanic serum, administer morphine to ease agony, and label each man with a coloured tag.\nThe slightly wounded are bandaged and sent back to the firing line; men with severe shrapnel lacerations or fractured limbs are tagged for immediate stretcher transport to the Advanced Dressing Station; for the hopeless, dying cases with massive brain trauma, we can only provide morphine and a quiet corner to die.",
-              "source_context": "Captain J. C. Dunn, 2nd Royal Welch Fusiliers. RAPs were located in dugouts, ruined cellars, or communication trenches."
+              "source_context": "Captain J. C. Dunn, 2nd Royal Welch Fusiliers. RAPs were located in dugouts, ruined cellars, or communication trenches.",
+              "studio_audio": "/audio/sources/edexcel_medicine/lesson_5_4_sB.mp3",
+              "studio_voice_label": "From the Diary of Captain J. C.…"
             }
           ],
           "content": "<p><span class=\"para-ref\">[2.1]</span> Located within frontline communications trenches, the **Regimental Aid Post (RAP)** operated inside a reinforced dugout, ruined farm cellar, or sandbagged bunker. Staffed by a single medical officer and orderlies, its primary responsibility was applying **emergency tourniquets and field dressings** to staunch arterial bleeding, splint fractured limbs, and administer emergency morphine injections under constant enemy shellfire.</p><p><span class=\"para-ref\">[2.2]</span> The frontline RAP could not perform internal surgery, focusing strictly on **preventing immediate blood loss** and distinguishing walking wounded from men suffering catastrophic haemorrhagic shock. Walking wounded were patched up to return to defensive duties, while critically injured casualties were swiftly dispatched rearward to the next medical stage along the chain of evacuation to save their lives from fatal collapse.</p>",
@@ -40305,7 +40691,9 @@ export default {
                 "source_context": "Inspection Report on ADS Becourt, Somme, 1916. ADS facilities were typically 1,000–2,000 yards behind the front line."
               },
               "text": "The Advanced Dressing Station at Becourt received 2,400 casualties in the space of forty-eight hours. The station comprises several reinforced sandbag huts and dugouts capable of accommodating sixty lying cases under cover. Three medical officers and twenty-four orderlies worked continuously without pause.\nThe principal work consists of inspecting frontline bandages, adjusting splints, administering warm beef tea and hot cocoa to counter surgical shock, and organising motor ambulance convoys. Of the 2,400 men admitted, 1,800 were evacuated rearward by motor ambulance within six hours to Casualty Clearing Stations Nos. 34 and 45 at Grovetown, ensuring life-saving surgical intervention before sepsis could take hold.",
-              "source_context": "Inspection Report on ADS Becourt, Somme, 1916. ADS facilities were typically 1,000–2,000 yards behind the front line."
+              "source_context": "Inspection Report on ADS Becourt, Somme, 1916. ADS facilities were typically 1,000–2,000 yards behind the front line.",
+              "studio_audio": "/audio/sources/edexcel_medicine/lesson_5_4_sC.mp3",
+              "studio_voice_label": "From an Inspection Report on Adv…"
             }
           ],
           "content": "<p><span class=\"para-ref\">[3.1]</span> Casualties moved back half a mile to **Advanced Dressing Stations (ADS)**, staffed by Field Ambulances—large mobile RAMC medical units comprising doctors, orderlies, and nursing staff. The ADS conducted systematic **Field Ambulance medical triage**, assessing wounded men in large canvas tents, dressing open wounds, treating acute shock, and administering preventative anti-tetanus serum to halt deadly lockjaw infections across all incoming casualties.</p><p><span class=\"para-ref\">[3.2]</span> From dressing stations, fleets of **motor ambulances** carried wounded men several miles rearward over paved French roads. Motor vehicles replaced agonising horse-drawn wagons from early 1915, drastically cutting transport times, preventing reopened wounds, and ensuring soldiers arrived safely at surgical clearing centres before fatal systemic bacterial infections took hold inside severely torn muscle tissue and compound fractures.</p>",
@@ -40342,7 +40730,9 @@ export default {
               "question": "Why did Casualty Clearing Stations like Remy Siding (Source D) replace Base Hospitals as the most important surgical stage on the Western Front?",
               "model_answer": "Waiting 24+ hours to reach coastal Base Hospitals allowed gas gangrene and haemorrhagic shock to kill wounded men in transit. Positioned 7–10 miles back beside railway sidings, **CCSs** sorted arrivals via strict **three-category triage**, warmed shock cases in resuscitation tents, X-rayed shrapnel, and operated within hours—saving thousands of lives and limbs.",
               "text": "In the reception marquee, the Triage Officer sorts every ambulance load swiftly into three streams: lightly wounded men dressed and sent straight to the ambulance train; urgent abdominal, chest, and compound-fracture cases carried to the warmed resuscitation ward and six operating tables; and hopeless moribund cases made peaceful with morphia by VAD nurses.",
-              "content": "In the reception marquee, the Triage Officer sorts every ambulance load swiftly into three streams: lightly wounded men dressed and sent straight to the ambulance train; urgent abdominal, chest, and compound-fracture cases carried to the warmed resuscitation ward and six operating tables; and hopeless moribund cases made peaceful with morphia by VAD nurses."
+              "content": "In the reception marquee, the Triage Officer sorts every ambulance load swiftly into three streams: lightly wounded men dressed and sent straight to the ambulance train; urgent abdominal, chest, and compound-fracture cases carried to the warmed resuscitation ward and six operating tables; and hopeless moribund cases made peaceful with morphia by VAD nurses.",
+              "studio_audio": "/audio/sources/edexcel_medicine/lesson_5_4_sD.mp3",
+              "studio_voice_label": "Surgical Sister’s Triage & Opera…"
             }
           ],
           "content": "<p><span class=\"para-ref\">[4.1]</span> Located seven to twelve miles behind frontline sectors near railway junctions, **Casualty Clearing Stations (CCS)** were the most vital surgical hubs in the chain of evacuation. Operating in tents and wooden huts, they contained **specialist surgical operating huts** where military surgeons, anaesthetists, and military nurses performed emergency operations on severely injured casualties around the clock under intense pressure.</p><p><span class=\"para-ref\">[4.2]</span> The primary objective of the CCS was performing radical surgical debridement within the **crucial 24-hour infection window**, excising contaminated tissue before lethal gas gangrene took hold. To handle mass casualties during major offensives, the CCS operated strict triage: the walking wounded, those needing immediate emergency surgery, and hopelessly dying casualties made comfortable with morphine injections.</p>",
@@ -40375,7 +40765,9 @@ export default {
               "text": "In the winter of 1916, our FANY convoy took over the transport of casualties between the railway siding and the coastal Base Hospitals in Calais. The British military authorities had initially refused to allow women drivers near the front, claiming the work was too harrowing and dangerous for females. We proved them wrong.\nWe drive heavy motor ambulances through blizzards and pitch-black nights without headlights to avoid attracting German bomber aircraft. The roads are torn by shell holes and choked with military supply wagons. We change heavy pneumatic tyres in freezing mud, repair broken fan belts, and clean blood and vomit from the ambulance stretchers between runs. Our ambulances can transport four lying casualties on stretchers or eight sitting cases, moving men to hospital beds in minutes rather than hours.",
               "source_context": "FANY driver memoir, 1917. FANY was founded in 1907; the British Army formally accepted female ambulance drivers in January 1916.",
               "question": "Study Source E. How useful is Source E for an enquiry into the contribution of FANY volunteers to casualty transport on the Western Front?",
-              "model_answer": "Source E is very useful first-hand testimony from a FANY driver at Calais showing how from winter 1916 women volunteers drove motor ambulances in blackouts, repaired heavy engines in freezing mud, and freed male RAMC orderlies for frontline service. However, as a memoir from the coastal Calais rail-to-base sector, it cannot show frontline stretcher-bearers, horse-drawn wagons, or canal barges further inland."
+              "model_answer": "Source E is very useful first-hand testimony from a FANY driver at Calais showing how from winter 1916 women volunteers drove motor ambulances in blackouts, repaired heavy engines in freezing mud, and freed male RAMC orderlies for frontline service. However, as a memoir from the coastal Calais rail-to-base sector, it cannot show frontline stretcher-bearers, horse-drawn wagons, or canal barges further inland.",
+              "studio_audio": "/audio/sources/edexcel_medicine/lesson_5_4_sE.mp3",
+              "studio_voice_label": "From the Memoir of an Ambulance…"
             }
           ],
           "content": "<p><span class=\"para-ref\">[5.1]</span> Once operated on and stabilised at clearing stations, casualties were loaded onto ambulance trains travelling to large **base hospitals near French ports** like Boulogne, Le Havre, and Rouen. These coastal facilities had thousands of beds and specialised departments for chest wounds, head trauma, and orthopaedic surgery, staffed by skilled doctors and civilian volunteer nurses working in clean wards.</p><p><span class=\"para-ref\">[5.2]</span> Transport between clearing stations and coastal ports utilised heated **ambulance trains and hospital canal barges**. Converted canal barges carried men with severe abdominal and head injuries smoothly along calm French waterways, preventing painful road vibration. Patients who permanently lost limbs or suffered disabling trauma were evacuated via hospital ships on **'Blighty' ship evacuations** home to Britain for long-term recovery.</p>",
@@ -40506,7 +40898,9 @@ export default {
             "source_context": "Captain J. C. Dunn, 2nd Royal Welch Fusiliers. RAPs were located in dugouts, ruined cellars, or communication trenches."
           },
           "text": "The Regimental Aid Post was set up in a collapsed German dugout 200 yards behind the frontline trench. Throughout the bombardment, casualties poured in in an unending stream. My duty as Battalion Medical Officer is not to perform operations, but to execute rapid triage: stop severe arterial haemorrhage with tourniquets, dress wounds with sterile gauze, inject antitetanic serum, administer morphine to ease agony, and label each man with a coloured tag.\nThe slightly wounded are bandaged and sent back to the firing line; men with severe shrapnel lacerations or fractured limbs are tagged for immediate stretcher transport to the Advanced Dressing Station; for the hopeless, dying cases with massive brain trauma, we can only provide morphine and a quiet corner to die.",
-          "source_context": "Captain J. C. Dunn, 2nd Royal Welch Fusiliers. RAPs were located in dugouts, ruined cellars, or communication trenches."
+          "source_context": "Captain J. C. Dunn, 2nd Royal Welch Fusiliers. RAPs were located in dugouts, ruined cellars, or communication trenches.",
+          "studio_audio": "/audio/sources/edexcel_medicine/lesson_5_4_sB.mp3",
+          "studio_voice_label": "From the Diary of Captain J. C.…"
         },
         {
           "id": "med_l24_source_e",
@@ -40523,7 +40917,9 @@ export default {
             "source_context": "Inspection Report on ADS Becourt, Somme, 1916. ADS facilities were typically 1,000–2,000 yards behind the front line."
           },
           "text": "The Advanced Dressing Station at Becourt received 2,400 casualties in the space of forty-eight hours. The station comprises several reinforced sandbag huts and dugouts capable of accommodating sixty lying cases under cover. Three medical officers and twenty-four orderlies worked continuously without pause.\nThe principal work consists of inspecting frontline bandages, adjusting splints, administering warm beef tea and hot cocoa to counter surgical shock, and organising motor ambulance convoys. Of the 2,400 men admitted, 1,800 were evacuated rearward by motor ambulance within six hours to Casualty Clearing Stations Nos. 34 and 45 at Grovetown, ensuring life-saving surgical intervention before sepsis could take hold.",
-          "source_context": "Inspection Report on ADS Becourt, Somme, 1916. ADS facilities were typically 1,000–2,000 yards behind the front line."
+          "source_context": "Inspection Report on ADS Becourt, Somme, 1916. ADS facilities were typically 1,000–2,000 yards behind the front line.",
+          "studio_audio": "/audio/sources/edexcel_medicine/lesson_5_4_sC.mp3",
+          "studio_voice_label": "From an Inspection Report on Adv…"
         },
         {
           "id": "med_l24_source_ccs_triage_1917",
@@ -40543,7 +40939,9 @@ export default {
           "question": "Why did Casualty Clearing Stations like Remy Siding (Source D) replace Base Hospitals as the most important surgical stage on the Western Front?",
           "model_answer": "Waiting 24+ hours to reach coastal Base Hospitals allowed gas gangrene and haemorrhagic shock to kill wounded men in transit. Positioned 7–10 miles back beside railway sidings, **CCSs** sorted arrivals via strict **three-category triage**, warmed shock cases in resuscitation tents, X-rayed shrapnel, and operated within hours—saving thousands of lives and limbs.",
           "text": "In the reception marquee, the Triage Officer sorts every ambulance load swiftly into three streams: lightly wounded men dressed and sent straight to the ambulance train; urgent abdominal, chest, and compound-fracture cases carried to the warmed resuscitation ward and six operating tables; and hopeless moribund cases made peaceful with morphia by VAD nurses.",
-          "content": "In the reception marquee, the Triage Officer sorts every ambulance load swiftly into three streams: lightly wounded men dressed and sent straight to the ambulance train; urgent abdominal, chest, and compound-fracture cases carried to the warmed resuscitation ward and six operating tables; and hopeless moribund cases made peaceful with morphia by VAD nurses."
+          "content": "In the reception marquee, the Triage Officer sorts every ambulance load swiftly into three streams: lightly wounded men dressed and sent straight to the ambulance train; urgent abdominal, chest, and compound-fracture cases carried to the warmed resuscitation ward and six operating tables; and hopeless moribund cases made peaceful with morphia by VAD nurses.",
+          "studio_audio": "/audio/sources/edexcel_medicine/lesson_5_4_sD.mp3",
+          "studio_voice_label": "Surgical Sister’s Triage & Opera…"
         },
         {
           "id": "med_l24_source_d",
@@ -40558,7 +40956,9 @@ export default {
           "text": "In the winter of 1916, our FANY convoy took over the transport of casualties between the railway siding and the coastal Base Hospitals in Calais. The British military authorities had initially refused to allow women drivers near the front, claiming the work was too harrowing and dangerous for females. We proved them wrong.\nWe drive heavy motor ambulances through blizzards and pitch-black nights without headlights to avoid attracting German bomber aircraft. The roads are torn by shell holes and choked with military supply wagons. We change heavy pneumatic tyres in freezing mud, repair broken fan belts, and clean blood and vomit from the ambulance stretchers between runs. Our ambulances can transport four lying casualties on stretchers or eight sitting cases, moving men to hospital beds in minutes rather than hours.",
           "source_context": "FANY driver memoir, 1917. FANY was founded in 1907; the British Army formally accepted female ambulance drivers in January 1916.",
           "question": "Study Source E. How useful is Source E for an enquiry into the contribution of FANY volunteers to casualty transport on the Western Front?",
-          "model_answer": "Source E is very useful first-hand testimony from a FANY driver at Calais showing how from winter 1916 women volunteers drove motor ambulances in blackouts, repaired heavy engines in freezing mud, and freed male RAMC orderlies for frontline service. However, as a memoir from the coastal Calais rail-to-base sector, it cannot show frontline stretcher-bearers, horse-drawn wagons, or canal barges further inland."
+          "model_answer": "Source E is very useful first-hand testimony from a FANY driver at Calais showing how from winter 1916 women volunteers drove motor ambulances in blackouts, repaired heavy engines in freezing mud, and freed male RAMC orderlies for frontline service. However, as a memoir from the coastal Calais rail-to-base sector, it cannot show frontline stretcher-bearers, horse-drawn wagons, or canal barges further inland.",
+          "studio_audio": "/audio/sources/edexcel_medicine/lesson_5_4_sE.mp3",
+          "studio_voice_label": "From the Memoir of an Ambulance…"
         }
       ],
       "vocab": [
@@ -41634,7 +42034,9 @@ export default {
       },
       "banner_image": "/images/edexcel_medicine/kt5/med_kt5_l54_banner_ccs_ambulance_bertrancourt_1918.jpg",
       "enquiry": "How did the Chain of Evacuation move wounded soldiers from frontline trenches to hospitals?",
-      "banner_caption": "Loading Stretcher Cases into a Motor Ambulance at Bertrancourt Casualty Clearing Station (6 April 1918, Official Photograph by H. A. Sanders): Motorised ambulance convoys linked forward dressing stations with railhead surgical hubs."
+      "banner_caption": "Loading Stretcher Cases into a Motor Ambulance at Bertrancourt Casualty Clearing Station (6 April 1918, Official Photograph by H. A. Sanders): Motorised ambulance convoys linked forward dressing stations with railhead surgical hubs.",
+      "prologue_audio": "/audio/lessons/edexcel_medicine/lesson_5_4_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · Historian"
     },
     {
       "id": "lesson_5_5",
@@ -41904,7 +42306,9 @@ export default {
                 "source_context": "Carrel and Dakin, The Treatment of Infected Wounds, 1916. Sodium hypochlorite was unstable and had to be freshly prepared every 24 hours."
               },
               "text": "Traditional antiseptic treatment failed completely in war wounds because chemical agents like carbolic acid killed healthy white blood cells and coagulated proteins without reaching bacteria sheltered in deep muscle crevices.\nOur method involves two vital steps: first, the complete surgical debridement of all devitalised tissue, dead muscle, and accessible foreign matter; second, the continuous or intermittent instillation of a non-irritating antiseptic solution (buffered sodium hypochlorite, 0.5%) through a network of perforated rubber tubes embedded directly into the recesses of the wound.\nThe solution dissolves dead tissue without injuring healthy granulation cells and rapidly sterilises the wound. Cultures taken from the wound track show that bacteria drop to zero within five to eight days, allowing us to perform secondary delayed closure without fear of gangrene.",
-              "source_context": "Carrel and Dakin, The Treatment of Infected Wounds, 1916. Sodium hypochlorite was unstable and had to be freshly prepared every 24 hours."
+              "source_context": "Carrel and Dakin, The Treatment of Infected Wounds, 1916. Sodium hypochlorite was unstable and had to be freshly prepared every 24 hours.",
+              "studio_audio": "/audio/sources/edexcel_medicine/lesson_5_5_sB.mp3",
+              "studio_voice_label": "From a Paper by Dr Alexis Carrel…"
             }
           ],
           "content": "<p><span class=\"para-ref\">[2.1]</span> In deep, jagged shrapnel lacerations where complete surgical excision risked cutting major arteries, surgeons required a reliable clinical method to cleanse bacteria without burning living cells. In 1915, French surgeon Alexis Carrel and English biochemist Henry Dakin developed the **Carrel-Dakin chemical flushing** technique, revolutionising wound management across military hospitals on the Western Front.</p><p><span class=\"para-ref\">[2.2]</span> The method utilised a sterilised **sodium hypochlorite antiseptic solution** (mild chemical bleach), which killed virulent anaerobic bacteria without destroying delicate white blood cells. The fluid was delivered continuously through small **perforated rubber tubes** stitched directly into wound depths, flushing out bacterial poisons continuously and saving tens of thousands of limbs from traumatic surgical amputation across military field hospitals in France.</p>",
@@ -41936,7 +42340,9 @@ export default {
               "text": "In 1914 and 1915, fractured thigh bones (compound fractures of the femur) resulted in a mortality rate exceeding 80 per cent. The jagged bone ends, vibrating freely in transit over rutted roads, lacerated muscles, severed the femoral artery causing fatal internal haemorrhage, and pierced the skin, allowing lethal soil bacteria into the wound.\nSince the universal introduction of my late uncle Hugh Owen Thomas's knee splint to field ambulances in 1916, this appalling figure has been transformed. Every stretcher bearer is trained to apply the splint before moving a man from the battlefield. The rigid steel side bars and traction stirrup keep the broken bone completely immobilised and under continuous extension. Today, the mortality rate for compound femur fractures stands at less than 20 per cent, and thousands of men are restored to functional limbs.",
               "source_context": "Sir Robert Jones, report on the Thomas Splint, 1917. Jones was Inspector of Military Orthopaedics.",
               "question": "Study Source C. How useful is Source C for an enquiry into the impact of the Thomas Splint on survival rates on the Western Front?",
-              "model_answer": "Source C is highly useful because Sir Robert Jones—Inspector of Military Orthopaedics who oversaw RAMC training from late 1915—provides army-wide figures showing that immobilising compound femur fractures with the Thomas traction splint slashed mortality from over 80% in 1914–15 to under 20% by 1917. Even though Jones championed his uncle’s invention and focused solely on thigh fractures, his clinical explanation of stopping bone ends severing the femoral artery is authoritative."
+              "model_answer": "Source C is highly useful because Sir Robert Jones—Inspector of Military Orthopaedics who oversaw RAMC training from late 1915—provides army-wide figures showing that immobilising compound femur fractures with the Thomas traction splint slashed mortality from over 80% in 1914–15 to under 20% by 1917. Even though Jones championed his uncle’s invention and focused solely on thigh fractures, his clinical explanation of stopping bone ends severing the femoral artery is authoritative.",
+              "studio_audio": "/audio/sources/edexcel_medicine/lesson_5_5_sC.mp3",
+              "studio_voice_label": "From an Official Report by Sir R…"
             }
           ],
           "content": "<p><span class=\"para-ref\">[3.1]</span> In 1914, eighty percent of British soldiers suffering compound femur fractures died on the battlefield. When the thigh bone snapped, violent muscle spasms pulled sharp, jagged bone ends past one another, tearing the femoral artery, inducing massive internal haemorrhage, causing severe blood loss, and plunging the soldier into fatal surgical shock during transit over bumpy trench duckboards.</p><p><span class=\"para-ref\">[3.2]</span> In December 1915, Welsh orthopaedic surgeon Robert Jones mandated the **Thomas splint** across Western Front medical units. Designed for every **compound femur fracture**, this steel frame encircled the leg, applying continuous mechanical traction that held broken bone ends rigid. By preventing internal vascular tearing and bone displacement, the splint triggered a dramatic **surge in survival rates from 20% to 82%** by 1916 across British clearing stations.</p>",
@@ -42007,7 +42413,9 @@ export default {
                 "source_context": "Memoir of a CCS surgeon, Poperinghe, 1917. Poperinghe was the primary hospital railhead behind Ypres."
               },
               "text": "During the heavy fighting at Passchendaele, our Casualty Clearing Station operated day and night without interruption. Each surgical team worked a twelve-hour shift, but when the push peaked, we worked twenty-four to thirty-six hours at a stretch. The operating theatre was a long hut with four tables; as soon as one case was bandaged and carried away to the evacuation ward, another was placed on the table.\nThe chief enemy was time. If a soldier with a shattered limb or perforated bowel reached us within the 'golden twelve hours', we had an excellent chance of saving his life by wide wound excision and saline infusions. If he lay out in a shell hole for two or three days, bacterial invasion was so entrenched that amputation was the only option, and even then, half died of toxaemia and shock.",
-              "source_context": "Memoir of a CCS surgeon, Poperinghe, 1917. Poperinghe was the primary hospital railhead behind Ypres."
+              "source_context": "Memoir of a CCS surgeon, Poperinghe, 1917. Poperinghe was the primary hospital railhead behind Ypres.",
+              "studio_audio": "/audio/sources/edexcel_medicine/lesson_5_5_sE.mp3",
+              "studio_voice_label": "From the Memoir of a British Arm…"
             }
           ],
           "content": "<p><span class=\"para-ref\">[5.1]</span> Despite their clinical brilliance, mobile radiographic units faced severe technical and operational challenges. Fragile equipment was difficult to operate in muddy field conditions, where **overheating glass X-ray tubes** forced operators to pause examinations after several scans to prevent tubes from cracking, severely restricting throughput during major industrial battle offensives with thousands of incoming wounded men arriving from trenches.</p><p><span class=\"para-ref\">[5.2]</span> Transporting **fragile radiographic equipment** over shell-pitted roads frequently shattered delicate glass photographic plates. Furthermore, long photographic exposure times created **screening delays under fire**, while X-rays could not depict non-metallic debris like soil, wood splinters, and muddy uniform cloth. Surgeons still had to rely on meticulous manual exploration during debridement to remove organic matter before infection took hold inside damaged muscle.</p>",
@@ -42059,7 +42467,9 @@ export default {
             "source_context": "Carrel and Dakin, The Treatment of Infected Wounds, 1916. Sodium hypochlorite was unstable and had to be freshly prepared every 24 hours."
           },
           "text": "Traditional antiseptic treatment failed completely in war wounds because chemical agents like carbolic acid killed healthy white blood cells and coagulated proteins without reaching bacteria sheltered in deep muscle crevices.\nOur method involves two vital steps: first, the complete surgical debridement of all devitalised tissue, dead muscle, and accessible foreign matter; second, the continuous or intermittent instillation of a non-irritating antiseptic solution (buffered sodium hypochlorite, 0.5%) through a network of perforated rubber tubes embedded directly into the recesses of the wound.\nThe solution dissolves dead tissue without injuring healthy granulation cells and rapidly sterilises the wound. Cultures taken from the wound track show that bacteria drop to zero within five to eight days, allowing us to perform secondary delayed closure without fear of gangrene.",
-          "source_context": "Carrel and Dakin, The Treatment of Infected Wounds, 1916. Sodium hypochlorite was unstable and had to be freshly prepared every 24 hours."
+          "source_context": "Carrel and Dakin, The Treatment of Infected Wounds, 1916. Sodium hypochlorite was unstable and had to be freshly prepared every 24 hours.",
+          "studio_audio": "/audio/sources/edexcel_medicine/lesson_5_5_sB.mp3",
+          "studio_voice_label": "From a Paper by Dr Alexis Carrel…"
         },
         {
           "id": "med_l25_source_b",
@@ -42074,7 +42484,9 @@ export default {
           "text": "In 1914 and 1915, fractured thigh bones (compound fractures of the femur) resulted in a mortality rate exceeding 80 per cent. The jagged bone ends, vibrating freely in transit over rutted roads, lacerated muscles, severed the femoral artery causing fatal internal haemorrhage, and pierced the skin, allowing lethal soil bacteria into the wound.\nSince the universal introduction of my late uncle Hugh Owen Thomas's knee splint to field ambulances in 1916, this appalling figure has been transformed. Every stretcher bearer is trained to apply the splint before moving a man from the battlefield. The rigid steel side bars and traction stirrup keep the broken bone completely immobilised and under continuous extension. Today, the mortality rate for compound femur fractures stands at less than 20 per cent, and thousands of men are restored to functional limbs.",
           "source_context": "Sir Robert Jones, report on the Thomas Splint, 1917. Jones was Inspector of Military Orthopaedics.",
           "question": "Study Source C. How useful is Source C for an enquiry into the impact of the Thomas Splint on survival rates on the Western Front?",
-          "model_answer": "Source C is highly useful because Sir Robert Jones—Inspector of Military Orthopaedics who oversaw RAMC training from late 1915—provides army-wide figures showing that immobilising compound femur fractures with the Thomas traction splint slashed mortality from over 80% in 1914–15 to under 20% by 1917. Even though Jones championed his uncle’s invention and focused solely on thigh fractures, his clinical explanation of stopping bone ends severing the femoral artery is authoritative."
+          "model_answer": "Source C is highly useful because Sir Robert Jones—Inspector of Military Orthopaedics who oversaw RAMC training from late 1915—provides army-wide figures showing that immobilising compound femur fractures with the Thomas traction splint slashed mortality from over 80% in 1914–15 to under 20% by 1917. Even though Jones championed his uncle’s invention and focused solely on thigh fractures, his clinical explanation of stopping bone ends severing the femoral artery is authoritative.",
+          "studio_audio": "/audio/sources/edexcel_medicine/lesson_5_5_sC.mp3",
+          "studio_voice_label": "From an Official Report by Sir R…"
         },
         {
           "id": "med_l25_source_c",
@@ -42112,7 +42524,9 @@ export default {
             "source_context": "Memoir of a CCS surgeon, Poperinghe, 1917. Poperinghe was the primary hospital railhead behind Ypres."
           },
           "text": "During the heavy fighting at Passchendaele, our Casualty Clearing Station operated day and night without interruption. Each surgical team worked a twelve-hour shift, but when the push peaked, we worked twenty-four to thirty-six hours at a stretch. The operating theatre was a long hut with four tables; as soon as one case was bandaged and carried away to the evacuation ward, another was placed on the table.\nThe chief enemy was time. If a soldier with a shattered limb or perforated bowel reached us within the 'golden twelve hours', we had an excellent chance of saving his life by wide wound excision and saline infusions. If he lay out in a shell hole for two or three days, bacterial invasion was so entrenched that amputation was the only option, and even then, half died of toxaemia and shock.",
-          "source_context": "Memoir of a CCS surgeon, Poperinghe, 1917. Poperinghe was the primary hospital railhead behind Ypres."
+          "source_context": "Memoir of a CCS surgeon, Poperinghe, 1917. Poperinghe was the primary hospital railhead behind Ypres.",
+          "studio_audio": "/audio/sources/edexcel_medicine/lesson_5_5_sE.mp3",
+          "studio_voice_label": "From the Memoir of a British Arm…"
         }
       ],
       "vocab": [
@@ -42738,7 +43152,9 @@ export default {
                 },
                 "text": "Traditional antiseptic treatment failed completely in war wounds because chemical agents like carbolic acid killed healthy white blood cells and coagulated proteins without reaching bacteria sheltered in deep muscle crevices.\nOur method involves two vital steps: first, the complete surgical debridement of all devitalised tissue, dead muscle, and accessible foreign matter; second, the continuous or intermittent instillation of a non-irritating antiseptic solution (buffered sodium hypochlorite, 0.5%) through a network of perforated rubber tubes embedded directly into the recesses of the wound.\nThe solution dissolves dead tissue without injuring healthy granulation cells and rapidly sterilises the wound. Cultures taken from the wound track show that bacteria drop to zero within five to eight days, allowing us to perform secondary delayed closure without fear of gangrene.",
                 "enquiry_question": "Study Source B. How could you follow up Source B to find out more about how effectively the Carrel-Dakin method prevented fatal wound infection at Casualty Clearing Stations and Base Hospitals? [4 marks]",
-                "source_context": "Carrel and Dakin, The Treatment of Infected Wounds, 1916. Sodium hypochlorite was unstable and had to be freshly prepared every 24 hours."
+                "source_context": "Carrel and Dakin, The Treatment of Infected Wounds, 1916. Sodium hypochlorite was unstable and had to be freshly prepared every 24 hours.",
+                "studio_audio": "/audio/sources/edexcel_medicine/lesson_5_5_sB.mp3",
+                "studio_voice_label": "From a Paper by Dr Alexis Carrel…"
               },
               {
                 "id": "med_l25_source_b",
@@ -42759,7 +43175,9 @@ export default {
                   "content_inferences": "Source C provides stark statistical and clinical proof: in 1914–15 **over 80% of soldiers with compound femur fractures died** because loose bone ends grated in transit, severing femoral arteries and causing fatal blood loss and shock; introducing the **Thomas traction splint** pulled the leg rigid and cut mortality to **under 20% (around 15–16%)**.",
                   "provenance_evaluation": "Written in **1917** by **Sir Robert Jones** (Inspector of Military Orthopaedics and nephew of inventor Hugh Owen Thomas), who organised the training of RAMC stretcher-bearers and ADS orderlies from December 1915 onwards; his access to army-wide orthopaedic statistics makes his figures authoritative, even though he championed his uncle’s splint.",
                   "context_limitations": "Matches wider knowledge of the **Battle of Arras (April 1917)**, where forward application of Thomas Splints right at Regimental Aid Posts and Dressing Stations dramatically reduced amputations. Source C focuses solely on **thigh fractures**, however, and does not cover chest, abdominal, or head wounds."
-                }
+                },
+                "studio_audio": "/audio/sources/edexcel_medicine/lesson_5_5_sC.mp3",
+                "studio_voice_label": "From an Official Report by Sir R…"
               }
             ]
           }
@@ -43243,7 +43661,9 @@ export default {
       },
       "banner_image": "/images/edexcel_medicine/kt5/med_kt5_l55_banner_ccs_operating_theatre_l0030464.jpg",
       "enquiry": "How did pioneering surgical techniques and mechanical innovations conquer the crisis of compound fractures and wound sepsis?",
-      "banner_caption": "A British surgical team operating beneath electric lighting inside the 34th (West Lancashire) Casualty Clearing Station on the Western Front, where prompt wound excision combated deadly gas gangrene."
+      "banner_caption": "A British surgical team operating beneath electric lighting inside the 34th (West Lancashire) Casualty Clearing Station on the Western Front, where prompt wound excision combated deadly gas gangrene.",
+      "prologue_audio": "/audio/lessons/edexcel_medicine/lesson_5_5_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · Historian"
     },
     {
       "id": "lesson_5_6",
@@ -43480,7 +43900,9 @@ export default {
               },
               "text": "The paramount obstacle in military blood transfusion has been rapid coagulation, which prevented the transfer of blood from donor to recipient without direct vein-to-vein suture. By adding a small, non-toxic dosage of sodium citrate (0.2%), coagulation is completely arrested for several hours. Blood can now be drawn into sterile flasks and transported directly to wounded soldiers suffering from catastrophic haemorrhage, eliminating the requirement for donor and patient to lie side by side.",
               "question": "How did Dr Richard Lewisohn’s 1915 discovery of safe sodium citrate anticoagulation (Source A)—building on Landsteiner’s 1901 ABO blood groups and Hustin’s 1914 work—make frontline transfusions practical?",
-              "content": "The paramount obstacle in military blood transfusion has been rapid coagulation, which prevented the transfer of blood from donor to recipient without direct vein-to-vein suture. By adding a small, non-toxic dosage of sodium citrate (0.2%), coagulation is completely arrested for several hours. Blood can now be drawn into sterile flasks and transported directly to wounded soldiers suffering from catastrophic haemorrhage, eliminating the requirement for donor and patient to lie side by side."
+              "content": "The paramount obstacle in military blood transfusion has been rapid coagulation, which prevented the transfer of blood from donor to recipient without direct vein-to-vein suture. By adding a small, non-toxic dosage of sodium citrate (0.2%), coagulation is completely arrested for several hours. Blood can now be drawn into sterile flasks and transported directly to wounded soldiers suffering from catastrophic haemorrhage, eliminating the requirement for donor and patient to lie side by side.",
+              "studio_audio": "/audio/sources/edexcel_medicine/lesson_5_6_sA.mp3",
+              "studio_voice_label": "Dr. Richard Lewisohn (1915)"
             }
           ],
           "content": "<p><span class=\"para-ref\">[1.1]</span> Massive arterial blood loss was one of the leading causes of battlefield mortality on the Western Front. Severely wounded casualties succumbed rapidly to **haemorrhagic shock and severe blood loss**, suffering fatal cardiovascular collapse before reaching operating huts. In 1914, transfusions were rare, dangerous, and required direct person-to-person connection using rubber tubes, an impossible procedure under active artillery bombardment inside chaotic frontline aid posts.</p><p><span class=\"para-ref\">[1.2]</span> In 1915, American physician **Richard Lewisohn’s sodium citrate** research established the exact non-toxic concentration (0.2%) required for indirect transfusions. By **preventing fatal blood clotting** outside the human body, sodium citrate allowed blood to be collected in sterile glass flasks and administered hours later without poisoning the recipient, transforming emergency resuscitation across frontline British medical stations along the Western Front.</p>",
@@ -43619,7 +44041,9 @@ export default {
               },
               "text": "While sodium citrate prevents immediate clotting, erythrocytes deteriorate rapidly unless provided with chemical nutrition. By combining sodium citrate with a dextrose (glucose) solution and maintaining the mixture in chilled containers, human red blood cells can be preserved in vitro for upwards of four weeks without haemolysis. Cells preserved in this citrate-dextrose medium remain viable and retain their full oxygen-carrying capacity when re-infused into an animal model.",
               "question": "Why was Peyton Rous and Joseph Turner’s 1916 citrate-dextrose (glucose) solution (Source B) the decisive breakthrough that turned indirect transfusion into true blood banking?",
-              "content": "While sodium citrate prevents immediate clotting, erythrocytes deteriorate rapidly unless provided with chemical nutrition. By combining sodium citrate with a dextrose (glucose) solution and maintaining the mixture in chilled containers, human red blood cells can be preserved in vitro for upwards of four weeks without haemolysis. Cells preserved in this citrate-dextrose medium remain viable and retain their full oxygen-carrying capacity when re-infused into an animal model."
+              "content": "While sodium citrate prevents immediate clotting, erythrocytes deteriorate rapidly unless provided with chemical nutrition. By combining sodium citrate with a dextrose (glucose) solution and maintaining the mixture in chilled containers, human red blood cells can be preserved in vitro for upwards of four weeks without haemolysis. Cells preserved in this citrate-dextrose medium remain viable and retain their full oxygen-carrying capacity when re-infused into an animal model.",
+              "studio_audio": "/audio/sources/edexcel_medicine/lesson_5_6_sB.mp3",
+              "studio_voice_label": "Dr. Francis Peyton Rous and Dr.…"
             }
           ],
           "content": "<p><span class=\"para-ref\">[2.1]</span> While sodium citrate stopped blood from clotting, citrated blood still deteriorated within forty-eight hours as red blood cells broke down. In 1916, American researchers **Peyton Rous and J. R. Turner** discovered that adding a **citrate-dextrose (glucose) solution** preserved red blood cells, enabling doctors to keep collected blood viable for long periods when combined with refrigeration inside cold storage boxes.</p><p><span class=\"para-ref\">[2.2]</span> This discovery achieved transformative **refrigerated blood longevity**, as blood flasks kept in insulated ice chests remained safe for emergency transfusion. By **storing blood up to four weeks**, military medical teams were no longer dependent on finding immediate walking-wounded donors during active bombardments, allowing medical depots to stockpile blood ahead of major planned Allied offensives in casualty clearing stations.</p>",
@@ -43652,7 +44076,9 @@ export default {
               "text": "During the Battle of Cambrai in November 1917, we established an experimental 'blood depot' at Casualty Clearing Station No. 48. Twenty-two units of universal Group O blood were collected in advance from healthy walking-wounded donors into glass bottles containing sodium citrate to prevent clotting and dextrose (glucose) to nourish the red blood cells. The bottles were packed in wooden chests insulated with sawdust and ice.\nOver the next fortnight, twenty patients suffering from severe shock, pallor, and imperceptible pulses due to massive haemorrhage were transfused with blood stored for up to twenty-six days. In eleven cases, the transfusions produced an immediate resurrection: blood pressure rose steadily, colour returned to the lips, and the men survived extensive emergency operations who would otherwise have perished of collapse on the table.",
               "source_context": "Captain Oswald Robertson, BMJ report on stored blood, 1918. Robertson was an American doctor working with the British Army.",
               "question": "Study Source C. How useful is Source C for an enquiry into the development of blood transfusions on the Western Front by 1917?",
-              "model_answer": "Source C is highly useful clinical evidence from US Army doctor Captain Oswald Robertson recording the world’s first battlefield blood depot at Cambrai in November 1917, where 22 ice-packed bottles of citrate-dextrose Group O blood stored up to 26 days saved 11 of 20 shock-stricken casualties. However, it documents one experimental trial at Casualty Clearing Station No. 48 and does not by itself show how widely blood banks spread across the Western Front in 1918."
+              "model_answer": "Source C is highly useful clinical evidence from US Army doctor Captain Oswald Robertson recording the world’s first battlefield blood depot at Cambrai in November 1917, where 22 ice-packed bottles of citrate-dextrose Group O blood stored up to 26 days saved 11 of 20 shock-stricken casualties. However, it documents one experimental trial at Casualty Clearing Station No. 48 and does not by itself show how widely blood banks spread across the Western Front in 1918.",
+              "studio_audio": "/audio/sources/edexcel_medicine/lesson_5_6_sC.mp3",
+              "studio_voice_label": "From a Report by Captain Oswald…"
             }
           ],
           "content": "<p><span class=\"para-ref\">[3.1]</span> In autumn 1917, Canadian-American medical officer Captain Oswald Robertson put these laboratory discoveries into clinical practice. Ahead of the Battle of Cambrai, he created **Captain Oswald Robertson’s blood depot**, the world's first mobile blood bank. Robertson collected universal donor blood from healthy troops, added sodium citrate and glucose, and packed twenty-two glass bottles into iced ammunition boxes stored in sawdust.</p><p><span class=\"para-ref\">[3.2]</span> During the **Battle of Cambrai (November 1917)**, Robertson resuscitated twenty severely wounded casualties suffering from catastrophic haemorrhage; eleven survived completely. Demonstrating the lifesaving power of **stored universal donor blood**, Robertson proved that pre-collected, stored blood banks could function effectively on active battlefields, establishing the operational blueprint for modern emergency blood transfusion services in military and civilian medicine.</p>",
@@ -43685,7 +44111,9 @@ export default {
                 "source_context": "Major Harvey Cushing, From a Surgeon's Journal, 1917. Cushing was an American pioneer considered the father of modern neurosurgery."
               },
               "text": "At Casualty Clearing Station 46 near Ypres, the influx of head injuries during the Passchendaele offensive is continuous. Hitherto, penetrating wounds of the skull carried a mortality of over 50 to 60 per cent, largely because rough probing tore healthy brain tissue and introduced sepsis.\nWe have instituted a new operating technique: using local novocaine anaesthesia rather than general ether to prevent cerebral venous congestion, we excise the scalp wound, elevate fractured skull fragments with trephines, and use a small rubber catheter attached to a suction bulb to extract macerated brain tissue, bone chips, and shrapnel fragments. A small electromagnet is then introduced to draw out deep steel splinters. In our last series of 219 consecutive cranial operations, mortality dropped to 28.8 per cent.",
-              "source_context": "Major Harvey Cushing, From a Surgeon's Journal, 1917. Cushing was an American pioneer considered the father of modern neurosurgery."
+              "source_context": "Major Harvey Cushing, From a Surgeon's Journal, 1917. Cushing was an American pioneer considered the father of modern neurosurgery.",
+              "studio_audio": "/audio/sources/edexcel_medicine/lesson_5_6_sD.mp3",
+              "studio_voice_label": "From the Western Front War Diary…"
             }
           ],
           "content": "<p><span class=\"para-ref\">[4.1]</span> In 1914, penetrating skull and brain trauma was considered virtually untreatable, carrying an appalling mortality rate exceeding fifty percent. In 1917, American pioneering neurosurgeon **Harvey Cushing** transformed brain surgery while operating at a Casualty Clearing Station during the Battle of Passchendaele, developing delicate surgical techniques to extract shrapnel lodged deep in brain tissue without destroying neural tissue.</p><p><span class=\"para-ref\">[4.2]</span> Cushing operated using a **local anaesthetic technique** rather than general anaesthesia, avoiding dangerous brain swelling and haemorrhage during operations. He used **surgical electromagnets to extract metal splinters** and draw out deep shrapnel without tearing brain matter, debrided necrotic tracks, and closed scalp wounds cleanly, reducing battlefield brain surgery mortality from fifty-four percent down to twenty-nine percent across military hospitals on the Western Front.</p>",
@@ -43725,7 +44153,9 @@ export default {
               "caption": "Title page of Sir Harold Gillies’s landmark treatise Plastic Surgery of the Face: Based on Selected Cases of War Injuries of the Face Including Burns (Oxford University Press, 1920), documenting over 11,000 reconstructive operations performed at Queen’s Hospital, Sidcup.",
               "image_url": "/images/gillies_plastic_surgery_titlepage.jpg",
               "src": "/images/gillies_plastic_surgery_titlepage.jpg",
-              "source": "/images/gillies_plastic_surgery_titlepage.jpg"
+              "source": "/images/gillies_plastic_surgery_titlepage.jpg",
+              "studio_audio": "/audio/sources/edexcel_medicine/lesson_5_6_sE.mp3",
+              "studio_voice_label": "From an Account by Sir Harold Gi…"
             }
           ],
           "content": "<p><span class=\"para-ref\">[5.1]</span> Shrapnel and bullet wounds produced horrific facial mutilation, tearing away noses, lips, and jaws when soldiers peered over trench parapets. In 1917, New Zealand pioneering plastic surgeon **Harold Gillies** established the Queen's Hospital in Sidcup, Kent. As Britain's specialist centre for facial reconstruction, **Queen's Hospital Sidcup** performed over eleven thousand complex reconstructive operations on disfigured servicemen.</p><p><span class=\"para-ref\">[5.2]</span> Gillies invented the revolutionary **tubed pedicle skin grafting** method. A flap of healthy skin from the chest or forehead was cut and rolled into a hollow tube, keeping blood vessels alive while one end was stitched to the wounded face. Once vascular connections formed, the tube was separated, restoring facial features, speech, and dignity to disfigured veterans.</p>",
@@ -43761,7 +44191,9 @@ export default {
           },
           "text": "The paramount obstacle in military blood transfusion has been rapid coagulation, which prevented the transfer of blood from donor to recipient without direct vein-to-vein suture. By adding a small, non-toxic dosage of sodium citrate (0.2%), coagulation is completely arrested for several hours. Blood can now be drawn into sterile flasks and transported directly to wounded soldiers suffering from catastrophic haemorrhage, eliminating the requirement for donor and patient to lie side by side.",
           "question": "How did Dr Richard Lewisohn’s 1915 discovery of safe sodium citrate anticoagulation (Source A)—building on Landsteiner’s 1901 ABO blood groups and Hustin’s 1914 work—make frontline transfusions practical?",
-          "content": "The paramount obstacle in military blood transfusion has been rapid coagulation, which prevented the transfer of blood from donor to recipient without direct vein-to-vein suture. By adding a small, non-toxic dosage of sodium citrate (0.2%), coagulation is completely arrested for several hours. Blood can now be drawn into sterile flasks and transported directly to wounded soldiers suffering from catastrophic haemorrhage, eliminating the requirement for donor and patient to lie side by side."
+          "content": "The paramount obstacle in military blood transfusion has been rapid coagulation, which prevented the transfer of blood from donor to recipient without direct vein-to-vein suture. By adding a small, non-toxic dosage of sodium citrate (0.2%), coagulation is completely arrested for several hours. Blood can now be drawn into sterile flasks and transported directly to wounded soldiers suffering from catastrophic haemorrhage, eliminating the requirement for donor and patient to lie side by side.",
+          "studio_audio": "/audio/sources/edexcel_medicine/lesson_5_6_sA.mp3",
+          "studio_voice_label": "Dr. Richard Lewisohn (1915)"
         },
         {
           "id": "med_l26_source_rous_turner",
@@ -43784,7 +44216,9 @@ export default {
           },
           "text": "While sodium citrate prevents immediate clotting, erythrocytes deteriorate rapidly unless provided with chemical nutrition. By combining sodium citrate with a dextrose (glucose) solution and maintaining the mixture in chilled containers, human red blood cells can be preserved in vitro for upwards of four weeks without haemolysis. Cells preserved in this citrate-dextrose medium remain viable and retain their full oxygen-carrying capacity when re-infused into an animal model.",
           "question": "Why was Peyton Rous and Joseph Turner’s 1916 citrate-dextrose (glucose) solution (Source B) the decisive breakthrough that turned indirect transfusion into true blood banking?",
-          "content": "While sodium citrate prevents immediate clotting, erythrocytes deteriorate rapidly unless provided with chemical nutrition. By combining sodium citrate with a dextrose (glucose) solution and maintaining the mixture in chilled containers, human red blood cells can be preserved in vitro for upwards of four weeks without haemolysis. Cells preserved in this citrate-dextrose medium remain viable and retain their full oxygen-carrying capacity when re-infused into an animal model."
+          "content": "While sodium citrate prevents immediate clotting, erythrocytes deteriorate rapidly unless provided with chemical nutrition. By combining sodium citrate with a dextrose (glucose) solution and maintaining the mixture in chilled containers, human red blood cells can be preserved in vitro for upwards of four weeks without haemolysis. Cells preserved in this citrate-dextrose medium remain viable and retain their full oxygen-carrying capacity when re-infused into an animal model.",
+          "studio_audio": "/audio/sources/edexcel_medicine/lesson_5_6_sB.mp3",
+          "studio_voice_label": "Dr. Francis Peyton Rous and Dr.…"
         },
         {
           "id": "med_l26_source_b",
@@ -43799,7 +44233,9 @@ export default {
           "text": "During the Battle of Cambrai in November 1917, we established an experimental 'blood depot' at Casualty Clearing Station No. 48. Twenty-two units of universal Group O blood were collected in advance from healthy walking-wounded donors into glass bottles containing sodium citrate to prevent clotting and dextrose (glucose) to nourish the red blood cells. The bottles were packed in wooden chests insulated with sawdust and ice.\nOver the next fortnight, twenty patients suffering from severe shock, pallor, and imperceptible pulses due to massive haemorrhage were transfused with blood stored for up to twenty-six days. In eleven cases, the transfusions produced an immediate resurrection: blood pressure rose steadily, colour returned to the lips, and the men survived extensive emergency operations who would otherwise have perished of collapse on the table.",
           "source_context": "Captain Oswald Robertson, BMJ report on stored blood, 1918. Robertson was an American doctor working with the British Army.",
           "question": "Study Source C. How useful is Source C for an enquiry into the development of blood transfusions on the Western Front by 1917?",
-          "model_answer": "Source C is highly useful clinical evidence from US Army doctor Captain Oswald Robertson recording the world’s first battlefield blood depot at Cambrai in November 1917, where 22 ice-packed bottles of citrate-dextrose Group O blood stored up to 26 days saved 11 of 20 shock-stricken casualties. However, it documents one experimental trial at Casualty Clearing Station No. 48 and does not by itself show how widely blood banks spread across the Western Front in 1918."
+          "model_answer": "Source C is highly useful clinical evidence from US Army doctor Captain Oswald Robertson recording the world’s first battlefield blood depot at Cambrai in November 1917, where 22 ice-packed bottles of citrate-dextrose Group O blood stored up to 26 days saved 11 of 20 shock-stricken casualties. However, it documents one experimental trial at Casualty Clearing Station No. 48 and does not by itself show how widely blood banks spread across the Western Front in 1918.",
+          "studio_audio": "/audio/sources/edexcel_medicine/lesson_5_6_sC.mp3",
+          "studio_voice_label": "From a Report by Captain Oswald…"
         },
         {
           "id": "med_l26_source_d",
@@ -43816,7 +44252,9 @@ export default {
             "source_context": "Major Harvey Cushing, From a Surgeon's Journal, 1917. Cushing was an American pioneer considered the father of modern neurosurgery."
           },
           "text": "At Casualty Clearing Station 46 near Ypres, the influx of head injuries during the Passchendaele offensive is continuous. Hitherto, penetrating wounds of the skull carried a mortality of over 50 to 60 per cent, largely because rough probing tore healthy brain tissue and introduced sepsis.\nWe have instituted a new operating technique: using local novocaine anaesthesia rather than general ether to prevent cerebral venous congestion, we excise the scalp wound, elevate fractured skull fragments with trephines, and use a small rubber catheter attached to a suction bulb to extract macerated brain tissue, bone chips, and shrapnel fragments. A small electromagnet is then introduced to draw out deep steel splinters. In our last series of 219 consecutive cranial operations, mortality dropped to 28.8 per cent.",
-          "source_context": "Major Harvey Cushing, From a Surgeon's Journal, 1917. Cushing was an American pioneer considered the father of modern neurosurgery."
+          "source_context": "Major Harvey Cushing, From a Surgeon's Journal, 1917. Cushing was an American pioneer considered the father of modern neurosurgery.",
+          "studio_audio": "/audio/sources/edexcel_medicine/lesson_5_6_sD.mp3",
+          "studio_voice_label": "From the Western Front War Diary…"
         },
         {
           "id": "med_l26_source_e",
@@ -43839,7 +44277,9 @@ export default {
           "caption": "Title page of Sir Harold Gillies’s landmark treatise Plastic Surgery of the Face: Based on Selected Cases of War Injuries of the Face Including Burns (Oxford University Press, 1920), documenting over 11,000 reconstructive operations performed at Queen’s Hospital, Sidcup.",
           "image_url": "/images/gillies_plastic_surgery_titlepage.jpg",
           "src": "/images/gillies_plastic_surgery_titlepage.jpg",
-          "source": "/images/gillies_plastic_surgery_titlepage.jpg"
+          "source": "/images/gillies_plastic_surgery_titlepage.jpg",
+          "studio_audio": "/audio/sources/edexcel_medicine/lesson_5_6_sE.mp3",
+          "studio_voice_label": "From an Account by Sir Harold Gi…"
         }
       ],
       "vocab": [
@@ -44444,7 +44884,9 @@ export default {
                   "content_inferences": "Source C records the world’s **first battlefield blood bank** at **Cambrai (November 1917)**: Captain Oswald Robertson pre-collected **22 units of universal Group O blood** preserved in Rous-Turner citrate-glucose inside ice-packed ammunition cases, saving **11 of 20 shock-stricken casualties** earlier deemed too weak to survive surgery.",
                   "provenance_evaluation": "Written in **late 1917 / early 1918** as an official clinical report by **Captain Oswald Hope Robertson** (US Army Medical Officer attached to the British Third Army RAMC), it provides precise clinical data intended to persuade RAMC commanders to roll out pre-battle blood depots across CCS resuscitation wards in 1918.",
                   "context_limitations": "Accurately reflects the leap from 1914 saline drips and 1915 syringe-cannula donor transfusions (Lawrence Bruce Robertson / Geoffrey Keynes) to stored Group O blood. However, Source C describes an **experimental 22-bottle trial on just 20 patients** at one CCS, so alone it does not show how widely blood depots spread by the 1918 Hundred Days."
-                }
+                },
+                "studio_audio": "/audio/sources/edexcel_medicine/lesson_5_6_sC.mp3",
+                "studio_voice_label": "From a Report by Captain Oswald…"
               }
             ]
           }
@@ -44930,7 +45372,9 @@ export default {
       },
       "banner_image": "/images/edexcel_medicine/kt5/med_kt5_l56_banner_queens_hospital_sidcup_iwm3767.jpg",
       "enquiry": "How did Western Front casualties drive lifesaving breakthroughs in blood storage and specialist surgery?",
-      "banner_caption": "John Hodgson Lobley’s painting The Commercial Class (1918), showing wounded servicemen undergoing facial plastic reconstruction under Harold Gillies at the Queen’s Hospital, Sidcup while retraining for civilian employment."
+      "banner_caption": "John Hodgson Lobley’s painting The Commercial Class (1918), showing wounded servicemen undergoing facial plastic reconstruction under Harold Gillies at the Queen’s Hospital, Sidcup while retraining for civilian employment.",
+      "prologue_audio": "/audio/lessons/edexcel_medicine/lesson_5_6_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · Historian"
     }
   ],
   "specification": [

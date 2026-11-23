@@ -1,0 +1,218 @@
+{
+  "lesson_1_sA": {
+    "dur": 13.68,
+    "sentences": [
+      [
+        0.28,
+        13.02
+      ]
+    ]
+  },
+  "lesson_1_sB": {
+    "dur": 14.76,
+    "sentences": [
+      [
+        0.23,
+        14.01
+      ]
+    ]
+  },
+  "lesson_1_sC": {
+    "dur": 14.72,
+    "sentences": [
+      [
+        0.23,
+        13.98
+      ]
+    ]
+  },
+  "lesson_1_sD": {
+    "dur": 14.36,
+    "sentences": [
+      [
+        0.29,
+        13.54
+      ]
+    ]
+  },
+  "lesson_2_sA": {
+    "dur": 13.72,
+    "sentences": [
+      [
+        0.27,
+        12.99
+      ]
+    ]
+  },
+  "lesson_2_sB": {
+    "dur": 13.88,
+    "sentences": [
+      [
+        0.25,
+        13.21
+      ]
+    ]
+  },
+  "lesson_2_sC": {
+    "dur": 14.44,
+    "sentences": [
+      [
+        0.18,
+        13.72
+      ]
+    ]
+  },
+  "lesson_2_sD": {
+    "dur": 15.48,
+    "sentences": [
+      [
+        0.26,
+        14.88
+      ]
+    ]
+  },
+  "lesson_3_sA": {
+    "dur": 13.4,
+    "sentences": [
+      [
+        0.29,
+        12.42
+      ]
+    ]
+  },
+  "lesson_3_sB": {
+    "dur": 15.96,
+    "sentences": [
+      [
+        0.08,
+        15.22
+      ]
+    ]
+  },
+  "lesson_3_sC": {
+    "dur": 13.52,
+    "sentences": [
+      [
+        0.33,
+        12.83
+      ]
+    ]
+  },
+  "lesson_3_sD": {
+    "dur": 14.52,
+    "sentences": [
+      [
+        0.34,
+        13.82
+      ]
+    ]
+  },
+  "lesson_4_sA": {
+    "dur": 13.48,
+    "sentences": [
+      [
+        0.29,
+        12.82
+      ]
+    ]
+  },
+  "lesson_4_sB": {
+    "dur": 14.08,
+    "sentences": [
+      [
+        0.28,
+        13.48
+      ]
+    ]
+  },
+  "lesson_4_sC": {
+    "dur": 12.48,
+    "sentences": [
+      [
+        0.2,
+        11.91
+      ]
+    ]
+  },
+  "lesson_4_sD": {
+    "dur": 16.12,
+    "sentences": [
+      [
+        0.31,
+        15.5
+      ]
+    ]
+  },
+  "lesson_5_sA": {
+    "dur": 14.72,
+    "sentences": [
+      [
+        0.36,
+        14.02
+      ]
+    ]
+  },
+  "lesson_5_sB": {
+    "dur": 13.76,
+    "sentences": [
+      [
+        0.34,
+        13.03
+      ]
+    ]
+  },
+  "lesson_5_sC": {
+    "dur": 14.68,
+    "sentences": [
+      [
+        0.3,
+        13.81
+      ]
+    ]
+  },
+  "lesson_5_sD": {
+    "dur": 14.16,
+    "sentences": [
+      [
+        0.08,
+        13.51
+      ]
+    ]
+  },
+  "lesson_6_sA": {
+    "dur": 15.68,
+    "sentences": [
+      [
+        0.27,
+        15.39
+      ]
+    ]
+  },
+  "lesson_6_sB": {
+    "dur": 16.68,
+    "sentences": [
+      [
+        0.31,
+        15.83
+      ]
+    ]
+  },
+  "lesson_6_sC": {
+    "dur": 15.08,
+    "sentences": [
+      [
+        0.32,
+        13.95
+      ]
+    ]
+  },
+  "lesson_6_sD": {
+    "dur": 14.76,
+    "sentences": [
+      [
+        0.28,
+        14.12
+      ]
+    ]
+  }
+}

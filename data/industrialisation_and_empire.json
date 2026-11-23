@@ -997,7 +997,9 @@
               },
               "type": "written",
               "src": "",
-              "image": ""
+              "image": "",
+              "studio_audio": "/audio/sources/industrialisation_and_empire/lesson_1_sD.mp3",
+              "studio_voice_label": "Henry Cort (1784)"
             }
           ],
           "heading": "Grooved Rollers & The Hampshire Archaeology (1783–1784)",
@@ -1046,7 +1048,9 @@
               "id": "iae_l1_src_e",
               "type": "written",
               "src": "",
-              "image": ""
+              "image": "",
+              "studio_audio": "/audio/sources/industrialisation_and_empire/lesson_1_sE.mp3",
+              "studio_voice_label": "Admiralty Navy Board Portsmouth…"
             }
           ],
           "heading": "The Portsmouth Dockyard Trials & Naval Supremacy (1787–1800)",
@@ -1633,7 +1637,9 @@
           },
           "type": "written",
           "src": "",
-          "image": ""
+          "image": "",
+          "studio_audio": "/audio/sources/industrialisation_and_empire/lesson_1_sD.mp3",
+          "studio_voice_label": "Henry Cort (1784)"
         },
         {
           "letter": "E",
@@ -1652,7 +1658,9 @@
           "id": "iae_l1_src_e",
           "type": "written",
           "src": "",
-          "image": ""
+          "image": "",
+          "studio_audio": "/audio/sources/industrialisation_and_empire/lesson_1_sE.mp3",
+          "studio_voice_label": "Admiralty Navy Board Portsmouth…"
         }
       ],
       "visual_story_sheet": {
@@ -1778,7 +1786,9 @@
       "enquiry": "How did steam power and Hampshire ironmaking drive Britain’s Industrial Revolution?",
       "enquiry_question": "How did steam power and Hampshire ironmaking drive Britain’s Industrial Revolution?",
       "enquiryQuestion": "How did steam power and Hampshire ironmaking drive Britain’s Industrial Revolution?",
-      "banner_caption": "Thomas Frederick Burney’s watercolour of The Iron Bridge at Coalbrookdale (c. 1780s), the world’s first major cast-iron arch bridge spanning the River Severn Gorge in Shropshire."
+      "banner_caption": "Thomas Frederick Burney’s watercolour of The Iron Bridge at Coalbrookdale (c. 1780s), the world’s first major cast-iron arch bridge spanning the River Severn Gorge in Shropshire.",
+      "prologue_audio": "/audio/lessons/industrialisation_and_empire/lesson_1_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · Historian"
     },
     {
       "id": "lesson_2",
@@ -2303,7 +2313,9 @@
               "id": "iae_l2_src_b",
               "type": "written",
               "src": "",
-              "image": ""
+              "image": "",
+              "studio_audio": "/audio/sources/industrialisation_and_empire/lesson_2_sB.mp3",
+              "studio_voice_label": "Tyldesley Cotton Mill Factory Ru…"
             }
           ],
           "heading": "The Tyranny of the Factory Clock & Draconian Fines (1800–1830)",
@@ -2404,7 +2416,9 @@
               "id": "iae_l2_src_d",
               "type": "written",
               "src": "",
-              "image": ""
+              "image": "",
+              "studio_audio": "/audio/sources/industrialisation_and_empire/lesson_2_sD.mp3",
+              "studio_voice_label": "Parliamentary Sadler Committee R…"
             }
           ],
           "heading": "The Sadler Committee & Matthew Crabtree’s Testimony (1832)",
@@ -2556,7 +2570,9 @@
               },
               "type": "written",
               "src": "",
-              "image": ""
+              "image": "",
+              "studio_audio": "/audio/sources/industrialisation_and_empire/lesson_2_sE.mp3",
+              "studio_voice_label": "The Factory Act 1833"
             }
           ],
           "heading": "Lord Shaftesbury & The 1833 Factory Act (1833)",
@@ -3051,7 +3067,9 @@
           "id": "iae_l2_src_b",
           "type": "written",
           "src": "",
-          "image": ""
+          "image": "",
+          "studio_audio": "/audio/sources/industrialisation_and_empire/lesson_2_sB.mp3",
+          "studio_voice_label": "Tyldesley Cotton Mill Factory Ru…"
         },
         {
           "letter": "C",
@@ -3089,7 +3107,9 @@
           "id": "iae_l2_src_d",
           "type": "written",
           "src": "",
-          "image": ""
+          "image": "",
+          "studio_audio": "/audio/sources/industrialisation_and_empire/lesson_2_sD.mp3",
+          "studio_voice_label": "Parliamentary Sadler Committee R…"
         },
         {
           "letter": "E",
@@ -3110,7 +3130,9 @@
           },
           "type": "written",
           "src": "",
-          "image": ""
+          "image": "",
+          "studio_audio": "/audio/sources/industrialisation_and_empire/lesson_2_sE.mp3",
+          "studio_voice_label": "The Factory Act 1833"
         }
       ],
       "visual_story_sheet": {
@@ -3235,7 +3257,9 @@
       "enquiry": "How harsh was factory life, and why did Parliament pass the 1833 Act?",
       "enquiry_question": "How harsh was factory life, and why did Parliament pass the 1833 Act?",
       "enquiryQuestion": "How harsh was factory life, and why did Parliament pass the 1833 Act?",
-      "banner_caption": "Quarry Bank Mill, Styal, Cheshire (founded by Samuel Greg in 1784): Preserved multi-storey red-brick textile factory where waterwheels, Boulton & Watt steam engines, and pauper apprentices drove relentless cotton production."
+      "banner_caption": "Quarry Bank Mill, Styal, Cheshire (founded by Samuel Greg in 1784): Preserved multi-storey red-brick textile factory where waterwheels, Boulton & Watt steam engines, and pauper apprentices drove relentless cotton production.",
+      "prologue_audio": "/audio/lessons/industrialisation_and_empire/lesson_2_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · Historian"
     },
     {
       "id": "lesson_3",
@@ -3951,7 +3975,9 @@
               "id": "iae_l3_src_c",
               "type": "written",
               "src": "",
-              "image": ""
+              "image": "",
+              "studio_audio": "/audio/sources/industrialisation_and_empire/lesson_3_sC.mp3",
+              "studio_voice_label": "Edwin Chadwick (1842)"
             }
           ],
           "heading": "The Blue Terror: Cholera & The Collapse of Laissez-Faire (1831–1848)",
@@ -4526,7 +4552,9 @@
           "id": "iae_l3_src_c",
           "type": "written",
           "src": "",
-          "image": ""
+          "image": "",
+          "studio_audio": "/audio/sources/industrialisation_and_empire/lesson_3_sC.mp3",
+          "studio_voice_label": "Edwin Chadwick (1842)"
         },
         {
           "letter": "D",
@@ -4690,7 +4718,9 @@
       "enquiry": "Did rapid industrial growth make Victorian cities unlivable—and how did they change?",
       "enquiry_question": "Did rapid industrial growth make Victorian cities unlivable—and how did they change?",
       "enquiryQuestion": "Did rapid industrial growth make Victorian cities unlivable—and how did they change?",
-      "banner_caption": "William Wyld’s Manchester from Kersal Moor (1852), showing scores of coal-fired cotton-mill chimneys smoking across 'Cottonopolis' as rapid industrial urbanisation transformed northern England."
+      "banner_caption": "William Wyld’s Manchester from Kersal Moor (1852), showing scores of coal-fired cotton-mill chimneys smoking across 'Cottonopolis' as rapid industrial urbanisation transformed northern England.",
+      "prologue_audio": "/audio/lessons/industrialisation_and_empire/lesson_3_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · Historian"
     },
     {
       "id": "lesson_4",
@@ -5206,7 +5236,9 @@
               "id": "iae_l4_src_a",
               "type": "written",
               "src": "",
-              "image": ""
+              "image": "",
+              "studio_audio": "/audio/sources/industrialisation_and_empire/lesson_4_sA.mp3",
+              "studio_voice_label": "Declaration of General Ned Ludd…"
             }
           ],
           "heading": "The Sledgehammer of General Ludd (1811–1816)",
@@ -5257,7 +5289,9 @@
                 "source_context": "George Cruikshank’s scathing satirical print attacked the Manchester magistrates and Yeomanry cavalry who charged 60,000 peaceful protesters listening to Henry Hunt. **Hinge Question:** How does Cruikshank’s satirical caption connect parliamentary disenfranchisement to economic class oppression?",
                 "hinge_question": "How does Cruikshank’s satirical caption connect parliamentary disenfranchisement to economic class oppression?"
               },
-              "type": "visual"
+              "type": "visual",
+              "studio_audio": "/audio/sources/industrialisation_and_empire/lesson_4_sB.mp3",
+              "studio_voice_label": "George Cruikshank (1819)"
             }
           ],
           "heading": "The Peterloo Massacre: Sabres at St Peter’s Field (August 1819)",
@@ -5380,7 +5414,9 @@
               },
               "id": "iae_l4_src_c",
               "type": "visual",
-              "src": "/images/captain_swing_letter.jpg"
+              "src": "/images/captain_swing_letter.jpg",
+              "studio_audio": "/audio/sources/industrialisation_and_empire/lesson_4_sC.mp3",
+              "studio_voice_label": "The Threat of Captain Swing"
             }
           ],
           "heading": "Captain Swing & The Hampshire Harvest Riots (November 1830)",
@@ -5429,7 +5465,9 @@
               "id": "iae_l4_src_d",
               "type": "written",
               "src": "",
-              "image": ""
+              "image": "",
+              "studio_audio": "/audio/sources/industrialisation_and_empire/lesson_4_sD.mp3",
+              "studio_voice_label": "Contemporary Report of the Winch…"
             }
           ],
           "heading": "The Winchester Special Assizes & State Vengeance (December 1830)",
@@ -5579,7 +5617,9 @@
               "id": "iae_l4_src_e",
               "type": "written",
               "src": "",
-              "image": ""
+              "image": "",
+              "studio_audio": "/audio/sources/industrialisation_and_empire/lesson_4_sE.mp3",
+              "studio_voice_label": "George Loveless (1834)"
             }
           ],
           "heading": "The Tolpuddle Martyrs & The Right to Combine (1834)",
@@ -6015,7 +6055,9 @@
           "id": "iae_l4_src_a",
           "type": "written",
           "src": "",
-          "image": ""
+          "image": "",
+          "studio_audio": "/audio/sources/industrialisation_and_empire/lesson_4_sA.mp3",
+          "studio_voice_label": "Declaration of General Ned Ludd…"
         },
         {
           "letter": "B",
@@ -6035,7 +6077,9 @@
             "source_context": "George Cruikshank’s scathing satirical print attacked the Manchester magistrates and Yeomanry cavalry who charged 60,000 peaceful protesters listening to Henry Hunt. **Hinge Question:** How does Cruikshank’s satirical caption connect parliamentary disenfranchisement to economic class oppression?",
             "hinge_question": "How does Cruikshank’s satirical caption connect parliamentary disenfranchisement to economic class oppression?"
           },
-          "type": "visual"
+          "type": "visual",
+          "studio_audio": "/audio/sources/industrialisation_and_empire/lesson_4_sB.mp3",
+          "studio_voice_label": "George Cruikshank (1819)"
         },
         {
           "letter": "C",
@@ -6054,7 +6098,9 @@
           },
           "id": "iae_l4_src_c",
           "type": "visual",
-          "src": "/images/captain_swing_letter.jpg"
+          "src": "/images/captain_swing_letter.jpg",
+          "studio_audio": "/audio/sources/industrialisation_and_empire/lesson_4_sC.mp3",
+          "studio_voice_label": "The Threat of Captain Swing"
         },
         {
           "letter": "D",
@@ -6073,7 +6119,9 @@
           "id": "iae_l4_src_d",
           "type": "written",
           "src": "",
-          "image": ""
+          "image": "",
+          "studio_audio": "/audio/sources/industrialisation_and_empire/lesson_4_sD.mp3",
+          "studio_voice_label": "Contemporary Report of the Winch…"
         },
         {
           "letter": "E",
@@ -6092,7 +6140,9 @@
           "id": "iae_l4_src_e",
           "type": "written",
           "src": "",
-          "image": ""
+          "image": "",
+          "studio_audio": "/audio/sources/industrialisation_and_empire/lesson_4_sE.mp3",
+          "studio_voice_label": "George Loveless (1834)"
         }
       ],
       "visual_story_sheet": {
@@ -6218,7 +6268,9 @@
       "enquiry": "Why did working people protest between 1811 and 1834, and how did rulers respond?",
       "enquiry_question": "Why did working people protest between 1811 and 1834, and how did rulers respond?",
       "enquiryQuestion": "Why did working people protest between 1811 and 1834, and how did rulers respond?",
-      "banner_caption": "Richard Carlile, St Peter’s Field, Manchester, 16 August 1819 (October 1819): Manchester Yeomanry cavalry charging with drawn sabres into 60,000 unarmed men, women, and children gathered around Henry Hunt’s hustings to demand parliamentary reform."
+      "banner_caption": "Richard Carlile, St Peter’s Field, Manchester, 16 August 1819 (October 1819): Manchester Yeomanry cavalry charging with drawn sabres into 60,000 unarmed men, women, and children gathered around Henry Hunt’s hustings to demand parliamentary reform.",
+      "prologue_audio": "/audio/lessons/industrialisation_and_empire/lesson_4_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · Historian"
     },
     {
       "id": "lesson_5",
@@ -6986,7 +7038,9 @@
                 "hinge_question": "Why did the £10 property qualification in the 1832 Reform Act deliberately empower factory owners while denying the vote to the working class who operated the mills?"
               },
               "src": "",
-              "image": ""
+              "image": "",
+              "studio_audio": "/audio/sources/industrialisation_and_empire/lesson_5_sC.mp3",
+              "studio_voice_label": "The Representation of the People…"
             }
           ],
           "heading": "The 1832 Great Reform Act: Triumph or \"Great Betrayal\"? (1832)",
@@ -7552,7 +7606,9 @@
             "hinge_question": "Why did the £10 property qualification in the 1832 Reform Act deliberately empower factory owners while denying the vote to the working class who operated the mills?"
           },
           "src": "",
-          "image": ""
+          "image": "",
+          "studio_audio": "/audio/sources/industrialisation_and_empire/lesson_5_sC.mp3",
+          "studio_voice_label": "The Representation of the People…"
         },
         {
           "letter": "D",
@@ -7715,7 +7771,9 @@
       "enquiry": "How did protest and reform gradually expand the right to vote by 1872?",
       "enquiry_question": "How did protest and reform gradually expand the right to vote by 1872?",
       "enquiryQuestion": "How did protest and reform gradually expand the right to vote by 1872?",
-      "banner_caption": "Sir George Hayter’s The House of Commons, 1833, commemorating the opening session of Britain’s newly reformed Parliament at Westminster in February 1833 after the Great Reform Act."
+      "banner_caption": "Sir George Hayter’s The House of Commons, 1833, commemorating the opening session of Britain’s newly reformed Parliament at Westminster in February 1833 after the Great Reform Act.",
+      "prologue_audio": "/audio/lessons/industrialisation_and_empire/lesson_5_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · Historian"
     }
   ],
   "glossary": [

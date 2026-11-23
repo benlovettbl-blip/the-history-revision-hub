@@ -280,6 +280,370 @@
       "voiceKey": "female_historian",
       "badge": "Historian 2 · Conscription & Casualties View",
       "updatedAt": "2026-11-20T17:30:12.931Z"
+    },
+    "lesson_2_3_sC": {
+      "hash": "1312fe4951f05273",
+      "bytes": 115532,
+      "voiceKey": "male_historian",
+      "badge": "SNCC Chairman Stokely Carmichael…",
+      "updatedAt": "2026-11-23T23:06:35.877Z"
+    },
+    "lesson_2_3_sD": {
+      "hash": "7baf05e647c90956",
+      "bytes": 182732,
+      "voiceKey": "male_historian",
+      "badge": "Excerpt from the Black Panther P…",
+      "updatedAt": "2026-11-23T23:06:36.403Z"
+    },
+    "lesson_2_4_sB": {
+      "hash": "d120ad0698d03204",
+      "bytes": 164588,
+      "voiceKey": "male_historian",
+      "badge": "From the Summary of the Report o…",
+      "updatedAt": "2026-11-23T23:06:37.062Z"
+    },
+    "lesson_2_4_sC": {
+      "hash": "103fd1941ff31329",
+      "bytes": 203852,
+      "voiceKey": "male_historian",
+      "badge": "Senator Robert F. Kennedy Announ…",
+      "updatedAt": "2026-11-23T23:06:37.654Z"
+    },
+    "lesson_2_4_sD": {
+      "hash": "ce2c335caf5c3183",
+      "bytes": 180908,
+      "voiceKey": "male_historian",
+      "badge": "Excerpt from the Civil Rights Ac…",
+      "updatedAt": "2026-11-23T23:06:38.237Z"
+    },
+    "lesson_2_4_ep3_sB": {
+      "hash": "a7cbeeeafce7ff37",
+      "bytes": 192332,
+      "voiceKey": "male_historian",
+      "badge": "From the Official Findings of th…",
+      "updatedAt": "2026-11-23T23:06:38.777Z"
+    },
+    "lesson_2_4_ep3_sC": {
+      "hash": "79dbf81f8d4520e6",
+      "bytes": 164780,
+      "voiceKey": "male_historian",
+      "badge": "Speech by SNCC Leader Stokely Ca…",
+      "updatedAt": "2026-11-23T23:06:39.258Z"
+    },
+    "lesson_3_1_sA": {
+      "hash": "8f4fd65d31f2a819",
+      "bytes": 186380,
+      "voiceKey": "male_historian",
+      "badge": "President Dwight D. Eisenhower P…",
+      "updatedAt": "2026-11-23T23:06:39.803Z"
+    },
+    "lesson_1_4_sB": {
+      "hash": "943f8a023fb4633f",
+      "bytes": 173900,
+      "voiceKey": "male_historian",
+      "badge": "Front-Page Report from the Chica…",
+      "updatedAt": "2026-11-23T23:06:40.836Z"
+    },
+    "lesson_1_4_sD": {
+      "hash": "666af98547b36109",
+      "bytes": 208652,
+      "voiceKey": "male_historian",
+      "badge": "Excerpt from the Civil Rights Ac…",
+      "updatedAt": "2026-11-23T23:06:41.441Z"
+    },
+    "lesson_2_1_sB": {
+      "hash": "e336aefe8ebf6901",
+      "bytes": 195788,
+      "voiceKey": "male_historian",
+      "badge": "Non-Violent Direct Action Guidel…",
+      "updatedAt": "2026-11-23T23:06:42.051Z"
+    },
+    "lesson_2_1_sD": {
+      "hash": "e39d9e0025e9d363",
+      "bytes": 173900,
+      "voiceKey": "male_historian",
+      "badge": "Eyewitness Testimony of Freedom…",
+      "updatedAt": "2026-11-23T23:06:42.518Z"
+    },
+    "lesson_2_2_sA": {
+      "hash": "050f1b6456ce56a4",
+      "bytes": 184748,
+      "voiceKey": "male_historian",
+      "badge": "From Dr Martin Luther King Jr.'s…",
+      "updatedAt": "2026-11-23T23:06:43.053Z"
+    },
+    "lesson_2_2_sB": {
+      "hash": "ce0abb29b8ca8caa",
+      "bytes": 184172,
+      "voiceKey": "male_historian",
+      "badge": "Dr Martin Luther King Jr. Delive…",
+      "updatedAt": "2026-11-23T23:06:43.613Z"
+    },
+    "lesson_2_2_sC": {
+      "hash": "c63c4f3ac9061e9d",
+      "bytes": 192140,
+      "voiceKey": "male_historian",
+      "badge": "Archival Photograph of President…",
+      "updatedAt": "2026-11-23T23:06:44.166Z"
+    },
+    "lesson_2_3_sB": {
+      "hash": "49be6cd8c7d0373f",
+      "bytes": 210668,
+      "voiceKey": "male_historian",
+      "badge": "From Malcolm X's Landmark Addres…",
+      "updatedAt": "2026-11-23T23:06:44.808Z"
+    },
+    "lesson_1_1_sD": {
+      "hash": "c2ede21708198589",
+      "bytes": 133580,
+      "voiceKey": "male_historian",
+      "badge": "From an Address by Thurgood Mars…",
+      "updatedAt": "2026-11-23T23:06:55.345Z"
+    },
+    "lesson_1_2_sB": {
+      "hash": "606f98cff0dec2e6",
+      "bytes": 179180,
+      "voiceKey": "male_historian",
+      "badge": "Declaration of Constitutional Pr…",
+      "updatedAt": "2026-11-23T23:06:55.957Z"
+    },
+    "lesson_1_2_sC": {
+      "hash": "13a112f968845bc6",
+      "bytes": 176300,
+      "voiceKey": "male_historian",
+      "badge": "Arkansas Governor Orval Faubus T…",
+      "updatedAt": "2026-11-23T23:06:56.537Z"
+    },
+    "lesson_1_3_sC": {
+      "hash": "c273914e1a0472f8",
+      "bytes": 137228,
+      "voiceKey": "male_historian",
+      "badge": "Dr Martin Luther King Jr. Addres…",
+      "updatedAt": "2026-11-23T23:06:56.968Z"
+    },
+    "lesson_1_3_sD": {
+      "hash": "4bd59d5f1f7c1755",
+      "bytes": 121868,
+      "voiceKey": "male_historian",
+      "badge": "Oral History Account by Reverend…",
+      "updatedAt": "2026-11-23T23:06:57.399Z"
+    },
+    "lesson_3_1_sD": {
+      "hash": "7b37992860944d55",
+      "bytes": 179660,
+      "voiceKey": "male_historian",
+      "badge": "State Department Telegram No. 24…",
+      "updatedAt": "2026-11-23T23:06:58.579Z"
+    },
+    "lesson_3_2_sB": {
+      "hash": "e4dae2202ba50a99",
+      "bytes": 147212,
+      "voiceKey": "male_historian",
+      "badge": "Official Statement Broadcast by…",
+      "updatedAt": "2026-11-23T23:06:59.080Z"
+    },
+    "lesson_3_3_sB": {
+      "hash": "318e93c577cee1f4",
+      "bytes": 158540,
+      "voiceKey": "male_historian",
+      "badge": "Excerpt from US Military Assista…",
+      "updatedAt": "2026-11-23T23:06:59.541Z"
+    },
+    "lesson_3_3_ep3_sC": {
+      "hash": "461f9ea18ffab20a",
+      "bytes": 182348,
+      "voiceKey": "male_historian",
+      "badge": "Oral History Interview with a Ve…",
+      "updatedAt": "2026-11-23T23:07:00.144Z"
+    },
+    "lesson_3_4_sA": {
+      "hash": "ee7bcfa9022114f3",
+      "bytes": 147692,
+      "voiceKey": "male_historian",
+      "badge": "Editorial Declaration by CBS Eve…",
+      "updatedAt": "2026-11-23T23:07:00.655Z"
+    },
+    "lesson_3_4_sC": {
+      "hash": "00ad452dbd3b112e",
+      "bytes": 163532,
+      "voiceKey": "male_historian",
+      "badge": "From President Nixon’s Address t…",
+      "updatedAt": "2026-11-23T23:07:01.123Z"
+    },
+    "lesson_3_4_sE": {
+      "hash": "7d76fc195ad34d22",
+      "bytes": 138668,
+      "voiceKey": "male_historian",
+      "badge": "Declassified Oval Office Tape Re…",
+      "updatedAt": "2026-11-23T23:07:01.560Z"
+    },
+    "lesson_4_1_ep3_sB": {
+      "hash": "b4ffcbde10f03a5f",
+      "bytes": 180140,
+      "voiceKey": "male_historian",
+      "badge": "CBS Evening News Broadcast by Wa…",
+      "updatedAt": "2026-11-23T23:07:02.051Z"
+    },
+    "lesson_4_1_ep3_sC": {
+      "hash": "90fd47513904b866",
+      "bytes": 171500,
+      "voiceKey": "male_historian",
+      "badge": "Students for a Democratic Societ…",
+      "updatedAt": "2026-11-23T23:07:02.863Z"
+    },
+    "lesson_4_2_sA": {
+      "hash": "176f3e2960bcf327",
+      "bytes": 194828,
+      "voiceKey": "male_historian",
+      "badge": "President Richard Nixon's Televi…",
+      "updatedAt": "2026-11-23T23:07:03.391Z"
+    },
+    "lesson_4_2_sD": {
+      "hash": "6467ef5f26ef8acd",
+      "bytes": 180620,
+      "voiceKey": "male_historian",
+      "badge": "Gallup Opinion Poll Findings on…",
+      "updatedAt": "2026-11-23T23:07:03.958Z"
+    },
+    "lesson_4_3_sB": {
+      "hash": "85084f7626845b46",
+      "bytes": 207308,
+      "voiceKey": "male_historian",
+      "badge": "Key Articles from the 'Agreement…",
+      "updatedAt": "2026-11-23T23:07:04.509Z"
+    },
+    "lesson_4_3_sD": {
+      "hash": "d6c79ff042c97e95",
+      "bytes": 146348,
+      "voiceKey": "male_historian",
+      "badge": "From General Van Tien Dung's Off…",
+      "updatedAt": "2026-11-23T23:07:04.971Z"
+    },
+    "lesson_4_4_sC": {
+      "hash": "249ba27db27ee904",
+      "bytes": 195020,
+      "voiceKey": "male_historian",
+      "badge": "Excerpt from the War Powers Reso…",
+      "updatedAt": "2026-11-23T23:07:05.516Z"
+    },
+    "lesson_4_4_sD": {
+      "hash": "a69e56fc46e9aeae",
+      "bytes": 249452,
+      "voiceKey": "male_historian",
+      "badge": "Official United States Departmen…",
+      "updatedAt": "2026-11-23T23:07:06.209Z"
+    },
+    "lesson_1_1_sA": {
+      "hash": "42ee22097a9a14cc",
+      "bytes": 150668,
+      "voiceKey": "female_historian",
+      "badge": "Mississippi State Code Statute E…",
+      "updatedAt": "2026-11-23T23:10:50.552Z"
+    },
+    "lesson_2_1_sE": {
+      "hash": "c66d6b3997b0bb95",
+      "bytes": 166508,
+      "voiceKey": "female_historian",
+      "badge": "Interstate Commerce Commission (…",
+      "updatedAt": "2026-11-23T23:10:54.012Z"
+    },
+    "lesson_2_2_sE": {
+      "hash": "865ea4a31f38337a",
+      "bytes": 152012,
+      "voiceKey": "female_historian",
+      "badge": "Archival Photograph of President…",
+      "updatedAt": "2026-11-23T23:10:55.036Z"
+    },
+    "lesson_2_4_sA": {
+      "hash": "78abf5009c517df7",
+      "bytes": 150092,
+      "voiceKey": "female_historian",
+      "badge": "Statement of Watts Resident Tomm…",
+      "updatedAt": "2026-11-23T23:10:56.710Z"
+    },
+    "lesson_1_1_sC": {
+      "hash": "02963cad07128003",
+      "bytes": 131852,
+      "voiceKey": "female_historian",
+      "badge": "Sworn Deposition of Amzie Moore…",
+      "updatedAt": "2026-11-23T23:11:27.693Z"
+    },
+    "lesson_1_2_sA": {
+      "hash": "f55adb13e2c954a6",
+      "bytes": 196460,
+      "voiceKey": "female_historian",
+      "badge": "From the Unanimous Supreme Court…",
+      "updatedAt": "2026-11-23T23:11:28.711Z"
+    },
+    "lesson_1_3_sB": {
+      "hash": "dee417094ffa0685",
+      "bytes": 237068,
+      "voiceKey": "female_historian",
+      "badge": "Mimeographed Boycott Leaflet Aut…",
+      "updatedAt": "2026-11-23T23:11:30.070Z"
+    },
+    "lesson_1_3_sE": {
+      "hash": "4ce77b0aa11590d9",
+      "bytes": 158348,
+      "voiceKey": "female_historian",
+      "badge": "From the Federal District Court…",
+      "updatedAt": "2026-11-23T23:11:30.578Z"
+    },
+    "lesson_1_4_sC": {
+      "hash": "b0a965344c1b0fd1",
+      "bytes": 134060,
+      "voiceKey": "female_historian",
+      "badge": "From the Closing Arguments of De…",
+      "updatedAt": "2026-11-23T23:11:31.676Z"
+    },
+    "lesson_3_1_sE": {
+      "hash": "b913747dde5f4d75",
+      "bytes": 177452,
+      "voiceKey": "female_historian",
+      "badge": "CIA Special National Intelligenc…",
+      "updatedAt": "2026-11-23T23:11:32.582Z"
+    },
+    "lesson_3_2_sA": {
+      "hash": "4135bf2a63758747",
+      "bytes": 99212,
+      "voiceKey": "female_historian",
+      "badge": "Declassified Flash Precedence Ca…",
+      "updatedAt": "2026-11-23T23:11:33.611Z"
+    },
+    "lesson_3_2_sC": {
+      "hash": "a5445064ae5a61a3",
+      "bytes": 179852,
+      "voiceKey": "female_historian",
+      "badge": "Joint Resolution of Congress",
+      "updatedAt": "2026-11-23T23:11:34.107Z"
+    },
+    "lesson_3_3_sE": {
+      "hash": "e0b3ca660dac491e",
+      "bytes": 204812,
+      "voiceKey": "female_historian",
+      "badge": "Testimony of Platoon Leader Lieu…",
+      "updatedAt": "2026-11-23T23:11:35.339Z"
+    },
+    "lesson_3_3_ep3_sB": {
+      "hash": "99d8895004411dd2",
+      "bytes": 204908,
+      "voiceKey": "female_historian",
+      "badge": "Account by US Marine Lieutenant…",
+      "updatedAt": "2026-11-23T23:11:35.908Z"
+    },
+    "lesson_4_3_sE": {
+      "hash": "5cbf036f11fed33e",
+      "bytes": 134828,
+      "voiceKey": "female_historian",
+      "badge": "President Gerald R. Ford's Addre…",
+      "updatedAt": "2026-11-23T23:12:28.131Z"
+    },
+    "lesson_4_4_sE": {
+      "hash": "d74e378802ea647d",
+      "bytes": 203660,
+      "voiceKey": "female_historian",
+      "badge": "From an Analysis by Military His…",
+      "updatedAt": "2026-11-23T23:12:29.280Z"
     }
   }
 }

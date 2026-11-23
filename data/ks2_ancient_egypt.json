@@ -942,7 +942,9 @@
         ],
         "spokenTakeaway": "Here is the big story in one sentence. <short pause> Yearly Nile floods left fertile black Kemet silt for wheat and papyrus, and around 3100 BC King Narmer united Upper and Lower Egypt under one Double Crown."
       },
-      "banner_caption": "Satellite view from space showing the lush green Nile valley and fan-shaped Nile Delta cutting through golden Sahara sands"
+      "banner_caption": "Satellite view from space showing the lush green Nile valley and fan-shaped Nile Delta cutting through golden Sahara sands",
+      "prologue_audio": "/audio/lessons/ks2_ancient_egypt/lesson_1_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · Historian"
     },
     {
       "id": "lesson_2",
@@ -1852,7 +1854,9 @@
         ],
         "spokenTakeaway": "Here is the big story in one sentence. <short pause> Using copper chisels, Nile barges, wet-sand sledges, and well-fed paid teams, Old Kingdom Egyptians built Khufu's 146-metre Great Pyramid and Khafre's Great Sphinx at Giza."
       },
-      "banner_caption": "The lion-bodied Great Sphinx carved from Giza’s limestone bedrock for Pharaoh Khafre, standing guard before the Great Pyramids"
+      "banner_caption": "The lion-bodied Great Sphinx carved from Giza’s limestone bedrock for Pharaoh Khafre, standing guard before the Great Pyramids",
+      "prologue_audio": "/audio/lessons/ks2_ancient_egypt/lesson_2_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · Historian"
     },
     {
       "id": "lesson_3",
@@ -2761,7 +2765,9 @@
         ],
         "spokenTakeaway": "Here is the big story in one sentence. <short pause> Farmers and craftworkers lived in cool whitewashed mud-brick homes and played Senet, while Champollion used the three-script Rosetta Stone in 1822 to crack 700 hieroglyphs."
       },
-      "banner_caption": "Giant sandstone columns carved in sunken relief hieroglyphs inside the Great Temple of Karnak at Luxor."
+      "banner_caption": "Giant sandstone columns carved in sunken relief hieroglyphs inside the Great Temple of Karnak at Luxor.",
+      "prologue_audio": "/audio/lessons/ks2_ancient_egypt/lesson_3_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · Historian"
     },
     {
       "id": "lesson_4",
@@ -3671,7 +3677,9 @@
         ],
         "spokenTakeaway": "Here is the big story in one sentence. <short pause> Believing the ka and ba spirits needed a lasting body, priests dried mummies in natron salt for 70 days so kind hearts could pass Ma'at's feather into the Field of Reeds."
       },
-      "banner_caption": "Scene from the ancient Egyptian Book of the Dead of Hunefer (c. 1275 BC), showing jackal-headed Anubis weighing Hunefer’s heart against the feather of truth before Osiris."
+      "banner_caption": "Scene from the ancient Egyptian Book of the Dead of Hunefer (c. 1275 BC), showing jackal-headed Anubis weighing Hunefer’s heart against the feather of truth before Osiris.",
+      "prologue_audio": "/audio/lessons/ks2_ancient_egypt/lesson_4_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · Historian"
     },
     {
       "id": "lesson_5",
@@ -4581,7 +4589,9 @@
         ],
         "spokenTakeaway": "Here is the big story in one sentence. <short pause> New Kingdom rulers made Egypt famous through Hatshepsut's trading voyage to Punt, Nefertiti and Akhenaten's sun-disc city at Amarna, and Ramesses II's Kadesh peace treaty and Abu Simbel temples."
       },
-      "banner_caption": "Four giant 20-metre sandstone statues of Pharaoh Ramesses II carved straight into the desert cliff face outside the Great Temple at Abu Simbel (c. 1264 BC)."
+      "banner_caption": "Four giant 20-metre sandstone statues of Pharaoh Ramesses II carved straight into the desert cliff face outside the Great Temple at Abu Simbel (c. 1264 BC).",
+      "prologue_audio": "/audio/lessons/ks2_ancient_egypt/lesson_5_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · Historian"
     },
     {
       "id": "lesson_6",
@@ -5490,7 +5500,9 @@
         ],
         "spokenTakeaway": "Here is the big story in one sentence. <short pause> Limestone rubble hid boy-king Tutankhamun's 5,000 tomb treasures until 1922, while Roman armies defeated multi-lingual Queen Cleopatra VII in 30 BC to end pharaonic rule."
       },
-      "banner_caption": "Sun-baked limestone cliffs of the Valley of the Kings on the West Bank at Thebes (Luxor), royal burial valley of Tutankhamun."
+      "banner_caption": "Sun-baked limestone cliffs of the Valley of the Kings on the West Bank at Thebes (Luxor), royal burial valley of Tutankhamun.",
+      "prologue_audio": "/audio/lessons/ks2_ancient_egypt/lesson_6_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · Historian"
     }
   ],
   "key_individuals": [

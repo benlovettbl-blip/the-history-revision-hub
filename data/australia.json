@@ -828,7 +828,9 @@
               "id": "aus_l1_src_a",
               "src": "",
               "image": "",
-              "question": "Why did the British Admiralty include a requirement for native consent in their secret orders, yet Cook claimed the entire eastern coast without it?"
+              "question": "Why did the British Admiralty include a requirement for native consent in their secret orders, yet Cook claimed the entire eastern coast without it?",
+              "studio_audio": "/audio/sources/australia/lesson_1_sA.mp3",
+              "studio_voice_label": "Secret Instructions from the Bri…"
             }
           ],
           "content": "<p class=\"prose-p\"><span class=\"para-ref\">[1.1]</span> In 1768, Lieutenant James Cook sailed aboard HMS <em>Endeavour</em> on an Enlightenment voyage funded by the Royal Society. Officially, Cook was tasked with transporting astronomer Joseph Banks to Tahiti to observe the rare transit of Venus across the Sun.</p><p class=\"prose-p\">However, Cook carried locked secret Admiralty orders commanding him to sail south into uncharted Pacific waters. The British Crown ordered Cook to search for the legendary Great Southern Land (<em>Terra Australis</em>) and claim the territory for King George III before rival European empires could discover it.</p>"
@@ -1037,7 +1039,9 @@
                 "hinge_question": "Why did English legal theory define land ownership strictly through farming and fencing rather than custodial stewardship?"
               },
               "id": "aus_l1_src_e",
-              "question": "Why did English legal theory define land ownership strictly through farming and fencing rather than custodial stewardship?"
+              "question": "Why did English legal theory define land ownership strictly through farming and fencing rather than custodial stewardship?",
+              "studio_audio": "/audio/sources/australia/lesson_1_sE.mp3",
+              "studio_voice_label": "Sir William Blackstone on the Le…"
             }
           ],
           "content": "<p class=\"prose-p\"><span class=\"para-ref\">[1.5]</span> Cook justified seizing the continent by describing First Nations peoples as primitive nomads who did not farm or construct towns. British jurists used these flawed accounts to declare the continent <em>terra nullius</em>—land belonging to nobody.</p><p class=\"prose-p\">Under 18th-century European property law, legal sovereignty required fences, iron ploughs, and permanent towns. Because the British recognized no Indigenous ownership, there were no treaties signed with clan elders. This catastrophic legal fiction initiated over two centuries dispossession, stripping Aboriginal nations of ancestral land, legal sovereignty, and basic human rights.</p>",
@@ -1500,7 +1504,9 @@
           "id": "aus_l1_src_a",
           "src": "",
           "image": "",
-          "question": "Why did the British Admiralty include a requirement for native consent in their secret orders, yet Cook claimed the entire eastern coast without it?"
+          "question": "Why did the British Admiralty include a requirement for native consent in their secret orders, yet Cook claimed the entire eastern coast without it?",
+          "studio_audio": "/audio/sources/australia/lesson_1_sA.mp3",
+          "studio_voice_label": "Secret Instructions from the Bri…"
         },
         {
           "letter": "B",
@@ -1584,7 +1590,9 @@
           "id": "aus_l1_src_e",
           "src": "",
           "image": "",
-          "question": "Why did English legal theory define land ownership strictly through farming and fencing rather than custodial stewardship?"
+          "question": "Why did English legal theory define land ownership strictly through farming and fencing rather than custodial stewardship?",
+          "studio_audio": "/audio/sources/australia/lesson_1_sE.mp3",
+          "studio_voice_label": "Sir William Blackstone on the Le…"
         }
       ],
       "tasks": [
@@ -2069,7 +2077,9 @@
       "banner_position": "center 28%",
       "enquiry_question": "Why did Britain claim eastern Australia and declare the land ‘terra nullius’?",
       "enquiryQuestion": "Why did Britain claim eastern Australia and declare the land ‘terra nullius’?",
-      "banner_caption": "The 29 April 1770 landing of Lieutenant James Cook at Kamay (Botany Bay), painted by E. Phillips Fox (1902, National Gallery of Victoria): Armed marines advance up the shore as two Gweagal warriors raise spears in defence of Country."
+      "banner_caption": "The 29 April 1770 landing of Lieutenant James Cook at Kamay (Botany Bay), painted by E. Phillips Fox (1902, National Gallery of Victoria): Armed marines advance up the shore as two Gweagal warriors raise spears in defence of Country.",
+      "prologue_audio": "/audio/lessons/australia/lesson_1_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · Historian"
     },
     {
       "id": "lesson_2",
@@ -3009,7 +3019,9 @@
               "id": "aus_l2_src_d",
               "src": "",
               "image": "",
-              "question": "Why did the British government launch the First Fleet with barely two years of supplies for an untried continent?"
+              "question": "Why did the British government launch the First Fleet with barely two years of supplies for an untried continent?",
+              "studio_audio": "/audio/sources/australia/lesson_2_sD.mp3",
+              "studio_voice_label": "Captain Watkin Tench on the Desp…"
             }
           ],
           "image": "/images/ks3_aus/aus_l2_b3_sydney_cove_port_jackson_bradley_1788.jpg",
@@ -3065,7 +3077,9 @@
               "id": "aus_l2_src_e",
               "src": "",
               "image": "",
-              "question": "How did the opportunity to become an independent landowner transform convict behavior in early colonial Australia?"
+              "question": "How did the opportunity to become an independent landowner transform convict behavior in early colonial Australia?",
+              "studio_audio": "/audio/sources/australia/lesson_2_sE.mp3",
+              "studio_voice_label": "Colonial Bench of Magistrates Re…"
             }
           ],
           "content": "<p class=\"prose-p\"><span class=\"para-ref\">[2.5]</span> Under Governor Phillip, Sydney was run as a disciplined open-air prison. Convicts endured exhausting dawn-to-dusk labour clearing bush, quarrying sandstone, and building storehouses, while guards enforced order using the brutal cat-o'-nine-tails lash for drunkenness or insolence.</p><p class=\"prose-p\">However, Phillip also recognized that incentive encouraged industry. The governor awarded 30-acre land grants to industrious emancipists who completed their sentences. Former convict James Ruse successfully cultivated wheat and corn at Rose Hill, proving Australian soil could sustain British farming and leading the penal colony toward eventual agricultural self-sufficiency.</p>"
@@ -3495,7 +3509,9 @@
           "id": "aus_l2_src_d",
           "src": "",
           "image": "",
-          "question": "Why did the British government launch the First Fleet with barely two years of supplies for an untried continent?"
+          "question": "Why did the British government launch the First Fleet with barely two years of supplies for an untried continent?",
+          "studio_audio": "/audio/sources/australia/lesson_2_sD.mp3",
+          "studio_voice_label": "Captain Watkin Tench on the Desp…"
         },
         {
           "letter": "E",
@@ -3516,7 +3532,9 @@
           "id": "aus_l2_src_e",
           "src": "",
           "image": "",
-          "question": "How did the opportunity to become an independent landowner transform convict behavior in early colonial Australia?"
+          "question": "How did the opportunity to become an independent landowner transform convict behavior in early colonial Australia?",
+          "studio_audio": "/audio/sources/australia/lesson_2_sE.mp3",
+          "studio_voice_label": "Colonial Bench of Magistrates Re…"
         }
       ],
       "tasks": [
@@ -4008,7 +4026,9 @@
       "banner_position": "center 52%",
       "enquiry_question": "Whose story do we tell about the founding of the first British penal colony in Australia?",
       "enquiryQuestion": "Whose story do we tell about the founding of the first British penal colony in Australia?",
-      "banner_caption": "The 26 January 1788 arrival of the First Fleet at the entrance of Port Jackson (Sydney Heads), painted in watercolour by HMS Sirius officer Lieutenant William Bradley (Mitchell Library, State Library of New South Wales)."
+      "banner_caption": "The 26 January 1788 arrival of the First Fleet at the entrance of Port Jackson (Sydney Heads), painted in watercolour by HMS Sirius officer Lieutenant William Bradley (Mitchell Library, State Library of New South Wales).",
+      "prologue_audio": "/audio/lessons/australia/lesson_2_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · Historian"
     },
     {
       "id": "lesson_3",
@@ -4539,7 +4559,9 @@
               "id": "aus_l3_src_a",
               "src": "",
               "image": "",
-              "question": "How does Tench's observation of family-owned coves and restrained hunting directly refute the British claim that First Nations peoples had no concept of property?"
+              "question": "How does Tench's observation of family-owned coves and restrained hunting directly refute the British claim that First Nations peoples had no concept of property?",
+              "studio_audio": "/audio/sources/australia/lesson_3_sA.mp3",
+              "studio_voice_label": "Watkin Tench on Eora Custodiansh…"
             }
           ],
           "content": "<p class=\"prose-p\"><span class=\"para-ref\">[3.1]</span> For over 65,000 years, First Nations peoples lived across Australia in the world’s oldest continuous civilization. More than 250 language nations occupied distinct ancestral territories, ranging from the coastal Eora clans around Sydney to desert nations of the arid interior.</p><p class=\"prose-p\">Aboriginal societies managed ecosystems through sophisticated fire-stick farming, deliberately burning dry grasslands to prevent catastrophic bushfires and regenerate fresh grazing for wallabies. Communities were governed by ancient Songlines & custodianship, spiritual tracks that connected ancestral dreaming, complex customary law, moral obligations, and navigational routes across country.</p>"
@@ -4589,7 +4611,9 @@
               "id": "aus_l3_src_b",
               "src": "",
               "image": "",
-              "question": "Was the 1789 smallpox outbreak an accidental transmission from First Fleet medical vials, or a catastrophic consequence of European arrival?"
+              "question": "Was the 1789 smallpox outbreak an accidental transmission from First Fleet medical vials, or a catastrophic consequence of European arrival?",
+              "studio_audio": "/audio/sources/australia/lesson_3_sB.mp3",
+              "studio_voice_label": "Surgeon John White's Journal on…"
             }
           ],
           "content": "<p class=\"prose-p\"><span class=\"para-ref\">[3.2]</span> Early contact between British colonists and local clans quickly turned tense as Europeans cleared sacred bush, depleted fish stocks, and contaminated freshwater creeks. In April 1789, an apocalyptic epidemic of gal-galla smallpox struck First Nations communities.</p><p class=\"prose-p\">Having no natural biological immunity, local clans suffered devastating 50–70% Eora mortality within weeks. Corpses floated in Sydney Harbour, and survivors abandoned infected campsites in terror. The catastrophic loss of elders & law wiped out vital knowledge, sacred stories, and community leaders, crippling Aboriginal social cohesion and ability to resist British expansion.</p>",
@@ -4841,7 +4865,9 @@
               "id": "aus_l3_src_e",
               "src": "",
               "image": "",
-              "question": "Why did Governor King treat Pemulwuy as an enemy military commander rather than an ordinary colonial criminal?"
+              "question": "Why did Governor King treat Pemulwuy as an enemy military commander rather than an ordinary colonial criminal?",
+              "studio_audio": "/audio/sources/australia/lesson_3_sE.mp3",
+              "studio_voice_label": "Governor Philip Gidley King's Go…"
             }
           ],
           "content": "<p class=\"prose-p\"><span class=\"para-ref\">[3.5]</span> By the late 1790s, the frontier shifted to the Hawkesbury River. Expanding fertile farming invasions drove Dharug and Bidjigal families away from rich yam beds and fishing grounds, sparking bloody guerrilla warfare as warriors attacked isolated farmhouses.</p><p class=\"prose-p\">Governor Philip Gidley King outlawed Indigenous warriors, issuing ruthless shoot on sight orders that permitted settlers and redcoats to kill Aboriginal people without trial. The resistance suffered a fatal blow with the death of Pemulwuy (1802) in an ambush. Pemulwuy’s severed head was shipped to London, ending the first organised frontier war.</p>",
@@ -5211,7 +5237,9 @@
           "id": "aus_l3_src_a",
           "src": "",
           "image": "",
-          "question": "How does Tench's observation of family-owned coves and restrained hunting directly refute the British claim that First Nations peoples had no concept of property?"
+          "question": "How does Tench's observation of family-owned coves and restrained hunting directly refute the British claim that First Nations peoples had no concept of property?",
+          "studio_audio": "/audio/sources/australia/lesson_3_sA.mp3",
+          "studio_voice_label": "Watkin Tench on Eora Custodiansh…"
         },
         {
           "letter": "B",
@@ -5232,7 +5260,9 @@
           "id": "aus_l3_src_b",
           "src": "",
           "image": "",
-          "question": "Was the 1789 smallpox outbreak an accidental transmission from First Fleet medical vials, or a catastrophic consequence of European arrival?"
+          "question": "Was the 1789 smallpox outbreak an accidental transmission from First Fleet medical vials, or a catastrophic consequence of European arrival?",
+          "studio_audio": "/audio/sources/australia/lesson_3_sB.mp3",
+          "studio_voice_label": "Surgeon John White's Journal on…"
         },
         {
           "letter": "C",
@@ -5295,7 +5325,9 @@
           "id": "aus_l3_src_e",
           "src": "",
           "image": "",
-          "question": "Why did Governor King treat Pemulwuy as an enemy military commander rather than an ordinary colonial criminal?"
+          "question": "Why did Governor King treat Pemulwuy as an enemy military commander rather than an ordinary colonial criminal?",
+          "studio_audio": "/audio/sources/australia/lesson_3_sE.mp3",
+          "studio_voice_label": "Governor Philip Gidley King's Go…"
         }
       ],
       "tasks": [
@@ -5771,7 +5803,9 @@
       "banner_position": "center 55%",
       "enquiry_question": "Was the colonisation of Australia a story of ‘amity and kindness’ or violent frontier resistance?",
       "enquiryQuestion": "Was the colonisation of Australia a story of ‘amity and kindness’ or violent frontier resistance?",
-      "banner_caption": "The Nepean-Hawkesbury River valley in Dharug Country (Joseph Lycett, Views in Australia, 1825, National Library of Australia): Fertile riverbanks cleared by armed colonists became a major flashpoint of the Sydney Basin Frontier Wars."
+      "banner_caption": "The Nepean-Hawkesbury River valley in Dharug Country (Joseph Lycett, Views in Australia, 1825, National Library of Australia): Fertile riverbanks cleared by armed colonists became a major flashpoint of the Sydney Basin Frontier Wars.",
+      "prologue_audio": "/audio/lessons/australia/lesson_3_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · Historian"
     },
     {
       "id": "lesson_4",
@@ -6299,7 +6333,9 @@
               "id": "aus_l4_src_a",
               "src": "",
               "image": "",
-              "question": "Why did the British military respond to an Indigenous kangaroo hunt with lethal artillery fire?"
+              "question": "Why did the British military respond to an Indigenous kangaroo hunt with lethal artillery fire?",
+              "studio_audio": "/audio/sources/australia/lesson_4_sA.mp3",
+              "studio_voice_label": "Deposition of Convict Edward Whi…"
             }
           ],
           "content": "<p class=\"prose-p\"><span class=\"para-ref\">[4.1]</span> In 1803, the British Crown established a secondary penal colony in Van Diemen’s Land (modern Tasmania) to deter French expansion. British authorities transported repeat convicts and soldiers to an island home to around 6,000 Indigenous Palawa people.</p><p class=\"prose-p\">Violence erupted in May 1804 when British soldiers opened Risdon Cove cannon fire upon three hundred Palawa hunters on a traditional kangaroo hunt. As pastoral sheep farmers seized fertile Palawa hunting grounds across the Tasmanian Midlands, conflict escalated into two decades of bloody retaliation, kidnapping of Aboriginal women, and frontier warfare.</p>",
@@ -6562,7 +6598,9 @@
               "id": "aus_l4_src_c",
               "src": "",
               "image": "",
-              "question": "Did Robinson's mission save the Tasmanian Aboriginal people from extinction, or facilitate their destruction through exile?"
+              "question": "Did Robinson's mission save the Tasmanian Aboriginal people from extinction, or facilitate their destruction through exile?",
+              "studio_audio": "/audio/sources/australia/lesson_4_sC.mp3",
+              "studio_voice_label": "George Augustus Robinson"
             }
           ],
           "content": "<p class=\"prose-p\"><span class=\"para-ref\">[4.3]</span> Seeking to end the conflict without military humiliation, British missionary George Augustus Robinson enlisted Truganini peacemaking diplomacy. A Nuenonne woman whose family had been murdered by settlers, Truganini persuaded surviving Palawa clans to accept government protection.</p><p class=\"prose-p\">However, British authorities betrayed the agreement. Around 200 exiled to Flinders Island were imprisoned in the damp, windswept settlement of Wybalenna. Plagued by depression, poor diet, and Wybalenna camp sickness, over 150 Palawa died within a decade, making Truganini an enduring symbol of tragic Palawa survival and resistance against imperial extermination.</p>"
@@ -6615,7 +6653,9 @@
               "id": "aus_l4_src_d",
               "src": "",
               "image": "",
-              "question": "Why did the British Parliament express \"deepest sorrow and national humiliation\" in London, yet fail to stop pastoral squatters from seizing Indigenous land in Australia?"
+              "question": "Why did the British Parliament express \"deepest sorrow and national humiliation\" in London, yet fail to stop pastoral squatters from seizing Indigenous land in Australia?",
+              "studio_audio": "/audio/sources/australia/lesson_4_sD.mp3",
+              "studio_voice_label": "Report of the British Parliament…"
             }
           ],
           "content": "<p class=\"prose-p\"><span class=\"para-ref\">[4.4]</span> On the Australian mainland, economic forces drove an immense land grab across New South Wales and Victoria. Industrial revolution in Britain created soaring Yorkshire wool demand, making fine Australian sheep fleece exceptionally valuable for northern textile mills.</p><p class=\"prose-p\">Wealthy colonial pastoralists, known as squatters, pushed millions of Merino sheep flocks across the Blue Mountains into the interior. Squatters seized Indigenous country, fencing creeks and seizing native waterholes for livestock. Sheep devastated native yam daisy fields, destroying Aboriginal food supplies and triggering bitter guerrilla raids as starving clans speared grazing livestock.</p>"
@@ -7035,7 +7075,9 @@
           "id": "aus_l4_src_a",
           "src": "",
           "image": "",
-          "question": "Why did the British military respond to an Indigenous kangaroo hunt with lethal artillery fire?"
+          "question": "Why did the British military respond to an Indigenous kangaroo hunt with lethal artillery fire?",
+          "studio_audio": "/audio/sources/australia/lesson_4_sA.mp3",
+          "studio_voice_label": "Deposition of Convict Edward Whi…"
         },
         {
           "letter": "B",
@@ -7077,7 +7119,9 @@
           "id": "aus_l4_src_c",
           "src": "",
           "image": "",
-          "question": "Did Robinson's mission save the Tasmanian Aboriginal people from extinction, or facilitate their destruction through exile?"
+          "question": "Did Robinson's mission save the Tasmanian Aboriginal people from extinction, or facilitate their destruction through exile?",
+          "studio_audio": "/audio/sources/australia/lesson_4_sC.mp3",
+          "studio_voice_label": "George Augustus Robinson"
         },
         {
           "letter": "D",
@@ -7098,7 +7142,9 @@
           "id": "aus_l4_src_d",
           "src": "",
           "image": "",
-          "question": "Why did the British Parliament express \"deepest sorrow and national humiliation\" in London, yet fail to stop pastoral squatters from seizing Indigenous land in Australia?"
+          "question": "Why did the British Parliament express \"deepest sorrow and national humiliation\" in London, yet fail to stop pastoral squatters from seizing Indigenous land in Australia?",
+          "studio_audio": "/audio/sources/australia/lesson_4_sD.mp3",
+          "studio_voice_label": "Report of the British Parliament…"
         },
         {
           "letter": "E",
@@ -7592,7 +7638,9 @@
       "banner_position": "center 48%",
       "enquiry_question": "How did pastoral expansion and frontier conflict transform colonial Australia?",
       "enquiryQuestion": "How did pastoral expansion and frontier conflict transform colonial Australia?",
-      "banner_caption": "The River Nile, Van Diemen's Land, from Mr Glover's Farm (John Glover, 1837, National Gallery of Victoria): Painted shortly after Tasmanian Palawa clans were dispossessed of these ancestral hunting grounds during the Black War."
+      "banner_caption": "The River Nile, Van Diemen's Land, from Mr Glover's Farm (John Glover, 1837, National Gallery of Victoria): Painted shortly after Tasmanian Palawa clans were dispossessed of these ancestral hunting grounds during the Black War.",
+      "prologue_audio": "/audio/lessons/australia/lesson_4_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · Historian"
     },
     {
       "id": "lesson_5",
@@ -8123,7 +8171,9 @@
               "id": "aus_l5_src_a",
               "src": "",
               "image": "",
-              "question": "Why did colonial governors initially fear the discovery of gold would destroy law, order, and social hierarchy?"
+              "question": "Why did colonial governors initially fear the discovery of gold would destroy law, order, and social hierarchy?",
+              "studio_audio": "/audio/sources/australia/lesson_5_sA.mp3",
+              "studio_voice_label": "Edward Hargraves"
             }
           ],
           "content": "<p class=\"prose-p\"><span class=\"para-ref\">[5.1]</span> In February 1851, Edward Hargraves announced his landmark Hargraves 1851 discovery of payable alluvial gold near Bathurst, New South Wales. Within months, vastly richer goldfields were found at Ballarat and Bendigo in Victoria, sparking one of the greatest mass migrations in imperial history.</p><p class=\"prose-p\">Over half a million prospectors poured into Australia from Europe, America, and China. As gold fever gripped the colonies, the Australian population triples to 1.2m within a decade. Massive gold exports stimulated commerce and railways, financing magnificent Melbourne Victorian wealth that turned Melbourne into one of the British Empire’s grandest metropolises.</p>"
@@ -8282,7 +8332,9 @@
               "id": "aus_l5_src_d",
               "src": "",
               "image": "",
-              "question": "Why did the Australian government implement a deceitful \"dictation test\" rather than passing an explicit ban based on race or skin colour?"
+              "question": "Why did the Australian government implement a deceitful \"dictation test\" rather than passing an explicit ban based on race or skin colour?",
+              "studio_audio": "/audio/sources/australia/lesson_5_sD.mp3",
+              "studio_voice_label": "Commonwealth of Australia Immigr…"
             }
           ],
           "content": "<p class=\"prose-p\"><span class=\"para-ref\">[5.4]</span> The gold rush attracted over 40,000 Chinese diggers, who worked cooperatively re-washing abandoned claims with great success. European miners reacted with intense racial hostility, accusing Chinese workers of stealing water, driving down wages, and introducing foreign vices.</p><p class=\"prose-p\">Simmering racism exploded into violence during the Lambing Flat Riots (1861), where white mobs assaulted Chinese miners and destroyed camps. When Australian colonies federated in 1901, the new federal parliament passed the 1901 Immigration Restriction Act, creating the White Australia Policy and using language dictation tests to exclude non-European migrants.</p>"
@@ -8800,7 +8852,9 @@
           "id": "aus_l5_src_a",
           "src": "",
           "image": "",
-          "question": "Why did colonial governors initially fear the discovery of gold would destroy law, order, and social hierarchy?"
+          "question": "Why did colonial governors initially fear the discovery of gold would destroy law, order, and social hierarchy?",
+          "studio_audio": "/audio/sources/australia/lesson_5_sA.mp3",
+          "studio_voice_label": "Edward Hargraves"
         },
         {
           "letter": "B",
@@ -8863,7 +8917,9 @@
           "id": "aus_l5_src_d",
           "src": "",
           "image": "",
-          "question": "Why did the Australian government implement a deceitful \"dictation test\" rather than passing an explicit ban based on race or skin colour?"
+          "question": "Why did the Australian government implement a deceitful \"dictation test\" rather than passing an explicit ban based on race or skin colour?",
+          "studio_audio": "/audio/sources/australia/lesson_5_sD.mp3",
+          "studio_voice_label": "Commonwealth of Australia Immigr…"
         },
         {
           "letter": "E",
@@ -9376,7 +9432,9 @@
       "banner_position": "center 42%",
       "enquiry_question": "How did the 1851 Gold Rush and the Eureka Stockade transform Australian society and democracy?",
       "enquiryQuestion": "How did the 1851 Gold Rush and the Eureka Stockade transform Australian society and democracy?",
-      "banner_caption": "The 3 December 1854 dawn assault on the Eureka Stockade at Ballarat (watercolour by eyewitness artist John Black Henderson, Mitchell Library, State Library of New South Wales)."
+      "banner_caption": "The 3 December 1854 dawn assault on the Eureka Stockade at Ballarat (watercolour by eyewitness artist John Black Henderson, Mitchell Library, State Library of New South Wales).",
+      "prologue_audio": "/audio/lessons/australia/lesson_5_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · Historian"
     }
   ],
   "edition": "2026.1",

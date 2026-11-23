@@ -1,0 +1,89 @@
+{
+  "version": 1,
+  "clips": {
+    "lesson_1_sA": {
+      "hash": "65b68e42e7c4456c",
+      "bytes": 130988,
+      "voiceKey": "male_historian",
+      "badge": "Secret Instructions from the Bri…",
+      "updatedAt": "2026-11-23T23:07:12.381Z"
+    },
+    "lesson_1_sE": {
+      "hash": "790c331d689ffd6c",
+      "bytes": 116300,
+      "voiceKey": "male_historian",
+      "badge": "Sir William Blackstone on the Le…",
+      "updatedAt": "2026-11-23T23:07:43.971Z"
+    },
+    "lesson_2_sD": {
+      "hash": "476c919126849e60",
+      "bytes": 124268,
+      "voiceKey": "male_historian",
+      "badge": "Captain Watkin Tench on the Desp…",
+      "updatedAt": "2026-11-23T23:07:44.415Z"
+    },
+    "lesson_3_sA": {
+      "hash": "2811bd61e351eeb3",
+      "bytes": 117932,
+      "voiceKey": "male_historian",
+      "badge": "Watkin Tench on Eora Custodiansh…",
+      "updatedAt": "2026-11-23T23:07:44.827Z"
+    },
+    "lesson_3_sB": {
+      "hash": "513348236a6ace00",
+      "bytes": 105740,
+      "voiceKey": "male_historian",
+      "badge": "Surgeon John White's Journal on…",
+      "updatedAt": "2026-11-23T23:07:45.271Z"
+    },
+    "lesson_3_sE": {
+      "hash": "e64d2a73b0095320",
+      "bytes": 116972,
+      "voiceKey": "male_historian",
+      "badge": "Governor Philip Gidley King's Go…",
+      "updatedAt": "2026-11-23T23:07:45.724Z"
+    },
+    "lesson_4_sD": {
+      "hash": "0dcdbbaaed71fcef",
+      "bytes": 138380,
+      "voiceKey": "male_historian",
+      "badge": "Report of the British Parliament…",
+      "updatedAt": "2026-11-23T23:07:46.176Z"
+    },
+    "lesson_5_sD": {
+      "hash": "ed511358b236c965",
+      "bytes": 114092,
+      "voiceKey": "male_historian",
+      "badge": "Commonwealth of Australia Immigr…",
+      "updatedAt": "2026-11-23T23:07:46.705Z"
+    },
+    "lesson_4_sC": {
+      "hash": "964a5fa2bd4d834d",
+      "bytes": 119468,
+      "voiceKey": "female_historian",
+      "badge": "George Augustus Robinson",
+      "updatedAt": "2026-11-23T23:12:13.390Z"
+    },
+    "lesson_5_sA": {
+      "hash": "aed6b954a9c743d1",
+      "bytes": 84428,
+      "voiceKey": "female_historian",
+      "badge": "Edward Hargraves",
+      "updatedAt": "2026-11-23T23:12:14.196Z"
+    },
+    "lesson_2_sE": {
+      "hash": "ae7ac166cd3ea6c2",
+      "bytes": 134540,
+      "voiceKey": "female_historian",
+      "badge": "Colonial Bench of Magistrates Re…",
+      "updatedAt": "2026-11-23T23:12:23.761Z"
+    },
+    "lesson_4_sA": {
+      "hash": "def825ae320c0ea4",
+      "bytes": 125420,
+      "voiceKey": "female_historian",
+      "badge": "Deposition of Convict Edward Whi…",
+      "updatedAt": "2026-11-23T23:12:25.208Z"
+    }
+  }
+}

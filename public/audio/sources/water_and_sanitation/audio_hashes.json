@@ -1,0 +1,82 @@
+{
+  "version": 1,
+  "clips": {
+    "lesson_2_sA": {
+      "hash": "120693715b893dc9",
+      "bytes": 145580,
+      "voiceKey": "male_historian",
+      "badge": "Winchester Court Leet Presentmen…",
+      "updatedAt": "2026-11-23T23:07:31.584Z"
+    },
+    "lesson_2_sE": {
+      "hash": "0b926a06432ee32a",
+      "bytes": 183020,
+      "voiceKey": "male_historian",
+      "badge": "The 1388 Statute of Cambridge (P…",
+      "updatedAt": "2026-11-23T23:07:32.096Z"
+    },
+    "lesson_3_sA": {
+      "hash": "75465463f97b8777",
+      "bytes": 124460,
+      "voiceKey": "male_historian",
+      "badge": "John Stow (1598)",
+      "updatedAt": "2026-11-23T23:07:33.237Z"
+    },
+    "lesson_3_sD": {
+      "hash": "763a03ec8384eedd",
+      "bytes": 97388,
+      "voiceKey": "male_historian",
+      "badge": "Diary Entry of Samuel Pepys",
+      "updatedAt": "2026-11-23T23:07:33.646Z"
+    },
+    "lesson_3_sE": {
+      "hash": "a95d721c9a35ee46",
+      "bytes": 145580,
+      "voiceKey": "male_historian",
+      "badge": "London Bill of Mortality for the…",
+      "updatedAt": "2026-11-23T23:07:34.062Z"
+    },
+    "lesson_4_sSOURCEA": {
+      "hash": "b99254ca27bfcbe3",
+      "bytes": 156620,
+      "voiceKey": "male_historian",
+      "badge": "Dr James Phillips Kay-Shuttlewor…",
+      "updatedAt": "2026-11-23T23:07:35.588Z"
+    },
+    "lesson_4_sSOURCEC": {
+      "hash": "a544cf997581f040",
+      "bytes": 166028,
+      "voiceKey": "male_historian",
+      "badge": "Edwin Chadwick's 'Report on the…",
+      "updatedAt": "2026-11-23T23:07:36.107Z"
+    },
+    "lesson_5_sSOURCEC": {
+      "hash": "f6dba5659a9a2ba4",
+      "bytes": 178508,
+      "voiceKey": "male_historian",
+      "badge": "Reverend Henry Whitehead's Vestr…",
+      "updatedAt": "2026-11-23T23:07:37.327Z"
+    },
+    "lesson_5_sSOURCEE": {
+      "hash": "dd4e6cba441267da",
+      "bytes": 157580,
+      "voiceKey": "male_historian",
+      "badge": "The Public Health Act 1875",
+      "updatedAt": "2026-11-23T23:07:38.018Z"
+    },
+    "lesson_6_sE": {
+      "hash": "172da7b83bb56ac4",
+      "bytes": 154892,
+      "voiceKey": "male_historian",
+      "badge": "The Public Health Act 1875",
+      "updatedAt": "2026-11-23T23:07:39.194Z"
+    },
+    "lesson_1_sD": {
+      "hash": "4c0f56d089a924a3",
+      "bytes": 159308,
+      "voiceKey": "female_historian",
+      "badge": "Seneca the Younger",
+      "updatedAt": "2026-11-23T23:12:19.946Z"
+    }
+  }
+}

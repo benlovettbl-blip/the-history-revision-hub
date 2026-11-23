@@ -321,7 +321,9 @@ export default {
               "type": "written",
               "src": "",
               "image": "",
-              "question": "How does Millicent Fawcett's interpretation in Source A differ from Suffragette claims that militancy secured the vote?"
+              "question": "How does Millicent Fawcett's interpretation in Source A differ from Suffragette claims that militancy secured the vote?",
+              "studio_audio": "/audio/sources/post_war_britain/lesson_1_sA.mp3",
+              "studio_voice_label": "Millicent Garrett Fawcett Reflec…"
             }
           ],
           "source": {
@@ -617,7 +619,9 @@ export default {
                 "hinge_question": "Why did Parliament choose to enfranchise only older, property-owning women in 1918 rather than granting equal voting rights to all adult women?"
               },
               "src": "",
-              "image": ""
+              "image": "",
+              "studio_audio": "/audio/sources/post_war_britain/lesson_1_sE.mp3",
+              "studio_voice_label": "The Representation of the People…"
             }
           ],
           "source": {
@@ -660,7 +664,9 @@ export default {
           "src": "",
           "image": "",
           "context": "Reflections written by NUWSS leader Millicent Fawcett following the passage of the Representation of the People Act in February 1918.",
-          "question": "How does Millicent Fawcett's interpretation in Source A differ from Suffragette claims that militancy secured the vote?"
+          "question": "How does Millicent Fawcett's interpretation in Source A differ from Suffragette claims that militancy secured the vote?",
+          "studio_audio": "/audio/sources/post_war_britain/lesson_1_sA.mp3",
+          "studio_voice_label": "Millicent Garrett Fawcett Reflec…"
         },
         {
           "letter": "B",
@@ -739,7 +745,9 @@ export default {
             "hinge_question": "Why did Parliament choose to enfranchise only older, property-owning women in 1918 rather than granting equal voting rights to all adult women?"
           },
           "src": "",
-          "image": ""
+          "image": "",
+          "studio_audio": "/audio/sources/post_war_britain/lesson_1_sE.mp3",
+          "studio_voice_label": "The Representation of the People…"
         }
       ],
       "comprehension": [
@@ -1953,7 +1961,9 @@ export default {
       "enquiry": "How did women’s campaigning and wartime work win the vote in 1918?",
       "enquiry_question": "How did women’s campaigning and wartime work win the vote in 1918?",
       "enquiryQuestion": "How did women’s campaigning and wartime work win the vote in 1918?",
-      "banner_caption": "Women’s Coronation Suffrage Procession Through London (17 June 1911, LSE Women’s Library): Marching behind a banner recording '690 Imprisonments to Win Freedom for Women', over 40,000 suffragists and suffragettes united ahead of King George V’s coronation."
+      "banner_caption": "Women’s Coronation Suffrage Procession Through London (17 June 1911, LSE Women’s Library): Marching behind a banner recording '690 Imprisonments to Win Freedom for Women', over 40,000 suffragists and suffragettes united ahead of King George V’s coronation.",
+      "prologue_audio": "/audio/lessons/post_war_britain/lesson_1_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · Historian"
     },
     {
       "id": "lesson_2",
@@ -2096,7 +2106,9 @@ export default {
                 "hinge_question": "How did the shared suffering of total war create the political consensus needed to build a universal welfare state?"
               },
               "src": "",
-              "image": ""
+              "image": "",
+              "studio_audio": "/audio/sources/post_war_britain/lesson_2_sA.mp3",
+              "studio_voice_label": "Ministry of Health Circular on O…"
             }
           ],
           "image": "/images/post_war_britain/pwb_l2_b0_evacuees_devon_1941_d3106.jpg",
@@ -2321,7 +2333,9 @@ export default {
               "id": "pwb_l2_src_c",
               "type": "visual",
               "image_alt": "Close-up portrait photograph of Labour Prime Minister Clement Attlee smiling in a three-piece tweed suit and patterned tie",
-              "question": "What does the 1945 general election result suggest about the changing expectations of the British electorate after the Second World War?"
+              "question": "What does the 1945 general election result suggest about the changing expectations of the British electorate after the Second World War?",
+              "studio_audio": "/audio/sources/post_war_britain/lesson_2_sC.mp3",
+              "studio_voice_label": "Prime Minister Clement Attlee Fo…"
             }
           ],
           "source": {
@@ -2371,7 +2385,9 @@ export default {
               "type": "written",
               "src": "",
               "image": "",
-              "question": "Why is this parliamentary speech highly valuable for a historian investigating the core founding philosophy of the NHS?"
+              "question": "Why is this parliamentary speech highly valuable for a historian investigating the core founding philosophy of the NHS?",
+              "studio_audio": "/audio/sources/post_war_britain/lesson_2_sD.mp3",
+              "studio_voice_label": "Aneurin Bevan on the Moral Found…"
             }
           ],
           "source": {
@@ -2467,7 +2483,9 @@ export default {
             "hinge_question": "How did the shared suffering of total war create the political consensus needed to build a universal welfare state?"
           },
           "src": "",
-          "image": ""
+          "image": "",
+          "studio_audio": "/audio/sources/post_war_britain/lesson_2_sA.mp3",
+          "studio_voice_label": "Ministry of Health Circular on O…"
         },
         {
           "letter": "B",
@@ -2509,7 +2527,9 @@ export default {
           "id": "pwb_l2_src_c",
           "context": "Official portrait of Clement Attlee taking office as Prime Minister in July 1945.",
           "image_alt": "Close-up portrait photograph of Labour Prime Minister Clement Attlee smiling in a three-piece tweed suit and patterned tie",
-          "question": "What does the 1945 general election result suggest about the changing expectations of the British electorate after the Second World War?"
+          "question": "What does the 1945 general election result suggest about the changing expectations of the British electorate after the Second World War?",
+          "studio_audio": "/audio/sources/post_war_britain/lesson_2_sC.mp3",
+          "studio_voice_label": "Prime Minister Clement Attlee Fo…"
         },
         {
           "letter": "D",
@@ -2528,7 +2548,9 @@ export default {
           "src": "",
           "image": "",
           "context": "Speech delivered in Parliament by Health Minister Aneurin Bevan introducing the National Health Service Bill on 30 April 1946.",
-          "question": "Why is this parliamentary speech highly valuable for a historian investigating the core founding philosophy of the NHS?"
+          "question": "Why is this parliamentary speech highly valuable for a historian investigating the core founding philosophy of the NHS?",
+          "studio_audio": "/audio/sources/post_war_britain/lesson_2_sD.mp3",
+          "studio_voice_label": "Aneurin Bevan on the Moral Found…"
         },
         {
           "letter": "E",
@@ -3773,7 +3795,9 @@ export default {
       "enquiry": "Why and how did post-war Britain create the Welfare State and free NHS?",
       "enquiry_question": "Why and how did post-war Britain create the Welfare State and free NHS?",
       "enquiryQuestion": "Why and how did post-war Britain create the Welfare State and free NHS?",
-      "banner_caption": "VE Day Crowds Packed Across Whitehall, London (8 May 1945, Ministry of Information): Shared sacrifice through six years of total war forged a popular determination never to return to 1930s poverty—powering the creation of Britain’s Welfare State and NHS."
+      "banner_caption": "VE Day Crowds Packed Across Whitehall, London (8 May 1945, Ministry of Information): Shared sacrifice through six years of total war forged a popular determination never to return to 1930s poverty—powering the creation of Britain’s Welfare State and NHS.",
+      "prologue_audio": "/audio/lessons/post_war_britain/lesson_2_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · Historian"
     },
     {
       "id": "lesson_3",
@@ -3915,7 +3939,9 @@ export default {
               "type": "written",
               "src": "",
               "image": "",
-              "question": "Why did Clement Attlee's government pass the British Nationality Act in 1948 granting unrestricted entry to Commonwealth citizens?"
+              "question": "Why did Clement Attlee's government pass the British Nationality Act in 1948 granting unrestricted entry to Commonwealth citizens?",
+              "studio_audio": "/audio/sources/post_war_britain/lesson_3_sA.mp3",
+              "studio_voice_label": "The British Nationality Act 1948…"
             }
           ],
           "source": {
@@ -4320,7 +4346,9 @@ export default {
               "type": "written",
               "src": "",
               "image": "",
-              "question": "What does Alford Gardner's testimony reveal about the everyday barriers encountered by Caribbean arrivals in 1950s Britain?"
+              "question": "What does Alford Gardner's testimony reveal about the everyday barriers encountered by Caribbean arrivals in 1950s Britain?",
+              "studio_audio": "/audio/sources/post_war_britain/lesson_3_sD.mp3",
+              "studio_voice_label": "Firsthand Account of the \"Colour…"
             }
           ],
           "source": {
@@ -4372,7 +4400,9 @@ export default {
               "type": "written",
               "src": "",
               "image": "",
-              "question": "How did Claudia Jones propose to combat racial hatred following the 1958 Notting Hill riots?"
+              "question": "How did Claudia Jones propose to combat racial hatred following the 1958 Notting Hill riots?",
+              "studio_audio": "/audio/sources/post_war_britain/lesson_3_sE.mp3",
+              "studio_voice_label": "Claudia Jones Launches the Carib…"
             }
           ],
           "source": {
@@ -4414,7 +4444,9 @@ export default {
           "src": "",
           "image": "",
           "context": "The statutory text of the British Nationality Act 1948 passed by Parliament.",
-          "question": "Why did Clement Attlee's government pass the British Nationality Act in 1948 granting unrestricted entry to Commonwealth citizens?"
+          "question": "Why did Clement Attlee's government pass the British Nationality Act in 1948 granting unrestricted entry to Commonwealth citizens?",
+          "studio_audio": "/audio/sources/post_war_britain/lesson_3_sA.mp3",
+          "studio_voice_label": "The British Nationality Act 1948…"
         },
         {
           "letter": "B",
@@ -4473,7 +4505,9 @@ export default {
           "src": "",
           "image": "",
           "context": "Oral history interview with Alford Gardner, who served in the RAF during WWII and arrived on the Empire Windrush in 1948.",
-          "question": "What does Alford Gardner's testimony reveal about the everyday barriers encountered by Caribbean arrivals in 1950s Britain?"
+          "question": "What does Alford Gardner's testimony reveal about the everyday barriers encountered by Caribbean arrivals in 1950s Britain?",
+          "studio_audio": "/audio/sources/post_war_britain/lesson_3_sD.mp3",
+          "studio_voice_label": "Firsthand Account of the \"Colour…"
         },
         {
           "letter": "E",
@@ -4492,7 +4526,9 @@ export default {
           "src": "",
           "image": "",
           "context": "Editorial written by Claudia Jones in the West Indian Gazette launching the first London Caribbean Carnival at St Pancras Town Hall in January 1959.",
-          "question": "How did Claudia Jones propose to combat racial hatred following the 1958 Notting Hill riots?"
+          "question": "How did Claudia Jones propose to combat racial hatred following the 1958 Notting Hill riots?",
+          "studio_audio": "/audio/sources/post_war_britain/lesson_3_sE.mp3",
+          "studio_voice_label": "Claudia Jones Launches the Carib…"
         }
       ],
       "comprehension": [
@@ -5726,7 +5762,9 @@ export default {
       "enquiry": "Why did the Windrush generation come to Britain, and what hostility did they face?",
       "enquiry_question": "Why did the Windrush generation come to Britain, and what hostility did they face?",
       "enquiryQuestion": "Why did the Windrush generation come to Britain, and what hostility did they face?",
-      "banner_caption": "Tate Central Library and Civic Plaza at Windrush Square, Brixton, South London: Heart of Britain’s post-war Caribbean community, where Windrush pioneers settled from June 1948 despite the informal housing colour bar."
+      "banner_caption": "Tate Central Library and Civic Plaza at Windrush Square, Brixton, South London: Heart of Britain’s post-war Caribbean community, where Windrush pioneers settled from June 1948 despite the informal housing colour bar.",
+      "prologue_audio": "/audio/lessons/post_war_britain/lesson_3_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · Historian"
     },
     {
       "id": "lesson_4",
@@ -5868,7 +5906,9 @@ export default {
               "type": "written",
               "src": "",
               "image": "",
-              "question": "What reason did the General Manager give in Source A for refusing to employ non-white staff on Bristol buses?"
+              "question": "What reason did the General Manager give in Source A for refusing to employ non-white staff on Bristol buses?",
+              "studio_audio": "/audio/sources/post_war_britain/lesson_4_sA.mp3",
+              "studio_voice_label": "The Bristol Omnibus Company Just…"
             }
           ],
           "source": {
@@ -6016,7 +6056,9 @@ export default {
                 "hinge_question": "Why did the West Indian Development Council adopt non-violent boycott tactics inspired by Martin Luther King rather than relying on existing trade union mechanisms?"
               },
               "src": "",
-              "image": ""
+              "image": "",
+              "studio_audio": "/audio/sources/post_war_britain/lesson_4_sB.mp3",
+              "studio_voice_label": "Paul Stephenson on Launching the…"
             }
           ],
           "source": {
@@ -6171,7 +6213,9 @@ export default {
               "type": "written",
               "src": "",
               "image": "",
-              "question": "What limitations did civil rights campaigners identify in the 1965 Race Relations Act that required further legislation in 1968?"
+              "question": "What limitations did civil rights campaigners identify in the 1965 Race Relations Act that required further legislation in 1968?",
+              "studio_audio": "/audio/sources/post_war_britain/lesson_4_sE.mp3",
+              "studio_voice_label": "The Race Relations Act 1965"
             }
           ],
           "source": {
@@ -6213,7 +6257,9 @@ export default {
           "src": "",
           "image": "",
           "context": "Public press statement issued by the General Manager of the state-owned Bristol Omnibus Company on 3 May 1963.",
-          "question": "What reason did the General Manager give in Source A for refusing to employ non-white staff on Bristol buses?"
+          "question": "What reason did the General Manager give in Source A for refusing to employ non-white staff on Bristol buses?",
+          "studio_audio": "/audio/sources/post_war_britain/lesson_4_sA.mp3",
+          "studio_voice_label": "The Bristol Omnibus Company Just…"
         },
         {
           "letter": "B",
@@ -6232,7 +6278,9 @@ export default {
             "hinge_question": "Why did the West Indian Development Council adopt non-violent boycott tactics inspired by Martin Luther King rather than relying on existing trade union mechanisms?"
           },
           "src": "",
-          "image": ""
+          "image": "",
+          "studio_audio": "/audio/sources/post_war_britain/lesson_4_sB.mp3",
+          "studio_voice_label": "Paul Stephenson on Launching the…"
         },
         {
           "letter": "C",
@@ -6291,7 +6339,9 @@ export default {
           "src": "",
           "image": "",
           "context": "The statutory text of the Race Relations Act 1965, the first legislation in British history addressing racial discrimination.",
-          "question": "What limitations did civil rights campaigners identify in the 1965 Race Relations Act that required further legislation in 1968?"
+          "question": "What limitations did civil rights campaigners identify in the 1965 Race Relations Act that required further legislation in 1968?",
+          "studio_audio": "/audio/sources/post_war_britain/lesson_4_sE.mp3",
+          "studio_voice_label": "The Race Relations Act 1965"
         }
       ],
       "comprehension": [
@@ -7490,7 +7540,9 @@ export default {
       "enquiry": "How did the 1963 Bristol Bus Boycott help win Britain’s first Race Relations laws?",
       "enquiry_question": "How did the 1963 Bristol Bus Boycott help win Britain’s first Race Relations laws?",
       "enquiryQuestion": "How did the 1963 Bristol Bus Boycott help win Britain’s first Race Relations laws?",
-      "banner_caption": "1960s Green-and-Cream Bristol Omnibus Company Bus 2934 ('City Centre Circle — Temple Meads'): State-owned operator whose refusal to employ Black or Asian drivers and conductors sparked the landmark four-month 1963 Bristol Bus Boycott."
+      "banner_caption": "1960s Green-and-Cream Bristol Omnibus Company Bus 2934 ('City Centre Circle — Temple Meads'): State-owned operator whose refusal to employ Black or Asian drivers and conductors sparked the landmark four-month 1963 Bristol Bus Boycott.",
+      "prologue_audio": "/audio/lessons/post_war_britain/lesson_4_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · Historian"
     },
     {
       "id": "lesson_5",
@@ -7633,7 +7685,9 @@ export default {
                 "hinge_question": "Why did postwar British governments prioritize developing an independent nuclear deterrent despite severe domestic economic rationing?"
               },
               "src": "",
-              "image": ""
+              "image": "",
+              "studio_audio": "/audio/sources/post_war_britain/lesson_5_sA.mp3",
+              "studio_voice_label": "Prime Minister Winston Churchill…"
             }
           ],
           "source": {
@@ -8084,7 +8138,9 @@ export default {
               "type": "written",
               "src": "",
               "image": "",
-              "question": "How does E. P. Thompson's argument in Source E directly challenge the Home Office guidance in Source D?"
+              "question": "How does E. P. Thompson's argument in Source E directly challenge the Home Office guidance in Source D?",
+              "studio_audio": "/audio/sources/post_war_britain/lesson_5_sE.mp3",
+              "studio_voice_label": "E. P. Thompson (1980)"
             }
           ],
           "source": {
@@ -8126,7 +8182,9 @@ export default {
             "hinge_question": "Why did postwar British governments prioritize developing an independent nuclear deterrent despite severe domestic economic rationing?"
           },
           "src": "",
-          "image": ""
+          "image": "",
+          "studio_audio": "/audio/sources/post_war_britain/lesson_5_sA.mp3",
+          "studio_voice_label": "Prime Minister Winston Churchill…"
         },
         {
           "letter": "B",
@@ -8205,7 +8263,9 @@ export default {
           "src": "",
           "image": "",
           "context": "Pamphlet written by historian and CND leader E. P. Thompson responding to the government's Protect and Survive booklet.",
-          "question": "How does E. P. Thompson's argument in Source E directly challenge the Home Office guidance in Source D?"
+          "question": "How does E. P. Thompson's argument in Source E directly challenge the Home Office guidance in Source D?",
+          "studio_audio": "/audio/sources/post_war_britain/lesson_5_sE.mp3",
+          "studio_voice_label": "E. P. Thompson (1980)"
         }
       ],
       "comprehension": [
@@ -9412,7 +9472,9 @@ export default {
       "enquiry": "How did the threat of nuclear war spark protest and shape British life?",
       "enquiry_question": "How did the threat of nuclear war spark protest and shape British life?",
       "enquiryQuestion": "How did the threat of nuclear war spark protest and shape British life?",
-      "banner_caption": "Royal Air Force Avro Vulcan B.2 Strategic Nuclear V-Bomber (XL426): Backbone of Britain’s airborne nuclear deterrent during the Cold War, kept on four-minute readiness while CND campaigners marched for nuclear disarmament."
+      "banner_caption": "Royal Air Force Avro Vulcan B.2 Strategic Nuclear V-Bomber (XL426): Backbone of Britain’s airborne nuclear deterrent during the Cold War, kept on four-minute readiness while CND campaigners marched for nuclear disarmament.",
+      "prologue_audio": "/audio/lessons/post_war_britain/lesson_5_prologue.mp3",
+      "prologue_voice_label": "Studio Cold-Open · Historian"
     }
   ],
   "edition": "2026.1",
