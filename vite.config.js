@@ -1,7 +1,24 @@
 import { defineConfig } from 'vite';
 import fs from 'node:fs';
 import path from 'node:path';
-import { SEO_UNIT_ROUTES, SCHOOLS_SEO_PAGE, SITE_ORIGIN } from './src/data/seo_routes.js';
+import {
+  SEO_UNIT_ROUTES,
+  SCHOOLS_SEO_PAGE,
+  SITE_ORIGIN,
+  getLessonSeoSlugList,
+} from './src/data/seo_routes.js';
+
+function stripPlainText(str = '') {
+  return String(str)
+    .replace(/<[^>]+>/g, ' ')
+    .replace(/&nbsp;/gi, ' ')
+    .replace(/&amp;/gi, '&')
+    .replace(/&ndash;/gi, '–')
+    .replace(/&mdash;/gi, '—')
+    .replace(/&ldquo;|&rdquo;|&quot;/gi, '"')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
 
 function escapeHtml(str = '') {
   return String(str)
@@ -86,12 +103,16 @@ function seoCoursePagesPlugin() {
 
       fs.writeFileSync(baseIndexPath, enrichedHomeHtml, 'utf8');
 
-      // 2. Generate dedicated static HTML route for each course in SEO_UNIT_ROUTES
+      // 2. Generate dedicated static HTML route for each course + every individual lesson in SEO_UNIT_ROUTES
       let generatedCount = 0;
+      let generatedLessonCount = 0;
+      const lessonSitemapUrls = [];
+
       for (const route of SEO_UNIT_ROUTES) {
         const unitRecord = db[route.unitId];
         const unitData = (unitRecord && (unitRecord.data || unitRecord)) || {};
         const lessons = unitData.lessons || unitData.subtopics || [];
+        const lessonSlugs = getLessonSeoSlugList(lessons);
         const canonicalUrl = `${SITE_ORIGIN}/${route.slug}/`;
         const rawImage = unitData.cover_image || unitData.homepage_background || '/icon-512.svg';
         const ogImageUrl = rawImage.startsWith('http') ? rawImage : `${SITE_ORIGIN}${rawImage}`;
@@ -134,7 +155,8 @@ function seoCoursePagesPlugin() {
               syllabusSections: lessons.slice(0, 30).map((l, idx) => ({
                 '@type': 'Syllabus',
                 name: l.title || `Enquiry ${idx + 1}`,
-                description: l.enquiry || l.subtitle || l.period || undefined,
+                description: l.enquiry || l.enquiryQuestion || l.subtitle || l.period || undefined,
+                url: `${SITE_ORIGIN}/${route.slug}/${lessonSlugs[idx]}/`,
               })),
             },
           ],
@@ -143,8 +165,9 @@ function seoCoursePagesPlugin() {
         const lessonItemsHtml = lessons
           .map((l, idx) => {
             const title = escapeHtml(l.title || `Lesson ${idx + 1}`);
-            const enquiry = l.enquiry ? ` — <em>${escapeHtml(l.enquiry)}</em>` : '';
-            return `<li><strong>${title}</strong>${enquiry}</li>`;
+            const eq = l.enquiry || l.enquiryQuestion || l.enquiry_question || '';
+            const enquiry = eq ? ` — <em>${escapeHtml(eq)}</em>` : '';
+            return `<li><a href="/${escapeHtml(route.slug)}/${escapeHtml(lessonSlugs[idx])}/"><strong>${title}</strong></a>${enquiry}</li>`;
           })
           .join('\n              ');
 
@@ -212,6 +235,188 @@ function seoCoursePagesPlugin() {
         fs.mkdirSync(outRouteDir, { recursive: true });
         fs.writeFileSync(path.join(outRouteDir, 'index.html'), unitHtml, 'utf8');
         generatedCount++;
+
+        // 2b. Pre-render static SEO + OpenGraph page for every individual lesson in this course
+        const shortCourseTitle = route.heading.split(/[:—–]/)[0].trim();
+        lessons.forEach((lesson, lIdx) => {
+          const lessonSlug = lessonSlugs[lIdx];
+          const lessonCanonical = `${SITE_ORIGIN}/${route.slug}/${lessonSlug}/`;
+          const rawLessonTitle = stripPlainText(lesson.title || `Lesson ${lIdx + 1}`);
+          const cleanLessonTitle = rawLessonTitle.replace(/^(?:Enquiry|Lesson)\s*\d+:\s*/i, '').trim();
+          const enquiryQ = stripPlainText(
+            lesson.enquiryQuestion || lesson.enquiry_question || lesson.enquiry || lesson.subtitle || '',
+          );
+
+          const stages = Array.isArray(lesson.workbook_stages) && lesson.workbook_stages.length > 0
+            ? lesson.workbook_stages
+            : Array.isArray(lesson.narrative_blocks)
+              ? lesson.narrative_blocks
+              : [];
+
+          const stageHeadings = stages
+            .map((st, sIdx) => {
+              const stTitle = stripPlainText(st.title || st.theme_heading || `Stage ${sIdx + 1}`);
+              const stQ = stripPlainText(st.question || st.questionHeading || '');
+              return { stTitle, stQ };
+            })
+            .filter((s) => s.stTitle || s.stQ);
+
+          // Collect authentic exam/practice question stems for Google long-tail search indexing
+          const practiceStems = [];
+          if (lesson.exam_practice && Array.isArray(lesson.exam_practice.questions)) {
+            lesson.exam_practice.questions.forEach((q) => {
+              const qTxt = stripPlainText(q.question || q.prompt || '');
+              if (qTxt) practiceStems.push(qTxt);
+            });
+          } else if (Array.isArray(lesson.tasks)) {
+            lesson.tasks.forEach((t) => {
+              const tTxt = stripPlainText(t.question || t.prompt || t.synthesis_prompt || '');
+              if (tTxt) practiceStems.push(tTxt);
+            });
+          }
+
+          const rawLessonHero =
+            lesson.hero_image ||
+            lesson.card_image ||
+            (typeof lesson.banner === 'string' ? lesson.banner : lesson.banner?.image) ||
+            rawImage;
+          const lessonOgImage = rawLessonHero.startsWith('http')
+            ? rawLessonHero
+            : `${SITE_ORIGIN}${rawLessonHero.startsWith('/') ? '' : '/'}${rawLessonHero}`;
+
+          const lessonSeoTitle = `${cleanLessonTitle} | ${shortCourseTitle} (${route.keyStage}) | The History Revision Hub`;
+          const stageSummarySnippet = stageHeadings
+            .slice(0, 3)
+            .map((s) => s.stTitle)
+            .filter(Boolean)
+            .join(', ');
+          const rawMetaDesc = enquiryQ
+            ? `${enquiryQ} Free ${route.keyStage} History revision notes, primary sources, model answers & quiz${stageSummarySnippet ? `: ${stageSummarySnippet}` : ''}.`
+            : `${rawLessonTitle} — Free ${route.examBoard} revision notes, primary sources, stepped model answers & retrieval quiz.`;
+          const lessonMetaDesc =
+            rawMetaDesc.length > 160 ? `${rawMetaDesc.slice(0, 157).trim()}...` : rawMetaDesc;
+
+          const lessonSchema = {
+            '@context': 'https://schema.org',
+            '@graph': [
+              {
+                '@type': 'BreadcrumbList',
+                itemListElement: [
+                  { '@type': 'ListItem', position: 1, name: 'The History Revision Hub', item: `${SITE_ORIGIN}/` },
+                  { '@type': 'ListItem', position: 2, name: route.heading, item: canonicalUrl },
+                  { '@type': 'ListItem', position: 3, name: rawLessonTitle, item: lessonCanonical },
+                ],
+              },
+              {
+                '@type': 'LearningResource',
+                name: rawLessonTitle,
+                description: lessonMetaDesc,
+                url: lessonCanonical,
+                educationalLevel: route.keyStage,
+                learningResourceType: ['Lesson', 'Practice Questions', 'Primary Source Enquiry'],
+                inLanguage: 'en-GB',
+                isPartOf: {
+                  '@type': 'Course',
+                  name: route.heading,
+                  url: canonicalUrl,
+                },
+                provider: {
+                  '@type': 'EducationalOrganization',
+                  name: 'The History Revision Hub',
+                  url: `${SITE_ORIGIN}/`,
+                },
+              },
+            ],
+          };
+
+          const prevLessonLink =
+            lIdx > 0
+              ? `<a href="/${escapeHtml(route.slug)}/${escapeHtml(lessonSlugs[lIdx - 1])}/" style="margin-right: 14px;">&larr; Previous: ${escapeHtml(stripPlainText(lessons[lIdx - 1].title || 'Previous Lesson'))}</a>`
+              : '';
+          const nextLessonLink =
+            lIdx < lessons.length - 1
+              ? `<a href="/${escapeHtml(route.slug)}/${escapeHtml(lessonSlugs[lIdx + 1])}/" style="margin-right: 14px;">Next: ${escapeHtml(stripPlainText(lessons[lIdx + 1].title || 'Next Lesson'))} &rarr;</a>`
+              : '';
+
+          const lessonBodyHtml = `
+          <article class="seo-lesson-prerender" style="max-width: 920px; margin: 24px auto; padding: 20px;">
+            <nav aria-label="Breadcrumb" style="font-size: 0.85rem; margin-bottom: 10px;">
+              <a href="/">All Courses</a> &rsaquo; <a href="/${escapeHtml(route.slug)}/">${escapeHtml(shortCourseTitle)}</a>
+            </nav>
+            <p style="font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.05em; opacity: 0.8; margin-bottom: 6px;">${escapeHtml(route.examBoard)} &bull; ${escapeHtml(route.keyStage)}</p>
+            <h1 style="font-size: 1.7rem; margin-bottom: 10px;">${escapeHtml(rawLessonTitle)}</h1>
+            ${enquiryQ ? `<p style="font-size: 1.05rem; font-style: italic; margin-bottom: 16px;"><strong>Key Enquiry:</strong> ${escapeHtml(enquiryQ)}</p>` : ''}
+            ${
+              stageHeadings.length > 0
+                ? `<h2 style="font-size: 1.18rem; margin-bottom: 8px;">Key Historical Stages &amp; Chronology</h2>
+            <ol style="line-height: 1.75; padding-left: 22px; margin-bottom: 20px;">
+              ${stageHeadings
+                .map(
+                  (s) =>
+                    `<li><strong>${escapeHtml(s.stTitle)}</strong>${s.stQ ? ` — ${escapeHtml(s.stQ)}` : ''}</li>`,
+                )
+                .join('\n              ')}
+            </ol>`
+                : ''
+            }
+            ${
+              practiceStems.length > 0
+                ? `<h2 style="font-size: 1.18rem; margin-bottom: 8px;">Practice Questions &amp; Stepped Model Answers</h2>
+            <ul style="line-height: 1.75; padding-left: 22px; margin-bottom: 22px;">
+              ${practiceStems.map((q) => `<li>${escapeHtml(q)}</li>`).join('\n              ')}
+            </ul>`
+                : ''
+            }
+            <nav aria-label="Lesson Navigation" style="font-size: 0.88rem; line-height: 1.8; border-top: 1px solid rgba(148,163,184,0.25); padding-top: 14px;">
+              ${prevLessonLink}
+              ${nextLessonLink}
+              <a href="/${escapeHtml(route.slug)}/" style="font-weight: 700; margin-right: 14px;">Course Overview</a>
+              <a href="/schools/">For UK Schools &amp; Teachers</a>
+            </nav>
+          </article>`;
+
+          const lessonExtraMeta = `    <meta property="og:image" content="${escapeHtml(lessonOgImage)}" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="${escapeHtml(lessonSeoTitle)}" />
+    <meta name="twitter:description" content="${escapeHtml(lessonMetaDesc)}" />
+    <meta name="twitter:image" content="${escapeHtml(lessonOgImage)}" />
+    <script>window.__initialUnitBootMap=window.__initialUnitBootMap||{};window.__initialUnitBootMap["${escapeHtml(route.unitId)}"]=fetch("/data/${escapeHtml(route.unitId)}.json").then(function(r){return r.ok?r.json():null;}).catch(function(){return null;});</script>
+    <script type="application/ld+json">${JSON.stringify(lessonSchema)}</script>`;
+
+          const lessonHtml = baseHtml
+            .replace(/<title>[\s\S]*?<\/title>/, `<title>${escapeHtml(lessonSeoTitle)}</title>`)
+            .replace(
+              /<meta\s+name="description"\s+content="[^"]*"\s*\/?>/,
+              `<meta name="description" content="${escapeHtml(lessonMetaDesc)}" />`,
+            )
+            .replace(
+              /<link\s+rel="canonical"\s+href="[^"]*"\s*\/?>/,
+              `<link rel="canonical" href="${escapeHtml(lessonCanonical)}" />`,
+            )
+            .replace(
+              /<meta\s+property="og:title"\s+content="[^"]*"\s*\/?>/,
+              `<meta property="og:title" content="${escapeHtml(lessonSeoTitle)}" />`,
+            )
+            .replace(
+              /<meta\s+property="og:description"\s+content="[^"]*"\s*\/?>/,
+              `<meta property="og:description" content="${escapeHtml(lessonMetaDesc)}" />`,
+            )
+            .replace(
+              /<meta\s+property="og:url"\s+content="[^"]*"\s*\/?>/,
+              `<meta property="og:url" content="${escapeHtml(lessonCanonical)}" />`,
+            )
+            .replace('</head>', `${lessonExtraMeta}\n  </head>`)
+            .replace(
+              /<div class="content-container" id="main-content">[\s\S]*?<\/div>/,
+              `<div class="content-container" id="main-content">${lessonBodyHtml}\n        </div>`,
+            );
+
+          const outLessonDir = path.join(outRouteDir, lessonSlug);
+          fs.mkdirSync(outLessonDir, { recursive: true });
+          fs.writeFileSync(path.join(outLessonDir, 'index.html'), lessonHtml, 'utf8');
+          lessonSitemapUrls.push(lessonCanonical);
+          generatedLessonCount++;
+        });
       }
 
       // 3. Generate dedicated static SEO page for /schools/ (For Schools & History Departments)
@@ -300,12 +505,17 @@ function seoCoursePagesPlugin() {
           (r) =>
             `  <url>\n    <loc>${SITE_ORIGIN}/${escapeHtml(r.slug)}/</loc>\n    <lastmod>${buildDateIso}</lastmod>\n    <changefreq>monthly</changefreq>\n    <priority>${escapeHtml(r.priority || '0.85')}</priority>\n  </url>`,
         ),
+        ...lessonSitemapUrls.map(
+          (u) =>
+            `  <url>\n    <loc>${escapeHtml(u)}</loc>\n    <lastmod>${buildDateIso}</lastmod>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>`,
+        ),
       ].join('\n');
       const sitemapXml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${sitemapEntries}\n</urlset>\n`;
       fs.writeFileSync(path.join(distDir, 'sitemap.xml'), sitemapXml, 'utf8');
+      fs.writeFileSync(path.resolve(process.cwd(), 'public', 'sitemap.xml'), sitemapXml, 'utf8');
 
       console.log(
-        `[seo-course-pages-generator] Generated ${generatedCount} static SEO course pages + /schools/ + sitemap.xml (${SEO_UNIT_ROUTES.length + 2} URLs) in dist/.`,
+        `[seo-course-pages-generator] Generated ${generatedCount} course pages + ${generatedLessonCount} lesson pages + /schools/ + sitemap.xml (${SEO_UNIT_ROUTES.length + generatedLessonCount + 2} URLs) in dist/.`,
       );
     },
   };
@@ -453,7 +663,7 @@ export default defineConfig({
             },
             {
               name: 'shared-runtime',
-              test: /(?:src[\\/]data[\\/]unit_resources_catalog|src[\\/]engine[\\/](?:workbook_page_map|speech|video_utils|store|assets)|src[\\/]data_parser)\.js/,
+              test: /(?:src[\\/]data[\\/](?:unit_resources_catalog|seo_routes|iconic_lesson_visuals)|src[\\/]engine[\\/](?:workbook_page_map|speech|video_utils|store|assets|share_utils)|src[\\/]data_parser)\.js/,
               priority: 95,
             },
             {
@@ -508,7 +718,7 @@ export default defineConfig({
             },
             {
               name: 'ui-modals-tools',
-              test: /src[\\/](engine[\\/]modals|keyword_search|diagnostic_benchmark|cme_theater_map)\.js/,
+              test: /src[\\/](engine[\\/](modals|share_utils)|keyword_search|diagnostic_benchmark|cme_theater_map)\.js/,
               priority: 20,
             },
           ],

@@ -25,7 +25,15 @@ import {
 } from './keyword_search.js';
 import { initCmeMapHotkeys, renderFloatingCmeMapButton } from './cme_theater_map.js';
 import { isStaffModeActive } from './data/unit_resources_catalog.js';
-import { resolveUnitIdFromPathname, isSchoolsPathname } from './data/seo_routes.js';
+import {
+  resolveUnitIdFromPathname,
+  resolveRouteFromPathname,
+  resolveUnlistedPathname,
+  isSchoolsPathname,
+  getLessonSeoSlugList,
+} from './data/seo_routes.js';
+import { initShareUtilsGlobals } from './engine/share_utils.js';
+initShareUtilsGlobals();
 
 function purgeGDPRHistoricalCache() {
   try {
@@ -473,11 +481,14 @@ window.addEventListener('DOMContentLoaded', async () => {
       window.history.replaceState(window.history.state || {}, '', cleanedBootUrl);
     } catch (e) {}
   }
-  const pathUnit = resolveUnitIdFromPathname(window.location.pathname);
+  const pathRoute = resolveRouteFromPathname(window.location.pathname);
+  const pathUnit = pathRoute ? pathRoute.unitId : resolveUnitIdFromPathname(window.location.pathname);
+  const pathLessonSlug = pathRoute ? pathRoute.lessonSlug : null;
   const pathIsSchools = isSchoolsPathname(window.location.pathname);
-  let view = urlParams.get('view') || (pathIsSchools ? 'schools' : null);
+  const pathUnlistedView = resolveUnlistedPathname(window.location.pathname);
+  let view = urlParams.get('view') || (pathIsSchools ? 'schools' : pathUnlistedView || null);
   let unit = urlParams.get('unit') || pathUnit;
-  const initialLesson = urlParams.get('lesson');
+  const initialLesson = urlParams.get('lesson') ?? pathLessonSlug;
 
   // Comprehensive view alias normalization for QR codes, links, and direct URLs
   const normalizeViewAndUnit = (v, u) => {
@@ -646,10 +657,12 @@ window.addEventListener('DOMContentLoaded', async () => {
           return { index: idx, lesson: unitData.lessons[idx], id: unitData.lessons[idx].id };
         }
       }
-      // 2. Direct exact ID, readable slug, or alias_ids match (e.g. 'kt1.1-end-of-mandate', 'kt2.1-water-wars', 'lesson_3_1')
+      // 2. Direct exact ID, readable slug, computed SEO slug, or alias_ids match
       const lowerRaw = rawStr.toLowerCase();
+      const computedSeoSlugs = getLessonSeoSlugList(unitData.lessons);
       let idx = unitData.lessons.findIndex(
-        (l) =>
+        (l, lIdx) =>
+          computedSeoSlugs[lIdx] === lowerRaw ||
           (l.id && l.id.toLowerCase() === lowerRaw) ||
           (l.slug && l.slug.toLowerCase() === lowerRaw) ||
           (Array.isArray(l.alias_ids) &&
@@ -838,11 +851,13 @@ window.addEventListener('DOMContentLoaded', async () => {
     }
 
     const currentUrlParams = new URLSearchParams(window.location.search);
-    const pathUnit = resolveUnitIdFromPathname(window.location.pathname);
+    const popRoute = resolveRouteFromPathname(window.location.pathname);
+    const pathUnit = popRoute ? popRoute.unitId : resolveUnitIdFromPathname(window.location.pathname);
     const pathIsSchools = isSchoolsPathname(window.location.pathname);
-    const urlView = currentUrlParams.get('view') || (pathIsSchools ? 'schools' : null);
+    const pathUnlisted = resolveUnlistedPathname(window.location.pathname);
+    const urlView = currentUrlParams.get('view') || (pathIsSchools ? 'schools' : pathUnlisted || null);
     const urlUnit = currentUrlParams.get('unit') || pathUnit;
-    const urlLesson = currentUrlParams.get('lesson');
+    const urlLesson = currentUrlParams.get('lesson') ?? (popRoute ? popRoute.lessonSlug : null);
     const targetScrollY = e.state && typeof e.state.scrollY === 'number' ? e.state.scrollY : 0;
 
     let targetView = (e.state && e.state.view) || urlView;

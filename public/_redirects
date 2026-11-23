@@ -57,5 +57,13 @@
 /pdfs/cme_mastery_pack_FULL.pdf                                                     /pdfs/cme_new_mastery_pack_FULL.pdf 301
 /pdfs/med_mastery_pack_FULL.pdf                                                     /pdfs/edexcel_medicine_mastery_pack_FULL.pdf 301
 
+# Unlisted Club & Co-Curricular Vanity Routes (Direct Bookmark / QR Access)
+/chess                          /?view=chess                   200
+/chess/                         /?view=chess                   200
+/chess-club                     /?view=chess                   200
+/competitions                   /?view=competitions            200
+/competitions/                  /?view=competitions            200
+/awards                         /?view=competitions            200
+
 # API route for optional Netlify Chess Sync function
 /api/chess_sync    /.netlify/functions/chess_sync    200

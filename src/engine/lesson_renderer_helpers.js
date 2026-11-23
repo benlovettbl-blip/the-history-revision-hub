@@ -255,6 +255,63 @@ export function getWbThinStripStylesHTML() {
         color: #334155;
         white-space: nowrap;
       }
+      @media (max-width: 760px) {
+        .wb-station-header {
+          padding: 10px 12px;
+        }
+        .wb-strips-stack {
+          padding: 8px 10px;
+        }
+        details.wb-question-strip > summary,
+        details.wb-thin-strip > summary {
+          flex-wrap: wrap !important;
+          align-items: center !important;
+          row-gap: 6px !important;
+          column-gap: 6px !important;
+          padding: 10px 11px !important;
+        }
+        details.wb-question-strip > summary > .wb-strip-left,
+        details.wb-thin-strip > summary > .wb-strip-left {
+          display: contents !important;
+        }
+        details.wb-question-strip > summary .wb-origin-pill,
+        details.wb-thin-strip > summary .wb-origin-pill {
+          order: 1;
+          font-size: 0.66rem;
+          padding: 2px 7px;
+        }
+        details.wb-question-strip > summary .wb-tariff-pill,
+        details.wb-thin-strip > summary .wb-tariff-pill {
+          order: 2;
+          font-size: 0.68rem;
+          padding: 2px 7px;
+          white-space: normal;
+          max-width: 100%;
+        }
+        details.wb-question-strip > summary > .wb-strip-right,
+        details.wb-thin-strip > summary > .wb-strip-right {
+          order: 3;
+          margin-left: auto;
+          gap: 6px;
+        }
+        details.wb-question-strip > summary .wb-stem-preview,
+        details.wb-question-strip > summary .wb-strip-stem,
+        details.wb-thin-strip > summary .wb-stem-preview,
+        details.wb-thin-strip > summary .wb-strip-stem {
+          order: 4;
+          flex: 1 1 100% !important;
+          width: 100% !important;
+          min-width: 100% !important;
+          margin-top: 2px;
+          font-size: 0.88rem;
+          line-height: 1.38;
+          word-break: normal !important;
+          overflow-wrap: break-word !important;
+        }
+        .wb-strip-body {
+          padding: 10px 12px 12px 12px;
+        }
+      }
       .wb-strip-caret {
         font-size: 0.72rem;
         transition: transform 0.2s ease;
@@ -6663,6 +6720,37 @@ export function ensureSourceEnquiryGlobalsAndStyles() {
           background: #10b981 !important;
           color: #ffffff !important;
           border-color: #10b981 !important;
+        }
+
+        @media (max-width: 720px) {
+          details.source-enquiry-reveal > summary,
+          details.source-enquiry-reveal > summary.source-enquiry-single-row-summary {
+            flex-direction: column !important;
+            align-items: stretch !important;
+            gap: 8px !important;
+            padding: 10px 12px !important;
+          }
+          details.source-enquiry-reveal > summary .source-enquiry-left-wrap {
+            flex-direction: column !important;
+            align-items: flex-start !important;
+            width: 100% !important;
+            gap: 6px !important;
+          }
+          details.source-enquiry-reveal > summary .source-enquiry-mode-badge {
+            white-space: normal !important;
+            max-width: 100% !important;
+          }
+          details.source-enquiry-reveal > summary .source-enquiry-prompt {
+            flex: 0 0 auto !important;
+            width: 100% !important;
+            min-width: 0 !important;
+            word-break: normal !important;
+            overflow-wrap: break-word !important;
+            hyphens: none !important;
+          }
+          details.source-enquiry-reveal > summary .reveal-answer-pill {
+            align-self: flex-start !important;
+          }
         }
       `;
       document.head.appendChild(modeStyleEl);

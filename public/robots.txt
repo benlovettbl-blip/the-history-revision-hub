@@ -2,5 +2,9 @@ User-agent: *
 Allow: /
 Disallow: /api/
 Disallow: /.netlify/
+Disallow: /chess
+Disallow: /chess-club
+Disallow: /competitions
+Disallow: /awards
 
 Sitemap: https://historyrevisionhub.co.uk/sitemap.xml

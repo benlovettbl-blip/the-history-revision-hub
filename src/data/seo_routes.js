@@ -384,16 +384,102 @@ for (const route of SEO_UNIT_ROUTES) {
   }
 }
 
+const UNLISTED_PATH_MAP = new Map([
+  ['chess', 'chess'],
+  ['chess-club', 'chess'],
+  ['competitions', 'competitions'],
+  ['awards', 'competitions'],
+  ['young-historians', 'competitions'],
+]);
+
 /**
- * Resolves a URL pathname (e.g. "/weimar-nazi-germany" or "/weimar-nazi-germany/")
+ * Resolves unlisted direct bookmark / QR pathnames (e.g. "/chess" or "/competitions")
+ * to their SPA view name, keeping them off public navigation & search indexes.
+ */
+export function resolveUnlistedPathname(pathname) {
+  if (!pathname || typeof pathname !== 'string') return null;
+  const cleaned = pathname.replace(/^\/+|\/+$/g, '').toLowerCase();
+  return UNLISTED_PATH_MAP.get(cleaned) || null;
+}
+
+/**
+ * Converts a raw lesson title/slug into a deterministic, dot-free kebab-case SEO slug.
+ */
+export function buildRawLessonSeoSlug(lesson, lessonIndex = 0) {
+  const rawSource = String(lesson?.slug || lesson?.title || lesson?.id || `lesson-${lessonIndex + 1}`)
+    .replace(/<[^>]+>/g, ' ')
+    .replace(/&amp;/gi, ' and ')
+    .replace(/&/g, ' and ')
+    .replace(/&ndash;|&mdash;|[–—]/gi, '-')
+    .replace(/['’‘"“”]/g, '');
+
+  let slug = rawSource
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '');
+
+  if (!slug) slug = `lesson-${lessonIndex + 1}`;
+  if (slug.length > 74) {
+    const trimmed = slug.slice(0, 74);
+    const lastDash = trimmed.lastIndexOf('-');
+    slug = lastDash > 28 ? trimmed.slice(0, lastDash) : trimmed.replace(/-+$/g, '');
+  }
+  return slug;
+}
+
+/**
+ * Computes deterministic, collision-free SEO slugs for every lesson in a unit.
+ */
+export function getLessonSeoSlugList(lessons = []) {
+  if (!Array.isArray(lessons)) return [];
+  const used = new Set();
+  return lessons.map((lesson, idx) => {
+    const base = buildRawLessonSeoSlug(lesson, idx);
+    let candidate = base;
+    if (used.has(candidate)) {
+      candidate = `${base}-${idx + 1}`;
+    }
+    used.add(candidate);
+    return candidate;
+  });
+}
+
+/**
+ * Returns the canonical SEO slug for a single lesson within its unit lessons list.
+ */
+export function getLessonSeoSlug(lesson, lessonIndex = 0, allLessons = null) {
+  if (Array.isArray(allLessons) && allLessons.length > lessonIndex && lessonIndex >= 0) {
+    return getLessonSeoSlugList(allLessons)[lessonIndex];
+  }
+  return buildRawLessonSeoSlug(lesson, lessonIndex);
+}
+
+/**
+ * Resolves a URL pathname (e.g. "/weimar-nazi-germany/" or "/weimar-nazi-germany/kt-1-1-.../")
+ * into `{ unitId, lessonSlug }` or null if not an SEO course/lesson path.
+ */
+export function resolveRouteFromPathname(pathname) {
+  if (!pathname || typeof pathname !== 'string') return null;
+  const cleaned = pathname.replace(/^\/+|\/+$/g, '');
+  if (!cleaned || cleaned.toLowerCase() === 'index.html') return null;
+  const parts = cleaned.split('/').filter(Boolean);
+  if (parts.length === 0 || parts.length > 2) return null;
+  const route = SLUG_TO_ROUTE.get(parts[0].toLowerCase());
+  if (!route) return null;
+  return {
+    unitId: route.unitId,
+    courseSlug: route.slug,
+    lessonSlug: parts[1] ? parts[1].toLowerCase() : null,
+  };
+}
+
+/**
+ * Resolves a URL pathname (e.g. "/weimar-nazi-germany" or "/weimar-nazi-germany/lesson-slug/")
  * to a canonical unitId, or null if not an SEO unit path.
  */
 export function resolveUnitIdFromPathname(pathname) {
-  if (!pathname || typeof pathname !== 'string') return null;
-  const cleaned = pathname.replace(/^\/+|\/+$/g, '').toLowerCase();
-  if (!cleaned || cleaned === 'index.html') return null;
-  const route = SLUG_TO_ROUTE.get(cleaned);
-  return route ? route.unitId : null;
+  const match = resolveRouteFromPathname(pathname);
+  return match ? match.unitId : null;
 }
 
 /**
@@ -403,6 +489,17 @@ export function getCleanPathForUnit(unitId) {
   if (!unitId) return null;
   const route = UNIT_TO_ROUTE.get(unitId);
   return route ? `/${route.slug}/` : null;
+}
+
+/**
+ * Returns the canonical clean path (e.g. "/weimar-nazi-germany/hyperinflation-1923/") for a lesson, or null.
+ */
+export function getCleanPathForLesson(unitId, lesson, lessonIndex = 0, allLessons = null) {
+  if (!unitId || !lesson) return null;
+  const route = UNIT_TO_ROUTE.get(unitId);
+  if (!route) return null;
+  const lessonSlug = getLessonSeoSlug(lesson, lessonIndex, allLessons);
+  return `/${route.slug}/${lessonSlug}/`;
 }
 
 /**

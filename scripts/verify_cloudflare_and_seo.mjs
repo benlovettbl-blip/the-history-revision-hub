@@ -1,6 +1,11 @@
 import fs from 'node:fs';
 import path from 'node:path';
-import { SEO_UNIT_ROUTES, SCHOOLS_SEO_PAGE, SITE_ORIGIN } from '../src/data/seo_routes.js';
+import {
+  SEO_UNIT_ROUTES,
+  SCHOOLS_SEO_PAGE,
+  SITE_ORIGIN,
+  getLessonSeoSlugList,
+} from '../src/data/seo_routes.js';
 
 const MAX_ASSET = 25 * 1024 * 1024; // Cloudflare Pages 25 MiB per-file limit
 const MAX_JS = 500 * 1024; // 500 kB Vite JS chunk budget
@@ -82,6 +87,33 @@ for (const route of [SCHOOLS_SEO_PAGE, ...SEO_UNIT_ROUTES]) {
   }
 }
 
+const dbPath = path.resolve(process.cwd(), 'database.json');
+const db = fs.existsSync(dbPath) ? JSON.parse(fs.readFileSync(dbPath, 'utf8')) : {};
+let verifiedLessonRoutes = 0;
+
+for (const route of SEO_UNIT_ROUTES) {
+  const unitRecord = db[route.unitId];
+  const unitData = (unitRecord && (unitRecord.data || unitRecord)) || {};
+  const lessons = unitData.lessons || unitData.subtopics || [];
+  const lessonSlugs = getLessonSeoSlugList(lessons);
+  lessonSlugs.forEach((lSlug) => {
+    const lessonHtmlPath = path.join(distDir, route.slug, lSlug, 'index.html');
+    const expectedLessonCanonical = `${SITE_ORIGIN}/${route.slug}/${lSlug}/`;
+    if (!fs.existsSync(lessonHtmlPath)) {
+      seoErrors.push(`Missing static lesson SEO page: dist/${route.slug}/${lSlug}/index.html`);
+      return;
+    }
+    const lHtml = fs.readFileSync(lessonHtmlPath, 'utf8');
+    if (!lHtml.includes(`rel="canonical" href="${expectedLessonCanonical}"`)) {
+      seoErrors.push(`Canonical mismatch on dist/${route.slug}/${lSlug}/index.html`);
+    }
+    if (!sitemap.includes(`<loc>${expectedLessonCanonical}</loc>`)) {
+      seoErrors.push(`Missing lesson URL from dist/sitemap.xml: ${expectedLessonCanonical}`);
+    }
+    verifiedLessonRoutes++;
+  });
+}
+
 if (overAsset.length || overJs.length || seoErrors.length) {
   if (overAsset.length) console.error('❌ Oversized Cloudflare assets (>25 MiB):', overAsset);
   if (overJs.length) console.error('❌ Oversized JS chunks (>500 kB):', overJs);
@@ -90,5 +122,5 @@ if (overAsset.length || overJs.length || seoErrors.length) {
 }
 
 console.log(
-  `✅ Cloudflare Edge (${totalFiles.toLocaleString()} / 20,000 files, <25 MiB assets, <500 kB JS) & ${SEO_UNIT_ROUTES.length}/${SEO_UNIT_ROUTES.length} static SEO routes + /schools/ + sitemap.xml verified!`,
+  `✅ Cloudflare Edge (${totalFiles.toLocaleString()} / 20,000 files, <25 MiB assets, <500 kB JS) & ${SEO_UNIT_ROUTES.length} courses + ${verifiedLessonRoutes} lesson SEO pages + /schools/ + sitemap.xml verified!`,
 );

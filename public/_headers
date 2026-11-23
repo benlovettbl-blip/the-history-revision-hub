@@ -69,6 +69,35 @@
 /ks2-world-war-2*
   Cache-Control: no-store, no-cache, must-revalidate, max-age=0
 
+/ks2-stone-age-to-iron-age*
+  Cache-Control: no-store, no-cache, must-revalidate, max-age=0
+
+/ks2-romans-in-britain*
+  Cache-Control: no-store, no-cache, must-revalidate, max-age=0
+
+/ks2-anglo-saxons-and-vikings*
+  Cache-Control: no-store, no-cache, must-revalidate, max-age=0
+
+/ks2-ancient-egypt*
+  Cache-Control: no-store, no-cache, must-revalidate, max-age=0
+
+/ks2-ancient-greece*
+  Cache-Control: no-store, no-cache, must-revalidate, max-age=0
+
+/ks2-early-islamic-civilisation-baghdad*
+  Cache-Control: no-store, no-cache, must-revalidate, max-age=0
+
+/ks2-ancient-maya-civilisation*
+  Cache-Control: no-store, no-cache, must-revalidate, max-age=0
+
+/chess*
+  Cache-Control: no-store, no-cache, must-revalidate, max-age=0
+  X-Robots-Tag: noindex, nofollow
+
+/competitions*
+  Cache-Control: no-store, no-cache, must-revalidate, max-age=0
+  X-Robots-Tag: noindex, nofollow
+
 /database.json
   Cache-Control: public, max-age=0, must-revalidate
 

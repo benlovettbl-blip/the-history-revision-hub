@@ -12816,15 +12816,15 @@ details.source-enquiry-reveal .reveal-arrow {
   display: inline-block;
 }
 
-@media (max-width: 680px) {
+@media (max-width: 720px) {
   details.source-enquiry-reveal summary {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 8px;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 8px !important;
   }
 
   details.source-enquiry-reveal .reveal-answer-pill {
-    align-self: flex-start;
+    align-self: flex-start !important;
   }
 }
 

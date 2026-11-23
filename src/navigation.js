@@ -148,11 +148,6 @@ export function syncKs2PortalState(unitId = null, unitData = null, viewName = nu
 
   updateHeaderBackBtn(activeView);
 
-  // Only hide Secondary/GCSE enrichment nav items when explicitly in locked KS2 pupil mode
-  ['nav-competitions', 'nav-chess'].forEach((id) => {
-    const el = document.getElementById(id);
-    if (el) el.style.display = isLockedKs2 ? 'none' : '';
-  });
   const footer = document.getElementById('app-global-footer');
   if (footer) footer.style.display = isKs2UnitContext ? 'none' : '';
 

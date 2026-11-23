@@ -21,6 +21,7 @@ import {
   CURRICULAR_PILLARS_CATALOG,
 } from './engine/hero_launchpad.js';
 import { getUnitCatalogEntry, isStaffModeActive } from './data/unit_resources_catalog.js';
+import { getCleanPathForLesson as buildCleanLessonPath } from './data/seo_routes.js';
 import { isVerifiedPdf } from './verified_pdf_manifest.js';
 import './engine/modals.js'; // Side-effect: registers window.renderQuizQuestion, openGallery, etc.
 import {
@@ -1695,17 +1696,36 @@ export async function renderLessonsView() {
         );
         window._lastLessonsOverviewPushTs = 0;
 
-        url.pathname = '/';
-        url.searchParams.set('view', 'lessons');
-        url.searchParams.set('unit', unitId);
-        url.searchParams.delete('stage');
-        if (url.searchParams.get('locked') !== 'true' && url.searchParams.get('mode') !== 'pupil') {
-          url.searchParams.delete('portal');
+        const isSafeguardLocked =
+          url.searchParams.get('locked') === 'true' ||
+          url.searchParams.get('mode') === 'pupil' ||
+          url.searchParams.get('safeguard') === 'true';
+        const cleanLessonPath = !isSafeguardLocked
+          ? buildCleanLessonPath(unitId, sub, index, lessonsList)
+          : null;
+
+        if (cleanLessonPath) {
+          url.pathname = cleanLessonPath;
+          ['view', 'unit', 'lesson', 'stage', 'portal', 'q'].forEach((k) =>
+            url.searchParams.delete(k),
+          );
+        } else {
+          url.pathname = '/';
+          url.searchParams.set('view', 'lessons');
+          url.searchParams.set('unit', unitId);
+          url.searchParams.delete('stage');
+          url.searchParams.delete('q');
+          if (!isSafeguardLocked) {
+            url.searchParams.delete('portal');
+          }
+          const hasLessonZero =
+            lessonsList[0] &&
+            (lessonsList[0].id === 'lesson_0' ||
+              (lessonsList[0].title && lessonsList[0].title.includes('KT 1.0')));
+          const lessonQueryVal =
+            sub.slug || (hasLessonZero ? (index === 0 ? '0' : index) : index + 1);
+          url.searchParams.set('lesson', lessonQueryVal);
         }
-        const hasLessonZero = (lessonsList[0] && (lessonsList[0].id === 'lesson_0' || (lessonsList[0].title && lessonsList[0].title.includes('KT 1.0'))));
-        const lessonQueryVal =
-          sub.slug || (hasLessonZero ? (index === 0 ? '0' : index) : index + 1);
-        url.searchParams.set('lesson', lessonQueryVal);
 
         if (wasImmediateOverviewPush) {
           window.history.replaceState(

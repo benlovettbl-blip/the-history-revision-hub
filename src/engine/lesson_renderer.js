@@ -32,6 +32,11 @@ import {
 import { renderGcseDoNowPanelHTML, initGcseDoNowEngine } from './gcse_donow_engine.js';
 import { getLessonInfographicCount, getLessonInfographicsSync } from '../infographic_viewer.js';
 import { getIconicLessonVisuals } from '../data/iconic_lesson_visuals.js';
+import {
+  renderTopShareLessonBtnHTML,
+  renderFurtherReadingShelfHTML,
+  runPendingQuestionDeepLink,
+} from './share_utils.js';
 
 import {
   KS2_CANONICAL_UNITS,
@@ -427,10 +432,10 @@ export function renderLesson(lesson) {
 
     return `
       <details id="source-enquiry-det-${enqIdx}" class="source-enquiry-reveal ${modeCfg.detailsClass}" data-enquiry-idx="${enqIdx}" data-enquiry-mode="${modeCfg.mode}" ontoggle="if(window.syncSourceAnswerToggle){window.syncSourceAnswerToggle(${enqIdx}, this.open);}">
-        <summary class="source-enquiry-single-row-summary" style="padding: 8px 12px; cursor: pointer; display: flex; flex-direction: row; align-items: center; justify-content: space-between; gap: 10px; list-style: none; user-select: none; background: ${modeCfg.softBg}; transition: background 0.15s ease; box-sizing: border-box; width: 100%;">
+        <summary class="source-enquiry-single-row-summary" style="padding: 8px 12px; cursor: pointer; display: flex; justify-content: space-between; gap: 10px; list-style: none; user-select: none; background: ${modeCfg.softBg}; transition: background 0.15s ease; box-sizing: border-box; width: 100%;">
           <div class="source-enquiry-left-wrap" style="display: flex; align-items: center; gap: 9px; flex: 1 1 auto; min-width: 0; flex-wrap: wrap;">
             <span class="source-enquiry-mode-badge" style="font-size: 0.66rem; font-weight: 800; text-transform: uppercase; color: ${modeCfg.badgeText}; background: ${modeCfg.badgeBg}; border: 1px solid ${modeCfg.badgeBorder}; padding: 2px 7px; border-radius: 10px; letter-spacing: 0.45px; flex-shrink: 0; white-space: nowrap;">${dynamicBadge}</span>
-            <div class="source-enquiry-prompt" style="font-family: 'Playfair Display', Georgia, serif; font-size: 0.94rem; color: ${modeCfg.promptColor}; font-weight: 700; line-height: 1.38; flex: 1 1 240px; min-width: 0; white-space: normal; word-break: normal; overflow-wrap: break-word;">${fmt(promptText)}</div>
+            <div class="source-enquiry-prompt" style="font-family: 'Playfair Display', Georgia, serif; font-size: 0.94rem; color: ${modeCfg.promptColor}; font-weight: 700; line-height: 1.38; flex: 1 1 220px; min-width: 0; white-space: normal; word-break: normal; overflow-wrap: break-word;">${fmt(promptText)}</div>
           </div>
           <span id="ans-btn-${enqIdx}" class="reveal-answer-pill" role="button" aria-expanded="false" data-enquiry-idx="${enqIdx}" data-enquiry-mode="${modeCfg.mode}" data-closed-label="Reveal Answer" data-open-label="Hide Answer" style="flex-shrink: 0;">
             <i class="fa-solid ${modeCfg.iconClass}" style="color: ${modeCfg.accent};"></i>
@@ -777,6 +782,7 @@ export function renderLesson(lesson) {
 
             `
     }
+          ${renderTopShareLessonBtnHTML(unitId, currentIndex)}
           <button type="button" class="btn-fullwidth-toggle no-print ${isFullWidth ? 'active' : ''}" onclick="window.toggleLessonFullWidth()" title="${isFullWidth ? 'Restore outer sidebar and top bar' : 'Hide outer sidebar and top bar for full-width classroom view'}">
             <i class="fa-solid ${isFullWidth ? 'fa-compress' : 'fa-expand'}"></i>
             <span class="fw-btn-label">${isFullWidth ? 'Restore Sidebar' : 'Full-Width View'}</span>
@@ -10210,52 +10216,7 @@ export function renderLesson(lesson) {
   }
 
   // Further Reading Cover-Card Row ('Further reading: two narratives')
-  if (Array.isArray(lesson.reading_shelf) && lesson.reading_shelf.length > 0) {
-    const escShelf = (v) =>
-      String(v || '')
-        .replace(/&/g, '&amp;')
-        .replace(/</g, '&lt;')
-        .replace(/>/g, '&gt;');
-    const escShelfAttr = (v) => escShelf(v).replace(/"/g, '&quot;');
-    const shelfCardsHtml = lesson.reading_shelf
-      .filter((item) => item && (item.title || item.cover))
-      .map((item) => {
-        const coverUrl = item.cover ? getAssetUrl(item.cover) : '';
-        return `
-          <article class="reading-shelf-item">
-            ${
-              coverUrl
-                ? `
-              <div class="reading-shelf-cover-wrap">
-                <img src="${coverUrl}" alt="${escShelfAttr(item.title || 'Book cover')}" class="archival-image reading-shelf-cover" data-action="open-modal" data-src="${coverUrl}" />
-              </div>
-            `
-                : ''
-            }
-            <div class="reading-shelf-meta">
-              ${item.title ? `<h4 class="reading-shelf-book-title">${escShelf(item.title)}</h4>` : ''}
-              ${item.author ? `<div class="reading-shelf-author">${escShelf(item.author)}</div>` : ''}
-              ${item.perspective_note ? `<p class="reading-shelf-note">${escShelf(item.perspective_note)}</p>` : ''}
-            </div>
-          </article>
-        `;
-      })
-      .join('');
-
-    if (shelfCardsHtml) {
-      html += `
-        <section class="phase-card reading-shelf-card" aria-label="Further reading: two narratives">
-          <div class="reading-shelf-header">
-            <span class="reading-shelf-eyebrow">Historiography &amp; Memoir</span>
-            <h3 class="reading-shelf-heading">Further reading: two narratives</h3>
-          </div>
-          <div class="reading-shelf-grid">
-            ${shelfCardsHtml}
-          </div>
-        </section>
-      `;
-    }
-  }
+  html += renderFurtherReadingShelfHTML(lesson, getAssetUrl);
 
   // Note: Exit Ticket is now unified directly into the Consolidate Station terminal above.
 
@@ -10396,6 +10357,7 @@ export function renderLesson(lesson) {
 
     // Auto-inject read-aloud buttons into all primary source excerpt cards
     injectArchivalAudioButtons();
+    runPendingQuestionDeepLink();
   }, 100);
 }
 
