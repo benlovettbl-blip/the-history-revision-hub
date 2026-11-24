@@ -147,6 +147,7 @@ let currentReader = {
   ktId: 'KT1',
   spreadIndex: 1, // Default to Enquiry 1.1 (pp. 2-3)
   viewMode: 'dual', // 'dual' | 'single'
+  userForcedMode: false,
   singlePageIndex: 2, // 1-indexed page number
   zoomLevel: 1.0,
   isAudioPlaying: false,
@@ -154,6 +155,81 @@ let currentReader = {
   audioUtterance: null,
   iframeLoaded: false,
 };
+
+function isMobileReaderSingleDefault() {
+  if (typeof window === 'undefined') return false;
+  const isPortraitNarrow = window.innerWidth < 768 && window.innerHeight >= window.innerWidth;
+  return isPortraitNarrow || window.innerWidth < 900;
+}
+
+function isMobileTouchOrStandalonePrintFallback() {
+  if (typeof window === 'undefined') return false;
+  const isStandalone =
+    Boolean(window.matchMedia && window.matchMedia('(display-mode: standalone)').matches) ||
+    window.navigator?.standalone === true;
+  const isMobileUa = /Android|iPhone|iPad|iPod/i.test(window.navigator?.userAgent || '');
+  const isNarrowTouch =
+    window.innerWidth < 933 && ('ontouchstart' in window || (navigator.maxTouchPoints || 0) > 0);
+  const printMissing = typeof window.print !== 'function';
+  return isStandalone || isMobileUa || isNarrowTouch || printMissing;
+}
+
+function showReaderToast(message, sharePayload = null) {
+  const root = document.getElementById('digital-reader-root');
+  if (!root) return;
+  let toast = document.getElementById('reader-mobile-toast');
+  if (!toast) {
+    toast = document.createElement('div');
+    toast.id = 'reader-mobile-toast';
+    toast.className = 'reader-mobile-toast';
+    root.appendChild(toast);
+  }
+  const canShare = Boolean(sharePayload && typeof navigator !== 'undefined' && navigator.share);
+  toast.innerHTML = `
+    <span><i class="fa-solid fa-file-pdf"></i> ${message}</span>
+    ${canShare ? '<button type="button" id="reader-toast-share-btn" class="reader-toast-share-btn"><i class="fa-solid fa-share-nodes"></i> Share</button>' : ''}
+  `;
+  toast.classList.add('is-visible');
+  if (canShare) {
+    const shareBtn = toast.querySelector('#reader-toast-share-btn');
+    if (shareBtn) {
+      shareBtn.onclick = () => {
+        navigator.share(sharePayload).catch(() => {});
+      };
+    }
+  }
+  clearTimeout(toast._hideTimer);
+  toast._hideTimer = setTimeout(() => {
+    toast.classList.remove('is-visible');
+  }, 4200);
+}
+
+function openOrShareTextbookPdfFallback() {
+  const unitConfig = TEXTBOOK_CATALOG[currentReader.unitId];
+  const ktData = unitConfig?.keyTopics?.[currentReader.ktId];
+  const pdfUrl = ktData?.pdfUrl || document.getElementById('reader-btn-download')?.getAttribute('href');
+  if (!pdfUrl || pdfUrl === '#') return;
+
+  const absUrl = new URL(pdfUrl, window.location.origin).href;
+  const sharePayload = {
+    title: `${unitConfig?.unitTitle || 'History Textbook'} — ${ktData?.shortTitle || currentReader.ktId}`,
+    url: absUrl,
+  };
+
+  const isStandalone =
+    Boolean(window.matchMedia && window.matchMedia('(display-mode: standalone)').matches) ||
+    window.navigator?.standalone === true;
+
+  // In standalone mode with Web Share API, offer native OS share/print or open PDF directly
+  const openedWin = window.open(pdfUrl, '_blank', 'noopener');
+  if (!openedWin && isStandalone && typeof navigator !== 'undefined' && navigator.share) {
+    navigator.share(sharePayload).catch(() => {
+      window.location.href = pdfUrl;
+    });
+    return;
+  }
+  showReaderToast('Opened high-res PDF for mobile printing or saving', sharePayload);
+}
 
 /**
  * Fetch and extract pages and CSS styles from a published standard textbook HTML file.
@@ -243,9 +319,10 @@ export async function renderDigitalReaderView(param, targetContainer = null) {
   currentReader.spreadIndex = initialSpread;
   currentReader.singlePageIndex = initialSpread === 0 ? 1 : initialSpread * 2;
   currentReader.zoomLevel = 1.0;
+  currentReader.userForcedMode = false;
 
-  // Auto-switch to single page mode on narrow screens (< 900px)
-  if (window.innerWidth < 900) {
+  // Auto-switch to single page mode on < 768px portrait or narrow screens (< 900px)
+  if (isMobileReaderSingleDefault()) {
     currentReader.viewMode = 'single';
   } else {
     currentReader.viewMode = 'dual';
@@ -300,8 +377,8 @@ export async function renderDigitalReaderView(param, targetContainer = null) {
         <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
           
           <!-- Audio Read-Aloud Button -->
-          <button id="reader-btn-audio" type="button" style="background: rgba(245, 158, 11, 0.15); border: 1px solid rgba(245, 158, 11, 0.35); color: #fbbf24; border-radius: 6px; padding: 6px 12px; font-size: 0.76rem; font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; transition: all 0.15s ease;" title="Read Active Spread Aloud">
-            <i class="fa-solid fa-volume-high"></i> <span id="reader-audio-label">Read Spread</span>
+          <button id="reader-btn-audio" type="button" style="background: rgba(245, 158, 11, 0.15); border: 1px solid rgba(245, 158, 11, 0.35); color: #fbbf24; border-radius: 6px; padding: 6px 12px; font-size: 0.76rem; font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; transition: all 0.15s ease;" title="Read Active Page or Spread Aloud">
+            <i class="fa-solid fa-volume-high"></i> <span id="reader-audio-label">${currentReader.viewMode === 'single' ? 'Read Page' : 'Read Spread'}</span>
           </button>
 
           <!-- Mode Switcher (Dual vs Single) -->
@@ -475,30 +552,37 @@ function attachReaderEvents() {
   // View Mode: Dual vs Single
   const btnDual = document.getElementById('reader-btn-mode-dual');
   const btnSingle = document.getElementById('reader-btn-mode-single');
+  const syncModeButtonsUI = () => {
+    const isDual = currentReader.viewMode === 'dual';
+    if (btnDual) {
+      btnDual.style.background = isDual ? '#334155' : 'transparent';
+      btnDual.style.color = isDual ? '#ffffff' : '#94a3b8';
+    }
+    if (btnSingle) {
+      btnSingle.style.background = !isDual ? '#334155' : 'transparent';
+      btnSingle.style.color = !isDual ? '#ffffff' : '#94a3b8';
+    }
+    if (!currentReader.isAudioPlaying) {
+      const audioLabel = document.getElementById('reader-audio-label');
+      if (audioLabel) audioLabel.textContent = isDual ? 'Read Spread' : 'Read Page';
+    }
+  };
   if (btnDual) {
     btnDual.onclick = () => {
+      currentReader.userForcedMode = true;
       if (currentReader.viewMode !== 'dual') {
         currentReader.viewMode = 'dual';
-        btnDual.style.background = '#334155';
-        btnDual.style.color = '#ffffff';
-        if (btnSingle) {
-          btnSingle.style.background = 'transparent';
-          btnSingle.style.color = '#94a3b8';
-        }
+        syncModeButtonsUI();
         renderSpreadInIframe();
       }
     };
   }
   if (btnSingle) {
     btnSingle.onclick = () => {
+      currentReader.userForcedMode = true;
       if (currentReader.viewMode !== 'single') {
         currentReader.viewMode = 'single';
-        btnSingle.style.background = '#334155';
-        btnSingle.style.color = '#ffffff';
-        if (btnDual) {
-          btnDual.style.background = 'transparent';
-          btnDual.style.color = '#94a3b8';
-        }
+        syncModeButtonsUI();
         renderSpreadInIframe();
       }
     };
@@ -534,14 +618,25 @@ function attachReaderEvents() {
     btnAudio.onclick = () => toggleAudioNarration();
   }
 
-  // Print Spread
+  // Print Spread (gracefully falls back to opening/sharing PDF on mobile standalone/touch devices)
   const btnPrint = document.getElementById('reader-btn-print');
   if (btnPrint) {
     btnPrint.onclick = () => {
       const iframe = document.getElementById('readerStageIframe');
-      if (iframe && iframe.contentWindow) {
+      const canPrintIframe =
+        iframe &&
+        iframe.contentWindow &&
+        typeof iframe.contentWindow.print === 'function' &&
+        !isMobileTouchOrStandalonePrintFallback();
+      if (!canPrintIframe) {
+        openOrShareTextbookPdfFallback();
+        return;
+      }
+      try {
         iframe.contentWindow.focus();
         iframe.contentWindow.print();
+      } catch (e) {
+        openOrShareTextbookPdfFallback();
       }
     };
   }
@@ -557,6 +652,34 @@ function attachReaderEvents() {
         if (document.exitFullscreen) document.exitFullscreen();
       }
     };
+  }
+
+  // Mobile Touch Swipe Page Turning on Viewport
+  const readerViewport = document.getElementById('reader-viewport');
+  if (readerViewport) {
+    let touchStartX = 0;
+    let touchStartY = 0;
+    readerViewport.addEventListener(
+      'touchstart',
+      (e) => {
+        if (!e.touches || e.touches.length !== 1) return;
+        touchStartX = e.touches[0].clientX;
+        touchStartY = e.touches[0].clientY;
+      },
+      { passive: true },
+    );
+    readerViewport.addEventListener(
+      'touchend',
+      (e) => {
+        if (currentReader.zoomLevel > 1.05 || !e.changedTouches || e.changedTouches.length !== 1) return;
+        const dx = e.changedTouches[0].clientX - touchStartX;
+        const dy = e.changedTouches[0].clientY - touchStartY;
+        if (Math.abs(dx) > 48 && Math.abs(dx) > Math.abs(dy) * 1.3) {
+          navigateSpread(dx < 0 ? 1 : -1);
+        }
+      },
+      { passive: true },
+    );
   }
 
   // Keyboard Shortcuts
@@ -580,8 +703,19 @@ function attachReaderEvents() {
     }
   };
 
-  // Window Resize -> Re-scale iframe to fit
+  // Window Resize / Orientation -> Enforce single-page portrait default unless manually overridden, then re-scale
   window.onresize = () => {
+    if (!document.getElementById('digital-reader-root')) return;
+    if (!currentReader.userForcedMode) {
+      const wantSingle = isMobileReaderSingleDefault();
+      const targetMode = wantSingle ? 'single' : 'dual';
+      if (currentReader.viewMode !== targetMode) {
+        currentReader.viewMode = targetMode;
+        syncModeButtonsUI();
+        renderSpreadInIframe();
+        return;
+      }
+    }
     applyIframeZoom(true);
   };
 }
@@ -732,7 +866,11 @@ function renderSpreadInIframe(preloadedBundle = null) {
 
   // Update Toolbar Header Info
   if (spreadBadgeEl) {
-    spreadBadgeEl.textContent = `${bundle.ktData.shortTitle} • Spread ${currentSpread.index} of ${ktData.spreads.length - 1} (${currentSpread.pages.length === 1 ? `Page ${currentSpread.pages[0]}` : `Pages ${currentSpread.pages[0]}–${currentSpread.pages[1]}`})`;
+    if (currentReader.viewMode === 'single') {
+      spreadBadgeEl.textContent = `${bundle.ktData.shortTitle} • Page ${currentReader.singlePageIndex} of ${bundle.pageCount}`;
+    } else {
+      spreadBadgeEl.textContent = `${bundle.ktData.shortTitle} • Spread ${currentSpread.index} of ${ktData.spreads.length - 1} (${currentSpread.pages.length === 1 ? `Page ${currentSpread.pages[0]}` : `Pages ${currentSpread.pages[0]}–${currentSpread.pages[1]}`})`;
+    }
   }
   if (spreadTitleEl) {
     spreadTitleEl.textContent = currentSpread.subtitle;
@@ -916,6 +1054,40 @@ function renderSpreadInIframe(preloadedBundle = null) {
     iframe.style.opacity = '1';
     currentReader.iframeLoaded = true;
     applyIframeZoom(true);
+
+    // Bind swipe gestures and print guard inside isolated iframe document as well
+    try {
+      const doc = iframe.contentDocument;
+      const win = iframe.contentWindow;
+      if (doc) {
+        let iframeStartX = 0;
+        let iframeStartY = 0;
+        doc.addEventListener(
+          'touchstart',
+          (e) => {
+            if (!e.touches || e.touches.length !== 1) return;
+            iframeStartX = e.touches[0].clientX;
+            iframeStartY = e.touches[0].clientY;
+          },
+          { passive: true },
+        );
+        doc.addEventListener(
+          'touchend',
+          (e) => {
+            if (currentReader.zoomLevel > 1.05 || !e.changedTouches || e.changedTouches.length !== 1) return;
+            const dx = e.changedTouches[0].clientX - iframeStartX;
+            const dy = e.changedTouches[0].clientY - iframeStartY;
+            if (Math.abs(dx) > 48 && Math.abs(dx) > Math.abs(dy) * 1.3) {
+              navigateSpread(dx < 0 ? 1 : -1);
+            }
+          },
+          { passive: true },
+        );
+      }
+      if (win && isMobileTouchOrStandalonePrintFallback()) {
+        win.print = () => openOrShareTextbookPdfFallback();
+      }
+    } catch (e) {}
   };
 }
 
@@ -940,18 +1112,23 @@ function applyIframeZoom(isAutoFit = false) {
   const singlePageWidthPx = 210 * pxPerMm; // ~793.7px
   const pageHeightPx = 297 * pxPerMm; // ~1122.5px
 
+  const ktData = TEXTBOOK_CATALOG[currentReader.unitId]?.keyTopics?.[currentReader.ktId];
+  const currentSpread = ktData?.spreads?.[currentReader.spreadIndex];
+
   let naturalSpreadWidth = singlePageWidthPx;
   if (
     currentReader.viewMode === 'dual' &&
-    currentReader.spreadIndex > 0 &&
-    currentReader.spreadIndex < 6
+    currentSpread &&
+    !currentSpread.isCover &&
+    !currentSpread.isBackCover
   ) {
     naturalSpreadWidth = singlePageWidthPx * 2 + 12; // Two pages + 12px gutter
   }
 
-  // Auto-fit scale factor with comfortable safety padding
-  const paddingX = 80; // Margin from edges & floating arrows
-  const paddingY = 40;
+  // Auto-fit scale factor with mobile-calibrated safety padding
+  const isCompactMobile = typeof window !== 'undefined' && window.innerWidth < 768;
+  const paddingX = isCompactMobile ? 14 : 80;
+  const paddingY = isCompactMobile ? 14 : 40;
   const fitScaleX = (viewportWidth - paddingX) / naturalSpreadWidth;
   const fitScaleY = (viewportHeight - paddingY) / pageHeightPx;
   const baseFitScale = Math.min(fitScaleX, fitScaleY, 1.25);
@@ -1060,7 +1237,9 @@ function stopAudioNarration() {
   const btnAudio = document.getElementById('reader-btn-audio');
   const audioLabel = document.getElementById('reader-audio-label');
   if (btnAudio) btnAudio.classList.remove('audio-playing');
-  if (audioLabel) audioLabel.textContent = 'Read Spread';
+  if (audioLabel) {
+    audioLabel.textContent = currentReader.viewMode === 'single' ? 'Read Page' : 'Read Spread';
+  }
 }
 
 /**
