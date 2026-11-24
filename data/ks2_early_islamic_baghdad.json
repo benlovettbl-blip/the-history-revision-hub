@@ -5657,11 +5657,11 @@
         },
         {
           "question": "What made that green bend on the River Tigris such a clever spot for a world capital?",
-          "answer": "Deep canals linked the Tigris and Euphrates for fertile farming and river boats, right where Silk Road caravan trails met ocean routes."
+          "answer": "Deep canals linked the Tigris and Euphrates for quffa river boats, right where ships from China and India could meet Silk Road camel trains at his gates."
         },
         {
-          "question": "How would a traveller arriving from a muddy Anglo-Saxon timber village around AD 900 have felt entering million-strong Baghdad?",
-          "answer": "Completely amazed—English towns held 5,000–10,000 people in smoky timber huts, whereas Baghdad had paved streets, brick arches, libraries, and canals!"
+          "question": "Why do you think Caliph al-Mansur planned a giant round city with four gates instead of tangled lanes?",
+          "answer": "A neat circle with double brick walls and four gates kept his new City of Peace well organised and let him stand right at the centre of his capital."
         }
       ],
       "story_check": [
@@ -5756,32 +5756,32 @@
           "answer": "Rag paper was light, smooth, and cheap to make in watermills, so scribes could copy hundreds of affordable books quickly."
         },
         {
-          "question": "What does Muslim, Christian, and Jewish translators working together in the House of Wisdom show about Golden Age Baghdad?",
-          "answer": "Caliphs welcomed talented thinkers of different faiths and languages because testing every nation's best ideas grew human knowledge."
+          "question": "What does Muslim, Christian, and Jewish thinkers meeting to test books from Greek, Persian, and Sanskrit show about Baghdad?",
+          "answer": "It shows that Baghdad welcomed clever thinkers of different faiths and languages so they could share, translate, and test the best ideas from around the world."
         }
       ],
       "story_check": [
         {
-          "question": "Who wrote the eyewitness 'Book of Countries' describing Baghdad's hundred bookshops around AD 891?",
+          "question": "Which Baghdad writer described the city's hundred bookshops around AD 891?",
           "options": [
             "Greek historian Herodotus",
-            "Abbasid geographer Ahmad al-Ya'qubi",
+            "Baghdad writer Ahmad al-Ya'qubi",
             "Mongol general Hulagu Khan",
             "Anglo-Saxon King Offa"
           ],
           "correctIndex": 1,
-          "feedback": "Spot on! Al-Ya'qubi grew up in Baghdad and recorded its markets, canals, and bookshops first-hand."
+          "feedback": "Spot on! Ahmad al-Ya'qubi walked through his home city around AD 891 and recorded its boats, gardens, and bookshops."
         },
         {
-          "question": "Through which Silk Road city did Chinese paper-making skills reach Baghdad's watermills?",
+          "question": "How did Baghdad's watermills make smooth white paper so much cheaper than animal skin?",
           "options": [
-            "Samarkand in Central Asia",
-            "Winchester in Britain",
-            "Sparta in Greece",
-            "Tikal in Guatemala"
+            "By beating old linen and cotton rags into pulp",
+            "By scraping rare calfskin",
+            "By hammering thin sheets of silver",
+            "By carving wooden bark strips"
           ],
           "correctIndex": 0,
-          "feedback": "Correct! Via Samarkand, craftworkers learned to pulp cotton and linen rags into smooth, strong paper."
+          "feedback": "Correct! Watermills beat old linen and cotton rags into smooth white paper far cheaper than animal-skin parchment."
         },
         {
           "question": "Which three faith communities worked side by side translating ancient scrolls in Baghdad?",
@@ -5844,16 +5844,16 @@
       "extract": "In Baghdad's House of Wisdom around AD 820, scholar al-Khwarizmi wrote ten neat signs on white paper. He used digits `1` to `9` plus a small circle called <em>sifr</em>—our word <strong>zero</strong>! With zero holding empty places, traders solved big sums fast while Europe used slow Roman letters. Better still, his book <em>al-Jabr</em> gave us <strong>algebra</strong>, and his name gave us <strong>algorithm</strong>!\n\nAcross town, doctor al-Razi welcomed rich nobles and poor guests alike into Baghdad's free <em>bimaristan</em> hospital. Cool fountains splashed in clean wards while nurses served fresh food. Leaving patients even got clean clothes and coins so they could rest at home!\n\nLater in AD 1206, builder al-Jazari unveiled his tall <strong>Elephant Water Clock</strong>. Inside the brass elephant floated a copper bowl with a tiny hole. Every half hour, the full bowl sank and pulled hidden cords! A bird whistled, a dragon dropped a ball, and cymbals clashed—blending ideas from India, China, Greece, and Islam.",
       "parent_discussion": [
         {
-          "question": "Which three everyday modern English words come directly from Muhammad al-Khwarizmi's name, his book 'al-Jabr', and Arabic 'sifr'?",
-          "answer": "Algorithm (from al-Khwarizmi), algebra (from al-Jabr), and zero / cipher (from sifr)!"
+          "question": "Which three everyday maths words come from al-Khwarizmi's name, his book 'al-Jabr', and the Arabic word 'sifr'?",
+          "answer": "Algorithm (from al-Khwarizmi), algebra (from al-Jabr), and zero (from sifr)!"
         },
         {
           "question": "How did Baghdad's 'bimaristan' hospitals care for poor patients even on the day they went home?",
-          "answer": "Treatment was completely free, and recovering poor patients were given clean clothes and pocket money to rest safely at home."
+          "answer": "Treatment was completely free, and recovering poor patients were given clean clothes and coins so they could rest safely at home."
         },
         {
-          "question": "Why did engineer al-Jazari combine an Indian elephant, Chinese dragons, a Greek water mechanism, and an Arab rider on one clock?",
-          "answer": "He proudly showed that Golden Age science grew strongest by welcoming and blending clever ideas from civilisations across the world."
+          "question": "Why did al-Jazari blend ideas from India, China, Greece, and Islam into his single Elephant Water Clock?",
+          "answer": "It showed that great inventions grew strongest by welcoming and combining clever ideas from cultures across the world."
         }
       ],
       "story_check": [
@@ -5872,12 +5872,12 @@
           "question": "What hidden mechanism inside al-Jazari's Elephant Clock triggered the whistling bird and clashing cymbals every half hour?",
           "options": [
             "A petrol engine under the floor",
-            "A perforated copper bowl slowly filling and sinking in water",
+            "A copper bowl with a tiny hole slowly filling and sinking in water",
             "A hamster running inside a wooden wheel",
             "Lightning striking a brass rod"
           ],
           "correctIndex": 1,
-          "feedback": "Exactly right! Water trickled steadily through a tiny hole until the bowl sank every thirty minutes and pulled the cords."
+          "feedback": "Exactly right! Water trickled steadily through a tiny hole until the bowl sank every thirty minutes and pulled the hidden cords."
         },
         {
           "question": "Who had to pay fees for medical care inside an Islamic 'bimaristan' hospital?",
@@ -5888,7 +5888,7 @@
             "Only children under ten"
           ],
           "correctIndex": 1,
-          "feedback": "Well remembered! Charitable funding kept bimaristan wards, doctors, and pharmacies free for everyone."
+          "feedback": "Well remembered! Baghdad's bimaristan hospitals welcomed both rich nobles and poor guests completely free."
         }
       ],
       "monday_cold_call": {
@@ -5941,15 +5941,15 @@
       "parent_discussion": [
         {
           "question": "Which real river and real harbour city did Sinbad travel through to reach the open ocean from Baghdad?",
-          "answer": "He floated south down the River Tigris to the bustling sea port of Basra at the head of the Persian Gulf."
+          "answer": "He sailed down the River Tigris to the bustling port of Basra, where river boats met tall dhow ships bound for the Indian Ocean."
         },
         {
-          "question": "Even though Sinbad later met giant birds and sea monsters in his stories, which details in this opening are 100% real history?",
-          "answer": "Baghdad's covered bazaars, rosewater courtyards, silver dirhams, coconut-stitched wooden dhows, brass astrolabes, and Indian Ocean spice trade!"
+          "question": "Why did rich Sinbad invite the tired porter Hindbad indoors and tell him about his sea voyages?",
+          "answer": "Sinbad wanted to show Hindbad that he did not win his silks resting on soft cushions—he spent his last silver dirhams and sailed across the Indian Ocean to trade."
         },
         {
-          "question": "How do Viking silver dirham hoards dug up near York prove that Baghdad's merchants really did connect distant corners of the world?",
-          "answer": "Pure Abbasid silver coins travelled thousands of miles north up Russian rivers to Scandinavia and Viking Britain!"
+          "question": "What does Sinbad swapping Baghdad cloth, cut glass, and dates for cloves, cinnamon, and gems tell us about Baghdad?",
+          "answer": "It shows Baghdad was a busy trading hub linked by rivers and oceans to distant islands, with silver dirhams traded as far away as Viking York!"
         }
       ],
       "story_check": [
@@ -5962,7 +5962,7 @@
             "Bolted with Roman concrete"
           ],
           "correctIndex": 1,
-          "feedback": "Spot on! Flexible coconut-rope stitching let wooden dhow hulls ride ocean swells and coral reefs safely."
+          "feedback": "Spot on! Tall wooden dhow ships were stitched tightly together with strong coconut-fibre rope."
         },
         {
           "question": "What instrument helped dhow captains steer safely at night under the stars?",
@@ -5973,7 +5973,7 @@
             "A stone metate trough"
           ],
           "correctIndex": 0,
-          "feedback": "Exactly right! Measuring star heights with an engraved brass astrolabe showed sailors their latitude and time."
+          "feedback": "Exactly right! Sailors used a brass star astrolabe to steer safely across the Indian Ocean at night."
         },
         {
           "question": "Who did wealthy Sinbad invite into his rosewater courtyard to hear his sea stories?",
@@ -6036,16 +6036,16 @@
       "extract": "As hot Iraqi afternoons cooled beneath tall <em>badgir</em> windcatcher towers, Baghdad families sat beside courtyard fountains sipping sweet lemon and rosewater drinks. Between plates of spiced almonds, two players spread a sixty-four-square leather mat and set out smooth turquoise and brown <em>shatranj</em> pieces. Poets loved chanting riddles about this bloodless game of wits:\n\n<div class=\"reading-stanza\">Two silent armies face each other on a square-cut plain,<br>Where neither drum beats loud nor drop of blood is ever spilled!<br>Swift horses leap across the lines while war-elephants advance,<br>And loyal viziers guard their Shah behind a footmen's wall.</div>\n\n<div class=\"reading-stanza\">No human faces mark their clay, just curves of turquoise glaze,<br>Yet sharper than a steel-tipped spear is every silent move!<br>One careless step—a trap springs shut around the cornered king,<br>And laughter rings across the tiles at <em>\"Shah mat!\"</em> in the shade!</div>\n\nCenturies later, travellers carried <em>shatranj</em> into Spain and Britain, turning <em>Shah mat</em> into <strong>checkmate</strong>!",
       "parent_discussion": [
         {
-          "question": "Why were the thirty-two ceramic shatranj pieces shaped into smooth geometric curves instead of carved little human statues?",
-          "answer": "Traditional Islamic art avoided lifelike human or animal statues so people honoured God alone, inspiring geometric shapes and calligraphy."
+          "question": "What kind of battle does the poem describe on the sixty-four-square mat, and why is no blood ever spilled?",
+          "answer": "It is a silent, friendly game of shatranj (early chess) where clay horses, war-elephants, viziers, and footmen battle with wits instead of real weapons!"
         },
         {
           "question": "Why does the poet say 'sharper than a steel-tipped spear is every silent move'?",
           "answer": "Winning at shatranj depended on clever planning, patience, and foresight rather than physical strength."
         },
         {
-          "question": "Which everyday details in this courtyard scene show how comfortable daily life was inside AD 900 Baghdad?",
-          "answer": "Natural air-conditioning from badgir windcatchers, splashing courtyard fountains, citrus drinks, rosewater, almonds, and glazed tilework!"
+          "question": "Which everyday details in this courtyard scene show how Baghdad families stayed cool and relaxed on hot afternoons?",
+          "answer": "Tall badgir windcatcher towers scooped cool breezes indoors while families sat by fountains sipping sweet lemon and rosewater drinks, snacking on spiced almonds, and playing shatranj in the shade."
         }
       ],
       "story_check": [
@@ -6058,7 +6058,7 @@
             "Sofa"
           ],
           "correctIndex": 1,
-          "feedback": "Spot on! 'Shah mat' ('the King is trapped/helpless') travelled into European languages as 'checkmate'!"
+          "feedback": "Spot on! 'Shah mat' ('the King is helpless') travelled into European languages as 'checkmate'!"
         },
         {
           "question": "How did tall 'badgir' towers keep Baghdad homes cool without electricity?",
@@ -6069,23 +6069,23 @@
             "By spinning giant bronze propellers"
           ],
           "correctIndex": 1,
-          "feedback": "Exactly right! Windcatchers scooped cool air indoors while pushing warm rising air out."
+          "feedback": "Exactly right! Badgir windcatcher towers scooped cool breezes down into Baghdad courtyard homes."
         },
         {
-          "question": "Why did Baghdad potters shape shatranj pieces as smooth domes and horns rather than human figures?",
+          "question": "Which pieces march across the sixty-four-square shatranj mat in the poem?",
           "options": [
-            "They did not own any carving tools",
-            "Islamic artistic tradition favoured clean geometric forms over lifelike statues",
-            "Players played blindfolded in pitch-dark caves",
-            "Round pieces rolled off the board faster"
+            "Boats, windmills, and ploughs",
+            "Horses, war-elephants, viziers, footmen, and a Shah (king)",
+            "Lions, eagles, and stone pyramids",
+            "Cars, trains, and aeroplanes"
           ],
           "correctIndex": 1,
-          "feedback": "Well remembered! Geometric symmetry, arabesque leaf patterns, and calligraphy shone across Islamic art."
+          "feedback": "Well remembered! The poem describes swift horses, war-elephants, loyal viziers, and a footmen's wall guarding their Shah."
         }
       ],
       "monday_cold_call": {
-        "question": "Where did our word 'checkmate' come from, and why were medieval Islamic 'shatranj' pieces shaped geometrically?",
-        "answer": "From 'Shah mat' in shatranj; pieces used smooth geometric shapes because Islamic art avoided lifelike human or animal statues."
+        "question": "Where did our word 'checkmate' come from, and how did tall 'badgir' towers keep Baghdad courtyards cool?",
+        "answer": "'Checkmate' came from the shatranj cry 'Shah mat' ('the King is helpless'); badgir windcatcher towers scooped cool breezes down into shaded rooms."
       },
       "hinge_question": "What can a simple board game, a lemon orchard, and a windcatcher tower tell us about a civilisation that battle dates leave out?",
       "audio_file": "/audio/reading/ks2_early_islamic_baghdad/r4.mp3"
@@ -6132,16 +6132,16 @@
       "extract": "In January 1258, the ground by the River Tigris shook under thousands of Mongol horses. Hulagu Khan's men built tall wooden <em>trebuchets</em> to fling big rocks at Baghdad's brick walls. When the city fell in February, dark smoke rose over broken palaces and the House of Wisdom.\n\nYet five hundred years of bright science did not burn away! Brave star-watcher al-Tusi begged to save boxes of rare scrolls. He packed 400,000 books onto strong mules bound for his new star tower in the north! Better still, cheap rag paper meant spare copies sat safe in Cairo, Damascus, and <em>Al-Andalus</em> in Spain.\n\nFar west in Spanish Toledo, Muslim, Jewish, and Christian thinkers worked side by side. By warm candlelight, they turned al-Khwarizmi's <em>0–9</em> sums and Ibn al-Haytham's light tests into Latin! Every time you write zero or snap a photo today, Baghdad's bright torch shines on.",
       "parent_discussion": [
         {
-          "question": "How did astronomer Nasir al-Din al-Tusi save hundreds of thousands of manuscripts from destruction in 1258?",
-          "answer": "He persuaded Hulagu Khan to let him pack roughly 400,000 rescued scrolls onto mules for his new star observatory at Maragha."
+          "question": "How did brave star-watcher al-Tusi save hundreds of thousands of books when Baghdad fell in 1258?",
+          "answer": "He begged to save boxes of rare scrolls and packed 400,000 books onto strong mules bound for his new star tower in the north."
         },
         {
-          "question": "Why did Baghdad's earlier paper-making revolution turn out to be a lifesaver when the House of Wisdom burned?",
-          "answer": "Because scribes had already copied books onto cheap paper and sent duplicates to libraries in Cairo, Damascus, Samarkand, and Córdoba!"
+          "question": "Why did Baghdad's cheap rag paper turn out to be a lifesaver when the House of Wisdom burned?",
+          "answer": "Because cheap rag paper meant spare copies already sat safe in faraway cities like Cairo, Damascus, and Al-Andalus in Spain!"
         },
         {
-          "question": "Spot three things in your own house or school today that carry on the legacy of Early Islamic Baghdad.",
-          "answer": "Writing digits 0–9 and algebra, phone camera lenses and algorithms, clean hospital pharmacies, chess, and words like sugar, lemon, orange, and sofa!"
+          "question": "Why does the story say that Baghdad's bright torch still shines whenever you write zero or snap a photo today?",
+          "answer": "Translators in Spanish Toledo turned al-Khwarizmi's 0–9 maths and Ibn al-Haytham's light tests into Latin, so Baghdad's ideas helped shape numbers and cameras we still use!"
         }
       ],
       "story_check": [
@@ -6160,12 +6160,12 @@
           "question": "Why didn't Golden Age science vanish forever when Baghdad's House of Wisdom was ruined?",
           "options": [
             "Monkeys hid the scrolls at the bottom of the ocean",
-            "Astronomer al-Tusi rescued crates of books, and paper copies survived in Cairo, Damascus, and Spain",
+            "Star-watcher al-Tusi rescued crates of books, and paper copies survived in Cairo, Damascus, and Spain",
             "People had already printed everything onto plastic discs",
             "Vikings buried every Arabic maths book in York"
           ],
           "correctIndex": 1,
-          "feedback": "Exactly right! Multiple paper libraries across three continents meant no single siege could erase the knowledge."
+          "feedback": "Exactly right! Rescued scrolls and spare paper copies in Cairo, Damascus, and Spain meant no single siege could erase the knowledge."
         },
         {
           "question": "In which Spanish city did Muslim, Jewish, and Christian scholars translate Arabic science into Latin for Europe?",
@@ -6176,12 +6176,12 @@
             "Saqqara"
           ],
           "correctIndex": 0,
-          "feedback": "Well remembered! Toledo's translators carried al-Khwarizmi, Ibn Sina, and Ibn al-Haytham into European universities."
+          "feedback": "Well remembered! Translators in Toledo turned al-Khwarizmi's 0–9 sums and Ibn al-Haytham's light tests into Latin."
         }
       ],
       "monday_cold_call": {
         "question": "Give two reasons why Early Islamic Golden Age science survived even after Hulagu Khan's Mongols destroyed Baghdad's House of Wisdom in 1258.",
-        "answer": "Nasir al-Din al-Tusi rescued crates of scrolls to Maragha, and paper copies already lived in Cairo, Córdoba, and Toledo, where translators turned them into Latin."
+        "answer": "Star-watcher al-Tusi packed 400,000 books onto mules for his new star tower, and spare paper copies already sat safe in Cairo, Damascus, and Spain, where Toledo translators turned them into Latin."
       },
       "hinge_question": "Why is spreading copies of books to many cities safer for human knowledge than locking one single copy inside the strongest fortress?",
       "audio_file": "/audio/reading/ks2_early_islamic_baghdad/r5.mp3"

@@ -1010,8 +1010,11 @@ export function renderLesson(lesson) {
     window.currentUnitData ||
     {};
   const vocabDict = buildComprehensiveVocabDict(lesson, activeUnitData);
+  if (typeof window !== 'undefined') {
+    window.__HH_ACTIVE_VOCAB_DICT__ = vocabDict;
+  }
 
-  const highlightGlossary = (text, maxPerBlock = 3) => {
+  const highlightGlossary = (text, maxPerBlock = 4) => {
     return highlightGlossaryInProse(text, vocabDict, maxPerBlock);
   };
 

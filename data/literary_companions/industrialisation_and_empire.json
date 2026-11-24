@@ -45,12 +45,12 @@
         "answer": "Just as ironmasters forged real chains and bars in coal furnaces, Blake felt harsh industrial poverty and strict laws chained working people’s minds and lives."
       },
       {
-        "question": "Look at de Loutherbourg’s 1801 painting Coalbrookdale by Night alongside Blake’s phrase 'dark Satanic Mills': why did coal and iron amaze yet frighten witnesses?",
-        "answer": "Coke blast furnaces and puddling hearths created thrilling national wealth and naval iron, yet drowned wooded valleys in 24-hour smoke, fire, and exhausting labour."
+        "question": "Why did visitors riding toward Shropshire’s iron gorge after dark feel both 'awe and dread'?",
+        "answer": "Crimson furnace flames lit the night clouds, steam hammers shook the ground, and glowing rivers of molten iron armed warships and bridged rivers—yet coal smoke and fire changed green rural England forever."
       },
       {
-        "question": "How had James Watt’s steam engine and Henry Cort’s puddling furnace changed where and how British iron and goods were made by 1804?",
-        "answer": "Coal replaced scarce oak charcoal and steam replaced river waterwheels, letting huge mills and ironworks run non-stop in smoky towns."
+        "question": "Cheap wrought iron armed Nelson’s warships and bridged deep rivers, yet William Blake saw 'weakness' and 'woe' in London’s faces—could Britain’s industrial leap feel both thrilling and painful at the same time?",
+        "answer": "Yes—coal furnaces and James Watt’s steam engines freed factories from river valleys and produced vital iron and goods, but they also packed smoky towns with workers trapped by poverty and strict factory discipline."
       }
     ],
     "story_check": [
@@ -60,7 +60,7 @@
           "The River Severn",
           "The River Thames",
           "The River Mersey",
-          "The River Meon"
+          "The River Tyne"
         ],
         "correctIndex": 1,
         "feedback": "Correct! Walking through London in 1794, Blake protested that even the streets and the flowing Thames were 'charter’d' by wealth."
@@ -85,12 +85,12 @@
           "Crimson Iron Gorge"
         ],
         "correctIndex": 1,
-        "feedback": "Exactly right. Blake’s 1804 lines—today sung as the hymn 'Jerusalem'—immortalised 'these dark Satanic Mills'."
+        "feedback": "Exactly right. In his 1804 preface to Milton, Blake contrasted green rural England with 'these dark Satanic Mills.'"
       }
     ],
     "monday_cold_call": {
       "question": "What two famous industrial phrases did poet William Blake coin in 1794 and 1804—and how do they connect to Britain’s coal-and-iron revolution?",
-      "answer": "'Mind-forg’d manacles' (1794) and 'dark Satanic Mills' (1804)—capturing the human and environmental shock as coal furnaces and steam mills replaced rural workshops."
+      "answer": "'Mind-forg’d manacles' (1794) and 'dark Satanic Mills' (1804)—capturing the human and environmental shock as coal furnaces and steam mills transformed green rural England."
     },
     "hinge_question": "<strong>Think:</strong> Why had wood shortages forced British ironmasters like Darby and Cort to turn to coal?<br><br><strong>Pair:</strong> Compare William Blake’s poetic view of industrial Britain with an Admiralty official testing Henry Cort’s wrought iron at Portsmouth in 1787.<br><br><strong>Share:</strong> Was the shift to coal and steam mainly a story of national triumph, or human and environmental cost?",
     "questions": [
@@ -148,12 +148,12 @@
         "answer": "They had to crawl under the heavy iron carriages while the machines stayed in rapid motion to sweep away loose cotton lint without pausing production."
       },
       {
-        "question": "Why did cotton-mill owners recruit workhouse orphans and keep spinning rooms heated to eighty degrees?",
-        "answer": "Pauper orphans had no parents nearby to protect them and worked only for cheap food, while hot, humid air stopped cotton threads from snapping."
+        "question": "Why did cotton-mill owners use workhouse orphans and keep spinning rooms heated to eighty degrees?",
+        "answer": "Workhouse orphans like Blincoe were bound unpaid to live and work for basic food like sour oatcakes, while heating the rooms to eighty degrees stopped cotton threads from snapping."
       },
       {
-        "question": "How did eyewitness testimony and poems like Elizabeth Barrett Browning’s work together to win Factory and Mines Acts?",
-        "answer": "Survivors provided undeniable facts to MPs on the Sadler Committee, while poems stirred public outrage against laissez-faire factory owners."
+        "question": "Why did stories from real survivors like Robert Blincoe and poems like Elizabeth Barrett Browning’s help push Parliament to act?",
+        "answer": "Eyewitness reports proved the daily danger and exhaustion children faced in mills and coal pits, while poetry stirred Victorian readers’ shame—helping lead to the 1833 Factory Act banning under-nines and hiring four paid inspectors."
       }
     ],
     "story_check": [
@@ -172,12 +172,12 @@
         "question": "Why was being a mill 'scavenger' so physically dangerous?",
         "options": [
           "Children had to climb outside factory chimneys in the rain",
-          "Children crawled beneath moving iron spinning mules where unguarded cogs crushed fingers and hair",
+          "Children crawled beneath moving spinning mules where unguarded cogs could tear off fingers",
           "Children steered canal barges at night",
           "Children tested naval cannons"
         ],
         "correctIndex": 1,
-        "feedback": "Spot on. Owners refused to stop the steam engines for cleaning, forcing tiny children under moving iron frames."
+        "feedback": "Spot on. Scavengers had to creep underneath rapidly whirling spinning mules to sweep up cotton dust before the machines stopped."
       },
       {
         "question": "What key reform did the 1833 Factory Act introduce for textile mills?",
@@ -188,12 +188,12 @@
           "Giving every mill worker the vote"
         ],
         "correctIndex": 2,
-        "feedback": "Exactly right. Unlike weaker earlier laws, the 1833 Factory Act banned under-nines in textile mills and created paid inspectors."
+        "feedback": "Exactly right. The 1833 Factory Act banned children under nine from textile mills and appointed four paid inspectors to check the factories."
       }
     ],
     "monday_cold_call": {
       "question": "What was a cotton-mill 'scavenger' in Robert Blincoe’s memoir—and why were spinning rooms kept at eighty degrees?",
-      "answer": "A scavenger was a young child forced to crawl under moving spinning mules to sweep up cotton dust; rooms were kept at 80°F so damp cotton threads wouldn't snap."
+      "answer": "A scavenger was a young child forced to crawl under moving spinning mules to sweep up cotton dust; rooms were kept at 80°F so cotton threads would not snap."
     },
     "hinge_question": "<strong>Think:</strong> Look at Hervieu’s 1839 engraving on the cover—spot the tiny scavenger underneath the mule carriage.<br><br><strong>Pair:</strong> Why did factory owners argue Parliament had no right ('laissez-faire') to limit working hours?<br><br><strong>Share:</strong> Why was appointing paid factory inspectors in 1833 the decisive turning point in factory reform?",
     "questions": [
@@ -255,8 +255,8 @@
         "answer": "Repeating 'same' mimics the monotonous tick of the factory clock, showing how industrial cities treated human beings like identical machine parts."
       },
       {
-        "question": "Connect Dickens’s black canal and purple river to cholera epidemics: what finally forced Parliament to fund clean water and sewers?",
-        "answer": "Chadwick’s 1842 Report, Dr John Snow’s 1854 Broad Street pump proof, and the 1858 'Great Stink' at Westminster finally drove Parliament to fund Joseph Bazalgette’s sewers."
+        "question": "Edwin Chadwick found Manchester labourers lived an average of only 17 years, compared with 38 in rural Rutland—looking at Dickens’s Coketown, why was life in an industrial mill town so much shorter and harder?",
+        "answer": "Factories coated brick walls in smoke and ash, poisoned rivers with foul-smelling dye, and crowded workers into back-to-back houses with no fresh air or private drains while they worked endless, repetitive days."
       }
     ],
     "story_check": [
@@ -283,7 +283,7 @@
         "feedback": "Spot on. Dickens’s comparison to a trapped, mad elephant captures the relentless, joyless rhythm of steam machinery."
       },
       {
-        "question": "According to Edwin Chadwick’s 1842 Sanitary Report, what was the average age at death for a labourer in industrial Manchester?",
+        "question": "According to Edwin Chadwick’s 1842 findings, what was the average life expectancy for a labourer in smoky Manchester?",
         "options": [
           "17 years (compared with 38 in rural Rutland)",
           "38 years",
@@ -291,12 +291,12 @@
           "62 years"
         ],
         "correctIndex": 0,
-        "feedback": "Exactly right. High infant mortality from cholera, typhus, and filthy water dragged Manchester labourers’ average life expectancy down to 17."
+        "feedback": "Exactly right. Chadwick proved a labourer in smoky Manchester lived an average of just 17 years—less than half the 38-year average of farmworkers in rural Rutland."
       }
     ],
     "monday_cold_call": {
       "question": "In Dickens’s Hard Times, what two animals does he compare Coketown’s smoke and steam pistons to—and what colour ran the polluted river?",
-      "answer": "Uncoiling 'serpents' of smoke and an 'elephant in a state of melancholy madness' for the steam piston; the river ran purple with foul-smelling textile dye."
+      "answer": "Endless 'serpents' of smoke that never uncoil and an 'elephant in a state of melancholy madness' for the steam piston; the river ran purple with ill-smelling dye."
     },
     "hinge_question": "<strong>Think:</strong> Look closely at Gustave Doré’s 1872 engraving—why did back-to-back courts trap disease so easily?<br><br><strong>Pair:</strong> How do Dickens’s literary description of Coketown and Chadwick’s statistical report reinforce each other?<br><br><strong>Share:</strong> Why did Victorian ratepayers resist paying for underground sewers until the 1858 Great Stink hit Parliament itself?",
     "questions": [
@@ -354,12 +354,12 @@
         "answer": "Rulers claimed working-class reformers were violent drunken mobs, so Bamford wanted undeniable visual proof that they were peaceful, respectable families."
       },
       {
-        "question": "Look closely at the 1819 etching on the cover: notice the women’s banner ('Female Union of Royton') on the hustings—what does that reveal about Peterloo?",
-        "answer": "Working-class Lancashire women organised their own political reform unions, marched in white dresses, and made up many of the casualties when the cavalry charged."
+        "question": "Why was the cavalry charge into St Peter’s Field so terrifying and deadly for the 60,000 people gathered there?",
+        "answer": "The unarmed weavers, mothers, and children stood shoulder to shoulder with no room to flee, so when the mounted Manchester Yeomanry rode straight in with drawn steel sabres, eighteen neighbours were left dying within ten minutes."
       },
       {
-        "question": "Why did newspapers call the attack 'Peterloo', and how did Parliament initially react in late 1819?",
-        "answer": "The name mocked soldiers sabring British families at St Peter’s Field just four years after defeating Napoleon at Waterloo; frightened MPs first passed the repressive Six Acts banning mass meetings."
+        "question": "Why did journalists bitterly nickname the St Peter’s Field massacre 'Peterloo'—and why did the horsemen shout 'Have at their flags!' as they charged?",
+        "answer": "The name 'Peterloo' mocked cavalry who sabred unarmed British families four years after Waterloo, and tearing down banners reading 'Annual Parliaments' and 'Liberty and Fraternity' showed how fiercely local rulers feared ordinary people demanding political change."
       }
     ],
     "story_check": [
@@ -386,15 +386,15 @@
         "feedback": "Spot on. Nervous local magistrates sent the amateur Manchester Yeomanry charging with drawn sabres to seize Henry Hunt and the reform banners."
       },
       {
-        "question": "Roughly how many unarmed citizens died as a result of the ten-minute cavalry charge at Peterloo?",
+        "question": "How many unarmed citizens lay dying after the ten-minute cavalry charge at Peterloo?",
         "options": [
           "Zero—everyone escaped unharmed",
-          "Roughly eighteen people killed and hundreds injured",
+          "Eighteen unarmed neighbours",
           "Over two thousand soldiers",
           "Only the magistrate on horseback"
         ],
         "correctIndex": 1,
-        "feedback": "Exactly right. Around eighteen people—including women and a young child—died and over 600 were sabred or trampled."
+        "feedback": "Exactly right. Within ten dreadful minutes of the cavalry charge, eighteen unarmed neighbours lay dying amid crushed bonnets and torn silk banners."
       }
     ],
     "monday_cold_call": {
@@ -453,16 +453,16 @@
     "extract": "By candlelight in a small London workshop in 1838, cabinetmaker William Lovett dipped his pen in ink and wrote six plain rules. Six years before, factory masters had cheered the 1832 Reform Act for ending empty \"rotten boroughs\" like grassy Old Sarum. Yet five in every six adult men still owned too little house property to vote. Lovett’s People’s Charter called for votes for every man, secret ballots, and wages for MPs so a poor weaver could sit in Westminster.\n\nTen years later, on the rainy morning of 10 April 1848, fear gripped Britain’s rulers. Ministers sent young Queen Victoria to safety on the Isle of Wight. Aged Waterloo hero the Duke of Wellington lined the Thames bridges with troops and cannon. South of the river on Kennington Common, thousands of peaceful Chartists stood beneath silk banners as cameraman William Kilburn took their picture.\n\nTo spare lives at the bridges, leader Feargus O’Connor sent the crowd home in peace and packed their giant rolled petition into three horse-drawn cabs. MPs laughed at joke names like \"Pugnose\" and voted the Charter down again. Yet Lovett outlived the jeers. Starting with Pontefract’s locked wooden ballot box in 1872, five of his Six Points became British law.",
     "parent_discussion": [
       {
-        "question": "Why did working-class families call the 1832 Great Reform Act a 'Great Betrayal' even though it abolished rotten boroughs like Old Sarum?",
-        "answer": "Workers had protested to pass the 1832 Act, yet its £10 household property requirement gave the vote only to the middle classes—leaving 5 in 6 men still excluded."
+        "question": "Even after the 1832 Reform Act ended empty 'rotten boroughs' like Old Sarum, why did William Lovett still write the People’s Charter in 1838?",
+        "answer": "Five out of every six adult men still owned too little house property to vote, so ordinary working people remained shut out of Parliament."
       },
       {
         "question": "Why were 'wages for MPs' and a 'secret ballot' just as vital to Chartists like William Lovett as winning the right to vote itself?",
-        "answer": "Without MP salaries only rich men could afford to sit in Westminster, and under open hustings voting landlords and bosses could sack or evict anyone who voted against them."
+        "answer": "Without wages for MPs a poor weaver could never afford to sit in Westminster, and when voters had to shout their choice aloud, bosses and landlords could punish anyone who voted against them."
       },
       {
-        "question": "Was Chartism a failure because Parliament rejected all three giant petitions by 1848, or a long-term victory?",
-        "answer": "A long-term victory—by 1918 five of William Lovett’s Six Points (secret ballot, no property rule for MPs, paid MPs, equal constituencies, universal male suffrage) were British law."
+        "question": "MPs laughed at joke names like 'Pugnose' and voted the Charter down in 1848—so why did William Lovett still 'outlive the jeers'?",
+        "answer": "Although Parliament mocked and rejected the 1848 petition at the time, the Chartists’ ideas won in the long run: starting with Pontefract’s locked wooden ballot box in 1872, five of Lovett’s Six Points became British law."
       }
     ],
     "story_check": [
@@ -470,12 +470,12 @@
         "question": "Who drafted the Six Points of the People’s Charter in London in 1838?",
         "options": [
           "The Duke of Wellington",
-          "Cornish cabinetmaker William Lovett",
+          "Cabinetmaker William Lovett",
           "Earl Grey",
           "Sir Edwin Chadwick"
         ],
         "correctIndex": 1,
-        "feedback": "Correct! Self-educated cabinetmaker William Lovett authored the 1838 People’s Charter championing peaceful 'Moral Force' reform."
+        "feedback": "Correct! Working by candlelight in a small London workshop in 1838, cabinetmaker William Lovett drafted the Six Points of the People’s Charter."
       },
       {
         "question": "How did the giant 1848 Chartist Petition travel from Kennington Common to the Houses of Parliament?",
@@ -486,10 +486,10 @@
           "Sent by electric telegraph"
         ],
         "correctIndex": 1,
-        "feedback": "Spot on. When police blocked a mass march across the Thames bridges, Chartist leaders peacefully sent the rolled parchment bundles in three cabs."
+        "feedback": "Spot on. To spare lives at the guarded Thames bridges, Feargus O’Connor sent the crowd home in peace and packed the giant rolled petition into three horse-drawn cabs."
       },
       {
-        "question": "How many of the People’s Charter’s Six Points eventually became law in Britain (leaving only Annual Parliaments unpassed)?",
+        "question": "How many of William Lovett’s Six Points eventually became British law?",
         "options": [
           "None of them",
           "Only one",
@@ -497,12 +497,12 @@
           "Five out of six"
         ],
         "correctIndex": 3,
-        "feedback": "Exactly right! Five of the Six Points—beginning with the 1872 Secret Ballot Act—became cornerstones of modern British democracy."
+        "feedback": "Exactly right! Starting with Pontefract’s locked wooden ballot box in 1872, five of William Lovett’s Six Points became British law."
       }
     ],
     "monday_cold_call": {
-      "question": "Why did working people still need William Lovett’s 1838 People’s Charter after the 1832 Reform Act—and which FIVE of its Six Points later became law?",
-      "answer": "The 1832 Act’s £10 property rule left 5 in 6 men voteless; Britain later adopted the secret ballot (1872), paid MPs, no property test for MPs, equal constituencies, and votes for all men (only Annual Parliaments was never adopted)."
+      "question": "Why did working people still need William Lovett’s 1838 People’s Charter after the 1832 Reform Act—and what happened to the giant Chartist petition on 10 April 1848?",
+      "answer": "Five in six adult men still owned too little house property to vote; on 10 April 1848 Feargus O’Connor sent the Kennington Common crowd home peacefully to avoid bloodshed at the guarded bridges and sent the petition to Westminster in three horse-drawn cabs."
     },
     "hinge_question": "<strong>Think:</strong> Look at Kilburn’s 1848 photograph of Kennington Common—why had Queen Victoria left London that morning?<br><br><strong>Pair:</strong> Compare 'Moral Force' Chartism (William Lovett’s petitions and newspapers) with 'Physical Force' Chartism.<br><br><strong>Share:</strong> Why did winning the Secret Ballot in 1872 transform everyday freedom for ordinary tenants and factory workers?",
     "questions": [

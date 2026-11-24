@@ -3766,28 +3766,34 @@ img::after {
    AMBIENT VOCABULARY LENS & GLOSSARY (SCHOLARLY EDITION STANDARD)
    ========================================================================== */
 
-/* Ambient Vocabulary Lens (Always Active by Default)
-   Subtle slate dotted underlines (capped at 1–2 per paragraph) highlight
-   barrier words for developing readers, with rich phonetic/audio tooltips. */
+/* Ambient Vocabulary Lens (Literacy Engine v2):
+   Crisp sky-slate dotted underline highlights barrier Tier-2/3 words across narrative
+   and primary sources with plain-English phonetic & audio tooltips. */
 .vocab-word,
 .vocab-lens-term {
   position: relative;
-  border-bottom: 1.5px dotted #94a3b8;
+  border-bottom: 1.5px dotted #64748b;
   cursor: pointer;
   color: inherit;
   font-weight: inherit;
-  padding: 0 1px;
-  border-radius: 2px;
-  transition: all 0.2s ease;
+  padding: 0 2px 1px;
+  border-radius: 3px;
+  transition:
+    border-color 0.2s ease,
+    background-color 0.2s ease,
+    color 0.2s ease;
 }
 
 .vocab-word:hover,
+.vocab-word:focus-visible,
 .vocab-word.active,
 .vocab-lens-term:hover,
+.vocab-lens-term:focus-visible,
 .vocab-lens-term.active {
   border-bottom-color: #0284c7;
-  background-color: rgba(224, 242, 254, 0.55);
+  background-color: rgba(224, 242, 254, 0.6);
   color: #0369a1;
+  outline: none;
 }
 
 /* In print, preserve 100% clean typography */
@@ -4073,7 +4079,7 @@ img::after {
   box-shadow:
     0 12px 30px rgba(0, 0, 0, 0.35),
     0 0 0 1px rgba(255, 255, 255, 0.1);
-  pointer-events: auto;
+  pointer-events: none;
   opacity: 0;
   transform: translateY(8px) scale(0.96);
   transition:
@@ -4082,6 +4088,7 @@ img::after {
 }
 
 #global-glossary-popover.visible {
+  pointer-events: auto;
   opacity: 1;
   transform: translateY(0) scale(1);
 }

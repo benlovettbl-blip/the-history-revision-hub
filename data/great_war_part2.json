@@ -7149,16 +7149,16 @@
       "extract": "In 1914 and 1915, civilian writers like Jessie Pope urged teenagers to rush to the colours as if modern war were a lively rugby match. Haunted by watching a gas-poisoned soldier flung into a jolting wagon in France, frontline officer Wilfred Owen wrote this blistering reply in October 1917.\n\n<div class=\"reading-stanza\">Bent double, like old beggars under sacks,<br>Knock-kneed, coughing like hags, we cursed through sludge,<br>Till on the haunting flares we turned our backs,<br>And towards our distant rest began to trudge.<br>Men marched asleep. Many had lost their boots,<br>But limped on, blood-shod. All went lame; all blind;<br>Drunk with fatigue; deaf even to the hoots<br>Of gas-shells dropping softly behind.</div>\n\n<div class=\"reading-stanza\">Gas! GAS! Quick, boys!—An ecstasy of fumbling,<br>Fitting the clumsy helmets just in time,<br>But someone still was yelling out and stumbling<br>And flound’ring like a man in fire or lime.<br>Dim through the misty panes and thick green light,<br>As under a green sea, I saw him drowning.</div>\n\n<div class=\"reading-stanza\">In all my dreams before my helpless sight,<br>He plunges at me, guttering, choking, drowning.</div>\n\n<div class=\"reading-stanza\">My friend, you would not tell with such high zest<br>To children ardent for some desperate glory,<br>The old Lie: <em>Dulce et decorum est</em><br><em>Pro patria mori.</em></div>\n\nKilled in action just one week before the November 1918 Armistice, Owen left behind an unforgettable warning against romanticising industrial slaughter.",
       "parent_discussion": [
         {
-          "question": "Look at Owen’s opening two lines: how does he smash the recruitment poster image of tall, athletic young heroes?",
-          "answer": "Instead of upright sporting heroes, teenage soldiers are \"bent double, like old beggars under sacks,\" knock-kneed, coughing, and limping \"blood-shod\" through mud."
+          "question": "Look at Owen’s opening lines: how does he smash the cheerful idea of civilian writers like Jessie Pope who treated war like a lively rugby match?",
+          "answer": "Instead of upright young sportsmen, Owen describes exhausted soldiers \"bent double, like old beggars under sacks,\" knock-kneed, coughing, and limping barefoot (\"blood-shod\") through sludge."
         },
         {
-          "question": "How does the rhythm of the poem suddenly change at \"Gas! GAS! Quick, boys!\"?",
-          "answer": "The slow, exhausted trudge explodes into frantic panic as men fumble with gas helmets while one comrade drowns in green poison gas."
+          "question": "How does the pace and mood of the poem suddenly change at \"Gas! GAS! Quick, boys!\"?",
+          "answer": "The slow, exhausted trudge explodes into frantic panic as men fumble with clumsy gas helmets while one comrade stumbles and drowns in thick green poison gas."
         },
         {
-          "question": "Why did Owen originally dedicate his draft to civilian poet Jessie Pope (\"My friend\") and call the Latin motto \"the old Lie\"?",
-          "answer": "Pope treated war like a cheerful rugby game to shame boys into enlisting; Owen insisted anyone who saw a man choke on gas would never lie to \"children\" about glorious death."
+          "question": "In the final verse, Owen calls the eager recruits \"children\" and brands the famous Latin motto \"the old Lie.\" Why does he feel so strongly that writers at home should stop telling young volunteers that dying in war is sweet and honourable?",
+          "answer": "Haunted in his dreams by watching a comrade choke and drown in poison gas, Owen insists that anyone who saw that horror would never romanticise industrial slaughter to eager youngsters hungry for glory."
         }
       ],
       "story_check": [
@@ -7177,12 +7177,12 @@
           "question": "Through what object is Owen peering when he writes \"Dim through the misty panes and thick green light\"?",
           "options": [
             "A stained-glass church window",
-            "The celluloid eyepieces of his gas helmet",
+            "The misty glass eyepieces of his clumsy gas helmet",
             "A submarine periscope",
             "A railway carriage window"
           ],
           "correctIndex": 1,
-          "feedback": "Soldiers looked out through the misted eyepieces (\"panes\") of their gas masks into green poison gas."
+          "feedback": "Soldiers peered out through the misted eyepieces (\"panes\") of their clumsy gas helmets into thick green poison gas."
         },
         {
           "question": "What does the Latin phrase \"Dulce et decorum est pro patria mori\"—which Owen calls \"the old Lie\"—mean?",
@@ -7197,8 +7197,8 @@
         }
       ],
       "monday_cold_call": {
-        "question": "Why did Wilfred Owen call \"Dulce et decorum est pro patria mori\" \"the old Lie\" in direct reply to recruitment propaganda?",
-        "answer": "Recruitment posters and Jessie Pope promised teenage volunteers sporting glory, whereas Owen witnessed young men marching \"blood-shod\" and choking to death in poison gas."
+        "question": "Why did Wilfred Owen call \"Dulce et decorum est pro patria mori\" \"the old Lie\" in direct reply to civilian writers like Jessie Pope?",
+        "answer": "Writers like Jessie Pope urged teenagers to rush to war as if it were a lively rugby match, whereas Owen witnessed exhausted men limping \"blood-shod\" and a comrade choking to death in green poison gas."
       },
       "hinge_question": "<strong>Think:</strong> Why does Owen call the recruits \"children\" in the second-to-last line?<br><br><strong>Pair:</strong> Compare Jessie Pope’s \"Who’s for the Game?\" with Owen’s gas attack—why were both poems written during the same war?<br><br><strong>Share:</strong> Did men enlist in 1914 only because of \"the old Lie,\" or also out of moral outrage over Belgium, Pals pride, and regular wages?",
       "questions": [
@@ -7208,7 +7208,7 @@
       ],
       "audio_file": "/audio/reading/great_war_part2/r0.mp3",
       "studio_audio": "/audio/reading/great_war_part2/r0.mp3",
-      "studio_voice_label": "Lt. Wilfred Owen · War Poetry"
+      "studio_voice_label": "Lt. Wilfred Owen · Trench Verse"
     },
     {
       "lesson_index": 1,
@@ -7253,15 +7253,15 @@
       "parent_discussion": [
         {
           "question": "Why did the massive seven-day British artillery bombardment fail to protect the Pals Battalions on 1 July 1916?",
-          "answer": "Shrapnel shells failed to cut thick barbed wire, many factory shells were duds, and deep chalk dugouts protected German machine gunners until the barrage stopped."
+          "answer": "Nearly a third of the shells were duds, light shrapnel failed to slice thick German barbed wire, and thirty-foot-deep chalk dugouts sheltered German machine gunners until the barrage lifted."
         },
         {
-          "question": "Why did casualties on 1 July 1916 hit northern and southern towns with Pals Battalions so cruelly?",
-          "answer": "Because friends, brothers, and neighbours from the same street or workplace served in the same battalion, whole communities received hundreds of death telegrams in one week."
+          "question": "Why did twenty-one-year-old Captain Billie Nevill kick leather footballs into No Man’s Land at 7:30 a.m., and what happened the instant British guns lifted?",
+          "answer": "He kicked footballs out to steady his nervous volunteer men—just as German crews hauled heavy MG08 machine guns up from deep dugouts and swept every gap in the wire, leaving 57,470 British casualties by nightfall."
         },
         {
-          "question": "How did the Battle of Amiens (8 August 1918) challenge the old \"Lions led by Donkeys\" myth that generals never learned?",
-          "answer": "By 1918, Haig’s commanders combined surprise, sound-ranging artillery, creeping barrages, aircraft, and tanks to break trench stalemate."
+          "question": "Compare the bloodiest day of the Somme (1 July 1916) with the dawn attack at Amiens two years later (8 August 1918). What had British and Dominion armies learned to do differently?",
+          "answer": "Instead of warning the enemy with a week-long bombardment, at Amiens they combined surprise, sound-ranging to pinpoint German guns, aircraft, hundreds of tanks to crush the wire, and a timed \"creeping barrage\" right in front of the infantry."
         }
       ],
       "story_check": [
@@ -7281,7 +7281,7 @@
           "options": [
             "They retreated twenty miles east to Belgium",
             "They sheltered inside thirty-foot-deep reinforced chalk dugouts",
-            "They hid inside Mark V tanks",
+            "They hid inside armoured tanks",
             "British guns ran out of shells on day one"
           ],
           "correctIndex": 1,
@@ -7311,7 +7311,7 @@
       ],
       "audio_file": "/audio/reading/great_war_part2/r1.mp3",
       "studio_audio": "/audio/reading/great_war_part2/r1.mp3",
-      "studio_voice_label": "Studio Historian · Somme to Amiens"
+      "studio_voice_label": "Studio Male Historian · Historical Story"
     },
     {
       "lesson_index": 2,
@@ -7355,16 +7355,16 @@
       "extract": "In autumn 1914, Indian regiments held flooded Flanders trenches before Kitchener’s volunteers were ready. Writing from France in May 1915, Punjabi sergeant Havildar Abdul Rahman of the 59th Rifles begged his family in India to stay away. British censors promptly seized his letter.\n\n\"For God’s sake don’t come, don’t come, don’t come to this war in Europe! Tell my brother Muhammad Yakub Khan for God’s sake not to enlist. Cannons, machine guns, rifles, and bombs are going day and night, just like the rains in the monsoon season. Those who have escaped so far are like the few grains left uncooked in a pot. In my company only ten men remain.\"\n\nThousands of wounded sepoys were carried across the Channel to Brighton, where the domed Royal Pavilion became an Indian military hospital with separate Hindu and Muslim kitchens. In 1915, a wounded Garhwali officer wrote home with both gratitude and sharp awareness of imperial inequality.\n\n\"Do not think this is war; it is the destruction of the world. Yet in this hospital at Brighton, the care given to the wounded is beyond praise. The King-Emperor himself visited our beds and spoke kindly to us. Even so, we recover behind high iron gates under guard. Our Indian officers may never command white soldiers, and when our wounds heal we return to an India that is still not free.\"",
       "parent_discussion": [
         {
-          "question": "What two vivid everyday comparisons does Havildar Abdul Rahman use to describe industrial trench warfare to his family in Punjab?",
-          "answer": "He compares nonstop shells and bullets to \"the rains in the monsoon season\" and survivors to \"the few grains left uncooked in a pot.\""
+          "question": "What two vivid everyday comparisons does Havildar Abdul Rahman use in May 1915 to describe trench warfare to his family in India?",
+          "answer": "He compares nonstop cannons, machine guns, rifles, and bombs to \"the rains in the monsoon season,\" and the few survivors to \"the few grains left uncooked in a pot\"—with only ten men left in his company."
         },
         {
-          "question": "Why did British authorities set up separate Hindu and Muslim kitchens and arrange King George V’s visit at Brighton’s Royal Pavilion Hospital?",
-          "answer": "Remembering the 1857 Rebellion, officials wanted wounded sepoys to write positive letters home so millions more Indians would stay loyal to the Raj."
+          "question": "Why did British censors seize Abdul Rahman’s letter—and what striking contrast did the wounded Garhwali officer notice at Brighton’s Royal Pavilion Hospital?",
+          "answer": "Censors stopped Abdul Rahman’s urgent plea telling his brother not to enlist, while the Garhwali officer praised the medical care and the King-Emperor’s visit yet pointed out they still recovered behind high guarded iron gates."
         },
         {
-          "question": "What painful contradiction did Indian soldiers experience between fighting in Flanders and their status in the British Empire?",
-          "answer": "They bled alongside British soldiers to defend European freedom, yet were locked behind guarded hospital gates, barred from commanding white troops, and denied self-rule in India."
+          "question": "Read the Garhwali officer’s final line: \"when our wounds heal we return to an India that is still not free.\" Why did fighting in Flanders make imperial inequality feel so painful to Indian soldiers?",
+          "answer": "They fought in flooded European trenches and were thanked kindly by the King-Emperor, yet Indian officers were never allowed to command white soldiers and returned home to an India still denied freedom."
         }
       ],
       "story_check": [
@@ -7388,18 +7388,18 @@
             "Westminster Abbey"
           ],
           "correctIndex": 1,
-          "feedback": "Over 4,000 wounded Indian troops were treated inside Brighton’s Royal Pavilion and nearby hospital buildings."
+          "feedback": "Thousands of wounded Indian soldiers were carried across the Channel to recover inside Brighton’s domed Royal Pavilion, which had separate Hindu and Muslim kitchens."
         },
         {
-          "question": "Why do historians have English translations of thousands of Indian soldiers’ letters from 1914–1918 today?",
+          "question": "Even while praising the hospital care in Brighton, what unfair restrictions did the wounded Garhwali officer point out?",
           "options": [
-            "Soldiers wrote all their family letters in English",
-            "British military censors translated and copied outgoing letters from Urdu, Punjabi, Hindi, and Garhwali",
-            "German officers published them after the war",
-            "Newspapers interviewed every sepoy"
+            "Indian soldiers were given no warm meals or beds",
+            "They recovered behind guarded high iron gates, and Indian officers could never command white soldiers",
+            "The King-Emperor refused to visit the hospital",
+            "Wounded sepoys were forbidden to speak to doctors"
           ],
           "correctIndex": 1,
-          "feedback": "Censors translated and filed excerpts to monitor Indian troop morale, unintentionally preserving priceless soldiers’ voices."
+          "feedback": "Despite kind medical care and a royal visit, the officer noted they recovered under guard behind high iron gates, could never command white soldiers, and returned to an India still not free."
         }
       ],
       "monday_cold_call": {
@@ -7458,16 +7458,16 @@
       "extract": "Leaving her quiet Oxford college in 1915, volunteer nurse Vera Brittain stepped straight into the surgical wards of London and Étaples in France.\n\n\"Day and night, ambulance trains unloaded an endless river of broken youth. Stretcher-bearers carried in eighteen-year-old boys with shattered legs, infected shrapnel wounds, and eyes bandaged blind from mustard gas. Their scorched lungs fought for every breath. Most of us were sheltered daughters who had never cleaned a wound before. Within a month, our hands were chapped raw with antiseptic as we dressed amputations and wrote last letters for dying boys.\n\n\"Back home across Britain, total war under the Defence of the Realm Act pulled nearly a million women into munitions factories. Inside shell-filling sheds from Chilwell to Portsmouth’s Priddy’s Hard, young working-class ’Canary Girls’ packed yellow TNT powder into high-explosive shells. Toxic dust dyed their skin bright canary yellow and rotted their teeth, while a single spark could blow a shed apart. Women drove city trams, worked railway signals, and ploughed fields to defeat the German U-boat blockade.\n\n\"When the Armistice bells finally rang out on 11 November 1918, I stood in a silent street unable to cheer. My fiancé and my brother both lay under wooden crosses abroad. Within months, thousands of factory women were dismissed so returning men could reclaim their jobs.\"",
       "parent_discussion": [
         {
-          "question": "How did wartime VAD nursing change sheltered young women like Vera Brittain within weeks?",
-          "answer": "They went from chaperoned Edwardian homes to scrubbing operating theatres, dressing amputations, and tending teenagers blinded and choked by mustard gas."
+          "question": "How did wartime VAD nursing change sheltered young women like Vera Brittain within a single month?",
+          "answer": "Leaving her quiet Oxford college, Vera went from never having cleaned a wound to having antiseptic-chapped hands, dressing amputations, tending boys blinded by mustard gas, and writing last letters for dying teenagers."
         },
         {
-          "question": "Why were female shell-filling workers nicknamed \"Canary Girls,\" and what risks did they face?",
-          "answer": "Toxic TNT explosive dust dyed their skin and hair bright yellow, poisoned their livers, and carried deadly explosion risks—like the 1918 Chilwell blast."
+          "question": "Why were female shell-filling workers nicknamed \"Canary Girls,\" and what dangers did they face inside munitions sheds?",
+          "answer": "Packing toxic yellow TNT powder into high-explosive shells dyed their skin bright canary yellow and rotted their teeth, while a single spark could blow a whole shed apart."
         },
         {
-          "question": "Did 1918 bring full equality for the young women who had kept Britain’s war factories running?",
-          "answer": "Only partly—women aged 30+ who met property rules won the vote in February 1918, while most young working-class \"Canary Girls\" under 30 were denied the vote until 1928 and lost their wartime jobs."
+          "question": "On 11 November 1918, Vera stood in a silent street unable to cheer, and within months thousands of factory women were dismissed so returning men could reclaim their jobs. After everything women did in wards, factories, trams, and fields, does that swift dismissal feel fair?",
+          "answer": "Nearly a million women risked poisoning and explosions to keep Britain supplied while grieving loved ones like Vera’s fiancé and brother—making their swift dismissal once peace returned a bitter blow."
         }
       ],
       "story_check": [
@@ -7480,7 +7480,7 @@
             "A farm in Yorkshire"
           ],
           "correctIndex": 1,
-          "feedback": "Vera Brittain left Somerville College, Oxford in 1915 to nurse wounded troops in London, Malta, and France."
+          "feedback": "Vera Brittain left her quiet Oxford college in 1915 to nurse wounded soldiers in the surgical wards of London and Étaples in France."
         },
         {
           "question": "Why did female munitions workers’ skin turn bright yellow inside wartime shell factories?",
@@ -7494,20 +7494,20 @@
           "feedback": "Handling toxic TNT powder dyed workers’ skin and hair yellow, earning them the nickname \"Canary Girls.\""
         },
         {
-          "question": "What happened to hundreds of thousands of female factory workers in 1919 right after the Armistice?",
+          "question": "What happened to thousands of female factory workers within months of the Armistice on 11 November 1918?",
           "options": [
             "Their wages were doubled permanently",
-            "Every woman aged 18 won the parliamentary vote immediately",
-            "They were dismissed from industrial jobs so returning male soldiers could take them back",
+            "They were promoted to run every munitions shed",
+            "They were dismissed so returning men could reclaim their jobs",
             "They were sent to Paris as diplomats"
           ],
           "correctIndex": 2,
-          "feedback": "Under the 1919 Restoration of Pre-War Practices Act, women were pushed out of skilled wartime jobs—and women under 30 waited until 1928 for the vote."
+          "feedback": "Despite running factories, trams, railway signals, and farms during the war, thousands of women were dismissed within months of peace so returning men could take back their jobs."
         }
       ],
       "monday_cold_call": {
-        "question": "Why was the February 1918 voting reform bitter-sweet for young working-class \"Canary Girls\"?",
-        "answer": "Parliament gave the vote only to women aged 30 and over (with property qualifications), shutting out the young women in their twenties who had risked TNT poisoning and explosions."
+        "question": "How does Vera Brittain’s diary show both the hidden sacrifices women made during the First World War and what happened to many factory workers after 11 November 1918?",
+        "answer": "VAD nurses tended shattered, gassed teenagers while nearly a million \"Canary Girls\" risked TNT poisoning and explosions in shell factories—yet Vera could not cheer for her lost fiancé and brother, and thousands of women were soon dismissed so returning men could reclaim their jobs."
       },
       "hinge_question": "<strong>Think:</strong> Name two ways DORA and total war reshaped everyday civilian life in Britain.<br><br><strong>Pair:</strong> Did World War I permanently liberate British women, or only borrow their labour for an emergency?<br><br><strong>Share:</strong> Why couldn’t Vera Brittain celebrate when church bells rang on 11 November 1918?",
       "questions": [
@@ -7561,21 +7561,21 @@
       "extract": "Inside Paris in the spring of 1919, British Treasury adviser John Maynard Keynes watched the \"Big Three\" argue over a ruined continent. French leader Georges Clemenceau sat in grey suede gloves with one fixed goal. He wanted Germany crippled forever so French towns could never be invaded again. British Prime Minister David Lloyd George feared angry voters at home who cried to \"squeeze the German lemon until the pips squeak.\" Meanwhile, American President Woodrow Wilson preached noble Fourteen Points yet gave ground clause by clause behind closed doors.\n\nIn June 1919, appalled by the final treaty, Keynes quit the British team and walked out of Paris. Before the year ended, he published this stark warning.\n\n\"Germany was forced to sign Article 231—accepting sole guilt for the war—under the threat of invasion and a starvation sea blockade. At the same time, the treaty stripped Germany of her merchant ships, overseas trade, iron ore, and rich coalfields. Yet the victors still demanded billions of pounds in gold that a broken country now had no way to earn.\n\n\"Demanding the full cost of the war from Germany was one of the gravest acts of folly in modern history. If we aim on purpose to beggar Central Europe, vengeance, I dare predict, will not limp. Nothing will then hold back a final struggle of despair and hate, beside which even the horrors of the late war will fade.\"",
       "parent_discussion": [
         {
-          "question": "Why did Clemenceau, Lloyd George, and Woodrow Wilson pull in three different directions at Paris in 1919?",
-          "answer": "Twice invaded since 1870, France wanted iron security; Lloyd George wanted trade recovery yet faced angry British voters; Wilson wanted a League of Nations and self-determination."
+          "question": "Why did Clemenceau, Lloyd George, and Woodrow Wilson pull in three different directions in Paris in spring 1919?",
+          "answer": "Clemenceau wanted Germany crippled forever so French towns could never be invaded again; Lloyd George feared angry British voters crying to \"squeeze the German lemon until the pips squeak\"; and Wilson preached noble Fourteen Points yet gave ground behind closed doors."
         },
         {
-          "question": "What economic contradiction drove John Maynard Keynes to resign and walk out of the Paris Peace Conference?",
-          "answer": "The Allies took away Germany’s coal, iron ore, colonies, and merchant ships while demanding £6.6 billion in reparations that a crippled economy could scarcely pay."
+          "question": "What economic contradiction drove John Maynard Keynes to resign and walk out of Paris in June 1919?",
+          "answer": "The treaty stripped Germany of merchant ships, overseas trade, iron ore, and rich coalfields while still demanding billions of pounds in gold that a broken country now had no way to earn."
         },
         {
-          "question": "Was Keynes right in 1919 when he warned \"vengeance, I dare predict, will not limp,\" or do modern historians defend parts of Versailles?",
-          "answer": "Bitter resentment over Article 231 and economic crisis helped fuel Hitler’s rise within twenty years—though some historians argue Versailles was actually milder than Germany’s harsh 1918 Brest-Litovsk treaty on Russia."
+          "question": "Put yourself in both Clemenceau’s shoes and Keynes’s shoes in 1919. After a devastating war, should a peace treaty punish the defeated side harshly so it cannot attack again, or help Europe rebuild so \"vengeance\" does not grow?",
+          "answer": "Clemenceau wanted lasting safety for French towns, yet Keynes warned that deliberately ruining Central Europe would unleash \"vengeance\" and \"a final struggle of despair and hate\" even worse than the war just ended."
         }
       ],
       "story_check": [
         {
-          "question": "Which Allied leader sat in grey gloves determined to weaken Germany permanently after two invasions of France?",
+          "question": "Which Allied leader sat in grey suede gloves with one fixed goal: crippling Germany so French towns could never be invaded again?",
           "options": [
             "Woodrow Wilson",
             "Georges Clemenceau",
@@ -7583,7 +7583,7 @@
             "Vittorio Orlando"
           ],
           "correctIndex": 1,
-          "feedback": "French Prime Minister Georges Clemenceau had lived through both the 1870 and 1914 German invasions of France."
+          "feedback": "French leader Georges Clemenceau sat in grey suede gloves determined that German armies would never invade French towns again."
         },
         {
           "question": "Why did John Maynard Keynes call the reparations demands economically impossible?",
@@ -7594,18 +7594,18 @@
             "America paid Germany’s bill immediately"
           ],
           "correctIndex": 1,
-          "feedback": "Keynes argued you could not cripple Germany’s industrial resources and trade while expecting vast annual surpluses."
+          "feedback": "Keynes warned that stripping Germany of merchant ships, overseas trade, iron ore, and coalfields left the country no way to earn billions in gold."
         },
         {
           "question": "What did Keynes prophesy in 1919 if the Allies deliberately impoverished Central Europe?",
           "options": [
             "A century of unbroken European peace",
-            "\"Vengeance, I dare predict, will not limp\"—leading to an even worse future war",
+            "\"Vengeance, I dare predict, will not limp\"—leading to an even worse future struggle",
             "Immediate German membership in the British Empire",
             "The abolition of taxes across Europe"
           ],
           "correctIndex": 1,
-          "feedback": "Just twenty years after Keynes’s 1919 warning, Europe plunged into the Second World War in 1939."
+          "feedback": "Keynes warned that deliberately beggaring Central Europe would unleash \"vengeance\" and \"a final struggle of despair and hate, beside which even the horrors of the late war will fade.\""
         }
       ],
       "monday_cold_call": {

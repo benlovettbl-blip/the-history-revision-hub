@@ -41,16 +41,16 @@
     "extract": "Nearly three thousand years ago, travelling poets called bards stood in torchlit Greek halls and chanted adventure tales from memory. Across mountain valleys and scattered islands, every Hellene family knew Homer's <em>Odyssey</em>—the ten-year voyage of clever Odysseus sailing home to rocky Ithaca.\n\n<div class=\"reading-stanza\">As soon as early, rosy-fingered Dawn lit up the sky,<br>Odysseus called his eager shipmates down along the shore.<br>They climbed aboard the hollow ship and sat upon the benches,<br>Then struck the grey salt water all together with their oars!</div>\n\n<div class=\"reading-stanza\">Athena sent a singing breeze that raced behind the stern,<br>Rippling across the wine-dark sea and foaming round the prow.<br>They raised the tall pine mast on high and spread the shining sail,<br>As rocky islands slipped behind and dolphins leaped ahead!</div>\n\nWhenever Greek merchants loaded golden olive oil and painted clay cups onto wooden ships, Homer's sea-songs echoed across the waves. Even rival city-states felt like one Hellene family whenever a bard began to sing!",
     "parent_discussion": [
       {
-        "question": "Which two famous picture-phrases (epithets) does Homer use to describe sunrise and the deep Aegean water?",
-        "answer": "He calls sunrise 'rosy-fingered Dawn' and describes the deep rolling water at dusk or dawn as 'the wine-dark sea'."
+        "question": "Which two colourful picture-phrases does Homer use in the poem to describe sunrise and the sea?",
+        "answer": "He calls sunrise 'rosy-fingered Dawn' and describes the deep sea as 'the wine-dark sea'."
       },
       {
         "question": "How did Odysseus's crew move their wooden ship forward first, and what changed once goddess Athena sent a breeze?",
-        "answer": "First they pulled pine oars together from wooden benches; once the wind blew, they raised the pine mast and spread a white sail."
+        "answer": "First they sat on the benches and struck the grey salt water together with their oars; once Athena sent a breeze, they raised the tall pine mast and spread the shining sail."
       },
       {
-        "question": "Why did sea voyages and shared poems like Homer's 'Odyssey' matter so much in a land divided by steep mountains?",
-        "answer": "Overland mountain tracks were slow, so sailing linked distant harbours while Homer's Greek poems united rival poleis as one Hellene culture."
+        "question": "Even when Greek city-states were rivals, why did gathering to hear a bard sing Homer's 'Odyssey' make everyone feel like one big family?",
+        "answer": "Across mountain valleys and scattered islands, every Hellene family loved the same sea-songs and shared the same stories, bringing rival city-states together."
       }
     ],
     "story_check": [
@@ -77,20 +77,20 @@
         "feedback": "Correct! 'The wine-dark sea' is one of the most famous phrases in all world literature."
       },
       {
-        "question": "Why did real Greek sailors constantly cross the sea like Odysseus's crew?",
+        "question": "What goods does the story say Greek merchants loaded onto their wooden ships?",
         "options": [
-          "Because Greece had flat plains with no harbours",
-          "To swap olive oil and painted pottery overseas for vital wheat grain",
-          "To escape freezing year-round Arctic ice",
-          "To hunt mammoths on floating icebergs"
+          "Blocks of Arctic ice and mammoth tusks",
+          "Golden olive oil and painted clay cups",
+          "Iron railway tracks and bags of coal",
+          "Egyptian pyramids and stone obelisks"
         ],
         "correctIndex": 1,
-        "feedback": "Exactly right! Thin mountain soil grew hardy olives and grapes, which sailors traded abroad for grain."
+        "feedback": "Exactly right! Greek merchants loaded golden olive oil and painted clay cups onto wooden ships crossing the Aegean Sea."
       }
     ],
     "monday_cold_call": {
-      "question": "Quote one famous Homeric description from 'The Odyssey' and explain how shared epic poems helped unite rival Greek city-states.",
-      "answer": "Phrases like 'wine-dark sea' or 'rosy-fingered Dawn' were sung across Greece in one Greek language, uniting rival poleis as Hellenes."
+      "question": "Share one famous picture-phrase from Homer's 'Odyssey', and explain how bards' songs brought rival Greek city-states together.",
+      "answer": "Phrases like 'rosy-fingered Dawn' or 'wine-dark sea' were loved across mountain valleys and islands, making rival city-states feel like one Hellene family."
     },
     "hinge_question": "Why was it far quicker for an Ancient Greek merchant to sail across open sea than to travel thirty miles overland?",
     "audio_file": "/audio/reading/ks2_ancient_greece/r0.mp3"
@@ -142,11 +142,11 @@
       },
       {
         "question": "How did Pericles contrast childhood for boys in Sparta with childhood for boys in Athens?",
-        "answer": "Spartan boys endured harsh, painful barracks training from age seven, whereas Athenian boys enjoyed books, music, poetry, and open debate."
+        "answer": "Spartan boys marched into tough army barracks from age seven to make them brave, whereas Athenian boys enjoyed books, music, and open talk."
       },
       {
-        "question": "What might a proud Spartan girl or woman have answered back if she had heard Pericles boasting about Athenian freedom?",
-        "answer": "She could point out that Athenian women were shut out of voting and school, whereas Spartan girls trained outdoors and women owned land!"
+        "question": "Listen to Pericles's big question at the end—do you think Athens's books and open talk or Sparta's tough barracks raised stronger citizens, and who did Pericles leave out of 'the many'?",
+        "answer": "Pericles praised Athens for giving power to 'the many' and raising free thinkers, yet the vocabulary clues show only adult male citizens could vote—leaving women and others out."
       }
     ],
     "story_check": [
@@ -170,18 +170,18 @@
           "Twenty-five years old"
         ],
         "correctIndex": 1,
-        "feedback": "Correct! At just seven years old, Spartan boys left home to train barefoot and sleep on woven river reeds."
+        "feedback": "Correct! Spartan boys entered the tough agoge army barracks barefoot at just seven years old."
       },
       {
-        "question": "Even though Pericles praised Athenian democracy, who was left out of voting on the Pnyx hill?",
+        "question": "According to Pericles's speech, what did boys enjoy in Athens instead of marching into tough army barracks?",
         "options": [
-          "Poor male potters born in Athens",
-          "Athenian sailors who rowed warships",
-          "Women, enslaved people, and foreign-born metics",
-          "Older men with grey beards"
+          "Sailing war-chariots across the desert",
+          "Books, music, and open talk",
+          "Carving red granite obelisks",
+          "Digging underground flint mines"
         ],
-        "correctIndex": 2,
-        "feedback": "Exactly right! Only adult male Athenian citizens could vote—shutting out women, enslaved people, and foreigners."
+        "correctIndex": 1,
+        "feedback": "Exactly right! Pericles boasted that Athenian boys enjoyed books, music, and open talk while still standing bravely in danger."
       }
     ],
     "monday_cold_call": {
@@ -237,12 +237,12 @@
         "answer": "Although the leaping fountain looked dramatic at first, the spring gushed salty seawater that nobody could drink or use on crops."
       },
       {
-        "question": "Name three practical everyday uses listed in the second stanza that made Athena's olive tree such a clever gift.",
-        "answer": "Olive wood warmed homes, ripe olives fed families, and pressed golden olive oil lit clay lamps (and paid for imported grain!)."
+        "question": "What three everyday gifts listed in the second verse made Athena's olive tree so useful to the people of Athens?",
+        "answer": "Its wood gave warmth, its fruit gave food, and its golden oil lit lamps."
       },
       {
-        "question": "What does crowning Olympic winners with wild olive leaves instead of heavy gold tell us about Ancient Greek beliefs?",
-        "answer": "Greeks prized honour, glory for their polis, and sacred gifts from the gods far higher than cash prizes."
+        "question": "At the Ancient Olympic Games, champions received a simple crown of wild olive leaves instead of gold coins—why do you think an olive crown felt so special?",
+        "answer": "Because the olive tree was seen as wise Athena's sacred gift, wearing a wild-olive kotinos crown meant winning honour and pride that mattered more than money."
       }
     ],
     "story_check": [
@@ -266,10 +266,10 @@
           "A tall cedar ship with oars"
         ],
         "correctIndex": 2,
-        "feedback": "Exactly right! Hardy olive trees thrived on Greece's dry rocky hills and powered Athenian sea trade."
+        "feedback": "Exactly right! Athena's silver-leafed olive tree gave the people of Athens wood for warmth, fruit for food, and golden oil for lamps."
       },
       {
-        "question": "What prize did victorious sprinters and wrestlers receive at Olympia from 776 BC?",
+        "question": "What prize did victorious athletes receive at Zeus's Olympic Games from 776 BC?",
         "options": [
           "A solid gold medal on a silk ribbon",
           "A kotinos wreath woven from sacred wild olive leaves",
@@ -277,12 +277,12 @@
           "Poseidon's bronze trident"
         ],
         "correctIndex": 1,
-        "feedback": "Well remembered! Winning a sacred wild-olive kotinos wreath brought lasting fame to an athlete's home city-state."
+        "feedback": "Well remembered! Champions at the Ancient Olympic Games wore a simple kotinos crown woven from sacred wild olive branches."
       }
     ],
     "monday_cold_call": {
-      "question": "In the Greek myth carved on the Parthenon, why did Athena's gift win the contest for Athens against Poseidon's fountain?",
-      "answer": "Poseidon's fountain gushed undrinkable saltwater, whereas Athena's olive tree gave wood, food, lamp oil, and trade wealth."
+      "question": "In the Greek myth of how Athens got its name, why did Athena's gift beat Poseidon's leaping spring?",
+      "answer": "Poseidon's spring gushed salty seawater that could not water a farmer's hillside, whereas Athena's olive tree gave wood for warmth, fruit for food, and golden oil for lamps."
     },
     "hinge_question": "How does the myth of Athena's olive tree explain real-world geography and farming on Greece's rocky hillsides?",
     "audio_file": "/audio/reading/ks2_ancient_greece/r2.mp3"
@@ -337,8 +337,8 @@
         "answer": "Xerxes thought they were vain or foolish, but combing their hair meant the Spartans had calmly prepared to fight to the death."
       },
       {
-        "question": "Why was the narrow mountain-and-sea geography of Thermopylae (and later the Strait of Salamis) so helpful to outnumbered Greeks?",
-        "answer": "Steep cliffs and narrow channels stopped Persia's huge numbers from surrounding the tight Greek shield-wall or agile triremes."
+        "question": "Why did King Leonidas choose to block Persia's huge army at the narrow pass of Thermopylae instead of fighting on an open flat field?",
+        "answer": "Between steep cliffs and the sea, the narrow pass stopped Persia's huge army from surrounding the small force of hoplites, letting Leonidas's shield wall hold them back for three days."
       }
     ],
     "story_check": [
@@ -362,18 +362,18 @@
           "They were surrendering their bronze shields"
         ],
         "correctIndex": 2,
-        "feedback": "Exactly right! Years of strict agoge discipline taught Spartans to stay calm right before their toughest test."
+        "feedback": "Exactly right! The exiled Spartan warned Xerxes that Spartans always combed their hair neatly before risking their lives in battle."
       },
       {
-        "question": "How did King Xerxes finally get soldiers behind Leonidas's defenders after three days at Thermopylae?",
+        "question": "How did Persian King Xerxes react at first when his scout told him the Spartans were exercising and combing their hair?",
         "options": [
-          "By flying giant kites over the cliffs",
-          "A local traitor showed Persian troops a hidden mountain path",
-          "By digging a tunnel underneath the Aegean Sea",
-          "By waiting until winter snow froze the waves"
+          "He immediately marched his army back to Persia",
+          "He laughed aloud and called the Greeks fools",
+          "He invited King Leonidas to supper in his tent",
+          "He ordered his own soldiers to braid their hair too"
         ],
         "correctIndex": 1,
-        "feedback": "Well remembered! Even after Thermopylae fell, Leonidas's stand bought precious time before Athens's triremes won at Salamis."
+        "feedback": "Spot on! Xerxes laughed at first, until an exiled Spartan warned him how fearless those soldiers truly were."
       }
     ],
     "monday_cold_call": {
@@ -429,12 +429,12 @@
         "answer": "He compared Athens to a proud, sleepy warhorse and himself to a stubborn buzzing horsefly sent to wake citizens up!"
       },
       {
-        "question": "Why did Socrates's constant questions in the Agora annoy some rich and powerful leaders in Athens?",
-        "answer": "His calm questions exposed when boastful leaders did not really understand justice or truth as well as they claimed."
+        "question": "Why did Socrates refuse to stay quiet even if the five hundred jurors promised to set him free?",
+        "answer": "He believed 'an unexamined life is barely worth living' and wanted to keep nudging people in the market to care less about gold and more about goodness and truth."
       },
       {
-        "question": "How did Socrates's habit of testing beliefs inspire later Greek thinkers like Plato, Aristotle, and doctor Hippocrates?",
-        "answer": "Instead of accepting old myths blindly, Greek scholars and doctors began testing ideas, observing nature, and checking real symptoms."
+        "question": "Socrates said it is good to have a stubborn 'horsefly' asking tricky questions to wake people up—when in everyday life is it brave and helpful to ask awkward questions?",
+        "answer": "Asking honest questions stops people from getting lazy or selfish, helps everyone think more clearly about fairness and goodness, and leads to wiser choices."
       }
     ],
     "story_check": [
@@ -458,7 +458,7 @@
           "It was printed in an Athenian newspaper"
         ],
         "correctIndex": 0,
-        "feedback": "Exactly right! Plato was twenty-eight years old at the trial and preserved Socrates's dialogues for the world."
+        "feedback": "Exactly right! Young Plato sat in the courtroom and wrote down his teacher's calm words."
       },
       {
         "question": "What did Socrates mean by comparing himself to a buzzing horsefly?",
@@ -529,8 +529,8 @@
         "answer": "Facing the bright sun threw the horse's shadow safely behind him where it could no longer startle him."
       },
       {
-        "question": "Why does this boyhood story match the way Aristotle trained Alexander to observe the world?",
-        "answer": "Aristotle taught his pupil to look closely at real evidence and think calmly instead of relying on brute strength alone."
+        "question": "Why did watching calmly beat shouting and muscle when young Alexander stepped up to the wild stallion?",
+        "answer": "While the grown grooms stared only at Bucephalus's kicking hooves, Alexander stayed calm, looked closely for the real cause of the horse's fear, and solved it gently."
       }
     ],
     "story_check": [
@@ -557,15 +557,15 @@
         "feedback": "Exactly right! Young Alexander watched carefully and realised the horse feared his own darting shadow."
       },
       {
-        "question": "How far east did Alexander later ride Bucephalus after uniting Greece?",
+        "question": "Where does the story say loyal Bucephalus would later carry Alexander?",
         "options": [
           "Only ten miles outside Macedon",
-          "Across Egypt and Persia all the way to north-west India",
-          "Across the Atlantic Ocean to Mesoamerica",
-          "North into Viking Scandinavia"
+          "All the way to India",
+          "Across the ocean to Orkney",
+          "North into snowy Scandinavia"
         ],
         "correctIndex": 1,
-        "feedback": "Well remembered! Alexander founded cities named Alexandria across Egypt and Asia, spreading Greek learning far and wide."
+        "feedback": "Well remembered! After Alexander tamed him as a boy, loyal Bucephalus carried him all the way to India."
       }
     ],
     "monday_cold_call": {

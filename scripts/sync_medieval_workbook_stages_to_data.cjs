@@ -1,3 +1,8 @@
+// RETIRED LEGACY SCRIPT: 3-trigger-word chips were retired in favour of natural prose + Stage Questions.
+// Do NOT run this script; it overwrote narrative/model sentences with legacy Title-Case trigger chips.
+console.log('ℹ️ sync_medieval_workbook_stages_to_data.cjs is retired. Use npm run sync:unit medieval_england instead.');
+process.exit(0);
+
 const fs = require('fs');
 const path = require('path');
 const vm = require('vm');

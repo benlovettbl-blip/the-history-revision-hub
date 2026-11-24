@@ -9,12 +9,12 @@
  *      Popover so pupils never lose their reading position. Automatically excluded from
  *      subsequent vocabulary hover underlines and bolding.
  *   2. Vocabulary Lens Underlines (dotted sky-slate underline):
- *      Priority-ranked (Current Lesson Vocab > Unit Vocab > Master Disciplinary Glossary),
+ *      Priority-ranked (Current Lesson Vocab > Unit Vocab > Plain-English Master Tier-2/3 Glossary),
  *      with parenthetical dates stripped and curly/straight apostrophes normalized.
- *      Strictly capped at FIRST MENTION PER LESSON (max 3 per stage).
+ *      Strictly capped at FIRST MENTION PER LESSON (max 4 per stage).
  *   3. Purposeful Factual Bolding (<strong>):
- *      Balanced at 1–4 anchors per paragraph (dates, turning-point events, and Stage
- *      Workbook Trigger Terms), never stacked onto Dossier Pills.
+ *      Balanced at 1–4 factual anchors per paragraph (dates, turning-point events, and key causal
+ *      anchors), never stacked onto Dossier Pills.
  */
 
 import { getAssetUrl } from './assets.js';
@@ -440,33 +440,11 @@ function renderInlineDossierChipHtml(surfaceLabel, entity) {
 /**
  * Ensures every narrative paragraph has purposeful, balanced bold anchors (1–4 per paragraph):
  * - If a paragraph has 0 bold phrases (e.g. after a Dossier Pill unwrapped its bolding), promotes up to 2
- *   deterministic anchors from Stage Workbook Trigger Terms or lead historical dates/treaties.
+ *   deterministic anchors from specific historical dates or named Treaties/Acts/Battles/Operations.
  * - Caps runaway bolding (> 4 bold phrases in a single paragraph) cleanly.
  */
-function ensureBalancedParagraphBolding(markdownStr, wbStage = null) {
+function ensureBalancedParagraphBolding(markdownStr, _wbStage = null) {
   if (!markdownStr || typeof markdownStr !== 'string') return markdownStr;
-
-  const triggerCandidates = [];
-  if (wbStage) {
-    const rawWords = Array.isArray(wbStage.words)
-      ? wbStage.words
-      : Array.isArray(wbStage.key_terms)
-        ? wbStage.key_terms
-        : [];
-    rawWords.forEach((w) => {
-      const t = typeof w === 'string' ? w : w && w.term ? String(w.term) : '';
-      const cleanT = t.trim();
-      if (!cleanT) return;
-      triggerCandidates.push(cleanT);
-      // If possessive compound e.g. "George Habash's Popular Front for the Liberation of Palestine", add parts
-      const possParts = cleanT.split(/['’]s\s+/);
-      if (possParts.length === 2) {
-        if (possParts[0].trim().length >= 4) triggerCandidates.push(possParts[0].trim());
-        if (possParts[1].trim().length >= 4) triggerCandidates.push(possParts[1].trim());
-      }
-    });
-  }
-  triggerCandidates.sort((a, b) => b.length - a.length);
 
   const separator = markdownStr.includes('\n\n') ? '\n\n' : null;
   const paragraphs = separator ? markdownStr.split('\n\n') : [markdownStr];
@@ -509,16 +487,7 @@ function ensureBalancedParagraphBolding(markdownStr, wbStage = null) {
       });
     };
 
-    // Priority 1: Stage Workbook Trigger Terms
-    for (const trig of triggerCandidates) {
-      if (added >= 2) break;
-      const escaped = trig
-        .replace(/[-/\\^$*+?.()|[\]{}]/g, '\\$&')
-        .replace(/['’]/g, "['’]");
-      tryBoldPhrase(escaped, 'i');
-    }
-
-    // Priority 2: Specific calendar dates / decades (e.g. "21 March 1968", "February 1969", "late 1960s", "1973")
+    // Priority 1: Specific calendar dates / decades (e.g. "21 March 1968", "February 1969", "late 1960s")
     if (added < 2) {
       tryBoldPhrase(
         '(?:\\d{1,2}\\s+)?(?:January|February|March|April|May|June|July|August|September|October|November|December)\\s+\\d{4}|(?:early|mid-|late)\\s+\\d{4}s',
@@ -526,10 +495,10 @@ function ensureBalancedParagraphBolding(markdownStr, wbStage = null) {
       );
     }
 
-    // Priority 3: Named Treaties / Resolutions / Operations / Acts / Battles
+    // Priority 2: Named Treaties / Resolutions / Operations / Acts / Battles / Charters
     if (added < 2) {
       tryBoldPhrase(
-        '(?:UN\\s+Resolution\\s+\\d+|(?:Treaty|Battle|Operation|Act|Doctrine|Accords|Pact|Armistice)\\s+of\\s+[A-Z][a-zA-Z’\'-]+)',
+        '(?:UN\\s+Resolution\\s+\\d+|(?:Treaty|Battle|Operation|Act|Doctrine|Accords|Pact|Armistice|Statute|Charter)\\s+of\\s+[A-Z][a-zA-Z’\'-]+)',
         '',
       );
     }
@@ -661,7 +630,7 @@ export function createLessonNarrativeAnnotator({
     contentStr = isQuote
       ? `<em style="font-size:1.1rem; color:#475569;">${contentStr}</em>`
       : highlightGlossaryInProse(contentStr, vocabDict, {
-          maxPerBlock: 3,
+          maxPerBlock: 4,
           seenRoots: activeSeenVocab,
           excludedTerms: activeExcludedVocab,
         });

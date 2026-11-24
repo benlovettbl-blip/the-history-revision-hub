@@ -890,46 +890,72 @@ export function initGlossaryPopover() {
     glossaryPopover.innerHTML = `${headerHtml}${phoneticsHtml}<div style="color: #cbd5e1; font-size: 0.86rem; line-height: 1.45;">${definition}</div>`;
     glossaryPopover.classList.add('visible');
 
-    // Calculate position
-    const rect = target.getBoundingClientRect();
-    const popoverRect = glossaryPopover.getBoundingClientRect();
+    // Calculate viewport-safe position (matching mobile bottom-nav clearance & full-width card on phones)
+    const positionGlossaryPopover = (anchorEl) => {
+      if (!anchorEl) return;
+      const rect = anchorEl.getBoundingClientRect();
+      const isNarrowMobile = window.innerWidth <= 560;
+      const bottomNavAllowance =
+        window.innerWidth < 933 && document.body?.classList?.contains('hh-has-bottom-nav')
+          ? 88
+          : 14;
 
-    let top = rect.top - popoverRect.height - 10;
-    let left = rect.left + rect.width / 2 - popoverRect.width / 2;
+      if (isNarrowMobile) {
+        glossaryPopover.style.left = '12px';
+        glossaryPopover.style.right = '12px';
+        glossaryPopover.style.width = 'auto';
+        glossaryPopover.style.maxWidth = 'calc(100vw - 24px)';
+      } else {
+        glossaryPopover.style.right = '';
+        glossaryPopover.style.width = '';
+        glossaryPopover.style.maxWidth = '330px';
+      }
 
-    // Boundary detection
-    let arrowLeft = '50%';
-    glossaryPopover.classList.remove('arrow-top');
+      const popoverRect = glossaryPopover.getBoundingClientRect();
+      let top = rect.top - popoverRect.height - 10;
+      let arrowLeft = '50%';
+      glossaryPopover.classList.remove('arrow-top');
 
-    // Top boundary
-    if (top < 10) {
-      top = rect.bottom + 10;
-      glossaryPopover.classList.add('arrow-top');
-    }
+      // Flip below if not enough room above (while respecting bottom nav bar)
+      if (top < 10) {
+        const belowTop = rect.bottom + 10;
+        const maxAllowedTop = window.innerHeight - bottomNavAllowance - popoverRect.height;
+        top = Math.max(10, Math.min(belowTop, maxAllowedTop));
+        glossaryPopover.classList.add('arrow-top');
+      } else if (top + popoverRect.height > window.innerHeight - bottomNavAllowance) {
+        top = Math.max(10, window.innerHeight - bottomNavAllowance - popoverRect.height);
+      }
 
-    // Left boundary
-    if (left < 10) {
-      const overflow = 10 - left;
-      left = 10;
-      arrowLeft = `calc(50% - ${overflow}px)`;
-    }
-    // Right boundary
-    else if (left + popoverRect.width > window.innerWidth - 10) {
-      const overflow = left + popoverRect.width - (window.innerWidth - 10);
-      left = window.innerWidth - 10 - popoverRect.width;
-      arrowLeft = `calc(50% + ${overflow}px)`;
-    }
+      if (!isNarrowMobile) {
+        let left = rect.left + rect.width / 2 - popoverRect.width / 2;
+        if (left < 10) {
+          const overflow = 10 - left;
+          left = 10;
+          arrowLeft = `calc(50% - ${overflow}px)`;
+        } else if (left + popoverRect.width > window.innerWidth - 10) {
+          const overflow = left + popoverRect.width - (window.innerWidth - 10);
+          left = window.innerWidth - 10 - popoverRect.width;
+          arrowLeft = `calc(50% + ${overflow}px)`;
+        }
+        glossaryPopover.style.left = `${left}px`;
+      } else {
+        const targetCenterX = rect.left + rect.width / 2 - 12;
+        const clampedX = Math.max(18, Math.min(window.innerWidth - 42, targetCenterX));
+        arrowLeft = `${clampedX}px`;
+      }
 
-    glossaryPopover.style.top = `${top}px`;
-    glossaryPopover.style.left = `${left}px`;
+      glossaryPopover.style.top = `${top}px`;
 
-    let arrowStyle = document.getElementById('popover-arrow-style');
-    if (!arrowStyle) {
-      arrowStyle = document.createElement('style');
-      arrowStyle.id = 'popover-arrow-style';
-      document.head.appendChild(arrowStyle);
-    }
-    arrowStyle.innerHTML = `#global-glossary-popover::after { left: ${arrowLeft}; }`;
+      let arrowStyle = document.getElementById('popover-arrow-style');
+      if (!arrowStyle) {
+        arrowStyle = document.createElement('style');
+        arrowStyle.id = 'popover-arrow-style';
+        document.head.appendChild(arrowStyle);
+      }
+      arrowStyle.innerHTML = `#global-glossary-popover::after { left: ${arrowLeft}; }`;
+    };
+
+    positionGlossaryPopover(target);
   };
 
   document.body.addEventListener('mouseover', (e) => {
@@ -964,6 +990,25 @@ export function initGlossaryPopover() {
     }
   });
 
+  // Keyboard accessibility: Enter/Space opens popover on focused term; Escape dismisses
+  document.body.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      hidePopover(true);
+      return;
+    }
+    if (e.key === 'Enter' || e.key === ' ') {
+      const vocabTarget = e.target && e.target.closest && e.target.closest('.vocab-word, .vocab-lens-term');
+      if (vocabTarget) {
+        e.preventDefault();
+        if (activeVocabElement === vocabTarget && isPinned) {
+          hidePopover(true);
+        } else {
+          showPopover(vocabTarget, true);
+        }
+      }
+    }
+  });
+
   window.addEventListener(
     'scroll',
     () => {
@@ -972,16 +1017,7 @@ export function initGlossaryPopover() {
         if (rect.bottom < 0 || rect.top > window.innerHeight) {
           hidePopover(true);
         } else {
-          const popoverRect = glossaryPopover.getBoundingClientRect();
-          let top = rect.top - popoverRect.height - 10;
-          let left = rect.left + rect.width / 2 - popoverRect.width / 2;
-          if (top < 10) top = rect.bottom + 10;
-          if (left < 10) left = 10;
-          else if (left + popoverRect.width > window.innerWidth - 10) {
-            left = window.innerWidth - 10 - popoverRect.width;
-          }
-          glossaryPopover.style.top = `${top}px`;
-          glossaryPopover.style.left = `${left}px`;
+          showPopover(activeVocabElement, true);
         }
       } else {
         hidePopover(true);

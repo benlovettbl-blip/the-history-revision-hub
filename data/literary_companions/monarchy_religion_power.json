@@ -41,16 +41,16 @@
     "extract": "In 1526, London dockworkers rolled heavy bales of Flemish cloth off merchant ships beside the Thames. Deep inside the wool lay contraband more dangerous than gunpowder. Exiled scholar William Tyndale had translated the New Testament into clear, everyday English. He vowed that a boy driving a plough would soon know more Scripture than the Pope himself. Bishops bought up and burned his smuggled books outside St Paul’s Cathedral, yet Antwerp’s printing presses only worked faster.\n\nEight years later, King Henry VIII broke with Rome for reasons of his own. Desperate for a male heir with Anne Boleyn, Henry had Parliament name him Supreme Head of the Church of England in 1534. His ruthless minister, Thomas Cromwell, sent royal agents riding across the realm to close over eight hundred monasteries. Workmen pried grey lead from abbey roofs, melted silver chalices, and sold ancient estates to enrich the Crown.\n\nAcross the wild moors of Yorkshire, anger boiled over in October 1536. Northern abbeys had fed hungry families, sheltered travellers in winter storms, and lent seed-corn to poor tenants. One-eyed lawyer Robert Aske led thirty thousand northern rebels into York beneath the crimson Banner of the Five Wounds of Christ. Calling their march the Pilgrimage of Grace, they swore loyalty to Henry while begging him to expel Cromwell. Henry promised pardon until the crowds went home—then hanged Robert Aske in iron chains from York’s high tower.",
     "parent_discussion": [
       {
-        "question": "How did William Tyndale manage to get forbidden English New Testaments past Tudor port inspectors in 1526?",
-        "answer": "Merchants hid the small printed books deep inside heavy bales of Flemish cloth shipped across the Channel into London."
+        "question": "How were William Tyndale’s forbidden English New Testaments smuggled into London in 1526?",
+        "answer": "They were hidden deep inside heavy bales of Flemish cloth unloaded from merchant ships beside the Thames."
       },
       {
-        "question": "Why did closing local monasteries hit ordinary families in Yorkshire far harder than courtiers in London?",
-        "answer": "Northern abbeys were vital community lifelines that gave charity to the poor, sheltered moorland travellers, and lent seed-corn in bad harvests."
+        "question": "Why did closing the northern abbeys make ordinary families across Yorkshire so angry in October 1536?",
+        "answer": "The abbeys fed hungry families, sheltered travellers in winter storms, and lent seed-corn to poor tenants—yet royal agents stripped their roofs, melted silver chalices, and sold their estates."
       },
       {
-        "question": "Compare William Tyndale’s motives in 1526 with Henry VIII and Thomas Cromwell’s motives in 1534–1536: were they seeking the same Reformation?",
-        "answer": "Tyndale risked death so ordinary people could read the Bible in English, whereas Henry wanted a royal divorce, dynastic power, and monastic wealth."
+        "question": "William Tyndale and King Henry VIII both defied the Pope—how different were their real reasons for doing so?",
+        "answer": "Tyndale wanted everyday people, even a boy driving a plough, to read the Bible in plain English, while Henry wanted a male heir with Anne Boleyn, control as Supreme Head, and the abbeys’ wealth for the Crown."
       }
     ],
     "story_check": [
@@ -63,10 +63,10 @@
           "Inside sacks of Cornish tin"
         ],
         "correctIndex": 1,
-        "feedback": "Correct! Protestant merchants tucked Tyndale’s pocket-sized Antwerp printings deep inside bales of Flemish cloth."
+        "feedback": "Correct! Tyndale’s English New Testaments from Antwerp’s presses were hidden deep inside heavy bales of Flemish cloth."
       },
       {
-        "question": "Which Chief Minister organised the inspection and stripping of England’s eight hundred monasteries for Henry VIII?",
+        "question": "Which royal minister sent agents across England to close and strip over eight hundred monasteries for Henry VIII?",
         "options": [
           "Robert Aske",
           "William Tyndale",
@@ -74,7 +74,7 @@
           "Sir Francis Bacon"
         ],
         "correctIndex": 2,
-        "feedback": "Spot on. Thomas Cromwell masterminded the royal surveys and closure of the monasteries between 1536 and 1540."
+        "feedback": "Spot on. Thomas Cromwell sent royal agents to close over eight hundred monasteries between 1536 and 1540, stripping their lead, silver, and land for the Crown."
       },
       {
         "question": "How did King Henry VIII respond after promising a royal pardon to scatter the 30,000 Pilgrimage of Grace marchers?",
@@ -85,7 +85,7 @@
           "He fled to France for safety"
         ],
         "correctIndex": 2,
-        "feedback": "Exactly right. Once the northern rebels dispersed peacefully, Henry arrested their leaders and executed Robert Aske in chains at York."
+        "feedback": "Exactly right. Once the crowds went home, Henry broke his promise and hanged Robert Aske in iron chains from York’s high tower."
       }
     ],
     "monday_cold_call": {
@@ -144,16 +144,16 @@
     "extract": "When twenty-five-year-old Elizabeth rode through cheering London streets in November 1558, bitter memories of fire still hung over Smithfield. Her half-sister Mary had burned over two hundred and eighty Protestants at the stake. Across the Channel, Europe was tearing itself apart in wars of religion. Elizabeth chose a clever third path.\n\nUnder her 1559 Religious Settlement, every parish switched to an English Prayer Book, yet churches kept stained glass, bishops, and traditional robes. Instead of calling herself Supreme Head like her father, she took the calmer title Supreme Governor. Statesman Sir Francis Bacon later praised her for not liking to \"make windows into men’s hearts and secret thoughts.\" Parishioners who skipped Sunday service paid a twelve-pence fine to help the poor, while private beliefs went unpunished.\n\nThat calm truce cracked in 1570 when Pope Pius V excommunicated Elizabeth and urged loyal Catholics to depose her. Strict Puritans complained loudly that her church still looked half-Catholic, while secret Jesuit priests slipped ashore in disguise. Inside quiet country manors, a small, quiet carpenter named Nicholas Owen worked alone by candlelight with muffled tools. Behind false chimneys and oak stairs, he carved cramped \"priest-holes\" barely wide enough for a man to lie flat. While royal searchers hammered floorboards overhead, hidden priests held their breath in the dark—caught between private conscience and state treason.",
     "parent_discussion": [
       {
-        "question": "What did Sir Francis Bacon mean when he wrote that Elizabeth I did not want to \"make windows into men’s hearts and secret thoughts\"?",
-        "answer": "Unlike Mary I who burned people for private beliefs, Elizabeth asked for outward public loyalty on Sunday while leaving private thoughts alone unless someone plotted treason."
+        "question": "How did Elizabeth I’s 1559 'Middle Way' try to keep both Protestants and traditional Catholics calm?",
+        "answer": "Every parish used an English Prayer Book and Elizabeth took the calmer title 'Supreme Governor', while churches kept stained glass, bishops, and traditional robes—and skipping Sunday service only brought a twelve-pence fine for the poor."
       },
       {
-        "question": "How did Elizabeth’s 1559 'Middle Way' try to calm both Protestants and traditional Catholics at the same time?",
-        "answer": "It gave Protestants an English Bible and English Prayer Book, while reassuring traditionalists with bishops, church ornaments, and the title 'Supreme Governor'."
+        "question": "What did Sir Francis Bacon mean when he wrote that Elizabeth I did not like to \"make windows into men’s hearts and secret thoughts\"?",
+        "answer": "Unlike her half-sister Mary, who burned over 280 Protestants at the stake, Elizabeth left people’s private beliefs unpunished as long as they showed outward loyalty on Sunday."
       },
       {
-        "question": "Why did carpenter Nicholas Owen have to carve secret priest-holes inside Catholic manor houses after 1570?",
-        "answer": "After the Pope excommunicated Elizabeth and called for her overthrow in 1570, Catholic priests arriving from Europe were hunted as suspected traitors."
+        "question": "After 1570, priests hid in Nicholas Owen’s cramped priest-holes while searchers hammered overhead—why was it so hard for devout Catholics to stay loyal to both their faith and their Queen?",
+        "answer": "Once Pope Pius V excommunicated Elizabeth and urged Catholics to depose her, secret priests and the families sheltering them were caught between following their private conscience and being accused of treason."
       }
     ],
     "story_check": [
@@ -166,7 +166,7 @@
           "Half a farmer’s harvest"
         ],
         "correctIndex": 1,
-        "feedback": "Correct! Absent parishioners ('recusants') paid twelve pence—one shilling—collected for the poor of the parish."
+        "feedback": "Correct! Parishioners who skipped Sunday service ('recusants') paid a twelve-pence fine to help the poor."
       },
       {
         "question": "What event in 1570 shattered Elizabeth’s early religious truce and turned secret Catholic missions into treason suspects?",
@@ -177,10 +177,10 @@
           "The signing of the Bill of Rights"
         ],
         "correctIndex": 2,
-        "feedback": "Spot on. The 1570 Papal Bull declared Elizabeth a heretic and released Catholics from loyalty to her Crown."
+        "feedback": "Spot on. In 1570 Pope Pius V excommunicated Elizabeth and urged loyal Catholics to depose her, shattering the earlier truce."
       },
       {
-        "question": "Who worked secretly by night carving hidden priest-holes behind chimneys and staircases in Catholic manor houses?",
+        "question": "Who worked alone by candlelight carving hidden priest-holes behind false chimneys and oak stairs in country manors?",
         "options": [
           "Nicholas Owen",
           "Sir Francis Bacon",
@@ -188,7 +188,7 @@
           "Dr Leonel Sharp"
         ],
         "correctIndex": 0,
-        "feedback": "Exactly right. Master carpenter Nicholas Owen built dozens of ingenious hiding places that saved priests from royal search parties."
+        "feedback": "Exactly right. Quiet carpenter Nicholas Owen used muffled tools to carve cramped priest-holes where hunted priests hid from royal searchers."
       }
     ],
     "monday_cold_call": {
@@ -247,16 +247,16 @@
     "extract": "On 9 August 1588, England still braced for invasion. Midnight fireships had scattered Spain’s Armada off Calais, yet the Duke of Parma’s veteran army waited just across the Channel. Ignoring nervous bodyguards, Queen Elizabeth rode a white warhorse into Tilbury Camp wearing a polished silver breastplate over white velvet. Chaplain Dr Leonel Sharp copied down her words to read aloud down the ranks:\n\n\"My loving people, some have warned us not to trust ourselves to armed multitudes for fear of treachery. Yet I assure you, I do not desire to live to distrust my faithful and loving people. Let tyrants fear! Under God, I have placed my chiefest strength and safeguard in the loyal hearts of my subjects. I am come amongst you not for my sport, being resolved in the heat of battle to live and die amongst you all.\"\n\n\"I know I have the body of a weak and feeble woman. Yet I have the heart and stomach of a king, and of a king of England too! I think foul scorn that Parma or Spain should dare to invade the borders of my realm.\"\n\nSeven years after Atlantic gales wrecked Spain’s fleeing galleons, William Shakespeare captured that defiant post-Armada pride in Richard II:\n\n<div class=\"reading-stanza\">This royal throne of kings, this sceptred isle,<br>This fortress built by Nature for herself.<br>Against infection and the hand of war,<br>This precious stone set in the silver sea!</div>",
     "parent_discussion": [
       {
-        "question": "Why had cautious courtiers warned Elizabeth I NOT to ride out among thousands of armed soldiers at Tilbury?",
-        "answer": "They feared a hidden assassin or Catholic plotter in the crowd might shoot or stab the unmarried Protestant Queen."
+        "question": "Why had nervous advisers warned Elizabeth I not to ride out among her armed soldiers at Tilbury Camp—and how did she answer them?",
+        "answer": "They feared treachery in an armed crowd, but Elizabeth declared 'Let tyrants fear!' and said her chiefest strength lay in the loyal hearts of her subjects."
       },
       {
-        "question": "How does Elizabeth flip sixteenth-century prejudices about female rulers on their head in her most famous line?",
-        "answer": "She admits male expectations ('the body of a weak and feeble woman') only to declare she has 'the heart and stomach of a king, and of a king of England too!'"
+        "question": "How does Elizabeth flip old ideas about female rulers on their head in her most famous line?",
+        "answer": "She acknowledges expectations about 'the body of a weak and feeble woman' only to declare she has 'the heart and stomach of a king, and of a king of England too!'"
       },
       {
-        "question": "Look at Shakespeare’s lines calling England a 'fortress built by Nature' in a 'silver sea': how did geography and weather help defeat the Armada?",
-        "answer": "After English fireships and broadsides broke Spain’s formation at Gravelines, fierce North Sea and Atlantic storms drove wrecked galleons onto Scottish and Irish rocks."
+        "question": "Why does Shakespeare call England a 'fortress built by Nature' in a 'silver sea'—and how does this passage show the sea and weather helping to save England in 1588?",
+        "answer": "Being an island kept the Duke of Parma’s waiting army across the Channel, while English fireships scattered the Armada off Calais and fierce Atlantic gales wrecked Spain’s fleeing galleons."
       }
     ],
     "story_check": [
@@ -269,7 +269,7 @@
           "A black mourning veil"
         ],
         "correctIndex": 1,
-        "feedback": "Correct! Wearing a gleaming silver cavalry breastplate visually reinforced her pledge to stand with her soldiers in battle."
+        "feedback": "Correct! Wearing a polished silver breastplate visually reinforced her pledge to stand with her soldiers in battle."
       },
       {
         "question": "Where did Elizabeth tell her troops she placed her 'chiefest strength and safeguard'?",
@@ -283,7 +283,7 @@
         "feedback": "Spot on. Contrasting herself with fearful 'tyrants', Elizabeth praised the loyal hearts of her people."
       },
       {
-        "question": "Which playwright wrote the famous 1595 lines praising England as 'this sceptred isle' set in a 'silver sea'?",
+        "question": "Which playwright wrote the lines praising England as 'this sceptred isle' set in a 'silver sea'?",
         "options": [
           "Andrew Marvell",
           "Sir Francis Bacon",
@@ -291,7 +291,7 @@
           "William Shakespeare"
         ],
         "correctIndex": 3,
-        "feedback": "Exactly right. John of Gaunt’s speech in Shakespeare’s Richard II (1595) echoed England’s post-Armada island confidence."
+        "feedback": "Exactly right. Seven years after the Armada, William Shakespeare captured England’s island pride in his play Richard II."
       }
     ],
     "monday_cold_call": {
@@ -355,11 +355,11 @@
       },
       {
         "question": "Notice how the Whitehall crowd reacted in schoolboy Philip Henry’s diary: did Londoners cheer when the axe fell?",
-        "answer": "No—instead of cheering, thousands let out a deep, 'dismal, universal groan' of shock at seeing an anointed king beheaded in public."
+        "answer": "No—instead of cheering, thousands let out a 'dismal, universal groan' of shock at seeing their king beheaded in public."
       },
       {
-        "question": "What did Charles I mean right before his death by saying 'a subject and a sovereign are clean different things'?",
-        "answer": "To his last breath, he rejected democracy—arguing ordinary subjects deserved fair laws, but zero share in governing the kingdom."
+        "question": "Even on the scaffold, Charles I insisted 'a subject and a sovereign are clean different things'—how does that connect to his belief in Divine Right, and why do you think the crowd still groaned in shock?",
+        "answer": "Charles believed kings were chosen directly by God and could never be judged by Parliament or subjects; even onlookers who disagreed with him were stunned to witness a reigning king publicly executed."
       }
     ],
     "story_check": [
@@ -453,16 +453,16 @@
     "extract": "In summer 1650, England stood without a king. Radical soldiers called Levellers debated voting rights in army camps. Meanwhile, poet Andrew Marvell marvelled at how ancient royal claims had crumbled before Parliament’s New Model Army.\n\n<div class=\"reading-stanza\">Though Justice against Fate complain,<br>And plead the ancient rights in vain;<br>But those do hold or break,<br>As men are strong or weak.</div>\n\nUnlike fierce propagandists, Marvell also painted a quiet, dignified portrait of Charles I testing the blade before bowing to Parliament’s verdict.\n\n<div class=\"reading-stanza\">He nothing common did or mean<br>Upon that memorable scene,<br>But with his keener eye<br>The axe’s edge did try.<br>Nor call’d the gods with vulgar spite<br>To vindicate his helpless right,<br>But bow’d his comely head<br>Down, as upon a bed.</div>\n\nAlthough the Crown returned in 1660, no Stuart king could safely ignore Westminster again. Coffeehouses buzzed with pamphlets warning against unchecked royal rule. When Catholic King James II suspended laws without consent, MPs invited William of Orange and Mary Stuart to take the throne in 1688. Inside Whitehall’s Banqueting House on 13 February 1689, William and Mary accepted the Bill of Rights. Never again could a monarch tax Britons, suspend laws, or keep a peacetime army without Parliament.",
     "parent_discussion": [
       {
-        "question": "Why does Andrew Marvell call King Charles I’s Divine Right a 'helpless right' in the second stanza?",
-        "answer": "Charles claimed God alone guarded kings, yet on the Whitehall scaffold no miracle stopped Parliament’s executioner."
+        "question": "In Andrew Marvell’s poem, what does he mean by calling Charles I’s royal claim a 'helpless right'?",
+        "answer": "Even though Charles held ancient royal claims, no divine power came down to rescue ('vindicate') him from Parliament’s verdict and the axe."
       },
       {
         "question": "What makes Marvell’s 1650 poem so unusual and fair-minded during a bitter civil conflict?",
-        "answer": "Even while writing about Oliver Cromwell’s triumph, Marvell honestly admired King Charles’s calm courage ('nothing common did or mean') facing the axe."
+        "answer": "Unlike fierce propagandists, Marvell saw that ancient royal claims had fallen before Parliament’s army, yet still praised Charles’s calm dignity ('nothing common did or mean') as he tested the axe and bowed his head."
       },
       {
-        "question": "Look across our whole unit from 1534 to 1689: how had the balance of power between Crown and Parliament completely reversed?",
-        "answer": "In 1534 Henry VIII dominated both Church and Parliament; by 1689 Parliament chose the monarchs and locked royal power inside the Bill of Rights."
+        "question": "Even after kings returned in 1660, why couldn’t monarchs ever rule the old way again—and what changed for good inside the Banqueting House in 1689?",
+        "answer": "Coffeehouse pamphlets challenged unchecked royal rule, and when King James II suspended laws without consent, MPs invited William and Mary to accept the Bill of Rights—banning monarchs from taxing, suspending laws, or keeping a peacetime army without Parliament."
       }
     ],
     "story_check": [
@@ -475,10 +475,10 @@
           "The Pope crowns a new ruler"
         ],
         "correctIndex": 1,
-        "feedback": "Correct! Marvell saw that ancient claims of Divine Right collapsed once a ruler lost the consent and strength of the nation."
+        "feedback": "Correct! Marvell wrote that ancient rights 'hold or break, as men are strong or weak'—meaning real strength decided who ruled."
       },
       {
-        "question": "Which radical Civil War group argued that ordinary men—not just wealthy landowners or kings—deserved a voice in choosing MPs?",
+        "question": "Which radical Civil War group debated voting rights in army camps and argued that political power came from ordinary people?",
         "options": [
           "The Cavaliers",
           "The Royal Commissioners",
@@ -486,23 +486,23 @@
           "The Spanish Armada"
         ],
         "correctIndex": 2,
-        "feedback": "Spot on. The Levellers pushed early democratic ideas of popular sovereignty during the 1640s debates."
+        "feedback": "Spot on. The Levellers were radical soldiers and citizens who argued that political power belonged to ordinary people rather than kings or lords."
       },
       {
-        "question": "What condition did William III and Mary II have to accept in February 1689 to wear the crown?",
+        "question": "What did William and Mary accept inside Whitehall’s Banqueting House on 13 February 1689?",
         "options": [
           "Restoring the monasteries",
           "Ruling without a Parliament for eleven years",
-          "Accepting Parliament’s Declaration and Bill of Rights",
+          "Accepting Parliament’s Bill of Rights",
           "Moving the capital from London to York"
         ],
         "correctIndex": 2,
-        "feedback": "Exactly right. Accepting the 1689 Bill of Rights ended absolute monarchy in Britain and made Parliament supreme."
+        "feedback": "Exactly right. Under the 1689 Bill of Rights, no monarch could ever again tax Britons, suspend laws, or keep a peacetime army without Parliament."
       }
     ],
     "monday_cold_call": {
-      "question": "In Marvell’s Horatian Ode, why does he call Charles I’s claim a 'helpless right'—and what three royal abuses did the 1689 Bill of Rights ban without Parliament’s consent?",
-      "answer": "Divine Right could not save Charles from Parliament’s axe; in 1689 the Bill of Rights banned suspending laws, levying unapproved taxes, and keeping a peacetime standing army."
+      "question": "In Marvell’s Horatian Ode, why does he call Charles I’s claim a 'helpless right'—and what three royal powers did the 1689 Bill of Rights ban without Parliament’s consent?",
+      "answer": "No divine power came to rescue Charles’s ancient royal claim from Parliament’s axe; in 1689 the Bill of Rights banned monarchs from taxing Britons, suspending laws, or keeping a peacetime army without Parliament."
     },
     "hinge_question": "<strong>Think:</strong> Notice where William and Mary heard the Declaration of Rights in 1689—what had happened outside that exact same Whitehall building in 1649?<br><br><strong>Pair:</strong> Compare Henry VIII’s power in 1534 with William and Mary’s power under the 1689 Bill of Rights.<br><br><strong>Share:</strong> Which turning point mattered more in shifting power to Parliament: 1649 (Regicide) or 1689 (Bill of Rights)?",
     "questions": [

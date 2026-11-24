@@ -5663,16 +5663,16 @@ window.UNIT_DATA = {
       "extract": "Morning mist drifted through green Yucatán trees around AD 700 as bright quetzal birds called high above. Under the forest lay a puzzle. Porous white limestone soaked up rain like a dry sponge, leaving almost no rivers! Yet right nearby stood white Maya pyramids and busy markets.\n\nDown a rocky path, families carried clay jars to the rim of a deep cliff pool called a <em>cenote</em>. Where old cave roofs had fallen in, cool fresh water shone deep below all year round! South at Tikal, builders coated wide plazas and underground <em>chultuns</em> with smooth plaster to catch monsoon rain.\n\nIn sunny clearings, farmers worked without iron ploughs or oxen. Poking holes with wooden sticks, they planted the <strong>Three Sisters</strong> together in one earth mound! Tall maize stalks held up climbing bean vines. Bean roots fed the soil, while wide squash leaves shaded damp ground—feeding stone cities while Anglo-Saxon Britain farmed round wooden halls!",
       "parent_discussion": [
         {
-          "question": "Why couldn't northern Yucatán families simply scoop water from rivers like people along Egypt's Nile or Baghdad's Tigris?",
-          "answer": "Yucatán sat on porous limestone rock that soaked rainwater straight underground, leaving almost no surface rivers."
+          "question": "Why couldn't families in Yucatán simply collect their drinking water from surface rivers?",
+          "answer": "Porous white limestone under the forest soaked up rain like a dry sponge, leaving almost no surface rivers."
         },
         {
           "question": "Explain how each of the 'Three Sisters' crops—maize, beans, and squash—helped the other two grow stronger.",
-          "answer": "Maize stalks gave poles for beans to climb, bean roots added richness back into the soil, and broad squash leaves shaded damp earth and blocked weeds!"
+          "answer": "Tall maize stalks held up climbing bean vines, bean roots fed the soil, and wide squash leaves shaded the damp ground!"
         },
         {
-          "question": "Why does comparing Tikal or Uxmal with AD 900 Anglo-Saxon Britain challenge old assumptions about technology?",
-          "answer": "Even without iron ploughs, horses, or wheels, Maya engineers and farmers supported towering stone cities and star observatories!"
+          "question": "What is so surprising about the way Maya farmers fed huge stone cities using just wooden sticks?",
+          "answer": "Even without iron ploughs or oxen, their clever Three Sisters planting kept the soil rich and damp enough to feed big stone cities while Anglo-Saxon Britain still farmed round wooden halls!"
         }
       ],
       "story_check": [
@@ -5701,13 +5701,13 @@ window.UNIT_DATA = {
         {
           "question": "How did families at southern cities like Tikal store water for dry months?",
           "options": [
-            "In plastered stone reservoirs and underground chultun cisterns",
+            "In plastered plazas and underground chultun cisterns",
             "Inside giant iron water towers",
             "By melting snow off Mount Olympus",
             "By pumping water with steam engines"
           ],
           "correctIndex": 0,
-          "feedback": "Well remembered! Waterproof lime plaster turned Tikal's plazas and reservoirs into giant rain catchers."
+          "feedback": "Well remembered! Smooth waterproof plaster turned Tikal's plazas and underground chultuns into clever monsoon rain catchers."
         }
       ],
       "monday_cold_call": {
@@ -5760,20 +5760,20 @@ window.UNIT_DATA = {
       "parent_discussion": [
         {
           "question": "What tiny clue on the top temple floor made Alberto Ruz Lhuillier suspect something lay hidden inside Palenque's pyramid?",
-          "answer": "One large stone floor slab had two neat rows of removable stone plugs sealing finger-holes used to lower it into place!"
+          "answer": "One wide stone floor slab had two neat rows of round stone plugs—a sign that it could be lifted!"
         },
         {
           "question": "Why did Maya rulers like King Pakal prize glowing green jade even more than shiny yellow gold?",
-          "answer": "Vibrant green jade matched young maize shoots, rainforest leaves, and fresh water—symbolising breath, life, and rebirth."
+          "answer": "Tough, glowing green jade matched the colour of sprouting maize and life, so Maya rulers prized it even higher than gold."
         },
         {
-          "question": "Why did clearing just forty-five stairs take Ruz and his team four whole summers of hard work?",
-          "answer": "Maya builders had packed the entire hidden staircase tightly with heavy stones and wet lime mortar to stop tomb robbers entering."
+          "question": "Why do you think Maya builders packed those forty-five hidden stairs tight with wet rocks and clay, and what did finding King Pakal's tomb prove?",
+          "answer": "Packing the stairs tightly kept the king's vault sealed for twelve centuries, and finding Pakal proved old textbooks wrong—some Maya pyramids really did hold royal tombs!"
         }
       ],
       "story_check": [
         {
-          "question": "How old was K'inich Janaab' Pakal when his mother helped crown him ruler of Palenque in AD 615?",
+          "question": "How old was Pakal the Great when he was crowned ruler of Palenque in AD 615?",
           "options": [
             "Twelve years old",
             "Forty-five years old",
@@ -5781,7 +5781,7 @@ window.UNIT_DATA = {
             "Five years old"
           ],
           "correctIndex": 0,
-          "feedback": "Spot on! Crowned aged twelve, Pakal the Great ruled Palenque for sixty-eight remarkable years until AD 683."
+          "feedback": "Spot on! Crowned aged twelve, Pakal the Great ruled Palenque for sixty-eight peaceful years until AD 683."
         },
         {
           "question": "What did Alberto Ruz Lhuillier's 1952 discovery prove for the first time?",
@@ -5792,18 +5792,18 @@ window.UNIT_DATA = {
             "That Palenque had no written hieroglyphs"
           ],
           "correctIndex": 1,
-          "feedback": "Exactly right! Finding Pakal's vault overturned the old textbook claim that American pyramids were never tombs."
+          "feedback": "Exactly right! Finding Pakal's vault overturned the old textbook claim that Maya pyramids were only solid stone mounds."
         },
         {
           "question": "What materials formed the lifelike eyes of King Pakal's green jade mosaic mask?",
           "options": [
-            "Blue glass and copper wire",
-            "White shell and shiny black volcanic obsidian",
+            "Blue beads and copper wire",
+            "White shell and black glass",
             "Painted fig-tree bark",
             "Gold coins from Rome"
           ],
           "correctIndex": 1,
-          "feedback": "Well remembered! White shell whites and dark volcanic obsidian pupils gave the jade mask a startlingly lifelike gaze."
+          "feedback": "Well remembered! White shell and black glass eyes gave King Pakal's green jade mosaic mask a startlingly lifelike gaze."
         }
       ],
       "monday_cold_call": {
@@ -5863,8 +5863,8 @@ window.UNIT_DATA = {
           "answer": "He said: 'Whatever one human mind has written, another human mind can read!'"
         },
         {
-          "question": "How did cracking Maya glyphs change what historians used to think about Classic Maya rulers?",
-          "answer": "Before reading the stelae, scholars thought Maya cities only worshipped stars peacefully; glyphs revealed real royal names, alliances, queens, and wars!"
+          "question": "Why was it so exciting when silent stone stelae could finally be read aloud again?",
+          "answer": "For years every king's name had stayed silent, so cracking the spoken sounds let people read the real names, calendar dates, and histories of Maya kings and queens!"
         }
       ],
       "story_check": [
@@ -5877,7 +5877,7 @@ window.UNIT_DATA = {
             "Scraped European calfskin parchment"
           ],
           "correctIndex": 1,
-          "feedback": "Spot on! Maya scribes painted glyphs and shell-dot-bar numbers onto lime-coated fig-bark pages with turkey-quill brushes."
+          "feedback": "Spot on! Maya scribes painted glyphs and numbers onto accordion-folded fig-tree bark coated in smooth white lime plaster."
         },
         {
           "question": "What did Yuri Knorozov prove about how the 800+ Maya glyphs actually worked?",
@@ -5891,15 +5891,15 @@ window.UNIT_DATA = {
           "feedback": "Exactly right! Mixing word signs and syllable signs let Maya scribes write down any spoken Mayan sentence."
         },
         {
-          "question": "Which three symbols did Maya mathematicians combine on bark pages to write base-20 numbers?",
+          "question": "Which two animals in the Dresden Codex helped Yuri Knorozov prove that Maya glyphs stood for spoken sounds?",
           "options": [
-            "Roman letters I, V, and X",
-            "A shell for zero, a dot for one, and a bar for five",
-            "A star, a moon, and an owl",
-            "Hieroglyphic frogs and lotus flowers"
+            "A jaguar and a quetzal",
+            "A wild turkey and a dog",
+            "A dolphin and an owl",
+            "A horse and a camel"
           ],
           "correctIndex": 1,
-          "feedback": "Well remembered! Maya scholars invented place-value zero independently using a neat carved shell sign."
+          "feedback": "Well remembered! Sounding out 'ku-tzu' above the wild turkey and 'tzu-lu' beside the dog cracked the Maya code."
         }
       ],
       "monday_cold_call": {
@@ -5959,8 +5959,8 @@ window.UNIT_DATA = {
           "answer": "Rules forbade using hands or feet, and a solid rubber ball weighing up to four kilograms could bruise or break unpadded ribs!"
         },
         {
-          "question": "How does the Hero Twins story explain why Pok-ta-Pok was a sacred religious ceremony rather than just an afternoon sport?",
-          "answer": "Every match re-enacted the battle between life and underworld Xibalba—helping the sun rise, rain fall, and sacred maize sprout!"
+          "question": "Why do you think the Maya told a myth where winning a ballgame saved the Maize God and created the Sun and Moon?",
+          "answer": "It shows that Pok-ta-Pok was more than a fun game—for the Maya it told the sacred story of life beating dark Xibalba so crops and sunlight could return!"
         }
       ],
       "story_check": [
@@ -5976,7 +5976,7 @@ window.UNIT_DATA = {
           "feedback": "Spot on! Twin brothers Hunahpu and Xbalanque outwitted the Lords of Xibalba with teamwork and sharp wits."
         },
         {
-          "question": "Which body part did Pok-ta-Pok players mainly use to bounce the heavy rubber ball towards high stone rings?",
+          "question": "Which body part did Pok-ta-Pok players use to bounce the heavy rubber ball across the court?",
           "options": [
             "Bare hands and fingers",
             "Kicking feet in leather boots",
@@ -5984,7 +5984,7 @@ window.UNIT_DATA = {
             "Wooden cricket bats"
           ],
           "correctIndex": 2,
-          "feedback": "Exactly right! Touching the ball with hands or feet broke strict rules, so players dived to strike it with padded hips."
+          "feedback": "Exactly right! Touching the ball with hands or feet broke strict rules, so players struck it with padded hips."
         },
         {
           "question": "What did the victorious Hero Twins rise into the sky to become at the end of their adventure?",
@@ -6055,8 +6055,8 @@ window.UNIT_DATA = {
           "answer": "Maize tortillas and tamales gave families nearly all their daily strength, so corn literally became human muscle and life!"
         },
         {
-          "question": "How did Chichén Itzá's 'El Castillo' pyramid connect sacred maize farming with clever maths and astronomy?",
-          "answer": "Four staircases of 91 steps plus the top platform equalled 365 days, and Kukulkan's equinox serpent shadow marked spring planting and autumn harvest!"
+          "question": "Why do you think the Maya built a 365-step pyramid at Chichén Itzá to mark every corn season?",
+          "answer": "Because maize was the food that gave families life and strength, so tracking the 365-day year and Kukulkan's equinox shadow helped them know the seasons for growing corn!"
         }
       ],
       "story_check": [
@@ -6083,7 +6083,7 @@ window.UNIT_DATA = {
           "feedback": "Exactly right! Yellow and white maize ground nine times formed human flesh and strength."
         },
         {
-          "question": "How many total steps (four staircases of 91 plus the top platform) did architects build into El Castillo at Chichén Itzá?",
+          "question": "How many steps does Chichén Itzá's pyramid have to mark the solar year and corn seasons?",
           "options": [
             "100 steps",
             "260 steps",
@@ -6091,7 +6091,7 @@ window.UNIT_DATA = {
             "1,000 steps"
           ],
           "correctIndex": 2,
-          "feedback": "Brilliant maths! 91 × 4 + 1 = 365, turning the whole limestone pyramid into a giant solar farming calendar."
+          "feedback": "Spot on! Chichén Itzá's 365-step pyramid tracked every day of the solar year and every corn season."
         }
       ],
       "monday_cold_call": {
@@ -6148,24 +6148,24 @@ window.UNIT_DATA = {
         },
         {
           "question": "Where did Maya city life boom for centuries after AD 900, proving the Maya never disappeared?",
-          "answer": "Northern Yucatán cities with deep cenotes (like Chichén Itzá and Uxmal) and bustling Caribbean sea-ports like cliffside Tulum!"
+          "answer": "Northern Yucatán towns with deep cenote wells (like Chichén Itzá) and bustling Caribbean cliffside ports like walled Tulum!"
         },
         {
-          "question": "How do seven million living Maya people keep 2,000-year-old traditions alive in the modern world?",
-          "answer": "By speaking over thirty Mayan languages, farming sacred maize, weaving geometric huipil blouses on backstrap looms, and reading ancient glyphs!"
+          "question": "How do seven million living Maya people keep their proud traditions alive today?",
+          "answer": "By speaking thirty Mayan languages, weaving bright huipil blouses on tree-tied looms, and reading ancient stone glyphs aloud once more!"
         }
       ],
       "story_check": [
         {
-          "question": "Why do historians call the AD 900 shift away from southern Maya cities 'multi-causal'?",
+          "question": "Why does the word 'multi-causal' describe why families left southern Maya cities between AD 800 and 950?",
           "options": [
             "Because one giant volcano buried every Maya city in a single afternoon",
-            "Because drought, deforestation, and royal warfare worked together rather than one single cause",
+            "Because long droughts, tree-cutting, and rival wars worked together rather than one single cause",
             "Because Roman legions conquered Tikal in AD 900",
             "Because snow covered Mesoamerica all year"
           ],
           "correctIndex": 1,
-          "feedback": "Spot on! Snail shells in lake mud, eroded hillsides, and carved war stelae prove several causes combined."
+          "feedback": "Spot on! Multi-causal means several linked causes—drought, deforestation, and warfare—worked together."
         },
         {
           "question": "Which cliffside Maya port on the Caribbean coast welcomed trading canoes centuries after AD 900?",

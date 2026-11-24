@@ -1,3 +1,8 @@
+// RETIRED LEGACY SCRIPT: 3-trigger-word columns were retired in favour of natural prose + Stage Questions.
+// Do NOT use this script to splice Title-Case / present-tense trigger phrases into narrative_blocks.
+console.log('ℹ️ audit_medieval_triggers.cjs is retired (3-trigger-word chips removed). Use npm run audit:stages instead.');
+process.exit(0);
+
 const fs = require('fs');
 const vm = require('vm');
 const { enquiryConfigs } = require('./render_medieval_england_workbook.cjs');

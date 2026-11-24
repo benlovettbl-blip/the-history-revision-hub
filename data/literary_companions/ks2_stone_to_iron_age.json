@@ -43,17 +43,17 @@
         "answer": "They scraped the skull bone smooth with sharp flint blades and bored two neat holes so leather straps could tie the antlers onto a wearer's head."
       },
       {
-        "question": "Why do archaeologists think Star Carr people wore heavy deer antlers—can you spot two possible reasons in the story?",
-        "answer": "Wearers may have used them as sneaky hunting disguises to creep close to wild deer, or worn them as special costumes while dancing around campfires."
+        "question": "Why might the people at Star Carr have tied heavy deer antlers onto their heads? Can you spot both ideas in the story?",
+        "answer": "Hunters might have worn them as disguises to creep close to wild deer, or people may have worn them while dancing in firelight at winter gatherings."
       },
       {
-        "question": "Why do modern fishing boats in the middle of the North Sea still pull up Stone Age flint tools and mammoth teeth?",
-        "answer": "Because the North Sea floor used to be dry grassy Doggerland where Stone Age families hunted before melting ice flooded it around 6500 BC."
+        "question": "Imagine living on grassy Doggerland as the sea crept closer and closer—what would your family miss most once Britain became an island?",
+        "answer": "Families would miss walking across the grassy plains to mainland Europe, spearing fat eels in winding rivers, netting wild ducks, and gathering autumn hazelnuts before the North Sea covered their hunting grounds."
       }
     ],
     "story_check": [
       {
-        "question": "Where in Britain did archaeologists dig up Britain's oldest wooden platform and twenty-one antler headdresses?",
+        "question": "Where in Britain did Middle Stone Age families lay Britain's oldest wooden platform and carve twenty-one red-deer antler masks?",
         "options": [
           "Star Carr in North Yorkshire",
           "Skara Brae on Orkney",
@@ -61,7 +61,7 @@
           "Great Orme in North Wales"
         ],
         "correctIndex": 0,
-        "feedback": "Spot on! Wet peat at Star Carr in North Yorkshire preserved birch platforms and twenty-one carved red-deer antler headdresses from around 9000 BC."
+        "feedback": "Spot on! Around 9000 BC, families at Star Carr in North Yorkshire laid birch platforms over the marshland and carved twenty-one red-deer skull masks."
       },
       {
         "question": "What was Doggerland before around 6500 BC?",
@@ -87,8 +87,8 @@
       }
     ],
     "monday_cold_call": {
-      "question": "What carved animal objects did archaeologists find at Star Carr, and what happened to Doggerland around 6500 BC?",
-      "answer": "Archaeologists found twenty-one carved red-deer antler headdresses with strap holes at Star Carr, and around 6500 BC melting ice flooded Doggerland to turn Britain into an island."
+      "question": "What did Middle Stone Age makers carve from red-deer skulls at Star Carr, and what happened to Doggerland around 6500 BC?",
+      "answer": "Makers at Star Carr scraped twenty-one red-deer skulls smooth and bored strap holes to wear as antler masks, and around 6500 BC melting ice sheets flooded Doggerland beneath the North Sea."
     },
     "hinge_question": "If Doggerland had never flooded around 6500 BC, how might Britain's history have been completely different?",
     "studio_audio": "/audio/reading/ks2_stone_to_iron_age/r0.mp3",
@@ -143,8 +143,8 @@
         "answer": "Because few trees grew on windy Orkney, villagers built their beds, dressers, and hearths out of flat coastal flagstones that could not rot."
       },
       {
-        "question": "How can we tell that Neolithic families at Skara Brae cared about comfort and pride in their homes, not just survival?",
-        "answer": "They stuffed stone box beds with soft heather and sheepskins, linked houses with dry roofed passages, and placed a stone dresser opposite every door to show off special treasures."
+        "question": "Would you have enjoyed staying the night in a Skara Brae stone house? What details in the story show these families cared about comfort and pride in their homes?",
+        "answer": "They made their homes cosy with warm peat hearths, soft heather and sheepskin bedding, earth mounds to block icy winds, indoor stone drains, and a proud stone dresser inside each door for special bowls and beads."
       }
     ],
     "story_check": [
@@ -231,16 +231,16 @@
     "extract": "Picture dragging a grey sarsen stone heavier than four big elephants without one wheel or crane! Around 2500 BC on frosty Salisbury Plain, hundreds of Stone Age builders pulled thick plant ropes together.\n\nLog rollers groaned under oak sledges hauling 25-tonne boulders twenty miles across green hills. Earlier teams had even moved eighty spotted bluestones 140 miles from the Preseli Hills in Wales! Patient masons pounded hard stone balls to shape neat pegs and sockets. Those joints locked giant three-stone trilithons high against the sky.\n\nWhere did all those hungry workers sleep at night? Two miles away at Durrington Walls, diggers found hundreds of warm chalk houses. Tests on animal teeth proved travellers drove fat pigs and cattle all the way from Scotland!\n\nOn the cold Midwinter solstice, crowds cheered as roast pork sizzled over bright fires. Right on cue, the setting winter sun glowed straight between Stonehenge's tallest stones!",
     "parent_discussion": [
       {
-        "question": "How did Neolithic builders move 25-tonne sarsen boulders and lock top stones safely in place without metal cranes or mortar?",
-        "answer": "Hundreds of people pulled oak sledges over log rollers with plant ropes, and masons pounded peg-and-socket joints into the stones to lock trilithons together."
+        "question": "How did Stone Age builders move 25-tonne sarsen boulders and lock the giant top stones safely in place without wheels or cranes?",
+        "answer": "Hundreds of people pulled oak sledges over log rollers with thick plant ropes, and patient masons pounded hard stone balls to shape pegs and sockets that locked the trilithons together."
       },
       {
-        "question": "What astonishing clue did scientists find inside animal teeth dug up at nearby Durrington Walls?",
-        "answer": "Chemical tests showed families drove pigs and cattle hundreds of miles—even from Scotland—to share huge midwinter feasts near Stonehenge."
+        "question": "What surprising clue did tests on animal teeth reveal at the nearby village of Durrington Walls?",
+        "answer": "The tests proved that travellers drove fat pigs and cattle all the way from Scotland to share midwinter feasts near Stonehenge."
       },
       {
-        "question": "Why would watching the Midwinter solstice sunset glow between the stones matter so deeply to early farming families?",
-        "answer": "Marking the shortest day proved winter had turned the corner and longer, warmer days for spring crops and lambs were finally returning."
+        "question": "Why do you think hundreds of people travelled all the way from Scotland and worked so hard together just to gather at Stonehenge on the shortest day of winter?",
+        "answer": "Working side by side to haul huge stones, feast on roast pork around bright fires, and watch the Midwinter solstice sun glow straight between the stones brought distant communities together to celebrate the turning of winter."
       }
     ],
     "story_check": [
@@ -256,7 +256,7 @@
         "feedback": "Correct! Spotted bluestones travelled 140 miles from the Preseli Hills in west Wales to Salisbury Plain."
       },
       {
-        "question": "Where did Stonehenge's builders sleep and share huge winter feasts of roast pork and beef?",
+        "question": "Where did Stonehenge's hungry builders sleep at night, two miles from the stones?",
         "options": [
           "Inside Gough's Cave in Somerset",
           "Two miles away at Durrington Walls village",
@@ -264,10 +264,10 @@
           "Behind Hadrian's Wall"
         ],
         "correctIndex": 1,
-        "feedback": "Spot on! Two miles away at Durrington Walls, archaeologists found chalk-floored houses and thousands of feast bones."
+        "feedback": "Spot on! Two miles away at Durrington Walls, diggers found hundreds of warm chalk houses where workers and feast travellers stayed."
       },
       {
-        "question": "What do historians call a giant three-stone archway of two upright boulders and one top lintel at Stonehenge?",
+        "question": "What is the name in the story for a giant three-stone archway made of two upright boulders topped by one flat lintel stone?",
         "options": [
           "A roundhouse",
           "A long barrow",
@@ -275,7 +275,7 @@
           "A trilithon"
         ],
         "correctIndex": 3,
-        "feedback": "Exactly right! 'Trilithon' means 'three stones'—two towering uprights locked beneath one horizontal lintel."
+        "feedback": "Exactly right! A trilithon is a giant three-stone archway locked together with carved pegs and sockets."
       }
     ],
     "monday_cold_call": {
@@ -327,16 +327,16 @@
     "extract": "In spring 2002, builders started work on a new school at Amesbury near Stonehenge. Diggers stepped in and found the richest Bronze Age grave ever uncovered in Britain!\n\nCurled inside an old timber tomb lay a strong man who died around 2300 BC. Years before, a bad fall had torn off his left kneecap. Every step he took must have hurt, yet friends honoured him like a king.\n\nAround his bones lay over a hundred rich gifts! Five clay beakers stamped with neat comb lines sat beside sixteen sharp flint arrowheads and stone wristguards. Brighter still shone Britain's earliest gold hair rings, a smooth cushion stone, and three flat copper knives!\n\nWhere had this skilled stranger come from? Scientists tested childhood water clues locked inside his hard tooth enamel. Those tests proved the Amesbury Archer grew up near the snowy Alps in central Europe! He had crossed the sea bringing bright new metal skills to Britain.",
     "parent_discussion": [
       {
-        "question": "Why did archaeologists nickname this 4,300-year-old man the 'Amesbury Archer', and what injury had he survived?",
-        "answer": "He was buried at Amesbury with sixteen flint arrowheads and stone archer's wristguards, and he had survived a bad injury that tore off his left kneecap."
+        "question": "What treasures in his grave explain why this man is called the 'Amesbury Archer', and what painful injury had he survived?",
+        "answer": "He was buried at Amesbury with sixteen sharp flint arrowheads and stone wristguards, and years earlier a bad fall had torn off his left kneecap."
       },
       {
-        "question": "Which special objects in his grave suggest he knew the new secret of working metal as well as shooting bows?",
-        "answer": "Beside his arrowheads lay a metalworker's cushion stone, two gold hair rings, and three gleaming copper knives."
+        "question": "Which gleaming objects in his grave show he knew exciting new metal skills as well as shooting bows?",
+        "answer": "Alongside his arrowheads lay Britain's earliest gold hair rings, a smooth cushion stone, and three flat copper knives."
       },
       {
-        "question": "How did testing his tooth enamel prove that early Bronze Age Britain was connected to distant parts of Europe?",
-        "answer": "Chemical traces from his childhood drinking water showed he grew up near the snowy Alps in central Europe before travelling across the sea to Britain."
+        "question": "Even though every step hurt because of his missing kneecap, friends honoured this newcomer from the Alps like a king—why do you think he was so special to them?",
+        "answer": "He had travelled all the way from central Europe across the sea bringing bright new metal skills, and his friends buried over a hundred treasures—including gold hair rings and copper knives—to show their respect."
       }
     ],
     "story_check": [
@@ -349,7 +349,7 @@
           "Twenty-one red-deer antler masks"
         ],
         "correctIndex": 1,
-        "feedback": "Spot on! Over a hundred items packed his grave—ten times more than most early Bronze Age burials."
+        "feedback": "Spot on! Over a hundred rich gifts packed his tomb—the richest Bronze Age grave ever uncovered in Britain."
       },
       {
         "question": "How did scientists discover where the Amesbury Archer grew up as a boy?",
@@ -376,7 +376,7 @@
     ],
     "monday_cold_call": {
       "question": "What did chemical tests on the Amesbury Archer's teeth prove, and what metal objects lay in his grave?",
-      "answer": "Tooth enamel tests proved he grew up near the snowy Alps in central Europe, and his grave held three copper knives and two gold hair rings."
+      "answer": "Tooth enamel tests proved he grew up near the snowy Alps in central Europe, and his grave held Britain's earliest gold hair rings and three flat copper knives."
     },
     "hinge_question": "Why do you think local people near Stonehenge honoured an injured newcomer from the Alps with Britain's richest Bronze Age burial?",
     "studio_audio": "/audio/reading/ks2_stone_to_iron_age/r3.mp3",
@@ -423,21 +423,21 @@
     "extract": "Around 900 BC in Cambridgeshire, Bronze Age families built five roundhouses on tall oak stilts above a slow river. Below their wooden floors, fishers dropped woven wicker traps to catch fat eels.\n\nLess than a year later, sudden fire struck the village! Bright flames raced across dry straw roofs while thick smoke filled the rafters. Every family scrambled out safely into boats, leaving dinner pots right on the fire. Seconds later, burning timbers splashed straight into the river.\n\nSoft, waterlogged river mud put out the flames at once and shut out all air. Nothing rotted away, freezing Must Farm in time like Britain's own Pompeii!\n\nWhen diggers peeled back that dark mud, everyday life lay waiting. Shiny bronze axes still sat inside smooth ash handles beside woven cloth and glass beads. Nearby rested Britain's oldest complete wooden wheel. Best of all, one scorched clay bowl still held wheat porridge with its wooden spoon inside!",
     "parent_discussion": [
       {
-        "question": "How do archaeologists know that the families at Must Farm escaped safely when fire swept across their stilt houses?",
-        "answer": "No human skeletons were trapped in the burned houses, even though families had to rush out so fast they left bronze axes, beads, and dinner bowls behind."
+        "question": "How did the families at Must Farm escape when fire suddenly swept across their stilt roundhouses?",
+        "answer": "Every family scrambled out safely into boats so quickly that they left their dinner pots right on the fire—and even a wooden spoon sitting inside a bowl of wheat porridge."
       },
       {
-        "question": "Why did wooden handles, woven cloth, and even porridge survive at Must Farm when they vanish on dry hills?",
-        "answer": "Burning roundhouses splashed straight into wet, airless river mud, which put out the flames and stopped wood, cloth, and food from rotting."
+        "question": "Why did wooden handles, woven cloth, and even a bowl of porridge survive at Must Farm for three thousand years without rotting?",
+        "answer": "The burning roundhouses splashed straight into soft, waterlogged river mud, which put out the flames and shut out all air so bacteria could not rot them."
       },
       {
-        "question": "What do Mediterranean glass beads and Britain's oldest wooden wheel prove about Bronze Age villagers?",
-        "answer": "They were skilled woodworkers connected to long overseas trade networks—not isolated or clumsy people."
+        "question": "If you had been one of the diggers peeling back the dark river mud at Must Farm, which everyday find—the bronze axes, glass beads, wooden wheel, or porridge bowl with its spoon—would have amazed you most, and why?",
+        "answer": "Seeing ordinary objects like a wooden spoon left inside wheat porridge, woven cloth, glass beads, and Britain's oldest complete wooden wheel makes the Bronze Age families feel real and surprisingly skilled."
       }
     ],
     "story_check": [
       {
-        "question": "Why do archaeologists call Must Farm in Cambridgeshire 'Britain's Pompeii'?",
+        "question": "Why is Must Farm in Cambridgeshire nicknamed 'Britain's Pompeii'?",
         "options": [
           "A volcano erupted in Cambridgeshire in 900 BC",
           "Roman emperors built marble villas on the river",
@@ -462,12 +462,12 @@
         "question": "Which record-breaking transport object from around 900 BC lay preserved in Must Farm's mud?",
         "options": [
           "An iron steam engine wheel",
-          "Britain's oldest complete wooden wheel made of ash planks",
+          "Britain's oldest complete wooden wheel",
           "A Viking oak dragon prow",
           "A Roman milestone"
         ],
         "correctIndex": 1,
-        "feedback": "Exactly right! Measuring one metre across, Must Farm's ash-plank wheel is the oldest complete wheel ever found in Britain."
+        "feedback": "Exactly right! Sealed safely in the wet river mud, Must Farm's wheel is the oldest complete wooden wheel ever found in Britain."
       }
     ],
     "monday_cold_call": {
@@ -527,8 +527,8 @@
         "answer": "Blue-painted warriors galloped wildly with thundering hooves and clattering wheels, hurled javelins, leaped off to fight on foot, and even ran along the chariot pole!"
       },
       {
-        "question": "Why should historians read Julius Caesar carefully rather than believing every single word a Roman invader wrote about Britons?",
-        "answer": "Caesar fought against the Britons and wanted readers back in Rome to admire how brave and wild his opponents were."
+        "question": "Caesar was an enemy Roman general—why do you think he sounded so amazed by the Britons' coins, mines, and daring chariot tricks?",
+        "answer": "Even as an enemy fighting against them, Caesar saw with his own eyes how organised, fearless, and well-practised the British warriors and their drivers really were."
       }
     ],
     "story_check": [
@@ -555,20 +555,20 @@
         "feedback": "Spot on! Caesar marvelled at warriors halting horses on steep slopes and balancing out along the chariot pole."
       },
       {
-        "question": "Why is Julius Caesar's journal from 55–54 BC such an important clue at the end of British prehistory?",
+        "question": "According to Julius Caesar's account, what did the Britons use for money?",
         "options": [
-          "It is our earliest eyewitness written account of Iron Age Britons, who did not write books themselves",
-          "It was written inside Skara Brae in 3100 BC",
-          "It lists every stone builder's name at Stonehenge",
-          "It was carved onto a deer skull at Star Carr"
+          "Bronze or gold coins, or iron bars weighed to an exact measure",
+          "Painted wooden beads and red-deer antlers",
+          "Paper notes printed in Rome",
+          "Bags of blue woad dye and hazelnuts"
         ],
         "correctIndex": 0,
-        "feedback": "Exactly right! Because Celtic Druids passed knowledge on by memory, Caesar's journal gives us our earliest eyewitness description."
+        "feedback": "Exactly right! Caesar wrote that the Britons used bronze or gold coins, as well as iron bars weighed to an exact measure."
       }
     ],
     "monday_cold_call": {
-      "question": "Who wrote our earliest eyewitness account of Iron Age British war-chariots in 55–54 BC, and what blue dye did warriors wear?",
-      "answer": "Roman general Julius Caesar wrote the eyewitness account, describing warriors dyed blue with woad leaping from fast war-chariots."
+      "question": "Which Roman general wrote down what he saw of British war-chariots in 55–54 BC, and what blue dye did warriors paint on their skin?",
+      "answer": "Roman general Julius Caesar wrote down what he saw, describing warriors dyed blue with woad who hurled javelins and leaped from fast war-chariots."
     },
     "hinge_question": "Does Julius Caesar's own eyewitness account prove Iron Age Britons were clumsy savages—or highly skilled warriors, miners, and coin-makers?",
     "studio_audio": "/audio/reading/ks2_stone_to_iron_age/r5.mp3",

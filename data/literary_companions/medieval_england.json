@@ -49,8 +49,8 @@
         "answer": "He pushed back his helmet to show his face alive; seeing English fighters chase his retreating wing gave him the idea to fake two cavalry retreats."
       },
       {
-        "question": "Why do historians compare William of Poitiers’s chronicle with Scene 55 of the Bayeux Tapestry when checking this story?",
-        "answer": "Both independent Norman sources show William tipping back his helmet to rally his men, corroborating that the panic really happened."
+        "question": "Why did lifting his iron helmet to show his bare face matter so much—and why was the feigned retreat trap so tempting for Harold’s men?",
+        "answer": "Showing his bare face proved instantly that the rumour of his death was false; later, seeing Normans appear to flee again tempted tired English fighters to break their shield-wall and chase them downhill into a cavalry trap."
       }
     ],
     "story_check": [
@@ -148,12 +148,12 @@
         "answer": "They questioned the sheriff, the village priest, the reeve, and six peasants from every village in public court under a sacred religious oath."
       },
       {
-        "question": "Why did the English monk writing the Anglo-Saxon Chronicle call it \"shameful\" that William counted every ox, cow, and pig?",
-        "answer": "Conquered English people felt humiliated that a foreign king recorded every farm animal down to the last pig so he could tax them heavily."
+        "question": "Why was the English monk writing the Anglo-Saxon Chronicle so angry that William counted every ox, cow, and pig?",
+        "answer": "Conquered English people felt outraged that a foreign king recorded every last farm animal so he could squeeze as much tax out of them as possible."
       },
       {
-        "question": "What does the Latin word vasta (\"wasteland\") across northern Domesday pages prove about the winter of 1069–1070?",
-        "answer": "It proves William’s scorched-earth Harrying of the North was so destructive that hundreds of Yorkshire villages still lay ruined and empty in 1086."
+        "question": "Sixteen years after the Harrying of the North, scribes still wrote the Latin word vasta (\"wasteland\") beside Yorkshire village after village. What does that single word tell us?",
+        "answer": "It shows that William’s burning of Yorkshire’s crops, barns, and cattle in 1069–1070 was so brutal that whole villages still lay ruined and empty sixteen years later."
       }
     ],
     "story_check": [
@@ -161,12 +161,12 @@
         "question": "Why did King William order the Domesday Survey at Christmas 1085?",
         "options": [
           "To give land back to Anglo-Saxon earls",
-          "To discover who held all land and wealth in England and how much tax and knight-service he could demand",
+          "To discover what his conquered kingdom was worth and how much tax he could squeeze from it",
           "To count how many churches Thomas Becket owned",
           "To prepare ships to invade Spain"
         ],
         "correctIndex": 1,
-        "feedback": "Domesday Book gave William total control over feudal landholding, taxes, and military service across England."
+        "feedback": "Spot on! Domesday Book told William exactly who held the land, what it was worth, and how much tax he could collect."
       },
       {
         "question": "According to the Anglo-Saxon Chronicle, what farm animals did William’s commissioners refuse to leave out?",
@@ -248,20 +248,20 @@
     "parent_discussion": [
       {
         "question": "Why did Archbishop Thomas Becket forbid the terrified monks to bolt the oak doors of Canterbury Cathedral?",
-        "answer": "He insisted a church is a house of prayer, not a castle fortress, believing sacred sanctuary should remain open."
+        "answer": "He insisted a church is a house of prayer, not a military fortress, believing God’s Church could shield its own even with unlocked doors."
       },
       {
-        "question": "What fierce argument between King Henry II and his former friend Becket led up to this violent clash?",
-        "answer": "They clashed over whether the King’s royal courts or the Church and Pope held supreme power over priests and bishops in England."
+        "question": "When the four knights burst in shouting \"traitor to the King,\" how did Becket answer them—and what did they demand he do?",
+        "answer": "He stepped out calmly saying he was \"no traitor to the King, but a priest of God,\" and stood firm when they demanded he lift the Church ban placed on the King’s bishops."
       },
       {
-        "question": "Why did killing Becket on sacred cathedral stones turn into a disaster for King Henry II?",
-        "answer": "Europe was outraged; Pope Alexander III swiftly made Becket a saint, and Henry II had to walk barefoot through Canterbury to be whipped in penance in 1174."
+        "question": "Why do you think the four knights tried to drag Becket outside before striking him, and what made the narrator’s own action so brave?",
+        "answer": "Cathedral ground was sacred sanctuary where bloodshed was forbidden; when the knights attacked anyway, the narrator wrapped his arms around Becket and blocked the first sword blow with his own arm!"
       }
     ],
     "story_check": [
       {
-        "question": "What happened to eyewitness clerk Edward Grim during the attack in Canterbury Cathedral?",
+        "question": "What happened to the narrator (the clerk standing beside Becket) during the attack in Canterbury Cathedral?",
         "options": [
           "He fled onto the cathedral roof",
           "His arm was deeply cut when he threw it forward to block the first sword blow",
@@ -269,34 +269,34 @@
           "He rode to London to warn King Henry II"
         ],
         "correctIndex": 1,
-        "feedback": "Grim stood bravely beside Becket and nearly had his arm severed trying to turn aside the first descending sword stroke."
+        "feedback": "Spot on! The eyewitness clerk wrapped his arms around Becket and threw his own arm forward to block the first sword blow."
       },
       {
         "question": "What had the four knights demanded Thomas Becket do immediately before attacking him?",
         "options": [
           "Hand over the Domesday Chest",
-          "Lift the excommunication ban he had placed on the King’s bishops",
+          "Lift the Church ban he had placed on the King’s bishops",
           "Pay scutage shield-money",
           "Crown Prince John as king"
         ],
         "correctIndex": 1,
-        "feedback": "Becket had excommunicated the bishops who crowned Henry II’s son without Canterbury’s permission, and he refused to back down."
+        "feedback": "Spot on! The knights demanded that Becket lift the Church ban (excommunication) placed upon the King’s bishops, yet Thomas stood firm."
       },
       {
-        "question": "How did King Henry II publicly show sorrow for Becket’s murder in 1174?",
+        "question": "Why did Thomas Becket stop the frightened monks from bolting the heavy oak cathedral doors?",
         "options": [
-          "He pulled down Canterbury Cathedral",
-          "He walked barefoot through Canterbury and let monks whip his back in penance",
-          "He gave Normandy to France",
-          "He abolished royal courts forever"
+          "The iron bars were rusted shut",
+          "He said it was not right to turn a house of prayer into a military fortress",
+          "He was expecting King Henry II to arrive for dinner",
+          "The monks had lost the cathedral keys"
         ],
         "correctIndex": 1,
-        "feedback": "To win back the Church’s support, Henry II walked barefoot to Becket’s tomb and accepted public penance."
+        "feedback": "Well remembered! Becket stopped them calmly upon the steps, saying, \"It is not right to turn the house of prayer into a military fortress.\""
       }
     ],
     "monday_cold_call": {
-      "question": "Why is Edward Grim such a vivid eyewitness for 29 December 1170, and why did Becket’s murder backfire on Henry II?",
-      "answer": "Grim stood beside Becket and had his own arm cut blocking the first sword blow; outraged Christendom revered Saint Thomas, forcing Henry II into barefoot penance."
+      "question": "Why was the narrator such a close eyewitness on 29 December 1170, and why did Becket refuse to bolt the cathedral doors?",
+      "answer": "He stood right beside Becket and had his own arm sliced blocking the first sword blow; Becket refused to bolt the doors because a house of prayer must not be turned into a military fortress."
     },
     "hinge_question": "<strong>Think:</strong> Why did Becket refuse to lock the cathedral doors?<br><br><strong>Pair:</strong> Look at the c. 1220 manuscript painting on the cover: spot Edward Grim holding the cross while the sword strikes.<br><br><strong>Share:</strong> Who won the struggle between Crown and Church after 1170: Henry II or Becket?",
     "questions": [
@@ -351,15 +351,15 @@
     "parent_discussion": [
       {
         "question": "Which dramatic event in May 1215 finally forced King John to meet the rebel barons at Runnymede?",
-        "answer": "Londoners threw open the city gates to the rebel \"Army of God,\" leaving John isolated without money or English knights."
+        "answer": "London citizens threw open the city gates to the rebel \"Army of God,\" and nearly all of John’s knights deserted him, leaving him trapped."
       },
       {
-        "question": "Look closely at the 1864 Victorian picture on the cover: what historical mistake did the Victorian artist make in showing King John with a quill pen?",
-        "answer": "King John did not sign Magna Carta with a pen—royal clerks authenticated medieval charters by pressing the heavy metal Great Seal into beeswax!"
+        "question": "How did royal clerks make Magna Carta official at Runnymede, and why was King John hiding his anger behind a tight smile?",
+        "answer": "Royal clerks pressed the heavy Great Seal into beeswax while armed barons watched; John was furious at being forced to bargain, and he soon asked the Pope to cancel the charter!"
       },
       {
-        "question": "Why wasn’t Magna Carta full democracy in 1215, and why did it still become world-famous?",
-        "answer": "Clause 39 only protected \"free men\" (ignoring unfree serfs), yet it proved in writing that no ruler is above the law or fair trial."
+        "question": "Why didn’t Clause 39 protect everyone in England in 1215—and why did Magna Carta still matter so much?",
+        "answer": "Clause 39 only protected \"free men\" and left out unfree peasant serfs, yet for the first time in writing it proved that even the king stood beneath the law."
       }
     ],
     "story_check": [
@@ -372,7 +372,7 @@
           "Canterbury"
         ],
         "correctIndex": 1,
-        "feedback": "Capturing London cut King John off from his main treasury and forced him to negotiate at nearby Runnymede."
+        "feedback": "Spot on! London citizens threw open the city gates to the rebel \"Army of God,\" leaving King John trapped."
       },
       {
         "question": "How was Magna Carta made official at Runnymede in June 1215?",
@@ -461,8 +461,8 @@
         "answer": "When Adam dug and Eve spun wool at Creation, no nobles existed—proving serfdom and class inequality were invented by greedy men, not God."
       },
       {
-        "question": "Why did the 1381 rebels carefully target and burn parchment manor rolls instead of looting at random?",
-        "answer": "Manor rolls held the legal proof of which families were unfree villeins; burning them erased serfdom on paper so peasants could demand free wages."
+        "question": "Why did Wat Tyler’s rebels deliberately burn the manor rolls instead of just smashing things at random?",
+        "answer": "The manor rolls held the written records proving which villagers were unfree serfs—burning them destroyed the proof of their serfdom as they demanded freedom!"
       }
     ],
     "story_check": [
@@ -486,18 +486,18 @@
           "It paid for aqueducts in London"
         ],
         "correctIndex": 1,
-        "feedback": "Charging a poor farm worker the exact same twelve pence (three groats) as a rich lord felt deeply unjust."
+        "feedback": "Spot on! Charging a poor villager the exact same twelve pence as a rich lord felt deeply unfair."
       },
       {
         "question": "Which legal documents did Wat Tyler’s rebels deliberately burn during the June 1381 rising?",
         "options": [
           "Copies of Magna Carta",
-          "Parchment manor rolls that recorded which families were unfree serfs",
+          "Manor rolls that recorded which families were unfree serfs",
           "Chaucer’s poetry books",
           "Canterbury Priory’s water maps"
         ],
         "correctIndex": 1,
-        "feedback": "Rebels burned manor court rolls to destroy the written legal proof of villeinage (serfdom)."
+        "feedback": "Spot on! Rebels burned the manor rolls to destroy the written records of their serfdom (villeinage)."
       }
     ],
     "monday_cold_call": {

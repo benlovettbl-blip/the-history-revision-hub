@@ -50,12 +50,12 @@
         "answer": "They stood on the rocks shouting warnings and raising spears, refusing to back down even after a warning musket blast."
       },
       {
-        "question": "Why couldn’t Polynesian navigator Tupaia—who had spoken easily with Māori people in New Zealand—understand the Gweagal men?",
-        "answer": "Māori and Tahitian belong to the Polynesian language family, whereas First Nations Australians spoke over 250 ancient languages across the continent."
+        "question": "What happened right after the British fired a warning musket shot between the two Gweagal men—and what does that tell you about their courage?",
+        "answer": "Even though they were outnumbered two against thirty or forty armed strangers, one man snatched his spears straight back up and threw a stone at the boat, only retreating after small shot hit his legs."
       },
       {
-        "question": "Spot the contradiction in Banks’s final paragraph: who had actually created those \"open woods and grassy parks\", and why was his \"uninhabited\" guess so harmful?",
-        "answer": "Aboriginal fire-stick farming had shaped those parklands for millennia; Banks’s false guess fed the myth of terra nullius and colonisation without treaties."
+        "question": "Compare Banks’s April journal with his August guess that the land was \"almost wholly uninhabited\"—how do his own earlier words prove that guess wrong?",
+        "answer": "In April, Banks himself recorded fishing canoes, beach huts, and two Gweagal men bravely defending their shore, yet his later guess helped support the false claim of terra nullius (\"nobody’s land\") to take Australia without treaties."
       }
     ],
     "story_check": [
@@ -90,7 +90,7 @@
           "That wheat would not grow anywhere"
         ],
         "correctIndex": 1,
-        "feedback": "Banks mistook Aboriginal fire-stick managed Country for empty nature, guessing the interior was almost uninhabited."
+        "feedback": "Even though he had seen canoes, huts, and Gweagal warriors in April, Banks wrongly guessed the vast interior was \"almost wholly uninhabited.\""
       }
     ],
     "monday_cold_call": {
@@ -149,16 +149,16 @@
     "extract": "Before dawn on 13 May 1787, heavy leg-irons clanked below the waterline in Portsmouth Harbour. Since losing its thirteen American colonies in 1783, Britain had nowhere to ship prisoners sentenced under its harsh \"Bloody Code.\" Thousands of men, women, and children—some jailed for stealing bread or a handkerchief—shivered aboard damp, disease-ridden warships known as prison hulks.\n\nThat May morning, Captain Arthur Phillip led eleven small wooden vessels out into the Channel. Packed below decks sailed more than 730 convicts bound for the far side of the earth. For eight gruelling months, the First Fleet pitched across fifteen thousand miles of ocean.\n\nWhen the ships reached Botany Bay in January 1788, Phillip saw straight away that Joseph Banks had been wrong. The bay was shallow, exposed to gales, and short of fresh water. Exploring just north into Port Jackson, Phillip found what he called \"the finest harbour in the world\"—a deep sheltered cove known to its Gadigal custodians as Warrane.\n\nOn 26 January 1788, marines raised the Union Jack at Sydney Cove. Survival, however, hung by a thread. Cheap axes from English contractors bent against giant red gum trees and hard sandstone, leaving jailers and convicts alike facing starvation on Gadigal Country.",
     "parent_discussion": [
       {
-        "question": "How did losing the American War of Independence in 1783 trigger the First Fleet sailing from Portsmouth in 1787?",
-        "answer": "Britain could no longer ship convicts to Virginia or Maryland, so Portsmouth and Thames prison hulks overflowed until London chose New South Wales instead."
+        "question": "How did losing the thirteen American colonies in 1783 lead to the First Fleet sailing from Portsmouth in May 1787?",
+        "answer": "Britain had nowhere left to ship prisoners sentenced under the \"Bloody Code,\" so thousands shivered aboard damp, disease-ridden prison hulks until Captain Arthur Phillip sailed eleven ships and over 730 convicts to the far side of the earth."
       },
       {
-        "question": "Why did Captain Arthur Phillip abandon Botany Bay within days of arriving in January 1788?",
-        "answer": "Botany Bay was too shallow, windy, and short of fresh water, whereas Port Jackson (Warrane) had deep safe anchorage and a freshwater stream."
+        "question": "Why did Captain Arthur Phillip abandon Botany Bay after arriving in January 1788?",
+        "answer": "Botany Bay was shallow, exposed to gales, and short of fresh water, so Phillip sailed north into Port Jackson to a deep, sheltered cove called Warrane by its Gadigal custodians."
       },
       {
-        "question": "Why did the new penal settlement nearly starve between 1788 and 1790?",
-        "answer": "Cheap axes broke on hard gum timber and sandstone, sandy soil ruined British wheat seed, and urban convicts lacked farming skills."
+        "question": "Raising the Union Jack at Sydney Cove sounded like a triumph, yet survival \"hung by a thread\"—why did both convicts and their jailers face such a desperate struggle?",
+        "answer": "After an eight-month voyage across fifteen thousand miles of ocean, cheap axes from English contractors bent against giant red gum trees and hard sandstone, leaving everyone facing starvation on Gadigal Country."
       }
     ],
     "story_check": [
@@ -171,7 +171,7 @@
           "Polynesian double-hulled canoes"
         ],
         "correctIndex": 1,
-        "feedback": "After 1776, Britain crammed thousands of convicts into damp, mastless old warships called prison hulks."
+        "feedback": "After losing its thirteen American colonies in 1783, Britain crammed thousands of convicts into rotting, mastless old warships called prison hulks."
       },
       {
         "question": "Why did Arthur Phillip move the First Fleet north from Botany Bay to Port Jackson (Warrane)?",
@@ -185,7 +185,7 @@
         "feedback": "Botany Bay lacked safe deep shelter and fresh water, whereas Warrane in Port Jackson offered both."
       },
       {
-        "question": "What happened when convicts swung their English-supplied axes and spades at Sydney Cove?",
+        "question": "What happened when people at Sydney Cove tried to clear land using axes supplied by English contractors?",
         "options": [
           "They cleared lush farmland in two weeks",
           "They struck underground silver veins",
@@ -193,7 +193,7 @@
           "Gadigal elders traded steel ploughs with them"
         ],
         "correctIndex": 2,
-        "feedback": "Phillip complained that contractors had supplied tools \"of the worst quality\" that bent against red gum timber and sandstone."
+        "feedback": "Cheap axes from English contractors bent against giant red gum trees and hard sandstone, leaving jailers and convicts facing starvation."
       }
     ],
     "monday_cold_call": {
@@ -252,16 +252,16 @@
     "extract": "Fifteen months after the First Fleet anchored at Sydney Cove, silent terror swept the harbour. In April 1789, a deadly wave of smallpox—called galgalla by the Eora—killed at least half the First Nations people around Port Jackson. Empty bark canoes drifted into quiet bays as elders and song-keepers died with no natural defence against the new sickness.\n\nAmid that grief, two Eora men chose opposite paths to save their clans. Wangal elder Woollarawarre Bennelong learned English, dined with Governor Phillip, and sailed to London in 1792 hoping talks would win respect. Bidjigal warrior Pemulwuy saw British fences swallowing yam beds and kangaroo plains, so he chose war.\n\nFrom 1790 onward, Pemulwuy led a bold twelve-year bush campaign along the Parramatta and Hawkesbury rivers. Knowing spears could not beat massed muskets in open lines, his men set fire to ripe cornfields and drove off settlers’ sheep.\n\nIn March 1797, during fierce fighting at Parramatta, seven buckshot pellets tore into Pemulwuy’s head and chest. Chained to a hospital bed under guard, the wounded leader waited for night. He slipped out into the bush wearing a heavy leg-iron on his ankle and fought on. Across Sydney, awed fighters believed no British bullet could kill Pemulwuy—until an ambush ended his life in 1802.",
     "parent_discussion": [
       {
-        "question": "How did the April 1789 smallpox outbreak (*galgalla*) devastate Eora society right before frontier farms expanded?",
-        "answer": "Because Eora clans had zero prior immunity to smallpox, at least half the Sydney population died, shattering families, elders, and defences."
+        "question": "How did the April 1789 smallpox outbreak (galgalla) devastate Eora society right before frontier farms expanded?",
+        "answer": "Because Eora clans had no natural defence against smallpox, at least half the people around Port Jackson died—including elders and song-keepers."
       },
       {
-        "question": "Compare Woollarawarre Bennelong and Pemulwuy: how were both men trying to defend Eora survival?",
-        "answer": "Bennelong used language and personal diplomacy with Governor Phillip, while Pemulwuy used economic guerrilla raids to stop farms destroying Eora food lands."
+        "question": "Compare Woollarawarre Bennelong and Pemulwuy: how did these two Eora leaders choose opposite paths to defend their clans?",
+        "answer": "Bennelong learned English, dined with Governor Phillip, and sailed to London hoping talks would win respect, while Pemulwuy fought a twelve-year bush war to stop British fences swallowing yam beds and kangaroo plains."
       },
       {
-        "question": "Why did Pemulwuy burn colonial maize fields instead of lining up in open pitched battles against redcoats?",
-        "answer": "Burning crops and seizing livestock starved expanding frontier farms without exposing spear-warriors to massed British musket volleys."
+        "question": "Why did Pemulwuy target ripe cornfields and settlers’ sheep instead of fighting British muskets in the open—and why did his 1797 escape make him a legend?",
+        "answer": "He knew spears could not beat massed muskets in open lines, so burning crops and driving off sheep struck at the expanding farms; surviving seven buckshot pellets and escaping hospital wearing a leg-iron convinced people no British bullet could kill him."
       }
     ],
     "story_check": [
@@ -296,12 +296,12 @@
           "He retired to Flinders Island"
         ],
         "correctIndex": 2,
-        "feedback": "Pemulwuy survived seven buckshot wounds and escaped Parramatta Hospital wearing a leg-iron, becoming a frontier legend."
+        "feedback": "Pemulwuy survived seven buckshot wounds and slipped out of hospital into the bush wearing a heavy leg-iron, becoming a legend across Sydney."
       }
     ],
     "monday_cold_call": {
-      "question": "Why did Pemulwuy become a legend across Sydney after the March 1797 Battle of Parramatta?",
-      "answer": "He survived seven buckshot pellets to his head and chest and escaped hospital chains wearing a leg-iron, convincing followers British muskets could not kill him."
+      "question": "Why did Pemulwuy become a legend across Sydney after the fierce fighting at Parramatta in March 1797?",
+      "answer": "He survived seven buckshot pellets to his head and chest and escaped hospital chains wearing a leg-iron, convincing followers British bullets could not kill him."
     },
     "hinge_question": "<strong>Think:</strong> What two methods did Bennelong and Pemulwuy use to respond to British colonisation?<br><br><strong>Pair:</strong> Why is Pemulwuy’s tactic called \"economic guerrilla warfare\"?<br><br><strong>Share:</strong> How does Pemulwuy’s twelve-year campaign overturn old schoolbook myths of \"peaceful settlement\"?",
     "questions": [
@@ -355,16 +355,16 @@
     "extract": "Across the nineteenth century, wealthy colonial \"squatters\" drove millions of Merino sheep inland to supply British wool mills. Bush ballads by poet Banjo Paterson painted those vast sheep runs as a romantic world of sunlit plains and free-spirited drovers:\n\n<div class=\"reading-stanza\"><em>Banjo Paterson, \"Clancy of the Overflow\" (1889):</em><br>In my wild erratic fancy visions come to me of Clancy<br>Gone a-droving \"down the Cooper\" where the western drovers go;<br>As the stock are slowly stringing, Clancy rides behind them singing,<br>For the drover’s life has pleasures that the townsfolk never know.<br>And the bush hath friends to meet him, and their kindly voices greet him<br>In the murmur of the breezes and the river on its bars,<br>And he sees the vision splendid of the sunlit plains extended,<br>And at night the wondrous glory of the everlasting stars.</div>\n\n<div class=\"reading-stanza\"><em>Banjo Paterson, \"Waltzing Matilda\" (1895):</em><br>Down came a jumbuck to drink at that billabong,<br>Up jumped the swagman and grabbed him with glee...<br>Up rode the squatter, mounted on his thoroughbred,<br>Down came the troopers, one, two, three.</div>\n\nYet notice who vanishes from those famous bush verses. Every \"sunlit plain\" and billabong was stolen Aboriginal Country. Squatters’ sheep triggered Tasmania’s brutal Black War—survived by Nuennonne diplomat Truganini—and mainland massacres like Myall Creek in 1838.",
     "parent_discussion": [
       {
-        "question": "How does Banjo Paterson make outback pastoral life sound romantic in \"Clancy of the Overflow\"?",
-        "answer": "He contrasts dusty city offices with singing cattle drovers, friendly breezes, sunlit plains, and everlasting stars."
+        "question": "How does Banjo Paterson make the drover’s life sound so free and joyful in \"Clancy of the Overflow\"?",
+        "answer": "He pictures Clancy riding and singing behind his livestock with pleasures \"townsfolk never know,\" surrounded by friendly breezes, sunlit plains, and everlasting stars."
       },
       {
         "question": "Who holds power in the bush according to \"Waltzing Matilda\", and what drove squatters so deep inland?",
-        "answer": "The wealthy squatter on his thoroughbred backed by mounted police troopers—enriched by Yorkshire textile mills’ hunger for Merino wool."
+        "answer": "The wealthy squatter mounted on his thoroughbred backed by three troopers holds the power, and squatters pushed inland with millions of Merino sheep to supply British wool mills."
       },
       {
-        "question": "Why did anthropologist W. E. H. Stanner call traditional settler storytelling the \"Great Australian Silence\"?",
-        "answer": "Settler poems and older histories celebrated peaceful bush pioneers while erasing frontier wars, Tasmania’s Black Line, Wybalenna exile, and massacres like Myall Creek."
+        "question": "Look at the contrast between Banjo Paterson’s sunlit verses and the final paragraph—who vanishes from these famous bush poems, and why does that matter?",
+        "answer": "First Nations peoples disappear from the poems even though every \"sunlit plain\" and billabong was stolen Aboriginal Country—hiding Tasmania’s brutal Black War, Truganini’s exile, and mainland massacres like Myall Creek in 1838."
       }
     ],
     "story_check": [
@@ -377,7 +377,7 @@
           "Commanding HMS Endeavour"
         ],
         "correctIndex": 0,
-        "feedback": "Clancy is a drover herding sheep and cattle across vast western plains."
+        "feedback": "Clancy is a drover herding livestock across vast western plains."
       },
       {
         "question": "In \"Waltzing Matilda\", who rides up alongside three police troopers to confront the swagman by the billabong?",
@@ -395,7 +395,7 @@
         "options": [
           "The building of city tramways",
           "Violent dispossession of First Nations peoples in Tasmania’s Black War and Myall Creek",
-          "The price of wool in Yorkshire",
+          "The price of wool in Britain",
           "Starlight over the outback"
         ],
         "correctIndex": 1,
@@ -458,16 +458,16 @@
     "extract": "Italian-born prospector Raffaello Carboni dug for gold at Ballarat in Victoria. In 1855, he published his eyewitness book about armed police \"licence hunts\" and the rebel oath sworn beneath the Southern Cross flag.\n\n\"Whether a digger struck rich gold in wet clay or worked an empty hole for weeks, the Commissioners showed no mercy. Twice a week, mounted troopers rode in with drawn swords shouting, ’Traps! Show your licences!’ Any miner caught without his thirty-shilling monthly paper was chained to a gum tree at the camp. It was taxation at the point of a bayonet upon men denied a single vote!\n\n\"On 29 November 1854, twelve thousand diggers of twenty nations met on Bakery Hill. As the blue-and-white Southern Cross flag unfurled overhead, we burned our hated licences on bonfires. Next afternoon, Peter Lalor knelt bareheaded beneath that flag, raised his right hand, and led five hundred diggers in a solemn oath.\n\n\"’We swear by the Southern Cross to stand truly by each other, and fight to defend our rights and liberties!’\n\n\"At dawn on Sunday 3 December, three hundred soldiers and police stormed our timber stockade, killing at least twenty-two diggers. Thirteen of us were dragged to Melbourne for High Treason trials. Yet citizen juries cheered and freed every single prisoner—winning white male votes and the secret ballot within eighteen months.\"",
     "parent_discussion": [
       {
-        "question": "Why did Ballarat gold diggers compare their treatment in 1854 to unfair taxation without representation?",
-        "answer": "Every miner had to pay 30 shillings a month whether they found gold or not, faced armed police raids, and had zero right to vote."
+        "question": "Why did Raffaello Carboni call the Victorian Gold Licence \"taxation at the point of a bayonet\"?",
+        "answer": "Every digger had to pay thirty shillings a month whether they found gold or worked an empty hole, faced twice-weekly raids by troopers with drawn swords, and had zero right to vote."
       },
       {
-        "question": "How did the Eureka rebels lose the twenty-minute dawn battle yet win the political struggle within eighteen months?",
-        "answer": "Melbourne juries refused to convict Carboni and his twelve co-defendants, forcing Victoria to scrap the Gold Licence and grant white male suffrage and the secret ballot."
+        "question": "How did the Eureka diggers lose the dawn battle on 3 December 1854 yet still win a major political victory within eighteen months?",
+        "answer": "Although troops stormed the stockade and killed at least twenty-two diggers, Melbourne citizen juries cheered and freed all thirteen prisoners tried for High Treason—helping win white male votes and the secret ballot."
       },
       {
-        "question": "Who was excluded when the six colonies united as the Commonwealth of Australia in 1901?",
-        "answer": "The 1901 \"White Australia\" Dictation Test barred Chinese and Pacific migrants, while First Nations Australians were shut out of federal citizenship rights for decades."
+        "question": "Carboni noted that twelve thousand diggers of \"twenty nations\" stood together on Bakery Hill, yet the reforms won \"white male votes\"—what does that show about both the strength and the limits of Eureka’s victory?",
+        "answer": "Miners from around the world united against unfair armed raids to win the secret ballot, yet voting rights were still limited to white men—leaving women and non-white people shut out."
       }
     ],
     "story_check": [
@@ -502,12 +502,12 @@
           "The Gold Licence fee was doubled"
         ],
         "correctIndex": 1,
-        "feedback": "Sympathetic Melbourne juries freed all thirteen prisoners, prompting abolition of the licence, male suffrage, and the 1856 secret ballot."
+        "feedback": "Sympathetic Melbourne citizen juries cheered and freed all thirteen prisoners, helping win white male votes and Australia’s 1856 secret ballot."
       }
     ],
     "monday_cold_call": {
-      "question": "Why do historians say the Eureka Stockade miners lost the dawn battle on 3 December 1854 but won the political war?",
-      "answer": "Although troops stormed the stockade in twenty minutes, Melbourne juries acquitted all thirteen treason defendants, forcing Victoria to abolish the Gold Licence and introduce male votes and the secret ballot."
+      "question": "How did the Eureka Stockade miners lose the dawn battle on 3 December 1854 yet win the political struggle?",
+      "answer": "Although three hundred soldiers and police stormed the stockade and killed at least twenty-two diggers, Melbourne citizen juries freed all thirteen treason prisoners, leading to white male votes and the secret ballot within eighteen months."
     },
     "hinge_question": "<strong>Think:</strong> Quote the one-sentence oath sworn beneath the Southern Cross flag.<br><br><strong>Pair:</strong> Contrast how European miners won voting rights after 1854 with how Chinese miners and Aboriginal Australians were treated up to 1901.<br><br><strong>Share:</strong> Why is the 1856 \"Australian ballot\" famous across democracies worldwide today?",
     "questions": [

@@ -230,6 +230,48 @@ function auditUnit(unitId, errors, summaryTable) {
       });
     }
 
+    // Kitchen-Table Extract-Grounding Gate:
+    // Parents and pupils must be able to answer every parent_discussion and story_check item purely
+    // from the read-aloud extract + vocabVault (zero unmentioned Scene/Chapter refs, unmentioned 4-digit
+    // years, cover-picture quizzes, or intimidating "Why do historians..." stems).
+    const storyCorpusLow = (
+      String(item.extract || '').replace(/<[^>]+>/g, ' ') +
+      ' ' +
+      vocab.map((v) => `${v.term || ''} ${v.def || ''}`).join(' ')
+    )
+      .replace(/\s+/g, ' ')
+      .toLowerCase();
+
+    const BANNED_PARENT_STEM_RX =
+      /\b(?:why do historians|how do historians|what do historians|why do archaeologists|how do archaeologists|what do archaeologists|historiograph\w*|corroborat\w*|security dilemma|look closely at the [^?]*cover|on the cover)\b/i;
+
+    const checkKitchenTableText = (label, txt) => {
+      const s = String(txt || '');
+      const banned = s.match(BANNED_PARENT_STEM_RX);
+      if (banned && !storyCorpusLow.includes(banned[0].toLowerCase())) {
+        errors.push(`${tag} ${label} uses intimidating/external framing not in extract: "${banned[0]}"`);
+      }
+      const refs = [
+        ...s.matchAll(/\b(?:Scene|Chapter|Folio|Clause|Article|Panel)\s+\d+|\b(1\d{3}|20\d{2})\b/gi),
+      ];
+      for (const m of refs) {
+        if (!storyCorpusLow.includes(m[0].toLowerCase())) {
+          errors.push(`${tag} ${label} references "${m[0]}" which does NOT appear in the read-aloud extract`);
+        }
+      }
+    };
+
+    pDisc.forEach((pd, qi) => {
+      checkKitchenTableText(`parent_discussion[${qi}].question`, pd.question);
+      checkKitchenTableText(`parent_discussion[${qi}].answer`, pd.answer);
+    });
+    sCheck.forEach((sc, qi) => {
+      checkKitchenTableText(`story_check[${qi}].question`, sc.question);
+      if (Array.isArray(sc.options) && typeof sc.correctIndex === 'number') {
+        checkKitchenTableText(`story_check[${qi}].correctOption`, sc.options[sc.correctIndex]);
+      }
+    });
+
     if (!item.monday_cold_call || !item.monday_cold_call.question || !item.monday_cold_call.answer) {
       errors.push(`${tag} Missing monday_cold_call { question, answer }`);
     }

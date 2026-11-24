@@ -1297,7 +1297,16 @@ export function renderArchivalSourceBody(text, source = {}, options = {}) {
   const fontStyle = isSummaryText ? 'normal' : 'italic';
   const bgStyle = isSummaryText ? '#f8fafc' : '#fffdfa';
 
-  return `${textTypeBadgeHtml}<div class="archival-source-body${isSummaryText ? ' is-summary-position' : ''}" style="width: 100%; box-sizing: border-box; ${maxHeightStyle} font-family: ${fontFamily}; font-style: ${fontStyle}; font-size: ${fontSize}; line-height: ${lineHeight}; color: #1e293b; background: ${bgStyle}; padding: ${padding}; border-left: 4px solid ${borderColor}; border-radius: 4px; margin-bottom: ${marginBottom}; white-space: pre-line;">${clean}</div>`;
+  // Channel 2 ONLY (Vocabulary Lens hover/tap underlines — zero bolding, zero dossier pills)
+  // so pupils reading archaic or formal primary sources get plain-English word support without altering authenticity.
+  const activeVocabDict =
+    options.vocabDict || (typeof window !== 'undefined' ? window.__HH_ACTIVE_VOCAB_DICT__ : null);
+  const annotatedClean =
+    activeVocabDict && Object.keys(activeVocabDict).length > 0
+      ? highlightGlossaryInProse(clean, activeVocabDict, { maxPerBlock: 3 })
+      : clean;
+
+  return `${textTypeBadgeHtml}<div class="archival-source-body${isSummaryText ? ' is-summary-position' : ''}" style="width: 100%; box-sizing: border-box; ${maxHeightStyle} font-family: ${fontFamily}; font-style: ${fontStyle}; font-size: ${fontSize}; line-height: ${lineHeight}; color: #1e293b; background: ${bgStyle}; padding: ${padding}; border-left: 4px solid ${borderColor}; border-radius: 4px; margin-bottom: ${marginBottom}; white-space: pre-line;">${annotatedClean}</div>`;
 }
 
 export function toggleThinkDiscuss(btn, targetId) {

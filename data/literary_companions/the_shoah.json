@@ -46,16 +46,16 @@
     "extract": "In 1933, roughly nine and a half million Jewish men, women, and children lived across Europe. Over three million lived in Poland alone, with millions more across the Soviet Union, Romania, Hungary, Germany, France, Greece, and Britain. As the surviving YIVO youth notebooks from Vilna reveal, there was no single uniform 'Jewish life.' One sixteen-year-old Polish girl wrote in 1934 of rushing from Hebrew lessons to her cycling club and dreaming of university. Across the continent stretched a vivid mosaic of languages, faiths, trades, and modern political dreams.\n\nIn Berlin, Vienna, and Prague, most Jewish families were deeply integrated citizens. They spoke German or Czech at home, worked in law, science, shops, and music, and proudly kept fathers' First World War medals. In Germany in 1933, around 525,000 Jews made up less than one percent of the nation. Further east, in Warsaw and Vilna, busy streets hummed with Yiddish newspapers, secular schools, socialist trade unions, theatres, and ancient study halls. Down by the Aegean Sea in Salonica, Ladino-speaking Sephardic dockworkers loaded ships along the waterfront.\n\nYet two forms of hatred threatened these communities. For centuries, Christian anti-Judaism had targeted Jews for their religion, though conversion could end it. Then, in 1879, German agitator Wilhelm Marr coined the political word 'antisemitism.' This false racial theory claimed Jewish identity was fixed forever in human blood.",
     "parent_discussion": [
       {
-        "question": "Roughly what percentage of Germany’s population was Jewish in January 1933, and how does that single fact expose Nazi propaganda?",
-        "answer": "Less than one percent (around 525,000 out of 65 million people)—proving Nazi claims that German Jews 'controlled' the country or caused its 1918 defeat were complete lies."
+        "question": "Roughly how many Jewish people lived across Europe in 1933—and how small a share of Germany’s population were Germany’s 525,000 Jews?",
+        "answer": "Roughly nine and a half million Jewish men, women, and children lived across Europe (over three million in Poland alone), while Germany’s 525,000 Jews made up less than one percent of the nation."
       },
       {
-        "question": "How did daily Jewish life in Berlin often look different from Jewish life in Warsaw, Vilna, or Salonica in the 1930s?",
-        "answer": "German Jews were mostly German-speaking, urban, and assimilated WWI veterans and professionals; Poland had over three million Jews with thriving Yiddish press, schools, and unions; Salonica had a Ladino-speaking Sephardic port community."
+        "question": "How did everyday Jewish life look different across Berlin, Warsaw and Vilna, and the waterfront of Salonica in the 1930s?",
+        "answer": "In Berlin, Vienna, and Prague, most Jewish families were deeply integrated citizens who spoke German or Czech and kept fathers’ First World War medals; Warsaw and Vilna hummed with Yiddish newspapers, schools, and theatres; and Salonica had Ladino-speaking Sephardic dockworkers."
       },
       {
-        "question": "Why was the 19th-century shift from religious prejudice to 'racial' antisemitism so dangerous once the Nazis took state power?",
-        "answer": "Because Nazi lawmakers claimed Jewishness was fixed in biological 'blood' across generations, neither Christian baptism, German patriotism, nor war medals offered any protection."
+        "question": "At the end of the reading, centuries-old religious hatred shifts in 1879 to Wilhelm Marr’s false 'racial antisemitism.' Why was claiming identity is fixed forever in blood even more dangerous than religious prejudice?",
+        "answer": "Under earlier Christian anti-Judaism, conversion could end the hostility; once racial antisemitism falsely claimed Jewishness was fixed forever in human blood, people had no escape regardless of their beliefs, language, or loyalty to their country."
       }
     ],
     "story_check": [
@@ -71,18 +71,18 @@
         "feedback": "Roughly 9.5 million Jews lived across Europe in 1933, with Poland home to over three million—the largest community in Europe."
       },
       {
-        "question": "What did the YIVO Institute in Vilna invite Jewish teenagers to write during the 1930s?",
+        "question": "What do the surviving YIVO youth notebooks from Vilna—such as the 1934 notebook of a sixteen-year-old Polish girl—reveal about pre-war Jewish teenagers?",
         "options": [
           "Military training manuals for the Polish army",
-          "Translations of medieval Latin church laws",
-          "Honest autobiographies about their daily lives, clubs, and hopes",
+          "Translations of ancient Latin church laws",
+          "Their real everyday lives, clubs, lessons, and dreams of university",
           "Government tax registers for Berlin"
         ],
         "correctIndex": 2,
-        "feedback": "YIVO ran youth autobiography competitions in 1932, 1934, and 1939 to record the real everyday lives and dreams of young people."
+        "feedback": "The YIVO youth notebooks show there was no single uniform 'Jewish life'—including a sixteen-year-old Polish girl rushing from Hebrew lessons to her cycling club and dreaming of university."
       },
       {
-        "question": "How did post-1879 'racial antisemitism' differ from medieval religious anti-Judaism?",
+        "question": "How did post-1879 'racial antisemitism' differ from earlier Christian anti-Judaism?",
         "options": [
           "It falsely claimed Jews were a fixed biological 'race' by blood",
           "It applied only to people who spoke Ladino in Greece",
@@ -94,8 +94,8 @@
       }
     ],
     "monday_cold_call": {
-      "question": "Why do historians begin studying the Shoah with 1930s YIVO youth diaries and pre-war life across Poland and Germany rather than starting in 1942?",
-      "answer": "So we understand Europe’s 9.5 million Jews as diverse, living communities with rich cultures and personal dreams—not merely through the lens of their killers—and see that German Jews were less than 1% of Germany’s population."
+      "question": "What do the YIVO youth notebooks and glimpses of Berlin, Warsaw, and Salonica show about Europe’s 9.5 million Jews in 1933—and what new hatred threatened them from 1879 onward?",
+      "answer": "They show a rich mosaic of languages, faiths, trades, and dreams across Europe—with German Jews making up less than one percent of Germany—threatened by racial antisemitism, which falsely claimed Jewish identity was fixed forever in blood."
     },
     "hinge_question": "<strong>Think:</strong> Which European country had the largest Jewish population (over 3 million) before the Second World War?<br><br><strong>Pair:</strong> Explain in one clear sentence the crucial difference between medieval religious anti-Judaism and post-1879 racial antisemitism.<br><br><strong>Share:</strong> Why must every study of the Shoah begin with pre-war life rather than starting in 1939 or 1942?",
     "questions": [
@@ -154,51 +154,51 @@
     "extract": "\"17 September 1935 [after the Nuremberg Laws]: The laws passed at Nuremberg make everything brutally official. Our citizenship is stripped away overnight. One is no longer a full citizen of Germany, merely a state subject judged by blood. Neither my Iron Cross from the front in 1915 nor twenty years of teaching German literature count for anything. Everything hangs on a chart of four grandparents.\n\n16 August 1938: Every month the noose tightens quietly through a new paragraph in the law gazette. First they took my university chair, and then they barred me from reading in the state library. Now we are forbidden to own a typewriter or drive our little car. From New Year's Day, every Jewish man must add the forced middle name 'Israel' to his papers, and every woman must sign 'Sara.' One walks like a ghost inside one's own city. When an old colleague crosses the street, you wonder whether he dares nod hello, while Eva risks everything to hide these loose pages.\n\n11 November 1938 [after Kristallnacht]: Yesterday across Dresden and every town in the Reich, synagogues burned in broad daylight. Fire brigades stood watching and watered only the roofs next door. Hundreds of Jewish men have been dragged off to Buchenwald camp to terrify families into signing away their homes and savings. Yet when desperate people queue outside foreign consulates for a visa, almost every door in the world stays shut.\"",
     "parent_discussion": [
       {
-        "question": "Why didn’t Victor Klemperer’s First World War medal or Christian baptism protect him under the September 1935 Nuremberg Laws?",
-        "answer": "The Nuremberg Laws defined Jewish identity solely by ancestry (having three or four Jewish grandparents), ignoring personal faith, war service, or German patriotism."
+        "question": "Why did Victor Klemperer’s 1915 Iron Cross and twenty years of teaching German literature fail to protect him under the September 1935 Nuremberg Laws?",
+        "answer": "The Nuremberg Laws stripped German Jews of citizenship overnight and judged people strictly by blood—everything hung on a chart of four grandparents, ignoring war service or teaching."
       },
       {
-        "question": "What detail in Klemperer’s 11 November 1938 entry proves Kristallnacht was an organised state pogrom rather than 'spontaneous street anger'?",
-        "answer": "Synagogues burned simultaneously across Germany while fire brigades obeyed strict orders only to protect neighbouring non-Jewish roofs, and police arrested 30,000 Jewish victims instead of the attackers."
+        "question": "In Klemperer’s 11 November 1938 diary entry, how did fire brigades behave while synagogues burned across Dresden and every town in the Reich?",
+        "answer": "Fire brigades stood watching synagogues burn in broad daylight and watered only the roofs next door, while hundreds of Jewish men were dragged off to Buchenwald camp to terrify families into signing away their homes and savings."
       },
       {
-        "question": "Why was escaping Germany in 1938–1939 so difficult even when Jewish families desperately tried to leave?",
-        "answer": "Nazi 'Flight Taxes' stripped refugees of nearly all their savings, while Western nations at the July 1938 Évian Conference kept strict immigration quotas closed."
+        "question": "In August 1938, Klemperer writes, 'One walks like a ghost inside one’s own city,' as old colleagues hesitate to nod hello and foreign consulates keep doors shut. Why did quiet everyday laws and silence from neighbours hurt so deeply—and why was Eva’s choice to hide his pages so brave?",
+        "answer": "Month-by-month decrees taking away jobs, libraries, cars, and even names ('Israel' and 'Sara') isolated people long before open street violence, and Eva risked everything to hide Klemperer’s truthful record while almost every door abroad stayed shut."
       }
     ],
     "story_check": [
       {
-        "question": "Why did Victor Klemperer think at first that he might be respected as a loyal German citizen?",
+        "question": "Why did Victor Klemperer feel it was so shocking to be stripped of German citizenship overnight in September 1935?",
         "options": [
-          "He was a decorated WWI veteran, Protestant convert, and university professor",
+          "He had won an Iron Cross at the front in 1915 and taught German literature for twenty years",
           "He held a diplomatic passport from neutral Switzerland",
           "He worked as a foreign correspondent for a London newspaper",
           "He had moved to Dresden only after 1935"
         ],
         "correctIndex": 0,
-        "feedback": "Klemperer had won a WWI medal in the Bavarian army, converted to Protestantism, and taught German literature—none of which mattered under Nazi racial laws."
+        "feedback": "Klemperer had won an Iron Cross at the front in 1915 and taught German literature for twenty years—none of which counted once citizenship hung on a chart of four grandparents."
       },
       {
-        "question": "How did fire brigades behave during the Kristallnacht pogrom of 9–10 November 1938?",
+        "question": "How did fire brigades behave while synagogues burned in Klemperer’s 11 November 1938 diary entry?",
         "options": [
           "They extinguished every synagogue fire within minutes",
           "They stood by while synagogues burned, watering only neighbouring roofs",
-          "They arrested SA stormtroopers for smashing shop windows",
+          "They arrested the attackers who smashed shop windows",
           "They refused to leave their fire stations anywhere in Dresden"
         ],
         "correctIndex": 1,
-        "feedback": "Municipal fire brigades followed state orders to let synagogues burn to the ground while protecting non-Jewish property next door."
+        "feedback": "Across Dresden and every town in the Reich, fire brigades stood watching synagogues burn in broad daylight and watered only the roofs next door."
       },
       {
-        "question": "Who risked Gestapo arrest to smuggle and hide Victor Klemperer’s secret diary pages?",
+        "question": "Who risked everything to hide Victor Klemperer’s loose diary pages while he walked 'like a ghost' inside Dresden?",
         "options": [
-          "The rector of Dresden Technical University",
-          "American diplomats visiting Berlin",
+          "The head of the Dresden state library",
+          "Foreign consulate staff issuing visas",
           "A neighbour in the Dresden fire brigade",
-          "His non-Jewish wife, Eva Klemperer"
+          "Eva, who hid his loose pages"
         ],
         "correctIndex": 3,
-        "feedback": "Eva Klemperer refused Nazi pressure to divorce her husband and hid his handwritten diary sheets so he could bear witness."
+        "feedback": "As laws tightened the noose every month in 1938, Eva risked everything to hide Klemperer’s loose diary pages."
       }
     ],
     "monday_cold_call": {
@@ -262,16 +262,16 @@
     "extract": "From Dr Emanuel Ringelblum’s secret Warsaw Ghetto notes (1941–1942). \"Behind the ten-foot brick wall, hunger and typhus stalk every dark courtyard. Yet our people refuse to surrender their human spirit. Neighbours run soup kitchens to ladle warm broth for the poorest families. In hidden attic rooms, teachers hold banned history and literature classes for children. At dawn, brave six-year-old smugglers squeeze through drain holes beneath the wall to drag sacks of potatoes back to starving mothers. Too often, German guards shoot them at the gate.\n\nIn our secret Oyneg Shabes circle, every writer works toward one sacred goal. We must record our lives and suffering from every angle—not through German propaganda cameras, but in our own honest voices. Future historians must be able to judge truth from lies.\"\n\nOn 3 August 1942, mass deportations to Treblinka raged along the streets above. Down in a school cellar at Nowolipki 68, nineteen-year-old David Graber packed diaries, sweet wrappers, and children's drawings into metal boxes and milk cans. Before shovelling damp earth over the cache, he slipped his own final testament inside. \"What we were unable to cry and shriek out to the world, we buried in the ground. I would love to see the moment in which the great treasure will be dug up and scream the truth to the world. May the treasure fall into good hands, and may it last into better times. We may now die in peace. We fulfilled our mission.\"",
     "parent_discussion": [
       {
-        "question": "How did Nazi authorities use space and food as weapons inside the sealed Warsaw Ghetto between 1940 and 1942?",
-        "answer": "They crammed over 400,000 people into just 2.4% of Warsaw’s land (seven to nine people per room) on a ration of 184 calories a day, deliberately causing tens of thousands of deaths from hunger and typhus."
+        "question": "Behind the ten-foot brick wall of the Warsaw Ghetto, how did ordinary people refuse to surrender their human spirit despite hunger and typhus?",
+        "answer": "Neighbours ran soup kitchens to ladle warm broth, teachers held banned history and literature classes in hidden attic rooms, and brave six-year-old smugglers squeezed through drain holes beneath the wall to drag sacks of potatoes back to starving mothers."
       },
       {
-        "question": "Why do historians recognise attic classrooms, soup kitchens, child smugglers, and burying the Oyneg Shabes milk cans as true resistance (Amidah)?",
-        "answer": "Because the Nazis aimed to strip victims of humanity and erase their memory; keeping children learning, feeding neighbours, and saving 35,000 pages of truth defeated the killers' attempt to silence them."
+        "question": "Why was Dr Emanuel Ringelblum’s secret Oyneg Shabes circle so determined to record life 'in our own honest voices' rather than through German propaganda cameras—and what items did David Graber pack underground?",
+        "answer": "They wanted future generations to judge truth from lies through victims’ own honest voices, so nineteen-year-old David Graber sealed diaries, sweet wrappers, and children’s drawings inside metal boxes and milk cans beneath a school cellar."
       },
       {
-        "question": "Read nineteen-year-old David Graber’s buried words from 3 August 1942: did his hope come true after the war?",
-        "answer": "Yes—though Graber and Ringelblum were murdered, three surviving members guided searchers through Warsaw’s rubble in 1946 and 1950 to dig up ten tin boxes and two aluminium milk cans."
+        "question": "On 3 August 1942, as mass deportations to Treblinka raged outside, nineteen-year-old David Graber wrote, 'We may now die in peace. We fulfilled our mission.' Why could burying boxes of diaries and children’s drawings in damp earth feel like such a vital form of resistance?",
+        "answer": "When people are trapped behind walls and silenced, preserving honest proof of their everyday lives, kindness, and suffering ensures the truth can one day be dug up and heard by the world."
       }
     ],
     "story_check": [
@@ -295,18 +295,18 @@
           "Sixty-five years old"
         ],
         "correctIndex": 2,
-        "feedback": "David Graber was just nineteen years old when he sealed his handwritten testament inside the buried cache during the Great Deportation to Treblinka."
+        "feedback": "David Graber was just nineteen years old when he sealed his final testament inside the buried cache as mass deportations to Treblinka raged along the streets above."
       },
       {
-        "question": "In what everyday containers were thousands of Oyneg Shabes pages preserved underground?",
+        "question": "In what everyday containers did David Graber pack diaries, sweet wrappers, and children’s drawings underground?",
         "options": [
           "Wooden violin cases and leather suitcases",
-          "Ten metal tin boxes and two aluminium milk cans",
+          "Metal boxes and milk cans buried beneath a school cellar",
           "Glass apothecary jars sealed with wax",
           "Iron church bells hidden in the river"
         ],
         "correctIndex": 1,
-        "feedback": "Ten tin boxes and two metal milk cans were unearthed beneath Warsaw’s ruins in September 1946 and December 1950."
+        "feedback": "David Graber packed the archive into metal boxes and milk cans in a school cellar at Nowolipki 68, later dug up from Warsaw’s ruins in 1946 and 1950."
       }
     ],
     "monday_cold_call": {
@@ -365,16 +365,16 @@
     "extract": "In November 1945, German railway engineer Hermann Friedrich Graebe swore Affidavit 2992-PS before the Nuremberg Tribunal. He described what he witnessed near Dubno, Ukraine, on 5 October 1942.\n\n\"Without screaming or weeping these people undressed and stood around in family groups. They kissed each other, said farewells, and waited for a sign from an SS man standing near the pit with a whip. During the fifteen minutes that I stood near the pit I heard no complaint or plea for mercy. I watched a family of about eight persons. An old woman with snow-white hair held a one-year-old child in her arms and sang softly to it. The father held the hand of a boy about ten years old, who was fighting back tears. The father pointed toward the sky, stroked his head, and seemed to explain something to him. At that moment the SS man at the pit shouted to his comrade.\"\n\nWho carried out these mass shootings across Eastern Europe? In Ordinary Men (1992), historian Christopher Browning studied Reserve Police Battalion 101, five hundred middle-aged policemen from Hamburg. Before their first massacre at Józefów in July 1942, Major Wilhelm Trapp openly offered any man permission to step out without punishment. Fewer than fifteen men stepped aside. Peer pressure, obedience, and years of racist propaganda turned ordinary citizens into killers without anyone holding a gun to their heads.",
     "parent_discussion": [
       {
-        "question": "Why is Hermann Graebe’s sworn Nuremberg testimony so deeply moving in how it remembers the Jewish family at Dubno?",
-        "answer": "Instead of reducing victims to faceless numbers, Graebe preserves their love, courage, and quiet dignity—a grandmother singing to a baby and a father gently comforting his ten-year-old son."
+        "question": "Why is German railway engineer Hermann Graebe’s sworn Nuremberg testimony so deeply moving in how it remembers the Jewish family he saw near Dubno on 5 October 1942?",
+        "answer": "Instead of reducing victims to faceless numbers, Graebe preserves their love and quiet dignity—an old woman with snow-white hair singing softly to a one-year-old child, and a father stroking his ten-year-old son’s head and pointing toward the sky."
       },
       {
-        "question": "Look closely at the Stahlecker map on the cover: how does it prove Eastern Front shootings were centrally planned and reported to Berlin?",
-        "answer": "SS Einsatzgruppe A drew coffin symbols with exact murder tallies (such as 136,421 in Lithuania and 35,238 in Latvia) under the stamp 'Geheime Reichssache!' ('Top Secret Reich Matter') for Himmler and Heydrich."
+        "question": "Before the massacre at Józefów in July 1942, what open offer did Major Wilhelm Trapp make to the five hundred middle-aged policemen from Hamburg—and how many stepped aside?",
+        "answer": "Major Trapp openly offered any man permission to step out without punishment, yet fewer than fifteen of the five hundred policemen stepped aside."
       },
       {
-        "question": "How did Christopher Browning’s discovery about Major Trapp’s offer at Józefów shatter the post-war excuse 'we would have been shot if we refused'?",
-        "answer": "Not a single German policeman or SS man was ever executed for asking to be excused from shooting civilians; over 95% took part rather than break ranks with their unit."
+        "question": "In Ordinary Men, Christopher Browning concludes that peer pressure, obedience, and years of racist propaganda turned ordinary citizens into killers 'without anyone holding a gun to their heads.' Why is that finding so sobering to reflect on?",
+        "answer": "It shows that horrific crimes are not carried out only by fanatics forced at gunpoint, and warns how dangerous unthinking obedience, peer pressure, and racist propaganda can become when ordinary people refuse to step aside."
       }
     ],
     "story_check": [
@@ -387,7 +387,7 @@
           "An American judge presiding at Nuremberg"
         ],
         "correctIndex": 0,
-        "feedback": "Hermann Graebe was a German civil engineer working in Ukraine who risked his life to save Jews and gave sworn eyewitness testimony in November 1945."
+        "feedback": "Hermann Graebe was a German railway engineer working in Ukraine who risked his life to save Jews and gave sworn eyewitness testimony in November 1945."
       },
       {
         "question": "What happened when Major Wilhelm Trapp offered the 500 Hamburg policemen of Battalion 101 the chance to step out at Józefów?",
@@ -398,23 +398,23 @@
           "Fewer than fifteen men stepped aside, and none were punished for refusing"
         ],
         "correctIndex": 3,
-        "feedback": "Fewer than fifteen out of roughly five hundred men stepped out; historians have never found a single case of a German policeman executed for refusing to shoot civilians."
+        "feedback": "Fewer than fifteen out of five hundred policemen stepped aside, even though Major Trapp openly offered permission to step out without punishment."
       },
       {
-        "question": "According to Christopher Browning in Ordinary Men, what main forces drove most men in Battalion 101 to take part?",
+        "question": "According to Christopher Browning in Ordinary Men, what main forces turned ordinary citizens in Battalion 101 into killers?",
         "options": [
           "Direct death threats held over their families in Hamburg",
-          "Peer conformity inside the unit, career ambition, and dehumanising propaganda",
+          "Peer pressure, obedience, and years of racist propaganda",
           "Promises of land estates in Western France",
           "Mistaken belief that they were firing upon armed soldiers"
         ],
         "correctIndex": 1,
-        "feedback": "Browning showed that fear of looking 'weak' in front of comrades, obedience to authority, and years of antisemitic conditioning turned ordinary men into killers."
+        "feedback": "Browning showed that peer pressure, obedience, and years of racist propaganda turned ordinary citizens into killers without anyone holding a gun to their heads."
       }
     ],
     "monday_cold_call": {
-      "question": "What choice did Major Trapp give Reserve Police Battalion 101 at Józefów in July 1942, and what post-war excuse does that fact destroy?",
-      "answer": "He freely allowed men to step out without punishment—and fewer than 15 of 500 did—destroying the false excuse that perpetrators only killed because they would have been shot if they refused."
+      "question": "What choice did Major Wilhelm Trapp give the five hundred policemen at Józefów in July 1942, and what did Christopher Browning say drove almost all of them to take part?",
+      "answer": "He openly offered any man permission to step out without punishment—yet fewer than fifteen stepped aside, showing how peer pressure, obedience, and years of racist propaganda turned ordinary citizens into killers without anyone holding a gun to their heads."
     },
     "hinge_question": "<strong>Think:</strong> Roughly how many Jewish victims were murdered in open-air shootings (\"the Holocaust by Bullets\") across Eastern Europe?<br><br><strong>Pair:</strong> Why did SS chief Heinrich Himmler order a shift toward poison-gas vans (Chełmno, Dec 1941) and extermination camps after watching shootings near Minsk?<br><br><strong>Share:</strong> Why is Christopher Browning’s finding about \"ordinary men\" one of the most sobering lessons in modern history?",
     "questions": [
@@ -473,16 +473,16 @@
     "extract": "On 23 April 1943, the fifth day of the Warsaw Ghetto Uprising, twenty-three-year-old commander Mordechai Anielewicz smuggled his final letter past the burning wall to his friend Yitzhak Zuckerman.\n\n\"It is impossible to put into words what we have been through. One thing is clear: what happened exceeded our boldest dreams. The Germans ran twice from the ghetto. One of our companies held out for forty minutes, and another—for more than six hours. The mine set in the 'brushmakers' area exploded. Several of our companies attacked the dispersing Germans.\n\nY. fell, a soldier’s death, saving the lives of comrades. Since yesterday, the enemy has switched to setting fire to entire streets block by block with flamethrowers and incendiary shells. They are trying to drive us from the rooftops and cellars into our underground bunkers, where heat and thick smoke choke the air. We have virtually no rifles—only pistols, home-made grenades, and Molotov cocktails. Yet every young man and woman here knows why we stand fast.\n\nKeep well, my dear! Perhaps we will still see each other again. The most important thing is that the dream of my life has risen to become fact. Self-defence in the ghetto will have been a reality. Jewish armed resistance and revenge are facts. I have been a witness to the magnificent, heroic fighting of Jewish men and women in battle.\"",
     "parent_discussion": [
       {
-        "question": "Why did Mordechai Anielewicz write that 'what happened exceeded our boldest dreams' even though his 750 fighters knew they could not defeat the whole German army?",
-        "answer": "Armed only with pistols and home-made petrol bombs against SS tanks and artillery, they forced German troops to flee twice, fought for nearly a month, and chose to die free on their own terms."
+        "question": "In his final letter of 23 April 1943, why did twenty-three-year-old commander Mordechai Anielewicz write that 'what happened exceeded our boldest dreams'?",
+        "answer": "With virtually no rifles—only pistols, home-made grenades, and Molotov cocktails—the young ghetto fighters held out for hours and forced German troops to run twice from the ghetto."
       },
       {
-        "question": "Where else did Jewish prisoners launch armed revolts inside Nazi extermination camps during 1943 and 1944?",
-        "answer": "Prisoners revolted and broke out of Treblinka (August 1943) and Sobibor (October 1943, led by Alexander Pechersky and Leon Feldhendler), and blew up Crematorium IV at Auschwitz-Birkenau (October 1944)."
+        "question": "After being driven back in the opening street battles, how did German forces change their tactics inside the Warsaw Ghetto?",
+        "answer": "They switched to setting entire streets on fire block by block with flamethrowers and incendiary shells, trying to drive fighters from rooftops and cellars into underground bunkers choked with heat and thick smoke."
       },
       {
-        "question": "Look at the burning buildings in the Stroop Report photograph on the cover: why did SS General Jürgen Stroop have to burn Warsaw street by street?",
-        "answer": "Because ŻOB and ŻZW fighters ambushed German patrols from rooftops and cellars so fiercely that SS troops dared not fight house-to-house and resorted to flamethrowers to force civilians out of bunkers."
+        "question": "Trapped in burning streets with almost no rifles, Anielewicz wrote, 'the dream of my life has risen to become fact. Self-defence in the ghetto will have been a reality.' Why did standing fast together mean everything to those young men and women even though they were vastly outgunned?",
+        "answer": "Standing together in armed self-defence allowed Jewish men and women to defend their dignity and courage in the face of destruction—showing the world they chose to fight rather than surrender silently."
       }
     ],
     "story_check": [
@@ -498,7 +498,7 @@
         "feedback": "Mordechai Anielewicz was just twenty-three years old when he led the Jewish Combat Organisation (ŻOB) in April 1943."
       },
       {
-        "question": "What weapons did Anielewicz report that the ghetto fighters actually possessed against German tanks and flamethrowers?",
+        "question": "What weapons did Anielewicz report that the ghetto fighters actually possessed against German flamethrowers and incendiary shells?",
         "options": [
           "Heavy anti-tank artillery dropped by Allied planes",
           "Captured German machine-gun armoured cars",
@@ -506,7 +506,7 @@
           "Hundreds of modern automatic rifles"
         ],
         "correctIndex": 2,
-        "feedback": "With almost no rifles, the young ŻOB fighters held off SS forces for 27 days using pistols, home-made grenades, mines, and Molotov cocktails."
+        "feedback": "With virtually no rifles, the young ŻOB fighters stood fast using pistols, home-made grenades, mines, and Molotov cocktails."
       },
       {
         "question": "What did German forces do after being driven back twice during the opening street battles?",
@@ -517,12 +517,12 @@
           "They handed administration back to the Polish mayor"
         ],
         "correctIndex": 0,
-        "feedback": "Unable to break the fighters in street combat, SS General Stroop burned the ghetto block by block to fill underground bunkers with heat and smoke."
+        "feedback": "Unable to break the fighters in street combat, German forces burned the ghetto block by block to fill underground bunkers with heat and thick smoke."
       }
     ],
     "monday_cold_call": {
-      "question": "What lifelong dream did 23-year-old Mordechai Anielewicz say 'has risen to become fact' on 23 April 1943, and which camp revolts followed?",
-      "answer": "That Jewish armed self-defence in the ghetto had become reality, forcing German troops back twice—followed by prisoner uprisings inside Treblinka, Sobibor, and Auschwitz-Birkenau."
+      "question": "What lifelong dream did twenty-three-year-old Mordechai Anielewicz say 'has risen to become fact' on 23 April 1943, and what weapons did his fighters actually have?",
+      "answer": "He wrote that Jewish armed self-defence in the Warsaw Ghetto had become a reality—forcing German troops to run twice even though fighters had virtually no rifles, only pistols, home-made grenades, and Molotov cocktails."
     },
     "hinge_question": "<strong>Think:</strong> On the eve of which Jewish festival of freedom did the Warsaw Ghetto Uprising begin on 19 April 1943?<br><br><strong>Pair:</strong> What weapons did the ŻOB fighters have compared with SS General Jürgen Stroop’s forces?<br><br><strong>Share:</strong> How do Warsaw, Treblinka, Sobibor, and Roza Robota’s network at Birkenau shatter the false myth that victims went \"like sheep to the slaughter\"?",
     "questions": [
@@ -576,16 +576,16 @@
     "extract": "In Munich between summer 1942 and February 1943, twenty-one-year-old student Sophie Scholl, her brother Hans, their friends, and Professor Kurt Huber cranked a hidden duplicating machine through the night. Their White Rose leaflets challenged fellow Germans directly.\n\n\"Since the conquest of Poland, three hundred thousand Jews have been murdered in that country in the most bestial manner. Here we see the most frightful crime against human dignity in the whole of human history. Why do the German people behave so passively in the face of all these dreadful crimes? Surely every citizen knows that shared guilt rests upon everyone who shuts their eyes and stays silent! Tear the cloak of indifference from around your heart before it is too late!\"\n\nEight months later, in German-occupied Copenhagen, German diplomat Georg Ferdinand Duckwitz secretly leaked word of an imminent SS raid. On the morning of 29 September 1943, Acting Chief Rabbi Marcus Melchior halted prayers inside the Copenhagen synagogue. \"Last night I received definite word that tomorrow night the Germans intend to raid Danish homes to arrest all Jews for deportation. Leave this synagogue at once! Warn every relative, friend, and neighbour, and do not sleep in your own beds tonight!\"\n\nAcross the next three weeks, an entire nation refused to stand by. Danish pastors, hospital doctors, students, and police hid Jewish neighbours in coastal attics and wards. Night after night, fishermen ferried 7,220 of Denmark's 7,800 Jews safely across the dark Øresund Strait to neutral Sweden.",
     "parent_discussion": [
       {
-        "question": "Look at the opening sentence from the 1942 White Rose leaflet printed in Munich: what common post-war German excuse does it completely disprove?",
-        "answer": "After 1945 many claimed 'nobody inside Germany knew what was happening in the East'—yet 21-year-old Munich students knew in 1942 that hundreds of thousands of Jews were being murdered in Poland and printed it openly."
+        "question": "What crime did twenty-one-year-old Sophie Scholl, her brother Hans, and their White Rose friends name openly in their Munich leaflets—and what did they challenge fellow Germans to do?",
+        "answer": "They named the murder of three hundred thousand Jews in conquered Poland and challenged fellow Germans to stop staying passive, warning that shared guilt rested on anyone who shut their eyes under a 'cloak of indifference.'"
       },
       {
-        "question": "Why were over 90% of Denmark’s Jews saved in October 1943, whereas over 75% of Jews in the Netherlands were deported and murdered?",
-        "answer": "Close geography (neutral Sweden lay a few miles across narrow water), Georg Duckwitz’s early leak, a smaller population, and—above all—nationwide solidarity from Denmark’s King, churches, doctors, police, and fishermen."
+        "question": "How did a secret leak on 29 September 1943 spark the rescue of 7,220 of Denmark’s 7,800 Jews across the next three weeks?",
+        "answer": "German diplomat Georg Ferdinand Duckwitz leaked word of the coming SS raid, Rabbi Marcus Melchior halted synagogue prayers to warn everyone not to sleep in their own beds, and Danish pastors, doctors, students, police, and fishermen hid and ferried neighbours across the dark Øresund Strait to neutral Sweden."
       },
       {
-        "question": "Why did the Danish Resistance ask Yad Vashem after the war to honour them collectively rather than singling out individual Danish heroes?",
-        "answer": "They insisted that protecting fellow Danish citizens was not rare heroism by a few, but basic human duty shared by the whole community."
+        "question": "Read the White Rose’s plea—'Tear the cloak of indifference from around your heart before it is too late!'—alongside what happened in Denmark eight months later. What difference does it make when ordinary neighbours refuse to stay silent?",
+        "answer": "In Munich, students risked everything to tell the truth aloud, while in Denmark an entire community acting together—from pastors and doctors to police and fishermen—saved more than nine out of ten Jewish citizens from deportation."
       }
     ],
     "story_check": [
@@ -593,12 +593,12 @@
         "question": "What crime did Sophie and Hans Scholl openly name inside Germany in their 1942–1943 White Rose leaflets?",
         "options": [
           "The mass murder of hundreds of thousands of Jews in occupied Poland",
-          "Food rationing shortages in Bavarian cities",
+          "Food rationing shortages in German cities",
           "Naval losses in the Atlantic Ocean",
           "Tax increases on Munich university students"
         ],
         "correctIndex": 0,
-        "feedback": "The Second Leaflet of the White Rose explicitly named the murder of 300,000 Polish Jews and condemned German citizens' 'cloak of indifference'."
+        "feedback": "Their White Rose leaflet explicitly named the murder of 300,000 Jews in Poland and challenged German citizens to tear away 'the cloak of indifference.'"
       },
       {
         "question": "How did Copenhagen’s Jewish community receive advance warning of the October 1943 SS roundup?",
@@ -624,8 +624,8 @@
       }
     ],
     "monday_cold_call": {
-      "question": "How do the Munich White Rose leaflets and the October 1943 Danish rescue prove that ordinary citizens under Nazi rule still possessed moral agency?",
-      "answer": "Sophie and Hans Scholl proved Germans inside Munich knew of mass murder in Poland and chose to speak out, while nationwide solidarity in Denmark rescued 7,220 of 7,800 Jewish neighbours."
+      "question": "How do the Munich White Rose leaflets and the October 1943 rescue in Denmark show that ordinary people under Nazi rule still had a choice?",
+      "answer": "Sophie and Hans Scholl proved people inside Munich knew of mass murder in Poland and chose to speak out against indifference, while ordinary Danish pastors, doctors, students, police, and fishermen worked together to ferry 7,220 of 7,800 Jewish neighbours safely to Sweden."
     },
     "hinge_question": "<strong>Think:</strong> How did German diplomat Georg Ferdinand Duckwitz trigger the Danish rescue on 28–29 September 1943?<br><br><strong>Pair:</strong> Contrast the French police at the Vél d’Hiv roundup (July 1942) with the Danish public and police in October 1943—what made the difference?<br><br><strong>Share:</strong> What did Sophie and Hans Scholl mean by warning against \"the cloak of indifference\"?",
     "questions": [
@@ -679,16 +679,16 @@
     "extract": "In April 1945, BBC war correspondent Richard Dimbleby entered Bergen-Belsen concentration camp alongside British 11th Armoured Division medical teams. Fighting back tears, he spoke into his microphone.\n\n\"Here over an acre of ground lay dead and dying people. You could not see which was which, except perhaps by a convulsive movement, or the last hopeless look of a living eye looking out from a sunken socket. Babies had been born here, tiny wizened things that could not live. A mother, driven mad, screamed at a British sentry to give her milk for her child. This day at Belsen was the most horrible of my life. I must tell the exact truth of what I have seen with my own eyes, without a single word of exaggeration. No one in Britain or in the years to come must ever dare claim that these camps were wartime propaganda.\"\n\nLiberation did not instantly end the suffering. Nearly fourteen thousand prisoners died at Belsen even after British doctors arrived because typhus and starvation had wrecked their bodies. Across Europe, six million Jewish men, women, and children—including one and a half million children—had been murdered. Hundreds of thousands of lone survivors waited years in Displaced Persons camps because they had no homes or families left. Returning to Turin from Auschwitz, chemist Primo Levi wrote If This Is a Man in 1947. Later, he left humanity one enduring warning. \"It happened, therefore it can happen again: this is the core of what we have to say.\"",
     "parent_discussion": [
       {
-        "question": "Why did Richard Dimbleby threaten to resign if BBC editors in London cut or held back his Bergen-Belsen broadcast?",
-        "answer": "The scale of Nazi atrocity was so shocking that London editors initially doubted it; Dimbleby knew plain, unexaggerated eyewitness truth had to be recorded so future deniers could never call it propaganda."
+        "question": "Entering Bergen-Belsen in April 1945 alongside British medical teams, why did BBC correspondent Richard Dimbleby insist on telling 'the exact truth... without a single word of exaggeration'?",
+        "answer": "Fighting back tears at the sight of dead and dying prisoners, Dimbleby wanted a plain, unexaggerated eyewitness record so no one in Britain or in the years to come could ever dare claim the camps were wartime propaganda."
       },
       {
-        "question": "Why wasn’t liberation in January or April 1945 a simple 'happy ending' for survivors?",
-        "answer": "Thousands died of typhus and starvation after liberation, six million Jews (two-thirds of European Jewry) were dead, and survivors spent years in Displaced Persons camps grieving whole lost families."
+        "question": "Why did liberation in April 1945 not bring a simple or instant end to suffering for survivors?",
+        "answer": "Nearly fourteen thousand prisoners still died at Belsen after British doctors arrived because typhus and starvation had wrecked their bodies, six million Jews (including one and a half million children) had been murdered, and hundreds of thousands of lone survivors waited years in Displaced Persons camps with no homes or families left."
       },
       {
-        "question": "What did Auschwitz survivor Primo Levi mean by his warning: 'It happened, therefore it can happen again'?",
-        "answer": "The Shoah was carried out in a modern, educated nation through step-by-step prejudice, legal exclusion, propaganda, and obedience—warning every generation to defend human rights early."
+        "question": "After surviving Auschwitz, chemist Primo Levi left one enduring warning: 'It happened, therefore it can happen again: this is the core of what we have to say.' Why is remembering the exact truth—as Dimbleby and Levi both urged—so important for every generation?",
+        "answer": "Remembering honestly that these crimes really happened guards against denial and reminds every new generation never to look away when hatred and persecution begin."
       }
     ],
     "story_check": [
@@ -715,20 +715,20 @@
         "feedback": "Dimbleby deliberately avoided exaggeration so his eyewitness testimony would stand forever against denial."
       },
       {
-        "question": "Who coined the legal word 'genocide' in 1944, and who wrote the survivor warning 'It happened, therefore it can happen again'?",
+        "question": "Why did nearly fourteen thousand prisoners still die at Bergen-Belsen even after British medical teams arrived in April 1945?",
         "options": [
-          "Richard Dimbleby and Winston Churchill",
-          "Victor Klemperer and Hermann Graebe",
-          "Georg Duckwitz and Marcus Melchior",
-          "Polish-Jewish lawyer Raphael Lemkin and Auschwitz survivor Primo Levi"
+          "British doctors had no medicine or ambulances",
+          "Typhus and starvation had already wrecked their bodies",
+          "The camp was caught in an air raid the next morning",
+          "Prisoners refused to leave the barracks"
         ],
-        "correctIndex": 3,
-        "feedback": "Raphael Lemkin coined 'genocide' in 1944 after losing 49 relatives, and Italian-Jewish chemist Primo Levi wrote If This Is a Man after surviving Auschwitz."
+        "correctIndex": 1,
+        "feedback": "Liberation could not instantly undo years of abuse: typhus and starvation had already wrecked thousands of bodies, while hundreds of thousands of lone survivors waited years in Displaced Persons camps."
       }
     ],
     "monday_cold_call": {
-      "question": "Why did BBC reporter Richard Dimbleby fight to broadcast every word of his April 1945 Bergen-Belsen report, and what core warning did Primo Levi leave us?",
-      "answer": "Dimbleby recorded plain eyewitness truth so no one could ever dismiss Nazi camps as propaganda, while Primo Levi warned 'It happened, therefore it can happen again.'"
+      "question": "Why did BBC reporter Richard Dimbleby insist on telling 'the exact truth... without a single word of exaggeration' at Bergen-Belsen in April 1945, and what core warning did Primo Levi leave behind?",
+      "answer": "Dimbleby recorded plain eyewitness truth so no one could ever claim the camps were wartime propaganda, while Auschwitz survivor Primo Levi warned, 'It happened, therefore it can happen again: this is the core of what we have to say.'"
     },
     "hinge_question": "<strong>Think:</strong> Which lawyer coined the word \"genocide\" in 1944, and why is 27 January marked worldwide as Holocaust Memorial Day?<br><br><strong>Pair:</strong> What landmark legal principle did the 1945–1946 Nuremberg Trials establish whenever a perpetrator claimed \"I was only following orders\"?<br><br><strong>Share:</strong> Looking at the Berlin Memorial on the cover, why did modern democratic Germany place this memorial right beside its Parliament?",
     "questions": [

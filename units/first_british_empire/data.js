@@ -10311,15 +10311,15 @@ export default {
       "parent_discussion": [
         {
           "question": "What happened when Ambassador Sir Thomas Roe tried to impress Emperor Jahangir with a velvet English coach in 1616?",
-          "answer": "Mughal craftsmen dismantled and copied its design, quickly building a superior coach lined with silver brocade—showing India’s manufacturing skill."
+          "answer": "Emperor Jahangir rode it once by torchlight and handed it to his royal craftsmen, who within weeks built an even finer copy lined in gleaming silver brocade."
         },
         {
-          "question": "Why did Roe warn the East India Company in 1616 to stick to 'quiet trade' at sea rather than fighting wars on Indian soil?",
-          "answer": "Under Jahangir, the Mughal Empire was vastly richer and militarily stronger than Stuart England, so armed force would have ended in disaster."
+          "question": "Why did Sir Thomas Roe warn the East India Company in 1616: 'If you will profit, seek it at sea, and in quiet trade'?",
+          "answer": "He was humbled by Mughal wealth, skilled craftsmen, and horsemen—India made nearly a quarter of the world’s textiles and riches, and English merchants survived solely by the Emperor’s written permission (a firman)."
         },
         {
-          "question": "How did winning the Bengal Diwani in 1765 allow the East India Company to buy Indian cloth and Chinese tea without paying British silver?",
-          "answer": "The Company collected £2 million+ each year in taxes from Bengali farmers and used Indian taxpayers’ own money to buy Asian exports for London."
+          "question": "Between 1616 and 1765, how had the balance of power between the Mughal Emperor and the East India Company completely flipped?",
+          "answer": "In 1616 English merchants had to bow at court and rely on the Emperor’s firman to trade, but after Mughal authority weakened, the Company used private sepoy armies and bribery at Plassey to take the Diwani—taxing twenty million people in Bengal themselves."
         }
       ],
       "story_check": [
@@ -10343,7 +10343,7 @@ export default {
             "Refuse to bow to the Mughal Emperor"
           ],
           "correctIndex": 2,
-          "feedback": "Spot on. Seeing the vast power of Emperor Jahangir’s court, Roe warned against building forts or fighting land wars."
+          "feedback": "Spot on. Humbled by Mughal wealth and horsemen, Roe told the Company to seek profit at sea and in quiet trade."
         },
         {
           "question": "What massive power passed to Robert Clive and the East India Company inside the tent at Allahabad in August 1765?",
@@ -10354,7 +10354,7 @@ export default {
             "Command of the French navy"
           ],
           "correctIndex": 0,
-          "feedback": "Exactly right. Winning the Diwani turned a London joint-stock business into the tax-collecting ruler of Bengal, Bihar, and Orissa."
+          "feedback": "Exactly right. Winning the Diwani turned a London trading company into the tax-collecting ruler of Bengal, Bihar, and Orissa."
         }
       ],
       "monday_cold_call": {
@@ -10413,16 +10413,16 @@ export default {
       "extract": "\"The first object that met my eyes when I reached the coast was the sea, and a slave ship riding at anchor. Sight of that vessel filled me with astonishment, which quickly turned to terror when I was carried on board. Rough sailors immediately handled and tossed me up to check whether I was sound and strong. Looking around at their strange faces and a boiling copper pot on deck, I felt sure I had entered a world of bad spirits who meant to kill me.\n\nSoon I was forced down beneath the wooden decks. There a dreadful stench struck my nostrils such as I had never known in my life. Overcome by the foul air and the weeping all around me, I grew so sick and low that I could not swallow a bite of food. Two crewmen tied my hands and flogged me severely because I refused to eat.\n\nDown in the hold, the fierce tropical heat and the crushing crowd nearly suffocated us. Chained captives had scarcely room to turn, and heavy sweat poured from every body until the air became unfit to breathe. Deadly sickness soon swept through the ship, killing many poor souls who fell victim to the short-sighted greed—the avarice—of their purchasers. The shrieks of the women and the groans of the dying made the whole hold a scene of horror almost beyond belief.\"",
       "parent_discussion": [
         {
-          "question": "Why was Olaudah Equiano’s first-hand 1789 memoir so devastating to British merchants who defended the slave trade in Parliament?",
-          "answer": "Slave traders claimed captives were well cared for on ships; Equiano’s eloquent eyewitness book proved both the agony below decks and the humanity and brilliance of Black writers."
+          "question": "When young Olaudah Equiano was first carried onto the slave ship, what made him feel sure he had entered a world of 'bad spirits'?",
+          "answer": "Rough sailors immediately handled and tossed him up to check whether he was strong, and seeing their strange faces and a boiling copper pot on deck terrified him into thinking they meant to kill him."
         },
         {
-          "question": "Look at Equiano’s word 'avarice' (extreme greed): how does the 1788 Brookes ship diagram on the cover confirm his accusation?",
-          "answer": "Merchants packed 454 people—and earlier over 600—into shelves just 2 feet 7 inches high to squeeze extra profit from every voyage, breeding suffocation and disease."
+          "question": "Why did two crewmen tie Equiano’s hands and flog him when grief and sickness stopped him from eating?",
+          "answer": "Under chattel slavery, traders treated enslaved people as private property ('cargo') to be sold on plantations in the Americas, so the crew forced captives to stay alive for profit rather than out of kindness."
         },
         {
-          "question": "Why did sailors flog young Equiano when grief and sickness stopped him from eating?",
-          "answer": "Under chattel slavery, captains treated enslaved people as financial 'cargo' whose survival until auction in the Caribbean determined the crew’s profits."
+          "question": "Equiano blames the deaths below decks on the 'short-sighted greed—the avarice—of their purchasers.' Why does he call that greed 'short-sighted'?",
+          "answer": "By cramming chained captives into suffocating tropical heat with scarcely room to turn, the traders’ own greed bred deadly sickness that killed many of the very people they planned to sell."
         }
       ],
       "story_check": [
@@ -10461,8 +10461,8 @@ export default {
         }
       ],
       "monday_cold_call": {
-        "question": "What word meaning 'extreme greed' did Olaudah Equiano use to explain why slave ships were packed so tightly—and how does the Brookes diagram back him up?",
-        "answer": "Equiano blamed the traders’ 'avarice'; the 1788 Brookes diagram proved 454 people were crammed onto shelves barely 2 feet 7 inches high."
+        "question": "What word meaning 'extreme greed' did Olaudah Equiano use to explain why so many captives died below decks—and what conditions did he describe in the hold?",
+        "answer": "Equiano blamed the purchasers’ 'avarice'; he described chained captives packed with scarcely room to turn in fierce tropical heat, foul air, and deadly sickness."
       },
       "hinge_question": "<strong>Think:</strong> How did Olaudah Equiano gain his freedom in 1766, and what London group did he help lead?<br><br><strong>Pair:</strong> Cross-reference Equiano’s memories of the hold with the 1788 Brookes stowage plan—how did word and image work together in 1789?<br><br><strong>Share:</strong> Why was Black abolitionist leadership essential alongside Parliamentary campaigners in ending the British slave trade?",
       "questions": [
@@ -10520,12 +10520,12 @@ export default {
           "answer": "Heavy red wool uniforms made easy targets on narrow trails, while Maroon fighters knew every cliff, used head-to-foot leaf camouflage, and sent coded abeng horn alerts."
         },
         {
-          "question": "Why was the 1739–1740 Peace Treaty such an extraordinary milestone in the history of the First British Empire?",
-          "answer": "Ninety-four years before Parliament ended slavery in 1833, self-liberated Africans militarily forced the British Crown to recognize their permanent freedom and land."
+          "question": "Why was the March 1739 peace treaty such an extraordinary victory for Queen Nanny and the Maroons?",
+          "answer": "Nearly a century before Britain ended slavery in 1833, eleven years of mountain fighting forced Governor Trelawny to beg for peace and recognise Maroon freedom and 1,500 acres of free land."
         },
         {
-          "question": "Why do historians call the treaty’s runaway clause a painful colonial compromise?",
-          "answer": "To protect their free mountain towns from endless British invasion, Maroon leaders were pressured into agreeing not to shelter newly escaped plantation captives."
+          "question": "The 1739 peace treaty carried a 'bitter price'—why was the promise to return future runaways such an agonising choice for Maroon leaders?",
+          "answer": "Maroon chiefs secured permanent freedom and land for their mountain towns, but only by agreeing to hand back future escapees from lowland sugar estates so British troops would stop attacking them."
         }
       ],
       "story_check": [
@@ -10538,7 +10538,7 @@ export default {
             "A bamboo flute"
           ],
           "correctIndex": 1,
-          "feedback": "Correct! By varying thumb pressure on the abeng cow-horn, Maroon scouts sent precise coded messages across miles of peaks."
+          "feedback": "Correct! Maroon scouts blew the curved cow-horn called the abeng to send coded warnings across miles of mountain valleys."
         },
         {
           "question": "Which brilliant strategist led the Windward Maroons from their cliffside stronghold in the Blue Mountains?",
@@ -10549,18 +10549,18 @@ export default {
             "Violet King"
           ],
           "correctIndex": 2,
-          "feedback": "Spot on. Queen Nanny led Windward Maroon defence and community survival in the Blue Mountains—today she is a National Hero of Jamaica."
+          "feedback": "Spot on. Asante-born leader Queen Nanny built Nanny Town high above the cliffs and led the Windward Maroons in the Blue Mountains."
         },
         {
-          "question": "What was the outcome of the First Maroon War in 1739–1740?",
+          "question": "What was the outcome of the eleven years of mountain fighting in Jamaica by March 1739?",
           "options": [
             "Britain abandoned Jamaica completely",
-            "Britain was forced to sign treaties guaranteeing Maroon freedom and land, alongside a harsh runaway-return clause",
+            "Britain signed treaties recognising Maroon freedom and 1,500 acres of land, alongside a harsh runaway-return promise",
             "Sugar plantations were outlawed across the Caribbean",
             "The Maroons sailed to Nova Scotia"
           ],
           "correctIndex": 1,
-          "feedback": "Exactly right. Unable to defeat Maroon guerrilla tactics, Governor Trelawny signed treaties recognizing Maroon freedom and 1,500+ acres of land."
+          "feedback": "Exactly right. Exhausted by Maroon guerrilla tactics, Governor Trelawny signed treaties recognising Maroon freedom and 1,500 acres of land, but demanded they return future runaways."
         }
       ],
       "monday_cold_call": {
@@ -10620,22 +10620,22 @@ export default {
       "parent_discussion": [
         {
           "question": "How did nineteen-year-old Phillis Wheatley explain where her deep 'love of Freedom' came from in her 1772 poem?",
-          "answer": "Unlike white colonists protesting paper and tea taxes, she had literally been kidnapped as a child from West Africa, tearing her from her heartbroken parents."
+          "answer": "She explained that she had been snatched as a child from Africa—causing unbearable sorrow to her parents—so she prayed others would never suffer 'tyrannic sway.'"
         },
         {
           "question": "Why did George Hewes and the Sons of Liberty smear coal dust on their faces yet forbid anyone from stealing a single ounce of tea?",
           "answer": "Disguises hid their identities from British arrest, while strict discipline proved they were staging a principled tax protest—not a greedy dockside robbery."
         },
         {
-          "question": "Notice which company owned the 342 tea chests floating in Boston Harbour: how does that link Enquiry 1 (Bengal) to Enquiry 4 (America)?",
-          "answer": "It was the British East India Company—Parliament passed the 1773 Tea Act to bail out the very same Company that had conquered Mughal Bengal!"
+          "question": "White colonists in Boston claimed British taxes turned them into 'slaves'—why did nineteen-year-old Phillis Wheatley’s poem make that claim sound so striking and uncomfortable?",
+          "answer": "Wheatley was legally enslaved right there in Boston after being kidnapped from West Africa, so her poem highlighted the huge gap between paying unfair taxes and actually losing your freedom."
         }
       ],
       "story_check": [
         {
           "question": "Why did Phillis Wheatley say she understood 'tyrannic sway' better than anyone in Boston?",
           "options": [
-            "She had paid heavy Stamp Act taxes on newspapers",
+            "She had paid heavy London taxes on tea",
             "She had been kidnapped as a child from West Africa into slavery",
             "She owned a Boston tea warehouse",
             "She served in the Royal Navy"
@@ -10663,7 +10663,7 @@ export default {
             "1,500 chests"
           ],
           "correctIndex": 2,
-          "feedback": "Exactly right. Protesters emptied 342 chests—worth roughly £10,000 at the time—into the harbour without damaging the ships."
+          "feedback": "Exactly right. Working in dead silence, George Hewes and the Sons of Liberty chopped open 342 chests of East India Company tea and dumped them into Boston Harbour."
         }
       ],
       "monday_cold_call": {
@@ -10722,16 +10722,16 @@ export default {
       "extract": "\"In 1780, British troops captured Charleston in South Carolina. Word ran fast across the plantations that freedom awaited all enslaved people who reached the King’s camp. Choosing to risk death rather than stay in chains, I borrowed a horse at midnight and rode past the Rebel patrols. British soldiers welcomed me as a free man, though deadly smallpox soon swept through our tents.\n\nYet when peace was signed with the United States in 1783, dreadful terror gripped every Black Loyalist in New York. Rumours ran down the alleys that all former slaves would be handed back to their old American masters! Worse still, angry Southern planters walked right into New York seizing men and women off the pavements. For days my wife Violet and I could neither eat nor sleep for fear of returning to chains.\n\nMercifully, British General Sir Guy Carleton kept the Crown’s promise to everyone who had served a full year. Clerks wrote our names, ages, and scars into a great ledger called the Book of Negroes. Holding our signed certificates of freedom, Violet and I boarded the ship L’Abondance and sailed free to Nova Scotia. Years later, we crossed the Atlantic once more to help build a free Black settlement in Sierra Leone.\"",
       "parent_discussion": [
         {
-          "question": "Why did enslaved people like Boston and Violet King side with the British King rather than the American Patriots fighting for 'independence'?",
-          "answer": "Patriot leaders like Washington and Jefferson kept slavery legal in the new United States, whereas British commanders offered freedom certificates to runaways from Rebel estates."
+          "question": "Why did Boston King risk his life riding past Rebel patrols to join the British camp in 1780?",
+          "answer": "Word had spread across South Carolina’s plantations that Britain promised freedom to enslaved people who reached the King’s camp, and he chose to risk death rather than stay in chains."
         },
         {
           "question": "Why was the 1783 peace treaty a moment of terror rather than celebration for Black Loyalists waiting in New York?",
-          "answer": "American slaveholders entered New York demanding their escaped human 'property' back; only General Carleton’s refusal and the Book of Negroes protected 3,000 evacuees."
+          "answer": "Rumours spread that former slaves would be handed back to their old American masters, and angry Southern planters walked into New York seizing people off the pavements—until General Sir Guy Carleton kept Britain’s promise and registered them in the Book of Negroes."
         },
         {
-          "question": "Did Britain issue Dunmore’s Proclamation out of pure anti-slavery principle, or wartime calculation?",
-          "answer": "Wartime calculation—Britain freed enslaved people escaping Rebel Patriots to cripple the colonial economy, while keeping slavery fully legal in loyal Jamaica until 1833."
+          "question": "Look at how closely Boston and Violet King held onto their signed certificates of freedom and later sailed all the way to Sierra Leone—what does their journey show about how fragile freedom felt in 1783?",
+          "answer": "Even after escaping to British lines, peace nearly saw them dragged back into slavery off New York’s streets, so written proof in the Book of Negroes and moving to free settlements in Nova Scotia and Sierra Leone were vital to protect their liberty."
         }
       ],
       "story_check": [
@@ -10744,7 +10744,7 @@ export default {
             "He hid inside a tea chest from Boston"
           ],
           "correctIndex": 1,
-          "feedback": "Correct! Risking execution if caught, Boston King rode past Rebel patrols by night to claim British protection."
+          "feedback": "Correct! Choosing to risk death rather than stay in chains, Boston King rode past Rebel patrols by night to claim British protection."
         },
         {
           "question": "Why couldn’t Boston and Violet King eat or sleep in New York when peace was announced in 1783?",
@@ -10755,7 +10755,7 @@ export default {
             "Smallpox had closed the port"
           ],
           "correctIndex": 1,
-          "feedback": "Spot on. American slaveholders arrived in New York demanding the return of escaped Black Loyalists under the peace terms."
+          "feedback": "Spot on. Rumours spread that former slaves would be returned, and angry Southern planters were seizing people right off New York’s pavements."
         },
         {
           "question": "What famous 1783 British ledger recorded 3,000 Black Loyalists with signed freedom certificates before they sailed for Nova Scotia?",
@@ -10766,12 +10766,12 @@ export default {
             "The Bengal Diwani"
           ],
           "correctIndex": 2,
-          "feedback": "Exactly right. General Sir Guy Carleton’s clerks registered 3,000 men, women, and children—including Boston and Violet King—in the Book of Negroes."
+          "feedback": "Exactly right. General Sir Guy Carleton’s clerks registered 3,000 Black Loyalists—including Boston and Violet King—in the Book of Negroes."
         }
       ],
       "monday_cold_call": {
-        "question": "Why did Boston King fight on the British side rather than for Thomas Jefferson’s Patriots—and what document saved him and Violet in New York in 1783?",
-        "answer": "Britain promised freedom to enslaved people escaping Rebel masters while Jefferson kept slavery; in 1783 being registered in the Book of Negroes with freedom certificates saved them from re-enslavement."
+        "question": "Why did Boston King risk everything to reach British lines in 1780—and what document saved him and Violet in New York in 1783?",
+        "answer": "Britain promised freedom to enslaved people who escaped Rebel masters to join the King’s camp; in 1783 being listed in the Book of Negroes with signed freedom certificates saved them from re-enslavement."
       },
       "hinge_question": "<strong>Think:</strong> Why do historians call 1776 a 'Paradox of Liberty' when comparing Jefferson’s Declaration with Boston King’s life?<br><br><strong>Pair:</strong> Compare British slave policy in Rebel Virginia (1775) with British slave policy in loyal Jamaica.<br><br><strong>Share:</strong> How did losing the Thirteen Colonies in 1783 shift Britain’s imperial focus eastward toward India and Australia?",
       "questions": [

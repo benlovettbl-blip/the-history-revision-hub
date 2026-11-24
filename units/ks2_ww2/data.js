@@ -10822,13 +10822,13 @@ const UNIT_DATA = {
           "answer": "He had tried for months to keep peace in Europe through talks and felt deep sorrow that Hitler had broken his promises and invaded Poland."
         },
         {
-          "question": "Which \"evil things\" does Chamberlain tell families listening around their wireless sets that Britain is fighting against?",
-          "answer": "He names brute force, broken promises, injustice, and cruelty."
+          "question": "Chamberlain says Britain is fighting against \"brute force, broken promises, injustice, and cruelty.\" How do you think families listening around their wireless felt when air-raid sirens wailed minutes later?",
+          "answer": "They must have felt frightened and serious as war suddenly became real, yet Chamberlain tried to give them hope by saying that right would win through."
         }
       ],
       "story_check": [
         {
-          "question": "Which country had German troops invaded two days before Chamberlain’s broadcast?",
+          "question": "Which country did Britain warn Germany to pull its troops out of by eleven o’clock?",
           "options": [
             "France",
             "Poland",
@@ -10836,7 +10836,7 @@ const UNIT_DATA = {
             "Belgium"
           ],
           "correctIndex": 1,
-          "feedback": "German troops invaded Poland on 1 September 1939, triggering Britain’s final warning."
+          "feedback": "Spot on! Britain warned Germany to promise by eleven o’clock to pull its troops out of Poland."
         },
         {
           "question": "From which London building did Neville Chamberlain speak to the nation?",
@@ -10918,7 +10918,7 @@ const UNIT_DATA = {
       "parent_discussion": [
         {
           "question": "Why did Operation Pied Piper start on 1 September 1939, two days before Britain officially declared war?",
-          "answer": "The government feared enemy bombers might attack big cities right away, so moving 1.5 million people early kept railway lines clear and saved lives."
+          "answer": "To move 1.5 million people out of dangerous big cities to safer country villages before the fighting and danger even began!"
         },
         {
           "question": "Which two items worn on every child’s coat or shoulder showed how carefully the trip was planned?",
@@ -10939,7 +10939,7 @@ const UNIT_DATA = {
             "Dig for Victory"
           ],
           "correctIndex": 1,
-          "feedback": "Operation Pied Piper moved 1.5 million people to safer country areas between 1 and 3 September 1939."
+          "feedback": "Operation Pied Piper moved 1.5 million people from dangerous cities to safer country villages in September 1939."
         },
         {
           "question": "What hung in a square brown cardboard box over every evacuee’s shoulder?",
@@ -11028,13 +11028,13 @@ const UNIT_DATA = {
           "answer": "Unfair Nazi rules and fear pushed neighbours and schoolfriends apart, shutting Jewish children and adults out of shops, parks, and friendships."
         },
         {
-          "question": "Why is it important to learn about ordinary Jewish family life before studying the Second World War?",
-          "answer": "It reminds us that Jewish people were ordinary schoolchildren, shopkeepers, and neighbours whose rights and homes were unfairly taken away."
+          "question": "Why did Marta say cruel laws made loyal families feel like \"strangers at home\" step by step?",
+          "answer": "First shops were targeted, then schoolfriends were told not to sit beside her daughters, and then parks, swimming baths, libraries, and sports clubs locked them out—slowly cutting them off from their hometown."
         }
       ],
       "story_check": [
         {
-          "question": "In which German town did Marta Appel and her daughters live before escaping?",
+          "question": "In which German town did Marta Appel and her daughters live?",
           "options": [
             "Munich",
             "Dortmund",
@@ -11042,7 +11042,7 @@ const UNIT_DATA = {
             "Cologne"
           ],
           "correctIndex": 1,
-          "feedback": "Marta Appel lived with her husband and daughters in Dortmund."
+          "feedback": "Marta Appel lived with her family in the German town of Dortmund."
         },
         {
           "question": "What happened outside Jewish-owned shops on 1 April 1933?",
@@ -11124,20 +11124,20 @@ const UNIT_DATA = {
       "parent_discussion": [
         {
           "question": "What rule did the British Parliament relax in November 1938 so children could escape faster?",
-          "answer": "Britain waived slow individual travel visas for unaccompanied children under seventeen whenever charities or sponsors guaranteed £50 and a foster home."
+          "answer": "Britain dropped slow border checks for unaccompanied children under seventeen whenever kind sponsors promised £50 to care for each child."
         },
         {
           "question": "Why did saying goodbye at Prague’s Wilson Station take extraordinary love and courage from Vera’s parents?",
           "answer": "Parents were barred from boarding the Kindertransport trains, so they sent Vera and Eva to safety in a new country while staying behind in danger."
         },
         {
-          "question": "How was Vera’s train journey similar to—and very different from—British evacuees in Operation Pied Piper?",
-          "answer": "Both wore numbered tags and rode trains to foster homes, but Kindertransport children entered a foreign language while their parents remained trapped under Nazi rule."
+          "question": "What did ten-year-old Vera choose to pack in her one small bag, and why do you think those few things mattered so much to her?",
+          "answer": "She packed warm clothes, family photos, and her diary—carrying precious memories of her parents and home with her on the long train journey to safety."
         }
       ],
       "story_check": [
         {
-          "question": "Roughly how many children were rescued by the Kindertransport before war began?",
+          "question": "Roughly how many children reached safety in Britain on the Kindertransport?",
           "options": [
             "Around 500",
             "Nearly 10,000",
@@ -11145,7 +11145,7 @@ const UNIT_DATA = {
             "1.5 million"
           ],
           "correctIndex": 1,
-          "feedback": "Nearly 10,000 mostly Jewish children under seventeen reached safety in Britain on the Kindertransport."
+          "feedback": "Nearly 10,000 endangered children under seventeen reached safety in Britain on the Kindertransport."
         },
         {
           "question": "How much money had to be guaranteed for each child brought to Britain?",
@@ -11231,7 +11231,7 @@ const UNIT_DATA = {
         },
         {
           "question": "Why was the ninth rescue train on 1 September 1939 never able to leave Prague?",
-          "answer": "German troops invaded Poland that morning, starting the Second World War and immediately closing all borders."
+          "answer": "War broke out on 1 September 1939, stopping the ninth rescue train from ever leaving Prague."
         },
         {
           "question": "What does keeping his scrapbook quiet in the attic for nearly fifty years show about Nicholas Winton?",
@@ -11248,7 +11248,7 @@ const UNIT_DATA = {
             "10,000 children"
           ],
           "correctIndex": 1,
-          "feedback": "Eight rescue trains from Prague carried 669 children safely to London Liverpool Street between March and August 1939."
+          "feedback": "Eight rescue trains from Prague carried 669 children safely to London between March and August 1939."
         },
         {
           "question": "Which two volunteers worked on the ground in Prague getting permits and putting children onto trains?",
@@ -11259,7 +11259,7 @@ const UNIT_DATA = {
             "Edward Murrow and Herbert Mason"
           ],
           "correctIndex": 1,
-          "feedback": "Doreen Warriner negotiated travel papers while schoolteacher Trevor Chadwick escorted children onto the Prague trains."
+          "feedback": "Doreen Warriner sorted travel passes while teacher Trevor Chadwick guided children onto the Prague trains."
         },
         {
           "question": "Where did Nicholas Winton keep his scrapbook of rescued children’s names for nearly fifty years?",
@@ -11270,7 +11270,7 @@ const UNIT_DATA = {
             "At Prague railway station"
           ],
           "correctIndex": 1,
-          "feedback": "Winton kept the scrapbook quietly in his attic at home until his wife Grete found it in 1988."
+          "feedback": "Spot on! Winton kept his rescue scrapbook hidden quietly in his attic for almost fifty years."
         }
       ],
       "monday_cold_call": {
@@ -11330,7 +11330,7 @@ const UNIT_DATA = {
       "parent_discussion": [
         {
           "question": "Why was even a tiny strip of light around a window curtain or match dangerous during the Blitz?",
-          "answer": "Enemy bomber crews flying overhead in the dark used lit windows, streetlights, and rivers to spot city targets below."
+          "answer": "Enemy bombers flying high above in the dark could spot lit windows or matches and find city targets below."
         },
         {
           "question": "Where did Edward R. Murrow see London families sheltering at night, and what did they carry down with them?",
@@ -11440,8 +11440,8 @@ const UNIT_DATA = {
           "answer": "Money alone could not buy rationed food; shoppers had to hand over fixed weekly coupons, giving a duke and a dockworker the exact same share."
         },
         {
-          "question": "Why did many poorer British children actually grow taller and healthier during wartime rationing than in the 1930s?",
-          "answer": "Fair shares, fresh garden vegetables, wholemeal bread, and free priority milk and orange juice improved children’s diets across Britain."
+          "question": "Why do you think the government invented cheerful mascots like Potato Pete and Doctor Carrot instead of just printing boring rules?",
+          "answer": "Catchy rhymes and friendly cartoon characters encouraged children and families to enjoy home-grown vegetables, dig up gardens, and save precious ship space!"
         }
       ],
       "story_check": [
@@ -11465,18 +11465,18 @@ const UNIT_DATA = {
             "Bacon and butter"
           ],
           "correctIndex": 1,
-          "feedback": "Home-grown vegetables like potatoes, carrots, and cabbages were never rationed."
+          "feedback": "Home-grown vegetables like potatoes and carrots needed no ships and no coupons at all."
         },
         {
-          "question": "Look at the 1941 grocer’s shop photo: what clever substitute did cooks use when fresh eggs were scarce?",
+          "question": "What did grocers sell when fresh eggs ran short during the war?",
           "options": [
-            "Egg Substitute Powder and dried egg",
+            "Dried egg powder",
             "Melted chocolate bars",
             "White chalk dust",
-            "Imported oranges"
+            "Imported bananas"
           ],
           "correctIndex": 0,
-          "feedback": "Wartime cooks baked cakes and pancakes using dried egg or Bird’s Egg Substitute Powder!"
+          "feedback": "Spot on! Grocers sold dried egg powder when fresh eggs ran short—and bakers even mixed mashed potato into pastry!"
         }
       ],
       "monday_cold_call": {
@@ -11646,8 +11646,8 @@ const UNIT_DATA = {
           "answer": "Churchill stamped \"ACTION THIS DAY!\" in red on the letter and ordered officials to give Bletchley Park everything it needed immediately."
         },
         {
-          "question": "Why couldn’t the women and men of Bletchley Park tell even their own mums and dads what they did until the 1970s?",
-          "answer": "Every worker signed the Official Secrets Act and faithfully kept their promise for thirty years to protect national security."
+          "question": "Why do you think Bletchley Park’s codebreakers had to keep their teamwork top secret for thirty years, even from their own families?",
+          "answer": "Keeping their work strictly secret protected the country and stopped anyone from guessing how Britain had cracked the Enigma code!"
         }
       ],
       "story_check": [
@@ -11660,18 +11660,18 @@ const UNIT_DATA = {
             "Sending BBC news broadcasts"
           ],
           "correctIndex": 1,
-          "feedback": "The Bombe spun dozens of wired drums to rapidly rule out wrong Enigma settings and find the day’s key."
+          "feedback": "The Bombe spun dozens of wired drums to rapidly test thousands of scrambled letter patterns and find the day’s Enigma settings."
         },
         {
-          "question": "Roughly what fraction of the 10,000 staff working at Bletchley Park were women?",
+          "question": "Who wired up dozens of spinning drums on the giant Bombe machines next door to Hut 8?",
           "options": [
-            "None at all",
-            "About one-tenth",
-            "Around three-quarters",
-            "Every single worker"
+            "Land Girls from country farms",
+            "Young women of the Royal Naval Service known as \"Wrens\"",
+            "Air Raid Wardens from London",
+            "Train drivers from Paddington"
           ],
-          "correctIndex": 2,
-          "feedback": "Around three-quarters of Bletchley Park’s workforce were women, including Wrens and codebreakers like Joan Clarke."
+          "correctIndex": 1,
+          "feedback": "Spot on! Young women known as Wrens wired up the spinning Bombe drums, working alongside codebreakers like Alan Turing and Joan Clarke."
         },
         {
           "question": "What urgent red-label order did Winston Churchill put on Alan Turing’s October 1941 letter?",
@@ -11742,15 +11742,15 @@ const UNIT_DATA = {
       "parent_discussion": [
         {
           "question": "When the crowd cheered Churchill on the Whitehall balcony, why did he tell them, \"This is your victory!\"?",
-          "answer": "Victory belonged to the whole nation—soldiers, sailors, aircrew, factory women, Land Girls, codebreakers, and families enduring rationing and air raids."
+          "answer": "He wanted to thank ordinary citizens across Britain—saying \"Everyone, man or woman, has done their best\" to win the war together."
         },
         {
-          "question": "Why was VE Day on 8 May 1945 joyful and sad at the same time for many British families?",
-          "answer": "People danced at street parties because bombing in Europe was over, yet many mourned fallen loved ones and troops were still fighting Japan."
+          "question": "Why did Churchill say Britain could enjoy only a \"brief time for rejoicing\" on 8 May 1945?",
+          "answer": "Fighting in Europe was ending, yet hard tasks remained: Japan was still undefeated in the Far East, bombed cities needed rebuilding, and families had to be reunited."
         },
         {
-          "question": "How did pulling together through wartime hardships inspire Britain to build a fairer country after 1945?",
-          "answer": "Having shared shelters, evacuation, and equal rations, Britons voted to rebuild bombed towns and create the free National Health Service in 1948."
+          "question": "Even on a day of cheering and colourful bunting, why do you think it was important for Churchill to be honest about the hard tasks still ahead?",
+          "answer": "Families still had loved ones fighting Japan in the Far East or waiting to come home, and rebuilding bombed cities would take teamwork just like winning the war."
         }
       ],
       "story_check": [
@@ -11774,7 +11774,7 @@ const UNIT_DATA = {
             "Italy had just entered the war"
           ],
           "correctIndex": 1,
-          "feedback": "War in the Far East against Japan continued for three more months until VJ Day in August 1945."
+          "feedback": "Spot on! Churchill reminded the crowd that Japan remained undefeated in the Far East."
         },
         {
           "question": "What four-word tribute did Churchill shout to the ordinary citizens packed along Whitehall?",
@@ -11853,7 +11853,7 @@ const UNIT_DATA = {
         },
         {
           "question": "How did carers Oscar Friedmann and Marie Paneth help the Windermere children rebuild their lives?",
-          "answer": "Through patience, art, football, swimming in Lake Windermere, and English lessons, helping young survivors regain trust and hope."
+          "answer": "Through gentle care, painting, swimming in Lake Windermere, and learning English—with no guards and no barbed wire—helping the children feel safe and build a lifelong family."
         }
       ],
       "story_check": [
@@ -11866,7 +11866,7 @@ const UNIT_DATA = {
             "On steam trains through France"
           ],
           "correctIndex": 1,
-          "feedback": "Ten Royal Air Force Short Stirling bombers flew the 300 children on a mercy airlift from Prague to Carlisle."
+          "feedback": "Ten Royal Air Force Stirling bombers flew the 300 children on a mission of mercy from Prague to Carlisle."
         },
         {
           "question": "Why did some newly arrived boys tuck slices of white bread under their pillows on the first night?",
@@ -11877,7 +11877,7 @@ const UNIT_DATA = {
             "Because bread was rationed to one slice a week"
           ],
           "correctIndex": 1,
-          "feedback": "Carers deliberately kept dining baskets full of bread until the children trusted they would never starve again."
+          "feedback": "After years of starvation, some boys hid spare slices until they saw the baskets of fresh bread never ran out."
         },
         {
           "question": "What sporting honour did fifteen-year-old Windermere survivor Ben Helfgott later achieve?",
@@ -11888,12 +11888,12 @@ const UNIT_DATA = {
             "Winning Wimbledon"
           ],
           "correctIndex": 1,
-          "feedback": "Ben Helfgott went on to captain Britain’s Olympic weightlifting team in 1956 and 1960!"
+          "feedback": "Spot on! Ben Helfgott went on to captain Britain’s Olympic weightlifting team!"
         }
       ],
       "monday_cold_call": {
-        "question": "How did 300 child Holocaust survivors reach Cumbria in August 1945, and why were baskets of bread left piled on their tables?",
-        "answer": "RAF Stirling bombers flew them from Prague to Carlisle; plentiful bread reassured starving camp survivors they would never go hungry again."
+        "question": "How did 300 child survivors reach Lake Windermere in August 1945, and why were baskets of bread left piled on their tables?",
+        "answer": "Ten RAF Stirling bombers flew them from Prague to Carlisle; plentiful bread reassured starving camp survivors that the food would never run out again."
       },
       "hinge_question": "<strong>Think:</strong> How were wartime RAF bombers used for a mission of mercy in August 1945?<br><br><strong>Pair:</strong> Compare the 1938–1939 Kindertransport with the August 1945 Windermere airlift.<br><br><strong>Share:</strong> What does Ben Helfgott’s life teach us about kindness and welcoming refugees?",
       "questions": [
@@ -11907,5 +11907,4 @@ const UNIT_DATA = {
     }
   ]
 };
-if (typeof window !== 'undefined') window.UNIT_DATA = UNIT_DATA;
 export default UNIT_DATA;

@@ -47,8 +47,8 @@
         "answer": "A chimney hole would pull wind through and blow sparks into dry straw, whereas gentle smoke drifting through thatch cured meat and kept insects out."
       },
       {
-        "question": "How did busy Celtic trade across the English Channel accidentally tempt Rome to invade Britain?",
-        "answer": "Ships carrying Cornish tin, wheat, hides, and gold coins proved to Roman leaders just how rich island Britain really was."
+        "question": "Why does this story say Celtic Britons were 'never rough cavemen'—and how did Britain's wealth catch Rome's eye?",
+        "answer": "They built huge triple-walled hillforts, clever roundhouses, and twisted gold torcs, while ships carrying Cornish tin and wheat across the Channel tempted greedy eyes in Rome."
       }
     ],
     "story_check": [
@@ -72,10 +72,10 @@
           "Rain never fell in Iron Age Britain"
         ],
         "correctIndex": 1,
-        "feedback": "Correct! Experimental roundhouses prove that leaving no chimney stopped roof fires while smoking meat in the rafters."
+        "feedback": "Correct! Leaving no chimney hole stopped wind from blowing sparks into dry thatch while gentle smoke cured meat and chased bugs away."
       },
       {
-        "question": "What precious metal neck ring did Celtic smiths twist from gold ropes for tribal leaders?",
+        "question": "What heavy neck ring did Celtic smiths twist from pure gold wires for proud leaders?",
         "options": [
           "A strigil",
           "A pilum",
@@ -83,7 +83,7 @@
           "A groma"
         ],
         "correctIndex": 2,
-        "feedback": "Exactly right! Wealthy Celtic rulers wore heavy twisted gold neck rings called torcs, such as the Snettisham Great Torc."
+        "feedback": "Exactly right! Proud Celtic leaders wore heavy twisted neck rings called torcs."
       }
     ],
     "monday_cold_call": {
@@ -136,15 +136,15 @@
     "parent_discussion": [
       {
         "question": "Why was Emperor Claudius so eager to win a famous battlefield victory in AD 43?",
-        "answer": "Proud Roman senators doubted him because he limped, stammered, and had never led an army, plus Britain had rich mines and wheat farms."
+        "answer": "Proud men in Rome whispered behind his back because he limped, stammered, and had never led an army, and conquering rich Britain would prove every critic wrong."
       },
       {
-        "question": "Why did General Aulus Plautius deliberately pause near the River Thames instead of capturing Camulodunum straight away?",
-        "answer": "He waited so Emperor Claudius could sail over in person with war elephants and claim the final glorious victory himself!"
+        "question": "Why did General Plautius pause near the River Thames instead of marching straight into Camulodunum?",
+        "answer": "He waited so Emperor Claudius could sail over from Italy with towering war elephants and ride in proudly to claim the final victory himself!"
       },
       {
-        "question": "Why were full-time Roman legionaries able to defeat brave Celtic warriors at the River Medway?",
-        "answer": "Legionaries trained every day as one disciplined team in iron strip armour, locking shields into tortoise formations rather than fighting as separate warbands."
+        "question": "General Plautius and 40,000 soldiers did the hard marching and fighting, while Claudius stayed in Britain for just sixteen days—do you think Claudius really earned all the glory?",
+        "answer": "Claudius planned the invasion and brought the shocking war elephants to scare Celtic horses, yet it was General Plautius's marching troops and shield walls that fought past Caratacus at the River Medway."
       }
     ],
     "story_check": [
@@ -168,7 +168,7 @@
           "Spotted leopards"
         ],
         "correctIndex": 2,
-        "feedback": "Correct! Roman historian Cassius Dio recorded that Claudius brought war elephants across for the march on Camulodunum."
+        "feedback": "Correct! Towering grey war elephants marched ashore and terrified Celtic chariot horses with loud trumpet blasts."
       },
       {
         "question": "Which modern English town stands on the site of Camulodunum, where eleven kings surrendered to Claudius?",
@@ -179,12 +179,12 @@
           "York"
         ],
         "correctIndex": 0,
-        "feedback": "Exactly right! Camulodunum is modern Colchester in Essex, Britain's oldest recorded town."
+        "feedback": "Exactly right! Claudius rode proudly into Camulodunum—modern Colchester—as eleven kings bowed to Rome."
       }
     ],
     "monday_cold_call": {
       "question": "Why did Emperor Claudius invade Britain in AD 43, and what surprise animals marched with him into Camulodunum?",
-      "answer": "Claudius needed military glory to prove himself to doubting Roman senators (and wanted Britain's metals and taxes), marching into Camulodunum with towering war elephants."
+      "answer": "Claudius wanted military glory to silence critics who whispered behind his back (and wanted Britain's rich mines), marching into Camulodunum with towering war elephants."
     },
     "hinge_question": "Who truly won Britain for Rome in AD 43—General Plautius and his 40,000 marching soldiers, or Emperor Claudius during his sixteen-day visit?",
     "studio_audio": "/audio/reading/ks2_romans/r1.mp3",
@@ -231,16 +231,16 @@
     "extract": "Queen Boudicca of the Iceni stood tall and fierce before her gathered warriors! Her bright eyes flashed with anger, and her bold voice rang across the plain. Thick tawny-red hair fell right down to her hips.\n\nAround her neck shone a heavy twisted torc of pure gold. Over a bright checked tunic, she pinned a thick woollen cloak with a bronze brooch. Gripping a tall spear in her fist, she filled every onlooker with awe.\n\nRiding in a wooden war chariot beside her two daughters, Boudicca called each tribe to arms! My husband King Prasutagus stayed a true friend to Rome, she cried aloud. Dying, he left half his wealth to Emperor Nero so our home would stay safe.\n\nInstead, greedy Roman men stole Iceni land, demanded cruel taxes, beat me with whips, and hurt my daughters! Today I fight not for gold, she shouted, but as an angry woman avenging lost freedom! Let us win together, or die free rather than live as Roman slaves!",
     "parent_discussion": [
       {
-        "question": "Which vivid details in Cassius Dio's portrait make Queen Boudicca look unforgettable on the battlefield?",
-        "answer": "Her tall build, flashing eyes, harsh bold voice, tawny-red hair reaching her hips, heavy gold torc necklace, chequered tunic, and raised spear."
+        "question": "Which vivid details in the story make Queen Boudicca look so unforgettable in front of her warriors?",
+        "answer": "She was tall with flashing eyes, a bold voice, thick tawny-red hair down to her hips, a heavy twisted gold torc, a bright checked tunic with a woollen cloak, and a tall spear."
       },
       {
-        "question": "What broken Roman promises drove Boudicca and neighbouring tribes to burn Colchester, Londinium, and Verulamium?",
-        "answer": "After King Prasutagus died leaving half his wealth to Rome, greedy officials seized Iceni lands, demanded loans back, flogged Boudicca, and mistreated her daughters."
+        "question": "What cruel Roman actions drove Queen Boudicca to call the tribes to fight?",
+        "answer": "Even though King Prasutagus left half his wealth to Emperor Nero to keep his family safe, greedy Roman men stole Iceni land, demanded cruel taxes, beat Boudicca with whips, and hurt her daughters."
       },
       {
-        "question": "Why is it surprising that Roman historians wrote such a brave, powerful speech for Rome's fiercest British enemy?",
-        "answer": "Tacitus and Dio admitted Roman officials in Britain had behaved greedily, and showing Boudicca's courage made Rome's narrow victory at Watling Street seem even more dramatic."
+        "question": "Boudicca shouted, 'Today I fight not for gold, but as an angry woman avenging lost freedom!' Why do you think her speech made so many warriors ready to follow her?",
+        "answer": "She rode beside her two daughters showing she was fighting to protect her family and freedom after Roman cruelty, not just to win treasure."
       }
     ],
     "story_check": [
@@ -253,34 +253,34 @@
           "The Angles"
         ],
         "correctIndex": 0,
-        "feedback": "Correct! Prasutagus and Boudicca ruled the Iceni tribe in East Anglia (modern Norfolk)."
+        "feedback": "Correct! King Prasutagus and Queen Boudicca ruled the proud Iceni tribe in East Anglia."
       },
       {
-        "question": "How did Roman historian Cassius Dio describe Queen Boudicca's hair and jewellery?",
+        "question": "How does the story describe Queen Boudicca's hair and jewellery?",
         "options": [
           "Short black hair and a silver Roman helmet",
-          "Bright tawny-red hair down to her hips and a heavy twisted gold necklace",
+          "Thick tawny-red hair down to her hips and a heavy twisted gold torc",
           "Braided blonde hair under a horned bronze crown",
           "White hair hidden beneath a silk veil"
         ],
         "correctIndex": 1,
-        "feedback": "Spot on! Dio described a great mass of tawny hair reaching her hips and a heavy gold torc around her neck."
+        "feedback": "Spot on! The story describes thick tawny-red hair falling right down to her hips and a heavy twisted torc of pure gold around her neck."
       },
       {
-        "question": "Which three Roman towns did Boudicca's rebel army burn to a red clay layer before the Battle of Watling Street?",
+        "question": "Why had Boudicca's husband King Prasutagus left half his wealth to Emperor Nero when he died?",
         "options": [
-          "Bath, York, and Chester",
-          "Dover, Richborough, and Pevensey",
-          "Housesteads, Vindolanda, and Arbeia",
-          "Camulodunum (Colchester), Londinium (London), and Verulamium (St Albans)"
+          "To buy war elephants from Italy",
+          "So his family and Iceni home would stay safe under Rome",
+          "To pay for a new Roman bathhouse",
+          "To trade for Cornish tin and wheat"
         ],
-        "correctIndex": 3,
-        "feedback": "Exactly right! Archaeologists digging beneath Colchester, London, and St Albans still hit that scorched AD 60–61 red clay layer today."
+        "correctIndex": 1,
+        "feedback": "Exactly right! Prasutagus stayed a friend to Rome and left half his wealth to Emperor Nero hoping his home would stay safe—only for greedy Romans to steal Iceni land anyway."
       }
     ],
     "monday_cold_call": {
-      "question": "Why did Queen Boudicca rebel in AD 60, and which Roman writers described her appearance and speech?",
-      "answer": "Roman officials broke King Prasutagus's will by seizing Iceni lands, flogging Boudicca, and mistreating her daughters; Roman historians Tacitus and Cassius Dio recorded her story."
+      "question": "Why did Queen Boudicca lead the Iceni rebellion in AD 60–61, and what made her stand out in front of her warriors?",
+      "answer": "Greedy Romans stole Iceni land, demanded cruel taxes, whipped Boudicca, and hurt her daughters; she stood out with tawny-red hair to her hips, a heavy gold torc, a checked tunic, and a tall spear."
     },
     "hinge_question": "Even though Boudicca lost the final Battle of Watling Street in AD 61, why do people still remember her nearly two thousand years later?",
     "studio_audio": "/audio/reading/ks2_romans/r2.mp3",
@@ -328,11 +328,11 @@
     "parent_discussion": [
       {
         "question": "Why did Claudia Severa take the reed pen into her own hand at the bottom of her wooden birthday invitation?",
-        "answer": "A scribe neatly wrote the main message, then Claudia added a warm personal goodbye ('Farewell, my dearest soul!') in her own handwriting."
+        "answer": "After the main letter was written, she took the reed pen herself to add a warm personal goodbye—'I shall expect you, sister! Farewell, my dearest soul!'—to show how much Lepidina meant to her."
       },
       {
-        "question": "What does the second Vindolanda postcard tell us about what Roman soldiers from sunny lands struggled with in northern Britain?",
-        "answer": "Soldiers froze in Northumberland's cold wind and rain, needing care parcels of woollen socks, extra sandals, and warm underpants!"
+        "question": "What does the second wooden postcard tell us about the weather for a border guard at Vindolanda?",
+        "answer": "It was cold and chilly up in Northumberland, so someone sent him a parcel packed with warm woollen socks, two pairs of strong sandals, and two pairs of underpants!"
       },
       {
         "question": "How do the Vindolanda tablets change our picture of Roman forts along the northern frontier?",
@@ -341,15 +341,15 @@
     ],
     "story_check": [
       {
-        "question": "Why did wafer-thin wooden postcards survive at Vindolanda for nearly two thousand years without rotting?",
+        "question": "What preserved the thin wooden ink letters at Vindolanda fort in Northumberland?",
         "options": [
           "They were carved into solid granite blocks",
-          "Wet, oxygen-free mud sealed them away from air and rot",
+          "Wet mud buried and preserved the wooden letters",
           "They were locked inside golden chests in Rome",
-          "Desert sand dried them out"
+          "Hot desert sand dried them out"
         ],
         "correctIndex": 1,
-        "feedback": "Spot on! Just like Must Farm and Coppergate, wet oxygen-free soil at Vindolanda stopped thin wood and carbon ink from rotting."
+        "feedback": "Spot on! Wet mud at Vindolanda preserved hundreds of thin wooden ink letters for nearly two thousand years."
       },
       {
         "question": "What special record does the final greeting on Claudia Severa's 11 September birthday tablet hold?",
@@ -519,16 +519,16 @@
     "extract": "Around AD 410, nearly four hundred years of Roman rule in Britain came to an end. Fierce armies attacked Italy, so Roman soldiers sailed away across the sea. Emperor Honorius wrote warning British towns that they must now guard themselves!\n\nWithout troops watching the shore, Picts and Saxon raiders struck closer every summer. At Hoxne in Suffolk, one rich family decided to hide their best silver underground.\n\nWith great care, they lined a locked oak chest with small boxes and soft cloth. Inside went nearly fifteen thousand gold and silver coins, plus seventy-eight named silver spoons! Beside gold bracelets sat a gleaming silver pepper pot shaped like a noble Roman lady. The family buried that chest deep in the earth, yet nobody ever returned.\n\nOver fifteen hundred years passed by. In 1992, farmer Peter Whatling lost his hammer in a muddy Suffolk field! His friend Eric Lawes used a metal detector, heard a loud beep, and called diggers in to lift Britain's greatest Roman treasure!",
     "parent_discussion": [
       {
-        "question": "Why did wealthy families in eastern Britain bury chests like the Hoxne Hoard around AD 407–410?",
-        "answer": "Roman legions had left to defend Italy and Emperor Honorius warned Britain to defend itself, leaving estates afraid of coastal raiders."
+        "question": "Why did a rich family at Hoxne in Suffolk decide to bury their locked oak chest underground around AD 410?",
+        "answer": "Roman soldiers had sailed away to defend Italy and Emperor Honorius warned British towns to guard themselves, leaving families afraid of Pict and Saxon raiders."
       },
       {
-        "question": "How do archaeologists know the Hoxne family packed their oak chest calmly rather than tossing silver into a hole in panic?",
-        "answer": "Coins, bracelets, spoons, and the silver lady pepper pot were neatly stacked inside smaller wooden boxes padded with cloth and straw—because Eric Lawes called archaeologists immediately instead of digging roughly!"
+        "question": "What clues in the story show the Hoxne family packed their treasure chest with great care instead of throwing it in a hole in a panic?",
+        "answer": "They lined a locked oak chest with small boxes and soft cloth, neatly packing nearly fifteen thousand coins, seventy-eight named silver spoons, gold bracelets, and a silver lady pepper pot—and Eric Lawes wisely called diggers in so it was lifted carefully."
       },
       {
-        "question": "Even though bathhouses crumbled after AD 410, what Roman legacies do we still use in Britain every single day?",
-        "answer": "London (Londinium), straight roads, '-chester' fort towns, our ABC Latin alphabet, Roman numerals on clocks, and months like July and August."
+        "question": "The family buried their oak chest planning to come back one day, yet nobody ever returned—what do you think happened to them, and what Roman legacies did they leave behind in Britain?",
+        "answer": "They may have fled from raiders or never lived to return, yet Roman Britain still left lasting gifts like straight roads, '-chester' towns, Latin letters, and our calendar."
       }
     ],
     "story_check": [
@@ -552,18 +552,18 @@
           "An Iron Age plough"
         ],
         "correctIndex": 0,
-        "feedback": "Correct! Searching for a lost farm hammer led straight to nearly 15,000 Roman gold and silver coins—and they found the hammer too, now in the British Museum!"
+        "feedback": "Correct! Searching for Peter Whatling's lost hammer led straight to nearly 15,000 gold and silver coins—Britain's greatest Roman treasure!"
       },
       {
         "question": "What famous spice container lay packed inside the Hoxne Hoard oak chest alongside 78 silver spoons?",
         "options": [
           "A wooden porridge bowl",
-          "A gilded silver pepper pot shaped like a noble Roman lady",
+          "A gleaming silver pepper pot shaped like a noble Roman lady",
           "A glass claw beaker",
           "A stamped Bell Beaker pot"
         ],
         "correctIndex": 1,
-        "feedback": "Exactly right! Black pepper travelled all the way from India across Roman trade routes to fill that silver pepper pot."
+        "feedback": "Exactly right! Beside gold bracelets and 78 named silver spoons sat a gleaming silver pepper pot shaped like a noble Roman lady."
       }
     ],
     "monday_cold_call": {
