@@ -34,6 +34,10 @@ import {
 } from './data/seo_routes.js';
 import { initShareUtilsGlobals } from './engine/share_utils.js';
 import { openUnifiedTeacherGuidance } from './engine/teacher_guidance_modal.js';
+import { initMobileAppShell } from './mobile_app_shell.js';
+import './mobile_app_shell.css';
+import './mobile_revision_tools.css';
+import './mobile_media_touch.css';
 initShareUtilsGlobals();
 if (typeof window !== 'undefined') {
   window.openUnifiedTeacherGuidance = openUnifiedTeacherGuidance;

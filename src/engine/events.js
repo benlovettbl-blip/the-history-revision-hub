@@ -724,6 +724,13 @@ export function initEventDelegation() {
             p.style.display = p.dataset.panel === tabKey ? 'block' : 'none';
           });
           actionBtns.forEach((btn) => btn.style.display = 'inline-flex');
+          if (typeof window !== 'undefined' && window.innerHeight <= 560) {
+            requestAnimationFrame(() => {
+              try {
+                launchpad.scrollIntoView({ behavior: 'smooth', block: 'start' });
+              } catch (e) {}
+            });
+          }
         }
         break;
       }

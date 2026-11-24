@@ -183,8 +183,32 @@
   body.hh-mobile-pupil-mode:not(.staff-mode-active) .btn-teacher-guidance-launcher,
   body.hh-mobile-pupil-mode:not(.staff-mode-active) .teacher-only-guidance-drawer,
   body.hh-mobile-pupil-mode:not(.staff-mode-active) #btn-cover-modal,
-  body.hh-mobile-pupil-mode:not(.staff-mode-active) #btn-copy-class-link {
+  body.hh-mobile-pupil-mode:not(.staff-mode-active) #btn-copy-class-link,
+  body.hh-mobile-pupil-mode:not(.staff-mode-active) .btn-fullwidth-toggle {
     display: none !important;
+  }
+
+  /* Ensure hero bottom "Inspect artwork" pill never collides with Key Enquiry text on narrow phones */
+  .lesson-hero .lesson-hero-content {
+    padding-bottom: 2.3rem !important;
+  }
+}
+
+/* Compact horizontal bottom bar on short mobile landscape (< 480px tall) to maximise reading/quiz height */
+@media (max-width: 932.98px) and (orientation: landscape) and (max-height: 480px) {
+  #hh-mobile-bottom-nav {
+    min-height: calc(42px + env(safe-area-inset-bottom, 0px)) !important;
+    padding: 2px 8px calc(2px + env(safe-area-inset-bottom, 0px)) 8px !important;
+  }
+  #hh-mobile-bottom-nav .hh-bnav-btn {
+    min-height: 36px !important;
+    flex-direction: row !important;
+    gap: 6px !important;
+    padding: 3px 8px !important;
+    font-size: 0.72rem !important;
+  }
+  #hh-mobile-bottom-nav .hh-bnav-btn i {
+    font-size: 0.92rem !important;
   }
 }
 
@@ -376,9 +400,11 @@
   font-size: 0.74rem;
   color: var(--text-muted, #64748b);
   margin-top: 2px;
-  white-space: nowrap;
+  line-height: 1.32;
   overflow: hidden;
-  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
 
 .hh-lp-btn {

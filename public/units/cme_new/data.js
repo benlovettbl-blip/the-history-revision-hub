@@ -16215,8 +16215,8 @@ const cme_new = {
         },
         {
           "stage": 2,
-          "question": "Which advanced Soviet-supplied weapons did Egyptian forces use in October 1973 to neutralize Israeli air and armoured superiority?",
-          "q": "Which advanced Soviet-supplied weapons did Egyptian forces use in October 1973 to neutralize Israeli air and armoured superiority?",
+          "question": "Which advanced Soviet-supplied weapons did Egyptian forces use in October 1973 to neutralise Israeli air and armoured superiority?",
+          "q": "Which advanced Soviet-supplied weapons did Egyptian forces use in October 1973 to neutralise Israeli air and armoured superiority?",
           "options": [
             "Mobile surface-to-air (SAM) missile batteries and wire-guided anti-tank missiles",
             "Long-range intercontinental ballistic missiles targeting Tel Aviv",
@@ -16257,8 +16257,8 @@ const cme_new = {
         },
         {
           "stage": 3,
-          "question": "What was the name of the fortified Israeli sand rampart defense line along the Suez Canal?",
-          "q": "What was the name of the fortified Israeli sand rampart defense line along the Suez Canal?",
+          "question": "What was the name of the fortified Israeli sand rampart defence line along the Suez Canal?",
+          "q": "What was the name of the fortified Israeli sand rampart defence line along the Suez Canal?",
           "options": [
             "The Maginot Line",
             "The Bar-Lev Line",
@@ -16327,8 +16327,8 @@ const cme_new = {
         },
         {
           "stage": 4,
-          "question": "Which Israeli general led the armored counter-offensive that crossed to the west bank of the Suez Canal?",
-          "q": "Which Israeli general led the armored counter-offensive that crossed to the west bank of the Suez Canal?",
+          "question": "Which Israeli general led the armoured counter-offensive that crossed to the west bank of the Suez Canal?",
+          "q": "Which Israeli general led the armoured counter-offensive that crossed to the west bank of the Suez Canal?",
           "options": [
             "Ariel Sharon",
             "Yitzhak Rabin",
@@ -17252,7 +17252,7 @@ const cme_new = {
           },
           {
             "stage": 3,
-            "question": "What was the name of the fortified Israeli sand rampart defense line along the Suez Canal?",
+            "question": "What was the name of the fortified Israeli sand rampart defence line along the Suez Canal?",
             "answer": "The Bar-Lev Line",
             "explanation": "The Bar-Lev Line was built by Israel after 1967 along the eastern bank of the Suez Canal."
           },
@@ -17276,7 +17276,7 @@ const cme_new = {
           },
           {
             "stage": 2,
-            "question": "Which advanced Soviet-supplied weapons did Egyptian forces use in October 1973 to neutralize Israeli air and armoured superiority?",
+            "question": "Which advanced Soviet-supplied weapons did Egyptian forces use in October 1973 to neutralise Israeli air and armoured superiority?",
             "answer": "Mobile surface-to-air (SAM) missile batteries and wire-guided anti-tank missiles",
             "explanation": "Dense Soviet SAM missile umbrellas shot down dozens of Israeli Skyhawks and Phantoms, while infantry armed with portable anti-tank missiles decimated early Israeli tank counter-attacks."
           },
@@ -17288,7 +17288,7 @@ const cme_new = {
           },
           {
             "stage": 4,
-            "question": "Which Israeli general led the armored counter-offensive that crossed to the west bank of the Suez Canal?",
+            "question": "Which Israeli general led the armoured counter-offensive that crossed to the west bank of the Suez Canal?",
             "answer": "Ariel Sharon",
             "explanation": "General Ariel Sharon commanded the division that crossed the canal at Deversoir."
           },
