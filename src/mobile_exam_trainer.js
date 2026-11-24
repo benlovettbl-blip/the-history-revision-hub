@@ -22,10 +22,16 @@ import {
 
 const trainerState = {
   unitId: 'cme_new',
+  mountId: 'main-content',
+  embeddedInHub: false,
   directory: null,
   selectedLessonIndex: null,
   searchQuery: '',
   activeTariff: 'all',
+  familyFilter: null, // Array<string> of family keys when filtered from Paper Blueprint
+  familySlotLabel: '',
+  weakLessonSet: null, // Optional Set<number> of flagged/unverified lessons
+  weakFilterLabel: '',
   // Map<questionId, { openPanel: 'practise'|'wagoll'|null, activeDrill: 'peel'|'plan'|'examiner'|'blurt', ... }>
   cardUi: new Map(),
   earnedXpSet: new Set(),
@@ -201,9 +207,13 @@ function renderStickyDeckHTML() {
 
   return `
     <div class="met-sticky-deck" role="region" aria-label="GCSE Exam Course and Topic Controls">
-      <div class="met-course-strip" role="tablist" aria-label="GCSE Courses">
-        ${coursePillsHtml}
-      </div>
+      ${
+        trainerState.embeddedInHub
+          ? ''
+          : `<div class="met-course-strip" role="tablist" aria-label="GCSE Courses">
+              ${coursePillsHtml}
+            </div>`
+      }
       <div class="met-search-tariff-row">
         <div class="met-search-wrap">
           <i class="fa-solid fa-magnifying-glass met-search-icon" aria-hidden="true"></i>
@@ -295,18 +305,23 @@ function renderDirectoryViewHTML() {
     .join('');
 
   return `
-    <div class="met-course-banner">
-      <div>
-        <div class="met-course-banner-title">${escapeHtml(dir.courseMeta.fullTitle)}</div>
-        <div class="met-course-banner-sub">${escapeHtml(dir.courseMeta.paperLabel)} &middot; ${dir.totalQuestions} Verified Questions &amp; Grade 9 Answers</div>
-      </div>
-    </div>
     ${
-      ktCardsHtml ||
-      `<div class="met-empty-state">
-        <p style="margin:0 0 8px;font-weight:700;">No ${escapeHtml(tf)} questions in this course.</p>
-        <button type="button" class="met-nav-pill" data-met-action="select-tariff" data-tariff="all">Show All Tariffs</button>
-      </div>`
+      trainerState.embeddedInHub
+        ? ''
+        : `<div class="met-course-banner">
+            <div>
+              <div class="met-course-banner-title">${escapeHtml(dir.courseMeta.fullTitle)}</div>
+              <div class="met-course-banner-sub">${escapeHtml(dir.courseMeta.paperLabel)} &middot; ${dir.totalQuestions} Verified Questions &amp; Grade 9 Answers</div>
+            </div>
+          </div>`
+    }
+    ${
+      ktCardsHtml
+        ? `<div class="met-kt-grid-wrap">${ktCardsHtml}</div>`
+        : `<div class="met-empty-state">
+            <p style="margin:0 0 8px;font-weight:700;">No ${escapeHtml(tf)} questions in this course.</p>
+            <button type="button" class="met-nav-pill" data-met-action="select-tariff" data-tariff="all">Show All Tariffs</button>
+          </div>`
     }
   `;
 }
@@ -913,9 +928,8 @@ function renderStimulusBlockHTML(q) {
         .join('')
     : '';
 
-  // Auto-open primary sources on Source Inference / Follow-Up / Interpretation Diff for instant reading
-  const defaultOpen =
-    hasSources && (q.family === 'inference' || q.family === 'followup' || q.family === 'interp_diff');
+  // Auto-open primary sources & interpretations (Paper 1A & Paper 3) so pupils never miss stimuli
+  const defaultOpen = hasSources;
 
   return `
     <details class="met-stimulus-details" ${defaultOpen ? 'open' : ''}>
@@ -925,7 +939,11 @@ function renderStimulusBlockHTML(q) {
       </summary>
       <div class="met-stimulus-body">
         ${bulletsHtml}
-        ${sourcesHtml}
+        ${
+          sourcesHtml
+            ? `<div class="met-sources-grid ${q.sources.length > 1 ? 'has-multiple-sources' : ''}">${sourcesHtml}</div>`
+            : ''
+        }
       </div>
     </details>
   `;
@@ -934,6 +952,19 @@ function renderStimulusBlockHTML(q) {
 function renderQuestionCardHTML(q, cardIdx, showFullLessonTag = false) {
   const ui = getOrCreateCardState(q);
   const spagSuffix = q.spagMarks ? ' (+4 SPaG)' : '';
+  const stemHtml = q.stemHighlight?.html || escapeHtml(q.question);
+  const trapNoteHtml = q.stemHighlight?.trapWarning
+    ? `<div class="met-stem-trap-note"><i class="fa-solid fa-bullseye" style="margin-top:2px;flex-shrink:0;"></i><span>${escapeHtml(q.stemHighlight.trapWarning)}</span></div>`
+    : '';
+  const dateFenceHtml = q.dateFence
+    ? `
+      <div class="met-date-fence-bar">
+        <span class="met-df-badge">📅 Fence: ${escapeHtml(q.dateFence.fenceLabel)}</span>
+        ${q.dateFence.insideText ? `<span class="met-df-in">✓ Inside: ${escapeHtml(q.dateFence.insideText)}</span>` : ''}
+        ${q.dateFence.outsideText ? `<span class="met-df-out">✕ Outside (0m): ${escapeHtml(q.dateFence.outsideText)}</span>` : ''}
+      </div>
+    `
+    : '';
 
   return `
     <article
@@ -962,7 +993,9 @@ function renderQuestionCardHTML(q, cardIdx, showFullLessonTag = false) {
         </button>
       </div>
 
-      <p class="met-qstem">${escapeHtml(q.question)}</p>
+      <p class="met-qstem">${stemHtml}</p>
+      ${trapNoteHtml}
+      ${dateFenceHtml}
 
       ${renderStimulusBlockHTML(q)}
 
@@ -1008,6 +1041,8 @@ function renderCardsViewHTML() {
 
   const activeLesson = hasLessonSelected ? dir.lessons[trainerState.selectedLessonIndex] : null;
   const isSearchMode = Boolean(qSearch);
+  const hasFamilyFilter = Array.isArray(trainerState.familyFilter) && trainerState.familyFilter.length > 0;
+  const hasWeakFilter = trainerState.weakLessonSet instanceof Set && trainerState.weakLessonSet.size > 0;
 
   let pool = [];
   if (isSearchMode) {
@@ -1021,6 +1056,13 @@ function renderCardsViewHTML() {
     pool = dir.allQuestions;
   }
 
+  if (hasFamilyFilter) {
+    const famSet = new Set(trainerState.familyFilter);
+    pool = pool.filter((q) => famSet.has(q.family));
+  }
+  if (hasWeakFilter) {
+    pool = pool.filter((q) => trainerState.weakLessonSet.has(q.lessonIndex));
+  }
   if (tf !== 'all') {
     pool = pool.filter((q) => q.tariffKey === tf);
   }
@@ -1028,6 +1070,16 @@ function renderCardsViewHTML() {
   const backLabel = `← All Topics in ${dir.courseMeta.pillLabel}`;
   const readLessonIdx =
     activeLesson?.lessonIndex ?? (pool[0] ? pool[0].lessonIndex : 0);
+
+  const slotBannerHtml =
+    hasFamilyFilter || hasWeakFilter
+      ? `
+        <div class="met-active-slot-banner">
+          <span>🎯 ${escapeHtml(trainerState.familySlotLabel || trainerState.weakFilterLabel || 'Filtered Questions')} (${pool.length} ${pool.length === 1 ? 'question' : 'questions'})</span>
+          <button type="button" class="met-slot-clear-btn" data-met-action="reset-filters">✕ Show All Topics</button>
+        </div>
+      `
+      : '';
 
   const headingHtml = isSearchMode
     ? `
@@ -1058,6 +1110,7 @@ function renderCardsViewHTML() {
       `;
 
   return `
+    ${slotBannerHtml}
     <div class="met-viewb-topbar">
       <button type="button" class="met-nav-pill" data-met-action="back-to-directory">
         <span>${escapeHtml(backLabel)}</span>
@@ -1080,6 +1133,8 @@ function renderCardsViewHTML() {
 function isInViewStateB() {
   return (
     Boolean(trainerState.searchQuery.trim()) ||
+    (Array.isArray(trainerState.familyFilter) && trainerState.familyFilter.length > 0) ||
+    (trainerState.weakLessonSet instanceof Set && trainerState.weakLessonSet.size > 0) ||
     (typeof trainerState.selectedLessonIndex === 'number' && trainerState.selectedLessonIndex >= 0)
   );
 }
@@ -1111,11 +1166,11 @@ function rerenderSingleQuestionCard(qId) {
 }
 
 function renderFullTrainerDOM() {
-  const mainEl = document.getElementById('main-content');
+  const mainEl = document.getElementById(trainerState.mountId || 'main-content');
   if (!mainEl) return;
 
   mainEl.innerHTML = `
-    <div class="met-root" id="met-trainer-root">
+    <div class="met-root ${trainerState.embeddedInHub ? 'is-hub-embedded' : ''}" id="met-trainer-root">
       ${renderStickyDeckHTML()}
       <div id="met-dynamic-body">
         ${isInViewStateB() ? renderCardsViewHTML() : renderDirectoryViewHTML()}
@@ -1358,6 +1413,13 @@ function attachTrainerDelegatedEvents(mainEl) {
     if (action === 'reset-filters') {
       trainerState.searchQuery = '';
       trainerState.activeTariff = 'all';
+      trainerState.familyFilter = null;
+      trainerState.familySlotLabel = '';
+      trainerState.weakLessonSet = null;
+      trainerState.weakFilterLabel = '';
+      if (typeof window !== 'undefined') {
+        window.dispatchEvent(new CustomEvent('hh:exam-slot-filter-cleared'));
+      }
       renderFullTrainerDOM();
       return;
     }
@@ -1367,7 +1429,9 @@ function attachTrainerDelegatedEvents(mainEl) {
       if (!isNaN(idx) && idx >= 0) {
         trainerState.selectedLessonIndex = idx;
         updateBodyRegionOnly();
-        window.scrollTo?.({ top: 0, behavior: 'instant' });
+        if (!trainerState.embeddedInHub) {
+          window.scrollTo?.({ top: 0, behavior: 'instant' });
+        }
       }
       return;
     }
@@ -1376,8 +1440,17 @@ function attachTrainerDelegatedEvents(mainEl) {
       stopActiveSpeechAndMic();
       trainerState.selectedLessonIndex = null;
       trainerState.searchQuery = '';
+      trainerState.familyFilter = null;
+      trainerState.familySlotLabel = '';
+      trainerState.weakLessonSet = null;
+      trainerState.weakFilterLabel = '';
+      if (typeof window !== 'undefined') {
+        window.dispatchEvent(new CustomEvent('hh:exam-slot-filter-cleared'));
+      }
       renderFullTrainerDOM();
-      window.scrollTo?.({ top: 0, behavior: 'instant' });
+      if (!trainerState.embeddedInHub) {
+        window.scrollTo?.({ top: 0, behavior: 'instant' });
+      }
       return;
     }
 
@@ -1703,6 +1776,8 @@ export async function renderMobileExamTrainer(rawUnitId, options = {}) {
   const resolvedUnitId = resolveGcseExamUnitId(rawUnitId);
   const switchedCourse = trainerState.unitId !== resolvedUnitId;
   trainerState.unitId = resolvedUnitId;
+  trainerState.mountId = options.mountId || 'main-content';
+  trainerState.embeddedInHub = Boolean(options.embeddedInHub);
 
   // Keep global unit context synchronized if redirected from a KS2/KS3 unit
   state.selectedUnitId = resolvedUnitId;
@@ -1714,13 +1789,20 @@ export async function renderMobileExamTrainer(rawUnitId, options = {}) {
     trainerState.searchQuery = '';
     trainerState.activeTariff = 'all';
     trainerState.selectedLessonIndex = null;
+    trainerState.familyFilter = null;
+    trainerState.familySlotLabel = '';
+    trainerState.weakLessonSet = null;
+    trainerState.weakFilterLabel = '';
   }
 
-  const mainEl = typeof document !== 'undefined' ? document.getElementById('main-content') : null;
+  const mainEl =
+    typeof document !== 'undefined'
+      ? document.getElementById(trainerState.mountId || 'main-content')
+      : null;
   if (mainEl && !trainerState.directory) {
     mainEl.innerHTML = `
-      <div class="met-root" style="padding-top:24px;text-align:center;opacity:0.75;">
-        <i class="fa-solid fa-spinner fa-spin"></i> Loading GCSE Exam Trainer...
+      <div class="met-root ${trainerState.embeddedInHub ? 'is-hub-embedded' : ''}" style="padding-top:24px;text-align:center;opacity:0.75;">
+        <i class="fa-solid fa-spinner fa-spin"></i> Loading GCSE Exam Questions...
       </div>
     `;
   }
@@ -1763,12 +1845,97 @@ export async function renderMobileExamTrainer(rawUnitId, options = {}) {
   if (typeof options.tariff === 'string' && ['all', '4m', '8m', '12m', '16m'].includes(options.tariff)) {
     trainerState.activeTariff = options.tariff;
   }
+  if (Array.isArray(options.familyFilter)) {
+    trainerState.familyFilter = options.familyFilter.length > 0 ? options.familyFilter : null;
+    trainerState.familySlotLabel = options.familySlotLabel || '';
+  } else if (options.familyFilter === null) {
+    trainerState.familyFilter = null;
+    trainerState.familySlotLabel = '';
+  }
+  if (options.weakLessonSet instanceof Set) {
+    trainerState.weakLessonSet = options.weakLessonSet.size > 0 ? options.weakLessonSet : null;
+    trainerState.weakFilterLabel = options.weakFilterLabel || '';
+  } else if (options.weakLessonSet === null) {
+    trainerState.weakLessonSet = null;
+    trainerState.weakFilterLabel = '';
+  }
 
   renderFullTrainerDOM();
 
   if (targetQuestionNum !== null) {
     highlightDeepLinkedCard(targetQuestionNum);
   }
+}
+
+/**
+ * Renders live interactive Question & Grade 9 WAGOLL cards directly inside a Slide-Over Drawer
+ * (used by Tab 2 Spec Checklist & Mind Map so pupils never lose their map position).
+ */
+export async function renderSlideOverQuestionCards(
+  containerEl,
+  rawUnitId,
+  { lessonIndex = null, searchTerm = '', openMode = 'practise' } = {},
+) {
+  if (!containerEl) return;
+  const resolvedUnitId = resolveGcseExamUnitId(rawUnitId);
+  trainerState.unitId = resolvedUnitId;
+  const directory = await buildUnitExamDirectory(resolvedUnitId);
+  trainerState.directory = directory;
+
+  let matches = [];
+  const cleanTerm = String(searchTerm || '').trim().toLowerCase();
+
+  if (cleanTerm) {
+    const tokens = cleanTerm
+      .split(/\s+/)
+      .map((t) => t.replace(/[^a-z0-9-]/g, ''))
+      .filter((t) => t.length >= 3);
+    if (tokens.length > 0) {
+      matches = directory.allQuestions.filter((q) =>
+        tokens.some((tok) => q.searchHaystack.includes(tok)),
+      );
+    }
+  }
+
+  if (
+    matches.length === 0 &&
+    typeof lessonIndex === 'number' &&
+    directory.lessons[lessonIndex]?.questions?.length
+  ) {
+    matches = directory.lessons[lessonIndex].questions;
+  } else if (typeof lessonIndex === 'number' && matches.length > 0) {
+    // Rank exact lesson matches first!
+    matches.sort((a, b) => {
+      const aHit = a.lessonIndex === lessonIndex ? 0 : 1;
+      const bHit = b.lessonIndex === lessonIndex ? 0 : 1;
+      return aHit - bHit;
+    });
+  }
+
+  if (matches.length === 0) {
+    matches = directory.allQuestions.slice(0, 4);
+  }
+
+  const topMatches = matches.slice(0, 6);
+  if (topMatches[0] && (openMode === 'practise' || openMode === 'wagoll')) {
+    const firstUi = getOrCreateCardState(topMatches[0]);
+    firstUi.openPanel = openMode;
+  }
+
+  containerEl.innerHTML = `
+    <div class="met-root is-hub-embedded" id="met-trainer-root" style="padding:0;">
+      <div class="met-cards-stack">
+        ${topMatches.map((q, idx) => renderQuestionCardHTML(q, idx, true)).join('')}
+      </div>
+    </div>
+  `;
+
+  attachTrainerDelegatedEvents(containerEl);
+}
+
+export function stopExamTrainerAudioAndTimers() {
+  stopActiveSpeechAndMic();
+  clearAllPlanTimers();
 }
 
 if (typeof window !== 'undefined') {

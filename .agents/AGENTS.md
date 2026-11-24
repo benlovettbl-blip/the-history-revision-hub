@@ -15,7 +15,7 @@ STRICT RULE: You are STRICTLY FORBIDDEN from using the name of the user's school
 ---
 
 ## 2. Autonomous Execution, Containment & High-Signal Communication
-1. **Zero Memory Burden on the User:** Never expect the user to remember CLI syntax, database sync steps, or file paths. Execute full end-to-end synchronization across `data/*.json`, `public/data/*.json`, `database.json`, `public/database.json`, `units/*/data.js`, and `pupil_workbook.html`, validate (`npm run audit:tasks` / `npm run sync:unit <unit_id>`), and report back cleanly.
+1. **Zero Memory Burden & Pre-Planning Consumer-Graph Audit (Zero Silo Thinking):** Never expect the user to remember CLI syntax, database sync steps, file paths, or downstream features. Whenever planning or auditing any curriculum/specification change, **Step 0 MUST run an upfront repo-wide consumer scan across ALL digital and print surfaces** (`narrative_blocks`, `visual_story_sheet` infographics + card audio, `workbook_stages`, `exam_practice`/WAGOLLs/mock banks, next-lesson `do_now`, `vocab`/`flashcards`/`vocab_cloze_text`, `sources`, `quiz`, `Arcade` + showcase RPGs, `Plenary Arena`, `Blurt`, `Living Timelines`, `spec_trees`, `mindmaps`, `Textbooks`, `Workbooks/Markschemes`, `Retrieval Companions`, and `Teacher Guides`) checking **both** inward coverage AND outward period-boundary fouls before presenting a plan — never wait for the user to prompt surface by surface.
 2. **Zero-Prompt Tablet Handoff:** Whenever the user opens with `"hi"`, `"hey"`, `"where are we?"`, or `"continue"`, immediately read `.agents/task.md` and the latest git commit, then reply with a concise 3-bullet briefing: (a) Exact project status, (b) Last completed work, and (c) Single recommended next step.
 3. **High-Signal Output Standard & Bold AI Model Guidance (Zero Clutter):**
    - Finish turns with a concise summary, clickable `file://` links, and **at most ONE single, clear next step** (1–2 sentences).
@@ -33,6 +33,7 @@ Before executing any specialized publishing or generation workflow, read the mat
 - **KS2 Textbooks (8p / 16p Single Wide-Margin Column):** `.agents/skills/ks2-classroom-textbook-engine/SKILL.md`
 - **KS3 Textbooks (8p / 12p Pure Narrative Anthology):** `.agents/skills/ks3-classroom-textbook-engine/SKILL.md`
 - **GCSE 28-Page Master Textbooks (Zero Maps on Page 3):** `.agents/skills/gcse-classroom-textbook-engine/SKILL.md`
+- **Exam Specification Word-Lock & New Spec Units (Edexcel / AQA / OCR / iGCSE / A-Level):** `.agents/skills/exam-specification-word-lock-engine/SKILL.md`
 - **KS3 Unit Orchestration & Stage Sync:** `.agents/skills/ks3-publishing-engine/SKILL.md`
 - **KS3 & GCSE Pupil Workbooks + Edexcel Tariffs:** `.agents/skills/pupil-workbook-engine/SKILL.md`
 - **Master Knowledge Retrieval Companions ("Quiz Packs"):** `.agents/skills/retrieval-companion-engine/SKILL.md`
@@ -57,6 +58,10 @@ Before executing any specialized publishing or generation workflow, read the mat
    - **KS3 (Years 7–9 / Ages 11–14):** `80–110` words per block (strict cap `120w`). Exactly 2 paragraphs (`[X.1]`, `[X.2]`, ~40–55w each). Use accessible framing (*"The Traditional View"* vs *"The Modern View"*).
    - **GCSE (Years 10–11 / Ages 14–16):** `110–140` words per block (strict cap `150w`). Exactly 2 paragraphs (`[X.1]`, `[X.2]`, ~55–70w each). Anchor strictly to Pearson Edexcel specification points (2–3 high-yield points per event; zero university-level jargon inflation).
 4. **Zero AI Corporate Jargon:** Never use phrases like *"Specification Mastery & Synthesis"*, *"Holistic Framework"*, *"Synergistic Learning"*, or *"Pedagogical Ecosystem"*. Write in authentic veteran history-teacher and examiner language.
+5. **Mandatory Specification Word-Lock & Zero-Synonym Substitution Law (All Exam-Board Units):**
+   - **Zero Unregistered Exam Units:** Before authoring ANY new GCSE, KS4, iGCSE, or A-Level unit (Edexcel `1HI0`, AQA `8145`, OCR, Eduqas, etc.), Step 0 MUST create/verify its official specification JSON in `public/data/specifications/` and register the `unit_id` in `data/specifications/spec_unit_registry.json`.
+   - **Key-Topic-Level Verbatim Terminology:** Never substitute synonyms for official specification stem phrases (*vagrancy* vs `vagabondage`, *BDM* vs `League of German Maidens`, *Nation of Islam* vs `Black Muslims`, or omitting `Israeli reprisals` in KT3 because `reprisals` appeared in KT2). Every substantive specification noun, group, law, treaty, and concept MUST appear verbatim inside the student-facing `lesson.narrative_blocks` **of that exact Key Topic** (never hidden solely in `teacher_notes` or `quiz`), as well as in `data/spec_trees/<unit_id>.json` and `data/mindmaps/<unit_id>.json`.
+   - **Pre-TTS Gate (`npm run audit:spec-lock`):** Always pass `node scripts/audit_gcse_spec_word_lock.cjs <unit_id> --strict` (`0` KT gaps, enforced automatically via `scripts/lint_gcse_dok.cjs` inside `npm run sync:unit`) BEFORE running `sync_unit_studio_media.mjs` so Studio TTS audio is synthesized with 100% specification fidelity on the first pass.
 
 ---
 

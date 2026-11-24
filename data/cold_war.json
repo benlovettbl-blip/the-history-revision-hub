@@ -1127,17 +1127,17 @@
         },
         {
           "stage": 4,
-          "question": "On what date did American scientists successfully detonate the world’s first atomic weapon in the New Mexico desert?",
-          "q": "On what date did American scientists successfully detonate the world’s first atomic weapon in the New Mexico desert?",
+          "question": "How did Joseph Stalin respond to the United States holding a temporary nuclear monopoly in 1945?",
+          "q": "How did Joseph Stalin respond to the United States holding a temporary nuclear monopoly in 1945?",
           "options": [
-            "6 August 1945",
-            "16 July 1945",
-            "8 May 1945",
-            "1 September 1939"
+            "He invited American scientists to inspect Soviet military bases in Moscow",
+            "He ended Marxist-Leninist central planning in favour of free-market capitalism",
+            "He ordered Soviet physicists to build a Soviet atomic bomb at top speed, sparking a nuclear arms race",
+            "He agreed to dismantle the Soviet Red Army across Eastern Europe"
           ],
-          "answer": "16 July 1945",
-          "a": "16 July 1945",
-          "explanation": "The Trinity nuclear test took place on 16 July 1945 in the New Mexico desert."
+          "answer": "He ordered Soviet physicists to build a Soviet atomic bomb at top speed, sparking a nuclear arms race",
+          "a": "He ordered Soviet physicists to build a Soviet atomic bomb at top speed, sparking a nuclear arms race",
+          "explanation": "Viewing America's atomic monopoly as blackmail designed to intimidate Moscow, Stalin ordered Soviet scientists to develop their own bomb urgently, igniting a dangerous nuclear arms race."
         },
         {
           "stage": 4,
@@ -6427,17 +6427,17 @@
         },
         {
           "stage": 3,
-          "question": "On what date in 1962 did US Navy warships surround Cuba to enforce President Kennedy's quarantine?",
-          "q": "On what date in 1962 did US Navy warships surround Cuba to enforce President Kennedy's quarantine?",
+          "question": "Which Cold War flashpoint in Europe did President Kennedy fear the Soviet Union would attack if the US bombed Cuba?",
+          "q": "Which Cold War flashpoint in Europe did President Kennedy fear the Soviet Union would attack if the US bombed Cuba?",
           "options": [
-            "14 August",
-            "1 January",
-            "25 December",
-            "22 October"
+            "Budapest",
+            "Prague",
+            "Warsaw",
+            "West Berlin"
           ],
-          "answer": "22 October",
-          "a": "22 October",
-          "explanation": "On 22 October 1962, US warships established the naval quarantine around Cuba while American forces moved to DEFCON 2."
+          "answer": "West Berlin",
+          "a": "West Berlin",
+          "explanation": "Kennedy rejected military airstrikes on Cuba partly because killing Soviet troops there could provoke a direct Soviet counter-attack against vulnerable West Berlin."
         },
         {
           "stage": 4,
@@ -9730,17 +9730,17 @@
         },
         {
           "stage": 1,
-          "question": "On what date did East German troops begin unrolling barbed wire and building the Berlin Wall?",
-          "q": "On what date did East German troops begin unrolling barbed wire and building the Berlin Wall?",
+          "question": "Why did Nikita Khrushchev and Walter Ulbricht order the Berlin Wall to be built overnight in August 1961?",
+          "q": "Why did Nikita Khrushchev and Walter Ulbricht order the Berlin Wall to be built overnight in August 1961?",
           "options": [
-            "9 November 1989",
-            "24 June 1948",
-            "13 August 1961",
-            "1 May 1960"
+            "To stop a damaging 'brain drain' of skilled doctors, teachers, and engineers fleeing to the West",
+            "To prevent West German troops from invading Poland",
+            "To enforce Mikhail Gorbachev's Sinatra Doctrine",
+            "To block Allied food convoys during the Berlin Airlift"
           ],
-          "answer": "13 August 1961",
-          "a": "13 August 1961",
-          "explanation": "Construction of the Berlin Wall commenced in the dead of night on Sunday, 13 August 1961."
+          "answer": "To stop a damaging 'brain drain' of skilled doctors, teachers, and engineers fleeing to the West",
+          "a": "To stop a damaging 'brain drain' of skilled doctors, teachers, and engineers fleeing to the West",
+          "explanation": "Between 1949 and 1961, over 2.7 million East Germans—many of them young skilled workers—escaped west through Berlin, threatening East Germany's survival."
         },
         {
           "stage": 1,
@@ -9912,17 +9912,17 @@
         },
         {
           "stage": 4,
-          "question": "On what historic date in 1989 was the Berlin Wall breached by crowds of jubilant citizens?",
-          "q": "On what historic date in 1989 was the Berlin Wall breached by crowds of jubilant citizens?",
+          "question": "What major political transformation in Germany followed directly from crowds tearing down the Berlin Wall in 1989?",
+          "q": "What major political transformation in Germany followed directly from crowds tearing down the Berlin Wall in 1989?",
           "options": [
-            "13 August 1961",
-            "9 November 1989",
-            "25 December 1991",
-            "3 October 1990"
+            "The immediate expansion of the Warsaw Pact into Western Europe",
+            "The peaceful reunification of East and West Germany in 1990",
+            "The permanent division of Berlin into four separate military zones",
+            "A Soviet Red Army invasion to restore Walter Ulbricht to power"
           ],
-          "answer": "9 November 1989",
-          "a": "9 November 1989",
-          "explanation": "On the night of 9 November 1989, East Berliners crossed the borders and began tearing down the wall."
+          "answer": "The peaceful reunification of East and West Germany in 1990",
+          "a": "The peaceful reunification of East and West Germany in 1990",
+          "explanation": "Once overwhelmed border guards lifted the barriers and citizens tore down the Berlin Wall in November 1989, East Germany's communist regime collapsed, leading to German reunification in 1990."
         },
         {
           "stage": 5,
@@ -9940,17 +9940,17 @@
         },
         {
           "stage": 5,
-          "question": "On what date in 1991 did Mikhail Gorbachev resign and the Soviet flag get lowered over the Kremlin for the final time?",
-          "q": "On what date in 1991 did Mikhail Gorbachev resign and the Soviet flag get lowered over the Kremlin for the final time?",
+          "question": "What was the decisive political consequence of the failed August 1991 hardline communist coup in Moscow?",
+          "q": "What was the decisive political consequence of the failed August 1991 hardline communist coup in Moscow?",
           "options": [
-            "9 November 1989",
-            "1 January 1992",
-            "31 December 1990",
-            "25 December 1991"
+            "Mikhail Gorbachev banned all independent elections across the fifteen Soviet republics",
+            "The United States and the USSR signed a new military alliance against Western Europe",
+            "Communist Party authority collapsed, republic after republic voted for independence, and the USSR dissolved",
+            "Hardline communists successfully restored the Brezhnev Doctrine across Eastern Europe"
           ],
-          "answer": "25 December 1991",
-          "a": "25 December 1991",
-          "explanation": "On Christmas Day 1991, the USSR formally dissolved into fifteen sovereign independent republics."
+          "answer": "Communist Party authority collapsed, republic after republic voted for independence, and the USSR dissolved",
+          "a": "Communist Party authority collapsed, republic after republic voted for independence, and the USSR dissolved",
+          "explanation": "After Boris Yeltsin rallied crowds to defeat the August 1991 coup, Communist Party authority shattered, leading Soviet republics to break away and Gorbachev to resign in December 1991."
         },
         {
           "stage": 5,

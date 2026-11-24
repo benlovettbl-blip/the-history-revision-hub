@@ -1,0 +1,2881 @@
+{
+  "unitId": "usa",
+  "schemaVersion": "v8-4ring-cards",
+  "optionCode": "1HI0/33",
+  "paperType": "Paper 3",
+  "paperLabel": "Paper 3 · Modern Depth Study",
+  "courseTitle": "The USA, 1954–75: Conflict at Home & Abroad",
+  "examDateBoundary": "1954–1975",
+  "disclaimer": "Aligned to Pearson Edexcel GCSE (9–1) History (1HI0). Independent educational resource — not endorsed by Pearson.",
+  "contextBoundaryNote": "Earlier precedents such as Plessy v. Ferguson (1896), CORE founding (1942), and Executive Order 9981 (1948) explain the early 1950s position; Edexcel Option 33 strictly examines 1954–75.",
+  "root": {
+    "id": "root",
+    "tier": 0,
+    "label": "USA: Civil Rights & Vietnam",
+    "subLabel": "Edexcel Option 33 · 1954–75",
+    "dateChip": "1954–75",
+    "gloss": "Paper 3 Modern Depth Study examining domestic US civil rights struggles and American involvement in Vietnam from 1954 to 1975.",
+    "children": [
+      {
+        "id": "kt1",
+        "keyTopicNumber": 1,
+        "tier": 1,
+        "side": "left",
+        "color": "#2563eb",
+        "label": "KT1: Civil Rights Movement",
+        "dateChip": "1954–60",
+        "lessonIndex": 0,
+        "stageIndex": 0,
+        "searchTerm": "Civil rights movement 1954–60",
+        "gloss": "Key topic 1: The development of the civil rights movement, 1954–60 — early 1950s segregation, Brown and Little Rock, the Montgomery Bus Boycott, and white opposition.",
+        "children": [
+          {
+            "id": "kt1_1",
+            "code": "1.1",
+            "tier": 2,
+            "label": "1.1 Position in Early 1950s",
+            "dateChip": "Early 1950s",
+            "lessonIndex": 0,
+            "stageIndex": 0,
+            "searchTerm": "Segregation discrimination voting rights",
+            "q3dDebate": "Legalised Southern Jim Crow statutes & voter disenfranchisement vs economic dependency & vigilante terror; plus elite NAACP lawsuits vs CORE grassroots direct action.",
+            "gloss": "Q3d Core Debate: Legalised Southern Jim Crow statutes & voter disenfranchisement vs economic dependency & vigilante terror; plus elite NAACP lawsuits vs CORE grassroots direct action.",
+            "children": [
+              {
+                "id": "kt1_1_s1",
+                "tier": 3,
+                "label": "Southern Jim Crow Segregation",
+                "dateChip": "Early 1950s",
+                "lessonIndex": 0,
+                "stageIndex": 0,
+                "searchTerm": "Plessy v. Ferguson Jim Crow",
+                "gloss": "Seventeen Southern states and Washington D.C. enforced legal de jure segregation and daily racial discrimination across schools, transport, and courts.",
+                "children": [
+                  {
+                    "id": "kt1_1_s1_c1",
+                    "tier": 4,
+                    "tag": "Why",
+                    "label": "1896 Plessy Legal Shield",
+                    "detail": "The Supreme Court separate-but-equal precedent let Southern states enforce racial separation legally.",
+                    "lessonIndex": 0,
+                    "stageIndex": 0,
+                    "searchTerm": "Plessy v. Ferguson",
+                    "gloss": "The Supreme Court separate-but-equal precedent let Southern states enforce racial separation legally."
+                  },
+                  {
+                    "id": "kt1_1_s1_c2",
+                    "tier": 4,
+                    "tag": "Evidence",
+                    "label": "17 Segregated Southern States",
+                    "detail": "Black schools, hospitals, and buses received starved tax budgets while Northern cities kept de facto bias.",
+                    "lessonIndex": 0,
+                    "stageIndex": 1,
+                    "searchTerm": "Jim Crow codes",
+                    "gloss": "Black schools, hospitals, and buses received starved tax budgets while Northern cities kept de facto bias."
+                  },
+                  {
+                    "id": "kt1_1_s1_c3",
+                    "tier": 4,
+                    "tag": "View 1",
+                    "label": "State Laws Locked In Inequality",
+                    "detail": "Binding Jim Crow statutes and all-white criminal juries gave legal immunity to Southern white supremacy.",
+                    "lessonIndex": 0,
+                    "stageIndex": 1,
+                    "searchTerm": "Jim Crow codes",
+                    "gloss": "Binding Jim Crow statutes and all-white criminal juries gave legal immunity to Southern white supremacy."
+                  },
+                  {
+                    "id": "kt1_1_s1_c4",
+                    "tier": 4,
+                    "tag": "View 2",
+                    "label": "Sharecropper Poverty & Terror",
+                    "detail": "Tenant eviction threats, job sackings, and unpunished vigilante violence silenced daily Black protest.",
+                    "lessonIndex": 0,
+                    "stageIndex": 1,
+                    "searchTerm": "disenfranchisement",
+                    "gloss": "Tenant eviction threats, job sackings, and unpunished vigilante violence silenced daily Black protest."
+                  }
+                ]
+              },
+              {
+                "id": "kt1_1_s2",
+                "tier": 3,
+                "label": "Southern Voting Rights Barriers",
+                "dateChip": "Early 1950s",
+                "lessonIndex": 0,
+                "stageIndex": 2,
+                "searchTerm": "poll taxes literacy tests",
+                "gloss": "White registrars stripped Black citizens of voting rights in the Southern states through poll taxes, rigged literacy tests, and intimidation.",
+                "children": [
+                  {
+                    "id": "kt1_1_s2_c1",
+                    "tier": 4,
+                    "tag": "Why",
+                    "label": "Poll Taxes & Literacy Traps",
+                    "detail": "Impoverished Black applicants faced cumulative fees and impossible constitutional tests from white registrars.",
+                    "lessonIndex": 0,
+                    "stageIndex": 2,
+                    "searchTerm": "poll taxes and literacy tests",
+                    "gloss": "Impoverished Black applicants faced cumulative fees and impossible constitutional tests from white registrars."
+                  },
+                  {
+                    "id": "kt1_1_s2_c2",
+                    "tier": 4,
+                    "tag": "Evidence",
+                    "label": "Under 5% Mississippi Voters",
+                    "detail": "Grandfather clauses protected poor whites while Black registration stayed below five percent in Mississippi.",
+                    "lessonIndex": 0,
+                    "stageIndex": 2,
+                    "searchTerm": "poll taxes and literacy tests",
+                    "gloss": "Grandfather clauses protected poor whites while Black registration stayed below five percent in Mississippi."
+                  },
+                  {
+                    "id": "kt1_1_s2_c3",
+                    "tier": 4,
+                    "tag": "View 1",
+                    "label": "Disenfranchisement Blocked Reform",
+                    "detail": "Without votes, Black Southerners could not elect fair sheriffs, sit on juries, or repeal Jim Crow laws.",
+                    "lessonIndex": 0,
+                    "stageIndex": 2,
+                    "searchTerm": "disenfranchisement",
+                    "gloss": "Without votes, Black Southerners could not elect fair sheriffs, sit on juries, or repeal Jim Crow laws."
+                  },
+                  {
+                    "id": "kt1_1_s2_c4",
+                    "tier": 4,
+                    "tag": "View 2",
+                    "label": "Reprisals Backed Registrar Rules",
+                    "detail": "Cross-burnings, bank foreclosures, and sackings deterred Black voters even where legal loopholes failed.",
+                    "lessonIndex": 0,
+                    "stageIndex": 2,
+                    "searchTerm": "southern registrars and vigilantes",
+                    "gloss": "Cross-burnings, bank foreclosures, and sackings deterred Black voters even where legal loopholes failed."
+                  }
+                ]
+              },
+              {
+                "id": "kt1_1_s3",
+                "tier": 3,
+                "label": "Work of NAACP & CORE",
+                "dateChip": "1942–54",
+                "lessonIndex": 0,
+                "stageIndex": 3,
+                "searchTerm": "NAACP CORE Thurgood Marshall",
+                "gloss": "Early civil rights organisations including the NAACP and CORE challenged Southern discrimination through federal test cases and non-violent sit-ins.",
+                "children": [
+                  {
+                    "id": "kt1_1_s3_c1",
+                    "tier": 4,
+                    "tag": "Why",
+                    "label": "WW2 Double V & Truman Order",
+                    "detail": "One million Black veterans and Executive Order 9981 (1948) raised expectations for domestic equality.",
+                    "lessonIndex": 0,
+                    "stageIndex": 4,
+                    "searchTerm": "Executive Order 9981",
+                    "gloss": "One million Black veterans and Executive Order 9981 (1948) raised expectations for domestic equality."
+                  },
+                  {
+                    "id": "kt1_1_s3_c2",
+                    "tier": 4,
+                    "tag": "Evidence",
+                    "label": "Marshall & 1947 Bus Ride",
+                    "detail": "Thurgood Marshall won Sweatt v. Painter (1950) while CORE staged the 1947 Journey of Reconciliation.",
+                    "lessonIndex": 0,
+                    "stageIndex": 3,
+                    "searchTerm": "NAACP Legal Defense Fund",
+                    "gloss": "Thurgood Marshall won Sweatt v. Painter (1950) while CORE staged the 1947 Journey of Reconciliation."
+                  },
+                  {
+                    "id": "kt1_1_s3_c3",
+                    "tier": 4,
+                    "tag": "View 1",
+                    "label": "NAACP Courts Cracked Plessy",
+                    "detail": "Fourteenth Amendment lawsuits by the Legal Defense Fund dismantled segregation where state politics was shut.",
+                    "lessonIndex": 0,
+                    "stageIndex": 3,
+                    "searchTerm": "14th Amendment Equal Protection",
+                    "gloss": "Fourteenth Amendment lawsuits by the Legal Defense Fund dismantled segregation where state politics was shut."
+                  },
+                  {
+                    "id": "kt1_1_s3_c4",
+                    "tier": 4,
+                    "tag": "View 2",
+                    "label": "CORE Pioneered Direct Action",
+                    "detail": "Interracial sit-ins and bus rides showed courtroom victories needed grassroots protest to force compliance.",
+                    "lessonIndex": 0,
+                    "stageIndex": 3,
+                    "searchTerm": "CORE",
+                    "gloss": "Interracial sit-ins and bus rides showed courtroom victories needed grassroots protest to force compliance."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt1_2",
+            "code": "1.2",
+            "tier": 2,
+            "label": "1.2 Education: Brown & Little Rock",
+            "dateChip": "1954–58",
+            "lessonIndex": 1,
+            "stageIndex": 0,
+            "searchTerm": "Brown v. Topeka Little Rock",
+            "q3dDebate": "Brown v. Topeka & Eisenhower deploying the 101st Airborne at Little Rock as landmark federal breakthroughs vs hollow victories stalled by Massive Resistance and school closures.",
+            "gloss": "Q3d Core Debate: Brown v. Topeka & Eisenhower deploying the 101st Airborne at Little Rock as landmark federal breakthroughs vs hollow victories stalled by Massive Resistance and school closures.",
+            "children": [
+              {
+                "id": "kt1_2_s1",
+                "tier": 3,
+                "label": "Brown v. Topeka Case (1954)",
+                "dateChip": "May 1954",
+                "lessonIndex": 1,
+                "stageIndex": 0,
+                "searchTerm": "Brown v. Board of Education",
+                "gloss": "In the Brown v. Topeka case (1954), Chief Justice Earl Warren ruled unanimously that segregated public schools were inherently unequal.",
+                "children": [
+                  {
+                    "id": "kt1_2_s1_c1",
+                    "tier": 4,
+                    "tag": "Why",
+                    "label": "NAACP Class-Action & Doll Tests",
+                    "detail": "Thurgood Marshall combined five school lawsuits with Clark doll tests proving psychological harm to children.",
+                    "lessonIndex": 1,
+                    "stageIndex": 0,
+                    "searchTerm": "psychological doll tests",
+                    "gloss": "Thurgood Marshall combined five school lawsuits with Clark doll tests proving psychological harm to children."
+                  },
+                  {
+                    "id": "kt1_2_s1_c2",
+                    "tier": 4,
+                    "tag": "Evidence",
+                    "label": "Unanimous 9–0 Warren Verdict",
+                    "detail": "On 17 May 1954, Earl Warren overturned Plessy in public education under the Fourteenth Amendment.",
+                    "lessonIndex": 1,
+                    "stageIndex": 0,
+                    "searchTerm": "Chief Justice Earl Warren",
+                    "gloss": "On 17 May 1954, Earl Warren overturned Plessy in public education under the Fourteenth Amendment."
+                  },
+                  {
+                    "id": "kt1_2_s1_c3",
+                    "tier": 4,
+                    "tag": "View 1",
+                    "label": "Shattered Segregated Law",
+                    "detail": "Stripping Jim Crow of constitutional legitimacy inspired Black Southerners to mount wider civil rights protests.",
+                    "lessonIndex": 1,
+                    "stageIndex": 0,
+                    "searchTerm": "Brown v. Board of Education",
+                    "gloss": "Stripping Jim Crow of constitutional legitimacy inspired Black Southerners to mount wider civil rights protests."
+                  },
+                  {
+                    "id": "kt1_2_s1_c4",
+                    "tier": 4,
+                    "tag": "View 2",
+                    "label": "Lacked Enforcement Mechanism",
+                    "detail": "Courtroom judges commanded no police force, leaving Deep South classrooms segregated in daily practice.",
+                    "lessonIndex": 1,
+                    "stageIndex": 1,
+                    "searchTerm": "Massive Resistance",
+                    "gloss": "Courtroom judges commanded no police force, leaving Deep South classrooms segregated in daily practice."
+                  }
+                ]
+              },
+              {
+                "id": "kt1_2_s2",
+                "tier": 3,
+                "label": "Brown II & Southern Manifesto",
+                "dateChip": "1955–56",
+                "lessonIndex": 1,
+                "stageIndex": 1,
+                "searchTerm": "Brown II Massive Resistance",
+                "gloss": "Vague Brown II timing after the Topeka ruling emboldened Southern Massive Resistance and delayed classroom desegregation.",
+                "children": [
+                  {
+                    "id": "kt1_2_s2_c1",
+                    "tier": 4,
+                    "tag": "Why",
+                    "label": "All Deliberate Speed Loophole",
+                    "detail": "May 1955 Brown II omitted fixed deadlines, letting hostile Southern school boards stall integration.",
+                    "lessonIndex": 1,
+                    "stageIndex": 1,
+                    "searchTerm": "all deliberate speed",
+                    "gloss": "May 1955 Brown II omitted fixed deadlines, letting hostile Southern school boards stall integration."
+                  },
+                  {
+                    "id": "kt1_2_s2_c2",
+                    "tier": 4,
+                    "tag": "Evidence",
+                    "label": "101 Signed Southern Manifesto",
+                    "detail": "Over 100 Southern congressmen condemned Brown in 1956, keeping Deep South integration below two percent.",
+                    "lessonIndex": 1,
+                    "stageIndex": 1,
+                    "searchTerm": "Southern Manifesto",
+                    "gloss": "Over 100 Southern congressmen condemned Brown in 1956, keeping Deep South integration below two percent."
+                  },
+                  {
+                    "id": "kt1_2_s2_c3",
+                    "tier": 4,
+                    "tag": "View 1",
+                    "label": "Massive Resistance Halted Change",
+                    "detail": "Senator Harry Byrd and White Citizens Councils turned Supreme Court victory into years of bitter stalemate.",
+                    "lessonIndex": 1,
+                    "stageIndex": 1,
+                    "searchTerm": "Massive Resistance",
+                    "gloss": "Senator Harry Byrd and White Citizens Councils turned Supreme Court victory into years of bitter stalemate."
+                  },
+                  {
+                    "id": "kt1_2_s2_c4",
+                    "tier": 4,
+                    "tag": "View 2",
+                    "label": "Border States Began Integrating",
+                    "detail": "Hundreds of border-state school districts desegregated quietly while NAACP lawyers challenged Southern delays.",
+                    "lessonIndex": 1,
+                    "stageIndex": 1,
+                    "searchTerm": "Brown v. Board of Education",
+                    "gloss": "Hundreds of border-state school districts desegregated quietly while NAACP lawyers challenged Southern delays."
+                  }
+                ]
+              },
+              {
+                "id": "kt1_2_s3",
+                "tier": 3,
+                "label": "Little Rock High School (1957)",
+                "dateChip": "1957–58",
+                "lessonIndex": 1,
+                "stageIndex": 2,
+                "searchTerm": "Little Rock Nine Eisenhower",
+                "gloss": "Events at Little Rock High School (1957) saw Governor Faubus block nine Black pupils until President Eisenhower sent federal paratroopers.",
+                "children": [
+                  {
+                    "id": "kt1_2_s3_c1",
+                    "tier": 4,
+                    "tag": "Why",
+                    "label": "Faubus Guard & Cold War Shame",
+                    "detail": "Orval Faubus used Arkansas troops to block the Little Rock Nine as televised mobs shamed America abroad.",
+                    "lessonIndex": 1,
+                    "stageIndex": 2,
+                    "searchTerm": "Governor Orval Faubus",
+                    "gloss": "Orval Faubus used Arkansas troops to block the Little Rock Nine as televised mobs shamed America abroad."
+                  },
+                  {
+                    "id": "kt1_2_s3_c2",
+                    "tier": 4,
+                    "tag": "Evidence",
+                    "label": "1,000 Airborne Troops Deployed",
+                    "detail": "Executive Order 10730 sent the 101st Airborne Division and federalised Arkansas guardsmen to escort students.",
+                    "lessonIndex": 1,
+                    "stageIndex": 3,
+                    "searchTerm": "101st Airborne Division",
+                    "gloss": "Executive Order 10730 sent the 101st Airborne Division and federalised Arkansas guardsmen to escort students."
+                  },
+                  {
+                    "id": "kt1_2_s3_c3",
+                    "tier": 4,
+                    "tag": "View 1",
+                    "label": "Proved Federal Supremacy",
+                    "detail": "Presidential military force and Cooper v. Aaron (1958) showed state governors could not nullify federal law.",
+                    "lessonIndex": 1,
+                    "stageIndex": 4,
+                    "searchTerm": "Cooper v. Aaron",
+                    "gloss": "Presidential military force and Cooper v. Aaron (1958) showed state governors could not nullify federal law."
+                  },
+                  {
+                    "id": "kt1_2_s3_c4",
+                    "tier": 4,
+                    "tag": "View 2",
+                    "label": "Faubus Shut Schools in 1958",
+                    "detail": "Closing all four Little Rock high schools for The Lost Year exposed fierce ongoing white defiance.",
+                    "lessonIndex": 1,
+                    "stageIndex": 4,
+                    "searchTerm": "The Lost Year",
+                    "gloss": "Closing all four Little Rock high schools for The Lost Year exposed fierce ongoing white defiance."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt1_3",
+            "code": "1.3",
+            "tier": 2,
+            "label": "1.3 Montgomery Boycott & Impact",
+            "dateChip": "1955–60",
+            "lessonIndex": 2,
+            "stageIndex": 0,
+            "searchTerm": "Montgomery Bus Boycott Rosa Parks",
+            "q3dDebate": "Martin Luther King Jr. & church-led SCLC leadership vs grassroots organisers (Rosa Parks, WPC, MIA carpools) & Supreme Court intervention in Browder v. Gayle.",
+            "gloss": "Q3d Core Debate: Martin Luther King Jr. & church-led SCLC leadership vs grassroots organisers (Rosa Parks, WPC, MIA carpools) & Supreme Court intervention in Browder v. Gayle.",
+            "children": [
+              {
+                "id": "kt1_3_s1",
+                "tier": 3,
+                "label": "Rosa Parks & Montgomery Boycott",
+                "dateChip": "Dec 1955–56",
+                "lessonIndex": 2,
+                "stageIndex": 0,
+                "searchTerm": "Rosa Parks Montgomery Improvement",
+                "gloss": "Rosa Parks refusing to surrender her bus seat in December 1955 sparked the 381-day Montgomery Bus Boycott.",
+                "children": [
+                  {
+                    "id": "kt1_3_s1_c1",
+                    "tier": 4,
+                    "tag": "Why",
+                    "label": "Parks Arrest & 35,000 Leaflets",
+                    "detail": "After James Blake had NAACP activist Parks arrested, Jo Ann Robinson printed 35,000 WPC boycott flyers.",
+                    "lessonIndex": 2,
+                    "stageIndex": 0,
+                    "searchTerm": "Rosa Parks",
+                    "gloss": "After James Blake had NAACP activist Parks arrested, Jo Ann Robinson printed 35,000 WPC boycott flyers."
+                  },
+                  {
+                    "id": "kt1_3_s1_c2",
+                    "tier": 4,
+                    "tag": "Evidence",
+                    "label": "300-Car Pool & 65% Fare Drop",
+                    "detail": "MIA volunteer carpools across 48 stations sustained Black commuters and slashed bus company revenue by 65%.",
+                    "lessonIndex": 2,
+                    "stageIndex": 2,
+                    "searchTerm": "300-car pool network",
+                    "gloss": "MIA volunteer carpools across 48 stations sustained Black commuters and slashed bus company revenue by 65%."
+                  },
+                  {
+                    "id": "kt1_3_s1_c3",
+                    "tier": 4,
+                    "tag": "View 1",
+                    "label": "Grassroots Women Built Boycott",
+                    "detail": "Parks, Robinson, Black church funds, and thousands of daily walkers sustained 381 days of solidarity.",
+                    "lessonIndex": 2,
+                    "stageIndex": 2,
+                    "searchTerm": "Black church network",
+                    "gloss": "Parks, Robinson, Black church funds, and thousands of daily walkers sustained 381 days of solidarity."
+                  },
+                  {
+                    "id": "kt1_3_s1_c4",
+                    "tier": 4,
+                    "tag": "View 2",
+                    "label": "Economic Boycott Alone Stalled",
+                    "detail": "City officials indicted drivers and refused concessions until federal judges struck down transit statutes.",
+                    "lessonIndex": 2,
+                    "stageIndex": 3,
+                    "searchTerm": "Browder v. Gayle",
+                    "gloss": "City officials indicted drivers and refused concessions until federal judges struck down transit statutes."
+                  }
+                ]
+              },
+              {
+                "id": "kt1_3_s2",
+                "tier": 3,
+                "label": "Martin Luther King & the SCLC",
+                "dateChip": "1955–57",
+                "lessonIndex": 2,
+                "stageIndex": 1,
+                "searchTerm": "Martin Luther King SCLC",
+                "gloss": "Leadership and impact of Martin Luther King united Montgomery behind Christian non-violence and led to founding the SCLC in 1957.",
+                "children": [
+                  {
+                    "id": "kt1_3_s2_c1",
+                    "tier": 4,
+                    "tag": "Why",
+                    "label": "Unifying Young MIA Spokesperson",
+                    "detail": "Aged twenty-six and free of local rivalries, King inspired thousands at Holt Street Baptist Church.",
+                    "lessonIndex": 2,
+                    "stageIndex": 1,
+                    "searchTerm": "Holt Street Baptist Church",
+                    "gloss": "Aged twenty-six and free of local rivalries, King inspired thousands at Holt Street Baptist Church."
+                  },
+                  {
+                    "id": "kt1_3_s2_c2",
+                    "tier": 4,
+                    "tag": "Evidence",
+                    "label": "SCLC Founded in January 1957",
+                    "detail": "King and Ralph Abernathy united Southern Black ministers to coordinate non-violent campaigns region-wide.",
+                    "lessonIndex": 2,
+                    "stageIndex": 3,
+                    "searchTerm": "SCLC founding",
+                    "gloss": "King and Ralph Abernathy united Southern Black ministers to coordinate non-violent campaigns region-wide."
+                  },
+                  {
+                    "id": "kt1_3_s2_c3",
+                    "tier": 4,
+                    "tag": "View 1",
+                    "label": "King Gave Moral National Voice",
+                    "detail": "Disciplined Christian love calmed angry crowds after home bombings and won sympathetic Northern media backing.",
+                    "lessonIndex": 2,
+                    "stageIndex": 4,
+                    "searchTerm": "non-violent direct action",
+                    "gloss": "Disciplined Christian love calmed angry crowds after home bombings and won sympathetic Northern media backing."
+                  },
+                  {
+                    "id": "kt1_3_s2_c4",
+                    "tier": 4,
+                    "tag": "View 2",
+                    "label": "Relied on Local Organisers",
+                    "detail": "E.D. Nixon, WPC activists, and NAACP lawyers created the protest platform that elevated King nationally.",
+                    "lessonIndex": 2,
+                    "stageIndex": 0,
+                    "searchTerm": "Women's Political Council",
+                    "gloss": "E.D. Nixon, WPC activists, and NAACP lawyers created the protest platform that elevated King nationally."
+                  }
+                ]
+              },
+              {
+                "id": "kt1_3_s3",
+                "tier": 3,
+                "label": "Supreme Court & 1957 Rights Act",
+                "dateChip": "1956–57",
+                "lessonIndex": 2,
+                "stageIndex": 3,
+                "searchTerm": "Browder v. Gayle Civil Rights Act 1957",
+                "gloss": "Success of the boycott rested on the Supreme Court ruling in Browder v. Gayle (1956), followed by the Civil Rights Act (1957).",
+                "children": [
+                  {
+                    "id": "kt1_3_s3_c1",
+                    "tier": 4,
+                    "tag": "Why",
+                    "label": "NAACP Filed Browder v. Gayle",
+                    "detail": "Bypassing biased Alabama courts, NAACP attorneys challenged municipal bus segregation under the 14th Amendment.",
+                    "lessonIndex": 2,
+                    "stageIndex": 3,
+                    "searchTerm": "Browder v. Gayle",
+                    "gloss": "Bypassing biased Alabama courts, NAACP attorneys challenged municipal bus segregation under the 14th Amendment."
+                  },
+                  {
+                    "id": "kt1_3_s3_c2",
+                    "tier": 4,
+                    "tag": "Evidence",
+                    "label": "Buses Integrated Dec 1956",
+                    "detail": "Supreme Court judges upheld Browder in November 1956, forcing integrated Montgomery buses on 20 December.",
+                    "lessonIndex": 2,
+                    "stageIndex": 4,
+                    "searchTerm": "integrated bus transit",
+                    "gloss": "Supreme Court judges upheld Browder in November 1956, forcing integrated Montgomery buses on 20 December."
+                  },
+                  {
+                    "id": "kt1_3_s3_c3",
+                    "tier": 4,
+                    "tag": "View 1",
+                    "label": "Federal Law Sealed Victory",
+                    "detail": "Supreme Court injunctions beat city obstruction while the 1957 Act marked Congress’s first bill since 1875.",
+                    "lessonIndex": 3,
+                    "stageIndex": 4,
+                    "searchTerm": "Civil Rights Act of 1957",
+                    "gloss": "Supreme Court injunctions beat city obstruction while the 1957 Act marked Congress’s first bill since 1875."
+                  },
+                  {
+                    "id": "kt1_3_s3_c4",
+                    "tier": 4,
+                    "tag": "View 2",
+                    "label": "1957 Act Gutted by Senate",
+                    "detail": "White-jury trial amendments neutered the 1957 Civil Rights Act, adding under 3% to Black voter rolls.",
+                    "lessonIndex": 3,
+                    "stageIndex": 4,
+                    "searchTerm": "Voting Rights Division weakness",
+                    "gloss": "White-jury trial amendments neutered the 1957 Civil Rights Act, adding under 3% to Black voter rolls."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt1_4",
+            "code": "1.4",
+            "tier": 2,
+            "label": "1.4 Opposition to Civil Rights",
+            "dateChip": "1954–60",
+            "lessonIndex": 3,
+            "stageIndex": 0,
+            "searchTerm": "Ku Klux Klan Emmet Till Dixiecrats",
+            "q3dDebate": "Respectable institutional resistance by White Citizens’ Councils & Southern ‘Dixiecrats’ vs violent Ku Klux Klan terror and the murder of Emmet Till.",
+            "gloss": "Q3d Core Debate: Respectable institutional resistance by White Citizens’ Councils & Southern ‘Dixiecrats’ vs violent Ku Klux Klan terror and the murder of Emmet Till.",
+            "children": [
+              {
+                "id": "kt1_4_s1",
+                "tier": 3,
+                "label": "Murder of Emmet Till (1955)",
+                "dateChip": "Aug–Sep 1955",
+                "lessonIndex": 3,
+                "stageIndex": 1,
+                "searchTerm": "Emmett Till Mamie Till-Mobley",
+                "gloss": "Brutal racial violence in Mississippi peaked with the murder of Emmet Till in 1955 and the rapid acquittal of his killers.",
+                "children": [
+                  {
+                    "id": "kt1_4_s1_c1",
+                    "tier": 4,
+                    "tag": "Why",
+                    "label": "Open-Casket Funeral in Chicago",
+                    "detail": "Mamie Till-Mobley showed her fourteen-year-old son’s mutilated body to 50,000 mourners and Jet magazine.",
+                    "lessonIndex": 3,
+                    "stageIndex": 1,
+                    "searchTerm": "Mamie Till-Mobley",
+                    "gloss": "Mamie Till-Mobley showed her fourteen-year-old son’s mutilated body to 50,000 mourners and Jet magazine."
+                  },
+                  {
+                    "id": "kt1_4_s1_c2",
+                    "tier": 4,
+                    "tag": "Evidence",
+                    "label": "67-Minute All-White Acquittal",
+                    "detail": "Despite Moses Wright’s brave courtroom testimony, Roy Bryant and J.W. Milam walked free and confessed in Look.",
+                    "lessonIndex": 3,
+                    "stageIndex": 2,
+                    "searchTerm": "all-white jury acquittal",
+                    "gloss": "Despite Moses Wright’s brave courtroom testimony, Roy Bryant and J.W. Milam walked free and confessed in Look."
+                  },
+                  {
+                    "id": "kt1_4_s1_c3",
+                    "tier": 4,
+                    "tag": "View 1",
+                    "label": "Exposed Corrupt Jim Crow Courts",
+                    "detail": "Unpunished lynching terrorised Black Mississippians and showed local white juries would never convict killers.",
+                    "lessonIndex": 3,
+                    "stageIndex": 2,
+                    "searchTerm": "Look magazine confession",
+                    "gloss": "Unpunished lynching terrorised Black Mississippians and showed local white juries would never convict killers."
+                  },
+                  {
+                    "id": "kt1_4_s1_c4",
+                    "tier": 4,
+                    "tag": "View 2",
+                    "label": "Galvanised Civil Rights Youth",
+                    "detail": "Shocking Jet photographs backfired on segregationists by inspiring Rosa Parks and young SNCC activists.",
+                    "lessonIndex": 3,
+                    "stageIndex": 1,
+                    "searchTerm": "Emmett Till lynching",
+                    "gloss": "Shocking Jet photographs backfired on segregationists by inspiring Rosa Parks and young SNCC activists."
+                  }
+                ]
+              },
+              {
+                "id": "kt1_4_s2",
+                "tier": 3,
+                "label": "Ku Klux Klan & Bombing Violence",
+                "dateChip": "1954–60",
+                "lessonIndex": 3,
+                "stageIndex": 3,
+                "searchTerm": "Ku Klux Klan Bombingham",
+                "gloss": "Resurgent Ku Klux Klan paramilitaries used dynamite violence, beatings, and church bombings across the Deep South.",
+                "children": [
+                  {
+                    "id": "kt1_4_s2_c1",
+                    "tier": 4,
+                    "tag": "Why",
+                    "label": "Fury Over Brown & Bus Boycott",
+                    "detail": "Court desegregation rulings drove militant Klansmen to terrorise NAACP branches and Black neighbourhoods.",
+                    "lessonIndex": 3,
+                    "stageIndex": 3,
+                    "searchTerm": "Ku Klux Klan resurgence",
+                    "gloss": "Court desegregation rulings drove militant Klansmen to terrorise NAACP branches and Black neighbourhoods."
+                  },
+                  {
+                    "id": "kt1_4_s2_c2",
+                    "tier": 4,
+                    "tag": "Evidence",
+                    "label": "50+ Blasts in Bombingham",
+                    "detail": "Klansmen bombed Fred Shuttlesworth’s home on Christmas Day 1956 while local police shielded suspects.",
+                    "lessonIndex": 3,
+                    "stageIndex": 3,
+                    "searchTerm": "Birmingham bombing wave",
+                    "gloss": "Klansmen bombed Fred Shuttlesworth’s home on Christmas Day 1956 while local police shielded suspects."
+                  },
+                  {
+                    "id": "kt1_4_s2_c3",
+                    "tier": 4,
+                    "tag": "View 1",
+                    "label": "Vigilante Terror Silenced Areas",
+                    "detail": "Collusion between local sheriffs and night-riders crushed open NAACP activity across rural Deep South counties.",
+                    "lessonIndex": 3,
+                    "stageIndex": 3,
+                    "searchTerm": "dynamite terrorism",
+                    "gloss": "Collusion between local sheriffs and night-riders crushed open NAACP activity across rural Deep South counties."
+                  },
+                  {
+                    "id": "kt1_4_s2_c4",
+                    "tier": 4,
+                    "tag": "View 2",
+                    "label": "Failed to Halt Black Resolve",
+                    "detail": "Ministers like Shuttlesworth and King refused to retreat, while Klan bombings alienated moderate opinion.",
+                    "lessonIndex": 3,
+                    "stageIndex": 3,
+                    "searchTerm": "Fred Shuttlesworth",
+                    "gloss": "Ministers like Shuttlesworth and King refused to retreat, while Klan bombings alienated moderate opinion."
+                  }
+                ]
+              },
+              {
+                "id": "kt1_4_s3",
+                "tier": 3,
+                "label": "Dixiecrats & Citizens’ Councils",
+                "dateChip": "1954–60",
+                "lessonIndex": 3,
+                "stageIndex": 0,
+                "searchTerm": "White Citizens Councils Dixiecrats",
+                "gloss": "Opposition to desegregation in the South combined ‘Dixiecrats’ in Congress with founding White Citizens’ Councils across Southern towns.",
+                "children": [
+                  {
+                    "id": "kt1_4_s3_c1",
+                    "tier": 4,
+                    "tag": "Why",
+                    "label": "Uptown Klan Economic Pressure",
+                    "detail": "Founded by Robert Patterson in July 1954, Citizens’ Councils fired, evicted, and denied credit to petitioners.",
+                    "lessonIndex": 3,
+                    "stageIndex": 0,
+                    "searchTerm": "White Citizens' Councils",
+                    "gloss": "Founded by Robert Patterson in July 1954, Citizens’ Councils fired, evicted, and denied credit to petitioners."
+                  },
+                  {
+                    "id": "kt1_4_s3_c2",
+                    "tier": 4,
+                    "tag": "Evidence",
+                    "label": "60,000 Members & 24h Filibuster",
+                    "detail": "Bankers and judges purged voter rolls while Dixiecrat Strom Thurmond filibustered the 1957 bill for 24 hours.",
+                    "lessonIndex": 3,
+                    "stageIndex": 4,
+                    "searchTerm": "Strom Thurmond filibuster",
+                    "gloss": "Bankers and judges purged voter rolls while Dixiecrat Strom Thurmond filibustered the 1957 bill for 24 hours."
+                  },
+                  {
+                    "id": "kt1_4_s3_c3",
+                    "tier": 4,
+                    "tag": "View 1",
+                    "label": "Respectable Elites Blocked Laws",
+                    "detail": "Senior Southern Democrats chaired Senate committees and starved desegregation without provoking media outrage.",
+                    "lessonIndex": 3,
+                    "stageIndex": 4,
+                    "searchTerm": "Dixiecrats",
+                    "gloss": "Senior Southern Democrats chaired Senate committees and starved desegregation without provoking media outrage."
+                  },
+                  {
+                    "id": "kt1_4_s3_c4",
+                    "tier": 4,
+                    "tag": "View 2",
+                    "label": "Worked Hand-in-Glove With Fear",
+                    "detail": "Economic blacklists relied on underlying KKK violence whenever Black citizens defied council warnings.",
+                    "lessonIndex": 3,
+                    "stageIndex": 0,
+                    "searchTerm": "economic intimidation",
+                    "gloss": "Economic blacklists relied on underlying KKK violence whenever Black citizens defied council warnings."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "kt2",
+        "keyTopicNumber": 2,
+        "tier": 1,
+        "side": "right",
+        "color": "#7c3aed",
+        "label": "KT2: Protest & Radicalism",
+        "dateChip": "1960–75",
+        "lessonIndex": 4,
+        "stageIndex": 0,
+        "searchTerm": "Greensboro Selma Black Power",
+        "gloss": "Key topic 2: Protest, progress and radicalism, 1960–75 — sit-ins and Freedom Rides, 1963–65 civil rights legislation, Malcolm X and Black Power, and urban riots to 1975.",
+        "children": [
+          {
+            "id": "kt2_1",
+            "code": "2.1",
+            "tier": 2,
+            "label": "2.1 Developments, 1960–62",
+            "dateChip": "1960–62",
+            "lessonIndex": 4,
+            "stageIndex": 0,
+            "searchTerm": "Greensboro Freedom Riders James Meredith",
+            "q3dDebate": "Youthful grassroots direct action (Greensboro sit-ins, SNCC, & CORE Freedom Riders) vs federal executive intervention by John and Robert Kennedy (ICC & James Meredith).",
+            "gloss": "Q3d Core Debate: Youthful grassroots direct action (Greensboro sit-ins, SNCC, & CORE Freedom Riders) vs federal executive intervention by John and Robert Kennedy (ICC & James Meredith).",
+            "children": [
+              {
+                "id": "kt2_1_s1",
+                "tier": 3,
+                "label": "Greensboro & Sit-In Movement",
+                "dateChip": "Feb–Aug 1960",
+                "lessonIndex": 4,
+                "stageIndex": 0,
+                "searchTerm": "Greensboro Four SNCC",
+                "gloss": "Greensboro and the sit-in movement revitalised peaceful protest in 1960 and inspired Ella Baker to guide the founding of SNCC.",
+                "children": [
+                  {
+                    "id": "kt2_1_s1_c1",
+                    "tier": 4,
+                    "tag": "Why",
+                    "label": "Woolworth Lunch Counter Protest",
+                    "detail": "Four Black students in Greensboro sat peacefully at a white counter on 1 February 1960, sparking rapid copies.",
+                    "lessonIndex": 4,
+                    "stageIndex": 0,
+                    "searchTerm": "Greensboro Four",
+                    "gloss": "Four Black students in Greensboro sat peacefully at a white counter on 1 February 1960, sparking rapid copies."
+                  },
+                  {
+                    "id": "kt2_1_s1_c2",
+                    "tier": 4,
+                    "tag": "Evidence",
+                    "label": "100+ Cities & SNCC Founded",
+                    "detail": "Store boycotts integrated counters across 100+ cities by August 1960 while Ella Baker helped launch SNCC.",
+                    "lessonIndex": 4,
+                    "stageIndex": 1,
+                    "searchTerm": "SNCC founding",
+                    "gloss": "Store boycotts integrated counters across 100+ cities by August 1960 while Ella Baker helped launch SNCC."
+                  },
+                  {
+                    "id": "kt2_1_s1_c3",
+                    "tier": 4,
+                    "tag": "View 1",
+                    "label": "Youth Mass Action Beat Lawsuits",
+                    "detail": "Low-cost student sit-ins disrupted downtown store profits far faster than slow NAACP courtroom appeals.",
+                    "lessonIndex": 4,
+                    "stageIndex": 0,
+                    "searchTerm": "student direct action",
+                    "gloss": "Low-cost student sit-ins disrupted downtown store profits far faster than slow NAACP courtroom appeals."
+                  },
+                  {
+                    "id": "kt2_1_s1_c4",
+                    "tier": 4,
+                    "tag": "View 2",
+                    "label": "Needed Bail & Adult Networks",
+                    "detail": "Student protesters still relied on NAACP bail funds, Black church support, and sympathetic TV coverage.",
+                    "lessonIndex": 4,
+                    "stageIndex": 1,
+                    "searchTerm": "Ella Baker",
+                    "gloss": "Student protesters still relied on NAACP bail funds, Black church support, and sympathetic TV coverage."
+                  }
+                ]
+              },
+              {
+                "id": "kt2_1_s2",
+                "tier": 3,
+                "label": "Freedom Riders & Anniston Bomb",
+                "dateChip": "May–Nov 1961",
+                "lessonIndex": 4,
+                "stageIndex": 3,
+                "searchTerm": "Freedom Riders Anniston ICC",
+                "gloss": "Interracial CORE Freedom Riders tested interstate bus desegregation, facing Ku Klux Klan violence and the Anniston bomb (1961).",
+                "children": [
+                  {
+                    "id": "kt2_1_s2_c1",
+                    "tier": 4,
+                    "tag": "Why",
+                    "label": "Testing Boynton Bus Terminal Law",
+                    "detail": "Thirteen CORE activists rode south from Washington D.C. to expose non-enforcement of Boynton v. Virginia.",
+                    "lessonIndex": 4,
+                    "stageIndex": 2,
+                    "searchTerm": "Boynton v. Virginia",
+                    "gloss": "Thirteen CORE activists rode south from Washington D.C. to expose non-enforcement of Boynton v. Virginia."
+                  },
+                  {
+                    "id": "kt2_1_s2_c2",
+                    "tier": 4,
+                    "tag": "Evidence",
+                    "label": "Anniston Firebomb & 600 Marshals",
+                    "detail": "Klansmen firebombed a Greyhound bus at Anniston and beat riders in Montgomery, forcing RFK to send marshals.",
+                    "lessonIndex": 4,
+                    "stageIndex": 3,
+                    "searchTerm": "Anniston bus firebombing",
+                    "gloss": "Klansmen firebombed a Greyhound bus at Anniston and beat riders in Montgomery, forcing RFK to send marshals."
+                  },
+                  {
+                    "id": "kt2_1_s2_c3",
+                    "tier": 4,
+                    "tag": "View 1",
+                    "label": "400 Riders Forced Kennedy’s Hand",
+                    "detail": "Relentless SNCC and CORE volunteers filling Mississippi jails shamed Washington before Cold War summits.",
+                    "lessonIndex": 4,
+                    "stageIndex": 4,
+                    "searchTerm": "freedom rider resilience",
+                    "gloss": "Relentless SNCC and CORE volunteers filling Mississippi jails shamed Washington before Cold War summits."
+                  },
+                  {
+                    "id": "kt2_1_s2_c4",
+                    "tier": 4,
+                    "tag": "View 2",
+                    "label": "ICC Federal Order Ended Signs",
+                    "detail": "Robert Kennedy’s September 1961 ICC directive legally enforced terminal integration from November 1961.",
+                    "lessonIndex": 4,
+                    "stageIndex": 4,
+                    "searchTerm": "Interstate Commerce Commission",
+                    "gloss": "Robert Kennedy’s September 1961 ICC directive legally enforced terminal integration from November 1961."
+                  }
+                ]
+              },
+              {
+                "id": "kt2_1_s3",
+                "tier": 3,
+                "label": "The James Meredith Case (1962)",
+                "dateChip": "Sep–Oct 1962",
+                "lessonIndex": 4,
+                "stageIndex": 4,
+                "searchTerm": "James Meredith University of Mississippi",
+                "gloss": "In the James Meredith case (1962), federal marshals and troops defeated deadly riots to integrate the University of Mississippi.",
+                "children": [
+                  {
+                    "id": "kt2_1_s3_c1",
+                    "tier": 4,
+                    "tag": "Why",
+                    "label": "Governor Barnett Blocked Entry",
+                    "detail": "Despite a Supreme Court order backed by the NAACP, Governor Ross Barnett barred Air Force veteran Meredith.",
+                    "lessonIndex": 4,
+                    "stageIndex": 4,
+                    "searchTerm": "James Meredith",
+                    "gloss": "Despite a Supreme Court order backed by the NAACP, Governor Ross Barnett barred Air Force veteran Meredith."
+                  },
+                  {
+                    "id": "kt2_1_s3_c2",
+                    "tier": 4,
+                    "tag": "Evidence",
+                    "label": "500 Marshals & Federal Troops",
+                    "detail": "After Oxford campus mobs killed two people, President Kennedy sent thousands of soldiers to guard Meredith.",
+                    "lessonIndex": 4,
+                    "stageIndex": 4,
+                    "searchTerm": "University of Mississippi",
+                    "gloss": "After Oxford campus mobs killed two people, President Kennedy sent thousands of soldiers to guard Meredith."
+                  },
+                  {
+                    "id": "kt2_1_s3_c3",
+                    "tier": 4,
+                    "tag": "View 1",
+                    "label": "Executive Troops Upheld Courts",
+                    "detail": "Presidential military intervention ensured Meredith enrolled and graduated, breaking segregated state universities.",
+                    "lessonIndex": 4,
+                    "stageIndex": 4,
+                    "searchTerm": "James Meredith",
+                    "gloss": "Presidential military intervention ensured Meredith enrolled and graduated, breaking segregated state universities."
+                  },
+                  {
+                    "id": "kt2_1_s3_c4",
+                    "tier": 4,
+                    "tag": "View 2",
+                    "label": "Reactive Crisis Management Only",
+                    "detail": "Kennedy hesitated and bargained privately with Barnett until lethal mob violence left Washington no choice.",
+                    "lessonIndex": 4,
+                    "stageIndex": 4,
+                    "searchTerm": "James Meredith",
+                    "gloss": "Kennedy hesitated and bargained privately with Barnett until lethal mob violence left Washington no choice."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt2_2",
+            "code": "2.2",
+            "tier": 2,
+            "label": "2.2 Peaceful Protests, 1963–65",
+            "dateChip": "1963–65",
+            "lessonIndex": 5,
+            "stageIndex": 0,
+            "searchTerm": "Birmingham Washington Selma Civil Rights Act",
+            "q3dDebate": "Martin Luther King & grassroots peaceful protests (Birmingham, Washington, Freedom Summer, Selma) vs Presidents Kennedy & Johnson steering landmark 1964–65 laws.",
+            "gloss": "Q3d Core Debate: Martin Luther King & grassroots peaceful protests (Birmingham, Washington, Freedom Summer, Selma) vs Presidents Kennedy & Johnson steering landmark 1964–65 laws.",
+            "children": [
+              {
+                "id": "kt2_2_s1",
+                "tier": 3,
+                "label": "1963 Birmingham & Washington",
+                "dateChip": "Apr–Aug 1963",
+                "lessonIndex": 5,
+                "stageIndex": 0,
+                "searchTerm": "Project C Bull Connor March on Washington",
+                "gloss": "King and the peace marches of 1963 in Birmingham and Washington mobilised national moral support for federal civil rights reform.",
+                "children": [
+                  {
+                    "id": "kt2_2_s1_c1",
+                    "tier": 4,
+                    "tag": "Why",
+                    "label": "Bull Connor Dogs & Fire Hoses",
+                    "detail": "Project C and the Children’s Crusade provoked televised police brutality in Birmingham that shocked JFK.",
+                    "lessonIndex": 5,
+                    "stageIndex": 0,
+                    "searchTerm": "Children's Crusade",
+                    "gloss": "Project C and the Children’s Crusade provoked televised police brutality in Birmingham that shocked JFK."
+                  },
+                  {
+                    "id": "kt2_2_s1_c2",
+                    "tier": 4,
+                    "tag": "Evidence",
+                    "label": "250,000 Hear I Have a Dream",
+                    "detail": "On 28 August 1963, Big Six leaders united 250,000 Black and white marchers before the Lincoln Memorial.",
+                    "lessonIndex": 5,
+                    "stageIndex": 1,
+                    "searchTerm": "March on Washington",
+                    "gloss": "On 28 August 1963, Big Six leaders united 250,000 Black and white marchers before the Lincoln Memorial."
+                  },
+                  {
+                    "id": "kt2_2_s1_c3",
+                    "tier": 4,
+                    "tag": "View 1",
+                    "label": "King & Peaceful Protest Set Agenda",
+                    "detail": "Calculated SCLC media strategy in Birmingham and interracial unity in Washington forced JFK to draft a bill.",
+                    "lessonIndex": 5,
+                    "stageIndex": 1,
+                    "searchTerm": "I Have a Dream",
+                    "gloss": "Calculated SCLC media strategy in Birmingham and interracial unity in Washington forced JFK to draft a bill."
+                  },
+                  {
+                    "id": "kt2_2_s1_c4",
+                    "tier": 4,
+                    "tag": "View 2",
+                    "label": "Marches Alone Could Not Pass Law",
+                    "detail": "Southern Democrats still stalled Kennedy’s civil rights bill inside Congressional committees throughout 1963.",
+                    "lessonIndex": 5,
+                    "stageIndex": 2,
+                    "searchTerm": "Civil Rights Act of 1964",
+                    "gloss": "Southern Democrats still stalled Kennedy’s civil rights bill inside Congressional committees throughout 1963."
+                  }
+                ]
+              },
+              {
+                "id": "kt2_2_s2",
+                "tier": 3,
+                "label": "Freedom Summer & 1964 Rights Act",
+                "dateChip": "Jun–Jul 1964",
+                "lessonIndex": 5,
+                "stageIndex": 2,
+                "searchTerm": "Civil Rights Act 1964 Freedom Summer",
+                "gloss": "Roles of Presidents Kennedy and Johnson secured passing the Civil Rights Act (1964), while Freedom Summer and the Mississippi murders exposed voting barriers.",
+                "children": [
+                  {
+                    "id": "kt2_2_s2_c1",
+                    "tier": 4,
+                    "tag": "Why",
+                    "label": "LBJ Broke 54-Day Filibuster",
+                    "detail": "Harnessing grief after Kennedy’s assassination, Lyndon Johnson twisted Senate arms to sign the July 1964 Act.",
+                    "lessonIndex": 5,
+                    "stageIndex": 2,
+                    "searchTerm": "Civil Rights Act of 1964",
+                    "gloss": "Harnessing grief after Kennedy’s assassination, Lyndon Johnson twisted Senate arms to sign the July 1964 Act."
+                  },
+                  {
+                    "id": "kt2_2_s2_c2",
+                    "tier": 4,
+                    "tag": "Evidence",
+                    "label": "EEOC & 3 Mississippi Murders",
+                    "detail": "Public segregation ended and the EEOC formed, yet Klansmen murdered Chaney, Goodman, and Schwerner in 1964.",
+                    "lessonIndex": 5,
+                    "stageIndex": 2,
+                    "searchTerm": "Equal Employment Opportunity Commission",
+                    "gloss": "Public segregation ended and the EEOC formed, yet Klansmen murdered Chaney, Goodman, and Schwerner in 1964."
+                  },
+                  {
+                    "id": "kt2_2_s2_c3",
+                    "tier": 4,
+                    "tag": "View 1",
+                    "label": "Presidential Skill Enacted Law",
+                    "detail": "Only Johnson’s Senate mastery turned Kennedy’s stalled proposal into binding nationwide legal desegregation.",
+                    "lessonIndex": 5,
+                    "stageIndex": 2,
+                    "searchTerm": "President Lyndon B. Johnson",
+                    "gloss": "Only Johnson’s Senate mastery turned Kennedy’s stalled proposal into binding nationwide legal desegregation."
+                  },
+                  {
+                    "id": "kt2_2_s2_c4",
+                    "tier": 4,
+                    "tag": "View 2",
+                    "label": "SNCC Volunteers Exposed Gaps",
+                    "detail": "Deadly violence during Mississippi Freedom Summer proved the 1964 Act still left Black voters unprotected.",
+                    "lessonIndex": 5,
+                    "stageIndex": 3,
+                    "searchTerm": "voter registration",
+                    "gloss": "Deadly violence during Mississippi Freedom Summer proved the 1964 Act still left Black voters unprotected."
+                  }
+                ]
+              },
+              {
+                "id": "kt2_2_s3",
+                "tier": 3,
+                "label": "Selma & Voting Rights Act (1965)",
+                "dateChip": "Mar–Aug 1965",
+                "lessonIndex": 5,
+                "stageIndex": 3,
+                "searchTerm": "Selma Bloody Sunday Voting Rights Act",
+                "gloss": "Peaceful protest at Selma provoked televised brutality that enabled Johnson to pass the Voting Rights Act (1965).",
+                "children": [
+                  {
+                    "id": "kt2_2_s3_c1",
+                    "tier": 4,
+                    "tag": "Why",
+                    "label": "Bloody Sunday on Pettus Bridge",
+                    "detail": "With only 2% of Selma Blacks registered, Alabama troopers clubbed and gassed 600 marchers on 7 March 1965.",
+                    "lessonIndex": 5,
+                    "stageIndex": 3,
+                    "searchTerm": "Edmund Pettus Bridge",
+                    "gloss": "With only 2% of Selma Blacks registered, Alabama troopers clubbed and gassed 600 marchers on 7 March 1965."
+                  },
+                  {
+                    "id": "kt2_2_s3_c2",
+                    "tier": 4,
+                    "tag": "Evidence",
+                    "label": "Federal Examiners & 60%+ Vote",
+                    "detail": "Signed on 6 August 1965, the Act scrapped literacy tests and pushed Southern Black registration past 60%.",
+                    "lessonIndex": 5,
+                    "stageIndex": 4,
+                    "searchTerm": "Voting Rights Act of 1965",
+                    "gloss": "Signed on 6 August 1965, the Act scrapped literacy tests and pushed Southern Black registration past 60%."
+                  },
+                  {
+                    "id": "kt2_2_s3_c3",
+                    "tier": 4,
+                    "tag": "View 1",
+                    "label": "Grassroots Sacrifice Created Law",
+                    "detail": "Courageous Selma marchers under John Lewis and King generated the national outrage needed for federal action.",
+                    "lessonIndex": 5,
+                    "stageIndex": 3,
+                    "searchTerm": "Bloody Sunday in Selma",
+                    "gloss": "Courageous Selma marchers under John Lewis and King generated the national outrage needed for federal action."
+                  },
+                  {
+                    "id": "kt2_2_s3_c4",
+                    "tier": 4,
+                    "tag": "View 2",
+                    "label": "LBJ Enforced Federal Supremacy",
+                    "detail": "Johnson’s We Shall Overcome address and federal voting registrars delivered lasting Southern political power.",
+                    "lessonIndex": 5,
+                    "stageIndex": 4,
+                    "searchTerm": "federal voting examiners",
+                    "gloss": "Johnson’s We Shall Overcome address and federal voting registrars delivered lasting Southern political power."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt2_3",
+            "code": "2.3",
+            "tier": 2,
+            "label": "2.3 Malcolm X & Black Power",
+            "dateChip": "1963–70",
+            "lessonIndex": 6,
+            "stageIndex": 0,
+            "searchTerm": "Malcolm X Black Muslims Black Panthers",
+            "q3dDebate": "Black Power & militants fractured civil rights unity, alienated white allies, & drew FBI repression vs instilled Black pride & addressed Northern urban ghetto poverty.",
+            "gloss": "Q3d Core Debate: Black Power & militants fractured civil rights unity, alienated white allies, & drew FBI repression vs instilled Black pride & addressed Northern urban ghetto poverty.",
+            "children": [
+              {
+                "id": "kt2_3_s1",
+                "tier": 3,
+                "label": "Malcolm X & the Black Muslims",
+                "dateChip": "1963–Feb 1965",
+                "lessonIndex": 6,
+                "stageIndex": 0,
+                "searchTerm": "Malcolm X Black Muslims Nation of Islam",
+                "gloss": "Malcolm X voiced urban anger through his involvement with the Black Muslims before his later change of attitude and 1965 assassination.",
+                "children": [
+                  {
+                    "id": "kt2_3_s1_c1",
+                    "tier": 4,
+                    "tag": "Why",
+                    "label": "Northern Ghetto Anger & Self-Help",
+                    "detail": "With Elijah Muhammad’s Nation of Islam, Malcolm X rejected passive non-violence for armed self-defence.",
+                    "lessonIndex": 6,
+                    "stageIndex": 0,
+                    "searchTerm": "Black Muslims",
+                    "gloss": "With Elijah Muhammad’s Nation of Islam, Malcolm X rejected passive non-violence for armed self-defence."
+                  },
+                  {
+                    "id": "kt2_3_s1_c2",
+                    "tier": 4,
+                    "tag": "Evidence",
+                    "label": "Mecca Shift & Feb 1965 Murder",
+                    "detail": "After his 1964 Mecca pilgrimage, Malcolm embraced interracial brotherhood before rival gunmen killed him.",
+                    "lessonIndex": 6,
+                    "stageIndex": 0,
+                    "searchTerm": "Malcolm X",
+                    "gloss": "After his 1964 Mecca pilgrimage, Malcolm embraced interracial brotherhood before rival gunmen killed him."
+                  },
+                  {
+                    "id": "kt2_3_s1_c3",
+                    "tier": 4,
+                    "tag": "View 1",
+                    "label": "Awakened Urban Black Dignity",
+                    "detail": "Articulating Northern slum frustration inspired Afrocentric pride, youth confidence, and Black Power.",
+                    "lessonIndex": 6,
+                    "stageIndex": 0,
+                    "searchTerm": "armed self-defence",
+                    "gloss": "Articulating Northern slum frustration inspired Afrocentric pride, youth confidence, and Black Power."
+                  },
+                  {
+                    "id": "kt2_3_s1_c4",
+                    "tier": 4,
+                    "tag": "View 2",
+                    "label": "Separatism Alarmed Moderates",
+                    "detail": "Condemning white society and King’s marches alienated liberal donors without passing federal legislation.",
+                    "lessonIndex": 6,
+                    "stageIndex": 0,
+                    "searchTerm": "Nation of Islam",
+                    "gloss": "Condemning white society and King’s marches alienated liberal donors without passing federal legislation."
+                  }
+                ]
+              },
+              {
+                "id": "kt2_3_s2",
+                "tier": 3,
+                "label": "Carmichael & 1968 Mexico Olympics",
+                "dateChip": "1966–68",
+                "lessonIndex": 6,
+                "stageIndex": 1,
+                "searchTerm": "Stokely Carmichael Black Power Mexico Olympics",
+                "gloss": "Emergence of Black Power saw Stokely Carmichael rally frustrated youth in 1966 and sprinters salute at the 1968 Mexico Olympics.",
+                "children": [
+                  {
+                    "id": "kt2_3_s2_c1",
+                    "tier": 4,
+                    "tag": "Why",
+                    "label": "1966 March Against Fear Split",
+                    "detail": "After James Meredith was shot in Mississippi, SNCC leader Carmichael chanted Black Power in Greenwood.",
+                    "lessonIndex": 6,
+                    "stageIndex": 1,
+                    "searchTerm": "Stokely Carmichael",
+                    "gloss": "After James Meredith was shot in Mississippi, SNCC leader Carmichael chanted Black Power in Greenwood."
+                  },
+                  {
+                    "id": "kt2_3_s2_c2",
+                    "tier": 4,
+                    "tag": "Evidence",
+                    "label": "Smith & Carlos Podium Salute",
+                    "detail": "Barefoot 200m medallists Tommie Smith and John Carlos raised black-gloved fists on global TV in October 1968.",
+                    "lessonIndex": 6,
+                    "stageIndex": 4,
+                    "searchTerm": "1968 Mexico City Olympics",
+                    "gloss": "Barefoot 200m medallists Tommie Smith and John Carlos raised black-gloved fists on global TV in October 1968."
+                  },
+                  {
+                    "id": "kt2_3_s2_c3",
+                    "tier": 4,
+                    "tag": "View 1",
+                    "label": "Global Symbol of Racial Pride",
+                    "detail": "Demanding political self-determination and cultural identity empowered young Black Americans worldwide.",
+                    "lessonIndex": 6,
+                    "stageIndex": 4,
+                    "searchTerm": "Olympic podium black fist salute",
+                    "gloss": "Demanding political self-determination and cultural identity empowered young Black Americans worldwide."
+                  },
+                  {
+                    "id": "kt2_3_s2_c4",
+                    "tier": 4,
+                    "tag": "View 2",
+                    "label": "Fractured Civil Rights Coalition",
+                    "detail": "Expelling white volunteers from SNCC and CORE split the movement and dried up mainstream financial support.",
+                    "lessonIndex": 6,
+                    "stageIndex": 1,
+                    "searchTerm": "Black Power",
+                    "gloss": "Expelling white volunteers from SNCC and CORE split the movement and dried up mainstream financial support."
+                  }
+                ]
+              },
+              {
+                "id": "kt2_3_s3",
+                "tier": 3,
+                "label": "Black Panther Movement",
+                "dateChip": "1966–70",
+                "lessonIndex": 6,
+                "stageIndex": 2,
+                "searchTerm": "Black Panther Party Newton Seale",
+                "gloss": "Founded in Oakland in 1966, the Black Panther movement combined armed police patrols with inner-city community survival achievements.",
+                "children": [
+                  {
+                    "id": "kt2_3_s3_c1",
+                    "tier": 4,
+                    "tag": "Why",
+                    "label": "Newton, Seale & Ten-Point Plan",
+                    "detail": "Huey Newton and Bobby Seale formed armed citizen patrols in October 1966 to challenge police brutality.",
+                    "lessonIndex": 6,
+                    "stageIndex": 2,
+                    "searchTerm": "Black Panther Party",
+                    "gloss": "Huey Newton and Bobby Seale formed armed citizen patrols in October 1966 to challenge police brutality."
+                  },
+                  {
+                    "id": "kt2_3_s3_c2",
+                    "tier": 4,
+                    "tag": "Evidence",
+                    "label": "Free Breakfasts & FBI COINTELPRO",
+                    "detail": "Survival clinics and children’s breakfasts served thousands before FBI raids killed Fred Hampton in 1969.",
+                    "lessonIndex": 6,
+                    "stageIndex": 3,
+                    "searchTerm": "Free Breakfast for Children Program",
+                    "gloss": "Survival clinics and children’s breakfasts served thousands before FBI raids killed Fred Hampton in 1969."
+                  },
+                  {
+                    "id": "kt2_3_s3_c3",
+                    "tier": 4,
+                    "tag": "View 1",
+                    "label": "Practical Ghetto Welfare Aid",
+                    "detail": "Free breakfasts, health clinics, and legal aid tackled inner-city poverty neglected by municipal officials.",
+                    "lessonIndex": 6,
+                    "stageIndex": 3,
+                    "searchTerm": "Free Breakfast for Children Program",
+                    "gloss": "Free breakfasts, health clinics, and legal aid tackled inner-city poverty neglected by municipal officials."
+                  },
+                  {
+                    "id": "kt2_3_s3_c4",
+                    "tier": 4,
+                    "tag": "View 2",
+                    "label": "Armed Shootouts Drew Crushing Raid",
+                    "detail": "Displaying rifles at Sacramento and deadly police clashes triggered J. Edgar Hoover’s COINTELPRO crackdown.",
+                    "lessonIndex": 6,
+                    "stageIndex": 3,
+                    "searchTerm": "FBI COINTELPRO surveillance",
+                    "gloss": "Displaying rifles at Sacramento and deadly police clashes triggered J. Edgar Hoover’s COINTELPRO crackdown."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt2_4",
+            "code": "2.4",
+            "tier": 2,
+            "label": "2.4 Civil Rights, 1965–75",
+            "dateChip": "1965–75",
+            "lessonIndex": 7,
+            "stageIndex": 0,
+            "searchTerm": "Watts Detroit Kerner Report King Memphis",
+            "q3dDebate": "Major legal & political gains by 1975 (end of Jim Crow, 1968 Fair Housing Act, Black mayors) vs persistent Northern de facto poverty, urban riots, & Kerner warnings.",
+            "gloss": "Q3d Core Debate: Major legal & political gains by 1975 (end of Jim Crow, 1968 Fair Housing Act, Black mayors) vs persistent Northern de facto poverty, urban riots, & Kerner warnings.",
+            "children": [
+              {
+                "id": "kt2_4_s1",
+                "tier": 3,
+                "label": "1965–67 Riots & Kerner Report",
+                "dateChip": "1965–68",
+                "lessonIndex": 7,
+                "stageIndex": 0,
+                "searchTerm": "Watts riot Detroit Kerner Commission",
+                "gloss": "Explosive urban riots of 1965–67 in Watts, Newark, and Detroit prompted the landmark Kerner Report (1968).",
+                "children": [
+                  {
+                    "id": "kt2_4_s1_c1",
+                    "tier": 4,
+                    "tag": "Why",
+                    "label": "Police Brutality & Ghetto Poverty",
+                    "detail": "Southern voting laws left Northern slums, unemployment, and racist policing untouched, igniting Watts in 1965.",
+                    "lessonIndex": 7,
+                    "stageIndex": 0,
+                    "searchTerm": "Watts riot Los Angeles",
+                    "gloss": "Southern voting laws left Northern slums, unemployment, and racist policing untouched, igniting Watts in 1965."
+                  },
+                  {
+                    "id": "kt2_4_s1_c2",
+                    "tier": 4,
+                    "tag": "Evidence",
+                    "label": "34 Dead in Watts; 43 in Detroit",
+                    "detail": "Paratroopers quelled 1967 Detroit violence before the 1968 Kerner Report warned of two unequal societies.",
+                    "lessonIndex": 7,
+                    "stageIndex": 3,
+                    "searchTerm": "Kerner Commission report",
+                    "gloss": "Paratroopers quelled 1967 Detroit violence before the 1968 Kerner Report warned of two unequal societies."
+                  },
+                  {
+                    "id": "kt2_4_s1_c3",
+                    "tier": 4,
+                    "tag": "View 1",
+                    "label": "Proved Systemic White Racism",
+                    "detail": "Kerner investigators blamed institutional racism and ghetto neglect, though Vietnam costs starved reforms.",
+                    "lessonIndex": 7,
+                    "stageIndex": 3,
+                    "searchTerm": "two societies: separate, unequal",
+                    "gloss": "Kerner investigators blamed institutional racism and ghetto neglect, though Vietnam costs starved reforms."
+                  },
+                  {
+                    "id": "kt2_4_s1_c4",
+                    "tier": 4,
+                    "tag": "View 2",
+                    "label": "Triggered Suburban White Backlash",
+                    "detail": "Arson and $40m Watts damage alienated white voters, boosting conservative law-and-order politics in 1968.",
+                    "lessonIndex": 7,
+                    "stageIndex": 2,
+                    "searchTerm": "Detroit and Newark riots",
+                    "gloss": "Arson and $40m Watts damage alienated white voters, boosting conservative law-and-order politics in 1968."
+                  }
+                ]
+              },
+              {
+                "id": "kt2_4_s2",
+                "tier": 3,
+                "label": "King’s North Campaign & Murder",
+                "dateChip": "1966–Apr 1968",
+                "lessonIndex": 7,
+                "stageIndex": 1,
+                "searchTerm": "Chicago Freedom Movement King assassinated",
+                "gloss": "King’s campaign in the North hit fierce Chicago housing resistance before the assassination of Martin Luther King in April 1968.",
+                "children": [
+                  {
+                    "id": "kt2_4_s2_c1",
+                    "tier": 4,
+                    "tag": "Why",
+                    "label": "Chicago Slums & Marquette Mobs",
+                    "detail": "Marching against bank redlining in 1966, King faced brick-throwing mobs and vague Mayor Daley promises.",
+                    "lessonIndex": 7,
+                    "stageIndex": 1,
+                    "searchTerm": "Chicago Freedom Movement",
+                    "gloss": "Marching against bank redlining in 1966, King faced brick-throwing mobs and vague Mayor Daley promises."
+                  },
+                  {
+                    "id": "kt2_4_s2_c2",
+                    "tier": 4,
+                    "tag": "Evidence",
+                    "label": "Memphis Murder & 100-City Riots",
+                    "detail": "Shot by James Earl Ray on 4 April 1968 while backing sanitation strikers, King’s death sparked mass unrest.",
+                    "lessonIndex": 7,
+                    "stageIndex": 4,
+                    "searchTerm": "King assassinated in Memphis",
+                    "gloss": "Shot by James Earl Ray on 4 April 1968 while backing sanitation strikers, King’s death sparked mass unrest."
+                  },
+                  {
+                    "id": "kt2_4_s2_c3",
+                    "tier": 4,
+                    "tag": "View 1",
+                    "label": "Catalysed 1968 Fair Housing Act",
+                    "detail": "National grief broke congressional deadlock within days to outlaw racial bias in selling or renting homes.",
+                    "lessonIndex": 7,
+                    "stageIndex": 4,
+                    "searchTerm": "1968 Fair Housing Act",
+                    "gloss": "National grief broke congressional deadlock within days to outlaw racial bias in selling or renting homes."
+                  },
+                  {
+                    "id": "kt2_4_s2_c4",
+                    "tier": 4,
+                    "tag": "View 2",
+                    "label": "Ended Unified Non-Violent Era",
+                    "detail": "Chicago’s stalemate and King’s murder shattered faith in non-violence, leaving anti-poverty goals unfinished.",
+                    "lessonIndex": 7,
+                    "stageIndex": 4,
+                    "searchTerm": "nationwide 100-city uprisings",
+                    "gloss": "Chicago’s stalemate and King’s murder shattered faith in non-violence, leaving anti-poverty goals unfinished."
+                  }
+                ]
+              },
+              {
+                "id": "kt2_4_s3",
+                "tier": 3,
+                "label": "Civil Rights Progress by 1975",
+                "dateChip": "1968–75",
+                "lessonIndex": 7,
+                "stageIndex": 4,
+                "searchTerm": "Progress in civil rights by 1975",
+                "gloss": "The scale of progress in civil rights by 1975 combined legal equality and Black political office with enduring economic gaps.",
+                "children": [
+                  {
+                    "id": "kt2_4_s3_c1",
+                    "tier": 4,
+                    "tag": "Why",
+                    "label": "Federal Laws & Affirmative Action",
+                    "detail": "Landmark 1964–68 statutes and federal hiring rules opened Southern ballots, universities, and professions.",
+                    "lessonIndex": 7,
+                    "stageIndex": 4,
+                    "searchTerm": "1968 Fair Housing Act",
+                    "gloss": "Landmark 1964–68 statutes and federal hiring rules opened Southern ballots, universities, and professions."
+                  },
+                  {
+                    "id": "kt2_4_s3_c2",
+                    "tier": 4,
+                    "tag": "Evidence",
+                    "label": "Thousands of Black Officials",
+                    "detail": "By 1975 de jure Jim Crow had ended and Black voters elected mayors, sheriffs, and members of Congress.",
+                    "lessonIndex": 7,
+                    "stageIndex": 4,
+                    "searchTerm": "Voting Rights Act",
+                    "gloss": "By 1975 de jure Jim Crow had ended and Black voters elected mayors, sheriffs, and members of Congress."
+                  },
+                  {
+                    "id": "kt2_4_s3_c3",
+                    "tier": 4,
+                    "tag": "View 1",
+                    "label": "Constitutional Revolution Won",
+                    "detail": "Within twenty years Black Southerners demolished legal segregation, integrated schools, and won political power.",
+                    "lessonIndex": 7,
+                    "stageIndex": 4,
+                    "searchTerm": "1968 Fair Housing Act",
+                    "gloss": "Within twenty years Black Southerners demolished legal segregation, integrated schools, and won political power."
+                  },
+                  {
+                    "id": "kt2_4_s3_c4",
+                    "tier": 4,
+                    "tag": "View 2",
+                    "label": "Double Unemployment Endured",
+                    "detail": "Northern de facto housing segregation endured in 1975 as Black poverty and joblessness stayed double white rates.",
+                    "lessonIndex": 7,
+                    "stageIndex": 3,
+                    "searchTerm": "Kerner Commission report",
+                    "gloss": "Northern de facto housing segregation endured in 1975 as Black poverty and joblessness stayed double white rates."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "kt3",
+        "keyTopicNumber": 3,
+        "tier": 1,
+        "side": "left",
+        "color": "#dc2626",
+        "label": "KT3: US Vietnam Involvement",
+        "dateChip": "1954–73",
+        "lessonIndex": 8,
+        "stageIndex": 0,
+        "searchTerm": "Domino theory Tonkin Vietcong Nixon",
+        "gloss": "Key topic 3: US involvement in the Vietnam War, 1954–75 — Eisenhower and Kennedy advisers, Johnson’s escalation, guerrilla vs US tactics and Tet, and Nixon’s Vietnamisation.",
+        "children": [
+          {
+            "id": "kt3_1",
+            "code": "3.1",
+            "tier": 2,
+            "label": "3.1 US Involvement, 1954–63",
+            "dateChip": "1954–63",
+            "lessonIndex": 8,
+            "stageIndex": 0,
+            "searchTerm": "Domino theory Ngo Dinh Diem Strategic Hamlets",
+            "q3dDebate": "Cold War Domino Theory containment under Eisenhower & Kennedy vs weaknesses of Ngo Dinh Diem’s corrupt Saigon regime & failed Strategic Hamlets.",
+            "gloss": "Q3d Core Debate: Cold War Domino Theory containment under Eisenhower & Kennedy vs weaknesses of Ngo Dinh Diem’s corrupt Saigon regime & failed Strategic Hamlets.",
+            "children": [
+              {
+                "id": "kt3_1_s1",
+                "tier": 3,
+                "label": "Eisenhower & the Domino Theory",
+                "dateChip": "1954–60",
+                "lessonIndex": 8,
+                "stageIndex": 0,
+                "searchTerm": "Dien Bien Phu domino theory",
+                "gloss": "Expanded US involvement under Eisenhower after 1954 rested on the domino theory that losing South Vietnam would topple Southeast Asia.",
+                "children": [
+                  {
+                    "id": "kt3_1_s1_c1",
+                    "tier": 4,
+                    "tag": "Why",
+                    "label": "Dien Bien Phu & 17th Parallel",
+                    "detail": "After France fell in May 1954, Geneva split Vietnam and Washington feared Ho Chi Minh winning 1956 elections.",
+                    "lessonIndex": 8,
+                    "stageIndex": 0,
+                    "searchTerm": "Geneva Accords",
+                    "gloss": "After France fell in May 1954, Geneva split Vietnam and Washington feared Ho Chi Minh winning 1956 elections."
+                  },
+                  {
+                    "id": "kt3_1_s1_c2",
+                    "tier": 4,
+                    "tag": "Evidence",
+                    "label": "Cancelled 1956 Vote & US Aid",
+                    "detail": "Eisenhower poured hundreds of millions in subsidies and military advisers into pro-Western Saigon.",
+                    "lessonIndex": 8,
+                    "stageIndex": 1,
+                    "searchTerm": "1956 reunification elections",
+                    "gloss": "Eisenhower poured hundreds of millions in subsidies and military advisers into pro-Western Saigon."
+                  },
+                  {
+                    "id": "kt3_1_s1_c3",
+                    "tier": 4,
+                    "tag": "View 1",
+                    "label": "Cold War Containment Imperative",
+                    "detail": "Fearing Chinese and Soviet expansion across Asia locked US presidents into defending South Vietnam.",
+                    "lessonIndex": 8,
+                    "stageIndex": 0,
+                    "searchTerm": "domino theory",
+                    "gloss": "Fearing Chinese and Soviet expansion across Asia locked US presidents into defending South Vietnam."
+                  },
+                  {
+                    "id": "kt3_1_s1_c4",
+                    "tier": 4,
+                    "tag": "View 2",
+                    "label": "Misread Vietnamese Nationalism",
+                    "detail": "Treating Ho Chi Minh’s anti-colonial movement as a Cold War domino tied America to an unpopular regime.",
+                    "lessonIndex": 8,
+                    "stageIndex": 1,
+                    "searchTerm": "Ho Chi Minh",
+                    "gloss": "Treating Ho Chi Minh’s anti-colonial movement as a Cold War domino tied America to an unpopular regime."
+                  }
+                ]
+              },
+              {
+                "id": "kt3_1_s2",
+                "tier": 3,
+                "label": "Weaknesses of Diem Government",
+                "dateChip": "1954–63",
+                "lessonIndex": 8,
+                "stageIndex": 2,
+                "searchTerm": "Ngo Dinh Diem Vietcong",
+                "gloss": "Severe weaknesses of the Diem government—rigged votes, Catholic favouritism, and landlord repression—fuelled the Vietcong insurgency.",
+                "children": [
+                  {
+                    "id": "kt3_1_s2_c1",
+                    "tier": 4,
+                    "tag": "Why",
+                    "label": "Catholic Nepotism & Rural Abuse",
+                    "detail": "Ngo Dinh Diem rigged a 98.2% referendum, jailed 40,000 dissidents, and returned peasant land to landlords.",
+                    "lessonIndex": 8,
+                    "stageIndex": 2,
+                    "searchTerm": "Ngo Dinh Diem",
+                    "gloss": "Ngo Dinh Diem rigged a 98.2% referendum, jailed 40,000 dissidents, and returned peasant land to landlords."
+                  },
+                  {
+                    "id": "kt3_1_s2_c2",
+                    "tier": 4,
+                    "tag": "Evidence",
+                    "label": "Vietcong Formed & Monk Protest",
+                    "detail": "Southern rebels formed the NLF (Vietcong) in 1960 while Thich Quang Duc burned himself in Saigon in 1963.",
+                    "lessonIndex": 8,
+                    "stageIndex": 3,
+                    "searchTerm": "Buddhist Crisis",
+                    "gloss": "Southern rebels formed the NLF (Vietcong) in 1960 while Thich Quang Duc burned himself in Saigon in 1963."
+                  },
+                  {
+                    "id": "kt3_1_s2_c3",
+                    "tier": 4,
+                    "tag": "View 1",
+                    "label": "Diem’s Tyranny Created Rebels",
+                    "detail": "Corrupt autocracy and persecution of the Buddhist majority drove Mekong peasants directly into Vietcong ranks.",
+                    "lessonIndex": 8,
+                    "stageIndex": 2,
+                    "searchTerm": "Diem's rural repression",
+                    "gloss": "Corrupt autocracy and persecution of the Buddhist majority drove Mekong peasants directly into Vietcong ranks."
+                  },
+                  {
+                    "id": "kt3_1_s2_c4",
+                    "tier": 4,
+                    "tag": "View 2",
+                    "label": "Hanoi Armed Southern Insurgents",
+                    "detail": "North Vietnam directed and supplied guerrillas down the Ho Chi Minh Trail to topple Saigon by force.",
+                    "lessonIndex": 8,
+                    "stageIndex": 2,
+                    "searchTerm": "Ho Chi Minh Trail",
+                    "gloss": "North Vietnam directed and supplied guerrillas down the Ho Chi Minh Trail to topple Saigon by force."
+                  }
+                ]
+              },
+              {
+                "id": "kt3_1_s3",
+                "tier": 3,
+                "label": "Kennedy, Hamlets & Diem Overthrow",
+                "dateChip": "1961–Nov 1963",
+                "lessonIndex": 8,
+                "stageIndex": 3,
+                "searchTerm": "Strategic Hamlet Program overthrow of Diem",
+                "gloss": "Greater involvement under Kennedy brought 16,000 advisers, the failed Strategic Hamlet Program, and the November 1963 overthrow of Diem.",
+                "children": [
+                  {
+                    "id": "kt3_1_s3_c1",
+                    "tier": 4,
+                    "tag": "Why",
+                    "label": "4m Peasants Forced Into Hamlets",
+                    "detail": "Launched in 1962 to isolate guerrillas, barbed-wire Strategic Hamlets uprooted villagers from ancestral land.",
+                    "lessonIndex": 8,
+                    "stageIndex": 3,
+                    "searchTerm": "Strategic Hamlet Program",
+                    "gloss": "Launched in 1962 to isolate guerrillas, barbed-wire Strategic Hamlets uprooted villagers from ancestral land."
+                  },
+                  {
+                    "id": "kt3_1_s3_c2",
+                    "tier": 4,
+                    "tag": "Evidence",
+                    "label": "16,000 Advisers & Nov 1963 Coup",
+                    "detail": "Kennedy expanded helicopters and advisers before CIA-backed ARVN generals overthrew and killed Diem.",
+                    "lessonIndex": 8,
+                    "stageIndex": 4,
+                    "searchTerm": "Saigon military coup",
+                    "gloss": "Kennedy expanded helicopters and advisers before CIA-backed ARVN generals overthrew and killed Diem."
+                  },
+                  {
+                    "id": "kt3_1_s3_c3",
+                    "tier": 4,
+                    "tag": "View 1",
+                    "label": "Coup Deepened US Responsibility",
+                    "detail": "Sanctioning Diem’s assassination plunged Saigon into coup chaos that bound Washington to rescue the South.",
+                    "lessonIndex": 8,
+                    "stageIndex": 4,
+                    "searchTerm": "assassination of Ngo Dinh Diem",
+                    "gloss": "Sanctioning Diem’s assassination plunged Saigon into coup chaos that bound Washington to rescue the South."
+                  },
+                  {
+                    "id": "kt3_1_s3_c4",
+                    "tier": 4,
+                    "tag": "View 2",
+                    "label": "Kennedy Stopped Short of Troops",
+                    "detail": "Unlike Johnson in 1965, Kennedy restricted US personnel to military advisers rather than combat divisions.",
+                    "lessonIndex": 8,
+                    "stageIndex": 4,
+                    "searchTerm": "President John F. Kennedy",
+                    "gloss": "Unlike Johnson in 1965, Kennedy restricted US personnel to military advisers rather than combat divisions."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt3_2",
+            "code": "3.2",
+            "tier": 2,
+            "label": "3.2 Escalation Under Johnson",
+            "dateChip": "1963–65",
+            "lessonIndex": 9,
+            "stageIndex": 0,
+            "searchTerm": "Gulf of Tonkin Vietcong Pleiku Da Nang",
+            "q3dDebate": "Deliberate White House escalation exploiting the August 1964 Gulf of Tonkin incident vs defensive reactions forced by Saigon collapse & the rising Vietcong threat.",
+            "gloss": "Q3d Core Debate: Deliberate White House escalation exploiting the August 1964 Gulf of Tonkin incident vs defensive reactions forced by Saigon collapse & the rising Vietcong threat.",
+            "children": [
+              {
+                "id": "kt3_2_s1",
+                "tier": 3,
+                "label": "Increasing Threat of Vietcong",
+                "dateChip": "1963–64",
+                "lessonIndex": 9,
+                "stageIndex": 0,
+                "searchTerm": "Saigon military instability Vietcong",
+                "gloss": "Saigon coup chaos after Diem accelerated escalation of conflict in Vietnam as the increasing threat of the Vietcong neared victory.",
+                "children": [
+                  {
+                    "id": "kt3_2_s1_c1",
+                    "tier": 4,
+                    "tag": "Why",
+                    "label": "10 Saigon Regimes & ARVN Flight",
+                    "detail": "Ten military governments in eighteen months and chronic ARVN desertions paralysed South Vietnam’s defence.",
+                    "lessonIndex": 9,
+                    "stageIndex": 0,
+                    "searchTerm": "Saigon military instability",
+                    "gloss": "Ten military governments in eighteen months and chronic ARVN desertions paralysed South Vietnam’s defence."
+                  },
+                  {
+                    "id": "kt3_2_s1_c2",
+                    "tier": 4,
+                    "tag": "Evidence",
+                    "label": "40% Rural Countryside Controlled",
+                    "detail": "By late 1964 Vietcong guerrillas controlled roughly 40% of southern villages and encircled provincial towns.",
+                    "lessonIndex": 9,
+                    "stageIndex": 0,
+                    "searchTerm": "Vietcong rural expansion",
+                    "gloss": "By late 1964 Vietcong guerrillas controlled roughly 40% of southern villages and encircled provincial towns."
+                  },
+                  {
+                    "id": "kt3_2_s1_c3",
+                    "tier": 4,
+                    "tag": "View 1",
+                    "label": "Imminent Collapse Forced LBJ",
+                    "detail": "Without direct American intervention, South Vietnam faced total communist defeat within months by early 1965.",
+                    "lessonIndex": 9,
+                    "stageIndex": 0,
+                    "searchTerm": "increasing threat of the Vietcong",
+                    "gloss": "Without direct American intervention, South Vietnam faced total communist defeat within months by early 1965."
+                  },
+                  {
+                    "id": "kt3_2_s1_c4",
+                    "tier": 4,
+                    "tag": "View 2",
+                    "label": "LBJ Feared 1964 Election Loss",
+                    "detail": "Domestic political fear of looking soft on communism against Barry Goldwater drove Johnson toward war.",
+                    "lessonIndex": 9,
+                    "stageIndex": 2,
+                    "searchTerm": "Gulf of Tonkin Resolution",
+                    "gloss": "Domestic political fear of looking soft on communism against Barry Goldwater drove Johnson toward war."
+                  }
+                ]
+              },
+              {
+                "id": "kt3_2_s2",
+                "tier": 3,
+                "label": "Gulf of Tonkin Incident (1964)",
+                "dateChip": "Aug 1964",
+                "lessonIndex": 9,
+                "stageIndex": 1,
+                "searchTerm": "Gulf of Tonkin Resolution USS Maddox",
+                "gloss": "The Gulf of Tonkin incident (1964) gave President Johnson sweeping congressional authority to wage undeclared war in Vietnam.",
+                "children": [
+                  {
+                    "id": "kt3_2_s2_c1",
+                    "tier": 4,
+                    "tag": "Why",
+                    "label": "USS Maddox & Disputed Radar Hit",
+                    "detail": "After North Vietnamese boats clashed with USS Maddox on 2 August, stormy 4 August sonar blips sparked strikes.",
+                    "lessonIndex": 9,
+                    "stageIndex": 1,
+                    "searchTerm": "USS Maddox patrol",
+                    "gloss": "After North Vietnamese boats clashed with USS Maddox on 2 August, stormy 4 August sonar blips sparked strikes."
+                  },
+                  {
+                    "id": "kt3_2_s2_c2",
+                    "tier": 4,
+                    "tag": "Evidence",
+                    "label": "88–2 Congressional Blank Check",
+                    "detail": "On 7 August 1964 Congress passed the Tonkin Resolution, empowering LBJ to use all necessary military force.",
+                    "lessonIndex": 9,
+                    "stageIndex": 2,
+                    "searchTerm": "Gulf of Tonkin Resolution",
+                    "gloss": "On 7 August 1964 Congress passed the Tonkin Resolution, empowering LBJ to use all necessary military force."
+                  },
+                  {
+                    "id": "kt3_2_s2_c3",
+                    "tier": 4,
+                    "tag": "View 1",
+                    "label": "Johnson Seized Pretext for War",
+                    "detail": "Using doubtful second-attack reports let the White House secure war powers without a formal declaration.",
+                    "lessonIndex": 9,
+                    "stageIndex": 2,
+                    "searchTerm": "presidential war powers",
+                    "gloss": "Using doubtful second-attack reports let the White House secure war powers without a formal declaration."
+                  },
+                  {
+                    "id": "kt3_2_s2_c4",
+                    "tier": 4,
+                    "tag": "View 2",
+                    "label": "Broad Cold War Consensus Backed It",
+                    "detail": "Near-unanimous House (416–0) and Senate (88–2) votes reflected bipartisan belief in halting Hanoi.",
+                    "lessonIndex": 9,
+                    "stageIndex": 2,
+                    "searchTerm": "Congress 'blank check'",
+                    "gloss": "Near-unanimous House (416–0) and Senate (88–2) votes reflected bipartisan belief in halting Hanoi."
+                  }
+                ]
+              },
+              {
+                "id": "kt3_2_s3",
+                "tier": 3,
+                "label": "1965 Combat Escalation in Vietnam",
+                "dateChip": "Feb–Dec 1965",
+                "lessonIndex": 9,
+                "stageIndex": 4,
+                "searchTerm": "Pleiku Da Nang General Westmoreland",
+                "gloss": "Pleiku raids triggered Operation Rolling Thunder and US Marine landings at Da Nang, turning Vietnam into an American ground war.",
+                "children": [
+                  {
+                    "id": "kt3_2_s3_c1",
+                    "tier": 4,
+                    "tag": "Why",
+                    "label": "Pleiku Mortar Raid & Airfields",
+                    "detail": "Eight Americans killed at Pleiku in February 1965 sparked bombing that needed ground troops guarding bases.",
+                    "lessonIndex": 9,
+                    "stageIndex": 3,
+                    "searchTerm": "Vietcong raid on Pleiku",
+                    "gloss": "Eight Americans killed at Pleiku in February 1965 sparked bombing that needed ground troops guarding bases."
+                  },
+                  {
+                    "id": "kt3_2_s3_c2",
+                    "tier": 4,
+                    "tag": "Evidence",
+                    "label": "3,500 Marines & 536,000 Peak",
+                    "detail": "Marines landed at Da Nang on 8 March 1965; under Westmoreland US forces topped 536,000 troops by 1968.",
+                    "lessonIndex": 9,
+                    "stageIndex": 4,
+                    "searchTerm": "Da Nang beach landing",
+                    "gloss": "Marines landed at Da Nang on 8 March 1965; under Westmoreland US forces topped 536,000 troops by 1968."
+                  },
+                  {
+                    "id": "kt3_2_s3_c3",
+                    "tier": 4,
+                    "tag": "View 1",
+                    "label": "Step-by-Step Military Quagmire",
+                    "detail": "Guarding airbases pulled Westmoreland into offensive sweeps as each troop surge failed to break Hanoi.",
+                    "lessonIndex": 9,
+                    "stageIndex": 4,
+                    "searchTerm": "General Westmoreland escalation",
+                    "gloss": "Guarding airbases pulled Westmoreland into offensive sweeps as each troop surge failed to break Hanoi."
+                  },
+                  {
+                    "id": "kt3_2_s3_c4",
+                    "tier": 4,
+                    "tag": "View 2",
+                    "label": "Conscious Choice to Americanise",
+                    "detail": "Johnson and his advisers deliberately chose massive US firepower over negotiated neutrality in 1965.",
+                    "lessonIndex": 9,
+                    "stageIndex": 3,
+                    "searchTerm": "Operation Rolling Thunder launched",
+                    "gloss": "Johnson and his advisers deliberately chose massive US firepower over negotiated neutrality in 1965."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt3_3",
+            "code": "3.3",
+            "tier": 2,
+            "label": "3.3 Nature of Conflict, 1964–68",
+            "dateChip": "1964–68",
+            "lessonIndex": 10,
+            "stageIndex": 0,
+            "searchTerm": "Guerrilla tactics Search and Destroy Tet Offensive",
+            "q3dDebate": "Ingenious Vietcong guerrilla tactics, tunnels, & peasant concealment vs counter-productive US military methods (Search & Destroy, Agent Orange) & Tet media shock.",
+            "gloss": "Q3d Core Debate: Ingenious Vietcong guerrilla tactics, tunnels, & peasant concealment vs counter-productive US military methods (Search & Destroy, Agent Orange) & Tet media shock.",
+            "children": [
+              {
+                "id": "kt3_3_s1",
+                "tier": 3,
+                "label": "Vietcong Guerrilla Tactics",
+                "dateChip": "1964–68",
+                "lessonIndex": 10,
+                "stageIndex": 0,
+                "searchTerm": "Cu Chi tunnels punji sticks Giap",
+                "gloss": "Guerrilla tactics used by the Vietcong—close ambushes, Cu Chi tunnels, and booby traps—neutralised US firepower.",
+                "children": [
+                  {
+                    "id": "kt3_3_s1_c1",
+                    "tier": 4,
+                    "tag": "Why",
+                    "label": "Hanging Onto US Belt Buckles",
+                    "detail": "General Giap avoided pitched battles, fighting at close range so US air and artillery strikes were unusable.",
+                    "lessonIndex": 10,
+                    "stageIndex": 0,
+                    "searchTerm": "General Vo Nguyen Giap",
+                    "gloss": "General Giap avoided pitched battles, fighting at close range so US air and artillery strikes were unusable."
+                  },
+                  {
+                    "id": "kt3_3_s1_c2",
+                    "tier": 4,
+                    "tag": "Evidence",
+                    "label": "250km Cu Chi Tunnels & Traps",
+                    "detail": "Multi-level underground complexes sheltered fighters while punji sticks and mines caused over 10% of casualties.",
+                    "lessonIndex": 10,
+                    "stageIndex": 1,
+                    "searchTerm": "Cu Chi 250km tunnel networks",
+                    "gloss": "Multi-level underground complexes sheltered fighters while punji sticks and mines caused over 10% of casualties."
+                  },
+                  {
+                    "id": "kt3_3_s1_c3",
+                    "tier": 4,
+                    "tag": "View 1",
+                    "label": "Asymmetric Warfare Beat Tech",
+                    "detail": "Uniformless guerrillas blending into villages and resupplied down the Ho Chi Minh Trail exhausted conscripts.",
+                    "lessonIndex": 10,
+                    "stageIndex": 2,
+                    "searchTerm": "Ho Chi Minh Trail network",
+                    "gloss": "Uniformless guerrillas blending into villages and resupplied down the Ho Chi Minh Trail exhausted conscripts."
+                  },
+                  {
+                    "id": "kt3_3_s1_c4",
+                    "tier": 4,
+                    "tag": "View 2",
+                    "label": "Suffered Huge Combat Losses",
+                    "detail": "Whenever guerrillas fought openly against American firepower, communist units endured devastating casualties.",
+                    "lessonIndex": 11,
+                    "stageIndex": 1,
+                    "searchTerm": "Tet Offensive",
+                    "gloss": "Whenever guerrillas fought openly against American firepower, communist units endured devastating casualties."
+                  }
+                ]
+              },
+              {
+                "id": "kt3_3_s2",
+                "tier": 3,
+                "label": "Rolling Thunder & US Methods",
+                "dateChip": "1965–68",
+                "lessonIndex": 10,
+                "stageIndex": 4,
+                "searchTerm": "Search and Destroy Agent Orange Rolling Thunder",
+                "gloss": "Methods used by the USA included Search and Destroy raids, Operation Rolling Thunder bombing, and Agent Orange and napalm chemical weapons.",
+                "children": [
+                  {
+                    "id": "kt3_3_s2_c1",
+                    "tier": 4,
+                    "tag": "Why",
+                    "label": "Attrition & Body-Count Strategy",
+                    "detail": "Lacking clear front lines, Westmoreland used helicopter sweeps and 864,000 tons of bombs to wear down foes.",
+                    "lessonIndex": 10,
+                    "stageIndex": 4,
+                    "searchTerm": "body-count measurement failure",
+                    "gloss": "Lacking clear front lines, Westmoreland used helicopter sweeps and 864,000 tons of bombs to wear down foes."
+                  },
+                  {
+                    "id": "kt3_3_s2_c2",
+                    "tier": 4,
+                    "tag": "Evidence",
+                    "label": "20m Gallons of Agent Orange",
+                    "detail": "Operation Ranch Hand defoliants, 1,000°C napalm, and Zippo village burnings devastated rural South Vietnam.",
+                    "lessonIndex": 10,
+                    "stageIndex": 3,
+                    "searchTerm": "Agent Orange chemical defoliant",
+                    "gloss": "Operation Ranch Hand defoliants, 1,000°C napalm, and Zippo village burnings devastated rural South Vietnam."
+                  },
+                  {
+                    "id": "kt3_3_s2_c3",
+                    "tier": 4,
+                    "tag": "View 1",
+                    "label": "Alienated Rural Hearts & Minds",
+                    "detail": "Indiscriminate bombing, chemical burns, and torched huts drove angry peasant villagers to aid the Vietcong.",
+                    "lessonIndex": 10,
+                    "stageIndex": 4,
+                    "searchTerm": "Zippo' village burns",
+                    "gloss": "Indiscriminate bombing, chemical burns, and torched huts drove angry peasant villagers to aid the Vietcong."
+                  },
+                  {
+                    "id": "kt3_3_s2_c4",
+                    "tier": 4,
+                    "tag": "View 2",
+                    "label": "Border Sanctuaries Tied Hands",
+                    "detail": "Military commanders argued political bans on invading North Vietnam or Laos let jungle supply lines survive.",
+                    "lessonIndex": 10,
+                    "stageIndex": 2,
+                    "searchTerm": "Laos and Cambodia border routes",
+                    "gloss": "Military commanders argued political bans on invading North Vietnam or Laos let jungle supply lines survive."
+                  }
+                ]
+              },
+              {
+                "id": "kt3_3_s3",
+                "tier": 3,
+                "label": "Tet Offensive (1968)",
+                "dateChip": "Jan–Mar 1968",
+                "lessonIndex": 11,
+                "stageIndex": 0,
+                "searchTerm": "Tet Offensive US Embassy Walter Cronkite",
+                "gloss": "Launched across 100 cities in January 1968, the Tet Offensive suffered military defeat yet shattered US political confidence.",
+                "children": [
+                  {
+                    "id": "kt3_3_s3_c1",
+                    "tier": 4,
+                    "tag": "Why",
+                    "label": "Surprise Lunar New Year Assault",
+                    "detail": "Over 80,000 communist troops attacked 100 cities and breached the US Embassy compound in Saigon for six hours.",
+                    "lessonIndex": 11,
+                    "stageIndex": 0,
+                    "searchTerm": "US Embassy Saigon siege",
+                    "gloss": "Over 80,000 communist troops attacked 100 cities and breached the US Embassy compound in Saigon for six hours."
+                  },
+                  {
+                    "id": "kt3_3_s3_c2",
+                    "tier": 4,
+                    "tag": "Evidence",
+                    "label": "50,000 VC Lost; LBJ Stepped Down",
+                    "detail": "Communists lost 50,000+ fighters, yet Walter Cronkite’s stalemate broadcast pushed LBJ out on 31 March 1968.",
+                    "lessonIndex": 11,
+                    "stageIndex": 1,
+                    "searchTerm": "Walter Cronkite broadcast",
+                    "gloss": "Communists lost 50,000+ fighters, yet Walter Cronkite’s stalemate broadcast pushed LBJ out on 31 March 1968."
+                  },
+                  {
+                    "id": "kt3_3_s3_c3",
+                    "tier": 4,
+                    "tag": "View 1",
+                    "label": "Decisive Political Turning Point",
+                    "detail": "Televised Saigon fighting blew open the Credibility Gap, ending escalation and forcing peace talks.",
+                    "lessonIndex": 11,
+                    "stageIndex": 1,
+                    "searchTerm": "domestic Credibility Gap",
+                    "gloss": "Televised Saigon fighting blew open the Credibility Gap, ending escalation and forcing peace talks."
+                  },
+                  {
+                    "id": "kt3_3_s3_c4",
+                    "tier": 4,
+                    "tag": "View 2",
+                    "label": "Severe Vietcong Military Defeat",
+                    "detail": "Every captured town was retaken and southern Vietcong cadres were crippled, leaving Hanoi reliant on NVA.",
+                    "lessonIndex": 11,
+                    "stageIndex": 1,
+                    "searchTerm": "Tet Offensive",
+                    "gloss": "Every captured town was retaken and southern Vietcong cadres were crippled, leaving Hanoi reliant on NVA."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt3_4",
+            "code": "3.4",
+            "tier": 2,
+            "label": "3.4 Changes Under Nixon, 1969–73",
+            "dateChip": "1969–73",
+            "lessonIndex": 11,
+            "stageIndex": 0,
+            "searchTerm": "Vietnamisation Nixon Doctrine Cambodia Laos",
+            "q3dDebate": "ARVN corruption & collapsing US conscript morale dooming Vietnamisation vs Nixon’s cross-border attacks & 1972 bombing buying time for troop withdrawal.",
+            "gloss": "Q3d Core Debate: ARVN corruption & collapsing US conscript morale dooming Vietnamisation vs Nixon’s cross-border attacks & 1972 bombing buying time for troop withdrawal.",
+            "children": [
+              {
+                "id": "kt3_4_s1",
+                "tier": 3,
+                "label": "Vietnamisation & Why It Failed",
+                "dateChip": "1969–72",
+                "lessonIndex": 11,
+                "stageIndex": 3,
+                "searchTerm": "Vietnamisation fragging ARVN",
+                "gloss": "Nixon’s key strategy of Vietnamisation handed ground combat to the ARVN, but corruption and morale collapse caused its failure.",
+                "children": [
+                  {
+                    "id": "kt3_4_s1_c1",
+                    "tier": 4,
+                    "tag": "Why",
+                    "label": "Peace With Honour Exit Goal",
+                    "detail": "Nixon trained and equipped South Vietnamese troops so American conscripts could withdraw without open defeat.",
+                    "lessonIndex": 11,
+                    "stageIndex": 3,
+                    "searchTerm": "Vietnamisation",
+                    "gloss": "Nixon trained and equipped South Vietnamese troops so American conscripts could withdraw without open defeat."
+                  },
+                  {
+                    "id": "kt3_4_s1_c2",
+                    "tier": 4,
+                    "tag": "Evidence",
+                    "label": "800+ Fragging Cases & ARVN Flaws",
+                    "detail": "Remaining US units suffered drug abuse and 800+ fragging incidents while ARVN officers stayed corrupt.",
+                    "lessonIndex": 11,
+                    "stageIndex": 4,
+                    "searchTerm": "fragging incidents",
+                    "gloss": "Remaining US units suffered drug abuse and 800+ fragging incidents while ARVN officers stayed corrupt."
+                  },
+                  {
+                    "id": "kt3_4_s1_c3",
+                    "tier": 4,
+                    "tag": "View 1",
+                    "label": "ARVN Could Not Fight Alone",
+                    "detail": "Chaotic 1971 retreats in Laos proved Saigon forces remained utterly dependent on American air power.",
+                    "lessonIndex": 11,
+                    "stageIndex": 3,
+                    "searchTerm": "Vietnamisation",
+                    "gloss": "Chaotic 1971 retreats in Laos proved Saigon forces remained utterly dependent on American air power."
+                  },
+                  {
+                    "id": "kt3_4_s1_c4",
+                    "tier": 4,
+                    "tag": "View 2",
+                    "label": "Slashed US Combat Casualties",
+                    "detail": "Handing over frontline patrols sharply reduced weekly American deaths and eased domestic draft pressure.",
+                    "lessonIndex": 11,
+                    "stageIndex": 2,
+                    "searchTerm": "phased troop withdrawals",
+                    "gloss": "Handing over frontline patrols sharply reduced weekly American deaths and eased domestic draft pressure."
+                  }
+                ]
+              },
+              {
+                "id": "kt3_4_s2",
+                "tier": 3,
+                "label": "Nixon Doctrine & Troop Withdrawal",
+                "dateChip": "1969–72",
+                "lessonIndex": 11,
+                "stageIndex": 2,
+                "searchTerm": "Nixon Doctrine phased troop withdrawals",
+                "gloss": "Under the Nixon Doctrine, Asian allies supplied ground forces, enabling phased withdrawal of US troops from Vietnam.",
+                "children": [
+                  {
+                    "id": "kt3_4_s2_c1",
+                    "tier": 4,
+                    "tag": "Why",
+                    "label": "Ending Open-Ended Asian Wars",
+                    "detail": "Announced in 1969, the Nixon Doctrine pledged US nuclear and financial aid but required allied soldiers.",
+                    "lessonIndex": 11,
+                    "stageIndex": 2,
+                    "searchTerm": "Nixon Doctrine",
+                    "gloss": "Announced in 1969, the Nixon Doctrine pledged US nuclear and financial aid but required allied soldiers."
+                  },
+                  {
+                    "id": "kt3_4_s2_c2",
+                    "tier": 4,
+                    "tag": "Evidence",
+                    "label": "543,000 Cut Under 156,000 (1971)",
+                    "detail": "Phased withdrawals removed nearly 400,000 US troops by late 1971 before full combat exit in March 1973.",
+                    "lessonIndex": 11,
+                    "stageIndex": 2,
+                    "searchTerm": "phased troop withdrawals",
+                    "gloss": "Phased withdrawals removed nearly 400,000 US troops by late 1971 before full combat exit in March 1973."
+                  },
+                  {
+                    "id": "kt3_4_s2_c3",
+                    "tier": 4,
+                    "tag": "View 1",
+                    "label": "Sustained Domestic Political Time",
+                    "detail": "Bringing soldiers home steadily helped Nixon defuse moderate voters and win his 1972 landslide.",
+                    "lessonIndex": 13,
+                    "stageIndex": 4,
+                    "searchTerm": "1972 presidential landslide",
+                    "gloss": "Bringing soldiers home steadily helped Nixon defuse moderate voters and win his 1972 landslide."
+                  },
+                  {
+                    "id": "kt3_4_s2_c4",
+                    "tier": 4,
+                    "tag": "View 2",
+                    "label": "Weakened Bargaining Leverage",
+                    "detail": "Unilateral US troop pullouts encouraged Hanoi to wait patiently until all American ground forces left.",
+                    "lessonIndex": 11,
+                    "stageIndex": 4,
+                    "searchTerm": "US conscript morale collapse",
+                    "gloss": "Unilateral US troop pullouts encouraged Hanoi to wait patiently until all American ground forces left."
+                  }
+                ]
+              },
+              {
+                "id": "kt3_4_s3",
+                "tier": 3,
+                "label": "Cambodia, Laos & 1972 Bombing",
+                "dateChip": "1970–72",
+                "lessonIndex": 11,
+                "stageIndex": 3,
+                "searchTerm": "Cambodia Laos Linebacker II",
+                "gloss": "Nixon widened the air and border war through attacks on Cambodia (1970) and Laos (1971) and heavy bombing of North Vietnam (1972).",
+                "children": [
+                  {
+                    "id": "kt3_4_s3_c1",
+                    "tier": 4,
+                    "tag": "Why",
+                    "label": "Madman Theory & Trail Sanctuaries",
+                    "detail": "Operation Menu and 1970–71 raids into Cambodia and Laos aimed to sever Ho Chi Minh Trail bases and coerce Hanoi.",
+                    "lessonIndex": 11,
+                    "stageIndex": 3,
+                    "searchTerm": "Operation Menu secret bombings",
+                    "gloss": "Operation Menu and 1970–71 raids into Cambodia and Laos aimed to sever Ho Chi Minh Trail bases and coerce Hanoi."
+                  },
+                  {
+                    "id": "kt3_4_s3_c2",
+                    "tier": 4,
+                    "tag": "Evidence",
+                    "label": "20,000 Tons in Linebacker II",
+                    "detail": "Eleven days of December 1972 B-52 Christmas Bombings pounded Hanoi and Haiphong rail and air defences.",
+                    "lessonIndex": 14,
+                    "stageIndex": 1,
+                    "searchTerm": "Operation Linebacker II",
+                    "gloss": "Eleven days of December 1972 B-52 Christmas Bombings pounded Hanoi and Haiphong rail and air defences."
+                  },
+                  {
+                    "id": "kt3_4_s3_c3",
+                    "tier": 4,
+                    "tag": "View 1",
+                    "label": "Inflamed Fury & Exposed ARVN",
+                    "detail": "Invading Cambodia sparked uproar across US campuses while Laos Operation Lam Son 719 ended in ARVN rout.",
+                    "lessonIndex": 12,
+                    "stageIndex": 3,
+                    "searchTerm": "Cambodian incursion protests",
+                    "gloss": "Invading Cambodia sparked uproar across US campuses while Laos Operation Lam Son 719 ended in ARVN rout."
+                  },
+                  {
+                    "id": "kt3_4_s3_c4",
+                    "tier": 4,
+                    "tag": "View 2",
+                    "label": "1972 Bombing Forced Final Talks",
+                    "detail": "Linebacker air power halted Hanoi’s 1972 offensive and compelled North Vietnam to sign the January 1973 pact.",
+                    "lessonIndex": 14,
+                    "stageIndex": 1,
+                    "searchTerm": "B-52 Stratofortress raids",
+                    "gloss": "Linebacker air power halted Hanoi’s 1972 offensive and compelled North Vietnam to sign the January 1973 pact."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "kt4",
+        "keyTopicNumber": 4,
+        "tier": 1,
+        "side": "right",
+        "color": "#059669",
+        "label": "KT4: Vietnam Reactions & End",
+        "dateChip": "1964–75",
+        "lessonIndex": 12,
+        "stageIndex": 0,
+        "searchTerm": "My Lai Kent State Silent Majority Paris Peace",
+        "gloss": "Key topic 4: Reactions to, and the end of, US involvement in Vietnam, 1964–75 — anti-war protest, Silent Majority support, Paris Peace Accords, and overall US failure.",
+        "children": [
+          {
+            "id": "kt4_1",
+            "code": "4.1",
+            "tier": 2,
+            "label": "4.1 Opposition to the War",
+            "dateChip": "1964–71",
+            "lessonIndex": 12,
+            "stageIndex": 0,
+            "searchTerm": "Living Room War draft My Lai Kent State",
+            "q3dDebate": "Moral outrage over TV media coverage, My Lai Massacre, & Kent State shootings vs self-interest over draft inequality, casualties, & the Credibility Gap.",
+            "gloss": "Q3d Core Debate: Moral outrage over TV media coverage, My Lai Massacre, & Kent State shootings vs self-interest over draft inequality, casualties, & the Credibility Gap.",
+            "children": [
+              {
+                "id": "kt4_1_s1",
+                "tier": 3,
+                "label": "TV Media, Draft & Student Protest",
+                "dateChip": "1965–71",
+                "lessonIndex": 12,
+                "stageIndex": 0,
+                "searchTerm": "Living Room War Selective Service draft",
+                "gloss": "Growth of opposition combined uncensored TV and media coverage of the war, an unequal draft system, and the student movement.",
+                "children": [
+                  {
+                    "id": "kt4_1_s1_c1",
+                    "tier": 4,
+                    "tag": "Why",
+                    "label": "Living Room TV & Credibility Gap",
+                    "detail": "Colour TV broadcasts into 90% of homes and the 1971 Pentagon Papers exposed official government lies.",
+                    "lessonIndex": 12,
+                    "stageIndex": 0,
+                    "searchTerm": "Living Room War",
+                    "gloss": "Colour TV broadcasts into 90% of homes and the 1971 Pentagon Papers exposed official government lies."
+                  },
+                  {
+                    "id": "kt4_1_s1_c2",
+                    "tier": 4,
+                    "tag": "Evidence",
+                    "label": "2m Drafted & Deferment Inequality",
+                    "detail": "College deferments spared affluent youths while working-class and Black men fought, sparking draft burnings.",
+                    "lessonIndex": 12,
+                    "stageIndex": 1,
+                    "searchTerm": "Selective Service draft system",
+                    "gloss": "College deferments spared affluent youths while working-class and Black men fought, sparking draft burnings."
+                  },
+                  {
+                    "id": "kt4_1_s1_c3",
+                    "tier": 4,
+                    "tag": "View 1",
+                    "label": "TV & Atrocities Shocked Conscience",
+                    "detail": "Graphic nightly footage of burning villages, Muhammad Ali’s stand, and veteran protests turned moral opinion.",
+                    "lessonIndex": 12,
+                    "stageIndex": 0,
+                    "searchTerm": "uncensored combat television",
+                    "gloss": "Graphic nightly footage of burning villages, Muhammad Ali’s stand, and veteran protests turned moral opinion."
+                  },
+                  {
+                    "id": "kt4_1_s1_c4",
+                    "tier": 4,
+                    "tag": "View 2",
+                    "label": "Casualties & Drafts Drove Protest",
+                    "detail": "Middle-class dissent surged sharpest when rising US body bags and lottery drafts threatened campuses directly.",
+                    "lessonIndex": 12,
+                    "stageIndex": 1,
+                    "searchTerm": "draft card burning protests",
+                    "gloss": "Middle-class dissent surged sharpest when rising US body bags and lottery drafts threatened campuses directly."
+                  }
+                ]
+              },
+              {
+                "id": "kt4_1_s2",
+                "tier": 3,
+                "label": "My Lai Massacre & Calley Trial",
+                "dateChip": "1968–71",
+                "lessonIndex": 12,
+                "stageIndex": 2,
+                "searchTerm": "My Lai massacre William Calley",
+                "gloss": "Public reaction to the My Lai Massacre (1968) and the 1971 trial of Lt. Calley shattered moral claims and polarised America.",
+                "children": [
+                  {
+                    "id": "kt4_1_s2_c1",
+                    "tier": 4,
+                    "tag": "Why",
+                    "label": "500+ Unarmed Villagers Murdered",
+                    "detail": "Charlie Company under Lt. William Calley slaughtered women and children at Son My in March 1968.",
+                    "lessonIndex": 12,
+                    "stageIndex": 2,
+                    "searchTerm": "My Lai massacre",
+                    "gloss": "Charlie Company under Lt. William Calley slaughtered women and children at Son My in March 1968."
+                  },
+                  {
+                    "id": "kt4_1_s2_c2",
+                    "tier": 4,
+                    "tag": "Evidence",
+                    "label": "Hersh Exposé & House Arrest",
+                    "detail": "Revealed after 20 months in November 1969, only Calley was convicted before Nixon commuted his life sentence.",
+                    "lessonIndex": 12,
+                    "stageIndex": 2,
+                    "searchTerm": "trial of Lt. Calley",
+                    "gloss": "Revealed after 20 months in November 1969, only Calley was convicted before Nixon commuted his life sentence."
+                  },
+                  {
+                    "id": "kt4_1_s2_c3",
+                    "tier": 4,
+                    "tag": "View 1",
+                    "label": "Destroyed America’s Moral Case",
+                    "detail": "Colour photographs of murdered villagers horrified citizens and pushed Congress to repeal Tonkin in 1970.",
+                    "lessonIndex": 12,
+                    "stageIndex": 2,
+                    "searchTerm": "Seymour Hersh investigative reporting",
+                    "gloss": "Colour photographs of murdered villagers horrified citizens and pushed Congress to repeal Tonkin in 1970."
+                  },
+                  {
+                    "id": "kt4_1_s2_c4",
+                    "tier": 4,
+                    "tag": "View 2",
+                    "label": "Deeply Polarised Public Opinion",
+                    "detail": "Many conservatives viewed Calley as a scapegoated soldier, flooding the White House with calls for leniency.",
+                    "lessonIndex": 12,
+                    "stageIndex": 2,
+                    "searchTerm": "trial of Lt. Calley",
+                    "gloss": "Many conservatives viewed Calley as a scapegoated soldier, flooding the White House with calls for leniency."
+                  }
+                ]
+              },
+              {
+                "id": "kt4_1_s3",
+                "tier": 3,
+                "label": "Kent State Shootings (1970)",
+                "dateChip": "May 1970",
+                "lessonIndex": 12,
+                "stageIndex": 3,
+                "searchTerm": "Kent State killings Ohio National Guard",
+                "gloss": "Following Nixon’s Cambodia invasion speech, the Kent State University shootings (1970) brought lethal military force onto a US campus.",
+                "children": [
+                  {
+                    "id": "kt4_1_s3_c1",
+                    "tier": 4,
+                    "tag": "Why",
+                    "label": "Anger at April 1970 Cambodia Raid",
+                    "detail": "Nixon’s televised invasion of neutral Cambodia ignited fierce campus protests and burning of the ROTC building.",
+                    "lessonIndex": 12,
+                    "stageIndex": 3,
+                    "searchTerm": "Cambodian incursion protests",
+                    "gloss": "Nixon’s televised invasion of neutral Cambodia ignited fierce campus protests and burning of the ROTC building."
+                  },
+                  {
+                    "id": "kt4_1_s3_c2",
+                    "tier": 4,
+                    "tag": "Evidence",
+                    "label": "4 Students Killed; 400+ Shutdowns",
+                    "detail": "Ohio National Guardsmen fired 67 rounds on 4 May 1970, killing four students and sparking 4m-student strikes.",
+                    "lessonIndex": 12,
+                    "stageIndex": 3,
+                    "searchTerm": "Kent State killings",
+                    "gloss": "Ohio National Guardsmen fired 67 rounds on 4 May 1970, killing four students and sparking 4m-student strikes."
+                  },
+                  {
+                    "id": "kt4_1_s3_c3",
+                    "tier": 4,
+                    "tag": "View 1",
+                    "label": "Brought War Violence Home",
+                    "detail": "Shooting unarmed middle-class students shocked suburban parents and galvanized Congressional anti-war doves.",
+                    "lessonIndex": 12,
+                    "stageIndex": 3,
+                    "searchTerm": "Ohio National Guard shooting",
+                    "gloss": "Shooting unarmed middle-class students shocked suburban parents and galvanized Congressional anti-war doves."
+                  },
+                  {
+                    "id": "kt4_1_s3_c4",
+                    "tier": 4,
+                    "tag": "View 2",
+                    "label": "Polls Still Blamed Protesters",
+                    "detail": "Opinion polls showed many older voters blamed student radicals rather than National Guardsmen for the clash.",
+                    "lessonIndex": 13,
+                    "stageIndex": 2,
+                    "searchTerm": "Hard Hat Riots",
+                    "gloss": "Opinion polls showed many older voters blamed student radicals rather than National Guardsmen for the clash."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt4_2",
+            "code": "4.2",
+            "tier": 2,
+            "label": "4.2 Support for the War",
+            "dateChip": "1964–72",
+            "lessonIndex": 13,
+            "stageIndex": 0,
+            "searchTerm": "Fear of communism Silent Majority Hard Hats",
+            "q3dDebate": "Principled Cold War fear of communism & patriotic duty vs Nixon’s mobilisation of the ‘silent majority’ & blue-collar ‘hard hats’ resenting student radicals.",
+            "gloss": "Q3d Core Debate: Principled Cold War fear of communism & patriotic duty vs Nixon’s mobilisation of the ‘silent majority’ & blue-collar ‘hard hats’ resenting student radicals.",
+            "children": [
+              {
+                "id": "kt4_2_s1",
+                "tier": 3,
+                "label": "Fear of Communism & Patriotism",
+                "dateChip": "1964–72",
+                "lessonIndex": 13,
+                "stageIndex": 0,
+                "searchTerm": "fear of communism congressional hawks",
+                "gloss": "Enduring domestic support rested on the fear of communism, Cold War domino beliefs, and working-class patriotism.",
+                "children": [
+                  {
+                    "id": "kt4_2_s1_c1",
+                    "tier": 4,
+                    "tag": "Why",
+                    "label": "Cold War Anti-Communist Consensus",
+                    "detail": "Shaped by World War Two and Korea, millions believed halting communism in Asia protected Western freedom.",
+                    "lessonIndex": 13,
+                    "stageIndex": 0,
+                    "searchTerm": "fear of communism",
+                    "gloss": "Shaped by World War Two and Korea, millions believed halting communism in Asia protected Western freedom."
+                  },
+                  {
+                    "id": "kt4_2_s1_c2",
+                    "tier": 4,
+                    "tag": "Evidence",
+                    "label": "Veterans Groups & Hawk Lawmakers",
+                    "detail": "American Legion chapters and congressional hawks warned early exit would humiliate America and topple Asia.",
+                    "lessonIndex": 13,
+                    "stageIndex": 3,
+                    "searchTerm": "congressional hawks",
+                    "gloss": "American Legion chapters and congressional hawks warned early exit would humiliate America and topple Asia."
+                  },
+                  {
+                    "id": "kt4_2_s1_c3",
+                    "tier": 4,
+                    "tag": "View 1",
+                    "label": "Genuine Patriotic Duty Endured",
+                    "detail": "Suburban and rural families honoured military service and refused to preside over America’s first war defeat.",
+                    "lessonIndex": 13,
+                    "stageIndex": 3,
+                    "searchTerm": "fear of national humiliation",
+                    "gloss": "Suburban and rural families honoured military service and refused to preside over America’s first war defeat."
+                  },
+                  {
+                    "id": "kt4_2_s1_c4",
+                    "tier": 4,
+                    "tag": "View 2",
+                    "label": "Class Anger Beat War Enthusiasm",
+                    "detail": "Many blue-collar workers disliked flag-burning college students with deferments more than they loved the war.",
+                    "lessonIndex": 13,
+                    "stageIndex": 3,
+                    "searchTerm": "patriotic working-class backlash",
+                    "gloss": "Many blue-collar workers disliked flag-burning college students with deferments more than they loved the war."
+                  }
+                ]
+              },
+              {
+                "id": "kt4_2_s2",
+                "tier": 3,
+                "label": "Hard Hats & Silent Majority",
+                "dateChip": "1969–72",
+                "lessonIndex": 13,
+                "stageIndex": 1,
+                "searchTerm": "Silent Majority Hard Hat Riots",
+                "gloss": "Nixon rallied the ‘silent majority’ on television in 1969 while pro-war ‘hard hats’ clashed with student demonstrators in 1970.",
+                "children": [
+                  {
+                    "id": "kt4_2_s2_c1",
+                    "tier": 4,
+                    "tag": "Why",
+                    "label": "Nov 1969 Silent Majority Broadcast",
+                    "detail": "Nixon appealed over street protesters to quiet taxpaying citizens to back Vietnamisation and peace with honour.",
+                    "lessonIndex": 13,
+                    "stageIndex": 1,
+                    "searchTerm": "Silent Majority' address",
+                    "gloss": "Nixon appealed over street protesters to quiet taxpaying citizens to back Vietnamisation and peace with honour."
+                  },
+                  {
+                    "id": "kt4_2_s2_c2",
+                    "tier": 4,
+                    "tag": "Evidence",
+                    "label": "Wall St Hard Hats & 49-State Win",
+                    "detail": "Construction hard hats attacked Wall Street protesters in May 1970, and Nixon won 49 states in November 1972.",
+                    "lessonIndex": 13,
+                    "stageIndex": 2,
+                    "searchTerm": "Hard Hat Riots",
+                    "gloss": "Construction hard hats attacked Wall Street protesters in May 1970, and Nixon won 49 states in November 1972."
+                  },
+                  {
+                    "id": "kt4_2_s2_c3",
+                    "tier": 4,
+                    "tag": "View 1",
+                    "label": "Gave Nixon Three Years Mandate",
+                    "detail": "Massive telegram support and defeating anti-war McGovern proved noisy campus rallies were a vocal minority.",
+                    "lessonIndex": 13,
+                    "stageIndex": 4,
+                    "searchTerm": "1972 presidential landslide",
+                    "gloss": "Massive telegram support and defeating anti-war McGovern proved noisy campus rallies were a vocal minority."
+                  },
+                  {
+                    "id": "kt4_2_s2_c4",
+                    "tier": 4,
+                    "tag": "View 2",
+                    "label": "Backed Withdrawal, Not Escalation",
+                    "detail": "Voters backed Nixon because he was cutting US troop casualties and drafts, not to fight an endless war.",
+                    "lessonIndex": 13,
+                    "stageIndex": 4,
+                    "searchTerm": "George McGovern defeat",
+                    "gloss": "Voters backed Nixon because he was cutting US troop casualties and drafts, not to fight an endless war."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt4_3",
+            "code": "4.3",
+            "tier": 2,
+            "label": "4.3 Peace Process & End of War",
+            "dateChip": "1972–75",
+            "lessonIndex": 14,
+            "stageIndex": 0,
+            "searchTerm": "Paris Peace Agreement War Powers Act costs",
+            "q3dDebate": "Kissinger’s diplomacy & Linebacker II winning an honourable 1973 Paris Peace Agreement undercut by Congress vs a cynical ‘decent interval’ retreat after $168bn & 58,220 dead.",
+            "gloss": "Q3d Core Debate: Kissinger’s diplomacy & Linebacker II winning an honourable 1973 Paris Peace Agreement undercut by Congress vs a cynical ‘decent interval’ retreat after $168bn & 58,220 dead.",
+            "children": [
+              {
+                "id": "kt4_3_s1",
+                "tier": 3,
+                "label": "Peace Talks & Paris Agreement",
+                "dateChip": "1972–Jan 1973",
+                "lessonIndex": 14,
+                "stageIndex": 0,
+                "searchTerm": "Henry Kissinger Le Duc Tho Paris Peace Accords",
+                "gloss": "Secret peace negotiations (1972–73) between Kissinger and Le Duc Tho produced the January 1973 Paris Peace Agreement.",
+                "children": [
+                  {
+                    "id": "kt4_3_s1_c1",
+                    "tier": 4,
+                    "tag": "Why",
+                    "label": "Kissinger–Tho NVA Troop Concession",
+                    "detail": "Secret Paris talks broke deadlock in October 1972 by letting 150,000 NVA troops stay inside South Vietnam.",
+                    "lessonIndex": 14,
+                    "stageIndex": 0,
+                    "searchTerm": "Henry Kissinger and Le Duc Tho",
+                    "gloss": "Secret Paris talks broke deadlock in October 1972 by letting 150,000 NVA troops stay inside South Vietnam."
+                  },
+                  {
+                    "id": "kt4_3_s1_c2",
+                    "tier": 4,
+                    "tag": "Evidence",
+                    "label": "27 Jan 1973 Pact & 591 POWs Home",
+                    "detail": "After December 1972 B-52 raids, the Paris Accords brought a ceasefire, 591 freed POWs, and March 1973 US exit.",
+                    "lessonIndex": 14,
+                    "stageIndex": 2,
+                    "searchTerm": "Paris Peace Accords",
+                    "gloss": "After December 1972 B-52 raids, the Paris Accords brought a ceasefire, 591 freed POWs, and March 1973 US exit."
+                  },
+                  {
+                    "id": "kt4_3_s1_c3",
+                    "tier": 4,
+                    "tag": "View 1",
+                    "label": "Secured US Exit & POW Return",
+                    "detail": "Détente with China and the USSR plus Linebacker II extracted American forces intact with Saigon still standing.",
+                    "lessonIndex": 14,
+                    "stageIndex": 2,
+                    "searchTerm": "POW release agreement",
+                    "gloss": "Détente with China and the USSR plus Linebacker II extracted American forces intact with Saigon still standing."
+                  },
+                  {
+                    "id": "kt4_3_s1_c4",
+                    "tier": 4,
+                    "tag": "View 2",
+                    "label": "Decent Interval Doomed Saigon",
+                    "detail": "Leaving 150,000 NVA troops in the South ensured North Vietnamese tanks captured Saigon on 30 April 1975.",
+                    "lessonIndex": 14,
+                    "stageIndex": 3,
+                    "searchTerm": "decent interval' strategy",
+                    "gloss": "Leaving 150,000 NVA troops in the South ensured North Vietnamese tanks captured Saigon on 30 April 1975."
+                  }
+                ]
+              },
+              {
+                "id": "kt4_3_s2",
+                "tier": 3,
+                "label": "Economic & Human Costs of War",
+                "dateChip": "1973–75",
+                "lessonIndex": 14,
+                "stageIndex": 3,
+                "searchTerm": "58,220 dead $168 billion War Powers Act",
+                "gloss": "Immense economic and human costs of the war for the USA fuelled inflation, starved welfare, and curbed presidential war powers.",
+                "children": [
+                  {
+                    "id": "kt4_3_s2_c1",
+                    "tier": 4,
+                    "tag": "Why",
+                    "label": "$168bn Spend & Great Society Drain",
+                    "detail": "Financing 2.7 million servicemen fuelled domestic inflation and starved Johnson’s anti-poverty programmes.",
+                    "lessonIndex": 14,
+                    "stageIndex": 3,
+                    "searchTerm": "economic and human costs",
+                    "gloss": "Financing 2.7 million servicemen fuelled domestic inflation and starved Johnson’s anti-poverty programmes."
+                  },
+                  {
+                    "id": "kt4_3_s2_c2",
+                    "tier": 4,
+                    "tag": "Evidence",
+                    "label": "58,220 Dead & 1973 War Powers Act",
+                    "detail": "Alongside 300,000 wounded, Congress overrode Nixon’s veto in November 1973 to cap troop deployments at 60 days.",
+                    "lessonIndex": 14,
+                    "stageIndex": 4,
+                    "searchTerm": "War Powers Act",
+                    "gloss": "Alongside 300,000 wounded, Congress overrode Nixon’s veto in November 1973 to cap troop deployments at 60 days."
+                  },
+                  {
+                    "id": "kt4_3_s2_c3",
+                    "tier": 4,
+                    "tag": "View 1",
+                    "label": "Congressional Cuts Sealed Collapse",
+                    "detail": "Slashing military aid after 1973 left ARVN troops short of fuel and shells during Hanoi’s 1975 Spring Offensive.",
+                    "lessonIndex": 15,
+                    "stageIndex": 0,
+                    "searchTerm": "1975 Spring Offensive",
+                    "gloss": "Slashing military aid after 1973 left ARVN troops short of fuel and shells during Hanoi’s 1975 Spring Offensive."
+                  },
+                  {
+                    "id": "kt4_3_s2_c4",
+                    "tier": 4,
+                    "tag": "View 2",
+                    "label": "Shattered Imperial Presidency",
+                    "detail": "Exhausting human and financial losses produced the Vietnam Syndrome and restored congressional war oversight.",
+                    "lessonIndex": 14,
+                    "stageIndex": 4,
+                    "searchTerm": "presidential war power restriction",
+                    "gloss": "Exhausting human and financial losses produced the Vietnam Syndrome and restored congressional war oversight."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt4_4",
+            "code": "4.4",
+            "tier": 2,
+            "label": "4.4 Reasons for US Failure",
+            "dateChip": "1954–75",
+            "lessonIndex": 15,
+            "stageIndex": 0,
+            "searchTerm": "Strengths of North Vietnam failure of US tactics",
+            "q3dDebate": "Strengths of North Vietnam (nationalism, Vietcong tactics, Ho Chi Minh Trail, Russian/Chinese aid) vs US military tactical flaws, Saigon corruption, & US domestic opposition.",
+            "gloss": "Q3d Core Debate: Strengths of North Vietnam (nationalism, Vietcong tactics, Ho Chi Minh Trail, Russian/Chinese aid) vs US military tactical flaws, Saigon corruption, & US domestic opposition.",
+            "children": [
+              {
+                "id": "kt4_4_s1",
+                "tier": 3,
+                "label": "Strengths of North Vietnam & VC",
+                "dateChip": "1954–75",
+                "lessonIndex": 15,
+                "stageIndex": 2,
+                "searchTerm": "Ho Chi Minh Trail Russian and Chinese support",
+                "gloss": "Strengths of North Vietnam combined national devotion, Vietcong tactics, Russian and Chinese support, and the Ho Chi Minh Trail.",
+                "children": [
+                  {
+                    "id": "kt4_4_s1_c1",
+                    "tier": 4,
+                    "tag": "Why",
+                    "label": "Anti-Colonial Reunification Will",
+                    "detail": "Fighting for national independence under Ho Chi Minh, communists absorbed over one million deaths undefeated.",
+                    "lessonIndex": 15,
+                    "stageIndex": 2,
+                    "searchTerm": "Vietnamese revolutionary nationalism",
+                    "gloss": "Fighting for national independence under Ho Chi Minh, communists absorbed over one million deaths undefeated."
+                  },
+                  {
+                    "id": "kt4_4_s1_c2",
+                    "tier": 4,
+                    "tag": "Evidence",
+                    "label": "Soviet-Chinese Arms & Jungle Trail",
+                    "detail": "30,000 porters kept Russian and Chinese rifles, rockets, and trucks moving south down the Ho Chi Minh Trail.",
+                    "lessonIndex": 15,
+                    "stageIndex": 2,
+                    "searchTerm": "Russian and Chinese support",
+                    "gloss": "30,000 porters kept Russian and Chinese rifles, rockets, and trucks moving south down the Ho Chi Minh Trail."
+                  },
+                  {
+                    "id": "kt4_4_s1_c3",
+                    "tier": 4,
+                    "tag": "View 1",
+                    "label": "Primary Cause of US Defeat",
+                    "detail": "Resilient guerrilla ambushes, peasant endurance, and unbreakable supply lines outlasted a superpower.",
+                    "lessonIndex": 15,
+                    "stageIndex": 2,
+                    "searchTerm": "Vietcong tactics",
+                    "gloss": "Resilient guerrilla ambushes, peasant endurance, and unbreakable supply lines outlasted a superpower."
+                  },
+                  {
+                    "id": "kt4_4_s1_c4",
+                    "tier": 4,
+                    "tag": "View 2",
+                    "label": "Could Not Defeat US Troops Direct",
+                    "detail": "Major offensives in 1968 and 1972 failed until American combat forces and air power withdrew completely.",
+                    "lessonIndex": 15,
+                    "stageIndex": 1,
+                    "searchTerm": "Fall of Saigon",
+                    "gloss": "Major offensives in 1968 and 1972 failed until American combat forces and air power withdrew completely."
+                  }
+                ]
+              },
+              {
+                "id": "kt4_4_s2",
+                "tier": 3,
+                "label": "US Armed Forces & Tactical Flaws",
+                "dateChip": "1964–75",
+                "lessonIndex": 15,
+                "stageIndex": 3,
+                "searchTerm": "Weaknesses of the US armed forces failure of US tactics",
+                "gloss": "Weaknesses of the US armed forces, corrupt Saigon allies, and failure of US tactics fatally undermined the war effort.",
+                "children": [
+                  {
+                    "id": "kt4_4_s2_c1",
+                    "tier": 4,
+                    "tag": "Why",
+                    "label": "12-Month Conscript Tour Turnover",
+                    "detail": "Inexperienced draftees rotated out just as they learned jungle warfare, breeding drug abuse and fragging.",
+                    "lessonIndex": 15,
+                    "stageIndex": 3,
+                    "searchTerm": "widespread ARVN corruption",
+                    "gloss": "Inexperienced draftees rotated out just as they learned jungle warfare, breeding drug abuse and fragging."
+                  },
+                  {
+                    "id": "kt4_4_s2_c2",
+                    "tier": 4,
+                    "tag": "Evidence",
+                    "label": "Free-Fire Zones & Saigon Collapse",
+                    "detail": "Napalm, Agent Orange, and Search and Destroy alienated villagers while corrupt Saigon fell on 30 April 1975.",
+                    "lessonIndex": 15,
+                    "stageIndex": 3,
+                    "searchTerm": "rural peasant alienation",
+                    "gloss": "Napalm, Agent Orange, and Search and Destroy alienated villagers while corrupt Saigon fell on 30 April 1975."
+                  },
+                  {
+                    "id": "kt4_4_s2_c3",
+                    "tier": 4,
+                    "tag": "View 1",
+                    "label": "Conventional Firepower Backfired",
+                    "detail": "Fighting a political peasant insurgency with heavy bombing and corrupt juntas lost Vietnamese hearts and minds.",
+                    "lessonIndex": 15,
+                    "stageIndex": 3,
+                    "searchTerm": "Saigon regime illegitimacy",
+                    "gloss": "Fighting a political peasant insurgency with heavy bombing and corrupt juntas lost Vietnamese hearts and minds."
+                  },
+                  {
+                    "id": "kt4_4_s2_c4",
+                    "tier": 4,
+                    "tag": "View 2",
+                    "label": "Won Nearly Every Major Battle",
+                    "detail": "US soldiers never lost a set-piece engagement, pointing instead to political limits and home-front withdrawal.",
+                    "lessonIndex": 15,
+                    "stageIndex": 4,
+                    "searchTerm": "collapse of domestic consensus",
+                    "gloss": "US soldiers never lost a set-piece engagement, pointing instead to political limits and home-front withdrawal."
+                  }
+                ]
+              },
+              {
+                "id": "kt4_4_s3",
+                "tier": 3,
+                "label": "Impact of Opposition in the USA",
+                "dateChip": "1968–75",
+                "lessonIndex": 15,
+                "stageIndex": 4,
+                "searchTerm": "collapse of domestic consensus Vietnam Syndrome",
+                "gloss": "Sustained impact of opposition to the war in the USA eroded presidential consensus, halted funding, and ended intervention.",
+                "children": [
+                  {
+                    "id": "kt4_4_s3_c1",
+                    "tier": 4,
+                    "tag": "Why",
+                    "label": "TV Horrors, Drafts & Credibility",
+                    "detail": "Tet, My Lai, Kent State, and Pentagon Papers revelations shattered middle-class trust in White House war aims.",
+                    "lessonIndex": 15,
+                    "stageIndex": 4,
+                    "searchTerm": "collapse of domestic consensus",
+                    "gloss": "Tet, My Lai, Kent State, and Pentagon Papers revelations shattered middle-class trust in White House war aims."
+                  },
+                  {
+                    "id": "kt4_4_s3_c2",
+                    "tier": 4,
+                    "tag": "Evidence",
+                    "label": "LBJ Exit, Aid Cuts & Frequent Wind",
+                    "detail": "Anti-war pressure drove LBJ out, forced Nixon’s pullouts, and cut aid before Saigon’s 1975 helicopter evacuation.",
+                    "lessonIndex": 15,
+                    "stageIndex": 1,
+                    "searchTerm": "Operation Frequent Wind",
+                    "gloss": "Anti-war pressure drove LBJ out, forced Nixon’s pullouts, and cut aid before Saigon’s 1975 helicopter evacuation."
+                  },
+                  {
+                    "id": "kt4_4_s3_c3",
+                    "tier": 4,
+                    "tag": "View 1",
+                    "label": "Lost Politically on Home Front",
+                    "detail": "Democratic presidents and Congress could not sustain a costly, televised war once domestic consensus collapsed.",
+                    "lessonIndex": 15,
+                    "stageIndex": 4,
+                    "searchTerm": "Vietnam Syndrome",
+                    "gloss": "Democratic presidents and Congress could not sustain a costly, televised war once domestic consensus collapsed."
+                  },
+                  {
+                    "id": "kt4_4_s3_c4",
+                    "tier": 4,
+                    "tag": "View 2",
+                    "label": "Symptom of Battlefield Stalemate",
+                    "detail": "Domestic opposition grew only because Vietcong resilience and failing US tactics prevented military victory.",
+                    "lessonIndex": 15,
+                    "stageIndex": 2,
+                    "searchTerm": "Vietnamese revolutionary nationalism",
+                    "gloss": "Domestic opposition grew only because Vietcong resilience and failing US tactics prevented military victory."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

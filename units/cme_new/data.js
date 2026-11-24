@@ -1,4 +1,4 @@
-const cme_new = {
+export default {
   "lesson_reflection": {
     "prompt": "You have reached the end of this unit! Before you finish, please turn to the back page of your printed workbook and complete the End of Unit Reflection & Pupil Voice page.",
     "instructions": [
@@ -2024,7 +2024,7 @@ const cme_new = {
             "connective": "When peaceful appeals failed, Zionist underground paramilitaries joined forces to launch an armed insurgency...",
             "exam_link": "Q1 Consequence: Convinced Zionist leaders that Britain had abandoned its Balfour pledges, leading directly to armed resistance.",
             "question": "Why could Britain satisfy neither Jewish nor Arab demands after 1945?",
-            "prose_hash": "ae9268cd5d"
+            "prose_hash": "489c367322"
           },
           {
             "step": 2,
@@ -2052,7 +2052,7 @@ const cme_new = {
             "connective": "As British authority retreated into fortified zones, the Irgun escalated its retaliation against British military personnel...",
             "exam_link": "Q3 Explain the Importance: Crucial turning point proving to the British government that Palestine could not be maintained without unsustainable military costs.",
             "question": "Why was the Irgun bombing of the King David Hotel a turning point for Britain?",
-            "prose_hash": "212c53477d"
+            "prose_hash": "d69005d7d6"
           },
           {
             "step": 4,
@@ -2272,12 +2272,12 @@ const cme_new = {
           "title": "Holocaust Survivors & The 1,500 Monthly Limit",
           "paragraphs": [
             "<span class=\"para-ref\">[1.1]</span> In 1945, over 250,000 Jewish Holocaust survivors remained stranded in European **Displaced Persons (DP) camps**, refusing to return to ruined communities and demanding passage to Palestine. Backed by the **Jewish Agency**, US President **Harry S. Truman** urged Britain to grant 100,000 immediate immigration certificates and establish an independent Jewish state.",
-            "<span class=\"para-ref\">[1.2]</span> Conversely, Palestinian Arabs led by the **Arab Higher Committee** demanded an immediate halt to Jewish immigration and land purchases alongside majority-rule Arab independence. Caught between these irreconcilable demands, British Foreign Secretary **Ernest Bevin** enforced the **1939 White Paper** quota of 1,500 migrants per month, fearing an Arab uprising would threaten British Middle Eastern oil supplies and strategic military bases."
+            "<span class=\"para-ref\">[1.2]</span> Conversely, Palestinian Arabs led by the **Arab Higher Committee** demanded an immediate halt to Jewish immigration and land purchases alongside majority-rule Arab independence. Caught between these conflicting interests and demands of **Jews** and Arabs within the British Mandate, Foreign Secretary **Ernest Bevin** enforced the **1939 White Paper** quota of 1,500 migrants per month, fearing an Arab uprising would threaten British Middle Eastern oil supplies and military bases."
           ],
           "act": 1,
           "act_title": "Stage 1: Holocaust Survivors & The 1,500 Monthly Limit — Why could Britain satisfy neither Jewish nor Arab demands after 1945?",
           "theme_heading": "Holocaust Survivors & The 1,500 Monthly Limit",
-          "text": "<span class=\"para-ref\">[1.1]</span> In 1945, over 250,000 Jewish Holocaust survivors remained stranded in European **Displaced Persons (DP) camps**, refusing to return to ruined communities and demanding passage to Palestine. Backed by the **Jewish Agency**, US President **Harry S. Truman** urged Britain to grant 100,000 immediate immigration certificates and establish an independent Jewish state.\n\n<span class=\"para-ref\">[1.2]</span> Conversely, Palestinian Arabs led by the **Arab Higher Committee** demanded an immediate halt to Jewish immigration and land purchases alongside majority-rule Arab independence. Caught between these irreconcilable demands, British Foreign Secretary **Ernest Bevin** enforced the **1939 White Paper** quota of 1,500 migrants per month, fearing an Arab uprising would threaten British Middle Eastern oil supplies and strategic military bases.",
+          "text": "<span class=\"para-ref\">[1.1]</span> In 1945, over 250,000 Jewish Holocaust survivors remained stranded in European **Displaced Persons (DP) camps**, refusing to return to ruined communities and demanding passage to Palestine. Backed by the **Jewish Agency**, US President **Harry S. Truman** urged Britain to grant 100,000 immediate immigration certificates and establish an independent Jewish state.\n\n<span class=\"para-ref\">[1.2]</span> Conversely, Palestinian Arabs led by the **Arab Higher Committee** demanded an immediate halt to Jewish immigration and land purchases alongside majority-rule Arab independence. Caught between these conflicting interests and demands of **Jews** and Arabs within the British Mandate, Foreign Secretary **Ernest Bevin** enforced the **1939 White Paper** quota of 1,500 migrants per month, fearing an Arab uprising would threaten British Middle Eastern oil supplies and military bases.",
           "sources": [
             {
               "id": "cme_l2_source_a",
@@ -2391,7 +2391,7 @@ const cme_new = {
             },
             "caption": "Drag the divider to compare the single British-ruled Mandate with the UN plan to divide it into a Jewish state, an Arab state and an international zone around Jerusalem. The plan gave about 55% of the land to the Jewish state, when Jews were about a third of the population."
           },
-          "content": "<span class=\"para-ref\">[1.1]</span> In 1945, over 250,000 Jewish Holocaust survivors remained stranded in European **Displaced Persons (DP) camps**, refusing to return to ruined communities and demanding passage to Palestine. Backed by the **Jewish Agency**, US President **Harry S. Truman** urged Britain to grant 100,000 immediate immigration certificates and establish an independent Jewish state.\n\n<span class=\"para-ref\">[1.2]</span> Conversely, Palestinian Arabs led by the **Arab Higher Committee** demanded an immediate halt to Jewish immigration and land purchases alongside majority-rule Arab independence. Caught between these irreconcilable demands, British Foreign Secretary **Ernest Bevin** enforced the **1939 White Paper** quota of 1,500 migrants per month, fearing an Arab uprising would threaten British Middle Eastern oil supplies and strategic military bases."
+          "content": "<span class=\"para-ref\">[1.1]</span> In 1945, over 250,000 Jewish Holocaust survivors remained stranded in European **Displaced Persons (DP) camps**, refusing to return to ruined communities and demanding passage to Palestine. Backed by the **Jewish Agency**, US President **Harry S. Truman** urged Britain to grant 100,000 immediate immigration certificates and establish an independent Jewish state.\n\n<span class=\"para-ref\">[1.2]</span> Conversely, Palestinian Arabs led by the **Arab Higher Committee** demanded an immediate halt to Jewish immigration and land purchases alongside majority-rule Arab independence. Caught between these conflicting interests and demands of **Jews** and Arabs within the British Mandate, Foreign Secretary **Ernest Bevin** enforced the **1939 White Paper** quota of 1,500 migrants per month, fearing an Arab uprising would threaten British Middle Eastern oil supplies and military bases."
         },
         {
           "title": "The Zionist Paramilitary Insurgency",
@@ -2462,13 +2462,13 @@ const cme_new = {
         {
           "title": "The King David Hotel Bombing",
           "paragraphs": [
-            "<span class=\"para-ref\">[3.1]</span> On **22 July 1946**, the Irgun executed a devastating bomb attack on the south wing of the **King David Hotel** in Jerusalem. The hotel served as the central headquarters for both the British military command and the civil administration in Palestine. Irgun operatives disguised as Arab milk deliverymen smuggled milk cans packed with 350 kilograms of explosives into the basement restaurant.",
+            "<span class=\"para-ref\">[3.1]</span> On **22 July 1946**, the Irgun carried out the devastating **bombing of the King David Hotel** in Jerusalem, striking its south wing. The hotel served as the central headquarters for both the British military command and the civil administration in Palestine. Irgun operatives disguised as Arab milk deliverymen smuggled milk cans packed with 350 kilograms of explosives into the basement restaurant.",
             "<span class=\"para-ref\">[3.2]</span> The massive explosion demolished all six floors of the headquarters, killing **91 people**, including British officers, Arab civil servants, and Jewish administrative staff. The attack shocked the British public and drew fierce international condemnation. Shocked by the civilian death toll, David Ben-Gurion’s Haganah dissolved the United Resistance coalition, though the Irgun and Lehi continued aggressive guerrilla attacks."
           ],
           "act": 3,
           "act_title": "Stage 3: The King David Hotel Bombing — Why was the Irgun bombing of the King David Hotel a turning point for Britain?",
           "theme_heading": "The King David Hotel Bombing",
-          "text": "<span class=\"para-ref\">[3.1]</span> On **22 July 1946**, the Irgun executed a devastating bomb attack on the south wing of the **King David Hotel** in Jerusalem. The hotel served as the central headquarters for both the British military command and the civil administration in Palestine. Irgun operatives disguised as Arab milk deliverymen smuggled milk cans packed with 350 kilograms of explosives into the basement restaurant.\n\n<span class=\"para-ref\">[3.2]</span> The massive explosion demolished all six floors of the headquarters, killing **91 people**, including British officers, Arab civil servants, and Jewish administrative staff. The attack shocked the British public and drew fierce international condemnation. Shocked by the civilian death toll, David Ben-Gurion’s Haganah dissolved the United Resistance coalition, though the Irgun and Lehi continued aggressive guerrilla attacks.",
+          "text": "<span class=\"para-ref\">[3.1]</span> On **22 July 1946**, the Irgun carried out the devastating **bombing of the King David Hotel** in Jerusalem, striking its south wing. The hotel served as the central headquarters for both the British military command and the civil administration in Palestine. Irgun operatives disguised as Arab milk deliverymen smuggled milk cans packed with 350 kilograms of explosives into the basement restaurant.\n\n<span class=\"para-ref\">[3.2]</span> The massive explosion demolished all six floors of the headquarters, killing **91 people**, including British officers, Arab civil servants, and Jewish administrative staff. The attack shocked the British public and drew fierce international condemnation. Shocked by the civilian death toll, David Ben-Gurion’s Haganah dissolved the United Resistance coalition, though the Irgun and Lehi continued aggressive guerrilla attacks.",
           "sources": [
             {
               "id": "cme_l2_source_c",
@@ -2504,7 +2504,7 @@ const cme_new = {
           "image_alt": "British rescue soldiers searching through the collapsed masonry of the King David Hotel in Jerusalem on 22 July 1946",
           "caption": "British military rescue teams digging through the collapsed stone masonry at the base of the King David Hotel’s south wing in Jerusalem following the 22 July 1946 Irgun bombing, which killed 91 British, Arab, and Jewish personnel.",
           "isReversed": false,
-          "content": "<span class=\"para-ref\">[3.1]</span> On **22 July 1946**, the Irgun executed a devastating bomb attack on the south wing of the **King David Hotel** in Jerusalem. The hotel served as the central headquarters for both the British military command and the civil administration in Palestine. Irgun operatives disguised as Arab milk deliverymen smuggled milk cans packed with 350 kilograms of explosives into the basement restaurant.\n\n<span class=\"para-ref\">[3.2]</span> The massive explosion demolished all six floors of the headquarters, killing **91 people**, including British officers, Arab civil servants, and Jewish administrative staff. The attack shocked the British public and drew fierce international condemnation. Shocked by the civilian death toll, David Ben-Gurion’s Haganah dissolved the United Resistance coalition, though the Irgun and Lehi continued aggressive guerrilla attacks."
+          "content": "<span class=\"para-ref\">[3.1]</span> On **22 July 1946**, the Irgun carried out the devastating **bombing of the King David Hotel** in Jerusalem, striking its south wing. The hotel served as the central headquarters for both the British military command and the civil administration in Palestine. Irgun operatives disguised as Arab milk deliverymen smuggled milk cans packed with 350 kilograms of explosives into the basement restaurant.\n\n<span class=\"para-ref\">[3.2]</span> The massive explosion demolished all six floors of the headquarters, killing **91 people**, including British officers, Arab civil servants, and Jewish administrative staff. The attack shocked the British public and drew fierce international condemnation. Shocked by the civilian death toll, David Ben-Gurion’s Haganah dissolved the United Resistance coalition, though the Irgun and Lehi continued aggressive guerrilla attacks."
         },
         {
           "title": "The Sergeants Affair & Public Backlash",
@@ -3409,7 +3409,7 @@ const cme_new = {
           "dates": "1945–1946",
           "question": "Why could Britain satisfy neither Jewish nor Arab demands after 1945?",
           "questionHeading": "Why could Britain satisfy neither Jewish nor Arab demands after 1945?",
-          "prose_hash": "ae9268cd5d"
+          "prose_hash": "489c367322"
         },
         {
           "step": 2,
@@ -3461,7 +3461,7 @@ const cme_new = {
           "dates": "22 July 1946",
           "question": "Why was the Irgun bombing of the King David Hotel a turning point for Britain?",
           "questionHeading": "Why was the Irgun bombing of the King David Hotel a turning point for Britain?",
-          "prose_hash": "212c53477d"
+          "prose_hash": "d69005d7d6"
         },
         {
           "step": 4,
@@ -3558,9 +3558,9 @@ const cme_new = {
             "img": "/images/bergen_belsen_liberation_british_1945.jpg",
             "mode": "contain",
             "stat": "250,000 Survivors vs 1,500 / Month Limit",
-            "html": "After WWII, <strong>250,000 Jewish Holocaust survivors</strong> wanted a safe home in Palestine. To protect Arab support and oil, Britain capped entry at <strong>1,500 arrivals a month</strong>.",
-            "spoken": "Why did Britain leave Palestine, and how was Israel born? <short pause> After World War Two, 250,000 Jewish Holocaust survivors wanted a safe home in Palestine. To protect Arab support and oil, Britain capped entry at 1,500 arrivals a month .",
-            "paired_prose_hash": "ae9268cd5d",
+            "html": "After WWII, conflicting demands of <strong>Jews and Arabs</strong> tore Mandatory Palestine apart: <strong>250,000 Jewish Holocaust survivors</strong> sought entry, while Britain capped arrivals at <strong>1,500 a month</strong>.",
+            "spoken": "Why did Britain leave Palestine, and how was Israel born? <short pause> After World War Two, conflicting demands of Jews and Arabs tore Mandatory Palestine apart: 250,000 Jewish Holocaust survivors sought entry, while Britain capped arrivals at 1,500 a month.",
+            "paired_prose_hash": "489c367322",
             "connective": "Why did Britain leave Palestine, and how was Israel born?"
           },
           {
@@ -3585,7 +3585,7 @@ const cme_new = {
             "stat": "22 July 1946 • 91 Killed at British HQ",
             "html": "<strong>Irgun</strong> fighters hid milk-can bombs beneath Britain’s headquarters at the <strong>King David Hotel</strong>. The blast collapsed six floors and <strong>killed 91 people</strong> in Jerusalem.",
             "spoken": "Then came the deadliest attack. <short pause> Irgun fighters hid milk-can bombs beneath Britain’s headquarters at the King David Hotel . The blast collapsed six floors and killed 91 people in Jerusalem.",
-            "paired_prose_hash": "212c53477d",
+            "paired_prose_hash": "d69005d7d6",
             "connective": "Then came the deadliest attack."
           },
           {
@@ -3932,7 +3932,7 @@ const cme_new = {
             "connective": "Desperately short of heavy ammunition and weapons, Israeli forces urgently needed an international ceasefire to regroup and rearm...",
             "exam_link": "Q2 Narrative Account: Explains the causal trigger for the outbreak of regular interstate warfare in May 1948.",
             "question": "Why did Ben-Gurion declare Israel on 14 May, and why did Arab armies invade?",
-            "prose_hash": "faf70282d7"
+            "prose_hash": "0b1237872e"
           },
           {
             "step": 2,
@@ -3946,7 +3946,7 @@ const cme_new = {
             "connective": "As intense combat swept through towns and agricultural villages, hundreds of thousands of civilians were caught in the crossfire...",
             "exam_link": "Q2 Narrative Account: Explains how the first UN truce and Czech weaponry transformed the military balance of power.",
             "question": "How did the first UN truce, Czech arms, and a unified IDF turn the war?",
-            "prose_hash": "d5eb7503b5"
+            "prose_hash": "2252dd8095"
           },
           {
             "step": 3,
@@ -3974,7 +3974,7 @@ const cme_new = {
             "connective": "With armistice borders established, Israel moved swiftly to populate vulnerable frontier zones with arriving immigrants...",
             "exam_link": "Q1 Consequence: Established the geopolitical map and borders of the Middle East that persisted until the 1967 Six-Day War.",
             "question": "How did the Rhodes Armistices redraw borders while leaving tension unsolved?",
-            "prose_hash": "91ea6697e1"
+            "prose_hash": "8dfa63e56e"
           },
           {
             "step": 5,
@@ -4028,10 +4028,10 @@ const cme_new = {
           "image_alt": "David Ben-Gurion standing beneath a portrait of Theodor Herzl to read the Declaration of the Establishment of the State of Israel at the Tel Aviv Museum, 14 May 1948",
           "caption": "David Ben-Gurion reading the Declaration of the Establishment of the State of Israel beneath a portrait of Theodor Herzl at the Tel Aviv Museum on 14 May 1948, hours before the British Mandate expired.",
           "isReversed": false,
-          "text": "<span class=\"para-ref\">[1.1]</span> On **14 May 1948**, hours before the British Mandate officially expired at midnight, **David Ben-Gurion** stood beneath Theodor Herzl’s portrait in the Tel Aviv Museum to proclaim the independent State of Israel. Asserting the Jewish people’s right to self-determination, Ben-Gurion won immediate diplomatic recognition from both US President Harry S. Truman and the Soviet Union.\n\n<span class=\"para-ref\">[1.2]</span> Statehood ignited immediate regional war. At dawn on **15 May 1948**, regular military forces from five **Arab League** nations—Egypt, Transjordan, Syria, Lebanon, and Iraq—crossed into Palestine without a unified military command. Facing acute shortages of heavy artillery, tanks, and combat aircraft, outnumbered Israeli defenders mounted a desperate multi-front defence while Jordan’s British-trained Arab Legion captured East Jerusalem’s Old City.",
+          "text": "<span class=\"para-ref\">[1.1]</span> On **14 May 1948**, hours before the British Mandate officially expired at midnight, **David Ben-Gurion** stood beneath Theodor Herzl’s portrait in the Tel Aviv Museum to proclaim the independent State of Israel. Asserting the Jewish people’s right to self-determination, Ben-Gurion won immediate diplomatic recognition from both US President Harry S. Truman and the Soviet Union.\n\n<span class=\"para-ref\">[1.2]</span> Statehood ignited the **Arab-Israeli War (1948–49)**. At dawn on **15 May 1948**, regular military forces from five **Arab League** nations—Egypt, Transjordan, Syria, Lebanon, and Iraq—crossed into Palestine without a unified military command. Facing acute shortages of heavy artillery, tanks, and combat aircraft, outnumbered Israeli defenders mounted a desperate multi-front defence while Jordan’s British-trained Arab Legion captured East Jerusalem’s Old City.",
           "paragraphs": [
             "<span class=\"para-ref\">[1.1]</span> On **14 May 1948**, hours before the British Mandate officially expired at midnight, **David Ben-Gurion** stood beneath Theodor Herzl’s portrait in the Tel Aviv Museum to proclaim the independent State of Israel. Asserting the Jewish people’s right to self-determination, Ben-Gurion won immediate diplomatic recognition from both US President Harry S. Truman and the Soviet Union.",
-            "<span class=\"para-ref\">[1.2]</span> Statehood ignited immediate regional war. At dawn on **15 May 1948**, regular military forces from five **Arab League** nations—Egypt, Transjordan, Syria, Lebanon, and Iraq—crossed into Palestine without a unified military command. Facing acute shortages of heavy artillery, tanks, and combat aircraft, outnumbered Israeli defenders mounted a desperate multi-front defence while Jordan’s British-trained Arab Legion captured East Jerusalem’s Old City."
+            "<span class=\"para-ref\">[1.2]</span> Statehood ignited the **Arab-Israeli War (1948–49)**. At dawn on **15 May 1948**, regular military forces from five **Arab League** nations—Egypt, Transjordan, Syria, Lebanon, and Iraq—crossed into Palestine without a unified military command. Facing acute shortages of heavy artillery, tanks, and combat aircraft, outnumbered Israeli defenders mounted a desperate multi-front defence while Jordan’s British-trained Arab Legion captured East Jerusalem’s Old City."
           ],
           "sources": [
             {
@@ -4083,14 +4083,14 @@ const cme_new = {
               "question": "The map shows five Arab armies entering on 15 May 1948. How did each side justify what happened that week?"
             }
           ],
-          "content": "<span class=\"para-ref\">[1.1]</span> On **14 May 1948**, hours before the British Mandate officially expired at midnight, **David Ben-Gurion** stood beneath Theodor Herzl’s portrait in the Tel Aviv Museum to proclaim the independent State of Israel. Asserting the Jewish people’s right to self-determination, Ben-Gurion won immediate diplomatic recognition from both US President Harry S. Truman and the Soviet Union.\n\n<span class=\"para-ref\">[1.2]</span> Statehood ignited immediate regional war. At dawn on **15 May 1948**, regular military forces from five **Arab League** nations—Egypt, Transjordan, Syria, Lebanon, and Iraq—crossed into Palestine without a unified military command. Facing acute shortages of heavy artillery, tanks, and combat aircraft, outnumbered Israeli defenders mounted a desperate multi-front defence while Jordan’s British-trained Arab Legion captured East Jerusalem’s Old City."
+          "content": "<span class=\"para-ref\">[1.1]</span> On **14 May 1948**, hours before the British Mandate officially expired at midnight, **David Ben-Gurion** stood beneath Theodor Herzl’s portrait in the Tel Aviv Museum to proclaim the independent State of Israel. Asserting the Jewish people’s right to self-determination, Ben-Gurion won immediate diplomatic recognition from both US President Harry S. Truman and the Soviet Union.\n\n<span class=\"para-ref\">[1.2]</span> Statehood ignited the **Arab-Israeli War (1948–49)**. At dawn on **15 May 1948**, regular military forces from five **Arab League** nations—Egypt, Transjordan, Syria, Lebanon, and Iraq—crossed into Palestine without a unified military command. Facing acute shortages of heavy artillery, tanks, and combat aircraft, outnumbered Israeli defenders mounted a desperate multi-front defence while Jordan’s British-trained Arab Legion captured East Jerusalem’s Old City."
         },
         {
           "title": "The First UN Truce & The Czech Arms Supply",
           "theme_heading": "The First UN Truce & The Czech Arms Supply",
           "act": 2,
           "act_title": "Stage 2: The First UN Truce & The Czech Arms Supply — How did the first UN truce, Czech arms, and a unified IDF turn the war?",
-          "text": "<span class=\"para-ref\">[2.1]</span> Hard-pressed Israeli forces suffered severe ammunition shortages during the opening month of combat. In June 1948, the United Nations brokered the **First Truce**, an official four-week ceasefire negotiated by UN mediator Count **Folke Bernadotte** to halt fighting. Both sides agreed to pause hostilities, but Israel utilized the four-week interlude far more effectively than the fractured Arab coalition to reorganize and rearm.\n\n<span class=\"para-ref\">[2.2]</span> During the truce, Israel broke the international arms embargo by securing a massive clandestine **Czech arms deal** with Soviet approval, airlifting thousands of rifles, machine guns, and Avia S-199 fighter aircraft. Prime Minister Ben-Gurion simultaneously consolidated disparate militias into the unified **IDF** (Israel Defense Forces). When combat resumed in July, heavily reinforced Israeli divisions broke Egyptian lines and seized the military initiative across all operational fronts.",
+          "text": "<span class=\"para-ref\">[2.1]</span> Hard-pressed Israeli forces suffered severe ammunition shortages during the opening month of combat. In June 1948, the United Nations brokered the **First Truce**, an official four-week ceasefire negotiated by UN mediator Count **Folke Bernadotte** to halt fighting. Both sides agreed to pause hostilities, but Israel utilized the four-week interlude far more effectively than the fractured Arab coalition to reorganize and rearm.\n\n<span class=\"para-ref\">[2.2]</span> During the truce, Israel broke the international arms embargo by securing a massive clandestine **Czech arms deal** with Soviet approval, airlifting thousands of rifles, machine guns, and Avia S-199 fighter aircraft. Prime Minister Ben-Gurion simultaneously established the unified **Israeli Defence Forces** (**IDF**) from disparate militias. When combat resumed in July, heavily reinforced Israeli divisions broke Egyptian lines and seized the military initiative across all fronts.",
           "sources": [
             {
               "id": "cme_l3_source_b",
@@ -4126,7 +4126,7 @@ const cme_new = {
           "image_alt": "United Nations Mediator Count Folke Bernadotte walking with truce officers in Jerusalem during the June 1948 UN truce",
           "caption": "United Nations Mediator Count Folke Bernadotte (centre, in white peaked cap) walking with truce officers in Jerusalem during the June 1948 First UN Truce—the critical four-week pause during which Israel reorganised the IDF and imported decisive Czechoslovak arms shipments.",
           "isReversed": true,
-          "content": "<span class=\"para-ref\">[2.1]</span> Hard-pressed Israeli forces suffered severe ammunition shortages during the opening month of combat. In June 1948, the United Nations brokered the **First Truce**, an official four-week ceasefire negotiated by UN mediator Count **Folke Bernadotte** to halt fighting. Both sides agreed to pause hostilities, but Israel utilized the four-week interlude far more effectively than the fractured Arab coalition to reorganize and rearm.\n\n<span class=\"para-ref\">[2.2]</span> During the truce, Israel broke the international arms embargo by securing a massive clandestine **Czech arms deal** with Soviet approval, airlifting thousands of rifles, machine guns, and Avia S-199 fighter aircraft. Prime Minister Ben-Gurion simultaneously consolidated disparate militias into the unified **IDF** (Israel Defense Forces). When combat resumed in July, heavily reinforced Israeli divisions broke Egyptian lines and seized the military initiative across all operational fronts."
+          "content": "<span class=\"para-ref\">[2.1]</span> Hard-pressed Israeli forces suffered severe ammunition shortages during the opening month of combat. In June 1948, the United Nations brokered the **First Truce**, an official four-week ceasefire negotiated by UN mediator Count **Folke Bernadotte** to halt fighting. Both sides agreed to pause hostilities, but Israel utilized the four-week interlude far more effectively than the fractured Arab coalition to reorganize and rearm.\n\n<span class=\"para-ref\">[2.2]</span> During the truce, Israel broke the international arms embargo by securing a massive clandestine **Czech arms deal** with Soviet approval, airlifting thousands of rifles, machine guns, and Avia S-199 fighter aircraft. Prime Minister Ben-Gurion simultaneously established the unified **Israeli Defence Forces** (**IDF**) from disparate militias. When combat resumed in July, heavily reinforced Israeli divisions broke Egyptian lines and seized the military initiative across all fronts."
         },
         {
           "title": "The Palestinian Refugee Crisis (The Nakba)",
@@ -4195,10 +4195,10 @@ const cme_new = {
           "theme_heading": "The 1949 Armistice Agreements (The Green Line)",
           "act": 4,
           "act_title": "Stage 4: The 1949 Armistice Agreements (The Green Line) — How did the Rhodes Armistices redraw borders while leaving tension unsolved?",
-          "text": "<span class=\"para-ref\">[4.1]</span> Between February and July 1949, acting UN mediator Dr **Ralph Bunche** convened separate bilateral negotiations between Israel and Egypt, Lebanon, Jordan, and Syria on the island of **Rhodes**. Bunche brokered four armistice agreements ending open military combat, though Arab states refused formal peace treaties, Egypt barred Israeli shipping from the Suez Canal, and cross-border fedayeen raids triggered fierce Israeli reprisals.\n\n<span class=\"para-ref\">[4.2]</span> Drawn with green grease-pencils on military maps, these ceasefire borders became known as the **Green Line**, leaving Israel holding **78% of Mandatory Palestine**—a major expansion beyond the 55% allocated by UN Resolution 181. Meanwhile, Jordan annexed the West Bank and East Jerusalem and Egypt administered the Gaza Strip, leaving Palestinian Arabs stateless and regional hostility unresolved.",
+          "text": "<span class=\"para-ref\">[4.1]</span> Between February and July 1949, acting UN mediator Dr **Ralph Bunche** convened separate bilateral negotiations between Israel and Egypt, Lebanon, Jordan, and Syria on the island of **Rhodes**. Bunche brokered four armistice agreements ending open military combat, though Arab states refused formal peace treaties, Egypt barred Israeli shipping from the Suez Canal, and cross-border fedayeen raids triggered fierce Israeli reprisals.\n\n<span class=\"para-ref\">[4.2]</span> Drawn with green grease-pencils on military maps, these **Green Line** ceasefire borders sealed sweeping **territorial changes**, leaving Israel holding **78% of Mandatory Palestine**—a major expansion beyond the 55% allocated by UN Resolution 181. Meanwhile, Jordan annexed the West Bank and East Jerusalem and Egypt administered the Gaza Strip, leaving Palestinian Arabs stateless and regional hostility unresolved.",
           "paragraphs": [
             "<span class=\"para-ref\">[4.1]</span> Between February and July 1949, acting UN mediator Dr **Ralph Bunche** convened separate bilateral negotiations between Israel and Egypt, Lebanon, Jordan, and Syria on the island of **Rhodes**. Bunche brokered four armistice agreements ending open military combat, though Arab states refused formal peace treaties, Egypt barred Israeli shipping from the Suez Canal, and cross-border fedayeen raids triggered fierce Israeli reprisals.",
-            "<span class=\"para-ref\">[4.2]</span> Drawn with green grease-pencils on military maps, these ceasefire borders became known as the **Green Line**, leaving Israel holding **78% of Mandatory Palestine**—a major expansion beyond the 55% allocated by UN Resolution 181. Meanwhile, Jordan annexed the West Bank and East Jerusalem and Egypt administered the Gaza Strip, leaving Palestinian Arabs stateless and regional hostility unresolved."
+            "<span class=\"para-ref\">[4.2]</span> Drawn with green grease-pencils on military maps, these **Green Line** ceasefire borders sealed sweeping **territorial changes**, leaving Israel holding **78% of Mandatory Palestine**—a major expansion beyond the 55% allocated by UN Resolution 181. Meanwhile, Jordan annexed the West Bank and East Jerusalem and Egypt administered the Gaza Strip, leaving Palestinian Arabs stateless and regional hostility unresolved."
           ],
           "sources": [
             {
@@ -4243,7 +4243,7 @@ const cme_new = {
             },
             "caption": "Drag the divider to see how the 1948–49 war redrew the UN map: Israel ended with about 78% of Mandatory Palestine instead of about 55%, Jordan held the West Bank and East Jerusalem, Egypt held Gaza — and no Palestinian Arab state was created."
           },
-          "content": "<span class=\"para-ref\">[4.1]</span> Between February and July 1949, acting UN mediator Dr **Ralph Bunche** convened separate bilateral negotiations between Israel and Egypt, Lebanon, Jordan, and Syria on the island of **Rhodes**. Bunche brokered four armistice agreements ending open military combat, though Arab states refused formal peace treaties, Egypt barred Israeli shipping from the Suez Canal, and cross-border fedayeen raids triggered fierce Israeli reprisals.\n\n<span class=\"para-ref\">[4.2]</span> Drawn with green grease-pencils on military maps, these ceasefire borders became known as the **Green Line**, leaving Israel holding **78% of Mandatory Palestine**—a major expansion beyond the 55% allocated by UN Resolution 181. Meanwhile, Jordan annexed the West Bank and East Jerusalem and Egypt administered the Gaza Strip, leaving Palestinian Arabs stateless and regional hostility unresolved."
+          "content": "<span class=\"para-ref\">[4.1]</span> Between February and July 1949, acting UN mediator Dr **Ralph Bunche** convened separate bilateral negotiations between Israel and Egypt, Lebanon, Jordan, and Syria on the island of **Rhodes**. Bunche brokered four armistice agreements ending open military combat, though Arab states refused formal peace treaties, Egypt barred Israeli shipping from the Suez Canal, and cross-border fedayeen raids triggered fierce Israeli reprisals.\n\n<span class=\"para-ref\">[4.2]</span> Drawn with green grease-pencils on military maps, these **Green Line** ceasefire borders sealed sweeping **territorial changes**, leaving Israel holding **78% of Mandatory Palestine**—a major expansion beyond the 55% allocated by UN Resolution 181. Meanwhile, Jordan annexed the West Bank and East Jerusalem and Egypt administered the Gaza Strip, leaving Palestinian Arabs stateless and regional hostility unresolved."
         },
         {
           "title": "The Israeli Law of Return & Demographic Surge",
@@ -4300,17 +4300,17 @@ const cme_new = {
       "quiz": [
         {
           "stage": 1,
-          "question": "On what date did David Ben-Gurion read the Declaration of the Establishment of the State of Israel in Tel Aviv?",
-          "q": "On what date did David Ben-Gurion read the Declaration of the Establishment of the State of Israel in Tel Aviv?",
+          "question": "What major military weakness undermined the five Arab League armies that invaded Palestine in May 1948?",
+          "q": "What major military weakness undermined the five Arab League armies that invaded Palestine in May 1948?",
           "options": [
-            "29 November 1947",
-            "15 May 1948",
-            "22 July 1948",
-            "14 May 1948"
+            "They lacked a unified military command",
+            "They had no tanks, artillery, or combat aircraft",
+            "The Soviet Union imposed a naval blockade on Egypt",
+            "The United Nations deployed peacekeeping troops to stop them"
           ],
-          "answer": "14 May 1948",
-          "a": "14 May 1948",
-          "explanation": "Ben-Gurion read the declaration at the Tel Aviv Museum on 14 May 1948, hours before the British Mandate officially terminated at midnight."
+          "answer": "They lacked a unified military command",
+          "a": "They lacked a unified military command",
+          "explanation": "Although five Arab League nations invaded Palestine on 15 May 1948, their armies operated without a unified military command, weakening their assault against outnumbered Israeli defenders."
         },
         {
           "stage": 1,
@@ -4422,7 +4422,7 @@ const cme_new = {
           ],
           "answer": "The Nakba",
           "a": "The Nakba",
-          "explanation": "The Nakba refers to the displacement of over 700,000 Palestinian Arabs and the destruction of hundreds of villages. The Intifada refers to the later uprisings in 1987 and 2000."
+          "explanation": "The Nakba refers to the displacement of over 700,000 Palestinian Arabs and the destruction of hundreds of villages. The Intifada refers to the later uprisings such as the First Intifada of 1987–93."
         },
         {
           "stage": 3,
@@ -5398,7 +5398,7 @@ const cme_new = {
           "dates": "14–15 May 1948",
           "question": "Why did Ben-Gurion declare Israel on 14 May, and why did Arab armies invade?",
           "questionHeading": "Why did Ben-Gurion declare Israel on 14 May, and why did Arab armies invade?",
-          "prose_hash": "faf70282d7"
+          "prose_hash": "0b1237872e"
         },
         {
           "step": 2,
@@ -5429,7 +5429,7 @@ const cme_new = {
           "dates": "June–July 1948",
           "question": "How did the first UN truce, Czech arms, and a unified IDF turn the war?",
           "questionHeading": "How did the first UN truce, Czech arms, and a unified IDF turn the war?",
-          "prose_hash": "d5eb7503b5"
+          "prose_hash": "2252dd8095"
         },
         {
           "step": 3,
@@ -5491,7 +5491,7 @@ const cme_new = {
           "dates": "Feb–July 1949",
           "question": "How did the Rhodes Armistices redraw borders while leaving tension unsolved?",
           "questionHeading": "How did the Rhodes Armistices redraw borders while leaving tension unsolved?",
-          "prose_hash": "91ea6697e1"
+          "prose_hash": "8dfa63e56e"
         },
         {
           "step": 5,
@@ -5567,9 +5567,9 @@ const cme_new = {
             "img": "/images/cme_1948_arab_invasion_map.png",
             "mode": "contain-light",
             "stat": "Egypt, Jordan, Syria, Lebanon & Iraq Attack",
-            "html": "Hours after <strong>David Ben-Gurion</strong> declared Israel on <strong>14 May 1948</strong>, five Arab League armies invaded. Outgunned Israeli fighters fought desperately while Jordan seized <strong>East Jerusalem</strong>.",
-            "spoken": "How did Israel survive 1948, and why did 700,000 Palestinians flee? <short pause> Hours after David Ben-Gurion declared Israel on the fourteenth of May 1948 , five Arab League armies invaded. Outgunned Israeli fighters fought desperately while Jordan seized East Jerusalem .",
-            "paired_prose_hash": "faf70282d7",
+            "html": "Hours after <strong>David Ben-Gurion</strong> declared Israel on <strong>14 May 1948</strong>, five Arab League armies invaded, igniting the <strong>1948–49 Arab-Israeli War</strong> as Jordan seized <strong>East Jerusalem</strong>.",
+            "spoken": "How did Israel survive 1948, and why did 700,000 Palestinians flee? <short pause> Hours after David Ben-Gurion declared Israel on the fourteenth of May 1948, five Arab League armies invaded, igniting the 1948–49 Arab-Israeli War as Jordan seized East Jerusalem.",
+            "paired_prose_hash": "0b1237872e",
             "connective": "How did Israel survive 1948, and why did 700,000 Palestinians flee?"
           },
           {
@@ -5579,9 +5579,9 @@ const cme_new = {
             "img": "/images/cme_avia_s199_israel_1948.png",
             "mode": "contain",
             "stat": "Unified IDF + Rifles & Fighter Planes Flown In",
-            "html": "During a four-week <strong>UN truce</strong>, Ben-Gurion merged militias into one <strong>IDF army</strong> and flew in thousands of <strong>Czech weapons and fighter planes</strong>. Divided Arab armies lost the initiative.",
-            "spoken": "A four-week U.N. truce turned the tide. <short pause> During a four-week UN truce , Ben-Gurion merged militias into one IDF army and flew in thousands of Czech weapons and fighter planes . Divided Arab armies lost the initiative.",
-            "paired_prose_hash": "d5eb7503b5",
+            "html": "During a four-week <strong>UN truce</strong>, Ben-Gurion created the unified <strong>Israeli Defence Forces (IDF)</strong> and flew in <strong>Czech weapons and fighter planes</strong>, seizing the military initiative.",
+            "spoken": "A four-week U.N. truce turned the tide. <short pause> During a four-week UN truce, Ben-Gurion created the unified Israeli Defence Forces (IDF) and flew in Czech weapons and fighter planes, seizing the military initiative.",
+            "paired_prose_hash": "2252dd8095",
             "connective": "A four-week U.N. truce turned the tide."
           },
           {
@@ -5615,9 +5615,9 @@ const cme_new = {
               ]
             },
             "stat": "Israel Expands From 55% (UN Plan) to 78%",
-            "html": "UN talks on <strong>Rhodes</strong> drew ceasefire borders called the <strong>Green Line</strong>, leaving Israel with <strong>78% of Palestine</strong>. Jordan took the West Bank and Egypt held Gaza, with <strong>zero peace treaties</strong>.",
-            "spoken": "Armistice talks redrew the map in 1949. <short pause> UN talks on Rhodes drew ceasefire borders called the Green Line , leaving Israel with 78% of Palestine . Jordan took the West Bank and Egypt held Gaza, with zero peace treaties .",
-            "paired_prose_hash": "91ea6697e1",
+            "html": "UN talks on <strong>Rhodes</strong> drew <strong>Green Line</strong> borders sealing major <strong>territorial changes</strong>: Israel held <strong>78% of Palestine</strong>, Jordan took the West Bank, and Egypt held Gaza with zero peace treaties.",
+            "spoken": "Armistice talks redrew the map in 1949. <short pause> UN talks on Rhodes drew Green Line borders sealing major territorial changes: Israel held 78% of Palestine, Jordan took the West Bank, and Egypt held Gaza with zero peace treaties.",
+            "paired_prose_hash": "8dfa63e56e",
             "connective": "Armistice talks redrew the map in 1949."
           },
           {
@@ -5809,17 +5809,17 @@ const cme_new = {
         },
         {
           "stage": 3,
-          "question": "On what historic date did President Nasser nationalise the Suez Canal Company during a fiery speech in Alexandria?",
-          "q": "On what historic date did President Nasser nationalise the Suez Canal Company during a fiery speech in Alexandria?",
+          "question": "Why did President Nasser nationalise the British- and French-owned Suez Canal Company in July 1956?",
+          "q": "Why did President Nasser nationalise the British- and French-owned Suez Canal Company in July 1956?",
           "options": [
-            "29 October 1956",
-            "5 November 1956",
-            "26 July 1956",
-            "15 May 1948"
+            "To hand control of the waterway to the Soviet Union",
+            "To use canal transit tolls to fund the Aswan High Dam",
+            "To retaliate for the Anglo-French landings at Port Said",
+            "To enforce the 1949 Rhodes Armistice Agreements"
           ],
-          "answer": "26 July 1956",
-          "a": "26 July 1956",
-          "explanation": "Nasser announced the nationalisation on the anniversary of King Farouk's abdication, using the codeword 'de Lesseps' over the radio to signal Egyptian troops to seize canal offices."
+          "answer": "To use canal transit tolls to fund the Aswan High Dam",
+          "a": "To use canal transit tolls to fund the Aswan High Dam",
+          "explanation": "After the US and Britain cancelled funding for the Aswan High Dam, Nasser nationalised the Suez Canal Company so Egypt could use canal transit tolls to finance the project itself."
         },
         {
           "stage": 3,
@@ -5963,17 +5963,17 @@ const cme_new = {
         },
         {
           "stage": 5,
-          "question": "On what date in 1956 did US and Soviet pressure force an Anglo-French ceasefire in Egypt?",
-          "q": "On what date in 1956 did US and Soviet pressure force an Anglo-French ceasefire in Egypt?",
+          "question": "What key strategic gain did Israel secure when it withdrew from the Sinai Peninsula in early 1957?",
+          "q": "What key strategic gain did Israel secure when it withdrew from the Sinai Peninsula in early 1957?",
           "options": [
-            "26 July 1956",
-            "14 May 1956",
-            "25 December 1956",
-            "6 November 1956"
+            "Permanent annexation of the Gaza Strip and East Jerusalem",
+            "A formal peace treaty with Egypt and Syria",
+            "UNEF border deployment and the reopening of the Straits of Tiran",
+            "Joint Anglo-French military control of the Suez Canal"
           ],
-          "answer": "6 November 1956",
-          "a": "6 November 1956",
-          "explanation": "The humiliating 6 November 1956 ceasefire ended British imperial dominance in the Middle East and elevated Nasser’s prestige."
+          "answer": "UNEF border deployment and the reopening of the Straits of Tiran",
+          "a": "UNEF border deployment and the reopening of the Straits of Tiran",
+          "explanation": "Although US pressure forced Israel to withdraw from Sinai in early 1957, UNEF peacekeepers deployed along the border and the Straits of Tiran were reopened to Israeli shipping."
         }
       ],
       "learning_objective": "To understand the causes and consequences of the 1956 Suez Crisis and its impact on the Middle East.",
@@ -6036,7 +6036,7 @@ const cme_new = {
             "stage": 3,
             "question": "What Arabic term, meaning 'Catastrophe', is used to describe the expulsion and flight of approximately 700,000 Palestinians during the 1948–49 War?",
             "answer": "The Nakba",
-            "explanation": "The Nakba refers to the displacement of over 700,000 Palestinian Arabs and the destruction of hundreds of villages. The Intifada refers to the later uprisings in 1987 and 2000."
+            "explanation": "The Nakba refers to the displacement of over 700,000 Palestinian Arabs and the destruction of hundreds of villages. The Intifada refers to the later uprisings such as the First Intifada of 1987–93."
           },
           {
             "stage": 4,
@@ -6239,7 +6239,7 @@ const cme_new = {
             "connective": "Blocked from buying weapons by Western powers, Nasser turned directly to the Communist Eastern Bloc...",
             "exam_link": "Q1 Consequence: Convinced Nasser to buy Soviet weapons, which brought Cold War rivalries directly into the Middle East conflict.",
             "question": "How did Israel’s Gaza raid humiliate Nasser and escalate border hostility?",
-            "prose_hash": "4b8867a2d2"
+            "prose_hash": "8b3dd33dec"
           },
           {
             "step": 2,
@@ -6311,13 +6311,13 @@ const cme_new = {
         {
           "title": "The Gaza Raid",
           "paragraphs": [
-            "<span class=\"para-ref\">[1.1]</span> In 1954, Colonel **Gamal Abdel Nasser** became leader of Egypt, emerging as the bold champion of Pan-Arab nationalism while allowing Palestinian fedayeen guerrillas to launch armed sabotage raids into southern Israel from Egyptian-held Gaza. On **28 February 1955**, Israeli Prime Minister David Ben-Gurion and Defence Minister Moshe Dayan authorised a major cross-border reprisal raid into Gaza.",
+            "<span class=\"para-ref\">[1.1]</span> In 1954, Colonel **Gamal Abdel Nasser** became leader of Egypt, asserting **Egypt’s leadership of the Arab world** through bold Pan-Arab nationalism while allowing Palestinian fedayeen guerrillas to launch armed sabotage raids into southern Israel from Egyptian-held Gaza. On **28 February 1955**, Israeli Prime Minister David Ben-Gurion and Defence Minister Moshe Dayan authorised a major cross-border reprisal raid into Gaza.",
             "<span class=\"para-ref\">[1.2]</span> Codenamed **Operation Black Arrow**, Israeli paratroopers stormed an Egyptian military garrison in Gaza, killing **38 Egyptian soldiers** and policemen. The devastating strike exposed the military weakness of Egypt’s armed forces and deeply humiliated Nasser before his army officers, convincing him that Egypt could not deter Israel without acquiring modern jet fighters, tanks, and heavy artillery."
           ],
           "act": 1,
           "act_title": "Stage 1: The Gaza Raid — How did Israel’s Gaza raid humiliate Nasser and escalate border hostility?",
           "theme_heading": "The Gaza Raid",
-          "text": "<span class=\"para-ref\">[1.1]</span> In 1954, Colonel **Gamal Abdel Nasser** became leader of Egypt, emerging as the bold champion of Pan-Arab nationalism while allowing Palestinian fedayeen guerrillas to launch armed sabotage raids into southern Israel from Egyptian-held Gaza. On **28 February 1955**, Israeli Prime Minister David Ben-Gurion and Defence Minister Moshe Dayan authorised a major cross-border reprisal raid into Gaza.\n\n<span class=\"para-ref\">[1.2]</span> Codenamed **Operation Black Arrow**, Israeli paratroopers stormed an Egyptian military garrison in Gaza, killing **38 Egyptian soldiers** and policemen. The devastating strike exposed the military weakness of Egypt’s armed forces and deeply humiliated Nasser before his army officers, convincing him that Egypt could not deter Israel without acquiring modern jet fighters, tanks, and heavy artillery.",
+          "text": "<span class=\"para-ref\">[1.1]</span> In 1954, Colonel **Gamal Abdel Nasser** became leader of Egypt, asserting **Egypt’s leadership of the Arab world** through bold Pan-Arab nationalism while allowing Palestinian fedayeen guerrillas to launch armed sabotage raids into southern Israel from Egyptian-held Gaza. On **28 February 1955**, Israeli Prime Minister David Ben-Gurion and Defence Minister Moshe Dayan authorised a major cross-border reprisal raid into Gaza.\n\n<span class=\"para-ref\">[1.2]</span> Codenamed **Operation Black Arrow**, Israeli paratroopers stormed an Egyptian military garrison in Gaza, killing **38 Egyptian soldiers** and policemen. The devastating strike exposed the military weakness of Egypt’s armed forces and deeply humiliated Nasser before his army officers, convincing him that Egypt could not deter Israel without acquiring modern jet fighters, tanks, and heavy artillery.",
           "sources": [
             {
               "id": "cme_l4_source_a",
@@ -6424,7 +6424,7 @@ const cme_new = {
               }
             ]
           },
-          "content": "<span class=\"para-ref\">[1.1]</span> In 1954, Colonel **Gamal Abdel Nasser** became leader of Egypt, emerging as the bold champion of Pan-Arab nationalism while allowing Palestinian fedayeen guerrillas to launch armed sabotage raids into southern Israel from Egyptian-held Gaza. On **28 February 1955**, Israeli Prime Minister David Ben-Gurion and Defence Minister Moshe Dayan authorised a major cross-border reprisal raid into Gaza.\n\n<span class=\"para-ref\">[1.2]</span> Codenamed **Operation Black Arrow**, Israeli paratroopers stormed an Egyptian military garrison in Gaza, killing **38 Egyptian soldiers** and policemen. The devastating strike exposed the military weakness of Egypt’s armed forces and deeply humiliated Nasser before his army officers, convincing him that Egypt could not deter Israel without acquiring modern jet fighters, tanks, and heavy artillery.",
+          "content": "<span class=\"para-ref\">[1.1]</span> In 1954, Colonel **Gamal Abdel Nasser** became leader of Egypt, asserting **Egypt’s leadership of the Arab world** through bold Pan-Arab nationalism while allowing Palestinian fedayeen guerrillas to launch armed sabotage raids into southern Israel from Egyptian-held Gaza. On **28 February 1955**, Israeli Prime Minister David Ben-Gurion and Defence Minister Moshe Dayan authorised a major cross-border reprisal raid into Gaza.\n\n<span class=\"para-ref\">[1.2]</span> Codenamed **Operation Black Arrow**, Israeli paratroopers stormed an Egyptian military garrison in Gaza, killing **38 Egyptian soldiers** and policemen. The devastating strike exposed the military weakness of Egypt’s armed forces and deeply humiliated Nasser before his army officers, convincing him that Egypt could not deter Israel without acquiring modern jet fighters, tanks, and heavy artillery.",
           "concept_widget": {
             "type": "profile_deck",
             "eyebrow": "Interactive Escalation Chain",
@@ -7501,7 +7501,7 @@ const cme_new = {
           "questionHeading": "How did Israel’s Gaza raid humiliate Nasser and escalate border hostility?",
           "para_ref": "[4.2]",
           "paraRef": "[4.2]",
-          "prose_hash": "4b8867a2d2"
+          "prose_hash": "8b3dd33dec"
         },
         {
           "step": 2,
@@ -7677,7 +7677,7 @@ const cme_new = {
             "stat": "Operation Black Arrow • 38 Egyptian Soldiers Killed",
             "html": "After fedayeen border raids from Gaza, Israeli paratroopers attacked an Egyptian base and <strong>killed 38 Egyptian soldiers</strong>. Humiliated, Egypt’s leader <strong>Gamal Abdel Nasser</strong> urgently sought modern weapons.",
             "spoken": "How did Nasser turn military defeat at Suez into a huge political victory? <short pause> After fedayeen border raids from Gaza, Israeli paratroopers attacked an Egyptian base and killed 38 Egyptian soldiers . Humiliated, Egypt’s leader Gamal Abdel Nasser urgently sought modern weapons.",
-            "paired_prose_hash": "4b8867a2d2",
+            "paired_prose_hash": "8b3dd33dec",
             "connective": "How did Nasser turn military defeat at Suez into a huge political victory?"
           },
           {
@@ -7737,8 +7737,8 @@ const cme_new = {
             "img": "/images/cme_nasser_nehru_bandung_1955.jpg",
             "mode": "contain",
             "stat": "Egypt Keeps Canal + Forms UAR With Syria (1958)",
-            "html": "British imperial power collapsed while <strong>Nasser kept the Suez Canal</strong> and became the hero of <strong>Pan-Arabism</strong>—uniting Egypt and Syria into the <strong>United Arab Republic</strong> in 1958.",
-            "spoken": "Nasser emerged as an undisputed Arab hero. <short pause> British imperial power collapsed while Nasser kept the Suez Canal and became the hero of Pan-Arabism, uniting Egypt and Syria into the United Arab Republic in 1958.",
+            "html": "Keeping the <strong>Suez Canal</strong> cemented <strong>Egypt’s leadership of the Arab world</strong> under <strong>Nasser</strong>, who united Egypt and Syria into the <strong>United Arab Republic (UAR)</strong> in 1958.",
+            "spoken": "Nasser emerged as an undisputed Arab hero. <short pause> Keeping the Suez Canal cemented Egypt’s leadership of the Arab world under Nasser, who united Egypt and Syria into the United Arab Republic (UAR) in 1958.",
             "connective": "Nasser emerged as an undisputed Arab hero."
           }
         ],
@@ -8033,15 +8033,15 @@ const cme_new = {
       "vocab_cloze_text": "In January 1964, Arab leaders gathered at the [Cairo Conference (1964)] in Egypt to coordinate policy against Israel. They voted to establish the [PLO (Palestine Liberation Organisation)] to represent the Palestinian people and opposed Israel's new [National Water Carrier], which diverted water from the Sea of Galilee. Soon, Palestinian guerrilla fighters belonging to [Fatah] began launching armed cross-border raids into Israeli territory. Tensions escalated into direct military clashes, including the destructive Israeli [Samu Raid (1966)] in the West Bank in November 1966 and the dramatic [7 April 1967 Dogfight] over the Golan Heights in which six Syrian aircraft were destroyed.",
       "narrative_blocks": [
         {
-          "title": "The 1964 Cairo Conference & PLO Founded",
+          "title": "The 1964 Cairo Conference & Founding of the PLO",
           "paragraphs": [
-            "<span class=\"para-ref\">[1.1]</span> In **January 1964**, President Nasser convened the first **Arab League Summit** in Cairo, bringing Arab monarchs and military heads together to counter Israeli regional initiatives. Arab leaders were deeply alarmed by Israeli engineering works extracting fresh water from the River Jordan. Nasser urged collective diplomatic opposition while frankly cautioning that Arab conventional armed forces remained unready for immediate open warfare against Israel.",
-            "<span class=\"para-ref\">[1.2]</span> To direct Palestinian resistance under Arab supervision, the summit backed the creation of a Palestinian organisation. In **May 1964**, a Palestinian congress in Jordanian-ruled East Jerusalem led by Ahmad Shukeiri founded the **PLO** (Palestine Liberation Organisation). It adopted the Palestinian National Charter, which declared the partition of Palestine and the establishment of Israel \"null and void\" and called for the liberation of Palestine. The founding of the PLO created a distinct national political voice for hundreds of thousands of displaced refugees living across the region."
+            "<span class=\"para-ref\">[1.1]</span> In **January 1964**, President Nasser convened the **Cairo Conference** (the **First Arab League Summit**), bringing Arab monarchs and heads of state together to counter Israel’s **National Water Carrier** extracting water from the River Jordan. Nasser urged united Arab opposition while cautioning that Arab conventional armies remained unready for immediate open war against Israel.",
+            "<span class=\"para-ref\">[1.2]</span> To channel Palestinian resistance under Arab supervision, the Cairo Conference backed a dedicated political body. In **May 1964**, a congress in Jordanian-ruled East Jerusalem led by Ahmad Shukeiri founded the [Key Organisation: PLO] (Palestine Liberation Organisation), adopting the Palestinian National Charter declaring Israel’s establishment \"null and void\" and giving displaced refugees a distinct national voice."
           ],
           "act": 1,
-          "act_title": "Stage 1: The 1964 Cairo Conference & PLO Founded — Why did Arab leaders meet in Cairo and establish the PLO in January 1964?",
-          "theme_heading": "The 1964 Cairo Conference & PLO Founded",
-          "text": "<span class=\"para-ref\">[1.1]</span> In **January 1964**, President Nasser convened the first **Arab League Summit** in Cairo, bringing Arab monarchs and military heads together to counter Israeli regional initiatives. Arab leaders were deeply alarmed by Israeli engineering works extracting fresh water from the River Jordan. Nasser urged collective diplomatic opposition while frankly cautioning that Arab conventional armed forces remained unready for immediate open warfare against Israel.\n\n<span class=\"para-ref\">[1.2]</span> To direct Palestinian resistance under Arab supervision, the summit backed the creation of a Palestinian organisation. In **May 1964**, a Palestinian congress in Jordanian-ruled East Jerusalem led by Ahmad Shukeiri founded the [Key Organisation: PLO] (Palestine Liberation Organisation). It adopted the Palestinian National Charter, which declared the partition of Palestine and the establishment of Israel \"null and void\" and called for the liberation of Palestine. The founding of the PLO created a distinct national political voice for hundreds of thousands of displaced refugees living across the region.",
+          "act_title": "Stage 1: The 1964 Cairo Conference & Founding of the PLO — Why did Arab leaders meet in Cairo and establish the PLO in January 1964?",
+          "theme_heading": "The 1964 Cairo Conference & Founding of the PLO",
+          "text": "<span class=\"para-ref\">[1.1]</span> In **January 1964**, President Nasser convened the **Cairo Conference** (the **First Arab League Summit**), bringing Arab monarchs and heads of state together to counter Israel’s **National Water Carrier** extracting water from the River Jordan. Nasser urged united Arab opposition while cautioning that Arab conventional armies remained unready for immediate open war against Israel.\n\n<span class=\"para-ref\">[1.2]</span> To channel Palestinian resistance under Arab supervision, the Cairo Conference backed a dedicated political body. In **May 1964**, a congress in Jordanian-ruled East Jerusalem led by Ahmad Shukeiri founded the [Key Organisation: PLO] (Palestine Liberation Organisation), adopting the Palestinian National Charter declaring Israel’s establishment \"null and void\" and giving displaced refugees a distinct national voice.",
           "sources": [
             {
               "id": "cme_l5_source_a",
@@ -8098,7 +8098,7 @@ const cme_new = {
           "image_alt": "Egyptian President Gamal Abdel Nasser shaking hands with Syrian President Amin al-Hafiz at Cairo Airport ahead of the First Arab League Summit in January 1964",
           "caption": "Egyptian President Gamal Abdel Nasser (right) greets Syrian President Amin al-Hafiz (left) in Cairo ahead of the January 1964 First Arab League Summit—convened to coordinate Jordan headwater diversion plans against Israel’s National Water Carrier and authorise the founding of the PLO.",
           "isReversed": false,
-          "content": "<span class=\"para-ref\">[1.1]</span> In **January 1964**, President Nasser convened the first **Arab League Summit** in Cairo, bringing Arab monarchs and military heads together to counter Israeli regional initiatives. Arab leaders were deeply alarmed by Israeli engineering works extracting fresh water from the River Jordan. Nasser urged collective diplomatic opposition while frankly cautioning that Arab conventional armed forces remained unready for immediate open warfare against Israel.\n\n<span class=\"para-ref\">[1.2]</span> To direct Palestinian resistance under Arab supervision, the summit backed the creation of a Palestinian organisation. In **May 1964**, a Palestinian congress in Jordanian-ruled East Jerusalem led by Ahmad Shukeiri founded the [Key Organisation: PLO] (Palestine Liberation Organisation). It adopted the Palestinian National Charter, which declared the partition of Palestine and the establishment of Israel \"null and void\" and called for the liberation of Palestine. The founding of the PLO created a distinct national political voice for hundreds of thousands of displaced refugees living across the region."
+          "content": "<span class=\"para-ref\">[1.1]</span> In **January 1964**, President Nasser convened the **Cairo Conference** (the **First Arab League Summit**), bringing Arab monarchs and heads of state together to counter Israel’s **National Water Carrier** extracting water from the River Jordan. Nasser urged united Arab opposition while cautioning that Arab conventional armies remained unready for immediate open war against Israel.\n\n<span class=\"para-ref\">[1.2]</span> To channel Palestinian resistance under Arab supervision, the Cairo Conference backed a dedicated political body. In **May 1964**, a congress in Jordanian-ruled East Jerusalem led by Ahmad Shukeiri founded the [Key Organisation: PLO] (Palestine Liberation Organisation), adopting the Palestinian National Charter declaring Israel’s establishment \"null and void\" and giving displaced refugees a distinct national voice."
         },
         {
           "title": "The Dispute Over the River Jordan Waterways",
@@ -8796,7 +8796,7 @@ const cme_new = {
           {
             "step": 1,
             "date": "Jan 1964",
-            "title": "The 1964 Cairo Conference & PLO Founded",
+            "title": "The 1964 Cairo Conference & Founding of the PLO",
             "actor": "President Nasser & The Arab League",
             "tag": "Arab Resistance",
             "trigger": "President Nasser hosts Arab heads of state in Cairo to coordinate opposition to Israel and establish the Palestine Liberation Organisation (PLO).",
@@ -8805,7 +8805,7 @@ const cme_new = {
             "connective": "Disputes over vital water supplies soon escalated border clashes between Israel and Syria...",
             "exam_link": "Q2 Narrative Account: Marked the formal revival of Palestinian national resistance, leading to cross-border guerrilla raids.",
             "question": "Why did Arab leaders meet in Cairo and establish the PLO in January 1964?",
-            "prose_hash": "fc3600e4f9"
+            "prose_hash": "2f6fd45a08"
           },
           {
             "step": 2,
@@ -9265,11 +9265,11 @@ const cme_new = {
             }
           ],
           "model_sentence": "Convening in <strong>January 1964</strong>, the <strong>First Arab League Summit</strong> met in Cairo to address Israel's newly opened <strong>National Water Carrier</strong> project.",
-          "title": "The 1964 Cairo Conference & PLO Founded",
+          "title": "The 1964 Cairo Conference & Founding of the PLO",
           "dates": "Jan 1964",
           "question": "Why did Arab leaders meet in Cairo and establish the PLO in January 1964?",
           "questionHeading": "Why did Arab leaders meet in Cairo and establish the PLO in January 1964?",
-          "prose_hash": "fc3600e4f9"
+          "prose_hash": "2f6fd45a08"
         },
         {
           "step": 2,
@@ -9462,15 +9462,15 @@ const cme_new = {
         "cards": [
           {
             "badge": "Stage 1",
-            "heading": "Cairo Summit & PLO Founded",
+            "heading": "Cairo Conference & PLO (1964)",
             "date": "Jan–May 1964",
             "img": "/images/cme_cairo_summit_1964.jpg",
             "mode": "landscape",
             "pos": "center 30%",
             "stat": "May 1964: PLO Created Under Arab League Backing",
-            "html": "At the <strong>1964 Cairo Summit</strong>, Nasser warned Arab armies were not yet ready for war. Instead, Arab leaders founded the <strong>PLO</strong> to represent Palestinians and oppose Israel’s existence.",
-            "spoken": "How did water disputes and border raids push the region toward war? <short pause> At the 1964 Cairo Summit , Nasser warned Arab armies were not yet ready for war. Instead, Arab leaders founded the PLO to represent Palestinians and oppose Israel’s existence.",
-            "paired_prose_hash": "fc3600e4f9",
+            "html": "At the <strong>1964 Cairo Conference</strong> (Arab Summit), Nasser warned Arab armies were unready for war; instead, Arab leaders founded the <strong>PLO</strong> to represent Palestinians and oppose Israel.",
+            "spoken": "How did water disputes and border raids push the region toward war? <short pause> At the 1964 Cairo Conference, Nasser warned Arab armies were unready for war; instead, Arab leaders founded the PLO to represent Palestinians and oppose Israel.",
+            "paired_prose_hash": "2f6fd45a08",
             "connective": "How did water disputes and border raids push the region toward war?"
           },
           {
@@ -9529,8 +9529,8 @@ const cme_new = {
             "img": "/images/cme_iaf_mirage_iiicj_ramat_david_1970.jpg",
             "mode": "contain",
             "stat": "6 Syrian MiG-21s Downed • 0 Israeli Losses",
-            "html": "Farming clashes below the Golan Heights sparked a major air battle over Galilee. Israeli <strong>Mirage jets</strong> shot down <strong>six Syrian MiGs</strong> and buzzed Damascus in a stinging humiliation.",
-            "spoken": "Border shelling exploded into an air dogfight. <short pause> Farming clashes below the Golan Heights sparked a major air battle over Galilee. Israeli Mirage jets shot down six Syrian MiGs and buzzed Damascus in a stinging humiliation.",
+            "html": "On <strong>7 April 1967</strong>, farming clashes below the Golan Heights sparked a major air battle where Israeli <strong>Mirage jets</strong> shot down <strong>six Syrian MiGs</strong> and buzzed Damascus.",
+            "spoken": "Border shelling exploded into an air dogfight. <short pause> On the seventh of April 1967, farming clashes below the Golan Heights sparked a major air battle where Israeli Mirage jets shot down six Syrian MiGs and buzzed Damascus.",
             "paired_prose_hash": "7224f5b8e3",
             "connective": "Border shelling exploded into an air dogfight."
           },
@@ -9840,13 +9840,13 @@ const cme_new = {
         {
           "title": "Soviet Warning, UNEF Expelled & Straits of Tiran Closed",
           "paragraphs": [
-            "<span class=\"para-ref\">[1.1]</span> On **13 May 1967**, the **Soviet Union** passed a false intelligence warning to Cairo alleging that Israel had massed ten to twelve brigades on Syria’s border for an imminent invasion. Although UN observers confirmed no buildup existed, Nasser could not look weak as champion of Pan-Arabism: on 14–15 May he marched **100,000 Egyptian troops** and 1,000 tanks into the **Sinai Peninsula** and demanded the withdrawal of **United Nations Emergency Force (UNEF)** peacekeepers on 16 May.",
+            "<span class=\"para-ref\">[1.1]</span> On **13 May 1967**, the **Soviet Union (USSR)** passed a false intelligence warning to Cairo alleging that Israel had massed ten to twelve brigades on Syria’s border for an imminent invasion. Although UN observers confirmed no buildup existed, Nasser could not look weak as champion of Pan-Arabism: on 14–15 May he marched **100,000 Egyptian troops** and 1,000 tanks into the **Sinai Peninsula** and demanded the withdrawal of **United Nations Emergency Force (UNEF)** peacekeepers on 16 May.",
             "<span class=\"para-ref\">[1.2]</span> When UN Secretary-General U Thant withdrew UNEF without Security Council debate, Egyptian forces occupied Sharm el-Sheikh overlooking the Gulf of Aqaba. On **22 May 1967**, Nasser closed the **Straits of Tiran** to all Israeli shipping and vital oil tankers bound for Eilat—crossing the explicit red line Israel had warned since 1957 would constitute an act of war."
           ],
           "act": 1,
-          "act_title": "Stage 1: Soviet Warning, UNEF Expelled & Straits of Tiran Closed — How did false Soviet reports, expelling UNEF, and closing Tiran spark crisis?",
+          "act_title": "Stage 1: Soviet Warning, UNEF Expelled & Straits of Tiran Closed — Why did false Soviet reports lead Nasser to expel UNEF and close Tiran?",
           "theme_heading": "Soviet Warning, UNEF Expelled & Straits of Tiran Closed",
-          "text": "<span class=\"para-ref\">[1.1]</span> On **13 May 1967**, the **Soviet Union** passed a false intelligence warning to Cairo alleging that Israel had massed ten to twelve brigades on Syria’s border for an imminent invasion. Although UN observers confirmed no buildup existed, Nasser could not look weak as champion of Pan-Arabism: on 14–15 May he marched **100,000 Egyptian troops** and 1,000 tanks into the **Sinai Peninsula** and demanded the withdrawal of **United Nations Emergency Force (UNEF)** peacekeepers on 16 May.\n\n<span class=\"para-ref\">[1.2]</span> When UN Secretary-General U Thant withdrew UNEF without Security Council debate, Egyptian forces occupied Sharm el-Sheikh overlooking the Gulf of Aqaba. On **22 May 1967**, Nasser closed the **Straits of Tiran** to all Israeli shipping and vital oil tankers bound for Eilat—crossing the explicit red line Israel had warned since 1957 would constitute an act of war.",
+          "text": "<span class=\"para-ref\">[1.1]</span> On **13 May 1967**, the **Soviet Union (USSR)** passed a false intelligence warning to Cairo alleging that Israel had massed ten to twelve brigades on Syria’s border for an imminent invasion. Although UN observers confirmed no buildup existed, Nasser could not look weak as champion of Pan-Arabism: on 14–15 May he marched **100,000 Egyptian troops** and 1,000 tanks into the **Sinai Peninsula** and demanded the withdrawal of **United Nations Emergency Force (UNEF)** peacekeepers on 16 May.\n\n<span class=\"para-ref\">[1.2]</span> When UN Secretary-General U Thant withdrew UNEF without Security Council debate, Egyptian forces occupied Sharm el-Sheikh overlooking the Gulf of Aqaba. On **22 May 1967**, Nasser closed the **Straits of Tiran** to all Israeli shipping and vital oil tankers bound for Eilat—crossing the explicit red line Israel had warned since 1957 would constitute an act of war.",
           "sources": [
             {
               "id": "cme_l6_source_a",
@@ -9954,7 +9954,7 @@ const cme_new = {
               }
             ]
           },
-          "content": "<span class=\"para-ref\">[1.1]</span> On **13 May 1967**, the **Soviet Union** passed a false intelligence warning to Cairo alleging that Israel had massed ten to twelve brigades on Syria’s border for an imminent invasion. Although UN observers confirmed no buildup existed, Nasser could not look weak as champion of Pan-Arabism: on 14–15 May he marched **100,000 Egyptian troops** and 1,000 tanks into the **Sinai Peninsula** and demanded the withdrawal of **United Nations Emergency Force (UNEF)** peacekeepers on 16 May.\n\n<span class=\"para-ref\">[1.2]</span> When UN Secretary-General U Thant withdrew UNEF without Security Council debate, Egyptian forces occupied Sharm el-Sheikh overlooking the Gulf of Aqaba. On **22 May 1967**, Nasser closed the **Straits of Tiran** to all Israeli shipping and vital oil tankers bound for Eilat—crossing the explicit red line Israel had warned since 1957 would constitute an act of war.",
+          "content": "<span class=\"para-ref\">[1.1]</span> On **13 May 1967**, the **Soviet Union (USSR)** passed a false intelligence warning to Cairo alleging that Israel had massed ten to twelve brigades on Syria’s border for an imminent invasion. Although UN observers confirmed no buildup existed, Nasser could not look weak as champion of Pan-Arabism: on 14–15 May he marched **100,000 Egyptian troops** and 1,000 tanks into the **Sinai Peninsula** and demanded the withdrawal of **United Nations Emergency Force (UNEF)** peacekeepers on 16 May.\n\n<span class=\"para-ref\">[1.2]</span> When UN Secretary-General U Thant withdrew UNEF without Security Council debate, Egyptian forces occupied Sharm el-Sheikh overlooking the Gulf of Aqaba. On **22 May 1967**, Nasser closed the **Straits of Tiran** to all Israeli shipping and vital oil tankers bound for Eilat—crossing the explicit red line Israel had warned since 1957 would constitute an act of war.",
           "concept_widget": {
             "type": "profile_deck",
             "eyebrow": "Interactive Ten-Day Countdown",
@@ -10654,7 +10654,7 @@ const cme_new = {
             "connective": "Jordan then signed a joint defence pact with Egypt, encircling Israel on three fronts...",
             "exam_link": "Q2 Narrative Account: Triggered the rapid chain of events in May 1967 that made a pre-emptive strike by Israel inevitable.",
             "question": "Why did false Soviet reports lead Nasser to expel UNEF and close Tiran?",
-            "prose_hash": "fab042e9d4"
+            "prose_hash": "9b7072cae7"
           },
           {
             "step": 2,
@@ -10829,31 +10829,31 @@ const cme_new = {
         },
         {
           "stage": 2,
-          "question": "On what date did Israeli paratroopers capture the Old City of Jerusalem and the Western Wall?",
-          "q": "On what date did Israeli paratroopers capture the Old City of Jerusalem and the Western Wall?",
+          "question": "Why did Israeli leaders decide to prepare a pre-emptive strike in early June 1967 rather than rely on American diplomacy?",
+          "q": "Why did Israeli leaders decide to prepare a pre-emptive strike in early June 1967 rather than rely on American diplomacy?",
           "options": [
-            "5 June 1967",
-            "9 June 1967",
-            "10 June 1967",
-            "7 June 1967"
+            "President Johnson failed to assemble an international naval convoy to reopen the Straits of Tiran",
+            "The United States imposed a total arms embargo on Israel in May 1967",
+            "The Soviet Union offered to guarantee Israel's southern shipping routes",
+            "King Hussein had already withdrawn Jordan from its pact with Egypt"
           ],
-          "answer": "7 June 1967",
-          "a": "7 June 1967",
-          "explanation": "Israeli paratroopers entered the Old City and reached the Western Wall on Wednesday, 7 June."
+          "answer": "President Johnson failed to assemble an international naval convoy to reopen the Straits of Tiran",
+          "a": "President Johnson failed to assemble an international naval convoy to reopen the Straits of Tiran",
+          "explanation": "Although President Johnson warned Israel not to fire first, he failed to assemble an international naval convoy to break Egypt's blockade of the Straits of Tiran, convincing Israel's national unity cabinet to prepare a pre-emptive strike."
         },
         {
           "stage": 2,
-          "question": "On what date did the UN-brokered ceasefire officially bring the Six Day War to an end?",
-          "q": "On what date did the UN-brokered ceasefire officially bring the Six Day War to an end?",
+          "question": "Why did Jordan's King Hussein order artillery to shell West Jerusalem on 5 June 1967 despite Israeli appeals to stay out of the war?",
+          "q": "Why did Jordan's King Hussein order artillery to shell West Jerusalem on 5 June 1967 despite Israeli appeals to stay out of the war?",
           "options": [
-            "5 June 1967",
-            "7 June 1967",
-            "10 June 1967",
-            "15 June 1967"
+            "Israeli troops had already invaded Amman and seized the Golan Heights",
+            "He was misled by false Cairo radio broadcasts claiming Egyptian victories",
+            "The United Nations had authorised Jordan to annex West Jerusalem",
+            "The Soviet Union threatened to invade Jordan if it remained neutral"
           ],
-          "answer": "10 June 1967",
-          "a": "10 June 1967",
-          "explanation": "The war concluded on Saturday, 10 June 1967, with a UN ceasefire."
+          "answer": "He was misled by false Cairo radio broadcasts claiming Egyptian victories",
+          "a": "He was misled by false Cairo radio broadcasts claiming Egyptian victories",
+          "explanation": "Misled by false Cairo radio broadcasts claiming Egyptian forces were victorious, King Hussein entered the war by shelling West Jerusalem, prompting an Israeli counter-attack that captured East Jerusalem and the West Bank."
         },
         {
           "stage": 2,
@@ -11122,7 +11122,7 @@ const cme_new = {
           "dates": "13–22 May 1967",
           "question": "Why did false Soviet reports lead Nasser to expel UNEF and close Tiran?",
           "questionHeading": "Why did false Soviet reports lead Nasser to expel UNEF and close Tiran?",
-          "prose_hash": "fab042e9d4"
+          "prose_hash": "9b7072cae7"
         },
         {
           "step": 2,
@@ -11356,9 +11356,9 @@ const cme_new = {
             "img": "/units/cme_new/assets/cme_sinai_peninsula_map.jpg",
             "mode": "contain-light",
             "stat": "100,000 Egyptian Troops Enter Sinai • Red Line Crossed",
-            "html": "Fed a <strong>false Soviet rumour</strong> that Israel was about to attack Syria, Nasser sent 100,000 troops into Sinai, expelled <strong>UNEF peacekeepers</strong>, and closed the <strong>Straits of Tiran</strong> to Israeli ships.",
-            "spoken": "Why did Israel win the 1967 Six-Day War in just three hours? <short pause> Fed a false Soviet rumour that Israel was about to attack Syria, Nasser sent 100,000 troops into Sinai, expelled UNEF peacekeepers , and closed the Straits of Tiran to Israeli ships.",
-            "paired_prose_hash": "fab042e9d4",
+            "html": "Fed a false warning by the <strong>USSR (Soviet Union)</strong> that Israel threatened Syria, Nasser sent 100,000 troops into Sinai, expelled <strong>UNEF peacekeepers</strong>, and closed the <strong>Straits of Tiran</strong>.",
+            "spoken": "Why did Israel win the 1967 Six-Day War in just three hours? <short pause> Fed a false warning by the USSR that Israel threatened Syria, Nasser sent 100,000 troops into Sinai, expelled UNEF peacekeepers, and closed the Straits of Tiran.",
+            "paired_prose_hash": "9b7072cae7",
             "connective": "Why did Israel win the 1967 Six-Day War in just three hours?"
           },
           {
@@ -11638,9 +11638,9 @@ const cme_new = {
           },
           {
             "stage": 1,
-            "question": "What were the 'Three Noes' declared by Arab leaders at the Khartoum Resolution in September 1967?",
-            "answer": "No peace with Israel, no recognition of Israel, no negotiations with Israel",
-            "explanation": "The Arab League summit at Khartoum in September 1967 adopted the famous 'Three Noes' policy, refusing peace, recognition, or bilateral negotiations with Israel."
+            "question": "Which superpower passed a false intelligence warning to Cairo on 13 May 1967 alleging an Israeli troop buildup near Syria?",
+            "answer": "The USSR (Soviet Union)",
+            "explanation": "On 13 May 1967, the USSR (Soviet Union) warned Cairo inaccurately of Israeli brigades on Syria's border, prompting Nasser to send troops into Sinai."
           },
           {
             "stage": 2,
@@ -12108,13 +12108,13 @@ const cme_new = {
         {
           "title": "The Beginning of Israeli Settlements",
           "paragraphs": [
-            "<span class=\"para-ref\">[5.1]</span> Following the 1967 conquest, Deputy Prime Minister **Yigal Allon** formulated the **Allon Plan**, proposing agricultural settlements along the Jordan Valley as military security buffers while returning Arab-populated central hilltops to Jordanian administrative control. The ruling Labour Party initially authorized settlements strictly on perimeter security grounds to protect the narrow coastal heartland against external ground invasion.",
+            "<span class=\"para-ref\">[5.1]</span> Following the 1967 conquest, **Israel’s consolidation of control of the occupied territories** began under Deputy Prime Minister **Yigal Allon**, whose **Allon Plan** proposed agricultural settlements along the Jordan Valley as military security buffers while returning Arab-populated central hilltops to Jordanian control. Labour initially authorised settlements strictly on perimeter security grounds to protect Israel’s narrow coastal heartland.",
             "<span class=\"para-ref\">[5.2]</span> However, religious-nationalist movements like Gush Emunim soon began establishing ideological **Israeli settlements** deep in the biblical heartland of the **West Bank** (Judea and Samaria). When Menachem Begin's Likud party took power in 1977, state subsidies expanded settlements dramatically, embedding hundreds of thousands of Jewish residents into occupied territories and creating severe physical obstacles to any viable two-state solution."
           ],
           "act": 5,
-          "act_title": "Stage 5: The Beginning of Israeli Settlements — How did the Allon Plan and West Bank settlements obstruct \"Land for Peace\"?",
+          "act_title": "Stage 5: The Beginning of Israeli Settlements — How did the Allon Plan and West Bank settlements obstruct a two-state deal?",
           "theme_heading": "The Beginning of Israeli Settlements",
-          "text": "<span class=\"para-ref\">[5.1]</span> Following the 1967 conquest, Deputy Prime Minister **Yigal Allon** formulated the **Allon Plan**, proposing agricultural settlements along the Jordan Valley as military security buffers while returning Arab-populated central hilltops to Jordanian administrative control. The ruling Labour Party initially authorized settlements strictly on perimeter security grounds to protect the narrow coastal heartland against external ground invasion.\n\n<span class=\"para-ref\">[5.2]</span> However, religious-nationalist movements like Gush Emunim soon began establishing ideological **Israeli settlements** deep in the biblical heartland of the **West Bank** (Judea and Samaria). When Menachem Begin's Likud party took power in 1977, state subsidies expanded settlements dramatically, embedding hundreds of thousands of Jewish residents into occupied territories and creating severe physical obstacles to any viable two-state solution.",
+          "text": "<span class=\"para-ref\">[5.1]</span> Following the 1967 conquest, **Israel’s consolidation of control of the occupied territories** began under Deputy Prime Minister **Yigal Allon**, whose **Allon Plan** proposed agricultural settlements along the Jordan Valley as military security buffers while returning Arab-populated central hilltops to Jordanian control. Labour initially authorised settlements strictly on perimeter security grounds to protect Israel’s narrow coastal heartland.\n\n<span class=\"para-ref\">[5.2]</span> However, religious-nationalist movements like Gush Emunim soon began establishing ideological **Israeli settlements** deep in the biblical heartland of the **West Bank** (Judea and Samaria). When Menachem Begin's Likud party took power in 1977, state subsidies expanded settlements dramatically, embedding hundreds of thousands of Jewish residents into occupied territories and creating severe physical obstacles to any viable two-state solution.",
           "sources": [
             {
               "id": "cme_l7_source_e",
@@ -12150,7 +12150,7 @@ const cme_new = {
           "image_alt": "Hebrew entrance sign at Kfar Etzion in the occupied West Bank, re-established in September 1967",
           "caption": "The entrance gate to Kfar Etzion between Bethlehem and Hebron—re-established in September 1967 as the very first post-Six-Day War Israeli settlement in the occupied West Bank, foreshadowing wider religious-nationalist settlement expansion beyond the Allon Plan.",
           "isReversed": false,
-          "content": "<span class=\"para-ref\">[5.1]</span> Following the 1967 conquest, Deputy Prime Minister **Yigal Allon** formulated the **Allon Plan**, proposing agricultural settlements along the Jordan Valley as military security buffers while returning Arab-populated central hilltops to Jordanian administrative control. The ruling Labour Party initially authorized settlements strictly on perimeter security grounds to protect the narrow coastal heartland against external ground invasion.\n\n<span class=\"para-ref\">[5.2]</span> However, religious-nationalist movements like Gush Emunim soon began establishing ideological **Israeli settlements** deep in the biblical heartland of the **West Bank** (Judea and Samaria). When Menachem Begin's Likud party took power in 1977, state subsidies expanded settlements dramatically, embedding hundreds of thousands of Jewish residents into occupied territories and creating severe physical obstacles to any viable two-state solution."
+          "content": "<span class=\"para-ref\">[5.1]</span> Following the 1967 conquest, **Israel’s consolidation of control of the occupied territories** began under Deputy Prime Minister **Yigal Allon**, whose **Allon Plan** proposed agricultural settlements along the Jordan Valley as military security buffers while returning Arab-populated central hilltops to Jordanian control. Labour initially authorised settlements strictly on perimeter security grounds to protect Israel’s narrow coastal heartland.\n\n<span class=\"para-ref\">[5.2]</span> However, religious-nationalist movements like Gush Emunim soon began establishing ideological **Israeli settlements** deep in the biblical heartland of the **West Bank** (Judea and Samaria). When Menachem Begin's Likud party took power in 1977, state subsidies expanded settlements dramatically, embedding hundreds of thousands of Jewish residents into occupied territories and creating severe physical obstacles to any viable two-state solution."
         }
       ],
       "sources": [
@@ -12535,7 +12535,7 @@ const cme_new = {
             "connective": "Faced with permanent occupation and defeated Arab armies, Palestinians turned to armed guerrilla warfare...",
             "exam_link": "Q1 Consequence: Created permanent Jewish settlements in Palestinian territory, which became a major barrier to a two-state solution.",
             "question": "How did the Allon Plan and West Bank settlements obstruct a two-state deal?",
-            "prose_hash": "f080ca0669"
+            "prose_hash": "7fcd6ceaac"
           }
         ]
       },
@@ -12682,17 +12682,17 @@ const cme_new = {
         },
         {
           "stage": 2,
-          "question": "On what date did the Arab League summit in Sudan issue the Khartoum Resolution?",
-          "q": "On what date did the Arab League summit in Sudan issue the Khartoum Resolution?",
+          "question": "What was the main political consequence of the September 1967 Khartoum Resolution on Israeli attitudes?",
+          "q": "What was the main political consequence of the September 1967 Khartoum Resolution on Israeli attitudes?",
           "options": [
-            "1 September 1967",
-            "5 June 1967",
-            "22 November 1967",
-            "21 March 1968"
+            "It persuaded Israel to withdraw immediately from the Sinai Peninsula",
+            "It led Israel to recognise the PLO as the sole Palestinian representative",
+            "It hardened Israeli opinion and ended immediate hopes of trading land for peace",
+            "It prompted Israel to sign a separate peace treaty with Syria"
           ],
-          "answer": "1 September 1967",
-          "a": "1 September 1967",
-          "explanation": "Issued on 1 September 1967, the Khartoum Resolution proclaimed the famous Three Noes rejecting negotiations with Israel."
+          "answer": "It hardened Israeli opinion and ended immediate hopes of trading land for peace",
+          "a": "It hardened Israeli opinion and ended immediate hopes of trading land for peace",
+          "explanation": "The Arab League's uncompromising 'Three Noes' convinced Israeli leaders that Arab states remained committed to Israel's destruction, hardening public opinion and ending immediate hopes of a land-for-peace deal."
         },
         {
           "stage": 3,
@@ -13061,7 +13061,7 @@ const cme_new = {
           "dates": "1967–1977",
           "question": "How did the Allon Plan and West Bank settlements obstruct a two-state deal?",
           "questionHeading": "How did the Allon Plan and West Bank settlements obstruct a two-state deal?",
-          "prose_hash": "f080ca0669"
+          "prose_hash": "7fcd6ceaac"
         }
       ],
       "slug": "kt2.3-resolution-242",
@@ -13142,8 +13142,8 @@ const cme_new = {
             "img": "/images/cme_paratroopers_western_wall_1967.jpg",
             "mode": "contain",
             "stat": "300,000 New Refugees + 1 Million Under Military Rule",
-            "html": "After capturing the <strong>Western Wall</strong>, Israel annexed <strong>East Jerusalem</strong> as part of its eternal capital. Meanwhile, 300,000 more refugees fled and <strong>one million Palestinians</strong> lived under military rule.",
-            "spoken": "Why did Land for Peace freeze into a permanent stalemate after 1967? <short pause> After capturing the Western Wall , Israel annexed East Jerusalem as part of its eternal capital. Meanwhile, 300,000 more refugees fled and one million Palestinians lived under military rule.",
+            "html": "Israel occupied <strong>Sinai, the Golan Heights, West Bank, and Gaza Strip</strong>, annexing <strong>East Jerusalem</strong> after capturing the <strong>Western Wall</strong> as 300,000 Palestinian refugees fled and one million faced military rule.",
+            "spoken": "Why did Land for Peace freeze into a permanent stalemate after 1967? <short pause> Israel occupied Sinai, the Golan Heights, West Bank, and Gaza Strip, annexing East Jerusalem after capturing the Western Wall as 300,000 Palestinian refugees fled and one million faced military rule.",
             "paired_prose_hash": "f066e0c7c9",
             "connective": "Why did Land for Peace freeze into a permanent stalemate after 1967?"
           },
@@ -13191,9 +13191,9 @@ const cme_new = {
             "img": "/images/cme_plate_kfar_etzion_settlement_1967.jpg",
             "mode": "contain",
             "stat": "Allon Security Buffers + Religious West Bank Towns",
-            "html": "Starting with the security-focused <strong>Allon Plan</strong>, Israel built permanent <strong>Jewish settlements</strong> inside occupied lands. Religious settlers moved deep into the <strong>West Bank</strong>, making withdrawal harder every year.",
-            "spoken": "Meanwhile, permanent settlements took root. <short pause> Starting with the security-focused Allon Plan , Israel built permanent Jewish settlements inside occupied lands. Religious settlers moved deep into the West Bank , making withdrawal harder every year.",
-            "paired_prose_hash": "f080ca0669",
+            "html": "Through the <strong>Allon Plan</strong> and permanent <strong>West Bank Jewish settlements</strong>, Israel’s <strong>consolidation of control of the occupied territories</strong> deepened every year, making future withdrawal far harder.",
+            "spoken": "Meanwhile, permanent settlements took root. <short pause> Through the Allon Plan and permanent West Bank Jewish settlements, Israel’s consolidation of control of the occupied territories deepened every year, making future withdrawal far harder.",
+            "paired_prose_hash": "7fcd6ceaac",
             "connective": "Meanwhile, permanent settlements took root."
           },
           {
@@ -13550,15 +13550,15 @@ const cme_new = {
           "content": "<span class=\"para-ref\">[1.1]</span> On **21 March 1968**, Israeli armoured forces launched a major punitive cross-border raid across the River Jordan to destroy Yasser Arafat’s Fatah guerrilla stronghold at the border town of **Karameh**. Tipped off by intelligence, Palestinian fighters chose to stand their ground alongside Jordanian army artillery units in fierce close-quarters combat throughout the day.\n\n<span class=\"para-ref\">[1.2]</span> Although Israeli troops demolished the camp, the IDF suffered 28 soldiers killed and several disabled tanks. Celebrating the **Battle of Karameh** as a heroic moral triumph over Israeli armour, **Yasser Arafat** inspired thousands of new volunteers to join Fatah and was elected Chairman of the PLO in February 1969, placing armed guerrilla factions in charge of Palestinian politics."
         },
         {
-          "title": "The Dawson’s Field Airline Hijackings",
+          "title": "The PFLP Airplane Hijacks at Dawson’s Field",
           "paragraphs": [
-            "<span class=\"para-ref\">[2.1]</span> Radical Marxist factions challenged Arafat’s moderate dominance of the Palestinian national movement during the late 1960s. Led by Dr George Habash, the **PFLP** (Popular Front for the Liberation of Palestine) pioneered international aircraft hijackings to publicize the Palestinian struggle globally and compel Western governments to release imprisoned guerrilla fighters from European and Israeli jails.",
-            "<span class=\"para-ref\">[2.2]</span> On **6 September 1970**, PFLP operatives coordinated the simultaneous hijacking of four Western passenger airliners, forcing three aircraft to land at **Dawson’s Field**, a remote desert landing strip in Jordan. After evacuating over 300 civilian hostages, militants blew up the empty airliners before global television cameras, humiliating King Hussein and demonstrating that armed Palestinian groups operated entirely beyond Jordanian government control."
+            "<span class=\"para-ref\">[2.1]</span> Radical Marxist factions challenged Arafat’s moderate dominance of the Palestinian national movement during the late 1960s. Led by Dr George Habash, the [Key Organisation: PFLP] (Popular Front for the Liberation of Palestine) pioneered international **airplane hijacks** to publicise the Palestinian struggle globally and compel Western governments to release imprisoned guerrilla fighters from European and Israeli jails.",
+            "<span class=\"para-ref\">[2.2]</span> On **6 September 1970**, in the **PFLP airplane hijacks** of 1970, operatives including **Leila Khaled** targeted four Western passenger airliners simultaneously, forcing three aircraft to land at **Dawson’s Field** in Jordan. After evacuating over 300 civilian hostages, militants blew up the empty airliners before global television cameras, humiliating King Hussein and defying Jordanian royal control."
           ],
           "act": 2,
-          "act_title": "Stage 2: The Dawson’s Field Airline Hijackings — Why did the PFLP hijack four airliners to Dawson’s Field in September 1970?",
-          "theme_heading": "The Dawson’s Field Airline Hijackings",
-          "text": "<span class=\"para-ref\">[2.1]</span> Radical Marxist factions challenged Arafat’s moderate dominance of the Palestinian national movement during the late 1960s. Led by Dr George Habash, the [Key Organisation: PFLP] (Popular Front for the Liberation of Palestine) pioneered international aircraft hijackings to publicize the Palestinian struggle globally and compel Western governments to release imprisoned guerrilla fighters from European and Israeli jails.\n\n<span class=\"para-ref\">[2.2]</span> On **6 September 1970**, PFLP operatives coordinated the simultaneous hijacking of four Western passenger airliners, forcing three aircraft to land at **Dawson’s Field**, a remote desert landing strip in Jordan. After evacuating over 300 civilian hostages, militants blew up the empty airliners before global television cameras, humiliating King Hussein and demonstrating that armed Palestinian groups operated entirely beyond Jordanian government control.",
+          "act_title": "Stage 2: The PFLP Airplane Hijacks at Dawson’s Field — Why did the PFLP hijack four airliners to Dawson’s Field in September 1970?",
+          "theme_heading": "The PFLP Airplane Hijacks at Dawson’s Field",
+          "text": "<span class=\"para-ref\">[2.1]</span> Radical Marxist factions challenged Arafat’s moderate dominance of the Palestinian national movement during the late 1960s. Led by Dr George Habash, the [Key Organisation: PFLP] (Popular Front for the Liberation of Palestine) pioneered international **airplane hijacks** to publicise the Palestinian struggle globally and compel Western governments to release imprisoned guerrilla fighters from European and Israeli jails.\n\n<span class=\"para-ref\">[2.2]</span> On **6 September 1970**, in the **PFLP airplane hijacks** of 1970, operatives including **Leila Khaled** targeted four Western passenger airliners simultaneously, forcing three aircraft to land at **Dawson’s Field** in Jordan. After evacuating over 300 civilian hostages, militants blew up the empty airliners before global television cameras, humiliating King Hussein and defying Jordanian royal control.",
           "sources": [
             {
               "id": "cme_l8_source_b",
@@ -13591,7 +13591,7 @@ const cme_new = {
             }
           ],
           "isReversed": false,
-          "content": "<span class=\"para-ref\">[2.1]</span> Radical Marxist factions challenged Arafat’s moderate dominance of the Palestinian national movement during the late 1960s. Led by Dr George Habash, the [Key Organisation: PFLP] (Popular Front for the Liberation of Palestine) pioneered international aircraft hijackings to publicize the Palestinian struggle globally and compel Western governments to release imprisoned guerrilla fighters from European and Israeli jails.\n\n<span class=\"para-ref\">[2.2]</span> On **6 September 1970**, PFLP operatives coordinated the simultaneous hijacking of four Western passenger airliners, forcing three aircraft to land at **Dawson’s Field**, a remote desert landing strip in Jordan. After evacuating over 300 civilian hostages, militants blew up the empty airliners before global television cameras, humiliating King Hussein and demonstrating that armed Palestinian groups operated entirely beyond Jordanian government control.",
+          "content": "<span class=\"para-ref\">[2.1]</span> Radical Marxist factions challenged Arafat’s moderate dominance of the Palestinian national movement during the late 1960s. Led by Dr George Habash, the [Key Organisation: PFLP] (Popular Front for the Liberation of Palestine) pioneered international **airplane hijacks** to publicise the Palestinian struggle globally and compel Western governments to release imprisoned guerrilla fighters from European and Israeli jails.\n\n<span class=\"para-ref\">[2.2]</span> On **6 September 1970**, in the **PFLP airplane hijacks** of 1970, operatives including **Leila Khaled** targeted four Western passenger airliners simultaneously, forcing three aircraft to land at **Dawson’s Field** in Jordan. After evacuating over 300 civilian hostages, militants blew up the empty airliners before global television cameras, humiliating King Hussein and defying Jordanian royal control.",
           "stage_hook_map": {
             "id": "cme-l7-black-september-map",
             "title": "Karameh, Black September & PLO Relocation to Lebanon (1968–72)",
@@ -13755,12 +13755,12 @@ const cme_new = {
           "title": "Black September (Civil War in Jordan)",
           "paragraphs": [
             "<span class=\"para-ref\">[3.1]</span> By mid-1970, armed Palestinian militias operated as an autonomous **state-within-a-state** across Jordan, establishing armed checkpoints, collecting illegal taxes, and openly challenging royal authority in the capital of Amman. Outraged by the Dawson's Field spectacle and fearing for his throne, Jordan's **King Hussein** ordered his loyal Bedouin army to crush and disarm the Palestinian guerrilla organizations on **16 September 1970**.",
-            "<span class=\"para-ref\">[3.2]</span> The brutal civil war, known to Palestinians as **Black September**, claimed several thousand lives as Jordanian tank artillery shelled refugee camps across Amman. A Syrian armored intervention was decisively repulsed, and the **PLO** was completely driven out of Jordan by mid-1971, relocating its armed command structure, political leadership, and thousands of fighters to southern Lebanon and Beirut."
+            "<span class=\"para-ref\">[3.2]</span> The brutal civil war, known to Palestinians as **Black September**, claimed several thousand lives as Jordanian tank artillery shelled refugee camps across Amman. A Syrian armoured intervention was decisively repulsed, resulting in the complete **expulsion of the PLO from Jordan** (begun in 1970 and completed by mid-1971) as the **PLO** relocated its headquarters and fighters to southern Lebanon and Beirut."
           ],
           "act": 3,
           "act_title": "Stage 3: Black September (Civil War in Jordan) — Why did King Hussein expel the PLO in Black September, and where did it move?",
           "theme_heading": "Black September (Civil War in Jordan)",
-          "text": "<span class=\"para-ref\">[3.1]</span> By mid-1970, armed Palestinian militias operated as an autonomous **state-within-a-state** across Jordan, establishing armed checkpoints, collecting illegal taxes, and openly challenging royal authority in the capital of Amman. Outraged by the Dawson's Field spectacle and fearing for his throne, Jordan's **King Hussein** ordered his loyal Bedouin army to crush and disarm the Palestinian guerrilla organizations on **16 September 1970**.\n\n<span class=\"para-ref\">[3.2]</span> The brutal civil war, known to Palestinians as **Black September**, claimed several thousand lives as Jordanian tank artillery shelled refugee camps across Amman. A Syrian armored intervention was decisively repulsed, and the **PLO** was completely driven out of Jordan by mid-1971, relocating its armed command structure, political leadership, and thousands of fighters to southern Lebanon and Beirut.",
+          "text": "<span class=\"para-ref\">[3.1]</span> By mid-1970, armed Palestinian militias operated as an autonomous **state-within-a-state** across Jordan, establishing armed checkpoints, collecting illegal taxes, and openly challenging royal authority in the capital of Amman. Outraged by the Dawson's Field spectacle and fearing for his throne, Jordan's **King Hussein** ordered his loyal Bedouin army to crush and disarm the Palestinian guerrilla organizations on **16 September 1970**.\n\n<span class=\"para-ref\">[3.2]</span> The brutal civil war, known to Palestinians as **Black September**, claimed several thousand lives as Jordanian tank artillery shelled refugee camps across Amman. A Syrian armoured intervention was decisively repulsed, resulting in the complete **expulsion of the PLO from Jordan** (begun in 1970 and completed by mid-1971) as the **PLO** relocated its headquarters and fighters to southern Lebanon and Beirut.",
           "sources": [
             {
               "id": "cme_l8_source_c",
@@ -13796,7 +13796,7 @@ const cme_new = {
           "image_alt": "Field Marshal Habis al-Majali (left, wearing beret), King Hussein of Jordan (centre, in military uniform), and senior Jordanian statesman Wasfi al-Tal (right) conferring on 17 September 1970 during Black September",
           "caption": "King Hussein Meets Key Advisers on the Outbreak of Black September (17 September 1970): Field Marshal Habis al-Majali (left, Commander-in-Chief and newly appointed Military Governor of Jordan), King Hussein (centre), and veteran royal statesman Wasfi al-Tal (right—soon reappointed Prime Minister and assassinated by Black September in Cairo in November 1971) conferring as Jordanian armoured units moved into Amman.",
           "isReversed": false,
-          "content": "<span class=\"para-ref\">[3.1]</span> By mid-1970, armed Palestinian militias operated as an autonomous **state-within-a-state** across Jordan, establishing armed checkpoints, collecting illegal taxes, and openly challenging royal authority in the capital of Amman. Outraged by the Dawson's Field spectacle and fearing for his throne, Jordan's **King Hussein** ordered his loyal Bedouin army to crush and disarm the Palestinian guerrilla organizations on **16 September 1970**.\n\n<span class=\"para-ref\">[3.2]</span> The brutal civil war, known to Palestinians as **Black September**, claimed several thousand lives as Jordanian tank artillery shelled refugee camps across Amman. A Syrian armored intervention was decisively repulsed, and the **PLO** was completely driven out of Jordan by mid-1971, relocating its armed command structure, political leadership, and thousands of fighters to southern Lebanon and Beirut."
+          "content": "<span class=\"para-ref\">[3.1]</span> By mid-1970, armed Palestinian militias operated as an autonomous **state-within-a-state** across Jordan, establishing armed checkpoints, collecting illegal taxes, and openly challenging royal authority in the capital of Amman. Outraged by the Dawson's Field spectacle and fearing for his throne, Jordan's **King Hussein** ordered his loyal Bedouin army to crush and disarm the Palestinian guerrilla organizations on **16 September 1970**.\n\n<span class=\"para-ref\">[3.2]</span> The brutal civil war, known to Palestinians as **Black September**, claimed several thousand lives as Jordanian tank artillery shelled refugee camps across Amman. A Syrian armoured intervention was decisively repulsed, resulting in the complete **expulsion of the PLO from Jordan** (begun in 1970 and completed by mid-1971) as the **PLO** relocated its headquarters and fighters to southern Lebanon and Beirut."
         },
         {
           "title": "The Munich Olympics Massacre",
@@ -14189,7 +14189,7 @@ const cme_new = {
                 "Battle of Karameh (March 1968)",
                 "Yasser Arafat (PLO Chairman, 1969)",
                 "George Habash & PFLP",
-                "Dawson’s Field Hijackings (Sept 1970)",
+                "PFLP Airplane Hijacks at Dawson’s Field (1970)",
                 "King Hussein of Jordan",
                 "Black September Civil War (1970–71)",
                 "PLO Relocation to Lebanon (\"Fatahland\")",
@@ -14224,7 +14224,7 @@ const cme_new = {
           {
             "step": 2,
             "date": "6 Sept 1970",
-            "title": "The Dawson’s Field Airline Hijackings",
+            "title": "The PFLP Airplane Hijacks at Dawson’s Field",
             "actor": "PFLP (Militant Palestinian Group)",
             "tag": "Hijackings on TV",
             "trigger": "Palestinian militants hijack four Western passenger airliners, force three to land in the Jordanian desert, and blow up the empty planes on live television.",
@@ -14233,7 +14233,7 @@ const cme_new = {
             "connective": "Furious at being humiliated in his own country, King Hussein ordered his army to crush the PLO...",
             "exam_link": "Q1 Consequence: Brought the Palestinian issue to global attention, but provoked King Hussein into launching military action against the PLO.",
             "question": "Why did the PFLP hijack four airliners to Dawson’s Field in September 1970?",
-            "prose_hash": "b6e63243db"
+            "prose_hash": "1afcf60835"
           },
           {
             "step": 3,
@@ -14247,7 +14247,7 @@ const cme_new = {
             "connective": "A vengeful new faction named after the Jordanian defeat carried out a shocking attack on the world stage...",
             "exam_link": "Q1 Consequence: Led to the expulsion of the PLO from Jordan and the relocation of their bases to Lebanon.",
             "question": "Why did King Hussein expel the PLO in Black September, and where did it move?",
-            "prose_hash": "e02c52c22c"
+            "prose_hash": "e02e44914f"
           },
           {
             "step": 4,
@@ -14338,17 +14338,17 @@ const cme_new = {
         },
         {
           "stage": 1,
-          "question": "On what date in 1968 did Israeli armoured forces raid Fatah's guerrilla base at Karameh in Jordan?",
-          "q": "On what date in 1968 did Israeli armoured forces raid Fatah's guerrilla base at Karameh in Jordan?",
+          "question": "Why was the March 1968 Battle of Karameh a major turning point for Palestinian politics?",
+          "q": "Why was the March 1968 Battle of Karameh a major turning point for Palestinian politics?",
           "options": [
-            "5 September 1968",
-            "21 March 1968",
-            "13 November 1968",
-            "6 October 1968"
+            "It forced Israel to withdraw permanently from the West Bank",
+            "It united Egypt and Jordan into a single Pan-Arab military alliance",
+            "It persuaded the United Nations to grant Palestine full statehood",
+            "It boosted Fatah recruitment and placed armed guerrilla factions in charge of the PLO"
           ],
-          "answer": "21 March 1968",
-          "a": "21 March 1968",
-          "explanation": "On 21 March 1968, Fatah fighters and Jordanian artillery fought Israeli armour at Karameh, boosting Palestinian morale."
+          "answer": "It boosted Fatah recruitment and placed armed guerrilla factions in charge of the PLO",
+          "a": "It boosted Fatah recruitment and placed armed guerrilla factions in charge of the PLO",
+          "explanation": "Although the IDF demolished the camp, Palestinian resistance at Karameh was celebrated as a moral triumph, bringing thousands of volunteers to Fatah and placing armed guerrilla factions in control of the PLO."
         },
         {
           "stage": 1,
@@ -14738,12 +14738,12 @@ const cme_new = {
               "clue": "On 6 September 1970, PFLP commandos hijacked four Western airliners in mid-flight across Europe."
             }
           ],
-          "model_sentence": "Masterminded by <strong>George Habash's Popular Front for the Liberation of Palestine</strong> (the <strong>PFLP</strong>), four international airliners were hijacked simultaneously on <strong>6 September 1970</strong>.",
-          "title": "The Dawson’s Field Airline Hijackings",
+          "model_sentence": "Masterminded by <strong>George Habash's Popular Front for the Liberation of Palestine</strong> (the <strong>PFLP</strong>), the <strong>PFLP airplane hijacks</strong> on <strong>6 September 1970</strong> forced three Western airliners onto Dawson’s Field.",
+          "title": "The PFLP Airplane Hijacks at Dawson’s Field",
           "dates": "6 Sept 1970",
           "question": "Why did the PFLP hijack four airliners to Dawson’s Field in September 1970?",
           "questionHeading": "Why did the PFLP hijack four airliners to Dawson’s Field in September 1970?",
-          "prose_hash": "b6e63243db"
+          "prose_hash": "1afcf60835"
         },
         {
           "step": 3,
@@ -14769,7 +14769,7 @@ const cme_new = {
           "dates": "Sept 1970–1971",
           "question": "Why did King Hussein expel the PLO in Black September, and where did it move?",
           "questionHeading": "Why did King Hussein expel the PLO in Black September, and where did it move?",
-          "prose_hash": "e02c52c22c"
+          "prose_hash": "e02e44914f"
         },
         {
           "step": 4,
@@ -14923,15 +14923,15 @@ const cme_new = {
           },
           {
             "badge": "Stage 2",
-            "heading": "Dawson’s Field Plane Hijackings",
+            "heading": "PFLP Airplane Hijacks (1970)",
             "date": "6 Sept 1970",
             "img": "/images/cme_dawsons_field_1970.jpg",
             "mode": "landscape",
             "pos": "center 50%",
             "stat": "3 Empty Passenger Jets Blown Up Live on TV",
-            "html": "To force world attention onto Palestine, the radical <strong>PFLP</strong> hijacked four Western airliners, landing three at <strong>Dawson’s Field</strong> in Jordan. Militants freed hostages and blew up the planes on world TV.",
-            "spoken": "Radical factions turned to dramatic hijackings. <short pause> To force world attention onto Palestine, the radical PFLP hijacked four Western airliners, landing three at Dawson’s Field in Jordan. Militants freed hostages and blew up the planes on world TV.",
-            "paired_prose_hash": "b6e63243db",
+            "html": "In the <strong>1970 PFLP airplane hijacks</strong>, militants seized four Western airliners and landed three at <strong>Dawson’s Field</strong> in Jordan, freeing hostages before blowing up the empty planes on TV.",
+            "spoken": "Radical factions turned to dramatic hijackings. <short pause> In the 1970 PFLP airplane hijacks, militants seized four Western airliners and landed three at Dawson’s Field in Jordan, freeing hostages before blowing up the empty planes on TV.",
+            "paired_prose_hash": "1afcf60835",
             "connective": "Radical factions turned to dramatic hijackings."
           },
           {
@@ -14944,7 +14944,7 @@ const cme_new = {
             "stat": "Thousands Killed • PLO Driven Out to Lebanon",
             "html": "Fearing the armed PLO “state-within-a-state” would topple his throne, Jordan’s <strong>King Hussein</strong> sent his army to crush the militias. In <strong>Black September</strong>, the PLO was expelled to <strong>Lebanon</strong>.",
             "spoken": "Humiliated, King Hussein cracked down hard. <short pause> Fearing the armed PLO “state-within-a-state” would topple his throne, Jordan’s King Hussein sent his army to crush the militias. In Black September , the PLO was expelled to Lebanon .",
-            "paired_prose_hash": "e02c52c22c",
+            "paired_prose_hash": "e02e44914f",
             "connective": "Humiliated, King Hussein cracked down hard."
           },
           {
@@ -14981,8 +14981,8 @@ const cme_new = {
             "mode": "landscape",
             "pos": "center 25%",
             "stat": "West Shuns PLO, Yet Palestinian Cause Gains Spotlight",
-            "html": "Munich horrified Western nations and hardened Israeli refusal to talk to the PLO. Yet global headlines proved <strong>Palestinian statelessness</strong> could no longer be ignored.",
-            "spoken": "Global terrorism left a sharp double impact. <short pause> Munich horrified Western nations and hardened Israeli refusal to talk to the PLO. Yet global headlines proved Palestinian statelessness could no longer be ignored.",
+            "html": "Munich reshaped <strong>international attitudes towards the Palestine issue</strong>: Western nations condemned PLO terrorism, yet global headlines proved <strong>Palestinian statelessness</strong> could no longer be ignored.",
+            "spoken": "Global terrorism left a sharp double impact. <short pause> Munich reshaped international attitudes towards the Palestine issue: Western nations condemned PLO terrorism, yet global headlines proved Palestinian statelessness could no longer be ignored.",
             "connective": "Global terrorism left a sharp double impact."
           }
         ],
@@ -14991,7 +14991,7 @@ const cme_new = {
         "vocab": [
           [
             "1. PFLP",
-            "Radical Marxist Palestinian faction behind the 1970 Dawson’s Field hijackings."
+            "Radical Marxist Palestinian faction behind the 1970 PFLP airplane hijacks at Dawson’s Field."
           ],
           [
             "2. Black September",
@@ -15185,9 +15185,9 @@ const cme_new = {
           },
           {
             "stage": 3,
-            "question": "Where did PFLP hijackers land three commercial airliners in September 1970 before blowing them up?",
+            "question": "Where in Jordan did the PFLP airplane hijacks of September 1970 force three commercial airliners to land before blowing them up?",
             "answer": "Dawson's Field in Jordan",
-            "explanation": "Dawson's Field was a deserted desert airstrip near Zarqa in Jordan."
+            "explanation": "During the PFLP airplane hijacks of September 1970, militants landed and destroyed three empty Western airliners at Dawson's Field near Zarqa in Jordan."
           },
           {
             "stage": 4,
@@ -15197,9 +15197,9 @@ const cme_new = {
           },
           {
             "stage": 5,
-            "question": "To which neighbouring country did the PLO relocate its headquarters after being expelled from Jordan?",
+            "question": "To which neighbouring country did the PLO move its headquarters following the expulsion of the PLO from Jordan in 1970–71?",
             "answer": "Lebanon",
-            "explanation": "The PLO relocated to southern Lebanon and Beirut after being driven from Jordan."
+            "explanation": "Following the expulsion of the PLO from Jordan, Yasser Arafat relocated PLO headquarters and fighters to Beirut and southern Lebanon."
           },
           {
             "stage": 1,
@@ -15209,9 +15209,9 @@ const cme_new = {
           },
           {
             "stage": 2,
-            "question": "Which radical Palestinian organisation pioneered international airplane hijackings in the late 1960s?",
+            "question": "Which radical Palestinian organisation carried out the international airplane hijacks of September 1970?",
             "answer": "The PFLP (Popular Front for the Liberation of Palestine)",
-            "explanation": "The PFLP, led by George Habash, carried out international hijackings."
+            "explanation": "Led by George Habash, the PFLP carried out the airplane hijacks of 1970 at Dawson's Field."
           },
           {
             "stage": 3,
@@ -15283,12 +15283,12 @@ const cme_new = {
           "title": "The War of Attrition",
           "paragraphs": [
             "<span class=\"para-ref\">[1.1]</span> In **March 1969**, Egyptian President Nasser launched the **War of Attrition**, a grinding military conflict fought along the **Suez Canal** that lasted until August 1970. Nasser sought to exploit Israel’s acute vulnerability to military casualties, preventing the 1967 ceasefire line from solidifying into an accepted permanent border and pressuring international superpowers to force an Israeli withdrawal from occupied Sinai.",
-            "<span class=\"para-ref\">[1.2]</span> Israeli soldiers endured relentless heavy artillery shellfire inside reinforced concrete bunkers along the **Bar-Lev Line**, while Israeli jets launched deep retaliatory bombing raids into the Egyptian heartland. When the Soviet Union deployed advanced surface-to-air missiles and combat pilots to defend Cairo, the acute danger of direct superpower confrontation prompted both nations to accept an American-brokered ceasefire in August 1970."
+            "<span class=\"para-ref\">[1.2]</span> Israeli soldiers endured relentless heavy artillery shellfire inside reinforced concrete bunkers along the **Bar-Lev Line**, while Israeli jets launched deep retaliatory bombing raids into the Egyptian heartland. When the **Soviet Union (USSR)** deployed advanced surface-to-air missiles and combat pilots to defend Cairo, the acute danger of direct superpower confrontation prompted both nations to accept an American-brokered ceasefire in August 1970."
           ],
           "act": 1,
           "act_title": "Stage 1: The War of Attrition — Why did Nasser wage the War of Attrition, and how did fighting end in 1970?",
           "theme_heading": "The War of Attrition",
-          "text": "<span class=\"para-ref\">[1.1]</span> In **March 1969**, Egyptian President Nasser launched the **War of Attrition**, a grinding military conflict fought along the **Suez Canal** that lasted until August 1970. Nasser sought to exploit Israel’s acute vulnerability to military casualties, preventing the 1967 ceasefire line from solidifying into an accepted permanent border and pressuring international superpowers to force an Israeli withdrawal from occupied Sinai.\n\n<span class=\"para-ref\">[1.2]</span> Israeli soldiers endured relentless heavy artillery shellfire inside reinforced concrete bunkers along the **Bar-Lev Line**, while Israeli jets launched deep retaliatory bombing raids into the Egyptian heartland. When the Soviet Union deployed advanced surface-to-air missiles and combat pilots to defend Cairo, the acute danger of direct superpower confrontation prompted both nations to accept an American-brokered ceasefire in August 1970.",
+          "text": "<span class=\"para-ref\">[1.1]</span> In **March 1969**, Egyptian President Nasser launched the **War of Attrition**, a grinding military conflict fought along the **Suez Canal** that lasted until August 1970. Nasser sought to exploit Israel’s acute vulnerability to military casualties, preventing the 1967 ceasefire line from solidifying into an accepted permanent border and pressuring international superpowers to force an Israeli withdrawal from occupied Sinai.\n\n<span class=\"para-ref\">[1.2]</span> Israeli soldiers endured relentless heavy artillery shellfire inside reinforced concrete bunkers along the **Bar-Lev Line**, while Israeli jets launched deep retaliatory bombing raids into the Egyptian heartland. When the **Soviet Union (USSR)** deployed advanced surface-to-air missiles and combat pilots to defend Cairo, the acute danger of direct superpower confrontation prompted both nations to accept an American-brokered ceasefire in August 1970.",
           "sources": [
             {
               "id": "cme_l9_source_a",
@@ -15395,7 +15395,7 @@ const cme_new = {
               }
             ]
           },
-          "content": "<span class=\"para-ref\">[1.1]</span> In **March 1969**, Egyptian President Nasser launched the **War of Attrition**, a grinding military conflict fought along the **Suez Canal** that lasted until August 1970. Nasser sought to exploit Israel’s acute vulnerability to military casualties, preventing the 1967 ceasefire line from solidifying into an accepted permanent border and pressuring international superpowers to force an Israeli withdrawal from occupied Sinai.\n\n<span class=\"para-ref\">[1.2]</span> Israeli soldiers endured relentless heavy artillery shellfire inside reinforced concrete bunkers along the **Bar-Lev Line**, while Israeli jets launched deep retaliatory bombing raids into the Egyptian heartland. When the Soviet Union deployed advanced surface-to-air missiles and combat pilots to defend Cairo, the acute danger of direct superpower confrontation prompted both nations to accept an American-brokered ceasefire in August 1970.",
+          "content": "<span class=\"para-ref\">[1.1]</span> In **March 1969**, Egyptian President Nasser launched the **War of Attrition**, a grinding military conflict fought along the **Suez Canal** that lasted until August 1970. Nasser sought to exploit Israel’s acute vulnerability to military casualties, preventing the 1967 ceasefire line from solidifying into an accepted permanent border and pressuring international superpowers to force an Israeli withdrawal from occupied Sinai.\n\n<span class=\"para-ref\">[1.2]</span> Israeli soldiers endured relentless heavy artillery shellfire inside reinforced concrete bunkers along the **Bar-Lev Line**, while Israeli jets launched deep retaliatory bombing raids into the Egyptian heartland. When the **Soviet Union (USSR)** deployed advanced surface-to-air missiles and combat pilots to defend Cairo, the acute danger of direct superpower confrontation prompted both nations to accept an American-brokered ceasefire in August 1970.",
           "concept_widget": {
             "type": "spectrum_slider",
             "eyebrow": "Interactive Canal Conflict",
@@ -16040,7 +16040,7 @@ const cme_new = {
             "connective": "Egypt’s new president tried diplomacy to regain Sinai, but his overtures were ignored...",
             "exam_link": "Q2 Narrative Account: Showed Egypt’s refusal to accept the loss of Sinai, setting the stage for the Yom Kippur War.",
             "question": "Why did Nasser wage the War of Attrition, and how did fighting end in 1970?",
-            "prose_hash": "c9457ddf8e"
+            "prose_hash": "aae42c4ed8"
           },
           {
             "step": 2,
@@ -16504,7 +16504,7 @@ const cme_new = {
           "dates": "1969–Aug 1970",
           "question": "Why did Nasser wage the War of Attrition, and how did fighting end in 1970?",
           "questionHeading": "Why did Nasser wage the War of Attrition, and how did fighting end in 1970?",
-          "prose_hash": "c9457ddf8e"
+          "prose_hash": "aae42c4ed8"
         },
         {
           "step": 2,
@@ -16712,7 +16712,7 @@ const cme_new = {
             "stat": "Soviet SAM Missile Shield Placed Along West Bank",
             "html": "Nasser shelled Israel’s <strong>Bar-Lev Line</strong> for 17 months to wear Israel down. Before an August 1970 ceasefire, Egypt moved <strong>Soviet SAM anti-aircraft missiles</strong> right up to the Suez Canal.",
             "spoken": "How did the 1973 Yom Kippur War shatter the Middle East freeze? <short pause> Nasser shelled Israel’s Bar-Lev Line for 17 months to wear Israel down. Before an August 1970 ceasefire, Egypt moved Soviet SAM anti-aircraft missiles right up to the Suez Canal.",
-            "paired_prose_hash": "c9457ddf8e",
+            "paired_prose_hash": "aae42c4ed8",
             "connective": "How did the 1973 Yom Kippur War shatter the Middle East freeze?"
           },
           {
@@ -16722,8 +16722,8 @@ const cme_new = {
             "img": "/images/cme_anwar_sadat_1971.jpg",
             "mode": "contain",
             "stat": "15,000 Soviet Advisers Sent Home • Secret War Plan",
-            "html": "After Nasser died, new President <strong>Anwar Sadat</strong> offered peace for Sinai, which Israel ignored. Sadat expelled <strong>15,000 Soviet advisers</strong> and secretly planned a limited war with Syria to force US talks.",
-            "spoken": "When his peace offer was snubbed, Sadat prepared to strike. <short pause> After Nasser died, new President Anwar Sadat offered peace for Sinai, which Israel ignored. Sadat expelled 15,000 Soviet advisers and secretly planned a limited war with Syria to force US talks.",
+            "html": "When Israel ignored <strong>Anwar Sadat’s</strong> 1971 Sinai peace offer, Sadat expelled <strong>15,000 advisers from the USSR</strong> and secretly planned a limited war with Syria to force US talks.",
+            "spoken": "When his peace offer was snubbed, Sadat prepared to strike. <short pause> When Israel ignored Anwar Sadat’s 1971 Sinai peace offer, Sadat expelled 15,000 advisers from the USSR and secretly planned a limited war with Syria to force US talks.",
             "paired_prose_hash": "8d526ec554",
             "connective": "When his peace offer was snubbed, Sadat prepared to strike."
           },
@@ -16899,17 +16899,17 @@ const cme_new = {
         },
         {
           "stage": 2,
-          "question": "On what historic date did Anwar Sadat land at Ben Gurion Airport and address the Israeli Knesset in Jerusalem?",
-          "q": "On what historic date did Anwar Sadat land at Ben Gurion Airport and address the Israeli Knesset in Jerusalem?",
+          "question": "What historic offer did President Anwar Sadat make to Israel during his November 1977 address to the Knesset?",
+          "q": "What historic offer did President Anwar Sadat make to Israel during his November 1977 address to the Knesset?",
           "options": [
-            "19–20 November 1977",
-            "6 October 1973",
-            "17 September 1978",
-            "26 March 1979"
+            "Full peace and diplomatic recognition in return for occupied Arab land",
+            "Joint Egyptian-Israeli administration of East Jerusalem and Gaza",
+            "An immediate military alliance against Syria and the Soviet Union",
+            "Permanent Israeli control of the Sinai oil fields in exchange for US aid"
           ],
-          "answer": "19–20 November 1977",
-          "a": "19–20 November 1977",
-          "explanation": "Millions watched live television as Sadat stepped off the plane, greeted by Golda Meir and Menachem Begin, and delivered an impassioned plea for peace directly to the Knesset."
+          "answer": "Full peace and diplomatic recognition in return for occupied Arab land",
+          "a": "Full peace and diplomatic recognition in return for occupied Arab land",
+          "explanation": "Becoming the first Arab leader to visit Israel officially, Sadat offered full peace and diplomatic recognition in exchange for the return of occupied Arab land, shattering thirty years of taboo."
         },
         {
           "stage": 2,
@@ -16983,17 +16983,17 @@ const cme_new = {
         },
         {
           "stage": 3,
-          "question": "On what date were the historic Camp David Accords signed by Anwar Sadat and Menachem Begin?",
-          "q": "On what date were the historic Camp David Accords signed by Anwar Sadat and Menachem Begin?",
+          "question": "Which critical issues did the second framework of the 1978 Camp David Accords leave unresolved?",
+          "q": "Which critical issues did the second framework of the 1978 Camp David Accords leave unresolved?",
           "options": [
-            "29 November 1978",
-            "14 May 1978",
-            "17 September 1978",
-            "6 October 1978"
+            "The reopening of the Suez Canal and the Straits of Tiran",
+            "Sovereign Palestinian statehood and the status of East Jerusalem",
+            "The withdrawal of Israeli troops from the Sinai Peninsula",
+            "The establishment of embassies between Cairo and Jerusalem"
           ],
-          "answer": "17 September 1978",
-          "a": "17 September 1978",
-          "explanation": "Signed on 17 September 1978, the Camp David Accords set out frameworks for peace with Egypt and Palestinian autonomy."
+          "answer": "Sovereign Palestinian statehood and the status of East Jerusalem",
+          "a": "Sovereign Palestinian statehood and the status of East Jerusalem",
+          "explanation": "While the second Camp David framework offered vague five-year Palestinian autonomy, it completely avoided sovereign Palestinian statehood and the contested status of East Jerusalem."
         },
         {
           "stage": 3,
@@ -17011,17 +17011,17 @@ const cme_new = {
         },
         {
           "stage": 4,
-          "question": "On what date was the historic Egypt-Israel Peace Treaty (Treaty of Washington) officially signed on the White House lawn?",
-          "q": "On what date was the historic Egypt-Israel Peace Treaty (Treaty of Washington) officially signed on the White House lawn?",
+          "question": "What was the major strategic consequence for Israel of signing the 1979 Egypt-Israel Peace Treaty?",
+          "q": "What was the major strategic consequence for Israel of signing the 1979 Egypt-Israel Peace Treaty?",
           "options": [
-            "26 March 1979",
-            "13 September 1993",
-            "17 September 1978",
-            "6 October 1981"
+            "It secured permanent Israeli control over the Sinai oil fields",
+            "It persuaded Syria and Jordan to sign identical peace treaties in 1979",
+            "It ended Palestinian resistance in the West Bank and Gaza",
+            "It removed Egypt from any future Arab military coalition against Israel"
           ],
-          "answer": "26 March 1979",
-          "a": "26 March 1979",
-          "explanation": "Sadat and Begin signed the treaty in the presence of Jimmy Carter, formally ending 31 years of war between Israel and the most populous Arab state."
+          "answer": "It removed Egypt from any future Arab military coalition against Israel",
+          "a": "It removed Egypt from any future Arab military coalition against Israel",
+          "explanation": "By ending thirty years of war with the most populous Arab state, the Treaty of Washington removed Egypt from any future Arab military coalition against Israel."
         },
         {
           "stage": 4,
@@ -17356,7 +17356,7 @@ const cme_new = {
             "connective": "President Sadat decided to take a dramatic personal gamble to break thirty years of deadlock...",
             "exam_link": "Q2 Narrative Account: Restored civilian shipping through the Suez Canal and established the US as the primary mediator in Middle East diplomacy.",
             "question": "How did Kissinger’s shuttle diplomacy achieve pullbacks and reopen Suez?",
-            "prose_hash": "9f33360b51"
+            "prose_hash": "b9ba91540c"
           },
           {
             "step": 2,
@@ -17446,13 +17446,13 @@ const cme_new = {
         {
           "title": "Kissinger’s Shuttle Diplomacy",
           "paragraphs": [
-            "<span class=\"para-ref\">[1.1]</span> Shocked by the 1973–74 Arab oil crisis that quadrupled fuel prices and determined to sideline Soviet influence in the Middle East, US Secretary of State **Henry Kissinger** launched tireless **Shuttle Diplomacy** aboard his aircraft between Jerusalem, Cairo, and Damascus. Rather than risking a deadlocked multi-nation peace conference, Kissinger pursued practical step-by-step bilateral military pullbacks.",
-            "<span class=\"para-ref\">[1.2]</span> Kissinger successfully brokered the **Sinai I Disengagement Agreement** (January 1974), a Golan Heights pullback with Syria (May 1974), and **Sinai II** (September 1975). Israeli forces withdrew away from the canal banks, enabling Sadat to clear and reopen the Suez Canal in June 1975, restore vital Egyptian toll revenues, and move Cairo firmly into a strategic partnership with Washington."
+            "<span class=\"para-ref\">[1.1]</span> Shocked by the 1973–74 Arab oil crisis that quadrupled fuel prices and determined to sideline the **Soviet Union (USSR)** in the Middle East, US Secretary of State **Henry Kissinger** launched tireless **Shuttle Diplomacy** aboard his aircraft between Jerusalem, Cairo, and Damascus. Rather than risking a deadlocked multi-nation peace conference, Kissinger pursued practical step-by-step bilateral military pullbacks.",
+            "<span class=\"para-ref\">[1.2]</span> Kissinger successfully brokered the **Sinai I Disengagement Agreement** (January 1974), a Golan Heights pullback with Syria (May 1974), and **Sinai II** (September 1975). Israeli forces withdrew away from the canal banks, securing the **reopening of the Suez Canal** under Sadat in June 1975, restoring Egyptian toll revenues, and moving Cairo firmly into partnership with Washington."
           ],
           "act": 1,
           "act_title": "Stage 1: Kissinger’s Shuttle Diplomacy — How did Kissinger’s shuttle diplomacy achieve pullbacks and reopen Suez?",
           "theme_heading": "Kissinger’s Shuttle Diplomacy",
-          "text": "<span class=\"para-ref\">[1.1]</span> Shocked by the 1973–74 Arab oil crisis that quadrupled fuel prices and determined to sideline Soviet influence in the Middle East, US Secretary of State **Henry Kissinger** launched tireless **Shuttle Diplomacy** aboard his aircraft between Jerusalem, Cairo, and Damascus. Rather than risking a deadlocked multi-nation peace conference, Kissinger pursued practical step-by-step bilateral military pullbacks.\n\n<span class=\"para-ref\">[1.2]</span> Kissinger successfully brokered the **Sinai I Disengagement Agreement** (January 1974), a Golan Heights pullback with Syria (May 1974), and **Sinai II** (September 1975). Israeli forces withdrew away from the canal banks, enabling Sadat to clear and reopen the Suez Canal in June 1975, restore vital Egyptian toll revenues, and move Cairo firmly into a strategic partnership with Washington.",
+          "text": "<span class=\"para-ref\">[1.1]</span> Shocked by the 1973–74 Arab oil crisis that quadrupled fuel prices and determined to sideline the **Soviet Union (USSR)** in the Middle East, US Secretary of State **Henry Kissinger** launched tireless **Shuttle Diplomacy** aboard his aircraft between Jerusalem, Cairo, and Damascus. Rather than risking a deadlocked multi-nation peace conference, Kissinger pursued practical step-by-step bilateral military pullbacks.\n\n<span class=\"para-ref\">[1.2]</span> Kissinger successfully brokered the **Sinai I Disengagement Agreement** (January 1974), a Golan Heights pullback with Syria (May 1974), and **Sinai II** (September 1975). Israeli forces withdrew away from the canal banks, securing the **reopening of the Suez Canal** under Sadat in June 1975, restoring Egyptian toll revenues, and moving Cairo firmly into partnership with Washington.",
           "sources": [
             {
               "id": "cme_l10_source_a",
@@ -17488,7 +17488,7 @@ const cme_new = {
           "image_alt": "Long queue of American motorists at a Shell petrol station in December 1973 with a red placard on the final car reading Sorry Temporarily Out of Gas during the OPEC oil embargo",
           "caption": "American motorists queue at a Shell station in December 1973 behind a placard reading \"SORRY! TEMPORARILY OUT OF GAS\" during the 1973–74 OPEC Arab oil embargo—the severe economic shock that drove Washington into Henry Kissinger’s urgent Shuttle Diplomacy.",
           "isReversed": false,
-          "content": "<span class=\"para-ref\">[1.1]</span> Shocked by the 1973–74 Arab oil crisis that quadrupled fuel prices and determined to sideline Soviet influence in the Middle East, US Secretary of State **Henry Kissinger** launched tireless **Shuttle Diplomacy** aboard his aircraft between Jerusalem, Cairo, and Damascus. Rather than risking a deadlocked multi-nation peace conference, Kissinger pursued practical step-by-step bilateral military pullbacks.\n\n<span class=\"para-ref\">[1.2]</span> Kissinger successfully brokered the **Sinai I Disengagement Agreement** (January 1974), a Golan Heights pullback with Syria (May 1974), and **Sinai II** (September 1975). Israeli forces withdrew away from the canal banks, enabling Sadat to clear and reopen the Suez Canal in June 1975, restore vital Egyptian toll revenues, and move Cairo firmly into a strategic partnership with Washington."
+          "content": "<span class=\"para-ref\">[1.1]</span> Shocked by the 1973–74 Arab oil crisis that quadrupled fuel prices and determined to sideline the **Soviet Union (USSR)** in the Middle East, US Secretary of State **Henry Kissinger** launched tireless **Shuttle Diplomacy** aboard his aircraft between Jerusalem, Cairo, and Damascus. Rather than risking a deadlocked multi-nation peace conference, Kissinger pursued practical step-by-step bilateral military pullbacks.\n\n<span class=\"para-ref\">[1.2]</span> Kissinger successfully brokered the **Sinai I Disengagement Agreement** (January 1974), a Golan Heights pullback with Syria (May 1974), and **Sinai II** (September 1975). Israeli forces withdrew away from the canal banks, securing the **reopening of the Suez Canal** under Sadat in June 1975, restoring Egyptian toll revenues, and moving Cairo firmly into partnership with Washington."
         },
         {
           "title": "Sadat’s Historic Visit to Jerusalem",
@@ -18607,7 +18607,7 @@ const cme_new = {
           "dates": "1973–1975",
           "question": "How did Kissinger’s shuttle diplomacy achieve pullbacks and reopen Suez?",
           "questionHeading": "How did Kissinger’s shuttle diplomacy achieve pullbacks and reopen Suez?",
-          "prose_hash": "9f33360b51"
+          "prose_hash": "b9ba91540c"
         },
         {
           "step": 2,
@@ -18771,9 +18771,9 @@ const cme_new = {
             "mode": "landscape",
             "pos": "center 45%",
             "stat": "Sinai I & II Pullbacks • Suez Canal Reopens (1975)",
-            "html": "To end the oil crisis and sideline Moscow, US Secretary of State <strong>Henry Kissinger</strong> flew back and forth between capitals. Step-by-step pullbacks (<strong>Sinai I &amp; II</strong>) let Egypt reopen the <strong>Suez Canal</strong>.",
-            "spoken": "How did Egypt and Israel sign their historic 1979 peace treaty? <short pause> To end the oil crisis and sideline Moscow, US Secretary of State Henry Kissinger flew back and forth between capitals. Step-by-step pullbacks ( Sinai I and II ) let Egypt reopen the Suez Canal .",
-            "paired_prose_hash": "9f33360b51",
+            "html": "To end the oil crisis and sideline the <strong>USSR</strong>, <strong>Henry Kissinger’s</strong> shuttle diplomacy brokered <strong>Sinai I &amp; II</strong> pullbacks, securing the 1975 <strong>reopening of the Suez Canal</strong>.",
+            "spoken": "How did Egypt and Israel sign their historic 1979 peace treaty? <short pause> To end the oil crisis and sideline the USSR, Henry Kissinger’s shuttle diplomacy brokered Sinai I and II pullbacks, securing the 1975 reopening of the Suez Canal.",
+            "paired_prose_hash": "b9ba91540c",
             "connective": "How did Egypt and Israel sign their historic 1979 peace treaty?"
           },
           {
@@ -19010,7 +19010,7 @@ const cme_new = {
           ],
           "answer": "Hezbollah ('Party of God')",
           "a": "Hezbollah ('Party of God')",
-          "explanation": "Hezbollah used suicide bombings, roadside ambushes, and guerrilla warfare to harass the IDF and its Christian proxy militia (the South Lebanon Army), eventually forcing Israel's full withdrawal in 2000."
+          "explanation": "Hezbollah used suicide bombings, roadside ambushes, and guerrilla warfare to harass the IDF and its Christian proxy militia (the South Lebanon Army) across Israel's southern Lebanon security zone."
         },
         {
           "stage": 3,
@@ -19406,16 +19406,16 @@ const cme_new = {
           {
             "step": 1,
             "date": "1974–Aug 1982",
-            "title": "The Israeli Invasion of Lebanon",
-            "actor": "Israeli Defence Forces (IDF)",
-            "tag": "Operation Peace for Galilee",
-            "trigger": "Israel launches a major invasion of Lebanon with 76,000 troops, advancing all the way to the capital city, Beirut.",
-            "because": "Israel wanted to destroy PLO bases in southern Lebanon that had been firing rockets and staging attacks across the Israeli border.",
-            "therefore": "Caused heavy destruction in Beirut and forced Yasser Arafat and 14,000 PLO fighters to evacuate Lebanon to exile in Tunisia.",
+            "title": "Israeli Reprisals & Invasion of Lebanon",
+            "actor": "PLO & Israeli Defence Forces (IDF)",
+            "tag": "Operation Litani & Peace for Galilee",
+            "trigger": "After Fatah’s March 1978 Coastal Road Massacre (killing 38 Israelis) provoked Operation Litani and UNIFIL deployment, Abu Nidal gunmen shot Israeli Ambassador Shlomo Argov in London in June 1982.",
+            "because": "PLO activities in southern Lebanon (\"Fatahland\") threatened northern Israel, and Defence Minister Ariel Sharon used the Argov shooting as a pretext for the full-scale invasion of Lebanon (Operation Peace for Galilee).",
+            "therefore": "Sharon laid siege to Beirut for ten weeks until US mediation evacuated Yasser Arafat and 14,000 PLO fighters by sea in August 1982 to Tunis.",
             "connective": "In the chaotic aftermath of the PLO’s departure, a horrific atrocity was carried out against civilians...",
             "exam_link": "Q1 Consequence: Expelled the PLO military leadership from Lebanon, scattering them across the Arab world to distant Tunisia.",
             "question": "How did Arafat’s 1974 UN speech, PLO raids, and 1982 invasion expel the PLO?",
-            "prose_hash": "dcb8155a62"
+            "prose_hash": "23710533a3"
           },
           {
             "step": 2,
@@ -19471,7 +19471,7 @@ const cme_new = {
             "connective": "This diplomatic breakthrough, combined with the end of the Cold War, opened the door to peace talks in the 1990s...",
             "exam_link": "Q1 Consequence: Opened direct diplomatic relations between the US and the PLO, paving the way for the Madrid and Oslo peace talks.",
             "question": "How did Arafat’s 1988 UN speech renouncing terrorism open US-PLO dialogue?",
-            "prose_hash": "90f62a4930"
+            "prose_hash": "adba36ff91"
           }
         ]
       },
@@ -19503,15 +19503,15 @@ const cme_new = {
       ],
       "narrative_blocks": [
         {
-          "title": "The Israeli Invasion of Lebanon",
+          "title": "Israeli Reprisals & Invasion of Lebanon",
           "paragraphs": [
-            "<span class=\"para-ref\">[1.1]</span> In November 1974, PLO Chairman Yasser Arafat addressed the UN General Assembly declaring he carried \"an olive branch and a freedom fighter’s gun,\" winning official UN **observer status** and international recognition for Palestinian self-determination. Simultaneously, PLO cross-border rocket and guerrilla raids from southern Lebanon (**Fatahland**) provoked Israel’s 1978 **Operation Litani** incursion and deployment of **UNIFIL** peacekeepers.",
-            "<span class=\"para-ref\">[1.2]</span> In June 1982, Israeli Defence Minister Ariel Sharon launched **Operation Peace for Galilee**, an armoured invasion intended to push PLO forces 40 kilometres north of Israel’s border. Advancing far beyond cabinet limits, Sharon laid **siege to Beirut** for ten weeks until US mediation evacuated Arafat and 14,000 PLO fighters by sea in August 1982 to distant exile in Tunis."
+            "<span class=\"para-ref\">[1.1]</span> In **Arafat’s speech to the UN** in November 1974, PLO Chairman Yasser Arafat declared he carried \"an olive branch and a freedom fighter’s gun,\" winning official UN **observer status**. Meanwhile, **PLO activities in Lebanon**—cross-border raids from **Fatahland** and Fatah’s March 1978 **Coastal Road Massacre** bus hijacking killing 38 Israelis—provoked **Israeli reprisals**, including 1978 **Operation Litani** and **UNIFIL** peacekeepers.",
+            "<span class=\"para-ref\">[1.2]</span> In June 1982, after **Abu Nidal** gunmen shot Israeli Ambassador **Shlomo Argov** in London, Defence Minister **Ariel Sharon** used the shooting as a pretext for the full-scale **invasion of Lebanon** (**Operation Peace for Galilee**). Initially approved to push PLO forces 40 kilometres north, Sharon advanced beyond cabinet limits and laid **siege to Beirut** for ten weeks until US mediation evacuated Arafat and 14,000 PLO fighters by sea in August 1982 to **Tunis**."
           ],
           "act": 1,
-          "act_title": "Stage 1: The Israeli Invasion of Lebanon — How did Arafat’s 1974 UN speech, PLO raids, and 1982 invasion expel the PLO?",
-          "theme_heading": "The Israeli Invasion of Lebanon",
-          "text": "<span class=\"para-ref\">[1.1]</span> In November 1974, PLO Chairman Yasser Arafat addressed the UN General Assembly declaring he carried \"an olive branch and a freedom fighter’s gun,\" winning official UN **observer status** and international recognition for Palestinian self-determination. Simultaneously, PLO cross-border rocket and guerrilla raids from southern Lebanon (**Fatahland**) provoked Israel’s 1978 **Operation Litani** incursion and deployment of **UNIFIL** peacekeepers.\n\n<span class=\"para-ref\">[1.2]</span> In June 1982, Israeli Defence Minister Ariel Sharon launched **Operation Peace for Galilee**, an armoured invasion intended to push PLO forces 40 kilometres north of Israel’s border. Advancing far beyond cabinet limits, Sharon laid **siege to Beirut** for ten weeks until US mediation evacuated Arafat and 14,000 PLO fighters by sea in August 1982 to distant exile in Tunis.",
+          "act_title": "Stage 1: Israeli Reprisals & Invasion of Lebanon — How did Arafat’s 1974 UN speech, PLO raids, and 1982 invasion expel the PLO?",
+          "theme_heading": "Israeli Reprisals & Invasion of Lebanon",
+          "text": "<span class=\"para-ref\">[1.1]</span> In **Arafat’s speech to the UN** in November 1974, PLO Chairman Yasser Arafat declared he carried \"an olive branch and a freedom fighter’s gun,\" winning official UN **observer status**. Meanwhile, **PLO activities in Lebanon**—cross-border raids from **Fatahland** and Fatah’s March 1978 **Coastal Road Massacre** bus hijacking killing 38 Israelis—provoked **Israeli reprisals**, including 1978 **Operation Litani** and **UNIFIL** peacekeepers.\n\n<span class=\"para-ref\">[1.2]</span> In June 1982, after **Abu Nidal** gunmen shot Israeli Ambassador **Shlomo Argov** in London, Defence Minister **Ariel Sharon** used the shooting as a pretext for the full-scale **invasion of Lebanon** (**Operation Peace for Galilee**). Initially approved to push PLO forces 40 kilometres north, Sharon advanced beyond cabinet limits and laid **siege to Beirut** for ten weeks until US mediation evacuated Arafat and 14,000 PLO fighters by sea in August 1982 to **Tunis**.",
           "sources": [
             {
               "id": "cme_l11_source_a",
@@ -19600,7 +19600,7 @@ const cme_new = {
               }
             ]
           },
-          "content": "<span class=\"para-ref\">[1.1]</span> In November 1974, PLO Chairman Yasser Arafat addressed the UN General Assembly declaring he carried \"an olive branch and a freedom fighter’s gun,\" winning official UN **observer status** and international recognition for Palestinian self-determination. Simultaneously, PLO cross-border rocket and guerrilla raids from southern Lebanon (**Fatahland**) provoked Israel’s 1978 **Operation Litani** incursion and deployment of **UNIFIL** peacekeepers.\n\n<span class=\"para-ref\">[1.2]</span> In June 1982, Israeli Defence Minister Ariel Sharon launched **Operation Peace for Galilee**, an armoured invasion intended to push PLO forces 40 kilometres north of Israel’s border. Advancing far beyond cabinet limits, Sharon laid **siege to Beirut** for ten weeks until US mediation evacuated Arafat and 14,000 PLO fighters by sea in August 1982 to distant exile in Tunis.",
+          "content": "<span class=\"para-ref\">[1.1]</span> In **Arafat’s speech to the UN** in November 1974, PLO Chairman Yasser Arafat declared he carried \"an olive branch and a freedom fighter’s gun,\" winning official UN **observer status**. Meanwhile, **PLO activities in Lebanon**—cross-border raids from **Fatahland** and Fatah’s March 1978 **Coastal Road Massacre** bus hijacking killing 38 Israelis—provoked **Israeli reprisals**, including 1978 **Operation Litani** and **UNIFIL** peacekeepers.\n\n<span class=\"para-ref\">[1.2]</span> In June 1982, after **Abu Nidal** gunmen shot Israeli Ambassador **Shlomo Argov** in London, Defence Minister **Ariel Sharon** used the shooting as a pretext for the full-scale **invasion of Lebanon** (**Operation Peace for Galilee**). Initially approved to push PLO forces 40 kilometres north, Sharon advanced beyond cabinet limits and laid **siege to Beirut** for ten weeks until US mediation evacuated Arafat and 14,000 PLO fighters by sea in August 1982 to **Tunis**.",
           "concept_widget": {
             "type": "profile_deck",
             "eyebrow": "Interactive Escalation Sequence",
@@ -19640,11 +19640,11 @@ const cme_new = {
                 "bg_color": "rgba(217, 119, 6, 0.2)",
                 "metrics": [
                   {
-                    "label": "PLO Base",
-                    "value": "Southern Lebanon (‘Fatahland’)"
+                    "label": "March 1978 Trigger",
+                    "value": "Coastal Road Massacre (38 Killed)"
                   },
                   {
-                    "label": "1978 Incursion",
+                    "label": "1978 Reprisal",
                     "value": "Israel’s Operation Litani"
                   },
                   {
@@ -19652,7 +19652,7 @@ const cme_new = {
                     "value": "UNIFIL Peacekeepers Deployed"
                   }
                 ],
-                "takeaway": "Ongoing PLO cross-border rocket and guerrilla raids from southern Lebanon (‘Fatahland’) provoked Israel’s 1978 Operation Litani incursion and the deployment of UNIFIL peacekeepers."
+                "takeaway": "PLO raids from southern Lebanon (‘Fatahland’) and Fatah’s March 1978 Coastal Road Massacre bus hijacking (killing 38 Israelis) provoked Israel’s Operation Litani and UNIFIL deployment."
               },
               {
                 "tab_label": "3. June 1982 Invasion",
@@ -19663,19 +19663,19 @@ const cme_new = {
                 "bg_color": "rgba(220, 38, 38, 0.2)",
                 "metrics": [
                   {
-                    "label": "Architect",
-                    "value": "Defence Minister Ariel Sharon"
+                    "label": "June 1982 Pretext",
+                    "value": "Ambassador Shlomo Argov Shot (London)"
                   },
                   {
-                    "label": "Stated Limit",
-                    "value": "Push PLO 40 km North of Border"
+                    "label": "Architect & Plan",
+                    "value": "Ariel Sharon • 40 km Stated Limit"
                   },
                   {
                     "label": "Actual Advance",
                     "value": "10-Week Siege of Beirut"
                   }
                 ],
-                "takeaway": "Intended to push PLO forces 40 kilometres north of Israel’s border, Ariel Sharon’s armoured invasion advanced far beyond cabinet limits to lay siege to Beirut for ten weeks."
+                "takeaway": "Using Abu Nidal’s London shooting of Ambassador Shlomo Argov as a pretext, Ariel Sharon launched Operation Peace for Galilee and advanced far beyond cabinet limits to lay siege to Beirut."
               },
               {
                 "tab_label": "4. Tunis Exile (Aug 1982)",
@@ -20011,12 +20011,12 @@ const cme_new = {
           "title": "Arafat Renounces Terrorism & Accepts Resolution 242",
           "paragraphs": [
             "<span class=\"para-ref\">[5.1]</span> After Jordan’s King Hussein dropped his territorial claim to the West Bank in July 1988 and grassroots Intifada leaders and Hamas challenged PLO authority, Yasser Arafat seized the diplomatic initiative. Meeting in Algiers in **November 1988**, the Palestinian National Council proclaimed the **Declaration of Independence of the State of Palestine**, implicitly recognising Israel within a two-state framework.",
-            "<span class=\"para-ref\">[5.2]</span> Addressing a special UN General Assembly session in Geneva on **13 December 1988** (**December 1988**), Arafat explicitly renounced terrorism in all forms and accepted **UN Resolution 242** and Resolution 338, confirming Israel’s right to exist in peace and security. Satisfying strict American conditions prompted President Reagan’s administration to open official diplomatic dialogue with the PLO."
+            "<span class=\"para-ref\">[5.2]</span> Delivering a landmark **speech at the UN** General Assembly session in Geneva on **13 December 1988**, **Arafat’s renunciation of terrorism** in all forms—alongside accepting **UN Resolution 242** and Resolution 338—confirmed Israel’s right to exist in peace and security. Satisfying strict American conditions prompted President Reagan’s administration to open official diplomatic dialogue with the PLO."
           ],
           "act": 5,
           "act_title": "Stage 5: Arafat Renounces Terrorism & Accepts Resolution 242 — How did Arafat’s 1988 UN speech renouncing terrorism open US-PLO dialogue?",
           "theme_heading": "Arafat Renounces Terrorism & Accepts Resolution 242",
-          "text": "<span class=\"para-ref\">[5.1]</span> After Jordan’s King Hussein dropped his territorial claim to the West Bank in July 1988 and grassroots Intifada leaders and Hamas challenged PLO authority, Yasser Arafat seized the diplomatic initiative. Meeting in Algiers in **November 1988**, the Palestinian National Council proclaimed the **Declaration of Independence of the State of Palestine**, implicitly recognising Israel within a two-state framework.\n\n<span class=\"para-ref\">[5.2]</span> Addressing a special UN General Assembly session in Geneva on **13 December 1988** (**December 1988**), Arafat explicitly renounced terrorism in all forms and accepted **UN Resolution 242** and Resolution 338, confirming Israel’s right to exist in peace and security. Satisfying strict American conditions prompted President Reagan’s administration to open official diplomatic dialogue with the PLO.",
+          "text": "<span class=\"para-ref\">[5.1]</span> After Jordan’s King Hussein dropped his territorial claim to the West Bank in July 1988 and grassroots Intifada leaders and Hamas challenged PLO authority, Yasser Arafat seized the diplomatic initiative. Meeting in Algiers in **November 1988**, the Palestinian National Council proclaimed the **Declaration of Independence of the State of Palestine**, implicitly recognising Israel within a two-state framework.\n\n<span class=\"para-ref\">[5.2]</span> Delivering a landmark **speech at the UN** General Assembly session in Geneva on **13 December 1988**, **Arafat’s renunciation of terrorism** in all forms—alongside accepting **UN Resolution 242** and Resolution 338—confirmed Israel’s right to exist in peace and security. Satisfying strict American conditions prompted President Reagan’s administration to open official diplomatic dialogue with the PLO.",
           "sources": [
             {
               "id": "cme_l11_source_e",
@@ -20073,7 +20073,7 @@ const cme_new = {
           "image_alt": "US President Ronald Reagan conferring with Secretary of State George Shultz in 1988",
           "caption": "US Secretary of State George Shultz (left) conferring with President Ronald Reagan in 1988; hours after Arafat explicitly renounced terrorism and accepted UN Resolution 242 in December 1988, Shultz announced the end of Washington’s 13-year diplomatic boycott of the PLO.",
           "isReversed": false,
-          "content": "<span class=\"para-ref\">[5.1]</span> After Jordan’s King Hussein dropped his territorial claim to the West Bank in July 1988 and grassroots Intifada leaders and Hamas challenged PLO authority, Yasser Arafat seized the diplomatic initiative. Meeting in Algiers in **November 1988**, the Palestinian National Council proclaimed the **Declaration of Independence of the State of Palestine**, implicitly recognising Israel within a two-state framework.\n\n<span class=\"para-ref\">[5.2]</span> Addressing a special UN General Assembly session in Geneva on **13 December 1988** (**December 1988**), Arafat explicitly renounced terrorism in all forms and accepted **UN Resolution 242** and Resolution 338, confirming Israel’s right to exist in peace and security. Satisfying strict American conditions prompted President Reagan’s administration to open official diplomatic dialogue with the PLO."
+          "content": "<span class=\"para-ref\">[5.1]</span> After Jordan’s King Hussein dropped his territorial claim to the West Bank in July 1988 and grassroots Intifada leaders and Hamas challenged PLO authority, Yasser Arafat seized the diplomatic initiative. Meeting in Algiers in **November 1988**, the Palestinian National Council proclaimed the **Declaration of Independence of the State of Palestine**, implicitly recognising Israel within a two-state framework.\n\n<span class=\"para-ref\">[5.2]</span> Delivering a landmark **speech at the UN** General Assembly session in Geneva on **13 December 1988**, **Arafat’s renunciation of terrorism** in all forms—alongside accepting **UN Resolution 242** and Resolution 338—confirmed Israel’s right to exist in peace and security. Satisfying strict American conditions prompted President Reagan’s administration to open official diplomatic dialogue with the PLO."
         }
       ],
       "draw_tasks": [],
@@ -20361,7 +20361,7 @@ const cme_new = {
               ],
               "vocab_bank": [
                 "1974 UN Observer Status",
-                "Operation Litani (1978) & UNIFIL",
+                "Israeli Reprisals & Operation Litani (1978)",
                 "Operation Peace for Galilee (1982)",
                 "Sabra & Shatila Massacre (Sept 1982)",
                 "Kahan Commission & Hezbollah",
@@ -20483,7 +20483,7 @@ const cme_new = {
           ],
           "answer": "The IDF launched a major invasion of southern Lebanon with 25,000 troops, pushing PLO forces north of the Litani River and prompting the deployment of UN peacekeepers (UNIFIL).",
           "a": "The IDF launched a major invasion of southern Lebanon with 25,000 troops, pushing PLO forces north of the Litani River and prompting the deployment of UN peacekeepers (UNIFIL).",
-          "explanation": "Operation Litani aimed to clear a 20-mile security belt south of the Litani River. While PLO fighters withdrew north to avoid battle, the UN Security Council passed Resolution 425, establishing UNIFIL peacekeepers and creating the Israeli-allied South Lebanon Army (SLA) proxy militia."
+          "explanation": "As part of Israeli reprisals against PLO cross-border raids, Operation Litani aimed to clear a 20-mile security belt south of the Litani River. While PLO fighters withdrew north to avoid battle, the UN Security Council passed Resolution 425, establishing UNIFIL peacekeepers and creating the Israeli-allied South Lebanon Army (SLA) proxy militia."
         },
         {
           "question": "In a narrative account analysing the trigger for the invasion of Lebanon (1982), which event provided the immediate pretext for Israeli military action?",
@@ -20792,15 +20792,15 @@ const cme_new = {
             },
             {
               "term": "Fatahland",
-              "clue": "PLO cross-border raids from southern Lebanon (\"Fatahland\") provoked Israel’s 1978 Operation Litani and deployment of UNIFIL peacekeepers."
+              "clue": "PLO cross-border raids from southern Lebanon (\"Fatahland\") provoked Israeli reprisals, including Israel’s 1978 Operation Litani and deployment of UNIFIL peacekeepers."
             },
             {
               "term": "Operation Peace for Galilee",
               "clue": "In June 1982, Ariel Sharon launched Operation Peace for Galilee, besieging Beirut and forcing 14,000 PLO fighters to evacuate by sea to Tunis."
             }
           ],
-          "model_sentence": "Aiming to eradicate Palestinian guerrilla bases in southern Lebanon known as <strong>Fatahland</strong>, Israel launched <strong>Operation Litani</strong> in 1978, prompting the deployment of UN peacekeepers under <strong>UNIFIL</strong>.",
-          "title": "The Israeli Invasion of Lebanon",
+          "model_sentence": "After <strong>Arafat’s speech to the UN</strong> in 1974, PLO raids from southern Lebanon (<strong>Fatahland</strong>) provoked <strong>Israeli reprisals</strong> including 1978 <strong>Operation Litani</strong> and the 1982 invasion.",
+          "title": "Israeli Reprisals & Invasion of Lebanon",
           "dates": "1974–Aug 1982",
           "key_terms": [
             {
@@ -20809,7 +20809,7 @@ const cme_new = {
             },
             {
               "term": "Fatahland",
-              "clue": "PLO cross-border raids from southern Lebanon (\"Fatahland\") provoked Israel’s 1978 Operation Litani and deployment of UNIFIL peacekeepers."
+              "clue": "PLO cross-border raids from southern Lebanon (\"Fatahland\") provoked Israeli reprisals, including Israel’s 1978 Operation Litani and deployment of UNIFIL peacekeepers."
             },
             {
               "term": "Operation Peace for Galilee",
@@ -20818,7 +20818,7 @@ const cme_new = {
           ],
           "question": "How did Arafat’s 1974 UN speech, PLO raids, and 1982 invasion expel the PLO?",
           "questionHeading": "How did Arafat’s 1974 UN speech, PLO raids, and 1982 invasion expel the PLO?",
-          "prose_hash": "dcb8155a62"
+          "prose_hash": "23710533a3"
         },
         {
           "step": 2,
@@ -20978,7 +20978,7 @@ const cme_new = {
           ],
           "question": "How did Arafat’s 1988 UN speech renouncing terrorism open US-PLO dialogue?",
           "questionHeading": "How did Arafat’s 1988 UN speech renouncing terrorism open US-PLO dialogue?",
-          "prose_hash": "90f62a4930"
+          "prose_hash": "adba36ff91"
         }
       ],
       "slug": "kt3.2-lebanon-intifada",
@@ -21018,15 +21018,15 @@ const cme_new = {
         "cards": [
           {
             "badge": "Stage 1",
-            "heading": "1982 Invasion of Lebanon",
+            "heading": "Israeli Reprisals & 1982 Invasion",
             "date": "1974–Aug 1982",
             "img": "/units/cme_new/assets/sharon_beirut_1982.jpg",
             "mode": "landscape",
             "pos": "center 30%",
             "stat": "14,000 PLO Fighters Evacuated From Beirut to Tunis",
-            "html": "To crush cross-border PLO attacks from southern Lebanon, Defence Minister <strong>Ariel Sharon</strong> launched <strong>Operation Peace for Galilee</strong> in June 1982, besieging Beirut until Arafat evacuated to <strong>Tunis</strong>.",
-            "spoken": "How did Lebanon and the First Intifada reshape the conflict? <short pause> To crush cross-border PLO attacks from southern Lebanon, Defence Minister Ariel Sharon launched Operation Peace for Galilee in June 1982, besieging Beirut until Arafat evacuated to Tunis .",
-            "paired_prose_hash": "dcb8155a62",
+            "html": "After <strong>Arafat’s 1974 speech to the UN</strong> and PLO Lebanon raids, the 1978 <strong>Coastal Road Massacre</strong> sparked <strong>Israeli reprisals</strong> (<strong>Operation Litani</strong>), while shooting Ambassador <strong>Argov</strong> triggered <strong>Sharon’s 1982 invasion of Lebanon</strong>, besieging Beirut until evacuation to <strong>Tunis</strong>.",
+            "spoken": "How did Lebanon and the First Intifada reshape the conflict? <short pause> After Arafat’s 1974 speech to the UN and PLO raids in Lebanon, Fatah’s 1978 Coastal Road Massacre sparked Israeli reprisals in Operation Litani, while Abu Nidal’s London shooting of Ambassador Shlomo Argov triggered Ariel Sharon’s 1982 invasion of Lebanon, besieging Beirut until the PLO evacuated to Tunis.",
+            "paired_prose_hash": "23710533a3",
             "connective": "How did Lebanon and the First Intifada reshape the conflict?"
           },
           {
@@ -21074,9 +21074,9 @@ const cme_new = {
             "img": "/images/cme_arafat_strasbourg_1988.jpg",
             "mode": "contain",
             "stat": "PLO Accepts UN Resolution 242 & Two-State Solution",
-            "html": "After Jordan dropped its West Bank claim, <strong>Yasser Arafat</strong> seized the moment in <strong>late 1988</strong>—formally <strong>renouncing terrorism</strong> and accepting <strong>UN Resolution 242</strong> and Israel’s right to exist.",
-            "spoken": "Pressure from the Intifada pushed Arafat into a historic pivot. <short pause> After Jordan dropped its West Bank claim, Yasser Arafat seized the moment in late 1988, formally renouncing terrorism and accepting UN Resolution 242 and Israel’s right to exist.",
-            "paired_prose_hash": "90f62a4930",
+            "html": "After Jordan dropped its West Bank claim, <strong>Arafat’s renunciation of terrorism in a 1988 speech at the UN</strong> accepted <strong>Resolution 242</strong> and Israel’s right to exist.",
+            "spoken": "Pressure from the Intifada pushed Arafat into a historic pivot. <short pause> After Jordan dropped its West Bank claim, Arafat’s renunciation of terrorism in a 1988 speech at the UN accepted Resolution 242 and Israel’s right to exist.",
+            "paired_prose_hash": "adba36ff91",
             "connective": "Pressure from the Intifada pushed Arafat into a historic pivot."
           },
           {
@@ -21392,7 +21392,7 @@ const cme_new = {
             "connective": "Frustrated by stalled public talks, Israeli and Palestinian negotiators opened a secret backchannel in Europe...",
             "exam_link": "Q2 Narrative Account: Brought Israeli and Arab leaders together for the first time, paving the way for secret bilateral negotiations.",
             "question": "How did the Soviet collapse and 1991 Gulf War lead to the Madrid talks?",
-            "prose_hash": "3cd464492f"
+            "prose_hash": "0e47f26197"
           },
           {
             "step": 2,
@@ -21445,7 +21445,7 @@ const cme_new = {
             "trigger": "Following deadly suicide bombings by Hamas and violent protests by right-wing Israelis, Prime Minister Yitzhak Rabin is assassinated by a Jewish extremist in Tel Aviv.",
             "because": "Extremists on both sides rejected any compromise, viewing the peace process as a betrayal of their national and religious land.",
             "therefore": "Dealt a devastating psychological blow to the peace process, shattering Israeli confidence and slowing down the implementation of future peace agreements.",
-            "connective": "Rabin’s murder and continued terror attacks led to the election of right-wing leader Benjamin Netanyahu in 1996, stalling the Oslo process.",
+            "connective": "Rabin’s murder on 4 November 1995 and extremist bus bombings fractured public trust and deeply polarised Israeli society, stalling Oslo II momentum.",
             "exam_link": "Q1 Consequence: Shattered the momentum of the Oslo peace process and deepened division within Israeli society.",
             "question": "How did suicide bombings, Hebron violence, and Rabin’s murder stall peace?",
             "prose_hash": "ce2a6fdd9d"
@@ -21482,13 +21482,13 @@ const cme_new = {
         {
           "title": "The Madrid Peace Conference",
           "paragraphs": [
-            "<span class=\"para-ref\">[1.1]</span> The **collapse of the Soviet Union** in 1991 ended superpower arms, diplomatic vetoes, and financial patronage for Arab confrontation states, while decisive US victory in the **1990–1991 Gulf War** left Washington with unrivalled influence across the Middle East. Crucially, Yasser Arafat’s grave miscalculation in backing Iraq’s **Saddam Hussein** alienated Saudi Arabia and Kuwait, costing the PLO hundreds of millions of dollars in vital Gulf Arab funding and making Arafat desperate for diplomacy.",
+            "<span class=\"para-ref\">[1.1]</span> Following Arafat’s 1988 UN speech, the **end of the Cold War** and **collapse of the Soviet Union (USSR)** in 1991 ended superpower arms, vetoes, and funding for Arab hardliners, while US victory in the **1990–1991 Gulf War** reshaped superpower policies in the Middle East. Crucially, Arafat’s grave miscalculation in backing Iraq’s **Saddam Hussein** alienated Saudi Arabia and Kuwait, bankrupting the PLO and making Arafat desperate for diplomacy.",
             "<span class=\"para-ref\">[1.2]</span> US President George H. W. Bush and Secretary of State James Baker used this post-war leverage to co-sponsor the **Madrid Peace Conference** in **October 1991**. Bringing Israeli, Syrian, Lebanese, and joint Jordanian-Palestinian delegations face to face broke forty-three years of diplomatic taboos, even though Prime Minister Yitzhak Shamir’s hardline Likud stance stalled immediate territorial deals."
           ],
           "act": 1,
-          "act_title": "Stage 1: The Madrid Peace Conference — How did the end of the Cold War and 1991 Gulf War lead to Madrid talks?",
+          "act_title": "Stage 1: The Madrid Peace Conference — How did the Soviet collapse and 1991 Gulf War lead to the Madrid talks?",
           "theme_heading": "The Madrid Peace Conference",
-          "text": "<span class=\"para-ref\">[1.1]</span> The **collapse of the Soviet Union** in 1991 ended superpower arms, diplomatic vetoes, and financial patronage for Arab confrontation states, while decisive US victory in the **1990–1991 Gulf War** left Washington with unrivalled influence across the Middle East. Crucially, Yasser Arafat’s grave miscalculation in backing Iraq’s **Saddam Hussein** alienated Saudi Arabia and Kuwait, costing the PLO hundreds of millions of dollars in vital Gulf Arab funding and making Arafat desperate for diplomacy.\n\n<span class=\"para-ref\">[1.2]</span> US President George H. W. Bush and Secretary of State James Baker used this post-war leverage to co-sponsor the **Madrid Peace Conference** in **October 1991**. Bringing Israeli, Syrian, Lebanese, and joint Jordanian-Palestinian delegations face to face broke forty-three years of diplomatic taboos, even though Prime Minister Yitzhak Shamir’s hardline Likud stance stalled immediate territorial deals.",
+          "text": "<span class=\"para-ref\">[1.1]</span> Following Arafat’s 1988 UN speech, the **end of the Cold War** and **collapse of the Soviet Union (USSR)** in 1991 ended superpower arms, vetoes, and funding for Arab hardliners, while US victory in the **1990–1991 Gulf War** reshaped superpower policies in the Middle East. Crucially, Arafat’s grave miscalculation in backing Iraq’s **Saddam Hussein** alienated Saudi Arabia and Kuwait, bankrupting the PLO and making Arafat desperate for diplomacy.\n\n<span class=\"para-ref\">[1.2]</span> US President George H. W. Bush and Secretary of State James Baker used this post-war leverage to co-sponsor the **Madrid Peace Conference** in **October 1991**. Bringing Israeli, Syrian, Lebanese, and joint Jordanian-Palestinian delegations face to face broke forty-three years of diplomatic taboos, even though Prime Minister Yitzhak Shamir’s hardline Likud stance stalled immediate territorial deals.",
           "sources": [
             {
               "id": "cme_l12_source_a",
@@ -21569,14 +21569,14 @@ const cme_new = {
                 "color": "#4f46e5",
                 "label": "Jerusalem (Deferred)",
                 "badge": "Final-Status Issue",
-                "date": "Deferred to 1996–99",
+                "date": "Deferred 5 Years (Oslo I)",
                 "title": "Jerusalem: Deferred to Permanent Final-Status Talks",
                 "details": "Both Oslo I and Oslo II excluded Jerusalem from PNA jurisdiction, postponing its status—alongside Palestinian refugees, permanent borders, settlements, and water—to final-status talks due within five years. Weeks after Oslo II, an Israeli extremist assassinated Prime Minister Yitzhak Rabin on 4 November 1995.",
                 "hinge": "Why was deferring Jerusalem essential to reaching an interim deal in 1993–95 yet vulnerable once extremists on both sides attacked the peace process?"
               }
             ]
           },
-          "content": "<span class=\"para-ref\">[1.1]</span> The **collapse of the Soviet Union** in 1991 ended superpower arms, diplomatic vetoes, and financial patronage for Arab confrontation states, while decisive US victory in the **1990–1991 Gulf War** left Washington with unrivalled influence across the Middle East. Crucially, Yasser Arafat’s grave miscalculation in backing Iraq’s **Saddam Hussein** alienated Saudi Arabia and Kuwait, costing the PLO hundreds of millions of dollars in vital Gulf Arab funding and making Arafat desperate for diplomacy.\n\n<span class=\"para-ref\">[1.2]</span> US President George H. W. Bush and Secretary of State James Baker used this post-war leverage to co-sponsor the **Madrid Peace Conference** in **October 1991**. Bringing Israeli, Syrian, Lebanese, and joint Jordanian-Palestinian delegations face to face broke forty-three years of diplomatic taboos, even though Prime Minister Yitzhak Shamir’s hardline Likud stance stalled immediate territorial deals.",
+          "content": "<span class=\"para-ref\">[1.1]</span> Following Arafat’s 1988 UN speech, the **end of the Cold War** and **collapse of the Soviet Union (USSR)** in 1991 ended superpower arms, vetoes, and funding for Arab hardliners, while US victory in the **1990–1991 Gulf War** reshaped superpower policies in the Middle East. Crucially, Arafat’s grave miscalculation in backing Iraq’s **Saddam Hussein** alienated Saudi Arabia and Kuwait, bankrupting the PLO and making Arafat desperate for diplomacy.\n\n<span class=\"para-ref\">[1.2]</span> US President George H. W. Bush and Secretary of State James Baker used this post-war leverage to co-sponsor the **Madrid Peace Conference** in **October 1991**. Bringing Israeli, Syrian, Lebanese, and joint Jordanian-Palestinian delegations face to face broke forty-three years of diplomatic taboos, even though Prime Minister Yitzhak Shamir’s hardline Likud stance stalled immediate territorial deals.",
           "concept_widget": {
             "type": "power_seesaw",
             "eyebrow": "Interactive Diplomatic Leverage",
@@ -21990,17 +21990,17 @@ const cme_new = {
         },
         {
           "stage": 3,
-          "question": "On what historic date was the Declaration of Principles (Oslo I Accord) signed on the South Lawn of the White House, sealed by an iconic handshake between Rabin and Arafat?",
-          "q": "On what historic date was the Declaration of Principles (Oslo I Accord) signed on the South Lawn of the White House, sealed by an iconic handshake between Rabin and Arafat?",
+          "question": "What landmark diplomatic step did Israel and the PLO take just days before signing the September 1993 Oslo I Accord?",
+          "q": "What landmark diplomatic step did Israel and the PLO take just days before signing the September 1993 Oslo I Accord?",
           "options": [
-            "4 November 1995",
-            "26 March 1979",
-            "13 September 1993",
-            "28 September 1995"
+            "They agreed to divide Jerusalem into two sovereign capitals",
+            "They exchanged formal letters of mutual recognition",
+            "They dismantled all Israeli settlements in the West Bank",
+            "They signed a joint mutual defence treaty with Jordan"
           ],
-          "answer": "13 September 1993",
-          "a": "13 September 1993",
-          "explanation": "Hosted by US President Bill Clinton, the two lifelong enemies shook hands before 3,000 dignitaries. Rabin declared: 'We who have fought against you, the Palestinians, we say to you today in a loud and a clear voice: Enough of blood and tears.'"
+          "answer": "They exchanged formal letters of mutual recognition",
+          "a": "They exchanged formal letters of mutual recognition",
+          "explanation": "Days before the White House ceremony, Israel recognised the PLO as the representative of the Palestinian people and the PLO recognised Israel's right to exist, enabling the Oslo I Accord."
         },
         {
           "stage": 3,
@@ -22130,17 +22130,17 @@ const cme_new = {
         },
         {
           "stage": 5,
-          "question": "On what date was Israeli Prime Minister Yitzhak Rabin assassinated after a peace rally in Tel Aviv?",
-          "q": "On what date was Israeli Prime Minister Yitzhak Rabin assassinated after a peace rally in Tel Aviv?",
+          "question": "What was the main political consequence of Prime Minister Yitzhak Rabin's assassination in November 1995?",
+          "q": "What was the main political consequence of Prime Minister Yitzhak Rabin's assassination in November 1995?",
           "options": [
-            "4 November 1995",
-            "13 September 1993",
-            "26 October 1994",
-            "6 October 1981"
+            "It accelerated the immediate creation of an independent Palestinian state",
+            "It led Jordan to cancel its 1994 peace treaty with Israel",
+            "It dealt a severe blow to the Oslo peace process and deepened Israeli political divisions",
+            "It prompted the United Nations to take over administration of Gaza"
           ],
-          "answer": "4 November 1995",
-          "a": "4 November 1995",
-          "explanation": "On 4 November 1995, Prime Minister Yitzhak Rabin was shot dead after addressing a major pro-Oslo peace rally in Tel Aviv."
+          "answer": "It dealt a severe blow to the Oslo peace process and deepened Israeli political divisions",
+          "a": "It dealt a severe blow to the Oslo peace process and deepened Israeli political divisions",
+          "explanation": "Rabin's murder by an Israeli extremist dealt a catastrophic psychological blow to the peace process, slowing Oslo's implementation and deepening divisions within Israeli society."
         },
         {
           "stage": 5,
@@ -22231,8 +22231,8 @@ const cme_new = {
             "marks": 4,
             "question": "1. Explain one consequence of the assassination of Yitzhak Rabin on 4 November 1995. [4 marks]",
             "prompt": "State one clear consequence -> support with a specific date, name, or fact -> explain what this directly led to.",
-            "examiner_tip": "Remember that Prime Minister Yitzhak Rabin was assassinated by an Israeli extremist (Yigal Amir), not a Palestinian militant; explain how his death derailed Oslo momentum ahead of Likud's 1996 election win.",
-            "model": "One consequence of Yitzhak Rabin’s assassination on 4 November 1995 was the derailment of Oslo momentum and the election of a hardline Likud government. After extremist Yigal Amir murdered Rabin in Tel Aviv amid Hamas bus bombings, Benjamin Netanyahu won the May 1996 election and halted further territorial handovers to the PNA.",
+            "examiner_tip": "Remember that Prime Minister Yitzhak Rabin was assassinated by an Israeli extremist (Yigal Amir), not a Palestinian militant; keep your consequence strictly within 1995 by explaining how Rabin's murder polarised Israeli society and stalled Oslo II momentum.",
+            "model": "One consequence of Yitzhak Rabin’s assassination on 4 November 1995 was profound political polarisation in Israel that stalled momentum behind Oslo II. After Jewish extremist Yigal Amir shot Rabin following a Tel Aviv peace rally, Israel lost the trusted war-hero Prime Minister capable of carrying public support for further West Bank redeployments.",
             "model_tiers": {
               "tier_1m": {
                 "title": "1/4 Assertion",
@@ -22245,20 +22245,20 @@ const cme_new = {
                 "title": "2/4 Basic Knowledge",
                 "score": "2 / 4 Marks",
                 "level": "Level 1 Top (Supported Statement)",
-                "text": "One consequence of Rabin's assassination was that an Israeli extremist named Yigal Amir shot him in Tel Aviv, which led to Benjamin Netanyahu being elected Prime Minister in 1996.",
-                "verdict": "AO2 Level 1 (1 mark) • AO1 Level 1 (1 mark). Identifies Yigal Amir and Netanyahu's 1996 election, but lacks causal explanation of how this halted the peace process."
+                "text": "One consequence of Rabin's assassination on 4 November 1995 was that Israeli extremist Yigal Amir shot him after a Tel Aviv peace rally, shocking Israel and deeply dividing voters over Oslo II.",
+                "verdict": "AO2 Level 1 (1 mark) • AO1 Level 1 (1 mark). Identifies Yigal Amir and the November 1995 Tel Aviv rally, needing causal explanation of how losing Rabin fractured public trust and slowed Oslo II implementation."
               },
               "tier_4m": {
                 "title": "4/4 Grade 9 Exam ★",
                 "score": "4 / 4 Marks",
                 "level": "Level 2 Top (Pearson Exam Standard)",
                 "badge": "Edexcel Benchmark",
-                "text": "One consequence of Yitzhak Rabin’s assassination on 4 November 1995 was the derailment of Oslo momentum and the election of a hardline Likud government. After extremist Yigal Amir murdered Rabin in Tel Aviv amid Hamas bus bombings, Benjamin Netanyahu won the May 1996 election and halted further territorial handovers to the PNA.",
-                "verdict": "AO2 Level 2: 2m • AO1 Level 2: 2m (Option A: 52w • Option B: 52w). Each exemplar earns full 4/4 marks in two crisp sentences by developing ONE focused consequence with precise factual detail—either Rabin’s murder by Yigal Amir and Hamas bombings leading to Netanyahu’s May 1996 election and halted handovers (Option A) or deep Israeli domestic polarisation slowing Oslo implementation (Option B)—rather than wasting exam time listing multiple consequences.",
+                "text": "One consequence of Yitzhak Rabin’s assassination on 4 November 1995 was profound political polarisation in Israel that stalled momentum behind Oslo II. After Jewish extremist Yigal Amir shot Rabin following a Tel Aviv peace rally, Israel lost the trusted war-hero Prime Minister capable of carrying public support for further West Bank redeployments.",
+                "verdict": "AO2 Level 2: 2m • AO1 Level 2: 2m (Option A: 52w • Option B: 52w). Each exemplar earns full 4/4 marks in two crisp sentences by developing ONE focused 1995 consequence with precise factual detail—either losing the war-hero Prime Minister trusted to implement Oslo II West Bank redeployments (Option A) or deepening Israeli domestic polarisation after Yigal Amir’s attack (Option B)—rather than listing multiple consequences.",
                 "options": [
                   {
                     "label": "Option A (4/4): Slowdown of Oslo Peace Process",
-                    "text": "One consequence of Yitzhak Rabin’s assassination on 4 November 1995 was the derailment of Oslo momentum and the election of a hardline Likud government. After extremist Yigal Amir murdered Rabin in Tel Aviv amid Hamas bus bombings, Benjamin Netanyahu won the May 1996 election and halted further territorial handovers to the PNA."
+                    "text": "One consequence of Yitzhak Rabin’s assassination on 4 November 1995 was profound political polarisation in Israel that stalled momentum behind Oslo II. After Jewish extremist Yigal Amir shot Rabin following a Tel Aviv peace rally, Israel lost the trusted war-hero Prime Minister capable of carrying public support for further West Bank redeployments."
                   },
                   {
                     "label": "Option B (4/4): Deepened Polarisation in Israel",
@@ -22785,33 +22785,33 @@ const cme_new = {
           ],
           "answer": "Explosive disputes over permanent borders, Israeli settlements, the status of Jerusalem, and the right of return for Palestinian refugees were postponed to final-status talks, allowing tensions to fester.",
           "a": "Explosive disputes over permanent borders, Israeli settlements, the status of Jerusalem, and the right of return for Palestinian refugees were postponed to final-status talks, allowing tensions to fester.",
-          "explanation": "By postponing the hardest core issues to permanent status talks (scheduled to conclude by 1999), the Oslo framers hoped that confidence built during the interim phase would make compromise easier. Instead, continued settlement construction and terrorist attacks destroyed public trust."
+          "explanation": "By postponing the hardest core issues to five-year permanent status talks, the Oslo framers hoped that confidence built during the interim phase would make compromise easier. Instead, continued settlement construction and terrorist attacks destroyed public trust by late 1995."
         },
         {
           "question": "Explain one consequence of the assassination of Prime Minister Yitzhak Rabin in Tel Aviv on 4 November 1995.",
           "q": "Explain one consequence of the assassination of Prime Minister Yitzhak Rabin in Tel Aviv on 4 November 1995.",
           "options": [
             "The Israeli parliament voted to dissolve the state and join the European Economic Community.",
-            "Rabin was murdered by right-wing Jewish extremist Yigal Amir at a peace rally, devastating the Israeli peace camp and contributing to Benjamin Netanyahu’s election victory in May 1996.",
+            "Rabin was murdered by right-wing Jewish extremist Yigal Amir after a Tel Aviv peace rally on 4 November 1995, devastating the Israeli peace camp and stalling Oslo II momentum.",
             "The United States dispatched 50,000 troops to establish martial law across all major Israeli cities.",
             "Yasser Arafat immediately broke all peace agreements and launched a conventional war against Israel."
           ],
-          "answer": "Rabin was murdered by right-wing Jewish extremist Yigal Amir at a peace rally, devastating the Israeli peace camp and contributing to Benjamin Netanyahu’s election victory in May 1996.",
-          "a": "Rabin was murdered by right-wing Jewish extremist Yigal Amir at a peace rally, devastating the Israeli peace camp and contributing to Benjamin Netanyahu’s election victory in May 1996.",
+          "answer": "Rabin was murdered by right-wing Jewish extremist Yigal Amir after a Tel Aviv peace rally on 4 November 1995, devastating the Israeli peace camp and stalling Oslo II momentum.",
+          "a": "Rabin was murdered by right-wing Jewish extremist Yigal Amir after a Tel Aviv peace rally on 4 November 1995, devastating the Israeli peace camp and stalling Oslo II momentum.",
           "explanation": "Following a massive peace rally in the Kings of Israel Square, 25-year-old religious law student Yigal Amir shot Rabin at point-blank range, declaring he acted on God’s orders to stop the handover of land. The assassination traumatized Israeli democracy and critically weakened the peace momentum."
         },
         {
-          "question": "In a narrative account analysing attempts at a solution between 1988 and 1995, why did the peace process stall by 1996?",
-          "q": "In a narrative account analysing attempts at a solution between 1988 and 1995, why did the peace process stall by 1996?",
+          "question": "In a narrative account analysing attempts at a solution between 1988 and 1995, why had the peace process stalled by late 1995?",
+          "q": "In a narrative account analysing attempts at a solution between 1988 and 1995, why had the peace process stalled by late 1995?",
           "options": [
             "The United Nations Security Council voted to expel both Israel and Palestine from international diplomacy.",
             "The Soviet Union re-emerged and launched nuclear strikes against all diplomatic summits in Europe.",
-            "Hamas suicide bombings eroded Israeli public trust, Jewish settlement expansion continued in Area C, and the assassination of Rabin brought a skeptical Likud government to power under Netanyahu.",
+            "Hamas suicide bombings eroded Israeli public trust, Jewish settlement control continued across Area C under Oslo II, and the November 1995 assassination of Rabin deeply polarised Israel.",
             "The Palestinian Authority declared bankruptcy and surrendered all civil powers to the Kingdom of Jordan."
           ],
-          "answer": "Hamas suicide bombings eroded Israeli public trust, Jewish settlement expansion continued in Area C, and the assassination of Rabin brought a skeptical Likud government to power under Netanyahu.",
-          "a": "Hamas suicide bombings eroded Israeli public trust, Jewish settlement expansion continued in Area C, and the assassination of Rabin brought a skeptical Likud government to power under Netanyahu.",
-          "explanation": "The peace process was undermined by violent rejectionists on both sides. A devastating wave of Hamas bus bombings in early 1996 killed dozens of Israeli civilians, playing directly into the hands of Likud leader Benjamin Netanyahu, who narrowly defeated Shimon Peres on a campaign promising security over concessions."
+          "answer": "Hamas suicide bombings eroded Israeli public trust, Jewish settlement control continued across Area C under Oslo II, and the November 1995 assassination of Rabin deeply polarised Israel.",
+          "a": "Hamas suicide bombings eroded Israeli public trust, Jewish settlement control continued across Area C under Oslo II, and the November 1995 assassination of Rabin deeply polarised Israel.",
+          "explanation": "The peace process was undermined by violent rejectionists on both sides between 1994 and November 1995: Baruch Goldstein's Hebron massacre, Hamas suicide bus bombings in Tel Aviv and Jerusalem, and Yigal Amir's assassination of Prime Minister Rabin shattered mutual trust over Oslo II."
         },
         {
           "question": "In a narrative account analysing attempts at a solution (1988–1995), which sequence of three stages correctly explains how the peace process unfolded?",
@@ -22824,7 +22824,7 @@ const cme_new = {
           ],
           "answer": "Arafat renounced terrorism in 1988; the end of the Cold War and Gulf War led to the 1993 Oslo Accords and PNA creation; and Rabin’s assassination in 1995 halted momentum toward a permanent two-state solution.",
           "a": "Arafat renounced terrorism in 1988; the end of the Cold War and Gulf War led to the 1993 Oslo Accords and PNA creation; and Rabin’s assassination in 1995 halted momentum toward a permanent two-state solution.",
-          "explanation": "A high-scoring narrative account connects the PLO’s historic 1988 renunciation of terrorism to the geopolitical shifts of 1989–91 (Cold War collapse and Gulf War). This paved the way for the breakthrough 1993 Oslo Accords and PNA self-rule, before political assassinations and extremist violence derailed the process by 1996."
+          "explanation": "A high-scoring narrative account connects the PLO’s historic 1988 renunciation of terrorism to the geopolitical shifts of 1989–91 (the end of the Cold War and the Gulf War). This paved the way for the breakthrough 1993 Oslo Accords and PNA self-rule, before extremist bombings and Rabin's November 1995 assassination stalled peace momentum."
         }
       ],
       "exit_ticket": {
@@ -22949,7 +22949,7 @@ const cme_new = {
           "step": 1,
           "date": "1989–Oct 1991",
           "heading": "How did the Soviet collapse and 1991 Gulf War lead to the Madrid talks?",
-          "focus_clue": "How did the end of the Cold War and 1991 Gulf War lead to Madrid talks?",
+          "focus_clue": "How did the Soviet collapse and 1991 Gulf War lead to the Madrid talks?",
           "words": [
             {
               "term": "collapse of the Soviet Union",
@@ -22969,7 +22969,7 @@ const cme_new = {
           "dates": "1989–Oct 1991",
           "question": "How did the Soviet collapse and 1991 Gulf War lead to the Madrid talks?",
           "questionHeading": "How did the Soviet collapse and 1991 Gulf War lead to the Madrid talks?",
-          "prose_hash": "3cd464492f"
+          "prose_hash": "0e47f26197"
         },
         {
           "step": 2,
@@ -23141,9 +23141,9 @@ const cme_new = {
             "mode": "landscape",
             "pos": "center 35%",
             "stat": "USSR Collapses + Arafat Bankrupted Backing Iraq",
-            "html": "Soviet collapse and Arafat’s costly mistake backing <strong>Saddam Hussein</strong> in the 1991 Gulf War left the PLO broke. The USA brought Israel and Arab delegates face to face at <strong>Madrid</strong>.",
-            "spoken": "Why did the Oslo peace breakthrough collapse into violence by 1995? <short pause> Soviet collapse and Arafat’s costly mistake backing Saddam Hussein in the 1991 Gulf War left the PLO broke. The USA brought Israel and Arab delegates face to face at Madrid .",
-            "paired_prose_hash": "3cd464492f",
+            "html": "The <strong>end of the Cold War</strong> and <strong>1991 Gulf War</strong> drove changing <strong>superpower policies in the Middle East</strong>: with the USSR gone and Arafat broke, Washington convened <strong>Madrid</strong> talks.",
+            "spoken": "Why did the Oslo peace breakthrough collapse into violence by 1995? <short pause> The end of the Cold War and 1991 Gulf War drove changing superpower policies in the Middle East: with the USSR gone and Arafat broke, Washington convened Madrid talks.",
+            "paired_prose_hash": "0e47f26197",
             "connective": "Why did the Oslo peace breakthrough collapse into violence by 1995?"
           },
           {
@@ -23191,8 +23191,8 @@ const cme_new = {
               ]
             },
             "stat": "Jordan Signs Full Peace (1994) • West Bank Divided",
-            "html": "Jordan’s <strong>King Hussein</strong> signed a full peace treaty in <strong>1994</strong>. In September 1995, <strong>Oslo II</strong> split the West Bank into patchwork <strong>Areas A, B, and C</strong>, leaving Israel holding most land.",
-            "spoken": "Jordan made peace and Oslo Two divided the West Bank. <short pause> Jordan’s King Hussein signed a full peace treaty in 1994 . In September 1995, Oslo II split the West Bank into patchwork Areas A, B, and C , leaving Israel holding most land.",
+            "html": "Jordan’s <strong>King Hussein</strong> and Rabin signed the <strong>1994 Israel-Jordan peace treaty</strong>. In September 1995, <strong>Oslo II</strong> split the West Bank into <strong>Areas A, B, and C</strong>, leaving Israel holding 60%.",
+            "spoken": "Jordan made peace and Oslo Two divided the West Bank. <short pause> Jordan’s King Hussein and Rabin signed the 1994 Israel-Jordan peace treaty. In September 1995, Oslo II split the West Bank into Areas A, B, and C, leaving Israel holding 60%.",
             "paired_prose_hash": "e34a26d469",
             "connective": "Jordan made peace and Oslo Two divided the West Bank."
           },
@@ -23627,7 +23627,7 @@ const cme_new = {
           "type": "importance_8",
           "marks": 8,
           "text": "Explain the importance of the PFLP airplane hijacks (1970) for international attitudes towards the Palestine issue. (8 marks)",
-          "wagoll": "The PFLP airplane hijackings of September 1970 were of critical importance for international attitudes because **they thrust the stateless Palestinian refugee dilemma onto the global stage, forcing foreign governments and the UN to recognize the political dimensions of the conflict**. Prior to 1970, the international community largely viewed displaced Palestinians through a humanitarian lens as a simple \"refugee problem\" rather than a nation seeking self-determination. By executing spectacular, high-profile hijackings of international commercial airliners to Dawson's Field in Jordan, the Popular Front for the Liberation of Palestine (PFLP) bypassed regional borders to capture the attention of the world's media. **This shocking display of asymmetric violence meant that** global public opinion was forced to confront the unresolved grievances of the Palestinian people, creating a sense of global urgency that ultimately pressured the United Nations to grant the PLO observer status in November 1974.\n\n**Furthermore, the PFLP hijackings were highly important because they triggered a violent regional backlash that fundamentally shifted international alliances and Israel's security policies**. The spectacular destruction of hijacked aircraft on Jordanian soil embarrassed King Hussein of Jordan, prompting him to launch the bloody \"Black September\" civil war that expelled the PLO militias to Lebanon. **This expulsion directly resulted in** the PLO establishing a powerful military base in southern Lebanon, which escalated cross-border rocket attacks and provoked devastating Israeli retaliations. Consequently, while the hijackings drew widespread international condemnation and a surge of sympathy for Israel, they also proved to global superpowers that Middle Eastern stability was permanently tied to solving the Palestinian issue, paving the way for eventual international diplomatic engagement.",
+          "wagoll": "The PFLP airplane hijacks of September 1970 were of critical importance for international attitudes because **they thrust the stateless Palestinian refugee dilemma onto the global stage, forcing foreign governments and the UN to recognize the political dimensions of the conflict**. Prior to 1970, the international community largely viewed displaced Palestinians through a humanitarian lens as a simple \"refugee problem\" rather than a nation seeking self-determination. By executing spectacular, high-profile hijackings of international commercial airliners to Dawson's Field in Jordan, the Popular Front for the Liberation of Palestine (PFLP) bypassed regional borders to capture the attention of the world's media. **This shocking display of asymmetric violence meant that** global public opinion was forced to confront the unresolved grievances of the Palestinian people, creating a sense of global urgency that ultimately pressured the United Nations to grant the PLO observer status in November 1974.\n\n**Furthermore, the PFLP hijackings were highly important because they triggered a violent regional backlash that fundamentally shifted international alliances and Israel's security policies**. The spectacular destruction of hijacked aircraft on Jordanian soil embarrassed King Hussein of Jordan, prompting him to launch the bloody \"Black September\" civil war that expelled the PLO militias to Lebanon. **This expulsion directly resulted in** the PLO establishing a powerful military base in southern Lebanon, which escalated cross-border rocket attacks and provoked devastating Israeli retaliations. Consequently, while the hijackings drew widespread international condemnation and a surge of sympathy for Israel, they also proved to global superpowers that Middle Eastern stability was permanently tied to solving the Palestinian issue, paving the way for eventual international diplomatic engagement.",
           "structure_strip": {
             "starters": [
               "The PFLP airplane hijackings of September 1970 were of critical importance for international attitudes because ...",
@@ -23681,11 +23681,11 @@ const cme_new = {
         {
           "type": "consequence_4",
           "marks": 4,
-          "text": "Explain one consequence of the Dawson's Field hijackings (1970). (4 marks)",
-          "wagoll": "One consequence of the Dawson's Field hijackings in September 1970 was the **outbreak of the bloody \"Black September\" civil war in Jordan, which resulted in the complete military defeat and expulsion of the PLO from the country**. The PFLP's spectacular hijacking and destruction of three commercial passenger planes on Jordan's soil severely embarrassed King Hussein and directly threatened his royal sovereignty. **Consequently, this crisis forced King Hussein** to declare martial law and order his elite army to launch an all-out offensive against Palestinian armed factions. This military clampdown resulted in the deaths of thousands of fighters and civilians, culminating in the PLO being forcibly expelled from Jordan and forced to relocate its central headquarters to Beirut, Lebanon.",
+          "text": "Explain one consequence of the PFLP airplane hijacks at Dawson's Field (1970). (4 marks)",
+          "wagoll": "One consequence of the PFLP airplane hijacks at Dawson's Field in September 1970 was the **outbreak of the bloody \"Black September\" civil war in Jordan, which resulted in the complete military defeat and expulsion of the PLO from the country**. The PFLP's spectacular hijacking and destruction of three commercial passenger planes on Jordan's soil severely embarrassed King Hussein and directly threatened his royal sovereignty. **Consequently, this crisis forced King Hussein** to declare martial law and order his elite army to launch an all-out offensive against Palestinian armed factions. This military clampdown resulted in the deaths of thousands of fighters and civilians, culminating in the PLO being forcibly expelled from Jordan and forced to relocate its central headquarters to Beirut, Lebanon.",
           "structure_strip": {
             "starters": [
-              "One consequence of the Dawson's Field hijackings in September 1970 was the outbreak of the bloody \"Black September\" civil war in Jordan, which resulted in ..."
+              "One consequence of the PFLP airplane hijacks at Dawson's Field in September 1970 was the outbreak of the bloody \"Black September\" civil war in Jordan, which resulted in ..."
             ],
             "fact_bank": [
               "King Hussein",
@@ -24207,7 +24207,7 @@ const cme_new = {
           "type": "importance_8",
           "marks": 8,
           "text": "Explain the importance of PLO activities in Lebanon in the years 1970–82 for Israeli security. (8 marks)",
-          "wagoll": "PLO activities in Lebanon between 1970 and 1982 were of critical importance for Israeli security because **they established a highly active, hostile military front directly on Israel's northern border, replacing Jordan as the primary launchpad for cross-border terrorism**. Following the PLO’s bloody defeat and expulsion from Jordan during the \"Black September\" civil war of 1970, Yasser Arafat relocated his central headquarters and thousands of fighters to Beirut and southern Lebanon. Taking advantage of Lebanon's weak central government and the presence of 400,000 Palestinian refugees, the PLO established a powerful \"state-within-a-state\" popularly known as **\"Fatahland\"**. From these northern bases, Palestinian guerrillas launched frequent Katyusha rocket barrages and cross-border raids targeting civilian settlements in Galilee, **shattering the security of northern Israel**.\n\n**This concentration of PLO activity in southern Lebanon was also highly important because it dictated Israel’s military strategy, forcing the IDF to abandon defensive containment in favor of large-scale, pre-emptive land invasions**. When a Fatah unit conducted the Coastal Road Massacre in 1978 (killing 37 civilians), Israel launched **Operation Litani**, invading southern Lebanon with 26,000 troops to push the PLO north of the Litani River and establish a UN-patrolled buffer zone (UNIFIL). \n\nWhen border shellings persisted, culminating in the attempted assassination of Israeli Ambassador Shlomo Argov in London in June 1982, Defense Minister Ariel Sharon used it as a pretext to launch a total invasion: **Operation Peace for Galilee**. **This development was highly important for Israeli security because** the subsequent Siege of Beirut successfully forced the evacuation of over 14,000 PLO fighters to Tunis, Tunisia, physically isolating the PLO leadership 2,400 kilometers away from Israel's borders. However, this success came at a severe cost; the invasion destabilized Lebanon, leading to the Sabra and Shatila massacres, which severely damaged Israel’s international reputation, and created a security vacuum filled by the rise of the Iranian-backed militant group Hezbollah.",
+          "wagoll": "PLO activities in Lebanon between 1970 and 1982 were of critical importance for Israeli security because **they established a highly active, hostile military front directly on Israel's northern border, replacing Jordan as the primary launchpad for cross-border terrorism**. Following the PLO’s bloody defeat and expulsion from Jordan during the \"Black September\" civil war of 1970, Yasser Arafat relocated his central headquarters and thousands of fighters to Beirut and southern Lebanon. Taking advantage of Lebanon's weak central government and the presence of 400,000 Palestinian refugees, the PLO established a powerful \"state-within-a-state\" popularly known as **\"Fatahland\"**. From these northern bases, Palestinian guerrillas launched frequent Katyusha rocket barrages and cross-border raids targeting civilian settlements in Galilee, **shattering the security of northern Israel**.\n\n**This concentration of PLO activity in southern Lebanon was also highly important because it dictated Israel’s military strategy, forcing the IDF to abandon defensive containment in favor of large-scale, pre-emptive land invasions**. When a Fatah unit conducted the Coastal Road Massacre in 1978 (killing 37 civilians), Israel carried out **Israeli reprisals** by launching **Operation Litani**, invading southern Lebanon with 26,000 troops to push the PLO north of the Litani River and establish a UN-patrolled buffer zone (UNIFIL). \n\nWhen border shellings persisted, culminating in the attempted assassination of Israeli Ambassador Shlomo Argov in London in June 1982, Defense Minister Ariel Sharon used it as a pretext to launch a total invasion: **Operation Peace for Galilee**. **This development was highly important for Israeli security because** the subsequent Siege of Beirut successfully forced the evacuation of over 14,000 PLO fighters to Tunis, Tunisia, physically isolating the PLO leadership 2,400 kilometers away from Israel's borders. However, this success came at a severe cost; the invasion destabilized Lebanon, leading to the Sabra and Shatila massacres, which severely damaged Israel’s international reputation, and created a security vacuum filled by the rise of the Iranian-backed militant group Hezbollah.",
           "structure_strip": {
             "starters": [
               "PLO activities in Lebanon between 1970 and 1982 were of critical importance for Israeli security because ...",
@@ -25777,4 +25777,3 @@ const cme_new = {
     "non_specialist_summary": "This Period Study traces fifty years of Arab-Israeli conflict and diplomacy from the end of the British Mandate and the 1948–49 War, through Suez (1956), the Six-Day War (1967), and Yom Kippur (1973), to Camp David (1978–79), the First Intifada (1987–93), and the Oslo Accords (1993–95), supported by essential 1915–39 Mandate context. Paper 2 rewards precise chronological sequencing across causal links ('Explain an analytical narrative') and explicit focus on why events mattered for superpower involvement, regional stability, or peace negotiations."
   }
 };
-export default cme_new;

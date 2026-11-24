@@ -1,0 +1,1375 @@
+{
+  "unitId": "weimar_nazi_germany",
+  "optionCode": "1HI0/31",
+  "paperLabel": "Paper 3 · Modern Depth Study",
+  "courseTitle": "Weimar and Nazi Germany, 1918–39",
+  "examDateBoundary": "1918–1939",
+  "disclaimer": "Aligned to Pearson Edexcel GCSE (9–1) History (1HI0). Independent educational resource — not endorsed by Pearson.",
+  "nonExaminedContextNote": null,
+  "rescueTop10": [
+    {
+      "year": "1918 (Nov)",
+      "event": "Kaiser Wilhelm II's Abdication, Armistice & Birth of the Republic",
+      "significance": "Naval mutiny at Kiel and strikes in Berlin forced the Kaiser into Dutch exile, leaving civilian leaders to sign the 11 November Armistice."
+    },
+    {
+      "year": "1919 (June–Aug)",
+      "event": "Treaty of Versailles & Weimar Constitution",
+      "significance": "Article 231 war guilt, £6.6 billion reparations, Proportional Representation, and Article 48 weakened democratic legitimacy from birth."
+    },
+    {
+      "year": "1923 (Jan–Nov)",
+      "event": "French Occupation of the Ruhr, Hyperinflation & Munich Putsch",
+      "significance": "Passive resistance and reckless money-printing wiped out middle-class savings while Hitler's failed beer-hall coup shifted Nazi strategy toward legal elections."
+    },
+    {
+      "year": "1924–29",
+      "event": "Stresemann's Economic & Diplomatic Recovery",
+      "significance": "The Rentenmark, 800 million marks in Dawes Plan US loans, Locarno Treaties, League admission, and Young Plan stabilized Weimar until 1929."
+    },
+    {
+      "year": "1929–32",
+      "event": "Wall Street Crash, Six Million Jobless & Nazi Breakthrough",
+      "significance": "Recalled US loans and Brüning's Article 48 austerity cuts drove Nazi support to 230 Reichstag seats (37.3%) by July 1932."
+    },
+    {
+      "year": "1933 (30 Jan)",
+      "event": "Backstairs Intrigue & Hitler Appointed Chancellor",
+      "significance": "Franz von Papen and conservative elites persuaded President Hindenburg to appoint Hitler Chancellor, mistakenly believing three cabinet Nazis could be controlled."
+    },
+    {
+      "year": "1933 (Feb–July)",
+      "event": "Reichstag Fire Decree, Enabling Act & One-Party State",
+      "significance": "Emergency suspension of civil rights and the 444–94 Enabling Act let Hitler ban trade unions and rival parties within five months."
+    },
+    {
+      "year": "1934 (June–Aug)",
+      "event": "Night of the Long Knives, Hindenburg's Death & Army Oath",
+      "significance": "Purging Ernst Röhm's SA leadership won regular army backing before Hitler merged President and Chancellor as Führer in August 1934."
+    },
+    {
+      "year": "1933–39",
+      "event": "SS-Gestapo Police State & Goebbels' Propaganda Machine",
+      "significance": "Himmler's camps, Gestapo denunciations, and the People's Court worked alongside radio censorship, Nuremberg rallies, and the 1936 Olympics to enforce conformity."
+    },
+    {
+      "year": "1935–38",
+      "event": "Nuremberg Laws & Kristallnacht Escalation of Persecution",
+      "significance": "Legal stripping of Jewish citizenship in 1935 escalated into state-orchestrated synagogue burnings, 30,000 camp arrests, and forced Aryanisation in November 1938."
+    }
+  ],
+  "keyTopics": [
+    {
+      "id": "kt1",
+      "number": 1,
+      "title": "Key Topic 1: The Weimar Republic, 1918–29",
+      "dateFence": "1918–1929",
+      "outsideFenceWarning": "Keep strictly inside 1918–29: the post-Crash mass unemployment surge of 1930–32, Brüning's Hunger Chancellor decrees, and Hitler becoming Chancellor (1933) sit in Key Topic 2.",
+      "subTopics": [
+        {
+          "id": "kt1_1",
+          "code": "1.1",
+          "title": "The Origins of the Republic, 1918–19",
+          "dateFence": "1918–1919",
+          "outsideFenceTrap": "Outside 1918–19: 1923 Ruhr Hyperinflation & Nov 1923 Munich Putsch",
+          "linkedLessonIndices": [
+            0
+          ],
+          "anchors": [
+            {
+              "id": "kt1_1_a1",
+              "title": "German Revolution, Kaiser's Abdication & Armistice (Nov 1918)",
+              "dateTag": "Nov 1918",
+              "lessonIndex": 0,
+              "recallPrompt": "How did naval mutiny and war exhaustion end Imperial rule and create a republic in November 1918?",
+              "facts": [
+                "Four years of the British naval blockade caused severe food shortages that killed over 750,000 German civilians and sparked the Kiel naval mutiny and nationwide political unrest on 3 November 1918.",
+                "With workers' and soldiers' councils seizing cities, Kaiser Wilhelm II abdicated on 9 November 1918 and fled to the Netherlands while Philipp Scheidemann proclaimed the German Republic.",
+                "Chancellor Friedrich Ebert secured army support against communists via the Ebert-Groener Pact on 10 November before civilian envoy Matthias Erzberger signed the Compiègne Armistice on 11 November."
+              ],
+              "examLens": {
+                "lensType": "Paper 3 Modern Depth",
+                "points": [
+                  {
+                    "label": "Q2 Explain Why (12m)",
+                    "text": "Link military defeat, Allied blockade starvation, and the Kiel sailors' mutiny to explain why Imperial Germany collapsed in November 1918."
+                  },
+                  {
+                    "label": "Q3a Source Utility (8m)",
+                    "text": "Test proclamations from 9 November 1918 against fear of a Bolshevik-style uprising in Berlin to judge official motive."
+                  },
+                  {
+                    "label": "Q3b–d Interpretations (24m)",
+                    "text": "Debate angle: Genuine popular democratic revolution from below versus improvised elite handover designed to block communist revolution."
+                  }
+                ]
+              },
+              "questionSearchTerm": "Abdication of the Kaiser"
+            },
+            {
+              "id": "kt1_1_a2",
+              "title": "National Assembly & Weimar Constitution Strengths and Weaknesses (1919)",
+              "dateTag": "Jan–Aug 1919",
+              "lessonIndex": 0,
+              "recallPrompt": "What were the democratic strengths and structural weaknesses of the August 1919 Weimar Constitution?",
+              "facts": [
+                "In January 1919, an 83 percent voter turnout elected a moderate coalition of Social Democrats, Centre Party, and Democrats that met safely in Weimar and chose Ebert as President.",
+                "Signed on 11 August 1919, the Weimar Constitution guaranteed free speech and universal equal suffrage for all men and women aged twenty and over across eighteen federal states.",
+                "Proportional representation multiplied fringe parties and prevented stable Reichstag majorities, while Article 48 allowed the President to suspend civil liberties and rule by emergency decree without parliament."
+              ],
+              "examLens": {
+                "lensType": "Paper 3 Modern Depth",
+                "points": [
+                  {
+                    "label": "Q2 Explain Why (12m)",
+                    "text": "Contrast proportional representation coalition deadlock with Article 48 presidential decrees when explaining structural instability in the Weimar Republic."
+                  },
+                  {
+                    "label": "Q3a Source Utility (8m)",
+                    "text": "Evaluate constitutional speeches and legal clauses against the street violence in Berlin that forced deputies to meet in Weimar."
+                  },
+                  {
+                    "label": "Q3b–d Interpretations (24m)",
+                    "text": "Debate angle: Progressive democratic charter ahead of its time versus fatally flawed constitution carrying the seeds of dictatorship."
+                  }
+                ]
+              },
+              "questionSearchTerm": "Weimar Constitution"
+            }
+          ]
+        },
+        {
+          "id": "kt1_2",
+          "code": "1.2",
+          "title": "Early Challenges to the Weimar Republic, 1919–23",
+          "dateFence": "1919–1923",
+          "outsideFenceTrap": "Outside 1919–23: 1924 Dawes Plan & 1929 Wall Street Crash",
+          "linkedLessonIndices": [
+            1
+          ],
+          "anchors": [
+            {
+              "id": "kt1_2_a1",
+              "title": "Causes of Early Unpopularity: Treaty of Versailles & the 'Stab in the Back' Theory (June 1919)",
+              "dateTag": "June 1919",
+              "lessonIndex": 1,
+              "recallPrompt": "Why did the Treaty of Versailles and the Dolchstoss myth make the Weimar Republic deeply unpopular?",
+              "facts": [
+                "Signed under threat of Allied invasion on 28 June 1919, the Treaty of Versailles became a primary cause of early unpopularity of the Republic as a humiliating dictated peace.",
+                "Article 231 forced Germany to accept sole war guilt, pay £6.6 billion in reparations, surrender 13 percent of European territory and all colonies, and cap the army at 100,000 men.",
+                "Right-wing nationalists promoted the 'stab in the back' theory (Dolchstoss), falsely claiming an undefeated German army had been betrayed at home by socialist and Jewish 'November Criminals'."
+              ],
+              "examLens": {
+                "lensType": "Paper 3 Modern Depth",
+                "points": [
+                  {
+                    "label": "Q2 Explain Why (12m)",
+                    "text": "Separate territorial losses, military humiliation, Article 231 war guilt, and £6.6 billion reparations as distinct causes of anti-republican resentment."
+                  },
+                  {
+                    "label": "Q3a Source Utility (8m)",
+                    "text": "Interrogate nationalist Dolchstoss cartoons and posters by exposing how army chiefs Hindenburg and Ludendorff shifted blame onto civilian politicians."
+                  },
+                  {
+                    "label": "Q3b–d Interpretations (24m)",
+                    "text": "Debate angle: Crushing economic burden that crippled recovery versus manageable treaty exploited chiefly as nationalist propaganda."
+                  }
+                ]
+              },
+              "questionSearchTerm": "Treaty of Versailles"
+            },
+            {
+              "id": "kt1_2_a2",
+              "title": "Armed Threats from Left and Right: Spartacists, Kapp Putsch & Murders (1919–22)",
+              "dateTag": "1919–1922",
+              "lessonIndex": 1,
+              "recallPrompt": "How did Weimar survive armed challenges from both the extreme Left and extreme Right between 1919 and 1922?",
+              "facts": [
+                "In January 1919, Karl Liebknecht and Rosa Luxemburg led the Communist Spartacist uprising in Berlin until Defence Minister Gustav Noske used anti-republican Freikorps units to crush the revolt and execute both leaders.",
+                "In March 1920, Wolfgang Kapp led 5,000 Freikorps troops into Berlin after disarmament orders; General von Seeckt refused to fire on rebels, so a Berlin general strike defeated the putsch.",
+                "Between 1919 and 1922, over 350 political murders occurred as Organisation Consul gunmen assassinated Matthias Erzberger (1921) and Foreign Minister Walther Rathenau (1922) while sympathetic right-wing judges passed lenient sentences."
+              ],
+              "examLens": {
+                "lensType": "Paper 3 Modern Depth",
+                "points": [
+                  {
+                    "label": "Q2 Explain Why (12m)",
+                    "text": "Compare reliance on Freikorps paramilitaries against the Left with army neutrality and judicial bias protecting violent challenges from the Right."
+                  },
+                  {
+                    "label": "Q3a Source Utility (8m)",
+                    "text": "Cross-reference street photographs and speeches after Rathenau's murder with sentencing statistics showing institutional right-wing sympathy."
+                  },
+                  {
+                    "label": "Q3b–d Interpretations (24m)",
+                    "text": "Debate angle: Left-wing revolutionary insurrection versus entrenched right-wing army and judicial disloyalty as the deadlier threat to Weimar."
+                  }
+                ]
+              },
+              "questionSearchTerm": "Spartacist Uprising Kapp Putsch"
+            },
+            {
+              "id": "kt1_2_a3",
+              "title": "Challenges of 1923: French Occupation of the Ruhr & Hyperinflation",
+              "dateTag": "Jan–Nov 1923",
+              "lessonIndex": 1,
+              "recallPrompt": "Why did French troops occupy the Ruhr in January 1923, and how did passive resistance trigger hyperinflation?",
+              "facts": [
+                "In January 1923, 60,000 French and Belgian soldiers occupied Germany's industrial Ruhr valley to seize coal and steel directly after Germany missed scheduled reparations deliveries.",
+                "Chancellor Wilhelm Cuno ordered Ruhr miners and rail workers to stage passive resistance strikes while printing vast quantities of unbacked paper money to pay striking workers' wages.",
+                "Runaway hyperinflation drove the price of one loaf of bread to 201 billion marks by autumn 1923, wiping out middle-class bank savings and fixed pensions while debtors cleared loans cheaply."
+              ],
+              "examLens": {
+                "lensType": "Paper 3 Modern Depth",
+                "points": [
+                  {
+                    "label": "Q2 Explain Why (12m)",
+                    "text": "Trace the causal chain from missed reparations to the Ruhr invasion, lost industrial tax revenue, Cuno's money-printing, and currency collapse."
+                  },
+                  {
+                    "label": "Q3a Source Utility (8m)",
+                    "text": "Assess 1923 banknotes and memoirs by distinguishing winners (industrial borrowers) from losers (pensioners and savers)."
+                  },
+                  {
+                    "label": "Q3b–d Interpretations (24m)",
+                    "text": "Debate angle: External Allied aggression in the Ruhr versus reckless domestic fiscal policies of German governments as root cause of 1923 chaos."
+                  }
+                ]
+              },
+              "questionSearchTerm": "Ruhr Hyperinflation 1923"
+            }
+          ]
+        },
+        {
+          "id": "kt1_3",
+          "code": "1.3",
+          "title": "The Recovery of the Republic, 1924–29",
+          "dateFence": "1923–1929",
+          "outsideFenceTrap": "Outside recovery: Post-Oct 1929 Depression & Brüning's decrees",
+          "linkedLessonIndices": [
+            2
+          ],
+          "anchors": [
+            {
+              "id": "kt1_3_a1",
+              "title": "Stresemann's Economic Recovery: Rentenmark, Dawes Plan & Young Plan (1923–29)",
+              "dateTag": "Nov 1923–1929",
+              "lessonIndex": 2,
+              "recallPrompt": "How did Gustav Stresemann stabilize the currency and restructure reparations between November 1923 and 1929?",
+              "facts": [
+                "Ending passive resistance in autumn 1923, Gustav Stresemann introduced the land-backed Rentenmark in November 1923 and the permanent Reichsmark in 1924, halting hyperinflation and restoring confidence.",
+                "The 1924 Dawes Plan lowered initial annual reparations to one billion marks and unlocked 800 million gold marks in American loans and investment from Wall Street to modernise German factories and infrastructure.",
+                "The 1929 Young Plan cut total reparations from £6.6 billion to £2 billion payable over 59 years, though Stresemann warned Germany was 'dancing on a volcano' of short-term US debt."
+              ],
+              "examLens": {
+                "lensType": "Paper 3 Modern Depth",
+                "points": [
+                  {
+                    "label": "Q2 Explain Why (12m)",
+                    "text": "Connect currency stabilization (Rentenmark), scaled reparations (Dawes and Young Plans), and US capital inflows to industrial recovery."
+                  },
+                  {
+                    "label": "Q3a Source Utility (8m)",
+                    "text": "Contrast nationalist anti-Young Plan posters with Stresemann's warning about Germany's dangerous dependence on recallable American loans."
+                  },
+                  {
+                    "label": "Q3b–d Interpretations (24m)",
+                    "text": "Debate angle: Genuine 'Golden Years' economic recovery versus fragile illusion resting on short-term American credit."
+                  }
+                ]
+              },
+              "questionSearchTerm": "Stresemann Dawes Plan"
+            },
+            {
+              "id": "kt1_3_a2",
+              "title": "Foreign Policy Triumphs: Locarno Pact, League of Nations & Kellogg-Briand (1925–28)",
+              "dateTag": "1925–1928",
+              "lessonIndex": 2,
+              "recallPrompt": "How did Stresemann restore Germany's international standing between 1925 and 1928?",
+              "facts": [
+                "In October 1925, Stresemann signed the Locarno Pact voluntarily accepting Germany's western borders with France and Belgium and permanent Rhineland demilitarization, ending fears of another Ruhr invasion.",
+                "In September 1926, Germany joined the League of Nations with a permanent seat on its ruling Council as an equal great power, earning Stresemann the Nobel Peace Prize.",
+                "In August 1928, Germany joined sixty-four nations in signing the Kellogg-Briand Pact renouncing war as national policy and paving the way for early Allied Rhineland troop withdrawals."
+              ],
+              "examLens": {
+                "lensType": "Paper 3 Modern Depth",
+                "points": [
+                  {
+                    "label": "Q2 Explain Why (12m)",
+                    "text": "Show how voluntary border recognition at Locarno unlocked League membership in 1926 and softened Allied enforcement of Versailles."
+                  },
+                  {
+                    "label": "Q3a Source Utility (8m)",
+                    "text": "Weigh Stresemann's Geneva peace rhetoric against his private 1925 Crown Prince letter outlining pragmatic revisionist goals."
+                  },
+                  {
+                    "label": "Q3b–d Interpretations (24m)",
+                    "text": "Debate angle: Stresemann as committed European internationalist versus calculating nationalist pursuing revision through diplomacy."
+                  }
+                ]
+              },
+              "questionSearchTerm": "Locarno Pact League of Nations"
+            }
+          ]
+        },
+        {
+          "id": "kt1_4",
+          "code": "1.4",
+          "title": "Changes in Society, 1924–29",
+          "dateFence": "1924–1929",
+          "outsideFenceTrap": "Outside 1924–29: Nazi Kinder Küche Kirche & 1933 Marriage Loans",
+          "linkedLessonIndices": [
+            3
+          ],
+          "anchors": [
+            {
+              "id": "kt1_4_a1",
+              "title": "Changes in Living Standards, Housing & Social Welfare (1924–28)",
+              "dateTag": "1924–1928",
+              "lessonIndex": 3,
+              "recallPrompt": "How far did living standards improve for ordinary German workers and families between 1924 and 1928?",
+              "facts": [
+                "Industrial real wages rose by over 10 percent after 1924 (reaching 25 percent gains by 1928) alongside an eight-hour working day for unionized urban factory employees.",
+                "The 1927 Unemployment Insurance Act funded weekly jobless benefits for over 17 million workers through a 3 percent payroll contribution, while town councils built over two million modern homes.",
+                "Prosperity remained uneven because indebted peasant farmers faced falling world grain prices and middle-class professionals resented generous welfare taxes after losing savings in 1923."
+              ],
+              "examLens": {
+                "lensType": "Paper 3 Modern Depth",
+                "points": [
+                  {
+                    "label": "Q2 Explain Why (12m)",
+                    "text": "Balance rising urban wages, municipal housing estates, and 1927 jobless insurance against persistent rural farm debt."
+                  },
+                  {
+                    "label": "Q3a Source Utility (8m)",
+                    "text": "Test photographs of modernist Berlin housing estates like Hufeisensiedlung for typicality against struggling agricultural regions."
+                  },
+                  {
+                    "label": "Q3b–d Interpretations (24m)",
+                    "text": "Debate angle: Broad-based social progress for working families versus surface prosperity masking deep class and urban-rural resentment."
+                  }
+                ]
+              },
+              "questionSearchTerm": "Weimar living standards"
+            },
+            {
+              "id": "kt1_4_a2",
+              "title": "Changes in the Position of Women in Politics, Work & Leisure (1924–29)",
+              "dateTag": "1924–1929",
+              "lessonIndex": 3,
+              "recallPrompt": "In what ways did politics, employment, and social freedom change for German women in the 1920s?",
+              "facts": [
+                "Article 109 of the Weimar Constitution granted women equal voting rights at age twenty and equal access to civil service careers, producing high female representation in the Reichstag.",
+                "Young urban women entered expanding white-collar retail, office, teaching, and medical jobs, although many married women still faced pressure to leave work and lower pay than men.",
+                "In major cities, the 'New Woman' wore short Bubikopf bobbed hair, cosmetics, and shorter skirts while smoking and going out unchaperoned, provoking fierce criticism from churches and rural conservatives."
+              ],
+              "examLens": {
+                "lensType": "Paper 3 Modern Depth",
+                "points": [
+                  {
+                    "label": "Q2 Explain Why (12m)",
+                    "text": "Distinguish legal equality in politics and new clerical careers from traditional family pressures outside major cities."
+                  },
+                  {
+                    "label": "Q3a Source Utility (8m)",
+                    "text": "Judge Berlin magazine images and essays on the 'New Woman' by contrasting metropolitan lifestyles with conservative small-town reality."
+                  },
+                  {
+                    "label": "Q3b–d Interpretations (24m)",
+                    "text": "Debate angle: Genuine female emancipation across Weimar society versus an urban minority lifestyle exaggerated by hostile traditionalists."
+                  }
+                ]
+              },
+              "questionSearchTerm": "Weimar women"
+            },
+            {
+              "id": "kt1_4_a3",
+              "title": "Cultural Changes: Bauhaus Architecture, New Objectivity Art & Cinema (1924–29)",
+              "dateTag": "1924–1929",
+              "lessonIndex": 3,
+              "recallPrompt": "Why did Weimar developments in architecture, painting, and cinema spark both international acclaim and conservative backlash?",
+              "facts": [
+                "Abolition of imperial censorship freed Walter Gropius and the Bauhaus school (moving to Dessau in 1925) to pioneer functional steel, concrete, and glass modernist architecture and design.",
+                "New Objectivity painters Otto Dix and George Grosz depicted mutilated war veterans and corrupt profiteers with biting realism, while Fritz Lang's Metropolis and Marlene Dietrich made UFA cinema world-famous.",
+                "Conservative nationalists, churches, and the Nazi Party denounced Berlin's cabaret culture and avant-garde art as un-German moral degeneracy that undermined traditional family and military values."
+              ],
+              "examLens": {
+                "lensType": "Paper 3 Modern Depth",
+                "points": [
+                  {
+                    "label": "Q2 Explain Why (12m)",
+                    "text": "Explain cultural flowering through constitutional freedom from censorship, post-war trauma, and state-backed UFA studio innovation."
+                  },
+                  {
+                    "label": "Q3a Source Utility (8m)",
+                    "text": "Use Otto Dix paintings or DNVP election material to show how modernist social critique polarised Weimar public opinion."
+                  },
+                  {
+                    "label": "Q3b–d Interpretations (24m)",
+                    "text": "Debate angle: Creative golden age of European modernism versus alienating cultural divide that drove traditional voters rightward."
+                  }
+                ]
+              },
+              "questionSearchTerm": "Bauhaus Weimar culture"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kt2",
+      "number": 2,
+      "title": "Key Topic 2: Hitler’s Rise to Power, 1919–33",
+      "dateFence": "1919–1933",
+      "outsideFenceWarning": "Stop at 30 January 1933 (Hitler appointed Chancellor): the Feb 1933 Reichstag Fire, March 1933 Enabling Act, and June 1934 Night of the Long Knives belong in Key Topic 3.",
+      "subTopics": [
+        {
+          "id": "kt2_1",
+          "code": "2.1",
+          "title": "Early Development of the Nazi Party, 1920–22",
+          "dateFence": "1919–1922",
+          "outsideFenceTrap": "Outside 1920–22: Nov 1923 Munich Putsch & 1926 Bamberg Conference",
+          "linkedLessonIndices": [
+            4
+          ],
+          "anchors": [
+            {
+              "id": "kt2_1_a1",
+              "title": "Hitler's Early Career, the Twenty-Five Point Programme & NSDAP Rebranding (1919–20)",
+              "dateTag": "1919–1920",
+              "lessonIndex": 4,
+              "recallPrompt": "How did Adolf Hitler transform Anton Drexler's small Munich party between September 1919 and December 1920?",
+              "facts": [
+                "Sent by army intelligence in September 1919 to monitor fringe groups in Munich, Adolf Hitler joined Anton Drexler's tiny German Workers' Party (DAP) and quickly took charge of propaganda.",
+                "In February 1920, Hitler and Drexler unveiled the Twenty-Five Point Programme (25-Point Programme) demanding abolition of the Treaty of Versailles, a Greater Germany, state profit-sharing, and stripping Jewish people of citizenship.",
+                "In 1920, Hitler rebranded the party as the National Socialist German Workers' Party (NSDAP), introduced the swastika banner, and purchased the Völkischer Beobachter newspaper to broadcast Nazi views."
+              ],
+              "examLens": {
+                "lensType": "Paper 3 Modern Depth",
+                "points": [
+                  {
+                    "label": "Q2 Explain Why (12m)",
+                    "text": "Combine Hitler's fiery beer-hall oratory, nationalist and anti-Semitic 25-Point promises, and distinct visual branding to explain early NSDAP growth."
+                  },
+                  {
+                    "label": "Q3a Source Utility (8m)",
+                    "text": "Analyse extracts from the February 1920 25-Point Programme in light of Bavarian resentment toward Versailles and Berlin."
+                  },
+                  {
+                    "label": "Q3b–d Interpretations (24m)",
+                    "text": "Debate angle: Ideological appeal of the 25-Point Programme versus Hitler's personal charismatic speaking skills as driver of early recruitment."
+                  }
+                ]
+              },
+              "questionSearchTerm": "25-Point Programme DAP"
+            },
+            {
+              "id": "kt2_1_a2",
+              "title": "The Führerprinzip & Role of the Sturmabteilung (SA) (1921–22)",
+              "dateTag": "1921–1922",
+              "lessonIndex": 4,
+              "recallPrompt": "How did Hitler establish absolute leadership in July 1921 and use the SA to expand Nazi strength?",
+              "facts": [
+                "In July 1921, Hitler threatened resignation to oust founder Anton Drexler and impose the Führerprinzip ('Leadership Principle'), demanding unquestioning personal obedience from every party branch.",
+                "In August 1921, Hitler formed the brown-shirted Sturmabteilung (SA) under Ernst Röhm, recruiting unemployed ex-soldiers and Freikorps veterans into a uniformed paramilitary wing.",
+                "Growing past 6,000 armed stormtroopers in Bavaria by 1922, the SA protected Nazi rallies, projected disciplined strength, and violently disrupted rival Communist and Social Democratic meetings."
+              ],
+              "examLens": {
+                "lensType": "Paper 3 Modern Depth",
+                "points": [
+                  {
+                    "label": "Q2 Explain Why (12m)",
+                    "text": "Explain how centralized command under the Führerprinzip and paramilitary SA street intimidation turned a debating club into a disciplined movement."
+                  },
+                  {
+                    "label": "Q3a Source Utility (8m)",
+                    "text": "Evaluate Bavarian police surveillance reports on Hitler's speeches and SA brawls for contemporary evidence of paramilitary methods."
+                  },
+                  {
+                    "label": "Q3b–d Interpretations (24m)",
+                    "text": "Debate angle: SA violence as disciplined crowd protection versus unruly street thuggery that risked alienating respectable voters."
+                  }
+                ]
+              },
+              "questionSearchTerm": "Sturmabteilung Führerprinzip"
+            }
+          ]
+        },
+        {
+          "id": "kt2_2",
+          "code": "2.2",
+          "title": "The Munich Putsch and the Nazi Party, 1923–28",
+          "dateFence": "1923–1928",
+          "outsideFenceTrap": "Outside 1923–28: Oct 1929 Wall Street Crash & July 1932 Election",
+          "linkedLessonIndices": [
+            5
+          ],
+          "anchors": [
+            {
+              "id": "kt2_2_a1",
+              "title": "Causes, Events & Consequences of the Munich Putsch & Mein Kampf (1923–24)",
+              "dateTag": "Nov 1923–1924",
+              "lessonIndex": 5,
+              "recallPrompt": "Why did the Munich Putsch fail in November 1923, and how did Hitler turn defeat into long-term advantage?",
+              "facts": [
+                "Exploiting fury over the 1923 Ruhr crisis and inspired by Mussolini, Hitler, General Ludendorff, and 600 SA men held Bavarian leader Gustav von Kahr at gunpoint on 8 November 1923.",
+                "When Kahr alerted authorities, armed Bavarian police blocked the Nazi march in Munich on 9 November, killing sixteen Nazis, arresting Hitler, and triggering a temporary ban on the NSDAP.",
+                "Sympathetic trial judges in February 1924 gave Hitler national front-page publicity and a lenient five-year sentence; serving nine months in Landsberg Fortress, he dictated Mein Kampf and chose legal elections over coups."
+              ],
+              "examLens": {
+                "lensType": "Paper 3 Modern Depth",
+                "points": [
+                  {
+                    "label": "Q2 Explain Why (12m)",
+                    "text": "Distinguish immediate causes of failure (loss of Kahr's and army backing) from long-term gains (trial fame, Mein Kampf, and legal strategy)."
+                  },
+                  {
+                    "label": "Q3a Source Utility (8m)",
+                    "text": "Examine Hitler's March 1924 trial speech alongside his nine-month parole to expose nationalist bias in the Weimar judiciary."
+                  },
+                  {
+                    "label": "Q3b–d Interpretations (24m)",
+                    "text": "Debate angle: Humiliating military fiasco that shattered the early NSDAP versus decisive turning point launching Hitler's national path to power."
+                  }
+                ]
+              },
+              "questionSearchTerm": "Munich Putsch"
+            },
+            {
+              "id": "kt2_2_a2",
+              "title": "Limited Support, Party Reorganisation & the Bamberg Conference (1924–28)",
+              "dateTag": "1925–1928",
+              "lessonIndex": 5,
+              "recallPrompt": "Why did the Nazis win so few votes between 1924 and 1928 despite reorganising the party nationwide?",
+              "facts": [
+                "Re-founding the NSDAP in February 1925, Hitler built a national network of thirty-five regional Gaue under loyal Gauleiters, created youth and women's sections, and formed his elite black-shirted SS bodyguard.",
+                "At the February 1926 Bamberg Conference, Hitler crushed Gregor Strasser's northern socialist wing, won Joseph Goebbels' loyalty, and enforced absolute obedience under the Führerprinzip.",
+                "Because Stresemann's currency stability, US loans, and Locarno diplomacy satisfied moderate voters, the Nazis won only 2.6 percent of the vote (12 Reichstag seats) in May 1928 despite membership passing 100,000."
+              ],
+              "examLens": {
+                "lensType": "Paper 3 Modern Depth",
+                "points": [
+                  {
+                    "label": "Q2 Explain Why (12m)",
+                    "text": "Pair Weimar economic stability and Hindenburg's 1925 presidency with extremist marginalisation to explain low Nazi votes before 1929."
+                  },
+                  {
+                    "label": "Q3a Source Utility (8m)",
+                    "text": "Compare Goebbels' February 1926 Bamberg diary entry with May 1928 Reichstag election returns to contrast organisation with electoral weakness."
+                  },
+                  {
+                    "label": "Q3b–d Interpretations (24m)",
+                    "text": "Debate angle: Barren 'lean years' of electoral irrelevance versus vital organisational incubator preparing a national election machine for crisis."
+                  }
+                ]
+              },
+              "questionSearchTerm": "Bamberg Conference Lean Years"
+            }
+          ]
+        },
+        {
+          "id": "kt2_3",
+          "code": "2.3",
+          "title": "The Growth in Support for the Nazis, 1929–32",
+          "dateFence": "1929–1932",
+          "outsideFenceTrap": "Outside 1929–32: 1923 Hyperinflation & Jan 1933 Chancellorship",
+          "linkedLessonIndices": [
+            6
+          ],
+          "anchors": [
+            {
+              "id": "kt2_3_a1",
+              "title": "Wall Street Crash, Six Million Unemployed & Growth of Communist Support (1929–32)",
+              "dateTag": "Oct 1929–1932",
+              "lessonIndex": 6,
+              "recallPrompt": "How did the October 1929 Wall Street Crash paralyse Weimar democracy and fuel political extremism?",
+              "facts": [
+                "After the October 1929 Wall Street Crash, US banks recalled short-term Dawes loans, bankrupting over 50,000 German firms, cutting factory output by 40 percent, and leaving six million registered unemployed by 1932.",
+                "Appointed after the Grand Coalition collapsed in March 1930, 'Hunger Chancellor' Heinrich Brüning cut wages and jobless benefits through unpopular Article 48 presidential decrees that sidelined parliament.",
+                "Rising working-class support lifted the Communist Party (KPD) past 100 Reichstag seats, terrifying middle-class property owners, farmers, and industrialists like Fritz Thyssen into backing the anti-communist Nazis."
+              ],
+              "examLens": {
+                "lensType": "Paper 3 Modern Depth",
+                "points": [
+                  {
+                    "label": "Q2 Explain Why (12m)",
+                    "text": "Connect recalled American loans, six million unemployed, Brüning's austerity decrees, and middle-class fear of the KPD."
+                  },
+                  {
+                    "label": "Q3a Source Utility (8m)",
+                    "text": "Evaluate police reports on evictions and Brüning's emergency decrees to explain working-class and middle-class disillusionment with democracy."
+                  },
+                  {
+                    "label": "Q3b–d Interpretations (24m)",
+                    "text": "Debate angle: Economic desperation caused by the Great Depression versus active Nazi political skill as primary cause of surging votes."
+                  }
+                ]
+              },
+              "questionSearchTerm": "Wall Street Crash unemployment"
+            },
+            {
+              "id": "kt2_3_a2",
+              "title": "Appeal of Hitler, Goebbels' Propaganda & Role of the SA (1930–32)",
+              "dateTag": "1930–1932",
+              "lessonIndex": 6,
+              "recallPrompt": "How did Hitler's appeal, Goebbels' propaganda, and the SA broaden Nazi support across social classes?",
+              "facts": [
+                "Reich propaganda chief Joseph Goebbels ran modern nationwide campaigns with 'Work and Bread' posters, radio broadcasts, and 'Hitler over Germany' flights taking Hitler to four or five cities daily.",
+                "Uniformed SA stormtroopers, numbering hundreds of thousands by 1932, ran soup kitchens, marched in disciplined parades, and fought KPD street brawlers to reassure order-seeking middle-class voters.",
+                "Flexible promises of debt relief for farmers, protection against department stores for shopkeepers, and jobs for workers lifted Nazi strength from 107 seats (1930) to 230 seats (37.3 percent) in July 1932."
+              ],
+              "examLens": {
+                "lensType": "Paper 3 Modern Depth",
+                "points": [
+                  {
+                    "label": "Q2 Explain Why (12m)",
+                    "text": "Show how Goebbels tailored messages to distinct groups (unemployed workers, farmers, Mittelstand, women, and industrialists) alongside Hitler's saviour image."
+                  },
+                  {
+                    "label": "Q3a Source Utility (8m)",
+                    "text": "Assess 1932 Mjölnir election posters ('Our Last Hope: Hitler') and middle-class memoirs like Melita Maschmann for emotional appeal."
+                  },
+                  {
+                    "label": "Q3b–d Interpretations (24m)",
+                    "text": "Debate angle: Positive cross-class attraction to Goebbels' modern propaganda versus negative protest voting against Weimar failure and communism."
+                  }
+                ]
+              },
+              "questionSearchTerm": "Growth of Nazi support"
+            }
+          ]
+        },
+        {
+          "id": "kt2_4",
+          "code": "2.4",
+          "title": "How Hitler Became Chancellor, 1932–33",
+          "dateFence": "1932–Jan 1933",
+          "outsideFenceTrap": "Outside KT2: Feb 1933 Reichstag Fire & March 1933 Enabling Act",
+          "linkedLessonIndices": [
+            6,
+            7
+          ],
+          "anchors": [
+            {
+              "id": "kt2_4_a1",
+              "title": "Presidential & Reichstag Elections of 1932 (Mar–Nov 1932)",
+              "dateTag": "Mar–Nov 1932",
+              "lessonIndex": 7,
+              "recallPrompt": "What did the presidential and two Reichstag elections of 1932 reveal about Nazi strength and limits?",
+              "facts": [
+                "In the spring 1932 presidential race, Hitler won 13.4 million votes against Paul von Hindenburg, proving his status as Hindenburg's main national challenger despite losing.",
+                "Winning 230 seats (37.3 percent) in July 1932 made the Nazis the largest Reichstag party, yet Hindenburg refused to appoint the 'vulgar corporal' as Chancellor.",
+                "In the November 1932 Reichstag election, the cash-strapped Nazis lost two million votes and thirty-four seats while Gregor Strasser urged coalition compromise before party support faded further."
+              ],
+              "examLens": {
+                "lensType": "Paper 3 Modern Depth",
+                "points": [
+                  {
+                    "label": "Q2 Explain Why (12m)",
+                    "text": "Use July and November 1932 results to show why no democratic majority could govern without Nazi or Communist seats."
+                  },
+                  {
+                    "label": "Q3a Source Utility (8m)",
+                    "text": "Use November 1932 election statistics to explain why conservative elites mistakenly believed Nazi momentum had peaked and could be tamed."
+                  },
+                  {
+                    "label": "Q3b–d Interpretations (24m)",
+                    "text": "Debate angle: Unstoppable mass electoral mandate carrying Hitler to office versus stalled movement rescued from decline in late 1932."
+                  }
+                ]
+              },
+              "questionSearchTerm": "1932 Reichstag elections"
+            },
+            {
+              "id": "kt2_4_a2",
+              "title": "Backstairs Intrigue: Hindenburg, Von Papen & Von Schleicher (June 1932–Jan 1933)",
+              "dateTag": "June 1932–30 Jan 1933",
+              "lessonIndex": 7,
+              "recallPrompt": "How did rivalry between Franz von Papen and Kurt von Schleicher persuade Hindenburg to appoint Hitler Chancellor on 30 January 1933?",
+              "facts": [
+                "After sacking Brüning in May 1932, Hindenburg appointed Franz von Papen over an unpopular 'Cabinet of Barons' before replacing him in December 1932 with General Kurt von Schleicher.",
+                "Isolated after failing to split the Nazis via Gregor Strasser and angering Prussian landowners, Schleicher lost office while Papen met Hitler secretly at banker Kurt von Schröder's villa on 4 January 1933.",
+                "Papen and Oskar von Hindenburg persuaded President Hindenburg to appoint Hitler Chancellor on 30 January 1933 with just three Nazis in an eleven-man cabinet, boasting they would push Hitler into a corner."
+              ],
+              "examLens": {
+                "lensType": "Paper 3 Modern Depth",
+                "points": [
+                  {
+                    "label": "Q2 Explain Why (12m)",
+                    "text": "Combine Nazi Reichstag seats, fear of civil war, industrialist petitions, and Papen-Schleicher rivalry to explain 30 January 1933."
+                  },
+                  {
+                    "label": "Q3a Source Utility (8m)",
+                    "text": "Interrogate Bernard Partridge's 'Temporary Triangle' cartoon and Papen's private boast to expose conservative miscalculation."
+                  },
+                  {
+                    "label": "Q3b–d Interpretations (24m)",
+                    "text": "Debate angle: Cynical backstairs elite intrigue by Papen and Hindenburg versus structural mass electoral pressure as decisive cause of Hitler's appointment."
+                  }
+                ]
+              },
+              "questionSearchTerm": "Hitler appointed Chancellor"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kt3",
+      "number": 3,
+      "title": "Key Topic 3: Nazi Control and Dictatorship, 1933–39",
+      "dateFence": "1933–1939",
+      "outsideFenceWarning": "Keep strictly inside 1933–August 1939: wartime resistance groups such as the White Rose (1942–43) and the July 1944 Stauffenberg Bomb Plot lie outside the examined specification period.",
+      "subTopics": [
+        {
+          "id": "kt3_1",
+          "code": "3.1",
+          "title": "The Creation of a Dictatorship, 1933–34",
+          "dateFence": "Feb 1933–Aug 1934",
+          "outsideFenceTrap": "Outside 1933–34: Jan 1933 Appointment (KT2) & Nov 1938 Kristallnacht (KT4)",
+          "linkedLessonIndices": [
+            8
+          ],
+          "anchors": [
+            {
+              "id": "kt3_1_a1",
+              "title": "Reichstag Fire, Enabling Act & Banning Parties and Trade Unions (Feb–July 1933)",
+              "dateTag": "Feb–July 1933",
+              "lessonIndex": 8,
+              "recallPrompt": "How did Hitler use the Reichstag Fire and Enabling Act to dismantle Weimar democracy by July 1933?",
+              "facts": [
+                "After Dutch communist Marinus van der Lubbe was caught at the burning Reichstag on 27 February 1933, Hindenburg signed the Reichstag Fire Decree suspending civil liberties and jailing over 4,000 communists.",
+                "Winning 43.9 percent in March 1933, Hitler used SA intimidation and promises to Centrists to pass the Enabling Act (444 to 94, with only the SPD opposing) on 23 March.",
+                "Able to pass laws by decree for four years without Reichstag consent, Hitler crushed trade unions on 2 May 1933, abolished regional parliaments, and banned rival parties in July."
+              ],
+              "examLens": {
+                "lensType": "Paper 3 Modern Depth",
+                "points": [
+                  {
+                    "label": "Q2 Explain Why (12m)",
+                    "text": "Sequence the Fire Decree suspending civil rights, Kroll Opera House Enabling Act, union suppression, and the July 1933 one-party law."
+                  },
+                  {
+                    "label": "Q3a Source Utility (8m)",
+                    "text": "Contrast Otto Wels' brave SPD speech on 23 March 1933 with the coercive presence of armed SS and SA guards inside the Kroll Opera House."
+                  },
+                  {
+                    "label": "Q3b–d Interpretations (24m)",
+                    "text": "Debate angle: Pseudo-legal constitutional dismantling from above versus violent street terror from below in establishing dictatorship."
+                  }
+                ]
+              },
+              "questionSearchTerm": "Reichstag Fire Enabling Act"
+            },
+            {
+              "id": "kt3_1_a2",
+              "title": "Night of the Long Knives, Hindenburg's Death & the Army Oath of Allegiance (June–Aug 1934)",
+              "dateTag": "June–Aug 1934",
+              "lessonIndex": 8,
+              "recallPrompt": "How did Hitler eliminate internal SA rivals and secure absolute military loyalty in summer 1934?",
+              "facts": [
+                "By summer 1934, SA chief Ernst Röhm commanded three million stormtroopers and demanded a socialist 'second revolution' absorbing the regular army, alarming generals and President Hindenburg.",
+                "During the Night of the Long Knives on 30 June 1934, SS squads executed roughly 400 perceived rivals including Röhm, Gregor Strasser, and former Chancellor Kurt von Schleicher, winning army gratitude.",
+                "When President Hindenburg died on 2 August 1934, Hitler merged the offices of Chancellor and President as sole Führer and bound every German soldier via the personal army oath of allegiance to him."
+              ],
+              "examLens": {
+                "lensType": "Paper 3 Modern Depth",
+                "points": [
+                  {
+                    "label": "Q2 Explain Why (12m)",
+                    "text": "Link Röhm's radical three-million-man SA threat, regular army pressure, Hindenburg's death, and the personal soldier's oath."
+                  },
+                  {
+                    "label": "Q3a Source Utility (8m)",
+                    "text": "Test Hitler's 13 July 1934 Reichstag speech claiming self-defence against the murder of non-SA political rivals like Schleicher."
+                  },
+                  {
+                    "label": "Q3b–d Interpretations (24m)",
+                    "text": "Debate angle: Reluctant defensive strike against an imminent Röhm coup versus calculated pact with conservative generals to cement absolute rule."
+                  }
+                ]
+              },
+              "questionSearchTerm": "Night of the Long Knives"
+            }
+          ]
+        },
+        {
+          "id": "kt3_2",
+          "code": "3.2",
+          "title": "The Police State",
+          "dateFence": "1933–1939",
+          "outsideFenceTrap": "Outside 3.2: Post-1941 wartime extermination camps in occupied Poland",
+          "linkedLessonIndices": [
+            9
+          ],
+          "anchors": [
+            {
+              "id": "kt3_2_a1",
+              "title": "The SS, SD, Gestapo & Concentration Camps (1933–39)",
+              "dateTag": "1933–1939",
+              "lessonIndex": 9,
+              "recallPrompt": "How did Heinrich Himmler and Reinhard Heydrich use the SS, SD, Gestapo, and concentration camps to enforce control?",
+              "facts": [
+                "Heinrich Himmler expanded the black-uniformed SS into an elite Aryan force of 240,000 men by 1939, opening Dachau concentration camp in March 1933 to hold political prisoners in protective custody.",
+                "Reinhard Heydrich led the SD intelligence service to monitor public mood and the Gestapo secret police, which operated above civil courts using phone taps, torture, and arrest without trial.",
+                "Because just 32,000 Gestapo officers policed 70 million Germans, terror depended heavily on voluntary civilian denunciations and local Nazi Block Wardens reporting suspicious remarks."
+              ],
+              "examLens": {
+                "lensType": "Paper 3 Modern Depth",
+                "points": [
+                  {
+                    "label": "Q2 Explain Why (12m)",
+                    "text": "Show how SS camp detention, SD surveillance, Block Wardens, and fear of Gestapo informers worked together to deter open dissent."
+                  },
+                  {
+                    "label": "Q3a Source Utility (8m)",
+                    "text": "Analyse Gestapo Düsseldorf denunciation files to show how neighbourly grudges amplified a numerically small secret police."
+                  },
+                  {
+                    "label": "Q3b–d Interpretations (24m)",
+                    "text": "Debate angle: Omnipresent Gestapo police terror from above versus self-policing society sustained by ordinary citizens' denunciations."
+                  }
+                ]
+              },
+              "questionSearchTerm": "Gestapo SS concentration camps"
+            },
+            {
+              "id": "kt3_2_a2",
+              "title": "Nazi Control of the Legal System & the People's Court (1933–39)",
+              "dateTag": "1933–1939",
+              "lessonIndex": 9,
+              "recallPrompt": "How did the Nazis destroy judicial independence across Germany's courts?",
+              "facts": [
+                "All German judges and lawyers were forced into the National Socialist League for the Maintenance of the Law, swearing to place Nazi racial and political goals above impartial statutes.",
+                "Trial by jury was abolished, Jewish and democratic magistrates were purged, and courtroom judges wore swastika insignia while enforcing severe political penalties.",
+                "Established in April 1934 under fanatical judges such as Roland Freisler, the People's Court tried political treason in secret without independent defence rights or appeal, passing thousands of death sentences."
+              ],
+              "examLens": {
+                "lensType": "Paper 3 Modern Depth",
+                "points": [
+                  {
+                    "label": "Q2 Explain Why (12m)",
+                    "text": "Explain why controlling judges and creating the People's Court removed any legal refuge against arbitrary Gestapo arrest."
+                  },
+                  {
+                    "label": "Q3a Source Utility (8m)",
+                    "text": "Evaluate the April 1934 People's Court law by noting the complete absence of jury oversight or appeal rights."
+                  },
+                  {
+                    "label": "Q3b–d Interpretations (24m)",
+                    "text": "Debate angle: Coerced takeover of reluctant legal professionals versus willing collaboration by conservative nationalist judges."
+                  }
+                ]
+              },
+              "questionSearchTerm": "People's Court Nazi legal system"
+            }
+          ]
+        },
+        {
+          "id": "kt3_3",
+          "code": "3.3",
+          "title": "Controlling and Influencing Attitudes",
+          "dateFence": "1933–1939",
+          "outsideFenceTrap": "Note: Catholic Concordat & Reich Church sit in 3.3 (church opposition in 3.4)",
+          "linkedLessonIndices": [
+            9,
+            10
+          ],
+          "anchors": [
+            {
+              "id": "kt3_3_a1",
+              "title": "Goebbels' Propaganda Ministry: Censorship, Media, Rallies & 1936 Olympics",
+              "dateTag": "1933–1939",
+              "lessonIndex": 10,
+              "recallPrompt": "How did Joseph Goebbels use censorship, radio, mass rallies, and the 1936 Berlin Olympics to shape attitudes?",
+              "facts": [
+                "Appointed Propaganda Minister in March 1933, Joseph Goebbels controlled newspaper editors, placed 6,000 loudspeakers in public squares, and mass-produced the cheap 76-mark Volksempfänger radio for over 70 percent of households by 1939.",
+                "Every September at the Nuremberg Rallies, Albert Speer staged his 152-searchlight 'Cathedral of Light' as up to 500,000 uniformed participants marched to project national unity and Führer worship.",
+                "At the August 1936 Berlin Olympics inside a 100,000-seat stadium, Goebbels temporarily hid anti-Jewish signs as Germany won 33 gold medals, though African American sprinter Jesse Owens won four golds."
+              ],
+              "examLens": {
+                "lensType": "Paper 3 Modern Depth",
+                "points": [
+                  {
+                    "label": "Q2 Explain Why (12m)",
+                    "text": "Combine press censorship, short-range Volksempfänger radios, Nuremberg spectacle, and Olympic prestige to explain Nazi persuasion."
+                  },
+                  {
+                    "label": "Q3a Source Utility (8m)",
+                    "text": "Cross-reference foreign visitors' praise of the 1936 Berlin Olympics with Goebbels' temporary orders hiding anti-Semitic placards."
+                  },
+                  {
+                    "label": "Q3b–d Interpretations (24m)",
+                    "text": "Debate angle: Persuasive propaganda manufacturing genuine enthusiasm versus police terror as primary pillar of Nazi stability."
+                  }
+                ]
+              },
+              "questionSearchTerm": "Goebbels propaganda Berlin Olympics"
+            },
+            {
+              "id": "kt3_3_a2",
+              "title": "Nazi Control of Culture & the Arts (1933–38)",
+              "dateTag": "1933–1938",
+              "lessonIndex": 10,
+              "recallPrompt": "How did the Reich Chamber of Culture purge Weimar modernism across literature, art, architecture, and film?",
+              "facts": [
+                "Goebbels' Reich Chamber of Culture regulated seven branches covering press, radio, literature, art, music, theatre, and cinema, banning Jewish, socialist, and avant-garde artists from working.",
+                "In May 1933, Nazi students burned 20,000 books by writers such as Albert Einstein and Sigmund Freud, while Leni Riefenstahl's film Triumph of the Will glorified Hitler in cinemas.",
+                "In 1937, Goebbels mocked confiscated modernist paintings by Otto Dix in Munich's Degenerate Art exhibition while replacing Bauhaus design with Albert Speer's monumental neoclassical stone architecture."
+              ],
+              "examLens": {
+                "lensType": "Paper 3 Modern Depth",
+                "points": [
+                  {
+                    "label": "Q2 Explain Why (12m)",
+                    "text": "Contrast negative censorship (book burnings, banning jazz, Degenerate Art) with approved heroic Aryan art, Riefenstahl films, and Speer buildings."
+                  },
+                  {
+                    "label": "Q3a Source Utility (8m)",
+                    "text": "Examine Degenerate Art and Degenerate Music posters to identify how Nazi ideology linked Weimar modernism with racial decay."
+                  },
+                  {
+                    "label": "Q3b–d Interpretations (24m)",
+                    "text": "Debate angle: Total ideological transformation of German cultural taste versus superficial compliance where popular jazz and light cinema persisted."
+                  }
+                ]
+              },
+              "questionSearchTerm": "Reich Chamber of Culture Degenerate Art"
+            },
+            {
+              "id": "kt3_3_a3",
+              "title": "Nazi Attempts to Control the Catholic & Protestant Churches: Concordat & Reich Church (1933–39)",
+              "dateTag": "1933–1939",
+              "lessonIndex": 9,
+              "recallPrompt": "How did Hitler attempt to bring Germany's Catholic and Protestant Churches under Nazi control?",
+              "facts": [
+                "In Nazi attempts to control the Catholic and Protestant Churches, Hitler signed the July 1933 Vatican Concordat promising to protect Catholic schools and youth groups if priests left politics and the Centre Party dissolved.",
+                "Hitler soon broke the Concordat by censoring Catholic newspapers, removing crucifixes from classrooms, disbanding Catholic youth leagues, closing church schools, and arresting outspoken priests.",
+                "To control Germany's forty million Protestants, Hitler backed Reich Bishop Ludwig Müller and the 'German Christians', who displayed swastikas beside altars, dismissed Jewish-born pastors, and rejected the Old Testament."
+              ],
+              "examLens": {
+                "lensType": "Paper 3 Modern Depth",
+                "points": [
+                  {
+                    "label": "Q2 Explain Why (12m)",
+                    "text": "Compare tactical compromise followed by repression against Catholics (Concordat) with institutional takeover attempts against Protestants (Reich Church)."
+                  },
+                  {
+                    "label": "Q3a Source Utility (8m)",
+                    "text": "Contrast the July 1933 Concordat terms with later papal complaints to expose Hitler's short-term diplomatic opportunism."
+                  },
+                  {
+                    "label": "Q3b–d Interpretations (24m)",
+                    "text": "Debate angle: Effective neutralisation of institutional church power versus incomplete Gleichschaltung blocked by deep Christian loyalties."
+                  }
+                ]
+              },
+              "questionSearchTerm": "Concordat Reich Church"
+            }
+          ]
+        },
+        {
+          "id": "kt3_4",
+          "code": "3.4",
+          "title": "Opposition, Resistance and Conformity",
+          "dateFence": "1933–1939",
+          "outsideFenceTrap": "Strictly pre-Sept 1939: exclude 1942–43 White Rose & July 1944 Bomb Plot",
+          "linkedLessonIndices": [
+            9,
+            11
+          ],
+          "anchors": [
+            {
+              "id": "kt3_4_a1",
+              "title": "Scale of Conformity, Support & Underground Left-Wing Resistance (1933–39)",
+              "dateTag": "1933–1939",
+              "lessonIndex": 11,
+              "recallPrompt": "Why did most Germans conform to Nazi rule between 1933 and 1939 rather than join open political resistance?",
+              "facts": [
+                "Most Germans conformed outwardly because official unemployment fell below 300,000, Strength Through Joy offered cheap leisure, and Hitler's foreign policy successes restored hurt national pride.",
+                "Everyday discontent stayed largely limited to private grumbling, anti-Nazi jokes, and refusing the Hitler salute when snooping Block Wardens and Gestapo informers were absent.",
+                "Exiled Social Democrats in Prague smuggled Sopade reports and disguised pamphlets while underground Communist cells attempted factory sabotage, but left-wing divisions and Gestapo arrests crippled organised plots."
+              ],
+              "examLens": {
+                "lensType": "Paper 3 Modern Depth",
+                "points": [
+                  {
+                    "label": "Q2 Explain Why (12m)",
+                    "text": "Balance genuine popularity (jobs, pride, order) against Gestapo terror and SPD-KPD division to explain weak political opposition."
+                  },
+                  {
+                    "label": "Q3a Source Utility (8m)",
+                    "text": "Use clandestine 1937 Sopade reports and camouflaged pamphlets carefully, noting exiled Social Democratic perspectives alongside candid street observations."
+                  },
+                  {
+                    "label": "Q3b–d Interpretations (24m)",
+                    "text": "Debate angle: Broad popular consensus approving Hitler's achievements versus coerced silence under pervasive SS-Gestapo intimidation."
+                  }
+                ]
+              },
+              "questionSearchTerm": "Opposition conformity Sopade"
+            },
+            {
+              "id": "kt3_4_a2",
+              "title": "Opposition from the Churches: Pastor Niemöller, Bonhoeffer & Pius XI (1933–39)",
+              "dateTag": "1934–1939",
+              "lessonIndex": 11,
+              "recallPrompt": "How did Protestant and Catholic church figures resist Nazi interference while stopping short of overthrowing the regime?",
+              "facts": [
+                "In May 1934, Pastor Martin Niemöller and Dietrich Bonhoeffer founded the Protestant Confessing Church, declaring that Christians owed obedience to God rather than Nazi state ideology.",
+                "Over 800 Confessing Church pastors were arrested for defying Reich Bishop Müller, Bonhoeffer's underground seminary was closed, and Niemöller was imprisoned in concentration camps including Dachau from 1937.",
+                "In March 1937, Pope Pius XI smuggled his encyclical Mit Brennender Sorge into Catholic pulpits condemning Nazi racism and breaches of the Concordat, prompting harsh Gestapo press bans and arrests of priests."
+              ],
+              "examLens": {
+                "lensType": "Paper 3 Modern Depth",
+                "points": [
+                  {
+                    "label": "Q2 Explain Why (12m)",
+                    "text": "Explain why church opposition defended religious independence effectively yet rarely challenged Hitler's wider political rule before 1939."
+                  },
+                  {
+                    "label": "Q3a Source Utility (8m)",
+                    "text": "Assess the 1934 Barmen Declaration and Pius XI's 1937 encyclical for theological defiance versus political caution."
+                  },
+                  {
+                    "label": "Q3b–d Interpretations (24m)",
+                    "text": "Debate angle: Courageous moral defense of religious conscience versus narrow institutional self-protection that avoided opposing anti-Jewish persecution."
+                  }
+                ]
+              },
+              "questionSearchTerm": "Pastor Niemöller Confessing Church"
+            },
+            {
+              "id": "kt3_4_a3",
+              "title": "Opposition from the Young: Edelweiss Pirates & Swing Youth (1936–39)",
+              "dateTag": "1936–1939",
+              "lessonIndex": 11,
+              "recallPrompt": "How did the working-class Edelweiss Pirates and middle-class Swing Youth defy Nazi youth conformity in the late 1930s?",
+              "facts": [
+                "In Rhineland industrial cities like Cologne and Essen, working-class teenagers formed the Edelweiss Pirates after 1936, wearing check shirts and white edelweiss badges to reject Hitler Youth regimentation.",
+                "Edelweiss Pirates camped freely at weekends with boys and girls together, sang anti-Nazi parodies, painted slogans, and ambushed Hitler Youth patrols, prompting Gestapo arrests and head-shavings.",
+                "In wealthy districts of Hamburg and Berlin, affluent Swing Youth wore English clothes and makeup, welcomed Jewish friends, and danced in secret clubs to banned American jazz and swing records."
+              ],
+              "examLens": {
+                "lensType": "Paper 3 Modern Depth",
+                "points": [
+                  {
+                    "label": "Q2 Explain Why (12m)",
+                    "text": "Connect compulsory Hitler Youth military drill after 1936 and strict cultural bans to working-class Pirate and affluent Swing rebellion."
+                  },
+                  {
+                    "label": "Q3a Source Utility (8m)",
+                    "text": "Evaluate 1938–39 Gestapo and SD reports on Cologne Pirates and Hamburg Swing clubs for evidence that indoctrination was incomplete."
+                  },
+                  {
+                    "label": "Q3b–d Interpretations (24m)",
+                    "text": "Debate angle: Serious ideological youth resistance to Nazism versus non-political teenage rebellion against uniform boredom and authority."
+                  }
+                ]
+              },
+              "questionSearchTerm": "Edelweiss Pirates Swing Youth"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kt4",
+      "number": 4,
+      "title": "Key Topic 4: Life in Nazi Germany, 1933–39",
+      "dateFence": "1933–1939",
+      "outsideFenceWarning": "Stop strictly at August 1939: wartime rationing (post-Sept 1939), ghettoisation in occupied Poland, the 1942 Wannsee Conference, and extermination camps lie outside this specification.",
+      "subTopics": [
+        {
+          "id": "kt4_1",
+          "code": "4.1",
+          "title": "Nazi Policies Towards Women",
+          "dateFence": "1933–1939",
+          "outsideFenceTrap": "Contrast strictly against KT1.4 Weimar 'New Woman' (1924–29)",
+          "linkedLessonIndices": [
+            12
+          ],
+          "anchors": [
+            {
+              "id": "kt4_1_a1",
+              "title": "Nazi Views on Women, Marriage Loans, Mother's Cross & Appearance (1933–38)",
+              "dateTag": "1933–1938",
+              "lessonIndex": 12,
+              "recallPrompt": "How did Nazi family policies and propaganda try to steer women back into traditional motherhood?",
+              "facts": [
+                "Promoting Kinder, Küche, Kirche (Children, Kitchen, Church), Reich Women's Leader Gertrud Scholtz-Klink coordinated six million Nazi Women's League members while discouraging cosmetics, smoking, trousers, and slimming.",
+                "The June 1933 Law for the Encouragement of Marriage gave Aryan newlyweds interest-free 1,000-mark loans if the bride left work, cancelling 25 percent of the debt per child born.",
+                "The 1938 Mother's Cross awarded bronze for four children, silver for six, and gold for eight, while Heinrich Himmler's 1935 Lebensborn clinics encouraged unmarried Aryan women to bear children with SS men."
+              ],
+              "examLens": {
+                "lensType": "Paper 3 Modern Depth",
+                "points": [
+                  {
+                    "label": "Q2 Explain Why (12m)",
+                    "text": "Link falling Weimar birth rates, future military manpower aims, and Aryan racial goals to marriage loans, Mother's Cross medals, and Lebensborn."
+                  },
+                  {
+                    "label": "Q3a Source Utility (8m)",
+                    "text": "Examine Scholtz-Klink's Nuremberg speeches and the June 1933 Marriage Loan statute to weigh financial incentives against ideological domesticity."
+                  },
+                  {
+                    "label": "Q3b–d Interpretations (24m)",
+                    "text": "Debate angle: Genuine rise in status and birth rates for German mothers versus reactionary loss of Weimar freedom and bodily autonomy."
+                  }
+                ]
+              },
+              "questionSearchTerm": "Nazi policies towards women"
+            },
+            {
+              "id": "kt4_1_a2",
+              "title": "Women's Employment: Early Purges vs Rearmament Labour Reversal (1933–39)",
+              "dateTag": "1933–1939",
+              "lessonIndex": 12,
+              "recallPrompt": "Why did the Nazis first push women out of professions from 1933 and then reverse policy after 1937?",
+              "facts": [
+                "From 1933, women were barred from serving as judges or senior civil servants, thousands of female doctors and teachers were dismissed, and female university enrolment was capped at 10 percent.",
+                "By 1937, rapid military conscription and rearmament under Göring's Four-Year Plan created severe industrial labour shortages that clashed directly with Nazi stay-at-home ideology.",
+                "Marriage-loan wives were allowed back into factories in 1937 and unmarried women faced a 1938 compulsory Duty Year, raising female employment from 11.6 million to 14.6 million by 1939."
+              ],
+              "examLens": {
+                "lensType": "Paper 3 Modern Depth",
+                "points": [
+                  {
+                    "label": "Q2 Explain Why (12m)",
+                    "text": "Show how Four-Year Plan rearmament labour shortages forced Hitler to abandon early anti-employment restrictions after 1937."
+                  },
+                  {
+                    "label": "Q3a Source Utility (8m)",
+                    "text": "Compare 1933 speeches praising stay-at-home mothers with 1938 Sopade reports on compulsory female factory work to prove policy contradiction."
+                  },
+                  {
+                    "label": "Q3b–d Interpretations (24m)",
+                    "text": "Debate angle: Successful Nazi restoration of domestic roles versus pragmatic failure where female employment actually rose by 1939."
+                  }
+                ]
+              },
+              "questionSearchTerm": "Women employment Duty Year"
+            }
+          ]
+        },
+        {
+          "id": "kt4_2",
+          "code": "4.2",
+          "title": "Nazi Policies Towards the Young",
+          "dateFence": "1933–1939",
+          "outsideFenceTrap": "Keep youth groups in 4.2 distinct from Pirate/Swing opposition in 3.4",
+          "linkedLessonIndices": [
+            13
+          ],
+          "anchors": [
+            {
+              "id": "kt4_2_a1",
+              "title": "The Hitler Youth & League of German Maidens (BDM) (1933–39)",
+              "dateTag": "1933–1939",
+              "lessonIndex": 13,
+              "recallPrompt": "How did the Hitler Youth and League of German Maidens prepare boys and girls for distinct Nazi roles?",
+              "facts": [
+                "Reich Youth Leader Baldur von Schirach banned rival scouts and church youth clubs before the December 1936 Hitler Youth Law and March 1939 decree made membership compulsory, enrolling over eight million youths.",
+                "Boys aged ten to fourteen joined the Deutsches Jungvolk before entering the Hitler Youth at fourteen for military marching, trench map reading, camping, boxing, and rifle practice.",
+                "Girls aged fourteen to eighteen joined the Bund Deutscher Mädel (League of German Maidens), wearing blue skirts and white blouses for gymnastics, cooking, infant care, and racial motherhood lessons."
+              ],
+              "examLens": {
+                "lensType": "Paper 3 Modern Depth",
+                "points": [
+                  {
+                    "label": "Q2 Explain Why (12m)",
+                    "text": "Contrast military battlefield preparation for boys in the Hitler Youth with healthy Aryan motherhood training for girls in the League of German Maidens (BDM)."
+                  },
+                  {
+                    "label": "Q3a Source Utility (8m)",
+                    "text": "Weigh staged League of German Maidens (BDM) gymnastics photographs and Hitler's Nuremberg youth speeches against 1938 Sopade reports on drill boredom and truancy."
+                  },
+                  {
+                    "label": "Q3b–d Interpretations (24m)",
+                    "text": "Debate angle: Enthusiastic generation captivated by outdoor comradeship versus resentful teenagers alienated by compulsory military regimentation."
+                  }
+                ]
+              },
+              "questionSearchTerm": "Hitler Youth League of German Maidens"
+            },
+            {
+              "id": "kt4_2_a2",
+              "title": "Nazi Control of Education: Teachers & the Curriculum (1933–39)",
+              "dateTag": "1933–1939",
+              "lessonIndex": 13,
+              "recallPrompt": "How did the Nazis reshape German teachers, school subjects, and elite schools between 1933 and 1939?",
+              "facts": [
+                "The April 1933 Civil Service Law dismissed Jewish and politically unreliable teachers, while 97 percent of remaining teachers joined the National Socialist Teachers' League (NSLB) by 1937 and attended ideological camps.",
+                "Lessons opened and closed with the Hitler salute, physical education expanded sharply, history glorified German wars, and maths exercises calculated bombing trajectories and the state cost of disabled care.",
+                "Compulsory racial biology and eugenics taught pupils to rank Aryan 'masters' above 'subhumans', while elite Napolas boarding schools trained selected boys as ruthless future SS and military leaders."
+              ],
+              "examLens": {
+                "lensType": "Paper 3 Modern Depth",
+                "points": [
+                  {
+                    "label": "Q2 Explain Why (12m)",
+                    "text": "Connect purging staff via the NSLB with rewritten textbooks in biology, history, maths, and PE to explain classroom indoctrination."
+                  },
+                  {
+                    "label": "Q3a Source Utility (8m)",
+                    "text": "Inspect 1935 Nazi secondary maths and racial biology textbooks to demonstrate how everyday lessons normalised eugenics and war."
+                  },
+                  {
+                    "label": "Q3b–d Interpretations (24m)",
+                    "text": "Debate angle: Total ideological capture of young minds through schools versus declining academic standards caused by anti-intellectual drill."
+                  }
+                ]
+              },
+              "questionSearchTerm": "Nazi education curriculum"
+            }
+          ]
+        },
+        {
+          "id": "kt4_3",
+          "code": "4.3",
+          "title": "Employment and Living Standards",
+          "dateFence": "1933–1939",
+          "outsideFenceTrap": "Outside 4.3: Pre-1933 Brüning unemployment (KT2.3) & post-Sept 1939 war economy",
+          "linkedLessonIndices": [
+            14
+          ],
+          "anchors": [
+            {
+              "id": "kt4_3_a1",
+              "title": "Reducing Unemployment: RAD, Autobahns, Rearmament & Invisible Unemployment (1933–39)",
+              "dateTag": "1933–1939",
+              "lessonIndex": 14,
+              "recallPrompt": "How did Nazi policies cut official unemployment from six million to under 300,000, and what did 'invisible unemployment' hide?",
+              "facts": [
+                "From July 1935, Konstantin Hierl's Reich Labour Service (RAD) required unmarried men aged eighteen to twenty-five to serve six months on low pay draining marshes and building Fritz Todt's 7,000-kilometre Autobahn network.",
+                "Reintroducing military conscription in March 1935 drafted 1.4 million men into the armed forces by 1939, while Hermann Göring's 1936 Four-Year Plan poured billions into rearmament and synthetic autarky industries.",
+                "Official figures fell from over six million jobless in 1933 to under 300,000 by 1939, partly through 'invisible unemployment' excluding dismissed Jews, married women, RAD conscripts, and camp inmates."
+              ],
+              "examLens": {
+                "lensType": "Paper 3 Modern Depth",
+                "points": [
+                  {
+                    "label": "Q2 Explain Why (12m)",
+                    "text": "Group public works (RAD and Autobahns), rearmament and 1935 conscription, and statistical 'invisible unemployment' exclusions."
+                  },
+                  {
+                    "label": "Q3a Source Utility (8m)",
+                    "text": "Test official Nazi unemployment charts against hidden exclusions of dismissed Jewish professionals, women, and RAD conscripts."
+                  },
+                  {
+                    "label": "Q3b–d Interpretations (24m)",
+                    "text": "Debate angle: Genuine Nazi 'economic miracle' restoring full employment versus unsustainable war-driven recovery resting on coerced labour and manipulated statistics."
+                  }
+                ]
+              },
+              "questionSearchTerm": "Reich Labour Service Invisible Unemployment"
+            },
+            {
+              "id": "kt4_3_a2",
+              "title": "Workers' Living Standards: DAF, Strength Through Joy (KdF) & Beauty of Labour (1933–39)",
+              "dateTag": "1933–1939",
+              "lessonIndex": 14,
+              "recallPrompt": "Were German workers better or worse off under the German Labour Front, Strength Through Joy, and Beauty of Labour?",
+              "facts": [
+                "Replacing banned unions in May 1933, Robert Ley's German Labour Front (DAF) outlawed strikes, introduced 1935 workbooks restricting job moves, and raised weekly hours from 43 to 49 by 1939.",
+                "Strength Through Joy (KdF) rewarded compliant workers with subsidised theatre tickets, sports, and cruises while collecting five marks weekly for a Volkswagen 'People's Car' that no civilian saver ever received.",
+                "Beauty of Labour (SdA) campaigned for cleaner factory canteens and washrooms—often built by workers unpaid after shifts—while Göring's 'guns before butter' rearmament caused shortages and rising food prices."
+              ],
+              "examLens": {
+                "lensType": "Paper 3 Modern Depth",
+                "points": [
+                  {
+                    "label": "Q2 Explain Why (12m)",
+                    "text": "Contrast job security and KdF leisure perks against lost union rights, compulsory workbooks, longer hours, and empty Volkswagen promises."
+                  },
+                  {
+                    "label": "Q3a Source Utility (8m)",
+                    "text": "Judge DAF and KdF posters against rising working hours and Four-Year Plan consumer shortages in working-class households."
+                  },
+                  {
+                    "label": "Q3b–d Interpretations (24m)",
+                    "text": "Debate angle: Improved material security and leisure access for German workers versus intensified exploitation without free trade union protection."
+                  }
+                ]
+              },
+              "questionSearchTerm": "German Labour Front Strength Through Joy"
+            }
+          ]
+        },
+        {
+          "id": "kt4_4",
+          "code": "4.4",
+          "title": "The Persecution of Minorities",
+          "dateFence": "1933–1939",
+          "outsideFenceTrap": "Stop strictly at Aug 1939: post-1941 wartime death camps lie outside 1HI0/31",
+          "linkedLessonIndices": [
+            12,
+            15
+          ],
+          "anchors": [
+            {
+              "id": "kt4_4_a1",
+              "title": "Racial Beliefs & Treatment of Minority Groups: Slavs, Roma & Sinti, Homosexuals & Disabled People (1933–39)",
+              "dateTag": "1933–1939",
+              "lessonIndex": 15,
+              "recallPrompt": "How did Nazi racial hygiene ideology drive the persecution of non-Jewish minority groups between 1933 and 1939?",
+              "facts": [
+                "Grounded in Social Darwinism and eugenics, Nazi racial beliefs drove harsh treatment of minority groups, exalting Nordic Aryans as a 'master race' (Herrenvolk) while branding Slavs, Roma and Sinti, and Jewish people as 'subhumans' (Untermenschen).",
+                "Targeting people with disabilities under the July 1933 Law for the Prevention of Hereditarily Diseased Offspring, Hereditary Health Courts forcibly sterilised around 400,000 citizens diagnosed with alleged hereditary illnesses.",
+                "Roma and Sinti families were rounded into municipal internment camps such as Berlin-Marzahn and barred from Aryan marriage, while over 15,000 gay men were jailed under Paragraph 175 wearing pink camp triangles."
+              ],
+              "examLens": {
+                "lensType": "Paper 3 Modern Depth",
+                "points": [
+                  {
+                    "label": "Q2 Explain Why (12m)",
+                    "text": "Connect Aryan blood-purity beliefs, demographic birth goals, and economic 'burden' propaganda to sterilisation, Marzahn internment, and Paragraph 175."
+                  },
+                  {
+                    "label": "Q3a Source Utility (8m)",
+                    "text": "Evaluate the July 1933 Sterilisation Law and school racial-hygiene texts to show how pseudoscience legitimised state cruelty."
+                  },
+                  {
+                    "label": "Q3b–d Interpretations (24m)",
+                    "text": "Debate angle: Centrally planned biological engineering of the Volksgemeinschaft versus escalating radicalisation driven by medical and SS officials."
+                  }
+                ]
+              },
+              "questionSearchTerm": "Persecution of minorities eugenics"
+            },
+            {
+              "id": "kt4_4_a2",
+              "title": "Persecution of Jewish People: 1933 Boycott, Nuremberg Laws & Kristallnacht (1933–39)",
+              "dateTag": "1933–1939",
+              "lessonIndex": 15,
+              "recallPrompt": "How did Nazi persecution of German Jews escalate from 1933 boycotts and legal exclusion to Kristallnacht terror in 1938?",
+              "facts": [
+                "Persecution began with the SA one-day boycott of Jewish shops and businesses on 1 April 1933 and the 7 April Civil Service Act purging Jewish civil servants, judges, and teachers.",
+                "In September 1935, the Nuremberg Laws stripped German Jews of Reich citizenship and voting rights while outlawing marriage or sexual relations between Jews and Aryans based on grandparent ancestry.",
+                "On 9–10 November 1938, Goebbels and Heydrich orchestrated Kristallnacht, burning over 1,000 synagogues, smashing 7,500 shops, killing 91 Jews, arresting 30,000 men, imposing a one-billion-mark fine, and enforcing Aryanisation and emigration."
+              ],
+              "examLens": {
+                "lensType": "Paper 3 Modern Depth",
+                "points": [
+                  {
+                    "label": "Q2 Explain Why (12m)",
+                    "text": "Trace clear escalation stages: 1933 professional exclusion, 1935 Nuremberg legal segregation, and 1938–39 violent terror, Aryanisation, and coerced flight."
+                  },
+                  {
+                    "label": "Q3a Source Utility (8m)",
+                    "text": "Pair Heydrich's secret 1:20 a.m. Kristallnacht orders with British consular reports to disprove Nazi claims of 'spontaneous' public anger."
+                  },
+                  {
+                    "label": "Q3b–d Interpretations (24m)",
+                    "text": "Debate angle: Straight-line execution of Hitler's Mein Kampf blueprint versus cumulative radicalisation accelerating sharply in 1938."
+                  }
+                ]
+              },
+              "questionSearchTerm": "Nuremberg Laws Kristallnacht"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

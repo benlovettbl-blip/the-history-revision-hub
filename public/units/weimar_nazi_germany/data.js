@@ -362,8 +362,8 @@ export default {
         {
           "title": "Mutiny on the High Seas: The Kiel Sailors' Revolt and Imperial Collapse (1918)",
           "act": 1,
-          "text": "<span class=\"para-ref\">[1.1]</span> By autumn 1918, Imperial Germany faced military collapse on the Western Front. Four hard years of the British **Allied naval blockade** had cut civilian supply lines, causing **Turnip Winter starvation** that killed over 750,000 civilians. When naval commanders ordered a suicidal final battle against the British fleet, exhausted sailors mutinied.\n\n<span class=\"para-ref\">[1.2]</span> Revolt broke out in the **Kiel naval mutiny** on 3 November 1918, as forty thousand armed sailors and dockworkers seized naval bases and raised red socialist banners. Within days, workers' and soldiers' councils took power across major cities, proving imperial leaders had lost control of the armed forces and sparking the German Revolution.",
-          "content": "<span class=\"para-ref\">[1.1]</span> By autumn 1918, Imperial Germany faced military collapse on the Western Front. Four hard years of the British **Allied naval blockade** had cut civilian supply lines, causing **Turnip Winter starvation** that killed over 750,000 civilians. When naval commanders ordered a suicidal final battle against the British fleet, exhausted sailors mutinied.\n\n<span class=\"para-ref\">[1.2]</span> Revolt broke out in the **Kiel naval mutiny** on 3 November 1918, as forty thousand armed sailors and dockworkers seized naval bases and raised red socialist banners. Within days, workers' and soldiers' councils took power across major cities, proving imperial leaders had lost control of the armed forces and sparking the German Revolution.",
+          "text": "<span class=\"para-ref\">[1.1]</span> By autumn 1918, Imperial Germany faced military collapse on the Western Front and bitter discontent at home. Four hard years of the British **Allied naval blockade** had cut vital food and fuel imports, causing **Turnip Winter starvation** that killed over 750,000 German civilians. When admirals ordered a suicidal final battle against the British fleet, exhausted sailors refused to sail.\n\n<span class=\"para-ref\">[1.2]</span> Open revolt erupted in the **Kiel naval mutiny** on 3 November 1918, as forty thousand armed sailors and dockworkers seized naval bases and raised red socialist banners. Within days, mass strikes and **political unrest** swept across German cities as workers' and soldiers' councils seized town halls, proving imperial leaders had lost control of the armed forces and sparking revolution.",
+          "content": "<span class=\"para-ref\">[1.1]</span> By autumn 1918, Imperial Germany faced military collapse on the Western Front and bitter discontent at home. Four hard years of the British **Allied naval blockade** had cut vital food and fuel imports, causing **Turnip Winter starvation** that killed over 750,000 German civilians. When admirals ordered a suicidal final battle against the British fleet, exhausted sailors refused to sail.\n\n<span class=\"para-ref\">[1.2]</span> Open revolt erupted in the **Kiel naval mutiny** on 3 November 1918, as forty thousand armed sailors and dockworkers seized naval bases and raised red socialist banners. Within days, mass strikes and **political unrest** swept across German cities as workers' and soldiers' councils seized town halls, proving imperial leaders had lost control of the armed forces and sparking revolution.",
           "sources": [
             {
               "id": "weimar_l1_source_b",
@@ -418,8 +418,8 @@ export default {
           "isReversed": false,
           "act_title": "Stage 1: How did naval mutiny and civilian starvation force military leaders to surrender?",
           "paragraphs": [
-            "<span class=\"para-ref\">[1.1]</span> By autumn 1918, Imperial Germany was facing imminent military collapse on the Western Front. Four grueling years of the British **Allied naval blockade** had strangled civilian supply lines, causing catastrophic food deprivation remembered as the **Turnip Winter starvation** that killed over 750,000 civilians. When naval commanders ordered a suicidal final sortie against the British fleet, exhausted sailors mutinied.",
-            "<span class=\"para-ref\">[1.2]</span> The rebellion exploded into the historic **Kiel naval mutiny** on 3 November 1918, where forty thousand armed sailors and dockworkers seized control of naval bases and raised socialist red banners. Within days, workers' and soldiers' councils took power across major cities, proving that imperial authorities had lost control of the armed forces and sparking the German Revolution."
+            "<span class=\"para-ref\">[1.1]</span> By autumn 1918, Imperial Germany faced military collapse on the Western Front and bitter discontent at home. Four hard years of the British **Allied naval blockade** had cut vital food and fuel imports, causing **Turnip Winter starvation** that killed over 750,000 German civilians. When admirals ordered a suicidal final battle against the British fleet, exhausted sailors refused to sail.",
+            "<span class=\"para-ref\">[1.2]</span> Open revolt erupted in the **Kiel naval mutiny** on 3 November 1918, as forty thousand armed sailors and dockworkers seized naval bases and raised red socialist banners. Within days, mass strikes and **political unrest** swept across German cities as workers' and soldiers' councils seized town halls, proving imperial leaders had lost control of the armed forces and sparking revolution."
           ],
           "stage_hook_map": {
             "id": "wng-l1-german-revolution-weimar-map",
@@ -871,17 +871,17 @@ export default {
         },
         {
           "stage": 1,
-          "question": "On what exact date was the Armistice signed?",
-          "q": "On what exact date was the Armistice signed?",
+          "question": "What home-front crisis caused by four years of the British Allied naval blockade killed over 750,000 German civilians by 1918?",
+          "q": "What home-front crisis caused by four years of the British Allied naval blockade killed over 750,000 German civilians by 1918?",
           "options": [
-            "11 November 1918",
-            "28 June 1919",
-            "1 September 1939",
-            "9 November 1918"
+            "Severe food shortages and 'Turnip Winter' starvation",
+            "Allied aerial bombing of Berlin and Munich",
+            "A nationwide hyperinflation crisis wiping out wages",
+            "The French military occupation of the Ruhr coalfields"
           ],
-          "answer": "11 November 1918",
-          "a": "11 November 1918",
-          "explanation": "The rebellion exploded into the historic Kiel naval mutiny on 3 November 1918, where forty thousand armed sailors and dockworkers seized control of naval bases and raised socialist red banners."
+          "answer": "Severe food shortages and 'Turnip Winter' starvation",
+          "a": "Severe food shortages and 'Turnip Winter' starvation",
+          "explanation": "Four years of the British naval blockade severed German supply lines, causing widespread starvation — including the notorious Turnip Winter — that killed over 750,000 civilians and shattered morale."
         },
         {
           "stage": 1,
@@ -913,17 +913,17 @@ export default {
         },
         {
           "stage": 2,
-          "question": "On what exact date did Kaiser Wilhelm II abdicate?",
-          "q": "On what exact date did Kaiser Wilhelm II abdicate?",
+          "question": "Why did Philipp Scheidemann urgently proclaim a new German Republic from a Reichstag window in November 1918?",
+          "q": "Why did Philipp Scheidemann urgently proclaim a new German Republic from a Reichstag window in November 1918?",
           "options": [
-            "11 November 1918",
-            "9 November 1918",
-            "1 January 1919",
-            "28 June 1919"
+            "To prevent communists from declaring a Soviet republic first",
+            "To obey a direct order from Kaiser Wilhelm II in Spa",
+            "To meet the conditions of the Treaty of Versailles",
+            "To support General Groener's military coup in Berlin"
           ],
-          "answer": "9 November 1918",
-          "a": "9 November 1918",
-          "explanation": "On 9 November 1918, massive general strikes brought central Berlin to a standstill as revolutionary crowds surrounded government ministries."
+          "answer": "To prevent communists from declaring a Soviet republic first",
+          "a": "To prevent communists from declaring a Soviet republic first",
+          "explanation": "With revolutionary crowds filling Berlin after the Kaiser's abdication, Scheidemann hastily proclaimed a democratic republic to stop radical communists from declaring a Soviet-style republic first."
         },
         {
           "stage": 2,
@@ -1123,17 +1123,17 @@ export default {
         },
         {
           "stage": 5,
-          "question": "On what exact date was the Weimar Constitution formally promulgated?",
-          "q": "On what exact date was the Weimar Constitution formally promulgated?",
+          "question": "How did proportional representation weaken the political stability of the Weimar Republic?",
+          "q": "How did proportional representation weaken the political stability of the Weimar Republic?",
           "options": [
-            "9 November 1918",
-            "28 June 1919",
-            "11 August 1919",
-            "30 January 1933"
+            "It prevented women and working-class citizens from voting",
+            "It gave the Kaiser a permanent veto over all Reichstag laws",
+            "It allowed small fringe parties to multiply, causing unstable coalition governments",
+            "It banned moderate parties like the SPD from entering parliament"
           ],
-          "answer": "11 August 1919",
-          "a": "11 August 1919",
-          "explanation": "Promulgated on 11 August 1919, the Weimar Constitution established universal suffrage from age twenty alongside proportional representation and Article 48."
+          "answer": "It allowed small fringe parties to multiply, causing unstable coalition governments",
+          "a": "It allowed small fringe parties to multiply, causing unstable coalition governments",
+          "explanation": "Because every small party won Reichstag seats in exact proportion to its vote share, single-party majorities became impossible and Germany suffered fragile, short-lived coalition governments."
         }
       ],
       "tasks": [],
@@ -1425,7 +1425,7 @@ export default {
           "dates": "Oct–Nov 1918",
           "question": "How did naval mutiny and civilian starvation force military leaders to surrender?",
           "questionHeading": "How did naval mutiny and civilian starvation force military leaders to surrender?",
-          "prose_hash": "384e5c32bb"
+          "prose_hash": "a8d1ce72b1"
         },
         {
           "step": 2,
@@ -1571,7 +1571,7 @@ export default {
             "desc": "The German naval command ordered a suicidal final naval sortie against the British fleet, sparking mutinies at Wilhelmshaven and Kiel that triggered popular revolution.",
             "connective": "Mutinous sailors and striking workers formed revolutionary councils across Germany, shattering imperial authority and making peace negotiations unavoidable.",
             "question": "How did naval mutiny and civilian starvation force military leaders to surrender?",
-            "prose_hash": "384e5c32bb"
+            "prose_hash": "a8d1ce72b1"
           },
           {
             "step": 2,
@@ -1831,9 +1831,9 @@ export default {
             "mode": "landscape",
             "pos": "center 25%",
             "stat": "750,000+ Civilians Killed by Allied Blockade",
-            "html": "Britain’s naval blockade caused severe starvation that killed over <strong>750,000 civilians</strong>. Ordered on a suicide mission, <strong>40,000 sailors mutinied at Kiel</strong> and set up workers’ and soldiers’ councils.",
-            "spoken": "How was the Weimar Republic born out of war defeat and chaos? <short pause> Britain’s naval blockade caused severe starvation that killed over 750,000 civilians . Ordered on a suicide mission, 40,000 sailors mutinied at Kiel and set up workers’ and soldiers’ councils.",
-            "paired_prose_hash": "384e5c32bb",
+            "html": "Britain’s blockade caused starvation killing <strong>750,000+ civilians</strong>. Mutinying at <strong>Kiel</strong>, 40,000 sailors sparked nationwide <strong>political unrest</strong> as workers’ and soldiers’ councils seized cities.",
+            "spoken": "How was the Weimar Republic born out of war defeat and chaos? <short pause> Britain’s blockade caused starvation killing over 750,000 civilians. Mutinying at Kiel, 40,000 sailors sparked nationwide political unrest as workers’ and soldiers’ councils seized cities.",
+            "paired_prose_hash": "a8d1ce72b1",
             "connective": "How was the Weimar Republic born out of war defeat and chaos?"
           },
           {
@@ -1843,8 +1843,8 @@ export default {
             "img": "/images/weimar_abdication_decree_1918.jpg",
             "mode": "contain-light",
             "stat": "9 Nov 1918: End of 500 Years of Royal Rule",
-            "html": "Warned that soldiers would no longer obey him, <strong>Kaiser Wilhelm II abdicated</strong> and fled to Holland. From a Reichstag window, <strong>Philipp Scheidemann</strong> proclaimed the new <strong>German Republic</strong>.",
-            "spoken": "Within days, armed revolution reached central Berlin. <short pause> Warned that soldiers would no longer obey him, Kaiser Wilhelm II abdicated and fled to Holland. From a Reichstag window, Philipp Scheidemann proclaimed the new German Republic .",
+            "html": "Warned soldiers would not obey him, the <strong>abdication of Kaiser Wilhelm II</strong> ended royal rule; he fled to Holland as <strong>Philipp Scheidemann</strong> proclaimed the <strong>German Republic</strong>.",
+            "spoken": "Within days, armed revolution reached central Berlin. <short pause> Warned soldiers would not obey him, the abdication of Kaiser Wilhelm the Second ended royal rule; he fled to Holland as Philipp Scheidemann proclaimed the German Republic.",
             "paired_prose_hash": "cb662b1d75",
             "connective": "Within days, armed revolution reached central Berlin."
           },
@@ -2335,8 +2335,8 @@ export default {
         {
           "title": "The Diktat of Versailles: War Guilt, Reparations and the 'Stab in the Back' Legend (Jun 1919)",
           "act": 2,
-          "text": "<span class=\"para-ref\">[2.1]</span> On 28 June 1919, threats of Allied invasion forced German envoys to sign the Treaty of Versailles. Hated across Germany as a humiliating *Diktat* (dictated peace), the treaty enforced the harsh **Article 231 War Guilt** clause. Germany had to accept sole blame for the war and pay **£6.6 billion reparations** to the Allies.\n\n<span class=\"para-ref\">[2.2]</span> Germany also lost thirteen percent of its European land and all overseas colonies, while its army was capped at 100,000 volunteers. Nationalists blamed democratic politicians for signing these terms and spread the **'Dolchstoss' backstab myth**, falsely claiming socialists and Jews had betrayed an unbeaten army.",
-          "content": "<span class=\"para-ref\">[2.1]</span> On 28 June 1919, threats of Allied invasion forced German envoys to sign the Treaty of Versailles. Hated across Germany as a humiliating *Diktat* (dictated peace), the treaty enforced the harsh **Article 231 War Guilt** clause. Germany had to accept sole blame for the war and pay **£6.6 billion reparations** to the Allies.\n\n<span class=\"para-ref\">[2.2]</span> Germany also lost thirteen percent of its European land and all overseas colonies, while its army was capped at 100,000 volunteers. Nationalists blamed democratic politicians for signing these terms and spread the **'Dolchstoss' backstab myth**, falsely claiming socialists and Jews had betrayed an unbeaten army.",
+          "text": "<span class=\"para-ref\">[2.1]</span> On 28 June 1919, threats of renewed Allied invasion forced German envoys to sign the **Treaty of Versailles**. Hated across Germany as a humiliating *Diktat* (dictated peace), its harsh terms became a primary cause of the **early unpopularity of the Republic**. Under **Article 231 War Guilt**, Germany had to accept sole blame for the war and pay **£6.6 billion reparations**.\n\n<span class=\"para-ref\">[2.2]</span> Germany also lost thirteen percent of its European territory and all overseas colonies, had to demilitarise the Rhineland, and saw its army capped at 100,000 volunteers without tanks or aircraft. Right-wing nationalists blamed democratic leaders for signing and spread **the 'stab in the back' theory** (*Dolchstoss*), falsely claiming socialists and Jews had betrayed an unbeaten German army at home.",
+          "content": "<span class=\"para-ref\">[2.1]</span> On 28 June 1919, threats of renewed Allied invasion forced German envoys to sign the **Treaty of Versailles**. Hated across Germany as a humiliating *Diktat* (dictated peace), its harsh terms became a primary cause of the **early unpopularity of the Republic**. Under **Article 231 War Guilt**, Germany had to accept sole blame for the war and pay **£6.6 billion reparations**.\n\n<span class=\"para-ref\">[2.2]</span> Germany also lost thirteen percent of its European territory and all overseas colonies, had to demilitarise the Rhineland, and saw its army capped at 100,000 volunteers without tanks or aircraft. Right-wing nationalists blamed democratic leaders for signing and spread **the 'stab in the back' theory** (*Dolchstoss*), falsely claiming socialists and Jews had betrayed an unbeaten German army at home.",
           "sources": [
             {
               "id": "weimar_l2_source_a",
@@ -2391,8 +2391,8 @@ export default {
           "isReversed": false,
           "act_title": "Stage 2: How did the Versailles Treaty foster deep nationalist hatred of the Republic?",
           "paragraphs": [
-            "<span class=\"para-ref\">[2.1]</span> On 28 June 1919, German delegates were forced to sign the Treaty of Versailles under threat of immediate Allied invasion. Denounced across the political spectrum as a humiliating diktat, the treaty enforced the punitive **Article 231 War Guilt** clause, requiring Germany to accept sole moral responsibility for the war and justifying astronomical **£6.6 billion reparations** payments to Allied powers.",
-            "<span class=\"para-ref\">[2.2]</span> Germany lost thirteen percent of its European territory, its overseas colonies, and had its army capped at one hundred thousand volunteers. Nationalist circles bitterly blamed democratic politicians for accepting these catastrophic terms, aggressively promoting the **'Dolchstoss' backstab myth**, which falsely alleged that the German army was undefeated on the battlefield but betrayed from within by socialists and Jews."
+            "<span class=\"para-ref\">[2.1]</span> On 28 June 1919, threats of renewed Allied invasion forced German envoys to sign the **Treaty of Versailles**. Hated across Germany as a humiliating *Diktat* (dictated peace), its harsh terms became a primary cause of the **early unpopularity of the Republic**. Under **Article 231 War Guilt**, Germany had to accept sole blame for the war and pay **£6.6 billion reparations**.",
+            "<span class=\"para-ref\">[2.2]</span> Germany also lost thirteen percent of its European territory and all overseas colonies, had to demilitarise the Rhineland, and saw its army capped at 100,000 volunteers without tanks or aircraft. Right-wing nationalists blamed democratic leaders for signing and spread **the 'stab in the back' theory** (*Dolchstoss*), falsely claiming socialists and Jews had betrayed an unbeaten German army at home."
           ],
           "stage_hook_map": {
             "id": "wng-l2-versailles-losses-ruhr-map",
@@ -2787,17 +2787,17 @@ export default {
         },
         {
           "stage": 2,
-          "question": "On what exact date was the Treaty of Versailles signed?",
-          "q": "On what exact date was the Treaty of Versailles signed?",
+          "question": "What did right-wing nationalists falsely claim through the 'Dolchstoss' (stab-in-the-back) myth after 1919?",
+          "q": "What did right-wing nationalists falsely claim through the 'Dolchstoss' (stab-in-the-back) myth after 1919?",
           "options": [
-            "28 June 1919",
-            "11 November 1918",
-            "9 November 1918",
-            "28 June 1914"
+            "That France had secretly funded the Kiel naval mutiny",
+            "That socialists and Jews had betrayed an unbeaten German army",
+            "That the Freikorps had forced the Kaiser to abdicate",
+            "That Britain had secretly written the Weimar Constitution"
           ],
-          "answer": "28 June 1919",
-          "a": "28 June 1919",
-          "explanation": "On 28 June 1919, German delegates were forced to sign the Treaty of Versailles under threat of immediate Allied invasion."
+          "answer": "That socialists and Jews had betrayed an unbeaten German army",
+          "a": "That socialists and Jews had betrayed an unbeaten German army",
+          "explanation": "Nationalists and former generals dodged blame for Germany's 1918 military defeat by spreading the 'Dolchstoss' myth, falsely claiming civilian politicians, socialists, and Jews had betrayed an unbeaten army."
         },
         {
           "stage": 2,
@@ -2917,7 +2917,7 @@ export default {
           "q": "Which right-wing nationalist secret terror group orchestrated the assassinations of republican politicians between 1921 and 1922?",
           "options": [
             "The Spartacist League",
-            "The Red Orchestra",
+            "The Thule Society",
             "The Edelweiss Pirates",
             "Organisation Consul"
           ],
@@ -3699,7 +3699,7 @@ export default {
           "dates": "28 Jun 1919",
           "question": "How did the Versailles Treaty foster deep nationalist hatred of the Republic?",
           "questionHeading": "How did the Versailles Treaty foster deep nationalist hatred of the Republic?",
-          "prose_hash": "479f91a39f"
+          "prose_hash": "730ef686c4"
         },
         {
           "step": 3,
@@ -3826,7 +3826,7 @@ export default {
             "desc": "Allied leaders forced Germany under threat of renewed invasion to sign the Versailles Treaty, imposing Article 231 War Guilt, £6.6bn reparations, and severe land loss.",
             "connective": "Nationalists branded Weimar politicians the \"November Criminals\" and propagated the Dolchstoßlegende, permanently undermining public faith in democracy.",
             "question": "How did the Versailles Treaty foster deep nationalist hatred of the Republic?",
-            "prose_hash": "479f91a39f"
+            "prose_hash": "730ef686c4"
           },
           {
             "step": 3,
@@ -4082,7 +4082,7 @@ export default {
             "stat": "Article 231 Guilt • £6.6bn Bill • 13% Land Lost",
             "html": "Forced to sign the <strong>Treaty of Versailles</strong>, Germany accepted <strong>Article 231 War Guilt</strong>, <strong>£6.6 billion reparations</strong>, a 100,000-man army cap, and lost 13% of its European land.",
             "spoken": "Six months later came a hated peace treaty. <short pause> Forced to sign the Treaty of Versailles , Germany accepted Article 231 War Guilt , 6 pounds.6 billion reparations , a 100,000-man army cap, and lost 13% of its European land.",
-            "paired_prose_hash": "479f91a39f",
+            "paired_prose_hash": "730ef686c4",
             "connective": "Six months later came a hated peace treaty."
           },
           {
@@ -4105,8 +4105,8 @@ export default {
             "img": "/images/dolchstosslegende_postcard_1919.jpg",
             "mode": "contain-light",
             "stat": "350+ Assassinations • Erzberger & Rathenau Killed",
-            "html": "Spreading the <strong>“stab in the back” myth</strong>, secret <strong>Organisation Consul</strong> gunmen murdered <strong>Erzberger and Rathenau</strong> while biased right-wing judges gave nationalist killers light sentences.",
-            "spoken": "Defeated openly, extremists turned to political murder. <short pause> Spreading the “stab in the back” myth , secret Organisation Consul gunmen murdered Erzberger and Rathenau while biased right-wing judges gave nationalist killers light sentences.",
+            "html": "Spreading the <strong>“stab in the back” theory</strong>, secret <strong>Organisation Consul</strong> gunmen murdered <strong>Erzberger and Rathenau</strong> while biased right-wing judges passed soft sentences.",
+            "spoken": "Defeated openly, extremists turned to political murder. <short pause> Spreading the “stab in the back” theory, secret Organisation Consul gunmen murdered Erzberger and Rathenau while biased right-wing judges passed soft sentences.",
             "paired_prose_hash": "944d345f60",
             "connective": "Defeated openly, extremists turned to political murder."
           },
@@ -4130,8 +4130,8 @@ export default {
             "img": "/images/weimar_hyperinflation_children_cash_1923.jpg",
             "mode": "contain",
             "stat": "Life Savings & Pensions Wiped Out Overnight",
-            "html": "Workers and coalition leaders kept <strong>Weimar alive</strong> through five brutal years. Yet <strong>Versailles humiliation</strong> and worthless cash wiped out <strong>middle-class savings</strong>, poisoning trust in democracy.",
-            "spoken": "The republic survived, yet deep scars remained. <short pause> Workers and coalition leaders kept Weimar alive through five brutal years. Yet Versailles humiliation and worthless cash wiped out middle-class savings , poisoning trust in democracy.",
+            "html": "Workers kept <strong>Weimar alive</strong>, yet Versailles fuelled <strong>early unpopularity of the Republic</strong> and hyperinflation wiped out <strong>middle-class savings</strong>, poisoning trust in democracy.",
+            "spoken": "The republic survived, yet deep scars remained. <short pause> Workers kept Weimar alive, yet Versailles fuelled early unpopularity of the Republic and hyperinflation wiped out middle-class savings, poisoning trust in democracy.",
             "connective": "The republic survived, yet deep scars remained."
           }
         ],
@@ -4143,8 +4143,8 @@ export default {
             "A dictated peace; German anger at having no say over Versailles terms."
           ],
           [
-            "2. Dolchstosslegende",
-            "False nationalist myth that politicians and Jews betrayed an unbeaten army."
+            "2. “Stab in the Back” Theory",
+            "False Dolchstoss theory claiming politicians and Jews betrayed an unbeaten German army."
           ],
           [
             "3. Hyperinflation",
@@ -4526,8 +4526,8 @@ export default {
         {
           "title": "Wall Street Gold: The Dawes Plan and the Influx of American Loans (1924)",
           "act": 2,
-          "text": "<span class=\"para-ref\">[2.1]</span> Following a policy of *Erfüllungspolitik* (fulfillment), Stresemann next agreed the **1924 Dawes Plan** with Allied banker Charles Dawes (leaving final bill cuts to the later Young Plan). Dawes restructured annual reparations down to one billion gold marks at first, rising later only in step with German industrial output.\n\n<span class=\"para-ref\">[2.2]</span> Crucially, the deal unlocked an influx of American loans totaling **800 million gold marks** (**800m**) from Wall Street banks. American capital modernised German factories, municipal railways, and public housing. Yet it also created a risky dependency, tying German prosperity closely to the US stock market.",
-          "content": "<span class=\"para-ref\">[2.1]</span> Following a policy of *Erfüllungspolitik* (fulfillment), Stresemann next agreed the **1924 Dawes Plan** with Allied banker Charles Dawes (leaving final bill cuts to the later Young Plan). Dawes restructured annual reparations down to one billion gold marks at first, rising later only in step with German industrial output.\n\n<span class=\"para-ref\">[2.2]</span> Crucially, the deal unlocked an influx of American loans totaling **800 million gold marks** (**800m**) from Wall Street banks. American capital modernised German factories, municipal railways, and public housing. Yet it also created a risky dependency, tying German prosperity closely to the US stock market.",
+          "text": "<span class=\"para-ref\">[2.1]</span> Following a pragmatic policy of *Erfüllungspolitik* (fulfilment) to drive **economic recovery**, Stresemann agreed the **1924 Dawes Plan** with Allied banker Charles Dawes while leaving final debt cuts to the later Young Plan. Dawes lowered annual reparations to an affordable one billion gold marks at first, rising over five years only in step with German industrial output and tax growth.\n\n<span class=\"para-ref\">[2.2]</span> Crucially, the agreement unlocked **800 million gold marks** (**800m**) in Wall Street credit alongside vital **American loans and investment** across German industry. Foreign capital built modern factories, municipal railways, power stations, and public housing, cutting unemployment and boosting exports. Yet this reliance created a dangerous weakness, tying German prosperity directly to the health of American banks.",
+          "content": "<span class=\"para-ref\">[2.1]</span> Following a pragmatic policy of *Erfüllungspolitik* (fulfilment) to drive **economic recovery**, Stresemann agreed the **1924 Dawes Plan** with Allied banker Charles Dawes while leaving final debt cuts to the later Young Plan. Dawes lowered annual reparations to an affordable one billion gold marks at first, rising over five years only in step with German industrial output and tax growth.\n\n<span class=\"para-ref\">[2.2]</span> Crucially, the agreement unlocked **800 million gold marks** (**800m**) in Wall Street credit alongside vital **American loans and investment** across German industry. Foreign capital built modern factories, municipal railways, power stations, and public housing, cutting unemployment and boosting exports. Yet this reliance created a dangerous weakness, tying German prosperity directly to the health of American banks.",
           "sources": [
             {
               "id": "weimar_l3_source_b",
@@ -4578,8 +4578,8 @@ export default {
             "question": "What does Source B reveal about the financial mechanisms that enabled Weimar Germany's economic revival between 1924 and 1929?"
           },
           "paragraphs": [
-            "<span class=\"para-ref\">[2.1]</span> To resolve the paralyzed international reparations dispute and stabilize the German economy, Stresemann negotiated the **1924 Dawes Plan** with the Western Allies, chaired by American financier Charles Dawes. The agreement provided crucial fiscal breathing room by establishing a **reparations annual restructuring**, scaling down initial German payments to one billion gold marks annually and pegging future installments directly to Germany's economic performance.",
-            "<span class=\"para-ref\">[2.2]</span> Crucially, the agreement unlocked massive transatlantic financial aid, delivering **800m gold-mark loans** from Wall Street investment banks directly to Germany. This influx of American capital financed extensive modernisation of factories, municipal railways, and social housing estates. However, it created a dangerous financial dependency, leaving the German economy perilously tethered to the stability of the United States stock market."
+            "<span class=\"para-ref\">[2.1]</span> Following a pragmatic policy of *Erfüllungspolitik* (fulfilment) to drive **economic recovery**, Stresemann agreed the **1924 Dawes Plan** with Allied banker Charles Dawes while leaving final debt cuts to the later Young Plan. Dawes lowered annual reparations to an affordable one billion gold marks at first, rising over five years only in step with German industrial output and tax growth.",
+            "<span class=\"para-ref\">[2.2]</span> Crucially, the agreement unlocked **800 million gold marks** (**800m**) in Wall Street credit alongside vital **American loans and investment** across German industry. Foreign capital built modern factories, municipal railways, power stations, and public housing, cutting unemployment and boosting exports. Yet this reliance created a dangerous weakness, tying German prosperity directly to the health of American banks."
           ],
           "concept_widget": {
             "type": "profile_deck",
@@ -4663,8 +4663,8 @@ export default {
         {
           "title": "The Spirit of Reconciliation: The Locarno Treaties and Demilitarising the Rhineland (1925)",
           "act": 3,
-          "text": "<span class=\"para-ref\">[3.1]</span> Seeking peaceful reconciliation abroad, Stresemann signed the **Locarno Pact** (**Locarno Treaties**) in October **1925** alongside Britain, France, Belgium, and Italy. Unlike Versailles, Germany voluntarily recognized its western borders as permanent, formally giving up any claim to Alsace-Lorraine for France and Eupen-Malmedy for Belgium.\n\n<span class=\"para-ref\">[3.2]</span> In return, France promised never to occupy the Ruhr again, while all powers affirmed permanent **Rhineland demilitarization** to protect European peace. This warm \"Spirit of Locarno\" calmed post-war tension, reassured Western democracies of Germany's peaceful aims, and paved the way for its return to world diplomacy.",
-          "content": "<span class=\"para-ref\">[3.1]</span> Seeking peaceful reconciliation abroad, Stresemann signed the **Locarno Pact** (**Locarno Treaties**) in October **1925** alongside Britain, France, Belgium, and Italy. Unlike Versailles, Germany voluntarily recognized its western borders as permanent, formally giving up any claim to Alsace-Lorraine for France and Eupen-Malmedy for Belgium.\n\n<span class=\"para-ref\">[3.2]</span> In return, France promised never to occupy the Ruhr again, while all powers affirmed permanent **Rhineland demilitarization** to protect European peace. This warm \"Spirit of Locarno\" calmed post-war tension, reassured Western democracies of Germany's peaceful aims, and paved the way for its return to world diplomacy.",
+          "text": "<span class=\"para-ref\">[3.1]</span> Seeking peaceful reconciliation abroad, Foreign Minister Gustav Stresemann signed the **Locarno Pact** (**Locarno Treaties**) in October **1925** alongside Britain, France, Belgium, and Italy. Unlike the hated dictated peace of Versailles, Germany signed voluntarily as an equal partner, recognizing its western borders as permanent and formally giving up claims to Alsace-Lorraine for France and Eupen-Malmedy for Belgium.\n\n<span class=\"para-ref\">[3.2]</span> In return, France promised never to invade the industrial Ruhr again, while all powers backed permanent **Rhineland demilitarization** to safeguard European peace. This warm \"Spirit of Locarno\" proved decisive in gaining **international acceptance** of Germany abroad after years of bitter post-war isolation, reassuring Western democracies of Weimar's peaceful aims and securing Allied troop withdrawals from Cologne.",
+          "content": "<span class=\"para-ref\">[3.1]</span> Seeking peaceful reconciliation abroad, Foreign Minister Gustav Stresemann signed the **Locarno Pact** (**Locarno Treaties**) in October **1925** alongside Britain, France, Belgium, and Italy. Unlike the hated dictated peace of Versailles, Germany signed voluntarily as an equal partner, recognizing its western borders as permanent and formally giving up claims to Alsace-Lorraine for France and Eupen-Malmedy for Belgium.\n\n<span class=\"para-ref\">[3.2]</span> In return, France promised never to invade the industrial Ruhr again, while all powers backed permanent **Rhineland demilitarization** to safeguard European peace. This warm \"Spirit of Locarno\" proved decisive in gaining **international acceptance** of Germany abroad after years of bitter post-war isolation, reassuring Western democracies of Weimar's peaceful aims and securing Allied troop withdrawals from Cologne.",
           "sources": [
             {
               "id": "weimar_l3_source_e",
@@ -4715,8 +4715,8 @@ export default {
           },
           "act_title": "Stage 3: How did the Locarno Treaties break Germany’s post-war diplomatic isolation?",
           "paragraphs": [
-            "<span class=\"para-ref\">[3.1]</span> Stresemann pursued a pragmatic foreign policy of diplomatic reconciliation known as *Verständigungspolitik*. In October 1925, he signed the landmark **Locarno Treaties (1925)** alongside Britain, France, Belgium, and Italy. In this historic pact, Germany voluntarily reaffirmed Versailles borders, meaning **Western borders recognized** as permanent, including the formal renunciation of claims to Alsace-Lorraine for France and Eupen-Malmedy for Belgium.",
-            "<span class=\"para-ref\">[3.2]</span> In return, France pledged to avoid future military occupations like the Ruhr, while permanent **Rhineland demilitarization affirmed** by all signatory powers to guarantee European collective security. The treaty brought a new \"Spirit of Locarno\", calming European diplomatic hostilities, reassuring Western democracies of Germany's peaceful intentions, and paving the way for Germany's return to the international diplomatic community."
+            "<span class=\"para-ref\">[3.1]</span> Seeking peaceful reconciliation abroad, Foreign Minister Gustav Stresemann signed the **Locarno Pact** (**Locarno Treaties**) in October **1925** alongside Britain, France, Belgium, and Italy. Unlike the hated dictated peace of Versailles, Germany signed voluntarily as an equal partner, recognizing its western borders as permanent and formally giving up claims to Alsace-Lorraine for France and Eupen-Malmedy for Belgium.",
+            "<span class=\"para-ref\">[3.2]</span> In return, France promised never to invade the industrial Ruhr again, while all powers backed permanent **Rhineland demilitarization** to safeguard European peace. This warm \"Spirit of Locarno\" proved decisive in gaining **international acceptance** of Germany abroad after years of bitter post-war isolation, reassuring Western democracies of Weimar's peaceful aims and securing Allied troop withdrawals from Cologne."
           ],
           "image": "/images/weimar_nazi_germany/maps/wng_map_l3_stresemann_locarno_recovery_1924_29.svg",
           "image_alt": "Historical GIS atlas map of Gustav Stresemann’s diplomatic recovery (1924–29), contrasting the Guaranteed Western Frontier under the October 1925 Locarno Pact (guaranteed by Britain and Italy) with the Unfixed Eastern Frontier along Poland and Czechoslovakia (arbitration treaties only), alongside Geneva (1926 League of Nations Council seat), Paris (1928 Kellogg–Briand Pact), Berlin (1924 Dawes Plan, 1926 Treaty of Berlin with USSR, and 1929 Young Plan), and staged Allied Rhineland evacuations (1926–30)",
@@ -5535,7 +5535,7 @@ export default {
           "dates": "Apr–Aug 1924",
           "question": "Why did American loans provide temporary relief but leave Germany vulnerable?",
           "questionHeading": "Why did American loans provide temporary relief but leave Germany vulnerable?",
-          "prose_hash": "568d713cc9"
+          "prose_hash": "b84cae4ba4"
         },
         {
           "step": 3,
@@ -5567,7 +5567,7 @@ export default {
           "dates": "Oct 1925",
           "question": "How did the Locarno Treaties break Germany’s post-war diplomatic isolation?",
           "questionHeading": "How did the Locarno Treaties break Germany’s post-war diplomatic isolation?",
-          "prose_hash": "2b3520adcd"
+          "prose_hash": "16fecf57f2"
         },
         {
           "step": 4,
@@ -5662,7 +5662,7 @@ export default {
             "desc": "The Dawes Plan rescheduled annual reparations to affordable levels, prompted French evacuation of the Ruhr, and injected 800m gold marks in American loans.",
             "connective": "Stimulated a major industrial modernizing boom, but created extreme financial dependency on short-term American capital.",
             "question": "Why did American loans provide temporary relief but leave Germany vulnerable?",
-            "prose_hash": "568d713cc9"
+            "prose_hash": "b84cae4ba4"
           },
           {
             "step": 3,
@@ -5675,7 +5675,7 @@ export default {
             "desc": "Germany voluntarily guaranteed its western frontiers with France and Belgium, keeping the Rhineland demilitarised in exchange for French non-aggression.",
             "connective": "Dismantled Germany’s post-war diplomatic isolation and paved the way for entry into the League of Nations as an equal power.",
             "question": "How did the Locarno Treaties break Germany’s post-war diplomatic isolation?",
-            "prose_hash": "2b3520adcd"
+            "prose_hash": "16fecf57f2"
           },
           {
             "step": 4,
@@ -5915,9 +5915,9 @@ export default {
             "img": "/images/weimar_dawes_bond_1924.jpg",
             "mode": "contain-light",
             "stat": "800m Gold Marks Loaned by Wall Street Banks",
-            "html": "Under the <strong>1924 Dawes Plan</strong>, annual reparations fell to 1 billion marks. Wall Street lent <strong>800 million gold marks</strong> to modernise German factories, tying recovery to <strong>US banks</strong>.",
-            "spoken": "Next, Stresemann rebuilt industry using American credit. <short pause> Under the 1924 Dawes Plan , annual reparations fell to 1 billion marks. Wall Street lent 800 million gold marks to modernise German factories, tying recovery to US banks .",
-            "paired_prose_hash": "568d713cc9",
+            "html": "Under the <strong>1924 Dawes Plan</strong>, annual payments fell to 1bn marks as <strong>800m gold marks</strong> in <strong>American loans and investment</strong> modernised German factories.",
+            "spoken": "Next, Stresemann rebuilt industry using American credit. <short pause> Under the 1924 Dawes Plan, annual payments fell to 1 billion marks as 800 million gold marks in American loans and investment modernised German factories.",
+            "paired_prose_hash": "b84cae4ba4",
             "connective": "Next, Stresemann rebuilt industry using American credit."
           },
           {
@@ -5928,9 +5928,9 @@ export default {
             "mode": "landscape",
             "pos": "center 25%",
             "stat": "Oct 1925: Western Borders Voluntarily Accepted",
-            "html": "Signing the <strong>1925 Locarno Pact</strong> with France, Britain, and Belgium, Germany freely accepted its <strong>western borders</strong> and permanent <strong>Rhineland demilitarisation</strong>—ending fears of French invasion.",
-            "spoken": "Economic calm allowed peaceful diplomacy abroad. <short pause> Signing the 1925 Locarno Pact with France, Britain, and Belgium, Germany freely accepted its western borders and permanent Rhineland demilitarisation, ending fears of French invasion.",
-            "paired_prose_hash": "2b3520adcd",
+            "html": "Through the <strong>1925 Locarno Pact</strong>, Germany freely accepted its western borders and Rhineland demilitarisation—gaining <strong>international acceptance of Germany abroad</strong>.",
+            "spoken": "Economic calm allowed peaceful diplomacy abroad. <short pause> Through the 1925 Locarno Pact, Germany freely accepted its western borders and Rhineland demilitarisation, gaining international acceptance of Germany abroad.",
+            "paired_prose_hash": "16fecf57f2",
             "connective": "Economic calm allowed peaceful diplomacy abroad."
           },
           {
@@ -6404,8 +6404,8 @@ export default {
         {
           "title": "The Bubikopf and the Vote: The Emancipation and Clashes of the 'New Woman' (1924–1929)",
           "act": 2,
-          "text": "<span class=\"para-ref\">[2.1]</span> Weimar Germany brought sweeping legal and cultural change for women under Article 109 of the 1919 Constitution, which guaranteed equal voting rights and career access. Energetic political engagement elected dozens of **female Reichstag deputies**, giving Germany a higher proportion of female lawmakers than Britain or the United States.\n\n<span class=\"para-ref\">[2.2]</span> In big cities, young working women embraced the image of the **'New Woman' (*Neue Frau*)**, cutting their hair into short *Bubikopf* bobs, smoking in public, and wearing fashionable cosmetics. Paid jobs in clerical, retail, and teaching roles brought independence, though conservatives and churches attacked modern styles.",
-          "content": "<span class=\"para-ref\">[2.1]</span> Weimar Germany brought sweeping legal and cultural change for women under Article 109 of the 1919 Constitution, which guaranteed equal voting rights and career access. Energetic political engagement elected dozens of **female Reichstag deputies**, giving Germany a higher proportion of female lawmakers than Britain or the United States.\n\n<span class=\"para-ref\">[2.2]</span> In big cities, young working women embraced the image of the **'New Woman' (*Neue Frau*)**, cutting their hair into short *Bubikopf* bobs, smoking in public, and wearing fashionable cosmetics. Paid jobs in clerical, retail, and teaching roles brought independence, though conservatives and churches attacked modern styles.",
+          "text": "<span class=\"para-ref\">[2.1]</span> Weimar Germany brought major changes in the position of women in **work, politics, and leisure** under Article 109 of the 1919 Constitution, which guaranteed equal voting rights and civil service access. High female turnout elected dozens of **female Reichstag deputies**, giving Weimar Germany a higher share of female lawmakers than Britain or the United States during the 1920s.\n\n<span class=\"para-ref\">[2.2]</span> In big cities, young wage-earning women embraced the image of the **'New Woman' (*Neue Frau*)** across office, retail, medical, and teaching jobs, although married women still faced lower pay and traditional pressures. Enjoying independent urban **leisure**, young women wore short *Bubikopf* bobbed hair, cosmetics, and shorter skirts while visiting cafés, dance halls, and cinemas unchaperoned, angering rural conservatives.",
+          "content": "<span class=\"para-ref\">[2.1]</span> Weimar Germany brought major changes in the position of women in **work, politics, and leisure** under Article 109 of the 1919 Constitution, which guaranteed equal voting rights and civil service access. High female turnout elected dozens of **female Reichstag deputies**, giving Weimar Germany a higher share of female lawmakers than Britain or the United States during the 1920s.\n\n<span class=\"para-ref\">[2.2]</span> In big cities, young wage-earning women embraced the image of the **'New Woman' (*Neue Frau*)** across office, retail, medical, and teaching jobs, although married women still faced lower pay and traditional pressures. Enjoying independent urban **leisure**, young women wore short *Bubikopf* bobbed hair, cosmetics, and shorter skirts while visiting cafés, dance halls, and cinemas unchaperoned, angering rural conservatives.",
           "sources": [
             {
               "id": "weimar_l4_source_b",
@@ -6460,8 +6460,8 @@ export default {
           "isReversed": false,
           "act_title": "Stage 2: Why did urban women experience new freedoms while traditional roles persisted?",
           "paragraphs": [
-            "<span class=\"para-ref\">[2.1]</span> The Weimar era ushered in sweeping constitutional, legal, and cultural transformations for German women across society. The 1919 Weimar Constitution granted women equal voting rights and educational access, resulting in energetic political engagement where dozens of **female Reichstag deputies** were elected to parliament, giving Germany a significantly higher proportion of female lawmakers than Britain or the United States.",
-            "<span class=\"para-ref\">[2.2]</span> In major urban centers, young working women embraced the modern image of the **Weimar 'New Woman'**, cutting their hair into short 'Bubikopf' bobs, smoking in public, and wearing fashionable cosmetics. Increasing **financial employment independence** in clerical, retail, and teaching roles offered young women autonomy, though traditional conservatives and churches condemned this modern emancipation as a threat to family values."
+            "<span class=\"para-ref\">[2.1]</span> Weimar Germany brought major changes in the position of women in **work, politics, and leisure** under Article 109 of the 1919 Constitution, which guaranteed equal voting rights and civil service access. High female turnout elected dozens of **female Reichstag deputies**, giving Weimar Germany a higher share of female lawmakers than Britain or the United States during the 1920s.",
+            "<span class=\"para-ref\">[2.2]</span> In big cities, young wage-earning women embraced the image of the **'New Woman' (*Neue Frau*)** across office, retail, medical, and teaching jobs, although married women still faced lower pay and traditional pressures. Enjoying independent urban **leisure**, young women wore short *Bubikopf* bobbed hair, cosmetics, and shorter skirts while visiting cafés, dance halls, and cinemas unchaperoned, angering rural conservatives."
           ]
         },
         {
@@ -7654,7 +7654,7 @@ export default {
           "dates": "1924–1929",
           "question": "Why did urban women experience new freedoms while traditional roles persisted?",
           "questionHeading": "Why did urban women experience new freedoms while traditional roles persisted?",
-          "prose_hash": "5853e1af46"
+          "prose_hash": "22b1d42598"
         },
         {
           "step": 3,
@@ -7781,7 +7781,7 @@ export default {
             "desc": "Article 109 guaranteed equal rights, electing women to 10% of Reichstag seats while expanding white-collar secretarial employment in cities.",
             "connective": "Fostered financial independence and modern bobbed-hair styles, but provoked conservative backlash against working wives as \"double-earners.\"",
             "question": "Why did urban women experience new freedoms while traditional roles persisted?",
-            "prose_hash": "5853e1af46"
+            "prose_hash": "22b1d42598"
           },
           {
             "step": 3,
@@ -8022,8 +8022,8 @@ export default {
             "mode": "landscape",
             "pos": "center 35%",
             "stat": "17m Covered by Dole Insurance • 2m+ New Homes",
-            "html": "Workers’ <strong>real wages rose 25%</strong> by 1928 while councils built over <strong>2 million modern homes</strong>. The <strong>1927 Unemployment Insurance Act</strong> protected 17 million workers, though debt-hit farmers struggled.",
-            "spoken": "Was Weimar’s 1920s Golden Age shared by all Germans? <short pause> Workers’ real wages rose 25% by 1928 while councils built over 2 million modern homes . The 1927 Unemployment Insurance Act protected 17 million workers, though debt-hit farmers struggled.",
+            "html": "Raising the <strong>standard of living</strong>, real wages rose 25%, councils built <strong>2m+ modern homes</strong>, and the <strong>1927 Unemployment Insurance Act</strong> covered 17m workers.",
+            "spoken": "Was Weimar’s 1920s Golden Age shared by all Germans? <short pause> Raising the standard of living, real wages rose 25%, councils built over 2 million modern homes, and the 1927 Unemployment Insurance Act covered 17 million workers.",
             "paired_prose_hash": "f84ea0877c",
             "connective": "Was Weimar’s 1920s Golden Age shared by all Germans?"
           },
@@ -8034,9 +8034,9 @@ export default {
             "img": "/images/weimar_new_woman_1920s.jpg",
             "mode": "contain",
             "stat": "Article 109 Equality • Dozens of Female MPs",
-            "html": "Under <strong>Article 109</strong>, women won equal votes and elected dozens of <strong>Reichstag deputies</strong>. Young urban <strong>“New Women”</strong> wore short <em>Bubikopf</em> hair, smoked in public, and held paid office jobs.",
-            "spoken": "City life also transformed opportunities for women. <short pause> Under Article 109 , women won equal votes and elected dozens of Reichstag deputies . Young urban “New Women” wore short Bubikopf hair, smoked in public, and held paid office jobs.",
-            "paired_prose_hash": "5853e1af46",
+            "html": "Under <strong>Article 109</strong>, women won equal votes and office jobs while urban <strong>“New Women”</strong> enjoyed freer <strong>leisure</strong>, short <em>Bubikopf</em> hair, and cafés.",
+            "spoken": "City life also transformed opportunities for women. <short pause> Under Article 109, women won equal votes and office jobs while urban “New Women” enjoyed freer leisure, short Bubikopf hair, and cafés.",
+            "paired_prose_hash": "22b1d42598",
             "connective": "City life also transformed opportunities for women."
           },
           {
@@ -8071,8 +8071,8 @@ export default {
             "img": "/images/weimar_metropolis_1927_poster.jpg",
             "mode": "contain-light",
             "stat": "1927 Metropolis • Right Condemns “Degeneracy”",
-            "html": "<strong>UFA studios</strong> won global acclaim with <strong>Fritz Lang’s <em>Metropolis</em></strong> and Marlene Dietrich’s <em>The Blue Angel</em>. Yet rural conservatives and churches attacked Berlin nightlife as <strong>un-German degeneracy</strong>.",
-            "spoken": "World-famous cinema and cabaret sparked fierce anger. <short pause> UFA studios won global acclaim with Fritz Lang’s Metropolis and Marlene Dietrich’s The Blue Angel . Yet rural conservatives and churches attacked Berlin nightlife as un-German degeneracy .",
+            "html": "Bold <strong>cultural changes</strong> saw <strong>UFA studios</strong> film Fritz Lang’s <em>Metropolis</em>, though rural conservatives attacked Berlin cabaret as <strong>un-German degeneracy</strong>.",
+            "spoken": "World-famous cinema and cabaret sparked fierce anger. <short pause> Bold cultural changes saw UFA studios film Fritz Lang’s Metropolis, though rural conservatives attacked Berlin cabaret as un-German degeneracy.",
             "paired_prose_hash": "3e2a0e70a1",
             "connective": "World-famous cinema and cabaret sparked fierce anger."
           },
@@ -8458,10 +8458,10 @@ export default {
           ]
         },
         {
-          "title": "The 25-Point Programme: Anti-Versailles Grievances and Populist Rhetoric (Feb 1920)",
+          "title": "The Twenty-Five Point Programme: Anti-Versailles Grievances and Populist Rhetoric (Feb 1920)",
           "act": 2,
-          "text": "<span class=\"para-ref\">[2.1]</span> In February **1920**, before two thousand listeners in Munich’s **Hofbräuhaus**, Hitler and Drexler unveiled the **25-Point Programme**. Combining fierce nationalism with anti-capitalist rhetoric, it demanded the revocation of the Treaty of Versailles and the unification of all Germans into a Greater Germany. It also called for state control of big industrial trusts.\n\n<span class=\"para-ref\">[2.2]</span> Above all, Point 4 made racial anti-Semitism core party policy. It declared that no person of Jewish blood could remain a German citizen and called for non-citizens to be deported during food shortages. Mixing anger over Versailles, welfare promises, and anti-Jewish scapegoating gave the early Nazi movement its core appeal.",
-          "content": "<span class=\"para-ref\">[2.1]</span> In February **1920**, before two thousand listeners in Munich’s **Hofbräuhaus**, Hitler and Drexler unveiled the **25-Point Programme**. Combining fierce nationalism with anti-capitalist rhetoric, it demanded the revocation of the Treaty of Versailles and the unification of all Germans into a Greater Germany. It also called for state control of big industrial trusts.\n\n<span class=\"para-ref\">[2.2]</span> Above all, Point 4 made racial anti-Semitism core party policy. It declared that no person of Jewish blood could remain a German citizen and called for non-citizens to be deported during food shortages. Mixing anger over Versailles, welfare promises, and anti-Jewish scapegoating gave the early Nazi movement its core appeal.",
+          "text": "<span class=\"para-ref\">[2.1]</span> On 24 February **1920**, before two thousand listeners inside Munich’s **Hofbräuhaus**, Hitler and Anton Drexler unveiled **the Twenty-Five Point Programme** (**25-Point Programme**). Combining fierce nationalism with populist anti-capitalist pledges, the manifesto demanded the abolition of the hated Treaty of Versailles, the union of all Germans into a Greater Germany, old-age pensions, and state profit-sharing in giant industrial trusts.\n\n<span class=\"para-ref\">[2.2]</span> Above all, Point 4 placed racial anti-Semitism at the heart of party doctrine. It declared that no person of Jewish blood could be a member of the German nation or hold German citizenship, and demanded non-citizens be expelled during food shortages. Blending anti-Versailles fury, worker welfare promises, and anti-Jewish scapegoating gave the early Nazi Party its broad appeal.",
+          "content": "<span class=\"para-ref\">[2.1]</span> On 24 February **1920**, before two thousand listeners inside Munich’s **Hofbräuhaus**, Hitler and Anton Drexler unveiled **the Twenty-Five Point Programme** (**25-Point Programme**). Combining fierce nationalism with populist anti-capitalist pledges, the manifesto demanded the abolition of the hated Treaty of Versailles, the union of all Germans into a Greater Germany, old-age pensions, and state profit-sharing in giant industrial trusts.\n\n<span class=\"para-ref\">[2.2]</span> Above all, Point 4 placed racial anti-Semitism at the heart of party doctrine. It declared that no person of Jewish blood could be a member of the German nation or hold German citizenship, and demanded non-citizens be expelled during food shortages. Blending anti-Versailles fury, worker welfare promises, and anti-Jewish scapegoating gave the early Nazi Party its broad appeal.",
           "sources": [
             {
               "id": "weimar_l5_source_a",
@@ -8510,10 +8510,10 @@ export default {
             },
             "question": "How useful is Source B for an enquiry into the early political aims and appeal of the Nazi Party (NSDAP) in 1920?"
           },
-          "act_title": "Stage 2: The 25-Point Programme",
+          "act_title": "Stage 2: The Twenty-Five Point Programme",
           "paragraphs": [
-            "<span class=\"para-ref\">[2.1]</span> In February 1920, Hitler and Drexler presented their political manifesto to two thousand listeners in Munich’s Hofbräuhaus, unveiling the radical **25-Point NSDAP Programme**. Combining extreme pan-German nationalism with anti-capitalist rhetoric, the platform fiercely demanded total **Versailles Treaty repudiation**, the immediate unification of all German-speaking populations into a Greater Germany, and the nationalization of major industrial trusts.",
-            "<span class=\"para-ref\">[2.2]</span> Crucially, the platform enshrined racial anti-Semitism as foundational doctrine through strict **anti-Semitic citizenship exclusion**. Point 4 explicitly declared that no person of Jewish blood could remain a German citizen, demanding that non-citizens be deported if food shortages occurred. This inflammatory synthesis of nationalist grievance, welfare promises, and racial scapegoating established the core ideological architecture of the early Nazi movement."
+            "<span class=\"para-ref\">[2.1]</span> On 24 February **1920**, before two thousand listeners inside Munich’s **Hofbräuhaus**, Hitler and Anton Drexler unveiled **the Twenty-Five Point Programme** (**25-Point Programme**). Combining fierce nationalism with populist anti-capitalist pledges, the manifesto demanded the abolition of the hated Treaty of Versailles, the union of all Germans into a Greater Germany, old-age pensions, and state profit-sharing in giant industrial trusts.",
+            "<span class=\"para-ref\">[2.2]</span> Above all, Point 4 placed racial anti-Semitism at the heart of party doctrine. It declared that no person of Jewish blood could be a member of the German nation or hold German citizenship, and demanded non-citizens be expelled during food shortages. Blending anti-Versailles fury, worker welfare promises, and anti-Jewish scapegoating gave the early Nazi Party its broad appeal."
           ],
           "concept_widget": {
             "type": "spectrum_slider",
@@ -9382,12 +9382,12 @@ export default {
         {
           "stage": 2,
           "dates": "Feb 1920",
-          "title": "The 25-Point Programme",
-          "spec_focus": "The 25-Point Programme (1920); nationalist, anti-Semitic, and socialist points.",
+          "title": "The Twenty-Five Point Programme",
+          "spec_focus": "The Twenty-Five Point Programme (25-Point Programme, Feb 1920); nationalist, anti-Semitic, and socialist points.",
           "focus_clue": "How did the 25-Point Programme combine nationalist and socialist appeals?",
           "para_ref": "[2.1–2.2]",
           "bullets": [
-            "25-Point NSDAP Programme",
+            "Twenty-Five Point Programme (1920)",
             "Versailles Treaty repudiation",
             "Anti-Semitic citizenship exclusion"
           ],
@@ -9396,7 +9396,7 @@ export default {
           },
           "words": [
             {
-              "term": "25-Point NSDAP Programme",
+              "term": "Twenty-Five Point Programme (1920)",
               "type": "key_term"
             },
             {
@@ -9408,13 +9408,13 @@ export default {
               "type": "key_term"
             }
           ],
-          "model_sentence": "In February 1920, Hitler announced the radical <strong>25-Point NSDAP Programme</strong>, demanding total <strong>Versailles Treaty repudiation</strong> alongside strict <strong>anti-Semitic citizenship exclusion</strong> for German Jews.",
+          "model_sentence": "In February 1920, Hitler announced the <strong>Twenty-Five Point Programme (25-Point Programme)</strong>, demanding total <strong>Versailles Treaty repudiation</strong> alongside strict <strong>anti-Semitic citizenship exclusion</strong>.",
           "heading": "How did the 25-Point Programme combine nationalist and socialist appeals?",
           "date": "Feb 1920",
           "step": 2,
           "question": "How did the 25-Point Programme combine nationalist and socialist appeals?",
           "questionHeading": "How did the 25-Point Programme combine nationalist and socialist appeals?",
-          "prose_hash": "c61501ebb3"
+          "prose_hash": "93a7dacd54"
         },
         {
           "stage": 3,
@@ -9549,14 +9549,14 @@ export default {
             "step": 2,
             "date": "Feb 1920",
             "para_ref": "[2.1–2.2]",
-            "title": "The 25-Point Programme",
+            "title": "The Twenty-Five Point Programme",
             "actor": "Adolf Hitler & Party Committee",
             "tag": "📜 HYBRID MANIFESTO",
-            "trigger": "Hitler and Drexler presented the 25-Point Programme to 2,000 spectators at the Hofbräuhaus, demanding Versailles revocation and racial citizenship laws.",
-            "desc": "Hitler and Drexler presented the 25-Point Programme to 2,000 spectators at the Hofbräuhaus, demanding Versailles revocation and racial citizenship laws.",
+            "trigger": "Hitler and Drexler unveiled the Twenty-Five Point Programme (25-Point Programme) at the Hofbräuhaus, demanding Versailles abolition and stripping Jewish citizenship.",
+            "desc": "Hitler and Drexler unveiled the Twenty-Five Point Programme (25-Point Programme) at the Hofbräuhaus, demanding Versailles abolition and stripping Jewish citizenship.",
             "connective": "Combined radical nationalism, anti-Semitism, and socialist welfare promises, giving the party wide demographic appeal across Bavaria.",
             "question": "How did the 25-Point Programme combine nationalist and socialist appeals?",
-            "prose_hash": "c61501ebb3"
+            "prose_hash": "93a7dacd54"
           },
           {
             "step": 3,
@@ -9608,8 +9608,8 @@ export default {
         },
         {
           "date": "Feb 1920",
-          "title": "The 25-Point Programme",
-          "desc": "Hitler and Drexler presented the 25-Point Programme to 2,000 spectators at the Hofbräuhaus, demanding Versailles revocation and racial citizenship laws.",
+          "title": "The Twenty-Five Point Programme",
+          "desc": "Hitler and Drexler unveiled the Twenty-Five Point Programme (25-Point Programme) at the Hofbräuhaus, demanding Versailles abolition and stripping Jewish citizenship.",
           "para_ref": "[2.1–2.2]"
         },
         {
@@ -9763,9 +9763,9 @@ export default {
           "a": "The German Workers' Party was a nationalist, antisemitic political party founded in Munich in January 1919 by Anton Drexler."
         },
         {
-          "term": "25-Point Programme",
+          "term": "Twenty-Five Point Programme (25-Point Programme)",
           "definition": "The political manifesto of the NSDAP published in February 1920 by Drexler and Hitler, combining fierce nationalism, racial antisemitism, and socialist economic promises.",
-          "q": "What was the 25-Point Programme of February 1920?",
+          "q": "What was the Twenty-Five Point Programme (25-Point Programme) of February 1920?",
           "a": "The political manifesto of the NSDAP combining fierce nationalism, the destruction of the Versailles Treaty, racial antisemitism, and socialist economic promises."
         },
         {
@@ -9849,14 +9849,14 @@ export default {
           },
           {
             "badge": "Stage 2",
-            "heading": "The 25-Point Programme",
+            "heading": "Twenty-Five Point Programme",
             "date": "Feb 1920",
             "img": "/images/nazi_25_point_programme_1920.jpg",
             "mode": "contain-light",
             "stat": "2,000 Hear Demands to Scrap Versailles & Citizenship",
-            "html": "Before 2,000 people at Munich’s Hofbräuhaus, Hitler and Drexler launched the <strong>25-Point Programme</strong>: scrap <strong>Versailles</strong>, unite all Germans, and strip <strong>Jewish people</strong> of German citizenship.",
-            "spoken": "Five months later, Hitler unveiled a bold manifesto. <short pause> Before 2,000 people at Munich’s Hofbräuhaus, Hitler and Drexler launched the 25-Point Programme : scrap Versailles , unite all Germans, and strip Jewish people of German citizenship.",
-            "paired_prose_hash": "c61501ebb3",
+            "html": "Before 2,000 people at Munich’s Hofbräuhaus, Hitler and Drexler launched the <strong>Twenty-Five Point Programme</strong>: scrap <strong>Versailles</strong>, unite Germans, and strip <strong>Jewish citizenship</strong>.",
+            "spoken": "Five months later, Hitler unveiled a bold manifesto. <short pause> Before 2,000 people at Munich’s Hofbräuhaus, Hitler and Drexler launched the Twenty-Five Point Programme: scrap Versailles, unite Germans, and strip Jewish citizenship.",
+            "paired_prose_hash": "93a7dacd54",
             "connective": "Five months later, Hitler unveiled a bold manifesto."
           },
           {
@@ -9909,11 +9909,11 @@ export default {
             "connective": "In three years, the tiny club transformed completely."
           }
         ],
-        "takeaway": "Between 1919 and 1922, Hitler reshaped Drexler’s tiny DAP around the 25-Point Programme, swastika propaganda, total Führer authority, and Ernst Röhm’s violent SA Brownshirts.",
-        "spokenTakeaway": "Here is the big story in one sentence. <short pause> Between 1919 and 1922, Hitler reshaped Drexler’s tiny DAP around the 25-Point Programme, swastika propaganda, total Führer authority, and Ernst Röhm’s violent SA Brownshirts.",
+        "takeaway": "Between 1919 and 1922, Hitler reshaped Drexler’s tiny DAP around the Twenty-Five Point Programme, swastika propaganda, total Führer authority, and Ernst Röhm’s violent SA Brownshirts.",
+        "spokenTakeaway": "Here is the big story in one sentence. <short pause> Between 1919 and 1922, Hitler reshaped Drexler’s tiny DAP around the Twenty-Five Point Programme, swastika propaganda, total Führer authority, and Ernst Röhm’s violent SA Brownshirts.",
         "vocab": [
           [
-            "1. 25-Point Programme",
+            "1. Twenty-Five Point Programme",
             "1920 Nazi manifesto demanding an end to Versailles and Jewish citizenship."
           ],
           [
@@ -10092,9 +10092,9 @@ export default {
           },
           {
             "stage": 2,
-            "question": "In what year did Hitler and Drexler write the 25-Point Programme?",
+            "question": "In what year did Hitler and Drexler unveil the Twenty-Five Point Programme (25-Point Programme)?",
             "answer": "1920",
-            "explanation": "In February 1920, Hitler and Drexler presented their political manifesto to two thousand listeners in Munich’s Hofbräuhaus, unveiling the radical 25-Point NSDAP Programme."
+            "explanation": "In February 1920, Hitler and Drexler presented their political manifesto to two thousand listeners in Munich’s Hofbräuhaus, unveiling the radical Twenty-Five Point Programme (25-Point Programme)."
           },
           {
             "stage": 3,
@@ -10122,9 +10122,9 @@ export default {
           },
           {
             "stage": 2,
-            "question": "What core demand was prominent in the 25-Point Programme drafted by Drexler and Hitler in February 1920?",
+            "question": "What core demand stood out in the Twenty-Five Point Programme (25-Point Programme) of February 1920?",
             "answer": "The revocation of the Treaty of Versailles and the unification of all Germans",
-            "explanation": "The 25-Point Programme demanded the cancellation of the Treaty of Versailles and the unification of all Germans into a Greater Germany."
+            "explanation": "The Twenty-Five Point Programme demanded the abolition of the Treaty of Versailles, the union of all Germans into a Greater Germany, and stripping Jewish people of citizenship."
           },
           {
             "stage": 3,
@@ -10885,8 +10885,8 @@ export default {
         {
           "title": "The Bamberg Conference: Crushing Strasser’s Left Wing and Pledging the Legal Path to Power (1925–1926)",
           "act": 4,
-          "text": "<span class=\"para-ref\">[4.1]</span> Freed from prison in December 1924, Hitler re-founded the splintered Nazi Party in February **1925**, promising authorities to seek power through legal elections. He set up specialist Nazi branches for women, students, and youth alongside his elite black-shirted Schutzstaffel (SS) personal bodyguard.\n\n<span class=\"para-ref\">[4.2]</span> To settle an ideological split between southern nationalists and northern socialist-leaning Nazis, Hitler called the **1926** Bamberg Conference. Enforcing **the Führerprinzip**, he defeated Gregor Strasser, won **Joseph Goebbels** over as Berlin leader, and locked in strict personal obedience across every regional branch.",
-          "content": "<span class=\"para-ref\">[4.1]</span> Freed from prison in December 1924, Hitler re-founded the splintered Nazi Party in February **1925**, promising authorities to seek power through legal elections. He set up specialist Nazi branches for women, students, and youth alongside his elite black-shirted Schutzstaffel (SS) personal bodyguard.\n\n<span class=\"para-ref\">[4.2]</span> To settle an ideological split between southern nationalists and northern socialist-leaning Nazis, Hitler called the **1926** Bamberg Conference. Enforcing **the Führerprinzip**, he defeated Gregor Strasser, won **Joseph Goebbels** over as Berlin leader, and locked in strict personal obedience across every regional branch.",
+          "text": "<span class=\"para-ref\">[4.1]</span> Freed from Landsberg Fortress in December 1924, Hitler persuaded Bavarian authorities to lift the party ban and re-founded the NSDAP in February **1925** on a legal electoral path. Launching nationwide **Party reorganisation** from Munich headquarters, he built specialist branches for women, students, teachers, and youth alongside his elite black-shirted **Schutzstaffel (SS)** personal bodyguard sworn directly to him.\n\n<span class=\"para-ref\">[4.2]</span> To crush an ideological split between southern nationalists and northern socialist-leaning Nazis who wanted land and factory seizures, Hitler summoned regional leaders to the February **1926 Bamberg Conference**. Speaking for almost five hours, he enforced **the Führerprinzip**, defeated **Gregor Strasser**, won **Joseph Goebbels** over as Berlin *Gauleiter*, and locked every regional branch into unquestioning personal obedience.",
+          "content": "<span class=\"para-ref\">[4.1]</span> Freed from Landsberg Fortress in December 1924, Hitler persuaded Bavarian authorities to lift the party ban and re-founded the NSDAP in February **1925** on a legal electoral path. Launching nationwide **Party reorganisation** from Munich headquarters, he built specialist branches for women, students, teachers, and youth alongside his elite black-shirted **Schutzstaffel (SS)** personal bodyguard sworn directly to him.\n\n<span class=\"para-ref\">[4.2]</span> To crush an ideological split between southern nationalists and northern socialist-leaning Nazis who wanted land and factory seizures, Hitler summoned regional leaders to the February **1926 Bamberg Conference**. Speaking for almost five hours, he enforced **the Führerprinzip**, defeated **Gregor Strasser**, won **Joseph Goebbels** over as Berlin *Gauleiter*, and locked every regional branch into unquestioning personal obedience.",
           "sources": [
             {
               "id": "weimar_l6_source_bamberg",
@@ -10937,8 +10937,8 @@ export default {
             "question": "How useful is Source D for an enquiry into the establishment of Hitler’s absolute authority over the Nazi Party at the Bamberg Conference in 1926?"
           },
           "paragraphs": [
-            "<span class=\"para-ref\">[4.1]</span> Released from prison in December 1924, Hitler found the Nazi Party banned and splintered into competing regional factions. Re-founding the movement in February 1925, he pledged to pursue a strictly **legal democratic pathway**, promising authorities that the party would respect constitutional law. He subsequently established specialized party organizations for women, students, and youth, while founding the elite Schutzstaffel (SS) bodyguard.",
-            "<span class=\"para-ref\">[4.2]</span> To resolve an ideological crisis between southern nationalists and northern socialist-leaning branches, Hitler convened the decisive **1926 Bamberg Conference**. In a commanding speech, he defeated northern rivals Gregor Strasser and Joseph Goebbels, reaffirming the 25-Point Programme as unalterable. With internal **party discipline consolidated** under the Führerprinzip, Hitler secured absolute personal control over the party apparatus, demanding unquestioning obedience across every regional branch in Germany."
+            "<span class=\"para-ref\">[4.1]</span> Freed from Landsberg Fortress in December 1924, Hitler persuaded Bavarian authorities to lift the party ban and re-founded the NSDAP in February **1925** on a legal electoral path. Launching nationwide **Party reorganisation** from Munich headquarters, he built specialist branches for women, students, teachers, and youth alongside his elite black-shirted **Schutzstaffel (SS)** personal bodyguard sworn directly to him.",
+            "<span class=\"para-ref\">[4.2]</span> To crush an ideological split between southern nationalists and northern socialist-leaning Nazis who wanted land and factory seizures, Hitler summoned regional leaders to the February **1926 Bamberg Conference**. Speaking for almost five hours, he enforced **the Führerprinzip**, defeated **Gregor Strasser**, won **Joseph Goebbels** over as Berlin *Gauleiter*, and locked every regional branch into unquestioning personal obedience."
           ],
           "image": "/images/weimar_nazi_germany/maps/wng_map_l6_munich_putsch_nsdap_gau_network_1923_28.svg",
           "image_alt": "Historical GIS atlas map of Weimar Germany (1923–1928) paired with a street-scale Munich inset charting the 8–9 November 1923 Beer Hall Putsch march from the Bürgerbräukeller to Odeonsplatz, Landsberg Fortress, the February 1926 Bamberg Conference, July 1926 Weimar Rally, Goebbels in Berlin, and the 35-Gau party network",
@@ -11588,7 +11588,7 @@ export default {
           "step": 4,
           "question": "Why did the Führer demand absolute obedience and legal election tactics?",
           "questionHeading": "Why did the Führer demand absolute obedience and legal election tactics?",
-          "prose_hash": "3b8bb7e211"
+          "prose_hash": "bef4ba3b87"
         },
         {
           "stage": 5,
@@ -11682,7 +11682,7 @@ export default {
             "desc": "Hitler crushed Gregor Strasser’s northern socialist faction at Bamberg, establishing the Führerprinzip and committing to winning power via Reichstag votes.",
             "connective": "United the party under Hitler’s absolute leadership and laid the structural foundation for nationwide electoral mobilization.",
             "question": "Why did the Führer demand absolute obedience and legal election tactics?",
-            "prose_hash": "3b8bb7e211"
+            "prose_hash": "bef4ba3b87"
           },
           {
             "step": 5,
@@ -11981,9 +11981,9 @@ export default {
             "img": "/images/weimar_individuals/gregor_strasser.jpg",
             "mode": "contain",
             "stat": "1926 Bamberg: Strasser Defeated • SS Created",
-            "html": "Re-founding the party in 1925, Hitler created youth branches and the black-shirted <strong>SS bodyguard</strong>. At the <strong>1926 Bamberg Conference</strong>, he defeated <strong>Gregor Strasser</strong> and won over Joseph Goebbels.",
-            "spoken": "Freed from prison, Hitler tightened party discipline. <short pause> Re-founding the party in 1925, Hitler created youth branches and the black-shirted SS bodyguard . At the 1926 Bamberg Conference , he defeated Gregor Strasser and won over Joseph Goebbels.",
-            "paired_prose_hash": "3b8bb7e211",
+            "html": "Re-founding the NSDAP in 1925, Hitler led nationwide <strong>Party reorganisation</strong>, created the <strong>SS</strong>, and defeated Strasser at the <strong>1926 Bamberg Conference</strong>.",
+            "spoken": "Freed from prison, Hitler tightened party discipline. <short pause> Re-founding the NSDAP in 1925, Hitler led nationwide Party reorganisation, created the SS, and defeated Strasser at the 1926 Bamberg Conference.",
+            "paired_prose_hash": "bef4ba3b87",
             "connective": "Freed from prison, Hitler tightened party discipline."
           },
           {
@@ -14465,8 +14465,8 @@ export default {
             "mode": "landscape",
             "pos": "center 35%",
             "stat": "6 Million Unemployed • Rule by Article 48 Decree",
-            "html": "Joblessness hit <strong>6 million</strong> by winter 1932 as the Grand Coalition split. “Hunger Chancellor” <strong>Heinrich Brüning</strong> slashed wages and dole pay, bypassing parliament with <strong>Article 48 decrees</strong>.",
-            "spoken": "Factories closed and millions queued outside labour offices. <short pause> Joblessness hit 6 million by winter 1932 as the Grand Coalition split. “Hunger Chancellor” Heinrich Brüning slashed wages and dole pay, bypassing parliament with Article 48 decrees .",
+            "html": "Mass <strong>unemployment</strong> hit <strong>6 million</strong> by winter 1932 as “Hunger Chancellor” <strong>Heinrich Brüning</strong> slashed wages and dole pay via <strong>Article 48 decrees</strong>.",
+            "spoken": "Factories closed and millions queued outside labour offices. <short pause> Mass unemployment hit 6 million by winter 1932 as “Hunger Chancellor” Heinrich Brüning slashed wages and dole pay via Article 48 decrees.",
             "paired_prose_hash": "469ec345bf",
             "connective": "Factories closed and millions queued outside labour offices."
           },
@@ -14490,8 +14490,8 @@ export default {
             "img": "/images/nazi_poster_our_last_hope.jpg",
             "mode": "contain",
             "stat": "Hitler Flies to 4–5 Cities in a Single Day",
-            "html": "Propaganda chief <strong>Joseph Goebbels</strong> flooded Germany with posters promising <strong>“Work and Bread”</strong>. Using chartered planes in <strong>“Hitler over Germany”</strong>, Hitler spoke in up to five cities a day.",
-            "spoken": "Joseph Goebbels turned desperation into mass enthusiasm. <short pause> Propaganda chief Joseph Goebbels flooded Germany with posters promising “Work and Bread” . Using chartered planes in “Hitler over Germany” , Hitler spoke in up to five cities a day.",
+            "html": "<strong>Goebbels</strong> spread <strong>“Work and Bread”</strong> posters and “Hitler over Germany” flights, broadening the <strong>appeal of Hitler</strong> across five cities a day.",
+            "spoken": "Joseph Goebbels turned desperation into mass enthusiasm. <short pause> Goebbels spread “Work and Bread” posters and “Hitler over Germany” flights, broadening the appeal of Hitler across five cities a day.",
             "paired_prose_hash": "8e13920585",
             "connective": "Joseph Goebbels turned desperation into mass enthusiasm."
           },
@@ -15016,17 +15016,17 @@ export default {
         },
         {
           "stage": 4,
-          "question": "On what exact date did Adolf Hitler officially become Chancellor of Germany?",
-          "q": "On what exact date did Adolf Hitler officially become Chancellor of Germany?",
+          "question": "How did Franz von Papen persuade a reluctant President Hindenburg that conservatives could control Hitler as Chancellor?",
+          "q": "How did Franz von Papen persuade a reluctant President Hindenburg that conservatives could control Hitler as Chancellor?",
           "options": [
-            "30 January 1933",
-            "27 February 1933",
-            "2 August 1934",
-            "9 November 1923"
+            "By promising that the Reichstag would vote to ban the SA",
+            "By arguing that eight conservative cabinet ministers would outnumber and box in three Nazis",
+            "By guaranteeing that General von Schleicher would command the Nazi Party",
+            "By pledging to abolish Article 48 as soon as Hitler took office"
           ],
-          "answer": "30 January 1933",
-          "a": "30 January 1933",
-          "explanation": "Throughout late January 1933, aggressive von Papen backroom intrigue operated behind closed doors in the presidential palace."
+          "answer": "By arguing that eight conservative cabinet ministers would outnumber and box in three Nazis",
+          "a": "By arguing that eight conservative cabinet ministers would outnumber and box in three Nazis",
+          "explanation": "Papen reassured Hindenburg that conservatives held eight of eleven cabinet posts against only three Nazis, boasting they would 'push Hitler into a corner until he squeaked' within two months."
         },
         {
           "stage": 4,
@@ -15072,17 +15072,17 @@ export default {
         },
         {
           "stage": 5,
-          "question": "On what date did President Paul von Hindenburg formally appoint Adolf Hitler as Chancellor of Germany?",
-          "q": "On what date did President Paul von Hindenburg formally appoint Adolf Hitler as Chancellor of Germany?",
+          "question": "How did General Erich Ludendorff react to Hindenburg's appointment of Adolf Hitler as Chancellor in January 1933?",
+          "q": "How did General Erich Ludendorff react to Hindenburg's appointment of Adolf Hitler as Chancellor in January 1933?",
           "options": [
-            "30 January 1933",
-            "9 November 1918",
-            "28 June 1919",
-            "27 February 1933"
+            "He led 25,000 stormtroopers through the Brandenburg Gate in celebration",
+            "He accepted the post of Vice-Chancellor alongside Franz von Papen",
+            "He sent Hindenburg a grim telegram warning that Hitler would cast Germany into national ruin",
+            "He ordered the German army to arrest Hitler at the Berlin Chancellery"
           ],
-          "answer": "30 January 1933",
-          "a": "30 January 1933",
-          "explanation": "On 30 January 1933, Hindenburg formally appointed Adolf Hitler Chancellor in a coalition government with Franz von Papen as Vice-Chancellor."
+          "answer": "He sent Hindenburg a grim telegram warning that Hitler would cast Germany into national ruin",
+          "a": "He sent Hindenburg a grim telegram warning that Hitler would cast Germany into national ruin",
+          "explanation": "Despite having marched with Hitler in 1923, General Ludendorff sent Hindenburg a stark warning that this 'accursed man' would plunge Germany into national ruin."
         },
         {
           "stage": 5,
@@ -16823,8 +16823,8 @@ export default {
             "img": "/images/weimar_individuals/gregor_strasser.jpg",
             "mode": "contain",
             "stat": "Nov 1932: Nazis Lose 2m Votes & 34 Seats",
-            "html": "In November 1932, the Nazis <strong>lost 2 million votes</strong> and <strong>34 seats</strong> as funds ran dry. Facing decline, senior Nazi <strong>Gregor Strasser</strong> urged joining a coalition before support faded.",
-            "spoken": "Why did conservative elites hand Hitler the Chancellorship? <short pause> In November 1932, the Nazis lost 2 million votes and 34 seats as funds ran dry. Facing decline, senior Nazi Gregor Strasser urged joining a coalition before support faded.",
+            "html": "After 13.4m votes in the <strong>1932 Presidential election</strong> and 230 July seats, the Nazis lost <strong>2m votes</strong> in November, prompting <strong>Strasser</strong> to urge compromise.",
+            "spoken": "Why did conservative elites hand Hitler the Chancellorship? <short pause> After 13.4 million votes in the 1932 Presidential election and 230 July seats, the Nazis lost 2 million votes in November, prompting Strasser to urge compromise.",
             "paired_prose_hash": "95cc0239a4",
             "connective": "Why did conservative elites hand Hitler the Chancellorship?"
           },
@@ -17123,17 +17123,17 @@ export default {
       "quiz": [
         {
           "stage": 1,
-          "question": "On what exact date did the Reichstag Fire happen?",
-          "q": "On what exact date did the Reichstag Fire happen?",
+          "question": "How did Hitler and Göring exploit the February 1933 Reichstag Fire to strengthen Nazi control?",
+          "q": "How did Hitler and Göring exploit the February 1933 Reichstag Fire to strengthen Nazi control?",
           "options": [
-            "30 January 1933",
-            "27 February 1933",
-            "15 March 1933",
-            "2 August 1934"
+            "They used public panic over a supposed Communist plot to justify an immediate crackdown on the left",
+            "They blamed the SA and used the fire to execute Ernst Röhm immediately",
+            "They used the fire to persuade President Hindenburg to resign in February 1933",
+            "They cancelled the March 1933 Reichstag elections permanently"
           ],
-          "answer": "27 February 1933",
-          "a": "27 February 1933",
-          "explanation": "On the freezing night of 27 February 1933, flames erupted through the glass dome of the Reichstag building in Berlin."
+          "answer": "They used public panic over a supposed Communist plot to justify an immediate crackdown on the left",
+          "a": "They used public panic over a supposed Communist plot to justify an immediate crackdown on the left",
+          "explanation": "Claiming the arson was the signal for a nationwide Communist uprising, Hitler and Göring whipped up public fear to justify mass arrests and emergency powers against left-wing opponents."
         },
         {
           "stage": 1,
@@ -17319,17 +17319,17 @@ export default {
         },
         {
           "stage": 4,
-          "question": "On what exact date did the Night of the Long Knives happen?",
-          "q": "On what exact date did the Night of the Long Knives happen?",
+          "question": "What was Hitler's primary strategic reason for purging Ernst Röhm and the SA leadership in the Night of the Long Knives?",
+          "q": "What was Hitler's primary strategic reason for purging Ernst Röhm and the SA leadership in the Night of the Long Knives?",
           "options": [
-            "27 February 1933",
-            "2 August 1934",
-            "15 March 1933",
-            "30 June 1934"
+            "To win the loyalty of the regular German army, which feared Röhm's plan to absorb it",
+            "To satisfy demands from the Social Democrats in the Reichstag",
+            "To punish the SA for failing to arrest Marinus van der Lubbe",
+            "To comply with the military limits of the Treaty of Versailles"
           ],
-          "answer": "30 June 1934",
-          "a": "30 June 1934",
-          "explanation": "On 30 June 1934, Hitler executed the murderous Night of Long Knives, unleashing elite SS execution squads against his former comrades."
+          "answer": "To win the loyalty of the regular German army, which feared Röhm's plan to absorb it",
+          "a": "To win the loyalty of the regular German army, which feared Röhm's plan to absorb it",
+          "explanation": "Because Röhm demanded a socialist 'second revolution' merging the regular army into his three-million-strong SA, Hitler eliminated him to secure the gratitude and loyalty of army generals and Hindenburg."
         },
         {
           "stage": 4,
@@ -17375,17 +17375,17 @@ export default {
         },
         {
           "stage": 5,
-          "question": "On what exact date did President Paul von Hindenburg die, removing the last constitutional check on Hitler's power?",
-          "q": "On what exact date did President Paul von Hindenburg die, removing the last constitutional check on Hitler's power?",
+          "question": "Why was President Paul von Hindenburg's death in August 1934 a decisive turning point in Hitler's rise to total dictatorship?",
+          "q": "Why was President Paul von Hindenburg's death in August 1934 a decisive turning point in Hitler's rise to total dictatorship?",
           "options": [
-            "30 January 1933",
-            "23 March 1933",
-            "30 June 1934",
-            "2 August 1934"
+            "It allowed Hitler to pass the Enabling Act for the first time",
+            "It removed the last constitutional check on Hitler, letting him merge President and Chancellor as Führer",
+            "It triggered the immediate banning of all German trade unions",
+            "It forced the Reichstag to convene at the Kroll Opera House"
           ],
-          "answer": "2 August 1934",
-          "a": "2 August 1934",
-          "explanation": "Within hours of eighty-six-year-old Hindenburg's death on 2 August 1934, Hitler combined the offices of President and Chancellor as Führer."
+          "answer": "It removed the last constitutional check on Hitler, letting him merge President and Chancellor as Führer",
+          "a": "It removed the last constitutional check on Hitler, letting him merge President and Chancellor as Führer",
+          "explanation": "As President, Hindenburg had remained the only figure with constitutional authority to dismiss Hitler; his death allowed Hitler to combine both offices as Führer and bind the army to him personally."
         },
         {
           "stage": 5,
@@ -17700,8 +17700,8 @@ export default {
         {
           "title": "The Emergency Decree: Suspending Civil Liberties and Mass Arrests (Feb 1933)",
           "act": 2,
-          "text": "<span class=\"para-ref\">[2.1]</span> Next morning, Hitler persuaded President Hindenburg to sign the emergency **Reichstag Fire Decree** under Article 48. Overnight, the decree **suspended civil rights like freedom of speech and the press**, free assembly, and private mail. Suspending *habeas corpus*, it let police jail political suspects indefinitely without trial.\n\n<span class=\"para-ref\">[2.2]</span> Regular police and 50,000 armed SA auxiliaries raided homes across Germany and locked up **over four thousand** Communist officials within forty-eight hours before the March election. After trade unions were crushed in **May 1933**, a July law **banned all other political parties, making Germany a one-party state**.",
-          "content": "<span class=\"para-ref\">[2.1]</span> Next morning, Hitler persuaded President Hindenburg to sign the emergency **Reichstag Fire Decree** under Article 48. Overnight, the decree **suspended civil rights like freedom of speech and the press**, free assembly, and private mail. Suspending *habeas corpus*, it let police jail political suspects indefinitely without trial.\n\n<span class=\"para-ref\">[2.2]</span> Regular police and 50,000 armed SA auxiliaries raided homes across Germany and locked up **over four thousand** Communist officials within forty-eight hours before the March election. After trade unions were crushed in **May 1933**, a July law **banned all other political parties, making Germany a one-party state**.",
+          "text": "<span class=\"para-ref\">[2.1]</span> Next morning, Hitler persuaded President Hindenburg to sign the emergency **Reichstag Fire Decree** under Article 48 \"for the Protection of People and State\". Overnight, the decree **suspended civil rights like freedom of speech and the press**, free assembly, and private mail, while abolishing *habeas corpus* so police could hold political suspects indefinitely without charge or trial.\n\n<span class=\"para-ref\">[2.2]</span> Regular police and 50,000 armed SA auxiliaries raided homes across Germany and jailed **over four thousand** Communist officials within forty-eight hours ahead of the March election. Once armed with dictatorial powers, Hitler completed **the banning of other parties and trade unions**: SA squads crushed **trade unions** in **May 1933**, and a July law made Germany a one-party state.",
+          "content": "<span class=\"para-ref\">[2.1]</span> Next morning, Hitler persuaded President Hindenburg to sign the emergency **Reichstag Fire Decree** under Article 48 \"for the Protection of People and State\". Overnight, the decree **suspended civil rights like freedom of speech and the press**, free assembly, and private mail, while abolishing *habeas corpus* so police could hold political suspects indefinitely without charge or trial.\n\n<span class=\"para-ref\">[2.2]</span> Regular police and 50,000 armed SA auxiliaries raided homes across Germany and jailed **over four thousand** Communist officials within forty-eight hours ahead of the March election. Once armed with dictatorial powers, Hitler completed **the banning of other parties and trade unions**: SA squads crushed **trade unions** in **May 1933**, and a July law made Germany a one-party state.",
           "sources": [
             {
               "id": "weimar_l9_source_c",
@@ -17753,8 +17753,8 @@ export default {
           "isReversed": false,
           "act_title": "Stage 2: The Reichstag Fire Decree (Feb 1933)",
           "paragraphs": [
-            "<span class=\"para-ref\">[2.1]</span> On the morning following the arson, Hitler persuaded President Hindenburg to sign the emergency **Reichstag Fire Decree** under Article 48. This draconian measure indefinitely revoked fundamental constitutional rights, including freedom of speech, assembly, and privacy of postal communications. Most crucially, fundamental **habeas corpus suspended** overnight, empowering police authorities to detain political suspects indefinitely without charge or legal representation.",
-            "<span class=\"para-ref\">[2.2]</span> Nazi authorities immediately launched **mass Communist arrests**, mobilizing regular police and fifty thousand armed SA auxiliary stormtroopers to raid private homes across Berlin. Over four thousand Communist Party (KPD) officials, organizers, and Reichstag deputies were imprisoned within forty-eight hours. Left-wing newspapers were shut down, effectively paralyzing opposition campaigning mere days before the critical March 1933 Reichstag election."
+            "<span class=\"para-ref\">[2.1]</span> Next morning, Hitler persuaded President Hindenburg to sign the emergency **Reichstag Fire Decree** under Article 48 \"for the Protection of People and State\". Overnight, the decree **suspended civil rights like freedom of speech and the press**, free assembly, and private mail, while abolishing *habeas corpus* so police could hold political suspects indefinitely without charge or trial.",
+            "<span class=\"para-ref\">[2.2]</span> Regular police and 50,000 armed SA auxiliaries raided homes across Germany and jailed **over four thousand** Communist officials within forty-eight hours ahead of the March election. Once armed with dictatorial powers, Hitler completed **the banning of other parties and trade unions**: SA squads crushed **trade unions** in **May 1933**, and a July law made Germany a one-party state."
           ],
           "concept_widget": {
             "type": "profile_deck",
@@ -17985,8 +17985,8 @@ export default {
         {
           "title": "The Final Oath: Hindenburg's Death and the Soldier's Pledge to the Führer (Aug 1934)",
           "act": 5,
-          "text": "<span class=\"para-ref\">[5.1]</span> Already armed with **the Enabling Act**, Hitler lost his final constitutional check on **2 August 1934**, when 86-year-old President Hindenburg died at his Neudeck estate. Within hours, Hitler passed a law merging the offices of Chancellor and President, naming himself sole **Führer** and supreme commander.\n\n<span class=\"para-ref\">[5.2]</span> That afternoon, every officer and soldier swore a rewritten allegiance oath in which **soldiers swore unconditional personal loyalty to Adolf Hitler rather than the constitution**. Bound by military honour to obey Hitler personally, the German armed forces were locked firmly into his dictatorship.",
-          "content": "<span class=\"para-ref\">[5.1]</span> Already armed with **the Enabling Act**, Hitler lost his final constitutional check on **2 August 1934**, when 86-year-old President Hindenburg died at his Neudeck estate. Within hours, Hitler passed a law merging the offices of Chancellor and President, naming himself sole **Führer** and supreme commander.\n\n<span class=\"para-ref\">[5.2]</span> That afternoon, every officer and soldier swore a rewritten allegiance oath in which **soldiers swore unconditional personal loyalty to Adolf Hitler rather than the constitution**. Bound by military honour to obey Hitler personally, the German armed forces were locked firmly into his dictatorship.",
+          "text": "<span class=\"para-ref\">[5.1]</span> Already armed with **the Enabling Act** and unchallenged inside the Nazi Party, Hitler lost his final constitutional check on **2 August 1934**, when 86-year-old President Paul von Hindenburg died at his Neudeck estate. Within hours, Hitler enacted a cabinet law merging the offices of Chancellor and President, proclaiming himself sole **Führer and Reich Chancellor** and supreme commander.\n\n<span class=\"para-ref\">[5.2]</span> That very afternoon, Defence Minister Werner von Blomberg ordered every German officer and soldier to swear **the army oath of allegiance**, in which **soldiers swore unconditional personal loyalty to Adolf Hitler rather than the constitution** or fatherland. Confirmed by an August plebiscite and bound by military honour, the armed forces were locked into Hitler's dictatorship.",
+          "content": "<span class=\"para-ref\">[5.1]</span> Already armed with **the Enabling Act** and unchallenged inside the Nazi Party, Hitler lost his final constitutional check on **2 August 1934**, when 86-year-old President Paul von Hindenburg died at his Neudeck estate. Within hours, Hitler enacted a cabinet law merging the offices of Chancellor and President, proclaiming himself sole **Führer and Reich Chancellor** and supreme commander.\n\n<span class=\"para-ref\">[5.2]</span> That very afternoon, Defence Minister Werner von Blomberg ordered every German officer and soldier to swear **the army oath of allegiance**, in which **soldiers swore unconditional personal loyalty to Adolf Hitler rather than the constitution** or fatherland. Confirmed by an August plebiscite and bound by military honour, the armed forces were locked into Hitler's dictatorship.",
           "image": "/images/weimar_nazi_germany/kt3/wng_l9_b4_hindenburg_funeral_reichswehr_aug1934.jpg",
           "image_alt": "Adolf Hitler walking ahead of German Reichswehr officers past massed cavalry honour guards at the Tannenberg Memorial for President Hindenburg’s state funeral on 7 August 1934",
           "caption": "Tannenberg State Funeral & the Army Oath (August 1934): Following President Hindenburg’s death on 2 August 1934, Hitler merged the Presidency and Chancellorship into sole Führer and required every Reichswehr officer and soldier to swear unconditional personal allegiance to him.",
@@ -18041,8 +18041,8 @@ export default {
             "question": "How useful is Source E for an enquiry into how Adolf Hitler secured total personal control over the German military following Hindenburg’s death in August 1934?"
           },
           "paragraphs": [
-            "<span class=\"para-ref\">[5.1]</span> On 2 August 1934, eighty-six-year-old **President Hindenburg dies** at his Neudeck estate, removing the last constitutional check on Hitler’s power. Within hours, Hitler acted swiftly, passing a law that saw the prestigious offices of **Führer and Chancellor combined** into his single person. Hitler absorbed all presidential executive powers, emergency decree authority, and supreme command of the armed forces without opposition.",
-            "<span class=\"para-ref\">[5.2]</span> That afternoon, the entire military swore an altered allegiance oath. Crucially, the **armed forces loyalty oath** bound every officer and soldier not to the German constitution or nation, but personally to \"Adolf Hitler, the Führer of the German Reich and people.\" Bound by Prussian military honour to obey Hitler unconditionally, the German armed forces were firmly locked into his totalitarian regime."
+            "<span class=\"para-ref\">[5.1]</span> Already armed with **the Enabling Act** and unchallenged inside the Nazi Party, Hitler lost his final constitutional check on **2 August 1934**, when 86-year-old President Paul von Hindenburg died at his Neudeck estate. Within hours, Hitler enacted a cabinet law merging the offices of Chancellor and President, proclaiming himself sole **Führer and Reich Chancellor** and supreme commander.",
+            "<span class=\"para-ref\">[5.2]</span> That very afternoon, Defence Minister Werner von Blomberg ordered every German officer and soldier to swear **the army oath of allegiance**, in which **soldiers swore unconditional personal loyalty to Adolf Hitler rather than the constitution** or fatherland. Confirmed by an August plebiscite and bound by military honour, the armed forces were locked into Hitler's dictatorship."
           ]
         }
       ],
@@ -18379,7 +18379,7 @@ export default {
           "step": 2,
           "question": "How did the Reichstag Fire Decree cripple Communist opposition?",
           "questionHeading": "How did the Reichstag Fire Decree cripple Communist opposition?",
-          "prose_hash": "a47f585722"
+          "prose_hash": "bbda730593"
         },
         {
           "stage": 3,
@@ -18490,7 +18490,7 @@ export default {
           "step": 5,
           "question": "How did the military oath cement total control over the armed forces?",
           "questionHeading": "How did the military oath cement total control over the armed forces?",
-          "prose_hash": "316d95851e"
+          "prose_hash": "a98fd03ea4"
         }
       ],
       "causal_domino_spine": {
@@ -18521,7 +18521,7 @@ export default {
             "desc": "Hindenburg signed the Reichstag Fire Decree under Article 48, suspending habeas corpus and civil rights as police and SA arrested 4,000 Communists.",
             "connective": "Paralyzed left-wing opposition and shut down KPD newspapers days before the March 1933 Reichstag election.",
             "question": "How did the Reichstag Fire Decree cripple Communist opposition?",
-            "prose_hash": "a47f585722"
+            "prose_hash": "bbda730593"
           },
           {
             "step": 3,
@@ -18560,7 +18560,7 @@ export default {
             "desc": "President Hindenburg died; Hitler merged the presidency and chancellorship into the supreme title of Führer, requiring every soldier to swear an oath of personal loyalty.",
             "connective": "Completed the transformation of Germany into an absolute totalitarian dictatorship with total military obedience.",
             "question": "How did the military oath cement total control over the armed forces?",
-            "prose_hash": "316d95851e"
+            "prose_hash": "a98fd03ea4"
           }
         ]
       },
@@ -18820,9 +18820,9 @@ export default {
             "img": "/images/weimar_individuals/hermann_goering.jpg",
             "mode": "contain",
             "stat": "4,000+ Communists Jailed • Rival Parties Banned",
-            "html": "Hindenburg signed the <strong>Reichstag Fire Decree</strong> under Article 48, ending free speech and trial rights. Police and SA locked up <strong>4,000+ Communists</strong>; by July, <strong>all rival parties</strong> were banned.",
-            "spoken": "Next morning, Hitler used panic to crush rights. <short pause> Hindenburg signed the Reichstag Fire Decree under Article 48, ending free speech and trial rights. Police and SA locked up 4,000+ Communists ; by July, all rival parties were banned.",
-            "paired_prose_hash": "a47f585722",
+            "html": "The <strong>Reichstag Fire Decree</strong> ended civil rights as police jailed <strong>4,000+ Communists</strong>; by July 1933, <strong>trade unions</strong> and rival parties were banned.",
+            "spoken": "Next morning, Hitler used panic to crush rights. <short pause> The Reichstag Fire Decree ended civil rights as police jailed over 4,000 Communists; by July 1933, trade unions and rival parties were banned.",
+            "paired_prose_hash": "bbda730593",
             "connective": "Next morning, Hitler used panic to crush rights."
           },
           {
@@ -18858,9 +18858,9 @@ export default {
             "mode": "landscape",
             "pos": "center 25%",
             "stat": "2 Aug 1934: President & Chancellor Roles Merged",
-            "html": "When <strong>President Hindenburg died</strong> on 2 August 1934, Hitler merged President and Chancellor to become sole <strong>Führer</strong>. That afternoon, every soldier swore <strong>personal loyalty to Hitler</strong>.",
-            "spoken": "One month later, Hitler’s last check died. <short pause> When President Hindenburg died on the second of August 1934, Hitler merged President and Chancellor to become sole Führer . That afternoon, every soldier swore personal loyalty to Hitler .",
-            "paired_prose_hash": "316d95851e",
+            "html": "When <strong>Hindenburg died</strong> on 2 August 1934, Hitler became sole <strong>Führer</strong> and bound soldiers via the personal <strong>army oath of allegiance</strong>.",
+            "spoken": "One month later, Hitler’s last check died. <short pause> When Hindenburg died on 2 August 1934, Hitler became sole Führer and bound soldiers via the personal army oath of allegiance.",
+            "paired_prose_hash": "a98fd03ea4",
             "connective": "One month later, Hitler’s last check died."
           },
           {
@@ -19518,7 +19518,7 @@ export default {
                 "tab_label": "4. Capital Terror",
                 "title": "Roland Freisler & Expansion of the Death Penalty",
                 "dates": "1933–1939",
-                "badge": "3 → 46 Capital Crimes",
+                "badge": "Expanded Capital Crimes",
                 "color": "#38bdf8",
                 "bg_color": "rgba(56, 189, 248, 0.22)",
                 "metrics": [
@@ -19527,15 +19527,15 @@ export default {
                     "value": "3 Offences"
                   },
                   {
-                    "label": "By 1943–44",
-                    "value": "46 Offences"
+                    "label": "People's Court",
+                    "value": "Secret Death Verdicts"
                   },
                   {
-                    "label": "Everyday Crimes",
-                    "value": "Jokes & Foreign Radio"
+                    "label": "Targeted Acts",
+                    "value": "Treason & Foreign Radio"
                   }
                 ],
-                "takeaway": "Fanatical jurists such as Roland Freisler turned courtrooms into ideological theatres, punishing anti-Hitler jokes, black-market offences, and tuning into foreign radio with execution."
+                "takeaway": "Fanatical jurists such as Roland Freisler turned courtrooms into ideological theatres, punishing treason, illegal underground printing, and tuning into foreign radio with harsh prison or death sentences."
               }
             ]
           }
@@ -19543,8 +19543,8 @@ export default {
         {
           "title": "The Vatican Concordat: Papal Compromise and Broken Promises (1933–1937)",
           "act": 4,
-          "text": "<span class=\"para-ref\">[4.1]</span> While Protestants later split over **the Confessional Church**, Hitler first sought prestige with Rome in **July 1933**. Through Papen, he signed **the Concordat (Reichskonkordat)** with the Vatican. Catholic priests left politics and the Catholic Centre Party dissolved itself, while Hitler promised to leave church schools and youth groups untouched.\n\n<span class=\"para-ref\">[4.2]</span> Despite promising Catholic Church autonomy, Hitler broke the treaty almost at once — **forcibly disbanding Catholic youth leagues and removing crucifixes from classrooms**. Nazi police censored Catholic newspapers, closed church schools, and arrested outspoken priests on trumped-up charges.",
-          "content": "<span class=\"para-ref\">[4.1]</span> While Protestants later split over **the Confessional Church**, Hitler first sought prestige with Rome in **July 1933**. Through Papen, he signed **the Concordat (Reichskonkordat)** with the Vatican. Catholic priests left politics and the Catholic Centre Party dissolved itself, while Hitler promised to leave church schools and youth groups untouched.\n\n<span class=\"para-ref\">[4.2]</span> Despite promising Catholic Church autonomy, Hitler broke the treaty almost at once — **forcibly disbanding Catholic youth leagues and removing crucifixes from classrooms**. Nazi police censored Catholic newspapers, closed church schools, and arrested outspoken priests on trumped-up charges.",
+          "text": "<span class=\"para-ref\">[4.1]</span> Launching **Nazi attempts to control the Catholic and Protestant Churches**, Hitler first sought diplomatic prestige with Rome in **July 1933**. Through Vice-Chancellor Franz von Papen, he signed **the Concordat (Reichskonkordat)** with Pope Pius XI: Catholic bishops swore loyalty, priests left politics, and the Catholic Centre Party dissolved itself in exchange for guaranteed church schools and youth clubs.\n\n<span class=\"para-ref\">[4.2]</span> Despite promising Catholic independence, Hitler broke **the Concordat** almost as soon as his dictatorship was secure — **forcibly disbanding Catholic youth leagues and removing crucifixes from classrooms**. Gestapo agents censored Catholic newspapers, shut parochial schools, and staged show trials of hundreds of priests and monks on trumped-up currency and morality charges to intimidate Catholic families.",
+          "content": "<span class=\"para-ref\">[4.1]</span> Launching **Nazi attempts to control the Catholic and Protestant Churches**, Hitler first sought diplomatic prestige with Rome in **July 1933**. Through Vice-Chancellor Franz von Papen, he signed **the Concordat (Reichskonkordat)** with Pope Pius XI: Catholic bishops swore loyalty, priests left politics, and the Catholic Centre Party dissolved itself in exchange for guaranteed church schools and youth clubs.\n\n<span class=\"para-ref\">[4.2]</span> Despite promising Catholic independence, Hitler broke **the Concordat** almost as soon as his dictatorship was secure — **forcibly disbanding Catholic youth leagues and removing crucifixes from classrooms**. Gestapo agents censored Catholic newspapers, shut parochial schools, and staged show trials of hundreds of priests and monks on trumped-up currency and morality charges to intimidate Catholic families.",
           "sources": [
             {
               "id": "weimar_l10_source_d",
@@ -19595,8 +19595,8 @@ export default {
           },
           "act_title": "Stage 4: The Catholic Concordat & Papal Resistance",
           "paragraphs": [
-            "<span class=\"para-ref\">[4.1]</span> In July 1933, seeking international diplomatic prestige, Hitler signed the historic **Reichskonkordat treaty (1933)** with the Vatican, negotiated by Franz von Papen. Under the concordat, the papacy agreed that Catholic priests would withdraw from active party politics, leading to the dramatic development where the Catholic **Center Party dissolved** itself, removing a major democratic parliamentary rival from the German political landscape.",
-            "<span class=\"para-ref\">[4.2]</span> In return, the Nazi government guaranteed full religious freedom and made solemn promises that **Catholic Church autonomy promised**, specifically protecting church schools, youth organizations, and charitable foundations. However, Hitler broke the treaty almost immediately: Catholic youth leagues were forcibly disbanded, crucifixes removed from classrooms, and outspoken priests arrested on fabricated charges of financial smuggling and immoral conduct."
+            "<span class=\"para-ref\">[4.1]</span> Launching **Nazi attempts to control the Catholic and Protestant Churches**, Hitler first sought diplomatic prestige with Rome in **July 1933**. Through Vice-Chancellor Franz von Papen, he signed **the Concordat (Reichskonkordat)** with Pope Pius XI: Catholic bishops swore loyalty, priests left politics, and the Catholic Centre Party dissolved itself in exchange for guaranteed church schools and youth clubs.",
+            "<span class=\"para-ref\">[4.2]</span> Despite promising Catholic independence, Hitler broke **the Concordat** almost as soon as his dictatorship was secure — **forcibly disbanding Catholic youth leagues and removing crucifixes from classrooms**. Gestapo agents censored Catholic newspapers, shut parochial schools, and staged show trials of hundreds of priests and monks on trumped-up currency and morality charges to intimidate Catholic families."
           ],
           "image": "/images/weimar_nazi_germany/kt3/wng_l10_b3_pope_pius_xi_laszlo_bodleian.jpg",
           "image_alt": "Oil portrait of Pope Pius XI seated in white papal cassock and crimson mozzetta (Philip de László, 1924, Bodleian Libraries)",
@@ -19605,8 +19605,8 @@ export default {
         {
           "title": "Pagan Altars vs Confessional Pulpits: The Protestant Church Struggle (1933–1939)",
           "act": 5,
-          "text": "<span class=\"para-ref\">[5.1]</span> Hitler next tried to coordinate Germany’s forty million Protestants into a unified Reich Church under handpicked Reich Bishop **Ludwig Müller**. Backed by fanatical **'German Christians'**, Müller placed swastika banners beside altar crosses, dismissed pastors of Jewish ancestry, and sought to drop the Jewish Old Testament.\n\n<span class=\"para-ref\">[5.2]</span> This interference sparked firm resistance led by Pastor **Martin Niemöller** and theologian Dietrich Bonhoeffer. In 1934, they founded the Confessional Church to preach that Christians obey God rather than the state. Over 800 dissident pastors were arrested, and Niemöller was confined in **Dachau** until 1945.",
-          "content": "<span class=\"para-ref\">[5.1]</span> Hitler next tried to coordinate Germany’s forty million Protestants into a unified Reich Church under handpicked Reich Bishop **Ludwig Müller**. Backed by fanatical **'German Christians'**, Müller placed swastika banners beside altar crosses, dismissed pastors of Jewish ancestry, and sought to drop the Jewish Old Testament.\n\n<span class=\"para-ref\">[5.2]</span> This interference sparked firm resistance led by Pastor **Martin Niemöller** and theologian Dietrich Bonhoeffer. In 1934, they founded the Confessional Church to preach that Christians obey God rather than the state. Over 800 dissident pastors were arrested, and Niemöller was confined in **Dachau** until 1945.",
+          "text": "<span class=\"para-ref\">[5.1]</span> Hitler simultaneously tried to centralise Germany’s forty million Protestants into a single Nazified **Reich Church** under handpicked Reich Bishop **Ludwig Müller**. Backed by fanatical **'German Christians'** who called themselves \"stormtroopers of Christ\", Müller hung swastika banners beside altar crosses, enforced the Aryan Paragraph to sack Jewish-born pastors, and sought to strip the Jewish Old Testament from Bibles.\n\n<span class=\"para-ref\">[5.2]</span> This interference sparked firm theological opposition led by former submarine commander **Pastor Martin Niemöller** and Dietrich Bonhoeffer. After forming the Pastors' Emergency League in 1933, they founded **the Confessional Church** (*Bekennende Kirche*) in May 1934 to insist Christians obey God above the state; over 800 pastors were arrested, and Niemöller was imprisoned in Sachsenhausen and **Dachau** from 1937.",
+          "content": "<span class=\"para-ref\">[5.1]</span> Hitler simultaneously tried to centralise Germany’s forty million Protestants into a single Nazified **Reich Church** under handpicked Reich Bishop **Ludwig Müller**. Backed by fanatical **'German Christians'** who called themselves \"stormtroopers of Christ\", Müller hung swastika banners beside altar crosses, enforced the Aryan Paragraph to sack Jewish-born pastors, and sought to strip the Jewish Old Testament from Bibles.\n\n<span class=\"para-ref\">[5.2]</span> This interference sparked firm theological opposition led by former submarine commander **Pastor Martin Niemöller** and Dietrich Bonhoeffer. After forming the Pastors' Emergency League in 1933, they founded **the Confessional Church** (*Bekennende Kirche*) in May 1934 to insist Christians obey God above the state; over 800 pastors were arrested, and Niemöller was imprisoned in Sachsenhausen and **Dachau** from 1937.",
           "image": "/images/weimar_nazi_germany/kt3/wng_l10_b4_hitler_ludwig_mueller_1934.jpg",
           "image_alt": "Adolf Hitler shaking hands with Nazi-backed Reich Bishop Ludwig Müller wearing a pectoral cross and Iron Cross outside the Frauenkirche in Nuremberg in September 1934",
           "caption": "The Reich Church vs. the Confessing Church (September 1934): Adolf Hitler greets handpicked Reich Bishop Ludwig Müller (right) in Nuremberg. Müller’s attempt to subordinate Protestant churches to \"German Christian\" racial dogma provoked Pastor Martin Niemöller and Dietrich Bonhoeffer to form the rival Confessing Church.",
@@ -19661,8 +19661,8 @@ export default {
             "question": "How useful is Source E for an enquiry into the nature and limits of Protestant religious opposition to the Nazi regime in the 1930s?"
           },
           "paragraphs": [
-            "<span class=\"para-ref\">[5.1]</span> Germany’s forty million Protestants were initially targeted for state coordination into a unified **Protestant Reich Church**, led by Hitler’s handpicked Reich Bishop Ludwig Müller. Supported by the fanatical \"German Christians\" movement, Müller attempted to Nazify the church, removing the Jewish Old Testament from scriptures, demanding the dismissal of non-Aryan clergy, and placing swastika flags alongside Christian crucifixes on church altars.",
-            "<span class=\"para-ref\">[5.2]</span> This blatant pagan interference sparked fierce theological resistance, led by courageous **Martin Niemöller opposition** alongside theologian Dietrich Bonhoeffer. In 1934, dissident pastors established the **Confessional Church resistance**, refusing state control and preaching that Christians must obey God rather than man. The Gestapo retaliated swiftly, arresting over eight hundred pastors and confining Niemöller in Dachau concentration camp until 1945."
+            "<span class=\"para-ref\">[5.1]</span> Hitler simultaneously tried to centralise Germany’s forty million Protestants into a single Nazified **Reich Church** under handpicked Reich Bishop **Ludwig Müller**. Backed by fanatical **'German Christians'** who called themselves \"stormtroopers of Christ\", Müller hung swastika banners beside altar crosses, enforced the Aryan Paragraph to sack Jewish-born pastors, and sought to strip the Jewish Old Testament from Bibles.",
+            "<span class=\"para-ref\">[5.2]</span> This interference sparked firm theological opposition led by former submarine commander **Pastor Martin Niemöller** and Dietrich Bonhoeffer. After forming the Pastors' Emergency League in 1933, they founded **the Confessional Church** (*Bekennende Kirche*) in May 1934 to insist Christians obey God above the state; over 800 pastors were arrested, and Niemöller was imprisoned in Sachsenhausen and **Dachau** from 1937."
           ]
         }
       ],
@@ -19897,13 +19897,13 @@ export default {
           "q": "Name the first concentration camp, opened in Germany in 1933.",
           "options": [
             "Dachau",
-            "Auschwitz",
+            "Sachsenhausen",
             "Buchenwald",
             "Treblinka"
           ],
           "answer": "Dachau",
           "a": "Dachau",
-          "explanation": "The Gestapo retaliated swiftly, arresting over eight hundred pastors and confining Niemöller in Dachau concentration camp until 1945."
+          "explanation": "The Gestapo retaliated swiftly, arresting over eight hundred Confessing pastors and confining Pastor Martin Niemöller in Sachsenhausen and Dachau from 1937."
         },
         {
           "stage": 5,
@@ -20213,7 +20213,7 @@ export default {
               "The role of the Gestapo and SS",
               "The Concordat with the Catholic Church (1933)"
             ],
-            "model": "<p>One primary reason the Nazi police state maintained control was <strong>the pervasive terror of the SS, Gestapo, and concentration camps</strong>. Under Heinrich Himmler and Reinhard Heydrich, the SS (Schutzstaffel) became a ruthless state within a state. The Gestapo (Secret State Police) operated above the law, arresting anyone suspected of anti-Nazi jokes, listening to foreign radio, or political dissent. Gestapo arrest meant brutal interrogation and imprisonment without trial in concentration camps like Dachau. Although the Gestapo had relatively few officers, pervasive public denunciations created an all-encompassing atmosphere of paranoia where citizens self-censored out of fear.</p><p>Furthermore, control was achieved by <strong>subverting the legal system and the judiciary</strong>. Judges were compelled to join the National Socialist League for the Maintenance of the Law (BSRB), and swearing a personal oath to Hitler. In 1934, Hitler established the People's Court (Volksgerichtshof) under Roland Freisler to try political treason cases without juries, where death sentences were handed down routinely. Therefore, citizens had no legal protection against state terror.</p><p>Finally, the regime neutralized religious opposition through <strong>the 1933 Concordat and the creation of the Reich Church</strong>. In July 1933, Hitler signed a Concordat with Pope Pius XI, promising that the Catholic Church could keep its schools and youth groups if priests remained out of politics. When the regime broke its promises, closing Catholic schools, Pope Pius XI issued the encyclical *Mit Brennender Sorge* (1937), but priests like Cardinal Galen faced Gestapo surveillance. For Protestants, the regime set up the pro-Nazi Reich Church under Ludwig Müller; opposing pastors who formed the Confessing Church, like Martin Niemöller and Dietrich Bonhoeffer, were arrested and sent to concentration camps, successfully preventing coordinated religious rebellion.</p>"
+            "model": "<p>One primary reason the Nazi police state maintained control was <strong>the pervasive terror of the SS, Gestapo, and concentration camps</strong>. Under Heinrich Himmler and Reinhard Heydrich, the SS (Schutzstaffel) became a ruthless state within a state. The Gestapo (Secret State Police) operated above the law, arresting anyone suspected of anti-Nazi jokes, listening to foreign radio, or political dissent. Gestapo arrest meant brutal interrogation and imprisonment without trial in concentration camps like Dachau. Although the Gestapo had relatively few officers, pervasive public denunciations created an all-encompassing atmosphere of paranoia where citizens self-censored out of fear.</p><p>Furthermore, control was achieved by <strong>subverting the legal system and the judiciary</strong>. Judges were compelled to join the National Socialist League for the Maintenance of the Law (BSRB), and swearing a personal oath to Hitler. In 1934, Hitler established the People's Court (Volksgerichtshof) under Roland Freisler to try political treason cases without juries, where death sentences were handed down routinely. Therefore, citizens had no legal protection against state terror.</p><p>Finally, the regime neutralized religious opposition through <strong>the 1933 Concordat and the creation of the Reich Church</strong>. In July 1933, Hitler signed a Concordat with Pope Pius XI, promising that the Catholic Church could keep its schools and youth groups if priests remained out of politics. When the regime broke its promises, closing Catholic schools, Pope Pius XI issued the encyclical *Mit Brennender Sorge* (1937), and hundreds of Catholic priests faced Gestapo arrest and show trials. For Protestants, the regime set up the pro-Nazi Reich Church under Ludwig Müller; opposing pastors who formed the Confessing Church, like Martin Niemöller and Dietrich Bonhoeffer, were arrested and sent to concentration camps, successfully preventing coordinated religious rebellion.</p>"
           }
         ]
       },
@@ -20364,7 +20364,7 @@ export default {
           "step": 4,
           "question": "Why did the regime violate the Concordat and persecute Catholic youth groups?",
           "questionHeading": "Why did the regime violate the Concordat and persecute Catholic youth groups?",
-          "prose_hash": "75f3840af9"
+          "prose_hash": "b4128a8fe9"
         },
         {
           "stage": 5,
@@ -20401,7 +20401,7 @@ export default {
           "step": 5,
           "question": "Why did the creation of the Reich Church spark theological rebellion?",
           "questionHeading": "Why did the creation of the Reich Church spark theological rebellion?",
-          "prose_hash": "f9d97324bd"
+          "prose_hash": "9a45ce09f0"
         }
       ],
       "causal_domino_spine": {
@@ -20458,7 +20458,7 @@ export default {
             "desc": "Hitler signed the Concordat with the Vatican, then breached it by harassing youth groups, prompting Pope Pius XI’s 1937 encyclical Mit brennender Sorge.",
             "connective": "Provoked moral resistance from Catholic pulpits while triggering retaliatory Gestapo arrests of outspoken clergy.",
             "question": "Why did the regime violate the Concordat and persecute Catholic youth groups?",
-            "prose_hash": "75f3840af9"
+            "prose_hash": "b4128a8fe9"
           },
           {
             "step": 5,
@@ -20471,7 +20471,7 @@ export default {
             "desc": "The pro-Nazi Reich Church Nazified Protestantism, provoking Pastor Martin Niemöller to establish the Confessional Church before being imprisoned at Sachsenhausen.",
             "connective": "Demonstrated principled theological defiance, exposing the limits of Nazi ideological conformity among devout Christians.",
             "question": "Why did the creation of the Reich Church spark theological rebellion?",
-            "prose_hash": "f9d97324bd"
+            "prose_hash": "9a45ce09f0"
           }
         ]
       },
@@ -20744,8 +20744,8 @@ export default {
             "mode": "landscape",
             "pos": "center 35%",
             "stat": "1934 People’s Court: Secret Trials, Zero Juries",
-            "html": "Judges had to join the <strong>Nazi lawyers’ league</strong> and apply racial ideology. Set up in 1934 under judges like <strong>Roland Freisler</strong>, the secret <strong>People’s Court</strong> passed thousands of death sentences.",
-            "spoken": "Even German courtrooms lost all legal independence. <short pause> Judges had to join the Nazi lawyers’ league and apply racial ideology. Set up in 1934 under judges like Roland Freisler , the secret People’s Court passed thousands of death sentences.",
+            "html": "Enforcing <strong>Nazi control of the legal system</strong>, judges joined the Nazi lawyers’ league while <strong>Roland Freisler’s People’s Court</strong> passed secret death sentences.",
+            "spoken": "Even German courtrooms lost all legal independence. <short pause> Enforcing Nazi control of the legal system, judges joined the Nazi lawyers’ league while Roland Freisler’s People’s Court passed secret death sentences.",
             "paired_prose_hash": "4fc5df5be6",
             "connective": "Even German courtrooms lost all legal independence."
           },
@@ -20758,7 +20758,7 @@ export default {
             "stat": "Jul 1933 Concordat Broken • Catholic Schools Shut",
             "html": "Under the <strong>July 1933 Concordat</strong> with the Pope, Catholic priests left politics for promised school freedom. Hitler soon broke his word—closing <strong>Catholic youth leagues</strong>, censoring papers, and arresting priests.",
             "spoken": "Hitler also moved to weaken Christian churches. <short pause> Under the July 1933 Concordat with the Pope, Catholic priests left politics for promised school freedom. Hitler soon broke his word, closing Catholic youth leagues , censoring papers, and arresting priests.",
-            "paired_prose_hash": "75f3840af9",
+            "paired_prose_hash": "b4128a8fe9",
             "connective": "Hitler also moved to weaken Christian churches."
           },
           {
@@ -20770,7 +20770,7 @@ export default {
             "stat": "800+ Pastors Arrested • Niemöller Sent to Dachau",
             "html": "Nazis backed Reich Bishop <strong>Ludwig Müller’s Reich Church</strong> with swastikas by altars. In defiance, <strong>Martin Niemöller</strong> and Bonhoeffer formed the <strong>Confessional Church</strong>; 800+ pastors were jailed.",
             "spoken": "Meanwhile, Protestant churches split over Nazi interference. <short pause> Nazis backed Reich Bishop Ludwig Müller’s Reich Church with swastikas by altars. In defiance, Martin Niemöller and Bonhoeffer formed the Confessional Church ; 800+ pastors were jailed.",
-            "paired_prose_hash": "f9d97324bd",
+            "paired_prose_hash": "9a45ce09f0",
             "connective": "Meanwhile, Protestant churches split over Nazi interference."
           },
           {
@@ -20989,7 +20989,7 @@ export default {
             "stage": 5,
             "question": "Name the first concentration camp, opened in Germany in 1933.",
             "answer": "Dachau",
-            "explanation": "The Gestapo retaliated swiftly, arresting over eight hundred pastors and confining Niemöller in Dachau concentration camp until 1945."
+            "explanation": "Opened by Heinrich Himmler near Munich in March 1933, Dachau was Nazi Germany's first permanent concentration camp for political prisoners and dissident clergy like Martin Niemöller."
           },
           {
             "stage": 1,
@@ -21266,8 +21266,8 @@ export default {
         {
           "title": "A Facade of Normalcy: The 1936 Berlin Olympic Games and Jesse Owens (Aug 1936)",
           "act": 4,
-          "text": "<span class=\"para-ref\">[4.1]</span> In August **1936**, the regime used the Berlin Olympic Games as an international showcase inside a giant 100,000-seat stadium with live television cameras. To deceive foreign visitors and reporters, Goebbels hid anti-Jewish street signs, paused SA street violence, and briefly allowed jazz in Berlin nightclubs.\n\n<span class=\"para-ref\">[4.2]</span> Germany topped the Olympic table with **33 gold medals**, hailed by Nazi papers as proof of Aryan strength. Yet African American sprinter **Jesse Owens** publicly punctured Hitler’s racial claims before cheering Berlin crowds by winning four gold medals and breaking world track records.",
-          "content": "<span class=\"para-ref\">[4.1]</span> In August **1936**, the regime used the Berlin Olympic Games as an international showcase inside a giant 100,000-seat stadium with live television cameras. To deceive foreign visitors and reporters, Goebbels hid anti-Jewish street signs, paused SA street violence, and briefly allowed jazz in Berlin nightclubs.\n\n<span class=\"para-ref\">[4.2]</span> Germany topped the Olympic table with **33 gold medals**, hailed by Nazi papers as proof of Aryan strength. Yet African American sprinter **Jesse Owens** publicly punctured Hitler’s racial claims before cheering Berlin crowds by winning four gold medals and breaking world track records.",
+          "text": "<span class=\"para-ref\">[4.1]</span> Goebbels also harnessed international **sport** for Nazi propaganda by staging the August **1936 Berlin Olympics** inside a vast 100,000-seat stadium broadcast by pioneering television cameras. To impress foreign visitors and journalists with an image of peaceful modern efficiency, Nazi authorities temporarily hid anti-Jewish street signs, paused SA street violence, and briefly allowed jazz bands in Berlin hotels.\n\n<span class=\"para-ref\">[4.2]</span> Germany topped the Olympic medal table with **33 gold medals**, celebrated across Goebbels' controlled press as proof of German national revival and Aryan physical superiority. Yet African American sprinter and long-jumper **Jesse Owens** publicly shattered Hitler’s racial claims before cheering Berlin crowds, winning **four gold medals** and breaking world track records under the Führer's gaze.",
+          "content": "<span class=\"para-ref\">[4.1]</span> Goebbels also harnessed international **sport** for Nazi propaganda by staging the August **1936 Berlin Olympics** inside a vast 100,000-seat stadium broadcast by pioneering television cameras. To impress foreign visitors and journalists with an image of peaceful modern efficiency, Nazi authorities temporarily hid anti-Jewish street signs, paused SA street violence, and briefly allowed jazz bands in Berlin hotels.\n\n<span class=\"para-ref\">[4.2]</span> Germany topped the Olympic medal table with **33 gold medals**, celebrated across Goebbels' controlled press as proof of German national revival and Aryan physical superiority. Yet African American sprinter and long-jumper **Jesse Owens** publicly shattered Hitler’s racial claims before cheering Berlin crowds, winning **four gold medals** and breaking world track records under the Führer's gaze.",
           "sources": [
             {
               "id": "weimar_l11_source_olympics1936",
@@ -21318,8 +21318,8 @@ export default {
           },
           "act_title": "Stage 4: The Berlin Olympic Games Showcase",
           "paragraphs": [
-            "<span class=\"para-ref\">[4.1]</span> In August 1936, the Nazi regime utilized the prestigious **Berlin Olympics (1936)** as a massive international public relations triumph. Goebbels constructed a colossal 100,000-seat stadium, pioneering live television coverage to project Germany as a peaceful, prosperous, and modern nation. To deceive foreign visitors, anti-Semitic street signage was removed, anti-Jewish violence was paused, and jazz music was permitted in Berlin nightclubs.",
-            "<span class=\"para-ref\">[4.2]</span> Intended as an undeniable **Nazi athletic showcase** of Aryan biological superiority, Germany topped the medal table with thirty-three gold medals. However, the racial myth was publicly punctured by magnificent **Jesse Owens track victories**. The African American sprinting superstar captured four Olympic gold medals, setting world records and winning thunderous applause from German crowds, undermining Hitler’s theories of racial supremacy before the world."
+            "<span class=\"para-ref\">[4.1]</span> Goebbels also harnessed international **sport** for Nazi propaganda by staging the August **1936 Berlin Olympics** inside a vast 100,000-seat stadium broadcast by pioneering television cameras. To impress foreign visitors and journalists with an image of peaceful modern efficiency, Nazi authorities temporarily hid anti-Jewish street signs, paused SA street violence, and briefly allowed jazz bands in Berlin hotels.",
+            "<span class=\"para-ref\">[4.2]</span> Germany topped the Olympic medal table with **33 gold medals**, celebrated across Goebbels' controlled press as proof of German national revival and Aryan physical superiority. Yet African American sprinter and long-jumper **Jesse Owens** publicly shattered Hitler’s racial claims before cheering Berlin crowds, winning **four gold medals** and breaking world track records under the Führer's gaze."
           ],
           "image": "/images/weimar_nazi_germany/kt3/wng_l11_b3_jesse_owens_berlin_1936.jpg",
           "image_alt": "African American athlete Jesse Owens saluting on the gold-medal podium between Naoto Tajima of Japan and Luz Long of Germany at the August 1936 Berlin Olympic Games",
@@ -21328,8 +21328,8 @@ export default {
         {
           "title": "Purging the Arts: Book Burnings, Degenerate Art and Monumental Architecture (1933–1937)",
           "act": 5,
-          "text": "<span class=\"para-ref\">[5.1]</span> Meanwhile, Nazi censors waged war on Weimar artistic freedom. In May 1933, university students staged **massive book burnings of works by Jewish and communist authors** across Germany. Crowds hurled 20,000 books by writers like **Albert Einstein and Sigmund Freud** and Karl Marx onto public bonfires.\n\n<span class=\"para-ref\">[5.2]</span> In 1937, Goebbels confiscated thousands of modernist paintings by Otto Dix and Paul Klee to mock in a Munich exhibition of **Degenerate Art** (*Entartete Kunst*). Modern Bauhaus design was outlawed too, replaced by Speer’s giant **monumental neoclassical architecture** built in granite and stone to project eternal Reich power.",
-          "content": "<span class=\"para-ref\">[5.1]</span> Meanwhile, Nazi censors waged war on Weimar artistic freedom. In May 1933, university students staged **massive book burnings of works by Jewish and communist authors** across Germany. Crowds hurled 20,000 books by writers like **Albert Einstein and Sigmund Freud** and Karl Marx onto public bonfires.\n\n<span class=\"para-ref\">[5.2]</span> In 1937, Goebbels confiscated thousands of modernist paintings by Otto Dix and Paul Klee to mock in a Munich exhibition of **Degenerate Art** (*Entartete Kunst*). Modern Bauhaus design was outlawed too, replaced by Speer’s giant **monumental neoclassical architecture** built in granite and stone to project eternal Reich power.",
+          "text": "<span class=\"para-ref\">[5.1]</span> Meanwhile, Goebbels enforced total **Nazi control of culture and the arts** across literature, art, architecture, music, and film to erase Weimar modernism. In May 1933, Nazi student leagues staged **massive book burnings of works by Jewish and communist authors** across university towns, hurling 20,000 books by writers such as **Albert Einstein and Sigmund Freud** and Karl Marx onto bonfires.\n\n<span class=\"para-ref\">[5.2]</span> Approved painters had to depict heroic Aryan soldiers, fertile mothers, and rural peasant life, while Goebbels confiscated thousands of modernist canvases by Otto Dix and Paul Klee to ridicule in Munich’s 1937 **Degenerate Art** (*Entartete Kunst*) exhibition. Functional Bauhaus design and American jazz were banned too, replaced by Albert Speer’s **monumental neoclassical architecture** in granite and stone.",
+          "content": "<span class=\"para-ref\">[5.1]</span> Meanwhile, Goebbels enforced total **Nazi control of culture and the arts** across literature, art, architecture, music, and film to erase Weimar modernism. In May 1933, Nazi student leagues staged **massive book burnings of works by Jewish and communist authors** across university towns, hurling 20,000 books by writers such as **Albert Einstein and Sigmund Freud** and Karl Marx onto bonfires.\n\n<span class=\"para-ref\">[5.2]</span> Approved painters had to depict heroic Aryan soldiers, fertile mothers, and rural peasant life, while Goebbels confiscated thousands of modernist canvases by Otto Dix and Paul Klee to ridicule in Munich’s 1937 **Degenerate Art** (*Entartete Kunst*) exhibition. Functional Bauhaus design and American jazz were banned too, replaced by Albert Speer’s **monumental neoclassical architecture** in granite and stone.",
           "sources": [
             {
               "id": "weimar_l11_source_d",
@@ -21380,8 +21380,8 @@ export default {
             "question": "How does Source E reflect the ideological principles and racial prejudices underlying Nazi cultural policy in the 1930s?"
           },
           "paragraphs": [
-            "<span class=\"para-ref\">[5.1]</span> Nazi cultural policy launched an unsparing war against Weimar artistic experimentation. In May 1933, university students staged symbolic **1933 Book burnings** across Germany, hurling twenty thousand works by Jewish, socialist, and pacifist writers—including Albert Einstein, Sigmund Freud, and Karl Marx—into public bonfires. Literature was strictly censored, compelling authors to write romanticized stories extolling peasant virtue and heroic military sacrifice.",
-            "<span class=\"para-ref\">[5.2]</span> In 1937, Goebbels enforced the famous **'Degenerate Art' ban**, confiscating thousands of modernist masterpieces by Otto Dix, Paul Klee, and Ernst and mocking them in a Munich exhibition. In architecture, modernist Bauhaus styles were outlawed, replaced by colossal **Albert Speer neoclassical architecture** featuring monumental granite columns and imposing porticos, designed to intimidate individual citizens and express the eternal power of the Reich."
+            "<span class=\"para-ref\">[5.1]</span> Meanwhile, Goebbels enforced total **Nazi control of culture and the arts** across literature, art, architecture, music, and film to erase Weimar modernism. In May 1933, Nazi student leagues staged **massive book burnings of works by Jewish and communist authors** across university towns, hurling 20,000 books by writers such as **Albert Einstein and Sigmund Freud** and Karl Marx onto bonfires.",
+            "<span class=\"para-ref\">[5.2]</span> Approved painters had to depict heroic Aryan soldiers, fertile mothers, and rural peasant life, while Goebbels confiscated thousands of modernist canvases by Otto Dix and Paul Klee to ridicule in Munich’s 1937 **Degenerate Art** (*Entartete Kunst*) exhibition. Functional Bauhaus design and American jazz were banned too, replaced by Albert Speer’s **monumental neoclassical architecture** in granite and stone."
           ],
           "concept_widget": {
             "type": "spectrum_slider",
@@ -22526,7 +22526,7 @@ export default {
           "step": 4,
           "question": "Why were the 1936 Olympics staged as an international showcase of Nazi success?",
           "questionHeading": "Why were the 1936 Olympics staged as an international showcase of Nazi success?",
-          "prose_hash": "c4ccdaadf6"
+          "prose_hash": "1c98fe0389"
         },
         {
           "stage": 5,
@@ -22563,7 +22563,7 @@ export default {
           "step": 5,
           "question": "Why did the regime denounce modern artistic expression as degenerate?",
           "questionHeading": "Why did the regime denounce modern artistic expression as degenerate?",
-          "prose_hash": "924c0f3354"
+          "prose_hash": "4cfbdf0576"
         }
       ],
       "causal_domino_spine": {
@@ -22620,7 +22620,7 @@ export default {
             "desc": "The regime sanitized Berlin by hiding anti-Semitic signs to present a modern, prosperous face to the world at the 100,000-seat Olympiastadion.",
             "connective": "Gained international prestige and deceived foreign visitors, despite Jesse Owens challenging Aryan racial superiority.",
             "question": "Why were the 1936 Olympics staged as an international showcase of Nazi success?",
-            "prose_hash": "c4ccdaadf6"
+            "prose_hash": "1c98fe0389"
           },
           {
             "step": 5,
@@ -22633,7 +22633,7 @@ export default {
             "desc": "The regime staged the Degenerate Art exhibition to mock modernists like Dix and Grosz, outlawing jazz while promoting heroic Aryan pastoral realism.",
             "connective": "Enforced aesthetic conformity, stripping German culture of avant-garde creativity and international influences.",
             "question": "Why did the regime denounce modern artistic expression as degenerate?",
-            "prose_hash": "924c0f3354"
+            "prose_hash": "4cfbdf0576"
           }
         ]
       },
@@ -22874,8 +22874,8 @@ export default {
             "img": "/images/weimar_individuals/joseph_goebbels.jpg",
             "mode": "contain",
             "stat": "7 Cultural Branches • Jews & Modernists Banned",
-            "html": "Propaganda Minister <strong>Joseph Goebbels</strong> created the seven-branch <strong>Reich Chamber of Culture</strong>. Every journalist, filmmaker, and artist had to join, purging <strong>Jews, modernists, and socialists</strong>.",
-            "spoken": "How did Joseph Goebbels shape minds across Nazi Germany? <short pause> Propaganda Minister Joseph Goebbels created the seven-branch Reich Chamber of Culture . Every journalist, filmmaker, and artist had to join, purging Jews, modernists, and socialists .",
+            "html": "Leading the <strong>Ministry of Propaganda</strong>, <strong>Joseph Goebbels</strong> created the seven-branch <strong>Reich Chamber of Culture</strong>, purging Jews, modernists, and socialists.",
+            "spoken": "How did Joseph Goebbels shape minds across Nazi Germany? <short pause> Leading the Ministry of Propaganda, Joseph Goebbels created the seven-branch Reich Chamber of Culture, purging Jews, modernists, and socialists.",
             "paired_prose_hash": "46f5881eab",
             "connective": "How did Joseph Goebbels shape minds across Nazi Germany?"
           },
@@ -22913,7 +22913,7 @@ export default {
             "stat": "100,000-Seat Stadium • Jesse Owens Wins 4 Golds",
             "html": "Hosting the <strong>1936 Berlin Olympics</strong>, Goebbels hid anti-Jewish signs to fool foreign visitors as Germany won 33 golds. Yet Black US sprinter <strong>Jesse Owens</strong> shattered Aryan myths with <strong>four gold medals</strong>.",
             "spoken": "In 1936, sport became an international showcase. <short pause> Hosting the 1936 Berlin Olympics , Goebbels hid anti-Jewish signs to fool foreign visitors as Germany won 33 golds. Yet Black US sprinter Jesse Owens shattered Aryan myths with four gold medals .",
-            "paired_prose_hash": "c4ccdaadf6",
+            "paired_prose_hash": "1c98fe0389",
             "connective": "In 1936, sport became an international showcase."
           },
           {
@@ -22923,9 +22923,9 @@ export default {
             "img": "/images/nazi_entartete_musik_poster_1938.jpg",
             "mode": "contain",
             "stat": "20,000 Books Burned • Bauhaus & Jazz Outlawed",
-            "html": "Students burned <strong>20,000 books</strong> by authors like Einstein and Freud in May 1933. Goebbels mocked Dix and Klee as <strong>“Degenerate Art”</strong>, banned jazz, and backed Speer’s <strong>giant stone architecture</strong>.",
-            "spoken": "At home, censors destroyed Weimar’s modern culture. <short pause> Students burned 20,000 books by authors like Einstein and Freud in May 1933. Goebbels mocked Dix and Klee as “Degenerate Art” , banned jazz, and backed Speer’s giant stone architecture .",
-            "paired_prose_hash": "924c0f3354",
+            "html": "Censoring <strong>literature</strong> and the arts, students burned <strong>20,000 books</strong> in 1933 while Goebbels mocked <strong>“Degenerate Art”</strong> and backed Speer’s stone architecture.",
+            "spoken": "At home, censors destroyed Weimar’s modern culture. <short pause> Censoring literature and the arts, students burned 20,000 books in 1933 while Goebbels mocked “Degenerate Art” and backed Speer’s stone architecture.",
+            "paired_prose_hash": "4cfbdf0576",
             "connective": "At home, censors destroyed Weimar’s modern culture."
           },
           {
@@ -22985,7 +22985,7 @@ export default {
       },
       "enquiry": "Why did so few Germans openly resist the Nazis—and how did some try?",
       "teacher_notes": {
-        "primer": "This enquiry examines the complex spectrum between passive conformity, everyday dissent, and active political resistance inside Nazi Germany between 1933 and 1939. Students analyze the reasons why the majority of ordinary Germans conformed (economic recovery, fear of the Gestapo, and foreign policy triumphs), the clandestine underground resistance of outlawed socialist and communist workers (SPD Sopade and KPD cells), the cultural and physical rebellion of working-class youth groups (Edelweiss Pirates) and middle-class jazz fans (Swing Youth), and the courageous moral opposition of Christian leaders including Martin Niemöller and Bishop Clemens August Graf von Galen.",
+        "primer": "This enquiry examines the spectrum between conformity, everyday grumbling, cultural non-conformity, and active opposition inside Nazi Germany between 1933 and August 1939. Students analyse why most Germans conformed (falling unemployment, KdF leisure, national pride, and Gestapo terror), underground SPD Sopade and KPD resistance, youth defiance by the Edelweiss Pirates and Swing Youth, and church opposition led by Pastor Martin Niemöller, Dietrich Bonhoeffer, and Pope Pius XI.",
         "objectives": [
           {
             "objective": "Explain why the majority of ordinary German citizens conformed to the Nazi regime rather than actively resisting.",
@@ -22994,7 +22994,7 @@ export default {
           },
           {
             "objective": "Analyse the methods, dangers, and limitations of underground left-wing workers’ resistance (KPD and SPD).",
-            "primer": "Direct students to paragraphs [2.1]–[2.2]. Examine clandestine anti-fascist leaflets, industrial sabotage, absenteeism, and intelligence smuggling by networks like the Red Orchestra (Rote Kapelle).",
+            "primer": "Direct students to paragraphs [2.1]–[2.2] and Sources A–B. Examine exiled SPD Sopade reports from Prague, camouflaged Tarnschriften booklets, KPD/SPD factory slow-downs, and why left-wing division and Gestapo informers shattered cells by 1938.",
             "question": "Why was underground socialist and communist resistance unable to mount a serious threat to Hitler’s regime?"
           },
           {
@@ -23008,9 +23008,9 @@ export default {
             "question": "Why did the Gestapo consider listening to American jazz music a dangerous act of political subversion?"
           },
           {
-            "objective": "Evaluate the moral and public resistance of religious leaders, specifically Martin Niemöller and Bishop Clemens August Graf von Galen.",
-            "primer": "Direct students to paragraphs [5.1]–[5.2] and Source B (Bishop Galen). Explain how Galen’s outspoken sermons against the Gestapo and the T4 euthanasia programme forced the regime to temporarily halt the killings due to fear of popular Catholic unrest.",
-            "question": "Why was Bishop von Galen able to openly criticize the regime and survive when political opponents were executed?"
+            "objective": "Evaluate opposition from the Churches between 1933 and 1939, focusing on Pastor Martin Niemöller, Dietrich Bonhoeffer, and Pope Pius XI.",
+            "primer": "Direct students to paragraphs [5.1]–[5.2] and Source E (Bonhoeffer). Explain how Niemöller and Bonhoeffer founded the Confessing Church and illegal seminaries (leading to 800+ arrests and Niemöller's camp imprisonment from 1937) alongside Pius XI's 1937 encyclical Mit Brennender Sorge.",
+            "question": "Why did courageous Protestant and Catholic church opposition defend religious independence yet rarely threaten Hitler's political hold on power before 1939?"
           }
         ],
         "source_context": {
@@ -23110,7 +23110,7 @@ export default {
         ],
         "send_adaptation": "Start directly with the Block 1 Concept Diagram ('Pre-War Responses to Nazi Rule 1933–39: Active Resistance, Dissent, Non-Conformity'), Visual Story Sheet, and Studio Audio read-aloud so learners grasp the spectrum from everyday grumbling to active underground cells. Use the Workbook Verso 5-Stage Chronological Spine to compare Workers (Stage 2), Edelweiss Pirates (Stage 3), Swing Youth (Stage 4), and Churches (Stage 5) without drifting past August 1939.",
         "stretch_challenge": "Push Grade 8–9 pupils in Q3(d) to evaluate whether limited pre-war resistance (1933–39) owed more to the pervasive fear of Himmler's terror state or to widespread popular consent bought by full employment, foreign-policy revision of Versailles, and Goebbels's Führer cult.",
-        "safeguarding_impartiality": "Frame Gestapo arrests and youth camp detentions factually, and if referencing Bishop von Galen's sermons against euthanasia mentioned in Block 5, remind classes clearly that wartime developments after September 1939 sit outside the examined 1918–39 Paper 3 boundary."
+        "safeguarding_impartiality": "Frame Gestapo arrests, camp detentions, and clerical persecution factually, and remind classes clearly that wartime resistance after September 1939 (such as the 1942–43 White Rose, 1941 wartime euthanasia sermons, or the July 1944 Bomb Plot) sits strictly outside the examined 1918–39 Paper 3 boundary."
       },
       "learning_objectives": {
         "overarching": "To understand the key concepts of this topic.",
@@ -23353,7 +23353,7 @@ export default {
                   {
                     "category": "Catholic",
                     "glyph": "leader",
-                    "value": "1937 Mit Brennender Sorge & Galen"
+                    "value": "1937 Mit Brennender Sorge"
                   },
                   {
                     "category": "State Action",
@@ -23395,10 +23395,10 @@ export default {
           }
         },
         {
-          "title": "Underground Cells and Sabotage: Left-Wing Resistance and the Rote Kapelle (1933–1938)",
+          "title": "Underground Cells and Sabotage: Left-Wing Resistance and Sopade Couriers (1933–1938)",
           "act": 2,
-          "text": "<span class=\"para-ref\">[2.1]</span> Determined early opposition came from crushed left-wing workers' parties after the mass arrests of 1933. Exiled SPD leaders in **Prague** smuggled illegal anti-Nazi newspapers into Germany inside seed packets and bicycle manuals. Meanwhile, Berlin spy networks like **the Red Orchestra (Rote Kapelle)** passed military intelligence abroad.\n\n<span class=\"para-ref\">[2.2]</span> Inside arms factories, secret KPD and SPD underground cells organised **work slow-downs, factory sabotage, and illegal leaflets** to disrupt rearmament. However, **persistent socialist-communist divisions and systematic Gestapo infiltration** crippled the underground network and led to mass arrests and executions by 1938.",
-          "content": "<span class=\"para-ref\">[2.1]</span> Determined early opposition came from crushed left-wing workers' parties after the mass arrests of 1933. Exiled SPD leaders in **Prague** smuggled illegal anti-Nazi newspapers into Germany inside seed packets and bicycle manuals. Meanwhile, Berlin spy networks like **the Red Orchestra (Rote Kapelle)** passed military intelligence abroad.\n\n<span class=\"para-ref\">[2.2]</span> Inside arms factories, secret KPD and SPD underground cells organised **work slow-downs, factory sabotage, and illegal leaflets** to disrupt rearmament. However, **persistent socialist-communist divisions and systematic Gestapo infiltration** crippled the underground network and led to mass arrests and executions by 1938.",
+          "text": "<span class=\"para-ref\">[2.1]</span> Determined early political opposition came from outlawed left-wing workers' parties after the mass arrests of 1933. Operating from exile in **Prague** as *Sopade*, Social Democratic leaders compiled candid *Deutschland-Berichte* mood reports from underground couriers and smuggled miniature anti-Nazi newspapers and camouflaged booklets (*Tarnschriften*) into Germany hidden inside seed packets, soap wrappers, and classic book covers.\n\n<span class=\"para-ref\">[2.2]</span> Inside German industrial plants and dockyards, secret **KPD and SPD underground cells** organised **work slow-downs, factory sabotage, and illegal leaflets** warning workers against Hitler's rearmament drive. However, **persistent socialist-communist divisions and systematic Gestapo infiltration** crippled left-wing networks, leading to mass treason trials before the People's Court, concentration camp internment, and executions that shattered most cells by 1938.",
+          "content": "<span class=\"para-ref\">[2.1]</span> Determined early political opposition came from outlawed left-wing workers' parties after the mass arrests of 1933. Operating from exile in **Prague** as *Sopade*, Social Democratic leaders compiled candid *Deutschland-Berichte* mood reports from underground couriers and smuggled miniature anti-Nazi newspapers and camouflaged booklets (*Tarnschriften*) into Germany hidden inside seed packets, soap wrappers, and classic book covers.\n\n<span class=\"para-ref\">[2.2]</span> Inside German industrial plants and dockyards, secret **KPD and SPD underground cells** organised **work slow-downs, factory sabotage, and illegal leaflets** warning workers against Hitler's rearmament drive. However, **persistent socialist-communist divisions and systematic Gestapo infiltration** crippled left-wing networks, leading to mass treason trials before the People's Court, concentration camp internment, and executions that shattered most cells by 1938.",
           "sources": [
             {
               "id": "weimar_l12_source_c",
@@ -23449,8 +23449,8 @@ export default {
             "question": "How useful is Source B for an enquiry into the methods used by underground political opponents to circulate anti-Nazi material between 1933 and 1939?"
           },
           "paragraphs": [
-            "<span class=\"para-ref\">[2.1]</span> The most determined early opposition came from crushed left-wing workers' parties. Following mass arrests in 1933, dedicated militants organized secret **KPD and SPD underground cells** across industrial centers. The exiled SPD leadership in Prague smuggled illegal anti-Nazi newspapers into Germany concealed inside seed packets and bicycle manuals, documenting factory grievances, wage freezes, and brutal working conditions to sustain working-class morale.",
-            "<span class=\"para-ref\">[2.2]</span> In Berlin, elite underground groups like the **Rote Kapelle courier networks** gathered sensitive military intelligence to undermine rearmament. In factories, communist cells organized slow-downs, **factory sabotage & illegal leaflets** distribution to disrupt armaments production. However, persistent socialist-communist divisions and systematic Gestapo infiltration crippled the underground movement, resulting in mass arrests and execution of ringleaders by 1938."
+            "<span class=\"para-ref\">[2.1]</span> Determined early political opposition came from outlawed left-wing workers' parties after the mass arrests of 1933. Operating from exile in **Prague** as *Sopade*, Social Democratic leaders compiled candid *Deutschland-Berichte* mood reports from underground couriers and smuggled miniature anti-Nazi newspapers and camouflaged booklets (*Tarnschriften*) into Germany hidden inside seed packets, soap wrappers, and classic book covers.",
+            "<span class=\"para-ref\">[2.2]</span> Inside German industrial plants and dockyards, secret **KPD and SPD underground cells** organised **work slow-downs, factory sabotage, and illegal leaflets** warning workers against Hitler's rearmament drive. However, **persistent socialist-communist divisions and systematic Gestapo infiltration** crippled left-wing networks, leading to mass treason trials before the People's Court, concentration camp internment, and executions that shattered most cells by 1938."
           ],
           "image": "/images/weimar_nazi_germany/kt3/wng_l12_b1_sopade_neuer_vorwaerts_1934.jpg",
           "image_alt": "Political cartoon from the exiled Social Democratic newspaper Neuer Vorwärts (8 April 1934) depicting Economics Minister Hjalmar Schacht pursued through the night by a gas-masked Nazi stormtrooper",
@@ -23459,8 +23459,8 @@ export default {
         {
           "title": "The Alpine Flower: The Edelweiss Pirates and Working-Class Youth Defiance (1936–1939)",
           "act": 3,
-          "text": "<span class=\"para-ref\">[3.1]</span> As Hitler Youth drill grew compulsory from **1936**, working-class teenagers in Cologne, Essen, and Düsseldorf formed rebellious groups called **the Edelweiss Pirates**. Rejecting uniform rules, youths wore check shirts, dark trousers, and pinned **the white edelweiss flower** beneath their collars.\n\n<span class=\"para-ref\">[3.2]</span> Meeting in parks and camping at weekends beyond state watch, Pirates sang satirical anti-Nazi parodies, painted anti-war slogans on walls, and ambushed Hitler Youth patrols. The Gestapo answered ruthlessly with arrests, forced head-shaving, camp beatings, and wartime hangings of teenage leaders.",
-          "content": "<span class=\"para-ref\">[3.1]</span> As Hitler Youth drill grew compulsory from **1936**, working-class teenagers in Cologne, Essen, and Düsseldorf formed rebellious groups called **the Edelweiss Pirates**. Rejecting uniform rules, youths wore check shirts, dark trousers, and pinned **the white edelweiss flower** beneath their collars.\n\n<span class=\"para-ref\">[3.2]</span> Meeting in parks and camping at weekends beyond state watch, Pirates sang satirical anti-Nazi parodies, painted anti-war slogans on walls, and ambushed Hitler Youth patrols. The Gestapo answered ruthlessly with arrests, forced head-shaving, camp beatings, and wartime hangings of teenage leaders.",
+          "text": "<span class=\"para-ref\">[3.1]</span> As Hitler Youth drill grew compulsory from **1936**, working-class teenagers aged fourteen to seventeen in Rhineland industrial cities like Cologne, Essen, and Düsseldorf formed rebellious gangs known as **the Edelweiss Pirates**. Rejecting uniform regimentation, boys and girls socialised freely together wearing check shirts, dark trousers, neck scarves, and **the white edelweiss flower** pinned beneath their jacket collars.\n\n<span class=\"para-ref\">[3.2]</span> Hiking and camping freely in the countryside at weekends beyond party supervision, Pirates sang banned folk tunes and satirical anti-Nazi parodies, painted anti-regime slogans on railway bridges, and ambushed Hitler Youth patrols. By 1938–39, Gestapo reports branded them a serious danger to Rhineland youth, answering with street round-ups, forced head-shaving, police beatings, and youth camp detentions.",
+          "content": "<span class=\"para-ref\">[3.1]</span> As Hitler Youth drill grew compulsory from **1936**, working-class teenagers aged fourteen to seventeen in Rhineland industrial cities like Cologne, Essen, and Düsseldorf formed rebellious gangs known as **the Edelweiss Pirates**. Rejecting uniform regimentation, boys and girls socialised freely together wearing check shirts, dark trousers, neck scarves, and **the white edelweiss flower** pinned beneath their jacket collars.\n\n<span class=\"para-ref\">[3.2]</span> Hiking and camping freely in the countryside at weekends beyond party supervision, Pirates sang banned folk tunes and satirical anti-Nazi parodies, painted anti-regime slogans on railway bridges, and ambushed Hitler Youth patrols. By 1938–39, Gestapo reports branded them a serious danger to Rhineland youth, answering with street round-ups, forced head-shaving, police beatings, and youth camp detentions.",
           "sources": [
             {
               "id": "weimar_l12_source_a",
@@ -23515,8 +23515,8 @@ export default {
           "isReversed": false,
           "act_title": "Stage 3: Youth Rebellion: The Edelweiss Pirates",
           "paragraphs": [
-            "<span class=\"para-ref\">[3.1]</span> As Hitler Youth membership became increasingly militarized and compulsory, rebellious adolescents formed counter-cultural protest groups across western industrial cities. Expressing fearless **Edelweiss Pirates defiance**, working-class youths in Cologne, Essen, and Düsseldorf wore check shirts, dark trousers, and pinned the alpine edelweiss flower beneath their collars, deliberately violating the strict uniform regulations and disciplined regimentation of the Hitler Youth.",
-            "<span class=\"para-ref\">[3.2]</span> This vibrant **working-class youth rebellion** met in public parks, singing satirical anti-Nazi parodies and escaping state surveillance on weekend camping trips. Their defiance frequently turned violent, ambushing Hitler Youth patrols and daubing anti-war slogans on walls. The regime responded ruthlessly, imposing **camp beatings & anti-Nazi leaflets** crackdowns, Gestapo detentions, forced head shaving, and public hangings of teenage leaders."
+            "<span class=\"para-ref\">[3.1]</span> As Hitler Youth drill grew compulsory from **1936**, working-class teenagers aged fourteen to seventeen in Rhineland industrial cities like Cologne, Essen, and Düsseldorf formed rebellious gangs known as **the Edelweiss Pirates**. Rejecting uniform regimentation, boys and girls socialised freely together wearing check shirts, dark trousers, neck scarves, and **the white edelweiss flower** pinned beneath their jacket collars.",
+            "<span class=\"para-ref\">[3.2]</span> Hiking and camping freely in the countryside at weekends beyond party supervision, Pirates sang banned folk tunes and satirical anti-Nazi parodies, painted anti-regime slogans on railway bridges, and ambushed Hitler Youth patrols. By 1938–39, Gestapo reports branded them a serious danger to Rhineland youth, answering with street round-ups, forced head-shaving, police beatings, and youth camp detentions."
           ]
         },
         {
@@ -23582,10 +23582,10 @@ export default {
           "caption": "Banned American Swing Icons: Trumpeter Louis Armstrong—whose imported records alongside Benny Goodman’s inspired middle-class German \"Swing Youth\" in Hamburg and Berlin to shun Hitler Youth drill for underground jazz dance clubs."
         },
         {
-          "title": "Pulpit Defiance: Bishop von Galen, Dietrich Bonhoeffer and Religious Courage (1937–1939)",
+          "title": "Pulpit Defiance: Pastor Martin Niemöller, the Confessing Church and Pius XI (1933–1939)",
           "act": 5,
-          "text": "<span class=\"para-ref\">[5.1]</span> Courageous Christian leaders also spoke out publicly against Nazi attacks on faith. In 1937, Pope Pius XI had his encyclical **Mit Brennender Sorge** smuggled into Germany and read from Catholic pulpits condemning Nazi racism. Meanwhile, Protestant Pastor **Dietrich Bonhoeffer** ran **illegal underground seminaries** alongside Martin Niemöller.\n\n<span class=\"para-ref\">[5.2]</span> Catholic **Bishop Clemens August von Galen** of Münster led the most effective public protest. His fiery sermons condemned Gestapo terror and exposed the secret T4 euthanasia killings of disabled patients, sparking such public outrage that Hitler temporarily paused the programme.",
-          "content": "<span class=\"para-ref\">[5.1]</span> Courageous Christian leaders also spoke out publicly against Nazi attacks on faith. In 1937, Pope Pius XI had his encyclical **Mit Brennender Sorge** smuggled into Germany and read from Catholic pulpits condemning Nazi racism. Meanwhile, Protestant Pastor **Dietrich Bonhoeffer** ran **illegal underground seminaries** alongside Martin Niemöller.\n\n<span class=\"para-ref\">[5.2]</span> Catholic **Bishop Clemens August von Galen** of Münster led the most effective public protest. His fiery sermons condemned Gestapo terror and exposed the secret T4 euthanasia killings of disabled patients, sparking such public outrage that Hitler temporarily paused the programme.",
+          "text": "<span class=\"para-ref\">[5.1]</span> Courageous **opposition from the Churches** challenged Nazi interference in Christian faith, even though few clergy sought to overthrow Hitler politically. In May 1934, Protestant **Pastor Martin Niemöller** and theologian **Dietrich Bonhoeffer** co-founded the **Confessing Church** against Reich Bishop Müller's Nazified Reich Church, while Bonhoeffer trained dissident pastors in **illegal underground seminaries** at Finkenwalde until Gestapo closure in 1937.\n\n<span class=\"para-ref\">[5.2]</span> Over 800 Confessing pastors were arrested, yet fearing mass outrage among loyal churchgoers, Hitler hesitated to execute high-profile church critics—confining **Pastor Niemöller** in Sachsenhausen and Dachau from July 1937 as his personal prisoner. Meanwhile, **Pope Pius XI** smuggled his March 1937 encyclical **Mit Brennender Sorge** into Catholic pulpits condemning Nazi racism and Concordat breaches.",
+          "content": "<span class=\"para-ref\">[5.1]</span> Courageous **opposition from the Churches** challenged Nazi interference in Christian faith, even though few clergy sought to overthrow Hitler politically. In May 1934, Protestant **Pastor Martin Niemöller** and theologian **Dietrich Bonhoeffer** co-founded the **Confessing Church** against Reich Bishop Müller's Nazified Reich Church, while Bonhoeffer trained dissident pastors in **illegal underground seminaries** at Finkenwalde until Gestapo closure in 1937.\n\n<span class=\"para-ref\">[5.2]</span> Over 800 Confessing pastors were arrested, yet fearing mass outrage among loyal churchgoers, Hitler hesitated to execute high-profile church critics—confining **Pastor Niemöller** in Sachsenhausen and Dachau from July 1937 as his personal prisoner. Meanwhile, **Pope Pius XI** smuggled his March 1937 encyclical **Mit Brennender Sorge** into Catholic pulpits condemning Nazi racism and Concordat breaches.",
           "sources": [
             {
               "id": "weimar_l12_source_d",
@@ -23638,10 +23638,10 @@ export default {
           "image_alt": "Bronze memorial statue of Bishop Clemens August Graf von Galen in episcopal vestments beside St Paul’s Cathedral in Münster",
           "caption": "The \"Lion of Münster\": Memorial statue of Catholic Bishop Clemens August Graf von Galen outside St Paul’s Cathedral in Münster, where his outspoken sermons condemned Gestapo lawlessness and Nazi racial persecution.",
           "isReversed": true,
-          "act_title": "Stage 5: Religious Resistance: Niemöller & Galen",
+          "act_title": "Stage 5: Opposition from the Churches: Niemöller & Pius XI",
           "paragraphs": [
-            "<span class=\"para-ref\">[5.1]</span> Christian leaders mounted some of the most influential public protests against Nazi tyranny. In 1937, Pope Pius XI issued the encyclical **Mit Brennender Sorge (1937)**, which was smuggled into Germany and read from Catholic pulpits, openly attacking Nazi racial idolatry. In Protestant circles, theological opposition was spearheaded by **Pastor Martin Niemöller & Bonhoeffer**, who refused state control and established illegal underground seminaries for dissident pastors.",
-            "<span class=\"para-ref\">[5.2]</span> The most effective individual protest was led by the Bishop of Münster, whose outspoken sermons sparked famous **Bishop von Galen euthanasia protests**. Galen courageously condemned Gestapo murders and the secret T4 euthanasia program that killed mentally ill patients, generating such immense public outrage that Hitler temporarily suspended the euthanasia program, fearing mutiny among Catholic soldiers on the Western Front."
+            "<span class=\"para-ref\">[5.1]</span> Courageous **opposition from the Churches** challenged Nazi interference in Christian faith, even though few clergy sought to overthrow Hitler politically. In May 1934, Protestant **Pastor Martin Niemöller** and theologian **Dietrich Bonhoeffer** co-founded the **Confessing Church** against Reich Bishop Müller's Nazified Reich Church, while Bonhoeffer trained dissident pastors in **illegal underground seminaries** at Finkenwalde until Gestapo closure in 1937.",
+            "<span class=\"para-ref\">[5.2]</span> Over 800 Confessing pastors were arrested, yet fearing mass outrage among loyal churchgoers, Hitler hesitated to execute high-profile church critics—confining **Pastor Niemöller** in Sachsenhausen and Dachau from July 1937 as his personal prisoner. Meanwhile, **Pope Pius XI** smuggled his March 1937 encyclical **Mit Brennender Sorge** into Catholic pulpits condemning Nazi racism and Concordat breaches."
           ]
         }
       ],
@@ -23704,17 +23704,17 @@ export default {
         },
         {
           "stage": 2,
-          "question": "What underground communist resistance network gathered military intelligence and distributed anti-Nazi leaflets?",
-          "q": "What underground communist resistance network gathered military intelligence and distributed anti-Nazi leaflets?",
+          "question": "What exiled Social Democratic (SPD) organisation in Prague compiled underground mood reports and smuggled camouflaged anti-Nazi booklets into Germany?",
+          "q": "What exiled Social Democratic (SPD) organisation in Prague compiled underground mood reports and smuggled camouflaged anti-Nazi booklets into Germany?",
           "options": [
             "The Edelweiss Pirates",
             "The Swing Youth",
-            "The Red Orchestra (Rote Kapelle)",
+            "Sopade (SPD in Exile)",
             "The Freikorps"
           ],
-          "answer": "The Red Orchestra (Rote Kapelle)",
-          "a": "The Red Orchestra (Rote Kapelle)",
-          "explanation": "In Berlin, elite underground groups like the Rote Kapelle courier networks gathered sensitive military intelligence to undermine rearmament."
+          "answer": "Sopade (SPD in Exile)",
+          "a": "Sopade (SPD in Exile)",
+          "explanation": "Operating from exile in Prague as Sopade, Social Democratic leaders compiled Deutschland-Berichte reports and smuggled camouflaged pamphlets (Tarnschriften) across the border."
         },
         {
           "stage": 2,
@@ -23764,7 +23764,7 @@ export default {
           "q": "What working-class youth opposition movement wore edelweiss badges and beat up Hitler Youth patrols?",
           "options": [
             "The Swing Youth",
-            "The White Rose",
+            "The Deutsches Jungvolk",
             "The Edelweiss Pirates",
             "The Young Fellows"
           ],
@@ -23794,7 +23794,7 @@ export default {
             "The Edelweiss Pirates",
             "The Navajos",
             "The Swing Youth",
-            "The White Rose Group"
+            "The Reich Labour Service"
           ],
           "answer": "The Edelweiss Pirates",
           "a": "The Edelweiss Pirates",
@@ -23835,7 +23835,7 @@ export default {
           "options": [
             "The Wandervogel",
             "The Swing Youth",
-            "The White Rose Group",
+            "The German Labour Front",
             "The Edelweiss Pirates"
           ],
           "answer": "The Swing Youth",
@@ -23872,17 +23872,17 @@ export default {
         },
         {
           "stage": 5,
-          "question": "Which Catholic bishop publicly denounced the Nazi secret euthanasia program (Aktion T4) from his pulpit in 1941?",
-          "q": "Which Catholic bishop publicly denounced the Nazi secret euthanasia program (Aktion T4) from his pulpit in 1941?",
+          "question": "Which Protestant pastor co-founded the Confessing Church against Nazi interference before being imprisoned in Sachsenhausen and Dachau from July 1937?",
+          "q": "Which Protestant pastor co-founded the Confessing Church against Nazi interference before being imprisoned in Sachsenhausen and Dachau from July 1937?",
           "options": [
             "Pastor Martin Niemöller",
-            "Dietrich Bonhoeffer",
-            "Bishop Clemens August von Galen",
-            "Pope Pius XI"
+            "Ludwig Müller",
+            "Bernhard Rust",
+            "Baldur von Schirach"
           ],
-          "answer": "Bishop Clemens August von Galen",
-          "a": "Bishop Clemens August von Galen",
-          "explanation": "The most effective individual protest was led by the Bishop of Münster, whose outspoken sermons sparked famous Bishop von Galen euthanasia protests."
+          "answer": "Pastor Martin Niemöller",
+          "a": "Pastor Martin Niemöller",
+          "explanation": "Pastor Martin Niemöller co-founded the Pastors' Emergency League (1933) and Confessing Church (1934); over 800 pastors were arrested and Niemöller was jailed in camps from July 1937."
         },
         {
           "stage": 5,
@@ -23989,7 +23989,7 @@ export default {
               "The Gestapo and concentration camps",
               "Economic recovery and Nazi social policies"
             ],
-            "model": "<p>One decisive reason active opposition was limited was <strong>the destruction of independent political institutions and fear of police terror</strong>. In 1933, the regime abolished trade unions, outlawed rival parties, and sent left-wing leaders to Dachau. With the Gestapo, SS, and local Block Wardens (Blockleiter) watching neighborhoods, any resistance risked torture or execution. Therefore, this limited active opposition because the complete dismantling of civil society deprived potential resisters of political organizations, communication networks, and safe spaces to organize coordinated opposition.</p><p>Furthermore, resistance was muted because <strong>Hitler enjoyed genuine, widespread popularity due to economic recovery and foreign policy triumphs</strong>. By 1939, Nazi work creation and rearmament programs had virtually eliminated the six million unemployment crisis of the Depression, providing stable wages and social perks like 'Strength Through Joy' (KdF) holidays. Concurrently, Hitler overturned Versailles without war by remilitarizing the Rhineland (1936) and annexing Austria (1938). Therefore, this restricted opposition because millions of patriotic citizens genuinely admired Hitler for restoring national prosperity and international pride.</p><p>Finally, opposition was restricted by <strong>the localized, fragmented nature of youth and religious dissent</strong>. Groups like the Edelweiss Pirates engaged in cultural defiance, while church leaders like Bishop von Galen criticized specific policies like euthanasia rather than attempting to overthrow the state. Therefore, this limited opposition because dissenters lacked the military weapons, cohesive ideology, and army backing required to mount a serious challenge to the regime.</p>",
+            "model": "<p>One decisive reason active opposition was limited was <strong>the destruction of independent political institutions and fear of police terror</strong>. In 1933, the regime abolished trade unions, outlawed rival parties, and sent left-wing leaders to Dachau. With the Gestapo, SS, and local Block Wardens (Blockleiter) watching neighborhoods, any resistance risked torture or execution. Therefore, this limited active opposition because the complete dismantling of civil society deprived potential resisters of political organizations, communication networks, and safe spaces to organize coordinated opposition.</p><p>Furthermore, resistance was muted because <strong>Hitler enjoyed genuine, widespread popularity due to economic recovery and foreign policy triumphs</strong>. By 1939, Nazi work creation and rearmament programs had virtually eliminated the six million unemployment crisis of the Depression, providing stable wages and social perks like 'Strength Through Joy' (KdF) holidays. Concurrently, Hitler overturned Versailles without war by remilitarizing the Rhineland (1936) and annexing Austria (1938). Therefore, this restricted opposition because millions of patriotic citizens genuinely admired Hitler for restoring national prosperity and international pride.</p><p>Finally, opposition was restricted by <strong>the localized, fragmented nature of youth and religious dissent</strong>. Groups like the Edelweiss Pirates engaged in cultural defiance, while church figures like Pastor Martin Niemöller in the Confessing Church and Pope Pius XI in Mit Brennender Sorge (1937) defended Christian autonomy rather than attempting to overthrow the state. Therefore, this limited opposition because dissenters lacked the military weapons, cohesive ideology, and army backing required to mount a serious challenge to the regime.</p>",
             "scaffolding": {
               "acronym": "3 PEEL Reasons • Own Knowledge Required (Cap 6/12) • 15m",
               "button_label": "Starters & Word Bank",
@@ -24019,7 +24019,7 @@ export default {
                 "Confessional Church",
                 "Mit brennender Sorge (1937)",
                 "Pope Pius XI",
-                "Bishop von Galen",
+                "800+ Confessing pastors jailed",
                 "Block Wardens",
                 "Passive non-conformity"
               ]
@@ -24044,7 +24044,7 @@ export default {
                 "score": "12 / 12 Marks",
                 "level": "Level 4 Top (Pearson Benchmark)",
                 "badge": "Edexcel Benchmark",
-                "text": "<p>One decisive reason active opposition was limited was <strong>the destruction of independent political institutions and fear of police terror</strong>. In 1933, the regime abolished trade unions, outlawed rival parties, and sent left-wing leaders to Dachau. With the Gestapo, SS, and local Block Wardens (Blockleiter) watching neighborhoods, any resistance risked torture or execution. Therefore, this limited active opposition because the complete dismantling of civil society deprived potential resisters of political organizations, communication networks, and safe spaces to organize coordinated opposition.</p><p>Furthermore, resistance was muted because <strong>Hitler enjoyed genuine, widespread popularity due to economic recovery and foreign policy triumphs</strong>. By 1939, Nazi work creation and rearmament programs had virtually eliminated the six million unemployment crisis of the Depression, providing stable wages and social perks like 'Strength Through Joy' (KdF) holidays. Concurrently, Hitler overturned Versailles without war by remilitarizing the Rhineland (1936) and annexing Austria (1938). Therefore, this restricted opposition because millions of patriotic citizens genuinely admired Hitler for restoring national prosperity and international pride.</p><p>Finally, opposition was restricted by <strong>the localized, fragmented nature of youth and religious dissent</strong>. Groups like the Edelweiss Pirates engaged in cultural defiance, while church leaders like Bishop von Galen criticized specific policies like euthanasia rather than attempting to overthrow the state. Therefore, this limited opposition because dissenters lacked the military weapons, cohesive ideology, and army backing required to mount a serious challenge to the regime.</p>",
+                "text": "<p>One decisive reason active opposition was limited was <strong>the destruction of independent political institutions and fear of police terror</strong>. In 1933, the regime abolished trade unions, outlawed rival parties, and sent left-wing leaders to Dachau. With the Gestapo, SS, and local Block Wardens (Blockleiter) watching neighborhoods, any resistance risked torture or execution. Therefore, this limited active opposition because the complete dismantling of civil society deprived potential resisters of political organizations, communication networks, and safe spaces to organize coordinated opposition.</p><p>Furthermore, resistance was muted because <strong>Hitler enjoyed genuine, widespread popularity due to economic recovery and foreign policy triumphs</strong>. By 1939, Nazi work creation and rearmament programs had virtually eliminated the six million unemployment crisis of the Depression, providing stable wages and social perks like 'Strength Through Joy' (KdF) holidays. Concurrently, Hitler overturned Versailles without war by remilitarizing the Rhineland (1936) and annexing Austria (1938). Therefore, this restricted opposition because millions of patriotic citizens genuinely admired Hitler for restoring national prosperity and international pride.</p><p>Finally, opposition was restricted by <strong>the localized, fragmented nature of youth and religious dissent</strong>. Groups like the Edelweiss Pirates engaged in cultural defiance, while church figures like Pastor Martin Niemöller in the Confessing Church and Pope Pius XI in Mit Brennender Sorge (1937) defended Christian autonomy rather than attempting to overthrow the state. Therefore, this limited opposition because dissenters lacked the military weapons, cohesive ideology, and army backing required to mount a serious challenge to the regime.</p>",
                 "verdict": "AO1/AO2 (12 marks). Level 4 top (~238 words). Three analytical paragraphs, each ending with the explicit causal link formula directly answering the question stem."
               }
             },
@@ -24521,19 +24521,8 @@ export default {
           "duration": "12 mins 13 secs",
           "pathway": "Starter Hook",
           "teacher_guidance": "Recommended Watch Window: 00:00–05:00 | Lesson Phase: Youth Nonconformity | Tone Alert: Explores working-class youth rebellion (Edelweiss Pirates) versus middle-class cultural defiance (Swing Youth).",
-          "viewing_task": "[02:15] Cultural Resistance: In what ways did the Swing Youth express their rebellion against Nazi cultural regimentation?\n[04:30] Active Defiance: How did the Edelweiss Pirates in the Rhineland escalate from mocking Hitler Youth marches to sheltering deserters?",
-          "model_answer": "Swing Youth listened to banned American jazz and swing music, dressed in English clothes, and danced in clubs, rejecting Nazi militarism and racial purism. Edelweiss Pirates began by beating up Hitler Youth patrols and camping freely, but during wartime escalated to graffiti, distributing allied leaflets, and derailing munitions trains."
-        },
-        {
-          "type": "youtube",
-          "id": "ZtOKRsF6Rr0",
-          "url": "https://www.youtube.com/watch?v=ZtOKRsF6Rr0",
-          "title": "The Secret Student Resistance to Hitler | TED-Ed (Iseult Gillespie)",
-          "duration": "5 mins 32 secs",
-          "pathway": "Enquiry Depth",
-          "teacher_guidance": "Recommended Watch Window: 00:00–05:32 | Lesson Phase: Student Resistance | Tone Alert: Beautifully animated account of Sophie Scholl, Hans Scholl, and the White Rose resistance movement at Munich University.",
-          "viewing_task": "[01:45] Intellectual Dissent: What prompted Hans and Sophie Scholl to form the White Rose resistance group?\n[03:50] Consequence: How were the White Rose leaflets distributed, and what was the fate of the students upon discovery in 1943?",
-          "model_answer": "Witnessing battlefield atrocities on the Eastern Front and learning of the extermination of Jewish civilians compelled them to awaken the German conscience. They secretly mailed and distributed leaflets calling for passive resistance against Hitler; in February 1943 they were caught dropping leaflets at Munich University, subjected to a sham trial by Roland Freisler, and executed by guillotine."
+          "viewing_task": "[02:15] Cultural Resistance: In what ways did the Swing Youth express their rebellion against Nazi cultural regimentation?\n[04:30] Active Defiance: How did the working-class Edelweiss Pirates in Rhineland cities defy compulsory Hitler Youth regimentation before September 1939?",
+          "model_answer": "Swing Youth listened to banned American jazz and swing music, dressed in English clothes, and danced in clubs, rejecting Nazi militarism. Working-class Edelweiss Pirates camped freely at weekends, sang anti-Nazi parodies, painted slogans, and ambushed Hitler Youth patrols in Cologne and Essen."
         },
         {
           "type": "youtube",
@@ -24626,12 +24615,12 @@ export default {
           "stage": 2,
           "dates": "1933–1938",
           "title": "Left-Wing Underground Workers’ Resistance",
-          "spec_focus": "KPD and SPD underground; Sopade; Vorwärts smuggling; industrial sabotage; Red Orchestra.",
+          "spec_focus": "KPD and SPD underground; Sopade reports from Prague; camouflaged pamphlets (Tarnschriften); factory sabotage.",
           "focus_clue": "How did outlawed Communist and Socialist cells maintain clandestine resistance?",
           "para_ref": "[2.1–2.2]",
           "bullets": [
             "KPD and SPD underground cells",
-            "Rote Kapelle courier networks",
+            "Sopade camouflaged pamphlets",
             "Factory sabotage & illegal leaflets"
           ],
           "writing_frame": {
@@ -24643,7 +24632,7 @@ export default {
               "type": "key_term"
             },
             {
-              "term": "Rote Kapelle courier networks",
+              "term": "Sopade camouflaged pamphlets",
               "type": "key_term"
             },
             {
@@ -24651,13 +24640,13 @@ export default {
               "type": "key_term"
             }
           ],
-          "model_sentence": "Left-wing opponents organized courageous <strong>KPD and SPD underground cells</strong> and clandestine <strong>Rote Kapelle courier networks</strong>, actively resisting the regime through coordinated <strong>factory sabotage & illegal leaflets</strong>.",
+          "model_sentence": "Left-wing opponents organised courageous <strong>KPD and SPD underground cells</strong> and smuggled <strong>Sopade camouflaged pamphlets</strong> from Prague, resisting rearmament through <strong>factory sabotage & illegal leaflets</strong>.",
           "heading": "How did outlawed Communist and Socialist cells maintain clandestine resistance?",
           "date": "1933–1938",
           "step": 2,
           "question": "How did outlawed Communist and Socialist cells maintain clandestine resistance?",
           "questionHeading": "How did outlawed Communist and Socialist cells maintain clandestine resistance?",
-          "prose_hash": "1da5fd26c3"
+          "prose_hash": "d1b0d26261"
         },
         {
           "stage": 3,
@@ -24694,7 +24683,7 @@ export default {
           "step": 3,
           "question": "Why did the working-class Edelweiss Pirates defy Hitler Youth rules?",
           "questionHeading": "Why did the working-class Edelweiss Pirates defy Hitler Youth rules?",
-          "prose_hash": "dc306bd5a2"
+          "prose_hash": "2c746cf808"
         },
         {
           "stage": 4,
@@ -24736,39 +24725,39 @@ export default {
         {
           "stage": 5,
           "dates": "1937–1939",
-          "title": "Religious Resistance: Niemöller & Galen",
-          "spec_focus": "Martin Niemöller; Dietrich Bonhoeffer; Bishop von Galen; T4 euthanasia sermons.",
+          "title": "Opposition from the Churches: Niemöller & Pius XI",
+          "spec_focus": "Opposition from the Churches: Pastor Martin Niemöller, Dietrich Bonhoeffer, Confessing Church, Pope Pius XI's Mit Brennender Sorge (1937).",
           "focus_clue": "Why did the regime hesitate to execute high-profile church critics?",
           "para_ref": "[5.1–5.2]",
           "bullets": [
-            "Mit Brennender Sorge (1937)",
             "Pastor Martin Niemöller & Bonhoeffer",
-            "Bishop von Galen euthanasia protests"
+            "Confessing Church & 800+ arrests",
+            "Mit Brennender Sorge (1937)"
           ],
           "writing_frame": {
-            "connectives": "The most influential public resistance came from... &bull; For example, Bishop Galen openly challenged... &bull; This forced the regime to... &bull; Overall,..."
+            "connectives": "Courageous church opposition came from... &bull; For example, Pastor Martin Niemöller and the Confessing Church... &bull; However, their political threat stayed limited because... &bull; Overall,..."
           },
           "words": [
-            {
-              "term": "Mit Brennender Sorge (1937)",
-              "type": "key_term"
-            },
             {
               "term": "Pastor Martin Niemöller & Bonhoeffer",
               "type": "key_term"
             },
             {
-              "term": "Bishop von Galen euthanasia protests",
+              "term": "Confessing Church & 800+ arrests",
+              "type": "key_term"
+            },
+            {
+              "term": "Mit Brennender Sorge (1937)",
               "type": "key_term"
             }
           ],
-          "model_sentence": "Religious defiance surfaced when Pope Pius XI issued the encyclical <strong>Mit Brennender Sorge (1937)</strong>, echoed domestically by dissident theologians <strong>Pastor Martin Niemöller & Bonhoeffer</strong> and brave <strong>Bishop von Galen euthanasia protests</strong> against secret murder.",
+          "model_sentence": "Principled church defiance was led by <strong>Pastor Martin Niemöller & Bonhoeffer</strong> in the <strong>Confessing Church & 800+ arrests</strong> alongside Pope Pius XI's smuggled encyclical <strong>Mit Brennender Sorge (1937)</strong>, defending Christian autonomy rather than plotting political overthrow.",
           "heading": "Why did the regime hesitate to execute high-profile church critics?",
           "date": "1937–1939",
           "step": 5,
           "question": "Why did the regime hesitate to execute high-profile church critics?",
           "questionHeading": "Why did the regime hesitate to execute high-profile church critics?",
-          "prose_hash": "00f6c66e2f"
+          "prose_hash": "b0a7daa4d2"
         }
       ],
       "causal_domino_spine": {
@@ -24793,13 +24782,13 @@ export default {
             "date": "1933–1938",
             "para_ref": "[2.1–2.2]",
             "title": "Left-Wing Underground Workers’ Resistance",
-            "actor": "Sopade, KPD Cells & Red Orchestra",
+            "actor": "Exiled SPD (Sopade) & KPD Cells",
             "tag": "🚩 UNDERGROUND CELLS & SABOTAGE",
             "trigger": "Outlawed socialist and communist cells distributed secret anti-Nazi pamphlets and sabotaged factory lines, but remained crippled by division and Gestapo arrests.",
             "desc": "Outlawed socialist and communist cells distributed secret anti-Nazi pamphlets and sabotaged factory lines, but remained crippled by division and Gestapo arrests.",
             "connective": "Maintained clandestine ideological defiance without being able to threaten the regime’s hold on state power.",
             "question": "How did outlawed Communist and Socialist cells maintain clandestine resistance?",
-            "prose_hash": "1da5fd26c3"
+            "prose_hash": "d1b0d26261"
           },
           {
             "step": 3,
@@ -24810,9 +24799,9 @@ export default {
             "tag": "🌸 EDELWEISS PIRATES REBELLION",
             "trigger": "Working-class youth rejected compulsory Hitler Youth drills, wearing flower badges, camping freely, and ambushing Nazi youth patrols in western cities.",
             "desc": "Working-class youth rejected compulsory Hitler Youth drills, wearing flower badges, camping freely, and ambushing Nazi youth patrols in western cities.",
-            "connective": "Provoked harsh police crackdowns, culminating in public hangings of youth ringleaders in Cologne.",
+            "connective": "Provoked harsh pre-war Gestapo crackdowns including street round-ups, forced head-shaving, and youth camp detentions.",
             "question": "Why did the working-class Edelweiss Pirates defy Hitler Youth rules?",
-            "prose_hash": "dc306bd5a2"
+            "prose_hash": "2c746cf808"
           },
           {
             "step": 4,
@@ -24831,14 +24820,14 @@ export default {
             "step": 5,
             "date": "1937–1939",
             "para_ref": "[5.1–5.2]",
-            "title": "Religious Resistance: Niemöller & Galen",
-            "actor": "Martin Niemöller & Bishop von Galen",
-            "tag": "⛪ MORAL RESISTANCE & AKTION T4",
-            "trigger": "Niemöller defied state control over Protestantism before his arrest, while Bishop Galen’s sermons exposed the Aktion T4 euthanasia programme, forcing Hitler to halt it.",
-            "desc": "Niemöller defied state control over Protestantism before his arrest, while Bishop Galen’s sermons exposed the Aktion T4 euthanasia programme, forcing Hitler to halt it.",
-            "connective": "Proved that principled moral opposition with broad public backing could force tactical retreats from the totalitarian state.",
+            "title": "Opposition from the Churches: Niemöller & Pius XI",
+            "actor": "Pastor Martin Niemöller & Pope Pius XI",
+            "tag": "⛪ CONFESSING CHURCH & PAPAL ENCYCLICAL",
+            "trigger": "Pastor Niemöller and Bonhoeffer led the Confessing Church while Pope Pius XI smuggled Mit Brennender Sorge (1937) into Catholic pulpits, prompting over 800 pastors' arrests.",
+            "desc": "Pastor Niemöller and Bonhoeffer led the Confessing Church while Pope Pius XI smuggled Mit Brennender Sorge (1937) into Catholic pulpits, prompting over 800 pastors' arrests.",
+            "connective": "Protected Christian conscience against Nazi racial dogma, yet stopped short of united political action to topple Hitler.",
             "question": "Why did the regime hesitate to execute high-profile church critics?",
-            "prose_hash": "00f6c66e2f"
+            "prose_hash": "b0a7daa4d2"
           }
         ]
       },
@@ -24869,8 +24858,8 @@ export default {
         },
         {
           "date": "1937–1939",
-          "title": "Religious Resistance: Niemöller & Galen",
-          "desc": "Niemöller defied state control over Protestantism before his arrest, while Bishop Galen’s sermons exposed the Aktion T4 euthanasia programme, forcing Hitler to halt it.",
+          "title": "Opposition from the Churches: Niemöller & Pius XI",
+          "desc": "Pastor Niemöller and Bonhoeffer led the Confessing Church while Pope Pius XI smuggled Mit Brennender Sorge (1937) into Catholic pulpits, prompting over 800 pastors' arrests.",
           "para_ref": "[5.1–5.2]"
         }
       ],
@@ -24995,9 +24984,9 @@ export default {
           "question": "How does the background and career of Dietrich Bonhoeffer assist an historian investigating the ethical dilemmas faced by Christian opponents of the Third Reich?"
         }
       ],
-      "prologue": "In a totalitarian state where telling an anti-Hitler joke could lead to the executioner's block, active opposition was fraught with lethal peril. The vast majority of Germans conformed: dazzled by foreign policy triumphs, grateful for steady jobs, or cowed into silent complicity by the Gestapo. Yet resistance never entirely vanished. Underground Communist and Socialist networks smuggled anti-Nazi pamphlets across the Czech border, while courageous churchmen like Bishop Clemens August von Galen openly denounced the regime's secret euthanasia programme. In the cities, defiant working-class teenagers formed the Edelweiss Pirates to ambush Hitler Youth patrols, while middle-class Swing Youth danced to banned American swing music. Why was open opposition so rare, and how did dissenting churchmen, youth groups, and underground workers attempt to resist Nazi rule?",
+      "prologue": "In a totalitarian state where telling an anti-Hitler joke could lead to Gestapo arrest, active opposition carried grave danger. The vast majority of Germans conformed: dazzled by foreign policy triumphs, grateful for steady jobs, or silenced by SS concentration camps and neighbourhood Block Wardens. Yet resistance never vanished entirely. Underground Social Democratic and Communist networks smuggled camouflaged anti-Nazi pamphlets across the Czech border, while courageous Christian figures like Pastor Martin Niemöller and Pope Pius XI openly defied Nazi interference in faith and racial dogma. In industrial and port cities, working-class teenagers formed the Edelweiss Pirates to ambush Hitler Youth patrols, while middle-class Swing Youth danced to banned American jazz. Why was open opposition so rare between 1933 and 1939, and how did churchmen, youth groups, and underground workers resist Nazi rule?",
       "specification_anchor": "Nazi control and dictatorship, 1933–39: opposition, resistance and conformity; the extent of public support; religious opposition (Martin Niemöller, Dietrich Bonhoeffer) and youth rebellion (Edelweiss Pirates, Swing Youth).",
-      "hook_text": "In a totalitarian state where telling an anti-Hitler joke could lead to the executioner's block, active opposition was fraught with lethal peril. The vast majority of Germans conformed: dazzled by foreign policy triumphs, grateful for steady jobs, or cowed into silent complicity by the Gestapo. Yet resistance never entirely vanished. Underground Communist and Socialist networks smuggled anti-Nazi pamphlets across the Czech border, while courageous churchmen like Bishop Clemens August von Galen openly denounced the regime's secret euthanasia programme. In the cities, defiant working-class teenagers formed the Edelweiss Pirates to ambush Hitler Youth patrols, while middle-class Swing Youth danced to banned American swing music. Why was open opposition so rare, and how did dissenting churchmen, youth groups, and underground workers attempt to resist Nazi rule?",
+      "hook_text": "In a totalitarian state where telling an anti-Hitler joke could lead to Gestapo arrest, active opposition carried grave danger. The vast majority of Germans conformed: dazzled by foreign policy triumphs, grateful for steady jobs, or silenced by SS concentration camps and neighbourhood Block Wardens. Yet resistance never vanished entirely. Underground Social Democratic and Communist networks smuggled camouflaged anti-Nazi pamphlets across the Czech border, while courageous Christian figures like Pastor Martin Niemöller and Pope Pius XI openly defied Nazi interference in faith and racial dogma. In industrial and port cities, working-class teenagers formed the Edelweiss Pirates to ambush Hitler Youth patrols, while middle-class Swing Youth danced to banned American jazz. Why was open opposition so rare between 1933 and 1939, and how did churchmen, youth groups, and underground workers resist Nazi rule?",
       "flashcards": [
         {
           "term": "Edelweiss Pirates (Edelweisspiraten)",
@@ -25024,10 +25013,10 @@ export default {
           "a": "Telling political jokes (flüsterwitze), refusing the Nazi salute, taking sick leave from factories, and listening to the BBC."
         },
         {
-          "term": "Bishop Clemens von Galen",
-          "definition": "The Catholic Bishop of Münster who openly spoke out against Nazi sterilisation and the secret Aktion T4 euthanasia programme from his pulpit.",
-          "q": "Who was Bishop Clemens von Galen, and what did he protest?",
-          "a": "The Catholic Bishop of Münster who publicly delivered brave sermons in 1941 condemning the Nazi secret euthanasia programme."
+          "term": "Pastor Martin Niemöller & the Confessing Church (1933–37)",
+          "definition": "Protestant opposition movement co-founded by Pastor Martin Niemöller and Dietrich Bonhoeffer in 1934 to resist Reich Bishop Müller's Nazified Reich Church; over 800 pastors were arrested and Niemöller was imprisoned in camps from 1937.",
+          "q": "How did Pastor Martin Niemöller and the Confessing Church oppose the Nazis between 1933 and 1937?",
+          "a": "They rejected the Nazified Reich Church and Aryan Paragraph; over 800 Confessing pastors were jailed and Niemöller was sent to Sachsenhausen and Dachau in 1937."
         },
         {
           "term": "Pastors' Emergency League (PEL)",
@@ -25050,8 +25039,8 @@ export default {
           "answer": "They refused to join the Hitler Youth, wore check shirts and edelweiss flower pins, sang banned songs, and ambushed Hitler Youth patrols."
         },
         {
-          "question": "Using paragraph [5.1], why did Cardinal von Galen deliver public sermons against the Nazi regime in 1941?",
-          "answer": "He openly condemned the secret Nazi Action T4 euthanasia programme that murdered physically and mentally disabled patients."
+          "question": "Using paragraphs [5.1]–[5.2], how did Pastor Martin Niemöller and Pope Pius XI oppose Nazi religious policies between 1934 and 1939?",
+          "answer": "Pastor Niemöller co-founded the Protestant Confessing Church before his 1937 arrest, while Pope Pius XI smuggled his 1937 encyclical Mit Brennender Sorge into Catholic pulpits condemning Nazi racism and Concordat breaches."
         }
       ],
       "visual_story_sheet": {
@@ -25093,7 +25082,7 @@ export default {
             "stat": "SPD Smuggles Pamphlets • Gestapo Breaks Cells",
             "html": "Exiled <strong>SPD and KPD activists</strong> smuggled <strong>underground leaflets</strong> and newspapers into factories—until <strong>bitter left-wing splits</strong> and Gestapo raids broke up most cells.",
             "spoken": "Banned left-wing workers still risked underground resistance. <short pause> Exiled SPD and KPD activists smuggled underground leaflets and newspapers into factories, until bitter left-wing splits and Gestapo raids broke up most cells.",
-            "paired_prose_hash": "1da5fd26c3",
+            "paired_prose_hash": "d1b0d26261",
             "connective": "Banned left-wing workers still risked underground resistance."
           },
           {
@@ -25106,7 +25095,7 @@ export default {
             "stat": "Working-Class Teens Ambush Hitler Youth Patrols",
             "html": "In Cologne and Essen, working-class youths formed the <strong>Edelweiss Pirates</strong>, wearing check shirts and <strong>white edelweiss pins</strong>. Camping freely, they sang anti-Nazi songs and <strong>ambushed Hitler Youth</strong> patrols.",
             "spoken": "Compulsory youth drill sparked defiance among teenagers. <short pause> In Cologne and Essen, working-class youths formed the Edelweiss Pirates , wearing check shirts and white edelweiss pins . Camping freely, they sang anti-Nazi songs and ambushed Hitler Youth patrols.",
-            "paired_prose_hash": "dc306bd5a2",
+            "paired_prose_hash": "2c746cf808",
             "connective": "Compulsory youth drill sparked defiance among teenagers."
           },
           {
@@ -25130,7 +25119,7 @@ export default {
             "stat": "1937 Papal Letter • 800+ Pastors Jailed",
             "html": "Pope Pius XI’s 1937 letter <strong><em>Mit Brennender Sorge</em></strong> condemned Nazi racism, while Protestant pastors <strong>Martin Niemöller</strong> and <strong>Dietrich Bonhoeffer</strong> led the Confessional Church despite Gestapo arrest.",
             "spoken": "Brave Christian clergy delivered loud public protests. <short pause> Pope Pius XI’s 1937 letter Mit Brennender Sorge condemned Nazi racism, while Protestant pastors Martin Niemöller and Dietrich Bonhoeffer led the Confessional Church despite Gestapo arrest.",
-            "paired_prose_hash": "00f6c66e2f",
+            "paired_prose_hash": "b0a7daa4d2",
             "connective": "Brave Christian clergy delivered loud public protests."
           },
           {
@@ -25211,7 +25200,7 @@ export default {
           }
         ],
         "source_context": {
-          "Source A": "Official photograph showing members of the League of German Girls (BDM) marching with pitchforks during rural harvest service (Landdienst), c. 1936. Hinge Question: How did compulsory agricultural labor for young women reflect the Nazi regime’s ideological glorification of rural peasant life over urban independence?",
+          "Source A": "Official photograph showing members of the League of German Maidens (BDM) marching with pitchforks during rural harvest service (Landdienst), c. 1936. Hinge Question: How did compulsory agricultural labor for young women reflect the Nazi regime’s ideological glorification of rural peasant life over urban independence?",
           "Source B": "Speech by Reich Women’s Leader Gertrud Scholtz-Klink to delegates of the NS-Frauenschaft at the Nuremberg Rally, September 1935. Hinge Question: Why did the Nazi leadership use female leaders like Scholtz-Klink to persuade women to surrender their political and economic independence?",
           "Source C": "Key statutory clauses from the Law for the Encouragement of Marriage, enacted by the Nazi government on 1 June 1933. Hinge Question: Did the marriage loan scheme succeed more as an employment measure or as an instrument of demographic engineering?",
           "Source D": "Statutory articles from the Law for the Prevention of Hereditarily Diseased Offspring, enacted on 14 July 1933. Hinge Question: How did the sterilization laws expose the fundamental divide in Nazi policy between racially favored Aryan mothers and citizens deemed biologically inferior?",
@@ -25364,9 +25353,9 @@ export default {
           },
           {
             "stage": 2,
-            "question": "What underground communist resistance network gathered military intelligence and distributed anti-Nazi leaflets?",
-            "answer": "The Red Orchestra (Rote Kapelle)",
-            "explanation": "In Berlin, elite underground groups like the Rote Kapelle courier networks gathered sensitive military intelligence to undermine rearmament."
+            "question": "What exiled Social Democratic (SPD) organisation in Prague smuggled camouflaged anti-Nazi pamphlets and compiled secret mood reports on German workers?",
+            "answer": "Sopade (SPD in Exile)",
+            "explanation": "Operating from Prague, exiled SPD leaders compiled Deutschland-Berichte (Sopade reports) and smuggled miniature anti-Nazi booklets across the frontier."
           },
           {
             "stage": 3,
@@ -25382,9 +25371,9 @@ export default {
           },
           {
             "stage": 5,
-            "question": "Which Catholic bishop publicly denounced the Nazi secret euthanasia program (Aktion T4) from his pulpit in 1941?",
-            "answer": "Bishop Clemens August von Galen",
-            "explanation": "The most effective individual protest was led by the Bishop of Münster, whose outspoken sermons sparked famous Bishop von Galen euthanasia protests."
+            "question": "Which Protestant pastor co-founded the Confessing Church against Nazi interference and was imprisoned in concentration camps from July 1937?",
+            "answer": "Pastor Martin Niemöller",
+            "explanation": "Pastor Martin Niemöller co-founded the Confessing Church with Dietrich Bonhoeffer in 1934; over 800 pastors were arrested and Niemöller was held in Sachsenhausen and Dachau from 1937."
           },
           {
             "stage": 1,
@@ -25481,8 +25470,8 @@ export default {
         {
           "title": "The Domestic Ideal: Kinder, Küche, Kirche and the Anti-Feminist Reaction (1933)",
           "act": 1,
-          "text": "<span class=\"para-ref\">[1.1]</span> Reversing Weimar female emancipation, the Nazi regime banned women from legal and medical careers, capped female university entry at 10%, and promoted **Kinder, Küche, Kirche** (Children, Kitchen, Church). Hitler rejected the Weimar 'New Woman', condemning female career independence as a threat to German birth rates.\n\n<span class=\"para-ref\">[1.2]</span> Steering women back into **traditional domestic roles** and motherhood, Reich Women's Leader **Gertrud Scholtz-Klink** merged all female societies into **the Nazi Women's League**. Six million members attended courses in home cooking, thrifty housekeeping, infant care, and racial duty.",
-          "content": "<span class=\"para-ref\">[1.1]</span> Reversing Weimar female emancipation, the Nazi regime banned women from legal and medical careers, capped female university entry at 10%, and promoted **Kinder, Küche, Kirche** (Children, Kitchen, Church). Hitler rejected the Weimar 'New Woman', condemning female career independence as a threat to German birth rates.\n\n<span class=\"para-ref\">[1.2]</span> Steering women back into **traditional domestic roles** and motherhood, Reich Women's Leader **Gertrud Scholtz-Klink** merged all female societies into **the Nazi Women's League**. Six million members attended courses in home cooking, thrifty housekeeping, infant care, and racial duty.",
+          "text": "<span class=\"para-ref\">[1.1]</span> Reversing Weimar female emancipation, Nazi views on women and the family insisted a woman's primary duty lay in bearing healthy Aryan children. From 1933, women were barred from serving as judges or senior civil servants, female university entry was capped at 10%, and propaganda preached **Kinder, Küche, Kirche** (Children, Kitchen, Church) against Weimar career independence.\n\n<span class=\"para-ref\">[1.2]</span> Steering women back into **traditional domestic roles**, Reich Women's Leader **Gertrud Scholtz-Klink** merged female societies into the six-million-strong **Nazi Women's League** for cooking, thrifty housekeeping, and infant-care classes. Strict Nazi policies on female **appearance** demanded natural unpainted faces, braided hair or buns, flat shoes, and traditional long skirts while condemning cosmetics, smoking, trousers, dyed hair, and slimming diets.",
+          "content": "<span class=\"para-ref\">[1.1]</span> Reversing Weimar female emancipation, Nazi views on women and the family insisted a woman's primary duty lay in bearing healthy Aryan children. From 1933, women were barred from serving as judges or senior civil servants, female university entry was capped at 10%, and propaganda preached **Kinder, Küche, Kirche** (Children, Kitchen, Church) against Weimar career independence.\n\n<span class=\"para-ref\">[1.2]</span> Steering women back into **traditional domestic roles**, Reich Women's Leader **Gertrud Scholtz-Klink** merged female societies into the six-million-strong **Nazi Women's League** for cooking, thrifty housekeeping, and infant-care classes. Strict Nazi policies on female **appearance** demanded natural unpainted faces, braided hair or buns, flat shoes, and traditional long skirts while condemning cosmetics, smoking, trousers, dyed hair, and slimming diets.",
           "sources": [
             {
               "id": "weimar_l13_source_goebbels_womanhood",
@@ -25533,8 +25522,8 @@ export default {
           },
           "act_title": "Stage 1: The Domestic Ideal: Kinder, Küche, Kirche",
           "paragraphs": [
-            "<span class=\"para-ref\">[1.1]</span> During the Weimar Republic, German women experienced unprecedented emancipation, gaining voting rights and entering medicine, teaching, and commerce. However, Adolf Hitler and the Nazi Party viewed female liberation as a decadent social disease that had caused annual birth rates to plummet. They demanded the complete **rejection of Weimar 'New Woman'** culture, condemning female independence as a threat to racial survival.",
-            "<span class=\"para-ref\">[1.2]</span> Nazi ideology promoted the famous slogan **'Kinder, Küche, Kirche'** (Children, Kitchen, Church), insisting that women should withdraw from professional careers to embrace **traditional domestic roles**. Under Reich Women's Leader Gertrud Scholtz-Klink, all female associations were centralized into the Nazi Women's League, training young women in home economics and infant care to serve the national racial community as self-sacrificing mothers."
+            "<span class=\"para-ref\">[1.1]</span> Reversing Weimar female emancipation, Nazi views on women and the family insisted a woman's primary duty lay in bearing healthy Aryan children. From 1933, women were barred from serving as judges or senior civil servants, female university entry was capped at 10%, and propaganda preached **Kinder, Küche, Kirche** (Children, Kitchen, Church) against Weimar career independence.",
+            "<span class=\"para-ref\">[1.2]</span> Steering women back into **traditional domestic roles**, Reich Women's Leader **Gertrud Scholtz-Klink** merged female societies into the six-million-strong **Nazi Women's League** for cooking, thrifty housekeeping, and infant-care classes. Strict Nazi policies on female **appearance** demanded natural unpainted faces, braided hair or buns, flat shoes, and traditional long skirts while condemning cosmetics, smoking, trousers, dyed hair, and slimming diets."
           ],
           "image": "/images/weimar_nazi_germany/kt4/wng_kt4_l13_b0_ns_frauenschaft_sigmaringen.jpg",
           "image_alt": "A National Socialist Women's League (NS-Frauenschaft) speaker addressing women seated beneath swastika and Lebensrune banners in the Sigmaringen municipal hall",
@@ -25919,7 +25908,7 @@ export default {
           "q": "Who was the 'Reich Women's Leader' in charge of all female organisations?",
           "options": [
             "Leni Riefenstahl",
-            "Sophie Scholl",
+            "Leni Riefenstahl",
             "Eva Braun",
             "Gertrud Scholtz-Klink"
           ],
@@ -25933,7 +25922,7 @@ export default {
           "q": "Into which centralized organization were all German female associations merged under Reich Women's Leader Gertrud Scholtz-Klink?",
           "options": [
             "The Women's Political Council",
-            "The League of German Girls",
+            "The League of German Maidens (BDM)",
             "The Nazi Women's League",
             "The Confessional Sisterhood"
           ],
@@ -26426,7 +26415,7 @@ export default {
           "step": 1,
           "question": "How did the regime attempt to remove women from public professions?",
           "questionHeading": "How did the regime attempt to remove women from public professions?",
-          "prose_hash": "52af8120b3"
+          "prose_hash": "1127a897b6"
         },
         {
           "stage": 2,
@@ -26592,7 +26581,7 @@ export default {
             "desc": "The regime banned women from legal and medical professions, restricted university entry to 10%, and promoted the slogan Kinder, Küche, Kirche.",
             "connective": "Reversed Weimar emancipation, confining women to traditional domestic roles and family reproduction.",
             "question": "How did the regime attempt to remove women from public professions?",
-            "prose_hash": "52af8120b3"
+            "prose_hash": "1127a897b6"
           },
           {
             "step": 2,
@@ -26886,9 +26875,9 @@ export default {
             "img": "/images/weimar_individuals/gertrud_scholtz_klink.jpg",
             "mode": "contain",
             "stat": "10% University Cap • 6m in Nazi Women’s League",
-            "html": "Reversing Weimar freedoms, the Nazis barred women from law and medicine, capped female university places at <strong>10%</strong>, and preached <strong><em>Kinder, Küche, Kirche</em></strong> under <strong>Gertrud Scholtz-Klink</strong>.",
-            "spoken": "Why did Nazi policies towards women contradict rearmament? <short pause> Reversing Weimar freedoms, the Nazis barred women from law and medicine, capped female university places at 10% , and preached Kinder, Küche, Kirche under Gertrud Scholtz-Klink .",
-            "paired_prose_hash": "52af8120b3",
+            "html": "Under <strong>Gertrud Scholtz-Klink</strong>, Nazis capped female university places at 10%, preached <strong><em>Kinder, Küche, Kirche</em></strong>, and policed traditional female <strong>appearance</strong> without makeup.",
+            "spoken": "Why did Nazi policies towards women contradict rearmament? <short pause> Under Gertrud Scholtz-Klink, Nazis capped female university places at 10%, preached Kinder, Küche, Kirche, and policed traditional female appearance without makeup.",
+            "paired_prose_hash": "1127a897b6",
             "connective": "Why did Nazi policies towards women contradict rearmament?"
           },
           {
@@ -26989,7 +26978,7 @@ export default {
       "title": "KT 4.2: Nazi Policies Towards the Young, 1933–1939",
       "enquiry": "How did the Nazis use schools and youth groups to control the next generation?",
       "teacher_notes": {
-        "primer": "This enquiry investigates how the Nazi regime sought to capture the minds, bodies, and loyalties of German young people between 1933 and 1939. Students examine the total reorganization of schooling under Reich Education Minister Bernhard Rust—including the purging of teachers via the National Socialist Teachers' League (NSLB) and the nazification of subjects like Biology, History, and PE. They also analyze the Hitler Youth (HJ) and League of German Girls (BDM), tracking how these organizations evolved from exciting voluntary youth clubs into compulsory, regimented instruments of pre-military conditioning, while assessing the limits of indoctrination and the emergence of youth counter-cultures like the Edelweiss Pirates and Swing Youth.",
+        "primer": "This enquiry investigates how the Nazi regime sought to capture the minds, bodies, and loyalties of German young people between 1933 and 1939. Students examine the total reorganization of schooling under Reich Education Minister Bernhard Rust—including the purging of teachers via the National Socialist Teachers' League (NSLB) and the nazification of subjects like Biology, History, and PE. They also analyze the Hitler Youth (HJ) and League of German Maidens (BDM), tracking how these organizations evolved from exciting voluntary youth clubs into compulsory, regimented instruments of pre-military conditioning, while assessing the limits of indoctrination and the emergence of youth counter-cultures like the Edelweiss Pirates and Swing Youth.",
         "objectives": [
           {
             "objective": "Explain the totalitarian ambition of the regime to isolate youth from traditional family and religious influences.",
@@ -27002,9 +26991,9 @@ export default {
             "question": "How did the activities of the Hitler Youth deliberately prepare German boys for future service in the Wehrmacht?"
           },
           {
-            "objective": "Assess how the League of German Girls (BDM) conditioned young women for racial motherhood and domestic service.",
+            "objective": "Assess how the League of German Maidens (BDM) conditioned young women for racial motherhood and domestic service.",
             "primer": "Direct students to paragraphs [3.1]–[3.2] and Source A (BDM Gymnastics). Detail the emphasis on physical drill, camping, hygiene, folk dancing, and preparing girls for the compulsory Duty Year.",
-            "question": "In what ways did the training in the League of German Girls mirror and differ from the training of boys in the Hitler Youth?"
+            "question": "In what ways did the training in the League of German Maidens mirror and differ from the training of boys in the Hitler Youth?"
           },
           {
             "objective": "Examine how the school curriculum and teaching profession were subverted under Minister Bernhard Rust.",
@@ -27018,7 +27007,7 @@ export default {
           }
         ],
         "source_context": {
-          "Source A": "Official photograph showing members of the League of German Girls (Bund Deutscher Mädel) performing synchronized outdoor gymnastics in white athletic dress, c. 1936. Hinge Question: How did physical training in the BDM serve the broader demographic and ideological goals of the Nazi state?",
+          "Source A": "Official photograph showing members of the League of German Maidens (Bund Deutscher Mädel) performing synchronized outdoor gymnastics in white athletic dress, c. 1936. Hinge Question: How did physical training in the BDM serve the broader demographic and ideological goals of the Nazi state?",
           "Source B": "Adolf Hitler’s address to 54,000 assembled members of the Hitler Youth at the Nuremberg Party Rally, 14 September 1935. Hinge Question: Why did Hitler place far greater emphasis on physical hardness and absolute obedience than on academic intelligence?",
           "Source C": "Mathematical word problems from an approved German secondary school textbook published in 1935 under the Reich Ministry of Education. Hinge Question: What made the incorporation of eugenics into basic math problems more insidious than political speeches?",
           "Source D": "Statutory clauses from the First Decree for the Implementation of the Law on the Hitler Youth, issued on 25 March 1939 making membership strictly compulsory. Hinge Question: Does the regime’s use of criminal penalties in Source A indicate the success or the failure of voluntary Nazi youth recruitment?",
@@ -27027,7 +27016,7 @@ export default {
         "delivery_plan": {
           "format": "2-Lesson Sequence (50 mins each)",
           "lesson_1": {
-            "title": "Lesson 1: Hitler Youth, League of German Girls & Compulsory Laws (Stages 1–3) (50 mins)",
+            "title": "Lesson 1: Hitler Youth, League of German Maidens & Compulsory Laws (Stages 1–3) (50 mins)",
             "focus": "Hitler Youth, BDM & Compulsory Laws (Stages 1–3)",
             "phases": [
               {
@@ -27296,8 +27285,8 @@ export default {
         {
           "id": "block_2",
           "decimal": "[4.2.2]",
-          "title": "The League of German Girls: Bund Deutscher Mädel and Motherhood Training (1933–1939)",
-          "text": "<span class=\"para-ref\">[2.1]</span> Younger boys aged 10–14 entered **the Deutsches Jungvolk (German Young People)**, while teenage girls aged 14–18 joined **the Bund Deutscher Mädel (BDM or League of German Girls)**. Wearing dark blue skirts and white blouses, girls practised gymnastics, swimming, and long-distance running **to become healthy, racially pure mothers**.\n\n<span class=\"para-ref\">[2.2]</span> BDM meetings focused on domestic training — cooking, meal planning, needlework, and infant care — alongside **racial science (Rassenkunde)** instruction. Girls studied family charts to pick Aryan husbands, shun racial intermarriage, and sing folk songs celebrating the *Volksgemeinschaft*.",
+          "title": "The League of German Maidens: Bund Deutscher Mädel and Motherhood Training (1933–1939)",
+          "text": "<span class=\"para-ref\">[2.1]</span> Younger boys aged 10–14 entered **the Deutsches Jungvolk (German Young People)**, while teenage girls aged 14–18 joined **the League of German Maidens** (**Bund Deutscher Mädel**, or **BDM**) after passing through the *Jungmädelbund* (ages 10–14). Wearing identical dark blue skirts, white blouses, and black neckerchiefs, girls practised outdoor gymnastics, swimming, and long-distance running **to become healthy, racially pure mothers**.\n\n<span class=\"para-ref\">[2.2]</span> Weekly **League of German Maidens** meetings centred on domestic motherhood training — cooking nutritious family meals, bed-making, needlework, household thrift, and infant hygiene — alongside compulsory **racial science (Rassenkunde)** instruction. Girls studied genealogical charts to choose healthy Aryan husbands, shun racial intermarriage, sing folk songs, and complete rural harvest placements serving the *Volksgemeinschaft*.",
           "image": "/images/weimar_nazi_germany/kt4/wng_kt4_l14_b1_bdm_danzig_1937.jpg",
           "image_alt": "Teenage girls of the Bund Deutscher Mädel (BDM) in white blouses, dark blue skirts, and braided hair standing in formation in Danzig (1937)",
           "caption": "Bund Deutscher Mädel (BDM) Formation, Danzig (1937): Photographed by Swiss journalist Annemarie Schwarzenbach, teenage girls wear the prescribed white blouse, dark blue skirt, and braided hair while receiving training in collective discipline, health, and future Aryan motherhood.",
@@ -27329,12 +27318,12 @@ export default {
             }
           ],
           "paragraphs": [
-            "<span class=\"para-ref\">[2.1]</span> While boys were drilled for warfare, German girls aged fourteen to eighteen joined the **Bund Deutscher Mädel (BDM)**. Dressed identically in dark blue skirts, white blouses, and brown vests, girls engaged in gymnastics, calisthenics, and long-distance running. Physical fitness was not designed for athletics, but to develop robust, healthy bodies capable of bearing multiple children for the German Volk.",
-            "<span class=\"para-ref\">[2.2]</span> Activities centered on extensive **motherhood & domestic training**, teaching girls cooking, meal planning, needlework, and infant healthcare. Alongside domestic skills, members received intensive **racial hygiene instruction**, memorizing genealogical charts to identify suitable Aryan marriage partners and reject racial intermarriage. Evening campfire gatherings reinforced ideological conformity through folk songs celebrating the national racial community (*Volksgemeinschaft*)."
+            "<span class=\"para-ref\">[2.1]</span> Younger boys aged 10–14 entered **the Deutsches Jungvolk (German Young People)**, while teenage girls aged 14–18 joined **the League of German Maidens** (**Bund Deutscher Mädel**, or **BDM**) after passing through the *Jungmädelbund* (ages 10–14). Wearing identical dark blue skirts, white blouses, and black neckerchiefs, girls practised outdoor gymnastics, swimming, and long-distance running **to become healthy, racially pure mothers**.",
+            "<span class=\"para-ref\">[2.2]</span> Weekly **League of German Maidens** meetings centred on domestic motherhood training — cooking nutritious family meals, bed-making, needlework, household thrift, and infant hygiene — alongside compulsory **racial science (Rassenkunde)** instruction. Girls studied genealogical charts to choose healthy Aryan husbands, shun racial intermarriage, sing folk songs, and complete rural harvest placements serving the *Volksgemeinschaft*."
           ],
-          "content": "<span class=\"para-ref\">[2.1]</span> Younger boys aged 10–14 entered **the Deutsches Jungvolk (German Young People)**, while teenage girls aged 14–18 joined **the Bund Deutscher Mädel (BDM or League of German Girls)**. Wearing dark blue skirts and white blouses, girls practised gymnastics, swimming, and long-distance running **to become healthy, racially pure mothers**.\n\n<span class=\"para-ref\">[2.2]</span> BDM meetings focused on domestic training — cooking, meal planning, needlework, and infant care — alongside **racial science (Rassenkunde)** instruction. Girls studied family charts to pick Aryan husbands, shun racial intermarriage, and sing folk songs celebrating the *Volksgemeinschaft*.",
+          "content": "<span class=\"para-ref\">[2.1]</span> Younger boys aged 10–14 entered **the Deutsches Jungvolk (German Young People)**, while teenage girls aged 14–18 joined **the League of German Maidens** (**Bund Deutscher Mädel**, or **BDM**) after passing through the *Jungmädelbund* (ages 10–14). Wearing identical dark blue skirts, white blouses, and black neckerchiefs, girls practised outdoor gymnastics, swimming, and long-distance running **to become healthy, racially pure mothers**.\n\n<span class=\"para-ref\">[2.2]</span> Weekly **League of German Maidens** meetings centred on domestic motherhood training — cooking nutritious family meals, bed-making, needlework, household thrift, and infant hygiene — alongside compulsory **racial science (Rassenkunde)** instruction. Girls studied genealogical charts to choose healthy Aryan husbands, shun racial intermarriage, sing folk songs, and complete rural harvest placements serving the *Volksgemeinschaft*.",
           "act": 2,
-          "act_title": "Stage 2: The League of German Girls (Bund Deutscher Mädel)"
+          "act_title": "Stage 2: The League of German Maidens (BDM)"
         },
         {
           "id": "block_3",
@@ -27348,15 +27337,15 @@ export default {
             {
               "id": "weimar_l14_source_a",
               "letter": "C",
-              "title": "Source C: League of German Girls (BDM) Performing Synchronized Physical Drill (c. 1936)",
+              "title": "Source C: League of German Maidens (BDM) Performing Synchronized Physical Drill (c. 1936)",
               "type": "visual",
               "src": "/images/bdm_gymnastics_vorfuhrung.jpg",
               "image": "/images/bdm_gymnastics_vorfuhrung.jpg",
-              "caption": "Teenage members of the League of German Girls (Bund Deutscher Mädel) in matching white uniforms performing mass synchronized gymnastics in an outdoor display, c. 1936.",
-              "desc": "Archival photograph showing mass rhythmic gymnastics by League of German Girls members in white athletic dress, c. 1936.",
+              "caption": "Teenage members of the League of German Maidens (Bund Deutscher Mädel) in matching white uniforms performing mass synchronized gymnastics in an outdoor display, c. 1936.",
+              "desc": "Archival photograph showing mass rhythmic gymnastics by League of German Maidens members in white athletic dress, c. 1936.",
               "provenance": "German Federal Archives (Bundesarchiv), Koblenz, Bild 183-H12148.",
               "citation": "Bundesarchiv, Bild 183-H12148.",
-              "intro": "An official photograph showing members of the League of German Girls (Bund Deutscher Mädel) performing synchronized outdoor gymnastics, c. 1936.",
+              "intro": "An official photograph showing members of the League of German Maidens (Bund Deutscher Mädel) performing synchronized outdoor gymnastics, c. 1936.",
               "source_context": "This authentic photograph depicts the mass gymnastics displays that formed a central pillar of BDM physical training, conditioning girls' bodies for future motherhood while enforcing collective conformity and discipline.",
               "context": "Official photograph showing mass synchronized gymnastics display by teenage members of the BDM, c. 1936.",
               "question_badge": "Source Inference (Paper 3 Q1)",
@@ -27398,13 +27387,13 @@ export default {
               "provenance": "Adolf Dorner, Mathematik im Dienste der nationalpolitischen Erziehung, Frankfurt am Main, 1935.",
               "citation": "Georg Eckert Institute for International Textbook Research, Braunschweig.",
               "intro": "Word problems from an approved German school mathematics textbook published in 1935 under the authority of the Reich Ministry of Education.",
-              "source_context": "Under Education Minister Bernhard Rust, everyday academic subjects were weaponized to condition pupils into accepting eugenic sterilisation, euthanasia, and aggressive military bombing as normal, scientific facts.",
+              "source_context": "Under Education Minister Bernhard Rust, everyday school subjects were rewritten to condition pupils into accepting eugenic sterilisation, racial hierarchy, and military rearmament as normal scientific facts.",
               "context": "School textbook questions conditioning children to view mentally disabled individuals as economic burdens and normalizing aerial bombing.",
               "question_badge": "Curricular Subversion & Ideology",
               "question_type": "Curricular Subversion & Ideology",
               "model_answer": "The school mathematics problem shows how antisemitic propaganda was injected into ordinary subjects, calculating the cost of caring for the disabled.",
               "teacher_notes": {
-                "source_context": "Under Education Minister Bernhard Rust, everyday academic subjects were weaponized to condition pupils into accepting eugenic sterilisation, euthanasia, and aggressive military bombing as normal, scientific facts. **Hinge Question:** What made the incorporation of eugenics into basic math problems more insidious than political speeches?",
+                "source_context": "Under Education Minister Bernhard Rust, everyday school subjects were rewritten to condition pupils into accepting eugenic sterilisation, racial hierarchy, and military rearmament as normal scientific facts. **Hinge Question:** Why was embedding Nazi racial hygiene calculations inside ordinary mathematics textbooks potentially more persuasive to children than overt political rallies?",
                 "hinge_question": "What made the incorporation of eugenics into basic math problems more insidious than political speeches?"
               },
               "question": "What does Source D reveal about how academic subjects were subverted to instill Nazi racial and military ideology in schoolchildren?",
@@ -27641,12 +27630,12 @@ export default {
           "options": [
             "The Pimpfen",
             "The Hitlerjugend",
-            "The BDM",
+            "The League of German Maidens (BDM)",
             "The Deutsches Jungvolk (German Young People)"
           ],
           "answer": "The Deutsches Jungvolk (German Young People)",
           "a": "The Deutsches Jungvolk (German Young People)",
-          "explanation": "While boys were drilled for warfare, German girls aged fourteen to eighteen joined the Bund Deutscher Mädel (BDM)."
+          "explanation": "While boys aged 10–14 joined the Deutsches Jungvolk, teenage girls aged 14–18 joined the League of German Maidens (Bund Deutscher Mädel, BDM)."
         },
         {
           "stage": 2,
@@ -27655,17 +27644,17 @@ export default {
           "options": [
             "The Jungmädel",
             "The Faith and Beauty Society",
-            "The Bund Deutscher Mädel (BDM or League of German Girls)",
+            "The Bund Deutscher Mädel (BDM or League of German Maidens)",
             "The NSF"
           ],
-          "answer": "The Bund Deutscher Mädel (BDM or League of German Girls)",
-          "a": "The Bund Deutscher Mädel (BDM or League of German Girls)",
-          "explanation": "While boys were drilled for warfare, German girls aged fourteen to eighteen joined the Bund Deutscher Mädel (BDM)."
+          "answer": "The Bund Deutscher Mädel (BDM or League of German Maidens)",
+          "a": "The Bund Deutscher Mädel (BDM or League of German Maidens)",
+          "explanation": "While boys were drilled for warfare in the Hitler Youth, teenage girls aged 14–18 joined the League of German Maidens (Bund Deutscher Mädel, BDM)."
         },
         {
           "stage": 2,
-          "question": "What was the ultimate goal for girls in the BDM?",
-          "q": "What was the ultimate goal for girls in the BDM?",
+          "question": "What was the primary Nazi goal for teenage girls trained in the League of German Maidens (BDM)?",
+          "q": "What was the primary Nazi goal for teenage girls trained in the League of German Maidens (BDM)?",
           "options": [
             "To become factory managers during wartime",
             "To become healthy, racially pure mothers",
@@ -27796,7 +27785,7 @@ export default {
             "1939",
             "1933",
             "1936",
-            "1945"
+            "1938"
           ],
           "answer": "1939",
           "a": "1939",
@@ -27900,14 +27889,14 @@ export default {
             "marks": 12,
             "question": "Explain why the Nazi regime placed such high importance on controlling the youth in the years 1933–1939. [12 marks]",
             "stimulus": [
-              "The Hitler Youth and BDM",
+              "The Hitler Youth and the League of German Maidens",
               "Changes to the school curriculum"
             ],
             "bullet_points": [
-              "The Hitler Youth and BDM",
+              "The Hitler Youth and the League of German Maidens",
               "Changes to the school curriculum"
             ],
-            "model": "<p>One decisive reason the regime controlled youth was <strong>the long-term imperative to ensure the survival of the 'Thousand-Year Reich'</strong>. Hitler recognized that adults raised under Weimar held lingering democratic loyalties that could not easily be eradicated. By indoctrinating impressionable children from early childhood, the regime sought to cultivate fanatical obedience to the Führer. Therefore, this prioritized youth control because brainwashing young generations ensured that future citizens would blindly obey Nazi ideology without questioning totalitarian rule.</p><p>Furthermore, youth control was vital to <strong>prepare boys for military combat and girls for maternal reproduction</strong>. In the compulsory Hitler Youth, boys practiced military field drills, rifle shooting, and strenuous hiking for the Wehrmacht. In the League of German Girls (BDM), girls performed gymnastics and learned racial hygiene and mothercraft. Therefore, this enforced youth control because the regime required a steady conveyor belt of physically hardened soldiers for territorial expansion and healthy Aryan mothers to sustain the population.</p><p>Finally, control was enforced through <strong>the systematic Nazification of school curricula and teachers</strong>. All teachers had to swear loyalty oaths and join the Nazi Teachers’ League. School curricula were rewritten: biology taught racial purity and eugenics, history promoted the 'stab-in-the-back' myth, and physical education consumed 15% of timetables. Filling evenings with youth rallies broke parental and church influence. Therefore, this ensured youth control because controlling education alienated children from family authority, securing their absolute loyalty to the state.</p>",
+            "model": "<p>One decisive reason the regime controlled youth was <strong>the long-term imperative to ensure the survival of the 'Thousand-Year Reich'</strong>. Hitler recognized that adults raised under Weimar held lingering democratic loyalties that could not easily be eradicated. By indoctrinating impressionable children from early childhood, the regime sought to cultivate fanatical obedience to the Führer. Therefore, this prioritized youth control because brainwashing young generations ensured that future citizens would blindly obey Nazi ideology without questioning totalitarian rule.</p><p>Furthermore, youth control was vital to <strong>prepare boys for military combat and girls for maternal reproduction</strong>. In the compulsory Hitler Youth, boys practiced military field drills, rifle shooting, and strenuous hiking for the Wehrmacht. In the League of German Maidens (BDM), girls performed gymnastics and learned racial hygiene and mothercraft. Therefore, this enforced youth control because the regime required a steady conveyor belt of physically hardened soldiers for territorial expansion and healthy Aryan mothers to sustain the population.</p><p>Finally, control was enforced through <strong>the systematic Nazification of school curricula and teachers</strong>. All teachers had to swear loyalty oaths and join the Nazi Teachers’ League. School curricula were rewritten: biology taught racial purity and eugenics, history promoted the 'stab-in-the-back' myth, and physical education consumed 15% of timetables. Filling evenings with youth rallies broke parental and church influence. Therefore, this ensured youth control because controlling education alienated children from family authority, securing their absolute loyalty to the state.</p>",
             "scaffolding": {
               "acronym": "3 PEEL Reasons • Own Knowledge Required (Cap 6/12) • 15m",
               "button_label": "Starters & Word Bank",
@@ -27930,7 +27919,7 @@ export default {
               "vocab_bank": [
                 "Hitler Youth (Hitlerjugend)",
                 "Baldur von Schirach",
-                "League of German Girls (BDM)",
+                "League of German Maidens (BDM)",
                 "1936 Hitler Youth Law",
                 "Compulsory membership (1939)",
                 "Catholic Youth banned",
@@ -27947,14 +27936,14 @@ export default {
                 "title": "3/12 Simple Story",
                 "score": "3 / 12 Marks",
                 "level": "Level 1 Top (Simple Story)",
-                "text": "<p>The Nazis controlled youth because Hitler wanted to create loyal soldiers and mothers for the Thousand-Year Reich. Children had to join the Hitler Youth and League of German Girls, and schools taught racial studies and military training.</p>",
+                "text": "<p>The Nazis controlled youth because Hitler wanted to create loyal soldiers and mothers for the Thousand-Year Reich. Children had to join the Hitler Youth and League of German Maidens, and schools taught racial studies and military training.</p>",
                 "verdict": "AO1/AO2 (3 marks). Simple narrative account without developing educational restructuring and totalitarian aims."
               },
               "tier_6m": {
                 "title": "6/12 Descriptive Account",
                 "score": "6 / 12 Marks",
                 "level": "Level 2 Ceiling (Descriptive Account)",
-                "text": "<p>One reason was indoctrination through the Hitler Youth and BDM, which became compulsory in 1939. Boys learned military skills like rifle shooting and map reading to become Wehrmacht soldiers, while girls in the League of German Girls learned domestic skills to become mothers.</p><p>Another reason was Nazifying the school curriculum. Teachers were forced to join the Nazi Teachers' League. Biology lessons taught Aryan racial superiority, history emphasized the German military past, and PE was expanded to build physical toughness.</p>",
+                "text": "<p>One reason was indoctrination through the Hitler Youth and the League of German Maidens (BDM), which became compulsory in 1939. Boys learned military skills like rifle shooting and map reading to become Wehrmacht soldiers, while girls in the League of German Maidens learned domestic skills to become mothers.</p><p>Another reason was Nazifying the school curriculum. Teachers were forced to join the Nazi Teachers' League. Biology lessons taught Aryan racial superiority, history emphasized the German military past, and PE was expanded to build physical toughness.</p>",
                 "verdict": "AO1/AO2 (6 marks). Accurate narrative of schools and youth organizations, but lacking explicit causal link formulas."
               },
               "tier_12m": {
@@ -27962,7 +27951,7 @@ export default {
                 "score": "12 / 12 Marks",
                 "level": "Level 4 Top (Pearson Benchmark)",
                 "badge": "Edexcel Benchmark",
-                "text": "<p>One decisive reason the regime controlled youth was <strong>the long-term imperative to ensure the survival of the 'Thousand-Year Reich'</strong>. Hitler recognized that adults raised under Weimar held lingering democratic loyalties that could not easily be eradicated. By indoctrinating impressionable children from early childhood, the regime sought to cultivate fanatical obedience to the Führer. Therefore, this prioritized youth control because brainwashing young generations ensured that future citizens would blindly obey Nazi ideology without questioning totalitarian rule.</p><p>Furthermore, youth control was vital to <strong>prepare boys for military combat and girls for maternal reproduction</strong>. In the compulsory Hitler Youth, boys practiced military field drills, rifle shooting, and strenuous hiking for the Wehrmacht. In the League of German Girls (BDM), girls performed gymnastics and learned racial hygiene and mothercraft. Therefore, this enforced youth control because the regime required a steady conveyor belt of physically hardened soldiers for territorial expansion and healthy Aryan mothers to sustain the population.</p><p>Finally, control was enforced through <strong>the systematic Nazification of school curricula and teachers</strong>. All teachers had to swear loyalty oaths and join the Nazi Teachers’ League. School curricula were rewritten: biology taught racial purity and eugenics, history promoted the 'stab-in-the-back' myth, and physical education consumed 15% of timetables. Filling evenings with youth rallies broke parental and church influence. Therefore, this ensured youth control because controlling education alienated children from family authority, securing their absolute loyalty to the state.</p>",
+                "text": "<p>One decisive reason the regime controlled youth was <strong>the long-term imperative to ensure the survival of the 'Thousand-Year Reich'</strong>. Hitler recognized that adults raised under Weimar held lingering democratic loyalties that could not easily be eradicated. By indoctrinating impressionable children from early childhood, the regime sought to cultivate fanatical obedience to the Führer. Therefore, this prioritized youth control because brainwashing young generations ensured that future citizens would blindly obey Nazi ideology without questioning totalitarian rule.</p><p>Furthermore, youth control was vital to <strong>prepare boys for military combat and girls for maternal reproduction</strong>. In the compulsory Hitler Youth, boys practiced military field drills, rifle shooting, and strenuous hiking for the Wehrmacht. In the League of German Maidens (BDM), girls performed gymnastics and learned racial hygiene and mothercraft. Therefore, this enforced youth control because the regime required a steady conveyor belt of physically hardened soldiers for territorial expansion and healthy Aryan mothers to sustain the population.</p><p>Finally, control was enforced through <strong>the systematic Nazification of school curricula and teachers</strong>. All teachers had to swear loyalty oaths and join the Nazi Teachers’ League. School curricula were rewritten: biology taught racial purity and eugenics, history promoted the 'stab-in-the-back' myth, and physical education consumed 15% of timetables. Filling evenings with youth rallies broke parental and church influence. Therefore, this ensured youth control because controlling education alienated children from family authority, securing their absolute loyalty to the state.</p>",
                 "verdict": "AO1/AO2 (12 marks). Level 4 top (~238 words). Three analytical paragraphs, each ending with the explicit causal link formula directly answering the question stem."
               }
             },
@@ -27973,8 +27962,8 @@ export default {
             "type": "utility_8m",
             "marks": 8,
             "question": "Question 3(a): Study Sources B and C. How useful are Sources B and C for an enquiry into Nazi aims and methods in training young people in the years 1933–1939? Explain your answer, using Sources B and C and your knowledge of the historical context. [8 marks]",
-            "examiner_tip": "Pair Sources B and C to highlight the gendered division at the heart of Nazi youth policy: Hitler's Nuremberg speech (Source B) shows boys hardened for Wehrmacht combat, whereas the BDM gymnastics display (Source C) shows girls conditioned for collective discipline and healthy Aryan motherhood.",
-            "model": "<p>Source B is highly useful for investigating Nazi youth policy because it states the regime's anti-intellectual, militaristic blueprint directly from the <em>Führer</em>. Addressing 54,000 boys at the Nuremberg Stadium on 14 September 1935, Hitler insists the German boy must not be \"an effeminate intellectual\", demanding instead that he be \"swift as a greyhound, tough as leather, and hard as Krupp steel!\" and \"learn to obey unconditionally\" with \"only one loyalty: to our people and our Fatherland!\" Historically, under Baldur von Schirach and Education Minister Bernhard Rust—who compelled 97% of teachers into the Nazi Teachers' League and embedded Race Studies and daily PE across schools—Hitler Youth camps drilled boys in camouflage, grenade-throwing, and small-bore rifle shooting ahead of compulsory 1936/1939 conscription. Delivered publicly to massed ranks at Nuremberg, its inspirational purpose provides authoritative proof of how boys were psychologically and physically conditioned for the <em>Wehrmacht</em>.</p><p>Source C is equally useful because it illustrates how physical regimentation was extended along strict gender lines to teenage girls. The c. 1936 press photograph captures rows of <em>Bund Deutscher Mädel</em> (BDM) members marching in synchronized outdoor formation wearing identical sleeveless white tunics bearing the BDM diamond badge. While boys trained as soldiers, BDM girls (ages 14–18) practiced rhythmic gymnastics, hiking, domestic hygiene, and racial selection to ensure strong bodies for Aryan childbearing alongside domestic <em>Pflichtjahr</em> service. As an official mid-1930s German publicity photograph staged to celebrate collective harmony and physical health, it omits the boredom and resentment that drove some teenagers toward the <em>Swing Youth</em> or Edelweiss Pirates once Catholic youth clubs were suppressed, yet accurately reflects the conformity demanded of girls.</p><p>Taken together, Sources B and C complement each other by revealing how the regime moulded boys for war and girls for racial motherhood.</p>",
+            "examiner_tip": "Pair Sources B and C to highlight the gendered division at the heart of Nazi youth policy: Hitler's Nuremberg speech (Source B) shows boys hardened for Wehrmacht combat, whereas the League of German Maidens (BDM) gymnastics display (Source C) shows girls conditioned for collective discipline and healthy Aryan motherhood.",
+            "model": "<p>Source B is highly useful for investigating Nazi youth policy because it states the regime's anti-intellectual, militaristic blueprint directly from the <em>Führer</em>. Addressing 54,000 boys at the Nuremberg Stadium on 14 September 1935, Hitler insists the German boy must not be \"an effeminate intellectual\", demanding instead that he be \"swift as a greyhound, tough as leather, and hard as Krupp steel!\" and \"learn to obey unconditionally\" with \"only one loyalty: to our people and our Fatherland!\" Historically, under Baldur von Schirach and Education Minister Bernhard Rust—who compelled 97% of teachers into the Nazi Teachers' League and embedded Race Studies and daily PE across schools—Hitler Youth camps drilled boys in camouflage, grenade-throwing, and small-bore rifle shooting ahead of compulsory 1936/1939 conscription. Delivered publicly to massed ranks at Nuremberg, its inspirational purpose provides authoritative proof of how boys were psychologically and physically conditioned for the <em>Wehrmacht</em>.</p><p>Source C is equally useful because it illustrates how physical regimentation was extended along strict gender lines to teenage girls. The c. 1936 press photograph captures rows of League of German Maidens (<em>Bund Deutscher Mädel</em>, BDM) members marching in synchronized outdoor formation wearing identical sleeveless white tunics bearing the BDM diamond badge. While boys trained as soldiers, BDM girls (ages 14–18) practiced rhythmic gymnastics, hiking, domestic hygiene, and racial selection to ensure strong bodies for Aryan childbearing alongside domestic <em>Pflichtjahr</em> service. As an official mid-1930s German publicity photograph staged to celebrate collective harmony and physical health, it omits the boredom and resentment that drove some teenagers toward the <em>Swing Youth</em> or Edelweiss Pirates once Catholic youth clubs were suppressed, yet accurately reflects the conformity demanded of girls.</p><p>Taken together, Sources B and C complement each other by revealing how the regime moulded boys for war and girls for racial motherhood.</p>",
             "scaffolding": {
               "acronym": "Both Sources: Content, Context & Provenance (12 mins)",
               "button_label": "Starters & Word Bank",
@@ -27996,7 +27985,7 @@ export default {
               "vocab_bank": [
                 "Baldur von Schirach",
                 "Hitler Youth (Hitlerjugend)",
-                "League of German Girls (BDM)",
+                "League of German Maidens (BDM)",
                 "'Swift as a greyhound, hard as Krupp steel'",
                 "1936 Hitler Youth Law",
                 "Compulsory service (March 1939)",
@@ -28011,14 +28000,14 @@ export default {
                 "title": "2/8 Simple Comment",
                 "score": "2 / 8 Marks",
                 "level": "Level 1 (Simple Judgement on Surface Content)",
-                "text": "<p>Source B is useful because Hitler's 1935 speech tells 54,000 boys they must be slim, swift as greyhounds, and hard as Krupp steel, obeying without question. Source C is useful because the photograph shows teenage BDM girls in matching white uniforms doing synchronized gymnastics outdoors.</p>",
+                "text": "<p>Source B is useful because Hitler's 1935 speech tells 54,000 boys they must be slim, swift as greyhounds, and hard as Krupp steel, obeying without question. Source C is useful because the photograph shows teenage League of German Maidens (BDM) girls in matching white uniforms doing synchronized gymnastics outdoors.</p>",
                 "verdict": "AO3 Level 1 (2 marks). Simple judgement on utility relying on surface paraphrase or description of Sources B and C without contextual own knowledge or provenance evaluation."
               },
               "tier_5m": {
                 "title": "5/8 Partial Utility",
                 "score": "5 / 8 Marks",
                 "level": "Level 2 (Developed Content & Context Analysis)",
-                "text": "<p>Source B is useful because Hitler declares at Nuremberg that the German boy must not be \"an effeminate intellectual\", must be \"swift as a greyhound, tough as leather, and hard as Krupp steel!\", and must \"obey unconditionally\". Historically, boys in the <em>Jungvolk</em> and <em>Hitlerjugend</em> practiced route marches, map-reading, and rifle shooting, while schools devoted 15% of curriculum time to PE.</p><p>Source C is useful because the c. 1936 photograph shows League of German Girls (BDM) teenagers performing synchronized outdoor gymnastics in identical white tunics. This shows girls also underwent physical conditioning to become healthy Aryan mothers, though staged official photos hide growing resentment after membership became compulsory in 1936 and 1939.</p>",
+                "text": "<p>Source B is useful because Hitler declares at Nuremberg that the German boy must not be \"an effeminate intellectual\", must be \"swift as a greyhound, tough as leather, and hard as Krupp steel!\", and must \"obey unconditionally\". Historically, boys in the <em>Jungvolk</em> and <em>Hitlerjugend</em> practiced route marches, map-reading, and rifle shooting, while schools devoted 15% of curriculum time to PE.</p><p>Source C is useful because the c. 1936 photograph shows League of German Maidens (BDM) teenagers performing synchronized outdoor gymnastics in identical white tunics. This shows girls also underwent physical conditioning to become healthy Aryan mothers, though staged official photos hide growing resentment after membership became compulsory in 1936 and 1939.</p>",
                 "verdict": "AO3 Level 2 (5 marks). Developed judgement using specific details from Sources B and C supported by relevant contextual knowledge, though provenance evaluation remains brief or generic."
               },
               "tier_8m": {
@@ -28026,7 +28015,7 @@ export default {
                 "score": "8 / 8 Marks",
                 "level": "Level 3 Top (Pearson Exam Standard)",
                 "badge": "Edexcel Benchmark",
-                "text": "<p>Source B is highly useful for investigating Nazi youth policy because it states the regime's anti-intellectual, militaristic blueprint directly from the <em>Führer</em>. Addressing 54,000 boys at the Nuremberg Stadium on 14 September 1935, Hitler insists the German boy must not be \"an effeminate intellectual\", demanding instead that he be \"swift as a greyhound, tough as leather, and hard as Krupp steel!\" and \"learn to obey unconditionally\" with \"only one loyalty: to our people and our Fatherland!\" Historically, under Baldur von Schirach and Education Minister Bernhard Rust—who compelled 97% of teachers into the Nazi Teachers' League and embedded Race Studies and daily PE across schools—Hitler Youth camps drilled boys in camouflage, grenade-throwing, and small-bore rifle shooting ahead of compulsory 1936/1939 conscription. Delivered publicly to massed ranks at Nuremberg, its inspirational purpose provides authoritative proof of how boys were psychologically and physically conditioned for the <em>Wehrmacht</em>.</p><p>Source C is equally useful because it illustrates how physical regimentation was extended along strict gender lines to teenage girls. The c. 1936 press photograph captures rows of <em>Bund Deutscher Mädel</em> (BDM) members marching in synchronized outdoor formation wearing identical sleeveless white tunics bearing the BDM diamond badge. While boys trained as soldiers, BDM girls (ages 14–18) practiced rhythmic gymnastics, hiking, domestic hygiene, and racial selection to ensure strong bodies for Aryan childbearing alongside domestic <em>Pflichtjahr</em> service. As an official mid-1930s German publicity photograph staged to celebrate collective harmony and physical health, it omits the boredom and resentment that drove some teenagers toward the <em>Swing Youth</em> or Edelweiss Pirates once Catholic youth clubs were suppressed, yet accurately reflects the conformity demanded of girls.</p><p>Taken together, Sources B and C complement each other by revealing how the regime moulded boys for war and girls for racial motherhood.</p>",
+                "text": "<p>Source B is highly useful for investigating Nazi youth policy because it states the regime's anti-intellectual, militaristic blueprint directly from the <em>Führer</em>. Addressing 54,000 boys at the Nuremberg Stadium on 14 September 1935, Hitler insists the German boy must not be \"an effeminate intellectual\", demanding instead that he be \"swift as a greyhound, tough as leather, and hard as Krupp steel!\" and \"learn to obey unconditionally\" with \"only one loyalty: to our people and our Fatherland!\" Historically, under Baldur von Schirach and Education Minister Bernhard Rust—who compelled 97% of teachers into the Nazi Teachers' League and embedded Race Studies and daily PE across schools—Hitler Youth camps drilled boys in camouflage, grenade-throwing, and small-bore rifle shooting ahead of compulsory 1936/1939 conscription. Delivered publicly to massed ranks at Nuremberg, its inspirational purpose provides authoritative proof of how boys were psychologically and physically conditioned for the <em>Wehrmacht</em>.</p><p>Source C is equally useful because it illustrates how physical regimentation was extended along strict gender lines to teenage girls. The c. 1936 press photograph captures rows of League of German Maidens (<em>Bund Deutscher Mädel</em>, BDM) members marching in synchronized outdoor formation wearing identical sleeveless white tunics bearing the BDM diamond badge. While boys trained as soldiers, BDM girls (ages 14–18) practiced rhythmic gymnastics, hiking, domestic hygiene, and racial selection to ensure strong bodies for Aryan childbearing alongside domestic <em>Pflichtjahr</em> service. As an official mid-1930s German publicity photograph staged to celebrate collective harmony and physical health, it omits the boredom and resentment that drove some teenagers toward the <em>Swing Youth</em> or Edelweiss Pirates once Catholic youth clubs were suppressed, yet accurately reflects the conformity demanded of girls.</p><p>Taken together, Sources B and C complement each other by revealing how the regime moulded boys for war and girls for racial motherhood.</p>",
                 "verdict": "AO3 Level 3 Top (8 marks). Balanced, sustained evaluation of both Sources B and C integrating precise source details, contextual own knowledge, and bespoke Nature/Origin/Purpose analysis tailored to the enquiry."
               }
             },
@@ -28050,7 +28039,7 @@ export default {
           "title": "What Was the Hitler Youth? | Holocaust Explainer (USHMM)",
           "duration": "3 mins 44 secs",
           "pathway": "Starter Hook",
-          "teacher_guidance": "Recommended Watch Window: 00:00–03:44 | Lesson Phase: Youth Organisations | Tone Alert: USHMM educational summary of the Hitler Youth (HJ) and League of German Girls (BDM), mandatory membership from 1936/1939.",
+          "teacher_guidance": "Recommended Watch Window: 00:00–03:44 | Lesson Phase: Youth Organisations | Tone Alert: USHMM educational summary of the Hitler Youth (HJ) and League of German Maidens (BDM), mandatory membership from 1936/1939.",
           "viewing_task": "[01:00] Activities: What different skills were emphasised for boys in the Hitler Youth compared to girls in the Bund Deutscher Mädel (BDM)?\n[02:30] Loyalty: How did youth groups aim to replace family and religious loyalty with total allegiance to Adolf Hitler?",
           "model_answer": "Boys focused on military drill, weapons cleaning, map-reading, obstacle courses, and endurance camping to prepare them for military service. Girls focused on physical fitness, gymnastics, camp cooking, hygiene, and mothercraft to prepare them for motherhood; both groups encouraged children to inform on parents if they expressed doubts about Hitler."
         },
@@ -28083,7 +28072,7 @@ export default {
           "duration": "23 mins 14 secs",
           "pathway": "Archival Documentary",
           "teacher_guidance": "Recommended Watch Window: 01:00–14:30 | Lesson Phase: Nazi Curriculum, Hitler Youth & BDM | Tone Alert: Features powerful firsthand testimony from former Hitler Youth member Henry Metelmann on school indoctrination, militarised camping, and generational division.",
-          "viewing_task": "[02:45] Recall: How did Nazi control of school textbooks (e.g. Biology/ Eugenics, History, and Maths) reinforce the ideological aims of the Hitler Youth and League of German Girls (BDM)?\n[10:30] Hinge Question: Why did eyewitness Henry Metelmann initially find the Hitler Youth so exciting even when his working-class parents opposed Hitler?",
+          "viewing_task": "[02:45] Recall: How did Nazi control of school textbooks (e.g. Biology/ Eugenics, History, and Maths) reinforce the ideological aims of the Hitler Youth and League of German Maidens (BDM)?\n[10:30] Hinge Question: Why did eyewitness Henry Metelmann initially find the Hitler Youth so exciting even when his working-class parents opposed Hitler?",
           "model_answer": "Schools rewrote curricula to teach racial hierarchy (\"Rassenkunde\"), military fitness for boys, and motherhood (\"Kinder, Küche, Kirche\") for girls, echoed after school in HJ war-games and BDM domestic training. Metelmann recalls how uniforms, campfires, marching songs, and feeling superior to adults seduced teenagers before they realised they were being conditioned as cannon fodder."
         }
       ],
@@ -28107,10 +28096,10 @@ export default {
             "tariff": "Q2: Causal Explanation [12 marks]",
             "text": "Explain why the Nazi regime placed such high importance on controlling the youth in the years 1933–1939. [12 marks]",
             "stimulus": [
-              "The Hitler Youth and BDM",
+              "The Hitler Youth and the League of German Maidens",
               "Changes to the school curriculum"
             ],
-            "model": "<p>One major reason the regime placed supreme importance on youth was <strong>the goal of indoctrinating the next generation into fanatical Nazi ideology ('the Thousand-Year Reich')</strong>. As Hitler declared, 'Whoever has the youth has the future.' The regime understood that adults might conform out of fear, but children could be completely molded from infancy. In March 1936, the Hitler Youth Law made membership in Nazi youth organizations mandatory for all boys aged 10 to 18, and in 1939, non-membership was criminalized. Girls joined the League of German Girls (BDM), where they were trained in mothercraft, gymnastics, and racial hygiene, while boys in the Hitler Youth were trained in military drilling, rifle shooting, and unconditional obedience to Hitler.</p><p>Furthermore, control was achieved by <strong>thoroughly Nazifying the school curriculum and purging teachers</strong>. All teachers were forced to join the National Socialist Teachers' League (NSLB) and swear a loyalty oath to Hitler. School textbooks were rewritten: History taught the betrayal of Versailles and the glory of German wars; Biology taught racial hierarchy, Aryan supremacy, and the 'subhuman' status of Jews and Slavs; Mathematics set word problems calculating the cost of caring for the mentally disabled compared to building bomber aircraft. PE was expanded to take up 15% of the school week to produce physically hardened soldiers.</p><p>Finally, control was intended to <strong>break the influence of the family and the churches</strong>. By occupying children's evenings, weekends, and holidays with camping trips, rallies, and paramilitary training, the Hitler Youth alienated children from traditional parental authority and Christian Sunday schools, encouraging children to denounce parents or teachers who expressed anti-Nazi views.</p>"
+            "model": "<p>One major reason the regime placed supreme importance on youth was <strong>the goal of indoctrinating the next generation into fanatical Nazi ideology ('the Thousand-Year Reich')</strong>. As Hitler declared, 'Whoever has the youth has the future.' The regime understood that adults might conform out of fear, but children could be completely molded from infancy. In March 1936, the Hitler Youth Law made membership in Nazi youth organizations mandatory for all boys aged 10 to 18, and in 1939, non-membership was criminalized. Girls joined the League of German Maidens (BDM), where they were trained in mothercraft, gymnastics, and racial hygiene, while boys in the Hitler Youth were trained in military drilling, rifle shooting, and unconditional obedience to Hitler.</p><p>Furthermore, control was achieved by <strong>thoroughly Nazifying the school curriculum and purging teachers</strong>. All teachers were forced to join the National Socialist Teachers' League (NSLB) and swear a loyalty oath to Hitler. School textbooks were rewritten: History taught the betrayal of Versailles and the glory of German wars; Biology taught racial hierarchy, Aryan supremacy, and the 'subhuman' status of Jews and Slavs; Mathematics set word problems calculating the cost of caring for the mentally disabled compared to building bomber aircraft. PE was expanded to take up 15% of the school week to produce physically hardened soldiers.</p><p>Finally, control was intended to <strong>break the influence of the family and the churches</strong>. By occupying children's evenings, weekends, and holidays with camping trips, rallies, and paramilitary training, the Hitler Youth alienated children from traditional parental authority and Christian Sunday schools, encouraging children to denounce parents or teachers who expressed anti-Nazi views.</p>"
           }
         ]
       },
@@ -28155,21 +28144,21 @@ export default {
         {
           "stage": 2,
           "dates": "1933–1936",
-          "title": "The League of German Girls (Bund Deutscher Mädel)",
-          "spec_focus": "BDM; outdoor gymnastics; preparation for motherhood; domestic skills; racial hygiene.",
+          "title": "The League of German Maidens (BDM)",
+          "spec_focus": "The League of German Maidens (BDM); outdoor gymnastics; motherhood & domestic training; racial hygiene.",
           "focus_clue": "How did the BDM train adolescent girls for motherhood and domestic duty?",
           "para_ref": "[2.1–2.2]",
           "bullets": [
-            "Bund Deutscher Mädel (BDM)",
+            "League of German Maidens (BDM)",
             "Motherhood & domestic training",
             "Racial hygiene instruction"
           ],
           "writing_frame": {
-            "connectives": "Girls were indoctrinated separately through... &bull; For instance, BDM training emphasized... &bull; This was intended to ensure... &bull; As a result,..."
+            "connectives": "Girls were trained separately in the League of German Maidens (BDM) through... &bull; For instance, training emphasised... &bull; This aimed to ensure... &bull; As a result,..."
           },
           "words": [
             {
-              "term": "Bund Deutscher Mädel (BDM)",
+              "term": "League of German Maidens (BDM)",
               "type": "key_term"
             },
             {
@@ -28181,13 +28170,13 @@ export default {
               "type": "key_term"
             }
           ],
-          "model_sentence": "Girls were organized within the <strong>Bund Deutscher Mädel (BDM)</strong>, which combined physical fitness with intensive <strong>motherhood & domestic training</strong> and strict <strong>racial hygiene instruction</strong> for future wives.",
+          "model_sentence": "Girls aged 14–18 entered the <strong>League of German Maidens (BDM)</strong>, combining outdoor fitness with <strong>motherhood & domestic training</strong> and <strong>racial hygiene instruction</strong> for future Aryan wives.",
           "heading": "How did the BDM train adolescent girls for motherhood and domestic duty?",
           "date": "1933–1936",
           "step": 2,
           "question": "How did the BDM train adolescent girls for motherhood and domestic duty?",
           "questionHeading": "How did the BDM train adolescent girls for motherhood and domestic duty?",
-          "prose_hash": "c599465432"
+          "prose_hash": "fb735e15a3"
         },
         {
           "stage": 3,
@@ -28309,7 +28298,7 @@ export default {
             "step": 1,
             "date": "1933–1936",
             "para_ref": "[1.1–1.2]",
-            "title": "Totalitarian Ambition & The Hitler Youth",
+            "title": "The Hitler Youth (Hitlerjugend) for Boys",
             "actor": "Baldur von Schirach & Millions of Boys",
             "tag": "⛺ PARAMILITARY SCOUT DRILLS",
             "trigger": "Boys were drilled in trench warfare, map reading, and small-bore rifle shooting, swearing personal loyalty to Hitler upon receiving their pocket knives.",
@@ -28322,20 +28311,20 @@ export default {
             "step": 2,
             "date": "1933–1936",
             "para_ref": "[2.1–2.2]",
-            "title": "Hitler Youth: Militarism & Indoctrination",
-            "actor": "Adolescent Girls & BDM Leaders",
-            "tag": "👧 BDM RACIAL MOTHERHOOD",
-            "trigger": "Adolescent girls exercised outdoors to build stamina and learned domestic cooking, infant hygiene, and racial science to prepare for motherhood.",
-            "desc": "Adolescent girls exercised outdoors to build stamina and learned domestic cooking, infant hygiene, and racial science to prepare for motherhood.",
+            "title": "The League of German Maidens (BDM)",
+            "actor": "Teenage Girls & League of German Maidens",
+            "tag": "👧 LEAGUE OF GERMAN MAIDENS (BDM)",
+            "trigger": "Teenage girls in the League of German Maidens (BDM) practised outdoor gymnastics, cooking, infant care, and racial science to prepare for Aryan motherhood.",
+            "desc": "Teenage girls in the League of German Maidens (BDM) practised outdoor gymnastics, cooking, infant care, and racial science to prepare for Aryan motherhood.",
             "connective": "Conditioned girls to accept their domestic role as breeders of the Aryan racial community.",
             "question": "How did the BDM train adolescent girls for motherhood and domestic duty?",
-            "prose_hash": "c599465432"
+            "prose_hash": "fb735e15a3"
           },
           {
             "step": 3,
             "date": "1936–1939",
             "para_ref": "[3.1–3.2]",
-            "title": "The League of German Girls (BDM)",
+            "title": "Compulsory Youth Membership & Resistance",
             "actor": "Reich Youth Directorate & 8.2m Youths",
             "tag": "📜 COMPULSORY YOUTH CONVEYOR",
             "trigger": "The regime banned rival church youth groups and made attendance legally compulsory in 1939, enrolling 8.2 million children into state uniforms.",
@@ -28348,7 +28337,7 @@ export default {
             "step": 4,
             "date": "1933–1937",
             "para_ref": "[4.1–4.2]",
-            "title": "Nazifying the School Curriculum",
+            "title": "Purging Teachers & The Nazi Teachers' League",
             "actor": "Hans Schemm & 97% German Teachers",
             "tag": "👨‍🏫 97% NSLB TEACHER REGIMENTATION",
             "trigger": "Jewish and democratic teachers were dismissed, while 97% of educators joined the NSLB, attending mandatory ideological camps during holidays.",
@@ -28361,7 +28350,7 @@ export default {
             "step": 5,
             "date": "1933–1939",
             "para_ref": "[5.1–5.2]",
-            "title": "Conformity, Resistance & The Historical Verdict",
+            "title": "Indoctrinating the Curriculum & Elite Schools",
             "actor": "School Pupils & Napola Cadets",
             "tag": "🧬 RACIAL CURRICULUM & NAPOLAS",
             "trigger": "Schools allocated 15% of time to PE, militarized maths word problems, taught racial science with skull calipers, and trained leaders in Napolas.",
@@ -28381,7 +28370,7 @@ export default {
         },
         {
           "date": "1933–1936",
-          "title": "The League of German Girls (Bund Deutscher Mädel)",
+          "title": "The League of German Maidens (BDM)",
           "desc": "Adolescent girls exercised outdoors to build stamina and learned domestic cooking, infant hygiene, and racial science to prepare for motherhood.",
           "para_ref": "[2.1–2.2]"
         },
@@ -28456,15 +28445,15 @@ export default {
         {
           "id": "weimar_l14_source_a",
           "letter": "C",
-          "title": "Source C: League of German Girls (BDM) Performing Synchronized Physical Drill (c. 1936)",
+          "title": "Source C: League of German Maidens (BDM) Performing Synchronized Physical Drill (c. 1936)",
           "type": "visual",
           "src": "/images/weimar_nazi_germany/kt4/wng_kt4_l14_s2_bdm_sportfest_1937.jpg",
           "image": "/images/weimar_nazi_germany/kt4/wng_kt4_l14_s2_bdm_sportfest_1937.jpg",
-          "caption": "Teenage members of the League of German Girls (Bund Deutscher Mädel) in matching white uniforms performing mass synchronized gymnastics in an outdoor display, c. 1936.",
-          "desc": "Archival photograph showing mass rhythmic gymnastics by League of German Girls members in white athletic dress, c. 1936.",
+          "caption": "Teenage members of the League of German Maidens (Bund Deutscher Mädel) in matching white uniforms performing mass synchronized gymnastics in an outdoor display, c. 1936.",
+          "desc": "Archival photograph showing mass rhythmic gymnastics by League of German Maidens members in white athletic dress, c. 1936.",
           "provenance": "German Federal Archives (Bundesarchiv), Koblenz, Bild 183-H12148.",
           "citation": "Bundesarchiv, Bild 183-H12148.",
-          "intro": "An official photograph showing members of the League of German Girls (Bund Deutscher Mädel) performing synchronized outdoor gymnastics, c. 1936.",
+          "intro": "An official photograph showing members of the League of German Maidens (Bund Deutscher Mädel) performing synchronized outdoor gymnastics, c. 1936.",
           "source_context": "This authentic photograph depicts the mass gymnastics displays that formed a central pillar of BDM physical training, conditioning girls' bodies for future motherhood while enforcing collective conformity and discipline.",
           "context": "Official photograph showing mass synchronized gymnastics display by teenage members of the BDM, c. 1936.",
           "question_badge": "Source Inference (Paper 3 Q1)",
@@ -28488,13 +28477,13 @@ export default {
           "provenance": "Adolf Dorner, Mathematik im Dienste der nationalpolitischen Erziehung, Frankfurt am Main, 1935.",
           "citation": "Georg Eckert Institute for International Textbook Research, Braunschweig.",
           "intro": "Word problems from an approved German school mathematics textbook published in 1935 under the authority of the Reich Ministry of Education.",
-          "source_context": "Under Education Minister Bernhard Rust, everyday academic subjects were weaponized to condition pupils into accepting eugenic sterilisation, euthanasia, and aggressive military bombing as normal, scientific facts.",
+          "source_context": "Under Education Minister Bernhard Rust, everyday school subjects were rewritten to condition pupils into accepting eugenic sterilisation, racial hierarchy, and military rearmament as normal scientific facts.",
           "context": "School textbook questions conditioning children to view mentally disabled individuals as economic burdens and normalizing aerial bombing.",
           "question_badge": "Curricular Subversion & Ideology",
           "question_type": "Curricular Subversion & Ideology",
           "model_answer": "The school mathematics problem shows how antisemitic propaganda was injected into ordinary subjects, calculating the cost of caring for the disabled.",
           "teacher_notes": {
-            "source_context": "Under Education Minister Bernhard Rust, everyday academic subjects were weaponized to condition pupils into accepting eugenic sterilisation, euthanasia, and aggressive military bombing as normal, scientific facts. **Hinge Question:** What made the incorporation of eugenics into basic math problems more insidious than political speeches?",
+            "source_context": "Under Education Minister Bernhard Rust, everyday school subjects were rewritten to condition pupils into accepting eugenic sterilisation, racial hierarchy, and military rearmament as normal scientific facts. **Hinge Question:** Why was embedding Nazi racial hygiene calculations inside ordinary mathematics textbooks potentially more persuasive to children than overt political rallies?",
             "hinge_question": "What made the incorporation of eugenics into basic math problems more insidious than political speeches?"
           },
           "question": "What does Source D reveal about how academic subjects were subverted to instill Nazi racial and military ideology in schoolchildren?",
@@ -28526,9 +28515,9 @@ export default {
           "studio_voice_label": "Secret Sopade Report on Youth Di…"
         }
       ],
-      "prologue": "To Adolf Hitler, whoever captured the youth possessed the future of the Thousand-Year Reich. From the age of ten, boys were inducted into the Hitler Youth, exchanging childhood innocence for map reading, rifle training, and ideological fanatical indoctrination, while girls in the League of German Girls (BDM) were conditioned for domestic motherhood and racial health. Within the classroom, Bernhard Rust purged all Jewish and non-conformist educators, forcing every teacher to join the Nazi Teachers' League. Academic subjects were warped into racial instruments: Biology became the study of Aryan eugenics, History championed militarism, and Mathematics calculated the fuel consumption of bomber squadrons. How did the Nazi regime indoctrinate German youth through schools and youth movements, and how successful was their control?",
-      "specification_anchor": "Life in Nazi Germany, 1933–39: Nazi policies towards the young; aims and compulsory membership of the Hitler Youth and BDM; control of education, school curricula and teacher coordination.",
-      "hook_text": "To Adolf Hitler, whoever captured the youth possessed the future of the Thousand-Year Reich. From the age of ten, boys were inducted into the Hitler Youth, exchanging childhood innocence for map reading, rifle training, and ideological fanatical indoctrination, while girls in the League of German Girls (BDM) were conditioned for domestic motherhood and racial health. Within the classroom, Bernhard Rust purged all Jewish and non-conformist educators, forcing every teacher to join the Nazi Teachers' League. Academic subjects were warped into racial instruments: Biology became the study of Aryan eugenics, History championed militarism, and Mathematics calculated the fuel consumption of bomber squadrons. How did the Nazi regime indoctrinate German youth through schools and youth movements, and how successful was their control?",
+      "prologue": "To Adolf Hitler, whoever captured the youth possessed the future of the Thousand-Year Reich. From the age of ten, boys were inducted into the Hitler Youth, exchanging childhood innocence for map reading, rifle training, and ideological fanatical indoctrination, while girls in the League of German Maidens (BDM) were conditioned for domestic motherhood and racial health. Within the classroom, Bernhard Rust purged all Jewish and non-conformist educators, forcing every teacher to join the Nazi Teachers' League. Academic subjects were warped into racial instruments: Biology became the study of Aryan eugenics, History championed militarism, and Mathematics calculated the fuel consumption of bomber squadrons. How did the Nazi regime indoctrinate German youth through schools and youth movements, and how successful was their control?",
+      "specification_anchor": "Life in Nazi Germany, 1933–39: Nazi policies towards the young; aims and policies of the Hitler Youth and the League of German Maidens (BDM); Nazi control of the young through education, the curriculum and teachers.",
+      "hook_text": "To Adolf Hitler, whoever captured the youth possessed the future of the Thousand-Year Reich. From the age of ten, boys were inducted into the Hitler Youth, exchanging childhood innocence for map reading, rifle training, and ideological fanatical indoctrination, while girls in the League of German Maidens (BDM) were conditioned for domestic motherhood and racial health. Within the classroom, Bernhard Rust purged all Jewish and non-conformist educators, forcing every teacher to join the Nazi Teachers' League. Academic subjects were warped into racial instruments: Biology became the study of Aryan eugenics, History championed militarism, and Mathematics calculated the fuel consumption of bomber squadrons. How did the Nazi regime indoctrinate German youth through schools and youth movements, and how successful was their control?",
       "flashcards": [
         {
           "term": "Hitler Youth (Hitlerjugend / HJ)",
@@ -28537,9 +28526,9 @@ export default {
           "a": "To indoctrinate boys aged 14–18 with Nazi ideology and train them for military service through rigorous physical and military drills."
         },
         {
-          "term": "League of German Girls (Bund Deutscher Mädel / BDM)",
+          "term": "League of German Maidens (Bund Deutscher Mädel / BDM)",
           "definition": "The sister organization to the Hitler Youth for girls aged 14–18, focusing on physical fitness, domestic crafts, and preparing for Aryan motherhood.",
-          "q": "What was the role of the League of German Girls (BDM)?",
+          "q": "What was the role of the League of German Maidens (BDM)?",
           "a": "To train teenage girls aged 14–18 in domestic duties, childcare, racial awareness, and physical fitness for motherhood."
         },
         {
@@ -28573,7 +28562,7 @@ export default {
           "answer": "Marching, rifle shooting, map reading, obstacle courses, and unquestioning obedience to prepare them as soldiers."
         },
         {
-          "question": "Using paragraph [2.1], what skills were girls taught in the League of German Girls (Bund Deutscher Mädel)?",
+          "question": "Using paragraph [2.1], what skills were girls taught in the League of German Maidens (Bund Deutscher Mädel)?",
           "answer": "Physical fitness, cooking, cleaning, child care, and racial eugenics to prepare them for motherhood."
         },
         {
@@ -28617,15 +28606,15 @@ export default {
           },
           {
             "badge": "Stage 2",
-            "heading": "League of German Girls (BDM)",
+            "heading": "League of German Maidens (BDM)",
             "date": "1933–1939",
             "img": "/images/bdm_gymnastics_vorfuhrung.jpg",
             "mode": "landscape",
             "pos": "center 25%",
             "stat": "Ages 14–18: Fitness, Cooking & Race Charts",
-            "html": "Girls aged 14–18 joined the <strong>BDM (League of German Girls)</strong> in blue skirts and white blouses. They practised gymnastics, cooking, infant care, and <strong><em>Rassenkunde</em> race charts</strong> to pick Aryan husbands.",
-            "spoken": "Girls followed separate training preparing for motherhood. <short pause> Girls aged 14, 18 joined the BDM (League of German Girls) in blue skirts and white blouses. They practised gymnastics, cooking, infant care, and Rassenkunde race charts to pick Aryan husbands.",
-            "paired_prose_hash": "c599465432",
+            "html": "Girls aged 14–18 joined the <strong>League of German Maidens (BDM)</strong> in blue skirts, practising gymnastics, cooking, infant care, and <strong><em>Rassenkunde</em></strong> for motherhood.",
+            "spoken": "Girls followed separate training preparing for motherhood. <short pause> Girls aged 14 to 18 joined the League of German Maidens (BDM) in blue skirts, practising gymnastics, cooking, infant care, and Rassenkunde for motherhood.",
+            "paired_prose_hash": "fb735e15a3",
             "connective": "Girls followed separate training preparing for motherhood."
           },
           {
@@ -28648,8 +28637,8 @@ export default {
             "img": "/images/weimar_individuals/bernhard_rust.jpg",
             "mode": "contain",
             "stat": "97% Teachers Enrolled • Hitler Salute Every Lesson",
-            "html": "Jewish and democratic teachers were sacked in 1933, while <strong>97% of teachers</strong> joined the <strong>Nazi Teachers’ League (NSLB)</strong>. Educators attended ideological camps and began every lesson with the <strong>Nazi salute</strong>.",
-            "spoken": "Inside schools, staffrooms were purged ruthlessly too. <short pause> Jewish and democratic teachers were sacked in 1933, while 97% of teachers joined the Nazi Teachers’ League (NSLB) . Educators attended ideological camps and began every lesson with the Nazi salute .",
+            "html": "Tightening <strong>Nazi control of the young through education</strong>, Jewish teachers were sacked while <strong>97% of teachers</strong> joined the <strong>NSLB</strong> and gave the Nazi salute.",
+            "spoken": "Inside schools, staffrooms were purged ruthlessly too. <short pause> Tightening Nazi control of the young through education, Jewish teachers were sacked while 97% of teachers joined the NSLB and gave the Nazi salute.",
             "paired_prose_hash": "d679ea9102",
             "connective": "Inside schools, staffrooms were purged ruthlessly too."
           },
@@ -28660,8 +28649,8 @@ export default {
             "img": "/images/nuremberg_laws_chart_1935.jpg",
             "mode": "contain-light",
             "stat": "Compulsory Race Biology • SS-Backed Napola Schools",
-            "html": "Maths calculated <strong>bombing paths</strong> and care costs for the disabled, while compulsory <strong>Eugenics</strong> measured skulls to rank “Aryans” above Jews. Elite <strong><em>Napolas</em> boarding schools</strong> trained future SS commanders.",
-            "spoken": "Every school subject was rewritten for war. <short pause> Maths calculated bombing paths and care costs for the disabled, while compulsory Eugenics measured skulls to rank “Aryans” above Jews. Elite Napolas boarding schools trained future SS commanders.",
+            "html": "Rewriting <strong>the curriculum</strong>, maths taught bombing paths, compulsory <strong>Eugenics</strong> ranked “Aryans” above Jews, and elite <strong><em>Napolas</em></strong> trained future SS commanders.",
+            "spoken": "Every school subject was rewritten for war. <short pause> Rewriting the curriculum, maths taught bombing paths, compulsory Eugenics ranked “Aryans” above Jews, and elite Napolas trained future SS commanders.",
             "paired_prose_hash": "a5f4084ef0",
             "connective": "Every school subject was rewritten for war."
           },
@@ -28679,15 +28668,15 @@ export default {
             "connective": "By 1939, the state claimed children everywhere."
           }
         ],
-        "takeaway": "By purging teachers into the NSLB, rewriting lessons around Eugenics, and making the Hitler Youth and BDM compulsory by 1939, the Nazis indoctrinated millions for war and racial obedience.",
-        "spokenTakeaway": "Here is the big story in one sentence. <short pause> By purging teachers into the NSLB, rewriting lessons around Eugenics, and making the Hitler Youth and BDM compulsory by 1939, the Nazis indoctrinated millions for war and racial obedience.",
+        "takeaway": "By purging teachers into the NSLB, rewriting the curriculum around Eugenics, and making the Hitler Youth and League of German Maidens (BDM) compulsory by 1939, the Nazis indoctrinated millions.",
+        "spokenTakeaway": "Here is the big story in one sentence. <short pause> By purging teachers into the NSLB, rewriting the curriculum around Eugenics, and making the Hitler Youth and League of German Maidens (BDM) compulsory by 1939, the Nazis indoctrinated millions.",
         "vocab": [
           [
             "1. Hitler Youth",
             "Nazi youth movement drilling boys aged 14–18 in marching and rifle skills."
           ],
           [
-            "2. League of German Girls",
+            "2. League of German Maidens",
             "Nazi BDM movement training girls aged 14–18 for fitness and Aryan motherhood."
           ],
           [
@@ -28891,9 +28880,9 @@ export default {
           },
           {
             "stage": 2,
-            "question": "What youth organization was established for German boys aged ten to fourteen?",
-            "answer": "The Deutsches Jungvolk (German Young People)",
-            "explanation": "While boys were drilled for warfare, German girls aged fourteen to eighteen joined the Bund Deutscher Mädel (BDM)."
+            "question": "Which Nazi youth organisation trained teenage girls aged 14–18 in gymnastics, cooking, infant care, and racial hygiene for motherhood?",
+            "answer": "The League of German Maidens (Bund Deutscher Mädel / BDM)",
+            "explanation": "While boys aged 10–14 entered the Deutsches Jungvolk and older boys joined the Hitler Youth, girls aged 14–18 joined the League of German Maidens (BDM)."
           },
           {
             "stage": 3,
@@ -29281,8 +29270,8 @@ export default {
         {
           "title": "Strength Through Joy (KdF): Subsidized Leisure and the People's Car (1933–1939)",
           "act": 4,
-          "text": "<span class=\"para-ref\">[4.1]</span> To reconcile workers to long hours after abolishing **Trade Unions**, **Robert Ley** set up Strength Through Joy (*Kraft durch Freude*, KdF) inside **the German Labour Front (DAF)**. Subsidised by the state, KdF ran cheap concerts, theatre trips, sports, hikes, and luxury cruise voyages to Norway and the Mediterranean.\n\n<span class=\"para-ref\">[4.2]</span> KdF also promoted **the Volkswagen savings scheme**, letting workers pay five marks a week toward a \"People's Car\". However, no worker ever received a civilian car; when war broke out in 1939, factories switched to army vehicles and workers' savings were seized for rearmament.",
-          "content": "<span class=\"para-ref\">[4.1]</span> To reconcile workers to long hours after abolishing **Trade Unions**, **Robert Ley** set up Strength Through Joy (*Kraft durch Freude*, KdF) inside **the German Labour Front (DAF)**. Subsidised by the state, KdF ran cheap concerts, theatre trips, sports, hikes, and luxury cruise voyages to Norway and the Mediterranean.\n\n<span class=\"para-ref\">[4.2]</span> KdF also promoted **the Volkswagen savings scheme**, letting workers pay five marks a week toward a \"People's Car\". However, no worker ever received a civilian car; when war broke out in 1939, factories switched to army vehicles and workers' savings were seized for rearmament.",
+          "text": "<span class=\"para-ref\">[4.1]</span> To reconcile workers to lost **Trade Unions** and frozen pay, Dr **Robert Ley** set up **Strength Through Joy** (*Kraft durch Freude*, **KdF**) and **Beauty of Labour** (*Schönheit der Arbeit*, **SdA**) inside **the German Labour Front (DAF)**. **Strength Through Joy** subsidised cheap theatre tickets, concerts, sports, hiking trips, and ocean cruises to Madeira and Norway for millions of workers.\n\n<span class=\"para-ref\">[4.2]</span> Meanwhile, **Beauty of Labour** campaigned to improve factory conditions with cleaner canteens, brighter lighting, better ventilation, and hot washrooms — though bosses expected workers to build and paint these upgrades unpaid after shifts. KdF also launched **the Volkswagen savings scheme** at five marks weekly for a \"People's Car\", yet factories switched to military vehicles in 1939 and nobody received a car.",
+          "content": "<span class=\"para-ref\">[4.1]</span> To reconcile workers to lost **Trade Unions** and frozen pay, Dr **Robert Ley** set up **Strength Through Joy** (*Kraft durch Freude*, **KdF**) and **Beauty of Labour** (*Schönheit der Arbeit*, **SdA**) inside **the German Labour Front (DAF)**. **Strength Through Joy** subsidised cheap theatre tickets, concerts, sports, hiking trips, and ocean cruises to Madeira and Norway for millions of workers.\n\n<span class=\"para-ref\">[4.2]</span> Meanwhile, **Beauty of Labour** campaigned to improve factory conditions with cleaner canteens, brighter lighting, better ventilation, and hot washrooms — though bosses expected workers to build and paint these upgrades unpaid after shifts. KdF also launched **the Volkswagen savings scheme** at five marks weekly for a \"People's Car\", yet factories switched to military vehicles in 1939 and nobody received a car.",
           "act_title": "Stage 4: Strength Through Joy (KdF) & Beauty of Labour (SdA)",
           "sources": [
             {
@@ -29333,8 +29322,8 @@ export default {
             "question": "How useful is Source D for an enquiry into how the Nazi regime established control over the industrial working class in 1933?"
           },
           "paragraphs": [
-            "<span class=\"para-ref\">[4.1]</span> To reconcile workers to lost trade union rights and long hours, Robert Ley established **Kraft durch Freude (KdF)**, or Strength Through Joy. Subsidized by the DAF, KdF became the world’s largest leisure provider, organizing affordable concerts, sporting events, hiking excursions, and popular **subsidized cruises & theater** voyages to Norway and the Mediterranean aboard purpose-built luxury liners for working-class families.",
-            "<span class=\"para-ref\">[4.2]</span> To provide affordable private transport, KdF launched the ambitious **Volkswagen Beetle savings scheme**, allowing workers to purchase an automobile by saving five marks weekly. However, no German worker ever received a civilian car; when war broke out in 1939, factory machinery was converted to military vehicles, and workers’ personal savings deposits were confiscated to finance military rearmament production."
+            "<span class=\"para-ref\">[4.1]</span> To reconcile workers to lost **Trade Unions** and frozen pay, Dr **Robert Ley** set up **Strength Through Joy** (*Kraft durch Freude*, **KdF**) and **Beauty of Labour** (*Schönheit der Arbeit*, **SdA**) inside **the German Labour Front (DAF)**. **Strength Through Joy** subsidised cheap theatre tickets, concerts, sports, hiking trips, and ocean cruises to Madeira and Norway for millions of workers.",
+            "<span class=\"para-ref\">[4.2]</span> Meanwhile, **Beauty of Labour** campaigned to improve factory conditions with cleaner canteens, brighter lighting, better ventilation, and hot washrooms — though bosses expected workers to build and paint these upgrades unpaid after shifts. KdF also launched **the Volkswagen savings scheme** at five marks weekly for a \"People's Car\", yet factories switched to military vehicles in 1939 and nobody received a car."
           ],
           "image": "/images/weimar_nazi_germany/kt4/wng_kt4_l15_b3_alt_kdf_wagen_1938.jpg",
           "image_alt": "1938 KdF-Wagen ('People's Car') prototype steel body shell presented on a pedestal before Nazi officials",
@@ -29741,11 +29730,11 @@ export default {
             "marks": 12,
             "question": "Explain why the standard of living for German workers changed in the years 1933–1939. [12 marks]",
             "stimulus": [
-              "The German Labour Front (DAF) and KdF",
+              "The Labour Front, Strength Through Joy and Beauty of Labour",
               "The impact of rearmament and public works"
             ],
             "bullet_points": [
-              "The German Labour Front (DAF) and KdF",
+              "The Labour Front, Strength Through Joy and Beauty of Labour",
               "The impact of rearmament and public works"
             ],
             "model": "<p>One decisive reason living standards changed was <strong>the abolition of independent trade unions and the creation of the German Labour Front (DAF)</strong>. In May 1933, the Nazis banned all trade unions, replacing them with the state-run DAF under Robert Ley. While the DAF guaranteed jobs through Autobahns and rearmament, workers lost the right to strike, negotiate wages, or change jobs. Therefore, this altered living standards because they gained stable employment at the cost of losing all personal liberty and collective bargaining power.</p><p>Furthermore, living standards were altered by <strong>state-subsidized leisure programs like Strength Through Joy (Kraft durch Freude, KdF)</strong>. To maintain morale without raising wages, the DAF offered subsidized cruise holidays, cheap theatre tickets, and factory upgrades through 'Beauty of Labour'. Workers also paid into a savings scheme for the Volkswagen car. Therefore, this boosted living standards because extensive recreational benefits created a subjective feeling of social mobility and contentment among ordinary workers.</p><p>However, living standards deteriorated due to <strong>longer working hours, wage restrictions, and consumer shortages</strong>. Average weekly working hours climbed from 43 hours in 1933 to 47 hours in 1939 (and over 60 in arms plants). Real wages lagged behind 1928 levels when DAF dues and food costs were counted, with shortages of butter and meat. Therefore, this lowered living standards because workers endured longer, more grueling workdays with lower purchasing power to sustain the rearmament drive.</p>",
@@ -30459,7 +30448,7 @@ export default {
           "bullets": [
             "Kraft durch Freude (KdF)",
             "Subsidized cruises & theater",
-            "Volkswagen Beetle savings scheme"
+            "Beauty of Labour (SdA) & VW scheme"
           ],
           "writing_frame": {
             "connectives": "To compensate workers, the regime introduced... &bull; For example, KdF offered... &bull; This was designed to ensure... &bull; Furthermore,..."
@@ -30474,17 +30463,17 @@ export default {
               "type": "key_term"
             },
             {
-              "term": "Volkswagen Beetle savings scheme",
+              "term": "Beauty of Labour (SdA) & VW scheme",
               "type": "key_term"
             }
           ],
-          "model_sentence": "Worker loyalty was cultivated through the leisure division <strong>Kraft durch Freude (KdF)</strong> offering <strong>subsidized cruises & theater</strong> tickets, alongside the popular but unfulfilled <strong>Volkswagen Beetle savings scheme</strong>.",
+          "model_sentence": "Worker compliance was encouraged through <strong>Strength Through Joy (KdF)</strong> offering <strong>subsidised cruises & theatre</strong> alongside <strong>Beauty of Labour (SdA) & VW scheme</strong> promises.",
           "heading": "How did leisure schemes compensate workers for lost political rights?",
           "date": "1933–1939",
           "step": 4,
           "question": "How did leisure schemes compensate workers for lost political rights?",
           "questionHeading": "How did leisure schemes compensate workers for lost political rights?",
-          "prose_hash": "9d225fc96f"
+          "prose_hash": "7273f91fef"
         },
         {
           "stage": 5,
@@ -30571,14 +30560,14 @@ export default {
             "step": 4,
             "date": "1933–1939",
             "para_ref": "[4.1–4.2]",
-            "title": "Controlling Workers: The German Labour Front (DAF)",
+            "title": "Strength Through Joy (KdF) & Beauty of Labour (SdA)",
             "actor": "10m KdF Participants & DAF",
             "tag": "🚢 WILHELM GUSTLOFF CRUISES & KDF",
-            "trigger": "The DAF subsidized theatre trips, ocean cruises on the Wilhelm Gustloff, and the Volkswagen Beetle stamp scheme to pacify industrial workers.",
-            "desc": "The DAF subsidized theatre trips, ocean cruises on the Wilhelm Gustloff, and the Volkswagen Beetle stamp scheme to pacify industrial workers.",
+            "trigger": "Strength Through Joy (KdF) offered subsidised holidays and the unfulfilled Volkswagen scheme while Beauty of Labour (SdA) campaigned for cleaner factory canteens.",
+            "desc": "Strength Through Joy (KdF) offered subsidised holidays and the unfulfilled Volkswagen scheme while Beauty of Labour (SdA) campaigned for cleaner factory canteens.",
             "connective": "Compensated workers for frozen wages and lost civil rights with state-controlled leisure and consumer promises.",
             "question": "How did leisure schemes compensate workers for lost political rights?",
-            "prose_hash": "9d225fc96f"
+            "prose_hash": "7273f91fef"
           },
           {
             "step": 5,
@@ -30872,14 +30861,14 @@ export default {
           },
           {
             "badge": "Stage 4",
-            "heading": "Strength Through Joy & VW",
+            "heading": "KdF & Beauty of Labour",
             "date": "1933–1939",
             "img": "/images/kdf_emblem_symbol_1938.png",
             "mode": "contain-light",
             "stat": "5 Marks/Week VW Scheme • Zero Cars Ever Delivered",
-            "html": "Ley’s <strong>Strength Through Joy (KdF)</strong> ran subsidised theatre trips, sports, and cruises. Workers paid 5 marks a week into the <strong>Volkswagen car scheme</strong>, yet factories switched to war in 1939 and <strong>nobody got a car</strong>.",
-            "spoken": "Cheap leisure perks kept German workers content. <short pause> Ley’s Strength Through Joy (KdF) ran subsidised theatre trips, sports, and cruises. Workers paid 5 marks a week into the Volkswagen car scheme , yet factories switched to war in 1939 and nobody got a car .",
-            "paired_prose_hash": "9d225fc96f",
+            "html": "<strong>Strength Through Joy (KdF)</strong> ran cheap trips and the unfulfilled <strong>Volkswagen scheme</strong>, while <strong>Beauty of Labour (SdA)</strong> upgraded canteens—often built unpaid.",
+            "spoken": "Cheap leisure perks kept German workers content. <short pause> Strength Through Joy (KdF) ran cheap trips and the unfulfilled Volkswagen scheme, while Beauty of Labour (SdA) upgraded canteens, often built unpaid.",
+            "paired_prose_hash": "7273f91fef",
             "connective": "Cheap leisure perks kept German workers content."
           },
           {
@@ -31071,19 +31060,19 @@ export default {
           },
           {
             "misconception": "Jewish people were the sole group targeted by Nazi racial and biological persecution between 1933 and 1939.",
-            "correction": "Grounded in Social Darwinism and 'racial hygiene' (Source A), the pre-war regime also confined Roma families in municipal internment camps like Marzahn, jailed over 15,000 gay men under Paragraph 175, and forcibly sterilised over 400,000 disabled citizens before authorising covert T4 euthanasia killings in 1939."
+            "correction": "Grounded in Social Darwinism and racial hygiene (Source A), harsh pre-war treatment of minority groups branded Slavs subhuman, confined Roma and Sinti families in municipal internment camps like Berlin-Marzahn, jailed over 15,000 homosexuals under Paragraph 175, and forcibly sterilised ~400,000 people with disabilities via Hereditary Health Courts under the July 1933 law."
           }
         ],
         "send_adaptation": "Anchor the pre-war chronological ceiling immediately using the Block 1 Concept Diagram ('Escalation of Anti-Jewish Persecution: Exclusion, Stripped Rights, State Terror'), Visual Story Sheet, and Studio Audio read-aloud. Walk through the Workbook Verso 5-Stage Chronological Spine so learners lock in 1933 (Boycott/Civil Service), 1935 (Nuremberg Laws), 1933–39 (Minorities/Eugenics), Nov 1938 (Kristallnacht), and 1938–39 (Aryanisation & Forced Emigration).",
         "stretch_challenge": "Challenge Grade 8–9 learners in Q3(d) to evaluate competing historiographical interpretations of Kristallnacht (November 1938): how far was the pogrom purely a top-down party operation directed by Goebbels and Heydrich (Source D) versus an event enabled by widespread public complicity, bystander silence, and opportunistic participation (Source E)?",
-        "safeguarding_impartiality": "Teach the escalation of antisemitic persecution, internment of Roma and gay men, forced sterilisation and T4 murder of disabled people, and the terror of Kristallnacht with solemn historical gravity, rejecting Nazi racial terminology ('Untermenschen') as pseudoscientific dehumanisation and never asking pupils to role-play perpetrators or victims."
+        "safeguarding_impartiality": "Teach the escalation of antisemitic persecution, internment of Roma and Sinti and homosexuals, forced sterilisation of people with disabilities, and the terror of Kristallnacht with solemn historical gravity, rejecting Nazi racial terminology ('Untermenschen') as pseudoscientific dehumanisation and never asking pupils to role-play perpetrators or victims."
       },
       "learning_objectives": {
         "overarching": "To understand the key concepts of this topic.",
         "scaffolded": [
           "Demonstrate precise knowledge of Nazi racial ideology, distinguishing between 'Untermenschen' and 'Asocials'.",
           "Analyse the escalating stages of anti-Semitic persecution: from early boycotts (1933) to legislation (1935), bureaucratic dehumanisation (1938), and state-sponsored violence.",
-          "Evaluate the brutal methods used against the disabled, Roma/Sinti, and homosexuals, including the Marzahn camp, sterilisation, and the T4 programme."
+          "Evaluate Nazi racial beliefs and the treatment of minority groups—Slavs, Roma and Sinti, homosexuals, and people with disabilities—including Berlin-Marzahn internment, Paragraph 175, and the July 1933 Sterilisation Law."
         ]
       },
       "do_now": {
@@ -31093,7 +31082,7 @@ export default {
           {
             "stage": 1,
             "question": "What do the initials RAD stand for in English?",
-            "answer": "National Labour Service",
+            "answer": "Reich Labour Service (National Labour Service)",
             "explanation": "On 2 May 1933, the day after celebrating May Day as a national holiday, SA and SS stormtroopers raided union offices nationwide, arresting officials and confiscating bank assets."
           },
           {
@@ -31140,9 +31129,9 @@ export default {
           },
           {
             "stage": 4,
-            "question": "In May 1933, what did Hitler ban to gain control over the workers?",
-            "answer": "Trade Unions",
-            "explanation": "To reconcile workers to lost trade union rights and long hours, Robert Ley established Kraft durch Freude (KdF), or Strength Through Joy."
+            "question": "Alongside Strength Through Joy (KdF), which DAF campaign improved factory canteens, lighting, and washrooms (often built unpaid by workers)?",
+            "answer": "Beauty of Labour (Schönheit der Arbeit / SdA)",
+            "explanation": "Inside the German Labour Front (DAF), Strength Through Joy (KdF) ran subsidised leisure while Beauty of Labour (SdA) campaigned for cleaner factory canteens and washrooms."
           },
           {
             "stage": 5,
@@ -31394,10 +31383,10 @@ export default {
         {
           "id": "block_3",
           "decimal": "[4.4.3]",
-          "title": "Biological Purity: Persecuting Roma, Homosexuals and the Disabled (1933–1939)",
-          "text": "<span class=\"para-ref\">[3.1]</span> Grounded in **Social Darwinism**, the Nazi racial state persecuted other minorities deemed \"unfit\". Hundreds of Roma families were rounded up into enclosed municipal internment camps like **Marzahn** before deportation to concentration camps. Under Paragraph 175, over 15,000 gay men were jailed in camps wearing **pink** triangles.\n\n<span class=\"para-ref\">[3.2]</span> Disabled and mentally ill citizens suffered murderous persecution too. After 400,000 forced sterilisations under the 1933 law, Hitler secretly authorised **the Euthanasia T4 program** in 1939. Doctors murdered disabled children and adults using lethal injections and carbon monoxide gas chambers.",
+          "title": "Biological Purity: Treatment of Minority Groups — Slavs, Roma & Sinti, Homosexuals and Disabled People (1933–1939)",
+          "text": "<span class=\"para-ref\">[3.1]</span> Grounded in **Social Darwinism** and eugenics, Nazi racial beliefs drove harsh **treatment of minority groups** excluded from the Aryan *Volksgemeinschaft*. Propaganda branded Eastern European **Slavs** as subhuman future labourers, while **Roma and Sinti** families were registered on racial indexes, barred from Aryan marriage, and rounded into guarded municipal internment camps like Berlin-**Marzahn** from 1936 before concentration camp detention.\n\n<span class=\"para-ref\">[3.2]</span> Under tightened **Paragraph 175** laws, police arrested tens of thousands of **homosexuals** as threats to the German birth rate, jailing over 15,000 gay men in concentration camps wearing **pink** triangles. Simultaneously, targeting **people with disabilities**, the **July 1933 Law for the Prevention of Hereditarily Diseased Offspring** empowered **Hereditary Health Courts** to forcibly sterilise around **400,000** citizens diagnosed with hereditary deafness, blindness, epilepsy, or mental illness.",
           "image_alt": "c. 1937 Neues Volk propaganda poster of the NSDAP Office of Racial Policy reading '60 000 RM kostet dieser Erbkranke die Volksgemeinschaft auf Lebenszeit' beside a doctor and a disabled patient",
-          "caption": "NSDAP Office of Racial Policy Poster in Neues Volk ('60,000 RM', c. 1937): Dehumanising propaganda told 'Volksgenossen' (racial comrades) that caring for one person with a hereditary disability cost 60,000 Reichsmarks—conditioning public opinion for 400,000 forced sterilisations and the secret 1939 Action T4 murders alongside the internment of Roma and Sinti at Marzahn and gay men under Paragraph 175.",
+          "caption": "NSDAP Office of Racial Policy Poster in Neues Volk ('60,000 RM', c. 1937): Dehumanising propaganda told 'Volksgenossen' (racial comrades) that caring for one person with a hereditary disability cost 60,000 Reichsmarks—conditioning public opinion for ~400,000 forced sterilisations via Hereditary Health Courts alongside the internment of Roma and Sinti at Marzahn and homosexuals under Paragraph 175.",
           "theme_heading": "The Wider Racial Terror",
           "sources": [
             {
@@ -31426,12 +31415,12 @@ export default {
             }
           ],
           "paragraphs": [
-            "<span class=\"para-ref\">[3.1]</span> The racial state targeted all minority groups deemed biologically inferior or socially unproductive. Systematic **Roma Gypsy persecution** escalated rapidly, with hundreds deported to enclosed municipal internment camps like Marzahn before transfer to concentration camps. Under Paragraph 175, thousands endured **pink triangle homosexual arrests**, resulting in over fifteen thousand men being imprisoned in concentration camps, where they were subjected to forced labor and medical experiments.",
-            "<span class=\"para-ref\">[3.2]</span> The disabled and mentally ill suffered the most murderous persecution. Under the 1933 Sterilisation Law, four hundred thousand individuals were forcibly sterilized. In 1939, this culminated in the **Euthanasia T4 program origins**, where Hitler authorized doctors to murder mentally and physically disabled children and adults by lethal injection and carbon monoxide gas chambers, pioneering industrial killing methods later used in the Holocaust."
+            "<span class=\"para-ref\">[3.1]</span> Grounded in **Social Darwinism** and eugenics, Nazi racial beliefs drove harsh **treatment of minority groups** excluded from the Aryan *Volksgemeinschaft*. Propaganda branded Eastern European **Slavs** as subhuman future labourers, while **Roma and Sinti** families were registered on racial indexes, barred from Aryan marriage, and rounded into guarded municipal internment camps like Berlin-**Marzahn** from 1936 before concentration camp detention.",
+            "<span class=\"para-ref\">[3.2]</span> Under tightened **Paragraph 175** laws, police arrested tens of thousands of **homosexuals** as threats to the German birth rate, jailing over 15,000 gay men in concentration camps wearing **pink** triangles. Simultaneously, targeting **people with disabilities**, the **July 1933 Law for the Prevention of Hereditarily Diseased Offspring** empowered **Hereditary Health Courts** to forcibly sterilise around **400,000** citizens diagnosed with hereditary deafness, blindness, epilepsy, or mental illness."
           ],
-          "content": "<span class=\"para-ref\">[3.1]</span> Grounded in **Social Darwinism**, the Nazi racial state persecuted other minorities deemed \"unfit\". Hundreds of Roma families were rounded up into enclosed municipal internment camps like **Marzahn** before deportation to concentration camps. Under Paragraph 175, over 15,000 gay men were jailed in camps wearing **pink** triangles.\n\n<span class=\"para-ref\">[3.2]</span> Disabled and mentally ill citizens suffered murderous persecution too. After 400,000 forced sterilisations under the 1933 law, Hitler secretly authorised **the Euthanasia T4 program** in 1939. Doctors murdered disabled children and adults using lethal injections and carbon monoxide gas chambers.",
+          "content": "<span class=\"para-ref\">[3.1]</span> Grounded in **Social Darwinism** and eugenics, Nazi racial beliefs drove harsh **treatment of minority groups** excluded from the Aryan *Volksgemeinschaft*. Propaganda branded Eastern European **Slavs** as subhuman future labourers, while **Roma and Sinti** families were registered on racial indexes, barred from Aryan marriage, and rounded into guarded municipal internment camps like Berlin-**Marzahn** from 1936 before concentration camp detention.\n\n<span class=\"para-ref\">[3.2]</span> Under tightened **Paragraph 175** laws, police arrested tens of thousands of **homosexuals** as threats to the German birth rate, jailing over 15,000 gay men in concentration camps wearing **pink** triangles. Simultaneously, targeting **people with disabilities**, the **July 1933 Law for the Prevention of Hereditarily Diseased Offspring** empowered **Hereditary Health Courts** to forcibly sterilise around **400,000** citizens diagnosed with hereditary deafness, blindness, epilepsy, or mental illness.",
           "act": 3,
-          "act_title": "Stage 3: Persecution of Roma, Homosexuals & The Disabled",
+          "act_title": "Stage 3: Treatment of Minority Groups (1933–39)",
           "image": "/images/weimar_nazi_germany/kt4/wng_kt4_l16_b2_neues_volk_60000rm_1937.jpg"
         },
         {
@@ -31758,17 +31747,17 @@ export default {
         },
         {
           "stage": 3,
-          "question": "Under which secret 1939 program did Hitler authorize doctors to murder mentally and physically disabled children and adults?",
-          "q": "Under which secret 1939 program did Hitler authorize doctors to murder mentally and physically disabled children and adults?",
+          "question": "Under which July 1933 law did Nazi Hereditary Health Courts order the forced sterilisation of around 400,000 people with disabilities?",
+          "q": "Under which July 1933 law did Nazi Hereditary Health Courts order the forced sterilisation of around 400,000 people with disabilities?",
           "options": [
-            "The Lebensborn maternity program",
-            "The Strength Through Joy scheme",
-            "The Marriage Loan Act",
-            "The Euthanasia T4 program"
+            "The Lebensborn Maternity Programme",
+            "The Strength Through Joy Scheme",
+            "The Law for the Encouragement of Marriage",
+            "The Law for the Prevention of Hereditarily Diseased Offspring"
           ],
-          "answer": "The Euthanasia T4 program",
-          "a": "The Euthanasia T4 program",
-          "explanation": "Authorized in 1939, the secret T4 euthanasia program murdered disabled patients by lethal injection and carbon monoxide gas chambers."
+          "answer": "The Law for the Prevention of Hereditarily Diseased Offspring",
+          "a": "The Law for the Prevention of Hereditarily Diseased Offspring",
+          "explanation": "Enacted in July 1933, the Law for the Prevention of Hereditarily Diseased Offspring set up Hereditary Health Courts that forcibly sterilised ~400,000 disabled citizens."
         },
         {
           "stage": 4,
@@ -31828,17 +31817,17 @@ export default {
         },
         {
           "stage": 5,
-          "question": "What is the exact date of Kristallnacht?",
-          "q": "What is the exact date of Kristallnacht?",
+          "question": "What collective financial punishment did Hermann Göring impose on Germany's Jewish community immediately after Kristallnacht?",
+          "q": "What collective financial punishment did Hermann Göring impose on Germany's Jewish community immediately after Kristallnacht?",
           "options": [
-            "9 November 1923",
-            "1-2 September 1939",
-            "9-10 November 1938",
-            "30 June 1934"
+            "He required Jewish families to fund the rebuilding of the Reichstag",
+            "He seized their insurance payouts and imposed a 1 billion mark fine",
+            "He raised their income tax by 10% to pay for the 1936 Olympics",
+            "He forced Jewish banks to lend money to the SA at zero interest"
           ],
-          "answer": "9-10 November 1938",
-          "a": "9-10 November 1938",
-          "explanation": "Over half of Germany’s Jewish population fled before borders closed in September 1939."
+          "answer": "He seized their insurance payouts and imposed a 1 billion mark fine",
+          "a": "He seized their insurance payouts and imposed a 1 billion mark fine",
+          "explanation": "Adding economic ruin to state-sponsored violence, Göring blamed German Jews for the Kristallnacht destruction, confiscated their insurance payouts, and levied a punitive 1 billion mark fine."
         },
         {
           "stage": 5,
@@ -32515,7 +32504,7 @@ export default {
               "The Nuremberg Laws (1935)",
               "The events of Kristallnacht (1938)"
             ],
-            "model": "<p>One decisive catalyst for the escalation of persecution was <strong>the institutionalization of racial laws, notably the Nuremberg Laws of September 1935</strong>. Rooted in Hitler's racial ideology that Jews were biological parasites infecting the Aryan Volk, the Reich Citizenship Act stripped German Jews of their citizenship, voting rights, and legal protection under the state, reducing them to second-class 'subjects'. Concurrently, the Law for the Protection of German Blood and German Honour banned marriages and sexual relations between Jews and German citizens. This transformed social antisemitism into formal statutory law, paving the way for total exclusion from German society.</p><p>Furthermore, persecution escalated into massive state-sponsored violence during <strong>the Kristallnacht pogrom of 9–10 November 1938</strong>. Following the assassination of a German diplomat in Paris by a young Polish Jew, Goebbels orchestrated a nationwide wave of terror. Over 1,000 synagogues were burned, 7,000 Jewish businesses looted, 91 Jews murdered, and 30,000 Jewish men arrested and sent to concentration camps. The Nazi regime then imposed a collective fine of 1 billion marks on the Jewish community to pay for the damage, barred Jews from German schools and universities, and forced the 'Aryanization' of all remaining Jewish businesses.</p><p>Finally, escalation was driven by <strong>the radicalization of Nazi policy toward forced emigration and racial hygiene programs</strong>. In early 1939, Reinhard Heydrich was put in charge of the Central Office for Jewish Emigration to violently expel all Jews from the Reich. Meanwhile, the regime expanded persecution to other minority groups outside the *Volksgemeinschaft*: forcibly sterilizing 350,000 people under the 1933 Prevention of Hereditarily Diseased Offspring Act, persecuting Roma and Sinti Gypsies, and launching the secret T4 euthanasia program in 1939 to murder mentally and physically disabled children.</p>"
+            "model": "<p>One decisive catalyst for the escalation of persecution was <strong>the institutionalization of racial laws, notably the Nuremberg Laws of September 1935</strong>. Rooted in Hitler's racial ideology that Jews were biological parasites infecting the Aryan Volk, the Reich Citizenship Act stripped German Jews of their citizenship, voting rights, and legal protection under the state, reducing them to second-class 'subjects'. Concurrently, the Law for the Protection of German Blood and German Honour banned marriages and sexual relations between Jews and German citizens. This transformed social antisemitism into formal statutory law, paving the way for total exclusion from German society.</p><p>Furthermore, persecution escalated into massive state-sponsored violence during <strong>the Kristallnacht pogrom of 9–10 November 1938</strong>. Following the assassination of a German diplomat in Paris by a young Polish Jew, Goebbels orchestrated a nationwide wave of terror. Over 1,000 synagogues were burned, 7,000 Jewish businesses looted, 91 Jews murdered, and 30,000 Jewish men arrested and sent to concentration camps. The Nazi regime then imposed a collective fine of 1 billion marks on the Jewish community to pay for the damage, barred Jews from German schools and universities, and forced the 'Aryanization' of all remaining Jewish businesses.</p><p>Finally, escalation was driven by <strong>the radicalization of Nazi policy toward forced emigration and racial hygiene programs</strong>. In early 1939, Reinhard Heydrich was put in charge of the Central Office for Jewish Emigration to violently expel all Jews from the Reich. Meanwhile, the regime expanded persecution to other minority groups outside the *Volksgemeinschaft*: forcibly sterilising around 400,000 people with disabilities via Hereditary Health Courts under the July 1933 Law for the Prevention of Hereditarily Diseased Offspring, interning Roma and Sinti families in camps such as Berlin-Marzahn, and imprisoning over 15,000 homosexuals under Paragraph 175.</p>"
           }
         ]
       },
@@ -32597,39 +32586,39 @@ export default {
         {
           "stage": 3,
           "dates": "1933–1938",
-          "title": "Persecution of Roma, Homosexuals & The Disabled",
-          "spec_focus": "Roma internment (Marzahn); Paragraph 175; pink triangle; sterilization and Aktion T4.",
-          "focus_clue": "How did racial hygiene theories target groups outside the racial community?",
+          "title": "Treatment of Minority Groups (1933–39)",
+          "spec_focus": "Treatment of minority groups: Slavs, Roma and Sinti (Marzahn camp), homosexuals (Paragraph 175), and people with disabilities (1933 Sterilisation Law).",
+          "focus_clue": "How did Nazi racial beliefs drive the treatment of minority groups?",
           "para_ref": "[3.1–3.2]",
           "bullets": [
-            "Roma Gypsy persecution",
-            "Pink triangle homosexual arrests",
-            "Euthanasia T4 program origins"
+            "Roma & Sinti internment (Marzahn)",
+            "Paragraph 175 homosexual arrests",
+            "1933 Sterilisation Law (~400,000)"
           ],
           "writing_frame": {
             "connectives": "Other minority groups were targeted through... &bull; In particular, the regime persecuted... &bull; This was justified using... &bull; Furthermore,..."
           },
           "words": [
             {
-              "term": "Roma Gypsy persecution",
+              "term": "Roma & Sinti internment (Marzahn)",
               "type": "key_term"
             },
             {
-              "term": "Pink triangle homosexual arrests",
+              "term": "Paragraph 175 homosexual arrests",
               "type": "key_term"
             },
             {
-              "term": "Euthanasia T4 program origins",
+              "term": "1933 Sterilisation Law (~400,000)",
               "type": "key_term"
             }
           ],
-          "model_sentence": "Nazi biological cleansing encompassed brutal <strong>Roma Gypsy persecution</strong>, widespread <strong>pink triangle homosexual arrests</strong> sent to concentration camps, and the sinister <strong>Euthanasia T4 program origins</strong> targeting disabled infants and patients.",
-          "heading": "How did forced sterilisation and the 1939 T4 program target minorities?",
+          "model_sentence": "Nazi biological persecution drove <strong>Roma & Sinti internment (Marzahn)</strong>, over 15,000 <strong>Paragraph 175 homosexual arrests</strong> in camps, and the <strong>1933 Sterilisation Law (~400,000)</strong> against people with disabilities.",
+          "heading": "How did Nazi racial beliefs drive the treatment of minority groups?",
           "date": "1933–1938",
           "step": 3,
-          "question": "How did forced sterilisation and the 1939 T4 program target minorities?",
-          "questionHeading": "How did forced sterilisation and the 1939 T4 program target minorities?",
-          "prose_hash": "f5289bd16a"
+          "question": "How did Nazi racial beliefs drive the treatment of minority groups?",
+          "questionHeading": "How did Nazi racial beliefs drive the treatment of minority groups?",
+          "prose_hash": "a3929d15d1"
         },
         {
           "stage": 4,
@@ -32740,14 +32729,14 @@ export default {
             "step": 3,
             "date": "1933–1938",
             "para_ref": "[3.1–3.2]",
-            "title": "The Nuremberg Laws & Biological Segregation",
+            "title": "Treatment of Minority Groups (1933–39)",
             "actor": "Himmler’s Police & Targeted Minorities",
             "tag": "🧬 RACIAL PURITY PERSECUTION",
-            "trigger": "Police interned Roma at Marzahn, sent homosexuals wearing pink triangles to camps, and compulsorily sterilized 300,000 citizens with disabilities.",
-            "desc": "Police interned Roma at Marzahn, sent homosexuals wearing pink triangles to camps, and compulsorily sterilized 300,000 citizens with disabilities.",
+            "trigger": "Police interned Roma and Sinti at Marzahn, jailed over 15,000 homosexuals under Paragraph 175, and forcibly sterilised ~400,000 people with disabilities via Hereditary Health Courts.",
+            "desc": "Police interned Roma and Sinti at Marzahn, jailed over 15,000 homosexuals under Paragraph 175, and forcibly sterilised ~400,000 people with disabilities via Hereditary Health Courts.",
             "connective": "Expanded state terror to eliminate any groups deemed biological or moral threats to the Aryan Volk.",
-            "question": "How did forced sterilisation and the 1939 T4 program target minorities?",
-            "prose_hash": "f5289bd16a"
+            "question": "How did Nazi racial beliefs drive the treatment of minority groups?",
+            "prose_hash": "a3929d15d1"
           },
           {
             "step": 4,
@@ -32792,8 +32781,8 @@ export default {
         },
         {
           "date": "1933–1938",
-          "title": "Persecution of Roma, Homosexuals & The Disabled",
-          "desc": "Police interned Roma at Marzahn, sent homosexuals wearing pink triangles to camps, and compulsorily sterilized 300,000 citizens with disabilities.",
+          "title": "Treatment of Minority Groups (1933–39)",
+          "desc": "Police interned Roma and Sinti at Marzahn, jailed over 15,000 homosexuals under Paragraph 175, and forcibly sterilised ~400,000 people with disabilities via Hereditary Health Courts.",
           "para_ref": "[3.1–3.2]"
         },
         {
@@ -32960,16 +32949,16 @@ export default {
           "a": "A state-orchestrated pogrom that destroyed over 1,000 synagogues, wrecked 7,000 Jewish shops, killed 91 Jews, and sent 30,000 to camps."
         },
         {
-          "term": "Prevention of Hereditarily Diseased Offspring Law (1933)",
-          "definition": "A law allowing compulsory sterilisation of individuals with alleged genetic conditions (including mental illness, epilepsy, deafness, blindness, and alcoholism); ~400,000 were sterilised.",
-          "q": "What was the 1933 Sterilisation Law?",
-          "a": "A law legalizing the forced sterilisation of around 400,000 citizens diagnosed with alleged hereditary illnesses or disabilities."
+          "term": "July 1933 Law for the Prevention of Hereditarily Diseased Offspring",
+          "definition": "Nazi racial-hygiene law empowering Hereditary Health Courts to order the compulsory sterilisation of ~400,000 people with disabilities or alleged hereditary illnesses (including epilepsy, deafness, blindness, and mental illness).",
+          "q": "What did the July 1933 Law for the Prevention of Hereditarily Diseased Offspring enforce?",
+          "a": "Compulsory sterilisation of around 400,000 citizens with disabilities or alleged hereditary conditions, ordered by Nazi Hereditary Health Courts."
         },
         {
-          "term": "Aktion T4 Euthanasia Programme",
-          "definition": "The clandestine Nazi programme begun in 1939 that murdered over 70,000 physically disabled and mentally ill German children and adults using carbon monoxide gas.",
-          "q": "What was the secret Aktion T4 programme?",
-          "a": "The secret Nazi euthanasia programme that murdered over 70,000 disabled and mentally ill Germans in specialised gas chambers."
+          "term": "Paragraph 175 (Persecution of Homosexuals)",
+          "definition": "Criminal statute tightened by the Nazis in 1935 to prosecute homosexual men as threats to the Aryan birth rate; over 15,000 gay men were sent to concentration camps wearing pink triangles.",
+          "q": "How were homosexuals persecuted in Nazi Germany between 1933 and 1939?",
+          "a": "Under tightened Paragraph 175 laws, police arrested tens of thousands of homosexual men and imprisoned over 15,000 in concentration camps wearing pink triangles."
         },
         {
           "term": "Persecution of the Roma and Sinti",
@@ -32988,8 +32977,8 @@ export default {
           "answer": "The Reich Citizenship Law stripped Jews of German citizenship, and the Blood Protection Law banned marriages and sexual relations between Jews and Aryans."
         },
         {
-          "question": "According to paragraph [3.1], what other minority groups were targeted by Nazi racial hygiene policies?",
-          "answer": "Romani people, homosexuals, Jehovah's Witnesses, and mentally or physically disabled citizens subjected to forced sterilization."
+          "question": "According to paragraphs [3.1]–[3.2], how did Nazi racial policies govern the treatment of minority groups besides Jewish people?",
+          "answer": "Slavs were branded subhuman, Roma and Sinti families were interned in camps like Berlin-Marzahn, over 15,000 homosexuals were jailed under Paragraph 175, and ~400,000 people with disabilities suffered forced sterilisation."
         },
         {
           "question": "Using paragraph [4.1], what occurred during the Kristallnacht pogrom on 9–10 November 1938?",
@@ -33022,8 +33011,8 @@ export default {
             "mode": "landscape",
             "pos": "center 35%",
             "stat": "1 Apr 1933 Shop Boycott • 7 Apr Civil Service Ban",
-            "html": "Preaching Aryan <strong><em>Herrenvolk</em> supremacy</strong> over “subhumans”, SA men staged a nationwide <strong>boycott of Jewish shops</strong> on 1 April 1933. Six days later, the <strong>Civil Service Act</strong> sacked Jewish judges and teachers.",
-            "spoken": "How did Nazi persecution escalate from boycotts to terror? <short pause> Preaching Aryan Herrenvolk supremacy over “subhumans”, SA men staged a nationwide boycott of Jewish shops on the first of April 1933. Six days later, the Civil Service Act sacked Jewish judges and teachers.",
+            "html": "Branding Jews and <strong>Slavs</strong> “subhumans”, SA men staged the <strong>1 April 1933 boycott of Jewish shops and businesses</strong> before purging civil servants.",
+            "spoken": "How did Nazi persecution escalate from boycotts to terror? <short pause> Branding Jews and Slavs “subhumans”, SA men staged the 1 April 1933 boycott of Jewish shops and businesses before purging civil servants.",
             "paired_prose_hash": "f66122edfd",
             "connective": "How did Nazi persecution escalate from boycotts to terror?"
           },
@@ -33041,14 +33030,14 @@ export default {
           },
           {
             "badge": "Stage 3",
-            "heading": "Roma, Gays & Disabled Targeted",
+            "heading": "Treatment of Minority Groups",
             "date": "1933–1939",
             "img": "/images/weimar_individuals/heinrich_himmler.jpg",
             "mode": "contain",
             "stat": "Roma Camps • 15,000+ Gay Men Jailed • Sterilisation",
-            "html": "<strong>Roma families</strong> were forced into guarded camps from 1936, <strong>15,000+ gay men</strong> were jailed under Paragraph 175, and <strong>over 400,000 disabled people</strong> suffered forced sterilisation.",
-            "spoken": "Nazi racial hygiene persecuted other minorities too. <short pause> Roma families were forced into guarded camps from 1936, 15,000+ gay men were jailed under Paragraph 175, and over 400,000 disabled people suffered forced sterilisation.",
-            "paired_prose_hash": "f5289bd16a",
+            "html": "Harsh <strong>treatment of minority groups</strong> forced <strong>Roma and Sinti</strong> into camps, jailed 15,000+ <strong>homosexuals</strong> under Paragraph 175, and sterilised <strong>400,000 disabled people</strong>.",
+            "spoken": "Nazi racial hygiene persecuted other minorities too. <short pause> Harsh treatment of minority groups forced Roma and Sinti into camps, jailed over 15,000 homosexuals under Paragraph 175, and sterilised 400,000 disabled people.",
+            "paired_prose_hash": "a3929d15d1",
             "connective": "Nazi racial hygiene persecuted other minorities too."
           },
           {

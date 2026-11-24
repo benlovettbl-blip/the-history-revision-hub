@@ -775,6 +775,16 @@ export default defineConfig({
               priority: 75,
             },
             {
+              name: 'blurt-past-bank',
+              test: /src[\\/](blurt_past_papers_curriculum|blurt_past_papers_cold_war)\.js/,
+              priority: 73,
+            },
+            {
+              name: 'blurt-topics-bank',
+              test: /src[\\/]blurt_topics_curriculum\.js/,
+              priority: 72,
+            },
+            {
               name: 'arena-corners',
               test: /src[\\/]engine[\\/]arena_corners/,
               priority: 70,

@@ -1,0 +1,119 @@
+{
+  "description": "Canonical registry mapping every exam-board curriculum unit (Edexcel 1HI0, AQA 8145, OCR, Eduqas, iGCSE, A-Level) to its official specification JSON in public/data/specifications/. Any GCSE/KS4/iGCSE/A-Level unit in data/*.json MUST have an entry here.",
+  "units": {
+    "cme_new": {
+      "examBoard": "Pearson Edexcel GCSE (9-1) History (1HI0)",
+      "code": "P5",
+      "specFile": "paper2_p5_middle_east.json",
+      "skipLesson0": true
+    },
+    "gcse_cold_war": {
+      "examBoard": "Pearson Edexcel GCSE (9-1) History (1HI0)",
+      "code": "P4",
+      "specFile": "paper2_p4_superpower_cold_war.json",
+      "skipLesson0": false
+    },
+    "edexcel_medicine": {
+      "examBoard": "Pearson Edexcel GCSE (9-1) History (1HI0)",
+      "code": "11",
+      "specFile": "paper1_11_medicine_britain.json",
+      "skipLesson0": false,
+      "metaSkillTopics": ["KT5:2"]
+    },
+    "eee": {
+      "examBoard": "Pearson Edexcel GCSE (9-1) History (1HI0)",
+      "code": "B4",
+      "specFile": "paper2_b4_early_elizabethan_england.json",
+      "skipLesson0": false
+    },
+    "weimar_nazi_germany": {
+      "examBoard": "Pearson Edexcel GCSE (9-1) History (1HI0)",
+      "code": "31",
+      "specFile": "paper3_31_weimar_nazi_germany.json",
+      "skipLesson0": false
+    },
+    "usa": {
+      "examBoard": "Pearson Edexcel GCSE (9-1) History (1HI0)",
+      "code": "33",
+      "specFile": "paper3_33_usa_conflict_home_abroad.json",
+      "skipLesson0": false
+    },
+    "crime_punishment": {
+      "examBoard": "Pearson Edexcel GCSE (9-1) History (1HI0)",
+      "code": "10",
+      "specFile": "paper1_10_crime_punishment.json",
+      "skipLesson0": false,
+      "futureOption": true
+    },
+    "warfare_british_society": {
+      "examBoard": "Pearson Edexcel GCSE (9-1) History (1HI0)",
+      "code": "12",
+      "specFile": "paper1_12_warfare_british_society.json",
+      "skipLesson0": false,
+      "futureOption": true
+    },
+    "migrants_britain": {
+      "examBoard": "Pearson Edexcel GCSE (9-1) History (1HI0)",
+      "code": "13",
+      "specFile": "paper1_13_migrants_britain.json",
+      "skipLesson0": false,
+      "futureOption": true
+    },
+    "anglo_saxon_norman": {
+      "examBoard": "Pearson Edexcel GCSE (9-1) History (1HI0)",
+      "code": "B1",
+      "specFile": "paper2_b1_anglo_saxon_norman.json",
+      "skipLesson0": false,
+      "futureOption": true
+    },
+    "richard_and_john": {
+      "examBoard": "Pearson Edexcel GCSE (9-1) History (1HI0)",
+      "code": "B2",
+      "specFile": "paper2_b2_richard_and_john.json",
+      "skipLesson0": false,
+      "futureOption": true
+    },
+    "henry_viii_ministers": {
+      "examBoard": "Pearson Edexcel GCSE (9-1) History (1HI0)",
+      "code": "B3",
+      "specFile": "paper2_b3_henry_viii_ministers.json",
+      "skipLesson0": false,
+      "futureOption": true
+    },
+    "spain_new_world": {
+      "examBoard": "Pearson Edexcel GCSE (9-1) History (1HI0)",
+      "code": "P1",
+      "specFile": "paper2_p1_spain_new_world.json",
+      "skipLesson0": false,
+      "futureOption": true
+    },
+    "british_america": {
+      "examBoard": "Pearson Edexcel GCSE (9-1) History (1HI0)",
+      "code": "P2",
+      "specFile": "paper2_p2_british_america.json",
+      "skipLesson0": false,
+      "futureOption": true
+    },
+    "american_west": {
+      "examBoard": "Pearson Edexcel GCSE (9-1) History (1HI0)",
+      "code": "P3",
+      "specFile": "paper2_p3_american_west.json",
+      "skipLesson0": false,
+      "futureOption": true
+    },
+    "russia_soviet_union": {
+      "examBoard": "Pearson Edexcel GCSE (9-1) History (1HI0)",
+      "code": "30",
+      "specFile": "paper3_30_russia_soviet_union.json",
+      "skipLesson0": false,
+      "futureOption": true
+    },
+    "maos_china": {
+      "examBoard": "Pearson Edexcel GCSE (9-1) History (1HI0)",
+      "code": "32",
+      "specFile": "paper3_32_maos_china.json",
+      "skipLesson0": false,
+      "futureOption": true
+    }
+  }
+}

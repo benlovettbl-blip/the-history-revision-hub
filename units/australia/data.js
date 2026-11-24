@@ -3785,17 +3785,17 @@ export default {
         },
         {
           "stage": 3,
-          "question": "On what date in 1788 did the First Fleet raise the flag at Sydney Cove to found New South Wales?",
-          "q": "On what date in 1788 did the First Fleet raise the flag at Sydney Cove to found New South Wales?",
+          "question": "What key advantages led Governor Arthur Phillip to establish the permanent settlement at Sydney Cove inside Port Jackson?",
+          "q": "What key advantages led Governor Arthur Phillip to establish the permanent settlement at Sydney Cove inside Port Jackson?",
           "options": [
-            "22 June 1948",
-            "26 January 1788",
-            "3 December 1854",
-            "5 March 1770"
+            "Large alluvial goldfields discovered near the beach",
+            "Deep-water anchorages in a sheltered natural harbour alongside a reliable fresh water stream",
+            "Rich dark farmland already cleared and planted with English wheat",
+            "Existing stone forts built earlier by Dutch explorers"
           ],
-          "answer": "26 January 1788",
-          "a": "26 January 1788",
-          "explanation": "On 26 January 1788, marines cleared eucalyptus trees and raised the British flag at Sydney Cove."
+          "answer": "Deep-water anchorages in a sheltered natural harbour alongside a reliable fresh water stream",
+          "a": "Deep-water anchorages in a sheltered natural harbour alongside a reliable fresh water stream",
+          "explanation": "Unlike swampy, exposed Botany Bay, Port Jackson offered deep-water anchorages and a fresh water stream at Sydney Cove, making it suitable for founding New South Wales."
         },
         {
           "stage": 4,
@@ -9162,17 +9162,17 @@ export default {
         },
         {
           "stage": 3,
-          "question": "On what date did British redcoats storm the Eureka Stockade in Ballarat?",
-          "q": "On what date did British redcoats storm the Eureka Stockade in Ballarat?",
+          "question": "Although the Eureka Stockade rebellion was crushed in fifteen minutes, why is it remembered as a turning point in Australian history?",
+          "q": "Although the Eureka Stockade rebellion was crushed in fifteen minutes, why is it remembered as a turning point in Australian history?",
           "options": [
-            "3 December 1854",
-            "26 January 1788",
-            "26 January 1938",
-            "10 May 1857"
+            "It persuaded the British government to close all goldfields at Ballarat and Bendigo",
+            "It immediately granted Native Title and full citizenship to First Nations Australians",
+            "Public sympathy for the miners forced authorities to abolish mining licences and introduce democratic reforms",
+            "The miners defeated the redcoats and declared Victoria an independent republic"
           ],
-          "answer": "3 December 1854",
-          "a": "3 December 1854",
-          "explanation": "At dawn on 3 December 1854, nearly three hundred redcoats and police stormed the wooden Eureka Stockade."
+          "answer": "Public sympathy for the miners forced authorities to abolish mining licences and introduce democratic reforms",
+          "a": "Public sympathy for the miners forced authorities to abolish mining licences and introduce democratic reforms",
+          "explanation": "Even though the redcoats crushed the stockade in 15 minutes, overwhelming public support forced Victorian authorities to scrap mining licences and introduce the secret ballot and universal suffrage."
         },
         {
           "stage": 3,

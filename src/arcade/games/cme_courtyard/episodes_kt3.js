@@ -511,9 +511,9 @@ export const KT3_EPISODES = [
         introSpeaker: 'Noa Aloni-Mizrahi (marching with Avi and young son Yonatan in Tel Aviv)',
         introText:
           '“Sharon’s 1982 invasion of Lebanon drove the PLO out to distant Tunis—yet when Lebanese Christian militiamen massacred refugees at Sabra and Shatila, four hundred thousand Israelis filled this square demanding moral accountability.”',
-        clippingTitle: '1982 Lebanon Invasion, Sabra & Shatila / Kahan Commission & “Iron Fist” Strain',
+        clippingTitle: 'Israeli Reprisals, 1982 Lebanon Invasion, Sabra & Shatila & “Iron Fist” Strain',
         clippingBody:
-          'Following Abu Nidal’s London shooting of ambassador Shlomo Argov, Israel’s June 1982 invasion of Lebanon besieged Beirut and evacuated 14,000 PLO fighters to Tunis. After allied Phalangist militiamen massacred Palestinian civilians at Sabra and Shatila (Sept 1982), mass Peace Now protests forced the Kahan Commission (removing Ariel Sharon as Defence Minister), while Hezbollah rose in southern Lebanon and 1987–88 Intifada TV images strained IDF morale.',
+          'After years of cross-border PLO raids from Lebanon and escalating Israeli reprisals (including Operation Litani in 1978), Abu Nidal’s London shooting of ambassador Shlomo Argov triggered Israel’s June 1982 invasion of Lebanon, besieging Beirut and evacuating 14,000 PLO fighters to Tunis. After allied Phalangist militiamen massacred Palestinian civilians at Sabra and Shatila (Sept 1982), mass Peace Now protests forced the Kahan Commission (removing Ariel Sharon as Defence Minister), while Hezbollah rose in southern Lebanon and 1987–88 Intifada TV images strained IDF morale.',
         hotspots: [
           {
             id: 'peace_now_family_1982',

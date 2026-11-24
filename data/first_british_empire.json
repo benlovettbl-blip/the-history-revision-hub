@@ -1475,17 +1475,17 @@
       "quiz": [
         {
           "stage": 1,
-          "question": "On what date did Queen Elizabeth I grant an exclusive royal monopoly charter to the East India Company?",
-          "q": "On what date did Queen Elizabeth I grant an exclusive royal monopoly charter to the East India Company?",
+          "question": "Why did 218 London merchants pool £68,000 under Queen Elizabeth I's 1600 royal charter?",
+          "q": "Why did 218 London merchants pool £68,000 under Queen Elizabeth I's 1600 royal charter?",
           "options": [
-            "On 5 March 1770",
-            "On New Year’s Eve in 1600",
-            "On 23 June 1757",
-            "On 16 December 1773"
+            "To fund a permanent royal navy to conquer the Mughal capital immediately",
+            "To build free public hospitals across coastal ports in India",
+            "To purchase American tobacco plantations from Spanish rivals",
+            "To gain an exclusive monopoly and huge private profits from Asian spice and cotton trade"
           ],
-          "answer": "On New Year’s Eve in 1600",
-          "a": "On New Year’s Eve in 1600",
-          "explanation": "Queen Elizabeth I signed the East India Company’s founding royal charter on New Year’s Eve in 1600."
+          "answer": "To gain an exclusive monopoly and huge private profits from Asian spice and cotton trade",
+          "a": "To gain an exclusive monopoly and huge private profits from Asian spice and cotton trade",
+          "explanation": "Queen Elizabeth I's royal monopoly charter allowed London merchants to send armed galleons to Asia, returning with pepper and cotton for profits of over 300%."
         },
         {
           "stage": 1,
@@ -1671,17 +1671,17 @@
         },
         {
           "stage": 4,
-          "question": "On what date in 1757 was the decisive Battle of Plassey fought in Bengal?",
-          "q": "On what date in 1757 was the decisive Battle of Plassey fought in Bengal?",
+          "question": "Why was Robert Clive able to defeat Nawab Siraj ud-Daulah's much larger army at the Battle of Plassey in 1757?",
+          "q": "Why was Robert Clive able to defeat Nawab Siraj ud-Daulah's much larger army at the Battle of Plassey in 1757?",
           "options": [
-            "5 March 1770",
-            "19 October 1781",
-            "31 December 1600",
-            "23 June 1757"
+            "Mir Jafar's bribed divisions stood motionless while British gunpowder stayed dry under tarpaulins during a monsoon downpour",
+            "The Mughal Emperor marched from Delhi to fight alongside Clive's British soldiers",
+            "Siraj ud-Daulah surrendered Fort William without firing a single cannon",
+            "British warships sailed inland to bombard the Nawab's camp"
           ],
-          "answer": "23 June 1757",
-          "a": "23 June 1757",
-          "explanation": "On 23 June 1757 at Plassey, Clive’s artillery shattered Siraj ud-Daulah’s forces amid Mir Jafar’s betrayal."
+          "answer": "Mir Jafar's bribed divisions stood motionless while British gunpowder stayed dry under tarpaulins during a monsoon downpour",
+          "a": "Mir Jafar's bribed divisions stood motionless while British gunpowder stayed dry under tarpaulins during a monsoon downpour",
+          "explanation": "Outnumbered, Clive secured victory at Plassey through Mir Jafar's betrayal and by protecting British gunpowder from the heavy monsoon rain that soaked Siraj's exposed powder."
         },
         {
           "stage": 4,
@@ -7472,17 +7472,17 @@
         },
         {
           "stage": 3,
-          "question": "On what date did British soldiers fire into a crowd on Boston’s icy King Street during the Boston Massacre?",
-          "q": "On what date did British soldiers fire into a crowd on Boston’s icy King Street during the Boston Massacre?",
+          "question": "What immediately triggered panicked British soldiers to open fire on colonists during the 1770 Boston Massacre?",
+          "q": "What immediately triggered panicked British soldiers to open fire on colonists during the 1770 Boston Massacre?",
           "options": [
-            "16 December 1773",
-            "23 June 1757",
-            "5 March 1770",
-            "19 October 1781"
+            "Colonists attempted to sink three British tea ships in Boston Harbour",
+            "A hostile crowd surrounded a sentry post, pelting the soldiers with snowballs, ice, and oyster shells while daring them to fire",
+            "The Sons of Liberty opened fire on the British barracks with captured cannons",
+            "King George III sent written orders from London to shoot protesters in Boston"
           ],
-          "answer": "5 March 1770",
-          "a": "5 March 1770",
-          "explanation": "On 5 March 1770, panicked British redcoats fired on a hostile crowd on King Street in Boston."
+          "answer": "A hostile crowd surrounded a sentry post, pelting the soldiers with snowballs, ice, and oyster shells while daring them to fire",
+          "a": "A hostile crowd surrounded a sentry post, pelting the soldiers with snowballs, ice, and oyster shells while daring them to fire",
+          "explanation": "In the confusion of being surrounded and pelted with ice and oyster shells on King Street, panicked redcoats fired their muskets, killing five colonists."
         },
         {
           "stage": 3,

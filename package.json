@@ -97,6 +97,8 @@
     "generate:boosters": "node scripts/generate_overdue_revision_sheets.cjs",
     "prepare": "husky",
     "audit:language": "node scripts/audit_gcse_language.cjs",
+    "audit:spec-lock": "node scripts/audit_gcse_spec_word_lock.cjs",
+    "audit:spec-lock:strict": "node scripts/audit_gcse_spec_word_lock.cjs --strict",
     "checklist:sync": "node scripts/sync_upgrade_checklist_docx.cjs",
     "checklist:done": "node scripts/sync_upgrade_checklist_docx.cjs --complete"
   },

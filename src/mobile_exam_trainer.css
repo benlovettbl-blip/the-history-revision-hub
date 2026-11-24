@@ -1747,6 +1747,190 @@
   }
 }
 
+/* Desktop & Hub-Embedded Layout Enhancements (>= 933px) */
+@media (min-width: 933px) {
+  .met-root.is-hub-embedded {
+    max-width: 1160px;
+    padding: 0 0 36px;
+  }
+  .met-root.is-hub-embedded .met-sticky-deck {
+    position: static;
+    margin: 0 0 14px;
+    padding: 12px 14px;
+    border: 1.5px solid #e2e8f0;
+    border-radius: 12px;
+    background: #f8fafc;
+  }
+  .met-kt-grid-wrap {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 14px;
+    align-items: start;
+  }
+  .met-kt-grid-wrap .met-kt-card {
+    margin-bottom: 0;
+  }
+  .met-sources-grid.has-multiple-sources {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    align-items: stretch;
+  }
+  .met-sources-grid.has-multiple-sources .met-source-box {
+    margin-top: 0;
+  }
+}
+
+/* Addition #1: Second-Half Stem Highlighter & Trap Warning */
+.met-stem-topic {
+  background: rgba(37, 99, 235, 0.11);
+  color: #1e3a8a;
+  padding: 1px 6px;
+  border-radius: 5px;
+  border-bottom: 2px solid #3b82f6;
+  font-weight: 800;
+}
+
+.met-stem-lens {
+  background: rgba(217, 119, 6, 0.14);
+  color: #92400e;
+  padding: 1px 6px;
+  border-radius: 5px;
+  border-bottom: 2px solid #f59e0b;
+  font-weight: 800;
+}
+
+.met-stem-trap-note {
+  margin: -2px 0 8px;
+  padding: 6px 10px;
+  border-radius: 8px;
+  background: #fffbeb;
+  border: 1px solid #fde68a;
+  color: #92400e;
+  font-size: 0.77rem;
+  font-weight: 600;
+  line-height: 1.38;
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+}
+
+/* Addition #2: Date-Fence Guardrail Pill */
+.met-date-fence-bar {
+  margin: 0 0 10px;
+  padding: 6px 10px;
+  border-radius: 8px;
+  background: #f8fafc;
+  border: 1px solid #cbd5e1;
+  font-size: 0.75rem;
+  line-height: 1.38;
+  color: #334155;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px 10px;
+}
+
+.met-df-badge {
+  background: #0f172a;
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 0.7rem;
+  padding: 2px 7px;
+  border-radius: 999px;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+
+.met-df-in {
+  color: #065f46;
+  font-weight: 700;
+}
+
+.met-df-out {
+  color: #991b1b;
+  font-weight: 700;
+}
+
+/* Active Paper Slot / Weak-Topic Filter Banner */
+.met-active-slot-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+  background: #eff6ff;
+  border: 1.5px solid #93c5fd;
+  border-radius: 10px;
+  padding: 8px 12px;
+  margin-bottom: 12px;
+  font-size: 0.82rem;
+  color: #1e3a8a;
+  font-weight: 700;
+}
+
+.met-slot-clear-btn {
+  background: #ffffff;
+  color: #1e3a8a;
+  border: 1px solid #60a5fa;
+  border-radius: 7px;
+  padding: 4px 10px;
+  font-size: 0.76rem;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+[data-theme='space'] .met-root.is-hub-embedded .met-sticky-deck,
+[data-theme='dark'] .met-root.is-hub-embedded .met-sticky-deck {
+  background: #0f172a;
+  border-color: #334155;
+}
+
+[data-theme='space'] .met-stem-topic,
+[data-theme='dark'] .met-stem-topic {
+  background: rgba(59, 130, 246, 0.24);
+  color: #bfdbfe;
+  border-bottom-color: #60a5fa;
+}
+
+[data-theme='space'] .met-stem-lens,
+[data-theme='dark'] .met-stem-lens {
+  background: rgba(245, 158, 11, 0.24);
+  color: #fde68a;
+  border-bottom-color: #fbbf24;
+}
+
+[data-theme='space'] .met-stem-trap-note,
+[data-theme='dark'] .met-stem-trap-note {
+  background: rgba(245, 158, 11, 0.14);
+  border-color: rgba(251, 191, 36, 0.4);
+  color: #fde68a;
+}
+
+[data-theme='space'] .met-date-fence-bar,
+[data-theme='dark'] .met-date-fence-bar {
+  background: #0f172a;
+  border-color: #334155;
+  color: #cbd5e1;
+}
+
+[data-theme='space'] .met-df-in,
+[data-theme='dark'] .met-df-in {
+  color: #6ee7b7;
+}
+
+[data-theme='space'] .met-df-out,
+[data-theme='dark'] .met-df-out {
+  color: #fca5a5;
+}
+
+[data-theme='space'] .met-active-slot-banner,
+[data-theme='dark'] .met-active-slot-banner {
+  background: rgba(37, 99, 235, 0.18);
+  border-color: #3b82f6;
+  color: #dbeafe;
+}
+
 @media (max-width: 932.98px) and (orientation: landscape) and (max-height: 480px) {
   .met-sticky-deck {
     position: static;

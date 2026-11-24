@@ -1,0 +1,2418 @@
+{
+  "unitId": "cme_new",
+  "schemaVersion": "v8-4ring-cards",
+  "optionCode": "1HI0/P5",
+  "paperType": "Paper 2P",
+  "paperLabel": "Paper 2 · Booklet P (Period Study)",
+  "courseTitle": "Conflict in the Middle East, 1945–95",
+  "examDateBoundary": "1945–1995",
+  "disclaimer": "Aligned to Pearson Edexcel GCSE (9–1) History (1HI0). Independent educational resource — not endorsed by Pearson.",
+  "contextBoundaryNote": "Pre-1945 events (McMahon–Hussein, Sykes–Picot, Balfour Declaration, and the 1939 White Paper) are background context only; Edexcel Option P5 strictly examines 1945–95.",
+  "root": {
+    "id": "root",
+    "tier": 0,
+    "label": "Middle East, 1945–95",
+    "subLabel": "Edexcel Option P5",
+    "dateChip": "1945–95",
+    "gloss": "Fifty years of Arab–Israeli conflict, superpower rivalry, and peace diplomacy from Britain's postwar Mandate crisis to the 1993–95 Oslo Accords.",
+    "children": [
+      {
+        "id": "kt1",
+        "keyTopicNumber": 1,
+        "tier": 1,
+        "side": "left",
+        "color": "#2563eb",
+        "label": "KT1: Birth of Israel",
+        "dateChip": "1945–63",
+        "lessonIndex": 1,
+        "stageIndex": 0,
+        "searchTerm": "British Mandate",
+        "gloss": "Key topic 1: The birth of the state of Israel, 1945–63 — British withdrawal, the 1948–49 Arab–Israeli war and Palestinian Arab refugees, plus Nasser and the 1956 Suez Crisis.",
+        "children": [
+          {
+            "id": "kt1_1",
+            "code": "1.1",
+            "tier": 2,
+            "label": "1.1 British Withdrawal & Israel",
+            "dateChip": "1945–49",
+            "lessonIndex": 1,
+            "stageIndex": 0,
+            "searchTerm": "British Mandate",
+            "q2Chain": "Conflicting Mandate demands & Zionist insurgency (1945–47) → UN Resolution 181 partition & British withdrawal → Declaration of Israel & 1948–49 Arab–Israeli War",
+            "gloss": "Q2 Narrative Chain: Conflicting Mandate demands & Zionist insurgency (1945–47) → UN Resolution 181 partition & British withdrawal → Declaration of Israel & 1948–49 Arab–Israeli War.",
+            "children": [
+              {
+                "id": "kt1_1_s1",
+                "tier": 3,
+                "label": "Jewish & Arab Mandate Demands",
+                "dateChip": "1945–46",
+                "lessonIndex": 1,
+                "stageIndex": 0,
+                "searchTerm": "British Mandate",
+                "gloss": "Conflicting interests and demands of Jews and Arabs within the British Mandate clashed over postwar Holocaust refugee immigration and majority-rule Arab independence.",
+                "children": [
+                  {
+                    "id": "kt1_1_s1_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "250,000 Holocaust Survivors in Europe",
+                    "detail": "Truman urged Britain to grant 100,000 immediate visas so displaced Jews could build a homeland.",
+                    "lessonIndex": 1,
+                    "stageIndex": 0,
+                    "searchTerm": "Displaced Persons",
+                    "gloss": "Truman urged Britain to grant 100,000 immediate visas so displaced Jews could build a homeland."
+                  },
+                  {
+                    "id": "kt1_1_s1_e1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Bevin Enforced 1,500 Monthly Quota",
+                    "detail": "Royal Navy patrols intercepted refugee ships so Britain would not alienate oil-rich Arab states.",
+                    "lessonIndex": 1,
+                    "stageIndex": 0,
+                    "searchTerm": "Ernest Bevin",
+                    "gloss": "Royal Navy patrols intercepted refugee ships so Britain would not alienate oil-rich Arab states."
+                  },
+                  {
+                    "id": "kt1_1_s1_q1",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "United Resistance Sabotage Campaign",
+                    "detail": "Haganah, Irgun, and Lehi jointly bombed Mandate railways, bridges, and coastal radar stations.",
+                    "lessonIndex": 1,
+                    "stageIndex": 1,
+                    "searchTerm": "United Resistance Movement",
+                    "gloss": "Haganah, Irgun, and Lehi jointly bombed Mandate railways, bridges, and coastal radar stations."
+                  },
+                  {
+                    "id": "kt1_1_s1_q2",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "100,000 British Soldiers Tied Down",
+                    "detail": "Policing Palestine and conducting Operation Agatha mass arrests drained Britain's bankrupt treasury.",
+                    "lessonIndex": 1,
+                    "stageIndex": 1,
+                    "searchTerm": "Operation Agatha",
+                    "gloss": "Policing Palestine and conducting Operation Agatha mass arrests drained Britain's bankrupt treasury."
+                  },
+                  {
+                    "id": "kt1_1_s1_i1",
+                    "tier": 4,
+                    "tag": "Importance",
+                    "label": "Trapped Britain Between USA & Arabs",
+                    "detail": "Arab demands for majority rule clashed with US visa pressure, leaving London no workable compromise.",
+                    "lessonIndex": 1,
+                    "stageIndex": 0,
+                    "searchTerm": "Ernest Bevin",
+                    "gloss": "Arab demands for majority rule clashed with US visa pressure, leaving London no workable compromise.",
+                    "forTheme": "US-UK Ties"
+                  }
+                ]
+              },
+              {
+                "id": "kt1_1_s2",
+                "tier": 3,
+                "label": "King David Hotel Bombing",
+                "dateChip": "July 1946",
+                "lessonIndex": 1,
+                "stageIndex": 2,
+                "searchTerm": "King David Hotel",
+                "gloss": "The bombing of the King David Hotel in Jerusalem on 22 July 1946 destroyed British military and civil headquarters, accelerating the end of the British Mandate.",
+                "children": [
+                  {
+                    "id": "kt1_1_s2_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Irgun Retaliation for Agatha Raids",
+                    "detail": "Menachem Begin's underground militia targeted British headquarters in Jerusalem after mass arrests.",
+                    "lessonIndex": 1,
+                    "stageIndex": 2,
+                    "searchTerm": "King David Hotel",
+                    "gloss": "Menachem Begin's underground militia targeted British headquarters in Jerusalem after mass arrests."
+                  },
+                  {
+                    "id": "kt1_1_s2_e1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Milk-Can Blast Killed 91 People",
+                    "detail": "Explosives hidden in the basement collapsed six floors housing Britain's military and civil offices.",
+                    "lessonIndex": 1,
+                    "stageIndex": 2,
+                    "searchTerm": "350 kilograms",
+                    "gloss": "Explosives hidden in the basement collapsed six floors housing Britain's military and civil offices."
+                  },
+                  {
+                    "id": "kt1_1_s2_q1",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "Haganah Broke Off Irgun Alliance",
+                    "detail": "Appalled by mass civilian deaths, Ben-Gurion split mainstream Zionist forces from extremist bombers.",
+                    "lessonIndex": 1,
+                    "stageIndex": 2,
+                    "searchTerm": "Haganah",
+                    "gloss": "Appalled by mass civilian deaths, Ben-Gurion split mainstream Zionist forces from extremist bombers."
+                  },
+                  {
+                    "id": "kt1_1_s2_q2",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "British Public Demanded Troop Exit",
+                    "detail": "Heavy casualties shocked MPs and voters in London, wrecking domestic support for staying in Palestine.",
+                    "lessonIndex": 1,
+                    "stageIndex": 2,
+                    "searchTerm": "King David Hotel",
+                    "gloss": "Heavy casualties shocked MPs and voters in London, wrecking domestic support for staying in Palestine."
+                  },
+                  {
+                    "id": "kt1_1_s2_i1",
+                    "tier": 4,
+                    "tag": "Importance",
+                    "label": "Proved Mandate Was Ungovernable",
+                    "detail": "Destroying Britain's command centre showed 100,000 troops could not defeat the insurgency by force.",
+                    "lessonIndex": 1,
+                    "stageIndex": 2,
+                    "searchTerm": "British Mandate",
+                    "gloss": "Destroying Britain's command centre showed 100,000 troops could not defeat the insurgency by force.",
+                    "forTheme": "Mandate End"
+                  }
+                ]
+              },
+              {
+                "id": "kt1_1_s3",
+                "tier": 3,
+                "label": "Sergeants Affair & SS Exodus",
+                "dateChip": "July 1947",
+                "lessonIndex": 1,
+                "stageIndex": 3,
+                "searchTerm": "Sergeants Affair",
+                "gloss": "In July 1947 the Sergeants Affair and Royal Navy interception of SS Exodus destroyed British domestic and international support for keeping the Mandate.",
+                "children": [
+                  {
+                    "id": "kt1_1_s3_e1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Irgun Hanged Two British Sergeants",
+                    "detail": "After three Irgun fighters were executed, militants abducted two army sergeants and mined their bodies.",
+                    "lessonIndex": 1,
+                    "stageIndex": 3,
+                    "searchTerm": "Sergeants Affair",
+                    "gloss": "After three Irgun fighters were executed, militants abducted two army sergeants and mined their bodies."
+                  },
+                  {
+                    "id": "kt1_1_s3_q1",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "Outrage & Riots Across British Cities",
+                    "detail": "Front-page photos of the hanged soldiers united press and Parliament behind quitting the Mandate.",
+                    "lessonIndex": 1,
+                    "stageIndex": 3,
+                    "searchTerm": "Netanya",
+                    "gloss": "Front-page photos of the hanged soldiers united press and Parliament behind quitting the Mandate."
+                  },
+                  {
+                    "id": "kt1_1_s3_q2",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "SS Exodus Survivors Sent to Germany",
+                    "detail": "Forcing 4,500 Holocaust refugees back to camps in British-run Germany ruined London's moral standing.",
+                    "lessonIndex": 1,
+                    "stageIndex": 4,
+                    "searchTerm": "SS Exodus",
+                    "gloss": "Forcing 4,500 Holocaust refugees back to camps in British-run Germany ruined London's moral standing."
+                  },
+                  {
+                    "id": "kt1_1_s3_i1",
+                    "tier": 4,
+                    "tag": "Importance",
+                    "label": "Sealed Britain's Withdrawal Decision",
+                    "detail": "Watched first-hand by UN investigators, these twin crises boosted global backing for partition.",
+                    "lessonIndex": 1,
+                    "stageIndex": 4,
+                    "searchTerm": "UNSCOP",
+                    "gloss": "Watched first-hand by UN investigators, these twin crises boosted global backing for partition.",
+                    "forTheme": "UN Handover"
+                  }
+                ]
+              },
+              {
+                "id": "kt1_1_s4",
+                "tier": 3,
+                "label": "UN Resolution 181 & Partition",
+                "dateChip": "Nov 1947–May 1948",
+                "lessonIndex": 1,
+                "stageIndex": 4,
+                "searchTerm": "UN Resolution 181",
+                "gloss": "After Britain referred the Mandate to the UN, UN Resolution 181 approved partition into Jewish and Arab states, leading directly to the creation of Israel.",
+                "children": [
+                  {
+                    "id": "kt1_1_s4_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Bankrupt Britain Handed Issue to UN",
+                    "detail": "Exhausted after World War Two, London asked the United Nations in February 1947 to decide Palestine.",
+                    "lessonIndex": 1,
+                    "stageIndex": 4,
+                    "searchTerm": "United Nations",
+                    "gloss": "Exhausted after World War Two, London asked the United Nations in February 1947 to decide Palestine."
+                  },
+                  {
+                    "id": "kt1_1_s4_e1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Nov 1947 Vote to Partition Palestine",
+                    "detail": "Resolution 181 gave 55% of the land to a Jewish state and placed Jerusalem under international rule.",
+                    "lessonIndex": 1,
+                    "stageIndex": 4,
+                    "searchTerm": "UN Resolution 181",
+                    "gloss": "Resolution 181 gave 55% of the land to a Jewish state and placed Jerusalem under international rule."
+                  },
+                  {
+                    "id": "kt1_1_s4_q1",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "Arab Rejection Sparked Civil War",
+                    "detail": "Jewish leaders accepted partition, while Palestinian Arabs fought losing half the country despite a majority.",
+                    "lessonIndex": 1,
+                    "stageIndex": 4,
+                    "searchTerm": "civil war",
+                    "gloss": "Jewish leaders accepted partition, while Palestinian Arabs fought losing half the country despite a majority."
+                  },
+                  {
+                    "id": "kt1_1_s4_q2",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "Israel Proclaimed on 14 May 1948",
+                    "detail": "Hours before British rule expired, Ben-Gurion declared independence and won rapid US-Soviet backing.",
+                    "lessonIndex": 2,
+                    "stageIndex": 0,
+                    "searchTerm": "State of Israel",
+                    "gloss": "Hours before British rule expired, Ben-Gurion declared independence and won rapid US-Soviet backing."
+                  },
+                  {
+                    "id": "kt1_1_s4_i1",
+                    "tier": 4,
+                    "tag": "Importance",
+                    "label": "Gave Legal Legitimacy for Statehood",
+                    "detail": "Rare joint voting by Washington and Moscow anchored Israel in international law from day one.",
+                    "lessonIndex": 1,
+                    "stageIndex": 4,
+                    "searchTerm": "UN Resolution 181",
+                    "gloss": "Rare joint voting by Washington and Moscow anchored Israel in international law from day one.",
+                    "forTheme": "Statehood"
+                  }
+                ]
+              },
+              {
+                "id": "kt1_1_s5",
+                "tier": 3,
+                "label": "1948–49 Arab–Israeli War",
+                "dateChip": "1948–49",
+                "lessonIndex": 2,
+                "stageIndex": 0,
+                "searchTerm": "Arab-Israeli War",
+                "gloss": "Key events of the Arab-Israeli war (1948–49) saw five Arab League states invade on 15 May 1948 before Israeli reorganization and Czech arms secured victory.",
+                "children": [
+                  {
+                    "id": "kt1_1_s5_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Five Divided Arab Armies Invaded",
+                    "detail": "Egypt, Syria, Jordan, Iraq, and Lebanon attacked on 15 May 1948, but rival war aims split their command.",
+                    "lessonIndex": 2,
+                    "stageIndex": 0,
+                    "searchTerm": "Arab League",
+                    "gloss": "Egypt, Syria, Jordan, Iraq, and Lebanon attacked on 15 May 1948, but rival war aims split their command."
+                  },
+                  {
+                    "id": "kt1_1_s5_e1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "June UN Truce & Czech Arms Airlift",
+                    "detail": "During a four-week ceasefire, Israel unified its army and imported vital Czech weapons and aircraft.",
+                    "lessonIndex": 2,
+                    "stageIndex": 1,
+                    "searchTerm": "Czech arms deal",
+                    "gloss": "During a four-week ceasefire, Israel unified its army and imported vital Czech weapons and aircraft."
+                  },
+                  {
+                    "id": "kt1_1_s5_q1",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "IDF Offensives Won Galilee & Negev",
+                    "detail": "Better-supplied Israeli brigades drove back Egyptian and Syrian troops while Jordan held the Old City.",
+                    "lessonIndex": 2,
+                    "stageIndex": 1,
+                    "searchTerm": "First Truce",
+                    "gloss": "Better-supplied Israeli brigades drove back Egyptian and Syrian troops while Jordan held the Old City."
+                  },
+                  {
+                    "id": "kt1_1_s5_q2",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "1949 Rhodes Armistice Agreements",
+                    "detail": "Separate UN-mediated truces ended fighting with four neighbours, yet every Arab state refused peace.",
+                    "lessonIndex": 2,
+                    "stageIndex": 3,
+                    "searchTerm": "Rhodes",
+                    "gloss": "Separate UN-mediated truces ended fighting with four neighbours, yet every Arab state refused peace."
+                  },
+                  {
+                    "id": "kt1_1_s5_i1",
+                    "tier": 4,
+                    "tag": "Importance",
+                    "label": "Secured Survival Without Recognition",
+                    "detail": "Victory saved the newborn Jewish state, but truce lines without treaties locked in decades of enmity.",
+                    "lessonIndex": 2,
+                    "stageIndex": 3,
+                    "searchTerm": "Arab-Israeli War",
+                    "gloss": "Victory saved the newborn Jewish state, but truce lines without treaties locked in decades of enmity.",
+                    "forTheme": "Arab Ties"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt1_2",
+            "code": "1.2",
+            "tier": 2,
+            "label": "1.2 Aftermath of 1948–49 War",
+            "dateChip": "1949–54",
+            "lessonIndex": 2,
+            "stageIndex": 2,
+            "searchTerm": "Green Line",
+            "q2Chain": "1949 Rhodes Green Line armistice & 700,000 refugees → IDF formation, 1950 Law of Return & US aid → Unresolved border raids & Egyptian hostility",
+            "gloss": "Q2 Narrative Chain: 1949 Rhodes Green Line armistice & 700,000 refugees → IDF formation, 1950 Law of Return & US aid → Unresolved border raids & Egyptian hostility.",
+            "children": [
+              {
+                "id": "kt1_2_s1",
+                "tier": 3,
+                "label": "Territorial Changes (Green Line)",
+                "dateChip": "1949",
+                "lessonIndex": 2,
+                "stageIndex": 3,
+                "searchTerm": "Green Line",
+                "gloss": "Territorial changes and their impact under the 1949 Green Line armistices left Israel holding 78% of Mandatory Palestine while Jordan and Egypt held the rest.",
+                "children": [
+                  {
+                    "id": "kt1_2_s1_e1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Israel Expanded to 78% of Mandate",
+                    "detail": "Ceasefire maps gave Israel 23% more territory than the 1947 UN partition plan had originally offered.",
+                    "lessonIndex": 2,
+                    "stageIndex": 3,
+                    "searchTerm": "78% of Mandatory Palestine",
+                    "gloss": "Ceasefire maps gave Israel 23% more territory than the 1947 UN partition plan had originally offered."
+                  },
+                  {
+                    "id": "kt1_2_s1_q1",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "Jordan Held West Bank & Old City",
+                    "detail": "Barbed wire divided Jerusalem as Israel governed the western half and Jordan annexed the eastern side.",
+                    "lessonIndex": 2,
+                    "stageIndex": 3,
+                    "searchTerm": "West Bank",
+                    "gloss": "Barbed wire divided Jerusalem as Israel governed the western half and Jordan annexed the eastern side."
+                  },
+                  {
+                    "id": "kt1_2_s1_q2",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "Proposed Arab State Never Emerged",
+                    "detail": "Egypt ran crowded Gaza under military rule without citizenship, leaving Palestinians with no country.",
+                    "lessonIndex": 2,
+                    "stageIndex": 3,
+                    "searchTerm": "stateless",
+                    "gloss": "Egypt ran crowded Gaza under military rule without citizenship, leaving Palestinians with no country."
+                  },
+                  {
+                    "id": "kt1_2_s1_i1",
+                    "tier": 4,
+                    "tag": "Importance",
+                    "label": "Vulnerable Borders Invited Clashes",
+                    "detail": "Left just nine miles wide near the West Bank, Israel answered cross-border infiltration with tough raids.",
+                    "lessonIndex": 2,
+                    "stageIndex": 3,
+                    "searchTerm": "fedayeen",
+                    "gloss": "Left just nine miles wide near the West Bank, Israel answered cross-border infiltration with tough raids.",
+                    "forTheme": "Border Clash"
+                  }
+                ]
+              },
+              {
+                "id": "kt1_2_s2",
+                "tier": 3,
+                "label": "Palestinian Arab Refugees",
+                "dateChip": "1948–50",
+                "lessonIndex": 2,
+                "stageIndex": 2,
+                "searchTerm": "Nakba",
+                "gloss": "The refugee status of Palestinian Arabs saw over 700,000 displaced in the Nakba into camps across Gaza, the West Bank, Jordan, Lebanon, and Syria.",
+                "children": [
+                  {
+                    "id": "kt1_2_s2_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Deir Yassin Panic & Village Flight",
+                    "detail": "Fears after the April 1948 massacre and IDF advances emptied over 400 Palestinian Arab villages.",
+                    "lessonIndex": 2,
+                    "stageIndex": 2,
+                    "searchTerm": "Deir Yassin",
+                    "gloss": "Fears after the April 1948 massacre and IDF advances emptied over 400 Palestinian Arab villages."
+                  },
+                  {
+                    "id": "kt1_2_s2_q1",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "700,000 Refugees in UNRWA Camps",
+                    "detail": "Displaced families crowded into tent settlements in Gaza, Jordan, Lebanon, and Syria on UN rations.",
+                    "lessonIndex": 2,
+                    "stageIndex": 2,
+                    "searchTerm": "UNRWA",
+                    "gloss": "Displaced families crowded into tent settlements in Gaza, Jordan, Lebanon, and Syria on UN rations."
+                  },
+                  {
+                    "id": "kt1_2_s2_q2",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "Israel Blocked Right of Return",
+                    "detail": "Defying UN calls for repatriation, Israeli leaders seized empty homes to protect a Jewish majority.",
+                    "lessonIndex": 2,
+                    "stageIndex": 2,
+                    "searchTerm": "Resolution 194",
+                    "gloss": "Defying UN calls for repatriation, Israeli leaders seized empty homes to protect a Jewish majority."
+                  },
+                  {
+                    "id": "kt1_2_s2_i1",
+                    "tier": 4,
+                    "tag": "Importance",
+                    "label": "Permanent Exile Fuelled Fedayeen",
+                    "detail": "Known to Palestinians as the Nakba, camp statelessness drove youths to join armed border fighters.",
+                    "lessonIndex": 2,
+                    "stageIndex": 2,
+                    "searchTerm": "Nakba",
+                    "gloss": "Known to Palestinians as the Nakba, camp statelessness drove youths to join armed border fighters.",
+                    "forTheme": "Palestinians"
+                  }
+                ]
+              },
+              {
+                "id": "kt1_2_s3",
+                "tier": 3,
+                "label": "IDF & Law of Return (1950)",
+                "dateChip": "1948–52",
+                "lessonIndex": 2,
+                "stageIndex": 4,
+                "searchTerm": "Law of Return",
+                "gloss": "Creation of the Israeli Defence Forces and the 1950 Law of Return doubled Israel’s population, while US aid to Israel kept the young state solvent.",
+                "children": [
+                  {
+                    "id": "kt1_2_s3_e1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Militias Unified Into Conscript IDF",
+                    "detail": "Compulsory military service and trained civilian reserves let outnumbered Israel mobilise within 48 hours.",
+                    "lessonIndex": 2,
+                    "stageIndex": 1,
+                    "searchTerm": "Israeli Defence Forces",
+                    "gloss": "Compulsory military service and trained civilian reserves let outnumbered Israel mobilise within 48 hours."
+                  },
+                  {
+                    "id": "kt1_2_s3_q1",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "Jewish Population Doubled by 1952",
+                    "detail": "Granting every Jew automatic citizenship brought survivors from Europe and Arab states to 1.4 million.",
+                    "lessonIndex": 2,
+                    "stageIndex": 4,
+                    "searchTerm": "Law of Return",
+                    "gloss": "Granting every Jew automatic citizenship brought survivors from Europe and Arab states to 1.4 million."
+                  },
+                  {
+                    "id": "kt1_2_s3_q2",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "Austerity Eased by $100m US Loans",
+                    "detail": "Housing hundreds of thousands of newcomers forced food rationing until American credit funded new towns.",
+                    "lessonIndex": 2,
+                    "stageIndex": 4,
+                    "searchTerm": "100 million",
+                    "gloss": "Housing hundreds of thousands of newcomers forced food rationing until American credit funded new towns."
+                  },
+                  {
+                    "id": "kt1_2_s3_i1",
+                    "tier": 4,
+                    "tag": "Importance",
+                    "label": "Built Lasting Military & US Lifeline",
+                    "detail": "Rapid immigration populated frontier settlements, expanded army reserves, and tied survival to US aid.",
+                    "lessonIndex": 2,
+                    "stageIndex": 4,
+                    "searchTerm": "Law of Return",
+                    "gloss": "Rapid immigration populated frontier settlements, expanded army reserves, and tied survival to US aid.",
+                    "forTheme": "US Backing"
+                  }
+                ]
+              },
+              {
+                "id": "kt1_2_s4",
+                "tier": 3,
+                "label": "US Aid & Relations with Egypt",
+                "dateChip": "1949–54",
+                "lessonIndex": 2,
+                "stageIndex": 3,
+                "searchTerm": "Suez Canal",
+                "gloss": "US aid to Israel strengthened the new state economically while Israel’s relations with Egypt deteriorated over Suez blockades and Gaza border raids.",
+                "children": [
+                  {
+                    "id": "kt1_2_s4_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "1948 Defeat Sparked Cairo Coup",
+                    "detail": "Humiliation in Palestine helped army officers topple Egypt's king in 1952 and harden hostility to Israel.",
+                    "lessonIndex": 2,
+                    "stageIndex": 3,
+                    "searchTerm": "Suez Canal",
+                    "gloss": "Humiliation in Palestine helped army officers topple Egypt's king in 1952 and harden hostility to Israel."
+                  },
+                  {
+                    "id": "kt1_2_s4_q1",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "Egypt Choked Suez & Tiran Shipping",
+                    "detail": "Cairo barred Israeli cargo from the canal and blockaded Eilat, throttling southern oil and Asian trade.",
+                    "lessonIndex": 3,
+                    "stageIndex": 1,
+                    "searchTerm": "Straits of Tiran",
+                    "gloss": "Cairo barred Israeli cargo from the canal and blockaded Eilat, throttling southern oil and Asian trade."
+                  },
+                  {
+                    "id": "kt1_2_s4_q2",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "Gaza Fedayeen Raids & IDF Strikes",
+                    "detail": "Palestinian guerrilla attacks from Egyptian-held territory triggered fierce Israeli army reprisals.",
+                    "lessonIndex": 3,
+                    "stageIndex": 0,
+                    "searchTerm": "fedayeen",
+                    "gloss": "Palestinian guerrilla attacks from Egyptian-held territory triggered fierce Israeli army reprisals."
+                  },
+                  {
+                    "id": "kt1_2_s4_i1",
+                    "tier": 4,
+                    "tag": "Importance",
+                    "label": "Made Egypt Israel's Chief Rival",
+                    "detail": "Sea blockades and deadly Gaza border clashes pushed Cairo and Tel Aviv steadily toward war by 1956.",
+                    "lessonIndex": 3,
+                    "stageIndex": 0,
+                    "searchTerm": "Gaza",
+                    "gloss": "Sea blockades and deadly Gaza border clashes pushed Cairo and Tel Aviv steadily toward war by 1956.",
+                    "forTheme": "Egypt Rivalry"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt1_3",
+            "code": "1.3",
+            "tier": 2,
+            "label": "1.3 Increased Tension, 1955–63",
+            "dateChip": "1955–63",
+            "lessonIndex": 3,
+            "stageIndex": 0,
+            "searchTerm": "Suez Crisis",
+            "q2Chain": "Nasser's rise & Israel's 1955 Gaza raid → Czech arms deal & July 1956 Suez Canal nationalisation → Sèvres plot, Suez Crisis & 1958 UAR",
+            "gloss": "Q2 Narrative Chain: Nasser's rise & Israel's 1955 Gaza raid → Czech arms deal & July 1956 Suez Canal nationalisation → Sèvres plot, Suez Crisis & 1958 UAR.",
+            "children": [
+              {
+                "id": "kt1_3_s1",
+                "tier": 3,
+                "label": "Nasser & Arab World Leadership",
+                "dateChip": "1954–55",
+                "lessonIndex": 3,
+                "stageIndex": 0,
+                "searchTerm": "Gamal Abdel Nasser",
+                "gloss": "Gamal Abdel Nasser asserted Egypt’s leadership of the Arab world through Pan-Arab nationalism, neutralism, and defiance of Western Cold War pacts.",
+                "children": [
+                  {
+                    "id": "kt1_3_s1_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Nasser's Pan-Arab Nationalist Appeal",
+                    "detail": "Cairo radio rallied millions across the region to throw off British bases and unite against Israel.",
+                    "lessonIndex": 3,
+                    "stageIndex": 0,
+                    "searchTerm": "Gamal Abdel Nasser",
+                    "gloss": "Cairo radio rallied millions across the region to throw off British bases and unite against Israel."
+                  },
+                  {
+                    "id": "kt1_3_s1_q1",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "Rejected Pro-Western Baghdad Pact",
+                    "detail": "Championing non-aligned Arab independence angered Britain and pushed Washington to pull Aswan Dam loans.",
+                    "lessonIndex": 3,
+                    "stageIndex": 1,
+                    "searchTerm": "Non-Aligned Movement",
+                    "gloss": "Championing non-aligned Arab independence angered Britain and pushed Washington to pull Aswan Dam loans."
+                  },
+                  {
+                    "id": "kt1_3_s1_q2",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "Sept 1955 Czech-Soviet Arms Deal",
+                    "detail": "Trading Egyptian cotton for Soviet jets and tanks broke Western arms limits and alarmed Israeli planners.",
+                    "lessonIndex": 3,
+                    "stageIndex": 1,
+                    "searchTerm": "Czech arms deal",
+                    "gloss": "Trading Egyptian cotton for Soviet jets and tanks broke Western arms limits and alarmed Israeli planners."
+                  },
+                  {
+                    "id": "kt1_3_s1_i1",
+                    "tier": 4,
+                    "tag": "Importance",
+                    "label": "Pulled Cold War Rivalry Into Region",
+                    "detail": "Turning to Moscow for modern weapons made the USSR a key Arab patron against Western-backed rivals.",
+                    "lessonIndex": 3,
+                    "stageIndex": 1,
+                    "searchTerm": "Cold War",
+                    "gloss": "Turning to Moscow for modern weapons made the USSR a key Arab patron against Western-backed rivals.",
+                    "forTheme": "Superpowers"
+                  }
+                ]
+              },
+              {
+                "id": "kt1_3_s2",
+                "tier": 3,
+                "label": "Attacks on Gaza (1955) & Sinai",
+                "dateChip": "1955–56",
+                "lessonIndex": 3,
+                "stageIndex": 0,
+                "searchTerm": "Operation Black Arrow",
+                "gloss": "Events and significance of Israeli attacks on Gaza in February 1955 and Sinai in October 1956 humiliated Egypt’s army and triggered open war.",
+                "children": [
+                  {
+                    "id": "kt1_3_s2_e1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Feb 1955 Gaza Raid Killed 38 Troops",
+                    "detail": "Israeli paratroopers struck an Egyptian army camp after border infiltrations, exposing Cairo's weakness.",
+                    "lessonIndex": 3,
+                    "stageIndex": 0,
+                    "searchTerm": "Operation Black Arrow",
+                    "gloss": "Israeli paratroopers struck an Egyptian army camp after border infiltrations, exposing Cairo's weakness."
+                  },
+                  {
+                    "id": "kt1_3_s2_e2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Oct 1956 IDF Sweep Across Sinai",
+                    "detail": "Moshe Dayan's paratroopers and tanks overran Gaza bases and reached Sharm el-Sheikh within days.",
+                    "lessonIndex": 3,
+                    "stageIndex": 3,
+                    "searchTerm": "Sinai Peninsula",
+                    "gloss": "Moshe Dayan's paratroopers and tanks overran Gaza bases and reached Sharm el-Sheikh within days."
+                  },
+                  {
+                    "id": "kt1_3_s2_q1",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "Gaza Shock Drove Arms & Blockade",
+                    "detail": "Stung by the 1955 raid, Nasser bought Soviet weapons, stepped up fedayeen attacks, and shut Tiran.",
+                    "lessonIndex": 3,
+                    "stageIndex": 1,
+                    "searchTerm": "Straits of Tiran",
+                    "gloss": "Stung by the 1955 raid, Nasser bought Soviet weapons, stepped up fedayeen attacks, and shut Tiran."
+                  },
+                  {
+                    "id": "kt1_3_s2_q2",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "UNEF Buffer Reopened Tiran Shipping",
+                    "detail": "Israel withdrew from Sinai in 1957 once UN peacekeepers guarded the border and Eilat sea lanes opened.",
+                    "lessonIndex": 3,
+                    "stageIndex": 4,
+                    "searchTerm": "UNEF",
+                    "gloss": "Israel withdrew from Sinai in 1957 once UN peacekeepers guarded the border and Eilat sea lanes opened."
+                  },
+                  {
+                    "id": "kt1_3_s2_i1",
+                    "tier": 4,
+                    "tag": "Importance",
+                    "label": "Proved IDF Speed & Won 10-Year Calm",
+                    "detail": "Victory crushed Gaza guerrilla bases and kept Egypt's southern border quiet until Nasser gambled in 1967.",
+                    "lessonIndex": 3,
+                    "stageIndex": 3,
+                    "searchTerm": "Sinai Peninsula",
+                    "gloss": "Victory crushed Gaza guerrilla bases and kept Egypt's southern border quiet until Nasser gambled in 1967.",
+                    "forTheme": "Border Security"
+                  }
+                ]
+              },
+              {
+                "id": "kt1_3_s3",
+                "tier": 3,
+                "label": "Suez Crisis (1956) & UAR (1958)",
+                "dateChip": "1956–58",
+                "lessonIndex": 3,
+                "stageIndex": 3,
+                "searchTerm": "Suez Crisis",
+                "gloss": "Events and significance of the Suez Crisis (1956), including the formation of the UAR in 1958, ended Anglo-French dominance and elevated Nasser.",
+                "children": [
+                  {
+                    "id": "kt1_3_s3_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Nasser Nationalised the Suez Canal",
+                    "detail": "After America cancelled Aswan High Dam funding in July 1956, Cairo seized canal tolls to pay for it.",
+                    "lessonIndex": 3,
+                    "stageIndex": 2,
+                    "searchTerm": "Aswan High Dam",
+                    "gloss": "After America cancelled Aswan High Dam funding in July 1956, Cairo seized canal tolls to pay for it."
+                  },
+                  {
+                    "id": "kt1_3_s3_e1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Secret Protocol of Sèvres Collusion",
+                    "detail": "Britain, France, and Israel plotted an IDF Sinai strike as an excuse for Anglo-French troops to land.",
+                    "lessonIndex": 3,
+                    "stageIndex": 3,
+                    "searchTerm": "Sèvres Agreement",
+                    "gloss": "Britain, France, and Israel plotted an IDF Sinai strike as an excuse for Anglo-French troops to land."
+                  },
+                  {
+                    "id": "kt1_3_s3_q1",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "Eisenhower Forced UK-French Retreat",
+                    "detail": "Threatening Britain's currency and loans, US pressure forced a humiliating ceasefire and Eden's exit.",
+                    "lessonIndex": 3,
+                    "stageIndex": 4,
+                    "searchTerm": "Dwight D. Eisenhower",
+                    "gloss": "Threatening Britain's currency and loans, US pressure forced a humiliating ceasefire and Eden's exit."
+                  },
+                  {
+                    "id": "kt1_3_s3_q2",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "Egypt & Syria Merged Into 1958 UAR",
+                    "detail": "Keeping the canal made Nasser an Arab hero, inspiring a three-year political union under Cairo's rule.",
+                    "lessonIndex": 3,
+                    "stageIndex": 4,
+                    "searchTerm": "United Arab Republic",
+                    "gloss": "Keeping the canal made Nasser an Arab hero, inspiring a three-year political union under Cairo's rule."
+                  },
+                  {
+                    "id": "kt1_3_s3_i1",
+                    "tier": 4,
+                    "tag": "Importance",
+                    "label": "Superpowers Replaced UK & France",
+                    "detail": "Anglo-French imperial clout collapsed, leaving Washington and Moscow competing to dominate the region.",
+                    "lessonIndex": 3,
+                    "stageIndex": 4,
+                    "searchTerm": "Suez Crisis",
+                    "gloss": "Anglo-French imperial clout collapsed, leaving Washington and Moscow competing to dominate the region.",
+                    "forTheme": "Superpowers"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "kt2",
+        "keyTopicNumber": 2,
+        "tier": 1,
+        "side": "right",
+        "color": "#7c3aed",
+        "label": "KT2: Escalating Conflict",
+        "dateChip": "1964–73",
+        "lessonIndex": 4,
+        "stageIndex": 0,
+        "searchTerm": "Six-Day War",
+        "gloss": "Key topic 2: The escalating conflict, 1964–73 — the 1964 Cairo Conference, 1967 Six-Day War, UN Resolution 242, occupied territories, PLO terrorism, and the 1973 Yom Kippur War.",
+        "children": [
+          {
+            "id": "kt2_1",
+            "code": "2.1",
+            "tier": 2,
+            "label": "2.1 The Six-Day War, 1967",
+            "dateChip": "1964–June 1967",
+            "lessonIndex": 4,
+            "stageIndex": 0,
+            "searchTerm": "Six-Day War",
+            "q2Chain": "1964 Cairo Conference, PLO, Syrian-backed Fatah raids, Samu & 7 April → May 1967 Soviet report, UNEF expelled & Tiran closed → Operation Focus & Six-Day Israeli victory",
+            "gloss": "Q2 Narrative Chain: 1964 Cairo Conference, PLO, Syrian-backed Fatah raids, Samu & 7 April → May 1967 Soviet report, UNEF expelled & Tiran closed → Operation Focus & Six-Day Israeli victory.",
+            "children": [
+              {
+                "id": "kt2_1_s1",
+                "tier": 3,
+                "label": "Cairo Conference (1964) & PLO",
+                "dateChip": "Jan 1964",
+                "lessonIndex": 4,
+                "stageIndex": 0,
+                "searchTerm": "Cairo Conference",
+                "gloss": "The Cairo Conference (1964) united Arab leaders against Israel’s National Water Carrier, backed headwater diversion, and created the PLO.",
+                "children": [
+                  {
+                    "id": "kt2_1_s1_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Dispute Over Jordan River Water",
+                    "detail": "Israel's new pipeline pumping Galilee water south to the Negev prompted Arab plans to divert headwaters.",
+                    "lessonIndex": 4,
+                    "stageIndex": 1,
+                    "searchTerm": "National Water Carrier",
+                    "gloss": "Israel's new pipeline pumping Galilee water south to the Negev prompted Arab plans to divert headwaters."
+                  },
+                  {
+                    "id": "kt2_1_s1_q1",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "PLO Founded in May 1964",
+                    "detail": "Summit leaders backed a formal Palestinian political body whose charter rejected Israel's right to exist.",
+                    "lessonIndex": 4,
+                    "stageIndex": 0,
+                    "searchTerm": "PLO",
+                    "gloss": "Summit leaders backed a formal Palestinian political body whose charter rejected Israel's right to exist."
+                  },
+                  {
+                    "id": "kt2_1_s1_q2",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "Unified Arab Military Command Set Up",
+                    "detail": "Nasser delayed premature war, yet joint defence pledges tied his prestige to protecting militant Syria.",
+                    "lessonIndex": 4,
+                    "stageIndex": 0,
+                    "searchTerm": "First Arab League Summit",
+                    "gloss": "Nasser delayed premature war, yet joint defence pledges tied his prestige to protecting militant Syria."
+                  },
+                  {
+                    "id": "kt2_1_s1_i1",
+                    "tier": 4,
+                    "tag": "Importance",
+                    "label": "Gave Voice Yet Spurred Rival Fatah",
+                    "detail": "Egyptian control over the early PLO frustrated Yasser Arafat, whose fighters began raids in January 1965.",
+                    "lessonIndex": 4,
+                    "stageIndex": 0,
+                    "searchTerm": "Cairo Conference",
+                    "gloss": "Egyptian control over the early PLO frustrated Yasser Arafat, whose fighters began raids in January 1965.",
+                    "forTheme": "PLO & Fatah"
+                  }
+                ]
+              },
+              {
+                "id": "kt2_1_s2",
+                "tier": 3,
+                "label": "Syria, Fatah, Samu & 7 April",
+                "dateChip": "1965–Apr 1967",
+                "lessonIndex": 4,
+                "stageIndex": 3,
+                "searchTerm": "Samu",
+                "gloss": "Escalating tension between Israel, Syria and Jordan grew through Syria’s support for Fatah, Israel’s raid on Samu, and the air battle of 7 April 1967.",
+                "children": [
+                  {
+                    "id": "kt2_1_s2_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Syria Sheltered Fatah Guerrillas",
+                    "detail": "Damascus armed Arafat's saboteurs and shelled northern farms from the Golan Heights to drag Arabs to war.",
+                    "lessonIndex": 4,
+                    "stageIndex": 2,
+                    "searchTerm": "Fatah",
+                    "gloss": "Damascus armed Arafat's saboteurs and shelled northern farms from the Golan Heights to drag Arabs to war."
+                  },
+                  {
+                    "id": "kt2_1_s2_e1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Nov 1966 IDF Raid on Samu Village",
+                    "detail": "After a landmine killed three Israelis, tanks flattened West Bank homes and killed Jordanian soldiers.",
+                    "lessonIndex": 4,
+                    "stageIndex": 3,
+                    "searchTerm": "Samu",
+                    "gloss": "After a landmine killed three Israelis, tanks flattened West Bank homes and killed Jordanian soldiers."
+                  },
+                  {
+                    "id": "kt2_1_s2_q1",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "Six Syrian MiGs Downed (7 Apr 1967)",
+                    "detail": "Border clashes escalated into an aerial dogfight that publicly humiliated Damascus's Soviet-armed air force.",
+                    "lessonIndex": 4,
+                    "stageIndex": 4,
+                    "searchTerm": "7 April 1967",
+                    "gloss": "Border clashes escalated into an aerial dogfight that publicly humiliated Damascus's Soviet-armed air force."
+                  },
+                  {
+                    "id": "kt2_1_s2_q2",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "Panic Activated Cairo-Syria Pact",
+                    "detail": "Fearing a full Israeli assault after losing six jets, Syrian leaders begged Moscow and Nasser to step in.",
+                    "lessonIndex": 4,
+                    "stageIndex": 4,
+                    "searchTerm": "Golan Heights",
+                    "gloss": "Fearing a full Israeli assault after losing six jets, Syrian leaders begged Moscow and Nasser to step in."
+                  },
+                  {
+                    "id": "kt2_1_s2_i1",
+                    "tier": 4,
+                    "tag": "Importance",
+                    "label": "Pushed Hussein & Nasser Toward War",
+                    "detail": "West Bank riots after Samu forced moderate Jordan to align with Egypt when crisis erupted in May 1967.",
+                    "lessonIndex": 4,
+                    "stageIndex": 3,
+                    "searchTerm": "King Hussein",
+                    "gloss": "West Bank riots after Samu forced moderate Jordan to align with Egypt when crisis erupted in May 1967.",
+                    "forTheme": "1967 War Path"
+                  }
+                ]
+              },
+              {
+                "id": "kt2_1_s3",
+                "tier": 3,
+                "label": "USSR, Nasser & USA Before War",
+                "dateChip": "May 1967",
+                "lessonIndex": 5,
+                "stageIndex": 0,
+                "searchTerm": "Straits of Tiran",
+                "gloss": "Actions of the USSR, Nasser and the USA in May 1967 escalated from a false Soviet intelligence warning to closing the Straits of Tiran.",
+                "children": [
+                  {
+                    "id": "kt2_1_s3_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "False Soviet Invasion Warning (May)",
+                    "detail": "Moscow wrongly told Cairo that Israeli brigades were massing against Syria, daring Nasser to respond.",
+                    "lessonIndex": 5,
+                    "stageIndex": 0,
+                    "searchTerm": "false intelligence",
+                    "gloss": "Moscow wrongly told Cairo that Israeli brigades were massing against Syria, daring Nasser to respond."
+                  },
+                  {
+                    "id": "kt2_1_s3_e1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "UNEF Expelled & Tiran Closed (May)",
+                    "detail": "Nasser marched 100,000 troops into Sinai, removed UN peacekeepers, and blocked Eilat shipping lanes.",
+                    "lessonIndex": 5,
+                    "stageIndex": 0,
+                    "searchTerm": "Straits of Tiran",
+                    "gloss": "Nasser marched 100,000 troops into Sinai, removed UN peacekeepers, and blocked Eilat shipping lanes."
+                  },
+                  {
+                    "id": "kt2_1_s3_q1",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "Jordan Joined Egypt's Defence Pact",
+                    "detail": "King Hussein placed his army under Egyptian command on 30 May while US naval diplomacy stalled.",
+                    "lessonIndex": 5,
+                    "stageIndex": 1,
+                    "searchTerm": "Joint Defence Pact",
+                    "gloss": "King Hussein placed his army under Egyptian command on 30 May while US naval diplomacy stalled."
+                  },
+                  {
+                    "id": "kt2_1_s3_q2",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "Moshe Dayan Named Defence Minister",
+                    "detail": "Encircled on three borders, Israel formed a unity cabinet ready to strike before Arab armies attacked.",
+                    "lessonIndex": 5,
+                    "stageIndex": 1,
+                    "searchTerm": "Moshe Dayan",
+                    "gloss": "Encircled on three borders, Israel formed a unity cabinet ready to strike before Arab armies attacked."
+                  },
+                  {
+                    "id": "kt2_1_s3_i1",
+                    "tier": 4,
+                    "tag": "Importance",
+                    "label": "Made Pre-Emptive Strike Inevitable",
+                    "detail": "Closing Eilat crossed Israel's 1957 red line while hesitant Washington failed to reopen the waterway.",
+                    "lessonIndex": 5,
+                    "stageIndex": 0,
+                    "searchTerm": "Straits of Tiran",
+                    "gloss": "Closing Eilat crossed Israel's 1957 red line while hesitant Washington failed to reopen the waterway.",
+                    "forTheme": "Outbreak of War"
+                  }
+                ]
+              },
+              {
+                "id": "kt2_1_s4",
+                "tier": 3,
+                "label": "Six-Day War Key Events",
+                "dateChip": "5–10 June 1967",
+                "lessonIndex": 5,
+                "stageIndex": 2,
+                "searchTerm": "Operation Focus",
+                "gloss": "Key events of the Six-Day War saw Operation Focus wipe out Arab air forces on 5 June before Israel seized Sinai, East Jerusalem, the West Bank, and Golan.",
+                "children": [
+                  {
+                    "id": "kt2_1_s4_e1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "5 June Air Strike Destroyed 300+ Jets",
+                    "detail": "Flying low under radar in Operation Focus, Israel wiped out Egypt's grounded bombers within three hours.",
+                    "lessonIndex": 5,
+                    "stageIndex": 2,
+                    "searchTerm": "Operation Focus",
+                    "gloss": "Flying low under radar in Operation Focus, Israel wiped out Egypt's grounded bombers within three hours."
+                  },
+                  {
+                    "id": "kt2_1_s4_q1",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "Sinai, Gaza & Old City Captured",
+                    "detail": "Unchallenged from the sky, IDF tanks reached Suez and paratroopers took East Jerusalem and the West Bank.",
+                    "lessonIndex": 5,
+                    "stageIndex": 3,
+                    "searchTerm": "Western Wall",
+                    "gloss": "Unchallenged from the sky, IDF tanks reached Suez and paratroopers took East Jerusalem and the West Bank."
+                  },
+                  {
+                    "id": "kt2_1_s4_q2",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "Golan Heights Stormed (9–10 June)",
+                    "detail": "Infantry and armoured bulldozers overran fortified Syrian ridges, ending artillery fire on Galilee farms.",
+                    "lessonIndex": 5,
+                    "stageIndex": 4,
+                    "searchTerm": "Golan Heights",
+                    "gloss": "Infantry and armoured bulldozers overran fortified Syrian ridges, ending artillery fire on Galilee farms."
+                  },
+                  {
+                    "id": "kt2_1_s4_i1",
+                    "tier": 4,
+                    "tag": "Importance",
+                    "label": "Tripled Territory & Crushed Prestige",
+                    "detail": "Routing three Arab states won deep defensive buffers, strengthened US ties, and humbled Pan-Arabism.",
+                    "lessonIndex": 5,
+                    "stageIndex": 4,
+                    "searchTerm": "tripled",
+                    "gloss": "Routing three Arab states won deep defensive buffers, strengthened US ties, and humbled Pan-Arabism.",
+                    "forTheme": "Balance Power"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt2_2",
+            "code": "2.2",
+            "tier": 2,
+            "label": "2.2 Aftermath of 1967 War",
+            "dateChip": "1967–72",
+            "lessonIndex": 6,
+            "stageIndex": 0,
+            "searchTerm": "Resolution 242",
+            "q2Chain": "Five occupied territories, Khartoum 'Three Noes' & UN Resolution 242 → 1970 PFLP hijackings & Black September PLO expulsion from Jordan → 1972 Munich Olympics massacre & Israeli retaliation",
+            "gloss": "Q2 Narrative Chain: Five occupied territories, Khartoum 'Three Noes' & UN Resolution 242 → 1970 PFLP hijackings & Black September PLO expulsion from Jordan → 1972 Munich Olympics massacre & Israeli retaliation.",
+            "children": [
+              {
+                "id": "kt2_2_s1",
+                "tier": 3,
+                "label": "UN Resolution 242 & Suez Canal",
+                "dateChip": "Nov 1967",
+                "lessonIndex": 6,
+                "stageIndex": 2,
+                "searchTerm": "Resolution 242",
+                "gloss": "UN Resolution 242 established the Land for Peace formula amid the Khartoum deadlock and continued dispute over the blocked Suez Canal.",
+                "children": [
+                  {
+                    "id": "kt2_2_s1_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Khartoum Summit 'Three Noes' (1967)",
+                    "detail": "Defeated Arab leaders vowed no peace, no recognition, and no direct negotiations, hardening deadlock.",
+                    "lessonIndex": 6,
+                    "stageIndex": 1,
+                    "searchTerm": "Khartoum Resolution",
+                    "gloss": "Defeated Arab leaders vowed no peace, no recognition, and no direct negotiations, hardening deadlock."
+                  },
+                  {
+                    "id": "kt2_2_s1_e1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "UN Resolution 242 'Land for Peace'",
+                    "detail": "Ambiguous wording traded Israeli withdrawal from occupied land for Arab recognition of secure borders.",
+                    "lessonIndex": 6,
+                    "stageIndex": 2,
+                    "searchTerm": "Resolution 242",
+                    "gloss": "Ambiguous wording traded Israeli withdrawal from occupied land for Arab recognition of secure borders."
+                  },
+                  {
+                    "id": "kt2_2_s1_q1",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "PLO Angered by 'Refugee' Wording",
+                    "detail": "Because 242 omitted an independent Palestinian state, Arafat's movement rejected the text until 1988.",
+                    "lessonIndex": 6,
+                    "stageIndex": 2,
+                    "searchTerm": "refugee problem",
+                    "gloss": "Because 242 omitted an independent Palestinian state, Arafat's movement rejected the text until 1988."
+                  },
+                  {
+                    "id": "kt2_2_s1_q2",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "Blocked Suez Canal & Bar-Lev Line",
+                    "detail": "Sunken ships shut the waterway for eight years as Israel fortified the eastern bank against Egyptian guns.",
+                    "lessonIndex": 6,
+                    "stageIndex": 3,
+                    "searchTerm": "Bar-Lev Line",
+                    "gloss": "Sunken ships shut the waterway for eight years as Israel fortified the eastern bank against Egyptian guns."
+                  },
+                  {
+                    "id": "kt2_2_s1_i1",
+                    "tier": 4,
+                    "tag": "Importance",
+                    "label": "Became Blueprint for Later Treaties",
+                    "detail": "Despite rival readings, exchanging 1967 territory for diplomatic peace underpinned Camp David and Oslo.",
+                    "lessonIndex": 6,
+                    "stageIndex": 2,
+                    "searchTerm": "Land for Peace",
+                    "gloss": "Despite rival readings, exchanging 1967 territory for diplomatic peace underpinned Camp David and Oslo.",
+                    "forTheme": "Peace Process"
+                  }
+                ]
+              },
+              {
+                "id": "kt2_2_s2",
+                "tier": 3,
+                "label": "Refugees & 5 Occupied Lands",
+                "dateChip": "June 1967",
+                "lessonIndex": 6,
+                "stageIndex": 0,
+                "searchTerm": "East Jerusalem",
+                "gloss": "New Palestinian refugees fled as Israel held five occupied territories: the Golan Heights, Gaza Strip, West Bank, Sinai, and East Jerusalem.",
+                "children": [
+                  {
+                    "id": "kt2_2_s2_e1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Five Strategic Regions Under IDF",
+                    "detail": "Israel held Sinai, Gaza, the West Bank, the Golan Heights, and annexed East Jerusalem into its capital.",
+                    "lessonIndex": 6,
+                    "stageIndex": 0,
+                    "searchTerm": "Golan Heights",
+                    "gloss": "Israel held Sinai, Gaza, the West Bank, the Golan Heights, and annexed East Jerusalem into its capital."
+                  },
+                  {
+                    "id": "kt2_2_s2_q1",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "300,000 More Refugees Fled East",
+                    "detail": "Families displaced a second time since 1948 packed Jordanian camps and swelled guerrilla recruitment.",
+                    "lessonIndex": 6,
+                    "stageIndex": 0,
+                    "searchTerm": "300,000 refugees",
+                    "gloss": "Families displaced a second time since 1948 packed Jordanian camps and swelled guerrilla recruitment."
+                  },
+                  {
+                    "id": "kt2_2_s2_q2",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "One Million Palestinians Ruled by IDF",
+                    "detail": "Military governors enforced curfews, travel permits, and land seizures across Gaza and the West Bank.",
+                    "lessonIndex": 6,
+                    "stageIndex": 0,
+                    "searchTerm": "one million Palestinians",
+                    "gloss": "Military governors enforced curfews, travel permits, and land seizures across Gaza and the West Bank."
+                  },
+                  {
+                    "id": "kt2_2_s2_i1",
+                    "tier": 4,
+                    "tag": "Importance",
+                    "label": "Shifted Conflict to Daily Occupation",
+                    "detail": "Captured land offered bargaining chips with Arab states, yet ruling a captive population bred revolt.",
+                    "lessonIndex": 6,
+                    "stageIndex": 0,
+                    "searchTerm": "occupied territories",
+                    "gloss": "Captured land offered bargaining chips with Arab states, yet ruling a captive population bred revolt.",
+                    "forTheme": "Occupation"
+                  }
+                ]
+              },
+              {
+                "id": "kt2_2_s3",
+                "tier": 3,
+                "label": "PFLP Hijacks & Jordan Expulsion",
+                "dateChip": "Sept 1970",
+                "lessonIndex": 7,
+                "stageIndex": 1,
+                "searchTerm": "Dawson’s Field",
+                "gloss": "The PFLP airplane hijacks of 1970 defied King Hussein, triggering the Black September civil war and the expulsion of the PLO from Jordan (1970–71).",
+                "children": [
+                  {
+                    "id": "kt2_2_s3_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "PLO 'State-Within-a-State' in Jordan",
+                    "detail": "Armed fighters manned Amman checkpoints and launched raids that threatened King Hussein's royal rule.",
+                    "lessonIndex": 7,
+                    "stageIndex": 0,
+                    "searchTerm": "Battle of Karameh",
+                    "gloss": "Armed fighters manned Amman checkpoints and launched raids that threatened King Hussein's royal rule."
+                  },
+                  {
+                    "id": "kt2_2_s3_e1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Dawson's Field Hijackings (Sept 1970)",
+                    "detail": "Radical PFLP militants seized four Western airliners and blew up three empty jets before TV cameras.",
+                    "lessonIndex": 7,
+                    "stageIndex": 1,
+                    "searchTerm": "airplane hijacks",
+                    "gloss": "Radical PFLP militants seized four Western airliners and blew up three empty jets before TV cameras."
+                  },
+                  {
+                    "id": "kt2_2_s3_q1",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "Black September Army Crackdown",
+                    "detail": "Hussein's loyal forces shelled refugee camps in Amman while US-Israeli warnings deterred Syrian tanks.",
+                    "lessonIndex": 7,
+                    "stageIndex": 2,
+                    "searchTerm": "Black September",
+                    "gloss": "Hussein's loyal forces shelled refugee camps in Amman while US-Israeli warnings deterred Syrian tanks."
+                  },
+                  {
+                    "id": "kt2_2_s3_q2",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "PLO Driven Out to Beirut (1970–71)",
+                    "detail": "Expelled from Jordan, Arafat moved guerrilla headquarters into fragile, divided southern Lebanon.",
+                    "lessonIndex": 7,
+                    "stageIndex": 2,
+                    "searchTerm": "expulsion of the PLO from Jordan",
+                    "gloss": "Expelled from Jordan, Arafat moved guerrilla headquarters into fragile, divided southern Lebanon."
+                  },
+                  {
+                    "id": "kt2_2_s3_i1",
+                    "tier": 4,
+                    "tag": "Importance",
+                    "label": "Fractured Arabs & Bred Terror Cells",
+                    "detail": "Losing Jordan's long border split Arab states and spawned covert extremists seeking global headlines.",
+                    "lessonIndex": 7,
+                    "stageIndex": 2,
+                    "searchTerm": "King Hussein",
+                    "gloss": "Losing Jordan's long border split Arab states and spawned covert extremists seeking global headlines.",
+                    "forTheme": "Arab Unity"
+                  }
+                ]
+              },
+              {
+                "id": "kt2_2_s4",
+                "tier": 3,
+                "label": "Munich Olympics & Response",
+                "dateChip": "Sept 1972",
+                "lessonIndex": 7,
+                "stageIndex": 3,
+                "searchTerm": "Munich Olympics",
+                "gloss": "Use of terrorism at the 1972 Munich Olympics by Black September triggered fierce Israeli retaliation and polarized international attitudes towards the Palestine issue.",
+                "children": [
+                  {
+                    "id": "kt2_2_s4_e1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "11 Israeli Olympians Killed (1972)",
+                    "detail": "Black September gunmen seized athletes in Munich; all hostages died after a botched airfield rescue.",
+                    "lessonIndex": 7,
+                    "stageIndex": 3,
+                    "searchTerm": "Munich Olympics",
+                    "gloss": "Black September gunmen seized athletes in Munich; all hostages died after a botched airfield rescue."
+                  },
+                  {
+                    "id": "kt2_2_s4_q1",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "Meir Ordered Bombings & Mossad Hits",
+                    "detail": "Israeli jets pounded Lebanese camps while covert intelligence squads hunted terror planners in Europe.",
+                    "lessonIndex": 7,
+                    "stageIndex": 4,
+                    "searchTerm": "Operation Wrath of God",
+                    "gloss": "Israeli jets pounded Lebanese camps while covert intelligence squads hunted terror planners in Europe."
+                  },
+                  {
+                    "id": "kt2_2_s4_q2",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "Western Nations Boycotted the PLO",
+                    "detail": "Televised murder of athletes entrenched the terrorist label and hardened US-Israeli refusal to talk.",
+                    "lessonIndex": 7,
+                    "stageIndex": 4,
+                    "searchTerm": "international attitudes",
+                    "gloss": "Televised murder of athletes entrenched the terrorist label and hardened US-Israeli refusal to talk."
+                  },
+                  {
+                    "id": "kt2_2_s4_i1",
+                    "tier": 4,
+                    "tag": "Importance",
+                    "label": "Forced Palestine Into Global Focus",
+                    "detail": "Watched by 900 million viewers, shock publicity tarnished militants yet pushed Arafat toward UN talks.",
+                    "lessonIndex": 7,
+                    "stageIndex": 4,
+                    "searchTerm": "Palestine issue",
+                    "gloss": "Watched by 900 million viewers, shock publicity tarnished militants yet pushed Arafat toward UN talks.",
+                    "forTheme": "Intl Attitudes"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt2_3",
+            "code": "2.3",
+            "tier": 2,
+            "label": "2.3 Israel & Egypt, 1967–73",
+            "dateChip": "1967–73",
+            "lessonIndex": 8,
+            "stageIndex": 0,
+            "searchTerm": "Yom Kippur War",
+            "q2Chain": "War of Attrition (1969–70) & Israeli settlement consolidation → Sadat's rejected 1971 peace offer & 1972 expulsion of Soviet advisers → October 1973 Yom Kippur War, superpower airlifts & UN Resolution 338",
+            "gloss": "Q2 Narrative Chain: War of Attrition (1969–70) & Israeli settlement consolidation → Sadat's rejected 1971 peace offer & 1972 expulsion of Soviet advisers → October 1973 Yom Kippur War, superpower airlifts & UN Resolution 338.",
+            "children": [
+              {
+                "id": "kt2_3_s1",
+                "tier": 3,
+                "label": "Egypt's Ties: US, USSR & Arabs",
+                "dateChip": "1969–72",
+                "lessonIndex": 8,
+                "stageIndex": 0,
+                "searchTerm": "War of Attrition",
+                "gloss": "Egyptian relations with Israel, the USA, the USSR and other Arab states shifted from Nasser’s War of Attrition to Sadat expelling Soviet advisers and aligning with Syria.",
+                "children": [
+                  {
+                    "id": "kt2_3_s1_e1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "War of Attrition Along Suez (1969–70)",
+                    "detail": "Heavy Egyptian shelling tried to break Israel's canal forts, pulling in Soviet missiles until a truce.",
+                    "lessonIndex": 8,
+                    "stageIndex": 0,
+                    "searchTerm": "War of Attrition",
+                    "gloss": "Heavy Egyptian shelling tried to break Israel's canal forts, pulling in Soviet missiles until a truce."
+                  },
+                  {
+                    "id": "kt2_3_s1_q1",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "Sadat's 1971 Canal Offer Ignored",
+                    "detail": "Egypt's new president offered to reopen Suez for partial Sinai pullback, but Israel and America balked.",
+                    "lessonIndex": 8,
+                    "stageIndex": 1,
+                    "searchTerm": "Anwar Sadat",
+                    "gloss": "Egypt's new president offered to reopen Suez for partial Sinai pullback, but Israel and America balked."
+                  },
+                  {
+                    "id": "kt2_3_s1_q2",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "15,000 Soviet Advisers Expelled (1972)",
+                    "detail": "Angered by Moscow holding back offensive arms during détente, Sadat forged a secret war pact with Syria.",
+                    "lessonIndex": 8,
+                    "stageIndex": 1,
+                    "searchTerm": "Soviet military advisers",
+                    "gloss": "Angered by Moscow holding back offensive arms during détente, Sadat forged a secret war pact with Syria."
+                  },
+                  {
+                    "id": "kt2_3_s1_i1",
+                    "tier": 4,
+                    "tag": "Importance",
+                    "label": "Prepared Limited War to Force Talks",
+                    "detail": "Ousting Russians signalled openness to Washington while Arab oil states funded October 1973 war plans.",
+                    "lessonIndex": 8,
+                    "stageIndex": 1,
+                    "searchTerm": "Anwar Sadat",
+                    "gloss": "Ousting Russians signalled openness to Washington while Arab oil states funded October 1973 war plans.",
+                    "forTheme": "US & USSR"
+                  }
+                ]
+              },
+              {
+                "id": "kt2_3_s2",
+                "tier": 3,
+                "label": "Consolidating Occupied Lands",
+                "dateChip": "1967–73",
+                "lessonIndex": 6,
+                "stageIndex": 4,
+                "searchTerm": "settlements",
+                "gloss": "Israel’s consolidation of control of the occupied territories built perimeter military defences, annexed East Jerusalem, and planted permanent Jewish settlements.",
+                "children": [
+                  {
+                    "id": "kt2_3_s2_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Drive for Strategic Security Buffers",
+                    "detail": "Israeli leaders vowed never to return to narrow pre-1967 borders exposed to Arab tank or gun attacks.",
+                    "lessonIndex": 6,
+                    "stageIndex": 4,
+                    "searchTerm": "occupied territories",
+                    "gloss": "Israeli leaders vowed never to return to narrow pre-1967 borders exposed to Arab tank or gun attacks."
+                  },
+                  {
+                    "id": "kt2_3_s2_q1",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "Jewish Settlements Built in 4 Lands",
+                    "detail": "State-funded civilian outposts across the West Bank, Golan, Gaza, and Sinai made pullback harder.",
+                    "lessonIndex": 6,
+                    "stageIndex": 4,
+                    "searchTerm": "Israeli settlements",
+                    "gloss": "State-funded civilian outposts across the West Bank, Golan, Gaza, and Sinai made pullback harder."
+                  },
+                  {
+                    "id": "kt2_3_s2_q2",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "Bar-Lev Forts Bred IDF Complacency",
+                    "detail": "Overconfidence in Sinai sand ramparts led Israeli intelligence to dismiss Arab troop moves in 1973.",
+                    "lessonIndex": 6,
+                    "stageIndex": 3,
+                    "searchTerm": "Bar-Lev Line",
+                    "gloss": "Overconfidence in Sinai sand ramparts led Israeli intelligence to dismiss Arab troop moves in 1973."
+                  },
+                  {
+                    "id": "kt2_3_s2_i1",
+                    "tier": 4,
+                    "tag": "Importance",
+                    "label": "Convinced Egypt & Syria to Attack",
+                    "detail": "Watching permanent settlements expand persuaded Sadat that waiting meant losing captured land forever.",
+                    "lessonIndex": 6,
+                    "stageIndex": 4,
+                    "searchTerm": "consolidation of control",
+                    "gloss": "Watching permanent settlements expand persuaded Sadat that waiting meant losing captured land forever.",
+                    "forTheme": "1973 War Cause"
+                  }
+                ]
+              },
+              {
+                "id": "kt2_3_s3",
+                "tier": 3,
+                "label": "Yom Kippur War & Aftermath",
+                "dateChip": "Oct 1973",
+                "lessonIndex": 8,
+                "stageIndex": 2,
+                "searchTerm": "Yom Kippur",
+                "gloss": "Key events of the Yom Kippur War (1973) and its aftermath moved from surprise Egyptian-Syrian breakthroughs to superpower airlifts and UN Resolution 338.",
+                "children": [
+                  {
+                    "id": "kt2_3_s3_e1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "6 Oct Surprise Crossing & Golan Surge",
+                    "detail": "Water cannons breached canal sand walls under Soviet SAM cover while Syrian armour stormed the Golan.",
+                    "lessonIndex": 8,
+                    "stageIndex": 2,
+                    "searchTerm": "Yom Kippur",
+                    "gloss": "Water cannons breached canal sand walls under Soviet SAM cover while Syrian armour stormed the Golan."
+                  },
+                  {
+                    "id": "kt2_3_s3_e2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "US Airlift & IDF Counter-Attack",
+                    "detail": "Emergency American weapons enabled Israeli tanks to push Syria back and trap Egypt's Third Army.",
+                    "lessonIndex": 8,
+                    "stageIndex": 3,
+                    "searchTerm": "US airlift",
+                    "gloss": "Emergency American weapons enabled Israeli tanks to push Syria back and trap Egypt's Third Army."
+                  },
+                  {
+                    "id": "kt2_3_s3_q1",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "Nuclear Alert & UN Resolution 338",
+                    "detail": "Soviet threats to rescue Cairo triggered a US nuclear alert before both superpowers forced a ceasefire.",
+                    "lessonIndex": 8,
+                    "stageIndex": 4,
+                    "searchTerm": "UN Resolution 338",
+                    "gloss": "Soviet threats to rescue Cairo triggered a US nuclear alert before both superpowers forced a ceasefire."
+                  },
+                  {
+                    "id": "kt2_3_s3_q2",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "Heavy Losses Ended Invincibility Myth",
+                    "detail": "Over 2,500 Israeli dead shocked the public, sparked an official inquiry, and made Golda Meir resign.",
+                    "lessonIndex": 8,
+                    "stageIndex": 4,
+                    "searchTerm": "invulnerability",
+                    "gloss": "Over 2,500 Israeli dead shocked the public, sparked an official inquiry, and made Golda Meir resign."
+                  },
+                  {
+                    "id": "kt2_3_s3_i1",
+                    "tier": 4,
+                    "tag": "Importance",
+                    "label": "Restored Pride & Unlocked Diplomacy",
+                    "detail": "Crossing Suez erased 1967 humiliation for Sadat and proved Israel needed negotiated peace for safety.",
+                    "lessonIndex": 8,
+                    "stageIndex": 4,
+                    "searchTerm": "self-respect",
+                    "gloss": "Crossing Suez erased 1967 humiliation for Sadat and proved Israel needed negotiated peace for safety.",
+                    "forTheme": "Peace Talks"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "kt3",
+        "keyTopicNumber": 3,
+        "tier": 1,
+        "side": "left",
+        "color": "#059669",
+        "label": "KT3: Attempts at a Solution",
+        "dateChip": "1974–95",
+        "lessonIndex": 9,
+        "stageIndex": 0,
+        "searchTerm": "Camp David",
+        "gloss": "Key topic 3: Attempts at a solution, 1974–95 — the oil crisis, shuttle diplomacy, Camp David and the 1979 peace treaty, Lebanon, the First Intifada, and the 1993–95 Oslo Accords.",
+        "children": [
+          {
+            "id": "kt3_1",
+            "code": "3.1",
+            "tier": 2,
+            "label": "3.1 Diplomatic Negotiations",
+            "dateChip": "1973–79",
+            "lessonIndex": 9,
+            "stageIndex": 0,
+            "searchTerm": "Camp David",
+            "q2Chain": "1973–74 OPEC oil crisis & Kissinger's shuttle diplomacy (Suez reopened 1975) → Sadat's 1977 Jerusalem visit & Begin's Ismailia return → 1978 Camp David Accords & 1979 Treaty of Washington",
+            "gloss": "Q2 Narrative Chain: 1973–74 OPEC oil crisis & Kissinger's shuttle diplomacy (Suez reopened 1975) → Sadat's 1977 Jerusalem visit & Begin's Ismailia return → 1978 Camp David Accords & 1979 Treaty of Washington.",
+            "children": [
+              {
+                "id": "kt3_1_s1",
+                "tier": 3,
+                "label": "1973 Oil Crisis, USA & USSR",
+                "dateChip": "1973–74",
+                "lessonIndex": 8,
+                "stageIndex": 4,
+                "searchTerm": "OPEC",
+                "gloss": "The 1973–74 oil crisis and the involvement of the USA and the USSR reshaped Western energy security and pushed Washington to sideline Moscow.",
+                "children": [
+                  {
+                    "id": "kt3_1_s1_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "OPEC Oil Embargo Punished US Aid",
+                    "detail": "Arab oil ministers slashed output and banned sales to America for resupplying Israel in October 1973.",
+                    "lessonIndex": 8,
+                    "stageIndex": 4,
+                    "searchTerm": "OPEC",
+                    "gloss": "Arab oil ministers slashed output and banned sales to America for resupplying Israel in October 1973."
+                  },
+                  {
+                    "id": "kt3_1_s1_q1",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "Crude Prices Quadrupled Worldwide",
+                    "detail": "Fourfold fuel hikes caused Western petrol queues, inflation, and European calls for Palestinian rights.",
+                    "lessonIndex": 8,
+                    "stageIndex": 4,
+                    "searchTerm": "quadrupled",
+                    "gloss": "Fourfold fuel hikes caused Western petrol queues, inflation, and European calls for Palestinian rights."
+                  },
+                  {
+                    "id": "kt3_1_s1_q2",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "Washington Sidelined Soviet Diplomats",
+                    "detail": "Because only America held influence over Israel, Sadat turned away from Moscow to deal with Washington.",
+                    "lessonIndex": 9,
+                    "stageIndex": 0,
+                    "searchTerm": "Soviet Union",
+                    "gloss": "Because only America held influence over Israel, Sadat turned away from Moscow to deal with Washington."
+                  },
+                  {
+                    "id": "kt3_1_s1_i1",
+                    "tier": 4,
+                    "tag": "Importance",
+                    "label": "Made Peace an Urgent US Priority",
+                    "detail": "Economic damage forced American leaders to broker Sinai pullbacks so Arab states lifted the ban in 1974.",
+                    "lessonIndex": 9,
+                    "stageIndex": 0,
+                    "searchTerm": "Shuttle Diplomacy",
+                    "gloss": "Economic damage forced American leaders to broker Sinai pullbacks so Arab states lifted the ban in 1974.",
+                    "forTheme": "US Involvement"
+                  }
+                ]
+              },
+              {
+                "id": "kt3_1_s2",
+                "tier": 3,
+                "label": "Kissinger, Shuttle & Suez Canal",
+                "dateChip": "1974–75",
+                "lessonIndex": 9,
+                "stageIndex": 0,
+                "searchTerm": "Shuttle Diplomacy",
+                "gloss": "Henry Kissinger used step-by-step shuttle diplomacy to broker Sinai I, Golan, and Sinai II pullbacks, securing the reopening of the Suez Canal.",
+                "children": [
+                  {
+                    "id": "kt3_1_s2_e1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Step-by-Step Shuttle Flights (1974–75)",
+                    "detail": "Kissinger flew repeatedly between Cairo, Tel Aviv, and Damascus to broker Sinai and Golan pullbacks.",
+                    "lessonIndex": 9,
+                    "stageIndex": 0,
+                    "searchTerm": "Henry Kissinger",
+                    "gloss": "Kissinger flew repeatedly between Cairo, Tel Aviv, and Damascus to broker Sinai and Golan pullbacks."
+                  },
+                  {
+                    "id": "kt3_1_s2_q1",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "Suez Canal Reopened in June 1975",
+                    "detail": "Israeli troop withdrawal let Egypt clear mines and wrecks, restoring vital shipping tolls after 8 years.",
+                    "lessonIndex": 9,
+                    "stageIndex": 0,
+                    "searchTerm": "reopening of the Suez Canal",
+                    "gloss": "Israeli troop withdrawal let Egypt clear mines and wrecks, restoring vital shipping tolls after 8 years."
+                  },
+                  {
+                    "id": "kt3_1_s2_q2",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "US Aid Pulled Egypt Out of USSR Camp",
+                    "detail": "Billions in American economic support and Sinai monitors cemented Cairo's switch to Western alignment.",
+                    "lessonIndex": 9,
+                    "stageIndex": 0,
+                    "searchTerm": "Sinai II",
+                    "gloss": "Billions in American economic support and Sinai monitors cemented Cairo's switch to Western alignment."
+                  },
+                  {
+                    "id": "kt3_1_s2_i1",
+                    "tier": 4,
+                    "tag": "Importance",
+                    "label": "Built Trust Yet Sidelined the PLO",
+                    "detail": "Gradual buffer deals paved the way for Camp David, while Kissinger barred US-PLO talks without 242.",
+                    "lessonIndex": 9,
+                    "stageIndex": 0,
+                    "searchTerm": "Shuttle Diplomacy",
+                    "gloss": "Gradual buffer deals paved the way for Camp David, while Kissinger barred US-PLO talks without 242.",
+                    "forTheme": "Peace Process"
+                  }
+                ]
+              },
+              {
+                "id": "kt3_1_s3",
+                "tier": 3,
+                "label": "Sadat & Begin Visits (1977)",
+                "dateChip": "Nov–Dec 1977",
+                "lessonIndex": 9,
+                "stageIndex": 1,
+                "searchTerm": "Ismailia",
+                "gloss": "Sadat’s visit to Israel (November 1977) and Begin’s visit to Egypt (December 1977) shattered thirty years of diplomatic taboo between Israel and an Arab state.",
+                "children": [
+                  {
+                    "id": "kt3_1_s3_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Egyptian Bread Riots & Economic Need",
+                    "detail": "Crushing military budgets sparked 1977 food protests, convincing Sadat Egypt needed peace and US aid.",
+                    "lessonIndex": 9,
+                    "stageIndex": 1,
+                    "searchTerm": "bread riots",
+                    "gloss": "Crushing military budgets sparked 1977 food protests, convincing Sadat Egypt needed peace and US aid."
+                  },
+                  {
+                    "id": "kt3_1_s3_e1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Sadat in Jerusalem & Begin in Egypt",
+                    "detail": "Sadat addressed Israel's Knesset in November 1977 before Begin flew to Ismailia for Christmas talks.",
+                    "lessonIndex": 9,
+                    "stageIndex": 1,
+                    "searchTerm": "Knesset",
+                    "gloss": "Sadat addressed Israel's Knesset in November 1977 before Begin flew to Ismailia for Christmas talks."
+                  },
+                  {
+                    "id": "kt3_1_s3_q1",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "Shattered 30-Year Recognition Taboo",
+                    "detail": "Standing inside Israel's parliament overturned Khartoum's Three Noes and won over doubtful Israelis.",
+                    "lessonIndex": 9,
+                    "stageIndex": 1,
+                    "searchTerm": "taboo",
+                    "gloss": "Standing inside Israel's parliament overturned Khartoum's Three Noes and won over doubtful Israelis."
+                  },
+                  {
+                    "id": "kt3_1_s3_q2",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "Talks Stalled Over Palestinian Rule",
+                    "detail": "Begin resisted uprooting Sinai settlers and refused full independence for Gaza and the West Bank.",
+                    "lessonIndex": 9,
+                    "stageIndex": 1,
+                    "searchTerm": "Ismailia",
+                    "gloss": "Begin resisted uprooting Sinai settlers and refused full independence for Gaza and the West Bank."
+                  },
+                  {
+                    "id": "kt3_1_s3_i1",
+                    "tier": 4,
+                    "tag": "Importance",
+                    "label": "Created Momentum Rescued by Carter",
+                    "detail": "Direct leader-to-leader contact opened a historic bilateral path that President Carter saved in 1978.",
+                    "lessonIndex": 9,
+                    "stageIndex": 1,
+                    "searchTerm": "Anwar Sadat",
+                    "gloss": "Direct leader-to-leader contact opened a historic bilateral path that President Carter saved in 1978.",
+                    "forTheme": "Egypt-Israel"
+                  }
+                ]
+              },
+              {
+                "id": "kt3_1_s4",
+                "tier": 3,
+                "label": "Carter, Camp David & 1979 Treaty",
+                "dateChip": "1978–79",
+                "lessonIndex": 9,
+                "stageIndex": 2,
+                "searchTerm": "Treaty of Washington",
+                "gloss": "US President Carter mediated the Camp David Accords (1978) and the Treaty of Washington (1979), forging the first formal Arab–Israeli peace treaty.",
+                "children": [
+                  {
+                    "id": "kt3_1_s4_e1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "13-Day Camp David Summit (Sept 1978)",
+                    "detail": "President Carter secluded Sadat and Begin in Maryland, pairing Sinai return with vague autonomy plans.",
+                    "lessonIndex": 9,
+                    "stageIndex": 2,
+                    "searchTerm": "Camp David",
+                    "gloss": "President Carter secluded Sadat and Begin in Maryland, pairing Sinai return with vague autonomy plans."
+                  },
+                  {
+                    "id": "kt3_1_s4_e2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Treaty of Washington (March 1979)",
+                    "detail": "Israel returned all of Sinai for embassies, canal access, and multi-billion-dollar annual US aid.",
+                    "lessonIndex": 9,
+                    "stageIndex": 3,
+                    "searchTerm": "Treaty of Washington",
+                    "gloss": "Israel returned all of Sinai for embassies, canal access, and multi-billion-dollar annual US aid."
+                  },
+                  {
+                    "id": "kt3_1_s4_q1",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "Egypt Suspended & Sadat Assassinated",
+                    "detail": "Furious Arab states boycotted Cairo for a separate peace, and extremists shot Sadat dead in 1981.",
+                    "lessonIndex": 9,
+                    "stageIndex": 4,
+                    "searchTerm": "Arab League",
+                    "gloss": "Furious Arab states boycotted Cairo for a separate peace, and extremists shot Sadat dead in 1981."
+                  },
+                  {
+                    "id": "kt3_1_s4_q2",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "Palestinian Autonomy Left Unfulfilled",
+                    "detail": "Without PLO involvement, self-rule talks collapsed while Israeli settlements grew in the West Bank.",
+                    "lessonIndex": 9,
+                    "stageIndex": 2,
+                    "searchTerm": "autonomy",
+                    "gloss": "Without PLO involvement, self-rule talks collapsed while Israeli settlements grew in the West Bank."
+                  },
+                  {
+                    "id": "kt3_1_s4_i1",
+                    "tier": 4,
+                    "tag": "Importance",
+                    "label": "Ended Multi-Front Arab War Threat",
+                    "detail": "Making peace with the strongest Arab army secured Israel's south and proved Land for Peace worked.",
+                    "lessonIndex": 9,
+                    "stageIndex": 3,
+                    "searchTerm": "Egypt-Israel Peace Treaty",
+                    "gloss": "Making peace with the strongest Arab army secured Israel's south and proved Land for Peace worked.",
+                    "forTheme": "Israel Security"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt3_2",
+            "code": "3.2",
+            "tier": 2,
+            "label": "3.2 The Palestinian Issue",
+            "dateChip": "1974–93",
+            "lessonIndex": 10,
+            "stageIndex": 0,
+            "searchTerm": "First Intifada",
+            "q2Chain": "Arafat's 1974 UN speech, PLO raids in Lebanon & 1978 Operation Litani → 1982 Lebanon invasion, Beirut evacuation to Tunis & Sabra and Shatila → 1987–93 First Intifada in the occupied territories & rise of Hamas",
+            "gloss": "Q2 Narrative Chain: Arafat's 1974 UN speech, PLO raids in Lebanon & 1978 Operation Litani → 1982 Lebanon invasion, Beirut evacuation to Tunis & Sabra and Shatila → 1987–93 First Intifada in the occupied territories & rise of Hamas.",
+            "children": [
+              {
+                "id": "kt3_2_s1",
+                "tier": 3,
+                "label": "Arafat's UN Speech & Lebanon",
+                "dateChip": "1974–78",
+                "lessonIndex": 10,
+                "stageIndex": 0,
+                "searchTerm": "observer status",
+                "gloss": "Arafat's speech to the UN (1974) won official observer status while PLO activities in Lebanon turned southern 'Fatahland' into a cross-border base.",
+                "children": [
+                  {
+                    "id": "kt3_2_s1_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "1974 'Olive Branch & Gun' UN Speech",
+                    "detail": "Backed by Arab states, Arafat told the General Assembly Palestinians sought diplomacy or armed fight.",
+                    "lessonIndex": 10,
+                    "stageIndex": 0,
+                    "searchTerm": "olive branch",
+                    "gloss": "Backed by Arab states, Arafat told the General Assembly Palestinians sought diplomacy or armed fight."
+                  },
+                  {
+                    "id": "kt3_2_s1_e1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "PLO Built Bases in Southern Lebanon",
+                    "detail": "Fighters expelled from Jordan launched rockets and coastal raids into northern Galilee communities.",
+                    "lessonIndex": 10,
+                    "stageIndex": 0,
+                    "searchTerm": "Fatahland",
+                    "gloss": "Fighters expelled from Jordan launched rockets and coastal raids into northern Galilee communities."
+                  },
+                  {
+                    "id": "kt3_2_s1_q1",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "PLO Won Official UN Observer Status",
+                    "detail": "Over 100 nations recognised Palestinian self-determination even though Israel and America shunned it.",
+                    "lessonIndex": 10,
+                    "stageIndex": 0,
+                    "searchTerm": "observer status",
+                    "gloss": "Over 100 nations recognised Palestinian self-determination even though Israel and America shunned it."
+                  },
+                  {
+                    "id": "kt3_2_s1_q2",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "Fuelled 1975 Lebanese Civil War",
+                    "detail": "Armed Palestinian camps upset Lebanon's Christian-Muslim balance, igniting bitter sectarian fighting.",
+                    "lessonIndex": 10,
+                    "stageIndex": 0,
+                    "searchTerm": "Phalangist",
+                    "gloss": "Armed Palestinian camps upset Lebanon's Christian-Muslim balance, igniting bitter sectarian fighting."
+                  },
+                  {
+                    "id": "kt3_2_s1_i1",
+                    "tier": 4,
+                    "tag": "Importance",
+                    "label": "Reframed Palestinians as a Nation",
+                    "detail": "Global diplomacy moved beyond 242's refugee label, yet Lebanon attacks provoked major IDF reprisals.",
+                    "lessonIndex": 10,
+                    "stageIndex": 0,
+                    "searchTerm": "self-determination",
+                    "gloss": "Global diplomacy moved beyond 242's refugee label, yet Lebanon attacks provoked major IDF reprisals.",
+                    "forTheme": "Intl Attitudes"
+                  }
+                ]
+              },
+              {
+                "id": "kt3_2_s2",
+                "tier": 3,
+                "label": "Israeli Reprisals (1978 Litani)",
+                "dateChip": "Mar 1978",
+                "lessonIndex": 10,
+                "stageIndex": 0,
+                "searchTerm": "Operation Litani",
+                "gloss": "Ongoing PLO attacks from southern Lebanon provoked major Israeli reprisals, culminating in March 1978 Operation Litani and UNIFIL deployment.",
+                "children": [
+                  {
+                    "id": "kt3_2_s2_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Coastal Road Bus Attack (Mar 1978)",
+                    "detail": "Fatah militants landed from Lebanon and hijacked buses near Tel Aviv, killing 38 Israeli civilians.",
+                    "lessonIndex": 10,
+                    "stageIndex": 0,
+                    "searchTerm": "Coastal Road Massacre",
+                    "gloss": "Fatah militants landed from Lebanon and hijacked buses near Tel Aviv, killing 38 Israeli civilians."
+                  },
+                  {
+                    "id": "kt3_2_s2_e1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Operation Litani Swept South Lebanon",
+                    "detail": "25,000 Israeli soldiers pushed up to the Litani River for a week to clear frontline guerrilla camps.",
+                    "lessonIndex": 10,
+                    "stageIndex": 0,
+                    "searchTerm": "Operation Litani",
+                    "gloss": "25,000 Israeli soldiers pushed up to the Litani River for a week to clear frontline guerrilla camps."
+                  },
+                  {
+                    "id": "kt3_2_s2_q1",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "UNIFIL Peacekeepers Deployed",
+                    "detail": "Pressured by Carter during Camp David talks, Israel pulled out behind a new UN peacekeeping buffer.",
+                    "lessonIndex": 10,
+                    "stageIndex": 0,
+                    "searchTerm": "UNIFIL",
+                    "gloss": "Pressured by Carter during Camp David talks, Israel pulled out behind a new UN peacekeeping buffer."
+                  },
+                  {
+                    "id": "kt3_2_s2_q2",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "PLO Fighters Returned & Fired Rockets",
+                    "detail": "Most guerrillas retreated north intact and soon resumed shelling Galilee towns across the border.",
+                    "lessonIndex": 10,
+                    "stageIndex": 0,
+                    "searchTerm": "Operation Litani",
+                    "gloss": "Most guerrillas retreated north intact and soon resumed shelling Galilee towns across the border."
+                  },
+                  {
+                    "id": "kt3_2_s2_i1",
+                    "tier": 4,
+                    "tag": "Importance",
+                    "label": "Proved Limited Reprisals Failed",
+                    "detail": "Failing to uproot Arafat's border bases convinced Begin and Sharon to invade all the way to Beirut.",
+                    "lessonIndex": 10,
+                    "stageIndex": 0,
+                    "searchTerm": "Israeli reprisals",
+                    "gloss": "Failing to uproot Arafat's border bases convinced Begin and Sharon to invade all the way to Beirut.",
+                    "forTheme": "Lebanon War"
+                  }
+                ]
+              },
+              {
+                "id": "kt3_2_s3",
+                "tier": 3,
+                "label": "1982 Lebanon Invasion & Results",
+                "dateChip": "1982–85",
+                "lessonIndex": 10,
+                "stageIndex": 1,
+                "searchTerm": "Sabra and Shatila",
+                "gloss": "The invasion of Lebanon (1982) and its results expelled the PLO to Tunis, led to the Sabra and Shatila massacres, and spawned Hezbollah.",
+                "children": [
+                  {
+                    "id": "kt3_2_s3_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Argov Shooting → Op. Peace for Galilee",
+                    "detail": "After Israel's London ambassador was shot, Sharon pushed past 40km and besieged West Beirut for 10 weeks.",
+                    "lessonIndex": 10,
+                    "stageIndex": 0,
+                    "searchTerm": "Operation Peace for Galilee",
+                    "gloss": "After Israel's London ambassador was shot, Sharon pushed past 40km and besieged West Beirut for 10 weeks."
+                  },
+                  {
+                    "id": "kt3_2_s3_q1",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "PLO Expelled from Lebanon to Tunis",
+                    "detail": "14,000 PLO fighters evacuated by sea under US escort, costing Arafat his last border base next to Israel.",
+                    "lessonIndex": 10,
+                    "stageIndex": 0,
+                    "searchTerm": "Tunis",
+                    "gloss": "14,000 PLO fighters evacuated by sea under US escort, costing Arafat his last border base next to Israel."
+                  },
+                  {
+                    "id": "kt3_2_s3_q2",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "Sabra & Shatila → Sharon Sacked",
+                    "detail": "Christian Phalangist allies killed hundreds in IDF-ringed camps, and Israel's Kahan Inquiry forced Sharon out.",
+                    "lessonIndex": 10,
+                    "stageIndex": 1,
+                    "searchTerm": "Sabra and Shatila",
+                    "gloss": "Christian Phalangist allies killed hundreds in IDF-ringed camps, and Israel's Kahan Inquiry forced Sharon out."
+                  },
+                  {
+                    "id": "kt3_2_s3_q3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "Rise of Hezbollah in South Lebanon",
+                    "detail": "Iran-backed Shia militia emerged to fight Israeli troops occupying a costly southern security zone.",
+                    "lessonIndex": 10,
+                    "stageIndex": 1,
+                    "searchTerm": "Hezbollah",
+                    "gloss": "Iran-backed Shia militia emerged to fight Israeli troops occupying a costly southern security zone."
+                  },
+                  {
+                    "id": "kt3_2_s3_i1",
+                    "tier": 4,
+                    "tag": "Importance",
+                    "label": "Strained US Ties & Pushed PLO to Talks",
+                    "detail": "Heavy Beirut civilian deaths shocked Washington, while distant Tunis exile nudged Arafat toward diplomacy.",
+                    "lessonIndex": 10,
+                    "stageIndex": 1,
+                    "searchTerm": "Kahan Commission",
+                    "gloss": "Heavy Beirut civilian deaths shocked Washington, while distant Tunis exile nudged Arafat toward diplomacy.",
+                    "forTheme": "US & PLO"
+                  }
+                ]
+              },
+              {
+                "id": "kt3_2_s4",
+                "tier": 3,
+                "label": "Occupied Lands & First Intifada",
+                "dateChip": "1987–93",
+                "lessonIndex": 10,
+                "stageIndex": 2,
+                "searchTerm": "First Intifada",
+                "gloss": "Twenty years of rule in the Israeli occupied territories ignited the grassroots First Palestinian Intifada (1987–93), damaging Israel’s image and spawning Hamas.",
+                "children": [
+                  {
+                    "id": "kt3_2_s4_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "20 Years of Harsh Military Occupation",
+                    "detail": "Expanding settlements, curfews, and a December 1987 Gaza army lorry crash sparked mass uprising.",
+                    "lessonIndex": 10,
+                    "stageIndex": 2,
+                    "searchTerm": "First Intifada",
+                    "gloss": "Expanding settlements, curfews, and a December 1987 Gaza army lorry crash sparked mass uprising."
+                  },
+                  {
+                    "id": "kt3_2_s4_e1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Grassroots Strikes & Stone-Throwing",
+                    "detail": "Local Palestinian committees led tax boycotts, shop strikes, and youths confronting IDF patrols.",
+                    "lessonIndex": 10,
+                    "stageIndex": 2,
+                    "searchTerm": "First Intifada",
+                    "gloss": "Local Palestinian committees led tax boycotts, shop strikes, and youths confronting IDF patrols."
+                  },
+                  {
+                    "id": "kt3_2_s4_q1",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "Rabin's 'Iron Fist' Damaged Image",
+                    "detail": "Televised beatings, curfews, and mass arrests drew global criticism and divided Israeli opinion.",
+                    "lessonIndex": 10,
+                    "stageIndex": 3,
+                    "searchTerm": "Iron Fist",
+                    "gloss": "Televised beatings, curfews, and mass arrests drew global criticism and divided Israeli opinion."
+                  },
+                  {
+                    "id": "kt3_2_s4_q2",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "Hamas Founded in Gaza (Dec 1987)",
+                    "detail": "Sheikh Yassin's Islamist movement vowed armed struggle for all Palestine, rivalling the secular PLO.",
+                    "lessonIndex": 10,
+                    "stageIndex": 3,
+                    "searchTerm": "Hamas",
+                    "gloss": "Sheikh Yassin's Islamist movement vowed armed struggle for all Palestine, rivalling the secular PLO."
+                  },
+                  {
+                    "id": "kt3_2_s4_i1",
+                    "tier": 4,
+                    "tag": "Importance",
+                    "label": "Showed Force Alone Could Not Rule",
+                    "detail": "King Hussein dropped Jordan's West Bank claim in 1988, convincing Rabin only talks could bring calm.",
+                    "lessonIndex": 10,
+                    "stageIndex": 4,
+                    "searchTerm": "King Hussein",
+                    "gloss": "King Hussein dropped Jordan's West Bank claim in 1988, convincing Rabin only talks could bring calm.",
+                    "forTheme": "Peace Process"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt3_3",
+            "code": "3.3",
+            "tier": 2,
+            "label": "3.3 Attempts at a Solution",
+            "dateChip": "1988–95",
+            "lessonIndex": 11,
+            "stageIndex": 0,
+            "searchTerm": "Oslo Accords",
+            "q2Chain": "Arafat's 1988 UN renunciation of terrorism, Cold War end & 1991 Gulf War / Madrid → Secret Norway talks, 1993 Oslo I Accord & 1994 PNA → 1994 Jordan treaty, 1995 Oslo II & Rabin's assassination",
+            "gloss": "Q2 Narrative Chain: Arafat's 1988 UN renunciation of terrorism, Cold War end & 1991 Gulf War / Madrid → Secret Norway talks, 1993 Oslo I Accord & 1994 PNA → 1994 Jordan treaty, 1995 Oslo II & Rabin's assassination.",
+            "children": [
+              {
+                "id": "kt3_3_s1",
+                "tier": 3,
+                "label": "Arafat Renounces Terror at UN",
+                "dateChip": "Nov–Dec 1988",
+                "lessonIndex": 10,
+                "stageIndex": 4,
+                "searchTerm": "renunciation of terrorism",
+                "gloss": "Arafat's renunciation of terrorism in a speech at the UN in December 1988 and acceptance of Resolution 242 ended the 13-year US diplomatic boycott.",
+                "children": [
+                  {
+                    "id": "kt3_3_s1_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Pressure From Intifada & Rival Hamas",
+                    "detail": "Exiled in Tunis after Jordan quit the West Bank, Arafat endorsed a two-state deal to stay relevant.",
+                    "lessonIndex": 10,
+                    "stageIndex": 4,
+                    "searchTerm": "Algiers",
+                    "gloss": "Exiled in Tunis after Jordan quit the West Bank, Arafat endorsed a two-state deal to stay relevant."
+                  },
+                  {
+                    "id": "kt3_3_s1_e1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Dec 1988 UN Speech in Geneva",
+                    "detail": "Arafat explicitly renounced terrorism in all forms and accepted Israel's right to live under 242.",
+                    "lessonIndex": 10,
+                    "stageIndex": 4,
+                    "searchTerm": "Geneva",
+                    "gloss": "Arafat explicitly renounced terrorism in all forms and accepted Israel's right to live under 242."
+                  },
+                  {
+                    "id": "kt3_3_s1_q1",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "USA Ended 13-Year PLO Boycott",
+                    "detail": "Meeting Kissinger's 1975 conditions persuaded Washington to open official diplomatic talks in Tunis.",
+                    "lessonIndex": 10,
+                    "stageIndex": 4,
+                    "searchTerm": "Reagan",
+                    "gloss": "Meeting Kissinger's 1975 conditions persuaded Washington to open official diplomatic talks in Tunis."
+                  },
+                  {
+                    "id": "kt3_3_s1_q2",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "Likud & Militants Rejected Shift",
+                    "detail": "Israeli PM Shamir dismissed the pledge as a trick while Hamas condemned compromising over territory.",
+                    "lessonIndex": 11,
+                    "stageIndex": 0,
+                    "searchTerm": "Yitzhak Shamir",
+                    "gloss": "Israeli PM Shamir dismissed the pledge as a trick while Hamas condemned compromising over territory."
+                  },
+                  {
+                    "id": "kt3_3_s1_i1",
+                    "tier": 4,
+                    "tag": "Importance",
+                    "label": "Unlocked Path to 1993 Oslo Talks",
+                    "detail": "Accepting Israel's existence removed the diplomatic barrier so Labour leaders could later negotiate.",
+                    "lessonIndex": 10,
+                    "stageIndex": 4,
+                    "searchTerm": "renunciation of terrorism",
+                    "gloss": "Accepting Israel's existence removed the diplomatic barrier so Labour leaders could later negotiate.",
+                    "forTheme": "US-PLO Talks"
+                  }
+                ]
+              },
+              {
+                "id": "kt3_3_s2",
+                "tier": 3,
+                "label": "Gulf War (1991) & Cold War End",
+                "dateChip": "1989–91",
+                "lessonIndex": 11,
+                "stageIndex": 0,
+                "searchTerm": "Madrid Peace Conference",
+                "gloss": "Changing superpower policies in the Middle East through US involvement in the Gulf War (1991) and the end of the Cold War enabled the 1991 Madrid Conference.",
+                "children": [
+                  {
+                    "id": "kt3_3_s2_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Soviet Collapse Ended Arab Patronage",
+                    "detail": "Losing cheap Moscow arms and UN vetoes left the USA as the sole superpower shaping regional peace.",
+                    "lessonIndex": 11,
+                    "stageIndex": 0,
+                    "searchTerm": "end of the Cold War",
+                    "gloss": "Losing cheap Moscow arms and UN vetoes left the USA as the sole superpower shaping regional peace."
+                  },
+                  {
+                    "id": "kt3_3_s2_e1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Arafat Backed Saddam in 1991 Gulf War",
+                    "detail": "While a US-Arab coalition freed Kuwait and restrained Israel, PLO support for Iraq outraged Gulf states.",
+                    "lessonIndex": 11,
+                    "stageIndex": 0,
+                    "searchTerm": "Gulf War",
+                    "gloss": "While a US-Arab coalition freed Kuwait and restrained Israel, PLO support for Iraq outraged Gulf states."
+                  },
+                  {
+                    "id": "kt3_3_s2_q1",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "Gulf States Cut Off PLO Funding",
+                    "detail": "Saudi Arabia and Kuwait froze subsidies and expelled workers, pushing Arafat near bankruptcy.",
+                    "lessonIndex": 11,
+                    "stageIndex": 0,
+                    "searchTerm": "Saudi Arabia",
+                    "gloss": "Saudi Arabia and Kuwait froze subsidies and expelled workers, pushing Arafat near bankruptcy."
+                  },
+                  {
+                    "id": "kt3_3_s2_q2",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "Madrid Peace Conference (Oct 1991)",
+                    "detail": "Using loan pressure, Washington brought Israel face-to-face with Syrian, Jordanian, and Palestinian envoys.",
+                    "lessonIndex": 11,
+                    "stageIndex": 0,
+                    "searchTerm": "Madrid Peace Conference",
+                    "gloss": "Using loan pressure, Washington brought Israel face-to-face with Syrian, Jordanian, and Palestinian envoys."
+                  },
+                  {
+                    "id": "kt3_3_s2_i1",
+                    "tier": 4,
+                    "tag": "Importance",
+                    "label": "Weakened PLO & Boosted US Diplomacy",
+                    "detail": "Financial ruin and unrivalled American clout pushed Arafat toward major compromises in secret talks.",
+                    "lessonIndex": 11,
+                    "stageIndex": 0,
+                    "searchTerm": "superpower policies",
+                    "gloss": "Financial ruin and unrivalled American clout pushed Arafat toward major compromises in secret talks.",
+                    "forTheme": "US Diplomacy"
+                  }
+                ]
+              },
+              {
+                "id": "kt3_3_s3",
+                "tier": 3,
+                "label": "Oslo Accords (1993) & PNA",
+                "dateChip": "1993–94",
+                "lessonIndex": 11,
+                "stageIndex": 2,
+                "searchTerm": "Oslo I Accord",
+                "gloss": "Yitzhak Rabin and Yasser Arafat signed the Oslo Accords (1993) after secret Norway talks, achieving mutual recognition and founding the Palestinian National Authority.",
+                "children": [
+                  {
+                    "id": "kt3_3_s3_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "1992 Labour Win & Secret Oslo Talks",
+                    "detail": "Elected promising peace, Rabin approved quiet backchannel talks in Oslo, Norway away from the media.",
+                    "lessonIndex": 11,
+                    "stageIndex": 1,
+                    "searchTerm": "Shimon Peres",
+                    "gloss": "Elected promising peace, Rabin approved quiet backchannel talks in Oslo, Norway away from the media."
+                  },
+                  {
+                    "id": "kt3_3_s3_e1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Sept 1993 White House Lawn Handshake",
+                    "detail": "Before President Clinton, Israel and the PLO signed mutual recognition letters and interim accords.",
+                    "lessonIndex": 11,
+                    "stageIndex": 2,
+                    "searchTerm": "Bill Clinton",
+                    "gloss": "Before President Clinton, Israel and the PLO signed mutual recognition letters and interim accords."
+                  },
+                  {
+                    "id": "kt3_3_s3_q1",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "PNA Self-Rule in Gaza & Jericho (1994)",
+                    "detail": "IDF troops pulled back as Arafat returned from 27 years of exile to lead civil administration and police.",
+                    "lessonIndex": 11,
+                    "stageIndex": 2,
+                    "searchTerm": "Palestinian National Authority",
+                    "gloss": "IDF troops pulled back as Arafat returned from 27 years of exile to lead civil administration and police."
+                  },
+                  {
+                    "id": "kt3_3_s3_q2",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "Final-Status Flashpoints Postponed",
+                    "detail": "Leaving Jerusalem, refugees, borders, and settlements for five years let extremists attack trust.",
+                    "lessonIndex": 11,
+                    "stageIndex": 2,
+                    "searchTerm": "final-status",
+                    "gloss": "Leaving Jerusalem, refugees, borders, and settlements for five years let extremists attack trust."
+                  },
+                  {
+                    "id": "kt3_3_s3_i1",
+                    "tier": 4,
+                    "tag": "Importance",
+                    "label": "First Direct Israeli-Palestinian Deal",
+                    "detail": "Ending decades of mutual denial created self-governing institutions and cleared Jordan to sign peace.",
+                    "lessonIndex": 11,
+                    "stageIndex": 2,
+                    "searchTerm": "Oslo I Accord",
+                    "gloss": "Ending decades of mutual denial created self-governing institutions and cleared Jordan to sign peace.",
+                    "forTheme": "Peace Process"
+                  }
+                ]
+              },
+              {
+                "id": "kt3_3_s4",
+                "tier": 3,
+                "label": "Jordan Treaty (1994) & Oslo II",
+                "dateChip": "1994–95",
+                "lessonIndex": 11,
+                "stageIndex": 3,
+                "searchTerm": "Oslo II",
+                "gloss": "Oslo unlocked the Israel-Jordan peace treaty (1994) and Oslo II (1995), before extremist violence and Rabin’s assassination stalled peace.",
+                "children": [
+                  {
+                    "id": "kt3_3_s4_e1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Oct 1994 Israel-Jordan Peace Treaty",
+                    "detail": "Freed by the PLO deal, King Hussein and Rabin settled borders, shared river water, and opened trade.",
+                    "lessonIndex": 11,
+                    "stageIndex": 3,
+                    "searchTerm": "Israel-Jordan Peace Treaty",
+                    "gloss": "Freed by the PLO deal, King Hussein and Rabin settled borders, shared river water, and opened trade."
+                  },
+                  {
+                    "id": "kt3_3_s4_e2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Sept 1995 Oslo II: Areas A, B & C",
+                    "detail": "Expanded PNA self-rule to West Bank towns (Area A) while Israel kept 60% in Area C.",
+                    "lessonIndex": 11,
+                    "stageIndex": 3,
+                    "searchTerm": "Oslo II",
+                    "gloss": "Expanded PNA self-rule to West Bank towns (Area A) while Israel kept 60% in Area C."
+                  },
+                  {
+                    "id": "kt3_3_s4_q1",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "Settler Attack & Hamas Bus Bombings",
+                    "detail": "A Hebron mosque shooting and deadly Hamas suicide attacks in Israeli cities eroded public confidence.",
+                    "lessonIndex": 11,
+                    "stageIndex": 4,
+                    "searchTerm": "Hamas",
+                    "gloss": "A Hebron mosque shooting and deadly Hamas suicide attacks in Israeli cities eroded public confidence."
+                  },
+                  {
+                    "id": "kt3_3_s4_q2",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "PM Yitzhak Rabin Assassinated (1995)",
+                    "detail": "Opposing West Bank handovers, Jewish extremist Yigal Amir shot Rabin dead after a Tel Aviv peace rally.",
+                    "lessonIndex": 11,
+                    "stageIndex": 4,
+                    "searchTerm": "Yigal Amir",
+                    "gloss": "Opposing West Bank handovers, Jewish extremist Yigal Amir shot Rabin dead after a Tel Aviv peace rally."
+                  },
+                  {
+                    "id": "kt3_3_s4_i1",
+                    "tier": 4,
+                    "tag": "Importance",
+                    "label": "Secured Jordan Yet Left Oslo Fragile",
+                    "detail": "By late 1995 two Arab neighbours were at peace with Israel, but terror and Rabin's murder stalled Oslo.",
+                    "lessonIndex": 11,
+                    "stageIndex": 4,
+                    "searchTerm": "Yitzhak Rabin",
+                    "gloss": "By late 1995 two Arab neighbours were at peace with Israel, but terror and Rabin's murder stalled Oslo.",
+                    "forTheme": "Peace Process"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

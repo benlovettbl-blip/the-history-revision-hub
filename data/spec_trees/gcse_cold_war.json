@@ -1,0 +1,1289 @@
+{
+  "unitId": "gcse_cold_war",
+  "optionCode": "1HI0/P4",
+  "paperLabel": "Paper 2 · Booklet P (Period Study)",
+  "courseTitle": "Superpower Relations and the Cold War, 1941–91",
+  "examDateBoundary": "1941–1991",
+  "disclaimer": "Aligned to Pearson Edexcel GCSE (9–1) History (1HI0). Independent educational resource — not endorsed by Pearson.",
+  "nonExaminedContextNote": null,
+  "rescueTop10": [
+    {
+      "year": "1945 (July–August)",
+      "event": "Potsdam Conference and the Atomic Bomb",
+      "significance": "Truman confronted Stalin over Poland and reparations, while US atomic bombings of Hiroshima and Nagasaki shattered wartime trust and accelerated Stalin's Eastern European buffer zone."
+    },
+    {
+      "year": "1947 (March–June)",
+      "event": "Truman Doctrine and Marshall Plan",
+      "significance": "Truman pledged $400 million for Greece and Turkey to contain communism, backed by over $13 billion in Marshall Aid for Western Europe, prompting Stalin's rival Cominform and Comecon."
+    },
+    {
+      "year": "1948–49",
+      "event": "Berlin Blockade, Airlift and Formation of NATO",
+      "significance": "Stalin's blockade of West Berlin failed after 275,000 Allied airlift flights, dividing Germany into the FRG and GDR and driving Western powers to establish NATO in April 1949."
+    },
+    {
+      "year": "1956 (October–November)",
+      "event": "The Hungarian Uprising",
+      "significance": "When Imre Nagy announced Hungary would leave the Warsaw Pact, Khrushchev sent over 1,000 Soviet tanks into Budapest while nuclear deterrence and Suez prevented Western military intervention."
+    },
+    {
+      "year": "1961 (August)",
+      "event": "Construction of the Berlin Wall",
+      "significance": "After roughly 2.7 million to 3 million East Germans fled westward, East Germany sealed West Berlin behind concrete and barbed wire, halting the brain drain while handing the West a propaganda victory."
+    },
+    {
+      "year": "1962 (October)",
+      "event": "The Cuban Missile Crisis",
+      "significance": "U-2 discovery of Soviet missiles in Cuba triggered Kennedy's naval quarantine; Khrushchev withdrew the missiles for a US non-invasion pledge and secret Turkish missile removal, spurring the 1963 Hotline and Limited Test Ban Treaty."
+    },
+    {
+      "year": "1968 (August)",
+      "event": "Invasion of Czechoslovakia and Brezhnev Doctrine",
+      "significance": "Alarmed by Dubček's Prague Spring censorship reforms, 500,000 Warsaw Pact troops invaded Czechoslovakia and Brezhnev declared one-party Communist rule irreversible across the Eastern Bloc."
+    },
+    {
+      "year": "1972–75",
+      "event": "SALT 1 and the Helsinki Accords (Détente)",
+      "significance": "Nixon and Brezhnev capped ABM sites and strategic launchers under SALT 1 (1972), and 35 nations signed the 1975 Helsinki Accords recognising European borders alongside Basket 3 human rights pledges."
+    },
+    {
+      "year": "1979–83",
+      "event": "Invasion of Afghanistan and Reagan's Second Cold War",
+      "significance": "Soviet troops entering Kabul in December 1979 triggered the Carter Doctrine, SALT 2 withdrawal, and 1980 Olympic boycott, followed by Reagan's Evil Empire speech and 1983 Strategic Defence Initiative (SDI)."
+    },
+    {
+      "year": "1989–91",
+      "event": "Fall of the Berlin Wall and Collapse of the USSR",
+      "significance": "Gorbachev's New Thinking and abandonment of the Brezhnev Doctrine enabled peaceful 1989 revolutions and the opening of the Berlin Wall, culminating in the end of the Warsaw Pact and the USSR in 1991."
+    }
+  ],
+  "keyTopics": [
+    {
+      "id": "kt1",
+      "number": 1,
+      "title": "Key Topic 1: The Origins of the Cold War, 1941–58",
+      "dateFence": "1941–1958",
+      "outsideFenceWarning": "Keep strictly inside 1941–58: do NOT include the November 1958 Berlin Ultimatum, the 1961 Berlin Wall, or Cuba here.",
+      "subTopics": [
+        {
+          "id": "kt1_1",
+          "code": "1.1",
+          "title": "Early Tension Between East and West, 1941–46",
+          "dateFence": "1941–1946",
+          "outsideFenceTrap": "Outside 1941–46: 1947 Truman Doctrine and 1948–49 Berlin Blockade",
+          "linkedLessonIndices": [
+            0,
+            1
+          ],
+          "anchors": [
+            {
+              "id": "kt1_1_a1",
+              "title": "Ideological Rivalry and the Wartime Grand Alliance (1941–45)",
+              "dateTag": "1941–45",
+              "lessonIndex": 0,
+              "recallPrompt": "Why was the 1941 Grand Alliance between the USA, Britain, and the Soviet Union built on fragile foundations?",
+              "facts": [
+                "Western capitalism rested on multi-party elections, private enterprise, and civil liberties, whereas Stalin's Soviet communism enforced a one-party dictatorship and state-owned command economy.",
+                "Only Hitler's invasion of the USSR in June 1941 and Pearl Harbor in December 1941 united Stalin, Franklin D. Roosevelt, and Winston Churchill in the Grand Alliance.",
+                "Despite American Lend-Lease supplies to the Red Army, pre-war hostility over 1918 Western intervention, the 1939 Nazi–Soviet Pact, and Second Front delays bred mutual suspicion."
+              ],
+              "examLens": {
+                "lensType": "Paper 2 Period Study",
+                "points": [
+                  {
+                    "label": "Q1 Consequence (4m)",
+                    "text": "Forging the Grand Alliance channelled vital American Lend-Lease supplies to the USSR, temporarily masking deep ideological hostility until Nazi Germany was defeated."
+                  },
+                  {
+                    "label": "Q2 Narrative Link (8m)",
+                    "text": "Leads from the June–December 1941 wartime alliance → into Big Three negotiations over Europe's future at Tehran and Yalta."
+                  },
+                  {
+                    "label": "Q3 Importance (8m)",
+                    "text": "Important for post-war tension because opposing capitalist and communist worldviews meant distrust quickly resurfaced once the common Nazi enemy vanished in 1945."
+                  }
+                ]
+              },
+              "questionSearchTerm": "Grand Alliance"
+            },
+            {
+              "id": "kt1_1_a2",
+              "title": "Outcomes of the Tehran (1943) and Yalta (1945) Conferences",
+              "dateTag": "1943–Feb 1945",
+              "lessonIndex": 0,
+              "recallPrompt": "What did Roosevelt, Churchill, and Stalin agree—and clash over—at the Tehran and Yalta conferences?",
+              "facts": [
+                "At Tehran (November 1943), Britain and the USA promised a Second Front in France by May 1944 while Stalin pledged war against Japan after Germany's defeat and kept eastern Poland.",
+                "At Yalta (February 1945), the Big Three agreed to divide Germany and Berlin into four occupation zones, set reparations at $20 billion (half for Moscow), and create the United Nations.",
+                "Stalin signed Yalta's Declaration on Liberated Europe promising free elections, yet clashed sharply with Churchill by backing the Communist Lublin Poles against the democratic London Poles."
+              ],
+              "examLens": {
+                "lensType": "Paper 2 Period Study",
+                "points": [
+                  {
+                    "label": "Q1 Consequence (4m)",
+                    "text": "Yalta's agreement to divide Germany and Berlin into four occupation zones created a Western enclave deep inside Soviet territory that became a major Cold War flashpoint."
+                  },
+                  {
+                    "label": "Q2 Narrative Link (8m)",
+                    "text": "Leads from Yalta's vague promise of free Polish elections in February 1945 → into open confrontation between Truman and Stalin at Potsdam in July 1945."
+                  },
+                  {
+                    "label": "Q3 Importance (8m)",
+                    "text": "Important for early East–West tension because Red Army occupation of Eastern Europe let Stalin interpret Yalta's buffer-zone pledges on his own Communist terms."
+                  }
+                ]
+              },
+              "questionSearchTerm": "Yalta"
+            },
+            {
+              "id": "kt1_1_a3",
+              "title": "The Potsdam Conference and Impact of the Atomic Bomb (1945)",
+              "dateTag": "July–Aug 1945",
+              "lessonIndex": 0,
+              "recallPrompt": "Why did leadership changes and the atomic bomb turn the July–August 1945 Potsdam Conference into an open clash?",
+              "facts": [
+                "After Roosevelt died in April 1945 and Clement Attlee replaced Churchill in July, anti-communist President Harry S. Truman confronted Stalin over arresting non-communist Polish leaders.",
+                "Truman blocked Stalin's demand for heavy reparations from western Germany lest poverty breed communism, agreeing instead that each power take reparations mainly from its own zone.",
+                "Following the 16 July 1945 New Mexico atomic test and August bombings of Hiroshima and Nagasaki, Stalin felt intimidated by America's nuclear monopoly and ordered a rival Soviet bomb, tested in August 1949."
+              ],
+              "examLens": {
+                "lensType": "Paper 2 Period Study",
+                "points": [
+                  {
+                    "label": "Q1 Consequence (4m)",
+                    "text": "America's atomic monopoly deepened Stalin's fear of Western encirclement, driving him to tighten Communist control across Eastern Europe and accelerate Soviet nuclear research."
+                  },
+                  {
+                    "label": "Q2 Narrative Link (8m)",
+                    "text": "Leads from Potsdam clashes over Poland and atomic diplomacy in July–August 1945 → into the 1946 war of words and creation of Eastern European satellite states."
+                  },
+                  {
+                    "label": "Q3 Importance (8m)",
+                    "text": "Important for ending the Grand Alliance because Truman's tougher stance and atomic leverage replaced Roosevelt's wartime compromise with open superpower suspicion."
+                  }
+                ]
+              },
+              "questionSearchTerm": "Potsdam"
+            },
+            {
+              "id": "kt1_1_a4",
+              "title": "Long and Novikov Telegrams and Soviet Satellite States (1945–48)",
+              "dateTag": "1945–48",
+              "lessonIndex": 1,
+              "recallPrompt": "How did diplomatic telegrams, Churchill's Iron Curtain speech, and Stalin's takeover of Eastern Europe harden Cold War division?",
+              "facts": [
+                "In February 1946, US diplomat George Kennan's Long Telegram urged firm containment of Soviet expansion, while Nikolai Novikov's September 1946 telegram accused Washington of seeking \"world supremacy\".",
+                "Speaking at Fulton, Missouri in March 1946, Winston Churchill warned that an \"Iron Curtain\" had descended across Soviet-controlled Eastern Europe, prompting Stalin to compare him to Hitler.",
+                "Between 1945 and 1948, Stalin used secret-police \"salami tactics\" and rigged ballots to establish Communist satellite regimes in Poland, Romania, Bulgaria, Hungary, and Czechoslovakia (February 1948)."
+              ],
+              "examLens": {
+                "lensType": "Paper 2 Period Study",
+                "points": [
+                  {
+                    "label": "Q1 Consequence (4m)",
+                    "text": "Kennan's Long Telegram and Stalin's creation of Eastern European satellite states convinced President Truman that Soviet expansion had to be actively contained."
+                  },
+                  {
+                    "label": "Q2 Narrative Link (8m)",
+                    "text": "Leads from the 1946 telegrams and rigged Eastern European elections → into the March 1947 Truman Doctrine and June 1947 Marshall Plan."
+                  },
+                  {
+                    "label": "Q3 Importance (8m)",
+                    "text": "Important for US–Soviet relations because each side's telegram portrayed the rival superpower as aggressive, turning wartime mistrust into rival geopolitical blocs."
+                  }
+                ]
+              },
+              "questionSearchTerm": "Long Telegram"
+            }
+          ]
+        },
+        {
+          "id": "kt1_2",
+          "code": "1.2",
+          "title": "The Development of the Cold War, 1947–49",
+          "dateFence": "1947–1949",
+          "outsideFenceTrap": "Outside 1947–49: 1945 Yalta Conference and 1955 Warsaw Pact",
+          "linkedLessonIndices": [
+            1,
+            2
+          ],
+          "anchors": [
+            {
+              "id": "kt1_2_a1",
+              "title": "The Truman Doctrine and the Marshall Plan (1947–48)",
+              "dateTag": "1947–48",
+              "lessonIndex": 1,
+              "recallPrompt": "How did the 1947 Truman Doctrine and Marshall Plan transform American foreign policy toward Europe?",
+              "facts": [
+                "When bankrupt Britain ended aid to Greece and Turkey in February 1947, Truman's 12 March 1947 speech secured $400 million in assistance, ending US isolationism in favour of containment.",
+                "Unveiled by Secretary of State George Marshall in June 1947 and passed after the February 1948 Czech coup, the Marshall Plan provided over $13 billion to 16 Western European states by 1952.",
+                "Stalin condemned Marshall Aid as \"dollar imperialism\" designed to buy European loyalty and forbade Poland and Czechoslovakia from accepting American funds."
+              ],
+              "examLens": {
+                "lensType": "Paper 2 Period Study",
+                "points": [
+                  {
+                    "label": "Q1 Consequence (4m)",
+                    "text": "The Truman Doctrine and Marshall Plan revived Western European economies against communism while splitting Europe into rival American-backed and Soviet-controlled economic camps."
+                  },
+                  {
+                    "label": "Q2 Narrative Link (8m)",
+                    "text": "Leads from America's 1947 containment and Marshall Aid packages → into Stalin's creation of Cominform (1947), Comecon (1949), and the 1948 Berlin Blockade."
+                  },
+                  {
+                    "label": "Q3 Importance (8m)",
+                    "text": "Important for developing the Cold War because Washington permanently abandoned peacetime isolationism and Stalin treated US economic aid as an offensive threat."
+                  }
+                ]
+              },
+              "questionSearchTerm": "Marshall Plan"
+            },
+            {
+              "id": "kt1_2_a2",
+              "title": "Stalin's Counter-Bloc: Cominform (1947) and Comecon (1949)",
+              "dateTag": "1947–49",
+              "lessonIndex": 1,
+              "recallPrompt": "Why did Stalin establish Cominform in 1947 and Comecon in 1949, and how did they tighten Soviet control?",
+              "facts": [
+                "Founded in September 1947, Cominform (the Communist Information Bureau) enforced strict ideological direction from Moscow across European Communist parties and ordered strikes against Marshall Aid.",
+                "In 1948, Cominform expelled Marshal Tito's Communist Yugoslavia for refusing to follow Stalin's orders, warning every Eastern European leader against independent policies.",
+                "Established in January 1949, Comecon integrated Eastern Bloc state economies around Soviet industrial priorities while cutting off satellite trade with Western Europe."
+              ],
+              "examLens": {
+                "lensType": "Paper 2 Period Study",
+                "points": [
+                  {
+                    "label": "Q1 Consequence (4m)",
+                    "text": "Cominform and Comecon locked Eastern European satellite states into rigid political and economic obedience to Moscow, severing ties with Marshall-funded Western Europe."
+                  },
+                  {
+                    "label": "Q2 Narrative Link (8m)",
+                    "text": "Leads from US announcement of the Truman Doctrine and Marshall Plan in 1947 → into tight Soviet bloc discipline and rising confrontation over divided Germany."
+                  },
+                  {
+                    "label": "Q3 Importance (8m)",
+                    "text": "Important for cementing Europe's division because Comecon's Soviet-centred economic rules bred falling living standards that later fuelled unrest in Hungary (1956) and Czechoslovakia (1968)."
+                  }
+                ]
+              },
+              "questionSearchTerm": "Cominform"
+            },
+            {
+              "id": "kt1_2_a3",
+              "title": "Division of Berlin and the Berlin Blockade and Airlift (1948–49)",
+              "dateTag": "1948–49",
+              "lessonIndex": 2,
+              "recallPrompt": "Why did Stalin blockade West Berlin in June 1948, and how did the Western Allies defeat the blockade without war?",
+              "facts": [
+                "After Britain, the USA, and France merged their German zones into Bizonia and Trizonia and introduced the new Deutschmark currency in June 1948, Stalin feared a strong capitalist West Germany.",
+                "On 24 June 1948, Stalin severed all road, rail, and canal links into West Berlin—100 miles inside the Soviet zone—aiming to starve its 2.1 million citizens into forcing the Allies out.",
+                "Launching Operation Vittles and Operation Plainfare on 26 June 1948, Allied aircraft flew over 275,000 flights along three air corridors until Stalin lifted the blockade on 12 May 1949."
+              ],
+              "examLens": {
+                "lensType": "Paper 2 Period Study",
+                "points": [
+                  {
+                    "label": "Q1 Consequence (4m)",
+                    "text": "Defeating Stalin's blockade via the 11-month Berlin Airlift preserved West Berlin as a Western enclave and ended any remaining chance of four-power German reunification."
+                  },
+                  {
+                    "label": "Q2 Narrative Link (8m)",
+                    "text": "Leads from the June 1948 Deutschmark currency reform and blockade → into the 1949 creation of two German states (FRG and GDR) and NATO."
+                  },
+                  {
+                    "label": "Q3 Importance (8m)",
+                    "text": "Important for superpower relations because Berlin proved containment worked peacefully while convincing Western nations they needed a permanent military alliance."
+                  }
+                ]
+              },
+              "questionSearchTerm": "Berlin Airlift"
+            },
+            {
+              "id": "kt1_2_a4",
+              "title": "Formation of FRG, GDR and Creation of NATO (1949)",
+              "dateTag": "Apr–Oct 1949",
+              "lessonIndex": 2,
+              "recallPrompt": "How did the 1948–49 Berlin Crisis lead directly to two rival German states and the founding of NATO?",
+              "facts": [
+                "On 23 May 1949, days after the blockade ended, the USA, Britain, and France merged Trizonia into the democratic Federal Republic of Germany (FRG, West Germany) with its capital at Bonn.",
+                "In October 1949, Stalin turned the Soviet occupation zone into the one-party Communist German Democratic Republic (GDR, East Germany) led by Walter Ulbricht from East Berlin.",
+                "On 4 April 1949, the USA, Britain, France, Canada, and eight Western nations signed the North Atlantic Treaty founding NATO under Article 5 collective security."
+              ],
+              "examLens": {
+                "lensType": "Paper 2 Period Study",
+                "points": [
+                  {
+                    "label": "Q1 Consequence (4m)",
+                    "text": "Founding NATO committed American troops and nuclear protection permanently to Western Europe's defence in peacetime for the first time in US history."
+                  },
+                  {
+                    "label": "Q2 Narrative Link (8m)",
+                    "text": "Leads from the 1948–49 Berlin Blockade → into formal German partition (FRG and GDR) and West Germany's 1955 entry into NATO, triggering the Warsaw Pact."
+                  },
+                  {
+                    "label": "Q3 Importance (8m)",
+                    "text": "Important for hardening Cold War tensions because turning political division into a US-led military alliance pushed Moscow to build a rival nuclear and military bloc."
+                  }
+                ]
+              },
+              "questionSearchTerm": "NATO"
+            }
+          ]
+        },
+        {
+          "id": "kt1_3",
+          "code": "1.3",
+          "title": "The Cold War Intensifies, 1949–58",
+          "dateFence": "1949–1958",
+          "outsideFenceTrap": "Outside 1949–58: November 1958 Berlin Ultimatum and 1968 Prague Spring",
+          "linkedLessonIndices": [
+            2,
+            3
+          ],
+          "anchors": [
+            {
+              "id": "kt1_3_a1",
+              "title": "The Nuclear Arms Race and Formation of the Warsaw Pact (1949–57)",
+              "dateTag": "1949–57",
+              "lessonIndex": 2,
+              "recallPrompt": "How did the superpower nuclear arms race and the 1955 Warsaw Pact intensify Cold War rivalry?",
+              "facts": [
+                "The USSR ended America's nuclear monopoly with its August 1949 atomic bomb, spurring the US hydrogen bomb (November 1952), Soviet H-bomb (August 1953), and Soviet ICBMs by 1957.",
+                "When NATO admitted a rearmed West Germany (FRG) in May 1955, Soviet leader Nikita Khrushchev immediately established the Warsaw Pact on 14 May 1955.",
+                "Binding the USSR and seven Eastern European satellite states under unified Soviet military command, the Warsaw Pact locked Europe into two rival nuclear-armed alliances."
+              ],
+              "examLens": {
+                "lensType": "Paper 2 Period Study",
+                "points": [
+                  {
+                    "label": "Q1 Consequence (4m)",
+                    "text": "Hydrogen bombs and ICBMs created nuclear deterrence that deterred direct US–Soviet war while giving Moscow the Warsaw Pact mechanism to police Eastern Europe."
+                  },
+                  {
+                    "label": "Q2 Narrative Link (8m)",
+                    "text": "Leads from West Germany joining NATO in May 1955 → into the creation of the Warsaw Pact, which Imre Nagy fatally tried to leave in November 1956."
+                  },
+                  {
+                    "label": "Q3 Importance (8m)",
+                    "text": "Important for superpower relations because mutual H-bomb capability meant Washington dared not intervene militarily inside the Warsaw Pact during the 1956 Hungarian crisis."
+                  }
+                ]
+              },
+              "questionSearchTerm": "Warsaw Pact"
+            },
+            {
+              "id": "kt1_3_a2",
+              "title": "Events in 1956 Leading to the Hungarian Uprising",
+              "dateTag": "Feb–Nov 1956",
+              "lessonIndex": 3,
+              "recallPrompt": "Why did Hungarians rise up against Communist rule in October 1956, and what reforms did Imre Nagy announce?",
+              "facts": [
+                "Under Stalinist dictator Mátyás Rákosi, Hungary endured ÁVH secret-police arrests of over 380,000 citizens, religious persecution, censorship, and low living standards under Comecon.",
+                "Encouraged by Khrushchev's February 1956 \"Secret Speech\" denouncing Stalin, Budapest students marched on 23 October 1956 demanding free elections and toppling Stalin's statue.",
+                "Appointed Prime Minister on 24 October, reformist Imre Nagy dissolved the ÁVH, promised multi-party elections, and announced on 1 November 1956 that Hungary would leave the Warsaw Pact."
+              ],
+              "examLens": {
+                "lensType": "Paper 2 Period Study",
+                "points": [
+                  {
+                    "label": "Q1 Consequence (4m)",
+                    "text": "Nagy's 1 November 1956 announcement withdrawing Hungary from the Warsaw Pact crossed Khrushchev's strategic red line and triggered massive Soviet military invasion."
+                  },
+                  {
+                    "label": "Q2 Narrative Link (8m)",
+                    "text": "Leads from Khrushchev's February 1956 Secret Speech and Budapest student protests → into Nagy's Warsaw Pact withdrawal and Operation Whirlwind on 4 November."
+                  },
+                  {
+                    "label": "Q3 Importance (8m)",
+                    "text": "Important for exposing the limits of de-Stalinisation because Moscow tolerated mild domestic reform in Poland but never multi-party neutrality outside the Warsaw Pact."
+                  }
+                ]
+              },
+              "questionSearchTerm": "Nagy"
+            },
+            {
+              "id": "kt1_3_a3",
+              "title": "Khrushchev's Response: Soviet Invasion of Hungary (1956–58)",
+              "dateTag": "Nov 1956–1958",
+              "lessonIndex": 3,
+              "recallPrompt": "How did Nikita Khrushchev crush the Hungarian Uprising and re-establish Soviet control between 1956 and 1958?",
+              "facts": [
+                "Fearing Hungarian neutrality would shatter the Warsaw Pact buffer zone and provoke Kremlin and Chinese hardliners, Khrushchev launched Operation Whirlwind at dawn on 4 November 1956.",
+                "Over 1,000 Soviet tanks crushed two weeks of armed Budapest street resistance, killing around 2,500 Hungarians and forcing 200,000 refugees to flee into neutral Austria.",
+                "Khrushchev installed loyalist János Kádár, whose regime arrested around 35,000 activists, while Imre Nagy was seized leaving the Yugoslav Embassy and hanged for treason in June 1958."
+              ],
+              "examLens": {
+                "lensType": "Paper 2 Period Study",
+                "points": [
+                  {
+                    "label": "Q1 Consequence (4m)",
+                    "text": "Crushing Budapest and executing Imre Nagy tightened Warsaw Pact discipline across Eastern Europe, deterring any satellite state from attempting neutrality again."
+                  },
+                  {
+                    "label": "Q2 Narrative Link (8m)",
+                    "text": "Leads from Nagy's 1 November withdrawal from the Warsaw Pact → into Operation Whirlwind, Kádár's one-party restoration, and frozen East–West trust."
+                  },
+                  {
+                    "label": "Q3 Importance (8m)",
+                    "text": "Important for Soviet control because Khrushchev proved \"peaceful coexistence\" did not permit Eastern European satellites to leave Moscow's military sphere."
+                  }
+                ]
+              },
+              "questionSearchTerm": "Kádár"
+            },
+            {
+              "id": "kt1_3_a4",
+              "title": "International Reaction to the Soviet Invasion of Hungary (1956)",
+              "dateTag": "Nov 1956",
+              "lessonIndex": 3,
+              "recallPrompt": "Why did the United States and Western powers take no military action to save Hungary in November 1956?",
+              "facts": [
+                "Although US-funded Radio Free Europe broadcasts encouraged resistance, President Eisenhower refused military intervention inside a Warsaw Pact state because both superpowers held hydrogen bombs.",
+                "Simultaneous British and French military action in Egypt during the October–November 1956 Suez Crisis split NATO and weakened Western moral condemnation at the United Nations.",
+                "International action remained limited to UN condemnation resolutions, $20 million in US relief, resettling 200,000 Hungarian refugees, and scattered boycotts of the 1956 Melbourne Olympics."
+              ],
+              "examLens": {
+                "lensType": "Paper 2 Period Study",
+                "points": [
+                  {
+                    "label": "Q1 Consequence (4m)",
+                    "text": "Western military inaction confirmed that the USA accepted Moscow's unspoken sphere of influence in Eastern Europe rather than risk nuclear war."
+                  },
+                  {
+                    "label": "Q2 Narrative Link (8m)",
+                    "text": "Leads from Operation Whirlwind coinciding with the 1956 Suez Crisis → into Khrushchev growing confident enough to challenge the West over Berlin in 1958."
+                  },
+                  {
+                    "label": "Q3 Importance (8m)",
+                    "text": "Important for Cold War dynamics because nuclear deterrence prevented war over Hungary while Soviet brutality alienated thousands of Western European Communists."
+                  }
+                ]
+              },
+              "questionSearchTerm": "Hungary"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kt2",
+      "number": 2,
+      "title": "Key Topic 2: Cold War Crises, 1958–70",
+      "dateFence": "1958–1970",
+      "outsideFenceWarning": "Keep strictly inside 1958–70: do NOT confuse the 1948–49 Berlin Blockade with the 1958–61 Berlin Wall Crisis, or 1956 Hungary with 1968 Czechoslovakia.",
+      "subTopics": [
+        {
+          "id": "kt2_1",
+          "code": "2.1",
+          "title": "Increased Tension Between East and West, 1958–68",
+          "dateFence": "1958–1968",
+          "outsideFenceTrap": "Outside 1958–68: 1948–49 Berlin Airlift and 1972 SALT 1 Treaty",
+          "linkedLessonIndices": [
+            4,
+            5,
+            6
+          ],
+          "anchors": [
+            {
+              "id": "kt2_1_a1",
+              "title": "Berlin Refugee Problem and Khrushchev's 1958 Ultimatum",
+              "dateTag": "1949–58",
+              "lessonIndex": 4,
+              "recallPrompt": "Why did the East German refugee crisis prompt Nikita Khrushchev to issue his Berlin Ultimatum in November 1958?",
+              "facts": [
+                "Marshall-funded West Berlin thrived as a prosperous capitalist \"window to the West\" contrasting sharply with low wages and Stasi repression in Walter Ulbricht's East Germany (GDR).",
+                "Between 1949 and 1961, roughly 2.7 million to 3 million East Germans—including young doctors, engineers, and skilled technicians—fled west through Berlin in a crippling brain drain.",
+                "On 27 November 1958, Khrushchev issued a six-month Berlin Ultimatum demanding Western troops leave and turn West Berlin into a demilitarised \"free city\"."
+              ],
+              "examLens": {
+                "lensType": "Paper 2 Period Study",
+                "points": [
+                  {
+                    "label": "Q1 Consequence (4m)",
+                    "text": "Khrushchev's November 1958 Berlin Ultimatum threatened Western garrison rights and forced two years of urgent superpower summit meetings to avert nuclear war."
+                  },
+                  {
+                    "label": "Q2 Narrative Link (8m)",
+                    "text": "Leads from the 2.7–3 million East German brain drain → into the 1958 Ultimatum and the 1959–61 Geneva, Camp David, Paris, and Vienna summits."
+                  },
+                  {
+                    "label": "Q3 Importance (8m)",
+                    "text": "Important for superpower tension because open Berlin borders threatened East Germany's economic survival while Western withdrawal would destroy US containment credibility."
+                  }
+                ]
+              },
+              "questionSearchTerm": "Ultimatum"
+            },
+            {
+              "id": "kt2_1_a2",
+              "title": "The Summit Meetings of 1959–61 and the U-2 Incident",
+              "dateTag": "1959–61",
+              "lessonIndex": 4,
+              "recallPrompt": "Why did superpower summits between 1959 and June 1961 fail to resolve the Berlin crisis peacefully?",
+              "facts": [
+                "Following May 1959 Geneva talks, Eisenhower and Khrushchev built personal rapport at Camp David in September 1959, where Khrushchev withdrew his six-month Berlin deadline.",
+                "On 1 May 1960, Soviet missiles shot down Francis Gary Powers's US U-2 spy plane; when Eisenhower refused to apologise at the May 1960 Paris Summit, Khrushchev walked out.",
+                "Judging young new President John F. Kennedy inexperienced at the June 1961 Vienna Summit, Khrushchev reissued his six-month Berlin Ultimatum, prompting Kennedy to add $3.2 billion to US defence spending."
+              ],
+              "examLens": {
+                "lensType": "Paper 2 Period Study",
+                "points": [
+                  {
+                    "label": "Q1 Consequence (4m)",
+                    "text": "Wrecking the 1960 Paris Summit over the U-2 spy plane and clashing at Vienna in June 1961 triggered panic that sent over 30,000 East Germans fleeing in July 1961 alone."
+                  },
+                  {
+                    "label": "Q2 Narrative Link (8m)",
+                    "text": "Leads from the May 1960 U-2 shoot-down and June 1961 Vienna clash → into East Germany sealing the Berlin border on 13 August 1961."
+                  },
+                  {
+                    "label": "Q3 Importance (8m)",
+                    "text": "Important for escalating the Berlin Crisis because Kennedy's firm refusal to yield at Vienna convinced Khrushchev to wall off East Berlin rather than risk war."
+                  }
+                ]
+              },
+              "questionSearchTerm": "Vienna"
+            },
+            {
+              "id": "kt2_1_a3",
+              "title": "The Cuban Revolution, US Sanctions and the Bay of Pigs (1959–61)",
+              "dateTag": "1959–61",
+              "lessonIndex": 5,
+              "recallPrompt": "How did US policy toward Fidel Castro's Cuban Revolution and the 1961 Bay of Pigs invasion push Cuba into Soviet nuclear alliance?",
+              "facts": [
+                "In January 1959, Fidel Castro overthrew US-backed Cuban dictator Fulgencio Batista just 90 miles from Florida and nationalised American-owned land, utilities, and oil refineries.",
+                "Following the refusal of the USA to recognise Castro's government, Eisenhower slashed Cuban sugar imports, imposed an October 1960 trade embargo, and severed diplomatic ties in January 1961, driving closer relations with the Soviet Union.",
+                "On 17 April 1961, 1,400 CIA-trained Cuban exiles (Brigade 2506) landed at the Bay of Pigs without US air cover and were crushed within 72 hours, prompting Castro to declare Cuba Communist and request Soviet protection."
+              ],
+              "examLens": {
+                "lensType": "Paper 2 Period Study",
+                "points": [
+                  {
+                    "label": "Q1 Consequence (4m)",
+                    "text": "Failure at the Bay of Pigs humiliated Kennedy internationally and pushed Fidel Castro to align openly with Moscow and accept Soviet nuclear missiles in 1962."
+                  },
+                  {
+                    "label": "Q2 Narrative Link (8m)",
+                    "text": "Leads from US trade embargoes in 1960 and the April 1961 Bay of Pigs fiasco → into Khrushchev secretly deploying medium-range nuclear missiles to Cuba in May 1962."
+                  },
+                  {
+                    "label": "Q3 Importance (8m)",
+                    "text": "Important for superpower confrontation because driving Cuba into the Soviet camp gave Moscow a strategic ally just 90 miles from the American mainland."
+                  }
+                ]
+              },
+              "questionSearchTerm": "Bay of Pigs"
+            },
+            {
+              "id": "kt2_1_a4",
+              "title": "Opposition in Czechoslovakia: Dubček and the Prague Spring (1968)",
+              "dateTag": "1967–Aug 1968",
+              "lessonIndex": 6,
+              "recallPrompt": "What caused opposition to Soviet control in Czechoslovakia, and why did Dubček's 1968 Prague Spring alarm Moscow?",
+              "facts": [
+                "Economic decline under Comecon, StB secret-police censorship, and police beatings of 1967 student protesters forced Stalinist Antonín Novotný out in favour of Alexander Dubček in January 1968.",
+                "Dubček's April 1968 Action Programme launched the Prague Spring (\"Socialism with a human face\"), ending press censorship, curbing StB arrests, and allowing foreign travel and market reforms while pledging Warsaw Pact loyalty.",
+                "Uncensored debates and Ludvík Vaculík's June 1968 Two Thousand Words manifesto alarmed Brezhnev, East Germany's Ulbricht, and Poland's Gomułka that reform would unravel Communist Party monopoly across the bloc."
+              ],
+              "examLens": {
+                "lensType": "Paper 2 Period Study",
+                "points": [
+                  {
+                    "label": "Q1 Consequence (4m)",
+                    "text": "Abolishing censorship unleashed calls for multi-party pluralism that alarmed Warsaw Pact hardliners and prompted the stern July 1968 Warsaw Letter."
+                  },
+                  {
+                    "label": "Q2 Narrative Link (8m)",
+                    "text": "Leads from Dubček's April 1968 Action Programme and failed Čierna/Bratislava talks → into the 500,000-troop Warsaw Pact invasion of August 1968."
+                  },
+                  {
+                    "label": "Q3 Importance (8m)",
+                    "text": "Important for Soviet bloc control because Czechoslovakia's central borders with West Germany and Warsaw Pact allies made press freedom seem an ideological threat to Moscow."
+                  }
+                ]
+              },
+              "questionSearchTerm": "Prague Spring"
+            }
+          ]
+        },
+        {
+          "id": "kt2_2",
+          "code": "2.2",
+          "title": "Cold War Crises, 1961–68",
+          "dateFence": "1961–1968",
+          "outsideFenceTrap": "Outside 1961–68: 1956 Hungarian Uprising and 1989 Fall of the Berlin Wall",
+          "linkedLessonIndices": [
+            4,
+            5,
+            7
+          ],
+          "anchors": [
+            {
+              "id": "kt2_2_a1",
+              "title": "Construction of the Berlin Wall (August 1961)",
+              "dateTag": "Aug–Oct 1961",
+              "lessonIndex": 4,
+              "recallPrompt": "How was the Berlin Wall constructed in August 1961, and why did Checkpoint Charlie become a flashpoint in October?",
+              "facts": [
+                "With 40,000 East Germans crossing into West Berlin in early August 1961, Walter Ulbricht persuaded Khrushchev to seal the frontier overnight before dawn on 13 August 1961.",
+                "East German soldiers first strung barbed wire severing streets and families, then built a 3.6-metre concrete wall fortified with guard towers, searchlights, and a mined \"Death Strip\".",
+                "On 27 October 1961, American and Soviet tanks faced each other 100 metres apart for 18 hours at Checkpoint Charlie before Kennedy and Khrushchev quietly pulled them back."
+              ],
+              "examLens": {
+                "lensType": "Paper 2 Period Study",
+                "points": [
+                  {
+                    "label": "Q1 Consequence (4m)",
+                    "text": "Building the Berlin Wall immediately halted East Germany's skilled refugee exodus while trapping families apart under lethal border-guard fire."
+                  },
+                  {
+                    "label": "Q2 Narrative Link (8m)",
+                    "text": "Leads from the June 1961 Vienna Summit and surging refugee flight → into the 13 August border closure and October Checkpoint Charlie standoff."
+                  },
+                  {
+                    "label": "Q3 Importance (8m)",
+                    "text": "Important for Cold War stability because physically sealing East Berlin solved Khrushchev's refugee crisis without attacking Western troops inside West Berlin."
+                  }
+                ]
+              },
+              "questionSearchTerm": "Checkpoint Charlie"
+            },
+            {
+              "id": "kt2_2_a2",
+              "title": "Events of the Cuban Missile Crisis (October 1962)",
+              "dateTag": "14–28 Oct 1962",
+              "lessonIndex": 5,
+              "recallPrompt": "How did President Kennedy and Premier Khrushchev step back from nuclear war during the Thirteen Days of October 1962?",
+              "facts": [
+                "On 14 October 1962, a US U-2 spy plane photographed Soviet R-12 nuclear missile sites under construction in Cuba capable of striking Washington within ten minutes.",
+                "Consulting ExComm, Kennedy announced a 500-mile naval \"quarantine\" on 22 October and raised forces to DEFCON 2, prompting Soviet missile ships to turn back on 24 October.",
+                "After receiving two letters from Khrushchev and the shoot-down of Major Rudolf Anderson on 27 October, Kennedy publicly pledged never to invade Cuba and secretly agreed to remove US Jupiter missiles from Turkey."
+              ],
+              "examLens": {
+                "lensType": "Paper 2 Period Study",
+                "points": [
+                  {
+                    "label": "Q1 Consequence (4m)",
+                    "text": "Kennedy's naval quarantine and back-channel diplomacy secured the verified removal of Soviet nuclear missiles from Cuba without firing a nuclear shot."
+                  },
+                  {
+                    "label": "Q2 Narrative Link (8m)",
+                    "text": "Leads from U-2 discovery of San Cristóbal missile sites on 14 October → into the naval quarantine, Khrushchev's letters, and the 28 October settlement."
+                  },
+                  {
+                    "label": "Q3 Importance (8m)",
+                    "text": "Important as the Cold War's closest brush with nuclear war, frightening both superpowers into establishing direct communication and arms-control treaties from 1963."
+                  }
+                ]
+              },
+              "questionSearchTerm": "quarantine"
+            },
+            {
+              "id": "kt2_2_a3",
+              "title": "Re-establishment of Soviet Control in Czechoslovakia (1968–69)",
+              "dateTag": "Aug 1968–1969",
+              "lessonIndex": 7,
+              "recallPrompt": "How did Moscow crush the Prague Spring in August 1968 and restore hardline Communist control under Gustáv Husák?",
+              "facts": [
+                "On 20–21 August 1968, roughly 500,000 Warsaw Pact troops from the USSR, Poland, Hungary, and Bulgaria invaded Czechoslovakia while Dubček urged unarmed passive resistance.",
+                "Citizens confronted Soviet tank crews, removed road signs, and ran secret radio broadcasts, while student Jan Palach set himself alight in Wenceslas Square in January 1969.",
+                "Arrested and flown to Moscow to sign the 26 August Moscow Protocol restoring censorship, Dubček was replaced in April 1969 by Gustáv Husák, whose \"normalisation\" purged nearly 500,000 party members."
+              ],
+              "examLens": {
+                "lensType": "Paper 2 Period Study",
+                "points": [
+                  {
+                    "label": "Q1 Consequence (4m)",
+                    "text": "Moscow's invasion and Husák's 'normalisation' destroyed 'Socialism with a human face', restoring StB censorship and stationing Soviet divisions permanently in Czechoslovakia."
+                  },
+                  {
+                    "label": "Q2 Narrative Link (8m)",
+                    "text": "Leads from the 20–21 August Warsaw Pact invasion → into the Moscow Protocol, Husák's purges, and Brezhnev's formal justification of bloc intervention."
+                  },
+                  {
+                    "label": "Q3 Importance (8m)",
+                    "text": "Important for Eastern Europe because passive resistance avoided Hungary-scale bloodshed yet proved Moscow would crush even loyal Warsaw Pact allies who relaxed censorship."
+                  }
+                ]
+              },
+              "questionSearchTerm": "Husák"
+            },
+            {
+              "id": "kt2_2_a4",
+              "title": "The Brezhnev Doctrine (September–November 1968)",
+              "dateTag": "Sept–Nov 1968",
+              "lessonIndex": 7,
+              "recallPrompt": "What was the Brezhnev Doctrine of 1968, and how did it restrict the independence of Eastern European states?",
+              "facts": [
+                "Because Dubček had pledged to remain in the Warsaw Pact, Soviet leader Leonid Brezhnev needed a sweeping ideological justification for invading a fellow Communist ally.",
+                "Outlined in Pravda in September 1968 and proclaimed in Warsaw in November 1968, the Brezhnev Doctrine declared that once a country became socialist, communism was irreversible.",
+                "Whenever internal or external forces threatened one-party Communist rule or Warsaw Pact cohesion, all socialist states claimed a collective duty to intervene militarily."
+              ],
+              "examLens": {
+                "lensType": "Paper 2 Period Study",
+                "points": [
+                  {
+                    "label": "Q1 Consequence (4m)",
+                    "text": "The Brezhnev Doctrine froze political reform across the Eastern Bloc for twenty years by guaranteeing Soviet tanks would crush any challenge to one-party rule."
+                  },
+                  {
+                    "label": "Q2 Narrative Link (8m)",
+                    "text": "Leads from the August 1968 invasion of Czechoslovakia → into twenty years of enforced orthodoxy and Moscow's 1979 justification for invading Afghanistan."
+                  },
+                  {
+                    "label": "Q3 Importance (8m)",
+                    "text": "Important for Soviet control because subordinating national sovereignty to bloc survival kept satellite regimes obedient until Gorbachev abandoned the doctrine in 1988–89."
+                  }
+                ]
+              },
+              "questionSearchTerm": "Brezhnev Doctrine"
+            }
+          ]
+        },
+        {
+          "id": "kt2_3",
+          "code": "2.3",
+          "title": "Reaction to Crisis, 1961–70",
+          "dateFence": "1961–1970",
+          "outsideFenceTrap": "Outside 1961–70: 1972 SALT 1 Treaty and 1987 Brandenburg Gate Speech",
+          "linkedLessonIndices": [
+            4,
+            5,
+            7
+          ],
+          "anchors": [
+            {
+              "id": "kt2_3_a1",
+              "title": "Impact of the Berlin Wall and Kennedy's 1963 Visit to West Berlin",
+              "dateTag": "1961–63",
+              "lessonIndex": 4,
+              "recallPrompt": "How did construction of the Berlin Wall paradoxically reduce war risk while handing the West a propaganda victory?",
+              "facts": [
+                "Sealing the border stopped East Germany's refugee drain and let Khrushchev drop his 1958 ultimatum, prompting Kennedy's private relief that \"a wall is a hell of a lot better than a war\".",
+                "In global propaganda, the concrete wall and shootings of escapees like Peter Fechter proved communism had to imprison its own citizens to survive.",
+                "Visiting West Berlin on 26 June 1963, Kennedy addressed 120,000 cheering citizens to proclaim \"Ich bin ein Berliner\", celebrating Western freedom while respecting East Berlin's border."
+              ],
+              "examLens": {
+                "lensType": "Paper 2 Period Study",
+                "points": [
+                  {
+                    "label": "Q1 Consequence (4m)",
+                    "text": "The Wall removed Berlin as an immediate flashpoint for nuclear war while damaging Soviet moral standing worldwide."
+                  },
+                  {
+                    "label": "Q2 Narrative Link (8m)",
+                    "text": "Leads from the August 1961 border closure and October tank standoff → into stabilised Berlin frontiers and Kennedy's triumphant June 1963 speech."
+                  },
+                  {
+                    "label": "Q3 Importance (8m)",
+                    "text": "Important for US–Soviet relations because mutual acceptance of a divided Berlin shifted superpower brinkmanship away from Europe toward Cuba in 1962."
+                  }
+                ]
+              },
+              "questionSearchTerm": "Berliner"
+            },
+            {
+              "id": "kt2_3_a2",
+              "title": "Consequences of the Cuban Missile Crisis and the 1963 Hotline",
+              "dateTag": "1963–64",
+              "lessonIndex": 5,
+              "recallPrompt": "What were the immediate political and communication consequences of the October 1962 Cuban Missile Crisis for both leaders?",
+              "facts": [
+                "Shaken by how close Mutually Assured Destruction (MAD) came during October 1962, Washington and Moscow moved quickly to prevent dangerous communication delays in future crises.",
+                "In June 1963, the superpowers established the direct Moscow–Washington \"hotline\" teletype link enabling instant leader-to-leader crisis messaging.",
+                "Because America's pledge to withdraw Jupiter missiles from Turkey remained secret, Kennedy's prestige soared while Kremlin hardliners ousted Khrushchev in October 1964 for perceived weakness."
+              ],
+              "examLens": {
+                "lensType": "Paper 2 Period Study",
+                "points": [
+                  {
+                    "label": "Q1 Consequence (4m)",
+                    "text": "Installing the June 1963 Hotline improved rapid crisis communication, while perceived humiliation in Cuba contributed to Khrushchev's removal in October 1964."
+                  },
+                  {
+                    "label": "Q2 Narrative Link (8m)",
+                    "text": "Leads from the frightening communication delays of October 1962 → into the June 1963 Hotline and nuclear arms-restraint treaties of 1963–68."
+                  },
+                  {
+                    "label": "Q3 Importance (8m)",
+                    "text": "Important for stabilising the Cold War because surviving the brink convinced both superpowers to manage rivalry through agreed nuclear rules rather than ultimatums."
+                  }
+                ]
+              },
+              "questionSearchTerm": "hotline"
+            },
+            {
+              "id": "kt2_3_a3",
+              "title": "Nuclear Arms Control Treaties: 1963, 1967 and 1968",
+              "dateTag": "1963–68",
+              "lessonIndex": 5,
+              "recallPrompt": "What limits on nuclear weapons were agreed in the treaties of 1963, 1967, and 1968?",
+              "facts": [
+                "In August 1963, the USA, USSR, and Britain signed the Limited Test Ban Treaty (LTBT), prohibiting nuclear weapon tests in the atmosphere, outer space, and underwater.",
+                "Signed in 1967, the Outer Space Treaty banned placing nuclear or mass-destruction weapons in Earth orbit, on the Moon, or on any celestial body.",
+                "In 1968, the Nuclear Non-Proliferation Treaty (NPT) bound nuclear powers not to transfer atomic weapons or technology to non-nuclear countries."
+              ],
+              "examLens": {
+                "lensType": "Paper 2 Period Study",
+                "points": [
+                  {
+                    "label": "Q1 Consequence (4m)",
+                    "text": "The 1963, 1967, and 1968 treaties curbed radioactive fallout and prevented nuclear proliferation into space and non-nuclear states."
+                  },
+                  {
+                    "label": "Q2 Narrative Link (8m)",
+                    "text": "Leads from post-Cuba nuclear caution in 1963 → into a habit of superpower arms diplomacy that paved the way for SALT 1 in 1972."
+                  },
+                  {
+                    "label": "Q3 Importance (8m)",
+                    "text": "Important for reducing tension because although Soviet missile building continued to reach parity, these three treaties proved superpowers could sign binding nuclear accords."
+                  }
+                ]
+              },
+              "questionSearchTerm": "Limited Test Ban"
+            },
+            {
+              "id": "kt2_3_a4",
+              "title": "International Reaction to Soviet Measures in Czechoslovakia (1968–70)",
+              "dateTag": "1968–70",
+              "lessonIndex": 7,
+              "recallPrompt": "How did the Western powers and the wider Communist world react to the 1968 Soviet invasion of Czechoslovakia?",
+              "facts": [
+                "President Lyndon B. Johnson condemned the August 1968 invasion and cancelled a Moscow summit while the USSR vetoed a UN resolution, yet 500,000 US troops in Vietnam prevented Western intervention.",
+                "Inside the Communist world, Warsaw Pact member Romania under Nicolae Ceaușescu refused to send troops and joined Tito's Yugoslavia and Mao's China in denouncing Soviet aggression.",
+                "Outraged French and Italian Communist Parties publicly criticised Moscow's tanks, accelerating Eurocommunism as an independent democratic path free from Kremlin control."
+              ],
+              "examLens": {
+                "lensType": "Paper 2 Period Study",
+                "points": [
+                  {
+                    "label": "Q1 Consequence (4m)",
+                    "text": "Invading Czechoslovakia briefly paused US–Soviet summit talks while permanently fracturing Kremlin authority over Chinese, Romanian, and Western European Communists."
+                  },
+                  {
+                    "label": "Q2 Narrative Link (8m)",
+                    "text": "Leads from muted US reaction over Czechoslovakia in 1968–69 → into Nixon and Brezhnev resuming pragmatic Détente negotiations by 1970–72."
+                  },
+                  {
+                    "label": "Q3 Importance (8m)",
+                    "text": "Important for world communism because crushing a peaceful socialist ally deepened the Sino-Soviet split and pushed Western Communist parties into Eurocommunism."
+                  }
+                ]
+              },
+              "questionSearchTerm": "Eurocommunism"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kt3",
+      "number": 3,
+      "title": "Key Topic 3: The End of the Cold War, 1970–91",
+      "dateFence": "1970–1991",
+      "outsideFenceWarning": "Keep strictly inside 1970–91: do NOT confuse the 1963 Limited Test Ban Treaty with 1972 SALT 1, or 1968 Czechoslovakia with 1989 Velvet Revolution.",
+      "subTopics": [
+        {
+          "id": "kt3_1",
+          "code": "3.1",
+          "title": "Attempts to Reduce Superpower Tensions in the 1970s",
+          "dateFence": "1970–1979",
+          "outsideFenceTrap": "Outside 1970–79: 1968 Nuclear Non-Proliferation Treaty and 1987 INF Treaty",
+          "linkedLessonIndices": [
+            8
+          ],
+          "anchors": [
+            {
+              "id": "kt3_1_a1",
+              "title": "Détente: Motives and Superpower Cooperation in the 1970s",
+              "dateTag": "1970–75",
+              "lessonIndex": 8,
+              "recallPrompt": "Why did both the United States and the Soviet Union pursue Détente in the early 1970s?",
+              "facts": [
+                "Drained by a Vietnam War costing over $150 billion and 58,000 American lives, Nixon and Kissinger sought Détente to curb arms spending while visiting China in February 1972.",
+                "Having reached rough nuclear parity yet facing stagnant living standards and Sino-Soviet hostility, Brezhnev wanted Western grain imports, industrial technology, and recognition of Eastern European borders.",
+                "Expanding trade and Nixon–Brezhnev summits peaked symbolically on 17 July 1975 when US Apollo and Soviet Soyuz spacecraft docked in orbit for a televised handshake."
+              ],
+              "examLens": {
+                "lensType": "Paper 2 Period Study",
+                "points": [
+                  {
+                    "label": "Q1 Consequence (4m)",
+                    "text": "Détente unlocked millions of tonnes of American grain exports to the USSR alongside regular superpower summits and joint Apollo–Soyuz space cooperation."
+                  },
+                  {
+                    "label": "Q2 Narrative Link (8m)",
+                    "text": "Leads from Vietnam costs, Sino-Soviet rivalry, and MAD fears → into Nixon's May 1972 Moscow Summit and the signing of SALT 1."
+                  },
+                  {
+                    "label": "Q3 Importance (8m)",
+                    "text": "Important for easing 1970s tension because shared economic strain gave both superpowers practical self-interest in replacing brinkmanship with negotiation."
+                  }
+                ]
+              },
+              "questionSearchTerm": "Apollo"
+            },
+            {
+              "id": "kt3_1_a2",
+              "title": "The Moscow Summit and Significance of SALT 1 (May 1972)",
+              "dateTag": "May 1972",
+              "lessonIndex": 8,
+              "recallPrompt": "What did Nixon and Brezhnev agree in SALT 1 in May 1972, and what were the treaty's main limitations?",
+              "facts": [
+                "Signed by Nixon and Brezhnev on 26 May 1972, SALT 1 included the ABM Treaty limiting each nation to two anti-ballistic missile sites so mutual deterrence remained intact.",
+                "A five-year Interim Agreement froze strategic ICBM and submarine-launched SLBM launcher numbers at existing levels alongside a Basic Principles pledge to avoid military confrontation.",
+                "However, SALT 1 neither reduced existing nuclear arsenals nor banned MIRVs (multiple warheads on one missile), allowing total warhead numbers to keep multiplying through the 1970s."
+              ],
+              "examLens": {
+                "lensType": "Paper 2 Period Study",
+                "points": [
+                  {
+                    "label": "Q1 Consequence (4m)",
+                    "text": "SALT 1 formally capped ABM defences and missile launchers for the first time, slowing the strategic launcher race while leaving MIRV warheads unrestricted."
+                  },
+                  {
+                    "label": "Q2 Narrative Link (8m)",
+                    "text": "Leads from the May 1972 SALT 1 agreements → into broader European diplomacy at Helsinki (1975) and negotiations for SALT 2."
+                  },
+                  {
+                    "label": "Q3 Importance (8m)",
+                    "text": "Important as a diplomatic milestone because Nixon became the first US president to visit Moscow and proved strategic nuclear limits could be negotiated."
+                  }
+                ]
+              },
+              "questionSearchTerm": "SALT 1"
+            },
+            {
+              "id": "kt3_1_a3",
+              "title": "Significance of the Helsinki Accords (August 1975)",
+              "dateTag": "Aug 1975",
+              "lessonIndex": 8,
+              "recallPrompt": "What was agreed across the Three Baskets of the August 1975 Helsinki Accords, and why did Basket 3 backfire on Moscow?",
+              "facts": [
+                "In August 1975, President Gerald Ford, Brezhnev, Canada, and 32 European states signed the Helsinki Accords organised across three diplomatic \"Baskets\".",
+                "Basket 1 recognised post-1945 European borders as inviolable (including East Germany), while Basket 2 expanded East–West trade, industrial exchanges, and joint scientific research.",
+                "Basket 3 committed every signatory to respect freedom of speech, religion, press, and movement, inspiring Soviet Helsinki Watch groups and Czechoslovakia's Charter 77 to expose Kremlin abuses."
+              ],
+              "examLens": {
+                "lensType": "Paper 2 Period Study",
+                "points": [
+                  {
+                    "label": "Q1 Consequence (4m)",
+                    "text": "Basket 1 gave Moscow long-sought Western recognition of post-war Eastern European frontiers, but Basket 3 empowered dissidents to challenge Communist censorship from within."
+                  },
+                  {
+                    "label": "Q2 Narrative Link (8m)",
+                    "text": "Leads from August 1975 Basket 3 human rights commitments → into Jimmy Carter's human rights criticisms and growing strain on Détente from 1977."
+                  },
+                  {
+                    "label": "Q3 Importance (8m)",
+                    "text": "Important for undermining Soviet legitimacy because signing Basket 3 handed internal dissidents and Western journalists an official yardstick to condemn political arrests."
+                  }
+                ]
+              },
+              "questionSearchTerm": "Helsinki"
+            },
+            {
+              "id": "kt3_1_a4",
+              "title": "Strained Détente and Significance of SALT 2 (1977–79)",
+              "dateTag": "1977–79",
+              "lessonIndex": 8,
+              "recallPrompt": "Why did Détente come under strain under Jimmy Carter, and what happened to the June 1979 SALT 2 treaty?",
+              "facts": [
+                "President Jimmy Carter angered Brezhnev from 1977 by linking diplomacy to human rights and writing to dissident Andrei Sakharov, while US hawks protested Soviet SS-20 missiles and African interventions.",
+                "On 18 June 1979, Carter and Brezhnev signed SALT 2 in Vienna, setting an equal cap of 2,400 strategic nuclear delivery vehicles (falling to 2,250) and restricting MIRV launchers.",
+                "Fierce US Senate opposition delayed ratification, and following the December 1979 Soviet invasion of Afghanistan, Carter withdrew SALT 2 from the Senate in January 1980."
+              ],
+              "examLens": {
+                "lensType": "Paper 2 Period Study",
+                "points": [
+                  {
+                    "label": "Q1 Consequence (4m)",
+                    "text": "Growing Senate mistrust stalled SALT 2 ratification, and the Soviet invasion of Afghanistan led Carter to shelve the treaty permanently."
+                  },
+                  {
+                    "label": "Q2 Narrative Link (8m)",
+                    "text": "Leads from strained Vienna SALT 2 diplomacy in June 1979 → into the December 1979 Kabul invasion and final collapse of Détente."
+                  },
+                  {
+                    "label": "Q3 Importance (8m)",
+                    "text": "Important for showing Détente's fragility because ongoing Third World rivalry and missile upgrades eroded superpower trust even before Soviet tanks entered Afghanistan."
+                  }
+                ]
+              },
+              "questionSearchTerm": "SALT 2"
+            }
+          ]
+        },
+        {
+          "id": "kt3_2",
+          "code": "3.2",
+          "title": "The End of Détente and the ‘Second Cold War’, 1979–88",
+          "dateFence": "1979–1988",
+          "outsideFenceTrap": "Outside 1979–88: 1947 Truman Doctrine and November 1989 Fall of the Berlin Wall",
+          "linkedLessonIndices": [
+            9,
+            10
+          ],
+          "anchors": [
+            {
+              "id": "kt3_2_a1",
+              "title": "Soviet Invasion of Afghanistan, Carter Doctrine and Olympic Boycotts (1979–84)",
+              "dateTag": "1979–84",
+              "lessonIndex": 9,
+              "recallPrompt": "Why did the USSR invade Afghanistan in December 1979, and how did Carter and Olympic boycotts end Détente?",
+              "facts": [
+                "Fearing Mujahideen rebellion and Islamic fundamentalism spreading into Soviet Central Asia, Soviet forces invaded Afghanistan in December 1979, killing Hafizullah Amin and installing Babrak Karmal.",
+                "In January 1980, President Carter withdrew SALT 2, embargoed US grain and high technology, armed the Mujahideen via CIA Operation Cyclone, and proclaimed the Carter Doctrine defending the Persian Gulf.",
+                "Carter led over 60 nations in boycotting the 1980 Moscow Summer Olympics, prompting the USSR and 14 Eastern Bloc allies to boycott the 1984 Los Angeles Olympics."
+              ],
+              "examLens": {
+                "lensType": "Paper 2 Period Study",
+                "points": [
+                  {
+                    "label": "Q1 Consequence (4m)",
+                    "text": "Invading Afghanistan killed Détente overnight, trapping the USSR in a ten-year war costing $8 billion annually and 15,000 Soviet soldiers' lives."
+                  },
+                  {
+                    "label": "Q2 Narrative Link (8m)",
+                    "text": "Leads from Soviet troops storming Kabul in December 1979 → into the 1980 Carter Doctrine, Olympic boycotts, and Ronald Reagan's Second Cold War."
+                  },
+                  {
+                    "label": "Q3 Importance (8m)",
+                    "text": "Important for weakening the Soviet Union because Afghanistan became Moscow's bleeding ulcer while US sanctions cut off vital Western grain and computer technology."
+                  }
+                ]
+              },
+              "questionSearchTerm": "Carter Doctrine"
+            },
+            {
+              "id": "kt3_2_a2",
+              "title": "Reagan, the Second Cold War and Strategic Defence Initiative (1981–84)",
+              "dateTag": "1981–84",
+              "lessonIndex": 9,
+              "recallPrompt": "How did Ronald Reagan's defence build-up and 1983 Strategic Defence Initiative (SDI) intensify pressure on the USSR?",
+              "facts": [
+                "Dismissing Détente as a \"one-way street\", President Ronald Reagan launched a $1 trillion defence build-up funding B-1 bombers, Trident submarines, stealth aircraft, and European Pershing II and Cruise missiles.",
+                "In March 1983, Reagan branded the Soviet Union an \"Evil Empire\" and backed anti-communist guerrillas in Nicaragua and Afghanistan under the Reagan Doctrine.",
+                "On 23 March 1983, Reagan announced the Strategic Defence Initiative (SDI, or \"Star Wars\"), proposing space-based laser satellites to intercept Soviet missiles—exposing Soviet computer and economic lag."
+              ],
+              "examLens": {
+                "lensType": "Paper 2 Period Study",
+                "points": [
+                  {
+                    "label": "Q1 Consequence (4m)",
+                    "text": "SDI threatened to neutralise Soviet nuclear deterrence, convincing Kremlin leaders that trying to match American computerised space weapons would bankrupt the USSR."
+                  },
+                  {
+                    "label": "Q2 Narrative Link (8m)",
+                    "text": "Leads from Reagan's March 1983 SDI announcement → into Mikhail Gorbachev seeking urgent arms-control summits from 1985 to cut Soviet military spending."
+                  },
+                  {
+                    "label": "Q3 Importance (8m)",
+                    "text": "Important for ending the Cold War because Reagan's high-tech escalation exposed Soviet economic exhaustion and pushed Gorbachev toward genuine nuclear disarmament."
+                  }
+                ]
+              },
+              "questionSearchTerm": "Strategic Defence Initiative"
+            },
+            {
+              "id": "kt3_2_a3",
+              "title": "Gorbachev's New Thinking and the Geneva and Reykjavik Summits (1985–86)",
+              "dateTag": "1985–86",
+              "lessonIndex": 10,
+              "recallPrompt": "Why did Mikhail Gorbachev introduce 'New Thinking' in 1985, and what happened at the Geneva and Reykjavik summits?",
+              "facts": [
+                "Facing industrial stagnation, military spending consuming 25% of GDP, the $8 billion-a-year Afghan war, and the 1986 Chernobyl disaster, Mikhail Gorbachev launched Perestroika (economic restructuring) and Glasnost (political openness).",
+                "Meeting for the first time at the November 1985 Geneva Summit, Reagan and Gorbachev forged warm personal rapport and jointly declared that \"a nuclear war cannot be won and must never be fought\".",
+                "At the October 1986 Reykjavik Summit, Gorbachev proposed sweeping ballistic missile cuts if Reagan confined SDI to the laboratory; talks collapsed over SDI, yet laid the groundwork for disarmament."
+              ],
+              "examLens": {
+                "lensType": "Paper 2 Period Study",
+                "points": [
+                  {
+                    "label": "Q1 Consequence (4m)",
+                    "text": "Fireside diplomacy at Geneva and bold proposals at Reykjavik replaced 'Evil Empire' hostility with personal trust between Reagan and Gorbachev."
+                  },
+                  {
+                    "label": "Q2 Narrative Link (8m)",
+                    "text": "Leads from the near-breakthrough at Reykjavik in October 1986 → into Gorbachev uncoupling arms cuts from SDI to sign the December 1987 INF Treaty."
+                  },
+                  {
+                    "label": "Q3 Importance (8m)",
+                    "text": "Important for reducing tensions because Gorbachev recognised rescuing the Soviet economy required slashing nuclear defence budgets through cooperation with Washington."
+                  }
+                ]
+              },
+              "questionSearchTerm": "Reykjavik"
+            },
+            {
+              "id": "kt3_2_a4",
+              "title": "Reagan and Gorbachev: INF Treaty and Ending Confrontation (1987–89)",
+              "dateTag": "1987–89",
+              "lessonIndex": 10,
+              "recallPrompt": "How did Reagan and Gorbachev move from the 1987 INF Treaty to declaring the Cold War over at Malta in 1989?",
+              "facts": [
+                "Advised that countering SDI was cheaper than matching it, Gorbachev uncoupled missile talks from Star Wars and signed the Washington INF Treaty with Reagan on 8 December 1987.",
+                "Eliminating an entire weapon class for the first time, the INF Treaty destroyed over 2,600 US and Soviet land-based missiles (500 to 5,500 km range) under strict on-site inspections.",
+                "After Reagan's warm 1988 Moscow visit, Gorbachev announced 500,000 troop cuts and dropped the Brezhnev Doctrine at the UN (December 1988), withdrew from Afghanistan (February 1989), and declared the Cold War over with President Bush at Malta (December 1989)."
+              ],
+              "examLens": {
+                "lensType": "Paper 2 Period Study",
+                "points": [
+                  {
+                    "label": "Q1 Consequence (4m)",
+                    "text": "Signing the December 1987 INF Treaty physically destroyed over 2,600 Pershing II, Cruise, and SS-20 missiles rather than merely capping launcher growth like SALT 1."
+                  },
+                  {
+                    "label": "Q2 Narrative Link (8m)",
+                    "text": "Leads from the 1987 INF Treaty and Gorbachev's December 1988 UN speech → into peaceful 1989 revolutions across Eastern Europe."
+                  },
+                  {
+                    "label": "Q3 Importance (8m)",
+                    "text": "Important for ending superpower hostility because Reagan's shift from pressure to partnership met Gorbachev's willingness to verify real disarmament and leave Afghanistan."
+                  }
+                ]
+              },
+              "questionSearchTerm": "INF Treaty"
+            }
+          ]
+        },
+        {
+          "id": "kt3_3",
+          "code": "3.3",
+          "title": "The Collapse of Soviet Control of Eastern Europe, 1985–91",
+          "dateFence": "1985–1991",
+          "outsideFenceTrap": "Outside 1985–91: 1961 Construction of the Berlin Wall and 1968 Invasion of Czechoslovakia",
+          "linkedLessonIndices": [
+            10,
+            11
+          ],
+          "anchors": [
+            {
+              "id": "kt3_3_a1",
+              "title": "Gorbachev's Sinatra Doctrine and the Loosening Soviet Grip on Eastern Europe",
+              "dateTag": "1988–89",
+              "lessonIndex": 11,
+              "recallPrompt": "How did Gorbachev's abandonment of the Brezhnev Doctrine trigger peaceful revolutions across Eastern Europe in 1989?",
+              "facts": [
+                "Once Gorbachev renounced the Brezhnev Doctrine—dubbed the \"Sinatra Doctrine\" in October 1989—the loosening Soviet grip on Eastern Europe stripped Communist regimes of Red Army tank protection.",
+                "In June 1989, Poland's legalised Solidarity union won 99 of 100 Senate seats to form a non-communist government under Tadeusz Mazowiecki, while Hungary opened its barbed-wire border with Austria.",
+                "Before the end of 1989, Czechoslovakia's peaceful Velvet Revolution elected playwright Václav Havel president, Bulgaria removed Todor Zhivkov, and Romanians overthrew Nicolae Ceaușescu."
+              ],
+              "examLens": {
+                "lensType": "Paper 2 Period Study",
+                "points": [
+                  {
+                    "label": "Q1 Consequence (4m)",
+                    "text": "Refusing to deploy Red Army tanks enabled peaceful electoral transitions in Poland, Hungary, and Czechoslovakia that ended four decades of one-party Communist rule."
+                  },
+                  {
+                    "label": "Q2 Narrative Link (8m)",
+                    "text": "Leads from Hungary dismantling its Austrian border fence in summer 1989 → into mass East German escapes and the collapse of East Germany's regime."
+                  },
+                  {
+                    "label": "Q3 Importance (8m)",
+                    "text": "Important for ending Soviet control because without Kremlin military backing, unpopular satellite governments across the Iron Curtain collapsed within months."
+                  }
+                ]
+              },
+              "questionSearchTerm": "Sinatra Doctrine"
+            },
+            {
+              "id": "kt3_3_a2",
+              "title": "Significance of the Fall of the Berlin Wall (1989) and Reunification",
+              "dateTag": "Nov 1989–Oct 1990",
+              "lessonIndex": 11,
+              "recallPrompt": "Why did the Berlin Wall open on 9 November 1989, and what was its political significance for Germany and Europe?",
+              "facts": [
+                "After Gorbachev warned Soviet troops would stay in barracks and 70,000+ citizens marched in Leipzig, East Germany replaced Erich Honecker with Egon Krenz in October 1989.",
+                "On the evening of 9 November 1989, spokesman Günter Schabowski mistakenly announced border crossings were open \"immediately, without delay\", and outnumbered guards opened the barriers to vast crowds.",
+                "Hammering down the Cold War's central symbol accelerated Communism's collapse across Europe and paved the way for formal German reunification inside NATO under Chancellor Helmut Kohl on 3 October 1990."
+              ],
+              "examLens": {
+                "lensType": "Paper 2 Period Study",
+                "points": [
+                  {
+                    "label": "Q1 Consequence (4m)",
+                    "text": "Opening the Berlin Wall ended twenty-eight years of physical separation in Berlin and made Communist East Germany's survival as a separate state impossible."
+                  },
+                  {
+                    "label": "Q2 Narrative Link (8m)",
+                    "text": "Leads from the 9 November 1989 fall of the Berlin Wall → into German reunification on 3 October 1990 and dissolution of the Warsaw Pact."
+                  },
+                  {
+                    "label": "Q3 Importance (8m)",
+                    "text": "Important symbolically and strategically because reuniting Germany peacefully inside NATO ended the division of Europe agreed at Potsdam in 1945."
+                  }
+                ]
+              },
+              "questionSearchTerm": "Schabowski"
+            },
+            {
+              "id": "kt3_3_a3",
+              "title": "End of the Warsaw Pact (1990–July 1991)",
+              "dateTag": "1990–July 1991",
+              "lessonIndex": 11,
+              "recallPrompt": "Why did the collapse of Communist regimes in Eastern Europe bring about the formal end of the Warsaw Pact in 1991?",
+              "facts": [
+                "Newly elected non-communist governments in Poland, Hungary, and Czechoslovakia rejected Soviet military authority and negotiated the withdrawal of Red Army garrisons from their territory.",
+                "Formal German reunification on 3 October 1990 absorbed the former East Germany into NATO, removing a frontline pillar of the Eastern Bloc alliance.",
+                "Stripped of ideological unity and strategic purpose, the Warsaw Pact dissolved its military structures in March 1991 and formally ended on 1 July 1991."
+              ],
+              "examLens": {
+                "lensType": "Paper 2 Period Study",
+                "points": [
+                  {
+                    "label": "Q1 Consequence (4m)",
+                    "text": "Dissolving the Warsaw Pact in July 1991 ended Moscow's forty-six-year military buffer zone across Eastern Europe and left NATO unchallenged."
+                  },
+                  {
+                    "label": "Q2 Narrative Link (8m)",
+                    "text": "Leads from 1989 democratic elections and 1990 German reunification → into the July 1991 end of the Warsaw Pact and Kremlin hardliners' August 1991 coup."
+                  },
+                  {
+                    "label": "Q3 Importance (8m)",
+                    "text": "Important for ending the Cold War because dismantling the rival alliance founded in 1955 removed the military confrontation dividing Europe."
+                  }
+                ]
+              },
+              "questionSearchTerm": "1 July 1991"
+            },
+            {
+              "id": "kt3_3_a4",
+              "title": "The August 1991 Coup and Collapse of the Soviet Union (1990–91)",
+              "dateTag": "1990–Dec 1991",
+              "lessonIndex": 11,
+              "recallPrompt": "How did nationalist independence movements and the failed August 1991 coup destroy the Soviet Union by December 1991?",
+              "facts": [
+                "Economic shortages under Perestroika and freer speech under Glasnost encouraged Lithuania (March 1990), Latvia, and Estonia to declare independence, prompting Gorbachev's looser New Union Treaty.",
+                "On 19 August 1991, Communist hardliners (the Gang of Eight) staged a coup detaining Gorbachev in Crimea, but Russian President Boris Yeltsin rallied Moscow crowds atop a tank to defeat it in 72 hours.",
+                "With Gorbachev's authority broken, Russia, Ukraine, and Belarus formed the Commonwealth of Independent States (CIS) on 8 December 1991, and Gorbachev resigned on 25 December 1991, dissolving the USSR into fifteen states."
+              ],
+              "examLens": {
+                "lensType": "Paper 2 Period Study",
+                "points": [
+                  {
+                    "label": "Q1 Consequence (4m)",
+                    "text": "Defeat of the August 1991 hardline coup destroyed Communist Party authority in Russia, shifted power to Boris Yeltsin, and accelerated republic secession."
+                  },
+                  {
+                    "label": "Q2 Narrative Link (8m)",
+                    "text": "Leads from Baltic independence bids and the failed August 1991 coup → into the December 1991 Belavezha Accords and Gorbachev's Christmas night resignation."
+                  },
+                  {
+                    "label": "Q3 Importance (8m)",
+                    "text": "Important for world history because dissolving the USSR into fifteen independent states ended seventy-four years of Soviet communism and left the USA as sole superpower."
+                  }
+                ]
+              },
+              "questionSearchTerm": "Yeltsin"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

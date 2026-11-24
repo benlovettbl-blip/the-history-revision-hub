@@ -131,52 +131,6 @@ const CANONICAL_KT_TITLES = {
   },
 };
 
-// Verified foundational practice items for CME background lesson_0 (KT 1.0: 1915–39)
-const CME_LESSON_0_FOUNDATION_QUESTIONS = [
-  {
-    id: 'cme_l0_q1',
-    type: '4-mark',
-    marks: 4,
-    tariff: '4 marks',
-    question: 'Explain one consequence of the Balfour Declaration (November 1917).',
-    examiner_tip:
-      'Develop one focused consequence with a specific factual detail (e.g. rising Jewish immigration under the Mandate or Arab resentment over McMahon’s 1915 promises).',
-    model:
-      'One major consequence of the Balfour Declaration in November 1917 was a sharp escalation in nationalist tension between Palestinian Arabs and Jewish settlers. Because Foreign Secretary Arthur Balfour pledged British support for a "national home for the Jewish people" after Britain had already promised Arab independence in the 1915 McMahon-Hussein Correspondence, Palestinian Arabs felt betrayed while Zionist immigration accelerated under the British Mandate.',
-    model_tiers: {
-      tier_2m: {
-        title: '2/4 Basic Knowledge',
-        score: '2 / 4 Marks',
-        text: 'One consequence of the Balfour Declaration in 1917 was that Britain promised support for a Jewish national home in Palestine, which angered Arabs living there.',
-        verdict:
-          'AO2 Level 1 (1m) • AO1 Level 1 (1m). Identifies the promise and Arab anger, but needs causal development explaining how contradictory wartime pledges fuelled tension under the Mandate.',
-      },
-    },
-  },
-  {
-    id: 'cme_l0_q2',
-    type: '8-mark-narrative',
-    marks: 8,
-    tariff: '8 marks',
-    question:
-      'Write a narrative account analysing the key events of British rule and growing conflict in Mandatory Palestine in the years 1917–39.',
-    stimulus: ['The Balfour Declaration (1917)', 'The Arab Revolt (1936–39)'],
-    examiner_tip:
-      'Link three chronological phases with causal connectives: (1) contradictory wartime promises & Mandate setup, (2) 1930s surge in Jewish immigration fleeing Nazi persecution sparking the 1936–39 Arab Revolt, and (3) the 1939 MacDonald White Paper.',
-    model:
-      'Conflict in Mandatory Palestine began with Britain’s contradictory wartime pledges between 1915 and 1917. Having promised Sharif Hussein independent Arab rule in the 1915 McMahon-Hussein Correspondence, Britain secretly divided Ottoman lands with France in the 1916 Sykes-Picot Agreement and issued the November 1917 Balfour Declaration backing a Jewish national home. When the League of Nations confirmed the British Mandate, these rival expectations made British governance unstable from the outset.<br><br>Consequently, tensions boiled over in the 1930s when Nazi persecution in Germany drove a rapid surge in Jewish immigration to Palestine. Fearing permanent demographic displacement and land loss, Palestinian Arabs launched the Arab Revolt (1936–39), beginning with a six-month general strike and escalating into armed rebellion. When the 1937 Peel Commission proposed partitioning Palestine into separate Jewish and Arab states, Arab leaders rejected partition outright, forcing Britain to deploy 20,000 troops to crush the uprising.<br><br>As a direct result of this rebellion and the looming Second World War in Europe, Britain reversed policy in the May 1939 MacDonald White Paper. Desperate to secure Arab oil supplies and regional stability against Nazi Germany, Britain capped Jewish immigration at 75,000 over five years and restricted land sales. This satisfied neither side and directly triggered Zionist paramilitary resistance against British rule after 1945.',
-    model_tiers: {
-      tier_4m: {
-        title: '4/8 Descriptive Story',
-        score: '4 / 8 Marks',
-        text: 'In 1917 Britain issued the Balfour Declaration supporting a Jewish national home. In the 1930s many Jewish refugees arrived from Europe, and Palestinian Arabs started the Arab Revolt between 1936 and 1939. Britain then passed the 1939 White Paper limiting Jewish immigration to 75,000.',
-        verdict:
-          'Level 2 (4/8 marks). Accurate chronological sequence with specific facts, but describes events in turn rather than explaining the causal links driving Britain’s shift from partition (1937) to the 1939 White Paper.',
-      },
-    },
-  },
-];
-
 const directoryCache = new Map();
 
 function normalizeAlias(rawId) {
@@ -1651,6 +1605,194 @@ function defaultExaminerTipForFamily(family, marks) {
 }
 
 /**
+ * Addition #1: Second-Half Stem Highlighter & Edexcel Question Trap Decoder.
+ * Visually splits Edexcel question stems into [TOPIC / EVENT] vs [MUST LINK TO / ENQUIRY LENS]
+ * so Year 11 pupils stop storytelling and ignoring the second half of the stem.
+ */
+export function parseStemHighlight(questionStem, family) {
+  const s = String(questionStem || '').trim();
+  if (!s) {
+    return { html: '', trapWarning: '' };
+  }
+
+  // 1. 8m Importance (Paper 2 Period Study Q3: "Explain the importance of X for Y.")
+  const impMatch = s.match(
+    /^(Explain\s+the\s+importance\s+of\s+|Analyse\s+the\s+significance\s+of\s+)(.+?)(\s+(?:for|in|to)\s+.+?)(\.?)$/i,
+  );
+  if (impMatch || family === 'importance') {
+    if (impMatch) {
+      return {
+        html: `${escapeHtml(impMatch[1])}<span class="met-stem-topic">${escapeHtml(impMatch[2])}</span> <span class="met-stem-lens">${escapeHtml(impMatch[3].trim())}${escapeHtml(impMatch[4])}</span>`,
+        trapWarning: `Second-Half Rule: Don’t just tell the story of ${impMatch[2].replace(/the\s+/i, '')} — every paragraph MUST link directly "${impMatch[3].trim()}".`,
+      };
+    }
+  }
+
+  // 2. 8m Source Utility (Paper 1A Q2a / Paper 3 Q3a: "How useful are Sources B and C for an enquiry into X?")
+  const utilMatch = s.match(
+    /^(How\s+useful\s+(?:is|are)\s+)(Sources?\s+[A-Z](?:\s+and\s+(?:Source\s+)?[A-Z])?)(\s+for\s+an\s+enquiry\s+into\s+.+?)(\??)$/i,
+  );
+  if (utilMatch) {
+    return {
+      html: `${escapeHtml(utilMatch[1])}<span class="met-stem-topic">${escapeHtml(utilMatch[2])}</span> <span class="met-stem-lens">${escapeHtml(utilMatch[3].trim())}${escapeHtml(utilMatch[4] || '?')}</span>`,
+      trapWarning:
+        'Enquiry Lens Rule: Judge how useful each source is FOR THIS EXACT ENQUIRY (Content + Provenance + Own Knowledge) — avoid generic reliability claims.',
+    };
+  }
+
+  // 3. 16m Paper 3 Interpretation Verdict ("How far do you agree with Interpretation 2 about X?")
+  const interpVerdictMatch = s.match(
+    /^(How\s+far\s+do\s+you\s+agree\s+with\s+)(Interpretation\s+[12])(\s+about\s+[^?]+)(\??)(.*)$/i,
+  );
+  if (interpVerdictMatch) {
+    const trailing = (interpVerdictMatch[5] || '')
+      .replace(/\s*\[?\s*16\s*marks?(?:\s*\+\s*4\s*SPaG)?\s*\]?\.?$/i, '')
+      .trim();
+    return {
+      html: `${escapeHtml(interpVerdictMatch[1])}<span class="met-stem-topic">${escapeHtml(interpVerdictMatch[2])}</span> <span class="met-stem-lens">${escapeHtml(interpVerdictMatch[3].trim())}${escapeHtml(interpVerdictMatch[4] || '?')}</span>${trailing ? ` <span style="opacity:0.78;font-weight:600;">${escapeHtml(trailing)}</span>` : ''}`,
+      trapWarning:
+        'Paper 3 Essay Rule: Quote & evaluate BOTH Interpretation 2 and Interpretation 1 alongside detailed own knowledge + reach a sustained verdict.',
+    };
+  }
+
+  // 4. 16m Quoted Statement Essay (Paper 1 Q5/Q6 & Paper 2B Q3/Q4)
+  const quoteVerdictMatch = s.match(
+    /^([‘'“"].+?[’'”"]\.?\s*)(How\s+far\s+do\s+you\s+agree\??.*)$/i,
+  );
+  if (quoteVerdictMatch) {
+    return {
+      html: `<span class="met-stem-topic">${escapeHtml(quoteVerdictMatch[1].trim())}</span> <span class="met-stem-lens">${escapeHtml(quoteVerdictMatch[2].trim())}</span>`,
+      trapWarning:
+        'Judgement Rule: Weigh the named factor in the quote AGAINST at least two alternative factors using clear criteria before your final verdict.',
+    };
+  }
+
+  // 5. 8m Analytical Narrative ("Write a narrative account analysing the key events of X in the years Y.")
+  const narrMatch = s.match(
+    /^(Write\s+a\s+narrative\s+account\s+analysing\s+)(.+?)(\s+in\s+the\s+(?:years|period)\s+.+?)(\.?)$/i,
+  );
+  if (narrMatch) {
+    return {
+      html: `${escapeHtml(narrMatch[1])}<span class="met-stem-topic">${escapeHtml(narrMatch[2])}</span> <span class="met-stem-lens">${escapeHtml(narrMatch[3].trim())}${escapeHtml(narrMatch[4])}</span>`,
+      trapWarning:
+        'Causal Chain Rule: Sequence 3 stages (Beginning → Catalyst → Outcome) joined by causal links ("Consequently", "This triggered") strictly inside the date range.',
+    };
+  }
+
+  // 6. 12m Explain Why ("Explain why X in the years Y.")
+  const whyMatch = s.match(
+    /^(Explain\s+why\s+)(.+?)(\s+in\s+the\s+(?:years|period)\s+.+?)?(\.?)$/i,
+  );
+  if (whyMatch && family === 'causation') {
+    const periodSpan = whyMatch[3]
+      ? ` <span class="met-stem-lens">${escapeHtml(whyMatch[3].trim())}${escapeHtml(whyMatch[4])}</span>`
+      : escapeHtml(whyMatch[4]);
+    return {
+      html: `${escapeHtml(whyMatch[1])}<span class="met-stem-topic">${escapeHtml(whyMatch[2])}</span>${periodSpan}`,
+      trapWarning:
+        '3-Reason PEEL Rule: Explain 3 distinct reasons WHY (including own knowledge beyond the 2 prompt bullets) — do not write a chronological story.',
+    };
+  }
+
+  // 7. 4m / 8m Consequence ("Explain one/two consequences of X.")
+  const consMatch = s.match(
+    /^(Explain\s+(?:one|two)\s+(?:distinct\s+)?consequences?\s+of\s+)(.+?)(\.?)$/i,
+  );
+  if (consMatch) {
+    return {
+      html: `${escapeHtml(consMatch[1])}<span class="met-stem-topic">${escapeHtml(consMatch[2])}</span> <span class="met-stem-lens">[Focus: What happened AS A RESULT]</span>`,
+      trapWarning:
+        'Aftermath Rule: Explain what changed AFTER and BECAUSE of this event — score 0 if you only describe causes or what happened during the event itself.',
+    };
+  }
+
+  // 8. 4m Thematic Comparison ("Explain one way in which X was similar/different in A and B.")
+  const compMatch = s.match(
+    /^(Explain\s+one\s+way\s+in\s+which\s+)(.+?)(\s+(?:was|were)\s+(?:similar|different).+?)(\.?)$/i,
+  );
+  if (compMatch) {
+    return {
+      html: `${escapeHtml(compMatch[1])}<span class="met-stem-topic">${escapeHtml(compMatch[2])}</span> <span class="met-stem-lens">${escapeHtml(compMatch[3].trim())}${escapeHtml(compMatch[4])}</span>`,
+      trapWarning:
+        'Both-Periods Rule: Give specific factual evidence from BOTH named eras — naming only one period caps you at 2/4.',
+    };
+  }
+
+  return {
+    html: escapeHtml(s),
+    trapWarning: '',
+  };
+}
+
+/**
+ * Addition #2: Date-Fence Guardrail Builder.
+ * Detects year spans in the question or lesson and shows Year 11 pupils which canonical events
+ * sit INSIDE the fence (valid marks) vs OUTSIDE the fence (0 marks if used as a main paragraph).
+ */
+function parseYearRangeFromText(str) {
+  const s = String(str || '');
+  // Match c1250–c1500, 1964–67, 1948–1949, 1918-39
+  const rangeMatch = s.match(/\bc?\.?(\d{4})\s*[–-]\s*c?\.?(\d{2,4})\b/i);
+  if (rangeMatch) {
+    const start = parseInt(rangeMatch[1], 10);
+    let endRaw = rangeMatch[2];
+    let end = parseInt(endRaw, 10);
+    if (endRaw.length === 2) {
+      end = Math.floor(start / 100) * 100 + end;
+    }
+    if (end >= start && start >= 1000 && end <= 2030) {
+      return { label: `${rangeMatch[0].replace(/\s+/g, '')}`, start, end };
+    }
+  }
+  const singleMatch = s.match(/\b(1[2-9]\d{2}|20[0-2]\d)\b/);
+  if (singleMatch) {
+    const yr = parseInt(singleMatch[1], 10);
+    return { label: String(yr), start: yr, end: yr };
+  }
+  return null;
+}
+
+function buildQuestionDateFence(questionStem, lesson, lessonMeta, rawLessons) {
+  const stemRange = parseYearRangeFromText(questionStem);
+  const lessonRange = parseYearRangeFromText(lessonMeta?.lessonTitle || '');
+  const activeRange = stemRange || lessonRange;
+  if (!activeRange) return null;
+
+  const insideItems = [];
+  const stages = Array.isArray(lesson?.workbook_stages) ? lesson.workbook_stages : [];
+  stages.forEach((st) => {
+    const t = stripHtml(st?.title || '').trim();
+    if (t && insideItems.length < 2) insideItems.push(t);
+  });
+
+  // Find a tempting neighbouring lesson strictly outside the date range
+  let outsideExample = '';
+  for (let i = 0; i < rawLessons.length; i++) {
+    if (i === lessonMeta.lessonIndex) continue;
+    const otherTitle = String(rawLessons[i]?.title || '');
+    const otherRange = parseYearRangeFromText(otherTitle);
+    if (
+      otherRange &&
+      (otherRange.end < activeRange.start - 1 || otherRange.start > activeRange.end + 1)
+    ) {
+      const cleanOther = otherTitle.replace(/^KT\s*\d+\.\d+\s*[:–-]\s*/i, '').trim();
+      if (cleanOther) {
+        outsideExample = `${cleanOther} (${otherRange.label})`;
+        break;
+      }
+    }
+  }
+
+  if (insideItems.length === 0 && !outsideExample) return null;
+
+  return {
+    fenceLabel: activeRange.label,
+    insideText: insideItems.join(' · '),
+    outsideText: outsideExample,
+  };
+}
+
+/**
  * Hydrates and normalizes the full Key Topic & Lesson Exam Directory for a GCSE course.
  */
 export async function buildUnitExamDirectory(rawUnitId, { forceRefresh = false } = {}) {
@@ -1685,17 +1827,23 @@ export async function buildUnitExamDirectory(rawUnitId, { forceRefresh = false }
     const epContainer =
       lesson?.exam_practice && !Array.isArray(lesson.exam_practice) ? lesson.exam_practice : null;
 
-    let rawPrimaryQs = Array.isArray(lesson?.exam_practice)
-      ? lesson.exam_practice
-      : Array.isArray(lesson?.exam_practice?.questions)
-        ? lesson.exam_practice.questions
-        : [];
+    // Exclude pre-1945 background-only Lesson 0 (KT 1.0: 1915–39) on CME Option P5
+    // so pupils never practise non-examined pre-specification exam questions.
+    const isNonExaminedCmeBackground =
+      unitId === 'cme_new' &&
+      (lessonIndex === 0 || lesson?.id === 'lesson_0' || /^KT\s*1\.0\b/i.test(lesson?.title || ''));
 
-    if (rawPrimaryQs.length === 0 && unitId === 'cme_new' && lessonIndex === 0) {
-      rawPrimaryQs = CME_LESSON_0_FOUNDATION_QUESTIONS;
-    }
+    let rawPrimaryQs = isNonExaminedCmeBackground
+      ? []
+      : Array.isArray(lesson?.exam_practice)
+        ? lesson.exam_practice
+        : Array.isArray(lesson?.exam_practice?.questions)
+          ? lesson.exam_practice.questions
+          : [];
 
-    const extraMocks = getNonDuplicateExtraMockQuestions(unitId, lesson, rawPrimaryQs) || [];
+    const extraMocks = isNonExaminedCmeBackground
+      ? []
+      : getNonDuplicateExtraMockQuestions(unitId, lesson, rawPrimaryQs) || [];
     const combinedRaw = [
       ...rawPrimaryQs.map((q) => ({ ...q, _sourceOrigin: 'canonical' })),
       ...extraMocks.map((mq) => ({
@@ -1766,6 +1914,9 @@ export async function buildUnitExamDirectory(rawUnitId, { forceRefresh = false }
             ? `${lessonMeta.cleanTitle.slice(0, 32).trim()}…`
             : lessonMeta.cleanTitle;
 
+        const stemHighlight = parseStemHighlight(questionStem, tariffMeta.family);
+        const dateFence = buildQuestionDateFence(questionStem, lesson, lessonMeta, rawLessons);
+
         const baseInfo = {
           id: `${unitId}_l${lessonIndex}_q${lessonQuestionNum}`,
           unitId,
@@ -1780,6 +1931,8 @@ export async function buildUnitExamDirectory(rawUnitId, { forceRefresh = false }
           ktLabel: lessonMeta.ktLabel,
           lessonQuestionNum,
           question: questionStem,
+          stemHighlight,
+          dateFence,
           marks: tariffMeta.marks,
           rawMarks: tariffMeta.rawMarks,
           spagMarks: tariffMeta.spagMarks,

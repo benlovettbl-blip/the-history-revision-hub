@@ -1,0 +1,3040 @@
+{
+  "unitId": "edexcel_medicine",
+  "schemaVersion": "v8-4ring-cards",
+  "optionCode": "1HI0/11",
+  "paperType": "Paper 1",
+  "paperLabel": "Paper 1 · Thematic Study & Historic Environment",
+  "courseTitle": "Medicine in Britain & The Western Front",
+  "examDateBoundary": "c1250–present & 1914–18",
+  "disclaimer": "Aligned to Pearson Edexcel GCSE (9–1) History (1HI0). Independent educational resource — not endorsed by Pearson.",
+  "root": {
+    "id": "root",
+    "tier": 0,
+    "label": "Medicine, c1250–Present",
+    "subLabel": "Edexcel Option 11",
+    "dateChip": "c1250–Present",
+    "gloss": "Pearson Edexcel Option 11 tracing disease ideas, prevention, treatment, and public health in Britain (c1250–present) plus the Western Front (1914–18).",
+    "children": [
+      {
+        "id": "kt1",
+        "keyTopicNumber": 1,
+        "tier": 1,
+        "side": "left",
+        "color": "#2563eb",
+        "label": "Medieval Medicine",
+        "dateChip": "c1250–c1500",
+        "lessonIndex": 0,
+        "stageIndex": 0,
+        "searchTerm": "Four Humours",
+        "gloss": "Supernatural and religious explanations, Galen and the Four Humours, miasma, monastic hospitals, community care, and responses to the 1348–49 Black Death.",
+        "children": [
+          {
+            "id": "kt1_1",
+            "code": "1.1",
+            "tier": 2,
+            "label": "1.1 Medieval Disease Ideas",
+            "dateChip": "c1250–c1500",
+            "lessonIndex": 0,
+            "stageIndex": 0,
+            "searchTerm": "punishment",
+            "gloss": "Era Pattern: Church authority, astrology, miasma, and Galen's Four Humours blocked anatomical inquiry across c1250–c1500.",
+            "children": [
+              {
+                "id": "kt1_1_s1",
+                "tier": 3,
+                "label": "Supernatural & Religious Causes",
+                "dateChip": "c1250–1500",
+                "lessonIndex": 0,
+                "stageIndex": 0,
+                "searchTerm": "punishment",
+                "gloss": "Supernatural and religious explanations taught that God sent disease and illness in medieval England as punishment for sin or via planetary astrology.",
+                "children": [
+                  {
+                    "id": "kt1_1_s1_c1",
+                    "tier": 4,
+                    "tag": "Continuity",
+                    "label": "Divine Punishment for Human Sin",
+                    "detail": "Priests taught sickness punished sin or tested faith, discouraging people from seeking physical causes.",
+                    "lessonIndex": 0,
+                    "stageIndex": 0,
+                    "searchTerm": "original sin",
+                    "gloss": "Priests taught sickness punished sin or tested faith, discouraging people from seeking physical causes."
+                  },
+                  {
+                    "id": "kt1_1_s1_f1",
+                    "tier": 4,
+                    "tag": "Factor",
+                    "label": "Church Monopoly Over Universities",
+                    "detail": "Clergy ran monastic libraries and Oxford lectures, censoring scholars like Roger Bacon who urged experiments.",
+                    "lessonIndex": 0,
+                    "stageIndex": 4,
+                    "searchTerm": "Roger Bacon",
+                    "gloss": "Clergy ran monastic libraries and Oxford lectures, censoring scholars like Roger Bacon who urged experiments.",
+                    "forTheme": "Church"
+                  },
+                  {
+                    "id": "kt1_1_s1_c2",
+                    "tier": 4,
+                    "tag": "Change",
+                    "label": "1345 Planetary Astrology Charts",
+                    "detail": "Translated Arabic star tables let physicians link planetary alignments and Zodiac signs to sudden epidemics.",
+                    "lessonIndex": 0,
+                    "stageIndex": 2,
+                    "searchTerm": "Zodiac Man",
+                    "gloss": "Translated Arabic star tables let physicians link planetary alignments and Zodiac signs to sudden epidemics."
+                  },
+                  {
+                    "id": "kt1_1_s1_l1",
+                    "tier": 4,
+                    "tag": "Limit",
+                    "label": "Leprosy Treated as Moral Stigma",
+                    "detail": "Viewing disfiguring leprosy as outward sin exiled sufferers to suburban Lazar houses without medical cure.",
+                    "lessonIndex": 0,
+                    "stageIndex": 1,
+                    "searchTerm": "Lazar",
+                    "gloss": "Viewing disfiguring leprosy as outward sin exiled sufferers to suburban Lazar houses without medical cure."
+                  }
+                ]
+              },
+              {
+                "id": "kt1_1_s2",
+                "tier": 3,
+                "label": "Four Humours & Galen's Influence",
+                "dateChip": "c1250–1500",
+                "lessonIndex": 1,
+                "stageIndex": 1,
+                "searchTerm": "Four Humours",
+                "gloss": "Rational explanations centred on the Theory of the Four Humours and Galen's Theory of Opposites, whose enduring influence dominated medieval England.",
+                "children": [
+                  {
+                    "id": "kt1_1_s2_c1",
+                    "tier": 4,
+                    "tag": "Continuity",
+                    "label": "Imbalance of Four Bodily Humours",
+                    "detail": "Physicians blamed fevers and sickness on unequal blood, phlegm, yellow bile, and black bile levels.",
+                    "lessonIndex": 1,
+                    "stageIndex": 1,
+                    "searchTerm": "yellow bile",
+                    "gloss": "Physicians blamed fevers and sickness on unequal blood, phlegm, yellow bile, and black bile levels."
+                  },
+                  {
+                    "id": "kt1_1_s2_f1",
+                    "tier": 4,
+                    "tag": "Factor",
+                    "label": "Church Endorsed Galen's Soul Texts",
+                    "detail": "Because Galen mentioned one Creator, Catholic authorities treated his ancient books as beyond criticism.",
+                    "lessonIndex": 1,
+                    "stageIndex": 2,
+                    "searchTerm": "Theory of Opposites",
+                    "gloss": "Because Galen mentioned one Creator, Catholic authorities treated his ancient books as beyond criticism.",
+                    "forTheme": "Church"
+                  },
+                  {
+                    "id": "kt1_1_s2_i1",
+                    "tier": 4,
+                    "tag": "Impact",
+                    "label": "Clinical Uroscopy & Pulse Checks",
+                    "detail": "Physicians inspected urine colour, smell, and taste against matula charts to match treatments to humours.",
+                    "lessonIndex": 1,
+                    "stageIndex": 3,
+                    "searchTerm": "matula",
+                    "gloss": "Physicians inspected urine colour, smell, and taste against matula charts to match treatments to humours."
+                  },
+                  {
+                    "id": "kt1_1_s2_l1",
+                    "tier": 4,
+                    "tag": "Limit",
+                    "label": "Animal Dissection Anatomical Errors",
+                    "detail": "Bans on human dissection preserved over 200 Galenic mistakes derived from cutting apes and pigs.",
+                    "lessonIndex": 1,
+                    "stageIndex": 2,
+                    "searchTerm": "Galen",
+                    "gloss": "Bans on human dissection preserved over 200 Galenic mistakes derived from cutting apes and pigs."
+                  }
+                ]
+              },
+              {
+                "id": "kt1_1_s3",
+                "tier": 3,
+                "label": "Miasma Theory & Corrupt Air",
+                "dateChip": "c1250–1500",
+                "lessonIndex": 1,
+                "stageIndex": 4,
+                "searchTerm": "miasma",
+                "gloss": "Rational miasma theory blamed disease and illness on foul, corrupt air rising from rotting waste, swamps, and unburied corpses across England.",
+                "children": [
+                  {
+                    "id": "kt1_1_s3_c1",
+                    "tier": 4,
+                    "tag": "Continuity",
+                    "label": "Poisonous Vapours from Filth",
+                    "detail": "Townsfolk believed foul-smelling mist from dung heaps, cesspits, and swamps poisoned human humours.",
+                    "lessonIndex": 1,
+                    "stageIndex": 4,
+                    "searchTerm": "miasma",
+                    "gloss": "Townsfolk believed foul-smelling mist from dung heaps, cesspits, and swamps poisoned human humours."
+                  },
+                  {
+                    "id": "kt1_1_s3_f1",
+                    "tier": 4,
+                    "tag": "Factor",
+                    "label": "Respect for Classical Tradition",
+                    "detail": "Hippocratic and Galenic texts linked bad smells to epidemics, reinforcing conservatism across six centuries.",
+                    "lessonIndex": 1,
+                    "stageIndex": 4,
+                    "searchTerm": "Hippocrates",
+                    "gloss": "Hippocratic and Galenic texts linked bad smells to epidemics, reinforcing conservatism across six centuries.",
+                    "forTheme": "Attitudes"
+                  },
+                  {
+                    "id": "kt1_1_s3_i1",
+                    "tier": 4,
+                    "tag": "Impact",
+                    "label": "Prompted Basic Street Sweeping",
+                    "detail": "Fearing foul air, mayors occasionally fined butchers and ordered muck rakers to clear narrow lanes.",
+                    "lessonIndex": 4,
+                    "stageIndex": 3,
+                    "searchTerm": "muck",
+                    "gloss": "Fearing foul air, mayors occasionally fined butchers and ordered muck rakers to clear narrow lanes."
+                  },
+                  {
+                    "id": "kt1_1_s3_l1",
+                    "tier": 4,
+                    "tag": "Limit",
+                    "label": "Missed Fleas, Rats & Germs",
+                    "detail": "Blaming invisible smells hid waterborne bacteria and flea vectors until nineteenth-century bacteriology.",
+                    "lessonIndex": 1,
+                    "stageIndex": 4,
+                    "searchTerm": "vapours",
+                    "gloss": "Blaming invisible smells hid waterborne bacteria and flea vectors until nineteenth-century bacteriology."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt1_2",
+            "code": "1.2",
+            "tier": 2,
+            "label": "1.2 Medieval Care & Treatment",
+            "dateChip": "c1250–c1500",
+            "lessonIndex": 2,
+            "stageIndex": 0,
+            "searchTerm": "bloodletting",
+            "gloss": "Era Pattern: Prayer, bloodletting, purging, herbal remedies, and monastic 'care not cure' mirrored humoral and religious beliefs.",
+            "children": [
+              {
+                "id": "kt1_2_s1",
+                "tier": 3,
+                "label": "Religious Prevention & Purifying",
+                "dateChip": "c1250–1500",
+                "lessonIndex": 2,
+                "stageIndex": 0,
+                "searchTerm": "Regimen Sanitatis",
+                "gloss": "Prevention and treatment of disease and illness used religious actions like prayer, fasting, pilgrimage, and purifying the air with sweet herbs.",
+                "children": [
+                  {
+                    "id": "kt1_2_s1_c1",
+                    "tier": 4,
+                    "tag": "Continuity",
+                    "label": "Confession, Fasting & Pilgrimage",
+                    "detail": "Believers prayed, fasted, and touched saints' relics at shrines like Canterbury before taking medicine.",
+                    "lessonIndex": 2,
+                    "stageIndex": 0,
+                    "searchTerm": "pilgrimage",
+                    "gloss": "Believers prayed, fasted, and touched saints' relics at shrines like Canterbury before taking medicine."
+                  },
+                  {
+                    "id": "kt1_2_s1_f1",
+                    "tier": 4,
+                    "tag": "Factor",
+                    "label": "Parish Priests Shaped Daily Habits",
+                    "detail": "Weekly sermons taught soul healing came first, embedding spiritual rituals across every English village.",
+                    "lessonIndex": 2,
+                    "stageIndex": 0,
+                    "searchTerm": "penance",
+                    "gloss": "Weekly sermons taught soul healing came first, embedding spiritual rituals across every English village.",
+                    "forTheme": "Church"
+                  },
+                  {
+                    "id": "kt1_2_s1_i1",
+                    "tier": 4,
+                    "tag": "Impact",
+                    "label": "Regimen Sanitatis Hygiene Advice",
+                    "detail": "Physicians advised wealthy patrons on moderate diet, sleep, bathing, and sweet-smelling pomanders.",
+                    "lessonIndex": 2,
+                    "stageIndex": 4,
+                    "searchTerm": "Regimen Sanitatis",
+                    "gloss": "Physicians advised wealthy patrons on moderate diet, sleep, bathing, and sweet-smelling pomanders."
+                  },
+                  {
+                    "id": "kt1_2_s1_l1",
+                    "tier": 4,
+                    "tag": "Limit",
+                    "label": "Sweet Herbs Could Not Kill Germs",
+                    "detail": "Carrying posies and burning rosemary masked foul street odours without stopping contagious infections.",
+                    "lessonIndex": 2,
+                    "stageIndex": 4,
+                    "searchTerm": "pomander",
+                    "gloss": "Carrying posies and burning rosemary masked foul street odours without stopping contagious infections."
+                  }
+                ]
+              },
+              {
+                "id": "kt1_2_s2",
+                "tier": 3,
+                "label": "Bloodletting & Humoral Purging",
+                "dateChip": "c1250–1500",
+                "lessonIndex": 2,
+                "stageIndex": 1,
+                "searchTerm": "bloodletting",
+                "gloss": "Humoral treatment relied on bloodletting by phlebotomy or leeches alongside purging with emetics and laxatives to rebalance sick bodies.",
+                "children": [
+                  {
+                    "id": "kt1_2_s2_c1",
+                    "tier": 4,
+                    "tag": "Continuity",
+                    "label": "Vein Cutting, Cupping & Leeches",
+                    "detail": "Healers opened arm veins, applied heated brass cups, or placed freshwater leeches on frail patients.",
+                    "lessonIndex": 2,
+                    "stageIndex": 1,
+                    "searchTerm": "phlebotomy",
+                    "gloss": "Healers opened arm veins, applied heated brass cups, or placed freshwater leeches on frail patients."
+                  },
+                  {
+                    "id": "kt1_2_s2_f1",
+                    "tier": 4,
+                    "tag": "Factor",
+                    "label": "Theory of Opposites Drove Therapy",
+                    "detail": "Galenic logic insisted hot fevers needed cooling cucumber or bleeding to restore humoral symmetry.",
+                    "lessonIndex": 2,
+                    "stageIndex": 1,
+                    "searchTerm": "Opposites",
+                    "gloss": "Galenic logic insisted hot fevers needed cooling cucumber or bleeding to restore humoral symmetry.",
+                    "forTheme": "Attitudes"
+                  },
+                  {
+                    "id": "kt1_2_s2_c2",
+                    "tier": 4,
+                    "tag": "Change",
+                    "label": "Emetics, Laxatives & Clysters",
+                    "detail": "Apothecaries mixed bitter aloe, scammony, and greased enema pipes to flush supposed excess bile.",
+                    "lessonIndex": 2,
+                    "stageIndex": 2,
+                    "searchTerm": "purging",
+                    "gloss": "Apothecaries mixed bitter aloe, scammony, and greased enema pipes to flush supposed excess bile."
+                  },
+                  {
+                    "id": "kt1_2_s2_l1",
+                    "tier": 4,
+                    "tag": "Limit",
+                    "label": "Fatal Blood Loss & Dehydration",
+                    "detail": "Draining blood and fluids dangerously weakened feverish victims who desperately needed hydration.",
+                    "lessonIndex": 2,
+                    "stageIndex": 1,
+                    "searchTerm": "bloodletting",
+                    "gloss": "Draining blood and fluids dangerously weakened feverish victims who desperately needed hydration."
+                  }
+                ]
+              },
+              {
+                "id": "kt1_2_s3",
+                "tier": 3,
+                "label": "Physician, Apothecary & Surgeon",
+                "dateChip": "c1250–1500",
+                "lessonIndex": 3,
+                "stageIndex": 0,
+                "searchTerm": "apothecary",
+                "gloss": "University medical training produced elite physicians, while apothecary shops mixed remedies and practical barber surgeons performed routine surgery.",
+                "children": [
+                  {
+                    "id": "kt1_2_s3_c1",
+                    "tier": 4,
+                    "tag": "Continuity",
+                    "label": "Book-Led Seven-Year Degrees",
+                    "detail": "Fewer than 100 Oxford and Cambridge physicians studied Hippocrates and Galen without bedside training.",
+                    "lessonIndex": 3,
+                    "stageIndex": 0,
+                    "searchTerm": "physician",
+                    "gloss": "Fewer than 100 Oxford and Cambridge physicians studied Hippocrates and Galen without bedside training."
+                  },
+                  {
+                    "id": "kt1_2_s3_f1",
+                    "tier": 4,
+                    "tag": "Factor",
+                    "label": "High Fees Divided Access by Wealth",
+                    "detail": "Aristocrats hired costly physicians, whereas ordinary townsfolk relied on guild apothecaries and barbers.",
+                    "lessonIndex": 3,
+                    "stageIndex": 1,
+                    "searchTerm": "apothecary",
+                    "gloss": "Aristocrats hired costly physicians, whereas ordinary townsfolk relied on guild apothecaries and barbers.",
+                    "forTheme": "Attitudes"
+                  },
+                  {
+                    "id": "kt1_2_s3_i1",
+                    "tier": 4,
+                    "tag": "Impact",
+                    "label": "Barber Surgeons Treated Wounds",
+                    "detail": "Apprenticed barber surgeons pulled teeth, lanced boils, set broken limbs, and bled patients cheaply.",
+                    "lessonIndex": 3,
+                    "stageIndex": 2,
+                    "searchTerm": "barber",
+                    "gloss": "Apprenticed barber surgeons pulled teeth, lanced boils, set broken limbs, and bled patients cheaply."
+                  },
+                  {
+                    "id": "kt1_2_s3_l1",
+                    "tier": 4,
+                    "tag": "Limit",
+                    "label": "No Anaesthetic or Antiseptic Skill",
+                    "detail": "Deep internal surgery remained impossible because pain shock, haemorrhage, and wound sepsis killed patients.",
+                    "lessonIndex": 3,
+                    "stageIndex": 2,
+                    "searchTerm": "cauterisation",
+                    "gloss": "Deep internal surgery remained impossible because pain shock, haemorrhage, and wound sepsis killed patients."
+                  }
+                ]
+              },
+              {
+                "id": "kt1_2_s4",
+                "tier": 3,
+                "label": "Monastic Hospitals & Home Care",
+                "dateChip": "c1250–1500",
+                "lessonIndex": 3,
+                "stageIndex": 3,
+                "searchTerm": "care not cure",
+                "gloss": "Church hospitals offered hospitality rather than cures, so most medical treatment and care within the community and at home used herbal remedies.",
+                "children": [
+                  {
+                    "id": "kt1_2_s4_c1",
+                    "tier": 4,
+                    "tag": "Continuity",
+                    "label": "Hospitality, Not Medical Cure",
+                    "detail": "Over 1,100 small Church hospitals provided clean linen, warm broth, and mass near the ward altar.",
+                    "lessonIndex": 3,
+                    "stageIndex": 3,
+                    "searchTerm": "monastic",
+                    "gloss": "Over 1,100 small Church hospitals provided clean linen, warm broth, and mass near the ward altar."
+                  },
+                  {
+                    "id": "kt1_2_s4_f1",
+                    "tier": 4,
+                    "tag": "Factor",
+                    "label": "Christian Charity Ran Ward Rules",
+                    "detail": "Monks and nuns barred infectious, insane, or pregnant sufferers so prayer wards stayed peaceful.",
+                    "lessonIndex": 3,
+                    "stageIndex": 3,
+                    "searchTerm": "hospitals",
+                    "gloss": "Monks and nuns barred infectious, insane, or pregnant sufferers so prayer wards stayed peaceful.",
+                    "forTheme": "Church"
+                  },
+                  {
+                    "id": "kt1_2_s4_i1",
+                    "tier": 4,
+                    "tag": "Impact",
+                    "label": "Women Healers & Herbal Simples",
+                    "detail": "Mothers and wise women nursed sick relatives using honey, plantain, willow bark, and soothing poultices.",
+                    "lessonIndex": 3,
+                    "stageIndex": 4,
+                    "searchTerm": "herbal remedies",
+                    "gloss": "Mothers and wise women nursed sick relatives using honey, plantain, willow bark, and soothing poultices."
+                  },
+                  {
+                    "id": "kt1_2_s4_l1",
+                    "tier": 4,
+                    "tag": "Limit",
+                    "label": "Zero Physicians Inside Most Wards",
+                    "detail": "Because recovery lay in God's hands, hospitals rarely employed doctors or attempted active medical cures.",
+                    "lessonIndex": 3,
+                    "stageIndex": 3,
+                    "searchTerm": "care not cure",
+                    "gloss": "Because recovery lay in God's hands, hospitals rarely employed doctors or attempted active medical cures."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt1_3",
+            "code": "1.3",
+            "tier": 2,
+            "label": "1.3 Black Death Case Study",
+            "dateChip": "1348–1349",
+            "lessonIndex": 4,
+            "stageIndex": 0,
+            "searchTerm": "Black Death",
+            "gloss": "Era Pattern: In 1348–49 supernatural penance, miasma fires, and humoral bleeding all failed to halt bubonic and pneumonic plague.",
+            "children": [
+              {
+                "id": "kt1_3_s1",
+                "tier": 3,
+                "label": "Black Death Treatments (1348–49)",
+                "dateChip": "1348–1349",
+                "lessonIndex": 4,
+                "stageIndex": 2,
+                "searchTerm": "buboes",
+                "gloss": "Medieval responses to the Black Death in 1348–49 combined confession, lancing buboes, theriac, and strapping live chickens for treatment.",
+                "children": [
+                  {
+                    "id": "kt1_3_s1_c1",
+                    "tier": 4,
+                    "tag": "Continuity",
+                    "label": "Confession, Theriac & Chicken Cures",
+                    "detail": "Terrified victims confessed sins, drank costly theriac, or strapped shaved chickens onto swollen buboes.",
+                    "lessonIndex": 4,
+                    "stageIndex": 2,
+                    "searchTerm": "chickens",
+                    "gloss": "Terrified victims confessed sins, drank costly theriac, or strapped shaved chickens onto swollen buboes."
+                  },
+                  {
+                    "id": "kt1_3_s1_f1",
+                    "tier": 4,
+                    "tag": "Factor",
+                    "label": "Ignorance of Rat-Flea Bacteria",
+                    "detail": "Nobody knew Yersinia pestis spread via Oriental rat fleas, leaving healers dependent on old theories.",
+                    "lessonIndex": 4,
+                    "stageIndex": 1,
+                    "searchTerm": "Yersinia pestis",
+                    "gloss": "Nobody knew Yersinia pestis spread via Oriental rat fleas, leaving healers dependent on old theories.",
+                    "forTheme": "Science"
+                  },
+                  {
+                    "id": "kt1_3_s1_i1",
+                    "tier": 4,
+                    "tag": "Impact",
+                    "label": "Lancing Buboes Occasionally Helped",
+                    "detail": "Bursting ripe groin or armpit swellings sometimes drained pus, though dirty blades risked blood poisoning.",
+                    "lessonIndex": 4,
+                    "stageIndex": 2,
+                    "searchTerm": "buboes",
+                    "gloss": "Bursting ripe groin or armpit swellings sometimes drained pus, though dirty blades risked blood poisoning."
+                  },
+                  {
+                    "id": "kt1_3_s1_l1",
+                    "tier": 4,
+                    "tag": "Limit",
+                    "label": "Killed Over One-Third of England",
+                    "detail": "Between 1348 and 1349 bubonic and pneumonic plague killed roughly 40 percent of English people.",
+                    "lessonIndex": 4,
+                    "stageIndex": 4,
+                    "searchTerm": "Melcombe Regis",
+                    "gloss": "Between 1348 and 1349 bubonic and pneumonic plague killed roughly 40 percent of English people."
+                  }
+                ]
+              },
+              {
+                "id": "kt1_3_s2",
+                "tier": 3,
+                "label": "Preventing Black Death Spread",
+                "dateChip": "1348–1349",
+                "lessonIndex": 4,
+                "stageIndex": 3,
+                "searchTerm": "Edward III",
+                "gloss": "Royal and parish responses tried to prevent the spread of the Black Death through prayer processions, street-cleaning orders, and quarantine.",
+                "children": [
+                  {
+                    "id": "kt1_3_s2_c1",
+                    "tier": 4,
+                    "tag": "Continuity",
+                    "label": "Processions & Flagellant Whipping",
+                    "detail": "Bishops ordered barefoot parish litanies while flagellants whipped themselves publicly to appease God.",
+                    "lessonIndex": 4,
+                    "stageIndex": 2,
+                    "searchTerm": "flagellants",
+                    "gloss": "Bishops ordered barefoot parish litanies while flagellants whipped themselves publicly to appease God."
+                  },
+                  {
+                    "id": "kt1_3_s2_f1",
+                    "tier": 4,
+                    "tag": "Factor",
+                    "label": "Weak Royal & Municipal Enforcement",
+                    "detail": "King Edward III asked London's Mayor to clear street filth in 1349, but bailiffs lacked enforcement power.",
+                    "lessonIndex": 4,
+                    "stageIndex": 3,
+                    "searchTerm": "Edward III",
+                    "gloss": "King Edward III asked London's Mayor to clear street filth in 1349, but bailiffs lacked enforcement power.",
+                    "forTheme": "Govt"
+                  },
+                  {
+                    "id": "kt1_3_s2_c2",
+                    "tier": 4,
+                    "tag": "Change",
+                    "label": "Gloucester Locked Its Town Gates",
+                    "detail": "Local councils tried stopping strangers and burying victims in deep mass pits outside parish graveyards.",
+                    "lessonIndex": 4,
+                    "stageIndex": 4,
+                    "searchTerm": "Gloucester",
+                    "gloss": "Local councils tried stopping strangers and burying victims in deep mass pits outside parish graveyards."
+                  },
+                  {
+                    "id": "kt1_3_s2_l1",
+                    "tier": 4,
+                    "tag": "Limit",
+                    "label": "Public Gatherings Spread Contagion",
+                    "detail": "Crowded church processions and uncollected waste accelerated pneumonic coughing and rat infestations.",
+                    "lessonIndex": 4,
+                    "stageIndex": 3,
+                    "searchTerm": "cleanliness",
+                    "gloss": "Crowded church processions and uncollected waste accelerated pneumonic coughing and rat infestations."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "kt2",
+        "keyTopicNumber": 2,
+        "tier": 1,
+        "side": "right",
+        "color": "#7c3aed",
+        "label": "Medical Renaissance",
+        "dateChip": "c1500–c1700",
+        "lessonIndex": 5,
+        "stageIndex": 0,
+        "searchTerm": "Royal Society",
+        "gloss": "Scientific observation, Thomas Sydenham, printing press, Royal Society, Vesalius, William Harvey, and responses to the 1665 Great Plague.",
+        "children": [
+          {
+            "id": "kt2_1",
+            "code": "2.1",
+            "tier": 2,
+            "label": "2.1 Renaissance Disease Ideas",
+            "dateChip": "c1500–c1700",
+            "lessonIndex": 5,
+            "stageIndex": 0,
+            "searchTerm": "Sydenham",
+            "gloss": "Era Pattern: Printing, the Royal Society, and Thomas Sydenham promoted observation while everyday humoral and miasma beliefs persisted.",
+            "children": [
+              {
+                "id": "kt2_1_s1",
+                "tier": 3,
+                "label": "Humanism & Disease Ideas",
+                "dateChip": "c1500–1700",
+                "lessonIndex": 5,
+                "stageIndex": 1,
+                "searchTerm": "humanism",
+                "gloss": "Renaissance ideas on disease and illness blended miasma continuity with a new scientific approach questioning ancient Galenic texts.",
+                "children": [
+                  {
+                    "id": "kt2_1_s1_c1",
+                    "tier": 4,
+                    "tag": "Change",
+                    "label": "Decline of Supernatural Explanations",
+                    "detail": "After the Reformation fewer physicians used urine charts or astrology, favouring direct natural observation.",
+                    "lessonIndex": 5,
+                    "stageIndex": 1,
+                    "searchTerm": "humanism",
+                    "gloss": "After the Reformation fewer physicians used urine charts or astrology, favouring direct natural observation."
+                  },
+                  {
+                    "id": "kt2_1_s1_c2",
+                    "tier": 4,
+                    "tag": "Continuity",
+                    "label": "Miasma & Humours Kept Everyday Grip",
+                    "detail": "Ordinary families and doctors still blamed corrupt air and unbalanced humours during epidemic outbreaks.",
+                    "lessonIndex": 9,
+                    "stageIndex": 1,
+                    "searchTerm": "miasma",
+                    "gloss": "Ordinary families and doctors still blamed corrupt air and unbalanced humours during epidemic outbreaks."
+                  },
+                  {
+                    "id": "kt2_1_s1_f1",
+                    "tier": 4,
+                    "tag": "Factor",
+                    "label": "Weaker Church Control Over Science",
+                    "detail": "Protestant Reformation broke Rome's monopoly on learning, letting scholars test classical claims directly.",
+                    "lessonIndex": 5,
+                    "stageIndex": 1,
+                    "searchTerm": "Reformation",
+                    "gloss": "Protestant Reformation broke Rome's monopoly on learning, letting scholars test classical claims directly.",
+                    "forTheme": "Church"
+                  },
+                  {
+                    "id": "kt2_1_s1_l1",
+                    "tier": 4,
+                    "tag": "Limit",
+                    "label": "Animalcules Not Linked to Sickness",
+                    "detail": "Leeuwenhoek saw tiny microbes under early microscopes in 1683, yet nobody connected them to disease.",
+                    "lessonIndex": 5,
+                    "stageIndex": 4,
+                    "searchTerm": "animalcules",
+                    "gloss": "Leeuwenhoek saw tiny microbes under early microscopes in 1683, yet nobody connected them to disease."
+                  }
+                ]
+              },
+              {
+                "id": "kt2_1_s2",
+                "tier": 3,
+                "label": "Thomas Sydenham & Diagnosis",
+                "dateChip": "1624–1689",
+                "lessonIndex": 6,
+                "stageIndex": 0,
+                "searchTerm": "Thomas Sydenham",
+                "gloss": "Known as the English Hippocrates, Thomas Sydenham championed a scientific approach to bedside observation, improving diagnosis of distinct diseases.",
+                "children": [
+                  {
+                    "id": "kt2_1_s2_c1",
+                    "tier": 4,
+                    "tag": "Change",
+                    "label": "Grouped Diseases Like Plant Species",
+                    "detail": "Observationes Medicae (1676) grouped illnesses by shared patient symptoms rather than unique humoral mixes.",
+                    "lessonIndex": 6,
+                    "stageIndex": 1,
+                    "searchTerm": "Observationes Medicae",
+                    "gloss": "Observationes Medicae (1676) grouped illnesses by shared patient symptoms rather than unique humoral mixes."
+                  },
+                  {
+                    "id": "kt2_1_s2_f1",
+                    "tier": 4,
+                    "tag": "Factor",
+                    "label": "Empiricist Bedside Case Recording",
+                    "detail": "Sydenham rejected armchair book theory, insisting doctors visit sickbeds and record symptoms accurately.",
+                    "lessonIndex": 6,
+                    "stageIndex": 0,
+                    "searchTerm": "English Hippocrates",
+                    "gloss": "Sydenham rejected armchair book theory, insisting doctors visit sickbeds and record symptoms accurately.",
+                    "forTheme": "Individual"
+                  },
+                  {
+                    "id": "kt2_1_s2_i1",
+                    "tier": 4,
+                    "tag": "Impact",
+                    "label": "Separated Scarlet Fever & Measles",
+                    "detail": "Separating scarlet fever from measles and prescribing cinchona bark for malaria improved clinical care.",
+                    "lessonIndex": 6,
+                    "stageIndex": 2,
+                    "searchTerm": "cinchona",
+                    "gloss": "Separating scarlet fever from measles and prescribing cinchona bark for malaria improved clinical care."
+                  },
+                  {
+                    "id": "kt2_1_s2_l1",
+                    "tier": 4,
+                    "tag": "Limit",
+                    "label": "Could Not Identify Microbial Causes",
+                    "detail": "Without strong microscopes or bacteriology, Sydenham still blamed atmospheric miasma for epidemic fevers.",
+                    "lessonIndex": 6,
+                    "stageIndex": 4,
+                    "searchTerm": "atmospheric",
+                    "gloss": "Without strong microscopes or bacteriology, Sydenham still blamed atmospheric miasma for epidemic fevers."
+                  }
+                ]
+              },
+              {
+                "id": "kt2_1_s3",
+                "tier": 3,
+                "label": "Printing Press & Royal Society",
+                "dateChip": "1440–1665",
+                "lessonIndex": 5,
+                "stageIndex": 2,
+                "searchTerm": "Royal Society",
+                "gloss": "Gutenberg's printing press and King Charles II's Royal Society accelerated the transmission of scientific ideas across Europe after 1660.",
+                "children": [
+                  {
+                    "id": "kt2_1_s3_c1",
+                    "tier": 4,
+                    "tag": "Change",
+                    "label": "Exact Printed Woodcuts & Journals",
+                    "detail": "Movable type ended monastic copying errors, circulating identical anatomical plates across universities.",
+                    "lessonIndex": 5,
+                    "stageIndex": 0,
+                    "searchTerm": "printing press",
+                    "gloss": "Movable type ended monastic copying errors, circulating identical anatomical plates across universities."
+                  },
+                  {
+                    "id": "kt2_1_s3_f1",
+                    "tier": 4,
+                    "tag": "Factor",
+                    "label": "1660 Royal Society: Nullius in Verba",
+                    "detail": "Backed by Charles II's royal charter, fellows published experiments in Philosophical Transactions from 1665.",
+                    "lessonIndex": 5,
+                    "stageIndex": 2,
+                    "searchTerm": "Philosophical Transactions",
+                    "gloss": "Backed by Charles II's royal charter, fellows published experiments in Philosophical Transactions from 1665.",
+                    "forTheme": "Tech"
+                  },
+                  {
+                    "id": "kt2_1_s3_i1",
+                    "tier": 4,
+                    "tag": "Impact",
+                    "label": "Hooke's Micrographia Shared Findings",
+                    "detail": "Robert Hooke's 1665 Micrographia inspired open peer review and rapid cross-European debate on anatomy.",
+                    "lessonIndex": 5,
+                    "stageIndex": 3,
+                    "searchTerm": "Micrographia",
+                    "gloss": "Robert Hooke's 1665 Micrographia inspired open peer review and rapid cross-European debate on anatomy."
+                  },
+                  {
+                    "id": "kt2_1_s3_l1",
+                    "tier": 4,
+                    "tag": "Limit",
+                    "label": "Books Rarely Reached Poor Healers",
+                    "detail": "Illiteracy and conservative physicians meant new scientific journals took decades to alter everyday cures.",
+                    "lessonIndex": 5,
+                    "stageIndex": 3,
+                    "searchTerm": "peer review",
+                    "gloss": "Illiteracy and conservative physicians meant new scientific journals took decades to alter everyday cures."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt2_2",
+            "code": "2.2",
+            "tier": 2,
+            "label": "2.2 Care, Training & Vesalius",
+            "dateChip": "c1500–c1700",
+            "lessonIndex": 7,
+            "stageIndex": 0,
+            "searchTerm": "Vesalius",
+            "gloss": "Era Pattern: Andreas Vesalius overturned Galenic anatomy through human dissection, though community and hospital treatment changed little.",
+            "children": [
+              {
+                "id": "kt2_2_s1",
+                "tier": 3,
+                "label": "Community Care & New Remedies",
+                "dateChip": "c1500–1700",
+                "lessonIndex": 9,
+                "stageIndex": 1,
+                "searchTerm": "cinchona",
+                "gloss": "Everyday prevention, treatment, and care in the community remained largely domestic, adding New World remedies like cinchona bark to herbal cures.",
+                "children": [
+                  {
+                    "id": "kt2_2_s1_c1",
+                    "tier": 4,
+                    "tag": "Continuity",
+                    "label": "Women Healers & Printed Herbals",
+                    "detail": "Wives and Lady Grace Mildmay treated neighbours at home using Culpeper's Complete Herbal and waters.",
+                    "lessonIndex": 9,
+                    "stageIndex": 1,
+                    "searchTerm": "herbal",
+                    "gloss": "Wives and Lady Grace Mildmay treated neighbours at home using Culpeper's Complete Herbal and waters."
+                  },
+                  {
+                    "id": "kt2_2_s1_c2",
+                    "tier": 4,
+                    "tag": "Change",
+                    "label": "New World Bark & Chemical Cures",
+                    "detail": "Global trade brought Peruvian cinchona bark (quinine), rhubarb, ipecacuanha, and Paracelsian mineral salts.",
+                    "lessonIndex": 6,
+                    "stageIndex": 2,
+                    "searchTerm": "quinine",
+                    "gloss": "Global trade brought Peruvian cinchona bark (quinine), rhubarb, ipecacuanha, and Paracelsian mineral salts."
+                  },
+                  {
+                    "id": "kt2_2_s1_f1",
+                    "tier": 4,
+                    "tag": "Factor",
+                    "label": "Overseas Trade & Licenced Guilds",
+                    "detail": "Merchant voyages expanded apothecary shelves while London guilds began licensing surgeons and apothecaries.",
+                    "lessonIndex": 6,
+                    "stageIndex": 2,
+                    "searchTerm": "Cinchona",
+                    "gloss": "Merchant voyages expanded apothecary shelves while London guilds began licensing surgeons and apothecaries.",
+                    "forTheme": "Tech"
+                  },
+                  {
+                    "id": "kt2_2_s1_l1",
+                    "tier": 4,
+                    "tag": "Limit",
+                    "label": "Bleeding, Purging & Quacks Persisted",
+                    "detail": "Even King Charles II endured heavy bleeding, blistering, and skull-drop potions on his 1685 deathbed.",
+                    "lessonIndex": 9,
+                    "stageIndex": 1,
+                    "searchTerm": "bleeding",
+                    "gloss": "Even King Charles II endured heavy bleeding, blistering, and skull-drop potions on his 1685 deathbed."
+                  }
+                ]
+              },
+              {
+                "id": "kt2_2_s2",
+                "tier": 3,
+                "label": "Post-Dissolution Hospitals",
+                "dateChip": "1536–1700",
+                "lessonIndex": 7,
+                "stageIndex": 4,
+                "searchTerm": "hospitals",
+                "gloss": "After Henry VIII dissolved monasteries in 1536, charitable and pest-house hospitals gradually shifted care and treatment toward curable patients.",
+                "children": [
+                  {
+                    "id": "kt2_2_s2_c1",
+                    "tier": 4,
+                    "tag": "Change",
+                    "label": "1536 Dissolution Closed Priory Wards",
+                    "detail": "Henry VIII shut monastic infirmaries, forcing London merchants and royal charters to reopen St Bartholomew's.",
+                    "lessonIndex": 7,
+                    "stageIndex": 4,
+                    "searchTerm": "hospitals",
+                    "gloss": "Henry VIII shut monastic infirmaries, forcing London merchants and royal charters to reopen St Bartholomew's."
+                  },
+                  {
+                    "id": "kt2_2_s2_f1",
+                    "tier": 4,
+                    "tag": "Factor",
+                    "label": "Civic Charity Replaced Monastic Rule",
+                    "detail": "Wealthy burgesses funded secular wards and suburban pest houses specifically isolating plague victims.",
+                    "lessonIndex": 9,
+                    "stageIndex": 2,
+                    "searchTerm": "pest",
+                    "gloss": "Wealthy burgesses funded secular wards and suburban pest houses specifically isolating plague victims.",
+                    "forTheme": "Govt"
+                  },
+                  {
+                    "id": "kt2_2_s2_i1",
+                    "tier": 4,
+                    "tag": "Impact",
+                    "label": "Visiting Physicians Treated the Sick",
+                    "detail": "Rebuilt endowed hospitals admitted treatable fevers and wounds with salaried surgeons rather than monks.",
+                    "lessonIndex": 7,
+                    "stageIndex": 4,
+                    "searchTerm": "surgeons",
+                    "gloss": "Rebuilt endowed hospitals admitted treatable fevers and wounds with salaried surgeons rather than monks."
+                  },
+                  {
+                    "id": "kt2_2_s2_l1",
+                    "tier": 4,
+                    "tag": "Limit",
+                    "label": "Severe Bed Shortage Outside London",
+                    "detail": "Total hospital beds remained well below medieval numbers until eighteenth-century voluntary foundations.",
+                    "lessonIndex": 7,
+                    "stageIndex": 4,
+                    "searchTerm": "training",
+                    "gloss": "Total hospital beds remained well below medieval numbers until eighteenth-century voluntary foundations."
+                  }
+                ]
+              },
+              {
+                "id": "kt2_2_s3",
+                "tier": 3,
+                "label": "Vesalius & Medical Training",
+                "dateChip": "1543",
+                "lessonIndex": 7,
+                "stageIndex": 1,
+                "searchTerm": "Vesalius",
+                "gloss": "Andreas Vesalius transformed medical training and anatomical knowledge in England through human dissections in De Humani Corporis Fabrica (1543).",
+                "children": [
+                  {
+                    "id": "kt2_2_s3_c1",
+                    "tier": 4,
+                    "tag": "Change",
+                    "label": "Fixed 300+ Galenic Anatomy Errors",
+                    "detail": "Human dissections proved humans have one lower jawbone, no septum holes, and five-lobed livers do not exist.",
+                    "lessonIndex": 7,
+                    "stageIndex": 2,
+                    "searchTerm": "jawbone",
+                    "gloss": "Human dissections proved humans have one lower jawbone, no septum holes, and five-lobed livers do not exist."
+                  },
+                  {
+                    "id": "kt2_2_s3_f1",
+                    "tier": 4,
+                    "tag": "Factor",
+                    "label": "Padua Corpses & Fabrica Woodcuts",
+                    "detail": "Padua judges supplied executed criminals while Renaissance artists drew lifelike plates for 1543 Fabrica.",
+                    "lessonIndex": 7,
+                    "stageIndex": 0,
+                    "searchTerm": "Fabrica",
+                    "gloss": "Padua judges supplied executed criminals while Renaissance artists drew lifelike plates for 1543 Fabrica.",
+                    "forTheme": "Individual"
+                  },
+                  {
+                    "id": "kt2_2_s3_i1",
+                    "tier": 4,
+                    "tag": "Impact",
+                    "label": "Geminus Spread Plates Across England",
+                    "detail": "Thomas Geminus's 1545 London Compendiosa taught English barber-surgeons accurate human muscle and bone maps.",
+                    "lessonIndex": 7,
+                    "stageIndex": 4,
+                    "searchTerm": "Compendiosa",
+                    "gloss": "Thomas Geminus's 1545 London Compendiosa taught English barber-surgeons accurate human muscle and bone maps."
+                  },
+                  {
+                    "id": "kt2_2_s3_l1",
+                    "tier": 4,
+                    "tag": "Limit",
+                    "label": "Better Anatomy Cured Zero Germs",
+                    "detail": "Traditionalists like Caius resisted criticism of Galen, and better maps alone could not cure disease.",
+                    "lessonIndex": 7,
+                    "stageIndex": 3,
+                    "searchTerm": "Galenist",
+                    "gloss": "Traditionalists like Caius resisted criticism of Galen, and better maps alone could not cure disease."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt2_3",
+            "code": "2.3",
+            "tier": 2,
+            "label": "2.3 Harvey & 1665 Great Plague",
+            "dateChip": "1628–1665",
+            "lessonIndex": 8,
+            "stageIndex": 0,
+            "searchTerm": "Harvey",
+            "gloss": "Era Pattern: William Harvey proved blood circulation and 1665 London enforced stricter quarantine, yet cures stayed traditional.",
+            "children": [
+              {
+                "id": "kt2_3_s1",
+                "tier": 3,
+                "label": "William Harvey & Blood Circulation",
+                "dateChip": "1628",
+                "lessonIndex": 8,
+                "stageIndex": 1,
+                "searchTerm": "De Motu Cordis",
+                "gloss": "Case study on William Harvey and his 1628 discovery of the circulation of the blood pumped round a closed system by the heart.",
+                "children": [
+                  {
+                    "id": "kt2_3_s1_c1",
+                    "tier": 4,
+                    "tag": "Change",
+                    "label": "Proved Heart Acts as One-Way Pump",
+                    "detail": "De Motu Cordis (1628) disproved Galen's claim that the liver constantly burned and remade new blood.",
+                    "lessonIndex": 8,
+                    "stageIndex": 2,
+                    "searchTerm": "De Motu Cordis",
+                    "gloss": "De Motu Cordis (1628) disproved Galen's claim that the liver constantly burned and remade new blood."
+                  },
+                  {
+                    "id": "kt2_3_s1_f1",
+                    "tier": 4,
+                    "tag": "Factor",
+                    "label": "Water Pumps & Reptile Dissections",
+                    "detail": "Inspired by mechanical water pumps, Harvey dissected slow-beating reptiles and measured hourly blood flow.",
+                    "lessonIndex": 8,
+                    "stageIndex": 1,
+                    "searchTerm": "mechanical pump",
+                    "gloss": "Inspired by mechanical water pumps, Harvey dissected slow-beating reptiles and measured hourly blood flow.",
+                    "forTheme": "Science"
+                  },
+                  {
+                    "id": "kt2_3_s1_i1",
+                    "tier": 4,
+                    "tag": "Impact",
+                    "label": "Foundation for Modern Physiology",
+                    "detail": "Malpighi confirmed capillaries in 1661, underpinning later blood transfusions and intravenous medicine.",
+                    "lessonIndex": 8,
+                    "stageIndex": 4,
+                    "searchTerm": "Malpighi",
+                    "gloss": "Malpighi confirmed capillaries in 1661, underpinning later blood transfusions and intravenous medicine."
+                  },
+                  {
+                    "id": "kt2_3_s1_l1",
+                    "tier": 4,
+                    "tag": "Limit",
+                    "label": "Did Not Stop Phlebotomy for Decades",
+                    "detail": "Because blood groups were unknown, early sheep-blood transfusions failed and doctors kept bleeding patients.",
+                    "lessonIndex": 8,
+                    "stageIndex": 3,
+                    "searchTerm": "scepticism",
+                    "gloss": "Because blood groups were unknown, early sheep-blood transfusions failed and doctors kept bleeding patients."
+                  }
+                ]
+              },
+              {
+                "id": "kt2_3_s2",
+                "tier": 3,
+                "label": "Great Plague Treatments (1665)",
+                "dateChip": "1665",
+                "lessonIndex": 9,
+                "stageIndex": 1,
+                "searchTerm": "Great Plague",
+                "gloss": "Popular responses to the Great Plague in London (1665) mixed transference chickens, herbal posies, sweating treatment, and plague doctors.",
+                "children": [
+                  {
+                    "id": "kt2_3_s2_c1",
+                    "tier": 4,
+                    "tag": "Continuity",
+                    "label": "Fasting Days, Posies & Transference",
+                    "detail": "Londoners prayed on royal fast days, carried herb posies, and strapped live chickens onto plague sores.",
+                    "lessonIndex": 9,
+                    "stageIndex": 1,
+                    "searchTerm": "Great Plague",
+                    "gloss": "Londoners prayed on royal fast days, carried herb posies, and strapped live chickens onto plague sores."
+                  },
+                  {
+                    "id": "kt2_3_s2_c2",
+                    "tier": 4,
+                    "tag": "Change",
+                    "label": "Beaked Leather Plague Doctor Suits",
+                    "detail": "Physicians wore waxed robes and herb-stuffed bird masks to shield skin and lungs from miasma.",
+                    "lessonIndex": 9,
+                    "stageIndex": 1,
+                    "searchTerm": "plague doctor",
+                    "gloss": "Physicians wore waxed robes and herb-stuffed bird masks to shield skin and lungs from miasma."
+                  },
+                  {
+                    "id": "kt2_3_s2_f1",
+                    "tier": 4,
+                    "tag": "Factor",
+                    "label": "Printed Bills & Quack Handbills",
+                    "detail": "Weekly Bills of Mortality tracked parish burials while cheap presses advertised worthless plague waters.",
+                    "lessonIndex": 9,
+                    "stageIndex": 0,
+                    "searchTerm": "St Giles",
+                    "gloss": "Weekly Bills of Mortality tracked parish burials while cheap presses advertised worthless plague waters.",
+                    "forTheme": "Tech"
+                  },
+                  {
+                    "id": "kt2_3_s2_l1",
+                    "tier": 4,
+                    "tag": "Limit",
+                    "label": "Around 100,000 Londoners Perished",
+                    "detail": "Sweating wrapped patients in wool blankets near fires could not cure lethal Yersinia pestis infection.",
+                    "lessonIndex": 9,
+                    "stageIndex": 4,
+                    "searchTerm": "100,000",
+                    "gloss": "Sweating wrapped patients in wool blankets near fires could not cure lethal Yersinia pestis infection."
+                  }
+                ]
+              },
+              {
+                "id": "kt2_3_s3",
+                "tier": 3,
+                "label": "1665 London Plague Prevention",
+                "dateChip": "1665",
+                "lessonIndex": 9,
+                "stageIndex": 2,
+                "searchTerm": "Lord Mayor",
+                "gloss": "Civic responses in 1665 London enforced watchmen quarantine, coal fires, and animal culls to prevent the spread of the Great Plague.",
+                "children": [
+                  {
+                    "id": "kt2_3_s3_c1",
+                    "tier": 4,
+                    "tag": "Change",
+                    "label": "28-Day Watchmen Household Quarantine",
+                    "detail": "Aldermen nailed shut infected homes with red crosses reading Lord Have Mercy Upon Us under armed guard.",
+                    "lessonIndex": 9,
+                    "stageIndex": 2,
+                    "searchTerm": "Red Crosses",
+                    "gloss": "Aldermen nailed shut infected homes with red crosses reading Lord Have Mercy Upon Us under armed guard."
+                  },
+                  {
+                    "id": "kt2_3_s3_f1",
+                    "tier": 4,
+                    "tag": "Factor",
+                    "label": "Stronger Royal & Mayoral Orders",
+                    "detail": "Charles II and London's Lord Mayor banned plays and fairs, hired searchers, and ran night dead-carts.",
+                    "lessonIndex": 9,
+                    "stageIndex": 2,
+                    "searchTerm": "watchmen",
+                    "gloss": "Charles II and London's Lord Mayor banned plays and fairs, hired searchers, and ran night dead-carts.",
+                    "forTheme": "Govt"
+                  },
+                  {
+                    "id": "kt2_3_s3_i1",
+                    "tier": 4,
+                    "tag": "Impact",
+                    "label": "Tar Barrels & Coal Street Bonfires",
+                    "detail": "Councils burned pungent tar and coal for three days continuously to drive away miasmatic street air.",
+                    "lessonIndex": 9,
+                    "stageIndex": 3,
+                    "searchTerm": "fires",
+                    "gloss": "Councils burned pungent tar and coal for three days continuously to drive away miasmatic street air."
+                  },
+                  {
+                    "id": "kt2_3_s3_l1",
+                    "tier": 4,
+                    "tag": "Limit",
+                    "label": "Killing 40,000 Dogs Boosted Rats",
+                    "detail": "Slaughtering 40,000 dogs and 200,000 cats accidentally removed rat predators and worsened flea spread.",
+                    "lessonIndex": 9,
+                    "stageIndex": 3,
+                    "searchTerm": "cats",
+                    "gloss": "Slaughtering 40,000 dogs and 200,000 cats accidentally removed rat predators and worsened flea spread."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "kt3",
+        "keyTopicNumber": 3,
+        "tier": 1,
+        "side": "left",
+        "color": "#059669",
+        "label": "18th & 19thc Medicine",
+        "dateChip": "c1700–c1900",
+        "lessonIndex": 10,
+        "stageIndex": 0,
+        "searchTerm": "Germ Theory",
+        "gloss": "Pasteur's Germ Theory, Koch's bacteriology, Nightingale hospitals, Simpson anaesthetics, Lister antiseptics, Jenner vaccination, Snow cholera, and 1875 Public Health Act.",
+        "children": [
+          {
+            "id": "kt3_1",
+            "code": "3.1",
+            "tier": 2,
+            "label": "3.1 Germ Theory & Microbes",
+            "dateChip": "1861–1890",
+            "lessonIndex": 10,
+            "stageIndex": 0,
+            "searchTerm": "Pasteur",
+            "gloss": "Era Pattern: Louis Pasteur (1861) and Robert Koch ended miasma and spontaneous generation by proving specific microbes cause disease.",
+            "children": [
+              {
+                "id": "kt3_1_s1",
+                "tier": 3,
+                "label": "Pasteur's 1861 Germ Theory",
+                "dateChip": "1861",
+                "lessonIndex": 10,
+                "stageIndex": 1,
+                "searchTerm": "swan-neck",
+                "gloss": "Louis Pasteur's 1861 Germ Theory challenged miasma and spontaneous generation in explaining disease and illness across Britain.",
+                "children": [
+                  {
+                    "id": "kt3_1_s1_c1",
+                    "tier": 4,
+                    "tag": "Change",
+                    "label": "Swan-Neck Flasks Ended Decay Myth",
+                    "detail": "Boiled liquid stayed sterile in curved glass flasks until airborne microbes touched it, ending miasma.",
+                    "lessonIndex": 10,
+                    "stageIndex": 1,
+                    "searchTerm": "swan-neck",
+                    "gloss": "Boiled liquid stayed sterile in curved glass flasks until airborne microbes touched it, ending miasma."
+                  },
+                  {
+                    "id": "kt3_1_s1_f1",
+                    "tier": 4,
+                    "tag": "Factor",
+                    "label": "Sharp 1830s Jackson Microscopes",
+                    "detail": "Sharp 1830s lenses eliminated blurred halos, letting Pasteur observe souring microbes in beer and silkworms.",
+                    "lessonIndex": 10,
+                    "stageIndex": 1,
+                    "searchTerm": "Pasteur",
+                    "gloss": "Sharp 1830s lenses eliminated blurred halos, letting Pasteur observe souring microbes in beer and silkworms.",
+                    "forTheme": "Tech"
+                  },
+                  {
+                    "id": "kt3_1_s1_i1",
+                    "tier": 4,
+                    "tag": "Impact",
+                    "label": "Inspired Lister & Tyndall in Britain",
+                    "detail": "Physicist John Tyndall lectured on airborne dust germs in 1870 while Joseph Lister pioneered antisepsis.",
+                    "lessonIndex": 10,
+                    "stageIndex": 2,
+                    "searchTerm": "Tyndall",
+                    "gloss": "Physicist John Tyndall lectured on airborne dust germs in 1870 while Joseph Lister pioneered antisepsis."
+                  },
+                  {
+                    "id": "kt3_1_s1_l1",
+                    "tier": 4,
+                    "tag": "Limit",
+                    "label": "Bastian Backed Spontaneous Decay",
+                    "detail": "Influential British doctor Henry Charlton Bastian rejected Pasteur until Koch proved human disease links.",
+                    "lessonIndex": 10,
+                    "stageIndex": 2,
+                    "searchTerm": "spontaneous generation",
+                    "gloss": "Influential British doctor Henry Charlton Bastian rejected Pasteur until Koch proved human disease links."
+                  }
+                ]
+              },
+              {
+                "id": "kt3_1_s2",
+                "tier": 3,
+                "label": "Robert Koch & Specific Microbes",
+                "dateChip": "1876–1884",
+                "lessonIndex": 10,
+                "stageIndex": 3,
+                "searchTerm": "Robert Koch",
+                "gloss": "Robert Koch stained and photographed specific microbes causing anthrax, tuberculosis, and cholera, proving Germ Theory across Britain.",
+                "children": [
+                  {
+                    "id": "kt3_1_s2_c1",
+                    "tier": 4,
+                    "tag": "Change",
+                    "label": "Found Anthrax, TB & Cholera Germs",
+                    "detail": "Koch isolated anthrax (1876), tuberculosis (1882), and cholera (1883), founding modern bacteriology.",
+                    "lessonIndex": 10,
+                    "stageIndex": 4,
+                    "searchTerm": "tuberculosis",
+                    "gloss": "Koch isolated anthrax (1876), tuberculosis (1882), and cholera (1883), founding modern bacteriology."
+                  },
+                  {
+                    "id": "kt3_1_s2_f1",
+                    "tier": 4,
+                    "tag": "Factor",
+                    "label": "Agar Plates, Chemical Dyes & Rivalry",
+                    "detail": "German government grants, solid agar Petri dishes, and purple aniline dyes let teams photograph bacteria.",
+                    "lessonIndex": 10,
+                    "stageIndex": 3,
+                    "searchTerm": "agar",
+                    "gloss": "German government grants, solid agar Petri dishes, and purple aniline dyes let teams photograph bacteria.",
+                    "forTheme": "Science"
+                  },
+                  {
+                    "id": "kt3_1_s2_i1",
+                    "tier": 4,
+                    "tag": "Impact",
+                    "label": "Enabled New Vaccines & Antitoxins",
+                    "detail": "Knowing exact culprits allowed Pasteur's rabies vaccine and Behring's diphtheria antitoxin by the 1890s.",
+                    "lessonIndex": 10,
+                    "stageIndex": 4,
+                    "searchTerm": "cholera",
+                    "gloss": "Knowing exact culprits allowed Pasteur's rabies vaccine and Behring's diphtheria antitoxin by the 1890s."
+                  },
+                  {
+                    "id": "kt3_1_s2_l1",
+                    "tier": 4,
+                    "tag": "Limit",
+                    "label": "Spotting Germs Did Not Cure Sepsis",
+                    "detail": "Doctors could diagnose deadly infections in labs decades before chemical drugs could kill germs inside.",
+                    "lessonIndex": 10,
+                    "stageIndex": 4,
+                    "searchTerm": "microbes",
+                    "gloss": "Doctors could diagnose deadly infections in labs decades before chemical drugs could kill germs inside."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt3_2",
+            "code": "3.2",
+            "tier": 2,
+            "label": "3.2 Hospitals, Surgery & Health",
+            "dateChip": "1847–1900",
+            "lessonIndex": 12,
+            "stageIndex": 0,
+            "searchTerm": "Nightingale",
+            "gloss": "Era Pattern: Nightingale reformed wards, Simpson and Lister conquered surgical pain and infection, and 1875 laws enforced sanitation.",
+            "children": [
+              {
+                "id": "kt3_2_s1",
+                "tier": 3,
+                "label": "Nightingale, Nursing & Hospitals",
+                "dateChip": "1854–1860",
+                "lessonIndex": 12,
+                "stageIndex": 1,
+                "searchTerm": "Scutari",
+                "gloss": "Florence Nightingale transformed nursing, hospital care, and pavilion-ward treatment across hospitals in Britain after Scutari (1854).",
+                "children": [
+                  {
+                    "id": "kt3_2_s1_c1",
+                    "tier": 4,
+                    "tag": "Change",
+                    "label": "Scutari Death Rate Fell 42% to 2%",
+                    "detail": "With 38 nurses in Crimea, Nightingale scrubbed wards, boiled sheets, and improved ventilation and food.",
+                    "lessonIndex": 12,
+                    "stageIndex": 1,
+                    "searchTerm": "Scutari",
+                    "gloss": "With 38 nurses in Crimea, Nightingale scrubbed wards, boiled sheets, and improved ventilation and food."
+                  },
+                  {
+                    "id": "kt3_2_s1_f1",
+                    "tier": 4,
+                    "tag": "Factor",
+                    "label": "Crimean War Press & Nightingale Fund",
+                    "detail": "Times reports raised £44,000 for St Thomas' Nursing School and her bestselling 1859 Notes on Nursing.",
+                    "lessonIndex": 12,
+                    "stageIndex": 2,
+                    "searchTerm": "Notes on Nursing",
+                    "gloss": "Times reports raised £44,000 for St Thomas' Nursing School and her bestselling 1859 Notes on Nursing.",
+                    "forTheme": "Individual"
+                  },
+                  {
+                    "id": "kt3_2_s1_i1",
+                    "tier": 4,
+                    "tag": "Impact",
+                    "label": "Pavilion Wards & Trained Matrons",
+                    "detail": "Separate airy pavilion wings, washable tiles, and disciplined nurses turned hospitals into clean sanctuaries.",
+                    "lessonIndex": 12,
+                    "stageIndex": 3,
+                    "searchTerm": "Pavilion",
+                    "gloss": "Separate airy pavilion wings, washable tiles, and disciplined nurses turned hospitals into clean sanctuaries."
+                  },
+                  {
+                    "id": "kt3_2_s1_l1",
+                    "tier": 4,
+                    "tag": "Limit",
+                    "label": "Nightingale Still Believed in Miasma",
+                    "detail": "Her reforms targeted foul air rather than germs, though rigorous cleanliness cut cross-infection anyway.",
+                    "lessonIndex": 12,
+                    "stageIndex": 2,
+                    "searchTerm": "St Thomas",
+                    "gloss": "Her reforms targeted foul air rather than germs, though rigorous cleanliness cut cross-infection anyway."
+                  }
+                ]
+              },
+              {
+                "id": "kt3_2_s2",
+                "tier": 3,
+                "label": "Simpson & Surgical Anaesthetics",
+                "dateChip": "1847–1853",
+                "lessonIndex": 13,
+                "stageIndex": 1,
+                "searchTerm": "chloroform",
+                "gloss": "James Simpson's 1847 chloroform discovery introduced effective anaesthetics in surgery across Britain, ending agonising awake operations.",
+                "children": [
+                  {
+                    "id": "kt3_2_s2_c1",
+                    "tier": 4,
+                    "tag": "Change",
+                    "label": "1847 Chloroform Ended Ether Cough",
+                    "detail": "Testing chemicals at Edinburgh, Simpson found chloroform put patients to sleep smoothly without coughing.",
+                    "lessonIndex": 13,
+                    "stageIndex": 1,
+                    "searchTerm": "chloroform",
+                    "gloss": "Testing chemicals at Edinburgh, Simpson found chloroform put patients to sleep smoothly without coughing."
+                  },
+                  {
+                    "id": "kt3_2_s2_f1",
+                    "tier": 4,
+                    "tag": "Factor",
+                    "label": "Queen Victoria Endorsement in 1853",
+                    "detail": "John Snow gave Queen Victoria chloroform for Prince Leopold's birth, ending religious hostility to pain relief.",
+                    "lessonIndex": 13,
+                    "stageIndex": 1,
+                    "searchTerm": "Victoria",
+                    "gloss": "John Snow gave Queen Victoria chloroform for Prince Leopold's birth, ending religious hostility to pain relief.",
+                    "forTheme": "Attitudes"
+                  },
+                  {
+                    "id": "kt3_2_s2_i1",
+                    "tier": 4,
+                    "tag": "Impact",
+                    "label": "Enabled Longer, Careful Surgery",
+                    "detail": "Unconscious patients stopped thrashing in shock, allowing surgeons to attempt slower, deeper operations.",
+                    "lessonIndex": 13,
+                    "stageIndex": 0,
+                    "searchTerm": "Simpson",
+                    "gloss": "Unconscious patients stopped thrashing in shock, allowing surgeons to attempt slower, deeper operations."
+                  },
+                  {
+                    "id": "kt3_2_s2_l1",
+                    "tier": 4,
+                    "tag": "Limit",
+                    "label": "Hannah Greener & Surgery Black Era",
+                    "detail": "Uncalibrated doses stopped hearts in 1848, and deeper unsterile incisions raised gangrene deaths.",
+                    "lessonIndex": 13,
+                    "stageIndex": 2,
+                    "searchTerm": "Black Period",
+                    "gloss": "Uncalibrated doses stopped hearts in 1848, and deeper unsterile incisions raised gangrene deaths."
+                  }
+                ]
+              },
+              {
+                "id": "kt3_2_s3",
+                "tier": 3,
+                "label": "Lister & Antiseptic Surgery",
+                "dateChip": "1865–1890s",
+                "lessonIndex": 13,
+                "stageIndex": 3,
+                "searchTerm": "carbolic",
+                "gloss": "Joseph Lister applied Pasteur's ideas using carbolic acid antiseptics on surgery wounds and instruments, paving the way for aseptic theatres.",
+                "children": [
+                  {
+                    "id": "kt3_2_s3_c1",
+                    "tier": 4,
+                    "tag": "Change",
+                    "label": "Carbolic Spray Cut Sepsis 46% to 15%",
+                    "detail": "Soaking bandages, ligatures, and wounds in carbolic acid slashed amputation deaths within three years.",
+                    "lessonIndex": 13,
+                    "stageIndex": 3,
+                    "searchTerm": "carbolic acid",
+                    "gloss": "Soaking bandages, ligatures, and wounds in carbolic acid slashed amputation deaths within three years."
+                  },
+                  {
+                    "id": "kt3_2_s3_f1",
+                    "tier": 4,
+                    "tag": "Factor",
+                    "label": "Applied Pasteur's Science to Wards",
+                    "detail": "Reading Pasteur in 1865 showed Lister flesh rotted from airborne microbes rather than chemical oxygen.",
+                    "lessonIndex": 13,
+                    "stageIndex": 3,
+                    "searchTerm": "Lister",
+                    "gloss": "Reading Pasteur in 1865 showed Lister flesh rotted from airborne microbes rather than chemical oxygen.",
+                    "forTheme": "Science"
+                  },
+                  {
+                    "id": "kt3_2_s3_i1",
+                    "tier": 4,
+                    "tag": "Impact",
+                    "label": "1890s Aseptic Steam-Sterile Theatres",
+                    "detail": "Antisepsis evolved into germ-free theatres using boiled steel tools, surgical gowns, masks, and rubber gloves.",
+                    "lessonIndex": 13,
+                    "stageIndex": 4,
+                    "searchTerm": "aseptic",
+                    "gloss": "Antisepsis evolved into germ-free theatres using boiled steel tools, surgical gowns, masks, and rubber gloves."
+                  },
+                  {
+                    "id": "kt3_2_s3_l1",
+                    "tier": 4,
+                    "tag": "Limit",
+                    "label": "Cracked Skin & Slow Surgeon Uptake",
+                    "detail": "Caustic carbolic mist cracked surgeons' hands and slowed operations, sparking initial hostility.",
+                    "lessonIndex": 13,
+                    "stageIndex": 3,
+                    "searchTerm": "spray",
+                    "gloss": "Caustic carbolic mist cracked surgeons' hands and slowed operations, sparking initial hostility."
+                  }
+                ]
+              },
+              {
+                "id": "kt3_2_s4",
+                "tier": 3,
+                "label": "Vaccinations & 1875 Health Act",
+                "dateChip": "1853–1875",
+                "lessonIndex": 14,
+                "stageIndex": 4,
+                "searchTerm": "1875 Public Health Act",
+                "gloss": "Compulsory smallpox vaccinations and the 1875 Public Health Act established state disease prevention through clean water and sewers.",
+                "children": [
+                  {
+                    "id": "kt3_2_s4_c1",
+                    "tier": 4,
+                    "tag": "Change",
+                    "label": "Compulsory 1875 Sanitary Duties",
+                    "detail": "Disraeli's Act forced every town council to provide clean water, covered sewers, street paving, and inspectors.",
+                    "lessonIndex": 14,
+                    "stageIndex": 4,
+                    "searchTerm": "1875 Public Health Act",
+                    "gloss": "Disraeli's Act forced every town council to provide clean water, covered sewers, street paving, and inspectors."
+                  },
+                  {
+                    "id": "kt3_2_s4_f1",
+                    "tier": 4,
+                    "tag": "Factor",
+                    "label": "1867 Vote Ended Laissez-Faire",
+                    "detail": "Newly enfranchised urban working men, plus Bazalgette's 1858 Great Stink sewers, forced MPs to legislate.",
+                    "lessonIndex": 14,
+                    "stageIndex": 3,
+                    "searchTerm": "Bazalgette",
+                    "gloss": "Newly enfranchised urban working men, plus Bazalgette's 1858 Great Stink sewers, forced MPs to legislate.",
+                    "forTheme": "Govt"
+                  },
+                  {
+                    "id": "kt3_2_s4_i1",
+                    "tier": 4,
+                    "tag": "Impact",
+                    "label": "1871 Officers Enforced Vaccines",
+                    "detail": "Appointing paid local vaccination officers enforced the 1853 compulsory infant smallpox law nationwide.",
+                    "lessonIndex": 11,
+                    "stageIndex": 4,
+                    "searchTerm": "compulsory",
+                    "gloss": "Appointing paid local vaccination officers enforced the 1853 compulsory infant smallpox law nationwide."
+                  },
+                  {
+                    "id": "kt3_2_s4_l1",
+                    "tier": 4,
+                    "tag": "Limit",
+                    "label": "Anti-Vaccine Leagues Resisted Fines",
+                    "detail": "Objectors protested state intrusion until 1898 conscience clauses, while slum overcrowding persisted.",
+                    "lessonIndex": 11,
+                    "stageIndex": 4,
+                    "searchTerm": "Laissez-Faire",
+                    "gloss": "Objectors protested state intrusion until 1898 conscience clauses, while slum overcrowding persisted."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt3_3",
+            "code": "3.3",
+            "tier": 2,
+            "label": "3.3 Jenner & 1854 Cholera",
+            "dateChip": "1796–1854",
+            "lessonIndex": 11,
+            "stageIndex": 0,
+            "searchTerm": "Jenner",
+            "gloss": "Era Pattern: Jenner's smallpox vaccine and John Snow's Broad Street pump investigation defeated epidemic killers even before Germ Theory.",
+            "children": [
+              {
+                "id": "kt3_3_s1",
+                "tier": 3,
+                "label": "Jenner & Smallpox Vaccination",
+                "dateChip": "1796–1853",
+                "lessonIndex": 11,
+                "stageIndex": 1,
+                "searchTerm": "James Phipps",
+                "gloss": "Case study on Edward Jenner's 1796 cowpox vaccination of James Phipps, replacing dangerous smallpox inoculation despite opposition.",
+                "children": [
+                  {
+                    "id": "kt3_3_s1_c1",
+                    "tier": 4,
+                    "tag": "Change",
+                    "label": "1796 Cowpox Protected James Phipps",
+                    "detail": "Inoculating milkmaid Sarah Nelmes's cowpox pus gave eight-year-old Phipps full immunity against smallpox.",
+                    "lessonIndex": 11,
+                    "stageIndex": 1,
+                    "searchTerm": "James Phipps",
+                    "gloss": "Inoculating milkmaid Sarah Nelmes's cowpox pus gave eight-year-old Phipps full immunity against smallpox."
+                  },
+                  {
+                    "id": "kt3_3_s1_f1",
+                    "tier": 4,
+                    "tag": "Factor",
+                    "label": "£30,000 in Parliamentary Grants",
+                    "detail": "Government funded Jenner's 1802–07 clinics, banned risky variolation in 1840, and made vaccination compulsory.",
+                    "lessonIndex": 11,
+                    "stageIndex": 3,
+                    "searchTerm": "1840 Vaccination Act",
+                    "gloss": "Government funded Jenner's 1802–07 clinics, banned risky variolation in 1840, and made vaccination compulsory.",
+                    "forTheme": "Govt"
+                  },
+                  {
+                    "id": "kt3_3_s1_i1",
+                    "tier": 4,
+                    "tag": "Impact",
+                    "label": "First Safe Disease Eradication Model",
+                    "detail": "Vaccination steadily crushed Britain's deadliest viral killer and enabled global smallpox eradication by 1980.",
+                    "lessonIndex": 11,
+                    "stageIndex": 4,
+                    "searchTerm": "eradication",
+                    "gloss": "Vaccination steadily crushed Britain's deadliest viral killer and enabled global smallpox eradication by 1980."
+                  },
+                  {
+                    "id": "kt3_3_s1_l1",
+                    "tier": 4,
+                    "tag": "Limit",
+                    "label": "One-Off Breakthrough Before Germs",
+                    "detail": "Because Jenner could not explain how cowpox worked, doctors could not copy it for other diseases.",
+                    "lessonIndex": 11,
+                    "stageIndex": 2,
+                    "searchTerm": "Royal Society",
+                    "gloss": "Because Jenner could not explain how cowpox worked, doctors could not copy it for other diseases."
+                  }
+                ]
+              },
+              {
+                "id": "kt3_3_s2",
+                "tier": 3,
+                "label": "John Snow & Broad Street Pump",
+                "dateChip": "1854",
+                "lessonIndex": 14,
+                "stageIndex": 1,
+                "searchTerm": "Broad Street",
+                "gloss": "Combating cholera in London (1854), John Snow mapped Soho deaths and removed the Broad Street pump handle to prevent waterborne spread.",
+                "children": [
+                  {
+                    "id": "kt3_3_s2_c1",
+                    "tier": 4,
+                    "tag": "Change",
+                    "label": "Spot Map Proved Waterborne Cholera",
+                    "detail": "Mapping 700 Soho deaths in ten days pinpointed a cracked cesspit leaking into Broad Street well water.",
+                    "lessonIndex": 14,
+                    "stageIndex": 1,
+                    "searchTerm": "Broad Street",
+                    "gloss": "Mapping 700 Soho deaths in ten days pinpointed a cracked cesspit leaking into Broad Street well water."
+                  },
+                  {
+                    "id": "kt3_3_s2_f1",
+                    "tier": 4,
+                    "tag": "Factor",
+                    "label": "Door-to-Door Soho Case Evidence",
+                    "detail": "Snow proved brewery workers drinking beer escaped cholera, while a Hampstead widow died drinking Soho water.",
+                    "lessonIndex": 14,
+                    "stageIndex": 2,
+                    "searchTerm": "Snow",
+                    "gloss": "Snow proved brewery workers drinking beer escaped cholera, while a Hampstead widow died drinking Soho water.",
+                    "forTheme": "Individual"
+                  },
+                  {
+                    "id": "kt3_3_s2_i1",
+                    "tier": 4,
+                    "tag": "Impact",
+                    "label": "Pump Handle Removal Halted Cases",
+                    "detail": "Taking off the Soho handle halted local cases and bolstered Bazalgette's 1,300-mile London sewer network.",
+                    "lessonIndex": 14,
+                    "stageIndex": 3,
+                    "searchTerm": "sewers",
+                    "gloss": "Taking off the Soho handle halted local cases and bolstered Bazalgette's 1,300-mile London sewer network."
+                  },
+                  {
+                    "id": "kt3_3_s2_l1",
+                    "tier": 4,
+                    "tag": "Limit",
+                    "label": "Board of Health Clung to Miasma",
+                    "detail": "Officials rejected Snow's water theory until the 1858 Great Stink and Koch's 1883 comma-bacillus discovery.",
+                    "lessonIndex": 14,
+                    "stageIndex": 0,
+                    "searchTerm": "Great Stink",
+                    "gloss": "Officials rejected Snow's water theory until the 1858 Great Stink and Koch's 1883 comma-bacillus discovery."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "kt4",
+        "keyTopicNumber": 4,
+        "tier": 1,
+        "side": "right",
+        "color": "#dc2626",
+        "label": "Modern Medicine",
+        "dateChip": "c1900–present",
+        "lessonIndex": 15,
+        "stageIndex": 0,
+        "searchTerm": "NHS",
+        "gloss": "DNA and genetic disease, lifestyle factors, blood tests and scans, magic bullets, antibiotics, penicillin, high-tech surgery, the 1948 NHS, and fighting lung cancer.",
+        "children": [
+          {
+            "id": "kt4_1",
+            "code": "4.1",
+            "tier": 2,
+            "label": "4.1 DNA, Lifestyle & Diagnosis",
+            "dateChip": "1900–present",
+            "lessonIndex": 15,
+            "stageIndex": 0,
+            "searchTerm": "DNA",
+            "gloss": "Era Pattern: DNA genetics, lifestyle epidemiology, blood tests, scans, and monitors transformed modern diagnosis of non-infectious illness.",
+            "children": [
+              {
+                "id": "kt4_1_s1",
+                "tier": 3,
+                "label": "DNA & Genetic Causes of Disease",
+                "dateChip": "1953–2003",
+                "lessonIndex": 15,
+                "stageIndex": 2,
+                "searchTerm": "Human Genome Project",
+                "gloss": "Advances in DNA and the Human Genome Project revealed hereditary genetic causes of illness and disease affecting human health.",
+                "children": [
+                  {
+                    "id": "kt4_1_s1_c1",
+                    "tier": 4,
+                    "tag": "Change",
+                    "label": "1953 Double Helix Unlocked DNA",
+                    "detail": "Watson, Crick, and Franklin's X-ray crystallography proved faulty genes cause cystic fibrosis and Huntington's.",
+                    "lessonIndex": 15,
+                    "stageIndex": 2,
+                    "searchTerm": "Photograph 51",
+                    "gloss": "Watson, Crick, and Franklin's X-ray crystallography proved faulty genes cause cystic fibrosis and Huntington's."
+                  },
+                  {
+                    "id": "kt4_1_s1_f1",
+                    "tier": 4,
+                    "tag": "Factor",
+                    "label": "Global Genome Computing Teams",
+                    "detail": "Between 1990 and 2003 eighteen international labs mapped three billion human DNA base pairs together.",
+                    "lessonIndex": 15,
+                    "stageIndex": 3,
+                    "searchTerm": "Human Genome Project",
+                    "gloss": "Between 1990 and 2003 eighteen international labs mapped three billion human DNA base pairs together.",
+                    "forTheme": "Science"
+                  },
+                  {
+                    "id": "kt4_1_s1_i1",
+                    "tier": 4,
+                    "tag": "Impact",
+                    "label": "BRCA Gene Tests & Early Surgery",
+                    "detail": "Genetic tests now identify high-risk breast cancer carriers early so preventive surgery saves lives.",
+                    "lessonIndex": 15,
+                    "stageIndex": 4,
+                    "searchTerm": "screening",
+                    "gloss": "Genetic tests now identify high-risk breast cancer carriers early so preventive surgery saves lives."
+                  },
+                  {
+                    "id": "kt4_1_s1_l1",
+                    "tier": 4,
+                    "tag": "Limit",
+                    "label": "Gene Tests Outpace Full Cures",
+                    "detail": "Doctors can detect inherited conditions like Down syndrome or cystic fibrosis without curing every faulty gene.",
+                    "lessonIndex": 15,
+                    "stageIndex": 4,
+                    "searchTerm": "cystic fibrosis",
+                    "gloss": "Doctors can detect inherited conditions like Down syndrome or cystic fibrosis without curing every faulty gene."
+                  }
+                ]
+              },
+              {
+                "id": "kt4_1_s2",
+                "tier": 3,
+                "label": "Lifestyle Factors & Health",
+                "dateChip": "1950–present",
+                "lessonIndex": 16,
+                "stageIndex": 3,
+                "searchTerm": "lifestyle",
+                "gloss": "Modern epidemiology proved how smoking, diet, alcohol, and environmental lifestyle factors damage health and trigger chronic disease.",
+                "children": [
+                  {
+                    "id": "kt4_1_s2_c1",
+                    "tier": 4,
+                    "tag": "Change",
+                    "label": "Doll & Hill Linked Smoking to Cancer",
+                    "detail": "1950 British clinical studies proved tobacco, high-sugar diets, alcohol, and UV rays cause chronic illness.",
+                    "lessonIndex": 16,
+                    "stageIndex": 3,
+                    "searchTerm": "smoking",
+                    "gloss": "1950 British clinical studies proved tobacco, high-sugar diets, alcohol, and UV rays cause chronic illness."
+                  },
+                  {
+                    "id": "kt4_1_s2_f1",
+                    "tier": 4,
+                    "tag": "Factor",
+                    "label": "Shift Toward Chronic Illnesses",
+                    "detail": "Longer lifespans and sedentary consumer habits made heart disease, type-2 diabetes, and cancer dominant.",
+                    "lessonIndex": 16,
+                    "stageIndex": 3,
+                    "searchTerm": "epidemiological",
+                    "gloss": "Longer lifespans and sedentary consumer habits made heart disease, type-2 diabetes, and cancer dominant.",
+                    "forTheme": "Attitudes"
+                  },
+                  {
+                    "id": "kt4_1_s2_i1",
+                    "tier": 4,
+                    "tag": "Impact",
+                    "label": "Routine GP Risk-Factor Checks",
+                    "detail": "GPs routinely track cholesterol, BMI, and blood pressure to prevent strokes before symptoms strike.",
+                    "lessonIndex": 16,
+                    "stageIndex": 4,
+                    "searchTerm": "cholesterol",
+                    "gloss": "GPs routinely track cholesterol, BMI, and blood pressure to prevent strokes before symptoms strike."
+                  },
+                  {
+                    "id": "kt4_1_s2_l1",
+                    "tier": 4,
+                    "tag": "Limit",
+                    "label": "Addiction & Inequality Hinder Change",
+                    "detail": "Corporate marketing, poverty, and nicotine addiction mean millions still suffer preventable lifestyle diseases.",
+                    "lessonIndex": 16,
+                    "stageIndex": 4,
+                    "searchTerm": "campaigns",
+                    "gloss": "Corporate marketing, poverty, and nicotine addiction mean millions still suffer preventable lifestyle diseases."
+                  }
+                ]
+              },
+              {
+                "id": "kt4_1_s3",
+                "tier": 3,
+                "label": "Blood Tests, Scans & Monitors",
+                "dateChip": "1895–present",
+                "lessonIndex": 16,
+                "stageIndex": 2,
+                "searchTerm": "MRI",
+                "gloss": "Widespread availability of laboratory blood tests, X-ray, CT and MRI scans, and electronic monitors revolutionised accurate diagnosis.",
+                "children": [
+                  {
+                    "id": "kt4_1_s3_c1",
+                    "tier": 4,
+                    "tag": "Change",
+                    "label": "Non-Invasive Inside-Body Imaging",
+                    "detail": "X-rays, Hounsfield's 1972 CT scanners, MRI, ultrasound, and endoscopes reveal tumours without exploratory cuts.",
+                    "lessonIndex": 16,
+                    "stageIndex": 2,
+                    "searchTerm": "Hounsfield",
+                    "gloss": "X-rays, Hounsfield's 1972 CT scanners, MRI, ultrasound, and endoscopes reveal tumours without exploratory cuts."
+                  },
+                  {
+                    "id": "kt4_1_s3_f1",
+                    "tier": 4,
+                    "tag": "Factor",
+                    "label": "Microchips, Lasers & Blood Labs",
+                    "detail": "Miniaturised electronics created blood-sugar monitors, ECG heart trackers, and automated biopsy blood labs.",
+                    "lessonIndex": 16,
+                    "stageIndex": 1,
+                    "searchTerm": "endoscopy",
+                    "gloss": "Miniaturised electronics created blood-sugar monitors, ECG heart trackers, and automated biopsy blood labs.",
+                    "forTheme": "Tech"
+                  },
+                  {
+                    "id": "kt4_1_s3_i1",
+                    "tier": 4,
+                    "tag": "Impact",
+                    "label": "Early Scans Boost Survival Odds",
+                    "detail": "Catching internal clots, blocked arteries, or early cancers allows swift keyhole or drug intervention.",
+                    "lessonIndex": 16,
+                    "stageIndex": 2,
+                    "searchTerm": "CT",
+                    "gloss": "Catching internal clots, blocked arteries, or early cancers allows swift keyhole or drug intervention."
+                  },
+                  {
+                    "id": "kt4_1_s3_l1",
+                    "tier": 4,
+                    "tag": "Limit",
+                    "label": "Scanner Waiting Lists & High Costs",
+                    "detail": "Multi-million-pound MRI suites and specialist radiologist shortages create NHS diagnostic backlogs.",
+                    "lessonIndex": 17,
+                    "stageIndex": 4,
+                    "searchTerm": "waiting",
+                    "gloss": "Multi-million-pound MRI suites and specialist radiologist shortages create NHS diagnostic backlogs."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt4_2",
+            "code": "4.2",
+            "tier": 2,
+            "label": "4.2 NHS, Magic Bullets & Tech",
+            "dateChip": "1909–present",
+            "lessonIndex": 17,
+            "stageIndex": 0,
+            "searchTerm": "NHS",
+            "gloss": "Era Pattern: Magic bullets, antibiotics, high-tech hospital surgery, mass vaccinations, and the 1948 NHS created universal modern care.",
+            "children": [
+              {
+                "id": "kt4_2_s1",
+                "tier": 3,
+                "label": "The 1948 NHS & Access to Care",
+                "dateChip": "1948–present",
+                "lessonIndex": 17,
+                "stageIndex": 3,
+                "searchTerm": "Aneurin Bevan",
+                "gloss": "Launched by Aneurin Bevan in 1948, the NHS delivered improved access to tax-funded care and treatment across British hospitals.",
+                "children": [
+                  {
+                    "id": "kt4_2_s1_c1",
+                    "tier": 4,
+                    "tag": "Change",
+                    "label": "Free Care From Cradle to Grave",
+                    "detail": "Nationalising 2,688 hospitals gave women, children, and low-paid workers free GPs, dentists, and surgery.",
+                    "lessonIndex": 17,
+                    "stageIndex": 3,
+                    "searchTerm": "Aneurin Bevan",
+                    "gloss": "Nationalising 2,688 hospitals gave women, children, and low-paid workers free GPs, dentists, and surgery."
+                  },
+                  {
+                    "id": "kt4_2_s1_f1",
+                    "tier": 4,
+                    "tag": "Factor",
+                    "label": "1942 Beveridge Report & WW2 Unity",
+                    "detail": "WW2 evacuation exposed poverty, inspiring Beveridge's blueprint and Bevan's 1948 NHS compromise with doctors.",
+                    "lessonIndex": 17,
+                    "stageIndex": 2,
+                    "searchTerm": "Beveridge",
+                    "gloss": "WW2 evacuation exposed poverty, inspiring Beveridge's blueprint and Bevan's 1948 NHS compromise with doctors.",
+                    "forTheme": "Govt"
+                  },
+                  {
+                    "id": "kt4_2_s1_i1",
+                    "tier": 4,
+                    "tag": "Impact",
+                    "label": "Lifespans Rose Over Twelve Years",
+                    "detail": "Universal maternity care, clean hospitals, and free prescriptions slashed infant and maternal mortality.",
+                    "lessonIndex": 17,
+                    "stageIndex": 3,
+                    "searchTerm": "1948",
+                    "gloss": "Universal maternity care, clean hospitals, and free prescriptions slashed infant and maternal mortality."
+                  },
+                  {
+                    "id": "kt4_2_s1_l1",
+                    "tier": 4,
+                    "tag": "Limit",
+                    "label": "Prescription Charges & Ageing Strain",
+                    "detail": "Soaring demand forced 1950s prescription and dental fees, while ageing populations stretch NHS budgets.",
+                    "lessonIndex": 17,
+                    "stageIndex": 4,
+                    "searchTerm": "pressures",
+                    "gloss": "Soaring demand forced 1950s prescription and dental fees, while ageing populations stretch NHS budgets."
+                  }
+                ]
+              },
+              {
+                "id": "kt4_2_s2",
+                "tier": 3,
+                "label": "Magic Bullets & Antibiotics",
+                "dateChip": "1909–present",
+                "lessonIndex": 17,
+                "stageIndex": 0,
+                "searchTerm": "Salvarsan 606",
+                "gloss": "Chemical science drove advances in medicines from Salvarsan 606 and Prontosil magic bullets to broad-spectrum antibiotics.",
+                "children": [
+                  {
+                    "id": "kt4_2_s2_c1",
+                    "tier": 4,
+                    "tag": "Change",
+                    "label": "Salvarsan 606 & Prontosil Cures",
+                    "detail": "Ehrlich and Hata (1909) cured syphilis chemically, and Domagk's Prontosil (1932) defeated blood poisoning.",
+                    "lessonIndex": 17,
+                    "stageIndex": 0,
+                    "searchTerm": "Salvarsan 606",
+                    "gloss": "Ehrlich and Hata (1909) cured syphilis chemically, and Domagk's Prontosil (1932) defeated blood poisoning."
+                  },
+                  {
+                    "id": "kt4_2_s2_f1",
+                    "tier": 4,
+                    "tag": "Factor",
+                    "label": "Pharmaceutical Dye Labs & Screening",
+                    "detail": "Systematic testing of hundreds of synthetic chemical compounds replaced solitary trial-and-error remedies.",
+                    "lessonIndex": 17,
+                    "stageIndex": 1,
+                    "searchTerm": "Prontosil",
+                    "gloss": "Systematic testing of hundreds of synthetic chemical compounds replaced solitary trial-and-error remedies.",
+                    "forTheme": "Science"
+                  },
+                  {
+                    "id": "kt4_2_s2_i1",
+                    "tier": 4,
+                    "tag": "Impact",
+                    "label": "Streptomycin & Tetracycline Era",
+                    "detail": "Post-1945 antibiotics cured tuberculosis, pneumonia, and scarlet fever that once filled isolation wards.",
+                    "lessonIndex": 18,
+                    "stageIndex": 4,
+                    "searchTerm": "antibiotics",
+                    "gloss": "Post-1945 antibiotics cured tuberculosis, pneumonia, and scarlet fever that once filled isolation wards."
+                  },
+                  {
+                    "id": "kt4_2_s2_l1",
+                    "tier": 4,
+                    "tag": "Limit",
+                    "label": "MRSA Superbugs & Drug Resistance",
+                    "detail": "Overprescribing antibiotics bred resistant hospital bacteria like MRSA that evade standard drugs.",
+                    "lessonIndex": 18,
+                    "stageIndex": 4,
+                    "searchTerm": "MRSA",
+                    "gloss": "Overprescribing antibiotics bred resistant hospital bacteria like MRSA that evade standard drugs."
+                  }
+                ]
+              },
+              {
+                "id": "kt4_2_s3",
+                "tier": 3,
+                "label": "High-Tech Hospital Treatment",
+                "dateChip": "1950–present",
+                "lessonIndex": 17,
+                "stageIndex": 4,
+                "searchTerm": "high-tech",
+                "gloss": "Modern science and technology enabled high-tech medical and surgical treatment in hospitals, including radiotherapy, transplants, and keyhole surgery.",
+                "children": [
+                  {
+                    "id": "kt4_2_s3_c1",
+                    "tier": 4,
+                    "tag": "Change",
+                    "label": "Transplants, Dialysis & Pacemakers",
+                    "detail": "Heart-lung machines, anti-rejection drugs, and prosthetic joints let surgeons replace failing vital organs.",
+                    "lessonIndex": 17,
+                    "stageIndex": 4,
+                    "searchTerm": "high-tech",
+                    "gloss": "Heart-lung machines, anti-rejection drugs, and prosthetic joints let surgeons replace failing vital organs."
+                  },
+                  {
+                    "id": "kt4_2_s3_f1",
+                    "tier": 4,
+                    "tag": "Factor",
+                    "label": "Fibre-Optics, Robotics & Lasers",
+                    "detail": "Engineering breakthroughs created minimally invasive laparoscopic cameras, laser eye tools, and CyberKnife beams.",
+                    "lessonIndex": 19,
+                    "stageIndex": 2,
+                    "searchTerm": "CyberKnife",
+                    "gloss": "Engineering breakthroughs created minimally invasive laparoscopic cameras, laser eye tools, and CyberKnife beams.",
+                    "forTheme": "Tech"
+                  },
+                  {
+                    "id": "kt4_2_s3_i1",
+                    "tier": 4,
+                    "tag": "Impact",
+                    "label": "Faster Recovery & Smaller Scars",
+                    "detail": "Keyhole incisions slash bleeding, hospital stays, and post-operative infection risks for elderly patients.",
+                    "lessonIndex": 19,
+                    "stageIndex": 2,
+                    "searchTerm": "keyhole",
+                    "gloss": "Keyhole incisions slash bleeding, hospital stays, and post-operative infection risks for elderly patients."
+                  },
+                  {
+                    "id": "kt4_2_s3_l1",
+                    "tier": 4,
+                    "tag": "Limit",
+                    "label": "Organ Shortages & Postcode Lotteries",
+                    "detail": "Transplant waiting lists and costly specialist machinery limit equal access across regional hospitals.",
+                    "lessonIndex": 17,
+                    "stageIndex": 4,
+                    "searchTerm": "financial",
+                    "gloss": "Transplant waiting lists and costly specialist machinery limit equal access across regional hospitals."
+                  }
+                ]
+              },
+              {
+                "id": "kt4_2_s4",
+                "tier": 3,
+                "label": "Mass Vaccinations & Campaigns",
+                "dateChip": "1942–present",
+                "lessonIndex": 16,
+                "stageIndex": 4,
+                "searchTerm": "campaigns",
+                "gloss": "Modern disease prevention combines national mass vaccinations against polio and diphtheria with government lifestyle campaigns.",
+                "children": [
+                  {
+                    "id": "kt4_2_s4_c1",
+                    "tier": 4,
+                    "tag": "Change",
+                    "label": "Diphtheria, Polio, MMR & HPV Drives",
+                    "detail": "Free national childhood immunisation starting with 1942 wartime diphtheria nearly wiped out childhood killers.",
+                    "lessonIndex": 16,
+                    "stageIndex": 4,
+                    "searchTerm": "campaigns",
+                    "gloss": "Free national childhood immunisation starting with 1942 wartime diphtheria nearly wiped out childhood killers."
+                  },
+                  {
+                    "id": "kt4_2_s4_f1",
+                    "tier": 4,
+                    "tag": "Factor",
+                    "label": "Proactive Welfare State Media Drives",
+                    "detail": "Health ministries fund TV campaigns like 'Don't Die of Ignorance' (AIDS) and Change4Life healthy eating.",
+                    "lessonIndex": 16,
+                    "stageIndex": 4,
+                    "searchTerm": "Change4Life",
+                    "gloss": "Health ministries fund TV campaigns like 'Don't Die of Ignorance' (AIDS) and Change4Life healthy eating.",
+                    "forTheme": "Govt"
+                  },
+                  {
+                    "id": "kt4_2_s4_i1",
+                    "tier": 4,
+                    "tag": "Impact",
+                    "label": "Clean Air Acts & Fluoridation Laws",
+                    "detail": "The 1956 Clean Air Act ended deadly London smogs while seatbelts and sugar taxes cut preventable harm.",
+                    "lessonIndex": 16,
+                    "stageIndex": 4,
+                    "searchTerm": "lifestyle",
+                    "gloss": "The 1956 Clean Air Act ended deadly London smogs while seatbelts and sugar taxes cut preventable harm."
+                  },
+                  {
+                    "id": "kt4_2_s4_l1",
+                    "tier": 4,
+                    "tag": "Limit",
+                    "label": "Vaccine Hesitancy & Misinformation",
+                    "detail": "Discredited 1998 MMR scares showed media panic can drop herd immunity and trigger measles outbreaks.",
+                    "lessonIndex": 16,
+                    "stageIndex": 4,
+                    "searchTerm": "state",
+                    "gloss": "Discredited 1998 MMR scares showed media panic can drop herd immunity and trigger measles outbreaks."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt4_3",
+            "code": "4.3",
+            "tier": 2,
+            "label": "4.3 Penicillin & Lung Cancer",
+            "dateChip": "1928–present",
+            "lessonIndex": 18,
+            "stageIndex": 0,
+            "searchTerm": "penicillin",
+            "gloss": "Era Pattern: Wartime teamwork mass-produced penicillin, while modern science and government legislation tackle twenty-first-century lung cancer.",
+            "children": [
+              {
+                "id": "kt4_3_s1",
+                "tier": 3,
+                "label": "Fleming, Florey & Chain Penicillin",
+                "dateChip": "1928–1945",
+                "lessonIndex": 18,
+                "stageIndex": 1,
+                "searchTerm": "penicillin",
+                "gloss": "Case study on Alexander Fleming's 1928 mould discovery and Howard Florey and Ernst Chain's wartime mass production of penicillin.",
+                "children": [
+                  {
+                    "id": "kt4_3_s1_c1",
+                    "tier": 4,
+                    "tag": "Change",
+                    "label": "First Mass-Produced Antibiotic",
+                    "detail": "Fleming noticed Penicillium mould killing staphylococci in 1928; Florey and Chain purified it in 1940.",
+                    "lessonIndex": 18,
+                    "stageIndex": 0,
+                    "searchTerm": "Fleming",
+                    "gloss": "Fleming noticed Penicillium mould killing staphylococci in 1928; Florey and Chain purified it in 1940."
+                  },
+                  {
+                    "id": "kt4_3_s1_f1",
+                    "tier": 4,
+                    "tag": "Factor",
+                    "label": "US Wartime Funding & Deep-Tank Vats",
+                    "detail": "After 1941 Pearl Harbor, US government grants helped Pfizer brew 2.3 million D-Day penicillin doses.",
+                    "lessonIndex": 18,
+                    "stageIndex": 3,
+                    "searchTerm": "Florey",
+                    "gloss": "After 1941 Pearl Harbor, US government grants helped Pfizer brew 2.3 million D-Day penicillin doses.",
+                    "forTheme": "War"
+                  },
+                  {
+                    "id": "kt4_3_s1_i1",
+                    "tier": 4,
+                    "tag": "Impact",
+                    "label": "Cut Allied Wound Deaths by 15%",
+                    "detail": "Free NHS penicillin after 1948 turned fatal pneumonia, meningitis, and septic cuts into routine cures.",
+                    "lessonIndex": 18,
+                    "stageIndex": 4,
+                    "searchTerm": "D-Day",
+                    "gloss": "Free NHS penicillin after 1948 turned fatal pneumonia, meningitis, and septic cuts into routine cures."
+                  },
+                  {
+                    "id": "kt4_3_s1_l1",
+                    "tier": 4,
+                    "tag": "Limit",
+                    "label": "Alexander Died as Dose Ran Out",
+                    "detail": "Early Oxford milk-churn brewing proved too tiny until industrial American chemical plants scaled up.",
+                    "lessonIndex": 18,
+                    "stageIndex": 2,
+                    "searchTerm": "Albert Alexander",
+                    "gloss": "Early Oxford milk-churn brewing proved too tiny until industrial American chemical plants scaled up."
+                  }
+                ]
+              },
+              {
+                "id": "kt4_3_s2",
+                "tier": 3,
+                "label": "Lung Cancer Science & Diagnosis",
+                "dateChip": "c1990–present",
+                "lessonIndex": 19,
+                "stageIndex": 1,
+                "searchTerm": "lung cancer",
+                "gloss": "The fight against lung cancer in the twenty-first century uses science and technology like CT-PET diagnosis and targeted oncology treatment.",
+                "children": [
+                  {
+                    "id": "kt4_3_s2_c1",
+                    "tier": 4,
+                    "tag": "Change",
+                    "label": "CT-PET Scans & Fibre Bronchoscopy",
+                    "detail": "3D PET-CT scans and fibre-optic bronchoscopes pinpoint tiny lung tumours before chest X-rays spot them.",
+                    "lessonIndex": 19,
+                    "stageIndex": 1,
+                    "searchTerm": "PET",
+                    "gloss": "3D PET-CT scans and fibre-optic bronchoscopes pinpoint tiny lung tumours before chest X-rays spot them."
+                  },
+                  {
+                    "id": "kt4_3_s2_f1",
+                    "tier": 4,
+                    "tag": "Factor",
+                    "label": "Precision Genomics & Robotics",
+                    "detail": "DNA tumour profiling guides immunotherapy and targeted drugs while CyberKnife spares healthy lung tissue.",
+                    "lessonIndex": 19,
+                    "stageIndex": 3,
+                    "searchTerm": "oncology",
+                    "gloss": "DNA tumour profiling guides immunotherapy and targeted drugs while CyberKnife spares healthy lung tissue.",
+                    "forTheme": "Tech"
+                  },
+                  {
+                    "id": "kt4_3_s2_i1",
+                    "tier": 4,
+                    "tag": "Impact",
+                    "label": "Mobile Supermarket Lung-Scan Trucks",
+                    "detail": "Targeted NHS lung health checks in former industrial towns catch stage-one cancers when curable.",
+                    "lessonIndex": 19,
+                    "stageIndex": 1,
+                    "searchTerm": "scans",
+                    "gloss": "Targeted NHS lung health checks in former industrial towns catch stage-one cancers when curable."
+                  },
+                  {
+                    "id": "kt4_3_s2_l1",
+                    "tier": 4,
+                    "tag": "Limit",
+                    "label": "Late Symptoms Keep Mortality High",
+                    "detail": "Because persistent coughs mimic minor colds, lung cancer remains Britain's deadliest cancer at ~35,000 deaths.",
+                    "lessonIndex": 19,
+                    "stageIndex": 0,
+                    "searchTerm": "diagnostic",
+                    "gloss": "Because persistent coughs mimic minor colds, lung cancer remains Britain's deadliest cancer at ~35,000 deaths."
+                  }
+                ]
+              },
+              {
+                "id": "kt4_3_s3",
+                "tier": 3,
+                "label": "Government Lung Cancer Action",
+                "dateChip": "2002–present",
+                "lessonIndex": 19,
+                "stageIndex": 4,
+                "searchTerm": "smoking ban",
+                "gloss": "Twenty-first century government action against lung cancer enforced cigarette ad bans, 2007 indoor smoking bans, and plain packaging.",
+                "children": [
+                  {
+                    "id": "kt4_3_s3_c1",
+                    "tier": 4,
+                    "tag": "Change",
+                    "label": "2007 Indoor Workplace Smoking Ban",
+                    "detail": "Parliament outlawed smoking in pubs, offices, and cars carrying children (2015) to stop passive smoke.",
+                    "lessonIndex": 19,
+                    "stageIndex": 4,
+                    "searchTerm": "2007",
+                    "gloss": "Parliament outlawed smoking in pubs, offices, and cars carrying children (2015) to stop passive smoke."
+                  },
+                  {
+                    "id": "kt4_3_s3_f1",
+                    "tier": 4,
+                    "tag": "Factor",
+                    "label": "Taxation, Age Laws & Ad Restrictions",
+                    "detail": "Raising legal purchase age to 18, steep tobacco duty, and 2005 TV/motorsport ad bans curbed uptake.",
+                    "lessonIndex": 19,
+                    "stageIndex": 4,
+                    "searchTerm": "statutory",
+                    "gloss": "Raising legal purchase age to 18, steep tobacco duty, and 2005 TV/motorsport ad bans curbed uptake.",
+                    "forTheme": "Govt"
+                  },
+                  {
+                    "id": "kt4_3_s3_i1",
+                    "tier": 4,
+                    "tag": "Impact",
+                    "label": "Plain Packs Cut Smoking to ~13%",
+                    "detail": "2016 plain olive packaging with diseased-lung photos and NHS Stop Smoking clinics halved smoking rates.",
+                    "lessonIndex": 19,
+                    "stageIndex": 4,
+                    "searchTerm": "packaging",
+                    "gloss": "2016 plain olive packaging with diseased-lung photos and NHS Stop Smoking clinics halved smoking rates."
+                  },
+                  {
+                    "id": "kt4_3_s3_l1",
+                    "tier": 4,
+                    "tag": "Limit",
+                    "label": "Youth Vaping & Decades-Long Lag Time",
+                    "detail": "Past decades of heavy smoking and rising youth nicotine vaping keep lung disease burdens high.",
+                    "lessonIndex": 19,
+                    "stageIndex": 0,
+                    "searchTerm": "lung cancer",
+                    "gloss": "Past decades of heavy smoking and rising youth nicotine vaping keep lung disease burdens high."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "kt5",
+        "keyTopicNumber": 5,
+        "tier": 1,
+        "side": "left",
+        "color": "#d97706",
+        "label": "Western Front Medicine",
+        "dateChip": "1914–18",
+        "lessonIndex": 20,
+        "stageIndex": 0,
+        "searchTerm": "Western Front",
+        "gloss": "The British sector of the Western Front, 1914–18: Flanders and northern France battles, trench system and terrain, trench illnesses and wounds, RAMC evacuation chain, and frontline surgical breakthroughs.",
+        "children": [
+          {
+            "id": "kt5_1",
+            "code": "5.1",
+            "tier": 2,
+            "label": "5.1 Battles & Flanders Terrain",
+            "dateChip": "1914–1917",
+            "lessonIndex": 20,
+            "stageIndex": 0,
+            "searchTerm": "Ypres",
+            "gloss": "Key Overview: Major British offensives across Flanders and northern France—Ypres, the Somme, Arras, and Cambrai—each created distinct casualty surges and terrain challenges.",
+            "children": [
+              {
+                "id": "kt5_1_s1",
+                "tier": 3,
+                "label": "Ypres Salient & Somme (1914–16)",
+                "dateChip": "1914–1916",
+                "lessonIndex": 20,
+                "stageIndex": 0,
+                "searchTerm": "Ypres",
+                "gloss": "The British sector of the Western Front theatre of war in Flanders and northern France included the waterlogged Ypres salient and the 1916 Battle of the Somme.",
+                "children": [
+                  {
+                    "id": "kt5_1_s1_f1",
+                    "tier": 4,
+                    "tag": "Feature",
+                    "label": "Ypres Salient & Hill 60 Mines",
+                    "detail": "German artillery overlooked British lines on three sides until 1915 tunnellers blew five mines under Hill 60.",
+                    "lessonIndex": 20,
+                    "stageIndex": 0,
+                    "searchTerm": "Hill 60",
+                    "gloss": "German artillery overlooked British lines on three sides until 1915 tunnellers blew five mines under Hill 60."
+                  },
+                  {
+                    "id": "kt5_1_s1_f2",
+                    "tier": 4,
+                    "tag": "Feature",
+                    "label": "Somme: 57,000 Day-One Casualties",
+                    "detail": "Launching on 1 July 1916, the five-month Somme offensive inflicted over 400,000 British casualties.",
+                    "lessonIndex": 20,
+                    "stageIndex": 4,
+                    "searchTerm": "Somme",
+                    "gloss": "Launching on 1 July 1916, the five-month Somme offensive inflicted over 400,000 British casualties."
+                  },
+                  {
+                    "id": "kt5_1_s1_p1",
+                    "tier": 4,
+                    "tag": "Problem",
+                    "label": "Flooded Flanders Clay & Shell Mud",
+                    "detail": "High water tables at Passchendaele (1917) turned shelled Flanders clay into waist-deep liquid mud.",
+                    "lessonIndex": 20,
+                    "stageIndex": 0,
+                    "searchTerm": "Passchendaele",
+                    "gloss": "High water tables at Passchendaele (1917) turned shelled Flanders clay into waist-deep liquid mud."
+                  },
+                  {
+                    "id": "kt5_1_s1_s1",
+                    "tier": 4,
+                    "tag": "Solution",
+                    "label": "Expanded Triage & Extra Stretchers",
+                    "detail": "Massive Somme casualty surges forced the RAMC to double Casualty Clearing Stations and ambulance trains.",
+                    "lessonIndex": 20,
+                    "stageIndex": 4,
+                    "searchTerm": "Somme",
+                    "gloss": "Massive Somme casualty surges forced the RAMC to double Casualty Clearing Stations and ambulance trains."
+                  }
+                ]
+              },
+              {
+                "id": "kt5_1_s2",
+                "tier": 3,
+                "label": "Arras Caves & Cambrai (1917)",
+                "dateChip": "Apr–Nov 1917",
+                "lessonIndex": 20,
+                "stageIndex": 3,
+                "searchTerm": "Arras",
+                "gloss": "In 1917 British forces fought at Arras using an underground hospital in chalk caves and launched massed tanks with a blood bank at the Battle of Cambrai.",
+                "children": [
+                  {
+                    "id": "kt5_1_s2_f1",
+                    "tier": 4,
+                    "tag": "Feature",
+                    "label": "24,000 Men in Arras Chalk Tunnels",
+                    "detail": "New Zealand and British tunnellers linked medieval Arras chalk quarries to shelter troops before April 1917.",
+                    "lessonIndex": 20,
+                    "stageIndex": 3,
+                    "searchTerm": "Arras",
+                    "gloss": "New Zealand and British tunnellers linked medieval Arras chalk quarries to shelter troops before April 1917."
+                  },
+                  {
+                    "id": "kt5_1_s2_f2",
+                    "tier": 4,
+                    "tag": "Feature",
+                    "label": "Cambrai: 476 Tanks & Artillery",
+                    "detail": "November 1917 at Cambrai saw the first massed British tank assault supported by pre-stored blood.",
+                    "lessonIndex": 20,
+                    "stageIndex": 4,
+                    "searchTerm": "Cambrai",
+                    "gloss": "November 1917 at Cambrai saw the first massed British tank assault supported by pre-stored blood."
+                  },
+                  {
+                    "id": "kt5_1_s2_p1",
+                    "tier": 4,
+                    "tag": "Problem",
+                    "label": "Heavy Shelling Hit Surface Tents",
+                    "detail": "German shells destroyed exposed frontline dressing stations until surgeons moved operating rooms underground.",
+                    "lessonIndex": 20,
+                    "stageIndex": 3,
+                    "searchTerm": "Arras",
+                    "gloss": "German shells destroyed exposed frontline dressing stations until surgeons moved operating rooms underground."
+                  },
+                  {
+                    "id": "kt5_1_s2_s1",
+                    "tier": 4,
+                    "tag": "Solution",
+                    "label": "700-Bed Thompson's Cave Hospital",
+                    "detail": "Built 800m behind the Arras front, this underground hospital had piped water, electric light, and theatres.",
+                    "lessonIndex": 20,
+                    "stageIndex": 3,
+                    "searchTerm": "Thompson",
+                    "gloss": "Built 800m behind the Arras front, this underground hospital had piped water, electric light, and theatres."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt5_2",
+            "code": "5.2",
+            "tier": 2,
+            "label": "5.2 Trench System & Transport",
+            "dateChip": "1914–1918",
+            "lessonIndex": 20,
+            "stageIndex": 1,
+            "searchTerm": "frontline",
+            "gloss": "Key Overview: Zigzag frontline, support, and reserve trenches shielded soldiers from blasts, while craters and wrecked roads crippled casualty transport.",
+            "children": [
+              {
+                "id": "kt5_2_s1",
+                "tier": 3,
+                "label": "Frontline & Support Trench System",
+                "dateChip": "1914–1918",
+                "lessonIndex": 20,
+                "stageIndex": 1,
+                "searchTerm": "frontline",
+                "gloss": "Trench system organisation linked frontline and support trenches with reserve lines and communication trenches across the British sector.",
+                "children": [
+                  {
+                    "id": "kt5_2_s1_f1",
+                    "tier": 4,
+                    "tag": "Feature",
+                    "label": "Frontline, Support & Reserve Lines",
+                    "detail": "Frontline fire-bays faced attacks, support lines held reserves 80m back, and reserve lines launched counter-attacks.",
+                    "lessonIndex": 20,
+                    "stageIndex": 2,
+                    "searchTerm": "support",
+                    "gloss": "Frontline fire-bays faced attacks, support trenches held reserves 80m back, and reserve lines launched counter-attacks."
+                  },
+                  {
+                    "id": "kt5_2_s1_f2",
+                    "tier": 4,
+                    "tag": "Feature",
+                    "label": "Zigzag Fire-Bays & Deep Dugouts",
+                    "detail": "Sandbagged parapets, wooden duckboards, and earth traverses stopped one shell blast sweeping down the line.",
+                    "lessonIndex": 20,
+                    "stageIndex": 1,
+                    "searchTerm": "duckboards",
+                    "gloss": "Sandbagged parapets, wooden duckboards, and earth traverses stopped one shell blast sweeping down the line."
+                  },
+                  {
+                    "id": "kt5_2_s1_p1",
+                    "tier": 4,
+                    "tag": "Problem",
+                    "label": "Sharp Corners Jammed Stretchers",
+                    "detail": "Narrow, muddy right-angled traverses trapped six-foot stretchers while incoming troops blocked the path.",
+                    "lessonIndex": 20,
+                    "stageIndex": 2,
+                    "searchTerm": "communication",
+                    "gloss": "Narrow, muddy right-angled traverses trapped six-foot stretchers while incoming troops blocked the path."
+                  },
+                  {
+                    "id": "kt5_2_s1_s1",
+                    "tier": 4,
+                    "tag": "Solution",
+                    "label": "Dedicated Communication Trenches",
+                    "detail": "Engineers dug wider one-way evacuation trenches so bearers could carry wounded men past advancing reliefs.",
+                    "lessonIndex": 20,
+                    "stageIndex": 2,
+                    "searchTerm": "communication",
+                    "gloss": "Engineers dug wider one-way evacuation trenches so bearers could carry wounded men past advancing reliefs."
+                  }
+                ]
+              },
+              {
+                "id": "kt5_2_s2",
+                "tier": 3,
+                "label": "Terrain & Transport Bottlenecks",
+                "dateChip": "1914–1918",
+                "lessonIndex": 23,
+                "stageIndex": 0,
+                "searchTerm": "motor ambulances",
+                "gloss": "Shell-torn terrain and wrecked roads created severe transport and communications infrastructure problems for horse and motor ambulances moving wounded soldiers to medical treatment.",
+                "children": [
+                  {
+                    "id": "kt5_2_s2_f1",
+                    "tier": 4,
+                    "tag": "Feature",
+                    "label": "Horse Wagons & Motor Ambulances",
+                    "detail": "Six-horse Mk VI wagons crossed shell mud where Red Cross motor ambulances bogged down on broken roads.",
+                    "lessonIndex": 23,
+                    "stageIndex": 2,
+                    "searchTerm": "motor ambulances",
+                    "gloss": "Six-horse Mk VI wagons crossed shell mud where Red Cross motor ambulances bogged down on broken roads."
+                  },
+                  {
+                    "id": "kt5_2_s2_f2",
+                    "tier": 4,
+                    "tag": "Feature",
+                    "label": "Ambulance Trains & Canal Barges",
+                    "detail": "Purpose-built trains and smooth-gliding canal barges carried stabilised head and chest cases to the coast.",
+                    "lessonIndex": 23,
+                    "stageIndex": 4,
+                    "searchTerm": "ambulance trains",
+                    "gloss": "Purpose-built trains and smooth-gliding canal barges carried stabilised head and chest cases to the coast."
+                  },
+                  {
+                    "id": "kt5_2_s2_p1",
+                    "tier": 4,
+                    "tag": "Problem",
+                    "label": "Mud Needed Six to Eight Bearers",
+                    "detail": "Flooded shell craters, sniper fire, and priority ammunition convoys delayed wounded collection until nightfall.",
+                    "lessonIndex": 23,
+                    "stageIndex": 0,
+                    "searchTerm": "stretcher bearers",
+                    "gloss": "Flooded shell craters, sniper fire, and priority ammunition convoys delayed wounded collection until nightfall."
+                  },
+                  {
+                    "id": "kt5_2_s2_s1",
+                    "tier": 4,
+                    "tag": "Solution",
+                    "label": "Public Appeal Funded 512 Ambulances",
+                    "detail": "After the War Office sent zero motor ambulances in 1914, Times readers donated 512 vehicles within weeks.",
+                    "lessonIndex": 23,
+                    "stageIndex": 2,
+                    "searchTerm": "motor ambulances",
+                    "gloss": "After the War Office sent zero motor ambulances in 1914, Times readers donated 512 vehicles within weeks."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt5_3",
+            "code": "5.3",
+            "tier": 2,
+            "label": "5.3 Illnesses, Wounds & Gas",
+            "dateChip": "1914–1918",
+            "lessonIndex": 21,
+            "stageIndex": 0,
+            "searchTerm": "trench foot",
+            "gloss": "Key Overview: Freezing mud and lice caused trench foot and trench fever, while artillery shrapnel, manured soil, and poison gas created lethal battlefield trauma.",
+            "children": [
+              {
+                "id": "kt5_3_s1",
+                "tier": 3,
+                "label": "Trench Foot, Fever & Shell Shock",
+                "dateChip": "1914–1918",
+                "lessonIndex": 21,
+                "stageIndex": 0,
+                "searchTerm": "trench foot",
+                "gloss": "Conditions requiring medical treatment from the trench environment caused widespread ill health including trench foot, lice-borne trench fever, and shell shock.",
+                "children": [
+                  {
+                    "id": "kt5_3_s1_f1",
+                    "tier": 4,
+                    "tag": "Feature",
+                    "label": "Gangrenous Trench Foot in Winter",
+                    "detail": "Standing days in flooded trenches cut circulation, swelling feet numb and black until toes needed amputation.",
+                    "lessonIndex": 21,
+                    "stageIndex": 0,
+                    "searchTerm": "trench foot",
+                    "gloss": "Standing days in flooded trenches cut circulation, swelling feet numb and black until toes needed amputation."
+                  },
+                  {
+                    "id": "kt5_3_s1_f2",
+                    "tier": 4,
+                    "tag": "Feature",
+                    "label": "Lice Trench Fever & 80,000 NYDN",
+                    "detail": "Body lice spread five-day relapsing bone pain, while relentless shelling triggered 80,000 shell-shock cases.",
+                    "lessonIndex": 21,
+                    "stageIndex": 2,
+                    "searchTerm": "trench fever",
+                    "gloss": "Body lice spread five-day relapsing bone pain, while relentless shelling triggered 80,000 shell-shock cases."
+                  },
+                  {
+                    "id": "kt5_3_s1_p1",
+                    "tier": 4,
+                    "tag": "Problem",
+                    "label": "Vermin Seams & Early Army Stigma",
+                    "detail": "Crowded dugouts bred lice in uniform seams, and generals initially mistook psychological trauma for cowardice.",
+                    "lessonIndex": 21,
+                    "stageIndex": 4,
+                    "searchTerm": "NYDN",
+                    "gloss": "Crowded dugouts bred lice in uniform seams, and generals initially mistook psychological trauma for cowardice."
+                  },
+                  {
+                    "id": "kt5_3_s1_s1",
+                    "tier": 4,
+                    "tag": "Solution",
+                    "label": "Whale Oil, Delousing & NYDN Care",
+                    "detail": "Daily whale-oil foot inspections, three pairs of socks, steam delousing (1918), and NYDN rest wards cut losses.",
+                    "lessonIndex": 21,
+                    "stageIndex": 1,
+                    "searchTerm": "whale oil",
+                    "gloss": "Daily whale-oil foot inspections, three pairs of socks, steam delousing (1918), and NYDN rest wards cut losses."
+                  }
+                ]
+              },
+              {
+                "id": "kt5_3_s2",
+                "tier": 3,
+                "label": "Rifles, Shrapnel & Head Injuries",
+                "dateChip": "1914–1918",
+                "lessonIndex": 22,
+                "stageIndex": 0,
+                "searchTerm": "Brodie",
+                "gloss": "Wounds from rifles and high explosives brought jagged shrapnel, fatal gas gangrene wound infection from soil, and increased numbers of head injuries.",
+                "children": [
+                  {
+                    "id": "kt5_3_s2_f1",
+                    "tier": 4,
+                    "tag": "Feature",
+                    "label": "Shrapnel Caused 58% of All Wounds",
+                    "detail": "Artillery shells burst into jagged iron balls, whereas machine-gun and rifle bullets caused 39% of wounds.",
+                    "lessonIndex": 22,
+                    "stageIndex": 0,
+                    "searchTerm": "shrapnel",
+                    "gloss": "Artillery shells burst into jagged iron balls, whereas machine-gun and rifle bullets caused 39% of wounds."
+                  },
+                  {
+                    "id": "kt5_3_s2_f2",
+                    "tier": 4,
+                    "tag": "Feature",
+                    "label": "Gas Gangrene From Manured Soil",
+                    "detail": "Dirty uniform scraps carried Clostridium perfringens bacteria deep into muscle, killing within 48 hours.",
+                    "lessonIndex": 22,
+                    "stageIndex": 1,
+                    "searchTerm": "gangrene",
+                    "gloss": "Dirty uniform scraps carried Clostridium perfringens bacteria deep into muscle, killing within 48 hours."
+                  },
+                  {
+                    "id": "kt5_3_s2_p1",
+                    "tier": 4,
+                    "tag": "Problem",
+                    "label": "Cloth Caps Left Skulls Exposed",
+                    "detail": "In 1914–15 soldiers wore soft peaked cloth caps while peering over parapets beneath air-bursting shrapnel.",
+                    "lessonIndex": 22,
+                    "stageIndex": 2,
+                    "searchTerm": "Brodie",
+                    "gloss": "In 1914–15 soldiers wore soft peaked cloth caps while peering over parapets beneath air-bursting shrapnel."
+                  },
+                  {
+                    "id": "kt5_3_s2_s1",
+                    "tier": 4,
+                    "tag": "Solution",
+                    "label": "1915 Brodie Steel Helmet Saved 80%",
+                    "detail": "Issuing flat manganese-steel Brodie helmets from autumn 1915 slashed fatal shrapnel head wounds by 80%.",
+                    "lessonIndex": 22,
+                    "stageIndex": 2,
+                    "searchTerm": "Brodie",
+                    "gloss": "Issuing flat manganese-steel Brodie helmets from autumn 1915 slashed fatal shrapnel head wounds by 80%."
+                  }
+                ]
+              },
+              {
+                "id": "kt5_3_s3",
+                "tier": 3,
+                "label": "Chlorine, Phosgene & Mustard Gas",
+                "dateChip": "1915–1918",
+                "lessonIndex": 22,
+                "stageIndex": 3,
+                "searchTerm": "mustard gas",
+                "gloss": "Effects of chemical gas attacks escalated from 1915 chlorine and phosgene lung suffocation to 1917 blistering mustard gas.",
+                "children": [
+                  {
+                    "id": "kt5_3_s3_f1",
+                    "tier": 4,
+                    "tag": "Feature",
+                    "label": "Chlorine & Phosgene Suffocated Lungs",
+                    "detail": "Green chlorine (Ypres, Apr 1915) and 18x-deadlier phosgene (Dec 1915) flooded victims lungs with fluid.",
+                    "lessonIndex": 22,
+                    "stageIndex": 3,
+                    "searchTerm": "phosgene",
+                    "gloss": "Green chlorine (Ypres, Apr 1915) and 18x-deadlier phosgene (Dec 1915) flooded victims lungs with fluid."
+                  },
+                  {
+                    "id": "kt5_3_s3_f2",
+                    "tier": 4,
+                    "tag": "Feature",
+                    "label": "1917 Odourless Blistering Mustard Gas",
+                    "detail": "Oily mustard gas soaked through uniforms, raising agonising skin blisters and blinding eyes 12 hours later.",
+                    "lessonIndex": 22,
+                    "stageIndex": 4,
+                    "searchTerm": "mustard gas",
+                    "gloss": "Oily mustard gas soaked through uniforms, raising agonising skin blisters and blinding eyes 12 hours later."
+                  },
+                  {
+                    "id": "kt5_3_s3_p1",
+                    "tier": 4,
+                    "tag": "Problem",
+                    "label": "Mass Blindness & Lingering Ground Gas",
+                    "detail": "Mustard gas lingered days in shell holes and blinded long lines of stretcher patients, though killing under 6,000.",
+                    "lessonIndex": 22,
+                    "stageIndex": 4,
+                    "searchTerm": "mustard gas",
+                    "gloss": "Mustard gas lingered days in shell holes and blinded long lines of stretcher patients, though killing under 6,000."
+                  },
+                  {
+                    "id": "kt5_3_s3_s1",
+                    "tier": 4,
+                    "tag": "Solution",
+                    "label": "Urine Pads to 1916 Box Respirators",
+                    "detail": "Troops progressed from urine-soaked cotton pads (1915) and Hypo helmets to effective Small Box Respirators.",
+                    "lessonIndex": 22,
+                    "stageIndex": 3,
+                    "searchTerm": "Small Box Respirator",
+                    "gloss": "Troops progressed from urine-soaked cotton pads (1915) and Hypo helmets to effective Small Box Respirators."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt5_4",
+            "code": "5.4",
+            "tier": 2,
+            "label": "5.4 RAMC, Nurses & Evacuation",
+            "dateChip": "1914–1918",
+            "lessonIndex": 23,
+            "stageIndex": 1,
+            "searchTerm": "Casualty Clearing Station",
+            "gloss": "Key Overview: RAMC medics, FANY drivers, and Qaimns/VAD nurses moved wounded men rapidly from frontline Aid Posts through Dressing Stations and CCS theatres to Base Hospitals.",
+            "children": [
+              {
+                "id": "kt5_4_s1",
+                "tier": 3,
+                "label": "Aid Post & Dressing Stations",
+                "dateChip": "1914–1918",
+                "lessonIndex": 23,
+                "stageIndex": 1,
+                "searchTerm": "Regimental Aid Post",
+                "gloss": "Early stages of treatment in the chain of evacuation moved casualties via stretcher bearers from the Regimental Aid Post to the Field Ambulance Dressing Station.",
+                "children": [
+                  {
+                    "id": "kt5_4_s1_f1",
+                    "tier": 4,
+                    "tag": "Feature",
+                    "label": "Regimental Aid Post (RAP) 200m Back",
+                    "detail": "One Regimental Medical Officer and stretcher bearers bandaged wounds, gave morphine, and splinted legs in dugouts.",
+                    "lessonIndex": 23,
+                    "stageIndex": 1,
+                    "searchTerm": "Regimental Aid Post",
+                    "gloss": "One Regimental Medical Officer and stretcher bearers bandaged wounds, gave morphine, and splinted legs in dugouts."
+                  },
+                  {
+                    "id": "kt5_4_s1_f2",
+                    "tier": 4,
+                    "tag": "Feature",
+                    "label": "Field Ambulance & Dressing Stations",
+                    "detail": "Mobile RAMC units staffed Advanced and Main Dressing Stations a mile back in ruined schools or tents.",
+                    "lessonIndex": 23,
+                    "stageIndex": 2,
+                    "searchTerm": "Advanced Dressing Stations",
+                    "gloss": "Mobile RAMC units staffed Advanced and Main Dressing Stations a mile back in ruined schools or tents."
+                  },
+                  {
+                    "id": "kt5_4_s1_p1",
+                    "tier": 4,
+                    "tag": "Problem",
+                    "label": "No Major Surgery & Surge Overload",
+                    "detail": "Built for 150 men, Dressing Stations lacked X-rays or surgical theatres and flooded with thousands during battles.",
+                    "lessonIndex": 23,
+                    "stageIndex": 2,
+                    "searchTerm": "Advanced Dressing Stations",
+                    "gloss": "Built for 150 men, Dressing Stations lacked X-rays or surgical theatres and flooded with thousands during battles."
+                  },
+                  {
+                    "id": "kt5_4_s1_s1",
+                    "tier": 4,
+                    "tag": "Solution",
+                    "label": "Three-Way Colour Triage System",
+                    "detail": "Medics sorted walking wounded, urgent surgical cases, and dying men so scarce ambulances saved the recoverable.",
+                    "lessonIndex": 23,
+                    "stageIndex": 3,
+                    "searchTerm": "triage",
+                    "gloss": "Medics sorted walking wounded, urgent surgical cases, and dying men so scarce ambulances saved the recoverable."
+                  }
+                ]
+              },
+              {
+                "id": "kt5_4_s2",
+                "tier": 3,
+                "label": "CCS, Base Hospitals, RAMC & Nurses",
+                "dateChip": "1914–1918",
+                "lessonIndex": 23,
+                "stageIndex": 3,
+                "searchTerm": "Casualty Clearing Station",
+                "gloss": "Work of the RAMC and nurses staffed Casualty Clearing Stations and coastal Base Hospitals to deliver life-saving surgery and rehabilitation.",
+                "children": [
+                  {
+                    "id": "kt5_4_s2_f1",
+                    "tier": 4,
+                    "tag": "Feature",
+                    "label": "Casualty Clearing Stations (CCS)",
+                    "detail": "Placed 7–12 miles back beside railways, CCS complexes held 1,000 beds, X-ray vans, and seven operating tables.",
+                    "lessonIndex": 23,
+                    "stageIndex": 3,
+                    "searchTerm": "Casualty Clearing Station",
+                    "gloss": "Placed 7–12 miles back beside railways, CCS complexes held 1,000 beds, X-ray vans, and seven operating tables."
+                  },
+                  {
+                    "id": "kt5_4_s2_f2",
+                    "tier": 4,
+                    "tag": "Feature",
+                    "label": "Base Hospitals, RAMC, FANY & VADs",
+                    "detail": "RAMC expanded to 13,000 doctors, aided by trained QAIMNS nurses, middle-class VAD volunteers, and FANY drivers.",
+                    "lessonIndex": 23,
+                    "stageIndex": 4,
+                    "searchTerm": "FANY",
+                    "gloss": "RAMC expanded to 13,000 doctors, aided by trained QAIMNS nurses, middle-class VAD volunteers, and FANY drivers."
+                  },
+                  {
+                    "id": "kt5_4_s2_p1",
+                    "tier": 4,
+                    "tag": "Problem",
+                    "label": "Coastal Transit Delayed Urgent Cuts",
+                    "detail": "Waiting 24 hours to reach coastal Base Hospitals at Boulogne let gas gangrene kill abdomen and thigh patients.",
+                    "lessonIndex": 23,
+                    "stageIndex": 3,
+                    "searchTerm": "Casualty Clearing Station",
+                    "gloss": "Waiting 24 hours to reach coastal Base Hospitals at Boulogne let gas gangrene kill abdomen and thigh patients."
+                  },
+                  {
+                    "id": "kt5_4_s2_s1",
+                    "tier": 4,
+                    "tag": "Solution",
+                    "label": "CCS Became Main Surgical Hub (1915)",
+                    "detail": "Moving skilled surgeons and nurses forward to CCS tents saved thousands while Base Hospitals focused on recovery.",
+                    "lessonIndex": 23,
+                    "stageIndex": 4,
+                    "searchTerm": "Base Hospitals",
+                    "gloss": "Moving skilled surgeons and nurses forward to CCS tents saved thousands while Base Hospitals focused on recovery."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt5_5",
+            "code": "5.5",
+            "tier": 2,
+            "label": "5.5 Pre-1914 & Surgical Advances",
+            "dateChip": "1895–1918",
+            "lessonIndex": 24,
+            "stageIndex": 0,
+            "searchTerm": "Thomas splint",
+            "gloss": "Key Overview: Building on pre-1914 X-rays, aseptic surgery, and ABO blood groups, wartime surgeons pioneered the Thomas splint, Carrel-Dakin tubes, and stored blood banks.",
+            "children": [
+              {
+                "id": "kt5_5_s1",
+                "tier": 3,
+                "label": "Pre-1914 Aseptic, X-Ray & Blood",
+                "dateChip": "1895–1914",
+                "lessonIndex": 24,
+                "stageIndex": 0,
+                "searchTerm": "Landsteiner",
+                "gloss": "Early twentieth century historical context included infection science, aseptic surgery, 1895 x-rays, ABO blood transfusions, and early blood storage research.",
+                "children": [
+                  {
+                    "id": "kt5_5_s1_f1",
+                    "tier": 4,
+                    "tag": "Feature",
+                    "label": "Aseptic Theatres & 1895 X-Rays",
+                    "detail": "By 1900 sterile steam autoclaves, rubber gloves, and Röntgen X-rays let peacetime surgeons spot bullets.",
+                    "lessonIndex": 24,
+                    "stageIndex": 0,
+                    "searchTerm": "aseptic",
+                    "gloss": "By 1900 sterile steam autoclaves, rubber gloves, and Röntgen X-rays let peacetime surgeons spot bullets."
+                  },
+                  {
+                    "id": "kt5_5_s1_f2",
+                    "tier": 4,
+                    "tag": "Feature",
+                    "label": "1901 Landsteiner ABO Blood Groups",
+                    "detail": "Karl Landsteiner identified A, B, and O blood groups, stopping fatal rejection during direct donor transfusions.",
+                    "lessonIndex": 25,
+                    "stageIndex": 0,
+                    "searchTerm": "Landsteiner",
+                    "gloss": "Karl Landsteiner identified A, B, and O blood groups, stopping fatal rejection during direct donor transfusions."
+                  },
+                  {
+                    "id": "kt5_5_s1_p1",
+                    "tier": 4,
+                    "tag": "Problem",
+                    "label": "Rapid Clotting & Overheating Tubes",
+                    "detail": "Blood clotted outside veins within minutes, and fragile glass X-ray tubes took 90 minutes and overheated.",
+                    "lessonIndex": 24,
+                    "stageIndex": 4,
+                    "searchTerm": "overheated",
+                    "gloss": "Blood clotted outside veins within minutes, and fragile glass X-ray tubes took 90 minutes and overheated."
+                  },
+                  {
+                    "id": "kt5_5_s1_s1",
+                    "tier": 4,
+                    "tag": "Solution",
+                    "label": "Coolidge Tubes & Citrate Research",
+                    "detail": "Coolidge X-ray tubes (1913) and Hustin/Lewisohn sodium citrate (1914–15) laid foundations for trench medicine.",
+                    "lessonIndex": 25,
+                    "stageIndex": 1,
+                    "searchTerm": "sodium citrate",
+                    "gloss": "Coolidge X-ray tubes (1913) and Hustin/Lewisohn sodium citrate (1914–15) laid foundations for trench medicine."
+                  }
+                ]
+              },
+              {
+                "id": "kt5_5_s2",
+                "tier": 3,
+                "label": "Thomas Splint, X-Rays & Wounds",
+                "dateChip": "1915–1918",
+                "lessonIndex": 24,
+                "stageIndex": 2,
+                "searchTerm": "Thomas splint",
+                "gloss": "Western Front experiments in surgery and medicine introduced Carrel-Dakin new techniques for wounds and infection, the Thomas splint, and mobile x-ray units.",
+                "children": [
+                  {
+                    "id": "kt5_5_s2_f1",
+                    "tier": 4,
+                    "tag": "Feature",
+                    "label": "Thomas Splint: 80% → 20% Mortality",
+                    "detail": "Introduced widely in December 1915, traction metal frames stopped jagged broken femurs slicing thigh arteries.",
+                    "lessonIndex": 24,
+                    "stageIndex": 2,
+                    "searchTerm": "Thomas splint",
+                    "gloss": "Introduced widely in December 1915, traction metal frames stopped jagged broken femurs slicing thigh arteries."
+                  },
+                  {
+                    "id": "kt5_5_s2_f2",
+                    "tier": 4,
+                    "tag": "Feature",
+                    "label": "6 Mobile X-Ray Vans & Debridement",
+                    "detail": "Six British mobile X-ray vans pinpointed deep shrapnel so surgeons could cut away dead infected tissue.",
+                    "lessonIndex": 24,
+                    "stageIndex": 3,
+                    "searchTerm": "mobile",
+                    "gloss": "Six British mobile X-ray vans pinpointed deep shrapnel so surgeons could cut away dead infected tissue."
+                  },
+                  {
+                    "id": "kt5_5_s2_p1",
+                    "tier": 4,
+                    "tag": "Problem",
+                    "label": "Sealed Dressings Trapped Gangrene",
+                    "detail": "Stitching muddy shrapnel wounds shut trapped anaerobic Clostridium spores that carbolic lotion could not kill.",
+                    "lessonIndex": 24,
+                    "stageIndex": 1,
+                    "searchTerm": "debridement",
+                    "gloss": "Stitching muddy shrapnel wounds shut trapped anaerobic Clostridium spores that carbolic lotion could not kill."
+                  },
+                  {
+                    "id": "kt5_5_s2_s1",
+                    "tier": 4,
+                    "tag": "Solution",
+                    "label": "Carrel-Dakin Sterilised Salt Tubes",
+                    "detail": "Rubber tubes flushed deep open wounds every two hours with Dakin sodium hypochlorite antiseptic solution.",
+                    "lessonIndex": 24,
+                    "stageIndex": 1,
+                    "searchTerm": "Carrel-Dakin",
+                    "gloss": "Rubber tubes flushed deep open wounds every two hours with Dakin sodium hypochlorite antiseptic solution."
+                  }
+                ]
+              },
+              {
+                "id": "kt5_5_s3",
+                "tier": 3,
+                "label": "Cambrai Blood Bank, Brain & Face",
+                "dateChip": "1916–1918",
+                "lessonIndex": 25,
+                "stageIndex": 2,
+                "searchTerm": "Oswald Robertson",
+                "gloss": "Further surgical experiments created the Battle of Cambrai blood bank alongside specialist Western Front brain neurosurgery and plastic facial reconstruction.",
+                "children": [
+                  {
+                    "id": "kt5_5_s3_f1",
+                    "tier": 4,
+                    "tag": "Feature",
+                    "label": "Robertson's 1917 Cambrai Blood Bank",
+                    "detail": "Captain Oswald Robertson stored 22 glass bottles of universal Type-O blood in iceboxes, saving 11 of 20 men.",
+                    "lessonIndex": 25,
+                    "stageIndex": 2,
+                    "searchTerm": "Oswald Robertson",
+                    "gloss": "Captain Oswald Robertson stored 22 glass bottles of universal Type-O blood in iceboxes, saving 11 of 20 men."
+                  },
+                  {
+                    "id": "kt5_5_s3_f2",
+                    "tier": 4,
+                    "tag": "Feature",
+                    "label": "Cushing Brain & Gillies Plastic Care",
+                    "detail": "Harvey Cushing used surgical magnets for 71% brain-wound survival; Harold Gillies did 11,000 Sidcup skin grafts.",
+                    "lessonIndex": 25,
+                    "stageIndex": 4,
+                    "searchTerm": "Gillies",
+                    "gloss": "Harvey Cushing used surgical magnets for 71% brain-wound survival; Harold Gillies did 11,000 Sidcup skin grafts."
+                  },
+                  {
+                    "id": "kt5_5_s3_p1",
+                    "tier": 4,
+                    "tag": "Problem",
+                    "label": "Haemorrhagic Shock & Stored Decay",
+                    "detail": "Severely wounded soldiers died of shock before live donors arrived, and plain citrated blood spoiled in two days.",
+                    "lessonIndex": 25,
+                    "stageIndex": 1,
+                    "searchTerm": "citrate-glucose",
+                    "gloss": "Severely wounded soldiers died of shock before live donors arrived, and plain citrated blood spoiled in two days."
+                  },
+                  {
+                    "id": "kt5_5_s3_s1",
+                    "tier": 4,
+                    "tag": "Solution",
+                    "label": "1916 Rous-Turner Citrate-Glucose",
+                    "detail": "Adding glucose to sodium citrate preserved refrigerated red blood cells for four weeks ahead of big battles.",
+                    "lessonIndex": 25,
+                    "stageIndex": 1,
+                    "searchTerm": "citrate-glucose",
+                    "gloss": "Adding glucose to sodium citrate preserved refrigerated red blood cells for four weeks ahead of big battles."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

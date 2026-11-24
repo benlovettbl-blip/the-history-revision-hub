@@ -6367,17 +6367,17 @@
         },
         {
           "stage": 4,
-          "question": "On what exact date was King Charles I publicly beheaded outside Whitehall Banqueting House?",
-          "q": "On what exact date was King Charles I publicly beheaded outside Whitehall Banqueting House?",
+          "question": "For what unprecedented crime was King Charles I put on trial and found guilty by the High Court of Justice in January 1649?",
+          "q": "For what unprecedented crime was King Charles I put on trial and found guilty by the High Court of Justice in January 1649?",
           "options": [
-            "5 November 1605",
-            "18 January 1871",
-            "30 January 1649",
-            "28 June 1645"
+            "Refusing to pay Ship Money to coastal towns",
+            "Converting the New Model Army to Catholicism",
+            "Breaking the 1689 Bill of Rights",
+            "High treason against his own people"
           ],
-          "answer": "30 January 1649",
-          "a": "30 January 1649",
-          "explanation": "Charles I was executed on 30 January 1649, wearing two shirts against the freezing weather."
+          "answer": "High treason against his own people",
+          "a": "High treason against his own people",
+          "explanation": "In an unprecedented constitutional act, the High Court of Justice found Charles I guilty of high treason against his people, leading to his execution and the abolition of the monarchy."
         },
         {
           "stage": 4,

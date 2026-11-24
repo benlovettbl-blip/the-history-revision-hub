@@ -3049,17 +3049,17 @@ export default {
         },
         {
           "stage": 5,
-          "question": "On what historic date was the National Health Service (NHS) officially launched?",
-          "q": "On what historic date was the National Health Service (NHS) officially launched?",
+          "question": "How did the founding of the National Health Service (NHS) in 1948 fundamentally change healthcare in Britain?",
+          "q": "How did the founding of the National Health Service (NHS) in 1948 fundamentally change healthcare in Britain?",
           "options": [
-            "5 July 1948",
-            "22 June 1948",
-            "28 August 1963",
-            "30 April 1963"
+            "It restricted hospital treatment to workers who paid private medical insurance",
+            "It handed control of all British hospitals over to local parish workhouses",
+            "It banned senior hospital consultants from ever treating private patients",
+            "It guaranteed free medical care for all at the point of delivery, turning healthcare into a universal right"
           ],
-          "answer": "5 July 1948",
-          "a": "5 July 1948",
-          "explanation": "Founded on 5 July 1948, the NHS guaranteed free healthcare for all at the point of delivery."
+          "answer": "It guaranteed free medical care for all at the point of delivery, turning healthcare into a universal right",
+          "a": "It guaranteed free medical care for all at the point of delivery, turning healthcare into a universal right",
+          "explanation": "Launched in July 1948 under Health Minister Aneurin Bevan, the NHS transformed medical treatment from a luxury for those who could pay into a free, universal right for every citizen."
         },
         {
           "stage": 5,
@@ -4904,17 +4904,17 @@ export default {
         },
         {
           "stage": 3,
-          "question": "On what date did HMT Empire Windrush dock at Tilbury Docks in Essex?",
-          "q": "On what date did HMT Empire Windrush dock at Tilbury Docks in Essex?",
+          "question": "Why was the arrival of HMT Empire Windrush at Tilbury Docks in 1948 a landmark moment in modern British history?",
+          "q": "Why was the arrival of HMT Empire Windrush at Tilbury Docks in 1948 a landmark moment in modern British history?",
           "options": [
-            "5 July 1948",
-            "30 April 1963",
-            "28 August 1963",
-            "22 June 1948"
+            "Its 492 Caribbean pioneers, including RAF veterans, nurses, and artisans, answered Britain's labour shortage and helped shape multicultural Britain",
+            "It carried British soldiers returning home from the newly founded NHS",
+            "It forced Parliament to repeal the British Nationality Act 1948 immediately",
+            "It brought the first overseas shipment of coal to reopen nationalised railways"
           ],
-          "answer": "22 June 1948",
-          "a": "22 June 1948",
-          "explanation": "On 22 June 1948, HMT Empire Windrush arrived at Tilbury Docks bringing Caribbean pioneers to post-war Britain."
+          "answer": "Its 492 Caribbean pioneers, including RAF veterans, nurses, and artisans, answered Britain's labour shortage and helped shape multicultural Britain",
+          "a": "Its 492 Caribbean pioneers, including RAF veterans, nurses, and artisans, answered Britain's labour shortage and helped shape multicultural Britain",
+          "explanation": "Arriving in June 1948 with 492 passengers from Jamaica, Trinidad, and Barbados, the Windrush pioneers brought vital skills to post-war Britain and laid the foundation of modern multicultural society."
         },
         {
           "stage": 3,
@@ -6681,17 +6681,17 @@ export default {
         },
         {
           "stage": 3,
-          "question": "On what date in 1963 did the West Indian Development Council announce the Bristol Bus Boycott?",
-          "q": "On what date in 1963 did the West Indian Development Council announce the Bristol Bus Boycott?",
+          "question": "How did the 1963 Bristol Bus Boycott put immediate pressure on the Bristol Omnibus Company?",
+          "q": "How did the 1963 Bristol Bus Boycott put immediate pressure on the Bristol Omnibus Company?",
           "options": [
-            "28 August 1963",
-            "22 June 1948",
-            "30 April 1963",
-            "5 July 1948"
+            "The government shut down all public bus routes across southwest England",
+            "Thousands of West Indian residents and white sympathizers walked to work, stripping the company of ticket revenue and drawing national media attention",
+            "Campaigners bought out the bus company and replaced all of its senior managers",
+            "The TGWU union immediately went on strike in support of Black bus drivers"
           ],
-          "answer": "30 April 1963",
-          "a": "30 April 1963",
-          "explanation": "On 30 April 1963, campaigners announced a citywide boycott of all Bristol Omnibus Company buses."
+          "answer": "Thousands of West Indian residents and white sympathizers walked to work, stripping the company of ticket revenue and drawing national media attention",
+          "a": "Thousands of West Indian residents and white sympathizers walked to work, stripping the company of ticket revenue and drawing national media attention",
+          "explanation": "By refusing to ride the buses, thousands of Bristol residents hit the company's ticket profits directly and exposed racial discrimination in Britain to the national press."
         },
         {
           "stage": 3,
@@ -6793,17 +6793,17 @@ export default {
         },
         {
           "stage": 5,
-          "question": "On what date in 1963 did union members finally vote to abolish the Bristol bus colour bar?",
-          "q": "On what date in 1963 did union members finally vote to abolish the Bristol bus colour bar?",
+          "question": "What wider national change did the victory of the 1963 Bristol Bus Boycott help bring about in Britain?",
+          "q": "What wider national change did the victory of the 1963 Bristol Bus Boycott help bring about in Britain?",
           "options": [
-            "30 April 1963",
-            "5 July 1948",
-            "28 August 1963",
-            "22 June 1948"
+            "It ended Commonwealth immigration to Britain from the Caribbean",
+            "It replaced the Bristol Omnibus Company with private American bus firms",
+            "It proved direct citizen action could defeat institutional racism and helped prompt the Race Relations Acts of 1965 and 1968",
+            "It led Parliament to ban all trade unions from operating in public transport"
           ],
-          "answer": "28 August 1963",
-          "a": "28 August 1963",
-          "explanation": "After four months of lost ticket revenue and public pressure, the colour bar ended on 28 August 1963."
+          "answer": "It proved direct citizen action could defeat institutional racism and helped prompt the Race Relations Acts of 1965 and 1968",
+          "a": "It proved direct citizen action could defeat institutional racism and helped prompt the Race Relations Acts of 1965 and 1968",
+          "explanation": "The defeat of Bristol's colour bar showed the power of peaceful direct action and pushed Harold Wilson's government to pass statutory bans on racial discrimination in housing, employment, and public places."
         },
         {
           "stage": 5,

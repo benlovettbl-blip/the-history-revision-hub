@@ -1399,6 +1399,8 @@ export const BLURT_TOPICS_DATABASE = [
           "John Hawkins' race-built galleons, astrolabes, cross-staffs, magnetic compasses, and Mercator projection maps.",
         keywords: [
           'navigation',
+          'new technology on ships',
+          'circumnavigation of the globe',
           'astrolabe',
           'compass',
           'hawkins',
@@ -2025,6 +2027,9 @@ export const BLURT_TOPICS_DATABASE = [
           'Nasser massing Egyptian troops in Sinai, expelling UN peacekeepers (UNEF), and closing the Straits of Tiran to Israeli shipping.',
         keywords: [
           'nasser',
+          'cairo conference',
+          'fatah',
+          'samu',
           'tiran',
           'straits',
           'unef',
@@ -2514,7 +2519,7 @@ export const BLURT_TOPICS_DATABASE = [
       },
     ],
     widerKnowledgeExamples:
-      'Founding of Hamas in 1987 as Islamic rival to secular PLO, Arafat reading declaration in Algiers in 1988 accepting UN 242, Johan Jørgen Holst facilitating the secret Norwegian negotiations.',
+      'PLO activities in Lebanon and Israeli reprisals culminating in the 1982 invasion of Lebanon, founding of Hamas in 1987 as Islamic rival to secular PLO, Arafat renouncing terrorism in a 1988 speech to the UN accepting Resolution 242, Johan Jørgen Holst facilitating secret Norwegian negotiations, and Oslo II (1995).',
     benchmark: {
       dates: [
         {
@@ -2687,7 +2692,7 @@ export const BLURT_TOPICS_DATABASE = [
       },
     ],
     widerKnowledgeExamples:
-      'Letter from Birmingham Jail written by MLK, 250,000 marchers at the Lincoln Memorial for the March on Washington, 16th Street Baptist Church bombing killing four young girls, James Meredith escorted by federal marshals to Ole Miss in 1962.',
+      'Opposition from Dixiecrats and White Citizens’ Councils, Letter from Birmingham Jail written by MLK, 250,000 marchers at the Lincoln Memorial for the March on Washington, 16th Street Baptist Church bombing, James Meredith case (1962), and Malcolm X’s involvement with the Black Muslims and Black Power.',
     benchmark: {
       dates: [
         {

@@ -1,4 +1,4 @@
-const UNIT_DATA = {
+export default {
   "id": "ks2_ww2",
   "title": "KS2: World War II & The Home Front (1933–1945)",
   "shortTitle": "World War II & The Home Front",
@@ -403,18 +403,18 @@ const UNIT_DATA = {
         },
         {
           "stage": 1,
-          "question": "On what date did Adolf Hitler's German army invade Poland, two days before Britain declared war?",
-          "q": "On what date did Adolf Hitler's German army invade Poland, two days before Britain declared war?",
+          "question": "Why did Britain declare war on Germany in September 1939?",
+          "q": "Why did Britain declare war on Germany in September 1939?",
           "options": [
-            "1 September 1939",
-            "3 September 1939",
-            "11 November 1938",
-            "10 May 1940"
+            "Adolf Hitler's German army had invaded Poland",
+            "German ships had blocked the River Thames",
+            "Germany had shut down British wireless radios",
+            "Enemy bombers had already destroyed London"
           ],
           "correct": 0,
-          "answer": "1 September 1939",
-          "a": "1 September 1939",
-          "explanation": "Adolf Hitler's German army invaded Poland on 1 September 1939, prompting Britain to declare war two days later."
+          "answer": "Adolf Hitler's German army had invaded Poland",
+          "a": "Adolf Hitler's German army had invaded Poland",
+          "explanation": "Britain declared war on Germany two days after Adolf Hitler's German army invaded Poland."
         },
         {
           "stage": 1,
@@ -538,18 +538,18 @@ const UNIT_DATA = {
         },
         {
           "stage": 3,
-          "question": "On what date did the wartime Blackout begin across Britain?",
-          "q": "On what date did the wartime Blackout begin across Britain?",
+          "question": "Why did British families hang thick black curtains over every window during the Blackout?",
+          "q": "Why did British families hang thick black curtains over every window during the Blackout?",
           "options": [
-            "25 December 1939",
-            "7 September 1940",
-            "8 May 1945",
-            "1 September 1939"
+            "To keep out freezing winter wind",
+            "To help babies sleep during the afternoon",
+            "To stop sunlight from fading their furniture",
+            "So German night bombers could not spot cities below"
           ],
           "correct": 3,
-          "answer": "1 September 1939",
-          "a": "1 September 1939",
-          "explanation": "The nationwide Blackout started on Friday 1 September 1939, two days before Britain's formal declaration of war."
+          "answer": "So German night bombers could not spot cities below",
+          "a": "So German night bombers could not spot cities below",
+          "explanation": "Families covered every window with thick black curtains so enemy bombers flying at night could not see lit-up towns and cities."
         },
         {
           "stage": 3,
@@ -1497,18 +1497,18 @@ const UNIT_DATA = {
         },
         {
           "stage": 3,
-          "question": "When did Operation Pied Piper begin moving children out of British cities?",
-          "q": "When did Operation Pied Piper begin moving children out of British cities?",
+          "question": "Why do historians say British evacuees had mixed experiences in the countryside?",
+          "q": "Why do historians say British evacuees had mixed experiences in the countryside?",
           "options": [
-            "10 May 1940",
-            "7 September 1940",
-            "1 September 1939",
-            "6 June 1944"
+            "Every evacuee was sent back to the city after one week",
+            "All evacuees were forced to work in coal mines",
+            "Some were treated like family, while others felt lonely or lived in strict homes",
+            "Only older teenagers were allowed to stay with host families"
           ],
           "correct": 2,
-          "answer": "1 September 1939",
-          "a": "1 September 1939",
-          "explanation": "Evacuation trains began departing city stations at dawn on Friday 1 September 1939, the day Germany invaded Poland."
+          "answer": "Some were treated like family, while others felt lonely or lived in strict homes",
+          "a": "Some were treated like family, while others felt lonely or lived in strict homes",
+          "explanation": "Evacuees had very different experiences: thousands enjoyed warm beds, fresh air, and lifelong friendships, while others felt homesick or lived in strict homes."
         },
         {
           "stage": 3,
@@ -5157,18 +5157,18 @@ const UNIT_DATA = {
       "quiz": [
         {
           "stage": 1,
-          "question": "On what date (\"Black Saturday\") did the London Blitz begin?",
-          "q": "On what date (\"Black Saturday\") did the London Blitz begin?",
+          "question": "Why did Adolf Hitler order German bombers to attack London and other British cities during the Blitz?",
+          "q": "Why did Adolf Hitler order German bombers to attack London and other British cities during the Blitz?",
           "options": [
-            "7 September 1940",
-            "3 September 1939",
-            "7 December 1941",
-            "8 May 1945"
+            "To try to force Britain to surrender",
+            "To rescue German soldiers trapped in the River Thames",
+            "To search for hidden Roman treasure under St Paul's Cathedral",
+            "To stop British farmers from growing garden vegetables"
           ],
           "correct": 0,
-          "answer": "7 September 1940",
-          "a": "7 September 1940",
-          "explanation": "Heavy daylight and night raids on London's East End docks began on Saturday 7 September 1940, remembered as \"Black Saturday\"."
+          "answer": "To try to force Britain to surrender",
+          "a": "To try to force Britain to surrender",
+          "explanation": "Hitler launched the Blitz against London and major UK ports and factory cities to try to break British spirit and force Britain to surrender."
         },
         {
           "stage": 1,
@@ -9017,18 +9017,18 @@ const UNIT_DATA = {
         },
         {
           "stage": 1,
-          "question": "On what exact date was Victory in Europe (VE) Day celebrated across Britain?",
-          "q": "On what exact date was Victory in Europe (VE) Day celebrated across Britain?",
+          "question": "What event finally brought nearly six years of fighting in Europe to an end on VE Day?",
+          "q": "What event finally brought nearly six years of fighting in Europe to an end on VE Day?",
           "options": [
-            "3 September 1939",
-            "15 August 1945",
-            "8 May 1945",
-            "11 November 1945"
+            "Britain finished building two million new homes",
+            "Food rationing ended across every British town",
+            "Nazi Germany surrendered unconditionally",
+            "The National Health Service opened its first hospital"
           ],
           "correct": 2,
-          "answer": "8 May 1945",
-          "a": "8 May 1945",
-          "explanation": "Nazi Germany's unconditional surrender was celebrated across Britain on Tuesday 8 May 1945 — VE Day."
+          "answer": "Nazi Germany surrendered unconditionally",
+          "a": "Nazi Germany surrendered unconditionally",
+          "explanation": "VE Day (Victory in Europe Day) was celebrated after Nazi Germany surrendered unconditionally, ending nearly six years of war in Europe."
         },
         {
           "stage": 1,
@@ -9047,18 +9047,18 @@ const UNIT_DATA = {
         },
         {
           "stage": 1,
-          "question": "On what date did the Second World War finally end in Asia with Victory over Japan (VJ) Day?",
-          "q": "On what date did the Second World War finally end in Asia with Victory over Japan (VJ) Day?",
+          "question": "Why did many British families still feel worried on VE Day even as crowds celebrated in the streets?",
+          "q": "Why did many British families still feel worried on VE Day even as crowds celebrated in the streets?",
           "options": [
-            "15 August 1945",
-            "8 May 1945",
-            "6 June 1944",
-            "25 December 1945"
+            "Soldiers were still fighting Japan in Asia until VJ Day",
+            "Blackout curtains were not allowed to be taken down yet",
+            "Church bells were still banned from ringing in Britain",
+            "King George VI had not yet returned to London"
           ],
           "correct": 0,
-          "answer": "15 August 1945",
-          "a": "15 August 1945",
-          "explanation": "Fighting against Japan in Asia continued for three more months after VE Day until VJ Day on 15 August 1945."
+          "answer": "Soldiers were still fighting Japan in Asia until VJ Day",
+          "a": "Soldiers were still fighting Japan in Asia until VJ Day",
+          "explanation": "Even though the war in Europe was over on VE Day, many families still worried for loved ones fighting against Japan in Asia until VJ Day."
         },
         {
           "stage": 2,
@@ -9167,18 +9167,18 @@ const UNIT_DATA = {
         },
         {
           "stage": 3,
-          "question": "On what date every autumn is Armistice Day commemorated across the United Kingdom?",
-          "q": "On what date every autumn is Armistice Day commemorated across the United Kingdom?",
+          "question": "According to the lesson, what does remembering World War II teach each new generation today?",
+          "q": "According to the lesson, what does remembering World War II teach each new generation today?",
           "options": [
-            "11 November",
-            "8 May",
-            "3 September",
-            "7 September"
+            "About ordinary courage and our duty to protect peace",
+            "How to build wooden wireless radios at home",
+            "How to sew thick black curtains for house windows",
+            "Why street parties should only happen in autumn"
           ],
           "correct": 0,
-          "answer": "11 November",
-          "a": "11 November",
-          "explanation": "Every year on 11 November (Armistice Day) and Remembrance Sunday, communities gather at war memorials."
+          "answer": "About ordinary courage and our duty to protect peace",
+          "a": "About ordinary courage and our duty to protect peace",
+          "explanation": "Remembering World War II honours everyone who served and suffered, teaching each generation about ordinary courage and our duty to protect peace."
         },
         {
           "stage": 3,
@@ -10002,18 +10002,18 @@ const UNIT_DATA = {
         },
         {
           "stage": 1,
-          "question": "On what date did ten converted RAF bombers fly 300 orphaned child survivors from Prague to Cumbria?",
-          "q": "On what date did ten converted RAF bombers fly 300 orphaned child survivors from Prague to Cumbria?",
+          "question": "Why did the 300 young Holocaust survivors need Britain to offer them a safe home in 1945?",
+          "q": "Why did the 300 young Holocaust survivors need Britain to offer them a safe home in 1945?",
           "options": [
-            "14 August 1945",
-            "8 May 1945",
-            "1 September 1939",
-            "15 November 1938"
+            "Their families had been murdered and their old homes were gone, leaving them nowhere safe to live",
+            "They were visiting Lake Windermere on a summer school holiday",
+            "They wanted to train as Royal Air Force pilots in Cumbria",
+            "Their parents had sent them to learn how to build flying boats"
           ],
           "correct": 0,
-          "answer": "14 August 1945",
-          "a": "14 August 1945",
-          "explanation": "On 14 August 1945, ten RAF Short Stirling bombers carried 300 child survivors on a mercy airlift from Prague."
+          "answer": "Their families had been murdered and their old homes were gone, leaving them nowhere safe to live",
+          "a": "Their families had been murdered and their old homes were gone, leaving them nowhere safe to live",
+          "explanation": "Freed from Nazi concentration camps, these orphaned Jewish children and teenagers had lost their families and homes and had nowhere safe to live."
         },
         {
           "stage": 1,
@@ -11907,4 +11907,3 @@ const UNIT_DATA = {
     }
   ]
 };
-export default UNIT_DATA;

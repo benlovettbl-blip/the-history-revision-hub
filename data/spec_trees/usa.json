@@ -1,0 +1,1036 @@
+{
+  "unitId": "usa",
+  "optionCode": "1HI0/33",
+  "paperLabel": "Paper 3 · Modern Depth Study",
+  "courseTitle": "The USA, 1954–75: Conflict at Home and Abroad",
+  "examDateBoundary": "1954–1975",
+  "disclaimer": "Aligned to Pearson Edexcel GCSE (9–1) History (1HI0). Independent educational resource — not endorsed by Pearson.",
+  "nonExaminedContextNote": "Earlier precedents such as Plessy v. Ferguson (1896) and Truman's Executive Order 9981 (1948) explain the position of Black Americans in the early 1950s; examined date boundaries span 1954–1975.",
+  "rescueTop10": [
+    {
+      "year": "1954 (May)",
+      "event": "Brown v. Topeka Ruling & Geneva Accords Partition Vietnam",
+      "significance": "Chief Justice Earl Warren overturned 'separate but equal' schooling (9–0) in the same month Dien Bien Phu ended French rule and split Vietnam at the 17th Parallel."
+    },
+    {
+      "year": "1955–56",
+      "event": "Murder of Emmett Till & 381-Day Montgomery Bus Boycott",
+      "significance": "Outrage over Till's lynching and Rosa Parks's arrest launched mass non-violent direct action under Martin Luther King Jr. and won Browder v. Gayle."
+    },
+    {
+      "year": "1957 (Sept)",
+      "event": "Federal Showdown at Little Rock & Civil Rights Act of 1957",
+      "significance": "President Eisenhower sent 1,000 paratroopers of the 101st Airborne to enforce integration against Governor Orval Faubus's Massive Resistance."
+    },
+    {
+      "year": "1960–62",
+      "event": "Greensboro Sit-Ins, Freedom Rides & James Meredith at 'Ole Miss'",
+      "significance": "Student-led SNCC and CORE direct action forced federal enforcement of interstate terminal desegregation (1961) and University of Mississippi entry (1962)."
+    },
+    {
+      "year": "1963–65",
+      "event": "Birmingham, March on Washington & Landmark Civil Rights Laws",
+      "significance": "Televised brutality in Birmingham and Selma helped President Johnson pass the 1964 Civil Rights Act and 1965 Voting Rights Act dismantling de jure Jim Crow."
+    },
+    {
+      "year": "1964–65",
+      "event": "Gulf of Tonkin Resolution, Rolling Thunder & Da Nang Marines",
+      "significance": "Congress's August 1964 'blank check' empowered Johnson to bomb North Vietnam and escalate US ground forces past 536,000 troops by 1968."
+    },
+    {
+      "year": "1965–68",
+      "event": "Urban Riots, Malcolm X, Black Power & King's Assassination",
+      "significance": "Northern de facto poverty sparked Watts and Detroit riots, fuelled Black Power and the Black Panthers, and culminated in King's April 1968 murder in Memphis."
+    },
+    {
+      "year": "1968 (Jan–Mar)",
+      "event": "Tet Offensive, Credibility Gap & My Lai Massacre",
+      "significance": "Surprise communist attacks across 100 cities and the US Embassy Saigon shattered public trust on television and drove Johnson out of the 1968 race."
+    },
+    {
+      "year": "1969–71",
+      "event": "Nixon's Vietnamisation, Silent Majority, Cambodia & Kent State",
+      "significance": "Phased US troop withdrawals collided with secret and overt invasions of Cambodia and Laos, triggering fatal shootings of four students at Kent State."
+    },
+    {
+      "year": "1973–75",
+      "event": "Paris Peace Accords, War Powers Act & Fall of Saigon",
+      "significance": "After 58,220 US deaths and $168 billion spent, American combat troops withdrew in March 1973 before North Vietnamese tanks captured Saigon on 30 April 1975."
+    }
+  ],
+  "keyTopics": [
+    {
+      "id": "kt1",
+      "number": 1,
+      "title": "Key Topic 1: The Development of the Civil Rights Movement, 1954–60",
+      "dateFence": "1954–1960",
+      "outsideFenceWarning": "Keep strictly inside 1954–60: the February 1960 Greensboro sit-ins start Key Topic 2, while Birmingham (1963), the 1964 Civil Rights Act, Selma (1965), and Malcolm X/Black Power all sit after 1960.",
+      "subTopics": [
+        {
+          "id": "kt1_1",
+          "code": "1.1",
+          "title": "The Position of Black Americans in the Early 1950s",
+          "dateFence": "Early 1950s–1954",
+          "outsideFenceTrap": "Outside early 1950s: 1964 Civil Rights Act & 1965 Voting Rights Act",
+          "linkedLessonIndices": [0],
+          "anchors": [
+            {
+              "id": "kt1_1_a1",
+              "title": "Segregation, Discrimination & Voting Rights in the Southern States (Early 1950s)",
+              "dateTag": "Early 1950s",
+              "lessonIndex": 0,
+              "recallPrompt": "How were Jim Crow segregation and voter disenfranchisement enforced across the American South in the early 1950s?",
+              "facts": [
+                "In the early 1950s, seventeen southern states and Washington D.C. enforced de jure Jim Crow segregation backed by the 1896 Supreme Court Plessy v. Ferguson 'separate but equal' ruling.",
+                "Segregated Black schools, hospitals, waiting rooms, and transport were systematically starved of state funding while Northern cities practised unwritten de facto housing and job discrimination.",
+                "Southern registrars stripped Black citizens of 15th Amendment voting rights through poll taxes, arbitrary literacy tests, grandfather clauses, economic eviction, and violent intimidation that kept juries all-white."
+              ],
+              "examLens": {
+                "lensType": "Paper 3 Modern Depth",
+                "points": [
+                  { "label": "Q2 Explain Why (12m)", "text": "Link the Plessy legal shield, voter disenfranchisement (poll taxes and literacy tests), all-white juries, and Southern Democrats in Congress." },
+                  { "label": "Q3a Source Utility (8m)", "text": "Pair Mississippi segregation statutes with NAACP field worker Amzie Moore's voter-registration testimony to expose legal and violent barriers." },
+                  { "label": "Q3b–d Interpretations (24m)", "text": "Debate angle: Legalised Southern statutory architecture versus economic dependency and vigilante terror as chief pillar of Jim Crow." }
+                ]
+              },
+              "questionSearchTerm": "Jim Crow segregation voting rights"
+            },
+            {
+              "id": "kt1_1_a2",
+              "title": "Work of Early Civil Rights Organisations: NAACP & CORE (Early 1950s)",
+              "dateTag": "1947–1954",
+              "lessonIndex": 0,
+              "recallPrompt": "How did the NAACP and CORE challenge racial inequality before 1954?",
+              "facts": [
+                "Led by chief counsel Thurgood Marshall, the NAACP Legal Defense Fund filed federal lawsuits invoking the 14th Amendment Equal Protection Clause to overturn segregated public education.",
+                "Founded in 1942, the interracial Congress of Racial Equality (CORE) pioneered non-violent sit-ins and the 1947 Journey of Reconciliation to test bus segregation.",
+                "Second World War service in the 'Double V' campaign and President Truman's 1948 Executive Order 9981 desegregating the armed forces raised Black expectations despite entrenched Southern resistance."
+              ],
+              "examLens": {
+                "lensType": "Paper 3 Modern Depth",
+                "points": [
+                  { "label": "Q2 Explain Why (12m)", "text": "Contrast NAACP federal courtroom litigation with CORE non-violent direct action and post-war Black veteran militancy." },
+                  { "label": "Q3a Source Utility (8m)", "text": "Assess Thurgood Marshall's 1953 convention speeches to show why federal courts offered leverage unavailable in segregated Southern legislatures." },
+                  { "label": "Q3b–d Interpretations (24m)", "text": "Debate angle: Elite NAACP constitutional litigation from above versus grassroots post-war activism from below in launching modern civil rights." }
+                ]
+              },
+              "questionSearchTerm": "NAACP CORE Thurgood Marshall"
+            }
+          ]
+        },
+        {
+          "id": "kt1_2",
+          "code": "1.2",
+          "title": "Progress in Education, 1954–57",
+          "dateFence": "1954–1958",
+          "outsideFenceTrap": "Outside 1.2: 1962 James Meredith 'Ole Miss' university crisis (KT2.1)",
+          "linkedLessonIndices": [1],
+          "anchors": [
+            {
+              "id": "kt1_2_a1",
+              "title": "Causes, Features & Impact of the Brown v. Topeka Case (1954–55)",
+              "dateTag": "May 1954–1955",
+              "lessonIndex": 1,
+              "recallPrompt": "Why was Brown v. Board of Education (1954) both a constitutional breakthrough and limited in immediate classroom impact?",
+              "facts": [
+                "Consolidating five NAACP school cases led by Oliver and Linda Brown of Topeka, Thurgood Marshall used Kenneth and Mamie Clark's doll tests to prove segregation harmed Black children psychologically.",
+                "On 17 May 1954, Chief Justice Earl Warren delivered a unanimous 9–0 Supreme Court verdict declaring separate educational facilities inherently unequal, overturning Plessy in public education.",
+                "Because the May 1955 Brown II ruling ordered desegregation 'with all deliberate speed' without fixed deadlines, Southern Massive Resistance left fewer than 2 percent of Southern Black pupils in integrated schools by 1957."
+              ],
+              "examLens": {
+                "lensType": "Paper 3 Modern Depth",
+                "points": [
+                  { "label": "Q2 Explain Why (12m)", "text": "Weigh the landmark 9–0 death blow to Plessy against the vague 1955 'all deliberate speed' loophole exploited by Southern school boards." },
+                  { "label": "Q3a Source Utility (8m)", "text": "Compare Earl Warren's 1954 opinion with the 1956 Southern Manifesto signed by 101 congressmen to explain stalled Deep South enforcement." },
+                  { "label": "Q3b–d Interpretations (24m)", "text": "Debate angle: Transformative legal catalyst inspiring mass protest versus hollow courtroom victory that hardened white Southern resistance." }
+                ]
+              },
+              "questionSearchTerm": "Brown v. Topeka"
+            },
+            {
+              "id": "kt1_2_a2",
+              "title": "Causes, Features & Impact of Events at Little Rock High School (1957–58)",
+              "dateTag": "Sept 1957–1958",
+              "lessonIndex": 1,
+              "recallPrompt": "Why did Little Rock Central High School trigger a federal military intervention in September 1957?",
+              "facts": [
+                "In September 1957, Arkansas Governor Orval Faubus defied a federal court integration order by deploying the Arkansas National Guard to block the Little Rock Nine while mobs harassed Elizabeth Eckford on global television.",
+                "Embarrassed by Cold War headlines and defending federal supremacy, President Eisenhower signed Executive Order 10730 on 24 September 1957, federalising the Guard and sending 1,000 paratroopers of the 101st Airborne Division.",
+                "Although federal soldiers escorted the nine teenagers throughout 1957–58, Faubus closed all four Little Rock public high schools for 'The Lost Year' (1958–59) until Cooper v. Aaron forced integrated reopening."
+              ],
+              "examLens": {
+                "lensType": "Paper 3 Modern Depth",
+                "points": [
+                  { "label": "Q2 Explain Why (12m)", "text": "Connect Faubus's re-election politics, televised mob abuse of Elizabeth Eckford, Cold War image damage, and Eisenhower's duty to uphold federal authority." },
+                  { "label": "Q3a Source Utility (8m)", "text": "Evaluate Will Counts' photograph of Elizabeth Eckford for its international media shock value during the Cold War." },
+                  { "label": "Q3b–d Interpretations (24m)", "text": "Debate angle: Decisive triumph of federal constitutional power versus reluctant one-off intervention followed by school closures." }
+                ]
+              },
+              "questionSearchTerm": "Little Rock High School"
+            }
+          ]
+        },
+        {
+          "id": "kt1_3",
+          "code": "1.3",
+          "title": "The Montgomery Bus Boycott and Its Impact, 1955–60",
+          "dateFence": "1955–1960",
+          "outsideFenceTrap": "Outside 1.3: May 1961 CORE interstate Freedom Rides (KT2.1)",
+          "linkedLessonIndices": [2, 3],
+          "anchors": [
+            {
+              "id": "kt1_3_a1",
+              "title": "Rosa Parks, the MIA & the 381-Day Montgomery Bus Boycott (1955–56)",
+              "dateTag": "Dec 1955–Dec 1956",
+              "lessonIndex": 2,
+              "recallPrompt": "How was the Montgomery Bus Boycott sparked and sustained across 381 days?",
+              "facts": [
+                "On 1 December 1955, NAACP activist Rosa Parks refused bus driver James Blake's order to surrender her seat in Montgomery, prompting Jo Ann Robinson's Women's Political Council to distribute 35,000 boycott leaflets overnight.",
+                "Community leaders formed the Montgomery Improvement Association (MIA) on 5 December 1955 under twenty-six-year-old Baptist minister Dr Martin Luther King Jr., uniting thousands behind disciplined Christian non-violence.",
+                "Backed by Black church fundraising and a 300-car volunteer carpool across forty-eight dispatch stations, Black riders walked for 381 days and slashed city bus company passenger revenue by roughly 65 percent."
+              ],
+              "examLens": {
+                "lensType": "Paper 3 Modern Depth",
+                "points": [
+                  { "label": "Q2 Explain Why (12m)", "text": "Combine Rosa Parks's respected standing, WPC leaflet organisation, MIA carpool logistics, Black church finance, and economic pressure on white businesses." },
+                  { "label": "Q3a Source Utility (8m)", "text": "Cross-reference Jo Ann Robinson's WPC leaflet with oral histories of the volunteer carpool to highlight grassroots organisation alongside King's leadership." },
+                  { "label": "Q3b–d Interpretations (24m)", "text": "Debate angle: Charismatic leadership of Martin Luther King Jr. versus grassroots female organisers (Parks and Robinson) and NAACP litigation." }
+                ]
+              },
+              "questionSearchTerm": "Montgomery Bus Boycott Rosa Parks"
+            },
+            {
+              "id": "kt1_3_a2",
+              "title": "Success & Impact of Boycott: Browder v. Gayle, SCLC & Civil Rights Act (1957)",
+              "dateTag": "Nov 1956–Sept 1957",
+              "lessonIndex": 2,
+              "recallPrompt": "What legal, organisational, and legislative success and impact followed the Montgomery Bus Boycott by 1960?",
+              "facts": [
+                "Despite mass arrests and bombings of King's home and Black churches, the boycott achieved landmark success when the Supreme Court upheld Browder v. Gayle in November 1956, integrating Montgomery's buses from 20 December 1956.",
+                "In January 1957, King's leadership united Ralph Abernathy and Southern ministers in founding the Southern Christian Leadership Conference (SCLC) to coordinate church-led non-violent direct action across the South.",
+                "Enacted in September 1957, the Civil Rights Act was weakened by Southern Senate amendments requiring white jury trials, adding fewer than 3 percent to Black voter rolls by 1960."
+              ],
+              "examLens": {
+                "lensType": "Paper 3 Modern Depth",
+                "points": [
+                  { "label": "Q2 Explain Why (12m)", "text": "Show why mass boycott pressure still needed the NAACP's Browder v. Gayle federal court ruling to achieve binding legal desegregation." },
+                  { "label": "Q3a Source Utility (8m)", "text": "Evaluate the 1957 Civil Rights Act against Southern voter-registration maps showing all-white juries gutted federal enforcement." },
+                  { "label": "Q3b–d Interpretations (24m)", "text": "Debate angle: Symbolic federal breakthrough reopening congressional action versus toothless compromise neutered by Southern Senators." }
+                ]
+              },
+              "questionSearchTerm": "Browder v. Gayle SCLC 1957 Civil Rights Act"
+            }
+          ]
+        },
+        {
+          "id": "kt1_4",
+          "code": "1.4",
+          "title": "Opposition to the Civil Rights Movement, 1954–60",
+          "dateFence": "1954–1960",
+          "outsideFenceTrap": "Outside 1.4: 1964 Mississippi Freedom Summer murders (KT2.2)",
+          "linkedLessonIndices": [1, 3],
+          "anchors": [
+            {
+              "id": "kt1_4_a1",
+              "title": "The Ku Klux Klan, Dynamite Terror & Murder of Emmett Till (1955–60)",
+              "dateTag": "1955–1960",
+              "lessonIndex": 3,
+              "recallPrompt": "How did Klan violence and the August 1955 murder of Emmett Till expose Southern racial terror?",
+              "facts": [
+                "In August 1955, fourteen-year-old Chicago visitor Emmett Till was abducted and brutally murdered in Money, Mississippi by Roy Bryant and J.W. Milam after allegedly whistling at a white shopkeeper.",
+                "Mamie Till-Mobley's open-casket Chicago funeral and Jet magazine photographs shocked America before an all-white jury acquitted both killers in 67 minutes, followed by their $4,000 Look magazine confession.",
+                "Resurgent Ku Klux Klan cells launched lethal dynamite bombings against NAACP leaders and Black churches—detonating so many bombs in Birmingham, including Fred Shuttlesworth's home in December 1956, that locals called it 'Bombingham'."
+              ],
+              "examLens": {
+                "lensType": "Paper 3 Modern Depth",
+                "points": [
+                  { "label": "Q2 Explain Why (12m)", "text": "Explain how Mamie Till-Mobley's open casket, Jet photographs, the 67-minute acquittal, and the Look confession galvanised young civil rights activists." },
+                  { "label": "Q3a Source Utility (8m)", "text": "Analyse Chicago Defender coverage and trial arguments in Sumner, Mississippi to expose total impunity inside segregated Southern courts." },
+                  { "label": "Q3b–d Interpretations (24m)", "text": "Debate angle: Violent KKK terror intimidating rural activists versus national media revulsion ultimately accelerating Northern support for reform." }
+                ]
+              },
+              "questionSearchTerm": "Emmett Till Ku Klux Klan"
+            },
+            {
+              "id": "kt1_4_a2",
+              "title": "Institutional Southern Resistance: White Citizens' Councils & 'Dixiecrats' (1954–60)",
+              "dateTag": "1954–1960",
+              "lessonIndex": 3,
+              "recallPrompt": "How did White Citizens' Councils and Southern 'Dixiecrat' politicians obstruct desegregation between 1954 and 1960?",
+              "facts": [
+                "Founded in Indianola, Mississippi by Robert Patterson in July 1954, White Citizens' Councils enrolled over 60,000 bankers, planters, judges, and editors to defend segregation through economic intimidation.",
+                "Acting as an 'uptown Klan', Citizens' Councils fired Black teachers and workers, evicted sharecroppers, and cut bank credit to anyone signing integration petitions or registering to vote.",
+                "In Washington, Southern Democrats ('Dixiecrats') signed the March 1956 Southern Manifesto, backed Senator Harry Byrd's Massive Resistance school closures, and mounted Strom Thurmond's 24-hour filibuster against the 1957 Civil Rights Act."
+              ],
+              "examLens": {
+                "lensType": "Paper 3 Modern Depth",
+                "points": [
+                  { "label": "Q2 Explain Why (12m)", "text": "Distinguish respectable economic coercion (White Citizens' Councils) and Congressional obstruction (Dixiecrats and Manifesto) from violent Klan terror." },
+                  { "label": "Q3a Source Utility (8m)", "text": "Compare Citizens' Council rallies with the 1956 Southern Manifesto to show how state elites gave legalistic cover to white supremacy." },
+                  { "label": "Q3b–d Interpretations (24m)", "text": "Debate angle: Respectable political and economic obstruction by Councils and Dixiecrats versus violent Klan vigilantism as the stronger barrier to progress." }
+                ]
+              },
+              "questionSearchTerm": "White Citizens' Councils Dixiecrats"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kt2",
+      "number": 2,
+      "title": "Key Topic 2: Protest, Progress and Radicalism, 1960–75",
+      "dateFence": "1960–1975",
+      "outsideFenceWarning": "Keep strictly inside 1960–75: Brown v. Topeka (1954), Emmett Till (1955), Montgomery Bus Boycott (1955–56), and Little Rock (1957) all sit earlier in Key Topic 1.",
+      "subTopics": [
+        {
+          "id": "kt2_1",
+          "code": "2.1",
+          "title": "Developments, 1960–62",
+          "dateFence": "1960–1962",
+          "outsideFenceTrap": "Outside 1960–62: 1955–56 Montgomery Boycott & 1963 Birmingham Marches",
+          "linkedLessonIndices": [4],
+          "anchors": [
+            {
+              "id": "kt2_1_a1",
+              "title": "Greensboro Sit-Ins & Founding of SNCC (Feb–Aug 1960)",
+              "dateTag": "Feb–Aug 1960",
+              "lessonIndex": 4,
+              "recallPrompt": "Why were the 1960 Greensboro sit-ins and the founding of SNCC a turning point for the civil rights movement?",
+              "facts": [
+                "On 1 February 1960, four Black college freshmen (the Greensboro Four) staged a polite sit-in at Woolworth's segregated lunch counter, sparking student protests across dozens of Southern towns.",
+                "Enduring verbal insults and physical assaults with disciplined non-violence, student sit-ins and store boycotts desegregated lunch counters across more than one hundred Southern cities by August 1960.",
+                "In April 1960 at Shaw University, veteran organiser Ella Baker helped student leaders establish the Student Nonviolent Coordinating Committee (SNCC) to lead grassroots voter drives and rural direct action."
+              ],
+              "examLens": {
+                "lensType": "Paper 3 Modern Depth",
+                "points": [
+                  { "label": "Q2 Explain Why (12m)", "text": "Show how low-cost student replication, televised moral contrast, commercial boycotts, and SNCC grassroots structure rapidly widened participation." },
+                  { "label": "Q3a Source Utility (8m)", "text": "Examine press photographs of lunch-counter abuse alongside SNCC's October 1960 non-violent training rules to explain public sympathy." },
+                  { "label": "Q3b–d Interpretations (24m)", "text": "Debate angle: Youthful grassroots sit-ins transforming movement pace versus reliance on older NAACP and SCLC legal and financial backing." }
+                ]
+              },
+              "questionSearchTerm": "Greensboro sit-ins SNCC"
+            },
+            {
+              "id": "kt2_1_a2",
+              "title": "Freedom Riders, KKK Anniston Bombing & ICC Order (May–Nov 1961)",
+              "dateTag": "May–Nov 1961",
+              "lessonIndex": 4,
+              "recallPrompt": "How did the 1961 Freedom Riders compel the Kennedy administration to enforce interstate transit desegregation?",
+              "facts": [
+                "In May 1961, thirteen interracial CORE Freedom Riders left Washington D.C. by bus to test Southern compliance with the Supreme Court's 1960 Boynton v. Virginia ruling outlawing segregated interstate terminals.",
+                "On 14 May 1961, Klansmen firebombed a Greyhound bus outside Anniston, Alabama and mobs savagely beat riders in Birmingham and Montgomery, forcing Attorney General Robert Kennedy to send 600 federal marshals.",
+                "As over 400 SNCC and CORE volunteers continued riding into Mississippi jails, federal pressure pushed the Interstate Commerce Commission (ICC) in September 1961 to enforce full terminal desegregation from November."
+              ],
+              "examLens": {
+                "lensType": "Paper 3 Modern Depth",
+                "points": [
+                  { "label": "Q2 Explain Why (12m)", "text": "Link deliberate provocation of Deep South lawlessness, Cold War embarrassment before JFK's Vienna summit, and sustained SNCC replacements." },
+                  { "label": "Q3a Source Utility (8m)", "text": "Pair photographs of the gutted Anniston bus with the September 1961 ICC Docket order to trace cause and federal outcome." },
+                  { "label": "Q3b–d Interpretations (24m)", "text": "Debate angle: Courageous direct action forcing reluctant Kennedys' hand versus decisive executive intervention through Robert Kennedy and the ICC." }
+                ]
+              },
+              "questionSearchTerm": "Freedom Riders Anniston"
+            },
+            {
+              "id": "kt2_1_a3",
+              "title": "The James Meredith Case at the University of Mississippi (Sept–Oct 1962)",
+              "dateTag": "Sept–Oct 1962",
+              "lessonIndex": 4,
+              "recallPrompt": "What happened when James Meredith attempted to enrol at 'Ole Miss' in autumn 1962?",
+              "facts": [
+                "Backed by NAACP lawyers, Black US Air Force veteran James Meredith won a Supreme Court order in 1962 to enrol as the first African American student at the segregated University of Mississippi ('Ole Miss').",
+                "When Mississippi Governor Ross Barnett personally blocked Meredith's registration, President John F. Kennedy dispatched 500 federal marshals to escort Meredith onto the Oxford campus.",
+                "Deadly white rioting on campus in October 1962 killed two bystanders and injured hundreds of marshals, forcing Kennedy to deploy thousands of federal troops to secure Meredith's enrolment until graduation."
+              ],
+              "examLens": {
+                "lensType": "Paper 3 Modern Depth",
+                "points": [
+                  { "label": "Q2 Explain Why (12m)", "text": "Compare Governor Ross Barnett's defiance at Ole Miss (1962) with Faubus at Little Rock (1957) in forcing presidential military action." },
+                  { "label": "Q3a Source Utility (8m)", "text": "Assess televised speeches and campus riot reports to judge the limits of behind-the-scenes Kennedy negotiation with Southern governors." },
+                  { "label": "Q3b–d Interpretations (24m)", "text": "Debate angle: Federal commitment to university integration versus reactive crisis management forced only after deadly mob violence." }
+                ]
+              },
+              "questionSearchTerm": "James Meredith Ole Miss"
+            }
+          ]
+        },
+        {
+          "id": "kt2_2",
+          "code": "2.2",
+          "title": "Peaceful Protests and Their Impact, 1963–65",
+          "dateFence": "1963–1965",
+          "outsideFenceTrap": "Outside 2.2: 1968 Fair Housing Act (KT2.4) & Black Panthers founded Oct 1966 (KT2.3)",
+          "linkedLessonIndices": [5],
+          "anchors": [
+            {
+              "id": "kt2_2_a1",
+              "title": "Birmingham ('Project C') & the March on Washington (Apr–Aug 1963)",
+              "dateTag": "Apr–Aug 1963",
+              "lessonIndex": 5,
+              "recallPrompt": "How did the 1963 Birmingham campaign and March on Washington build momentum for federal civil rights legislation?",
+              "facts": [
+                "In April–May 1963, King and the SCLC launched Project C and the Children's Crusade in Birmingham, provoking Police Commissioner Eugene 'Bull' Connor into setting attack dogs and high-pressure fire hoses on marching schoolchildren.",
+                "Global outrage at televised police brutality forced Birmingham stores to desegregate and compelled President Kennedy in June 1963 to propose sweeping federal civil rights legislation.",
+                "On 28 August 1963, 250,000 Black and white marchers united peacefully at the Lincoln Memorial for the March on Washington, where King's 'I Have a Dream' speech rallied national moral backing for the bill."
+              ],
+              "examLens": {
+                "lensType": "Paper 3 Modern Depth",
+                "points": [
+                  { "label": "Q2 Explain Why (12m)", "text": "Explain SCLC's strategic choice of Bull Connor's Birmingham, televised shock during the Children's Crusade, and 250,000-strong interracial unity in Washington." },
+                  { "label": "Q3a Source Utility (8m)", "text": "Evaluate King's April 1963 'Letter from Birmingham Jail' as a direct rebuttal to white moderates urging further delay." },
+                  { "label": "Q3b–d Interpretations (24m)", "text": "Debate angle: Calculated media provocation in Birmingham versus inspirational interracial moral consensus at Washington as key legislative driver." }
+                ]
+              },
+              "questionSearchTerm": "Birmingham March on Washington"
+            },
+            {
+              "id": "kt2_2_a2",
+              "title": "Freedom Summer, Mississippi Murders & the Civil Rights Act of 1964",
+              "dateTag": "June–Aug 1964",
+              "lessonIndex": 5,
+              "recallPrompt": "What did the Civil Rights Act of 1964 achieve, and what did Freedom Summer reveal about remaining barriers?",
+              "facts": [
+                "Using national grief after JFK's November 1963 assassination and formidable Senate persuasion to break a 54-day Southern filibuster, President Lyndon B. Johnson signed the Civil Rights Act on 2 July 1964.",
+                "The 1964 Civil Rights Act outlawed racial segregation across all public accommodations, empowered the Justice Department to desegregate schools, and created the Equal Employment Opportunity Commission (EEOC) against job bias.",
+                "During the 1964 Mississippi 'Freedom Summer' voter and Freedom School drive, Klansmen working with a local deputy sheriff murdered volunteers James Chaney, Andrew Goodman, and Michael Schwerner, proving voting rights remained unprotected."
+              ],
+              "examLens": {
+                "lensType": "Paper 3 Modern Depth",
+                "points": [
+                  { "label": "Q2 Explain Why (12m)", "text": "Balance grassroots 1963 protest pressure and JFK's martyrdom with Lyndon Johnson's legislative skill in defeating the 54-day Senate filibuster." },
+                  { "label": "Q3a Source Utility (8m)", "text": "Contrast White House signing photographs of the July 1964 Act with the June 1964 Mississippi murders to show why voting legislation was still needed." },
+                  { "label": "Q3b–d Interpretations (24m)", "text": "Debate angle: Presidential leadership of Kennedy and Johnson from above versus sustained civil rights street mobilisation from below." }
+                ]
+              },
+              "questionSearchTerm": "Civil Rights Act 1964 Freedom Summer"
+            },
+            {
+              "id": "kt2_2_a3",
+              "title": "Selma 'Bloody Sunday' & the Voting Rights Act of 1965 (Mar–Aug 1965)",
+              "dateTag": "Mar–Aug 1965",
+              "lessonIndex": 5,
+              "recallPrompt": "How did the Selma campaign directly secure the Voting Rights Act of August 1965?",
+              "facts": [
+                "Targeting Selma, Alabama—where just 2 percent of eligible Black residents were registered voters—SCLC and SNCC marchers set out for Montgomery on 7 March 1965.",
+                "On the Edmund Pettus Bridge during 'Bloody Sunday', Alabama state troopers attacked 600 peaceful marchers with tear gas, whips, and clubs on national television, prompting Johnson to pledge 'we shall overcome' before Congress.",
+                "Signed on 6 August 1965, the Voting Rights Act abolished literacy tests and deployed federal voting examiners across Southern counties, lifting Black registration in the former Confederacy past 60 percent within four years."
+              ],
+              "examLens": {
+                "lensType": "Paper 3 Modern Depth",
+                "points": [
+                  { "label": "Q2 Explain Why (12m)", "text": "Trace how Sheriff Jim Clark and state trooper violence on Edmund Pettus Bridge handed Johnson the public mandate to pass federal voter examiners." },
+                  { "label": "Q3a Source Utility (8m)", "text": "Pair Spider Martin's Edmund Pettus Bridge photographs with post-1965 Southern voter statistics to demonstrate legislative impact." },
+                  { "label": "Q3b–d Interpretations (24m)", "text": "Debate angle: 1965 Voting Rights Act as crowning triumph of the civil rights era versus incomplete victory leaving Northern ghetto poverty untouched." }
+                ]
+              },
+              "questionSearchTerm": "Selma Voting Rights Act 1965"
+            }
+          ]
+        },
+        {
+          "id": "kt2_3",
+          "code": "2.3",
+          "title": "Malcolm X and Black Power, 1963–70",
+          "dateFence": "1963–1970",
+          "outsideFenceTrap": "Keep distinct from SCLC peaceful Southern campaigns (1955–65)",
+          "linkedLessonIndices": [6],
+          "anchors": [
+            {
+              "id": "kt2_3_a1",
+              "title": "Malcolm X: Black Muslims (Nation of Islam), Change of Attitude & Assassination (1963–65)",
+              "dateTag": "1963–Feb 1965",
+              "lessonIndex": 6,
+              "recallPrompt": "What did Malcolm X preach through his involvement with the Black Muslims (Nation of Islam), and how did his attitude change before his assassination in February 1965?",
+              "facts": [
+                "Through his involvement with Elijah Muhammad's Black Muslims (the Nation of Islam), charismatic minister Malcolm X articulated Northern urban ghetto anger, rejecting King's integrationism in favour of Black pride, economic self-reliance, and racial separation.",
+                "Condemning passive non-violence against racist brutality, Malcolm X urged Black voter power or armed self-defence 'by any means necessary' in speeches such as 'The Ballot or the Bullet' (April 1964).",
+                "After breaking with the Black Muslims (Nation of Islam) and completing his 1964 Mecca pilgrimage, Malcolm X changed his attitude toward racial brotherhood and founded the Organization of Afro-American Unity before his February 1965 assassination."
+              ],
+              "examLens": {
+                "lensType": "Paper 3 Modern Depth",
+                "points": [
+                  { "label": "Q2 Explain Why (12m)", "text": "Connect Northern de facto ghetto poverty, police brutality, and frustration with slow Southern non-violence to Malcolm X and the Black Muslims' urban appeal." },
+                  { "label": "Q3a Source Utility (8m)", "text": "Examine Malcolm X's April 1964 'Ballot or the Bullet' speech alongside his post-Mecca shift to avoid portraying his beliefs as static." },
+                  { "label": "Q3b–d Interpretations (24m)", "text": "Debate angle: Divisive extremist alienating white allies versus vital psychological liberator instilling Black cultural pride and inspiring Black Power." }
+                ]
+              },
+              "questionSearchTerm": "Malcolm X Black Muslims Nation of Islam"
+            },
+            {
+              "id": "kt2_3_a2",
+              "title": "Emergence of Black Power: Stokely Carmichael & 1968 Mexico Olympics (1966–68)",
+              "dateTag": "June 1966–Oct 1968",
+              "lessonIndex": 6,
+              "recallPrompt": "How did Stokely Carmichael and the 1968 Olympic sprinters project Black Power across America and the world?",
+              "facts": [
+                "When James Meredith was shot during his solo June 1966 March Against Fear in Mississippi, SNCC Chairman Stokely Carmichael electrified crowds in Greenwood with the slogan 'Black Power'.",
+                "Rejecting interracial compromise after years of white violence, Black Power demanded Afrocentric cultural pride, independent Black political control of Black communities, and expelling white staff from SNCC and CORE.",
+                "At the October 1968 Mexico City Olympics, 200-metre medallists Tommie Smith and John Carlos stood barefoot on the podium and raised black-gloved fists during the US anthem, broadcasting Black Power worldwide despite IOC suspension."
+              ],
+              "examLens": {
+                "lensType": "Paper 3 Modern Depth",
+                "points": [
+                  { "label": "Q2 Explain Why (12m)", "text": "Link persistent white violence against civil rights workers, Northern urban neglect, Malcolm X's legacy, and Carmichael's SNCC shift in 1966." },
+                  { "label": "Q3a Source Utility (8m)", "text": "Assess Carmichael's June 1966 Greenwood speech and John Dominis's 1968 Olympic podium photograph for how Black Power inspired youth while alarming white moderates." },
+                  { "label": "Q3b–d Interpretations (24m)", "text": "Debate angle: Constructive assertion of racial dignity and self-determination versus movement fracture that eroded interracial support and funding." }
+                ]
+              },
+              "questionSearchTerm": "Black Power Stokely Carmichael Mexico Olympics"
+            },
+            {
+              "id": "kt2_3_a3",
+              "title": "Methods & Achievements of the Black Panther Party (1966–70)",
+              "dateTag": "1966–1970",
+              "lessonIndex": 6,
+              "recallPrompt": "What were the revolutionary methods, community achievements, and causes of decline of the Black Panther Party?",
+              "facts": [
+                "Founded in Oakland, California in October 1966 by Huey P. Newton and Bobby Seale, the Black Panther Party wore black berets and leather jackets and organised armed citizen patrols monitoring local police.",
+                "Their Ten-Point Program demanded full employment, decent housing, fair Black juries, and an end to police brutality while 'Survival Programs' provided free children's breakfasts, health clinics, and schooling across inner cities.",
+                "Violent shootouts with police, internal splits, and relentless FBI surveillance and armed police raids—including the fatal December 1969 raid killing Illinois leader Fred Hampton—crippled the Panthers by 1970."
+              ],
+              "examLens": {
+                "lensType": "Paper 3 Modern Depth",
+                "points": [
+                  { "label": "Q2 Explain Why (12m)", "text": "Weigh practical welfare impact (Free Breakfast for Children and clinics) against armed militancy that invited crushing FBI and police repression." },
+                  { "label": "Q3a Source Utility (8m)", "text": "Compare the October 1966 Ten-Point Program with media coverage of armed Sacramento protesters to separate social reform goals from public fear." },
+                  { "label": "Q3b–d Interpretations (24m)", "text": "Debate angle: Genuine community welfare pioneers serving neglected ghettos versus paramilitary revolutionaries discredited by armed clashes." }
+                ]
+              },
+              "questionSearchTerm": "Black Panther Party"
+            }
+          ]
+        },
+        {
+          "id": "kt2_4",
+          "code": "2.4",
+          "title": "The Civil Rights Movement, 1965–75",
+          "dateFence": "1965–1975",
+          "outsideFenceTrap": "Connect Vietnam budget drain ($30bn/yr) to shelved 1968 Kerner reforms",
+          "linkedLessonIndices": [7],
+          "anchors": [
+            {
+              "id": "kt2_4_a1",
+              "title": "Urban Riots of 1965–67 & the Kerner Report (1968)",
+              "dateTag": "Aug 1965–Feb 1968",
+              "lessonIndex": 7,
+              "recallPrompt": "Why did riots erupt across Northern and Western cities in 1965–67, and what did the 1968 Kerner Report conclude?",
+              "facts": [
+                "Days after the August 1965 Voting Rights Act, Marquette Frye's traffic arrest sparked the six-day Watts riot in Los Angeles, leaving 34 dead, over 1,000 injured, and $40 million in property damage.",
+                "During the 'Long Hot Summers' of 1965–67, riots hit Newark (26 dead) and Detroit (43 dead, suppressed by federal paratroopers), fuelled by ghetto unemployment, slum housing, and chronic police harassment.",
+                "In February 1968, Johnson's Kerner Report blamed white racism for moving America toward 'two societies, one black, one white — separate and unequal', though $30-billion-a-year Vietnam costs starved its proposals."
+              ],
+              "examLens": {
+                "lensType": "Paper 3 Modern Depth",
+                "points": [
+                  { "label": "Q2 Explain Why (12m)", "text": "Show why Southern voting laws failed to fix Northern de facto ghetto unemployment, overcrowded slums, and white police brutality." },
+                  { "label": "Q3a Source Utility (8m)", "text": "Pair Watts eyewitness testimony with the February 1968 Kerner Report summary and Johnson's Vietnam budget constraints." },
+                  { "label": "Q3b–d Interpretations (24m)", "text": "Debate angle: Desperate rebellion against systemic economic exclusion (Kerner view) versus destructive disorder triggering suburban white conservative backlash." }
+                ]
+              },
+              "questionSearchTerm": "Watts riots Kerner Report"
+            },
+            {
+              "id": "kt2_4_a2",
+              "title": "King's Northern Campaign, Assassination & the 1968 Fair Housing Act (1966–68)",
+              "dateTag": "1966–Apr 1968",
+              "lessonIndex": 7,
+              "recallPrompt": "Why did King's 1966 Chicago campaign struggle, and what impact followed his assassination in April 1968?",
+              "facts": [
+                "In 1966, Dr King launched the Chicago Freedom Movement against Northern slum housing and bank redlining, encountering brick-throwing white mobs in Marquette Park and winning only weak promises from Mayor Richard Daley.",
+                "Shifting toward economic justice through the Poor People's Campaign, King travelled to Memphis to support striking Black sanitation workers before James Earl Ray assassinated him on 4 April 1968.",
+                "King's murder sparked devastating riots across 100 cities, undermined faith in non-violence, and prompted Congress on 11 April 1968 to pass the Fair Housing Act outlawing racial discrimination in selling or renting homes."
+              ],
+              "examLens": {
+                "lensType": "Paper 3 Modern Depth",
+                "points": [
+                  { "label": "Q2 Explain Why (12m)", "text": "Contrast visible Southern statutory targets (Bull Connor) with intangible Northern economic barriers, white suburban hostility, and Mayor Daley's political machine." },
+                  { "label": "Q3a Source Utility (8m)", "text": "Evaluate the April 1968 Fair Housing Act alongside photographs of Resurrection City to weigh final legal gains against unfinished anti-poverty goals." },
+                  { "label": "Q3b–d Interpretations (24m)", "text": "Debate angle: King's assassination ending unified civil rights progress versus fragmentation already underway since Watts and Black Power in 1965–66." }
+                ]
+              },
+              "questionSearchTerm": "Chicago Freedom Movement King assassination"
+            },
+            {
+              "id": "kt2_4_a3",
+              "title": "Scale of Progress in Civil Rights by 1975 & the Nixon Years (1968–75)",
+              "dateTag": "1968–1975",
+              "lessonIndex": 7,
+              "recallPrompt": "How far had Black Americans achieved genuine equality across politics, education, and living standards by 1975?",
+              "facts": [
+                "Although white suburban 'law and order' voters helped elect Richard Nixon in 1968, federal affirmative action rules expanded minority access to government contracts, universities, and middle-class professional careers.",
+                "By 1975, de jure Jim Crow segregation was legally abolished, Southern school integration had risen sharply, and millions of newly registered Black voters had elected thousands of Black mayors, sheriffs, and members of Congress.",
+                "Substantial inequalities endured in 1975 as Northern de facto residential segregation persisted and Black unemployment and family poverty rates remained roughly double those of white Americans."
+              ],
+              "examLens": {
+                "lensType": "Paper 3 Modern Depth",
+                "points": [
+                  { "label": "Q2 Explain Why (12m)", "text": "Differentiate dramatic legal and political progress in the South from stubborn de facto economic and housing inequality in Northern cities by 1975." },
+                  { "label": "Q3a Source Utility (8m)", "text": "Test 1970s election and schooling data against inner-city income and unemployment figures for balanced overall judgment." },
+                  { "label": "Q3b–d Interpretations (24m)", "text": "Debate angle: Revolutionary constitutional transformation between 1954 and 1975 versus incomplete socio-economic liberation." }
+                ]
+              },
+              "questionSearchTerm": "Progress in civil rights by 1975"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kt3",
+      "number": 3,
+      "title": "Key Topic 3: US Involvement in the Vietnam War, 1954–75",
+      "dateFence": "1954–1973",
+      "outsideFenceWarning": "Sub-topics 3.1–3.4 trace US escalation, tactics, Tet, and Nixon's changes (1954–73); domestic US anti-war/pro-war reactions (My Lai, Kent State, Silent Majority) and the 1973–75 end of the war sit in Key Topic 4.",
+      "subTopics": [
+        {
+          "id": "kt3_1",
+          "code": "3.1",
+          "title": "Reasons for US Involvement in the Conflict in Vietnam, 1954–63",
+          "dateFence": "1954–1963",
+          "outsideFenceTrap": "Outside 1954–63: Aug 1964 Gulf of Tonkin & March 1965 US Marines at Da Nang",
+          "linkedLessonIndices": [8],
+          "anchors": [
+            {
+              "id": "kt3_1_a1",
+              "title": "Dien Bien Phu, Domino Theory & Diem's Government under Eisenhower (1954–60)",
+              "dateTag": "1954–1960",
+              "lessonIndex": 8,
+              "recallPrompt": "Why did President Eisenhower back Ngo Dinh Diem after 1954, and why did Diem's rule provoke armed rebellion?",
+              "facts": [
+                "After Vietnamese communists defeated France at Dien Bien Phu in May 1954, the Geneva Accords divided Vietnam along the 17th Parallel between Ho Chi Minh's North and a pro-Western South.",
+                "Guided by the Domino Theory that losing Vietnam would topple Southeast Asia to communism, Eisenhower funded Catholic leader Ngo Dinh Diem, who rigged a 1955 referendum (98.2 percent) and cancelled the 1956 reunification elections.",
+                "Diem's nepotism, landlord favouritism, persecution of Buddhists, and execution of rural dissidents alienated peasants and sparked the December 1960 formation of the National Liberation Front (Vietcong), supplied via the Ho Chi Minh Trail."
+              ],
+              "examLens": {
+                "lensType": "Paper 3 Modern Depth",
+                "points": [
+                  { "label": "Q2 Explain Why (12m)", "text": "Combine Cold War Domino Theory fears of Ho Chi Minh with Diem's corrupt anti-Buddhist autocracy creating the Vietcong insurgency." },
+                  { "label": "Q3a Source Utility (8m)", "text": "Assess Eisenhower's April 1954 'falling domino' press conference to explain why Washington tolerated Diem's rigged regime." },
+                  { "label": "Q3b–d Interpretations (24m)", "text": "Debate angle: Strategic Cold War containment logic versus fatal American misreading of Vietnamese anti-colonial nationalism." }
+                ]
+              },
+              "questionSearchTerm": "Domino Theory Ngo Dinh Diem"
+            },
+            {
+              "id": "kt3_1_a2",
+              "title": "Greater Involvement under Kennedy: Strategic Hamlets & Overthrow of Diem (1961–63)",
+              "dateTag": "1961–Nov 1963",
+              "lessonIndex": 8,
+              "recallPrompt": "Why did President Kennedy expand aid to South Vietnam yet ultimately sanction the overthrow of Diem in November 1963?",
+              "facts": [
+                "Determined to prove Cold War resolve without sending combat divisions, President Kennedy raised US military advisers past 16,000 and supplied helicopters and herbicide sprayers to assist the South Vietnamese army (ARVN).",
+                "Launched in 1962 to isolate villagers from the Vietcong, the Strategic Hamlet Program forcibly uprooted over four million peasants from ancestral lands into barbed-wire settlements, driving furious villagers into Vietcong ranks.",
+                "After Diem's troops shot Buddhist protesters and monk Thich Quang Duc burned himself to death in June 1963, US officials did not block ARVN generals overthrowing and killing Diem in November."
+              ],
+              "examLens": {
+                "lensType": "Paper 3 Modern Depth",
+                "points": [
+                  { "label": "Q2 Explain Why (12m)", "text": "Link failing ARVN raids, peasant anger over Strategic Hamlets, and global shock at the 1963 Buddhist Crisis to Diem's downfall." },
+                  { "label": "Q3a Source Utility (8m)", "text": "Pair Malcolm Browne's June 1963 photograph of Thich Quang Duc with State Department Cable 243 to trace Washington abandoning Diem." },
+                  { "label": "Q3b–d Interpretations (24m)", "text": "Debate angle: Kennedy deepening an inescapable US commitment through Diem's coup versus cautious adviser-only restraint prior to Dallas." }
+                ]
+              },
+              "questionSearchTerm": "Strategic Hamlet Program overthrow of Diem"
+            }
+          ]
+        },
+        {
+          "id": "kt3_2",
+          "code": "3.2",
+          "title": "Escalation of the Conflict Under Johnson, 1963–65",
+          "dateFence": "Nov 1963–1965",
+          "outsideFenceTrap": "Outside 3.2: Jan 1968 Tet Offensive & 1969 Nixon Vietnamisation",
+          "linkedLessonIndices": [9],
+          "anchors": [
+            {
+              "id": "kt3_2_a1",
+              "title": "Vietcong Threat & the Gulf of Tonkin Incident and Resolution (1963–Aug 1964)",
+              "dateTag": "Nov 1963–Aug 1964",
+              "lessonIndex": 9,
+              "recallPrompt": "How did South Vietnamese collapse and the August 1964 Gulf of Tonkin incident hand President Johnson war powers?",
+              "facts": [
+                "After Diem's assassination, ten military governments rose and fell in Saigon within eighteen months while chronic ARVN desertions enabled the Vietcong to control roughly 40 percent of rural South Vietnam by late 1964.",
+                "Following a clash between North Vietnamese torpedo boats and the intelligence destroyer USS Maddox on 2 August 1964, a disputed second radar report during storms on 4 August triggered retaliatory US air strikes.",
+                "On 7 August 1964, Congress passed the Gulf of Tonkin Resolution (416–0 in the House, 88–2 in the Senate), handing President Johnson a 'blank check' to take all necessary military measures without declaring war."
+              ],
+              "examLens": {
+                "lensType": "Paper 3 Modern Depth",
+                "points": [
+                  { "label": "Q2 Explain Why (12m)", "text": "Connect imminent Saigon military collapse, Vietcong rural gains, Johnson's 1964 election concerns, and the Gulf of Tonkin trigger." },
+                  { "label": "Q3a Source Utility (8m)", "text": "Contrast Captain John Herrick's cautious 4 August cable doubting torpedo hits with the sweeping 7 August Congressional Resolution." },
+                  { "label": "Q3b–d Interpretations (24m)", "text": "Debate angle: Deliberate White House manipulation of Tonkin to wage planned war versus reluctant escalation forced by Saigon's near-collapse." }
+                ]
+              },
+              "questionSearchTerm": "Gulf of Tonkin Resolution"
+            },
+            {
+              "id": "kt3_2_a2",
+              "title": "Pleiku Raid, Operation Rolling Thunder & US Combat Troops at Da Nang (1965)",
+              "dateTag": "Feb–Dec 1965",
+              "lessonIndex": 9,
+              "recallPrompt": "How did US involvement cross from advisory support to full-scale air and ground war in early 1965?",
+              "facts": [
+                "After Vietcong mortars killed eight Americans at Pleiku in February 1965, Johnson launched Operation Rolling Thunder in March, dropping 864,000 tons of bombs on North Vietnam over three years.",
+                "To guard vulnerable airfields supporting Rolling Thunder, 3,500 US Marines waded ashore at Da Nang on 8 March 1965, marking America's entry into direct ground combat.",
+                "Under Commander General William Westmoreland, US troops shifted rapidly to offensive combat operations, surging from 184,000 soldiers by December 1965 to over 536,000 by 1968."
+              ],
+              "examLens": {
+                "lensType": "Paper 3 Modern Depth",
+                "points": [
+                  { "label": "Q2 Explain Why (12m)", "text": "Show the step-by-step chain: Pleiku base attack, Rolling Thunder air campaign, Marines guarding Da Nang airfields, and Westmoreland's offensive troop requests." },
+                  { "label": "Q3a Source Utility (8m)", "text": "Examine Larry Burrows' Da Nang landing photographs alongside B-52 mission records to show overconfidence in US technological firepower." },
+                  { "label": "Q3b–d Interpretations (24m)", "text": "Debate angle: Incremental 'quagmire' of reactive military steps versus conscious presidential choice choosing war over humiliation." }
+                ]
+              },
+              "questionSearchTerm": "Operation Rolling Thunder Da Nang"
+            }
+          ]
+        },
+        {
+          "id": "kt3_3",
+          "code": "3.3",
+          "title": "The Nature of the Conflict in Vietnam, 1964–68",
+          "dateFence": "1964–1968",
+          "outsideFenceTrap": "Outside 3.3: 1970 Cambodia, 1971 Laos & Dec 1972 Linebacker II (KT3.4)",
+          "linkedLessonIndices": [10, 11],
+          "anchors": [
+            {
+              "id": "kt3_3_a1",
+              "title": "Vietcong Guerrilla Tactics, Tunnels & Ho Chi Minh Trail (1964–68)",
+              "dateTag": "1964–1968",
+              "lessonIndex": 10,
+              "recallPrompt": "How did Vietcong guerrilla warfare neutralise superior American technology and firepower?",
+              "facts": [
+                "Guided by General Vo Nguyen Giap, uniformless Vietcong guerrillas avoided pitched battles, ambushed US patrols at close quarters ('hanging onto American belt buckles' to prevent airstrikes), and blended back into peasant villages.",
+                "Fighters sheltered inside 250 kilometres of multi-level Cu Chi underground tunnels housing hospitals and kitchens while concealed punji-stick pits and tripwire mines caused over 10 percent of US casualties.",
+                "Respecting or pressuring rural villagers while over 30,000 porters repaired the camouflaged Ho Chi Minh Trail through Laos and Cambodia kept Soviet and Chinese weapons flowing south despite heavy US bombing."
+              ],
+              "examLens": {
+                "lensType": "Paper 3 Modern Depth",
+                "points": [
+                  { "label": "Q2 Explain Why (12m)", "text": "Connect close-quarters ambushes, Cu Chi tunnels, psychological booby traps, peasant concealment, and the Ho Chi Minh Trail supply line." },
+                  { "label": "Q3a Source Utility (8m)", "text": "Pair US Army booby-trap manuals and Cu Chi tunnel diagrams with North Vietnamese trail photographs to explain guerrilla endurance." },
+                  { "label": "Q3b–d Interpretations (24m)", "text": "Debate angle: Ingenious Vietcong guerrilla tactics and peasant loyalty versus flawed US counter-insurgency strategy as primary cause of stalemate." }
+                ]
+              },
+              "questionSearchTerm": "Vietcong guerrilla tactics Cu Chi"
+            },
+            {
+              "id": "kt3_3_a2",
+              "title": "US Military Methods: Search and Destroy, Rolling Thunder & Chemical Weapons (1965–68)",
+              "dateTag": "1965–1968",
+              "lessonIndex": 10,
+              "recallPrompt": "Why did General Westmoreland's Search and Destroy raids, bombing, and chemical weapons fail to defeat the Vietcong?",
+              "facts": [
+                "Pursuing attrition measured by enemy 'body counts' rather than territory, Westmoreland flew infantry by Huey helicopter on Search and Destroy sweeps that frequently burned suspected Vietcong villages ('Zippo raids').",
+                "Operation Rolling Thunder dropped 864,000 tons of bombs on North Vietnam between 1965 and 1968 without halting weapons moving down jungle paths or breaking Hanoi's resolve.",
+                "Under Operation Ranch Hand, US aircraft sprayed 20 million gallons of toxic Agent Orange defoliant across four million acres alongside 1,000-degree napalm jelly, maiming civilians and alienating rural Vietnamese."
+              ],
+              "examLens": {
+                "lensType": "Paper 3 Modern Depth",
+                "points": [
+                  { "label": "Q2 Explain Why (12m)", "text": "Explain why body-count incentives, Zippo village burnings, Agent Orange, and napalm destroyed 'hearts and minds' and recruited peasants for the Vietcong." },
+                  { "label": "Q3a Source Utility (8m)", "text": "Evaluate Marine Lieutenant Philip Caputo's memoir testimony on attrition pressures and civilian casualties during Search and Destroy patrols." },
+                  { "label": "Q3b–d Interpretations (24m)", "text": "Debate angle: Misapplied conventional industrial firepower unsuited to jungle insurgency versus political restrictions preventing decisive strikes against the North." }
+                ]
+              },
+              "questionSearchTerm": "Search and Destroy Agent Orange"
+            },
+            {
+              "id": "kt3_3_a3",
+              "title": "Features & Impact of the Tet Offensive (Jan–Mar 1968)",
+              "dateTag": "Jan–Mar 1968",
+              "lessonIndex": 11,
+              "recallPrompt": "Why was the January 1968 Tet Offensive a military defeat for the Vietcong yet a devastating political blow to the USA?",
+              "facts": [
+                "Breaking the Lunar New Year truce on 30 January 1968, over 80,000 Vietcong and North Vietnamese fighters attacked 100 Southern cities simultaneously and breached the US Embassy compound in Saigon for six hours.",
+                "US and ARVN forces recaptured every town including Hue and killed over 50,000 experienced communist fighters without any popular Southern uprising taking place.",
+                "Televised Embassy fighting widened the domestic 'Credibility Gap', prompted CBS anchor Walter Cronkite's February 'stalemate' verdict, and drove Johnson on 31 March 1968 to step down from re-election."
+              ],
+              "examLens": {
+                "lensType": "Paper 3 Modern Depth",
+                "points": [
+                  { "label": "Q2 Explain Why (12m)", "text": "Contrast heavy Vietcong battlefield losses (>50,000 dead) with psychological shock in America via the Credibility Gap, Cronkite, and LBJ's withdrawal." },
+                  { "label": "Q3a Source Utility (8m)", "text": "Analyse Walter Cronkite's 27 February 1968 CBS broadcast to explain why losing trusted middle-class media shattered Washington's war consensus." },
+                  { "label": "Q3b–d Interpretations (24m)", "text": "Debate angle: Crushing communist military setback rescued by sensationalist US media versus decisive strategic turning point exposing an unwinnable war." }
+                ]
+              },
+              "questionSearchTerm": "Tet Offensive 1968"
+            }
+          ]
+        },
+        {
+          "id": "kt3_4",
+          "code": "3.4",
+          "title": "Changes Under Nixon, 1969–73",
+          "dateFence": "1969–1973",
+          "outsideFenceTrap": "Keep military changes here; Kent State & Hard Hat home-front clashes sit in KT4",
+          "linkedLessonIndices": [11, 14],
+          "anchors": [
+            {
+              "id": "kt3_4_a1",
+              "title": "Vietnamisation, the Nixon Doctrine & Causes of Failure (1969–72)",
+              "dateTag": "1969–1972",
+              "lessonIndex": 11,
+              "recallPrompt": "What were the Nixon Doctrine and Vietnamisation, and why did handing ground combat to the ARVN fail?",
+              "facts": [
+                "Elected promising 'peace with honor', President Richard Nixon announced the 1969 Nixon Doctrine requiring Asian allies to supply their own ground soldiers while America provided weapons, money, and air power.",
+                "Under Vietnamisation, Nixon cut US troop strength in Vietnam from a peak of 543,000 in early 1969 to fewer than 156,000 by late 1971 while expanding the ARVN.",
+                "Vietnamisation faltered because ARVN leadership remained corrupt and reliant on US bombers while remaining US conscripts suffered collapsing morale marked by drug abuse, combat refusals, and over 800 'fragging' grenade attacks on officers."
+              ],
+              "examLens": {
+                "lensType": "Paper 3 Modern Depth",
+                "points": [
+                  { "label": "Q2 Explain Why (12m)", "text": "Combine ARVN officer corruption, lack of independent air logistics, Laos battlefield routs, and US conscript morale collapse (fragging and drugs)." },
+                  { "label": "Q3a Source Utility (8m)", "text": "Cross-reference Nixon's upbeat public Vietnamisation speeches with secret August 1972 Oval Office tapes doubting South Vietnam's survival." },
+                  { "label": "Q3b–d Interpretations (24m)", "text": "Debate angle: Realistic exit strategy undermined by Congressional aid cuts versus flawed 'decent interval' facade masking military withdrawal." }
+                ]
+              },
+              "questionSearchTerm": "Vietnamisation Nixon Doctrine"
+            },
+            {
+              "id": "kt3_4_a2",
+              "title": "Attacks on Cambodia (1970) & Laos (1971) & Bombing of North Vietnam (1972)",
+              "dateTag": "1969–Dec 1972",
+              "lessonIndex": 11,
+              "recallPrompt": "Why did Nixon widen attacks into Cambodia and Laos and unleash massive bombing of North Vietnam in 1972?",
+              "facts": [
+                "Using his 'Madman Theory' to coerce Hanoi and cut the Ho Chi Minh Trail, Nixon secretly bombed Cambodia from March 1969 ('Operation Menu') before ordering a ground invasion in April 1970.",
+                "In February–March 1971, ARVN troops invaded Laos without US ground advisers in Operation Lam Son 719, retreating in chaos clinging to helicopter skids and exposing Vietnamisation's military weakness.",
+                "Nixon halted North Vietnam's spring 1972 Easter Offensive with Operation Linebacker air power and dropped over 20,000 tons on Hanoi and Haiphong during December 1972's Linebacker II 'Christmas Bombings'."
+              ],
+              "examLens": {
+                "lensType": "Paper 3 Modern Depth",
+                "points": [
+                  { "label": "Q2 Explain Why (12m)", "text": "Explain why withdrawing US ground troops drove Nixon to escalate air and cross-border attacks (Cambodia, Laos, Linebacker) to protect withdrawal and force peace terms." },
+                  { "label": "Q3a Source Utility (8m)", "text": "Evaluate photographs of ARVN soldiers clinging to helicopter skids leaving Laos (March 1971) as direct evidence of Vietnamisation's limits." },
+                  { "label": "Q3b–d Interpretations (24m)", "text": "Debate angle: Effective coercive bombing forcing Hanoi to sign in 1973 versus destructive widening of the war that inflamed US domestic fury." }
+                ]
+              },
+              "questionSearchTerm": "Cambodia Laos Linebacker"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kt4",
+      "number": 4,
+      "title": "Key Topic 4: Reactions to, and the End of, US Involvement in Vietnam, 1964–75",
+      "dateFence": "1964–1975",
+      "outsideFenceWarning": "Sub-topics 4.1–4.2 examine domestic US opposition and support across 1964–72, 4.3 covers peace talks and US withdrawal/costs (1972–75), and 4.4 synthesises overall reasons for US failure across the entire war.",
+      "subTopics": [
+        {
+          "id": "kt4_1",
+          "code": "4.1",
+          "title": "Opposition to the War",
+          "dateFence": "1964–1971",
+          "outsideFenceTrap": "Contrast strictly against pro-war Silent Majority & Hard Hats in 4.2",
+          "linkedLessonIndices": [12, 13],
+          "anchors": [
+            {
+              "id": "kt4_1_a1",
+              "title": "Growth of Opposition: Media, Draft Inequity, Students & Congress (1965–71)",
+              "dateTag": "1965–1971",
+              "lessonIndex": 12,
+              "recallPrompt": "Why did opposition to the Vietnam War grow across television audiences, draft-age youth, veterans, and Congress?",
+              "facts": [
+                "Uncensored colour television brought wounded soldiers and burning villages into 90 percent of homes during the 'Living Room War', widening the Credibility Gap confirmed by the 1971 Pentagon Papers.",
+                "The Selective Service draft conscripted over two million men while college deferments spared affluent youths, disproportionately sending working-class and Black soldiers into combat and inspiring draft-card burnings and Muhammad Ali's refusal.",
+                "Campus rallies, Vietnam Veterans Against the War throwing medals at the Capitol in April 1971, and Senate hearings led by J. William Fulbright pushed Congress to repeal the Tonkin Resolution in 1970."
+              ],
+              "examLens": {
+                "lensType": "Paper 3 Modern Depth",
+                "points": [
+                  { "label": "Q2 Explain Why (12m)", "text": "Group nightly TV coverage, class and racial unfairness of the draft, rising US casualties, Pentagon Papers deception, and Senate doves." },
+                  { "label": "Q3a Source Utility (8m)", "text": "Compare student protest posters with VVAW veterans discarding combat medals in April 1971 to explain how dissent moved into the mainstream." },
+                  { "label": "Q3b–d Interpretations (24m)", "text": "Debate angle: Moral revulsion sparked by media images and draft injustice versus mounting American casualties and financial costs as primary driver of opposition." }
+                ]
+              },
+              "questionSearchTerm": "Opposition to the Vietnam War draft media"
+            },
+            {
+              "id": "kt4_1_a2",
+              "title": "My Lai Massacre (1968), Calley Trial & Kent State Shootings (1970–71)",
+              "dateTag": "1968–1971",
+              "lessonIndex": 12,
+              "recallPrompt": "How did the My Lai disclosures, Lieutenant Calley's trial, and the Kent State shootings shock and divide America?",
+              "facts": [
+                "On 16 March 1968, Charlie Company soldiers under Lieutenant William Calley murdered over 500 unarmed women, children, and elderly villagers at My Lai despite zero enemy fire before pilot Hugh Thompson intervened.",
+                "Exposed after twenty months by Seymour Hersh in November 1969, My Lai brought only Calley's March 1971 murder conviction, which Nixon reduced from life imprisonment to three and a half years' house arrest.",
+                "After Nixon's April 1970 Cambodia invasion speech, Ohio National Guardsmen shot dead four unarmed Kent State University protesters and wounded nine on 4 May, sparking a four-million-student strike across 400 campuses."
+              ],
+              "examLens": {
+                "lensType": "Paper 3 Modern Depth",
+                "points": [
+                  { "label": "Q2 Explain Why (12m)", "text": "Show how Hersh's November 1969 My Lai photographs shattered moral war claims while Kent State brought lethal military violence onto an American campus." },
+                  { "label": "Q3a Source Utility (8m)", "text": "Assess Ronald Haeberle's My Lai photographs and John Filo's Pulitzer-winning Kent State image for emotional impact across middle America." },
+                  { "label": "Q3b–d Interpretations (24m)", "text": "Debate angle: Universal national revulsion uniting Americans against the war versus deep polarisation where conservatives defended Calley and blamed Kent State students." }
+                ]
+              },
+              "questionSearchTerm": "My Lai Massacre Kent State"
+            }
+          ]
+        },
+        {
+          "id": "kt4_2",
+          "code": "4.2",
+          "title": "Support for the War",
+          "dateFence": "1964–1972",
+          "outsideFenceTrap": "Remember millions backed the war through Nixon's 1972 49-state landslide",
+          "linkedLessonIndices": [13],
+          "anchors": [
+            {
+              "id": "kt4_2_a1",
+              "title": "Causes of Support: Fear of Communism, Patriotism & Congressional Hawks (1964–72)",
+              "dateTag": "1964–1972",
+              "lessonIndex": 13,
+              "recallPrompt": "Why did millions of Americans continue supporting the war effort in Vietnam throughout the late 1960s and early 1970s?",
+              "facts": [
+                "Rooted in Second World War and Korean War Cold War consensus, millions of older and suburban Americans believed containing communism under the Domino Theory was vital to protect global freedom.",
+                "Patriotic working-class families and veterans' groups such as the American Legion viewed military service as a civic duty and resented student protesters who burned flags or praised Ho Chi Minh.",
+                "Southern and Midwestern congressional hawks warned that premature withdrawal would betray fallen soldiers, humiliate the United States in its first military defeat, and embolden Soviet and Chinese aggression."
+              ],
+              "examLens": {
+                "lensType": "Paper 3 Modern Depth",
+                "points": [
+                  { "label": "Q2 Explain Why (12m)", "text": "Connect anti-communist Domino fears, working-class patriotism, class resentment against deferred college students, and fear of national humiliation." },
+                  { "label": "Q3a Source Utility (8m)", "text": "Use Gallup opinion polls from 1969–70 to show that disliking student protesters often outweighed enthusiasm for the war itself." },
+                  { "label": "Q3b–d Interpretations (24m)", "text": "Debate angle: Principled Cold War anti-communism versus cultural and class backlash against countercultural student radicals." }
+                ]
+              },
+              "questionSearchTerm": "Support for the Vietnam War"
+            },
+            {
+              "id": "kt4_2_a2",
+              "title": "The 'Silent Majority' & the 'Hard Hats' (1969–72)",
+              "dateTag": "Nov 1969–Nov 1972",
+              "lessonIndex": 13,
+              "recallPrompt": "How did President Nixon mobilise the 'Silent Majority' and blue-collar 'Hard Hats' to sustain his Vietnam policy?",
+              "facts": [
+                "On 3 November 1969, Nixon delivered his televised 'Silent Majority' address to over 70 million viewers, appealing to law-abiding taxpaying citizens over street demonstrators to back gradual Vietnamisation and 'peace with honor'.",
+                "Four days after Kent State on 8 May 1970, hundreds of pro-war construction workers in hard hats waving US flags violently attacked anti-war student protesters near Wall Street in New York City.",
+                "Backed by tens of thousands of supportive telegrams and union leaders visiting the White House, Nixon defeated anti-war Democrat George McGovern in November 1972 by winning forty-nine out of fifty states."
+              ],
+              "examLens": {
+                "lensType": "Paper 3 Modern Depth",
+                "points": [
+                  { "label": "Q2 Explain Why (12m)", "text": "Show how Nixon's November 1969 speech, phased draft reductions, and blue-collar resentment bought three more years of political time." },
+                  { "label": "Q3a Source Utility (8m)", "text": "Pair Nixon's Silent Majority broadcast with New York Times photographs of the 8 May 1970 Hard Hat Riot to illustrate class polarisation." },
+                  { "label": "Q3b–d Interpretations (24m)", "text": "Debate angle: Genuine majority mandate backing Nixon's war conduct versus desire for orderly exit combined with hostility toward radical protesters." }
+                ]
+              },
+              "questionSearchTerm": "Silent Majority Hard Hats"
+            }
+          ]
+        },
+        {
+          "id": "kt4_3",
+          "code": "4.3",
+          "title": "The Peace Process and End of the War",
+          "dateFence": "1972–1975",
+          "outsideFenceTrap": "Distinguish Jan 1973 US Peace Accords from April 1975 Fall of Saigon",
+          "linkedLessonIndices": [14, 15],
+          "anchors": [
+            {
+              "id": "kt4_3_a1",
+              "title": "Peace Negotiations & Significance of the Paris Peace Agreement (1972–Mar 1973)",
+              "dateTag": "1972–Mar 1973",
+              "lessonIndex": 14,
+              "recallPrompt": "How was the January 1973 Paris Peace Agreement (Paris Peace Accords) reached, and what were its main terms?",
+              "facts": [
+                "Secret Paris peace negotiations from 1969 between National Security Advisor Henry Kissinger and North Vietnam's Le Duc Tho produced an October 1972 draft allowing roughly 150,000 North Vietnamese soldiers to remain inside South Vietnam.",
+                "After Saigon President Nguyen Van Thieu balked and talks stalled, Nixon's eleven-day December 1972 Linebacker II bombing of Hanoi and Haiphong pushed both sides to sign the Paris Peace Agreement (Paris Peace Accords) on 27 January 1973.",
+                "The agreement enacted an immediate ceasefire in place, returned 591 American prisoners of war, and completed final US combat troop withdrawal on 29 March 1973 while leaving South Vietnam exposed after a 'decent interval'."
+              ],
+              "examLens": {
+                "lensType": "Paper 3 Modern Depth",
+                "points": [
+                  { "label": "Q2 Explain Why (12m)", "text": "Link Nixon's détente diplomacy with China and the USSR, Kissinger's NVA troop-retention concession, and December 1972 Linebacker II bombing." },
+                  { "label": "Q3a Source Utility (8m)", "text": "Compare the January 1973 treaty articles and Operation Homecoming POW photos with Thieu's fury at 150,000 NVA troops remaining in the South." },
+                  { "label": "Q3b–d Interpretations (24m)", "text": "Debate angle: Honourable negotiated peace later betrayed by Congressional aid cuts versus disguised face-saving retreat ('decent interval') dooming Saigon." }
+                ]
+              },
+              "questionSearchTerm": "Paris Peace Accords 1973"
+            },
+            {
+              "id": "kt4_3_a2",
+              "title": "War Powers Act, Fall of Saigon & Economic and Human Costs for the USA (1973–75)",
+              "dateTag": "Nov 1973–Apr 1975",
+              "lessonIndex": 14,
+              "recallPrompt": "How did the war finally end in April 1975, and what were its human, economic, and political costs for the United States?",
+              "facts": [
+                "Overriding Nixon's veto in November 1973, Congress passed the War Powers Act curbing presidential troop deployments without congressional approval and slashed military funding for South Vietnam.",
+                "Following Operation Frequent Wind's helicopter evacuation of over 7,000 Americans and allies, North Vietnamese Spring Offensive tanks captured Saigon's Independence Palace on 30 April 1975, reunifying Vietnam under communist rule.",
+                "Over 2.7 million Americans served at a cost of 58,220 US deaths, over 300,000 wounded, and $168 billion in direct war spending that fuelled inflation and starved Great Society reforms."
+              ],
+              "examLens": {
+                "lensType": "Paper 3 Modern Depth",
+                "points": [
+                  { "label": "Q2 Explain Why (12m)", "text": "Connect Congressional aid cuts and the 1973 War Powers Act, ARVN economic collapse, and General Van Tien Dung's 1975 offensive to Saigon's rapid fall." },
+                  { "label": "Q3a Source Utility (8m)", "text": "Assess 1975 Pentagon statistical tables (58,220 dead and $168 billion spent) alongside the 1973 War Powers Resolution to measure domestic trauma." },
+                  { "label": "Q3b–d Interpretations (24m)", "text": "Debate angle: Economic exhaustion and Congressional abandonment after Watergate versus inevitable communist victory once US combat forces left in 1973." }
+                ]
+              },
+              "questionSearchTerm": "Fall of Saigon costs of the Vietnam War"
+            }
+          ]
+        },
+        {
+          "id": "kt4_4",
+          "code": "4.4",
+          "title": "Reasons for the Failure of the USA in Vietnam",
+          "dateFence": "1954–1975",
+          "outsideFenceTrap": "Synoptic 4.4 essays weigh Communist strengths vs US military flaws vs US home front",
+          "linkedLessonIndices": [10, 12, 15],
+          "anchors": [
+            {
+              "id": "kt4_4_a1",
+              "title": "Strengths of North Vietnam & the Vietcong (1954–75)",
+              "dateTag": "1954–1975",
+              "lessonIndex": 15,
+              "recallPrompt": "How did communist ideological commitment, guerrilla strategy, and external supplies make North Vietnam and the Vietcong undefeated?",
+              "facts": [
+                "Motivated by Ho Chi Minh's vision of national independence and reunification after French rule, North Vietnamese and Vietcong fighters absorbed over one million military deaths without surrendering.",
+                "Asymmetric Vietcong guerrilla ambushes, Cu Chi tunnel systems, and close integration with Southern villagers neutralised American superiority in jet bombers, artillery, and helicopters.",
+                "Despite millions of tons of US bombs, tens of thousands of repair workers kept the 16,000-kilometre Ho Chi Minh Trail open to carry vital Russian (Soviet) and Chinese support—rifles, rockets, and trucks—south."
+              ],
+              "examLens": {
+                "lensType": "Paper 3 Modern Depth",
+                "points": [
+                  { "label": "Q2 Explain Why (12m)", "text": "Synthesize Vietnamese anti-colonial nationalism, Giap's Vietcong tactics, Ho Chi Minh Trail resilience, and Russian and Chinese support." },
+                  { "label": "Q3a Source Utility (8m)", "text": "Evaluate North Vietnamese trail photographs and General Van Tien Dung's memoirs for ideological morale while testing state propaganda tone." },
+                  { "label": "Q3b–d Interpretations (24m)", "text": "Debate angle: Vietnamese revolutionary nationalism and guerrilla resilience as primary cause of US defeat versus American strategic and political blunders." }
+                ]
+              },
+              "questionSearchTerm": "Strengths of North Vietnam Ho Chi Minh Trail"
+            },
+            {
+              "id": "kt4_4_a2",
+              "title": "US Military Weaknesses, Saigon Corruption & Impact of Domestic Opposition (1964–75)",
+              "dateTag": "1964–1975",
+              "lessonIndex": 15,
+              "recallPrompt": "How did flawed US military tactics, corrupt Saigon allies, and home-front opposition combine to cause American failure?",
+              "facts": [
+                "Conventional US tactics—Search and Destroy village burnings, body-count attrition, Agent Orange, and napalm—alienated rural Vietnamese peasants while twelve-month conscript tours bred inexperience, drug use, and fragging.",
+                "Unpopular, corrupt South Vietnamese governments from Ngo Dinh Diem to Nguyen Van Thieu failed to win rural peasant loyalty or sustain an independent ARVN fighting force.",
+                "Uncensored television coverage of Tet and My Lai, draft protests, Kent State outrage, $168 billion war costs, and Congressional restrictions destroyed domestic consensus and created the lasting 'Vietnam Syndrome'."
+              ],
+              "examLens": {
+                "lensType": "Paper 3 Modern Depth",
+                "points": [
+                  { "label": "Q2 Explain Why (12m)", "text": "Weigh failing US jungle tactics and conscript morale alongside Saigon regime illegitimacy and collapsing US domestic and congressional support." },
+                  { "label": "Q3a Source Utility (8m)", "text": "Compare frontline infantry photographs in Mekong swamps with War Powers restrictions to connect battlefield stalemate with home-front exhaustion." },
+                  { "label": "Q3b–d Interpretations (24m)", "text": "Debate angle: Military failure in the jungles of Vietnam (tactics and Saigon allies) versus political defeat on the American home front (media and protests)." }
+                ]
+              },
+              "questionSearchTerm": "Reasons for US failure in Vietnam"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

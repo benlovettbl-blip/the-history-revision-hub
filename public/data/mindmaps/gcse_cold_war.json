@@ -1,0 +1,2541 @@
+{
+  "unitId": "gcse_cold_war",
+  "schemaVersion": "v8-4ring-cards",
+  "optionCode": "1HI0/P4",
+  "paperType": "Paper 2P",
+  "paperLabel": "Paper 2 · Booklet P (Period Study)",
+  "courseTitle": "Superpower Relations & the Cold War, 1941–91",
+  "examDateBoundary": "1941–1991",
+  "disclaimer": "Aligned to Pearson Edexcel GCSE (9–1) History (1HI0). Independent educational resource — not endorsed by Pearson.",
+  "contextBoundaryNote": "Pre-1941 events (1917 Bolshevik Revolution, 1918 Western intervention, and 1939 Nazi–Soviet Pact) provide background context only; Edexcel Option P4 strictly examines 1941–91.",
+  "root": {
+    "id": "root",
+    "tier": 0,
+    "label": "Cold War, 1941–91",
+    "subLabel": "Edexcel Option P4",
+    "dateChip": "1941–91",
+    "gloss": "Fifty years of US–Soviet ideological rivalry, nuclear arms races, European and Caribbean crises, détente, and Soviet collapse from 1941 to 1991.",
+    "children": [
+      {
+        "id": "kt1",
+        "keyTopicNumber": 1,
+        "tier": 1,
+        "side": "left",
+        "color": "#2563eb",
+        "label": "KT1: Origins of the Cold War",
+        "dateChip": "1941–58",
+        "lessonIndex": 0,
+        "stageIndex": 0,
+        "searchTerm": "Grand Alliance",
+        "gloss": "Key topic 1: The origins of the Cold War, 1941–58 — Grand Alliance summits, ideological rivalry, US containment, the Berlin Blockade, NATO, the Warsaw Pact, and Hungary in 1956.",
+        "children": [
+          {
+            "id": "kt1_1",
+            "code": "1.1",
+            "tier": 2,
+            "label": "1.1 Early East–West Tension",
+            "dateChip": "1941–48",
+            "lessonIndex": 0,
+            "stageIndex": 0,
+            "searchTerm": "Grand Alliance",
+            "q2Chain": "Grand Alliance & ideology (1941–45) → Tehran, Yalta, Potsdam & US atomic bomb (1943–45) → Long & Novikov telegrams, Iron Curtain & Soviet satellite states (1946–48)",
+            "gloss": "Q2 Narrative Chain: Grand Alliance & ideology (1941–45) → Tehran, Yalta, Potsdam & US atomic bomb (1943–45) → Long & Novikov telegrams, Iron Curtain & Soviet satellite states (1946–48).",
+            "children": [
+              {
+                "id": "kt1_1_s1",
+                "tier": 3,
+                "label": "Grand Alliance & Ideology",
+                "dateChip": "1941–45",
+                "lessonIndex": 0,
+                "stageIndex": 0,
+                "searchTerm": "Grand Alliance",
+                "gloss": "The Grand Alliance united Britain, the USA, and the USSR despite deep ideological differences between the superpowers and conflicting attitudes of Stalin, Truman, and Churchill.",
+                "children": [
+                  {
+                    "id": "kt1_1_s1_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Capitalism vs Communist Rule",
+                    "detail": "Multi-party democracy and free markets clashed fundamentally with Stalin’s one-party command economy.",
+                    "lessonIndex": 0,
+                    "stageIndex": 0,
+                    "searchTerm": "capitalism",
+                    "gloss": "Multi-party democracy and free markets clashed fundamentally with Stalin’s one-party command economy."
+                  },
+                  {
+                    "id": "kt1_1_s1_e1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "June 1941 Wartime Coalition",
+                    "detail": "Hitler’s invasion of the USSR and Pearl Harbor forged a marriage of convenience backed by Lend-Lease aid.",
+                    "lessonIndex": 0,
+                    "stageIndex": 0,
+                    "searchTerm": "Grand Alliance",
+                    "gloss": "Hitler’s invasion of the USSR and Pearl Harbor forged a marriage of convenience backed by Lend-Lease aid."
+                  },
+                  {
+                    "id": "kt1_1_s1_q1",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "Delayed Second Front Mistrust",
+                    "detail": "Stalin suspected Churchill and Roosevelt postponed invading France until 1944 to bleed the Red Army.",
+                    "lessonIndex": 0,
+                    "stageIndex": 0,
+                    "searchTerm": "Second Front",
+                    "gloss": "Stalin suspected Churchill and Roosevelt postponed invading France until 1944 to bleed the Red Army."
+                  },
+                  {
+                    "id": "kt1_1_s1_q2",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "Clashing Post-War Security Aims",
+                    "detail": "Stalin demanded a loyal Eastern buffer, whereas Truman and Churchill championed free democratic elections.",
+                    "lessonIndex": 0,
+                    "stageIndex": 3,
+                    "searchTerm": "Truman",
+                    "gloss": "Stalin demanded a loyal Eastern buffer, whereas Truman and Churchill championed free democratic elections."
+                  },
+                  {
+                    "id": "kt1_1_s1_i1",
+                    "tier": 4,
+                    "tag": "Importance",
+                    "label": "Masked Rivalry Until Victory",
+                    "detail": "Defeating Nazi Germany hid rival worldviews only temporarily, so alliance unity unravelled rapidly in 1945.",
+                    "lessonIndex": 0,
+                    "stageIndex": 0,
+                    "searchTerm": "Grand Alliance",
+                    "gloss": "Defeating Nazi Germany hid rival worldviews only temporarily, so alliance unity unravelled rapidly in 1945.",
+                    "forTheme": "US-Soviet Ties"
+                  }
+                ]
+              },
+              {
+                "id": "kt1_1_s2",
+                "tier": 3,
+                "label": "Tehran, Yalta & Potsdam",
+                "dateChip": "1943–July 1945",
+                "lessonIndex": 0,
+                "stageIndex": 2,
+                "searchTerm": "Yalta Conference",
+                "gloss": "Outcomes of the Tehran, Yalta, and Potsdam conferences shifted from wartime Second Front agreements to open clashes over Germany, reparations, and Poland.",
+                "children": [
+                  {
+                    "id": "kt1_1_s2_e1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Tehran (1943): France & Poland",
+                    "detail": "Roosevelt backed a May 1944 Normandy landing over Churchill’s Balkan plan and ceded eastern Poland.",
+                    "lessonIndex": 0,
+                    "stageIndex": 1,
+                    "searchTerm": "Tehran Conference",
+                    "gloss": "Roosevelt backed a May 1944 Normandy landing over Churchill’s Balkan plan and ceded eastern Poland."
+                  },
+                  {
+                    "id": "kt1_1_s2_e2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Yalta (Feb 1945): Four Zones",
+                    "detail": "Allied leaders split Germany and Berlin into four zones, set $20bn reparations, and pledged free elections.",
+                    "lessonIndex": 0,
+                    "stageIndex": 2,
+                    "searchTerm": "Yalta Conference",
+                    "gloss": "Allied leaders split Germany and Berlin into four zones, set $20bn reparations, and pledged free elections."
+                  },
+                  {
+                    "id": "kt1_1_s2_q1",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "Potsdam Clash Over Lublin Poles",
+                    "detail": "Anti-communist Truman challenged Stalin in July 1945 for arresting Polish democrats and imposing Communist rule.",
+                    "lessonIndex": 0,
+                    "stageIndex": 3,
+                    "searchTerm": "Potsdam Conference",
+                    "gloss": "Anti-communist Truman challenged Stalin in July 1945 for arresting Polish democrats and imposing Communist rule."
+                  },
+                  {
+                    "id": "kt1_1_s2_q2",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "Divided Zone Reparations Deal",
+                    "detail": "With Attlee replacing Churchill, Potsdam let each power take reparations mainly from its own German zone.",
+                    "lessonIndex": 0,
+                    "stageIndex": 3,
+                    "searchTerm": "reparations",
+                    "gloss": "With Attlee replacing Churchill, Potsdam let each power take reparations mainly from its own German zone."
+                  },
+                  {
+                    "id": "kt1_1_s2_i1",
+                    "tier": 4,
+                    "tag": "Importance",
+                    "label": "Exposed Post-War Polish Split",
+                    "detail": "Losing a common Nazi enemy and Roosevelt’s diplomacy turned Big Three summits into open confrontation.",
+                    "lessonIndex": 0,
+                    "stageIndex": 3,
+                    "searchTerm": "Potsdam Conference",
+                    "gloss": "Losing a common Nazi enemy and Roosevelt’s diplomacy turned Big Three summits into open confrontation.",
+                    "forTheme": "US-Soviet Ties"
+                  }
+                ]
+              },
+              {
+                "id": "kt1_1_s3",
+                "tier": 3,
+                "label": "Atomic Bomb & 1946 Telegrams",
+                "dateChip": "1945–46",
+                "lessonIndex": 0,
+                "stageIndex": 4,
+                "searchTerm": "atomic bomb",
+                "gloss": "Development of the atomic bomb and the 1946 Long and Novikov telegrams poisoned US-Soviet relations by convincing both capitals the rival sought dominance.",
+                "children": [
+                  {
+                    "id": "kt1_1_s3_e1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Aug 1945 Hiroshima & Nagasaki",
+                    "detail": "After July’s Trinity test hardened Truman at Potsdam, US atomic bombings defeated Japan without Soviet help.",
+                    "lessonIndex": 0,
+                    "stageIndex": 4,
+                    "searchTerm": "Hiroshima",
+                    "gloss": "After July’s Trinity test hardened Truman at Potsdam, US atomic bombings defeated Japan without Soviet help."
+                  },
+                  {
+                    "id": "kt1_1_s3_e2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Kennan & Novikov 1946 Warnings",
+                    "detail": "Kennan’s Long Telegram urged firm containment, while Novikov warned Stalin that Washington sought world supremacy.",
+                    "lessonIndex": 1,
+                    "stageIndex": 0,
+                    "searchTerm": "Long Telegram",
+                    "gloss": "Kennan’s Long Telegram urged firm containment, while Novikov warned Stalin that Washington sought world supremacy."
+                  },
+                  {
+                    "id": "kt1_1_s3_q1",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "Soviet Crash Nuclear Programme",
+                    "detail": "Seeing US atomic monopoly as intimidation, Stalin ordered Beria’s physicists to test a Soviet bomb by 1949.",
+                    "lessonIndex": 0,
+                    "stageIndex": 4,
+                    "searchTerm": "Lavrentiy Beria",
+                    "gloss": "Seeing US atomic monopoly as intimidation, Stalin ordered Beria’s physicists to test a Soviet bomb by 1949."
+                  },
+                  {
+                    "id": "kt1_1_s3_q2",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "Washington Shifted to Containment",
+                    "detail": "Kennan’s dispatch ended hopes of post-war partnership and persuaded Truman’s cabinet to resist Soviet expansion.",
+                    "lessonIndex": 1,
+                    "stageIndex": 0,
+                    "searchTerm": "containment",
+                    "gloss": "Kennan’s dispatch ended hopes of post-war partnership and persuaded Truman’s cabinet to resist Soviet expansion."
+                  },
+                  {
+                    "id": "kt1_1_s3_i1",
+                    "tier": 4,
+                    "tag": "Importance",
+                    "label": "Locked Both Sides Into Mistrust",
+                    "detail": "Nuclear fear and mirror-image diplomatic warnings framed every rival move as calculated Cold War aggression.",
+                    "lessonIndex": 1,
+                    "stageIndex": 0,
+                    "searchTerm": "Nikolai Novikov",
+                    "gloss": "Nuclear fear and mirror-image diplomatic warnings framed every rival move as calculated Cold War aggression.",
+                    "forTheme": "US-Soviet Ties"
+                  }
+                ]
+              },
+              {
+                "id": "kt1_1_s4",
+                "tier": 3,
+                "label": "Iron Curtain & Satellite States",
+                "dateChip": "1945–48",
+                "lessonIndex": 1,
+                "stageIndex": 1,
+                "searchTerm": "satellite states",
+                "gloss": "Churchill’s Iron Curtain speech condemned the creation of Soviet satellite states in Eastern Europe as Stalin installed loyal one-party regimes.",
+                "children": [
+                  {
+                    "id": "kt1_1_s4_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Stalin’s Security Buffer Goal",
+                    "detail": "Invaded twice through Eastern Europe, Moscow used Red Army occupation to install obedient Communist neighbours.",
+                    "lessonIndex": 1,
+                    "stageIndex": 1,
+                    "searchTerm": "satellite states",
+                    "gloss": "Invaded twice through Eastern Europe, Moscow used Red Army occupation to install obedient Communist neighbours."
+                  },
+                  {
+                    "id": "kt1_1_s4_e1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Fulton Iron Curtain Speech (1946)",
+                    "detail": "Speaking beside Truman in Missouri, Churchill warned an Iron Curtain had descended from Stettin to Trieste.",
+                    "lessonIndex": 1,
+                    "stageIndex": 1,
+                    "searchTerm": "Iron Curtain",
+                    "gloss": "Speaking beside Truman in Missouri, Churchill warned an Iron Curtain had descended from Stettin to Trieste."
+                  },
+                  {
+                    "id": "kt1_1_s4_q1",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "Rigged Votes & Salami Tactics",
+                    "detail": "Secret police intimidation sliced away rivals across Poland, Hungary, Romania, and Bulgaria to build dictatorships.",
+                    "lessonIndex": 1,
+                    "stageIndex": 1,
+                    "searchTerm": "salami tactics",
+                    "gloss": "Secret police intimidation sliced away rivals across Poland, Hungary, Romania, and Bulgaria to build dictatorships."
+                  },
+                  {
+                    "id": "kt1_1_s4_q2",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "Feb 1948 Czechoslovak Coup",
+                    "detail": "Communists purged democrats in Prague, ending Eastern Europe’s last democracy and shocking US Congressmen.",
+                    "lessonIndex": 1,
+                    "stageIndex": 1,
+                    "searchTerm": "Czechoslovak coup",
+                    "gloss": "Communists purged democrats in Prague, ending Eastern Europe’s last democracy and shocking US Congressmen."
+                  },
+                  {
+                    "id": "kt1_1_s4_i1",
+                    "tier": 4,
+                    "tag": "Importance",
+                    "label": "Cemented Europe’s Bloc Division",
+                    "detail": "Breaking Yalta’s free-election pledge convinced Washington that Moscow was building an empire rather than defence.",
+                    "lessonIndex": 1,
+                    "stageIndex": 1,
+                    "searchTerm": "satellite states",
+                    "gloss": "Breaking Yalta’s free-election pledge convinced Washington that Moscow was building an empire rather than defence.",
+                    "forTheme": "East-West Split"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt1_2",
+            "code": "1.2",
+            "tier": 2,
+            "label": "1.2 Development of the Cold War",
+            "dateChip": "1947–49",
+            "lessonIndex": 1,
+            "stageIndex": 2,
+            "searchTerm": "Truman Doctrine",
+            "q2Chain": "1947 Truman Doctrine & Marshall Plan containment → Cominform (1947), Comecon (1949) & 1948 Berlin Blockade → Allied Airlift victory, FRG/GDR split & 1949 NATO",
+            "gloss": "Q2 Narrative Chain: 1947 Truman Doctrine & Marshall Plan containment → Cominform (1947), Comecon (1949) & 1948 Berlin Blockade → Allied Airlift victory, FRG/GDR split & 1949 NATO.",
+            "children": [
+              {
+                "id": "kt1_2_s1",
+                "tier": 3,
+                "label": "Truman Doctrine & Marshall Plan",
+                "dateChip": "Mar–June 1947",
+                "lessonIndex": 1,
+                "stageIndex": 2,
+                "searchTerm": "Truman Doctrine",
+                "gloss": "The 1947 Truman Doctrine and Marshall Plan reshaped US-Soviet relations by ending US isolationism and funding European recovery against communism.",
+                "children": [
+                  {
+                    "id": "kt1_2_s1_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Britain Halted Greek Aid (1947)",
+                    "detail": "Bankrupt London ended support for royalists in Greece, prompting Truman to send $400m to Greece and Turkey.",
+                    "lessonIndex": 1,
+                    "stageIndex": 2,
+                    "searchTerm": "Greece",
+                    "gloss": "Bankrupt London ended support for royalists in Greece, prompting Truman to send $400m to Greece and Turkey."
+                  },
+                  {
+                    "id": "kt1_2_s1_e1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "$13bn Marshall Recovery Programme",
+                    "detail": "Secretary George Marshall offered food, fuel, and machinery to sixteen Western European states to curb poverty.",
+                    "lessonIndex": 1,
+                    "stageIndex": 3,
+                    "searchTerm": "Marshall Plan",
+                    "gloss": "Secretary George Marshall offered food, fuel, and machinery to sixteen Western European states to curb poverty."
+                  },
+                  {
+                    "id": "kt1_2_s1_q1",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "US Isolationism Ended Permanently",
+                    "detail": "America pledged money and military backing worldwide to contain communism inside its existing borders.",
+                    "lessonIndex": 1,
+                    "stageIndex": 2,
+                    "searchTerm": "isolationism",
+                    "gloss": "America pledged money and military backing worldwide to contain communism inside its existing borders."
+                  },
+                  {
+                    "id": "kt1_2_s1_q2",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "Stalin Denounced Dollar Imperialism",
+                    "detail": "Viewing US trade rules as economic warfare, Moscow barred Poland and Czechoslovakia from taking Marshall grants.",
+                    "lessonIndex": 1,
+                    "stageIndex": 3,
+                    "searchTerm": "dollar imperialism",
+                    "gloss": "Viewing US trade rules as economic warfare, Moscow barred Poland and Czechoslovakia from taking Marshall grants."
+                  },
+                  {
+                    "id": "kt1_2_s1_i1",
+                    "tier": 4,
+                    "tag": "Importance",
+                    "label": "Split Europe Into Economic Camps",
+                    "detail": "Prosperous Marshall-backed Western democracies pulled ahead while Stalin tightened economic control in the East.",
+                    "lessonIndex": 1,
+                    "stageIndex": 3,
+                    "searchTerm": "Marshall Plan",
+                    "gloss": "Prosperous Marshall-backed Western democracies pulled ahead while Stalin tightened economic control in the East.",
+                    "forTheme": "Containment"
+                  }
+                ]
+              },
+              {
+                "id": "kt1_2_s2",
+                "tier": 3,
+                "label": "Cominform (1947) & Comecon",
+                "dateChip": "1947–49",
+                "lessonIndex": 1,
+                "stageIndex": 4,
+                "searchTerm": "Cominform",
+                "gloss": "Stalin created Cominform in 1947 and Comecon in 1949 to enforce ideological conformity and integrate Eastern Bloc economies around Soviet needs.",
+                "children": [
+                  {
+                    "id": "kt1_2_s2_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Countering US Marshall Lure",
+                    "detail": "Stalin needed formal ideological and trade bodies so Eastern satellites could not drift toward American credit.",
+                    "lessonIndex": 1,
+                    "stageIndex": 4,
+                    "searchTerm": "Cominform",
+                    "gloss": "Stalin needed formal ideological and trade bodies so Eastern satellites could not drift toward American credit."
+                  },
+                  {
+                    "id": "kt1_2_s2_e1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Cominform (1947) & Comecon (1949)",
+                    "detail": "Cominform directed Communist parties from Moscow, while Comecon coordinated state-planned trade across the bloc.",
+                    "lessonIndex": 1,
+                    "stageIndex": 4,
+                    "searchTerm": "Comecon",
+                    "gloss": "Cominform directed Communist parties from Moscow, while Comecon coordinated state-planned trade across the bloc."
+                  },
+                  {
+                    "id": "kt1_2_s2_q1",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "Tito’s Yugoslavia Expelled (1948)",
+                    "detail": "Refusing Kremlin orders cost Marshal Tito Cominform membership as Stalin purged independent-minded Communists.",
+                    "lessonIndex": 1,
+                    "stageIndex": 4,
+                    "searchTerm": "Tito",
+                    "gloss": "Refusing Kremlin orders cost Marshal Tito Cominform membership as Stalin purged independent-minded Communists."
+                  },
+                  {
+                    "id": "kt1_2_s2_q2",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "Satellites Tied to Soviet Quotas",
+                    "detail": "Eastern states lost Western markets and supplied cheap raw materials and heavy goods for Soviet industry.",
+                    "lessonIndex": 1,
+                    "stageIndex": 4,
+                    "searchTerm": "Comecon",
+                    "gloss": "Eastern states lost Western markets and supplied cheap raw materials and heavy goods for Soviet industry."
+                  },
+                  {
+                    "id": "kt1_2_s2_i1",
+                    "tier": 4,
+                    "tag": "Importance",
+                    "label": "Institutionalised Stalin’s Bloc",
+                    "detail": "Binding party loyalty and state trade under Kremlin control turned occupied neighbours into a sealed Soviet bloc.",
+                    "lessonIndex": 1,
+                    "stageIndex": 4,
+                    "searchTerm": "Cominform",
+                    "gloss": "Binding party loyalty and state trade under Kremlin control turned occupied neighbours into a sealed Soviet bloc.",
+                    "forTheme": "Soviet Control"
+                  }
+                ]
+              },
+              {
+                "id": "kt1_2_s3",
+                "tier": 3,
+                "label": "Berlin Zones, Blockade & Airlift",
+                "dateChip": "1948–49",
+                "lessonIndex": 2,
+                "stageIndex": 1,
+                "searchTerm": "Berlin Airlift",
+                "gloss": "Berlin’s division into zones triggered the Berlin Crisis of 1948–49, when Stalin’s land blockade failed against the Allied airlift.",
+                "children": [
+                  {
+                    "id": "kt1_2_s3_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Trizonia & New Deutschmark (1948)",
+                    "detail": "Merging Western zones and introducing a strong currency alarmed Stalin over a revived capitalist West Germany.",
+                    "lessonIndex": 2,
+                    "stageIndex": 0,
+                    "searchTerm": "Trizonia",
+                    "gloss": "Merging Western zones and introducing a strong currency alarmed Stalin over a revived capitalist West Germany."
+                  },
+                  {
+                    "id": "kt1_2_s3_e1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "June 1948 Blockade & Airlift",
+                    "detail": "Stalin cut all road, rail, and canal links, so US and British planes flew 275,000 supply missions.",
+                    "lessonIndex": 2,
+                    "stageIndex": 1,
+                    "searchTerm": "Berlin Airlift",
+                    "gloss": "Stalin cut all road, rail, and canal links, so US and British planes flew 275,000 supply missions."
+                  },
+                  {
+                    "id": "kt1_2_s3_q1",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "Stalin Reopened Access (May 1949)",
+                    "detail": "Unwilling to shoot down Allied cargo aircraft and risk nuclear war, Moscow lifted the blockade in defeat.",
+                    "lessonIndex": 2,
+                    "stageIndex": 1,
+                    "searchTerm": "12 May 1949",
+                    "gloss": "Unwilling to shoot down Allied cargo aircraft and risk nuclear war, Moscow lifted the blockade in defeat."
+                  },
+                  {
+                    "id": "kt1_2_s3_q2",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "Western Prestige Boosted Globally",
+                    "detail": "Supplying 2.1 million West Berliners peacefully portrayed Truman as a defender of freedom against Soviet coercion.",
+                    "lessonIndex": 2,
+                    "stageIndex": 1,
+                    "searchTerm": "Operation Vittles",
+                    "gloss": "Supplying 2.1 million West Berliners peacefully portrayed Truman as a defender of freedom against Soviet coercion."
+                  },
+                  {
+                    "id": "kt1_2_s3_i1",
+                    "tier": 4,
+                    "tag": "Importance",
+                    "label": "Proved Containment Worked Safely",
+                    "detail": "Defeating Soviet pressure without firing a shot hardened permanent German division and sped up Western defence.",
+                    "lessonIndex": 2,
+                    "stageIndex": 1,
+                    "searchTerm": "Berlin Airlift",
+                    "gloss": "Defeating Soviet pressure without firing a shot hardened permanent German division and sped up Western defence.",
+                    "forTheme": "East-West Split"
+                  }
+                ]
+              },
+              {
+                "id": "kt1_2_s4",
+                "tier": 3,
+                "label": "FRG, GDR & Formation of NATO",
+                "dateChip": "Apr–Oct 1949",
+                "lessonIndex": 2,
+                "stageIndex": 2,
+                "searchTerm": "Federal Republic of Germany",
+                "gloss": "The Berlin Crisis prompted the 1949 formation of the Federal Republic of Germany, the German Democratic Republic, and the NATO alliance.",
+                "children": [
+                  {
+                    "id": "kt1_2_s4_e1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Two Rival German States (1949)",
+                    "detail": "Trizonia formed the democratic FRG in May 1949 before Stalin proclaimed the Communist GDR in October.",
+                    "lessonIndex": 2,
+                    "stageIndex": 2,
+                    "searchTerm": "Federal Republic of Germany",
+                    "gloss": "Trizonia formed the democratic FRG in May 1949 before Stalin proclaimed the Communist GDR in October."
+                  },
+                  {
+                    "id": "kt1_2_s4_e2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Twelve Nations Signed NATO (1949)",
+                    "detail": "Under Article 5, the USA, Britain, and ten allies treated an armed attack on one as an attack on all.",
+                    "lessonIndex": 2,
+                    "stageIndex": 3,
+                    "searchTerm": "NATO",
+                    "gloss": "Under Article 5, the USA, Britain, and ten allies treated an armed attack on one as an attack on all."
+                  },
+                  {
+                    "id": "kt1_2_s4_q1",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "Permanent US Troops in Europe",
+                    "detail": "NATO became America’s first peacetime military alliance, stationing US garrisons and bombers across Western Europe.",
+                    "lessonIndex": 2,
+                    "stageIndex": 3,
+                    "searchTerm": "Article 5",
+                    "gloss": "NATO became America’s first peacetime military alliance, stationing US garrisons and bombers across Western Europe."
+                  },
+                  {
+                    "id": "kt1_2_s4_q2",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "German Reunification Hopes Ended",
+                    "detail": "Adenauer’s Bonn republic and Ulbricht’s East German regime locked Cold War fault lines across central Europe.",
+                    "lessonIndex": 2,
+                    "stageIndex": 2,
+                    "searchTerm": "German Democratic Republic",
+                    "gloss": "Adenauer’s Bonn republic and Ulbricht’s East German regime locked Cold War fault lines across central Europe."
+                  },
+                  {
+                    "id": "kt1_2_s4_i1",
+                    "tier": 4,
+                    "tag": "Importance",
+                    "label": "Militarised Political Containment",
+                    "detail": "Turning economic aid into a nuclear-backed defence pact prompted Moscow to seek its own formal alliance.",
+                    "lessonIndex": 2,
+                    "stageIndex": 3,
+                    "searchTerm": "NATO",
+                    "gloss": "Turning economic aid into a nuclear-backed defence pact prompted Moscow to seek its own formal alliance.",
+                    "forTheme": "Military Blocs"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt1_3",
+            "code": "1.3",
+            "tier": 2,
+            "label": "1.3 The Cold War Intensifies",
+            "dateChip": "1949–58",
+            "lessonIndex": 3,
+            "stageIndex": 1,
+            "searchTerm": "Imre Nagy",
+            "q2Chain": "Superpower nuclear arms race & May 1955 Warsaw Pact → Khrushchev’s Secret Speech & October 1956 Hungarian Uprising → Soviet tank invasion, Kádár’s purges & muted Western response",
+            "gloss": "Q2 Narrative Chain: Superpower nuclear arms race & May 1955 Warsaw Pact → Khrushchev’s Secret Speech & October 1956 Hungarian Uprising → Soviet tank invasion, Kádár’s purges & muted Western response.",
+            "children": [
+              {
+                "id": "kt1_3_s1",
+                "tier": 3,
+                "label": "Arms Race & Warsaw Pact (1955)",
+                "dateChip": "1949–55",
+                "lessonIndex": 2,
+                "stageIndex": 4,
+                "searchTerm": "Warsaw Pact",
+                "gloss": "The superpower arms race escalated from atomic to hydrogen bombs, while West Germany joining NATO triggered the formation of the Warsaw Pact.",
+                "children": [
+                  {
+                    "id": "kt1_3_s1_e1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "H-Bombs (1952–53) & 1957 ICBMs",
+                    "detail": "After the 1949 Soviet A-bomb, both sides built thermonuclear warheads a thousand times stronger than Hiroshima.",
+                    "lessonIndex": 2,
+                    "stageIndex": 4,
+                    "searchTerm": "hydrogen bomb",
+                    "gloss": "After the 1949 Soviet A-bomb, both sides built thermonuclear warheads a thousand times stronger than Hiroshima."
+                  },
+                  {
+                    "id": "kt1_3_s1_e2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "May 1955 Warsaw Pact Created",
+                    "detail": "When rearmed West Germany entered NATO, Khrushchev bound seven Eastern satellites under unified Soviet command.",
+                    "lessonIndex": 2,
+                    "stageIndex": 4,
+                    "searchTerm": "Warsaw Pact",
+                    "gloss": "When rearmed West Germany entered NATO, Khrushchev bound seven Eastern satellites under unified Soviet command."
+                  },
+                  {
+                    "id": "kt1_3_s1_q1",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "Europe Faced Two Armed Camps",
+                    "detail": "Rival NATO and Warsaw Pact commands entrenched Red Army garrisons legally across Eastern satellite states.",
+                    "lessonIndex": 2,
+                    "stageIndex": 4,
+                    "searchTerm": "Warsaw Pact",
+                    "gloss": "Rival NATO and Warsaw Pact commands entrenched Red Army garrisons legally across Eastern satellite states."
+                  },
+                  {
+                    "id": "kt1_3_s1_q2",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "Nuclear Deterrence Curbed Direct War",
+                    "detail": "Fear of nuclear destruction made direct superpower war suicidal, deterring US force in Eastern Europe.",
+                    "lessonIndex": 2,
+                    "stageIndex": 4,
+                    "searchTerm": "ICBMs",
+                    "gloss": "Fear of nuclear destruction made direct superpower war suicidal, deterring US force in Eastern Europe."
+                  },
+                  {
+                    "id": "kt1_3_s1_i1",
+                    "tier": 4,
+                    "tag": "Importance",
+                    "label": "Raised Cost & Terror of Rivalry",
+                    "detail": "Huge missile budgets strained the Soviet economy while keeping Red Army tanks poised to police satellites.",
+                    "lessonIndex": 2,
+                    "stageIndex": 4,
+                    "searchTerm": "hydrogen bomb",
+                    "gloss": "Huge missile budgets strained the Soviet economy while keeping Red Army tanks poised to police satellites.",
+                    "forTheme": "Arms Race"
+                  }
+                ]
+              },
+              {
+                "id": "kt1_3_s2",
+                "tier": 3,
+                "label": "Hungarian Uprising & Nagy (1956)",
+                "dateChip": "Feb–Nov 1956",
+                "lessonIndex": 3,
+                "stageIndex": 1,
+                "searchTerm": "Imre Nagy",
+                "gloss": "Events in 1956 leading to the Hungarian Uprising saw Rákosi’s terror and Khrushchev’s Secret Speech spark protests and Imre Nagy’s radical reforms.",
+                "children": [
+                  {
+                    "id": "kt1_3_s2_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Rákosi’s ÁVH Terror & Speech",
+                    "detail": "Stalinist police terror and Khrushchev’s February 1956 de-Stalinisation speech sparked Budapest protests.",
+                    "lessonIndex": 3,
+                    "stageIndex": 0,
+                    "searchTerm": "Secret Speech",
+                    "gloss": "Stalinist police terror and Khrushchev’s February 1956 de-Stalinisation speech sparked Budapest protests."
+                  },
+                  {
+                    "id": "kt1_3_s2_e1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Oct 1956 Riots & Nagy Appointed",
+                    "detail": "Students toppled Stalin’s statue on 23 October, forcing Moscow to name reformist Imre Nagy Prime Minister.",
+                    "lessonIndex": 3,
+                    "stageIndex": 1,
+                    "searchTerm": "Imre Nagy",
+                    "gloss": "Students toppled Stalin’s statue on 23 October, forcing Moscow to name reformist Imre Nagy Prime Minister."
+                  },
+                  {
+                    "id": "kt1_3_s2_q1",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "One-Party Rule & ÁVH Abolished",
+                    "detail": "Nagy freed political prisoners, ended censorship, and invited non-communist parties into a coalition cabinet.",
+                    "lessonIndex": 3,
+                    "stageIndex": 1,
+                    "searchTerm": "free elections",
+                    "gloss": "Nagy freed political prisoners, ended censorship, and invited non-communist parties into a coalition cabinet."
+                  },
+                  {
+                    "id": "kt1_3_s2_q2",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "1 Nov Pledge to Quit Warsaw Pact",
+                    "detail": "Nagy declared Hungarian neutrality and appealed to the UN, crossing Moscow’s ultimate security red line.",
+                    "lessonIndex": 3,
+                    "stageIndex": 1,
+                    "searchTerm": "1 November 1956",
+                    "gloss": "Nagy declared Hungarian neutrality and appealed to the UN, crossing Moscow’s ultimate security red line."
+                  },
+                  {
+                    "id": "kt1_3_s2_i1",
+                    "tier": 4,
+                    "tag": "Importance",
+                    "label": "Tested Limits of De-Stalinisation",
+                    "detail": "Leaving the military alliance threatened a dangerous gap in the Soviet buffer and forced Kremlin action.",
+                    "lessonIndex": 3,
+                    "stageIndex": 1,
+                    "searchTerm": "Warsaw Pact",
+                    "gloss": "Leaving the military alliance threatened a dangerous gap in the Soviet buffer and forced Kremlin action.",
+                    "forTheme": "Soviet Control"
+                  }
+                ]
+              },
+              {
+                "id": "kt1_3_s3",
+                "tier": 3,
+                "label": "Khrushchev’s Invasion of Hungary",
+                "dateChip": "Nov 1956–58",
+                "lessonIndex": 3,
+                "stageIndex": 2,
+                "searchTerm": "Operation Whirlwind",
+                "gloss": "Khrushchev’s response sent 1,000 Soviet tanks into Budapest on 4 November 1956, crushing resistance, installing Kádár, and executing Nagy.",
+                "children": [
+                  {
+                    "id": "kt1_3_s3_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Fear of Satellite Domino Collapse",
+                    "detail": "Khrushchev feared tolerating Hungarian neutrality would spark copycat revolts in Poland and East Germany.",
+                    "lessonIndex": 3,
+                    "stageIndex": 2,
+                    "searchTerm": "Operation Whirlwind",
+                    "gloss": "Khrushchev feared tolerating Hungarian neutrality would spark copycat revolts in Poland and East Germany."
+                  },
+                  {
+                    "id": "kt1_3_s3_e1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "4 Nov 1956: 1,000 Soviet Tanks",
+                    "detail": "Red Army armour stormed Budapest against armed citizens, crushing two weeks of fierce street resistance.",
+                    "lessonIndex": 3,
+                    "stageIndex": 2,
+                    "searchTerm": "1,000 Soviet tanks",
+                    "gloss": "Red Army armour stormed Budapest against armed citizens, crushing two weeks of fierce street resistance."
+                  },
+                  {
+                    "id": "kt1_3_s3_q1",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "2,500 Killed & 200,000 Refugees",
+                    "detail": "Heavy fighting devastated Budapest and drove 200,000 Hungarians across the Austrian border into Western exile.",
+                    "lessonIndex": 3,
+                    "stageIndex": 2,
+                    "searchTerm": "200,000",
+                    "gloss": "Heavy fighting devastated Budapest and drove 200,000 Hungarians across the Austrian border into Western exile."
+                  },
+                  {
+                    "id": "kt1_3_s3_q2",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "Kádár Purges & Nagy Executed (1958)",
+                    "detail": "Pro-Soviet János Kádár jailed 35,000 opponents, and Nagy was hanged in June 1958 as a bloc warning.",
+                    "lessonIndex": 3,
+                    "stageIndex": 3,
+                    "searchTerm": "János Kádár",
+                    "gloss": "Pro-Soviet János Kádár jailed 35,000 opponents, and Nagy was hanged in June 1958 as a bloc warning."
+                  },
+                  {
+                    "id": "kt1_3_s3_i1",
+                    "tier": 4,
+                    "tag": "Importance",
+                    "label": "Reasserted Iron Warsaw Pact Grip",
+                    "detail": "Brutal force proved peaceful coexistence never permitted Eastern satellites to leave Communist rule.",
+                    "lessonIndex": 3,
+                    "stageIndex": 3,
+                    "searchTerm": "June 1958",
+                    "gloss": "Brutal force proved peaceful coexistence never permitted Eastern satellites to leave Communist rule.",
+                    "forTheme": "Soviet Control"
+                  }
+                ]
+              },
+              {
+                "id": "kt1_3_s4",
+                "tier": 3,
+                "label": "Hungary: International Reaction",
+                "dateChip": "Nov 1956",
+                "lessonIndex": 3,
+                "stageIndex": 4,
+                "searchTerm": "Suez Crisis",
+                "gloss": "International reaction to the Soviet invasion of Hungary brought outrage, aid, and boycotts, but nuclear risks and Suez prevented military help.",
+                "children": [
+                  {
+                    "id": "kt1_3_s4_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Nuclear Deterrence & Suez Split",
+                    "detail": "Eisenhower refused to risk H-bomb war over Hungary while Anglo-French intervention in Egypt divided NATO.",
+                    "lessonIndex": 3,
+                    "stageIndex": 4,
+                    "searchTerm": "Suez Crisis",
+                    "gloss": "Eisenhower refused to risk H-bomb war over Hungary while Anglo-French intervention in Egypt divided NATO."
+                  },
+                  {
+                    "id": "kt1_3_s4_q1",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "UN Outrage & $20m Refugee Relief",
+                    "detail": "Washington funded humanitarian aid and resettled tens of thousands of refugees after Radio Free Europe hopes faded.",
+                    "lessonIndex": 3,
+                    "stageIndex": 4,
+                    "searchTerm": "Radio Free Europe",
+                    "gloss": "Washington funded humanitarian aid and resettled tens of thousands of refugees after Radio Free Europe hopes faded."
+                  },
+                  {
+                    "id": "kt1_3_s4_q2",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "Melbourne Boycotts & Party Splits",
+                    "detail": "Spain, Switzerland, and the Netherlands boycotted the 1956 Olympics as outraged Western Communists quit.",
+                    "lessonIndex": 3,
+                    "stageIndex": 4,
+                    "searchTerm": "Melbourne Olympics",
+                    "gloss": "Spain, Switzerland, and the Netherlands boycotted the 1956 Olympics as outraged Western Communists quit."
+                  },
+                  {
+                    "id": "kt1_3_s4_i1",
+                    "tier": 4,
+                    "tag": "Importance",
+                    "label": "Confirmed Unspoken Spheres of Rule",
+                    "detail": "Western military inaction emboldened Khrushchev that America would not fight inside the Soviet sphere.",
+                    "lessonIndex": 3,
+                    "stageIndex": 4,
+                    "searchTerm": "Eisenhower",
+                    "gloss": "Western military inaction emboldened Khrushchev that America would not fight inside the Soviet sphere.",
+                    "forTheme": "US-Soviet Ties"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "kt2",
+        "keyTopicNumber": 2,
+        "tier": 1,
+        "side": "right",
+        "color": "#7c3aed",
+        "label": "KT2: Cold War Crises",
+        "dateChip": "1958–70",
+        "lessonIndex": 4,
+        "stageIndex": 3,
+        "searchTerm": "Berlin Wall",
+        "gloss": "Key topic 2: Cold War crises, 1958–70 — rising tension, flashpoint crises, and superpower reactions across Berlin (1958–63), Cuba (1959–68), and Czechoslovakia (1968–70).",
+        "children": [
+          {
+            "id": "kt2_1",
+            "code": "2.1",
+            "tier": 2,
+            "label": "2.1 Increased East–West Tension",
+            "dateChip": "1958–68",
+            "lessonIndex": 4,
+            "stageIndex": 0,
+            "searchTerm": "Berlin Ultimatum",
+            "q2Chain": "Berlin refugee drain, 1958 ultimatum & failed 1959–61 summits → 1959 Cuban Revolution, US embargo & 1961 Bay of Pigs → 1968 Czech opposition & Prague Spring",
+            "gloss": "Q2 Narrative Chain: Berlin refugee drain, 1958 ultimatum & failed 1959–61 summits → 1959 Cuban Revolution, US embargo & 1961 Bay of Pigs → 1968 Czech opposition & Prague Spring.",
+            "children": [
+              {
+                "id": "kt2_1_s1",
+                "tier": 3,
+                "label": "Berlin Refugees & 1958 Ultimatum",
+                "dateChip": "1949–58",
+                "lessonIndex": 4,
+                "stageIndex": 0,
+                "searchTerm": "Berlin Ultimatum",
+                "gloss": "The acute refugee problem in Berlin prompted Khrushchev’s November 1958 Berlin ultimatum demanding Western troops leave within six months.",
+                "children": [
+                  {
+                    "id": "kt2_1_s1_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "2.7m East German Brain Drain",
+                    "detail": "Skilled doctors, engineers, and teachers fled Stasi rule through open Berlin into prosperous West Germany.",
+                    "lessonIndex": 4,
+                    "stageIndex": 0,
+                    "searchTerm": "brain drain",
+                    "gloss": "Skilled doctors, engineers, and teachers fled Stasi rule through open Berlin into prosperous West Germany."
+                  },
+                  {
+                    "id": "kt2_1_s1_e1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Nov 1958 Six-Month Ultimatum",
+                    "detail": "Khrushchev demanded Allied garrisons quit West Berlin and turn it into a demilitarised free city.",
+                    "lessonIndex": 4,
+                    "stageIndex": 0,
+                    "searchTerm": "27 November 1958",
+                    "gloss": "Khrushchev demanded Allied garrisons quit West Berlin and turn it into a demilitarised free city."
+                  },
+                  {
+                    "id": "kt2_1_s1_q1",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "NATO Refused to Abandon City",
+                    "detail": "Giving up West Berlin would have wrecked US containment credibility across Western Europe, forcing talks.",
+                    "lessonIndex": 4,
+                    "stageIndex": 0,
+                    "searchTerm": "West Berlin",
+                    "gloss": "Giving up West Berlin would have wrecked US containment credibility across Western Europe, forcing talks."
+                  },
+                  {
+                    "id": "kt2_1_s1_q2",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "East German Economy Near Ruin",
+                    "detail": "Continued youth flight threatened Ulbricht’s Communist showcase and pressured Moscow for a border fix.",
+                    "lessonIndex": 4,
+                    "stageIndex": 0,
+                    "searchTerm": "Walter Ulbricht",
+                    "gloss": "Continued youth flight threatened Ulbricht’s Communist showcase and pressured Moscow for a border fix."
+                  },
+                  {
+                    "id": "kt2_1_s1_i1",
+                    "tier": 4,
+                    "tag": "Importance",
+                    "label": "Reignited Flashpoint Over Germany",
+                    "detail": "Threatening East German control over Allied access routes pushed both superpowers into tense summit talks.",
+                    "lessonIndex": 4,
+                    "stageIndex": 0,
+                    "searchTerm": "Berlin Ultimatum",
+                    "gloss": "Threatening East German control over Allied access routes pushed both superpowers into tense summit talks.",
+                    "forTheme": "Summit Talks"
+                  }
+                ]
+              },
+              {
+                "id": "kt2_1_s2",
+                "tier": 3,
+                "label": "Summit Meetings of 1959–61",
+                "dateChip": "1959–June 1961",
+                "lessonIndex": 4,
+                "stageIndex": 1,
+                "searchTerm": "Paris Summit",
+                "gloss": "The summit meetings of 1959–61 briefly eased tension at Camp David before the 1960 U-2 crisis and 1961 Vienna clash restored deadlock.",
+                "children": [
+                  {
+                    "id": "kt2_1_s2_e1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Geneva & Camp David Thaw (1959)",
+                    "detail": "Eisenhower hosted Khrushchev in September 1959, persuading Moscow to suspend its six-month Berlin deadline.",
+                    "lessonIndex": 4,
+                    "stageIndex": 1,
+                    "searchTerm": "Camp David",
+                    "gloss": "Eisenhower hosted Khrushchev in September 1959, persuading Moscow to suspend its six-month Berlin deadline."
+                  },
+                  {
+                    "id": "kt2_1_s2_e2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "May 1960 U-2 Wrecked Paris Talks",
+                    "detail": "After Soviet missiles downed pilot Gary Powers and Eisenhower refused to apologise, Khrushchev walked out.",
+                    "lessonIndex": 4,
+                    "stageIndex": 1,
+                    "searchTerm": "U-2",
+                    "gloss": "After Soviet missiles downed pilot Gary Powers and Eisenhower refused to apologise, Khrushchev walked out."
+                  },
+                  {
+                    "id": "kt2_1_s2_q1",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "Vienna Ultimatum Renewed (1961)",
+                    "detail": "Judging Kennedy weak after the Bay of Pigs, Khrushchev reissued his six-month Berlin threat in June 1961.",
+                    "lessonIndex": 4,
+                    "stageIndex": 2,
+                    "searchTerm": "Vienna Summit",
+                    "gloss": "Judging Kennedy weak after the Bay of Pigs, Khrushchev reissued his six-month Berlin threat in June 1961."
+                  },
+                  {
+                    "id": "kt2_1_s2_q2",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "Kennedy Hiked US Defence $3.2bn",
+                    "detail": "Refusing to yield Allied rights, Kennedy mobilised reservists while panicked Berlin departures surged.",
+                    "lessonIndex": 4,
+                    "stageIndex": 2,
+                    "searchTerm": "$3.2 billion",
+                    "gloss": "Refusing to yield Allied rights, Kennedy mobilised reservists while panicked Berlin departures surged."
+                  },
+                  {
+                    "id": "kt2_1_s2_i1",
+                    "tier": 4,
+                    "tag": "Importance",
+                    "label": "Closed Diplomatic Path on Berlin",
+                    "detail": "Two years of failed summits left building a physical barrier as Moscow’s only alternative to nuclear war.",
+                    "lessonIndex": 4,
+                    "stageIndex": 2,
+                    "searchTerm": "Vienna Summit",
+                    "gloss": "Two years of failed summits left building a physical barrier as Moscow’s only alternative to nuclear war.",
+                    "forTheme": "Berlin Crisis"
+                  }
+                ]
+              },
+              {
+                "id": "kt2_1_s3",
+                "tier": 3,
+                "label": "Cuban Revolution & Bay of Pigs",
+                "dateChip": "1959–61",
+                "lessonIndex": 5,
+                "stageIndex": 1,
+                "searchTerm": "Bay of Pigs",
+                "gloss": "Impact of the Cuban Revolution: refusal of the USA to recognise Castro’s government and the Bay of Pigs incident forged closer relations with the Soviet Union.",
+                "children": [
+                  {
+                    "id": "kt2_1_s3_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Castro Toppled Batista (Jan 1959)",
+                    "detail": "Nationalising American land and oil refineries ninety miles off Florida ended US economic dominance in Cuba.",
+                    "lessonIndex": 5,
+                    "stageIndex": 0,
+                    "searchTerm": "Fidel Castro",
+                    "gloss": "Nationalising American land and oil refineries ninety miles off Florida ended US economic dominance in Cuba."
+                  },
+                  {
+                    "id": "kt2_1_s3_e1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "US Embargo & Apr 1961 Bay of Pigs",
+                    "detail": "After Washington cut Cuban sugar and ties, 1,400 CIA-backed Brigade 2506 exiles were crushed in 72 hours.",
+                    "lessonIndex": 5,
+                    "stageIndex": 1,
+                    "searchTerm": "Bay of Pigs",
+                    "gloss": "After Washington cut Cuban sugar and ties, 1,400 CIA-backed Brigade 2506 exiles were crushed in 72 hours."
+                  },
+                  {
+                    "id": "kt2_1_s3_q1",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "Soviet Sugar, Oil & Arms Lifeline",
+                    "detail": "Khrushchev bought Cuban sugar and shipped oil and weapons as Castro declared Cuba Communist in late 1961.",
+                    "lessonIndex": 5,
+                    "stageIndex": 0,
+                    "searchTerm": "Soviet Union",
+                    "gloss": "Khrushchev bought Cuban sugar and shipped oil and weapons as Castro declared Cuba Communist in late 1961."
+                  },
+                  {
+                    "id": "kt2_1_s3_q2",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "Castro Accepted Nuclear Missiles",
+                    "detail": "Fearing a direct US military invasion, Havana welcomed secret Soviet medium-range launchers in May 1962.",
+                    "lessonIndex": 5,
+                    "stageIndex": 1,
+                    "searchTerm": "Jupiter missiles",
+                    "gloss": "Fearing a direct US military invasion, Havana welcomed secret Soviet medium-range launchers in May 1962."
+                  },
+                  {
+                    "id": "kt2_1_s3_i1",
+                    "tier": 4,
+                    "tag": "Importance",
+                    "label": "Gave USSR Base Next to Florida",
+                    "detail": "Humiliating Kennedy encouraged Khrushchev to counter US Turkish missiles by placing warheads in Cuba.",
+                    "lessonIndex": 5,
+                    "stageIndex": 1,
+                    "searchTerm": "Bay of Pigs",
+                    "gloss": "Humiliating Kennedy encouraged Khrushchev to counter US Turkish missiles by placing warheads in Cuba.",
+                    "forTheme": "Superpowers"
+                  }
+                ]
+              },
+              {
+                "id": "kt2_1_s4",
+                "tier": 3,
+                "label": "Czech Opposition & Prague Spring",
+                "dateChip": "1967–Summer 1968",
+                "lessonIndex": 6,
+                "stageIndex": 1,
+                "searchTerm": "Prague Spring",
+                "gloss": "Opposition in Czechoslovakia to Soviet control over economic decline and StB censorship led Alexander Dubček to launch the 1968 Prague Spring.",
+                "children": [
+                  {
+                    "id": "kt2_1_s4_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Economic Slump & Novotný Ousted",
+                    "detail": "Falling Comecon living standards and brutal policing of 1967 student protests brought Dubček to office.",
+                    "lessonIndex": 6,
+                    "stageIndex": 0,
+                    "searchTerm": "Novotný",
+                    "gloss": "Falling Comecon living standards and brutal policing of 1967 student protests brought Dubček to office."
+                  },
+                  {
+                    "id": "kt2_1_s4_e1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Apr 1968 Action Programme Reforms",
+                    "detail": "Seeking socialism with a human face, Dubček ended censorship, curbed StB arrests, and eased travel limits.",
+                    "lessonIndex": 6,
+                    "stageIndex": 1,
+                    "searchTerm": "Action Programme",
+                    "gloss": "Seeking socialism with a human face, Dubček ended censorship, curbed StB arrests, and eased travel limits."
+                  },
+                  {
+                    "id": "kt2_1_s4_q1",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "Uncensored Calls for Pluralism",
+                    "detail": "Despite Dubček’s Warsaw Pact loyalty pledges, new political clubs and Vaculík’s manifesto alarmed Moscow.",
+                    "lessonIndex": 6,
+                    "stageIndex": 2,
+                    "searchTerm": "Two Thousand Words",
+                    "gloss": "Despite Dubček’s Warsaw Pact loyalty pledges, new political clubs and Vaculík’s manifesto alarmed Moscow."
+                  },
+                  {
+                    "id": "kt2_1_s4_q2",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "Eastern Hardliners Pressed Brezhnev",
+                    "detail": "East Germany’s Ulbricht and Poland’s Gomułka warned Czech free speech would infect their own one-party rule.",
+                    "lessonIndex": 6,
+                    "stageIndex": 3,
+                    "searchTerm": "Walter Ulbricht",
+                    "gloss": "East Germany’s Ulbricht and Poland’s Gomułka warned Czech free speech would infect their own one-party rule."
+                  },
+                  {
+                    "id": "kt2_1_s4_i1",
+                    "tier": 4,
+                    "tag": "Importance",
+                    "label": "Challenged One-Party Bloc Control",
+                    "detail": "Failed July–August summits convinced Brezhnev that even loyal Communist reform endangered the whole bloc.",
+                    "lessonIndex": 6,
+                    "stageIndex": 4,
+                    "searchTerm": "Warsaw Letter",
+                    "gloss": "Failed July–August summits convinced Brezhnev that even loyal Communist reform endangered the whole bloc.",
+                    "forTheme": "Soviet Control"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt2_2",
+            "code": "2.2",
+            "tier": 2,
+            "label": "2.2 Cold War Crises",
+            "dateChip": "1961–68",
+            "lessonIndex": 5,
+            "stageIndex": 2,
+            "searchTerm": "quarantine",
+            "q2Chain": "August 1961 construction of the Berlin Wall → October 1962 Cuban Missile Crisis quarantine & secret missile swap → August 1968 Czech invasion & Brezhnev Doctrine",
+            "gloss": "Q2 Narrative Chain: August 1961 construction of the Berlin Wall → October 1962 Cuban Missile Crisis quarantine & secret missile swap → August 1968 Czech invasion & Brezhnev Doctrine.",
+            "children": [
+              {
+                "id": "kt2_2_s1",
+                "tier": 3,
+                "label": "Berlin Wall Constructed (1961)",
+                "dateChip": "Aug–Oct 1961",
+                "lessonIndex": 4,
+                "stageIndex": 3,
+                "searchTerm": "13 August 1961",
+                "gloss": "The construction of the Berlin Wall on 13 August 1961 sealed the East–West border overnight with wire, concrete, and armed guards.",
+                "children": [
+                  {
+                    "id": "kt2_2_s1_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "40,000 Refugees Crossed in Aug",
+                    "detail": "Mass panic before expected border closure forced Khrushchev and Ulbricht to seal East Berlin immediately.",
+                    "lessonIndex": 4,
+                    "stageIndex": 3,
+                    "searchTerm": "40,000",
+                    "gloss": "Mass panic before expected border closure forced Khrushchev and Ulbricht to seal East Berlin immediately."
+                  },
+                  {
+                    "id": "kt2_2_s1_e1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "13 Aug Wire & Concrete Death Strip",
+                    "detail": "East German troops severed streets overnight and built a fortified 3.6-metre concrete wall around West Berlin.",
+                    "lessonIndex": 4,
+                    "stageIndex": 3,
+                    "searchTerm": "Death Strip",
+                    "gloss": "East German troops severed streets overnight and built a fortified 3.6-metre concrete wall around West Berlin."
+                  },
+                  {
+                    "id": "kt2_2_s1_q1",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "Families Split & Escapees Shot",
+                    "detail": "Refugee flight stopped abruptly, while guards shot would-be escapees like eighteen-year-old Peter Fechter.",
+                    "lessonIndex": 4,
+                    "stageIndex": 3,
+                    "searchTerm": "Peter Fechter",
+                    "gloss": "Refugee flight stopped abruptly, while guards shot would-be escapees like eighteen-year-old Peter Fechter."
+                  },
+                  {
+                    "id": "kt2_2_s1_q2",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "Oct 1961 Checkpoint Charlie Tanks",
+                    "detail": "US and Soviet tanks faced off 100 metres apart for eighteen hours before Kennedy-Khrushchev talks cooled it.",
+                    "lessonIndex": 4,
+                    "stageIndex": 3,
+                    "searchTerm": "Checkpoint Charlie",
+                    "gloss": "US and Soviet tanks faced off 100 metres apart for eighteen hours before Kennedy-Khrushchev talks cooled it."
+                  },
+                  {
+                    "id": "kt2_2_s1_i1",
+                    "tier": 4,
+                    "tag": "Importance",
+                    "label": "Saved GDR Yet Shamed Communism",
+                    "detail": "Halting the brain drain rescued East Germany economically while proving communism locked citizens inside.",
+                    "lessonIndex": 4,
+                    "stageIndex": 3,
+                    "searchTerm": "Berlin Wall",
+                    "gloss": "Halting the brain drain rescued East Germany economically while proving communism locked citizens inside.",
+                    "forTheme": "East-West Split"
+                  }
+                ]
+              },
+              {
+                "id": "kt2_2_s2",
+                "tier": 3,
+                "label": "Cuban Missile Crisis: 13 Days",
+                "dateChip": "14–28 Oct 1962",
+                "lessonIndex": 5,
+                "stageIndex": 2,
+                "searchTerm": "quarantine",
+                "gloss": "Key events of the Cuban Missile Crisis took the world to DEFCON 2 before Kennedy’s naval quarantine and secret diplomacy averted war.",
+                "children": [
+                  {
+                    "id": "kt2_2_s2_e1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "U-2 Photos & 500-Mile Quarantine",
+                    "detail": "After spy planes spotted Soviet missile sites on 14 October, Kennedy blockaded Cuba and Soviet ships turned back.",
+                    "lessonIndex": 5,
+                    "stageIndex": 2,
+                    "searchTerm": "quarantine",
+                    "gloss": "After spy planes spotted Soviet missile sites on 14 October, Kennedy blockaded Cuba and Soviet ships turned back."
+                  },
+                  {
+                    "id": "kt2_2_s2_e2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Two Letters & 27 Oct U-2 Downed",
+                    "detail": "Khrushchev sent two rival peace offers as a US spy plane was shot down, bringing nuclear war hours away.",
+                    "lessonIndex": 5,
+                    "stageIndex": 3,
+                    "searchTerm": "Rudolf Anderson",
+                    "gloss": "Khrushchev sent two rival peace offers as a US spy plane was shot down, bringing nuclear war hours away."
+                  },
+                  {
+                    "id": "kt2_2_s2_q1",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "28 Oct Deal Removed Cuban Sites",
+                    "detail": "Khrushchev dismantled Cuban launchers under UN checks in return for Kennedy’s public non-invasion pledge.",
+                    "lessonIndex": 5,
+                    "stageIndex": 3,
+                    "searchTerm": "28 October 1962",
+                    "gloss": "Khrushchev dismantled Cuban launchers under UN checks in return for Kennedy’s public non-invasion pledge."
+                  },
+                  {
+                    "id": "kt2_2_s2_q2",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "Secret US Pullout From Turkey",
+                    "detail": "Robert Kennedy privately assured Ambassador Dobrynin that American Jupiter missiles would leave Turkey.",
+                    "lessonIndex": 5,
+                    "stageIndex": 3,
+                    "searchTerm": "Robert Kennedy",
+                    "gloss": "Robert Kennedy privately assured Ambassador Dobrynin that American Jupiter missiles would leave Turkey."
+                  },
+                  {
+                    "id": "kt2_2_s2_i1",
+                    "tier": 4,
+                    "tag": "Importance",
+                    "label": "Closest Brush With Nuclear War",
+                    "detail": "Surviving Thirteen Days of brinkmanship scared Washington and Moscow into direct communication and treaties.",
+                    "lessonIndex": 5,
+                    "stageIndex": 2,
+                    "searchTerm": "DEFCON 2",
+                    "gloss": "Surviving Thirteen Days of brinkmanship scared Washington and Moscow into direct communication and treaties.",
+                    "forTheme": "US-Soviet Ties"
+                  }
+                ]
+              },
+              {
+                "id": "kt2_2_s3",
+                "tier": 3,
+                "label": "1968 Invasion & Czech Control",
+                "dateChip": "Aug 1968–69",
+                "lessonIndex": 7,
+                "stageIndex": 0,
+                "searchTerm": "500,000 Warsaw Pact",
+                "gloss": "Overnight in August 1968, Warsaw Pact troops crushed Prague’s reforms, forcing the re-establishment of Soviet control in Czechoslovakia.",
+                "children": [
+                  {
+                    "id": "kt2_2_s3_e1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "20–21 Aug: 500,000 Pact Troops",
+                    "detail": "Forces from the USSR, Poland, Hungary, and Bulgaria seized Prague rapidly as Czech troops stayed in barracks.",
+                    "lessonIndex": 7,
+                    "stageIndex": 0,
+                    "searchTerm": "500,000 Warsaw Pact",
+                    "gloss": "Forces from the USSR, Poland, Hungary, and Bulgaria seized Prague rapidly as Czech troops stayed in barracks."
+                  },
+                  {
+                    "id": "kt2_2_s3_q1",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "Passive Defiance & Palach Protest",
+                    "detail": "Unarmed citizens removed road signs, keeping August deaths under 100 before student Jan Palach’s sacrifice.",
+                    "lessonIndex": 7,
+                    "stageIndex": 1,
+                    "searchTerm": "Jan Palach",
+                    "gloss": "Unarmed citizens removed road signs, keeping August deaths under 100 before student Jan Palach’s sacrifice."
+                  },
+                  {
+                    "id": "kt2_2_s3_q2",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "Moscow Protocol & Husák’s Purges",
+                    "detail": "Arrested Dubček was replaced in 1969 by Gustáv Husák, who purged 500,000 reformists under strict censorship.",
+                    "lessonIndex": 7,
+                    "stageIndex": 2,
+                    "searchTerm": "Gustáv Husák",
+                    "gloss": "Arrested Dubček was replaced in 1969 by Gustáv Husák, who purged 500,000 reformists under strict censorship."
+                  },
+                  {
+                    "id": "kt2_2_s3_i1",
+                    "tier": 4,
+                    "tag": "Importance",
+                    "label": "Crushed Peaceful Communist Reform",
+                    "detail": "Twenty years of Husák’s normalisation extinguished hopes of democratic socialism until 1989.",
+                    "lessonIndex": 7,
+                    "stageIndex": 2,
+                    "searchTerm": "normalisation",
+                    "gloss": "Twenty years of Husák’s normalisation extinguished hopes of democratic socialism until 1989.",
+                    "forTheme": "Soviet Control"
+                  }
+                ]
+              },
+              {
+                "id": "kt2_2_s4",
+                "tier": 3,
+                "label": "The Brezhnev Doctrine (1968)",
+                "dateChip": "Sept–Nov 1968",
+                "lessonIndex": 7,
+                "stageIndex": 3,
+                "searchTerm": "Brezhnev Doctrine",
+                "gloss": "Published after Prague’s invasion, the Brezhnev Doctrine justified joint Warsaw Pact force to preserve one-party rule across Czechoslovakia and the bloc.",
+                "children": [
+                  {
+                    "id": "kt2_2_s4_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Justifying Invasion Without Exit",
+                    "detail": "Because Dubček never tried leaving the Warsaw Pact, Brezhnev needed a rule outlawing internal reform too.",
+                    "lessonIndex": 7,
+                    "stageIndex": 3,
+                    "searchTerm": "Brezhnev Doctrine",
+                    "gloss": "Because Dubček never tried leaving the Warsaw Pact, Brezhnev needed a rule outlawing internal reform too."
+                  },
+                  {
+                    "id": "kt2_2_s4_e1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Sept 1968 Pravda Sovereignty Rule",
+                    "detail": "Moscow declared that threats to one-party Communist rule in any satellite endangered every socialist state.",
+                    "lessonIndex": 7,
+                    "stageIndex": 3,
+                    "searchTerm": "Pravda",
+                    "gloss": "Moscow declared that threats to one-party Communist rule in any satellite endangered every socialist state."
+                  },
+                  {
+                    "id": "kt2_2_s4_q1",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "Ended National Satellite Freedom",
+                    "detail": "Eastern European regimes lost the right to allow rival parties or lift censorship for the next twenty years.",
+                    "lessonIndex": 7,
+                    "stageIndex": 3,
+                    "searchTerm": "one-party Communist rule",
+                    "gloss": "Eastern European regimes lost the right to allow rival parties or lift censorship for the next twenty years."
+                  },
+                  {
+                    "id": "kt2_2_s4_q2",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "Invoked Again in 1979 Afghanistan",
+                    "detail": "Collective socialist intervention later gave Kremlin leaders ideological cover to send troops into Kabul.",
+                    "lessonIndex": 7,
+                    "stageIndex": 3,
+                    "searchTerm": "Warsaw Pact",
+                    "gloss": "Collective socialist intervention later gave Kremlin leaders ideological cover to send troops into Kabul."
+                  },
+                  {
+                    "id": "kt2_2_s4_i1",
+                    "tier": 4,
+                    "tag": "Importance",
+                    "label": "Froze Eastern Bloc Until 1989",
+                    "detail": "Only Red Army tank threats kept unpopular satellite regimes in power until Gorbachev dropped the doctrine.",
+                    "lessonIndex": 7,
+                    "stageIndex": 3,
+                    "searchTerm": "Brezhnev Doctrine",
+                    "gloss": "Only Red Army tank threats kept unpopular satellite regimes in power until Gorbachev dropped the doctrine.",
+                    "forTheme": "Buffer Zone"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt2_3",
+            "code": "2.3",
+            "tier": 2,
+            "label": "2.3 Reaction to Crisis",
+            "dateChip": "1961–70",
+            "lessonIndex": 5,
+            "stageIndex": 4,
+            "searchTerm": "Limited Test Ban Treaty",
+            "q2Chain": "Berlin Wall lowers war risk & JFK’s 1963 speech → 1963 Hotline & Test Ban Treaty after Cuba → 1967–68 nuclear pacts & split reaction to 1968 Czech invasion",
+            "gloss": "Q2 Narrative Chain: Berlin Wall lowers war risk & JFK’s 1963 speech → 1963 Hotline & Test Ban Treaty after Cuba → 1967–68 nuclear pacts & split reaction to 1968 Czech invasion.",
+            "children": [
+              {
+                "id": "kt2_3_s1",
+                "tier": 3,
+                "label": "Wall Impact & JFK’s 1963 Visit",
+                "dateChip": "1961–June 1963",
+                "lessonIndex": 4,
+                "stageIndex": 4,
+                "searchTerm": "Ich bin ein Berliner",
+                "gloss": "Impact of the construction of the Berlin Wall on US-Soviet relations lowered war risks, while Kennedy’s visit to West Berlin in 1963 scored a moral win.",
+                "children": [
+                  {
+                    "id": "kt2_3_s1_e1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "June 1963 \"Ich bin ein Berliner\"",
+                    "detail": "Cheered by 120,000 citizens, Kennedy contrasted free democratic West Berlin with Communist concrete walls.",
+                    "lessonIndex": 4,
+                    "stageIndex": 4,
+                    "searchTerm": "Ich bin ein Berliner",
+                    "gloss": "Cheered by 120,000 citizens, Kennedy contrasted free democratic West Berlin with Communist concrete walls."
+                  },
+                  {
+                    "id": "kt2_3_s1_q1",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "Immediate Berlin War Risk Eased",
+                    "detail": "Stopping the refugee drain let Khrushchev drop his ultimatum while Kennedy noted a wall beat fighting a war.",
+                    "lessonIndex": 4,
+                    "stageIndex": 4,
+                    "searchTerm": "better than a war",
+                    "gloss": "Stopping the refugee drain let Khrushchev drop his ultimatum while Kennedy noted a wall beat fighting a war."
+                  },
+                  {
+                    "id": "kt2_3_s1_q2",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "Lasting Western Propaganda Symbol",
+                    "detail": "Concrete watchtowers proved globally that Soviet-style socialism relied on force to keep workers inside.",
+                    "lessonIndex": 4,
+                    "stageIndex": 4,
+                    "searchTerm": "propaganda",
+                    "gloss": "Concrete watchtowers proved globally that Soviet-style socialism relied on force to keep workers inside."
+                  },
+                  {
+                    "id": "kt2_3_s1_i1",
+                    "tier": 4,
+                    "tag": "Importance",
+                    "label": "Stabilised Europe’s Cold War Line",
+                    "detail": "Accepting divided Berlin defused Europe’s most dangerous flashpoint until citizens tore the Wall down in 1989.",
+                    "lessonIndex": 4,
+                    "stageIndex": 4,
+                    "searchTerm": "US–Soviet relations",
+                    "gloss": "Accepting divided Berlin defused Europe’s most dangerous flashpoint until citizens tore the Wall down in 1989.",
+                    "forTheme": "US-Soviet Ties"
+                  }
+                ]
+              },
+              {
+                "id": "kt2_3_s2",
+                "tier": 3,
+                "label": "1963 Hotline & Arms Control",
+                "dateChip": "1963–68",
+                "lessonIndex": 5,
+                "stageIndex": 4,
+                "searchTerm": "Limited Test Ban Treaty",
+                "gloss": "Consequences of the Cuban Missile Crisis included the 1963 hotline and attempts at arms control: the Limited Test Ban Treaty (1963), Outer Space Treaty (1967), and Nuclear Non-Proliferation Treaty (1968).",
+                "children": [
+                  {
+                    "id": "kt2_3_s2_e1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "June 1963 Direct Teletype Hotline",
+                    "detail": "Replacing slow crisis messages, an instant Washington–Moscow link let leaders defuse future emergencies.",
+                    "lessonIndex": 5,
+                    "stageIndex": 4,
+                    "searchTerm": "hotline",
+                    "gloss": "Replacing slow crisis messages, an instant Washington–Moscow link let leaders defuse future emergencies."
+                  },
+                  {
+                    "id": "kt2_3_s2_q1",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "Aug 1963 Limited Test Ban Treaty",
+                    "detail": "America, Britain, and the USSR banned nuclear weapon blasts in the atmosphere, outer space, and underwater.",
+                    "lessonIndex": 5,
+                    "stageIndex": 4,
+                    "searchTerm": "Limited Test Ban Treaty",
+                    "gloss": "America, Britain, and the USSR banned nuclear weapon blasts in the atmosphere, outer space, and underwater."
+                  },
+                  {
+                    "id": "kt2_3_s2_q2",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "1967 Space & 1968 NPT Agreements",
+                    "detail": "Superpowers barred orbital nuclear weapons and pledged not to transfer atomic technology to non-nuclear states.",
+                    "lessonIndex": 5,
+                    "stageIndex": 4,
+                    "searchTerm": "Nuclear Non-Proliferation Treaty",
+                    "gloss": "Superpowers barred orbital nuclear weapons and pledged not to transfer atomic technology to non-nuclear states."
+                  },
+                  {
+                    "id": "kt2_3_s2_q3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "Khrushchev Ousted in Oct 1964",
+                    "detail": "Because America’s Turkish missile pullout stayed secret, Kremlin rivals removed Khrushchev over Cuba.",
+                    "lessonIndex": 5,
+                    "stageIndex": 4,
+                    "searchTerm": "October 1964",
+                    "gloss": "Because America’s Turkish missile pullout stayed secret, Kremlin rivals removed Khrushchev over Cuba."
+                  },
+                  {
+                    "id": "kt2_3_s2_i1",
+                    "tier": 4,
+                    "tag": "Importance",
+                    "label": "Paved Way for 1970s Détente",
+                    "detail": "Establishing nuclear safety rules after Cuba built diplomatic habits that enabled SALT arms talks by 1972.",
+                    "lessonIndex": 5,
+                    "stageIndex": 4,
+                    "searchTerm": "Outer Space Treaty",
+                    "gloss": "Establishing nuclear safety rules after Cuba built diplomatic habits that enabled SALT arms talks by 1972.",
+                    "forTheme": "Arms Control"
+                  }
+                ]
+              },
+              {
+                "id": "kt2_3_s3",
+                "tier": 3,
+                "label": "Czech Crisis: Global Reaction",
+                "dateChip": "1968–70",
+                "lessonIndex": 7,
+                "stageIndex": 4,
+                "searchTerm": "Eurocommunism",
+                "gloss": "International reaction to Soviet measures in Czechoslovakia paired muted US protest during Vietnam with deep splits across world communism.",
+                "children": [
+                  {
+                    "id": "kt2_3_s3_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "500,000 US Troops Tied in Vietnam",
+                    "detail": "Bogged down in Southeast Asia and fearing nuclear war, President Johnson avoided military intervention.",
+                    "lessonIndex": 7,
+                    "stageIndex": 4,
+                    "searchTerm": "Vietnam War",
+                    "gloss": "Bogged down in Southeast Asia and fearing nuclear war, President Johnson avoided military intervention."
+                  },
+                  {
+                    "id": "kt2_3_s3_q1",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "Cancelled Summit & Vetoed UN Vote",
+                    "detail": "Washington scrapped planned Johnson–Brezhnev talks, while Moscow vetoed a UN Security Council condemnation.",
+                    "lessonIndex": 7,
+                    "stageIndex": 4,
+                    "searchTerm": "Lyndon B. Johnson",
+                    "gloss": "Washington scrapped planned Johnson–Brezhnev talks, while Moscow vetoed a UN Security Council condemnation."
+                  },
+                  {
+                    "id": "kt2_3_s3_q2",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "Eurocommunism & Communist Splits",
+                    "detail": "Romania, Yugoslavia, and China denounced the invasion as French and Italian Communists broke from Moscow.",
+                    "lessonIndex": 7,
+                    "stageIndex": 4,
+                    "searchTerm": "Eurocommunism",
+                    "gloss": "Romania, Yugoslavia, and China denounced the invasion as French and Italian Communists broke from Moscow."
+                  },
+                  {
+                    "id": "kt2_3_s3_i1",
+                    "tier": 4,
+                    "tag": "Importance",
+                    "label": "Shattered Soviet Moral Authority",
+                    "detail": "Invading a loyal socialist ally fractured global communism without stopping 1970s US–Soviet détente.",
+                    "lessonIndex": 7,
+                    "stageIndex": 4,
+                    "searchTerm": "Nicolae Ceaușescu",
+                    "gloss": "Invading a loyal socialist ally fractured global communism without stopping 1970s US–Soviet détente.",
+                    "forTheme": "Communist Bloc"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "kt3",
+        "keyTopicNumber": 3,
+        "tier": 1,
+        "side": "left",
+        "color": "#059669",
+        "label": "KT3: End of the Cold War",
+        "dateChip": "1970–91",
+        "lessonIndex": 8,
+        "stageIndex": 1,
+        "searchTerm": "SALT 1",
+        "gloss": "Key topic 3: The end of the Cold War, 1970–91 — 1970s détente and SALT treaties, Afghanistan and Reagan’s Second Cold War, Gorbachev’s New Thinking, the Berlin Wall, and USSR collapse.",
+        "children": [
+          {
+            "id": "kt3_1",
+            "code": "3.1",
+            "tier": 2,
+            "label": "3.1 Détente in the 1970s",
+            "dateChip": "1970–79",
+            "lessonIndex": 8,
+            "stageIndex": 1,
+            "searchTerm": "SALT 1",
+            "q2Chain": "Vietnam costs, MAD fears & Soviet stagnation → May 1972 SALT 1, 1975 Apollo–Soyuz & Helsinki Accords → Human-rights strains & unratified June 1979 SALT 2",
+            "gloss": "Q2 Narrative Chain: Vietnam costs, MAD fears & Soviet stagnation → May 1972 SALT 1, 1975 Apollo–Soyuz & Helsinki Accords → Human-rights strains & unratified June 1979 SALT 2.",
+            "children": [
+              {
+                "id": "kt3_1_s1",
+                "tier": 3,
+                "label": "Détente & 1970s Tensions Eased",
+                "dateChip": "1970–75",
+                "lessonIndex": 8,
+                "stageIndex": 0,
+                "searchTerm": "Détente",
+                "gloss": "Détente and attempts to reduce superpower tensions in the 1970s grew from Vietnam War exhaustion, nuclear parity, grain trade, and Apollo–Soyuz.",
+                "children": [
+                  {
+                    "id": "kt3_1_s1_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Vietnam Drain & Soviet Shortages",
+                    "detail": "America faced $150bn Vietnam costs and inflation, while Brezhnev needed Western grain and technology.",
+                    "lessonIndex": 8,
+                    "stageIndex": 0,
+                    "searchTerm": "Vietnam",
+                    "gloss": "America faced $150bn Vietnam costs and inflation, while Brezhnev needed Western grain and technology."
+                  },
+                  {
+                    "id": "kt3_1_s1_e1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "1972 China Visit & Orbit Link-Up",
+                    "detail": "Nixon’s Beijing trip nudged Moscow into summits that peaked with the 1975 Apollo–Soyuz space handshake.",
+                    "lessonIndex": 8,
+                    "stageIndex": 2,
+                    "searchTerm": "Apollo–Soyuz",
+                    "gloss": "Nixon’s Beijing trip nudged Moscow into summits that peaked with the 1975 Apollo–Soyuz space handshake."
+                  },
+                  {
+                    "id": "kt3_1_s1_q1",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "Expanded US Grain & Tech Trade",
+                    "detail": "Regular 1972–74 Nixon–Brezhnev summits unlocked American wheat shipments that eased Soviet food queues.",
+                    "lessonIndex": 8,
+                    "stageIndex": 2,
+                    "searchTerm": "grain",
+                    "gloss": "Regular 1972–74 Nixon–Brezhnev summits unlocked American wheat shipments that eased Soviet food queues."
+                  },
+                  {
+                    "id": "kt3_1_s1_q2",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "Rivalry Continued in Third World",
+                    "detail": "Despite calmer European ties, proxy conflicts in the Middle East and Africa showed rivalry still simmered.",
+                    "lessonIndex": 8,
+                    "stageIndex": 0,
+                    "searchTerm": "Détente",
+                    "gloss": "Despite calmer European ties, proxy conflicts in the Middle East and Africa showed rivalry still simmered."
+                  },
+                  {
+                    "id": "kt3_1_s1_i1",
+                    "tier": 4,
+                    "tag": "Importance",
+                    "label": "Managed Rivalry Through Summits",
+                    "detail": "Pragmatic self-interest replaced 1960s nuclear brinkmanship with regular superpower summit diplomacy.",
+                    "lessonIndex": 8,
+                    "stageIndex": 0,
+                    "searchTerm": "Richard Nixon",
+                    "gloss": "Pragmatic self-interest replaced 1960s nuclear brinkmanship with regular superpower summit diplomacy.",
+                    "forTheme": "Détente"
+                  }
+                ]
+              },
+              {
+                "id": "kt3_1_s2",
+                "tier": 3,
+                "label": "SALT 1 Treaty (May 1972)",
+                "dateChip": "May 1972",
+                "lessonIndex": 8,
+                "stageIndex": 1,
+                "searchTerm": "SALT 1",
+                "gloss": "Signed by Nixon and Brezhnev at Moscow in May 1972, SALT 1 capped ABM shields and froze strategic missile launchers for five years.",
+                "children": [
+                  {
+                    "id": "kt3_1_s2_e1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Two ABM Sites & Launcher Freeze",
+                    "detail": "The ABM Treaty limited defensive shields while an interim five-year pact froze ICBM and SLBM launchers.",
+                    "lessonIndex": 8,
+                    "stageIndex": 1,
+                    "searchTerm": "SALT 1",
+                    "gloss": "The ABM Treaty limited defensive shields while an interim five-year pact froze ICBM and SLBM launchers."
+                  },
+                  {
+                    "id": "kt3_1_s2_q1",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "Recognised Mutual Nuclear Parity",
+                    "detail": "For the first time Washington formally accepted the USSR as a strategic nuclear equal at summit talks.",
+                    "lessonIndex": 8,
+                    "stageIndex": 1,
+                    "searchTerm": "Basic Principles",
+                    "gloss": "For the first time Washington formally accepted the USSR as a strategic nuclear equal at summit talks."
+                  },
+                  {
+                    "id": "kt3_1_s2_q2",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "MIRV Warhead Loophole Remained",
+                    "detail": "Omitting multiple independently targeted warheads let both arsenals keep multiplying destructive power.",
+                    "lessonIndex": 8,
+                    "stageIndex": 1,
+                    "searchTerm": "MIRVs",
+                    "gloss": "Omitting multiple independently targeted warheads let both arsenals keep multiplying destructive power."
+                  },
+                  {
+                    "id": "kt3_1_s2_i1",
+                    "tier": 4,
+                    "tag": "Importance",
+                    "label": "First Strategic Nuclear Cap Pact",
+                    "detail": "Slowing launcher construction proved arms verification could work despite ongoing technological loopholes.",
+                    "lessonIndex": 8,
+                    "stageIndex": 1,
+                    "searchTerm": "SALT 1",
+                    "gloss": "Slowing launcher construction proved arms verification could work despite ongoing technological loopholes.",
+                    "forTheme": "Arms Control"
+                  }
+                ]
+              },
+              {
+                "id": "kt3_1_s3",
+                "tier": 3,
+                "label": "Helsinki Accords (Aug 1975)",
+                "dateChip": "Aug 1975",
+                "lessonIndex": 8,
+                "stageIndex": 3,
+                "searchTerm": "Helsinki Accords",
+                "gloss": "Under the August 1975 Helsinki Accords, thirty-five nations agreed Three Baskets covering European borders, cooperation, and human rights.",
+                "children": [
+                  {
+                    "id": "kt3_1_s3_e1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "35 Nations Signed Three Baskets",
+                    "detail": "Ford, Brezhnev, and European leaders agreed deals on borders, economic-scientific trade, and civil liberties.",
+                    "lessonIndex": 8,
+                    "stageIndex": 3,
+                    "searchTerm": "Helsinki Accords",
+                    "gloss": "Ford, Brezhnev, and European leaders agreed deals on borders, economic-scientific trade, and civil liberties."
+                  },
+                  {
+                    "id": "kt3_1_s3_q1",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "Basket 1 Recognised East Borders",
+                    "detail": "Western powers formally accepted post-1945 frontiers and East Germany, fulfilling a long Soviet goal.",
+                    "lessonIndex": 8,
+                    "stageIndex": 3,
+                    "searchTerm": "Basket 1",
+                    "gloss": "Western powers formally accepted post-1945 frontiers and East Germany, fulfilling a long Soviet goal."
+                  },
+                  {
+                    "id": "kt3_1_s3_q2",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "Basket 3 Empowered Bloc Dissidents",
+                    "detail": "Human-rights pledges inspired Charter 77 and Soviet watch groups to expose Communist police repression.",
+                    "lessonIndex": 8,
+                    "stageIndex": 3,
+                    "searchTerm": "Basket 3",
+                    "gloss": "Human-rights pledges inspired Charter 77 and Soviet watch groups to expose Communist police repression."
+                  },
+                  {
+                    "id": "kt3_1_s3_i1",
+                    "tier": 4,
+                    "tag": "Importance",
+                    "label": "Peak Détente Yet Eroded Bloc Rule",
+                    "detail": "While stabilising European maps, Basket 3 handed dissidents and Carter a moral lever against Moscow.",
+                    "lessonIndex": 8,
+                    "stageIndex": 3,
+                    "searchTerm": "Charter 77",
+                    "gloss": "While stabilising European maps, Basket 3 handed dissidents and Carter a moral lever against Moscow.",
+                    "forTheme": "Détente"
+                  }
+                ]
+              },
+              {
+                "id": "kt3_1_s4",
+                "tier": 3,
+                "label": "SALT 2 & Strained Détente",
+                "dateChip": "1977–79",
+                "lessonIndex": 8,
+                "stageIndex": 4,
+                "searchTerm": "SALT 2",
+                "gloss": "Carter and Brezhnev signed SALT 2 in June 1979 to cap launchers equally, but human-rights disputes and Afghanistan killed ratification.",
+                "children": [
+                  {
+                    "id": "kt3_1_s4_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Carter’s Rights Push & SS-20s",
+                    "detail": "Carter angered Moscow by backing dissident Sakharov as Soviet SS-20 missiles and African moves alarmed hawks.",
+                    "lessonIndex": 8,
+                    "stageIndex": 4,
+                    "searchTerm": "Jimmy Carter",
+                    "gloss": "Carter angered Moscow by backing dissident Sakharov as Soviet SS-20 missiles and African moves alarmed hawks."
+                  },
+                  {
+                    "id": "kt3_1_s4_e1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "June 1979 Vienna 2,400 Cap Signed",
+                    "detail": "SALT 2 set equal 2,400 strategic launcher limits and placed first restrictions on MIRV missile systems.",
+                    "lessonIndex": 8,
+                    "stageIndex": 4,
+                    "searchTerm": "SALT 2",
+                    "gloss": "SALT 2 set equal 2,400 strategic launcher limits and placed first restrictions on MIRV missile systems."
+                  },
+                  {
+                    "id": "kt3_1_s4_q1",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "US Senate Conservatives Balked",
+                    "detail": "American critics charged that détente rewarded Soviet military build-ups in Angola, Ethiopia, and Europe.",
+                    "lessonIndex": 8,
+                    "stageIndex": 4,
+                    "searchTerm": "Angola",
+                    "gloss": "American critics charged that détente rewarded Soviet military build-ups in Angola, Ethiopia, and Europe."
+                  },
+                  {
+                    "id": "kt3_1_s4_q2",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "Withdrawn After Kabul Invasion",
+                    "detail": "Following December 1979’s Soviet move into Afghanistan, Carter pulled SALT 2 from Senate ratification.",
+                    "lessonIndex": 8,
+                    "stageIndex": 4,
+                    "searchTerm": "ratification",
+                    "gloss": "Following December 1979’s Soviet move into Afghanistan, Carter pulled SALT 2 from Senate ratification."
+                  },
+                  {
+                    "id": "kt3_1_s4_i1",
+                    "tier": 4,
+                    "tag": "Importance",
+                    "label": "Marked Collapse of 1970s Détente",
+                    "detail": "Shelving seven years of arms talks signalled the return of fierce superpower confrontation by 1980.",
+                    "lessonIndex": 8,
+                    "stageIndex": 4,
+                    "searchTerm": "SALT 2",
+                    "gloss": "Shelving seven years of arms talks signalled the return of fierce superpower confrontation by 1980.",
+                    "forTheme": "US-Soviet Ties"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt3_2",
+            "code": "3.2",
+            "tier": 2,
+            "label": "3.2 End of Détente & Reagan",
+            "dateChip": "1979–89",
+            "lessonIndex": 9,
+            "stageIndex": 3,
+            "searchTerm": "Second Cold War",
+            "q2Chain": "Dec 1979 Soviet invasion of Afghanistan, Carter Doctrine & Olympic boycotts → Reagan’s Second Cold War rearmament & 1983 SDI → 1985–88 Reagan–Gorbachev summits & INF Treaty",
+            "gloss": "Q2 Narrative Chain: Dec 1979 Soviet invasion of Afghanistan, Carter Doctrine & Olympic boycotts → Reagan’s Second Cold War rearmament & 1983 SDI → 1985–88 Reagan–Gorbachev summits & INF Treaty.",
+            "children": [
+              {
+                "id": "kt3_2_s1",
+                "tier": 3,
+                "label": "Soviet Invasion of Afghanistan",
+                "dateChip": "Dec 1979",
+                "lessonIndex": 9,
+                "stageIndex": 0,
+                "searchTerm": "Afghanistan",
+                "gloss": "The December 1979 Soviet invasion of Afghanistan toppled Hafizullah Amin, killed détente, and trapped Moscow in a costly ten-year war.",
+                "children": [
+                  {
+                    "id": "kt3_2_s1_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Fear of Border Islamist Revolt",
+                    "detail": "After Amin seized power amid Mujahideen rebellion, Brezhnev feared Islamic unrest spreading into the USSR.",
+                    "lessonIndex": 9,
+                    "stageIndex": 0,
+                    "searchTerm": "Hafizullah Amin",
+                    "gloss": "After Amin seized power amid Mujahideen rebellion, Brezhnev feared Islamic unrest spreading into the USSR."
+                  },
+                  {
+                    "id": "kt3_2_s1_e1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Dec 1979 Troops Installed Karmal",
+                    "detail": "Soviet forces stormed Kabul, killed Amin, and backed Babrak Karmal using over 100,000 Red Army soldiers.",
+                    "lessonIndex": 9,
+                    "stageIndex": 0,
+                    "searchTerm": "Babrak Karmal",
+                    "gloss": "Soviet forces stormed Kabul, killed Amin, and backed Babrak Karmal using over 100,000 Red Army soldiers."
+                  },
+                  {
+                    "id": "kt3_2_s1_q1",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "15,000 Dead & $8bn Yearly Drain",
+                    "detail": "CIA-armed Mujahideen guerrillas bled Soviet finances and morale in Moscow’s own unwinnable Vietnam.",
+                    "lessonIndex": 9,
+                    "stageIndex": 0,
+                    "searchTerm": "Mujahideen",
+                    "gloss": "CIA-armed Mujahideen guerrillas bled Soviet finances and morale in Moscow’s own unwinnable Vietnam."
+                  },
+                  {
+                    "id": "kt3_2_s1_q2",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "Global UN & Islamic Condemnation",
+                    "detail": "Invading a non-aligned Muslim state destroyed 1970s détente and united Western and Islamic states against Moscow.",
+                    "lessonIndex": 9,
+                    "stageIndex": 0,
+                    "searchTerm": "Afghanistan",
+                    "gloss": "Invading a non-aligned Muslim state destroyed 1970s détente and united Western and Islamic states against Moscow."
+                  },
+                  {
+                    "id": "kt3_2_s1_i1",
+                    "tier": 4,
+                    "tag": "Importance",
+                    "label": "Exhausted USSR & Killed Détente",
+                    "detail": "Ten years of military failure weakened the Soviet economy and convinced Gorbachev to withdraw by 1989.",
+                    "lessonIndex": 9,
+                    "stageIndex": 0,
+                    "searchTerm": "Afghanistan",
+                    "gloss": "Ten years of military failure weakened the Soviet economy and convinced Gorbachev to withdraw by 1989.",
+                    "forTheme": "Cold War End"
+                  }
+                ]
+              },
+              {
+                "id": "kt3_2_s2",
+                "tier": 3,
+                "label": "Carter Doctrine & Boycotts",
+                "dateChip": "1980–84",
+                "lessonIndex": 9,
+                "stageIndex": 1,
+                "searchTerm": "Carter Doctrine",
+                "gloss": "Washington answered Kabul’s invasion with the January 1980 Carter Doctrine, sanctions, CIA aid, and rival 1980 and 1984 Olympic boycotts.",
+                "children": [
+                  {
+                    "id": "kt3_2_s2_e1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Jan 1980 Persian Gulf Pledge",
+                    "detail": "Carter vowed US military force to defend Gulf oil routes, hiked defence 5%, and created a rapid force.",
+                    "lessonIndex": 9,
+                    "stageIndex": 1,
+                    "searchTerm": "Carter Doctrine",
+                    "gloss": "Carter vowed US military force to defend Gulf oil routes, hiked defence 5%, and created a rapid force."
+                  },
+                  {
+                    "id": "kt3_2_s2_q1",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "Grain Embargo & Operation Cyclone",
+                    "detail": "America halted Soviet wheat and computer sales while channelling covert CIA weapons to Afghan rebels.",
+                    "lessonIndex": 9,
+                    "stageIndex": 1,
+                    "searchTerm": "Operation Cyclone",
+                    "gloss": "America halted Soviet wheat and computer sales while channelling covert CIA weapons to Afghan rebels."
+                  },
+                  {
+                    "id": "kt3_2_s2_q2",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "60+ States Boycotted 1980 Games",
+                    "detail": "Washington’s boycott spoiled Moscow’s 1980 Summer Olympics, prompting a 14-state Soviet boycott of LA in 1984.",
+                    "lessonIndex": 9,
+                    "stageIndex": 2,
+                    "searchTerm": "Moscow Summer Olympics",
+                    "gloss": "Washington’s boycott spoiled Moscow’s 1980 Summer Olympics, prompting a 14-state Soviet boycott of LA in 1984."
+                  },
+                  {
+                    "id": "kt3_2_s2_i1",
+                    "tier": 4,
+                    "tag": "Importance",
+                    "label": "Turned Rivalry Back to Containment",
+                    "detail": "Ending trade, treaties, and sporting ties buried détente even before Ronald Reagan entered office.",
+                    "lessonIndex": 9,
+                    "stageIndex": 2,
+                    "searchTerm": "Los Angeles",
+                    "gloss": "Ending trade, treaties, and sporting ties buried détente even before Ronald Reagan entered office.",
+                    "forTheme": "US-Soviet Ties"
+                  }
+                ]
+              },
+              {
+                "id": "kt3_2_s3",
+                "tier": 3,
+                "label": "Reagan & the Second Cold War",
+                "dateChip": "1981–83",
+                "lessonIndex": 9,
+                "stageIndex": 3,
+                "searchTerm": "Second Cold War",
+                "gloss": "Ronald Reagan escalated the Second Cold War through trillion-dollar rearmament, Evil Empire rhetoric, and backing anti-Soviet insurgents.",
+                "children": [
+                  {
+                    "id": "kt3_2_s3_e1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "$1 Trillion US Military Build-Up",
+                    "detail": "Reagan funded Trident submarines, stealth bombers, neutron warheads, and Pershing II missiles in Europe.",
+                    "lessonIndex": 9,
+                    "stageIndex": 3,
+                    "searchTerm": "$1 trillion",
+                    "gloss": "Reagan funded Trident submarines, stealth bombers, neutron warheads, and Pershing II missiles in Europe."
+                  },
+                  {
+                    "id": "kt3_2_s3_e2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Mar 1983 \"Evil Empire\" & Doctrine",
+                    "detail": "Branding Soviet communism immoral, Reagan sent Stinger missiles and aid to anti-communist rebels worldwide.",
+                    "lessonIndex": 9,
+                    "stageIndex": 3,
+                    "searchTerm": "Evil Empire",
+                    "gloss": "Branding Soviet communism immoral, Reagan sent Stinger missiles and aid to anti-communist rebels worldwide."
+                  },
+                  {
+                    "id": "kt3_2_s3_q1",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "1983 Nuclear War Scares Peaked",
+                    "detail": "NATO missile deployments and fierce rhetoric raised Kremlin fears of a sudden American nuclear strike.",
+                    "lessonIndex": 9,
+                    "stageIndex": 3,
+                    "searchTerm": "Pershing II",
+                    "gloss": "NATO missile deployments and fierce rhetoric raised Kremlin fears of a sudden American nuclear strike."
+                  },
+                  {
+                    "id": "kt3_2_s3_q2",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "Ageing Kremlin Strained to Compete",
+                    "detail": "Matching high-tech American spending overwhelmed stagnant Soviet factories swallowing 25% of GDP.",
+                    "lessonIndex": 9,
+                    "stageIndex": 3,
+                    "searchTerm": "Reagan Doctrine",
+                    "gloss": "Matching high-tech American spending overwhelmed stagnant Soviet factories swallowing 25% of GDP."
+                  },
+                  {
+                    "id": "kt3_2_s3_i1",
+                    "tier": 4,
+                    "tag": "Importance",
+                    "label": "Forced Moscow to Bargain Later",
+                    "detail": "Negotiating from overwhelming economic and tech strength pressured Gorbachev to seek deep arms cuts.",
+                    "lessonIndex": 9,
+                    "stageIndex": 3,
+                    "searchTerm": "Second Cold War",
+                    "gloss": "Negotiating from overwhelming economic and tech strength pressured Gorbachev to seek deep arms cuts.",
+                    "forTheme": "Arms Race"
+                  }
+                ]
+              },
+              {
+                "id": "kt3_2_s4",
+                "tier": 3,
+                "label": "Strategic Defence Initiative (SDI)",
+                "dateChip": "Mar 1983",
+                "lessonIndex": 9,
+                "stageIndex": 4,
+                "searchTerm": "Strategic Defence Initiative",
+                "gloss": "Announced in March 1983, Reagan’s Strategic Defence Initiative (SDI) proposed orbiting anti-missile lasers that exposed Soviet tech weakness.",
+                "children": [
+                  {
+                    "id": "kt3_2_s4_e1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Orbiting \"Star Wars\" Laser Shield",
+                    "detail": "Reagan proposed space satellites to destroy incoming Soviet ICBMs before warheads reached US targets.",
+                    "lessonIndex": 9,
+                    "stageIndex": 4,
+                    "searchTerm": "Star Wars",
+                    "gloss": "Reagan proposed space satellites to destroy incoming Soviet ICBMs before warheads reached US targets."
+                  },
+                  {
+                    "id": "kt3_2_s4_q1",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "Threatened End of MAD Deterrence",
+                    "detail": "Kremlin planners feared a working shield would neutralise Soviet missiles and allow a US first strike.",
+                    "lessonIndex": 9,
+                    "stageIndex": 4,
+                    "searchTerm": "Mutually Assured Destruction",
+                    "gloss": "Kremlin planners feared a working shield would neutralise Soviet missiles and allow a US first strike."
+                  },
+                  {
+                    "id": "kt3_2_s4_q2",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "Exposed Soviet Microchip Lag",
+                    "detail": "Lacking advanced supercomputers and sensors, Moscow knew matching SDI research would bankrupt the USSR.",
+                    "lessonIndex": 9,
+                    "stageIndex": 4,
+                    "searchTerm": "microchips",
+                    "gloss": "Lacking advanced supercomputers and sensors, Moscow knew matching SDI research would bankrupt the USSR."
+                  },
+                  {
+                    "id": "kt3_2_s4_i1",
+                    "tier": 4,
+                    "tag": "Importance",
+                    "label": "Turned Tech Gap Into US Leverage",
+                    "detail": "Although unbuilt, SDI dominated Reykjavik talks and convinced Gorbachev the arms race was unwinnable.",
+                    "lessonIndex": 9,
+                    "stageIndex": 4,
+                    "searchTerm": "Strategic Defence Initiative",
+                    "gloss": "Although unbuilt, SDI dominated Reykjavik talks and convinced Gorbachev the arms race was unwinnable.",
+                    "forTheme": "Arms Race"
+                  }
+                ]
+              },
+              {
+                "id": "kt3_2_s5",
+                "tier": 3,
+                "label": "Reagan & Gorbachev Summits",
+                "dateChip": "1985–89",
+                "lessonIndex": 10,
+                "stageIndex": 3,
+                "searchTerm": "INF Treaty",
+                "gloss": "Reagan and Gorbachev succeeded in reducing tensions across four landmark summits, signing the 1987 INF Treaty before Malta in 1989.",
+                "children": [
+                  {
+                    "id": "kt3_2_s5_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Soviet Economic Decay & Chernobyl",
+                    "detail": "Swallowing 25% of GDP on defence amid 1986’s Chernobyl crisis forced Gorbachev to cut nuclear costs.",
+                    "lessonIndex": 10,
+                    "stageIndex": 0,
+                    "searchTerm": "Chernobyl",
+                    "gloss": "Swallowing 25% of GDP on defence amid 1986’s Chernobyl crisis forced Gorbachev to cut nuclear costs."
+                  },
+                  {
+                    "id": "kt3_2_s5_e1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Geneva (1985) & Reykjavik (1986)",
+                    "detail": "Warm personal rapport built trust, even though Reagan’s refusal to drop SDI stalled sweeping cuts in 1986.",
+                    "lessonIndex": 10,
+                    "stageIndex": 2,
+                    "searchTerm": "Reykjavik",
+                    "gloss": "Warm personal rapport built trust, even though Reagan’s refusal to drop SDI stalled sweeping cuts in 1986."
+                  },
+                  {
+                    "id": "kt3_2_s5_q1",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "Dec 1987 INF Abolished 2,600+ Arms",
+                    "detail": "Uncoupling SDI let both leaders ban all land missiles of 500–5,500 km range under on-site inspections.",
+                    "lessonIndex": 10,
+                    "stageIndex": 3,
+                    "searchTerm": "INF Treaty",
+                    "gloss": "Uncoupling SDI let both leaders ban all land missiles of 500–5,500 km range under on-site inspections."
+                  },
+                  {
+                    "id": "kt3_2_s5_q2",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "1988 UN Cuts & 1989 Malta Accord",
+                    "detail": "Gorbachev left Afghanistan and cut 500,000 troops before declaring Cold War rivalry over with Bush.",
+                    "lessonIndex": 10,
+                    "stageIndex": 4,
+                    "searchTerm": "Malta Summit",
+                    "gloss": "Gorbachev left Afghanistan and cut 500,000 troops before declaring Cold War rivalry over with Bush."
+                  },
+                  {
+                    "id": "kt3_2_s5_i1",
+                    "tier": 4,
+                    "tag": "Importance",
+                    "label": "Replaced Arms Race With Real Cuts",
+                    "detail": "Personal trust turned freezing Second Cold War hostility into history’s first treaty destroying warheads.",
+                    "lessonIndex": 10,
+                    "stageIndex": 3,
+                    "searchTerm": "INF Treaty",
+                    "gloss": "Personal trust turned freezing Second Cold War hostility into history’s first treaty destroying warheads.",
+                    "forTheme": "Cold War End"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt3_3",
+            "code": "3.3",
+            "tier": 2,
+            "label": "3.3 Collapse of Soviet Control",
+            "dateChip": "1985–91",
+            "lessonIndex": 11,
+            "stageIndex": 1,
+            "searchTerm": "Berlin Wall",
+            "q2Chain": "Gorbachev’s New Thinking & dropping the Brezhnev Doctrine → 1989 Eastern European revolutions & fall of the Berlin Wall → 1991 Warsaw Pact end, August coup & USSR collapse",
+            "gloss": "Q2 Narrative Chain: Gorbachev’s New Thinking & dropping the Brezhnev Doctrine → 1989 Eastern European revolutions & fall of the Berlin Wall → 1991 Warsaw Pact end, August coup & USSR collapse.",
+            "children": [
+              {
+                "id": "kt3_3_s1",
+                "tier": 3,
+                "label": "New Thinking & Loosening Grip",
+                "dateChip": "1985–89",
+                "lessonIndex": 11,
+                "stageIndex": 0,
+                "searchTerm": "Sinatra Doctrine",
+                "gloss": "Impact of Gorbachev’s new thinking on Eastern Europe: Perestroika, Glasnost, and dropping tank intervention caused the loosening Soviet grip on Eastern Europe.",
+                "children": [
+                  {
+                    "id": "kt3_3_s1_e1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Perestroika, Glasnost & UN Speech",
+                    "detail": "Seeking to rescue socialism, Gorbachev eased censorship and told the UN in 1988 Soviet tanks would stay out.",
+                    "lessonIndex": 10,
+                    "stageIndex": 1,
+                    "searchTerm": "Perestroika",
+                    "gloss": "Seeking to rescue socialism, Gorbachev eased censorship and told the UN in 1988 Soviet tanks would stay out."
+                  },
+                  {
+                    "id": "kt3_3_s1_q1",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "Sinatra Doctrine Freed Satellites",
+                    "detail": "Abandoning the Brezhnev Doctrine left unpopular Communist regimes unable to crush democratic protests.",
+                    "lessonIndex": 11,
+                    "stageIndex": 0,
+                    "searchTerm": "Sinatra Doctrine",
+                    "gloss": "Abandoning the Brezhnev Doctrine left unpopular Communist regimes unable to crush democratic protests."
+                  },
+                  {
+                    "id": "kt3_3_s1_q2",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "Poland & Hungary Broke Free (1989)",
+                    "detail": "Solidarity won June 1989 Polish elections while Hungary cut its Austrian border wire, opening refugee flight.",
+                    "lessonIndex": 11,
+                    "stageIndex": 0,
+                    "searchTerm": "Solidarity",
+                    "gloss": "Solidarity won June 1989 Polish elections while Hungary cut its Austrian border wire, opening refugee flight."
+                  },
+                  {
+                    "id": "kt3_3_s1_i1",
+                    "tier": 4,
+                    "tag": "Importance",
+                    "label": "Removed Force Prop From Bloc Rule",
+                    "detail": "Without Red Army intervention, forty years of Eastern European Communist dictatorships collapsed within months.",
+                    "lessonIndex": 11,
+                    "stageIndex": 0,
+                    "searchTerm": "loosening Soviet grip",
+                    "gloss": "Without Red Army intervention, forty years of Eastern European Communist dictatorships collapsed within months.",
+                    "forTheme": "Eastern Europe"
+                  }
+                ]
+              },
+              {
+                "id": "kt3_3_s2",
+                "tier": 3,
+                "label": "Fall of the Berlin Wall (1989)",
+                "dateChip": "9 Nov 1989",
+                "lessonIndex": 11,
+                "stageIndex": 1,
+                "searchTerm": "9 November 1989",
+                "gloss": "Mass East German protests and a bungled live broadcast triggered the fall of the Berlin Wall on 9 November 1989 and German reunification.",
+                "children": [
+                  {
+                    "id": "kt3_3_s2_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Hungarian Exit & Leipzig Marches",
+                    "detail": "Mass escapes via Hungary and 70,000-strong protests toppled Honecker once Gorbachev barred Soviet force.",
+                    "lessonIndex": 11,
+                    "stageIndex": 1,
+                    "searchTerm": "Leipzig",
+                    "gloss": "Mass escapes via Hungary and 70,000-strong protests toppled Honecker once Gorbachev barred Soviet force."
+                  },
+                  {
+                    "id": "kt3_3_s2_e1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "9 Nov 1989 Checkpoints Opened",
+                    "detail": "After spokesman Schabowski mistakenly announced immediate travel, crowds surged through and hammered the Wall.",
+                    "lessonIndex": 11,
+                    "stageIndex": 1,
+                    "searchTerm": "Günter Schabowski",
+                    "gloss": "After spokesman Schabowski mistakenly announced immediate travel, crowds surged through and hammered the Wall."
+                  },
+                  {
+                    "id": "kt3_3_s2_q1",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "Domino Fall Across Czech & Romania",
+                    "detail": "Within weeks Prague’s Velvet Revolution elected Havel and Romanians overthrew dictator Nicolae Ceaușescu.",
+                    "lessonIndex": 11,
+                    "stageIndex": 2,
+                    "searchTerm": "Velvet Revolution",
+                    "gloss": "Within weeks Prague’s Velvet Revolution elected Havel and Romanians overthrew dictator Nicolae Ceaușescu."
+                  },
+                  {
+                    "id": "kt3_3_s2_q2",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "Germany Reunified in NATO (1990)",
+                    "detail": "East and West Germany united peacefully under Helmut Kohl on 3 October 1990 inside the Western alliance.",
+                    "lessonIndex": 11,
+                    "stageIndex": 2,
+                    "searchTerm": "Helmut Kohl",
+                    "gloss": "East and West Germany united peacefully under Helmut Kohl on 3 October 1990 inside the Western alliance."
+                  },
+                  {
+                    "id": "kt3_3_s2_i1",
+                    "tier": 4,
+                    "tag": "Importance",
+                    "label": "Shattered the Iron Curtain Symbol",
+                    "detail": "Ending twenty-eight years of divided Berlin visibly finished Cold War partition across the European continent.",
+                    "lessonIndex": 11,
+                    "stageIndex": 1,
+                    "searchTerm": "Berlin Wall",
+                    "gloss": "Ending twenty-eight years of divided Berlin visibly finished Cold War partition across the European continent.",
+                    "forTheme": "Cold War End"
+                  }
+                ]
+              },
+              {
+                "id": "kt3_3_s3",
+                "tier": 3,
+                "label": "End of the Warsaw Pact (1991)",
+                "dateChip": "1989–July 1991",
+                "lessonIndex": 11,
+                "stageIndex": 2,
+                "searchTerm": "1 July 1991",
+                "gloss": "Democratic revolutions and the impending collapse of the Soviet Union proved decisive in bringing about the end of the Warsaw Pact in July 1991.",
+                "children": [
+                  {
+                    "id": "kt3_3_s3_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Elected Governments Rejected Moscow",
+                    "detail": "Non-communist leaders in Poland, Hungary, and Czechoslovakia demanded immediate Red Army troop withdrawals.",
+                    "lessonIndex": 11,
+                    "stageIndex": 2,
+                    "searchTerm": "Warsaw Pact",
+                    "gloss": "Non-communist leaders in Poland, Hungary, and Czechoslovakia demanded immediate Red Army troop withdrawals."
+                  },
+                  {
+                    "id": "kt3_3_s3_e1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "1 July 1991 Alliance Dissolved",
+                    "detail": "Military structures closed in early 1991 before delegates in Prague formally ended the 36-year pact.",
+                    "lessonIndex": 11,
+                    "stageIndex": 2,
+                    "searchTerm": "1 July 1991",
+                    "gloss": "Military structures closed in early 1991 before delegates in Prague formally ended the 36-year pact."
+                  },
+                  {
+                    "id": "kt3_3_s3_q1",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "Soviet Buffer Zone Disappeared",
+                    "detail": "Red Army garrisons pulled back eastward, ending four decades of Kremlin military control in central Europe.",
+                    "lessonIndex": 11,
+                    "stageIndex": 2,
+                    "searchTerm": "Warsaw Pact",
+                    "gloss": "Red Army garrisons pulled back eastward, ending four decades of Kremlin military control in central Europe."
+                  },
+                  {
+                    "id": "kt3_3_s3_q2",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "NATO Left as Sole European Bloc",
+                    "detail": "Including reunified Germany, America’s Western alliance stood unchallenged as bipolar division vanished.",
+                    "lessonIndex": 11,
+                    "stageIndex": 2,
+                    "searchTerm": "NATO",
+                    "gloss": "Including reunified Germany, America’s Western alliance stood unchallenged as bipolar division vanished."
+                  },
+                  {
+                    "id": "kt3_3_s3_i1",
+                    "tier": 4,
+                    "tag": "Importance",
+                    "label": "Ended Military Division of Europe",
+                    "detail": "Dissolving Moscow’s alliance confirmed the USSR had lost superpower control outside its own borders.",
+                    "lessonIndex": 11,
+                    "stageIndex": 2,
+                    "searchTerm": "1 July 1991",
+                    "gloss": "Dissolving Moscow’s alliance confirmed the USSR had lost superpower control outside its own borders.",
+                    "forTheme": "Military Blocs"
+                  }
+                ]
+              },
+              {
+                "id": "kt3_3_s4",
+                "tier": 3,
+                "label": "1991 Coup & USSR Collapse",
+                "dateChip": "Aug–Dec 1991",
+                "lessonIndex": 11,
+                "stageIndex": 4,
+                "searchTerm": "25 December 1991",
+                "gloss": "After Yeltsin defeated the August 1991 coup, republic secessions sealed the collapse of the Soviet Union and ended the Cold War.",
+                "children": [
+                  {
+                    "id": "kt3_3_s4_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Shortages & Baltic Secession Bids",
+                    "detail": "Perestroika queues and Glasnost nationalism led Lithuania, Latvia, and Estonia to claim independence in 1990.",
+                    "lessonIndex": 11,
+                    "stageIndex": 3,
+                    "searchTerm": "Lithuania",
+                    "gloss": "Perestroika queues and Glasnost nationalism led Lithuania, Latvia, and Estonia to claim independence in 1990."
+                  },
+                  {
+                    "id": "kt3_3_s4_e1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Aug 1991 Hardline Coup Defeated",
+                    "detail": "Communist plotters detained Gorbachev to block his New Union Treaty, but Boris Yeltsin rallied Moscow crowds.",
+                    "lessonIndex": 11,
+                    "stageIndex": 3,
+                    "searchTerm": "Boris Yeltsin",
+                    "gloss": "Communist plotters detained Gorbachev to block his New Union Treaty, but Boris Yeltsin rallied Moscow crowds."
+                  },
+                  {
+                    "id": "kt3_3_s4_q1",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "Dec 1991 CIS Replaced Soviet State",
+                    "detail": "Russia, Ukraine, and Belarus dissolved the USSR into the loose Commonwealth of Independent States.",
+                    "lessonIndex": 11,
+                    "stageIndex": 4,
+                    "searchTerm": "Commonwealth of Independent States",
+                    "gloss": "Russia, Ukraine, and Belarus dissolved the USSR into the loose Commonwealth of Independent States."
+                  },
+                  {
+                    "id": "kt3_3_s4_q2",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "Gorbachev Resigned on 25 Dec 1991",
+                    "detail": "Lowering the red Kremlin flag split the union into fifteen independent republics and ended Communist rule.",
+                    "lessonIndex": 11,
+                    "stageIndex": 4,
+                    "searchTerm": "25 December 1991",
+                    "gloss": "Lowering the red Kremlin flag split the union into fifteen independent republics and ended Communist rule."
+                  },
+                  {
+                    "id": "kt3_3_s4_i1",
+                    "tier": 4,
+                    "tag": "Importance",
+                    "label": "Left USA as Sole Global Superpower",
+                    "detail": "Ending fifty years of US-Soviet ideological and nuclear rivalry closed the Cold War in Western victory.",
+                    "lessonIndex": 11,
+                    "stageIndex": 4,
+                    "searchTerm": "25 December 1991",
+                    "gloss": "Ending fifty years of US-Soviet ideological and nuclear rivalry closed the Cold War in Western victory.",
+                    "forTheme": "Cold War End"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

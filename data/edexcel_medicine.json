@@ -782,14 +782,14 @@
         "is_baseline": true,
         "items": [
           {
-            "question": "What stone-built engineering structures carried fresh clean water into Roman towns across Britain before AD 410?",
-            "answer": "Aqueducts",
-            "explanation": "Roman engineers constructed stone aqueducts, public bathhouses, and sewers across Britain that fell into disrepair after Roman rule ended."
+            "question": "Who stood at the head of the Roman Catholic Church across medieval Western Christendom?",
+            "answer": "The Pope",
+            "explanation": "Based in Rome, the Pope led the Catholic Church, whose bishops, priests, and monasteries shaped medieval belief and learning across England."
           },
           {
-            "question": "In which century did Roman rule in Britain collapse, leading to the gradual decay of civic stone sewers and bathhouses?",
-            "answer": "The 5th century AD (around AD 410)",
-            "explanation": "After Roman administration withdrew from Britain around AD 410, urban stone water and drainage networks decayed across former towns."
+            "question": "Which Archbishop of Canterbury was murdered in 1170, making Canterbury Cathedral England's most famous pilgrimage shrine?",
+            "answer": "Archbishop Thomas Becket",
+            "explanation": "Following Thomas Becket's murder in 1170, thousands of medieval English pilgrims travelled to his shrine at Canterbury seeking miraculous cures."
           },
           {
             "question": "Which pivotal military conquest of 1066 reshaped land ownership, castle-building, and royal government across England?",
@@ -2499,7 +2499,7 @@
           "id": "block_1",
           "decimal": "[1.2.1]",
           "title": "Hippocrates and the Secular Shift in Medicine",
-          "text": "<p><span class=\"para-ref\">[1.1]</span> In fifth-century BC Greece, Hippocrates revolutionised healing by pioneering the **Hippocratic clinical method**. Instead of attributing illness to divine wrath or demonic possession, he championed careful bedside observation, recording patient symptoms, pulse, and fevers systematically. This revolutionary approach represented a dramatic **rejection of gods** and supernatural superstition, establishing the enduring principle that physical disease was caused by natural bodily imbalances.</p><p><span class=\"para-ref\">[1.2]</span> Hippocrates also established medical professionalism through the **Hippocratic Oath ethics**, which bound physicians to preserve life, protect patient confidentiality, and do no deliberate harm. His extensive written treatises formed the foundation of Western rational medicine. When translated into Latin during the Middle Ages, his secular diagnostic principles became the core curriculum taught in newly founded European university medical faculties.</p>",
+          "text": "<p><span class=\"para-ref\">[1.1]</span> Between 1250 and 1500, university-trained physicians in medieval England drew their rational authority from the inherited treatises of Greek physician Hippocrates, who had pioneered the **Hippocratic clinical method**. Instead of attributing illness to divine wrath or demonic possession, Hippocratic texts championed careful bedside observation, recording patient symptoms, pulse, and fevers systematically—a dramatic **rejection of gods** and superstition that blamed physical disease on natural bodily imbalances.</p><p><span class=\"para-ref\">[1.2]</span> Medieval doctors also inherited medical professionalism from the classical **Hippocratic Oath ethics**, binding physicians to preserve life, protect patient confidentiality, and do no deliberate harm. Preserved through Arabic scholarship and translated into Latin by the thirteenth century, Hippocrates’ secular diagnostic manuals became the mandatory foundation taught across Oxford, Cambridge, and European university medical faculties—revered as fixed ancient authority rather than tested afresh.</p>",
           "image": "/images/edexcel_medicine/kt12/med_l1_2_b0_hippocrates_portrait_wellcome.jpg",
           "image_alt": "Seventeenth-century line engraving inscribed HIPPOCRATIS COI showing Hippocrates of Cos seated at a writing desk with quill, open medical treatise, surgical scissors, herbs, and lidded apothecary vessels",
           "caption": "Hippocrates of Cos (c.460–c.370 BC, engraving by Pieter Philippe, 1665, Wellcome Collection L0046422): Rejecting supernatural curses, Hippocrates pioneered secular bedside observation, detailed symptom recording, and the ethical Hippocratic Oath.",
@@ -2529,12 +2529,12 @@
             }
           ],
           "paragraphs": [
-            "<p><span class=\"para-ref\">[1.1]</span> In fifth-century BC Greece, Hippocrates revolutionised healing by pioneering the **Hippocratic clinical method**. Instead of attributing illness to divine wrath or demonic possession, he championed careful bedside observation, recording patient symptoms, pulse, and fevers systematically. This revolutionary approach represented a dramatic **rejection of gods** and supernatural superstition, establishing the enduring principle that physical disease was caused by natural bodily imbalances.</p>",
-            "<p><span class=\"para-ref\">[1.2]</span> Hippocrates also established medical professionalism through the **Hippocratic Oath ethics**, which bound physicians to preserve life, protect patient confidentiality, and do no deliberate harm. His extensive written treatises formed the foundation of Western rational medicine. When translated into Latin during the Middle Ages, his secular diagnostic principles became the core curriculum taught in newly founded European university medical faculties.</p>"
+            "<p><span class=\"para-ref\">[1.1]</span> Between 1250 and 1500, university-trained physicians in medieval England drew their rational authority from the inherited treatises of Greek physician Hippocrates, who had pioneered the **Hippocratic clinical method**. Instead of attributing illness to divine wrath or demonic possession, Hippocratic texts championed careful bedside observation, recording patient symptoms, pulse, and fevers systematically—a dramatic **rejection of gods** and superstition that blamed physical disease on natural bodily imbalances.</p>",
+            "<p><span class=\"para-ref\">[1.2]</span> Medieval doctors also inherited medical professionalism from the classical **Hippocratic Oath ethics**, binding physicians to preserve life, protect patient confidentiality, and do no deliberate harm. Preserved through Arabic scholarship and translated into Latin by the thirteenth century, Hippocrates’ secular diagnostic manuals became the mandatory foundation taught across Oxford, Cambridge, and European university medical faculties—revered as fixed ancient authority rather than tested afresh.</p>"
           ],
           "act": 1,
           "theme": "Hippocrates and the Secular Shift in Medicine",
-          "content": "<p><span class=\"para-ref\">[1.1]</span> In fifth-century BC Greece, Hippocrates revolutionised healing by pioneering the **Hippocratic clinical method**. Instead of attributing illness to divine wrath or demonic possession, he championed careful bedside observation, recording patient symptoms, pulse, and fevers systematically. This revolutionary approach represented a dramatic **rejection of gods** and supernatural superstition, establishing the enduring principle that physical disease was caused by natural bodily imbalances.</p><p><span class=\"para-ref\">[1.2]</span> Hippocrates also established medical professionalism through the **Hippocratic Oath ethics**, which bound physicians to preserve life, protect patient confidentiality, and do no deliberate harm. His extensive written treatises formed the foundation of Western rational medicine. When translated into Latin during the Middle Ages, his secular diagnostic principles became the core curriculum taught in newly founded European university medical faculties.</p>"
+          "content": "<p><span class=\"para-ref\">[1.1]</span> Between 1250 and 1500, university-trained physicians in medieval England drew their rational authority from the inherited treatises of Greek physician Hippocrates, who had pioneered the **Hippocratic clinical method**. Instead of attributing illness to divine wrath or demonic possession, Hippocratic texts championed careful bedside observation, recording patient symptoms, pulse, and fevers systematically—a dramatic **rejection of gods** and superstition that blamed physical disease on natural bodily imbalances.</p><p><span class=\"para-ref\">[1.2]</span> Medieval doctors also inherited medical professionalism from the classical **Hippocratic Oath ethics**, binding physicians to preserve life, protect patient confidentiality, and do no deliberate harm. Preserved through Arabic scholarship and translated into Latin by the thirteenth century, Hippocrates’ secular diagnostic manuals became the mandatory foundation taught across Oxford, Cambridge, and European university medical faculties—revered as fixed ancient authority rather than tested afresh.</p>"
         },
         {
           "id": "block_2",
@@ -2580,7 +2580,7 @@
           "id": "block_3",
           "decimal": "[1.2.3]",
           "title": "Galen's Theory of Opposites and Animal Dissections",
-          "text": "<p><span class=\"para-ref\">[3.1]</span> In second-century Rome, Claudius Galen expanded Hippocratic humoralism by developing Galen’s influential **Theory of Opposites**. While Hippocrates relied on passive rest, Galen introduced active treatment based on the principle that **contraries cure contraries**. For instance, a cold, moist fever was aggressively treated with hot, dry remedies like crushed pepper and wine, while hot inflammatory fevers were treated with cooling cucumber.</p><p><span class=\"para-ref\">[3.2]</span> Galen also produced extensive anatomical treatises, but because Roman religious law strictly prohibited human dissection, he relied on pigs, dogs, and apes. This led to serious **animal dissection errors**, including claiming the human jawbone comprised two bones and that blood passed through invisible heart septum pores. Canonised by the medieval Church, Galen’s anatomical mistakes remained unchallenged for fourteen centuries.</p>",
+          "text": "<p><span class=\"para-ref\">[3.1]</span> Across medieval England, university physicians obeyed the inherited writings of Roman physician Claudius Galen, who had expanded Hippocratic humoralism into the **Theory of Opposites**. Where Hippocratic texts advised passive rest, Galen’s manuals prescribed active intervention under the rule that **contraries cure contraries**—treating a cold, moist phlegmatic chill with hot, dry crushed pepper and wine, or cooling hot inflammatory fevers with cucumber.</p><p><span class=\"para-ref\">[3.2]</span> Medieval anatomy likewise rested on Galen’s inherited treatises, yet because ancient Roman law had forbidden human dissection, Galen had dissected pigs, dogs, and apes instead. This bequeathed over three hundred **animal dissection errors** to medieval England—including a two-bone human jawbone and invisible heart septum pores—which Catholic universities enforced as unchallengeable dogma until 1500 because Galen’s writings praised a single Creator.</p>",
           "image": "/images/edexcel_medicine/kt12/med_l1_2_b2_galen_portrait_wellcome.jpg",
           "image_alt": "Classical portrait line engraving inscribed Galen showing the bearded Roman physician Claudius Galen of Pergamon in draped classical tunic and cloak",
           "caption": "Claudius Galen of Pergamon (AD 129–c.216, Wellcome Collection L0012587): Physician to gladiators and Roman emperors, Galen expanded the Four Humours with his active Theory of Opposites and animal dissections endorsed by the medieval Church.",
@@ -2610,12 +2610,12 @@
             }
           ],
           "paragraphs": [
-            "<p><span class=\"para-ref\">[3.1]</span> In second-century Rome, Claudius Galen expanded Hippocratic humoralism by developing Galen’s influential **Theory of Opposites**. While Hippocrates relied on passive rest, Galen introduced active treatment based on the principle that **contraries cure contraries**. For instance, a cold, moist fever was aggressively treated with hot, dry remedies like crushed pepper and wine, while hot inflammatory fevers were treated with cooling cucumber.</p>",
-            "<p><span class=\"para-ref\">[3.2]</span> Galen also produced extensive anatomical treatises, but because Roman religious law strictly prohibited human dissection, he relied on pigs, dogs, and apes. This led to serious **animal dissection errors**, including claiming the human jawbone comprised two bones and that blood passed through invisible heart septum pores. Canonised by the medieval Church, Galen’s anatomical mistakes remained unchallenged for fourteen centuries.</p>"
+            "<p><span class=\"para-ref\">[3.1]</span> Across medieval England, university physicians obeyed the inherited writings of Roman physician Claudius Galen, who had expanded Hippocratic humoralism into the **Theory of Opposites**. Where Hippocratic texts advised passive rest, Galen’s manuals prescribed active intervention under the rule that **contraries cure contraries**—treating a cold, moist phlegmatic chill with hot, dry crushed pepper and wine, or cooling hot inflammatory fevers with cucumber.</p>",
+            "<p><span class=\"para-ref\">[3.2]</span> Medieval anatomy likewise rested on Galen’s inherited treatises, yet because ancient Roman law had forbidden human dissection, Galen had dissected pigs, dogs, and apes instead. This bequeathed over three hundred **animal dissection errors** to medieval England—including a two-bone human jawbone and invisible heart septum pores—which Catholic universities enforced as unchallengeable dogma until 1500 because Galen’s writings praised a single Creator.</p>"
           ],
           "act": 3,
           "theme": "Galen's Theory of Opposites and Animal Dissections",
-          "content": "<p><span class=\"para-ref\">[3.1]</span> In second-century Rome, Claudius Galen expanded Hippocratic humoralism by developing Galen’s influential **Theory of Opposites**. While Hippocrates relied on passive rest, Galen introduced active treatment based on the principle that **contraries cure contraries**. For instance, a cold, moist fever was aggressively treated with hot, dry remedies like crushed pepper and wine, while hot inflammatory fevers were treated with cooling cucumber.</p><p><span class=\"para-ref\">[3.2]</span> Galen also produced extensive anatomical treatises, but because Roman religious law strictly prohibited human dissection, he relied on pigs, dogs, and apes. This led to serious **animal dissection errors**, including claiming the human jawbone comprised two bones and that blood passed through invisible heart septum pores. Canonised by the medieval Church, Galen’s anatomical mistakes remained unchallenged for fourteen centuries.</p>"
+          "content": "<p><span class=\"para-ref\">[3.1]</span> Across medieval England, university physicians obeyed the inherited writings of Roman physician Claudius Galen, who had expanded Hippocratic humoralism into the **Theory of Opposites**. Where Hippocratic texts advised passive rest, Galen’s manuals prescribed active intervention under the rule that **contraries cure contraries**—treating a cold, moist phlegmatic chill with hot, dry crushed pepper and wine, or cooling hot inflammatory fevers with cucumber.</p><p><span class=\"para-ref\">[3.2]</span> Medieval anatomy likewise rested on Galen’s inherited treatises, yet because ancient Roman law had forbidden human dissection, Galen had dissected pigs, dogs, and apes instead. This bequeathed over three hundred **animal dissection errors** to medieval England—including a two-bone human jawbone and invisible heart septum pores—which Catholic universities enforced as unchallengeable dogma until 1500 because Galen’s writings praised a single Creator.</p>"
         },
         {
           "id": "block_4",
@@ -2813,7 +2813,7 @@
       ],
       "quick_quiz": [
         {
-          "question": "Which ancient Greek physician originally developed the Theory of the Four Humours?",
+          "question": "Which classical physician's inherited writings gave medieval universities the Theory of the Four Humours?",
           "options": [
             "Claudius Galen.",
             "Aristotle.",
@@ -2821,7 +2821,7 @@
             "Hippocrates of Kos."
           ],
           "answer": "Hippocrates of Kos.",
-          "explanation": "Hippocrates developed the Theory of the Four Humours in ancient Greece to explain disease as natural fluid imbalance."
+          "explanation": "Medieval universities inherited the Theory of the Four Humours from the translated treatises of Hippocrates of Kos."
         },
         {
           "question": "Which of the four humours was associated with spring, air, and being hot and wet?",
@@ -2915,7 +2915,7 @@
           "question": "Why did Galen’s anatomical writings contain significant anatomical errors, such as claiming the human jawbone consisted of two distinct bones?",
           "options": [
             "Medieval monks deliberately falsified Galen’s anatomical diagrams to preserve Church dogma.",
-            "Galen only examined mummified Egyptian bodies whose bones had decomposed.",
+            "Galen relied solely on wax surgical models stored inside medieval monasteries.",
             "Roman law strictly forbade the dissection of human corpses, forcing Galen to dissect animals like pigs and apes instead.",
             "Ancient Greek physicians refused to look inside animal bodies due to pagan taboos."
           ],
@@ -2998,7 +2998,7 @@
       "workbook_stages": [
         {
           "step": 1,
-          "date": "c460 BC",
+          "date": "c1250–1500",
           "para_ref": "[1.1–1.2]",
           "heading": "How did Hippocrates separate medicine from superstition?",
           "bullets": [
@@ -3006,7 +3006,7 @@
             "Rejection of gods",
             "Hippocratic Oath ethics"
           ],
-          "focus_clue": "How did Greek observation challenge supernatural beliefs?",
+          "focus_clue": "How did inherited Hippocratic texts separate medieval medicine from superstition?",
           "words": [
             {
               "term": "Hippocratic clinical method",
@@ -3021,12 +3021,12 @@
               "clue": "Official specification focus term: Hippocratic Oath ethics"
             }
           ],
-          "model_sentence": "By establishing the <strong>Hippocratic clinical method</strong>, Greek physicians pioneered the <strong>Rejection of gods</strong> as direct causes of illness, binding practitioners to <strong>Hippocratic Oath ethics</strong>.",
+          "model_sentence": "Studying the inherited <strong>Hippocratic clinical method</strong>, medieval physicians embraced the <strong>Rejection of gods</strong> in natural diagnosis while swearing <strong>Hippocratic Oath ethics</strong>.",
           "title": "Rational Explanations: Hippocrates & Clinical Method",
-          "dates": "c460 BC",
+          "dates": "c1250–1500",
           "question": "How did Hippocrates separate medicine from superstition?",
           "questionHeading": "How did Hippocrates separate medicine from superstition?",
-          "prose_hash": "8222510896"
+          "prose_hash": "ec860e3bc7"
         },
         {
           "step": 2,
@@ -3090,7 +3090,7 @@
           "dates": "c1280",
           "question": "How did the Theory of Opposites provide practical treatment rules?",
           "questionHeading": "How did the Theory of Opposites provide practical treatment rules?",
-          "prose_hash": "7978cd63c3"
+          "prose_hash": "f25abfdbeb"
         },
         {
           "step": 4,
@@ -3163,16 +3163,16 @@
         "stages": [
           {
             "step": 1,
-            "date": "c460 BC",
+            "date": "c1250–1500",
             "para_ref": "[1.1–1.2]",
             "title": "Hippocrates & Natural Observation",
-            "actor": "Hippocrates of Kos",
+            "actor": "Medieval University Physicians (via Hippocrates)",
             "tag": "🌿 CLINICAL OBSERVATION",
-            "trigger": "Hippocrates of Kos rejected divine curses, arguing that illness was caused by natural bodily imbalances that could be observed and recorded at the bedside.",
-            "desc": "Hippocrates of Kos rejected divine curses, arguing that illness was caused by natural bodily imbalances that could be observed and recorded at the bedside.",
+            "trigger": "Medieval English universities taught the inherited Latin treatises of Hippocrates, arguing illness stemmed from natural bodily imbalances observed and recorded at the bedside.",
+            "desc": "Medieval English universities taught the inherited Latin treatises of Hippocrates, arguing illness stemmed from natural bodily imbalances observed and recorded at the bedside.",
             "connective": "Established clinical observation and the Hippocratic Corpus, creating the intellectual foundation for rational Western medical thought.",
             "question": "How did Hippocrates separate medicine from superstition?",
-            "prose_hash": "8222510896"
+            "prose_hash": "ec860e3bc7"
           },
           {
             "step": 2,
@@ -3192,13 +3192,13 @@
             "date": "c1280",
             "para_ref": "[3.1–3.2]",
             "title": "Galen’s Theory of Opposites",
-            "actor": "Claudius Galen (Imperial Rome)",
+            "actor": "Medieval University Physicians (via Galen)",
             "tag": "🌶️ THEORY OF OPPOSITES",
-            "trigger": "Galen developed the Theory of Opposites in imperial Rome, instructing physicians to treat excess humours with remedies possessing opposite physical qualities.",
-            "desc": "Galen developed the Theory of Opposites in imperial Rome, instructing physicians to treat excess humours with remedies possessing opposite physical qualities.",
+            "trigger": "Medieval physicians obeyed Claudius Galen’s inherited Theory of Opposites, treating excess humours with remedies possessing opposite physical qualities.",
+            "desc": "Medieval physicians obeyed Claudius Galen’s inherited Theory of Opposites, treating excess humours with remedies possessing opposite physical qualities.",
             "connective": "Gave medieval physicians an authoritative, practical bedside prescription manual (e.g. heating spices for cold chills), making remedies feel scientifically certain.",
             "question": "How did the Theory of Opposites provide practical treatment rules?",
-            "prose_hash": "7978cd63c3"
+            "prose_hash": "f25abfdbeb"
           },
           {
             "step": 4,
@@ -3395,8 +3395,8 @@
       "quiz": [
         {
           "stage": 1,
-          "question": "Which ancient Greek physician pioneered the clinical method in fifth-century BC Greece?",
-          "q": "Which ancient Greek physician pioneered the clinical method in fifth-century BC Greece?",
+          "question": "Which classical Greek physician's inherited Latin treatises taught medieval English doctors bedside clinical observation?",
+          "q": "Which classical Greek physician's inherited Latin treatises taught medieval English doctors bedside clinical observation?",
           "options": [
             "Hippocrates",
             "Claudius Galen",
@@ -3405,7 +3405,7 @@
           ],
           "answer": "Hippocrates",
           "a": "Hippocrates",
-          "explanation": "In fifth-century BC Greece, Hippocrates pioneered bedside clinical observation and natural explanations of disease."
+          "explanation": "Translated into Latin, Hippocrates' inherited treatises taught medieval university physicians bedside clinical observation and natural causes of illness."
         },
         {
           "stage": 1,
@@ -3507,8 +3507,8 @@
         },
         {
           "stage": 3,
-          "question": "What active treatment theory did Claudius Galen develop in second-century Rome?",
-          "q": "What active treatment theory did Claudius Galen develop in second-century Rome?",
+          "question": "What active humoral treatment theory, inherited from Claudius Galen, did medieval English physicians follow?",
+          "q": "What active humoral treatment theory, inherited from Claudius Galen, did medieval English physicians follow?",
           "options": [
             "The Theory of Opposites",
             "Germ Theory",
@@ -3517,7 +3517,7 @@
           ],
           "answer": "The Theory of Opposites",
           "a": "The Theory of Opposites",
-          "explanation": "Galen expanded Hippocratic medicine with his Theory of Opposites, arguing that contraries cure contraries."
+          "explanation": "Medieval English physicians obeyed Galen's inherited Theory of Opposites, arguing that contraries cure contraries."
         },
         {
           "stage": 3,
@@ -3535,17 +3535,17 @@
         },
         {
           "stage": 3,
-          "question": "Why did Galen dissect pigs, dogs, and apes instead of human corpses in ancient Rome?",
-          "q": "Why did Galen dissect pigs, dogs, and apes instead of human corpses in ancient Rome?",
+          "question": "Why did the classical anatomical texts of Galen studied in medieval England contain serious errors?",
+          "q": "Why did the classical anatomical texts of Galen studied in medieval England contain serious errors?",
           "options": [
             "Galen believed animals had identical souls to humans",
-            "No iron scalpels existed in ancient Rome",
+            "Monastic copyists banned iron surgical knives",
             "Roman religious law strictly prohibited human dissection",
             "Human cadavers were reserved for apothecaries"
           ],
           "answer": "Roman religious law strictly prohibited human dissection",
           "a": "Roman religious law strictly prohibited human dissection",
-          "explanation": "Because Roman religious law forbade human dissection, Galen relied on animals, leading to lasting anatomical errors."
+          "explanation": "Because ancient Roman law had forbidden human dissection, Galen had dissected animals instead, passing lasting anatomical errors into medieval universities."
         },
         {
           "stage": 3,
@@ -3775,13 +3775,13 @@
           {
             "badge": "Stage 1",
             "heading": "Hippocrates & Bedside Method",
-            "date": "c460 BC",
+            "date": "c1250–1500",
             "img": "/images/hippocrates_portrait.jpg",
             "mode": "contain-light",
             "stat": "Hippocratic Oath & Secular Observation",
-            "html": "Greek physician <strong>Hippocrates</strong> rejected angry gods as the cause of illness. He pioneered <strong>bedside observation</strong> of symptoms and wrote the ethical <strong>Hippocratic Oath</strong>.",
-            "spoken": "How did the Four Humours explain every medieval illness? <short pause> Greek physician Hippocrates rejected angry gods as the cause of illness. He pioneered bedside observation of symptoms and wrote the ethical Hippocratic Oath .",
-            "paired_prose_hash": "8222510896",
+            "html": "Medieval English universities revered the inherited texts of <strong>Hippocrates</strong>, which rejected angry gods, championed <strong>bedside observation</strong> of symptoms, and set the ethical <strong>Hippocratic Oath</strong>.",
+            "spoken": "How did the Four Humours explain every medieval illness? <short pause> Medieval English universities revered the inherited texts of Hippocrates , which rejected angry gods, championed bedside observation of symptoms, and set the ethical Hippocratic Oath .",
+            "paired_prose_hash": "ec860e3bc7",
             "connective": "How did the Four Humours explain every medieval illness?"
           },
           {
@@ -3799,14 +3799,14 @@
           {
             "badge": "Stage 3",
             "heading": "Galen’s Theory of Opposites",
-            "date": "2nd C AD–1280",
+            "date": "c1250–1500",
             "img": "/images/galen_portrait.jpg",
             "mode": "contain",
             "stat": "Hot Pepper for Chills; Cucumber for Fever",
-            "html": "Roman doctor <strong>Claudius Galen</strong> treated humours using <strong>opposites</strong>—like cooling cucumber for hot fevers. Forbidden human corpses, his <strong>animal dissections</strong> left 300 errors.",
-            "spoken": "In Rome, Claudius Galen turned this theory into active treatment. <short pause> Roman doctor Claudius Galen treated humours using opposites, like cooling cucumber for hot fevers. Forbidden human corpses, his animal dissections left 300 errors.",
-            "paired_prose_hash": "7978cd63c3",
-            "connective": "In Rome, Claudius Galen turned this theory into active treatment."
+            "html": "Following <strong>Claudius Galen’s</strong> inherited <strong>Theory of Opposites</strong>, medieval doctors treated hot fevers with cooling cucumber—repeating 300 <strong>animal dissection errors</strong> across England until 1500.",
+            "spoken": "Medieval doctors also obeyed the inherited manuals of Claudius Galen. <short pause> Following Claudius Galen’s inherited Theory of Opposites , medieval doctors treated hot fevers with cooling cucumber, repeating 300 animal dissection errors across England until 1500.",
+            "paired_prose_hash": "f25abfdbeb",
+            "connective": "Medieval doctors also obeyed the inherited manuals of Claudius Galen."
           },
           {
             "badge": "Stage 4",
@@ -4085,9 +4085,9 @@
         "items": [
           {
             "stage": 1,
-            "question": "Which ancient Greek physician pioneered the clinical method in fifth-century BC Greece?",
+            "question": "Which classical Greek physician's inherited Latin treatises taught medieval English doctors bedside clinical observation?",
             "answer": "Hippocrates",
-            "explanation": "In fifth-century BC Greece, Hippocrates pioneered bedside clinical observation and natural explanations of disease."
+            "explanation": "Translated into Latin, Hippocrates' inherited treatises taught medieval university physicians bedside clinical observation and natural causes of illness."
           },
           {
             "stage": 2,
@@ -4097,9 +4097,9 @@
           },
           {
             "stage": 3,
-            "question": "What active treatment theory did Claudius Galen develop in second-century Rome?",
+            "question": "What active humoral treatment theory, inherited from Claudius Galen, did medieval English physicians follow?",
             "answer": "The Theory of Opposites",
-            "explanation": "Galen expanded Hippocratic medicine with his Theory of Opposites, arguing that contraries cure contraries."
+            "explanation": "Medieval English physicians obeyed Galen's inherited Theory of Opposites, arguing that contraries cure contraries."
           },
           {
             "stage": 4,
@@ -5471,8 +5471,8 @@
             "img": "/images/med_stage_regimen_bathhouse.jpg",
             "mode": "contain",
             "stat": "Salerno Rules for Diet, Sleep & Fresh Air",
-            "html": "Wealthy citizens followed <strong>Regimen Sanitatis</strong> rules for moderate diet, exercise, and rest, carrying <strong>clove pomanders</strong> and burning <strong>street tar barrels</strong> against miasma.",
-            "spoken": "Prevention focused on daily moderation and sweet scents. <short pause> Wealthy citizens followed Regimen Sanitatis rules for moderate diet, exercise, and rest, carrying clove pomanders and burning street tar barrels against miasma.",
+            "html": "Wealthy citizens followed <strong>Regimen Sanitatis</strong> rules for moderate diet and rest, carrying <strong>clove pomanders</strong> and burning street tar barrels for <strong>purifying the air</strong> against miasma.",
+            "spoken": "Prevention focused on daily moderation and sweet scents. <short pause> Wealthy citizens followed Regimen Sanitatis rules for moderate diet and rest, carrying clove pomanders and burning street tar barrels for purifying the air against miasma.",
             "paired_prose_hash": "1bafd18083",
             "connective": "Prevention focused on daily moderation and sweet scents."
           },
@@ -6053,8 +6053,8 @@
           "act_title": "Women Healers & Household Care — Why did the vast majority of sick people rely on female family members?",
           "theme": "Domestic Women Healers and Household Medicine",
           "title": "Domestic Women Healers and Household Medicine",
-          "content": "<p><span class=\"para-ref\">[5.1]</span> Over ninety percent of England’s medieval population lived in rural villages, far from university physicians or town guild apothecaries. For these ordinary families, healthcare was delivered almost entirely by **domestic women healers**, including mothers, grandmothers, and local village wise women. Women held responsibility for family health, preparing remedies from handwritten recipe books (*leechbooks*) passed down through generations of rural homemakers.</p><p><span class=\"para-ref\">[5.2]</span> Relying on extensive **local herb gardening**, women grew sage, chamomile, mint, and elderberry to brew soothing fever teas, poultices, and cough syrups. Wise women also performed vital **midwifery and domestic nursing**, delivering newborn infants, caring for the elderly, and nursing bedridden neighbours. Despite delivering practical bedside care for centuries, their position remained vulnerable to accusations of witchcraft if treatments failed to cure.</p>",
-          "text": "<p><span class=\"para-ref\">[5.1]</span> Over ninety percent of England’s medieval population lived in rural villages, far from university physicians or town guild apothecaries. For these ordinary families, healthcare was delivered almost entirely by **domestic women healers**, including mothers, grandmothers, and local village wise women. Women held responsibility for family health, preparing remedies from handwritten recipe books (*leechbooks*) passed down through generations of rural homemakers.</p><p><span class=\"para-ref\">[5.2]</span> Relying on extensive **local herb gardening**, women grew sage, chamomile, mint, and elderberry to brew soothing fever teas, poultices, and cough syrups. Wise women also performed vital **midwifery and domestic nursing**, delivering newborn infants, caring for the elderly, and nursing bedridden neighbours. Despite delivering practical bedside care for centuries, their position remained vulnerable to accusations of witchcraft if treatments failed to cure.</p>",
+          "content": "<p><span class=\"para-ref\">[5.1]</span> Over ninety percent of England’s medieval population lived in rural villages, far from university physicians or town guild apothecaries. For these ordinary families, **care within the community** and at home was delivered almost entirely by **domestic women healers**, including mothers, grandmothers, and village wise women who prepared remedies from handwritten recipe books (*leechbooks*) passed down through generations.</p><p><span class=\"para-ref\">[5.2]</span> Relying on extensive **local herb gardening**, women grew sage, chamomile, mint, and elderberry to brew soothing fever teas, poultices, and cough syrups. Wise women also performed vital **midwifery and domestic nursing**, delivering newborn infants, caring for the elderly, and nursing bedridden neighbours. Despite delivering practical bedside care for centuries, their position remained vulnerable to accusations of witchcraft if treatments failed to cure.</p>",
+          "text": "<p><span class=\"para-ref\">[5.1]</span> Over ninety percent of England’s medieval population lived in rural villages, far from university physicians or town guild apothecaries. For these ordinary families, **care within the community** and at home was delivered almost entirely by **domestic women healers**, including mothers, grandmothers, and village wise women who prepared remedies from handwritten recipe books (*leechbooks*) passed down through generations.</p><p><span class=\"para-ref\">[5.2]</span> Relying on extensive **local herb gardening**, women grew sage, chamomile, mint, and elderberry to brew soothing fever teas, poultices, and cough syrups. Wise women also performed vital **midwifery and domestic nursing**, delivering newborn infants, caring for the elderly, and nursing bedridden neighbours. Despite delivering practical bedside care for centuries, their position remained vulnerable to accusations of witchcraft if treatments failed to cure.</p>",
           "isReversed": false,
           "sources": [
             {
@@ -6081,7 +6081,7 @@
             }
           ],
           "paragraphs": [
-            "<p><span class=\"para-ref\">[5.1]</span> Over ninety percent of England’s medieval population lived in rural villages, far from university physicians or town guild apothecaries. For these ordinary families, healthcare was delivered almost entirely by **domestic women healers**, including mothers, grandmothers, and local village wise women. Women held responsibility for family health, preparing remedies from handwritten recipe books (*leechbooks*) passed down through generations of rural homemakers.</p>",
+            "<p><span class=\"para-ref\">[5.1]</span> Over ninety percent of England’s medieval population lived in rural villages, far from university physicians or town guild apothecaries. For these ordinary families, **care within the community** and at home was delivered almost entirely by **domestic women healers**, including mothers, grandmothers, and village wise women who prepared remedies from handwritten recipe books (*leechbooks*) passed down through generations.</p>",
             "<p><span class=\"para-ref\">[5.2]</span> Relying on extensive **local herb gardening**, women grew sage, chamomile, mint, and elderberry to brew soothing fever teas, poultices, and cough syrups. Wise women also performed vital **midwifery and domestic nursing**, delivering newborn infants, caring for the elderly, and nursing bedridden neighbours. Despite delivering practical bedside care for centuries, their position remained vulnerable to accusations of witchcraft if treatments failed to cure.</p>"
           ],
           "theme_heading": "Domestic Women Healers and Household Medicine",
@@ -6539,7 +6539,7 @@
           "dates": "c1400",
           "question": "Why did the vast majority of sick people rely on female family members?",
           "questionHeading": "Why did the vast majority of sick people rely on female family members?",
-          "prose_hash": "a60a573eb6"
+          "prose_hash": "76d68d2834"
         }
       ],
       "causal_domino_spine": {
@@ -6609,7 +6609,7 @@
             "desc": "The vast majority of medieval healthcare was delivered inside the peasant home by female family members, local midwives, and village wise women.",
             "connective": "Brewed herbal teas, applied bread poultices, and delivered infants, preserving vital practical knowledge through oral tradition at zero financial cost.",
             "question": "Why did the vast majority of sick people rely on female family members?",
-            "prose_hash": "a60a573eb6"
+            "prose_hash": "76d68d2834"
           }
         ]
       },
@@ -7222,9 +7222,9 @@
             "img": "/images/banner_medicine_medieval.jpg",
             "mode": "contain-light",
             "stat": "Over 90% of People Lived in Rural Villages",
-            "html": "With 90% of people in villages, <strong>mothers and wise women</strong> delivered babies as <strong>midwives</strong> and mixed everyday <strong>camomile, mint, and honey remedies</strong> passed down in families.",
-            "spoken": "In country villages, women delivered almost all daily care. <short pause> With 90% of people in villages, mothers and wise women delivered babies as midwives and mixed everyday camomile, mint, and honey remedies passed down in families.",
-            "paired_prose_hash": "a60a573eb6",
+            "html": "With 90% in villages, <strong>care within the community</strong> and at home fell to <strong>mothers and wise women</strong> acting as <strong>midwives</strong> and mixing family <strong>herbal remedies</strong>.",
+            "spoken": "In country villages, women delivered almost all daily care. <short pause> With 90 percent in villages, care within the community and at home fell to mothers and wise women acting as midwives and mixing family herbal remedies.",
+            "paired_prose_hash": "76d68d2834",
             "connective": "In country villages, women delivered almost all daily care."
           },
           {
@@ -7713,7 +7713,7 @@
           "id": "block_3",
           "decimal": "[1.5.3]",
           "title": "Desperate Cures: Live Hens, Bloodletting and Crushed Emeralds",
-          "text": "<p><span class=\"para-ref\">[3.1]</span> Lacking understanding of bacterial pathology, medieval medical treatments proved completely futile against the plague. Convinced the pandemic was caused by **divine wrath and corrupt miasma**, healers tried sympathetic remedies to draw poison from the body. Folk practitioners recommended **lancing swollen buboes** or strapping **live plucked hens** or warm dried toads directly against swollen groin sores, which only caused agonising pain, blood poisoning, and septicaemia.</p><p><span class=\"para-ref\">[3.2]</span> Qualified physicians relied on aggressive **bloodletting** and costly **apothecary potions**, draining pints of blood from weakened patients and feeding wealthy nobles expensive potions containing crushed gemstones dissolved in vinegar. Concurrently, patients swallowed powdered theriac containing snake venom, while religious zealots engaged in public flagellation. None of these desperate treatments possessed any pharmacological efficacy, and mortality rates remained catastrophic across all social classes.</p>",
+          "text": "<p><span class=\"para-ref\">[3.1]</span> Lacking understanding of bacterial pathology, medieval **responses to the Black Death** and medical treatments proved futile. Convinced the pandemic stemmed from **divine wrath and corrupt miasma**, healers tried sympathetic remedies to draw poison out. Folk practitioners recommended **lancing swollen buboes** or strapping **live plucked hens** or warm dried toads onto swollen groin sores, causing agonising pain, blood poisoning, and septicaemia.</p><p><span class=\"para-ref\">[3.2]</span> Qualified physicians relied on aggressive **bloodletting** and costly **apothecary potions**, draining pints of blood from weakened patients and feeding wealthy nobles expensive potions containing crushed gemstones dissolved in vinegar. Concurrently, patients swallowed powdered theriac containing snake venom, while religious zealots engaged in public flagellation. None of these desperate treatments possessed any pharmacological efficacy, and mortality rates remained catastrophic across all social classes.</p>",
           "theme_heading": "Desperate Cures: Live Hens, Bloodletting and Crushed Emeralds",
           "sources": [
             {
@@ -7740,12 +7740,12 @@
             }
           ],
           "paragraphs": [
-            "<p><span class=\"para-ref\">[3.1]</span> Lacking understanding of bacterial pathology, medieval medical treatments proved completely futile against the plague. Convinced the pandemic was caused by **divine wrath and corrupt miasma**, healers tried sympathetic remedies to draw poison from the body. Folk practitioners recommended **lancing swollen buboes** or strapping **live plucked hens** or warm dried toads directly against swollen groin sores, which only caused agonising pain, blood poisoning, and septicaemia.</p>",
+            "<p><span class=\"para-ref\">[3.1]</span> Lacking understanding of bacterial pathology, medieval **responses to the Black Death** and medical treatments proved futile. Convinced the pandemic stemmed from **divine wrath and corrupt miasma**, healers tried sympathetic remedies to draw poison out. Folk practitioners recommended **lancing swollen buboes** or strapping **live plucked hens** or warm dried toads onto swollen groin sores, causing agonising pain, blood poisoning, and septicaemia.</p>",
             "<p><span class=\"para-ref\">[3.2]</span> Qualified physicians relied on aggressive **bloodletting** and costly **apothecary potions**, draining pints of blood from weakened patients and feeding wealthy nobles expensive potions containing crushed gemstones dissolved in vinegar. Concurrently, patients swallowed powdered theriac containing snake venom, while religious zealots engaged in public flagellation. None of these desperate treatments possessed any pharmacological efficacy, and mortality rates remained catastrophic across all social classes.</p>"
           ],
           "act": 3,
           "theme": "Desperate Cures: Live Hens, Bloodletting and Crushed Emeralds",
-          "content": "<p><span class=\"para-ref\">[3.1]</span> Lacking understanding of bacterial pathology, medieval medical treatments proved completely futile against the plague. Convinced the pandemic was caused by **divine wrath and corrupt miasma**, healers tried sympathetic remedies to draw poison from the body. Folk practitioners recommended **lancing swollen buboes** or strapping **live plucked hens** or warm dried toads directly against swollen groin sores, which only caused agonising pain, blood poisoning, and septicaemia.</p><p><span class=\"para-ref\">[3.2]</span> Qualified physicians relied on aggressive **bloodletting** and costly **apothecary potions**, draining pints of blood from weakened patients and feeding wealthy nobles expensive potions containing crushed gemstones dissolved in vinegar. Concurrently, patients swallowed powdered theriac containing snake venom, while religious zealots engaged in public flagellation. None of these desperate treatments possessed any pharmacological efficacy, and mortality rates remained catastrophic across all social classes.</p>",
+          "content": "<p><span class=\"para-ref\">[3.1]</span> Lacking understanding of bacterial pathology, medieval **responses to the Black Death** and medical treatments proved futile. Convinced the pandemic stemmed from **divine wrath and corrupt miasma**, healers tried sympathetic remedies to draw poison out. Folk practitioners recommended **lancing swollen buboes** or strapping **live plucked hens** or warm dried toads onto swollen groin sores, causing agonising pain, blood poisoning, and septicaemia.</p><p><span class=\"para-ref\">[3.2]</span> Qualified physicians relied on aggressive **bloodletting** and costly **apothecary potions**, draining pints of blood from weakened patients and feeding wealthy nobles expensive potions containing crushed gemstones dissolved in vinegar. Concurrently, patients swallowed powdered theriac containing snake venom, while religious zealots engaged in public flagellation. None of these desperate treatments possessed any pharmacological efficacy, and mortality rates remained catastrophic across all social classes.</p>",
           "image": "/images/med_stage_cupping_bloodletting.jpg",
           "caption": "Medieval Physician Performing Phlebotomy (Aldobrandino of Siena, Li Livres dou Santé, late 13th Century): Illuminated inside a gold-leaf initial 'D', a medieval practitioner lances a patient's median cubital vein over a catch-basin—a desperate humoral remedy that weakened Black Death sufferers.",
           "image_alt": "Late thirteenth-century illuminated initial from Aldobrandino of Siena showing a medieval physician bleeding a patient's arm into a bowl"
@@ -8135,9 +8135,9 @@
           "title": "BBC Two / ERA: History File – Medicine, Public Health and Government",
           "duration": "18 mins 57 secs",
           "pathway": "Archival Documentary",
-          "teacher_guidance": "Recommended Watch Window: 01:00–11:30 | Lesson Phase: Roman Collapse to Medieval Plague Towns | Tone Alert: BBC Two History File comparing Roman aqueducts and sewers with medieval urban sanitation, cesspits, and royal/municipal responses to plague.",
-          "viewing_task": "[02:00] Recall: Why did Britain’s Roman public health infrastructure (aqueducts, bathhouses, stone sewers) collapse after the 5th century?\n[08:30] Hinge Question: Were medieval town councils completely indifferent to filth during the Black Death, or crippled by a lack of Germ Theory and tax revenue?",
-          "model_answer": "Fragmented Saxon and medieval kingdoms lacked the centralized imperial taxation, slave labour, and engineering administration needed to maintain Roman stone infrastructure. Medieval authorities did pass muck-raking bylaws and King Edward III ordered London’s streets cleaned in 1349 to disperse \"miasma\", proving they cared about filth even without understanding bacteria."
+          "teacher_guidance": "Recommended Watch Window: 04:30–11:30 | Lesson Phase: Medieval Urban Sanitation & Plague Bylaws | Tone Alert: BBC Two History File examining medieval town cesspits, muck-raking bylaws, and royal/municipal responses to the 1348–49 Black Death.",
+          "viewing_task": "[05:15] Recall: Why did open gutters, overflowing cesspits, and butcher offal make medieval English towns ideal breeding grounds for plague rats?\n[08:30] Hinge Question: Were medieval town councils completely indifferent to filth during the Black Death, or crippled by a lack of Germ Theory and tax revenue?",
+          "model_answer": "Unpaved lanes, leaking cesspits, and butcher offal attracted black rats carrying plague fleas into crowded timber homes. Yet medieval authorities were not indifferent: boroughs passed muck-raking bylaws and King Edward III ordered London’s streets cleaned in 1349 to disperse 'miasma', proving they acted against filth despite lacking Germ Theory."
         }
       ],
       "workbook_stages": [
@@ -8235,7 +8235,7 @@
           "dates": "Winter 1348",
           "question": "Why were medical treatments completely useless against the plague?",
           "questionHeading": "Why were medical treatments completely useless against the plague?",
-          "prose_hash": "fa3081d0a1"
+          "prose_hash": "9698c133df"
         },
         {
           "step": 4,
@@ -8343,7 +8343,7 @@
             "desc": "Helpless physicians and barber-surgeons lanced blackened buboes with hot knives, strapped live plucked hens to sores, and prescribed expensive emerald potions.",
             "connective": "Failed completely to cure patients, often causing fatal secondary septic shock while accelerating the spread of infection among desperate families.",
             "question": "Why were medical treatments completely useless against the plague?",
-            "prose_hash": "fa3081d0a1"
+            "prose_hash": "9698c133df"
           },
           {
             "step": 4,
@@ -8947,9 +8947,9 @@
             "img": "/images/flagellants_doornik_1349.jpg",
             "mode": "contain-light",
             "stat": "Live Hens, Crushed Gems & Bloodletting",
-            "html": "Blaming God and miasma, healers <strong>lanced buboes</strong>, strapped <strong>live plucked hens</strong> to sores, drained blood, or joined <strong>flagellants</strong>—spreading sepsis without killing bacteria.",
-            "spoken": "Not knowing about fleas or bacteria, healers tried everything. <short pause> Blaming God and miasma, healers lanced buboes , strapped live plucked hens to sores, drained blood, or joined flagellants, spreading sepsis without killing bacteria.",
-            "paired_prose_hash": "fa3081d0a1",
+            "html": "Driven by God and miasma beliefs, medieval <strong>responses to the Black Death</strong> included <strong>lancing buboes</strong>, tying <strong>live plucked hens</strong> to sores, bleeding, and <strong>flagellants</strong>.",
+            "spoken": "Not knowing about fleas or bacteria, healers tried everything. <short pause> Driven by God and miasma beliefs, medieval responses to the Black Death included lancing buboes , tying live plucked hens to sores, bleeding, and flagellants.",
+            "paired_prose_hash": "9698c133df",
             "connective": "Not knowing about fleas or bacteria, healers tried everything."
           },
           {
@@ -9530,7 +9530,7 @@
         },
         {
           "theme": "Philosophical Transactions and Empirical Peer Review (1665)",
-          "content": "<p><span class=\"para-ref\">[4.1]</span> In 1665, Royal Society secretary Henry Oldenburg established the pioneering journal ***Philosophical Transactions***, creating the world’s first continuous scientific periodical. Oldenburg established a formal network of international scientific correspondence, allowing physicians, chemists, and natural philosophers across Europe to communicate findings, publish experimental records, and challenge unproven theories rapidly in print. This publication revolutionised how academic medical discoveries were evaluated and preserved.</p><p><span class=\"para-ref\">[4.2]</span> Crucially, the journal pioneered the modern mechanism of **scientific paper peer-sharing**, submitting submitted papers to independent expert committees for critical evaluation before publication. The journal fostered lively **empirical laboratory debates**, recording investigations into blood transfusions, respiration, and microscopic tissue structures. This transparent communication model ensured medical discoveries were tested collectively, preventing fraudulent claims and accelerating genuine scientific progress. It established a permanent archive for European scientific medicine.</p>",
+          "content": "<p><span class=\"para-ref\">[4.1]</span> In 1665, Royal Society secretary Henry Oldenburg established the pioneering journal ***Philosophical Transactions***, creating the world’s first continuous scientific periodical and transforming the **transmission of ideas** across Europe. Oldenburg built an international correspondence network allowing physicians, chemists, and natural philosophers to communicate findings, publish experimental records, and challenge unproven theories rapidly in print.</p><p><span class=\"para-ref\">[4.2]</span> Crucially, the journal pioneered the modern mechanism of **scientific paper peer-sharing**, submitting research papers to independent expert committees for critical evaluation before publication. Its pages fostered lively **empirical laboratory debates**, recording investigations into blood transfusions, respiration, and microscopic tissue structures. This transparent model ensured medical discoveries were tested collectively, accelerating genuine scientific progress across Britain and Europe.</p>",
           "isReversed": true,
           "sources": [
             {
@@ -9556,13 +9556,13 @@
               "studio_voice_label": "Henry Oldenburg"
             }
           ],
-          "text": "<p><span class=\"para-ref\">[4.1]</span> In 1665, Royal Society secretary Henry Oldenburg established the pioneering journal ***Philosophical Transactions***, creating the world’s first continuous scientific periodical. Oldenburg established a formal network of international scientific correspondence, allowing physicians, chemists, and natural philosophers across Europe to communicate findings, publish experimental records, and challenge unproven theories rapidly in print. This publication revolutionised how academic medical discoveries were evaluated and preserved.</p><p><span class=\"para-ref\">[4.2]</span> Crucially, the journal pioneered the modern mechanism of **scientific paper peer-sharing**, submitting submitted papers to independent expert committees for critical evaluation before publication. The journal fostered lively **empirical laboratory debates**, recording investigations into blood transfusions, respiration, and microscopic tissue structures. This transparent communication model ensured medical discoveries were tested collectively, preventing fraudulent claims and accelerating genuine scientific progress. It established a permanent archive for European scientific medicine.</p>",
+          "text": "<p><span class=\"para-ref\">[4.1]</span> In 1665, Royal Society secretary Henry Oldenburg established the pioneering journal ***Philosophical Transactions***, creating the world’s first continuous scientific periodical and transforming the **transmission of ideas** across Europe. Oldenburg built an international correspondence network allowing physicians, chemists, and natural philosophers to communicate findings, publish experimental records, and challenge unproven theories rapidly in print.</p><p><span class=\"para-ref\">[4.2]</span> Crucially, the journal pioneered the modern mechanism of **scientific paper peer-sharing**, submitting research papers to independent expert committees for critical evaluation before publication. Its pages fostered lively **empirical laboratory debates**, recording investigations into blood transfusions, respiration, and microscopic tissue structures. This transparent model ensured medical discoveries were tested collectively, accelerating genuine scientific progress across Britain and Europe.</p>",
           "theme_heading": "Philosophical Transactions and Empirical Peer Review (1665)",
           "title": "Philosophical Transactions and Empirical Peer Review (1665)",
           "act": 4,
           "paragraphs": [
-            "<p><span class=\"para-ref\">[4.1]</span> In 1665, Royal Society secretary Henry Oldenburg established the pioneering journal ***Philosophical Transactions***, creating the world’s first continuous scientific periodical. Oldenburg established a formal network of international scientific correspondence, allowing physicians, chemists, and natural philosophers across Europe to communicate findings, publish experimental records, and challenge unproven theories rapidly in print. This publication revolutionised how academic medical discoveries were evaluated and preserved.</p>",
-            "<p><span class=\"para-ref\">[4.2]</span> Crucially, the journal pioneered the modern mechanism of **scientific paper peer-sharing**, submitting submitted papers to independent expert committees for critical evaluation before publication. The journal fostered lively **empirical laboratory debates**, recording investigations into blood transfusions, respiration, and microscopic tissue structures. This transparent communication model ensured medical discoveries were tested collectively, preventing fraudulent claims and accelerating genuine scientific progress. It established a permanent archive for European scientific medicine.</p>"
+            "<p><span class=\"para-ref\">[4.1]</span> In 1665, Royal Society secretary Henry Oldenburg established the pioneering journal ***Philosophical Transactions***, creating the world’s first continuous scientific periodical and transforming the **transmission of ideas** across Europe. Oldenburg built an international correspondence network allowing physicians, chemists, and natural philosophers to communicate findings, publish experimental records, and challenge unproven theories rapidly in print.</p>",
+            "<p><span class=\"para-ref\">[4.2]</span> Crucially, the journal pioneered the modern mechanism of **scientific paper peer-sharing**, submitting research papers to independent expert committees for critical evaluation before publication. Its pages fostered lively **empirical laboratory debates**, recording investigations into blood transfusions, respiration, and microscopic tissue structures. This transparent model ensured medical discoveries were tested collectively, accelerating genuine scientific progress across Britain and Europe.</p>"
           ],
           "image": "/images/med_stage_phil_trans_1665.jpg",
           "caption": "Title Page of Philosophical Transactions, Volume I (6 March 1665, Royal Society of London): Edited by Henry Oldenburg, the world’s first peer-reviewed scientific journal allowed anatomists and physicians across Europe to publish, scrutinise, and replicate experimental findings rapidly."
@@ -10357,7 +10357,7 @@
           "dates": "1665",
           "question": "How did scientific journals speed up the exchange of medical knowledge?",
           "questionHeading": "How did scientific journals speed up the exchange of medical knowledge?",
-          "prose_hash": "9d6f67ac80"
+          "prose_hash": "a1a7d262d9"
         },
         {
           "step": 5,
@@ -10446,7 +10446,7 @@
             "desc": "Royal Society secretary Henry Oldenburg published Philosophical Transactions, establishing the world’s first regular, peer-reviewed scientific journal.",
             "connective": "Created an international communications network enabling European researchers to verify, replicate, and debate discoveries, permanently democratising scientific inquiry.",
             "question": "How did scientific journals speed up the exchange of medical knowledge?",
-            "prose_hash": "9d6f67ac80"
+            "prose_hash": "a1a7d262d9"
           },
           {
             "step": 5,
@@ -10716,9 +10716,9 @@
             "img": "/images/med_stage_phil_trans_1665.jpg",
             "mode": "contain-light",
             "stat": "World’s First Scientific Journal (1665)",
-            "html": "Secretary <strong>Henry Oldenburg</strong> launched <strong><em>Philosophical Transactions</em></strong> in 1665, letting European scientists share and <strong>debate experiments</strong> on blood, air, and anatomy.",
-            "spoken": "New discoveries now spread rapidly through printed journals. <short pause> Secretary Henry Oldenburg launched Philosophical Transactions in 1665, letting European scientists share and debate experiments on blood, air, and anatomy.",
-            "paired_prose_hash": "9d6f67ac80",
+            "html": "Secretary <strong>Henry Oldenburg</strong> launched <strong><em>Philosophical Transactions</em></strong> in 1665, speeding the <strong>transmission of ideas</strong> as European scientists shared and <strong>debated experiments</strong> in print.",
+            "spoken": "New discoveries now spread rapidly through printed journals. <short pause> Secretary Henry Oldenburg launched Philosophical Transactions in 1665, speeding the transmission of ideas as European scientists shared and debated experiments in print.",
+            "paired_prose_hash": "a1a7d262d9",
             "connective": "New discoveries now spread rapidly through printed journals."
           },
           {
@@ -13135,7 +13135,7 @@
           "options": [
             "Galen was blind throughout his medical career",
             "Monastic scribes burned Galen's human drawings",
-            "Galen studied only Egyptian mummies",
+            "Galen studied only medieval wax models",
             "Roman law forbade human dissection, so Galen dissected apes, dogs, and pigs"
           ],
           "answer": "Roman law forbade human dissection, so Galen dissected apes, dogs, and pigs",
@@ -15814,8 +15814,8 @@
             "img": "/images/harvey_de_motu_cordis_valves.jpg",
             "mode": "contain-light",
             "stat": "Forearm Cord Proved One-Way Venous Flow",
-            "html": "In <strong><em>De Motu Cordis</em> (1628)</strong>, Harvey’s <strong>tight forearm tourniquet</strong> swelled surface veins; pressing a finger along them proved <strong>valves let blood flow</strong> only toward the heart.",
-            "spoken": "In 1628, he published an experiment anyone could test. <short pause> In De Motu Cordis (1628) , Harvey’s tight forearm tourniquet swelled surface veins; pressing a finger along them proved valves let blood flow only toward the heart.",
+            "html": "Publishing his <strong>discovery of the circulation of the blood</strong> in <strong><em>De Motu Cordis</em> (1628)</strong>, Harvey’s <strong>forearm ligature</strong> proved vein valves direct blood solely toward the heart.",
+            "spoken": "In 1628, he published an experiment anyone could test. <short pause> Publishing his discovery of the circulation of the blood in De Motu Cordis (1628) , Harvey’s forearm ligature proved vein valves direct blood solely toward the heart.",
             "paired_prose_hash": "c50fac8dab",
             "connective": "In 1628, he published an experiment anyone could test."
           },
@@ -16302,7 +16302,7 @@
         },
         {
           "theme": "Supernatural Fears and Humoral Continuity (1665)",
-          "content": "<p><span class=\"para-ref\">[2.1]</span> Despite the scientific breakthroughs of Vesalius, Harvey, and the Royal Society, seventeenth-century explanations of disease demonstrated striking continuity with the Middle Ages. The overwhelming majority of citizens believed the epidemic was caused by the **wrath of God and poisonous miasma**, interpreting planetary alignments, comets, and solar eclipses as celestial signs of divine vengeance sent upon a decadent, sinful London society.</p><p><span class=\"para-ref\">[2.2]</span> Medical therapeutics remained steeped in humoral and sympathetic superstition. Citizens purchased expensive **plague water and herbal pomanders** containing cloves, vinegar, and ambergris to ward off corrupt air, while quack doctors peddled miraculous London Drops. In desperate attempts to draw poison from swollen bodies, healers prescribed **pigeon bubo remedies**, strapping the plucked, warm rumps of live pigeons against blackened sores, which achieved zero curative benefit.</p>",
+          "content": "<p><span class=\"para-ref\">[2.1]</span> Despite Renaissance anatomical discovery under Vesalius, Harvey, and the Royal Society, everyday **prevention**, treatment, **care in the community**, and care **in hospitals** showed striking continuity across London. Without knowledge of *Yersinia pestis* or rat fleas, epidemic causation and clinical therapy in 1665 still blamed the **wrath of God and poisonous miasma**, reading comets and planetary alignments as divine vengeance.</p><p><span class=\"para-ref\">[2.2]</span> Household women healers still nursed families while endowed civic hospitals replaced dissolved monasteries. Doctors wore bird masks, burned street pitch, and sold **plague water and herbal pomanders** of cloves and ambergris, while folk healers prescribed **pigeon bubo remedies**, strapping live plucked pigeons or chickens to buboes with zero clinical change or curative benefit.</p>",
           "image": "/images/plague_doctor_schnabel.jpg",
           "image_alt": "Seventeenth-century German satirical copperplate engraving Doctor Schnabel von Rom by Paul Fürst (1656) showing a plague physician in a beaked mask stuffed with aromatic herbs",
           "caption": "The Beaked Plague Doctor (\"Doctor Schnabel von Rom\", copperplate engraving by Paul Fürst, Nuremberg, 1656): European plague physicians wore waxed leather robes, glass eyepieces, and a long leather beak packed with dried lavender, spices, and theriac to filter out supposed miasmic vapours.",
@@ -16331,13 +16331,13 @@
               "studio_voice_label": "Royal College of Physicians (1665)"
             }
           ],
-          "text": "<p><span class=\"para-ref\">[2.1]</span> Despite the scientific breakthroughs of Vesalius, Harvey, and the Royal Society, seventeenth-century explanations of disease demonstrated striking continuity with the Middle Ages. The overwhelming majority of citizens believed the epidemic was caused by the **wrath of God and poisonous miasma**, interpreting planetary alignments, comets, and solar eclipses as celestial signs of divine vengeance sent upon a decadent, sinful London society.</p><p><span class=\"para-ref\">[2.2]</span> Medical therapeutics remained steeped in humoral and sympathetic superstition. Citizens purchased expensive **plague water and herbal pomanders** containing cloves, vinegar, and ambergris to ward off corrupt air, while quack doctors peddled miraculous London Drops. In desperate attempts to draw poison from swollen bodies, healers prescribed **pigeon bubo remedies**, strapping the plucked, warm rumps of live pigeons against blackened sores, which achieved zero curative benefit.</p>",
+          "text": "<p><span class=\"para-ref\">[2.1]</span> Despite Renaissance anatomical discovery under Vesalius, Harvey, and the Royal Society, everyday **prevention**, treatment, **care in the community**, and care **in hospitals** showed striking continuity across London. Without knowledge of *Yersinia pestis* or rat fleas, epidemic causation and clinical therapy in 1665 still blamed the **wrath of God and poisonous miasma**, reading comets and planetary alignments as divine vengeance.</p><p><span class=\"para-ref\">[2.2]</span> Household women healers still nursed families while endowed civic hospitals replaced dissolved monasteries. Doctors wore bird masks, burned street pitch, and sold **plague water and herbal pomanders** of cloves and ambergris, while folk healers prescribed **pigeon bubo remedies**, strapping live plucked pigeons or chickens to buboes with zero clinical change or curative benefit.</p>",
           "theme_heading": "Supernatural Fears and Humoral Continuity (1665)",
           "title": "Supernatural Fears and Humoral Continuity (1665)",
           "act": 2,
           "paragraphs": [
-            "<p><span class=\"para-ref\">[2.1]</span> Despite the scientific breakthroughs of Vesalius, Harvey, and the Royal Society, seventeenth-century explanations of disease demonstrated striking continuity with the Middle Ages. The overwhelming majority of citizens believed the epidemic was caused by the **wrath of God and poisonous miasma**, interpreting planetary alignments, comets, and solar eclipses as celestial signs of divine vengeance sent upon a decadent, sinful London society.</p>",
-            "<p><span class=\"para-ref\">[2.2]</span> Medical therapeutics remained steeped in humoral and sympathetic superstition. Citizens purchased expensive **plague water and herbal pomanders** containing cloves, vinegar, and ambergris to ward off corrupt air, while quack doctors peddled miraculous London Drops. In desperate attempts to draw poison from swollen bodies, healers prescribed **pigeon bubo remedies**, strapping the plucked, warm rumps of live pigeons against blackened sores, which achieved zero curative benefit.</p>"
+            "<p><span class=\"para-ref\">[2.1]</span> Despite Renaissance anatomical discovery under Vesalius, Harvey, and the Royal Society, everyday **prevention**, treatment, **care in the community**, and care **in hospitals** showed striking continuity across London. Without knowledge of *Yersinia pestis* or rat fleas, epidemic causation and clinical therapy in 1665 still blamed the **wrath of God and poisonous miasma**, reading comets and planetary alignments as divine vengeance.</p>",
+            "<p><span class=\"para-ref\">[2.2]</span> Household women healers still nursed families while endowed civic hospitals replaced dissolved monasteries. Doctors wore bird masks, burned street pitch, and sold **plague water and herbal pomanders** of cloves and ambergris, while folk healers prescribed **pigeon bubo remedies**, strapping live plucked pigeons or chickens to buboes with zero clinical change or curative benefit.</p>"
           ]
         },
         {
@@ -17242,7 +17242,7 @@
           "dates": "Summer 1665",
           "question": "Why did citizens in London still rely on miasma, pomanders, and pigeons?",
           "questionHeading": "Why did citizens in London still rely on miasma, pomanders, and pigeons?",
-          "prose_hash": "7b4bc1672d"
+          "prose_hash": "036645fda5"
         },
         {
           "step": 3,
@@ -17369,7 +17369,7 @@
             "desc": "Without knowledge of Yersinia pestis or rat fleas, doctors wore bird masks, burned street pitch, carried pomanders, and strapped live plucked chickens to buboes.",
             "connective": "Proved that 150 years of Renaissance anatomical discovery had produced zero change in understanding epidemic causation or effective clinical therapy.",
             "question": "Why did citizens in London still rely on miasma, pomanders, and pigeons?",
-            "prose_hash": "7b4bc1672d"
+            "prose_hash": "036645fda5"
           },
           {
             "step": 3,
@@ -17642,9 +17642,9 @@
             "mode": "landscape",
             "pos": "center 30%",
             "stat": "Live Plucked Pigeons Strapped to Buboes",
-            "html": "Just like 1348, Londoners blamed <strong>God’s wrath and miasma</strong>—buying quack London Drops, carrying <strong>clove pomanders</strong>, and tying plucked <strong>live pigeons</strong> to buboes.",
-            "spoken": "Everyday explanations and cures barely differed from 1348. <short pause> Just like 1348, Londoners blamed God’s wrath and miasma, buying quack London Drops, carrying clove pomanders , and tying plucked live pigeons to buboes.",
-            "paired_prose_hash": "7b4bc1672d",
+            "html": "Everyday <strong>prevention</strong>, treatment, <strong>care in the community</strong>, and civic <strong>hospitals</strong> changed little: 1665 <strong>responses</strong> still blamed God and miasma, using pomanders and <strong>live pigeons</strong>.",
+            "spoken": "Everyday explanations and cures barely differed from 1348. <short pause> Everyday prevention , treatment, care in the community , and civic hospitals changed little: 1665 responses still blamed God and miasma, using pomanders and live pigeons .",
+            "paired_prose_hash": "036645fda5",
             "connective": "Everyday explanations and cures barely differed from 1348."
           },
           {
@@ -17654,8 +17654,8 @@
             "img": "/images/london_bill_of_mortality_1665.jpg",
             "mode": "contain-light",
             "stat": "40-Day Guarded Quarantine With Red Cross",
-            "html": "London’s Lord Mayor enforced tougher <strong>40-day quarantine orders</strong>: armed watchmen nailed sick houses shut beneath a painted <strong>red cross</strong> reading <em>“Lord Have Mercy Upon Us!”</em>",
-            "spoken": "City government, however, organised much stricter controls. <short pause> London’s Lord Mayor enforced tougher 40-day quarantine orders : armed watchmen nailed sick houses shut beneath a painted red cross reading “Lord Have Mercy Upon Us!”",
+            "html": "To <strong>prevent its spread</strong>, London’s Lord Mayor enforced <strong>40-day quarantine orders</strong>: watchmen nailed infected homes shut beneath a painted <strong>red cross</strong> and opened suburban <strong>pest houses</strong>.",
+            "spoken": "City government, however, organised much stricter controls. <short pause> To prevent its spread , London’s Lord Mayor enforced 40-day quarantine orders : watchmen nailed infected homes shut beneath a painted red cross and opened suburban pest houses .",
             "paired_prose_hash": "adc4a0a7e7",
             "connective": "City government, however, organised much stricter controls."
           },
@@ -19408,8 +19408,8 @@
             "img": "/images/court_for_king_cholera.png",
             "mode": "contain-light",
             "stat": "Germs Mistaken for Result—Not Cause—of Rot",
-            "html": "Before 1861, doctors blamed epidemics on <strong>foul miasma smells</strong> and <strong>spontaneous generation</strong>—claiming rotting matter created microbes rather than <strong>microbes causing rot</strong>.",
-            "spoken": "How did Louis Pasteur and Robert Koch prove that specific germs cause disease? <short pause> Before 1861, doctors blamed epidemics on foul miasma smells and spontaneous generation, claiming rotting matter created microbes rather than microbes causing rot .",
+            "html": "Before 1861, doctors blamed epidemic <strong>disease and illness</strong> on <strong>foul miasma</strong> and <strong>spontaneous generation</strong>—claiming rotting matter created microbes rather than <strong>microbes causing rot</strong>.",
+            "spoken": "How did Louis Pasteur and Robert Koch prove that specific germs cause disease? <short pause> Before 1861, doctors blamed epidemic disease and illness on foul miasma and spontaneous generation, claiming rotting matter created microbes rather than microbes causing rot .",
             "paired_prose_hash": "dcba1a2488",
             "connective": "How did Louis Pasteur and Robert Koch prove that specific germs cause disease?"
           },
@@ -21151,7 +21151,7 @@
         "slug": "med_l12_visual_story_sheet",
         "ktBadge": "Key Topic 3.2 • Prevention",
         "datesBadge": "1796 – 1871",
-        "topicLabel": "KT3.2: Approaches to Prevention: Edward Jenner & The Smallpox Vaccine (1796–1853)",
+        "topicLabel": "KT3.2 Case Study & Approaches to Prevention: Edward Jenner & Smallpox Vaccination (1796–1871)",
         "title": "Why Did Edward Jenner’s Smallpox Vaccine Face Such Fierce Opposition?",
         "spokenTitle": "Why did Edward Jenner’s smallpox vaccine face such fierce opposition?",
         "thumbUrl": "/images/jenner_vaccinating_phipps.jpg",
@@ -21184,8 +21184,8 @@
             "mode": "landscape",
             "pos": "center 35%",
             "stat": "Milkmaid Sarah Nelmes → Boy James Phipps",
-            "html": "Testing Gloucestershire dairy lore in May 1796, <strong>Edward Jenner</strong> put <strong>cowpox pus</strong> from milkmaid Sarah Nelmes into eight-year-old <strong>James Phipps</strong>—who stayed immune to smallpox.",
-            "spoken": "A country doctor in Gloucestershire tested a safer country rumour. <short pause> Testing Gloucestershire dairy lore in May 1796, Edward Jenner put cowpox pus from milkmaid Sarah Nelmes into eight-year-old James Phipps, who stayed immune to smallpox.",
+            "html": "In May 1796, Gloucestershire doctor <strong>Edward Jenner’s clinical study</strong> tested <strong>cowpox pus</strong> from milkmaid Sarah Nelmes on eight-year-old <strong>James Phipps</strong>, proving immunity to smallpox.",
+            "spoken": "A country doctor in Gloucestershire tested a safer country rumour. <short pause> In May 1796, Gloucestershire doctor Edward Jenner’s clinical study tested cowpox pus from milkmaid Sarah Nelmes on eight-year-old James Phipps , proving immunity to smallpox.",
             "paired_prose_hash": "98b419c7a9",
             "connective": "A country doctor in Gloucestershire tested a safer country rumour."
           },
@@ -21570,7 +21570,7 @@
           "act": 1,
           "title": "Pauper Hospital Squalor and Pre-Modern Nursing (c1700–1850)",
           "theme_heading": "Pauper Hospital Squalor and Pre-Modern Nursing (c1700–1850)",
-          "text": "<p><span class=\"para-ref\">[1.1]</span> In the early nineteenth century, British voluntary hospitals were lethal centres of infection rather than healing. Wards were overcrowded, poorly ventilated, and filthy, creating **pauper hospital squalor** where patients shared unwashed bedding soaked in wound discharges. Doctors moved between autopsies and operations wearing blood-encrusted coats without washing hands, spreading deadly erysipelas and pyaemia across crowded **cross-infection septic wards**.</p><p><span class=\"para-ref\">[1.2]</span> Nursing was held in low social esteem, characterised by the notorious **untrained nurse reputation** immortalised in Charles Dickens’ satirical character \"Betsy Prig\". Hospital nurses were recruited from illiterate, destitute working-class women with zero medical training, widely associated with drunkenness, petty theft, and callous neglect of dying patients, driving mortality rates among hospitalised patients far above those treated in private homes.</p>",
+          "text": "<p><span class=\"para-ref\">[1.1]</span> In the early nineteenth century, British voluntary hospitals delivered dangerous **care and treatment**, acting as lethal centres of infection rather than healing. Wards were overcrowded, poorly ventilated, and filthy, creating **pauper hospital squalor** where patients shared unwashed bedding. Doctors moved between autopsies and operations wearing blood-encrusted coats without washing hands, spreading deadly erysipelas and pyaemia across **cross-infection septic wards**.</p><p><span class=\"para-ref\">[1.2]</span> Nursing was held in low social esteem, characterised by the notorious **untrained nurse reputation** immortalised in Charles Dickens’ satirical character \"Betsy Prig\". Hospital nurses were recruited from illiterate, destitute working-class women with zero medical training, widely associated with drunkenness, petty theft, and callous neglect of dying patients, driving mortality rates among hospitalised patients far above those treated in private homes.</p>",
           "sources": [
             {
               "id": "med_l13_source_pre1850_nursing",
@@ -21595,10 +21595,10 @@
               "studio_voice_label": "Hospital Physician’s Testimony o…"
             }
           ],
-          "content": "<p><span class=\"para-ref\">[1.1]</span> In the early nineteenth century, British voluntary hospitals were lethal centres of infection rather than healing. Wards were overcrowded, poorly ventilated, and filthy, creating **pauper hospital squalor** where patients shared unwashed bedding soaked in wound discharges. Doctors moved between autopsies and operations wearing blood-encrusted coats without washing hands, spreading deadly erysipelas and pyaemia across crowded **cross-infection septic wards**.</p><p><span class=\"para-ref\">[1.2]</span> Nursing was held in low social esteem, characterised by the notorious **untrained nurse reputation** immortalised in Charles Dickens’ satirical character \"Betsy Prig\". Hospital nurses were recruited from illiterate, destitute working-class women with zero medical training, widely associated with drunkenness, petty theft, and callous neglect of dying patients, driving mortality rates among hospitalised patients far above those treated in private homes.</p>",
+          "content": "<p><span class=\"para-ref\">[1.1]</span> In the early nineteenth century, British voluntary hospitals delivered dangerous **care and treatment**, acting as lethal centres of infection rather than healing. Wards were overcrowded, poorly ventilated, and filthy, creating **pauper hospital squalor** where patients shared unwashed bedding. Doctors moved between autopsies and operations wearing blood-encrusted coats without washing hands, spreading deadly erysipelas and pyaemia across **cross-infection septic wards**.</p><p><span class=\"para-ref\">[1.2]</span> Nursing was held in low social esteem, characterised by the notorious **untrained nurse reputation** immortalised in Charles Dickens’ satirical character \"Betsy Prig\". Hospital nurses were recruited from illiterate, destitute working-class women with zero medical training, widely associated with drunkenness, petty theft, and callous neglect of dying patients, driving mortality rates among hospitalised patients far above those treated in private homes.</p>",
           "theme": "Pauper Hospital Squalor and Pre-Modern Nursing (c1700–1850)",
           "paragraphs": [
-            "<p><span class=\"para-ref\">[1.1]</span> In the early nineteenth century, British voluntary hospitals were lethal centres of infection rather than healing. Wards were overcrowded, poorly ventilated, and filthy, creating **pauper hospital squalor** where patients shared unwashed bedding soaked in wound discharges. Doctors moved between autopsies and operations wearing blood-encrusted coats without washing hands, spreading deadly erysipelas and pyaemia across crowded **cross-infection septic wards**.</p>",
+            "<p><span class=\"para-ref\">[1.1]</span> In the early nineteenth century, British voluntary hospitals delivered dangerous **care and treatment**, acting as lethal centres of infection rather than healing. Wards were overcrowded, poorly ventilated, and filthy, creating **pauper hospital squalor** where patients shared unwashed bedding. Doctors moved between autopsies and operations wearing blood-encrusted coats without washing hands, spreading deadly erysipelas and pyaemia across **cross-infection septic wards**.</p>",
             "<p><span class=\"para-ref\">[1.2]</span> Nursing was held in low social esteem, characterised by the notorious **untrained nurse reputation** immortalised in Charles Dickens’ satirical character \"Betsy Prig\". Hospital nurses were recruited from illiterate, destitute working-class women with zero medical training, widely associated with drunkenness, petty theft, and callous neglect of dying patients, driving mortality rates among hospitalised patients far above those treated in private homes.</p>"
           ],
           "image": "/images/pre_nightingale_ward.jpg",
@@ -22191,7 +22191,7 @@
           "dates": "c1700–1850",
           "question": "Why were early Victorian hospital wards notorious death traps?",
           "questionHeading": "Why were early Victorian hospital wards notorious death traps?",
-          "prose_hash": "af260097f5"
+          "prose_hash": "bf137f9d45"
         },
         {
           "step": 2,
@@ -22337,7 +22337,7 @@
             "desc": "Early Victorian voluntary hospitals were unventilated, cramped pesthouses staffed by untrained, illiterate domestic cleaners like Dickens’ caricature Betsy Prig.",
             "connective": "Allowed hospital gangrene and pyaemia to spread rapidly between unwashed beds, giving hospitals a higher mortality rate for amputations than private home surgeries.",
             "question": "Why were early Victorian hospital wards notorious death traps?",
-            "prose_hash": "af260097f5"
+            "prose_hash": "bf137f9d45"
           },
           {
             "step": 2,
@@ -22888,9 +22888,9 @@
             "img": "/images/pre_nightingale_ward.jpg",
             "mode": "contain-light",
             "stat": "Blood-Stained Coats & Unwashed Bedding",
-            "html": "Early 1800s hospitals bred deadly <strong>septic cross-infection</strong>: surgeons wore blood-caked coats, sheets went unwashed, and <strong>untrained nurses</strong> had a reputation for drunkenness and neglect.",
-            "spoken": "How did Florence Nightingale turn filthy Victorian wards into clean hospitals? <short pause> Early 1800s hospitals bred deadly septic cross-infection : surgeons wore blood-caked coats, sheets went unwashed, and untrained nurses had a reputation for drunkenness and neglect.",
-            "paired_prose_hash": "af260097f5",
+            "html": "Early 1800s hospital <strong>care and treatment</strong> bred deadly <strong>septic cross-infection</strong>: surgeons wore blood-caked coats, sheets went unwashed, and <strong>untrained nurses</strong> neglected patients.",
+            "spoken": "How did Florence Nightingale turn filthy Victorian wards into clean hospitals? <short pause> Early 1800s hospital care and treatment bred deadly septic cross-infection : surgeons wore blood-caked coats, sheets went unwashed, and untrained nurses neglected patients.",
+            "paired_prose_hash": "bf137f9d45",
             "connective": "How did Florence Nightingale turn filthy Victorian wards into clean hospitals?"
           },
           {
@@ -23329,7 +23329,7 @@
           "act": 2,
           "title": "James Simpson and the Discovery of Chloroform (1847)",
           "theme_heading": "James Simpson and the Discovery of Chloroform (1847)",
-          "text": "<p><span class=\"para-ref\">[2.1]</span> The breakthrough in surgical anaesthesia was achieved in Edinburgh in **1847** by Professor **James Young Simpson**. Seeking a safer chemical alternative to ether for delivering babies, Simpson tested various chemical compounds on himself and colleagues. In November 1847, they inhaled **chloroform anaesthetic vapour**, instantly knocking themselves unconscious under the dining room table, proving its immense potency and rapid onset. Simpson immediately introduced chloroform into his obstetrical practice.</p><p><span class=\"para-ref\">[2.2]</span> Simpson encountered fierce moral and religious opposition, as conservative clergy declared that relieving pain during childbirth violated God’s biblical curse on Eve. However, opposition collapsed in 1853 when **Queen Victoria** inhaled **chloroform** from Dr John Snow during the birth of Prince Leopold, during the delivery of Prince Leopold, praising its blissful relief. Royal approval granted chloroform total social acceptability, establishing it as the standard British anaesthetic.</p>",
+          "text": "<p><span class=\"para-ref\">[2.1]</span> The breakthrough in surgical anaesthesia was achieved in Edinburgh in **1847** by Professor **James Young Simpson**. Seeking a safer chemical alternative to ether for delivering babies, Simpson tested various chemical compounds on himself and colleagues. In November 1847, they inhaled **chloroform anaesthetic vapour**, instantly knocking themselves unconscious under the dining room table, proving its immense potency and rapid onset. Simpson immediately introduced chloroform into his obstetrical practice.</p><p><span class=\"para-ref\">[2.2]</span> Simpson encountered fierce moral and religious opposition, as conservative clergy declared that relieving pain during childbirth violated God’s biblical curse on Eve. However, opposition collapsed in 1853 when **Queen Victoria** inhaled **chloroform** administered by Dr John Snow during the birth of Prince Leopold, praising its blissful relief. Royal approval granted chloroform total social acceptability, establishing it as the standard British anaesthetic.</p>",
           "image": "/images/edexcel_medicine/kt3/med_kt3_l4_b1_queen_victoria_winterhalter.jpg",
           "image_alt": "Oval royal oil portrait of young Queen Victoria by Franz Xaver Winterhalter wearing the Diamond Diadem, crimson off-the-shoulder gown, and blue ribbon and star of the Order of the Garter",
           "caption": "Queen Victoria & \"Chloroform à la Reine\" (Portrait by Franz Xaver Winterhalter, Royal Collection): When Dr John Snow administered regulated chloroform vapour to thirty-three-year-old Queen Victoria during the birth of Prince Leopold in April 1853—which she praised as \"blessed chloroform, soothing, quieting and delightful beyond measure\"—religious and social hostility to obstetric pain relief evaporated.",
@@ -23377,11 +23377,11 @@
               }
             }
           ],
-          "content": "<p><span class=\"para-ref\">[2.1]</span> The breakthrough in surgical anaesthesia was achieved in Edinburgh in **1847** by Professor **James Young Simpson**. Seeking a safer chemical alternative to ether for delivering babies, Simpson tested various chemical compounds on himself and colleagues. In November 1847, they inhaled **chloroform anaesthetic vapour**, instantly knocking themselves unconscious under the dining room table, proving its immense potency and rapid onset. Simpson immediately introduced chloroform into his obstetrical practice.</p><p><span class=\"para-ref\">[2.2]</span> Simpson encountered fierce moral and religious opposition, as conservative clergy declared that relieving pain during childbirth violated God’s biblical curse on Eve. However, opposition collapsed in 1853 when **Queen Victoria** inhaled **chloroform** from Dr John Snow during the birth of Prince Leopold, during the delivery of Prince Leopold, praising its blissful relief. Royal approval granted chloroform total social acceptability, establishing it as the standard British anaesthetic.</p>",
+          "content": "<p><span class=\"para-ref\">[2.1]</span> The breakthrough in surgical anaesthesia was achieved in Edinburgh in **1847** by Professor **James Young Simpson**. Seeking a safer chemical alternative to ether for delivering babies, Simpson tested various chemical compounds on himself and colleagues. In November 1847, they inhaled **chloroform anaesthetic vapour**, instantly knocking themselves unconscious under the dining room table, proving its immense potency and rapid onset. Simpson immediately introduced chloroform into his obstetrical practice.</p><p><span class=\"para-ref\">[2.2]</span> Simpson encountered fierce moral and religious opposition, as conservative clergy declared that relieving pain during childbirth violated God’s biblical curse on Eve. However, opposition collapsed in 1853 when **Queen Victoria** inhaled **chloroform** administered by Dr John Snow during the birth of Prince Leopold, praising its blissful relief. Royal approval granted chloroform total social acceptability, establishing it as the standard British anaesthetic.</p>",
           "theme": "James Simpson and the Discovery of Chloroform (1847)",
           "paragraphs": [
             "<p><span class=\"para-ref\">[2.1]</span> The breakthrough in surgical anaesthesia was achieved in Edinburgh in **1847** by Professor **James Young Simpson**. Seeking a safer chemical alternative to ether for delivering babies, Simpson tested various chemical compounds on himself and colleagues. In November 1847, they inhaled **chloroform anaesthetic vapour**, instantly knocking themselves unconscious under the dining room table, proving its immense potency and rapid onset. Simpson immediately introduced chloroform into his obstetrical practice.</p>",
-            "<p><span class=\"para-ref\">[2.2]</span> Simpson encountered fierce moral and religious opposition, as conservative clergy declared that relieving pain during childbirth violated God’s biblical curse on Eve. However, opposition collapsed in 1853 when **Queen Victoria** inhaled **chloroform** from Dr John Snow during the birth of Prince Leopold, during the delivery of Prince Leopold, praising its blissful relief. Royal approval granted chloroform total social acceptability, establishing it as the standard British anaesthetic.</p>"
+            "<p><span class=\"para-ref\">[2.2]</span> Simpson encountered fierce moral and religious opposition, as conservative clergy declared that relieving pain during childbirth violated God’s biblical curse on Eve. However, opposition collapsed in 1853 when **Queen Victoria** inhaled **chloroform** administered by Dr John Snow during the birth of Prince Leopold, praising its blissful relief. Royal approval granted chloroform total social acceptability, establishing it as the standard British anaesthetic.</p>"
           ]
         },
         {
@@ -23430,7 +23430,7 @@
           "act": 4,
           "title": "Joseph Lister and the Carbolic Acid Spray (1865–1870s)",
           "theme_heading": "Joseph Lister and the Carbolic Acid Spray (1865–1870s)",
-          "text": "<p><span class=\"para-ref\">[4.1]</span> In 1865, Scottish surgeon **Joseph Lister** resolved to conquer post-operative wound infection at Glasgow Royal Infirmary. Reading Louis Pasteur’s 1861 Germ Theory, Lister realised that wound sepsis was caused by living airborne microbes rather than chemical oxidation. Noting that carbolic acid treated raw sewage in Carlisle without harming cattle, Lister pioneered its surgical application. He applied carbolic dressing directly onto surgical wounds.</p><p><span class=\"para-ref\">[4.2]</span> In August 1865, Lister operated on an eleven-year-old boy suffering a fractured leg, achieving sensational **compound fracture antisepsis** without gangrene. He subsequently invented the continuous **carbolic acid spray**, misting operating theaters, surgical hands, instruments, and dressings with carbolic acid during operations, which dramatically reduced post-surgical mortality at his Glasgow clinic from forty-six percent to fifteen percent within three years.</p>",
+          "text": "<p><span class=\"para-ref\">[4.1]</span> In 1865, Scottish surgeon **Joseph Lister** resolved to conquer post-operative wound infection at Glasgow Royal Infirmary. Reading Louis Pasteur’s 1861 Germ Theory, Lister realised that wound sepsis was caused by living airborne microbes rather than chemical oxidation. Noting that carbolic acid treated raw sewage in Carlisle without harming cattle, Lister transformed surgical **treatment** by soaking wound dressings directly in carbolic acid.</p><p><span class=\"para-ref\">[4.2]</span> In August 1865, Lister operated on an eleven-year-old boy suffering a fractured leg, achieving sensational **compound fracture antisepsis** without gangrene. He subsequently invented the continuous **carbolic acid spray**, misting operating theatres, surgical hands, instruments, and dressings with carbolic acid during operations, which dramatically reduced post-surgical mortality at his Glasgow clinic from forty-six percent to fifteen percent within three years.</p>",
           "image": "/images/lister_carbolic_spray_apparatus.jpg",
           "image_alt": "Original brass and glass Lister steam carbolic acid (\"donkey engine\") spray apparatus, c.1873, Hunterian Museum, Glasgow",
           "caption": "Joseph Lister’s Steam Carbolic Spray (\"The Donkey Engine\", c.1873, Hunterian Museum): Boiling water over a spirit burner forced carbolic acid vapour out of the brass nozzle across the incision site to destroy airborne microbes identified by Pasteur’s Germ Theory.",
@@ -23463,11 +23463,11 @@
               "studio_voice_label": "Operating Under Joseph Lister’s…"
             }
           ],
-          "content": "<p><span class=\"para-ref\">[4.1]</span> In 1865, Scottish surgeon **Joseph Lister** resolved to conquer post-operative wound infection at Glasgow Royal Infirmary. Reading Louis Pasteur’s 1861 Germ Theory, Lister realised that wound sepsis was caused by living airborne microbes rather than chemical oxidation. Noting that carbolic acid treated raw sewage in Carlisle without harming cattle, Lister pioneered its surgical application. He applied carbolic dressing directly onto surgical wounds.</p><p><span class=\"para-ref\">[4.2]</span> In August 1865, Lister operated on an eleven-year-old boy suffering a fractured leg, achieving sensational **compound fracture antisepsis** without gangrene. He subsequently invented the continuous **carbolic acid spray**, misting operating theaters, surgical hands, instruments, and dressings with carbolic acid during operations, which dramatically reduced post-surgical mortality at his Glasgow clinic from forty-six percent to fifteen percent within three years.</p>",
+          "content": "<p><span class=\"para-ref\">[4.1]</span> In 1865, Scottish surgeon **Joseph Lister** resolved to conquer post-operative wound infection at Glasgow Royal Infirmary. Reading Louis Pasteur’s 1861 Germ Theory, Lister realised that wound sepsis was caused by living airborne microbes rather than chemical oxidation. Noting that carbolic acid treated raw sewage in Carlisle without harming cattle, Lister transformed surgical **treatment** by soaking wound dressings directly in carbolic acid.</p><p><span class=\"para-ref\">[4.2]</span> In August 1865, Lister operated on an eleven-year-old boy suffering a fractured leg, achieving sensational **compound fracture antisepsis** without gangrene. He subsequently invented the continuous **carbolic acid spray**, misting operating theatres, surgical hands, instruments, and dressings with carbolic acid during operations, which dramatically reduced post-surgical mortality at his Glasgow clinic from forty-six percent to fifteen percent within three years.</p>",
           "theme": "Joseph Lister and the Carbolic Acid Spray (1865–1870s)",
           "paragraphs": [
-            "<p><span class=\"para-ref\">[4.1]</span> In 1865, Scottish surgeon **Joseph Lister** resolved to conquer post-operative wound infection at Glasgow Royal Infirmary. Reading Louis Pasteur’s 1861 Germ Theory, Lister realised that wound sepsis was caused by living airborne microbes rather than chemical oxidation. Noting that carbolic acid treated raw sewage in Carlisle without harming cattle, Lister pioneered its surgical application. He applied carbolic dressing directly onto surgical wounds.</p>",
-            "<p><span class=\"para-ref\">[4.2]</span> In August 1865, Lister operated on an eleven-year-old boy suffering a fractured leg, achieving sensational **compound fracture antisepsis** without gangrene. He subsequently invented the continuous **carbolic acid spray**, misting operating theaters, surgical hands, instruments, and dressings with carbolic acid during operations, which dramatically reduced post-surgical mortality at his Glasgow clinic from forty-six percent to fifteen percent within three years.</p>"
+            "<p><span class=\"para-ref\">[4.1]</span> In 1865, Scottish surgeon **Joseph Lister** resolved to conquer post-operative wound infection at Glasgow Royal Infirmary. Reading Louis Pasteur’s 1861 Germ Theory, Lister realised that wound sepsis was caused by living airborne microbes rather than chemical oxidation. Noting that carbolic acid treated raw sewage in Carlisle without harming cattle, Lister transformed surgical **treatment** by soaking wound dressings directly in carbolic acid.</p>",
+            "<p><span class=\"para-ref\">[4.2]</span> In August 1865, Lister operated on an eleven-year-old boy suffering a fractured leg, achieving sensational **compound fracture antisepsis** without gangrene. He subsequently invented the continuous **carbolic acid spray**, misting operating theatres, surgical hands, instruments, and dressings with carbolic acid during operations, which dramatically reduced post-surgical mortality at his Glasgow clinic from forty-six percent to fifteen percent within three years.</p>"
           ]
         },
         {
@@ -23941,7 +23941,7 @@
           "dates": "1847–1853",
           "question": "How did Simpson (1847) and Queen Victoria (1853) popularise chloroform?",
           "questionHeading": "How did Simpson (1847) and Queen Victoria (1853) popularise chloroform?",
-          "prose_hash": "6e91f0d71e"
+          "prose_hash": "e38407402d"
         },
         {
           "step": 3,
@@ -24005,7 +24005,7 @@
           "dates": "1865–1870s",
           "question": "How did Lister apply Germ Theory to solve hospital gangrene?",
           "questionHeading": "How did Lister apply Germ Theory to solve hospital gangrene?",
-          "prose_hash": "167667d8e8"
+          "prose_hash": "06925762ee"
         },
         {
           "step": 5,
@@ -24068,7 +24068,7 @@
             "desc": "Edinburgh professor James Simpson discovered the anaesthetic properties of chloroform in 1847; however, the fatal overdose of 15-year-old Hannah Greener in 1848 exposed dangerous dosage volatility.",
             "connective": "Dr John Snow invented a precision inhaler mask in 1853 to safely administer chloroform to Queen Victoria during Prince Leopold’s birth, securing royal endorsement and widespread medical acceptance.",
             "question": "How did Simpson (1847) and Queen Victoria (1853) popularise chloroform?",
-            "prose_hash": "6e91f0d71e"
+            "prose_hash": "e38407402d"
           },
           {
             "step": 3,
@@ -24094,7 +24094,7 @@
             "desc": "Applying Pasteur’s Germ Theory, Joseph Lister used carbolic acid (phenol) dressings to heal Jamie Greenlees' compound fractured leg in 1865 and built a steam carbolic spray to sanitise operating theatres.",
             "connective": "Plunged post-operative amputation mortality from 46% to 15% at Glasgow Royal Infirmary, definitively proving that microscopic airborne pathogens caused surgical wound sepsis.",
             "question": "How did Lister apply Germ Theory to solve hospital gangrene?",
-            "prose_hash": "167667d8e8"
+            "prose_hash": "06925762ee"
           },
           {
             "step": 5,
@@ -24619,7 +24619,7 @@
             "stat": "Queen Victoria Inhaled Chloroform in 1853",
             "html": "In November 1847, Edinburgh professor <strong>James Young Simpson</strong> knocked himself out inhaling <strong>chloroform vapour</strong>. Religious opposition collapsed in 1853 when <strong>Queen Victoria</strong> praised it during childbirth.",
             "spoken": "In 1847, a dinner-table experiment conquered pain. <short pause> In November 1847, Edinburgh professor James Young Simpson knocked himself out inhaling chloroform vapour . Religious opposition collapsed in 1853 when Queen Victoria praised it during childbirth.",
-            "paired_prose_hash": "6e91f0d71e",
+            "paired_prose_hash": "e38407402d",
             "connective": "In 1847, a dinner-table experiment conquered pain."
           },
           {
@@ -24644,7 +24644,7 @@
             "stat": "Death Rates Fell from 46% to 15% in 3 Years",
             "html": "Inspired by Pasteur’s Germ Theory, Glasgow surgeon <strong>Joseph Lister</strong> soaked dressings in sewage-cleaning <strong>carbolic acid</strong> in 1865. His continuous <strong>carbolic steam spray</strong> slashed ward death rates from 46% to 15%.",
             "spoken": "Joseph Lister connected Pasteur’s Germ Theory to wound infection. <short pause> Inspired by Pasteur’s Germ Theory, Glasgow surgeon Joseph Lister soaked dressings in sewage-cleaning carbolic acid in 1865. His continuous carbolic steam spray slashed ward death rates from 46% to 15%.",
-            "paired_prose_hash": "167667d8e8",
+            "paired_prose_hash": "06925762ee",
             "connective": "Joseph Lister connected Pasteur’s Germ Theory to wound infection."
           },
           {
@@ -26487,8 +26487,8 @@
             "img": "/images/snow_cholera_map.jpg",
             "mode": "contain-light",
             "stat": "Over 500 Soho Residents Died in 10 Days",
-            "html": "When cholera killed over 500 people in Soho, <strong>Dr John Snow</strong> rejected miasma theory. Plotting deaths on his <strong>Broad Street spot map</strong>, he had the <strong>pump handle removed</strong>, halting the outbreak.",
-            "spoken": "In 1854, Soho doctor John Snow challenged miasma theory on the streets. <short pause> When cholera killed over 500 people in Soho, Dr John Snow rejected miasma theory. Plotting deaths on his Broad Street spot map , he had the pump handle removed , halting the outbreak.",
+            "html": "While <strong>combating cholera in London (1854)</strong>, Soho doctor <strong>John Snow</strong> mapped over 500 deaths around the <strong>Broad Street pump</strong> and had its handle removed, halting the outbreak.",
+            "spoken": "In 1854, Soho doctor John Snow challenged miasma theory on the streets. <short pause> While combating cholera in London (1854) , Soho doctor John Snow mapped over 500 deaths around the Broad Street pump and had its handle removed, halting the outbreak.",
             "paired_prose_hash": "bb1d3359e1",
             "connective": "In 1854, Soho doctor John Snow challenged miasma theory on the streets."
           },
@@ -28529,7 +28529,7 @@
           "act": 2,
           "title": "Blood Testing & Flexible Endoscopy (1930s–1960s)",
           "theme_heading": "Blood Testing & Flexible Endoscopy (1930s–1960s)",
-          "text": "<p><span class=\"para-ref\">[2.1]</span> In the mid-twentieth century, clinical diagnosis expanded from imaging bones to analysing body chemistry. The introduction of routine **blood testing and ABO blood-group typing** enabled doctors to identify anaemia, monitor blood glucose levels in diabetics, and match compatible donors safely for blood transfusions. Laboratory **centrifuges and tissue biopsies** allowed pathologists to detect abnormal cellular changes and identify cancerous growths without major exploratory operations.</p><p><span class=\"para-ref\">[2.2]</span> In the 1950s, optical physicists developed flexible fibre-optic glass cables capable of transmitting light and images around physical curves. Modern **fibre-optic endoscopes** allowed physicians to inspect digestive tracts, stomachs, and bronchial airways through natural bodily openings. This eliminated dangerous open-cavity exploratory surgery, allowing specialists to visualise internal bleeding, ulceration, and malignant tumours with minimal patient trauma.</p>",
+          "text": "<p><span class=\"para-ref\">[2.1]</span> In the mid-twentieth century, clinical diagnosis expanded from imaging bones to analysing body chemistry. The wide **availability of blood tests**, **ABO blood-group typing**, and electronic **monitors** enabled doctors to identify anaemia, track heart rhythms and blood glucose in diabetics, and match donors safely for transfusions. Laboratory **centrifuges and tissue biopsies** allowed pathologists to detect cancerous cellular growths without exploratory operations.</p><p><span class=\"para-ref\">[2.2]</span> In the 1950s, optical physicists developed flexible fibre-optic glass cables capable of transmitting light and images around physical curves. Modern **fibre-optic endoscopes** allowed physicians to inspect digestive tracts, stomachs, and bronchial airways through natural bodily openings. This eliminated dangerous open-cavity exploratory surgery, allowing specialists to visualise internal bleeding, ulceration, and malignant tumours with minimal patient trauma.</p>",
           "sources": [
             {
               "id": "med_l17_source_endoscopy",
@@ -28557,10 +28557,10 @@
               "studio_voice_label": "Medical Report on the Clinical I…"
             }
           ],
-          "content": "<p><span class=\"para-ref\">[2.1]</span> In the mid-twentieth century, clinical diagnosis expanded from imaging bones to analysing body chemistry. The introduction of routine **blood testing and ABO blood-group typing** enabled doctors to identify anaemia, monitor blood glucose levels in diabetics, and match compatible donors safely for blood transfusions. Laboratory **centrifuges and tissue biopsies** allowed pathologists to detect abnormal cellular changes and identify cancerous growths without major exploratory operations.</p><p><span class=\"para-ref\">[2.2]</span> In the 1950s, optical physicists developed flexible fibre-optic glass cables capable of transmitting light and images around physical curves. Modern **fibre-optic endoscopes** allowed physicians to inspect digestive tracts, stomachs, and bronchial airways through natural bodily openings. This eliminated dangerous open-cavity exploratory surgery, allowing specialists to visualise internal bleeding, ulceration, and malignant tumours with minimal patient trauma.</p>",
+          "content": "<p><span class=\"para-ref\">[2.1]</span> In the mid-twentieth century, clinical diagnosis expanded from imaging bones to analysing body chemistry. The wide **availability of blood tests**, **ABO blood-group typing**, and electronic **monitors** enabled doctors to identify anaemia, track heart rhythms and blood glucose in diabetics, and match donors safely for transfusions. Laboratory **centrifuges and tissue biopsies** allowed pathologists to detect cancerous cellular growths without exploratory operations.</p><p><span class=\"para-ref\">[2.2]</span> In the 1950s, optical physicists developed flexible fibre-optic glass cables capable of transmitting light and images around physical curves. Modern **fibre-optic endoscopes** allowed physicians to inspect digestive tracts, stomachs, and bronchial airways through natural bodily openings. This eliminated dangerous open-cavity exploratory surgery, allowing specialists to visualise internal bleeding, ulceration, and malignant tumours with minimal patient trauma.</p>",
           "theme": "Blood Testing & Flexible Endoscopy (1930s–1960s)",
           "paragraphs": [
-            "<p><span class=\"para-ref\">[2.1]</span> In the mid-twentieth century, clinical diagnosis expanded from imaging bones to analysing body chemistry. The introduction of routine **blood testing and ABO blood-group typing** enabled doctors to identify anaemia, monitor blood glucose levels in diabetics, and match compatible donors safely for blood transfusions. Laboratory **centrifuges and tissue biopsies** allowed pathologists to detect abnormal cellular changes and identify cancerous growths without major exploratory operations.</p>",
+            "<p><span class=\"para-ref\">[2.1]</span> In the mid-twentieth century, clinical diagnosis expanded from imaging bones to analysing body chemistry. The wide **availability of blood tests**, **ABO blood-group typing**, and electronic **monitors** enabled doctors to identify anaemia, track heart rhythms and blood glucose in diabetics, and match donors safely for transfusions. Laboratory **centrifuges and tissue biopsies** allowed pathologists to detect cancerous cellular growths without exploratory operations.</p>",
             "<p><span class=\"para-ref\">[2.2]</span> In the 1950s, optical physicists developed flexible fibre-optic glass cables capable of transmitting light and images around physical curves. Modern **fibre-optic endoscopes** allowed physicians to inspect digestive tracts, stomachs, and bronchial airways through natural bodily openings. This eliminated dangerous open-cavity exploratory surgery, allowing specialists to visualise internal bleeding, ulceration, and malignant tumours with minimal patient trauma.</p>"
           ],
           "image": "/images/med_stage_modern_blood_endoscopy.jpg",
@@ -29264,7 +29264,7 @@
           "dates": "1930s–1960s",
           "question": "Why was fibre-optic endoscopy superior to exploratory surgery?",
           "questionHeading": "Why was fibre-optic endoscopy superior to exploratory surgery?",
-          "prose_hash": "ac89386cc7"
+          "prose_hash": "70071bda67"
         },
         {
           "step": 3,
@@ -29391,7 +29391,7 @@
             "desc": "Mid-20th-century hospitals developed automated biochemical blood tests and flexible fibre-optic endoscopes using coherent glass fibre bundles.",
             "connective": "Enabled clinicians to examine gastric ulcers and lung tumours directly through natural body orifices and detect hormone imbalances from blood drops, drastically reducing risky exploratory laparotomies.",
             "question": "Why was fibre-optic endoscopy superior to exploratory surgery?",
-            "prose_hash": "ac89386cc7"
+            "prose_hash": "70071bda67"
           },
           {
             "step": 3,
@@ -29945,9 +29945,9 @@
             "mode": "landscape",
             "pos": "center 50%",
             "stat": "Fibre-Optic Cameras Replaced Exploratory Cuts",
-            "html": "Routine <strong>blood testing and biopsies</strong> let laboratories track blood sugar, type donors, and spot cancer cells. From the 1950s, <strong>fibre-optic endoscopes</strong> peered down airways and stomachs without <strong>open surgery</strong>.",
-            "spoken": "Mid-century laboratories and miniature cameras then looked beyond bone. <short pause> Routine blood testing and biopsies let laboratories track blood sugar, type donors, and spot cancer cells. From the 1950s, fibre-optic endoscopes peered down airways and stomachs without open surgery .",
-            "paired_prose_hash": "ac89386cc7",
+            "html": "Wider <strong>availability of blood tests</strong>, biopsies, and electronic <strong>monitors</strong> let doctors track blood sugar and cancer cells, while 1950s <strong>fibre-optic endoscopes</strong> inspected organs without open surgery.",
+            "spoken": "Mid-century laboratories and miniature cameras then looked beyond bone. <short pause> Wider availability of blood tests , biopsies, and electronic monitors let doctors track blood sugar and cancer cells, while 1950s fibre-optic endoscopes inspected organs without open surgery.",
+            "paired_prose_hash": "70071bda67",
             "connective": "Mid-century laboratories and miniature cameras then looked beyond bone."
           },
           {
@@ -30338,7 +30338,7 @@
           "act": 4,
           "title": "Aneurin Bevan & The Launch of the NHS (1945–1948)",
           "theme_heading": "Aneurin Bevan & The Launch of the NHS (1945–1948)",
-          "text": "<p><span class=\"para-ref\">[4.1]</span> In 1945, the newly elected Labour government appointed former Welsh coalminer **Aneurin Bevan** as Minister of Health to spearhead the creation of the **National Health Service (1948)**. Bevan was determined to establish a state-run National Health Service founded on **free universal healthcare**, funded entirely through central taxation and available to every resident without charge at the point of delivery, transforming medical access across post-war Britain.</p><p><span class=\"para-ref\">[4.2]</span> Over ninety per cent of doctors initially opposed state control through the British Medical Association, fearing the loss of clinical independence. Bevan secured a crucial **BMA doctor compromise** by granting GPs a capitation fee and allowing hospital consultants to retain lucrative private beds inside NHS hospitals, famously remarking that he had 'stuffed their mouths with gold'. On 5 July 1948, the NHS launched, providing comprehensive medical care to millions.</p>",
+          "text": "<p><span class=\"para-ref\">[4.1]</span> In 1945, the newly elected Labour government appointed former Welsh coalminer **Aneurin Bevan** as Minister of Health to spearhead the **National Health Service (1948)**. Bevan established a state-run National Health Service founded on **free universal healthcare**, funded through central taxation and available to every resident without charge at the point of delivery, delivering vastly improved access to care across Britain.</p><p><span class=\"para-ref\">[4.2]</span> Over ninety per cent of doctors initially opposed state control through the British Medical Association, fearing lost clinical independence. Bevan secured a **BMA doctor compromise** by granting GP capitation fees and private consultant pay beds, remarking that he had 'stuffed their mouths with gold'. Launching on 5 July 1948, the NHS delivered universal hospital care and nationwide **mass vaccinations** against diphtheria and polio.</p>",
           "image": "/images/bevan_first_day_nhs_1948.jpg",
           "image_alt": "Minister of Health Aneurin Bevan visiting 13-year-old Sylvia Beckingham, the first NHS patient, at Park Hospital, Manchester, on 5 July 1948",
           "caption": "The Launch of the NHS (5 July 1948): Health Minister Aneurin Bevan visits the first NHS patient at Park Hospital, Davyhulme, Manchester, celebrating the principle that medical care should be free at the point of delivery.",
@@ -30385,11 +30385,11 @@
               }
             }
           ],
-          "content": "<p><span class=\"para-ref\">[4.1]</span> In 1945, the newly elected Labour government appointed former Welsh coalminer **Aneurin Bevan** as Minister of Health to spearhead the creation of the **National Health Service (1948)**. Bevan was determined to establish a state-run National Health Service founded on **free universal healthcare**, funded entirely through central taxation and available to every resident without charge at the point of delivery, transforming medical access across post-war Britain.</p><p><span class=\"para-ref\">[4.2]</span> Over ninety per cent of doctors initially opposed state control through the British Medical Association, fearing the loss of clinical independence. Bevan secured a crucial **BMA doctor compromise** by granting GPs a capitation fee and allowing hospital consultants to retain lucrative private beds inside NHS hospitals, famously remarking that he had 'stuffed their mouths with gold'. On 5 July 1948, the NHS launched, providing comprehensive medical care to millions.</p>",
+          "content": "<p><span class=\"para-ref\">[4.1]</span> In 1945, the newly elected Labour government appointed former Welsh coalminer **Aneurin Bevan** as Minister of Health to spearhead the **National Health Service (1948)**. Bevan established a state-run National Health Service founded on **free universal healthcare**, funded through central taxation and available to every resident without charge at the point of delivery, delivering vastly improved access to care across Britain.</p><p><span class=\"para-ref\">[4.2]</span> Over ninety per cent of doctors initially opposed state control through the British Medical Association, fearing lost clinical independence. Bevan secured a **BMA doctor compromise** by granting GP capitation fees and private consultant pay beds, remarking that he had 'stuffed their mouths with gold'. Launching on 5 July 1948, the NHS delivered universal hospital care and nationwide **mass vaccinations** against diphtheria and polio.</p>",
           "theme": "Aneurin Bevan & The Launch of the NHS (1945–1948)",
           "paragraphs": [
-            "<p><span class=\"para-ref\">[4.1]</span> In 1945, the newly elected Labour government appointed former Welsh coalminer **Aneurin Bevan** as Minister of Health to spearhead the creation of the **National Health Service (1948)**. Bevan was determined to establish a state-run National Health Service founded on **free universal healthcare**, funded entirely through central taxation and available to every resident without charge at the point of delivery, transforming medical access across post-war Britain.</p>",
-            "<p><span class=\"para-ref\">[4.2]</span> Over ninety per cent of doctors initially opposed state control through the British Medical Association, fearing the loss of clinical independence. Bevan secured a crucial **BMA doctor compromise** by granting GPs a capitation fee and allowing hospital consultants to retain lucrative private beds inside NHS hospitals, famously remarking that he had 'stuffed their mouths with gold'. On 5 July 1948, the NHS launched, providing comprehensive medical care to millions.</p>"
+            "<p><span class=\"para-ref\">[4.1]</span> In 1945, the newly elected Labour government appointed former Welsh coalminer **Aneurin Bevan** as Minister of Health to spearhead the **National Health Service (1948)**. Bevan established a state-run National Health Service founded on **free universal healthcare**, funded through central taxation and available to every resident without charge at the point of delivery, delivering vastly improved access to care across Britain.</p>",
+            "<p><span class=\"para-ref\">[4.2]</span> Over ninety per cent of doctors initially opposed state control through the British Medical Association, fearing lost clinical independence. Bevan secured a **BMA doctor compromise** by granting GP capitation fees and private consultant pay beds, remarking that he had 'stuffed their mouths with gold'. Launching on 5 July 1948, the NHS delivered universal hospital care and nationwide **mass vaccinations** against diphtheria and polio.</p>"
           ]
         },
         {
@@ -31093,7 +31093,7 @@
           "dates": "1945–1948",
           "question": "How did Bevan compromise to persuade resistant doctors?",
           "questionHeading": "How did Bevan compromise to persuade resistant doctors?",
-          "prose_hash": "c8f6571cd6"
+          "prose_hash": "59675ba722"
         },
         {
           "step": 5,
@@ -31182,7 +31182,7 @@
             "desc": "Minister of Health Aneurin Bevan overcame fierce resistance from the British Medical Association by famously \"stuffing their mouths with gold\"—allowing senior hospital consultants to maintain private practice beds.",
             "connective": "Launched the National Health Service on 5 July 1948 at Park Hospital Manchester, nationalising 2,688 hospitals and guaranteeing healthcare free at the point of clinical delivery funded by direct taxation.",
             "question": "How did Bevan compromise to persuade resistant doctors?",
-            "prose_hash": "c8f6571cd6"
+            "prose_hash": "59675ba722"
           },
           {
             "step": 5,
@@ -31723,9 +31723,9 @@
             "mode": "landscape",
             "pos": "center 25%",
             "stat": "Tax-Funded Care Free at the Point of Delivery",
-            "html": "Health Minister <strong>Aneurin Bevan</strong> overcame BMA opposition through a <strong>doctor pay compromise</strong>, letting consultants keep private beds. On <strong>5 July 1948</strong>, the tax-funded NHS guaranteed free universal care for all.",
-            "spoken": "Labour’s post-war government then turned Beveridge’s vision into law. <short pause> Health Minister Aneurin Bevan overcame BMA opposition through a doctor pay compromise , letting consultants keep private beds. On the fifth of July 1948 , the tax-funded NHS guaranteed free universal care for all.",
-            "paired_prose_hash": "c8f6571cd6",
+            "html": "Health Minister <strong>Aneurin Bevan</strong> won a BMA compromise to launch the tax-funded <strong>NHS (5 July 1948)</strong>, delivering <strong>improved access to care</strong> and nationwide <strong>mass vaccinations</strong>.",
+            "spoken": "Labour’s post-war government then turned Beveridge’s vision into law. <short pause> Health Minister Aneurin Bevan won a BMA compromise to launch the tax-funded NHS (the fifth of July 1948) , delivering improved access to care and nationwide mass vaccinations .",
+            "paired_prose_hash": "59675ba722",
             "connective": "Labour’s post-war government then turned Beveridge’s vision into law."
           },
           {
@@ -31736,8 +31736,8 @@
             "mode": "landscape",
             "pos": "center 30%",
             "stat": "Dialysis, Transplants & Hip Replacements (1962)",
-            "html": "NHS hospitals pioneered <strong>hip replacement surgery</strong> (1962), <strong>kidney dialysis</strong>, and organ transplants. Yet an ageing population and costly new drugs created severe <strong>rising NHS cost pressures</strong> and waiting lists.",
-            "spoken": "Post-war NHS hospitals soon delivered astonishing high-tech surgery at soaring cost. <short pause> NHS hospitals pioneered hip replacement surgery (1962), kidney dialysis , and organ transplants. Yet an ageing population and costly new drugs created severe rising NHS cost pressures and waiting lists.",
+            "html": "NHS hospitals pioneered <strong>high-tech medical and surgical treatment</strong>—including <strong>hip replacements</strong> (1962), <strong>kidney dialysis</strong>, and transplants—though ageing populations drove <strong>rising NHS cost pressures</strong>.",
+            "spoken": "Post-war NHS hospitals soon delivered astonishing high-tech surgery at soaring cost. <short pause> NHS hospitals pioneered high-tech medical and surgical treatment, including hip replacements (1962), kidney dialysis , and transplants, though ageing populations drove rising NHS cost pressures .",
             "paired_prose_hash": "db5fa60b69",
             "connective": "Post-war NHS hospitals soon delivered astonishing high-tech surgery at soaring cost."
           },
@@ -35161,8 +35161,8 @@
             "mode": "landscape",
             "pos": "center 45%",
             "stat": "UK Adult Smoking Fell Below 13% by the 2020s",
-            "html": "<strong>CT scans, keyhole surgery, radiotherapy, and chemotherapy</strong> extend thousands of lives, yet compulsory <strong>anti-smoking laws</strong> and tax rises proved government prevention saves the most lives.",
-            "spoken": "Precision hospital oncology and tough anti-smoking laws now work side by side. <short pause> CT scans, keyhole surgery, radiotherapy, and chemotherapy extend thousands of lives, yet compulsory anti-smoking laws and tax rises proved government prevention saves the most lives.",
+            "html": "Fighting lung cancer in the <strong>twenty-first century</strong> combines <strong>CT scans, keyhole surgery, radiotherapy, and immunotherapy</strong> with tough <strong>anti-smoking laws</strong> that prevent disease first.",
+            "spoken": "Precision hospital oncology and tough anti-smoking laws now work side by side. <short pause> Fighting lung cancer in the twenty-first century combines CT scans, keyhole surgery, radiotherapy, and immunotherapy with tough anti-smoking laws that prevent disease first.",
             "connective": "Precision hospital oncology and tough anti-smoking laws now work side by side."
           }
         ],
@@ -35518,7 +35518,7 @@
           "act": 2,
           "title": "Trench Architecture & Defensive Features (1914–1918)",
           "theme_heading": "Trench Architecture & Defensive Features (1914–1918)",
-          "text": "<p><span class=\"para-ref\">[2.1]</span> To survive relentless artillery bombardments, British soldiers constructed sophisticated earthworks six to seven feet deep. To contain explosive shell fragments, trenches followed a defensive **zig-zag trench layout** with right-angled bends called traverses. This structural design prevented flying shrapnel from sweeping down long ditches and stopped enemy trench-raiders from firing unchecked along entire frontline lengths.</p><p><span class=\"para-ref\">[2.2]</span> Earthworks were divided into alternating **firebays and traverses**, providing sandbagged positions where riflemen stood on wooden firesteps to repel enemy infantry assaults. Sandbagged **parapets and rear parados earthworks** shielded soldiers’ heads from direct sniper fire and rear blast splinters, while wooden floor duckboards were laid over drainage sumps to keep soldiers' boots elevated out of freezing standing water.</p>",
+          "text": "<p><span class=\"para-ref\">[2.1]</span> To survive relentless artillery bombardments across the **trench system, its organisation** relied on sophisticated earthworks dug six to seven feet deep. Trenches followed a defensive **zig-zag trench layout** with right-angled bends called traverses, preventing flying shrapnel from sweeping down straight ditches and stopping enemy raiders from firing unchecked along entire frontline lengths.</p><p><span class=\"para-ref\">[2.2]</span> Earthworks were divided into alternating **firebays and traverses**, providing sandbagged positions where riflemen stood on wooden firesteps to repel enemy infantry assaults. Sandbagged **parapets and rear parados earthworks** shielded soldiers’ heads from direct sniper fire and rear blast splinters, while wooden floor duckboards were laid over drainage sumps to keep soldiers' boots elevated out of freezing standing water.</p>",
           "isReversed": false,
           "sources": [
             {
@@ -35539,10 +35539,10 @@
               "studio_voice_label": "From the Official War Diary of a…"
             }
           ],
-          "content": "<p><span class=\"para-ref\">[2.1]</span> To survive relentless artillery bombardments, British soldiers constructed sophisticated earthworks six to seven feet deep. To contain explosive shell fragments, trenches followed a defensive **zig-zag trench layout** with right-angled bends called traverses. This structural design prevented flying shrapnel from sweeping down long ditches and stopped enemy trench-raiders from firing unchecked along entire frontline lengths.</p><p><span class=\"para-ref\">[2.2]</span> Earthworks were divided into alternating **firebays and traverses**, providing sandbagged positions where riflemen stood on wooden firesteps to repel enemy infantry assaults. Sandbagged **parapets and rear parados earthworks** shielded soldiers’ heads from direct sniper fire and rear blast splinters, while wooden floor duckboards were laid over drainage sumps to keep soldiers' boots elevated out of freezing standing water.</p>",
+          "content": "<p><span class=\"para-ref\">[2.1]</span> To survive relentless artillery bombardments across the **trench system, its organisation** relied on sophisticated earthworks dug six to seven feet deep. Trenches followed a defensive **zig-zag trench layout** with right-angled bends called traverses, preventing flying shrapnel from sweeping down straight ditches and stopping enemy raiders from firing unchecked along entire frontline lengths.</p><p><span class=\"para-ref\">[2.2]</span> Earthworks were divided into alternating **firebays and traverses**, providing sandbagged positions where riflemen stood on wooden firesteps to repel enemy infantry assaults. Sandbagged **parapets and rear parados earthworks** shielded soldiers’ heads from direct sniper fire and rear blast splinters, while wooden floor duckboards were laid over drainage sumps to keep soldiers' boots elevated out of freezing standing water.</p>",
           "theme": "Trench Architecture & Defensive Features (1914–1918)",
           "paragraphs": [
-            "<p><span class=\"para-ref\">[2.1]</span> To survive relentless artillery bombardments, British soldiers constructed sophisticated earthworks six to seven feet deep. To contain explosive shell fragments, trenches followed a defensive **zig-zag trench layout** with right-angled bends called traverses. This structural design prevented flying shrapnel from sweeping down long ditches and stopped enemy trench-raiders from firing unchecked along entire frontline lengths.</p>",
+            "<p><span class=\"para-ref\">[2.1]</span> To survive relentless artillery bombardments across the **trench system, its organisation** relied on sophisticated earthworks dug six to seven feet deep. Trenches followed a defensive **zig-zag trench layout** with right-angled bends called traverses, preventing flying shrapnel from sweeping down straight ditches and stopping enemy raiders from firing unchecked along entire frontline lengths.</p>",
             "<p><span class=\"para-ref\">[2.2]</span> Earthworks were divided into alternating **firebays and traverses**, providing sandbagged positions where riflemen stood on wooden firesteps to repel enemy infantry assaults. Sandbagged **parapets and rear parados earthworks** shielded soldiers’ heads from direct sniper fire and rear blast splinters, while wooden floor duckboards were laid over drainage sumps to keep soldiers' boots elevated out of freezing standing water.</p>"
           ],
           "concept_widget": {
@@ -35651,7 +35651,7 @@
           "act": 3,
           "title": "The Trench System & Evacuation Bottlenecks (1915–1918)",
           "theme_heading": "The Trench System & Evacuation Bottlenecks (1915–1918)",
-          "text": "<p><span class=\"para-ref\">[3.1]</span> The British defensive sector comprised three parallel ditch networks: the frontline where soldiers repelled assaults, the support trench housing relief battalions, and the rear reserve line. Connecting the **frontline, support, and reserve trenches**, narrow zig-zag communication trenches provided the sole transport corridors for hauling heavy food rations, fresh small-arms ammunition, and medical relief supplies toward the fighting front.</p><p><span class=\"para-ref\">[3.2]</span> During intense enemy bombardments, these communication corridors became completely choked with moving troops, creating severe **stretcher bearer bottlenecks** that paralysed frontline medical evacuation. Stretcher teams carrying wounded soldiers struggled through deep, waterlogged **muddy communication trenches**, frequently taking four to six agonising hours to haul a single casualty just several hundred yards back to medical safety.</p>",
+          "text": "<p><span class=\"para-ref\">[3.1]</span> The British defensive sector comprised three parallel ditch networks: the frontline where soldiers repelled assaults, the support trench housing relief battalions, and the rear reserve line. Connecting the **frontline, support, and reserve trenches**, narrow zig-zag communication trenches provided the sole transport corridors for hauling heavy food rations, fresh small-arms ammunition, and medical relief supplies toward the fighting front.</p><p><span class=\"para-ref\">[3.2]</span> During heavy bombardments, narrow ditches and shattered **transport and communications infrastructure** became choked with moving troops, creating severe **stretcher bearer bottlenecks** that delayed urgent **medical treatment**. Four-man stretcher teams struggled through deep, waterlogged **muddy communication trenches**, frequently taking four to six agonising hours to haul a single casualty just several hundred yards back to safety.</p>",
           "sources": [
             {
               "id": "med_l21_source_c",
@@ -35676,11 +35676,11 @@
               "source": "/images/gw_flooded_trench.jpg"
             }
           ],
-          "content": "<p><span class=\"para-ref\">[3.1]</span> The British defensive sector comprised three parallel ditch networks: the frontline where soldiers repelled assaults, the support trench housing relief battalions, and the rear reserve line. Connecting the **frontline, support, and reserve trenches**, narrow zig-zag communication trenches provided the sole transport corridors for hauling heavy food rations, fresh small-arms ammunition, and medical relief supplies toward the fighting front.</p><p><span class=\"para-ref\">[3.2]</span> During intense enemy bombardments, these communication corridors became completely choked with moving troops, creating severe **stretcher bearer bottlenecks** that paralysed frontline medical evacuation. Stretcher teams carrying wounded soldiers struggled through deep, waterlogged **muddy communication trenches**, frequently taking four to six agonising hours to haul a single casualty just several hundred yards back to medical safety.</p>",
+          "content": "<p><span class=\"para-ref\">[3.1]</span> The British defensive sector comprised three parallel ditch networks: the frontline where soldiers repelled assaults, the support trench housing relief battalions, and the rear reserve line. Connecting the **frontline, support, and reserve trenches**, narrow zig-zag communication trenches provided the sole transport corridors for hauling heavy food rations, fresh small-arms ammunition, and medical relief supplies toward the fighting front.</p><p><span class=\"para-ref\">[3.2]</span> During heavy bombardments, narrow ditches and shattered **transport and communications infrastructure** became choked with moving troops, creating severe **stretcher bearer bottlenecks** that delayed urgent **medical treatment**. Four-man stretcher teams struggled through deep, waterlogged **muddy communication trenches**, frequently taking four to six agonising hours to haul a single casualty just several hundred yards back to safety.</p>",
           "theme": "The Trench System & Evacuation Bottlenecks (1915–1918)",
           "paragraphs": [
             "<p><span class=\"para-ref\">[3.1]</span> The British defensive sector comprised three parallel ditch networks: the frontline where soldiers repelled assaults, the support trench housing relief battalions, and the rear reserve line. Connecting the **frontline, support, and reserve trenches**, narrow zig-zag communication trenches provided the sole transport corridors for hauling heavy food rations, fresh small-arms ammunition, and medical relief supplies toward the fighting front.</p>",
-            "<p><span class=\"para-ref\">[3.2]</span> During intense enemy bombardments, these communication corridors became completely choked with moving troops, creating severe **stretcher bearer bottlenecks** that paralysed frontline medical evacuation. Stretcher teams carrying wounded soldiers struggled through deep, waterlogged **muddy communication trenches**, frequently taking four to six agonising hours to haul a single casualty just several hundred yards back to medical safety.</p>"
+            "<p><span class=\"para-ref\">[3.2]</span> During heavy bombardments, narrow ditches and shattered **transport and communications infrastructure** became choked with moving troops, creating severe **stretcher bearer bottlenecks** that delayed urgent **medical treatment**. Four-man stretcher teams struggled through deep, waterlogged **muddy communication trenches**, frequently taking four to six agonising hours to haul a single casualty just several hundred yards back to safety.</p>"
           ],
           "image": "/images/med_stage_trench_stretcher_bottleneck.jpg",
           "caption": "RAMC Stretcher-Bearers Navigating Shell-Shattered Approaches on the Western Front (IWM Q 5801, c.1916): Narrow zig-zag traverses, stacked ammunition crates, and cratered ruins routinely forced four-man stretcher squads overland into exposed fire zones to clear casualties.",
@@ -36127,7 +36127,7 @@
           "questionHeading": "How did zig-zag traverses limit shrapnel injuries and contain shell explosions?",
           "para_ref": "[2.1–2.2]",
           "paraRef": "[2.1–2.2]",
-          "prose_hash": "b7beba38dd"
+          "prose_hash": "317bc6dc02"
         },
         {
           "step": 3,
@@ -36159,7 +36159,7 @@
           "questionHeading": "Why did narrow communication trenches create acute bottlenecks for stretchers?",
           "para_ref": "[3.1–3.2]",
           "paraRef": "[3.1–3.2]",
-          "prose_hash": "4207c8ebca"
+          "prose_hash": "a91462cd4f"
         },
         {
           "step": 4,
@@ -36254,7 +36254,7 @@
             "desc": "Engineers designed frontline trenches with sharp, alternating 90-degree zig-zag traverses rather than straight continuous firebays.",
             "connective": "Prevented enfilade rifle fire along the trench and localised blast concussions and hot shrapnel balls within a single isolated section, saving dozens of lives.",
             "question": "How did zig-zag traverses limit shrapnel injuries and contain shell explosions?",
-            "prose_hash": "b7beba38dd"
+            "prose_hash": "317bc6dc02"
           },
           {
             "step": 3,
@@ -36267,7 +36267,7 @@
             "desc": "The Western Front system comprised frontline firing trenches, support lines 80 yards back, reserve lines, and narrow zig-zag communication trenches connecting to the rear.",
             "connective": "Severe congestion from incoming troop columns, ammunition crates, and muddy right-angle corners created acute bottlenecks for stretcher bearers evacuating haemorrhaging casualties.",
             "question": "Why did narrow communication trenches create acute bottlenecks for stretchers?",
-            "prose_hash": "4207c8ebca"
+            "prose_hash": "a91462cd4f"
           },
           {
             "step": 4,
@@ -36538,7 +36538,7 @@
           "question": "What subterranean tactic did British tunnelling companies use at Hill 60 near Ypres?",
           "q": "What subterranean tactic did British tunnelling companies use at Hill 60 near Ypres?",
           "options": [
-            "Pumping chlorine gas through Roman aqueducts",
+            "Pumping chlorine gas through medieval chalk drains",
             "Building a 700-bed hospital under German lines",
             "Flooding chalk caves with canal barges",
             "Intensive mine warfare detonating massive underground explosive charges"
@@ -36902,8 +36902,8 @@
             "img": "/images/ypres_salient_map_new.png",
             "mode": "contain-light",
             "stat": "Surrounded on 3 Sides by German High Ridges",
-            "html": "Around the <strong>Ypres Salient</strong>, German gunners held higher ridges on three sides, shelling low British lines alongside <strong>Hill 60 mine warfare</strong>. Heavy rain turned Flanders clay into <strong>Passchendaele liquid mud</strong>.",
-            "spoken": "How did trench geography shape medical care on the Western Front? <short pause> Around the Ypres Salient , German gunners held higher ridges on three sides, shelling low British lines alongside Hill 60 mine warfare . Heavy rain turned Flanders clay into Passchendaele liquid mud .",
+            "html": "Across the <strong>theatre of war in Flanders and northern France</strong>, German ridges overlooked the <strong>Ypres Salient</strong> amid <strong>Hill 60 mines</strong> and deep <strong>Passchendaele liquid mud</strong>.",
+            "spoken": "How did trench geography shape medical care on the Western Front? <short pause> Across the theatre of war in Flanders and northern France , German ridges overlooked the Ypres Salient amid Hill 60 mines and deep Passchendaele liquid mud .",
             "paired_prose_hash": "85fa2f02d3",
             "connective": "How did trench geography shape medical care on the Western Front?"
           },
@@ -36914,9 +36914,9 @@
             "img": "/images/trench_construction_diagram_1914.png",
             "mode": "contain-light",
             "stat": "Right-Angled Traverses Blocked Blast Waves",
-            "html": "Soldiers dug a <strong>zig-zag trench layout</strong> alternating <strong>firebays and traverses</strong> so shell blasts could not sweep straight along ditches. Sandbag <strong>parapets and duckboards</strong> shielded heads and wet boots.",
-            "spoken": "Defensive trench geometry protected riflemen, yet made carrying stretchers a nightmare. <short pause> Soldiers dug a zig-zag trench layout alternating firebays and traverses so shell blasts could not sweep straight along ditches. Sandbag parapets and duckboards shielded heads and wet boots.",
-            "paired_prose_hash": "b7beba38dd",
+            "html": "In the <strong>trench system, its organisation</strong> used a <strong>zig-zag layout</strong> of <strong>firebays and traverses</strong> with sandbag parapets and duckboards to block shell blasts.",
+            "spoken": "Defensive trench geometry protected riflemen, yet made carrying stretchers a nightmare. <short pause> In the trench system, its organisation used a zig-zag layout of firebays and traverses with sandbag parapets and duckboards to block shell blasts.",
+            "paired_prose_hash": "317bc6dc02",
             "connective": "Defensive trench geometry protected riflemen, yet made carrying stretchers a nightmare."
           },
           {
@@ -36927,9 +36927,9 @@
             "mode": "landscape",
             "pos": "center 35%",
             "stat": "4–6 Hours to Carry One Casualty Hundreds of Yards",
-            "html": "Narrow ditches linking <strong>frontline, support, and reserve trenches</strong> carried rations, shells, and troops at once. Under fire, sharp corners and <strong>muddy communication trenches</strong> caused <strong>stretcher bottlenecks</strong>.",
-            "spoken": "Every stretcher team had to squeeze backward against forward-moving rations and shells. <short pause> Narrow ditches linking frontline, support, and reserve trenches carried rations, shells, and troops at once. Under fire, sharp corners and muddy communication trenches caused stretcher bottlenecks .",
-            "paired_prose_hash": "4207c8ebca",
+            "html": "Narrow ditches linking <strong>frontline, support, and reserve trenches</strong> plus shattered <strong>communications infrastructure</strong> created muddy <strong>stretcher bottlenecks</strong> that delayed urgent <strong>medical treatment</strong>.",
+            "spoken": "Every stretcher team had to squeeze backward against forward-moving rations and shells. <short pause> Narrow ditches linking frontline, support, and reserve trenches plus shattered communications infrastructure created muddy stretcher bottlenecks that delayed urgent medical treatment .",
+            "paired_prose_hash": "a91462cd4f",
             "connective": "Every stretcher team had to squeeze backward against forward-moving rations and shells."
           },
           {
@@ -37207,7 +37207,7 @@
           "act": 1,
           "title": "The Flanders Mud & Trench Foot (1914–1915)",
           "theme_heading": "The Flanders Mud & Trench Foot (1914–1915)",
-          "text": "<p><span class=\"para-ref\">[1.1]</span> In the winter of 1914–1915, British soldiers in Flanders endured relentless rain and freezing conditions, standing for days in deep trenches flooded with **waterlogged standing mud**. Soldiers wore heavy leather boots and tightly wound woollen puttees around their lower legs, which became soaked with icy water, severely constricting blood flow and plunging soldiers' lower limbs into persistent hypothermia.</p><p><span class=\"para-ref\">[1.2]</span> Continuous damp and cold produced **constricted numb feet**, causing toes and heels to turn white, swell painfully, and lose all sensory feeling. If left untreated, blood vessels ruptured, tissues rotted, and the limb turned gangrenous. Over twenty thousand British soldiers were hospitalised during the first winter, frequently requiring surgical **amputation from gangrene** to prevent fatal systemic blood poisoning.</p>",
+          "text": "<p><span class=\"para-ref\">[1.1]</span> In winter 1914–1915, British soldiers in Flanders endured freezing conditions **requiring medical treatment**, standing for days in trenches flooded with **waterlogged standing mud** that caused severe **ill health**. Soldiers wore heavy leather boots and tightly wound woollen puttees around their lower legs, which became soaked with icy water, constricting blood flow and plunging lower limbs into persistent hypothermia.</p><p><span class=\"para-ref\">[1.2]</span> Continuous damp and cold produced **constricted numb feet**, causing toes and heels to turn white, swell painfully, and lose all sensory feeling. If left untreated, blood vessels ruptured, tissues rotted, and the limb turned gangrenous. Over twenty thousand British soldiers were hospitalised during the first winter, frequently requiring surgical **amputation from gangrene** to prevent fatal systemic blood poisoning.</p>",
           "sources": [
             {
               "id": "med_l22_source_a",
@@ -37230,10 +37230,10 @@
               "source": "/images/trench_foot_clinical.jpg"
             }
           ],
-          "content": "<p><span class=\"para-ref\">[1.1]</span> In the winter of 1914–1915, British soldiers in Flanders endured relentless rain and freezing conditions, standing for days in deep trenches flooded with **waterlogged standing mud**. Soldiers wore heavy leather boots and tightly wound woollen puttees around their lower legs, which became soaked with icy water, severely constricting blood flow and plunging soldiers' lower limbs into persistent hypothermia.</p><p><span class=\"para-ref\">[1.2]</span> Continuous damp and cold produced **constricted numb feet**, causing toes and heels to turn white, swell painfully, and lose all sensory feeling. If left untreated, blood vessels ruptured, tissues rotted, and the limb turned gangrenous. Over twenty thousand British soldiers were hospitalised during the first winter, frequently requiring surgical **amputation from gangrene** to prevent fatal systemic blood poisoning.</p>",
+          "content": "<p><span class=\"para-ref\">[1.1]</span> In winter 1914–1915, British soldiers in Flanders endured freezing conditions **requiring medical treatment**, standing for days in trenches flooded with **waterlogged standing mud** that caused severe **ill health**. Soldiers wore heavy leather boots and tightly wound woollen puttees around their lower legs, which became soaked with icy water, constricting blood flow and plunging lower limbs into persistent hypothermia.</p><p><span class=\"para-ref\">[1.2]</span> Continuous damp and cold produced **constricted numb feet**, causing toes and heels to turn white, swell painfully, and lose all sensory feeling. If left untreated, blood vessels ruptured, tissues rotted, and the limb turned gangrenous. Over twenty thousand British soldiers were hospitalised during the first winter, frequently requiring surgical **amputation from gangrene** to prevent fatal systemic blood poisoning.</p>",
           "theme": "The Flanders Mud & Trench Foot (1914–1915)",
           "paragraphs": [
-            "<p><span class=\"para-ref\">[1.1]</span> In the winter of 1914–1915, British soldiers in Flanders endured relentless rain and freezing conditions, standing for days in deep trenches flooded with **waterlogged standing mud**. Soldiers wore heavy leather boots and tightly wound woollen puttees around their lower legs, which became soaked with icy water, severely constricting blood flow and plunging soldiers' lower limbs into persistent hypothermia.</p>",
+            "<p><span class=\"para-ref\">[1.1]</span> In winter 1914–1915, British soldiers in Flanders endured freezing conditions **requiring medical treatment**, standing for days in trenches flooded with **waterlogged standing mud** that caused severe **ill health**. Soldiers wore heavy leather boots and tightly wound woollen puttees around their lower legs, which became soaked with icy water, constricting blood flow and plunging lower limbs into persistent hypothermia.</p>",
             "<p><span class=\"para-ref\">[1.2]</span> Continuous damp and cold produced **constricted numb feet**, causing toes and heels to turn white, swell painfully, and lose all sensory feeling. If left untreated, blood vessels ruptured, tissues rotted, and the limb turned gangrenous. Over twenty thousand British soldiers were hospitalised during the first winter, frequently requiring surgical **amputation from gangrene** to prevent fatal systemic blood poisoning.</p>"
           ],
           "image": "/images/med_stage_flanders_waterlogged_trench.jpg",
@@ -37712,7 +37712,7 @@
           "questionHeading": "How did prolonged cold water immersion destroy tissue and produce gangrene?",
           "para_ref": "[1.1–1.2]",
           "paraRef": "[1.1–1.2]",
-          "prose_hash": "e4e89a3bbb"
+          "prose_hash": "0adcba6917"
         },
         {
           "step": 2,
@@ -37858,7 +37858,7 @@
             "desc": "Soldiers stood for consecutive days in sub-zero waterlogged trenches wearing tight puttees and wet boots, severely constricting capillary blood circulation.",
             "connective": "Caused severe numbness, tissue necrosis, and fungal rotting that frequently progressed to secondary gas gangrene, forcing surgeons to amputate thousands of feet in winter 1914–15.",
             "question": "How did prolonged cold water immersion destroy tissue and produce gangrene?",
-            "prose_hash": "e4e89a3bbb"
+            "prose_hash": "0adcba6917"
           },
           {
             "step": 2,
@@ -38473,9 +38473,9 @@
             "img": "/images/trench_foot_clinical.jpg",
             "mode": "contain",
             "stat": "20,000+ Hospitalised in First Winter Alone",
-            "html": "Standing for days in icy, <strong>waterlogged standing mud</strong> inside tight boots and puttees caused swollen, <strong>constricted numb feet</strong>. Dying tissue turned black, forcing surgical <strong>amputation from gangrene</strong>.",
-            "spoken": "How did the trench environment trigger mass non-combat illness? <short pause> Standing for days in icy, waterlogged standing mud inside tight boots and puttees caused swollen, constricted numb feet . Dying tissue turned black, forcing surgical amputation from gangrene .",
-            "paired_prose_hash": "e4e89a3bbb",
+            "html": "Conditions <strong>requiring medical treatment</strong> and causing severe <strong>ill health</strong> began in <strong>waterlogged mud</strong>: tight wet boots caused <strong>numb feet</strong> and gangrene amputations.",
+            "spoken": "How did the trench environment trigger mass non-combat illness? <short pause> Conditions requiring medical treatment and causing severe ill health began in waterlogged mud : tight wet boots caused numb feet and gangrene amputations.",
+            "paired_prose_hash": "0adcba6917",
             "connective": "How did the trench environment trigger mass non-combat illness?"
           },
           {
@@ -40636,7 +40636,7 @@
           "act": 2,
           "title": "Regimental Aid Posts: First Aid Under Fire (1914–1918)",
           "theme_heading": "Regimental Aid Posts: First Aid Under Fire (1914–1918)",
-          "text": "<p><span class=\"para-ref\">[2.1]</span> Located within frontline communications trenches, the **Regimental Aid Post (RAP)** operated inside a reinforced dugout, ruined farm cellar, or sandbagged bunker. Staffed by a single medical officer and orderlies, its primary responsibility was applying **emergency tourniquets and field dressings** to staunch arterial bleeding, splint fractured limbs, and administer emergency morphine injections under constant enemy shellfire.</p><p><span class=\"para-ref\">[2.2]</span> The frontline RAP could not perform internal surgery, focusing strictly on **preventing immediate blood loss** and distinguishing walking wounded from men suffering catastrophic haemorrhagic shock. Walking wounded were patched up to return to defensive duties, while critically injured casualties were swiftly dispatched rearward to the next medical stage along the chain of evacuation to save their lives from fatal collapse.</p>",
+          "text": "<p><span class=\"para-ref\">[2.1]</span> Located within frontline communications trenches, the **Regimental Aid Post (RAP)** operated inside a reinforced dugout, ruined farm cellar, or sandbagged bunker. Staffed by a single medical officer and orderlies, its primary responsibility was applying **emergency tourniquets and field dressings** to staunch arterial bleeding, splint fractured limbs, and administer emergency morphine injections under constant enemy shellfire.</p><p><span class=\"para-ref\">[2.2]</span> The frontline RAP could not perform internal surgery, focusing strictly on **preventing immediate blood loss** and distinguishing walking wounded from men suffering catastrophic haemorrhagic shock. Walking wounded returned to defensive duties, while critically injured casualties moved swiftly rearward through the **stages of treatment in the chain of evacuation** to save their lives from fatal wound infection.</p>",
           "isReversed": false,
           "sources": [
             {
@@ -40659,11 +40659,11 @@
               "studio_voice_label": "From the Diary of Captain J. C.…"
             }
           ],
-          "content": "<p><span class=\"para-ref\">[2.1]</span> Located within frontline communications trenches, the **Regimental Aid Post (RAP)** operated inside a reinforced dugout, ruined farm cellar, or sandbagged bunker. Staffed by a single medical officer and orderlies, its primary responsibility was applying **emergency tourniquets and field dressings** to staunch arterial bleeding, splint fractured limbs, and administer emergency morphine injections under constant enemy shellfire.</p><p><span class=\"para-ref\">[2.2]</span> The frontline RAP could not perform internal surgery, focusing strictly on **preventing immediate blood loss** and distinguishing walking wounded from men suffering catastrophic haemorrhagic shock. Walking wounded were patched up to return to defensive duties, while critically injured casualties were swiftly dispatched rearward to the next medical stage along the chain of evacuation to save their lives from fatal collapse.</p>",
+          "content": "<p><span class=\"para-ref\">[2.1]</span> Located within frontline communications trenches, the **Regimental Aid Post (RAP)** operated inside a reinforced dugout, ruined farm cellar, or sandbagged bunker. Staffed by a single medical officer and orderlies, its primary responsibility was applying **emergency tourniquets and field dressings** to staunch arterial bleeding, splint fractured limbs, and administer emergency morphine injections under constant enemy shellfire.</p><p><span class=\"para-ref\">[2.2]</span> The frontline RAP could not perform internal surgery, focusing strictly on **preventing immediate blood loss** and distinguishing walking wounded from men suffering catastrophic haemorrhagic shock. Walking wounded returned to defensive duties, while critically injured casualties moved swiftly rearward through the **stages of treatment in the chain of evacuation** to save their lives from fatal wound infection.</p>",
           "theme": "Regimental Aid Posts: First Aid Under Fire (1914–1918)",
           "paragraphs": [
             "<p><span class=\"para-ref\">[2.1]</span> Located within frontline communications trenches, the **Regimental Aid Post (RAP)** operated inside a reinforced dugout, ruined farm cellar, or sandbagged bunker. Staffed by a single medical officer and orderlies, its primary responsibility was applying **emergency tourniquets and field dressings** to staunch arterial bleeding, splint fractured limbs, and administer emergency morphine injections under constant enemy shellfire.</p>",
-            "<p><span class=\"para-ref\">[2.2]</span> The frontline RAP could not perform internal surgery, focusing strictly on **preventing immediate blood loss** and distinguishing walking wounded from men suffering catastrophic haemorrhagic shock. Walking wounded were patched up to return to defensive duties, while critically injured casualties were swiftly dispatched rearward to the next medical stage along the chain of evacuation to save their lives from fatal collapse.</p>"
+            "<p><span class=\"para-ref\">[2.2]</span> The frontline RAP could not perform internal surgery, focusing strictly on **preventing immediate blood loss** and distinguishing walking wounded from men suffering catastrophic haemorrhagic shock. Walking wounded returned to defensive duties, while critically injured casualties moved swiftly rearward through the **stages of treatment in the chain of evacuation** to save their lives from fatal wound infection.</p>"
           ],
           "image": "/images/edexcel_medicine/kt5/med_kt5_l54_b1_rap_warneton_1917.jpg",
           "caption": "Frontline Regimental Aid Post at Warneton (25 August 1917, Official NZEF Photograph by H. A. Sanders, H206): Stretcher-bearers carry a casualty into the sandbagged \"PATIENTS ENTRANCE\" bunker sheltered inside a ruined brick cellar just behind the trenches, where the Regimental Medical Officer applied field dressings, morphine, and splints.",
@@ -41229,7 +41229,7 @@
           "questionHeading": "Why did Regimental Aid Posts treat bleeding and shock instead of operating?",
           "para_ref": "[2.1–2.2]",
           "paraRef": "[2.1–2.2]",
-          "prose_hash": "855924e9ac"
+          "prose_hash": "dd8d827877"
         },
         {
           "step": 3,
@@ -41354,7 +41354,7 @@
             "question": "Why did Regimental Aid Posts treat bleeding and shock instead of operating?",
             "trigger": "Situated within 200 yards of the firing line in dugouts or cellars without sterile theatres, the RMO arrested bleeding, gave morphine and anti-tetanus serum, splinted limbs, and returned lightly wounded men to duty.",
             "desc": "Situated within 200 yards of the firing line in dugouts or cellars without sterile theatres, the RMO arrested bleeding, gave morphine and anti-tetanus serum, splinted limbs, and returned lightly wounded men to duty.",
-            "prose_hash": "855924e9ac"
+            "prose_hash": "dd8d827877"
           },
           {
             "step": 3,
@@ -41957,9 +41957,9 @@
             "img": "/images/stretcher_bearers_gilbert_rogers.jpg",
             "mode": "contain",
             "stat": "1 Battalion Medical Officer + Stretcher Orderlies",
-            "html": "Inside a dugout or cellar 200 yards back, the <strong>Regimental Aid Post (RAP)</strong> applied <strong>tourniquets and field dressings</strong>—performing zero major surgery while <strong>preventing immediate blood loss</strong>.",
-            "spoken": "Just two hundred yards behind the firestep waited a dimly lit dugout or cellar. <short pause> Inside a dugout or cellar 200 yards back, the Regimental Aid Post (RAP) applied tourniquets and field dressings, performing zero major surgery while preventing immediate blood loss .",
-            "paired_prose_hash": "855924e9ac",
+            "html": "Across the <strong>stages of treatment in the chain of evacuation</strong>, the dugout <strong>Regimental Aid Post (RAP)</strong> applied <strong>tourniquets and dressings</strong> to stop immediate blood loss.",
+            "spoken": "Just two hundred yards behind the firestep waited a dimly lit dugout or cellar. <short pause> Across the stages of treatment in the chain of evacuation , the dugout Regimental Aid Post (RAP) applied tourniquets and dressings to stop immediate blood loss.",
+            "paired_prose_hash": "dd8d827877",
             "connective": "Just two hundred yards behind the firestep waited a dimly lit dugout or cellar."
           },
           {
@@ -42249,7 +42249,7 @@
           "act": 1,
           "title": "Wound Debridement & Surgical Excision (1914–1918)",
           "theme_heading": "Wound Debridement & Surgical Excision (1914–1918)",
-          "text": "<p><span class=\"para-ref\">[1.1]</span> In 1914, British military surgeons quickly recognised the profound **inadequacy of simple antiseptics** like carbolic acid against battlefield wounds. Carbolic acid burned healthy tissue without penetrating deep lacerations, while stitching contaminated wounds trapped anaerobic bacteria inside, accelerating fatal gas gangrene. To save lives, surgeons abandoned traditional peacetime methods, adopting aggressive **deep surgical debridement** inside frontline clearing huts under urgent conditions.</p><p><span class=\"para-ref\">[1.2]</span> Under general anaesthetic, surgeons performed radical **excision of necrotic tissue**, cutting away all dead, bruised, and infected muscle surrounding bullet tracks alongside contaminated fragments of dirty uniform. Crucially, debrided wounds were left completely open to the air for forty-eight hours, exposing anaerobic bacteria to atmospheric oxygen before delayed primary closure once acute bacterial infection had completely subsided.</p>",
+          "text": "<p><span class=\"para-ref\">[1.1]</span> Although medicine in the early **twentieth century** had made **moves towards aseptic surgery**, British surgeons in 1914 quickly saw the **inadequacy of simple antiseptics** like carbolic acid in muddy wounds. Driven into urgent **experiments in surgery** and **new techniques in the treatment of wounds**, surgeons abandoned early stitching—which trapped anaerobic bacteria and sped gas gangrene—and adopted **deep surgical debridement** in clearing huts.</p><p><span class=\"para-ref\">[1.2]</span> Under general anaesthetic, surgeons performed radical **excision of necrotic tissue**, cutting away all dead, bruised, and infected muscle surrounding bullet tracks alongside contaminated fragments of dirty uniform. Crucially, debrided wounds were left completely open to the air for forty-eight hours, exposing anaerobic bacteria to atmospheric oxygen before delayed primary closure once acute bacterial infection had completely subsided.</p>",
           "sources": [
             {
               "id": "med_l25_source_a",
@@ -42274,10 +42274,10 @@
               "source": "/images/casualty_clearing_station_ww1.jpg"
             }
           ],
-          "content": "<p><span class=\"para-ref\">[1.1]</span> In 1914, British military surgeons quickly recognised the profound **inadequacy of simple antiseptics** like carbolic acid against battlefield wounds. Carbolic acid burned healthy tissue without penetrating deep lacerations, while stitching contaminated wounds trapped anaerobic bacteria inside, accelerating fatal gas gangrene. To save lives, surgeons abandoned traditional peacetime methods, adopting aggressive **deep surgical debridement** inside frontline clearing huts under urgent conditions.</p><p><span class=\"para-ref\">[1.2]</span> Under general anaesthetic, surgeons performed radical **excision of necrotic tissue**, cutting away all dead, bruised, and infected muscle surrounding bullet tracks alongside contaminated fragments of dirty uniform. Crucially, debrided wounds were left completely open to the air for forty-eight hours, exposing anaerobic bacteria to atmospheric oxygen before delayed primary closure once acute bacterial infection had completely subsided.</p>",
+          "content": "<p><span class=\"para-ref\">[1.1]</span> Although medicine in the early **twentieth century** had made **moves towards aseptic surgery**, British surgeons in 1914 quickly saw the **inadequacy of simple antiseptics** like carbolic acid in muddy wounds. Driven into urgent **experiments in surgery** and **new techniques in the treatment of wounds**, surgeons abandoned early stitching—which trapped anaerobic bacteria and sped gas gangrene—and adopted **deep surgical debridement** in clearing huts.</p><p><span class=\"para-ref\">[1.2]</span> Under general anaesthetic, surgeons performed radical **excision of necrotic tissue**, cutting away all dead, bruised, and infected muscle surrounding bullet tracks alongside contaminated fragments of dirty uniform. Crucially, debrided wounds were left completely open to the air for forty-eight hours, exposing anaerobic bacteria to atmospheric oxygen before delayed primary closure once acute bacterial infection had completely subsided.</p>",
           "theme": "Wound Debridement & Surgical Excision (1914–1918)",
           "paragraphs": [
-            "<p><span class=\"para-ref\">[1.1]</span> In 1914, British military surgeons quickly recognised the profound **inadequacy of simple antiseptics** like carbolic acid against battlefield wounds. Carbolic acid burned healthy tissue without penetrating deep lacerations, while stitching contaminated wounds trapped anaerobic bacteria inside, accelerating fatal gas gangrene. To save lives, surgeons abandoned traditional peacetime methods, adopting aggressive **deep surgical debridement** inside frontline clearing huts under urgent conditions.</p>",
+            "<p><span class=\"para-ref\">[1.1]</span> Although medicine in the early **twentieth century** had made **moves towards aseptic surgery**, British surgeons in 1914 quickly saw the **inadequacy of simple antiseptics** like carbolic acid in muddy wounds. Driven into urgent **experiments in surgery** and **new techniques in the treatment of wounds**, surgeons abandoned early stitching—which trapped anaerobic bacteria and sped gas gangrene—and adopted **deep surgical debridement** in clearing huts.</p>",
             "<p><span class=\"para-ref\">[1.2]</span> Under general anaesthetic, surgeons performed radical **excision of necrotic tissue**, cutting away all dead, bruised, and infected muscle surrounding bullet tracks alongside contaminated fragments of dirty uniform. Crucially, debrided wounds were left completely open to the air for forty-eight hours, exposing anaerobic bacteria to atmospheric oxygen before delayed primary closure once acute bacterial infection had completely subsided.</p>"
           ],
           "image": "/images/med_stage_ww1_operating_theatre.jpg",
@@ -42776,7 +42776,7 @@
           "questionHeading": "Why was surgical excision of dead tissue more effective than chemical antiseptics?",
           "para_ref": "[1.1–1.2]",
           "paraRef": "[1.1–1.2]",
-          "prose_hash": "ba33cd7430"
+          "prose_hash": "ee91b5d17b"
         },
         {
           "step": 2,
@@ -42922,7 +42922,7 @@
             "desc": "Surgeons realised chemical antiseptics could not penetrate deep shrapnel pockets, adopting radical surgical debridement to slice away all bruised, contaminated, and dead tissue.",
             "connective": "Deprived anaerobic gas gangrene microbes of dead biological tissue to feed upon, allowing wounds to be washed thoroughly before delayed primary closure.",
             "question": "Why was surgical excision of dead tissue more effective than chemical antiseptics?",
-            "prose_hash": "ba33cd7430"
+            "prose_hash": "ee91b5d17b"
           },
           {
             "step": 2,
@@ -43575,9 +43575,9 @@
             "mode": "landscape",
             "pos": "center 40%",
             "stat": "Wounds Left Open 48 Hours to Starve Gangrene",
-            "html": "Carbolic failed against deep soil spores, and early stitching trapped gangrene. Surgeons adopted <strong>deep surgical debridement</strong>—performing radical <strong>wound excision of dead tissue</strong> and cloth before delayed closure.",
-            "spoken": "How did frontline surgeons conquer wound sepsis and broken femurs? <short pause> Carbolic failed against deep soil spores, and early stitching trapped gangrene. Surgeons adopted deep surgical debridement, performing radical wound excision of dead tissue and cloth before delayed closure.",
-            "paired_prose_hash": "ba33cd7430",
+            "html": "Building on early <strong>twentieth-century moves towards aseptic surgery</strong>, wartime <strong>experiments in surgery</strong> introduced <strong>new techniques in the treatment of wounds</strong> like radical <strong>debridement</strong>.",
+            "spoken": "How did frontline surgeons conquer wound sepsis and broken femurs? <short pause> Building on early twentieth-century moves towards aseptic surgery , wartime experiments in surgery introduced new techniques in the treatment of wounds like radical debridement .",
+            "paired_prose_hash": "ee91b5d17b",
             "connective": "How did frontline surgeons conquer wound sepsis and broken femurs?"
           },
           {

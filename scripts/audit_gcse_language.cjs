@@ -79,13 +79,20 @@ const GCSE_SPEC_SUMMARY_GUARDRAILS = {
     { regex: /\bself-defense\b|\bblank check\b|\bamericanized\b|\bneutralized\b|\bpolarization\b/i, fix: 'Use British GCSE English spelling (self-defence, blank cheque, Americanised, neutralised, polarisation).' },
   ],
   eee: [
-    { regex: /\bessex rebellion\b|\btyrone['’]?s rebellion\b/i, fix: 'Out of period! Pearson Edexcel Option B4 strictly covers Early Elizabethan England, 1558–88.' },
+    { regex: /\bessex['’]?s?\s+rebellion\b|\btyrone['’]?s\s+rebellion\b/i, fix: 'Out of period! Pearson Edexcel Option B4 strictly covers Early Elizabethan England, 1558–88.' },
+    { regex: /\b1601\s+poor\s+law\b|\bpoor\s+law\s+of\s+1601\b/i, fix: 'Out of period! Option B4 strictly ends in 1588 — test the 1563 Statute of Artificers, 1572 Vagabonds Act, and 1576 Poor Relief Act instead of the 1601 Poor Law.' },
   ],
-  cme_new: [],
+  cme_new: [
+    { regex: /\bsecond\s+intifada\b|\bal-aqsa\s+intifada\b|\bcamp\s+david\s+2000\b|\b1996\s+election\b/i, fix: 'Out of period! Pearson Edexcel Option P5 strictly covers 1945–95 (ends with Oslo II & Rabin assassination, 1995).' },
+  ],
+  gcse_cold_war: [
+    { regex: /\b199[2-9]\b|\bputin\b|\byeltsin.*199[3-9]\b/i, fix: 'Out of period! Pearson Edexcel Option P4 strictly covers 1941–91 (ends with collapse of the Soviet Union, Dec 1991).' },
+  ],
 };
 
 const TARGET_GCSE_UNITS = [
   'cme_new',
+  'gcse_cold_war',
   'edexcel_medicine',
   'eee',
   'usa',
@@ -197,6 +204,15 @@ function runAudit(targetUnit = null) {
         const vocabSurface = (l.vocab || [])
           .map((v) => `${v.term || ''} ${v.def || v.definition || ''}`)
           .join(' ');
+        const isExaminedGcseLesson = !(unitKey === 'cme_new' && lIdx === 0);
+        const coreExaminedSurface = isExaminedGcseLesson
+          ? [
+              ...(l.narrative_blocks || []).map((b) => `${b.heading || ''} ${b.text || ''}`),
+              l.vocab_cloze_text || '',
+              JSON.stringify(l.exam_practice || ''),
+              ...(l.quiz || []).map((q) => `${q.question || q.q || ''} ${q.answer || q.a || ''}`),
+            ].join(' ')
+          : '';
 
         for (const rule of GCSE_SPEC_SUMMARY_GUARDRAILS[unitKey]) {
           const sheetMatch = sheetSurface.match(rule.regex);
@@ -218,6 +234,19 @@ function runAudit(targetUnit = null) {
               type: 'GCSE_NON_SPEC_VOCAB',
               detail: `Found "${vocabMatch[0]}" in lesson.vocab. ${rule.fix}`,
             });
+          }
+          // Out-of-period rules apply to Narrative, Cloze, Quiz Answers & Exam Practice WAGOLLs too!
+          if (/Out of period!/i.test(rule.fix) && coreExaminedSurface) {
+            const coreMatch = coreExaminedSurface.match(rule.regex);
+            if (coreMatch) {
+              violations.push({
+                unit: unitKey,
+                lesson: lessonTitle,
+                source: 'Narrative / Cloze / Quiz / Exam WAGOLL',
+                type: 'GCSE_OUT_OF_PERIOD_BOUNDARY',
+                detail: `Found "${coreMatch[0]}" in examined GCSE surface. ${rule.fix}`,
+              });
+            }
           }
         }
       }

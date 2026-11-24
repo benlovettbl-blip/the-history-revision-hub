@@ -1137,17 +1137,17 @@
         },
         {
           "stage": 4,
-          "question": "When was the German Empire officially created?",
-          "q": "When was the German Empire officially created?",
+          "question": "What major military step did the French Third Republic take after 1871 to prepare for a future war against Germany?",
+          "q": "What major military step did the French Third Republic take after 1871 to prepare for a future war against Germany?",
           "options": [
-            "1 September 1870",
-            "18 January 1871",
-            "28 June 1914",
-            "11 November 1918"
+            "It introduced universal army conscription for young men reaching twenty",
+            "It signed a secret neutrality pact with Bismarck in 1887",
+            "It handed control of its eastern forts to the British Royal Navy",
+            "It disbanded its standing army to save money for war indemnities"
           ],
-          "answer": "18 January 1871",
-          "a": "18 January 1871",
-          "explanation": "Across the French Third Republic, the loss of Alsace-Lorraine inspired revanche —a national desire for vengeance against Germany."
+          "answer": "It introduced universal army conscription for young men reaching twenty",
+          "a": "It introduced universal army conscription for young men reaching twenty",
+          "explanation": "Driven by revanche after losing Alsace-Lorraine, the French government introduced universal conscription at age twenty to train millions of young men for a future continental war."
         },
         {
           "stage": 4,
@@ -7145,17 +7145,17 @@
         },
         {
           "stage": 2,
-          "question": "On what exact date did Kaiser Wilhelm II issue Germany's unconditional \"Blank Cheque\" to Austria-Hungary?",
-          "q": "On what exact date did Kaiser Wilhelm II issue Germany's unconditional \"Blank Cheque\" to Austria-Hungary?",
+          "question": "Why did Austro-Hungarian leaders seek Germany's 'Blank Cheque' before attacking Serbia in July 1914?",
+          "q": "Why did Austro-Hungarian leaders seek Germany's 'Blank Cheque' before attacking Serbia in July 1914?",
           "options": [
-            "28 June 1914",
-            "23 July 1914",
-            "4 August 1914",
-            "5 July 1914"
+            "They feared an invasion of Serbia would trigger Russian military intervention to protect Slavic independence",
+            "They needed German permission to sign a trade treaty with Great Britain",
+            "They wanted Germany to arrest Gavrilo Princip inside Berlin",
+            "They hoped Germany would force Serbia to join the Triple Entente"
           ],
-          "answer": "5 July 1914",
-          "a": "5 July 1914",
-          "explanation": "Meeting Austrian envoys in Berlin on 5 July 1914, the Kaiser promised unconditional German military backing."
+          "answer": "They feared an invasion of Serbia would trigger Russian military intervention to protect Slavic independence",
+          "a": "They feared an invasion of Serbia would trigger Russian military intervention to protect Slavic independence",
+          "explanation": "Austria-Hungary wanted to crush Serbia but feared Russia would intervene, so Kaiser Wilhelm II's unconditional 'Blank Cheque' gave Vienna the confidence to risk a wider European war."
         },
         {
           "stage": 2,
@@ -7173,17 +7173,17 @@
         },
         {
           "stage": 3,
-          "question": "On what exact date was the Archduke assassinated?",
-          "q": "On what exact date was the Archduke assassinated?",
+          "question": "Why did Austria-Hungary design its July 1914 ten-point ultimatum to Serbia with such harsh demands?",
+          "q": "Why did Austria-Hungary design its July 1914 ten-point ultimatum to Serbia with such harsh demands?",
           "options": [
-            "28 July 1914",
-            "28 June 1914",
-            "11 November 1918",
-            "4 August 1914"
+            "To reward Serbia for accepting nine of the ten conditions",
+            "To encourage peaceful diplomatic talks led by the Russian Tsar",
+            "To ensure Serbia would reject it and give Austria-Hungary an excuse to declare war",
+            "To persuade Britain to join the Austro-Hungarian Empire"
           ],
-          "answer": "28 June 1914",
-          "a": "28 June 1914",
-          "explanation": "On 23 July 1914, Austria-Hungary delivered an ultimatum containing harsh ten-point demands designed deliberately to be rejected by Serbian authorities within forty-eight hours."
+          "answer": "To ensure Serbia would reject it and give Austria-Hungary an excuse to declare war",
+          "a": "To ensure Serbia would reject it and give Austria-Hungary an excuse to declare war",
+          "explanation": "The ultimatum included demands like stationing Austrian police in Belgrade to violate Serbian sovereignty, deliberately designed to be rejected so Austria could declare war."
         },
         {
           "stage": 3,
@@ -7215,17 +7215,17 @@
         },
         {
           "stage": 3,
-          "question": "On what date did Austria-Hungary declare war on Serbia and shell Belgrade from gunboats on the River Danube?",
-          "q": "On what date did Austria-Hungary declare war on Serbia and shell Belgrade from gunboats on the River Danube?",
+          "question": "Which specific demand in Austria-Hungary's ten-point ultimatum directly threatened Serbia's independent sovereignty?",
+          "q": "Which specific demand in Austria-Hungary's ten-point ultimatum directly threatened Serbia's independent sovereignty?",
           "options": [
-            "28 June 1914",
-            "5 July 1914",
-            "28 July 1914",
-            "11 November 1914"
+            "Demanding that Serbia close the River Danube to all German ships",
+            "Demanding that Serbia declare war on the Russian Empire immediately",
+            "Demanding that Austrian police be allowed into Belgrade to arrest dissidents",
+            "Demanding that Serbia hand over its entire railway network to France"
           ],
-          "answer": "28 July 1914",
-          "a": "28 July 1914",
-          "explanation": "Exactly one month after the Sarajevo assassination, Austria declared war on 28 July 1914 and bombarded Serbia from the Danube."
+          "answer": "Demanding that Austrian police be allowed into Belgrade to arrest dissidents",
+          "a": "Demanding that Austrian police be allowed into Belgrade to arrest dissidents",
+          "explanation": "Although Serbia accepted nine of the ten demands, letting Austrian police operate inside Belgrade directly violated Serbian sovereignty, giving Austria a pretext to declare war."
         },
         {
           "stage": 4,
@@ -7327,17 +7327,17 @@
         },
         {
           "stage": 5,
-          "question": "At what exact hour on 4 August 1914 did Great Britain enter the First World War when Berlin ignored London's ultimatum?",
-          "q": "At what exact hour on 4 August 1914 did Great Britain enter the First World War when Berlin ignored London's ultimatum?",
+          "question": "What was the strategic aim of Germany's Schlieffen Plan when German troops marched into neutral Belgium in August 1914?",
+          "q": "What was the strategic aim of Germany's Schlieffen Plan when German troops marched into neutral Belgium in August 1914?",
           "options": [
-            "Noon on 28 June 1914",
-            "6:00am on 1 August 1914",
-            "Midnight on 4 August 1914",
-            "11:00am on 11 November 1914"
+            "To protect Belgian neutrality against a threatened French invasion",
+            "To persuade Britain to stay neutral by avoiding the Belgian coastline",
+            "To capture Austrian railway junctions before winter arrived",
+            "To knock France out swiftly before slow-moving Russian armies could fully mobilise"
           ],
-          "answer": "Midnight on 4 August 1914",
-          "a": "Midnight on 4 August 1914",
-          "explanation": "When Britain's ultimatum demanding German withdrawal from neutral Belgium expired at midnight on 4 August 1914, war began."
+          "answer": "To knock France out swiftly before slow-moving Russian armies could fully mobilise",
+          "a": "To knock France out swiftly before slow-moving Russian armies could fully mobilise",
+          "explanation": "Germany's Schlieffen Plan gambled on invading neutral Belgium to defeat France quickly before Russia mobilised, but breaking the 1839 Treaty of London brought Britain into the war."
         }
       ],
       "prologue": "On 28 June 1914, nineteen-year-old Gavrilo Princip fired two fatal pistol shots into the carriage of Archduke Franz Ferdinand in Sarajevo. Within thirty-seven days, ultimatums, imperial mobilisations, and German troops marching into neutral Belgium plunged Europe into total war. Could the catastrophic July Crisis have been avoided, or was war unstoppable?",
@@ -8865,17 +8865,17 @@
         },
         {
           "stage": 5,
-          "question": "On what date was Archduke Franz Ferdinand assassinated in Sarajevo?",
-          "q": "On what date was Archduke Franz Ferdinand assassinated in Sarajevo?",
+          "question": "How did the Sarajevo assassination of Archduke Franz Ferdinand escalate from a regional Balkan crisis into a continental war?",
+          "q": "How did the Sarajevo assassination of Archduke Franz Ferdinand escalate from a regional Balkan crisis into a continental war?",
           "options": [
-            "4 August 1914",
-            "18 January 1871",
-            "11 November 1918",
-            "28 June 1914"
+            "Austrian retaliation activated Europe's interlocking mutual alliances, pulling all five great powers into conflict",
+            "Britain immediately invaded Austria-Hungary to avenge the Archduke's death",
+            "The Triple Alliance and Triple Entente dissolved, leaving every nation fighting alone",
+            "Germany surrendered Alsace-Lorraine to France in a failed attempt to keep peace"
           ],
-          "answer": "28 June 1914",
-          "a": "28 June 1914",
-          "explanation": "Nineteen-year-old Gavrilo Princip shot Franz Ferdinand and his wife Sophie on 28 June 1914 in Sarajevo."
+          "answer": "Austrian retaliation activated Europe's interlocking mutual alliances, pulling all five great powers into conflict",
+          "a": "Austrian retaliation activated Europe's interlocking mutual alliances, pulling all five great powers into conflict",
+          "explanation": "Because Europe was divided into two hostile armed camps, Austria's retaliation against Serbia triggered mutual military alliances that dragged all five great powers into war within five weeks."
         },
         {
           "stage": 5,

@@ -33,9 +33,9 @@
       "updatedAt": "2026-11-21T11:58:20.473Z"
     },
     "l01_takeaway": {
-      "hash": "3c6c35ea19addc56",
-      "bytes": 99884,
-      "updatedAt": "2026-11-21T11:58:20.473Z"
+      "hash": "bffb68019cb82267",
+      "bytes": 63980,
+      "updatedAt": "2026-11-24T19:52:14.364Z"
     },
     "l02_s1": {
       "hash": "e9ca224b67a69bc1",
@@ -68,9 +68,9 @@
       "updatedAt": "2026-11-21T11:58:20.480Z"
     },
     "l02_takeaway": {
-      "hash": "847bdc55f8aa8922",
-      "bytes": 111404,
-      "updatedAt": "2026-11-21T11:58:20.481Z"
+      "hash": "983aaaec3f1aaba3",
+      "bytes": 71948,
+      "updatedAt": "2026-11-24T19:52:14.748Z"
     },
     "l03_s1": {
       "hash": "f322ffb6d7501c08",
@@ -83,9 +83,9 @@
       "updatedAt": "2026-11-21T11:58:20.487Z"
     },
     "l03_s3": {
-      "hash": "5b3d455074da8fbb",
-      "bytes": 78284,
-      "updatedAt": "2026-11-21T11:58:20.487Z"
+      "hash": "d3330237570e6081",
+      "bytes": 56012,
+      "updatedAt": "2026-11-24T19:52:15.058Z"
     },
     "l03_s4": {
       "hash": "07c64685d337abdf",
@@ -168,9 +168,9 @@
       "updatedAt": "2026-11-21T11:58:20.503Z"
     },
     "l05_s6": {
-      "hash": "297f0a198e5f3bcf",
-      "bytes": 78140,
-      "updatedAt": "2026-11-21T11:58:20.503Z"
+      "hash": "2e4b7dc55c869ff9",
+      "bytes": 56780,
+      "updatedAt": "2026-11-24T19:52:15.376Z"
     },
     "l05_takeaway": {
       "hash": "15a5feec96afa091",
@@ -178,9 +178,9 @@
       "updatedAt": "2026-11-21T11:58:20.504Z"
     },
     "l06_s1": {
-      "hash": "0317f090b1d6f813",
-      "bytes": 129692,
-      "updatedAt": "2026-11-21T11:58:20.512Z"
+      "hash": "6b12c6ebb93a18fe",
+      "bytes": 84428,
+      "updatedAt": "2026-11-24T19:52:15.814Z"
     },
     "l06_s2": {
       "hash": "4df173fca16318e6",
@@ -208,9 +208,9 @@
       "updatedAt": "2026-11-21T11:58:20.512Z"
     },
     "l06_takeaway": {
-      "hash": "a07d58266d01fa63",
-      "bytes": 114284,
-      "updatedAt": "2026-11-21T11:58:20.512Z"
+      "hash": "7c2f0e49ef0f3c26",
+      "bytes": 72428,
+      "updatedAt": "2026-11-24T19:52:16.148Z"
     },
     "l07_s1": {
       "hash": "2bafdd206a463c5d",
@@ -268,9 +268,9 @@
       "updatedAt": "2026-11-21T11:58:20.526Z"
     },
     "l08_s5": {
-      "hash": "11afe8905c287575",
-      "bytes": 107084,
-      "updatedAt": "2026-11-21T11:58:20.526Z"
+      "hash": "65df64c504afe9a3",
+      "bytes": 65132,
+      "updatedAt": "2026-11-24T19:52:16.484Z"
     },
     "l08_s6": {
       "hash": "43ba7c4b42c1ea07",
@@ -278,9 +278,9 @@
       "updatedAt": "2026-11-21T11:58:20.526Z"
     },
     "l08_takeaway": {
-      "hash": "4ad71859f268f46c",
-      "bytes": 106220,
-      "updatedAt": "2026-11-21T11:58:20.526Z"
+      "hash": "24cfdacd2424bd1e",
+      "bytes": 66188,
+      "updatedAt": "2026-11-24T19:52:16.810Z"
     },
     "l09_s1": {
       "hash": "fd6687bd2a144136",
@@ -388,9 +388,9 @@
       "updatedAt": "2026-11-21T11:58:20.548Z"
     },
     "l12_s1": {
-      "hash": "96ed9fc6d3acc8e6",
-      "bytes": 117452,
-      "updatedAt": "2026-11-21T11:58:20.552Z"
+      "hash": "c97cbdacfc0c5029",
+      "bytes": 85772,
+      "updatedAt": "2026-11-24T19:52:17.146Z"
     },
     "l12_s2": {
       "hash": "a0946d54902037dd",
@@ -418,9 +418,9 @@
       "updatedAt": "2026-11-21T11:58:20.553Z"
     },
     "l12_takeaway": {
-      "hash": "e5d7c6943a3dce2e",
-      "bytes": 108092,
-      "updatedAt": "2026-11-21T11:58:20.553Z"
+      "hash": "1df6179600d03a36",
+      "bytes": 74348,
+      "updatedAt": "2026-11-24T19:52:17.460Z"
     }
   }
 }

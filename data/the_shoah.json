@@ -2773,31 +2773,31 @@
       "quiz": [
         {
           "stage": 1,
-          "question": "On what date did Adolf Hitler become Chancellor of Germany?",
-          "q": "On what date did Adolf Hitler become Chancellor of Germany?",
+          "question": "What was the immediate consequence for German Jews after Adolf Hitler became Chancellor in 1933?",
+          "q": "What was the immediate consequence for German Jews after Adolf Hitler became Chancellor in 1933?",
           "options": [
-            "30 January 1933",
-            "1 September 1939",
-            "9 November 1938",
-            "20 January 1942"
+            "The Nazi state rapidly turned antisemitic ideology into nationwide boycotts and discriminatory laws",
+            "German Jews were immediately granted protected minority status by the parliament",
+            "The SA was disbanded and banned from interfering with Jewish businesses",
+            "Foreign governments immediately opened their borders to all German Jewish refugees"
           ],
-          "answer": "30 January 1933",
-          "a": "30 January 1933",
-          "explanation": "Adolf Hitler was appointed Chancellor on 30 January 1933 and immediately began persecuting German Jews."
+          "answer": "The Nazi state rapidly turned antisemitic ideology into nationwide boycotts and discriminatory laws",
+          "a": "The Nazi state rapidly turned antisemitic ideology into nationwide boycotts and discriminatory laws",
+          "explanation": "Once Hitler became Chancellor in January 1933, the Nazi regime wasted no time launching a nationwide boycott of Jewish businesses and passing laws to purge Jewish citizens from public jobs."
         },
         {
           "stage": 1,
-          "question": "On what date did the Nazi regime stage its first nationwide boycott of Jewish shops, doctors, and lawyers?",
-          "q": "On what date did the Nazi regime stage its first nationwide boycott of Jewish shops, doctors, and lawyers?",
+          "question": "What was the main purpose of the Nazis' first nationwide boycott in April 1933?",
+          "q": "What was the main purpose of the Nazis' first nationwide boycott in April 1933?",
           "options": [
-            "7 April 1933",
-            "15 September 1935",
-            "9 November 1938",
-            "1 April 1933"
+            "To raise a one-billion-mark fine to rebuild burned synagogues",
+            "To force Jewish families to move into rural farming villages",
+            "To intimidate ordinary Germans into stopping trade with Jewish shops, doctors, and lawyers",
+            "To protest against foreign tariffs placed on German steel exports"
           ],
-          "answer": "1 April 1933",
-          "a": "1 April 1933",
-          "explanation": "On 1 April 1933, uniformed Nazi stormtroopers picketed Jewish-owned shops and offices across Germany."
+          "answer": "To intimidate ordinary Germans into stopping trade with Jewish shops, doctors, and lawyers",
+          "a": "To intimidate ordinary Germans into stopping trade with Jewish shops, doctors, and lawyers",
+          "explanation": "Uniformed SA men picketed Jewish-owned shops and offices holding placards warning Germans not to buy from Jews, aiming to destroy Jewish livelihoods."
         },
         {
           "stage": 1,
@@ -2941,17 +2941,17 @@
         },
         {
           "stage": 4,
-          "question": "On what dates did the Nazi regime unleash the nationwide pogrom known as Kristallnacht (Night of Broken Glass)?",
-          "q": "On what dates did the Nazi regime unleash the nationwide pogrom known as Kristallnacht (Night of Broken Glass)?",
+          "question": "What harsh financial punishment did the Nazi state impose on the Jewish community after Kristallnacht?",
+          "q": "What harsh financial punishment did the Nazi state impose on the Jewish community after Kristallnacht?",
           "options": [
-            "9–10 November 1938",
-            "1–2 April 1933",
-            "29–30 September 1941",
-            "20–21 January 1942"
+            "A temporary freeze on foreign travel passports for six months",
+            "A requirement to rebuild damaged SA headquarters across Germany",
+            "A one-billion-mark fine forcing Jews to pay for the destruction of their own property",
+            "A small local tax collected only from synagogue leaders in Berlin"
           ],
-          "answer": "9–10 November 1938",
-          "a": "9–10 November 1938",
-          "explanation": "Across the nights of 9–10 November 1938, coordinated Nazi violence shattered Jewish communities nationwide."
+          "answer": "A one-billion-mark fine forcing Jews to pay for the destruction of their own property",
+          "a": "A one-billion-mark fine forcing Jews to pay for the destruction of their own property",
+          "explanation": "After orchestrating the destruction of synagogues and 7,500 businesses during Kristallnacht, the Nazi regime cruelly fined the Jewish community one billion marks to pay for the damage."
         },
         {
           "stage": 4,
@@ -4358,17 +4358,17 @@
       "quiz": [
         {
           "stage": 1,
-          "question": "On what date did German Panzer divisions and Luftwaffe bombers invade Poland, starting the Second World War?",
-          "q": "On what date did German Panzer divisions and Luftwaffe bombers invade Poland, starting the Second World War?",
+          "question": "Why was the 1939 German invasion of Poland a major turning point in Nazi persecution of Jews?",
+          "q": "Why was the 1939 German invasion of Poland a major turning point in Nazi persecution of Jews?",
           "options": [
-            "22 June 1941",
-            "21 September 1939",
-            "30 January 1933",
-            "1 September 1939"
+            "It brought over two million Polish Jews under Nazi control, ten times Germany's remaining Jewish population",
+            "It forced the Nazi regime to release all Jewish prisoners from concentration camps",
+            "It led Britain and France to evacuate Poland's Jewish communities by sea",
+            "It ended Nazi anti-Jewish laws so Germany could focus solely on fighting Britain"
           ],
-          "answer": "1 September 1939",
-          "a": "1 September 1939",
-          "explanation": "Germany invaded Poland on 1 September 1939, triggering the Second World War."
+          "answer": "It brought over two million Polish Jews under Nazi control, ten times Germany's remaining Jewish population",
+          "a": "It brought over two million Polish Jews under Nazi control, ten times Germany's remaining Jewish population",
+          "explanation": "Conquering Poland placed more than two million Polish Jews under Nazi rule, prompting Reinhard Heydrich to order their rapid concentration in cities with major railway hubs."
         },
         {
           "stage": 1,
@@ -5994,17 +5994,17 @@
       "quiz": [
         {
           "stage": 1,
-          "question": "On what date did Adolf Hitler launch Operation Barbarossa, invading the Soviet Union with over three million troops?",
-          "q": "On what date did Adolf Hitler launch Operation Barbarossa, invading the Soviet Union with over three million troops?",
+          "question": "Why was Operation Barbarossa fundamentally different from a conventional military invasion?",
+          "q": "Why was Operation Barbarossa fundamentally different from a conventional military invasion?",
           "options": [
-            "1 September 1939",
-            "20 January 1942",
-            "22 June 1941",
-            "27 January 1945"
+            "It was fought exclusively by naval forces in the Baltic Sea",
+            "Hitler conceived it as a racial war of extermination targeting Jews and Soviet political officers",
+            "German generals refused to allow any SS units to cross the Soviet border",
+            "Its only goal was to secure a quick diplomatic peace treaty with Moscow"
           ],
-          "answer": "22 June 1941",
-          "a": "22 June 1941",
-          "explanation": "On 22 June 1941, Nazi Germany launched Operation Barbarossa against the Soviet Union."
+          "answer": "Hitler conceived it as a racial war of extermination targeting Jews and Soviet political officers",
+          "a": "Hitler conceived it as a racial war of extermination targeting Jews and Soviet political officers",
+          "explanation": "Operation Barbarossa was planned as a racial war of extermination (Vernichtungskrieg), backed by the Commissar Order and the false Judeo-Bolshevism conspiracy myth."
         },
         {
           "stage": 1,
@@ -7695,17 +7695,17 @@
       "quiz": [
         {
           "stage": 1,
-          "question": "On what date did fifteen senior Nazi and ministry officials meet at a Berlin villa for the Wannsee Conference?",
-          "q": "On what date did fifteen senior Nazi and ministry officials meet at a Berlin villa for the Wannsee Conference?",
+          "question": "What was the main purpose of the ninety-minute Wannsee Conference held by senior Nazi and ministry officials in 1942?",
+          "q": "What was the main purpose of the ninety-minute Wannsee Conference held by senior Nazi and ministry officials in 1942?",
           "options": [
-            "22 June 1941",
-            "20 January 1942",
-            "1 September 1939",
-            "27 January 1945"
+            "To plan the evacuation of Berlin before Allied bombing raids",
+            "To negotiate a ceasefire with the Soviet Red Army on the Eastern Front",
+            "To coordinate government logistics and railway cooperation to carry out the 'Final Solution'",
+            "To decide whether Jewish workers should be granted German citizenship"
           ],
-          "answer": "20 January 1942",
-          "a": "20 January 1942",
-          "explanation": "On 20 January 1942, fifteen senior officials coordinated the bureaucratic logistics of the \"Final Solution\" at Wannsee."
+          "answer": "To coordinate government logistics and railway cooperation to carry out the 'Final Solution'",
+          "a": "To coordinate government logistics and railway cooperation to carry out the 'Final Solution'",
+          "explanation": "Chaired by Reinhard Heydrich, the Wannsee Conference brought together 15 senior officials to coordinate state ministries and railways for the mass murder of Europe's Jews."
         },
         {
           "stage": 1,
@@ -10910,17 +10910,17 @@
         },
         {
           "stage": 2,
-          "question": "On what date did Soviet troops liberate Auschwitz, now marked globally as Holocaust Memorial Day?",
-          "q": "On what date did Soviet troops liberate Auschwitz, now marked globally as Holocaust Memorial Day?",
+          "question": "Why were Allied soldiers completely unprepared for what they discovered when liberating camps such as Auschwitz and Bergen-Belsen?",
+          "q": "Why were Allied soldiers completely unprepared for what they discovered when liberating camps such as Auschwitz and Bergen-Belsen?",
           "options": [
-            "15 April 1945",
-            "20 January 1942",
-            "22 June 1941",
-            "27 January 1945"
+            "They thought the SS had left behind detailed peace treaties for the soldiers to sign",
+            "They expected to find all prisoners evacuated safely to neutral Switzerland",
+            "They expected ordinary military or prisoner-of-war camps, not tens of thousands of starving prisoners alongside unburied corpses",
+            "They believed the camps had already been rebuilt into modern civilian hospitals"
           ],
-          "answer": "27 January 1945",
-          "a": "27 January 1945",
-          "explanation": "Soviet soldiers liberated Auschwitz on 27 January 1945, the date commemorated as Holocaust Memorial Day."
+          "answer": "They expected ordinary military or prisoner-of-war camps, not tens of thousands of starving prisoners alongside unburied corpses",
+          "a": "They expected ordinary military or prisoner-of-war camps, not tens of thousands of starving prisoners alongside unburied corpses",
+          "explanation": "British soldiers entering Bergen-Belsen expected a prisoner-of-war camp, but instead confronted 60,000 starving survivors and 13,000 unburied bodies, forcing the army to use bulldozers for mass graves."
         },
         {
           "stage": 2,

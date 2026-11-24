@@ -87,10 +87,16 @@ export function renderDashboard() {
           <button type="button" class="course-filter-pill" data-filter="p2" style="background: #f8fafc; color: #475569; border: 1px solid #e2e8f0; border-radius: 7px; padding: 5px 11px; font-size: 0.76rem; font-weight: 700; cursor: pointer; transition: all 0.15s ease;">GCSE Paper 2</button>
           <button type="button" class="course-filter-pill" data-filter="p3" style="background: #f8fafc; color: #475569; border: 1px solid #e2e8f0; border-radius: 7px; padding: 5px 11px; font-size: 0.76rem; font-weight: 700; cursor: pointer; transition: all 0.15s ease;">GCSE Paper 3</button>
         </div>
-        <button type="button" onclick="window.hhOpenPinUnitsModal && window.hhOpenPinUnitsModal()" style="background: #eff6ff; color: #1d4ed8; border: 1px solid #bfdbfe; border-radius: 7px; padding: 5px 11px; font-size: 0.75rem; font-weight: 800; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; white-space: nowrap;" title="Pin your exact courses or generate a Teacher Class Setup QR link">
-          <i class="fa-solid fa-thumbtack"></i>
-          <span>My Courses / QR</span>
-        </button>
+        <div style="display: inline-flex; align-items: center; gap: 6px; flex-wrap: wrap;">
+          <button type="button" onclick="window.switchView && window.switchView('mock-exams', null, false, { preservePupilTab: true })" style="background: #eef2ff; color: #3730a3; border: 1px solid #a5b4fc; border-radius: 7px; padding: 5px 11px; font-size: 0.75rem; font-weight: 800; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; white-space: nowrap;" title="Open Year 11 GCSE Paper Blueprint, Quick Questions, Grade 9 Answers & Interactive Spec Mind Map">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <span>GCSE Exam &amp; Spec Hub</span>
+          </button>
+          <button type="button" onclick="window.hhOpenPinUnitsModal && window.hhOpenPinUnitsModal()" style="background: #eff6ff; color: #1d4ed8; border: 1px solid #bfdbfe; border-radius: 7px; padding: 5px 11px; font-size: 0.75rem; font-weight: 800; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; white-space: nowrap;" title="Pin your exact courses or generate a Teacher Class Setup QR link">
+            <i class="fa-solid fa-thumbtack"></i>
+            <span>My Courses / QR</span>
+          </button>
+        </div>
       </div>
   `;
 
@@ -2707,14 +2713,22 @@ function renderOfficialPastPapers(container, unitId) {
   `;
 }
 
-export async function renderMockExamsView() {
-  const contentArea = document.getElementById('main-content');
+export async function renderMockExamsView(options = {}) {
+  const unitId = state.selectedUnitId || window.currentUnitId || 'cme_new';
+  const { renderGcseExamSpecHub } = await import('./gcse_exam_spec_hub.js');
+  return renderGcseExamSpecHub(unitId, options);
+}
+
+export async function renderMockExamsIntoContainer(contentArea, explicitUnitId = null) {
   if (!contentArea) return;
   contentArea.innerHTML = '';
-  contentArea.style.paddingTop = '0';
 
-  const unitData = state.activeUnitData || {};
-  const unitId = state.selectedUnitId || window.currentUnitId || 'cme_new';
+  const unitId = explicitUnitId || state.selectedUnitId || window.currentUnitId || 'cme_new';
+  const rawDbEntry = (window.db && window.db[unitId]) || {};
+  const unitData =
+    (state.selectedUnitId === unitId && state.activeUnitData && state.activeUnitData.mock_exams
+      ? state.activeUnitData
+      : rawDbEntry.data || rawDbEntry) || state.activeUnitData || {};
   const mocks = unitData.mock_exams || [];
 
   if (!mocks || mocks.length === 0) {

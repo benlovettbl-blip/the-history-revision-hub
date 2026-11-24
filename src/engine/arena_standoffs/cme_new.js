@@ -142,9 +142,9 @@ export const CME_NEW_STANDOFFS = {
     roleB: {
       name: "King Hussein of Jordan & International Critics",
       title: "Black September (1970) & Global Condemnation of Terrorism",
-      objective: "Argue that PFLP hijackings at Dawson's Field created an illegal 'state within a state' that forced Jordan to expel the PLO in Black September, while the 1972 Munich massacre alienated world opinion.",
-      starter: "&ldquo;Hijacking airliners to Dawson's Field undermined Jordanian sovereignty during Black September, and murdering eleven Olympic athletes at Munich horrified the world because...&rdquo;",
-      keyTerms: ["Dawson's Field Hijackings", "Black September (1970)", "Expulsion to Lebanon", "Munich Olympics Massacre (1972)"]
+      objective: "Argue that PFLP airplane hijacks at Dawson's Field created an illegal 'state within a state' that forced the expulsion of the PLO from Jordan in Black September, while the 1972 Munich massacre alienated world opinion.",
+      starter: "&ldquo;PFLP airplane hijacks to Dawson's Field undermined Jordanian sovereignty during Black September, and murdering eleven Olympic athletes at Munich horrified the world because...&rdquo;",
+      keyTerms: ["PFLP Airplane Hijacks (1970)", "Black September (1970)", "Expulsion of PLO from Jordan", "Munich Olympics Massacre (1972)"]
     }
   },
   lesson_8: {
@@ -196,9 +196,9 @@ export const CME_NEW_STANDOFFS = {
     roleB: {
       name: "Defence Minister Yitzhak Rabin & Israeli Security Officials",
       title: "Security Dilemma: From 'Iron Fist' to Recognising Political Limits",
-      objective: "Explain why Israel initially invaded Lebanon in 1982 to stop cross-border PLO attacks and used curfews and arrests ('Iron Fist') against Intifada riots and rising Hamas militants—before Rabin concluded only negotiations could end policing two million Palestinians.",
-      starter: "&ldquo;Facing northern border attacks in 1982, violent street riots, and the 1987 founding of Hamas, security forces sought order—yet the Intifada ultimately convinced Rabin to seek political compromise because...&rdquo;",
-      keyTerms: ["Operation Peace for Galilee (1982)", "Rabin's 'Iron Fist' Policy", "Founding of Hamas (1987)", "Limits of Military Occupation"]
+      objective: "Explain why escalating Israeli reprisals against PLO activities in Lebanon culminated in the 1982 invasion of Lebanon, and why curfews and arrests ('Iron Fist') against Intifada riots and rising Hamas militants ultimately convinced Rabin that only negotiations could end policing two million Palestinians.",
+      starter: "&ldquo;Facing northern PLO attacks that triggered Israeli reprisals and the 1982 Lebanon invasion, plus the 1987 Intifada and founding of Hamas, Rabin ultimately sought political compromise because...&rdquo;",
+      keyTerms: ["Israeli Reprisals & 1982 Invasion", "Rabin's 'Iron Fist' Policy", "Founding of Hamas (1987)", "Limits of Military Occupation"]
     }
   },
   lesson_11: {

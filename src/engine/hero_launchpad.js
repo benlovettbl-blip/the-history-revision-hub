@@ -519,9 +519,9 @@ export function renderStickyUnitResourceBar(unitId, unitData) {
             ${
               hasExamHub
                 ? `
-              <button type="button" onclick="window.switchView && window.switchView('mock-exams', '${unitId}')" style="background: #1e293b; color: #c7d2fe; border: 1px solid #6366f1; border-radius: 7px; padding: 6px 12px; font-size: 0.78rem; font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; gap: 6px;" title="Open Mastery Exam Packs, Mock Papers & Past Papers">
+              <button type="button" onclick="window.switchView && window.switchView('mock-exams', '${unitId}')" style="background: #1e293b; color: #c7d2fe; border: 1px solid #6366f1; border-radius: 7px; padding: 6px 12px; font-size: 0.78rem; font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; gap: 6px;" title="Open Paper Structure, Exam Questions, Grade 9 Answers, Spec Mind Map & Mock Papers">
                 <i class="fa-solid fa-file-signature" style="color: #818cf8;"></i>
-                <span>Exam Practice</span>
+                <span>Exam &amp; Spec Hub</span>
               </button>`
                 : ''
             }

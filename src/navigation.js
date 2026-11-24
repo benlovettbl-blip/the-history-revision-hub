@@ -983,6 +983,7 @@ export function updateBreadcrumbs(customTrail = null) {
         viewName === 'timeline' ||
         viewName === 'booklet' ||
         viewName === 'mock-exams' ||
+        viewName === 'exam-trainer' ||
         viewName === 'decisions' ||
         viewName === 'taboo' ||
         viewName === 'individuals' ||
@@ -1001,7 +1002,8 @@ export function updateBreadcrumbs(customTrail = null) {
     else if (viewName === 'arcade') currentSectionLabel = 'Revision Arcade';
     else if (viewName === 'timeline') currentSectionLabel = 'Chronological Timeline';
     else if (viewName === 'booklet') currentSectionLabel = 'Printable Booklet';
-    else if (viewName === 'mock-exams') currentSectionLabel = 'GCSE Mock Exams';
+    else if (viewName === 'mock-exams' || viewName === 'exam-trainer')
+      currentSectionLabel = 'Exam & Spec Hub';
     else if (viewName === 'profile') currentSectionLabel = 'Student Profile';
     else if (viewName === 'curriculum') currentSectionLabel = 'Curriculum Map';
     else if (viewName === 'schools') currentSectionLabel = 'For Schools & Departments';
@@ -1314,19 +1316,12 @@ export async function switchView(viewName, param = null, skipHistory = false, op
     }
   }
 
-  // Route Mobile Pupil Exam Practice strictly to Zero-PDF Mobile Exam Trainer
-  const isMobilePupilSession =
-    typeof document !== 'undefined' &&
-    document.body &&
-    document.body.classList.contains('hh-mobile-pupil-mode') &&
-    !isStaffModeActive();
+  // Ensure default GCSE unit fallback when opening Exam & Spec Hub without an explicit unit
   if (
-    (viewName === 'mock-exams' || viewName === 'exam-practice') &&
-    isMobilePupilSession &&
-    !options?.forceDesktopMocks
+    (viewName === 'mock-exams' || viewName === 'exam-practice' || viewName === 'exam-trainer') &&
+    !param
   ) {
-    viewName = 'exam-trainer';
-    param = param || state.selectedUnitId || window.currentUnitId || 'cme_new';
+    param = state.selectedUnitId || window.currentUnitId || 'cme_new';
   }
 
   // Stop active speech playback & close any stuck full-screen diagnostic overlay on view transition
@@ -1598,9 +1593,6 @@ export async function switchView(viewName, param = null, skipHistory = false, op
     viewName === 'chess' ||
     viewName === 'masterpiece' ||
     viewName === 'gallery' ||
-    viewName === 'gcse-tracker' ||
-    viewName === 'spec-tracker' ||
-    viewName === 'revision-builder' ||
     (viewName === 'booklet' && (!param || param === 'all'));
 
   if (isGlobalView) {
@@ -1678,8 +1670,8 @@ export async function switchView(viewName, param = null, skipHistory = false, op
   } else if (viewName === 'exam-trainer') {
     const targetUnit = param || state.selectedUnitId || window.currentUnitId || 'cme_new';
     await loadUnit(targetUnit);
-    const { renderMobileExamTrainer } = await import('./mobile_exam_trainer.js');
-    await renderMobileExamTrainer(targetUnit, options || {});
+    const { renderGcseExamSpecHub } = await import('./gcse_exam_spec_hub.js');
+    await renderGcseExamSpecHub(targetUnit, { ...(options || {}), preservePupilTab: true });
   } else if (viewName === 'timeline') {
     const targetUnit = param || state.selectedUnitId || window.currentUnitId || 'cme_new';
     await loadUnit(targetUnit);
@@ -1701,13 +1693,13 @@ export async function switchView(viewName, param = null, skipHistory = false, op
     }, 80);
     return;
   } else if (viewName === 'mock-exams' || viewName === 'exam-practice') {
-    const targetUnit = param || state.selectedUnitId || window.currentUnitId;
+    const targetUnit = param || state.selectedUnitId || window.currentUnitId || 'cme_new';
     if (targetUnit === 'ks2_ww2') {
       await switchView('lessons', 'ks2_ww2');
       return;
     }
-    if (targetUnit) await loadUnit(targetUnit);
-    renderMockExamsView();
+    await loadUnit(targetUnit);
+    await renderMockExamsView(options || {});
   } else if (viewName === 'lessons') {
     const targetUnit = param || state.selectedUnitId || window.currentUnitId || 'edexcel_medicine';
     await loadUnit(targetUnit);
@@ -1777,12 +1769,10 @@ export async function switchView(viewName, param = null, skipHistory = false, op
     viewName === 'revision-builder' ||
     viewName === 'year11-tracker'
   ) {
-    // Specification Tracker is temporarily paused. Gracefully redirect to GCSE dashboard.
-    state.selectedUnitId = null;
-    window.currentUnitId = null;
-    appStore.state.currentView = 'dashboard';
-    window.location.hash = '';
-    renderDashboard();
+    const targetUnit = param || state.selectedUnitId || window.currentUnitId || 'cme_new';
+    await loadUnit(targetUnit);
+    const { renderGcseExamSpecHub } = await import('./gcse_exam_spec_hub.js');
+    await renderGcseExamSpecHub(targetUnit, { ...(options || {}), initialTab: 'spec' });
   } else {
     const fallbackUnit = param || state.selectedUnitId || window.currentUnitId;
     if (fallbackUnit === 'ks2_ww2') {
@@ -2414,7 +2404,7 @@ function updateSidebarForUnit(unitId, unitData = {}) {
     navMockExams.dataset.view = 'mock-exams';
     navMockExams.dataset.unit = unitId;
     navMockExams.innerHTML =
-      '<i class="fa-solid fa-file-signature" style="color: #6366f1;"></i><span>GCSE Exam Practice</span>';
+      '<i class="fa-solid fa-file-signature" style="color: #6366f1;"></i><span>Exam &amp; Spec Hub</span>';
     navMockExams.onclick = (e) => {
       if (e) e.stopPropagation();
       saveUnitReturnOrigin();

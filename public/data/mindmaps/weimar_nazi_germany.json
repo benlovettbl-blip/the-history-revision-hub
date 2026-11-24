@@ -1,0 +1,2809 @@
+{
+  "unitId": "weimar_nazi_germany",
+  "schemaVersion": "v8-4ring-cards",
+  "optionCode": "1HI0/31",
+  "paperType": "Paper 3",
+  "paperLabel": "Paper 3 · Modern Depth Study",
+  "courseTitle": "Weimar & Nazi Germany, 1918–39",
+  "examDateBoundary": "1918–1939",
+  "disclaimer": "Aligned to Pearson Edexcel GCSE (9–1) History (1HI0). Independent educational resource — not endorsed by Pearson.",
+  "contextBoundaryNote": "Edexcel Option 31 strictly examines 1918 to August 1939 before the Second World War; wartime resistance, euthanasia, and extermination programmes fall outside this specification.",
+  "root": {
+    "id": "root",
+    "tier": 0,
+    "label": "Weimar & Nazi Germany",
+    "subLabel": "Edexcel Option 31 · 1918–39",
+    "dateChip": "1918–39",
+    "gloss": "Germany from First World War defeat and Weimar democracy in 1918 through Hitler's rise to a totalitarian Nazi dictatorship by August 1939.",
+    "children": [
+      {
+        "id": "kt1",
+        "keyTopicNumber": 1,
+        "tier": 1,
+        "side": "left",
+        "color": "#2563eb",
+        "label": "KT1: The Weimar Republic",
+        "dateChip": "1918–29",
+        "lessonIndex": 0,
+        "stageIndex": 0,
+        "searchTerm": "Kiel naval mutiny",
+        "gloss": "Key topic 1: The Weimar Republic, 1918–29 — origins amid war collapse, early 1919–23 crises, Stresemann's recovery, and Weimar social and cultural change.",
+        "children": [
+          {
+            "id": "kt1_1",
+            "code": "1.1",
+            "tier": 2,
+            "label": "1.1 Origins of the Republic",
+            "dateChip": "1918–19",
+            "lessonIndex": 0,
+            "stageIndex": 0,
+            "searchTerm": "Kiel",
+            "gloss": "Q3d Core Debate: View 1 argues the Republic was crippled from birth by armistice shame and Article 48 flaws vs View 2 argues Ebert and progressive democratic rights saved Germany from chaos.",
+            "children": [
+              {
+                "id": "kt1_1_s1",
+                "tier": 3,
+                "label": "Unrest, Abdication & Armistice",
+                "dateChip": "Nov 1918",
+                "lessonIndex": 0,
+                "stageIndex": 0,
+                "searchTerm": "political unrest",
+                "gloss": "Situation in Germany at the end of the War brought political unrest, the abdication of the Kaiser, the November armistice, and a new republic.",
+                "children": [
+                  {
+                    "id": "kt1_1_s1_w1",
+                    "tier": 4,
+                    "tag": "Why",
+                    "label": "Allied Blockade & Kiel Mutiny",
+                    "detail": "Severe food shortages killed 750,000 civilians and sparked 40,000 sailors at Kiel to revolt against imperial rule.",
+                    "lessonIndex": 0,
+                    "stageIndex": 0,
+                    "searchTerm": "Kiel",
+                    "gloss": "Severe food shortages killed 750,000 civilians and sparked 40,000 sailors at Kiel to revolt against imperial rule."
+                  },
+                  {
+                    "id": "kt1_1_s1_e1",
+                    "tier": 4,
+                    "tag": "Evidence",
+                    "label": "Wilhelm II Fled to Holland",
+                    "detail": "Losing army loyalty at Spa on 9 November 1918, the Kaiser abdicated as Scheidemann proclaimed a democratic state.",
+                    "lessonIndex": 0,
+                    "stageIndex": 1,
+                    "searchTerm": "Scheidemann",
+                    "gloss": "Losing army loyalty at Spa on 9 November 1918, the Kaiser abdicated as Scheidemann proclaimed a democratic state."
+                  },
+                  {
+                    "id": "kt1_1_s1_v1",
+                    "tier": 4,
+                    "tag": "View 1",
+                    "label": "November Armistice Tainted Ebert",
+                    "detail": "Erzberger signing surrender on 11 November let nationalists brand civilian democrats traitors from day one.",
+                    "lessonIndex": 0,
+                    "stageIndex": 2,
+                    "searchTerm": "Erzberger",
+                    "gloss": "Erzberger signing surrender on 11 November let nationalists brand civilian democrats traitors from day one."
+                  },
+                  {
+                    "id": "kt1_1_s1_v2",
+                    "tier": 4,
+                    "tag": "View 2",
+                    "label": "Ebert-Groener Pact Averted Chaos",
+                    "detail": "Securing Imperial Army backing and civil service continuity prevented an immediate Bolshevik-style civil war.",
+                    "lessonIndex": 0,
+                    "stageIndex": 2,
+                    "searchTerm": "Groener",
+                    "gloss": "Securing Imperial Army backing and civil service continuity prevented an immediate Bolshevik-style civil war."
+                  }
+                ]
+              },
+              {
+                "id": "kt1_1_s2",
+                "tier": 3,
+                "label": "Weimar Constitution Design",
+                "dateChip": "Aug 1919",
+                "lessonIndex": 0,
+                "stageIndex": 4,
+                "searchTerm": "Article 48",
+                "gloss": "The new Weimar Constitution combined progressive democratic strengths in Germany with dangerous structural weaknesses.",
+                "children": [
+                  {
+                    "id": "kt1_1_s2_w1",
+                    "tier": 4,
+                    "tag": "Why",
+                    "label": "National Assembly Met in Weimar",
+                    "detail": "Violent street fighting in Berlin forced elected deputies in February 1919 to draft laws in a peaceful town.",
+                    "lessonIndex": 0,
+                    "stageIndex": 3,
+                    "searchTerm": "National Assembly",
+                    "gloss": "Violent street fighting in Berlin forced elected deputies in February 1919 to draft laws in a peaceful town."
+                  },
+                  {
+                    "id": "kt1_1_s2_e1",
+                    "tier": 4,
+                    "tag": "Evidence",
+                    "label": "83% Turnout Backed Moderate Rule",
+                    "detail": "Social Democrats, Centre, and Democratic parties won over three-quarters of seats in the January 1919 vote.",
+                    "lessonIndex": 0,
+                    "stageIndex": 3,
+                    "searchTerm": "eighty-three",
+                    "gloss": "Social Democrats, Centre, and Democratic parties won over three-quarters of seats in the January 1919 vote."
+                  },
+                  {
+                    "id": "kt1_1_s2_v1",
+                    "tier": 4,
+                    "tag": "View 1",
+                    "label": "PR & Article 48 Weakened Rule",
+                    "detail": "Proportional representation splintered 29 parties while presidential emergency decrees bypassed Parliament.",
+                    "lessonIndex": 0,
+                    "stageIndex": 4,
+                    "searchTerm": "Article 48",
+                    "gloss": "Proportional representation splintered 29 parties while presidential emergency decrees bypassed Parliament."
+                  },
+                  {
+                    "id": "kt1_1_s2_v2",
+                    "tier": 4,
+                    "tag": "View 2",
+                    "label": "Universal Vote at Age Twenty",
+                    "detail": "Equal male and female suffrage, free speech, and elected seven-year presidents built modern European liberty.",
+                    "lessonIndex": 0,
+                    "stageIndex": 4,
+                    "searchTerm": "twenty",
+                    "gloss": "Equal male and female suffrage, free speech, and elected seven-year presidents built modern European liberty."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt1_2",
+            "code": "1.2",
+            "tier": 2,
+            "label": "1.2 Early Weimar Challenges",
+            "dateChip": "1919–23",
+            "lessonIndex": 1,
+            "stageIndex": 1,
+            "searchTerm": "Versailles",
+            "gloss": "Q3d Core Debate: View 1 argues the Treaty of Versailles and 1923 Ruhr hyperinflation dealt the Republic its worst blow vs View 2 argues armed Left and Right revolts posed the deadlier danger.",
+            "children": [
+              {
+                "id": "kt1_2_s1",
+                "tier": 3,
+                "label": "Versailles & Stab in the Back",
+                "dateChip": "Jun 1919",
+                "lessonIndex": 1,
+                "stageIndex": 1,
+                "searchTerm": "Versailles",
+                "gloss": "Early unpopularity of the Republic stemmed from the stab in the back theory and harsh key terms of the Treaty of Versailles.",
+                "children": [
+                  {
+                    "id": "kt1_2_s1_w1",
+                    "tier": 4,
+                    "tag": "Why",
+                    "label": "Allied Diktat Forced Signature",
+                    "detail": "Threatened with renewed Allied invasion, civilian ministers had no choice but to sign peace on 28 June 1919.",
+                    "lessonIndex": 1,
+                    "stageIndex": 1,
+                    "searchTerm": "Versailles",
+                    "gloss": "Threatened with renewed Allied invasion, civilian ministers had no choice but to sign peace on 28 June 1919."
+                  },
+                  {
+                    "id": "kt1_2_s1_e1",
+                    "tier": 4,
+                    "tag": "Evidence",
+                    "label": "Article 231 & £6.6bn Reparations",
+                    "detail": "War guilt, a 100,000-man army cap, zero submarines or planes, and losing 13% of territory enraged voters.",
+                    "lessonIndex": 1,
+                    "stageIndex": 1,
+                    "searchTerm": "231",
+                    "gloss": "War guilt, a 100,000-man army cap, zero submarines or planes, and losing 13% of territory enraged voters."
+                  },
+                  {
+                    "id": "kt1_2_s1_v1",
+                    "tier": 4,
+                    "tag": "View 1",
+                    "label": "Dolchstoss Poisoned Legitimacy",
+                    "detail": "Hindenburg's myth that undefeated soldiers were betrayed at home permanently alienated nationalist voters.",
+                    "lessonIndex": 1,
+                    "stageIndex": 1,
+                    "searchTerm": "Dolchstoss",
+                    "gloss": "Hindenburg's myth that undefeated soldiers were betrayed at home permanently alienated nationalist voters."
+                  },
+                  {
+                    "id": "kt1_2_s1_v2",
+                    "tier": 4,
+                    "tag": "View 2",
+                    "label": "Peace Preserved National Unity",
+                    "detail": "Accepting harsh Allied terms prevented foreign dismemberment and gave German democracy breathing space.",
+                    "lessonIndex": 1,
+                    "stageIndex": 1,
+                    "searchTerm": "Versailles",
+                    "gloss": "Accepting harsh Allied terms prevented foreign dismemberment and gave German democracy breathing space."
+                  }
+                ]
+              },
+              {
+                "id": "kt1_2_s2",
+                "tier": 3,
+                "label": "Spartacists, Freikorps & Kapp",
+                "dateChip": "1919–22",
+                "lessonIndex": 1,
+                "stageIndex": 0,
+                "searchTerm": "Spartacist",
+                "gloss": "Violent challenges to the Republic from Left and Right included the Spartacists, the Freikorps, and the 1920 Kapp Putsch.",
+                "children": [
+                  {
+                    "id": "kt1_2_s2_w1",
+                    "tier": 4,
+                    "tag": "Why",
+                    "label": "Extremists Rejected Democracy",
+                    "detail": "Communists wanted Soviet councils while nationalist ex-soldiers despised Versailles military cuts.",
+                    "lessonIndex": 1,
+                    "stageIndex": 0,
+                    "searchTerm": "Spartacist",
+                    "gloss": "Communists wanted Soviet councils while nationalist ex-soldiers despised Versailles military cuts."
+                  },
+                  {
+                    "id": "kt1_2_s2_e1",
+                    "tier": 4,
+                    "tag": "Evidence",
+                    "label": "376 Political Murders by 1922",
+                    "detail": "Right-wing Organisation Consul gunmen assassinated Erzberger and Foreign Minister Walther Rathenau.",
+                    "lessonIndex": 1,
+                    "stageIndex": 3,
+                    "searchTerm": "Rathenau",
+                    "gloss": "Right-wing Organisation Consul gunmen assassinated Erzberger and Foreign Minister Walther Rathenau."
+                  },
+                  {
+                    "id": "kt1_2_s2_v1",
+                    "tier": 4,
+                    "tag": "View 1",
+                    "label": "Workers Defeated the Kapp Coup",
+                    "detail": "When Reichswehr generals refused to shoot Freikorps rebels in March 1920, a Berlin general strike saved Ebert.",
+                    "lessonIndex": 1,
+                    "stageIndex": 2,
+                    "searchTerm": "Kapp",
+                    "gloss": "When Reichswehr generals refused to shoot Freikorps rebels in March 1920, a Berlin general strike saved Ebert."
+                  },
+                  {
+                    "id": "kt1_2_s2_v2",
+                    "tier": 4,
+                    "tag": "View 2",
+                    "label": "Army & Judges Backed the Right",
+                    "detail": "Crushing Luxemburg and Liebknecht brutally while sparing right-wing putschists exposed deadly elite bias.",
+                    "lessonIndex": 1,
+                    "stageIndex": 0,
+                    "searchTerm": "Luxemburg",
+                    "gloss": "Crushing Luxemburg and Liebknecht brutally while sparing right-wing putschists exposed deadly elite bias."
+                  }
+                ]
+              },
+              {
+                "id": "kt1_2_s3",
+                "tier": 3,
+                "label": "Ruhr Crisis & Hyperinflation",
+                "dateChip": "1923",
+                "lessonIndex": 1,
+                "stageIndex": 4,
+                "searchTerm": "Ruhr",
+                "gloss": "Challenges of 1923 centred on hyperinflation alongside the reasons for and effects of the French occupation of the Ruhr.",
+                "children": [
+                  {
+                    "id": "kt1_2_s3_w1",
+                    "tier": 4,
+                    "tag": "Why",
+                    "label": "Missed Coal Debt Sparked Invasion",
+                    "detail": "Defaulting on reparations brought 60,000 French and Belgian troops into Germany's industrial heartland.",
+                    "lessonIndex": 1,
+                    "stageIndex": 4,
+                    "searchTerm": "Ruhr",
+                    "gloss": "Defaulting on reparations brought 60,000 French and Belgian troops into Germany's industrial heartland."
+                  },
+                  {
+                    "id": "kt1_2_s3_w2",
+                    "tier": 4,
+                    "tag": "Why",
+                    "label": "Printing Money for Passive Strike",
+                    "detail": "Paying striking Ruhr miners while collecting zero tax revenue collapsed the mark to 200 billion per loaf.",
+                    "lessonIndex": 1,
+                    "stageIndex": 4,
+                    "searchTerm": "passive resistance",
+                    "gloss": "Paying striking Ruhr miners while collecting zero tax revenue collapsed the mark to 200 billion per loaf."
+                  },
+                  {
+                    "id": "kt1_2_s3_v1",
+                    "tier": 4,
+                    "tag": "View 1",
+                    "label": "Middle-Class Savers Lost Everything",
+                    "detail": "Wiping out lifetime bank savings and fixed pensions turned respectable burger families against Weimar.",
+                    "lessonIndex": 1,
+                    "stageIndex": 4,
+                    "searchTerm": "savings",
+                    "gloss": "Wiping out lifetime bank savings and fixed pensions turned respectable burger families against Weimar."
+                  },
+                  {
+                    "id": "kt1_2_s3_v2",
+                    "tier": 4,
+                    "tag": "View 2",
+                    "label": "Debtors Gained & Republic Survived",
+                    "detail": "Big industrialists cleared loans cheaply and Stresemann swiftly restored order without regime collapse.",
+                    "lessonIndex": 1,
+                    "stageIndex": 4,
+                    "searchTerm": "hyperinflation",
+                    "gloss": "Big industrialists cleared loans cheaply and Stresemann swiftly restored order without regime collapse."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt1_3",
+            "code": "1.3",
+            "tier": 2,
+            "label": "1.3 Recovery of the Republic",
+            "dateChip": "1924–29",
+            "lessonIndex": 2,
+            "stageIndex": 0,
+            "searchTerm": "Stresemann",
+            "gloss": "Q3d Core Debate: View 1 argues Stresemann achieved genuine economic recovery and international acceptance vs View 2 argues Weimar stability stayed a fragile volcano built on short-term US loans.",
+            "children": [
+              {
+                "id": "kt1_3_s1",
+                "tier": 3,
+                "label": "Stresemann & the Rentenmark",
+                "dateChip": "Nov 1923–24",
+                "lessonIndex": 2,
+                "stageIndex": 0,
+                "searchTerm": "Rentenmark",
+                "gloss": "Economic recovery began when Gustav Stresemann ended passive resistance and stabilized currency with the new Rentenmark.",
+                "children": [
+                  {
+                    "id": "kt1_3_s1_w1",
+                    "tier": 4,
+                    "tag": "Why",
+                    "label": "Halted Ruhr Strike & Burnt Notes",
+                    "detail": "Ending costly passive resistance in September 1923 stopped runaway money printing and reopened factories.",
+                    "lessonIndex": 2,
+                    "stageIndex": 0,
+                    "searchTerm": "Rentenmark",
+                    "gloss": "Ending costly passive resistance in September 1923 stopped runaway money printing and reopened factories."
+                  },
+                  {
+                    "id": "kt1_3_s1_e1",
+                    "tier": 4,
+                    "tag": "Evidence",
+                    "label": "Land-Backed Reichsmark in 1924",
+                    "detail": "Tying currency strictly to agricultural land and industrial mortgages restored shopkeeper trust overnight.",
+                    "lessonIndex": 2,
+                    "stageIndex": 0,
+                    "searchTerm": "Reichsmark",
+                    "gloss": "Tying currency strictly to agricultural land and industrial mortgages restored shopkeeper trust overnight."
+                  },
+                  {
+                    "id": "kt1_3_s1_v1",
+                    "tier": 4,
+                    "tag": "View 1",
+                    "label": "Restored Confidence & Moderate Votes",
+                    "detail": "Sound currency revived domestic trade and boosted pro-Weimar coalitions in the December 1924 election.",
+                    "lessonIndex": 2,
+                    "stageIndex": 0,
+                    "searchTerm": "Stresemann",
+                    "gloss": "Sound currency revived domestic trade and boosted pro-Weimar coalitions in the December 1924 election."
+                  },
+                  {
+                    "id": "kt1_3_s1_v2",
+                    "tier": 4,
+                    "tag": "View 2",
+                    "label": "1923 Savers Never Fully Repaid",
+                    "detail": "Refusing full compensation left ruined middle-class pensioners permanently bitter towards republican leaders.",
+                    "lessonIndex": 2,
+                    "stageIndex": 0,
+                    "searchTerm": "Rentenmark",
+                    "gloss": "Refusing full compensation left ruined middle-class pensioners permanently bitter towards republican leaders."
+                  }
+                ]
+              },
+              {
+                "id": "kt1_3_s2",
+                "tier": 3,
+                "label": "Dawes, Young & American Loans",
+                "dateChip": "1924–29",
+                "lessonIndex": 2,
+                "stageIndex": 1,
+                "searchTerm": "Dawes Plan",
+                "gloss": "The Dawes and Young Plans restructured reparations while American loans and investment funded Weimar economic recovery.",
+                "children": [
+                  {
+                    "id": "kt1_3_s2_w1",
+                    "tier": 4,
+                    "tag": "Why",
+                    "label": "800m Gold Marks Kickstarted Output",
+                    "detail": "Dawes in 1924 scaled annual payments to capacity, ended Ruhr occupation, and doubled industrial output by 1928.",
+                    "lessonIndex": 2,
+                    "stageIndex": 1,
+                    "searchTerm": "Dawes Plan",
+                    "gloss": "Dawes in 1924 scaled annual payments to capacity, ended Ruhr occupation, and doubled industrial output by 1928."
+                  },
+                  {
+                    "id": "kt1_3_s2_e1",
+                    "tier": 4,
+                    "tag": "Evidence",
+                    "label": "Young Plan Cut Bill to £1.85bn",
+                    "detail": "Negotiated in 1929, the Young Plan slashed total reparations by three-quarters and extended payments to 1988.",
+                    "lessonIndex": 2,
+                    "stageIndex": 4,
+                    "searchTerm": "Young Plan",
+                    "gloss": "Negotiated in 1929, the Young Plan slashed total reparations by three-quarters and extended payments to 1988."
+                  },
+                  {
+                    "id": "kt1_3_s2_v1",
+                    "tier": 4,
+                    "tag": "View 1",
+                    "label": "Exports & Factories Surpassed 1913",
+                    "detail": "Over $2.5 billion in Wall Street capital modernised chemical, steel, and electrical plants across Germany.",
+                    "lessonIndex": 2,
+                    "stageIndex": 1,
+                    "searchTerm": "American loans",
+                    "gloss": "Over $2.5 billion in Wall Street capital modernised chemical, steel, and electrical plants across Germany."
+                  },
+                  {
+                    "id": "kt1_3_s2_v2",
+                    "tier": 4,
+                    "tag": "View 2",
+                    "label": "Dancing on a Short-Term Volcano",
+                    "detail": "Stresemann himself warned that prosperity relied on recallable US bank credit while farmers stayed in debt.",
+                    "lessonIndex": 2,
+                    "stageIndex": 4,
+                    "searchTerm": "volcano",
+                    "gloss": "Stresemann himself warned that prosperity relied on recallable US bank credit while farmers stayed in debt."
+                  }
+                ]
+              },
+              {
+                "id": "kt1_3_s3",
+                "tier": 3,
+                "label": "Locarno Pact & League Entry",
+                "dateChip": "1925–28",
+                "lessonIndex": 2,
+                "stageIndex": 2,
+                "searchTerm": "Locarno",
+                "gloss": "Stresemann gained international acceptance of Germany through the Locarno Pact and joining the League of Nations.",
+                "children": [
+                  {
+                    "id": "kt1_3_s3_w1",
+                    "tier": 4,
+                    "tag": "Why",
+                    "label": "Fulfilment Diplomacy Built Trust",
+                    "detail": "Accepting western borders with France and Belgium voluntarily in 1925 ended Germany's postwar pariah status.",
+                    "lessonIndex": 2,
+                    "stageIndex": 2,
+                    "searchTerm": "Locarno",
+                    "gloss": "Accepting western borders with France and Belgium voluntarily in 1925 ended Germany's postwar pariah status."
+                  },
+                  {
+                    "id": "kt1_3_s3_e1",
+                    "tier": 4,
+                    "tag": "Evidence",
+                    "label": "Permanent League Council Seat 1926",
+                    "detail": "Germany entered the League as a great power, signed Kellogg-Briand in 1928, and won Allied Rhineland exit.",
+                    "lessonIndex": 2,
+                    "stageIndex": 3,
+                    "searchTerm": "League of Nations",
+                    "gloss": "Germany entered the League as a great power, signed Kellogg-Briand in 1928, and won Allied Rhineland exit."
+                  },
+                  {
+                    "id": "kt1_3_s3_v1",
+                    "tier": 4,
+                    "tag": "View 1",
+                    "label": "Peaceful Revision Won Allied Respect",
+                    "detail": "Stresemann won the 1926 Nobel Peace Prize and ended French threats of repeating the Ruhr occupation.",
+                    "lessonIndex": 2,
+                    "stageIndex": 2,
+                    "searchTerm": "Spirit of Locarno",
+                    "gloss": "Stresemann won the 1926 Nobel Peace Prize and ended French threats of repeating the Ruhr occupation."
+                  },
+                  {
+                    "id": "kt1_3_s3_v2",
+                    "tier": 4,
+                    "tag": "View 2",
+                    "label": "Right Attacked Treaty Appeasement",
+                    "detail": "Hugenberg and Hitler campaigned fiercely against Locarno and the Young Plan as cowardly betrayals of Germany.",
+                    "lessonIndex": 2,
+                    "stageIndex": 4,
+                    "searchTerm": "Hugenberg",
+                    "gloss": "Hugenberg and Hitler campaigned fiercely against Locarno and the Young Plan as cowardly betrayals of Germany."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt1_4",
+            "code": "1.4",
+            "tier": 2,
+            "label": "1.4 Weimar Society & Culture",
+            "dateChip": "1924–29",
+            "lessonIndex": 3,
+            "stageIndex": 0,
+            "searchTerm": "real wages",
+            "gloss": "Q3d Core Debate: View 1 argues 1924–29 delivered progressive Golden Years in living standards, female equality, and culture vs View 2 argues gains remained uneven and provoked fierce conservative backlash.",
+            "children": [
+              {
+                "id": "kt1_4_s1",
+                "tier": 3,
+                "label": "Wages, Homes & Living Standards",
+                "dateChip": "1924–29",
+                "lessonIndex": 3,
+                "stageIndex": 0,
+                "searchTerm": "Unemployment Insurance",
+                "gloss": "Changes in the standard of living brought rising industrial wages, council housing, and welfare insurance.",
+                "children": [
+                  {
+                    "id": "kt1_4_s1_w1",
+                    "tier": 4,
+                    "tag": "Why",
+                    "label": "Real Wages Rose Over 25 Percent",
+                    "detail": "Strong trade union bargaining and Dawes investment lifted skilled urban workers to Europe's highest pay.",
+                    "lessonIndex": 3,
+                    "stageIndex": 0,
+                    "searchTerm": "wages",
+                    "gloss": "Strong trade union bargaining and Dawes investment lifted skilled urban workers to Europe's highest pay."
+                  },
+                  {
+                    "id": "kt1_4_s1_e1",
+                    "tier": 4,
+                    "tag": "Evidence",
+                    "label": "1927 Unemployment Insurance Act",
+                    "detail": "Compulsory payroll contributions protected 17 million workers while councils built over two million homes.",
+                    "lessonIndex": 3,
+                    "stageIndex": 0,
+                    "searchTerm": "Unemployment Insurance",
+                    "gloss": "Compulsory payroll contributions protected 17 million workers while councils built over two million homes."
+                  },
+                  {
+                    "id": "kt1_4_s1_v1",
+                    "tier": 4,
+                    "tag": "View 1",
+                    "label": "Housing Shortage Cut by Two-Thirds",
+                    "detail": "Shorter eight-hour shifts, war veterans' pensions, and modern apartments transformed working-class security.",
+                    "lessonIndex": 3,
+                    "stageIndex": 0,
+                    "searchTerm": "housing",
+                    "gloss": "Shorter eight-hour shifts, war veterans' pensions, and modern apartments transformed working-class security."
+                  },
+                  {
+                    "id": "kt1_4_s1_v2",
+                    "tier": 4,
+                    "tag": "View 2",
+                    "label": "Farmers & Clerks Faced Slump",
+                    "detail": "Global grain gluts bankrupted peasant smallholders by 1928 while white-collar unemployment stayed stubbornly high.",
+                    "lessonIndex": 3,
+                    "stageIndex": 0,
+                    "searchTerm": "farmers",
+                    "gloss": "Global grain gluts bankrupted peasant smallholders by 1928 while white-collar unemployment stayed stubbornly high."
+                  }
+                ]
+              },
+              {
+                "id": "kt1_4_s2",
+                "tier": 3,
+                "label": "Women in Work, Politics & Leisure",
+                "dateChip": "1924–29",
+                "lessonIndex": 3,
+                "stageIndex": 1,
+                "searchTerm": "New Woman",
+                "gloss": "Changes in the position of women transformed work, politics, and leisure for urban young Germans.",
+                "children": [
+                  {
+                    "id": "kt1_4_s2_w1",
+                    "tier": 4,
+                    "tag": "Why",
+                    "label": "Equal Rights & White-Collar Jobs",
+                    "detail": "Article 109 granted equal civic rights while expanding department stores and offices hired female typists.",
+                    "lessonIndex": 3,
+                    "stageIndex": 1,
+                    "searchTerm": "Article 109",
+                    "gloss": "Article 109 granted equal civic rights while expanding department stores and offices hired female typists."
+                  },
+                  {
+                    "id": "kt1_4_s2_e1",
+                    "tier": 4,
+                    "tag": "Evidence",
+                    "label": "112 Female Deputies Elected by 1933",
+                    "detail": "Around 90% of women voted, female doctors doubled, and bobbed-hair New Women smoked and went out unchaperoned.",
+                    "lessonIndex": 3,
+                    "stageIndex": 1,
+                    "searchTerm": "Bubikopf",
+                    "gloss": "Around 90% of women voted, female doctors doubled, and bobbed-hair New Women smoked and went out unchaperoned."
+                  },
+                  {
+                    "id": "kt1_4_s2_v1",
+                    "tier": 4,
+                    "tag": "View 1",
+                    "label": "Broadest Female Freedom in Europe",
+                    "detail": "Financial independence in retail, teaching, and civil service broke rigid imperial patriarchal restrictions.",
+                    "lessonIndex": 3,
+                    "stageIndex": 1,
+                    "searchTerm": "leisure",
+                    "gloss": "Financial independence in retail, teaching, and civil service broke rigid imperial patriarchal restrictions."
+                  },
+                  {
+                    "id": "kt1_4_s2_v2",
+                    "tier": 4,
+                    "tag": "View 2",
+                    "label": "33% Pay Gap & Double Burden",
+                    "detail": "Women earned a third less than men, zero sat in Cabinet, and churches condemned falling marriage birth rates.",
+                    "lessonIndex": 3,
+                    "stageIndex": 1,
+                    "searchTerm": "lower pay",
+                    "gloss": "Women earned a third less than men, zero sat in Cabinet, and churches condemned falling marriage birth rates."
+                  }
+                ]
+              },
+              {
+                "id": "kt1_4_s3",
+                "tier": 3,
+                "label": "Architecture, Art & Weimar Cinema",
+                "dateChip": "1924–29",
+                "lessonIndex": 3,
+                "stageIndex": 2,
+                "searchTerm": "Bauhaus",
+                "gloss": "Cultural changes brought bold developments in Bauhaus architecture, New Objectivity art, and Expressionist cinema.",
+                "children": [
+                  {
+                    "id": "kt1_4_s3_w1",
+                    "tier": 4,
+                    "tag": "Why",
+                    "label": "Ending Censorship Freed Creators",
+                    "detail": "Constitutional free expression let war-scarred artists question militarism, class greed, and authority.",
+                    "lessonIndex": 3,
+                    "stageIndex": 2,
+                    "searchTerm": "Bauhaus",
+                    "gloss": "Constitutional free expression let war-scarred artists question militarism, class greed, and authority."
+                  },
+                  {
+                    "id": "kt1_4_s3_e1",
+                    "tier": 4,
+                    "tag": "Evidence",
+                    "label": "Gropius, Otto Dix & Fritz Lang",
+                    "detail": "Steel-and-glass Bauhaus design, gritty war paintings, and UFA's Metropolis won worldwide artistic acclaim.",
+                    "lessonIndex": 3,
+                    "stageIndex": 4,
+                    "searchTerm": "Metropolis",
+                    "gloss": "Steel-and-glass Bauhaus design, gritty war paintings, and UFA's Metropolis won worldwide artistic acclaim."
+                  },
+                  {
+                    "id": "kt1_4_s3_v1",
+                    "tier": 4,
+                    "tag": "View 1",
+                    "label": "Berlin Led Global Modernist Culture",
+                    "detail": "Marlene Dietrich films, Brecht's theatre, and Remarque's anti-war novel thrilled millions of urban audiences.",
+                    "lessonIndex": 3,
+                    "stageIndex": 4,
+                    "searchTerm": "UFA",
+                    "gloss": "Marlene Dietrich films, Brecht's theatre, and Remarque's anti-war novel thrilled millions of urban audiences."
+                  },
+                  {
+                    "id": "kt1_4_s3_v2",
+                    "tier": 4,
+                    "tag": "View 2",
+                    "label": "Rural Voters Condemned Decadence",
+                    "detail": "Provincial conservatives and Nazis branded Berlin cabaret and avant-garde galleries un-German moral rot.",
+                    "lessonIndex": 3,
+                    "stageIndex": 4,
+                    "searchTerm": "degenerate",
+                    "gloss": "Provincial conservatives and Nazis branded Berlin cabaret and avant-garde galleries un-German moral rot."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "kt2",
+        "keyTopicNumber": 2,
+        "tier": 1,
+        "side": "right",
+        "color": "#7c3aed",
+        "label": "KT2: Hitler's Rise to Power",
+        "dateChip": "1919–33",
+        "lessonIndex": 4,
+        "stageIndex": 0,
+        "searchTerm": "Drexler",
+        "gloss": "Key topic 2: Hitler's rise to power, 1919–33 — founding the NSDAP and SA, the 1923 Munich Putsch and reorganisation, Great Depression surge, and January 1933 appointment.",
+        "children": [
+          {
+            "id": "kt2_1",
+            "code": "2.1",
+            "tier": 2,
+            "label": "2.1 Early Nazi Party Growth",
+            "dateChip": "1919–22",
+            "lessonIndex": 4,
+            "stageIndex": 0,
+            "searchTerm": "Drexler",
+            "gloss": "Q3d Core Debate: View 1 argues Hitler's spellbinding oratory and Führerprinzip leadership drove early NSDAP growth vs View 2 argues nationalist anger in the 25-Point Programme and SA brawling mattered more.",
+            "children": [
+              {
+                "id": "kt2_1_s1",
+                "tier": 3,
+                "label": "Hitler, DAP & Setting Up NSDAP",
+                "dateChip": "1919–21",
+                "lessonIndex": 4,
+                "stageIndex": 0,
+                "searchTerm": "Drexler",
+                "gloss": "Hitler's early career moved from joining Anton Drexler's German Workers' Party in 1919 to setting up and leading the Nazi Party.",
+                "children": [
+                  {
+                    "id": "kt2_1_s1_w1",
+                    "tier": 4,
+                    "tag": "Why",
+                    "label": "Army Spy Joined Drexler's Tiny DAP",
+                    "detail": "Sent to monitor Munich radicals in September 1919, Hitler shared their fierce anti-Versailles nationalism.",
+                    "lessonIndex": 4,
+                    "stageIndex": 0,
+                    "searchTerm": "Drexler",
+                    "gloss": "Sent to monitor Munich radicals in September 1919, Hitler shared their fierce anti-Versailles nationalism."
+                  },
+                  {
+                    "id": "kt2_1_s1_e1",
+                    "tier": 4,
+                    "tag": "Evidence",
+                    "label": "Swastika Branding & 1921 Takeover",
+                    "detail": "Designing the red-white-black banner and buying the Völkischer Beobachter helped grow membership past 3,000.",
+                    "lessonIndex": 4,
+                    "stageIndex": 2,
+                    "searchTerm": "Swastika",
+                    "gloss": "Designing the red-white-black banner and buying the Völkischer Beobachter helped grow membership past 3,000."
+                  },
+                  {
+                    "id": "kt2_1_s1_v1",
+                    "tier": 4,
+                    "tag": "View 1",
+                    "label": "Oratory & Führerprinzip Built Unity",
+                    "detail": "Ousting Drexler in July 1921 gave Hitler sole command and packed Munich beer halls with 55,000 members by 1923.",
+                    "lessonIndex": 4,
+                    "stageIndex": 3,
+                    "searchTerm": "Führerprinzip",
+                    "gloss": "Ousting Drexler in July 1921 gave Hitler sole command and packed Munich beer halls with 55,000 members by 1923."
+                  },
+                  {
+                    "id": "kt2_1_s1_v2",
+                    "tier": 4,
+                    "tag": "View 2",
+                    "label": "Bavarian Right-Wing Climate Fed DAP",
+                    "detail": "Post-Soviet turmoil in Munich and sympathetic local elites sheltered dozens of similar nationalist leagues.",
+                    "lessonIndex": 4,
+                    "stageIndex": 0,
+                    "searchTerm": "Munich",
+                    "gloss": "Post-Soviet turmoil in Munich and sympathetic local elites sheltered dozens of similar nationalist leagues."
+                  }
+                ]
+              },
+              {
+                "id": "kt2_1_s2",
+                "tier": 3,
+                "label": "25-Point Programme & the SA",
+                "dateChip": "1920–22",
+                "lessonIndex": 4,
+                "stageIndex": 1,
+                "searchTerm": "Twenty-Five Point Programme",
+                "gloss": "In 1920–21 the Twenty-Five Point Programme defined Nazi ideology while Ernst Röhm's SA policed streets and rallies.",
+                "children": [
+                  {
+                    "id": "kt2_1_s2_w1",
+                    "tier": 4,
+                    "tag": "Why",
+                    "label": "Blended Nationalism & Worker Pledges",
+                    "detail": "Issued in February 1920, the platform demanded scrapping Versailles, Aryan citizenship, and profit-sharing.",
+                    "lessonIndex": 4,
+                    "stageIndex": 1,
+                    "searchTerm": "Twenty-Five Point Programme",
+                    "gloss": "Issued in February 1920, the platform demanded scrapping Versailles, Aryan citizenship, and profit-sharing."
+                  },
+                  {
+                    "id": "kt2_1_s2_e1",
+                    "tier": 4,
+                    "tag": "Evidence",
+                    "label": "Röhm Formed Brownshirt Stormtroopers",
+                    "detail": "Founded in August 1921 from jobless ex-Freikorps fighters, the SA guarded Nazi speakers and beat Communist rivals.",
+                    "lessonIndex": 4,
+                    "stageIndex": 4,
+                    "searchTerm": "Sturmabteilung",
+                    "gloss": "Founded in August 1921 from jobless ex-Freikorps fighters, the SA guarded Nazi speakers and beat Communist rivals."
+                  },
+                  {
+                    "id": "kt2_1_s2_v1",
+                    "tier": 4,
+                    "tag": "View 1",
+                    "label": "Broad Manifesto Caught Angry Voters",
+                    "detail": "Attacking big department stores, treaties, and Jewish citizenship appealed simultaneously to clerks and workers.",
+                    "lessonIndex": 4,
+                    "stageIndex": 1,
+                    "searchTerm": "Hofbräuhaus",
+                    "gloss": "Attacking big department stores, treaties, and Jewish citizenship appealed simultaneously to clerks and workers."
+                  },
+                  {
+                    "id": "kt2_1_s2_v2",
+                    "tier": 4,
+                    "tag": "View 2",
+                    "label": "Rowdy SA Thugs Alienated Moderates",
+                    "detail": "Unruly street violence scared respectable middle-class voters and kept the NSDAP a regional Bavarian fringe.",
+                    "lessonIndex": 4,
+                    "stageIndex": 4,
+                    "searchTerm": "Röhm",
+                    "gloss": "Unruly street violence scared respectable middle-class voters and kept the NSDAP a regional Bavarian fringe."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt2_2",
+            "code": "2.2",
+            "tier": 2,
+            "label": "2.2 Munich Putsch & Lean Years",
+            "dateChip": "1923–28",
+            "lessonIndex": 5,
+            "stageIndex": 0,
+            "searchTerm": "Bürgerbräukeller",
+            "gloss": "Q3d Core Debate: View 1 argues the 1923 Munich Putsch was a disastrous armed failure followed by 2.6% irrelevance vs View 2 argues trial fame, Mein Kampf, and Bamberg reorganisation forged future victory.",
+            "children": [
+              {
+                "id": "kt2_2_s1",
+                "tier": 3,
+                "label": "Munich Putsch Causes & Defeat",
+                "dateChip": "8–9 Nov 1923",
+                "lessonIndex": 5,
+                "stageIndex": 0,
+                "searchTerm": "Bürgerbräukeller",
+                "gloss": "Hyperinflation, Stresemann ending Ruhr resistance, and Mussolini's Rome march triggered the failed 1923 Munich Putsch.",
+                "children": [
+                  {
+                    "id": "kt2_2_s1_w1",
+                    "tier": 4,
+                    "tag": "Why",
+                    "label": "Ruhr Surrender & Impatient 50,000 SA",
+                    "detail": "Fearing Röhm's restless stormtroopers would desert once Stresemann called off strikes, Hitler gambled on force.",
+                    "lessonIndex": 5,
+                    "stageIndex": 0,
+                    "searchTerm": "Bürgerbräukeller",
+                    "gloss": "Fearing Röhm's restless stormtroopers would desert once Stresemann called off strikes, Hitler gambled on force."
+                  },
+                  {
+                    "id": "kt2_2_s1_e1",
+                    "tier": 4,
+                    "tag": "Evidence",
+                    "label": "Sixteen Nazis Shot in Munich Streets",
+                    "detail": "After Kahr and Lossow escaped and alerted Bavarian police, gunfire scattered 2,000 marchers and banned the NSDAP.",
+                    "lessonIndex": 5,
+                    "stageIndex": 0,
+                    "searchTerm": "16 Nazis",
+                    "gloss": "After Kahr and Lossow escaped and alerted Bavarian police, gunfire scattered 2,000 marchers and banned the NSDAP."
+                  },
+                  {
+                    "id": "kt2_2_s1_v1",
+                    "tier": 4,
+                    "tag": "View 1",
+                    "label": "Amateur Planning Wrecked the Coup",
+                    "detail": "Failing to seize Munich's telegraph office or army barracks ended in Hitler's arrest and dislocated shoulder.",
+                    "lessonIndex": 5,
+                    "stageIndex": 0,
+                    "searchTerm": "Kahr",
+                    "gloss": "Failing to seize Munich's telegraph office or army barracks ended in Hitler's arrest and dislocated shoulder."
+                  },
+                  {
+                    "id": "kt2_2_s1_v2",
+                    "tier": 4,
+                    "tag": "View 2",
+                    "label": "Taught Hitler Armed Force Would Fail",
+                    "detail": "Defeat proved power required winning Reichstag votes legally with army tolerance rather than fighting police.",
+                    "lessonIndex": 5,
+                    "stageIndex": 2,
+                    "searchTerm": "legal constitutional elections",
+                    "gloss": "Defeat proved power required winning Reichstag votes legally with army tolerance rather than fighting police."
+                  }
+                ]
+              },
+              {
+                "id": "kt2_2_s2",
+                "tier": 3,
+                "label": "Treason Trial & Mein Kampf",
+                "dateChip": "1924",
+                "lessonIndex": 5,
+                "stageIndex": 2,
+                "searchTerm": "Mein Kampf",
+                "gloss": "Long-term consequences of the Munich Putsch included nationwide trial publicity, lenient imprisonment, and Mein Kampf.",
+                "children": [
+                  {
+                    "id": "kt2_2_s2_w1",
+                    "tier": 4,
+                    "tag": "Why",
+                    "label": "Right-Wing Judges Sympathised Openly",
+                    "detail": "Biased Munich judges let Hitler lecture reporters for 24 days before serving nine months in Landsberg Fortress.",
+                    "lessonIndex": 5,
+                    "stageIndex": 1,
+                    "searchTerm": "High Treason",
+                    "gloss": "Biased Munich judges let Hitler lecture reporters for 24 days before serving nine months in Landsberg Fortress."
+                  },
+                  {
+                    "id": "kt2_2_s2_e1",
+                    "tier": 4,
+                    "tag": "Evidence",
+                    "label": "Dictated Mein Kampf to Rudolf Hess",
+                    "detail": "Hitler's manifesto set out Aryan racial supremacy, Lebensraum in Eastern Europe, and destroying democracy.",
+                    "lessonIndex": 5,
+                    "stageIndex": 2,
+                    "searchTerm": "Mein Kampf",
+                    "gloss": "Hitler's manifesto set out Aryan racial supremacy, Lebensraum in Eastern Europe, and destroying democracy."
+                  },
+                  {
+                    "id": "kt2_2_s2_v1",
+                    "tier": 4,
+                    "tag": "View 1",
+                    "label": "Turned Hitler into a National Star",
+                    "detail": "Front-page newspaper coverage across Germany gave Hitler undisputed leadership of the extreme nationalist right.",
+                    "lessonIndex": 5,
+                    "stageIndex": 1,
+                    "searchTerm": "High Treason",
+                    "gloss": "Front-page newspaper coverage across Germany gave Hitler undisputed leadership of the extreme nationalist right."
+                  },
+                  {
+                    "id": "kt2_2_s2_v2",
+                    "tier": 4,
+                    "tag": "View 2",
+                    "label": "Party Split While Hitler Was Jailed",
+                    "detail": "Without strong central command in 1924, rival northern and southern factions quarrelled and lost voters.",
+                    "lessonIndex": 5,
+                    "stageIndex": 2,
+                    "searchTerm": "Landsberg",
+                    "gloss": "Without strong central command in 1924, rival northern and southern factions quarrelled and lost voters."
+                  }
+                ]
+              },
+              {
+                "id": "kt2_2_s3",
+                "tier": 3,
+                "label": "Lean Years & Bamberg Conference",
+                "dateChip": "1924–28",
+                "lessonIndex": 5,
+                "stageIndex": 3,
+                "searchTerm": "Bamberg",
+                "gloss": "Limited support for the Nazi Party in 1924–28 accompanied nationwide Party reorganisation and the Bamberg Conference of 1926.",
+                "children": [
+                  {
+                    "id": "kt2_2_s3_w1",
+                    "tier": 4,
+                    "tag": "Why",
+                    "label": "Weimar Prosperity Starved Extremism",
+                    "detail": "Stable Rentenmark prices, rising wages, and Locarno diplomacy left voters little reason to back radical parties.",
+                    "lessonIndex": 5,
+                    "stageIndex": 4,
+                    "searchTerm": "2.6%",
+                    "gloss": "Stable Rentenmark prices, rising wages, and Locarno diplomacy left voters little reason to back radical parties."
+                  },
+                  {
+                    "id": "kt2_2_s3_e1",
+                    "tier": 4,
+                    "tag": "Evidence",
+                    "label": "1926 Bamberg Beat Gregor Strasser",
+                    "detail": "Hitler crushed socialist land-reform demands, won over Goebbels, created 35 Gaue branches, and founded the SS.",
+                    "lessonIndex": 5,
+                    "stageIndex": 3,
+                    "searchTerm": "Bamberg",
+                    "gloss": "Hitler crushed socialist land-reform demands, won over Goebbels, created 35 Gaue branches, and founded the SS."
+                  },
+                  {
+                    "id": "kt2_2_s3_v1",
+                    "tier": 4,
+                    "tag": "View 1",
+                    "label": "Crushed to 12 Seats in May 1928",
+                    "detail": "Winning just 2.6% of the national vote despite 100,000 members showed propaganda failed during good times.",
+                    "lessonIndex": 5,
+                    "stageIndex": 4,
+                    "searchTerm": "2.6%",
+                    "gloss": "Winning just 2.6% of the national vote despite 100,000 members showed propaganda failed during good times."
+                  },
+                  {
+                    "id": "kt2_2_s3_v2",
+                    "tier": 4,
+                    "tag": "View 2",
+                    "label": "National Machine Ready for Slump",
+                    "detail": "Gauleiters, Hitler Youth, and rural targeting built the exact organisational network that boomed after 1929.",
+                    "lessonIndex": 5,
+                    "stageIndex": 3,
+                    "searchTerm": "Gauleiter",
+                    "gloss": "Gauleiters, Hitler Youth, and rural targeting built the exact organisational network that boomed after 1929."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt2_3",
+            "code": "2.3",
+            "tier": 2,
+            "label": "2.3 Depression & Nazi Surge",
+            "dateChip": "1929–32",
+            "lessonIndex": 6,
+            "stageIndex": 0,
+            "searchTerm": "Wall Street Crash",
+            "gloss": "Q3d Core Debate: View 1 argues Great Depression unemployment and fear of Communism drove voters to the Nazis vs View 2 argues Hitler's charisma, Goebbels' modern propaganda, and SA order won support.",
+            "children": [
+              {
+                "id": "kt2_3_s1",
+                "tier": 3,
+                "label": "Mass Unemployment & KPD Growth",
+                "dateChip": "1929–32",
+                "lessonIndex": 6,
+                "stageIndex": 0,
+                "searchTerm": "Wall Street Crash",
+                "gloss": "The Wall Street Crash caused soaring unemployment and growing support for the Communist Party across industrial cities.",
+                "children": [
+                  {
+                    "id": "kt2_3_s1_w1",
+                    "tier": 4,
+                    "tag": "Why",
+                    "label": "US Banks Recalled Short-Term Loans",
+                    "detail": "October 1929 Wall Street panic drained German factory credit, halving industrial production by winter 1932.",
+                    "lessonIndex": 6,
+                    "stageIndex": 0,
+                    "searchTerm": "Wall Street Crash",
+                    "gloss": "October 1929 Wall Street panic drained German factory credit, halving industrial production by winter 1932."
+                  },
+                  {
+                    "id": "kt2_3_s1_w2",
+                    "tier": 4,
+                    "tag": "Why",
+                    "label": "Brüning Cut Dole & Raised Taxes",
+                    "detail": "Ruling via 66 Article 48 decrees in 1932, the Hunger Chancellor deepened misery as joblessness hit six million.",
+                    "lessonIndex": 6,
+                    "stageIndex": 1,
+                    "searchTerm": "Brüning",
+                    "gloss": "Ruling via 66 Article 48 decrees in 1932, the Hunger Chancellor deepened misery as joblessness hit six million."
+                  },
+                  {
+                    "id": "kt2_3_s1_v1",
+                    "tier": 4,
+                    "tag": "View 1",
+                    "label": "100 KPD Seats Scared Middle Classes",
+                    "detail": "Rising Communist votes among desperate factory workers panicked farmers, shopkeepers, and industrial bosses.",
+                    "lessonIndex": 6,
+                    "stageIndex": 2,
+                    "searchTerm": "KPD",
+                    "gloss": "Rising Communist votes among desperate factory workers panicked farmers, shopkeepers, and industrial bosses."
+                  },
+                  {
+                    "id": "kt2_3_s1_v2",
+                    "tier": 4,
+                    "tag": "View 2",
+                    "label": "Slump Alone Did Not Pick the Winner",
+                    "detail": "Economic collapse discredited Weimar moderates, yet Goebbels still had to out-organise rival nationalist parties.",
+                    "lessonIndex": 6,
+                    "stageIndex": 3,
+                    "searchTerm": "Goebbels",
+                    "gloss": "Economic collapse discredited Weimar moderates, yet Goebbels still had to out-organise rival nationalist parties."
+                  }
+                ]
+              },
+              {
+                "id": "kt2_3_s2",
+                "tier": 3,
+                "label": "Hitler's Appeal & Propaganda",
+                "dateChip": "1930–32",
+                "lessonIndex": 6,
+                "stageIndex": 3,
+                "searchTerm": "Goebbels",
+                "gloss": "Growth in support for the Nazi Party stemmed from the personal appeal of Hitler and the Nazis and Goebbels' propaganda.",
+                "children": [
+                  {
+                    "id": "kt2_3_s2_w1",
+                    "tier": 4,
+                    "tag": "Why",
+                    "label": "Tailored Promises to Every Class",
+                    "detail": "Goebbels pledged Work and Bread to the jobless, debt relief to farmers, and anti-union order to businessmen.",
+                    "lessonIndex": 6,
+                    "stageIndex": 3,
+                    "searchTerm": "Goebbels",
+                    "gloss": "Goebbels pledged Work and Bread to the jobless, debt relief to farmers, and anti-union order to businessmen."
+                  },
+                  {
+                    "id": "kt2_3_s2_e1",
+                    "tier": 4,
+                    "tag": "Evidence",
+                    "label": "Hitler Over Germany Flight Campaign",
+                    "detail": "Chartered planes, radio broadcasts, torchlit marches, and bold posters carried Hitler to twenty cities in days.",
+                    "lessonIndex": 6,
+                    "stageIndex": 3,
+                    "searchTerm": "Hitler over Germany",
+                    "gloss": "Chartered planes, radio broadcasts, torchlit marches, and bold posters carried Hitler to twenty cities in days."
+                  },
+                  {
+                    "id": "kt2_3_s2_v1",
+                    "tier": 4,
+                    "tag": "View 1",
+                    "label": "Votes Only Exploded After 1929 Crash",
+                    "detail": "Jumping from 12 seats to 107 in 1930 and 230 in July 1932 mirrored rising unemployment almost line for line.",
+                    "lessonIndex": 6,
+                    "stageIndex": 4,
+                    "searchTerm": "230",
+                    "gloss": "Jumping from 12 seats to 107 in 1930 and 230 in July 1932 mirrored rising unemployment almost line for line."
+                  },
+                  {
+                    "id": "kt2_3_s2_v2",
+                    "tier": 4,
+                    "tag": "View 2",
+                    "label": "Strongman Image Inspired Mass Hope",
+                    "detail": "Thirteen million Germans backed Hitler in 1932 because dynamic rallies contrasted sharply with weak coalitions.",
+                    "lessonIndex": 6,
+                    "stageIndex": 4,
+                    "searchTerm": "230",
+                    "gloss": "Thirteen million Germans backed Hitler in 1932 because dynamic rallies contrasted sharply with weak coalitions."
+                  }
+                ]
+              },
+              {
+                "id": "kt2_3_s3",
+                "tier": 3,
+                "label": "Work of the SA & Street Order",
+                "dateChip": "1930–32",
+                "lessonIndex": 6,
+                "stageIndex": 2,
+                "searchTerm": "stormtroopers",
+                "gloss": "The disciplined work of the SA reinforced Nazi growth by intimidating Communist rivals and running soup kitchens.",
+                "children": [
+                  {
+                    "id": "kt2_3_s3_w1",
+                    "tier": 4,
+                    "tag": "Why",
+                    "label": "400,000 SA Paraded Visible Strength",
+                    "detail": "Uniformed parades and soup kitchens gave unemployed young men food, purpose, and visible discipline.",
+                    "lessonIndex": 6,
+                    "stageIndex": 2,
+                    "searchTerm": "stormtroopers",
+                    "gloss": "Uniformed parades and soup kitchens gave unemployed young men food, purpose, and visible discipline."
+                  },
+                  {
+                    "id": "kt2_3_s3_e1",
+                    "tier": 4,
+                    "tag": "Evidence",
+                    "label": "Smashed KPD Red Front Meetings",
+                    "detail": "Fierce street battles in Prussia killed scores in summer 1932 while convincing conservatives only Nazis beat Reds.",
+                    "lessonIndex": 6,
+                    "stageIndex": 2,
+                    "searchTerm": "street brawls",
+                    "gloss": "Fierce street battles in Prussia killed scores in summer 1932 while convincing conservatives only Nazis beat Reds."
+                  },
+                  {
+                    "id": "kt2_3_s3_v1",
+                    "tier": 4,
+                    "tag": "View 1",
+                    "label": "Fear of Communism Drove SA Support",
+                    "detail": "Middle-class voters tolerated Brownshirt thuggery mainly because Great Depression chaos threatened Red revolution.",
+                    "lessonIndex": 6,
+                    "stageIndex": 2,
+                    "searchTerm": "communist revolution",
+                    "gloss": "Middle-class voters tolerated Brownshirt thuggery mainly because Great Depression chaos threatened Red revolution."
+                  },
+                  {
+                    "id": "kt2_3_s3_v2",
+                    "tier": 4,
+                    "tag": "View 2",
+                    "label": "Paramilitary Muscle Crushed Rivals",
+                    "detail": "Tearing down SPD and KPD posters while dominating town squares actively silenced democratic campaigning.",
+                    "lessonIndex": 6,
+                    "stageIndex": 2,
+                    "searchTerm": "Thyssen",
+                    "gloss": "Tearing down SPD and KPD posters while dominating town squares actively silenced democratic campaigning."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt2_4",
+            "code": "2.4",
+            "tier": 2,
+            "label": "2.4 Hitler Becomes Chancellor",
+            "dateChip": "1932–33",
+            "lessonIndex": 7,
+            "stageIndex": 1,
+            "searchTerm": "Papen",
+            "gloss": "Q3d Core Debate: View 1 argues backstairs intrigue by von Papen and Hindenburg handed power to a fading movement vs View 2 argues leading the largest Reichstag party made Hitler impossible to ignore.",
+            "children": [
+              {
+                "id": "kt2_4_s1",
+                "tier": 3,
+                "label": "1932 Presidential & Reichstag Vote",
+                "dateChip": "Mar–Nov 1932",
+                "lessonIndex": 7,
+                "stageIndex": 0,
+                "searchTerm": "November 1932",
+                "gloss": "The Presidential and Reichstag elections of 1932 made the Nazis Germany's largest party before dipping in November.",
+                "children": [
+                  {
+                    "id": "kt2_4_s1_w1",
+                    "tier": 4,
+                    "tag": "Why",
+                    "label": "37.3% Peak Blocked Majority Rule",
+                    "detail": "Winning 230 seats in July 1932 let Göring as Reichstag Speaker paralyse any cabinet excluding Hitler.",
+                    "lessonIndex": 7,
+                    "stageIndex": 0,
+                    "searchTerm": "230 seats",
+                    "gloss": "Winning 230 seats in July 1932 let Göring as Reichstag Speaker paralyse any cabinet excluding Hitler."
+                  },
+                  {
+                    "id": "kt2_4_s1_e1",
+                    "tier": 4,
+                    "tag": "Evidence",
+                    "label": "Dropped to 196 Seats in November",
+                    "detail": "Campaign fatigue and SA brutality cost two million votes, drained party funds, and sparked Strasser's split.",
+                    "lessonIndex": 7,
+                    "stageIndex": 0,
+                    "searchTerm": "thirty-four seats",
+                    "gloss": "Campaign fatigue and SA brutality cost two million votes, drained party funds, and sparked Strasser's split."
+                  },
+                  {
+                    "id": "kt2_4_s1_v1",
+                    "tier": 4,
+                    "tag": "View 1",
+                    "label": "Nazi Vote Had Already Peaked",
+                    "detail": "Falling support and near-bankruptcy in late 1932 meant Hitler could never have seized office without elite help.",
+                    "lessonIndex": 7,
+                    "stageIndex": 0,
+                    "searchTerm": "Strasser",
+                    "gloss": "Falling support and near-bankruptcy in late 1932 meant Hitler could never have seized office without elite help."
+                  },
+                  {
+                    "id": "kt2_4_s1_v2",
+                    "tier": 4,
+                    "tag": "View 2",
+                    "label": "Still Far Ahead of Every Rival",
+                    "detail": "Even at 196 seats, the NSDAP remained larger than the SPD or KPD, starving Papen and Schleicher of majorities.",
+                    "lessonIndex": 7,
+                    "stageIndex": 0,
+                    "searchTerm": "November 1932",
+                    "gloss": "Even at 196 seats, the NSDAP remained larger than the SPD or KPD, starving Papen and Schleicher of majorities."
+                  }
+                ]
+              },
+              {
+                "id": "kt2_4_s2",
+                "tier": 3,
+                "label": "Hindenburg, Papen & Jan 1933",
+                "dateChip": "Dec 1932–Jan 1933",
+                "lessonIndex": 7,
+                "stageIndex": 3,
+                "searchTerm": "Papen",
+                "gloss": "Hitler became Chancellor on 30 January 1933 through the roles of Hindenburg, Kurt von Schleicher, and Franz von Papen.",
+                "children": [
+                  {
+                    "id": "kt2_4_s2_w1",
+                    "tier": 4,
+                    "tag": "Why",
+                    "label": "Schleicher Failed to Split the Nazis",
+                    "detail": "When Strasser backed down in December 1932, Chancellor Schleicher lost both Reichstag and Hindenburg's trust.",
+                    "lessonIndex": 7,
+                    "stageIndex": 2,
+                    "searchTerm": "Schleicher",
+                    "gloss": "When Strasser backed down in December 1932, Chancellor Schleicher lost both Reichstag and Hindenburg's trust."
+                  },
+                  {
+                    "id": "kt2_4_s2_e1",
+                    "tier": 4,
+                    "tag": "Evidence",
+                    "label": "Secret Pact at Schröder's Villa",
+                    "detail": "Meeting Hitler in January 1933, Papen agreed a coalition cabinet containing just two other Nazi ministers.",
+                    "lessonIndex": 7,
+                    "stageIndex": 2,
+                    "searchTerm": "Schröder",
+                    "gloss": "Meeting Hitler in January 1933, Papen agreed a coalition cabinet containing just two other Nazi ministers."
+                  },
+                  {
+                    "id": "kt2_4_s2_v1",
+                    "tier": 4,
+                    "tag": "View 1",
+                    "label": "Papen Boasted of Taming Hitler",
+                    "detail": "Conservative elites fatally miscalculated that non-Nazi ministers could push Hitler into a harmless corner.",
+                    "lessonIndex": 7,
+                    "stageIndex": 3,
+                    "searchTerm": "corner until he squeaked",
+                    "gloss": "Conservative elites fatally miscalculated that non-Nazi ministers could push Hitler into a harmless corner."
+                  },
+                  {
+                    "id": "kt2_4_s2_v2",
+                    "tier": 4,
+                    "tag": "View 2",
+                    "label": "Mass Movement Forced Elite Hand",
+                    "detail": "Bankers and Hindenburg only turned to Hitler on 30 January 1933 because he alone commanded millions of voters.",
+                    "lessonIndex": 7,
+                    "stageIndex": 4,
+                    "searchTerm": "30 January 1933",
+                    "gloss": "Bankers and Hindenburg only turned to Hitler on 30 January 1933 because he alone commanded millions of voters."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "kt3",
+        "keyTopicNumber": 3,
+        "tier": 1,
+        "side": "left",
+        "color": "#dc2626",
+        "label": "KT3: Nazi Dictatorship",
+        "dateChip": "1933–39",
+        "lessonIndex": 8,
+        "stageIndex": 0,
+        "searchTerm": "Reichstag Fire",
+        "gloss": "Key topic 3: Nazi control and dictatorship, 1933–39 — dismantling democracy in 1933–34, the SS-Gestapo police state, Goebbels' propaganda and Church controls, and pre-war opposition.",
+        "children": [
+          {
+            "id": "kt3_1",
+            "code": "3.1",
+            "tier": 2,
+            "label": "3.1 Creating a Dictatorship",
+            "dateChip": "1933–34",
+            "lessonIndex": 8,
+            "stageIndex": 2,
+            "searchTerm": "Enabling Act",
+            "gloss": "Q3d Core Debate: View 1 argues pseudo-legal decrees and the Enabling Act built Hitler's dictatorship vs View 2 argues ruthless SA violence and the Night of the Long Knives sealed absolute power.",
+            "children": [
+              {
+                "id": "kt3_1_s1",
+                "tier": 3,
+                "label": "Reichstag Fire & Emergency Decree",
+                "dateChip": "Feb 1933",
+                "lessonIndex": 8,
+                "stageIndex": 0,
+                "searchTerm": "Reichstag Fire",
+                "gloss": "The Reichstag Fire of 27 February 1933 let Hitler suspend civil liberties and crush Communists before March elections.",
+                "children": [
+                  {
+                    "id": "kt3_1_s1_w1",
+                    "tier": 4,
+                    "tag": "Why",
+                    "label": "Van der Lubbe Arrested in Flames",
+                    "detail": "Blaming Dutch communist Marinus van der Lubbe let Göring claim a nationwide Red uprising had begun.",
+                    "lessonIndex": 8,
+                    "stageIndex": 0,
+                    "searchTerm": "Lubbe",
+                    "gloss": "Blaming Dutch communist Marinus van der Lubbe let Göring claim a nationwide Red uprising had begun."
+                  },
+                  {
+                    "id": "kt3_1_s1_e1",
+                    "tier": 4,
+                    "tag": "Evidence",
+                    "label": "4,000 KPD Leaders Jailed Overnight",
+                    "detail": "Hindenburg's 28 February Article 48 decree abolished free speech, press freedom, and trial before arrest.",
+                    "lessonIndex": 8,
+                    "stageIndex": 1,
+                    "searchTerm": "Reichstag Fire Decree",
+                    "gloss": "Hindenburg's 28 February Article 48 decree abolished free speech, press freedom, and trial before arrest."
+                  },
+                  {
+                    "id": "kt3_1_s1_v1",
+                    "tier": 4,
+                    "tag": "View 1",
+                    "label": "Fire Decree Lasted Twelve Years",
+                    "detail": "Legal emergency powers signed by Hindenburg gave police permanent authority to detain opponents without charge.",
+                    "lessonIndex": 8,
+                    "stageIndex": 1,
+                    "searchTerm": "civil rights",
+                    "gloss": "Legal emergency powers signed by Hindenburg gave police permanent authority to detain opponents without charge."
+                  },
+                  {
+                    "id": "kt3_1_s1_v2",
+                    "tier": 4,
+                    "tag": "View 2",
+                    "label": "50,000 SA Auxiliaries Used Terror",
+                    "detail": "Göring armed stormtroopers as official police in Prussia, killing 70 opponents to secure 43.9% in March.",
+                    "lessonIndex": 8,
+                    "stageIndex": 2,
+                    "searchTerm": "43.9%",
+                    "gloss": "Göring armed stormtroopers as official police in Prussia, killing 70 opponents to secure 43.9% in March."
+                  }
+                ]
+              },
+              {
+                "id": "kt3_1_s2",
+                "tier": 3,
+                "label": "Enabling Act, Parties & Unions",
+                "dateChip": "Mar–Jul 1933",
+                "lessonIndex": 8,
+                "stageIndex": 2,
+                "searchTerm": "Enabling Act",
+                "gloss": "The Enabling Act led rapidly to the banning of other parties and trade unions during Gleichschaltung in 1933.",
+                "children": [
+                  {
+                    "id": "kt3_1_s2_w1",
+                    "tier": 4,
+                    "tag": "Why",
+                    "label": "444–94 Vote Ended Reichstag Rule",
+                    "detail": "Barring 81 KPD deputies and promising Catholic protections won Centre votes on 23 March 1933 for four-year rule.",
+                    "lessonIndex": 8,
+                    "stageIndex": 2,
+                    "searchTerm": "Enabling Act",
+                    "gloss": "Barring 81 KPD deputies and promising Catholic protections won Centre votes on 23 March 1933 for four-year rule."
+                  },
+                  {
+                    "id": "kt3_1_s2_e1",
+                    "tier": 4,
+                    "tag": "Evidence",
+                    "label": "Unions Crushed & Rivals Outlawed",
+                    "detail": "SA squads seized union offices on 2 May, banned strikes, dissolved Länder parliaments, and outlawed rivals in July.",
+                    "lessonIndex": 8,
+                    "stageIndex": 2,
+                    "searchTerm": "Kroll",
+                    "gloss": "SA squads seized union offices on 2 May, banned strikes, dissolved Länder parliaments, and outlawed rivals in July."
+                  },
+                  {
+                    "id": "kt3_1_s2_v1",
+                    "tier": 4,
+                    "tag": "View 1",
+                    "label": "Constitutional Two-Thirds Law",
+                    "detail": "Passing the Enabling Act formally allowed Hitler's Cabinet to enact laws without Reichstag or Hindenburg votes.",
+                    "lessonIndex": 8,
+                    "stageIndex": 2,
+                    "searchTerm": "Enabling Act",
+                    "gloss": "Passing the Enabling Act formally allowed Hitler's Cabinet to enact laws without Reichstag or Hindenburg votes."
+                  },
+                  {
+                    "id": "kt3_1_s2_v2",
+                    "tier": 4,
+                    "tag": "View 2",
+                    "label": "Armed SA Chanted Inside Kroll Opera",
+                    "detail": "Only 94 brave SPD deputies voted no while stormtroopers lined the corridors threatening bloodshed.",
+                    "lessonIndex": 8,
+                    "stageIndex": 2,
+                    "searchTerm": "94",
+                    "gloss": "Only 94 brave SPD deputies voted no while stormtroopers lined the corridors threatening bloodshed."
+                  }
+                ]
+              },
+              {
+                "id": "kt3_1_s3",
+                "tier": 3,
+                "label": "Long Knives, Führer & Army Oath",
+                "dateChip": "Jun–Aug 1934",
+                "lessonIndex": 8,
+                "stageIndex": 3,
+                "searchTerm": "Night of the Long Knives",
+                "gloss": "Crushing the threat from Röhm and the SA in the Night of the Long Knives preceded Hindenburg's death, Hitler becoming Führer, and the army oath of allegiance.",
+                "children": [
+                  {
+                    "id": "kt3_1_s3_w1",
+                    "tier": 4,
+                    "tag": "Why",
+                    "label": "Röhm's 3m SA Threatened the Army",
+                    "detail": "Demands to merge radical stormtroopers into the 100,000-man Reichswehr risked a conservative military coup.",
+                    "lessonIndex": 8,
+                    "stageIndex": 3,
+                    "searchTerm": "Röhm",
+                    "gloss": "Demands to merge radical stormtroopers into the 100,000-man Reichswehr risked a conservative military coup."
+                  },
+                  {
+                    "id": "kt3_1_s3_e1",
+                    "tier": 4,
+                    "tag": "Evidence",
+                    "label": "SS Executed Röhm & Schleicher",
+                    "detail": "On 30 June 1934 Himmler's squads shot up to 400 rivals; after Hindenburg died on 2 August, troops swore loyalty.",
+                    "lessonIndex": 8,
+                    "stageIndex": 4,
+                    "searchTerm": "Hindenburg",
+                    "gloss": "On 30 June 1934 Himmler's squads shot up to 400 rivals; after Hindenburg died on 2 August, troops swore loyalty."
+                  },
+                  {
+                    "id": "kt3_1_s3_v1",
+                    "tier": 4,
+                    "tag": "View 1",
+                    "label": "Plebiscite & Oath Legalised Führer",
+                    "detail": "Nearly 90% backed merging President and Chancellor in August 1934 as generals bound troops to Hitler personally.",
+                    "lessonIndex": 8,
+                    "stageIndex": 4,
+                    "searchTerm": "oath",
+                    "gloss": "Nearly 90% backed merging President and Chancellor in August 1934 as generals bound troops to Hitler personally."
+                  },
+                  {
+                    "id": "kt3_1_s3_v2",
+                    "tier": 4,
+                    "tag": "View 2",
+                    "label": "Cold-Blooded Murder Above the Law",
+                    "detail": "Executing opponents without trial proved brute SS force, not legality, underpinned Hitler's dictatorship.",
+                    "lessonIndex": 8,
+                    "stageIndex": 3,
+                    "searchTerm": "Night of the Long Knives",
+                    "gloss": "Executing opponents without trial proved brute SS force, not legality, underpinned Hitler's dictatorship."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt3_2",
+            "code": "3.2",
+            "tier": 2,
+            "label": "3.2 The Nazi Police State",
+            "dateChip": "1933–39",
+            "lessonIndex": 9,
+            "stageIndex": 1,
+            "searchTerm": "Gestapo",
+            "gloss": "Q3d Core Debate: View 1 argues omnipotent SS, Gestapo, camp, and court terror crushed freedom from above vs View 2 argues a small Gestapo relied heavily on voluntary civilian denunciations from below.",
+            "children": [
+              {
+                "id": "kt3_2_s1",
+                "tier": 3,
+                "label": "Gestapo, SS & Concentration Camps",
+                "dateChip": "1933–39",
+                "lessonIndex": 9,
+                "stageIndex": 1,
+                "searchTerm": "Gestapo",
+                "gloss": "Heinrich Himmler's SS, Reinhard Heydrich's Gestapo, and concentration camps enforced the Nazi police state.",
+                "children": [
+                  {
+                    "id": "kt3_2_s1_w1",
+                    "tier": 4,
+                    "tag": "Why",
+                    "label": "Protective Custody Without Trial",
+                    "detail": "Secret police could tap phones, intercept mail, and send suspects straight to Dachau or Sachsenhausen.",
+                    "lessonIndex": 9,
+                    "stageIndex": 1,
+                    "searchTerm": "Dachau",
+                    "gloss": "Secret police could tap phones, intercept mail, and send suspects straight to Dachau or Sachsenhausen."
+                  },
+                  {
+                    "id": "kt3_2_s1_e1",
+                    "tier": 4,
+                    "tag": "Evidence",
+                    "label": "240,000 SS & Six Major Camps by 1939",
+                    "detail": "Himmler's Death's Head guards ran brutal forced-labour camps holding Communists, socialists, and 'asocials'.",
+                    "lessonIndex": 9,
+                    "stageIndex": 0,
+                    "searchTerm": "Himmler",
+                    "gloss": "Himmler's Death's Head guards ran brutal forced-labour camps holding Communists, socialists, and 'asocials'."
+                  },
+                  {
+                    "id": "kt3_2_s1_v1",
+                    "tier": 4,
+                    "tag": "View 1",
+                    "label": "Midnight Arrests Silenced Critics",
+                    "detail": "Rumours of torture and camp brutality terrified millions into keeping political doubts behind closed doors.",
+                    "lessonIndex": 9,
+                    "stageIndex": 1,
+                    "searchTerm": "Gestapo",
+                    "gloss": "Rumours of torture and camp brutality terrified millions into keeping political doubts behind closed doors."
+                  },
+                  {
+                    "id": "kt3_2_s1_v2",
+                    "tier": 4,
+                    "tag": "View 2",
+                    "label": "32,000 Gestapo Policed 70m Citizens",
+                    "detail": "Over half of Gestapo investigations began with neighbours, colleagues, or block wardens informing voluntarily.",
+                    "lessonIndex": 9,
+                    "stageIndex": 1,
+                    "searchTerm": "32,000",
+                    "gloss": "Over half of Gestapo investigations began with neighbours, colleagues, or block wardens informing voluntarily."
+                  }
+                ]
+              },
+              {
+                "id": "kt3_2_s2",
+                "tier": 3,
+                "label": "Nazi Control of the Legal System",
+                "dateChip": "1933–39",
+                "lessonIndex": 9,
+                "stageIndex": 2,
+                "searchTerm": "People's Court",
+                "gloss": "Nazi control of the legal system abolished judicial independence and turned courts into instruments of political terror.",
+                "children": [
+                  {
+                    "id": "kt3_2_s2_w1",
+                    "tier": 4,
+                    "tag": "Why",
+                    "label": "Judges Forced into Nazi Law League",
+                    "detail": "Dismissing Jewish and democratic magistrates ensured every courtroom punished acts hostile to Hitler's will.",
+                    "lessonIndex": 9,
+                    "stageIndex": 2,
+                    "searchTerm": "Maintenance of the Law",
+                    "gloss": "Dismissing Jewish and democratic magistrates ensured every courtroom punished acts hostile to Hitler's will."
+                  },
+                  {
+                    "id": "kt3_2_s2_e1",
+                    "tier": 4,
+                    "tag": "Evidence",
+                    "label": "People's Court & 46 Capital Crimes",
+                    "detail": "Set up in 1934 without juries or appeals, treason courts raised executions from eight a year to hundreds.",
+                    "lessonIndex": 9,
+                    "stageIndex": 2,
+                    "searchTerm": "Freisler",
+                    "gloss": "Set up in 1934 without juries or appeals, treason courts raised executions from eight a year to hundreds."
+                  },
+                  {
+                    "id": "kt3_2_s2_v1",
+                    "tier": 4,
+                    "tag": "View 1",
+                    "label": "Destroyed Rule of Law Completely",
+                    "detail": "Listening to foreign radio or telling anti-Hitler jokes could bring harsh prison sentences in Special Courts.",
+                    "lessonIndex": 9,
+                    "stageIndex": 2,
+                    "searchTerm": "courts",
+                    "gloss": "Listening to foreign radio or telling anti-Hitler jokes could bring harsh prison sentences in Special Courts."
+                  },
+                  {
+                    "id": "kt3_2_s2_v2",
+                    "tier": 4,
+                    "tag": "View 2",
+                    "label": "Conservatives Backed Tough Courts",
+                    "detail": "Harsh sentences against habitual criminals and Communists matched conservative public wishes for strict order.",
+                    "lessonIndex": 9,
+                    "stageIndex": 2,
+                    "searchTerm": "judges",
+                    "gloss": "Harsh sentences against habitual criminals and Communists matched conservative public wishes for strict order."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt3_3",
+            "code": "3.3",
+            "tier": 2,
+            "label": "3.3 Propaganda, Culture & Church",
+            "dateChip": "1933–39",
+            "lessonIndex": 10,
+            "stageIndex": 0,
+            "searchTerm": "Goebbels",
+            "gloss": "Q3d Core Debate: View 1 argues Goebbels' propaganda, censorship, rallies, and Church policies reshaped German minds vs View 2 argues propaganda reinforced old nationalism while failing to crush Christian faith.",
+            "children": [
+              {
+                "id": "kt3_3_s1",
+                "tier": 3,
+                "label": "Goebbels, Censorship & Nazi Media",
+                "dateChip": "1933–39",
+                "lessonIndex": 10,
+                "stageIndex": 1,
+                "searchTerm": "People's Receiver",
+                "gloss": "Goebbels and the Ministry of Propaganda enforced strict censorship alongside Nazi use of radio and newspaper media.",
+                "children": [
+                  {
+                    "id": "kt3_3_s1_w1",
+                    "tier": 4,
+                    "tag": "Why",
+                    "label": "Editors' Law Silenced Free Press",
+                    "detail": "Closing 1,600 opposition papers and issuing daily Ministry orders forced journalists to print identical headlines.",
+                    "lessonIndex": 10,
+                    "stageIndex": 0,
+                    "searchTerm": "censorship",
+                    "gloss": "Closing 1,600 opposition papers and issuing daily Ministry orders forced journalists to print identical headlines."
+                  },
+                  {
+                    "id": "kt3_3_s1_e1",
+                    "tier": 4,
+                    "tag": "Evidence",
+                    "label": "70% Owned Cheap People's Receivers",
+                    "detail": "Cheap Volksempfänger radios blocked foreign broadcasts while 6,000 street loudspeakers aired Hitler's speeches.",
+                    "lessonIndex": 10,
+                    "stageIndex": 1,
+                    "searchTerm": "Volksempfänger",
+                    "gloss": "Cheap Volksempfänger radios blocked foreign broadcasts while 6,000 street loudspeakers aired Hitler's speeches."
+                  },
+                  {
+                    "id": "kt3_3_s1_v1",
+                    "tier": 4,
+                    "tag": "View 1",
+                    "label": "Built Unrivalled Führer Myth Cult",
+                    "detail": "Monopolising every newspaper and broadcast shielded Hitler from blame and rallied mass support for foreign policy.",
+                    "lessonIndex": 10,
+                    "stageIndex": 0,
+                    "searchTerm": "Goebbels",
+                    "gloss": "Monopolising every newspaper and broadcast shielded Hitler from blame and rallied mass support for foreign policy."
+                  },
+                  {
+                    "id": "kt3_3_s1_v2",
+                    "tier": 4,
+                    "tag": "View 2",
+                    "label": "Boring Uniform Press Lost Readers",
+                    "detail": "Newspaper sales fell 10% as weary listeners preferred light music over endless ideological radio lectures.",
+                    "lessonIndex": 10,
+                    "stageIndex": 1,
+                    "searchTerm": "radio",
+                    "gloss": "Newspaper sales fell 10% as weary listeners preferred light music over endless ideological radio lectures."
+                  }
+                ]
+              },
+              {
+                "id": "kt3_3_s2",
+                "tier": 3,
+                "label": "Nuremberg Rallies & 1936 Olympics",
+                "dateChip": "1933–38",
+                "lessonIndex": 10,
+                "stageIndex": 3,
+                "searchTerm": "Olympics",
+                "gloss": "Spectacular Nuremberg rallies and international sport at the 1936 Berlin Olympics showcased Nazi strength and unity.",
+                "children": [
+                  {
+                    "id": "kt3_3_s2_w1",
+                    "tier": 4,
+                    "tag": "Why",
+                    "label": "Speer's Cathedral of Light Spectacle",
+                    "detail": "Searchlights, flags, and 100,000 marchers at annual September Nuremberg rallies fostered emotional belonging.",
+                    "lessonIndex": 10,
+                    "stageIndex": 2,
+                    "searchTerm": "Nuremberg",
+                    "gloss": "Searchlights, flags, and 100,000 marchers at annual September Nuremberg rallies fostered emotional belonging."
+                  },
+                  {
+                    "id": "kt3_3_s2_e1",
+                    "tier": 4,
+                    "tag": "Evidence",
+                    "label": "Berlin Stadium Topped 1936 Medals",
+                    "detail": "Hiding anti-Jewish signs temporarily in August 1936 helped Germany win 33 golds before foreign reporters.",
+                    "lessonIndex": 10,
+                    "stageIndex": 3,
+                    "searchTerm": "Olympics",
+                    "gloss": "Hiding anti-Jewish signs temporarily in August 1936 helped Germany win 33 golds before foreign reporters."
+                  },
+                  {
+                    "id": "kt3_3_s2_v1",
+                    "tier": 4,
+                    "tag": "View 1",
+                    "label": "Dazzled Guests & Boosted Pride",
+                    "detail": "Modern television cameras, Leni Riefenstahl's rally films, and flawless staging impressed international opinion.",
+                    "lessonIndex": 10,
+                    "stageIndex": 2,
+                    "searchTerm": "Riefenstahl",
+                    "gloss": "Modern television cameras, Leni Riefenstahl's rally films, and flawless staging impressed international opinion."
+                  },
+                  {
+                    "id": "kt3_3_s2_v2",
+                    "tier": 4,
+                    "tag": "View 2",
+                    "label": "Jesse Owens Mocked Aryan Supremacy",
+                    "detail": "Black American sprinter Jesse Owens winning four Olympic golds publicly contradicted Nazi racial propaganda.",
+                    "lessonIndex": 10,
+                    "stageIndex": 3,
+                    "searchTerm": "Jesse Owens",
+                    "gloss": "Black American sprinter Jesse Owens winning four Olympic golds publicly contradicted Nazi racial propaganda."
+                  }
+                ]
+              },
+              {
+                "id": "kt3_3_s3",
+                "tier": 3,
+                "label": "Control of Culture, Art & Film",
+                "dateChip": "1933–39",
+                "lessonIndex": 10,
+                "stageIndex": 4,
+                "searchTerm": "Degenerate Art",
+                "gloss": "Nazi control of culture and the arts policed art, monumental architecture, literature, and cinema through the Reich Chamber.",
+                "children": [
+                  {
+                    "id": "kt3_3_s3_w1",
+                    "tier": 4,
+                    "tag": "Why",
+                    "label": "Reich Chamber Licensed Every Creator",
+                    "detail": "Expelling 2,500 Weimar writers and banning jazz purged modernist ideas in favour of Blood and Soil themes.",
+                    "lessonIndex": 10,
+                    "stageIndex": 0,
+                    "searchTerm": "Reich Chamber of Culture",
+                    "gloss": "Expelling 2,500 Weimar writers and banning jazz purged modernist ideas in favour of Blood and Soil themes."
+                  },
+                  {
+                    "id": "kt3_3_s3_e1",
+                    "tier": 4,
+                    "tag": "Evidence",
+                    "label": "Book Burnings & 1,300 Vetted Films",
+                    "detail": "Students burned 20,000 Jewish and socialist books, Speer built neoclassical halls, and Goebbels vetted scripts.",
+                    "lessonIndex": 10,
+                    "stageIndex": 4,
+                    "searchTerm": "Book",
+                    "gloss": "Students burned 20,000 Jewish and socialist books, Speer built neoclassical halls, and Goebbels vetted scripts."
+                  },
+                  {
+                    "id": "kt3_3_s3_v1",
+                    "tier": 4,
+                    "tag": "View 1",
+                    "label": "Cinema Escapism & Rally Films Worked",
+                    "detail": "Blending subtle nationalism into popular comedies drew over 400 million German cinema visits by 1938.",
+                    "lessonIndex": 10,
+                    "stageIndex": 4,
+                    "searchTerm": "film",
+                    "gloss": "Blending subtle nationalism into popular comedies drew over 400 million German cinema visits by 1938."
+                  },
+                  {
+                    "id": "kt3_3_s3_v2",
+                    "tier": 4,
+                    "tag": "View 2",
+                    "label": "2m Queued for Degenerate Art Show",
+                    "detail": "Three times more visitors attended Munich's 1937 banned modernist exhibition than Hitler's official gallery.",
+                    "lessonIndex": 10,
+                    "stageIndex": 4,
+                    "searchTerm": "Degenerate Art",
+                    "gloss": "Three times more visitors attended Munich's 1937 banned modernist exhibition than Hitler's official gallery."
+                  }
+                ]
+              },
+              {
+                "id": "kt3_3_s4",
+                "tier": 3,
+                "label": "The Concordat & the Reich Church",
+                "dateChip": "1933–39",
+                "lessonIndex": 9,
+                "stageIndex": 3,
+                "searchTerm": "Concordat",
+                "gloss": "Nazi attempts to control the Catholic and Protestant Churches used the 1933 Concordat and Ludwig Müller's Reich Church.",
+                "children": [
+                  {
+                    "id": "kt3_3_s4_w1",
+                    "tier": 4,
+                    "tag": "Why",
+                    "label": "45m Protestants & 22m Catholics",
+                    "detail": "Rival Christian loyalties threatened totalitarian control, pushing Hitler to neutralise church politics first.",
+                    "lessonIndex": 9,
+                    "stageIndex": 3,
+                    "searchTerm": "Concordat",
+                    "gloss": "Rival Christian loyalties threatened totalitarian control, pushing Hitler to neutralise church politics first."
+                  },
+                  {
+                    "id": "kt3_3_s4_e1",
+                    "tier": 4,
+                    "tag": "Evidence",
+                    "label": "Broken Concordat & Crosses Removed",
+                    "detail": "Breaking July 1933 Catholic school pledges, Nazis shut youth leagues while Müller banned Old Testament texts.",
+                    "lessonIndex": 9,
+                    "stageIndex": 4,
+                    "searchTerm": "Reich Church",
+                    "gloss": "Breaking July 1933 Catholic school pledges, Nazis shut youth leagues while Müller banned Old Testament texts."
+                  },
+                  {
+                    "id": "kt3_3_s4_v1",
+                    "tier": 4,
+                    "tag": "View 1",
+                    "label": "Concordat Ended Catholic Politics",
+                    "detail": "Vatican agreement dissolved the Centre Party peacefully and drew 2,000 pastors into pro-Nazi German Christians.",
+                    "lessonIndex": 9,
+                    "stageIndex": 3,
+                    "searchTerm": "Concordat",
+                    "gloss": "Vatican agreement dissolved the Centre Party peacefully and drew 2,000 pastors into pro-Nazi German Christians."
+                  },
+                  {
+                    "id": "kt3_3_s4_v2",
+                    "tier": 4,
+                    "tag": "View 2",
+                    "label": "Only 5% Joined Nazi Pagan Faith",
+                    "detail": "Over 90% of Germans kept Christian membership in 1939 as thousands of pastors rejected Reich Bishop Müller.",
+                    "lessonIndex": 9,
+                    "stageIndex": 4,
+                    "searchTerm": "Müller",
+                    "gloss": "Over 90% of Germans kept Christian membership in 1939 as thousands of pastors rejected Reich Bishop Müller."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt3_4",
+            "code": "3.4",
+            "tier": 2,
+            "label": "3.4 Opposition & Conformity",
+            "dateChip": "1933–39",
+            "lessonIndex": 11,
+            "stageIndex": 4,
+            "searchTerm": "Niemöller",
+            "gloss": "Q3d Core Debate: View 1 argues genuine gratitude for jobs and national pride kept pre-war opposition tiny vs View 2 argues Gestapo terror forced outward conformity despite brave Church and youth defiance.",
+            "children": [
+              {
+                "id": "kt3_4_s1",
+                "tier": 3,
+                "label": "Conformity & Scale of Support",
+                "dateChip": "1933–39",
+                "lessonIndex": 11,
+                "stageIndex": 0,
+                "searchTerm": "Sopade",
+                "gloss": "The high scale of support for the Nazi regime combined popular national pride with fear, limiting underground opposition.",
+                "children": [
+                  {
+                    "id": "kt3_4_s1_w1",
+                    "tier": 4,
+                    "tag": "Why",
+                    "label": "Full Employment & Foreign Triumphs",
+                    "detail": "Cutting joblessness and remilitarising the Rhineland in 1936 won genuine admiration from millions of voters.",
+                    "lessonIndex": 11,
+                    "stageIndex": 0,
+                    "searchTerm": "compliance",
+                    "gloss": "Cutting joblessness and remilitarising the Rhineland in 1936 won genuine admiration from millions of voters."
+                  },
+                  {
+                    "id": "kt3_4_s1_e1",
+                    "tier": 4,
+                    "tag": "Evidence",
+                    "label": "Exiled SPD Sopade Smuggled Leaflets",
+                    "detail": "Underground socialist and KPD couriers distributed camouflaged pamphlets before Gestapo raids broke cells.",
+                    "lessonIndex": 11,
+                    "stageIndex": 1,
+                    "searchTerm": "Sopade",
+                    "gloss": "Underground socialist and KPD couriers distributed camouflaged pamphlets before Gestapo raids broke cells."
+                  },
+                  {
+                    "id": "kt3_4_s1_v1",
+                    "tier": 4,
+                    "tag": "View 1",
+                    "label": "Führer Popularity & Votes Held Firm",
+                    "detail": "Most ordinary citizens grumbled privately about wages or party bosses yet admired Hitler and avoided revolt.",
+                    "lessonIndex": 11,
+                    "stageIndex": 0,
+                    "searchTerm": "grumbling",
+                    "gloss": "Most ordinary citizens grumbled privately about wages or party bosses yet admired Hitler and avoided revolt."
+                  },
+                  {
+                    "id": "kt3_4_s1_v2",
+                    "tier": 4,
+                    "tag": "View 2",
+                    "label": "300k Political Arrests Crushed Left",
+                    "detail": "Banning unions and jailing socialist organisers in camps made coordinated national resistance almost impossible.",
+                    "lessonIndex": 11,
+                    "stageIndex": 1,
+                    "searchTerm": "Sopade",
+                    "gloss": "Banning unions and jailing socialist organisers in camps made coordinated national resistance almost impossible."
+                  }
+                ]
+              },
+              {
+                "id": "kt3_4_s2",
+                "tier": 3,
+                "label": "Church Opposition & Niemöller",
+                "dateChip": "1933–39",
+                "lessonIndex": 11,
+                "stageIndex": 4,
+                "searchTerm": "Niemöller",
+                "gloss": "Opposition from the Churches included Pastor Martin Niemöller's Confessing Church and Catholic pulpit protests.",
+                "children": [
+                  {
+                    "id": "kt3_4_s2_w1",
+                    "tier": 4,
+                    "tag": "Why",
+                    "label": "Defended Christian Faith & Autonomy",
+                    "detail": "Clergy resisted Aryan Paragraph bans on baptised Jewish converts and Nazi interference in church governance.",
+                    "lessonIndex": 11,
+                    "stageIndex": 4,
+                    "searchTerm": "Confessing Church",
+                    "gloss": "Clergy resisted Aryan Paragraph bans on baptised Jewish converts and Nazi interference in church governance."
+                  },
+                  {
+                    "id": "kt3_4_s2_e1",
+                    "tier": 4,
+                    "tag": "Evidence",
+                    "label": "6,000 Pastors & 1937 Papal Letter",
+                    "detail": "Niemöller founded the Pastors' Emergency League while Pope Pius XI smuggled Burning Anxiety into Catholic parishes.",
+                    "lessonIndex": 11,
+                    "stageIndex": 4,
+                    "searchTerm": "Pius XI",
+                    "gloss": "Niemöller founded the Pastors' Emergency League while Pope Pius XI smuggled Burning Anxiety into Catholic parishes."
+                  },
+                  {
+                    "id": "kt3_4_s2_v1",
+                    "tier": 4,
+                    "tag": "View 1",
+                    "label": "Stopped Short of Political Overthrow",
+                    "detail": "Niemöller entered Sachsenhausen in 1937, 800 pastors were jailed, and bishops rarely condemned Hitler himself.",
+                    "lessonIndex": 11,
+                    "stageIndex": 4,
+                    "searchTerm": "Sachsenhausen",
+                    "gloss": "Niemöller entered Sachsenhausen in 1937, 800 pastors were jailed, and bishops rarely condemned Hitler himself."
+                  },
+                  {
+                    "id": "kt3_4_s2_v2",
+                    "tier": 4,
+                    "tag": "View 2",
+                    "label": "Broke Goebbels' Ideological Monopoly",
+                    "detail": "Thousands of Confessing pulpits and Catholic sermons remained the loudest public criticism left in pre-war Germany.",
+                    "lessonIndex": 11,
+                    "stageIndex": 4,
+                    "searchTerm": "Niemöller",
+                    "gloss": "Thousands of Confessing pulpits and Catholic sermons remained the loudest public criticism left in pre-war Germany."
+                  }
+                ]
+              },
+              {
+                "id": "kt3_4_s3",
+                "tier": 3,
+                "label": "Swing Youth & Edelweiss Pirates",
+                "dateChip": "1936–39",
+                "lessonIndex": 11,
+                "stageIndex": 2,
+                "searchTerm": "Edelweiss Pirates",
+                "gloss": "Opposition from the young grew through middle-class Swing Youth clubs and working-class Edelweiss Pirates.",
+                "children": [
+                  {
+                    "id": "kt3_4_s3_w1",
+                    "tier": 4,
+                    "tag": "Why",
+                    "label": "Resented Compulsory HJ Army Drill",
+                    "detail": "After 1936 laws banned independent clubs, rebellious teenagers rejected regimented uniforms and military marching.",
+                    "lessonIndex": 11,
+                    "stageIndex": 2,
+                    "searchTerm": "1936",
+                    "gloss": "After 1936 laws banned independent clubs, rebellious teenagers rejected regimented uniforms and military marching."
+                  },
+                  {
+                    "id": "kt3_4_s3_e1",
+                    "tier": 4,
+                    "tag": "Evidence",
+                    "label": "2,000 Pirates & Illegal Jazz Dances",
+                    "detail": "Rhineland gangs hiked freely and ambushed HJ patrols while Swing clubs wore English clothes and danced to jazz.",
+                    "lessonIndex": 11,
+                    "stageIndex": 3,
+                    "searchTerm": "Swing Youth",
+                    "gloss": "Rhineland gangs hiked freely and ambushed HJ patrols while Swing clubs wore English clothes and danced to jazz."
+                  },
+                  {
+                    "id": "kt3_4_s3_v1",
+                    "tier": 4,
+                    "tag": "View 1",
+                    "label": "Cultural Defiance Not Coup Plots",
+                    "detail": "Only a few thousand youths joined pre-1939 gangs compared with millions enrolled inside official Nazi movements.",
+                    "lessonIndex": 11,
+                    "stageIndex": 2,
+                    "searchTerm": "Edelweiss Pirates",
+                    "gloss": "Only a few thousand youths joined pre-1939 gangs compared with millions enrolled inside official Nazi movements."
+                  },
+                  {
+                    "id": "kt3_4_s3_v2",
+                    "tier": 4,
+                    "tag": "View 2",
+                    "label": "Showed Youth Indoctrination Failed",
+                    "detail": "Openly mocking Nazi slogans and embracing American swing showed total control over teenage minds failed.",
+                    "lessonIndex": 11,
+                    "stageIndex": 3,
+                    "searchTerm": "Swing Youth",
+                    "gloss": "Openly mocking Nazi slogans and embracing American swing showed total control over teenage minds failed."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "kt4",
+        "keyTopicNumber": 4,
+        "tier": 1,
+        "side": "right",
+        "color": "#059669",
+        "label": "KT4: Life in Nazi Germany",
+        "dateChip": "1933–39",
+        "lessonIndex": 12,
+        "stageIndex": 0,
+        "searchTerm": "Kinder",
+        "gloss": "Key topic 4: Life in Nazi Germany, 1933–39 — policies towards women and the young, employment and living standards, and pre-war persecution of minorities.",
+        "children": [
+          {
+            "id": "kt4_1",
+            "code": "4.1",
+            "tier": 2,
+            "label": "4.1 Policies Towards Women",
+            "dateChip": "1933–39",
+            "lessonIndex": 12,
+            "stageIndex": 1,
+            "searchTerm": "Marriage",
+            "gloss": "Q3d Core Debate: View 1 argues marriage loans, Mother's Crosses, and job purges reshaped women around home and family vs View 2 argues 1937–39 rearmament labour shortages forced a major U-turn.",
+            "children": [
+              {
+                "id": "kt4_1_s1",
+                "tier": 3,
+                "label": "Nazi Views on Women & Appearance",
+                "dateChip": "1933–39",
+                "lessonIndex": 12,
+                "stageIndex": 0,
+                "searchTerm": "Kinder",
+                "gloss": "Nazi views on women and the family promoted Kinder, Küche, Kirche alongside traditional peasant appearance.",
+                "children": [
+                  {
+                    "id": "kt4_1_s1_w1",
+                    "tier": 4,
+                    "tag": "Why",
+                    "label": "Boost Aryan Births for Future Armies",
+                    "detail": "Alarmed that annual births had halved since 1900, Hitler demanded mothers raise racially pure soldiers.",
+                    "lessonIndex": 12,
+                    "stageIndex": 0,
+                    "searchTerm": "bearing healthy Aryan children",
+                    "gloss": "Alarmed that annual births had halved since 1900, Hitler demanded mothers raise racially pure soldiers."
+                  },
+                  {
+                    "id": "kt4_1_s1_e1",
+                    "tier": 4,
+                    "tag": "Evidence",
+                    "label": "Scholtz-Klink & Anti-Cosmetic Rules",
+                    "detail": "Gertrud Scholtz-Klink urged unpainted faces, braided hair, flat shoes, long skirts, and zero smoking or dieting.",
+                    "lessonIndex": 12,
+                    "stageIndex": 0,
+                    "searchTerm": "Scholtz-Klink",
+                    "gloss": "Gertrud Scholtz-Klink urged unpainted faces, braided hair, flat shoes, long skirts, and zero smoking or dieting."
+                  },
+                  {
+                    "id": "kt4_1_s1_v1",
+                    "tier": 4,
+                    "tag": "View 1",
+                    "label": "6m Joined Nazi Women's Organisations",
+                    "detail": "Motherhood classes trained millions of housewives in thrift, nutrition, and racial hygiene across Germany.",
+                    "lessonIndex": 12,
+                    "stageIndex": 0,
+                    "searchTerm": "Scholtz-Klink",
+                    "gloss": "Motherhood classes trained millions of housewives in thrift, nutrition, and racial hygiene across Germany."
+                  },
+                  {
+                    "id": "kt4_1_s1_v2",
+                    "tier": 4,
+                    "tag": "View 2",
+                    "label": "Urban Women Ignored Dress Bans",
+                    "detail": "City women continued buying cosmetics, perming hair, and following Hollywood fashion despite party posters.",
+                    "lessonIndex": 12,
+                    "stageIndex": 0,
+                    "searchTerm": "appearance",
+                    "gloss": "City women continued buying cosmetics, perming hair, and following Hollywood fashion despite party posters."
+                  }
+                ]
+              },
+              {
+                "id": "kt4_1_s2",
+                "tier": 3,
+                "label": "Marriage Loans & Mother's Cross",
+                "dateChip": "1933–38",
+                "lessonIndex": 12,
+                "stageIndex": 1,
+                "searchTerm": "Marriage",
+                "gloss": "Nazi policies towards women on marriage and family offered 1,000-mark loans, Mother's Cross medals, and Lebensborn homes.",
+                "children": [
+                  {
+                    "id": "kt4_1_s2_w1",
+                    "tier": 4,
+                    "tag": "Why",
+                    "label": "1,000-Mark Loans Cut Job Competition",
+                    "detail": "June 1933 interest-free loans of 1,000 marks required brides to quit paid jobs and cancelled 25% per baby.",
+                    "lessonIndex": 12,
+                    "stageIndex": 1,
+                    "searchTerm": "1,000",
+                    "gloss": "June 1933 interest-free loans of 1,000 marks required brides to quit paid jobs and cancelled 25% per baby."
+                  },
+                  {
+                    "id": "kt4_1_s2_e1",
+                    "tier": 4,
+                    "tag": "Evidence",
+                    "label": "Gold Cross for Eight & Lebensborn",
+                    "detail": "Awarded on Hitler's mother's birthday alongside Himmler's 1935 SS maternity homes, births rose 33% by 1939.",
+                    "lessonIndex": 12,
+                    "stageIndex": 2,
+                    "searchTerm": "Lebensborn",
+                    "gloss": "Awarded on Hitler's mother's birthday alongside Himmler's 1935 SS maternity homes, births rose 33% by 1939."
+                  },
+                  {
+                    "id": "kt4_1_s2_v1",
+                    "tier": 4,
+                    "tag": "View 1",
+                    "label": "Births Climbed from 970k to 1.41m",
+                    "detail": "800,000 couples took marriage loans and annual marriages jumped sharply between 1933 and 1939.",
+                    "lessonIndex": 12,
+                    "stageIndex": 1,
+                    "searchTerm": "Marriage",
+                    "gloss": "800,000 couples took marriage loans and annual marriages jumped sharply between 1933 and 1939."
+                  },
+                  {
+                    "id": "kt4_1_s2_v2",
+                    "tier": 4,
+                    "tag": "View 2",
+                    "label": "Average Family Stayed Two Children",
+                    "detail": "Economic recovery rather than propaganda explained more weddings, while divorce laws in 1938 weakened family ties.",
+                    "lessonIndex": 12,
+                    "stageIndex": 2,
+                    "searchTerm": "Mutterkreuz",
+                    "gloss": "Economic recovery rather than propaganda explained more weddings, while divorce laws in 1938 weakened family ties."
+                  }
+                ]
+              },
+              {
+                "id": "kt4_1_s3",
+                "tier": 3,
+                "label": "Female Employment & 1937 U-Turn",
+                "dateChip": "1933–39",
+                "lessonIndex": 12,
+                "stageIndex": 4,
+                "searchTerm": "Duty Year",
+                "gloss": "Nazi policies towards women in employment first sacked professionals before rearmament shortages forced women back to work.",
+                "children": [
+                  {
+                    "id": "kt4_1_s3_w1",
+                    "tier": 4,
+                    "tag": "Why",
+                    "label": "Cleared Professional Jobs for Men",
+                    "detail": "From 1933 female judges, civil servants, and 15% of teachers lost posts while girls faced a 10% university cap.",
+                    "lessonIndex": 12,
+                    "stageIndex": 0,
+                    "searchTerm": "judges",
+                    "gloss": "From 1933 female judges, civil servants, and 15% of teachers lost posts while girls faced a 10% university cap."
+                  },
+                  {
+                    "id": "kt4_1_s3_e1",
+                    "tier": 4,
+                    "tag": "Evidence",
+                    "label": "1937 Loan Change & 1938 Duty Year",
+                    "detail": "Four-Year Plan arms plants lifted the marriage-loan work ban and required unpaid farm or domestic service.",
+                    "lessonIndex": 12,
+                    "stageIndex": 4,
+                    "searchTerm": "Duty Year",
+                    "gloss": "Four-Year Plan arms plants lifted the marriage-loan work ban and required unpaid farm or domestic service."
+                  },
+                  {
+                    "id": "kt4_1_s3_v1",
+                    "tier": 4,
+                    "tag": "View 1",
+                    "label": "Barred Women from Elite Professions",
+                    "detail": "Women remained completely barred from Reichstag politics, legal benches, and senior civil service leadership.",
+                    "lessonIndex": 12,
+                    "stageIndex": 4,
+                    "searchTerm": "Four-Year Plan",
+                    "gloss": "Women remained completely barred from Reichstag politics, legal benches, and senior civil service leadership."
+                  },
+                  {
+                    "id": "kt4_1_s3_v2",
+                    "tier": 4,
+                    "tag": "View 2",
+                    "label": "14.6m Working Women Topped 1933",
+                    "detail": "Booming munitions demand added three million female workers by May 1939, overturning Nazi domestic dogma.",
+                    "lessonIndex": 12,
+                    "stageIndex": 4,
+                    "searchTerm": "14.6 million",
+                    "gloss": "Booming munitions demand added three million female workers by May 1939, overturning Nazi domestic dogma."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt4_2",
+            "code": "4.2",
+            "tier": 2,
+            "label": "4.2 Policies Towards the Young",
+            "dateChip": "1933–39",
+            "lessonIndex": 13,
+            "stageIndex": 0,
+            "searchTerm": "Hitlerjugend",
+            "gloss": "Q3d Core Debate: View 1 argues Hitler Youth, the League of German Maidens, and Nazified schools successfully moulded loyal youth vs View 2 argues compulsory drill bred boredom and non-conformity.",
+            "children": [
+              {
+                "id": "kt4_2_s1",
+                "tier": 3,
+                "label": "Hitler Youth Aims & Compulsion",
+                "dateChip": "1933–39",
+                "lessonIndex": 13,
+                "stageIndex": 0,
+                "searchTerm": "Hitlerjugend",
+                "gloss": "Nazi aims and policies towards the young trained future soldiers through Baldur von Schirach's Hitler Youth.",
+                "children": [
+                  {
+                    "id": "kt4_2_s1_w1",
+                    "tier": 4,
+                    "tag": "Why",
+                    "label": "Prepared Boys Physically for War",
+                    "detail": "Cross-country marches, map reading, campcraft, and rifle practice trained 14-to-18-year-olds for Wehrmacht service.",
+                    "lessonIndex": 13,
+                    "stageIndex": 0,
+                    "searchTerm": "Schirach",
+                    "gloss": "Cross-country marches, map reading, campcraft, and rifle practice trained 14-to-18-year-olds for Wehrmacht service."
+                  },
+                  {
+                    "id": "kt4_2_s1_e1",
+                    "tier": 4,
+                    "tag": "Evidence",
+                    "label": "1936 & March 1939 Compulsory Laws",
+                    "detail": "Banning Boy Scouts and Protestant clubs pushed youth membership past seven million by March 1939.",
+                    "lessonIndex": 13,
+                    "stageIndex": 2,
+                    "searchTerm": "1936",
+                    "gloss": "Banning Boy Scouts and Protestant clubs pushed youth membership past seven million by March 1939."
+                  },
+                  {
+                    "id": "kt4_2_s1_v1",
+                    "tier": 4,
+                    "tag": "View 1",
+                    "label": "Camping & Comradeship Won Young Fans",
+                    "detail": "Uniforms, summer camps, and weakening parental authority thrilled millions of boys proud to serve Hitler.",
+                    "lessonIndex": 13,
+                    "stageIndex": 0,
+                    "searchTerm": "Hitlerjugend",
+                    "gloss": "Uniforms, summer camps, and weakening parental authority thrilled millions of boys proud to serve Hitler."
+                  },
+                  {
+                    "id": "kt4_2_s1_v2",
+                    "tier": 4,
+                    "tag": "View 2",
+                    "label": "1939 Youth Law Proved Reluctance",
+                    "detail": "Nearly a million teenagers still dodged meetings by 1939 as harsh military drill replaced fun outdoor games.",
+                    "lessonIndex": 13,
+                    "stageIndex": 2,
+                    "searchTerm": "compulsory",
+                    "gloss": "Nearly a million teenagers still dodged meetings by 1939 as harsh military drill replaced fun outdoor games."
+                  }
+                ]
+              },
+              {
+                "id": "kt4_2_s2",
+                "tier": 3,
+                "label": "The League of German Maidens",
+                "dateChip": "1933–39",
+                "lessonIndex": 13,
+                "stageIndex": 1,
+                "searchTerm": "League of German Maidens",
+                "gloss": "Girls aged 14–18 entered the League of German Maidens to learn motherhood, domestic skills, fitness, and racial marriage rules.",
+                "children": [
+                  {
+                    "id": "kt4_2_s2_w1",
+                    "tier": 4,
+                    "tag": "Why",
+                    "label": "Groomed Healthy Aryan Future Mothers",
+                    "detail": "Rhythmic gymnastics, cooking, sewing, childcare, and racial hygiene prepared girls to bear strong soldiers.",
+                    "lessonIndex": 13,
+                    "stageIndex": 1,
+                    "searchTerm": "League of German Maidens",
+                    "gloss": "Rhythmic gymnastics, cooking, sewing, childcare, and racial hygiene prepared girls to bear strong soldiers."
+                  },
+                  {
+                    "id": "kt4_2_s2_e1",
+                    "tier": 4,
+                    "tag": "Evidence",
+                    "label": "Blue Skirts, Hikes & Harvest Camps",
+                    "detail": "White blouses, blue skirts, and summer farm placements broke class barriers while teaching selfless national duty.",
+                    "lessonIndex": 13,
+                    "stageIndex": 1,
+                    "searchTerm": "Bund Deutscher Mädel",
+                    "gloss": "White blouses, blue skirts, and summer farm placements broke class barriers while teaching selfless national duty."
+                  },
+                  {
+                    "id": "kt4_2_s2_v1",
+                    "tier": 4,
+                    "tag": "View 1",
+                    "label": "Offered Travel Beyond Strict Homes",
+                    "detail": "Sports, group singing, and youth hostels offered working-class teenagers unprecedented freedom from chores.",
+                    "lessonIndex": 13,
+                    "stageIndex": 1,
+                    "searchTerm": "League of German Maidens",
+                    "gloss": "Sports, group singing, and youth hostels offered working-class teenagers unprecedented freedom from chores."
+                  },
+                  {
+                    "id": "kt4_2_s2_v2",
+                    "tier": 4,
+                    "tag": "View 2",
+                    "label": "Parents Resented Unpaid Farm Labour",
+                    "detail": "Compulsory agricultural years and undermined family discipline sparked quiet complaints from conservative mothers.",
+                    "lessonIndex": 13,
+                    "stageIndex": 1,
+                    "searchTerm": "motherhood",
+                    "gloss": "Compulsory agricultural years and undermined family discipline sparked quiet complaints from conservative mothers."
+                  }
+                ]
+              },
+              {
+                "id": "kt4_2_s3",
+                "tier": 3,
+                "label": "Education, Curriculum & Teachers",
+                "dateChip": "1933–39",
+                "lessonIndex": 13,
+                "stageIndex": 4,
+                "searchTerm": "curriculum",
+                "gloss": "Nazi control of the young through education purged teachers and rewrote every school curriculum around race and war.",
+                "children": [
+                  {
+                    "id": "kt4_2_s3_w1",
+                    "tier": 4,
+                    "tag": "Why",
+                    "label": "97% Joined Nazi Teachers' League",
+                    "detail": "Bernhard Rust sacked Jewish and socialist staff while forcing 300,000 teachers through ideological training camps.",
+                    "lessonIndex": 13,
+                    "stageIndex": 3,
+                    "searchTerm": "Teachers",
+                    "gloss": "Bernhard Rust sacked Jewish and socialist staff while forcing 300,000 teachers through ideological training camps."
+                  },
+                  {
+                    "id": "kt4_2_s3_e1",
+                    "tier": 4,
+                    "tag": "Evidence",
+                    "label": "Eugenics, 15% PE & Napolas Schools",
+                    "detail": "Lessons taught skull measurements, bomb trajectories in maths, Versailles injustice, and elite SS cadet training.",
+                    "lessonIndex": 13,
+                    "stageIndex": 4,
+                    "searchTerm": "Napolas",
+                    "gloss": "Lessons taught skull measurements, bomb trajectories in maths, Versailles injustice, and elite SS cadet training."
+                  },
+                  {
+                    "id": "kt4_2_s3_v1",
+                    "tier": 4,
+                    "tag": "View 1",
+                    "label": "Salutes & Textbooks Moulded Youth",
+                    "detail": "Controlling lessons from age six normalised racial antisemitism and unquestioning obedience before adulthood.",
+                    "lessonIndex": 13,
+                    "stageIndex": 4,
+                    "searchTerm": "curriculum",
+                    "gloss": "Controlling lessons from age six normalised racial antisemitism and unquestioning obedience before adulthood."
+                  },
+                  {
+                    "id": "kt4_2_s3_v2",
+                    "tier": 4,
+                    "tag": "View 2",
+                    "label": "Academic & Science Standards Fell",
+                    "detail": "Replacing scholarship with physical drill and dogma caused university standards and technical skill to drop.",
+                    "lessonIndex": 13,
+                    "stageIndex": 4,
+                    "searchTerm": "curriculum",
+                    "gloss": "Replacing scholarship with physical drill and dogma caused university standards and technical skill to drop."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt4_3",
+            "code": "4.3",
+            "tier": 2,
+            "label": "4.3 Jobs & Living Standards",
+            "dateChip": "1933–39",
+            "lessonIndex": 14,
+            "stageIndex": 3,
+            "searchTerm": "Strength Through Joy",
+            "gloss": "Q3d Core Debate: View 1 argues RAD, autobahns, rearmament, and Strength Through Joy improved workers' lives vs View 2 argues invisible unemployment, lost unions, and 49-hour weeks masked exploitation.",
+            "children": [
+              {
+                "id": "kt4_3_s1",
+                "tier": 3,
+                "label": "RAD, Autobahns & Rearmament",
+                "dateChip": "1933–39",
+                "lessonIndex": 14,
+                "stageIndex": 1,
+                "searchTerm": "Autobahn",
+                "gloss": "Nazi policies to reduce unemployment used the Reich Labour Service, autobahns, conscription, and massive rearmament.",
+                "children": [
+                  {
+                    "id": "kt4_3_s1_w1",
+                    "tier": 4,
+                    "tag": "Why",
+                    "label": "Compulsory Six-Month Labour Service",
+                    "detail": "From 1935 all men aged 18–25 dug drainage ditches and planted forests in RAD camps for pocket-money pay.",
+                    "lessonIndex": 14,
+                    "stageIndex": 1,
+                    "searchTerm": "RAD",
+                    "gloss": "From 1935 all men aged 18–25 dug drainage ditches and planted forests in RAD camps for pocket-money pay."
+                  },
+                  {
+                    "id": "kt4_3_s1_w2",
+                    "tier": 4,
+                    "tag": "Why",
+                    "label": "26bn Marks Spent on Arms by 1938",
+                    "detail": "Building 3,500 km of motorways employed 125,000 men while conscripting 1.4m troops and arming Luftwaffe plants.",
+                    "lessonIndex": 14,
+                    "stageIndex": 2,
+                    "searchTerm": "conscription",
+                    "gloss": "Building 3,500 km of motorways employed 125,000 men while conscripting 1.4m troops and arming Luftwaffe plants."
+                  },
+                  {
+                    "id": "kt4_3_s1_v1",
+                    "tier": 4,
+                    "tag": "View 1",
+                    "label": "Registered Jobless Fell 6m to 300k",
+                    "detail": "Restoring regular pay packets by 1939 ended Depression soup queues and won wide working-class relief.",
+                    "lessonIndex": 14,
+                    "stageIndex": 1,
+                    "searchTerm": "six million",
+                    "gloss": "Restoring regular pay packets by 1939 ended Depression soup queues and won wide working-class relief."
+                  },
+                  {
+                    "id": "kt4_3_s1_v2",
+                    "tier": 4,
+                    "tag": "View 2",
+                    "label": "Deficit Arms Boom Risked Bankruptcy",
+                    "detail": "Göring's 1936 Four-Year Plan prioritised 'guns before butter', creating food shortages and unsustainable debt.",
+                    "lessonIndex": 14,
+                    "stageIndex": 4,
+                    "searchTerm": "Four-Year Plan",
+                    "gloss": "Göring's 1936 Four-Year Plan prioritised 'guns before butter', creating food shortages and unsustainable debt."
+                  }
+                ]
+              },
+              {
+                "id": "kt4_3_s2",
+                "tier": 3,
+                "label": "Invisible Unemployment & Living",
+                "dateChip": "1933–39",
+                "lessonIndex": 14,
+                "stageIndex": 2,
+                "searchTerm": "Invisible Unemployment",
+                "gloss": "Official job figures hid invisible unemployment while changes in the standard of living brought longer hours for German workers.",
+                "children": [
+                  {
+                    "id": "kt4_3_s2_w1",
+                    "tier": 4,
+                    "tag": "Why",
+                    "label": "Manipulated Official Job Registers",
+                    "detail": "Removing sacked Jews, married women, RAD conscripts, and part-time workers hid over 1.5 million jobless people.",
+                    "lessonIndex": 14,
+                    "stageIndex": 2,
+                    "searchTerm": "Invisible Unemployment",
+                    "gloss": "Removing sacked Jews, married women, RAD conscripts, and part-time workers hid over 1.5 million jobless people."
+                  },
+                  {
+                    "id": "kt4_3_s2_e1",
+                    "tier": 4,
+                    "tag": "Evidence",
+                    "label": "Working Week Rose 43 to 49 Hours",
+                    "detail": "Hourly wage rates stayed frozen at 1933 Depression levels while food prices climbed roughly 20 percent.",
+                    "lessonIndex": 14,
+                    "stageIndex": 4,
+                    "searchTerm": "hours",
+                    "gloss": "Hourly wage rates stayed frozen at 1933 Depression levels while food prices climbed roughly 20 percent."
+                  },
+                  {
+                    "id": "kt4_3_s2_v1",
+                    "tier": 4,
+                    "tag": "View 1",
+                    "label": "Skilled Arms Pay & Job Security Rose",
+                    "detail": "Munitions specialists earned 20% higher weekly take-home pay while small shopkeepers beat department store rivals.",
+                    "lessonIndex": 14,
+                    "stageIndex": 4,
+                    "searchTerm": "living",
+                    "gloss": "Munitions specialists earned 20% higher weekly take-home pay while small shopkeepers beat department store rivals."
+                  },
+                  {
+                    "id": "kt4_3_s2_v2",
+                    "tier": 4,
+                    "tag": "View 2",
+                    "label": "Compulsory Deductions Ate Pay Rises",
+                    "detail": "DAF dues, Winter Relief collections, and dearer groceries forced families to work longer hours just to keep pace.",
+                    "lessonIndex": 14,
+                    "stageIndex": 4,
+                    "searchTerm": "wages",
+                    "gloss": "DAF dues, Winter Relief collections, and dearer groceries forced families to work longer hours just to keep pace."
+                  }
+                ]
+              },
+              {
+                "id": "kt4_3_s3",
+                "tier": 3,
+                "label": "DAF, KdF & Beauty of Labour",
+                "dateChip": "1933–39",
+                "lessonIndex": 14,
+                "stageIndex": 3,
+                "searchTerm": "Strength Through Joy",
+                "gloss": "Robert Ley's Labour Front replaced unions with Strength Through Joy leisure perks and Beauty of Labour workplace upgrades.",
+                "children": [
+                  {
+                    "id": "kt4_3_s3_w1",
+                    "tier": 4,
+                    "tag": "Why",
+                    "label": "Calmed Workers After Banning Unions",
+                    "detail": "Banning strikes and collective pay bargaining inside the 22-million-strong DAF required cheap leisure rewards.",
+                    "lessonIndex": 14,
+                    "stageIndex": 0,
+                    "searchTerm": "Labour Front",
+                    "gloss": "Banning strikes and collective pay bargaining inside the 22-million-strong DAF required cheap leisure rewards."
+                  },
+                  {
+                    "id": "kt4_3_s3_e1",
+                    "tier": 4,
+                    "tag": "Evidence",
+                    "label": "10m Holidaymakers & Factory Canteens",
+                    "detail": "Strength Through Joy ran cheap theatre trips and cruises while Beauty of Labour added showers and hot meals.",
+                    "lessonIndex": 14,
+                    "stageIndex": 3,
+                    "searchTerm": "Beauty of Labour",
+                    "gloss": "Strength Through Joy ran cheap theatre trips and cruises while Beauty of Labour added showers and hot meals."
+                  },
+                  {
+                    "id": "kt4_3_s3_v1",
+                    "tier": 4,
+                    "tag": "View 1",
+                    "label": "Cheap Leisure Broke Elitist Barriers",
+                    "detail": "Affordable alpine holidays, sports clubs, and brighter workshops boosted morale among loyal industrial workers.",
+                    "lessonIndex": 14,
+                    "stageIndex": 3,
+                    "searchTerm": "Strength Through Joy",
+                    "gloss": "Affordable alpine holidays, sports clubs, and brighter workshops boosted morale among loyal industrial workers."
+                  },
+                  {
+                    "id": "kt4_3_s3_v2",
+                    "tier": 4,
+                    "tag": "View 2",
+                    "label": "Zero Workers Received a People's Car",
+                    "detail": "336,000 savers paid five marks weekly for a Volkswagen before factories switched to war, and upgrades were unpaid.",
+                    "lessonIndex": 14,
+                    "stageIndex": 3,
+                    "searchTerm": "People's Car",
+                    "gloss": "336,000 savers paid five marks weekly for a Volkswagen before factories switched to war, and upgrades were unpaid."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt4_4",
+            "code": "4.4",
+            "tier": 2,
+            "label": "4.4 Persecution of Minorities",
+            "dateChip": "1933–39",
+            "lessonIndex": 15,
+            "stageIndex": 3,
+            "searchTerm": "Kristallnacht",
+            "gloss": "Q3d Core Debate: View 1 argues persecution followed a deliberate state escalation from 1933 laws to Kristallnacht vs View 2 argues party radicals and public compliance drove cumulative radicalisation.",
+            "children": [
+              {
+                "id": "kt4_4_s1",
+                "tier": 3,
+                "label": "Slavs, Roma, Sinti & Disabled",
+                "dateChip": "1933–39",
+                "lessonIndex": 15,
+                "stageIndex": 2,
+                "searchTerm": "Roma",
+                "gloss": "Nazi racial beliefs shaped harsh treatment of minority groups: Slavs, Roma and Sinti, homosexuals, and people with disabilities.",
+                "children": [
+                  {
+                    "id": "kt4_4_s1_w1",
+                    "tier": 4,
+                    "tag": "Why",
+                    "label": "Eugenics & Master Race Ideology",
+                    "detail": "Social Darwinist dogma branded non-Aryans and hereditary patients threats to pure Volksgemeinschaft blood.",
+                    "lessonIndex": 15,
+                    "stageIndex": 2,
+                    "searchTerm": "Social Darwinism",
+                    "gloss": "Social Darwinist dogma branded non-Aryans and hereditary patients threats to pure Volksgemeinschaft blood."
+                  },
+                  {
+                    "id": "kt4_4_s1_e1",
+                    "tier": 4,
+                    "tag": "Evidence",
+                    "label": "400,000 Sterilised & Paragraph 175",
+                    "detail": "1933 Hereditary Courts sterilised disabled citizens, interned 30,000 Roma and Sinti, and jailed 15,000 gay men.",
+                    "lessonIndex": 15,
+                    "stageIndex": 2,
+                    "searchTerm": "Paragraph 175",
+                    "gloss": "1933 Hereditary Courts sterilised disabled citizens, interned 30,000 Roma and Sinti, and jailed 15,000 gay men."
+                  },
+                  {
+                    "id": "kt4_4_s1_v1",
+                    "tier": 4,
+                    "tag": "View 1",
+                    "label": "State Laws Targeted Minority Groups",
+                    "detail": "Reich offices systematically registered Roma families, banned mixed marriages, and branded Slavs subhuman.",
+                    "lessonIndex": 15,
+                    "stageIndex": 2,
+                    "searchTerm": "Slavs",
+                    "gloss": "Reich offices systematically registered Roma families, banned mixed marriages, and branded Slavs subhuman."
+                  },
+                  {
+                    "id": "kt4_4_s1_v2",
+                    "tier": 4,
+                    "tag": "View 2",
+                    "label": "Doctors & Police Enforced Prejudices",
+                    "detail": "Medical professionals, welfare clerks, and local police willingly reported neighbours to Hereditary Health Courts.",
+                    "lessonIndex": 15,
+                    "stageIndex": 2,
+                    "searchTerm": "Hereditary",
+                    "gloss": "Medical professionals, welfare clerks, and local police willingly reported neighbours to Hereditary Health Courts."
+                  }
+                ]
+              },
+              {
+                "id": "kt4_4_s2",
+                "tier": 3,
+                "label": "1933 Boycott & Nuremberg Laws",
+                "dateChip": "1933–35",
+                "lessonIndex": 15,
+                "stageIndex": 1,
+                "searchTerm": "Nuremberg Laws",
+                "gloss": "Persecution of Jewish people escalated from the 1933 boycott of Jewish shops and businesses to the 1935 Nuremberg Laws.",
+                "children": [
+                  {
+                    "id": "kt4_4_s2_w1",
+                    "tier": 4,
+                    "tag": "Why",
+                    "label": "SA Pickets & Civil Service Purges",
+                    "detail": "On 1 April 1933 SA guards painted yellow stars on shop windows before April laws barred Jewish civil servants.",
+                    "lessonIndex": 15,
+                    "stageIndex": 0,
+                    "searchTerm": "boycott",
+                    "gloss": "On 1 April 1933 SA guards painted yellow stars on shop windows before April laws barred Jewish civil servants."
+                  },
+                  {
+                    "id": "kt4_4_s2_e1",
+                    "tier": 4,
+                    "tag": "Evidence",
+                    "label": "1935 Citizenship & Blood Protection",
+                    "detail": "Nuremberg statutes stripped Jews of citizenship and voting rights while outlawing marriage with Aryans.",
+                    "lessonIndex": 15,
+                    "stageIndex": 1,
+                    "searchTerm": "Nuremberg Laws",
+                    "gloss": "Nuremberg statutes stripped Jews of citizenship and voting rights while outlawing marriage with Aryans."
+                  },
+                  {
+                    "id": "kt4_4_s2_v1",
+                    "tier": 4,
+                    "tag": "View 1",
+                    "label": "Step-by-Step Legal Exclusion Policy",
+                    "detail": "Over 400 decrees systematically barred Jewish doctors, lawyers, and pupils from German public life by 1938.",
+                    "lessonIndex": 15,
+                    "stageIndex": 1,
+                    "searchTerm": "Nuremberg",
+                    "gloss": "Over 400 decrees systematically barred Jewish doctors, lawyers, and pupils from German public life by 1938."
+                  },
+                  {
+                    "id": "kt4_4_s2_v2",
+                    "tier": 4,
+                    "tag": "View 2",
+                    "label": "Lukewarm 1933 Boycott Lasted One Day",
+                    "detail": "Hitler paused street pickets in April 1933 fearing foreign trade boycotts before party radicals demanded 1935 laws.",
+                    "lessonIndex": 15,
+                    "stageIndex": 0,
+                    "searchTerm": "boycott",
+                    "gloss": "Hitler paused street pickets in April 1933 fearing foreign trade boycotts before party radicals demanded 1935 laws."
+                  }
+                ]
+              },
+              {
+                "id": "kt4_4_s3",
+                "tier": 3,
+                "label": "Kristallnacht & Forced Flight",
+                "dateChip": "1938–Aug 1939",
+                "lessonIndex": 15,
+                "stageIndex": 3,
+                "searchTerm": "Kristallnacht",
+                "gloss": "Persecution of Jewish people culminated before war in Kristallnacht on 9–10 November 1938, fines, and forced emigration.",
+                "children": [
+                  {
+                    "id": "kt4_4_s3_w1",
+                    "tier": 4,
+                    "tag": "Why",
+                    "label": "Paris Shooting Sparked Goebbels Riot",
+                    "detail": "After Herschel Grynszpan shot diplomat vom Rath, Goebbels and Heydrich ordered plain-clothes SA and SS terror.",
+                    "lessonIndex": 15,
+                    "stageIndex": 3,
+                    "searchTerm": "Kristallnacht",
+                    "gloss": "After Herschel Grynszpan shot diplomat vom Rath, Goebbels and Heydrich ordered plain-clothes SA and SS terror."
+                  },
+                  {
+                    "id": "kt4_4_s3_e1",
+                    "tier": 4,
+                    "tag": "Evidence",
+                    "label": "91 Killed & 267 Synagogues Burned",
+                    "detail": "Rioters smashed 7,500 Jewish shops, marched 30,000 men to camps, and Göring imposed a one-billion-mark fine.",
+                    "lessonIndex": 15,
+                    "stageIndex": 3,
+                    "searchTerm": "synagogues",
+                    "gloss": "Rioters smashed 7,500 Jewish shops, marched 30,000 men to camps, and Göring imposed a one-billion-mark fine."
+                  },
+                  {
+                    "id": "kt4_4_s3_v1",
+                    "tier": 4,
+                    "tag": "View 1",
+                    "label": "Aryanisation & Forced Emigration",
+                    "detail": "State decrees seized Jewish firms and drove over half of German Jews to emigrate before war began in 1939.",
+                    "lessonIndex": 15,
+                    "stageIndex": 4,
+                    "searchTerm": "Aryanisation",
+                    "gloss": "State decrees seized Jewish firms and drove over half of German Jews to emigrate before war began in 1939."
+                  },
+                  {
+                    "id": "kt4_4_s3_v2",
+                    "tier": 4,
+                    "tag": "View 2",
+                    "label": "Bystander Silence & Looting Helped",
+                    "detail": "While some citizens were privately shocked by burning synagogues, open public protest in November 1938 stayed rare.",
+                    "lessonIndex": 15,
+                    "stageIndex": 4,
+                    "searchTerm": "billion",
+                    "gloss": "While some citizens were privately shocked by burning synagogues, open public protest in November 1938 stayed rare."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

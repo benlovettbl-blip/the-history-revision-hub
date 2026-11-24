@@ -3465,18 +3465,18 @@
         },
         {
           "stage": 2,
-          "question": "On what date did Claudia Severa invite Sulpicia Lepidina to celebrate her birthday at Vindolanda?",
-          "q": "On what date did Claudia Severa invite Sulpicia Lepidina to celebrate her birthday at Vindolanda?",
+          "question": "What do the wooden ink tablets found at Vindolanda reveal about everyday life near Hadrian's Wall?",
+          "q": "What do the wooden ink tablets found at Vindolanda reveal about everyday life near Hadrian's Wall?",
           "options": [
-            "25 December",
-            "11 September",
-            "1 January",
-            "15 March"
+            "Only Roman emperors were allowed to write letters in Britain",
+            "People on the frontier shared friendships, birthday parties, and warm clothing parcels",
+            "Soldiers at Vindolanda never felt cold in northern Britain",
+            "Wooden tablets were only used to record battle plans"
           ],
           "correct": 1,
-          "answer": "11 September",
-          "a": "11 September",
-          "explanation": "Claudia Severa's wooden letter warmly invited her friend Lepidina to visit for her birthday on 11 September."
+          "answer": "People on the frontier shared friendships, birthday parties, and warm clothing parcels",
+          "a": "People on the frontier shared friendships, birthday parties, and warm clothing parcels",
+          "explanation": "From Claudia Severa's birthday party invitation to a parcel of woollen socks and underpants, the Vindolanda tablets show warm friendships and everyday life on the chilly frontier."
         },
         {
           "stage": 3,

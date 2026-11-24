@@ -1,0 +1,1305 @@
+{
+  "unitId": "edexcel_medicine",
+  "optionCode": "1HI0/11",
+  "paperLabel": "Paper 1 · Option 11 (Thematic Study & Historic Environment)",
+  "courseTitle": "Medicine in Britain, c1250–present & The British Sector of the Western Front, 1914–18",
+  "examDateBoundary": "c1250–present (Western Front: 1914–1918)",
+  "disclaimer": "Aligned to Pearson Edexcel GCSE (9–1) History (1HI0). Independent educational resource — not endorsed by Pearson.",
+  "nonExaminedContextNote": "Ancient Greek and Roman medicine (Hippocrates and Galen) predates c1250 and is examined only through its enduring authority in medieval England and gradual overturning from c1500 onwards.",
+  "rescueTop10": [
+    {
+      "year": "1348–49",
+      "event": "The Black Death in Medieval England",
+      "significance": "Bubonic and pneumonic plague killed one-third to one-half of England's population while prayer, flagellants, bleeding, and street fires failed to stop flea-borne bacteria."
+    },
+    {
+      "year": "1543 & 1628",
+      "event": "Vesalius and Harvey's Anatomical Breakthroughs",
+      "significance": "Vesalius corrected 300 Galenic errors through human dissection in 1543, and Harvey proved mathematically in 1628 that the heart pumps blood in a closed loop."
+    },
+    {
+      "year": "1660 & 1665",
+      "event": "The Royal Society and Great Plague of London",
+      "significance": "Charles II chartered the experimental Royal Society in 1660, yet the 1665 Great Plague still killed over 100,000 Londoners amid 40-day red-cross house quarantines."
+    },
+    {
+      "year": "1796–1853",
+      "event": "Edward Jenner and Smallpox Vaccination",
+      "significance": "Jenner proved cowpox protected James Phipps from smallpox in 1796, leading Parliament to make infant vaccination free in 1840 and compulsory in 1853."
+    },
+    {
+      "year": "1847 & 1865",
+      "event": "Simpson's Chloroform and Lister's Carbolic Antisepsis",
+      "significance": "James Simpson conquered surgical pain with chloroform in 1847, and Joseph Lister slashed post-operative infection in 1865 using Pasteur-inspired carbolic acid spray."
+    },
+    {
+      "year": "1854 & 1875",
+      "event": "John Snow's Broad Street Pump and 1875 Public Health Act",
+      "significance": "Snow mapped Soho cholera deaths to waterborne contamination in 1854, and Disraeli's compulsory 1875 Public Health Act ended laissez-faire government inaction."
+    },
+    {
+      "year": "1861 & 1882",
+      "event": "Pasteur's Germ Theory and Koch's Bacteriology",
+      "significance": "Louis Pasteur disproved spontaneous generation with swan-neck flasks in 1861, enabling Robert Koch to stain and isolate the tuberculosis (1882) and cholera (1883) bacilli."
+    },
+    {
+      "year": "1914–18",
+      "event": "Western Front Evacuation Chain and Cambrai Blood Bank",
+      "significance": "RAMC clearing stations introduced surgical debridement, the Thomas splint, Carrel-Dakin irrigation, mobile X-rays, and Oswald Robertson's 1917 stored blood depot."
+    },
+    {
+      "year": "1928–44",
+      "event": "Fleming, Florey and Chain's Mass-Produced Penicillin",
+      "significance": "Fleming noticed Penicillium mould dissolving staphylococci in 1928, before Florey and Chain purified the antibiotic at Oxford and scaled US fermentation for 2.3 million D-Day doses."
+    },
+    {
+      "year": "1948 & 1953",
+      "event": "Launch of the NHS and Discovery of DNA",
+      "significance": "Aneurin Bevan established tax-funded universal NHS healthcare in July 1948, while Franklin, Watson, and Crick revealed the DNA double helix in 1953, transforming modern diagnostics."
+    }
+  ],
+  "keyTopics": [
+    {
+      "id": "kt1",
+      "number": 1,
+      "title": "Key Topic 1: c1250–c1500: Medicine in Medieval England",
+      "dateFence": "c1250–c1500",
+      "outsideFenceWarning": "Keep strictly inside c1250–c1500: printing presses in medical training, Vesalius (1543), Harvey (1628), and the 1665 Great Plague sit OUTSIDE medieval England.",
+      "subTopics": [
+        {
+          "id": "kt1_1",
+          "code": "1.1",
+          "title": "Ideas About the Cause of Disease and Illness (c1250–c1500)",
+          "dateFence": "c1250–c1500",
+          "outsideFenceTrap": "Outside c1250–c1500: Vesalius Challenging Galen (1543) & Royal Society Experiments (1660)",
+          "linkedLessonIndices": [
+            0,
+            1
+          ],
+          "anchors": [
+            {
+              "id": "kt1_1_a1",
+              "title": "Supernatural, Religious & Astrological Explanations (c1250–c1500)",
+              "dateTag": "c1250–c1500",
+              "lessonIndex": 0,
+              "recallPrompt": "Why did medieval people attribute illness to God and the planets, and how did the Church stifle new medical inquiry?",
+              "facts": [
+                "The Roman Catholic Church taught that sickness was divine punishment for sin or a test of faith, stigmatising lepers and isolating them inside suburban Lazar houses.",
+                "Physicians consulted Zodiac Man parchment charts linking planets to organs and blamed the 1348 plague on a 1345 alignment of Mars, Saturn, and Jupiter.",
+                "Monastic scriptoria controlled Latin medical books and imprisoned empirical thinkers like friar Roger Bacon around 1277, keeping medical universities bound to ancient authority."
+              ],
+              "examLens": {
+                "lensType": "Paper 1 Thematic Study",
+                "points": [
+                  {
+                    "label": "Q3 Comparison (4m)",
+                    "text": "Compare supernatural wrath and astrological alignment in 1348 with continuing God-and-miasma explanations during the 1665 Great Plague."
+                  },
+                  {
+                    "label": "Q4 Explain Why (12m)",
+                    "text": "Explain how Church control of Latin manuscripts, university teaching, and fear of heresy prevented new ideas about disease causation."
+                  },
+                  {
+                    "label": "Q5/Q6 Verdict (16m + 4 SPaG)",
+                    "text": "Weigh institutional Church censorship against lack of scientific instruments like microscopes in keeping medieval medical ideas static."
+                  }
+                ]
+              },
+              "questionSearchTerm": "astrology"
+            },
+            {
+              "id": "kt1_1_a2",
+              "title": "Rational Explanations: Four Humours, Galen & Miasma (c1250–c1500)",
+              "dateTag": "c1250–c1500",
+              "lessonIndex": 1,
+              "recallPrompt": "How did the Four Humours, Galen's Theory of Opposites, uroscopy, and miasma explain disease rationally in medieval England?",
+              "facts": [
+                "Medieval physicians followed Hippocrates and Galen's Theory of the Four Humours—blood, phlegm, yellow bile, and black bile—believing seasonal or dietary imbalance caused physical illness.",
+                "The Church endorsed Galen's Theory of Opposites ('contraries cure contraries') because his writings praised a single creator, preserving his animal-dissection errors for fourteen centuries.",
+                "Physicians inspected patient urine using a glass matula and twenty-shade urine wheel while blaming epidemic outbreaks on poisonous miasma ('bad air') from rotting waste and swamps."
+              ],
+              "examLens": {
+                "lensType": "Paper 1 Thematic Study",
+                "points": [
+                  {
+                    "label": "Q3 Comparison (4m)",
+                    "text": "Contrast medieval humoral and miasma theories of disease causation with nineteenth-century bacterial explanations after Pasteur's 1861 Germ Theory."
+                  },
+                  {
+                    "label": "Q4 Explain Why (12m)",
+                    "text": "Show how logical humoral symptoms and Church endorsement of Galen's creator doctrine entrenched classical rational theories across c1250–c1500."
+                  },
+                  {
+                    "label": "Q5/Q6 Verdict (16m + 4 SPaG)",
+                    "text": "Judge whether Galen's intellectual prestige or the Church's institutional backing was more important for medical continuity before 1500."
+                  }
+                ]
+              },
+              "questionSearchTerm": "humours"
+            }
+          ]
+        },
+        {
+          "id": "kt1_2",
+          "code": "1.2",
+          "title": "Approaches to Prevention, Treatment and Care (c1250–c1500)",
+          "dateFence": "c1250–c1500",
+          "outsideFenceTrap": "Outside c1250–c1500: Dissolution of Monasteries (1536) & New World Cinchona Bark",
+          "linkedLessonIndices": [
+            2,
+            3
+          ],
+          "anchors": [
+            {
+              "id": "kt1_2_a1",
+              "title": "Religious Actions, Bloodletting, Purging & Regimen Sanitatis (c1250–c1500)",
+              "dateTag": "c1250–c1500",
+              "lessonIndex": 2,
+              "recallPrompt": "How did medieval prevention and treatment directly reflect supernatural, humoral, and miasmatic beliefs?",
+              "facts": [
+                "Seeking spiritual healing, patients fasted, funded chantry masses, and undertook pilgrimages to touch holy relics at shrines such as St Thomas Becket's tomb in Canterbury.",
+                "To rebalance humours, practitioners performed phlebotomy (bloodletting) with iron fleams, leeches, or heated cups, and purged digestive tracts using black hellebore emetics and clysters.",
+                "Prevention followed the Salernitan Regimen Sanitatis rules on moderate diet, sleep, and bathing, while pomanders, burning lavender, and street tar fires countered foul miasma."
+              ],
+              "examLens": {
+                "lensType": "Paper 1 Thematic Study",
+                "points": [
+                  {
+                    "label": "Q3 Comparison (4m)",
+                    "text": "Highlight continuity in herbal remedies, bloodletting, and fragrant pomanders across medieval England (c1250–c1500) and the Medical Renaissance (c1500–c1700)."
+                  },
+                  {
+                    "label": "Q4 Explain Why (12m)",
+                    "text": "Link humoral bleeding, purging, and miasma-cleansing fires directly to the unchanged underlying theories of Galen and bad air."
+                  },
+                  {
+                    "label": "Q5/Q6 Verdict (16m + 4 SPaG)",
+                    "text": "Assess whether medieval treatments were wholly superstitious or grounded in coherent—though scientifically mistaken—humoral logic."
+                  }
+                ]
+              },
+              "questionSearchTerm": "bloodletting"
+            },
+            {
+              "id": "kt1_2_a2",
+              "title": "Physicians, Apothecaries, Barber-Surgeons, Hospitals & Home Care (c1250–c1500)",
+              "dateTag": "c1250–c1500",
+              "lessonIndex": 3,
+              "recallPrompt": "Who treated the sick in medieval England, and why did monastic hospitals practise 'care not cure'?",
+              "facts": [
+                "Fewer than one hundred expensive university-trained physicians practised in England by 1300, leaving townspeople to buy herbal simples or seventy-ingredient theriac from a local guild apothecary.",
+                "Apprentice-trained barber-surgeons performed bloodletting, tooth extractions, and unanaesthetised amputations sealed with boiling oil or cautery irons, while women healers nursed rural families using leechbooks.",
+                "England's 1,100 monastic hospitals, such as St Bartholomew's in London, offered 'care not cure'—clean linen, soup, rest, and chapel prayer—while turning away infectious lepers and plague sufferers."
+              ],
+              "examLens": {
+                "lensType": "Paper 1 Thematic Study",
+                "points": [
+                  {
+                    "label": "Q3 Comparison (4m)",
+                    "text": "Contrast medieval monastic 'care not cure' hospitality with Florence Nightingale's clean, nurse-trained Victorian pavilion wards after 1859."
+                  },
+                  {
+                    "label": "Q4 Explain Why (12m)",
+                    "text": "Explain why social wealth and belief that God sent illness shaped reliance on domestic women healers, barber-surgeons, and prayerful hospital rest."
+                  },
+                  {
+                    "label": "Q5/Q6 Verdict (16m + 4 SPaG)",
+                    "text": "Evaluate how far medieval hospitals improved survival through rest and cleanliness despite offering zero active medical cures."
+                  }
+                ]
+              },
+              "questionSearchTerm": "barber-surgeon"
+            }
+          ]
+        },
+        {
+          "id": "kt1_3",
+          "code": "1.3",
+          "title": "Case Study: Dealing with the Black Death (1348–49)",
+          "dateFence": "1348–1349",
+          "outsideFenceTrap": "Outside 1348–49 Black Death: Red-Cross Doors, Watchmen & Searchers of the 1665 Great Plague",
+          "linkedLessonIndices": [
+            4
+          ],
+          "anchors": [
+            {
+              "id": "kt1_3_a1",
+              "title": "Responses to the Black Death: Treatment & Prevention (1348–49)",
+              "dateTag": "1348–1349",
+              "lessonIndex": 4,
+              "recallPrompt": "How did medieval authorities, healers, and communities try to treat and prevent the Black Death in 1348–49?",
+              "facts": [
+                "Arriving via Melcombe Regis in June 1348, flea-borne and pneumonic Yersinia pestis killed between one-third and one-half of England's population within two years.",
+                "Believing God's wrath and corrupt miasma caused the pestilence, desperate sufferers joined flagellant whipping processions, bled veins, lanced buboes, or strapped live plucked hens to sores.",
+                "King Edward III ordered London streets cleared of butchered animal offal in April 1349 while councils burned pitch barrels and Gloucester attempted early quarantine rules."
+              ],
+              "examLens": {
+                "lensType": "Paper 1 Thematic Study",
+                "points": [
+                  {
+                    "label": "Q3 Comparison (4m)",
+                    "text": "Compare 1348–49 Black Death responses (flagellants, Edward III's street-cleaning letter) with stronger 1665 civic quarantines, watchmen, and pest houses."
+                  },
+                  {
+                    "label": "Q4 Explain Why (12m)",
+                    "text": "Explain why ignorance of black rats and Oriental rat fleas made medieval religious penance, miasma fires, and humoral bleeding helpless in 1348–49."
+                  },
+                  {
+                    "label": "Q5/Q6 Verdict (16m + 4 SPaG)",
+                    "text": "Use the 1348–49 Black Death case study to evaluate the relative dominance of religious superstition versus civic and humoral action in medieval England."
+                  }
+                ]
+              },
+              "questionSearchTerm": "black death"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kt2",
+      "number": 2,
+      "title": "Key Topic 2: c1500–c1700: The Medical Renaissance in England",
+      "dateFence": "c1500–c1700",
+      "outsideFenceWarning": "Keep strictly inside c1500–c1700: Edward Jenner's vaccination (1796) and Louis Pasteur's Germ Theory (1861) sit OUTSIDE the Medical Renaissance.",
+      "subTopics": [
+        {
+          "id": "kt2_1",
+          "code": "2.1",
+          "title": "Ideas About the Cause of Disease & Transmission of Ideas (c1500–c1700)",
+          "dateFence": "c1500–c1700",
+          "outsideFenceTrap": "Outside c1500–c1700: Pasteur's 1861 Germ Theory — Hooke & Leeuwenhoek Never Linked Microbes to Illness",
+          "linkedLessonIndices": [
+            5,
+            6
+          ],
+          "anchors": [
+            {
+              "id": "kt2_1_a1",
+              "title": "Humanism, the Printing Press & the Royal Society (c1500–c1700)",
+              "dateTag": "1476–1665",
+              "lessonIndex": 5,
+              "recallPrompt": "How did movable-type printing, Renaissance Humanism, and the Royal Society transform medical communication between 1500 and 1700?",
+              "facts": [
+                "Johannes Gutenberg's movable-type press (c1440) and William Caxton's Westminster press (1476) broke the monastic copying monopoly, mass-producing identical textbooks and woodcut diagrams across Europe.",
+                "Founded in 1660 and granted a Royal Charter by Charles II in 1662 under the motto 'Nullius in Verba', the Royal Society promoted repeatable physical experiments and peer-shared papers in Philosophical Transactions (1665).",
+                "Using early compound microscopes, Robert Hooke published Micrographia (1665) and Antony van Leeuwenhoek observed 'animalcules', yet miasma endured while elite reliance on astrology declined."
+              ],
+              "examLens": {
+                "lensType": "Paper 1 Thematic Study",
+                "points": [
+                  {
+                    "label": "Q3 Comparison (4m)",
+                    "text": "Contrast slow medieval Latin manuscript copying inside monasteries with rapid printed circulation via Philosophical Transactions after 1665."
+                  },
+                  {
+                    "label": "Q4 Explain Why (12m)",
+                    "text": "Show how the printing press, declining Church censorship, and royal patronage of the Royal Society accelerated scientific debate."
+                  },
+                  {
+                    "label": "Q5/Q6 Verdict (16m + 4 SPaG)",
+                    "text": "Assess why communication breakthroughs and early microscopes revolutionized anatomical knowledge yet failed to overturn miasma before 1700."
+                  }
+                ]
+              },
+              "questionSearchTerm": "royal society"
+            },
+            {
+              "id": "kt2_1_a2",
+              "title": "Thomas Sydenham & Improving Clinical Diagnosis (1676)",
+              "dateTag": "1676",
+              "lessonIndex": 6,
+              "recallPrompt": "Why was Dr Thomas Sydenham nicknamed 'the English Hippocrates', and how did he improve diagnosis?",
+              "facts": [
+                "Rejecting pure library book-learning, London physician Thomas Sydenham championed close bedside observation and detailed symptom logging across hundreds of clinical cases.",
+                "In Observationes Medicae (1676), Sydenham classified diseases into distinct uniform species like botanical plants rather than personal humoral imbalances, distinguishing scarlet fever from measles.",
+                "Sydenham promoted South American cinchona bark (quinine) as a specific cure for malarial ague and cool-therapy ventilation for smallpox, though miasma beliefs and conservative resistance persisted."
+              ],
+              "examLens": {
+                "lensType": "Paper 1 Thematic Study",
+                "points": [
+                  {
+                    "label": "Q3 Comparison (4m)",
+                    "text": "Compare medieval uroscopy and astrological diagnosis with Sydenham's bedside symptom classification in Observationes Medicae (1676)."
+                  },
+                  {
+                    "label": "Q4 Explain Why (12m)",
+                    "text": "Explain how Sydenham's species classification challenged Galenic individual humoral theory and laid foundations for modern differential diagnosis."
+                  },
+                  {
+                    "label": "Q5/Q6 Verdict (16m + 4 SPaG)",
+                    "text": "Weigh Sydenham's clinical empiricism against Vesalius and Harvey when judging who contributed most to Renaissance medical progress."
+                  }
+                ]
+              },
+              "questionSearchTerm": "sydenham"
+            }
+          ]
+        },
+        {
+          "id": "kt2_2",
+          "code": "2.2",
+          "title": "Approaches to Prevention, Treatment, Care & Vesalius (c1500–c1700)",
+          "dateFence": "c1500–c1700",
+          "outsideFenceTrap": "Outside c1500–c1700: Chloroform Anaesthesia (1847) & Lister's Antiseptic Spray (1865)",
+          "linkedLessonIndices": [
+            6,
+            7,
+            9
+          ],
+          "anchors": [
+            {
+              "id": "kt2_2_a1",
+              "title": "Continuity & Change in Community Care, Hospitals & Remedies (c1500–c1700)",
+              "dateTag": "c1500–c1700",
+              "lessonIndex": 9,
+              "recallPrompt": "What changed and what stayed the same in hospitals, community care, and remedies during the Medical Renaissance?",
+              "facts": [
+                "Everyday bedside treatment changed little: ordinary families still relied on domestic women healers, herbal remedies, bloodletting, purging, Regimen moderation, and sweet pomanders against miasma.",
+                "Henry VIII's Dissolution of the Monasteries (1536) shut down most medieval monastic hospitals, prompting civic endowments, small charitable infirmaries, and suburban parish pest houses for plague sufferers.",
+                "Global trade introduced New World botanicals such as cinchona bark for malaria alongside chemical remedies and Sydenham's opium-and-sherry laudanum, though quack cure-alls remained widespread."
+              ],
+              "examLens": {
+                "lensType": "Paper 1 Thematic Study",
+                "points": [
+                  {
+                    "label": "Q3 Comparison (4m)",
+                    "text": "Note strong continuity in household women healers and humoral bleeding alongside the new emergence of dedicated plague pest houses after 1536."
+                  },
+                  {
+                    "label": "Q4 Explain Why (12m)",
+                    "text": "Explain why practical treatments barely changed between 1500 and 1700 because physicians still lacked any knowledge of pathogenic bacteria."
+                  },
+                  {
+                    "label": "Q5/Q6 Verdict (16m + 4 SPaG)",
+                    "text": "Evaluate the claim that the Medical Renaissance was a revolution in anatomical theory rather than practical bedside treatment."
+                  }
+                ]
+              },
+              "questionSearchTerm": "pest houses"
+            },
+            {
+              "id": "kt2_2_a2",
+              "title": "Andreas Vesalius & Improvements in Medical Training (1543–53)",
+              "dateTag": "1537–1553",
+              "lessonIndex": 7,
+              "recallPrompt": "How did Andreas Vesalius overturn Galenic anatomy in 1543, and how did his work improve medical training in England?",
+              "facts": [
+                "At Padua from 1537, Andreas Vesalius performed human dissections personally and published De Humani Corporis Fabrica (1543) featuring over two hundred detailed anatomical woodcuts.",
+                "Vesalius corrected roughly 300 Galenic animal-dissection mistakes, proving the human lower jaw is one bone, the sternum has three segments, and the heart's septum has zero invisible pores.",
+                "Royal engraver Thomas Geminus reproduced Vesalius's copperplates in London in 1545 (translated into English in 1553), training Company of Barber-Surgeons practitioners through direct observation despite conservative Galenist hostility."
+              ],
+              "examLens": {
+                "lensType": "Paper 1 Thematic Study",
+                "points": [
+                  {
+                    "label": "Q3 Comparison (4m)",
+                    "text": "Contrast medieval professors reading Galen aloud while barber-surgeons cut below with Vesalius's hands-on human dissections and printed plates."
+                  },
+                  {
+                    "label": "Q4 Explain Why (12m)",
+                    "text": "Explain how legal access to executed felons, Renaissance artistic woodcuts, and Basel printing enabled Vesalius to transform European surgical training."
+                  },
+                  {
+                    "label": "Q5/Q6 Verdict (16m + 4 SPaG)",
+                    "text": "Judge how far Vesalius's 1543 Fabrica overturned ancient authority even though correcting anatomy cured no infectious diseases."
+                  }
+                ]
+              },
+              "questionSearchTerm": "vesalius"
+            }
+          ]
+        },
+        {
+          "id": "kt2_3",
+          "code": "2.3",
+          "title": "Case Studies: William Harvey (1628) & The Great Plague (1665)",
+          "dateFence": "1628 & 1665",
+          "outsideFenceTrap": "Outside c1500–c1700: Safe Human Blood Transfusions Required Landsteiner's 1901 ABO Blood Groups",
+          "linkedLessonIndices": [
+            8,
+            9
+          ],
+          "anchors": [
+            {
+              "id": "kt2_3_a1",
+              "title": "Case Study: William Harvey & the Circulation of the Blood (1628)",
+              "dateTag": "1628",
+              "lessonIndex": 8,
+              "recallPrompt": "How did William Harvey prove blood circulation in 1628, and why was its immediate practical impact limited?",
+              "facts": [
+                "Building on Fabricius's discovery of venous valves, William Harvey dissected cold-blooded frogs and reptiles to observe slow heartbeats and published De Motu Cordis in 1628.",
+                "Using mathematical blood-volume calculations (over 500 pints pumped hourly) and forearm ligature tests, Harvey proved the heart acts as a mechanical pump circulating blood one-way rather than the liver making fresh blood.",
+                "Conservative physicians mocked Harvey and universities delayed teaching circulation for nearly fifty years; Marcello Malpighi observed capillaries by microscope in 1661, yet doctors kept bloodletting."
+              ],
+              "examLens": {
+                "lensType": "Paper 1 Thematic Study",
+                "points": [
+                  {
+                    "label": "Q3 Comparison (4m)",
+                    "text": "Compare Harvey's 1628 mechanical pump and experimental ligature proof with Galen's ancient belief that the liver burned food into new blood."
+                  },
+                  {
+                    "label": "Q4 Explain Why (12m)",
+                    "text": "Explain how Padua training, royal patronage under James I and Charles I, mechanical water-pump analogies, and quantitative maths enabled Harvey's breakthrough."
+                  },
+                  {
+                    "label": "Q5/Q6 Verdict (16m + 4 SPaG)",
+                    "text": "Weigh Harvey's long-term physiological significance against the complete absence of immediate curative benefits or safe blood transfusions in the 1600s."
+                  }
+                ]
+              },
+              "questionSearchTerm": "harvey"
+            },
+            {
+              "id": "kt2_3_a2",
+              "title": "Case Study: Responses to the Great Plague in London (1665)",
+              "dateTag": "1665",
+              "lessonIndex": 9,
+              "recallPrompt": "How did treatments and civic public health orders during London's 1665 Great Plague show both continuity and change since 1348?",
+              "facts": [
+                "Breaking out in St Giles in spring 1665, bubonic plague killed over 100,000 Londoners recorded in weekly Bills of Mortality as Charles II and wealthy elites fled.",
+                "Citizens still blamed God's wrath, planetary alignments, and miasma, relying on herbal pomanders, plague water, tobacco smoke, and strapping plucked live pigeons onto buboes.",
+                "London's Lord Mayor enforced stricter civic rules than in 1348—forty-day red-cross house quarantines guarded by watchmen, Searchers of the Dead, street coal fires, and culling 200,000 cats and dogs."
+              ],
+              "examLens": {
+                "lensType": "Paper 1 Thematic Study",
+                "points": [
+                  {
+                    "label": "Q3 Comparison (4m)",
+                    "text": "Highlight stronger 1665 local government organisation—40-day watched quarantines, Bills of Mortality, and pest houses—compared with 1348–49."
+                  },
+                  {
+                    "label": "Q4 Explain Why (12m)",
+                    "text": "Explain why culling 200,000 cats and dogs and burning miasma fires failed in 1665 because flea-borne Yersinia pestis remained unknown."
+                  },
+                  {
+                    "label": "Q5/Q6 Verdict (16m + 4 SPaG)",
+                    "text": "Use the 1665 Great Plague to judge how much public health administration had improved since the Middle Ages despite unchanged medical cures."
+                  }
+                ]
+              },
+              "questionSearchTerm": "great plague"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kt3",
+      "number": 3,
+      "title": "Key Topic 3: c1700–c1900: Medicine in Eighteenth- and Nineteenth-Century Britain",
+      "dateFence": "c1700–c1900",
+      "outsideFenceWarning": "Keep strictly inside c1700–c1900: Ehrlich's Salvarsan 606 (1909), Fleming's penicillin (1928), and the NHS (1948) sit OUTSIDE nineteenth-century Britain.",
+      "subTopics": [
+        {
+          "id": "kt3_1",
+          "code": "3.1",
+          "title": "Ideas About the Cause of Disease: Pasteur & Koch (c1700–c1900)",
+          "dateFence": "c1700–c1900",
+          "outsideFenceTrap": "Outside c1700–c1900: Chemical Magic Bullets (1909) & Watson and Crick's DNA Model (1953)",
+          "linkedLessonIndices": [
+            10
+          ],
+          "anchors": [
+            {
+              "id": "kt3_1_a1",
+              "title": "Louis Pasteur's Germ Theory (1861) & British Reception",
+              "dateTag": "1861–1876",
+              "lessonIndex": 10,
+              "recallPrompt": "How did Louis Pasteur overturn spontaneous generation in 1861, and why did British doctors initially resist Germ Theory?",
+              "facts": [
+                "Until the 1860s British doctors blamed epidemics on foul miasma vapours and believed decaying matter created microbes through spontaneous generation rather than germs causing decay.",
+                "In 1861 French chemist Louis Pasteur published his Germ Theory, using boiled S-shaped swan-neck flasks to prove airborne microbes caused liquid fermentation and putrefaction.",
+                "Conservative British doctors led by Dr Charlton Bastian rejected Pasteur's findings until physicist John Tyndall's airborne-dust lectures and Joseph Lister's antiseptic results won acceptance in the 1870s."
+              ],
+              "examLens": {
+                "lensType": "Paper 1 Thematic Study",
+                "points": [
+                  {
+                    "label": "Q3 Comparison (4m)",
+                    "text": "Contrast pre-1861 miasma and spontaneous generation orthodoxy with Pasteur's experimental proof that living airborne microbes cause infection."
+                  },
+                  {
+                    "label": "Q4 Explain Why (12m)",
+                    "text": "Show how improved high-magnification glass microscopes, industrial brewing funding, and Pasteur's swan-neck experiment overturned centuries of humoral and miasma theory."
+                  },
+                  {
+                    "label": "Q5/Q6 Verdict (16m + 4 SPaG)",
+                    "text": "Assess whether Pasteur's 1861 Germ Theory was the single greatest turning point in understanding disease causation between c1250 and 1900."
+                  }
+                ]
+              },
+              "questionSearchTerm": "pasteur"
+            },
+            {
+              "id": "kt3_1_a2",
+              "title": "Robert Koch's Work on Microbes & Bacteriology (1876–83)",
+              "dateTag": "1876–1883",
+              "lessonIndex": 10,
+              "recallPrompt": "How did Robert Koch turn Germ Theory into exact laboratory science and identify human killer microbes?",
+              "facts": [
+                "After tracing the anthrax bacillus life cycle in 1876, German scientist Robert Koch grew pure bacterial colonies on solid agar jelly inside flat Petri dishes.",
+                "Koch used synthetic industrial dyes such as methyl violet to stain transparent microbes and photographed them through microscopes to provide indisputable visual proof.",
+                "Koch isolated the specific bacteria causing human tuberculosis in 1882 and comma-shaped cholera in 1883, inspiring a generation of European 'microbe hunters' and targeted vaccines."
+              ],
+              "examLens": {
+                "lensType": "Paper 1 Thematic Study",
+                "points": [
+                  {
+                    "label": "Q3 Comparison (4m)",
+                    "text": "Compare Sydenham's symptom-based disease classification (1676) with Koch's laboratory isolation of specific stained bacterial pathogens (1882–83)."
+                  },
+                  {
+                    "label": "Q4 Explain Why (12m)",
+                    "text": "Explain how agar culture plates, chemical aniline stains, German government funding, and Franco-German rivalry enabled Koch's breakthroughs."
+                  },
+                  {
+                    "label": "Q5/Q6 Verdict (16m + 4 SPaG)",
+                    "text": "Weigh Robert Koch's practical microbe-staining methods against Louis Pasteur's original 1861 breakthrough in advancing nineteenth-century medicine."
+                  }
+                ]
+              },
+              "questionSearchTerm": "koch"
+            }
+          ]
+        },
+        {
+          "id": "kt3_2",
+          "code": "3.2",
+          "title": "Approaches to Prevention, Hospital Care & Surgery (c1700–c1900)",
+          "dateFence": "1842–1900",
+          "outsideFenceTrap": "Outside c1700–c1900: Universal Free NHS Hospitals (1948) & Penicillin Antibiotics (1940s)",
+          "linkedLessonIndices": [
+            12,
+            13,
+            14
+          ],
+          "anchors": [
+            {
+              "id": "kt3_2_a1",
+              "title": "Florence Nightingale, Nursing & Pavilion Hospitals (1854–63)",
+              "dateTag": "1854–1863",
+              "lessonIndex": 12,
+              "recallPrompt": "How did Florence Nightingale transform military and civilian hospital care and nursing in Britain?",
+              "facts": [
+                "Arriving at filthy Scutari Barrack Hospital with thirty-eight nurses in November 1854 during the Crimean War, Nightingale enforced scrubbing, clean bedding, and drainage as mortality fell from 42 percent to 2 percent.",
+                "Publishing Notes on Nursing and Notes on Hospitals (1859) alongside coxcomb mortality charts, she championed cross-ventilated, detached pavilion wards with washable tiled surfaces.",
+                "Funded by the £44,000 public Nightingale Fund, she opened the Nightingale Training School for nurses at St Thomas' Hospital in 1860, turning nursing into a disciplined, respected profession."
+              ],
+              "examLens": {
+                "lensType": "Paper 1 Thematic Study",
+                "points": [
+                  {
+                    "label": "Q3 Comparison (4m)",
+                    "text": "Contrast dirty early-1800s voluntary wards and untrained nurses with clean, ventilated post-1860 pavilion hospitals staffed by St Thomas'-trained nurses."
+                  },
+                  {
+                    "label": "Q4 Explain Why (12m)",
+                    "text": "Explain how Crimean War newspaper outrage, Nightingale's statistical diagrams, and the £44,000 Nightingale Fund drove Victorian hospital reform."
+                  },
+                  {
+                    "label": "Q5/Q6 Verdict (16m + 4 SPaG)",
+                    "text": "Evaluate Nightingale's role alongside Lister's antisepsis and Simpson's anaesthetics in transforming nineteenth-century hospital survival."
+                  }
+                ]
+              },
+              "questionSearchTerm": "nightingale"
+            },
+            {
+              "id": "kt3_2_a2",
+              "title": "Anaesthetics & Antiseptics: Simpson, Lister & Aseptic Surgery (1847–1900)",
+              "dateTag": "1847–1900",
+              "lessonIndex": 13,
+              "recallPrompt": "How did James Simpson and Joseph Lister conquer surgical pain and infection between 1847 and 1900?",
+              "facts": [
+                "Replacing weak laughing gas and flammable ether, Edinburgh professor James Young Simpson discovered chloroform anaesthesia in November 1847, winning public acceptance after Queen Victoria used it in 1853.",
+                "Unconscious patients enabled longer internal operations that triggered a 'Black Period' of gangrene until Joseph Lister applied Pasteur's Germ Theory using carbolic acid spray from 1865, cutting his mortality from 46 percent to 15 percent.",
+                "Because caustic carbolic cracked surgeons' skin, hospitals transitioned by the 1890s to aseptic operating theatres using 140°C steam autoclaves, sterile rubber gloves, masks, and gowns."
+              ],
+              "examLens": {
+                "lensType": "Paper 1 Thematic Study",
+                "points": [
+                  {
+                    "label": "Q3 Comparison (4m)",
+                    "text": "Compare unanaesthetised, unsterilised 30-second amputations before 1847 with sterile, pain-free aseptic operating theatres by 1900."
+                  },
+                  {
+                    "label": "Q4 Explain Why (12m)",
+                    "text": "Show how Simpson's chloroform conquered pain while Pasteur's Germ Theory enabled Lister's carbolic antisepsis and 1890s aseptic steam sterilisation."
+                  },
+                  {
+                    "label": "Q5/Q6 Verdict (16m + 4 SPaG)",
+                    "text": "Assess why surgical opposition slowed Simpson and Lister initially before royal endorsement and falling sepsis rates transformed surgery."
+                  }
+                ]
+              },
+              "questionSearchTerm": "lister"
+            },
+            {
+              "id": "kt3_2_a3",
+              "title": "Public Health: From Laissez-Faire & 1848 Act to the 1875 Public Health Act",
+              "dateTag": "1842–1875",
+              "lessonIndex": 14,
+              "recallPrompt": "Why did the British government abandon laissez-faire to pass the compulsory 1875 Public Health Act?",
+              "facts": [
+                "Despite Edwin Chadwick's 1842 Sanitary Report linking urban filth to disease, laissez-faire resistance to local tax rates meant the 1848 Public Health Act remained permissive and optional.",
+                "London's sweltering 1858 Great Stink drove MPs to fund Sir Joseph Bazalgette's eighty-two miles of interceptor sewers (1859–65), eradicating cholera across the capital by 1866.",
+                "After the 1867 Reform Act gave working-class urban men the vote and Germ Theory proved bacterial contagion, Disraeli's compulsory 1875 Public Health Act mandated municipal sewers, clean water, and medical officers."
+              ],
+              "examLens": {
+                "lensType": "Paper 1 Thematic Study",
+                "points": [
+                  {
+                    "label": "Q3 Comparison (4m)",
+                    "text": "Contrast the optional, permissive 1848 Public Health Act with the compulsory municipal duties of the 1875 Public Health Act."
+                  },
+                  {
+                    "label": "Q4 Explain Why (12m)",
+                    "text": "Connect Snow's cholera evidence, the 1858 Great Stink, Pasteur's Germ Theory, and 1867 working-class enfranchisement to the end of laissez-faire."
+                  },
+                  {
+                    "label": "Q5/Q6 Verdict (16m + 4 SPaG)",
+                    "text": "Judge whether government action after 1858 did more to prevent epidemic deaths than individual medical discoveries before 1900."
+                  }
+                ]
+              },
+              "questionSearchTerm": "1875"
+            }
+          ]
+        },
+        {
+          "id": "kt3_3",
+          "code": "3.3",
+          "title": "Case Studies: Jenner's Vaccination (1796) & Snow's Cholera Pump (1854)",
+          "dateFence": "1796–1871",
+          "outsideFenceTrap": "Outside 1796/1854: Neither Jenner nor Snow Knew Germ Theory (Published by Pasteur in 1861)",
+          "linkedLessonIndices": [
+            11,
+            14
+          ],
+          "anchors": [
+            {
+              "id": "kt3_3_a1",
+              "title": "Case Study: Edward Jenner & the Development of Vaccination (1796–1871)",
+              "dateTag": "1796–1871",
+              "lessonIndex": 11,
+              "recallPrompt": "How did Edward Jenner discover smallpox vaccination in 1796, why did people oppose it, and how did Parliament enforce it?",
+              "facts": [
+                "Eighteenth-century variolation inoculation with live smallpox charged high Suttonian fees and risked fatal outbreaks until Gloucestershire doctor Edward Jenner vaccinated eight-year-old James Phipps with Sarah Nelmes's cowpox pus in May 1796.",
+                "Because Jenner could not explain biologically how cowpox worked, he faced Royal Society rejection, religious objections, angry inoculators, and James Gillray's 1802 cow-sprouting cartoons.",
+                "Parliament awarded Jenner £30,000 in grants, banned variolation while providing free infant vaccines in 1840, made infant vaccination compulsory in 1853, and appointed enforcement officers in 1871."
+              ],
+              "examLens": {
+                "lensType": "Paper 1 Thematic Study",
+                "points": [
+                  {
+                    "label": "Q3 Comparison (4m)",
+                    "text": "Compare Jenner's empirical one-off cowpox vaccine (1796) with Koch and Pasteur's laboratory-designed bacterial vaccines after 1880 and modern NHS mass immunisation."
+                  },
+                  {
+                    "label": "Q4 Explain Why (12m)",
+                    "text": "Explain why vaccination succeeded against smallpox through parliamentary compulsion (1853, 1871) yet could not be copied for other diseases before Germ Theory."
+                  },
+                  {
+                    "label": "Q5/Q6 Verdict (16m + 4 SPaG)",
+                    "text": "Weigh Jenner's individual empirical insight against nineteenth-century government legislation in eradicating epidemic smallpox across Britain."
+                  }
+                ]
+              },
+              "questionSearchTerm": "jenner"
+            },
+            {
+              "id": "kt3_3_a2",
+              "title": "Case Study: Combating Cholera in London & John Snow (1854)",
+              "dateTag": "August–September 1854",
+              "lessonIndex": 14,
+              "recallPrompt": "How did Dr John Snow investigate the 1854 Soho cholera outbreak, and why did authorities initially reject his proof?",
+              "facts": [
+                "When cholera killed over five hundred Soho residents within ten days in August 1854, Dr John Snow mapped every death on a street spot map clustering around the Broad Street water pump.",
+                "Noting beer-drinking brewery workers escaped infection, Snow persuaded parish vestrymen to remove the pump handle on 8 September 1854, halting the outbreak before an adjacent leaking cesspool was uncovered.",
+                "Snow's South London comparison showed Southwark and Vauxhall customers suffered eight times higher cholera mortality than clean Lambeth water users, yet miasma-believing officials resisted his theory until Koch isolated cholera in 1883."
+              ],
+              "examLens": {
+                "lensType": "Paper 1 Thematic Study",
+                "points": [
+                  {
+                    "label": "Q3 Comparison (4m)",
+                    "text": "Contrast miasma-driven street limewashing during early cholera outbreaks with Snow's epidemiological spot mapping and removal of the Broad Street pump handle."
+                  },
+                  {
+                    "label": "Q4 Explain Why (12m)",
+                    "text": "Explain why the General Board of Health rejected Snow's statistical waterborne proof in 1854–55 because he lacked microscopic proof of the cholera bacterium."
+                  },
+                  {
+                    "label": "Q5/Q6 Verdict (16m + 4 SPaG)",
+                    "text": "Assess the significance of John Snow's 1854 Soho investigation alongside Bazalgette's sewers and the 1875 Public Health Act."
+                  }
+                ]
+              },
+              "questionSearchTerm": "broad street"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kt4",
+      "number": 4,
+      "title": "Key Topic 4: c1900–present: Medicine in Modern Britain",
+      "dateFence": "c1900–present",
+      "outsideFenceWarning": "Keep strictly inside c1900–present for Thematic Section B: Western Front trench terrain and evacuation chains are tested in Section A unless linked to modern blood, X-rays, or surgery.",
+      "subTopics": [
+        {
+          "id": "kt4_1",
+          "code": "4.1",
+          "title": "Ideas About the Cause of Disease & Diagnosis (c1900–present)",
+          "dateFence": "c1900–present",
+          "outsideFenceTrap": "Watch the 'Treatment Gap': DNA Discovery (1953) Revolutionised Genetic Screening, Not Immediate Gene Cures",
+          "linkedLessonIndices": [
+            15,
+            16
+          ],
+          "anchors": [
+            {
+              "id": "kt4_1_a1",
+              "title": "Genetics, DNA Structure (1953) & the Human Genome Project (1990–2003)",
+              "dateTag": "1951–2003",
+              "lessonIndex": 15,
+              "recallPrompt": "How was the structure of DNA discovered in 1953, and how has genomic science changed modern understanding of disease?",
+              "facts": [
+                "At King's College London in May 1952, Rosalind Franklin and Raymond Gosling captured X-ray crystallography Photograph 51, enabling Cambridge scientists James Watson and Francis Crick to build the double-helix DNA model in 1953.",
+                "Between 1990 and 2003, the international Human Genome Project mapped three billion base pairs across 25,000 human genes, pinpointing over four thousand faulty hereditary disease genes.",
+                "Understanding genetics proved that conditions like cystic fibrosis, sickle cell anaemia, and BRCA1/2 hereditary breast cancers are inherited rather than microbial, enabling preventative screening despite a persistent gene-therapy treatment gap."
+              ],
+              "examLens": {
+                "lensType": "Paper 1 Thematic Study",
+                "points": [
+                  {
+                    "label": "Q3 Comparison (4m)",
+                    "text": "Compare nineteenth-century Germ Theory identifying external infectious microbes with post-1953 genetics identifying internal hereditary DNA mutations."
+                  },
+                  {
+                    "label": "Q4 Explain Why (12m)",
+                    "text": "Show how X-ray crystallography, high-speed computing, and international teamwork in the Human Genome Project transformed modern pathology."
+                  },
+                  {
+                    "label": "Q5/Q6 Verdict (16m + 4 SPaG)",
+                    "text": "Evaluate why discovering DNA revolutionised disease causation and preventative screening far more rapidly than curative bedside treatment."
+                  }
+                ]
+              },
+              "questionSearchTerm": "genome"
+            },
+            {
+              "id": "kt4_1_a2",
+              "title": "Lifestyle Factors & High-Tech Diagnosis: Blood Tests, Scans & Monitors",
+              "dateTag": "1895–present",
+              "lessonIndex": 16,
+              "recallPrompt": "How have lifestyle epidemiology and diagnostic technologies transformed identifying illness since 1900?",
+              "facts": [
+                "As clean water, vaccines, and antibiotics curbed infectious fevers and pushed life expectancy past seventy-five, medical research linked smoking, diet, alcohol, and inactivity to cancer, stroke, and heart disease.",
+                "The wider availability of routine blood tests, ABO blood typing, centrifuges, tissue biopsies, and electronic blood-sugar and heart monitors enabled doctors to diagnose internal disorders without exploratory surgery.",
+                "Building on Röntgen's X-rays (1895) and 1950s fibre-optic endoscopes, Godfrey Hounsfield invented the 3D EMI CT scanner (1971) followed in the 1980s by radiation-free MRI soft-tissue imaging."
+              ],
+              "examLens": {
+                "lensType": "Paper 1 Thematic Study",
+                "points": [
+                  {
+                    "label": "Q3 Comparison (4m)",
+                    "text": "Contrast medieval uroscopy flasks or Sydenham's visual bedside checks with non-invasive 3D CT/MRI scans, blood pathology, and fibre-optic endoscopes."
+                  },
+                  {
+                    "label": "Q4 Explain Why (12m)",
+                    "text": "Explain how computing power, physics, and optical engineering enabled accurate early internal diagnosis across twentieth-century hospitals."
+                  },
+                  {
+                    "label": "Q5/Q6 Verdict (16m + 4 SPaG)",
+                    "text": "Weigh science and diagnostic technology against government funding and individual breakthroughs in transforming modern clinical care."
+                  }
+                ]
+              },
+              "questionSearchTerm": "scans"
+            }
+          ]
+        },
+        {
+          "id": "kt4_2",
+          "code": "4.2",
+          "title": "Approaches to Prevention, Treatment & the NHS (c1900–present)",
+          "dateFence": "1909–present",
+          "outsideFenceTrap": "Outside Universal NHS (1948): The 1911 National Insurance Act Covered Insured Male Workers Only",
+          "linkedLessonIndices": [
+            16,
+            17
+          ],
+          "anchors": [
+            {
+              "id": "kt4_2_a1",
+              "title": "Magic Bullets, Antibiotics & High-Tech Hospital Surgery (1909–present)",
+              "dateTag": "1909–present",
+              "lessonIndex": 17,
+              "recallPrompt": "How did chemical 'magic bullets' and high-tech surgical engineering transform treatment after 1900?",
+              "facts": [
+                "In 1909 Paul Ehrlich and Sahachiro Hata developed Salvarsan 606 to destroy syphilis bacteria without harming host tissue, creating the world's first synthetic chemical 'magic bullet'.",
+                "In 1932–35 Gerhard Domagk proved red Prontosil dye cured streptococcal blood poisoning, leading researchers to isolate sulphonamides that slashed maternal puerperal fever and pneumonia deaths.",
+                "Post-war hospitals pioneered high-tech engineering including Sir John Charnley's hip replacements (1962), mechanical kidney dialysis, organ transplants, robotic radiotherapy, and minimally invasive keyhole surgery."
+              ],
+              "examLens": {
+                "lensType": "Paper 1 Thematic Study",
+                "points": [
+                  {
+                    "label": "Q3 Comparison (4m)",
+                    "text": "Compare ineffective seventeenth-century herbal remedies with targeted twentieth-century synthetic magic bullets (Salvarsan 606, Prontosil) and antibiotics."
+                  },
+                  {
+                    "label": "Q4 Explain Why (12m)",
+                    "text": "Link Koch's microbe-staining dyes directly to Ehrlich's Salvarsan 606, Domagk's Prontosil, and the rise of modern pharmaceutical research."
+                  },
+                  {
+                    "label": "Q5/Q6 Verdict (16m + 4 SPaG)",
+                    "text": "Assess whether chemical magic bullets and antibiotics saved more twentieth-century lives than high-tech hospital surgery."
+                  }
+                ]
+              },
+              "questionSearchTerm": "salvarsan"
+            },
+            {
+              "id": "kt4_2_a2",
+              "title": "Launch of the NHS (1948), Mass Vaccinations & Lifestyle Campaigns",
+              "dateTag": "1942–present",
+              "lessonIndex": 17,
+              "recallPrompt": "How did the 1948 NHS widen access to care, and how has modern government tackled epidemic and lifestyle prevention?",
+              "facts": [
+                "Before 1948 the 1911 National Insurance Act excluded most women, children, and elderly citizens until William Beveridge's 1942 report inspired Minister of Health Aneurin Bevan to launch the tax-funded NHS on 5 July 1948.",
+                "Overcoming British Medical Association opposition by granting GP capitation fees and private hospital pay beds, the NHS delivered universal free GP, hospital, maternity, and ambulance care.",
+                "State prevention expanded from compulsory national vaccination campaigns (diphtheria from 1942, polio, MMR) to statutory laws and education including 1983 seatbelts, Change4Life, the sugar levy, and the 2007 indoor smoking ban."
+              ],
+              "examLens": {
+                "lensType": "Paper 1 Thematic Study",
+                "points": [
+                  {
+                    "label": "Q3 Comparison (4m)",
+                    "text": "Compare Victorian sanitary engineering under the 1875 Public Health Act with post-1948 NHS universal access, mass vaccinations, and lifestyle legislation."
+                  },
+                  {
+                    "label": "Q4 Explain Why (12m)",
+                    "text": "Explain how wartime solidarity, the 1942 Beveridge Report, and Bevan's compromise with BMA consultants enabled universal healthcare in 1948."
+                  },
+                  {
+                    "label": "Q5/Q6 Verdict (16m + 4 SPaG)",
+                    "text": "Evaluate how far government intervention through the NHS and preventative campaigns has been the primary driver of improved health since 1900."
+                  }
+                ]
+              },
+              "questionSearchTerm": "bevan"
+            }
+          ]
+        },
+        {
+          "id": "kt4_3",
+          "code": "4.3",
+          "title": "Case Studies: Penicillin (1928–45) & Lung Cancer in the 21st Century",
+          "dateFence": "1928–present",
+          "outsideFenceTrap": "Watch Penicillin Roles: Fleming Observed Mould (1928), Florey & Chain Purified & Mass-Produced It (1938–44)",
+          "linkedLessonIndices": [
+            18,
+            19
+          ],
+          "anchors": [
+            {
+              "id": "kt4_3_a1",
+              "title": "Case Study: Fleming, Florey & Chain's Development of Penicillin (1928–45)",
+              "dateTag": "1928–1945",
+              "lessonIndex": 18,
+              "recallPrompt": "Why did turning Alexander Fleming's 1928 mould observation into 2.3 million D-Day antibiotic doses require Florey, Chain, and US wartime industry?",
+              "facts": [
+                "In September 1928 Alexander Fleming noticed Penicillium notatum mould dissolving staphylococci on an unwashed St Mary's petri dish, publishing in 1929 without purifying stable clinical penicillin.",
+                "From 1938 at Oxford, Howard Florey, Ernst Chain, and Norman Heatley purified freeze-dried penicillin, curing four infected mice in May 1940 before policeman Albert Alexander died in February 1941 when tiny stocks ran out.",
+                "Securing US government backing at Peoria in July 1941, pharmaceutical deep-fermentation tanks produced 2.3 million penicillin doses for D-Day (June 1944), though modern overuse has bred resistant MRSA superbugs."
+              ],
+              "examLens": {
+                "lensType": "Paper 1 Thematic Study",
+                "points": [
+                  {
+                    "label": "Q3 Comparison (4m)",
+                    "text": "Compare Ehrlich's systematic screening of 606 arsenic compounds (1909) with Fleming's chance observation and Florey and Chain's industrial mass production."
+                  },
+                  {
+                    "label": "Q4 Explain Why (12m)",
+                    "text": "Connect chance, Oxford scientific teamwork, Norman Heatley's extraction apparatus, Second World War urgency, and US deep-tank funding."
+                  },
+                  {
+                    "label": "Q5/Q6 Verdict (16m + 4 SPaG)",
+                    "text": "Judge whether government wartime funding and technology mattered more than individual genius in making penicillin a global lifesaver."
+                  }
+                ]
+              },
+              "questionSearchTerm": "penicillin"
+            },
+            {
+              "id": "kt4_3_a2",
+              "title": "Case Study: The Fight Against Lung Cancer in the Twenty-First Century",
+              "dateTag": "1950–present",
+              "lessonIndex": 19,
+              "recallPrompt": "How do twenty-first-century NHS technology and UK government laws combine to diagnose, treat, and prevent lung cancer?",
+              "facts": [
+                "Because internal lungs have few pain receptors and tumours grow silently until Stage 3 or 4, clinicians combine low-dose 3D CT scans, radioactive-glucose PET-CT scans, and fibre-optic bronchoscopy biopsies.",
+                "Modern thoracic treatment uses minimally invasive VATS keyhole lobectomy, robotic CyberKnife pinpoint radiotherapy tracking breathing, tumour DNA sequencing, and targeted immunotherapy drugs.",
+                "Recognising prevention saves more lives than late oncology, Parliament enacted the 2007 indoor smoking ban, 2016 standardised plain tobacco packaging with graphic warnings, and age-raising tobacco controls."
+              ],
+              "examLens": {
+                "lensType": "Paper 1 Thematic Study",
+                "points": [
+                  {
+                    "label": "Q3 Comparison (4m)",
+                    "text": "Contrast nineteenth-century infectious cholera control via clean sewers with twenty-first-century lung cancer prevention via smoking bans and plain packaging."
+                  },
+                  {
+                    "label": "Q4 Explain Why (12m)",
+                    "text": "Explain why asymptomatic early lung tumour growth makes CT/PET-CT screening, genetic pharmacotherapy, and anti-smoking laws essential together."
+                  },
+                  {
+                    "label": "Q5/Q6 Verdict (16m + 4 SPaG)",
+                    "text": "Use the lung cancer case study to assess whether preventative government legislation outperforms high-tech hospital treatment in modern Britain."
+                  }
+                ]
+              },
+              "questionSearchTerm": "lung cancer"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kt5",
+      "number": 5,
+      "title": "Key Topic 5: The British Sector of the Western Front, 1914–18",
+      "dateFence": "1914–1918",
+      "outsideFenceWarning": "Keep strictly inside 1914–18 on the British Western Front (Flanders & northern France): Fleming's 1928 penicillin and post-1948 NHS hospitals sit OUTSIDE Section A.",
+      "subTopics": [
+        {
+          "id": "kt5_1",
+          "code": "5.1",
+          "title": "Context of the British Sector: Battles, Trench System & Terrain (1914–18)",
+          "dateFence": "1914–1918",
+          "outsideFenceTrap": "Outside 1914–18 Western Front: Crimean War Scutari Wards (1854) & WWII Penicillin (1944)",
+          "linkedLessonIndices": [
+            20
+          ],
+          "anchors": [
+            {
+              "id": "kt5_1_a1",
+              "title": "Theatre of War: Ypres Salient, the Somme, Arras & Cambrai (1914–18)",
+              "dateTag": "1914–1918",
+              "lessonIndex": 20,
+              "recallPrompt": "What distinct medical and terrain challenges arose at Ypres, the Somme, Arras, and Cambrai between 1914 and 1918?",
+              "facts": [
+                "In western Belgium, the exposed Ypres Salient left British trenches overlooked on three sides by German ridges, featuring Hill 60 mine warfare and deep Passchendaele liquid clay mud in 1917.",
+                "On 1 July 1916 the opening day of the Battle of the Somme inflicted 57,470 British casualties, completely overwhelming stretcher bearers, dressing stations, and ambulance trains.",
+                "At Arras (April 1917) tunnellers built a 700-bed underground hospital in Thompson's Cave with electric lighting and piped water, while Cambrai (November 1917) deployed over 400 tanks alongside the first stored blood depot."
+              ],
+              "examLens": {
+                "lensType": "Paper 1 Historic Environment",
+                "points": [
+                  {
+                    "label": "Q1 Feature (2m)",
+                    "text": "Describe Thompson's Cave underground hospital at Arras: 700 beds carved into chalk 800 yards from the front with electric light and operating theatres."
+                  },
+                  {
+                    "label": "Q2a Source Utility (8m)",
+                    "text": "Test casualty accounts against battle context—such as 57,470 first-day casualties on the Somme or October 1917 Passchendaele mud at Ypres."
+                  },
+                  {
+                    "label": "Q2b Follow-Up Archive (4m)",
+                    "text": "Pair a specific Casualty Clearing Station war diary from Ypres or the Somme with a focused question on daily casualty intake during offensives."
+                  }
+                ]
+              },
+              "questionSearchTerm": "arras"
+            },
+            {
+              "id": "kt5_1_a2",
+              "title": "Trench System Organisation & Transport Bottlenecks (1914–18)",
+              "dateTag": "1914–1918",
+              "lessonIndex": 20,
+              "recallPrompt": "How was the British trench network organised, and why did terrain and shattered roads delay casualty evacuation?",
+              "facts": [
+                "British sectors comprised parallel frontline, support, and reserve trenches dug in zig-zag firebays and right-angled traverses to contain shell blasts, fitted with sandbagged parapets, firesteps, and wooden duckboards.",
+                "Narrow zig-zag communication trenches linked the three lines, becoming choked with incoming troops, rations, and ammunition while stretcher teams struggled rearward.",
+                "Shell-cratered roads, wrecked transport and communications infrastructure, and waist-deep Flanders mud meant four-man stretcher squads frequently needed four to six hours to carry one casualty several hundred yards."
+              ],
+              "examLens": {
+                "lensType": "Paper 1 Historic Environment",
+                "points": [
+                  {
+                    "label": "Q1 Feature (2m)",
+                    "text": "Describe zig-zag communication trenches linking frontline and support lines, which frequently became waterlogged bottlenecks for stretcher bearers."
+                  },
+                  {
+                    "label": "Q2a Source Utility (8m)",
+                    "text": "Evaluate aerial reconnaissance photographs or Field Ambulance diaries showing obliterated trenches and duckboard tracks slowing rescue into the 24-hour infection window."
+                  },
+                  {
+                    "label": "Q2b Follow-Up Archive (4m)",
+                    "text": "Select an RAMC Field Ambulance War Diary to investigate average stretcher transit times from frontline firebays to Regimental Aid Posts."
+                  }
+                ]
+              },
+              "questionSearchTerm": "trenches"
+            }
+          ]
+        },
+        {
+          "id": "kt5_2",
+          "code": "5.2",
+          "title": "Conditions Requiring Medical Treatment: Illnesses, Wounds & Gas (1914–18)",
+          "dateFence": "1914–1918",
+          "outsideFenceTrap": "Outside 1914–18: Antibiotics Did Not Exist — Gas Gangrene Required Radical Surgery & Carrel-Dakin Tubes",
+          "linkedLessonIndices": [
+            21,
+            22
+          ],
+          "anchors": [
+            {
+              "id": "kt5_2_a1",
+              "title": "Trench Environment Illnesses: Trench Foot, Trench Fever, Dysentery & Shell Shock",
+              "dateTag": "1914–1918",
+              "lessonIndex": 21,
+              "recallPrompt": "What caused trench foot, trench fever, dysentery, and shell shock, and how did the British Army prevent or treat them?",
+              "facts": [
+                "Standing in freezing waterlogged mud with tight puttees hospitalised over 20,000 men with gangrenous trench foot in winter 1914–15, prompting whale-oil rubs, dry socks, duckboards, and daily officer inspections.",
+                "Body lice in uniform seams spread trench fever (Pyrexia of Unknown Origin), incapacitating 15 percent of frontline troops and prompting mobile steam delousing baths, while chlorinated water and lime latrines curbed dysentery.",
+                "Over 80,000 British troops were diagnosed with shell shock (classified NYDN: Not Yet Diagnosed, Nervous), suffering tremors, paralysis, and mutism treated at specialist hospitals like Craiglockhart."
+              ],
+              "examLens": {
+                "lensType": "Paper 1 Historic Environment",
+                "points": [
+                  {
+                    "label": "Q1 Feature (2m)",
+                    "text": "Identify battalion trench-foot prevention: daily whale-oil rubbing, spare dry socks, and partner foot inspections enforced by officers."
+                  },
+                  {
+                    "label": "Q2a Source Utility (8m)",
+                    "text": "Cross-reference battalion standing orders or War Office trench fever reports (1918) against frontline loss of rifle strength."
+                  },
+                  {
+                    "label": "Q2b Follow-Up Archive (4m)",
+                    "text": "Query Army Medical Statistical Returns for a named division to measure whether whale-oil orders reduced trench foot admissions between 1915 and 1917."
+                  }
+                ]
+              },
+              "questionSearchTerm": "trench foot"
+            },
+            {
+              "id": "kt5_2_a2",
+              "title": "Wounds from Rifles & Explosives, Gas Gangrene, Brodie Helmets & Gas Attacks",
+              "dateTag": "1914–1918",
+              "lessonIndex": 22,
+              "recallPrompt": "Why did artillery shrapnel and Flanders soil trigger lethal wound infections, and how did steel helmets and respirators counter trauma and gas?",
+              "facts": [
+                "High-explosive shells and shrapnel caused roughly 58 percent of Western Front wounds (compared with 39 percent from bullets), shattering bones and severing major arteries.",
+                "Jagged shrapnel drove heavily manured Flanders soil carrying anaerobic Clostridium perfringens and tetanus spores deep into torn muscle, causing fatal gas gangrene within hours.",
+                "Issued from late 1915 after increased numbers of head injuries, pressed manganese-steel Brodie helmets cut fatal cranial shrapnel wounds by 80 percent, while the 1916 Small Box Respirator countered German chlorine (April 1915), phosgene (December 1915), and blistering mustard gas (July 1917)."
+              ],
+              "examLens": {
+                "lensType": "Paper 1 Historic Environment",
+                "points": [
+                  {
+                    "label": "Q1 Feature (2m)",
+                    "text": "Describe gas gangrene: anaerobic Clostridium perfringens bacteria from manured Flanders soil carried deep into wounds on dirty uniform cloth."
+                  },
+                  {
+                    "label": "Q2a Source Utility (8m)",
+                    "text": "Assess RAMC surgical reports or photographs of PH gas helmets and Small Box Respirators against gas causing under 3 percent of British deaths."
+                  },
+                  {
+                    "label": "Q2b Follow-Up Archive (4m)",
+                    "text": "Inspect hospital admission registers before and after spring 1916 to verify the impact of Brodie steel helmets on penetrating skull wounds."
+                  }
+                ]
+              },
+              "questionSearchTerm": "shrapnel"
+            }
+          ]
+        },
+        {
+          "id": "kt5_3",
+          "code": "5.3",
+          "title": "Medical Treatment: RAMC, Nurses & the Chain of Evacuation (1914–18)",
+          "dateFence": "1914–1918",
+          "outsideFenceTrap": "Strict Sequence: Stretcher Bearers → RAP → ADS (Field Ambulance) → CCS → Base Hospital",
+          "linkedLessonIndices": [
+            23
+          ],
+          "anchors": [
+            {
+              "id": "kt5_3_a1",
+              "title": "Work of the RAMC, Nurses (QAIMNS, FANY, VAD) & Evacuation Transport",
+              "dateTag": "1914–1918",
+              "lessonIndex": 23,
+              "recallPrompt": "What roles did RAMC personnel, volunteer nurses, motor ambulances, trains, and canal barges perform across the Western Front?",
+              "facts": [
+                "Sixteen battalion stretcher bearers worked in four-man squads retrieving casualties under fire, passing patients to Royal Army Medical Corps (RAMC) doctors, orderlies, and trained QAIMNS military nurses.",
+                "Volunteer women of the First Aid Nursing Yeomanry (FANY) and Voluntary Aid Detachments (VAD) drove frontline motor ambulances, scrubbed wards, ran mobile bath convoys, and staffed base hospitals.",
+                "Motor ambulances supplemented jolting horse-drawn wagons from 1915, linking to heated ambulance trains, smooth canal barges for severe head or abdominal wounds, and 'Blighty' hospital ships."
+              ],
+              "examLens": {
+                "lensType": "Paper 1 Historic Environment",
+                "points": [
+                  {
+                    "label": "Q1 Feature (2m)",
+                    "text": "Describe FANY volunteers driving motor ambulance convoys between railheads and coastal Base Hospitals and disinfecting casualty stations."
+                  },
+                  {
+                    "label": "Q2a Source Utility (8m)",
+                    "text": "Weigh personal memoirs of FANY ambulance drivers or VAD nurses for frontline detail while noting localized sector perspective."
+                  },
+                  {
+                    "label": "Q2b Follow-Up Archive (4m)",
+                    "text": "Consult War Office RAMC Transport Logs to establish how motor ambulances and canal barges reduced mortality compared with horse-drawn wagons."
+                  }
+                ]
+              },
+              "questionSearchTerm": "evacuation"
+            },
+            {
+              "id": "kt5_3_a2",
+              "title": "Stages of the Chain of Evacuation: RAP, Dressing Stations, CCS & Base Hospitals",
+              "dateTag": "1914–1918",
+              "lessonIndex": 23,
+              "recallPrompt": "What specific treatment occurred at each of the four main medical stages along the Chain of Evacuation?",
+              "facts": [
+                "Located roughly 200 yards behind the frontline in a dugout or cellar, the Regimental Aid Post (RAP) applied field dressings, tourniquets, splints, and morphine without performing surgery.",
+                "Half a mile back, Field Ambulance Advanced and Main Dressing Stations (ADS) triaged casualties in tents or huts, treated shock, and injected preventative anti-tetanus serum.",
+                "Seven to twelve miles back near railways, Casualty Clearing Stations (CCS) used three-way triage to perform life-saving surgery within the 24-hour infection window before evacuation to coastal Base Hospitals at Boulogne or Rouen."
+              ],
+              "examLens": {
+                "lensType": "Paper 1 Historic Environment",
+                "points": [
+                  {
+                    "label": "Q1 Feature (2m)",
+                    "text": "Describe Casualty Clearing Station triage: sorting incoming wounded into walking wounded, urgent surgical cases, and dying men given morphine."
+                  },
+                  {
+                    "label": "Q2a Source Utility (8m)",
+                    "text": "Evaluate CCS nursing sisters' diaries (such as Remy Siding near Poperinghe) showing round-the-clock emergency abdominal and limb operations."
+                  },
+                  {
+                    "label": "Q2b Follow-Up Archive (4m)",
+                    "text": "Select CCS Surgical Operating Books from a named sector to check survival rates for abdominal wounds operated on within twenty-four hours."
+                  }
+                ]
+              },
+              "questionSearchTerm": "clearing station"
+            }
+          ]
+        },
+        {
+          "id": "kt5_4",
+          "code": "5.4",
+          "title": "Early 20th-Century Context, Surgical Innovations & Source Enquiries (1914–18)",
+          "dateFence": "1895–1918",
+          "outsideFenceTrap": "Watch Blood Storage Limits: Citrate-Glucose Kept Blood Safe Up to 4 Weeks (No Freeze-Dried Plasma Yet)",
+          "linkedLessonIndices": [
+            23,
+            24,
+            25
+          ],
+          "anchors": [
+            {
+              "id": "kt5_4_a1",
+              "title": "Pre-1914 Context & Wound Innovations: Debridement, Carrel-Dakin & Thomas Splint",
+              "dateTag": "1895–1918",
+              "lessonIndex": 24,
+              "recallPrompt": "How did pre-war science combine with debridement, Carrel-Dakin irrigation, the Thomas splint, and mobile X-rays to save lives?",
+              "facts": [
+                "Pre-war aseptic surgery, Wilhelm Röntgen's X-rays (1895), and Karl Landsteiner's ABO blood groups (1901) gave wartime surgeons vital foundations, though surface carbolic acid failed in deep mud wounds.",
+                "Surgeons pioneered new techniques in the treatment of wounds and infection, adopting radical wound debridement (excising dead muscle and cloth before delayed closure) alongside Alexis Carrel and Henry Dakin's 1915 perforated-tube sodium hypochlorite flushing.",
+                "Mandated in December 1915, the traction Thomas splint raised compound femur fracture survival from 20 percent to 82 percent, while mobile X-ray units located metal shrapnel despite overheating tubes and invisible cloth."
+              ],
+              "examLens": {
+                "lensType": "Paper 1 Historic Environment",
+                "points": [
+                  {
+                    "label": "Q1 Feature (2m)",
+                    "text": "Describe the Thomas splint: a metal traction frame holding broken thigh bones rigid in transit, raising femur survival from 20 percent to 82 percent."
+                  },
+                  {
+                    "label": "Q2a Source Utility (8m)",
+                    "text": "Evaluate Sir Robert Jones's orthopaedic reports or Carrel-Dakin medical papers alongside mobile X-ray limits (fragile overheating glass tubes, blind to cloth)."
+                  },
+                  {
+                    "label": "Q2b Follow-Up Archive (4m)",
+                    "text": "Pair CCS Radiological Logbooks with surgical records to investigate how pre-operative X-ray location reduced post-operative gas gangrene amputations."
+                  }
+                ]
+              },
+              "questionSearchTerm": "thomas splint"
+            },
+            {
+              "id": "kt5_4_a2",
+              "title": "Cambrai Blood Bank (1917), Cushing's Brain Surgery & Gillies's Plastic Surgery",
+              "dateTag": "1915–1918",
+              "lessonIndex": 25,
+              "recallPrompt": "How did blood storage at Cambrai, Harvey Cushing's neurosurgery, and Harold Gillies's skin grafts advance specialist surgery?",
+              "facts": [
+                "In 1915 Richard Lewisohn proved 0.2 percent sodium citrate prevented blood clotting outside the body, and in 1916 Peyton Rous and Joseph Turner added refrigerated citrate-glucose to store blood for four weeks.",
+                "Ahead of the Battle of Cambrai in November 1917, Captain Oswald Robertson packed twenty-two bottles of universal Group O blood in iced ammunition boxes, resuscitating eleven of twenty critically shocked casualties.",
+                "Harvey Cushing used local anaesthetic and surgical electromagnets to lower brain-wound mortality from 54 percent to 29 percent, while Harold Gillies pioneered tubed pedicle skin grafts across 11,000 facial operations at Queen's Hospital, Sidcup."
+              ],
+              "examLens": {
+                "lensType": "Paper 1 Historic Environment",
+                "points": [
+                  {
+                    "label": "Q1 Feature (2m)",
+                    "text": "Describe Oswald Robertson's November 1917 Cambrai blood depot: universal Group O blood preserved with citrate-glucose inside iced ammunition boxes."
+                  },
+                  {
+                    "label": "Q2a Source Utility (8m)",
+                    "text": "Test Robertson's 1917 Cambrai report, Cushing's CCS 46 diary, or Gillies's Sidcup case notes against breakthrough survival statistics."
+                  },
+                  {
+                    "label": "Q2b Follow-Up Archive (4m)",
+                    "text": "Examine Queen's Hospital Sidcup patient case files and photographs to assess infection rates and functional recovery from tubed pedicle grafts."
+                  }
+                ]
+              },
+              "questionSearchTerm": "cambrai"
+            },
+            {
+              "id": "kt5_4_a3",
+              "title": "Selecting & Evaluating National and Local Sources for Western Front Enquiries",
+              "dateTag": "1914–1918",
+              "lessonIndex": 23,
+              "recallPrompt": "How do historians distinguish national and local Western Front sources and construct top-band Q2a and Q2b enquiry answers?",
+              "facts": [
+                "National sources include War Office medical statistics, government committee reports, surgical articles in The Lancet or British Medical Journal, and censored national newspapers.",
+                "Local frontline sources include RAMC Field Ambulance war diaries, Casualty Clearing Station admission and operating books, personal diaries of doctors and FANY drivers, and official photographs.",
+                "Strong enquiries cross-reference source content against provenance, wartime censorship or clinical purpose, and sector typicality, then nominate a specific archive record to answer a targeted medical question."
+              ],
+              "examLens": {
+                "lensType": "Paper 1 Historic Environment",
+                "points": [
+                  {
+                    "label": "Q1 Feature (2m)",
+                    "text": "Identify RAMC Field Ambulance War Diaries: daily local military logs recording casualty numbers, weather, shelling, and evacuation delays."
+                  },
+                  {
+                    "label": "Q2a Source Utility (8m)",
+                    "text": "Judge both Sources A and B on content, provenance/purpose (such as morale censorship vs clinical candour in The Lancet), and own knowledge."
+                  },
+                  {
+                    "label": "Q2b Follow-Up Archive (4m)",
+                    "text": "Match all four steps: pick a specific detail, ask a precise medical enquiry question, name an exact RAMC/hospital record, and explain how it answers."
+                  }
+                ]
+              },
+              "questionSearchTerm": "ramc"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

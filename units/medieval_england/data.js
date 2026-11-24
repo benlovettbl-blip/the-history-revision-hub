@@ -1641,17 +1641,17 @@ export default {
       "quiz": [
         {
           "stage": 1,
-          "question": "On what date did King Edward the Confessor die without leaving an heir to the English throne?",
-          "q": "On what date did King Edward the Confessor die without leaving an heir to the English throne?",
+          "question": "Why did the death of King Edward the Confessor in January 1066 plunge England into a dangerous succession crisis?",
+          "q": "Why did the death of King Edward the Confessor in January 1066 plunge England into a dangerous succession crisis?",
           "options": [
-            "14 October 1066",
-            "5 January 1066",
-            "25 September 1066",
-            "25 December 1066"
+            "He died in battle against Duke William of Normandy",
+            "He died childless with no direct heir, leaving rival claimants to fight over the throne",
+            "He had abolished the Witan and left no council to choose a new king",
+            "He had surrendered England to the Viking king of Norway before his death"
           ],
-          "answer": "5 January 1066",
-          "a": "5 January 1066",
-          "explanation": "Edward the Confessor died childless on 5 January 1066 after reigning for twenty-four years."
+          "answer": "He died childless with no direct heir, leaving rival claimants to fight over the throne",
+          "a": "He died childless with no direct heir, leaving rival claimants to fight over the throne",
+          "explanation": "Because Edward the Confessor died childless, the Witan's election of Harold Godwinson was immediately challenged by foreign rivals Duke William and Harald Hardrada."
         },
         {
           "stage": 1,
@@ -1823,17 +1823,17 @@ export default {
         },
         {
           "stage": 4,
-          "question": "On what date did King Harold defeat the Vikings at the Battle of Stamford Bridge?",
-          "q": "On what date did King Harold defeat the Vikings at the Battle of Stamford Bridge?",
+          "question": "How did fighting the Battle of Stamford Bridge weaken King Harold's army before the Battle of Hastings?",
+          "q": "How did fighting the Battle of Stamford Bridge weaken King Harold's army before the Battle of Hastings?",
           "options": [
-            "25 September 1066",
-            "14 October 1066",
-            "5 January 1066",
-            "20 September 1066"
+            "Harold surrendered his southern navy to Harald Hardrada's surviving longships",
+            "Harold signed a truce that allowed Norman cavalry to join his shield wall",
+            "Harold had to force-march his exhausted troops 250 miles back south without resting them in London",
+            "Harold lost all of his elite housecarls to Viking archers in Yorkshire"
           ],
-          "answer": "25 September 1066",
-          "a": "25 September 1066",
-          "explanation": "King Harold surprised and crushed the Viking invaders at Stamford Bridge on 25 September 1066."
+          "answer": "Harold had to force-march his exhausted troops 250 miles back south without resting them in London",
+          "a": "Harold had to force-march his exhausted troops 250 miles back south without resting them in London",
+          "explanation": "Two days after crushing the Vikings at Stamford Bridge, William landed at Pevensey Bay, forcing Harold to march his weary men 250 miles south straight into battle at Hastings."
         },
         {
           "stage": 4,
@@ -3423,17 +3423,17 @@ export default {
       "quiz": [
         {
           "stage": 1,
-          "question": "On what date was William the Conqueror crowned King of England in Westminster Abbey?",
-          "q": "On what date was William the Conqueror crowned King of England in Westminster Abbey?",
+          "question": "Why did William the Conqueror launch an immediate blitz of over 500 Motte and Bailey castles after his coronation?",
+          "q": "Why did William the Conqueror launch an immediate blitz of over 500 Motte and Bailey castles after his coronation?",
           "options": [
-            "Christmas Day 1066",
-            "14 October 1066",
-            "New Year's Day 1067",
-            "Easter Sunday 1067"
+            "To provide luxury stone palaces for defeated Anglo-Saxon thegns",
+            "To store grain harvested during the Harrying of the North",
+            "To house royal commissioners writing the Domesday Book",
+            "To let a small force of around 10,000 Normans control a hostile population of two million Anglo-Saxons"
           ],
-          "answer": "Christmas Day 1066",
-          "a": "Christmas Day 1066",
-          "explanation": "William was crowned King of England on Christmas Day 1066 at Westminster Abbey."
+          "answer": "To let a small force of around 10,000 Normans control a hostile population of two million Anglo-Saxons",
+          "a": "To let a small force of around 10,000 Normans control a hostile population of two million Anglo-Saxons",
+          "explanation": "Heavily outnumbered by two million Anglo-Saxons, William used forced Saxon labour to throw up over 500 timber Motte and Bailey fortresses to impose instant military control."
         },
         {
           "stage": 1,
@@ -5242,17 +5242,17 @@ export default {
         },
         {
           "stage": 4,
-          "question": "On what date was Thomas Becket murdered inside Canterbury Cathedral?",
-          "q": "On what date was Thomas Becket murdered inside Canterbury Cathedral?",
+          "question": "What action did Thomas Becket take upon returning to England from exile in December 1170 that triggered King Henry II's furious outburst?",
+          "q": "What action did Thomas Becket take upon returning to England from exile in December 1170 that triggered King Henry II's furious outburst?",
           "options": [
-            "25 December 1170",
-            "29 December 1170",
-            "1 January 1171",
-            "6 January 1171"
+            "He immediately excommunicated the bishops who had supported King Henry II",
+            "He signed the Constitutions of Clarendon without asking the Pope",
+            "He marched an army of French knights into Normandy to arrest the King",
+            "He closed Canterbury Cathedral to all medieval pilgrims"
           ],
-          "answer": "29 December 1170",
-          "a": "29 December 1170",
-          "explanation": "Four knights burst into Canterbury Cathedral at dusk on 29 December 1170 and murdered Becket."
+          "answer": "He immediately excommunicated the bishops who had supported King Henry II",
+          "a": "He immediately excommunicated the bishops who had supported King Henry II",
+          "explanation": "Becket's immediate excommunication of pro-royal bishops enraged Henry II in Normandy, prompting four knights to gallop to Canterbury and murder Becket at the altar."
         },
         {
           "stage": 4,
@@ -6825,17 +6825,17 @@ export default {
         },
         {
           "stage": 4,
-          "question": "On what date did King John grant Magna Carta at Runnymede?",
-          "q": "On what date did King John grant Magna Carta at Runnymede?",
+          "question": "What foundational principle of English common law was established by Clause 39 of Magna Carta?",
+          "q": "What foundational principle of English common law was established by Clause 39 of Magna Carta?",
           "options": [
-            "4 July 1215",
-            "25 December 1215",
-            "15 June 1215",
-            "10 May 1214"
+            "Kings were allowed to raise scutage taxes without asking the barons",
+            "No free man could be seized or imprisoned except by lawful judgement of his equals or the law of the land",
+            "Every English peasant was immediately freed from feudal labour",
+            "The Pope gained permanent power to appoint all English sheriffs and judges"
           ],
-          "answer": "15 June 1215",
-          "a": "15 June 1215",
-          "explanation": "John affixed the Great Seal to Magna Carta in the meadow of Runnymede on 15 June 1215."
+          "answer": "No free man could be seized or imprisoned except by lawful judgement of his equals or the law of the land",
+          "a": "No free man could be seized or imprisoned except by lawful judgement of his equals or the law of the land",
+          "explanation": "Clause 39 of Magna Carta limited arbitrary royal power by guaranteeing that no free man could be imprisoned without lawful judgement or due process under the law of the land."
         },
         {
           "stage": 4,

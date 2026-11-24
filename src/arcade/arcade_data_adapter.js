@@ -268,12 +268,20 @@ export function buildArcadePools(unitData, unitId = 'unit', scopeLesson = 'all')
     !isNaN(parseInt(scopeLesson, 10)) &&
     Boolean(allLessons[parseInt(scopeLesson, 10)]);
 
+  // On Pearson Edexcel Option P5 (`cme_new`), `lessons[0]` (`lesson_0`: 1915–39) is unexamined
+  // background context. Exclude it from full-course (`scopeLesson = 'all'`) GCSE Arcade pools while
+  // still allowing teachers/pupils to launch `scopeLesson = 0` explicitly from the dropdown.
+  const isExaminedPoolLesson = (idx) => !(unitId === 'cme_new' && !isSingleLesson && idx === 0);
+
   const selectedLessons = isSingleLesson
     ? [{ lesson: allLessons[parseInt(scopeLesson, 10)], idx: parseInt(scopeLesson, 10) }]
-    : allLessons.map((lesson, idx) => ({ lesson, idx }));
+    : allLessons
+        .map((lesson, idx) => ({ lesson, idx }))
+        .filter(({ idx }) => isExaminedPoolLesson(idx));
 
   const unitWideVocab = [];
   allLessons.forEach((l, idx) => {
+    if (!isExaminedPoolLesson(idx)) return;
     const lTitle = cleanLessonTitle(l.title, idx);
     (l.vocab || []).forEach((v) => {
       const term = stripCleanText(v.term || v.word || '');
@@ -381,7 +389,9 @@ export function buildArcadePools(unitData, unitId = 'unit', scopeLesson = 'all')
   const timelineLessonSource = isSingleLesson
     ? [
         ...selectedLessons,
-        ...allLessons.map((lesson, idx) => ({ lesson, idx, isUnitBonus: true })),
+        ...allLessons
+          .map((lesson, idx) => ({ lesson, idx, isUnitBonus: true }))
+          .filter(({ idx }) => !(unitId === 'cme_new' && idx === 0)),
       ]
     : selectedLessons;
 

@@ -2403,18 +2403,18 @@
       "quiz": [
         {
           "stage": 1,
-          "question": "On what exact date did Viking warships strike Holy Island at Lindisfarne, shocking Christian Europe?",
-          "q": "On what exact date did Viking warships strike Holy Island at Lindisfarne, shocking Christian Europe?",
+          "question": "How did people across Christian Europe react after Viking raiders attacked the monastery at Lindisfarne?",
+          "q": "How did people across Christian Europe react after Viking raiders attacked the monastery at Lindisfarne?",
           "options": [
-            "8 June AD 793",
-            "14 October 1066",
-            "1 September 1939",
-            "25 December AD 597"
+            "Shockwaves of fear swept across Europe because such terror from the sea had never struck Britain before",
+            "European kings celebrated the arrival of new silver traders",
+            "Most people ignored the attack because Lindisfarne had no treasure",
+            "Monks invited the raiders to stay inside the church for winter"
           ],
           "correct": 0,
-          "answer": "8 June AD 793",
-          "a": "8 June AD 793",
-          "explanation": "On 8 June AD 793, Norse longships landed at Lindisfarne Priory in Northumbria, launching the Viking Age in Britain."
+          "answer": "Shockwaves of fear swept across Europe because such terror from the sea had never struck Britain before",
+          "a": "Shockwaves of fear swept across Europe because such terror from the sea had never struck Britain before",
+          "explanation": "The sudden Viking attack on Lindisfarne sent shockwaves of fear across Christian Europe, with scholar Alcuin weeping that such terror from the sea had never been seen before."
         },
         {
           "stage": 1,

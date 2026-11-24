@@ -1,0 +1,540 @@
+/* ==========================================================================
+   The History Revision Hub — Unified Year 11 GCSE Exam & Spec Hub
+   3-Tab Command Centre · Interactive Paper Blueprints · 15-Min Pre-Exam Rescue
+   ========================================================================== */
+
+.ehub-shell {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px 16px 64px;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  color: #0f172a;
+  box-sizing: border-box;
+}
+
+.ehub-shell *,
+.ehub-shell *::before,
+.ehub-shell *::after {
+  box-sizing: border-box;
+}
+
+/* 1. Unified Command Header */
+.ehub-header-card {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  color: #ffffff;
+  border-radius: 14px;
+  padding: 16px 18px 14px;
+  margin-bottom: 14px;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.14);
+}
+
+.ehub-top-bar {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.ehub-eyebrow {
+  font-size: 0.7rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #93c5fd;
+  margin-bottom: 3px;
+}
+
+.ehub-title {
+  margin: 0;
+  font-size: clamp(1.18rem, 2.5vw, 1.55rem);
+  font-weight: 900;
+  line-height: 1.2;
+  color: #ffffff;
+}
+
+.ehub-sub {
+  margin: 4px 0 0;
+  font-size: 0.82rem;
+  color: #cbd5e1;
+}
+
+.ehub-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.ehub-rescue-btn {
+  appearance: none;
+  border: 1.5px solid #fbbf24;
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+  color: #0f172a;
+  font-size: 0.8rem;
+  font-weight: 900;
+  padding: 8px 13px;
+  border-radius: 9px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  box-shadow: 0 4px 14px rgba(245, 158, 11, 0.32);
+  white-space: nowrap;
+  transition: transform 0.14s ease;
+}
+
+.ehub-rescue-btn:hover {
+  transform: translateY(-1px);
+}
+
+.ehub-back-btn {
+  appearance: none;
+  border: 1px solid rgba(148, 163, 184, 0.45);
+  background: rgba(255, 255, 255, 0.08);
+  color: #e2e8f0;
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 7px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Course Switcher Strip */
+.ehub-course-strip {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  padding-bottom: 4px;
+  margin-bottom: 10px;
+}
+
+.ehub-course-strip::-webkit-scrollbar {
+  display: none;
+}
+
+.ehub-course-pill {
+  appearance: none;
+  flex-shrink: 0;
+  border: 1px solid rgba(148, 163, 184, 0.38);
+  background: rgba(255, 255, 255, 0.07);
+  color: #e2e8f0;
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 6px 12px;
+  border-radius: 999px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  white-space: nowrap;
+}
+
+.ehub-course-pill.is-active {
+  background: #ffffff;
+  border-color: #ffffff;
+  color: #0f172a;
+  font-weight: 800;
+}
+
+/* 3 Primary Hub Tabs */
+.ehub-tabs-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+  border-top: 1px solid rgba(148, 163, 184, 0.25);
+  padding-top: 11px;
+}
+
+.ehub-tab-btn {
+  appearance: none;
+  flex: 1 1 auto;
+  min-height: 40px;
+  border: 1.5px solid rgba(148, 163, 184, 0.35);
+  background: rgba(15, 23, 42, 0.55);
+  color: #cbd5e1;
+  font-size: 0.83rem;
+  font-weight: 800;
+  padding: 8px 14px;
+  border-radius: 9px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  white-space: nowrap;
+  transition: all 0.15s ease;
+}
+
+.ehub-tab-btn.is-active {
+  background: #3b82f6;
+  border-color: #60a5fa;
+  color: #ffffff;
+  box-shadow: 0 3px 12px rgba(59, 130, 246, 0.35);
+}
+
+/* ==========================================================================
+   2. Interactive Exam Paper Blueprint Strip (Top of Tab 1)
+   ========================================================================== */
+.ehub-blueprint-card {
+  background: #ffffff;
+  border: 1.5px solid #cbd5e1;
+  border-radius: 13px;
+  padding: 13px 15px;
+  margin-bottom: 14px;
+  box-shadow: 0 2px 10px rgba(15, 23, 42, 0.04);
+}
+
+.ehub-bp-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.ehub-bp-title-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.ehub-bp-badge {
+  background: #0f172a;
+  color: #ffffff;
+  font-size: 0.71rem;
+  font-weight: 800;
+  padding: 3px 9px;
+  border-radius: 6px;
+  letter-spacing: 0.04em;
+}
+
+.ehub-bp-title {
+  margin: 0;
+  font-size: 0.96rem;
+  font-weight: 900;
+  color: #0f172a;
+}
+
+.ehub-bp-toggle {
+  appearance: none;
+  border: 1px solid #cbd5e1;
+  background: #f8fafc;
+  color: #334155;
+  font-size: 0.74rem;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.ehub-bp-alerts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 8px;
+  margin: 10px 0 11px;
+}
+
+.ehub-bp-alert {
+  border-radius: 8px;
+  padding: 7px 10px;
+  font-size: 0.76rem;
+  line-height: 1.38;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.ehub-bp-alert.sitting {
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  color: #1e3a8a;
+}
+
+.ehub-bp-alert.choice {
+  background: #fffbeb;
+  border: 1px solid #fde68a;
+  color: #92400e;
+}
+
+.ehub-flip-pill {
+  appearance: none;
+  border: 1px solid #3b82f6;
+  background: #ffffff;
+  color: #1d4ed8;
+  font-size: 0.71rem;
+  font-weight: 800;
+  padding: 3px 8px;
+  border-radius: 999px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.ehub-slots-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 9px;
+}
+
+@media (min-width: 860px) {
+  .ehub-slots-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.ehub-slot-card {
+  appearance: none;
+  text-align: left;
+  font-family: inherit;
+  background: #f8fafc;
+  border: 1.5px solid #cbd5e1;
+  border-radius: 10px;
+  padding: 9px 11px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 5px;
+  transition: all 0.14s ease;
+}
+
+.ehub-slot-card:hover {
+  border-color: #2563eb;
+  background: #f0f7ff;
+  transform: translateY(-1px);
+}
+
+.ehub-slot-card.is-selected {
+  background: #eff6ff;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+}
+
+.ehub-slot-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+}
+
+.ehub-slot-qnum {
+  font-size: 0.76rem;
+  font-weight: 900;
+  color: #1d4ed8;
+  background: #dbeafe;
+  padding: 2px 7px;
+  border-radius: 5px;
+}
+
+.ehub-slot-meta {
+  font-size: 0.71rem;
+  font-weight: 800;
+  color: #334155;
+}
+
+.ehub-slot-stem {
+  font-size: 0.81rem;
+  font-weight: 800;
+  color: #0f172a;
+  line-height: 1.3;
+}
+
+.ehub-slot-formula {
+  font-size: 0.72rem;
+  color: #475569;
+  line-height: 1.35;
+}
+
+.ehub-slot-cta {
+  font-size: 0.7rem;
+  font-weight: 800;
+  color: #2563eb;
+  margin-top: 2px;
+}
+
+.ehub-weak-bar {
+  margin-top: 10px;
+  padding-top: 9px;
+  border-top: 1px dashed #e2e8f0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-size: 0.78rem;
+  color: #475569;
+}
+
+.ehub-weak-btn {
+  appearance: none;
+  border: 1.5px solid #ef4444;
+  background: #fef2f2;
+  color: #991b1b;
+  font-size: 0.75rem;
+  font-weight: 800;
+  padding: 5px 11px;
+  border-radius: 999px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.ehub-weak-btn.is-active {
+  background: #dc2626;
+  color: #ffffff;
+}
+
+/* ==========================================================================
+   3. 15-Minute Pre-Exam Rescue Modal (Addition #4)
+   ========================================================================== */
+.ehub-rescue-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 9700;
+  background: rgba(15, 23, 42, 0.68);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px;
+}
+
+.ehub-rescue-modal {
+  width: min(760px, 100%);
+  max-height: 90vh;
+  background: #ffffff;
+  border-radius: 16px;
+  border: 2px solid #0f172a;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0 24px 50px rgba(15, 23, 42, 0.38);
+}
+
+.ehub-rescue-head {
+  background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
+  color: #ffffff;
+  padding: 14px 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.ehub-rescue-steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background: #f1f5f9;
+  border-bottom: 1px solid #cbd5e1;
+  flex-shrink: 0;
+}
+
+.ehub-rstep-btn {
+  appearance: none;
+  border: none;
+  border-bottom: 3px solid transparent;
+  background: transparent;
+  padding: 10px 8px;
+  font-size: 0.78rem;
+  font-weight: 800;
+  color: #475569;
+  cursor: pointer;
+}
+
+.ehub-rstep-btn.is-active {
+  background: #ffffff;
+  color: #1d4ed8;
+  border-bottom-color: #2563eb;
+}
+
+.ehub-rescue-body {
+  padding: 16px 18px 20px;
+  overflow-y: auto;
+  flex: 1 1 auto;
+}
+
+.ehub-top10-row {
+  display: grid;
+  grid-template-columns: 112px 1fr;
+  gap: 10px;
+  align-items: baseline;
+  padding: 8px 10px;
+  border-bottom: 1px solid #e2e8f0;
+  font-size: 0.83rem;
+}
+
+.ehub-top10-year {
+  font-weight: 900;
+  color: #1e3a8a;
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  padding: 3px 8px;
+  border-radius: 6px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.ehub-top10-year.is-blurred {
+  filter: blur(5px);
+  user-select: none;
+}
+
+.ehub-top10-year.is-blurred.is-revealed {
+  filter: none;
+}
+
+/* Hide Teacher Mock Papers Tab on Cold-Stranger Mobile Pupil Mode (< 933px) */
+body.hh-mobile-pupil-mode:not(.staff-mode-active) .ehub-tab-mocks-only {
+  display: none !important;
+}
+
+@media (max-width: 932.98px) {
+  .ehub-shell {
+    padding: 10px 10px 108px;
+  }
+  .ehub-header-card {
+    padding: 13px 13px 11px;
+  }
+  .ehub-top10-row {
+    grid-template-columns: 92px 1fr;
+  }
+}
+
+[data-theme='space'] .ehub-blueprint-card,
+[data-theme='dark'] .ehub-blueprint-card {
+  background: #1e293b;
+  border-color: #334155;
+  color: #f8fafc;
+}
+
+[data-theme='space'] .ehub-bp-title,
+[data-theme='dark'] .ehub-bp-title,
+[data-theme='space'] .ehub-slot-stem,
+[data-theme='dark'] .ehub-slot-stem {
+  color: #f8fafc;
+}
+
+[data-theme='space'] .ehub-slot-card,
+[data-theme='dark'] .ehub-slot-card {
+  background: #0f172a;
+  border-color: #334155;
+}
+
+[data-theme='space'] .ehub-slot-formula,
+[data-theme='dark'] .ehub-slot-formula,
+[data-theme='space'] .ehub-slot-meta,
+[data-theme='dark'] .ehub-slot-meta {
+  color: #cbd5e1;
+}

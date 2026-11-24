@@ -2493,17 +2493,17 @@ export default {
         },
         {
           "stage": 4,
-          "question": "On what date did the British Army suffer 57,470 casualties on the first day of the Battle of the Somme?",
-          "q": "On what date did the British Army suffer 57,470 casualties on the first day of the Battle of the Somme?",
+          "question": "Why did the seven-day British artillery bombardment fail to prevent catastrophic casualties on the first day of the Somme?",
+          "q": "Why did the seven-day British artillery bombardment fail to prevent catastrophic casualties on the first day of the Somme?",
           "options": [
-            "4 August 1914",
-            "11 November 1918",
-            "28 June 1919",
-            "1 July 1916"
+            "German forces had already retreated twenty miles behind the Somme river",
+            "Heavy snowfall prevented British infantry from leaving their trenches",
+            "Shrapnel shells left German barbed wire intact and defenders survived safely in deep reinforced underground shelters",
+            "British artillery ran out of ammunition after only two hours of firing"
           ],
-          "answer": "1 July 1916",
-          "a": "1 July 1916",
-          "explanation": "On 1 July 1916, the British Army suffered 57,470 casualties, including 19,240 dead, on the bloodiest day in its military history."
+          "answer": "Shrapnel shells left German barbed wire intact and defenders survived safely in deep reinforced underground shelters",
+          "a": "Shrapnel shells left German barbed wire intact and defenders survived safely in deep reinforced underground shelters",
+          "explanation": "Despite 1.5 million shells being fired, German barbed wire remained uncut and machine-gunners emerged from deep dugouts to inflict 57,470 British casualties."
         },
         {
           "stage": 4,
@@ -6506,17 +6506,17 @@ export default {
       "quiz": [
         {
           "stage": 1,
-          "question": "On what exact date and time did the Armistice take effect on the Western Front, ending the fighting?",
-          "q": "On what exact date and time did the Armistice take effect on the Western Front, ending the fighting?",
+          "question": "Which combination of pressures caused the German war effort to collapse in autumn 1918?",
+          "q": "Which combination of pressures caused the German war effort to collapse in autumn 1918?",
           "options": [
-            "28 June 1919",
-            "11:00 am on 11 November 1918",
-            "1 July 1916",
-            "4 August 1914"
+            "A surprise Russian invasion of Berlin combined with the collapse of the Ottoman Empire",
+            "The signing of the Treaty of Versailles before any Allied troops crossed the border",
+            "A decision by Kaiser Wilhelm II to surrender Germany's colonies to Britain in 1917",
+            "The Allied Hundred Days Offensive, the naval blockade, and revolutionary mutinies and strikes at home"
           ],
-          "answer": "11:00 am on 11 November 1918",
-          "a": "11:00 am on 11 November 1918",
-          "explanation": "Hostilities officially ceased at 11:00 am on 11 November 1918 (the eleventh hour of the eleventh day of the eleventh month)."
+          "answer": "The Allied Hundred Days Offensive, the naval blockade, and revolutionary mutinies and strikes at home",
+          "a": "The Allied Hundred Days Offensive, the naval blockade, and revolutionary mutinies and strikes at home",
+          "explanation": "Battered by the Allied Hundred Days Offensive and starved by the naval blockade, Germany's war effort broke down completely when the Kiel naval mutiny sparked nationwide strikes and revolution."
         },
         {
           "stage": 1,
@@ -6534,17 +6534,17 @@ export default {
         },
         {
           "stage": 1,
-          "question": "On what date did Kaiser Wilhelm II abdicate the German imperial throne before fleeing into Dutch exile?",
-          "q": "On what date did Kaiser Wilhelm II abdicate the German imperial throne before fleeing into Dutch exile?",
+          "question": "What happened to the German monarchy as military defeat and domestic revolution swept Germany in autumn 1918?",
+          "q": "What happened to the German monarchy as military defeat and domestic revolution swept Germany in autumn 1918?",
           "options": [
-            "11 November 1918",
-            "28 June 1919",
-            "1 August 1914",
-            "9 November 1918"
+            "Kaiser Wilhelm II fled into exile in Holland as the German monarchy collapsed",
+            "Kaiser Wilhelm II personally signed the Armistice inside the railway carriage at Compiègne",
+            "The German navy defeated the British blockade and kept the Kaiser on the throne",
+            "The Big Three allowed the Kaiser to remain head of the new Weimar Republic"
           ],
-          "answer": "9 November 1918",
-          "a": "9 November 1918",
-          "explanation": "Kaiser Wilhelm II abdicated on 9 November 1918, leading to the proclamation of the German democratic republic."
+          "answer": "Kaiser Wilhelm II fled into exile in Holland as the German monarchy collapsed",
+          "a": "Kaiser Wilhelm II fled into exile in Holland as the German monarchy collapsed",
+          "explanation": "Realising total military defeat was unavoidable amid mutiny and revolution, Kaiser Wilhelm II fled to Holland, ending the German monarchy."
         },
         {
           "stage": 1,

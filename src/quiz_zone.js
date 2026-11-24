@@ -21,9 +21,11 @@ export function renderQuizZone(container, unitData) {
   let groupedFlashcardLevels = {};
   let groupedExamLevels = {};
 
-  // Dynamically build banks
+  // Dynamically build banks (for GCSE `cme_new`, keep `lesson_0` 1915–39 in its individual topic card
+  // for class teaching, but exclude it from full-course `quizPack`/`masterBank`/`vocabBank` exam sprints)
   if (unitData.lessons) {
-    unitData.lessons.forEach((l) => {
+    unitData.lessons.forEach((l, lIdx) => {
+      const isPreSpecContextLesson = curUnit === 'cme_new' && (lIdx === 0 || l.id === 'lesson_0');
       let topicKey = l.title; // e.g. "KT1.1: What did Medieval people..."
 
       if (!groupedLevels[topicKey]) {
@@ -36,7 +38,7 @@ export function renderQuizZone(container, unitData) {
       const addQuestion = (q, options, a, img, explanation = '') => {
         const qId = generateQuestionId(curUnit, l.title, q);
         const questionObj = { id: qId, q, a, options, img, source: l.title, explanation };
-        quizPack.push(questionObj);
+        if (!isPreSpecContextLesson) quizPack.push(questionObj);
         groupedLevels[topicKey].questions.push(questionObj);
       };
 
@@ -111,13 +113,13 @@ export function renderQuizZone(container, unitData) {
       const addFlashcard = (q, a) => {
         const qId = generateQuestionId(curUnit, l.title, q);
         const questionObj = { id: qId, q, a, source: l.title };
-        masterBank.push(questionObj);
+        if (!isPreSpecContextLesson) masterBank.push(questionObj);
         groupedFlashcardLevels[topicKey].questions.push(questionObj);
       };
 
       if (l.vocab) {
         l.vocab.forEach((v) => {
-          vocabBank.push({ term: v.term, definition: v.definition });
+          if (!isPreSpecContextLesson) vocabBank.push({ term: v.term, definition: v.definition });
           addFlashcard(`What is the definition of "${v.term}"?`, v.definition);
           addFlashcard(`Which term matches this definition: "${v.definition}"?`, v.term);
         });

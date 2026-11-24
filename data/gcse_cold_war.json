@@ -715,7 +715,7 @@
             "<span class=\"para-ref\">[5.1]</span> On **16 July 1945**, the day before **Potsdam** opened, American scientists successfully tested the world’s first **atomic bomb** in New Mexico. Emboldened that Washington no longer needed **Red Army** help to defeat Japan, **Truman** casually informed **Stalin** on **24 July** that the USA possessed a weapon of *\"unusual destructive force\"*—unaware that Soviet spies inside the **Manhattan Project** had already briefed Stalin.",
             "<span class=\"para-ref\">[5.2]</span> When the United States dropped atomic bombs on **Hiroshima** (**6 August 1945**) and **Nagasaki** (**9 August 1945**), forcing Japan’s surrender without Soviet occupation of the Japanese mainland, Stalin saw the bombings as **atomic intimidation** aimed at Moscow. Rather than making Stalin compliant, the US nuclear monopoly drove him to tighten his buffer zone across **Eastern Europe** and order Soviet physicists under **Lavrentiy Beria** to build a rival Soviet atomic bomb, achieved in **August 1949**."
           ],
-          "text": "<span class=\"para-ref\">[5.1]</span> On **16 July 1945**, the day before **Potsdam** opened, American scientists successfully tested the world’s first **atomic bomb** in New Mexico. Emboldened that Washington no longer needed **Red Army** help to defeat Japan, **Truman** casually informed **Stalin** on **24 July** that the USA possessed a weapon of *\"unusual destructive force\"*—unaware that Soviet spies inside the **Manhattan Project** had already briefed Stalin.\n\n<span class=\"para-ref\">[5.2]</span> When the United States dropped atomic bombs on **Hiroshima** (**6 August 1945**) and **Nagasaki** (**9 August 1945**), forcing Japan’s surrender without Soviet occupation of the Japanese mainland, Stalin saw the bombings as **atomic intimidation** aimed at Moscow. Rather than making Stalin compliant, the US nuclear monopoly drove him to tighten his buffer zone across **Eastern Europe** and order Soviet physicists under **Lavrentiy Beria** to build a rival Soviet atomic bomb, achieved in **August 1949**.",
+          "text": "<span class=\"para-ref\">[5.1]</span> On **16 July 1945**, the day before **Potsdam** opened, American scientists successfully tested the world’s first **atomic bomb** in New Mexico. Emboldened that Washington no longer needed **Red Army** help to defeat Japan, **Truman** casually informed **Stalin** on **24 July** that the USA possessed a weapon of *\"unusual destructive force\"*—unaware that Soviet spies inside the **Manhattan Project** had already briefed Stalin.\n\n<span class=\"para-ref\">[5.2]</span> When the United States dropped atomic bombs on **Hiroshima** (**6 August 1945**) and **Nagasaki** (**9 August 1945**), forcing Japan’s surrender without Soviet occupation of the Japanese mainland, Stalin saw the bombings as **atomic intimidation** aimed at Moscow. Rather than making Stalin compliant, America’s nuclear monopoly poisoned **US–Soviet relations**, driving him to tighten his buffer zone across **Eastern Europe** and order physicists under **Lavrentiy Beria** to build a rival Soviet atomic bomb, achieved in **August 1949**.",
           "content": "<span class=\"para-ref\">[5.1]</span> On **16 July 1945**, the day before **Potsdam** opened, American scientists successfully tested the world’s first **atomic bomb** in New Mexico. Emboldened that Washington no longer needed **Red Army** help to defeat Japan, **Truman** casually informed **Stalin** on **24 July** that the USA possessed a weapon of *\"unusual destructive force\"*—unaware that Soviet spies inside the **Manhattan Project** had already briefed Stalin.\n\n<span class=\"para-ref\">[5.2]</span> When the United States dropped atomic bombs on **Hiroshima** (**6 August 1945**) and **Nagasaki** (**9 August 1945**), forcing Japan’s surrender without Soviet occupation of the Japanese mainland, Stalin saw the bombings as **atomic intimidation** aimed at Moscow. Rather than making Stalin compliant, the US nuclear monopoly drove him to tighten his buffer zone across **Eastern Europe** and order Soviet physicists under **Lavrentiy Beria** to build a rival Soviet atomic bomb, achieved in **August 1949**.",
           "image": "/images/gcse_cold_war/kt1/cw_l1_b4_trinity_fireball_july_1945.jpg",
           "image_alt": "High-speed Los Alamos photograph capturing the expanding 200-metre fireball dome 0.016 seconds after detonation during the Trinity atomic test in New Mexico, 16 July 1945",
@@ -851,7 +851,7 @@
             }
           ],
           "model_sentence": "Rather than intimidating <strong>Stalin</strong> into concessions, the August 1945 atomic bombings of <strong>Hiroshima</strong> and <strong>Nagasaki</strong> prompted Moscow to tighten its Eastern European buffer zone and test its own atomic bomb in <strong>1949</strong>.",
-          "prose_hash": "00ebd20666"
+          "prose_hash": "86be137c0f"
         }
       ],
       "causal_domino_spine": {
@@ -925,7 +925,7 @@
             "connective": "By early 1946, wartime alliance had dissolved into mutual telegram warnings and rival spheres.",
             "exam_link": "Q3 Importance: Triggered the superpower nuclear arms race and deepened Stalin’s determination to hold Eastern Europe.",
             "question": "In what ways did the US atomic bomb reshape superpower relations in 1945?",
-            "prose_hash": "00ebd20666"
+            "prose_hash": "86be137c0f"
           }
         ]
       },
@@ -1342,17 +1342,17 @@
         },
         {
           "stage": 5,
-          "question": "On what date did the United States successfully detonate the first atomic bomb in New Mexico, one day before Potsdam opened?",
-          "q": "On what date did the United States successfully detonate the first atomic bomb in New Mexico, one day before Potsdam opened?",
+          "question": "How did America's atomic monopoly and the bombings of Japan affect Stalin's post-war strategy?",
+          "q": "How did America's atomic monopoly and the bombings of Japan affect Stalin's post-war strategy?",
           "options": [
-            "16 July 1945",
-            "6 August 1945",
-            "11 February 1945",
-            "12 March 1947"
+            "They persuaded Stalin to hold free democratic elections across Poland",
+            "They drove Stalin to tighten his Eastern European buffer zone and build a Soviet atomic bomb",
+            "They forced the Red Army to withdraw from Berlin and Eastern Europe",
+            "They convinced Stalin to accept Truman's plan for international nuclear control"
           ],
-          "answer": "16 July 1945",
-          "a": "16 July 1945",
-          "explanation": "The Trinity test succeeded in New Mexico on 16 July 1945, transforming Truman’s confidence at Potsdam."
+          "answer": "They drove Stalin to tighten his Eastern European buffer zone and build a Soviet atomic bomb",
+          "a": "They drove Stalin to tighten his Eastern European buffer zone and build a Soviet atomic bomb",
+          "explanation": "Seeing the Hiroshima and Nagasaki bombings as atomic intimidation aimed at Moscow, Stalin tightened Soviet control over Eastern Europe and ordered physicists under Beria to develop a Soviet atomic bomb."
         },
         {
           "stage": 5,
@@ -1833,8 +1833,8 @@
             "spoken": "In response, Stalin tightened his Eastern European buffer zone and ordered a crash nuclear programme, testing a Soviet atomic bomb in August 1949."
           }
         ],
-        "takeaway": "Once Nazi Germany fell in May 1945, ideological rivalry, Truman’s tougher presidency, and the US atomic monopoly turned wartime allies into suspicious rivals over Poland and Germany.",
-        "spokenTakeaway": "Once Nazi Germany fell in May 1945, ideological rivalry, Truman’s tougher presidency, and the US atomic monopoly turned wartime allies into suspicious rivals over Poland and Germany.",
+        "takeaway": "Once Nazi Germany fell in May 1945, ideological rivalry, Truman’s tougher presidency, and the US atomic monopoly poisoned US–Soviet relations over Poland and Germany.",
+        "spokenTakeaway": "Once Nazi Germany fell in May 1945, ideological rivalry, Truman’s tougher presidency, and the US atomic monopoly poisoned US–Soviet relations over Poland and Germany.",
         "vocab": [
           {
             "term": "Grand Alliance",
@@ -1951,7 +1951,7 @@
             "<span class=\"para-ref\">[3.1]</span> In **February 1947**, an exhausted and bankrupt **Britain** informed Washington that it could no longer afford military and financial aid to royalist forces fighting Communist guerrillas in the **Greek Civil War**, nor protect neighbouring **Turkey** near the strategic Dardanelles straits. Fearing a Mediterranean domino effect, **Harry S. Truman** addressed the US Congress on **12 March 1947**.",
             "<span class=\"para-ref\">[3.2]</span> Proclaiming the **Truman Doctrine**, the President argued that the world faced a stark choice between free majority rule and totalitarian terror, securing **$400 million** in immediate military and economic aid for **Greece** and **Turkey**. By pledging American support to free peoples resisting subjugation, Truman permanently ended peacetime **isolationism** and made **containment**—stopping any further spread of communism—official US foreign policy."
           ],
-          "text": "<span class=\"para-ref\">[3.1]</span> In **February 1947**, an exhausted and bankrupt **Britain** informed Washington that it could no longer afford military and financial aid to royalist forces fighting Communist guerrillas in the **Greek Civil War**, nor protect neighbouring **Turkey** near the strategic Dardanelles straits. Fearing a Mediterranean domino effect, **Harry S. Truman** addressed the US Congress on **12 March 1947**.\n\n<span class=\"para-ref\">[3.2]</span> Proclaiming the **Truman Doctrine**, the President argued that the world faced a stark choice between free majority rule and totalitarian terror, securing **$400 million** in immediate military and economic aid for **Greece** and **Turkey**. By pledging American support to free peoples resisting subjugation, Truman permanently ended peacetime **isolationism** and made **containment**—stopping any further spread of communism—official US foreign policy.",
+          "text": "<span class=\"para-ref\">[3.1]</span> In **February 1947**, an exhausted and bankrupt **Britain** informed Washington that it could no longer afford military and financial aid to royalist forces fighting Communist guerrillas in the **Greek Civil War**, nor protect neighbouring **Turkey** near the strategic Dardanelles straits. Fearing a Mediterranean domino effect, **Harry S. Truman** addressed the US Congress on **12 March 1947**.\n\n<span class=\"para-ref\">[3.2]</span> Proclaiming the **Truman Doctrine**, the President argued that the world faced a stark choice between free majority rule and totalitarian terror, securing **$400 million** in immediate military and economic aid for **Greece** and **Turkey**. By pledging American support to free peoples resisting subjugation, Truman permanently ended peacetime **isolationism** and made **containment**—stopping any further spread of communism—official US policy—sharply worsening **US–Soviet relations**.",
           "content": "<span class=\"para-ref\">[3.1]</span> In **February 1947**, an exhausted and bankrupt **Britain** informed Washington that it could no longer afford military and financial aid to royalist forces fighting Communist guerrillas in the **Greek Civil War**, nor protect neighbouring **Turkey** near the strategic Dardanelles straits. Fearing a Mediterranean domino effect, **Harry S. Truman** addressed the US Congress on **12 March 1947**.\n\n<span class=\"para-ref\">[3.2]</span> Proclaiming the **Truman Doctrine**, the President argued that the world faced a stark choice between free majority rule and totalitarian terror, securing **$400 million** in immediate military and economic aid for **Greece** and **Turkey**. By pledging American support to free peoples resisting subjugation, Truman permanently ended peacetime **isolationism** and made **containment**—stopping any further spread of communism—official US foreign policy.",
           "image": "/images/gcse_cold_war/kt1/cw_l2_b2_truman_greek_turkish_aid_1947.jpg",
           "image_alt": "April 1947 political cartoon by Clifford Berryman showing Senator Arthur Vandenberg and President Harry S. Truman holding a large sack marked $400 Million for Greece and Turkey — O.K. U.S. Senate",
@@ -2226,7 +2226,7 @@
             }
           ],
           "model_sentence": "When bankrupt <strong>Britain</strong> withdrew aid during the <strong>Greek Civil War</strong>, the March 1947 <strong>Truman Doctrine</strong> committed <strong>$400 million</strong> to Greece and Turkey and made <strong>containment</strong> official US policy.",
-          "prose_hash": "e8c6d3254a"
+          "prose_hash": "94c92502bc"
         },
         {
           "step": 4,
@@ -2324,7 +2324,7 @@
             "connective": "To stop post-war poverty pushing Western Europe toward communism, Washington added massive economic aid...",
             "exam_link": "Q1 Consequence: Ended US isolationism and defeated Communist guerrillas in Greece by 1949.",
             "question": "What prompted Truman to announce the policy of containment in March 1947?",
-            "prose_hash": "e8c6d3254a"
+            "prose_hash": "94c92502bc"
           },
           {
             "step": 4,
@@ -3295,8 +3295,8 @@
             "spoken": "Stalin retaliated by creating Cominform in 1947, expelling Tito’s Yugoslavia, and adding Comecon in January 1949 to bind Eastern Bloc trade tightly to Moscow."
           }
         ],
-        "takeaway": "Between 1946 and 1949, mutual suspicion hardened into permanent division: US containment and Marshall Aid rebuilt Western Europe while Stalin locked his satellite states inside Cominform and Comecon.",
-        "spokenTakeaway": "Between 1946 and 1949, mutual suspicion hardened into permanent division: US containment and Marshall Aid rebuilt Western Europe while Stalin locked his satellite states inside Cominform and Comecon.",
+        "takeaway": "Between 1946 and 1949, US–Soviet relations hardened into permanent division: US containment and Marshall Aid rebuilt Western Europe while Stalin locked his satellite states inside Cominform and Comecon.",
+        "spokenTakeaway": "Between 1946 and 1949, US–Soviet relations hardened into permanent division: US containment and Marshall Aid rebuilt Western Europe while Stalin locked his satellite states inside Cominform and Comecon.",
         "vocab": [
           {
             "term": "Containment",
@@ -4058,17 +4058,17 @@
         },
         {
           "stage": 1,
-          "question": "On what date did Stalin sever all road, rail, and canal links between Western Germany and West Berlin?",
-          "q": "On what date did Stalin sever all road, rail, and canal links between Western Germany and West Berlin?",
+          "question": "What was Stalin's primary objective in severing all road, rail, and canal links into West Berlin in June 1948?",
+          "q": "What was Stalin's primary objective in severing all road, rail, and canal links into West Berlin in June 1948?",
           "options": [
-            "24 June 1948",
-            "12 March 1947",
-            "4 April 1949",
-            "13 August 1961"
+            "To force the Western Allies to abandon West Berlin by starving its population",
+            "To stop East German refugees from escaping into Czechoslovakia",
+            "To retaliate for West Germany joining NATO",
+            "To force the USA to share atomic bomb secrets with Moscow"
           ],
-          "answer": "24 June 1948",
-          "a": "24 June 1948",
-          "explanation": "Stalin imposed the full land and canal blockade of West Berlin on 24 June 1948."
+          "answer": "To force the Western Allies to abandon West Berlin by starving its population",
+          "a": "To force the Western Allies to abandon West Berlin by starving its population",
+          "explanation": "Alarmed by the prosperous capitalist 'window' inside his Soviet zone after the Deutschmark's introduction, Stalin blockaded West Berlin to starve its 2.1 million residents into submission and push the Western powers out."
         },
         {
           "stage": 1,
@@ -4128,17 +4128,17 @@
         },
         {
           "stage": 2,
-          "question": "When did Stalin finally admit defeat and reopen land and canal access into West Berlin?",
-          "q": "When did Stalin finally admit defeat and reopen land and canal access into West Berlin?",
+          "question": "Why did Stalin finally abandon the Berlin Blockade and reopen land routes into West Berlin in May 1949?",
+          "q": "Why did Stalin finally abandon the Berlin Blockade and reopen land routes into West Berlin in May 1949?",
           "options": [
-            "12 May 1949",
-            "25 December 1948",
-            "14 May 1955",
-            "4 November 1956"
+            "The Western Allies agreed to withdraw the Deutschmark from Trizonia",
+            "US armoured convoys broke through Soviet checkpoints on the Autobahn",
+            "The Berlin Airlift proved the blockade had failed and turned world opinion against Moscow",
+            "NATO threatened an immediate nuclear strike on East Berlin"
           ],
-          "answer": "12 May 1949",
-          "a": "12 May 1949",
-          "explanation": "Realising the airlift could run indefinitely, Stalin lifted the Berlin Blockade on 12 May 1949."
+          "answer": "The Berlin Airlift proved the blockade had failed and turned world opinion against Moscow",
+          "a": "The Berlin Airlift proved the blockade had failed and turned world opinion against Moscow",
+          "explanation": "With Allied planes delivering up to 13,000 tons of supplies daily over 11 months, Stalin realised his blockade could not starve West Berlin and had turned global opinion decisively against the USSR."
         },
         {
           "stage": 3,
@@ -4711,8 +4711,8 @@
             "img": "/images/cold_war/candy_bomber_gail_halvorsen_1948.jpg",
             "mode": "contain",
             "stat": "FRG (May 1949) vs GDR (Oct 1949)",
-            "html": "While \"Candy Bombers\" won Berliners’ hearts, Germany split formally into democratic <strong>West Germany (FRG)</strong> and Communist <strong>East Germany (GDR)</strong>.",
-            "spoken": "While Candy Bombers won Berliners’ hearts, Germany split formally into democratic West Germany in May 1949 and Communist East Germany in October 1949."
+            "html": "Germany split formally into the democratic <strong>Federal Republic of Germany (FRG)</strong> in the West and Communist <strong>German Democratic Republic (GDR)</strong> in the East.",
+            "spoken": "Following the airlift, Germany split formally into the democratic Federal Republic of Germany in May 1949 and the Communist German Democratic Republic in October 1949."
           },
           {
             "badge": "Stage 4",
@@ -4754,7 +4754,7 @@
           },
           {
             "term": "FRG & GDR",
-            "def": "West Germany (May 1949) and East Germany (October 1949)."
+            "def": "Federal Republic of Germany (West, May 1949) and German Democratic Republic (East, Oct 1949)."
           },
           {
             "term": "NATO",
@@ -5382,17 +5382,17 @@
         },
         {
           "stage": 1,
-          "question": "On what date did student demonstrations erupt in Budapest, toppling a giant bronze statue of Stalin?",
-          "q": "On what date did student demonstrations erupt in Budapest, toppling a giant bronze statue of Stalin?",
+          "question": "What key demands did student demonstrators make in Budapest in October 1956 as they toppled Stalin's statue?",
+          "q": "What key demands did student demonstrators make in Budapest in October 1956 as they toppled Stalin's statue?",
           "options": [
-            "23 October 1956",
-            "4 November 1956",
-            "14 May 1955",
-            "20 August 1968"
+            "Immediate entry into NATO and American Marshall Plan loans",
+            "Free elections, press freedom, and the withdrawal of Soviet troops",
+            "The restoration of Mátyás Rákosi and stricter Comecon quotas",
+            "A military alliance with Yugoslavia to invade Czechoslovakia"
           ],
-          "answer": "23 October 1956",
-          "a": "23 October 1956",
-          "explanation": "Budapest students marched on 23 October 1956 demanding free elections, free press, and Imre Nagy’s return."
+          "answer": "Free elections, press freedom, and the withdrawal of Soviet troops",
+          "a": "Free elections, press freedom, and the withdrawal of Soviet troops",
+          "explanation": "Inspired by Khrushchev's Secret Speech and Polish worker protests, Budapest students marched demanding free elections, press freedom, and the withdrawal of Soviet troops from Hungary."
         },
         {
           "stage": 2,
@@ -5438,17 +5438,17 @@
         },
         {
           "stage": 3,
-          "question": "On what date did Khrushchev launch Operation Whirlwind, sending over 1,000 Soviet tanks back into Budapest?",
-          "q": "On what date did Khrushchev launch Operation Whirlwind, sending over 1,000 Soviet tanks back into Budapest?",
+          "question": "Alongside protecting the Soviet buffer zone, what political pressure pushed Khrushchev to launch Operation Whirlwind in November 1956?",
+          "q": "Alongside protecting the Soviet buffer zone, what political pressure pushed Khrushchev to launch Operation Whirlwind in November 1956?",
           "options": [
-            "4 November 1956",
-            "23 October 1956",
-            "12 May 1949",
-            "13 August 1961"
+            "Kremlin hardliners and Chinese leader Mao Zedong demanded decisive force to defend communism",
+            "The United Nations Security Council ordered Moscow to restore order in Budapest",
+            "President Eisenhower privately urged Khrushchev to crush Nagy's government",
+            "Austria threatened to close its border if Hungary became neutral"
           ],
-          "answer": "4 November 1956",
-          "a": "4 November 1956",
-          "explanation": "At dawn on 4 November 1956, massive Soviet tank columns stormed Budapest to overthrow Nagy’s government."
+          "answer": "Kremlin hardliners and Chinese leader Mao Zedong demanded decisive force to defend communism",
+          "a": "Kremlin hardliners and Chinese leader Mao Zedong demanded decisive force to defend communism",
+          "explanation": "Khrushchev faced intense pressure from Kremlin hardliners and Chinese leader Mao Zedong, who demanded decisive military force to stop Hungary from weakening the Communist bloc."
         },
         {
           "stage": 3,
@@ -6350,7 +6350,7 @@
             "<span class=\"para-ref\">[5.1]</span> Paradoxically, the **Berlin Wall** reshaped **superpower relations** by removing Berlin as an immediate trigger for nuclear war. For **Khrushchev** and **Ulbricht**, sealing the frontier stopped the crippling refugee **\"brain drain\"** and stabilised Communist **East Germany**, allowing Khrushchev to drop his **1958** ultimatum silently. Privately relieved that Western garrison rights survived untouched, **Kennedy** remarked that *\"a wall is a hell of a lot better than a war.\"*",
             "<span class=\"para-ref\">[5.2]</span> Yet in global propaganda, the Wall handed the West a lasting moral victory by proving communism had to imprison its own citizens behind concrete and barbed wire. Visiting **West Berlin** on **26 June 1963**, Kennedy addressed **120,000** cheering Berliners outside Schöneberg Rathaus, proclaiming **\"Ich bin ein Berliner\"** (*\"I am a Berliner\"*) to celebrate Western freedom over Soviet repression."
           ],
-          "text": "<span class=\"para-ref\">[5.1]</span> Paradoxically, the **Berlin Wall** reshaped **superpower relations** by removing Berlin as an immediate trigger for nuclear war. For **Khrushchev** and **Ulbricht**, sealing the frontier stopped the crippling refugee **\"brain drain\"** and stabilised Communist **East Germany**, allowing Khrushchev to drop his **1958** ultimatum silently. Privately relieved that Western garrison rights survived untouched, **Kennedy** remarked that *\"a wall is a hell of a lot better than a war.\"*\n\n<span class=\"para-ref\">[5.2]</span> Yet in global propaganda, the Wall handed the West a lasting moral victory by proving communism had to imprison its own citizens behind concrete and barbed wire. Visiting **West Berlin** on **26 June 1963**, Kennedy addressed **120,000** cheering Berliners outside Schöneberg Rathaus, proclaiming **\"Ich bin ein Berliner\"** (*\"I am a Berliner\"*) to celebrate Western freedom over Soviet repression.",
+          "text": "<span class=\"para-ref\">[5.1]</span> Paradoxically, the **Berlin Wall** reshaped **US–Soviet relations** by removing Berlin as an immediate trigger for nuclear war. For **Khrushchev** and **Ulbricht**, sealing the frontier stopped the crippling refugee **\"brain drain\"** and stabilised Communist **East Germany**, allowing Khrushchev to drop his **1958** ultimatum silently. Privately relieved that Western garrison rights survived untouched, **Kennedy** remarked that *\"a wall is a hell of a lot better than a war.\"*\n\n<span class=\"para-ref\">[5.2]</span> Yet in global propaganda, the Wall handed the West a lasting moral victory by proving communism had to imprison its own citizens behind concrete and barbed wire. Visiting **West Berlin** on **26 June 1963**, Kennedy addressed **120,000** cheering Berliners outside Schöneberg Rathaus, proclaiming **\"Ich bin ein Berliner\"** (*\"I am a Berliner\"*) to celebrate Western freedom over Soviet repression.",
           "content": "<span class=\"para-ref\">[5.1]</span> Paradoxically, the **Berlin Wall** reshaped **superpower relations** by removing Berlin as an immediate trigger for nuclear war. For **Khrushchev** and **Ulbricht**, sealing the frontier stopped the crippling refugee **\"brain drain\"** and stabilised Communist **East Germany**, allowing Khrushchev to drop his **1958** ultimatum silently. Privately relieved that Western garrison rights survived untouched, **Kennedy** remarked that *\"a wall is a hell of a lot better than a war.\"*\n\n<span class=\"para-ref\">[5.2]</span> Yet in global propaganda, the Wall handed the West a lasting moral victory by proving communism had to imprison its own citizens behind concrete and barbed wire. Visiting **West Berlin** on **26 June 1963**, Kennedy addressed **120,000** cheering Berliners outside Schöneberg Rathaus, proclaiming **\"Ich bin ein Berliner\"** (*\"I am a Berliner\"*) to celebrate Western freedom over Soviet repression.",
           "image": "/images/gcse_cold_war/kt2/cw_l5_b4_kennedy_rathaus_schoeneberg_1963.jpg",
           "image_alt": "Overhead colour photograph of President John F. Kennedy speaking from the podium outside Rathaus Schöneberg before a vast crowd of over 120,000 West Berliners beneath Allied flags on 26 June 1963",
@@ -6486,7 +6486,7 @@
             }
           ],
           "model_sentence": "While the <strong>Berlin Wall</strong> eased direct nuclear tension by halting East Germany’s refugee crisis without war, it handed the West a huge propaganda victory celebrated in Kennedy’s June <strong>1963</strong> <strong>\"Ich bin ein Berliner\"</strong> speech.",
-          "prose_hash": "7bf38cd046"
+          "prose_hash": "74e6597f58"
         }
       ],
       "causal_domino_spine": {
@@ -6560,7 +6560,7 @@
             "connective": "Even before Kennedy’s 1963 Berlin speech, Khrushchev’s boldest gamble had already shifted to Cuba...",
             "exam_link": "Q3 Importance: Dual impact—stabilised European borders while handing the West a decisive propaganda triumph.",
             "question": "In what ways did the Berlin Wall reshape superpower relations by 1963?",
-            "prose_hash": "7bf38cd046"
+            "prose_hash": "74e6597f58"
           }
         ]
       },
@@ -7011,17 +7011,17 @@
         },
         {
           "stage": 4,
-          "question": "On what exact date did East German troops first seal the border around West Berlin with barbed wire?",
-          "q": "On what exact date did East German troops first seal the border around West Berlin with barbed wire?",
+          "question": "Why did East German leader Walter Ulbricht persuade Khrushchev to seal the border around West Berlin in August 1961?",
+          "q": "Why did East German leader Walter Ulbricht persuade Khrushchev to seal the border around West Berlin in August 1961?",
           "options": [
-            "13 August 1961",
-            "27 November 1958",
-            "1 May 1960",
-            "26 June 1963"
+            "To prepare for a joint Soviet-East German invasion of West Germany",
+            "To stop 40,000 East Germans fleeing westward in early August without triggering war over West Berlin",
+            "To retaliate for the US shooting down a Soviet reconnaissance aircraft",
+            "To enforce the terms of the 1959 Camp David Summit"
           ],
-          "answer": "13 August 1961",
-          "a": "13 August 1961",
-          "explanation": "In the early hours of \"Barbed Wire Sunday\", 13 August 1961, East German troops closed crossing points around West Berlin."
+          "answer": "To stop 40,000 East Germans fleeing westward in early August without triggering war over West Berlin",
+          "a": "To stop 40,000 East Germans fleeing westward in early August without triggering war over West Berlin",
+          "explanation": "With 40,000 refugees fleeing in early August 1961 and Kennedy signalling he would defend West Berlin but not intervene inside East Berlin, sealing the border halted the exodus without sparking war."
         },
         {
           "stage": 4,
@@ -7551,8 +7551,8 @@
             "img": "/images/gcse_cold_war/kennedy_west_berlin_1963.jpg",
             "mode": "contain",
             "stat": "120,000 Cheering West Berliners",
-            "html": "While the Wall lowered immediate war risk, <strong>Kennedy’s 1963 Berlin speech</strong> turned Communist concrete into a lasting <strong>propaganda triumph</strong> for Western freedom.",
-            "spoken": "While the Wall lowered immediate war risk in Europe, Kennedy’s June 1963 visit to West Berlin turned the Wall into a lasting propaganda victory for Western freedom."
+            "html": "While construction of the Wall stabilised <strong>US–Soviet relations</strong> over Berlin, <strong>Kennedy’s 1963 speech</strong> won a lasting <strong>propaganda triumph</strong> for Western freedom.",
+            "spoken": "While construction of the Wall stabilised US–Soviet relations in Europe, Kennedy’s June 1963 visit to West Berlin won a lasting propaganda victory for Western freedom."
           }
         ],
         "takeaway": "Unable to force Western troops out of West Berlin without nuclear war, Khrushchev built the Berlin Wall in August 1961—halting East Germany’s collapse and stabilising Europe at immense propaganda cost.",
@@ -7642,7 +7642,7 @@
             "<span class=\"para-ref\">[1.1]</span> For decades the **United States** treated **Cuba**—just **90 miles** south of Florida—as part of its economic backyard, backing corrupt military dictator **Fulgencio Batista** while American corporations owned most Cuban sugar plantations, oil refineries, railways, and electricity networks. In **January 1959**, nationalist guerrilla leader **Fidel Castro** and **Che Guevara** overthrew Batista and began nationalising US-owned land and businesses.",
             "<span class=\"para-ref\">[1.2]</span> Determined to bring Cuba back into line, **President Eisenhower** slashed Cuban sugar imports in **July 1960**, imposed a sweeping **US trade embargo** in **October 1960**, and broke off diplomatic relations in **January 1961**. Facing economic ruin, **Fidel Castro** turned to Soviet Premier **Nikita Khrushchev**, signing agreements from **February 1960** swapping Soviet oil, loans, and conventional weapons for Cuban sugar."
           ],
-          "text": "<span class=\"para-ref\">[1.1]</span> For decades the **United States** treated **Cuba**—just **90 miles** south of Florida—as part of its economic backyard, backing corrupt military dictator **Fulgencio Batista** while American corporations owned most Cuban sugar plantations, oil refineries, railways, and electricity networks. In **January 1959**, nationalist guerrilla leader **Fidel Castro** and **Che Guevara** overthrew Batista and began nationalising US-owned land and businesses.\n\n<span class=\"para-ref\">[1.2]</span> Determined to bring Cuba back into line, **President Eisenhower** slashed Cuban sugar imports in **July 1960**, imposed a sweeping **US trade embargo** in **October 1960**, and broke off diplomatic relations in **January 1961**. Facing economic ruin, **Fidel Castro** turned to Soviet Premier **Nikita Khrushchev**, signing agreements from **February 1960** swapping Soviet oil, loans, and conventional weapons for Cuban sugar.",
+          "text": "<span class=\"para-ref\">[1.1]</span> For decades the **United States** treated **Cuba**—just **90 miles** south of Florida—as part of its economic backyard, backing corrupt military dictator **Fulgencio Batista** while American corporations owned most Cuban sugar plantations, oil refineries, railways, and electricity networks. In **January 1959**, nationalist guerrilla leader **Fidel Castro** and **Che Guevara** overthrew Batista and began nationalising US-owned land and businesses.\n\n<span class=\"para-ref\">[1.2]</span> Following the **refusal of the USA to recognise Castro’s government**, **President Eisenhower** slashed Cuban sugar imports in **July 1960**, imposed a **US trade embargo** in **October 1960**, and broke off diplomatic relations in **January 1961**. Facing economic ruin, **Fidel Castro** forged closer relations with the **Soviet Union** under **Nikita Khrushchev**, swapping Cuban sugar from **February 1960** for Soviet oil, loans, and weapons.",
           "content": "<span class=\"para-ref\">[1.1]</span> For decades the **United States** treated **Cuba**—just **90 miles** south of Florida—as part of its economic backyard, backing corrupt military dictator **Fulgencio Batista** while American corporations owned most Cuban sugar plantations, oil refineries, railways, and electricity networks. In **January 1959**, nationalist guerrilla leader **Fidel Castro** and **Che Guevara** overthrew Batista and began nationalising US-owned land and businesses.\n\n<span class=\"para-ref\">[1.2]</span> Determined to bring Cuba back into line, **President Eisenhower** slashed Cuban sugar imports in **July 1960**, imposed a sweeping **US trade embargo** in **October 1960**, and broke off diplomatic relations in **January 1961**. Facing economic ruin, **Fidel Castro** turned to Soviet Premier **Nikita Khrushchev**, signing agreements from **February 1960** swapping Soviet oil, loans, and conventional weapons for Cuban sugar.",
           "image": "/images/gcse_cold_war/kt2/cw_l6_b0_castro_havana_1959.jpg",
           "image_alt": "Cuban revolutionary leader Fidel Castro (left) in olive-green fatigues speaking with rebel commanders Eloy Gutiérrez Menoyo and William Alexander Morgan in Havana after overthrowing Fulgencio Batista in 1959",
@@ -7867,7 +7867,7 @@
             "<span class=\"para-ref\">[5.1]</span> Shocked by how close humanity came to nuclear war during the **1962** crisis, Washington and Moscow acted swiftly to stabilise **superpower relations** under **Mutually Assured Destruction (MAD)**. In **June 1963**, they established a direct **Moscow–Washington \"hotline\"** teletype link for rapid communication, and in **August 1963** the USA, USSR, and Britain signed the **Limited Test Ban Treaty**, banning nuclear testing in the atmosphere, outer space, and underwater.",
             "<span class=\"para-ref\">[5.2]</span> Two landmark agreements soon widened nuclear restraint: the **1967 Outer Space Treaty** banned placing nuclear weapons in space or on celestial bodies, and the **1968 Nuclear Non-Proliferation Treaty (NPT)** pledged nuclear powers not to spread atomic weapons to non-nuclear states. Yet because the Turkish missile deal stayed secret, **Kennedy** won immense prestige while Kremlin rivals accused **Khrushchev** of humiliation—removing him from power in **October 1964**."
           ],
-          "text": "<span class=\"para-ref\">[5.1]</span> Shocked by how close humanity came to nuclear war during the **1962** crisis, Washington and Moscow acted swiftly to stabilise **superpower relations** under **Mutually Assured Destruction (MAD)**. In **June 1963**, they established a direct **Moscow–Washington \"hotline\"** teletype link for rapid communication, and in **August 1963** the USA, USSR, and Britain signed the **Limited Test Ban Treaty**, banning nuclear testing in the atmosphere, outer space, and underwater.\n\n<span class=\"para-ref\">[5.2]</span> Two landmark agreements soon widened nuclear restraint: the **1967 Outer Space Treaty** banned placing nuclear weapons in space or on celestial bodies, and the **1968 Nuclear Non-Proliferation Treaty (NPT)** pledged nuclear powers not to spread atomic weapons to non-nuclear states. Yet because the Turkish missile deal stayed secret, **Kennedy** won immense prestige while Kremlin rivals accused **Khrushchev** of humiliation—removing him from power in **October 1964**.",
+          "text": "<span class=\"para-ref\">[5.1]</span> Shocked by how close humanity came to nuclear war during the **1962** crisis, Washington and Moscow acted swiftly to stabilise **US–Soviet relations** under **Mutually Assured Destruction (MAD)**. In **June 1963**, they established a direct **Moscow–Washington \"hotline\"** teletype link for rapid communication, and in **August 1963** the USA, USSR, and Britain signed the **Limited Test Ban Treaty**, banning nuclear testing in the atmosphere, outer space, and underwater.\n\n<span class=\"para-ref\">[5.2]</span> Sustained **attempts at arms control** soon produced two further treaties: the **1967 Outer Space Treaty** banned placing nuclear weapons in space or on celestial bodies, and the **1968 Nuclear Non-Proliferation Treaty (NPT)** pledged nuclear powers not to spread atomic weapons to non-nuclear states. Yet because the Turkish missile deal stayed secret, **Kennedy** won immense prestige while Kremlin rivals accused **Khrushchev** of humiliation—removing him from power in **October 1964**.",
           "content": "<span class=\"para-ref\">[5.1]</span> Shocked by how close humanity came to nuclear war during the **1962** crisis, Washington and Moscow acted swiftly to stabilise **superpower relations** under **Mutually Assured Destruction (MAD)**. In **June 1963**, they established a direct **Moscow–Washington \"hotline\"** teletype link for rapid communication, and in **August 1963** the USA, USSR, and Britain signed the **Limited Test Ban Treaty**, banning nuclear testing in the atmosphere, outer space, and underwater.\n\n<span class=\"para-ref\">[5.2]</span> Two landmark agreements soon widened nuclear restraint: the **1967 Outer Space Treaty** banned placing nuclear weapons in space or on celestial bodies, and the **1968 Nuclear Non-Proliferation Treaty (NPT)** pledged nuclear powers not to spread atomic weapons to non-nuclear states. Yet because the Turkish missile deal stayed secret, **Kennedy** won immense prestige while Kremlin rivals accused **Khrushchev** of humiliation—removing him from power in **October 1964**.",
           "image": "/images/gcse_cold_war/kt2/cw_l6_b4_kennedy_signing_test_ban_treaty_1963.jpg",
           "image_alt": "Colour White House photograph of President John F. Kennedy seated at a mahogany Treaty Room desk signing the Limited Nuclear Test Ban Treaty surrounded by Vice President Lyndon B. Johnson and US Senators on 7 October 1963",
@@ -7899,7 +7899,7 @@
             }
           ],
           "model_sentence": "After <strong>Fidel Castro</strong> overthrew Batista in <strong>January 1959</strong> and nationalised US businesses, Eisenhower’s 1960 <strong>sugar embargo</strong> drove Cuba to rely on <strong>Khrushchev</strong> for Soviet oil, trade, and weapons.",
-          "prose_hash": "c70f558d56"
+          "prose_hash": "24e9e7abc1"
         },
         {
           "step": 2,
@@ -8003,7 +8003,7 @@
             }
           ],
           "model_sentence": "Fear of nuclear catastrophe in <strong>1962</strong> improved <strong>superpower relations</strong> via the 1963 <strong>Hotline</strong>, <strong>Limited Test Ban Treaty</strong>, 1967 <strong>Outer Space Treaty</strong>, and <strong>1968 Nuclear Non-Proliferation Treaty</strong>, even as Khrushchev was ousted in 1964.",
-          "prose_hash": "b62ba8d2b9"
+          "prose_hash": "d77b5fb5ea"
         }
       ],
       "causal_domino_spine": {
@@ -8021,7 +8021,7 @@
             "connective": "Determined to topple Castro before Soviet ties deepened, Washington backed a covert exile landing...",
             "exam_link": "Q2 Narrative: Explains why nationalist Cuba moved into Moscow’s economic and military orbit.",
             "question": "Why did Fidel Castro turn to Khrushchev after January 1959?",
-            "prose_hash": "c70f558d56"
+            "prose_hash": "24e9e7abc1"
           },
           {
             "step": 2,
@@ -8077,7 +8077,7 @@
             "connective": "While superpower nuclear relations stabilised, Eastern European discontent soon erupted in Czechoslovakia in 1968...",
             "exam_link": "Q3 Importance: Transformed superpower relations from brinkmanship to treaty-based nuclear restraint (1963–68).",
             "question": "In what ways did the 1962 crisis improve superpower relations by 1968?",
-            "prose_hash": "b62ba8d2b9"
+            "prose_hash": "d77b5fb5ea"
           }
         ]
       },
@@ -8473,17 +8473,17 @@
         },
         {
           "stage": 3,
-          "question": "On what date did an American U-2 spy plane photograph Soviet nuclear missile sites at San Cristóbal in Cuba?",
-          "q": "On what date did an American U-2 spy plane photograph Soviet nuclear missile sites at San Cristóbal in Cuba?",
+          "question": "Why did President Kennedy reject his advisers' calls for immediate airstrikes and an invasion of Cuba in October 1962?",
+          "q": "Why did President Kennedy reject his advisers' calls for immediate airstrikes and an invasion of Cuba in October 1962?",
           "options": [
-            "14 October 1962",
-            "17 April 1961",
-            "13 August 1961",
-            "5 August 1963"
+            "The US Air Force lacked aircraft capable of reaching San Cristóbal",
+            "The Soviet Union had already dismantled its R-12 launch sites",
+            "Attacking Cuba risked killing Soviet troops and triggering nuclear war",
+            "The United Nations Security Council prohibited any US naval movement"
           ],
-          "answer": "14 October 1962",
-          "a": "14 October 1962",
-          "explanation": "High-altitude U-2 reconnaissance photographs taken on 14 October 1962 revealed Soviet R-12 medium-range missile bases on Cuba."
+          "answer": "Attacking Cuba risked killing Soviet troops and triggering nuclear war",
+          "a": "Attacking Cuba risked killing Soviet troops and triggering nuclear war",
+          "explanation": "In ExComm meetings, Kennedy recognised that bombing or invading Cuba risked killing Soviet personnel on the island and escalating rapidly into full-scale nuclear war."
         },
         {
           "stage": 3,
@@ -8571,17 +8571,17 @@
         },
         {
           "stage": 4,
-          "question": "On what date did Khrushchev broadcast Moscow’s agreement to dismantle and remove Soviet missiles from Cuba?",
-          "q": "On what date did Khrushchev broadcast Moscow’s agreement to dismantle and remove Soviet missiles from Cuba?",
+          "question": "What two commitments did the United States make to persuade Khrushchev to remove Soviet missiles from Cuba in October 1962?",
+          "q": "What two commitments did the United States make to persuade Khrushchev to remove Soviet missiles from Cuba in October 1962?",
           "options": [
-            "28 October 1962",
-            "22 October 1962",
-            "17 April 1961",
-            "26 June 1963"
+            "A public pledge never to invade Cuba and a secret promise to remove US missiles from Turkey",
+            "Ending the US trade embargo on Cuba and recognising East Germany",
+            "Withdrawing US troops from West Berlin and cancelling the Apollo programme",
+            "Sharing nuclear submarine technology and dismantling NATO bases in Britain"
           ],
-          "answer": "28 October 1962",
-          "a": "28 October 1962",
-          "explanation": "Radio Moscow broadcast Khrushchev’s acceptance on Sunday 28 October 1962, ending the acute Thirteen Days crisis."
+          "answer": "A public pledge never to invade Cuba and a secret promise to remove US missiles from Turkey",
+          "a": "A public pledge never to invade Cuba and a secret promise to remove US missiles from Turkey",
+          "explanation": "Kennedy publicly promised never to invade Cuba while secretly assuring Moscow via Robert Kennedy that US Jupiter missiles would be withdrawn from Turkey."
         },
         {
           "stage": 5,
@@ -9017,8 +9017,8 @@
             "img": "/images/portraits/fidel_castro_1959.jpg",
             "mode": "contain",
             "stat": "90 Miles Off Florida • US Embargo",
-            "html": "After <strong>Fidel Castro</strong> overthrew Batista and nationalised US assets, Eisenhower’s <strong>1960 sugar embargo</strong> pushed Cuba to trade sugar for <strong>Soviet oil and arms</strong>.",
-            "spoken": "How did the 1962 Cuban Crisis lead to nuclear restraint? After Fidel Castro overthrew Batista in January 1959 and nationalised US assets, Eisenhower’s 1960 sugar embargo pushed Cuba to swap sugar for Soviet oil and arms."
+            "html": "After <strong>Fidel Castro</strong> overthrew Batista, the <strong>refusal of the USA to recognise Castro’s government</strong> and a sugar embargo drove closer ties with the <strong>Soviet Union</strong>.",
+            "spoken": "How did the 1962 Cuban Crisis lead to nuclear restraint? After Fidel Castro overthrew Batista in January 1959, the refusal of the USA to recognise Castro’s government and a sugar embargo drove closer relations with the Soviet Union."
           },
           {
             "badge": "Stage 2",
@@ -9071,8 +9071,8 @@
             "spoken": "Shocked by coming hours from nuclear war, Washington and Moscow installed the 1963 Hotline and signed the Limited Test Ban, Outer Space, and Nuclear Non-Proliferation treaties by 1968."
           }
         ],
-        "takeaway": "After US sanctions and the Bay of Pigs fiasco led to Soviet missiles on Cuba, Kennedy’s naval quarantine and secret Turkish missile swap averted nuclear war—ushering in the 1963 Hotline and landmark nuclear treaties.",
-        "spokenTakeaway": "After US sanctions and the Bay of Pigs fiasco led to Soviet missiles on Cuba, Kennedy’s naval quarantine and secret Turkish missile swap averted nuclear war, ushering in the 1963 Hotline and landmark nuclear treaties.",
+        "takeaway": "After the refusal of the USA to recognise Castro’s government and the Bay of Pigs fiasco led to Soviet missiles on Cuba, Kennedy’s quarantine and secret Turkey swap ushered in the 1963 Hotline and attempts at arms control.",
+        "spokenTakeaway": "After the refusal of the USA to recognise Castro’s government and the Bay of Pigs fiasco led to Soviet missiles on Cuba, Kennedy’s quarantine and secret Turkey swap ushered in the 1963 Hotline and attempts at arms control.",
         "vocab": [
           {
             "term": "Bay of Pigs",
@@ -11321,17 +11321,17 @@
       "quiz": [
         {
           "stage": 1,
-          "question": "On what night did Warsaw Pact forces launch their full-scale military invasion of Czechoslovakia?",
-          "q": "On what night did Warsaw Pact forces launch their full-scale military invasion of Czechoslovakia?",
+          "question": "Why did the Soviet Politburo vote for armed intervention in Czechoslovakia after the Čierna nad Tisou and Bratislava summits in August 1968?",
+          "q": "Why did the Soviet Politburo vote for armed intervention in Czechoslovakia after the Čierna nad Tisou and Bratislava summits in August 1968?",
           "options": [
-            "20–21 August 1968",
-            "4 November 1956",
-            "13 August 1961",
-            "16 October 1962"
+            "Czechoslovakia had announced its immediate withdrawal from the Warsaw Pact",
+            "They concluded Dubček would never reimpose censorship or silence anti-Soviet newspapers",
+            "West German troops had crossed into northern Bohemia to support reformers",
+            "President Ludvík Svoboda invited the Red Army to arrest Alexander Dubček"
           ],
-          "answer": "20–21 August 1968",
-          "a": "20–21 August 1968",
-          "explanation": "Late on 20–21 August 1968, Warsaw Pact troops and tanks crossed into Czechoslovakia from multiple directions."
+          "answer": "They concluded Dubček would never reimpose censorship or silence anti-Soviet newspapers",
+          "a": "They concluded Dubček would never reimpose censorship or silence anti-Soviet newspapers",
+          "explanation": "Although Dubček never tried to leave the Warsaw Pact, the summits convinced Brezhnev and the Politburo that he would not restore press censorship or curb anti-Soviet criticism."
         },
         {
           "stage": 1,
@@ -12014,13 +12014,13 @@
           },
           {
             "badge": "Stage 5",
-            "heading": "US Verbal Protest Only",
+            "heading": "US & International Reaction",
             "date": "Aug–Dec 1968",
             "img": "/images/gcse_cold_war/soviet_tank_budapest_1956.jpg",
             "mode": "contain",
             "stat": "500,000 US Troops in Vietnam",
-            "html": "Just as over Hungary in 1956, Washington avoided war inside the Soviet sphere: bogged down in <strong>Vietnam</strong>, President <strong>Johnson</strong> only cancelled a Moscow summit.",
-            "spoken": "Just as over Hungary in 1956, Washington avoided war inside the Soviet sphere: bogged down by 500,000 troops in Vietnam, President Johnson only condemned the invasion and cancelled a Moscow summit."
+            "html": "<strong>International reaction</strong> stayed verbal: avoiding war inside the Soviet sphere while tied down in <strong>Vietnam</strong>, President <strong>Johnson</strong> only cancelled a Moscow summit.",
+            "spoken": "International reaction stayed strictly verbal: avoiding war inside the Soviet sphere while bogged down by 500,000 troops in Vietnam, President Johnson only condemned the invasion and cancelled a Moscow summit."
           },
           {
             "badge": "Stage 6",
@@ -12033,8 +12033,8 @@
             "spoken": "Ceaușescu’s Romania refused to send troops and joined Yugoslavia and China in protest, while French and Italian Communist Parties broke from Moscow through independent Eurocommunism."
           }
         ],
-        "takeaway": "The August 1968 invasion and Brezhnev Doctrine locked Eastern Europe under one-party rule until 1989 without provoking US military intervention, yet permanently fractured world communism.",
-        "spokenTakeaway": "The August 1968 invasion and Brezhnev Doctrine locked Eastern Europe under one-party rule until 1989 without provoking US military intervention, yet permanently fractured world communism.",
+        "takeaway": "The August 1968 invasion and Brezhnev Doctrine locked Eastern Europe under one-party rule until 1989: international reaction brought no US military action, yet fractured world communism.",
+        "spokenTakeaway": "The August 1968 invasion and Brezhnev Doctrine locked Eastern Europe under one-party rule until 1989: international reaction brought no US military action, yet fractured world communism.",
         "vocab": [
           {
             "term": "Passive Resistance",
@@ -12120,7 +12120,7 @@
             "<span class=\"para-ref\">[1.1]</span> By the early **1970s**, urgent strategic and economic pressures pushed both the **USA** and the **USSR** toward **Détente**—a deliberate relaxation of Cold War tension. Since the **1962 Cuban Missile Crisis**, both superpowers feared **Mutually Assured Destruction (MAD)** and wanted to curb ruinous arms spending. Under President **Richard Nixon** and adviser **Henry Kissinger**, the **USA** was drained by the **Vietnam War**, which cost over **$150 billion**, killed **58,000** Americans, fuelled inflation, and sparked fierce domestic protests.",
             "<span class=\"para-ref\">[1.2]</span> Meanwhile, Soviet leader **Leonid Brezhnev** needed Western grain imports and modern industrial technology to rescue stagnant living standards across the **USSR**. Having finally achieved rough nuclear parity with Washington, Moscow also feared diplomatic isolation after its bitter **Sino-Soviet** border split—especially once Nixon visited Communist **China** in **February 1972**—giving both capitals strong incentives to negotiate."
           ],
-          "text": "<span class=\"para-ref\">[1.1]</span> By the early **1970s**, urgent strategic and economic pressures pushed both the **USA** and the **USSR** toward **Détente**—a deliberate relaxation of Cold War tension. Since the **1962 Cuban Missile Crisis**, both superpowers feared **Mutually Assured Destruction (MAD)** and wanted to curb ruinous arms spending. Under President **Richard Nixon** and adviser **Henry Kissinger**, the **USA** was drained by the **Vietnam War**, which cost over **$150 billion**, killed **58,000** Americans, fuelled inflation, and sparked fierce domestic protests.\n\n<span class=\"para-ref\">[1.2]</span> Meanwhile, Soviet leader **Leonid Brezhnev** needed Western grain imports and modern industrial technology to rescue stagnant living standards across the **USSR**. Having finally achieved rough nuclear parity with Washington, Moscow also feared diplomatic isolation after its bitter **Sino-Soviet** border split—especially once Nixon visited Communist **China** in **February 1972**—giving both capitals strong incentives to negotiate.",
+          "text": "<span class=\"para-ref\">[1.1]</span> By the early **1970s**, urgent strategic and economic pressures pushed both the **USA** and the **USSR** toward **Détente**—a deliberate relaxation of Cold War tension. Since the **1962 Cuban Missile Crisis**, both superpowers feared **Mutually Assured Destruction (MAD)** and pursued **attempts at arms control** to curb ruinous military spending. Under President **Richard Nixon** and adviser **Henry Kissinger**, the **USA** was drained by the **Vietnam War**, which cost over **$150 billion**, killed **58,000** Americans, fuelled inflation, and sparked fierce domestic protests.\n\n<span class=\"para-ref\">[1.2]</span> Meanwhile, Soviet leader **Leonid Brezhnev** needed Western grain imports and modern industrial technology to rescue stagnant living standards across the **USSR**. Having finally achieved rough nuclear parity with Washington, Moscow also feared diplomatic isolation after its bitter **Sino-Soviet** border split—especially once Nixon visited Communist **China** in **February 1972**—giving both capitals strong incentives to negotiate.",
           "content": "<span class=\"para-ref\">[1.1]</span> By the early **1970s**, urgent strategic and economic pressures pushed both the **USA** and the **USSR** toward **Détente**—a deliberate relaxation of Cold War tension. Since the **1962 Cuban Missile Crisis**, both superpowers feared **Mutually Assured Destruction (MAD)** and wanted to curb ruinous arms spending. Under President **Richard Nixon** and adviser **Henry Kissinger**, the **USA** was drained by the **Vietnam War**, which cost over **$150 billion**, killed **58,000** Americans, fuelled inflation, and sparked fierce domestic protests.\n\n<span class=\"para-ref\">[1.2]</span> Meanwhile, Soviet leader **Leonid Brezhnev** needed Western grain imports and modern industrial technology to rescue stagnant living standards across the **USSR**. Having finally achieved rough nuclear parity with Washington, Moscow also feared diplomatic isolation after its bitter **Sino-Soviet** border split—especially once Nixon visited Communist **China** in **February 1972**—giving both capitals strong incentives to negotiate.",
           "stage_hook_map": {
             "id": "cw-l9-detente-helsinki-map",
@@ -12377,7 +12377,7 @@
             }
           ],
           "model_sentence": "Both superpowers pursued <strong>Détente</strong> because the USA sought relief from the costly <strong>Vietnam War</strong> while <strong>Brezhnev</strong> needed Western grain and technology, reinforced by shared fear of <strong>MAD</strong> and Nixon’s 1972 visit to China.",
-          "prose_hash": "88954cccc6"
+          "prose_hash": "5683978d69"
         },
         {
           "step": 2,
@@ -12499,7 +12499,7 @@
             "connective": "Those negotiations produced a landmark nuclear arms summit in Moscow in May 1972...",
             "exam_link": "Q2 Narrative: Opening causes explaining why both superpowers actively needed Détente by 1970–72.",
             "question": "Why did the USA and USSR both pursue Détente in the early 1970s?",
-            "prose_hash": "88954cccc6"
+            "prose_hash": "5683978d69"
           },
           {
             "step": 2,
@@ -13091,17 +13091,17 @@
         },
         {
           "stage": 5,
-          "question": "Where and when did Jimmy Carter and Leonid Brezhnev sign the SALT 2 treaty?",
-          "q": "Where and when did Jimmy Carter and Leonid Brezhnev sign the SALT 2 treaty?",
+          "question": "What key arms limitation did the June 1979 SALT 2 treaty establish between the USA and the USSR?",
+          "q": "What key arms limitation did the June 1979 SALT 2 treaty establish between the USA and the USSR?",
           "options": [
-            "Vienna, 18 June 1979",
-            "Moscow, 26 May 1972",
-            "Helsinki, 1 August 1975",
-            "Reykjavik, October 1986"
+            "It banned all nuclear weapons testing in the atmosphere and underwater",
+            "It eliminated all intermediate-range nuclear missiles across Europe",
+            "It set an equal cap of 2,400 strategic delivery vehicles and limited MIRV launchers",
+            "It dismantled all Anti-Ballistic Missile sites in both superpowers"
           ],
-          "answer": "Vienna, 18 June 1979",
-          "a": "Vienna, 18 June 1979",
-          "explanation": "Carter and Brezhnev signed SALT 2 at the Hofburg Palace in Vienna on 18 June 1979, capping launchers at 2,400."
+          "answer": "It set an equal cap of 2,400 strategic delivery vehicles and limited MIRV launchers",
+          "a": "It set an equal cap of 2,400 strategic delivery vehicles and limited MIRV launchers",
+          "explanation": "Signed in Vienna in June 1979, SALT 2 closed a major SALT 1 loophole by capping strategic nuclear delivery vehicles at 2,400 (falling to 2,250) and restricting MIRV launchers."
         },
         {
           "stage": 5,
@@ -15322,7 +15322,7 @@
             "<span class=\"para-ref\">[5.1]</span> Superpower reconciliation accelerated throughout **1988**. Visiting the **Moscow Summit** in **May–June 1988**, **Reagan** strolled across **Red Square** with **Gorbachev** and told reporters he no longer considered the **Soviet** Union an *\"Evil Empire\"* because it belonged to *\"another time, another era\"*. Addressing the **United Nations** on **7 December 1988**, Gorbachev announced unilateral cuts of **500,000 Red Army** troops and formally abandoned the **1968 Brezhnev Doctrine**, promising that **Soviet** tanks would never again crush Eastern European political choices.",
             "<span class=\"para-ref\">[5.2]</span> True to his word, Gorbachev completed the full withdrawal of **Soviet** forces from **Afghanistan** in **February 1989**, removing a major barrier to Western trust. Finally, aboard storm-tossed warships at the **Malta Summit** in **December 1989**, Gorbachev and new US President **George H. W. Bush** declared the Cold War officially over."
           ],
-          "text": "<span class=\"para-ref\">[5.1]</span> Superpower reconciliation accelerated throughout **1988**. Visiting the **Moscow Summit** in **May–June 1988**, **Reagan** strolled across **Red Square** with **Gorbachev** and told reporters he no longer considered the **Soviet** Union an *\"Evil Empire\"* because it belonged to *\"another time, another era\"*. Addressing the **United Nations** on **7 December 1988**, Gorbachev announced unilateral cuts of **500,000 Red Army** troops and formally abandoned the **1968 Brezhnev Doctrine**, promising that **Soviet** tanks would never again crush Eastern European political choices.\n\n<span class=\"para-ref\">[5.2]</span> True to his word, Gorbachev completed the full withdrawal of **Soviet** forces from **Afghanistan** in **February 1989**, removing a major barrier to Western trust. Finally, aboard storm-tossed warships at the **Malta Summit** in **December 1989**, Gorbachev and new US President **George H. W. Bush** declared the Cold War officially over.",
+          "text": "<span class=\"para-ref\">[5.1]</span> Superpower reconciliation accelerated throughout **1988**. Visiting the **Moscow Summit** in **May–June 1988**, **Reagan** strolled across **Red Square** with **Gorbachev** and told reporters he no longer considered the **Soviet** Union an *\"Evil Empire\"* because it belonged to *\"another time, another era\"*. Addressing the **United Nations** on **7 December 1988**, Gorbachev announced unilateral cuts of **500,000 Red Army** troops and formally abandoned the **1968 Brezhnev Doctrine**, promising that **Soviet** tanks would never again crush satellite reforms—beginning **the loosening Soviet grip on Eastern Europe**.\n\n<span class=\"para-ref\">[5.2]</span> True to his word, Gorbachev completed the full withdrawal of **Soviet** forces from **Afghanistan** in **February 1989**, removing a major barrier to Western trust. Finally, aboard storm-tossed warships at the **Malta Summit** in **December 1989**, Gorbachev and new US President **George H. W. Bush** declared the Cold War officially over.",
           "content": "<span class=\"para-ref\">[5.1]</span> Superpower reconciliation accelerated throughout **1988**. Visiting the **Moscow Summit** in **May–June 1988**, **Reagan** strolled across **Red Square** with **Gorbachev** and told reporters he no longer considered the **Soviet** Union an *\"Evil Empire\"* because it belonged to *\"another time, another era\"*. Addressing the **United Nations** on **7 December 1988**, Gorbachev announced unilateral cuts of **500,000 Red Army** troops and formally abandoned the **1968 Brezhnev Doctrine**, promising that **Soviet** tanks would never again crush Eastern European political choices.\n\n<span class=\"para-ref\">[5.2]</span> True to his word, Gorbachev completed the full withdrawal of **Soviet** forces from **Afghanistan** in **February 1989**, removing a major barrier to Western trust. Finally, aboard storm-tossed warships at the **Malta Summit** in **December 1989**, Gorbachev and new US President **George H. W. Bush** declared the Cold War officially over.",
           "image": "/images/gcse_cold_war/kt3/cw_l11_b4_bush_gorbachev_malta_1989.jpg",
           "image_alt": "US President George H. W. Bush and Soviet leader Mikhail Gorbachev conversing across a red-clothed dining table aboard the Soviet cruise ship Maxim Gorky during the Malta Summit on 2 December 1989",
@@ -15458,7 +15458,7 @@
             }
           ],
           "model_sentence": "Between 1988 and December 1989, Gorbachev cut <strong>500,000 Red Army troops</strong>, abandoned the <strong>Brezhnev Doctrine</strong>, withdrew from <strong>Afghanistan</strong>, and joined US President <strong>George H. W. Bush</strong> at <strong>Malta</strong> to declare the Cold War over.",
-          "prose_hash": "44845dd145"
+          "prose_hash": "15d6dde447"
         }
       ],
       "causal_domino_spine": {
@@ -15532,7 +15532,7 @@
             "connective": "Without Red Army tanks propping them up, Communist regimes across the Warsaw Pact immediately began to topple.",
             "exam_link": "Q2 Narrative: Culmination of \"New Thinking\" ending the Afghan war, the Brezhnev Doctrine, and superpower rivalry.",
             "question": "In what ways did Soviet policy between 1988 and December 1989 end rivalry?",
-            "prose_hash": "44845dd145"
+            "prose_hash": "15d6dde447"
           }
         ]
       },
@@ -16621,7 +16621,7 @@
             "<span class=\"para-ref\">[1.1]</span> Once **Mikhail Gorbachev** renounced the **1968 Brezhnev Doctrine**—jokingly christened the **\"Sinatra Doctrine\"** by Soviet spokesman **Gennady Gerasimov** in **October 1989** because **Warsaw Pact** states were now free to *\"do it their way\"*—Eastern Europe’s unpopular **Communist** regimes lost the **Red Army** tanks that had kept them in power since 1945. Reformers immediately tested Moscow’s restraint.",
             "<span class=\"para-ref\">[1.2]</span> In **Poland**, crippling strikes forced General Wojciech Jaruzelski to re-legalise **Lech Wałęsa**’s independent trade union **Solidarity** and hold semi-free elections in **June 1989**; Solidarity won **99 of 100** Senate seats, making **Tadeusz Mazowiecki** the Eastern Bloc’s first non-communist Prime Minister since 1948 while Moscow stayed silent. Simultaneously, reformist **Hungary** dismantled its barbed-wire border fence with neutral **Austria** between **May and September 1989**, opening a huge gap in the Iron Curtain."
           ],
-          "text": "<span class=\"para-ref\">[1.1]</span> Once **Mikhail Gorbachev** renounced the **1968 Brezhnev Doctrine**—jokingly christened the **\"Sinatra Doctrine\"** by Soviet spokesman **Gennady Gerasimov** in **October 1989** because **Warsaw Pact** states were now free to *\"do it their way\"*—Eastern Europe’s unpopular **Communist** regimes lost the **Red Army** tanks that had kept them in power since 1945. Reformers immediately tested Moscow’s restraint.\n\n<span class=\"para-ref\">[1.2]</span> In **Poland**, crippling strikes forced General Wojciech Jaruzelski to re-legalise **Lech Wałęsa**’s independent trade union **Solidarity** and hold semi-free elections in **June 1989**; Solidarity won **99 of 100** Senate seats, making **Tadeusz Mazowiecki** the Eastern Bloc’s first non-communist Prime Minister since 1948 while Moscow stayed silent. Simultaneously, reformist **Hungary** dismantled its barbed-wire border fence with neutral **Austria** between **May and September 1989**, opening a huge gap in the Iron Curtain.",
+          "text": "<span class=\"para-ref\">[1.1]</span> Once **Mikhail Gorbachev** renounced the **1968 Brezhnev Doctrine**—jokingly christened the **\"Sinatra Doctrine\"** by Soviet spokesman **Gennady Gerasimov** in **October 1989** because **Warsaw Pact** states were now free to *\"do it their way\"*—Eastern Europe’s unpopular **Communist** regimes lost the **Red Army** tanks that had kept them in power since 1945. Reformers immediately tested **the loosening Soviet grip on Eastern Europe**.\n\n<span class=\"para-ref\">[1.2]</span> In **Poland**, crippling strikes forced General Wojciech Jaruzelski to re-legalise **Lech Wałęsa**’s independent trade union **Solidarity** and hold semi-free elections in **June 1989**; Solidarity won **99 of 100** Senate seats, making **Tadeusz Mazowiecki** the Eastern Bloc’s first non-communist Prime Minister since 1948 while Moscow stayed silent. Simultaneously, reformist **Hungary** dismantled its barbed-wire border fence with neutral **Austria** between **May and September 1989**, opening a huge gap in the Iron Curtain.",
           "content": "<span class=\"para-ref\">[1.1]</span> Once **Mikhail Gorbachev** renounced the **1968 Brezhnev Doctrine**—jokingly christened the **\"Sinatra Doctrine\"** by Soviet spokesman **Gennady Gerasimov** in **October 1989** because **Warsaw Pact** states were now free to *\"do it their way\"*—Eastern Europe’s unpopular **Communist** regimes lost the **Red Army** tanks that had kept them in power since 1945. Reformers immediately tested Moscow’s restraint.\n\n<span class=\"para-ref\">[1.2]</span> In **Poland**, crippling strikes forced General Wojciech Jaruzelski to re-legalise **Lech Wałęsa**’s independent trade union **Solidarity** and hold semi-free elections in **June 1989**; Solidarity won **99 of 100** Senate seats, making **Tadeusz Mazowiecki** the Eastern Bloc’s first non-communist Prime Minister since 1948 while Moscow stayed silent. Simultaneously, reformist **Hungary** dismantled its barbed-wire border fence with neutral **Austria** between **May and September 1989**, opening a huge gap in the Iron Curtain.",
           "image": "/images/gcse_cold_war/kt3/cw_l12_b0_polish_round_table_1989.jpg",
           "image_alt": "Solidarity leaders Tadeusz Mazowiecki and Lech Wałęsa walking side by side past television cameras at the close of the Polish Round Table Talks on 5 April 1989",
@@ -16879,7 +16879,7 @@
             }
           ],
           "model_sentence": "Protected by Gorbachev’s <strong>Sinatra Doctrine</strong>, <strong>Solidarity</strong> won Poland’s June 1989 elections under <strong>Tadeusz Mazowiecki</strong> while <strong>Hungary</strong> opened its border fence with neutral <strong>Austria</strong>.",
-          "prose_hash": "c5a5f081ef"
+          "prose_hash": "62935fdd86"
         },
         {
           "step": 2,
@@ -17001,7 +17001,7 @@
             "connective": "Tens of thousands of East Germans poured through Hungary’s open border, igniting crisis inside the GDR...",
             "exam_link": "Q2 Narrative: Opening domino showing how ending the Brezhnev Doctrine triggered Poland and Hungary.",
             "question": "Why did Poland and Hungary break from Communist control during 1989?",
-            "prose_hash": "c5a5f081ef"
+            "prose_hash": "62935fdd86"
           },
           {
             "step": 2,
@@ -17426,17 +17426,17 @@
         },
         {
           "stage": 2,
-          "question": "On what exact date did East and West Berliners open and begin dismantling the Berlin Wall?",
-          "q": "On what exact date did East and West Berliners open and begin dismantling the Berlin Wall?",
+          "question": "What decisive signal from Mikhail Gorbachev in October 1989 fatally undermined Erich Honecker's hardline regime in East Germany?",
+          "q": "What decisive signal from Mikhail Gorbachev in October 1989 fatally undermined Erich Honecker's hardline regime in East Germany?",
           "options": [
-            "9 November 1989",
-            "13 August 1961",
-            "3 October 1990",
-            "25 December 1991"
+            "He warned that Soviet troops stationed in East Germany would stay in their barracks",
+            "He ordered the Red Army to dismantle the Berlin Wall immediately",
+            "He cut off all Soviet oil and gas supplies to East Berlin",
+            "He signed a reunification treaty directly with West German Chancellor Helmut Kohl"
           ],
-          "answer": "9 November 1989",
-          "a": "9 November 1989",
-          "explanation": "On the night of 9 November 1989, East German guards opened Berlin’s border checkpoints following Günter Schabowski’s press conference."
+          "answer": "He warned that Soviet troops stationed in East Germany would stay in their barracks",
+          "a": "He warned that Soviet troops stationed in East Germany would stay in their barracks",
+          "explanation": "Gorbachev's warning that Soviet troops would not intervene to crush protesters emboldened huge peaceful Leipzig demonstrations and forced the Politburo to replace Honecker."
         },
         {
           "stage": 2,
@@ -17482,31 +17482,31 @@
         },
         {
           "stage": 3,
-          "question": "On what date were East and West Germany formally reunified into a single democratic state inside NATO?",
-          "q": "On what date were East and West Germany formally reunified into a single democratic state inside NATO?",
+          "question": "How did West German Chancellor Helmut Kohl persuade Mikhail Gorbachev to accept German reunification inside NATO in 1990?",
+          "q": "How did West German Chancellor Helmut Kohl persuade Mikhail Gorbachev to accept German reunification inside NATO in 1990?",
           "options": [
-            "3 October 1990",
-            "9 November 1989",
-            "1 July 1991",
-            "8 December 1987"
+            "By promising to disband NATO within five years of reunification",
+            "By backing negotiations with substantial Western financial loans for the USSR",
+            "By agreeing to keep East Germany inside the Warsaw Pact permanently",
+            "By offering to return eastern Poland to Soviet control"
           ],
-          "answer": "3 October 1990",
-          "a": "3 October 1990",
-          "explanation": "Backed by Chancellor Helmut Kohl and approved by Gorbachev, formal German reunification took place on 3 October 1990."
+          "answer": "By backing negotiations with substantial Western financial loans for the USSR",
+          "a": "By backing negotiations with substantial Western financial loans for the USSR",
+          "explanation": "Desperately needing economic aid for the struggling Soviet economy, Gorbachev accepted German reunification inside NATO after Chancellor Helmut Kohl backed the deal with Western financial loans."
         },
         {
           "stage": 3,
-          "question": "When was the Warsaw Pact military alliance formally dissolved after losing its Eastern European members?",
-          "q": "When was the Warsaw Pact military alliance formally dissolved after losing its Eastern European members?",
+          "question": "Why did the Warsaw Pact military alliance lose all purpose and formally dissolve in 1991?",
+          "q": "Why did the Warsaw Pact military alliance lose all purpose and formally dissolve in 1991?",
           "options": [
-            "1 July 1991",
-            "14 May 1955",
-            "9 November 1989",
-            "12 March 1947"
+            "NATO launched a pre-emptive military strike against Soviet bases in Poland",
+            "Gorbachev expelled Eastern European states after they rejected Perestroika",
+            "Newly elected Eastern European governments demanded the withdrawal of Soviet garrisons",
+            "The United Nations Security Council outlawed all Cold War military alliances"
           ],
-          "answer": "1 July 1991",
-          "a": "1 July 1991",
-          "explanation": "After dissolving its military command structures in March 1991, the Warsaw Pact formally ended in Prague on 1 July 1991."
+          "answer": "Newly elected Eastern European governments demanded the withdrawal of Soviet garrisons",
+          "a": "Newly elected Eastern European governments demanded the withdrawal of Soviet garrisons",
+          "explanation": "Following the 1989 revolutions, newly elected governments in Poland, Hungary, and Czechoslovakia demanded the removal of Soviet troops, leaving the Warsaw Pact without a function."
         },
         {
           "stage": 4,
@@ -17594,17 +17594,17 @@
         },
         {
           "stage": 5,
-          "question": "On what date did Mikhail Gorbachev resign on television as final President of the Soviet Union?",
-          "q": "On what date did Mikhail Gorbachev resign on television as final President of the Soviet Union?",
+          "question": "Which decisive referendum in December 1991 triggered the Belavezha Accords and sealed the dissolution of the USSR?",
+          "q": "Which decisive referendum in December 1991 triggered the Belavezha Accords and sealed the dissolution of the USSR?",
           "options": [
-            "25 December 1991",
-            "19 August 1991",
-            "9 November 1989",
-            "1 July 1991"
+            "Ukraine's 90% vote in favour of full national independence",
+            "East Germany's vote to join the European Economic Community",
+            "Russia's vote to restore the pre-1917 Tsarist monarchy",
+            "Poland's referendum to join NATO and leave the CIS"
           ],
-          "answer": "25 December 1991",
-          "a": "25 December 1991",
-          "explanation": "Left as a president without a country, Gorbachev resigned on Christmas night, 25 December 1991, and the Soviet flag was lowered over the Kremlin."
+          "answer": "Ukraine's 90% vote in favour of full national independence",
+          "a": "Ukraine's 90% vote in favour of full national independence",
+          "explanation": "Ukraine's overwhelming 90% vote for independence in December 1991 made saving the Soviet Union impossible, prompting Russia, Ukraine, and Belarus to dissolve the USSR and form the CIS."
         },
         {
           "stage": 5,
@@ -18003,8 +18003,8 @@
             "img": "/images/cold_war/cold_war_global_alliances_map_1980.svg",
             "mode": "contain",
             "stat": "Solidarity Wins • Hungary Opens Border",
-            "html": "Once Moscow let Warsaw Pact states go <strong>\"their way\"</strong>, <strong>Solidarity</strong> won Polish elections (June 1989) and <strong>Hungary</strong> cut its border wire with Austria.",
-            "spoken": "Why did the Berlin Wall fall and the Soviet Union collapse by 1991? Once Moscow let Warsaw Pact states go their own way, Solidarity won Polish elections in June 1989 and Hungary opened its border with neutral Austria."
+            "html": "<strong>The loosening Soviet grip on Eastern Europe</strong> under the Sinatra Doctrine saw <strong>Solidarity</strong> win Polish elections (June 1989) and <strong>Hungary</strong> open its Austrian border.",
+            "spoken": "Why did the Berlin Wall fall and the Soviet Union collapse by 1991? The loosening Soviet grip on Eastern Europe under the Sinatra Doctrine saw Solidarity win Polish elections in June 1989 and Hungary open its border with neutral Austria."
           },
           {
             "badge": "Stage 2",
@@ -18033,7 +18033,7 @@
             "img": "/images/gcse_cold_war/reagan_brandenburg_gate_1987.jpg",
             "mode": "contain",
             "stat": "3 Oct 1990 Germany • 1 July 1991 Pact Ends",
-            "html": "Following Czechoslovakia’s <strong>Velvet Revolution</strong>, Germany reunified inside NATO on <strong>3 October 1990</strong> and the <strong>Warsaw Pact</strong> formally dissolved on <strong>1 July 1991</strong>.",
+            "html": "Following Czechoslovakia’s <strong>Velvet Revolution</strong>, Germany reunified inside NATO (<strong>3 Oct 1990</strong>), <strong>bringing about the end of the Warsaw Pact</strong> on <strong>1 July 1991</strong>.",
             "spoken": "Following Czechoslovakia’s Velvet Revolution, Germany formally reunified inside NATO on 3 October 1990 and the Warsaw Pact dissolved on 1 July 1991."
           },
           {
@@ -18057,8 +18057,8 @@
             "spoken": "After Russia, Ukraine, and Belarus formed the Commonwealth of Independent States, Mikhail Gorbachev resigned on 25 December 1991, lowering the Soviet flag and ending the Cold War."
           }
         ],
-        "takeaway": "Abandoning the Brezhnev Doctrine unleashed peaceful 1989 revolutions that toppled the Berlin Wall and dissolved the Warsaw Pact, before nationalism and the failed August 1991 coup broke the USSR into fifteen states.",
-        "spokenTakeaway": "Abandoning the Brezhnev Doctrine unleashed peaceful 1989 revolutions that toppled the Berlin Wall and dissolved the Warsaw Pact, before nationalism and the failed August 1991 coup broke the USSR into fifteen states.",
+        "takeaway": "The loosening Soviet grip on Eastern Europe unleashed peaceful 1989 revolutions that toppled the Berlin Wall, before Soviet collapse proved decisive in bringing about the end of the Warsaw Pact and USSR by 1991.",
+        "spokenTakeaway": "The loosening Soviet grip on Eastern Europe unleashed peaceful 1989 revolutions that toppled the Berlin Wall, before Soviet collapse proved decisive in bringing about the end of the Warsaw Pact and USSR by 1991.",
         "vocab": [
           {
             "term": "Sinatra Doctrine",
