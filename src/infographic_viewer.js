@@ -28,6 +28,529 @@ let startY = 0;
 let lastPanX = 0;
 let lastPanY = 0;
 
+// Mobile Portrait 1-Card-at-a-Time Story Carousel State
+const mobileStoryUnitCache = new Map();
+const mobileCarouselState = {
+  active: false,
+  userForcedFullSheet: false,
+  slideIdx: 0,
+  slides: [],
+  sheet: null,
+  unitId: '',
+  audio: null,
+  playAllActive: false,
+  isPlaying: false,
+};
+
+function escapeCarouselAttr(str) {
+  return String(str || '')
+    .replace(/&/g, '&amp;')
+    .replace(/"/g, '&quot;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;');
+}
+
+function isNarrowPortraitInfographicViewport() {
+  return (
+    typeof window !== 'undefined' &&
+    window.innerWidth < 768 &&
+    window.innerHeight > window.innerWidth
+  );
+}
+
+async function ensureUnitDataLoadedForStorySheet(unitId) {
+  if (!unitId || typeof window === 'undefined') return null;
+  if (
+    window.currentUnitId === unitId &&
+    Array.isArray(window.currentUnitData?.lessons) &&
+    window.currentUnitData.lessons.length > 0
+  ) {
+    return window.currentUnitData;
+  }
+  const dbRaw = window.db?.[unitId] || window.state?.db?.[unitId] || window.unitDatabase?.[unitId];
+  const dbUnit = dbRaw?.data || dbRaw;
+  if (dbUnit && !dbUnit._isIndexStub && Array.isArray(dbUnit.lessons) && dbUnit.lessons.length > 0) {
+    return dbUnit;
+  }
+  if (mobileStoryUnitCache.has(unitId)) {
+    return mobileStoryUnitCache.get(unitId);
+  }
+  try {
+    const res = await fetch(`/data/${encodeURIComponent(unitId)}.json`);
+    if (res.ok) {
+      const json = await res.json();
+      const unwrapped = json?.data || json;
+      if (unwrapped && Array.isArray(unwrapped.lessons)) {
+        mobileStoryUnitCache.set(unitId, unwrapped);
+        return unwrapped;
+      }
+    }
+  } catch (e) {}
+  return null;
+}
+
+function lookupLessonVisualStorySheet(item) {
+  if (!item || typeof window === 'undefined') return null;
+  const unitId = item.unit || window.currentUnitId || window.state?.selectedUnitId || '';
+
+  const candidateLessonLists = [];
+  if (
+    Array.isArray(window.currentUnitData?.lessons) &&
+    (!unitId || !window.currentUnitId || window.currentUnitId === unitId)
+  ) {
+    candidateLessonLists.push(window.currentUnitData.lessons);
+  }
+  if (
+    Array.isArray(window.state?.activeUnitData?.lessons) &&
+    (!unitId || !window.state?.selectedUnitId || window.state.selectedUnitId === unitId)
+  ) {
+    candidateLessonLists.push(window.state.activeUnitData.lessons);
+  }
+  if (unitId) {
+    const rawUnit =
+      window.db?.[unitId] ||
+      window.state?.db?.[unitId] ||
+      window.unitDatabase?.[unitId] ||
+      mobileStoryUnitCache.get(unitId);
+    const unitObj = rawUnit?.data || rawUnit;
+    if (unitObj && Array.isArray(unitObj.lessons)) {
+      candidateLessonLists.push(unitObj.lessons);
+    }
+  }
+
+  const targetSlug = String(item.slug || '').trim();
+  const targetLessonNorm = String(item.lessonId || '')
+    .trim()
+    .replace(/^lesson_/i, '');
+  const urlNumMatch = String(item.interactiveUrl || '').match(/lesson_(\d+)_visual_story\.html/i);
+  const urlNumRaw = urlNumMatch ? urlNumMatch[1] : null;
+
+  for (const lessons of candidateLessonLists) {
+    let matched = null;
+    if (targetSlug) {
+      matched = lessons.find((l) => l?.visual_story_sheet?.slug === targetSlug);
+    }
+    if (!matched && targetLessonNorm) {
+      matched = lessons.find(
+        (l) =>
+          l?.id === item.lessonId ||
+          String(l?.id || '').replace(/^lesson_/i, '') === targetLessonNorm,
+      );
+    }
+    if (!matched && urlNumRaw !== null) {
+      matched = lessons.find((l) => {
+        const vNum = l?.visual_story_sheet?.num;
+        if (vNum === undefined || vNum === null) return false;
+        return (
+          String(vNum) === urlNumRaw ||
+          parseInt(String(vNum), 10) === parseInt(urlNumRaw, 10)
+        );
+      });
+    }
+    if (
+      matched &&
+      matched.visual_story_sheet &&
+      Array.isArray(matched.visual_story_sheet.cards) &&
+      matched.visual_story_sheet.cards.length > 0
+    ) {
+      return {
+        lesson: matched,
+        sheet: matched.visual_story_sheet,
+        unitId: unitId || 'cme_new',
+      };
+    }
+  }
+  return null;
+}
+
+function buildMobileStorySlides(sheet, unitId) {
+  const cards = Array.isArray(sheet?.cards) ? sheet.cards : [];
+  const bridges = Array.isArray(sheet?.bridges) ? sheet.bridges : [];
+  const sheetNum = String(sheet?.num ?? '01');
+  const slides = cards.map((card, idx) => ({
+    kind: 'card',
+    cardIdx: idx,
+    stageCount: cards.length,
+    badge: card.badge || `Stage ${idx + 1}`,
+    date: card.date || '',
+    heading: card.heading || `Stage ${idx + 1}`,
+    img: card.img || '',
+    stat: card.stat || '',
+    html: card.html || '',
+    spoken: card.spoken || '',
+    bridge:
+      bridges[idx] ||
+      (idx === cards.length - 1 && sheet?.takeaway ? 'Summary Takeaway' : ''),
+    audioSrc: `/audio/visual_sheets/${encodeURIComponent(unitId)}/l${sheetNum}_s${idx + 1}.mp3`,
+  }));
+
+  if (sheet?.takeaway) {
+    slides.push({
+      kind: 'takeaway',
+      cardIdx: cards.length,
+      stageCount: cards.length,
+      badge: 'Key Takeaway',
+      date: sheet.datesBadge || sheet.ktBadge || '',
+      heading: sheet.title || 'The Big Story in One Sentence',
+      img: '',
+      stat: sheet.ktBadge || 'Big-Picture Outcome',
+      html: sheet.takeaway,
+      spoken: sheet.spokenTakeaway || sheet.takeaway || '',
+      vocab: Array.isArray(sheet.vocab) ? sheet.vocab : [],
+      bridge: '',
+      audioSrc: `/audio/visual_sheets/${encodeURIComponent(unitId)}/l${sheetNum}_takeaway.mp3`,
+    });
+  }
+
+  return slides;
+}
+
+function stopMobileCarouselAudio() {
+  if (mobileCarouselState.audio) {
+    try {
+      mobileCarouselState.audio.onended = null;
+      mobileCarouselState.audio.onerror = null;
+      mobileCarouselState.audio.pause();
+      mobileCarouselState.audio.removeAttribute('src');
+    } catch (e) {}
+    mobileCarouselState.audio = null;
+  }
+  if (mobileCarouselState.isPlaying && typeof window !== 'undefined' && window.speechSynthesis) {
+    try {
+      window.speechSynthesis.cancel();
+    } catch (e) {}
+  }
+  mobileCarouselState.playAllActive = false;
+  mobileCarouselState.isPlaying = false;
+  syncMobileCarouselAudioButtons();
+}
+
+function syncMobileCarouselAudioButtons() {
+  const modal = typeof document !== 'undefined' && document.getElementById('hub-infographic-modal');
+  if (!modal) return;
+  const btnListen = modal.querySelector('#msc-btn-listen-card');
+  const btnPlayAll = modal.querySelector('#msc-btn-play-all');
+  const slide = mobileCarouselState.slides[mobileCarouselState.slideIdx];
+  const stageCount = slide?.stageCount || mobileCarouselState.sheet?.cards?.length || 5;
+
+  if (btnListen) {
+    const singleActive = mobileCarouselState.isPlaying && !mobileCarouselState.playAllActive;
+    btnListen.classList.toggle('is-playing', singleActive);
+    btnListen.innerHTML = singleActive
+      ? '<i class="fa-solid fa-pause"></i> <span>Pause Card</span>'
+      : `<i class="fa-solid fa-volume-high"></i> <span>${slide?.kind === 'takeaway' ? 'Listen to Takeaway' : 'Listen to Card'}</span>`;
+  }
+  if (btnPlayAll) {
+    const allActive = mobileCarouselState.isPlaying && mobileCarouselState.playAllActive;
+    btnPlayAll.classList.toggle('is-playing', allActive);
+    btnPlayAll.innerHTML = allActive
+      ? '<i class="fa-solid fa-stop"></i> <span>Stop All</span>'
+      : `<i class="fa-solid fa-play"></i> <span>Play All ${stageCount} Cards</span>`;
+  }
+}
+
+function playMobileCarouselCurrentSlide(autoContinueAll = false) {
+  const slide = mobileCarouselState.slides[mobileCarouselState.slideIdx];
+  if (!slide) return;
+
+  if (typeof window !== 'undefined' && typeof window.cancelSpeech === 'function') {
+    window.cancelSpeech();
+  }
+
+  // Stop existing clip cleanly before starting next
+  if (mobileCarouselState.audio) {
+    try {
+      mobileCarouselState.audio.onended = null;
+      mobileCarouselState.audio.onerror = null;
+      mobileCarouselState.audio.pause();
+    } catch (e) {}
+    mobileCarouselState.audio = null;
+  }
+
+  mobileCarouselState.playAllActive = Boolean(autoContinueAll);
+  mobileCarouselState.isPlaying = true;
+  syncMobileCarouselAudioButtons();
+
+  const onClipComplete = () => {
+    if (!mobileCarouselState.active) {
+      stopMobileCarouselAudio();
+      return;
+    }
+    if (
+      mobileCarouselState.playAllActive &&
+      mobileCarouselState.slideIdx < mobileCarouselState.slides.length - 1
+    ) {
+      mobileCarouselState.slideIdx += 1;
+      renderMobileStoryCarouselSlide();
+      playMobileCarouselCurrentSlide(true);
+    } else {
+      stopMobileCarouselAudio();
+    }
+  };
+
+  const fallbackTts = () => {
+    if (!mobileCarouselState.active || typeof window === 'undefined' || !('speechSynthesis' in window)) {
+      stopMobileCarouselAudio();
+      return;
+    }
+    const cleanText = String(slide.spoken || slide.html || '')
+      .replace(/<[^>]+>/g, ' ')
+      .replace(/\s+/g, ' ')
+      .trim();
+    if (!cleanText) {
+      stopMobileCarouselAudio();
+      return;
+    }
+    try {
+      window.speechSynthesis.cancel();
+      const utt = new SpeechSynthesisUtterance(`${slide.heading}. ${cleanText}`);
+      utt.lang = 'en-GB';
+      utt.rate = (typeof window.getSpeechRate === 'function' && window.getSpeechRate()) || 1.0;
+      utt.onend = onClipComplete;
+      utt.onerror = () => stopMobileCarouselAudio();
+      window.speechSynthesis.speak(utt);
+    } catch (e) {
+      stopMobileCarouselAudio();
+    }
+  };
+
+  const audio = new Audio();
+  audio.preload = 'auto';
+  mobileCarouselState.audio = audio;
+  const preferredRate =
+    (typeof window !== 'undefined' &&
+      typeof window.getSpeechRate === 'function' &&
+      window.getSpeechRate()) ||
+    1.0;
+
+  audio.onloadedmetadata = () => {
+    audio.playbackRate = preferredRate;
+    if ('preservesPitch' in audio) audio.preservesPitch = true;
+  };
+  audio.onended = () => {
+    if (mobileCarouselState.audio !== audio) return;
+    onClipComplete();
+  };
+  audio.onerror = () => {
+    if (mobileCarouselState.audio !== audio) return;
+    mobileCarouselState.audio = null;
+    fallbackTts();
+  };
+
+  // Wire OS Lock-Screen MediaSession for Visual Story Cards as well
+  try {
+    if (typeof navigator !== 'undefined' && 'mediaSession' in navigator && typeof MediaMetadata !== 'undefined') {
+      navigator.mediaSession.metadata = new MediaMetadata({
+        title: `${slide.badge}: ${slide.heading}`,
+        artist: 'The History Revision Hub',
+        album: mobileCarouselState.sheet?.title || 'Visual Story Sheet',
+        artwork: [
+          { src: '/icon-192.png', sizes: '192x192', type: 'image/png' },
+          { src: '/icon-512.png', sizes: '512x512', type: 'image/png' },
+          { src: '/icon-192.svg', sizes: '192x192', type: 'image/svg+xml' },
+          { src: '/icon-512.svg', sizes: '512x512', type: 'image/svg+xml' },
+        ],
+      });
+      navigator.mediaSession.playbackState = 'playing';
+    }
+  } catch (e) {}
+
+  audio.src = slide.audioSrc;
+  audio.playbackRate = preferredRate;
+  if ('preservesPitch' in audio) audio.preservesPitch = true;
+  audio.play().catch((err) => {
+    if (err && err.name === 'AbortError') return;
+    fallbackTts();
+  });
+}
+
+function stepMobileCarousel(delta) {
+  if (!mobileCarouselState.active || !mobileCarouselState.slides.length) return;
+  const nextIdx = mobileCarouselState.slideIdx + delta;
+  if (nextIdx < 0 || nextIdx >= mobileCarouselState.slides.length) return;
+  const wasPlayingAll = mobileCarouselState.isPlaying && mobileCarouselState.playAllActive;
+  stopMobileCarouselAudio();
+  mobileCarouselState.slideIdx = nextIdx;
+  renderMobileStoryCarouselSlide();
+  if (wasPlayingAll) {
+    playMobileCarouselCurrentSlide(true);
+  }
+}
+
+function renderMobileStoryCarouselSlide() {
+  const modal = typeof document !== 'undefined' && document.getElementById('hub-infographic-modal');
+  const host = modal?.querySelector('#infographic-mobile-story-carousel');
+  if (!host || !mobileCarouselState.slides.length) return;
+
+  const slides = mobileCarouselState.slides;
+  const idx = Math.max(0, Math.min(slides.length - 1, mobileCarouselState.slideIdx));
+  mobileCarouselState.slideIdx = idx;
+  const slide = slides[idx];
+  const stageCount = slide.stageCount || slides.length;
+  const counterLabel =
+    slide.kind === 'takeaway'
+      ? `Takeaway • ${idx + 1} / ${slides.length}`
+      : `${idx + 1} / ${stageCount}`;
+
+  const vocabHtml =
+    slide.kind === 'takeaway' && Array.isArray(slide.vocab) && slide.vocab.length > 0
+      ? `
+      <div class="msc-takeaway-vocab">
+        <div class="msc-takeaway-vocab-title"><i class="fa-solid fa-book-bookmark"></i> Core Key Terms</div>
+        <div class="msc-takeaway-vocab-list">
+          ${slide.vocab
+            .map(([term, def]) => {
+              const cleanTerm = String(term || '').replace(/^\d+\.\s*/, '');
+              return `<div class="msc-vocab-row"><strong>${cleanTerm}:</strong> <span>${def || ''}</span></div>`;
+            })
+            .join('')}
+        </div>
+      </div>
+    `
+      : '';
+
+  host.innerHTML = `
+    <div class="msc-shell">
+      <div class="msc-topbar">
+        <div class="msc-progress-group">
+          <span class="msc-step-pill">${counterLabel}</span>
+          <div class="msc-dots" role="tablist" aria-label="Story Cards">
+            ${slides
+              .map(
+                (s, sIdx) => `
+              <button type="button" class="msc-dot${sIdx === idx ? ' is-active' : ''}${s.kind === 'takeaway' ? ' is-takeaway' : ''}" data-slide-idx="${sIdx}" aria-label="${escapeCarouselAttr(s.badge)}: ${escapeCarouselAttr(s.heading)}" title="${escapeCarouselAttr(s.badge)}"></button>
+            `,
+              )
+              .join('')}
+          </div>
+        </div>
+        <button type="button" id="msc-btn-full-sheet" class="msc-fullsheet-btn" title="Switch to Full Visual Story Sheet">
+          <i class="fa-solid fa-table-cells-large"></i> <span>Full Sheet View</span>
+        </button>
+      </div>
+
+      <div class="msc-audio-bar">
+        <button type="button" id="msc-btn-listen-card" class="msc-audio-btn msc-audio-single">
+          <i class="fa-solid fa-volume-high"></i> <span>${slide.kind === 'takeaway' ? 'Listen to Takeaway' : 'Listen to Card'}</span>
+        </button>
+        <button type="button" id="msc-btn-play-all" class="msc-audio-btn msc-audio-all">
+          <i class="fa-solid fa-play"></i> <span>Play All ${stageCount} Cards</span>
+        </button>
+      </div>
+
+      <div class="msc-card-scroll">
+        <article class="msc-card${slide.kind === 'takeaway' ? ' msc-card-takeaway' : ''}">
+          <div class="msc-card-meta">
+            <span class="msc-badge">${slide.kind === 'takeaway' ? '<i class="fa-solid fa-bolt"></i> ' : ''}${slide.badge}</span>
+            ${slide.date ? `<span class="msc-date"><i class="fa-regular fa-clock"></i> ${slide.date}</span>` : ''}
+          </div>
+
+          <h4 class="msc-heading">${slide.heading}</h4>
+
+          ${
+            slide.img
+              ? `
+            <div class="msc-img-frame">
+              <img src="${escapeCarouselAttr(slide.img)}" alt="${escapeCarouselAttr(slide.heading)}" class="msc-archival-img" />
+            </div>
+          `
+              : ''
+          }
+
+          ${
+            slide.stat
+              ? `
+            <div class="msc-stat-banner">
+              <i class="fa-solid fa-chart-simple"></i>
+              <span>${slide.stat}</span>
+            </div>
+          `
+              : ''
+          }
+
+          <div class="msc-prose">${slide.html}</div>
+
+          ${vocabHtml}
+
+          ${
+            slide.bridge
+              ? `
+            <button type="button" id="msc-btn-bridge-next" class="msc-bridge-pill" title="Tap for next causal stage">
+              <span class="msc-bridge-kicker">Leads to</span>
+              <span class="msc-bridge-text">${slide.bridge}</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          `
+              : ''
+          }
+        </article>
+      </div>
+
+      <div class="msc-nav-footer">
+        <button type="button" id="msc-btn-prev" class="msc-nav-btn" ${idx === 0 ? 'disabled' : ''}>
+          <i class="fa-solid fa-chevron-left"></i> <span>Prev</span>
+        </button>
+        <span class="msc-nav-counter">${idx + 1} / ${slides.length}</span>
+        <button type="button" id="msc-btn-next" class="msc-nav-btn msc-nav-btn-primary" ${idx >= slides.length - 1 ? 'disabled' : ''}>
+          <span>Next</span> <i class="fa-solid fa-chevron-right"></i>
+        </button>
+      </div>
+    </div>
+  `;
+
+  syncMobileCarouselAudioButtons();
+
+  host.querySelector('#msc-btn-prev')?.addEventListener('click', (e) => {
+    e.stopPropagation();
+    stepMobileCarousel(-1);
+  });
+  host.querySelector('#msc-btn-next')?.addEventListener('click', (e) => {
+    e.stopPropagation();
+    stepMobileCarousel(1);
+  });
+  host.querySelector('#msc-btn-bridge-next')?.addEventListener('click', (e) => {
+    e.stopPropagation();
+    stepMobileCarousel(1);
+  });
+  host.querySelectorAll('.msc-dot').forEach((dot) => {
+    dot.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const target = parseInt(dot.getAttribute('data-slide-idx'), 10);
+      if (!isNaN(target) && target !== mobileCarouselState.slideIdx) {
+        stopMobileCarouselAudio();
+        mobileCarouselState.slideIdx = target;
+        renderMobileStoryCarouselSlide();
+      }
+    });
+  });
+  host.querySelector('#msc-btn-listen-card')?.addEventListener('click', (e) => {
+    e.stopPropagation();
+    if (mobileCarouselState.isPlaying && !mobileCarouselState.playAllActive) {
+      stopMobileCarouselAudio();
+    } else {
+      playMobileCarouselCurrentSlide(false);
+    }
+  });
+  host.querySelector('#msc-btn-play-all')?.addEventListener('click', (e) => {
+    e.stopPropagation();
+    if (mobileCarouselState.isPlaying && mobileCarouselState.playAllActive) {
+      stopMobileCarouselAudio();
+    } else {
+      if (mobileCarouselState.slideIdx >= mobileCarouselState.slides.length - 1) {
+        mobileCarouselState.slideIdx = 0;
+        renderMobileStoryCarouselSlide();
+      }
+      playMobileCarouselCurrentSlide(true);
+    }
+  });
+  host.querySelector('#msc-btn-full-sheet')?.addEventListener('click', (e) => {
+    e.stopPropagation();
+    stopMobileCarouselAudio();
+    mobileCarouselState.userForcedFullSheet = true;
+    renderCurrentItem();
+  });
+}
+
 /**
  * Fetch and cache the master infographics manifest.
  */
@@ -159,6 +682,11 @@ function ensureModalElement() {
 
       <!-- Action Toolbar -->
       <div style="display: flex; align-items: center; gap: 5px; flex-shrink: 0;">
+        <!-- Mobile Portrait Story-Card Carousel <-> Full Sheet Toggle -->
+        <button type="button" id="infographic-btn-mobile-story-toggle" style="display: none; align-items: center; gap: 5px; padding: 4px 9px; background: #0284c7; color: #ffffff; border: 1px solid #38bdf8; border-radius: 6px; font-size: 0.72rem; font-weight: 700; cursor: pointer; white-space: nowrap;" title="Toggle Mobile Story-Card View vs Full Sheet View">
+          <i class="fa-solid fa-table-cells-large"></i> <span>Full Sheet View</span>
+        </button>
+
         <!-- Dual Mode Segmented Control (Poster vs Interactive) -->
         <div id="infographic-mode-toggle" style="display: none; align-items: center; background: #0f172a; border-radius: 6px; padding: 2px; border: 1px solid rgba(56, 189, 248, 0.4); margin-right: 2px;">
           <button type="button" id="infographic-btn-mode-poster" style="padding: 3.5px 8px; font-size: 0.70rem; font-weight: 700; border-radius: 4px; border: none; cursor: pointer; background: #0284c7; color: #ffffff; display: flex; align-items: center; gap: 4px; transition: all 0.15s ease;" title="View High-Resolution Visual Revision Infographic Poster">
@@ -213,6 +741,7 @@ function ensureModalElement() {
       <div id="infographic-stage" style="flex: 1; position: relative; overflow: hidden; display: flex; align-items: center; justify-content: center; cursor: grab;">
         <img id="infographic-image" src="" alt="Infographic" style="max-width: 95%; max-height: 95%; object-fit: contain; transform-origin: center center; transition: transform 0.1s ease-out; box-shadow: 0 20px 40px rgba(0,0,0,0.8); border-radius: 8px; pointer-events: none;" />
         <iframe id="infographic-frame" src="" style="display: none; width: 100%; height: 100%; border: none; background: #070d18;"></iframe>
+        <div id="infographic-mobile-story-carousel" class="infographic-mobile-story-carousel" style="display: none;"></div>
 
         <!-- Navigation Arrows (if multiple) -->
         <button type="button" id="infographic-btn-prev" style="position: absolute; left: 16px; top: 50%; transform: translateY(-50%); width: 44px; height: 44px; border-radius: 50%; background: rgba(15, 23, 42, 0.8); color: #ffffff; border: 1px solid rgba(255,255,255,0.2); font-size: 1.1rem; cursor: pointer; display: flex; align-items: center; justify-content: center; backdrop-filter: blur(4px); box-shadow: 0 4px 12px rgba(0,0,0,0.5); z-index: 5;" title="Previous (Left Arrow)"><i class="fa-solid fa-chevron-left"></i></button>
@@ -732,6 +1261,43 @@ function setupModalEvents(modal) {
   btnPrev.addEventListener('click', () => navigateInfographic(-1));
   btnNext.addEventListener('click', () => navigateInfographic(1));
 
+  // Mobile Story-Card Carousel Header Toggle & Horizontal Swipe Gesture
+  const btnMobileStoryToggle = modal.querySelector('#infographic-btn-mobile-story-toggle');
+  const mobileCarouselHost = modal.querySelector('#infographic-mobile-story-carousel');
+  if (btnMobileStoryToggle) {
+    btnMobileStoryToggle.addEventListener('click', (e) => {
+      e.stopPropagation();
+      stopMobileCarouselAudio();
+      mobileCarouselState.userForcedFullSheet = !mobileCarouselState.userForcedFullSheet;
+      renderCurrentItem();
+    });
+  }
+  if (mobileCarouselHost) {
+    let mscTouchStartX = 0;
+    let mscTouchStartY = 0;
+    mobileCarouselHost.addEventListener(
+      'touchstart',
+      (e) => {
+        if (!e.touches || e.touches.length !== 1) return;
+        mscTouchStartX = e.touches[0].clientX;
+        mscTouchStartY = e.touches[0].clientY;
+      },
+      { passive: true },
+    );
+    mobileCarouselHost.addEventListener(
+      'touchend',
+      (e) => {
+        if (!mobileCarouselState.active || !e.changedTouches || e.changedTouches.length !== 1) return;
+        const dx = e.changedTouches[0].clientX - mscTouchStartX;
+        const dy = e.changedTouches[0].clientY - mscTouchStartY;
+        if (Math.abs(dx) > 42 && Math.abs(dx) > Math.abs(dy) * 1.25) {
+          stepMobileCarousel(dx < 0 ? 1 : -1);
+        }
+      },
+      { passive: true },
+    );
+  }
+
   // Global Keydown
   window.addEventListener('keydown', (e) => {
     if (modal.style.display === 'none') return;
@@ -742,9 +1308,11 @@ function setupModalEvents(modal) {
     if (e.key === 'Escape') {
       closeInfographicModal();
     } else if (e.key === 'ArrowLeft') {
-      navigateInfographic(-1);
+      if (mobileCarouselState.active) stepMobileCarousel(-1);
+      else navigateInfographic(-1);
     } else if (e.key === 'ArrowRight') {
-      navigateInfographic(1);
+      if (mobileCarouselState.active) stepMobileCarousel(1);
+      else navigateInfographic(1);
     } else if (e.key === 'ArrowDown' && zoomLevel > 1) {
       e.preventDefault();
       panY -= 90;
@@ -768,6 +1336,9 @@ function setupModalEvents(modal) {
 
 function navigateInfographic(direction) {
   if (!currentList.length) return;
+  stopMobileCarouselAudio();
+  mobileCarouselState.userForcedFullSheet = false;
+  mobileCarouselState.slideIdx = 0;
   currentIndex = (currentIndex + direction + currentList.length) % currentList.length;
   currentItem = currentList[currentIndex];
   // Default to poster view when cycling mats so new visual plate is immediately shown
@@ -1034,6 +1605,56 @@ function renderCurrentItem() {
   }
   if (drawer) {
     drawer.style.display = 'none';
+  }
+
+  // Mobile Portrait Story-Card Carousel Check (< 768px portrait + lesson.visual_story_sheet.cards)
+  const mobileCarouselHost = modal.querySelector('#infographic-mobile-story-carousel');
+  const btnMobileStoryToggle = modal.querySelector('#infographic-btn-mobile-story-toggle');
+  const storySheetMatch = lookupLessonVisualStorySheet(currentItem);
+  const canUseMobileStoryCards = Boolean(storySheetMatch && isNarrowPortraitInfographicViewport());
+
+  if (btnMobileStoryToggle) {
+    if (canUseMobileStoryCards) {
+      btnMobileStoryToggle.style.display = 'inline-flex';
+      if (mobileCarouselState.userForcedFullSheet) {
+        btnMobileStoryToggle.innerHTML = '<i class="fa-solid fa-mobile-screen"></i> <span>Story Cards</span>';
+        btnMobileStoryToggle.title = 'Switch back to 1-Card-at-a-Time Mobile Story View';
+      } else {
+        btnMobileStoryToggle.innerHTML = '<i class="fa-solid fa-table-cells-large"></i> <span>Full Sheet View</span>';
+        btnMobileStoryToggle.title = 'Switch to Full Visual Story Sheet';
+      }
+    } else {
+      btnMobileStoryToggle.style.display = 'none';
+    }
+  }
+
+  if (canUseMobileStoryCards && !mobileCarouselState.userForcedFullSheet && mobileCarouselHost) {
+    mobileCarouselState.active = true;
+    mobileCarouselState.sheet = storySheetMatch.sheet;
+    mobileCarouselState.unitId = storySheetMatch.unitId;
+    mobileCarouselState.slides = buildMobileStorySlides(storySheetMatch.sheet, storySheetMatch.unitId);
+    if (mobileCarouselState.slideIdx >= mobileCarouselState.slides.length) {
+      mobileCarouselState.slideIdx = 0;
+    }
+
+    img.style.display = 'none';
+    if (iframe) iframe.style.display = 'none';
+    if (zoomControls) zoomControls.style.display = 'none';
+    if (downloadBtn) downloadBtn.style.display = 'none';
+    if (btnWhiteboardFit) btnWhiteboardFit.style.display = 'none';
+    if (modeToggle) modeToggle.style.display = 'none';
+    if (btnPrev) btnPrev.style.display = 'none';
+    if (btnNext) btnNext.style.display = 'none';
+    stage.style.cursor = 'default';
+
+    mobileCarouselHost.style.display = 'block';
+    renderMobileStoryCarouselSlide();
+    return;
+  }
+
+  mobileCarouselState.active = false;
+  if (mobileCarouselHost) {
+    mobileCarouselHost.style.display = 'none';
   }
 
   if (hasPosterImage && hasInteractive) {
@@ -2019,6 +2640,23 @@ export async function openInfographicModal(options) {
 
   if (!currentItem) return;
 
+  stopMobileCarouselAudio();
+  mobileCarouselState.userForcedFullSheet = Boolean(
+    options && typeof options === 'object' && options.forceFullSheet,
+  );
+  mobileCarouselState.slideIdx =
+    options && typeof options === 'object' && typeof options.initialCardIndex === 'number'
+      ? Math.max(0, options.initialCardIndex)
+      : 0;
+
+  if (
+    isNarrowPortraitInfographicViewport() &&
+    currentItem.unit &&
+    !lookupLessonVisualStorySheet(currentItem)
+  ) {
+    await ensureUnitDataLoadedForStorySheet(currentItem.unit);
+  }
+
   renderCurrentItem();
   modal.style.display = 'flex';
   document.body.style.overflow = 'hidden';
@@ -2088,7 +2726,18 @@ export async function openLessonInfographicModal(lessonIdOrIndex, unitId, option
  * Open lesson infographic directly focused on a specific narrative step (0-indexed).
  */
 export async function openLessonInfographicModalToStep(stepIndex, lessonIdOrIndex, unitId) {
-  await openLessonInfographicModal(lessonIdOrIndex, unitId, { initialMode: 'interactive' });
+  await openLessonInfographicModal(lessonIdOrIndex, unitId, {
+    initialMode: 'interactive',
+    initialCardIndex: stepIndex,
+  });
+  if (mobileCarouselState.active) {
+    mobileCarouselState.slideIdx = Math.max(
+      0,
+      Math.min(stepIndex, Math.max(0, mobileCarouselState.slides.length - 1)),
+    );
+    renderMobileStoryCarouselSlide();
+    return;
+  }
   const sendStep = () => {
     try {
       const modal = document.getElementById('hub-infographic-modal');
@@ -2110,7 +2759,10 @@ export async function openLessonInfographicModalToStep(stepIndex, lessonIdOrInde
  * Open lesson infographic directly focused on a specific part tab (e.g. Part 3: Writing Studio).
  */
 export async function openLessonInfographicModalToPart(partNumber, lessonIdOrIndex, unitId) {
-  await openLessonInfographicModal(lessonIdOrIndex, unitId, { initialMode: 'interactive' });
+  await openLessonInfographicModal(lessonIdOrIndex, unitId, {
+    initialMode: 'interactive',
+    forceFullSheet: partNumber === 3,
+  });
   const sendTab = () => {
     try {
       const modal = document.getElementById('hub-infographic-modal');
@@ -2132,6 +2784,8 @@ export async function openLessonInfographicModalToPart(partNumber, lessonIdOrInd
  * Close modal.
  */
 export function closeInfographicModal() {
+  stopMobileCarouselAudio();
+  mobileCarouselState.active = false;
   const modal = document.getElementById('hub-infographic-modal');
   if (modal) {
     try {

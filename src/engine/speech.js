@@ -26,6 +26,9 @@ let lastHardwareBoundaryTime = 0;
 let currentSpeechRate = 1.0;
 let currentVoiceGender = 'female'; // 'female' | 'male'
 let customActiveResetCallback = null;
+let autoPlayOverride = null; // null = auto (true on mobile <933px narrative), boolean = user override
+let activeStartedInNarrativeFlow = false;
+let autoAdvanceTimer = null;
 
 try {
   if (typeof window !== 'undefined' && window.localStorage) {
@@ -36,8 +39,295 @@ try {
     if (savedGender === 'male' || savedGender === 'female') {
       currentVoiceGender = savedGender;
     }
+
+    const savedAutoPlay = localStorage.getItem('hh_speech_autoplay');
+    if (savedAutoPlay === 'true') autoPlayOverride = true;
+    else if (savedAutoPlay === 'false') autoPlayOverride = false;
   }
 } catch (e) {}
+
+function isMobileSpeechViewport() {
+  return typeof window !== 'undefined' && window.innerWidth < 933;
+}
+
+/**
+ * Check whether Continuous "Podcast Mode" auto-play is active.
+ * Defaults to true on mobile (< 933px) when listening to lesson prologue/narrative blocks.
+ */
+export function isSpeechAutoPlayEnabled(narrativeContext = true) {
+  if (autoPlayOverride !== null) return autoPlayOverride;
+  return Boolean(narrativeContext && isMobileSpeechViewport());
+}
+
+/**
+ * Persist user preference for Continuous Auto-Play ("Podcast Mode").
+ */
+export function setSpeechAutoPlay(enabled) {
+  autoPlayOverride = Boolean(enabled);
+  try {
+    if (typeof window !== 'undefined' && window.localStorage) {
+      localStorage.setItem('hh_speech_autoplay', autoPlayOverride ? 'true' : 'false');
+    }
+  } catch (e) {}
+  updateFloatingAudioPlayerState();
+}
+
+/**
+ * Toggle Continuous Auto-Play ("Podcast Mode") on/off.
+ */
+export function toggleSpeechAutoPlay() {
+  const current = isSpeechAutoPlayEnabled(activeStartedInNarrativeFlow || true);
+  setSpeechAutoPlay(!current);
+}
+
+/**
+ * Determine whether a read-aloud button belongs to the main sequential lesson narrative
+ * (Prologue + Stage 1..5 Narrative Paragraphs) rather than an isolated source drawer.
+ */
+function isNarrativeFlowButton(btn) {
+  if (!btn || typeof btn.closest !== 'function') return false;
+  if (
+    btn.closest(
+      '.archival-source-box, .gcse-source-container, .source-audio-bar, .cme-source-drawer, .hub-infographic-modal, .flat-inline-audio',
+    )
+  ) {
+    return false;
+  }
+  return Boolean(
+    btn.closest(
+      '.prologue-audio-bar, .historical-editorial-lede, .narrative-chunk, .narrative-chunk-audio, .standard-narrative-container, .level4-narrative-container',
+    ),
+  );
+}
+
+function isButtonCurrentlyVisible(btn, currentBtn = null) {
+  if (!btn) return false;
+  if (btn === currentBtn) return true;
+  if (btn.closest('[hidden], [style*="display: none"], [style*="display:none"]')) {
+    return false;
+  }
+  let el = btn;
+  while (el && el !== document.body) {
+    if (el.style && el.style.display === 'none') return false;
+    el = el.parentElement;
+  }
+  return btn.offsetParent !== null || btn.getClientRects().length > 0;
+}
+
+function getSequentialNarrativeButtons(refBtn) {
+  if (typeof document === 'undefined') return [];
+  const scope =
+    (refBtn &&
+      typeof refBtn.closest === 'function' &&
+      refBtn.closest(
+        '#lesson-content-container, #lesson-detail-view, .lesson-detail-wrapper, #main-content',
+      )) ||
+    document;
+  const allBtns = Array.from(scope.querySelectorAll('.read-aloud-btn[data-action="read-aloud"], .read-aloud-btn'));
+  return allBtns.filter((b) => isNarrativeFlowButton(b) && isButtonCurrentlyVisible(b, refBtn));
+}
+
+function getAdjacentNarrativeButton(refBtn, step = 1) {
+  if (!refBtn || !isNarrativeFlowButton(refBtn)) return null;
+  const list = getSequentialNarrativeButtons(refBtn);
+  const idx = list.indexOf(refBtn);
+  if (idx < 0) return null;
+  return list[idx + step] || null;
+}
+
+function triggerAutoAdvanceFromButton(finishedBtn, wasNarrative) {
+  if (!wasNarrative || !finishedBtn || !isSpeechAutoPlayEnabled(true)) return;
+  const nextBtn = getAdjacentNarrativeButton(finishedBtn, 1);
+  if (!nextBtn) return;
+
+  const targetBlock =
+    nextBtn.closest('.standard-narrative-container, .narrative-chunk, .historical-editorial-lede') ||
+    nextBtn;
+  try {
+    targetBlock.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  } catch (e) {}
+
+  if (autoAdvanceTimer) clearTimeout(autoAdvanceTimer);
+  autoAdvanceTimer = setTimeout(() => {
+    autoAdvanceTimer = null;
+    if (document.body.contains(nextBtn)) {
+      readAloudText(nextBtn);
+    }
+  }, 320);
+}
+
+/**
+ * Resolve active lesson/stage metadata and bind OS Lock-Screen / Earbud MediaSession controls.
+ */
+function resolveMediaSessionInfo(btn) {
+  const unitTitle =
+    (typeof window !== 'undefined' &&
+      (window.currentUnitData?.title ||
+        window.currentUnitData?.unit_title ||
+        window.state?.activeUnitData?.title ||
+        window.state?.activeUnitData?.unit_title)) ||
+    document.querySelector('.unit-header-title, .sidebar-unit-title')?.textContent?.trim() ||
+    'The History Revision Hub';
+
+  const currentLessonObj =
+    typeof window !== 'undefined' &&
+    typeof window.currentLessonIndex === 'number' &&
+    Array.isArray(window.currentUnitData?.lessons)
+      ? window.currentUnitData.lessons[window.currentLessonIndex]
+      : null;
+
+  const lessonTitle =
+    currentLessonObj?.title ||
+    document
+      .querySelector('.lesson-hero-title, .enquiry-hero-title, h1.lesson-title, #main-content h1')
+      ?.textContent?.trim() ||
+    'History Audio Lesson';
+
+  let sectionLabel = '';
+  if (btn && typeof btn.closest === 'function') {
+    if (btn.closest('.prologue-audio-bar, .historical-editorial-lede')) {
+      sectionLabel = 'Historical Prologue';
+    } else {
+      const container = btn.closest(
+        '.standard-narrative-container, .narrative-chunk, .level4-narrative-container, .archival-source-box, .gcse-source-container',
+      );
+      if (container) {
+        const stagePill = container.querySelector('.stage-decimal-pill')?.textContent?.trim() || '';
+        const eyebrow =
+          container.querySelector('.narrative-stage-eyebrow, .narrative-heading, .stage-banner-question')
+            ?.textContent?.trim() || '';
+        if (stagePill && eyebrow) {
+          sectionLabel = eyebrow.startsWith(stagePill) ? eyebrow : `${stagePill}: ${eyebrow}`;
+        } else {
+          sectionLabel = eyebrow || stagePill;
+        }
+      }
+    }
+  }
+
+  const cleanSection = String(sectionLabel || '').replace(/\s+/g, ' ').trim();
+  const cleanLesson = String(lessonTitle || '').replace(/\s+/g, ' ').trim();
+  const title =
+    cleanSection && cleanSection !== cleanLesson
+      ? `${cleanSection} — ${cleanLesson}`
+      : cleanLesson;
+
+  return {
+    title: title.slice(0, 140),
+    artist: activeStudioVoiceLabel || 'The History Revision Hub',
+    album: String(unitTitle).replace(/\s+/g, ' ').trim().slice(0, 120),
+  };
+}
+
+function syncMediaSessionPosition() {
+  if (typeof navigator === 'undefined' || !('mediaSession' in navigator)) return;
+  if (!activeStudioAudio || typeof navigator.mediaSession.setPositionState !== 'function') return;
+  try {
+    const dur = activeStudioAudio.duration;
+    if (dur && isFinite(dur) && dur > 0) {
+      navigator.mediaSession.setPositionState({
+        duration: dur,
+        playbackRate: activeStudioAudio.playbackRate || currentSpeechRate || 1.0,
+        position: Math.min(dur, Math.max(0, activeStudioAudio.currentTime || 0)),
+      });
+    }
+  } catch (e) {}
+}
+
+function syncMediaSessionState(playbackState = 'playing') {
+  if (typeof navigator === 'undefined' || !('mediaSession' in navigator)) return;
+  try {
+    navigator.mediaSession.playbackState = playbackState;
+  } catch (e) {}
+}
+
+function syncMediaSessionMetadata() {
+  if (typeof navigator === 'undefined' || !('mediaSession' in navigator)) return;
+  try {
+    if (typeof MediaMetadata !== 'undefined') {
+      const info = resolveMediaSessionInfo(activeButton);
+      navigator.mediaSession.metadata = new MediaMetadata({
+        title: info.title,
+        artist: info.artist,
+        album: info.album,
+        artwork: [
+          { src: '/icon-192.png', sizes: '192x192', type: 'image/png' },
+          { src: '/icon-512.png', sizes: '512x512', type: 'image/png' },
+          { src: '/icon-192.svg', sizes: '192x192', type: 'image/svg+xml' },
+          { src: '/icon-512.svg', sizes: '512x512', type: 'image/svg+xml' },
+        ],
+      });
+    }
+
+    const safeSetHandler = (action, fn) => {
+      try {
+        navigator.mediaSession.setActionHandler(action, fn);
+      } catch (e) {}
+    };
+
+    safeSetHandler('play', () => {
+      if (isPaused && activeButton) {
+        readAloudText(activeButton);
+      } else if (activeStudioAudio && activeStudioAudio.paused) {
+        isPaused = false;
+        activeStudioAudio.play().catch(() => {});
+        updateFloatingAudioPlayerState();
+        syncMediaSessionState('playing');
+      }
+    });
+
+    safeSetHandler('pause', () => {
+      if (!isPaused && activeButton) {
+        readAloudText(activeButton);
+      } else if (activeStudioAudio && !activeStudioAudio.paused) {
+        activeStudioAudio.pause();
+        isPaused = true;
+        updateFloatingAudioPlayerState();
+        syncMediaSessionState('paused');
+      }
+    });
+
+    safeSetHandler('stop', () => {
+      cancelSpeech();
+    });
+
+    safeSetHandler('nexttrack', () => {
+      if (!activeButton) return;
+      const nextBtn = getAdjacentNarrativeButton(activeButton, 1);
+      if (nextBtn) {
+        const block =
+          nextBtn.closest('.standard-narrative-container, .narrative-chunk, .historical-editorial-lede') ||
+          nextBtn;
+        try {
+          block.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        } catch (e) {}
+        readAloudText(nextBtn);
+      }
+    });
+
+    safeSetHandler('previoustrack', () => {
+      if (activeStudioAudio && activeStudioAudio.currentTime > 4) {
+        activeStudioAudio.currentTime = 0;
+        syncMediaSessionPosition();
+        return;
+      }
+      if (!activeButton) return;
+      const prevBtn = getAdjacentNarrativeButton(activeButton, -1);
+      if (prevBtn) {
+        const block =
+          prevBtn.closest('.standard-narrative-container, .narrative-chunk, .historical-editorial-lede') ||
+          prevBtn;
+        try {
+          block.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        } catch (e) {}
+        readAloudText(prevBtn);
+      }
+    });
+
+    syncMediaSessionState(isPaused ? 'paused' : 'playing');
+    syncMediaSessionPosition();
+  } catch (e) {}
+}
 
 /**
  * Voice Classification Helpers
@@ -350,6 +640,7 @@ export function setSpeechRate(rate) {
     if (activeStudioAudio) {
       activeStudioAudio.playbackRate = currentSpeechRate;
       if ('preservesPitch' in activeStudioAudio) activeStudioAudio.preservesPitch = true;
+      syncMediaSessionPosition();
       return;
     }
 
@@ -560,6 +851,7 @@ function updateFloatingAudioPlayerState() {
   const pauseBtn = floatingAudioPlayerEl.querySelector('#sfp-pause-btn');
   const speedBtn = floatingAudioPlayerEl.querySelector('#sfp-speed-btn');
   const voiceBtn = floatingAudioPlayerEl.querySelector('#sfp-voice-btn');
+  const autoPlayBtn = floatingAudioPlayerEl.querySelector('#sfp-autoplay-btn');
   const labelEl = floatingAudioPlayerEl.querySelector('.sfp-label');
   if (labelEl) {
     labelEl.textContent = activeStudioAudio ? (activeStudioVoiceLabel || 'Studio Historian') : 'Reading';
@@ -573,6 +865,14 @@ function updateFloatingAudioPlayerState() {
   if (speedBtn) {
     speedBtn.textContent = `${currentSpeechRate}x`;
     speedBtn.title = `Playback speed: ${currentSpeechRate}x (Click to cycle 0.85x, 1x, 1.15x)`;
+  }
+  if (autoPlayBtn) {
+    const autoOn = isSpeechAutoPlayEnabled(activeStartedInNarrativeFlow || true);
+    autoPlayBtn.classList.toggle('is-active', autoOn);
+    autoPlayBtn.setAttribute('aria-pressed', autoOn ? 'true' : 'false');
+    autoPlayBtn.title = autoOn
+      ? 'Podcast Mode (Continuous Auto-Play): ON — automatically plays the next lesson paragraph'
+      : 'Podcast Mode (Continuous Auto-Play): OFF — tap to play whole lesson hands-free';
   }
   if (voiceBtn) {
     if (activeStudioAudio) {
@@ -597,9 +897,13 @@ function showFloatingAudioPlayer() {
     floatingAudioPlayerEl.setAttribute('role', 'region');
     floatingAudioPlayerEl.setAttribute('aria-label', 'Floating Audio Playback Controller');
     const isMale = currentVoiceGender === 'male';
+    const autoOn = isSpeechAutoPlayEnabled(activeStartedInNarrativeFlow || true);
     floatingAudioPlayerEl.innerHTML = `
       <div class="sfp-content">
         <span class="sfp-indicator"><i class="fa-solid fa-volume-high fa-beat-fade"></i> <span class="sfp-label">Reading</span></span>
+        <button type="button" class="sfp-btn sfp-autoplay-toggle${autoOn ? ' is-active' : ''}" id="sfp-autoplay-btn" aria-pressed="${autoOn ? 'true' : 'false'}" title="Continuous Podcast Mode: Auto-play next paragraph">
+          <i class="fa-solid fa-forward-step"></i> <span class="sfp-autoplay-text">Continuous</span>
+        </button>
         <button type="button" class="sfp-btn sfp-speed-toggle" id="sfp-speed-btn" title="Playback speed: ${currentSpeechRate}x (Click to cycle 0.85x, 1x, 1.15x)">
           ${currentSpeechRate}x
         </button>
@@ -615,6 +919,11 @@ function showFloatingAudioPlayer() {
       </div>
     `;
     document.body.appendChild(floatingAudioPlayerEl);
+
+    floatingAudioPlayerEl.querySelector('#sfp-autoplay-btn')?.addEventListener('click', (e) => {
+      e.stopPropagation();
+      toggleSpeechAutoPlay();
+    });
 
     floatingAudioPlayerEl.querySelector('#sfp-speed-btn')?.addEventListener('click', (e) => {
       e.stopPropagation();
@@ -648,7 +957,13 @@ function showFloatingAudioPlayer() {
 
   updateFloatingAudioPlayerState();
 
-  if (window.IntersectionObserver) {
+  if (isMobileSpeechViewport()) {
+    if (floatingAudioObserver) {
+      floatingAudioObserver.disconnect();
+      floatingAudioObserver = null;
+    }
+    floatingAudioPlayerEl.classList.add('is-visible');
+  } else if (window.IntersectionObserver) {
     if (floatingAudioObserver) floatingAudioObserver.disconnect();
     floatingAudioObserver = new IntersectionObserver(
       (entries) => {
@@ -657,7 +972,7 @@ function showFloatingAudioPlayer() {
             hideFloatingAudioPlayer();
             return;
           }
-          if (entry.isIntersecting) {
+          if (entry.isIntersecting && !isMobileSpeechViewport()) {
             floatingAudioPlayerEl?.classList.remove('is-visible');
           } else {
             floatingAudioPlayerEl?.classList.add('is-visible');
@@ -730,6 +1045,8 @@ export function resetActiveSpeech() {
   activeSpokenText = '';
   activeStartCharOffset = 0;
   isPaused = false;
+  activeStartedInNarrativeFlow = false;
+  syncMediaSessionState('none');
 
   if (customActiveResetCallback) {
     try {
@@ -778,6 +1095,10 @@ export function resetActiveSpeech() {
  * Stop any currently playing speech synthesis.
  */
 export function cancelSpeech() {
+  if (autoAdvanceTimer) {
+    clearTimeout(autoAdvanceTimer);
+    autoAdvanceTimer = null;
+  }
   activeUtterance = null;
   window._activeSpeechUtterance = null;
   if (activeStudioAudio) {
@@ -898,6 +1219,7 @@ function startUtterance(textToSpeak, charOffset, initialSpan) {
   lastHardwareBoundaryTime = 0;
   isPaused = false;
   showFloatingAudioPlayer();
+  syncMediaSessionMetadata();
 
   // Immediately focus the initial sentence/word if resuming
   if (initialSpan) {
@@ -934,7 +1256,10 @@ function startUtterance(textToSpeak, charOffset, initialSpan) {
   utterance.onend = () => {
     // Discard end event if this is not the currently active utterance
     if (activeUtterance !== utterance) return;
+    const finishedBtn = activeButton;
+    const wasNarrative = activeStartedInNarrativeFlow;
     resetActiveSpeech();
+    triggerAutoAdvanceFromButton(finishedBtn, wasNarrative);
   };
 
   utterance.onerror = (e) => {
@@ -1150,16 +1475,21 @@ function startStudioAudioWithFallback(studioSrc, spokenText, spans, voiceLabel =
     audio.playbackRate = currentSpeechRate;
     if ('preservesPitch' in audio) audio.preservesPitch = true;
     studioTimelineSpans = buildStudioSpanTimeline(spans, loadedBlockTimings, audio.duration);
+    syncMediaSessionPosition();
   };
   audio.onended = () => {
     if (activeStudioAudio !== audio) return;
+    const finishedBtn = activeButton;
+    const wasNarrative = activeStartedInNarrativeFlow;
     resetActiveSpeech();
+    triggerAutoAdvanceFromButton(finishedBtn, wasNarrative);
   };
 
   if (spans[0]) {
     highlightSpanAndSentence(spans[0]);
   }
   showFloatingAudioPlayer();
+  syncMediaSessionMetadata();
 
   if (softwareTickerTimer) clearInterval(softwareTickerTimer);
   softwareTickerTimer = setInterval(() => {
@@ -1223,12 +1553,16 @@ export function readAloudText(btnElement) {
       btnElement.innerHTML = '<i class="fa-solid fa-play"></i>';
       btnElement.title = 'Resume Reading';
       updateFloatingAudioPlayerState();
+      syncMediaSessionState('paused');
+      syncMediaSessionPosition();
     } else {
       isPaused = false;
       btnElement.classList.remove('reading-paused');
       btnElement.innerHTML = '<i class="fa-solid fa-pause"></i>';
       btnElement.title = 'Pause Reading';
       updateFloatingAudioPlayerState();
+      syncMediaSessionState('playing');
+      syncMediaSessionPosition();
       activeStudioAudio.play().catch(() => resetActiveSpeech());
     }
     return;
@@ -1243,6 +1577,7 @@ export function readAloudText(btnElement) {
       btnElement.innerHTML = '<i class="fa-solid fa-play"></i>';
       btnElement.title = 'Resume Reading';
       updateFloatingAudioPlayerState();
+      syncMediaSessionState('paused');
       return;
     } else {
       window.speechSynthesis.resume();
@@ -1251,6 +1586,7 @@ export function readAloudText(btnElement) {
       btnElement.innerHTML = '<i class="fa-solid fa-pause"></i>';
       btnElement.title = 'Pause Reading';
       updateFloatingAudioPlayerState();
+      syncMediaSessionState('playing');
       if (!window.speechSynthesis.speaking) {
         resumeSpeechFromCurrentSentence();
       }
@@ -1260,6 +1596,7 @@ export function readAloudText(btnElement) {
 
   // 2. If another button was clicked, cancel previous speech and start fresh
   cancelSpeech();
+  activeStartedInNarrativeFlow = isNarrativeFlowButton(btnElement);
 
   // Find parent container (narrative chunk, prologue lede, source box, or card)
   const chunk =
@@ -1523,6 +1860,9 @@ export function initSpeech() {
   window.toggleVoiceGender = toggleVoiceGender;
   window.updateVoiceUI = updateVoiceUI;
   window.renderAudioPlaybackBar = renderAudioPlaybackBar;
+  window.isSpeechAutoPlayEnabled = isSpeechAutoPlayEnabled;
+  window.setSpeechAutoPlay = setSpeechAutoPlay;
+  window.toggleSpeechAutoPlay = toggleSpeechAutoPlay;
 
   if ('speechSynthesis' in window) {
     // Prime voices immediately and when changed asynchronously
