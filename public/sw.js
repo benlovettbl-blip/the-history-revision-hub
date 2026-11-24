@@ -30,7 +30,7 @@ self.addEventListener('install', (event) => {
   );
 });
 
-// Activate Event: Delete all old caches immediately
+  // Activate Event: Delete all old caches immediately
 self.addEventListener('activate', (event) => {
   console.log('[Service Worker] Activating version:', CACHE_NAME);
   event.waitUntil(
@@ -47,6 +47,55 @@ self.addEventListener('activate', (event) => {
         );
       })
       .then(() => self.clients.claim()),
+  );
+});
+
+// Message Event: Pre-save a curriculum unit offline on pupil/teacher demand
+self.addEventListener('message', (event) => {
+  const data = event.data;
+  if (!data || data.type !== 'SAVE_UNIT_OFFLINE' || !data.unitId) return;
+
+  const cleanUnitId = String(data.unitId)
+    .trim()
+    .replace(/[^a-zA-Z0-9_-]/g, '');
+  if (!cleanUnitId) return;
+
+  const sendReply = async (payload) => {
+    if (event.source && typeof event.source.postMessage === 'function') {
+      event.source.postMessage(payload);
+      return;
+    }
+    const clients = await self.clients.matchAll({ type: 'window', includeUncontrolled: true });
+    clients.forEach((client) => client.postMessage(payload));
+  };
+
+  event.waitUntil(
+    (async () => {
+      try {
+        const cache = await caches.open(DYNAMIC_CACHE);
+        const assetUrls = [`/data/${cleanUnitId}.json`, '/data/database_index.json'];
+
+        await Promise.all(
+          assetUrls.map(async (assetUrl) => {
+            const response = await fetch(assetUrl, { cache: 'no-cache' });
+            if (!response || response.status !== 200) {
+              throw new Error(`HTTP ${response ? response.status : 'error'} for ${assetUrl}`);
+            }
+            await cache.put(assetUrl, response.clone());
+          }),
+        );
+
+        await sendReply({ type: 'UNIT_SAVED_OFFLINE', unitId: cleanUnitId, ok: true });
+      } catch (err) {
+        console.warn('[Service Worker] SAVE_UNIT_OFFLINE error:', err);
+        await sendReply({
+          type: 'UNIT_SAVED_OFFLINE',
+          unitId: cleanUnitId,
+          ok: false,
+          error: err && err.message ? err.message : 'Offline save failed',
+        });
+      }
+    })(),
   );
 });
 

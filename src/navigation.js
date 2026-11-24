@@ -23,9 +23,18 @@ import { isStaffModeActive, getUnitCatalogEntry } from './data/unit_resources_ca
 import {
   getCleanPathForUnit,
   getSeoRouteForUnit,
+  resolveRouteFromPathname,
+  resolveUnitIdFromPathname,
+  resolveUnlistedPathname,
+  isSchoolsPathname,
   SCHOOLS_SEO_PAGE,
   SITE_ORIGIN,
 } from './data/seo_routes.js';
+import {
+  initMobileAppShell,
+  syncMobileBottomNavActiveState,
+  closeAnyOpenMobileModalOrDrawer,
+} from './mobile_app_shell.js';
 
 export { jumpToKeyIndividual };
 
@@ -417,6 +426,21 @@ export function updateHeaderBackBtn(explicitView = null) {
 
   const isUnitOverview = activeView === 'lessons' && !isInsideActiveLesson;
 
+  if (isInsideActiveLesson && activeUnit) {
+    window.hhRecordLastLesson?.({
+      unitId: activeUnit,
+      lessonIndex: window.currentLessonIndex,
+    });
+  }
+
+  window.__hhLastCommittedNav = {
+    view: activeView,
+    unitId: activeUnit || null,
+    lessonIndex: isInsideActiveLesson ? window.currentLessonIndex : null,
+    href: window.location.href,
+  };
+  syncMobileBottomNavActiveState(activeView);
+
   if (activeView === 'dashboard' || (isUnitOverview && isLocked)) {
     backBtn.style.display = 'none';
     if (appHeader) appHeader.classList.remove('has-back-btn');
@@ -535,6 +559,8 @@ window.handleHeaderBackClick = function () {
 
 // Subscribe to state changes to handle DOM updates independently of the router
 export function initNavigationUI() {
+  initMobileAppShell();
+
   const initialBackBtn = document.getElementById('header-back-btn');
   if (initialBackBtn) {
     initialBackBtn.onclick = (e) => {
@@ -542,12 +568,226 @@ export function initNavigationUI() {
       window.handleHeaderBackClick();
     };
   }
+
+  if (typeof window !== 'undefined' && !window.__hhNavPopstateBound) {
+    window.__hhNavPopstateBound = true;
+
+    // Seed clean back-stack on cold-boot deep links so Android Back steps Lesson -> Unit -> Home instead of exiting app
+    setTimeout(() => {
+      try {
+        const params = new URLSearchParams(window.location.search || '');
+        const isLockedBoot =
+          params.get('locked') === 'true' ||
+          params.get('mode') === 'pupil' ||
+          params.get('safeguard') === 'true';
+        const curView = window.currentView || appStore.state.currentView || state.currentView || 'dashboard';
+        const curUnit = state.selectedUnitId || window.currentUnitId || null;
+        const curLesson =
+          curView === 'lessons' && typeof window.currentLessonIndex === 'number' && window.currentLessonIndex >= 0
+            ? window.currentLessonIndex
+            : null;
+
+        if (
+          !isLockedBoot &&
+          curView !== 'dashboard' &&
+          typeof sessionStorage !== 'undefined' &&
+          !sessionStorage.getItem('hh_backstack_seeded')
+        ) {
+          sessionStorage.setItem('hh_backstack_seeded', '1');
+          const activeHref = window.location.href;
+          const activeState = {
+            ...(window.history.state || {}),
+            hhNav: true,
+            view: curView,
+            unit: curUnit,
+            unitId: curUnit,
+            lessonIndex: curLesson !== null ? curLesson : undefined,
+            opts: curLesson !== null ? { lessonIndex: curLesson } : {},
+          };
+
+          window.history.replaceState(
+            { hhNav: true, view: 'dashboard', unit: null, unitId: null, opts: {}, scrollY: 0 },
+            '',
+            '/',
+          );
+          if (curLesson !== null && curUnit) {
+            const unitPath = getCleanPathForUnit(curUnit) || `/?view=lessons&unit=${curUnit}`;
+            window.history.pushState(
+              { hhNav: true, view: 'lessons', unit: curUnit, unitId: curUnit, opts: {}, scrollY: 0 },
+              '',
+              unitPath,
+            );
+          }
+          window.history.pushState(activeState, '', activeHref);
+        }
+      } catch (err) {}
+    }, 320);
+
+    window.addEventListener('popstate', (e) => {
+      if (window.__hhSuppressPopstateOnce) {
+        window.__hhSuppressPopstateOnce = false;
+        e.stopImmediatePropagation();
+        return;
+      }
+
+      const prevNav = window.__hhLastCommittedNav ? { ...window.__hhLastCommittedNav } : null;
+      const poppedState = e.state || {};
+
+      // 1. Always close any open modal or mobile drawer first before navigating back
+      const modalCloseResult = closeAnyOpenMobileModalOrDrawer();
+      const didCloseLayer =
+        typeof modalCloseResult === 'object' ? Boolean(modalCloseResult.closed) : Boolean(modalCloseResult);
+      const layerHadHistoryEntry =
+        typeof modalCloseResult === 'object' ? Boolean(modalCloseResult.hadHistoryEntry) : Boolean(poppedState.hhModal);
+      if (didCloseLayer) {
+        e.stopImmediatePropagation();
+        if (!layerHadHistoryEntry && prevNav) {
+          try {
+            window.history.pushState(
+              {
+                hhNav: true,
+                view: prevNav.view,
+                unit: prevNav.unitId,
+                unitId: prevNav.unitId,
+                lessonIndex: prevNav.lessonIndex ?? undefined,
+                opts: prevNav.lessonIndex !== null ? { lessonIndex: prevNav.lessonIndex } : {},
+                scrollY: window.scrollY || 0,
+              },
+              '',
+              prevNav.href || window.location.href,
+            );
+          } catch (err) {}
+        }
+        return;
+      }
+
+      // 2. Handle in-page section hash jumps cleanly
+      if (window.location.hash && window.location.hash.includes('-section')) {
+        const targetEl = document.querySelector(window.location.hash);
+        if (targetEl) {
+          e.stopImmediatePropagation();
+          targetEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          return;
+        }
+      }
+
+      e.stopImmediatePropagation();
+
+      const currentUrlParams = new URLSearchParams(window.location.search);
+      const popRoute = resolveRouteFromPathname(window.location.pathname);
+      const pathUnit = popRoute ? popRoute.unitId : resolveUnitIdFromPathname(window.location.pathname);
+      const pathIsSchools = isSchoolsPathname(window.location.pathname);
+      const pathUnlisted = resolveUnlistedPathname(window.location.pathname);
+      const urlView = currentUrlParams.get('view') || (pathIsSchools ? 'schools' : pathUnlisted || null);
+      const urlUnit = currentUrlParams.get('unit') || pathUnit;
+      const urlLesson = currentUrlParams.get('lesson') ?? (popRoute ? popRoute.lessonSlug : null);
+      const targetScrollY = typeof poppedState.scrollY === 'number' ? poppedState.scrollY : 0;
+
+      let targetView = poppedState.view || urlView || (urlUnit ? 'lessons' : 'dashboard');
+      let targetUnit =
+        poppedState.unitId !== undefined
+          ? poppedState.unitId
+          : poppedState.unit !== undefined
+            ? poppedState.unit
+            : urlUnit;
+      const targetOpts = poppedState.opts && typeof poppedState.opts === 'object' ? poppedState.opts : {};
+
+      // 3. Enforce hierarchical step-back: Lesson -> Unit Overview -> Home Dashboard
+      if (
+        prevNav &&
+        prevNav.view === 'lessons' &&
+        typeof prevNav.lessonIndex === 'number' &&
+        prevNav.lessonIndex >= 0 &&
+        prevNav.unitId &&
+        targetView === 'dashboard'
+      ) {
+        const stepUnit = prevNav.unitId;
+        window.currentLessonIndex = null;
+        window._unitReturnOrigin = null;
+        const unitOverviewUrl = getCleanPathForUnit(stepUnit) || `/?view=lessons&unit=${stepUnit}`;
+        try {
+          window.history.pushState(
+            { hhNav: true, view: 'lessons', unit: stepUnit, unitId: stepUnit, opts: {}, scrollY: 0 },
+            '',
+            unitOverviewUrl,
+          );
+        } catch (err) {}
+        switchView('lessons', stepUnit, true);
+        return;
+      }
+
+      if (targetView === 'timeline' && typeof poppedState.timelineMilestoneIdx === 'number') {
+        window._cmeRestoreMilestoneIdx = poppedState.timelineMilestoneIdx;
+      }
+
+      if (targetScrollY > 0) {
+        window._suppressLessonAutoScrollTop = true;
+      }
+
+      switchView(targetView, targetUnit, true, { ...targetOpts, skipScrollToTop: true }).then(() => {
+        const unitDataObj = getUnitData(targetUnit);
+        let lessonIdx = null;
+        if (typeof poppedState.lessonIndex === 'number' && poppedState.lessonIndex >= 0) {
+          lessonIdx = poppedState.lessonIndex;
+        } else if (typeof targetOpts.lessonIndex === 'number' && targetOpts.lessonIndex >= 0) {
+          lessonIdx = targetOpts.lessonIndex;
+        } else if (urlLesson !== null && String(urlLesson).trim() !== '' && unitDataObj && Array.isArray(unitDataObj.lessons)) {
+          const rawStr = String(urlLesson).trim().toLowerCase();
+          const hasZero = Boolean(
+            unitDataObj.lessons[0] &&
+              (unitDataObj.lessons[0].id === 'lesson_0' ||
+                (unitDataObj.lessons[0].title && unitDataObj.lessons[0].title.includes('KT 1.0'))),
+          );
+          if (/^\d+$/.test(rawStr)) {
+            const num = parseInt(rawStr, 10);
+            lessonIdx = hasZero ? num : Math.max(0, num - 1);
+          } else {
+            const found = unitDataObj.lessons.findIndex(
+              (l) =>
+                (l.slug && l.slug.toLowerCase() === rawStr) ||
+                (l.id && l.id.toLowerCase() === rawStr),
+            );
+            if (found !== -1) lessonIdx = found;
+          }
+        }
+
+        if (targetView === 'lessons') {
+          if (lessonIdx !== null && lessonIdx >= 0) {
+            if (window.currentLessonIndex !== lessonIdx) {
+              if (typeof window.renderLessonByIndex === 'function') {
+                window.renderLessonByIndex(lessonIdx, true);
+              } else if (typeof window.viewLessonDetail === 'function') {
+                window.viewLessonDetail(lessonIdx, null, true);
+              }
+            }
+            window.currentLessonIndex = lessonIdx;
+          } else {
+            const wasInLesson = typeof window.currentLessonIndex === 'number';
+            window.currentLessonIndex = null;
+            window._unitReturnOrigin = null;
+            if (wasInLesson) {
+              renderLessonsView();
+            }
+          }
+          updateHeaderBackBtn('lessons');
+        } else {
+          window.currentLessonIndex = null;
+          updateHeaderBackBtn(targetView);
+        }
+
+        window._suppressLessonAutoScrollTop = false;
+        restoreSavedScrollPosition(targetScrollY);
+      });
+    });
+  }
+
   appStore.subscribe('currentView', (viewName) => {
     if (typeof window !== 'undefined') {
       window.currentView = viewName;
     }
     syncKs2PortalState(state.selectedUnitId || window.currentUnitId, state.activeUnitData, viewName);
     updateHeaderBackBtn(viewName);
+    syncMobileBottomNavActiveState(viewName);
 
     // Header Right
     const headerRight = document.querySelector('.header-right');
@@ -1215,19 +1455,52 @@ export async function switchView(viewName, param = null, skipHistory = false, op
         url.searchParams.delete('lesson');
       }
     }
+    const safeHistoryOpts = {};
+    if (options && typeof options === 'object') {
+      if (typeof options.lessonIndex === 'number') safeHistoryOpts.lessonIndex = options.lessonIndex;
+      if (options.rawLesson !== undefined) safeHistoryOpts.rawLesson = options.rawLesson;
+      if (options.game !== undefined) safeHistoryOpts.game = options.game;
+      if (options.lessonScope !== undefined) safeHistoryOpts.lessonScope = options.lessonScope;
+    }
+
     try {
+      // When jumping directly from Dashboard (or another unit) into a specific lesson, insert Unit Overview step so Back goes Lesson -> Unit -> Home
+      if (
+        viewName === 'lessons' &&
+        param &&
+        typeof options?.lessonIndex === 'number' &&
+        (previousView !== 'lessons' || previousUnit !== param)
+      ) {
+        const overviewHref = cleanUnitPath || `/?view=lessons&unit=${param}`;
+        window.history.pushState(
+          {
+            hhNav: true,
+            view: 'lessons',
+            unit: param,
+            unitId: param,
+            opts: {},
+            scrollY: 0,
+          },
+          '',
+          overviewHref,
+        );
+      }
+
       window.history.pushState(
         {
+          hhNav: true,
           view: viewName,
           unit: param,
+          unitId: param,
           lesson: options?.lessonIndex,
           lessonIndex: options?.lessonIndex,
+          opts: safeHistoryOpts,
           scrollY: 0,
         },
         '',
         url,
       );
-      if (viewName === 'lessons' && ( !options || typeof options.lessonIndex !== 'number')) {
+      if (viewName === 'lessons' && (!options || typeof options.lessonIndex !== 'number')) {
         window._lastLessonsOverviewPushTs = Date.now();
       }
     } catch (e) {}
@@ -1350,10 +1623,14 @@ export async function switchView(viewName, param = null, skipHistory = false, op
     await renderLessonsView();
     if (options && typeof options.lessonIndex === 'number') {
       if (typeof window.viewLessonDetail === 'function') {
-        window.viewLessonDetail(options.lessonIndex);
+        window.viewLessonDetail(options.lessonIndex, null, true);
       } else if (typeof window.renderLessonByIndex === 'function') {
-        window.renderLessonByIndex(options.lessonIndex);
+        window.renderLessonByIndex(options.lessonIndex, true);
       }
+      window.hhRecordLastLesson?.({
+        unitId: targetUnit,
+        lessonIndex: options.lessonIndex,
+      });
     }
   } else if (viewName === 'curriculum' || viewName === 'department-portal') {
     if (!isStaffModeActive()) {

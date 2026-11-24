@@ -1,0 +1,798 @@
+/* ==========================================================================
+   The History Revision Hub — Mobile App Shell, Bottom Tab Bar & Launchpad
+   ========================================================================== */
+
+/* Hide legacy 3-tab bottom bar in favour of #hh-mobile-bottom-nav */
+#mobile-bottom-nav {
+  display: none !important;
+}
+
+/* Base Desktop Rule (>= 933px): Hide 4-Tab Mobile Bottom Bar */
+#hh-mobile-bottom-nav {
+  display: none !important;
+}
+
+@media print {
+  #hh-mobile-bottom-nav,
+  #hh-home-launchpad,
+  #hh-pin-units-modal,
+  #hh-shell-toast {
+    display: none !important;
+  }
+}
+
+/* ==========================================================================
+   1. 4-Tab Thumb-Reachable Mobile Bottom Navigation (< 933px & Standalone)
+   ========================================================================== */
+@media (max-width: 932.98px), (display-mode: standalone) and (max-width: 1024px) {
+  #hh-mobile-bottom-nav {
+    display: grid !important;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    align-items: stretch;
+    position: fixed !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    width: 100% !important;
+    max-width: 100vw !important;
+    min-height: calc(60px + env(safe-area-inset-bottom, 0px));
+    height: auto !important;
+    padding: 4px 6px calc(4px + env(safe-area-inset-bottom, 0px)) 6px !important;
+    box-sizing: border-box !important;
+    background: rgba(255, 255, 255, 0.96);
+    -webkit-backdrop-filter: blur(18px);
+    backdrop-filter: blur(18px);
+    border-top: 1px solid rgba(203, 213, 225, 0.92);
+    box-shadow: 0 -4px 20px rgba(15, 23, 42, 0.09);
+    z-index: 10020 !important;
+  }
+
+  [data-theme='space'] #hh-mobile-bottom-nav {
+    background: rgba(15, 23, 42, 0.97) !important;
+    border-top-color: rgba(99, 102, 241, 0.3) !important;
+  }
+
+  [data-theme='desert'] #hh-mobile-bottom-nav {
+    background: rgba(254, 250, 224, 0.97) !important;
+    border-top-color: rgba(212, 163, 115, 0.35) !important;
+  }
+
+  [data-theme='coral'] #hh-mobile-bottom-nav {
+    background: rgba(255, 241, 242, 0.97) !important;
+    border-top-color: rgba(244, 63, 94, 0.28) !important;
+  }
+
+  body.sen-mode #hh-mobile-bottom-nav {
+    background: rgba(253, 246, 227, 0.98) !important;
+    border-top-color: #d6cbb5 !important;
+  }
+
+  /* Guarantee page content & footers clear fixed bottom nav (>= 96px safe area) */
+  body.hh-has-bottom-nav .app-body,
+  body.hh-has-bottom-nav #main-content {
+    padding-bottom: calc(96px + env(safe-area-inset-bottom, 0px)) !important;
+  }
+
+  body.hh-has-bottom-nav .app-global-footer {
+    padding-bottom: calc(96px + env(safe-area-inset-bottom, 0px)) !important;
+  }
+
+  /* Lift floating audio player and share toasts above bottom bar */
+  body.hh-has-bottom-nav #speech-floating-player,
+  body.hh-has-bottom-nav #hh-share-toast,
+  body.hh-has-bottom-nav .offline-status-pill {
+    bottom: calc(72px + env(safe-area-inset-bottom, 0px)) !important;
+  }
+}
+
+.hh-bnav-btn {
+  appearance: none;
+  -webkit-appearance: none;
+  background: transparent;
+  border: none;
+  border-radius: 10px;
+  padding: 5px 4px;
+  min-height: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  color: var(--text-muted, #64748b);
+  font-family: 'Outfit', 'Inter', system-ui, -apple-system, sans-serif;
+  font-size: 0.69rem;
+  font-weight: 700;
+  line-height: 1.1;
+  cursor: pointer;
+  position: relative;
+  transition: color 0.16s ease, background-color 0.16s ease, transform 0.12s ease;
+  -webkit-tap-highlight-color: transparent;
+  min-width: 0;
+}
+
+.hh-bnav-btn i {
+  font-size: 1.08rem;
+  line-height: 1;
+  transition: transform 0.16s ease;
+}
+
+.hh-bnav-btn span.hh-bnav-label {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+
+.hh-bnav-btn:active {
+  transform: scale(0.95);
+}
+
+.hh-bnav-btn.active {
+  color: #1d4ed8;
+  background: rgba(37, 99, 235, 0.09);
+}
+
+.hh-bnav-btn.active::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 26%;
+  right: 26%;
+  height: 2.5px;
+  border-radius: 999px;
+  background: #2563eb;
+}
+
+[data-theme='space'] .hh-bnav-btn {
+  color: #94a3b8;
+}
+
+[data-theme='space'] .hh-bnav-btn.active {
+  color: #60a5fa;
+  background: rgba(96, 165, 250, 0.14);
+}
+
+[data-theme='space'] .hh-bnav-btn.active::before {
+  background: #60a5fa;
+}
+
+.hh-bnav-dot {
+  position: absolute;
+  top: 5px;
+  right: calc(50% - 16px);
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #10b981;
+  border: 1.5px solid #ffffff;
+}
+
+/* ==========================================================================
+   2. Pupil App Mode Chrome Separation (< 933px when NOT in Staff Mode)
+   ========================================================================== */
+@media (max-width: 932.98px) {
+  body.hh-mobile-pupil-mode:not(.staff-mode-active) .whiteboard-toggle-btn,
+  body.hh-mobile-pupil-mode:not(.staff-mode-active) .btn-whiteboard-toggle,
+  body.hh-mobile-pupil-mode:not(.staff-mode-active) #btn-fc-whiteboard,
+  body.hh-mobile-pupil-mode:not(.staff-mode-active) [data-action='open-task-whiteboard'],
+  body.hh-mobile-pupil-mode:not(.staff-mode-active) [data-action='open-vocab-whiteboard'],
+  body.hh-mobile-pupil-mode:not(.staff-mode-active) [onclick*='openTaskWhiteboard'],
+  body.hh-mobile-pupil-mode:not(.staff-mode-active) [onclick*='selfQuizToggleWhiteboard'],
+  body.hh-mobile-pupil-mode:not(.staff-mode-active) [onclick*='window.print'],
+  body.hh-mobile-pupil-mode:not(.staff-mode-active) .teacher-only-plenary-btn,
+  body.hh-mobile-pupil-mode:not(.staff-mode-active) .btn-teacher-guidance-launcher,
+  body.hh-mobile-pupil-mode:not(.staff-mode-active) .teacher-only-guidance-drawer,
+  body.hh-mobile-pupil-mode:not(.staff-mode-active) #btn-cover-modal,
+  body.hh-mobile-pupil-mode:not(.staff-mode-active) #btn-copy-class-link {
+    display: none !important;
+  }
+}
+
+/* ==========================================================================
+   3. Smart Mobile Home Launchpad & Pinned Courses Shelf
+   ========================================================================== */
+.hh-home-launchpad {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  margin: 0 0 18px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+/* On desktop (>= 933px), hide fresh-empty mobile-only cards cleanly while keeping pinned/resume bar sleek */
+@media (min-width: 933px) {
+  .hh-home-launchpad.hh-launchpad-empty {
+    display: none;
+  }
+}
+
+/* Install App Banner */
+.hh-install-banner {
+  background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
+  color: #f8fafc;
+  border: 1px solid rgba(96, 165, 250, 0.35);
+  border-radius: 12px;
+  padding: 10px 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  box-shadow: 0 4px 14px rgba(15, 23, 42, 0.12);
+  box-sizing: border-box;
+}
+
+.hh-install-banner-main {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+  flex: 1;
+}
+
+.hh-install-icon {
+  width: 34px;
+  height: 34px;
+  border-radius: 9px;
+  background: rgba(59, 130, 246, 0.25);
+  border: 1px solid rgba(147, 197, 253, 0.35);
+  color: #93c5fd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+.hh-install-copy {
+  font-size: 0.79rem;
+  line-height: 1.35;
+  color: #e2e8f0;
+  min-width: 0;
+}
+
+.hh-install-copy strong {
+  color: #ffffff;
+  font-weight: 800;
+}
+
+.hh-install-actions {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+}
+
+.hh-install-cta-btn {
+  background: #3b82f6;
+  color: #ffffff;
+  border: 1px solid #60a5fa;
+  border-radius: 8px;
+  padding: 6px 12px;
+  font-size: 0.76rem;
+  font-weight: 800;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.hh-install-dismiss-btn {
+  background: rgba(255, 255, 255, 0.1);
+  color: #cbd5e1;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 7px;
+  width: 28px;
+  height: 28px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 0.78rem;
+}
+
+/* Launchpad Action Grid: Continue Lesson + Weak Spots + Choose Subjects */
+.hh-launchpad-actions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.hh-lp-card {
+  background: var(--bg-card, #ffffff);
+  border: 1.5px solid var(--border-glass, #e2e8f0);
+  border-radius: 12px;
+  padding: 12px 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  box-shadow: 0 2px 10px rgba(15, 23, 42, 0.04);
+  box-sizing: border-box;
+  min-width: 0;
+}
+
+.hh-lp-card-resume {
+  border-left: 4px solid #10b981;
+  background: linear-gradient(135deg, #ffffff 0%, #f0fdf4 100%);
+}
+
+.hh-lp-card-weak {
+  border-left: 4px solid #f59e0b;
+  background: linear-gradient(135deg, #ffffff 0%, #fffbeb 100%);
+}
+
+.hh-lp-card-weak.has-due {
+  border-left-color: #ef4444;
+  background: linear-gradient(135deg, #ffffff 0%, #fef2f2 100%);
+}
+
+.hh-lp-card-setup {
+  border-left: 4px solid #2563eb;
+  background: linear-gradient(135deg, #ffffff 0%, #eff6ff 100%);
+}
+
+[data-theme='space'] .hh-lp-card {
+  background: #1e293b;
+  border-color: #334155;
+}
+
+.hh-lp-meta {
+  min-width: 0;
+  flex: 1;
+}
+
+.hh-lp-eyebrow {
+  font-size: 0.66rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #475569;
+  margin-bottom: 2px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+[data-theme='space'] .hh-lp-eyebrow {
+  color: #94a3b8;
+}
+
+.hh-lp-title {
+  font-size: 0.88rem;
+  font-weight: 800;
+  color: var(--text-main, #0f172a);
+  line-height: 1.25;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.hh-lp-sub {
+  font-size: 0.74rem;
+  color: var(--text-muted, #64748b);
+  margin-top: 2px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.hh-lp-btn {
+  border: none;
+  border-radius: 9px;
+  padding: 9px 13px;
+  min-height: 40px;
+  font-size: 0.78rem;
+  font-weight: 800;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  white-space: nowrap;
+  flex-shrink: 0;
+  transition: filter 0.15s ease, transform 0.12s ease;
+}
+
+.hh-lp-btn:active {
+  transform: scale(0.97);
+}
+
+.hh-lp-btn-green {
+  background: #059669;
+  color: #ffffff;
+  box-shadow: 0 3px 10px rgba(5, 150, 105, 0.25);
+}
+
+.hh-lp-btn-amber {
+  background: #d97706;
+  color: #ffffff;
+  box-shadow: 0 3px 10px rgba(217, 119, 6, 0.22);
+}
+
+.hh-lp-btn-red {
+  background: #dc2626;
+  color: #ffffff;
+  box-shadow: 0 3px 10px rgba(220, 38, 38, 0.25);
+}
+
+.hh-lp-btn-blue {
+  background: #2563eb;
+  color: #ffffff;
+  box-shadow: 0 3px 10px rgba(37, 99, 235, 0.24);
+}
+
+.hh-due-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1px 7px;
+  border-radius: 999px;
+  font-size: 0.66rem;
+  font-weight: 800;
+  background: #fee2e2;
+  color: #b91c1c;
+  border: 1px solid #fca5a5;
+}
+
+.hh-due-pill.zero {
+  background: #fef3c7;
+  color: #92400e;
+  border-color: #fde68a;
+}
+
+/* Pinned Courses Shelf */
+.hh-pinned-shelf {
+  background: var(--bg-card, #ffffff);
+  border: 1.5px solid var(--border-glass, #cbd5e1);
+  border-radius: 14px;
+  padding: 14px;
+  box-shadow: 0 4px 14px rgba(15, 23, 42, 0.04);
+  box-sizing: border-box;
+}
+
+.hh-pinned-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.hh-pinned-heading-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+}
+
+.hh-pinned-badge {
+  background: #1e3a8a;
+  color: #ffffff;
+  font-size: 0.66rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 3px 8px;
+  border-radius: 6px;
+}
+
+.hh-pinned-title {
+  margin: 0;
+  font-size: 0.98rem;
+  font-weight: 800;
+  color: var(--text-main, #0f172a);
+}
+
+.hh-pinned-controls {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.hh-shelf-ctrl-btn {
+  background: #f8fafc;
+  color: #1e293b;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  padding: 6px 10px;
+  font-size: 0.74rem;
+  font-weight: 700;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.hh-shelf-ctrl-btn.primary-outline {
+  border-color: #93c5fd;
+  background: #eff6ff;
+  color: #1d4ed8;
+}
+
+.hh-pinned-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(235px, 1fr));
+  gap: 10px;
+}
+
+.hh-pinned-card {
+  background: var(--bg-app, #f8fafc);
+  border: 1.5px solid var(--border-glass, #e2e8f0);
+  border-top: 3px solid #2563eb;
+  border-radius: 10px;
+  padding: 11px 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+  cursor: pointer;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+  box-sizing: border-box;
+  min-width: 0;
+}
+
+.hh-pinned-card[data-group='gcse'] {
+  border-top-color: #f59e0b;
+}
+
+.hh-pinned-card[data-group='ks2'] {
+  border-top-color: #4f46e5;
+}
+
+.hh-pinned-card:hover {
+  border-color: #94a3b8;
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.07);
+}
+
+.hh-pinned-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+}
+
+.hh-pinned-stage-tag {
+  font-size: 0.64rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #475569;
+  background: #e2e8f0;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.hh-pinned-card[data-group='gcse'] .hh-pinned-stage-tag {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.hh-pinned-card-name {
+  margin: 4px 0 0 0;
+  font-size: 0.88rem;
+  font-weight: 800;
+  color: var(--text-main, #0f172a);
+  line-height: 1.28;
+}
+
+.hh-pinned-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+  padding-top: 7px;
+  border-top: 1px solid rgba(203, 213, 225, 0.6);
+}
+
+.hh-offline-pill {
+  background: #ffffff;
+  color: #334155;
+  border: 1px solid #cbd5e1;
+  border-radius: 999px;
+  padding: 4px 9px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  white-space: nowrap;
+}
+
+.hh-offline-pill.is-saved {
+  background: #ecfdf5;
+  color: #065f46;
+  border-color: #6ee7b7;
+}
+
+.hh-pinned-open-lbl {
+  font-size: 0.74rem;
+  font-weight: 800;
+  color: #2563eb;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* Collapse full 26-course catalogue when Pinned Focus Mode is active */
+.homepage-dashboard-container.hh-pinned-only-mode .homepage-nav-toolbar,
+.homepage-dashboard-container.hh-pinned-only-mode #block-ks2,
+.homepage-dashboard-container.hh-pinned-only-mode #block-ks3,
+.homepage-dashboard-container.hh-pinned-only-mode #block-gcse {
+  display: none !important;
+}
+
+/* ==========================================================================
+   4. "Choose My Subjects" & Teacher QR Modal (#hh-pin-units-modal)
+   ========================================================================== */
+.hh-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.76);
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  z-index: 10050;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px;
+  box-sizing: border-box;
+}
+
+.hh-modal-dialog {
+  background: #ffffff;
+  color: #0f172a;
+  border-radius: 16px;
+  border: 1px solid #cbd5e1;
+  width: 100%;
+  max-width: 680px;
+  max-height: min(88vh, 760px);
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 24px 48px rgba(15, 23, 42, 0.35);
+  overflow: hidden;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+.hh-modal-header {
+  padding: 16px 18px 12px 18px;
+  border-bottom: 1px solid #e2e8f0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.hh-modal-body {
+  padding: 14px 18px;
+  overflow-y: auto;
+  flex: 1;
+}
+
+.hh-modal-group-title {
+  font-size: 0.73rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #475569;
+  margin: 12px 0 8px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hh-modal-group-title:first-child {
+  margin-top: 0;
+}
+
+.hh-pin-options-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 7px;
+}
+
+.hh-pin-option {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 9px 11px;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 9px;
+  background: #f8fafc;
+  cursor: pointer;
+  font-size: 0.81rem;
+  font-weight: 600;
+  color: #1e293b;
+  transition: all 0.14s ease;
+  user-select: none;
+}
+
+.hh-pin-option.is-checked {
+  border-color: #2563eb;
+  background: #eff6ff;
+  color: #1e3a8a;
+  font-weight: 700;
+}
+
+.hh-pin-option input[type='checkbox'] {
+  width: 17px;
+  height: 17px;
+  accent-color: #2563eb;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+.hh-modal-qr-drawer {
+  margin-top: 14px;
+  padding: 14px;
+  background: #f8fafc;
+  border: 1.5px solid #cbd5e1;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.hh-modal-footer {
+  padding: 12px 18px;
+  border-top: 1px solid #e2e8f0;
+  background: #f8fafc;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+@media (max-width: 560px) {
+  .hh-modal-backdrop {
+    align-items: flex-end;
+    padding: 0;
+  }
+
+  .hh-modal-dialog {
+    border-radius: 18px 18px 0 0;
+    max-height: 90vh;
+  }
+
+  .hh-launchpad-actions-grid,
+  .hh-pinned-grid,
+  .hh-pin-options-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Mobile-Safe Shell Toast */
+#hh-shell-toast {
+  position: fixed;
+  left: 50%;
+  bottom: calc(76px + env(safe-area-inset-bottom, 0px));
+  transform: translate(-50%, 14px);
+  z-index: 10060;
+  background: #0f172a;
+  color: #f8fafc;
+  border: 1.5px solid #10b981;
+  border-radius: 999px;
+  padding: 9px 16px;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 0.82rem;
+  font-weight: 700;
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.35);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  max-width: calc(100vw - 28px);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+#hh-shell-toast.is-visible {
+  opacity: 1;
+  transform: translate(-50%, 0);
+}

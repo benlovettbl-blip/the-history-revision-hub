@@ -9,7 +9,16 @@ import {
   updateLeitnerBox,
   toggleBookmark,
   saveProgress,
+  getWeakSpots,
+  generateQuestionId,
 } from './storage.js';
+import {
+  renderMobileHomeHeroHTML,
+  getPinnedUnits,
+  isShowAllCoursesEnabled,
+  recordLastVisitedLesson,
+  getDueWeakSpotSummary,
+} from './mobile_app_shell.js';
 import { renderCoverSourcesHTML } from './cover_sources.js';
 import { renderKeyTopicLessonsHTML } from './lesson_cards.js';
 import { renderUnitSynopsis } from './unit_synopses.js';
@@ -49,9 +58,21 @@ export function renderDashboard() {
   if (contentArea) contentArea.style.paddingTop = '1.75rem';
 
   const units = getUnits();
+  const dashParams = new URLSearchParams(window.location.search || '');
+  const isLockedKs2Dash =
+    (dashParams.get('portal') || '').toLowerCase() === 'ks2' &&
+    (dashParams.get('locked') === 'true' ||
+      dashParams.get('mode') === 'pupil' ||
+      dashParams.get('safeguard') === 'true');
+  const mobileHeroHtml = !isLockedKs2Dash ? renderMobileHomeHeroHTML(units) : '';
+  const pinnedFocusClass =
+    !isLockedKs2Dash && getPinnedUnits().length > 0 && !isShowAllCoursesEnabled()
+      ? 'hh-pinned-only-mode'
+      : '';
 
   let html = `
-    <div class="homepage-dashboard-container" style="max-width: 1240px; margin: 0 auto; padding: 0 20px 60px 20px;">
+    <div class="homepage-dashboard-container ${pinnedFocusClass}" style="max-width: 1240px; margin: 0 auto; padding: 0 20px 60px 20px;">
+      ${mobileHeroHtml}
       
       <!-- Single-Row Curriculum Filter Bar (Replaces competing stage + jump + sub-filter bars) -->
       <div class="homepage-nav-toolbar" style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; background: var(--bg-card, #ffffff); border: 1.5px solid var(--border-glass, #e2e8f0); border-radius: 12px; padding: 8px 14px; margin-bottom: 18px; box-shadow: 0 2px 8px rgba(0,0,0,0.03);">
@@ -66,6 +87,10 @@ export function renderDashboard() {
           <button type="button" class="course-filter-pill" data-filter="p2" style="background: #f8fafc; color: #475569; border: 1px solid #e2e8f0; border-radius: 7px; padding: 5px 11px; font-size: 0.76rem; font-weight: 700; cursor: pointer; transition: all 0.15s ease;">GCSE Paper 2</button>
           <button type="button" class="course-filter-pill" data-filter="p3" style="background: #f8fafc; color: #475569; border: 1px solid #e2e8f0; border-radius: 7px; padding: 5px 11px; font-size: 0.76rem; font-weight: 700; cursor: pointer; transition: all 0.15s ease;">GCSE Paper 3</button>
         </div>
+        <button type="button" onclick="window.hhOpenPinUnitsModal && window.hhOpenPinUnitsModal()" style="background: #eff6ff; color: #1d4ed8; border: 1px solid #bfdbfe; border-radius: 7px; padding: 5px 11px; font-size: 0.75rem; font-weight: 800; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; white-space: nowrap;" title="Pin your exact courses or generate a Teacher Class Setup QR link">
+          <i class="fa-solid fa-thumbtack"></i>
+          <span>My Courses / QR</span>
+        </button>
       </div>
   `;
 
@@ -793,7 +818,45 @@ export function renderInteractiveQuiz() {
     (wb) => wb && wb.id !== 'full' && wb.name !== 'full',
   );
 
-  const allCards = extractUnitSelfQuizCards(data, 'all');
+  let allCards = extractUnitSelfQuizCards(data, 'all');
+  if (typeof window !== 'undefined' && window._hhWeakSpotsPracticeActive) {
+    window._hhWeakSpotsPracticeActive = false;
+    const dueSummary = getDueWeakSpotSummary();
+    const unitWeak = getWeakSpots(unitId);
+    const prioritized = [];
+    const seenQuestions = new Set();
+
+    unitWeak.forEach((ws) => {
+      if (ws && ws.q && ws.a) {
+        const k = ws.q.trim().toLowerCase();
+        if (!seenQuestions.has(k)) {
+          seenQuestions.add(k);
+          prioritized.push({
+            q: ws.q,
+            a: ws.a,
+            topic: ws.source || 'Due Weak-Spot Review',
+            type: 'weak-spot',
+          });
+        }
+      }
+    });
+
+    const remaining = [];
+    allCards.forEach((c) => {
+      const k = String(c.q || '').trim().toLowerCase();
+      if (seenQuestions.has(k)) return;
+      const cardQId = generateQuestionId(unitId, c.topic, c.q);
+      if (dueSummary.dueIds.has(cardQId)) {
+        prioritized.push({ ...c, type: 'due-today' });
+      } else {
+        remaining.push(c);
+      }
+    });
+
+    if (prioritized.length > 0) {
+      allCards = [...prioritized, ...remaining];
+    }
+  }
   const allDiagQuestions =
     typeof sampleDiagnosticQuestions === 'function'
       ? sampleDiagnosticQuestions(unitId, data, 'all')
@@ -1730,9 +1793,12 @@ export async function renderLessonsView() {
         if (wasImmediateOverviewPush) {
           window.history.replaceState(
             {
+              hhNav: true,
               view: 'lessons',
               unit: unitId,
+              unitId: unitId,
               lessonIndex: index,
+              opts: { lessonIndex: index },
               scrollY: 0,
             },
             '',
@@ -1749,9 +1815,12 @@ export async function renderLessonsView() {
           );
           window.history.pushState(
             {
+              hhNav: true,
               view: 'lessons',
               unit: unitId,
+              unitId: unitId,
               lessonIndex: index,
+              opts: { lessonIndex: index },
               scrollY: 0,
             },
             '',
@@ -1768,6 +1837,13 @@ export async function renderLessonsView() {
     try {
       if (unitId && typeof index === 'number' && index >= 0) {
         localStorage.setItem(`hh_last_lesson_${unitId}`, String(index));
+        recordLastVisitedLesson({
+          unitId,
+          unitTitle: data.title || '',
+          lessonIndex: index,
+          lessonId: sub.id || '',
+          lessonTitle: sub.title || '',
+        });
       }
     } catch (e) {}
 
