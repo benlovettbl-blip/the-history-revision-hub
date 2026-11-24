@@ -505,13 +505,14 @@ export function saveSelectedRetrievalTarget(targetId, isKs3 = false) {
 
 /**
  * Gets active retrieval mode ('current', 'previous', 'unit', 'other').
- * In-memory per lesson session; defaults to 'previous' on initial load.
+ * In-memory per lesson session; defaults to 'current' (This Lesson) in Solo Quiz App Mode
+ * and strictly to 'previous' (Spaced Retrieval) in Classroom Board Mode.
  */
 export function getSavedDoNowMode() {
   if (typeof window !== 'undefined' && window.currentDoNowMode) {
     return window.currentDoNowMode;
   }
-  return 'previous';
+  return resolveDefaultDoNowViewMode() === 'solo' ? 'current' : 'previous';
 }
 
 /**
@@ -1712,11 +1713,11 @@ export function renderGcseDoNowPanelHTML({
   const isKs2Effective = isKs2 !== null ? Boolean(isKs2) : isKs2Unit(activeUnit, currentUnitId);
   const isKs3Effective = isKs2Effective ? false : (isKs3 !== null ? Boolean(isKs3) : isKs3Unit(activeUnit, currentUnitId));
   const usesFiveDefault = isKs2Effective || isKs3Effective;
-  // Default mode for a lesson starter is ALWAYS 'previous' so teachers and pupils are always in sync on lesson load
-  const activeMode = 'previous';
+  const initialViewMode = resolveDefaultDoNowViewMode();
+  // Classroom Board defaults strictly to 'previous' (spaced retrieval); Solo Quiz defaults to 'current' (This Lesson)
+  const activeMode = initialViewMode === 'solo' ? 'current' : 'previous';
   const currentTarget = getSelectedRetrievalTarget(isKs3Effective);
   const activeCount = usesFiveDefault ? 5 : 10;
-  const initialViewMode = resolveDefaultDoNowViewMode();
 
   const unitLessons = activeUnit?.lessons || [];
   const currentLessonIdx = unitLessons.findIndex(
@@ -2052,6 +2053,19 @@ export function initGcseDoNowEngine(currentLesson, activeUnit, db, isKs3 = null,
     const rowsContainer = document.getElementById('donow-rows-container');
     if (soloContainer) soloContainer.style.display = cleanView === 'solo' ? 'block' : 'none';
     if (rowsContainer) rowsContainer.style.display = cleanView === 'board' ? 'flex' : 'none';
+
+    // When switching between Solo Quiz and Classroom Board without an explicit scope override,
+    // align scope cleanly: Solo Quiz -> 'current' (This Lesson), Classroom Board -> 'previous' (Last Lesson)
+    if (persistManual && typeof window.switchGcseDoNowMode === 'function') {
+      const desiredDefaultScope = cleanView === 'solo' ? 'current' : 'previous';
+      const curScope = window.currentDoNowMode || (panel.getAttribute('data-active-mode') || '');
+      if (!curScope || curScope === 'previous' || curScope === 'current') {
+        if (curScope !== desiredDefaultScope) {
+          window.switchGcseDoNowMode(desiredDefaultScope);
+          window.currentDoNowMode = null;
+        }
+      }
+    }
   };
 
   window.toggleSoloQuizSetup = function (forceState = null) {
