@@ -2146,14 +2146,20 @@ window.openModal = function (src, options = {}) {
   };
   window.addEventListener('keydown', onKeyDown);
 
-  // Close Button (Top Right)
+  // Close Button (Top Right — safe-area aware for iPhone Dynamic Island / notch)
+  const isTouchScreen =
+    typeof window !== 'undefined' &&
+    window.matchMedia &&
+    window.matchMedia('(pointer: coarse)').matches;
+  const isMobileLightbox = typeof window !== 'undefined' && window.innerWidth <= 768;
+
   const closeBtn = document.createElement('button');
   closeBtn.setAttribute('aria-label', 'Close Image');
-  closeBtn.title = 'Close (Esc)';
+  closeBtn.title = isTouchScreen ? 'Close' : 'Close (Esc)';
   closeBtn.innerHTML = '<i class="fa-solid fa-xmark"></i>';
   closeBtn.style.position = 'absolute';
-  closeBtn.style.top = '20px';
-  closeBtn.style.right = '25px';
+  closeBtn.style.top = 'calc(14px + env(safe-area-inset-top, 0px))';
+  closeBtn.style.right = '16px';
   closeBtn.style.background = 'rgba(255,255,255,0.2)';
   closeBtn.style.border = '1px solid rgba(255,255,255,0.4)';
   closeBtn.style.borderRadius = '50%';
@@ -2181,11 +2187,11 @@ window.openModal = function (src, options = {}) {
   };
   modal.appendChild(closeBtn);
 
-  // Floating Zoom Controls (Top Left) - Specially designed for tablets & laptops
+  // Floating Zoom Controls (Top Left) - Specially designed for phones, tablets & laptops
   const zoomControls = document.createElement('div');
   zoomControls.style.position = 'absolute';
-  zoomControls.style.top = '20px';
-  zoomControls.style.left = '25px';
+  zoomControls.style.top = 'calc(14px + env(safe-area-inset-top, 0px))';
+  zoomControls.style.left = '16px';
   zoomControls.style.display = 'flex';
   zoomControls.style.alignItems = 'center';
   zoomControls.style.gap = '8px';
@@ -2257,18 +2263,36 @@ window.openModal = function (src, options = {}) {
     captionPlaque = document.createElement('div');
     captionPlaque.id = 'global-image-modal-caption';
     captionPlaque.style.cssText =
-      'position: absolute; bottom: 16px; left: 50%; transform: translateX(-50%); width: max-content; max-width: min(860px, 90vw); background: rgba(15, 23, 42, 0.94); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 1px solid rgba(148, 163, 184, 0.35); border-left: 3.5px solid #fbbf24; border-radius: 10px; padding: 10px 18px; color: #f1f5f9; font-family: "Inter", sans-serif; font-size: 0.86rem; line-height: 1.5; box-shadow: 0 12px 30px rgba(0, 0, 0, 0.65); z-index: 1000002; pointer-events: auto; text-align: left;';
+      'position: absolute; bottom: calc(14px + env(safe-area-inset-bottom, 0px)); left: 50%; transform: translateX(-50%); width: max-content; max-width: min(860px, 92vw); background: rgba(15, 23, 42, 0.94); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 1px solid rgba(148, 163, 184, 0.35); border-left: 3.5px solid #fbbf24; border-radius: 10px; padding: 9px 14px; color: #f1f5f9; font-family: "Inter", sans-serif; font-size: 0.84rem; line-height: 1.45; box-shadow: 0 12px 30px rgba(0, 0, 0, 0.65); z-index: 1000002; pointer-events: auto; text-align: left;';
     const capMain = document.createElement('div');
     capMain.style.fontWeight = '500';
+    if (isMobileLightbox && captionText.length > 120) {
+      capMain.style.display = '-webkit-box';
+      capMain.style.webkitLineClamp = '2';
+      capMain.style.webkitBoxOrient = 'vertical';
+      capMain.style.overflow = 'hidden';
+      captionPlaque.dataset.collapsed = '1';
+    }
     capMain.textContent = captionText;
     const capSub = document.createElement('div');
     capSub.style.cssText =
-      'margin-top: 4px; font-size: 0.72rem; color: #94a3b8; letter-spacing: 0.02em;';
-    capSub.textContent =
-      'Scroll, pinch, or click image to zoom · Drag to pan · Press Esc to close';
+      'margin-top: 4px; font-size: 0.71rem; color: #94a3b8; letter-spacing: 0.02em;';
+    capSub.textContent = isTouchScreen
+      ? isMobileLightbox && captionText.length > 120
+        ? 'Pinch or double-tap image to zoom · Tap caption to expand'
+        : 'Pinch or double-tap image to zoom · Drag to pan'
+      : 'Scroll, pinch, or click image to zoom · Drag to pan · Press Esc to close';
     captionPlaque.appendChild(capMain);
     captionPlaque.appendChild(capSub);
-    captionPlaque.onclick = (e) => e.stopPropagation();
+    captionPlaque.onclick = (e) => {
+      e.stopPropagation();
+      if (isMobileLightbox && captionText.length > 120) {
+        const wasCollapsed = captionPlaque.dataset.collapsed === '1';
+        captionPlaque.dataset.collapsed = wasCollapsed ? '0' : '1';
+        capMain.style.display = wasCollapsed ? 'block' : '-webkit-box';
+        capMain.style.overflow = wasCollapsed ? 'visible' : 'hidden';
+      }
+    };
     modal.appendChild(captionPlaque);
   } else {
     const hint = document.createElement('div');

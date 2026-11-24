@@ -186,6 +186,226 @@ const CRISIS_DOSSIERS = [
   },
 ];
 
+function ensureWeimarStyles() {
+  if (typeof document === 'undefined' || document.getElementById('wcd-scoped-styles')) return;
+  const style = document.createElement('style');
+  style.id = 'wcd-scoped-styles';
+  style.textContent = `
+    .wcd-wrap, .wcd-wrap * {
+      box-sizing: border-box;
+    }
+    .wcd-wrap {
+      max-width: 920px;
+      width: 100%;
+      margin: 0 auto;
+      overflow-x: clip;
+      color: #f8fafc;
+    }
+    .wcd-meter-bar {
+      display: none;
+    }
+    .wcd-dossier-card {
+      background: #111827;
+      border: 1.5px solid #334155;
+      border-radius: 16px;
+      padding: 20px;
+      color: #f8fafc;
+    }
+    .wcd-telegram-brief {
+      background: #1c1917;
+      border-left: 4px solid #f59e0b;
+      border-radius: 8px;
+      padding: 11px 14px;
+      margin-bottom: 14px;
+      font-family: monospace;
+      font-size: 0.86rem;
+      color: #fef3c7;
+      line-height: 1.5;
+    }
+    .wcd-opt-btn,
+    .wcd-desk-stamp-hotspot,
+    #wcd-stamp-btn,
+    #wcd-mobile-stamp-btn,
+    .wcd-wrap .arcade-btn-primary {
+      touch-action: manipulation;
+      -webkit-tap-highlight-color: transparent;
+    }
+    /* Explicit Dark / Space Theme Safety */
+    [data-theme="space"] .wcd-dossier-card {
+      background: #0d1526 !important;
+      border-color: #334155 !important;
+      color: #f8fafc !important;
+    }
+    [data-theme="space"] .wcd-telegram-brief {
+      background: #171310 !important;
+      color: #fef3c7 !important;
+      border-left-color: #f59e0b !important;
+    }
+    [data-theme="space"] .wcd-opt-btn:not(.right):not(.wrong) {
+      background: #1e293b !important;
+      border-color: #475569 !important;
+      color: #f8fafc !important;
+    }
+    [data-theme="space"] .wcd-meter-bar {
+      background: rgba(11, 17, 32, 0.96) !important;
+      border-color: #d97706 !important;
+      color: #f8fafc !important;
+    }
+    @media (max-width: 896px) {
+      .wcd-desktop-hud {
+        display: none !important;
+      }
+      .wcd-meter-bar {
+        position: sticky;
+        top: 0;
+        z-index: 25;
+        height: 38px;
+        min-height: 38px;
+        max-height: 38px;
+        display: flex !important;
+        align-items: center;
+        justify-content: space-between;
+        gap: 6px;
+        padding: 0 9px;
+        margin-bottom: 6px;
+        background: rgba(15, 23, 42, 0.96);
+        backdrop-filter: blur(8px);
+        border: 1.5px solid #d97706;
+        border-radius: 10px;
+        overflow: hidden;
+      }
+      .wcd-meter-pill {
+        display: inline-flex;
+        align-items: center;
+        gap: 4px;
+        min-width: 0;
+        flex: 1 1 0;
+        font-size: 0.68rem;
+        font-weight: 800;
+        color: #e2e8f0;
+        white-space: nowrap;
+      }
+      .wcd-meter-track {
+        width: 26px;
+        height: 5px;
+        border-radius: 999px;
+        background: #1e293b;
+        overflow: hidden;
+        flex-shrink: 0;
+      }
+      .wcd-meter-fill {
+        height: 100%;
+        border-radius: 999px;
+      }
+      .wcd-meter-step {
+        flex: 0 0 auto;
+        font-size: 0.66rem;
+        font-weight: 900;
+        color: #fde047;
+        background: rgba(245, 158, 11, 0.16);
+        border: 1px solid rgba(245, 158, 11, 0.45);
+        padding: 2px 6px;
+        border-radius: 999px;
+        white-space: nowrap;
+      }
+      .wcd-desk-wrap {
+        margin-bottom: 6px !important;
+      }
+      .wcd-wrap .diorama-viewport {
+        aspect-ratio: 21 / 6.8;
+        max-height: 104px;
+        border-radius: 10px;
+      }
+      .wcd-chip-democ {
+        display: none !important;
+      }
+      .wcd-wrap .diorama-hud-chip {
+        padding: 3px 7px !important;
+        font-size: 0.64rem !important;
+      }
+      .wcd-desk-stamp-hotspot {
+        left: auto !important;
+        right: 8px !important;
+        top: auto !important;
+        bottom: 6px !important;
+        transform: none !important;
+        animation: none !important;
+        min-height: 36px;
+        padding: 4px 9px !important;
+        font-size: 0.68rem !important;
+      }
+      .wcd-dossier-card {
+        padding: 10px 11px !important;
+        border-radius: 12px !important;
+      }
+      .wcd-crisis-title {
+        font-size: 0.96rem !important;
+        line-height: 1.25 !important;
+        margin: 0 0 6px 0 !important;
+      }
+      .wcd-telegram-brief {
+        font-family: 'Inter', system-ui, sans-serif !important;
+        font-size: 0.88rem !important;
+        line-height: 1.38 !important;
+        padding: 8px 10px !important;
+        margin-bottom: 7px !important;
+      }
+      .wcd-prompt-line {
+        font-size: 0.84rem !important;
+        line-height: 1.32 !important;
+        margin: 0 0 8px 0 !important;
+      }
+      .wcd-policy-list {
+        gap: 7px !important;
+      }
+      .wcd-opt-btn {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-height: 46px;
+        padding: 9px 11px !important;
+        font-size: 0.82rem !important;
+        line-height: 1.34 !important;
+        border-radius: 10px !important;
+        align-items: flex-start !important;
+        gap: 8px !important;
+        word-break: break-word;
+      }
+      .wcd-opt-btn .bsp-key {
+        width: 22px;
+        height: 22px;
+        font-size: 0.72rem;
+        margin-top: 1px;
+      }
+      .wcd-verdict-banner {
+        margin-top: 10px !important;
+        margin-bottom: 0 !important;
+        padding: 10px 12px !important;
+      }
+      .wcd-verdict-banner .arcade-btn-primary {
+        width: 100%;
+        padding: 9px 14px;
+        font-size: 0.84rem;
+      }
+    }
+    @media (max-width: 896px) and (orientation: landscape) {
+      .wcd-main-split {
+        display: grid;
+        grid-template-columns: minmax(0, 0.88fr) minmax(0, 1.12fr);
+        gap: 10px;
+        align-items: start;
+      }
+      .wcd-desk-wrap {
+        margin-bottom: 0 !important;
+      }
+      .wcd-wrap .diorama-viewport {
+        aspect-ratio: 16 / 9;
+        max-height: 145px;
+      }
+    }
+  `;
+  document.head.appendChild(style);
+}
+
 function renderWeimarDeskSVG(dossier, stability, article48Uses, answered) {
   const stabColor = stability >= 65 ? '#34d399' : stability >= 40 ? '#fbbf24' : '#f87171';
   return `
@@ -195,18 +415,18 @@ function renderWeimarDeskSVG(dossier, stability, article48Uses, answered) {
       <div class="diorama-candle-glow"></div>
 
       <!-- Pinned Over Reichstag Dome Window -->
-      <div class="diorama-hud-chip" style="left:12px;top:12px;border-color:${stabColor};">
+      <div class="diorama-hud-chip wcd-chip-democ" style="left:12px;top:12px;border-color:${stabColor};">
         🏛️ Reichstag Democracy: <span style="color:${stabColor};">${stability}%</span>
         &bull; KPD ${dossier.leftThreat}% / Right ${dossier.rightThreat}%
       </div>
 
-      <div class="diorama-hud-chip" style="right:12px;top:12px;border-color:#f59e0b;color:#fde047;">
+      <div class="diorama-hud-chip" style="left:8px;top:8px;border-color:#f59e0b;color:#fde047;">
         📅 ${dossier.year} &bull; Jobless: ${dossier.unemployed}
       </div>
 
       <!-- Pinned Directly Over the Wheelbarrow & Loaf of Rye Bread -->
-      <div class="diorama-hud-chip" style="left:12px;bottom:12px;border-color:${dossier.breadAlert ? '#ef4444' : '#38bdf8'};background:rgba(10,15,28,0.94);">
-        🍞 Loaf of Bread: <span style="color:${dossier.breadAlert ? '#f87171' : '#34d399'};font-family:monospace;font-size:0.88rem;">${dossier.breadPrice}</span>
+      <div class="diorama-hud-chip" style="left:8px;bottom:8px;border-color:${dossier.breadAlert ? '#ef4444' : '#38bdf8'};background:rgba(10,15,28,0.94);">
+        🍞 Bread: <span style="color:${dossier.breadAlert ? '#f87171' : '#34d399'};font-family:monospace;">${dossier.breadPrice}</span>
       </div>
 
       <!-- Pinned Directly Over the Painted Red Rubber Stamp on the Desk! -->
@@ -214,7 +434,7 @@ function renderWeimarDeskSVG(dossier, stability, article48Uses, answered) {
         !answered
           ? `
         <button type="button" class="diorama-hotspot wcd-desk-stamp-hotspot" style="left:68%;top:80%;border-color:#ef4444;background:rgba(127,29,29,0.92);color:#fecaca;">
-          📜 Stamp Article 48! (${article48Uses})
+          📜 Art. 48! (${article48Uses})
         </button>
       `
           : ''
@@ -224,6 +444,7 @@ function renderWeimarDeskSVG(dossier, stability, article48Uses, answered) {
 }
 
 export function mountWeimarCrisisDesk(stageEl, pools, ctx = {}) {
+  ensureWeimarStyles();
   const unitId = ctx.unitId || 'weimar_nazi_germany';
   let idx = 0;
   let score = 0;
@@ -232,10 +453,16 @@ export function mountWeimarCrisisDesk(stageEl, pools, ctx = {}) {
   let correctCount = 0;
   let answered = null;
   let stampBanner = '';
+  let xpAwarded = false;
   let pb = getArcadePersonalBest(unitId, 'weimar_desk', 'all');
 
+  function wakeWeimarAudio() {
+    const aCtx = arcadeAudio.ensureContext();
+    if (aCtx) window.__hhRegisterAudioCtx?.(aCtx);
+  }
+
   function restart() {
-    arcadeAudio.ensureContext();
+    wakeWeimarAudio();
     arcadeAudio.levelUp();
     idx = 0;
     score = 0;
@@ -244,17 +471,19 @@ export function mountWeimarCrisisDesk(stageEl, pools, ctx = {}) {
     correctCount = 0;
     answered = null;
     stampBanner = '';
+    xpAwarded = false;
     render();
   }
 
   function useArticle48Stamp() {
     if (answered) return;
+    wakeWeimarAudio();
     article48Uses++;
     stability = Math.max(10, stability - 12);
     arcadeAudio.bomb();
     stampBanner = `
-      <div class="tlb-banner err" style="border-color:#f59e0b;color:#fde68a;background:rgba(245,158,11,0.14);">
-        📜 <strong>THUMP! ARTICLE 48 STAMPED (#${article48Uses})!</strong> You bypassed the Reichstag by presidential decree—convenient today, yet Weimar democracy just lost <strong>-12% legitimacy</strong> (just like Brüning in 1930–32)!
+      <div class="tlb-banner err" style="border-color:#f59e0b;color:#fde68a;background:rgba(245,158,11,0.14);padding:7px 10px;margin-bottom:7px;font-size:0.8rem;">
+        📜 <strong>ARTICLE 48 STAMPED (#${article48Uses})!</strong> Reichstag bypassed by presidential decree &mdash; Weimar democracy lost <strong>&minus;12% legitimacy</strong>!
       </div>
     `;
     render();
@@ -262,6 +491,7 @@ export function mountWeimarCrisisDesk(stageEl, pools, ctx = {}) {
 
   function choosePolicy(optIdx) {
     if (answered) return;
+    wakeWeimarAudio();
     const d = CRISIS_DOSSIERS[idx];
     const opt = d.options[optIdx];
     if (!opt) return;
@@ -312,13 +542,43 @@ export function mountWeimarCrisisDesk(stageEl, pools, ctx = {}) {
       return;
     }
     const d = CRISIS_DOSSIERS[idx];
+    const supportPct = Math.max(
+      8,
+      Math.min(95, 100 - Math.round((d.leftThreat + d.rightThreat) / 2)),
+    );
+    const econPct = d.breadAlert ? 16 : 78;
+    const supCol = supportPct >= 50 ? '#34d399' : supportPct >= 32 ? '#fbbf24' : '#f87171';
+    const econCol = econPct >= 50 ? '#38bdf8' : '#f87171';
+    const demCol = stability >= 55 ? '#34d399' : stability >= 35 ? '#fbbf24' : '#f87171';
 
     stageEl.innerHTML = `
-      <div style="max-width:920px;margin:0 auto;">
-        <div class="tlb-hud" style="border-color:#d97706;">
+      <div class="wcd-wrap">
+        <!-- Mobile Sticky 38px 3-Meter Stability Bar (Support / Economy / Democracy) -->
+        <div class="wcd-meter-bar" role="status" aria-label="Weimar Republic Stability Meters">
+          <div class="wcd-meter-pill">
+            <span>Support</span>
+            <strong style="color:${supCol};">${supportPct}%</strong>
+            <span class="wcd-meter-track"><span class="wcd-meter-fill" style="width:${supportPct}%;background:${supCol};"></span></span>
+          </div>
+          <div class="wcd-meter-pill">
+            <span>Economy</span>
+            <strong style="color:${econCol};">${econPct}%</strong>
+            <span class="wcd-meter-track"><span class="wcd-meter-fill" style="width:${econPct}%;background:${econCol};"></span></span>
+          </div>
+          <div class="wcd-meter-pill">
+            <span>Democracy</span>
+            <strong style="color:${demCol};">${stability}%</strong>
+            <span class="wcd-meter-track"><span class="wcd-meter-fill" style="width:${stability}%;background:${demCol};"></span></span>
+          </div>
+          <span class="wcd-meter-step">${idx + 1}/${CRISIS_DOSSIERS.length}</span>
+        </div>
+
+        <!-- Desktop Full HUD -->
+        <div class="tlb-hud wcd-desktop-hud" style="border-color:#d97706;">
           <div class="tlb-stat"><span>Chancellor Score</span><strong class="cyan">${score}</strong></div>
           <div class="tlb-stat"><span>Dossier</span><strong class="amber">${idx + 1} / ${CRISIS_DOSSIERS.length} (${d.year})</strong></div>
-          <div class="tlb-stat"><span>Democracy Meter</span><strong style="color:${stability >= 50 ? '#34d399' : '#f87171'};">${stability}%</strong></div>
+          <div class="tlb-stat"><span>Support / Econ</span><strong style="color:${supCol};">${supportPct}% / ${econPct}%</strong></div>
+          <div class="tlb-stat"><span>Democracy Meter</span><strong style="color:${demCol};">${stability}%</strong></div>
           <div class="tlb-stat"><span>Best</span><strong>${Math.max(pb, score)}</strong></div>
           <button type="button" id="wcd-stamp-btn" ${answered ? 'disabled' : ''} style="background:#7f1d1d;border:1.5px solid #ef4444;color:#fecaca;border-radius:8px;padding:6px 12px;font-size:0.78rem;font-weight:900;cursor:pointer;">
             📜 Stamp Article 48!
@@ -327,51 +587,53 @@ export function mountWeimarCrisisDesk(stageEl, pools, ctx = {}) {
 
         ${stampBanner}
 
-        <div style="margin-bottom:14px;">
-          ${renderWeimarDeskSVG(d, stability, article48Uses, Boolean(answered))}
-        </div>
-
-        <div style="background:#111827;border:1.5px solid #334155;border-radius:16px;padding:20px;">
-          <h3 style="margin:0 0 10px 0;color:#ffffff;font-size:1.2rem;">${d.title}</h3>
-          <div style="background:#1c1917;border-left:4px solid #f59e0b;border-radius:8px;padding:11px 14px;margin-bottom:14px;font-family:monospace;font-size:0.86rem;color:#fef3c7;line-height:1.5;">
-            ${d.telegram}
+        <div class="wcd-main-split">
+          <div class="wcd-desk-wrap" style="margin-bottom:14px;">
+            ${renderWeimarDeskSVG(d, stability, article48Uses, Boolean(answered))}
           </div>
 
-          <p style="margin:0 0 12px 0;font-weight:800;color:#f8fafc;">${d.prompt}</p>
-
-          <div class="bsp-options">
-            ${d.options
-              .map((opt, oIdx) => {
-                let cls = '';
-                if (answered) {
-                  if (opt.correct) cls = 'right';
-                  else if (answered.optIdx === oIdx) cls = 'wrong';
-                }
-                return `
-                  <button type="button" class="bsp-opt-btn wcd-opt-btn ${cls}" data-idx="${oIdx}" ${answered ? 'disabled' : ''}>
-                    <span class="bsp-key">${String.fromCharCode(65 + oIdx)}</span>
-                    <span>${opt.label}</span>
-                  </button>
-                `;
-              })
-              .join('')}
-          </div>
-
-          ${
-            answered
-              ? `
-            <div style="margin-top:16px;" class="tlb-banner ${answered.opt.correct ? 'ok' : 'err'}">
-              <strong style="display:block;margin-bottom:6px;">${answered.opt.verdict}</strong>
-              <p style="margin:0 0 12px 0;font-size:0.85rem;color:#e2e8f0;">
-                <strong>🎓 Edexcel Paper 3 Exam Takeaway:</strong> ${answered.opt.examNote}
-              </p>
-              <button type="button" class="arcade-btn-primary" id="wcd-next-btn">
-                ${idx + 1 < CRISIS_DOSSIERS.length ? 'Open Next Crisis Telegram' : 'View Chancellery Career Verdict'} <i class="fa-solid fa-arrow-right"></i>
-              </button>
+          <div class="wcd-dossier-card">
+            <h3 class="wcd-crisis-title" style="margin:0 0 10px 0;color:#ffffff;font-size:1.2rem;">${d.title}</h3>
+            <div class="wcd-telegram-brief">
+              ${d.telegram}
             </div>
-          `
-              : ''
-          }
+
+            <p class="wcd-prompt-line" style="margin:0 0 12px 0;font-weight:800;color:#f8fafc;">${d.prompt}</p>
+
+            <div class="bsp-options wcd-policy-list">
+              ${d.options
+                .map((opt, oIdx) => {
+                  let cls = '';
+                  if (answered) {
+                    if (opt.correct) cls = 'right';
+                    else if (answered.optIdx === oIdx) cls = 'wrong';
+                  }
+                  return `
+                    <button type="button" class="bsp-opt-btn wcd-opt-btn ${cls}" data-idx="${oIdx}" ${answered ? 'disabled' : ''}>
+                      <span class="bsp-key">${String.fromCharCode(65 + oIdx)}</span>
+                      <span>${opt.label}</span>
+                    </button>
+                  `;
+                })
+                .join('')}
+            </div>
+
+            ${
+              answered
+                ? `
+              <div style="margin-top:16px;" class="tlb-banner wcd-verdict-banner ${answered.opt.correct ? 'ok' : 'err'}">
+                <strong style="display:block;margin-bottom:6px;">${answered.opt.verdict}</strong>
+                <p style="margin:0 0 12px 0;font-size:0.85rem;color:#e2e8f0;">
+                  <strong>🎓 Edexcel Paper 3 Exam Takeaway:</strong> ${answered.opt.examNote}
+                </p>
+                <button type="button" class="arcade-btn-primary" id="wcd-next-btn">
+                  ${idx + 1 < CRISIS_DOSSIERS.length ? 'Open Next Crisis Telegram' : 'View Chancellery Career Verdict'} <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </div>
+            `
+                : ''
+            }
+          </div>
         </div>
       </div>
     `;
@@ -382,6 +644,7 @@ export function mountWeimarCrisisDesk(stageEl, pools, ctx = {}) {
       btn.addEventListener('click', () => choosePolicy(parseInt(btn.dataset.idx, 10)));
     });
     stageEl.querySelector('#wcd-next-btn')?.addEventListener('click', () => {
+      wakeWeimarAudio();
       idx++;
       answered = null;
       stampBanner = '';
@@ -390,7 +653,12 @@ export function mountWeimarCrisisDesk(stageEl, pools, ctx = {}) {
   }
 
   function renderSummary() {
+    wakeWeimarAudio();
     arcadeAudio.levelUp();
+    if (!xpAwarded) {
+      xpAwarded = true;
+      window.hhAwardXp?.({ amount: 30, source: 'weimar_desk', unitId: 'weimar_nazi_germany' });
+    }
     const { isNewBest, best } = saveArcadePersonalBest(unitId, 'weimar_desk', 'all', score);
     pb = best;
 

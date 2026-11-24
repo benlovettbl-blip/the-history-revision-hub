@@ -8,7 +8,7 @@ const DIGEST_STORAGE_KEY = 'history_staff_auth_digest';
 
 // Salted SHA-256 digests (overrideable via VITE_STAFF_PASSKEY_HASHES comma-separated env var)
 const DEFAULT_STAFF_DIGESTS = [
-  '44f85ae76f2b9cf8c64f9195bfbd2b6d787799e049405e6915fa80765638692b',
+  'cea62bd46e50344eeec9cca02019041921107f17ed1d4f269c5d50cd247d93c8',
 ];
 
 const K = [

@@ -61,7 +61,11 @@
             }
             if (typeof sessionStorage !== 'undefined') {
               try {
+                var savedPreviewPupil = sessionStorage.getItem('hh_preview_as_pupil');
                 sessionStorage.clear();
+                if (savedPreviewPupil !== null) {
+                  sessionStorage.setItem('hh_preview_as_pupil', savedPreviewPupil);
+                }
               } catch (e) {}
             }
             // Clear IndexedDB multi-layer vault
@@ -666,6 +670,19 @@
             >
               <i class="fa-solid fa-chalkboard-user" id="header-staff-toggle-icon"></i>
               <span class="btn-text" id="header-staff-toggle-label">Teacher</span>
+            </button>
+
+            <!-- Mobile 1-Tap Dark / Light Mode Button (Shown in Mobile Pupil Mode) -->
+            <button
+              type="button"
+              id="btn-mobile-dark-toggle"
+              class="header-tool-btn hh-mobile-dark-btn"
+              onclick="window.hhToggleMobileDarkMode && window.hhToggleMobileDarkMode()"
+              title="Switch Dark / Light Mode"
+              aria-label="Toggle Dark or Light Mode"
+              style="display: none"
+            >
+              <i class="fa-solid fa-moon" id="hh-mobile-dark-icon"></i>
             </button>
 
             <!-- Persistent Theme Toggle (always visible in header) -->

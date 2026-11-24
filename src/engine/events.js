@@ -724,11 +724,22 @@ export function initEventDelegation() {
             p.style.display = p.dataset.panel === tabKey ? 'block' : 'none';
           });
           actionBtns.forEach((btn) => btn.style.display = 'inline-flex');
-          if (typeof window !== 'undefined' && window.innerHeight <= 560) {
+          if (tabKey === 'donow' || tabKey === 'vocab' || tabKey === 'video') {
+            if (typeof window !== 'undefined' && typeof window.hhPauseSpeechForQuiz === 'function') {
+              window.hhPauseSpeechForQuiz();
+            }
+          }
+          if (typeof window !== 'undefined' && (window.innerWidth < 933 || window.innerHeight <= 560)) {
             requestAnimationFrame(() => {
               try {
-                launchpad.scrollIntoView({ behavior: 'smooth', block: 'start' });
-              } catch (e) {}
+                const rect = launchpad.getBoundingClientRect();
+                const targetTop = Math.max(0, (window.scrollY || 0) + rect.top - 58);
+                window.scrollTo({ top: targetTop, behavior: 'smooth' });
+              } catch (e) {
+                try {
+                  launchpad.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                } catch (err) {}
+              }
             });
           }
         }

@@ -565,13 +565,254 @@ const ERA_DIORAMAS = {
   },
 };
 
+function ensureQuacksStyles() {
+  if (typeof document === 'undefined' || document.getElementById('qac-scoped-styles')) return;
+  const style = document.createElement('style');
+  style.id = 'qac-scoped-styles';
+  style.textContent = `
+    .qac-wrap, .qac-wrap * {
+      box-sizing: border-box;
+    }
+    .qac-wrap {
+      max-width: 920px;
+      width: 100%;
+      margin: 0 auto;
+      overflow-x: clip;
+    }
+    .qac-era-strip {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+      margin-bottom: 12px;
+    }
+    .qac-era-pill {
+      appearance: none;
+      flex: 1 1 130px;
+      text-align: center;
+      padding: 6px 10px;
+      border-radius: 8px;
+      font-size: 0.74rem;
+      font-weight: 800;
+      cursor: pointer;
+      touch-action: manipulation;
+      -webkit-tap-highlight-color: transparent;
+      transition: transform 0.14s ease, border-color 0.14s ease;
+    }
+    .qac-stage-card {
+      border-radius: 16px;
+      padding: 16px;
+      margin-bottom: 14px;
+    }
+    .qac-case-card {
+      background: #111827;
+      border: 1.5px solid #334155;
+      border-radius: 16px;
+      padding: 20px;
+      color: #f8fafc;
+    }
+    [data-theme="space"] .qac-case-card {
+      background: #0d1526;
+      border-color: #334155;
+      color: #f8fafc;
+    }
+    .qac-remedy-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .qac-opt-btn,
+    .qac-hotspot-btn,
+    .qac-wrap .arcade-btn-primary {
+      touch-action: manipulation;
+      -webkit-tap-highlight-color: transparent;
+    }
+    @media (max-width: 896px) {
+      .qac-era-strip {
+        flex-wrap: nowrap !important;
+        overflow-x: auto;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+        -webkit-overflow-scrolling: touch;
+        gap: 6px;
+        margin-bottom: 6px;
+        padding-bottom: 2px;
+      }
+      .qac-era-strip::-webkit-scrollbar {
+        display: none;
+      }
+      .qac-era-pill {
+        flex: 0 0 auto !important;
+        white-space: nowrap;
+        padding: 5px 10px;
+        font-size: 0.7rem;
+        border-radius: 999px;
+      }
+      .qac-hud {
+        height: 34px;
+        min-height: 34px;
+        max-height: 34px;
+        padding: 0 10px !important;
+        margin-bottom: 6px !important;
+        display: flex !important;
+        flex-wrap: nowrap !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+        gap: 6px !important;
+        border-radius: 9px !important;
+        overflow: hidden;
+      }
+      .qac-hud .tlb-stat {
+        display: inline-flex;
+        align-items: baseline;
+        gap: 4px;
+        white-space: nowrap;
+        min-width: 0;
+      }
+      .qac-hud .tlb-stat span {
+        display: inline !important;
+        font-size: 0.62rem !important;
+      }
+      .qac-hud .tlb-stat strong {
+        font-size: 0.78rem !important;
+      }
+      .qac-hud .qac-stat-era-only {
+        display: none !important;
+      }
+      .qac-stage-card {
+        padding: 8px 9px !important;
+        margin-bottom: 6px !important;
+        border-radius: 12px !important;
+      }
+      .qac-stage-top {
+        margin-bottom: 6px !important;
+        gap: 6px !important;
+      }
+      .qac-prop-hint {
+        display: none !important;
+      }
+      .qac-wrap .diorama-viewport {
+        aspect-ratio: 16 / 7.4;
+        max-height: 132px;
+        border-radius: 10px;
+      }
+      .qac-wrap .diorama-hotspot {
+        min-height: 36px;
+        min-width: 40px;
+        padding: 4px 8px;
+        font-size: 0.66rem;
+      }
+      .qac-ramc-strip {
+        top: 5px !important;
+        left: 6px !important;
+        right: 6px !important;
+        flex-wrap: nowrap !important;
+        overflow-x: auto;
+        scrollbar-width: none;
+        gap: 4px !important;
+      }
+      .qac-ramc-strip::-webkit-scrollbar {
+        display: none;
+      }
+      .qac-ramc-strip > span {
+        flex: 0 0 auto !important;
+        padding: 2px 6px !important;
+        font-size: 0.62rem !important;
+        white-space: nowrap;
+      }
+      .qac-case-card {
+        padding: 9px 10px !important;
+        border-radius: 12px !important;
+      }
+      .qac-patient-head {
+        margin-bottom: 5px !important;
+        gap: 6px !important;
+        align-items: center !important;
+      }
+      .qac-patient-kicker {
+        font-size: 0.64rem !important;
+      }
+      .qac-patient-name {
+        font-size: 0.96rem !important;
+        line-height: 1.2 !important;
+      }
+      .qac-inspector-badge {
+        font-size: 0.66rem !important;
+        padding: 2px 7px !important;
+      }
+      .qac-symptoms-box {
+        padding: 6px 9px !important;
+        margin-bottom: 6px !important;
+        font-size: 0.79rem !important;
+        line-height: 1.32 !important;
+      }
+      .qac-prompt-line {
+        margin: 0 0 7px 0 !important;
+        font-size: 0.8rem !important;
+        line-height: 1.3 !important;
+      }
+      .qac-remedy-grid {
+        display: grid !important;
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        gap: 7px !important;
+      }
+      .qac-remedy-grid > .qac-opt-btn:nth-child(3) {
+        grid-column: 1 / -1;
+      }
+      .qac-remedy-grid .qac-opt-btn {
+        padding: 8px 9px !important;
+        font-size: 0.75rem !important;
+        line-height: 1.28 !important;
+        align-items: flex-start !important;
+        gap: 6px !important;
+        min-height: 44px;
+        max-width: 100%;
+        word-break: break-word;
+      }
+      .qac-remedy-grid .bsp-key {
+        width: 20px;
+        height: 20px;
+        font-size: 0.68rem;
+        margin-top: 1px;
+      }
+      .qac-outcome-card {
+        margin-top: 8px !important;
+        padding: 9px 11px !important;
+      }
+      .qac-outcome-card p {
+        font-size: 0.78rem !important;
+        margin-bottom: 8px !important;
+      }
+      .qac-outcome-card .arcade-btn-primary {
+        width: 100%;
+        padding: 9px 14px;
+        font-size: 0.84rem;
+      }
+    }
+    @media (max-width: 896px) and (orientation: landscape) {
+      .qac-main-split {
+        display: grid;
+        grid-template-columns: minmax(0, 0.88fr) minmax(0, 1.12fr);
+        gap: 10px;
+        align-items: start;
+      }
+      .qac-stage-card {
+        margin-bottom: 0 !important;
+      }
+      .qac-wrap .diorama-viewport {
+        max-height: 152px;
+      }
+    }
+  `;
+  document.head.appendChild(style);
+}
+
 function renderEraSceneSVG(shift, currentCase, activeInspectText) {
   const dio = ERA_DIORAMAS[shift.id] || ERA_DIORAMAS.medieval;
   const activeNode = currentCase?.highlightNode ?? 1;
   const ramcStrip =
     shift.id === 'ramc'
       ? `
-      <div style="position:absolute;top:10px;left:10px;right:10px;display:flex;gap:6px;flex-wrap:wrap;z-index:4;">
+      <div class="qac-ramc-strip" style="position:absolute;top:10px;left:10px;right:10px;display:flex;gap:6px;flex-wrap:wrap;z-index:4;">
         ${['1. RAP (200m Front)', '2. ADS (Triage)', '3. CCS (X-Ray & Blood)', '4. Base Hospital'].map(
           (lbl, i) => `
             <span style="flex:1 1 110px;text-align:center;padding:4px 8px;border-radius:7px;font-size:0.7rem;font-weight:900;background:${i === activeNode ? 'rgba(234,179,8,0.92)' : 'rgba(15,23,42,0.85)'};color:${i === activeNode ? '#0f172a' : '#cbd5e1'};border:1.5px solid ${i === activeNode ? '#fef08a' : '#475569'};backdrop-filter:blur(4px);">
@@ -608,6 +849,7 @@ function renderEraSceneSVG(shift, currentCase, activeInspectText) {
 }
 
 export function mountQuacksAndCures(stageEl, pools, ctx = {}) {
+  ensureQuacksStyles();
   const unitId = ctx.unitId || 'edexcel_medicine';
   let shiftIdx = 0;
   let caseIdx = 0;
@@ -616,12 +858,18 @@ export function mountQuacksAndCures(stageEl, pools, ctx = {}) {
   let totalDecisions = 0;
   let activeInspectText = '';
   let answeredOutcome = null;
+  let xpAwarded = false;
   // Track patients saved per shift: [0, 0, 0, 0, 0]
   let savedByShift = SHIFTS.map(() => 0);
   let pb = getArcadePersonalBest(unitId, 'quacks', 'all');
 
+  function wakeQuacksAudio() {
+    const aCtx = arcadeAudio.ensureContext();
+    if (aCtx) window.__hhRegisterAudioCtx?.(aCtx);
+  }
+
   function restartCareer() {
-    arcadeAudio.ensureContext();
+    wakeQuacksAudio();
     arcadeAudio.levelUp();
     shiftIdx = 0;
     caseIdx = 0;
@@ -630,12 +878,14 @@ export function mountQuacksAndCures(stageEl, pools, ctx = {}) {
     totalDecisions = 0;
     activeInspectText = '';
     answeredOutcome = null;
+    xpAwarded = false;
     savedByShift = SHIFTS.map(() => 0);
     render();
   }
 
   function pickOption(optIdx) {
     if (answeredOutcome) return;
+    wakeQuacksAudio();
     const shift = SHIFTS[shiftIdx];
     const curCase = shift.cases[caseIdx];
     const chosen = curCase.options[optIdx];
@@ -689,6 +939,7 @@ export function mountQuacksAndCures(stageEl, pools, ctx = {}) {
   }
 
   function advanceNext() {
+    wakeQuacksAudio();
     const shift = SHIFTS[shiftIdx];
     answeredOutcome = null;
     activeInspectText = '';
@@ -712,117 +963,147 @@ export function mountQuacksAndCures(stageEl, pools, ctx = {}) {
     const shiftSaved = savedByShift[shiftIdx];
 
     stageEl.innerHTML = `
-      <div class="qac-wrap" style="max-width:920px;margin:0 auto;">
-        <!-- Shift Progress Pills -->
-        <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px;">
+      <div class="qac-wrap">
+        <!-- 5 Era Tabs (Swipeable Single-Row Pill Strip on Mobile) -->
+        <div class="qac-era-strip" role="tablist" aria-label="Medical Eras">
           ${SHIFTS.map(
             (s, idx) => `
-              <span style="flex:1 1 130px;text-align:center;padding:6px 10px;border-radius:8px;font-size:0.74rem;font-weight:800;border:1.5px solid ${idx === shiftIdx ? s.accent : '#334155'};background:${idx === shiftIdx ? 'rgba(255,255,255,0.08)' : '#0f172a'};color:${idx === shiftIdx ? '#ffffff' : idx < shiftIdx ? '#34d399' : '#64748b'};">
-                ${idx < shiftIdx ? '✅ ' : idx === shiftIdx ? '🩺 ' : ''}${s.id === 'ramc' ? '1917 RAMC' : s.id.charAt(0).toUpperCase() + s.id.slice(1)} (${savedByShift[idx]}/${s.cases.length} Saved)
-              </span>
+              <button
+                type="button"
+                role="tab"
+                aria-selected="${idx === shiftIdx}"
+                class="qac-era-pill ${idx === shiftIdx ? 'is-active' : ''}"
+                data-sidx="${idx}"
+                style="border:1.5px solid ${idx === shiftIdx ? s.accent : '#334155'};background:${idx === shiftIdx ? 'rgba(255,255,255,0.1)' : '#0f172a'};color:${idx === shiftIdx ? '#ffffff' : idx < shiftIdx ? '#34d399' : '#94a3b8'};"
+              >
+                ${idx < shiftIdx ? '✅ ' : idx === shiftIdx ? '🩺 ' : ''}${s.id === 'ramc' ? '1917 RAMC' : s.id.charAt(0).toUpperCase() + s.id.slice(1)} (${savedByShift[idx]}/${s.cases.length})
+              </button>
             `,
           ).join('')}
         </div>
 
-        <!-- Dual Gauges HUD -->
-        <div class="tlb-hud" style="border-color:${shift.accent};">
-          <div class="tlb-stat"><span>Career Score</span><strong class="cyan">${score}</strong></div>
-          <div class="tlb-stat"><span>📜 Period Accuracy</span><strong class="amber">${orthodoxyHits}/${totalDecisions}</strong></div>
-          <div class="tlb-stat"><span>💀 This Era Saved</span><strong class="${shiftSaved > 0 ? 'green' : ''}">${shiftSaved} / ${shift.cases.length}</strong></div>
-          <div class="tlb-stat"><span>Total Lives Saved</span><strong class="green">${totalSavedSoFar} / 15</strong></div>
+        <!-- Slim Dual Gauges HUD -->
+        <div class="tlb-hud qac-hud" style="border-color:${shift.accent};">
+          <div class="tlb-stat"><span>Score</span><strong class="cyan">${score}</strong></div>
+          <div class="tlb-stat"><span>Accuracy</span><strong class="amber">${orthodoxyHits}/${totalDecisions}</strong></div>
+          <div class="tlb-stat qac-stat-era-only"><span>Era Saved</span><strong class="${shiftSaved > 0 ? 'green' : ''}">${shiftSaved}/${shift.cases.length}</strong></div>
+          <div class="tlb-stat"><span>Saved</span><strong class="green">${totalSavedSoFar}/15</strong></div>
           <div class="tlb-stat"><span>Best</span><strong>${Math.max(pb, score)}</strong></div>
         </div>
 
-        <!-- Animated Interactive SVG Clinic / Trench Stage -->
-        <div style="background:${shift.bgGrad};border:2px solid ${shift.accent};border-radius:16px;padding:16px;margin-bottom:14px;">
-          <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;margin-bottom:10px;">
-            <span style="background:rgba(0,0,0,0.45);border:1px solid ${shift.accent};color:#fde047;padding:3px 10px;border-radius:999px;font-size:0.74rem;font-weight:900;">
-              ${shift.eraBadge} • PATIENT ${caseIdx + 1} OF ${shift.cases.length}
-            </span>
-            <span style="font-size:0.76rem;color:#cbd5e1;font-weight:600;">
-              <i class="fa-solid fa-hand-pointer" style="color:${shift.accent};"></i> ${shift.propHint}
-            </span>
-          </div>
+        <div class="qac-main-split">
+          <!-- Animated Interactive Clinic / Trench Stage -->
+          <div class="qac-stage-card" style="background:${shift.bgGrad};border:2px solid ${shift.accent};">
+            <div class="qac-stage-top" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;margin-bottom:10px;">
+              <span style="background:rgba(0,0,0,0.45);border:1px solid ${shift.accent};color:#fde047;padding:3px 10px;border-radius:999px;font-size:0.72rem;font-weight:900;">
+                ${shift.eraBadge} • PATIENT ${caseIdx + 1}/${shift.cases.length}
+              </span>
+              <span class="qac-prop-hint" style="font-size:0.76rem;color:#cbd5e1;font-weight:600;">
+                <i class="fa-solid fa-hand-pointer" style="color:${shift.accent};"></i> ${shift.propHint}
+              </span>
+            </div>
 
-          <div>
-            ${renderEraSceneSVG(shift, curCase, activeInspectText)}
-          </div>
-        </div>
-
-        <!-- Patient Case File & Prescription Choices -->
-        <div style="background:#111827;border:1.5px solid #334155;border-radius:16px;padding:20px;">
-          <div style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:10px;margin-bottom:10px;">
             <div>
-              <div style="font-size:0.74rem;font-weight:800;text-transform:uppercase;color:${shift.accent};">PATIENT ON THE COUCH</div>
-              <h3 style="margin:2px 0 0 0;font-size:1.25rem;color:#ffffff;">${curCase.patient}</h3>
+              ${renderEraSceneSVG(shift, curCase, activeInspectText)}
             </div>
-            <span style="background:#1e293b;border:1px solid #475569;color:#cbd5e1;font-size:0.75rem;font-weight:700;padding:4px 10px;border-radius:6px;">
-              Inspector: ${shift.inspectorTitle}
-            </span>
           </div>
 
-          <div style="background:#0b1120;border-left:4px solid #ef4444;border-radius:8px;padding:11px 14px;margin-bottom:14px;color:#fecaca;font-size:0.93rem;line-height:1.45;">
-            <strong>Symptoms &amp; Situation:</strong> &ldquo;${curCase.ailment}&rdquo;
-          </div>
-
-          <p style="margin:0 0 12px 0;font-weight:800;color:#f8fafc;font-size:0.98rem;">
-            ${curCase.prompt}
-          </p>
-
-          <div style="display:flex;flex-direction:column;gap:10px;">
-            ${curCase.options
-              .map((opt, idx) => {
-                let cls = '';
-                if (answeredOutcome) {
-                  if (opt.isOrthodox) cls = 'right';
-                  else if (answeredOutcome.optIdx === idx) cls = 'wrong';
-                }
-                return `
-                  <button type="button" class="bsp-opt-btn qac-opt-btn ${cls}" data-idx="${idx}" ${answeredOutcome ? 'disabled' : ''}>
-                    <span class="bsp-key">${String.fromCharCode(65 + idx)}</span>
-                    <span>${opt.label}</span>
-                  </button>
-                `;
-              })
-              .join('')}
-          </div>
-
-          ${
-            answeredOutcome
-              ? `
-            <div style="margin-top:16px;background:${answeredOutcome.chosen.isOrthodox ? 'rgba(16,185,129,0.12)' : 'rgba(239,68,68,0.12)'};border:1.5px solid ${answeredOutcome.chosen.isOrthodox ? '#10b981' : '#ef4444'};border-radius:12px;padding:14px 16px;">
-              <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;margin-bottom:6px;">
-                <strong style="color:${answeredOutcome.chosen.isOrthodox ? '#6ee7b7' : '#fca5a5'};font-size:0.96rem;">
-                  ${answeredOutcome.chosen.inspectorQuip}
-                </strong>
-                <span style="background:#0f172a;border:1px solid #475569;padding:3px 10px;border-radius:999px;font-size:0.75rem;font-weight:800;color:${answeredOutcome.chosen.survived ? '#34d399' : '#f87171'};">
-                  ${answeredOutcome.chosen.survived ? '💚 PATIENT LIVED!' : '💀 PATIENT DIED!'}
-                </span>
+          <!-- Patient Case File & Prescription Choices -->
+          <div class="qac-case-card">
+            <div class="qac-patient-head" style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:10px;margin-bottom:10px;">
+              <div>
+                <div class="qac-patient-kicker" style="font-size:0.74rem;font-weight:800;text-transform:uppercase;color:${shift.accent};">PATIENT ON THE COUCH</div>
+                <h3 class="qac-patient-name" style="margin:2px 0 0 0;font-size:1.25rem;color:#ffffff;">${curCase.patient}</h3>
               </div>
-              <p style="margin:0 0 12px 0;font-size:0.85rem;color:#cbd5e1;line-height:1.45;">
-                <strong>🎓 Edexcel Paper 1 Exam Link:</strong> ${answeredOutcome.chosen.examNote}
-              </p>
-              <button type="button" class="arcade-btn-primary" id="qac-next-btn">
-                ${
-                  caseIdx + 1 < shift.cases.length
-                    ? 'See Next Patient'
-                    : shiftIdx + 1 < SHIFTS.length
-                      ? `Advance Time Machine → ${SHIFTS[shiftIdx + 1].eraBadge.split('•')[1].trim()}`
-                      : 'View 800-Year Career Report Card'
-                }
-                <i class="fa-solid fa-arrow-right"></i>
-              </button>
+              <span class="qac-inspector-badge" style="background:#1e293b;border:1px solid #475569;color:#cbd5e1;font-size:0.75rem;font-weight:700;padding:4px 10px;border-radius:6px;">
+                Inspector: ${shift.inspectorTitle}
+              </span>
             </div>
-          `
-              : ''
-          }
+
+            <div class="qac-symptoms-box" style="background:#0b1120;border-left:4px solid #ef4444;border-radius:8px;padding:11px 14px;margin-bottom:14px;color:#fecaca;font-size:0.93rem;line-height:1.45;">
+              <strong>Symptoms:</strong> &ldquo;${curCase.ailment}&rdquo;
+            </div>
+
+            <p class="qac-prompt-line" style="margin:0 0 12px 0;font-weight:800;color:#f8fafc;font-size:0.98rem;">
+              ${curCase.prompt}
+            </p>
+
+            <div class="qac-remedy-grid">
+              ${curCase.options
+                .map((opt, idx) => {
+                  let cls = '';
+                  if (answeredOutcome) {
+                    if (opt.isOrthodox) cls = 'right';
+                    else if (answeredOutcome.optIdx === idx) cls = 'wrong';
+                  }
+                  return `
+                    <button type="button" class="bsp-opt-btn qac-opt-btn ${cls}" data-idx="${idx}" ${answeredOutcome ? 'disabled' : ''}>
+                      <span class="bsp-key">${String.fromCharCode(65 + idx)}</span>
+                      <span>${opt.label}</span>
+                    </button>
+                  `;
+                })
+                .join('')}
+            </div>
+
+            ${
+              answeredOutcome
+                ? `
+              <div class="qac-outcome-card" style="margin-top:16px;background:${answeredOutcome.chosen.isOrthodox ? 'rgba(16,185,129,0.12)' : 'rgba(239,68,68,0.12)'};border:1.5px solid ${answeredOutcome.chosen.isOrthodox ? '#10b981' : '#ef4444'};border-radius:12px;padding:14px 16px;">
+                <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;margin-bottom:6px;">
+                  <strong style="color:${answeredOutcome.chosen.isOrthodox ? '#6ee7b7' : '#fca5a5'};font-size:0.92rem;">
+                    ${answeredOutcome.chosen.inspectorQuip}
+                  </strong>
+                  <span style="background:#0f172a;border:1px solid #475569;padding:3px 10px;border-radius:999px;font-size:0.74rem;font-weight:800;color:${answeredOutcome.chosen.survived ? '#34d399' : '#f87171'};">
+                    ${answeredOutcome.chosen.survived ? '💚 PATIENT LIVED!' : '💀 PATIENT DIED!'}
+                  </span>
+                </div>
+                <p style="margin:0 0 12px 0;font-size:0.85rem;color:#cbd5e1;line-height:1.45;">
+                  <strong>🎓 Edexcel Paper 1 Exam Link:</strong> ${answeredOutcome.chosen.examNote}
+                </p>
+                <button type="button" class="arcade-btn-primary" id="qac-next-btn">
+                  ${
+                    caseIdx + 1 < shift.cases.length
+                      ? 'See Next Patient'
+                      : shiftIdx + 1 < SHIFTS.length
+                        ? `Advance Time Machine → ${SHIFTS[shiftIdx + 1].eraBadge.split('•')[1].trim()}`
+                        : 'View 800-Year Career Report Card'
+                  }
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </div>
+            `
+                : ''
+            }
+          </div>
         </div>
       </div>
     `;
 
+    const activeTabEl = stageEl.querySelector('.qac-era-pill.is-active');
+    if (activeTabEl && typeof activeTabEl.scrollIntoView === 'function') {
+      activeTabEl.scrollIntoView({ block: 'nearest', inline: 'center' });
+    }
+
+    stageEl.querySelectorAll('.qac-era-pill').forEach((tab) => {
+      tab.addEventListener('click', () => {
+        const nextShift = parseInt(tab.dataset.sidx, 10);
+        if (!Number.isNaN(nextShift) && nextShift !== shiftIdx) {
+          wakeQuacksAudio();
+          arcadeAudio.move();
+          shiftIdx = nextShift;
+          caseIdx = 0;
+          answeredOutcome = null;
+          activeInspectText = '';
+          render();
+        }
+      });
+    });
+
     stageEl.querySelectorAll('.qac-hotspot-btn').forEach((btn) => {
       btn.addEventListener('click', (e) => {
         e.stopPropagation();
+        wakeQuacksAudio();
         const dio = ERA_DIORAMAS[shift.id] || ERA_DIORAMAS.medieval;
         const h = dio.hotspots[parseInt(btn.dataset.hidx, 10)];
         if (h) {
@@ -834,6 +1115,7 @@ export function mountQuacksAndCures(stageEl, pools, ctx = {}) {
     });
 
     stageEl.querySelector('#qac-svg-stage')?.addEventListener('click', () => {
+      wakeQuacksAudio();
       const dio = ERA_DIORAMAS[shift.id] || ERA_DIORAMAS.medieval;
       if (dio.hotspots.length > 0) {
         activeInspectText = dio.hotspots[0].quip;
@@ -850,7 +1132,12 @@ export function mountQuacksAndCures(stageEl, pools, ctx = {}) {
   }
 
   function renderCareerReport() {
+    wakeQuacksAudio();
     arcadeAudio.levelUp();
+    if (!xpAwarded) {
+      xpAwarded = true;
+      window.hhAwardXp?.({ amount: 30, source: 'quacks_and_cures', unitId: 'edexcel_medicine' });
+    }
     const { isNewBest, best } = saveArcadePersonalBest(unitId, 'quacks', 'all', score);
     pb = best;
     const totalSaved = savedByShift.reduce((a, b) => a + b, 0);

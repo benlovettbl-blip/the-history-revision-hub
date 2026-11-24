@@ -34,6 +34,7 @@ import {
 } from './data/seo_routes.js';
 import { initShareUtilsGlobals } from './engine/share_utils.js';
 import { openUnifiedTeacherGuidance } from './engine/teacher_guidance_modal.js';
+import { initIosAudioUnlock } from './engine/ios_audio_unlock.js';
 import { initMobileAppShell } from './mobile_app_shell.js';
 import './mobile_app_shell.css';
 import './mobile_revision_tools.css';
@@ -41,6 +42,17 @@ import './mobile_media_touch.css';
 initShareUtilsGlobals();
 if (typeof window !== 'undefined') {
   window.openUnifiedTeacherGuidance = openUnifiedTeacherGuidance;
+  // Auto-recover stale Safari/PWA tabs if a deploy rotates lazy Vite chunk hashes
+  window.addEventListener('vite:preloadError', (event) => {
+    try {
+      const lastReload = Number(sessionStorage.getItem('hh_preload_reload_ts') || 0);
+      if (Date.now() - lastReload > 15000) {
+        event.preventDefault?.();
+        sessionStorage.setItem('hh_preload_reload_ts', String(Date.now()));
+        window.location.reload();
+      }
+    } catch (e) {}
+  });
 }
 
 function purgeGDPRHistoricalCache() {
@@ -74,7 +86,11 @@ function purgeGDPRHistoricalCache() {
       }
       if (typeof sessionStorage !== 'undefined') {
         try {
+          const savedPreviewPupil = sessionStorage.getItem('hh_preview_as_pupil');
           sessionStorage.clear();
+          if (savedPreviewPupil !== null) {
+            sessionStorage.setItem('hh_preview_as_pupil', savedPreviewPupil);
+          }
         } catch (e) {}
       }
       if (typeof indexedDB !== 'undefined' && indexedDB.deleteDatabase) {
@@ -466,7 +482,12 @@ window.addEventListener('DOMContentLoaded', async () => {
   // Execute GDPR cache, storage, and service worker scrub
   purgeGDPRHistoricalCache();
 
-  // Initialize UI subscribers
+  // Bind global helper routing BEFORE mounting navigation / mobile bottom bar
+  window.switchView = switchView;
+  window.state = state;
+
+  // Initialize iOS audio session & UI subscribers
+  initIosAudioUnlock();
   initNavigationUI();
   initEventDelegation();
   initSpeech();
@@ -474,10 +495,6 @@ window.addEventListener('DOMContentLoaded', async () => {
   initDossierPopover();
   initTeacherMode();
   initSilentPupilPassPreseed();
-
-  // Bind global helper routing
-  window.switchView = switchView;
-  window.state = state;
 
   initData();
 
@@ -603,6 +620,14 @@ window.addEventListener('DOMContentLoaded', async () => {
       normUnit = normUnit || 'great_war_part2';
     } else if (normView === 'trend-radar' || normView === 'matrix' || normView === 'exam-matrix') {
       normView = 'mock-exams';
+    } else if (
+      normView === 'exam' ||
+      normView === 'exam-trainer' ||
+      normView === 'exam_trainer' ||
+      normView === 'mobile-exam'
+    ) {
+      normView = 'exam-trainer';
+      normUnit = normUnit || 'cme_new';
     } else if (normView === 'department' || normView === 'department_portal' || normView === 'portal') {
       normView = 'department-portal';
     } else if (normView === 'curriculum_map' || normView === 'curriculum') {
@@ -764,9 +789,23 @@ window.addEventListener('DOMContentLoaded', async () => {
     return { index: -1, lesson: null, id: null };
   };
 
-  await switchView(view, unit, true);
+  const eqParam = urlParams.get('eq');
+  if (eqParam && unit && (!urlParams.get('view') || view === 'lessons' || view === 'exam-trainer')) {
+    const unitDataForEq =
+      window.currentUnitData ||
+      (window.appStore && window.appStore.state && window.appStore.state.activeUnitData) ||
+      (typeof window.getUnitData === 'function' ? window.getUnitData(unit) : null);
+    const resolvedEqLesson = initialLesson !== null ? resolveLessonTarget(initialLesson, unitDataForEq) : { index: -1 };
+    const eqNum = Math.max(1, parseInt(eqParam, 10) || 1);
+    await switchView('exam-trainer', unit, true, {
+      lessonIndex: resolvedEqLesson.index >= 0 ? resolvedEqLesson.index : undefined,
+      questionNum: eqNum,
+    });
+  } else {
+    await switchView(view, unit, true);
+  }
 
-  if (view === 'lessons' && initialLesson !== null) {
+  if (view === 'lessons' && initialLesson !== null && !eqParam) {
     const unitDataObj =
       window.currentUnitData ||
       (window.appStore && window.appStore.state && window.appStore.state.activeUnitData) ||
@@ -805,6 +844,11 @@ window.addEventListener('DOMContentLoaded', async () => {
         setTimeout(() => {
           window.jumpToNarrativeBlock(stageParam);
         }, 220);
+      }
+      if (urlParams.get('q') && typeof window.runPendingQuestionDeepLink === 'function') {
+        setTimeout(() => {
+          window.runPendingQuestionDeepLink();
+        }, 240);
       }
     }
   }

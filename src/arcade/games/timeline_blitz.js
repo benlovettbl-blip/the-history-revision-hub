@@ -209,7 +209,7 @@ export function mountTimelineBlitz(stageEl, pools, ctx) {
         ${statusBanner}
 
         <div class="tlb-board-grid">
-          <!-- LEFT COLUMN: Sticky Mystery Event Collector Card -->
+          <!-- LEFT COLUMN: Sticky Mystery Event Collector Card (position: sticky; top: 52px; z-index: 15 on mobile) -->
           <div class="tlb-command-col">
             ${
               activeCard
@@ -306,9 +306,8 @@ export function mountTimelineBlitz(stageEl, pools, ctx) {
     else arcadeAudio.gameOver();
 
     const { isNewBest, best } = saveArcadePersonalBest(ctx.unitId, 'timeline', ctx.scope, score);
+    ctx.onRoundComplete?.();
     pb = best;
-    if (placedChain.length > 1) {
-    }
 
     stageEl.innerHTML = `
       <div class="arcade-result-panel">

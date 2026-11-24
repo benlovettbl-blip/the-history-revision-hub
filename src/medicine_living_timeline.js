@@ -2197,6 +2197,384 @@ export function renderMedicineLivingTimeline(container) {
         border-top: 1px solid rgba(255, 255, 255, 0.12);
       }
 
+      /* Mobile 390px Zero-Overflow, 16px Search & Space Dark Mode */
+      .med-tl-root,
+      .med-tl-root *,
+      .med-tl-root *::before,
+      .med-tl-root *::after {
+        box-sizing: border-box;
+      }
+
+      .med-stage-left,
+      .med-stage-right,
+      .med-grid-card {
+        min-width: 0;
+      }
+
+      .med-showcase-stage {
+        touch-action: pan-y;
+      }
+
+      body.hh-mobile-pupil-mode:not(.staff-mode-active) a.med-tl-hdr-btn[href*='timeline.html'] {
+        display: none !important;
+      }
+
+      @media (max-width: 932px) {
+        .med-tl-root {
+          padding: 8px 12px 104px 12px;
+          max-width: 100%;
+          overflow-x: clip;
+        }
+        .med-tl-search-wrap {
+          flex: 1 1 100%;
+          min-width: 0;
+          max-width: 100%;
+        }
+        .med-tl-search-input {
+          font-size: 16px !important;
+          min-height: 40px;
+          padding: 7px 32px 7px 32px;
+        }
+      }
+
+      @media (max-width: 640px) {
+        .med-tl-root {
+          padding: 6px 10px 108px 10px;
+        }
+        .med-tl-museum-header {
+          padding: 14px 14px;
+          gap: 12px;
+        }
+        .med-tl-title-col {
+          min-width: 0;
+          flex: 1 1 100%;
+        }
+        .med-tl-header-controls {
+          width: 100%;
+          display: flex;
+          flex-wrap: wrap;
+          gap: 8px;
+        }
+        .med-tl-mode-seg {
+          width: 100%;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+        }
+        .med-tl-mode-btn {
+          white-space: normal;
+          text-align: center;
+          padding: 7px 8px;
+          font-size: 0.74rem;
+          line-height: 1.2;
+        }
+        .med-tl-hdr-btn {
+          flex: 1 1 auto;
+          justify-content: center;
+        }
+        .med-tl-filter-panel {
+          padding: 9px 10px;
+        }
+        .med-era-filter-pill,
+        .med-factor-filter-pill {
+          white-space: normal;
+          font-size: 0.72rem;
+          padding: 5px 9px;
+          max-width: 100%;
+        }
+        .med-factor-banner-copy {
+          min-width: 0;
+          flex: 1 1 100%;
+        }
+        .med-tl-highway-card {
+          padding: 10px 11px;
+        }
+        .med-highway-top {
+          flex-direction: column;
+          align-items: stretch;
+          gap: 8px;
+        }
+        .med-highway-nav {
+          width: 100%;
+          justify-content: space-between;
+        }
+        .med-rail-node {
+          width: 148px;
+        }
+        .med-stage-left {
+          border-right: none;
+          border-bottom: 1.5px solid #cbd5e1;
+        }
+        .med-vis-btn {
+          white-space: normal;
+          font-size: 0.72rem;
+          padding: 6px 6px;
+        }
+        .med-stage-mat {
+          min-height: 220px;
+          max-height: 300px;
+          padding: 12px;
+        }
+        .med-stage-mat img {
+          max-height: 270px;
+        }
+        .med-stage-right {
+          padding: 14px 14px;
+          gap: 12px;
+        }
+        .med-study-lesson-btn {
+          width: 100%;
+          justify-content: center;
+          white-space: normal;
+        }
+        .med-q3-compare-btn,
+        .med-bridge-step-btn {
+          width: 100%;
+          justify-content: center;
+          white-space: normal;
+          text-align: center;
+        }
+      }
+
+      /* [data-theme="space"] Dark Mode Parity */
+      [data-theme='space'] .med-tl-root,
+      [data-theme='space'] .med-inline-stat {
+        color: #f8fafc;
+      }
+      [data-theme='space'] .med-tl-filter-panel,
+      [data-theme='space'] .med-tl-highway-card,
+      [data-theme='space'] .med-showcase-stage,
+      [data-theme='space'] .med-grid-card,
+      [data-theme='space'] .med-empty-box {
+        background: #1e293b;
+        border-color: #334155;
+        color: #f8fafc;
+      }
+      [data-theme='space'] .med-tl-factor-row {
+        border-top-color: #334155;
+      }
+      [data-theme='space'] .med-tl-return-pill,
+      [data-theme='space'] .med-step-btn,
+      [data-theme='space'] .med-grid-inspect-btn {
+        background: #0f172a;
+        color: #f8fafc;
+        border-color: #475569;
+      }
+      [data-theme='space'] .med-tl-return-pill:hover,
+      [data-theme='space'] .med-step-btn:hover:not(:disabled),
+      [data-theme='space'] .med-grid-inspect-btn:hover {
+        background: #334155;
+        border-color: #64748b;
+        color: #ffffff;
+      }
+      [data-theme='space'] .med-tl-topbar-meta,
+      [data-theme='space'] .med-factor-row-label,
+      [data-theme='space'] .med-scrubber-bound,
+      [data-theme='space'] .med-tax-heading,
+      [data-theme='space'] .med-grid-summary-bar,
+      [data-theme='space'] .med-q3-paired-era {
+        color: #94a3b8;
+      }
+      [data-theme='space'] .med-tl-kbd,
+      [data-theme='space'] .med-step-counter,
+      [data-theme='space'] .med-spec-pill-top,
+      [data-theme='space'] .med-spec-term-chip {
+        background: #0f172a;
+        border-color: #475569;
+        color: #e2e8f0;
+      }
+      [data-theme='space'] .med-era-filter-pill,
+      [data-theme='space'] .med-factor-filter-pill,
+      [data-theme='space'] .med-card-factor-chip {
+        background: #0f172a;
+        border-color: #475569;
+        color: #e2e8f0;
+      }
+      [data-theme='space'] .med-era-filter-pill:hover,
+      [data-theme='space'] .med-factor-filter-pill:hover,
+      [data-theme='space'] .med-card-factor-chip:hover {
+        background: #334155;
+        color: #ffffff;
+      }
+      [data-theme='space'] .med-era-filter-pill.active {
+        background: var(--pill-active-bg, #0d9488);
+        border-color: rgba(255, 255, 255, 0.35);
+        color: #ffffff;
+      }
+      [data-theme='space'] .med-era-filter-pill[data-era='all'].active,
+      [data-theme='space'] .med-factor-filter-pill[data-factor='all'].active {
+        background: #0d9488;
+        border-color: #5eead4;
+        color: #ffffff;
+      }
+      [data-theme='space'] .med-factor-filter-pill.active,
+      [data-theme='space'] .med-card-factor-chip.active {
+        background: var(--factor-color, #0d9488);
+        border-color: rgba(255, 255, 255, 0.35);
+        color: #ffffff;
+      }
+      [data-theme='space'] .med-factor-count {
+        background: rgba(255, 255, 255, 0.12);
+        color: inherit;
+      }
+      [data-theme='space'] .med-factor-synthesis-banner {
+        background: #0f172a;
+        border-color: #334155;
+        border-left-color: var(--factor-color, #14b8a6);
+      }
+      [data-theme='space'] .med-factor-banner-copy {
+        color: #e2e8f0;
+      }
+      [data-theme='space'] .med-tl-search-input {
+        background: #0f172a;
+        border-color: #475569;
+        color: #f8fafc;
+      }
+      [data-theme='space'] .med-tl-search-input::placeholder {
+        color: #94a3b8;
+      }
+      [data-theme='space'] .med-tl-search-input:focus {
+        border-color: #2dd4bf;
+        background: #0b1120;
+      }
+      [data-theme='space'] .med-tl-search-clear {
+        background: #334155;
+        color: #f8fafc;
+      }
+      [data-theme='space'] .med-highway-label,
+      [data-theme='space'] .med-stage-title,
+      [data-theme='space'] .med-grid-title,
+      [data-theme='space'] .med-q3-title {
+        color: #f8fafc;
+      }
+      [data-theme='space'] .med-rail-node {
+        background: #0f172a;
+        border-color: #334155;
+        border-top-color: var(--era-color, #2dd4bf);
+      }
+      [data-theme='space'] .med-rail-node::before {
+        background: #475569;
+      }
+      [data-theme='space'] .med-rail-node:hover {
+        background: #162238;
+      }
+      [data-theme='space'] .med-rail-node.active {
+        background: rgba(20, 184, 166, 0.18);
+        border-color: #2dd4bf;
+      }
+      [data-theme='space'] .med-rail-meta {
+        color: #fde68a;
+      }
+      [data-theme='space'] .med-rail-title {
+        color: #f1f5f9;
+      }
+      [data-theme='space'] .med-stage-right {
+        background: #152033;
+        color: #f8fafc;
+      }
+      [data-theme='space'] .med-beat-card {
+        background: #0f172a;
+        border-color: #334155;
+      }
+      [data-theme='space'] .med-beat-text,
+      [data-theme='space'] .med-grid-beats,
+      [data-theme='space'] .med-q3-text {
+        color: #e2e8f0;
+      }
+      [data-theme='space'] .beat-continuity .med-beat-label,
+      [data-theme='space'] .med-grid-beat-tag.c-before {
+        background: rgba(245, 158, 11, 0.18);
+        color: #fde68a;
+        border-color: rgba(251, 191, 36, 0.4);
+      }
+      [data-theme='space'] .beat-breakthrough .med-beat-label,
+      [data-theme='space'] .med-grid-beat-tag.c-break {
+        background: rgba(59, 130, 246, 0.2);
+        color: #bfdbfe;
+        border-color: rgba(96, 165, 250, 0.45);
+      }
+      [data-theme='space'] .beat-impact .med-beat-label,
+      [data-theme='space'] .med-grid-beat-tag.c-limits {
+        background: rgba(16, 185, 129, 0.18);
+        color: #a7f3d0;
+        border-color: rgba(52, 211, 153, 0.4);
+      }
+      [data-theme='space'] .med-q3-bridge {
+        background: linear-gradient(95deg, rgba(79, 70, 229, 0.22) 0%, rgba(15, 23, 42, 0.92) 100%);
+        border-color: rgba(129, 140, 248, 0.45);
+        border-left-color: #818cf8;
+      }
+      [data-theme='space'] .med-q3-bridge.is-similarity {
+        background: linear-gradient(95deg, rgba(13, 148, 136, 0.22) 0%, rgba(15, 23, 42, 0.92) 100%);
+        border-color: rgba(94, 234, 212, 0.42);
+        border-left-color: #2dd4bf;
+      }
+      [data-theme='space'] .med-q3-question,
+      [data-theme='space'] .med-q3-model-reveal,
+      [data-theme='space'] .med-q3-model-body,
+      [data-theme='space'] .med-grid-q3-mini {
+        background: #0f172a;
+        border-color: #334155;
+        color: #f8fafc;
+      }
+      [data-theme='space'] .med-q3-model-summary {
+        color: #a5b4fc;
+      }
+      [data-theme='space'] .med-q3-model-summary:hover,
+      [data-theme='space'] .med-q3-bridge.is-similarity .med-q3-model-summary:hover {
+        background: #1e293b;
+      }
+      [data-theme='space'] .med-q3-bridge.is-similarity .med-q3-model-summary {
+        color: #5eead4;
+      }
+      [data-theme='space'] .med-q3-compare-btn {
+        background: #0f172a;
+        color: #c7d2fe;
+        border-color: #6366f1;
+      }
+      [data-theme='space'] .med-q3-bridge.is-similarity .med-q3-compare-btn {
+        color: #99f6e4;
+        border-color: #14b8a6;
+      }
+      [data-theme='space'] .med-bridge-step-btn {
+        background: #4f46e5;
+        color: #ffffff;
+      }
+      [data-theme='space'] .med-taxonomy-box {
+        border-top-color: #334155;
+      }
+      [data-theme='space'] .med-agent-chip.person {
+        background: rgba(37, 99, 235, 0.2);
+        color: #bfdbfe;
+        border-color: rgba(96, 165, 250, 0.45);
+      }
+      [data-theme='space'] .med-agent-chip.person:hover {
+        background: #2563eb;
+        color: #ffffff;
+      }
+      [data-theme='space'] .med-agent-chip.org {
+        background: rgba(13, 148, 136, 0.22);
+        color: #99f6e4;
+        border-color: rgba(94, 234, 212, 0.45);
+      }
+      [data-theme='space'] .med-agent-chip.org:hover {
+        background: #0f766e;
+        color: #ffffff;
+      }
+      [data-theme='space'] .med-grid-card-hdr {
+        border-bottom-color: #334155;
+      }
+      [data-theme='space'] .med-grid-caption,
+      [data-theme='space'] .med-grid-footer {
+        background: #0f172a;
+        border-color: #334155;
+        color: #cbd5e1;
+      }
+      [data-theme='space'] .med-grid-diagram-btn {
+        background: rgba(13, 148, 136, 0.2);
+        color: #99f6e4;
+        border-color: rgba(94, 234, 212, 0.45);
+      }
+
       @media print {
         .med-tl-topbar,
         .med-tl-header-controls,
@@ -3315,6 +3693,57 @@ export function renderMedicineLivingTimeline(container) {
       renderStageArea(false);
     });
   }
+
+  // Horizontal Touch-Swipe on Explorer Milestone Detail Card (|dx| > 50 && |dx| > |dy| * 1.35)
+  let medSwipeStartX = 0;
+  let medSwipeStartY = 0;
+  let medSwipeTracking = false;
+
+  rootEl.addEventListener(
+    'touchstart',
+    (ev) => {
+      if (viewMode !== 'explorer' || lightboxState.open) return;
+      if (!ev.touches || ev.touches.length !== 1) {
+        medSwipeTracking = false;
+        return;
+      }
+      const card = ev.target.closest('.med-showcase-stage');
+      if (!card || ev.target.closest('input, select, textarea')) {
+        medSwipeTracking = false;
+        return;
+      }
+      medSwipeStartX = ev.touches[0].clientX;
+      medSwipeStartY = ev.touches[0].clientY;
+      medSwipeTracking = true;
+    },
+    { passive: true },
+  );
+
+  rootEl.addEventListener(
+    'touchend',
+    (ev) => {
+      if (!medSwipeTracking) return;
+      medSwipeTracking = false;
+      if (!ev.changedTouches || ev.changedTouches.length === 0) return;
+      const dx = ev.changedTouches[0].clientX - medSwipeStartX;
+      const dy = ev.changedTouches[0].clientY - medSwipeStartY;
+      if (Math.abs(dx) > 50 && Math.abs(dx) > Math.abs(dy) * 1.35) {
+        const filtered = getFilteredList();
+        if (filtered.length === 0) return;
+        const pos = ensureValidSelection(filtered);
+        const nextPos = dx < 0 ? pos + 1 : pos - 1;
+        if (filtered[nextPos]) {
+          selectedGlobalIdx = filtered[nextPos].globalIdx;
+          if (typeof window !== 'undefined') {
+            window._medActiveMilestoneIdx = selectedGlobalIdx;
+            window._cmeActiveMilestoneIdx = selectedGlobalIdx;
+          }
+          renderStageArea(true);
+        }
+      }
+    },
+    { passive: true },
+  );
 
   // Safe Keyboard Navigation (auto-detaches when #med-living-timeline-root leaves DOM)
   if (typeof window !== 'undefined') {

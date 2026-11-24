@@ -1,7 +1,7 @@
 /**
  * Game 1: Keyword Stack ("History Tetris")
  * 4-lane retro-modern falling keyword blocks with Lock Zone, Shredder lanes,
- * Rubble pile-up, Gold Rubble-Clearing Bombs, keyboard + touch controls, and Weak-Spot logging.
+ * Rubble pile-up, Gold Rubble-Clearing Bombs, keyboard + touch controls + direct lane-tap, and Weak-Spot logging.
  */
 
 import { arcadeAudio, getArcadePersonalBest, saveArcadePersonalBest } from '../arcade_audio.js';
@@ -53,7 +53,7 @@ export function mountKeywordTetris(stageEl, pools, ctx) {
       <div class="akt-clue-banner" id="akt-clue-banner">
         <div class="akt-clue-top">
           <span class="akt-clue-badge" id="akt-clue-badge"><i class="fa-solid fa-crosshairs"></i> TARGET SPECIFICATION CLUE</span>
-          <span class="akt-clue-topic" id="akt-clue-topic">Press Start to Drop Blocks</span>
+          <span class="akt-clue-topic" id="akt-clue-topic">Tap Start or Tap Any Lane</span>
         </div>
         <div class="akt-clue-text" id="akt-clue-text">
           Steer the <strong>matching keyword block</strong> into the glowing green <strong>LOCK ZONE</strong> lane. Steer wrong distractor blocks into any <strong>SHREDDER</strong> lane!
@@ -77,9 +77,9 @@ export function mountKeywordTetris(stageEl, pools, ctx) {
             <!-- Start / Game Over Overlay -->
             <div class="akt-overlay" id="akt-overlay">
               <div class="akt-overlay-card" id="akt-overlay-card">
-                <div style="font-size: 2.5rem; margin-bottom: 6px;">🧱</div>
+                <div style="font-size: 2rem; margin-bottom: 4px;">🧱</div>
                 <h3>Keyword Stack</h3>
-                <p>Match falling keywords to the specification clue above. Land <strong>correct terms</strong> in the green <strong>LOCK ZONE</strong> and send <strong>distractors</strong> into the side <strong>SHREDDERS</strong>. Every 5-streak spawns a <strong>💣 Gold Bomb</strong> that blasts away 2 rows of rubble!</p>
+                <p>Land <strong>correct terms</strong> in the green <strong>LOCK ZONE</strong> and send <strong>distractors</strong> into the <strong>SHREDDERS</strong>. Tap a lane directly to steer &amp; tap again to drop!</p>
                 <div class="akt-key-hints">
                   <span><kbd>←</kbd> <kbd>→</kbd> Steer</span>
                   <span><kbd>↓</kbd> Fast Drop</span>
@@ -92,19 +92,19 @@ export function mountKeywordTetris(stageEl, pools, ctx) {
             </div>
           </div>
 
-          <!-- Touch & Mouse Controls -->
+          <!-- Compact 46px Thumb D-Pad & Mouse Controls -->
           <div class="akt-controls-bar">
             <button type="button" class="akt-ctrl-btn" id="akt-btn-left" aria-label="Move Left">
-              <i class="fa-solid fa-arrow-left"></i> Left
+              ◀ <span class="akt-ctrl-txt">Left</span>
             </button>
-            <button type="button" class="akt-ctrl-btn slam" id="akt-btn-slam" aria-label="Slam Drop">
-              <i class="fa-solid fa-angles-down"></i> Slam Drop
+            <button type="button" class="akt-ctrl-btn slam" id="akt-btn-slam" aria-label="Drop Block">
+              ▼ Drop
             </button>
             <button type="button" class="akt-ctrl-btn" id="akt-btn-pause" aria-label="Pause Game">
               <i class="fa-solid fa-pause"></i>
             </button>
             <button type="button" class="akt-ctrl-btn" id="akt-btn-right" aria-label="Move Right">
-              Right <i class="fa-solid fa-arrow-right"></i>
+              <span class="akt-ctrl-txt">Right</span> ▶
             </button>
           </div>
         </div>
@@ -114,10 +114,10 @@ export function mountKeywordTetris(stageEl, pools, ctx) {
           <div class="akt-side-box">
             <h4><i class="fa-solid fa-bolt" style="color:#f59e0b;"></i> Live Telemetry</h4>
             <div id="akt-last-feedback" class="akt-feedback-box">
-              Waiting for launch... Land correct blocks in the green column!
+              Tap a lane on the board to move there — tap the aligned lane to drop!
             </div>
           </div>
-          <div class="akt-side-box">
+          <div class="akt-side-box akt-rules-box">
             <h4><i class="fa-solid fa-shield-halved" style="color:#10b981;"></i> Scoring Rules</h4>
             <ul class="akt-rules-list">
               <li><strong style="color:#34d399;">Lock Correct Term:</strong> +150 × Combo</li>
@@ -184,14 +184,13 @@ export function mountKeywordTetris(stageEl, pools, ctx) {
 
     const isGoldRound = streak > 0 && streak % 5 === 0;
     clueBadge.innerHTML = isGoldRound
-      ? '<i class="fa-solid fa-bomb"></i> 💣 GOLD BOMB CLUE — CLEAR 2 RUBBLE ROWS!'
-      : '<i class="fa-solid fa-crosshairs"></i> TARGET SPECIFICATION CLUE';
+      ? '<i class="fa-solid fa-bomb"></i> 💣 GOLD BOMB — CLEAR 2 ROWS!'
+      : '<i class="fa-solid fa-crosshairs"></i> TARGET CLUE';
     clueBadge.style.background = isGoldRound ? 'rgba(245, 158, 11, 0.25)' : 'rgba(16, 185, 129, 0.18)';
     clueBadge.style.color = isGoldRound ? '#fde047' : '#34d399';
     clueTopic.textContent = currentQuestion.source || 'Unit Vocabulary';
     clueText.textContent = currentQuestion.q;
 
-    // Build 3 falling blocks for this clue: 1 correct + 2 distractors in shuffled order
     const distractors = shuffleList(currentQuestion.distractorBlocks).slice(0, 2);
     blockQueue = shuffleList([
       {
@@ -216,7 +215,7 @@ export function mountKeywordTetris(stageEl, pools, ctx) {
     }
     const blockNum = 3 - blockQueue.length + 1;
     if (clueTopic && currentQuestion) {
-      clueTopic.textContent = `${currentQuestion.source || 'Unit Vocabulary'} • Block ${blockNum} of 3`;
+      clueTopic.textContent = `${currentQuestion.source || 'Unit Vocabulary'} • ${blockNum}/3`;
     }
     const spec = blockQueue.shift();
     const startCol =
@@ -234,11 +233,31 @@ export function mountKeywordTetris(stageEl, pools, ctx) {
     if (gameState !== 'PLAYING' || !activeBlock) return;
     const nextCol = Math.max(0, Math.min(COLS - 1, activeBlock.col + delta));
     if (nextCol === activeBlock.col) return;
-    // Prevent sliding horizontally through existing rubble stack
     const targetStackTop = FLOOR_Y - stacks[nextCol].length * BLOCK_H;
     if (activeBlock.y + BLOCK_H > targetStackTop + 6) return;
     activeBlock.col = nextCol;
     arcadeAudio.move();
+  }
+
+  function moveOrDropLane(tappedCol) {
+    if (gameState !== 'PLAYING' || !activeBlock) return;
+    const clampedCol = Math.max(0, Math.min(COLS - 1, tappedCol));
+    if (clampedCol === activeBlock.col) {
+      slamDrop();
+      return;
+    }
+    const dir = clampedCol > activeBlock.col ? 1 : -1;
+    let moved = false;
+    while (activeBlock && activeBlock.col !== clampedCol) {
+      const nextCol = activeBlock.col + dir;
+      const targetStackTop = FLOOR_Y - stacks[nextCol].length * BLOCK_H;
+      if (activeBlock.y + BLOCK_H > targetStackTop + 6) break;
+      activeBlock.col = nextCol;
+      moved = true;
+    }
+    if (moved) {
+      arcadeAudio.move();
+    }
   }
 
   function slamDrop() {
@@ -270,7 +289,6 @@ export function mountKeywordTetris(stageEl, pools, ctx) {
     const mult = Math.min(8, 1 + Math.floor(streak / 2));
 
     if (activeBlock.isCorrect && inLockZone) {
-      // DIRECT LOCK HIT!
       streak++;
       linesCleared++;
       level = Math.min(8, 1 + Math.floor(linesCleared / 4));
@@ -281,7 +299,6 @@ export function mountKeywordTetris(stageEl, pools, ctx) {
 
       if (activeBlock.isGoldBomb) {
         arcadeAudio.bomb();
-        // Blast up to 2 rows of rubble from EVERY column!
         for (let cIdx = 0; cIdx < COLS; cIdx++) {
           stacks[cIdx].splice(Math.max(0, stacks[cIdx].length - 2), 2);
         }
@@ -290,7 +307,6 @@ export function mountKeywordTetris(stageEl, pools, ctx) {
         setFeedback(`💣 <strong>GOLD BOMB DETONATED!</strong> Cleared 2 rubble rows &amp; locked <strong>${currentQuestion.a}</strong>!`, '#f59e0b');
       } else {
         arcadeAudio.correct();
-        // Locking a standard correct answer also clears 1 rubble from the Lock Zone if any!
         if (stacks[col].length > 0) stacks[col].pop();
         spawnParticles(centerX, landY, '#10b981', 24);
         spawnFloatingText(centerX, landY, `+${pts} LOCKED!`, '#34d399');
@@ -298,14 +314,12 @@ export function mountKeywordTetris(stageEl, pools, ctx) {
       }
 
       updateHud();
-      // Advance immediately to a fresh question once the correct block is locked!
       activeBlock = null;
       nextQuestionRound();
       return;
     }
 
     if (!activeBlock.isCorrect && !inLockZone) {
-      // CLEAN SHRED OF DISTRACTOR!
       score += 45;
       arcadeAudio.shred();
       spawnParticles(centerX, landY, '#38bdf8', 12);
@@ -317,7 +331,6 @@ export function mountKeywordTetris(stageEl, pools, ctx) {
       return;
     }
 
-    // MISTAKE! Either a distractor landed in Lock Zone OR the correct term was shredded
     arcadeAudio.wrong();
     streak = 0;
     recordQuestionResult(currentQuestion.id, false, currentQuestion, ctx.unitId);
@@ -340,10 +353,8 @@ export function mountKeywordTetris(stageEl, pools, ctx) {
     if (gameState !== 'OVER') {
       activeBlock = null;
       if (inLockZone) {
-        // Move to next block or next question
         spawnNextBlock();
       } else {
-        // Correct block was shredded, so move to next question
         nextQuestionRound();
       }
     }
@@ -354,11 +365,9 @@ export function mountKeywordTetris(stageEl, pools, ctx) {
     activeBlock = null;
     arcadeAudio.gameOver();
     const { isNewBest, best } = saveArcadePersonalBest(ctx.unitId, 'tetris', ctx.scope, score);
+    ctx.onRoundComplete?.();
     pb = best;
     updateHud();
-
-    if (linesCleared > 0) {
-    }
 
     if (mistakes.length > 0) {
       const recapBox = stageEl.querySelector('#akt-recap-box');
@@ -374,17 +383,17 @@ export function mountKeywordTetris(stageEl, pools, ctx) {
 
     overlay.style.display = 'flex';
     overlayCard.innerHTML = `
-      <div style="font-size: 2.4rem; margin-bottom: 4px;">${isNewBest ? '🏆' : '🧱'}</div>
+      <div style="font-size: 2rem; margin-bottom: 4px;">${isNewBest ? '🏆' : '🧱'}</div>
       <h3>${isNewBest ? 'New Personal Best!' : 'Stack Reached Ceiling!'}</h3>
       <div class="arcade-gameover-stats">
-        <div><span>Final Score</span><strong>${score}</strong></div>
-        <div><span>Terms Locked</span><strong>${linesCleared}</strong></div>
-        <div><span>Personal Best</span><strong>${best}</strong></div>
+        <div><span>Score</span><strong>${score}</strong></div>
+        <div><span>Locked</span><strong>${linesCleared}</strong></div>
+        <div><span>Best</span><strong>${best}</strong></div>
       </div>
       ${
         mistakes.length > 0
-          ? `<p style="font-size:0.82rem;color:#fca5a5;margin:8px 0 14px;">${mistakes.length} missed specification term${mistakes.length === 1 ? '' : 's'} added to your Spaced Repetition Weak Spots.</p>`
-          : `<p style="font-size:0.82rem;color:#86efac;margin:8px 0 14px;">Zero rubble mistakes — flawless recall!</p>`
+          ? `<p style="font-size:0.78rem;color:#fca5a5;margin:6px 0 10px;">${mistakes.length} missed term${mistakes.length === 1 ? '' : 's'} saved to Review Mistakes.</p>`
+          : `<p style="font-size:0.78rem;color:#86efac;margin:6px 0 10px;">Zero rubble mistakes — flawless recall!</p>`
       }
       <button type="button" class="arcade-btn-primary" id="akt-restart-btn">
         <i class="fa-solid fa-rotate-right"></i> Play Again
@@ -398,7 +407,6 @@ export function mountKeywordTetris(stageEl, pools, ctx) {
     c.textAlign = 'center';
     c.textBaseline = 'middle';
 
-    // Try single line first down to 11.5px
     let fontSize = 13.5;
     c.font = `800 ${fontSize}px 'Outfit', 'Inter', sans-serif`;
     if (c.measureText(text).width <= maxWidth) {
@@ -407,7 +415,6 @@ export function mountKeywordTetris(stageEl, pools, ctx) {
       return;
     }
 
-    // Split multi-word or hyphenated terms cleanly across 2 balanced lines (ZERO truncation!)
     const words = text.split(/\s+/);
     if (words.length >= 2) {
       let bestSplit = 1;
@@ -439,7 +446,6 @@ export function mountKeywordTetris(stageEl, pools, ctx) {
       return;
     }
 
-    // Single long word (e.g. GLEICHSCHALTUNG): scale font smoothly down to fit 100% un-truncated
     while (c.measureText(text).width > maxWidth && fontSize > 8.5) {
       fontSize -= 0.5;
       c.font = `800 ${fontSize}px 'Outfit', 'Inter', sans-serif`;
@@ -469,7 +475,6 @@ export function mountKeywordTetris(stageEl, pools, ctx) {
       c.lineTo(x, CANVAS_H);
       c.stroke();
 
-      // Bottom Zone Receptor Bar
       c.fillStyle = isLock ? 'rgba(16, 185, 129, 0.28)' : 'rgba(30, 41, 59, 0.85)';
       c.fillRect(x + 4, FLOOR_Y + 4, COL_W - 8, CANVAS_H - FLOOR_Y - 8);
       c.strokeStyle = isLock ? '#10b981' : '#475569';
@@ -524,7 +529,6 @@ export function mountKeywordTetris(stageEl, pools, ctx) {
 
       const stackTop = FLOOR_Y - stacks[activeBlock.col].length * BLOCK_H;
 
-      // Subtle landing ghost outline
       c.save();
       c.strokeStyle = activeBlock.col === lockCol ? 'rgba(52, 211, 153, 0.4)' : 'rgba(148, 163, 184, 0.25)';
       c.setLineDash([4, 4]);
@@ -620,7 +624,7 @@ export function mountKeywordTetris(stageEl, pools, ctx) {
     overlay.style.display = 'none';
     gameState = 'PLAYING';
     updateHud();
-    setFeedback('Game live! Steer matching terms into 🎯 LOCK ZONE.', '#38bdf8');
+    setFeedback('Tap any lane to move there — tap the aligned lane to drop!', '#38bdf8');
     nextQuestionRound();
   }
 
@@ -628,6 +632,34 @@ export function mountKeywordTetris(stageEl, pools, ctx) {
     if (gameState === 'PLAYING') gameState = 'PAUSED';
     else if (gameState === 'PAUSED') gameState = 'PLAYING';
   }
+
+  // Direct Tap-on-Canvas-Lane Support (pointerdown / touchstart)
+  let lastCanvasPointerTs = 0;
+  const handleCanvasTap = (clientX, e) => {
+    if (gameState !== 'PLAYING' || !activeBlock) return;
+    const now = Date.now();
+    if (now - lastCanvasPointerTs < 90) return;
+    lastCanvasPointerTs = now;
+    if (e?.cancelable) e.preventDefault();
+    const rect = canvas.getBoundingClientRect();
+    if (!rect.width) return;
+    const ratio = (clientX - rect.left) / rect.width;
+    const col = Math.max(0, Math.min(COLS - 1, Math.floor(ratio * COLS)));
+    moveOrDropLane(col);
+  };
+
+  canvas.addEventListener('pointerdown', (e) => {
+    handleCanvasTap(e.clientX, e);
+  });
+  canvas.addEventListener(
+    'touchstart',
+    (e) => {
+      if (e.touches && e.touches[0]) {
+        handleCanvasTap(e.touches[0].clientX, e);
+      }
+    },
+    { passive: false },
+  );
 
   // Controls
   stageEl.querySelector('#akt-start-btn')?.addEventListener('click', startGame);

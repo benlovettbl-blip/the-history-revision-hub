@@ -1,7 +1,7 @@
 /**
  * Game 7: Fact or Fallacy ("Historical Mythbuster" Rapid Judgement)
- * Splices authentic specification facts with sneaky 1-detail distractor swaps.
- * Press ← FALLACY or → FACT to bust historical misconceptions!
+ * Locked statement card height (min-height: 175px), reserved explanation slot,
+ * pinned 54px bottom action buttons (CLS = 0), and Tinder-style touch swipe gestures!
  */
 
 import { arcadeAudio, getArcadePersonalBest, saveArcadePersonalBest } from '../arcade_audio.js';
@@ -22,7 +22,7 @@ export function mountFactOrFallacy(stageEl, pools, ctx) {
   let lives = 3;
   let bustedCount = 0;
   let awaitingNext = false;
-  let lastOutcome = null; // { correct, explanation }
+  let lastOutcome = null;
   let pb = getArcadePersonalBest(ctx.unitId, 'myth', ctx.scope);
 
   function startRun() {
@@ -81,6 +81,87 @@ export function mountFactOrFallacy(stageEl, pools, ctx) {
     render();
   }
 
+  function wireSwipeCard(cardEl) {
+    if (!cardEl || awaitingNext) return;
+    const leftStamp = cardEl.querySelector('.fof-swipe-stamp.left');
+    const rightStamp = cardEl.querySelector('.fof-swipe-stamp.right');
+
+    let startX = 0;
+    let startY = 0;
+    let dx = 0;
+    let isHorizSwipe = null;
+    let tracking = false;
+
+    cardEl.addEventListener(
+      'touchstart',
+      (e) => {
+        if (awaitingNext || !e.touches || e.touches.length !== 1) return;
+        tracking = true;
+        startX = e.touches[0].clientX;
+        startY = e.touches[0].clientY;
+        dx = 0;
+        isHorizSwipe = null;
+        cardEl.style.transition = 'none';
+      },
+      { passive: true },
+    );
+
+    cardEl.addEventListener(
+      'touchmove',
+      (e) => {
+        if (!tracking || awaitingNext || !e.touches || e.touches.length !== 1) return;
+        dx = e.touches[0].clientX - startX;
+        const dy = e.touches[0].clientY - startY;
+
+        if (isHorizSwipe === null && (Math.abs(dx) > 8 || Math.abs(dy) > 8)) {
+          isHorizSwipe = Math.abs(dx) > Math.abs(dy);
+        }
+        if (!isHorizSwipe) return;
+
+        if (e.cancelable) e.preventDefault();
+        const rot = Math.max(-12, Math.min(12, dx * 0.055));
+        cardEl.style.transform = `translateX(${dx}px) rotate(${rot}deg)`;
+
+        if (dx < -15) {
+          cardEl.style.borderColor = '#ef4444';
+          if (leftStamp) leftStamp.style.opacity = String(Math.min(1, Math.abs(dx) / 60));
+          if (rightStamp) rightStamp.style.opacity = '0';
+        } else if (dx > 15) {
+          cardEl.style.borderColor = '#10b981';
+          if (rightStamp) rightStamp.style.opacity = String(Math.min(1, dx / 60));
+          if (leftStamp) leftStamp.style.opacity = '0';
+        } else {
+          cardEl.style.borderColor = '#334155';
+          if (leftStamp) leftStamp.style.opacity = '0';
+          if (rightStamp) rightStamp.style.opacity = '0';
+        }
+      },
+      { passive: false },
+    );
+
+    const endSwipe = () => {
+      if (!tracking) return;
+      tracking = false;
+      cardEl.style.transition = 'transform 0.2s cubic-bezier(0.2, 0.8, 0.2, 1), border-color 0.2s ease';
+
+      if (isHorizSwipe && dx < -60) {
+        cardEl.style.transform = 'translateX(-150px) rotate(-10deg)';
+        setTimeout(() => judge(false), 110);
+      } else if (isHorizSwipe && dx > 60) {
+        cardEl.style.transform = 'translateX(150px) rotate(10deg)';
+        setTimeout(() => judge(true), 110);
+      } else {
+        cardEl.style.transform = 'translateX(0px) rotate(0deg)';
+        cardEl.style.borderColor = '#334155';
+        if (leftStamp) leftStamp.style.opacity = '0';
+        if (rightStamp) rightStamp.style.opacity = '0';
+      }
+    };
+
+    cardEl.addEventListener('touchend', endSwipe, { passive: true });
+    cardEl.addEventListener('touchcancel', endSwipe, { passive: true });
+  }
+
   function render() {
     if (!currentCard) return;
     const hearts = '❤️'.repeat(Math.max(0, lives)) + '🖤'.repeat(Math.max(0, 3 - lives));
@@ -96,56 +177,78 @@ export function mountFactOrFallacy(stageEl, pools, ctx) {
           <div class="tlb-stat"><span>Best</span><strong>${Math.max(pb, score)}</strong></div>
         </div>
 
-        <div class="fof-card ${awaitingNext ? (lastOutcome?.correct ? 'verdict-ok' : 'verdict-err') : ''}">
-          <div class="fof-eyebrow">
-            <span><i class="fa-solid fa-scale-balanced"></i> ${currentCard.promptLabel || 'FACT OR HISTORICAL FALLACY?'}</span>
-            <span>${currentCard.topic}</span>
+        <div class="fof-stage-box">
+          <!-- Locked-Height Swipeable Statement Card (min-height: 175px) -->
+          <div class="fof-card ${awaitingNext ? (lastOutcome?.correct ? 'verdict-ok' : 'verdict-err') : ''}" id="fof-swipe-card">
+            <span class="fof-swipe-stamp left">❌ FALLACY</span>
+            <span class="fof-swipe-stamp right">✅ FACT</span>
+
+            <div class="fof-eyebrow">
+              <span><i class="fa-solid fa-scale-balanced"></i> ${currentCard.promptLabel || 'FACT OR FALLACY?'}</span>
+              <span>${currentCard.topic}</span>
+            </div>
+
+            ${
+              isQuizKind
+                ? `
+              <div style="font-size: 1.02rem; font-weight: 700; color: #ffffff; line-height: 1.4; margin-bottom: 10px;">
+                ${currentCard.headline}
+              </div>
+              <div style="background: rgba(56, 189, 248, 0.12); border: 1.5px solid rgba(56, 189, 248, 0.45); border-radius: 10px; padding: 10px 14px; font-size: 0.98rem; font-weight: 800; color: #bae6fd;">
+                ${currentCard.claimText}
+              </div>
+            `
+                : `
+              <div class="fof-headline">${currentCard.headline}</div>
+              <div class="fof-statement">
+                <p>&ldquo;${currentCard.claimText}&rdquo;</p>
+              </div>
+            `
+            }
           </div>
 
-          ${
-            isQuizKind
-              ? `
-            <div style="font-size: 1.12rem; font-weight: 700; color: #ffffff; line-height: 1.45; margin-bottom: 14px;">
-              ${currentCard.headline}
-            </div>
-            <div style="background: rgba(56, 189, 248, 0.12); border: 1.5px solid rgba(56, 189, 248, 0.45); border-radius: 10px; padding: 12px 16px; font-size: 1.05rem; font-weight: 800; color: #bae6fd;">
-              ${currentCard.claimText}
-            </div>
-          `
-              : `
-            <div class="fof-headline">${currentCard.headline}</div>
-            <div class="fof-statement">
-              <p>&ldquo;${currentCard.claimText}&rdquo;</p>
-            </div>
-          `
-          }
-
-          ${
-            !awaitingNext
-              ? `
-            <div class="fof-btn-row">
-              <button type="button" class="fof-judge-btn fallacy" id="fof-btn-fallacy">
-                <i class="fa-solid fa-xmark"></i> FALLACY (Myth) <kbd>←</kbd>
-              </button>
-              <button type="button" class="fof-judge-btn fact" id="fof-btn-fact">
-                <i class="fa-solid fa-check"></i> FACT (True) <kbd>→</kbd>
-              </button>
-            </div>
-          `
-              : `
-            <div class="fof-outcome ${lastOutcome.correct ? 'ok' : 'err'}">
+          <!-- Reserved Explanation Slot (Zero Layout Jump!) -->
+          <div class="fof-explanation-slot ${awaitingNext ? (lastOutcome?.correct ? 'ok' : 'err') : ''}" role="status" aria-live="polite">
+            ${
+              awaitingNext
+                ? `
               <strong>${lastOutcome.title}</strong>
               <p>${lastOutcome.explanation}</p>
-              <button type="button" class="arcade-btn-primary" id="fof-next-btn">
-                ${lives <= 0 ? 'View Final Score' : 'Next Claim <kbd>Space</kbd>'} <i class="fa-solid fa-arrow-right"></i>
+            `
+                : `
+              <span class="fof-swipe-hint-idle">
+                <i class="fa-solid fa-arrows-left-right"></i> Swipe card left (Fallacy) or right (Fact) — or tap below
+              </span>
+            `
+            }
+          </div>
+
+          <!-- Pinned 54px Bottom Action Dock (Fixed Coordinates!) -->
+          <div class="fof-action-dock">
+            ${
+              !awaitingNext
+                ? `
+              <div class="fof-btn-row">
+                <button type="button" class="fof-judge-btn fallacy" id="fof-btn-fallacy">
+                  ❌ Fallacy <kbd>←</kbd>
+                </button>
+                <button type="button" class="fof-judge-btn fact" id="fof-btn-fact">
+                  ✅ Fact <kbd>→</kbd>
+                </button>
+              </div>
+            `
+                : `
+              <button type="button" class="arcade-btn-primary fof-next-dock-btn" id="fof-next-btn">
+                ${lives <= 0 ? 'View Final Score' : 'Next →'} <kbd>Space</kbd>
               </button>
-            </div>
-          `
-          }
+            `
+            }
+          </div>
         </div>
       </div>
     `;
 
+    wireSwipeCard(stageEl.querySelector('#fof-swipe-card'));
     stageEl.querySelector('#fof-btn-fallacy')?.addEventListener('click', () => judge(false));
     stageEl.querySelector('#fof-btn-fact')?.addEventListener('click', () => judge(true));
     stageEl.querySelector('#fof-next-btn')?.addEventListener('click', drawCard);
@@ -154,13 +257,12 @@ export function mountFactOrFallacy(stageEl, pools, ctx) {
   function renderEnd() {
     arcadeAudio.gameOver();
     const { isNewBest, best } = saveArcadePersonalBest(ctx.unitId, 'myth', ctx.scope, score);
+    ctx.onRoundComplete?.();
     pb = best;
-    if (bustedCount > 0) {
-    }
 
     stageEl.innerHTML = `
       <div class="arcade-result-panel">
-        <div style="font-size:2.8rem;margin-bottom:6px;">${isNewBest ? '🏆' : '⚖️'}</div>
+        <div style="font-size:2.6rem;margin-bottom:6px;">${isNewBest ? '🏆' : '⚖️'}</div>
         <h3>${isNewBest ? 'New Mythbuster Record!' : 'Mythbuster Run Complete'}</h3>
         <div class="arcade-gameover-stats">
           <div><span>Score</span><strong>${score}</strong></div>

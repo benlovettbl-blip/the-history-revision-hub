@@ -366,8 +366,9 @@ export function renderDashboard() {
     `;
   }
 
-  // Academic Enrichment & Co-Curricular Section (Bottom Tier)
-  html += `
+  // Academic Enrichment & Co-Curricular Section (Staff Mode Only — hidden from Pupil Mode)
+  if (isStaffModeActive()) {
+    html += `
     <div id="enrichment-section" style="margin-top: 36px; padding-top: 26px; border-top: 1.5px solid var(--border-glass, #e2e8f0);">
       <div style="margin-bottom: 16px;">
         <h3 style="margin: 0; font-family: 'Playfair Display', serif; font-size: 1.22rem; font-weight: 700; color: var(--text-main, #0f172a); display: flex; align-items: center; gap: 8px;">
@@ -428,6 +429,7 @@ export function renderDashboard() {
       </div>
     </div>
   `;
+  }
 
   html += `</div>`;
   container.innerHTML = html;
@@ -1637,13 +1639,8 @@ export async function renderTimeline() {
   const events = state.activeUnitData ? state.activeUnitData.timelineEvents : null;
 
   if (!events || events.length === 0) {
-    container.innerHTML = `
-      <div class="card text-center">
-        <h3><i class="fa-solid fa-timeline"></i> Timeline</h3>
-        <p>No historical events listed in this module's timeline.</p>
-        <button class="btn-pedagogy-primary" data-action="switch-view" data-view="dashboard">Back to Dashboard</button>
-      </div>
-    `;
+    const { renderUniversalLivingTimeline } = await import('./universal_living_timeline.js');
+    renderUniversalLivingTimeline(container, unitId, state.activeUnitData);
     return;
   }
 

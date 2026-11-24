@@ -419,10 +419,20 @@ export function updateHeaderBackBtn(explicitView = null) {
     urlParams.get('mode') === 'pupil' ||
     urlParams.get('safeguard') === 'true';
 
-  const isInsideActiveLesson =
+    const isInsideActiveLesson =
     activeView === 'lessons' &&
     typeof window.currentLessonIndex === 'number' &&
     window.currentLessonIndex >= 0;
+
+  if (
+    isInsideActiveLesson &&
+    activeUnit &&
+    typeof sessionStorage !== 'undefined' &&
+    !window._suppressLessonAutoScrollTop
+  ) {
+    // Save reading scroll slot helper on window
+    window.__hhActiveLessonKey = `${activeUnit}__${window.currentLessonIndex}`;
+  }
 
   const isUnitOverview = activeView === 'lessons' && !isInsideActiveLesson;
 
@@ -474,6 +484,7 @@ export function updateHeaderBackBtn(explicitView = null) {
       activeView === 'individuals' ||
       activeView === 'mock-exams' ||
       activeView === 'exam-practice' ||
+      activeView === 'exam-trainer' ||
       activeView === 'reading' ||
       activeView === 'guided-reading' ||
       activeView === 'interactive' ||
@@ -512,10 +523,20 @@ window.handleHeaderBackClick = function () {
     window.currentUnitId ||
     (appStore && appStore.state && appStore.state.selectedUnitId);
 
-  const isInsideActiveLesson =
+    const isInsideActiveLesson =
     activeView === 'lessons' &&
     typeof window.currentLessonIndex === 'number' &&
     window.currentLessonIndex >= 0;
+
+  if (
+    isInsideActiveLesson &&
+    activeUnit &&
+    typeof sessionStorage !== 'undefined' &&
+    !window._suppressLessonAutoScrollTop
+  ) {
+    // Save reading scroll slot helper on window
+    window.__hhActiveLessonKey = `${activeUnit}__${window.currentLessonIndex}`;
+  }
 
   if (isInsideActiveLesson && activeUnit) {
     if (
@@ -538,6 +559,7 @@ window.handleHeaderBackClick = function () {
       activeView === 'individuals' ||
       activeView === 'mock-exams' ||
       activeView === 'exam-practice' ||
+      activeView === 'exam-trainer' ||
       activeView === 'reading' ||
       activeView === 'guided-reading' ||
       activeView === 'interactive' ||
@@ -1216,6 +1238,14 @@ export async function switchView(viewName, param = null, skipHistory = false, op
     param = param || state.selectedUnitId || window.currentUnitId || 'great_war_part2';
   } else if (rawView === 'trend-radar' || rawView === 'matrix' || rawView === 'exam-matrix') {
     viewName = 'mock-exams';
+  } else if (
+    rawView === 'exam' ||
+    rawView === 'exam-trainer' ||
+    rawView === 'exam_trainer' ||
+    rawView === 'mobile-exam'
+  ) {
+    viewName = 'exam-trainer';
+    param = param || state.selectedUnitId || window.currentUnitId || 'cme_new';
   } else if (rawView === 'department' || rawView === 'department_portal' || rawView === 'portal') {
     viewName = 'department-portal';
   } else if (rawView === 'curriculum_map' || rawView === 'curriculum') {
@@ -1284,9 +1314,33 @@ export async function switchView(viewName, param = null, skipHistory = false, op
     }
   }
 
-  // Stop active speech playback on view transition
+  // Route Mobile Pupil Exam Practice strictly to Zero-PDF Mobile Exam Trainer
+  const isMobilePupilSession =
+    typeof document !== 'undefined' &&
+    document.body &&
+    document.body.classList.contains('hh-mobile-pupil-mode') &&
+    !isStaffModeActive();
+  if (
+    (viewName === 'mock-exams' || viewName === 'exam-practice') &&
+    isMobilePupilSession &&
+    !options?.forceDesktopMocks
+  ) {
+    viewName = 'exam-trainer';
+    param = param || state.selectedUnitId || window.currentUnitId || 'cme_new';
+  }
+
+  // Stop active speech playback & close any stuck full-screen diagnostic overlay on view transition
   if (typeof window !== 'undefined' && typeof window.cancelSpeech === 'function') {
     window.cancelSpeech();
+  }
+  if (typeof window !== 'undefined' && typeof window.closeDiagnosticModal === 'function') {
+    const diagEl = typeof document !== 'undefined' && document.getElementById('diagnostic-benchmark-modal');
+    if (diagEl && diagEl.style.display !== 'none') {
+      window.closeDiagnosticModal(true);
+    }
+  }
+  if (typeof document !== 'undefined' && document.body && viewName !== 'arcade') {
+    document.body.classList.remove('hh-arcade-playing');
   }
 
   // Capture outgoing view/unit/lesson context before mutating scroll or state
@@ -1328,11 +1382,30 @@ export async function switchView(viewName, param = null, skipHistory = false, op
     viewName === 'individuals' ||
     viewName === 'mock-exams' ||
     viewName === 'exam-practice' ||
+    viewName === 'exam-trainer' ||
     viewName === 'reading' ||
     viewName === 'guided-reading' ||
     viewName === 'interactive' ||
     viewName === 'arcade' ||
     viewName === 'marking';
+
+  // Persist per-lesson reading scroll position when switching tabs from an active lesson
+  if (
+    typeof window !== 'undefined' &&
+    previousView === 'lessons' &&
+    typeof window.currentLessonIndex === 'number' &&
+    window.currentLessonIndex >= 0 &&
+    previousUnit &&
+    isUnitToolTarget
+  ) {
+    try {
+      const yNow = window.scrollY || document.documentElement.scrollTop || 0;
+      sessionStorage.setItem(
+        `hh_lesson_scroll_${previousUnit}_${window.currentLessonIndex}`,
+        String(Math.max(0, Math.round(yNow))),
+      );
+    } catch (e) {}
+  }
 
   if (
     !skipHistory &&
@@ -1382,6 +1455,9 @@ export async function switchView(viewName, param = null, skipHistory = false, op
   // Update state; the subscriber will handle UI changes
   if (typeof window !== 'undefined') {
     window.currentView = viewName;
+  }
+  if (typeof document !== 'undefined' && document.body) {
+    document.body.setAttribute('data-active-view', viewName);
   }
   syncKs2PortalState(param || state.selectedUnitId, state.activeUnitData, viewName);
   syncDynamicSeoMetadata(viewName, param || state.selectedUnitId);
@@ -1586,9 +1662,25 @@ export async function switchView(viewName, param = null, skipHistory = false, op
     const { renderArcadeView } = await import('./arcade_zone.js');
     renderArcadeView({ ...(options || {}), unitId: targetUnit });
   } else if (viewName === 'interactive' || viewName === 'quiz') {
-    const targetUnit = param || state.selectedUnitId || window.currentUnitId || 'great_war_part2';
+    const targetUnit = param || state.selectedUnitId || window.currentUnitId || 'edexcel_medicine';
     await loadUnit(targetUnit);
-    renderInteractiveQuiz();
+    if (
+      typeof document !== 'undefined' &&
+      document.body &&
+      document.body.classList.contains('hh-mobile-pupil-mode') &&
+      !isStaffModeActive() &&
+      !options?.forceDesktopQuiz
+    ) {
+      const { renderMobileQuizArena } = await import('./mobile_quiz_arena.js');
+      await renderMobileQuizArena(targetUnit, options || {});
+    } else {
+      renderInteractiveQuiz();
+    }
+  } else if (viewName === 'exam-trainer') {
+    const targetUnit = param || state.selectedUnitId || window.currentUnitId || 'cme_new';
+    await loadUnit(targetUnit);
+    const { renderMobileExamTrainer } = await import('./mobile_exam_trainer.js');
+    await renderMobileExamTrainer(targetUnit, options || {});
   } else if (viewName === 'timeline') {
     const targetUnit = param || state.selectedUnitId || window.currentUnitId || 'cme_new';
     await loadUnit(targetUnit);

@@ -501,6 +501,30 @@ export function buildKeywordSearchIndex(db) {
           }
         });
       }
+
+      // Index Edexcel GCSE Exam Questions (lesson.exam_practice)
+      if (Array.isArray(l.exam_practice)) {
+        l.exam_practice.forEach((eq, eqIdx) => {
+          const qPrompt = String(eq.question || eq.prompt || '').trim();
+          if (!qPrompt) return;
+          const marks = eq.marks ? `${eq.marks} Marks` : 'Exam Question';
+          index.push({
+            type: 'exam',
+            term: qPrompt,
+            title: qPrompt,
+            subtitle: `${marks} • ${lessonTitle}`,
+            definition: `${marks} GCSE Exam Question & Grade 9 Model Answer in ${lessonTitle}`,
+            marks: eq.marks || '',
+            examQIndex: eqIdx,
+            unitId,
+            unitTitle,
+            stageBadge,
+            lessonIndex: idx,
+            lessonTitle,
+            enquiry,
+          });
+        });
+      }
     });
   }
 
@@ -771,9 +795,20 @@ export function searchCurriculum(
 
   const scored = [];
 
+  const isMobilePupilSearch =
+    typeof document !== 'undefined' &&
+    document.body &&
+    document.body.classList.contains('hh-mobile-pupil-mode') &&
+    !isStaffModeActive();
+
   for (const item of index) {
     if (item.staffOnly && !isStaffModeActive()) continue;
+    // Hide printable PDF booklet downloads from mobile pupil search
+    if (isMobilePupilSearch && item.type === 'resource' && item.resourceKind === 'booklet') {
+      continue;
+    }
     // Entity type filter
+    if (filter === 'exam' && item.type !== 'exam') continue;
     if (filter === 'resource' && item.type !== 'resource') continue;
     if (filter === 'figure' && item.type !== 'figure') continue;
     if (filter === 'vocab' && item.type !== 'vocab') continue;
@@ -904,7 +939,10 @@ function ensureModalDOM() {
           <button type="button" class="search-filter-chip active" data-filter="all">
             <i class="fa-solid fa-layer-group"></i> All Results <span class="search-filter-count" id="count-all"></span>
           </button>
-          <button type="button" class="search-filter-chip" data-filter="resource">
+          <button type="button" class="search-filter-chip" data-filter="exam">
+            <i class="fa-solid fa-bullseye"></i> Exam Qs <span class="search-filter-count" id="count-exam"></span>
+          </button>
+          <button type="button" class="search-filter-chip lp-lbl-desktop" data-filter="resource">
             <i class="fa-solid fa-file-pdf"></i> PDFs &amp; Infographics <span class="search-filter-count" id="count-resource"></span>
           </button>
           <button type="button" class="search-filter-chip" data-filter="lesson">
@@ -1139,6 +1177,10 @@ function renderSearchResults(query = '') {
   if (results.length === 0) {
     currentResults = [];
     selectedResultIndex = -1;
+    const canExpandAll =
+      typeof window !== 'undefined' &&
+      !window.__isFullDbHydrated &&
+      typeof window.ensureFullDatabaseLoaded === 'function';
     container.innerHTML = `
       <div class="search-empty-state">
         <div class="search-empty-icon">
@@ -1146,8 +1188,13 @@ function renderSearchResults(query = '') {
         </div>
         <div class="search-empty-title">No matches found for "${escapeHtml(trimmed)}"</div>
         <div class="search-empty-hint">
-          Try searching for historical figures like <strong>John Snow</strong>, <strong>Bazalgette</strong>, <strong>Martin Luther</strong>, or terms like <strong>miasma</strong>, <strong>reparations</strong>, or <strong>Broad Street</strong>.
+          Try searching for topics or figures like <strong>Suez</strong>, <strong>John Snow</strong>, <strong>Berlin</strong>, or <strong>Reparations</strong>.
         </div>
+        ${
+          canExpandAll
+            ? `<button type="button" onclick="window.hhExpandSearchAllCourses && window.hhExpandSearchAllCourses(this)" style="margin-top:12px;padding:9px 16px;border-radius:999px;border:1.5px solid #3b82f6;background:#eff6ff;color:#1d4ed8;font-weight:800;font-size:0.82rem;cursor:pointer;display:inline-flex;align-items:center;gap:6px;"><i class="fa-solid fa-earth-europe"></i> <span>Search all 26 courses</span></button>`
+            : ''
+        }
       </div>
     `;
     return;
@@ -1157,6 +1204,7 @@ function renderSearchResults(query = '') {
 
   if (activeFilter === 'all') {
     // Group items by category if viewing 'all'
+    const examItems = results.filter((r) => r.type === 'exam');
     const resourceItems = results.filter((r) => r.type === 'resource');
     const lessonItems = results.filter((r) => r.type === 'lesson');
     const figureItems = results.filter((r) => r.type === 'figure');
@@ -1166,17 +1214,33 @@ function renderSearchResults(query = '') {
 
     // Align currentResults strictly with the rendered DOM order so keyboard selection is 100% faithful
     const orderedDisplay = [
-      ...resourceItems,
+      ...examItems,
       ...lessonItems,
       ...figureItems,
       ...vocabItems,
       ...sourceItems,
       ...timelineItems,
+      ...resourceItems,
     ];
     currentResults = orderedDisplay;
     selectedResultIndex = orderedDisplay.length > 0 ? 0 : -1;
 
-    // 0. PDFs, Booklets & Infographics
+    // 0a. GCSE Exam Questions & Model Answers
+    if (examItems.length > 0) {
+      html += `
+        <div class="search-results-group">
+          <div class="search-group-header">
+            <span><i class="fa-solid fa-bullseye"></i> GCSE Exam Questions &amp; Model Answers</span>
+            <span class="search-group-count">${examItems.length} match${examItems.length > 1 ? 'es' : ''}</span>
+          </div>
+          <div class="search-group-list">
+            ${examItems.map((item) => renderResultItemHTML(item, orderedDisplay.indexOf(item), trimmed)).join('')}
+          </div>
+        </div>
+      `;
+    }
+
+    // 0b. PDFs, Booklets & Infographics
     if (resourceItems.length > 0) {
       html += `
         <div class="search-results-group">
@@ -1291,7 +1355,7 @@ function renderSearchResults(query = '') {
  */
 function updateFilterCounts(query) {
   if (!query) {
-    ['all', 'resource', 'figure', 'vocab', 'source', 'lesson', 'timeline'].forEach((f) => {
+    ['all', 'exam', 'resource', 'figure', 'vocab', 'source', 'lesson', 'timeline'].forEach((f) => {
       const el = document.getElementById(`count-${f}`);
       if (el) el.textContent = '';
     });
@@ -1305,6 +1369,7 @@ function updateFilterCounts(query) {
   };
 
   setEl('count-all', all.length);
+  setEl('count-exam', all.filter((r) => r.type === 'exam').length);
   setEl('count-resource', all.filter((r) => r.type === 'resource').length);
   setEl('count-figure', all.filter((r) => r.type === 'figure').length);
   setEl('count-vocab', all.filter((r) => r.type === 'vocab').length);
@@ -1317,6 +1382,7 @@ function updateFilterCounts(query) {
  * Generates the HTML for an individual search result card.
  */
 function renderResultItemHTML(item, globalIndex, query) {
+  const isExam = item.type === 'exam';
   const isResource = item.type === 'resource';
   const isFigure = item.type === 'figure';
   const isVocab = item.type === 'vocab';
@@ -1338,7 +1404,10 @@ function renderResultItemHTML(item, globalIndex, query) {
   let typeClass = 'is-lesson';
   let iconHtml = '<i class="fa-solid fa-graduation-cap"></i>';
 
-  if (isResource) {
+  if (isExam) {
+    typeClass = 'is-vocab';
+    iconHtml = '<i class="fa-solid fa-bullseye"></i>';
+  } else if (isResource) {
     typeClass = 'is-source';
     iconHtml =
       item.resourceKind === 'infographic'
@@ -1366,19 +1435,21 @@ function renderResultItemHTML(item, globalIndex, query) {
     iconHtml = '<i class="fa-solid fa-timeline"></i>';
   }
 
-  const actionText = isResource
-    ? item.resourceKind === 'infographic'
-      ? 'Open Infographic'
-      : 'Open PDF / Booklet'
-    : isFigure
-      ? 'View Historical Figure'
-      : isSource
-        ? 'View Historical Source'
-        : isTimeline
-          ? 'View Milestone'
-          : isVocab
-            ? 'Jump to Definition'
-            : 'Open Enquiry Lesson';
+  const actionText = isExam
+    ? 'Practise Exam Q'
+    : isResource
+      ? item.resourceKind === 'infographic'
+        ? 'Open Infographic'
+        : 'Open PDF / Booklet'
+      : isFigure
+        ? 'View Historical Figure'
+        : isSource
+          ? 'View Historical Source'
+          : isTimeline
+            ? 'View Milestone'
+            : isVocab
+              ? 'Jump to Definition'
+              : 'Open Enquiry Lesson';
 
   // Quick Fact content for in-modal preview
   const previewText = isSource
@@ -1518,6 +1589,16 @@ export function selectResult(item) {
   }
 
   const highlightTerm = item.term || item.title || '';
+
+  if (item.type === 'exam') {
+    if (typeof window.switchView === 'function') {
+      window.switchView('exam-trainer', item.unitId, false, {
+        lessonIndex: item.lessonIndex ?? 0,
+        questionNum: (item.examQIndex ?? 0) + 1,
+      });
+    }
+    return;
+  }
 
   if (item.type === 'resource') {
     if (item.resourceKind === 'infographic' && item.infographicId && typeof window.openInfographicModal === 'function') {
@@ -1680,18 +1761,44 @@ export function openKeywordSearch(initialQuery = '') {
   }
   renderSearchResults(input.value);
 
-  // If opened before idle background hydration finished, hydrate full DB immediately & re-render
-  if (
-    typeof window !== 'undefined' &&
-    !window.__isFullDbHydrated &&
-    typeof window.ensureFullDatabaseLoaded === 'function'
-  ) {
-    window.ensureFullDatabaseLoaded().then((fullDb) => {
-      searchIndex = buildKeywordSearchIndex(fullDb);
-      if (modal.style.display === 'flex') {
-        renderSearchResults(input.value);
+  // On mobile pupil mode, hydrate Pinned Courses + Active Unit first (~90% less 4G data than 20.7 MB full DB!)
+  if (typeof window !== 'undefined' && !window.__isFullDbHydrated) {
+    const isMobPupil =
+      window.innerWidth < 933 &&
+      document.body?.classList?.contains('hh-mobile-pupil-mode') &&
+      !isStaffModeActive();
+    if (isMobPupil) {
+      let pinnedIds = [];
+      try {
+        pinnedIds = JSON.parse(localStorage.getItem('hh_pinned_units') || '[]');
+      } catch (e) {}
+      const actUnit = getActiveUnitId();
+      const targetUnits = [...new Set([...(Array.isArray(pinnedIds) ? pinnedIds : []), actUnit].filter(Boolean))];
+      if (targetUnits.length > 0) {
+        import('./storage.js').then(async ({ ensureUnitLoaded }) => {
+          await Promise.allSettled(targetUnits.map((uId) => ensureUnitLoaded(uId)));
+          const partialDb = (window.state && window.state.db) || window.db || {};
+          searchIndex = buildKeywordSearchIndex(partialDb);
+          if (modal.style.display === 'flex') {
+            renderSearchResults(input.value);
+          }
+        });
+      } else if (typeof window.ensureFullDatabaseLoaded === 'function') {
+        window.ensureFullDatabaseLoaded().then((fullDb) => {
+          searchIndex = buildKeywordSearchIndex(fullDb);
+          if (modal.style.display === 'flex') {
+            renderSearchResults(input.value);
+          }
+        });
       }
-    });
+    } else if (typeof window.ensureFullDatabaseLoaded === 'function') {
+      window.ensureFullDatabaseLoaded().then((fullDb) => {
+        searchIndex = buildKeywordSearchIndex(fullDb);
+        if (modal.style.display === 'flex') {
+          renderSearchResults(input.value);
+        }
+      });
+    }
   }
 
   setTimeout(() => {
@@ -1768,4 +1875,15 @@ export function initKeywordSearch(db = null, { deferIndex = false } = {}) {
   window.openKeywordSearch = openKeywordSearch;
   window.closeKeywordSearch = closeKeywordSearch;
   window.searchCurriculum = searchCurriculum;
+  window.hhExpandSearchAllCourses = async (btnEl) => {
+    if (typeof window.ensureFullDatabaseLoaded !== 'function') return;
+    if (btnEl) {
+      btnEl.disabled = true;
+      btnEl.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> <span>Loading all 26 courses...</span>';
+    }
+    const fullDb = await window.ensureFullDatabaseLoaded();
+    searchIndex = buildKeywordSearchIndex(fullDb);
+    const input = document.getElementById('keyword-search-input');
+    renderSearchResults(input ? input.value : '');
+  };
 }

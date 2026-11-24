@@ -691,7 +691,9 @@
 
 @media (max-width: 860px) {
   .tlb-command-col {
-    position: static;
+    position: sticky;
+    top: 52px;
+    z-index: 15;
   }
 }
 
@@ -973,14 +975,16 @@
 
 .cw-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 10px;
   margin-bottom: 16px;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 480px) {
   .cw-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 6px;
+    margin-bottom: 12px;
   }
 }
 
@@ -1403,14 +1407,8 @@
 .fof-btn-row {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 14px;
-  margin-top: 22px;
-}
-
-@media (max-width: 520px) {
-  .fof-btn-row {
-    grid-template-columns: 1fr;
-  }
+  gap: 12px;
+  margin-top: 0;
 }
 
 .fof-judge-btn {
@@ -1590,3 +1588,922 @@
   }
 }
 
+
+/* ==========================================================================
+   Cold 4G Hydration Skeleton, Mobile Course Switcher & 44px Mobile Game Bar
+   ========================================================================== */
+@keyframes arcadeSkelShimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+.arcade-hydration-skeleton {
+  background: #0f172a;
+  border: 1.5px solid #334155;
+  border-radius: 16px;
+  padding: 20px;
+}
+
+.arcade-skel-header {
+  height: 64px;
+  border-radius: 12px;
+  margin-bottom: 16px;
+  background: linear-gradient(90deg, #1e293b 25%, #334155 50%, #1e293b 75%);
+  background-size: 200% 100%;
+  animation: arcadeSkelShimmer 1.4s infinite linear;
+}
+
+.arcade-skel-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 14px;
+}
+
+.arcade-skel-card {
+  height: 132px;
+  border-radius: 14px;
+  background: linear-gradient(90deg, #162033 25%, #27354d 50%, #162033 75%);
+  background-size: 200% 100%;
+  animation: arcadeSkelShimmer 1.4s infinite linear;
+}
+
+.arcade-skel-label {
+  margin-top: 16px;
+  text-align: center;
+  font-size: 0.86rem;
+  font-weight: 700;
+  color: #94a3b8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+/* Desktop (>= 933px): Keep Mobile Game Bar & Mobile Course Row hidden so Hero + Switcher stay untouched */
+.arcade-mobile-gamebar,
+.arcade-mobile-course-row {
+  display: none;
+}
+
+@media (max-width: 932.98px) {
+  body.hh-arcade-playing #hh-mobile-unit-strip {
+    display: none !important;
+  }
+
+  .arcade-shell {
+    padding: 6px 10px 28px 10px;
+  }
+
+  .arcade-shell.is-game-active {
+    padding: 4px 8px 10px 8px;
+  }
+
+  /* Hide giant Topbar + multi-row Switcher Strip during active mobile gameplay */
+  .arcade-shell.is-game-active .arcade-topbar,
+  .arcade-shell.is-game-active .arcade-switcher-strip,
+  body.hh-arcade-playing .arcade-topbar,
+  body.hh-arcade-playing .arcade-switcher-strip {
+    display: none !important;
+  }
+
+  /* Sleek 44px Single-Row Mobile Game Bar ([← Games] [Game Title] [Scope ▾] [🔊]) */
+  .arcade-shell.is-game-active .arcade-mobile-gamebar {
+    display: flex !important;
+    align-items: center;
+    gap: 6px;
+    height: 44px;
+    min-height: 44px;
+    max-height: 44px;
+    padding: 0 8px;
+    margin-bottom: 6px;
+    background: #0f172a;
+    border: 1px solid #334155;
+    border-radius: 11px;
+    box-sizing: border-box;
+  }
+
+  .arcade-mgb-back {
+    background: #1e293b;
+    color: #e2e8f0;
+    border: 1px solid #475569;
+    border-radius: 8px;
+    height: 32px;
+    padding: 0 9px;
+    font-size: 0.76rem;
+    font-weight: 800;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    flex-shrink: 0;
+    touch-action: manipulation;
+  }
+
+  .arcade-mgb-title {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.84rem;
+    font-weight: 800;
+    color: #f8fafc;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  .arcade-mgb-title-text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .arcade-mgb-scope {
+    background: #0b1120;
+    color: #f8fafc;
+    border: 1px solid #475569;
+    border-radius: 8px;
+    height: 32px;
+    max-width: 118px;
+    padding: 0 6px;
+    font-size: 16px !important;
+    font-weight: 700;
+    flex-shrink: 0;
+  }
+
+  .arcade-mgb-sfx {
+    width: 34px;
+    height: 32px;
+    border-radius: 8px;
+    background: #1e293b;
+    border: 1px solid #475569;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.86rem;
+    cursor: pointer;
+    flex-shrink: 0;
+    touch-action: manipulation;
+  }
+
+  /* Mobile Lobby Course Switcher (< 933px) */
+  .arcade-mobile-course-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    padding-top: 8px;
+    border-top: 1px solid rgba(148, 163, 184, 0.16);
+  }
+
+  .arcade-mobile-course-lbl {
+    font-size: 0.76rem;
+    font-weight: 800;
+    color: #fde047;
+    white-space: nowrap;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .arcade-course-select {
+    flex: 1;
+    min-width: 0;
+    background: #0b1120;
+    color: #f8fafc;
+    border: 1.5px solid #475569;
+    border-radius: 9px;
+    padding: 7px 10px;
+    font-size: 16px !important;
+    font-weight: 700;
+  }
+
+  .arcade-stage-panel {
+    padding: 10px;
+    border-radius: 14px;
+  }
+
+  .tlb-hud {
+    padding: 6px 10px;
+    gap: 6px 10px;
+    margin-bottom: 8px;
+    border-radius: 10px;
+  }
+
+  .tlb-stat span {
+    font-size: 0.6rem;
+  }
+
+  .tlb-stat strong {
+    font-size: 0.92rem;
+  }
+}
+
+/* ==========================================================================
+   Touch & Zero-Jump (100dvh) Enhancements for All 7 Core Games
+   ========================================================================== */
+
+/* 1. Keyword Stack (Tetris) Mobile Single-Screen Fit */
+#akt-canvas {
+  touch-action: manipulation;
+  cursor: pointer;
+}
+
+@media (max-width: 767.98px) {
+  .akt-clue-banner {
+    padding: 7px 10px;
+    margin-bottom: 6px;
+    border-radius: 10px;
+  }
+
+  .akt-clue-top {
+    margin-bottom: 3px;
+    gap: 6px;
+  }
+
+  .akt-clue-badge {
+    font-size: 0.64rem;
+    padding: 2px 7px;
+  }
+
+  .akt-clue-topic {
+    font-size: 0.68rem;
+  }
+
+  .akt-clue-text {
+    font-size: 0.83rem;
+    line-height: 1.32;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .akt-cabinet {
+    padding: 7px;
+    border-radius: 12px;
+  }
+
+  .akt-hud-row {
+    padding: 5px 4px;
+    margin-bottom: 6px;
+    gap: 4px;
+  }
+
+  .akt-hud-lbl {
+    font-size: 0.58rem;
+  }
+
+  .akt-hud-val {
+    font-size: 0.88rem;
+  }
+
+  #akt-canvas {
+    width: 100%;
+    max-height: clamp(200px, 36dvh, 340px);
+  }
+
+  .akt-overlay {
+    padding: 10px;
+    overflow-y: auto;
+  }
+
+  .akt-overlay-card h3 {
+    font-size: 1.12rem;
+    margin-bottom: 4px;
+  }
+
+  .akt-overlay-card p {
+    font-size: 0.76rem;
+    line-height: 1.35;
+    margin-bottom: 8px;
+  }
+
+  .akt-key-hints,
+  .akt-ctrl-txt,
+  .akt-rules-box {
+    display: none !important;
+  }
+
+  .akt-controls-bar {
+    grid-template-columns: 1fr 1.35fr auto 1fr;
+    gap: 6px;
+    margin-top: 6px;
+  }
+
+  .akt-ctrl-btn {
+    height: 46px;
+    min-height: 46px;
+    padding: 0 10px;
+    font-size: 0.88rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    touch-action: manipulation;
+  }
+
+  .akt-side-panel {
+    margin-top: -6px;
+    gap: 6px;
+  }
+
+  .akt-side-box {
+    padding: 8px 10px;
+  }
+
+  .akt-side-box h4 {
+    display: none;
+  }
+
+  .akt-feedback-box {
+    padding: 6px 9px;
+    font-size: 0.76rem;
+    line-height: 1.3;
+  }
+}
+
+/* 2. Timeline Blitz Sticky Mobile Mystery Card */
+@media (max-width: 860px) {
+  .tlb-command-col {
+    position: sticky;
+    top: 52px;
+    z-index: 15;
+  }
+
+  .tlb-deal-card {
+    padding: 12px 14px;
+    border-radius: 13px;
+    background: #0b1120;
+    box-shadow: 0 10px 24px rgba(5, 8, 17, 0.9);
+  }
+
+  .tlb-deal-title {
+    font-size: 1.04rem;
+    margin-bottom: 6px;
+  }
+
+  .tlb-deal-detail {
+    font-size: 0.82rem;
+    line-height: 1.38;
+    padding: 7px 10px;
+  }
+
+  .tlb-deal-footer {
+    display: none;
+  }
+
+  .tlb-slot-btn {
+    width: 100%;
+    min-height: 40px;
+    justify-content: center;
+    touch-action: manipulation;
+  }
+}
+
+/* 3. Connections Wall 4x4 Mobile Grid & Sticky Thumb Bar */
+.cw-toast {
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cw-tile {
+  hyphens: none;
+  -webkit-hyphens: none;
+  touch-action: manipulation;
+}
+
+.cw-tile > span {
+  display: block;
+  width: 100%;
+  hyphens: none;
+  -webkit-hyphens: none;
+  text-wrap: balance;
+  overflow-wrap: break-word;
+}
+
+@media (max-width: 480px) {
+  .cw-tile {
+    min-height: 54px;
+    padding: 6px 4px;
+    border-radius: 9px;
+    border-width: 1.5px;
+    font-size: clamp(0.68rem, 2.9vw, 0.8rem);
+    line-height: 1.2;
+    hyphens: none;
+    -webkit-hyphens: none;
+  }
+
+  .cw-solved-banner {
+    padding: 8px 10px;
+  }
+
+  .cw-solved-title {
+    font-size: 0.8rem;
+  }
+
+  .cw-solved-items {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .cw-actions {
+    position: sticky;
+    bottom: calc(6px + env(safe-area-inset-bottom, 0px));
+    z-index: 14;
+    background: rgba(11, 17, 32, 0.96);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 1px solid #334155;
+    border-radius: 12px;
+    padding: 6px;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 5px;
+  }
+
+  .cw-actions .arcade-btn-ghost,
+  .cw-actions .arcade-btn-primary {
+    min-height: 42px;
+    padding: 6px 9px;
+    font-size: 0.76rem;
+    touch-action: manipulation;
+    white-space: nowrap;
+  }
+
+  .cw-actions #cw-submit-btn {
+    flex: 1;
+  }
+}
+
+/* 4. Redacted! 3-Row QWERTY Thumb Keyboard & 1-Screen Dossier */
+.red-qwerty-keyboard {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  max-width: 580px;
+  margin: 0 auto;
+}
+
+.red-qwerty-row {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.red-key {
+  flex: 1 1 0;
+  max-width: 48px;
+  min-width: 0;
+  width: auto;
+  min-height: 42px;
+  height: 42px;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  touch-action: manipulation;
+  user-select: none;
+}
+
+@media (max-width: 768px) {
+  .red-dossier-card {
+    padding: 12px 10px;
+    border-radius: 13px;
+  }
+
+  .red-stamp-row {
+    margin-bottom: 6px;
+  }
+
+  .red-stamp {
+    font-size: 0.65rem;
+    padding: 2px 7px;
+  }
+
+  .red-clue-main {
+    font-size: 0.86rem;
+    line-height: 1.38;
+    padding: 8px 10px;
+    margin-bottom: 8px;
+  }
+
+  .red-words-row {
+    gap: 8px;
+    margin: 10px 0;
+  }
+
+  .red-word-group {
+    gap: 4px;
+  }
+
+  .red-char-box {
+    width: 26px;
+    height: 34px;
+    font-size: 1rem;
+  }
+
+  .red-lifelines {
+    gap: 6px;
+    margin-bottom: 10px;
+  }
+
+  .red-lifelines .arcade-btn-ghost {
+    padding: 6px 9px;
+    font-size: 0.74rem;
+    min-height: 36px;
+  }
+
+  .red-qwerty-keyboard {
+    gap: 5px;
+  }
+
+  .red-qwerty-row {
+    gap: 4px;
+  }
+
+  .red-qwerty-row.row-mid {
+    padding: 0 4%;
+  }
+
+  .red-qwerty-row.row-bot {
+    padding: 0 12%;
+  }
+
+  .red-key {
+    min-height: 42px;
+    height: 42px;
+    font-size: 0.88rem;
+    border-radius: 7px;
+  }
+}
+
+/* 5. 60s Boss Sprint Zero-Jump 100dvh Layout */
+.bsp-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.bsp-feedback-slot {
+  min-height: 42px;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.bsp-feedback-slot .tlb-banner {
+  width: 100%;
+  margin-bottom: 0;
+  padding: 8px 12px;
+  font-size: 0.82rem;
+  line-height: 1.3;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.bsp-feedback-idle {
+  width: 100%;
+  background: rgba(15, 23, 42, 0.7);
+  border: 1px dashed #334155;
+  border-radius: 10px;
+  padding: 8px 12px;
+  font-size: 0.78rem;
+  color: #94a3b8;
+  text-align: center;
+}
+
+.bsp-card {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.bsp-question-slot {
+  min-height: 88px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+
+.bsp-question {
+  margin: 0;
+}
+
+.bsp-options {
+  margin-top: auto;
+}
+
+.bsp-opt-btn {
+  min-height: 50px;
+  touch-action: manipulation;
+}
+
+@media (max-width: 767.98px) {
+  .bsp-wrap {
+    min-height: calc(100dvh - 122px);
+  }
+
+  .bsp-card {
+    padding: 14px 12px;
+  }
+
+  .bsp-question-slot {
+    min-height: 92px;
+    margin-bottom: 10px;
+  }
+
+  .bsp-question {
+    font-size: 1.02rem;
+    line-height: 1.38;
+  }
+
+  .bsp-opt-btn {
+    min-height: 52px;
+    padding: 10px 12px;
+    font-size: 0.88rem;
+  }
+}
+
+/* 6. Archive Detective Locked Frame, 1-Row Clue Strip & Pinned Options */
+.det-viewport {
+  cursor: zoom-in;
+}
+
+.det-tap-zoom-pill {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: rgba(15, 23, 42, 0.85);
+  border: 1px solid #475569;
+  color: #e2e8f0;
+  font-size: 0.68rem;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 999px;
+  pointer-events: none;
+}
+
+.det-clue-strip {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 8px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.det-clue-strip::-webkit-scrollbar {
+  display: none;
+}
+
+.det-clue-chip {
+  flex: 1 1 0;
+  min-height: 36px;
+  background: #1e293b;
+  border: 1px solid #475569;
+  color: #e2e8f0;
+  border-radius: 8px;
+  padding: 5px 8px;
+  font-size: 0.74rem;
+  font-weight: 700;
+  cursor: pointer;
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  touch-action: manipulation;
+}
+
+.det-clue-chip:disabled {
+  opacity: 0.45;
+  cursor: default;
+}
+
+.det-clue-readout {
+  margin-top: 6px;
+  min-height: 44px;
+  max-height: 48px;
+  background: #111827;
+  border-left: 3px solid #38bdf8;
+  border-radius: 7px;
+  padding: 6px 10px;
+  font-size: 0.77rem;
+  line-height: 1.32;
+  color: #cbd5e1;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.det-clue-readout.revealed {
+  border-left-color: #10b981;
+}
+
+.det-choices-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.det-opts-list {
+  margin-top: auto;
+}
+
+.det-footer-slot {
+  min-height: 48px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 767.98px) {
+  .det-grid {
+    gap: 10px;
+  }
+
+  .det-viewport {
+    height: 180px;
+    aspect-ratio: 16 / 10;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .det-img {
+    object-fit: contain !important;
+  }
+
+  .det-prompt-tag {
+    display: none;
+  }
+
+  .det-prompt-h {
+    font-size: 0.9rem;
+    margin: 0 0 8px 0;
+  }
+
+  .det-opts-list {
+    gap: 7px;
+  }
+
+  .det-opts-list .bsp-opt-btn {
+    min-height: 46px;
+    padding: 8px 11px;
+    font-size: 0.84rem;
+  }
+}
+
+/* 7. Fact or Fallacy Zero-Jump & Touch Swipe Card */
+.fof-stage-box {
+  max-width: 720px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.fof-card {
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 175px;
+  padding: 18px 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  touch-action: pan-y;
+  user-select: none;
+  -webkit-user-select: none;
+  will-change: transform;
+}
+
+.fof-swipe-stamp {
+  position: absolute;
+  top: 12px;
+  padding: 4px 10px;
+  border-radius: 8px;
+  font-size: 0.78rem;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.1s ease;
+}
+
+.fof-swipe-stamp.left {
+  left: 12px;
+  border: 2px solid #ef4444;
+  background: rgba(239, 68, 68, 0.22);
+  color: #fca5a5;
+}
+
+.fof-swipe-stamp.right {
+  right: 12px;
+  border: 2px solid #10b981;
+  background: rgba(16, 185, 129, 0.22);
+  color: #6ee7b7;
+}
+
+.fof-explanation-slot {
+  min-height: 86px;
+  background: #0f172a;
+  border: 1px solid #1e293b;
+  border-radius: 12px;
+  padding: 10px 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.fof-explanation-slot.ok {
+  border-color: #10b981;
+  background: rgba(16, 185, 129, 0.1);
+}
+
+.fof-explanation-slot.err {
+  border-color: #ef4444;
+  background: rgba(239, 68, 68, 0.1);
+}
+
+.fof-explanation-slot strong {
+  display: block;
+  font-size: 0.95rem;
+  margin-bottom: 4px;
+}
+
+.fof-explanation-slot.ok strong { color: #6ee7b7; }
+.fof-explanation-slot.err strong { color: #fca5a5; }
+
+.fof-explanation-slot p {
+  margin: 0;
+  font-size: 0.84rem;
+  line-height: 1.4;
+  color: #cbd5e1;
+}
+
+.fof-swipe-hint-idle {
+  font-size: 0.8rem;
+  color: #94a3b8;
+  font-weight: 600;
+}
+
+.fof-action-dock {
+  margin-top: auto;
+  min-height: 54px;
+}
+
+.fof-judge-btn {
+  height: 54px;
+  min-height: 54px;
+  padding: 0 14px;
+  touch-action: manipulation;
+}
+
+.fof-next-dock-btn {
+  width: 100%;
+  height: 54px;
+  min-height: 54px;
+  font-size: 0.98rem;
+  touch-action: manipulation;
+}
+
+@media (max-width: 767.98px) {
+  .fof-stage-box {
+    min-height: calc(100dvh - 170px);
+  }
+
+  .fof-card {
+    min-height: 175px;
+    padding: 14px 14px;
+  }
+
+  .fof-statement p {
+    font-size: 1rem;
+    line-height: 1.45;
+  }
+}
+
+/* Landscape Compact Phone Mode (e.g. 896x414) */
+@media (max-height: 500px) and (orientation: landscape) {
+  #akt-canvas {
+    max-height: 54dvh;
+    width: auto;
+  }
+
+  .det-viewport {
+    height: 145px;
+  }
+
+  .bsp-wrap,
+  .fof-stage-box {
+    min-height: auto;
+  }
+}

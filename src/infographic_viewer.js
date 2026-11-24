@@ -51,10 +51,11 @@ function escapeCarouselAttr(str) {
 }
 
 function isNarrowPortraitInfographicViewport() {
+  if (typeof window === 'undefined') return false;
+  const shortestSide = Math.min(window.innerWidth, window.innerHeight);
   return (
-    typeof window !== 'undefined' &&
-    window.innerWidth < 768 &&
-    window.innerHeight > window.innerWidth
+    shortestSide < 520 ||
+    (window.innerWidth < 768 && window.innerHeight > window.innerWidth)
   );
 }
 
@@ -549,6 +550,34 @@ function renderMobileStoryCarouselSlide() {
     mobileCarouselState.userForcedFullSheet = true;
     renderCurrentItem();
   });
+
+  // Horizontal thumb-swipe gesture across Story Cards
+  const scrollEl = host.querySelector('.msc-card-scroll');
+  if (scrollEl) {
+    let swipeStartX = 0;
+    let swipeStartY = 0;
+    scrollEl.addEventListener(
+      'touchstart',
+      (ev) => {
+        if (!ev.touches || ev.touches.length !== 1) return;
+        swipeStartX = ev.touches[0].clientX;
+        swipeStartY = ev.touches[0].clientY;
+      },
+      { passive: true },
+    );
+    scrollEl.addEventListener(
+      'touchend',
+      (ev) => {
+        if (!ev.changedTouches || ev.changedTouches.length !== 1) return;
+        const dx = ev.changedTouches[0].clientX - swipeStartX;
+        const dy = ev.changedTouches[0].clientY - swipeStartY;
+        if (Math.abs(dx) > 48 && Math.abs(dx) > Math.abs(dy) * 1.35) {
+          stepMobileCarousel(dx < 0 ? 1 : -1);
+        }
+      },
+      { passive: true },
+    );
+  }
 }
 
 /**

@@ -20,10 +20,16 @@ class ArcadeAudioEngine {
     if (!this.enabled || typeof window === 'undefined') return null;
     if (!this.ctx) {
       const Ctx = window.AudioContext || window.webkitAudioContext;
-      if (Ctx) this.ctx = new Ctx();
+      if (Ctx) {
+        this.ctx = new Ctx();
+        window.__hhRegisterAudioCtx?.(this.ctx);
+      }
     }
-    if (this.ctx && this.ctx.state === 'suspended') {
-      this.ctx.resume().catch(() => {});
+    if (this.ctx) {
+      window.__hhRegisterAudioCtx?.(this.ctx);
+      if (this.ctx.state === 'suspended') {
+        this.ctx.resume().catch(() => {});
+      }
     }
     return this.ctx;
   }
@@ -128,8 +134,19 @@ export function getArcadePersonalBest(unitId, gameId, scope = 'all') {
   return store[key] || 0;
 }
 
+let lastArcadeXpTs = 0;
+
+export function awardArcadeRoundXp(unitId) {
+  if (typeof window === 'undefined') return;
+  const now = Date.now();
+  if (now - lastArcadeXpTs < 1200) return;
+  lastArcadeXpTs = now;
+  window.hhAwardXp?.({ amount: 25, source: 'arcade', unitId });
+}
+
 export function saveArcadePersonalBest(unitId, gameId, scope = 'all', score = 0) {
   const numeric = Math.max(0, Math.round(Number(score) || 0));
+  awardArcadeRoundXp(unitId);
   const store = readPbStore();
   const key = `${unitId || 'unit'}__${gameId}__${scope}`;
   const prev = store[key] || 0;

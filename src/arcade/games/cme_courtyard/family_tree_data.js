@@ -14,7 +14,11 @@ class CourtyardFoley {
     if (this.muted || typeof window === 'undefined') return null;
     const AudioCtx = window.AudioContext || window.webkitAudioContext;
     if (!AudioCtx) return null;
-    if (!this.ctx) this.ctx = new AudioCtx();
+    if (!this.ctx) {
+      this.ctx = new AudioCtx();
+      window.__hhRegisterAudioCtx?.(this.ctx);
+    }
+    window.__hhRegisterAudioCtx?.(this.ctx);
     if (this.ctx.state === 'suspended') {
       this.ctx.resume().catch(() => {});
     }

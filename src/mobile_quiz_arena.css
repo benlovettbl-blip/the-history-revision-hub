@@ -1,0 +1,956 @@
+/* ==========================================================================
+   The History Revision Hub — Mobile Quiz Arena (Zero-Jump CLS=0 UX)
+   Supports Light, Space Dark ([data-theme='space']), Dark ([data-theme='dark']), & SEN
+   ========================================================================== */
+
+.hh-mqa-root {
+  --mqa-bg-card: #ffffff;
+  --mqa-bg-subtle: #f8fafc;
+  --mqa-bg-pill: #f1f5f9;
+  --mqa-border: #cbd5e1;
+  --mqa-border-soft: #e2e8f0;
+  --mqa-text: #0f172a;
+  --mqa-text-sub: #475569;
+  --mqa-text-muted: #64748b;
+  --mqa-accent: #2563eb;
+  --mqa-accent-soft: #eff6ff;
+  --mqa-accent-border: #93c5fd;
+  --mqa-correct-bg: #ecfdf5;
+  --mqa-correct-border: #10b981;
+  --mqa-correct-text: #065f46;
+  --mqa-wrong-bg: #fef2f2;
+  --mqa-wrong-border: #ef4444;
+  --mqa-wrong-text: #991b1b;
+  --mqa-sheet-bg: rgba(255, 255, 255, 0.98);
+
+  width: 100%;
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 6px 10px 188px 10px;
+  box-sizing: border-box;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  color: var(--mqa-text);
+  overflow-x: clip;
+}
+
+[data-theme='space'] .hh-mqa-root,
+[data-theme='dark'] .hh-mqa-root {
+  --mqa-bg-card: #1e293b;
+  --mqa-bg-subtle: #0f172a;
+  --mqa-bg-pill: #0f172a;
+  --mqa-border: #334155;
+  --mqa-border-soft: #334155;
+  --mqa-text: #f8fafc;
+  --mqa-text-sub: #cbd5e1;
+  --mqa-text-muted: #94a3b8;
+  --mqa-accent: #3b82f6;
+  --mqa-accent-soft: rgba(59, 130, 246, 0.18);
+  --mqa-accent-border: #60a5fa;
+  --mqa-correct-bg: rgba(6, 95, 70, 0.34);
+  --mqa-correct-border: #10b981;
+  --mqa-correct-text: #a7f3d0;
+  --mqa-wrong-bg: rgba(127, 29, 29, 0.38);
+  --mqa-wrong-border: #ef4444;
+  --mqa-wrong-text: #fecaca;
+  --mqa-sheet-bg: rgba(15, 23, 42, 0.98);
+}
+
+body.sen-mode .hh-mqa-root {
+  --mqa-bg-card: #fdf6e3;
+  --mqa-bg-subtle: #f5eedc;
+  --mqa-bg-pill: #eee6d1;
+  --mqa-border: #d6cbb5;
+  --mqa-border-soft: #dfd5c0;
+}
+
+.hh-mqa-root *,
+.hh-mqa-root *::before,
+.hh-mqa-root *::after {
+  box-sizing: border-box;
+}
+
+.hh-mqa-root button,
+.hh-mqa-root select {
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* 1. Top Compact Control Bar (Course + Pin + Lesson Scope) */
+.hh-mqa-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 8px;
+}
+
+.hh-mqa-course-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  min-width: 0;
+}
+
+.hh-mqa-select {
+  flex: 1;
+  min-width: 0;
+  width: 100%;
+  min-height: 42px;
+  padding: 7px 30px 7px 10px;
+  font-size: 16px !important;
+  font-family: inherit;
+  font-weight: 700;
+  color: var(--mqa-text);
+  background-color: var(--mqa-bg-card);
+  border: 1.5px solid var(--mqa-border);
+  border-radius: 10px;
+  appearance: auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.hh-mqa-pin-chip {
+  flex-shrink: 0;
+  min-height: 42px;
+  padding: 0 11px;
+  border-radius: 10px;
+  border: 1.5px solid var(--mqa-accent-border);
+  background: var(--mqa-accent-soft);
+  color: var(--mqa-accent);
+  font-family: inherit;
+  font-size: 0.78rem;
+  font-weight: 800;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  white-space: nowrap;
+}
+
+[data-theme='space'] .hh-mqa-pin-chip,
+[data-theme='dark'] .hh-mqa-pin-chip {
+  color: #93c5fd;
+}
+
+/* 2. Segmented Thumb Mode Bar */
+.hh-mqa-mode-bar {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  overflow-x: auto;
+  max-width: 100%;
+  padding: 4px;
+  margin-bottom: 10px;
+  background: var(--mqa-bg-pill);
+  border: 1px solid var(--mqa-border-soft);
+  border-radius: 12px;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+.hh-mqa-mode-bar::-webkit-scrollbar {
+  display: none;
+}
+
+.hh-mqa-mode-pill {
+  flex: 1 0 auto;
+  min-height: 38px;
+  padding: 6px 11px;
+  border-radius: 9px;
+  border: 1px solid transparent;
+  background: transparent;
+  color: var(--mqa-text-sub);
+  font-family: inherit;
+  font-size: 0.78rem;
+  font-weight: 800;
+  cursor: pointer;
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  transition: background-color 0.14s ease, color 0.14s ease, border-color 0.14s ease;
+}
+
+.hh-mqa-mode-pill.is-active {
+  background: var(--mqa-bg-card);
+  color: var(--mqa-accent);
+  border-color: var(--mqa-border);
+  box-shadow: 0 2px 6px rgba(15, 23, 42, 0.08);
+}
+
+[data-theme='space'] .hh-mqa-mode-pill.is-active,
+[data-theme='dark'] .hh-mqa-mode-pill.is-active {
+  color: #60a5fa;
+  background: #1e293b;
+  border-color: #475569;
+}
+
+.hh-mqa-mode-pill.is-mistakes {
+  color: #dc2626;
+}
+
+[data-theme='space'] .hh-mqa-mode-pill.is-mistakes,
+[data-theme='dark'] .hh-mqa-mode-pill.is-mistakes {
+  color: #f87171;
+}
+
+.hh-mqa-mode-pill.is-mistakes.is-active {
+  background: var(--mqa-wrong-bg);
+  border-color: var(--mqa-wrong-border);
+  color: var(--mqa-wrong-text);
+}
+
+/* 3. Skeleton Loading Card */
+.hh-mqa-skeleton {
+  background: var(--mqa-bg-card);
+  border: 1.5px solid var(--mqa-border-soft);
+  border-radius: 16px;
+  padding: 18px 16px;
+}
+
+.hh-mqa-skel-bar {
+  height: 14px;
+  border-radius: 8px;
+  background: linear-gradient(90deg, var(--mqa-border-soft) 25%, var(--mqa-bg-subtle) 50%, var(--mqa-border-soft) 75%);
+  background-size: 200% 100%;
+  animation: hhMqaShimmer 1.2s infinite linear;
+  margin-bottom: 12px;
+}
+
+@keyframes hhMqaShimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+/* 4. Main Arena Stage Card & Progress HUD */
+.hh-mqa-card {
+  background: var(--mqa-bg-card);
+  border: 1.5px solid var(--mqa-border);
+  border-radius: 16px;
+  padding: 14px;
+  box-shadow: 0 6px 20px rgba(15, 23, 42, 0.05);
+}
+
+.hh-mqa-hud {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 8px;
+  font-size: 0.78rem;
+  font-weight: 800;
+  color: var(--mqa-text-sub);
+}
+
+.hh-mqa-hud-badges {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.hh-mqa-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 3px 8px;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 800;
+  background: var(--mqa-bg-subtle);
+  border: 1px solid var(--mqa-border-soft);
+  color: var(--mqa-text-sub);
+}
+
+.hh-mqa-badge.streak {
+  color: #ea580c;
+  border-color: rgba(234, 88, 12, 0.35);
+}
+
+[data-theme='space'] .hh-mqa-badge.streak,
+[data-theme='dark'] .hh-mqa-badge.streak {
+  color: #fb923c;
+}
+
+.hh-mqa-badge.combo {
+  color: #d97706;
+  border-color: rgba(245, 158, 11, 0.45);
+}
+
+[data-theme='space'] .hh-mqa-badge.combo,
+[data-theme='dark'] .hh-mqa-badge.combo {
+  color: #fbbf24;
+}
+
+.hh-mqa-progress-track {
+  width: 100%;
+  height: 6px;
+  border-radius: 999px;
+  background: var(--mqa-border-soft);
+  overflow: hidden;
+  margin-bottom: 12px;
+}
+
+.hh-mqa-progress-fill {
+  height: 100%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #2563eb 0%, #10b981 100%);
+  transition: width 0.25s ease;
+}
+
+.hh-mqa-progress-fill.blitz {
+  background: linear-gradient(90deg, #f59e0b 0%, #ef4444 100%);
+  transition: width 0.2s linear;
+}
+
+/* 5. Zero-Jump MCQ Question & Options */
+.hh-mqa-topic-tag {
+  font-size: 0.69rem;
+  font-weight: 700;
+  color: var(--mqa-text-muted);
+  margin-bottom: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.hh-mqa-stem {
+  margin: 0 0 13px 0;
+  font-size: 1.02rem;
+  font-weight: 800;
+  line-height: 1.38;
+  color: var(--mqa-text);
+  hyphens: none;
+}
+
+.hh-mqa-options {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.hh-mqa-opt-btn {
+  width: 100%;
+  min-height: 54px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1.5px solid var(--mqa-border);
+  background: var(--mqa-bg-subtle);
+  color: var(--mqa-text);
+  font-family: inherit;
+  font-size: 0.91rem;
+  font-weight: 600;
+  line-height: 1.32;
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: border-color 0.12s ease, background-color 0.12s ease, transform 0.08s ease;
+}
+
+.hh-mqa-opt-btn:active:not(:disabled) {
+  transform: scale(0.99);
+}
+
+.hh-mqa-opt-letter {
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  background: var(--mqa-bg-card);
+  border: 1.5px solid var(--mqa-border);
+  color: var(--mqa-text-sub);
+  font-size: 0.78rem;
+  font-weight: 800;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.hh-mqa-opt-text {
+  flex: 1;
+  min-width: 0;
+  hyphens: none;
+}
+
+.hh-mqa-opt-btn.is-correct {
+  background: var(--mqa-correct-bg) !important;
+  border-color: var(--mqa-correct-border) !important;
+  color: var(--mqa-correct-text) !important;
+  font-weight: 700;
+}
+
+.hh-mqa-opt-btn.is-correct .hh-mqa-opt-letter {
+  background: #10b981;
+  border-color: #10b981;
+  color: #ffffff;
+}
+
+.hh-mqa-opt-btn.is-wrong {
+  background: var(--mqa-wrong-bg) !important;
+  border-color: var(--mqa-wrong-border) !important;
+  color: var(--mqa-wrong-text) !important;
+}
+
+.hh-mqa-opt-btn.is-wrong .hh-mqa-opt-letter {
+  background: #ef4444;
+  border-color: #ef4444;
+  color: #ffffff;
+}
+
+.hh-mqa-opt-btn.is-dimmed {
+  opacity: 0.58;
+}
+
+/* 6. Pinned Zero-Jump Bottom Feedback Sheet (CLS = 0) */
+.hh-mqa-feedback-sheet {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: calc(58px + env(safe-area-inset-bottom, 0px));
+  z-index: 10025;
+  background: var(--mqa-sheet-bg);
+  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(14px);
+  border-top: 2px solid var(--mqa-border);
+  box-shadow: 0 -8px 28px rgba(15, 23, 42, 0.18);
+  padding: 12px 14px;
+  display: none;
+}
+
+@media (min-width: 933px) {
+  .hh-mqa-feedback-sheet {
+    bottom: 0;
+  }
+}
+
+.hh-mqa-feedback-sheet.is-open {
+  display: block;
+}
+
+.hh-mqa-feedback-sheet.tone-correct {
+  border-top-color: #10b981;
+}
+
+.hh-mqa-feedback-sheet.tone-wrong {
+  border-top-color: #ef4444;
+}
+
+.hh-mqa-feedback-inner {
+  max-width: 652px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.hh-mqa-feedback-head {
+  font-size: 0.88rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.hh-mqa-feedback-sheet.tone-correct .hh-mqa-feedback-head {
+  color: #059669;
+}
+
+.hh-mqa-feedback-sheet.tone-wrong .hh-mqa-feedback-head {
+  color: #dc2626;
+}
+
+[data-theme='space'] .hh-mqa-feedback-sheet.tone-correct .hh-mqa-feedback-head,
+[data-theme='dark'] .hh-mqa-feedback-sheet.tone-correct .hh-mqa-feedback-head {
+  color: #34d399;
+}
+
+[data-theme='space'] .hh-mqa-feedback-sheet.tone-wrong .hh-mqa-feedback-head,
+[data-theme='dark'] .hh-mqa-feedback-sheet.tone-wrong .hh-mqa-feedback-head {
+  color: #f87171;
+}
+
+.hh-mqa-feedback-expl {
+  margin: 0;
+  font-size: 0.81rem;
+  line-height: 1.38;
+  color: var(--mqa-text-sub);
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.hh-mqa-continue-btn {
+  width: 100%;
+  min-height: 48px;
+  border-radius: 12px;
+  border: none;
+  font-family: inherit;
+  font-size: 0.94rem;
+  font-weight: 800;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  color: #ffffff;
+  background: #2563eb;
+}
+
+.hh-mqa-feedback-sheet.tone-correct .hh-mqa-continue-btn {
+  background: #059669;
+}
+
+.hh-mqa-feedback-sheet.tone-wrong .hh-mqa-continue-btn {
+  background: #dc2626;
+}
+
+/* 7. Gap Fill (Cloze) — Zero-Jump Ghost Word Tray */
+.hh-mqa-cloze-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 10px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--mqa-border-soft);
+}
+
+.hh-mqa-cloze-step-btn {
+  min-height: 36px;
+  padding: 4px 10px;
+  border-radius: 8px;
+  border: 1px solid var(--mqa-border);
+  background: var(--mqa-bg-subtle);
+  color: var(--mqa-text);
+  font-family: inherit;
+  font-size: 0.76rem;
+  font-weight: 800;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.hh-mqa-cloze-step-btn:disabled {
+  opacity: 0.38;
+  cursor: default;
+}
+
+.hh-mqa-cloze-title-wrap {
+  min-width: 0;
+  flex: 1;
+  text-align: center;
+}
+
+.hh-mqa-cloze-eyebrow {
+  font-size: 0.67rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--mqa-text-muted);
+}
+
+.hh-mqa-cloze-title {
+  font-size: 0.82rem;
+  font-weight: 800;
+  color: var(--mqa-text);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.hh-mqa-cloze-passage {
+  font-size: 0.93rem;
+  line-height: 1.85;
+  color: var(--mqa-text);
+  margin-bottom: 14px;
+  hyphens: none;
+}
+
+.hh-mqa-cloze-slot {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 84px;
+  min-height: 31px;
+  padding: 2px 9px;
+  margin: 2px 2px;
+  border-radius: 8px;
+  border: 1.5px dashed var(--mqa-accent);
+  background: var(--mqa-accent-soft);
+  color: var(--mqa-accent);
+  font-family: inherit;
+  font-size: 0.83rem;
+  font-weight: 800;
+  cursor: pointer;
+  vertical-align: baseline;
+  transition: border-color 0.12s ease, background-color 0.12s ease;
+}
+
+[data-theme='space'] .hh-mqa-cloze-slot,
+[data-theme='dark'] .hh-mqa-cloze-slot {
+  color: #93c5fd;
+}
+
+.hh-mqa-cloze-slot.is-active {
+  border-style: solid;
+  border-width: 2px;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+}
+
+.hh-mqa-cloze-slot.is-filled {
+  border-style: solid;
+  background: var(--mqa-bg-subtle);
+  border-color: var(--mqa-text-sub);
+  color: var(--mqa-text);
+}
+
+.hh-mqa-cloze-slot.is-locked {
+  border-style: solid;
+  background: var(--mqa-correct-bg);
+  border-color: var(--mqa-correct-border);
+  color: var(--mqa-correct-text);
+  cursor: default;
+}
+
+.hh-mqa-cloze-slot.is-wrong {
+  border-style: solid;
+  background: var(--mqa-wrong-bg);
+  border-color: var(--mqa-wrong-border);
+  color: var(--mqa-wrong-text);
+  animation: hhMqaShake 0.34s ease;
+}
+
+.hh-mqa-tray-box {
+  background: var(--mqa-bg-subtle);
+  border: 1px solid var(--mqa-border-soft);
+  border-radius: 12px;
+  padding: 10px;
+  margin-bottom: 12px;
+}
+
+.hh-mqa-tray-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 8px;
+  font-size: 0.71rem;
+  font-weight: 800;
+  color: var(--mqa-text-muted);
+}
+
+.hh-mqa-decoy-badge {
+  background: rgba(245, 158, 11, 0.15);
+  color: #b45309;
+  border: 1px solid rgba(245, 158, 11, 0.4);
+  border-radius: 999px;
+  padding: 2px 8px;
+  font-size: 0.67rem;
+  font-weight: 800;
+}
+
+[data-theme='space'] .hh-mqa-decoy-badge,
+[data-theme='dark'] .hh-mqa-decoy-badge {
+  color: #fcd34d;
+}
+
+.hh-mqa-tray-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+.hh-mqa-word-chip {
+  min-height: 38px;
+  padding: 6px 12px;
+  border-radius: 9px;
+  border: 1.5px solid var(--mqa-border);
+  background: var(--mqa-bg-card);
+  color: var(--mqa-text);
+  font-family: inherit;
+  font-size: 0.83rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: opacity 0.14s ease, transform 0.08s ease;
+}
+
+/* CRITICAL ZERO-JUMP RULE: Placed chips stay in-place dimmed so tray NEVER collapses */
+.hh-mqa-word-chip.is-used {
+  opacity: 0.28 !important;
+  pointer-events: none !important;
+}
+
+.hh-mqa-cloze-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.hh-mqa-btn-secondary {
+  min-height: 46px;
+  padding: 0 14px;
+  border-radius: 11px;
+  border: 1.5px solid var(--mqa-border);
+  background: var(--mqa-bg-subtle);
+  color: var(--mqa-text-sub);
+  font-family: inherit;
+  font-size: 0.85rem;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.hh-mqa-btn-primary {
+  flex: 1;
+  min-height: 46px;
+  padding: 0 16px;
+  border-radius: 11px;
+  border: none;
+  background: #2563eb;
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 0.9rem;
+  font-weight: 800;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.hh-mqa-btn-primary:disabled {
+  opacity: 0.48;
+  cursor: default;
+}
+
+/* 8. Flashcards — Locked 220px Height + Pinned Thumb Row */
+.hh-mqa-fc-stage {
+  width: 100%;
+  height: 220px;
+  min-height: 220px;
+  max-height: 220px;
+  border-radius: 14px;
+  border: 1.5px solid var(--mqa-border);
+  background: var(--mqa-bg-subtle);
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+  margin-bottom: 12px;
+  overflow: hidden;
+}
+
+.hh-mqa-fc-stage.is-flipped {
+  border-color: var(--mqa-accent);
+  background: var(--mqa-accent-soft);
+}
+
+.hh-mqa-fc-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.hh-mqa-fc-side-lbl {
+  font-size: 0.68rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--mqa-text-muted);
+}
+
+.hh-mqa-fc-listen-btn {
+  min-height: 32px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--mqa-border);
+  background: var(--mqa-bg-card);
+  color: var(--mqa-text);
+  font-family: inherit;
+  font-size: 0.74rem;
+  font-weight: 800;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.hh-mqa-fc-body {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 6px 4px;
+}
+
+.hh-mqa-fc-main-text {
+  font-size: 1.04rem;
+  font-weight: 800;
+  line-height: 1.38;
+  color: var(--mqa-text);
+  margin: 0;
+}
+
+.hh-mqa-fc-stage.is-flipped .hh-mqa-fc-main-text {
+  font-size: 0.93rem;
+  font-weight: 600;
+}
+
+.hh-mqa-fc-phonetic {
+  margin-top: 5px;
+  font-size: 0.76rem;
+  font-weight: 600;
+  color: var(--mqa-text-muted);
+}
+
+.hh-mqa-fc-hint {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--mqa-text-muted);
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.hh-mqa-fc-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.hh-mqa-fc-btn {
+  min-height: 52px;
+  border-radius: 12px;
+  font-family: inherit;
+  font-size: 0.9rem;
+  font-weight: 800;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.hh-mqa-fc-btn.learning {
+  background: var(--mqa-wrong-bg);
+  border: 1.5px solid var(--mqa-wrong-border);
+  color: var(--mqa-wrong-text);
+}
+
+.hh-mqa-fc-btn.gotit {
+  background: var(--mqa-correct-bg);
+  border: 1.5px solid var(--mqa-correct-border);
+  color: var(--mqa-correct-text);
+}
+
+/* 9. Speed Term Match (5 Pairs) */
+.hh-mqa-match-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.88fr) minmax(0, 1.32fr);
+  gap: 8px;
+}
+
+.hh-mqa-match-col {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  min-width: 0;
+}
+
+.hh-mqa-match-tile {
+  width: 100%;
+  min-height: 64px;
+  padding: 8px 9px;
+  border-radius: 11px;
+  border: 1.5px solid var(--mqa-border);
+  background: var(--mqa-bg-subtle);
+  color: var(--mqa-text);
+  font-family: inherit;
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+  transition: border-color 0.12s ease, background-color 0.12s ease, opacity 0.18s ease;
+}
+
+.hh-mqa-match-tile.term-tile {
+  font-size: 0.82rem;
+  font-weight: 800;
+  line-height: 1.24;
+}
+
+.hh-mqa-match-tile.def-tile {
+  font-size: 0.76rem;
+  font-weight: 600;
+  line-height: 1.28;
+}
+
+.hh-mqa-match-tile.is-selected {
+  border-color: var(--mqa-accent);
+  background: var(--mqa-accent-soft);
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.22);
+}
+
+.hh-mqa-match-tile.is-matched {
+  background: var(--mqa-correct-bg) !important;
+  border-color: var(--mqa-correct-border) !important;
+  color: var(--mqa-correct-text) !important;
+  opacity: 0.72;
+  pointer-events: none;
+}
+
+.hh-mqa-match-tile.is-mismatch {
+  background: var(--mqa-wrong-bg) !important;
+  border-color: var(--mqa-wrong-border) !important;
+  color: var(--mqa-wrong-text) !important;
+  animation: hhMqaShake 0.36s ease;
+}
+
+@keyframes hhMqaShake {
+  0%, 100% { transform: translateX(0); }
+  20% { transform: translateX(-5px); }
+  40% { transform: translateX(5px); }
+  60% { transform: translateX(-4px); }
+  80% { transform: translateX(4px); }
+}
+
+/* 10. Empty / Celebratory Card */
+.hh-mqa-empty-card {
+  background: var(--mqa-bg-card);
+  border: 1.5px solid var(--mqa-border);
+  border-radius: 16px;
+  padding: 26px 18px;
+  text-align: center;
+}
+
+/* Landscape Compactness (e.g., 896x414) */
+@media (max-height: 460px) and (orientation: landscape) {
+  .hh-mqa-controls {
+    flex-direction: row;
+  }
+  .hh-mqa-course-row {
+    flex: 1.2;
+  }
+  .hh-mqa-select.topic-select {
+    flex: 1;
+  }
+  .hh-mqa-options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+  .hh-mqa-opt-btn {
+    min-height: 46px;
+  }
+}

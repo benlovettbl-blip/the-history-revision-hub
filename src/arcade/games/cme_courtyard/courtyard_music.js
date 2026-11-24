@@ -45,6 +45,7 @@ export class CourtyardMusicEngine {
 
     if (!this.ctx) {
       this.ctx = new AudioCtx();
+      window.__hhRegisterAudioCtx?.(this.ctx);
       this.masterGain = this.ctx.createGain();
       this.masterGain.gain.value = this.enabled ? this.volume * 0.16 : 0.0001;
 
@@ -64,6 +65,7 @@ export class CourtyardMusicEngine {
       this.masterGain.connect(this.ctx.destination);
     }
 
+    window.__hhRegisterAudioCtx?.(this.ctx);
     if (this.ctx.state === 'suspended') {
       this.ctx.resume().catch(() => {});
     }

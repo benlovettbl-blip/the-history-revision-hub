@@ -37,7 +37,12 @@ function getActiveLessonContext(explicitUnitId = null, explicitLessonIndex = nul
   return { unitId, unitData, lessons, lessonIndex, lesson, cleanTitle };
 }
 
-export function buildPublicShareUrl({ unitId = null, lessonIndex = null, questionNum = null } = {}) {
+export function buildPublicShareUrl({
+  unitId = null,
+  lessonIndex = null,
+  questionNum = null,
+  examQuestionNum = null,
+} = {}) {
   const ctx = getActiveLessonContext(unitId, lessonIndex);
   const isLocal =
     typeof window !== 'undefined' &&
@@ -64,7 +69,9 @@ export function buildPublicShareUrl({ unitId = null, lessonIndex = null, questio
     urlObj = new URL('/', SITE_ORIGIN);
   }
 
-  if (questionNum && Number(questionNum) > 0) {
+  if (examQuestionNum && Number(examQuestionNum) > 0) {
+    urlObj.searchParams.set('eq', String(examQuestionNum));
+  } else if (questionNum && Number(questionNum) > 0) {
     urlObj.searchParams.set('q', String(questionNum));
   }
   return urlObj.toString();
@@ -195,6 +202,35 @@ export function shareHubQuestion(btnEl) {
   });
 }
 
+export function shareHubExamQuestion({
+  btnEl = null,
+  unitId = null,
+  lessonIndex = null,
+  questionNum = 1,
+  questionText = '',
+  marks = '',
+} = {}) {
+  const ctx = getActiveLessonContext(unitId, lessonIndex);
+  const safeQNum = Math.max(1, Number(questionNum) || 1);
+  const url = buildPublicShareUrl({
+    unitId: ctx.unitId,
+    lessonIndex: ctx.lessonIndex,
+    examQuestionNum: safeQNum,
+  });
+  const marksTag = marks ? `[${marks} Marks] ` : '';
+  const snippet = questionText
+    ? `${marksTag}${String(questionText).replace(/<[^>]+>/g, '').trim()}`
+    : `GCSE Exam Question ${safeQNum} & Grade 9 Model Answer — ${ctx.cleanTitle}`;
+  return triggerShareOrCopy({
+    title: `${marksTag}${ctx.cleanTitle} | GCSE Exam Trainer`,
+    text: `🎯 Practise this GCSE History question + Grade 9 Model Answer:\n"${snippet}"`,
+    url,
+    btnEl,
+    copiedBtnLabel: 'Shared!',
+    toastMsg: 'Direct link to this Exam Question & Grade 9 Answer copied!',
+  });
+}
+
 export function shareHubChallengeScore(btnEl, mode = 'quiz', score = 0, total = 5) {
   const ctx = getActiveLessonContext();
   const url = buildPublicShareUrl({ unitId: ctx.unitId, lessonIndex: ctx.lessonIndex });
@@ -203,7 +239,7 @@ export function shareHubChallengeScore(btnEl, mode = 'quiz', score = 0, total = 
     mode === 'vocab'
       ? `⚡ I just mastered all key vocabulary on "${ctx.cleanTitle}" — test yourself here:`
       : mode === 'cloze'
-        ? `⚡ I completed the Summary Cloze on "${ctx.cleanTitle}" with 100% accuracy — try it here:`
+        ? `⚡ I completed the Gap Fill on "${ctx.cleanTitle}" with 100% accuracy — try it here:`
         : `🏆 I scored ${score}/${total} (${pct}%) on "${ctx.cleanTitle}" — can you beat my score?`;
 
   return triggerShareOrCopy({
@@ -220,16 +256,20 @@ export function runPendingQuestionDeepLink() {
   if (typeof window === 'undefined' || typeof document === 'undefined') return;
   try {
     const params = new URLSearchParams(window.location.search);
-    const qRaw = params.get('q');
+    const qRaw = params.get('eq') || params.get('q');
     if (!qRaw) return;
     const qNum = parseInt(qRaw, 10);
     if (isNaN(qNum) || qNum < 1) return;
 
-    const allStrips = Array.from(document.querySelectorAll('details.wb-question-strip'));
-    const targetStrip = allStrips[qNum - 1];
+    const examCards = Array.from(document.querySelectorAll('.met-question-card'));
+    const allStrips =
+      examCards.length > 0
+        ? examCards
+        : Array.from(document.querySelectorAll('details.wb-question-strip'));
+    const targetStrip = allStrips[qNum - 1] || allStrips[0];
     if (!targetStrip) return;
 
-    targetStrip.open = true;
+    if (targetStrip.tagName === 'DETAILS') targetStrip.open = true;
     setTimeout(() => {
       targetStrip.scrollIntoView({ behavior: 'smooth', block: 'center' });
       const prevOutline = targetStrip.style.boxShadow;
@@ -246,6 +286,7 @@ export function initShareUtilsGlobals() {
   if (typeof window !== 'undefined') {
     window.shareHubLesson = shareHubLesson;
     window.shareHubQuestion = shareHubQuestion;
+    window.shareHubExamQuestion = shareHubExamQuestion;
     window.shareHubChallengeScore = shareHubChallengeScore;
     window.runPendingQuestionDeepLink = runPendingQuestionDeepLink;
   }
@@ -297,6 +338,7 @@ export function renderFurtherReadingShelfHTML(lesson, getAssetUrlFn) {
 if (typeof window !== 'undefined') {
   window.shareHubLesson = shareHubLesson;
   window.shareHubQuestion = shareHubQuestion;
+  window.shareHubExamQuestion = shareHubExamQuestion;
   window.shareHubChallengeScore = shareHubChallengeScore;
   window.runPendingQuestionDeepLink = runPendingQuestionDeepLink;
 }

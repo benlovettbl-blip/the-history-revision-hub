@@ -81,6 +81,36 @@ export function toggleSpeechAutoPlay() {
 }
 
 /**
+ * 1-Tap "Play Full Lesson" Hands-Free Podcast Launcher.
+ * Enables Continuous Auto-Play and starts narration from the first visible narrative/prologue block.
+ */
+export function startFullLessonPodcast() {
+  if (typeof document === 'undefined') return;
+  if (activeButton && (activeStudioAudio || window.speechSynthesis?.speaking)) {
+    readAloudText(activeButton);
+    return;
+  }
+  setSpeechAutoPlay(true);
+  const buttons = getSequentialNarrativeButtons(null);
+  if (buttons.length > 0) {
+    readAloudText(buttons[0]);
+  }
+}
+
+/**
+ * Pause and clear floating speech bar when opening interactive Solo Recall / Vocab / Video drawers
+ * so audio never speaks over active recall or covers bottom thumb buttons.
+ */
+export function pauseAndDockSpeechForInteractive() {
+  cancelSpeech();
+}
+
+if (typeof window !== 'undefined') {
+  window.hhPlayFullLessonPodcast = startFullLessonPodcast;
+  window.hhPauseSpeechForQuiz = pauseAndDockSpeechForInteractive;
+}
+
+/**
  * Determine whether a read-aloud button belongs to the main sequential lesson narrative
  * (Prologue + Stage 1..5 Narrative Paragraphs) rather than an isolated source drawer.
  */
@@ -927,7 +957,7 @@ function showFloatingAudioPlayer() {
 
     floatingAudioPlayerEl.querySelector('#sfp-speed-btn')?.addEventListener('click', (e) => {
       e.stopPropagation();
-      const speeds = [0.85, 1.0, 1.15];
+      const speeds = [1.0, 1.25, 1.5, 0.85];
       const curIdx = speeds.findIndex((s) => Math.abs(s - currentSpeechRate) < 0.05);
       const nextIdx = (curIdx + 1) % speeds.length;
       setSpeechRate(speeds[nextIdx]);

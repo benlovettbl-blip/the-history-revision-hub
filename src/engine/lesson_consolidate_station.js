@@ -274,12 +274,12 @@ export function renderConsolidateStationHTML(lesson) {
           <div>
             <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
               <h3 style="margin: 0; color: #ffffff; font-size: 1.08rem; font-family: 'Outfit', 'Playfair Display', sans-serif; font-weight: 800;">
-                Consolidate &amp; Lesson Arcade
+                <span class="lp-lbl-desktop">Consolidate &amp; Lesson Arcade</span><span class="lp-lbl-mobile">Test Yourself</span>
               </h3>
               ${savedScoreBadge}
             </div>
             <p style="margin: 2px 0 0 0; color: #94a3b8; font-size: 0.78rem;">
-              Lock in this enquiry with a Quick ${quickCount} check, the Tap-Tile Summary Cloze, or the Revision Arcade.
+              Lock in this topic with a Quick ${quickCount} check, Gap Fill, or Revision Arcade.
             </p>
           </div>
         </div>
@@ -299,7 +299,7 @@ export function renderConsolidateStationHTML(lesson) {
             hasCloze
               ? `
             <button type="button" id="tab-btn-cloze-${lesson.id}" onclick="window.switchConsolidateTab('${lesson.id}', 'cloze', event)" style="padding: 7px 13px; border-radius: 8px; border: 1.5px solid #38bdf8; background: rgba(14, 165, 233, 0.22); color: #e0f2fe; font-size: 0.82rem; font-weight: 800; cursor: pointer; display: inline-flex; align-items: center; gap: 6px;">
-              <i class="fa-solid fa-puzzle-piece" style="color:#7dd3fc;"></i> <span id="cloze-btn-lbl-${lesson.id}">Summary Cloze${clozeDone ? ' ✓' : ''}</span>
+              <i class="fa-solid fa-puzzle-piece" style="color:#7dd3fc;"></i> <span id="cloze-btn-lbl-${lesson.id}">Gap Fill${clozeDone ? ' ✓' : ''}</span>
             </button>
           `
               : ''
@@ -517,7 +517,7 @@ function renderStationClozeDrawer(state, bodyEl) {
   const chipsHtml = c.chips
     .map((chip, chipIdx) => {
       const used = usedChipIndices.has(chipIdx);
-      return `<button type="button" onclick="window.placeStationClozeChip('${state.lessonId}', ${chipIdx})" ${used || c.completed ? 'disabled' : ''} style="padding:7px 14px;border-radius:999px;border:1.5px solid ${used ? '#cbd5e1' : '#93c5fd'};background:${used ? '#f1f5f9' : '#eff6ff'};color:${used ? '#94a3b8' : '#1e3a8a'};font-weight:700;font-size:0.88rem;cursor:${used || c.completed ? 'default' : 'pointer'};text-decoration:${used ? 'line-through' : 'none'};opacity:${used ? '0.48' : '1'};transition:all 0.14s ease;font-family:inherit;">${escapeClozeHtml(chip.word)}</button>`;
+      return `<button type="button" class="station-cloze-chip ${used ? 'is-used-ghost' : ''}" onclick="window.placeStationClozeChip('${state.lessonId}', ${chipIdx})" ${used || c.completed ? 'disabled' : ''} style="min-height:36px;padding:7px 14px;border-radius:999px;border:1.5px solid ${used ? '#cbd5e1' : '#93c5fd'};background:${used ? '#f1f5f9' : '#eff6ff'};color:${used ? '#94a3b8' : '#1e3a8a'};font-weight:700;font-size:0.88rem;cursor:${used || c.completed ? 'default' : 'pointer'};text-decoration:${used ? 'line-through' : 'none'};opacity:${used ? '0.28' : '1'};pointer-events:${used || c.completed ? 'none' : 'auto'};transition:opacity 0.14s ease,border-color 0.14s ease;font-family:inherit;">${escapeClozeHtml(chip.word)}</button>`;
     })
     .join('');
 
@@ -526,7 +526,7 @@ function renderStationClozeDrawer(state, bodyEl) {
       <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;margin-bottom:10px;">
         <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;">
           <span style="font-size:0.8rem;font-weight:800;color:#0369a1;text-transform:uppercase;letter-spacing:0.04em;">
-            <i class="fa-solid fa-puzzle-piece"></i> Enquiry Summary Cloze
+            <i class="fa-solid fa-puzzle-piece"></i> Gap Fill Summary
           </span>
           <span style="font-size:0.76rem;font-weight:700;padding:2px 9px;border-radius:999px;background:#f1f5f9;color:#475569;border:1px solid #cbd5e1;">
             ${c.completed ? `✓ ${total}/${total} Mastered` : `Slots Filled: ${filledCount} / ${total}`}
@@ -578,8 +578,8 @@ function renderStationClozeDrawer(state, bodyEl) {
           ${chipsHtml}
         </div>
         <div style="display:flex;justify-content:flex-end;align-items:center;gap:10px;">
-          <button type="button" onclick="window.checkStationCloze('${state.lessonId}')" ${!allFilled ? 'disabled' : ''} style="padding:9px 20px;border-radius:8px;border:none;background:${allFilled ? '#059669' : '#cbd5e1'};color:${allFilled ? '#ffffff' : '#64748b'};font-size:0.9rem;font-weight:800;cursor:${allFilled ? 'pointer' : 'not-allowed'};display:inline-flex;align-items:center;gap:7px;">
-            <i class="fa-solid fa-circle-check"></i> ${allFilled ? 'Check Summary' : `Fill ${total - filledCount} More Slot${total - filledCount === 1 ? '' : 's'} to Check`}
+          <button type="button" onclick="window.checkStationCloze('${state.lessonId}')" ${!allFilled ? 'disabled' : ''} style="min-height:44px;padding:9px 20px;border-radius:8px;border:none;background:${allFilled ? '#059669' : '#cbd5e1'};color:${allFilled ? '#ffffff' : '#64748b'};font-size:0.9rem;font-weight:800;cursor:${allFilled ? 'pointer' : 'not-allowed'};display:inline-flex;align-items:center;gap:7px;">
+            <i class="fa-solid fa-circle-check"></i> ${allFilled ? 'Check Gap Fill' : `Fill ${total - filledCount} More Slot${total - filledCount === 1 ? '' : 's'}`}
           </button>
         </div>
       `
@@ -617,7 +617,7 @@ function renderQuickQuizDrawer(lessonId) {
   }
   if (clozeLblEl) {
     const doneMark = state.cloze && (state.cloze.completed || state.cloze.previouslyMastered) ? ' ✓' : '';
-    clozeLblEl.textContent = clozeOpen ? 'Close Summary Cloze' : `Summary Cloze${doneMark}`;
+    clozeLblEl.textContent = clozeOpen ? 'Close Gap Fill' : `Gap Fill${doneMark}`;
   }
   if (!state.isOpen) return;
 

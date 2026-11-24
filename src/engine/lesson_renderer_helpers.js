@@ -3868,6 +3868,7 @@ export function renderLessonLaunchpad({
     tabs.push({
       key: 'donow',
       label: 'Do Now Starter',
+      mobileLabel: 'Quick Recall',
       icon: 'fa-solid fa-stopwatch icon-donow',
       badge: '05:00',
     });
@@ -3883,6 +3884,7 @@ export function renderLessonLaunchpad({
     tabs.push({
       key: 'vocab',
       label: 'Key Vocabulary',
+      mobileLabel: 'Key Vocab',
       icon: 'fa-solid fa-book-bookmark icon-vocab',
       badge: vocabCount ? `${vocabCount} Terms` : '',
     });
@@ -3894,6 +3896,7 @@ export function renderLessonLaunchpad({
     tabs.push({
       key: 'spine',
       label: 'Chronology Spine',
+      mobileLabel: 'Timeline',
       icon: 'fa-solid fa-timeline icon-spine',
     });
   }
@@ -3914,6 +3917,7 @@ export function renderLessonLaunchpad({
     tabs.push({
       key: 'video',
       label: 'Video Pathway',
+      mobileLabel: 'Video',
       icon: 'fa-solid fa-play icon-video',
       badge: videoDuration || `${videos.length} Clip${videos.length > 1 ? 's' : ''}`,
     });
@@ -3943,6 +3947,7 @@ export function renderLessonLaunchpad({
         : count > 1
           ? `Infographics (${count})`
           : 'Infographic',
+      mobileLabel: 'Story Cards',
       icon: hasInteractive
         ? 'fa-solid fa-wand-magic-sparkles icon-infographic'
         : 'fa-solid fa-image icon-infographic',
@@ -3961,6 +3966,7 @@ export function renderLessonLaunchpad({
     tabs.push({
       key: 'atlas',
       label: 'Historical Atlas',
+      mobileLabel: 'Atlas Map',
       icon: 'fa-solid fa-map',
       isAtlasModal: true,
     });
@@ -3994,6 +4000,7 @@ export function renderLessonLaunchpad({
     tabs.push({
       key: 'objectives',
       label: 'Learning Objectives',
+      mobileLabel: 'Goals',
       icon: 'fa-solid fa-bullseye icon-objectives',
       badge: objCount ? `${objCount} Goals` : '',
     });
@@ -4013,6 +4020,9 @@ export function renderLessonLaunchpad({
         <div class="launchpad-tabs-group" role="tablist">
           ${tabs
             .map((tab) => {
+              const labelDualHtml = tab.mobileLabel
+                ? `<span class="lp-lbl-desktop">${tab.label}</span><span class="lp-lbl-mobile">${tab.mobileLabel}</span>`
+                : `<span>${tab.label}</span>`;
               if (tab.isAtlasModal) {
                 return `
               <button type="button"
@@ -4021,7 +4031,7 @@ export function renderLessonLaunchpad({
                 onclick="if(typeof window.openCmeTheaterMapModal === 'function') window.openCmeTheaterMapModal({lessonIndex: ${resolvedLessonIndex}});"
                 title="Historical Atlas (Era-Aware Regional Maps &amp; Live Terrain) [Shortcut: M]">
                 <i class="${tab.icon}"></i>
-                <span>${tab.label}</span>
+                ${labelDualHtml}
               </button>
             `;
               }
@@ -4036,13 +4046,20 @@ export function renderLessonLaunchpad({
                 aria-selected="${isActive ? 'true' : 'false'}"
                 title="${tab.label}">
                 <i class="${tab.icon}"></i>
-                <span>${tab.label}</span>
+                ${labelDualHtml}
               </button>
             `;
             })
             .join('')}
         </div>
         <div class="launchpad-actions-group">
+          <button type="button"
+            class="launchpad-podcast-btn no-print"
+            onclick="window.hhPlayFullLessonPodcast && window.hhPlayFullLessonPodcast(this)"
+            title="Play Full Lesson Hands-Free (Continuous Podcast Narration)">
+            <i class="fa-solid fa-headphones"></i>
+            <span class="lp-podcast-lbl">Listen</span>
+          </button>
           <button type="button"
             class="launchpad-close-btn"
             data-action="close-launchpad"

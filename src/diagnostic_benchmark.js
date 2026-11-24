@@ -743,11 +743,11 @@ function renderDiagnosticQuestion() {
       <div class="diag-body">
         <!-- Era & Lesson Badge -->
         <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; flex-wrap: wrap; gap: 6px;">
-          <div style="display: flex; align-items: center; gap: 6px; min-width: 0;">
-            <span style="background: #ede9fe; color: #5b21b6; font-size: 0.75rem; font-weight: 800; padding: 3px 8px; border-radius: 6px; text-transform: uppercase; white-space: nowrap;">
+          <div style="display: flex; align-items: center; gap: 6px; min-width: 0; flex-wrap: wrap; flex: 1;">
+            <span class="diag-era-pill" style="background: #ede9fe; color: #5b21b6; font-size: 0.74rem; font-weight: 800; padding: 3px 8px; border-radius: 6px; text-transform: uppercase; white-space: normal; line-height: 1.25; max-width: 100%;">
               ${q.eraTitle}
             </span>
-            <span style="color: #64748b; font-size: 0.78rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
+            <span style="color: #64748b; font-size: 0.78rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 100%;">
               • ${q.lessonTitle}
             </span>
           </div>
@@ -1131,7 +1131,7 @@ function renderDiagnosticResultsReport(report) {
 
             <button id="btn-sync-box1" onclick="window.injectMissedQuestionsToLeitner()" style="background: #dc2626; color: white; border: none; padding: 12px 20px; border-radius: 8px; font-weight: 800; font-size: 0.9rem; cursor: pointer; display: flex; align-items: center; gap: 8px; box-shadow: 0 4px 12px rgba(220, 38, 38, 0.35); transition: all 0.15s ease;" onmouseover="this.style.filter='brightness(1.1)';" onmouseout="this.style.filter='brightness(1)';">
               <i class="fa-solid fa-bolt-lightning"></i>
-              <span>${isKs2 ? 'Practise Missed Questions in Flashcards' : 'Load into Leitner Box 1 &amp; Drill'}</span>
+              <span>Practise Missed Questions (${report.missedQuestions.length})</span>
             </button>
           </div>
         `
@@ -1271,6 +1271,14 @@ window.injectMissedQuestionsToLeitner = function () {
 
   setTimeout(() => {
     closeDiagnosticModal(true);
+    const isMobilePupil =
+      typeof document !== 'undefined' &&
+      document.body &&
+      document.body.classList.contains('hh-mobile-pupil-mode');
+    if (isMobilePupil && typeof window.switchView === 'function') {
+      window.switchView('interactive', unitId, false, { mode: 'mistakes' });
+      return;
+    }
     if (isKs2) {
       if (
         typeof window.selfQuizSetMode === 'function' &&

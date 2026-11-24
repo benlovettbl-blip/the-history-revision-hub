@@ -364,8 +364,49 @@
   background: #ffffff;
   border: 1.5px solid #cbd5e1;
   border-radius: 14px;
-  padding: 16px;
+  padding: 15px;
   box-shadow: 0 4px 14px rgba(15, 23, 42, 0.05);
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.hh-solo-top-slot {
+  flex-shrink: 0;
+}
+
+.hh-solo-middle-slot {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow-y: auto;
+  padding-right: 2px;
+}
+
+.hh-solo-bottom-slot {
+  margin-top: auto;
+  padding-top: 10px;
+  flex-shrink: 0;
+}
+
+@media (max-width: 932.98px) {
+  /* Hide Classroom Board switcher pill in Mobile Pupil Mode */
+  body.hh-mobile-pupil-mode:not(.staff-mode-active) [data-donow-view-btn='board'] {
+    display: none !important;
+  }
+
+  /* Locked-Height Zero-Jump (CLS = 0) Thumb Card on Mobile */
+  .hh-solo-card {
+    height: clamp(355px, 53dvh, 425px);
+    max-height: calc(100dvh - 190px);
+  }
+
+  .hh-vocab-flip-card {
+    height: 215px;
+    min-height: 215px;
+    max-height: 215px;
+    overflow-y: auto;
+    box-sizing: border-box;
+  }
 }
 
 .hh-solo-progress-header {
@@ -1320,34 +1361,88 @@
   display: none;
 }
 
-/* Dark Theme Support */
+/* Dark Theme Support ([data-theme='space'] & [data-theme='dark']) */
+[data-theme='dark'] .lesson-launchpad-container,
+[data-theme='space'] .lesson-launchpad-container,
+[data-theme='dark'] .lesson-launchpad-drawer,
+[data-theme='space'] .lesson-launchpad-drawer {
+  background: #1e293b !important;
+  border-color: #334155 !important;
+  color: #f8fafc !important;
+}
+
+[data-theme='space'] .lesson-launchpad-container .launchpad-tab-btn:not(.active) {
+  background: #0f172a !important;
+  border-color: #334155 !important;
+  color: #cbd5e1 !important;
+}
+
 [data-theme='dark'] .hh-solo-card,
+[data-theme='space'] .hh-solo-card,
 [data-theme='dark'] .hh-revision-receipt,
-[data-theme='dark'] .hh-vocab-flip-card {
+[data-theme='space'] .hh-revision-receipt,
+[data-theme='dark'] .hh-vocab-flip-card,
+[data-theme='space'] .hh-vocab-flip-card {
   background: #1e293b;
   border-color: #334155;
   color: #f8fafc;
 }
 
+[data-theme='space'] .hh-vocab-flip-card.is-flipped {
+  background: linear-gradient(180deg, #1e293b 0%, #0f172a 100%);
+  border-color: #f59e0b;
+}
+
+[data-theme='space'] .hh-solo-answer-panel {
+  background: rgba(6, 78, 59, 0.36);
+  border-color: #059669;
+}
+
+[data-theme='space'] .hh-solo-answer-label {
+  color: #6ee7b7;
+}
+
+[data-theme='space'] .hh-solo-answer-text,
+[data-theme='space'] .hh-solo-explanation-box {
+  color: #f0fdf4;
+  border-top-color: rgba(16, 185, 129, 0.3);
+}
+
+[data-theme='space'] .hh-solo-jump-link {
+  color: #38bdf8;
+}
+
 [data-theme='dark'] .hh-solo-question-stem,
+[data-theme='space'] .hh-solo-question-stem,
 [data-theme='dark'] .hh-vocab-card-term,
+[data-theme='space'] .hh-vocab-card-term,
 [data-theme='dark'] .hh-vocab-header-title,
+[data-theme='space'] .hh-vocab-header-title,
 [data-theme='dark'] .hh-receipt-score-main,
+[data-theme='space'] .hh-receipt-score-main,
 [data-theme='dark'] .hh-receipt-stat-val,
-[data-theme='dark'] .hh-vocab-glossary-term {
+[data-theme='space'] .hh-receipt-stat-val,
+[data-theme='dark'] .hh-vocab-glossary-term,
+[data-theme='space'] .hh-vocab-glossary-term {
   color: #f8fafc;
 }
 
 [data-theme='dark'] .hh-solo-recall-prompt,
+[data-theme='space'] .hh-solo-recall-prompt,
 [data-theme='dark'] .hh-receipt-stat-tile,
-[data-theme='dark'] .hh-vocab-glossary-item {
-  background: #0f172a;
-  border-color: #334155;
-  color: #cbd5e1;
+[data-theme='space'] .hh-receipt-stat-tile,
+[data-theme='dark'] .hh-vocab-glossary-item,
+[data-theme='space'] .hh-vocab-glossary-item,
+[data-theme='space'] .donow-mode-deck {
+  background: #0f172a !important;
+  border-color: #334155 !important;
+  color: #cbd5e1 !important;
 }
 
 [data-theme='dark'] .hh-vocab-glossary-def,
-[data-theme='dark'] .hh-vocab-card-definition {
+[data-theme='space'] .hh-vocab-glossary-def,
+[data-theme='dark'] .hh-vocab-card-definition,
+[data-theme='space'] .hh-vocab-card-definition {
   color: #e2e8f0;
 }
 

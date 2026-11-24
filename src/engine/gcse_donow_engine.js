@@ -578,7 +578,16 @@ export function getCurrentLessonQuestions(activeUnit, currentLesson, seed = null
   const currentIndex = lessons.findIndex(
     (l) => (l.id && l.id === currentLesson.id) || l.title === currentLesson.title,
   );
-  const lessonNum = currentIndex >= 0 ? currentIndex + 1 : 1;
+  const hasLessonZero = Boolean(
+    lessons[0] &&
+      (lessons[0].id === 'lesson_0' || /KT\s*1\.0/i.test(String(lessons[0].title || ''))),
+  );
+  const lessonNum =
+    currentIndex >= 0
+      ? hasLessonZero
+        ? Math.max(0, currentIndex)
+        : currentIndex + 1
+      : 1;
   const isCmeIntro =
     (activeUnit?.id === 'cme_new' || currentLesson?.unitId === 'cme_new') &&
     (currentIndex === 0 || String(currentLesson?.title || '').includes('KT 1.0'));
@@ -597,6 +606,7 @@ export function getCurrentLessonQuestions(activeUnit, currentLesson, seed = null
     });
     if (qa && !pool.some((p) => p.question.toLowerCase() === qa.question.toLowerCase())) {
       qa.unitId = activeUnit?.id || '';
+      qa.lessonIndex = currentIndex >= 0 ? currentIndex : 0;
       pool.push(qa);
     }
   });
@@ -1488,6 +1498,15 @@ export function renderSoloQuizStageHTML(soloState, options = {}) {
 
   // End-of-Round Revision Receipt Summary Card
   if (soloState.cursor >= soloState.queue.length) {
+    if (!soloState._xpAwarded && typeof window !== 'undefined') {
+      soloState._xpAwarded = true;
+      window.hhAwardXp?.({
+        amount: Math.max(10, soloState.firstTryCorrect * 4),
+        source: 'solo_recall',
+        unitId,
+        lessonId: soloState.lessonId || '',
+      });
+    }
     const finishTs = soloState.finishedAt || Date.now();
     const elapsedStr = formatSoloElapsed(finishTs - (soloState.startedAt || finishTs));
     const pct = totalInitial > 0 ? Math.round((soloState.firstTryCorrect / totalInitial) * 100) : 100;
@@ -1599,99 +1618,112 @@ export function renderSoloQuizStageHTML(soloState, options = {}) {
   let originBadgeHtml = '';
   if ((soloState.mode === 'other' || soloState.mode === 'all') && item.unitMeta) {
     originBadgeHtml = `<span class="hh-solo-origin-pill" style="background:${item.unitMeta.bg};border-color:${item.unitMeta.border};color:${item.unitMeta.text};">${item.unitMeta.label}</span>`;
-  } else if (item.lessonNum && !item.isBaselineStarter) {
-    originBadgeHtml = `<span class="hh-solo-origin-pill">Lesson ${item.lessonNum}${item.stageNum ? ` &bull; Stage ${item.stageNum}` : ''}</span>`;
+  } else if (item.lessonNum !== undefined && item.lessonNum !== null && !item.isBaselineStarter) {
+    const lessonLbl = item.lessonNum === 0 ? 'Prologue' : `Lesson ${item.lessonNum}`;
+    originBadgeHtml = `<span class="hh-solo-origin-pill">${lessonLbl}${item.stageNum ? ` &bull; Stage ${item.stageNum}` : ''}</span>`;
   } else if (item.isBaselineStarter) {
     originBadgeHtml = `<span class="hh-solo-origin-pill">Prior Knowledge</span>`;
   }
 
   const targetUnitId = item.unitId || unitId;
-  const lessonNum = item.lessonNum || 1;
+  const lessonNum = item.lessonNum ?? 1;
+  const jumpLessonArg = typeof item.lessonIndex === 'number' ? item.lessonIndex + 1 : Math.max(1, lessonNum);
   const stageNum = item.stageNum || 1;
 
   return `
     <div class="hh-solo-card">
-      <div class="hh-solo-progress-header">
-        <div class="hh-solo-progress-left">
-          <span class="hh-solo-q-counter ${isReviewPass ? 'is-review' : ''}">${stepText}</span>
-          ${originBadgeHtml}
-        </div>
-        <div class="hh-solo-progress-right">
-          <span class="hh-solo-secured-tag">${masteredCount}/${totalInitial} Secured</span>
-          ${
-            isReviewPass
-              ? `<button type="button" class="hh-solo-finish-early-btn" onclick="event.stopPropagation(); window.finishSoloRoundEarly();" title="Finish round and view Revision Receipt">Finish &rarr;</button>`
-              : ''
-          }
-        </div>
-      </div>
-
-      <div class="hh-solo-progress-track" role="progressbar" aria-valuenow="${progressPct}" aria-valuemin="0" aria-valuemax="100">
-        <div class="hh-solo-progress-fill" style="width: ${progressPct}%;"></div>
-      </div>
-
-      <div class="hh-solo-question-stem">${qText}</div>
-
-      ${
-        !soloState.isRevealed
-          ? `
-        <div class="hh-solo-recall-prompt">
-          <i class="fa-solid fa-brain"></i>
-          <span>Say or think your answer first, then tap Reveal</span>
-        </div>
-
-        <button type="button"
-          class="hh-solo-reveal-btn"
-          onclick="event.stopPropagation(); window.revealSoloDoNowCard();">
-          <i class="fa-solid fa-eye"></i>
-          <span>Reveal Answer</span>
-        </button>
-      `
-          : `
-        <div class="hh-solo-answer-panel">
-          <div class="hh-solo-answer-label">
-            <i class="fa-solid fa-circle-check"></i>
-            <span>Model Answer</span>
+      <div class="hh-solo-top-slot">
+        <div class="hh-solo-progress-header">
+          <div class="hh-solo-progress-left">
+            <span class="hh-solo-q-counter ${isReviewPass ? 'is-review' : ''}">${stepText}</span>
+            ${originBadgeHtml}
           </div>
-          <div class="hh-solo-answer-text">${aText}</div>
-          ${
-            item.hasSubstantiveExplanation && expText
-              ? `
-            <div class="hh-solo-explanation-box">
-              <i class="fa-solid fa-lightbulb"></i>
-              <div>
-                <div class="hh-solo-explanation-prose">${expText}</div>
-                ${
-                  !item.isBaselineStarter
-                    ? `<button type="button" class="hh-solo-jump-link" onclick="event.stopPropagation(); window.jumpToLessonFromDoNow('${targetUnitId}', ${lessonNum}, ${stageNum});"><i class="fa-solid fa-book-open"></i> Read ${isGcse ? 'Lesson' : 'Enquiry'} ${lessonNum} &bull; Stage ${stageNum} &rarr;</button>`
-                    : ''
-                }
-              </div>
-            </div>
-          `
-              : !item.isBaselineStarter
-                ? `<div class="hh-solo-jump-row"><button type="button" class="hh-solo-jump-link" onclick="event.stopPropagation(); window.jumpToLessonFromDoNow('${targetUnitId}', ${lessonNum}, ${stageNum});"><i class="fa-solid fa-book-open"></i> Review Stage ${stageNum} Narrative &rarr;</button></div>`
+          <div class="hh-solo-progress-right">
+            <span class="hh-solo-secured-tag">${masteredCount}/${totalInitial} Secured</span>
+            ${
+              isReviewPass
+                ? `<button type="button" class="hh-solo-finish-early-btn" onclick="event.stopPropagation(); window.finishSoloRoundEarly();" title="Finish round and view Revision Receipt">Finish &rarr;</button>`
                 : ''
-          }
+            }
+          </div>
         </div>
 
-        <div class="hh-solo-grade-prompt">Did you recall the key point accurately?</div>
-        <div class="hh-solo-grade-actions">
-          <button type="button"
-            class="hh-solo-grade-btn review"
-            onclick="event.stopPropagation(); window.gradeSoloDoNowCard(false);">
-            <i class="fa-solid fa-rotate-right"></i>
-            <span>Review again &#8635;</span>
-          </button>
-          <button type="button"
-            class="hh-solo-grade-btn gotit"
-            onclick="event.stopPropagation(); window.gradeSoloDoNowCard(true);">
-            <i class="fa-solid fa-check"></i>
-            <span>Got it &#10003;</span>
-          </button>
+        <div class="hh-solo-progress-track" role="progressbar" aria-valuenow="${progressPct}" aria-valuemin="0" aria-valuemax="100">
+          <div class="hh-solo-progress-fill" style="width: ${progressPct}%;"></div>
         </div>
-      `
-      }
+      </div>
+
+      <div class="hh-solo-middle-slot">
+        <div class="hh-solo-question-stem">${qText}</div>
+
+        ${
+          !soloState.isRevealed
+            ? `
+          <div class="hh-solo-recall-prompt">
+            <i class="fa-solid fa-brain"></i>
+            <span>Think of your answer first, then tap Reveal</span>
+          </div>
+        `
+            : `
+          <div class="hh-solo-answer-panel">
+            <div class="hh-solo-answer-label">
+              <i class="fa-solid fa-circle-check"></i>
+              <span>Model Answer</span>
+            </div>
+            <div class="hh-solo-answer-text">${aText}</div>
+            ${
+              item.hasSubstantiveExplanation && expText
+                ? `
+              <div class="hh-solo-explanation-box">
+                <i class="fa-solid fa-lightbulb"></i>
+                <div>
+                  <div class="hh-solo-explanation-prose">${expText}</div>
+                  ${
+                    !item.isBaselineStarter
+                      ? `<button type="button" class="hh-solo-jump-link" onclick="event.stopPropagation(); window.jumpToLessonFromDoNow('${targetUnitId}', ${jumpLessonArg}, ${stageNum});"><i class="fa-solid fa-book-open"></i> Read Stage ${stageNum} &rarr;</button>`
+                      : ''
+                  }
+                </div>
+              </div>
+            `
+                : !item.isBaselineStarter
+                  ? `<div class="hh-solo-jump-row"><button type="button" class="hh-solo-jump-link" onclick="event.stopPropagation(); window.jumpToLessonFromDoNow('${targetUnitId}', ${jumpLessonArg}, ${stageNum});"><i class="fa-solid fa-book-open"></i> Review Stage ${stageNum} &rarr;</button></div>`
+                  : ''
+            }
+          </div>
+        `
+        }
+      </div>
+
+      <div class="hh-solo-bottom-slot">
+        ${
+          !soloState.isRevealed
+            ? `
+          <button type="button"
+            class="hh-solo-reveal-btn"
+            onclick="event.stopPropagation(); window.revealSoloDoNowCard();">
+            <i class="fa-solid fa-eye"></i>
+            <span>Reveal Answer</span>
+          </button>
+        `
+            : `
+          <div class="hh-solo-grade-actions">
+            <button type="button"
+              class="hh-solo-grade-btn review"
+              onclick="event.stopPropagation(); window.gradeSoloDoNowCard(false);">
+              <i class="fa-solid fa-rotate-right"></i>
+              <span>Review again</span>
+            </button>
+            <button type="button"
+              class="hh-solo-grade-btn gotit"
+              onclick="event.stopPropagation(); window.gradeSoloDoNowCard(true);">
+              <i class="fa-solid fa-check"></i>
+              <span>Got it &#10003;</span>
+            </button>
+          </div>
+        `
+        }
+      </div>
     </div>
   `;
 }

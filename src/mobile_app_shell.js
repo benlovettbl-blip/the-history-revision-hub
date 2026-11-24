@@ -1,6 +1,7 @@
 /**
- * Mobile App Shell, 4-Tab Thumb Bar, "My Courses" + Teacher QR Pinning,
- * Continue Learning, Leitner Weak-Spots Launchpad, PWA Install Guide & Offline Unit Save
+ * Mobile App Shell v2: Adaptive 5-Tab Thumb Bar (Home · Learn · Quiz · Exam · Arcade),
+ * Strict 1-Screen Mobile Home Fold, Course Pinning + Teacher QR, Offline Chunk Pre-Warm,
+ * Reading Scroll Memory, iOS Keyboard Guard, and Dark/Light Quick Toggle.
  */
 
 import './mobile_app_shell.css';
@@ -92,6 +93,11 @@ function isValidUnitId(unitId) {
   return Boolean(dbObj && typeof dbObj === 'object' && dbObj[unitId]);
 }
 
+function isGcseCourseId(unitId) {
+  const norm = normalizeUnitId(unitId);
+  return COURSE_MAP.get(norm)?.group === 'gcse';
+}
+
 export function showMobileShellToast(message) {
   if (typeof document === 'undefined') return;
   let toast = document.getElementById('hh-shell-toast');
@@ -112,10 +118,6 @@ export function showMobileShellToast(message) {
   }, 2800);
 }
 
-/**
- * Inspects URL for ?pin_units=edexcel_medicine,eee or ?my_units=...
- * Saves valid unit IDs, shows toast, and cleans query parameters via history.replaceState.
- */
 export function applyUrlDeepLinkPins() {
   if (typeof window === 'undefined' || !window.location) return false;
   const params = new URLSearchParams(window.location.search || '');
@@ -188,6 +190,19 @@ export function setPinnedUnits(unitIds) {
   } catch (e) {}
   syncMobileBottomNavActiveState();
   return clean;
+}
+
+export function pinSingleUnitQuick(unitId) {
+  const cleanId = normalizeUnitId(unitId);
+  if (!cleanId || !isValidUnitId(cleanId)) return;
+  const current = getPinnedUnits();
+  if (!current.includes(cleanId)) {
+    setPinnedUnits([...current, cleanId]);
+    const title = COURSE_MAP.get(cleanId)?.title?.split('(')[0]?.trim() || 'Course';
+    showMobileShellToast(`Pinned "${title}" to My Courses!`);
+  } else {
+    showMobileShellToast('Already in My Pinned Courses');
+  }
 }
 
 export function isShowAllCoursesEnabled() {
@@ -280,9 +295,6 @@ export function recordLastVisitedLesson({
   return payload;
 }
 
-/**
- * Computes Leitner spaced-repetition due items + active weak spots across state.mastery & state.weakSpots.
- */
 export function getDueWeakSpotSummary() {
   const now = Date.now();
   let masteryMap = state.mastery;
@@ -356,6 +368,63 @@ function resolveBestTargetUnitId() {
   return '';
 }
 
+function resolveBestGcseTargetUnitId() {
+  const current =
+    state.selectedUnitId ||
+    (typeof window !== 'undefined' && window.currentUnitId) ||
+    '';
+  if (current && isGcseCourseId(current)) return normalizeUnitId(current);
+  const last = getLastVisitedLesson();
+  if (last && last.unitId && isGcseCourseId(last.unitId)) return normalizeUnitId(last.unitId);
+  const pinnedGcse = getPinnedUnits().find((id) => isGcseCourseId(id));
+  if (pinnedGcse) return pinnedGcse;
+  return 'cme_new';
+}
+
+function shouldShowMobileExamTab() {
+  const current =
+    state.selectedUnitId ||
+    (typeof window !== 'undefined' && window.currentUnitId) ||
+    '';
+  if (current && isGcseCourseId(current)) return true;
+  const pinned = getPinnedUnits();
+  if (pinned.length === 0) return true; // Default 5-tab GCSE layout for cold / unpinned visitors
+  return pinned.some((id) => isGcseCourseId(id));
+}
+
+function readLocalGamificationSnapshot() {
+  try {
+    if (typeof window !== 'undefined' && typeof window.hhGetGamificationSummary === 'function') {
+      return window.hhGetGamificationSummary();
+    }
+    const raw = localStorage.getItem('hh_gamification_v1');
+    if (raw) {
+      const p = JSON.parse(raw);
+      if (p && typeof p === 'object') {
+        const xp = Math.max(0, Number(p.xp) || 0);
+        const streak = Math.max(0, Number(p.streak) || 0);
+        const rank =
+          xp >= 2000
+            ? 'Grade 9 Scholar'
+            : xp >= 1000
+              ? 'Spec Master'
+              : xp >= 450
+                ? 'Junior Historian'
+                : xp >= 150
+                  ? 'Archivist'
+                  : 'History Novice';
+        return { xp, streak, rank, freezes: Number(p.freezes) || 0 };
+      }
+    }
+    const legacyRaw = localStorage.getItem('hh_revision_streak_v1');
+    if (legacyRaw) {
+      const lp = JSON.parse(legacyRaw);
+      return { xp: 0, streak: Math.max(0, Number(lp?.streak) || 0), rank: 'History Novice', freezes: 0 };
+    }
+  } catch (e) {}
+  return { xp: 0, streak: 0, rank: 'History Novice', freezes: 0 };
+}
+
 function isStandaloneDisplayMode() {
   if (typeof window === 'undefined') return false;
   return Boolean(
@@ -401,7 +470,7 @@ export async function triggerAppInstall() {
 }
 
 /**
- * Offline Unit Pre-Save via Service Worker message + Cache Storage fallback
+ * Offline Unit Pre-Save + Lazy Interactive Chunk Pre-Warm (Quiz Arena, Exam Trainer, Arcade)
  */
 export async function saveUnitOffline(unitId, btnEl = null) {
   const cleanId = normalizeUnitId(unitId);
@@ -415,6 +484,14 @@ export async function saveUnitOffline(unitId, btnEl = null) {
   let swSucceeded = false;
 
   try {
+    // Pre-warm lazy JS chunks so Quiz, Exam & Arcade work offline on the bus
+    Promise.allSettled([
+      import('./mobile_quiz_arena.js'),
+      import('./mobile_exam_trainer.js'),
+      import('./arcade_zone.js'),
+      import('./universal_living_timeline.js'),
+    ]);
+
     if (
       typeof navigator !== 'undefined' &&
       'serviceWorker' in navigator &&
@@ -436,7 +513,6 @@ export async function saveUnitOffline(unitId, btnEl = null) {
       });
     }
 
-    // Fallback / parallel hydration when SW is unregistered (e.g. localhost) or still claiming
     if (!swSucceeded) {
       await ensureUnitLoaded(cleanId);
       if (typeof window !== 'undefined' && 'caches' in window) {
@@ -463,7 +539,9 @@ export async function saveUnitOffline(unitId, btnEl = null) {
       btnEl.innerHTML = '<i class="fa-solid fa-check"></i> <span>Saved Offline</span>';
     }
     const courseTitle = COURSE_MAP.get(cleanId)?.title || cleanId;
-    showMobileShellToast(`Saved "${courseTitle.split('(')[0].trim()}" for offline study!`);
+    showMobileShellToast(
+      `Saved "${courseTitle.split('(')[0].trim()}" lessons, quizzes & exam trainer offline!`,
+    );
     return true;
   }
 
@@ -476,7 +554,32 @@ export async function saveUnitOffline(unitId, btnEl = null) {
 }
 
 /**
- * Renders the Smart Mobile Home Launchpad Card at top of renderDashboard() in src/views.js
+ * 1-Tap Dark / Light Mode Toggle for Mobile Pupil Header
+ */
+export function toggleMobileDarkMode() {
+  if (typeof document === 'undefined') return;
+  const current = document.documentElement.getAttribute('data-theme') || state.theme || 'primary';
+  const next = current === 'space' ? 'primary' : 'space';
+  state.theme = next;
+  document.documentElement.setAttribute('data-theme', next);
+  try {
+    localStorage.setItem('history_theme', next);
+  } catch (e) {}
+  syncMobileDarkToggleIcon();
+}
+
+function syncMobileDarkToggleIcon() {
+  if (typeof document === 'undefined') return;
+  const icon = document.getElementById('hh-mobile-dark-icon');
+  const btn = document.getElementById('btn-mobile-dark-toggle');
+  if (!icon || !btn) return;
+  const isDark = document.documentElement.getAttribute('data-theme') === 'space';
+  icon.className = isDark ? 'fa-solid fa-sun' : 'fa-solid fa-moon';
+  btn.title = isDark ? 'Switch to Light Mode' : 'Switch to Dark Mode';
+}
+
+/**
+ * Renders the Strict 1-Screen Fold Mobile Home Launchpad Card at top of renderDashboard()
  */
 export function renderMobileHomeHeroHTML(units = []) {
   applyUrlDeepLinkPins();
@@ -485,6 +588,10 @@ export function renderMobileHomeHeroHTML(units = []) {
   const lastLesson = getLastVisitedLesson();
   const weakSummary = getDueWeakSpotSummary();
   const savedOfflineSet = getSavedOfflineUnitsSet();
+  const gStats = readLocalGamificationSnapshot();
+  const showExamQuickChip = shouldShowMobileExamTab();
+  const bestGcseUnit = resolveBestGcseTargetUnitId();
+  const bestQuizUnit = resolveBestTargetUnitId() || bestGcseUnit;
 
   const unitLookup = new Map();
   if (Array.isArray(units)) {
@@ -494,11 +601,13 @@ export function renderMobileHomeHeroHTML(units = []) {
   }
 
   const showIosInstall = !isInstallBannerDismissed() && isIosSafariInstallCandidate();
-  const showAndroidInstall = !isInstallBannerDismissed() && Boolean(deferredInstallPrompt) && !isStandaloneDisplayMode();
+  const showAndroidInstall =
+    !isInstallBannerDismissed() && Boolean(deferredInstallPrompt) && !isStandaloneDisplayMode();
   const hasAnyPersonalState =
     pinnedIds.length > 0 ||
     Boolean(lastLesson) ||
     weakSummary.dueCount > 0 ||
+    gStats.xp > 0 ||
     showIosInstall ||
     showAndroidInstall;
 
@@ -509,7 +618,7 @@ export function renderMobileHomeHeroHTML(units = []) {
         <div class="hh-install-banner-main">
           <div class="hh-install-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
           <div class="hh-install-copy">
-            <strong>Install History Hub App</strong> &mdash; instant 1-tap launch &amp; offline course access.
+            <strong>Install History Hub App</strong> &mdash; 1-tap launch &amp; offline study.
           </div>
         </div>
         <div class="hh-install-actions">
@@ -528,7 +637,7 @@ export function renderMobileHomeHeroHTML(units = []) {
         <div class="hh-install-banner-main">
           <div class="hh-install-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
           <div class="hh-install-copy">
-            <strong>Install App:</strong> Tap <strong>Share</strong> <i class="fa-solid fa-share-from-square" style="margin: 0 2px;"></i> + <strong>Add to Home Screen</strong> for full-screen study.
+            <strong>Add App:</strong> Tap <strong>Share</strong> <i class="fa-solid fa-share-from-square" style="margin: 0 2px;"></i> + <strong>Add to Home Screen</strong>.
           </div>
         </div>
         <div class="hh-install-actions">
@@ -540,14 +649,34 @@ export function renderMobileHomeHeroHTML(units = []) {
     `;
   }
 
-  // Card A: Continue Where You Left Off
-  const resumeCardHtml = lastLesson
+  // Gamification Compact Status Strip (Streak + XP + Zero-Account Backup)
+  const gamificationStripHtml = `
+    <div class="hh-gami-strip">
+      <div class="hh-gami-left">
+        <span class="hh-gami-pill streak" title="Daily revision streak">
+          <i class="fa-solid fa-fire"></i>
+          <span>${gStats.streak > 0 ? `${gStats.streak}d Streak` : 'Start Streak'}</span>
+        </span>
+        <span class="hh-gami-pill xp" title="Total XP &amp; Rank">
+          <i class="fa-solid fa-bolt"></i>
+          <span>${gStats.xp} XP &middot; ${escapeHtml(gStats.rank)}</span>
+        </span>
+      </div>
+      <button type="button" class="hh-gami-backup-btn" onclick="if(window.hhOpenProgressBackupModal){window.hhOpenProgressBackupModal();}else{import('/src/mobile_gamification.js').then(m=>m.openProgressBackupModal&&m.openProgressBackupModal());}" title="Copy or restore your progress backup code">
+        <i class="fa-solid fa-cloud-arrow-up"></i>
+        <span>Backup</span>
+      </button>
+    </div>
+  `;
+
+  // Primary Action Card: Compact Resume (when lastLesson exists) OR Choose Subjects (ONLY when 0 courses are pinned!)
+  const primaryCardHtml = lastLesson
     ? `
       <div class="hh-lp-card hh-lp-card-resume">
         <div class="hh-lp-meta">
           <div class="hh-lp-eyebrow">
             <i class="fa-solid fa-book-open" style="color: #059669;"></i>
-            <span>Continue Where You Left Off</span>
+            <span>Continue Learning</span>
           </div>
           <div class="hh-lp-title" title="${escapeHtml(lastLesson.lessonTitle)}">${escapeHtml(lastLesson.lessonTitle)}</div>
           <div class="hh-lp-sub">${escapeHtml(lastLesson.unitTitle)}</div>
@@ -567,41 +696,50 @@ export function renderMobileHomeHeroHTML(units = []) {
             <span>Personalise Your Hub</span>
           </div>
           <div class="hh-lp-title">Studying GCSE or KS3 History?</div>
-          <div class="hh-lp-sub">Pin your exact 1&ndash;6 subjects to hide all other courses.</div>
+          <div class="hh-lp-sub">Pin your exact 1&ndash;6 courses for 1-tap revision.</div>
         </div>
         <button type="button" class="hh-lp-btn hh-lp-btn-blue" onclick="window.hhOpenPinUnitsModal && window.hhOpenPinUnitsModal()">
           <i class="fa-solid fa-sliders"></i>
-          <span>Choose Subjects</span>
+          <span>Choose</span>
         </button>
       </div>
     `
       : '';
 
-  // Card B: Fix My Weak Spots (Due Today)
-  const hasDue = weakSummary.dueCount > 0;
-  const weakCardHtml = `
-    <div class="hh-lp-card hh-lp-card-weak ${hasDue ? 'has-due' : ''}">
-      <div class="hh-lp-meta">
-        <div class="hh-lp-eyebrow">
-          <i class="fa-solid fa-bolt" style="color: ${hasDue ? '#dc2626' : '#d97706'};"></i>
-          <span>Spaced Retrieval</span>
-          <span class="hh-due-pill ${hasDue ? '' : 'zero'}">${weakSummary.dueCount} Due Today</span>
-        </div>
-        <div class="hh-lp-title">Fix My Weak Spots (Due Today)</div>
-        <div class="hh-lp-sub">${
-          hasDue
-            ? `${weakSummary.dueCount} Leitner Box 1 / overdue recall ${weakSummary.dueCount === 1 ? 'question' : 'questions'} ready`
-            : 'All caught up — run a quick 2-minute recall check'
-        }</div>
-      </div>
-      <button type="button" class="hh-lp-btn ${hasDue ? 'hh-lp-btn-red' : 'hh-lp-btn-amber'}" onclick="window.hhLaunchWeakSpotsDrill && window.hhLaunchWeakSpotsDrill()">
-        <i class="fa-solid fa-bullseye"></i>
-        <span>${hasDue ? 'Fix Now' : 'Practise'}</span>
+  // Single-Row Quick Strip: 60s Blitz | 1 Exam Q | Review Mistakes (X) [HIDDEN when X === 0]
+  const hasMistakes = weakSummary.dueCount > 0;
+  const quickStripHtml = `
+    <div class="hh-home-quick-strip" role="group" aria-label="Quick Revision Actions">
+      <button type="button" class="hh-quick-chip blitz" onclick="window.switchView && window.switchView('interactive', '${escapeHtml(bestQuizUnit)}', false, { mode: 'blitz' })">
+        <i class="fa-solid fa-bolt" style="color:#f59e0b;"></i>
+        <span>60s Blitz</span>
       </button>
+      ${
+        showExamQuickChip
+          ? `<button type="button" class="hh-quick-chip exam" onclick="window.switchView && window.switchView('exam-trainer', '${escapeHtml(bestGcseUnit)}')">
+              <i class="fa-solid fa-bullseye" style="color:#6366f1;"></i>
+              <span>1 Exam Q</span>
+            </button>`
+          : `<button type="button" class="hh-quick-chip gapfill" onclick="window.switchView && window.switchView('interactive', '${escapeHtml(bestQuizUnit)}', false, { mode: 'cloze' })">
+              <i class="fa-solid fa-puzzle-piece" style="color:#0284c7;"></i>
+              <span>Gap Fill</span>
+            </button>`
+      }
+      ${
+        hasMistakes
+          ? `<button type="button" class="hh-quick-chip mistakes" onclick="window.hhLaunchWeakSpotsDrill && window.hhLaunchWeakSpotsDrill()">
+              <i class="fa-solid fa-rotate-left" style="color:#dc2626;"></i>
+              <span>Mistakes (${weakSummary.dueCount})</span>
+            </button>`
+          : `<button type="button" class="hh-quick-chip gapfill" onclick="window.switchView && window.switchView('interactive', '${escapeHtml(bestQuizUnit)}', false, { mode: 'cloze' })">
+              <i class="fa-solid fa-puzzle-piece" style="color:#0284c7;"></i>
+              <span>Gap Fill</span>
+            </button>`
+      }
     </div>
   `;
 
-  // Shelf C: My Pinned Courses Shelf (when >0 pinned)
+  // Shelf: My Pinned Courses Shelf
   let pinnedShelfHtml = '';
   if (pinnedIds.length > 0) {
     const totalCatalogueCount = Math.max(26, units.length || 26);
@@ -621,7 +759,7 @@ export function renderMobileHomeHeroHTML(units = []) {
           if (lastIdxRaw !== null) {
             const idxNum = parseInt(lastIdxRaw, 10);
             if (!isNaN(idxNum) && idxNum >= 0) {
-              savedLessonBadge = `Resume Lesson ${idxNum + 1}`;
+              savedLessonBadge = `Resume L${idxNum + 1}`;
             }
           }
         } catch (e) {}
@@ -632,7 +770,7 @@ export function renderMobileHomeHeroHTML(units = []) {
             <div>
               <div class="hh-pinned-card-top">
                 <span class="hh-pinned-stage-tag">${escapeHtml(meta.badge)}</span>
-                <span style="font-size: 0.7rem; font-weight: 700; color: #64748b;">${escapeHtml(savedLessonBadge)}</span>
+                <span class="hh-pinned-resume-meta">${escapeHtml(savedLessonBadge)}</span>
               </div>
               <h4 class="hh-pinned-card-name">${escapeHtml(meta.title)}</h4>
             </div>
@@ -641,13 +779,13 @@ export function renderMobileHomeHeroHTML(units = []) {
                 type="button"
                 class="hh-offline-pill ${isOfflineReady ? 'is-saved' : ''}"
                 onclick="event.stopPropagation(); window.hhSaveUnitOffline && window.hhSaveUnitOffline('${escapeHtml(uId)}', this)"
-                title="Save unit curriculum &amp; quizzes for offline study"
+                title="Save lessons, quizzes &amp; exam trainer for offline study"
               >
                 <i class="fa-solid ${isOfflineReady ? 'fa-check' : 'fa-download'}"></i>
-                <span>${isOfflineReady ? 'Saved Offline' : '⬇ Save Offline'}</span>
+                <span>${isOfflineReady ? 'Saved Offline' : 'Save Offline'}</span>
               </button>
               <span class="hh-pinned-open-lbl">
-                <span>Study</span>
+                <span>Open</span>
                 <i class="fa-solid fa-arrow-right" style="font-size: 0.66rem;"></i>
               </span>
             </div>
@@ -666,11 +804,11 @@ export function renderMobileHomeHeroHTML(units = []) {
           <div class="hh-pinned-controls">
             <button type="button" class="hh-shelf-ctrl-btn primary-outline" onclick="window.hhOpenPinUnitsModal && window.hhOpenPinUnitsModal()">
               <i class="fa-solid fa-sliders"></i>
-              <span>Choose My Subjects</span>
+              <span>Edit</span>
             </button>
             <button type="button" class="hh-shelf-ctrl-btn" id="hh-btn-toggle-all-courses" onclick="window.hhToggleShowAllCourses && window.hhToggleShowAllCourses()">
               <i class="fa-solid ${showAllCoursesExpanded ? 'fa-chevron-up' : 'fa-layer-group'}"></i>
-              <span>${showAllCoursesExpanded ? 'Hide Other Courses' : `Show All ${totalCatalogueCount} Courses`}</span>
+              <span>${showAllCoursesExpanded ? 'Hide Others' : `All ${totalCatalogueCount}`}</span>
             </button>
           </div>
         </div>
@@ -684,10 +822,9 @@ export function renderMobileHomeHeroHTML(units = []) {
   return `
     <div id="hh-home-launchpad" class="hh-home-launchpad ${hasAnyPersonalState ? 'hh-launchpad-active' : 'hh-launchpad-empty'} no-print">
       ${installHtml}
-      <div class="hh-launchpad-actions-grid">
-        ${resumeCardHtml}
-        ${weakCardHtml}
-      </div>
+      ${gamificationStripHtml}
+      ${primaryCardHtml}
+      ${quickStripHtml}
       ${pinnedShelfHtml}
     </div>
   `;
@@ -704,14 +841,11 @@ export function toggleShowAllCourses() {
   if (btn) {
     btn.innerHTML = `
       <i class="fa-solid ${showAllCoursesExpanded ? 'fa-chevron-up' : 'fa-layer-group'}"></i>
-      <span>${showAllCoursesExpanded ? 'Hide Other Courses' : 'Show All 26 Courses'}</span>
+      <span>${showAllCoursesExpanded ? 'Hide Others' : 'All 26'}</span>
     `;
   }
 }
 
-/**
- * Opens "Choose My Subjects" + Teacher QR Setup Link Modal
- */
 export function openPinUnitsModal(options = {}) {
   if (typeof document === 'undefined') return;
   const existing = document.getElementById('hh-pin-units-modal');
@@ -720,7 +854,6 @@ export function openPinUnitsModal(options = {}) {
   const selectedSet = new Set(getPinnedUnits());
   const onCompleteAction = options.onCompleteAction || null;
 
-  // Push modal state so Android Back closes modal cleanly first
   if (typeof window !== 'undefined' && window.history && typeof window.history.pushState === 'function') {
     try {
       window.history.pushState(
@@ -768,14 +901,14 @@ export function openPinUnitsModal(options = {}) {
           <div style="font-size:0.68rem;font-weight:800;text-transform:uppercase;letter-spacing:0.06em;color:#2563eb;margin-bottom:3px;">
             <i class="fa-solid fa-thumbtack"></i> My Courses &amp; Class QR Setup
           </div>
-          <h3 id="hh-pin-modal-title" style="margin:0;font-size:1.15rem;font-weight:800;color:#0f172a;">
-            ${onCompleteAction === 'arcade' ? 'Pick a Course to Launch Arcade' : 'Choose Your Exact History Courses'}
+          <h3 id="hh-pin-modal-title" style="margin:0;font-size:1.12rem;font-weight:800;color:#0f172a;">
+            ${onCompleteAction === 'arcade' ? 'Pick a Course to Launch Arcade' : 'Choose Your History Courses'}
           </h3>
-          <p style="margin:3px 0 0 0;font-size:0.79rem;color:#64748b;">
-            Tick your 1&ndash;6 courses for 1-tap access, or generate a Teacher QR setup link for your class.
+          <p style="margin:3px 0 0 0;font-size:0.78rem;color:#64748b;">
+            Tick your 1&ndash;6 courses for 1-tap access, or generate a Teacher QR setup link.
           </p>
         </div>
-        <button type="button" id="hh-pin-modal-close" aria-label="Close modal" style="background:#f1f5f9;border:1px solid #cbd5e1;border-radius:50%;width:34px;height:34px;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;color:#334155;font-size:0.95rem;flex-shrink:0;">
+        <button type="button" id="hh-pin-modal-close" aria-label="Close modal" style="background:#f1f5f9;border:1px solid #cbd5e1;border-radius:50%;width:36px;height:36px;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;color:#334155;font-size:0.95rem;flex-shrink:0;">
           <i class="fa-solid fa-xmark"></i>
         </button>
       </div>
@@ -799,11 +932,11 @@ export function openPinUnitsModal(options = {}) {
         <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;">
           <button type="button" id="hh-pin-qr-btn" style="background:#ffffff;color:#0f172a;border:1.5px solid #cbd5e1;border-radius:9px;padding:8px 12px;font-size:0.78rem;font-weight:800;cursor:pointer;display:inline-flex;align-items:center;gap:6px;">
             <i class="fa-solid fa-qrcode" style="color:#2563eb;"></i>
-            <span>Teacher QR / Copy Setup Link</span>
+            <span>Class QR</span>
           </button>
           <button type="button" id="hh-pin-save-btn" style="background:#2563eb;color:#ffffff;border:none;border-radius:9px;padding:9px 16px;font-size:0.82rem;font-weight:800;cursor:pointer;display:inline-flex;align-items:center;gap:6px;box-shadow:0 4px 12px rgba(37,99,235,0.28);">
             <i class="fa-solid fa-check"></i>
-            <span>${onCompleteAction === 'arcade' ? 'Save & Open Arcade' : 'Save My Courses'}</span>
+            <span>${onCompleteAction === 'arcade' ? 'Save & Play' : 'Save Courses'}</span>
           </button>
         </div>
       </div>
@@ -934,13 +1067,12 @@ export function openPinUnitsModal(options = {}) {
 }
 
 /**
- * Closes any open modal, overlay, or mobile drawer before back-stepping navigation.
- * Returns true if an open UI layer was closed.
+ * Closes any open modal, overlay, active arcade game, or mobile drawer before back-stepping navigation.
  */
 export function closeAnyOpenMobileModalOrDrawer() {
   if (typeof document === 'undefined') return { closed: false, hadHistoryEntry: false };
 
-  // 1. Pin Units Modal
+  // 1. Pin Units or Backup Modal
   const pinModal = document.getElementById('hh-pin-units-modal');
   if (pinModal) {
     const hadHistoryEntry = Boolean(window.__hhPinModalPushedHistory);
@@ -949,7 +1081,53 @@ export function closeAnyOpenMobileModalOrDrawer() {
     return { closed: true, hadHistoryEntry };
   }
 
-  // 2. Keyword Search Modal
+  const backupModal = document.getElementById('hh-backup-modal');
+  if (backupModal) {
+    backupModal.remove();
+    return { closed: true, hadHistoryEntry: false };
+  }
+
+  // 2. Global Zoom Image Lightbox (#global-image-modal)
+  const globalImgModal = document.getElementById('global-image-modal');
+  if (globalImgModal) {
+    globalImgModal.remove();
+    return { closed: true, hadHistoryEntry: false };
+  }
+
+  // 3. Story Cards / Infographic Modal (#hub-infographic-modal)
+  const infoModal = document.getElementById('hub-infographic-modal');
+  if (infoModal && window.getComputedStyle(infoModal).display !== 'none') {
+    if (typeof window.closeInfographicModal === 'function') {
+      window.closeInfographicModal();
+    } else {
+      infoModal.style.display = 'none';
+      document.body.style.overflow = '';
+    }
+    return { closed: true, hadHistoryEntry: false };
+  }
+
+  // 4. Diagnostic Benchmark Modal (#diagnostic-benchmark-modal)
+  const diagModal = document.getElementById('diagnostic-benchmark-modal');
+  if (diagModal && window.getComputedStyle(diagModal).display !== 'none') {
+    if (typeof window.closeDiagnosticModal === 'function') {
+      window.closeDiagnosticModal(true);
+    } else {
+      diagModal.style.display = 'none';
+      document.body.style.overflow = '';
+    }
+    return { closed: true, hadHistoryEntry: false };
+  }
+
+  // 5. Active Arcade Game -> Step back cleanly to Arcade Lobby instead of leaving Arcade
+  if (
+    document.body.classList.contains('hh-arcade-playing') &&
+    typeof window.__hhExitArcadeGameToLobby === 'function'
+  ) {
+    window.__hhExitArcadeGameToLobby();
+    return { closed: true, hadHistoryEntry: false };
+  }
+
+  // 6. Keyword Search Modal
   const searchModal =
     document.getElementById('keyword-search-modal') ||
     document.getElementById('keyword-search-overlay');
@@ -962,7 +1140,7 @@ export function closeAnyOpenMobileModalOrDrawer() {
     return { closed: true, hadHistoryEntry: false };
   }
 
-  // 3. Mobile Slide-Out Sidebar Drawer
+  // 7. Mobile Slide-Out Sidebar Drawer
   const sidebar = document.getElementById('app-sidebar');
   if (sidebar && sidebar.classList.contains('mobile-open')) {
     sidebar.classList.remove('mobile-open');
@@ -970,7 +1148,7 @@ export function closeAnyOpenMobileModalOrDrawer() {
     return { closed: true, hadHistoryEntry: false };
   }
 
-  // 4. Unit Sticky Resource Drawer (Booklets / Infographics / Practice)
+  // 8. Unit Sticky Resource Drawer
   const unitDrawer = document.getElementById('unit-sticky-drawer-shell');
   if (
     unitDrawer &&
@@ -986,7 +1164,7 @@ export function closeAnyOpenMobileModalOrDrawer() {
     return { closed: true, hadHistoryEntry: false };
   }
 
-  // 5. Reading QR, CME Map, Infographic, Task Whiteboard, or Lightbox Modals
+  // 9. Other Removable Modals
   const removableModals = [
     'reading-qr-modal-overlay',
     'task-whiteboard-modal',
@@ -1028,101 +1206,123 @@ export function closeAnyOpenMobileModalOrDrawer() {
 }
 
 /**
- * Action Handlers for Launchpad & 4-Tab Mobile Bottom Bar
+ * Action Handlers for Launchpad & Adaptive 5-Tab Mobile Bottom Bar
  */
 export function resumeLastVisitedLesson() {
-  const last = getLastVisitedLesson();
-  if (last && last.unitId && typeof window.switchView === 'function') {
-    window.switchView('lessons', last.unitId, false, { lessonIndex: last.lessonIndex });
+  const activeView =
+    (typeof window !== 'undefined' && window.currentView) || state.currentView || 'dashboard';
+  const activeUnit =
+    state.selectedUnitId || (typeof window !== 'undefined' && window.currentUnitId) || '';
+
+  // 1. If returning to Learn from Quiz/Exam/Arcade with a saved origin & scrollY, restore exact spot!
+  if (
+    activeView !== 'lessons' &&
+    typeof window !== 'undefined' &&
+    window._unitReturnOrigin &&
+    window._unitReturnOrigin.view === 'lessons' &&
+    typeof window.returnToSavedOrigin === 'function'
+  ) {
+    window.returnToSavedOrigin(window._unitReturnOrigin.unitId);
     return;
   }
+
+  // 2. Resume last visited lesson (and restore saved reading scrollY if available)
+  const last = getLastVisitedLesson();
+  if (last && last.unitId && typeof window.switchView === 'function') {
+    let savedScroll = 0;
+    try {
+      savedScroll = parseInt(
+        sessionStorage.getItem(`hh_lesson_scroll_${last.unitId}_${last.lessonIndex}`) || '0',
+        10,
+      );
+    } catch (e) {}
+    window.switchView('lessons', last.unitId, false, {
+      lessonIndex: last.lessonIndex,
+      skipScrollToTop: savedScroll > 60,
+    });
+    if (savedScroll > 60) {
+      setTimeout(() => {
+        try {
+          window.scrollTo({ top: savedScroll, left: 0, behavior: 'instant' });
+        } catch (e) {
+          window.scrollTo(0, savedScroll);
+        }
+      }, 180);
+    }
+    return;
+  }
+
+  // 3. Cold deep-link visitor currently on a unit
+  if (activeUnit && typeof window.switchView === 'function') {
+    window.switchView('lessons', activeUnit);
+    return;
+  }
+
+  // 4. First pinned course
   const pinned = getPinnedUnits();
   if (pinned.length > 0 && typeof window.switchView === 'function') {
     window.switchView('lessons', pinned[0]);
     return;
   }
-  if (state.selectedUnitId && typeof window.switchView === 'function') {
-    window.switchView('lessons', state.selectedUnitId);
-    return;
-  }
+
   openPinUnitsModal();
 }
 
 export function launchWeakSpotsPractice() {
   const summary = getDueWeakSpotSummary();
-  const targetUnit = summary.topUnitId || resolveBestTargetUnitId();
-  if (!targetUnit) {
-    openPinUnitsModal();
-    return;
-  }
-  if (typeof window !== 'undefined') {
-    window._hhWeakSpotsPracticeActive = true;
-  }
+  const targetUnit = summary.topUnitId || resolveBestTargetUnitId() || 'edexcel_medicine';
   if (typeof window.switchView === 'function') {
-    window.switchView('quiz', targetUnit);
+    window.switchView('interactive', targetUnit, false, { mode: 'mistakes' });
   }
 }
 
-function handleBottomNavQuickQuiz() {
+function getContextualLessonIndexForTool(targetUnit) {
   const activeView =
     (typeof window !== 'undefined' && window.currentView) || state.currentView || 'dashboard';
-  const isInsideLesson =
+  const curUnit =
+    state.selectedUnitId || (typeof window !== 'undefined' && window.currentUnitId) || '';
+  if (
     activeView === 'lessons' &&
+    curUnit &&
+    normalizeUnitId(curUnit) === normalizeUnitId(targetUnit) &&
     typeof window !== 'undefined' &&
     typeof window.currentLessonIndex === 'number' &&
-    window.currentLessonIndex >= 0;
-
-  // If currently inside a lesson, open/activate the lesson's Do Now tab or starter card first!
-  if (isInsideLesson && typeof document !== 'undefined') {
-    if (typeof window.openLessonDoNowTab === 'function') {
-      window.openLessonDoNowTab();
-      return;
-    }
-    if (typeof window.activateLessonDockTab === 'function') {
-      window.activateLessonDockTab('donow');
-      return;
-    }
-    const doNowTabBtn = document.querySelector(
-      '.launchpad-tab-btn[data-tab="donow"], [data-lesson-tab="donow"], [data-dock-tab="donow"], [data-tab="donow"], [data-tab="do-now"], #hh-tab-donow, #lesson-tab-donow',
-    );
-    if (doNowTabBtn && !doNowTabBtn.classList.contains('active')) {
-      doNowTabBtn.click();
-      doNowTabBtn.closest('.lesson-launchpad-container')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      syncMobileBottomNavActiveState('donow');
-      return;
-    }
-    const doNowSection = document.querySelector(
-      '#gcse-donow-panel, .gcse-donow-panel, #lesson-do-now, .do-now-card, .retrieval-starter-card',
-    );
-    if (doNowSection) {
-      const rect = doNowSection.getBoundingClientRect();
-      const alreadyFocused = rect.top >= -20 && rect.top <= 180;
-      if (!alreadyFocused) {
-        let parent = doNowSection.closest('details');
-        while (parent) {
-          parent.open = true;
-          parent = parent.parentElement ? parent.parentElement.closest('details') : null;
-        }
-        doNowSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        return;
-      }
-    }
+    window.currentLessonIndex >= 0
+  ) {
+    return window.currentLessonIndex;
   }
+  return undefined;
+}
 
+function handleBottomNavQuickQuiz() {
   const targetUnit = resolveBestTargetUnitId() || 'edexcel_medicine';
+  const lessonIndex = getContextualLessonIndexForTool(targetUnit);
   if (typeof window.switchView === 'function') {
-    window.switchView('quiz', targetUnit);
+    window.switchView('interactive', targetUnit, false, {
+      mode: 'mcq',
+      lessonIndex,
+    });
+  }
+}
+
+function handleBottomNavExamTrainer() {
+  const targetUnit = resolveBestGcseTargetUnitId();
+  const lessonIndex = getContextualLessonIndexForTool(targetUnit);
+  if (typeof window.switchView === 'function') {
+    window.switchView('exam-trainer', targetUnit, false, {
+      lessonIndex,
+    });
   }
 }
 
 function handleBottomNavArcade() {
-  const targetUnit = resolveBestTargetUnitId();
-  if (!targetUnit) {
-    openPinUnitsModal({ onCompleteAction: 'arcade' });
-    return;
-  }
+  const targetUnit = resolveBestTargetUnitId() || 'cme_new';
+  const lessonIndex = getContextualLessonIndexForTool(targetUnit);
   if (typeof window.switchView === 'function') {
-    window.switchView('arcade', targetUnit, false, { lessonScope: 'all', game: 'lobby' });
+    window.switchView('arcade', targetUnit, false, {
+      lessonScope: typeof lessonIndex === 'number' ? lessonIndex : 'all',
+      game: 'lobby',
+    });
   }
 }
 
@@ -1130,6 +1330,9 @@ export function syncMobileBottomNavActiveState(explicitView = null) {
   if (typeof document === 'undefined') return;
   const nav = document.getElementById('hh-mobile-bottom-nav');
   if (!nav) return;
+
+  const showExam = shouldShowMobileExamTab();
+  nav.classList.toggle('hh-bnav-4col', !showExam);
 
   const view =
     explicitView ||
@@ -1140,6 +1343,8 @@ export function syncMobileBottomNavActiveState(explicitView = null) {
   let activeKey = 'home';
   if (view === 'arcade') {
     activeKey = 'arcade';
+  } else if (view === 'exam-trainer' || view === 'mock-exams' || view === 'exam-practice') {
+    activeKey = showExam ? 'exam' : 'lesson';
   } else if (view === 'interactive' || view === 'quiz' || view === 'donow') {
     activeKey = 'quiz';
   } else if (
@@ -1148,8 +1353,6 @@ export function syncMobileBottomNavActiveState(explicitView = null) {
     view === 'reading' ||
     view === 'guided-reading' ||
     view === 'individuals' ||
-    view === 'mock-exams' ||
-    view === 'exam-practice' ||
     view === 'reader' ||
     view === 'marking'
   ) {
@@ -1182,12 +1385,51 @@ function syncPupilMobileChromeClass() {
   if (document.body.classList.contains('hh-has-bottom-nav') !== isNarrow) {
     document.body.classList.toggle('hh-has-bottom-nav', isNarrow);
   }
+  syncMobileDarkToggleIcon();
+}
+
+function initVirtualKeyboardGuard() {
+  if (typeof window === 'undefined' || typeof document === 'undefined') return;
+  if (window.__hhKeyboardGuardBound) return;
+  window.__hhKeyboardGuardBound = true;
+
+  const isTextInput = (el) => {
+    if (!el || !el.tagName) return false;
+    const tag = el.tagName.toUpperCase();
+    if (tag === 'TEXTAREA') return true;
+    if (tag === 'INPUT') {
+      const type = String(el.type || 'text').toLowerCase();
+      return !['checkbox', 'radio', 'button', 'submit', 'range', 'file', 'color'].includes(type);
+    }
+    return Boolean(el.isContentEditable);
+  };
+
+  document.addEventListener(
+    'focusin',
+    (e) => {
+      if (window.innerWidth < 933 && isTextInput(e.target)) {
+        document.body?.classList?.add('hh-keyboard-open');
+      }
+    },
+    true,
+  );
+
+  document.addEventListener(
+    'focusout',
+    () => {
+      setTimeout(() => {
+        if (!isTextInput(document.activeElement)) {
+          document.body?.classList?.remove('hh-keyboard-open');
+        }
+      }, 90);
+    },
+    true,
+  );
 }
 
 function injectMobileBottomBar() {
   if (typeof document === 'undefined' || !document.body) return;
 
-  // Remove legacy 3-tab #mobile-bottom-nav so there is only 1 unified bottom bar
   const legacyBar = document.getElementById('mobile-bottom-nav');
   if (legacyBar) legacyBar.remove();
 
@@ -1202,20 +1444,24 @@ function injectMobileBottomBar() {
   nav.setAttribute('aria-label', 'Primary Mobile Navigation');
 
   nav.innerHTML = `
-    <button type="button" class="hh-bnav-btn active" id="hh-bnav-home" data-nav-key="home" title="Home Dashboard">
+    <button type="button" class="hh-bnav-btn active" id="hh-bnav-home" data-nav-key="home" title="Home">
       <i class="fa-solid fa-house"></i>
       <span class="hh-bnav-label">Home</span>
     </button>
-    <button type="button" class="hh-bnav-btn" id="hh-bnav-lesson" data-nav-key="lesson" title="Resume My Lesson">
+    <button type="button" class="hh-bnav-btn" id="hh-bnav-lesson" data-nav-key="lesson" title="Learn &amp; Read Lessons">
       <span class="hh-bnav-dot" id="hh-bnav-resume-dot" style="display:none;"></span>
       <i class="fa-solid fa-book-open"></i>
-      <span class="hh-bnav-label">My Lesson</span>
+      <span class="hh-bnav-label">Learn</span>
     </button>
-    <button type="button" class="hh-bnav-btn" id="hh-bnav-quiz" data-nav-key="quiz" title="Quick Quiz &amp; Do Now">
+    <button type="button" class="hh-bnav-btn" id="hh-bnav-quiz" data-nav-key="quiz" title="Quick Quiz &amp; Gap Fill">
       <i class="fa-solid fa-bolt"></i>
-      <span class="hh-bnav-label">Quick Quiz</span>
+      <span class="hh-bnav-label">Quiz</span>
     </button>
-    <button type="button" class="hh-bnav-btn" id="hh-bnav-arcade" data-nav-key="arcade" title="Revision Arcade">
+    <button type="button" class="hh-bnav-btn" id="hh-bnav-exam" data-nav-key="exam" title="GCSE Exam Questions &amp; Grade 9 Answers">
+      <i class="fa-solid fa-bullseye"></i>
+      <span class="hh-bnav-label">Exam</span>
+    </button>
+    <button type="button" class="hh-bnav-btn" id="hh-bnav-arcade" data-nav-key="arcade" title="Revision Arcade Games">
       <i class="fa-solid fa-gamepad"></i>
       <span class="hh-bnav-label">Arcade</span>
     </button>
@@ -1240,6 +1486,11 @@ function injectMobileBottomBar() {
     handleBottomNavQuickQuiz();
   });
 
+  nav.querySelector('#hh-bnav-exam')?.addEventListener('click', () => {
+    closeAnyOpenMobileModalOrDrawer();
+    handleBottomNavExamTrainer();
+  });
+
   nav.querySelector('#hh-bnav-arcade')?.addEventListener('click', () => {
     closeAnyOpenMobileModalOrDrawer();
     handleBottomNavArcade();
@@ -1260,9 +1511,9 @@ export function initMobileAppShell() {
   }
   window.__hhMobileShellInitialized = true;
 
-  // Bind global helpers for inline handlers & cross-module hooks
   window.hhRecordLastLesson = recordLastVisitedLesson;
   window.hhOpenPinUnitsModal = openPinUnitsModal;
+  window.hhPinSingleUnit = pinSingleUnitQuick;
   window.hhSaveUnitOffline = saveUnitOffline;
   window.hhResumeLastLesson = resumeLastVisitedLesson;
   window.hhLaunchWeakSpotsDrill = launchWeakSpotsPractice;
@@ -1270,14 +1521,14 @@ export function initMobileAppShell() {
   window.hhDismissInstallBanner = dismissInstallBanner;
   window.hhTriggerAppInstall = triggerAppInstall;
   window.hhSyncMobileBottomNav = syncMobileBottomNavActiveState;
+  window.hhToggleMobileDarkMode = toggleMobileDarkMode;
 
-  // 1. Check URL deep-link pinning (?pin_units=... or ?my_units=...)
   const didPinFromUrl = applyUrlDeepLinkPins();
 
-  // 2. Inject 4-tab bottom bar & sync Pupil Mode body class
   const bootDom = () => {
     injectMobileBottomBar();
     syncPupilMobileChromeClass();
+    initVirtualKeyboardGuard();
     if (
       didPinFromUrl &&
       ((window.currentView || state.currentView || 'dashboard') === 'dashboard') &&
@@ -1294,7 +1545,6 @@ export function initMobileAppShell() {
     bootDom();
   }
 
-  // 3. Keep body.hh-mobile-pupil-mode synced on resize & staff-mode toggles
   window.addEventListener('resize', syncPupilMobileChromeClass, { passive: true });
   if (document.body && typeof MutationObserver !== 'undefined') {
     const obs = new MutationObserver(() => {
@@ -1303,12 +1553,16 @@ export function initMobileAppShell() {
     obs.observe(document.body, { attributes: true, attributeFilter: ['class'] });
   }
 
-  // 4. Capture Android Chrome PWA Install Prompt
   window.addEventListener('beforeinstallprompt', (e) => {
     e.preventDefault();
     deferredInstallPrompt = e;
     const curView = window.currentView || state.currentView || 'dashboard';
-    if (curView === 'dashboard' && !isInstallBannerDismissed() && typeof window.switchView === 'function' && window.db) {
+    if (
+      curView === 'dashboard' &&
+      !isInstallBannerDismissed() &&
+      typeof window.switchView === 'function' &&
+      window.db
+    ) {
       window.switchView('dashboard', null, true);
     }
   });
@@ -1318,7 +1572,6 @@ export function initMobileAppShell() {
     dismissInstallBanner();
   });
 
-  // 5. Listen for Service Worker UNIT_SAVED_OFFLINE replies
   if ('serviceWorker' in navigator) {
     navigator.serviceWorker.addEventListener('message', (event) => {
       const msg = event.data;
@@ -1332,7 +1585,6 @@ export function initMobileAppShell() {
     });
   }
 
-  // 6. Close Pin Units modal on Escape key
   window.addEventListener('keydown', (e) => {
     if (e.key === 'Escape' && document.getElementById('hh-pin-units-modal')) {
       closeAnyOpenMobileModalOrDrawer();
@@ -1343,10 +1595,12 @@ export function initMobileAppShell() {
 if (typeof window !== 'undefined') {
   window.hhRecordLastLesson = recordLastVisitedLesson;
   window.hhOpenPinUnitsModal = openPinUnitsModal;
+  window.hhPinSingleUnit = pinSingleUnitQuick;
   window.hhSaveUnitOffline = saveUnitOffline;
   window.hhResumeLastLesson = resumeLastVisitedLesson;
   window.hhLaunchWeakSpotsDrill = launchWeakSpotsPractice;
   window.hhToggleShowAllCourses = toggleShowAllCourses;
   window.hhDismissInstallBanner = dismissInstallBanner;
   window.hhTriggerAppInstall = triggerAppInstall;
+  window.hhToggleMobileDarkMode = toggleMobileDarkMode;
 }

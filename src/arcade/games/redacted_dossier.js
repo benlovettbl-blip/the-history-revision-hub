@@ -1,14 +1,19 @@
 /**
  * Game 4: Redacted! ("Classified Dossier SPaG Cracker")
  * Declassify censored specification vocabulary & key individuals letter-by-letter
- * to build precision GCSE SPaG accuracy.
+ * using a 3-row QWERTY thumb keyboard to build precision GCSE SPaG accuracy.
  */
 
 import { arcadeAudio, getArcadePersonalBest, saveArcadePersonalBest } from '../arcade_audio.js';
 import { shuffleList } from '../arcade_data_adapter.js';
 import { recordQuestionResult } from '../../storage.js';
 
-const ALPHABET = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'.split('');
+const QWERTY_ROWS = [
+  ['Q', 'W', 'E', 'R', 'T', 'Y', 'U', 'I', 'O', 'P'],
+  ['A', 'S', 'D', 'F', 'G', 'H', 'J', 'K', 'L'],
+  ['Z', 'X', 'C', 'V', 'B', 'N', 'M'],
+];
+const DIGIT_ROW = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0'];
 
 export function mountRedactedDossier(stageEl, pools, ctx) {
   const pool = pools.redactedPool || [];
@@ -69,6 +74,7 @@ export function mountRedactedDossier(stageEl, pools, ctx) {
         score += bonus;
         arcadeAudio.correct();
         const { best } = saveArcadePersonalBest(ctx.unitId, 'redacted', ctx.scope, score);
+        ctx.onRoundComplete?.();
         pb = best;
         recordQuestionResult(
           currentDossier.id,
@@ -89,6 +95,7 @@ export function mountRedactedDossier(stageEl, pools, ctx) {
       if (strikes >= MAX_STRIKES) {
         roundStatus = 'LOST';
         const { best } = saveArcadePersonalBest(ctx.unitId, 'redacted', ctx.scope, score);
+        ctx.onRoundComplete?.();
         pb = best;
         recordQuestionResult(
           currentDossier.id,
@@ -120,34 +127,46 @@ export function mountRedactedDossier(stageEl, pools, ctx) {
     guessLetter(pick);
   }
 
+  function renderKeyRow(keys, rowClass = '') {
+    return `
+      <div class="red-qwerty-row ${rowClass}">
+        ${keys
+          .map((k) => {
+            const used = guessedChars.has(k);
+            const hit = used && currentDossier.term.includes(k);
+            return `<button type="button" class="red-key ${used ? (hit ? 'hit' : 'miss') : ''}" data-key="${k}" ${used ? 'disabled' : ''}>${k}</button>`;
+          })
+          .join('')}
+      </div>
+    `;
+  }
+
   function render() {
     if (!currentDossier) return;
     const clearanceLeft = MAX_STRIKES - strikes;
     const clearanceBars =
       '🟩'.repeat(Math.max(0, clearanceLeft)) + '🟥'.repeat(Math.max(0, strikes));
 
-    // Split term into words so multi-word terms never break awkwardly mid-word
     const words = currentDossier.term.split(' ');
     const hasDigits = /[0-9]/.test(currentDossier.term);
-    const keySet = hasDigits ? ALPHABET : ALPHABET.slice(0, 26);
 
     stageEl.innerHTML = `
       <div class="red-wrap">
         <div class="tlb-hud">
           <div class="tlb-stat"><span>Score</span><strong class="cyan">${score}</strong></div>
-          <div class="tlb-stat"><span>Declassified</span><strong class="green">${solvedCount} Files</strong></div>
+          <div class="tlb-stat"><span>Solved</span><strong class="green">${solvedCount}</strong></div>
           <div class="tlb-stat"><span>Clearance</span><strong>${clearanceBars}</strong></div>
           <div class="tlb-stat"><span>Best</span><strong>${Math.max(pb, score)}</strong></div>
         </div>
 
         <div class="red-dossier-card">
           <div class="red-stamp-row">
-            <span class="red-stamp"><i class="fa-solid fa-file-shield"></i> CLASSIFIED ARCHIVE DOSSIER • SPaG TARGET</span>
+            <span class="red-stamp"><i class="fa-solid fa-file-shield"></i> CLASSIFIED DOSSIER • SPaG</span>
             <span class="red-letter-count">${currentDossier.term.replace(/[^A-Z0-9]/g, '').length} Letters</span>
           </div>
 
           <p class="red-clue-main">
-            <strong>Intelligence Brief:</strong> ${currentDossier.cluePrimary}
+            <strong>Brief:</strong> ${currentDossier.cluePrimary}
           </p>
 
           ${showTopicHint ? `<div class="red-hint-pill"><i class="fa-solid fa-folder-open"></i> ${currentDossier.clueTopic}</div>` : ''}
@@ -179,31 +198,28 @@ export function mountRedactedDossier(stageEl, pools, ctx) {
               ? `
             <div class="red-lifelines">
               <button type="button" class="arcade-btn-ghost" id="red-topic-btn" ${showTopicHint ? 'disabled' : ''}>
-                <i class="fa-solid fa-compass" style="color:#38bdf8;"></i> Declassify Topic (-15)
+                <i class="fa-solid fa-compass" style="color:#38bdf8;"></i> Topic (-15)
               </button>
               <button type="button" class="arcade-btn-ghost" id="red-letter-btn">
-                <i class="fa-solid fa-key" style="color:#fbbf24;"></i> Reveal Letter &amp; Structure (-30)
+                <i class="fa-solid fa-key" style="color:#fbbf24;"></i> Reveal Letter (-30)
               </button>
             </div>
 
-            <div class="red-keyboard">
-              ${keySet
-                .map((k) => {
-                  const used = guessedChars.has(k);
-                  const hit = used && currentDossier.term.includes(k);
-                  return `<button type="button" class="red-key ${used ? (hit ? 'hit' : 'miss') : ''}" data-key="${k}" ${used ? 'disabled' : ''}>${k}</button>`;
-                })
-                .join('')}
+            <div class="red-qwerty-keyboard" role="group" aria-label="On-screen QWERTY keyboard">
+              ${hasDigits ? renderKeyRow(DIGIT_ROW, 'row-num') : ''}
+              ${renderKeyRow(QWERTY_ROWS[0], 'row-top')}
+              ${renderKeyRow(QWERTY_ROWS[1], 'row-mid')}
+              ${renderKeyRow(QWERTY_ROWS[2], 'row-bot')}
             </div>
           `
               : `
             <div class="red-verdict ${roundStatus === 'WON' ? 'won' : 'lost'}">
               <div>
-                <strong>${roundStatus === 'WON' ? '🔓 DOSSIER DECLASSIFIED!' : '🔒 CLEARANCE REVOKED — TERM REVEALED:'} ${currentDossier.displayTerm}</strong>
+                <strong>${roundStatus === 'WON' ? '🔓 DOSSIER DECLASSIFIED:' : '🔒 TERM REVEALED:'} ${currentDossier.displayTerm}</strong>
                 <p>${currentDossier.fullDefinition}</p>
               </div>
               <button type="button" class="arcade-btn-primary" id="red-next-btn">
-                Next Classified File <i class="fa-solid fa-arrow-right"></i>
+                Next File <i class="fa-solid fa-arrow-right"></i>
               </button>
             </div>
           `

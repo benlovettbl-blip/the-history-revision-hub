@@ -7,9 +7,11 @@
 import './arcade/arcade_styles.css';
 import { state } from './state.js';
 import { appStore } from './engine/store.js';
+import { ensureUnitLoaded } from './storage.js';
 import { buildArcadePools } from './arcade/arcade_data_adapter.js';
 import {
   arcadeAudio,
+  awardArcadeRoundXp,
   getArcadePersonalBest,
   getUnitArcadeTotalScore,
 } from './arcade/arcade_audio.js';
@@ -20,6 +22,97 @@ import { mountRedactedDossier } from './arcade/games/redacted_dossier.js';
 import { mountBossSprint } from './arcade/games/boss_sprint.js';
 import { mountArchiveDetective } from './arcade/games/archive_detective.js';
 import { mountFactOrFallacy } from './arcade/games/fact_or_fallacy.js';
+
+const ARCADE_COURSE_DIRECTORY = [
+  { id: 'edexcel_medicine', title: 'Medicine Through Time (c.1250–Present)', group: 'GCSE' },
+  { id: 'eee', title: 'Early Elizabethan England (1558–1588)', group: 'GCSE' },
+  { id: 'gcse_cold_war', title: 'Superpower Relations & the Cold War (1941–1991)', group: 'GCSE' },
+  { id: 'cme_new', title: 'Conflict in the Middle East (1945–1995)', group: 'GCSE' },
+  { id: 'weimar_nazi_germany', title: 'Weimar & Nazi Germany (1918–1939)', group: 'GCSE' },
+  { id: 'usa', title: 'USA: Conflict at Home & Abroad (1954–1975)', group: 'GCSE' },
+  { id: 'water_and_sanitation', title: 'Water & Sanitation (1250–Present)', group: 'KS3' },
+  { id: 'medieval_england', title: 'Medieval England (1066–1485)', group: 'KS3' },
+  { id: 'monarchy_religion_power', title: 'Crown, Church & Parliament (1517–1689)', group: 'KS3' },
+  { id: 'first_british_empire', title: 'The First British Empire (1600–1783)', group: 'KS3' },
+  { id: 'industrialisation_and_empire', title: 'The Industrial Revolution (1750–1900)', group: 'KS3' },
+  { id: 'second_british_empire', title: 'The Second British Empire (1783–1914)', group: 'KS3' },
+  { id: 'australia', title: 'Invasion & Survival in Australia', group: 'KS3' },
+  { id: 'great_war', title: 'Causes of the Great War (1890–1914)', group: 'KS3' },
+  { id: 'great_war_part2', title: 'The Great War (1914–1919)', group: 'KS3' },
+  { id: 'the_shoah', title: 'The Shoah (1933–1948)', group: 'KS3' },
+  { id: 'cold_war', title: 'The Cold War (1945–1991)', group: 'KS3' },
+  { id: 'post_war_britain', title: 'Rights, Protest & Post-War Britain', group: 'KS3' },
+  { id: 'ks2_stone_to_iron_age', title: 'Stone Age to Iron Age', group: 'KS2' },
+  { id: 'ks2_romans', title: 'The Romans in Britain', group: 'KS2' },
+  { id: 'ks2_anglo_saxons_vikings', title: 'Anglo-Saxons & Vikings', group: 'KS2' },
+  { id: 'ks2_ww2', title: 'World War II & The Home Front', group: 'KS2' },
+  { id: 'ks2_ancient_egypt', title: 'Ancient Egypt', group: 'KS2' },
+  { id: 'ks2_ancient_greece', title: 'Ancient Greece', group: 'KS2' },
+  { id: 'ks2_early_islamic_baghdad', title: 'Early Islamic Baghdad', group: 'KS2' },
+  { id: 'ks2_maya_civilisation', title: 'The Ancient Maya', group: 'KS2' },
+];
+
+const COURSE_LOOKUP = new Map(ARCADE_COURSE_DIRECTORY.map((c) => [c.id, c]));
+
+function readPinnedCourseIds() {
+  try {
+    const raw = localStorage.getItem('hh_pinned_units');
+    if (!raw) return [];
+    const parsed = JSON.parse(raw);
+    if (!Array.isArray(parsed)) return [];
+    return parsed.filter((id, idx, arr) => typeof id === 'string' && id && arr.indexOf(id) === idx);
+  } catch (e) {
+    return [];
+  }
+}
+
+function getCourseDisplayTitle(id) {
+  const fromCatalog = COURSE_LOOKUP.get(id);
+  if (fromCatalog) return fromCatalog.title;
+  const dbEntry = state.db?.[id] || (typeof window !== 'undefined' ? window.db?.[id] : null);
+  const rawTitle = dbEntry?.data?.title || dbEntry?.title || id;
+  return String(rawTitle);
+}
+
+function resolveHydratedUnitData(targetUnitId) {
+  const dbEntry =
+    state.db?.[targetUnitId] || (typeof window !== 'undefined' ? window.db?.[targetUnitId] : null);
+  if (dbEntry?._isIndexStub === true) return null;
+
+  const fromGetter =
+    typeof window !== 'undefined' && typeof window.getUnitData === 'function'
+      ? window.getUnitData(targetUnitId)
+      : null;
+  if (fromGetter && !fromGetter._isIndexStub && Array.isArray(fromGetter.lessons)) {
+    return fromGetter;
+  }
+
+  const candidate = dbEntry ? dbEntry.data || dbEntry : null;
+  if (candidate && !candidate._isIndexStub && Array.isArray(candidate.lessons)) {
+    return candidate;
+  }
+
+  if (
+    state.selectedUnitId === targetUnitId &&
+    state.activeUnitData &&
+    !state.activeUnitData._isIndexStub &&
+    Array.isArray(state.activeUnitData.lessons)
+  ) {
+    return state.activeUnitData;
+  }
+
+  if (
+    appStore?.state?.selectedUnitId === targetUnitId &&
+    appStore?.state?.activeUnitData &&
+    !appStore.state.activeUnitData._isIndexStub &&
+    Array.isArray(appStore.state.activeUnitData.lessons)
+  ) {
+    return appStore.state.activeUnitData;
+  }
+
+  return null;
+}
+
 function lazyShowcaseMount(loader) {
   return (stageEl, pools, ctx) => {
     let cancelled = false;
@@ -169,8 +262,15 @@ const ARCADE_GAMES_CATALOG = [
 const ALL_MOUNTABLE_GAMES = [...VISUAL_SHOWCASES, ...ARCADE_GAMES_CATALOG];
 
 let activeGameCleanup = null;
+let arcadeRenderToken = 0;
 
 export function cleanupArcadeZone() {
+  if (typeof document !== 'undefined' && document.body) {
+    document.body.classList.remove('hh-arcade-playing');
+  }
+  if (typeof window !== 'undefined') {
+    window.__hhExitArcadeGameToLobby = null;
+  }
   if (typeof activeGameCleanup === 'function') {
     try {
       activeGameCleanup();
@@ -183,26 +283,56 @@ if (typeof window !== 'undefined') {
   window.cleanupArcadeZone = cleanupArcadeZone;
 }
 
-export function renderArcadeView(options = {}) {
+export async function renderArcadeView(options = {}) {
+  const myToken = ++arcadeRenderToken;
   cleanupArcadeZone();
 
   const container = document.getElementById('main-content');
   if (!container) return;
 
-  const unitId =
+  let unitId =
     options.unitId ||
     state.selectedUnitId ||
     (typeof window !== 'undefined' && window.currentUnitId) ||
     appStore?.state?.selectedUnitId ||
     'edexcel_medicine';
 
-  const unitData =
-    (typeof window !== 'undefined' && typeof window.getUnitData === 'function'
-      ? window.getUnitData(unitId)
-      : null) ||
-    state.activeUnitData ||
-    appStore?.state?.activeUnitData ||
-    {};
+  let unitData = resolveHydratedUnitData(unitId);
+  const isColdOrStub =
+    !unitData ||
+    !state.db?.[unitId] ||
+    state.db?.[unitId]?._isIndexStub === true ||
+    unitData._isIndexStub === true;
+
+  if (isColdOrStub) {
+    container.innerHTML = `
+      <div class="arcade-shell">
+        <div class="arcade-hydration-skeleton" role="status" aria-live="polite">
+          <div class="arcade-skel-header"></div>
+          <div class="arcade-skel-grid">
+            <div class="arcade-skel-card"></div>
+            <div class="arcade-skel-card"></div>
+            <div class="arcade-skel-card"></div>
+          </div>
+          <div class="arcade-skel-label">
+            <i class="fa-solid fa-gamepad"></i> Loading Revision Arcade decks...
+          </div>
+        </div>
+      </div>
+    `;
+    const hydrated = await ensureUnitLoaded(unitId);
+    if (myToken !== arcadeRenderToken || !container.isConnected) return;
+    unitData = hydrated || resolveHydratedUnitData(unitId) || {};
+  }
+
+  if (unitData && Array.isArray(unitData.lessons)) {
+    state.selectedUnitId = unitId;
+    state.activeUnitData = unitData;
+    if (typeof window !== 'undefined') {
+      window.currentUnitId = unitId;
+      window.currentUnitData = unitData;
+    }
+  }
 
   const urlParams =
     typeof window !== 'undefined' ? new URLSearchParams(window.location.search) : null;
@@ -222,11 +352,77 @@ export function renderArcadeView(options = {}) {
     currentGameId = 'lobby';
   }
 
+  function buildMobileCourseSwitcherHtml() {
+    const pinnedIds = readPinnedCourseIds();
+    const pinnedSet = new Set(pinnedIds);
+
+    let optionsMarkup = '';
+    if (pinnedIds.length > 0) {
+      const pinnedWithCurrent = pinnedSet.has(unitId) ? pinnedIds : [unitId, ...pinnedIds];
+      optionsMarkup += `<optgroup label="📌 My Pinned Courses">`;
+      pinnedWithCurrent.forEach((id) => {
+        optionsMarkup += `<option value="${id}" ${id === unitId ? 'selected' : ''}>${getCourseDisplayTitle(id)}</option>`;
+      });
+      optionsMarkup += `</optgroup>`;
+    }
+
+    ['GCSE', 'KS3', 'KS2'].forEach((grp) => {
+      const items = ARCADE_COURSE_DIRECTORY.filter(
+        (c) => c.group === grp && !(pinnedIds.length > 0 && (pinnedSet.has(c.id) || c.id === unitId)),
+      );
+      if (items.length > 0) {
+        optionsMarkup += `<optgroup label="${grp} Courses">`;
+        items.forEach((c) => {
+          optionsMarkup += `<option value="${c.id}" ${c.id === unitId ? 'selected' : ''}>${c.title}</option>`;
+        });
+        optionsMarkup += `</optgroup>`;
+      }
+    });
+
+    if (
+      !COURSE_LOOKUP.has(unitId) &&
+      !(pinnedIds.length > 0 && pinnedSet.has(unitId))
+    ) {
+      optionsMarkup = `<option value="${unitId}" selected>${getCourseDisplayTitle(unitId)}</option>${optionsMarkup}`;
+    }
+
+    return `
+      <div class="arcade-mobile-course-row">
+        <label for="arcade-course-select" class="arcade-mobile-course-lbl">
+          <i class="fa-solid fa-thumbtack"></i> Course:
+        </label>
+        <select id="arcade-course-select" class="arcade-course-select" aria-label="Switch Arcade Course">
+          ${optionsMarkup}
+        </select>
+      </div>
+    `;
+  }
+
   function renderShell() {
     cleanupArcadeZone();
+
+    const isPlayingGame = currentGameId !== 'lobby';
+    if (isPlayingGame) {
+      document.body?.classList.add('hh-arcade-playing');
+      if (typeof window !== 'undefined') {
+        window.__hhExitArcadeGameToLobby = () => {
+          currentGameId = 'lobby';
+          arcadeAudio.move();
+          syncArcadeUrl();
+          renderShell();
+        };
+      }
+    } else {
+      document.body?.classList.remove('hh-arcade-playing');
+      if (typeof window !== 'undefined') {
+        window.__hhExitArcadeGameToLobby = null;
+      }
+    }
+
     const pools = buildArcadePools(unitData, unitId, currentScope);
     const totalUnitPts = getUnitArcadeTotalScore(unitId);
     const featuredShowcase = VISUAL_SHOWCASES.find((s) => s.featuredUnits.includes(unitId));
+    const activeGameDef = ALL_MOUNTABLE_GAMES.find((g) => g.id === currentGameId) || null;
 
     const returnLabel =
       typeof window !== 'undefined' && typeof window.getReturnOriginLabel === 'function'
@@ -241,11 +437,50 @@ export function renderArcadeView(options = {}) {
       ),
     ].join('');
 
+    const compactScopeOptionsHtml = [
+      `<option value="all" ${currentScope === 'all' ? 'selected' : ''}>Full Unit (${pools.lessonsList.length})</option>`,
+      ...pools.lessonsList.map(
+        (l) =>
+          `<option value="${l.index}" ${String(currentScope) === String(l.index) ? 'selected' : ''}>Enq ${l.index + 1}: ${l.title}</option>`,
+      ),
+    ].join('');
+
     const isGraphicNovelMode = currentGameId === 'cme_courtyard';
+    const shortGameTitle = activeGameDef ? activeGameDef.title.split(':')[0] : 'Arcade';
 
     container.innerHTML = `
-      <div class="arcade-shell">
-        <!-- Top Control Masthead -->
+      <div class="arcade-shell ${isPlayingGame ? 'is-game-active' : 'is-lobby-active'}">
+        ${
+          isPlayingGame && activeGameDef
+            ? `
+          <!-- Sleek 44px Mobile Game Bar (< 933px only; Desktop keeps full Topbar + Switcher) -->
+          <div class="arcade-mobile-gamebar" role="toolbar" aria-label="Active Game Controls">
+            <button type="button" class="arcade-mgb-back" id="arcade-mobile-lobby-btn" aria-label="Back to Games Lobby">
+              <i class="fa-solid fa-arrow-left"></i>
+              <span>Games</span>
+            </button>
+            <div class="arcade-mgb-title" title="${activeGameDef.title}">
+              <span>${activeGameDef.emoji}</span>
+              <span class="arcade-mgb-title-text">${shortGameTitle}</span>
+            </div>
+            ${
+              isGraphicNovelMode
+                ? ''
+                : `
+              <select id="arcade-mobile-scope-select" class="arcade-mgb-scope" aria-label="Select Lesson Scope">
+                ${compactScopeOptionsHtml}
+              </select>
+              <button type="button" class="arcade-mgb-sfx" id="arcade-mobile-sound-btn" aria-label="Toggle Sound Effects" title="Toggle Arcade Sound Effects">
+                <i class="fa-solid ${arcadeAudio.enabled ? 'fa-volume-high' : 'fa-volume-xmark'}" style="color:${arcadeAudio.enabled ? '#34d399' : '#94a3b8'};"></i>
+              </button>
+            `
+            }
+          </div>
+        `
+            : ''
+        }
+
+        <!-- Top Control Masthead (Preserved 100% on Desktop >= 933px; shown in Lobby on Mobile) -->
         <div class="arcade-topbar" style="${isGraphicNovelMode ? 'padding:8px 14px;margin-bottom:8px;' : ''}">
           <div class="arcade-brand">
             <div class="arcade-brand-icon" style="${isGraphicNovelMode ? 'width:34px;height:34px;font-size:1rem;' : ''}"><i class="fa-solid ${isGraphicNovelMode ? 'fa-book-open' : 'fa-gamepad'}"></i></div>
@@ -258,6 +493,8 @@ export function renderArcadeView(options = {}) {
               }
             </div>
           </div>
+
+          ${!isPlayingGame ? buildMobileCourseSwitcherHtml() : ''}
 
           <div class="arcade-controls-cluster">
             ${
@@ -310,19 +547,56 @@ export function renderArcadeView(options = {}) {
       </div>
     `;
 
+    const handleScopeChange = (val) => {
+      currentScope = val;
+      syncArcadeUrl();
+      renderShell();
+    };
+
     container.querySelector('#arcade-scope-select')?.addEventListener('change', (e) => {
-      currentScope = e.target.value;
+      handleScopeChange(e.target.value);
+    });
+    container.querySelector('#arcade-mobile-scope-select')?.addEventListener('change', (e) => {
+      handleScopeChange(e.target.value);
+    });
+
+    container.querySelector('#arcade-course-select')?.addEventListener('change', (e) => {
+      const nextUnitId = e.target.value;
+      if (!nextUnitId || nextUnitId === unitId) return;
+      arcadeAudio.move();
+      renderArcadeView({
+        unitId: nextUnitId,
+        lessonScope: 'all',
+        game: 'lobby',
+      });
+    });
+
+    container.querySelector('#arcade-mobile-lobby-btn')?.addEventListener('click', () => {
+      currentGameId = 'lobby';
+      arcadeAudio.move();
       syncArcadeUrl();
       renderShell();
     });
 
-    container.querySelector('#arcade-sound-btn')?.addEventListener('click', (e) => {
-      const enabled = arcadeAudio.toggle();
-      const btn = e.currentTarget;
-      btn.innerHTML = `
-        <i class="fa-solid ${enabled ? 'fa-volume-high' : 'fa-volume-xmark'}" style="color:${enabled ? '#34d399' : '#94a3b8'};"></i>
-        <span>${enabled ? 'SFX On' : 'Muted'}</span>
-      `;
+    const syncSoundButtons = (enabled) => {
+      const deskBtn = container.querySelector('#arcade-sound-btn');
+      if (deskBtn) {
+        deskBtn.innerHTML = `
+          <i class="fa-solid ${enabled ? 'fa-volume-high' : 'fa-volume-xmark'}" style="color:${enabled ? '#34d399' : '#94a3b8'};"></i>
+          <span>${enabled ? 'SFX On' : 'Muted'}</span>
+        `;
+      }
+      const mobBtn = container.querySelector('#arcade-mobile-sound-btn');
+      if (mobBtn) {
+        mobBtn.innerHTML = `<i class="fa-solid ${enabled ? 'fa-volume-high' : 'fa-volume-xmark'}" style="color:${enabled ? '#34d399' : '#94a3b8'};"></i>`;
+      }
+    };
+
+    container.querySelector('#arcade-sound-btn')?.addEventListener('click', () => {
+      syncSoundButtons(arcadeAudio.toggle());
+    });
+    container.querySelector('#arcade-mobile-sound-btn')?.addEventListener('click', () => {
+      syncSoundButtons(arcadeAudio.toggle());
     });
 
     container.querySelector('#arcade-return-btn')?.addEventListener('click', () => {
@@ -353,6 +627,10 @@ export function renderArcadeView(options = {}) {
         activeGameCleanup = gameDef.mount(stageEl, pools, {
           unitId,
           scope: currentScope,
+          onRoundComplete: () => {
+            awardArcadeRoundXp(unitId);
+            window.hhAwardXp?.({ amount: 25, source: 'arcade', unitId });
+          },
         });
       }
     }
@@ -365,12 +643,12 @@ export function renderArcadeView(options = {}) {
       ? `
         <div class="arcade-game-card" data-launch="${featuredShowcase.id}" style="--card-accent:${featuredShowcase.accent};border-color:${featuredShowcase.accent};background:linear-gradient(135deg,#0f172a 0%,#1e1b4b 100%);margin-bottom:18px;padding:22px;">
           <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px;">
-            <div style="display:flex;align-items:center;gap:16px;flex:1;min-width:260px;">
-              <div class="arcade-card-emoji" style="width:58px;height:58px;font-size:2rem;border-color:${featuredShowcase.accent};">
+            <div style="display:flex;align-items:center;gap:16px;flex:1;min-width:min(260px,100%);">
+              <div class="arcade-card-emoji" style="width:58px;height:58px;font-size:2rem;border-color:${featuredShowcase.accent};flex-shrink:0;">
                 ${featuredShowcase.emoji}
               </div>
-              <div>
-                <span style="background:rgba(250,204,21,0.18);border:1px solid #facc15;color:#fde047;font-size:0.7rem;font-weight:900;padding:2px 9px;border-radius:999px;letter-spacing:0.06em;">
+              <div style="min-width:0;">
+                <span style="display:inline-block;background:rgba(250,204,21,0.18);border:1px solid #facc15;color:#fde047;font-size:0.7rem;font-weight:900;padding:2px 9px;border-radius:999px;letter-spacing:0.06em;">
                   ⭐ FEATURED VISUAL ROLEPLAY • ${featuredShowcase.badge}
                 </span>
                 <h3 style="margin:6px 0 4px 0;font-size:1.35rem;">${featuredShowcase.title}</h3>
@@ -385,10 +663,9 @@ export function renderArcadeView(options = {}) {
       `
       : '';
 
-    const otherShowcases = (isKs2Context
+    const otherShowcases = isKs2Context
       ? VISUAL_SHOWCASES.filter((s) => s.id === 'blitz_warden' && s.id !== featuredShowcase?.id)
-      : VISUAL_SHOWCASES.filter((s) => s.id !== featuredShowcase?.id)
-    );
+      : VISUAL_SHOWCASES.filter((s) => s.id !== featuredShowcase?.id);
 
     const bonusShowcasesShelf =
       otherShowcases.length > 0
@@ -425,8 +702,6 @@ export function renderArcadeView(options = {}) {
       `
         : '';
 
-    const usaCardsBanner = '';
-
     viewport.innerHTML = `
       ${featuredHeroHtml}
       <div class="arcade-lobby-grid">
@@ -456,7 +731,6 @@ export function renderArcadeView(options = {}) {
         }).join('')}
       </div>
       ${bonusShowcasesShelf}
-      ${usaCardsBanner}
     `;
 
     viewport.querySelectorAll('.arcade-game-card').forEach((card) => {
@@ -489,6 +763,7 @@ export function renderArcadeView(options = {}) {
     } catch (e) {}
   }
 
+  syncArcadeUrl();
   renderShell();
 }
 

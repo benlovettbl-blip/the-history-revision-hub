@@ -743,6 +743,8 @@ export function initDossierPopover() {
   const positionPopover = (anchorEl) => {
     if (!anchorEl) return;
     const isNarrowMobile = window.innerWidth <= 560;
+    const bottomNavAllowance =
+      window.innerWidth < 933 && document.body?.classList?.contains('hh-has-bottom-nav') ? 88 : 14;
     if (isNarrowMobile) {
       popover.style.left = '12px';
       popover.style.right = '12px';
@@ -750,7 +752,7 @@ export function initDossierPopover() {
       const rect = anchorEl.getBoundingClientRect();
       const popH = popover.offsetHeight || 280;
       let top = rect.bottom + 10;
-      if (top + popH > window.innerHeight - 12) {
+      if (top + popH > window.innerHeight - bottomNavAllowance) {
         top = Math.max(12, rect.top - popH - 10);
       }
       popover.style.top = `${top}px`;
@@ -765,7 +767,7 @@ export function initDossierPopover() {
     const popH = popRect.height || 260;
 
     let top = rect.bottom + 10;
-    if (top + popH > window.innerHeight - 14 && rect.top - popH - 10 > 10) {
+    if (top + popH > window.innerHeight - bottomNavAllowance && rect.top - popH - 10 > 10) {
       top = rect.top - popH - 10;
     }
 

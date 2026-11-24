@@ -1,7 +1,7 @@
 /**
  * Game 6: Archive Detective ("Zoom & Identify" Authentic Visual Source Mystery)
- * Opens tightly zoomed (4x) on an authentic archival photograph, cartoon, or artefact.
- * Zoom out step-by-step for fewer points, then inspect the full uncropped museum plate.
+ * Locked mobile evidence frame (180px, 16:10, object-fit: contain), tap-to-zoom modal,
+ * 1-row Clue Reveal chip strip, reserved readout slot, and pinned 4 answer buttons (CLS = 0).
  */
 
 import { arcadeAudio, getArcadePersonalBest, saveArcadePersonalBest } from '../arcade_audio.js';
@@ -10,8 +10,8 @@ import { recordQuestionResult } from '../../storage.js';
 
 const ZOOM_STEPS = [
   { scale: 3.8, pts: 200, label: '4× Micro-Detail (200 pts)' },
-  { scale: 2.4, pts: 150, label: '2.5× Evidence Crop (150 pts)' },
-  { scale: 1.55, pts: 110, label: '1.5× Context View (110 pts)' },
+  { scale: 2.4, pts: 150, label: '2.5× Crop (150 pts)' },
+  { scale: 1.55, pts: 110, label: '1.5× Context (110 pts)' },
   { scale: 1.0, pts: 75, label: '1× Full Plate (75 pts)' },
 ];
 
@@ -26,6 +26,9 @@ export function mountArchiveDetective(stageEl, pools, ctx) {
   let roundIdx = 0;
   let zoomIdx = 0;
   let focalOrigin = '50% 45%';
+  let topicClueUsed = false;
+  let eraClueUsed = false;
+  let activeClueText = '';
   let answered = false;
   let pickedOpt = null;
   let score = 0;
@@ -41,16 +44,49 @@ export function mountArchiveDetective(stageEl, pools, ctx) {
       return;
     }
     zoomIdx = 0;
+    topicClueUsed = false;
+    eraClueUsed = false;
+    activeClueText = '';
     answered = false;
     pickedOpt = null;
     focalOrigin = origins[roundIdx % origins.length];
     render();
   }
 
+  function currentBounty() {
+    const base = ZOOM_STEPS[zoomIdx].pts;
+    const penalty = (topicClueUsed ? 25 : 0) + (eraClueUsed ? 35 : 0);
+    return Math.max(25, base - penalty);
+  }
+
   function zoomOutStep() {
     if (answered || zoomIdx >= ZOOM_STEPS.length - 1) return;
     zoomIdx++;
     arcadeAudio.zoom();
+    activeClueText = `🔍 Zoomed to ${ZOOM_STEPS[zoomIdx].label}`;
+    render();
+  }
+
+  function revealTopicClue() {
+    if (answered || topicClueUsed) return;
+    topicClueUsed = true;
+    arcadeAudio.zoom();
+    const item = deck[roundIdx];
+    activeClueText = `📂 Enquiry Context: ${item.lessonTitle || 'Unit Visual Archive'}`;
+    render();
+  }
+
+  function revealProvenanceClue() {
+    if (answered || eraClueUsed) return;
+    eraClueUsed = true;
+    arcadeAudio.zoom();
+    const item = deck[roundIdx];
+    const rawCaption = String(item.caption || '');
+    const escapedLabel = String(item.label || '').replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    const masked = escapedLabel
+      ? rawCaption.replace(new RegExp(escapedLabel, 'gi'), '[REDACTED]')
+      : rawCaption;
+    activeClueText = `📜 Clue: ${masked.slice(0, 120)}${masked.length > 120 ? '…' : ''}`;
     render();
   }
 
@@ -62,7 +98,7 @@ export function mountArchiveDetective(stageEl, pools, ctx) {
     const isCorrect = optText.toLowerCase() === item.label.toLowerCase();
 
     if (isCorrect) {
-      const pts = ZOOM_STEPS[zoomIdx].pts;
+      const pts = currentBounty();
       score += pts;
       correctTotal++;
       arcadeAudio.correct();
@@ -78,20 +114,25 @@ export function mountArchiveDetective(stageEl, pools, ctx) {
     const item = deck[roundIdx];
     const z = ZOOM_STEPS[zoomIdx];
     const activeScale = answered ? 1.0 : z.scale;
+    const bounty = currentBounty();
+
+    const readoutText = answered
+      ? `🏛️ ${item.lessonTitle}: ${item.caption}`
+      : activeClueText || 'Tap Zoom Out or a Clue Chip if you need wider visual context.';
 
     stageEl.innerHTML = `
       <div class="det-wrap">
         <div class="tlb-hud">
           <div class="tlb-stat"><span>Score</span><strong class="cyan">${score}</strong></div>
-          <div class="tlb-stat"><span>Evidence Plate</span><strong class="green">${roundIdx + 1} / ${deck.length}</strong></div>
-          <div class="tlb-stat"><span>Current Bounty</span><strong class="amber">${answered ? 'Revealed' : `${z.pts} pts`}</strong></div>
+          <div class="tlb-stat"><span>Plate</span><strong class="green">${roundIdx + 1} / ${deck.length}</strong></div>
+          <div class="tlb-stat"><span>Bounty</span><strong class="amber">${answered ? 'Revealed' : `${bounty} pts`}</strong></div>
           <div class="tlb-stat"><span>Best</span><strong>${Math.max(pb, score)}</strong></div>
         </div>
 
         <div class="det-grid">
-          <!-- Left: Archival Magnifier Viewport -->
+          <!-- Left: Locked Archival Magnifier Viewport + 1-Row Clue Strip -->
           <div class="det-frame-col">
-            <div class="det-viewport ${answered ? 'unzoomed' : ''}">
+            <div class="det-viewport ${answered ? 'unzoomed' : ''}" id="det-image-frame" role="button" tabindex="0" aria-label="Tap to inspect full archival image">
               <img
                 src="${item.imageUrl}"
                 alt="Archival Mystery Evidence Plate"
@@ -99,33 +140,37 @@ export function mountArchiveDetective(stageEl, pools, ctx) {
                 style="transform: scale(${activeScale}); transform-origin: ${focalOrigin}; object-fit: contain;"
               />
               <span class="det-zoom-pill">
-                <i class="fa-solid fa-magnifying-glass"></i> ${answered ? 'Full Uncropped Archival Plate' : z.label}
+                <i class="fa-solid fa-magnifying-glass"></i> ${answered ? 'Full Archival Plate' : z.label}
+              </span>
+              <span class="det-tap-zoom-pill">
+                <i class="fa-solid fa-expand"></i> Zoom
               </span>
             </div>
 
-            ${
-              !answered
-                ? `
-              <div class="det-zoom-bar">
-                <button type="button" class="arcade-btn-ghost" id="det-zoom-btn" ${zoomIdx >= ZOOM_STEPS.length - 1 ? 'disabled' : ''}>
-                  <i class="fa-solid fa-magnifying-glass-minus" style="color:#fbbf24;"></i>
-                  ${zoomIdx >= ZOOM_STEPS.length - 1 ? 'At Full View (75 pts)' : `Zoom Out Wider (${ZOOM_STEPS[zoomIdx + 1].pts} pts)`}
-                </button>
-              </div>
-            `
-                : `
-              <div class="det-caption-box">
-                <strong><i class="fa-solid fa-landmark"></i> Archival Provenance (${item.lessonTitle}):</strong>
-                <p>${item.caption}</p>
-              </div>
-            `
-            }
+            <!-- Compact 1-Row Clue Reveal Chips -->
+            <div class="det-clue-strip" role="toolbar" aria-label="Clue Reveal Controls">
+              <button type="button" class="det-clue-chip" id="det-zoom-btn" ${answered || zoomIdx >= ZOOM_STEPS.length - 1 ? 'disabled' : ''}>
+                <i class="fa-solid fa-magnifying-glass-minus" style="color:#fbbf24;"></i>
+                ${zoomIdx >= ZOOM_STEPS.length - 1 ? 'Full View' : `Zoom Out`}
+              </button>
+              <button type="button" class="det-clue-chip" id="det-topic-clue-btn" ${answered || topicClueUsed ? 'disabled' : ''}>
+                <i class="fa-solid fa-folder-open" style="color:#38bdf8;"></i> Topic (-25)
+              </button>
+              <button type="button" class="det-clue-chip" id="det-era-clue-btn" ${answered || eraClueUsed ? 'disabled' : ''}>
+                <i class="fa-solid fa-scroll" style="color:#a855f7;"></i> Clue (-35)
+              </button>
+            </div>
+
+            <!-- Reserved Fixed-Height Clue / Provenance Readout (Zero Jump!) -->
+            <div class="det-clue-readout ${answered ? 'revealed' : ''}">
+              <span>${readoutText}</span>
+            </div>
           </div>
 
-          <!-- Right: Identification Options -->
+          <!-- Right: Pinned Identification Options -->
           <div class="det-choices-col">
             <div class="det-prompt-tag">ARCHIVE DETECTIVE • IDENTIFY THE PRIMARY PLATE</div>
-            <h4 class="det-prompt-h">Which historical source, event, or theme does this archival plate depict?</h4>
+            <h4 class="det-prompt-h">Which historical source, event, or theme does this plate depict?</h4>
 
             <div class="det-opts-list">
               ${item.options
@@ -143,21 +188,37 @@ export function mountArchiveDetective(stageEl, pools, ctx) {
                 .join('')}
             </div>
 
-            ${
-              answered
-                ? `
-              <button type="button" class="arcade-btn-primary" id="det-next-btn" style="width:100%;margin-top:14px;">
-                ${roundIdx + 1 >= deck.length ? 'Finish Case File' : 'Next Evidence Plate'} <i class="fa-solid fa-arrow-right"></i>
-              </button>
-            `
-                : ''
-            }
+            <div class="det-footer-slot">
+              ${
+                answered
+                  ? `
+                <button type="button" class="arcade-btn-primary" id="det-next-btn" style="width:100%;">
+                  ${roundIdx + 1 >= deck.length ? 'Finish Case File' : 'Next Evidence Plate'} <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              `
+                  : `<div style="width:100%;text-align:center;font-size:0.75rem;color:#64748b;">Identify early at 4× zoom for maximum bounty!</div>`
+              }
+            </div>
           </div>
         </div>
       </div>
     `;
 
+    const imgFrame = stageEl.querySelector('#det-image-frame');
+    const openZoom = () => {
+      window.openImageModal?.(item.imageUrl);
+    };
+    imgFrame?.addEventListener('click', openZoom);
+    imgFrame?.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        openZoom();
+      }
+    });
+
     stageEl.querySelector('#det-zoom-btn')?.addEventListener('click', zoomOutStep);
+    stageEl.querySelector('#det-topic-clue-btn')?.addEventListener('click', revealTopicClue);
+    stageEl.querySelector('#det-era-clue-btn')?.addEventListener('click', revealProvenanceClue);
     stageEl.querySelectorAll('.bsp-opt-btn').forEach((btn) => {
       btn.addEventListener('click', () => submitGuess(btn.dataset.opt));
     });
@@ -170,13 +231,12 @@ export function mountArchiveDetective(stageEl, pools, ctx) {
   function renderSummary() {
     arcadeAudio.levelUp();
     const { isNewBest, best } = saveArcadePersonalBest(ctx.unitId, 'detective', ctx.scope, score);
+    ctx.onRoundComplete?.();
     pb = best;
-    if (correctTotal > 0) {
-    }
 
     stageEl.innerHTML = `
       <div class="arcade-result-panel">
-        <div style="font-size:2.8rem;margin-bottom:6px;">${isNewBest ? '🏆' : '🔍'}</div>
+        <div style="font-size:2.6rem;margin-bottom:6px;">${isNewBest ? '🏆' : '🔍'}</div>
         <h3>${isNewBest ? 'New Detective High Score!' : 'Archive Case Closed!'}</h3>
         <div class="arcade-gameover-stats">
           <div><span>Final Score</span><strong>${score}</strong></div>

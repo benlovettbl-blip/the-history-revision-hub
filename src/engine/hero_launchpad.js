@@ -403,8 +403,83 @@ export function renderStickyUnitResourceBar(unitId, unitData) {
         (Array.isArray(unitData?.mock_exams) && unitData.mock_exams.length > 0)),
   );
 
+  // Mobile Pupil Zero-PDF Quick Study Bar (Hidden on Desktop >= 933px & Staff Mode via CSS)
+  const mobileLessonCount = Array.isArray(unitData?.lessons) ? unitData.lessons.length : 0;
+  let mobileResumeIdx = 0;
+  let mobileHasSavedResume = false;
+  if (typeof window !== 'undefined') {
+    try {
+      const rawSaved = localStorage.getItem(`hh_last_lesson_${unitId}`);
+      if (rawSaved !== null) {
+        const parsedIdx = parseInt(rawSaved, 10);
+        if (!isNaN(parsedIdx) && parsedIdx >= 0 && parsedIdx < Math.max(1, mobileLessonCount)) {
+          mobileResumeIdx = parsedIdx;
+          mobileHasSavedResume = true;
+        }
+      }
+    } catch (e) {}
+  }
+  const hasAnyCloze = Array.isArray(unitData?.lessons) && unitData.lessons.some((l) => l?.vocab_cloze_text && l.vocab_cloze_text.includes('['));
+  const mobileFirstStoryLessonId =
+    (Array.isArray(unitData?.lessons) &&
+      (unitData.lessons[mobileResumeIdx]?.id || unitData.lessons[0]?.id)) ||
+    'lesson_1';
+
+  const mobilePupilStripHtml = `
+    <div id="hh-mobile-unit-strip" class="hh-mobile-unit-strip no-print">
+      <div class="hh-mus-scroll">
+        <button type="button" class="hh-mus-pill hh-mus-pill-primary" onclick="window.viewLessonDetail && window.viewLessonDetail(${mobileResumeIdx})">
+          <i class="fa-solid fa-play"></i>
+          <span>${mobileHasSavedResume ? `Resume L${mobileResumeIdx + 1}` : 'Start Lesson 1'}</span>
+        </button>
+        <button type="button" class="hh-mus-pill" onclick="window.switchView && window.switchView('interactive', '${unitId}', false, { mode: 'mcq' })">
+          <i class="fa-solid fa-bolt" style="color:#fbbf24;"></i>
+          <span>Topic Quiz</span>
+        </button>
+        ${
+          hasAnyCloze
+            ? `<button type="button" class="hh-mus-pill" onclick="window.switchView && window.switchView('interactive', '${unitId}', false, { mode: 'cloze' })">
+                <i class="fa-solid fa-puzzle-piece" style="color:#38bdf8;"></i>
+                <span>Gap Fill</span>
+              </button>`
+            : ''
+        }
+        ${
+          hasExamHub
+            ? `<button type="button" class="hh-mus-pill hh-mus-pill-exam" onclick="window.switchView && window.switchView('exam-trainer', '${unitId}')">
+                <i class="fa-solid fa-bullseye" style="color:#a5b4fc;"></i>
+                <span>Exam Qs</span>
+              </button>`
+            : ''
+        }
+        <button type="button" class="hh-mus-pill" onclick="if(window.launchUnitArcade){window.launchUnitArcade('${unitId}', 'all', 'lobby');}else if(window.switchView){window.switchView('arcade', '${unitId}');}">
+          <i class="fa-solid fa-gamepad" style="color:#34d399;"></i>
+          <span>Arcade</span>
+        </button>
+        <button type="button" class="hh-mus-pill" onclick="window.switchView && window.switchView('timeline', '${unitId}')">
+          <i class="fa-solid fa-clock-rotate-left" style="color:#2dd4bf;"></i>
+          <span>Timeline</span>
+        </button>
+        ${
+          hasInfographics
+            ? `<button type="button" class="hh-mus-pill" onclick="if(window.openLessonInfographicModal){window.openLessonInfographicModal('${mobileFirstStoryLessonId}', '${unitId}');}else if(window.openInfographicModal && window.__INFOGRAPHICS_MANIFEST__?.['${unitId}']?.[0]){window.openInfographicModal(window.__INFOGRAPHICS_MANIFEST__['${unitId}'][0].slug);}">
+                <i class="fa-solid fa-wand-magic-sparkles" style="color:#f472b6;"></i>
+                <span>Story Cards</span>
+              </button>`
+            : ''
+        }
+      </div>
+      ${
+        ktPillsHtml
+          ? `<div class="hh-mus-kt-row">${ktPillsHtml}</div>`
+          : ''
+      }
+    </div>
+  `;
+
   return `
     <div id="unit-sticky-bar-wrapper" class="no-print" style="position: sticky; top: 0; z-index: 45;">
+      ${mobilePupilStripHtml}
       <div id="unit-sticky-classroom-bar" style="background: #0f172a; border-bottom: 1px solid #334155; padding: 9px 20px;">
         <div style="max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px;">
           <!-- Left: Daily Lesson Speed Launch -->

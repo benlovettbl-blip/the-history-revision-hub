@@ -1,7 +1,7 @@
 /**
  * Game 5: 60s Boss Sprint ("Beat the Examiner" Time-Attack Retrieval)
- * 60-second high-tempo specification recall. 3-answer streaks grant +4s bonus time;
- * wrong answers trigger a 1.2s cooldown flash + Weak-Spot logging.
+ * Single-screen 100dvh Zero-Jump layout: compact clock/score strip, reserved feedback slot,
+ * fixed-min-height question slot, and 4 pinned >= 50px thumb option buttons (CLS = 0).
  */
 
 import { arcadeAudio, getArcadePersonalBest, saveArcadePersonalBest } from '../arcade_audio.js';
@@ -97,7 +97,7 @@ export function mountBossSprint(stageEl, pools, ctx) {
       if (streak > 0 && streak % 3 === 0) {
         timeLeft = Math.min(90, timeLeft + 4);
         arcadeAudio.levelUp();
-        feedbackBanner = `<div class="tlb-banner ok">⚡ <strong>${streak}-STREAK TIME BONUS! +4s</strong> &amp; +${pts} pts!</div>`;
+        feedbackBanner = `<div class="tlb-banner ok">⚡ <strong>${streak}-STREAK BONUS! +4s</strong> &amp; +${pts} pts!</div>`;
       } else {
         arcadeAudio.correct();
         feedbackBanner = `<div class="tlb-banner ok">✅ Correct! +${pts} pts (${mult}x)</div>`;
@@ -108,7 +108,7 @@ export function mountBossSprint(stageEl, pools, ctx) {
       cooldownLocked = true;
       arcadeAudio.wrong();
       recordQuestionResult(currentQ.id, false, currentQ, ctx.unitId);
-      feedbackBanner = `<div class="tlb-banner err">❌ Buzzer Freeze! Answer: <strong>${currentQ.a}</strong>${currentQ.explanation ? ` — ${currentQ.explanation}` : ''}</div>`;
+      feedbackBanner = `<div class="tlb-banner err">❌ Freeze! Answer: <strong>${currentQ.a}</strong>${currentQ.explanation ? ` — ${currentQ.explanation}` : ''}</div>`;
       renderLive(idx);
       setTimeout(() => {
         if (destroyed || phase !== 'LIVE') return;
@@ -121,10 +121,10 @@ export function mountBossSprint(stageEl, pools, ctx) {
   function renderReady() {
     stageEl.innerHTML = `
       <div class="arcade-result-panel">
-        <div style="font-size:2.8rem;margin-bottom:6px;">⚡</div>
+        <div style="font-size:2.6rem;margin-bottom:6px;">⚡</div>
         <h3>60-Second Boss Sprint</h3>
-        <p style="max-width:520px;margin:0 auto 16px;color:#cbd5e1;font-size:0.94rem;line-height:1.55;">
-          Race the 60-second clock across rapid-fire specification stems. Every <strong>3-answer streak adds +4 seconds</strong> to your clock! Use mouse/tap or keys <kbd>1</kbd> <kbd>2</kbd> <kbd>3</kbd> <kbd>4</kbd>.
+        <p style="max-width:520px;margin:0 auto 16px;color:#cbd5e1;font-size:0.92rem;line-height:1.55;">
+          Race the 60-second clock across rapid-fire specification stems. Every <strong>3-answer streak adds +4 seconds</strong> to your clock!
         </p>
         <div class="arcade-gameover-stats">
           <div><span>Question Bank</span><strong>${pool.length} Stems</strong></div>
@@ -150,11 +150,15 @@ export function mountBossSprint(stageEl, pools, ctx) {
           <div class="tlb-stat"><span>Best</span><strong>${Math.max(pb, score)}</strong></div>
         </div>
 
-        ${feedbackBanner}
+        <div class="bsp-feedback-slot" role="status" aria-live="polite">
+          ${feedbackBanner || `<div class="bsp-feedback-idle">⚡ Every 3-streak adds +4s bonus time!</div>`}
+        </div>
 
         <div class="bsp-card ${cooldownLocked ? 'frozen' : ''}">
-          <div class="bsp-topic">${currentQ.source || 'Rapid Specification Check'}</div>
-          <h3 class="bsp-question">${currentQ.q}</h3>
+          <div class="bsp-question-slot">
+            <div class="bsp-topic">${currentQ.source || 'Rapid Specification Check'}</div>
+            <h3 class="bsp-question">${currentQ.q}</h3>
+          </div>
           <div class="bsp-options">
             ${shuffledOpts
               .map((opt, idx) => {
@@ -182,18 +186,17 @@ export function mountBossSprint(stageEl, pools, ctx) {
     phase = 'OVER';
     arcadeAudio.gameOver();
     const { isNewBest, best } = saveArcadePersonalBest(ctx.unitId, 'sprint', ctx.scope, score);
+    ctx.onRoundComplete?.();
     pb = best;
-    if (correctCount > 0) {
-    }
     const acc = answeredCount > 0 ? Math.round((correctCount / answeredCount) * 100) : 0;
 
     stageEl.innerHTML = `
       <div class="arcade-result-panel">
-        <div style="font-size:2.8rem;margin-bottom:6px;">${isNewBest ? '🏆' : '⚡'}</div>
+        <div style="font-size:2.6rem;margin-bottom:6px;">${isNewBest ? '🏆' : '⚡'}</div>
         <h3>${isNewBest ? 'New Boss Sprint Record!' : 'Buzzer Sounded — Time Up!'}</h3>
         <div class="arcade-gameover-stats">
           <div><span>Final Score</span><strong>${score}</strong></div>
-          <div><span>Correct Answers</span><strong>${correctCount} (${acc}%)</strong></div>
+          <div><span>Correct</span><strong>${correctCount} (${acc}%)</strong></div>
           <div><span>Best Streak</span><strong>${bestStreak}🔥</strong></div>
           <div><span>Personal Best</span><strong>${best}</strong></div>
         </div>

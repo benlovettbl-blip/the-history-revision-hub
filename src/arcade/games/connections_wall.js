@@ -87,6 +87,7 @@ export function mountConnectionsWall(stageEl, pools, ctx) {
         score += mistakesLeft * 100;
         arcadeAudio.levelUp();
         const { best } = saveArcadePersonalBest(ctx.unitId, 'connections', ctx.scope, score);
+        ctx.onRoundComplete?.();
         pb = best;
       }
       render();
@@ -112,6 +113,7 @@ export function mountConnectionsWall(stageEl, pools, ctx) {
       remainingTiles = [];
       selectedIds.clear();
       const { best } = saveArcadePersonalBest(ctx.unitId, 'connections', ctx.scope, score);
+      ctx.onRoundComplete?.();
       pb = best;
       toastMsg = 'Wall unlocked — study the 4 historical connections below and try a fresh board!';
     }
@@ -189,14 +191,14 @@ export function mountConnectionsWall(stageEl, pools, ctx) {
             <button type="button" class="arcade-btn-ghost" id="cw-shuffle-btn">
               <i class="fa-solid fa-shuffle"></i> Shuffle
             </button>
-            <button type="button" class="arcade-btn-ghost" id="cw-hint-btn">
-              <i class="fa-solid fa-lightbulb" style="color:#fbbf24;"></i> Pair Hint (-50)
+            <button type="button" class="arcade-btn-ghost" id="cw-hint-btn" title="Highlight 2 connected tiles (-50 pts)">
+              <i class="fa-solid fa-lightbulb" style="color:#fbbf24;"></i> Hint
             </button>
             <button type="button" class="arcade-btn-ghost" id="cw-clear-btn" ${selectedIds.size === 0 ? 'disabled' : ''}>
-              Deselect All
+              Deselect
             </button>
             <button type="button" class="arcade-btn-primary" id="cw-submit-btn" ${selectedIds.size !== 4 ? 'disabled' : ''}>
-              <i class="fa-solid fa-check-double"></i> Submit Group (${selectedIds.size}/4)
+              Submit (${selectedIds.size}/4)
             </button>
           </div>
         `

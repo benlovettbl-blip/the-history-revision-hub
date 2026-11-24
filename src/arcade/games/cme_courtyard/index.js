@@ -437,12 +437,13 @@ export function mountCmeCourtyard(stageEl, pools = {}, meta = {}) {
       return total;
     };
 
-    const viewportH = window.innerHeight || rootEl.clientHeight || 800;
+    const viewportH =
+      window.visualViewport?.height || window.innerHeight || rootEl.clientHeight || 800;
     // Pass 1: initial available height
-    const avail1 = Math.max(180, Math.floor(viewportH - measureChromeHeight() - 8));
+    const avail1 = Math.max(160, Math.floor(viewportH - measureChromeHeight() - 8));
     rootEl.style.setProperty('--ct-fs-avail-h', `${avail1}px`);
     // Pass 2: re-measure in case narrowing max-width wrapped a toolbar/strip onto 2 lines
-    const avail2 = Math.max(180, Math.floor(viewportH - measureChromeHeight() - 8));
+    const avail2 = Math.max(160, Math.floor(viewportH - measureChromeHeight() - 8));
     if (avail2 !== avail1) {
       rootEl.style.setProperty('--ct-fs-avail-h', `${avail2}px`);
     }
@@ -453,8 +454,10 @@ export function mountCmeCourtyard(stageEl, pools = {}, meta = {}) {
     isFullscreen = next;
     if (typeof document !== 'undefined') {
       document.body.style.overflow = isFullscreen ? 'hidden' : '';
+      document.body.classList.toggle('cc-fullscreen-body-lock', isFullscreen);
       const rootDocEl = document.documentElement;
-      if (isFullscreen && rootDocEl.requestFullscreen && !document.fullscreenElement) {
+      const isMobileViewport = typeof window !== 'undefined' && window.innerWidth <= 932;
+      if (isFullscreen && !isMobileViewport && rootDocEl.requestFullscreen && !document.fullscreenElement) {
         rootDocEl
           .requestFullscreen()
           .then(() => syncFullscreenViewportFit())
@@ -664,6 +667,7 @@ export function mountCmeCourtyard(stageEl, pools = {}, meta = {}) {
       saved.stamped[epIdx] = true;
       persistState(saved);
       courtyardFoley.warmChord();
+      window.hhAwardXp?.({ amount: 30, source: 'cme_courtyard', unitId: 'conflict_middle_east' });
       return true;
     }
     return false;
@@ -1786,10 +1790,10 @@ export function mountCmeCourtyard(stageEl, pools = {}, meta = {}) {
     const lensKeys = Object.keys(ep.scenes);
 
     stageEl.innerHTML = `
-      <div class="cme-ct-root ${isFullscreen ? 'is-fullscreen' : ''}">
+      <div class="cme-ct-root ${showCoverScreen ? 'is-cover-screen' : ''} ${isFullscreen ? 'is-fullscreen cc-mobile-fullscreen' : ''}">
         <div class="cme-ct-stage-frame">
           <!-- ZONE 1: Clean Two-Row Top Command HUD (Zero Horizontal Overflow + Prominent Full Screen!) -->
-          <div class="cme-ct-topbar">
+          <div class="cme-ct-topbar cc-hud">
             <button type="button" class="cme-ct-chapter-btn" id="ct-open-chapters-btn" title="Open 12-Chapter Story Campaign Map">
               <span>📖 ${escapeHtml(ep.pillLabel)}: ${escapeHtml(ep.shortTag)} ▾</span>
               <span class="cme-ct-stamp-pill">🏵️ ${totalStamped}/12</span>
@@ -1838,11 +1842,11 @@ export function mountCmeCourtyard(stageEl, pools = {}, meta = {}) {
 
               <button
                 type="button"
-                class="cme-ct-tool-btn is-fullscreen-btn"
+                class="cme-ct-tool-btn is-fullscreen-btn cc-fullscreen-btn"
                 id="ct-fullscreen-btn"
                 title="Toggle Full-Screen Cinema Mode (Shortcut: F)"
               >
-                ${isFullscreen ? '⛶ Exit Full Screen' : '⛶ Full Screen'}
+                ${isFullscreen ? '✕ Exit Fullscreen' : '⛶ Fullscreen'}
               </button>
             </div>
           </div>
@@ -1920,7 +1924,7 @@ export function mountCmeCourtyard(stageEl, pools = {}, meta = {}) {
           }
 
           <!-- ZONE 2: Living 16:9 Graphic-Novel Canvas + 2.5D Mouse Parallax -->
-          <div class="cme-ct-viewport ${heldObj ? 'has-equipped-item' : ''} ${isHinting ? 'is-hinting' : ''}" id="ct-viewport-box" style="${showCoverScreen ? 'border-radius:10px;' : ''}">
+          <div class="cme-ct-viewport ${showCoverScreen ? 'is-cover-viewport' : ''} ${intertitleData ? 'has-intertitle' : ''} ${heldObj ? 'has-equipped-item' : ''} ${isHinting ? 'is-hinting' : ''}" id="ct-viewport-box" style="${showCoverScreen ? 'border-radius:10px;' : ''}">
             <div class="cme-ct-cam-rig ${escapeHtml(!showCoverScreen && sc.cameraClass ? sc.cameraClass : '')}" id="ct-cam-rig">
               <img
                 src="${getAssetUrl(showCoverScreen ? '/images/arcade/cme/cover_two_keys_poster.webp' : sc.sceneImg)}"
@@ -1993,25 +1997,28 @@ export function mountCmeCourtyard(stageEl, pools = {}, meta = {}) {
               showCoverScreen
                 ? `
                 <!-- Bespoke Illustrated Graphic-Novel Movie-Poster Cover Screen -->
-                <div class="cme-ct-cover-overlay">
+                <div class="cme-ct-cover-overlay cc-cover">
                   <div class="cme-ct-cover-kicker">🗝️ Interactive Graphic-Novel Adventure · 1914–1995</div>
                   <h2 class="cme-ct-cover-title">Courtyard of Two Keys:<br/>Two Families, One Land</h2>
                   <p class="cme-ct-cover-blurb">
                     Eighty years, three generations, and two keys to the same Jaffa stone doorway. Step inside 22 living Palestinian &amp; Israeli scenes—gather keepsakes across shifting borders, tune shortwave wireless dials, challenge extremism face-to-face, and piece together history from both sides.
                   </p>
-                  <div style="display:flex;gap:9px;flex-wrap:wrap;align-items:center;">
+                  <div class="cc-cover-actions" style="display:flex;gap:9px;flex-wrap:wrap;align-items:center;max-width:100%;">
                     ${
                       hasProgress
-                        ? `<button type="button" class="cme-ct-climax-btn is-ready" id="ct-cover-continue-btn" style="padding:10px 18px;font-size:0.86rem;">
+                        ? `<button type="button" class="cme-ct-climax-btn is-ready cc-cover-play-btn" id="ct-cover-continue-btn" style="padding:10px 18px;font-size:0.86rem;">
                             ▶ Continue Ch. ${ep.chapterNum} (${escapeHtml(ep.shortTag)})
                           </button>`
                         : ''
                     }
-                    <button type="button" class="${hasProgress ? 'cme-ct-tool-btn' : 'cme-ct-climax-btn is-ready'}" id="ct-cover-start-btn" style="padding:10px 18px;font-size:0.86rem;">
+                    <button type="button" class="${hasProgress ? 'cme-ct-tool-btn' : 'cme-ct-climax-btn is-ready'} cc-cover-play-btn" id="ct-cover-start-btn" style="padding:10px 18px;font-size:0.86rem;">
                       ${hasProgress ? '▶ Replay Ch. 1 (1914)' : '▶ Start Adventure — Jaffa & Haifa (1914)'}
                     </button>
                     <button type="button" class="cme-ct-tool-btn" id="ct-cover-chapters-btn" style="padding:9px 14px;font-size:0.82rem;">
                       📖 Chapters (${totalStamped}/12)
+                    </button>
+                    <button type="button" class="cme-ct-tool-btn is-fullscreen-btn cc-fullscreen-btn" id="ct-cover-fs-btn" style="padding:9px 14px;font-size:0.82rem;">
+                      ${isFullscreen ? '✕ Exit Fullscreen' : '⛶ Fullscreen'}
                     </button>
                     ${
                       hasProgress || Object.keys(saved.visited).length > 0
@@ -2758,6 +2765,11 @@ export function mountCmeCourtyard(stageEl, pools = {}, meta = {}) {
       toggleFullscreen();
     });
 
+    stageEl.querySelector('#ct-cover-fs-btn')?.addEventListener('click', () => {
+      wakeAudio();
+      toggleFullscreen();
+    });
+
     stageEl.querySelector('#ct-open-chapters-btn')?.addEventListener('click', () => {
       wakeAudio();
       activeModal = 'chapters';
@@ -3277,7 +3289,7 @@ export function mountCmeCourtyard(stageEl, pools = {}, meta = {}) {
     courtyardVoice.onStateChange = null;
     courtyardVoice.stop();
     if (typeof document !== 'undefined') {
-      document.body.classList.remove('has-cme-courtyard-active');
+      document.body.classList.remove('has-cme-courtyard-active', 'cc-fullscreen-body-lock');
       document.body.style.overflow = '';
       if (document.fullscreenElement && document.exitFullscreen) {
         document.exitFullscreen().catch(() => {});
