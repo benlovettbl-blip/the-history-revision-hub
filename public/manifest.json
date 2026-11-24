@@ -1,15 +1,35 @@
 {
+  "id": "/?source=pwa",
   "name": "The History Revision Hub",
   "short_name": "History Hub",
-  "description": "Interactive History Learning & Ypres Battlefield Tour Field Companion",
+  "description": "Interactive KS2, KS3 & Pearson Edexcel GCSE History learning, studio audio read-alouds, primary source enquiries, and spaced-retrieval revision.",
   "start_url": "/?source=pwa",
   "scope": "/",
   "display": "standalone",
   "orientation": "any",
   "background_color": "#0f172a",
   "theme_color": "#0f172a",
-  "categories": ["education", "history", "travel"],
+  "prefer_related_applications": false,
+  "categories": ["education", "books", "reference"],
   "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
     {
       "src": "/icon-192.svg",
       "sizes": "192x192",
@@ -20,7 +40,35 @@
       "src": "/icon-512.svg",
       "sizes": "512x512",
       "type": "image/svg+xml",
-      "purpose": "any maskable"
+      "purpose": "any"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Continue Revision",
+      "short_name": "Continue",
+      "description": "Resume your active History lesson and retrieval practice",
+      "url": "/?source=pwa",
+      "icons": [
+        {
+          "src": "/icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "GCSE Courses",
+      "short_name": "GCSE Courses",
+      "description": "Open Pearson Edexcel GCSE (9–1) History courses",
+      "url": "/?source=pwa#gcse",
+      "icons": [
+        {
+          "src": "/icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
     }
   ]
 }
