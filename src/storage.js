@@ -305,7 +305,22 @@ export async function ensureUnitLoaded(unitId) {
         return unitData;
       }
     } catch (err) {
-      console.warn(`[FastBoot] Per-unit load for ${unitId} fell back to full DB:`, err);
+      console.warn(`[FastBoot] Per-unit load for ${unitId} fell back to CacheStorage / full DB:`, err);
+      if (typeof window !== 'undefined' && 'caches' in window) {
+        try {
+          const cachedRes = await window.caches.match(`/data/${encodeURIComponent(unitId)}.json`);
+          if (cachedRes && cachedRes.ok) {
+            const cachedJson = await cachedRes.json();
+            const unitData = cachedJson?.data || cachedJson;
+            if (unitData && typeof unitData === 'object') {
+              if (!state.db) state.db = {};
+              state.db[unitId] = { data: unitData };
+              window.db = state.db;
+              return unitData;
+            }
+          }
+        } catch (_) {}
+      }
     }
 
     await ensureFullDatabaseLoaded();

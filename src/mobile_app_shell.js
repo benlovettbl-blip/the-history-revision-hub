@@ -484,12 +484,13 @@ export async function saveUnitOffline(unitId, btnEl = null) {
   let swSucceeded = false;
 
   try {
-    // Pre-warm lazy JS chunks so Quiz, Exam & Arcade work offline on the bus
-    Promise.allSettled([
+    // Pre-warm lazy JS chunks so Lessons, Quiz, Exam, Arcade & Timelines work 100% offline on the bus
+    await Promise.allSettled([
       import('./mobile_quiz_arena.js'),
       import('./mobile_exam_trainer.js'),
       import('./arcade_zone.js'),
       import('./universal_living_timeline.js'),
+      import('./engine/lesson_renderer.js'),
     ]);
 
     if (

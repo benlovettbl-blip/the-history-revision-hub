@@ -885,3 +885,7 @@ export function initTerminologyTask(container, terminologyData) {
 
   loadTopic(terminologyData[0].id);
 }
+
+if (typeof window !== 'undefined') {
+  window.initTerminologyTask = initTerminologyTask;
+}

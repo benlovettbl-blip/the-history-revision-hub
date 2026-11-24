@@ -822,12 +822,17 @@
       // Emergency Vite Module Recovery: If a stale tab or cached HTML tries to import
       // a purged Vite chunk, auto-update the service worker and refresh cleanly.
       window.addEventListener('vite:preloadError', function (event) {
+        if (typeof navigator !== 'undefined' && navigator.onLine === false) {
+          if (event && event.preventDefault) event.preventDefault();
+          return;
+        }
         console.warn('[PWA Recovery] Vite chunk load error detected. Reloading...');
         window.location.reload();
       });
       window.addEventListener(
         'error',
         function (e) {
+          if (typeof navigator !== 'undefined' && navigator.onLine === false) return;
           if (e.target && e.target.tagName === 'SCRIPT' && e.target.type === 'module') {
             console.warn('[PWA Recovery] Module script failed to load:', e.target.src);
             if (!sessionStorage.getItem('pwa_module_recovery_triggered')) {

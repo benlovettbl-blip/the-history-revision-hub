@@ -788,6 +788,14 @@ function ensureQuacksStyles() {
         font-size: 0.84rem;
       }
     }
+    @media (max-width: 559px) {
+      .qac-remedy-grid {
+        grid-template-columns: minmax(0, 1fr) !important;
+      }
+      .qac-remedy-grid > .qac-opt-btn:nth-child(3) {
+        grid-column: auto !important;
+      }
+    }
     @media (max-width: 896px) and (orientation: landscape) {
       .qac-main-split {
         display: grid;

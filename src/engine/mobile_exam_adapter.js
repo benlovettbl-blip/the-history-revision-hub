@@ -866,7 +866,7 @@ function extractModelHtmlAndPlain(qObj) {
 function wrapActiveRecallTokensInHtml(htmlSnippet, vocabTerms = []) {
   if (!htmlSnippet) return '';
 
-  const structuralSkip = /^(source\s+[a-e]|sources\s+[a-e]\s+and\s+[a-e]|interpretation\s+[12]|feature\s+[12]|inference\s+[12]|what\s+i\s+can\s+infer|details\s+in\s+the\s+source.*|overall|in\s+conclusion|firstly|secondly|furthermore|however)$/i;
+  const structuralSkip = /^(?:(?:\([ivx0-9a-z]+\)|[ivx0-9]+\.)\s*)?(source\s+[a-e]|sources\s+[a-e]\s+and\s+[a-e]|interpretation\s+[12]|feature\s+[12]|inference\s+[12]|what\s+i\s+can\s+infer.*|details\s+in\s+the\s+source.*|overall|in\s+conclusion|firstly|secondly|furthermore|however)$/i;
 
   const cleanVocab = vocabTerms
     .map((v) => String(v?.term || v || '').trim())
@@ -880,17 +880,17 @@ function wrapActiveRecallTokensInHtml(htmlSnippet, vocabTerms = []) {
 
   // 1. Convert non-structural <strong>...</strong> phrases directly into recall chips
   let processed = String(htmlSnippet).replace(/<strong>([\s\S]*?)<\/strong>/gi, (full, inner) => {
-    const plainInner = stripHtml(inner).trim();
+    const plainInner = stripHtml(inner).replace(/^(?:\([ivx0-9a-z]+\)|[ivx0-9]+\.)\s*/i, '').trim();
     if (!plainInner || plainInner.length > 52 || structuralSkip.test(plainInner) || plainInner.endsWith(':')) {
       return full;
     }
     return `<span class="met-recall-chip" data-recall-chip="1" role="button" tabindex="0"><strong>${inner}</strong></span>`;
   });
 
-  // 2. Tokenize remaining plain-text nodes (outside tags and outside existing recall chips)
+  // 2. Tokenize remaining plain-text nodes (dates, stats, quoted source evidence, proper-noun terms & vocab)
   const parts = processed.split(/(<span class="met-recall-chip"[\s\S]*?<\/span>|<[^>]+>)/gi);
   const dateOrStatPattern =
-    '(?:c\\.?\\s*\\d{4}(?:[–-]\\d{2,4})?|\\b(?:1[0-9]{3}|20[0-2][0-9])(?:[–-](?:\\d{2}|\\d{4}))?s?\\b|(?:£|\\$)\\d+(?:[.,]\\d+)?(?:\\s*(?:million|billion))?|\\b\\d{1,3}(?:,\\d{3})+(?:\\s+(?:troops|soldiers|deaths|refugees|flights|ships|men|citizens))?\\b|\\b\\d+(?:\\.\\d+)?%)';
+    '(?:c\\.?\\s*\\d{4}(?:[–-]\\d{2,4})?|\\b(?:1[0-9]{3}|20[0-2][0-9])(?:[–-](?:\\d{2}|\\d{4}))?s?\\b|(?:£|\\$)\\d+(?:[.,]\\d+)?(?:\\s*(?:million|billion))?|\\b\\d{1,3}(?:,\\d{3})+(?:\\s+(?:troops|soldiers|deaths|refugees|flights|ships|men|citizens))?\\b|\\b\\d+(?:\\.\\d+)?%|&quot;[^&]{8,72}&quot;)';
 
   const combinedRegex = new RegExp(
     escapedVocabAlternation
@@ -983,6 +983,31 @@ function buildWagollSegments(modelHtml, vocabChips, family) {
       }
     });
   });
+
+  // Guarantee every WAGOLL has at least 2 active-recall chips even on dateless descriptive extracts
+  const totalChipCount = segments.reduce(
+    (sum, seg) => sum + (seg.html.match(/class="met-recall-chip"/g) || []).length,
+    0,
+  );
+  if (totalChipCount < 2) {
+    let added = totalChipCount;
+    for (const seg of segments) {
+      if (added >= 2) break;
+      if (seg.html.includes('class="met-recall-chip"')) continue;
+      // Match a capitalized proper noun phrase or a concrete 2-word historical noun phrase
+      const fallbackReplaced = seg.html.replace(
+        /\b([A-Z][a-z]{3,}(?:\s+[A-Z][a-z]{3,})?|[a-z]{5,}\s+(?:deprivation|poverty|starvation|blockade|infection|rebellion|censorship|propaganda|opposition|sanitation|authority|resistance|casualties))\b/,
+        (m) => {
+          if (/^(?:What|Details|Source|Sources|Interpretation|Feature|First|Second|Overall|During|However)\b/.test(m)) {
+            return m;
+          }
+          added += 1;
+          return `<span class="met-recall-chip" data-recall-chip="1" role="button" tabindex="0">${m}</span>`;
+        },
+      );
+      seg.html = fallbackReplaced;
+    }
+  }
 
   return segments;
 }
@@ -1481,11 +1506,19 @@ function buildBlurtDrill(qInfo, lesson, blurtMatch = null) {
     addTarget(m[1], 'date', `Anchor your explanation chronologically using ${m[1]}.`);
   });
 
-  // 2. Bolded terms inside modelHtml
+  // 2. Bolded terms inside modelHtml (filtering out structural rubric labels like "(i) What I can infer:")
   const boldMatches = [...String(qInfo.modelHtml || '').matchAll(/<strong>([^<]{3,34})<\/strong>/gi)];
   boldMatches.forEach((m) => {
-    const clean = stripHtml(m[1]).replace(/:$/, '').trim();
-    if (!/^(source|interpretation|feature|what i can|details in)/i.test(clean)) {
+    const clean = stripHtml(m[1])
+      .replace(/^(?:\([ivx0-9a-z]+\)|[ivx0-9]+\.)\s*/i, '')
+      .replace(/:$/, '')
+      .trim();
+    if (
+      clean.length >= 3 &&
+      !/^(?:source|sources|interpretation|feature|inference|what\s+i\s+can|details\s+in|point|evidence|explain|judgement|reason|factor|aspect|follow[- ]up|question\s+i\s+would|type\s+of\s+source|how\s+this\s+might)/i.test(
+        clean,
+      )
+    ) {
       addTarget(clean, 'term', 'High-tariff historical evidence from the Grade 9 exemplar.');
     }
   });
@@ -1722,7 +1755,6 @@ export async function buildUnitExamDirectory(rawUnitId, { forceRefresh = false }
           rawQ.examiner_tip ||
             rawQ.examinerTips ||
             rawQ?.scaffolding?.guidance ||
-            blurtMatch?.examinerTips ||
             defaultExaminerTipForFamily(tariffMeta.family, tariffMeta.marks),
         );
 

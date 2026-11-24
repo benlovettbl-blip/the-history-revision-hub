@@ -42,9 +42,13 @@ import './mobile_media_touch.css';
 initShareUtilsGlobals();
 if (typeof window !== 'undefined') {
   window.openUnifiedTeacherGuidance = openUnifiedTeacherGuidance;
-  // Auto-recover stale Safari/PWA tabs if a deploy rotates lazy Vite chunk hashes
+  // Auto-recover stale Safari/PWA tabs if a deploy rotates lazy Vite chunk hashes (never reload while offline!)
   window.addEventListener('vite:preloadError', (event) => {
     try {
+      if (typeof navigator !== 'undefined' && navigator.onLine === false) {
+        event.preventDefault?.();
+        return;
+      }
       const lastReload = Number(sessionStorage.getItem('hh_preload_reload_ts') || 0);
       if (Date.now() - lastReload > 15000) {
         event.preventDefault?.();

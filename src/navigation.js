@@ -1668,7 +1668,6 @@ export async function switchView(viewName, param = null, skipHistory = false, op
       typeof document !== 'undefined' &&
       document.body &&
       document.body.classList.contains('hh-mobile-pupil-mode') &&
-      !isStaffModeActive() &&
       !options?.forceDesktopQuiz
     ) {
       const { renderMobileQuizArena } = await import('./mobile_quiz_arena.js');
