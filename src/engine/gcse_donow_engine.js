@@ -20,6 +20,9 @@
  * - 100% School Anonymity & Commercial Neutrality.
  */
 
+import { updateLeitnerBox, generateQuestionId } from '../storage.js';
+import { state } from '../state.js';
+
 export const GCSE_RETRIEVAL_UNITS = [
   { id: 'cme_new', label: 'Middle East', title: 'Conflict in the Middle East, 1945–1995', bg: '#f0f9ff', border: '#bae6fd', text: '#0369a1' },
   { id: 'gcse_cold_war', label: 'Cold War P4', title: 'Superpower Relations & the Cold War, 1941–1991', bg: '#eff6ff', border: '#bfdbfe', text: '#1d4ed8' },
@@ -1328,7 +1331,372 @@ export function renderGcseUnitChipsHTML(activeTarget = '', isKs3 = false) {
 }
 
 /**
- * Renders the complete 3-mode Do Now panel HTML for KS3 and GCSE.
+ * Resolves the active Do Now presentation mode ('solo' vs 'board').
+ * - Respects manual user toggle persisted in sessionStorage ('hh_donow_view_mode').
+ * - Automatically defaults to 'solo' when viewport < 933px and not in Staff Mode.
+ * - Defaults to 'board' on desktop (>= 933px) or when Staff Mode is active.
+ */
+const SESSION_STORAGE_KEY_DONOW_VIEW = 'hh_donow_view_mode';
+const LOCAL_STORAGE_KEY_REVISION_STREAK = 'hh_revision_streak_v1';
+
+export function resolveDefaultDoNowViewMode() {
+  try {
+    if (typeof sessionStorage !== 'undefined') {
+      const saved = sessionStorage.getItem(SESSION_STORAGE_KEY_DONOW_VIEW);
+      if (saved === 'solo' || saved === 'board') {
+        return saved;
+      }
+    }
+  } catch (e) {}
+  const isStaff =
+    typeof document !== 'undefined' &&
+    document.body &&
+    document.body.classList.contains('staff-mode-active');
+  if (typeof window !== 'undefined' && window.innerWidth < 933 && !isStaff) {
+    return 'solo';
+  }
+  return 'board';
+}
+
+function getScopeShortLabel(mode) {
+  if (mode === 'current') return 'This Lesson';
+  if (mode === 'unit') return 'Unit Mix';
+  if (mode === 'other' || mode === 'all') return 'All Units';
+  return 'Previous';
+}
+
+function formatSoloElapsed(ms) {
+  const totalSecs = Math.max(1, Math.round((ms || 0) / 1000));
+  if (totalSecs < 60) return `${totalSecs}s`;
+  const mins = Math.floor(totalSecs / 60);
+  const secs = totalSecs % 60;
+  return `${mins}m ${String(secs).padStart(2, '0')}s`;
+}
+
+export function computeDoNowReceiptBadge(payloadStr) {
+  const alphabet = '23456789ABCDEFGHJKLMNPQRSTUVWXYZ';
+  let h = 2166136261;
+  const str = String(payloadStr || 'TheHistoryRevisionHub');
+  for (let i = 0; i < str.length; i++) {
+    h ^= str.charCodeAt(i);
+    h = Math.imul(h, 16777619);
+  }
+  let code = '';
+  let val = h >>> 0;
+  for (let j = 0; j < 4; j++) {
+    code += alphabet[val % alphabet.length];
+    val = Math.floor(val / alphabet.length) ^ ((h >>> ((j + 1) * 5)) & 0xff);
+  }
+  return code;
+}
+
+function recordAndReadLocalStreak() {
+  const todayIso = new Date().toISOString().slice(0, 10);
+  let streak = 1;
+  try {
+    if (typeof localStorage !== 'undefined') {
+      const raw = localStorage.getItem(LOCAL_STORAGE_KEY_REVISION_STREAK);
+      if (raw) {
+        const parsed = JSON.parse(raw);
+        if (parsed && parsed.lastDate === todayIso) {
+          streak = Math.max(1, parseInt(parsed.streak, 10) || 1);
+        } else if (parsed && parsed.lastDate) {
+          const prevMs = Date.parse(parsed.lastDate + 'T00:00:00Z');
+          const curMs = Date.parse(todayIso + 'T00:00:00Z');
+          const diffDays = Math.round((curMs - prevMs) / 86400000);
+          if (diffDays === 1) {
+            streak = (parseInt(parsed.streak, 10) || 1) + 1;
+          } else {
+            streak = 1;
+          }
+        }
+      }
+      localStorage.setItem(
+        LOCAL_STORAGE_KEY_REVISION_STREAK,
+        JSON.stringify({ streak, lastDate: todayIso }),
+      );
+    }
+  } catch (e) {}
+  return streak;
+}
+
+function getUnitLeitnerSecuredCount(unitId) {
+  const cleanUnit = String(unitId || 'general')
+    .toLowerCase()
+    .replace(/[^a-z0-9]/g, '_');
+  const masteryMap = (state && state.mastery) || {};
+  let secured = 0;
+  let box5 = 0;
+  for (const [k, entry] of Object.entries(masteryMap)) {
+    if (!entry) continue;
+    if (!cleanUnit || cleanUnit === 'general' || k.startsWith(`${cleanUnit}__`)) {
+      if ((entry.leitnerBox || 1) >= 2) secured += 1;
+      if ((entry.leitnerBox || 1) >= 5) box5 += 1;
+    }
+  }
+  return { secured, box5 };
+}
+
+function createSoloQuizState({
+  questions,
+  mode = 'previous',
+  unitId = '',
+  unitTitle = '',
+  lessonId = '',
+  lessonTitle = '',
+  subtitle = '',
+  isMissedPracticeRound = false,
+}) {
+  const cleanList = Array.isArray(questions) ? [...questions] : [];
+  return {
+    unitId: unitId || 'general',
+    unitTitle: unitTitle || 'The History Revision Hub',
+    lessonId: lessonId || '',
+    lessonTitle: lessonTitle || '',
+    mode,
+    subtitle: subtitle || 'Active Recall Quiz',
+    baseQuestions: cleanList,
+    queue: cleanList.map((item, idx) => ({ item, origIndex: idx, attempt: 1 })),
+    cursor: 0,
+    isRevealed: false,
+    firstTryCorrect: 0,
+    firstTryMissedIndices: [],
+    masteredIndices: [],
+    startedAt: Date.now(),
+    finishedAt: null,
+    checkCode: '',
+    streakDays: 1,
+    isMissedPracticeRound: Boolean(isMissedPracticeRound),
+  };
+}
+
+export function renderSoloQuizStageHTML(soloState, options = {}) {
+  if (!soloState || !Array.isArray(soloState.baseQuestions) || soloState.baseQuestions.length === 0) {
+    return `
+      <div class="hh-solo-empty">
+        <i class="fa-solid fa-circle-info"></i>
+        <span>No recall questions available for this scope. Tap <strong>Quiz Setup</strong> to select another topic.</span>
+      </div>
+    `;
+  }
+
+  const totalInitial = soloState.baseQuestions.length;
+  const masteredCount = soloState.masteredIndices.length;
+  const unitId = soloState.unitId || '';
+  const isGcse = options.isGcse !== undefined ? Boolean(options.isGcse) : isGcseUnit(options.activeUnit, unitId);
+
+  // End-of-Round Revision Receipt Summary Card
+  if (soloState.cursor >= soloState.queue.length) {
+    const finishTs = soloState.finishedAt || Date.now();
+    const elapsedStr = formatSoloElapsed(finishTs - (soloState.startedAt || finishTs));
+    const pct = totalInitial > 0 ? Math.round((soloState.firstTryCorrect / totalInitial) * 100) : 100;
+    const missedCount = soloState.firstTryMissedIndices.length;
+    const completedDate = new Date(finishTs);
+    const dateTimeStr = `${completedDate.toLocaleDateString('en-GB', {
+      day: '2-digit',
+      month: 'short',
+      year: 'numeric',
+    })}, ${completedDate.toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit' })}`;
+    const leitnerStats = getUnitLeitnerSecuredCount(unitId);
+    const streakDays = soloState.streakDays || 1;
+    const checkCode =
+      soloState.checkCode ||
+      computeDoNowReceiptBadge(
+        `${unitId}|${soloState.lessonId}|${soloState.mode}|${soloState.firstTryCorrect}/${totalInitial}|${completedDate.toISOString().slice(0, 16)}`,
+      );
+
+    return `
+      <div class="hh-revision-receipt" id="hh-revision-receipt-card">
+        <div class="hh-receipt-header">
+          <div class="hh-receipt-brand">
+            <i class="fa-solid fa-shield-halved"></i>
+            <span>The History Revision Hub &bull; Revision Receipt</span>
+          </div>
+          <span class="hh-receipt-check-badge" title="Deterministic verification badge">#${checkCode}</span>
+        </div>
+
+        <div class="hh-receipt-body">
+          <div class="hh-receipt-score-hero">
+            <div class="hh-receipt-score-main">${soloState.firstTryCorrect} / ${totalInitial} <span>First-Try</span></div>
+            <span class="hh-receipt-score-pct">${pct}% Accuracy</span>
+          </div>
+          <div class="hh-receipt-topic-line">${soloState.subtitle || ''}</div>
+
+          <div class="hh-receipt-stats-grid">
+            <div class="hh-receipt-stat-tile">
+              <span class="hh-receipt-stat-label"><i class="fa-solid fa-stopwatch"></i> Elapsed Time</span>
+              <strong class="hh-receipt-stat-val">${elapsedStr}</strong>
+            </div>
+            <div class="hh-receipt-stat-tile">
+              <span class="hh-receipt-stat-label"><i class="fa-solid fa-fire"></i> Leitner Progress</span>
+              <strong class="hh-receipt-stat-val">${streakDays}d Streak &bull; ${leitnerStats.secured} Secured</strong>
+            </div>
+            <div class="hh-receipt-stat-tile">
+              <span class="hh-receipt-stat-label"><i class="fa-solid fa-circle-check"></i> Completed</span>
+              <strong class="hh-receipt-stat-val">${dateTimeStr}</strong>
+            </div>
+          </div>
+
+          <div class="hh-receipt-actions">
+            <button type="button"
+              class="hh-receipt-share-btn"
+              onclick="event.stopPropagation(); window.shareOrCopySoloReceipt(this);">
+              <i class="fa-solid fa-share-nodes"></i>
+              <span>Share / Copy Revision Receipt</span>
+            </button>
+
+            <div class="hh-receipt-secondary-row">
+              <button type="button"
+                class="hh-receipt-missed-btn"
+                onclick="event.stopPropagation(); window.startSoloMissedPractice();"
+                ${missedCount === 0 ? 'disabled' : ''}>
+                <i class="fa-solid ${missedCount > 0 ? 'fa-rotate-left' : 'fa-check'}"></i>
+                <span>${missedCount > 0 ? `Practice Missed Questions (${missedCount})` : 'Practice Missed Questions (0)'}</span>
+              </button>
+
+              <button type="button"
+                class="hh-receipt-restart-btn"
+                onclick="event.stopPropagation(); window.restartSoloDoNowRound(true);">
+                <i class="fa-solid fa-arrows-rotate"></i>
+                <span>New Shuffled Round</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    `;
+  }
+
+  const currentEntry = soloState.queue[soloState.cursor];
+  const item = currentEntry.item;
+  const isReviewPass = currentEntry.attempt > 1;
+  let qText = item.question || '';
+  let aText = item.answer || '';
+  let expText = item.explanation || '';
+
+  if (unitId) {
+    qText = qText.replace(/src=['"]assets\//g, `src="/units/${unitId}/assets/`);
+    aText = aText.replace(/src=['"]assets\//g, `src="/units/${unitId}/assets/`);
+    expText = expText.replace(/src=['"]assets\//g, `src="/units/${unitId}/assets/`);
+  }
+
+  const stepText = isReviewPass
+    ? `Reviewing Missed (${soloState.queue.length - soloState.cursor} left)`
+    : `Question ${currentEntry.origIndex + 1} of ${totalInitial}`;
+  const progressPct = Math.min(
+    100,
+    Math.max(
+      8,
+      Math.round(
+        ((isReviewPass ? masteredCount : currentEntry.origIndex + (soloState.isRevealed ? 0.5 : 0)) /
+          totalInitial) *
+          100,
+      ),
+    ),
+  );
+
+  let originBadgeHtml = '';
+  if ((soloState.mode === 'other' || soloState.mode === 'all') && item.unitMeta) {
+    originBadgeHtml = `<span class="hh-solo-origin-pill" style="background:${item.unitMeta.bg};border-color:${item.unitMeta.border};color:${item.unitMeta.text};">${item.unitMeta.label}</span>`;
+  } else if (item.lessonNum && !item.isBaselineStarter) {
+    originBadgeHtml = `<span class="hh-solo-origin-pill">Lesson ${item.lessonNum}${item.stageNum ? ` &bull; Stage ${item.stageNum}` : ''}</span>`;
+  } else if (item.isBaselineStarter) {
+    originBadgeHtml = `<span class="hh-solo-origin-pill">Prior Knowledge</span>`;
+  }
+
+  const targetUnitId = item.unitId || unitId;
+  const lessonNum = item.lessonNum || 1;
+  const stageNum = item.stageNum || 1;
+
+  return `
+    <div class="hh-solo-card">
+      <div class="hh-solo-progress-header">
+        <div class="hh-solo-progress-left">
+          <span class="hh-solo-q-counter ${isReviewPass ? 'is-review' : ''}">${stepText}</span>
+          ${originBadgeHtml}
+        </div>
+        <div class="hh-solo-progress-right">
+          <span class="hh-solo-secured-tag">${masteredCount}/${totalInitial} Secured</span>
+          ${
+            isReviewPass
+              ? `<button type="button" class="hh-solo-finish-early-btn" onclick="event.stopPropagation(); window.finishSoloRoundEarly();" title="Finish round and view Revision Receipt">Finish &rarr;</button>`
+              : ''
+          }
+        </div>
+      </div>
+
+      <div class="hh-solo-progress-track" role="progressbar" aria-valuenow="${progressPct}" aria-valuemin="0" aria-valuemax="100">
+        <div class="hh-solo-progress-fill" style="width: ${progressPct}%;"></div>
+      </div>
+
+      <div class="hh-solo-question-stem">${qText}</div>
+
+      ${
+        !soloState.isRevealed
+          ? `
+        <div class="hh-solo-recall-prompt">
+          <i class="fa-solid fa-brain"></i>
+          <span>Say or think your answer first, then tap Reveal</span>
+        </div>
+
+        <button type="button"
+          class="hh-solo-reveal-btn"
+          onclick="event.stopPropagation(); window.revealSoloDoNowCard();">
+          <i class="fa-solid fa-eye"></i>
+          <span>Reveal Answer</span>
+        </button>
+      `
+          : `
+        <div class="hh-solo-answer-panel">
+          <div class="hh-solo-answer-label">
+            <i class="fa-solid fa-circle-check"></i>
+            <span>Model Answer</span>
+          </div>
+          <div class="hh-solo-answer-text">${aText}</div>
+          ${
+            item.hasSubstantiveExplanation && expText
+              ? `
+            <div class="hh-solo-explanation-box">
+              <i class="fa-solid fa-lightbulb"></i>
+              <div>
+                <div class="hh-solo-explanation-prose">${expText}</div>
+                ${
+                  !item.isBaselineStarter
+                    ? `<button type="button" class="hh-solo-jump-link" onclick="event.stopPropagation(); window.jumpToLessonFromDoNow('${targetUnitId}', ${lessonNum}, ${stageNum});"><i class="fa-solid fa-book-open"></i> Read ${isGcse ? 'Lesson' : 'Enquiry'} ${lessonNum} &bull; Stage ${stageNum} &rarr;</button>`
+                    : ''
+                }
+              </div>
+            </div>
+          `
+              : !item.isBaselineStarter
+                ? `<div class="hh-solo-jump-row"><button type="button" class="hh-solo-jump-link" onclick="event.stopPropagation(); window.jumpToLessonFromDoNow('${targetUnitId}', ${lessonNum}, ${stageNum});"><i class="fa-solid fa-book-open"></i> Review Stage ${stageNum} Narrative &rarr;</button></div>`
+                : ''
+          }
+        </div>
+
+        <div class="hh-solo-grade-prompt">Did you recall the key point accurately?</div>
+        <div class="hh-solo-grade-actions">
+          <button type="button"
+            class="hh-solo-grade-btn review"
+            onclick="event.stopPropagation(); window.gradeSoloDoNowCard(false);">
+            <i class="fa-solid fa-rotate-right"></i>
+            <span>Review again &#8635;</span>
+          </button>
+          <button type="button"
+            class="hh-solo-grade-btn gotit"
+            onclick="event.stopPropagation(); window.gradeSoloDoNowCard(true);">
+            <i class="fa-solid fa-check"></i>
+            <span>Got it &#10003;</span>
+          </button>
+        </div>
+      `
+      }
+    </div>
+  `;
+}
+
+/**
+ * Renders the complete 2-Mode (Solo Quiz + Classroom Board) Do Now panel HTML for KS2, KS3, and GCSE.
  */
 export function renderGcseDoNowPanelHTML({
   activeUnit,
@@ -1348,6 +1716,7 @@ export function renderGcseDoNowPanelHTML({
   const activeMode = 'previous';
   const currentTarget = getSelectedRetrievalTarget(isKs3Effective);
   const activeCount = usesFiveDefault ? 5 : 10;
+  const initialViewMode = resolveDefaultDoNowViewMode();
 
   const unitLessons = activeUnit?.lessons || [];
   const currentLessonIdx = unitLessons.findIndex(
@@ -1387,14 +1756,70 @@ export function renderGcseDoNowPanelHTML({
   });
   const chipsHtml = isKs2Effective ? '' : renderGcseUnitChipsHTML(currentTarget, isKs3Effective);
 
+  const initialSoloState = createSoloQuizState({
+    questions: result.questions,
+    mode: activeMode,
+    unitId: currentUnitId,
+    unitTitle: activeUnit?.title || 'The History Revision Hub',
+    lessonId: lesson?.id || '',
+    lessonTitle: lesson?.title || '',
+    subtitle: result.subtitle,
+  });
+  const soloHtml = renderSoloQuizStageHTML(initialSoloState, {
+    activeUnit,
+    isKs2: isKs2Effective,
+    isGcse: !isKs2Effective && !isKs3Effective,
+  });
+
   if (typeof window !== 'undefined') {
     window.currentDoNowQuestions = result.questions;
     window.currentDoNowSubtitle = result.subtitle;
     window.currentDoNowUnitMeta = { unitId: currentUnitId, lessonId: lesson?.id || '', lessonNum: lesson?.number || '' };
+    window._hhSoloQuizState = initialSoloState;
   }
 
+  const setupSummaryText = `${getScopeShortLabel(activeMode)} &bull; ${result.questions.length || activeCount} Qs`;
+
   return `
-    <div class="donow-panel-content gcse-3mode-donow" data-unit-id="${currentUnitId}" data-lesson-id="${lesson.id || ''}" data-is-ks3="${isKs3Effective ? 'true' : 'false'}" data-is-ks2="${isKs2Effective ? 'true' : 'false'}">
+    <div class="donow-panel-content gcse-3mode-donow hh-donow-view-${initialViewMode}" data-donow-view="${initialViewMode}" data-unit-id="${currentUnitId}" data-lesson-id="${lesson.id || ''}" data-is-ks3="${isKs3Effective ? 'true' : 'false'}" data-is-ks2="${isKs2Effective ? 'true' : 'false'}">
+      <!-- 2-Mode Switcher Row: Solo Quiz vs Classroom Board + Collapsible Solo Quiz Setup Pill -->
+      <div class="hh-donow-top-switcher-row no-print">
+        <div class="hh-donow-view-toggle" role="tablist" aria-label="Do Now starter mode">
+          <button type="button"
+            class="hh-donow-view-pill ${initialViewMode === 'solo' ? 'active' : ''}"
+            data-donow-view-btn="solo"
+            role="tab"
+            aria-selected="${initialViewMode === 'solo' ? 'true' : 'false'}"
+            onclick="event.stopPropagation(); window.setDoNowViewMode('solo');"
+            title="Thumb-friendly 1-card active recall with Leitner memory and Revision Receipt">
+            <i class="fa-solid fa-bolt"></i>
+            <span>Solo Quiz</span>
+          </button>
+          <button type="button"
+            class="hh-donow-view-pill ${initialViewMode === 'board' ? 'active' : ''}"
+            data-donow-view-btn="board"
+            role="tab"
+            aria-selected="${initialViewMode === 'board' ? 'true' : 'false'}"
+            onclick="event.stopPropagation(); window.setDoNowViewMode('board');"
+            title="Full numbered list, countdown timer, and classroom whiteboard controls">
+            <i class="fa-solid fa-chalkboard-user"></i>
+            <span>Classroom Board</span>
+          </button>
+        </div>
+
+        <button type="button"
+          class="hh-solo-setup-pill"
+          id="hh-solo-setup-btn"
+          aria-expanded="false"
+          onclick="event.stopPropagation(); window.toggleSoloQuizSetup();"
+          style="${initialViewMode === 'solo' ? 'display: inline-flex;' : 'display: none;'}"
+          title="Configure quiz scope, topic &amp; number of questions">
+          <i class="fa-solid fa-gear"></i>
+          <span>Quiz Setup</span>
+          <span class="hh-solo-setup-summary" id="hh-solo-setup-summary">${setupSummaryText}</span>
+        </button>
+      </div>
+
       <!-- Fullscreen Whiteboard Presentation Top Bar (Active only in Whiteboard mode) -->
       <div class="donow-presentation-top-bar">
         <div style="display: flex; align-items: center; gap: 12px; flex-wrap: wrap;">
@@ -1424,35 +1849,32 @@ export function renderGcseDoNowPanelHTML({
           : `${headerHtml || ''}`;
       })()}
 
-      <!-- Scope Control Deck -->
-      <div class="donow-mode-deck" style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px; margin: 5px 0 6px 0; padding: 4px 10px; background: #f8fafc; border: 1.2px solid #e2e8f0; border-radius: 9px;">
-        <div style="display: flex; align-items: center; gap: 7px; flex-wrap: wrap;">
-          <span style="font-size: 0.7rem; font-weight: 800; color: #475569; text-transform: uppercase; letter-spacing: 0.5px; display: inline-flex; align-items: center; gap: 4px; user-select: none;">
+      <!-- Scope Control Deck (Always visible in Classroom Board; collapsible via Quiz Setup in Solo Quiz) -->
+      <div class="donow-mode-deck" id="donow-mode-deck">
+        <div class="donow-deck-scope-cluster">
+          <span class="donow-scope-label">
             <i class="fa-solid fa-sliders" style="color: #0284c7;"></i> Scope:
           </span>
-          <div class="donow-mode-btn-group" style="display: inline-flex; align-items: center; background: #e2e8f0; padding: 2px; border-radius: 999px; gap: 2px; border: 1px solid #cbd5e1; box-shadow: inset 0 1px 2px rgba(0,0,0,0.05); flex-wrap: wrap;">
+          <div class="donow-mode-btn-group">
             <button type="button"
               class="btn-donow-mode ${activeMode === 'previous' ? 'active' : ''}"
               data-donow-mode="previous"
               onclick="event.stopPropagation(); window.setGcseDoNowMode('previous');"
-              title="Questions strictly from the immediate previous lesson"
-              style="padding: 3px 9px; font-size: 0.73rem; font-weight: 700; border-radius: 999px; border: none; outline: none; appearance: none; -webkit-appearance: none; background: ${activeMode === 'previous' ? '#0284c7' : 'transparent'}; color: ${activeMode === 'previous' ? '#ffffff' : '#475569'}; cursor: pointer; display: inline-flex; align-items: center; gap: 4px; box-shadow: ${activeMode === 'previous' ? '0 1px 3px rgba(2, 132, 199, 0.4)' : 'none'}; transition: all 0.18s ease; user-select: none;">
+              title="Questions strictly from the immediate previous lesson">
               <i class="fa-solid fa-arrow-rotate-left"></i> Previous
             </button>
             <button type="button"
               class="btn-donow-mode ${activeMode === 'current' ? 'active' : ''}"
               data-donow-mode="current"
               onclick="event.stopPropagation(); window.setGcseDoNowMode('current');"
-              title="Questions directly on this current lesson"
-              style="padding: 3px 9px; font-size: 0.73rem; font-weight: 700; border-radius: 999px; border: none; outline: none; appearance: none; -webkit-appearance: none; background: ${activeMode === 'current' ? '#0284c7' : 'transparent'}; color: ${activeMode === 'current' ? '#ffffff' : '#475569'}; cursor: pointer; display: inline-flex; align-items: center; gap: 4px; box-shadow: ${activeMode === 'current' ? '0 1px 3px rgba(2, 132, 199, 0.4)' : 'none'}; transition: all 0.18s ease; user-select: none;">
+              title="Questions directly on this current lesson">
               <i class="fa-solid fa-book-open"></i> This Lesson
             </button>
             <button type="button"
               class="btn-donow-mode ${activeMode === 'unit' ? 'active' : ''}"
               data-donow-mode="unit"
               onclick="event.stopPropagation(); window.setGcseDoNowMode('unit');"
-              title="Questions interleaved across this unit up to now"
-              style="padding: 3px 9px; font-size: 0.73rem; font-weight: 700; border-radius: 999px; border: none; outline: none; appearance: none; -webkit-appearance: none; background: ${activeMode === 'unit' ? '#0284c7' : 'transparent'}; color: ${activeMode === 'unit' ? '#ffffff' : '#475569'}; cursor: pointer; display: inline-flex; align-items: center; gap: 4px; box-shadow: ${activeMode === 'unit' ? '0 1px 3px rgba(2, 132, 199, 0.4)' : 'none'}; transition: all 0.18s ease; user-select: none;">
+              title="Questions interleaved across this unit up to now">
               <i class="fa-solid fa-layer-group"></i> Unit
             </button>
             ${!isKs2Effective ? `
@@ -1460,8 +1882,7 @@ export function renderGcseDoNowPanelHTML({
               class="btn-donow-mode ${activeMode === 'other' || activeMode === 'all' ? 'active' : ''}"
               data-donow-mode="other"
               onclick="event.stopPropagation(); window.setGcseDoNowMode('other');"
-              title="Questions from another unit or synoptic mix"
-              style="padding: 3px 9px; font-size: 0.73rem; font-weight: 700; border-radius: 999px; border: none; outline: none; appearance: none; -webkit-appearance: none; background: ${activeMode === 'other' || activeMode === 'all' ? '#0284c7' : 'transparent'}; color: ${activeMode === 'other' || activeMode === 'all' ? '#ffffff' : '#475569'}; cursor: pointer; display: inline-flex; align-items: center; gap: 4px; box-shadow: ${activeMode === 'other' || activeMode === 'all' ? '0 1px 3px rgba(2, 132, 199, 0.4)' : 'none'}; transition: all 0.18s ease; user-select: none;">
+              title="Questions from another unit or synoptic mix">
               <i class="fa-solid fa-earth-americas"></i> All
             </button>
             ` : ''}
@@ -1473,54 +1894,50 @@ export function renderGcseDoNowPanelHTML({
             <select id="donow-prev-lesson-select"
               onchange="event.stopPropagation(); window.setDoNowPreviousLessonOverride(this.value);"
               onclick="event.stopPropagation();"
-              title="Choose which lesson to retrieve from when teaching topics out of order"
-              style="padding: 3px 8px; font-size: 0.71rem; font-weight: 700; border-radius: 999px; border: 1px solid #bae6fd; background: #f0f9ff; color: #0369a1; cursor: pointer; max-width: 175px; text-overflow: ellipsis; outline: none;">
+              title="Choose which lesson to retrieve from when teaching topics out of order">
               ${prevSelectOptionsHtml}
             </select>
           </span>
           ` : ''}
 
           <!-- Question Count Pill Toggle: 5 Qs | 10 Qs | 15 Qs | 20 Qs -->
-          <div class="donow-count-btn-group" style="display: inline-flex; align-items: center; background: #e2e8f0; padding: 2px; border-radius: 999px; gap: 2px; border: 1px solid #cbd5e1; box-shadow: inset 0 1px 2px rgba(0,0,0,0.05); user-select: none;">
+          <div class="donow-count-btn-group">
             <button type="button"
               class="btn-donow-count ${activeCount === 5 ? 'active' : ''}"
               data-donow-count="5"
               onclick="event.stopPropagation(); window.setDoNowQuestionCount(5);"
-              title="Set to 5 recall questions (standard 5-minute starter)"
-              style="padding: 3px 7px; font-size: 0.71rem; font-weight: 700; border-radius: 999px; border: none; outline: none; appearance: none; -webkit-appearance: none; background: ${activeCount === 5 ? '#0284c7' : 'transparent'}; color: ${activeCount === 5 ? '#ffffff' : '#475569'}; cursor: pointer; display: inline-flex; align-items: center; box-shadow: ${activeCount === 5 ? '0 1px 3px rgba(2, 132, 199, 0.4)' : 'none'}; transition: all 0.15s ease;">
+              title="Set to 5 recall questions (standard 5-minute starter)">
               5 Qs
             </button>
             <button type="button"
               class="btn-donow-count ${activeCount === 10 ? 'active' : ''}"
               data-donow-count="10"
               onclick="event.stopPropagation(); window.setDoNowQuestionCount(10);"
-              title="Set to 10 recall questions (standard retrieval drill)"
-              style="padding: 3px 7px; font-size: 0.71rem; font-weight: 700; border-radius: 999px; border: none; outline: none; appearance: none; -webkit-appearance: none; background: ${activeCount === 10 ? '#0284c7' : 'transparent'}; color: ${activeCount === 10 ? '#ffffff' : '#475569'}; cursor: pointer; display: inline-flex; align-items: center; box-shadow: ${activeCount === 10 ? '0 1px 3px rgba(2, 132, 199, 0.4)' : 'none'}; transition: all 0.15s ease;">
+              title="Set to 10 recall questions (standard retrieval drill)">
               10 Qs
             </button>
             <button type="button"
               class="btn-donow-count ${activeCount === 15 ? 'active' : ''}"
               data-donow-count="15"
               onclick="event.stopPropagation(); window.setDoNowQuestionCount(15);"
-              title="Set to 15 recall questions (extended retrieval drill)"
-              style="padding: 3px 7px; font-size: 0.71rem; font-weight: 700; border-radius: 999px; border: none; outline: none; appearance: none; -webkit-appearance: none; background: ${activeCount === 15 ? '#0284c7' : 'transparent'}; color: ${activeCount === 15 ? '#ffffff' : '#475569'}; cursor: pointer; display: inline-flex; align-items: center; box-shadow: ${activeCount === 15 ? '0 1px 3px rgba(2, 132, 199, 0.4)' : 'none'}; transition: all 0.15s ease;">
+              title="Set to 15 recall questions (extended retrieval drill)">
               15 Qs
             </button>
             <button type="button"
               class="btn-donow-count ${activeCount === 20 ? 'active' : ''}"
               data-donow-count="20"
               onclick="event.stopPropagation(); window.setDoNowQuestionCount(20);"
-              title="Set to 20 recall questions (full topic mastery challenge)"
-              style="padding: 3px 7px; font-size: 0.71rem; font-weight: 700; border-radius: 999px; border: none; outline: none; appearance: none; -webkit-appearance: none; background: ${activeCount === 20 ? '#0284c7' : 'transparent'}; color: ${activeCount === 20 ? '#ffffff' : '#475569'}; cursor: pointer; display: inline-flex; align-items: center; box-shadow: ${activeCount === 20 ? '0 1px 3px rgba(2, 132, 199, 0.4)' : 'none'}; transition: all 0.15s ease;">
+              title="Set to 20 recall questions (full topic mastery challenge)">
               20 Qs
             </button>
           </div>
+        </div>
 
+        <div class="donow-deck-actions-cluster">
           <button type="button"
             class="btn-donow-shuffle"
             onclick="event.stopPropagation(); window.refreshCurrentGcseDoNow(true);"
-            title="Roll a fresh randomized set of questions for this scope"
-            style="padding: 3px 10px; font-size: 0.73rem; font-weight: 700; border-radius: 999px; border: 1px solid #cbd5e1; background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%); color: #0369a1; cursor: pointer; display: inline-flex; align-items: center; gap: 4px; box-shadow: 0 1px 2px rgba(0,0,0,0.05); transition: all 0.15s ease;">
+            title="Roll a fresh randomized set of questions for this scope">
             <i class="fa-solid fa-arrows-rotate" style="color: #0284c7;"></i> Shuffle
           </button>
 
@@ -1528,21 +1945,19 @@ export function renderGcseDoNowPanelHTML({
             class="btn-donow-presentation"
             id="btn-donow-presentation-toggle"
             onclick="event.stopPropagation(); window.toggleDoNowPresentationMode();"
-            title="Full-Screen Whiteboard Presentation Mode (Press 'P' or 'F')"
-            style="padding: 3px 10px; font-size: 0.73rem; font-weight: 700; border-radius: 999px; border: 1px solid #cbd5e1; background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%); color: #0f172a; cursor: pointer; display: inline-flex; align-items: center; gap: 4px; box-shadow: 0 1px 2px rgba(0,0,0,0.05); transition: all 0.15s ease;">
+            title="Full-Screen Whiteboard Presentation Mode (Press 'P' or 'F')">
             <i class="fa-solid fa-expand" style="color: #0284c7;"></i> Whiteboard
           </button>
 
           <button type="button"
             class="btn-donow-speedrun"
             onclick="event.stopPropagation(); window.startDoNowSpeedRun();"
-            title="Start 90-Second Rapid-Fire Showdown (Whiteboard Drill)"
-            style="padding: 3px 10px; font-size: 0.73rem; font-weight: 800; border-radius: 999px; border: 1px solid #facc15; background: linear-gradient(180deg, #fef9c3 0%, #fef08a 100%); color: #854d0e; cursor: pointer; display: inline-flex; align-items: center; gap: 4px; box-shadow: 0 1px 2px rgba(202,138,4,0.15); transition: all 0.15s ease;">
+            title="Start 90-Second Rapid-Fire Showdown (Whiteboard Drill)">
             <i class="fa-solid fa-bolt" style="color: #ca8a04;"></i> Rapid Fire
           </button>
         </div>
 
-        ${timerHtml ? `<div class="donow-mode-timer-slot" style="display: inline-flex; align-items: center; margin-left: auto;">${timerHtml}</div>` : ''}
+        ${timerHtml ? `<div class="donow-mode-timer-slot">${timerHtml}</div>` : ''}
         ${!(headerHtml && headerHtml.includes('<!--DONOW_SUBTITLE_SLOT-->')) ? `<div id="donow-mode-subtitle" style="font-size: 0.71rem; font-weight: 700; color: #0369a1; background: #e0f2fe; border: 1px solid #bae6fd; padding: 2px 9px; border-radius: 999px; display: inline-flex; align-items: center; gap: 5px; margin-left: auto; max-width: 340px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;" title="${result.subtitle}"><i class="fa-solid fa-bullseye" style="color: #0284c7; font-size: 0.66rem; flex-shrink: 0;"></i><span id="donow-mode-subtitle-text" style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">${result.subtitle}</span></div>` : ''}
       </div>
 
@@ -1553,8 +1968,13 @@ export function renderGcseDoNowPanelHTML({
       </div>
       ` : ''}
 
-      <!-- Questions Container -->
-      <div class="donow-rows-container" id="donow-rows-container" style="display: flex; flex-direction: column; gap: 0; margin-top: 6px; background: #ffffff; border: 1.2px solid #e2e8f0; border-radius: 8px; overflow: hidden; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.04);">
+      <!-- Mode A: Solo Quiz Active Recall Stage (Visible in 'solo' mode) -->
+      <div class="hh-solo-quiz-container" id="hh-solo-quiz-container" style="display: ${initialViewMode === 'solo' ? 'block' : 'none'};">
+        ${soloHtml}
+      </div>
+
+      <!-- Mode B: Classroom Board Numbered List Container (Visible in 'board' mode) -->
+      <div class="donow-rows-container" id="donow-rows-container" style="display: ${initialViewMode === 'board' ? 'flex' : 'none'}; flex-direction: column; gap: 0; margin-top: 6px; background: #ffffff; border: 1.2px solid #e2e8f0; border-radius: 8px; overflow: hidden; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.04);">
         ${rowsHtml}
       </div>
     </div>
@@ -1562,8 +1982,8 @@ export function renderGcseDoNowPanelHTML({
 }
 
 /**
- * Initializes global window event handlers for dynamic mode switching, unit toggling, question count switching,
- * shuffling, explanation drawers, and direct narrative block navigation.
+ * Initializes global window event handlers for dynamic mode switching, Solo Quiz Leitner active recall,
+ * Revision Receipt sharing, unit toggling, question count switching, shuffling, explanation drawers, and narrative navigation.
  */
 export function initGcseDoNowEngine(currentLesson, activeUnit, db, isKs3 = null, isKs2 = null) {
   if (typeof window === 'undefined') return;
@@ -1581,6 +2001,264 @@ export function initGcseDoNowEngine(currentLesson, activeUnit, db, isKs3 = null,
   window.isCurrentUnitKs2 = isKs2Effective;
   window.isCurrentUnitKs3 = isKs3Effective;
 
+  const refreshSoloQuizDOM = () => {
+    if (typeof document === 'undefined') return;
+    const soloContainer = document.getElementById('hh-solo-quiz-container');
+    if (!soloContainer || !window._hhSoloQuizState) return;
+    const curUnit = window.currentGcseActiveUnit;
+    const curUid = curUnit?.id || window.currentUnitId || '';
+    const isCurKs2 = !!window.isCurrentUnitKs2 || isKs2Unit(curUnit, curUid);
+    const isCurKs3 = !isCurKs2 && (!!window.isCurrentUnitKs3 || isKs3Unit(curUnit, curUid));
+    soloContainer.innerHTML = renderSoloQuizStageHTML(window._hhSoloQuizState, {
+      activeUnit: curUnit,
+      isKs2: isCurKs2,
+      isGcse: !isCurKs2 && !isCurKs3,
+    });
+  };
+
+  window.setDoNowViewMode = function (viewMode, persistManual = true) {
+    const cleanView = viewMode === 'solo' ? 'solo' : 'board';
+    if (persistManual) {
+      try {
+        if (typeof sessionStorage !== 'undefined') {
+          sessionStorage.setItem(SESSION_STORAGE_KEY_DONOW_VIEW, cleanView);
+        }
+      } catch (e) {}
+    }
+    if (typeof document === 'undefined') return;
+    const panel = document.querySelector('.donow-panel-content.gcse-3mode-donow');
+    if (!panel) return;
+
+    panel.setAttribute('data-donow-view', cleanView);
+    panel.classList.toggle('hh-donow-view-solo', cleanView === 'solo');
+    panel.classList.toggle('hh-donow-view-board', cleanView === 'board');
+    if (cleanView === 'board') {
+      panel.classList.remove('solo-setup-open');
+    }
+
+    panel.querySelectorAll('.hh-donow-view-pill').forEach((pill) => {
+      const isAct = pill.dataset.donowViewBtn === cleanView;
+      pill.classList.toggle('active', isAct);
+      pill.setAttribute('aria-selected', isAct ? 'true' : 'false');
+    });
+
+    const setupBtn = document.getElementById('hh-solo-setup-btn');
+    if (setupBtn) {
+      setupBtn.style.display = cleanView === 'solo' ? 'inline-flex' : 'none';
+      setupBtn.setAttribute('aria-expanded', panel.classList.contains('solo-setup-open') ? 'true' : 'false');
+    }
+
+    const soloContainer = document.getElementById('hh-solo-quiz-container');
+    const rowsContainer = document.getElementById('donow-rows-container');
+    if (soloContainer) soloContainer.style.display = cleanView === 'solo' ? 'block' : 'none';
+    if (rowsContainer) rowsContainer.style.display = cleanView === 'board' ? 'flex' : 'none';
+  };
+
+  window.toggleSoloQuizSetup = function (forceState = null) {
+    if (typeof document === 'undefined') return;
+    const panel = document.querySelector('.donow-panel-content.gcse-3mode-donow');
+    if (!panel) return;
+    const nextOpen = typeof forceState === 'boolean' ? forceState : !panel.classList.contains('solo-setup-open');
+    panel.classList.toggle('solo-setup-open', nextOpen);
+    const setupBtn = document.getElementById('hh-solo-setup-btn');
+    if (setupBtn) {
+      setupBtn.classList.toggle('is-open', nextOpen);
+      setupBtn.setAttribute('aria-expanded', nextOpen ? 'true' : 'false');
+    }
+  };
+
+  window.revealSoloDoNowCard = function () {
+    const solo = window._hhSoloQuizState;
+    if (!solo || solo.cursor >= solo.queue.length || solo.isRevealed) return;
+    if (solo.cursor === 0 && solo.queue[0]?.attempt === 1 && !solo._firstInteractionLogged) {
+      solo._firstInteractionLogged = true;
+    }
+    solo.isRevealed = true;
+    refreshSoloQuizDOM();
+  };
+
+  window.gradeSoloDoNowCard = function (isCorrect) {
+    const solo = window._hhSoloQuizState;
+    if (!solo || solo.cursor >= solo.queue.length) return;
+    const entry = solo.queue[solo.cursor];
+    const item = entry.item || {};
+    const qUnitId = item.unitId || solo.unitId || window.currentUnitId || 'general';
+    const qPlain = String(item.question || item.q || '')
+      .replace(/<[^>]*>/g, ' ')
+      .replace(/\s+/g, ' ')
+      .trim();
+
+    if (qPlain) {
+      try {
+        updateLeitnerBox(generateQuestionId(qUnitId, 'donow', qPlain), Boolean(isCorrect));
+      } catch (e) {}
+    }
+
+    if (entry.attempt === 1) {
+      if (isCorrect) {
+        solo.firstTryCorrect += 1;
+      } else if (!solo.firstTryMissedIndices.includes(entry.origIndex)) {
+        solo.firstTryMissedIndices.push(entry.origIndex);
+      }
+    }
+
+    if (isCorrect) {
+      if (!solo.masteredIndices.includes(entry.origIndex)) {
+        solo.masteredIndices.push(entry.origIndex);
+      }
+    } else {
+      solo.queue.push({
+        item: entry.item,
+        origIndex: entry.origIndex,
+        attempt: entry.attempt + 1,
+      });
+    }
+
+    solo.cursor += 1;
+    solo.isRevealed = false;
+
+    if (solo.cursor >= solo.queue.length) {
+      solo.finishedAt = Date.now();
+      solo.streakDays = recordAndReadLocalStreak();
+      const totalQ = solo.baseQuestions.length;
+      const isoMin = new Date(solo.finishedAt).toISOString().slice(0, 16);
+      solo.checkCode = computeDoNowReceiptBadge(
+        `${solo.unitId}|${solo.lessonId}|${solo.mode}|${solo.firstTryCorrect}/${totalQ}|${isoMin}`,
+      );
+    }
+
+    refreshSoloQuizDOM();
+  };
+
+  window.finishSoloRoundEarly = function () {
+    const solo = window._hhSoloQuizState;
+    if (!solo) return;
+    solo.cursor = solo.queue.length;
+    solo.isRevealed = false;
+    solo.finishedAt = Date.now();
+    solo.streakDays = recordAndReadLocalStreak();
+    const totalQ = solo.baseQuestions.length;
+    const isoMin = new Date(solo.finishedAt).toISOString().slice(0, 16);
+    solo.checkCode = computeDoNowReceiptBadge(
+      `${solo.unitId}|${solo.lessonId}|${solo.mode}|${solo.firstTryCorrect}/${totalQ}|${isoMin}`,
+    );
+    refreshSoloQuizDOM();
+  };
+
+  window.startSoloMissedPractice = function () {
+    const solo = window._hhSoloQuizState;
+    if (!solo || !Array.isArray(solo.firstTryMissedIndices) || solo.firstTryMissedIndices.length === 0) {
+      return;
+    }
+    const missedQuestions = solo.firstTryMissedIndices
+      .map((idx) => solo.baseQuestions[idx])
+      .filter(Boolean);
+    if (missedQuestions.length === 0) return;
+
+    window._hhSoloQuizState = createSoloQuizState({
+      questions: missedQuestions,
+      mode: solo.mode,
+      unitId: solo.unitId,
+      unitTitle: solo.unitTitle,
+      lessonId: solo.lessonId,
+      lessonTitle: solo.lessonTitle,
+      subtitle: `Missed Questions Drill • ${missedQuestions.length} Item${missedQuestions.length === 1 ? '' : 's'}`,
+      isMissedPracticeRound: true,
+    });
+    refreshSoloQuizDOM();
+  };
+
+  window.restartSoloDoNowRound = function (forceShuffle = false) {
+    if (typeof window.refreshCurrentGcseDoNow === 'function') {
+      window.refreshCurrentGcseDoNow(Boolean(forceShuffle));
+    }
+  };
+
+  window.shareOrCopySoloReceipt = async function (btnEl) {
+    const solo = window._hhSoloQuizState;
+    if (!solo) return;
+    const finishTs = solo.finishedAt || Date.now();
+    const totalQ = solo.baseQuestions.length;
+    const pct = totalQ > 0 ? Math.round((solo.firstTryCorrect / totalQ) * 100) : 100;
+    const elapsedStr = formatSoloElapsed(finishTs - (solo.startedAt || finishTs));
+    const completedDate = new Date(finishTs);
+    const dateTimeStr = `${completedDate.toLocaleDateString('en-GB', {
+      day: '2-digit',
+      month: 'short',
+      year: 'numeric',
+    })}, ${completedDate.toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit' })}`;
+    const leitnerStats = getUnitLeitnerSecuredCount(solo.unitId);
+    const streakDays = solo.streakDays || 1;
+    const checkCode =
+      solo.checkCode ||
+      computeDoNowReceiptBadge(
+        `${solo.unitId}|${solo.lessonId}|${solo.mode}|${solo.firstTryCorrect}/${totalQ}|${completedDate.toISOString().slice(0, 16)}`,
+      );
+    const cleanSub = String(solo.subtitle || 'Active Recall Starter')
+      .replace(/&bull;/g, '•')
+      .replace(/<[^>]*>/g, '')
+      .trim();
+    const cleanCourse = String(solo.unitTitle || 'The History Revision Hub')
+      .replace(/<[^>]*>/g, '')
+      .trim();
+
+    const receiptText = [
+      'THE HISTORY REVISION HUB — REVISION RECEIPT',
+      `Course: ${cleanCourse}`,
+      `Starter: ${cleanSub}`,
+      `Score: ${solo.firstTryCorrect} / ${totalQ} First-Try (${pct}%)`,
+      `Time: ${elapsedStr} | Leitner: ${leitnerStats.secured} Secured (${streakDays}d Streak)`,
+      `Completed: ${dateTimeStr}`,
+      `Check Badge: #${checkCode}`,
+    ].join('\n');
+
+    let copied = false;
+    try {
+      if (typeof navigator !== 'undefined' && navigator.clipboard && navigator.clipboard.writeText) {
+        await navigator.clipboard.writeText(receiptText);
+        copied = true;
+      }
+    } catch (e) {}
+
+    if (!copied && typeof document !== 'undefined') {
+      try {
+        const ta = document.createElement('textarea');
+        ta.value = receiptText;
+        ta.style.position = 'fixed';
+        ta.style.opacity = '0';
+        document.body.appendChild(ta);
+        ta.select();
+        document.execCommand('copy');
+        ta.remove();
+        copied = true;
+      } catch (e) {}
+    }
+
+    if (
+      typeof navigator !== 'undefined' &&
+      typeof navigator.share === 'function' &&
+      typeof window !== 'undefined' &&
+      window.innerWidth < 933
+    ) {
+      try {
+        await navigator.share({
+          title: 'The History Revision Hub — Revision Receipt',
+          text: receiptText,
+        });
+      } catch (e) {}
+    }
+
+    if (btnEl) {
+      const origHtml = btnEl.innerHTML;
+      btnEl.innerHTML = '<i class="fa-solid fa-check"></i> <span>Receipt Copied!</span>';
+      btnEl.classList.add('is-copied');
+      setTimeout(() => {
+        btnEl.innerHTML = origHtml;
+        btnEl.classList.remove('is-copied');
+      }, 2400);
+    }
+  };
+
   window.setDoNowPreviousLessonOverride = function (val) {
     if (val === 'baseline') {
       window.currentDoNowPrevOverride = 'baseline';
@@ -1596,17 +2274,7 @@ export function initGcseDoNowEngine(currentLesson, activeUnit, db, isKs3 = null,
     if (typeof document !== 'undefined') {
       document.querySelectorAll('.btn-donow-count').forEach((btn) => {
         const isCur = parseInt(btn.dataset.donowCount, 10) === count;
-        if (isCur) {
-          btn.classList.add('active');
-          btn.style.background = '#0284c7';
-          btn.style.color = '#ffffff';
-          btn.style.boxShadow = '0 1px 3px rgba(2, 132, 199, 0.4)';
-        } else {
-          btn.classList.remove('active');
-          btn.style.background = 'transparent';
-          btn.style.color = '#475569';
-          btn.style.boxShadow = 'none';
-        }
+        btn.classList.toggle('active', isCur);
       });
     }
     window.refreshCurrentGcseDoNow(false);
@@ -1622,20 +2290,10 @@ export function initGcseDoNowEngine(currentLesson, activeUnit, db, isKs3 = null,
     saveDoNowMode(cleanMode);
 
     if (typeof document !== 'undefined') {
-      // 1. Update button active states and inline styles
+      // 1. Update button active states
       document.querySelectorAll('.btn-donow-mode').forEach((btn) => {
         const isCur = btn.dataset.donowMode === cleanMode || (cleanMode === 'other' && btn.dataset.donowMode === 'all');
-        if (isCur) {
-          btn.classList.add('active');
-          btn.style.background = '#0284c7';
-          btn.style.color = '#ffffff';
-          btn.style.boxShadow = '0 1px 3px rgba(2, 132, 199, 0.4)';
-        } else {
-          btn.classList.remove('active');
-          btn.style.background = 'transparent';
-          btn.style.color = '#475569';
-          btn.style.boxShadow = 'none';
-        }
+        btn.classList.toggle('active', isCur);
       });
 
       // 2. Toggle unit chips visibility and refresh chips HTML
@@ -1658,17 +2316,7 @@ export function initGcseDoNowEngine(currentLesson, activeUnit, db, isKs3 = null,
       const curCount = getSavedQuestionCount(isCurKs2 || isCurKs3, cleanMode, isCurKs2);
       document.querySelectorAll('.btn-donow-count').forEach((btn) => {
         const isCur = parseInt(btn.dataset.donowCount, 10) === curCount;
-        if (isCur) {
-          btn.classList.add('active');
-          btn.style.background = '#0284c7';
-          btn.style.color = '#ffffff';
-          btn.style.boxShadow = '0 1px 3px rgba(2, 132, 199, 0.4)';
-        } else {
-          btn.classList.remove('active');
-          btn.style.background = 'transparent';
-          btn.style.color = '#475569';
-          btn.style.boxShadow = 'none';
-        }
+        btn.classList.toggle('active', isCur);
       });
     }
 
@@ -1823,6 +2471,15 @@ export function initGcseDoNowEngine(currentLesson, activeUnit, db, isKs3 = null,
     if (typeof window !== 'undefined') {
       window.currentDoNowQuestions = result.questions;
       window.currentDoNowSubtitle = result.subtitle;
+      window._hhSoloQuizState = createSoloQuizState({
+        questions: result.questions,
+        mode,
+        unitId: curUnitId,
+        unitTitle: activeUnit?.title || 'The History Revision Hub',
+        lessonId: lesson?.id || '',
+        lessonTitle: lesson?.title || '',
+        subtitle: result.subtitle,
+      });
     }
 
     if (typeof document !== 'undefined') {
@@ -1833,6 +2490,22 @@ export function initGcseDoNowEngine(currentLesson, activeUnit, db, isKs3 = null,
       // Update subtitle mirror in presentation top bar
       const presSubMirror = document.getElementById('donow-pres-subtitle-mirror');
       if (presSubMirror) presSubMirror.innerHTML = result.subtitle;
+
+      // Update Solo Quiz Setup pill summary
+      const setupSummary = document.getElementById('hh-solo-setup-summary');
+      if (setupSummary) {
+        setupSummary.innerHTML = `${getScopeShortLabel(mode)} &bull; ${result.questions.length || count} Qs`;
+      }
+
+      // Update Solo Quiz container
+      const soloContainer = document.getElementById('hh-solo-quiz-container');
+      if (soloContainer && window._hhSoloQuizState) {
+        soloContainer.innerHTML = renderSoloQuizStageHTML(window._hhSoloQuizState, {
+          activeUnit,
+          isKs2: isCurKs2,
+          isGcse: !isCurKs2 && !isCurKs3,
+        });
+      }
 
       // Update rows container
       const rowsContainer = document.getElementById('donow-rows-container');
@@ -2566,11 +3239,37 @@ export function initGcseDoNowEngine(currentLesson, activeUnit, db, isKs3 = null,
 
       const isPresMode = panel.classList.contains('donow-presentation-mode');
       const rect = panel.getBoundingClientRect();
-      const isVisibleOnScreen = isPresMode || (rect.top < window.innerHeight && rect.bottom > 0);
+      const isVisibleOnScreen = isPresMode || (rect.height > 0 && rect.top < window.innerHeight && rect.bottom > 0);
       if (!isVisibleOnScreen) return;
 
       const key = e.key;
       const code = e.code;
+
+      // Solo Quiz keyboard shortcuts when Solo Quiz view is active
+      if (!isPresMode && panel.getAttribute('data-donow-view') === 'solo') {
+        const solo = window._hhSoloQuizState;
+        if (!solo || solo.cursor >= solo.queue.length) return;
+        if (!solo.isRevealed && (code === 'Space' || key === 'Enter')) {
+          if (target?.tagName?.toLowerCase() !== 'button') {
+            e.preventDefault();
+            window.revealSoloDoNowCard();
+          }
+          return;
+        }
+        if (solo.isRevealed) {
+          if (key === 'ArrowRight' || key === '1') {
+            e.preventDefault();
+            window.gradeSoloDoNowCard(true);
+            return;
+          }
+          if (key === 'ArrowLeft' || key === '2') {
+            e.preventDefault();
+            window.gradeSoloDoNowCard(false);
+            return;
+          }
+        }
+        return;
+      }
 
       // Presenter Clicker Next: Space, PageDown, ArrowRight, ArrowDown
       if (code === 'Space' || key === 'PageDown' || key === 'ArrowRight' || key === 'ArrowDown') {
@@ -2611,6 +3310,23 @@ export function initGcseDoNowEngine(currentLesson, activeUnit, db, isKs3 = null,
         return;
       }
     });
+
+    const syncAutoResponsiveViewMode = () => {
+      try {
+        if (typeof sessionStorage !== 'undefined' && sessionStorage.getItem(SESSION_STORAGE_KEY_DONOW_VIEW)) {
+          return;
+        }
+      } catch (e) {}
+      if (typeof window.setDoNowViewMode === 'function') {
+        window.setDoNowViewMode(resolveDefaultDoNowViewMode(), false);
+      }
+    };
+
+    window.addEventListener('resize', syncAutoResponsiveViewMode);
+    if (typeof MutationObserver !== 'undefined' && document.body) {
+      const staffObserver = new MutationObserver(syncAutoResponsiveViewMode);
+      staffObserver.observe(document.body, { attributes: true, attributeFilter: ['class'] });
+    }
 
     document.addEventListener('fullscreenchange', () => {
       const panel = document.querySelector('.donow-panel-content');

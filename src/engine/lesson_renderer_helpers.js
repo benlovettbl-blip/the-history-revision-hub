@@ -31,6 +31,7 @@ import {
 } from './narrative_annotator.js';
 import { renderGcseDoNowPanelHTML, initGcseDoNowEngine } from './gcse_donow_engine.js';
 import { getLessonInfographicCount, getLessonInfographicsSync } from '../infographic_viewer.js';
+import { updateLeitnerBox, generateQuestionId } from '../storage.js';
 
 
 // Canonical Key Stage Taxonomy Constants
@@ -3422,6 +3423,397 @@ export function renderLaunchpadInfographicPanelHTML(lesson, unitId, infographics
   `;
 }
 
+const VOCAB_VIEW_STORAGE_KEY = 'hh_vocab_view_mode';
+
+function escVocabHtml(val) {
+  return String(val || '')
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;');
+}
+
+function escVocabJsSingle(val) {
+  return String(val || '')
+    .replace(/\\/g, '\\\\')
+    .replace(/'/g, "\\'")
+    .replace(/"/g, '&quot;')
+    .replace(/\r?\n/g, ' ');
+}
+
+export function resolveDefaultVocabViewMode() {
+  try {
+    if (typeof sessionStorage !== 'undefined') {
+      const saved = sessionStorage.getItem(VOCAB_VIEW_STORAGE_KEY);
+      if (saved === 'flip' || saved === 'list') return saved;
+    }
+  } catch (e) {}
+  if (typeof window !== 'undefined' && window.innerWidth < 933) {
+    return 'flip';
+  }
+  return 'list';
+}
+
+function buildVocabFlipStageInnerHTML(deck, deckKey) {
+  if (!deck || !Array.isArray(deck.items) || deck.items.length === 0) {
+    return '';
+  }
+  const safeKeyJs = escVocabJsSingle(deckKey);
+  const totalTerms = deck.items.length;
+  const masteredCount = deck.masteredIndices ? deck.masteredIndices.length : 0;
+
+  if (deck.completed || deck.cursor >= deck.queue.length) {
+    const pct = totalTerms > 0 ? Math.round((deck.firstTryCorrect / totalTerms) * 100) : 100;
+    return `
+      <div class="hh-vocab-complete-card">
+        <div class="hh-vocab-complete-badge-pill">
+          <i class="fa-solid fa-award"></i>
+          <span>Key Vocabulary Complete</span>
+        </div>
+        <h4 class="hh-vocab-complete-title">All ${totalTerms} Key Terms Mastered!</h4>
+        <p class="hh-vocab-complete-sub">
+          <strong>${deck.firstTryCorrect} / ${totalTerms} First-Try (${pct}%)</strong> &bull; Saved to your Leitner spaced-repetition memory
+        </p>
+        <div class="hh-vocab-complete-actions">
+          <button type="button" class="hh-vocab-action-btn primary" onclick="event.stopPropagation(); window.hhResetVocabDeck('${safeKeyJs}');">
+            <i class="fa-solid fa-rotate-right"></i>
+            <span>Practice Again</span>
+          </button>
+          <button type="button" class="hh-vocab-action-btn secondary" onclick="event.stopPropagation(); window.hhSetVocabMode('${safeKeyJs}', 'list');">
+            <i class="fa-solid fa-list-check"></i>
+            <span>Glossary List</span>
+          </button>
+        </div>
+      </div>
+    `;
+  }
+
+  const currentEntry = deck.queue[deck.cursor];
+  const item = currentEntry.item;
+  const isReviewPass = currentEntry.attempt > 1;
+  const stepLabel = isReviewPass
+    ? `Review Pass &bull; ${deck.queue.length - deck.cursor} left (${masteredCount}/${totalTerms} Mastered)`
+    : `Term ${currentEntry.origIndex + 1} of ${totalTerms}`;
+  const progressPct = Math.min(
+    100,
+    Math.max(8, Math.round(((isReviewPass ? masteredCount : currentEntry.origIndex) / totalTerms) * 100)),
+  );
+
+  const safeTermHtml = escVocabHtml(item.term);
+  const safeDefHtml = escVocabHtml(item.definition);
+  const safePhoneticHtml = item.phonetic ? escVocabHtml(item.phonetic) : '';
+  const safeSpeakJs = escVocabJsSingle(item.term);
+
+  return `
+    <div class="hh-vocab-flip-stage-inner">
+      <div class="hh-vocab-progress-row">
+        <span class="hh-vocab-step-counter">
+          <i class="fa-solid ${isReviewPass ? 'fa-rotate' : 'fa-layer-group'}"></i>
+          <span>${stepLabel}</span>
+        </span>
+        <span class="hh-vocab-mastered-pill">${masteredCount} / ${totalTerms} Secured</span>
+      </div>
+      <div class="hh-vocab-progress-track" role="progressbar" aria-valuenow="${progressPct}" aria-valuemin="0" aria-valuemax="100">
+        <div class="hh-vocab-progress-fill" style="width: ${progressPct}%;"></div>
+      </div>
+
+      <div class="hh-vocab-flip-card ${deck.isFlipped ? 'is-flipped' : ''}"
+        role="button"
+        tabindex="0"
+        aria-expanded="${deck.isFlipped ? 'true' : 'false'}"
+        onclick="event.stopPropagation(); window.hhToggleVocabFlip('${safeKeyJs}');"
+        onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();event.stopPropagation();window.hhToggleVocabFlip('${safeKeyJs}');}">
+        <div class="hh-vocab-card-top-meta">
+          <span class="hh-vocab-face-tag">${deck.isFlipped ? 'Definition Revealed' : 'Key Term'}</span>
+          <button type="button"
+            class="hh-vocab-card-speak-btn no-print"
+            onclick="event.stopPropagation(); if (window.speakVocabWord) { window.speakVocabWord('${safeSpeakJs}', this); }"
+            title="Listen to pronunciation in British English"
+            aria-label="Listen to ${safeTermHtml}">
+            <i class="fa-solid fa-volume-high"></i>
+            <span>Listen</span>
+          </button>
+        </div>
+
+        <div class="hh-vocab-card-term-wrap">
+          <div class="hh-vocab-card-term">${safeTermHtml}</div>
+          ${safePhoneticHtml ? `<div class="hh-vocab-card-phonetic">[${safePhoneticHtml}]</div>` : ''}
+        </div>
+
+        ${
+          deck.isFlipped
+            ? `
+            <div class="hh-vocab-card-def-divider"></div>
+            <div class="hh-vocab-card-definition">${safeDefHtml}</div>
+          `
+            : `
+            <div class="hh-vocab-tap-hint">
+              <i class="fa-solid fa-rotate"></i>
+              <span>Think of the definition, then tap card to flip</span>
+            </div>
+          `
+        }
+      </div>
+
+      ${
+        !deck.isFlipped
+          ? `
+          <button type="button"
+            class="hh-vocab-reveal-btn"
+            onclick="event.stopPropagation(); window.hhToggleVocabFlip('${safeKeyJs}');">
+            <i class="fa-solid fa-eye"></i>
+            <span>Tap to Flip &amp; Reveal Definition</span>
+          </button>
+        `
+          : `
+          <div class="hh-vocab-grade-row">
+            <button type="button"
+              class="hh-vocab-grade-btn again"
+              onclick="event.stopPropagation(); window.hhGradeVocabCard('${safeKeyJs}', false);">
+              <i class="fa-solid fa-rotate-right"></i>
+              <span>Again &#8635;</span>
+            </button>
+            <button type="button"
+              class="hh-vocab-grade-btn gotit"
+              onclick="event.stopPropagation(); window.hhGradeVocabCard('${safeKeyJs}', true);">
+              <i class="fa-solid fa-check"></i>
+              <span>Got it &#10003;</span>
+            </button>
+          </div>
+        `
+      }
+    </div>
+  `;
+}
+
+function ensureVocabFlipWindowHandlers() {
+  if (typeof window === 'undefined' || window._hhVocabFlipHandlersBound) return;
+  window._hhVocabFlipHandlersBound = true;
+  window.__hhVocabDecks = window.__hhVocabDecks || {};
+
+  const refreshVocabFlipDOM = (deckKey) => {
+    if (typeof document === 'undefined') return;
+    const deck = window.__hhVocabDecks && window.__hhVocabDecks[deckKey];
+    if (!deck) return;
+    const wrapper = document.querySelector(`.hh-vocab-dual-wrapper[data-deck-key="${CSS && CSS.escape ? CSS.escape(deckKey) : deckKey}"]`) ||
+      Array.from(document.querySelectorAll('.hh-vocab-dual-wrapper')).find((el) => el.dataset.deckKey === deckKey);
+    if (!wrapper) return;
+    const flipPane = wrapper.querySelector('.hh-vocab-flip-pane');
+    if (flipPane) {
+      flipPane.innerHTML = buildVocabFlipStageInnerHTML(deck, deckKey);
+    }
+  };
+
+  window.hhSetVocabMode = function (deckKey, mode) {
+    const cleanMode = mode === 'flip' ? 'flip' : 'list';
+    try {
+      if (typeof sessionStorage !== 'undefined') {
+        sessionStorage.setItem(VOCAB_VIEW_STORAGE_KEY, cleanMode);
+      }
+    } catch (e) {}
+    if (typeof document === 'undefined') return;
+    document.querySelectorAll('.hh-vocab-dual-wrapper').forEach((wrapper) => {
+      if (deckKey && wrapper.dataset.deckKey !== deckKey) return;
+      wrapper.setAttribute('data-vocab-mode', cleanMode);
+      wrapper.querySelectorAll('.hh-vocab-mode-pill').forEach((pill) => {
+        const isAct = pill.dataset.vocabModeBtn === cleanMode;
+        pill.classList.toggle('active', isAct);
+        pill.setAttribute('aria-selected', isAct ? 'true' : 'false');
+      });
+      const flipPane = wrapper.querySelector('.hh-vocab-flip-pane');
+      const listPane = wrapper.querySelector('.hh-vocab-list-pane');
+      if (flipPane) flipPane.style.display = cleanMode === 'flip' ? 'block' : 'none';
+      if (listPane) listPane.style.display = cleanMode === 'list' ? 'block' : 'none';
+    });
+  };
+
+  window.hhToggleVocabFlip = function (deckKey) {
+    const deck = window.__hhVocabDecks && window.__hhVocabDecks[deckKey];
+    if (!deck || deck.completed) return;
+    deck.isFlipped = !deck.isFlipped;
+    refreshVocabFlipDOM(deckKey);
+  };
+
+  window.hhGradeVocabCard = function (deckKey, isCorrect) {
+    const deck = window.__hhVocabDecks && window.__hhVocabDecks[deckKey];
+    if (!deck || deck.completed || deck.cursor >= deck.queue.length) return;
+    const entry = deck.queue[deck.cursor];
+    const termText = String(entry?.item?.term || '').trim();
+    if (termText) {
+      try {
+        const qId = generateQuestionId(deck.unitId || 'general', 'vocab', termText);
+        updateLeitnerBox(qId, Boolean(isCorrect));
+      } catch (e) {}
+    }
+
+    if (entry.attempt === 1 && isCorrect) {
+      deck.firstTryCorrect += 1;
+    }
+    if (isCorrect) {
+      if (!deck.masteredIndices.includes(entry.origIndex)) {
+        deck.masteredIndices.push(entry.origIndex);
+      }
+    } else {
+      deck.queue.push({
+        item: entry.item,
+        origIndex: entry.origIndex,
+        attempt: entry.attempt + 1,
+      });
+    }
+
+    deck.cursor += 1;
+    deck.isFlipped = false;
+    if (deck.cursor >= deck.queue.length) {
+      deck.completed = true;
+    }
+    refreshVocabFlipDOM(deckKey);
+  };
+
+  window.hhResetVocabDeck = function (deckKey) {
+    const deck = window.__hhVocabDecks && window.__hhVocabDecks[deckKey];
+    if (!deck) return;
+    deck.queue = deck.items.map((item, idx) => ({ item, origIndex: idx, attempt: 1 }));
+    deck.cursor = 0;
+    deck.isFlipped = false;
+    deck.firstTryCorrect = 0;
+    deck.masteredIndices = [];
+    deck.completed = false;
+    refreshVocabFlipDOM(deckKey);
+  };
+}
+ensureVocabFlipWindowHandlers();
+
+export function renderVocabLaunchpadPanelHTML(lesson, unitId = '', htmlVocabInner = '') {
+  ensureVocabFlipWindowHandlers();
+  const rawVocab = Array.isArray(lesson?.vocab)
+    ? lesson.vocab
+    : Array.isArray(lesson?.vocabulary)
+      ? lesson.vocabulary
+      : [];
+  const vocabItems = rawVocab
+    .map((v) => ({
+      term: String(v?.term || v?.word || '').trim(),
+      definition: String(v?.definition || v?.def || '').trim(),
+      phonetic: String(v?.phonetic || v?.pronunciation || '').trim(),
+    }))
+    .filter((v) => v.term && v.definition);
+
+  if (vocabItems.length === 0) {
+    return htmlVocabInner || '';
+  }
+
+  const effectiveUnitId = unitId || (typeof window !== 'undefined' ? window.currentUnitId : '') || 'general';
+  const lessonKey = String(lesson?.id || lesson?.title || 'current').replace(/[^a-zA-Z0-9_-]/g, '_');
+  const deckKey = `${effectiveUnitId}__${lessonKey}`;
+  const safeKeyAttr = escVocabHtml(deckKey);
+  const safeKeyJs = escVocabJsSingle(deckKey);
+  const initialMode = resolveDefaultVocabViewMode();
+
+  const deckState = {
+    unitId: effectiveUnitId,
+    lessonId: lesson?.id || '',
+    items: vocabItems,
+    queue: vocabItems.map((item, idx) => ({ item, origIndex: idx, attempt: 1 })),
+    cursor: 0,
+    isFlipped: false,
+    firstTryCorrect: 0,
+    masteredIndices: [],
+    completed: false,
+  };
+
+  if (typeof window !== 'undefined') {
+    window.__hhVocabDecks = window.__hhVocabDecks || {};
+    window.__hhVocabDecks[deckKey] = deckState;
+  }
+
+  const flipStageHtml = buildVocabFlipStageInnerHTML(deckState, deckKey);
+  const glossaryRowsHtml = vocabItems
+    .map((item) => {
+      const safeTerm = escVocabHtml(item.term);
+      const safeDef = escVocabHtml(item.definition);
+      const safePhon = item.phonetic ? escVocabHtml(item.phonetic) : '';
+      const safeSpeakJs = escVocabJsSingle(item.term);
+      return `
+        <div class="hh-vocab-glossary-item">
+          <div class="hh-vocab-glossary-term-row">
+            <div class="hh-vocab-glossary-term-group">
+              <strong class="hh-vocab-glossary-term">${safeTerm}</strong>
+              ${safePhon ? `<span class="hh-vocab-glossary-phonetic">[${safePhon}]</span>` : ''}
+            </div>
+            <button type="button"
+              class="hh-vocab-glossary-speak no-print"
+              onclick="event.stopPropagation(); if (window.speakVocabWord) { window.speakVocabWord('${safeSpeakJs}', this); }"
+              title="Pronounce ${safeTerm} (British English)"
+              aria-label="Pronounce ${safeTerm}">
+              <i class="fa-solid fa-volume-high"></i>
+            </button>
+          </div>
+          <div class="hh-vocab-glossary-def">${safeDef}</div>
+        </div>
+      `;
+    })
+    .join('');
+
+  const openMatchByDefault = typeof window !== 'undefined' ? window.innerWidth >= 933 : true;
+
+  return `
+    <div class="hh-vocab-dual-wrapper" data-deck-key="${safeKeyAttr}" data-vocab-mode="${initialMode}">
+      <div class="hh-vocab-mode-header">
+        <div class="hh-vocab-header-left">
+          <span class="hh-vocab-header-icon"><i class="fa-solid fa-book-bookmark"></i></span>
+          <span class="hh-vocab-header-title">Key Vocabulary</span>
+          <span class="hh-vocab-header-count">${vocabItems.length} Terms</span>
+        </div>
+        <div class="hh-vocab-mode-toggle" role="tablist" aria-label="Vocabulary study mode">
+          <button type="button"
+            class="hh-vocab-mode-pill ${initialMode === 'flip' ? 'active' : ''}"
+            data-vocab-mode-btn="flip"
+            role="tab"
+            aria-selected="${initialMode === 'flip' ? 'true' : 'false'}"
+            onclick="event.stopPropagation(); window.hhSetVocabMode('${safeKeyJs}', 'flip');">
+            <i class="fa-solid fa-layer-group"></i>
+            <span>Flip Cards</span>
+          </button>
+          <button type="button"
+            class="hh-vocab-mode-pill ${initialMode === 'list' ? 'active' : ''}"
+            data-vocab-mode-btn="list"
+            role="tab"
+            aria-selected="${initialMode === 'list' ? 'true' : 'false'}"
+            onclick="event.stopPropagation(); window.hhSetVocabMode('${safeKeyJs}', 'list');">
+            <i class="fa-solid fa-list-check"></i>
+            <span>Glossary List</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="hh-vocab-flip-pane" style="display: ${initialMode === 'flip' ? 'block' : 'none'};">
+        ${flipStageHtml}
+      </div>
+
+      <div class="hh-vocab-list-pane" style="display: ${initialMode === 'list' ? 'block' : 'none'};">
+        <div class="hh-vocab-clean-glossary-list">
+          ${glossaryRowsHtml}
+        </div>
+        ${
+          htmlVocabInner
+            ? `
+          <details class="hh-vocab-match-details no-print" ${openMatchByDefault ? 'open' : ''}>
+            <summary class="hh-vocab-match-summary">
+              <span><i class="fa-solid fa-puzzle-piece"></i> Interactive Tap-to-Match Challenge</span>
+              <i class="fa-solid fa-chevron-down hh-vocab-match-caret"></i>
+            </summary>
+            <div class="hh-vocab-match-inner">
+              ${htmlVocabInner}
+            </div>
+          </details>
+        `
+            : ''
+        }
+      </div>
+    </div>
+  `;
+}
+
 export function renderLessonLaunchpad({
   lesson,
   unitId,
@@ -3476,12 +3868,105 @@ export function renderLessonLaunchpad({
     tabs.push({
       key: 'donow',
       label: 'Do Now Starter',
-      icon: 'fa-solid fa-stopwatch',
+      icon: 'fa-solid fa-stopwatch icon-donow',
       badge: '05:00',
     });
   }
 
-  // 2. Learning Objectives Tab
+  // 2. Key Vocabulary Tab
+  const hasVocab = Boolean(
+    (lesson && lesson.vocab && lesson.vocab.length > 0) ||
+    (htmlVocabInner && htmlVocabInner.trim().length > 0),
+  );
+  if (hasVocab) {
+    const vocabCount = lesson && lesson.vocab ? lesson.vocab.length : '';
+    tabs.push({
+      key: 'vocab',
+      label: 'Key Vocabulary',
+      icon: 'fa-solid fa-book-bookmark icon-vocab',
+      badge: vocabCount ? `${vocabCount} Terms` : '',
+    });
+  }
+
+  // 3. Chronology Spine Tab
+  const hasSpine = Boolean(htmlSpineInner && htmlSpineInner.trim().length > 0);
+  if (hasSpine) {
+    tabs.push({
+      key: 'spine',
+      label: 'Chronology Spine',
+      icon: 'fa-solid fa-timeline icon-spine',
+    });
+  }
+
+  // 4. Video Pathway Tab
+  const hasVideo = Boolean(
+    (videos && videos.length > 0) || (htmlVideo && htmlVideo.trim().length > 0),
+  );
+  if (hasVideo) {
+    let videoDuration = '';
+    if (videos && videos.length > 0 && videos[0].duration) {
+      videoDuration = videos[0].duration
+        .replace(/\bmins?\b/gi, 'm')
+        .replace(/\bsecs?\b/gi, 's')
+        .replace(/\s+/g, ' ')
+        .trim();
+    }
+    tabs.push({
+      key: 'video',
+      label: 'Video Pathway',
+      icon: 'fa-solid fa-play icon-video',
+      badge: videoDuration || `${videos.length} Clip${videos.length > 1 ? 's' : ''}`,
+    });
+  }
+
+  // 5. Visual Revision Mat Tab (Infographic)
+  let lessonInfographics = [];
+  const effectiveUnitId = unitId || (typeof window !== 'undefined' ? window.currentUnitId : '');
+  if (typeof getLessonInfographicsSync === 'function') {
+    lessonInfographics = getLessonInfographicsSync(effectiveUnitId, lesson?.id);
+  } else if (typeof window !== 'undefined' && typeof window.getLessonInfographicsSync === 'function') {
+    lessonInfographics = window.getLessonInfographicsSync(effectiveUnitId, lesson?.id);
+  }
+  const hasInfographic = Boolean(
+    (lessonInfographics && lessonInfographics.length > 0) ||
+    (htmlInfographicInner && htmlInfographicInner.trim().length > 0),
+  );
+  if (hasInfographic) {
+    const count = lessonInfographics.length;
+    const hasInteractive = lessonInfographics && lessonInfographics.some((m) => m.interactiveUrl);
+    tabs.push({
+      key: 'infographic',
+      label: hasInteractive
+        ? count > 1
+          ? `Interactive Infographics (${count})`
+          : 'Interactive Infographic'
+        : count > 1
+          ? `Infographics (${count})`
+          : 'Infographic',
+      icon: hasInteractive
+        ? 'fa-solid fa-wand-magic-sparkles icon-infographic'
+        : 'fa-solid fa-image icon-infographic',
+      badge: hasInteractive
+        ? count > 1
+          ? `${count} Interactive`
+          : 'Interactive'
+        : count > 1
+          ? `${count} Infographics`
+          : '1-Sheet',
+    });
+  }
+
+  // 6. Historical Atlas Tab (CME Era-Aware Theater Map Modal)
+  if (isCme) {
+    tabs.push({
+      key: 'atlas',
+      label: 'Historical Atlas',
+      icon: 'fa-solid fa-map',
+      isAtlasModal: true,
+    });
+  }
+
+  // 7. Learning Objectives Tab (Moved to end so mobile pupils see Do Now, Vocab, Spine & Video immediately)
   const hasObjectives = Boolean(
     (lesson &&
       lesson.learning_objectives &&
@@ -3509,117 +3994,44 @@ export function renderLessonLaunchpad({
     tabs.push({
       key: 'objectives',
       label: 'Learning Objectives',
-      icon: 'fa-solid fa-bullseye',
+      icon: 'fa-solid fa-bullseye icon-objectives',
       badge: objCount ? `${objCount} Goals` : '',
     });
   }
 
-  // 3. Video Pathway Tab
-  const hasVideo = Boolean(
-    (videos && videos.length > 0) || (htmlVideo && htmlVideo.trim().length > 0),
-  );
-  if (hasVideo) {
-    let videoDuration = '';
-    if (videos && videos.length > 0 && videos[0].duration) {
-      videoDuration = videos[0].duration
-        .replace(/\bmins?\b/gi, 'm')
-        .replace(/\bsecs?\b/gi, 's')
-        .replace(/\s+/g, ' ')
-        .trim();
-    }
-    tabs.push({
-      key: 'video',
-      label: 'Video Pathway',
-      icon: 'fa-solid fa-play',
-      badge: videoDuration || `${videos.length} Clip${videos.length > 1 ? 's' : ''}`,
-    });
-  }
-
-  // 4. Key Vocabulary Tab
-  const hasVocab = Boolean(
-    (lesson && lesson.vocab && lesson.vocab.length > 0) ||
-    (htmlVocabInner && htmlVocabInner.trim().length > 0),
-  );
-  if (hasVocab) {
-    const vocabCount = lesson && lesson.vocab ? lesson.vocab.length : '';
-    tabs.push({
-      key: 'vocab',
-      label: 'Key Vocabulary',
-      icon: 'fa-solid fa-book-bookmark',
-      badge: vocabCount ? `${vocabCount} Terms` : '',
-    });
-  }
-
-  // 5. Chronology Spine Tab
-  const hasSpine = Boolean(htmlSpineInner && htmlSpineInner.trim().length > 0);
-  if (hasSpine) {
-    let spineCount = 0;
-    if (lesson.causal_domino_spine && Array.isArray(lesson.causal_domino_spine.stages)) {
-      spineCount = lesson.causal_domino_spine.stages.length;
-    } else if (lesson.timeline_anchor && Array.isArray(lesson.timeline_anchor)) {
-      spineCount = lesson.timeline_anchor.length;
-    } else if (lesson.workbook_stages && Array.isArray(lesson.workbook_stages)) {
-      spineCount = lesson.workbook_stages.length;
-    }
-    tabs.push({
-      key: 'spine',
-      label: 'Chronology Spine',
-      icon: 'fa-solid fa-timeline',
-    });
-  }
-
-  // 6. Visual Revision Mat Tab (Infographic)
-  let lessonInfographics = [];
-  const effectiveUnitId = unitId || (typeof window !== 'undefined' ? window.currentUnitId : '');
-  if (typeof getLessonInfographicsSync === 'function') {
-    lessonInfographics = getLessonInfographicsSync(effectiveUnitId, lesson?.id);
-  } else if (typeof window !== 'undefined' && typeof window.getLessonInfographicsSync === 'function') {
-    lessonInfographics = window.getLessonInfographicsSync(effectiveUnitId, lesson?.id);
-  }
-  const hasInfographic = Boolean(
-    (lessonInfographics && lessonInfographics.length > 0) ||
-    (htmlInfographicInner && htmlInfographicInner.trim().length > 0)
-  );
-  if (hasInfographic) {
-    const count = lessonInfographics.length;
-    const hasInteractive = lessonInfographics && lessonInfographics.some((m) => m.interactiveUrl);
-    const isKs2Unit =
-      unitId === 'ks2_ww2' ||
-      (unitId && unitId.startsWith('ks2')) ||
-      (typeof window !== 'undefined' &&
-        (window.currentUnitId === 'ks2_ww2' ||
-          (window.currentUnitId && window.currentUnitId.startsWith('ks2'))));
-    tabs.push({
-      key: 'infographic',
-      label: hasInteractive
-        ? (count > 1 ? `Interactive Infographics (${count})` : 'Interactive Infographic')
-        : (count > 1 ? `Infographics (${count})` : 'Infographic'),
-      icon: hasInteractive
-        ? 'fa-solid fa-wand-magic-sparkles icon-infographic'
-        : 'fa-solid fa-image icon-infographic',
-      badge: hasInteractive
-        ? (count > 1 ? `${count} Interactive` : 'Interactive')
-        : (count > 1 ? `${count} Infographics` : '1-Sheet'),
-    });
-  }
-
-  if (tabs.length === 0 && !isCme) return '';
+  if (tabs.length === 0) return '';
 
   // Active tab selection: only set active if defaultTab is explicitly specified and exists
-  const activeTabKey = defaultTab && tabs.some((t) => t.key === defaultTab) ? defaultTab : '';
+  const activeTabKey = defaultTab && tabs.some((t) => t.key === defaultTab && !t.isAtlasModal) ? defaultTab : '';
+  const upgradedVocabPanelHtml = hasVocab
+    ? renderVocabLaunchpadPanelHTML(lesson, effectiveUnitId, htmlVocabInner)
+    : '';
 
   return `
     <div class="lesson-launchpad-container" id="lesson-launchpad-${lesson.id || 'current'}">
       <div class="launchpad-bar">
         <div class="launchpad-tabs-group" role="tablist">
           ${tabs
-      .map((tab) => {
-        const isActive = tab.key === activeTabKey;
-        return `
+            .map((tab) => {
+              if (tab.isAtlasModal) {
+                return `
+              <button type="button"
+                class="launchpad-tab-btn launchpad-atlas-btn"
+                data-tab="atlas"
+                onclick="if(typeof window.openCmeTheaterMapModal === 'function') window.openCmeTheaterMapModal({lessonIndex: ${resolvedLessonIndex}});"
+                title="Historical Atlas (Era-Aware Regional Maps &amp; Live Terrain) [Shortcut: M]">
+                <i class="${tab.icon}"></i>
+                <span>${tab.label}</span>
+              </button>
+            `;
+              }
+              const isActive = tab.key === activeTabKey;
+              return `
               <button type="button"
                 class="launchpad-tab-btn ${isActive ? 'active' : ''}"
                 data-action="switch-launchpad-tab"
                 data-tab="${tab.key}"
+                onclick="if(this.scrollIntoView){this.scrollIntoView({behavior:'smooth',inline:'center',block:'nearest'});}"
                 role="tab"
                 aria-selected="${isActive ? 'true' : 'false'}"
                 title="${tab.label}">
@@ -3627,26 +4039,15 @@ export function renderLessonLaunchpad({
                 <span>${tab.label}</span>
               </button>
             `;
-      })
-      .join('')}
-          ${isCme
-        ? `
-            <button type="button"
-              class="launchpad-tab-btn launchpad-atlas-btn"
-              onclick="if(typeof window.openCmeTheaterMapModal === 'function') window.openCmeTheaterMapModal({lessonIndex: ${resolvedLessonIndex}});"
-              title="Historical Atlas (Era-Aware Regional Maps &amp; Live Terrain) [Shortcut: M]">
-              <i class="fa-solid fa-map"></i>
-              <span>Historical Atlas</span>
-            </button>
-          `
-        : ''
-      }
+            })
+            .join('')}
         </div>
         <div class="launchpad-actions-group">
           <button type="button"
             class="launchpad-close-btn"
             data-action="close-launchpad"
             title="Collapse drawer"
+            aria-label="Close panel"
             style="${activeTabKey ? 'display: inline-flex;' : 'display: none;'}">
             <i class="fa-solid fa-xmark"></i>
           </button>
@@ -3654,53 +4055,53 @@ export function renderLessonLaunchpad({
       </div>
       <div class="lesson-launchpad-drawer" id="launchpad-drawer-${lesson.id || 'current'}" style="${activeTabKey ? 'display: block;' : 'display: none;'}">
         ${hasDoNow
-      ? `
+          ? `
           <div class="launchpad-panel ${activeTabKey === 'donow' ? 'active' : ''}" data-panel="donow" style="${activeTabKey === 'donow' ? 'display: block;' : 'display: none;'}">
             ${htmlDoNowInner}
           </div>
         `
-      : ''
-    }
-        ${hasObjectives
-      ? `
-          <div class="launchpad-panel ${activeTabKey === 'objectives' ? 'active' : ''}" data-panel="objectives" style="${activeTabKey === 'objectives' ? 'display: block;' : 'display: none;'}">
-            ${htmlObjectivesInner}
-          </div>
-        `
-      : ''
-    }
-        ${hasVideo
-      ? `
-          <div class="launchpad-panel ${activeTabKey === 'video' ? 'active' : ''}" data-panel="video" style="${activeTabKey === 'video' ? 'display: block;' : 'display: none;'}">
-            ${htmlVideo}
-          </div>
-        `
-      : ''
-    }
+          : ''
+        }
         ${hasVocab
-      ? `
+          ? `
           <div class="launchpad-panel ${activeTabKey === 'vocab' ? 'active' : ''}" data-panel="vocab" style="${activeTabKey === 'vocab' ? 'display: block;' : 'display: none;'}">
-            ${htmlVocabInner}
+            ${upgradedVocabPanelHtml}
           </div>
         `
-      : ''
-    }
+          : ''
+        }
         ${hasSpine
-      ? `
+          ? `
           <div class="launchpad-panel ${activeTabKey === 'spine' ? 'active' : ''}" data-panel="spine" style="${activeTabKey === 'spine' ? 'display: block;' : 'display: none;'}">
             ${htmlSpineInner}
           </div>
         `
-      : ''
-    }
+          : ''
+        }
+        ${hasVideo
+          ? `
+          <div class="launchpad-panel ${activeTabKey === 'video' ? 'active' : ''}" data-panel="video" style="${activeTabKey === 'video' ? 'display: block;' : 'display: none;'}">
+            ${htmlVideo}
+          </div>
+        `
+          : ''
+        }
         ${hasInfographic
-      ? `
+          ? `
           <div class="launchpad-panel ${activeTabKey === 'infographic' ? 'active' : ''}" data-panel="infographic" style="${activeTabKey === 'infographic' ? 'display: block;' : 'display: none;'}">
             ${htmlInfographicInner || renderLaunchpadInfographicPanelHTML(lesson, effectiveUnitId, lessonInfographics)}
           </div>
         `
-      : ''
-    }
+          : ''
+        }
+        ${hasObjectives
+          ? `
+          <div class="launchpad-panel ${activeTabKey === 'objectives' ? 'active' : ''}" data-panel="objectives" style="${activeTabKey === 'objectives' ? 'display: block;' : 'display: none;'}">
+            ${htmlObjectivesInner}
+          </div>
+        `
+          : ''
+        }
       </div>
     </div>
   `;
