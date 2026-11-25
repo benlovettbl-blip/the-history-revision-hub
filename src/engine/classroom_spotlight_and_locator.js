@@ -906,14 +906,52 @@ function autoFitPedagogyDock() {
   const maxProportionalScale = Math.max(0.95, Math.min(1.42, (prosePx * 0.8) / 15));
 
   if (mode === 'hints') {
-    // Pin top edge & lock one steady scale for all-expanded hints so tapping a hint NEVER resizes or shifts other hints
+    // Pre-measure the exact largest scale where ALL hints expanded fill the right panel with 0 scroll,
+    // then lock that scale so tapping individual hints NEVER resizes or glitches the other hints!
     dock.style.justifyContent = 'flex-start';
-    const totalChips = dock.querySelectorAll('[data-hint-peek]').length || 5;
-    const steadyScale = Math.min(
-      maxProportionalScale,
-      dock.clientHeight >= 760 ? 1.18 : totalChips >= 6 ? 0.88 : 0.96,
-    );
-    dock.style.setProperty('--srs-rp-scale', steadyScale.toFixed(3));
+    const stages = activeLessonSpotlightState.stages;
+    const stage = stages[activeLessonSpotlightState.currentIndex];
+    const meta = activeLessonSpotlightState.meta || {};
+    const entry = stage
+      ? resolveBespokeStageEntry(meta.unitId, meta.lessonId, meta.lessonIndex, stage.stageNum, stage) ||
+        buildFallbackStageEntry(stage)
+      : null;
+
+    const chips = Array.from(dock.querySelectorAll('[data-hint-peek]'));
+    const savedHtml = [];
+    if (entry && chips.length > 0) {
+      chips.forEach((chip) => {
+        const lbl = chip.querySelector('.srs-hint-label');
+        const grp = chip.getAttribute('data-hint-group');
+        const idx = Number(chip.getAttribute('data-hint-idx'));
+        const list = grp === 'context' ? entry.context || [] : entry.passage || [];
+        const item = list[idx];
+        savedHtml.push(lbl ? lbl.innerHTML : '');
+        if (lbl && item) lbl.innerHTML = formatCausalBulletHTML(item.bullet);
+      });
+    }
+
+    let low = 0.72;
+    let high = maxProportionalScale;
+    let best = low;
+    for (let i = 0; i < 11; i++) {
+      const mid = (low + high) / 2;
+      dock.style.setProperty('--srs-rp-scale', mid.toFixed(3));
+      if (inner.scrollHeight <= availH) {
+        best = mid;
+        low = mid;
+      } else {
+        high = mid;
+      }
+    }
+    dock.style.setProperty('--srs-rp-scale', best.toFixed(3));
+
+    if (entry && chips.length > 0) {
+      chips.forEach((chip, i) => {
+        const lbl = chip.querySelector('.srs-hint-label');
+        if (lbl) lbl.innerHTML = savedHtml[i];
+      });
+    }
     dock.style.overflowY = inner.scrollHeight > availH + 4 ? 'auto' : 'hidden';
     return;
   }
