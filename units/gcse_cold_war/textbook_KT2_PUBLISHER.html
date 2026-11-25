@@ -666,12 +666,24 @@
       white-space: nowrap;
     }
     .spread-stage-q {
+      break-after: avoid;
+      break-inside: avoid;
       font-family: 'Playfair Display', Georgia, serif;
       font-style: italic;
       font-size: 9.2pt;
       color: var(--acc-dark);
-      margin-bottom: 5px;
-      line-height: 1.3;
+      margin-bottom: 4.5px;
+      line-height: 1.28;
+    }
+    .page-lesson:not(.page-spread):not(.page-lesson-ks2) .spread-stage-q {
+      font-size: 8.15pt;
+      line-height: 1.22;
+      margin-bottom: 3px;
+    }
+    .page-lesson-ks2 .spread-stage-q {
+      font-size: 9.4pt;
+      line-height: 1.28;
+      margin-bottom: 4px;
     }
     .block-prose .prose-p {
       font-family: 'Lora', Georgia, serif;
@@ -1321,7 +1333,7 @@
     <div class="prose-wrap">
       <div class="prose-columns">
         
-          <div class="block-section spread-block" style="margin-bottom: 12.3px;">
+          <div class="block-section spread-block" style="margin-bottom: 11.3px;">
             <div class="block-hdr">
               <span class="stage-pill">STAGE 1</span>
               <span class="block-title">The East German Refugee Crisis &amp; Brain Drain</span>
@@ -1329,7 +1341,7 @@
             </div>
             <div class="spread-stage-q">“Why did Khrushchev issue his Berlin Ultimatum in November 1958?”</div>
             <div class="block-prose">
-              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.55; margin-bottom: 0px;">Throughout the <strong>1950s</strong>, <strong>West Berlin</strong> thrived on <strong>Marshall Plan</strong> investment as a prosperous capitalist <strong>"window to the West"</strong> deep inside Communist <strong>East Germany (GDR)</strong>. Contrasting Western consumer goods and democratic freedoms with low wages, forced collectivisation, and <strong>Stasi</strong> secret-police repression under unpopular GDR leader <strong>Walter Ulbricht</strong>, East Germans crossed openly into West Berlin to fly out to <strong>West Germany (FRG)</strong>.
+              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.54; margin-bottom: 0px;">Throughout the <strong>1950s</strong>, <strong>West Berlin</strong> thrived on <strong>Marshall Plan</strong> investment as a prosperous capitalist <strong>"window to the West"</strong> deep inside Communist <strong>East Germany (GDR)</strong>. Contrasting Western consumer goods and democratic freedoms with low wages, forced collectivisation, and <strong>Stasi</strong> secret-police repression under unpopular GDR leader <strong>Walter Ulbricht</strong>, East Germans crossed openly into West Berlin to fly out to <strong>West Germany (FRG)</strong>.
 
 Between <strong>1949</strong> and <strong>1961</strong>, roughly <strong>2.7 million</strong> to <strong>3 million</strong> citizens fled East Germany—a crippling <strong>"brain drain"</strong> of young doctors, engineers, teachers, and skilled technicians that pushed the GDR toward economic collapse. Determined to halt this humiliation, Soviet leader <strong>Nikita Khrushchev</strong> issued his <strong>Berlin Ultimatum</strong> on <strong>27 November 1958</strong>, giving the Western powers <strong>six months</strong> to withdraw troops and make West Berlin a demilitarised <strong>"free city"</strong>.</p>
             </div>
@@ -1343,7 +1355,7 @@ Between <strong>1949</strong> and <strong>1961</strong>, roughly <strong>2.7 mil
             </div>
             <div class="spread-stage-q">“How did the May 1960 U-2 crisis wreck summit diplomacy?”</div>
             <div class="block-prose">
-              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.55; margin-bottom: 0px;">Neither superpower wanted nuclear war over Berlin, opening two years of <strong>summit diplomacy</strong>. Although foreign ministers reached no deal at the <strong>Geneva Summit</strong> in <strong>May 1959</strong>, talks paved the way for <strong>Khrushchev</strong> to meet President <strong>Dwight D. Eisenhower</strong> at the <strong>Camp David Summit</strong> in <strong>September 1959</strong>. Building personal rapport, Khrushchev withdrew his six-month ultimatum and agreed to reconvene in <strong>Paris</strong>.
+              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.54; margin-bottom: 0px;">Neither superpower wanted nuclear war over Berlin, opening two years of <strong>summit diplomacy</strong>. Although foreign ministers reached no deal at the <strong>Geneva Summit</strong> in <strong>May 1959</strong>, talks paved the way for <strong>Khrushchev</strong> to meet President <strong>Dwight D. Eisenhower</strong> at the <strong>Camp David Summit</strong> in <strong>September 1959</strong>. Building personal rapport, Khrushchev withdrew his six-month ultimatum and agreed to reconvene in <strong>Paris</strong>.
 
 Hopes of compromise collapsed on <strong>1 May 1960</strong> when a Soviet missile shot down an American <strong>U-2</strong> spy plane piloted by <strong>Francis Gary Powers</strong> deep over the <strong>Soviet Union</strong>. After Washington falsely claimed a weather plane had strayed off course, Khrushchev produced Powers alive alongside intact reconnaissance cameras. When Eisenhower refused to apologise at the <strong>Paris Summit</strong> in <strong>May 1960</strong>, Khrushchev walked out, wrecking talks.</p>
             </div>
@@ -1375,7 +1387,7 @@ Hopes of compromise collapsed on <strong>1 May 1960</strong> when a Soviet missi
     <div class="prose-wrap">
       <div class="prose-columns">
         
-          <div class="block-section spread-block" style="margin-bottom: 12.3px;">
+          <div class="block-section spread-block" style="margin-bottom: 11.3px;">
             <div class="block-hdr">
               <span class="stage-pill">STAGE 3</span>
               <span class="block-title">Kennedy &amp; Khrushchev at the Vienna Summit</span>
@@ -1383,13 +1395,13 @@ Hopes of compromise collapsed on <strong>1 May 1960</strong> when a Soviet missi
             </div>
             <div class="spread-stage-q">“What happened when Kennedy met Khrushchev at Vienna in June 1961?”</div>
             <div class="block-prose">
-              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.55; margin-bottom: 0px;">In <strong>January 1961</strong>, <strong>43-year-old</strong> <strong>John F. Kennedy</strong> replaced Eisenhower as US President. Judging <strong>Kennedy</strong> young and inexperienced—especially after Washington’s humiliating <strong>Bay of Pigs</strong> failure in Cuba in <strong>April 1961</strong>—<strong>Khrushchev</strong> attempted to intimidate the new president when the two leaders met face-to-face at the <strong>Vienna Summit</strong> in <strong>June 1961</strong>.
+              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.54; margin-bottom: 0px;">In <strong>January 1961</strong>, <strong>43-year-old</strong> <strong>John F. Kennedy</strong> replaced Eisenhower as US President. Judging <strong>Kennedy</strong> young and inexperienced—especially after Washington’s humiliating <strong>Bay of Pigs</strong> failure in Cuba in <strong>April 1961</strong>—<strong>Khrushchev</strong> attempted to intimidate the new president when the two leaders met face-to-face at the <strong>Vienna Summit</strong> in <strong>June 1961</strong>.
 
 At <strong>Vienna</strong>, Khrushchev reissued his <strong>six-month Berlin Ultimatum</strong>, threatening to sign a separate peace treaty giving East Germany control over Western access routes unless Allied troops left <strong>West Berlin</strong>. Refusing to yield, Kennedy returned home in <strong>July 1961</strong> to call up <strong>250,000</strong> military reservists, expand civil-defence fallout shelters, and add <strong>$3.2 billion</strong> to US defence spending—sparking panic in which <strong>over 30,000</strong> East Germans fled westward that month alone.</p>
             </div>
           </div>
 
-          <div class="block-section spread-block" style="margin-bottom: 12.3px;">
+          <div class="block-section spread-block" style="margin-bottom: 11.3px;">
             <div class="block-hdr">
               <span class="stage-pill">STAGE 4</span>
               <span class="block-title">Construction of the Berlin Wall &amp; Checkpoint Charlie</span>
@@ -1397,7 +1409,7 @@ At <strong>Vienna</strong>, Khrushchev reissued his <strong>six-month Berlin Ult
             </div>
             <div class="spread-stage-q">“What caused East Germany to build the Berlin Wall in August 1961?”</div>
             <div class="block-prose">
-              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.55; margin-bottom: 0px;">With <strong>40,000</strong> refugees crossing in early <strong>August 1961</strong> and <strong>Kennedy</strong> prepared to fight for <strong>West Berlin</strong>—yet not to intervene inside East Berlin—<strong>Walter Ulbricht</strong> urged <strong>Khrushchev</strong> to close the border. Before dawn on <strong>13 August 1961</strong>, <strong>East Germany</strong> deployed troops to string <strong>barbed wire</strong> around West Berlin, severing streets and families overnight before building a <strong>3.6-metre</strong> concrete <strong>Berlin Wall</strong> backed by watchtowers and a mined <strong>"Death Strip"</strong>.
+              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.54; margin-bottom: 0px;">With <strong>40,000</strong> refugees crossing in early <strong>August 1961</strong> and <strong>Kennedy</strong> prepared to fight for <strong>West Berlin</strong>—yet not to intervene inside East Berlin—<strong>Walter Ulbricht</strong> urged <strong>Khrushchev</strong> to close the border. Before dawn on <strong>13 August 1961</strong>, <strong>East Germany</strong> deployed troops to string <strong>barbed wire</strong> around West Berlin, severing streets and families overnight before building a <strong>3.6-metre</strong> concrete <strong>Berlin Wall</strong> backed by watchtowers and a mined <strong>"Death Strip"</strong>.
 
 Danger peaked on <strong>27 October 1961</strong> at <strong>Checkpoint Charlie</strong>, where US and Soviet tanks stood <strong>100 metres</strong> apart for <strong>18 hours</strong> over Allied crossing rights until Kennedy and Khrushchev quietly withdrew them tank by tank. Meanwhile, East German guards shot citizens trying to escape—including <strong>18-year-old</strong> bricklayer <strong>Peter Fechter</strong>, left bleeding to death beside the wire in <strong>August 1962</strong>.</p>
             </div>
@@ -1411,7 +1423,7 @@ Danger peaked on <strong>27 October 1961</strong> at <strong>Checkpoint Charlie<
             </div>
             <div class="spread-stage-q">“In what ways did the Berlin Wall reshape superpower relations by 1963?”</div>
             <div class="block-prose">
-              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.55; margin-bottom: 0px;">Paradoxically, the <strong>Berlin Wall</strong> reshaped <strong>superpower relations</strong> by removing Berlin as an immediate trigger for nuclear war. For <strong>Khrushchev</strong> and <strong>Ulbricht</strong>, sealing the frontier stopped the crippling refugee <strong>"brain drain"</strong> and stabilised Communist <strong>East Germany</strong>, allowing Khrushchev to drop his <strong>1958</strong> ultimatum silently. Privately relieved that Western garrison rights survived untouched, <strong>Kennedy</strong> remarked that <em>"a wall is a hell of a lot better than a war."</em>
+              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.54; margin-bottom: 0px;">Paradoxically, the <strong>Berlin Wall</strong> reshaped <strong>superpower relations</strong> by removing Berlin as an immediate trigger for nuclear war. For <strong>Khrushchev</strong> and <strong>Ulbricht</strong>, sealing the frontier stopped the crippling refugee <strong>"brain drain"</strong> and stabilised Communist <strong>East Germany</strong>, allowing Khrushchev to drop his <strong>1958</strong> ultimatum silently. Privately relieved that Western garrison rights survived untouched, <strong>Kennedy</strong> remarked that <em>"a wall is a hell of a lot better than a war."</em>
 
 Yet in global propaganda, the Wall handed the West a lasting moral victory by proving communism had to imprison its own citizens behind concrete and barbed wire. Visiting <strong>West Berlin</strong> on <strong>26 June 1963</strong>, Kennedy addressed <strong>120,000</strong> cheering Berliners outside Schöneberg Rathaus, proclaiming <strong>"Ich bin ein Berliner"</strong> (<em>"I am a Berliner"</em>) to celebrate Western freedom over Soviet repression.</p>
             </div>
@@ -1477,7 +1489,7 @@ Yet in global propaganda, the Wall handed the West a lasting moral victory by pr
     <div class="prose-wrap">
       <div class="prose-columns">
         
-          <div class="block-section spread-block" style="margin-bottom: 12.3px;">
+          <div class="block-section spread-block" style="margin-bottom: 11.3px;">
             <div class="block-hdr">
               <span class="stage-pill">STAGE 1</span>
               <span class="block-title">The Cuban Revolution &amp; Castro’s Shift Toward Moscow</span>
@@ -1485,7 +1497,7 @@ Yet in global propaganda, the Wall handed the West a lasting moral victory by pr
             </div>
             <div class="spread-stage-q">“Why did Fidel Castro turn to Khrushchev after January 1959?”</div>
             <div class="block-prose">
-              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.55; margin-bottom: 0px;">For decades the <strong>United States</strong> treated <strong>Cuba</strong>—just <strong>90 miles</strong> south of Florida—as part of its economic backyard, backing corrupt military dictator <strong>Fulgencio Batista</strong> while American corporations owned most Cuban sugar plantations, oil refineries, railways, and electricity networks. In <strong>January 1959</strong>, nationalist guerrilla leader <strong>Fidel Castro</strong> and <strong>Che Guevara</strong> overthrew Batista and began nationalising US-owned land and businesses.
+              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.54; margin-bottom: 0px;">For decades the <strong>United States</strong> treated <strong>Cuba</strong>—just <strong>90 miles</strong> south of Florida—as part of its economic backyard, backing corrupt military dictator <strong>Fulgencio Batista</strong> while American corporations owned most Cuban sugar plantations, oil refineries, railways, and electricity networks. In <strong>January 1959</strong>, nationalist guerrilla leader <strong>Fidel Castro</strong> and <strong>Che Guevara</strong> overthrew Batista and began nationalising US-owned land and businesses.
 
 Determined to bring Cuba back into line, <strong>President Eisenhower</strong> slashed Cuban sugar imports in <strong>July 1960</strong>, imposed a sweeping <strong>US trade embargo</strong> in <strong>October 1960</strong>, and broke off diplomatic relations in <strong>January 1961</strong>. Facing economic ruin, <strong>Fidel Castro</strong> turned to Soviet Premier <strong>Nikita Khrushchev</strong>, signing agreements from <strong>February 1960</strong> swapping Soviet oil, loans, and conventional weapons for Cuban sugar.</p>
             </div>
@@ -1499,7 +1511,7 @@ Determined to bring Cuba back into line, <strong>President Eisenhower</strong> s
             </div>
             <div class="spread-stage-q">“How did the April 1961 Bay of Pigs fiasco backfire on Kennedy?”</div>
             <div class="block-prose">
-              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.55; margin-bottom: 0px;">Inheriting a covert <strong>CIA</strong> scheme devised under Eisenhower, <strong>President Kennedy</strong> authorised <strong>1,400</strong> CIA-trained Cuban exiles (<strong>Brigade 2506</strong>) to land at the <strong>Bay of Pigs</strong> on <strong>17 April 1961</strong> to spark an uprising while hiding direct US military involvement. Instead, the <strong>April 1961</strong> <strong>Bay of Pigs</strong> landing proved a humiliating fiasco: Kennedy withheld US air cover, ordinary Cubans backed <strong>Castro</strong>, and <strong>20,000</strong> Cuban troops captured <strong>1,189</strong> exiles within <strong>72 hours</strong>.
+              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.54; margin-bottom: 0px;">Inheriting a covert <strong>CIA</strong> scheme devised under Eisenhower, <strong>President Kennedy</strong> authorised <strong>1,400</strong> CIA-trained Cuban exiles (<strong>Brigade 2506</strong>) to land at the <strong>Bay of Pigs</strong> on <strong>17 April 1961</strong> to spark an uprising while hiding direct US military involvement. Instead, the <strong>April 1961</strong> <strong>Bay of Pigs</strong> landing proved a humiliating fiasco: Kennedy withheld US air cover, ordinary Cubans backed <strong>Castro</strong>, and <strong>20,000</strong> Cuban troops captured <strong>1,189</strong> exiles within <strong>72 hours</strong>.
 
 Rather than removing Castro, US aggression drove him to declare Cuba <strong>Communist</strong> in <strong>December 1961</strong> and request Soviet nuclear protection against a direct US invasion. <strong>Khrushchev</strong> secretly agreed in <strong>May 1962</strong> to station medium-range nuclear missiles on Cuba—defending socialist Cuba while balancing <strong>US Jupiter missiles</strong> deployed in <strong>Turkey</strong> and Italy.</p>
             </div>
@@ -1531,7 +1543,7 @@ Rather than removing Castro, US aggression drove him to declare Cuba <strong>Com
     <div class="prose-wrap">
       <div class="prose-columns">
         
-          <div class="block-section spread-block" style="margin-bottom: 10.3px;">
+          <div class="block-section spread-block" style="margin-bottom: 9.7px;">
             <div class="block-hdr">
               <span class="stage-pill">STAGE 3</span>
               <span class="block-title">U-2 Discovery &amp; Kennedy’s Naval Quarantine</span>
@@ -1539,13 +1551,13 @@ Rather than removing Castro, US aggression drove him to declare Cuba <strong>Com
             </div>
             <div class="spread-stage-q">“What options did Kennedy weigh after U-2 photos in October 1962?”</div>
             <div class="block-prose">
-              <p class="prose-p" style="font-size: 12.35pt; line-height: 1.51; margin-bottom: 0px;">On <strong>14 October 1962</strong>, an American <strong>U-2</strong> spy plane photographed Soviet <strong>R-12 (SS-4)</strong> medium-range nuclear missile launch sites under construction at <strong>San Cristóbal</strong> in Cuba, placing Washington, D.C. and major US cities within a ten-minute strike window. Convening his secret crisis advisers, <strong>ExComm</strong>, <strong>Kennedy</strong> weighed agonising choices: immediate airstrikes and invasion risked killing Soviet troops and igniting nuclear war, whereas diplomatic protest alone left missiles operational.
+              <p class="prose-p" style="font-size: 12.4pt; line-height: 1.51; margin-bottom: 0px;">On <strong>14 October 1962</strong>, an American <strong>U-2</strong> spy plane photographed Soviet <strong>R-12 (SS-4)</strong> medium-range nuclear missile launch sites under construction at <strong>San Cristóbal</strong> in Cuba, placing Washington, D.C. and major US cities within a ten-minute strike window. Convening his secret crisis advisers, <strong>ExComm</strong>, <strong>Kennedy</strong> weighed agonising choices: immediate airstrikes and invasion risked killing Soviet troops and igniting nuclear war, whereas diplomatic protest alone left missiles operational.
 
 On <strong>22 October 1962</strong>, Kennedy addressed the nation on television to expose the bases, raise US forces to <strong>DEFCON 2</strong>, and order a <strong>500-mile naval "quarantine"</strong> around Cuba (avoiding the warlike term <em>blockade</em>). On <strong>24 October</strong>, as Soviet freighters neared US Navy warships, <strong>Khrushchev</strong> ordered missile-carrying vessels to stop and turn back.</p>
             </div>
           </div>
 
-          <div class="block-section spread-block" style="margin-bottom: 10.3px;">
+          <div class="block-section spread-block" style="margin-bottom: 9.7px;">
             <div class="block-hdr">
               <span class="stage-pill">STAGE 4</span>
               <span class="block-title">The Thirteen Days Climax &amp; Secret Turkey Deal</span>
@@ -1553,7 +1565,7 @@ On <strong>22 October 1962</strong>, Kennedy addressed the nation on television 
             </div>
             <div class="spread-stage-q">“What caused Kennedy and Khrushchev to compromise on 28 October 1962?”</div>
             <div class="block-prose">
-              <p class="prose-p" style="font-size: 12.35pt; line-height: 1.51; margin-bottom: 0px;">Crisis tension peaked because missile crews already inside Cuba raced toward launch readiness. On <strong>26 October</strong>, <strong>Khrushchev</strong> sent an urgent first letter offering to remove the missiles if America promised never to invade Cuba, followed on <strong>27 October</strong> (<em>"Black Saturday"</em>) by a tougher second letter demanding removal of <strong>US Jupiter missiles</strong> from <strong>Turkey</strong>—the same day a Soviet missile shot down US U-2 pilot Major <strong>Rudolf Anderson</strong>.
+              <p class="prose-p" style="font-size: 12.4pt; line-height: 1.51; margin-bottom: 0px;">Crisis tension peaked because missile crews already inside Cuba raced toward launch readiness. On <strong>26 October</strong>, <strong>Khrushchev</strong> sent an urgent first letter offering to remove the missiles if America promised never to invade Cuba, followed on <strong>27 October</strong> (<em>"Black Saturday"</em>) by a tougher second letter demanding removal of <strong>US Jupiter missiles</strong> from <strong>Turkey</strong>—the same day a Soviet missile shot down US U-2 pilot Major <strong>Rudolf Anderson</strong>.
 
 Rejecting generals’ calls for immediate airstrikes, <strong>Kennedy</strong> followed Attorney General <strong>Robert Kennedy</strong>’s plan: publicly accepting only the first letter while secretly sending Robert Kennedy to tell Soviet Ambassador <strong>Anatoly Dobrynin</strong> that US missiles in Turkey would follow. Dreading nuclear annihilation, <strong>Khrushchev</strong> announced on <strong>28 October 1962</strong> that Soviet missiles would leave Cuba under UN inspection in return for America’s public <strong>non-invasion pledge</strong> and secret Turkish missile withdrawal.</p>
             </div>
@@ -1567,7 +1579,7 @@ Rejecting generals’ calls for immediate airstrikes, <strong>Kennedy</strong> f
             </div>
             <div class="spread-stage-q">“In what ways did the 1962 crisis improve superpower relations by 1968?”</div>
             <div class="block-prose">
-              <p class="prose-p" style="font-size: 12.35pt; line-height: 1.51; margin-bottom: 0px;">Shocked by how close humanity came to nuclear war during the <strong>1962</strong> crisis, Washington and Moscow acted swiftly to stabilise <strong>superpower relations</strong> under <strong>Mutually Assured Destruction (MAD)</strong>. In <strong>June 1963</strong>, they established a direct <strong>Moscow–Washington "hotline"</strong> teletype link for rapid communication, and in <strong>August 1963</strong> the USA, USSR, and Britain signed the <strong>Limited Test Ban Treaty</strong>, banning nuclear testing in the atmosphere, outer space, and underwater.
+              <p class="prose-p" style="font-size: 12.4pt; line-height: 1.51; margin-bottom: 0px;">Shocked by how close humanity came to nuclear war during the <strong>1962</strong> crisis, Washington and Moscow acted swiftly to stabilise <strong>superpower relations</strong> under <strong>Mutually Assured Destruction (MAD)</strong>. In <strong>June 1963</strong>, they established a direct <strong>Moscow–Washington "hotline"</strong> teletype link for rapid communication, and in <strong>August 1963</strong> the USA, USSR, and Britain signed the <strong>Limited Test Ban Treaty</strong>, banning nuclear testing in the atmosphere, outer space, and underwater.
 
 Two landmark agreements soon widened nuclear restraint: the <strong>1967 Outer Space Treaty</strong> banned placing nuclear weapons in space or on celestial bodies, and the <strong>1968 Nuclear Non-Proliferation Treaty (NPT)</strong> pledged nuclear powers not to spread atomic weapons to non-nuclear states. Yet because the Turkish missile deal stayed secret, <strong>Kennedy</strong> won immense prestige while Kremlin rivals accused <strong>Khrushchev</strong> of humiliation—removing him from power in <strong>October 1964</strong>.</p>
             </div>
@@ -1633,7 +1645,7 @@ Two landmark agreements soon widened nuclear restraint: the <strong>1967 Outer S
     <div class="prose-wrap">
       <div class="prose-columns">
         
-          <div class="block-section spread-block" style="margin-bottom: 12.3px;">
+          <div class="block-section spread-block" style="margin-bottom: 11.3px;">
             <div class="block-hdr">
               <span class="stage-pill">STAGE 1</span>
               <span class="block-title">Stalinist Stagnation Under Antonín Novotný</span>
@@ -1641,7 +1653,7 @@ Two landmark agreements soon widened nuclear restraint: the <strong>1967 Outer S
             </div>
             <div class="spread-stage-q">“Why did opposition to Antonín Novotný grow in Czechoslovakia by 1967?”</div>
             <div class="block-prose">
-              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.55; margin-bottom: 0px;">After the <strong>February 1948</strong> Communist takeover, <strong>Czechoslovakia</strong> became one of Moscow’s most obedient satellite states, ruled from <strong>1957</strong> by hardline Stalinist leader <strong>Antonín Novotný</strong>. Unlike neighbours in Hungary or Poland, Novotný refused <strong>de-Stalinisation</strong>, enforced rigid press censorship through the feared <strong>StB</strong> secret police, kept Stalinist purge victims in prison, and dismissed <strong>Slovak</strong> complaints over Prague’s central control.
+              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.54; margin-bottom: 0px;">After the <strong>February 1948</strong> Communist takeover, <strong>Czechoslovakia</strong> became one of Moscow’s most obedient satellite states, ruled from <strong>1957</strong> by hardline Stalinist leader <strong>Antonín Novotný</strong>. Unlike neighbours in Hungary or Poland, Novotný refused <strong>de-Stalinisation</strong>, enforced rigid press censorship through the feared <strong>StB</strong> secret police, kept Stalinist purge victims in prison, and dismissed <strong>Slovak</strong> complaints over Prague’s central control.
 
 By the <strong>1960s</strong>, however, Czechoslovakia’s once-prosperous industrial economy slid into serious decline. <strong>Comecon</strong> forced Czech factories to supply heavy machinery, steel, and raw materials for the <strong>Soviet Union</strong> rather than producing consumer goods at home, causing falling living standards. Simmering anger among writers, economists, and youth erupted in <strong>October 1967</strong>, when police brutally beat peaceful <strong>Prague</strong> university students marching against power cuts in their hostels—shattering party support for Novotný.</p>
             </div>
@@ -1655,7 +1667,7 @@ By the <strong>1960s</strong>, however, Czechoslovakia’s once-prosperous indus
             </div>
             <div class="spread-stage-q">“How did Alexander Dubček reform Czechoslovakia in April 1968?”</div>
             <div class="block-prose">
-              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.55; margin-bottom: 0px;">Hoping a fresh face would restore stability, Soviet leader <strong>Leonid Brezhnev</strong> declined to rescue Novotný, enabling reformist Slovak Communist <strong>Alexander Dubček</strong> to become First Secretary of the Czechoslovak Communist Party on <strong>5 January 1968</strong>. A committed Marxist educated partly in the Soviet Union, Dubček aimed to renew communism’s popularity rather than dismantle socialism.
+              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.54; margin-bottom: 0px;">Hoping a fresh face would restore stability, Soviet leader <strong>Leonid Brezhnev</strong> declined to rescue Novotný, enabling reformist Slovak Communist <strong>Alexander Dubček</strong> to become First Secretary of the Czechoslovak Communist Party on <strong>5 January 1968</strong>. A committed Marxist educated partly in the Soviet Union, Dubček aimed to renew communism’s popularity rather than dismantle socialism.
 
 In <strong>April 1968</strong>, Dubček unveiled the party’s <strong><em>Action Programme</em></strong>, launching the <strong>Prague Spring</strong> and promising <strong>"Socialism with a human face"</strong>. Censorship of newspapers, radio, and television was abolished, arbitrary <strong>StB</strong> arrests were curbed, citizens gained freedom of speech and foreign travel to the West, and victims of Stalinist show trials were rehabilitated. Economists under <strong>Ota Šik</strong> introduced market <strong>decentralisation</strong> and trade union rights inside <strong>Czechoslovakia</strong> so factories could meet consumer demand.</p>
             </div>
@@ -1687,7 +1699,7 @@ In <strong>April 1968</strong>, Dubček unveiled the party’s <strong><em>Actio
     <div class="prose-wrap">
       <div class="prose-columns">
         
-          <div class="block-section spread-block" style="margin-bottom: 9.5px;">
+          <div class="block-section spread-block" style="margin-bottom: 9.1px;">
             <div class="block-hdr">
               <span class="stage-pill">STAGE 3</span>
               <span class="block-title">Warsaw Pact Loyalty &amp; Radical Calls for Pluralism</span>
@@ -1695,13 +1707,13 @@ In <strong>April 1968</strong>, Dubček unveiled the party’s <strong><em>Actio
             </div>
             <div class="spread-stage-q">“What promises did Dubček make to reassure the Warsaw Pact in 1968?”</div>
             <div class="block-prose">
-              <p class="prose-p" style="font-size: 12.2pt; line-height: 1.49; margin-bottom: 0px;">Having witnessed Soviet tanks crush <strong>Imre Nagy</strong>’s <strong>1956</strong> uprising in <strong>Hungary</strong>, <strong>Dubček</strong> knew Moscow would never tolerate strategic defection and vowed never to declare Cold War neutrality like Budapest had done. Throughout <strong>1968</strong>, he repeatedly assured the Kremlin that Czechoslovakia would remain a loyal member of both the <strong>Warsaw Pact</strong> military alliance and <strong>Comecon</strong>, while preserving the leading role of the Communist Party.
+              <p class="prose-p" style="font-size: 12.25pt; line-height: 1.49; margin-bottom: 0px;">Having witnessed Soviet tanks crush <strong>Imre Nagy</strong>’s <strong>1956</strong> uprising in <strong>Hungary</strong>, <strong>Dubček</strong> knew Moscow would never tolerate strategic defection and vowed never to declare Cold War neutrality like Budapest had done. Throughout <strong>1968</strong>, he repeatedly assured the Kremlin that Czechoslovakia would remain a loyal member of both the <strong>Warsaw Pact</strong> military alliance and <strong>Comecon</strong>, while preserving the leading role of the Communist Party.
 
 Yet once censorship vanished, reform snowballed beyond Dubček’s cautious timetable. Uncensored television debates exposed past Stalinist crimes, non-communist clubs such as <strong>KAN</strong> emerged, and reformers discussed future multi-party pluralism within ten years. On <strong>27 June 1968</strong>, writer <strong>Ludvík Vaculík</strong> published the <strong><em>Two Thousand Words</em></strong> manifesto in Prague newspapers, urging ordinary citizens to press harder against Communist hardliners and remove corrupt officials from below.</p>
             </div>
           </div>
 
-          <div class="block-section spread-block" style="margin-bottom: 9.5px;">
+          <div class="block-section spread-block" style="margin-bottom: 9.1px;">
             <div class="block-hdr">
               <span class="stage-pill">STAGE 4</span>
               <span class="block-title">Alarm in Moscow, East Berlin &amp; Warsaw</span>
@@ -1709,7 +1721,7 @@ Yet once censorship vanished, reform snowballed beyond Dubček’s cautious time
             </div>
             <div class="spread-stage-q">“What caused Leonid Brezhnev and Warsaw Pact allies to fear Prague in 1968?”</div>
             <div class="block-prose">
-              <p class="prose-p" style="font-size: 12.2pt; line-height: 1.49; margin-bottom: 0px;">Across the Eastern Bloc, Vaculík’s manifesto and uncensored <strong>Prague</strong> broadcasts triggered intense alarm in <strong>1968</strong>. East German leader <strong>Walter Ulbricht</strong> and Polish leader <strong>Władysław Gomułka</strong>—already facing student protests in Warsaw—warned <strong>Leonid Brezhnev</strong> that "Socialism with a human face" acted like an ideological virus that would inspire citizens in East Germany and Poland to demand free speech and unravel Communist Party monopoly.
+              <p class="prose-p" style="font-size: 12.25pt; line-height: 1.49; margin-bottom: 0px;">Across the Eastern Bloc, Vaculík’s manifesto and uncensored <strong>Prague</strong> broadcasts triggered intense alarm in <strong>1968</strong>. East German leader <strong>Walter Ulbricht</strong> and Polish leader <strong>Władysław Gomułka</strong>—already facing student protests in Warsaw—warned <strong>Leonid Brezhnev</strong> that "Socialism with a human face" acted like an ideological virus that would inspire citizens in East Germany and Poland to demand free speech and unravel Communist Party monopoly.
 
 Strategic geography heightened Kremlin fears. <strong>Czechoslovakia</strong> occupied the industrial heart of central Europe, sharing direct borders with capitalist <strong>West Germany</strong>, <strong>Austria</strong>, East Germany, Poland, Hungary, and the Soviet Union itself. Brezhnev feared that if anti-Soviet reformers gained control in Prague, <strong>NATO</strong> influence and West German trade loans could drive a fatal wedge right into the centre of the <strong>Warsaw Pact</strong> buffer zone.</p>
             </div>
@@ -1723,7 +1735,7 @@ Strategic geography heightened Kremlin fears. <strong>Czechoslovakia</strong> oc
             </div>
             <div class="spread-stage-q">“In what ways did Brezhnev pressure Dubček during July and August 1968?”</div>
             <div class="block-prose">
-              <p class="prose-p" style="font-size: 12.2pt; line-height: 1.49; margin-bottom: 0px;">Determined to intimidate Prague without immediate invasion, Moscow staged <strong>Warsaw Pact</strong> military exercises inside Czechoslovakia in <strong>June 1968</strong> and delayed withdrawing Soviet tank units. On <strong>15 July 1968</strong>, leaders of the USSR, East Germany, Poland, Hungary, and Bulgaria sent the stern <strong>Warsaw Letter</strong>, declaring that counter-revolution in Prague endangered the vital security interests of every socialist state.
+              <p class="prose-p" style="font-size: 12.25pt; line-height: 1.49; margin-bottom: 0px;">Determined to intimidate Prague without immediate invasion, Moscow staged <strong>Warsaw Pact</strong> military exercises inside Czechoslovakia in <strong>June 1968</strong> and delayed withdrawing Soviet tank units. On <strong>15 July 1968</strong>, leaders of the USSR, East Germany, Poland, Hungary, and Bulgaria sent the stern <strong>Warsaw Letter</strong>, declaring that counter-revolution in Prague endangered the vital security interests of every socialist state.
 
 Diplomatic pressure intensified throughout <strong>July</strong> and <strong>August 1968</strong>. At tense summits in <strong>Čierna nad Tisou</strong> (<strong>29 July–1 August</strong>) and <strong>Bratislava</strong> (<strong>3 August</strong>), <strong>Dubček</strong> promised to protect socialism and curb anti-Soviet press criticism, yet refused to reimpose harsh censorship. When Dubček then welcomed independent Communist leaders <strong>Josip Broz Tito</strong> of Yugoslavia and <strong>Nicolae Ceaușescu</strong> of Romania to cheering Prague crowds—ignoring <strong>Brezhnev</strong>’s angry <strong>13 August</strong> telephone warning—Moscow prepared military force.</p>
             </div>
@@ -1789,7 +1801,7 @@ Diplomatic pressure intensified throughout <strong>July</strong> and <strong>Aug
     <div class="prose-wrap">
       <div class="prose-columns">
         
-          <div class="block-section spread-block" style="margin-bottom: 12.3px;">
+          <div class="block-section spread-block" style="margin-bottom: 11.3px;">
             <div class="block-hdr">
               <span class="stage-pill">STAGE 1</span>
               <span class="block-title">The Warsaw Pact Invasion of August 1968</span>
@@ -1797,7 +1809,7 @@ Diplomatic pressure intensified throughout <strong>July</strong> and <strong>Aug
             </div>
             <div class="spread-stage-q">“How did Warsaw Pact forces seize Czechoslovakia in August 1968?”</div>
             <div class="block-prose">
-              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.55; margin-bottom: 0px;">Convinced after the <strong>Čierna nad Tisou</strong> and <strong>Bratislava</strong> summits that <strong>Alexander Dubček</strong> would never reimpose censorship or silence anti-Soviet newspapers, the Soviet Politburo voted on <strong>17 August 1968</strong> for armed intervention. Late on the night of <strong>20–21 August 1968</strong>, roughly <strong>500,000 Warsaw Pact</strong> troops—drawn from the <strong>Soviet Union</strong>, <strong>Poland</strong>, <strong>Hungary</strong>, and <strong>Bulgaria</strong>—crossed every frontier into <strong>Czechoslovakia</strong>.
+              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.54; margin-bottom: 0px;">Convinced after the <strong>Čierna nad Tisou</strong> and <strong>Bratislava</strong> summits that <strong>Alexander Dubček</strong> would never reimpose censorship or silence anti-Soviet newspapers, the Soviet Politburo voted on <strong>17 August 1968</strong> for armed intervention. Late on the night of <strong>20–21 August 1968</strong>, roughly <strong>500,000 Warsaw Pact</strong> troops—drawn from the <strong>Soviet Union</strong>, <strong>Poland</strong>, <strong>Hungary</strong>, and <strong>Bulgaria</strong>—crossed every frontier into <strong>Czechoslovakia</strong>.
 
 Columns of tanks painted with white invasion stripes rumbled into Prague, while Soviet paratroopers seized Ruzyňe Airport after a transport plane requested an emergency landing. Moscow’s state news agency claimed unnamed Czechoslovak Communists had requested "fraternal assistance" against counter-revolutionaries, yet no senior Prague leader had signed such an appeal, and President <strong>Ludvík Svoboda</strong> ordered the Czechoslovak army to remain inside its barracks to prevent catastrophic bloodshed.</p>
             </div>
@@ -1811,7 +1823,7 @@ Columns of tanks painted with white invasion stripes rumbled into Prague, while 
             </div>
             <div class="spread-stage-q">“Why did Dubček order non-violent resistance in Prague in 1968?”</div>
             <div class="block-prose">
-              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.55; margin-bottom: 0px;">Remembering how armed street fighting in <strong>Hungary</strong> in <strong>1956</strong> had killed thousands and given Moscow an excuse for mass executions, <strong>Dubček</strong> appealed by radio in <strong>1968</strong> for citizens across <strong>Prague</strong> to offer strictly peaceful <strong>passive resistance</strong>. Unarmed crowds surrounded stalled tanks, waving Czechoslovak flags and arguing passionately in Russian with bewildered young Soviet conscripts who had been told they were fighting West German invaders.
+              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.54; margin-bottom: 0px;">Remembering how armed street fighting in <strong>Hungary</strong> in <strong>1956</strong> had killed thousands and given Moscow an excuse for mass executions, <strong>Dubček</strong> appealed by radio in <strong>1968</strong> for citizens across <strong>Prague</strong> to offer strictly peaceful <strong>passive resistance</strong>. Unarmed crowds surrounded stalled tanks, waving Czechoslovak flags and arguing passionately in Russian with bewildered young Soviet conscripts who had been told they were fighting West German invaders.
 
 Across Czechoslovakia, citizens tore down or repainted road signs and village names—leaving only arrows pointing back to Moscow—while underground radio studios broadcast uncensored updates from secret transmitters. Although fewer than <strong>100</strong> Czechoslovaks were killed during the August invasion, despair deepened as occupation dragged on: on <strong>16 January 1969</strong>, twenty-year-old history student <strong>Jan Palach</strong> set himself alight in Prague’s <strong>Wenceslas Square</strong> to protest public resignation to censorship.</p>
             </div>
@@ -1843,7 +1855,7 @@ Across Czechoslovakia, citizens tore down or repainted road signs and village na
     <div class="prose-wrap">
       <div class="prose-columns">
         
-          <div class="block-section spread-block" style="margin-bottom: 9.5px;">
+          <div class="block-section spread-block" style="margin-bottom: 8.8px;">
             <div class="block-hdr">
               <span class="stage-pill">STAGE 3</span>
               <span class="block-title">The Moscow Protocol &amp; Gustáv Husák’s Normalisation</span>
@@ -1851,13 +1863,13 @@ Across Czechoslovakia, citizens tore down or repainted road signs and village na
             </div>
             <div class="spread-stage-q">“What changes did Gustáv Husák enforce across Czechoslovakia from 1969?”</div>
             <div class="block-prose">
-              <p class="prose-p" style="font-size: 12.2pt; line-height: 1.49; margin-bottom: 0px;">On <strong>21 August 1968</strong>, Soviet security officers arrested <strong>Alexander Dubček</strong> in Prague and flew him in handcuffs to Moscow. Under intense Kremlin pressure, Dubček signed the <strong>Moscow Protocol</strong> on <strong>26 August 1968</strong>, agreeing to reinstate press censorship, ban non-communist political clubs, dismiss reformist ministers, and accept the "temporary" stationing of Red Army divisions on Czechoslovak soil.
+              <p class="prose-p" style="font-size: 12.2pt; line-height: 1.48; margin-bottom: 0px;">On <strong>21 August 1968</strong>, Soviet security officers arrested <strong>Alexander Dubček</strong> in Prague and flew him in handcuffs to Moscow. Under intense Kremlin pressure, Dubček signed the <strong>Moscow Protocol</strong> on <strong>26 August 1968</strong>, agreeing to reinstate press censorship, ban non-communist political clubs, dismiss reformist ministers, and accept the "temporary" stationing of Red Army divisions on Czechoslovak soil.
 
 Having broken the Prague Spring’s momentum, Moscow removed Dubček altogether in <strong>April 1969</strong>—demoting him first to Ambassador to Turkey and later to a Slovak forestry clerk—and installed loyal hardliner <strong>Gustáv Husák</strong>. Over the next twenty years across <strong>Czechoslovakia</strong>, Husák enforced rigid <strong>"normalisation"</strong>: purging nearly <strong>500,000</strong> reform-minded members from the Communist Party, dismissing thousands of teachers, journalists, and academics into manual jobs, and restoring <strong>StB</strong> police surveillance.</p>
             </div>
           </div>
 
-          <div class="block-section spread-block" style="margin-bottom: 9.5px;">
+          <div class="block-section spread-block" style="margin-bottom: 8.8px;">
             <div class="block-hdr">
               <span class="stage-pill">STAGE 4</span>
               <span class="block-title">The Brezhnev Doctrine &amp; One-Party Rule</span>
@@ -1865,7 +1877,7 @@ Having broken the Prague Spring’s momentum, Moscow removed Dubček altogether 
             </div>
             <div class="spread-stage-q">“What caused Leonid Brezhnev to announce the Brezhnev Doctrine in 1968?”</div>
             <div class="block-prose">
-              <p class="prose-p" style="font-size: 12.2pt; line-height: 1.49; margin-bottom: 0px;">Because Czechoslovakia had never threatened to leave the <strong>Warsaw Pact</strong>, <strong>Leonid Brezhnev</strong> needed a sweeping ideological justification for invading a fellow socialist ally. First outlined in the Soviet party newspaper <strong><em>Pravda</em></strong> on <strong>26 September 1968</strong> and proclaimed formally by Brezhnev in Warsaw in <strong>November 1968</strong>, this policy became known in the West as the <strong>Brezhnev Doctrine</strong>.
+              <p class="prose-p" style="font-size: 12.2pt; line-height: 1.48; margin-bottom: 0px;">Because Czechoslovakia had never threatened to leave the <strong>Warsaw Pact</strong>, <strong>Leonid Brezhnev</strong> needed a sweeping ideological justification for invading a fellow socialist ally. First outlined in the Soviet party newspaper <strong><em>Pravda</em></strong> on <strong>26 September 1968</strong> and proclaimed formally by Brezhnev in Warsaw in <strong>November 1968</strong>, this policy became known in the West as the <strong>Brezhnev Doctrine</strong>.
 
 Brezhnev declared that once a country had become socialist, communism was irreversible and its sovereignty remained subordinate to the survival of the wider Eastern Bloc. Whenever internal or external forces threatened <strong>one-party Communist rule</strong> or risked detaching any state from the <strong>Warsaw Pact</strong>, every Communist state had a collective right and duty to intervene militarily—locking Eastern European satellites under Kremlin obedience until <strong>Mikhail Gorbachev</strong> abandoned the doctrine in <strong>1989</strong>.</p>
             </div>
@@ -1879,7 +1891,7 @@ Brezhnev declared that once a country had become socialist, communism was irreve
             </div>
             <div class="spread-stage-q">“In what ways did the 1968 invasion affect superpower and Communist relations?”</div>
             <div class="block-prose">
-              <p class="prose-p" style="font-size: 12.2pt; line-height: 1.49; margin-bottom: 0px;">Internationally, Western reaction to the <strong>1968</strong> invasion proved loud in words yet restrained in deeds. US President <strong>Lyndon B. Johnson</strong> publicly condemned Soviet aggression and cancelled a planned disarmament summit in Moscow, while the USSR vetoed a <strong>UN Security Council</strong> resolution. However, tied down with <strong>500,000</strong> US troops in the <strong>Vietnam War</strong>, distracted by the <strong>1968</strong> presidential election, and honouring unspoken spheres of influence, Washington took zero military action.
+              <p class="prose-p" style="font-size: 12.2pt; line-height: 1.48; margin-bottom: 0px;">Internationally, Western reaction to the <strong>1968</strong> invasion proved loud in words yet restrained in deeds. US President <strong>Lyndon B. Johnson</strong> publicly condemned Soviet aggression and cancelled a planned disarmament summit in Moscow, while the USSR vetoed a <strong>UN Security Council</strong> resolution. However, tied down with <strong>500,000</strong> US troops in the <strong>Vietnam War</strong>, distracted by the <strong>1968</strong> presidential election, and honouring unspoken spheres of influence, Washington took zero military action.
 
 Paradoxically, the heaviest diplomatic blow hit the international <strong>Communist</strong> movement itself. Warsaw Pact member <strong>Romania</strong> under <strong>Nicolae Ceaușescu</strong> refused to send troops and joined <strong>Tito</strong>’s <strong>Yugoslavia</strong> and <strong>Mao Zedong</strong>’s <strong>China</strong> in denouncing Soviet imperialism. In Western Europe, the powerful French and Italian <strong>Communist</strong> Parties publicly condemned Moscow’s tanks—accelerating <strong>Eurocommunism</strong>, an independent democratic path free from Kremlin authority.</p>
             </div>

@@ -56,10 +56,11 @@ for (const [unitId, unitObj] of Object.entries(db)) {
       issues.missingLayer2Plates.push(`${ref}: only ${layer2Images.length} plate(s)`);
     }
 
-    // 3. Layer 3 Sources check
+    // 3. Layer 3 Sources check (KS2 = 3+ sources matching 3 narrative stages; KS3/GCSE = 5 sources)
     const sources = lesson.sources || [];
-    if (sources.length < 5) {
-      issues.missingLayer3Sources.push(`${ref}: only ${sources.length} source(s)`);
+    const minSources = unitId.startsWith('ks2_') ? 3 : 5;
+    if (sources.length < minSources) {
+      issues.missingLayer3Sources.push(`${ref}: only ${sources.length} source(s) (expected >= ${minSources})`);
     }
 
     const layer3Images = [];

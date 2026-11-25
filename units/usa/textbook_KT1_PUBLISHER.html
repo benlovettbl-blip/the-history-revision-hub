@@ -666,12 +666,24 @@
       white-space: nowrap;
     }
     .spread-stage-q {
+      break-after: avoid;
+      break-inside: avoid;
       font-family: 'Playfair Display', Georgia, serif;
       font-style: italic;
       font-size: 9.2pt;
       color: var(--acc-dark);
-      margin-bottom: 5px;
-      line-height: 1.3;
+      margin-bottom: 4.5px;
+      line-height: 1.28;
+    }
+    .page-lesson:not(.page-spread):not(.page-lesson-ks2) .spread-stage-q {
+      font-size: 8.15pt;
+      line-height: 1.22;
+      margin-bottom: 3px;
+    }
+    .page-lesson-ks2 .spread-stage-q {
+      font-size: 9.4pt;
+      line-height: 1.28;
+      margin-bottom: 4px;
     }
     .block-prose .prose-p {
       font-family: 'Lora', Georgia, serif;
@@ -1321,7 +1333,7 @@
     <div class="prose-wrap">
       <div class="prose-columns">
         
-          <div class="block-section spread-block" style="margin-bottom: 12.3px;">
+          <div class="block-section spread-block" style="margin-bottom: 11.3px;">
             <div class="block-hdr">
               <span class="stage-pill">STAGE 1</span>
               <span class="block-title">The Plessy v. Ferguson Precedent</span>
@@ -1329,7 +1341,7 @@
             </div>
             <div class="spread-stage-q">“How did the 1896 Plessy v. Ferguson ruling legalise Southern segregation?”</div>
             <div class="block-prose">
-              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.55; margin-bottom: 0px;">In the early 1950s, seventeen southern states and Washington D.C. enforced compulsory racial separation by law, known as <strong>de jure segregation</strong>. This institutional system was anchored in the 1896 ruling of the <strong>US Supreme Court</strong> in <em>Plessy v. Ferguson</em>, which established the constitutional doctrine of "separate but equal". Southern state statutes mandated racial separation across public transport, classrooms, healthcare facilities, and recreational spaces.
+              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.54; margin-bottom: 0px;">In the early 1950s, seventeen southern states and Washington D.C. enforced compulsory racial separation by law, known as <strong>de jure segregation</strong>. This institutional system was anchored in the 1896 ruling of the <strong>US Supreme Court</strong> in <em>Plessy v. Ferguson</em>, which established the constitutional doctrine of "separate but equal". Southern state statutes mandated racial separation across public transport, classrooms, healthcare facilities, and recreational spaces.
 
 Under the <strong>Plessy v. Ferguson</strong> precedent, southern municipal authorities insisted that racially segregated public accommodations fully satisfied the Fourteenth Amendment. In reality, public facilities designated for Black Americans were grossly inferior, dilapidated, and systematically starved of state tax funding. This legal fiction sustained an entrenched racial caste system that denied Black citizens basic constitutional dignity and equal protection across the American South.</p>
             </div>
@@ -1343,9 +1355,9 @@ Under the <strong>Plessy v. Ferguson</strong> precedent, southern municipal auth
             </div>
             <div class="spread-stage-q">“How did Jim Crow laws enforce daily subordination and disenfranchisement?”</div>
             <div class="block-prose">
-              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.55; margin-bottom: 0px;">Segregation across the South was sustained by an intricate network of state statutes and municipal ordinances known collectively as <strong>Jim Crow codes</strong>. Enacted by <strong>southern state legislatures</strong> following the collapse of Reconstruction, these punitive laws regulated every sphere of social, civic, and commercial life. Interracial marriage was strictly criminalized, while segregated waiting rooms, restrooms, and water fountains visibly degraded Black citizens daily.
+              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.54; margin-bottom: 0px;">Segregation and systemic <strong>racial discrimination</strong> across the South were sustained by an intricate network of state statutes and municipal ordinances known collectively as <strong>Jim Crow codes</strong>. Enacted by <strong>southern state legislatures</strong> following the collapse of Reconstruction, these punitive laws regulated every sphere of social, civic, and commercial life. Interracial marriage was strictly criminalised, while segregated waiting rooms, restrooms, and water fountains visibly degraded Black citizens daily.
 
-Crucially, Jim Crow was reinforced by total political <strong>disenfranchisement</strong>, stripping Black communities of any democratic leverage or legislative representation. Deprived of the ballot, Black southerners could not serve on criminal juries, influence local sheriffs, or challenge discriminatory municipal budgets. Any challenge to this white supremacist order was met with swift economic retaliation, police violence, and extrajudicial terror from white vigilantes.</p>
+Crucially, Jim Crow was reinforced by total political <strong>disenfranchisement</strong>, stripping Black communities of any democratic leverage or legislative representation. Deprived of the ballot in the Southern states, Black southerners could not serve on criminal juries, influence local sheriffs, or challenge discriminatory municipal budgets. Any challenge to this white supremacist order was met with swift economic retaliation, police violence, and extrajudicial terror from white vigilantes.</p>
             </div>
           </div>
       </div>
@@ -1375,7 +1387,7 @@ Crucially, Jim Crow was reinforced by total political <strong>disenfranchisement
     <div class="prose-wrap">
       <div class="prose-columns">
         
-          <div class="block-section spread-block" style="margin-bottom: 9px;">
+          <div class="block-section spread-block" style="margin-bottom: 8.6px;">
             <div class="block-hdr">
               <span class="stage-pill">STAGE 3</span>
               <span class="block-title">Systematic Voter Disenfranchisement</span>
@@ -1383,13 +1395,13 @@ Crucially, Jim Crow was reinforced by total political <strong>disenfranchisement
             </div>
             <div class="spread-stage-q">“How did poll taxes, literacy tests, and terror block Black voters?”</div>
             <div class="block-prose">
-              <p class="prose-p" style="font-size: 12.1pt; line-height: 1.48; margin-bottom: 0px;">Although the 15th Amendment constitutionally guaranteed that voting rights could not be denied based on race, southern states systematically suppressed the Black electorate. White registrar boards imposed discriminatory <strong>poll taxes and literacy tests</strong>, requiring impoverished Black sharecroppers to pay prohibitive fees and interpret archaic state constitutional clauses at the registrar's arbitrary whim, while poor white voters were shielded by grandfather clauses.
+              <p class="prose-p" style="font-size: 12.15pt; line-height: 1.48; margin-bottom: 0px;">Although the 15th Amendment constitutionally guaranteed that voting rights could not be denied based on race, southern states systematically suppressed the Black electorate. White registrar boards imposed discriminatory <strong>poll taxes and literacy tests</strong>, requiring impoverished Black sharecroppers to pay prohibitive fees and interpret archaic state constitutional clauses at the registrar's arbitrary whim, while poor white voters were shielded by grandfather clauses.
 
 When courageous Black citizens attempted to register, <strong>southern registrars and vigilantes</strong> collaborated to intimidate them through mortgage foreclosures, job dismissals, cross-burnings, and lethal violence. In response to this disenfranchisement, the <strong>NAACP legal strategy</strong> emerged, launching coordinated federal lawsuits to challenge unconstitutional voting barriers, demand federal voter protections, and establish binding judicial precedents enforcing the Fifteenth Amendment.</p>
             </div>
           </div>
 
-          <div class="block-section spread-block" style="margin-bottom: 9px;">
+          <div class="block-section spread-block" style="margin-bottom: 8.6px;">
             <div class="block-hdr">
               <span class="stage-pill">STAGE 4</span>
               <span class="block-title">Formation of NAACP Legal Defense</span>
@@ -1397,9 +1409,9 @@ When courageous Black citizens attempted to register, <strong>southern registrar
             </div>
             <div class="spread-stage-q">“How did NAACP court cases and CORE challenge segregation by 1950?”</div>
             <div class="block-prose">
-              <p class="prose-p" style="font-size: 12.1pt; line-height: 1.48; margin-bottom: 0px;">Confronting entrenched southern segregation, the National Association for the Advancement of Colored People pursued an incremental judicial strategy. Invoking the <strong>14th Amendment Equal Protection</strong> clause, chief counsel Thurgood Marshall argued before federal courts that segregated educational facilities were inherently unequal, securing breakthrough legal victories in higher education cases such as <em>Sweatt v. Painter</em> and <em>McLaurin v. Oklahoma State Regents</em> in 1950.
+              <p class="prose-p" style="font-size: 12.15pt; line-height: 1.48; margin-bottom: 0px;">Confronting entrenched southern segregation, the National Association for the Advancement of Colored People pursued an incremental judicial strategy. Invoking the <strong>14th Amendment Equal Protection</strong> clause, chief counsel Thurgood Marshall argued before federal courts that segregated educational facilities were inherently unequal, securing breakthrough legal victories in higher education cases such as <em>Sweatt v. Painter</em> and <em>McLaurin v. Oklahoma State Regents</em> in 1950.
 
-Operating through the specialized <strong>NAACP Legal Defense Fund</strong>, civil rights attorneys methodically dismantled the legal foundations of Jim Crow jurisprudence. Meanwhile, non-violent activist organizations like <strong>CORE</strong> (Congress of Racial Equality) pioneered direct challenge strategies through the 1947 Journey of Reconciliation, demonstrating that courtroom litigation and non-violent direct action were mutually reinforcing pillars in the growing national freedom struggle.</p>
+Operating through the specialised <strong>NAACP Legal Defense Fund</strong>, civil rights attorneys methodically dismantled the legal foundations of Jim Crow jurisprudence. Meanwhile, the tireless work of <strong>civil rights organisations</strong> such as <strong>CORE</strong> (Congress of Racial Equality) pioneered direct challenge strategies through the 1947 Journey of Reconciliation, demonstrating that courtroom litigation and non-violent direct action were mutually reinforcing pillars in the growing freedom struggle.</p>
             </div>
           </div>
 
@@ -1411,9 +1423,9 @@ Operating through the specialized <strong>NAACP Legal Defense Fund</strong>, civ
             </div>
             <div class="spread-stage-q">“Why did the Double V Campaign and Order 9981 fail to end Jim Crow?”</div>
             <div class="block-prose">
-              <p class="prose-p" style="font-size: 12.1pt; line-height: 1.48; margin-bottom: 0px;">Over one million African American soldiers served in the Second World War, fighting fascism abroad while enduring humiliating segregation within their own military units. Black newspapers mobilized the <strong>Double V Campaign</strong>, demanding simultaneous victory against totalitarianism overseas and victory against domestic racial tyranny at home. Returning Black veterans refused to accept pre-war subjugation, injecting new militancy, organizational discipline, and urgency into southern civil rights activism.
+              <p class="prose-p" style="font-size: 12.15pt; line-height: 1.48; margin-bottom: 0px;">Over one million African American soldiers served in the Second World War, fighting fascism abroad while enduring humiliating segregation within their own military units. Black newspapers mobilised the <strong>Double V Campaign</strong>, demanding simultaneous victory against totalitarianism overseas and victory against domestic racial tyranny at home. Returning Black veterans refused to accept pre-war subjugation, injecting new militancy, organisational discipline, and urgency into southern civil rights activism.
 
-Confronting intense pressure from civil rights leaders, President Harry S. Truman took historic executive action by signing <strong>Executive Order 9981</strong> in July 1948, officially desegregating the United States Armed Forces. However, <strong>federal desegregation limits</strong> left civilian Jim Crow laws entirely intact across southern states, convincing grassroots activists that courtroom rulings and presidential orders alone could never dismantle institutional racism without sustained mass mobilization.</p>
+Confronting intense pressure from civil rights leaders, President Harry S. Truman took historic executive action by signing <strong>Executive Order 9981</strong> in July 1948, officially desegregating the United States Armed Forces. However, <strong>federal desegregation limits</strong> left civilian Jim Crow laws entirely intact across southern states, convincing grassroots activists that courtroom rulings and presidential orders alone could never dismantle institutional racism without sustained mass mobilisation.</p>
             </div>
           </div>
       </div>
@@ -1477,7 +1489,7 @@ Confronting intense pressure from civil rights leaders, President Harry S. Truma
     <div class="prose-wrap">
       <div class="prose-columns">
         
-          <div class="block-section spread-block" style="margin-bottom: 12.3px;">
+          <div class="block-section spread-block" style="margin-bottom: 11.3px;">
             <div class="block-hdr">
               <span class="stage-pill">STAGE 1</span>
               <span class="block-title">The Brown v. Board Ruling</span>
@@ -1485,7 +1497,7 @@ Confronting intense pressure from civil rights leaders, President Harry S. Truma
             </div>
             <div class="spread-stage-q">“Why was the unanimous 1954 Brown v. Board ruling a legal turning point?”</div>
             <div class="block-prose">
-              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.55; margin-bottom: 0px;">In 1951, the NAACP consolidated five state legal challenges into the landmark class-action lawsuit <strong>Brown v. Board of Education</strong> of Topeka, Kansas. Oliver Brown challenged the school board after his daughter Linda was forced to travel across rail yards to a segregated Black school rather than attend a white school nearby. Chief counsel Thurgood Marshall argued that segregated public schooling violated the 14th Amendment's Equal Protection Clause.
+              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.54; margin-bottom: 0px;">In 1951, the NAACP consolidated five state legal challenges into the landmark class-action lawsuit <strong>Brown v. Board of Education</strong> of Topeka, Kansas. Oliver Brown challenged the school board after his daughter Linda was forced to travel across rail yards to a segregated Black school rather than attend a white school nearby. Chief counsel Thurgood Marshall argued that segregated public schooling violated the 14th Amendment's Equal Protection Clause.
 
 Marshall supported his constitutional argument with psychological evidence, citing the famous <strong>psychological doll tests</strong> conducted by Kenneth and Mamie Clark, which demonstrated that state-enforced segregation generated deep feelings of racial inferiority among Black children. On 17 May 1954, <strong>Chief Justice Earl Warren</strong> delivered a unanimous 9–0 verdict, declaring that "separate educational facilities are inherently unequal", legally overturning the <em>Plessy</em> doctrine in public education.</p>
             </div>
@@ -1499,7 +1511,7 @@ Marshall supported his constitutional argument with psychological evidence, citi
             </div>
             <div class="spread-stage-q">“How did Massive Resistance and "all deliberate speed" stall integration?”</div>
             <div class="block-prose">
-              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.55; margin-bottom: 0px;">The <em>Brown</em> ruling provoked furious defiance across the white South, sparking a regional campaign of obstruction championed by Senator Harry Byrd as <strong>Massive Resistance</strong>. In 1956, over one hundred southern congressmen signed the <strong>Southern Manifesto</strong>, condemning the Supreme Court for judicial tyranny and pledging to resist school desegregation by all lawful means. White Citizens' Councils expanded rapidly, using economic boycotts and intimidation to deter Black applicants.
+              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.54; margin-bottom: 0px;">The <em>Brown</em> ruling provoked furious defiance across the white South, sparking a regional campaign of obstruction championed by Senator Harry Byrd as <strong>Massive Resistance</strong>. In 1956, over one hundred southern congressmen signed the <strong>Southern Manifesto</strong>, condemning the Supreme Court for judicial tyranny and pledging to resist school desegregation by all lawful means. White Citizens' Councils expanded rapidly, using economic boycotts and intimidation to deter Black applicants.
 
 Southern opposition was further emboldened when the Supreme Court issued its 1955 implementation decree, known as <strong>Brown II 'all deliberate speed'</strong>. Because the Court failed to establish a firm compliance timetable, southern school boards exploited this ambiguous phrasing to delay integration indefinitely. By 1957, fewer than two percent of Black pupils in the former Confederacy attended racially integrated classrooms, rendering the original ruling practically unenforced.</p>
             </div>
@@ -1531,7 +1543,7 @@ Southern opposition was further emboldened when the Supreme Court issued its 195
     <div class="prose-wrap">
       <div class="prose-columns">
         
-          <div class="block-section spread-block" style="margin-bottom: 9px;">
+          <div class="block-section spread-block" style="margin-bottom: 8.4px;">
             <div class="block-hdr">
               <span class="stage-pill">STAGE 3</span>
               <span class="block-title">Faubus Blocks the Little Rock Nine</span>
@@ -1539,13 +1551,13 @@ Southern opposition was further emboldened when the Supreme Court issued its 195
             </div>
             <div class="spread-stage-q">“Why did Governor Faubus block the Little Rock Nine in September 1957?”</div>
             <div class="block-prose">
-              <p class="prose-p" style="font-size: 12.1pt; line-height: 1.48; margin-bottom: 0px;">In September 1957, the school board of Little Rock, Arkansas, scheduled nine courageous Black students—the <strong>Little Rock Nine</strong>—to desegregate the all-white Central High School. Facing a difficult re-election campaign, <strong>Governor Orval Faubus</strong> chose to exploit racial anxieties for political gain. Defying a federal court desegregation order, Faubus deployed the armed <strong>Arkansas National Guard</strong> to surround the school and block the students from entering.
+              <p class="prose-p" style="font-size: 12.1pt; line-height: 1.47; margin-bottom: 0px;">In September 1957, the school board of Little Rock, Arkansas, scheduled nine courageous Black students—the <strong>Little Rock Nine</strong>—to desegregate the all-white Central High School. Facing a difficult re-election campaign, <strong>Governor Orval Faubus</strong> chose to exploit racial anxieties for political gain. Defying a federal court desegregation order, Faubus deployed the armed <strong>Arkansas National Guard</strong> to surround the school and block the students from entering.
 
 On 4 September, fifteen-year-old Elizabeth Eckford arrived alone and was surrounded by a screaming white mob threatening to lynch her, while guardsmen pointed bayonets to turn her away. Television news cameras captured the terrifying spectacle of white adults spitting on a calm, solitary Black schoolgirl. The broadcast horrified international audiences, severely damaging American Cold War propaganda that championed Western democracy against Soviet totalitarianism.</p>
             </div>
           </div>
 
-          <div class="block-section spread-block" style="margin-bottom: 9px;">
+          <div class="block-section spread-block" style="margin-bottom: 8.4px;">
             <div class="block-hdr">
               <span class="stage-pill">STAGE 4</span>
               <span class="block-title">Eisenhower Deploys the 101st Airborne</span>
@@ -1553,7 +1565,7 @@ On 4 September, fifteen-year-old Elizabeth Eckford arrived alone and was surroun
             </div>
             <div class="spread-stage-q">“Why did Eisenhower send the 101st Airborne to Little Rock in 1957?”</div>
             <div class="block-prose">
-              <p class="prose-p" style="font-size: 12.1pt; line-height: 1.48; margin-bottom: 0px;">The brazen defiance of federal court orders by Governor Faubus created an intolerable constitutional crisis that forced <strong>President Dwight D. Eisenhower</strong> to intervene directly. Although personally reluctant to mandate social integration, Eisenhower recognized that open state insurrection threatened the supreme authority of the federal government. On 24 September 1957, the president signed <strong>Executive Order 10730</strong>, placing the Arkansas National Guard under direct presidential command.
+              <p class="prose-p" style="font-size: 12.1pt; line-height: 1.47; margin-bottom: 0px;">The brazen defiance of federal court orders by Governor Faubus created an intolerable constitutional crisis that forced <strong>President Dwight D. Eisenhower</strong> to intervene directly. Although personally reluctant to mandate social integration, Eisenhower recognised that open state insurrection threatened the supreme authority of the federal government. On 24 September 1957, the president signed <strong>Executive Order 10730</strong>, placing the Arkansas National Guard under direct presidential command.
 
 Eisenhower immediately dispatched one thousand elite paratroopers from the <strong>101st Airborne Division</strong> to Little Rock, stationing soldiers with fixed bayonets outside Central High. Federal troops escorted the nine Black teenagers through hostile crowds, guarding them between classes throughout the school year. This unprecedented federal intervention demonstrated that the executive branch would deploy military force to uphold federal court desegregation rulings against recalcitrant southern governors.</p>
             </div>
@@ -1567,7 +1579,7 @@ Eisenhower immediately dispatched one thousand elite paratroopers from the <stro
             </div>
             <div class="spread-stage-q">“What did Faubus’s 1958 "Lost Year" shutdown and Cooper v. Aaron prove?”</div>
             <div class="block-prose">
-              <p class="prose-p" style="font-size: 12.1pt; line-height: 1.48; margin-bottom: 0px;">Despite federal troop protection, the Little Rock Nine endured relentless physical and psychological harassment inside Central High from white students and teachers. In September 1958, Governor Faubus retaliated by closing all four Little Rock public high schools, initiating a crisis known as <strong>The Lost Year</strong>. Denying education to nearly four thousand teenagers, white authorities attempted to lease public school buildings to newly established, state-subsidized <strong>segregated private academies</strong>.
+              <p class="prose-p" style="font-size: 12.1pt; line-height: 1.47; margin-bottom: 0px;">Despite federal troop protection, the Little Rock Nine endured relentless physical and psychological harassment inside Central High from white students and teachers. In September 1958, Governor Faubus retaliated by closing all four Little Rock public high schools, initiating a crisis known as <strong>The Lost Year</strong>. Denying education to nearly four thousand teenagers, white authorities attempted to lease public school buildings to newly established, state-subsidised <strong>segregated private academies</strong>.
 
 The NAACP challenged the shutdown in federal court, securing the landmark Supreme Court ruling <strong>Cooper v. Aaron</strong> in September 1958, which firmly declared that state officials could not nullify federal desegregation orders through statutory evasions. In 1959, federal courts ordered Little Rock schools reopened on an integrated basis, delivering a critical defeat to Massive Resistance and affirming federal judicial supremacy across the nation.</p>
             </div>
@@ -1633,7 +1645,7 @@ The NAACP challenged the shutdown in federal court, securing the landmark Suprem
     <div class="prose-wrap">
       <div class="prose-columns">
         
-          <div class="block-section spread-block" style="margin-bottom: 12.3px;">
+          <div class="block-section spread-block" style="margin-bottom: 11.3px;">
             <div class="block-hdr">
               <span class="stage-pill">STAGE 1</span>
               <span class="block-title">The Arrest of Rosa Parks</span>
@@ -1641,7 +1653,7 @@ The NAACP challenged the shutdown in federal court, securing the landmark Suprem
             </div>
             <div class="spread-stage-q">“Why did Rosa Parks’s December 1955 arrest spark a bus boycott?”</div>
             <div class="block-prose">
-              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.55; margin-bottom: 0px;">On 1 December 1955 in Montgomery, Alabama, seasoned activist <strong>Rosa Parks</strong> boarded a city bus and sat in the 'colored' section. When the white rows filled, driver <strong>James F. Blake</strong> ordered Parks and three Black passengers to stand so a white man could sit. When Parks calmly refused to vacate her seat, Blake summoned police, who arrested and booked her.
+              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.54; margin-bottom: 0px;">On 1 December 1955 in Montgomery, Alabama, seasoned activist <strong>Rosa Parks</strong> boarded a city bus and sat in the 'colored' section. When the white rows filled, driver <strong>James F. Blake</strong> ordered Parks and three Black passengers to stand so a white man could sit. When Parks calmly refused to vacate her seat, Blake summoned police, who arrested and booked her.
 
 As secretary of the local NAACP, Parks possessed impeccable integrity that made her an ideal test plaintiff. Learning of her arrest, Jo Ann Robinson and the <strong>Women's Political Council (WPC)</strong> worked through the night, duplicating 35,000 leaflets calling on Montgomery's Black community to stage a one-day bus boycott on 5 December, the morning of Parks's trial.</p>
             </div>
@@ -1655,7 +1667,7 @@ As secretary of the local NAACP, Parks possessed impeccable integrity that made 
             </div>
             <div class="spread-stage-q">“How did the Montgomery Improvement Association and King unite protesters?”</div>
             <div class="block-prose">
-              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.55; margin-bottom: 0px;">On 5 December 1955, Rosa Parks was convicted of violating municipal segregation ordinances and fined ten dollars plus court costs. That afternoon, Black community leaders gathered to establish the <strong>Montgomery Improvement Association</strong> to coordinate a sustained citywide transport boycott. Looking for a dynamic, unifying spokesperson untainted by existing factional rivalries, the committee elected a twenty-six-year-old Baptist minister, Dr <strong>Martin Luther King Jr.</strong>, as its president.
+              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.54; margin-bottom: 0px;">On 5 December 1955, Rosa Parks was convicted of violating municipal segregation ordinances and fined ten dollars plus court costs. That afternoon, Black community leaders gathered to establish the <strong>Montgomery Improvement Association</strong> to coordinate a sustained citywide transport boycott. Looking for a dynamic, unifying spokesperson untainted by existing factional rivalries, the committee elected a twenty-six-year-old Baptist minister, Dr <strong>Martin Luther King Jr.</strong>, as its president.
 
 That evening, thousands of Black citizens crowded into the <strong>Holt Street Baptist Church</strong> and surrounding streets to hear King deliver a stirring address. King challenged the audience to protest with Christian love and disciplined non-violence, declaring that if they protested courageously, future generations would praise their struggle. The congregation voted enthusiastically to prolong the boycott indefinitely until municipal transit authorities agreed to treat Black passengers with dignity.</p>
             </div>
@@ -1687,7 +1699,7 @@ That evening, thousands of Black citizens crowded into the <strong>Holt Street B
     <div class="prose-wrap">
       <div class="prose-columns">
         
-          <div class="block-section spread-block" style="margin-bottom: 8.3px;">
+          <div class="block-section spread-block" style="margin-bottom: 7.9px;">
             <div class="block-hdr">
               <span class="stage-pill">STAGE 3</span>
               <span class="block-title">The 381-Day Carpool Operation</span>
@@ -1695,13 +1707,13 @@ That evening, thousands of Black citizens crowded into the <strong>Holt Street B
             </div>
             <div class="spread-stage-q">“How did the 300-car pool and Black churches sustain the 381-day boycott?”</div>
             <div class="block-prose">
-              <p class="prose-p" style="font-size: 11.95pt; line-height: 1.46; margin-bottom: 0px;">To sustain the boycott over months, the Montgomery Improvement Association established a highly sophisticated <strong>300-car pool network</strong>, operating forty-eight dispatch stations across the city. Black cab companies offered discounted fares matching bus tickets, while hundreds of volunteer drivers ferried workers and domestic servants to their jobs daily. Thousands of working-class men and women walked miles in all weather conditions, turning pedestrian travel into a badge of civic pride.
+              <p class="prose-p" style="font-size: 12pt; line-height: 1.46; margin-bottom: 0px;">To sustain the boycott over months, the Montgomery Improvement Association established a highly sophisticated <strong>300-car pool network</strong>, operating forty-eight dispatch stations across the city. Black cab companies offered discounted fares matching bus tickets, while hundreds of volunteer drivers ferried workers and domestic servants to their jobs daily. Thousands of working-class men and women walked miles in all weather conditions, turning pedestrian travel into a badge of civic pride.
 
 The financial backbone of this logistical operation was the southern <strong>Black church network</strong>, which raised weekly relief funds and supplied venues for strategy meetings. The boycott exerted severe <strong>economic attrition</strong> on Montgomery's private transit company, which lost approximately sixty-five percent of its passenger revenue. White downtown merchants suffered devastating financial losses as Black shoppers boycotted segregated commercial districts, fracturing white business support for municipal segregation.</p>
             </div>
           </div>
 
-          <div class="block-section spread-block" style="margin-bottom: 8.3px;">
+          <div class="block-section spread-block" style="margin-bottom: 7.9px;">
             <div class="block-hdr">
               <span class="stage-pill">STAGE 4</span>
               <span class="block-title">Browder v. Gayle Supreme Court Ruling</span>
@@ -1709,9 +1721,9 @@ The financial backbone of this logistical operation was the southern <strong>Bla
             </div>
             <div class="spread-stage-q">“Why was the November 1956 Browder v. Gayle Supreme Court ruling decisive?”</div>
             <div class="block-prose">
-              <p class="prose-p" style="font-size: 11.95pt; line-height: 1.46; margin-bottom: 0px;">Facing mounting economic pressure, Montgomery city officials attempted to crush the boycott through legal harassment, mass arrests of carpool drivers, and grand jury indictments under anti-conspiracy statutes. In response, NAACP attorneys bypassed local courts, filing a federal civil rights lawsuit on behalf of four Black women in <strong>Browder v. Gayle</strong>, arguing that segregated public transit violated the Equal Protection Clause of the Fourteenth Amendment.
+              <p class="prose-p" style="font-size: 12pt; line-height: 1.46; margin-bottom: 0px;">Facing mounting economic pressure, Montgomery city officials attempted to crush the boycott through legal harassment, mass arrests of carpool drivers, and grand jury indictments under anti-conspiracy statutes. In response, NAACP attorneys bypassed local courts, filing a federal civil rights lawsuit on behalf of four Black women in <strong>Browder v. Gayle</strong>, arguing that segregated public transit violated the Equal Protection Clause of the Fourteenth Amendment.
 
-In June 1956, a three-judge federal district court ruled municipal bus segregation unconstitutional. The city appealed, but on 13 November 1956, the <strong>US Supreme Court</strong> upheld the district ruling in <em>Browder v. Gayle</em>, striking down transit segregation. Capitalizing on this landmark victory, Dr King and southern Black ministers organized the <strong>SCLC founding</strong> (Southern Christian Leadership Conference) in January 1957 to coordinate non-violent campaigns across the South.</p>
+In June 1956, a three-judge federal district court ruled municipal bus segregation unconstitutional. The city appealed, but on 13 November 1956, the <strong>US Supreme Court</strong> upheld the district ruling in <em>Browder v. Gayle</em>, striking down transit segregation. Capitalising on this landmark victory, Dr King and southern Black ministers organised the <strong>SCLC founding</strong> (Southern Christian Leadership Conference) in January 1957 to coordinate non-violent campaigns across the South.</p>
             </div>
           </div>
 
@@ -1723,7 +1735,7 @@ In June 1956, a three-judge federal district court ruled municipal bus segregati
             </div>
             <div class="spread-stage-q">“What did Montgomery’s integrated buses prove despite white bombings?”</div>
             <div class="block-prose">
-              <p class="prose-p" style="font-size: 11.95pt; line-height: 1.46; margin-bottom: 0px;">On 20 December 1956, federal desegregation injunctions were formally served on Montgomery municipal officials, bringing the 381-day boycott to a triumphant conclusion. The following morning, Martin Luther King Jr., Ralph Abernathy, and E.D. Nixon boarded the city's first <strong>integrated bus transit</strong>, sitting in the front rows without incident. The boycott proved that disciplined collective economic boycotts could dismantle entrenched Jim Crow policies and win binding federal court protections.
+              <p class="prose-p" style="font-size: 12pt; line-height: 1.46; margin-bottom: 0px;">On 20 December 1956, federal desegregation injunctions were formally served on Montgomery municipal officials, bringing the 381-day boycott to a triumphant conclusion. The following morning, Martin Luther King Jr., Ralph Abernathy, and E.D. Nixon boarded the city's first <strong>integrated bus transit</strong>, sitting in the front rows without incident. The boycott proved that disciplined collective economic boycotts could dismantle entrenched Jim Crow policies and win binding federal court protections.
 
 However, integration triggered furious <strong>white backlash bombings</strong> from white supremacists, who dynamited Black churches, bombed King's family home, and fired snipers at desegregated buses, temporarily halting night transit service. Despite violent intimidation, the Black community maintained strict discipline, establishing <strong>non-violent direct action</strong> as the defining moral strategy of the modern civil rights movement and elevating King to national prominence as its chief philosopher and spokesperson.</p>
             </div>
@@ -1789,7 +1801,7 @@ However, integration triggered furious <strong>white backlash bombings</strong> 
     <div class="prose-wrap">
       <div class="prose-columns">
         
-          <div class="block-section spread-block" style="margin-bottom: 12.3px;">
+          <div class="block-section spread-block" style="margin-bottom: 11.3px;">
             <div class="block-hdr">
               <span class="stage-pill">STAGE 1</span>
               <span class="block-title">Formation of White Citizens' Councils</span>
@@ -1797,9 +1809,9 @@ However, integration triggered furious <strong>white backlash bombings</strong> 
             </div>
             <div class="spread-stage-q">“How did White Citizens’ Councils use economic reprisals after 1954?”</div>
             <div class="block-prose">
-              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.55; margin-bottom: 0px;">In the wake of the 1954 <em>Brown</em> decision, white southerners organized aggressive resistance networks across the region. In July 1954, plantation manager <strong>Robert B. Patterson</strong> founded the first chapter of the <strong>White Citizens' Councils</strong> in Indianola, Mississippi. Unlike the hooded night-riders of the Ku Klux Klan, council members were respectable civic elites, including wealthy bankers, plantation owners, judges, newspaper editors, and state politicians seeking to defend white supremacy.
+              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.54; margin-bottom: 0px;">In the wake of the 1954 <em>Brown</em> decision, white southerners organised aggressive resistance networks across the region. In July 1954, plantation manager <strong>Robert B. Patterson</strong> founded the first chapter of the <strong>White Citizens' Councils</strong> in Indianola, Mississippi. Unlike the hooded night-riders of the Ku Klux Klan, council members were respectable civic elites, including wealthy bankers, plantation owners, judges, newspaper editors, and state politicians seeking to defend white supremacy.
 
-Operating as an 'uptown Klan', the Councils specialized in calculated <strong>economic intimidation</strong> rather than overt vigilantism. Black sharecroppers, teachers, and business owners who signed integration petitions or attempted to register to vote were promptly fired from their jobs, evicted from tenant farms, and denied bank credit. By 1956, council membership surpassed sixty thousand across Mississippi, successfully purging hundreds of Black voters from county registration rolls.</p>
+Operating as an 'uptown Klan', the Councils specialised in calculated <strong>economic intimidation</strong> rather than overt vigilantism. Black sharecroppers, teachers, and business owners who signed integration petitions or attempted to register to vote were promptly fired from their jobs, evicted from tenant farms, and denied bank credit. By 1956, council membership surpassed sixty thousand across Mississippi, successfully purging hundreds of Black voters from county registration rolls.</p>
             </div>
           </div>
 
@@ -1811,9 +1823,9 @@ Operating as an 'uptown Klan', the Councils specialized in calculated <strong>ec
             </div>
             <div class="spread-stage-q">“Why did Emmett Till’s 1955 murder and open-casket funeral shock the nation?”</div>
             <div class="block-prose">
-              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.55; margin-bottom: 0px;">In August 1955, fourteen-year-old Emmett Till visited relatives in Money, Mississippi. Accused of whistling at Carolyn Bryant, a white shopkeeper, Till was abducted from his great-uncle's home by <strong>Roy Bryant and J.W. Milam</strong>. The two white men brutally beat the youth, gouged out his eye, shot him, and dumped his body into the Tallahatchie River weighted with a gin fan.
+              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.54; margin-bottom: 0px;">In August 1955, fourteen-year-old Emmett Till visited relatives in Money, Mississippi. Accused of whistling at Carolyn Bryant, a white shopkeeper, Till was abducted from his great-uncle's home by <strong>Roy Bryant and J.W. Milam</strong>. The two white men brutally beat the youth, gouged out his eye, shot him, and dumped his body into the Tallahatchie River weighted with a gin fan.
 
-When Till's mutilated corpse was retrieved, his mother held a <strong>Mamie Till-Mobley open casket</strong> funeral in Chicago attended by fifty thousand mourners. She insisted the world see the horrific reality of southern racial terror. Photographs published in <em>Jet</em> magazine shocked the nation, making the <strong>Emmett Till lynching</strong> a defining catalyst that galvanized the young civil rights generation.</p>
+When Till's mutilated corpse was retrieved, his mother held a <strong>Mamie Till-Mobley open casket</strong> funeral in Chicago attended by fifty thousand mourners. She insisted the world see the horrific reality of southern racial terror. Photographs published in <em>Jet</em> magazine shocked the nation, making the <strong>Emmett Till lynching</strong> a defining catalyst that galvanised the young civil rights generation.</p>
             </div>
           </div>
       </div>
@@ -1843,7 +1855,7 @@ When Till's mutilated corpse was retrieved, his mother held a <strong>Mamie Till
     <div class="prose-wrap">
       <div class="prose-columns">
         
-          <div class="block-section spread-block" style="margin-bottom: 8.5px;">
+          <div class="block-section spread-block" style="margin-bottom: 8.4px;">
             <div class="block-hdr">
               <span class="stage-pill">STAGE 3</span>
               <span class="block-title">The All-White Jury Acquittal</span>
@@ -1851,13 +1863,13 @@ When Till's mutilated corpse was retrieved, his mother held a <strong>Mamie Till
             </div>
             <div class="spread-stage-q">“What did the all-white jury acquittal and Look confession expose in 1955?”</div>
             <div class="block-prose">
-              <p class="prose-p" style="font-size: 12pt; line-height: 1.47; margin-bottom: 0px;">In September 1955, Roy Bryant and J.W. Milam stood trial for kidnapping and murder in Sumner, Mississippi. In an extraordinary act of southern courtroom courage, Emmett's sixty-four-year-old great-uncle, <strong>Moses Wright courtroom testimony</strong>, bravely rose on the witness stand, pointed his finger directly at the defendants, and publicly identified them as the armed men who abducted Emmett.
+              <p class="prose-p" style="font-size: 12.1pt; line-height: 1.47; margin-bottom: 0px;">In September 1955, Roy Bryant and J.W. Milam stood trial for kidnapping and murder in Sumner, Mississippi. In an extraordinary act of southern courtroom courage, Emmett's sixty-four-year-old great-uncle, <strong>Moses Wright courtroom testimony</strong>, bravely rose on the witness stand, pointed his finger directly at the defendants, and publicly identified them as the armed men who abducted Emmett.
 
 Despite compelling eyewitness testimony and medical evidence, the segregated panel delivered an <strong>all-white jury acquittal</strong> after just sixty-seven minutes. Four months later, protected from further prosecution by double jeopardy, Bryant and Milam sold their story to <em>Look</em> magazine for $4,000. Their brazen <strong>Look magazine confession</strong> bragging about the killing sparked intense moral outrage across northern states, exposing the utter corruption of Jim Crow justice.</p>
             </div>
           </div>
 
-          <div class="block-section spread-block" style="margin-bottom: 8.5px;">
+          <div class="block-section spread-block" style="margin-bottom: 8.4px;">
             <div class="block-hdr">
               <span class="stage-pill">STAGE 4</span>
               <span class="block-title">Resurgence of KKK Bombing Campaigns</span>
@@ -1865,7 +1877,7 @@ Despite compelling eyewitness testimony and medical evidence, the segregated pan
             </div>
             <div class="spread-stage-q">“Why did Ku Klux Klan dynamite attacks earn Birmingham a grim nickname?”</div>
             <div class="block-prose">
-              <p class="prose-p" style="font-size: 12pt; line-height: 1.47; margin-bottom: 0px;">Following the <em>Brown</em> ruling and the Montgomery bus boycott, white supremacist paramilitaries initiated a violent <strong>Ku Klux Klan resurgence</strong> across the Deep South. Abandoning cross-burnings for lethal explosive devices, radical Klansmen launched a systematic campaign of <strong>dynamite terrorism</strong> targeting civil rights leaders, NAACP offices, and Black community churches, terrorizing neighborhoods with impunity while local law enforcement officials shielded perpetrators from prosecution.
+              <p class="prose-p" style="font-size: 12.1pt; line-height: 1.47; margin-bottom: 0px;">Following the <em>Brown</em> ruling and the Montgomery bus boycott, white supremacist paramilitaries initiated a violent <strong>Ku Klux Klan resurgence</strong> across the Deep South. Abandoning cross-burnings for lethal explosive devices, radical Klansmen launched a systematic campaign of <strong>dynamite terrorism</strong> targeting civil rights leaders, NAACP offices, and Black community churches, terrorizing neighbourhoods with impunity while local law enforcement officials shielded perpetrators from prosecution.
 
 Nowhere was this white supremacist terror more concentrated than in Alabama's largest industrial city, producing the notorious <strong>Birmingham bombing wave</strong>. Klansmen detonated over fifty explosive devices in Black residential areas between 1947 and 1965, earning the city the grim moniker "Bombingham". The targeted bombing of prominent minister Fred Shuttlesworth's home on Christmas Day 1956 exposed the federal government's complete failure to protect Black citizens from domestic paramilitary violence.</p>
             </div>
@@ -1879,9 +1891,9 @@ Nowhere was this white supremacist terror more concentrated than in Alabama's la
             </div>
             <div class="spread-stage-q">“Why did the watered-down Civil Rights Act of 1957 register so few voters?”</div>
             <div class="block-prose">
-              <p class="prose-p" style="font-size: 12pt; line-height: 1.47; margin-bottom: 0px;">In response to international outrage over southern racial violence, the Eisenhower administration proposed the <strong>Civil Rights Act of 1957</strong>, the first federal civil rights legislation enacted since Reconstruction. Seeking to court moderate northern voters before the 1958 elections, Eisenhower aimed to strengthen federal voter protections. However, southern segregationists mounted fierce resistance, led by South Carolina Senator <strong>Strom Thurmond filibuster</strong>, who spoke continuously for over twenty-four hours to block the bill.
+              <p class="prose-p" style="font-size: 12.1pt; line-height: 1.47; margin-bottom: 0px;">In response to international outrage over southern racial violence, the Eisenhower administration proposed the <strong>Civil Rights Act of 1957</strong>, the first federal civil rights legislation enacted since Reconstruction. Seeking to bolster voter protections, Eisenhower confronted fierce opposition to desegregation in the South from segregationist Southern Democrats—known as <strong>‘Dixiecrats’</strong>—exemplified by South Carolina Senator <strong>Strom Thurmond filibuster</strong> lasting over twenty-four hours.
 
-To overcome southern opposition, Senate Majority Leader Lyndon B. Johnson heavily amended the bill, stripping enforcement provisions and mandating jury trials for contempt charges in voting rights cases. Consequently, <strong>Voting Rights Division weakness</strong> within the Department of Justice prevented federal prosecutors from securing convictions before biased southern white juries, adding fewer than three percent of eligible Black voters to registration rolls by 1960.</p>
+To overcome Dixiecrat obstruction, Senate Majority Leader Lyndon B. Johnson heavily amended the bill, stripping key enforcement clauses and mandating jury trials for contempt charges in voting rights cases. Consequently, <strong>Voting Rights Division weakness</strong> within the Department of Justice prevented federal prosecutors from securing convictions before biased southern white juries, adding fewer than three percent of eligible Black voters to registration rolls by 1960.</p>
             </div>
           </div>
       </div>

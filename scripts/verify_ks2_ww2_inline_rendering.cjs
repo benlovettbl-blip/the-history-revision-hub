@@ -3,8 +3,8 @@
  *
  * Verifies live browser rendering for all 11 lessons of ks2_ww2:
  * - Sources dumped outside narrative blocks MUST be 0
- * - Sources inside narrative blocks MUST be exactly 5
- * - Narrative visual support plates MUST be 2
+ * - Sources inside narrative blocks MUST be exactly 3 (1-to-1 with 3 KS2 narrative stages)
+ * - Narrative visual support plates MUST be >= 2
  * - Broken local images MUST be 0
  */
 
@@ -62,9 +62,9 @@ const puppeteer = require('puppeteer');
     });
 
     const isSuccess =
-      check.insideSourcesCount === 5 &&
+      check.insideSourcesCount === 3 &&
       check.outsideSourcesCount === 0 &&
-      check.platesCount === 2 &&
+      check.platesCount >= 2 &&
       check.brokenLocalCount === 0;
 
     if (!isSuccess) allPassed = false;
@@ -73,8 +73,8 @@ const puppeteer = require('puppeteer');
     console.log(
       `${icon} Lesson ${l.toString().padStart(2, ' ')}: ` +
       `Blocks: ${check.blocksCount} | ` +
-      `Plates: ${check.platesCount}/2 | ` +
-      `Sources Inline: ${check.insideSourcesCount}/5 | ` +
+      `Plates: ${check.platesCount} | ` +
+      `Sources Inline: ${check.insideSourcesCount}/3 | ` +
       `Sources Outside: ${check.outsideSourcesCount} | ` +
       `Broken Imgs: ${check.brokenLocalCount}`
     );

@@ -489,10 +489,19 @@ function renderSinglePageLessonHtml(cfg, lesson, lIdx, pageNum, totalPages, isKs
     })
     .join('\n');
 
+  const cdsStages = Array.isArray(lesson.causal_domino_spine?.stages) ? lesson.causal_domino_spine.stages : [];
   const blocksHtml = blocks
     .map((b, bIdx) => {
       const bTitle = normalizeHeadingPunctuation(stripTrailingDate(b.title || b.heading || `Stage ${bIdx + 1}`));
       const bDate = extractDateFromTitle(b.title || b.heading || '') || wbStages[bIdx]?.date || wbStages[bIdx]?.dates || '';
+      const stageQ = stripTags(
+        wbStages[bIdx]?.question ||
+        wbStages[bIdx]?.questionHeading ||
+        cdsStages[bIdx]?.question ||
+        wbStages[bIdx]?.focus_clue ||
+        wbStages[bIdx]?.heading ||
+        ''
+      );
       const parasHtml = formatBlockParagraphs(b);
       return `
         <div class="block-section">
@@ -501,6 +510,7 @@ function renderSinglePageLessonHtml(cfg, lesson, lIdx, pageNum, totalPages, isKs
             <span class="block-title">${esc(bTitle)}</span>
             ${bDate ? `<span class="block-date">${esc(bDate)}</span>` : ''}
           </div>
+          ${stageQ && stageQ !== bTitle && stageQ.includes('?') ? `<div class="spread-stage-q">“${esc(stageQ)}”</div>` : ''}
           <div class="block-prose">
             ${parasHtml}
           </div>
@@ -1775,12 +1785,24 @@ async function buildUnitHtml(cfg) {
       white-space: nowrap;
     }
     .spread-stage-q {
+      break-after: avoid;
+      break-inside: avoid;
       font-family: 'Playfair Display', Georgia, serif;
       font-style: italic;
       font-size: 9.2pt;
       color: var(--acc-dark);
-      margin-bottom: 5px;
-      line-height: 1.3;
+      margin-bottom: 4.5px;
+      line-height: 1.28;
+    }
+    .page-lesson:not(.page-spread):not(.page-lesson-ks2) .spread-stage-q {
+      font-size: 8.15pt;
+      line-height: 1.22;
+      margin-bottom: 3px;
+    }
+    .page-lesson-ks2 .spread-stage-q {
+      font-size: 9.4pt;
+      line-height: 1.28;
+      margin-bottom: 4px;
     }
     .block-prose .prose-p {
       font-family: 'Lora', Georgia, serif;
@@ -2068,15 +2090,15 @@ async function calibrateAndAuditInBrowser(page) {
       const secs = Array.from(pg.querySelectorAll('.block-section'));
       if (!ftr || !cols || !paras.length) return;
 
-      const minPt = isSpread ? 11.2 : isKs2 ? 11.2 : 9.8;
+      const minPt = isSpread ? 11.0 : isKs2 ? 11.0 : 9.4;
       const maxPt = isSpread ? 12.8 : isKs2 ? 13.4 : 12.1;
 
       let chosen = null;
       for (let pt = minPt; pt <= maxPt; pt += 0.05) {
         const t = (pt - minPt) / Math.max(0.5, maxPt - minPt);
-        const lh = ((isKs2 ? 1.56 : 1.38) + t * 0.18).toFixed(2);
-        const secMb = ((isKs2 ? 9.0 : 4.5) + t * (isSpread ? 8.0 : 5.5)).toFixed(1);
-        const pMb = (3.0 + t * 3.5).toFixed(1);
+        const lh = ((isKs2 ? 1.52 : 1.35) + t * 0.20).toFixed(2);
+        const secMb = ((isKs2 ? 7.5 : 3.5) + t * (isSpread ? 8.0 : 6.0)).toFixed(1);
+        const pMb = (2.5 + t * 3.8).toFixed(1);
 
         paras.forEach((p) => {
           p.style.fontSize = pt.toFixed(2) + 'pt';
@@ -2090,7 +2112,7 @@ async function calibrateAndAuditInBrowser(page) {
         const ftrTop = ftr.getBoundingClientRect().top;
         const childBottom = Math.max(
           cols.getBoundingClientRect().bottom,
-          ...Array.from(cols.querySelectorAll('p, .block-hdr')).map((el) => el.getBoundingClientRect().bottom)
+          ...Array.from(cols.querySelectorAll('p, .block-hdr, .spread-stage-q')).map((el) => el.getBoundingClientRect().bottom)
         );
         const clearance = ftrTop - childBottom;
         const pageOverflow = pg.scrollHeight - pg.clientHeight;
@@ -2337,12 +2359,16 @@ async function compileUnit(registryKey, browserInstance = null) {
       margin: { top: 0, right: 0, bottom: 0, left: 0 },
     });
 
-    // Also keep KS2 nested subfolder PDF synced if present
+    // Also keep KS2 nested subfolder PDF and any *_PUBLISHER.pdf mirror synced if present
     if (registryKey === 'ks2_ww2') {
       const nestedKs2 = path.join(PUBLIC_DIR, 'pdfs', 'ks2_ww2', 'ks2_ww2_textbook.pdf');
       if (fs.existsSync(path.dirname(nestedKs2))) {
         fs.copyFileSync(pdfOutPath, nestedKs2);
       }
+    }
+    const pubMirrorPdf = pdfOutPath.replace(/\.pdf$/, '_PUBLISHER.pdf');
+    if (fs.existsSync(pubMirrorPdf)) {
+      fs.copyFileSync(pdfOutPath, pubMirrorPdf);
     }
 
     await page.close();

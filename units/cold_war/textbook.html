@@ -666,12 +666,24 @@
       white-space: nowrap;
     }
     .spread-stage-q {
+      break-after: avoid;
+      break-inside: avoid;
       font-family: 'Playfair Display', Georgia, serif;
       font-style: italic;
       font-size: 9.2pt;
       color: var(--acc-dark);
-      margin-bottom: 5px;
-      line-height: 1.3;
+      margin-bottom: 4.5px;
+      line-height: 1.28;
+    }
+    .page-lesson:not(.page-spread):not(.page-lesson-ks2) .spread-stage-q {
+      font-size: 8.15pt;
+      line-height: 1.22;
+      margin-bottom: 3px;
+    }
+    .page-lesson-ks2 .spread-stage-q {
+      font-size: 9.4pt;
+      line-height: 1.28;
+      margin-bottom: 4px;
     }
     .block-prose .prose-p {
       font-family: 'Lora', Georgia, serif;
@@ -1378,7 +1390,7 @@
     <div class="prose-wrap">
       <div class="prose-columns">
         
-          <div class="block-section spread-block" style="margin-bottom: 12.3px;">
+          <div class="block-section spread-block" style="margin-bottom: 11.3px;">
             <div class="block-hdr">
               <span class="stage-pill">STAGE 1</span>
               <span class="block-title">Incompatible Worldviews: Free Market Capitalism vs Command Socialism</span>
@@ -1386,7 +1398,7 @@
             </div>
             <div class="spread-stage-q">“Why were US capitalism and Soviet command socialism incompatible?”</div>
             <div class="block-prose">
-              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.55; margin-bottom: 0px;">In 1945, the vast destruction of the Second World War shattered the old European balance of power. Two military giants emerged above the ruins: the <strong>United States of America</strong> and the <strong>Union of Soviet Socialist Republics (USSR)</strong>. Although both states had fought together as wartime allies against Adolf Hitler, their uneasy partnership broke immediately over clashing post-war goals.
+              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.54; margin-bottom: 0px;">In 1945, the vast destruction of the Second World War shattered the old European balance of power. Two military giants emerged above the ruins: the <strong>United States of America</strong> and the <strong>Union of Soviet Socialist Republics (USSR)</strong>. Although both states had fought together as wartime allies against Adolf Hitler, their uneasy partnership broke immediately over clashing post-war goals.
 
 The United States backed <strong>free-market capitalism</strong>, an economy built on private business, open trade, and personal wealth. By contrast, the Soviet Union enforced Marxist-Leninist socialism. Private property was abolished, and central state planners in Moscow ran all factories, banks, and farms, making lasting peaceful <strong>coexistence</strong> hard to sustain.</p>
             </div>
@@ -1400,7 +1412,7 @@ The United States backed <strong>free-market capitalism</strong>, an economy bui
             </div>
             <div class="spread-stage-q">“How did Soviet one-party rule clash with Western liberal democracy?”</div>
             <div class="block-prose">
-              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.55; margin-bottom: 0px;">Deep political differences sharpened this economic divide. The United States was a <strong>constitutional liberal democracy</strong> based on free adult voting, rival political parties, an uncensored press, and civil liberties protected by law. Americans viewed permanent one-party state rule as tyranny.
+              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.54; margin-bottom: 0px;">Deep political differences sharpened this economic divide. The United States was a <strong>constitutional liberal democracy</strong> based on free adult voting, rival political parties, an uncensored press, and civil liberties protected by law. Americans viewed permanent one-party state rule as tyranny.
 
 Conversely, the USSR was a <strong>totalitarian one-party dictatorship</strong> ruled solely by the Communist Party Politburo. Soviet <strong>ideology</strong> dismissed Western parliamentary democracies as a bourgeois sham designed to exploit workers, claiming true freedom required the <strong>dictatorship of the proletariat</strong>. As Moscow crushed internal dissent at home, mutual suspicion deepened.</p>
             </div>
@@ -1432,7 +1444,7 @@ Conversely, the USSR was a <strong>totalitarian one-party dictatorship</strong> 
     <div class="prose-wrap">
       <div class="prose-columns">
         
-          <div class="block-section spread-block" style="margin-bottom: 12.3px;">
+          <div class="block-section spread-block" style="margin-bottom: 11.3px;">
             <div class="block-hdr">
               <span class="stage-pill">STAGE 3</span>
               <span class="block-title">Historical Grievances: 1917 Intervention, Appeasement &amp; The Nazi-Soviet Pact</span>
@@ -1440,13 +1452,13 @@ Conversely, the USSR was a <strong>totalitarian one-party dictatorship</strong> 
             </div>
             <div class="spread-stage-q">“Why did 1917 intervention and the 1939 Nazi-Soviet Pact breed mistrust?”</div>
             <div class="block-prose">
-              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.55; margin-bottom: 0px;">Superpower distrust also grew from decades of bitter memories before 1945. After the <strong>Bolshevik Revolution of 1917</strong>, Britain, France, and America intervened in the Russian Civil War, sending troops to help anti-Bolshevik White armies. Vladimir Lenin and Joseph Stalin never forgot that Western intervention, and 1930s Western appeasement of Hitler convinced Stalin the West wanted Russia destroyed.
+              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.54; margin-bottom: 0px;">Superpower distrust also grew from decades of bitter memories before 1945. After the <strong>Bolshevik Revolution of 1917</strong>, Britain, France, and America intervened in the Russian Civil War, sending troops to help anti-Bolshevik White armies. Vladimir Lenin and Joseph Stalin never forgot that Western intervention, and 1930s Western appeasement of Hitler convinced Stalin the West wanted Russia destroyed.
 
 Western leaders felt equally betrayed in August 1939 when Stalin signed the cynical <strong>Nazi-Soviet Pact</strong> with Hitler. Dividing Poland and shipping Soviet oil and grain to Germany while London endured the Blitz left lasting bitterness. Once Hitler fell in 1945, those old wounds returned with force.</p>
             </div>
           </div>
 
-          <div class="block-section spread-block" style="margin-bottom: 12.3px;">
+          <div class="block-section spread-block" style="margin-bottom: 11.3px;">
             <div class="block-hdr">
               <span class="stage-pill">STAGE 4</span>
               <span class="block-title">The Nuclear Monopoly &amp; The Emerging Balance of Terror</span>
@@ -1454,7 +1466,7 @@ Western leaders felt equally betrayed in August 1939 when Stalin signed the cyni
             </div>
             <div class="spread-stage-q">“How did America’s 1945 nuclear monopoly trigger a superpower arms race?”</div>
             <div class="block-prose">
-              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.55; margin-bottom: 0px;">Atomic weapons transformed post-war <strong>containment</strong> and superpower rivalry. On 16 July 1945, Manhattan Project scientists tested the first atomic bomb at Trinity in New Mexico. When President <strong>Harry S. Truman</strong> dropped atomic bombs on Hiroshima and Nagasaki in August 1945 to force Japan's surrender, the United States held a temporary <strong>nuclear monopoly</strong>.
+              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.54; margin-bottom: 0px;">Atomic weapons transformed post-war <strong>containment</strong> and superpower rivalry. On 16 July 1945, Manhattan Project scientists tested the first atomic bomb at Trinity in New Mexico. When President <strong>Harry S. Truman</strong> dropped atomic bombs on Hiroshima and Nagasaki in August 1945 to force Japan's surrender, the United States held a temporary <strong>nuclear monopoly</strong>.
 
 Joseph Stalin saw that monopoly not merely as a way to end the war, but as an explicit instrument of atomic blackmail designed to intimidate Moscow in Europe. Refusing to back down, Stalin ordered Soviet physicists to build their own bomb at top speed, sparking a dangerous <strong>nuclear arms race</strong>.</p>
             </div>
@@ -1468,7 +1480,7 @@ Joseph Stalin saw that monopoly not merely as a way to end the war, but as an ex
             </div>
             <div class="spread-stage-q">“Why did Europe’s 1945 power vacuum turn wartime allies into rivals?”</div>
             <div class="block-prose">
-              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.55; margin-bottom: 0px;">By late 1945, Europe's ruined states left a vast power vacuum across the continent. Meeting along the River Elbe in Germany, the Soviet <strong>Red Army</strong> and the Western Allies stood face to face across a shattered land. Both sides wanted security, yet each read the other's defensive moves as plans for war.
+              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.54; margin-bottom: 0px;">By late 1945, Europe's ruined states left a vast power vacuum across the continent. Meeting along the River Elbe in Germany, the Soviet <strong>Red Army</strong> and the Western Allies stood face to face across a shattered land. Both sides wanted security, yet each read the other's defensive moves as plans for war.
 
 A tense <strong>bipolar superpower rivalry</strong> soon replaced older multi-power diplomacy. Across divided spheres of influence in Europe separating East from West, only fear of total nuclear destruction stopped open fighting. As French thinker Raymond Aron observed of this new deadlock, peace had become impossible, yet total war remained unlikely.</p>
             </div>
@@ -1534,7 +1546,7 @@ A tense <strong>bipolar superpower rivalry</strong> soon replaced older multi-po
     <div class="prose-wrap">
       <div class="prose-columns">
         
-          <div class="block-section spread-block" style="margin-bottom: 12.3px;">
+          <div class="block-section spread-block" style="margin-bottom: 11.3px;">
             <div class="block-hdr">
               <span class="stage-pill">STAGE 1</span>
               <span class="block-title">The Yalta Summit (February 1945): The Big Three's Fragile Consensus</span>
@@ -1542,7 +1554,7 @@ A tense <strong>bipolar superpower rivalry</strong> soon replaced older multi-po
             </div>
             <div class="spread-stage-q">“What key compromises did the Big Three agree at Yalta in February 1945?”</div>
             <div class="block-prose">
-              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.55; margin-bottom: 0px;">In February 1945, as Allied armies closed in on Nazi Germany from east and west, the Big Three met at the Crimean resort of Yalta. US President <strong>Franklin D. Roosevelt</strong>, British Prime Minister <strong>Winston Churchill</strong>, and Soviet Premier <strong>Joseph Stalin</strong> gathered at the Livadia Palace to plan post-war Europe.
+              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.54; margin-bottom: 0px;">In February 1945, as Allied armies closed in on Nazi Germany from east and west, the Big Three met at the Crimean resort of Yalta. US President <strong>Franklin D. Roosevelt</strong>, British Prime Minister <strong>Winston Churchill</strong>, and Soviet Premier <strong>Joseph Stalin</strong> gathered at the Livadia Palace to plan post-war Europe.
 
 They agreed on vital compromises. Defeated Germany would surrender unconditionally, disarm, and split into four occupation zones run by Britain, the US, the USSR, and France, with Berlin divided too. Stalin also agreed to join the new <strong>United Nations</strong> to keep world peace and to enter the war against Japan.</p>
             </div>
@@ -1556,7 +1568,7 @@ They agreed on vital compromises. Defeated Germany would surrender unconditional
             </div>
             <div class="spread-stage-q">“Why did rival Polish governments fracture Allied trust after Yalta?”</div>
             <div class="block-prose">
-              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.55; margin-bottom: 0px;">Beneath polite smiles at Yalta lay sharp disputes over Poland's borders and <strong>self-determination</strong>. Britain had gone to war in September 1939 to protect Polish sovereignty and backed the exiled London Poles. Having lost twenty-seven million wartime casualties, however, Stalin demanded a friendly <strong>buffer zone</strong> along Russia's western border to block future invasions.
+              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.54; margin-bottom: 0px;">Beneath polite smiles at Yalta lay sharp disputes over Poland's borders and <strong>self-determination</strong>. Britain had gone to war in September 1939 to protect Polish sovereignty and backed the exiled London Poles. Having lost twenty-seven million wartime casualties, however, Stalin demanded a friendly <strong>buffer zone</strong> along Russia's western border to block future invasions.
 
 Roosevelt persuaded Stalin to sign the <strong>Declaration on Liberated Europe</strong>, promising free democratic elections across freed nations. Yet Stalin installed the rival <strong>Lublin Polish Communist Government</strong> against the London Poles, sidelining democratic leaders and wrecking Western trust in Kremlin promises.</p>
             </div>
@@ -1588,7 +1600,7 @@ Roosevelt persuaded Stalin to sign the <strong>Declaration on Liberated Europe</
     <div class="prose-wrap">
       <div class="prose-columns">
         
-          <div class="block-section spread-block" style="margin-bottom: 12.3px;">
+          <div class="block-section spread-block" style="margin-bottom: 11.3px;">
             <div class="block-hdr">
               <span class="stage-pill">STAGE 3</span>
               <span class="block-title">Changing of the Guard: Truman, Attlee, and Stalin at Potsdam</span>
@@ -1596,13 +1608,13 @@ Roosevelt persuaded Stalin to sign the <strong>Declaration on Liberated Europe</
             </div>
             <div class="spread-stage-q">“How did Truman and Attlee alter diplomacy with Stalin at Potsdam?”</div>
             <div class="block-prose">
-              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.55; margin-bottom: 0px;">When Allied leaders met again at Potsdam outside ruined Berlin in July 1945, leadership had changed sharply. Roosevelt had died suddenly in April, bringing Vice President <strong>Harry S. Truman</strong> into the White House. Tough-talking and staunchly anti-communist, Truman viewed Soviet actions in Eastern Europe with deep anger.
+              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.54; margin-bottom: 0px;">When Allied leaders met again at Potsdam outside ruined Berlin in July 1945, leadership had changed sharply. Roosevelt had died suddenly in April, bringing Vice President <strong>Harry S. Truman</strong> into the White House. Tough-talking and staunchly anti-communist, Truman viewed Soviet actions in Eastern Europe with deep anger.
 
 Halfway through the summit, Winston Churchill lost the British general election and Labour Prime Minister <strong>Clement Attlee</strong> took his seat. Only <strong>Joseph Stalin</strong> remained from Yalta. With the common Nazi threat gone, the wartime Grand Alliance frayed as talks between Truman, Attlee, and Stalin grew openly bitter.</p>
             </div>
           </div>
 
-          <div class="block-section spread-block" style="margin-bottom: 12.3px;">
+          <div class="block-section spread-block" style="margin-bottom: 11.3px;">
             <div class="block-hdr">
               <span class="stage-pill">STAGE 4</span>
               <span class="block-title">The Trinity Test &amp; Truman's Atomic Diplomatic Leverage</span>
@@ -1610,7 +1622,7 @@ Halfway through the summit, Winston Churchill lost the British general election 
             </div>
             <div class="spread-stage-q">“Why did Truman’s atomic warning at Potsdam deepen Stalin’s suspicion?”</div>
             <div class="block-prose">
-              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.55; margin-bottom: 0px;">On 16 July 1945 — the eve of Potsdam — American Manhattan Project scientists set off the <strong>Trinity nuclear test</strong> in the New Mexico desert. Confident in America's new <strong>atomic monopoly</strong>, President <strong>Harry S. Truman</strong> took a firmer line at the table, hoping atomic power would push Moscow into concessions across Eastern Europe and the Far East.
+              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.54; margin-bottom: 0px;">On 16 July 1945 — the eve of Potsdam — American Manhattan Project scientists set off the <strong>Trinity nuclear test</strong> in the New Mexico desert. Confident in America's new <strong>atomic monopoly</strong>, President <strong>Harry S. Truman</strong> took a firmer line at the table, hoping atomic power would push Moscow into concessions across Eastern Europe and the Far East.
 
 During a break on 24 July, Truman privately told Premier <strong>Joseph Stalin</strong> that the United States possessed <em>"a new weapon of unusual destructive force"</em>. Stalin showed little surprise because Soviet spies had already briefed him, yet Truman's atomic diplomacy convinced Stalin that Washington wanted to bully the Soviet Union.</p>
             </div>
@@ -1624,7 +1636,7 @@ During a break on 24 July, Truman privately told Premier <strong>Joseph Stalin</
             </div>
             <div class="spread-stage-q">“How did disputes over German reparations fracture the Grand Alliance?”</div>
             <div class="block-prose">
-              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.55; margin-bottom: 0px;">German <strong>reparations</strong> caused the sharpest clash at Potsdam. Because Nazi armies had wrecked western Russia, Stalin demanded <strong>$20 billion</strong> in German reparations, with $10 billion going straight to the USSR from industrial zones. Remembering how crushing reparations had wrecked the Weimar Republic after 1919, Truman and Attlee refused.
+              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.54; margin-bottom: 0px;">German <strong>reparations</strong> caused the sharpest clash at Potsdam. Because Nazi armies had wrecked western Russia, Stalin demanded <strong>$20 billion</strong> in German reparations, with $10 billion going straight to the USSR from industrial zones. Remembering how crushing reparations had wrecked the Weimar Republic after 1919, Truman and Attlee refused.
 
 Instead, the four powers agreed through the <strong>Allied Control Council</strong> that each occupier would take reparations mainly from its own zone. Meanwhile, the USSR traded eastern food for some western factory equipment. By late 1945, the wartime <strong>Grand Alliance</strong> was dead, leaving rival <strong>spheres of influence</strong> hardened across Europe.</p>
             </div>
@@ -1690,7 +1702,7 @@ Instead, the four powers agreed through the <strong>Allied Control Council</stro
     <div class="prose-wrap">
       <div class="prose-columns">
         
-          <div class="block-section spread-block" style="margin-bottom: 12.3px;">
+          <div class="block-section spread-block" style="margin-bottom: 11.3px;">
             <div class="block-hdr">
               <span class="stage-pill">STAGE 1</span>
               <span class="block-title">Churchill's Fulton Speech: The Descent of the Iron Curtain</span>
@@ -1698,7 +1710,7 @@ Instead, the four powers agreed through the <strong>Allied Control Council</stro
             </div>
             <div class="spread-stage-q">“Why did Soviet satellite states prompt Churchill’s 1946 Fulton speech?”</div>
             <div class="block-prose">
-              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.55; margin-bottom: 0px;">Between 1945 and 1947, Moscow tightened its grip across Eastern Europe. Using what Hungarian communist Mátyás Rákosi called <strong>"salami tactics"</strong>, Soviet-backed communists sliced away rival parties one by one. Rigged elections and secret police arrests created loyal satellite states across Poland, Romania, Bulgaria, Hungary, and Albania.
+              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.54; margin-bottom: 0px;">Between 1945 and 1947, Moscow tightened its grip across Eastern Europe. Using what Hungarian communist Mátyás Rákosi called <strong>"salami tactics"</strong>, Soviet-backed communists sliced away rival parties one by one. Rigged elections and secret police arrests created loyal satellite states across Poland, Romania, Bulgaria, Hungary, and Albania.
 
 In March 1946, <strong>Winston Churchill</strong> spoke alongside President Truman at Westminster College in Fulton, Missouri. Warning that <em>"an <strong>iron curtain</strong> has descended across the Continent"</em>, he defined the divide between democratic freedoms and Soviet tyranny across the European continent. Stalin hit back angrily in <em>Pravda</em>, branding Churchill a warmonger comparable to Adolf Hitler.</p>
             </div>
@@ -1712,7 +1724,7 @@ In March 1946, <strong>Winston Churchill</strong> spoke alongside President Trum
             </div>
             <div class="spread-stage-q">“How did the Truman Doctrine and Marshall Plan enact containment in 1947?”</div>
             <div class="block-prose">
-              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.55; margin-bottom: 0px;">In early 1947, bankrupt Britain told Washington it could no longer afford to aid anti-communist forces in <strong>Greece and Turkey</strong>. Fearing Soviet expansion into the Mediterranean, Truman addressed Congress in March 1947. His <strong>Truman Doctrine</strong> pledged US money and arms to contain communism wherever free nations faced outside pressure.
+              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.54; margin-bottom: 0px;">In early 1947, bankrupt Britain told Washington it could no longer afford to aid anti-communist forces in <strong>Greece and Turkey</strong>. Fearing Soviet expansion into the Mediterranean, Truman addressed Congress in March 1947. His <strong>Truman Doctrine</strong> pledged US money and arms to contain communism wherever free nations faced outside pressure.
 
 Believing poverty and social desperation were the breeding grounds of communism, US Secretary of State <strong>George Marshall</strong> unveiled the <strong>Marshall Plan</strong> in June 1947. Washington sent <strong>over $13 billion</strong> in economic aid to rebuild Western European farms, railways, and factories and keep voters away from communism.</p>
             </div>
@@ -1744,7 +1756,7 @@ Believing poverty and social desperation were the breeding grounds of communism,
     <div class="prose-wrap">
       <div class="prose-columns">
         
-          <div class="block-section spread-block" style="margin-bottom: 12.3px;">
+          <div class="block-section spread-block" style="margin-bottom: 11.3px;">
             <div class="block-hdr">
               <span class="stage-pill">STAGE 3</span>
               <span class="block-title">Soviet Salami Tactics &amp; Cominform: Consolidating Eastern Europe</span>
@@ -1752,13 +1764,13 @@ Believing poverty and social desperation were the breeding grounds of communism,
             </div>
             <div class="spread-stage-q">“How did Cominform and the 1948 Prague Coup cement Stalin’s eastern bloc?”</div>
             <div class="block-prose">
-              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.55; margin-bottom: 0px;">Stalin condemned <strong>George Marshall</strong>'s aid package as an act of American economic imperialism ("dollar imperialism") meant to lure Eastern Europe away from Moscow. He banned Soviet satellite states from taking a single dollar. In September 1947, Stalin and Andrei Zhdanov set up <strong>Cominform</strong> (the Communist Information Bureau) to keep foreign communist parties strictly in line.
+              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.54; margin-bottom: 0px;">Stalin condemned <strong>George Marshall</strong>'s aid package as an act of American economic imperialism ("dollar imperialism") meant to lure Eastern Europe away from Moscow. He banned Soviet satellite states from taking a single dollar. In September 1947, Stalin and Andrei Zhdanov set up <strong>Cominform</strong> (the Communist Information Bureau) to keep foreign communist parties strictly in line.
 
 The last coalition government in Eastern Europe fell in February 1948 during the <strong>Prague Coup</strong>, when Czech communists seized full power in Prague. Shocked by Czechoslovakia's fall, the US Congress swiftly approved Marshall Aid, leaving Europe split into two rival camps.</p>
             </div>
           </div>
 
-          <div class="block-section spread-block" style="margin-bottom: 12.3px;">
+          <div class="block-section spread-block" style="margin-bottom: 11.3px;">
             <div class="block-hdr">
               <span class="stage-pill">STAGE 4</span>
               <span class="block-title">The Berlin Blockade &amp; Operation Vittles: The 11-Month Airlift</span>
@@ -1766,7 +1778,7 @@ The last coalition government in Eastern Europe fell in February 1948 during the
             </div>
             <div class="spread-stage-q">“How did the 324-day Berlin Airlift defeat Stalin’s 1948–49 blockade?”</div>
             <div class="block-prose">
-              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.55; margin-bottom: 0px;">Early in 1948, Britain, France, and the US merged their western German zones into <strong>Trizonia</strong> and launched a new currency, the <strong>Deutsche Mark</strong>, to revive trade. Viewing a strong West Germany as a threat, Stalin moved to squeeze the Western Allies out of West Berlin, deep inside the Soviet zone.
+              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.54; margin-bottom: 0px;">Early in 1948, Britain, France, and the US merged their western German zones into <strong>Trizonia</strong> and launched a new currency, the <strong>Deutsche Mark</strong>, to revive trade. Viewing a strong West Germany as a threat, Stalin moved to squeeze the Western Allies out of West Berlin, deep inside the Soviet zone.
 
 On 24 June 1948, Stalin launched the Berlin <strong>Blockade</strong> — he severed all road, rail, and canal routes connecting West Germany to West Berlin. Led by US General Lucius Clay and British Foreign Secretary Ernest Bevin, the West answered with the <strong>Berlin Airlift</strong> (<em>Operation Vittles</em>). Allied planes flew in 2.3 million tons of food and coal over 324 days until Stalin lifted the blockade in May 1949.</p>
             </div>
@@ -1780,7 +1792,7 @@ On 24 June 1948, Stalin launched the Berlin <strong>Blockade</strong> — he sev
             </div>
             <div class="spread-stage-q">“Why did the Berlin crisis lead to FRG, GDR, NATO, and the Warsaw Pact?”</div>
             <div class="block-prose">
-              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.55; margin-bottom: 0px;">The Berlin Blockade crisis sealed the division of Germany into two separate states. In May 1949, the western zones formed the democratic <strong>Federal Republic of Germany</strong> (FRG / West Germany), with its capital in <strong>Bonn</strong>. In October 1949, Moscow turned its eastern zone into the communist <strong>German Democratic Republic</strong> (GDR / East Germany).
+              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.54; margin-bottom: 0px;">The Berlin Blockade crisis sealed the division of Germany into two separate states. In May 1949, the western zones formed the democratic <strong>Federal Republic of Germany</strong> (FRG / West Germany), with its capital in <strong>Bonn</strong>. In October 1949, Moscow turned its eastern zone into the communist <strong>German Democratic Republic</strong> (GDR / East Germany).
 
 Rival military alliances soon followed the Berlin crisis. In April 1949, the US, Britain, and ten Western allies founded <strong>NATO</strong>, promising mutual defence if any member were attacked. After West Germany joined NATO in 1955, Moscow formed the rival <strong>Warsaw Pact</strong> with seven eastern states, locking Europe into two armed blocs.</p>
             </div>
@@ -1846,7 +1858,7 @@ Rival military alliances soon followed the Berlin crisis. In April 1949, the US,
     <div class="prose-wrap">
       <div class="prose-columns">
         
-          <div class="block-section spread-block" style="margin-bottom: 12.3px;">
+          <div class="block-section spread-block" style="margin-bottom: 11.3px;">
             <div class="block-hdr">
               <span class="stage-pill">STAGE 1</span>
               <span class="block-title">The Cuban Revolution: Castro, Nationalization, and Soviet Alliance</span>
@@ -1854,7 +1866,7 @@ Rival military alliances soon followed the Berlin crisis. In April 1949, the US,
             </div>
             <div class="spread-stage-q">“How did US embargoes and the Bay of Pigs push Castro toward Khrushchev?”</div>
             <div class="block-prose">
-              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.55; margin-bottom: 0px;">In January 1959, guerrilla leader <strong>Fidel Castro</strong> toppled Cuba's US-backed dictator Fulgencio Batista. When Castro nationalised US-owned <strong>sugar plantations, oil refineries, and telephone monopolies</strong>, Washington cut off Cuban sugar imports and imposed trade embargoes. Facing ruin, Castro turned to Moscow for oil, loans, and weapons.
+              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.54; margin-bottom: 0px;">In January 1959, guerrilla leader <strong>Fidel Castro</strong> toppled Cuba's US-backed dictator Fulgencio Batista. When Castro nationalised US-owned <strong>sugar plantations, oil refineries, and telephone monopolies</strong>, Washington cut off Cuban sugar imports and imposed trade embargoes. Facing ruin, Castro turned to Moscow for oil, loans, and weapons.
 
 Soviet leader <strong>Nikita Khrushchev</strong> welcomed a socialist ally just ninety miles off Florida's coast. In April 1961, new US President <strong>John F. Kennedy</strong> approved the CIA-backed <strong>Bay of Pigs invasion</strong> by 1,400 anti-Castro Cuban exiles. Castro's troops crushed the landing in three days, embarrassing Kennedy and pushing Cuba into Soviet military protection.</p>
             </div>
@@ -1868,7 +1880,7 @@ Soviet leader <strong>Nikita Khrushchev</strong> welcomed a socialist ally just 
             </div>
             <div class="spread-stage-q">“Why did U-2 photos of Soviet missiles in Cuba spark a US crisis in 1962?”</div>
             <div class="block-prose">
-              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.55; margin-bottom: 0px;">In summer 1962, <strong>Nikita Khrushchev</strong> gambled on <strong>brinkmanship</strong> with secret <strong>Operation Anadyr</strong>, shipping 40,000 Soviet soldiers and nuclear missiles to Cuba. He aimed to shield Cuba from US invasion and narrow America's <strong>massive 17-to-1 superiority</strong> in long-range <strong>ICBM</strong> warheads. After all, US Jupiter missiles already sat near Soviet borders in Turkey.
+              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.54; margin-bottom: 0px;">In summer 1962, <strong>Nikita Khrushchev</strong> gambled on <strong>brinkmanship</strong> with secret <strong>Operation Anadyr</strong>, shipping 40,000 Soviet soldiers and nuclear missiles to Cuba. He aimed to shield Cuba from US invasion and narrow America's <strong>massive 17-to-1 superiority</strong> in long-range <strong>ICBM</strong> warheads. After all, US Jupiter missiles already sat near Soviet borders in Turkey.
 
 On 14 October 1962, a high-flying US <strong>U-2 reconnaissance plane</strong> piloted by <strong>Major Richard Heyser</strong> photographed medium-range Soviet missile sites at San Cristóbal. Within three minutes of launch, those warheads could hit Washington and major American cities.</p>
             </div>
@@ -1900,7 +1912,7 @@ On 14 October 1962, a high-flying US <strong>U-2 reconnaissance plane</strong> p
     <div class="prose-wrap">
       <div class="prose-columns">
         
-          <div class="block-section spread-block" style="margin-bottom: 12.3px;">
+          <div class="block-section spread-block" style="margin-bottom: 11.3px;">
             <div class="block-hdr">
               <span class="stage-pill">STAGE 3</span>
               <span class="block-title">Thirteen Days on the Brink: ExComm, Quarantine &amp; DEFCON 2</span>
@@ -1908,13 +1920,13 @@ On 14 October 1962, a high-flying US <strong>U-2 reconnaissance plane</strong> p
             </div>
             <div class="spread-stage-q">“Why did Kennedy choose a naval quarantine over air strikes on Cuba?”</div>
             <div class="block-prose">
-              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.55; margin-bottom: 0px;">Briefed on 16 October, Kennedy called together his crisis council, <strong>ExComm</strong> (the Executive Committee of the National Security Council). Generals urged <strong>surgical airstrikes and an invasion of Cuba</strong>, yet Kennedy feared bombing would kill Soviet troops and trigger a Soviet attack on West Berlin.
+              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.54; margin-bottom: 0px;">Briefed on 16 October, Kennedy called together his crisis council, <strong>ExComm</strong> (the Executive Committee of the National Security Council). Generals urged <strong>surgical airstrikes and an invasion of Cuba</strong>, yet Kennedy feared bombing would kill Soviet troops and trigger a Soviet attack on West Berlin.
 
 Instead, on <strong>22 October</strong>, Kennedy went on television and ordered a <strong>naval quarantine</strong> around Cuba. He chose that careful legal word <strong>to avoid killing Soviet personnel, avert a counter-attack on West Berlin, and avoid declaring war</strong>. US Navy warships formed a blockade ring while US nuclear crews moved to <strong>DEFCON 2</strong> alert.</p>
             </div>
           </div>
 
-          <div class="block-section spread-block" style="margin-bottom: 12.3px;">
+          <div class="block-section spread-block" style="margin-bottom: 11.3px;">
             <div class="block-hdr">
               <span class="stage-pill">STAGE 4</span>
               <span class="block-title">Secret Diplomacy: Turkey, Quarantine &amp; Khrushchev's Telegrams</span>
@@ -1922,7 +1934,7 @@ Instead, on <strong>22 October</strong>, Kennedy went on television and ordered 
             </div>
             <div class="spread-stage-q">“How did secret talks over missiles in Turkey resolve the October crisis?”</div>
             <div class="block-prose">
-              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.55; margin-bottom: 0px;">For tense days, Soviet cargo ships steamed toward the US quarantine line before turning back. Danger peaked on 27 October ("Black Saturday"), when a <strong>U-2 reconnaissance plane</strong> was shot down over Cuba. That same day, Soviet submarine officer <strong>Vasili Arkhipov</strong> refused to launch a nuclear torpedo when US warships dropped practice depth charges.
+              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.54; margin-bottom: 0px;">For tense days, Soviet cargo ships steamed toward the US quarantine line before turning back. Danger peaked on 27 October ("Black Saturday"), when a <strong>U-2 reconnaissance plane</strong> was shot down over Cuba. That same day, Soviet submarine officer <strong>Vasili Arkhipov</strong> refused to launch a nuclear torpedo when US warships dropped practice depth charges.
 
 With nuclear forces on high <strong>DEFCON</strong> alert, Attorney General <strong>Robert F. Kennedy and Soviet Ambassador Anatoly Dobrynin</strong> struck a quiet midnight deal. Khrushchev pulled Soviet missiles out of Cuba under UN checks, Washington pledged never to invade Cuba, and Kennedy privately removed US Jupiter missiles <strong>in Turkey</strong>.</p>
             </div>
@@ -1936,7 +1948,7 @@ With nuclear forces on high <strong>DEFCON</strong> alert, Attorney General <str
             </div>
             <div class="spread-stage-q">“What 1963 arms-control steps followed the Cuban Missile Crisis?”</div>
             <div class="block-prose">
-              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.55; margin-bottom: 0px;">Having come close to war during the Cuban Missile Crisis at <strong>DEFCON 2</strong>, both capitals saw the urgent need for safer talks and <strong>deterrence</strong>. In June 1963, Washington and Moscow installed <strong>a direct "hotline" teletype link</strong> so leaders could talk swiftly in future crises instead of waiting hours for telegrams.
+              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.54; margin-bottom: 0px;">Having come close to war during the Cuban Missile Crisis at <strong>DEFCON 2</strong>, both capitals saw the urgent need for safer talks and <strong>deterrence</strong>. In June 1963, Washington and Moscow installed <strong>a direct "hotline" teletype link</strong> so leaders could talk swiftly in future crises instead of waiting hours for telegrams.
 
 In August 1963, <strong>the United States, Britain, and the Soviet Union</strong> signed the <strong>Partial Nuclear Test Ban Treaty</strong>, outlawing nuclear tests in the atmosphere, in space, and underwater. <strong>Mutually Assured Destruction</strong> had forced both superpowers back from the brink.</p>
             </div>
@@ -2002,7 +2014,7 @@ In August 1963, <strong>the United States, Britain, and the Soviet Union</strong
     <div class="prose-wrap">
       <div class="prose-columns">
         
-          <div class="block-section spread-block" style="margin-bottom: 12.3px;">
+          <div class="block-section spread-block" style="margin-bottom: 11.3px;">
             <div class="block-hdr">
               <span class="stage-pill">STAGE 1</span>
               <span class="block-title">Cold War Globalisation: The Asian Domino Theory &amp; NSC-68</span>
@@ -2010,7 +2022,7 @@ In August 1963, <strong>the United States, Britain, and the Soviet Union</strong
             </div>
             <div class="spread-stage-q">“Why did Mao’s 1949 victory inspire NSC-68 and the US Domino Theory?”</div>
             <div class="block-prose">
-              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.55; margin-bottom: 0px;">In 1949, two shocks spread the Cold War across Asia: <strong>the Soviet atomic bomb test (RDS-1) and the communist victory in China under Mao Zedong</strong>. In October 1949, Mao defeated <strong>Chiang Kai-shek</strong>'s nationalists and proclaimed <strong>the People's Republic of China</strong>, convincing Washington that communism was advancing worldwide.
+              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.54; margin-bottom: 0px;">In 1949, two shocks spread the Cold War across Asia: <strong>the Soviet atomic bomb test (RDS-1) and the communist victory in China under Mao Zedong</strong>. In October 1949, Mao defeated <strong>Chiang Kai-shek</strong>'s nationalists and proclaimed <strong>the People's Republic of China</strong>, convincing Washington that communism was advancing worldwide.
 
 Early in 1950, US planners drafted <strong>NSC-68</strong>, calling for a fourfold jump in defence spending. US Asian strategy now rested on the <strong>Domino Theory</strong>. Officials feared that if one Asian state fell to communism, its neighbours would topple one after another like falling dominoes.</p>
             </div>
@@ -2024,7 +2036,7 @@ Early in 1950, US planners drafted <strong>NSC-68</strong>, calling for a fourfo
             </div>
             <div class="spread-stage-q">“How did the 1950–53 Korean War end in stalemate at the 38th Parallel?”</div>
             <div class="block-prose">
-              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.55; margin-bottom: 0px;">Cold War rivalry soon turned into a hot <strong>proxy war</strong> in Korea, split since 1945 along <strong>the 38th Parallel</strong> (<strong>Demilitarized Zone</strong>). In June 1950, North Korean troops led by <strong>Kim Il-sung</strong> invaded South Korea with Soviet tanks, capturing Seoul in three days and pinning defenders around Pusan.
+              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.54; margin-bottom: 0px;">Cold War rivalry soon turned into a hot <strong>proxy war</strong> in Korea, split since 1945 along <strong>the 38th Parallel</strong> (<strong>Demilitarized Zone</strong>). In June 1950, North Korean troops led by <strong>Kim Il-sung</strong> invaded South Korea with Soviet tanks, capturing Seoul in three days and pinning defenders around Pusan.
 
 Truman won UN backing and sent a US-led force under <strong>General Douglas MacArthur</strong>. After landing behind enemy lines at Inchon, UN troops pushed near China's border and triggered a massive Chinese counter-attack. Fighting ended <strong>in July 1953 (leaving over three million dead)</strong> in stalemate along the 38th Parallel.</p>
             </div>
@@ -2056,7 +2068,7 @@ Truman won UN backing and sent a US-led force under <strong>General Douglas MacA
     <div class="prose-wrap">
       <div class="prose-columns">
         
-          <div class="block-section spread-block" style="margin-bottom: 12.3px;">
+          <div class="block-section spread-block" style="margin-bottom: 11.3px;">
             <div class="block-hdr">
               <span class="stage-pill">STAGE 3</span>
               <span class="block-title">The Indochina Crucible: From Dien Bien Phu to the Gulf of Tonkin</span>
@@ -2064,13 +2076,13 @@ Truman won UN backing and sent a US-led force under <strong>General Douglas MacA
             </div>
             <div class="spread-stage-q">“Why did the 1964 Gulf of Tonkin incident escalate US war in Vietnam?”</div>
             <div class="block-prose">
-              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.55; margin-bottom: 0px;">Guided by <strong>NSC-68</strong>, Washington next turned to Indochina, where communist nationalist <strong>Ho Chi Minh</strong> fought French colonial rule. After Ho's forces crushed the French army at <strong>the battle of Dien Bien Phu</strong> in May 1954, the Geneva Accords temporarily split Vietnam along <strong>the 17th parallel</strong>.
+              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.54; margin-bottom: 0px;">Guided by <strong>NSC-68</strong>, Washington next turned to Indochina, where communist nationalist <strong>Ho Chi Minh</strong> fought French colonial rule. After Ho's forces crushed the French army at <strong>the battle of Dien Bien Phu</strong> in May 1954, the Geneva Accords temporarily split Vietnam along <strong>the 17th parallel</strong>.
 
 Fearing Ho would win promised 1956 elections, Washington backed South Vietnam's anti-communist regime in Saigon, while southern rebels formed the <strong>Vietcong</strong> (National Liberation Front). In August 1964, <strong>the Gulf of Tonkin incident</strong> led Congress to grant President Johnson broad war powers, bringing over 500,000 US soldiers to Vietnam by 1968.</p>
             </div>
           </div>
 
-          <div class="block-section spread-block" style="margin-bottom: 12.3px;">
+          <div class="block-section spread-block" style="margin-bottom: 11.3px;">
             <div class="block-hdr">
               <span class="stage-pill">STAGE 4</span>
               <span class="block-title">Asymmetric Warfare: Cu Chi Tunnels vs Air Mobility &amp; Chemical Weapons</span>
@@ -2078,7 +2090,7 @@ Fearing Ho would win promised 1956 elections, Washington backed South Vietnam's 
             </div>
             <div class="spread-stage-q">“How did Vietcong tunnels and guerrilla tactics blunt US firepower?”</div>
             <div class="block-prose">
-              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.55; margin-bottom: 0px;">Backed from the north by <strong>Ho Chi Minh</strong>, <strong>the Vietcong</strong> fought stubborn <strong>asymmetric guerrilla warfare</strong> (<strong>guerrilla warfare</strong>) across South Vietnam's jungles and villages. Avoiding open battles, fighters laid booby traps, moved supplies down the hidden <strong>Ho Chi Minh Trail</strong>, and sheltered inside <strong>a 250km complex</strong> of underground tunnels at <strong>Cu Chi</strong>.
+              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.54; margin-bottom: 0px;">Backed from the north by <strong>Ho Chi Minh</strong>, <strong>the Vietcong</strong> fought stubborn <strong>asymmetric guerrilla warfare</strong> (<strong>guerrilla warfare</strong>) across South Vietnam's jungles and villages. Avoiding open battles, fighters laid booby traps, moved supplies down the hidden <strong>Ho Chi Minh Trail</strong>, and sheltered inside <strong>a 250km complex</strong> of underground tunnels at <strong>Cu Chi</strong>.
 
 US commanders answered with helicopter "search-and-destroy" raids, heavy bombing, napalm, and Agent Orange defoliant in a grinding <strong>war of attrition</strong>. High civilian casualties turned rural Vietnamese villagers against Saigon, while televised bloodshed sparked fierce anti-war protests across America.</p>
             </div>
@@ -2092,7 +2104,7 @@ US commanders answered with helicopter "search-and-destroy" raids, heavy bombing
             </div>
             <div class="spread-stage-q">“Why did the Tet Offensive and Saigon’s 1975 fall expose US limits?”</div>
             <div class="block-prose">
-              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.55; margin-bottom: 0px;">In January 1968, Vietcong squads launched the surprise <strong>Tet Offensive</strong> against over a hundred South Vietnamese towns and the US Embassy. Although US troops retook the cities, Tet shocked American viewers and pushed Washington toward <strong>Vietnamization</strong> — handing combat back to South Vietnamese forces while pulling US troops home.
+              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.54; margin-bottom: 0px;">In January 1968, Vietcong squads launched the surprise <strong>Tet Offensive</strong> against over a hundred South Vietnamese towns and the US Embassy. Although US troops retook the cities, Tet shocked American viewers and pushed Washington toward <strong>Vietnamization</strong> — handing combat back to South Vietnamese forces while pulling US troops home.
 
 Talks between <strong>Richard Nixon</strong>, <strong>Henry Kissinger</strong>, and North Vietnamese envoys produced <strong>the 1973 Paris Peace Accords</strong> and US withdrawal. In April 1975, North Vietnamese tanks captured <strong>Saigon</strong>, uniting Vietnam under communist rule and showing the limits of US power in a nationalist <strong>proxy war</strong>.</p>
             </div>
@@ -2158,7 +2170,7 @@ Talks between <strong>Richard Nixon</strong>, <strong>Henry Kissinger</strong>, 
     <div class="prose-wrap">
       <div class="prose-columns">
         
-          <div class="block-section spread-block" style="margin-bottom: 12.3px;">
+          <div class="block-section spread-block" style="margin-bottom: 11.3px;">
             <div class="block-hdr">
               <span class="stage-pill">STAGE 1</span>
               <span class="block-title">The Construction of the Berlin Wall (August 1961) &amp; Checkpoint Charlie</span>
@@ -2166,7 +2178,7 @@ Talks between <strong>Richard Nixon</strong>, <strong>Henry Kissinger</strong>, 
             </div>
             <div class="spread-stage-q">“Why did East Germany build the Berlin Wall in August 1961?”</div>
             <div class="block-prose">
-              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.55; margin-bottom: 0px;">Throughout the 1950s, divided Berlin exposed the gap between Western prosperity and harsh East German rule under <strong>Walter Ulbricht</strong>. Between 1949 and 1961, <strong>over 2.7 million East Germans</strong> fled west through Berlin. Many were young doctors, teachers, and skilled engineers seeking freedom.
+              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.54; margin-bottom: 0px;">Throughout the 1950s, divided Berlin exposed the gap between Western prosperity and harsh East German rule under <strong>Walter Ulbricht</strong>. Between 1949 and 1961, <strong>over 2.7 million East Germans</strong> fled west through Berlin. Many were young doctors, teachers, and skilled engineers seeking freedom.
 
 To halt this damaging "brain drain", Khrushchev backed Ulbricht's plan to seal the border overnight on <strong>13 August 1961</strong>. Guards rolled out barbed wire and built the concrete <strong>Berlin Wall</strong>. Later paired with <strong>the Brezhnev Doctrine</strong>, the Wall stood as a stark symbol of repression across every Soviet <strong>satellite state</strong>.</p>
             </div>
@@ -2180,7 +2192,7 @@ To halt this damaging "brain drain", Khrushchev backed Ulbricht's plan to seal t
             </div>
             <div class="spread-stage-q">“How did stagnation, Afghanistan, and "Star Wars" exhaust Soviet power?”</div>
             <div class="block-prose">
-              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.55; margin-bottom: 0px;">By the late 1970s, the Soviet economy had stalled under aging leader <strong>Leonid Brezhnev</strong>. Collective farms missed grain targets and Soviet factories lagged behind Western computers. Ordinary families queued for food and shoes while Moscow spent a quarter of national wealth on missiles and tanks.
+              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.54; margin-bottom: 0px;">By the late 1970s, the Soviet economy had stalled under aging leader <strong>Leonid Brezhnev</strong>. Collective farms missed grain targets and Soviet factories lagged behind Western computers. Ordinary families queued for food and shoes while Moscow spent a quarter of national wealth on missiles and tanks.
 
 Worse followed in December 1979 when Soviet troops invaded <strong>Afghanistan</strong>, getting bogged down for ten years fighting US-armed <strong>mujahideen</strong> guerrillas. Meanwhile, US President <strong>Ronald Reagan</strong> hiked defence spending and proposed his Strategic Defense Initiative (<strong>"Star Wars"</strong>) space shield — a costly tech race Moscow could not afford.</p>
             </div>
@@ -2212,7 +2224,7 @@ Worse followed in December 1979 when Soviet troops invaded <strong>Afghanistan</
     <div class="prose-wrap">
       <div class="prose-columns">
         
-          <div class="block-section spread-block" style="margin-bottom: 12.3px;">
+          <div class="block-section spread-block" style="margin-bottom: 11.3px;">
             <div class="block-hdr">
               <span class="stage-pill">STAGE 3</span>
               <span class="block-title">Gorbachev's Revolution: Glasnost, Perestroika &amp; Abandoning the Brezhnev Doctrine</span>
@@ -2220,13 +2232,13 @@ Worse followed in December 1979 when Soviet troops invaded <strong>Afghanistan</
             </div>
             <div class="spread-stage-q">“How did Glasnost, Perestroika, and ending force weaken Soviet control?”</div>
             <div class="block-prose">
-              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.55; margin-bottom: 0px;">Taking office in March 1985, 54-year-old Soviet leader <strong>Mikhail Gorbachev</strong> tried to save communism from economic ruin. He launched <strong>Glasnost</strong> ("openness"), allowing freer news and public debate, alongside <strong>Perestroika</strong> ("restructuring"), which eased central planning and permitted small private businesses.
+              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.54; margin-bottom: 0px;">Taking office in March 1985, 54-year-old Soviet leader <strong>Mikhail Gorbachev</strong> tried to save communism from economic ruin. He launched <strong>Glasnost</strong> ("openness"), allowing freer news and public debate, alongside <strong>Perestroika</strong> ("restructuring"), which eased central planning and permitted small private businesses.
 
 Crucially, Gorbachev also scrapped the Brezhnev Doctrine and replaced it with <strong>the "Sinatra Doctrine"</strong>. Eastern European nations could now choose their own path without Red Army tanks invading. Once fear of Soviet troops vanished, calls for free elections swept the eastern bloc.</p>
             </div>
           </div>
 
-          <div class="block-section spread-block" style="margin-bottom: 12.3px;">
+          <div class="block-section spread-block" style="margin-bottom: 11.3px;">
             <div class="block-hdr">
               <span class="stage-pill">STAGE 4</span>
               <span class="block-title">9 November 1989: The Breaching of the Berlin Wall &amp; Velvet Revolutions</span>
@@ -2234,7 +2246,7 @@ Crucially, Gorbachev also scrapped the Brezhnev Doctrine and replaced it with <s
             </div>
             <div class="spread-stage-q">“How did Solidarity and Schabowski’s blunder bring down the Wall in 1989?”</div>
             <div class="block-prose">
-              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.55; margin-bottom: 0px;">Under Gorbachev's non-intervention policy, peaceful revolutions rolled across Eastern Europe in 1989. In Poland, the free trade union <strong>Solidarity</strong> under Lech Wałęsa won sweeping election victories in June. Then in September, <strong>Hungary</strong> opened its border with Austria, letting thousands of East Germans escape west.
+              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.54; margin-bottom: 0px;">Under Gorbachev's non-intervention policy, peaceful revolutions rolled across Eastern Europe in 1989. In Poland, the free trade union <strong>Solidarity</strong> under Lech Wałęsa won sweeping election victories in June. Then in September, <strong>Hungary</strong> opened its border with Austria, letting thousands of East Germans escape west.
 
 On the evening of <strong>9 November 1989</strong>, confused East German spokesman <strong>Günter Schabowski</strong> told reporters on live television that citizens could cross West Berlin checkpoints "immediately". Vast crowds of East Berliners surged to the gates, overwhelmed guards lifted the barriers, and joyful Germans tore down the Berlin Wall, leading to German <strong>reunification</strong> in 1990.</p>
             </div>
@@ -2248,7 +2260,7 @@ On the evening of <strong>9 November 1989</strong>, confused East German spokesm
             </div>
             <div class="spread-stage-q">“How did the failed August 1991 coup hasten the USSR’s collapse?”</div>
             <div class="block-prose">
-              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.55; margin-bottom: 0px;">Freedom in Eastern Europe soon shook the USSR's own <strong>fifteen constituent republics</strong> as national movements demanded independence. In August 1991, communist hardliners staged a <strong>coup d’état</strong> in Moscow and <strong>placed Gorbachev under house arrest</strong> in the Crimea. Defying the plotters, Russian President <strong>Boris Yeltsin</strong> climbed onto a tank outside parliament and rallied crowds to save democracy.
+              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.54; margin-bottom: 0px;">Freedom in Eastern Europe soon shook the USSR's own <strong>fifteen constituent republics</strong> as national movements demanded independence. In August 1991, communist hardliners staged a <strong>coup d’état</strong> in Moscow and <strong>placed Gorbachev under house arrest</strong> in the Crimea. Defying the plotters, Russian President <strong>Boris Yeltsin</strong> climbed onto a tank outside parliament and rallied crowds to save democracy.
 
 With Communist Party authority broken after the failed coup, republic after republic voted to leave the Union. Mikhail Gorbachev announced his resignation on <strong>25 December 1991</strong>, the red Soviet flag came down from the Kremlin, and the Cold War ended.</p>
             </div>
@@ -2280,65 +2292,65 @@ With Communist Party authority broken after the failed coup, republic after repu
         <b>Classroom &amp; Homework Retrieval Protocol:</b> Test your partner aloud or write full-sentence answers in your exercise book using the page references shown. Zero answers are printed so this classroom textbook remains reusable all year.
       </div>
 
-      <div class="quiz-grid quiz-grid-2col" style="gap: 7.7px;">
+      <div class="quiz-grid quiz-grid-2col" style="gap: 7.6px;">
         
-        <div class="quiz-card" style="padding: 8.1px 12px;">
+        <div class="quiz-card" style="padding: 8px 12px;">
           <div class="quiz-card-hdr">
-            <span class="quiz-card-tt" style="font-size: 9.03pt;"><span class="quiz-e-pill">E1</span> Enquiry 01: Ideological Clash: Capitalism vs Communism</span>
+            <span class="quiz-card-tt" style="font-size: 9pt;"><span class="quiz-e-pill">E1</span> Enquiry 01: Ideological Clash: Capitalism vs Communism</span>
             <span class="quiz-card-loc">pp. 4–5</span>
           </div>
-          <ol class="quiz-ol" start="1" style="font-size: 9.45pt; line-height: 1.39;">
-            <li style="margin-bottom: 3.3px;">Which two continental titans emerged supreme after the Second World War?</li><li style="margin-bottom: 3.3px;">Who directed production in the Soviet Union to eliminate capitalist class exploitation?</li><li style="margin-bottom: 3.3px;">What political system in the USSR was governed exclusively by the Communist Party of the Soviet Union (CPSU)?</li><li style="margin-bottom: 3.3px;">What concept did Lenin and Stalin enforce through a ruthlessly disciplined vanguard party?</li><li style="margin-bottom: 0px;">How did Soviet leaders dismiss Western parliamentary democracy?</li>
+          <ol class="quiz-ol" start="1" style="font-size: 9.4pt; line-height: 1.39;">
+            <li style="margin-bottom: 3.2px;">Which two continental titans emerged supreme after the Second World War?</li><li style="margin-bottom: 3.2px;">Who directed production in the Soviet Union to eliminate capitalist class exploitation?</li><li style="margin-bottom: 3.2px;">What political system in the USSR was governed exclusively by the Communist Party of the Soviet Union (CPSU)?</li><li style="margin-bottom: 3.2px;">What concept did Lenin and Stalin enforce through a ruthlessly disciplined vanguard party?</li><li style="margin-bottom: 0px;">How did Soviet leaders dismiss Western parliamentary democracy?</li>
           </ol>
         </div>
 
-        <div class="quiz-card" style="padding: 8.1px 12px;">
+        <div class="quiz-card" style="padding: 8px 12px;">
           <div class="quiz-card-hdr">
-            <span class="quiz-card-tt" style="font-size: 9.03pt;"><span class="quiz-e-pill">E2</span> Enquiry 02: From Yalta to Potsdam: End of the Grand Alliance</span>
+            <span class="quiz-card-tt" style="font-size: 9pt;"><span class="quiz-e-pill">E2</span> Enquiry 02: From Yalta to Potsdam: End of the Grand Alliance</span>
             <span class="quiz-card-loc">pp. 6–7</span>
           </div>
-          <ol class="quiz-ol" start="6" style="font-size: 9.45pt; line-height: 1.39;">
-            <li style="margin-bottom: 3.3px;">Which "Big Three" leaders convened at the Crimean resort of Yalta in February 1945?</li><li style="margin-bottom: 3.3px;">In which palace did the Big Three leaders meet during the Yalta Conference?</li><li style="margin-bottom: 3.3px;">Which four nations administered the occupation zones of Germany and sectors of Berlin?</li><li style="margin-bottom: 3.3px;">Which new international body did the Big Three agree at Yalta to establish to safeguard collective security?</li><li style="margin-bottom: 0px;">Why had Britain declared war on Nazi Germany in September 1939?</li>
+          <ol class="quiz-ol" start="6" style="font-size: 9.4pt; line-height: 1.39;">
+            <li style="margin-bottom: 3.2px;">Which "Big Three" leaders convened at the Crimean resort of Yalta in February 1945?</li><li style="margin-bottom: 3.2px;">In which palace did the Big Three leaders meet during the Yalta Conference?</li><li style="margin-bottom: 3.2px;">Which four nations administered the occupation zones of Germany and sectors of Berlin?</li><li style="margin-bottom: 3.2px;">Which new international body did the Big Three agree at Yalta to establish to safeguard collective security?</li><li style="margin-bottom: 0px;">Why had Britain declared war on Nazi Germany in September 1939?</li>
           </ol>
         </div>
 
-        <div class="quiz-card" style="padding: 8.1px 12px;">
+        <div class="quiz-card" style="padding: 8px 12px;">
           <div class="quiz-card-hdr">
-            <span class="quiz-card-tt" style="font-size: 9.03pt;"><span class="quiz-e-pill">E3</span> Enquiry 03: The Iron Curtain &amp; The Berlin Blockade</span>
+            <span class="quiz-card-tt" style="font-size: 9pt;"><span class="quiz-e-pill">E3</span> Enquiry 03: The Iron Curtain &amp; The Berlin Blockade</span>
             <span class="quiz-card-loc">pp. 8–9</span>
           </div>
-          <ol class="quiz-ol" start="11" style="font-size: 9.45pt; line-height: 1.39;">
-            <li style="margin-bottom: 3.3px;">What term did Hungarian communist Mátyás Rákosi use to describe slicing away non-communist parties piece by piece?</li><li style="margin-bottom: 3.3px;">In which countries did Stalin install obedient puppet regimes between 1945 and 1947?</li><li style="margin-bottom: 3.3px;">What famous phrase did Churchill utter in his Fulton speech to describe the division of Europe?</li><li style="margin-bottom: 3.3px;">How did Stalin furiously denounce Churchill in the Soviet press after the Fulton address?</li><li style="margin-bottom: 0px;">Which two countries could Britain no longer aid financially and militarily in early 1947?</li>
+          <ol class="quiz-ol" start="11" style="font-size: 9.4pt; line-height: 1.39;">
+            <li style="margin-bottom: 3.2px;">What term did Hungarian communist Mátyás Rákosi use to describe slicing away non-communist parties piece by piece?</li><li style="margin-bottom: 3.2px;">In which countries did Stalin install obedient puppet regimes between 1945 and 1947?</li><li style="margin-bottom: 3.2px;">What famous phrase did Churchill utter in his Fulton speech to describe the division of Europe?</li><li style="margin-bottom: 3.2px;">How did Stalin furiously denounce Churchill in the Soviet press after the Fulton address?</li><li style="margin-bottom: 0px;">Which two countries could Britain no longer aid financially and militarily in early 1947?</li>
           </ol>
         </div>
 
-        <div class="quiz-card" style="padding: 8.1px 12px;">
+        <div class="quiz-card" style="padding: 8px 12px;">
           <div class="quiz-card-hdr">
-            <span class="quiz-card-tt" style="font-size: 9.03pt;"><span class="quiz-e-pill">E4</span> Enquiry 04: Nuclear Brinkmanship: The Cuban Missile Crisis</span>
+            <span class="quiz-card-tt" style="font-size: 9pt;"><span class="quiz-e-pill">E4</span> Enquiry 04: Nuclear Brinkmanship: The Cuban Missile Crisis</span>
             <span class="quiz-card-loc">pp. 10–11</span>
           </div>
-          <ol class="quiz-ol" start="16" style="font-size: 9.45pt; line-height: 1.39;">
-            <li style="margin-bottom: 3.3px;">Which revolutionary guerrilla leader overthrew the dictatorship of Fulgencio Batista in Cuba in January 1959?</li><li style="margin-bottom: 3.3px;">What American-owned assets did Castro nationalize that prompted US economic sanctions?</li><li style="margin-bottom: 3.3px;">What was the name of the disastrous CIA-orchestrated paramilitary assault on Cuba by 1,400 exiles in April 1961?</li><li style="margin-bottom: 3.3px;">Which newly inaugurated US President authorized the failed CIA-backed Bay of Pigs invasion in April 1961?</li><li style="margin-bottom: 0px;">Which Soviet premier agreed to purchase Cuban sugar and supply Havana with crude oil and military equipment?</li>
+          <ol class="quiz-ol" start="16" style="font-size: 9.4pt; line-height: 1.39;">
+            <li style="margin-bottom: 3.2px;">Which revolutionary guerrilla leader overthrew the dictatorship of Fulgencio Batista in Cuba in January 1959?</li><li style="margin-bottom: 3.2px;">What American-owned assets did Castro nationalize that prompted US economic sanctions?</li><li style="margin-bottom: 3.2px;">What was the name of the disastrous CIA-orchestrated paramilitary assault on Cuba by 1,400 exiles in April 1961?</li><li style="margin-bottom: 3.2px;">Which newly inaugurated US President authorized the failed CIA-backed Bay of Pigs invasion in April 1961?</li><li style="margin-bottom: 0px;">Which Soviet premier agreed to purchase Cuban sugar and supply Havana with crude oil and military equipment?</li>
           </ol>
         </div>
 
-        <div class="quiz-card" style="padding: 8.1px 12px;">
+        <div class="quiz-card" style="padding: 8px 12px;">
           <div class="quiz-card-hdr">
-            <span class="quiz-card-tt" style="font-size: 9.03pt;"><span class="quiz-e-pill">E5</span> Enquiry 05: Cold War Proxy Wars in Asia: Korea &amp; Vietnam</span>
+            <span class="quiz-card-tt" style="font-size: 9pt;"><span class="quiz-e-pill">E5</span> Enquiry 05: Cold War Proxy Wars in Asia: Korea &amp; Vietnam</span>
             <span class="quiz-card-loc">pp. 12–13</span>
           </div>
-          <ol class="quiz-ol" start="21" style="font-size: 9.45pt; line-height: 1.39;">
-            <li style="margin-bottom: 3.3px;">What two seismic shocks in late 1949 permanently globalized the Cold War?</li><li style="margin-bottom: 3.3px;">What theory held that if one Asian nation fell to communism, neighbouring countries would inevitably follow?</li><li style="margin-bottom: 3.3px;">Which nationalist leader was defeated by Mao Zedong's communists in China in 1949?</li><li style="margin-bottom: 3.3px;">What state did Mao Zedong establish in October 1949 after winning the Chinese Civil War?</li><li style="margin-bottom: 0px;">Along which geographic line was the Korean peninsula partitioned in 1945?</li>
+          <ol class="quiz-ol" start="21" style="font-size: 9.4pt; line-height: 1.39;">
+            <li style="margin-bottom: 3.2px;">What two seismic shocks in late 1949 permanently globalized the Cold War?</li><li style="margin-bottom: 3.2px;">What theory held that if one Asian nation fell to communism, neighbouring countries would inevitably follow?</li><li style="margin-bottom: 3.2px;">Which nationalist leader was defeated by Mao Zedong's communists in China in 1949?</li><li style="margin-bottom: 3.2px;">What state did Mao Zedong establish in October 1949 after winning the Chinese Civil War?</li><li style="margin-bottom: 0px;">Along which geographic line was the Korean peninsula partitioned in 1945?</li>
           </ol>
         </div>
 
-        <div class="quiz-card" style="padding: 8.1px 12px;">
+        <div class="quiz-card" style="padding: 8px 12px;">
           <div class="quiz-card-hdr">
-            <span class="quiz-card-tt" style="font-size: 9.03pt;"><span class="quiz-e-pill">E6</span> Enquiry 06: Fall of the Berlin Wall &amp; Collapse of the USSR</span>
+            <span class="quiz-card-tt" style="font-size: 9pt;"><span class="quiz-e-pill">E6</span> Enquiry 06: Fall of the Berlin Wall &amp; Collapse of the USSR</span>
             <span class="quiz-card-loc">pp. 14–15</span>
           </div>
-          <ol class="quiz-ol" start="26" style="font-size: 9.45pt; line-height: 1.39;">
-            <li style="margin-bottom: 3.3px;">Approximately how many East Germans fled to the West through Berlin between 1949 and 1961?</li><li style="margin-bottom: 3.3px;">Which East German leader secured Soviet permission to seal the frontier and construct the Berlin Wall?</li><li style="margin-bottom: 3.3px;">On what date did East German troops begin unrolling barbed wire and building the Berlin Wall?</li><li style="margin-bottom: 3.3px;">Which Soviet leader presided over eighteen years of economic stagnation and bureaucratic corruption until 1982?</li><li style="margin-bottom: 0px;">Which country did the Soviet Union invade in December 1979, becoming trapped in a disastrous ten-year war?</li>
+          <ol class="quiz-ol" start="26" style="font-size: 9.4pt; line-height: 1.39;">
+            <li style="margin-bottom: 3.2px;">Approximately how many East Germans fled to the West through Berlin between 1949 and 1961?</li><li style="margin-bottom: 3.2px;">Which East German leader secured Soviet permission to seal the frontier and construct the Berlin Wall?</li><li style="margin-bottom: 3.2px;">Why did Nikita Khrushchev and Walter Ulbricht order the Berlin Wall to be built overnight in August 1961?</li><li style="margin-bottom: 3.2px;">Which Soviet leader presided over eighteen years of economic stagnation and bureaucratic corruption until 1982?</li><li style="margin-bottom: 0px;">Which country did the Soviet Union invade in December 1979, becoming trapped in a disastrous ten-year war?</li>
           </ol>
         </div>
       </div>

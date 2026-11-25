@@ -183,14 +183,18 @@ function buildTextbookHtml(unitData) {
   const lessonPagesHtml = lessons
     .map((l, idx) => {
       const pNum = idx + 4;
+      const wbs = Array.isArray(l.workbook_stages) ? l.workbook_stages : [];
+      const cds = Array.isArray(l.causal_domino_spine?.stages) ? l.causal_domino_spine.stages : [];
       const blocksHtml = (l.narrative_blocks || [])
-        .map(
-          (b, bIdx) => `
+        .map((b, bIdx) => {
+          const stQ = String(wbs[bIdx]?.question || cds[bIdx]?.question || wbs[bIdx]?.focus_clue || '').replace(/<[^>]+>/g, '').trim();
+          return `
           <div class="block-section">
             <div class="act-kicker">[${idx + 1}.${bIdx + 1}] ${escapeHtml(b.title)}</div>
+            ${stQ && stQ.includes('?') ? `<div class="tb-stage-q">“${escapeHtml(stQ)}”</div>` : ''}
             <p class="prose-para">${cleanProse(b.text || b.content)}</p>
-          </div>`
-        )
+          </div>`;
+        })
         .join('');
 
       return `
@@ -302,7 +306,11 @@ function buildTextbookHtml(unitData) {
     .block-section { margin-bottom: 2mm; }
     .act-kicker {
       font-family: 'Inter', sans-serif; font-size: 8.4pt; font-weight: 800; color: #7c2d12;
-      text-transform: uppercase; letter-spacing: 0.04em; border-bottom: 1px solid #fed7aa; padding-bottom: 0.8mm; margin-bottom: 1.4mm;
+      text-transform: uppercase; letter-spacing: 0.04em; border-bottom: 1px solid #fed7aa; padding-bottom: 0.7mm; margin-bottom: 0.9mm;
+    }
+    .tb-stage-q {
+      font-family: 'Playfair Display', Georgia, serif; font-style: italic; font-size: 9.1pt; color: #9a3412;
+      margin-bottom: 1.1mm; line-height: 1.26;
     }
     .prose-para, .single-reading-col p {
       font-family: 'Lora', Georgia, serif; font-size: 11.5pt; line-height: 1.54; color: #0f172a;
@@ -1346,6 +1354,28 @@ async function auditAndPrintPdf(browser, htmlContent, htmlPaths, pdfPaths, pageS
   await page.evaluateHandle('document.fonts.ready');
 
   if (pageSelector) {
+    if (pageSelector === '.tb-page') {
+      await page.evaluate(() => {
+        document.querySelectorAll('.tb-page').forEach((pg) => {
+          const col = pg.querySelector('.single-reading-col');
+          if (!col) return;
+          const paras = Array.from(col.querySelectorAll('p'));
+          let pt = 11.5;
+          while (pg.scrollHeight > pg.clientHeight && pt >= 10.2) {
+            pt -= 0.1;
+            const lh = Math.max(1.40, 1.54 - (11.5 - pt) * 0.1).toFixed(2);
+            col.style.fontSize = pt.toFixed(1) + 'pt';
+            col.style.lineHeight = lh;
+            paras.forEach((p) => {
+              p.style.fontSize = pt.toFixed(1) + 'pt';
+              p.style.lineHeight = lh;
+            });
+          }
+        });
+      });
+      const calibrated = await page.content();
+      for (const hp of htmlPaths) fs.writeFileSync(hp, calibrated, 'utf8');
+    }
     const overflows = await page.evaluate((sel) => {
       const els = [...document.querySelectorAll(sel)];
       return els.map((el, i) => ({
@@ -1387,16 +1417,18 @@ async function main() {
   const browser = await puppeteer.launch({ headless: 'new', ...(CHROME_EXEC_PATH ? { executablePath: CHROME_EXEC_PATH } : {}), args: ['--no-sandbox'] });
 
   const buildAll = process.argv.includes('--all');
+  const textbookOnly = process.argv.includes('--textbook-only');
   try {
-    if (buildAll) {
+    if (buildAll || textbookOnly) {
       console.log('🖨️  1/6 Compiling 12-Page Classroom Textbook...');
       await auditAndPrintPdf(
         browser,
         buildTextbookHtml(unitData),
-        [path.join(PUB_UNIT_DIR, 'textbook.html')],
+        [path.join(PUB_UNIT_DIR, 'textbook.html'), path.join(SRC_UNIT_DIR, 'textbook.html')],
         [path.join(PUB_PDF_DIR, 'ks2_romans_textbook.pdf'), path.join(PUB_ROMANS_PDF_DIR, 'ks2_romans_textbook.pdf')],
         '.tb-page'
       );
+      if (textbookOnly) return;
     }
 
     console.log('🖨️  Compiling 6 × 2-Page Primary Enquiry Worksheets (ks2_romans)...');

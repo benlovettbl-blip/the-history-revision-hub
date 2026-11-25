@@ -594,14 +594,18 @@ function buildTextbookHtml(spec, unitData) {
   const lessonPagesHtml = lessons
     .map((l, idx) => {
       const pNum = idx + 4;
+      const wbs = Array.isArray(l.workbook_stages) ? l.workbook_stages : [];
+      const cds = Array.isArray(l.causal_domino_spine?.stages) ? l.causal_domino_spine.stages : [];
       const blocksHtml = (l.narrative_blocks || [])
-        .map(
-          (b, bIdx) => `
+        .map((b, bIdx) => {
+          const stQ = String(wbs[bIdx]?.question || cds[bIdx]?.question || wbs[bIdx]?.focus_clue || '').replace(/<[^>]+>/g, '').trim();
+          return `
           <div class="block-section">
             <div class="act-kicker">[${idx + 1}.${bIdx + 1}] ${escapeHtml(b.title)}</div>
+            ${stQ && stQ.includes('?') ? `<div class="tb-stage-q">“${escapeHtml(stQ)}”</div>` : ''}
             <p class="prose-para">${cleanProse(b.text || b.content)}</p>
-          </div>`
-        )
+          </div>`;
+        })
         .join('');
 
       return `
@@ -712,7 +716,11 @@ function buildTextbookHtml(spec, unitData) {
     }
     .act-kicker {
       font-family: 'Inter', sans-serif; font-size: 8.3pt; font-weight: 800; color: ${spec.themePrimary};
-      text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 1.1mm; border-left: 3px solid ${spec.themeAccent}; padding-left: 2.4mm;
+      text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.8mm; border-left: 3px solid ${spec.themeAccent}; padding-left: 2.4mm;
+    }
+    .tb-stage-q {
+      font-family: 'Playfair Display', Georgia, serif; font-style: italic; font-size: 9.0pt; color: ${spec.themePrimary};
+      margin-bottom: 1.0mm; line-height: 1.26;
     }
     .prose-para { text-align: left; }
     .quiz-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3mm; flex: 1; align-content: center; }
@@ -1738,6 +1746,28 @@ async function auditAndPrintPdf(browser, htmlContent, htmlPaths, pdfPaths, pageS
   await new Promise((r) => setTimeout(r, 150));
 
   if (pageSelector) {
+    if (pageSelector === '.tb-page') {
+      await page.evaluate(() => {
+        document.querySelectorAll('.tb-page').forEach((pg) => {
+          const col = pg.querySelector('.single-reading-col');
+          if (!col) return;
+          const paras = Array.from(col.querySelectorAll('p'));
+          let pt = 11.4;
+          while (pg.scrollHeight > pg.clientHeight && pt >= 10.0) {
+            pt -= 0.1;
+            const lh = Math.max(1.38, 1.52 - (11.4 - pt) * 0.1).toFixed(2);
+            col.style.fontSize = pt.toFixed(1) + 'pt';
+            col.style.lineHeight = lh;
+            paras.forEach((p) => {
+              p.style.fontSize = pt.toFixed(1) + 'pt';
+              p.style.lineHeight = lh;
+            });
+          }
+        });
+      });
+      const calibrated = await page.content();
+      for (const hp of htmlPaths) fs.writeFileSync(hp, calibrated, 'utf8');
+    }
     const overflows = await page.evaluate((sel) => {
       const els = [...document.querySelectorAll(sel)];
       return els.map((el, i) => ({
@@ -1769,7 +1799,7 @@ async function auditAndPrintPdf(browser, htmlContent, htmlPaths, pdfPaths, pageS
 }
 
 async function main() {
-  const targetFilter = process.argv[2] || null;
+  const targetFilter = process.argv.slice(2).find((a) => !a.startsWith('--')) || null;
   const rightsDb = JSON.parse(fs.readFileSync(RIGHTS_DB_PATH, 'utf8'));
   const CHROME_EXEC_PATH = process.env.PUPPETEER_EXECUTABLE_PATH || [
   'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe',
@@ -1794,19 +1824,21 @@ async function main() {
       const pubUnitPdfDir = path.join(PUB_PDF_DIR, spec.unitId);
 
       const buildAll = process.argv.includes('--all');
-      [pubUnitDir, pubWsDir, PUB_PDF_DIR, pubUnitPdfDir].forEach((d) =>
+      const textbookOnly = process.argv.includes('--textbook-only');
+      [pubUnitDir, srcUnitDir, pubWsDir, PUB_PDF_DIR, pubUnitPdfDir].forEach((d) =>
         fs.mkdirSync(d, { recursive: true })
       );
 
-      if (buildAll) {
+      if (buildAll || textbookOnly) {
         console.log(`🖨️  [1/6] 12-Page Classroom Textbook (${spec.unitId})...`);
         await auditAndPrintPdf(
           browser,
           buildTextbookHtml(spec, unitData),
-          [path.join(pubUnitDir, 'textbook.html')],
+          [path.join(pubUnitDir, 'textbook.html'), path.join(srcUnitDir, 'textbook.html')],
           [path.join(PUB_PDF_DIR, `${spec.unitId}_textbook.pdf`), path.join(pubUnitPdfDir, `${spec.unitId}_textbook.pdf`)],
           '.tb-page'
         );
+        if (textbookOnly) continue;
       }
 
       console.log(`🖨️  6 × 2-Page Primary Enquiry Worksheets (${spec.unitId})...`);

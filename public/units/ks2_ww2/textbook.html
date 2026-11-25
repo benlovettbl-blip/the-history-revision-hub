@@ -23,7 +23,7 @@
       max-height: 297mm;
       background: #ffffff;
       margin: 0 auto 8mm auto;
-      padding: 9.5mm 12.5mm 6mm 12.5mm;
+      padding: 9.5mm 12.5mm 8.5mm 12.5mm;
       position: relative;
       overflow: hidden;
       display: flex;
@@ -666,12 +666,24 @@
       white-space: nowrap;
     }
     .spread-stage-q {
+      break-after: avoid;
+      break-inside: avoid;
       font-family: 'Playfair Display', Georgia, serif;
       font-style: italic;
       font-size: 9.2pt;
       color: var(--acc-dark);
-      margin-bottom: 5px;
-      line-height: 1.3;
+      margin-bottom: 4.5px;
+      line-height: 1.28;
+    }
+    .page-lesson:not(.page-spread):not(.page-lesson-ks2) .spread-stage-q {
+      font-size: 8.15pt;
+      line-height: 1.22;
+      margin-bottom: 3px;
+    }
+    .page-lesson-ks2 .spread-stage-q {
+      font-size: 9.4pt;
+      line-height: 1.28;
+      margin-bottom: 4px;
     }
     .block-prose .prose-p {
       font-family: 'Lora', Georgia, serif;
@@ -1242,25 +1254,27 @@
     <div class="prose-wrap">
       <div class="prose-single-wide">
         
-        <div class="block-section" style="margin-bottom: 11.6px;">
+        <div class="block-section" style="margin-bottom: 10.3px;">
           <div class="block-hdr">
             <span class="stage-pill">STAGE 1</span>
             <span class="block-title">The Sunday Morning Radio Broadcast</span>
             <span class="block-date">3 September 1939</span>
           </div>
+          <div class="spread-stage-q">“How did British families hear that war had begun on 3 September 1939?”</div>
           <div class="block-prose">
-            <p class="prose-p" style="font-size: 12.25pt; line-height: 1.65; margin-bottom: 0px;">On Sunday morning, 3 September 1939, millions of British families gathered quietly around wooden wireless radios. Two days earlier, on 1 September, Adolf Hitler's German army had invaded Poland. At 11:15am, Prime Minister <strong>Neville Chamberlain</strong> spoke from 10 Downing Street: <em>"This country is at war with Germany."</em><br><br>Just fifteen minutes later, a loud wailing <strong>air raid siren</strong> echoed across London. Families hurried into cellars and streets while staring nervously at the sky. That first warning turned out to be a false alarm caused by a friendly aircraft. Even so, everyone now knew that modern war would reach ordinary homes.</p>
+            <p class="prose-p" style="font-size: 12.1pt; line-height: 1.61; margin-bottom: 0px;">On Sunday morning, 3 September 1939, millions of British families gathered quietly around wooden wireless radios. Two days earlier, on 1 September, Adolf Hitler's German army had invaded Poland. At 11:15am, Prime Minister <strong>Neville Chamberlain</strong> spoke from 10 Downing Street: <em>"This country is at war with Germany."</em><br><br>Just fifteen minutes later, a loud wailing <strong>air raid siren</strong> echoed across London. Families hurried into cellars and streets while staring nervously at the sky. That first warning turned out to be a false alarm caused by a friendly aircraft. Even so, everyone now knew that modern war would reach ordinary homes.</p>
           </div>
         </div>
 
-        <div class="block-section" style="margin-bottom: 11.6px;">
+        <div class="block-section" style="margin-bottom: 10.3px;">
           <div class="block-hdr">
             <span class="stage-pill">STAGE 2</span>
             <span class="block-title">38 Million Gas Masks on Shoulder Strings</span>
             <span class="block-date">September 1939</span>
           </div>
+          <div class="spread-stage-q">“Why did the government give out 38 million gas masks before bombs fell?”</div>
           <div class="block-prose">
-            <p class="prose-p" style="font-size: 12.25pt; line-height: 1.65; margin-bottom: 0px;">People still remembered the deadly poison gas used during the First World War. The British government feared enemy aircraft might drop gas bombs on crowded towns. Before war was even declared, officials handed out <strong>38 million free gas masks</strong> to protect every civilian.<br><br>Adults and schoolchildren carried black rubber respirators inside square cardboard boxes on shoulder strings. Toddlers were given bright red-and-blue <strong>"Mickey Mouse" gas masks</strong> so they looked less scary. Babies were placed inside enclosed protective gas helmets fitted with a hand pump. At school, children practised putting on their masks in seconds despite the hot rubber smell.</p>
+            <p class="prose-p" style="font-size: 12.1pt; line-height: 1.61; margin-bottom: 0px;">People still remembered the deadly poison gas used during the First World War. The British government feared enemy aircraft might drop gas bombs on crowded towns. Before war was even declared, officials handed out <strong>38 million free gas masks</strong> to protect every civilian.<br><br>Adults and schoolchildren carried black rubber respirators inside square cardboard boxes on shoulder strings. Toddlers were given bright red-and-blue <strong>"Mickey Mouse" gas masks</strong> so they looked less scary. Babies were placed inside enclosed protective gas helmets fitted with a hand pump. At school, children practised putting on their masks in seconds despite the hot rubber smell.</p>
           </div>
         </div>
 
@@ -1270,8 +1284,9 @@
             <span class="block-title">The Blackout &amp; Volunteer ARP Wardens</span>
             <span class="block-date">From 1 September 1939</span>
           </div>
+          <div class="spread-stage-q">“How did families and ARP wardens keep streets dark in the Blackout?”</div>
           <div class="block-prose">
-            <p class="prose-p" style="font-size: 12.25pt; line-height: 1.65; margin-bottom: 0px;">Two nights before war was declared — on <strong>1 September 1939</strong> — Britain switched off its lights. Under strict <strong>Blackout</strong> rules, every streetlight went dark and car headlamps wore narrow slotted hoods. Families hung thick black curtains over every window so German night bombers could not spot cities below.<br><br>Pitch-dark streets soon caused bumps and road accidents. Councils painted <strong>white stripes along kerbs, tree trunks, lampposts, and gateposts</strong> to guide pedestrians safely. Over <strong>1.4 million</strong> volunteer <strong>Air Raid Precautions (ARP) wardens</strong> patrolled streets in <strong>black steel helmets painted with a white "W"</strong>. Whenever light shone through a curtain, they shouted, <em>"Put that light out!"</em></p>
+            <p class="prose-p" style="font-size: 12.1pt; line-height: 1.61; margin-bottom: 0px;">Two nights before war was declared — on <strong>1 September 1939</strong> — Britain switched off its lights. Under strict <strong>Blackout</strong> rules, every streetlight went dark and car headlamps wore narrow slotted hoods. Families hung thick black curtains over every window so German night bombers could not spot cities below.<br><br>Pitch-dark streets soon caused bumps and road accidents. Councils painted <strong>white stripes along kerbs, tree trunks, lampposts, and gateposts</strong> to guide pedestrians safely. Over <strong>1.4 million</strong> volunteer <strong>Air Raid Precautions (ARP) wardens</strong> patrolled streets in <strong>black steel helmets painted with a white "W"</strong>. Whenever light shone through a curtain, they shouted, <em>"Put that light out!"</em></p>
           </div>
         </div>
       </div>
@@ -1325,25 +1340,27 @@
     <div class="prose-wrap">
       <div class="prose-single-wide">
         
-        <div class="block-section" style="margin-bottom: 11.1px;">
+        <div class="block-section" style="margin-bottom: 9.3px;">
           <div class="block-hdr">
             <span class="stage-pill">STAGE 1</span>
             <span class="block-title">Operation Pied Piper Begins</span>
             <span class="block-date">1 September 1939</span>
           </div>
+          <div class="spread-stage-q">“Why did Operation Pied Piper move 1.5 million people out of cities?”</div>
           <div class="block-prose">
-            <p class="prose-p" style="font-size: 12.05pt; line-height: 1.63; margin-bottom: 0px;">Two days before Britain declared war, the government launched <strong>Operation Pied Piper</strong>. It was the biggest movement of people in British history. Starting on <strong>1 September 1939</strong>, around <strong>1.5 million</strong> schoolchildren, teachers, and mothers with infants left crowded cities.<br><br>Children walked in school lines to railway stations. Each child carried a gas mask box, sandwiches, and one small bag of spare clothes. An official <strong>cardboard luggage label</strong> was pinned to every coat showing their name, school, and address. To stop dangerous overcrowding and panic on the platforms, <strong>parents had to kiss their children goodbye outside the station barriers</strong>.</p>
+            <p class="prose-p" style="font-size: 11.7pt; line-height: 1.58; margin-bottom: 0px;">Two days before Britain declared war, the government launched <strong>Operation Pied Piper</strong>. It was the biggest movement of people in British history. Starting on <strong>1 September 1939</strong>, around <strong>1.5 million</strong> schoolchildren, teachers, and mothers with infants left crowded cities.<br><br>Children walked in school lines to railway stations. Each child carried a gas mask box, sandwiches, and one small bag of spare clothes. An official <strong>cardboard luggage label</strong> was pinned to every coat showing their name, school, and address. To stop dangerous overcrowding and panic on the platforms, <strong>parents had to kiss their children goodbye outside the station barriers</strong>.</p>
           </div>
         </div>
 
-        <div class="block-section" style="margin-bottom: 11.1px;">
+        <div class="block-section" style="margin-bottom: 9.3px;">
           <div class="block-hdr">
             <span class="stage-pill">STAGE 2</span>
             <span class="block-title">The Village Hall &amp; The Billeting Officer</span>
             <span class="block-date">Autumn 1939</span>
           </div>
+          <div class="spread-stage-q">“Why did many evacuees feel nervous waiting in the village hall?”</div>
           <div class="block-prose">
-            <p class="prose-p" style="font-size: 12.05pt; line-height: 1.63; margin-bottom: 0px;">Steam trains carried tired children for hours toward unknown stops. At last they reached quieter country counties such as Devon, Cornwall, Norfolk, or Wales. From country stations, evacuees walked to the local church or village hall for drinks and biscuits.<br><br>There, a volunteer called the <strong>Billeting Officer</strong> matched every child to a <strong>host family</strong>. Country householders with spare bedrooms had to take in evacuees by law. In return, hosts received a small weekly government payment for food. Many children felt nervous waiting as strangers chose them, especially brothers and sisters hoping not to be split up.</p>
+            <p class="prose-p" style="font-size: 11.7pt; line-height: 1.58; margin-bottom: 0px;">Steam trains carried tired children for hours toward unknown stops. At last they reached quieter country counties such as Devon, Cornwall, Norfolk, or Wales. From country stations, evacuees walked to the local church or village hall for drinks and biscuits.<br><br>There, a volunteer called the <strong>Billeting Officer</strong> matched every child to a <strong>host family</strong>. Country householders with spare bedrooms had to take in evacuees by law. In return, hosts received a small weekly government payment for food. Many children felt nervous waiting as strangers chose them, especially brothers and sisters hoping not to be split up.</p>
           </div>
         </div>
 
@@ -1353,8 +1370,9 @@
             <span class="block-title">Countryside Shocks &amp; Mixed Experiences</span>
             <span class="block-date">1940 Onwards</span>
           </div>
+          <div class="spread-stage-q">“Why did city children have such different lives on country farms?”</div>
           <div class="block-prose">
-            <p class="prose-p" style="font-size: 12.05pt; line-height: 1.63; margin-bottom: 0px;">Country life brought big surprises for both city children and rural hosts. Many children from smoky city streets had never seen live cows being milked or pigs in muddy pens. Some had never seen apples growing on trees instead of stacked in shop crates. Meanwhile, some hosts were shocked by how thin poorer inner-city children looked.<br><br>Evacuees had very different experiences. Thousands were treated like family, enjoyed warm beds and fresh air, and stayed friends for life. Others felt lonely, missed their parents badly, or lived in strict homes. When no bombs fell during the quiet <strong>"Phoney War"</strong> of late 1939, thousands went home — until heavy bombing began in 1940.</p>
+            <p class="prose-p" style="font-size: 11.7pt; line-height: 1.58; margin-bottom: 0px;">Country life brought big surprises for both city children and rural hosts. Many children from smoky city streets had never seen live cows being milked or pigs in muddy pens. Some had never seen apples growing on trees instead of stacked in shop crates. Meanwhile, some hosts were shocked by how thin poorer inner-city children looked.<br><br>Evacuees had very different experiences. Thousands were treated like family, enjoyed warm beds and fresh air, and stayed friends for life. Others felt lonely, missed their parents badly, or lived in strict homes. When no bombs fell during the quiet <strong>"Phoney War"</strong> of late 1939, thousands went home — until heavy bombing began in 1940.</p>
           </div>
         </div>
       </div>
@@ -1408,25 +1426,27 @@
     <div class="prose-wrap">
       <div class="prose-single-wide">
         
-        <div class="block-section" style="margin-bottom: 10.9px;">
+        <div class="block-section" style="margin-bottom: 9.4px;">
           <div class="block-hdr">
             <span class="stage-pill">STAGE 1</span>
             <span class="block-title">Ordinary Childhoods Across Europe Before 1933</span>
             <span class="block-date">Pre-1933</span>
           </div>
+          <div class="spread-stage-q">“What were everyday childhoods like for Jewish children before the war?”</div>
           <div class="block-prose">
-            <p class="prose-p" style="font-size: 11.95pt; line-height: 1.62; margin-bottom: 0px;">Before the Second World War, over <strong>9 million</strong> Jewish people lived across Europe. In Germany, Jewish families made up less than one percent of the population. Many had lived there as proud citizens for centuries. They worked as shopkeepers, doctors, teachers, musicians, and factory workers.<br><br>Jewish children enjoyed the same everyday childhoods as their classmates. They played in local <strong>football teams</strong>, rode bicycles, joined scout groups, and went on family holidays. On their first day of school, six-year-olds proudly carried a <strong>Schultüte</strong>. This tall, brightly decorated cardboard cone was filled with sweets, fruit, and new pencils.</p>
+            <p class="prose-p" style="font-size: 11.75pt; line-height: 1.58; margin-bottom: 0px;">Before the Second World War, over <strong>9 million</strong> Jewish people lived across Europe. In Germany, Jewish families made up less than one percent of the population. Many had lived there as proud citizens for centuries. They worked as shopkeepers, doctors, teachers, musicians, and factory workers.<br><br>Jewish children enjoyed the same everyday childhoods as their classmates. They played in local <strong>football teams</strong>, rode bicycles, joined scout groups, and went on family holidays. On their first day of school, six-year-olds proudly carried a <strong>Schultüte</strong>. This tall, brightly decorated cardboard cone was filled with sweets, fruit, and new pencils.</p>
           </div>
         </div>
 
-        <div class="block-section" style="margin-bottom: 10.9px;">
+        <div class="block-section" style="margin-bottom: 9.4px;">
           <div class="block-hdr">
             <span class="stage-pill">STAGE 2</span>
             <span class="block-title">Unfair Laws Step by Step</span>
             <span class="block-date">1933–1937</span>
           </div>
+          <div class="spread-stage-q">“How did Nazi laws take away Jewish rights step by step after 1933?”</div>
           <div class="block-prose">
-            <p class="prose-p" style="font-size: 11.95pt; line-height: 1.62; margin-bottom: 0px;">Everything changed in <strong>January 1933</strong>, when <strong>Adolf Hitler</strong> and the <strong>Nazi Party</strong> took power in Germany. They spread racist lies blaming Jewish people for Germany's problems. Step by step, the Nazi government passed <strong>over 400 anti-Jewish laws</strong> that stripped away basic <strong>civil rights</strong>.<br><br>In April 1933, Nazi stormtroopers stood outside Jewish shops and ordered customers away. In <strong>1935</strong>, the <strong>Nuremberg Laws</strong> took away German Jews' citizenship. Cruel rules soon crept into children's daily lives. Jewish families were banned from public parks, swimming pools, and cinemas. They also had to hand over <strong>bicycles</strong> and radios, and could not even keep family <strong>pets</strong>.</p>
+            <p class="prose-p" style="font-size: 11.75pt; line-height: 1.58; margin-bottom: 0px;">Everything changed in <strong>January 1933</strong>, when <strong>Adolf Hitler</strong> and the <strong>Nazi Party</strong> took power in Germany. They spread racist lies blaming Jewish people for Germany's problems. Step by step, the Nazi government passed <strong>over 400 anti-Jewish laws</strong> that stripped away basic <strong>civil rights</strong>.<br><br>In April 1933, Nazi stormtroopers stood outside Jewish shops and ordered customers away. In <strong>1935</strong>, the <strong>Nuremberg Laws</strong> took away German Jews' citizenship. Cruel rules soon crept into children's daily lives. Jewish families were banned from public parks, swimming pools, and cinemas. They also had to hand over <strong>bicycles</strong> and radios, and could not even keep family <strong>pets</strong>.</p>
           </div>
         </div>
 
@@ -1436,8 +1456,9 @@
             <span class="block-title">Banned from School &amp; November 1938</span>
             <span class="block-date">November 1938</span>
           </div>
+          <div class="spread-stage-q">“What happened to Jewish families and schoolchildren in November 1938?”</div>
           <div class="block-prose">
-            <p class="prose-p" style="font-size: 11.95pt; line-height: 1.62; margin-bottom: 0px;"><strong>Discrimination</strong> reached inside classrooms too. Jewish teachers were sacked from state schools. Frightened by Nazi propaganda, some former friends stopped speaking to Jewish classmates. Jewish pupils were forced onto separate benches and left out of school sports.<br><br>In <strong>November 1938</strong>, Nazi gangs launched the violent <strong>November Pogrom (Kristallnacht)</strong> across Germany and Austria. Rioters burned synagogues, smashed thousands of shop windows, and arrested 30,000 Jewish men. On <strong>15 November 1938</strong>, the Nazi Education Minister <strong>completely banned all Jewish children from attending German state schools</strong>. Terrified parents knew they had to get their children out of danger.</p>
+            <p class="prose-p" style="font-size: 11.75pt; line-height: 1.58; margin-bottom: 0px;"><strong>Discrimination</strong> reached inside classrooms too. Jewish teachers were sacked from state schools. Frightened by Nazi propaganda, some former friends stopped speaking to Jewish classmates. Jewish pupils were forced onto separate benches and left out of school sports.<br><br>In <strong>November 1938</strong>, Nazi gangs launched the violent <strong>November Pogrom (Kristallnacht)</strong> across Germany and Austria. Rioters burned synagogues, smashed thousands of shop windows, and arrested 30,000 Jewish men. On <strong>15 November 1938</strong>, the Nazi Education Minister <strong>completely banned all Jewish children from attending German state schools</strong>. Terrified parents knew they had to get their children out of danger.</p>
           </div>
         </div>
       </div>
@@ -1491,25 +1512,27 @@
     <div class="prose-wrap">
       <div class="prose-single-wide">
         
-        <div class="block-section" style="margin-bottom: 11.4px;">
+        <div class="block-section" style="margin-bottom: 10.3px;">
           <div class="block-hdr">
             <span class="stage-pill">STAGE 1</span>
             <span class="block-title">Britain Agrees to a Rescue</span>
             <span class="block-date">November 1938</span>
           </div>
+          <div class="spread-stage-q">“Why did Parliament allow 10,000 Kindertransport children into Britain?”</div>
           <div class="block-prose">
-            <p class="prose-p" style="font-size: 12.15pt; line-height: 1.64; margin-bottom: 0px;">British newspapers and radio news reported shocking stories of the <strong>November Pogrom (Kristallnacht)</strong> in November 1938. Jewish, Quaker, and Christian charities begged Britain to help. Deeply moved, the British Parliament sped up travel permits so refugee children under seventeen could enter Britain.<br><br>Between <strong>December 1938 and September 1939</strong>, this rescue became known as the <strong>Kindertransport</strong> (German for <em>"Children's Transport"</em>). It brought nearly <strong>10,000</strong> mostly Jewish children to safety from Germany, Austria, Czechoslovakia, and Poland. Heartbreakingly, <strong>parents were not allowed to come with them</strong>. Every child also needed a British <strong>sponsor</strong> or charity to promise <strong>£50</strong> for their care.</p>
+            <p class="prose-p" style="font-size: 12.1pt; line-height: 1.61; margin-bottom: 0px;">British newspapers and radio news reported shocking stories of the <strong>November Pogrom (Kristallnacht)</strong> in November 1938. Jewish, Quaker, and Christian charities begged Britain to help. Deeply moved, the British Parliament sped up travel permits so refugee children under seventeen could enter Britain.<br><br>Between <strong>December 1938 and September 1939</strong>, this rescue became known as the <strong>Kindertransport</strong> (German for <em>"Children's Transport"</em>). It brought nearly <strong>10,000</strong> mostly Jewish children to safety from Germany, Austria, Czechoslovakia, and Poland. Heartbreakingly, <strong>parents were not allowed to come with them</strong>. Every child also needed a British <strong>sponsor</strong> or charity to promise <strong>£50</strong> for their care.</p>
           </div>
         </div>
 
-        <div class="block-section" style="margin-bottom: 11.4px;">
+        <div class="block-section" style="margin-bottom: 10.3px;">
           <div class="block-hdr">
             <span class="stage-pill">STAGE 2</span>
             <span class="block-title">Nine-Year-Old Vera's One Small Suitcase</span>
             <span class="block-date">May 1939</span>
           </div>
+          <div class="spread-stage-q">“Why did Vera’s parents send her to England with one small suitcase?”</div>
           <div class="block-prose">
-            <p class="prose-p" style="font-size: 12.15pt; line-height: 1.64; margin-bottom: 0px;">One of those children was <strong>nine-year-old Vera Löwyová</strong> (later <strong>Vera Schaufeld</strong>) from Czechoslovakia. In March 1939, Nazi soldiers marched into <strong>Prague</strong>. Vera's loving parents made the painful choice to put her name on a rescue train to England.<br><br>Each child could take only <strong>one small suitcase</strong> and ten Reichsmarks, with no jewellery or valuables. Vera packed warm clothes, her <strong>autograph diary</strong> signed by her parents, and her <strong>English porcelain doll</strong>. In <strong>May 1939</strong>, she wore a numbered identity card around her neck at Prague's Wilson Station. Waving through the carriage window, Vera bravely promised her parents not to cry.</p>
+            <p class="prose-p" style="font-size: 12.1pt; line-height: 1.61; margin-bottom: 0px;">One of those children was <strong>nine-year-old Vera Löwyová</strong> (later <strong>Vera Schaufeld</strong>) from Czechoslovakia. In March 1939, Nazi soldiers marched into <strong>Prague</strong>. Vera's loving parents made the painful choice to put her name on a rescue train to England.<br><br>Each child could take only <strong>one small suitcase</strong> and ten Reichsmarks, with no jewellery or valuables. Vera packed warm clothes, her <strong>autograph diary</strong> signed by her parents, and her <strong>English porcelain doll</strong>. In <strong>May 1939</strong>, she wore a numbered identity card around her neck at Prague's Wilson Station. Waving through the carriage window, Vera bravely promised her parents not to cry.</p>
           </div>
         </div>
 
@@ -1519,8 +1542,9 @@
             <span class="block-title">Across the Sea to Liverpool Street Station</span>
             <span class="block-date">Summer 1939</span>
           </div>
+          <div class="spread-stage-q">“How did Kindertransport trains and ferries bring children to London?”</div>
           <div class="block-prose">
-            <p class="prose-p" style="font-size: 12.15pt; line-height: 1.64; margin-bottom: 0px;">For two days, Vera's train rolled across Germany. At last it crossed the border into the <strong>Netherlands</strong>. Kind Dutch women met the children with trays of <strong>hot chocolate, white bread, and smiles</strong>. For the first time, the children felt safe from Nazi guards. From the <strong>Hook of Holland</strong>, they sailed overnight by ferry to <strong>Harwich</strong> in Essex.<br><br>Steam trains carried Kindertransport children into London's <strong>Liverpool Street Station</strong>, where kind British foster families waited to welcome them. Britain gave them safety, schooling, and care, until war slammed borders shut in September 1939. Sadly, like many Kindertransport refugees, Vera never saw her parents again.</p>
+            <p class="prose-p" style="font-size: 12.1pt; line-height: 1.61; margin-bottom: 0px;">For two days, Vera's train rolled across Germany. At last it crossed the border into the <strong>Netherlands</strong>. Kind Dutch women met the children with trays of <strong>hot chocolate, white bread, and smiles</strong>. For the first time, the children felt safe from Nazi guards. From the <strong>Hook of Holland</strong>, they sailed overnight by ferry to <strong>Harwich</strong> in Essex.<br><br>Steam trains carried Kindertransport children into London's <strong>Liverpool Street Station</strong>, where kind British foster families waited to welcome them. Britain gave them safety, schooling, and care, until war slammed borders shut in September 1939. Sadly, like many Kindertransport refugees, Vera never saw her parents again.</p>
           </div>
         </div>
       </div>
@@ -1574,25 +1598,27 @@
     <div class="prose-wrap">
       <div class="prose-single-wide">
         
-        <div class="block-section" style="margin-bottom: 12.3px;">
+        <div class="block-section" style="margin-bottom: 10.3px;">
           <div class="block-hdr">
             <span class="stage-pill">STAGE 1</span>
             <span class="block-title">A Cancelled Skiing Holiday</span>
             <span class="block-date">December 1938</span>
           </div>
+          <div class="spread-stage-q">“Why did Nicholas Winton cancel his holiday to visit Prague in 1938?”</div>
           <div class="block-prose">
-            <p class="prose-p" style="font-size: 12.5pt; line-height: 1.67; margin-bottom: 0px;">In December 1938, 29-year-old London stockbroker <strong>Nicholas Winton</strong> packed for a <strong>skiing holiday in Switzerland</strong>. Just before leaving, his friend <strong>Martin Blake</strong> phoned urgently from <strong>Prague, Czechoslovakia</strong>. Blake asked Winton to cancel his holiday and come to see a growing refugee crisis instead.<br><br>Tens of thousands of Jewish and anti-Nazi families had fled into Prague after Germany seized the borderlands. Many were trapped in freezing camps as winter set in. Refusing to be a <strong>bystander</strong>, Winton chose to become an <strong>upstander</strong>. At his dining table in a Prague hotel, he listed the names and photos of children needing rescue.</p>
+            <p class="prose-p" style="font-size: 12.1pt; line-height: 1.61; margin-bottom: 0px;">In December 1938, 29-year-old London stockbroker <strong>Nicholas Winton</strong> packed for a <strong>skiing holiday in Switzerland</strong>. Just before leaving, his friend <strong>Martin Blake</strong> phoned urgently from <strong>Prague, Czechoslovakia</strong>. Blake asked Winton to cancel his holiday and come to see a growing refugee crisis instead.<br><br>Tens of thousands of Jewish and anti-Nazi families had fled into Prague after Germany seized the borderlands. Many were trapped in freezing camps as winter set in. Refusing to be a <strong>bystander</strong>, Winton chose to become an <strong>upstander</strong>. At his dining table in a Prague hotel, he listed the names and photos of children needing rescue.</p>
           </div>
         </div>
 
-        <div class="block-section" style="margin-bottom: 12.3px;">
+        <div class="block-section" style="margin-bottom: 10.3px;">
           <div class="block-hdr">
             <span class="stage-pill">STAGE 2</span>
             <span class="block-title">The Rescue Chain in Prague &amp; London</span>
             <span class="block-date">Spring 1939</span>
           </div>
+          <div class="spread-stage-q">“How did volunteers in Prague and London get the children to safety?”</div>
           <div class="block-prose">
-            <p class="prose-p" style="font-size: 12.5pt; line-height: 1.67; margin-bottom: 0px;">Saving hundreds of children took a brave team from the <strong>British Committee for Refugees from Czechoslovakia</strong>. British economist <strong>Doreen Warriner</strong> organised dangerous relief work across Prague. Meanwhile, Dorset Latin schoolteacher <strong>Trevor Chadwick</strong> stayed on after Nazi troops occupied the city. He calmly led frightened children past armed guards onto the trains.<br><br>Back in London, Winton worked at the Stock Exchange by day. Every evening, he ran the rescue campaign with his determined mother <strong>Babi</strong>. Together they pressed the Home Office for <strong>visas</strong> and printed children's photos in newspapers. Soon they found hundreds of kind foster families and <strong>£50 sponsors</strong>.</p>
+            <p class="prose-p" style="font-size: 12.1pt; line-height: 1.61; margin-bottom: 0px;">Saving hundreds of children took a brave team from the <strong>British Committee for Refugees from Czechoslovakia</strong>. British economist <strong>Doreen Warriner</strong> organised dangerous relief work across Prague. Meanwhile, Dorset Latin schoolteacher <strong>Trevor Chadwick</strong> stayed on after Nazi troops occupied the city. He calmly led frightened children past armed guards onto the trains.<br><br>Back in London, Winton worked at the Stock Exchange by day. Every evening, he ran the rescue campaign with his determined mother <strong>Babi</strong>. Together they pressed the Home Office for <strong>visas</strong> and printed children's photos in newspapers. Soon they found hundreds of kind foster families and <strong>£50 sponsors</strong>.</p>
           </div>
         </div>
 
@@ -1602,8 +1628,9 @@
             <span class="block-title">669 Children Saved &amp; The Attic Scrapbook</span>
             <span class="block-date">1988</span>
           </div>
+          <div class="spread-stage-q">“How did the world discover Winton’s 1939 rescue scrapbook in 1988?”</div>
           <div class="block-prose">
-            <p class="prose-p" style="font-size: 12.5pt; line-height: 1.67; margin-bottom: 0px;">Between March and August 1939, eight rescue trains from Prague brought <strong>669 children</strong> to Liverpool Street Station in London. One of them was Vera's May 1939 train. A ninth train was due to carry 250 children on <strong>1 September 1939</strong>, when Germany invaded Poland and borders slammed shut.<br><br>For nearly fifty years, Winton kept his rescue work secret. In <strong>1988</strong>, his wife <strong>Grete</strong> found his dusty <strong>1939 scrapbook</strong> of all 669 children's names in their attic. On the BBC television show <em>That's Life!</em>, dozens of saved adults stood up around him — alive thanks to his team's courage.</p>
+            <p class="prose-p" style="font-size: 12.1pt; line-height: 1.61; margin-bottom: 0px;">Between March and August 1939, eight rescue trains from Prague brought <strong>669 children</strong> to Liverpool Street Station in London. One of them was Vera's May 1939 train. A ninth train was due to carry 250 children on <strong>1 September 1939</strong>, when Germany invaded Poland and borders slammed shut.<br><br>For nearly fifty years, Winton kept his rescue work secret. In <strong>1988</strong>, his wife <strong>Grete</strong> found his dusty <strong>1939 scrapbook</strong> of all 669 children's names in their attic. On the BBC television show <em>That's Life!</em>, dozens of saved adults stood up around him — alive thanks to his team's courage.</p>
           </div>
         </div>
       </div>
@@ -1657,25 +1684,27 @@
     <div class="prose-wrap">
       <div class="prose-single-wide">
         
-        <div class="block-section" style="margin-bottom: 11.6px;">
+        <div class="block-section" style="margin-bottom: 10px;">
           <div class="block-hdr">
             <span class="stage-pill">STAGE 1</span>
             <span class="block-title">Black Saturday &amp; 57 Nights of Bombing</span>
             <span class="block-date">September 1940</span>
           </div>
+          <div class="spread-stage-q">“Why did Hitler launch The Blitz against London and UK cities in 1940?”</div>
           <div class="block-prose">
-            <p class="prose-p" style="font-size: 12.25pt; line-height: 1.65; margin-bottom: 0px;">On <strong>Saturday 7 September 1940 ("Black Saturday")</strong>, over 300 German Luftwaffe bombers roared up the River Thames. They dropped high-explosive and <strong>incendiary bombs</strong> onto <strong>London's East End docks</strong>. This began <strong>The Blitz</strong> (from the German word <em>Blitzkrieg</em>, meaning "lightning war"), as Hitler tried to force Britain to surrender.<br><br>London was bombed for <strong>57 nights in a row</strong>. Heavy raids also hit UK ports and factory cities, including <strong>Coventry, Liverpool, Plymouth, Birmingham, Manchester, Bristol, Hull, Clydebank, and Belfast</strong>. Through thick smoke and flames, <strong>St Paul's Cathedral</strong> survived thanks to brave volunteer firewatchers guarding its dome.</p>
+            <p class="prose-p" style="font-size: 12pt; line-height: 1.6; margin-bottom: 0px;">On <strong>Saturday 7 September 1940 ("Black Saturday")</strong>, over 300 German Luftwaffe bombers roared up the River Thames. They dropped high-explosive and <strong>incendiary bombs</strong> onto <strong>London's East End docks</strong>. This began <strong>The Blitz</strong> (from the German word <em>Blitzkrieg</em>, meaning "lightning war"), as Hitler tried to force Britain to surrender.<br><br>London was bombed for <strong>57 nights in a row</strong>. Heavy raids also hit UK ports and factory cities, including <strong>Coventry, Liverpool, Plymouth, Birmingham, Manchester, Bristol, Hull, Clydebank, and Belfast</strong>. Through thick smoke and flames, <strong>St Paul's Cathedral</strong> survived thanks to brave volunteer firewatchers guarding its dome.</p>
           </div>
         </div>
 
-        <div class="block-section" style="margin-bottom: 11.6px;">
+        <div class="block-section" style="margin-bottom: 10px;">
           <div class="block-hdr">
             <span class="stage-pill">STAGE 2</span>
             <span class="block-title">Anderson &amp; Morrison Shelters at Home</span>
             <span class="block-date">1939–1940</span>
           </div>
+          <div class="spread-stage-q">“How did Anderson and Morrison shelters protect families during raids?”</div>
           <div class="block-prose">
-            <p class="prose-p" style="font-size: 12.25pt; line-height: 1.65; margin-bottom: 0px;">As raids lasted 57 nights in a row, the government gave over <strong>2 million corrugated steel Anderson shelters</strong> free to poorer families with gardens. Families dug a pit <strong>3 feet deep</strong> in the lawn and bolted six curved steel sheets together. Then they piled <strong>15 inches of soil</strong> on top and grew vegetables and flowers on the roof! Though cold and damp, Anderson shelters stood firm against bomb blasts.<br><br>Millions of city families had no garden. From early 1941, they received indoor <strong>Morrison shelters</strong> — strong steel-mesh cages shaped like dining tables. Families ate meals on top by day and slept safely inside the cage at night.</p>
+            <p class="prose-p" style="font-size: 12pt; line-height: 1.6; margin-bottom: 0px;">As raids lasted 57 nights in a row, the government gave over <strong>2 million corrugated steel Anderson shelters</strong> free to poorer families with gardens. Families dug a pit <strong>3 feet deep</strong> in the lawn and bolted six curved steel sheets together. Then they piled <strong>15 inches of soil</strong> on top and grew vegetables and flowers on the roof! Though cold and damp, Anderson shelters stood firm against bomb blasts.<br><br>Millions of city families had no garden. From early 1941, they received indoor <strong>Morrison shelters</strong> — strong steel-mesh cages shaped like dining tables. Families ate meals on top by day and slept safely inside the cage at night.</p>
           </div>
         </div>
 
@@ -1685,8 +1714,9 @@
             <span class="block-title">Tube Station Platforms &amp; Rooftop Volunteers</span>
             <span class="block-date">Winter 1940–1941</span>
           </div>
+          <div class="spread-stage-q">“How did families shelter in London Tube stations while teams fought fires?”</div>
           <div class="block-prose">
-            <p class="prose-p" style="font-size: 12.25pt; line-height: 1.65; margin-bottom: 0px;">In London, over <strong>150,000 people</strong> sheltered deep underground each night on <strong>Tube station platforms</strong>. Families queued with blankets, pillows, and flasks of tea. Curved platforms became busy dormitories fitted with triple bunk beds, first-aid posts, and even lending libraries.<br><br>Above ground, ordinary volunteers worked through the raids. The <strong>Auxiliary Fire Service (AFS)</strong> battled dockland fires, while <strong>rooftop firewatchers</strong> put out incendiary bombs with <strong>sandbags and hand-pumped stirrup pumps</strong>. Each morning, the <strong>Women's Voluntary Services (WVS)</strong> drove mobile canteens into bombed streets to serve hot sweet tea and rehouse families.</p>
+            <p class="prose-p" style="font-size: 12pt; line-height: 1.6; margin-bottom: 0px;">In London, over <strong>150,000 people</strong> sheltered deep underground each night on <strong>Tube station platforms</strong>. Families queued with blankets, pillows, and flasks of tea. Curved platforms became busy dormitories fitted with triple bunk beds, first-aid posts, and even lending libraries.<br><br>Above ground, ordinary volunteers worked through the raids. The <strong>Auxiliary Fire Service (AFS)</strong> battled dockland fires, while <strong>rooftop firewatchers</strong> put out incendiary bombs with <strong>sandbags and hand-pumped stirrup pumps</strong>. Each morning, the <strong>Women's Voluntary Services (WVS)</strong> drove mobile canteens into bombed streets to serve hot sweet tea and rehouse families.</p>
           </div>
         </div>
       </div>
@@ -1740,25 +1770,27 @@
     <div class="prose-wrap">
       <div class="prose-single-wide">
         
-        <div class="block-section" style="margin-bottom: 11.1px;">
+        <div class="block-section" style="margin-bottom: 9.3px;">
           <div class="block-hdr">
             <span class="stage-pill">STAGE 1</span>
             <span class="block-title">The Atlantic Lifeline &amp; Why Rationing Started</span>
             <span class="block-date">Autumn 1939</span>
           </div>
+          <div class="spread-stage-q">“Why did U-boat attacks in the Atlantic force Britain to ration food?”</div>
           <div class="block-prose">
-            <p class="prose-p" style="font-size: 12.05pt; line-height: 1.63; margin-bottom: 0px;">In 1939, island Britain imported <strong>over 70% (more than two-thirds)</strong> of its food across the <strong>Atlantic Ocean</strong>. Merchant ships carried wheat, sugar, butter, bacon, tea, and fruit. As soon as war began, German <strong>U-boat submarines</strong> hunted Allied convoys and sank hundreds of ships to starve Britain.<br><br>If scarce food had simply grown more expensive, wealthy shoppers could buy everything while poorer families went hungry. Instead, in <strong>January 1940</strong>, the <strong>Ministry of Food</strong> began <strong>rationing</strong> under the motto <em>"Fair Shares for All"</em>. It started with bacon, butter, and sugar, and soon covered meat, tea, jam, cheese, sweets, soap, and clothes.</p>
+            <p class="prose-p" style="font-size: 11.7pt; line-height: 1.58; margin-bottom: 0px;">In 1939, island Britain imported <strong>over 70% (more than two-thirds)</strong> of its food across the <strong>Atlantic Ocean</strong>. Merchant ships carried wheat, sugar, butter, bacon, tea, and fruit. As soon as war began, German <strong>U-boat submarines</strong> hunted Allied convoys and sank hundreds of ships to starve Britain.<br><br>If scarce food had simply grown more expensive, wealthy shoppers could buy everything while poorer families went hungry. Instead, in <strong>January 1940</strong>, the <strong>Ministry of Food</strong> began <strong>rationing</strong> under the motto <em>"Fair Shares for All"</em>. It started with bacon, butter, and sugar, and soon covered meat, tea, jam, cheese, sweets, soap, and clothes.</p>
           </div>
         </div>
 
-        <div class="block-section" style="margin-bottom: 11.1px;">
+        <div class="block-section" style="margin-bottom: 9.3px;">
           <div class="block-hdr">
             <span class="stage-pill">STAGE 2</span>
             <span class="block-title">Ration Books, Weekly Allowances &amp; Fair Shares</span>
             <span class="block-date">January 1940</span>
           </div>
+          <div class="spread-stage-q">“How did ration books and coupons make sure food was shared fairly?”</div>
           <div class="block-prose">
-            <p class="prose-p" style="font-size: 12.05pt; line-height: 1.63; margin-bottom: 0px;">Everyone received a paper <strong>ration book</strong> filled with <strong>coupons</strong> and registered with local shops. Shopkeepers snipped or stamped a coupon whenever a family paid. One adult's weekly ration allowed just <strong>one fresh egg</strong>, <strong>50g of butter</strong>, <strong>50g of cheese</strong>, and <strong>two rashers of bacon</strong>. Families eked out meals with dried egg powder and tinned <strong>Spam</strong>.<br><br>Expectant mothers and children under five were given green ration books. These provided extra milk, <strong>free cod liver oil</strong>, and <strong>concentrated orange juice</strong> for vitamins. <strong>Wasting edible food</strong> became a crime, and inspectors hunted cheats trading without coupons on the illegal <strong>Black Market</strong>.</p>
+            <p class="prose-p" style="font-size: 11.7pt; line-height: 1.58; margin-bottom: 0px;">Everyone received a paper <strong>ration book</strong> filled with <strong>coupons</strong> and registered with local shops. Shopkeepers snipped or stamped a coupon whenever a family paid. One adult's weekly ration allowed just <strong>one fresh egg</strong>, <strong>50g of butter</strong>, <strong>50g of cheese</strong>, and <strong>two rashers of bacon</strong>. Families eked out meals with dried egg powder and tinned <strong>Spam</strong>.<br><br>Expectant mothers and children under five were given green ration books. These provided extra milk, <strong>free cod liver oil</strong>, and <strong>concentrated orange juice</strong> for vitamins. <strong>Wasting edible food</strong> became a crime, and inspectors hunted cheats trading without coupons on the illegal <strong>Black Market</strong>.</p>
           </div>
         </div>
 
@@ -1768,8 +1800,9 @@
             <span class="block-title">Dig for Victory, Potato Pete &amp; Healthier Children</span>
             <span class="block-date">1941–1945</span>
           </div>
+          <div class="spread-stage-q">“How did "Dig for Victory" help British children grow up healthier?”</div>
           <div class="block-prose">
-            <p class="prose-p" style="font-size: 12.05pt; line-height: 1.63; margin-bottom: 0px;">Home-grown fruit and vegetables were never rationed, so the government launched <strong>"Dig for Victory"</strong>. Families dug up rose beds, village greens, railway banks, and school fields. Even the dry moat at the <strong>Tower of London</strong> was planted, creating <strong>1.4 million allotments</strong> by 1943.<br><br>Cartoon characters <strong>Potato Pete</strong> and <strong>Doctor Carrot</strong> urged children to eat British potatoes and carrots instead of imported wheat. Children even ate carrot fudge on sticks instead of sweets! Families baked meat-free <strong>Lord Woolton Pie</strong>, named after Food Minister Lord Woolton, from root vegetables and oatmeal pastry. Eating less sugar and more fresh vegetables meant <strong>British children grew taller and healthier</strong> than ever before!</p>
+            <p class="prose-p" style="font-size: 11.7pt; line-height: 1.58; margin-bottom: 0px;">Home-grown fruit and vegetables were never rationed, so the government launched <strong>"Dig for Victory"</strong>. Families dug up rose beds, village greens, railway banks, and school fields. Even the dry moat at the <strong>Tower of London</strong> was planted, creating <strong>1.4 million allotments</strong> by 1943.<br><br>Cartoon characters <strong>Potato Pete</strong> and <strong>Doctor Carrot</strong> urged children to eat British potatoes and carrots instead of imported wheat. Children even ate carrot fudge on sticks instead of sweets! Families baked meat-free <strong>Lord Woolton Pie</strong>, named after Food Minister Lord Woolton, from root vegetables and oatmeal pastry. Eating less sugar and more fresh vegetables meant <strong>British children grew taller and healthier</strong> than ever before!</p>
           </div>
         </div>
       </div>
@@ -1823,25 +1856,27 @@
     <div class="prose-wrap">
       <div class="prose-single-wide">
         
-        <div class="block-section" style="margin-bottom: 11.1px;">
+        <div class="block-section" style="margin-bottom: 9.1px;">
           <div class="block-hdr">
             <span class="stage-pill">STAGE 1</span>
             <span class="block-title">Calling Up Women for War Work</span>
             <span class="block-date">December 1941</span>
           </div>
+          <div class="spread-stage-q">“Why did Parliament call up unmarried women for war work in 1941?”</div>
           <div class="block-prose">
-            <p class="prose-p" style="font-size: 12.05pt; line-height: 1.63; margin-bottom: 0px;">Before 1939, most married women in Britain were expected to leave paid jobs to care for the home. Yet when millions of men went overseas to fight, farms, railways, shipyards, and factories ran short of workers.<br><br>In <strong>December 1941</strong>, Parliament passed the <strong>National Service Act</strong>. It introduced compulsory <strong>conscription</strong> for unmarried women aged <strong>20 to 30</strong> — the first time British women were called up by law. Women chose between farming, factory engineering, or uniformed branches of the armed forces. In 1945, even 18-year-old <strong>Princess Elizabeth</strong> (later Queen Elizabeth II) trained in overalls as an <strong>ATS</strong> driver and lorry mechanic.</p>
+            <p class="prose-p" style="font-size: 11.65pt; line-height: 1.57; margin-bottom: 0px;">Before 1939, most married women in Britain were expected to leave paid jobs to care for the home. Yet when millions of men went overseas to fight, farms, railways, shipyards, and factories ran short of workers.<br><br>In <strong>December 1941</strong>, Parliament passed the <strong>National Service Act</strong>. It introduced compulsory <strong>conscription</strong> for unmarried women aged <strong>20 to 30</strong> — the first time British women were called up by law. Women chose between farming, factory engineering, or uniformed branches of the armed forces. In 1945, even 18-year-old <strong>Princess Elizabeth</strong> (later Queen Elizabeth II) trained in overalls as an <strong>ATS</strong> driver and lorry mechanic.</p>
           </div>
         </div>
 
-        <div class="block-section" style="margin-bottom: 11.1px;">
+        <div class="block-section" style="margin-bottom: 9.1px;">
           <div class="block-hdr">
             <span class="stage-pill">STAGE 2</span>
             <span class="block-title">Land Girls &amp; Lumberjills in Fields and Forests</span>
             <span class="block-date">1939–1945</span>
           </div>
+          <div class="spread-stage-q">“How did Land Girls and Lumberjills keep Britain supplied in the war?”</div>
           <div class="block-prose">
-            <p class="prose-p" style="font-size: 12.05pt; line-height: 1.63; margin-bottom: 0px;">To keep Britain fed while U-boats prowled the seas, over <strong>80,000</strong> women joined the <strong>Women's Land Army (WLA)</strong>. <strong>"Land Girls"</strong> wore green jumpers, brown <strong>corduroy breeches</strong>, and heavy Wellington boots. From dawn to dusk in all weathers, they drove tractors, ploughed fields, milked cows, dug ditches, harvested wheat, and caught barn rats.<br><br>Thousands more joined the <strong>Women's Timber Corps</strong>, nicknamed the <strong>"Lumberjills"</strong>. Working in Scottish, Welsh, and English forests, they swung heavy axes and two-person saws. Lumberjills felled tall pine trees for coal-mine pit props, telegraph poles, and military crates.</p>
+            <p class="prose-p" style="font-size: 11.65pt; line-height: 1.57; margin-bottom: 0px;">To keep Britain fed while U-boats prowled the seas, over <strong>80,000</strong> women joined the <strong>Women's Land Army (WLA)</strong>. <strong>"Land Girls"</strong> wore green jumpers, brown <strong>corduroy breeches</strong>, and heavy Wellington boots. From dawn to dusk in all weathers, they drove tractors, ploughed fields, milked cows, dug ditches, harvested wheat, and caught barn rats.<br><br>Thousands more joined the <strong>Women's Timber Corps</strong>, nicknamed the <strong>"Lumberjills"</strong>. Working in Scottish, Welsh, and English forests, they swung heavy axes and two-person saws. Lumberjills felled tall pine trees for coal-mine pit props, telegraph poles, and military crates.</p>
           </div>
         </div>
 
@@ -1851,8 +1886,9 @@
             <span class="block-title">Canary Girls &amp; Spitfire Ferry Pilots</span>
             <span class="block-date">1940–1945</span>
           </div>
+          <div class="spread-stage-q">“What brave wartime jobs did Canary Girls and ATA women pilots do?”</div>
           <div class="block-prose">
-            <p class="prose-p" style="font-size: 12.05pt; line-height: 1.63; margin-bottom: 0px;">Nearly a million women worked in noisy <strong>munitions factories</strong> making bullets, bombs, and shells. Workers packing toxic <strong>TNT and cordite</strong> powder were nicknamed <strong>"Canary Girls"</strong> because chemicals stained their skin and hair bright yellow! Every shift was dangerous: a single metal spark could trigger an explosion, so workers wore wooden-soled shoes and no hairpins.<br><br>High in the sky, <strong>168 women pilots</strong> flew for the <strong>Air Transport Auxiliary (ATA)</strong>, including <strong>Maureen Dunlop</strong>. Using only paper maps and landmarks without radios, they ferried new <strong>Spitfires, Hurricanes, and four-engine Lancaster bombers</strong> from factories to RAF airfields. From 1943, ATA women earned the <strong>same pay as male ATA pilots</strong>.</p>
+            <p class="prose-p" style="font-size: 11.65pt; line-height: 1.57; margin-bottom: 0px;">Nearly a million women worked in noisy <strong>munitions factories</strong> making bullets, bombs, and shells. Workers packing toxic <strong>TNT and cordite</strong> powder were nicknamed <strong>"Canary Girls"</strong> because chemicals stained their skin and hair bright yellow! Every shift was dangerous: a single metal spark could trigger an explosion, so workers wore wooden-soled shoes and no hairpins.<br><br>High in the sky, <strong>168 women pilots</strong> flew for the <strong>Air Transport Auxiliary (ATA)</strong>, including <strong>Maureen Dunlop</strong>. Using only paper maps and landmarks without radios, they ferried new <strong>Spitfires, Hurricanes, and four-engine Lancaster bombers</strong> from factories to RAF airfields. From 1943, ATA women earned the <strong>same pay as male ATA pilots</strong>.</p>
           </div>
         </div>
       </div>
@@ -1906,25 +1942,27 @@
     <div class="prose-wrap">
       <div class="prose-single-wide">
         
-        <div class="block-section" style="margin-bottom: 11.1px;">
+        <div class="block-section" style="margin-bottom: 9.6px;">
           <div class="block-hdr">
             <span class="stage-pill">STAGE 1</span>
             <span class="block-title">The "Unbreakable" German Enigma Machine</span>
             <span class="block-date">1939</span>
           </div>
+          <div class="spread-stage-q">“Why was the German Enigma code machine almost impossible to crack?”</div>
           <div class="block-prose">
-            <p class="prose-p" style="font-size: 12.05pt; line-height: 1.63; margin-bottom: 0px;">During World War II, German generals and U-boat captains sent secret battle orders as Morse code beeps over radio waves. British listeners could hear every beep, yet the letters looked like nonsense. A portable German cipher machine called the <strong>Enigma machine</strong> had scrambled every message.<br><br>Inside each Enigma box sat spinning <strong>wired wheels (rotors)</strong> and an electrical <strong>plugboard</strong> at the front. Pressing "A" might light up "Q" first, then "M" next! Altogether, Enigma had <strong>over 158 million million million</strong> possible settings, and German operators changed the settings at <strong>midnight every night</strong>.</p>
+            <p class="prose-p" style="font-size: 11.85pt; line-height: 1.59; margin-bottom: 0px;">During World War II, German generals and U-boat captains sent secret battle orders as Morse code beeps over radio waves. British listeners could hear every beep, yet the letters looked like nonsense. A portable German cipher machine called the <strong>Enigma machine</strong> had scrambled every message.<br><br>Inside each Enigma box sat spinning <strong>wired wheels (rotors)</strong> and an electrical <strong>plugboard</strong> at the front. Pressing "A" might light up "Q" first, then "M" next! Altogether, Enigma had <strong>over 158 million million million</strong> possible settings, and German operators changed the settings at <strong>midnight every night</strong>.</p>
           </div>
         </div>
 
-        <div class="block-section" style="margin-bottom: 11.1px;">
+        <div class="block-section" style="margin-bottom: 9.6px;">
           <div class="block-hdr">
             <span class="stage-pill">STAGE 2</span>
             <span class="block-title">Station X, Alan Turing &amp; The Bombe Machine</span>
             <span class="block-date">1940</span>
           </div>
+          <div class="spread-stage-q">“How did Alan Turing’s Bombe machine help break Enigma at Station X?”</div>
           <div class="block-prose">
-            <p class="prose-p" style="font-size: 12.05pt; line-height: 1.63; margin-bottom: 0px;">Just before war began in 1939, clever <strong>Polish mathematicians</strong> secretly shared their early Enigma breakthroughs with Britain. British intelligence gathered puzzle experts, chess champions, language scholars, and mathematicians at a country house in Buckinghamshire. This secret headquarters was <strong>Bletchley Park</strong>, codenamed <strong>"Station X"</strong>.<br><br>Checking millions of settings by hand before midnight was impossible. Mathematician <strong>Alan Turing</strong> and <strong>Gordon Welchman</strong> designed a giant electric machine called the <strong>Bombe</strong>. Using clues such as daily German weather forecasts, spinning Bombe drums ruled out wrong settings in minutes! In 1944, Post Office engineer <strong>Tommy Flowers</strong> also built <strong>Colossus</strong> at Bletchley — the world's first programmable electronic computer.</p>
+            <p class="prose-p" style="font-size: 11.85pt; line-height: 1.59; margin-bottom: 0px;">Just before war began in 1939, clever <strong>Polish mathematicians</strong> secretly shared their early Enigma breakthroughs with Britain. British intelligence gathered puzzle experts, chess champions, language scholars, and mathematicians at a country house in Buckinghamshire. This secret headquarters was <strong>Bletchley Park</strong>, codenamed <strong>"Station X"</strong>.<br><br>Checking millions of settings by hand before midnight was impossible. Mathematician <strong>Alan Turing</strong> and <strong>Gordon Welchman</strong> designed a giant electric machine called the <strong>Bombe</strong>. Using clues such as daily German weather forecasts, spinning Bombe drums ruled out wrong settings in minutes! In 1944, Post Office engineer <strong>Tommy Flowers</strong> also built <strong>Colossus</strong> at Bletchley — the world's first programmable electronic computer.</p>
           </div>
         </div>
 
@@ -1934,8 +1972,9 @@
             <span class="block-title">7, 500 Women &amp; A Thirty-Year Secret</span>
             <span class="block-date">1941–1945</span>
           </div>
+          <div class="spread-stage-q">“How did 7,500 women and strict secrecy at Bletchley shorten the war?”</div>
           <div class="block-prose">
-            <p class="prose-p" style="font-size: 12.05pt; line-height: 1.63; margin-bottom: 0px;">By 1945, around <strong>10,000 staff</strong> worked day and night in huts at Bletchley Park. <strong>Around 75% (three-quarters, or 7,500 workers) were women</strong>, including thousands of naval <strong>Wrens</strong> from the Women's Royal Naval Service. Over noisy eight-hour shifts, they wired Bombe drums, wrote down radio signals, and translated German messages.<br><br>Everyone signed the <strong>Official Secrets Act</strong> and told not even their parents about their work until the 1970s! Bletchley's secret intelligence, codenamed <strong>Ultra</strong>, steered food ships past U-boats and helped plan D-Day. Historians estimate it <strong>shortened World War II by at least two years</strong>, saving millions of lives.</p>
+            <p class="prose-p" style="font-size: 11.85pt; line-height: 1.59; margin-bottom: 0px;">By 1945, around <strong>10,000 staff</strong> worked day and night in huts at Bletchley Park. <strong>Around 75% (three-quarters, or 7,500 workers) were women</strong>, including thousands of naval <strong>Wrens</strong> from the Women's Royal Naval Service. Over noisy eight-hour shifts, they wired Bombe drums, wrote down radio signals, and translated German messages.<br><br>Everyone signed the <strong>Official Secrets Act</strong> and told not even their parents about their work until the 1970s! Bletchley's secret intelligence, codenamed <strong>Ultra</strong>, steered food ships past U-boats and helped plan D-Day. Historians estimate it <strong>shortened World War II by at least two years</strong>, saving millions of lives.</p>
           </div>
         </div>
       </div>
@@ -1989,25 +2028,27 @@
     <div class="prose-wrap">
       <div class="prose-single-wide">
         
-        <div class="block-section" style="margin-bottom: 11.6px;">
+        <div class="block-section" style="margin-bottom: 10.3px;">
           <div class="block-hdr">
             <span class="stage-pill">STAGE 1</span>
             <span class="block-title">Victory in Europe (VE) Day</span>
             <span class="block-date">8 May 1945</span>
           </div>
+          <div class="spread-stage-q">“How did families celebrate Victory in Europe Day on 8 May 1945?”</div>
           <div class="block-prose">
-            <p class="prose-p" style="font-size: 12.25pt; line-height: 1.65; margin-bottom: 0px;">After nearly six years of fighting in Europe, Nazi Germany surrendered unconditionally. <strong>Tuesday 8 May 1945</strong> became <strong>Victory in Europe (VE) Day</strong>. At <strong>3:00pm</strong>, Prime Minister <strong>Winston Churchill</strong> announced over the radio that war in Europe was over. Soon he waved beside King George VI and Queen Elizabeth to cheering crowds in Whitehall and <strong>Trafalgar Square</strong>.<br><br>Church bells rang out again, and families tore down hated blackout curtains. Neighbours carried tables into roads, hung red, white, and blue <strong>bunting</strong>, baked cakes for <strong>street parties</strong>, and danced round bonfires. Yet many still worried for soldiers fighting Japan in Asia until <strong>VJ Day on 15 August 1945</strong>.</p>
+            <p class="prose-p" style="font-size: 12.1pt; line-height: 1.61; margin-bottom: 0px;">After nearly six years of fighting in Europe, Nazi Germany surrendered unconditionally. <strong>Tuesday 8 May 1945</strong> became <strong>Victory in Europe (VE) Day</strong>. At <strong>3:00pm</strong>, Prime Minister <strong>Winston Churchill</strong> announced over the radio that war in Europe was over. Soon he waved beside King George VI and Queen Elizabeth to cheering crowds in Whitehall and <strong>Trafalgar Square</strong>.<br><br>Church bells rang out again, and families tore down hated blackout curtains. Neighbours carried tables into roads, hung red, white, and blue <strong>bunting</strong>, baked cakes for <strong>street parties</strong>, and danced round bonfires. Yet many still worried for soldiers fighting Japan in Asia until <strong>VJ Day on 15 August 1945</strong>.</p>
           </div>
         </div>
 
-        <div class="block-section" style="margin-bottom: 11.6px;">
+        <div class="block-section" style="margin-bottom: 10.3px;">
           <div class="block-hdr">
             <span class="stage-pill">STAGE 2</span>
             <span class="block-title">Joy Mixed with Sorrow &amp; Rebuilding Britain</span>
             <span class="block-date">1945–1950</span>
           </div>
+          <div class="spread-stage-q">“How did Britain rebuild bombed homes and care for families by 1948?”</div>
           <div class="block-prose">
-            <p class="prose-p" style="font-size: 12.25pt; line-height: 1.65; margin-bottom: 0px;">Amidst the cheering, families mourned lost loved ones. Over <strong>380,000 British service personnel</strong> and <strong>67,000 British civilians</strong> had been killed. Millions more died across Europe, alongside volunteers from the <strong>British Commonwealth</strong> — including India, the Caribbean, Africa, Canada, Australia, and New Zealand.<br><br>Clearing rubble and rebuilding shattered cities took years. Bombs had damaged or destroyed over <strong>2 million British homes</strong>, Britain owed huge debts, and <strong>food rationing lasted until 1954</strong>. Determined to build a fairer society, communities built council and prefab homes, laying the foundation for the free <strong>National Health Service (NHS)</strong> in <strong>1948</strong>.</p>
+            <p class="prose-p" style="font-size: 12.1pt; line-height: 1.61; margin-bottom: 0px;">Amidst the cheering, families mourned lost loved ones. Over <strong>380,000 British service personnel</strong> and <strong>67,000 British civilians</strong> had been killed. Millions more died across Europe, alongside volunteers from the <strong>British Commonwealth</strong> — including India, the Caribbean, Africa, Canada, Australia, and New Zealand.<br><br>Clearing rubble and rebuilding shattered cities took years. Bombs had damaged or destroyed over <strong>2 million British homes</strong>, Britain owed huge debts, and <strong>food rationing lasted until 1954</strong>. Determined to build a fairer society, communities built council and prefab homes, laying the foundation for the free <strong>National Health Service (NHS)</strong> in <strong>1948</strong>.</p>
           </div>
         </div>
 
@@ -2017,8 +2058,9 @@
             <span class="block-title">The Cenotaph &amp; Why We Remember Today</span>
             <span class="block-date">Present Day</span>
           </div>
+          <div class="spread-stage-q">“How do people across the United Kingdom remember war dead each autumn?”</div>
           <div class="block-prose">
-            <p class="prose-p" style="font-size: 12.25pt; line-height: 1.65; margin-bottom: 0px;">Every autumn on <strong>11 November (Armistice Day)</strong> and <strong>Remembrance Sunday</strong>, people gather at war memorials across the United Kingdom. In London, crowds stand before <strong>The Cenotaph on Whitehall</strong> — a tall white stone monument whose name means <em>"empty tomb"</em>.<br><br>At <strong>11:00am</strong>, the nation keeps a <strong>two-minute silence</strong> and wears the <strong>red poppy</strong>. Wild poppies first bloomed across muddy First World War battlefields, and today they honour everyone who served and suffered in war. Remembering World War II teaches each generation about ordinary courage and our duty to protect peace.</p>
+            <p class="prose-p" style="font-size: 12.1pt; line-height: 1.61; margin-bottom: 0px;">Every autumn on <strong>11 November (Armistice Day)</strong> and <strong>Remembrance Sunday</strong>, people gather at war memorials across the United Kingdom. In London, crowds stand before <strong>The Cenotaph on Whitehall</strong> — a tall white stone monument whose name means <em>"empty tomb"</em>.<br><br>At <strong>11:00am</strong>, the nation keeps a <strong>two-minute silence</strong> and wears the <strong>red poppy</strong>. Wild poppies first bloomed across muddy First World War battlefields, and today they honour everyone who served and suffered in war. Remembering World War II teaches each generation about ordinary courage and our duty to protect peace.</p>
           </div>
         </div>
       </div>
@@ -2072,25 +2114,27 @@
     <div class="prose-wrap">
       <div class="prose-single-wide">
         
-        <div class="block-section" style="margin-bottom: 11px;">
+        <div class="block-section" style="margin-bottom: 9.4px;">
           <div class="block-hdr">
             <span class="stage-pill">STAGE 1</span>
             <span class="block-title">The RAF Mercy Airlift from Prague</span>
             <span class="block-date">August 1945</span>
           </div>
+          <div class="spread-stage-q">“How did 300 orphaned child survivors reach Lake Windermere in 1945?”</div>
           <div class="block-prose">
-            <p class="prose-p" style="font-size: 12pt; line-height: 1.63; margin-bottom: 0px;">When war in Europe ended in May 1945, Allied soldiers freed prisoners from Nazi concentration camps. Inside, they found thousands of starving, orphaned Jewish children and teenagers whose families had been murdered in the Holocaust. With their old homes gone, these young survivors had nowhere safe to live.<br><br>Funded by the <strong>Central British Fund</strong> for Jewish Relief, Britain offered them a safe home. On <strong>14 August 1945</strong>, <strong>10 converted Royal Air Force Short Stirling bombers</strong> took off from <strong>Prague</strong> carrying <strong>300 child survivors</strong>. They landed at <strong>RAF Crosby-on-Eden</strong> in Cumbria and rode by coach to the peaceful hills around <strong>Lake Windermere</strong>.</p>
+            <p class="prose-p" style="font-size: 11.75pt; line-height: 1.58; margin-bottom: 0px;">When war in Europe ended in May 1945, Allied soldiers freed prisoners from Nazi concentration camps. Inside, they found thousands of starving, orphaned Jewish children and teenagers whose families had been murdered in the Holocaust. With their old homes gone, these young survivors had nowhere safe to live.<br><br>Funded by the <strong>Central British Fund</strong> for Jewish Relief, Britain offered them a safe home. On <strong>14 August 1945</strong>, <strong>10 converted Royal Air Force Short Stirling bombers</strong> took off from <strong>Prague</strong> carrying <strong>300 child survivors</strong>. They landed at <strong>RAF Crosby-on-Eden</strong> in Cumbria and rode by coach to the peaceful hills around <strong>Lake Windermere</strong>.</p>
           </div>
         </div>
 
-        <div class="block-section" style="margin-bottom: 11px;">
+        <div class="block-section" style="margin-bottom: 9.4px;">
           <div class="block-hdr">
             <span class="stage-pill">STAGE 2</span>
             <span class="block-title">Healing at Calgarth Estate: Bread Under Pillows &amp; Red Bicycles</span>
             <span class="block-date">Autumn 1945</span>
           </div>
+          <div class="spread-stage-q">“How did gentle care and red bicycles help the children heal?”</div>
           <div class="block-prose">
-            <p class="prose-p" style="font-size: 12pt; line-height: 1.63; margin-bottom: 0px;">The children moved into wooden chalets on the <strong>Calgarth Estate</strong> near Troutbeck Bridge, built for wartime flying-boat factory workers. Doctor <strong>Oscar Friedman</strong> (known as <strong>Dr Oscar Friedman</strong>) and art teacher <strong>Marie Paneth</strong> never forced anyone to speak before they felt ready. After years of hunger, many children <strong>secretly hid slices of bread under their pillows</strong> because they could not believe food would still be there tomorrow.<br><br>Gentle kindness slowly helped them heal. The children enjoyed hot baths, clean clothes, medical care, <strong>English lessons</strong>, art rooms, football, and swims in Lake Windermere. Best of all, local people donated <strong>shiny red bicycles</strong>, letting them ride freely down country lanes.</p>
+            <p class="prose-p" style="font-size: 11.75pt; line-height: 1.58; margin-bottom: 0px;">The children moved into wooden chalets on the <strong>Calgarth Estate</strong> near Troutbeck Bridge, built for wartime flying-boat factory workers. Doctor <strong>Oscar Friedman</strong> (known as <strong>Dr Oscar Friedman</strong>) and art teacher <strong>Marie Paneth</strong> never forced anyone to speak before they felt ready. After years of hunger, many children <strong>secretly hid slices of bread under their pillows</strong> because they could not believe food would still be there tomorrow.<br><br>Gentle kindness slowly helped them heal. The children enjoyed hot baths, clean clothes, medical care, <strong>English lessons</strong>, art rooms, football, and swims in Lake Windermere. Best of all, local people donated <strong>shiny red bicycles</strong>, letting them ride freely down country lanes.</p>
           </div>
         </div>
 
@@ -2100,8 +2144,9 @@
             <span class="block-title">The '45 Aid Society &amp; Keeping Real Voices Alive</span>
             <span class="block-date">1963 to Today</span>
           </div>
+          <div class="spread-stage-q">“How did the Windermere survivors thank Britain in the decades after?”</div>
           <div class="block-prose">
-            <p class="prose-p" style="font-size: 12pt; line-height: 1.63; margin-bottom: 0px;">Calling themselves <strong>"The Boys"</strong> (a nickname shared by both boys and girls), the <strong>Windermere Children</strong> stayed lifelong friends like one big family. Though they arrived with nothing and spoke little English, they rebuilt proud lives. They became doctors, teachers, engineers, parents, and even British Olympic weightlifter <strong>Sir Ben Helfgott</strong>.<br><br>In <strong>1963</strong>, they started <strong>The '45 Aid Society</strong> to raise money for charities and thank Britain. Later, survivors such as <strong>Arek Hersh MBE</strong> and <strong>Sam Laskier</strong> shared <strong>oral history</strong> memories in schools. They also helped author <strong>Tom Palmer</strong> write <em>After the War: From Auschwitz to Ambleside</em>, keeping their real voices alive.</p>
+            <p class="prose-p" style="font-size: 11.75pt; line-height: 1.58; margin-bottom: 0px;">Calling themselves <strong>"The Boys"</strong> (a nickname shared by both boys and girls), the <strong>Windermere Children</strong> stayed lifelong friends like one big family. Though they arrived with nothing and spoke little English, they rebuilt proud lives. They became doctors, teachers, engineers, parents, and even British Olympic weightlifter <strong>Sir Ben Helfgott</strong>.<br><br>In <strong>1963</strong>, they started <strong>The '45 Aid Society</strong> to raise money for charities and thank Britain. Later, survivors such as <strong>Arek Hersh MBE</strong> and <strong>Sam Laskier</strong> shared <strong>oral history</strong> memories in schools. They also helped author <strong>Tom Palmer</strong> write <em>After the War: From Auschwitz to Ambleside</em>, keeping their real voices alive.</p>
           </div>
         </div>
       </div>
@@ -2139,7 +2184,7 @@
             <span class="quiz-card-loc">Page 3</span>
           </div>
           <ol class="quiz-ol" start="1" style="font-size: 9.2pt; line-height: 1.36;">
-            <li style="margin-bottom: 2.6px;">At what time on Sunday 3 September 1939 did Prime Minister Neville Chamberlain announce that Britain was at war?</li><li style="margin-bottom: 2.6px;">On what date did Adolf Hitler's German army invade Poland, two days before Britain declared war?</li><li style="margin-bottom: 2.6px;">Who was the British Prime Minister who announced over the radio on 3 September 1939 that Britain was at war?</li><li style="margin-bottom: 2.6px;">What loud warning echoed across London just fifteen minutes after Chamberlain finished his radio broadcast?</li><li style="margin-bottom: 0px;">How many free civilian gas masks did the British government distribute before war began?</li>
+            <li style="margin-bottom: 2.6px;">At what time on Sunday 3 September 1939 did Prime Minister Neville Chamberlain announce that Britain was at war?</li><li style="margin-bottom: 2.6px;">Who was the British Prime Minister who announced over the radio on 3 September 1939 that Britain was at war?</li><li style="margin-bottom: 2.6px;">What loud warning echoed across London just fifteen minutes after Chamberlain finished his radio broadcast?</li><li style="margin-bottom: 2.6px;">How many free civilian gas masks did the British government distribute before war began?</li><li style="margin-bottom: 0px;">What colour and letter were painted on an ARP warden's steel helmet?</li>
           </ol>
         </div>
 
@@ -2189,7 +2234,7 @@
             <span class="quiz-card-loc">Page 8</span>
           </div>
           <ol class="quiz-ol" start="26" style="font-size: 9.2pt; line-height: 1.36;">
-            <li style="margin-bottom: 2.6px;">On what date ("Black Saturday") did the London Blitz begin?</li><li style="margin-bottom: 2.6px;">Which area of London was struck first when German bombers roared up the River Thames on 7 September 1940?</li><li style="margin-bottom: 2.6px;">Which German word meaning "lightning war" gave "The Blitz" its name?</li><li style="margin-bottom: 2.6px;">Which famous domed cathedral in London survived the Blitz thanks to brave volunteer firewatchers?</li><li style="margin-bottom: 0px;">Roughly how many German Luftwaffe bombers attacked London on the afternoon of "Black Saturday" (7 September 1940)?</li>
+            <li style="margin-bottom: 2.6px;">Why did Adolf Hitler order German bombers to attack London and other British cities during the Blitz?</li><li style="margin-bottom: 2.6px;">Which area of London was struck first when German bombers roared up the River Thames on 7 September 1940?</li><li style="margin-bottom: 2.6px;">Which German word meaning "lightning war" gave "The Blitz" its name?</li><li style="margin-bottom: 2.6px;">Which famous domed cathedral in London survived the Blitz thanks to brave volunteer firewatchers?</li><li style="margin-bottom: 0px;">Roughly how many German Luftwaffe bombers attacked London on the afternoon of "Black Saturday" (7 September 1940)?</li>
           </ol>
         </div>
       </div>
@@ -2257,7 +2302,7 @@
             <span class="quiz-card-loc">Page 12</span>
           </div>
           <ol class="quiz-ol" start="46" style="font-size: 9.85pt; line-height: 1.4;">
-            <li style="margin-bottom: 3.4px;">What does "VE Day" stand for, celebrated on 8 May 1945?</li><li style="margin-bottom: 3.4px;">Who was Britain's Prime Minister who announced on VE Day that the war in Europe was over?</li><li style="margin-bottom: 3.4px;">On what exact date was Victory in Europe (VE) Day celebrated across Britain?</li><li style="margin-bottom: 3.4px;">How did neighbours in towns and villages celebrate VE Day together once blackout curtains came down?</li><li style="margin-bottom: 0px;">On what date did the Second World War finally end in Asia with Victory over Japan (VJ) Day?</li>
+            <li style="margin-bottom: 3.4px;">What does "VE Day" stand for, celebrated on 8 May 1945?</li><li style="margin-bottom: 3.4px;">Who was Britain's Prime Minister who announced on VE Day that the war in Europe was over?</li><li style="margin-bottom: 3.4px;">What event finally brought nearly six years of fighting in Europe to an end on VE Day?</li><li style="margin-bottom: 3.4px;">How did neighbours in towns and villages celebrate VE Day together once blackout curtains came down?</li><li style="margin-bottom: 0px;">Why did many British families still feel worried on VE Day even as crowds celebrated in the streets?</li>
           </ol>
         </div>
 
@@ -2267,7 +2312,7 @@
             <span class="quiz-card-loc">Page 13</span>
           </div>
           <ol class="quiz-ol" start="51" style="font-size: 9.85pt; line-height: 1.4;">
-            <li style="margin-bottom: 3.4px;">How many orphaned child survivors were flown to Cumbria in August 1945 to recover beside Lake Windermere?</li><li style="margin-bottom: 3.4px;">Which converted Royal Air Force aircraft flew the children from Prague to Crosby-on-Eden on 14 August 1945?</li><li style="margin-bottom: 3.4px;">On what date did ten converted RAF bombers fly 300 orphaned child survivors from Prague to Cumbria?</li><li style="margin-bottom: 3.4px;">At which airfield in Cumbria did the RAF mercy airlift land before coaches drove the children to Lake Windermere?</li><li style="margin-bottom: 0px;">Where beside Lake Windermere were the children housed in peaceful wooden chalets?</li>
+            <li style="margin-bottom: 3.4px;">How many orphaned child survivors were flown to Cumbria in August 1945 to recover beside Lake Windermere?</li><li style="margin-bottom: 3.4px;">Which converted Royal Air Force aircraft flew the children from Prague to Crosby-on-Eden on 14 August 1945?</li><li style="margin-bottom: 3.4px;">Why did the 300 young Holocaust survivors need Britain to offer them a safe home in 1945?</li><li style="margin-bottom: 3.4px;">At which airfield in Cumbria did the RAF mercy airlift land before coaches drove the children to Lake Windermere?</li><li style="margin-bottom: 0px;">Where beside Lake Windermere were the children housed in peaceful wooden chalets?</li>
           </ol>
         </div>
       </div>

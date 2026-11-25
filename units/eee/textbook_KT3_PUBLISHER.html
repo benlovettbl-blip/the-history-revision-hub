@@ -666,12 +666,24 @@
       white-space: nowrap;
     }
     .spread-stage-q {
+      break-after: avoid;
+      break-inside: avoid;
       font-family: 'Playfair Display', Georgia, serif;
       font-style: italic;
       font-size: 9.2pt;
       color: var(--acc-dark);
-      margin-bottom: 5px;
-      line-height: 1.3;
+      margin-bottom: 4.5px;
+      line-height: 1.28;
+    }
+    .page-lesson:not(.page-spread):not(.page-lesson-ks2) .spread-stage-q {
+      font-size: 8.15pt;
+      line-height: 1.22;
+      margin-bottom: 3px;
+    }
+    .page-lesson-ks2 .spread-stage-q {
+      font-size: 9.4pt;
+      line-height: 1.28;
+      margin-bottom: 4px;
     }
     .block-prose .prose-p {
       font-family: 'Lora', Georgia, serif;
@@ -1326,7 +1338,7 @@
     <div class="prose-wrap">
       <div class="prose-columns">
         
-          <div class="block-section spread-block" style="margin-bottom: 12.3px;">
+          <div class="block-section spread-block" style="margin-bottom: 11.3px;">
             <div class="block-hdr">
               <span class="stage-pill">STAGE 1</span>
               <span class="block-title">Attitudes to Education &amp; Literacy</span>
@@ -1334,7 +1346,7 @@
             </div>
             <div class="spread-stage-q">“How did Tudor hierarchy and gender shape basic literacy and schooling?”</div>
             <div class="block-prose">
-              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.55; margin-bottom: 0px;">Tudor education reflected humanist learning and Protestant belief in reading the English Bible, yet widespread illiteracy persisted and schooling stayed sharply divided by social class and gender. Overall <strong>literacy</strong> rose to roughly <strong>30% of men</strong> and <strong>10% of women</strong> by the 1580s, concentrated among gentry, merchant, and yeoman families rather than farm labourers whose children worked from age six.
+              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.54; margin-bottom: 0px;">Tudor education reflected humanist learning and Protestant belief in reading the English Bible, yet widespread illiteracy persisted and schooling stayed sharply divided by social class and gender. Overall <strong>literacy</strong> rose to roughly <strong>30% of men</strong> and <strong>10% of women</strong> by the 1580s, concentrated among gentry, merchant, and yeoman families rather than farm labourers whose children worked from age six.
 
 Middling-sort boys learned basic reading from a wooden hornbook alongside writing and arithmetic at elementary <strong>petty schools</strong> run in a teacher’s home, while some girls attended <strong>dame schools</strong> for reading and needlework. Above all, Elizabethan schooling upheld the <strong>Great Chain of Being</strong>, instilling strict obedience to God, monarch, and social superiors.</p>
             </div>
@@ -1348,7 +1360,7 @@ Middling-sort boys learned basic reading from a wooden hornbook alongside writin
             </div>
             <div class="spread-stage-q">“How did endowed grammar schools educate gentry and merchant sons?”</div>
             <div class="block-prose">
-              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.55; margin-bottom: 0px;">Education expanded fastest in fee-paying town <strong>grammar schools</strong>: forty-two were founded in the 1560s and thirty more in the 1570s by wealthy Protestant benefactors and merchant guilds. Bright boys aged ten to fourteen from gentry, professional, merchant, and yeoman homes (plus scholarship boys) studied long days from 6 a.m. to 5 p.m.
+              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.54; margin-bottom: 0px;">Education expanded fastest in fee-paying town <strong>grammar schools</strong>: forty-two were founded in the 1560s and thirty more in the 1570s by wealthy Protestant benefactors and merchant guilds. Bright boys aged ten to fourteen from gentry, professional, merchant, and yeoman homes (plus scholarship boys) studied long days from 6 a.m. to 5 p.m.
 
 Grammar schools taught a strict <strong>classical curriculum</strong> centred on <strong>Latin</strong> and Greek authors like Cicero, Virgil, and Seneca alongside rhetoric, scripture, archery, and corporal punishment. Meanwhile, merchants’ and craftsmen’s sons often moved from petty school into an apprenticeship to learn bookkeeping, arithmetic, and skilled trades.</p>
             </div>
@@ -1380,7 +1392,7 @@ Grammar schools taught a strict <strong>classical curriculum</strong> centred on
     <div class="prose-wrap">
       <div class="prose-columns">
         
-          <div class="block-section spread-block" style="margin-bottom: 12.3px;">
+          <div class="block-section spread-block" style="margin-bottom: 11.3px;">
             <div class="block-hdr">
               <span class="stage-pill">STAGE 3</span>
               <span class="block-title">Universities &amp; Noble Education</span>
@@ -1388,13 +1400,13 @@ Grammar schools taught a strict <strong>classical curriculum</strong> centred on
             </div>
             <div class="spread-stage-q">“How did noble home tutors differ from Oxford, Cambridge, and Law Inns?”</div>
             <div class="block-prose">
-              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.55; margin-bottom: 0px;">Children of the nobility studied at home under <strong>private tutors</strong>, just as humanist scholar Roger Ascham had tutored young Princess Elizabeth. Noble boys learned Latin, Greek, French, history, fencing, and riding. Noble girls studied languages, music, dancing, needlework, and running great households, though women remained barred from universities.
+              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.54; margin-bottom: 0px;">Children of the nobility studied at home under <strong>private tutors</strong>, just as humanist scholar Roger Ascham had tutored young Princess Elizabeth. Noble boys learned Latin, Greek, French, history, fencing, and riding. Noble girls studied languages, music, dancing, needlework, and running great households, though women remained barred from universities.
 
 At fourteen or fifteen, gentlemen’s sons went up to <strong>Oxford and Cambridge</strong>. There, Protestant colleges like Emmanuel (1584) and Jesus (1571) expanded to train loyal, educated Anglican clergy and royal officials. Many gentry sons also studied common law in London at the <strong>Inns of Court</strong>.</p>
             </div>
           </div>
 
-          <div class="block-section spread-block" style="margin-bottom: 12.3px;">
+          <div class="block-section spread-block" style="margin-bottom: 11.3px;">
             <div class="block-hdr">
               <span class="stage-pill">STAGE 4</span>
               <span class="block-title">Sports and Pastimes by Social Class</span>
@@ -1402,7 +1414,7 @@ At fourteen or fifteen, gentlemen’s sons went up to <strong>Oxford and Cambrid
             </div>
             <div class="spread-stage-q">“How did Elizabethan sports and pastimes reflect sharp social class divides?”</div>
             <div class="block-prose">
-              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.55; margin-bottom: 0px;">Elizabethan leisure pastimes were sharply divided by social rank, landownership, and gender. Only nobles and landed gentry owned walled deer parks and game rights for <strong>hunting and hawking</strong>. Wealthy gentlemen from the Inns of Court also fenced, played indoor <strong>real tennis</strong>, danced galliards, played the lute, and read classical poetry.
+              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.54; margin-bottom: 0px;">Elizabethan leisure pastimes were sharply divided by social rank, landownership, and gender. Only nobles and landed gentry owned walled deer parks and game rights for <strong>hunting and hawking</strong>. Wealthy gentlemen from the Inns of Court also fenced, played indoor <strong>real tennis</strong>, danced galliards, played the lute, and read classical poetry.
 
 Working farmers, labourers, and apprentices played rough parish <strong>folk football</strong> — rowdy village-wide matches with few rules and frequent broken bones — and wrestled on holy days. Yet blood sports drew every class together: crowds from Privy Councillors to apprentices paid pennies in Southwark to bet on <strong>bear-baiting</strong>, bull-baiting, and cock-fighting.</p>
             </div>
@@ -1416,7 +1428,7 @@ Working farmers, labourers, and apprentices played rough parish <strong>folk foo
             </div>
             <div class="spread-stage-q">“Why did purpose-built London playhouses thrive despite Puritan anger?”</div>
             <div class="block-prose">
-              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.55; margin-bottom: 0px;">Secular drama thrived after the 1572 Vagabonds Act required touring actors to hold a nobleman’s licence, creating troupes like Leicester’s Men and the <strong>Queen’s Men</strong> (1583). In 1576, actor <strong>James Burbage</strong> built England’s first permanent purpose-built playhouse, <strong>‘The Theatre’</strong>, in Shoreditch outside City of London rule, followed by the Curtain (1577) and the Rose (1587).
+              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.54; margin-bottom: 0px;">Secular drama thrived after the 1572 Vagabonds Act required touring actors to hold a nobleman’s licence, creating troupes like Leicester’s Men and the <strong>Queen’s Men</strong> (1583). In 1576, actor <strong>James Burbage</strong> built England’s first permanent purpose-built playhouse, <strong>‘The Theatre’</strong>, in Shoreditch outside City of London rule, followed by the Curtain (1577) and the Rose (1587).
 
 Plays drew up to 2,000 spectators across all classes. Poorer <strong>groundlings</strong> paid one penny to stand in the open yard around the stage, while wealthy gentry bought covered gallery seats. Conversely, <strong>Puritans</strong> and London aldermen attacked theatres for spreading bubonic plague, drawing pickpockets, and encouraging idleness.</p>
             </div>
@@ -1482,7 +1494,7 @@ Plays drew up to 2,000 spectators across all classes. Poorer <strong>groundlings
     <div class="prose-wrap">
       <div class="prose-columns">
         
-          <div class="block-section spread-block" style="margin-bottom: 12.3px;">
+          <div class="block-section spread-block" style="margin-bottom: 11.3px;">
             <div class="block-hdr">
               <span class="stage-pill">STAGE 1</span>
               <span class="block-title">Population Growth &amp; Rising Prices</span>
@@ -1490,7 +1502,7 @@ Plays drew up to 2,000 spectators across all classes. Poorer <strong>groundlings
             </div>
             <div class="spread-stage-q">“How did rapid population growth and bad harvests fuel food inflation?”</div>
             <div class="block-prose">
-              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.55; margin-bottom: 0px;">Poverty and <strong>vagabondage</strong> surged across Elizabethan England between 1558 and 1588 largely through rapid population growth. England’s population climbed by roughly 35%, rising from <strong>3 million to 4 million</strong> (nearly four million people by 1588). Major towns like London and Norwich grew fastest while farm output lagged behind, driving up cottage rents and bread prices across every shire.
+              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.54; margin-bottom: 0px;">Poverty and <strong>vagabondage</strong> surged across Elizabethan England between 1558 and 1588 largely through rapid population growth. England’s population climbed by roughly 35%, rising from <strong>3 million to 4 million</strong> (nearly four million people by 1588). Major towns like London and Norwich grew fastest while farm output lagged behind, driving up cottage rents and bread prices across every shire.
 
 Country hardship worsened whenever wet summers brought consecutive <strong>bad harvests</strong> (especially 1573–77), causing severe grain shortages and <strong>price inflation</strong> lingering from earlier Tudor coin debasement. With surplus workers chasing scarce jobs and the <strong>1563 Statute of Artificers</strong> capping maximum pay, <strong>real wages</strong> fell sharply and thousands of landless rural families went hungry.</p>
             </div>
@@ -1504,7 +1516,7 @@ Country hardship worsened whenever wet summers brought consecutive <strong>bad h
             </div>
             <div class="spread-stage-q">“Why did enclosure and profitable sheep farming cause rural eviction?”</div>
             <div class="block-prose">
-              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.55; margin-bottom: 0px;">Countryside farming changes pushed thousands more labourers off the land. Because raw wool and cloth made up over <strong>80% of exports</strong>, gentry landlords increasingly carried out <strong>enclosure</strong>. They hedged open village strip-fields and common grazing land into private pastures for commercial <strong>sheep farming</strong> instead of grain.
+              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.54; margin-bottom: 0px;">Countryside farming changes pushed thousands more labourers off the land. Because raw wool and cloth made up over <strong>80% of exports</strong>, gentry landlords increasingly carried out <strong>enclosure</strong>. They hedged open village strip-fields and common grazing land into private pastures for commercial <strong>sheep farming</strong> instead of grain.
 
 Growing corn employed whole parishes all year, whereas tending enclosed <strong>sheep</strong> pasture needed barely one tenth the workers. Landlords also raised entry fines sharply (<strong>rack-renting</strong>). Evicted cottagers and jobless farmhands drifted toward towns — hit further whenever Spanish embargoes halted Antwerp cloth sales — swelling crowds of homeless families.</p>
             </div>
@@ -1536,7 +1548,7 @@ Growing corn employed whole parishes all year, whereas tending enclosed <strong>
     <div class="prose-wrap">
       <div class="prose-columns">
         
-          <div class="block-section spread-block" style="margin-bottom: 12.3px;">
+          <div class="block-section spread-block" style="margin-bottom: 11.3px;">
             <div class="block-hdr">
               <span class="stage-pill">STAGE 3</span>
               <span class="block-title">Changing Attitudes to the Poor</span>
@@ -1544,13 +1556,13 @@ Growing corn employed whole parishes all year, whereas tending enclosed <strong>
             </div>
             <div class="spread-stage-q">“Why did authorities distinguish ‘impotent poor’ from ‘sturdy beggars’?”</div>
             <div class="block-prose">
-              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.55; margin-bottom: 0px;">Elizabethan authorities split the poor into two groups. The <strong>impotent poor</strong> (deserving poor — young orphans, widows, the elderly, sick, and disabled unable to work) received parish relief funded by a compulsory poor rate. By contrast, <strong>sturdy beggars</strong> (idle or undeserving able-bodied adults) were suspected of choosing laziness over honest work.
+              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.54; margin-bottom: 0px;">Elizabethan authorities split the poor into two groups. The <strong>impotent poor</strong> (deserving poor — young orphans, widows, the elderly, sick, and disabled unable to work) received parish relief funded by a compulsory poor rate. By contrast, <strong>sturdy beggars</strong> (idle or undeserving able-bodied adults) were suspected of choosing laziness over honest work.
 
 Fear of wandering vagrants was fuelled by Kent magistrate <strong>Thomas Harman</strong>’s popular 1567 book <em>A Caveat for Common Cursitors</em>. Harman exposed tricks like ‘counterfeit cranks’ chewing soap to fake fits and ‘Tom o’ Bedlams’ faking madness. Without a police force, gentry JPs feared vagrant gangs spread plague, crime, and <strong>rebellion</strong>.</p>
             </div>
           </div>
 
-          <div class="block-section spread-block" style="margin-bottom: 12.3px;">
+          <div class="block-section spread-block" style="margin-bottom: 11.3px;">
             <div class="block-hdr">
               <span class="stage-pill">STAGE 4</span>
               <span class="block-title">The 1572 Vagabonds Act</span>
@@ -1558,7 +1570,7 @@ Fear of wandering vagrants was fuelled by Kent magistrate <strong>Thomas Harman<
             </div>
             <div class="spread-stage-q">“How did the 1572 Vagabonds Act combine whipping with compulsory rates?”</div>
             <div class="block-prose">
-              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.55; margin-bottom: 0px;">After the 1569 Northern Revolt, Parliament passed the <strong>1572 Vagabonds Act</strong> combining local poor taxes with harsh physical punishment. Justices of the Peace had to keep a parish register of deserving poor and appoint Overseers of the Poor. They also collected a weekly <strong>compulsory poor rate</strong> from rich householders — jailing anyone who refused.
+              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.54; margin-bottom: 0px;">After the 1569 Northern Revolt, Parliament passed the <strong>1572 Vagabonds Act</strong> combining local poor taxes with harsh physical punishment. Justices of the Peace had to keep a parish register of deserving poor and appoint Overseers of the Poor. They also collected a weekly <strong>compulsory poor rate</strong> from rich householders — jailing anyone who refused.
 
 At the same time, able-bodied vagrants aged over fourteen caught begging without a licence faced fierce punishment. First offenders were whipped through town until bloody and <strong>bored through the ear</strong> (burned through the ear) with a hot iron. A second arrest within sixty days meant hanging as a felon.</p>
             </div>
@@ -1572,7 +1584,7 @@ At the same time, able-bodied vagrants aged over fourteen caught begging without
             </div>
             <div class="spread-stage-q">“How did the 1576 Poor Relief Act pioneer raw wool work and Bridewells?”</div>
             <div class="block-prose">
-              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.55; margin-bottom: 0px;">By 1576, MPs recognised an important change in attitudes toward the poor: recurring cloth-trade slumps meant many able-bodied adults genuinely could not find work. The <strong>1576 Poor Relief Act</strong> (Act for Setting the Poor on Work) ordered town and parish officials to buy stocks of <strong>raw wool</strong>, flax, iron, and hemp so unemployed locals could spin yarn and earn wages.
+              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.54; margin-bottom: 0px;">By 1576, MPs recognised an important change in attitudes toward the poor: recurring cloth-trade slumps meant many able-bodied adults genuinely could not find work. The <strong>1576 Poor Relief Act</strong> (Act for Setting the Poor on Work) ordered town and parish officials to buy stocks of <strong>raw wool</strong>, flax, iron, and hemp so unemployed locals could spin yarn and earn wages.
 
 Able-bodied vagrants who still refused parish work were committed to county Houses of Correction known as <strong>Bridewells</strong> (named after London’s Bridewell Palace), where strict hard labour punished persistent <strong>vagabondage</strong>. Together, the <strong>1563 Statute of Artificers</strong>, <strong>1572 Vagabonds Act</strong>, and <strong>1576 Poor Relief Act</strong> established national parish responsibility for poverty and unemployment across Elizabethan England.</p>
             </div>
@@ -1638,7 +1650,7 @@ Able-bodied vagrants who still refused parish work were committed to county Hous
     <div class="prose-wrap">
       <div class="prose-columns">
         
-          <div class="block-section spread-block" style="margin-bottom: 12.3px;">
+          <div class="block-section spread-block" style="margin-bottom: 11.3px;">
             <div class="block-hdr">
               <span class="stage-pill">STAGE 1</span>
               <span class="block-title">New Navigational Technology</span>
@@ -1646,7 +1658,7 @@ Able-bodied vagrants who still refused parish work were committed to county Hous
             </div>
             <div class="spread-stage-q">“How did astrolabes, quadrants, and Mercator maps transform navigation?”</div>
             <div class="block-prose">
-              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.55; margin-bottom: 0px;">Elizabethan ocean voyages relied heavily on <strong>new technology on ships</strong>, open-sea navigation, and accurate mapmaking. Sailors calculated their north-south latitude far from land using heavy brass <strong>astrolabes</strong> and steadier marine <strong>quadrants</strong> (alongside John Davis’s back-staff), measuring the midday sun or Polaris with translated Spanish manuals such as Martin Cortes’s <em>The Art of Navigation</em> (1561).
+              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.54; margin-bottom: 0px;">Elizabethan ocean voyages relied heavily on <strong>new technology on ships</strong>, open-sea navigation, and accurate mapmaking. Sailors calculated their north-south latitude far from land using heavy brass <strong>astrolabes</strong> and steadier marine <strong>quadrants</strong> (alongside John Davis’s back-staff), measuring the midday sun or Polaris with translated Spanish manuals such as Martin Cortes’s <em>The Art of Navigation</em> (1561).
 
 Ocean chart-making took a decisive leap forward in 1569 when Flemish cartographer Gerardus <strong>Mercator</strong> published his flat world map projection placing latitude and longitude lines on an accurate compass grid. Guided by printed sea charts, magnetic compasses, and knotted log-and-line ropes to calculate ship speed, English sea captains crossed the stormy Atlantic Ocean far more safely.</p>
             </div>
@@ -1660,7 +1672,7 @@ Ocean chart-making took a decisive leap forward in 1569 when Flemish cartographe
             </div>
             <div class="spread-stage-q">“How did race-built galleons, lateen sails, and culverins improve ships?”</div>
             <div class="block-prose">
-              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.55; margin-bottom: 0px;">English royal shipyards also transformed warship design. Replacing slow, top-heavy medieval carracks, Naval Treasurer Sir John Hawkins built sleek <strong>race-built galleons</strong> from the 1570s able to cross the Atlantic and Pacific Ocean. Longer, lower hulls cut wind drag, rode heavy gales better, and carried larger food and water stores.
+              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.54; margin-bottom: 0px;">English royal shipyards also transformed warship design. Replacing slow, top-heavy medieval carracks, Naval Treasurer Sir John Hawkins built sleek <strong>race-built galleons</strong> from the 1570s able to cross the Atlantic and Pacific Ocean. Longer, lower hulls cut wind drag, rode heavy gales better, and carried larger food and water stores.
 
 Large square main sails gave speed downwind, while triangular <strong>lateen sails</strong> on the mizzenmast allowed sharp windward tacking. Full-length gun decks mounted long-range bronze <strong>culverins</strong> and demi-culverins, giving English explorers both ocean endurance and heavy broadside firepower.</p>
             </div>
@@ -1692,7 +1704,7 @@ Large square main sails gave speed downwind, while triangular <strong>lateen sai
     <div class="prose-wrap">
       <div class="prose-columns">
         
-          <div class="block-section spread-block" style="margin-bottom: 12.3px;">
+          <div class="block-section spread-block" style="margin-bottom: 11.3px;">
             <div class="block-hdr">
               <span class="stage-pill">STAGE 3</span>
               <span class="block-title">The Search for New Trade Routes</span>
@@ -1700,13 +1712,13 @@ Large square main sails gave speed downwind, while triangular <strong>lateen sai
             </div>
             <div class="spread-stage-q">“Why did Antwerp’s collapse spur new trade companies and Arctic voyages?”</div>
             <div class="block-prose">
-              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.55; margin-bottom: 0px;">Economic need pushed English merchants to seek distant markets after Antwerp’s cloth trade collapsed and Spanish embargoes choked wool exports. London investors pooled risk in royal joint-stock companies. The <strong>Muscovy Company</strong> (1555) traded Russian furs and timber, the Eastland Company (1579) entered the Baltic, and the <strong>Levant Company</strong> (1581) imported Ottoman spices and silks.
+              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.54; margin-bottom: 0px;">Economic need pushed English merchants to seek distant markets after Antwerp’s cloth trade collapsed and Spanish embargoes choked wool exports. London investors pooled risk in royal joint-stock companies. The <strong>Muscovy Company</strong> (1555) traded Russian furs and timber, the Eastland Company (1579) entered the Baltic, and the <strong>Levant Company</strong> (1581) imported Ottoman spices and silks.
 
 Others sought direct sea routes to Asia or sailed to Africa for gold, ivory, and enslaved captives (begun by Hawkins in 1562). Between 1576 and 1587, <strong>Martin Frobisher</strong> and John Davis braved Arctic icebergs near Baffin Island seeking a Northwest Passage above Canada.</p>
             </div>
           </div>
 
-          <div class="block-section spread-block" style="margin-bottom: 12.3px;">
+          <div class="block-section spread-block" style="margin-bottom: 11.3px;">
             <div class="block-hdr">
               <span class="stage-pill">STAGE 4</span>
               <span class="block-title">Drake’s Circumnavigation</span>
@@ -1714,7 +1726,7 @@ Others sought direct sea routes to Asia or sailed to Africa for gold, ivory, and
             </div>
             <div class="spread-stage-q">“How did Drake navigate the Strait of Magellan and claim Nova Albion?”</div>
             <div class="block-prose">
-              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.55; margin-bottom: 0px;">In December 1577, Sir <strong>Francis Drake</strong> sailed from Plymouth Sound with five ships and 164 men — backed in secret by Elizabeth, Walsingham, and Leicester. He aimed to raid Spanish Pacific ports and avenge Spain’s 1568 ambush at San Juan de Ulúa. After fierce storms through the <strong>Strait of Magellan</strong>, only Drake’s flagship <em>Golden Hind</em> reached the Pacific in September 1578.
+              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.54; margin-bottom: 0px;">In December 1577, Sir <strong>Francis Drake</strong> sailed from Plymouth Sound with five ships and 164 men — backed in secret by Elizabeth, Walsingham, and Leicester. He aimed to raid Spanish Pacific ports and avenge Spain’s 1568 ambush at San Juan de Ulúa. After fierce storms through the <strong>Strait of Magellan</strong>, only Drake’s flagship <em>Golden Hind</em> reached the Pacific in September 1578.
 
 Sailing north past Valparaíso and Callao, Drake seized the silver-laden <em>Cacafuego</em> before landing up the North American coast in June 1579. Welcomed by friendly Miwok people, he claimed <strong>Nova Albion</strong> (‘New England’, likely California) for Elizabeth, traded for cloves in the Moluccas, and rounded Africa home to Plymouth in September 1580.</p>
             </div>
@@ -1728,7 +1740,7 @@ Sailing north past Valparaíso and Callao, Drake seized the silver-laden <em>Cac
             </div>
             <div class="spread-stage-q">“Why was Drake’s £400,000 return so significant for English sea power?”</div>
             <div class="block-prose">
-              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.55; margin-bottom: 0px;">Guided by magnetic compass and log-and-line navigation, Sir Francis Drake’s epic three-year <strong>circumnavigation of the globe</strong> (1577–80) aboard the <em>Golden Hind</em> was the first completed throughout under an English captain. Returning £400,000 in Spanish Pacific treasure delivered royal and merchant investors a <strong>4,700% profit</strong> (4,700% return), while Elizabeth’s Crown share cleared England’s entire national debt.
+              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.54; margin-bottom: 0px;">Guided by magnetic compass and log-and-line navigation, Sir Francis Drake’s epic three-year <strong>circumnavigation of the globe</strong> (1577–80) aboard the <em>Golden Hind</em> was the first completed throughout under an English captain. Returning £400,000 in Spanish Pacific treasure delivered royal and merchant investors a <strong>4,700% profit</strong> (4,700% return), while Elizabeth’s Crown share cleared England’s entire national debt.
 
 Captured Spanish Pacific sea charts, lucrative clove treaties in the Moluccas, and Drake’s North American claim to Nova Albion boosted English maritime confidence and directly inspired Sir Walter Raleigh’s colonial plans in Virginia. Conversely, Elizabeth’s defiant public <strong>Deptford knighting</strong> of Drake aboard the <em>Golden Hind</em> in April 1581 shattered Spain’s closed Pacific monopoly and hastened open Anglo-Spanish war.</p>
             </div>
@@ -1794,7 +1806,7 @@ Captured Spanish Pacific sea charts, lucrative clove treaties in the Moluccas, a
     <div class="prose-wrap">
       <div class="prose-columns">
         
-          <div class="block-section spread-block" style="margin-bottom: 12.3px;">
+          <div class="block-section spread-block" style="margin-bottom: 11.3px;">
             <div class="block-hdr">
               <span class="stage-pill">STAGE 1</span>
               <span class="block-title">Raleigh’s Patent &amp; Planning</span>
@@ -1802,7 +1814,7 @@ Captured Spanish Pacific sea charts, lucrative clove treaties in the Moluccas, a
             </div>
             <div class="spread-stage-q">“How did Raleigh’s royal patent and Hakluyt justify colonising Virginia?”</div>
             <div class="block-prose">
-              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.55; margin-bottom: 0px;">After his half-brother Humphrey Gilbert drowned, courtier <strong>Sir Walter Raleigh</strong> received a six-year royal patent from Elizabeth in March 1584 to settle North American lands. Barred by the protective Queen from sailing himself, Raleigh raised £40,000 from investors and named the territory <strong>Virginia</strong> (where Virginia Dare was later born) for the Virgin Queen.
+              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.54; margin-bottom: 0px;">After his half-brother Humphrey Gilbert drowned, courtier <strong>Sir Walter Raleigh</strong> received a six-year royal patent from Elizabeth in March 1584 to settle North American lands. Barred by the protective Queen from sailing himself, Raleigh raised £40,000 from investors and named the territory <strong>Virginia</strong> (where Virginia Dare was later born) for the Virgin Queen.
 
 In April 1584, Raleigh sent Philip Amadas and Arthur Barlowe to <strong>Roanoke</strong> Island, bringing back glowing reports and two Algonquian men, Manteo and Wanchese. Meanwhile, clergyman <strong>Richard Hakluyt</strong> wrote <em>Discourse on Western Planting</em> (1584). He urged Elizabeth to back Virginia to raid Spain, supply ship timber, and buy English cloth.</p>
             </div>
@@ -1816,7 +1828,7 @@ In April 1584, Raleigh sent Philip Amadas and Arthur Barlowe to <strong>Roanoke<
             </div>
             <div class="spread-stage-q">“Why did recruiting 107 soldiers and gentlemen weaken the 1585 voyage?”</div>
             <div class="block-prose">
-              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.55; margin-bottom: 0px;">For the April 1585 voyage — two years before the 1587 ‘Lost Colony’ — Raleigh recruited <strong>107 colonists</strong> (all men) aboard seven ships. His fiery cousin <strong>Sir Richard Grenville</strong> commanded at sea, while <strong>Ralph Lane</strong> governed ashore alongside scientist Thomas Harriot and artist John White, who had learned Algonquian from Manteo and Wanchese.
+              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.54; margin-bottom: 0px;">For the April 1585 voyage — two years before the 1587 ‘Lost Colony’ — Raleigh recruited <strong>107 colonists</strong> (all men) aboard seven ships. His fiery cousin <strong>Sir Richard Grenville</strong> commanded at sea, while <strong>Ralph Lane</strong> governed ashore alongside scientist Thomas Harriot and artist John White, who had learned Algonquian from Manteo and Wanchese.
 
 From the outset, poor recruitment and bitter clashes between Grenville and Lane weakened the colony. Roughly half the 107 settlers were soldiers and proud gentlemen expecting quick gold rather than skilled <strong>farmers</strong>, carpenters, masons, and winter fishermen able to feed an Atlantic settlement.</p>
             </div>
@@ -1848,7 +1860,7 @@ From the outset, poor recruitment and bitter clashes between Grenville and Lane 
     <div class="prose-wrap">
       <div class="prose-columns">
         
-          <div class="block-section spread-block" style="margin-bottom: 12.3px;">
+          <div class="block-section spread-block" style="margin-bottom: 11.3px;">
             <div class="block-hdr">
               <span class="stage-pill">STAGE 3</span>
               <span class="block-title">The First Roanoke Colony &amp; Disaster</span>
@@ -1856,13 +1868,13 @@ From the outset, poor recruitment and bitter clashes between Grenville and Lane 
             </div>
             <div class="spread-stage-q">“How did the wreck of the Tiger ruin seed corn and force food reliance?”</div>
             <div class="block-prose">
-              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.55; margin-bottom: 0px;">Leaving Plymouth on 9 April 1585 — already too late to plant spring crops — Ralph Lane’s fleet hit disaster on 29 June 1585. Flagship <strong>Tiger</strong> struck a sandbar at Ocracoke Inlet, and flooding seawater ruined most of the <strong>seed corn</strong>, salt, dried peas, and gunpowder.
+              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.54; margin-bottom: 0px;">Leaving Plymouth on 9 April 1585 — already too late to plant spring crops — Ralph Lane’s fleet hit disaster on 29 June 1585. Flagship <strong>Tiger</strong> struck a sandbar at Ocracoke Inlet, and flooding seawater ruined most of the <strong>seed corn</strong>, salt, dried peas, and gunpowder.
 
 After Grenville sailed home for supplies in August, Lane’s 107 men at Roanoke grew dependent on local Algonquians. They needed Native maize and woven reed <strong>Secotan fish traps</strong> that Englishmen could neither build nor mend, while European diseases sparked deaths and mistrust inside Native villages.</p>
             </div>
           </div>
 
-          <div class="block-section spread-block" style="margin-bottom: 12.3px;">
+          <div class="block-section spread-block" style="margin-bottom: 11.3px;">
             <div class="block-hdr">
               <span class="stage-pill">STAGE 4</span>
               <span class="block-title">Conflict &amp; Evacuation</span>
@@ -1870,7 +1882,7 @@ After Grenville sailed home for supplies in August, Lane’s 107 men at Roanoke 
             </div>
             <div class="spread-stage-q">“Why did killing Chief Wingina force Lane’s colonists to flee with Drake?”</div>
             <div class="block-prose">
-              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.55; margin-bottom: 0px;">Relations with the Secotan people collapsed over winter 1585–86. In July 1585, Grenville had already burned Aquascogoc village over a missing silver cup. By spring 1586, short of food during a severe drought, Secotan ruler <strong>Chief Wingina</strong> (who took the name Pemisapan) halted maize trade and organised local resistance.
+              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.54; margin-bottom: 0px;">Relations with the Secotan people collapsed over winter 1585–86. In July 1585, Grenville had already burned Aquascogoc village over a missing silver cup. By spring 1586, short of food during a severe drought, Secotan ruler <strong>Chief Wingina</strong> (who took the name Pemisapan) halted maize trade and organised local resistance.
 
 Fearing an attack, Governor Ralph Lane staged a pre-emptive <strong>1 June 1586 ambush</strong> at Dasamonquepeuc, luring Wingina to a parley and killing Chief Wingina. Algonquian tribes cut off all food at once; facing starvation, the colonists fled Roanoke on 18 June 1586 aboard Sir <strong>Francis Drake</strong>’s passing fleet.</p>
             </div>
@@ -1884,7 +1896,7 @@ Fearing an attack, Governor Ralph Lane staged a pre-emptive <strong>1 June 1586 
             </div>
             <div class="spread-stage-q">“Why did the 1588 Spanish Armada leave John White’s Roanoke settlers stranded?”</div>
             <div class="block-prose">
-              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.55; margin-bottom: 0px;">Learning from 1585’s mistakes, Raleigh sent artist-governor <strong>John White</strong> back in May 1587 with 118 men, women, and children promised 500 acres each around Chesapeake Bay in Virginia. Instead, Portuguese pilot Simon Fernandez landed them back on <strong>Roanoke</strong> Island, where Manteo became Lord of Roanoke and Virginia Dare was born.
+              <p class="prose-p" style="font-size: 12.75pt; line-height: 1.54; margin-bottom: 0px;">Learning from 1585’s mistakes, Raleigh sent artist-governor <strong>John White</strong> back in May 1587 with 118 men, women, and children promised 500 acres each around Chesapeake Bay in Virginia. Instead, Portuguese pilot Simon Fernandez landed them back on <strong>Roanoke</strong> Island, where Manteo became Lord of Roanoke and Virginia Dare was born.
 
 After hostile Algonquians killed colonist George Howe, settlers persuaded White to sail home for urgent supplies in August 1587. Tragically, the <strong>1588 Spanish Armada</strong> caused Elizabeth to keep every English ship at home; when White returned in August 1590, Roanoke stood deserted with <strong>‘CROATOAN’</strong> carved on a post.</p>
             </div>
